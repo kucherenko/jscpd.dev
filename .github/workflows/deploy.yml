@@ -32,7 +32,7 @@ jobs:
         run: ls -la .output/public/ 2>/dev/null || (echo "No .output/public — showing .output:" && ls -la .output/ 2>/dev/null || echo "No .output either")
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy .output/public --project-name=jscpd
+        run: npx wrangler pages deploy .output/public --project-name=jscpd --branch=${{ github.ref_name }}
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
