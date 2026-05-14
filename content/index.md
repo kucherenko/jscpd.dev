@@ -12,7 +12,7 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**jscpd** hunts down duplicated blocks across **223+ languages** — because life's too short to maintain the same bug in five different places.
+**jscpd** hunts down duplicated blocks across **223+ languages** — because life's too short to maintain the same bug in five different places. AI-ready with the `--reporters ai` flag for LLM-optimized output.
 
 #default
 <div class="relative bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-6 border border-primary/10 terminal-glow">
@@ -289,15 +289,15 @@ $ jscpd ./src
 
 Clone found (typescript):
  - src/utils.ts [10:1 - 25:3] (15 lines, 129 tokens)
-   src/helpers.ts [5:1 - 20:3]
+    src/helpers.ts [5:1 - 20:3]
 
 Clone found (typescript):
  - src/utils.ts [45:5 - 62:2] (17 lines, 178 tokens)
-   src/components/Button.tsx [12:1 - 29:2]
+    src/components/Button.tsx [12:1 - 29:2]
 
 Clone found (javascript):
  - src/hooks/useAuth.ts [1:1 - 34:2] (33 lines, 245 tokens)
-   src/hooks/useSession.ts [1:1 - 34:2]
+    src/hooks/useSession.ts [1:1 - 34:2]
 
 # ... more clones
 
