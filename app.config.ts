@@ -51,6 +51,9 @@ export default defineAppConfig({
       dark: '/logo-dark.svg'
     }
   },
+  github: {
+    url: 'https://github.com/kucherenko/jscpd'
+  },
   footer: {
     credits: 'Copyright © 2013-2025 Andrey Kucherenko'
   }
