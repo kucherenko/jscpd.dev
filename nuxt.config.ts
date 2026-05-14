@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Copy/paste detector for programming source code. Supports 150+ languages. Find and eliminate code duplication.",
+            "Copy/paste detector for programming source code. Supports 223+ languages. Find and eliminate code duplication.",
         },
         {
           name: "keywords",
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         { property: "og:title", content: "jscpd - Copy/Paste Detector" },
         {
           property: "og:description",
-          content: "Find duplicated code in 150+ programming languages",
+          content: "Find duplicated code in 223+ programming languages",
         },
         { property: "og:url", content: "https://jscpd.dev" },
         { property: "og:type", content: "website" },
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         { name: "twitter:title", content: "jscpd - Copy/Paste Detector" },
         {
           name: "twitter:description",
-          content: "Find duplicated code in 150+ programming languages",
+          content: "Find duplicated code in 223+ programming languages",
         },
       ],
       link: [

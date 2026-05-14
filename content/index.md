@@ -1,7 +1,7 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Detect copy/paste and duplicated code in your projects. Supports 150+ programming languages. Open source tool to reduce technical debt.
+  description: Detect copy/paste and duplicated code in your projects. Supports 223+ programming languages. Open source tool to reduce technical debt.
 ---
 
 ::u-page-hero
@@ -12,7 +12,7 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**jscpd** hunts down duplicated blocks across **150+ languages** — because life's too short to maintain the same bug in five different places.
+**jscpd** hunts down duplicated blocks across **223+ languages** — because life's too short to maintain the same bug in five different places.
 
 #default
 <div class="relative bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-6 border border-primary/10 terminal-glow">
@@ -106,10 +106,10 @@ Because clean code is happy code
   icon: i-lucide-globe
   ---
   #title
-  Speaks 150+ Languages
+  Speaks 223+ Languages
 
   #description
-  JavaScript, Python, Java, Go, Rust, C++, TypeScript, Ruby... If you can write it, we can scan it. Even your YAML configs aren't safe.
+  JavaScript, Python, Java, Go, Rust, C++, TypeScript, Ruby... If you can write it, we can scan it. Vue, Svelte, Astro, and Markdown cross-format detection too.
 
   <a href="/getting-started/supported-formats" class="feature-card-link">
     View supported formats
@@ -222,6 +222,17 @@ Because clean code is happy code
     Learn about MCP Server
     <span class="link-arrow">→</span>
   </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-sparkles
+  ---
+  #title
+  Cross-Format Detection <span class="duplicate-badge">New</span>
+
+  #description
+  Vue SFC, Svelte, Astro, and Markdown files are tokenized per-block — a `<script>` in .vue can match a .ts file. Detect duplication across file types.
   :::
 
   :::u-page-feature
