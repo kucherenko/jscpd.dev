@@ -26,7 +26,10 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build
+        run: pnpm dlx nuxt generate
+
+      - name: List build output
+        run: ls -la .output/public/ 2>/dev/null || (echo "No .output/public — showing .output:" && ls -la .output/ 2>/dev/null || echo "No .output either")
 
       - name: Deploy to Cloudflare Pages
         run: npx wrangler pages deploy .output/public --project-name=jscpd
