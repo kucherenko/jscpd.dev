@@ -1,7 +1,7 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Detect copy/paste and duplicated code in your projects. Supports 223+ programming languages. Open source tool to reduce technical debt.
+  description: Detect copy/paste and duplicated code in your projects. Rust-powered native binary, 24-37x faster. Supports 223+ programming languages.
 ---
 
 ::u-page-hero
@@ -12,7 +12,7 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**jscpd** hunts down duplicated blocks across **223+ languages** — because life's too short to maintain the same bug in five different places. AI-ready with the `--reporters ai` flag for LLM-optimized output.
+**jscpd v5** is a Rust-powered rewrite that hunts down duplicated blocks across **223+ languages** up to **37x faster** than v4 — because life's too short to maintain the same bug in five different places. Need the Node.js API? v4 is still available. AI-ready with the `--reporters ai` flag.
 
 #default
 <div class="relative bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-6 border border-primary/10 terminal-glow">
@@ -29,8 +29,7 @@ Copy/Paste Detector for Source Code
     <div class="text-muted mb-2 typing-text">// Your code deserves better than copy/paste chaos</div>
     <div class="flex items-center gap-2 mb-2">
       <span class="text-green-400">$</span>
-      <span class="text-blue-400">npx</span>
-      <span class="text-primary font-semibold hero-gradient">jscpd</span>
+      <span class="text-blue-400">jscpd</span>
       <span class="text-muted">./src</span>
       <span class="typing-cursor"></span>
     </div>
@@ -67,8 +66,6 @@ Copy/Paste Detector for Source Code
   Hunt Duplicates
   :::
 
-  :product-hunt-badge
-
   :::u-button
   ---
   color: neutral
@@ -98,7 +95,7 @@ Because clean code is happy code
   Since 2013
 
   #description
-  A decade of refining the art of duplicate detection. Tried, tested, and trusted by thousands of teams worldwide.
+  A decade of refining the art of duplicate detection. Now rewritten in Rust for native performance — no Node.js runtime required.
   :::
 
   :::u-page-feature
@@ -136,10 +133,10 @@ Because clean code is happy code
   Blazingly Fast™
 
   #description
-  Powered by the Rabin-Karp algorithm. Scans massive codebases before your coffee gets cold.
+  Rewritten in Rust. 24-37x faster than the TypeScript engine. 902 MB codebase? 3.4 seconds. No Node.js runtime — just a single native binary.
 
-  <a href="/getting-started/introduction" class="feature-card-link">
-    Learn how it works
+  <a href="/getting-started/migration" class="feature-card-link">
+    See benchmarks
     <span class="link-arrow">→</span>
   </a>
   :::
@@ -184,7 +181,7 @@ Because clean code is happy code
   Programmable
 
   #description
-  Full API for Node.js. Build your own duplicate-detection empire. We won't judge.
+  v5: Rust crate API. v4: Node.js API. Same CLI in both. Use whichever fits your stack.
 
   <a href="/api" class="feature-card-link">
     View API documentation
@@ -302,8 +299,30 @@ Clone found (javascript):
 # ... more clones
 
 Found 90 clones.
-Detection time: 434.777ms
+Detection time: 13ms
 ```
+::
+
+::u-page-section
+---
+orientation: horizontal
+---
+#title
+v5 vs v4: Performance
+
+#description
+The Rust engine makes jscpd 24–37x faster across every codebase size.
+
+#default
+| Target | Files | Size | v4 (TypeScript) | v5 (Rust) | Speedup |
+|--------|-------|------|------------------|-----------|---------|
+| fixtures | 548 | 1.5 MB | 1.03s | 0.03s | **34.3x** |
+| Svelte | 8,963 | 164 MB | 15.80s | 0.43s | **36.9x** |
+| CopilotKit | 17,092 | 902 MB | 82.89s | 3.44s | **24.1x** |
+
+Git blame is **27.5x faster** with v5's in-process gitoxide (0.13s vs 3.57s on fixtures).
+
+_Benchmarked on macOS (Apple Silicon). See the [Migration Guide](/getting-started/migration) for full details._
 ::
 
 ::u-page-section

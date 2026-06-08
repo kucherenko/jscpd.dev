@@ -7,6 +7,12 @@ const links = [
     ariaLabel: 'npm'
   },
   {
+    icon: 'i-simple-icons-rust',
+    to: 'https://crates.io/crates/jscpd',
+    target: '_blank' as const,
+    ariaLabel: 'crates.io'
+  },
+  {
     icon: 'i-simple-icons-opencollective',
     to: 'https://opencollective.com/jscpd',
     target: '_blank' as const,

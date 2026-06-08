@@ -13,7 +13,7 @@ export default defineAppConfig({
   site: {
     url: 'https://jscpd.dev',
     name: 'jscpd',
-    description: 'Copy/paste detector for programming source code',
+    description: 'Copy/paste detector for programming source code. Rust-powered, 24-37x faster.',
     ogImage: '/favicon.svg'
   },
   toc: {
@@ -55,6 +55,6 @@ export default defineAppConfig({
     url: 'https://github.com/kucherenko/jscpd'
   },
   footer: {
-    credits: 'Copyright © 2013-2025 Andrey Kucherenko'
+    credits: 'Copyright © 2013-2026 Andrey Kucherenko'
   }
 })

@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Copy/paste detector for programming source code. Supports 223+ languages. Find and eliminate code duplication.",
+            "Copy/paste detector for programming source code. Rust-powered native binary, 24-37x faster. Supports 223+ languages.",
         },
         {
           name: "keywords",
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         { property: "og:title", content: "jscpd - Copy/Paste Detector" },
         {
           property: "og:description",
-          content: "Find duplicated code in 223+ programming languages",
+          content: "Find duplicated code in 223+ programming languages — Rust-powered, 24-37x faster",
         },
         { property: "og:url", content: "https://jscpd.dev" },
         { property: "og:type", content: "website" },
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         { name: "twitter:title", content: "jscpd - Copy/Paste Detector" },
         {
           name: "twitter:description",
-          content: "Find duplicated code in 223+ programming languages",
+          content: "Find duplicated code in 223+ programming languages — Rust-powered, 24-37x faster",
         },
       ],
       link: [
@@ -45,12 +45,12 @@ export default defineNuxtConfig({
   site: {
     url: "https://jscpd.dev",
     name: "jscpd",
-    description: "Copy/paste detector for programming source code",
+    description: "Copy/paste detector for programming source code. Rust-powered, 24-37x faster.",
   },
 
   llms: {
     domain: "https://jscpd.dev",
     title: "jscpd",
-    description: "Copy/paste detector for programming source code",
+    description: "Copy/paste detector for programming source code. Rust-powered, 24-37x faster.",
   },
 });
