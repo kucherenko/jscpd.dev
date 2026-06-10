@@ -3,8 +3,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const bars = [
   { label: 'fixtures', files: '548', size: '1.5 MB', v4: 1.03, v5: 0.03, speedup: '34.3x', v4Display: '1.03s', v5Display: '0.03s' },
-  { label: 'Svelte', files: '8,963', size: '164 MB', v4: 15.80, v5: 0.43, speedup: '36.9x', v4Display: '15.80s', v5Display: '0.43s' },
-  { label: 'CopilotKit', files: '17,092', size: '902 MB', v4: 82.89, v5: 3.44, speedup: '24.1x', v4Display: '82.89s', v5Display: '3.44s' },
+  { label: 'Svelte', files: '8,963', size: '38 MB', v4: 15.80, v5: 0.43, speedup: '36.9x', v4Display: '15.80s', v5Display: '0.43s' },
+  { label: 'CopilotKit', files: '17,092', size: '159 MB', v4: 82.89, v5: 3.44, speedup: '24.1x', v4Display: '82.89s', v5Display: '3.44s' },
 ]
 
 const maxV4 = Math.max(...bars.map(b => b.v4))

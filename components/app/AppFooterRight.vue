@@ -17,6 +17,12 @@ const links = [
     label: 'Sponsor',
     to: 'https://opencollective.com/jscpd',
     target: '_blank' as const
+  },
+  {
+    icon: 'i-simple-icons-rust',
+    label: 'Rust crate',
+    to: 'https://crates.io/crates/jscpd',
+    target: '_blank' as const
   }
 ]
 </script>

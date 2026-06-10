@@ -133,7 +133,7 @@ Because clean code is happy code
   Blazingly Fast™
 
   #description
-  Rewritten in Rust. 24-37x faster than the TypeScript engine. 902 MB codebase? 3.4 seconds. No Node.js runtime — just a single native binary.
+  Rewritten in Rust. 24-37x faster than the TypeScript engine. 159 MB codebase? 3.4 seconds. No Node.js runtime — just a single native binary.
 
   <a href="/getting-started/migration" class="feature-card-link">
     See benchmarks
@@ -317,8 +317,8 @@ The Rust engine makes jscpd 24–37x faster across every codebase size.
 | Target | Files | Size | v4 (TypeScript) | v5 (Rust) | Speedup |
 |--------|-------|------|------------------|-----------|---------|
 | fixtures | 548 | 1.5 MB | 1.03s | 0.03s | **34.3x** |
-| Svelte | 8,963 | 164 MB | 15.80s | 0.43s | **36.9x** |
-| CopilotKit | 17,092 | 902 MB | 82.89s | 3.44s | **24.1x** |
+| Svelte | 8,963 | 38 MB | 15.80s | 0.43s | **36.9x** |
+| CopilotKit | 17,092 | 159 MB | 82.89s | 3.44s | **24.1x** |
 
 Git blame is **27.5x faster** with v5's in-process gitoxide (0.13s vs 3.57s on fixtures).
 

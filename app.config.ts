@@ -39,6 +39,12 @@ export default defineAppConfig({
           label: 'Sponsor',
           to: 'https://opencollective.com/jscpd',
           target: '_blank'
+        },
+        {
+          icon: 'simple-icons-rust',
+          label: 'Rust crate',
+          to: 'https://crates.io/crates/jscpd',
+          target: '_blank'
         }
       ]
     }
