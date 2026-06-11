@@ -53,7 +53,7 @@ while [ $# -gt 0 ]; do
 done
 
 if [ -z "$PREFIX" ]; then
-  PREFIX="${CPD_INSTALL_PREFIX:-/usr/local/bin}"
+  PREFIX="${CPD_INSTALL_PREFIX:-${HOME}/.local/bin}"
 fi
 
 info()  { printf '\033[1;34m→\033[0m %s\n' "$*" >&2; }
