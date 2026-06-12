@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # jscpd / cpd install script
-# Usage: curl -fsSL https://jscpd.dev/install | bash
-#        curl -fsSL https://jscpd.dev/install | bash -s -- --version 5.0.7
-#        curl -fsSL https://jscpd.dev/install | bash -s -- --prefix ~/bin
+# Usage: curl -fsSL https://jscpd.dev/install.sh | bash
+#        curl -fsSL https://jscpd.dev/install.sh | bash -s -- --version 5.0.7
+#        curl -fsSL https://jscpd.dev/install.sh | bash -s -- --prefix ~/bin
 #
 # Downloads the cpd binary for the current platform and installs it.
 # Primary source: GitHub Releases (kucherenko/jscpd)
@@ -35,9 +35,9 @@ while [ $# -gt 0 ]; do
     --dry-run) DRY_RUN=1; shift ;;
     --force) FORCE=1; shift ;;
     -h|--help)
-      echo "Usage: curl -fsSL https://jscpd.dev/install | bash"
-      echo "       curl -fsSL https://jscpd.dev/install | bash -s -- --version 5.0.7"
-      echo "       curl -fsSL https://jscpd.dev/install | bash -s -- --prefix ~/bin"
+      echo "Usage: curl -fsSL https://jscpd.dev/install.sh | bash"
+      echo "       curl -fsSL https://jscpd.dev/install.sh | bash -s -- --version 5.0.7"
+      echo "       curl -fsSL https://jscpd.dev/install.sh | bash -s -- --prefix ~/bin"
       echo ""
       echo "Options:"
       echo "  --version VERSION   Install a specific version (default: latest)"

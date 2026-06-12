@@ -7,6 +7,20 @@ seo:
 ::u-page-hero
 ---
 orientation: horizontal
+links:
+  - label: Hunt Duplicates
+    color: primary
+    size: xl
+    to: /getting-started/installation
+    trailing-icon: i-lucide-arrow-right
+    class: btn-glow
+  - label: Sponsor the project
+    color: neutral
+    size: xl
+    to: https://opencollective.com/jscpd
+    target: _blank
+    variant: ghost
+    icon: i-lucide-heart
 ---
 #title
 Copy/Paste Detector for Source Code
@@ -16,30 +30,6 @@ Copy/Paste Detector for Source Code
 
 #default
 <InstallCommand />
-
-#links
-  :::u-button
-  ---
-  color: primary
-  size: xl
-  to: /getting-started/installation
-  trailing-icon: i-lucide-arrow-right
-  class: btn-glow
-  ---
-  Hunt Duplicates
-  :::
-
-  :::u-button
-  ---
-  color: neutral
-  size: xl
-  to: https://opencollective.com/jscpd
-  target: _blank
-  variant: ghost
-  icon: i-lucide-heart
-  ---
-  Sponsor the project
-  :::
 ::
 
 ::u-page-section
