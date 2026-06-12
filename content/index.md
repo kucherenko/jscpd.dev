@@ -15,44 +15,7 @@ Copy/Paste Detector for Source Code
 **jscpd v5** is a Rust-powered rewrite that hunts down duplicated blocks across **223+ languages** up to **37x faster** than v4 — because life's too short to maintain the same bug in five different places. Need the Node.js API? v4 is still available. AI-ready with the `--reporters ai` flag.
 
 #default
-<div class="relative bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-6 border border-primary/10 terminal-glow">
-  <div class="flex items-center gap-3 mb-4">
-    <div class="flex gap-2">
-      <div class="w-3 h-3 rounded-full bg-red-400 animate-pulse"></div>
-      <div class="w-3 h-3 rounded-full bg-yellow-400 animate-pulse" style="animation-delay: 0.2s"></div>
-      <div class="w-3 h-3 rounded-full bg-green-400 animate-pulse" style="animation-delay: 0.4s"></div>
-    </div>
-    <span class="text-sm text-muted">Terminal</span>
-  </div>
-
-  <div class="font-mono text-sm">
-    <div class="text-muted mb-2 typing-text">// Your code deserves better than copy/paste chaos</div>
-    <div class="flex items-center gap-2 mb-2">
-      <span class="text-green-400">$</span>
-      <span class="text-blue-400">jscpd</span>
-      <span class="text-muted">./src</span>
-      <span class="typing-cursor"></span>
-    </div>
-    <div class="text-muted" style="animation: fadeIn 0.5s ease 1s both;">→ Finding duplicates...</div>
-    <div class="text-green-400 mt-2" style="animation: fadeIn 0.5s ease 2s both;">✓ Scan complete: 3 clones found</div>
-  </div>
-
-  <div class="absolute -bottom-2 -right-2 text-6xl opacity-10 animate-bounce" style="animation-duration: 3s;">🚀</div>
-</div>
-
-<style scoped>
-.relative {
-  position: relative;
-}
-.bg-gradient-to-br {
-  background: linear-gradient(to bottom right,
-    rgba(var(--ui-color-primary-rgb), 0.05),
-    rgba(var(--ui-color-secondary-rgb), 0.05));
-}
-.border {
-  border: 1px solid rgba(var(--ui-color-primary-rgb), 0.1);
-}
-</style>
+<InstallCommand />
 
 #links
   :::u-button
