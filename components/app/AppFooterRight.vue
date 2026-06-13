@@ -8,8 +8,8 @@ const links = [
   },
   {
     icon: 'i-simple-icons-x',
-    label: 'Twitter',
-    to: 'https://twitter.com/a_kucherenko',
+    label: 'X',
+    to: 'https://x.com/a_kucherenko',
     target: '_blank' as const
   },
   {
