@@ -26,3 +26,15 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      - name: Run jscpd copy/paste detector
+        uses: kucherenko/jscpd-action@master
+        with:
+          path: "components plugins"
+          format: "typescript,javascript,vue"
+          ignore: "node_modules,dist,.nuxt,.output"
+          min-lines: 3
+          min-tokens: 30
+          threshold: 5
+          reporters: "console,json,html,sarif"
+          output: "report"
