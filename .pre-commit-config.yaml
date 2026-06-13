@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: jscpd
+        name: jscpd - copy/paste detector
+        entry: jscpd
+        language: node
+        additional_dependencies: ['jscpd@5']
+        args: [--threshold, '5', --reporters, console, silent]
+        pass_filenames: false
+        always_run: true
