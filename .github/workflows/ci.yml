@@ -28,12 +28,27 @@ jobs:
         run: pnpm build
 
       - name: Run jscpd copy/paste detector
-        uses: kucherenko/jscpd@master
+        run: |
+          npx jscpd@5 \
+            components plugins \
+            --format typescript,javascript,vue \
+            --ignore "node_modules,dist,.nuxt,.output" \
+            --min-lines 3 \
+            --min-tokens 30 \
+            --reporters console,json,html,sarif \
+            --output report
+
+      - name: Upload SARIF to GitHub Code Scanning
+        if: always() && hashFiles('report/jscpd-report.sarif') != ''
+        uses: github/codeql-action/upload-sarif@v3
         with:
-          path: "components plugins"
-          format: "typescript,javascript,vue"
-          ignore: "node_modules,dist,.nuxt,.output"
-          min-lines: 3
-          min-tokens: 30
-          reporters: "console,json,html,sarif"
-          output: "report"
+          sarif_file: report/jscpd-report.sarif
+        continue-on-error: true
+
+      - name: Upload jscpd report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jscpd-report
+          path: report
+        continue-on-error: true
