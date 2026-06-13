@@ -192,6 +192,20 @@ download_from_npm() {
   return 1
 }
 
+version_gt() {
+  local v1="$1" v2="$2"
+  if [ "$v1" = "$v2" ]; then return 1; fi
+  local IFS=.
+  set -- $v1 $v2
+  local a1="${1:-0}" a2="${4:-0}" b1="${2:-0}" b2="${5:-0}" c1="${3:-0}" c2="${6:-0}"
+  [ "$((a1))" -gt "$((a2))" ] && return 0
+  [ "$((a1))" -lt "$((a2))" ] && return 1
+  [ "$((b1))" -gt "$((b2))" ] && return 0
+  [ "$((b1))" -lt "$((b2))" ] && return 1
+  [ "$((c1))" -gt "$((c2))" ] && return 0
+  return 1
+}
+
 main() {
   detect_platform
 
@@ -210,13 +224,22 @@ main() {
     existing_version=""
     existing_version=$("${PREFIX}/${BINARY_NAME}" --version 2>/dev/null | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | head -1 || true)
     if [ -n "$existing_version" ]; then
-      warn "cpd v${existing_version} already installed at ${PREFIX}/${BINARY_NAME}"
-      info "Use --force to overwrite, or remove it first"
+      if [ "$existing_version" = "$VERSION" ]; then
+        ok "cpd v${VERSION} already installed at ${PREFIX}/${BINARY_NAME}"
+        exit 0
+      fi
+      if version_gt "$VERSION" "$existing_version"; then
+        info "Upgrading cpd v${existing_version} → v${VERSION}"
+      else
+        warn "cpd v${existing_version} already installed at ${PREFIX}/${BINARY_NAME} (newer than v${VERSION})"
+        info "Use --force to downgrade, or specify a newer --version"
+        exit 0
+      fi
     else
       warn "An existing file exists at ${PREFIX}/${BINARY_NAME}"
       info "Use --force to overwrite"
+      exit 0
     fi
-    exit 0
   fi
 
   local tmpdir
