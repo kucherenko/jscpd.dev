@@ -307,8 +307,8 @@ Created with ❤️ by Andrey Kucherenko
         <a href="https://github.com/kucherenko" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-muted hover:bg-muted/80 rounded-full text-sm font-medium transition-colors">
           <span class="i-simple-icons:github w-4 h-4"></span> GitHub
         </a>
-        <a href="https://twitter.com/a_kucherenko" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-muted hover:bg-muted/80 rounded-full text-sm font-medium transition-colors">
-          <span class="i-simple-icons:x w-4 h-4"></span> Twitter/X
+        <a href="https://x.com/a_kucherenko" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-muted hover:bg-muted/80 rounded-full text-sm font-medium transition-colors">
+          <span class="i-simple-icons:x w-4 h-4"></span> X
         </a>
       </div>
     </div>
