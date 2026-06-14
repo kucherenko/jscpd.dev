@@ -23,6 +23,18 @@ export interface SpeedEntry {
   note?: string
 }
 
+export interface FormatSupportEntry {
+  tool: string
+  slug: string
+  color: string
+  languages: string
+  vue: string
+  svelte: string
+  astro: string
+  md: string
+  crossFormat: string
+}
+
 export interface CrossFormatEntry {
   tool: string
   slug: string
@@ -151,6 +163,86 @@ export const speedData: SpeedEntry[] = [
     dupLinesDelta: '−75.2%',
     color: '#64748b',
     note: 'Only 34 languages supported; 71 of 547 files processable',
+  },
+]
+
+export const formatSupportData: FormatSupportEntry[] = [
+  {
+    tool: 'jscpd@5',
+    slug: 'jscpd-5',
+    color: '#10b981',
+    languages: '223',
+    vue: 'Section-aware',
+    svelte: 'Section-aware',
+    astro: 'Section-aware',
+    md: 'Section-aware',
+    crossFormat: 'Yes',
+  },
+  {
+    tool: 'jscpd@4',
+    slug: 'jscpd-4',
+    color: '#f97316',
+    languages: '224',
+    vue: 'Section-aware',
+    svelte: 'Section-aware',
+    astro: 'Section-aware',
+    md: 'Section-aware',
+    crossFormat: 'Yes',
+  },
+  {
+    tool: 'jscpd-rs',
+    slug: 'jscpd-rs',
+    color: '#06b6d4',
+    languages: '223',
+    vue: 'Section-aware',
+    svelte: 'Section-aware',
+    astro: 'Section-aware',
+    md: 'Section-aware',
+    crossFormat: 'Yes',
+  },
+  {
+    tool: 'Duplo',
+    slug: 'duplo',
+    color: '#f59e0b',
+    languages: '~7',
+    vue: '—',
+    svelte: '—',
+    astro: '—',
+    md: '—',
+    crossFormat: 'Text-only',
+  },
+  {
+    tool: 'Simian',
+    slug: 'simian',
+    color: '#a855f7',
+    languages: '∞ (any text)',
+    vue: 'Flat text',
+    svelte: 'Flat text',
+    astro: 'Flat text',
+    md: 'Flat text',
+    crossFormat: 'Text-only',
+  },
+  {
+    tool: 'PMD CPD',
+    slug: 'pmd-cpd',
+    color: '#64748b',
+    languages: '36',
+    vue: '—',
+    svelte: '—',
+    astro: '—',
+    md: '—',
+    crossFormat: 'No',
+  },
+  {
+    tool: 'Fallow',
+    slug: 'fallow',
+    color: '#ef4444',
+    languages: 'JS/TS only',
+    vue: 'JS blocks only',
+    svelte: '—',
+    astro: '—',
+    md: '—',
+    crossFormat: 'No',
   },
 ]
 

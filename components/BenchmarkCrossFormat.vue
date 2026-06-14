@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { crossFormatData } from '~/data/benchmarks'
+import { formatSupportData, crossFormatData } from '~/data/benchmarks'
 
 const visible = ref(false)
 const containerRef = ref<HTMLElement | null>(null)
@@ -15,10 +15,56 @@ onMounted(() => {
   if (containerRef.value) observer.observe(containerRef.value)
   onUnmounted(() => observer.disconnect())
 })
+
+function cellClass(value: string): string {
+  if (value === 'Section-aware' || value === 'Yes') return 'bench-fs-yes'
+  if (value === 'Flat text' || value === 'Text-only') return 'bench-fs-partial'
+  if (value === '—' || value === 'No' || value === 'JS blocks only') return 'bench-fs-no'
+  return ''
+}
 </script>
 
 <template>
   <div ref="containerRef" class="bench-cross">
+    <div class="bench-cross-section">
+      <h4 class="bench-cross-subtitle">Format Support Overview</h4>
+      <p class="bench-cross-desc"><strong>Section-aware</strong> means the tool parses a file into separate language sections (CSS, JavaScript, template, etc.) and matches duplicates within each section independently. <strong>Flat text</strong> means the entire file is treated as undifferentiated text.</p>
+      <div class="bench-cross-table-wrap">
+        <table class="bench-cross-table bench-fs-table">
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Languages</th>
+              <th><code>.vue</code></th>
+              <th><code>.svelte</code></th>
+              <th><code>.astro</code></th>
+              <th><code>.md</code></th>
+              <th>Cross-Format</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(tool, idx) in formatSupportData"
+              :key="tool.slug"
+              class="bench-cross-row"
+              :class="{ 'bench-cross-row--visible': visible }"
+              :style="{ transitionDelay: visible ? idx * 60 + 'ms' : '0ms' }"
+            >
+              <td>
+                <span class="bench-tool-badge" :style="{ background: tool.color + '22', color: tool.color, borderColor: tool.color + '44' }">{{ tool.tool }}</span>
+              </td>
+              <td class="bench-fs-lang">{{ tool.languages }}</td>
+              <td :class="cellClass(tool.vue)">{{ tool.vue }}</td>
+              <td :class="cellClass(tool.svelte)">{{ tool.svelte }}</td>
+              <td :class="cellClass(tool.astro)">{{ tool.astro }}</td>
+              <td :class="cellClass(tool.md)">{{ tool.md }}</td>
+              <td :class="cellClass(tool.crossFormat)">{{ tool.crossFormat }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <div class="bench-cross-section">
       <h4 class="bench-cross-subtitle">Within-Format Clones</h4>
       <p class="bench-cross-desc">Duplicates detected within the same file format.</p>
@@ -178,6 +224,32 @@ onMounted(() => {
 
 .bench-cross-total {
   font-weight: 700;
+}
+
+.bench-fs-table td.bench-fs-yes {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.bench-fs-table td.bench-fs-partial {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+.bench-fs-table td.bench-fs-no {
+  color: var(--ui-color-neutral-400);
+}
+
+.bench-fs-lang {
+  font-weight: 500;
+  color: var(--ui-color-neutral-500);
+}
+
+.bench-fs-table code {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.2rem;
+  background: rgba(var(--ui-color-neutral-rgb), 0.1);
 }
 
 .bench-cross-row {
