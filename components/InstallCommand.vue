@@ -38,6 +38,13 @@
               <Icon name="simple-icons:homebrew" class="tab-icon" />
               brew
             </button>
+            <button
+              :class="['install-tab', { active: activeTab === 'nix' }]"
+              @click="activeTab = 'nix'"
+            >
+              <Icon name="simple-icons:nixos" class="tab-icon" />
+              nix
+            </button>
           </div>
         </div>
       </div>
@@ -74,7 +81,8 @@ const commands: Record<string, string> = {
   curl: 'curl -fsSL https://jscpd.dev/install.sh | bash',
   npm: 'npm install -g jscpd',
   cargo: 'cargo install jscpd',
-  brew: 'brew install jscpd'
+  brew: 'brew install jscpd',
+  nix: 'nix profile install github:kucherenko/jscpd'
 }
 
 const activeTab = ref('curl')
