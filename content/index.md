@@ -88,7 +88,7 @@ Because clean code is happy code
   #description
   Rewritten in Rust. 24-37x faster than the TypeScript engine. 159 MB codebase? 3.4 seconds. No Node.js runtime — just a single native binary.
 
-  <a href="/getting-started/migration" class="feature-card-link">
+  <a href="/benchmarks" class="feature-card-link">
     See benchmarks
     <span class="link-arrow">→</span>
   </a>
