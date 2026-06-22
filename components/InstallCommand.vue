@@ -199,9 +199,8 @@ async function copyCommand() {
 
 .install-tab.active {
   color: #fff;
-  background: rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.2);
-  border-color: rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.3);
-  box-shadow: 0 0 12px rgba(0, 123, 255, 0.15);
+  background: var(--jscpd-blue, #007bff);
+  border-color: var(--jscpd-blue, #007bff);
 }
 
 .tab-icon {
