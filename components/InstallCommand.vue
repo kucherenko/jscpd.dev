@@ -121,16 +121,10 @@ async function copyCommand() {
   border: 1px solid rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.15);
   border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow:
-    0 0 40px rgba(0, 123, 255, 0.12),
-    0 0 80px rgba(178, 0, 178, 0.08);
   transition: all 0.3s ease;
 }
 
 .hero-terminal:hover {
-  box-shadow:
-    0 0 60px rgba(0, 123, 255, 0.2),
-    0 0 100px rgba(178, 0, 178, 0.12);
   transform: translateY(-2px);
 }
 

@@ -267,25 +267,15 @@
 }
 
 .btn-glow::after {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(135deg, var(--jscpd-blue), var(--jscpd-magenta), var(--jscpd-cyan));
-  border-radius: inherit;
-  z-index: -1;
-  opacity: 0;
-  filter: blur(8px);
-  transition: opacity 0.3s ease;
+  content: none;
 }
 
-.btn-glow:hover::after {
-  opacity: 0.5;
-  animation: pulseGlow 2s ease-in-out infinite;
-}
-
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 0.8; }
+/* ponytail: Nuxt UI primary hover falls back to low-contrast shade because
+   --ui-primary override only sets one shade. Pin hover bg + text explicitly. */
+.btn-glow:hover,
+.btn-glow:hover:focus-visible {
+  background-color: var(--jscpd-magenta);
+  color: #fff;
 }
 
 /* ========================================
