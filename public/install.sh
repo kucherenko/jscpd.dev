@@ -93,7 +93,7 @@ detect_platform() {
     PLATFORM_KEY="${DETECTED_OS}-${DETECTED_CPU}-gnu"
   fi
 
-  NPM_PACKAGE="cpd-${PLATFORM_KEY}"
+  NPM_PACKAGE="jscpd-${PLATFORM_KEY}"
 
   case "$PLATFORM_KEY" in
     linux-x64-gnu)    GITHUB_ASSET_SUFFIX="linux-x64-gnu" ;;
@@ -132,7 +132,7 @@ get_latest_version() {
 download_from_github() {
   local version="$1"
   local tmpdir="$2"
-  local archive_name="cpd-${GITHUB_ASSET_SUFFIX}.tar.gz"
+  local archive_name="jscpd-${GITHUB_ASSET_SUFFIX}.tar.gz"
   local url="${GITHUB_RELEASES_URL}/download/v${version}/${archive_name}"
 
   info "Downloading cpd v${version} for ${PLATFORM_KEY} from GitHub Releases..."
@@ -143,9 +143,9 @@ download_from_github() {
 
   tar -xzf "${tmpdir}/${archive_name}" -C "$tmpdir" 2>/dev/null || return 1
 
-  local bin_name="$BINARY_NAME"
+  local bin_name="jscpd"
   if [ "$DETECTED_OS" = "win32" ]; then
-    bin_name="${BINARY_NAME}.exe"
+    bin_name="jscpd.exe"
   fi
 
   if [ -f "${tmpdir}/${bin_name}" ]; then
@@ -179,13 +179,13 @@ download_from_npm() {
 
   tar -xzf "${tmpdir}/package.tgz" -C "$tmpdir" 2>/dev/null || return 1
 
-  local bin_name="$BINARY_NAME"
+  local bin_name="jscpd"
   if [ "$DETECTED_OS" = "win32" ]; then
-    bin_name="${BINARY_NAME}.exe"
+    bin_name="jscpd.exe"
   fi
 
-  if [ -f "${tmpdir}/package/cpd-bin/${bin_name}" ]; then
-    echo "${tmpdir}/package/cpd-bin/${bin_name}"
+  if [ -f "${tmpdir}/package/bin/${bin_name}" ]; then
+    echo "${tmpdir}/package/bin/${bin_name}"
     return 0
   fi
 
