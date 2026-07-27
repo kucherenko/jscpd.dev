@@ -182,7 +182,7 @@ Because clean code is happy code
   Cross-Format Detection <span class="duplicate-badge">New</span>
 
   #description
-  Vue SFC, Svelte, Astro, and Markdown files are tokenized per-block — a `<script>` in .vue can match a .ts file. Detect duplication across file types.
+  Vue SFC, Svelte, Astro, and Markdown files are tokenized per-block — a `<script>` in .vue can match a .ts file. And `--cross-formats "js-ts"` compares related formats in one pool, catching clones between .js and .ts files.
   :::
 
   :::u-page-feature
