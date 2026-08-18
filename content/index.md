@@ -166,10 +166,26 @@ Because clean code is happy code
   MCP Server <span class="duplicate-badge">New</span>
 
   #description
-  Let AI assistants like Claude check your code for duplications directly using the Model Context Protocol.
+  Let AI assistants like Claude check your code for duplications via the Model Context Protocol — now built into the v5 binary: `cpd --mcp` serves stdio directly, no separate server needed.
 
   <a href="/api/mcp-server" class="feature-card-link">
     Learn about MCP Server
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-list-ordered
+  ---
+  #title
+  Codebase Summary <span class="duplicate-badge">New</span>
+
+  #description
+  `--summary` ranks your top files and folders by tokens, lines, size, or complexity — each with its duplication share — so you know where to refactor first.
+
+  <a href="/getting-started/configuration" class="feature-card-link">
+    See summary options
     <span class="link-arrow">→</span>
   </a>
   :::
