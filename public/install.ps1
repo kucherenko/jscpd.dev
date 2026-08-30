@@ -6,7 +6,7 @@
 .DESCRIPTION
   Downloads the jscpd binary for this machine and installs it. The bash
   installer (install.sh) needs a POSIX shell, so on Windows it either fails or
-  — when `bash` resolves to WSL — installs the *Linux* binary inside the WSL
+  -- when `bash` resolves to WSL -- installs the *Linux* binary inside the WSL
   filesystem rather than under the Windows user profile. This script installs a
   native Windows executable with no Node.js, Git Bash, or WSL involved.
 
@@ -113,7 +113,7 @@ function Get-BinaryFromNpm {
   return $null
 }
 
-# ── main ────────────────────────────────────────────────────────────────────
+# -- main --------------------------------------------------------------------
 
 if (-not $Prefix) {
   # Plain if/else, not `$x = if (...) {...}` with `else` on the next line:
@@ -146,7 +146,7 @@ if ((Test-Path $dest) -and -not $Force) {
   if ($existing) {
     Write-Info "Replacing jscpd v$existing with v$Version"
   } else {
-    Write-Warn "A file already exists at $dest — re-run with -Force to overwrite"
+    Write-Warn "A file already exists at $dest -- re-run with -Force to overwrite"
     exit 1
   }
 }

@@ -91,6 +91,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Windows PowerShell 5.1 decodes a BOM-less .ps1 as Windows-1252, not
+      # UTF-8. A UTF-8 em-dash then becomes a smart quote (0x94), which
+      # PowerShell honours as a string delimiter — terminating a string
+      # mid-line and unbalancing the rest of the file. Keep it ASCII-only.
+      - name: ASCII-only check
+        shell: pwsh
+        run: |
+          $bytes = [System.IO.File]::ReadAllBytes((Resolve-Path ./public/install.ps1).Path)
+          $bad = @()
+          $line = 1
+          foreach ($b in $bytes) {
+            if ($b -eq 10) { $line++ }
+            if ($b -gt 127) { $bad += $line }
+          }
+          if ($bad.Count -gt 0) {
+            throw "install.ps1 must be ASCII-only; non-ASCII bytes on line(s): $(($bad | Select-Object -Unique) -join ', ')"
+          }
+          Write-Host "ASCII-only: OK"
+
       # Parse before running: Windows PowerShell 5.1 and PowerShell 7 do not
       # accept identical syntax, and a parse error otherwise surfaces as a
       # confusing cascade of brace errors far from its cause.
