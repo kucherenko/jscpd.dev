@@ -126,7 +126,10 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          $out = & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-bin" 2>&1 | Out-String
+          # `*>&1`, not `2>&1`: the installer reports progress with Write-Host,
+          # which goes to the information stream (6) and is invisible to a
+          # stderr-only redirect.
+          $out = & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-bin" *>&1 | Out-String
           Write-Host $out
           if ($out -notmatch 'already installed') { throw "expected an 'already installed' short-circuit" }
 
