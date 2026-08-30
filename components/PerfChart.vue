@@ -9,20 +9,13 @@ const bars = [
 
 const maxV4 = Math.max(...bars.map(b => b.v4))
 const visible = ref(false)
-const blameVisible = ref(false)
 const containerRef = ref<HTMLElement | null>(null)
-
-const blameBars = [
-  { label: 'without blame', v4Display: '1.03s', v5Display: '0.03s', v4Pct: 29, v5Pct: 23 },
-  { label: 'with --blame', v4Display: '3.57s', v5Display: '0.13s', v4Pct: 100, v5Pct: 100 },
-]
 
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting) {
         visible.value = true
-        setTimeout(() => { blameVisible.value = true }, 300)
       }
     },
     { threshold: 0.2 }
@@ -74,31 +67,6 @@ onMounted(() => {
       </div>
     </div>
 
-    <!-- Git Blame Speed -->
-    <div class="perf-section perf-section-alt">
-      <h3 class="perf-section-title">Git Blame Speed <span class="perf-section-subtitle">(fixtures, 548 files)</span></h3>
-      <div class="perf-blame-bars">
-        <div v-for="bar in blameBars" :key="bar.label" class="perf-blame-row">
-          <span class="perf-blame-label">{{ bar.label }}</span>
-          <div class="perf-blame-group">
-            <div class="perf-blame-track">
-              <div class="perf-blame-bar perf-bar-v4" :style="{ width: blameVisible ? bar.v4Pct + '%' : '0%' }">
-                <span class="perf-bar-value">{{ bar.v4Display }}</span>
-              </div>
-            </div>
-            <div class="perf-blame-track">
-              <div class="perf-blame-bar perf-bar-v5" :style="{ width: blameVisible ? bar.v5Pct + '%' : '0%' }">
-                <span class="perf-bar-value">{{ bar.v5Display }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="perf-blame-note">
-        v4 shells out to <code>git blame</code> per file. v5 uses <a href="https://github.com/GitoxideLabs/gitoxide" target="_blank" rel="noopener">gitoxide</a> in-process.
-      </p>
-    </div>
-
     <p class="perf-footer">Benchmarked on macOS (Apple Silicon) · 10 runs for fixtures/Svelte, 3 for CopilotKit · <a href="/getting-started/migration">Full benchmarks →</a></p>
   </div>
 </template>
@@ -112,12 +80,6 @@ onMounted(() => {
   margin-bottom: 1.5rem;
 }
 
-.perf-section-alt {
-  background: rgba(var(--ui-color-primary-rgb), 0.03);
-  border: 1px solid rgba(var(--ui-color-primary-rgb), 0.08);
-  border-radius: 0.75rem;
-  padding: 1.25rem;
-}
 
 .perf-section-title {
   font-size: 0.95rem;
@@ -126,11 +88,6 @@ onMounted(() => {
   color: var(--ui-color-text);
 }
 
-.perf-section-subtitle {
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: var(--ui-color-neutral-500);
-}
 
 .perf-legend {
   display: flex;
@@ -257,77 +214,6 @@ onMounted(() => {
   color: #059669;
   border: 1px solid rgba(16, 185, 129, 0.25);
   white-space: nowrap;
-}
-
-/* Blame section */
-.perf-blame-bars {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.perf-blame-row {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 0.75rem;
-  align-items: center;
-}
-
-@media (max-width: 640px) {
-  .perf-blame-row {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-  }
-}
-
-.perf-blame-label {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--ui-color-neutral-500);
-}
-
-.perf-blame-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.perf-blame-track {
-  height: 1.25rem;
-  background: rgba(var(--ui-color-neutral-rgb), 0.06);
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
-.perf-blame-bar {
-  height: 100%;
-  border-radius: 0.25rem;
-  transition: width 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 0.4rem;
-  min-width: 0;
-}
-
-.perf-blame-note {
-  font-size: 0.7rem;
-  color: var(--ui-color-neutral-400);
-  margin: 0.75rem 0 0 0;
-  line-height: 1.4;
-}
-
-.perf-blame-note code {
-  font-size: 0.65rem;
-  padding: 0.1rem 0.3rem;
-  border-radius: 0.2rem;
-  background: rgba(var(--ui-color-neutral-rgb), 0.1);
-}
-
-.perf-blame-note a {
-  color: var(--ui-color-primary);
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 .perf-footer {
