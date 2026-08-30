@@ -18,6 +18,13 @@
               curl
             </button>
             <button
+              :class="['install-tab', { active: activeTab === 'windows' }]"
+              @click="activeTab = 'windows'"
+            >
+              <Icon name="simple-icons:windows" class="tab-icon" />
+              windows
+            </button>
+            <button
               :class="['install-tab', { active: activeTab === 'npm' }]"
               @click="activeTab = 'npm'"
             >
@@ -78,7 +85,11 @@
 import { ref, computed } from 'vue'
 
 const commands: Record<string, string> = {
+  // The curl installer needs a POSIX shell — macOS and Linux only. On Windows
+  // `bash` is either absent or WSL, which would install the Linux binary
+  // inside WSL rather than under the Windows user profile.
   curl: 'curl -fsSL https://jscpd.dev/install.sh | bash',
+  windows: 'irm https://jscpd.dev/install.ps1 | iex',
   npm: 'npm install -g jscpd',
   cargo: 'cargo install jscpd',
   brew: 'brew install jscpd',
