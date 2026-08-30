@@ -1,0 +1,236 @@
+name: Install smoke tests
+
+# End-to-end checks that the installers this site serves actually install a
+# working jscpd on every supported OS.
+#
+#   pull_request / push  -> tests the scripts in this repo (pre-merge)
+#   schedule / dispatch  -> tests the *deployed* scripts at jscpd.dev, which
+#                           also catches a release that breaks installation
+#                           without any change landing here
+#
+# Note: `shell:` does not accept expressions, so the Windows shells are two
+# literal steps rather than a matrix dimension.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master, main]
+    paths:
+      - "public/install.sh"
+      - "public/install.ps1"
+      - ".github/workflows/install-smoke-tests.yml"
+  pull_request:
+    paths:
+      - "public/install.sh"
+      - "public/install.ps1"
+      - ".github/workflows/install-smoke-tests.yml"
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  # ── macOS & Linux: install.sh ──────────────────────────────────────────────
+  unix:
+    name: install.sh on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install
+        run: |
+          set -euo pipefail
+          bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-bin"
+          test -x "$RUNNER_TEMP/jscpd-bin/cpd" || { echo "cpd not installed"; exit 1; }
+          test -e "$RUNNER_TEMP/jscpd-bin/jscpd" || { echo "jscpd alias missing"; exit 1; }
+
+      - name: Both commands run
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/jscpd-bin/cpd" --version
+          "$RUNNER_TEMP/jscpd-bin/jscpd" --version
+
+      - name: Detects a real duplicate
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/src"
+          {
+            echo "function dup() {"
+            for i in $(seq 0 19); do echo "  console.log($i);"; done
+            echo "  return 1;"
+            echo "}"
+          } > "$RUNNER_TEMP/src/a.js"
+          cp "$RUNNER_TEMP/src/a.js" "$RUNNER_TEMP/src/b.js"
+          out=$("$RUNNER_TEMP/jscpd-bin/jscpd" --min-tokens 20 --reporters console "$RUNNER_TEMP/src" 2>&1)
+          echo "$out"
+          echo "$out" | grep -qi "clone" || { echo "expected a clone to be reported"; exit 1; }
+
+      - name: Pinned version
+        run: |
+          set -euo pipefail
+          bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-pinned" --version 5.1.0
+          v=$("$RUNNER_TEMP/jscpd-pinned/cpd" --version)
+          echo "$v"
+          echo "$v" | grep -q "5\.1\.0" || { echo "expected 5.1.0, got: $v"; exit 1; }
+
+      - name: Dry run writes nothing
+        run: |
+          set -euo pipefail
+          bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-dry" --dry-run
+          if [ -e "$RUNNER_TEMP/jscpd-dry/cpd" ]; then echo "--dry-run wrote a binary"; exit 1; fi
+
+  # ── Windows: install.ps1 ──────────────────────────────────────────────────
+  windows:
+    name: install.ps1 on windows-latest
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Windows PowerShell 5.1 decodes a BOM-less .ps1 as Windows-1252, not
+      # UTF-8. A UTF-8 em-dash then becomes a smart quote (0x94), which
+      # PowerShell honours as a string delimiter — terminating a string
+      # mid-line and unbalancing the rest of the file. Keep it ASCII-only.
+      - name: ASCII-only check
+        shell: pwsh
+        run: |
+          $bytes = [System.IO.File]::ReadAllBytes((Resolve-Path ./public/install.ps1).Path)
+          $bad = @()
+          $line = 1
+          foreach ($b in $bytes) {
+            if ($b -eq 10) { $line++ }
+            if ($b -gt 127) { $bad += $line }
+          }
+          if ($bad.Count -gt 0) {
+            throw "install.ps1 must be ASCII-only; non-ASCII bytes on line(s): $(($bad | Select-Object -Unique) -join ', ')"
+          }
+          Write-Host "ASCII-only: OK"
+
+      # Parse before running: Windows PowerShell 5.1 and PowerShell 7 do not
+      # accept identical syntax, and a parse error otherwise surfaces as a
+      # confusing cascade of brace errors far from its cause.
+      - name: Syntax check (PowerShell 7)
+        shell: pwsh
+        run: |
+          $errs = $null
+          [System.Management.Automation.Language.Parser]::ParseFile(
+            (Resolve-Path ./public/install.ps1).Path, [ref]$null, [ref]$errs) | Out-Null
+          if ($errs) { $errs | ForEach-Object { Write-Host "$($_.Extent.StartLineNumber): $($_.Message)" }; throw "install.ps1 does not parse under PowerShell 7" }
+          Write-Host "parses cleanly"
+
+      - name: Syntax check (Windows PowerShell 5.1)
+        shell: powershell
+        run: |
+          $errs = $null
+          [System.Management.Automation.Language.Parser]::ParseFile(
+            (Resolve-Path ./public/install.ps1).Path, [ref]$null, [ref]$errs) | Out-Null
+          if ($errs) { $errs | ForEach-Object { Write-Host "$($_.Extent.StartLineNumber): $($_.Message)" }; throw "install.ps1 does not parse under Windows PowerShell 5.1" }
+          Write-Host "parses cleanly"
+
+      - name: Install (PowerShell 7)
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-bin"
+          if (-not (Test-Path "$env:RUNNER_TEMP\jscpd-bin\jscpd.exe")) { throw "jscpd.exe not installed" }
+          if (-not (Test-Path "$env:RUNNER_TEMP\jscpd-bin\cpd.exe"))   { throw "cpd.exe alias missing" }
+
+      - name: Both commands run
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & "$env:RUNNER_TEMP\jscpd-bin\jscpd.exe" --version
+          & "$env:RUNNER_TEMP\jscpd-bin\cpd.exe" --version
+
+      - name: Detects a real duplicate
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          New-Item -ItemType Directory -Path "$env:RUNNER_TEMP\src" -Force | Out-Null
+          $lines = @('function dup() {')
+          0..19 | ForEach-Object { $lines += "  console.log($_);" }
+          $lines += '  return 1;'
+          $lines += '}'
+          $text = $lines -join "`n"
+          Set-Content -Path "$env:RUNNER_TEMP\src\a.js" -Value $text
+          Set-Content -Path "$env:RUNNER_TEMP\src\b.js" -Value $text
+          $out = & "$env:RUNNER_TEMP\jscpd-bin\jscpd.exe" --min-tokens 20 --reporters console "$env:RUNNER_TEMP\src" 2>&1 | Out-String
+          Write-Host $out
+          if ($out -notmatch 'clone') { throw "expected a clone to be reported" }
+
+      - name: Existing install is detected
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          # `*>&1`, not `2>&1`: the installer reports progress with Write-Host,
+          # which goes to the information stream (6) and is invisible to a
+          # stderr-only redirect.
+          $out = & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-bin" *>&1 | Out-String
+          Write-Host $out
+          if ($out -notmatch 'already installed') { throw "expected an 'already installed' short-circuit" }
+
+      - name: Reinstall with -Force
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-bin" -Force
+          & "$env:RUNNER_TEMP\jscpd-bin\jscpd.exe" --version
+
+      - name: Pinned version
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-pinned" -Version 5.1.0
+          $v = & "$env:RUNNER_TEMP\jscpd-pinned\jscpd.exe" --version
+          Write-Host $v
+          if ("$v" -notmatch '5\.1\.0') { throw "expected 5.1.0, got: $v" }
+
+      - name: Dry run writes nothing
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-dry" -DryRun
+          if (Test-Path "$env:RUNNER_TEMP\jscpd-dry\jscpd.exe") { throw "-DryRun wrote a binary" }
+
+      # Windows PowerShell 5.1 ships with Windows and is what most users have
+      # in a fresh terminal, so the installer must work there too.
+      - name: Install under Windows PowerShell 5.1
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & ./public/install.ps1 -Prefix "$env:RUNNER_TEMP\jscpd-ps51"
+          $v = & "$env:RUNNER_TEMP\jscpd-ps51\jscpd.exe" --version
+          Write-Host "PS 5.1 installed: $v"
+          if (-not $v) { throw "binary did not run under Windows PowerShell 5.1" }
+
+  # ── The deployed scripts at jscpd.dev (scheduled / on demand) ─────────────
+  deployed:
+    name: deployed installer on ${{ matrix.os }}
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - name: curl | bash from jscpd.dev
+        run: |
+          set -euo pipefail
+          curl -fsSL https://jscpd.dev/install.sh | bash -s -- --prefix "$RUNNER_TEMP/jscpd-live"
+          "$RUNNER_TEMP/jscpd-live/cpd" --version
+
+  deployed-windows:
+    name: deployed installer on windows-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: windows-latest
+    steps:
+      - name: irm | iex from jscpd.dev
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          & ([scriptblock]::Create((Invoke-RestMethod https://jscpd.dev/install.ps1))) -Prefix "$env:RUNNER_TEMP\jscpd-live"
+          & "$env:RUNNER_TEMP\jscpd-live\jscpd.exe" --version
