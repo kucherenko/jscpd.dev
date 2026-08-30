@@ -289,8 +289,6 @@ The Rust engine makes jscpd 24–37x faster across every codebase size.
 | Svelte | 8,963 | 38 MB | 15.80s | 0.43s | **36.9x** |
 | CopilotKit | 17,092 | 159 MB | 82.89s | 3.44s | **24.1x** |
 
-Git blame is **27.5x faster** with v5's in-process gitoxide (0.13s vs 3.57s on fixtures).
-
 _Benchmarked on macOS (Apple Silicon). See the [Migration Guide](/getting-started/migration) for full details._
 ::
 
