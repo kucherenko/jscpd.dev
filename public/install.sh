@@ -102,6 +102,7 @@ detect_platform() {
     darwin-arm64)      GITHUB_ASSET_SUFFIX="darwin-arm64" ;;
     darwin-x64)        GITHUB_ASSET_SUFFIX="darwin-x64" ;;
     win32-x64)         GITHUB_ASSET_SUFFIX="windows-x64-msvc" ;;
+    win32-arm64)       GITHUB_ASSET_SUFFIX="windows-arm64-msvc" ;;
     *) err "No binary available for platform: $PLATFORM_KEY"; exit 1 ;;
   esac
 }
