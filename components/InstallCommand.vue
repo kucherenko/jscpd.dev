@@ -358,21 +358,59 @@ async function copyCommand() {
 }
 
 @media (max-width: 640px) {
+  /* The six install tabs need ~448px. Wrapping them stacked the header three
+     rows deep (128px of chrome before any content); a horizontally scrollable
+     strip keeps it to one row and is the familiar mobile pattern. */
   .terminal-header {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 0.5rem;
+    padding: 0.625rem 0.75rem;
+  }
+
+  .terminal-header-left {
+    flex-shrink: 0;
+  }
+
+  /* "Terminal" earns its space on a wide screen, not on a phone. */
+  .terminal-title {
+    display: none;
+  }
+
+  /* min-width: 0 lets the strip shrink below its content width — without it
+     the flex item's automatic minimum size forces the header to overflow. */
+  .install-section {
+    flex: 1;
+    min-width: 0;
   }
 
   .install-tabs {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .install-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ~26px was well under a comfortable touch target. */
+  .install-tab {
+    padding: 0.5rem 0.75rem;
+    min-height: 2.5rem;
   }
 
   .command-line {
     font-size: 0.75rem;
+    padding: 0.5rem 0.625rem;
   }
 
+  /* The command scrolls inside its own box, so it does not need to shrink to
+     11px to fit. */
   .command-line code {
+    font-size: 0.75rem;
+  }
+
+  .platform-hint {
     font-size: 0.6875rem;
   }
 }
