@@ -116,8 +116,14 @@ function Get-BinaryFromNpm {
 # ── main ────────────────────────────────────────────────────────────────────
 
 if (-not $Prefix) {
-  $Prefix = if ($env:CPD_INSTALL_PREFIX) { $env:CPD_INSTALL_PREFIX }
-            else { Join-Path $env:USERPROFILE '.local\bin' }
+  # Plain if/else, not `$x = if (...) {...}` with `else` on the next line:
+  # Windows PowerShell 5.1 ends the statement at the newline there and every
+  # brace after it misparses.
+  if ($env:CPD_INSTALL_PREFIX) {
+    $Prefix = $env:CPD_INSTALL_PREFIX
+  } else {
+    $Prefix = Join-Path $env:USERPROFILE '.local\bin'
+  }
 }
 
 $arch = Get-Architecture
@@ -187,7 +193,9 @@ try {
     Write-Info "$Prefix is already on your PATH"
   } else {
     Write-Info "Add $Prefix to your PATH:"
-    Write-Host "  [Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path','User') + ';$Prefix', 'User')" -ForegroundColor Cyan
+    # -f keeps the prefix out of a string already dense with quotes.
+    $hint = "  [Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path','User') + ';{0}', 'User')" -f $Prefix
+    Write-Host $hint -ForegroundColor Cyan
     Write-Info 'Then open a new terminal.'
   }
 } finally {
