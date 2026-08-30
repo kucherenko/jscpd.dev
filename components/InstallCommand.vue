@@ -64,6 +64,7 @@
             <Icon v-else name="lucide:check" class="copy-icon copied" />
           </button>
         </div>
+        <div class="platform-hint">{{ activePlatforms }}</div>
         <div class="terminal-divider"></div>
         <div class="terminal-output">
           <div class="text-muted mb-2 typing-text">// Your code deserves better than copy/paste chaos</div>
@@ -96,11 +97,24 @@ const commands: Record<string, string> = {
   nix: 'nix profile install github:kucherenko/jscpd'
 }
 
+// Shown under the command so nobody copies the curl one-liner on Windows,
+// where `bash` is either missing or WSL — which would install the Linux
+// binary inside WSL instead of the Windows user profile.
+const platforms: Record<string, string> = {
+  curl: 'macOS & Linux',
+  windows: 'Windows (x64 & ARM64)',
+  npm: 'any platform, needs Node.js',
+  cargo: 'any platform, needs Rust',
+  brew: 'macOS & Linux',
+  nix: 'macOS & Linux'
+}
+
 const activeTab = ref('curl')
 const copied = ref(false)
 const commandText = ref<HTMLElement>()
 
 const activeCommand = computed(() => commands[activeTab.value] ?? '')
+const activePlatforms = computed(() => platforms[activeTab.value] ?? '')
 
 async function copyCommand() {
   try {
@@ -222,6 +236,13 @@ async function copyCommand() {
 
 .terminal-body {
   padding: 1rem 1.25rem 1.25rem;
+}
+
+.platform-hint {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--ui-text-muted, #94a3b8);
+  font-family: 'SF Mono', 'Fira Code', ui-monospace, monospace;
 }
 
 .command-line {
