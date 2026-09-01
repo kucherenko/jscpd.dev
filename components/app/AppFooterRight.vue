@@ -28,7 +28,7 @@ const links = [
 </script>
 
 <template>
-  <div class="flex items-center gap-4">
+  <div class="flex flex-wrap items-center justify-center gap-2 sm:justify-end sm:gap-4">
     <UButton
       v-for="link in links"
       :key="link.label"

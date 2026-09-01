@@ -343,5 +343,11 @@ async function copyCommand() {
   .command-line code {
     font-size: 0.6875rem;
   }
+
+  .typing-text {
+    white-space: normal;
+    animation: none;
+    max-width: none;
+  }
 }
 </style>

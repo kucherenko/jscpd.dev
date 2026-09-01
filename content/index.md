@@ -295,6 +295,28 @@ _Benchmarked on macOS (Apple Silicon). See the [Migration Guide](/getting-starte
 ::
 
 ::u-page-section
+#title
+Who Uses <span class="hero-gradient">jscpd</span>
+
+#description
+From GitHub's official linter to enterprise codebases
+
+#default
+<WhoUses />
+::
+
+::u-page-section
+#title
+Developers Are Talking
+
+#description
+Real mentions from the community on X
+
+#default
+<TweetWall />
+::
+
+::u-page-section
 ---
 orientation: horizontal
 ---
