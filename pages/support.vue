@@ -52,9 +52,47 @@ watch(activeKey, () => { copied.value = false; walletStatus.value = 'idle'; wall
 
 // Direct donation via an injected EIP-1193 wallet (MetaMask etc.) — EVM only.
 // The wallet signs and sends; this page never touches keys or funds.
+const evmChains = [
+  { key: 'eth', chainId: '0x1', symbol: 'ETH', name: 'Ethereum' },
+  {
+    key: 'bnb',
+    chainId: '0x38',
+    symbol: 'BNB',
+    name: 'BNB Smart Chain',
+    add: {
+      chainId: '0x38',
+      chainName: 'BNB Smart Chain',
+      nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
+      rpcUrls: ['https://bsc-dataseed.binance.org'],
+      blockExplorerUrls: ['https://bscscan.com']
+    }
+  },
+  {
+    key: 'pol',
+    chainId: '0x89',
+    symbol: 'POL',
+    name: 'Polygon',
+    add: {
+      chainId: '0x89',
+      chainName: 'Polygon Mainnet',
+      nativeCurrency: { name: 'POL', symbol: 'POL', decimals: 18 },
+      rpcUrls: ['https://polygon-rpc.com'],
+      blockExplorerUrls: ['https://polygonscan.com']
+    }
+  }
+]
+
+const donateChainKey = ref('eth')
+const donateChain = computed(() => evmChains.find(c => c.key === donateChainKey.value)!)
 const donateAmount = ref('0.01')
 const walletStatus = ref<'idle' | 'pending' | 'done' | 'error'>('idle')
 const walletMessage = ref('')
+
+const donateLabel = computed(() => {
+  const n = Number(donateAmount.value)
+  const amount = Number.isFinite(n) && n > 0 ? donateAmount.value : '…'
+  return `Send ${amount} ${donateChain.value.symbol}`
+})
 
 async function donateWithWallet() {
   const eth = (window as any).ethereum
@@ -69,10 +107,22 @@ async function donateWithWallet() {
     walletMessage.value = 'Enter a valid amount.'
     return
   }
+  const chain = donateChain.value
   try {
     walletStatus.value = 'pending'
     walletMessage.value = 'Confirm in your wallet…'
     const [from] = await eth.request({ method: 'eth_requestAccounts' })
+    // make sure the wallet is on the chain the visitor chose, so the
+    // currency sent is exactly the one displayed
+    try {
+      await eth.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: chain.chainId }] })
+    } catch (switchErr: any) {
+      if (switchErr?.code === 4902 && chain.add) {
+        await eth.request({ method: 'wallet_addEthereumChain', params: [chain.add] })
+      } else {
+        throw switchErr
+      }
+    }
     // micro-units * 10^12 avoids float precision loss on the way to wei
     const wei = BigInt(Math.round(amount * 1e6)) * 10n ** 12n
     const txHash = await eth.request({
@@ -80,10 +130,10 @@ async function donateWithWallet() {
       params: [{ from, to: networks[0].address, value: '0x' + wei.toString(16) }]
     })
     walletStatus.value = 'done'
-    walletMessage.value = `Thank you! Transaction sent: ${txHash.slice(0, 10)}…${txHash.slice(-6)}`
+    walletMessage.value = `Thank you! ${amount} ${chain.symbol} sent — tx ${txHash.slice(0, 10)}…${txHash.slice(-6)}`
   } catch (e: any) {
     walletStatus.value = 'error'
-    walletMessage.value = e?.code === 4001 ? 'Transaction cancelled in the wallet.' : (e?.message || 'Wallet request failed.')
+    walletMessage.value = e?.code === 4001 ? 'Cancelled in the wallet.' : (e?.message || 'Wallet request failed.')
   }
 }
 
@@ -165,25 +215,28 @@ async function copyAddress() {
           <div v-if="activeKey === 'evm'" class="wallet-donate">
             <span class="eth-label">Or send directly from your wallet</span>
             <div class="wallet-donate-row">
+              <select v-model="donateChainKey" class="wallet-chain-select" aria-label="Network and currency">
+                <option v-for="c in evmChains" :key="c.key" :value="c.key">{{ c.name }} ({{ c.symbol }})</option>
+              </select>
               <div class="wallet-amount">
                 <input
                   v-model="donateAmount"
                   type="text"
                   inputmode="decimal"
                   class="wallet-amount-input"
-                  aria-label="Donation amount in the chain's native coin"
+                  :aria-label="`Donation amount in ${donateChain.symbol}`"
                 >
-                <span class="wallet-amount-unit">ETH / BNB / POL</span>
+                <span class="wallet-amount-unit">{{ donateChain.symbol }}</span>
               </div>
               <button class="wallet-donate-btn" :disabled="walletStatus === 'pending'" @click="donateWithWallet">
                 <Icon name="lucide:wallet" class="wallet-donate-icon" />
-                {{ walletStatus === 'pending' ? 'Waiting for wallet…' : 'Donate with MetaMask' }}
+                {{ walletStatus === 'pending' ? 'Waiting for wallet…' : donateLabel }}
               </button>
             </div>
             <p v-if="walletMessage" class="wallet-message" :class="`wallet-message-${walletStatus}`">{{ walletMessage }}</p>
             <p class="wallet-hint">
-              Opens your browser wallet (MetaMask or any EIP-1193 wallet) and sends to the address above
-              on whichever EVM network your wallet is set to — Ethereum, BNB Smart Chain, or Polygon.
+              Opens your browser wallet (MetaMask or any compatible wallet), switches it to
+              {{ donateChain.name }}, and sends {{ donateChain.symbol }} to the address above.
             </p>
           </div>
         </ClientOnly>
@@ -436,6 +489,20 @@ async function copyAddress() {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
+}
+
+.wallet-chain-select {
+  padding: 0.45rem 0.625rem;
+  border: 1px solid var(--ui-border, rgba(100, 116, 139, 0.25));
+  border-radius: 0.5rem;
+  background: transparent;
+  font-size: 0.8125rem;
+  color: var(--ui-text-highlighted, inherit);
+  cursor: pointer;
+}
+
+.wallet-chain-select option {
+  color: initial;
 }
 
 .wallet-amount {
