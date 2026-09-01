@@ -53,8 +53,8 @@ export default defineAppConfig({
     title: 'jscpd',
     to: '/',
     logo: {
-      light: '/logo.svg',
-      dark: '/logo-dark.svg'
+      light: '/logo-v2.svg',
+      dark: '/logo-dark-v2.svg'
     }
   },
   github: {
