@@ -22,7 +22,7 @@ const links = [
 </script>
 
 <template>
-  <div class="flex items-center gap-1">
+  <div class="hidden sm:flex items-center gap-1">
     <UButton
       v-for="link in links"
       :key="link.ariaLabel"
