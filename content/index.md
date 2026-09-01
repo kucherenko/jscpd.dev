@@ -219,6 +219,22 @@ Because clean code is happy code
 
   :::u-page-feature
   ---
+  icon: i-lucide-trending-up
+  ---
+  #title
+  Trending Repos, Analyzed <span class="duplicate-badge">New</span>
+
+  #description
+  How much copy/paste ships in GitHub's trending repos? A daily pipeline runs jscpd v5 on each and publishes clone counts and duplication stats.
+
+  <a href="/trending" class="feature-card-link">
+    See today's results
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
   icon: i-lucide-cpu
   ---
   #title
@@ -290,6 +306,20 @@ The Rust engine makes jscpd 24–37x faster across every codebase size.
 | CopilotKit | 17,092 | 159 MB | 82.89s | 3.44s | **24.1x** |
 
 _Benchmarked on macOS (Apple Silicon). See the [Migration Guide](/getting-started/migration) for full details._
+::
+
+::u-page-section
+---
+orientation: horizontal
+---
+#title
+Fresh from <span class="hero-gradient">GitHub Trending</span>
+
+#description
+Every day we run jscpd v5 over GitHub's trending repositories and publish how much copy/pasted code they ship — clone counts, duplication rates, and the largest duplicated blocks.
+
+#default
+<TrendingPreview />
 ::
 
 ::u-page-section

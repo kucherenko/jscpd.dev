@@ -1,6 +1,18 @@
 export default defineNuxtConfig({
   extends: ["docus"],
 
+  // docus provides its own app/pages layer; the project's pages/ dir is not
+  // scanned, so register standalone (non-docs-layout) routes explicitly
+  hooks: {
+    "pages:extend"(pages) {
+      pages.unshift({
+        name: "trending",
+        path: "/trending",
+        file: "~/pages/trending.vue",
+      });
+    },
+  },
+
   css: ["~/assets/css/main.css"],
 
   // Add client-side animation script
