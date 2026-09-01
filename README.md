@@ -65,3 +65,12 @@ A big heartfelt thank you to everyone who has contributed to jscpd! Your time, c
 ## 📄 License
 
 MIT License - See [LICENSE](LICENSE) for details.
+
+## Support jscpd
+
+- [Open Collective](https://opencollective.com/jscpd) — preferred; transparent budget, invoices for companies
+- Crypto (the same addresses shown on [jscpd.dev/support](https://jscpd.dev/support) — the lists should always match):
+  - Ethereum / BNB Smart Chain / Polygon: `0xf92027E8121b1734cDDC430b7B0085681d843ae2`
+  - Bitcoin: `bc1q8q57dulp7jg7dzzysd2n2yw080qg80cuv48228`
+  - Solana: `9JGCG3xyE23qBGxtvudo5kVMLRhAzxbrkzAfB7Cw8YkT`
+  - Tron: `TTV8SYFKNhfSRe2J2WBXezSZrCvMLNXiea`

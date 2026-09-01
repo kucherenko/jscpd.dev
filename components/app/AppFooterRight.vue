@@ -13,10 +13,9 @@ const links = [
     target: '_blank' as const
   },
   {
-    icon: 'i-simple-icons-opencollective',
-    label: 'Sponsor',
-    to: 'https://opencollective.com/jscpd',
-    target: '_blank' as const
+    icon: 'i-lucide-heart',
+    label: 'Support',
+    to: '/support'
   },
   {
     icon: 'i-simple-icons-rust',

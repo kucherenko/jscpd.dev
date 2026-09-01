@@ -5,11 +5,18 @@ export default defineNuxtConfig({
   // scanned, so register standalone (non-docs-layout) routes explicitly
   hooks: {
     "pages:extend"(pages) {
-      pages.unshift({
-        name: "trending",
-        path: "/trending",
-        file: "~/pages/trending.vue",
-      });
+      pages.unshift(
+        {
+          name: "trending",
+          path: "/trending",
+          file: "~/pages/trending.vue",
+        },
+        {
+          name: "support",
+          path: "/support",
+          file: "~/pages/support.vue",
+        },
+      );
     },
   },
 
