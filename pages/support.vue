@@ -48,7 +48,44 @@ const activeKey = ref('evm')
 const active = computed(() => networks.find(n => n.key === activeKey.value)!)
 const copied = ref(false)
 
-watch(activeKey, () => { copied.value = false })
+watch(activeKey, () => { copied.value = false; walletStatus.value = 'idle'; walletMessage.value = '' })
+
+// Direct donation via an injected EIP-1193 wallet (MetaMask etc.) — EVM only.
+// The wallet signs and sends; this page never touches keys or funds.
+const donateAmount = ref('0.01')
+const walletStatus = ref<'idle' | 'pending' | 'done' | 'error'>('idle')
+const walletMessage = ref('')
+
+async function donateWithWallet() {
+  const eth = (window as any).ethereum
+  if (!eth) {
+    walletStatus.value = 'error'
+    walletMessage.value = 'No EVM wallet detected in this browser — install MetaMask or copy the address instead.'
+    return
+  }
+  const amount = Number(donateAmount.value)
+  if (!Number.isFinite(amount) || amount <= 0) {
+    walletStatus.value = 'error'
+    walletMessage.value = 'Enter a valid amount.'
+    return
+  }
+  try {
+    walletStatus.value = 'pending'
+    walletMessage.value = 'Confirm in your wallet…'
+    const [from] = await eth.request({ method: 'eth_requestAccounts' })
+    // micro-units * 10^12 avoids float precision loss on the way to wei
+    const wei = BigInt(Math.round(amount * 1e6)) * 10n ** 12n
+    const txHash = await eth.request({
+      method: 'eth_sendTransaction',
+      params: [{ from, to: networks[0].address, value: '0x' + wei.toString(16) }]
+    })
+    walletStatus.value = 'done'
+    walletMessage.value = `Thank you! Transaction sent: ${txHash.slice(0, 10)}…${txHash.slice(-6)}`
+  } catch (e: any) {
+    walletStatus.value = 'error'
+    walletMessage.value = e?.code === 4001 ? 'Transaction cancelled in the wallet.' : (e?.message || 'Wallet request failed.')
+  }
+}
 
 async function copyAddress() {
   try {
@@ -123,6 +160,33 @@ async function copyAddress() {
             </button>
           </div>
         </div>
+
+        <ClientOnly>
+          <div v-if="activeKey === 'evm'" class="wallet-donate">
+            <span class="eth-label">Or send directly from your wallet</span>
+            <div class="wallet-donate-row">
+              <div class="wallet-amount">
+                <input
+                  v-model="donateAmount"
+                  type="text"
+                  inputmode="decimal"
+                  class="wallet-amount-input"
+                  aria-label="Donation amount in the chain's native coin"
+                >
+                <span class="wallet-amount-unit">ETH / BNB / POL</span>
+              </div>
+              <button class="wallet-donate-btn" :disabled="walletStatus === 'pending'" @click="donateWithWallet">
+                <Icon name="lucide:wallet" class="wallet-donate-icon" />
+                {{ walletStatus === 'pending' ? 'Waiting for wallet…' : 'Donate with MetaMask' }}
+              </button>
+            </div>
+            <p v-if="walletMessage" class="wallet-message" :class="`wallet-message-${walletStatus}`">{{ walletMessage }}</p>
+            <p class="wallet-hint">
+              Opens your browser wallet (MetaMask or any EIP-1193 wallet) and sends to the address above
+              on whichever EVM network your wallet is set to — Ethereum, BNB Smart Chain, or Polygon.
+            </p>
+          </div>
+        </ClientOnly>
       </div>
 
       <div class="support-card">
@@ -356,6 +420,94 @@ async function copyAddress() {
 .eth-copy-icon {
   width: 0.75rem;
   height: 0.75rem;
+}
+
+.wallet-donate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--ui-border, rgba(100, 116, 139, 0.15));
+}
+
+.wallet-donate-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wallet-amount {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border: 1px solid var(--ui-border, rgba(100, 116, 139, 0.25));
+  border-radius: 0.5rem;
+  padding: 0 0.625rem;
+}
+
+.wallet-amount-input {
+  width: 5rem;
+  padding: 0.45rem 0;
+  border: none;
+  background: transparent;
+  font-family: 'SF Mono', 'Fira Code', ui-monospace, monospace;
+  font-size: 0.8125rem;
+  color: var(--ui-text-highlighted, inherit);
+  outline: none;
+}
+
+.wallet-amount-unit {
+  font-size: 0.6875rem;
+  color: var(--ui-text-muted, #64748b);
+  white-space: nowrap;
+}
+
+.wallet-donate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 123, 255, 0.35);
+  background: var(--jscpd-blue, #007bff);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wallet-donate-btn:hover:not(:disabled) {
+  background: var(--jscpd-magenta, #B200B2);
+  border-color: var(--jscpd-magenta, #B200B2);
+}
+
+.wallet-donate-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.wallet-donate-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.wallet-message {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.wallet-message-done { color: #16a34a; }
+.wallet-message-error { color: #dc2626; }
+.wallet-message-pending { color: var(--ui-text-muted, #64748b); }
+
+.wallet-hint {
+  margin: 0;
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  color: var(--ui-text-muted, #64748b);
 }
 
 .support-links {
