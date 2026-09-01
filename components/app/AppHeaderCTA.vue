@@ -13,10 +13,9 @@ const links = [
     ariaLabel: 'crates.io'
   },
   {
-    icon: 'i-simple-icons-opencollective',
-    to: 'https://opencollective.com/jscpd',
-    target: '_blank' as const,
-    ariaLabel: 'OpenCollective'
+    icon: 'i-lucide-heart',
+    to: '/support',
+    ariaLabel: 'Support the project'
   }
 ]
 </script>

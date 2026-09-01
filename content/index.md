@@ -14,11 +14,10 @@ links:
     to: /getting-started/installation
     trailing-icon: i-lucide-arrow-right
     class: btn-glow
-  - label: Sponsor the project
+  - label: Support the project
     color: neutral
     size: xl
-    to: https://opencollective.com/jscpd
-    target: _blank
+    to: /support
     variant: ghost
     icon: i-lucide-heart
 ---
