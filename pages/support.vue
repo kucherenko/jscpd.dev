@@ -52,12 +52,17 @@ watch(activeKey, () => { copied.value = false; walletStatus.value = 'idle'; wall
 
 // Direct donation via an injected EIP-1193 wallet (MetaMask etc.) — EVM only.
 // The wallet signs and sends; this page never touches keys or funds.
-const evmChains = [
-  { key: 'eth', chainId: '0x1', symbol: 'ETH', name: 'Ethereum' },
-  {
-    key: 'bnb',
+// What can be sent from the wallet: the native coin of each EVM chain, or
+// USDT via its official token contract on that chain. Contract addresses:
+// Ethereum 0xdAC17…1ec7 (6 dec), BNB Chain 0x55d3…7955 (18 dec, Binance-Peg),
+// Polygon 0xc213…8e8F (6 dec, PoS).
+const CHAINS = {
+  eth: {
+    chainId: '0x1',
+    name: 'Ethereum'
+  },
+  bnb: {
     chainId: '0x38',
-    symbol: 'BNB',
     name: 'BNB Smart Chain',
     add: {
       chainId: '0x38',
@@ -67,10 +72,8 @@ const evmChains = [
       blockExplorerUrls: ['https://bscscan.com']
     }
   },
-  {
-    key: 'pol',
+  pol: {
     chainId: '0x89',
-    symbol: 'POL',
     name: 'Polygon',
     add: {
       chainId: '0x89',
@@ -80,19 +83,40 @@ const evmChains = [
       blockExplorerUrls: ['https://polygonscan.com']
     }
   }
+} as const
+
+const sendOptions = [
+  { key: 'usdt-eth', chain: CHAINS.eth, symbol: 'USDT', label: 'USDT on Ethereum', defaultAmount: '10', token: { address: '0xdAC17F958D2ee523a2206206994597C13D831ec7', decimals: 6 } },
+  { key: 'usdt-bnb', chain: CHAINS.bnb, symbol: 'USDT', label: 'USDT on BNB Chain', defaultAmount: '10', token: { address: '0x55d398326f99059fF775485246999027B3197955', decimals: 18 } },
+  { key: 'usdt-pol', chain: CHAINS.pol, symbol: 'USDT', label: 'USDT on Polygon', defaultAmount: '10', token: { address: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F', decimals: 6 } },
+  { key: 'eth', chain: CHAINS.eth, symbol: 'ETH', label: 'Ethereum (ETH)', defaultAmount: '0.01', token: null },
+  { key: 'bnb', chain: CHAINS.bnb, symbol: 'BNB', label: 'BNB Chain (BNB)', defaultAmount: '0.05', token: null },
+  { key: 'pol', chain: CHAINS.pol, symbol: 'POL', label: 'Polygon (POL)', defaultAmount: '10', token: null }
 ]
 
-const donateChainKey = ref('eth')
-const donateChain = computed(() => evmChains.find(c => c.key === donateChainKey.value)!)
-const donateAmount = ref('0.01')
+const donateKey = ref('usdt-eth')
+const donateOption = computed(() => sendOptions.find(o => o.key === donateKey.value)!)
+const donateAmount = ref(sendOptions[0].defaultAmount)
 const walletStatus = ref<'idle' | 'pending' | 'done' | 'error'>('idle')
 const walletMessage = ref('')
+
+watch(donateKey, () => {
+  donateAmount.value = donateOption.value.defaultAmount
+  walletStatus.value = 'idle'
+  walletMessage.value = ''
+})
 
 const donateLabel = computed(() => {
   const n = Number(donateAmount.value)
   const amount = Number.isFinite(n) && n > 0 ? donateAmount.value : '…'
-  return `Send ${amount} ${donateChain.value.symbol}`
+  return `Send ${amount} ${donateOption.value.symbol}`
 })
+
+// amount → smallest units without float drift: 6 fractional digits of
+// precision, then scale by the remaining decimals
+function toUnits(amount: number, decimals: number): bigint {
+  return BigInt(Math.round(amount * 1e6)) * 10n ** BigInt(decimals - 6)
+}
 
 async function donateWithWallet() {
   const eth = (window as any).ethereum
@@ -107,7 +131,7 @@ async function donateWithWallet() {
     walletMessage.value = 'Enter a valid amount.'
     return
   }
-  const chain = donateChain.value
+  const opt = donateOption.value
   try {
     walletStatus.value = 'pending'
     walletMessage.value = 'Confirm in your wallet…'
@@ -115,22 +139,30 @@ async function donateWithWallet() {
     // make sure the wallet is on the chain the visitor chose, so the
     // currency sent is exactly the one displayed
     try {
-      await eth.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: chain.chainId }] })
+      await eth.request({ method: 'wallet_switchEthereumChain', params: [{ chainId: opt.chain.chainId }] })
     } catch (switchErr: any) {
-      if (switchErr?.code === 4902 && chain.add) {
-        await eth.request({ method: 'wallet_addEthereumChain', params: [chain.add] })
+      if (switchErr?.code === 4902 && (opt.chain as any).add) {
+        await eth.request({ method: 'wallet_addEthereumChain', params: [(opt.chain as any).add] })
       } else {
         throw switchErr
       }
     }
-    // micro-units * 10^12 avoids float precision loss on the way to wei
-    const wei = BigInt(Math.round(amount * 1e6)) * 10n ** 12n
-    const txHash = await eth.request({
-      method: 'eth_sendTransaction',
-      params: [{ from, to: networks[0].address, value: '0x' + wei.toString(16) }]
-    })
+    const recipient = networks[0].address
+    let tx
+    if (opt.token) {
+      // ERC-20 transfer(address,uint256) via the official USDT contract
+      const units = toUnits(amount, opt.token.decimals)
+      const data = '0xa9059cbb'
+        + recipient.slice(2).toLowerCase().padStart(64, '0')
+        + units.toString(16).padStart(64, '0')
+      tx = { from, to: opt.token.address, value: '0x0', data }
+    } else {
+      const wei = toUnits(amount, 18)
+      tx = { from, to: recipient, value: '0x' + wei.toString(16) }
+    }
+    const txHash = await eth.request({ method: 'eth_sendTransaction', params: [tx] })
     walletStatus.value = 'done'
-    walletMessage.value = `Thank you! ${amount} ${chain.symbol} sent — tx ${txHash.slice(0, 10)}…${txHash.slice(-6)}`
+    walletMessage.value = `Thank you! ${amount} ${opt.symbol} on ${opt.chain.name} sent — tx ${txHash.slice(0, 10)}…${txHash.slice(-6)}`
   } catch (e: any) {
     walletStatus.value = 'error'
     walletMessage.value = e?.code === 4001 ? 'Cancelled in the wallet.' : (e?.message || 'Wallet request failed.')
@@ -215,8 +247,8 @@ async function copyAddress() {
           <div v-if="activeKey === 'evm'" class="wallet-donate">
             <span class="eth-label">Or send directly from your wallet</span>
             <div class="wallet-donate-row">
-              <select v-model="donateChainKey" class="wallet-chain-select" aria-label="Network and currency">
-                <option v-for="c in evmChains" :key="c.key" :value="c.key">{{ c.name }} ({{ c.symbol }})</option>
+              <select v-model="donateKey" class="wallet-chain-select" aria-label="Currency and network">
+                <option v-for="o in sendOptions" :key="o.key" :value="o.key">{{ o.label }}</option>
               </select>
               <div class="wallet-amount">
                 <input
@@ -224,9 +256,9 @@ async function copyAddress() {
                   type="text"
                   inputmode="decimal"
                   class="wallet-amount-input"
-                  :aria-label="`Donation amount in ${donateChain.symbol}`"
+                  :aria-label="`Donation amount in ${donateOption.symbol}`"
                 >
-                <span class="wallet-amount-unit">{{ donateChain.symbol }}</span>
+                <span class="wallet-amount-unit">{{ donateOption.symbol }}</span>
               </div>
               <button class="wallet-donate-btn" :disabled="walletStatus === 'pending'" @click="donateWithWallet">
                 <Icon name="lucide:wallet" class="wallet-donate-icon" />
@@ -236,7 +268,9 @@ async function copyAddress() {
             <p v-if="walletMessage" class="wallet-message" :class="`wallet-message-${walletStatus}`">{{ walletMessage }}</p>
             <p class="wallet-hint">
               Opens your browser wallet (MetaMask or any compatible wallet), switches it to
-              {{ donateChain.name }}, and sends {{ donateChain.symbol }} to the address above.
+              {{ donateOption.chain.name }}, and sends
+              {{ donateOption.token ? `USDT via the official token contract` : donateOption.symbol }}
+              to the address above. For USDT on Tron, use the Tron tab.
             </p>
           </div>
         </ClientOnly>
