@@ -479,8 +479,12 @@ a:hover {
    ======================================== */
 
 .contributors-link {
+  /* Centred under the section title like every other section body; the
+     image is narrower than the container, so a plain block sits flush left. */
   display: block;
+  width: fit-content;
   max-width: 100%;
+  margin: 0 auto;
   /* MDC renders this as a prose link; the hover underline makes no sense under an image. */
   border-bottom: 0;
 }
@@ -490,6 +494,7 @@ a:hover {
   width: 100%;
   height: auto;
   max-width: 890px;
+  margin: 0 auto;
   border-radius: 0.75rem;
 }
 
