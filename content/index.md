@@ -1,7 +1,7 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Detect copy/paste and duplicated code in your projects. Rust-powered native binary, 24-37x faster. Supports 223+ programming languages.
+  description: Detect copy/paste and duplicated code in your projects. Rust engine, self-contained binary, no Node.js runtime required. Supports 223+ programming languages.
   ogImage: https://jscpd.dev/og.png
 ---
 
@@ -26,7 +26,7 @@ links:
 Copy/Paste Detector for Source Code
 
 #description
-**jscpd v5** is a Rust-powered rewrite that hunts down duplicated blocks across **223+ languages** up to **37x faster** than v4 — because life's too short to maintain the same bug in five different places. Need the Node.js API? v4 is still available. AI-ready with the `--reporters ai` flag.
+**jscpd** is a Rust-powered copy/paste detector that hunts down duplicated blocks across **223+ languages** — because life's too short to maintain the same bug in five different places. One self-contained binary, no Node.js runtime required. AI-ready with the `--reporters ai` flag and a built-in MCP server.
 
 #default
   :::install-command
@@ -93,7 +93,7 @@ Because clean code is happy code
   Blazingly Fast™
 
   #description
-  Rewritten in Rust. 24-37x faster than the TypeScript engine. 159 MB codebase? 3.4 seconds. No Node.js runtime — just a single native binary.
+  A Rust engine with parallel detection across format groups. 159 MB codebase? 3.4 seconds. No Node.js runtime — just a single native binary.
 
   <a href="/benchmarks" class="feature-card-link">
     See benchmarks
@@ -141,7 +141,7 @@ Because clean code is happy code
   Programmable
 
   #description
-  v5: Rust crate API. v4: Node.js API. Same CLI in both. Use whichever fits your stack.
+  Embed detection in your own tools with the Rust crates (`cpd-finder`, `cpd-core`), or drive the CLI and parse its JSON output from any language.
 
   <a href="/api" class="feature-card-link">
     View API documentation
@@ -293,26 +293,6 @@ Clone found (javascript):
 Found 90 clones.
 Detection time: 13ms
 ```
-::
-
-::u-page-section
----
-orientation: horizontal
----
-#title
-v5 vs v4: Performance
-
-#description
-The Rust engine makes jscpd 24–37x faster across every codebase size.
-
-#default
-| Target | Files | Size | v4 (TypeScript) | v5 (Rust) | Speedup |
-|--------|-------|------|------------------|-----------|---------|
-| fixtures | 548 | 1.5 MB | 1.03s | 0.03s | **34.3x** |
-| Svelte | 8,963 | 38 MB | 15.80s | 0.43s | **36.9x** |
-| CopilotKit | 17,092 | 159 MB | 82.89s | 3.44s | **24.1x** |
-
-_Benchmarked on macOS (Apple Silicon). See the [Migration Guide](/getting-started/migration) for full details._
 ::
 
 ::u-page-section

@@ -14,7 +14,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
         name: 'jscpd',
-        description: 'Copy/paste detector for programming source code. Rust-powered native binary, 24-37x faster. Supports 223+ languages.',
+        description: 'Copy/paste detector for programming source code. Rust engine, self-contained binary, no Node.js runtime required. Supports 223+ languages.',
         applicationCategory: 'DeveloperApplication',
         operatingSystem: 'macOS, Linux, Windows',
         url: 'https://jscpd.dev',

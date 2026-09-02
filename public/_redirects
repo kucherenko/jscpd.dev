@@ -1,3 +1,6 @@
 # Canonical host. Requires a DNS record for www.jscpd.dev (CNAME to the
 # Pages project) in Cloudflare before it takes effect.
 https://www.jscpd.dev/* https://jscpd.dev/:splat 301!
+
+# /api/server documented the Node.js jscpd-server (v4 only); the page was removed.
+/api/server /api/mcp-server 301

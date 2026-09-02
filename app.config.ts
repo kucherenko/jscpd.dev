@@ -13,7 +13,7 @@ export default defineAppConfig({
   site: {
     url: 'https://jscpd.dev',
     name: 'jscpd',
-    description: 'Copy/paste detector for programming source code. Rust-powered, 24-37x faster.',
+    description: 'Copy/paste detector for programming source code. Rust engine, self-contained binary, no Node.js runtime required.',
     ogImage: 'https://jscpd.dev/og.png'
   },
   toc: {
