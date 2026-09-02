@@ -1,7 +1,7 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Detect copy/paste and duplicated code in your projects. Rust engine, self-contained binary, no Node.js runtime required. Supports 223+ programming languages.
+  description: Detect copy/paste and duplicated code in your projects. Rust engine, self-contained binary, no Node.js runtime required. Supports 224 programming languages.
   ogImage: https://jscpd.dev/og.png
 ---
 
@@ -26,7 +26,7 @@ links:
 Copy/Paste Detector for Source Code
 
 #description
-**jscpd** is a Rust-powered copy/paste detector that hunts down duplicated blocks across **223+ languages** — because life's too short to maintain the same bug in five different places. One self-contained binary, no Node.js runtime required. AI-ready with the `--reporters ai` flag and a built-in MCP server.
+**jscpd** is a Rust-powered copy/paste detector that hunts down duplicated blocks across **224 languages** — because life's too short to maintain the same bug in five different places. One self-contained binary, no Node.js runtime required. AI-ready with the `--reporters ai` flag and a built-in MCP server.
 
 #default
   :::install-command
@@ -63,7 +63,7 @@ Because clean code is happy code
   icon: i-lucide-globe
   ---
   #title
-  Speaks 223+ Languages
+  Speaks 224 Languages
 
   #description
   JavaScript, Python, Java, Go, Rust, C++, TypeScript, Ruby... If you can write it, we can scan it. Vue, Svelte, Astro, and Markdown cross-format detection too.
@@ -329,44 +329,6 @@ Real mentions from the community on X
 
 #default
 <TweetWall />
-::
-
-::u-page-section
----
-orientation: horizontal
----
-#title
-Built by a Human Who Gets It
-
-#description
-Created with ❤️ by Andrey Kucherenko
-
-#default
-  :::u-card
-  #default
-  <div class="flex flex-col sm:flex-row items-center gap-6">
-    <img
-      src="https://avatars.githubusercontent.com/kucherenko?v=4&size=128"
-      alt="Andrey Kucherenko"
-      class="w-24 h-24 rounded-full ring-4 ring-primary/20 shadow-xl flex-shrink-0 pointer-events-none"
-      loading="lazy"
-    >
-    <div class="text-center sm:text-left">
-      <p class="mb-4 text-muted">
-        Andrey Kucherenko believes that every copy-pasted code block is a bug waiting to happen twice.
-        He built jscpd so you don't have to fix the same issue in five files.
-      </p>
-      <div class="flex flex-wrap justify-center sm:justify-start gap-3">
-        <a href="https://github.com/kucherenko" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-muted hover:bg-muted/80 rounded-full text-sm font-medium transition-colors">
-          <span class="i-simple-icons:github w-4 h-4"></span> GitHub
-        </a>
-        <a href="https://x.com/a_kucherenko" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-muted hover:bg-muted/80 rounded-full text-sm font-medium transition-colors">
-          <span class="i-simple-icons:x w-4 h-4"></span> X
-        </a>
-      </div>
-    </div>
-  </div>
-  :::
 ::
 
 ::u-page-section

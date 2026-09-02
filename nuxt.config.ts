@@ -69,7 +69,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Copy/paste detector for programming source code. Rust engine, self-contained binary, no Node.js runtime required. Supports 223+ languages.",
+            "Copy/paste detector for programming source code. Rust engine, self-contained binary, no Node.js runtime required. Supports 224 languages.",
         },
         {
           name: "keywords",
@@ -79,7 +79,7 @@ export default defineNuxtConfig({
         { property: "og:title", content: "jscpd - Copy/Paste Detector" },
         {
           property: "og:description",
-          content: "Find duplicated code in 223+ programming languages — Rust engine, self-contained binary, no Node.js runtime required",
+          content: "Find duplicated code in 224 programming languages — Rust engine, self-contained binary, no Node.js runtime required",
         },
         { property: "og:url", content: "https://jscpd.dev" },
         { property: "og:type", content: "website" },
@@ -95,7 +95,7 @@ export default defineNuxtConfig({
         { name: "twitter:title", content: "jscpd - Copy/Paste Detector" },
         {
           name: "twitter:description",
-          content: "Find duplicated code in 223+ programming languages — Rust engine, self-contained binary, no Node.js runtime required",
+          content: "Find duplicated code in 224 programming languages — Rust engine, self-contained binary, no Node.js runtime required",
         },
       ],
       link: [
