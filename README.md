@@ -45,7 +45,8 @@ content/
 │   ├── 5.supported-formats.md
 │   ├── 6.agent-skill.md
 │   ├── 7.changelog.md
-│   └── 8.migration.md
+│   ├── 8.migration.md
+│   └── 9.v4.md
 ├── 2.ci-and-hooks/               # CI pipelines and git hooks
 │   ├── 1.index.md
 │   ├── 2.ci.md
