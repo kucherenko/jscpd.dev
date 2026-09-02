@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const links = [
   {
+    icon: 'i-simple-icons-github',
+    to: 'https://github.com/kucherenko/jscpd',
+    target: '_blank' as const,
+    ariaLabel: 'GitHub'
+  },
+  {
     icon: 'i-simple-icons-npm',
     to: 'https://www.npmjs.com/package/jscpd',
     target: '_blank' as const,

@@ -32,7 +32,7 @@
     </div>
 
     <p class="who-uses-stats">
-      <strong>10M+</strong> npm downloads every month &middot;
+      <strong>10M+</strong> npm downloads / month &middot;
       <a href="https://github.com/kucherenko/jscpd/network/dependents" target="_blank" rel="noopener"><strong>~5,000</strong> repositories</a>
       declare jscpd on GitHub's dependents graph
     </p>

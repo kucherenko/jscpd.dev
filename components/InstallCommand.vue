@@ -59,7 +59,7 @@
         <div class="command-line">
           <span class="prompt">$</span>
           <code ref="commandText">{{ activeCommand }}</code>
-          <button class="copy-btn" @click="copyCommand" :title="copied ? 'Copied!' : 'Copy to clipboard'">
+          <button class="copy-btn" type="button" aria-label="Copy command" @click="copyCommand" :title="copied ? 'Copied!' : 'Copy to clipboard'">
             <Icon v-if="!copied" name="lucide:copy" class="copy-icon" />
             <Icon v-else name="lucide:check" class="copy-icon copied" />
           </button>
