@@ -225,17 +225,6 @@ const tweets = [
     reposts: 502,
     views: 573000,
     text: 'Problem: Your code base probably contains a lot of copy/pasted code, but it’s hard to find.\n\nSolution: jscpd\n\njscpd is a command line tool that finds copy/pasted code and reports specific duplicated lines. Works for over 150 languages.'
-  },
-  {
-    name: 'Andrey Kucherenko',
-    handle: '@a_kucherenko',
-    avatar: '/avatars/a_kucherenko.jpg',
-    date: 'Jun 2026',
-    url: 'https://x.com/a_kucherenko/status/2061475353609089319',
-    likes: 5,
-    reposts: 1,
-    views: 168,
-    text: 'A small open-source project can go a long way.\n\nMy GitHub project jscpd has now surpassed 1.2 million weekly downloads on npm.'
   }
 ]
 

@@ -11,6 +11,13 @@
         <div class="install-section">
           <div class="install-tabs">
             <button
+              :class="['install-tab', { active: activeTab === 'npx' }]"
+              @click="activeTab = 'npx'"
+            >
+              <Icon name="simple-icons:nodedotjs" class="tab-icon" />
+              npx
+            </button>
+            <button
               :class="['install-tab', { active: activeTab === 'curl' }]"
               @click="activeTab = 'curl'"
             >
@@ -75,7 +82,7 @@
             <span class="typing-cursor"></span>
           </div>
           <div class="text-muted" style="animation: fadeIn 0.5s ease 1s both;">→ Finding duplicates...</div>
-          <div class="text-green-400 mt-2" style="animation: fadeIn 0.5s ease 2s both;">✓ Scan complete: 3 clones found</div>
+          <div class="text-green-400 mt-2" style="animation: fadeIn 0.5s ease 2s both;">✓ Found 90 clones · 54.4% duplication</div>
         </div>
       </div>
     </div>
@@ -86,6 +93,8 @@
 import { ref, computed } from 'vue'
 
 const commands: Record<string, string> = {
+  // No install at all: npx fetches the platform binary on first run.
+  npx: 'npx jscpd .',
   // The curl installer needs a POSIX shell — macOS and Linux only. On Windows
   // `bash` is either absent or WSL, which would install the Linux binary
   // inside WSL rather than under the Windows user profile.
@@ -101,6 +110,7 @@ const commands: Record<string, string> = {
 // where `bash` is either missing or WSL — which would install the Linux
 // binary inside WSL instead of the Windows user profile.
 const platforms: Record<string, string> = {
+  npx: 'Node.js 20+, any OS, nothing installed globally',
   curl: 'macOS & Linux',
   windows: 'Windows (x64 & ARM64)',
   npm: 'any platform, needs Node.js',
@@ -109,7 +119,7 @@ const platforms: Record<string, string> = {
   nix: 'macOS & Linux'
 }
 
-const activeTab = ref('curl')
+const activeTab = ref('npx')
 const copied = ref(false)
 const commandText = ref<HTMLElement>()
 
@@ -358,7 +368,7 @@ async function copyCommand() {
 }
 
 @media (max-width: 640px) {
-  /* The six install tabs need ~448px. Wrapping them stacked the header three
+  /* The seven install tabs need ~520px. Wrapping them stacked the header three
      rows deep (128px of chrome before any content); a horizontally scrollable
      strip keeps it to one row and is the familiar mobile pattern. */
   .terminal-header {

@@ -1,38 +1,48 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Detect copy/paste and duplicated code in your projects. Rust engine, self-contained binary, no Node.js runtime required. Supports 224 programming languages.
+  description: Copy/paste detector for source code that finds duplicated blocks across 224 languages and fails the build when they cross your threshold - a native Rust binary with an MCP server, an agent skill, and an LLM-friendly reporter.
   ogImage: https://jscpd.dev/og.png
 ---
 
 ::u-page-hero
 ---
 orientation: horizontal
-links:
-  - label: Hunt Duplicates
-    color: primary
-    size: xl
-    to: /getting-started/installation
-    trailing-icon: i-lucide-arrow-right
-    class: btn-glow
-  - label: Support the project
-    color: neutral
-    size: xl
-    to: /support
-    variant: ghost
-    icon: i-lucide-heart
 ---
 #title
 Copy/Paste Detector for Source Code
 
 #description
-**jscpd** is a Rust-powered copy/paste detector that hunts down duplicated blocks across **224 languages** — because life's too short to maintain the same bug in five different places. One self-contained binary, no Node.js runtime required. AI-ready with the `--reporters ai` flag and a built-in MCP server.
+**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd finds duplicated blocks across **224 languages** and fails the build when they cross your threshold. Native Rust binary, no runtime: a 159 MB codebase scans in 3.4 seconds. Speaks MCP, ships an agent skill, and reports in a format LLMs can afford to read.
 
-#default
-  :::install-command
+#links
+  :::u-button
+  ---
+  label: Add to CI
+  to: /ci-and-hooks/ci
+  color: primary
+  size: xl
+  trailing-icon: i-lucide-arrow-right
+  class: btn-glow
+  ---
   :::
 
   :::git-hub-stars
+  :::
+
+  :::u-button
+  ---
+  label: Support the project
+  to: /support
+  color: neutral
+  size: xl
+  variant: ghost
+  icon: i-lucide-heart
+  ---
+  :::
+
+#default
+  :::install-command
   :::
 
   :::home-seo
@@ -41,10 +51,194 @@ Copy/Paste Detector for Source Code
 
 ::u-page-section
 #title
-Why Developers Love <span class="hero-gradient">jscpd</span>
+Built for codebases where <span class="hero-gradient">agents</span> write code
 
 #description
-Because clean code is happy code
+Agents repeat helpers. Each diff reads fine on its own. Review can't catch it — a failing build can.
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-shield-check
+  ---
+  #title
+  Gate it
+
+  #description
+  ```bash
+  jscpd . --threshold 3
+  ```
+
+  Runs in pre-commit and CI. *"An agent will argue a comment, but a failing build just stops it."* — @nark3d
+
+  <a href="/ci-and-hooks/ci" class="feature-card-link">
+    Set up the gate
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-bot
+  ---
+  #title
+  Let the agent check itself
+
+  #description
+  ```bash
+  jscpd --mcp
+  ```
+
+  MCP server built into the binary. Claude, Cursor, or any MCP client checks for clones before writing more.
+
+  <a href="/api/mcp-server" class="feature-card-link">
+    MCP server docs
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-graduation-cap
+  ---
+  #title
+  Teach it to refactor
+
+  #description
+  ```bash
+  npx skills add kucherenko/jscpd
+  ```
+
+  One skill: detect duplicates, propose the extraction, verify the count went down.
+
+  <a href="/getting-started/agent-skill" class="feature-card-link">
+    Install the agent skill
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-sparkles
+  ---
+  #title
+  Feed the LLM, not the context window
+
+  #description
+  ```bash
+  jscpd . --reporters ai
+  ```
+
+  About 79% fewer tokens than the default reporter. Pipe it straight into your agent loop.
+
+  <a href="/benchmarks/ai-token-efficiency" class="feature-card-link">
+    See the token benchmark
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-list-ordered
+  ---
+  #title
+  Know where to start
+
+  #description
+  ```bash
+  jscpd . --summary
+  ```
+
+  Files ranked by tokens, lines, or complexity, each with its duplication share. Refactor the worst first.
+
+  <a href="/getting-started/configuration#codebase-summary-where-to-refactor-first" class="feature-card-link">
+    Summary options
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+::
+
+::u-page-section
+#title
+How teams wire it
+
+#description
+Three places, one binary. Add any of them in under a minute.
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-git-commit-horizontal
+  ---
+  #title
+  1. Pre-commit
+
+  #description
+  Block the commit before the clone lands.
+
+  ```bash
+  # .husky/pre-commit
+  npx jscpd --threshold 3 .
+  ```
+
+  <a href="/ci-and-hooks/pre-commit" class="feature-card-link">
+    Pre-commit and Husky setup
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-workflow
+  ---
+  #title
+  2. CI gate
+
+  #description
+  Fail the pull request when duplication crosses the line.
+
+  ```yaml
+  # .github/workflows/jscpd.yml
+  - uses: kucherenko/jscpd@v5
+    with:
+      threshold: 3
+  ```
+
+  <a href="/ci-and-hooks/ci" class="feature-card-link">
+    GitHub Action, GitLab CI, generic CI
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-bot
+  ---
+  #title
+  3. Agent loop
+
+  #description
+  Give the agent the same detector, over MCP.
+
+  ```json
+  // MCP client config
+  { "mcpServers": { "jscpd": {
+      "command": "jscpd", "args": ["--mcp", "."] } } }
+  ```
+
+  <a href="/api/mcp-server" class="feature-card-link">
+    Connect Claude, Cursor, or Copilot
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+::
+
+::u-page-section
+#title
+Core
+
+#description
+Detection that has been refined since 2013 — now a native Rust engine
 
 #features
   :::u-page-feature
@@ -56,6 +250,11 @@ Because clean code is happy code
 
   #description
   A decade of refining the art of duplicate detection. Now rewritten in Rust for native performance — no Node.js runtime required.
+
+  <a href="/getting-started/introduction" class="feature-card-link">
+    How detection works
+    <span class="link-arrow">→</span>
+  </a>
   :::
 
   :::u-page-feature
@@ -72,17 +271,6 @@ Because clean code is happy code
     View supported formats
     <span class="link-arrow">→</span>
   </a>
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-download
-  ---
-  #title
-  10M+ npm downloads / month
-
-  #description
-  One of the most trusted tools in the ecosystem. Join developers who rely on jscpd every day.
   :::
 
   :::u-page-feature
@@ -135,6 +323,143 @@ Because clean code is happy code
 
   :::u-page-feature
   ---
+  icon: i-lucide-sliders-horizontal
+  ---
+  #title
+  Thresholds & Baselines
+
+  #description
+  Set a threshold and fail the build. Or commit a baseline and fail only on clones that are new since the last run.
+
+  <a href="/getting-started/configuration" class="feature-card-link">
+    Configure thresholds
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-sparkles
+  ---
+  #title
+  Cross-Format Detection
+
+  #description
+  Vue SFC, Svelte, Astro, and Markdown files are tokenized per-block — a `<script>` in .vue can match a .ts file. And `--cross-formats "js-ts"` compares related formats in one pool, catching clones between .js and .ts files.
+
+  <a href="/benchmarks/cross-format" class="feature-card-link">
+    Cross-format benchmark
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-user-round-search
+  ---
+  #title
+  Git Blame
+
+  #description
+  `--blame` annotates every clone with the authors from git history, so you know who to ask before you refactor.
+
+  <a href="/getting-started/configuration" class="feature-card-link">
+    All CLI options
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-download
+  ---
+  #title
+  10M+ npm downloads / month
+
+  #description
+  One of the most trusted tools in the ecosystem. Join developers who rely on jscpd every day.
+
+  <a href="https://www.npmjs.com/package/jscpd" class="feature-card-link">
+    View on npm
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+::
+
+::u-page-section
+#title
+Integrations
+
+#description
+Plug it into the tools you already run
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-github
+  ---
+  #title
+  GitHub Action
+
+  #description
+  `uses: kucherenko/jscpd@v5` — scans the repository, fails on threshold, and uploads SARIF to Code Scanning. No install step.
+
+  <a href="/ci-and-hooks/ci" class="feature-card-link">
+    GitHub Action docs
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-git-commit-horizontal
+  ---
+  #title
+  Pre-commit Hooks
+
+  #description
+  Works with the `pre-commit` framework, Husky, or a plain shell hook in `.git/hooks`. Blocks the commit when duplication exceeds the threshold.
+
+  <a href="/ci-and-hooks/pre-commit" class="feature-card-link">
+    Pre-commit docs
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-shield-check
+  ---
+  #title
+  SARIF / Code Scanning
+
+  #description
+  `--reporters sarif` writes a SARIF file that GitHub Code Scanning renders as inline alerts on the pull request.
+
+  <a href="/reporters/sarif" class="feature-card-link">
+    SARIF reporter docs
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-gitlab
+  ---
+  #title
+  GitLab CI
+
+  #description
+  The `codeclimate` reporter feeds GitLab Code Quality and `openmetrics` feeds its metrics reports, so duplication shows up on the merge request.
+
+  <a href="/ci-and-hooks/ci#gitlab-ci" class="feature-card-link">
+    GitLab CI docs
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
   icon: i-lucide-code-2
   ---
   #title
@@ -151,111 +476,16 @@ Because clean code is happy code
 
   :::u-page-feature
   ---
-  icon: i-lucide-shield-check
-  ---
-  #title
-  CI/CD Ready
-
-  #description
-  Set a threshold, fail the build, save the day. Your future self will thank you.
-
-  <a href="/getting-started/configuration" class="feature-card-link">
-    Configure thresholds
-    <span class="link-arrow">→</span>
-  </a>
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-bot
-  ---
-  #title
-  MCP Server <span class="duplicate-badge">New</span>
-
-  #description
-  Let AI assistants like Claude check your code for duplications via the Model Context Protocol — now built into the v5 binary: `cpd --mcp` serves stdio directly, no separate server needed.
-
-  <a href="/api/mcp-server" class="feature-card-link">
-    Learn about MCP Server
-    <span class="link-arrow">→</span>
-  </a>
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-list-ordered
-  ---
-  #title
-  Codebase Summary <span class="duplicate-badge">New</span>
-
-  #description
-  `--summary` ranks your top files and folders by tokens, lines, size, or complexity — each with its duplication share — so you know where to refactor first.
-
-  <a href="/getting-started/configuration" class="feature-card-link">
-    See summary options
-    <span class="link-arrow">→</span>
-  </a>
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-sparkles
-  ---
-  #title
-  Cross-Format Detection <span class="duplicate-badge">New</span>
-
-  #description
-  Vue SFC, Svelte, Astro, and Markdown files are tokenized per-block — a `<script>` in .vue can match a .ts file. And `--cross-formats "js-ts"` compares related formats in one pool, catching clones between .js and .ts files.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-sparkles
-  ---
-  #title
-  AI Reporter <span class="duplicate-badge">New</span>
-
-  #description
-  Compact output that saves ~79% of tokens compared to the default reporter — ideal for piping into LLMs.
-
-  <a href="/reporters" class="feature-card-link">
-    AI Reporter docs
-    <span class="link-arrow">→</span>
-  </a>
-  :::
-
-  :::u-page-feature
-  ---
   icon: i-lucide-trending-up
   ---
   #title
-  Trending Repos, Analyzed <span class="duplicate-badge">New</span>
+  Trending Repos, Analyzed
 
   #description
   How much copy/paste ships in GitHub's trending repos? A daily pipeline runs jscpd v5 on each and publishes clone counts and duplication stats.
 
   <a href="/trending" class="feature-card-link">
     See today's results
-    <span class="link-arrow">→</span>
-  </a>
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-cpu
-  ---
-  #title
-  Agent Skill <span class="duplicate-badge">New</span>
-
-  #description
-  Install a skill for your AI coding assistant to automatically detect and refactor duplications — one command to get started.
-
-  ```bash
-  npx skills add kucherenko/jscpd
-  ```
-
-  <a href="/getting-started/agent-skill" class="feature-card-link">
-    Learn more
     <span class="link-arrow">→</span>
   </a>
   :::
@@ -284,7 +514,7 @@ Clone found (typescript):
  - src/utils.ts [45:5 - 62:2] (17 lines, 178 tokens)
     src/components/Button.tsx [12:1 - 29:2]
 
-Clone found (javascript):
+Clone found (typescript):
  - src/hooks/useAuth.ts [1:1 - 34:2] (33 lines, 245 tokens)
     src/hooks/useSession.ts [1:1 - 34:2]
 
@@ -332,27 +562,14 @@ Real mentions from the community on X
 ::
 
 ::u-page-section
----
-orientation: horizontal
-reverse: true
----
 #title
-💙 Huge Thank You to Our Contributors!
+Contributors
 
 #description
-This project wouldn't exist without you
+jscpd is built by its contributors. Bug reports, formats, reporters, docs — every one of them is on this list.
 
 #default
-  :::u-card
-  #default
-  **To everyone who has contributed to jscpd — thank you!** 🌟
-
-  Whether you've submitted code, reported bugs, suggested features, improved documentation, or simply spread the word — your contributions make jscpd better for everyone. We're grateful for every issue closed, every PR merged, and every kind word shared.
-
-  **With a grateful heart,** 🤗
-
-  _The jscpd Team_
-
-  [:icon{name="simple-icons-github" class="inline"} View Contributors](https://github.com/kucherenko/jscpd/graphs/contributors)
-  :::
+<a href="https://github.com/kucherenko/jscpd/graphs/contributors" target="_blank" rel="noopener" class="contributors-link">
+  <img src="https://contrib.rocks/image?repo=kucherenko/jscpd" alt="Avatars of the people who have contributed to jscpd on GitHub" loading="lazy" width="890" height="300" />
+</a>
 ::

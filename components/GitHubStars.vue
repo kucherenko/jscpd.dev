@@ -1,18 +1,21 @@
 <template>
-  <a
-    href="https://github.com/kucherenko/jscpd"
+  <UButton
+    to="https://github.com/kucherenko/jscpd"
     target="_blank"
     rel="noopener"
-    class="gh-stars"
+    color="neutral"
+    variant="outline"
+    size="xl"
+    icon="i-simple-icons-github"
+    class="gh-button"
     aria-label="View jscpd on GitHub"
   >
-    <Icon name="simple-icons:github" class="gh-icon" />
-    <span>View on GitHub</span>
+    View on GitHub
     <span class="gh-count" :title="countTitle">
       <Icon name="lucide:star" class="gh-star" />
       {{ label }}
     </span>
-  </a>
+  </UButton>
 </template>
 
 <script setup lang="ts">
@@ -52,38 +55,8 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.gh-stars {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  padding: 0.5rem 0.875rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--ui-text, #e2e8f0);
-  background: var(--ui-bg-elevated, rgba(148, 163, 184, 0.1));
-  border: 1px solid var(--ui-border, rgba(148, 163, 184, 0.3));
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.gh-stars:hover {
-  border-color: var(--jscpd-blue, #007bff);
-  background: rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.1);
-}
-
-.gh-icon {
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
-}
-
-.gh-star {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
+/* Height, font and radius come from UButton size="xl", the same component
+   the neighbouring hero buttons render with; only the star pill is ours. */
 .gh-count {
   display: inline-flex;
   align-items: center;
@@ -91,10 +64,16 @@ onMounted(async () => {
   margin-left: 0.25rem;
   padding: 0.125rem 0.5rem;
   font-size: 0.75rem;
+  line-height: 1.25;
   border-radius: 999px;
   font-weight: 600;
   color: #fff;
   background: var(--jscpd-blue, #007bff);
   white-space: nowrap;
+}
+
+.gh-star {
+  width: 0.75rem;
+  height: 0.75rem;
 }
 </style>
