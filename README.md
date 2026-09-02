@@ -66,7 +66,6 @@ content/
 ├── 5.api/                        # API documentation
 │   ├── 1.index.md
 │   ├── 2.core.md
-│   ├── 3.server.md
 │   └── 4.mcp-server.md
 └── 6.trending.md                 # Daily GitHub-trending analysis (data/trending.json)
 
