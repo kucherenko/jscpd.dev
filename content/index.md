@@ -2,6 +2,7 @@
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
   description: Detect copy/paste and duplicated code in your projects. Rust-powered native binary, 24-37x faster. Supports 223+ programming languages.
+  ogImage: https://jscpd.dev/og.png
 ---
 
 ::u-page-hero
@@ -28,7 +29,14 @@ Copy/Paste Detector for Source Code
 **jscpd v5** is a Rust-powered rewrite that hunts down duplicated blocks across **223+ languages** up to **37x faster** than v4 — because life's too short to maintain the same bug in five different places. Need the Node.js API? v4 is still available. AI-ready with the `--reporters ai` flag.
 
 #default
-<InstallCommand />
+  :::install-command
+  :::
+
+  :::git-hub-stars
+  :::
+
+  :::home-seo
+  :::
 ::
 
 ::u-page-section
@@ -71,7 +79,7 @@ Because clean code is happy code
   icon: i-lucide-download
   ---
   #title
-  20M+ Downloads
+  10M+ npm downloads / month
 
   #description
   One of the most trusted tools in the ecosystem. Join developers who rely on jscpd every day.

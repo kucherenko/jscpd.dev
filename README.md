@@ -37,22 +37,45 @@ bun run build
 
 ```
 content/
-├── index.md                 # Landing page
-├── 1.getting-started/       # Getting started guides
+├── index.md                      # Landing page
+├── 1.getting-started/            # Getting started guides
 │   ├── 2.introduction.md
 │   ├── 3.installation.md
 │   ├── 4.configuration.md
-│   └── 5.supported-formats.md
-├── 2.reporters/             # Reporter documentation
+│   ├── 5.supported-formats.md
+│   ├── 6.agent-skill.md
+│   ├── 7.changelog.md
+│   └── 8.migration.md
+├── 2.ci-and-hooks/               # CI pipelines and git hooks
+│   ├── 1.index.md
+│   ├── 2.ci.md
+│   └── 3.pre-commit.md
+├── 3.reporters/                  # Reporter documentation
 │   ├── 1.index.md
 │   ├── 2.html.md
 │   ├── 3.json.md
-│   └── 4.badge.md
-└── 3.api/                   # API documentation
-    ├── 1.index.md
-    ├── 2.core.md
-    └── 3.server.md
+│   ├── 4.badge.md
+│   ├── 5.sarif.md
+│   ├── 6.codeclimate.md
+│   └── 7.openmetrics.md
+├── 4.benchmarks/                 # Comparisons with other CPD tools
+│   ├── 1.index.md
+│   ├── 2.detection-speed.md
+│   ├── 3.cross-format.md
+│   └── 4.ai-token-efficiency.md
+├── 5.api/                        # API documentation
+│   ├── 1.index.md
+│   ├── 2.core.md
+│   ├── 3.server.md
+│   └── 4.mcp-server.md
+└── 6.trending.md                 # Daily GitHub-trending analysis (data/trending.json)
+
+pages/
+├── support.vue                   # /support — how to fund the project
+└── trending.vue                  # /trending — standalone layout for the trending data
 ```
+
+Both `pages/` routes live outside Nuxt Content, so they are registered explicitly in `nuxt.config.ts` (`pages:extend`), the sitemap route (`server/routes/sitemap.xml.ts`) and the `llms` section list.
 
 ## 🤝 Contributing
 

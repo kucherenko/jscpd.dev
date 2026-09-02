@@ -14,13 +14,12 @@ export default defineAppConfig({
     url: 'https://jscpd.dev',
     name: 'jscpd',
     description: 'Copy/paste detector for programming source code. Rust-powered, 24-37x faster.',
-    ogImage: '/favicon.svg'
+    ogImage: 'https://jscpd.dev/og.png'
   },
   toc: {
     title: 'On this page',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/kucherenko/jscpd/edit/master/docs/content',
       links: [
         {
           icon: 'simple-icons-github',
@@ -57,8 +56,13 @@ export default defineAppConfig({
       dark: '/logo-dark-v3.svg'
     }
   },
+  // Docus builds the "Edit this page" link (and "Report an issue") from this
+  // entry, so it must point at the repository that holds content/ — this one,
+  // not the jscpd tool repo. The header/footer links to the tool repo are set
+  // explicitly in components/app/.
   github: {
-    url: 'https://github.com/kucherenko/jscpd'
+    url: 'https://github.com/kucherenko/jscpd.dev',
+    branch: 'master'
   },
   footer: {
     credits: 'Copyright © 2013-2026 Andrey Kucherenko'

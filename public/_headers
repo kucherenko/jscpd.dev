@@ -1,0 +1,23 @@
+# Cloudflare Pages response headers (copied verbatim into .output/public by
+# `nuxt generate`). Third-party hosts in the CSP:
+#   api.github.com                          - GitHubStars star count
+#   api.iconify.design / api.unisvg.com /   - Iconify API fallback for icons
+#   api.simplesvg.com                         missing from the client bundle
+#   avatars.githubusercontent.com,          - images (covered by img-src https:)
+#   api.producthunt.com
+# 'wasm-unsafe-eval' and blob: workers are needed by Nuxt Content's
+# client-side SQLite (sqlite-wasm); 'unsafe-inline' by Nuxt's inline
+# payload/config scripts and Nuxt UI's inline styles.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://api.github.com https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com; worker-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests
+
+/_nuxt/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/og.png
+  Cache-Control: public, max-age=86400
