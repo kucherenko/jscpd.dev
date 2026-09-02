@@ -59,6 +59,62 @@
 // (2026-09-01); avatars are self-hosted under /public/avatars.
 const tweets = [
   {
+    name: 'Horatio Thomas',
+    handle: '@horatioecthomas',
+    avatar: '/avatars/horatioecthomas.jpg',
+    date: 'Jul 2026',
+    url: 'https://x.com/horatioecthomas/status/2076614225166995584',
+    likes: 3,
+    reposts: 0,
+    views: 402,
+    text: 'One of the most important tools you can add to CI when building with AI: github.com/kucherenko/jscpd'
+  },
+  {
+    name: 'なかつがわ',
+    handle: '@someone7140',
+    avatar: '/avatars/someone7140.jpg',
+    date: 'Jul 2026',
+    url: 'https://x.com/someone7140/status/2082360455293747344',
+    likes: 2,
+    reposts: 0,
+    views: 410,
+    lang: 'ja',
+    text: 'へぇ\n\n「jscpd v5 は Rust 製で速い。 26.7 万行 / 127ms。CI コストは実質ゼロ」'
+  },
+  {
+    name: 'Nathan Broadbent',
+    handle: '@ndbroadbent',
+    avatar: '/avatars/ndbroadbent.jpg',
+    date: 'Jan 2026',
+    url: 'https://x.com/ndbroadbent/status/2009251665161888180',
+    likes: 11,
+    reposts: 1,
+    views: 1128,
+    text: 'I highly recommend jscpd: github.com/kucherenko/jscpd\n\nCan’t live without this in my projects now'
+  },
+  {
+    name: 'Peter Steinberger',
+    handle: '@steipete',
+    avatar: '/avatars/steipete.png',
+    date: 'Aug 2025',
+    url: 'https://x.com/steipete/status/1961644378402758731',
+    likes: 10,
+    reposts: 2,
+    views: 2809,
+    text: 'TIL: jscpd'
+  },
+  {
+    name: 'mono',
+    handle: '@_mono',
+    avatar: '/avatars/_mono.jpg',
+    date: 'Apr 2022',
+    url: 'https://x.com/_mono/status/1513365766783246340',
+    likes: 12,
+    reposts: 1,
+    lang: 'ja',
+    text: 'npmjs.com/package/jscpd がDartコードのコピペ検出も対応してることを dart-lang/sdk の issue で知って試したら普通に動いた(　´･‿･｀)\n\n利用例: `jscpd . --pattern "**.dart" --min-lines 20`'
+  },
+  {
     name: 'Cory House',
     handle: '@housecor',
     avatar: '/avatars/housecor.jpg',
