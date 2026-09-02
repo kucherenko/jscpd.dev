@@ -475,6 +475,25 @@ a:hover {
 }
 
 /* ========================================
+   Contributors (contrib.rocks image)
+   ======================================== */
+
+.contributors-link {
+  display: block;
+  max-width: 100%;
+  /* MDC renders this as a prose link; the hover underline makes no sense under an image. */
+  border-bottom: 0;
+}
+
+.contributors-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 890px;
+  border-radius: 0.75rem;
+}
+
+/* ========================================
    Stats Counter Animation
    ======================================== */
 
