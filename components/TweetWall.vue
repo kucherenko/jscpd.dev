@@ -159,17 +159,6 @@ const tweets = [
     text: 'a good way to minimize slop in a typescript codebase is a forced validation command of knip, jscpd and linter of your choice. the more static validation you have the better.'
   },
   {
-    name: 'Andrey Kucherenko',
-    handle: '@a_kucherenko',
-    avatar: '/avatars/a_kucherenko.jpg',
-    date: 'Jun 2026',
-    url: 'https://x.com/a_kucherenko/status/2064335265745826156',
-    likes: 9,
-    reposts: 2,
-    views: 652,
-    text: 'jscpd v5: 83 seconds → 3.4 seconds.\nThe copy-paste detector for source code is now 24–37x faster — a complete rewrite of the engine in Rust.'
-  },
-  {
     name: 'HARUKI / UNCHAIN Community Lead',
     handle: '@haruki_web3',
     avatar: '/avatars/haruki_web3.jpg',
