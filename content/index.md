@@ -65,9 +65,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it â€
   Gate it
 
   #description
-  ```bash
-  jscpd . --threshold 3
-  ```
+  :copy-command{cmd="jscpd . --threshold 3"}
 
   Runs in pre-commit and CI. *"An agent will argue a comment, but a failing build just stops it."* â€” @nark3d
 
@@ -85,9 +83,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it â€
   Let the agent check itself
 
   #description
-  ```bash
-  jscpd --mcp
-  ```
+  :copy-command{cmd="jscpd --mcp"}
 
   MCP server built into the binary. Claude, Cursor, or any MCP client checks for clones before writing more.
 
@@ -105,9 +101,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it â€
   Teach it to refactor
 
   #description
-  ```bash
-  npx skills add kucherenko/jscpd
-  ```
+  :copy-command{cmd="npx skills add kucherenko/jscpd"}
 
   One skill: detect duplicates, propose the extraction, verify the count went down.
 
@@ -125,9 +119,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it â€
   Feed the LLM, not the context window
 
   #description
-  ```bash
-  jscpd . --reporters ai
-  ```
+  :copy-command{cmd="jscpd . --reporters ai"}
 
   About 79% fewer tokens than the default reporter. Pipe it straight into your agent loop.
 
@@ -145,9 +137,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it â€
   Know where to start
 
   #description
-  ```bash
-  jscpd . --summary
-  ```
+  :copy-command{cmd="jscpd . --summary"}
 
   Files ranked by tokens, lines, or complexity, each with its duplication share. Refactor the worst first.
 
@@ -176,10 +166,7 @@ Three places, one binary. Add any of them in under a minute.
   #description
   Block the commit before the clone lands.
 
-  ```bash
-  # .husky/pre-commit
-  npx jscpd --threshold 3 .
-  ```
+  :copy-command{cmd="npx jscpd --threshold 3 ." caption=".husky/pre-commit"}
 
   <a href="/ci-and-hooks/pre-commit" class="feature-card-link">
     Pre-commit and Husky setup

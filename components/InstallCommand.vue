@@ -167,7 +167,11 @@ async function copyCommand() {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  /* Seven install tabs plus the title do not fit the card on every desktop
+     width; let the tab strip drop to its own line instead of being clipped
+     by the card's overflow: hidden. */
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
   padding: 0.75rem 1.25rem;
   background: rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.06);
   border-bottom: 1px solid rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.1);
@@ -199,11 +203,13 @@ async function copyCommand() {
 .install-section {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .install-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.125rem;
   background: rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.06);
   border-radius: 0.5rem;
