@@ -91,13 +91,11 @@ const projects = [
 const superLinterProjects = [
   { name: 'Google A2A protocol', url: 'https://github.com/a2aproject/A2A' },
   { name: 'Google Cloud CCAI samples', url: 'https://github.com/GoogleCloudPlatform/contact-center-ai-samples' },
-  { name: 'Brookhaven National Lab', url: 'https://github.com/NSLS2/erobs' },
   { name: 'NIH HEAL data commons', url: 'https://github.com/uc-cdis/heal-example-analyses' },
   { name: 'Z-Rad (USZ)', url: 'https://github.com/medical-physics-usz/z-rad' },
   { name: 'Netcracker Qubership', url: 'https://github.com/Netcracker/qubership-airflow' },
   { name: 'RimSort', url: 'https://github.com/RimSort/RimSort' },
-  { name: 'Drifty', url: 'https://github.com/SaptarshiSarkar12/Drifty' },
-  { name: 'trice', url: 'https://github.com/rokath/trice' }
+  { name: 'Drifty', url: 'https://github.com/SaptarshiSarkar12/Drifty' }
 ]
 </script>
 
