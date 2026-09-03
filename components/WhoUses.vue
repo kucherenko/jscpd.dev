@@ -31,10 +31,25 @@
       </div>
     </div>
 
+    <div class="who-uses-projects">
+      <span class="projects-label">Explicitly enabled in Super Linter by</span>
+      <div class="project-pills">
+        <a
+          v-for="project in superLinterProjects"
+          :key="project.name"
+          :href="project.url"
+          target="_blank"
+          rel="noopener"
+          class="project-pill"
+        >{{ project.name }}</a>
+      </div>
+    </div>
+
     <p class="who-uses-stats">
       <strong>10M+</strong> npm downloads / month &middot;
       <a href="https://github.com/kucherenko/jscpd/network/dependents" target="_blank" rel="noopener"><strong>~5,000</strong> repositories</a>
-      declare jscpd on GitHub's dependents graph
+      declare jscpd on GitHub's dependents graph &middot;
+      <strong>15,500+</strong> workflow files reference Super Linter, which runs jscpd by default
     </p>
   </div>
 </template>
@@ -71,6 +86,18 @@ const projects = [
   { name: 'OpenClaw', url: 'https://github.com/openclaw/openclaw' },
   { name: 'DeepSeek Harness', url: 'https://github.com/deepseek-ai/deepseek-harness' },
   { name: 'KiroCrew', url: 'https://github.com/kirodotdev/KiroCrew' }
+]
+
+const superLinterProjects = [
+  { name: 'Google A2A protocol', url: 'https://github.com/a2aproject/A2A' },
+  { name: 'Google Cloud CCAI samples', url: 'https://github.com/GoogleCloudPlatform/contact-center-ai-samples' },
+  { name: 'Brookhaven National Lab', url: 'https://github.com/NSLS2/erobs' },
+  { name: 'NIH HEAL data commons', url: 'https://github.com/uc-cdis/heal-example-analyses' },
+  { name: 'Z-Rad (USZ)', url: 'https://github.com/medical-physics-usz/z-rad' },
+  { name: 'Netcracker Qubership', url: 'https://github.com/Netcracker/qubership-airflow' },
+  { name: 'RimSort', url: 'https://github.com/RimSort/RimSort' },
+  { name: 'Drifty', url: 'https://github.com/SaptarshiSarkar12/Drifty' },
+  { name: 'trice', url: 'https://github.com/rokath/trice' }
 ]
 </script>
 
