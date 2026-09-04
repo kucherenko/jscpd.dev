@@ -1,6 +1,6 @@
 <template>
   <div class="trending-preview">
-    <NuxtLink v-for="(repo, i) in top" :key="repo.name" to="/trending" class="preview-row">
+    <NuxtLink v-for="(repo, i) in top" :key="repo.name" :to="trendingRepoPath(repo.name)" class="preview-row">
       <span class="preview-rank">{{ i + 1 }}</span>
       <span class="preview-main">
         <span class="preview-name">{{ repo.name }}</span>
@@ -17,7 +17,7 @@
     </NuxtLink>
 
     <div class="preview-footer">
-      <span class="preview-updated">Updated daily · {{ data.repos.length }} repos analyzed</span>
+      <span class="preview-updated">Updated daily · {{ data.repos.length }} repos analyzed · {{ num(data.summary.clones) }} clones found</span>
       <UButton
         to="/trending"
         color="primary"
@@ -33,8 +33,6 @@
 import data from '~/data/trending.json'
 
 const top = data.repos.slice(0, 5)
-const num = (n: number) => typeof n === 'number' ? n.toLocaleString('en-US') : '—'
-const dupClass = (pct: number) => pct < 3 ? 'dup-low' : pct < 8 ? 'dup-mid' : 'dup-high'
 </script>
 
 <style scoped>
@@ -112,17 +110,6 @@ const dupClass = (pct: number) => pct < 3 ? 'dup-low' : pct < 8 ? 'dup-mid' : 'd
   color: var(--ui-text-highlighted, inherit);
 }
 
-.dup-badge {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  padding: 0.125rem 0.5rem;
-  border-radius: 9999px;
-  font-variant-numeric: tabular-nums;
-}
-
-.dup-low { color: #16a34a; background: rgba(22, 163, 74, 0.12); }
-.dup-mid { color: #d97706; background: rgba(217, 119, 6, 0.12); }
-.dup-high { color: #dc2626; background: rgba(220, 38, 38, 0.12); }
 
 .preview-footer {
   display: flex;

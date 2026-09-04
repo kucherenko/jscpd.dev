@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 /**
- * Fetch GitHub trending repos, analyze each with jscpd v5, and write
- * data/trending.json for the site to consume at build time.
+ * Fetch GitHub trending repos, analyze each with jscpd v5, and write the
+ * day's snapshot to data/trending/YYYY-MM-DD.json, then rebuild the derived
+ * files (data/trending-history.json, data/trending/repos/**, data/trending.json)
+ * the site consumes at build time.
  *
  * Runs in the "Trending repos analysis" GitHub Actions workflow (daily),
  * or locally: node scripts/analyze-trending.mjs
  */
 import { execFile } from 'node:child_process'
-import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
+import { mkdtemp, readFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
-import { join, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { join } from 'node:path'
 import { promisify } from 'node:util'
+import { buildIndex, makeSnapshot, round2, writeSnapshot } from './trending-lib.mjs'
 
 const exec = promisify(execFile)
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
-const OUT_FILE = join(ROOT, 'data', 'trending.json')
 
 const MAX_REPOS = 12
 const MAX_REPO_SIZE_KB = 400_000 // skip repos over ~400 MB
@@ -149,8 +149,6 @@ async function analyzeRepo(entry, meta) {
   }
 }
 
-const round2 = (n) => typeof n === 'number' ? Math.round(n * 100) / 100 : n
-
 const candidates = await fetchTrending()
 console.log(`trending: ${candidates.length} candidates`)
 const repos = []
@@ -170,13 +168,11 @@ for (const entry of candidates) {
 }
 
 if (repos.length < 3) {
-  console.error(`only ${repos.length} repos analyzed — refusing to overwrite trending.json`)
+  console.error(`only ${repos.length} repos analyzed — refusing to write a snapshot`)
   process.exit(1)
 }
 
-await writeFile(OUT_FILE, JSON.stringify({
-  generatedAt: new Date().toISOString(),
-  source: 'github-trending-daily',
-  repos
-}, null, 1) + '\n')
-console.log(`wrote ${OUT_FILE} with ${repos.length} repos`)
+const file = await writeSnapshot(makeSnapshot({ generatedAt: new Date().toISOString(), repos }))
+console.log(`wrote ${file} with ${repos.length} repos`)
+const index = await buildIndex()
+console.log(`rebuilt trending index: ${index.days} days, ${index.repos} repos`)
