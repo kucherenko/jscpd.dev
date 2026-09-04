@@ -56,10 +56,16 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
       </p>
     </section>
 
-    <section class="trending-section">
-      <h2 class="section-heading">Daily statistics</h2>
-      <TrendingSummary :summary="day.summary" />
-    </section>
+    <details class="trending-section stats-details">
+      <summary class="stats-summary">
+        <Icon name="lucide:chevron-right" class="stats-chevron" />
+        <span class="section-heading stats-heading">Daily statistics</span>
+        <span class="stats-teaser">{{ compact(day.summary.lines) }} lines · {{ num(day.summary.clones) }} clones · {{ day.summary.percentage }}% duplicated</span>
+      </summary>
+      <div class="stats-body">
+        <TrendingSummary :summary="day.summary" />
+      </div>
+    </details>
 
     <section class="trending-section">
       <TrendingChart :days="trendingHistory.days" :selected="date" :latest="latestTrendingDate" />
@@ -159,6 +165,49 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--ui-text-muted, #64748b);
+}
+
+.stats-summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.stats-summary::-webkit-details-marker {
+  display: none;
+}
+
+.stats-heading {
+  margin: 0;
+}
+
+.stats-chevron {
+  width: 1rem;
+  height: 1rem;
+  color: var(--ui-text-muted, #64748b);
+  transition: transform 0.2s ease;
+}
+
+.stats-details[open] .stats-chevron {
+  transform: rotate(90deg);
+}
+
+.stats-teaser {
+  font-size: 0.8125rem;
+  color: var(--ui-text-muted, #64748b);
+  font-variant-numeric: tabular-nums;
+}
+
+.stats-summary:hover .stats-heading {
+  color: var(--jscpd-blue, #007bff);
+}
+
+.stats-body {
+  margin-top: 0.75rem;
 }
 
 .section-note {
