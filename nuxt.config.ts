@@ -1,5 +1,7 @@
 import { createRequire } from "node:module";
 import { dirname } from "node:path";
+import trendingHistory from "./data/trending-history.json" with { type: "json" };
+import trendingRepos from "./data/trending-repos.json" with { type: "json" };
 
 // @nuxt/content is a dependency of the docus layer, not of this project, so
 // server routes here cannot import "@nuxt/content/server" directly under
@@ -8,6 +10,14 @@ const require = createRequire(import.meta.url);
 const docusDir = dirname(require.resolve("docus/package.json"));
 const nuxtContentServer = require.resolve("@nuxt/content/server", { paths: [docusDir] });
 
+// /trending/<day> and /trending/<owner>/<repo> are dynamic routes; the static
+// build needs the full list up front (data/ is refreshed by trending.yml).
+// The latest day is served at /trending itself.
+const trendingRoutes = [
+  ...trendingHistory.days.slice(0, -1).map((d) => `/trending/${d.date}`),
+  ...trendingRepos.map((r) => `/trending/${r.name}`),
+];
+
 export default defineNuxtConfig({
   extends: ["docus"],
 
@@ -15,11 +25,26 @@ export default defineNuxtConfig({
   // scanned, so register standalone (non-docs-layout) routes explicitly
   hooks: {
     "pages:extend"(pages) {
+      // pages/ is also scanned, which turns pages/trending-repo.vue into a
+      // stray /trending-repo route; only the parameterised registration below
+      // should exist (its name must differ, or vue-router keeps the scanned one).
+      const scanned = pages.findIndex((p) => p.path === "/trending-repo");
+      if (scanned !== -1) pages.splice(scanned, 1);
       pages.unshift(
         {
           name: "trending",
           path: "/trending",
           file: "~/pages/trending.vue",
+        },
+        {
+          name: "trending-day",
+          path: "/trending/:date(\\d{4}-\\d{2}-\\d{2})",
+          file: "~/pages/trending.vue",
+        },
+        {
+          name: "trending-repository",
+          path: "/trending/:owner/:repo",
+          file: "~/pages/trending-repo.vue",
         },
         {
           name: "support",
@@ -53,7 +78,7 @@ export default defineNuxtConfig({
       "@nuxt/content/server": nuxtContentServer,
     },
     prerender: {
-      routes: ["/404"],
+      routes: ["/404", ...trendingRoutes],
     },
   },
 

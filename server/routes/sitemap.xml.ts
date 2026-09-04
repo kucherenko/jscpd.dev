@@ -7,6 +7,9 @@ import { execFileSync } from 'node:child_process'
 // Resolvable only through the nitro alias set in nuxt.config.ts.
 import { queryCollection } from '@nuxt/content/server'
 import { getSiteConfig } from '#site-config/server/composables'
+// Bundled at build time: node:fs is a stub under the cloudflare preset.
+import trendingHistory from '../../data/trending-history.json'
+import trendingRepos from '../../data/trending-repos.json'
 
 interface SitemapUrl {
   loc: string
@@ -22,6 +25,16 @@ const EXTRA_ROUTES: Array<{ loc: string, file: string }> = [
 ]
 
 const buildDate = new Date().toISOString().slice(0, 10)
+
+// Trending pages are generated from data/ (see nuxt.config.ts); every day
+// and repository gets its own URL, dated by the analysis that produced it.
+function trendingUrls(): SitemapUrl[] {
+  const days = (trendingHistory as { days: Array<{ date: string }> }).days
+  const urls: SitemapUrl[] = [{ loc: '/trending', lastmod: days[days.length - 1]?.date }]
+  for (const d of days.slice(0, -1)) urls.push({ loc: `/trending/${d.date}`, lastmod: d.date })
+  for (const r of trendingRepos as Array<{ name: string, date: string }>) urls.push({ loc: `/trending/${r.name}`, lastmod: r.date })
+  return urls
+}
 
 function gitLastmod(file: string): string {
   try {
@@ -72,6 +85,13 @@ export default defineEventHandler(async (event) => {
     if (seen.has(extra.loc)) continue
     seen.add(extra.loc)
     urls.push({ loc: extra.loc, lastmod: gitLastmod(extra.file) })
+  }
+
+  for (const t of trendingUrls()) {
+    const existing = urls.find(u => u.loc === t.loc)
+    if (existing) { existing.lastmod = t.lastmod; continue }
+    seen.add(t.loc)
+    urls.push(t)
   }
 
   // Home first, then everything else in path order.

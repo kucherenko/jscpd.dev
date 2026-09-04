@@ -576,3 +576,32 @@ a:hover {
     animation: none;
   }
 }
+
+/* Trending pages: shared chips and duplication badges (used by several
+   components and pages, so kept global instead of repeated per component) */
+.chip {
+  font-size: 0.6875rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--ui-border, rgba(100, 116, 139, 0.25));
+  color: var(--ui-text-muted, #64748b);
+  white-space: nowrap;
+}
+
+.chip-accent {
+  color: var(--jscpd-blue, #007bff);
+  border-color: rgba(0, 123, 255, 0.35);
+}
+
+.dup-badge {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.dup-low { color: #16a34a; background: rgba(22, 163, 74, 0.12); }
+.dup-mid { color: #d97706; background: rgba(217, 119, 6, 0.12); }
+.dup-high { color: #dc2626; background: rgba(220, 38, 38, 0.12); }
