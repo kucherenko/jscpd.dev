@@ -12,9 +12,11 @@ const nuxtContentServer = require.resolve("@nuxt/content/server", { paths: [docu
 
 // /trending/<day> and /trending/<owner>/<repo> are dynamic routes; the static
 // build needs the full list up front (data/ is refreshed by trending.yml).
-// The latest day is served at /trending itself.
+// The latest day is served at /trending itself, but its dated URL is
+// prerendered too: a /trending/<date> link shared on the day it was latest
+// must not 404 until the next day's deploy.
 const trendingRoutes = [
-  ...trendingHistory.days.slice(0, -1).map((d) => `/trending/${d.date}`),
+  ...trendingHistory.days.map((d) => `/trending/${d.date}`),
   ...trendingRepos.map((r) => `/trending/${r.name}`),
 ];
 

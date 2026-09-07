@@ -23,14 +23,20 @@ jobs:
         with:
           node-version: "24.x"
 
+      # Pinned: an unpinned `npm i pnpm -g` picked up a new major on 2026-09-06
+      # and the deploy broke without any change to the repository.
       - name: Install pnpm
-        run: npm i pnpm -g
+        run: npm i -g pnpm@11.9.0
 
       - name: Install dependencies
         run: pnpm install
 
+      # `pnpm exec` runs the nuxt from the lockfile. `pnpm dlx` installed a
+      # fresh nuxt into a temp dir on every deploy; when its esbuild moved to a
+      # version without build-script approval, pnpm refused
+      # (ERR_PNPM_IGNORED_BUILDS) and the site stopped updating.
       - name: Build
-        run: pnpm dlx nuxt generate
+        run: pnpm exec nuxt generate
 
       - name: List build output
         run: ls -la .output/public/ 2>/dev/null || (echo "No .output/public — showing .output:" && ls -la .output/ 2>/dev/null || echo "No .output either")
