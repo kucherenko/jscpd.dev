@@ -39,6 +39,13 @@
               npm
             </button>
             <button
+              :class="['install-tab', { active: activeTab === 'pip' }]"
+              @click="activeTab = 'pip'"
+            >
+              <Icon name="simple-icons:python" class="tab-icon" />
+              pip
+            </button>
+            <button
               :class="['install-tab', { active: activeTab === 'cargo' }]"
               @click="activeTab = 'cargo'"
             >
@@ -101,6 +108,8 @@ const commands: Record<string, string> = {
   curl: 'curl -fsSL https://jscpd.dev/install.sh | bash',
   windows: 'irm https://jscpd.dev/install.ps1 | iex',
   npm: 'npm install -g jscpd',
+  // PyPI ships the same binary as platform wheels; pipx and uv work too.
+  pip: 'pip install jscpd',
   cargo: 'cargo install jscpd',
   brew: 'brew install jscpd',
   nix: 'nix profile install github:kucherenko/jscpd'
@@ -114,6 +123,7 @@ const platforms: Record<string, string> = {
   curl: 'macOS & Linux',
   windows: 'Windows (x64 & ARM64)',
   npm: 'any platform, needs Node.js',
+  pip: 'any platform, needs Python — or pipx install jscpd / uvx jscpd .',
   cargo: 'any platform, needs Rust',
   brew: 'macOS & Linux',
   nix: 'macOS & Linux'
