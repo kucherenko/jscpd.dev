@@ -47,11 +47,15 @@ content/
 │   ├── 7.changelog.md
 │   ├── 8.migration.md
 │   └── 9.v4.md
-├── 2.ci-and-hooks/               # CI pipelines and git hooks
+├── 2.guides/                     # Longer reads: clone types, how detection works
+│   ├── 1.index.md
+│   ├── 2.clone-types.md
+│   └── 3.how-detection-works.md
+├── 3.ci-and-hooks/               # CI pipelines and git hooks
 │   ├── 1.index.md
 │   ├── 2.ci.md
 │   └── 3.pre-commit.md
-├── 3.reporters/                  # Reporter documentation
+├── 4.reporters/                  # Reporter documentation
 │   ├── 1.index.md
 │   ├── 2.html.md
 │   ├── 3.json.md
@@ -59,16 +63,16 @@ content/
 │   ├── 5.sarif.md
 │   ├── 6.codeclimate.md
 │   └── 7.openmetrics.md
-├── 4.benchmarks/                 # Comparisons with other CPD tools
+├── 5.benchmarks/                 # Comparisons with other CPD tools
 │   ├── 1.index.md
 │   ├── 2.detection-speed.md
 │   ├── 3.cross-format.md
 │   └── 4.ai-token-efficiency.md
-├── 5.api/                        # API documentation
+├── 6.api/                        # API documentation
 │   ├── 1.index.md
 │   ├── 2.core.md
 │   └── 4.mcp-server.md
-└── 6.trending.md                 # Daily GitHub-trending analysis (data/trending.json)
+└── 7.trending.md                 # Daily GitHub-trending analysis (data/trending.json)
 
 pages/
 ├── support.vue                   # /support — how to fund the project
