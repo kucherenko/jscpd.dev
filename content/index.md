@@ -13,7 +13,7 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd finds duplicated blocks across **224 languages** and fails the build when they cross your threshold. Native Rust binary, no runtime: a 159 MB codebase scans in 3.4 seconds. Speaks MCP, ships an agent skill, and reports in a format LLMs can afford to read.
+**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds duplicated blocks and fails the build when they cross your threshold. Native Rust binary, no runtime: a 159 MB codebase scans in 3.4 seconds. Speaks MCP, ships an agent skill, and reports in a format LLMs can afford to read.
 
 #links
   :::u-button
