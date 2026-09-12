@@ -556,40 +556,6 @@ Plug it into the tools you already run
 orientation: horizontal
 ---
 #title
-See It In Action
-
-#description
-From chaos to clarity in seconds
-
-#default
-```bash
-# Scan your source code
-$ jscpd ./src
-
-Clone found (typescript):
- - src/utils.ts [10:1 - 25:3] (15 lines, 129 tokens)
-    src/helpers.ts [5:1 - 20:3]
-
-Clone found (typescript):
- - src/utils.ts [45:5 - 62:2] (17 lines, 178 tokens)
-    src/components/Button.tsx [12:1 - 29:2]
-
-Clone found (typescript):
- - src/hooks/useAuth.ts [1:1 - 34:2] (33 lines, 245 tokens)
-    src/hooks/useSession.ts [1:1 - 34:2]
-
-# ... more clones
-
-Found 90 clones.
-Detection time: 13ms
-```
-::
-
-::u-page-section
----
-orientation: horizontal
----
-#title
 Fresh from <span class="hero-gradient">GitHub Trending</span>
 
 #description
