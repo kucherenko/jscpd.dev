@@ -8,8 +8,8 @@
           <span class="dot dot-green"></span>
           <span class="terminal-title">Terminal</span>
         </div>
-        <div class="install-section">
-          <div class="install-tabs">
+        <div class="install-section" :class="{ 'has-more': stripHasMore }">
+          <div ref="tabStrip" class="install-tabs" @scroll.passive="updateStripHint">
             <button
               :class="['install-tab', { active: activeTab === 'npx' }]"
               @click="activeTab = 'npx'"
@@ -97,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 
 const commands: Record<string, string> = {
   // No install at all: npx fetches the platform binary on first run.
@@ -130,6 +130,22 @@ const platforms: Record<string, string> = {
 }
 
 const activeTab = ref('npx')
+
+// On phones the tab strip scrolls horizontally; `has-more` fades its right
+// edge while there are tabs out of view so the strip does not read as a
+// fixed list of three install methods.
+const tabStrip = ref<HTMLElement | null>(null)
+const stripHasMore = ref(false)
+const updateStripHint = () => {
+  const el = tabStrip.value
+  if (!el) return
+  stripHasMore.value = el.scrollLeft + el.clientWidth < el.scrollWidth - 1
+}
+onMounted(() => {
+  updateStripHint()
+  window.addEventListener('resize', updateStripHint, { passive: true })
+})
+onBeforeUnmount(() => window.removeEventListener('resize', updateStripHint))
 const copied = ref(false)
 const commandText = ref<HTMLElement>()
 
@@ -392,20 +408,18 @@ async function copyCommand() {
     padding: 0.625rem 0.75rem;
   }
 
+  /* The traffic-light dots and the "Terminal" title are decoration; on a
+     phone their row is better spent on the install tabs. */
   .terminal-header-left {
-    flex-shrink: 0;
-  }
-
-  /* "Terminal" earns its space on a wide screen, not on a phone. */
-  .terminal-title {
     display: none;
   }
 
   /* min-width: 0 lets the strip shrink below its content width — without it
      the flex item's automatic minimum size forces the header to overflow. */
   .install-section {
-    flex: 1;
+    flex: 1 1 100%;
     min-width: 0;
+    position: relative;
   }
 
   .install-tabs {
@@ -413,6 +427,30 @@ async function copyCommand() {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    scroll-snap-type: x proximity;
+  }
+
+  .install-tab {
+    scroll-snap-align: start;
+  }
+
+  /* Fade the strip's right edge while tabs are out of view; the mask
+     works on the strip's own pixels, so it needs no background color. */
+  .install-section.has-more .install-tabs {
+    mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
+  }
+
+  .install-section.has-more::after {
+    content: '›';
+    position: absolute;
+    right: 0.375rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    line-height: 1;
+    color: var(--ui-text-muted, #94a3b8);
+    pointer-events: none;
   }
 
   .install-tabs::-webkit-scrollbar {

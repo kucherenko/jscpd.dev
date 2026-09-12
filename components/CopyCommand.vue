@@ -54,6 +54,8 @@ async function copy() {
 <style scoped>
 .copy-command {
   margin: 0.75rem 0;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .copy-command-caption {
@@ -96,6 +98,23 @@ async function copy() {
 
 .copy-command-text::-webkit-scrollbar {
   display: none;
+}
+
+/* On phones a long command must wrap: a nowrap command sets the min-content
+   width of the feature card around it, and the card grid then grows past the
+   viewport and makes the whole page scroll sideways. */
+@media (max-width: 640px) {
+  .copy-command-text {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+  }
+
+  /* A 28px button is a poor touch target. */
+  .copy-command-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 }
 
 .copy-command-btn {
