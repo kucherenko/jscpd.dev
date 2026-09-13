@@ -18,11 +18,11 @@ Copy/Paste Detector for Source Code
 #links
   :::u-button
   ---
-  label: Add to CI
-  to: /ci-and-hooks/ci
+  label: Set up the gate
+  to: "#how-teams-wire-it"
   color: primary
   size: xl
-  trailing-icon: i-lucide-arrow-right
+  trailing-icon: i-lucide-arrow-down
   class: btn-glow
   ---
   :::
@@ -222,6 +222,9 @@ Exact copies are the easy case. jscpd 5.2 also reports renamed and near-miss clo
 ::
 
 ::u-page-section
+---
+id: how-teams-wire-it
+---
 #title
 How teams wire it
 
