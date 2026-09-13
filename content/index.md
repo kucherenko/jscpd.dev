@@ -229,7 +229,7 @@ id: how-teams-wire-it
 How teams wire it
 
 #description
-Three places, one binary. Add any of them in under a minute.
+Four places, one binary. Add any of them in under a minute.
 
 #features
   :::u-page-feature
@@ -291,6 +291,24 @@ Three places, one binary. Add any of them in under a minute.
 
   <a href="/api/mcp-server" class="feature-card-link">
     Connect Claude, Cursor, or Copilot
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-graduation-cap
+  ---
+  #title
+  4. Agent skill
+
+  #description
+  Teach the agent the workflow, not just the tool: run the scan, pick the extraction, verify the clone count went down.
+
+  :copy-command{cmd="npx skills add kucherenko/jscpd" caption="installs the jscpd and dry-refactoring skills"}
+
+  <a href="/getting-started/agent-skill" class="feature-card-link">
+    Skills for Claude, Copilot, Gemini, Cursor
     <span class="link-arrow">→</span>
   </a>
   :::
