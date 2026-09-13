@@ -444,6 +444,22 @@ Detection that has been refined since 2013 — now a native Rust engine
     <span class="link-arrow">→</span>
   </a>
   :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-graduation-cap
+  ---
+  #title
+  Trusted in research
+
+  #description
+  54 papers, theses and patents use or cite jscpd: a measurement instrument in ACM TOSEM, two ICLR papers and an 832-million-line industrial dataset, a baseline for new detectors, a component of five patented systems.
+
+  <a href="/research" class="feature-card-link">
+    jscpd in research
+    <span class="link-arrow">→</span>
+  </a>
+  :::
 ::
 
 ::u-page-section
