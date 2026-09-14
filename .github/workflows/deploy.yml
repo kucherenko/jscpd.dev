@@ -4,6 +4,11 @@ on:
   push:
     branches: [main, master]
   workflow_dispatch:
+    inputs:
+      sha:
+        description: "Commit to deploy. Defaults to the head of the ref the run was dispatched on."
+        required: false
+        type: string
 
 jobs:
   deploy:
@@ -15,6 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # The trending job dispatches this workflow right after pushing its
+          # data commit; resolving `master` at that moment can still return the
+          # previous head (2026-09-14: the 05:29 deploy built f06b11ef while
+          # master was already 9858b1f, and the day's snapshot went missing
+          # from the site). An explicit sha removes the race.
+          ref: ${{ inputs.sha || github.sha }}
           # Full history so sitemap <lastmod> can use each page's last commit
           fetch-depth: 0
 
