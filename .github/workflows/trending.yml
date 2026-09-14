@@ -44,11 +44,24 @@ jobs:
           git pull --rebase origin master
           git push origin master
           echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       # pushes made with GITHUB_TOKEN don't trigger other workflows,
-      # so kick the Pages deploy explicitly
+      # so kick the Pages deploy explicitly. Pass the commit itself: a
+      # dispatch on `master` seconds after the push can still resolve to the
+      # previous head, and the deploy then builds the day before. Wait for the
+      # API to serve the new head first so `--ref master` accepts the input.
       - name: Trigger site deploy
         if: steps.commit.outputs.changed == 'true'
-        run: gh workflow run deploy.yml --ref master
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          for i in $(seq 1 30); do
+            head=$(gh api "repos/${GITHUB_REPOSITORY}/commits/master" --jq .sha 2>/dev/null || true)
+            [ "$head" = "$SHA" ] && break
+            echo "master is at ${head:-?}, waiting for ${SHA} ($i/30)"
+            sleep 5
+          done
+          gh workflow run deploy.yml --ref master -f "sha=${SHA}"
+          echo "deploy dispatched for ${SHA}"
