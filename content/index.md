@@ -146,6 +146,24 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
     <span class="link-arrow">→</span>
   </a>
   :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-chart-no-axes-combined
+  ---
+  #title
+  Watch the trend
+
+  #description
+  :copy-command{cmd="jscpd . --history v5.0.0..HEAD"}
+
+  One scan per commit, a chart and a table in the terminal. See whether the agents are adding duplication faster than you remove it, and how far the threshold can be tightened.
+
+  <a href="/guides/history" class="feature-card-link">
+    Duplication trend over history
+    <span class="link-arrow">→</span>
+  </a>
+  :::
 ::
 
 ::u-page-section
