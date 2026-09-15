@@ -44,6 +44,12 @@ export default defineAppConfig({
           label: 'Rust crate',
           to: 'https://crates.io/crates/jscpd',
           target: '_blank'
+        },
+        {
+          icon: 'simple-icons-pypi',
+          label: 'PyPI',
+          to: 'https://pypi.org/project/jscpd/',
+          target: '_blank'
         }
       ]
     }

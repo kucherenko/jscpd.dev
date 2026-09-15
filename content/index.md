@@ -13,16 +13,16 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds duplicated blocks and fails the build when they cross your threshold. Native Rust binary, no runtime: a 159 MB codebase scans in 3.4 seconds. Speaks MCP, ships an agent skill, and reports in a format LLMs can afford to read.
+**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds exact, renamed and near-miss duplicates and fails the build when they cross your threshold. One native binary, no runtime, on npm, PyPI, crates.io and Homebrew: a 159 MB codebase scans in 3.4 seconds. Speaks MCP, ships an agent skill, and reports in a format LLMs can afford to read.
 
 #links
   :::u-button
   ---
-  label: Add to CI
-  to: /ci-and-hooks/ci
+  label: Set up the gate
+  to: "#how-teams-wire-it"
   color: primary
   size: xl
-  trailing-icon: i-lucide-arrow-right
+  trailing-icon: i-lucide-arrow-down
   class: btn-glow
   ---
   :::
@@ -150,10 +150,86 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
 
 ::u-page-section
 #title
+Finds the copies that don't <span class="hero-gradient">look</span> like copies
+
+#description
+Exact copies are the easy case. jscpd 5.2 also reports renamed and near-miss clones, each tagged with its kind and a similarity score in every reporter. Default runs stay unchanged; the extra kinds are opt-in flags.
+
+#features
+  :::u-page-feature
+  ---
+  icon: i-lucide-copy
+  ---
+  #title
+  Exact clones, by default
+
+  #description
+  :copy-command{cmd="jscpd ."}
+
+  Type-1: the tokens are identical; whitespace, layout and comments do not count. This is what every run reports, from `--min-tokens 50` and `--min-lines 5` up.
+
+  <a href="/guides/clone-types#type-1-exact-clones" class="feature-card-link">
+    Type-1 clones
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-replace
+  ---
+  #title
+  Renamed clones
+
+  #description
+  :copy-command{cmd="jscpd . --ignore-identifiers --ignore-literals"}
+
+  Type-2: the same code with other variable names or literal values. `--ignore-annotations` also drops `@Decorator` lines. Keywords keep their meaning, so `return` never matches `retry`. Reported as `renamed`.
+
+  <a href="/guides/clone-types#type-2-renamed-clones" class="feature-card-link">
+    Type-2 clones
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-diff
+  ---
+  #title
+  Near-miss clones
+
+  #description
+  :copy-command{cmd="jscpd . --max-gap-lines 2 --similarity 0.7"}
+
+  Type-3: a copy with a few inserted or changed lines (`--max-gap-lines N`), or a JavaScript/TypeScript function rewritten with the same structure (`--similarity RATIO`, compared by syntax tree). Reported as `similar` with a score.
+
+  <a href="/guides/clone-types#type-3-near-miss-clones" class="feature-card-link">
+    Type-3 clones
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+#default
+  :::demo-video
+  ---
+  src: /video/clone-types.mp4
+  poster: /video/clone-types-poster.jpg
+  alt: One function drifting through the four clone kinds jscpd 5.2 reports, exact, renamed, gap and similar, with the flag that finds each one
+  caption: One function, four ways to copy it. Exact by default, renamed with --ignore-identifiers, an inserted line with --max-gap-lines 2, scattered edits with --similarity 0.7.
+  ---
+  :::
+::
+
+::u-page-section
+---
+id: how-teams-wire-it
+---
+#title
 How teams wire it
 
 #description
-Three places, one binary. Add any of them in under a minute.
+Four places, one binary. Add any of them in under a minute.
 
 #features
   :::u-page-feature
@@ -218,6 +294,24 @@ Three places, one binary. Add any of them in under a minute.
     <span class="link-arrow">→</span>
   </a>
   :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-graduation-cap
+  ---
+  #title
+  4. Agent skill
+
+  #description
+  Teach the agent the workflow, not just the tool: run the scan, pick the extraction, verify the clone count went down.
+
+  :copy-command{cmd="npx skills add kucherenko/jscpd" caption="installs the jscpd and dry-refactoring skills"}
+
+  <a href="/getting-started/agent-skill" class="feature-card-link">
+    Skills for Claude, Copilot, Gemini, Cursor
+    <span class="link-arrow">→</span>
+  </a>
+  :::
 ::
 
 ::u-page-section
@@ -238,7 +332,7 @@ Detection that has been refined since 2013 — now a native Rust engine
   #description
   A decade of refining the art of duplicate detection. Now rewritten in Rust for native performance — no Node.js runtime required.
 
-  <a href="/getting-started/introduction" class="feature-card-link">
+  <a href="/guides/how-detection-works" class="feature-card-link">
     How detection works
     <span class="link-arrow">→</span>
   </a>
@@ -371,6 +465,22 @@ Detection that has been refined since 2013 — now a native Rust engine
     <span class="link-arrow">→</span>
   </a>
   :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-graduation-cap
+  ---
+  #title
+  Trusted in research
+
+  #description
+  54 papers, theses and patents use or cite jscpd: a measurement instrument in ACM TOSEM, two ICLR papers and an 832-million-line industrial dataset, a baseline for new detectors, a component of five patented systems.
+
+  <a href="/research" class="feature-card-link">
+    jscpd in research
+    <span class="link-arrow">→</span>
+  </a>
+  :::
 ::
 
 ::u-page-section
@@ -476,40 +586,6 @@ Plug it into the tools you already run
     <span class="link-arrow">→</span>
   </a>
   :::
-::
-
-::u-page-section
----
-orientation: horizontal
----
-#title
-See It In Action
-
-#description
-From chaos to clarity in seconds
-
-#default
-```bash
-# Scan your source code
-$ jscpd ./src
-
-Clone found (typescript):
- - src/utils.ts [10:1 - 25:3] (15 lines, 129 tokens)
-    src/helpers.ts [5:1 - 20:3]
-
-Clone found (typescript):
- - src/utils.ts [45:5 - 62:2] (17 lines, 178 tokens)
-    src/components/Button.tsx [12:1 - 29:2]
-
-Clone found (typescript):
- - src/hooks/useAuth.ts [1:1 - 34:2] (33 lines, 245 tokens)
-    src/hooks/useSession.ts [1:1 - 34:2]
-
-# ... more clones
-
-Found 90 clones.
-Detection time: 13ms
-```
 ::
 
 ::u-page-section

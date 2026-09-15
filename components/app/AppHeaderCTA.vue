@@ -19,6 +19,12 @@ const links = [
     ariaLabel: 'crates.io'
   },
   {
+    icon: 'i-simple-icons-pypi',
+    to: 'https://pypi.org/project/jscpd/',
+    target: '_blank' as const,
+    ariaLabel: 'PyPI'
+  },
+  {
     icon: 'i-lucide-heart',
     to: '/support',
     ariaLabel: 'Support the project'

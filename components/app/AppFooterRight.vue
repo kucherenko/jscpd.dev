@@ -22,6 +22,12 @@ const links = [
     label: 'Rust crate',
     to: 'https://crates.io/crates/jscpd',
     target: '_blank' as const
+  },
+  {
+    icon: 'i-simple-icons-pypi',
+    label: 'PyPI',
+    to: 'https://pypi.org/project/jscpd/',
+    target: '_blank' as const
   }
 ]
 </script>
