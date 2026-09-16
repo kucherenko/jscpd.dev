@@ -27,10 +27,13 @@ jobs:
       - name: Build
         run: pnpm build
 
+      # `plugins` is not passed: the directory is empty, so git never tracked it
+      # and it does not exist in a checkout. jscpd 5.2.0 skipped the missing
+      # path silently; 5.2.1 treats it as an error (kucherenko/jscpd#1047).
       - name: Run jscpd copy/paste detector
         run: |
           npx jscpd@5 \
-            components plugins \
+            components \
             --format typescript,javascript,vue \
             --ignore "node_modules,dist,.nuxt,.output" \
             --min-lines 3 \

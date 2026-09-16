@@ -42,12 +42,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Syntax check
+        run: bash -n ./public/install.sh
+
       - name: Install
         run: |
           set -euo pipefail
           bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-bin"
-          test -x "$RUNNER_TEMP/jscpd-bin/cpd" || { echo "cpd not installed"; exit 1; }
-          test -e "$RUNNER_TEMP/jscpd-bin/jscpd" || { echo "jscpd alias missing"; exit 1; }
+          test -x "$RUNNER_TEMP/jscpd-bin/jscpd" || { echo "jscpd not installed"; exit 1; }
+          if [ -L "$RUNNER_TEMP/jscpd-bin/jscpd" ]; then echo "jscpd should be the binary, not the alias"; exit 1; fi
+          test -x "$RUNNER_TEMP/jscpd-bin/cpd" || { echo "cpd alias missing"; exit 1; }
 
       - name: Both commands run
         run: |
@@ -70,6 +74,30 @@ jobs:
           echo "$out"
           echo "$out" | grep -qi "clone" || { echo "expected a clone to be reported"; exit 1; }
 
+      - name: Existing install is detected
+        run: |
+          set -euo pipefail
+          out=$(bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-bin" 2>&1)
+          echo "$out"
+          echo "$out" | grep -q "already installed" || { echo "expected an 'already installed' short-circuit"; exit 1; }
+
+      - name: Reinstall with --force
+        run: |
+          set -euo pipefail
+          bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-bin" --force
+          "$RUNNER_TEMP/jscpd-bin/cpd" --version
+
+      - name: Rejects a bad --version
+        run: |
+          set -euo pipefail
+          if bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-bad" --version 2>/dev/null; then
+            echo "a missing --version value should fail"; exit 1
+          fi
+          if bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-bad" --version not-a-version 2>/dev/null; then
+            echo "a malformed --version should fail"; exit 1
+          fi
+          if [ -e "$RUNNER_TEMP/jscpd-bad" ]; then echo "a rejected run created $RUNNER_TEMP/jscpd-bad"; exit 1; fi
+
       - name: Pinned version
         run: |
           set -euo pipefail
@@ -83,6 +111,27 @@ jobs:
           set -euo pipefail
           bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-dry" --dry-run
           if [ -e "$RUNNER_TEMP/jscpd-dry/cpd" ]; then echo "--dry-run wrote a binary"; exit 1; fi
+
+  # ── Alpine: the musl build ────────────────────────────────────────────────
+  # Runs in a container rather than on the runner: nothing else in this matrix
+  # exercises musl detection, and picking the wrong libc surfaces only as a
+  # binary that will not start.
+  musl:
+    name: install.sh on alpine (musl)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install under musl
+        run: |
+          set -euo pipefail
+          docker run --rm -v "$PWD:/work" -w /work alpine:3.20 sh -c '
+            set -eu
+            apk add --no-cache bash curl tar >/dev/null
+            bash ./public/install.sh --prefix /tmp/jscpd-bin
+            /tmp/jscpd-bin/cpd --version
+            /tmp/jscpd-bin/jscpd --version
+          '
 
   # ── Windows: install.ps1 ──────────────────────────────────────────────────
   windows:
