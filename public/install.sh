@@ -4,7 +4,8 @@
 #        curl -fsSL https://jscpd.dev/install.sh | bash -s -- --version 5.2.1
 #        curl -fsSL https://jscpd.dev/install.sh | bash -s -- --prefix ~/bin
 #
-# Downloads the cpd binary for the current platform and installs it.
+# Downloads the jscpd binary for the current platform and installs it, with
+# `cpd` as a short alias beside it.
 # Primary source: GitHub Releases (kucherenko/jscpd), verified against the
 #                 sha256 checksums published alongside the release.
 # Fallback:       npm registry tarballs, verified against the integrity hash
@@ -24,10 +25,14 @@
 set -euo pipefail
 
 REPO="kucherenko/jscpd"
-BINARY_NAME="cpd"
-ALIAS_NAME="jscpd"
+BINARY_NAME="jscpd"
+ALIAS_NAME="cpd"
 GITHUB_RELEASES_URL="https://github.com/${REPO}/releases"
 NPM_REGISTRY="https://registry.npmjs.org"
+# Version oracle for the npm fallback. `cpd` is published only from the v5
+# line, so its latest tag always matches the newest release; `jscpd` also
+# carries a latest-4 tag for the v4 branch.
+NPM_VERSION_PACKAGE="cpd"
 INSTALL_URL="https://jscpd.dev/install.sh"
 
 VERSION=""
@@ -159,7 +164,7 @@ detect_platform() {
 
   # The npm packages are named after the release asset, not the platform key:
   # jscpd-windows-x64-msvc, never jscpd-win32-x64.
-  NPM_PACKAGE="${ALIAS_NAME}-${ASSET_SUFFIX}"
+  NPM_PACKAGE="${BINARY_NAME}-${ASSET_SUFFIX}"
 }
 
 # --- version resolution ----------------------------------------------------
@@ -175,7 +180,7 @@ get_latest_version() {
   is_version "$version" || version=""
 
   if [ -z "$version" ]; then
-    body="$(fetch "${NPM_REGISTRY}/${BINARY_NAME}/latest" 2>/dev/null)" || body=""
+    body="$(fetch "${NPM_REGISTRY}/${NPM_VERSION_PACKAGE}/latest" 2>/dev/null)" || body=""
     version="$(json_value version "$body")"
     is_version "$version" || version=""
   fi
@@ -282,7 +287,7 @@ verify_npm_tarball() {
 
 download_from_github() {
   local version="$1" tmpdir="$2"
-  local archive="${ALIAS_NAME}-${ASSET_SUFFIX}.tar.gz"
+  local archive="${BINARY_NAME}-${ASSET_SUFFIX}.tar.gz"
   local base="${GITHUB_RELEASES_URL}/download/v${version}"
   local sums="" expected=""
 
@@ -303,7 +308,7 @@ download_from_github() {
 
   tar -xzf "${tmpdir}/${archive}" -C "$tmpdir" 2>/dev/null || return 1
 
-  local extracted="${tmpdir}/${ALIAS_NAME}"
+  local extracted="${tmpdir}/${BINARY_NAME}"
   [ "$DETECTED_OS" = "win32" ] && extracted="${extracted}.exe"
   [ -f "$extracted" ] || return 1
 
@@ -333,7 +338,7 @@ download_from_npm() {
 
   tar -xzf "${tmpdir}/package.tgz" -C "$tmpdir" 2>/dev/null || return 1
 
-  local extracted="${tmpdir}/package/bin/${ALIAS_NAME}"
+  local extracted="${tmpdir}/package/bin/${BINARY_NAME}"
   [ "$DETECTED_OS" = "win32" ] && extracted="${extracted}.exe"
   [ -f "$extracted" ] || return 1
 
@@ -403,7 +408,7 @@ main() {
   info "Installing ${BINARY_NAME} v${VERSION} for ${PLATFORM_KEY} to ${PREFIX}"
 
   if [ -n "$DRY_RUN" ]; then
-    info "[dry-run] would download ${GITHUB_RELEASES_URL}/download/v${VERSION}/${ALIAS_NAME}-${ASSET_SUFFIX}.tar.gz"
+    info "[dry-run] would download ${GITHUB_RELEASES_URL}/download/v${VERSION}/${BINARY_NAME}-${ASSET_SUFFIX}.tar.gz"
     info "[dry-run] would install it as ${dest}"
     exit 0
   fi
@@ -444,8 +449,19 @@ main() {
   if [ -z "$BINARY_PATH" ] || [ ! -f "$BINARY_PATH" ]; then
     err "Failed to download ${BINARY_NAME} v${VERSION} for ${PLATFORM_KEY}"
     err "Check that v${VERSION} exists: ${GITHUB_RELEASES_URL}"
-    err "Or install from npm instead: npm install -g ${ALIAS_NAME}@5"
+    err "Or install from npm instead: npm install -g ${BINARY_NAME}@5"
     exit 1
+  fi
+
+  # Installers from before jscpd and cpd swapped roles left the real file at
+  # cpd with a jscpd symlink beside it. Recognise that layout while the symlink
+  # is still there: both files are ours, so the stale cpd can be replaced
+  # instead of being left to shadow the version about to be installed.
+  local legacy_alias=""
+  if [ -L "$dest" ] && [ -f "$alias_dest" ] && [ ! -L "$alias_dest" ]; then
+    case "$(readlink "$dest" 2>/dev/null || true)" in
+      "$alias_dest"|"$ALIAS_NAME"|*/"$ALIAS_NAME") legacy_alias=1 ;;
+    esac
   fi
 
   # Stage next to the destination and rename over it: a half-written file is
@@ -460,12 +476,18 @@ main() {
 
   ok "${BINARY_NAME} v${VERSION} installed to ${dest}"
 
-  if [ ! -e "$alias_dest" ] && [ ! -L "$alias_dest" ]; then
+  [ -n "$legacy_alias" ] && rm -f "$alias_dest"
+
+  # The alias is ours to keep pointing at the binary, but a regular file of
+  # someone else's -- PMD also ships a `cpd` -- is left alone.
+  if [ ! -e "$alias_dest" ] || [ -L "$alias_dest" ]; then
     if ln -sf "$dest" "$alias_dest" 2>/dev/null; then
       ok "Linked $(basename "$alias_dest") → $(basename "$dest")"
     elif cp "$dest" "$alias_dest" 2>/dev/null; then
       ok "Copied $(basename "$alias_dest") alongside $(basename "$dest")"
     fi
+  else
+    warn "${alias_dest} already exists and is not a link -- left as is"
   fi
 
   case ":${PATH}:" in

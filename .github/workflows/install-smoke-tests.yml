@@ -49,8 +49,9 @@ jobs:
         run: |
           set -euo pipefail
           bash ./public/install.sh --prefix "$RUNNER_TEMP/jscpd-bin"
-          test -x "$RUNNER_TEMP/jscpd-bin/cpd" || { echo "cpd not installed"; exit 1; }
-          test -e "$RUNNER_TEMP/jscpd-bin/jscpd" || { echo "jscpd alias missing"; exit 1; }
+          test -x "$RUNNER_TEMP/jscpd-bin/jscpd" || { echo "jscpd not installed"; exit 1; }
+          if [ -L "$RUNNER_TEMP/jscpd-bin/jscpd" ]; then echo "jscpd should be the binary, not the alias"; exit 1; fi
+          test -x "$RUNNER_TEMP/jscpd-bin/cpd" || { echo "cpd alias missing"; exit 1; }
 
       - name: Both commands run
         run: |
