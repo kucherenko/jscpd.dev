@@ -6,6 +6,12 @@ repos:
         entry: jscpd
         language: node
         additional_dependencies: ['jscpd@5']
-        args: [--threshold, '5', --reporters, console, silent]
+        # --reporters takes one comma-separated value; splitting "console"
+        # and "silent" into separate argv entries makes clap read "silent"
+        # as a stray positional path instead of a second reporter. data/ is
+        # generated (daily trending snapshots are near-identical JSON) and
+        # lockfiles aren't source, so both would otherwise blow the 5%
+        # threshold on every run regardless of what changed.
+        args: [--threshold, '5', --reporters, 'console,silent', --ignore, 'data/**,pnpm-lock.yaml,bun.lock,public/**']
         pass_filenames: false
         always_run: true

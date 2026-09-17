@@ -499,6 +499,22 @@ Detection that has been refined since 2013 — now a native Rust engine
     <span class="link-arrow">→</span>
   </a>
   :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-newspaper
+  ---
+  #title
+  Written about, not just installed
+
+  #description
+  54 verified blog posts, talks and case studies: real configs and numbers from teams wiring jscpd into CI gates, pre-commit hooks and AI agent loops.
+
+  <a href="/articles" class="feature-card-link">
+    jscpd in articles
+    <span class="link-arrow">→</span>
+  </a>
+  :::
 ::
 
 ::u-page-section
