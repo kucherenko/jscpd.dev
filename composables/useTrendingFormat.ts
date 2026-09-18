@@ -12,6 +12,10 @@ export const shortDay = (date: string) => formatDay(date, { month: 'short', day:
 
 export const dupClass = (pct: number) => pct < 3 ? 'dup-low' : pct < 8 ? 'dup-mid' : 'dup-high'
 
+/** Health grade → CSS class, same A-E scale as the jscpd --health badge. */
+export const gradeClass = (grade: string | null | undefined) =>
+  grade ? `grade-${grade.toLowerCase()}` : 'grade-na'
+
 // cross-format sources carry a block suffix (file.md:markdown, file.vue:script)
 // that is not part of the real path
 export const cleanName = (name: string) => name.replace(/:[a-z][\w-]*$/, '')

@@ -605,3 +605,24 @@ a:hover {
 .dup-low { color: #16a34a; background: rgba(22, 163, 74, 0.12); }
 .dup-mid { color: #d97706; background: rgba(217, 119, 6, 0.12); }
 .dup-high { color: #dc2626; background: rgba(220, 38, 38, 0.12); }
+
+/* Health grade badge (A-E) — same palette as the jscpd --health SVG badge,
+   so a grade means the same color on the CLI and on the site. */
+.health-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.grade-a { color: #27ae60; background: rgba(39, 174, 96, 0.12); }
+.grade-b { color: #7cb342; background: rgba(124, 179, 66, 0.14); }
+.grade-c { color: #b7960a; background: rgba(241, 196, 15, 0.16); }
+.grade-d { color: #f39c12; background: rgba(243, 156, 18, 0.14); }
+.grade-e { color: #e74c3c; background: rgba(231, 76, 60, 0.12); }
+.grade-na { color: var(--ui-text-muted, #64748b); background: rgba(100, 116, 139, 0.1); }

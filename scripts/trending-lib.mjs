@@ -40,6 +40,19 @@ export function summarize(repos) {
   const byClones = [...repos].sort((a, b) => (b.total.clones || 0) - (a.total.clones || 0))
   const brief = (r) => r ? { name: r.name, clones: r.total.clones, percentage: r.total.percentage } : null
 
+  // Health is optional per repo (null when its --dashboard run failed, or
+  // in snapshots taken before health scoring shipped): aggregate only over
+  // the repos that have a score, and omit these fields entirely on a day
+  // where none do, rather than reporting a misleading average of zero.
+  const scored = repos.filter(r => typeof r.health?.score === 'number')
+  const healthBrief = (r) => r ? { name: r.name, score: r.health.score, grade: r.health.grade } : null
+  const byHealth = [...scored].sort((a, b) => b.health.score - a.health.score)
+  const healthStats = scored.length ? {
+    avgHealth: round2(sum(scored, r => r.health.score) / scored.length),
+    healthiest: healthBrief(byHealth[0]),
+    leastHealthy: healthBrief(byHealth[byHealth.length - 1])
+  } : {}
+
   const languages = new Map()
   for (const r of repos) {
     const key = r.language || 'Other'
@@ -68,6 +81,7 @@ export function summarize(repos) {
     mostDuplicated: brief(byPct[0]),
     cleanest: brief(byPct[byPct.length - 1]),
     mostClones: brief(byClones[0]),
+    ...healthStats,
     languages: [...languages.values()]
       .map(l => ({ ...l, percentage: pct(l.duplicatedLines, l.lines) }))
       .sort((a, b) => b.repos - a.repos || b.clones - a.clones)
@@ -132,7 +146,11 @@ export async function buildIndex() {
         lines: r.total.lines,
         clones: r.total.clones,
         duplicatedLines: r.total.duplicatedLines,
-        percentage: r.total.percentage
+        percentage: r.total.percentage,
+        // null on a day whose --dashboard run failed, or before health
+        // scoring shipped (2026-09-18) — every consumer treats it as optional.
+        healthScore: r.health?.score ?? null,
+        healthGrade: r.health?.grade ?? null
       })
       entry.latest = { date: day.date, generatedAt: day.generatedAt, ...r }
       repos.set(r.name, entry)

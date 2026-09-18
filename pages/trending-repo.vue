@@ -52,6 +52,11 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
         <span class="chip">★ {{ num(repo.stars) }}</span>
         <span v-if="repo.starsToday" class="chip chip-accent">+{{ num(repo.starsToday) }} that day</span>
         <span class="chip">#{{ latestAppearance.rank }} on trending</span>
+        <span
+          v-if="repo.health?.score != null"
+          class="health-badge"
+          :class="gradeClass(repo.health.grade)"
+        >{{ repo.health.grade }} {{ repo.health.score }} health</span>
         <span class="dup-badge" :class="dupClass(repo.total.percentage)">{{ repo.total.percentage }}% duplicated</span>
       </div>
       <p class="repo-meta">
@@ -61,6 +66,8 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
       </p>
     </header>
 
+    <TrendingRepoDashboard v-if="repo.health" :repo="repo" />
+
     <TrendingRepoDetails :repo="repo" />
 
     <section>
@@ -68,7 +75,7 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
       <div class="table-scroll">
         <table class="detail-table">
           <thead>
-            <tr><th>Day</th><th>Rank</th><th>Stars</th><th>Files</th><th>Lines</th><th>Clones</th><th>Duplication</th><th>Commit</th></tr>
+            <tr><th>Day</th><th>Rank</th><th>Stars</th><th>Files</th><th>Lines</th><th>Clones</th><th>Duplication</th><th>Health</th><th>Commit</th></tr>
           </thead>
           <tbody>
             <tr v-for="a in [...record.appearances].reverse()" :key="a.date">
@@ -79,6 +86,10 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
               <td>{{ num(a.lines) }}</td>
               <td>{{ num(a.clones) }}</td>
               <td><span class="dup-badge" :class="dupClass(a.percentage)">{{ a.percentage }}%</span></td>
+              <td>
+                <span v-if="a.healthScore != null" class="health-badge" :class="gradeClass(a.healthGrade)">{{ a.healthGrade }} {{ a.healthScore }}</span>
+                <span v-else class="muted">—</span>
+              </td>
               <td><a :href="`${repo.url}/tree/${a.headSha}`" target="_blank" rel="noopener"><code>{{ a.headSha.slice(0, 7) }}</code></a></td>
             </tr>
           </tbody>
