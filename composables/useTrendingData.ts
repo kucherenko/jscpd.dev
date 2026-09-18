@@ -30,6 +30,49 @@ export interface RepoClone {
   secondFile: CloneFile
 }
 
+export interface HealthDimension {
+  id: string
+  source: string
+  value: number
+  adjusted: number
+  lines: number
+  halfLife: number
+  weight: number
+  score: number
+  formats?: string[]
+  excluded?: string[]
+}
+
+export interface HealthSkipped { id: string, reason: string }
+
+export interface RepoHealth {
+  score: number | null
+  grade: string | null
+  size: { lines: number, files: number, class: string }
+  dimensions: HealthDimension[]
+  skipped?: HealthSkipped[]
+}
+
+export interface ComplexityFile { path: string, complexity: number, lines: number, bytes: number }
+
+export interface RepoComplexity {
+  total: number
+  mean: number
+  files: ComplexityFile[]
+}
+
+export interface DeadCodeCategory { category: string, count: number }
+
+export interface DeadCodeFinding { category: string, path: string, name: string, line: number, lines: number }
+
+export interface RepoDeadCode {
+  percentage: number
+  findings: number
+  files: number
+  byCategory: DeadCodeCategory[]
+  largest: DeadCodeFinding[]
+}
+
 export interface RepoAnalysis {
   name: string
   url: string
@@ -43,9 +86,17 @@ export interface RepoAnalysis {
   total: RepoTotal
   formats: RepoFormat[]
   topClones: RepoClone[]
+  // Absent in snapshots taken before 2026-09-18, and null on a day whose
+  // --dashboard run timed out or failed — the duplication fields above are
+  // still the source of truth and never depend on these.
+  health?: RepoHealth | null
+  complexity?: RepoComplexity | null
+  deadCode?: RepoDeadCode | null
 }
 
 export interface RepoBrief { name: string, clones: number, percentage: number }
+
+export interface HealthBrief { name: string, score: number, grade: string }
 
 export interface LanguageStat {
   language: string
@@ -71,6 +122,10 @@ export interface DaySummary {
   mostDuplicated: RepoBrief | null
   cleanest: RepoBrief | null
   mostClones: RepoBrief | null
+  // Present only when at least one repo that day had a health score.
+  avgHealth?: number
+  healthiest?: HealthBrief | null
+  leastHealthy?: HealthBrief | null
 }
 
 export interface DaySnapshot {
@@ -97,6 +152,8 @@ export interface RepoAppearance {
   clones: number
   duplicatedLines: number
   percentage: number
+  healthScore?: number | null
+  healthGrade?: string | null
 }
 
 export interface RepoRecord {

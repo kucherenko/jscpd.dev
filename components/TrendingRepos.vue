@@ -16,7 +16,15 @@
       <span class="trending-side">
         <span class="trending-clones">{{ num(repo.total.clones) }}</span>
         <span class="trending-clones-label">clones</span>
-        <span class="dup-badge" :class="dupClass(repo.total.percentage)">{{ repo.total.percentage }}%</span>
+        <span class="trending-badges">
+          <span
+            v-if="repo.health?.score != null"
+            class="health-badge"
+            :class="gradeClass(repo.health.grade)"
+            :title="`Health ${repo.health.score}/100`"
+          >{{ repo.health.grade }} {{ repo.health.score }}</span>
+          <span class="dup-badge" :class="dupClass(repo.total.percentage)">{{ repo.total.percentage }}%</span>
+        </span>
       </span>
       <Icon name="lucide:chevron-right" class="trending-chevron" />
     </NuxtLink>
@@ -107,6 +115,12 @@ defineProps<{ repos: RepoAnalysis[] }>()
   font-variant-numeric: tabular-nums;
   color: var(--ui-text-highlighted, inherit);
   line-height: 1;
+}
+
+.trending-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
 }
 
 .trending-clones-label {

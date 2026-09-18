@@ -24,6 +24,16 @@
         <span class="tsum-hl-name">{{ summary.cleanest.name }}</span>
         <span class="dup-badge" :class="dupClass(summary.cleanest.percentage)">{{ summary.cleanest.percentage }}%</span>
       </NuxtLink>
+      <NuxtLink v-if="summary.healthiest" :to="trendingRepoPath(summary.healthiest.name)" class="tsum-hl">
+        <span class="tsum-hl-label">Healthiest</span>
+        <span class="tsum-hl-name">{{ summary.healthiest.name }}</span>
+        <span class="health-badge" :class="gradeClass(summary.healthiest.grade)">{{ summary.healthiest.grade }} {{ summary.healthiest.score }}</span>
+      </NuxtLink>
+      <NuxtLink v-if="summary.leastHealthy" :to="trendingRepoPath(summary.leastHealthy.name)" class="tsum-hl">
+        <span class="tsum-hl-label">Least healthy</span>
+        <span class="tsum-hl-name">{{ summary.leastHealthy.name }}</span>
+        <span class="health-badge" :class="gradeClass(summary.leastHealthy.grade)">{{ summary.leastHealthy.grade }} {{ summary.leastHealthy.score }}</span>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -40,7 +50,8 @@ const tiles = computed(() => [
   { label: 'lines scanned', value: compact(props.summary.lines) },
   { label: 'clones found', value: compact(props.summary.clones) },
   { label: 'duplicated lines', value: compact(props.summary.duplicatedLines), hint: `${props.summary.percentage}% of all lines` },
-  { label: 'median duplication', value: `${props.summary.medianPercentage}%`, hint: `mean ${props.summary.avgPercentage}%` }
+  { label: 'median duplication', value: `${props.summary.medianPercentage}%`, hint: `mean ${props.summary.avgPercentage}%` },
+  ...(props.summary.avgHealth != null ? [{ label: 'average health', value: String(props.summary.avgHealth), hint: 'out of 100' }] : [])
 ])
 </script>
 
