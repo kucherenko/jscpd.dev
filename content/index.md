@@ -137,12 +137,12 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it â€
   Know where to start
 
   #description
-  :copy-command{cmd="jscpd . --summary"}
+  :copy-command{cmd="jscpd . --dashboard"}
 
-  Files ranked by tokens, lines, or complexity, each with its duplication share. Refactor the worst first.
+  Duplication, the most complex files and dead code on one screen. Refactor the worst first.
 
-  <a href="/getting-started/configuration#codebase-summary-where-to-refactor-first" class="feature-card-link">
-    Summary options
+  <a href="/guides/dashboard" class="feature-card-link">
+    Project dashboard
     <span class="link-arrow">â†’</span>
   </a>
   :::
