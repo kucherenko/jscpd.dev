@@ -1,7 +1,7 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Copy/paste detector for source code that finds duplicated blocks across 224 languages and fails the build when they cross your threshold - a native Rust binary with an MCP server, an agent skill, and an LLM-friendly reporter.
+  description: Copy/paste detector for source code that finds duplicated, dead and overly complex code across 224 languages, scores overall codebase health, and fails the build when duplication crosses your threshold — a native Rust binary with an MCP server, an agent skill, and an LLM-friendly reporter.
   ogImage: https://jscpd.dev/og.png
 ---
 
@@ -139,7 +139,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
   #description
   :copy-command{cmd="jscpd . --dashboard"}
 
-  Duplication, the most complex files and dead code on one screen. Refactor the worst first.
+  One health score up top, then duplication, the most complex files and dead code below it. Refactor the worst first.
 
   <a href="/guides/dashboard" class="feature-card-link">
     Project dashboard
@@ -348,7 +348,7 @@ Detection that has been refined since 2013 — now a native Rust engine
   Since 2013
 
   #description
-  A decade of refining the art of duplicate detection. Now rewritten in Rust for native performance — no Node.js runtime required.
+  A decade refining duplicate detection, now rewritten in Rust for native performance.
 
   <a href="/guides/how-detection-works" class="feature-card-link">
     How detection works
