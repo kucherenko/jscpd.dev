@@ -1,7 +1,7 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Copy/paste detector for source code that finds duplicated blocks across 224 languages and fails the build when they cross your threshold - a native Rust binary with an MCP server, an agent skill, and an LLM-friendly reporter.
+  description: Copy/paste detector for source code that finds duplicated, dead and overly complex code across 224 languages, scores overall codebase health, and fails the build when duplication crosses your threshold — a native Rust binary with an MCP server, agent skills, and an LLM-friendly reporter.
   ogImage: https://jscpd.dev/og.png
 ---
 
@@ -13,7 +13,7 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds exact, renamed and near-miss duplicates and fails the build when they cross your threshold. One native binary, no runtime, on npm, PyPI, crates.io and Homebrew: a 159 MB codebase scans in 3.4 seconds. Speaks MCP, ships an agent skill, and reports in a format LLMs can afford to read.
+**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds exact, renamed and near-miss duplicates, and fails the build when they cross your threshold. One native binary, no runtime: a 159 MB codebase scans in 3.4 seconds. It also finds dead code, ranks complexity and scores codebase health, speaks MCP, ships agent skills, and has a reporter LLMs can afford to read.
 
 #links
   :::u-button
@@ -54,7 +54,7 @@ Copy/Paste Detector for Source Code
 Built for codebases where <span class="hero-gradient">agents</span> write code
 
 #description
-Agents repeat helpers. Each diff reads fine on its own. Review can't catch it — a failing build can.
+Agents repeat helpers. Each diff reads fine on its own, so review misses it. A failing build doesn't.
 
 #features
   :::u-page-feature
@@ -85,7 +85,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
   #description
   :copy-command{cmd="jscpd --mcp"}
 
-  MCP server built into the binary. Claude, Cursor, or any MCP client checks for clones before writing more.
+  MCP server built into the binary. Claude, Cursor or any MCP client can check for clones before writing more.
 
   <a href="/api/mcp-server" class="feature-card-link">
     MCP server docs
@@ -103,7 +103,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
   #description
   :copy-command{cmd="npx skills add kucherenko/jscpd"}
 
-  One skill: detect duplicates, propose the extraction, verify the count went down.
+  Skills that run the whole workflow: find duplicates, extract them, remove dead code, simplify complex files, then check the numbers improved.
 
   <a href="/getting-started/agent-skill" class="feature-card-link">
     Install the agent skill
@@ -139,10 +139,28 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
   #description
   :copy-command{cmd="jscpd . --dashboard"}
 
-  Duplication, the most complex files and dead code on one screen. Refactor the worst first.
+  One screen: a health score on top, then duplication, the most complex files and dead code. Fix the worst first.
 
   <a href="/guides/dashboard" class="feature-card-link">
     Project dashboard
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-scan-search
+  ---
+  #title
+  Find what nothing runs
+
+  #description
+  :copy-command{cmd="jscpd . --dead-code"}
+
+  Unused files, exports and imports in JavaScript, TypeScript and Python, each with a confidence score. `--complexity` ranks the most complex files without running clone detection.
+
+  <a href="/guides/health" class="feature-card-link">
+    Health score and dead code
     <span class="link-arrow">→</span>
   </a>
   :::
@@ -157,7 +175,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
   #description
   :copy-command{cmd="jscpd . --history v5.0.0..HEAD"}
 
-  One scan per commit, a chart and a table in the terminal. See whether the agents are adding duplication faster than you remove it, and how far the threshold can be tightened.
+  One scan per commit, shown as a chart and a table in your terminal. See whether agents add duplication faster than you remove it, and how far you can tighten the threshold.
 
   <a href="/guides/history" class="feature-card-link">
     Duplication trend over history
@@ -171,7 +189,7 @@ Agents repeat helpers. Each diff reads fine on its own. Review can't catch it �
 Finds the copies that don't <span class="hero-gradient">look</span> like copies
 
 #description
-Exact copies are the easy case. jscpd 5.2 also reports renamed and near-miss clones, each tagged with its kind and a similarity score in every reporter. Default runs stay unchanged; the extra kinds are opt-in flags.
+Exact copies are the easy case. jscpd also reports renamed and near-miss clones, each tagged with its kind and a similarity score. Default runs are unchanged; the extra kinds are opt-in flags.
 
 #features
   :::u-page-feature
@@ -184,7 +202,7 @@ Exact copies are the easy case. jscpd 5.2 also reports renamed and near-miss clo
   #description
   :copy-command{cmd="jscpd ."}
 
-  Type-1: the tokens are identical; whitespace, layout and comments do not count. This is what every run reports, from `--min-tokens 50` and `--min-lines 5` up.
+  Type-1: identical tokens. Whitespace, layout and comments don't count. Every run reports these, starting from `--min-tokens 50` and `--min-lines 5`.
 
   <a href="/guides/clone-types#type-1-exact-clones" class="feature-card-link">
     Type-1 clones
@@ -202,7 +220,7 @@ Exact copies are the easy case. jscpd 5.2 also reports renamed and near-miss clo
   #description
   :copy-command{cmd="jscpd . --ignore-identifiers --ignore-literals"}
 
-  Type-2: the same code with other variable names or literal values. `--ignore-annotations` also drops `@Decorator` lines. Keywords keep their meaning, so `return` never matches `retry`. Reported as `renamed`.
+  Type-2: the same code with different variable names or literal values. `--ignore-annotations` also drops `@Decorator` lines. Keywords keep their meaning, so `return` never matches `retry`. Reported as `renamed`.
 
   <a href="/guides/clone-types#type-2-renamed-clones" class="feature-card-link">
     Type-2 clones
@@ -220,7 +238,7 @@ Exact copies are the easy case. jscpd 5.2 also reports renamed and near-miss clo
   #description
   :copy-command{cmd="jscpd . --max-gap-lines 2 --similarity 0.7"}
 
-  Type-3: a copy with a few inserted or changed lines (`--max-gap-lines N`), or a JavaScript/TypeScript function rewritten with the same structure (`--similarity RATIO`, compared by syntax tree). Reported as `similar` with a score.
+  Type-3: a copy with a few inserted or changed lines (`--max-gap-lines N`), or a JavaScript/TypeScript function with the same structure (`--similarity RATIO`, compared by syntax tree). Reported as `similar` with a score.
 
   <a href="/guides/clone-types#type-3-near-miss-clones" class="feature-card-link">
     Type-3 clones
@@ -233,7 +251,7 @@ Exact copies are the easy case. jscpd 5.2 also reports renamed and near-miss clo
   ---
   src: /video/clone-types.mp4
   poster: /video/clone-types-poster.jpg
-  alt: One function drifting through the four clone kinds jscpd 5.2 reports, exact, renamed, gap and similar, with the flag that finds each one
+  alt: One function drifting through the four clone kinds jscpd reports, exact, renamed, gap and similar, with the flag that finds each one
   caption: One function, four ways to copy it. Exact by default, renamed with --ignore-identifiers, an inserted line with --max-gap-lines 2, scattered edits with --similarity 0.7.
   ---
   :::
@@ -247,7 +265,7 @@ id: how-teams-wire-it
 How teams wire it
 
 #description
-Four places, one binary. Add any of them in under a minute.
+Four places, one binary. Each takes about a minute.
 
 #features
   :::u-page-feature
@@ -321,9 +339,9 @@ Four places, one binary. Add any of them in under a minute.
   4. Agent skill
 
   #description
-  Teach the agent the workflow, not just the tool: run the scan, pick the extraction, verify the clone count went down.
+  Teach the agent the workflow, not just the tool: scan, refactor duplicates, remove dead code, simplify complex files, check the health score improved.
 
-  :copy-command{cmd="npx skills add kucherenko/jscpd" caption="installs the jscpd and dry-refactoring skills"}
+  :copy-command{cmd="npx skills add kucherenko/jscpd" caption="installs the jscpd, dry-refactoring and codebase-refactoring skills"}
 
   <a href="/getting-started/agent-skill" class="feature-card-link">
     Skills for Claude, Copilot, Gemini, Cursor
@@ -334,10 +352,21 @@ Four places, one binary. Add any of them in under a minute.
 
 ::u-page-section
 #title
+Who Uses <span class="hero-gradient">jscpd</span>
+
+#description
+From GitHub's official linter to enterprise codebases
+
+#default
+<WhoUses />
+::
+
+::u-page-section
+#title
 Core
 
 #description
-Detection that has been refined since 2013 — now a native Rust engine
+Detection refined since 2013, now a native Rust engine
 
 #features
   :::u-page-feature
@@ -348,7 +377,7 @@ Detection that has been refined since 2013 — now a native Rust engine
   Since 2013
 
   #description
-  A decade of refining the art of duplicate detection. Now rewritten in Rust for native performance — no Node.js runtime required.
+  A decade refining duplicate detection, now rewritten in Rust for native speed.
 
   <a href="/guides/how-detection-works" class="feature-card-link">
     How detection works
@@ -361,10 +390,10 @@ Detection that has been refined since 2013 — now a native Rust engine
   icon: i-lucide-globe
   ---
   #title
-  Speaks 224 Languages
+  Speaks 224 languages
 
   #description
-  JavaScript, Python, Java, Go, Rust, C++, TypeScript, Ruby... If you can write it, we can scan it. Vue, Svelte, Astro, and Markdown cross-format detection too.
+  JavaScript, Python, Java, Go, Rust, C++, TypeScript, Ruby... If you can write it, we can scan it.
 
   <a href="/getting-started/supported-formats" class="feature-card-link">
     View supported formats
@@ -377,10 +406,10 @@ Detection that has been refined since 2013 — now a native Rust engine
   icon: i-lucide-rocket
   ---
   #title
-  Blazingly Fast™
+  Blazingly fast™
 
   #description
-  A Rust engine with parallel detection across format groups. 159 MB codebase? 3.4 seconds. No Node.js runtime — just a single native binary.
+  A Rust engine with parallel detection across format groups. A 159 MB codebase takes 3.4 seconds. No Node.js runtime, just one native binary.
 
   <a href="/benchmarks" class="feature-card-link">
     See benchmarks
@@ -393,10 +422,10 @@ Detection that has been refined since 2013 — now a native Rust engine
   icon: i-lucide-terminal-square
   ---
   #title
-  CLI-First Design
+  CLI first
 
   #description
-  One command to rule them all. Works everywhere — your laptop, CI/CD, that ancient Jenkins server nobody wants to touch.
+  One command, everywhere: your laptop, CI/CD, that ancient Jenkins server nobody wants to touch.
 
   <a href="/getting-started/installation" class="feature-card-link">
     Get started
@@ -409,10 +438,10 @@ Detection that has been refined since 2013 — now a native Rust engine
   icon: i-lucide-file-bar-chart
   ---
   #title
-  Beautiful Reports
+  Reports you can show
 
   #description
-  HTML, JSON, XML, badges for your README. Make technical debt visible (and slightly embarrassing).
+  HTML, JSON, XML and README badges. Make technical debt visible (and slightly embarrassing).
 
   <a href="/reporters" class="feature-card-link">
     Explore reporters
@@ -425,10 +454,10 @@ Detection that has been refined since 2013 — now a native Rust engine
   icon: i-lucide-sliders-horizontal
   ---
   #title
-  Thresholds & Baselines
+  Thresholds and baselines
 
   #description
-  Set a threshold and fail the build. Or commit a baseline and fail only on clones that are new since the last run.
+  Set a threshold and fail the build, or commit a baseline and fail only on clones added since.
 
   <a href="/getting-started/configuration" class="feature-card-link">
     Configure thresholds
@@ -441,10 +470,10 @@ Detection that has been refined since 2013 — now a native Rust engine
   icon: i-lucide-sparkles
   ---
   #title
-  Cross-Format Detection
+  Cross-format detection
 
   #description
-  Vue SFC, Svelte, Astro, and Markdown files are tokenized per-block — a `<script>` in .vue can match a .ts file. And `--cross-formats "js-ts"` compares related formats in one pool, catching clones between .js and .ts files.
+  Vue, Svelte, Astro and Markdown files are tokenized per block, so a `<script>` in a .vue file can match a .ts file. `--cross-formats "js-ts"` compares related formats in one pool, catching clones between .js and .ts.
 
   <a href="/benchmarks/cross-format" class="feature-card-link">
     Cross-format benchmark
@@ -457,10 +486,10 @@ Detection that has been refined since 2013 — now a native Rust engine
   icon: i-lucide-user-round-search
   ---
   #title
-  Git Blame
+  Git blame
 
   #description
-  `--blame` annotates every clone with the authors from git history, so you know who to ask before you refactor.
+  `--blame` shows who wrote each clone, from git history, so you know who to ask before you refactor.
 
   <a href="/getting-started/configuration" class="feature-card-link">
     All CLI options
@@ -476,7 +505,7 @@ Detection that has been refined since 2013 — now a native Rust engine
   10M+ npm downloads / month
 
   #description
-  One of the most trusted tools in the ecosystem. Join developers who rely on jscpd every day.
+  One of the most trusted tools in the ecosystem. Join the developers who rely on jscpd every day.
 
   <a href="https://www.npmjs.com/package/jscpd" class="feature-card-link">
     View on npm
@@ -533,7 +562,7 @@ Plug it into the tools you already run
   GitHub Action
 
   #description
-  `uses: kucherenko/jscpd@v5` — scans the repository, fails on threshold, and uploads SARIF to Code Scanning. No install step.
+  `uses: kucherenko/jscpd@v5` scans the repository, fails on threshold and uploads SARIF to Code Scanning. No install step.
 
   <a href="/ci-and-hooks/ci" class="feature-card-link">
     GitHub Action docs
@@ -549,7 +578,7 @@ Plug it into the tools you already run
   Pre-commit Hooks
 
   #description
-  Works with the `pre-commit` framework, Husky, or a plain shell hook in `.git/hooks`. Blocks the commit when duplication exceeds the threshold.
+  Works with the `pre-commit` framework, Husky or a plain shell hook in `.git/hooks`. Blocks the commit when duplication exceeds the threshold.
 
   <a href="/ci-and-hooks/pre-commit" class="feature-card-link">
     Pre-commit docs
@@ -581,7 +610,7 @@ Plug it into the tools you already run
   GitLab CI
 
   #description
-  The `codeclimate` reporter feeds GitLab Code Quality and `openmetrics` feeds its metrics reports, so duplication shows up on the merge request.
+  The `codeclimate` reporter feeds GitLab Code Quality and `openmetrics` feeds its metrics reports, so duplication shows on the merge request.
 
   <a href="/ci-and-hooks/ci#gitlab-ci" class="feature-card-link">
     GitLab CI docs
@@ -597,7 +626,7 @@ Plug it into the tools you already run
   Programmable
 
   #description
-  Embed detection in your own tools with the Rust crates (`cpd-finder`, `cpd-core`), or drive the CLI and parse its JSON output from any language.
+  Embed detection in your own tools with the Rust crates (`cpd-finder`, `cpd-core`), or run the CLI and parse its JSON from any language.
 
   <a href="/api" class="feature-card-link">
     View API documentation
@@ -610,10 +639,10 @@ Plug it into the tools you already run
   icon: i-lucide-trending-up
   ---
   #title
-  Trending Repos, Analyzed
+  Trending repos, analyzed
 
   #description
-  How much copy/paste ships in GitHub's trending repos? A daily pipeline runs jscpd v5 on each and publishes clone counts and duplication stats.
+  How much copy/paste ships in GitHub's trending repos? A daily pipeline runs jscpd on each and publishes the results.
 
   <a href="/trending" class="feature-card-link">
     See today's results
@@ -630,21 +659,10 @@ orientation: horizontal
 Fresh from <span class="hero-gradient">GitHub Trending</span>
 
 #description
-Every day we run jscpd v5 over GitHub's trending repositories and publish how much copy/pasted code they ship — clone counts, duplication rates, and the largest duplicated blocks.
+Every day we run jscpd v5 over GitHub's trending repositories and publish how much copy/pasted code they ship: clone counts, duplication rates and the largest duplicated blocks.
 
 #default
 <TrendingPreview />
-::
-
-::u-page-section
-#title
-Who Uses <span class="hero-gradient">jscpd</span>
-
-#description
-From GitHub's official linter to enterprise codebases
-
-#default
-<WhoUses />
 ::
 
 ::u-page-section
