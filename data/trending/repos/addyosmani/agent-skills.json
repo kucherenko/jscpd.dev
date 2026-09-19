@@ -43,20 +43,34 @@
    "percentage": 1.37,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-19",
+   "rank": 5,
+   "stars": 96504,
+   "starsToday": 675,
+   "headSha": "c004a74784a08295d52749b04cda634125b9a581",
+   "sources": 287,
+   "lines": 35389,
+   "clones": 42,
+   "duplicatedLines": 484,
+   "percentage": 1.37,
+   "healthScore": 77.4,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-18",
-  "generatedAt": "2026-09-18T05:27:16.951Z",
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T05:26:25.682Z",
   "name": "addyosmani/agent-skills",
   "url": "https://github.com/addyosmani/agent-skills",
   "description": "Production-grade engineering skills for AI coding agents.",
   "language": "JavaScript",
-  "stars": 95981,
-  "starsToday": 680,
+  "stars": 96504,
+  "starsToday": 675,
   "defaultBranch": "main",
   "headSha": "c004a74784a08295d52749b04cda634125b9a581",
-  "durationMs": 583,
+  "durationMs": 967,
   "total": {
    "sources": 287,
    "lines": 35389,
@@ -300,6 +314,133 @@
      "end": 32
     }
    }
-  ]
+  ],
+  "health": {
+   "score": 77.4,
+   "grade": "B",
+   "size": {
+    "lines": 4876,
+    "files": 47,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.1,
+     "adjusted": 4,
+     "lines": 201,
+     "halfLife": 8.5,
+     "formats": [
+      "javascript",
+      "bash",
+      "perl",
+      "python",
+      "tsx"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 72.4
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 1.2,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 61.2,
+     "weight": 0.612,
+     "score": 89.1
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 19.5,
+     "adjusted": 19.9,
+     "lines": 950,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 75.9
+    }
+   ]
+  },
+  "complexity": {
+   "total": 739,
+   "mean": 15.7,
+   "files": [
+    {
+     "path": "scripts/run-evals.js",
+     "complexity": 201,
+     "lines": 606,
+     "bytes": 25143
+    },
+    {
+     "path": "hooks/simplify-ignore.sh",
+     "complexity": 83,
+     "lines": 344,
+     "bytes": 13987
+    },
+    {
+     "path": "scripts/lib/skill-lint.js",
+     "complexity": 45,
+     "lines": 316,
+     "bytes": 13397
+    },
+    {
+     "path": "scripts/validate-commands.js",
+     "complexity": 40,
+     "lines": 187,
+     "bytes": 7108
+    },
+    {
+     "path": "scripts/run-evals-test.js",
+     "complexity": 33,
+     "lines": 448,
+     "bytes": 16906
+    },
+    {
+     "path": "hooks/sdd-cache-pre.sh",
+     "complexity": 27,
+     "lines": 106,
+     "bytes": 4261
+    },
+    {
+     "path": "scripts/lib/skill-lint-test.js",
+     "complexity": 25,
+     "lines": 251,
+     "bytes": 9459
+    },
+    {
+     "path": "evals/fixtures/code-simplification/config-parser.js",
+     "complexity": 22,
+     "lines": 46,
+     "bytes": 1592
+    },
+    {
+     "path": "scripts/validate-reference-links.js",
+     "complexity": 21,
+     "lines": 148,
+     "bytes": 5635
+    },
+    {
+     "path": "hooks/sdd-cache-post.sh",
+     "complexity": 20,
+     "lines": 135,
+     "bytes": 4567
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 35,
+   "byCategory": [],
+   "largest": []
+  }
  }
 }

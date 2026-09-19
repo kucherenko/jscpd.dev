@@ -15,38 +15,52 @@
    "percentage": 12,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-19",
+   "rank": 4,
+   "stars": 5432,
+   "starsToday": 1306,
+   "headSha": "fa953dc6fcd868827b93164e3bea26198e691224",
+   "sources": 734,
+   "lines": 179245,
+   "clones": 1308,
+   "duplicatedLines": 21246,
+   "percentage": 11.85,
+   "healthScore": 29.5,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-09-18",
-  "generatedAt": "2026-09-18T05:27:16.951Z",
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T05:26:25.682Z",
   "name": "Tencent/BrowserSkill",
   "url": "https://github.com/Tencent/BrowserSkill",
   "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
   "language": "TypeScript",
-  "stars": 4467,
-  "starsToday": 1302,
+  "stars": 5432,
+  "starsToday": 1306,
   "defaultBranch": "main",
-  "headSha": "75e2c64abaf4b7cc75682d94b0c1fd5db0cbd5e5",
-  "durationMs": 845,
+  "headSha": "fa953dc6fcd868827b93164e3bea26198e691224",
+  "durationMs": 1440,
   "total": {
-   "sources": 723,
-   "lines": 175210,
-   "tokens": 1107575,
-   "clones": 1285,
-   "duplicatedLines": 21021,
-   "duplicatedTokens": 121306,
-   "percentage": 12,
-   "percentageTokens": 10.95
+   "sources": 734,
+   "lines": 179245,
+   "tokens": 1137392,
+   "clones": 1308,
+   "duplicatedLines": 21246,
+   "duplicatedTokens": 123311,
+   "percentage": 11.85,
+   "percentageTokens": 10.84
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 319,
-    "lines": 90101,
-    "clones": 743,
-    "duplicatedLines": 7577,
-    "percentage": 8.41
+    "sources": 330,
+    "lines": 94075,
+    "clones": 766,
+    "duplicatedLines": 7776,
+    "percentage": 8.27
    },
    {
     "format": "rust",
@@ -75,26 +89,26 @@
    {
     "format": "bash",
     "sources": 24,
-    "lines": 3339,
+    "lines": 3368,
     "clones": 5,
-    "duplicatedLines": 565,
-    "percentage": 16.92
+    "duplicatedLines": 578,
+    "percentage": 17.16
    },
    {
     "format": "yaml",
     "sources": 6,
-    "lines": 925,
+    "lines": 928,
     "clones": 5,
     "duplicatedLines": 59,
-    "percentage": 6.38
+    "percentage": 6.36
    },
    {
     "format": "markdown",
     "sources": 28,
-    "lines": 4008,
+    "lines": 4037,
     "clones": 2,
-    "duplicatedLines": 274,
-    "percentage": 6.84
+    "duplicatedLines": 287,
+    "percentage": 7.11
    },
    {
     "format": "javascript",
@@ -124,17 +138,17 @@
   "topClones": [
    {
     "format": "markdown",
-    "lines": 262,
-    "tokens": 2927,
+    "lines": 275,
+    "tokens": 3118,
     "firstFile": {
      "name": "crates/bsk-cli/skill/SKILL.md:markdown",
      "start": 10,
-     "end": 271
+     "end": 284
     },
     "secondFile": {
      "name": "skill/SKILL.md:markdown",
      "start": 10,
-     "end": 271
+     "end": 284
     }
    },
    {
@@ -272,6 +286,223 @@
      "end": 191
     }
    }
-  ]
+  ],
+  "health": {
+   "score": 29.5,
+   "grade": "E",
+   "size": {
+    "lines": 156487,
+    "files": 562,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 8.3,
+     "adjusted": 8.3,
+     "lines": 12963,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "rust",
+      "tsx",
+      "javascript",
+      "bash",
+      "powershell",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 51
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 27.9,
+     "adjusted": 27.5,
+     "lines": 29678,
+     "halfLife": 7.5,
+     "coverage": 68,
+     "weight": 0.68,
+     "score": 7.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 63.4,
+     "adjusted": 62.9,
+     "lines": 99268,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 41.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 25718,
+   "mean": 45.8,
+   "files": [
+    {
+     "path": "packages/vom/src/render.ts",
+     "complexity": 509,
+     "lines": 1392,
+     "bytes": 45615
+    },
+    {
+     "path": "apps/extension/src/tools/__tests__/observation.test.ts",
+     "complexity": 451,
+     "lines": 4552,
+     "bytes": 149509
+    },
+    {
+     "path": "apps/extension/src/tools/__tests__/interaction.test.ts",
+     "complexity": 403,
+     "lines": 1708,
+     "bytes": 63906
+    },
+    {
+     "path": "apps/extension/src/tools/vom/__tests__/capture-coordinator.test.ts",
+     "complexity": 390,
+     "lines": 1479,
+     "bytes": 58241
+    },
+    {
+     "path": "apps/extension/src/tools/interaction.ts",
+     "complexity": 357,
+     "lines": 1734,
+     "bytes": 60145
+    },
+    {
+     "path": "apps/extension/src/tools/__tests__/dispatcher.test.ts",
+     "complexity": 324,
+     "lines": 1365,
+     "bytes": 48613
+    },
+    {
+     "path": "apps/extension/src/content/record-capture.ts",
+     "complexity": 323,
+     "lines": 951,
+     "bytes": 32933
+    },
+    {
+     "path": "apps/extension/src/tools/record.ts",
+     "complexity": 301,
+     "lines": 1196,
+     "bytes": 39312
+    },
+    {
+     "path": "apps/extension/src/browser-driver/chromium-cdp.ts",
+     "complexity": 292,
+     "lines": 1283,
+     "bytes": 47809
+    },
+    {
+     "path": "crates/bsk-cli/src/daemon/ipc.rs",
+     "complexity": 290,
+     "lines": 2034,
+     "bytes": 77273
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 27.91,
+   "findings": 318,
+   "files": 416,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 115
+    },
+    {
+     "category": "unused-export",
+     "count": 168
+    },
+    {
+     "category": "unused-symbol",
+     "count": 34
+    },
+    {
+     "category": "unused-import",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/interaction.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1734
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/tabs.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1284
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/observation.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1243
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/record.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1196
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/navigation.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1116
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/dispatcher.ts",
+     "name": "",
+     "line": 1,
+     "lines": 990
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/content/record-capture.ts",
+     "name": "",
+     "line": 1,
+     "lines": 951
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/human-loop.ts",
+     "name": "",
+     "line": 1,
+     "lines": 819
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/content/HelpRequestOverlay.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 814
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/extension/src/tools/borrow-confirmation.ts",
+     "name": "",
+     "line": 1,
+     "lines": 665
+    }
+   ]
+  }
  }
 }

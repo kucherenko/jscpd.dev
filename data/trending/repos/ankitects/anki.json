@@ -15,27 +15,41 @@
    "percentage": 3.31,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-19",
+   "rank": 8,
+   "stars": 31242,
+   "starsToday": 174,
+   "headSha": "754ce3a25f608010c0249e074e5d7fe95bda035f",
+   "sources": 1686,
+   "lines": 243548,
+   "clones": 452,
+   "duplicatedLines": 8058,
+   "percentage": 3.31,
+   "healthScore": 55.3,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-09-17",
-  "generatedAt": "2026-09-17T05:28:32.205Z",
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T05:26:25.682Z",
   "name": "ankitects/anki",
   "url": "https://github.com/ankitects/anki",
   "description": "Anki is a smart spaced repetition flashcard program",
   "language": "Rust",
-  "stars": 30950,
-  "starsToday": 58,
+  "stars": 31242,
+  "starsToday": 174,
   "defaultBranch": "main",
-  "headSha": "6f7a3175d25e5992b438d5414f77dff0489c41dd",
-  "durationMs": 857,
+  "headSha": "754ce3a25f608010c0249e074e5d7fe95bda035f",
+  "durationMs": 1398,
   "total": {
-   "sources": 1683,
-   "lines": 243212,
-   "tokens": 1193891,
-   "clones": 451,
-   "duplicatedLines": 8050,
-   "duplicatedTokens": 32144,
+   "sources": 1686,
+   "lines": 243548,
+   "tokens": 1195659,
+   "clones": 452,
+   "duplicatedLines": 8058,
+   "duplicatedTokens": 32199,
    "percentage": 3.31,
    "percentageTokens": 2.69
   },
@@ -43,7 +57,7 @@
    {
     "format": "rust",
     "sources": 354,
-    "lines": 79792,
+    "lines": 79825,
     "clones": 195,
     "duplicatedLines": 1675,
     "percentage": 2.1
@@ -66,24 +80,24 @@
    },
    {
     "format": "python",
-    "sources": 184,
-    "lines": 53349,
-    "clones": 45,
-    "duplicatedLines": 638,
+    "sources": 187,
+    "lines": 53632,
+    "clones": 46,
+    "duplicatedLines": 646,
     "percentage": 1.2
    },
    {
     "format": "yaml",
     "sources": 12,
-    "lines": 2317,
+    "lines": 2331,
     "clones": 25,
     "duplicatedLines": 379,
-    "percentage": 16.36
+    "percentage": 16.26
    },
    {
     "format": "json",
     "sources": 10,
-    "lines": 5935,
+    "lines": 5936,
     "clones": 11,
     "duplicatedLines": 188,
     "percentage": 3.17
@@ -107,7 +121,7 @@
    {
     "format": "markdown",
     "sources": 31,
-    "lines": 2969,
+    "lines": 2972,
     "clones": 2,
     "duplicatedLines": 12,
     "percentage": 0.4
@@ -115,7 +129,7 @@
    {
     "format": "css",
     "sources": 12,
-    "lines": 1723,
+    "lines": 1722,
     "clones": 1,
     "duplicatedLines": 17,
     "percentage": 0.99
@@ -272,6 +286,228 @@
      "end": 87
     }
    }
-  ]
+  ],
+  "health": {
+   "score": 55.3,
+   "grade": "C",
+   "size": {
+    "lines": 183444,
+    "files": 1129,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.1,
+     "adjusted": 4.1,
+     "lines": 7325,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "python",
+      "typescript",
+      "svelte",
+      "bash",
+      "sql",
+      "c",
+      "javascript",
+      "perl",
+      "swift",
+      "ruby",
+      "latex"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 71.4
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 10.7,
+     "adjusted": 10.5,
+     "lines": 10525,
+     "halfLife": 7.5,
+     "coverage": 53.6,
+     "weight": 0.536,
+     "score": 37.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 46.5,
+     "adjusted": 46.3,
+     "lines": 85375,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 52.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 25524,
+   "mean": 22.6,
+   "files": [
+    {
+     "path": "qt/aqt/main.py",
+     "complexity": 376,
+     "lines": 1911,
+     "bytes": 66141
+    },
+    {
+     "path": "qt/aqt/addons.py",
+     "complexity": 335,
+     "lines": 1801,
+     "bytes": 60495
+    },
+    {
+     "path": "qt/aqt/editor_legacy.py",
+     "complexity": 327,
+     "lines": 1829,
+     "bytes": 63325
+    },
+    {
+     "path": "rslib/src/storage/card/mod.rs",
+     "complexity": 281,
+     "lines": 1062,
+     "bytes": 35463
+    },
+    {
+     "path": "qt/aqt/browser/sidebar/tree.py",
+     "complexity": 270,
+     "lines": 1293,
+     "bytes": 45650
+    },
+    {
+     "path": "rslib/src/search/sqlwriter.rs",
+     "complexity": 267,
+     "lines": 1526,
+     "bytes": 55960
+    },
+    {
+     "path": "rslib/src/search/parser.rs",
+     "complexity": 250,
+     "lines": 1343,
+     "bytes": 40631
+    },
+    {
+     "path": "qt/aqt/utils.py",
+     "complexity": 248,
+     "lines": 1392,
+     "bytes": 40284
+    },
+    {
+     "path": "qt/aqt/mediasrv.py",
+     "complexity": 239,
+     "lines": 1385,
+     "bytes": 43302
+    },
+    {
+     "path": "qt/aqt/reviewer.py",
+     "complexity": 230,
+     "lines": 1244,
+     "bytes": 43746
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 10.7,
+   "findings": 271,
+   "files": 772,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 154
+    },
+    {
+     "category": "unused-export",
+     "count": 58
+    },
+    {
+     "category": "unused-symbol",
+     "count": 26
+    },
+    {
+     "category": "unused-import",
+     "count": 33
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "ts/lib/editable/frame-handle.ts",
+     "name": "",
+     "line": 1,
+     "lines": 358
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/sveltelib/dynamic-slotting.ts",
+     "name": "",
+     "line": 1,
+     "lines": 313
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/components/Select.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 299
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/components/icons.ts",
+     "name": "",
+     "line": 1,
+     "lines": 296
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/components/ItemChooser.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 279
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/components/SpinBox.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 268
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/editable/frame-element.ts",
+     "name": "",
+     "line": 1,
+     "lines": 255
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/routes/card-info/Revlog.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 250
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/components/WithFloating.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 226
+    },
+    {
+     "category": "unused-file",
+     "path": "ts/lib/editable/mathjax-element.svelte.ts",
+     "name": "",
+     "line": 1,
+     "lines": 209
+    }
+   ]
+  }
  }
 }

@@ -29,43 +29,57 @@
    "percentage": 0.73,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-19",
+   "rank": 2,
+   "stars": 146390,
+   "starsToday": 444,
+   "headSha": "bf7d404e26a5fb6167d21b46c93a2bf6c22ab274",
+   "sources": 594,
+   "lines": 101392,
+   "clones": 57,
+   "duplicatedLines": 778,
+   "percentage": 0.77,
+   "healthScore": 72.6,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-18",
-  "generatedAt": "2026-09-18T05:27:16.951Z",
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T05:26:25.682Z",
   "name": "anthropics/claude-code",
   "url": "https://github.com/anthropics/claude-code",
   "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
   "language": "TypeScript",
-  "stars": 145943,
-  "starsToday": 538,
+  "stars": 146390,
+  "starsToday": 444,
   "defaultBranch": "main",
-  "headSha": "31a3b00bef145a0393d9dbf840a98674fec07712",
-  "durationMs": 756,
+  "headSha": "bf7d404e26a5fb6167d21b46c93a2bf6c22ab274",
+  "durationMs": 1163,
   "total": {
-   "sources": 566,
-   "lines": 97487,
-   "tokens": 511346,
-   "clones": 53,
-   "duplicatedLines": 708,
-   "duplicatedTokens": 4986,
-   "percentage": 0.73,
-   "percentageTokens": 0.98
+   "sources": 594,
+   "lines": 101392,
+   "tokens": 525494,
+   "clones": 57,
+   "duplicatedLines": 778,
+   "duplicatedTokens": 5348,
+   "percentage": 0.77,
+   "percentageTokens": 1.02
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 258,
-    "lines": 24124,
-    "clones": 21,
-    "duplicatedLines": 183,
-    "percentage": 0.76
+    "sources": 284,
+    "lines": 27721,
+    "clones": 25,
+    "duplicatedLines": 253,
+    "percentage": 0.91
    },
    {
     "format": "markdown",
-    "sources": 106,
-    "lines": 34436,
+    "sources": 107,
+    "lines": 34707,
     "clones": 13,
     "duplicatedLines": 238,
     "percentage": 0.69
@@ -112,8 +126,8 @@
    },
    {
     "format": "json",
-    "sources": 25,
-    "lines": 6026,
+    "sources": 26,
+    "lines": 6049,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -121,7 +135,7 @@
    {
     "format": "markup",
     "sources": 2,
-    "lines": 1219,
+    "lines": 1233,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -194,6 +208,21 @@
      "name": "plugins/hookify/hooks/userpromptsubmit.py",
      "start": 4,
      "end": 31
+    }
+   },
+   {
+    "format": "typescript",
+    "lines": 25,
+    "tokens": 142,
+    "firstFile": {
+     "name": "mods/diff/tests/register.test.ts",
+     "start": 534,
+     "end": 558
+    },
+    "secondFile": {
+     "name": "mods/diff/tests/register.test.ts",
+     "start": 595,
+     "end": 618
     }
    },
    {
@@ -270,22 +299,216 @@
      "start": 1904,
      "end": 1912
     }
-   },
-   {
-    "format": "markdown",
-    "lines": 19,
-    "tokens": 97,
-    "firstFile": {
-     "name": "plugins/agent-sdk-dev/agents/agent-sdk-verifier-py.md:markdown",
-     "start": 101,
-     "end": 119
-    },
-    "secondFile": {
-     "name": "plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md:markdown",
-     "start": 106,
-     "end": 124
-    }
    }
-  ]
+  ],
+  "health": {
+   "score": 72.6,
+   "grade": "B",
+   "size": {
+    "lines": 43165,
+    "files": 358,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.2,
+     "adjusted": 1.3,
+     "lines": 492,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "python",
+      "bash",
+      "hcl",
+      "tsx",
+      "powershell",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 90.1
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.9,
+     "adjusted": 1,
+     "lines": 367,
+     "halfLife": 7.5,
+     "coverage": 94.2,
+     "weight": 0.942,
+     "score": 91.1
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 55.6,
+     "adjusted": 54.1,
+     "lines": 23996,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 47.3
+    }
+   ]
+  },
+  "complexity": {
+   "total": 4883,
+   "mean": 13.6,
+   "files": [
+    {
+     "path": "feed.xml",
+     "complexity": 736,
+     "lines": 1161,
+     "bytes": 185881
+    },
+    {
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "complexity": 342,
+     "lines": 2192,
+     "bytes": 103394
+    },
+    {
+     "path": "mods/types/claude-code.d.ts",
+     "complexity": 302,
+     "lines": 12990,
+     "bytes": 499059
+    },
+    {
+     "path": "mods/diff/hooks/register.ts",
+     "complexity": 229,
+     "lines": 958,
+     "bytes": 23421
+    },
+    {
+     "path": "plugins/security-guidance/hooks/llm.py",
+     "complexity": 221,
+     "lines": 1696,
+     "bytes": 112010
+    },
+    {
+     "path": "plugins/security-guidance/hooks/gitutil.py",
+     "complexity": 139,
+     "lines": 722,
+     "bytes": 30039
+    },
+    {
+     "path": "mods/diff/tests/register.test.ts",
+     "complexity": 106,
+     "lines": 902,
+     "bytes": 25568
+    },
+    {
+     "path": "examples/gateway/aws/setup.sh",
+     "complexity": 89,
+     "lines": 964,
+     "bytes": 53781
+    },
+    {
+     "path": "mods/diff/tests/git/fetch-diff.test.ts",
+     "complexity": 89,
+     "lines": 545,
+     "bytes": 16574
+    },
+    {
+     "path": "plugins/security-guidance/hooks/diffstate.py",
+     "complexity": 81,
+     "lines": 438,
+     "bytes": 18669
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.9,
+   "findings": 70,
+   "files": 1016,
+   "byCategory": [
+    {
+     "category": "unused-export",
+     "count": 1
+    },
+    {
+     "category": "unused-import",
+     "count": 69
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_diff_pathspec",
+     "line": 99,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_find_git_index",
+     "line": 99,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_temp_index",
+     "line": 99,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "ANTHROPIC_API_KEY",
+     "line": 122,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "ANTHROPIC_AUTH_TOKEN",
+     "line": 122,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "CLAUDE_CODE_SYSTEM_PROMPT",
+     "line": 123,
+     "lines": 11
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "SECURITY_REVIEW_MODEL",
+     "line": 123,
+     "lines": 11
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_git_name_only",
+     "line": 101,
+     "lines": 10
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_last_call_claude_http_error",
+     "line": 124,
+     "lines": 10
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_git_status_porcelain",
+     "line": 102,
+     "lines": 9
+    }
+   ]
+  }
  }
 }

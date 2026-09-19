@@ -15,67 +15,89 @@
    "percentage": 4.18,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-19",
+   "rank": 6,
+   "stars": 4026,
+   "starsToday": 569,
+   "headSha": "757fd12e5dcae7f9303dbfbbf6321a6986694a8b",
+   "sources": 3789,
+   "lines": 761668,
+   "clones": 1730,
+   "duplicatedLines": 32325,
+   "percentage": 4.24,
+   "healthScore": 65.5,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-09-18",
-  "generatedAt": "2026-09-18T05:27:16.951Z",
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-19T05:26:25.682Z",
   "name": "TencentCloud/Octop",
   "url": "https://github.com/TencentCloud/Octop",
   "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
   "language": "Python",
-  "stars": 3599,
-  "starsToday": 367,
+  "stars": 4026,
+  "starsToday": 569,
   "defaultBranch": "main",
-  "headSha": "ae65fe4e26854d2eaf751cee89341ec5d71569f0",
-  "durationMs": 1608,
+  "headSha": "757fd12e5dcae7f9303dbfbbf6321a6986694a8b",
+  "durationMs": 3168,
   "total": {
-   "sources": 3707,
-   "lines": 749578,
-   "tokens": 3983798,
-   "clones": 1616,
-   "duplicatedLines": 31299,
-   "duplicatedTokens": 167531,
-   "percentage": 4.18,
-   "percentageTokens": 4.21
+   "sources": 3789,
+   "lines": 761668,
+   "tokens": 4065607,
+   "clones": 1730,
+   "duplicatedLines": 32325,
+   "duplicatedTokens": 179198,
+   "percentage": 4.24,
+   "percentageTokens": 4.41
   },
   "formats": [
    {
     "format": "python",
-    "sources": 1001,
-    "lines": 206869,
-    "clones": 725,
-    "duplicatedLines": 13285,
-    "percentage": 6.42
+    "sources": 1031,
+    "lines": 213260,
+    "clones": 766,
+    "duplicatedLines": 13717,
+    "percentage": 6.43
    },
    {
     "format": "tsx",
-    "sources": 378,
-    "lines": 105612,
-    "clones": 268,
-    "duplicatedLines": 3270,
-    "percentage": 3.1
+    "sources": 387,
+    "lines": 108196,
+    "clones": 275,
+    "duplicatedLines": 3364,
+    "percentage": 3.11
    },
    {
     "format": "less",
-    "sources": 115,
-    "lines": 37448,
-    "clones": 206,
-    "duplicatedLines": 3034,
-    "percentage": 8.1
+    "sources": 116,
+    "lines": 37924,
+    "clones": 204,
+    "duplicatedLines": 3025,
+    "percentage": 7.98
    },
    {
     "format": "typescript",
-    "sources": 444,
-    "lines": 56261,
-    "clones": 115,
-    "duplicatedLines": 2222,
-    "percentage": 3.95
+    "sources": 449,
+    "lines": 57392,
+    "clones": 117,
+    "duplicatedLines": 2237,
+    "percentage": 3.9
+   },
+   {
+    "format": "markup",
+    "sources": 70,
+    "lines": 5523,
+    "clones": 77,
+    "duplicatedLines": 558,
+    "percentage": 10.1
    },
    {
     "format": "markdown",
     "sources": 793,
-    "lines": 178858,
+    "lines": 178922,
     "clones": 58,
     "duplicatedLines": 1767,
     "percentage": 0.99
@@ -98,11 +120,11 @@
    },
    {
     "format": "sql",
-    "sources": 30,
-    "lines": 2815,
+    "sources": 32,
+    "lines": 2863,
     "clones": 31,
     "duplicatedLines": 559,
-    "percentage": 19.86
+    "percentage": 19.52
    },
    {
     "format": "css",
@@ -111,14 +133,6 @@
     "clones": 30,
     "duplicatedLines": 426,
     "percentage": 13.77
-   },
-   {
-    "format": "yaml",
-    "sources": 277,
-    "lines": 17393,
-    "clones": 20,
-    "duplicatedLines": 1036,
-    "percentage": 5.96
    }
   ],
   "topClones": [
@@ -272,6 +286,225 @@
      "end": 262
     }
    }
-  ]
+  ],
+  "health": {
+   "score": 65.5,
+   "grade": "C",
+   "size": {
+    "lines": 416570,
+    "files": 2095,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 5.1,
+     "adjusted": 5,
+     "lines": 18840,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "tsx",
+      "typescript",
+      "bash",
+      "javascript",
+      "go",
+      "sql",
+      "powershell",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 66.3
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 2,
+     "adjusted": 2,
+     "lines": 7166,
+     "halfLife": 7.5,
+     "coverage": 85.7,
+     "weight": 0.857,
+     "score": 83
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 46.2,
+     "adjusted": 46.1,
+     "lines": 192617,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 52.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 61248,
+   "mean": 29.2,
+   "files": [
+    {
+     "path": "src/octop/infra/agents/manager.py",
+     "complexity": 649,
+     "lines": 2962,
+     "bytes": 125415
+    },
+    {
+     "path": "dashboard/src/pages/KnowledgeBases/index.tsx",
+     "complexity": 636,
+     "lines": 3455,
+     "bytes": 124891
+    },
+    {
+     "path": "dashboard/src/pages/Agent/Connectors/index.tsx",
+     "complexity": 531,
+     "lines": 2340,
+     "bytes": 80929
+    },
+    {
+     "path": "dashboard/src/pages/Chat/hooks/chatStore.ts",
+     "complexity": 530,
+     "lines": 2253,
+     "bytes": 68730
+    },
+    {
+     "path": "src/octop/infra/agents/experts/library/clinical-learning-subscription/scripts/clinical_profile.py",
+     "complexity": 458,
+     "lines": 2608,
+     "bytes": 101485
+    },
+    {
+     "path": "src/octop/infra/skills/skills_hub.py",
+     "complexity": 412,
+     "lines": 1493,
+     "bytes": 46335
+    },
+    {
+     "path": "src/octop/infra/agents/experts/library/meituan-living-assistant/skills/meituan-deals/scripts/run.js",
+     "complexity": 344,
+     "lines": 1275,
+     "bytes": 47231
+    },
+    {
+     "path": "dashboard/src/pages/Agent/Channels/components/ChannelDrawer.tsx",
+     "complexity": 337,
+     "lines": 1890,
+     "bytes": 56915
+    },
+    {
+     "path": "dashboard/src/pages/Agent/Workspace/components/WorkspaceDrawer.tsx",
+     "complexity": 333,
+     "lines": 1556,
+     "bytes": 51089
+    },
+    {
+     "path": "dashboard/src/pages/Chat/hooks/useChat.ts",
+     "complexity": 322,
+     "lines": 1160,
+     "bytes": 36872
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 2.01,
+   "findings": 150,
+   "files": 1875,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 52
+    },
+    {
+     "category": "unused-export",
+     "count": 41
+    },
+    {
+     "category": "unused-symbol",
+     "count": 46
+    },
+    {
+     "category": "unused-import",
+     "count": 11
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/commands/channel.py",
+     "name": "",
+     "line": 1,
+     "lines": 571
+    },
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/support/offline_ops.py",
+     "name": "",
+     "line": 1,
+     "lines": 555
+    },
+    {
+     "category": "unused-file",
+     "path": "dashboard/src/components/BackendBuilder.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 432
+    },
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/commands/chats.py",
+     "name": "",
+     "line": 1,
+     "lines": 364
+    },
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/repl/render.py",
+     "name": "",
+     "line": 1,
+     "lines": 321
+    },
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/commands/models.py",
+     "name": "",
+     "line": 1,
+     "lines": 244
+    },
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/commands/agent.py",
+     "name": "",
+     "line": 1,
+     "lines": 237
+    },
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/commands/service.py",
+     "name": "",
+     "line": 1,
+     "lines": 214
+    },
+    {
+     "category": "unused-file",
+     "path": "src/octop/cli/commands/backup.py",
+     "name": "",
+     "line": 1,
+     "lines": 188
+    },
+    {
+     "category": "unused-file",
+     "path": "dashboard/src/components/MarkdownCopy/MarkdownCopy.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 173
+    }
+   ]
+  }
  }
 }
