@@ -80,7 +80,10 @@ export default defineNuxtConfig({
       "@nuxt/content/server": nuxtContentServer,
     },
     prerender: {
-      routes: ["/404", ...trendingRoutes],
+      // /health-corpus.json publishes the calibration corpus for the jscpd
+      // repo's rust/scripts/calibrate-health.mjs; see server/routes/
+      // health-corpus.json.ts.
+      routes: ["/404", "/health-corpus.json", ...trendingRoutes],
     },
   },
 

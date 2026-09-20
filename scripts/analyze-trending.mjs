@@ -185,6 +185,14 @@ async function analyzeRepo(entry, meta) {
 
 const candidates = await fetchTrending()
 console.log(`trending: ${candidates.length} candidates`)
+// Which jscpd measures today — recorded on the snapshot so the health
+// corpus can say which exclusion rules (markup, data, text) its values
+// carry. Read once here; both npx invocations below resolve the same
+// jscpd@5 within one run.
+const { stdout: versionOut } = await exec('npx', ['-y', 'jscpd@5', '--version'])
+// "jscpd 5.3.0" → "5.3.0": the corpus compares versions, not banner lines.
+const jscpdVersion = versionOut.trim().replace(/^jscpd\s+/, '')
+console.log(`jscpd: ${jscpdVersion}`)
 const repos = []
 for (const entry of candidates) {
   if (repos.length >= MAX_REPOS) break
@@ -207,7 +215,7 @@ if (repos.length < 3) {
   process.exit(1)
 }
 
-const file = await writeSnapshot(makeSnapshot({ generatedAt: new Date().toISOString(), repos }))
+const file = await writeSnapshot(makeSnapshot({ generatedAt: new Date().toISOString(), repos, jscpdVersion }))
 console.log(`wrote ${file} with ${repos.length} repos`)
 const index = await buildIndex()
 console.log(`rebuilt trending index: ${index.days} days, ${index.repos} repos`)
