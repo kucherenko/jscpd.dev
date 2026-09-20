@@ -3,7 +3,8 @@
  *
  * Daily snapshots in data/trending/YYYY-MM-DD.json are the source of truth.
  * Everything else (data/trending-history.json, data/trending/repos/**,
- * data/trending.json) is derived from them by build-trending-index.mjs.
+ * data/trending.json, data/health-corpus.json) is derived from them by
+ * build-trending-index.mjs.
  */
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
@@ -16,6 +17,13 @@ export const REPOS_DIR = join(DAYS_DIR, 'repos')
 export const LATEST_FILE = join(DATA_DIR, 'trending.json')
 export const HISTORY_FILE = join(DATA_DIR, 'trending-history.json')
 export const REPO_INDEX_FILE = join(DATA_DIR, 'trending-repos.json')
+export const HEALTH_CORPUS_FILE = join(DATA_DIR, 'health-corpus.json')
+
+// The calibration corpus the jscpd repo consumes (rust/scripts/
+// calibrate-health.mjs). Raw measured shares only — never scores — so it
+// stays valid across scoring-constant changes. 60 days of headroom over the
+// 7-day window the consumer uses.
+const HEALTH_CORPUS_RETENTION_DAYS = 60
 
 export const round2 = (n) => typeof n === 'number' ? Math.round(n * 100) / 100 : n
 const sum = (arr, pick) => arr.reduce((acc, x) => acc + (pick(x) || 0), 0)
@@ -23,6 +31,13 @@ const pct = (part, whole) => whole ? round2((part / whole) * 100) : 0
 
 /** UTC calendar day of an ISO timestamp — the key every snapshot is filed under. */
 export const dayOf = (iso) => iso.slice(0, 10)
+
+/** A UTC calendar day shifted by `days` (negative goes back). */
+const offsetDay = (date, days) => {
+  const d = new Date(`${date}T00:00:00Z`)
+  d.setUTCDate(d.getUTCDate() + days)
+  return d.toISOString().slice(0, 10)
+}
 
 /** Aggregate statistics for one day across all analyzed repos. */
 export function summarize(repos) {
@@ -89,11 +104,15 @@ export function summarize(repos) {
 }
 
 /** Build a snapshot document from a run's repos. */
-export function makeSnapshot({ generatedAt, repos, source = 'github-trending-daily' }) {
+export function makeSnapshot({ generatedAt, repos, jscpdVersion = null, source = 'github-trending-daily' }) {
   return {
     date: dayOf(generatedAt),
     generatedAt,
     source,
+    // The jscpd that measured this day — its exclusion rules (markup, data,
+    // text) are what the health shares mean. Read once per run in
+    // analyze-trending.mjs so both jscpd invocations are covered.
+    jscpdVersion,
     summary: summarize(repos),
     repos
   }
@@ -118,7 +137,8 @@ export async function writeSnapshot(snapshot) {
  * trending page, so it must stay a few hundred bytes per day), one file per
  * repository with its full latest analysis plus every appearance, a flat
  * repo list (name → latest analysis day) for the route list and sitemap,
- * and the latest-day copy at data/trending.json.
+ * the health calibration corpus, and the latest-day copy at
+ * data/trending.json.
  */
 export async function buildIndex() {
   const days = await readSnapshots()
@@ -167,6 +187,38 @@ export async function buildIndex() {
     .map(r => ({ name: r.name, date: r.latest.date }))
     .sort((a, b) => a.name.localeCompare(b.name))
   await writeFile(REPO_INDEX_FILE, JSON.stringify(repoIndex, null, 1) + '\n')
+
+  // The calibration corpus: every health-scored appearance of the trailing
+  // retention window, kept raw (windowing, dedup and medians are the
+  // consumer's job in rust/scripts/calibrate-health.mjs). Days without a
+  // single health-scored repo — before health scoring shipped — drop out.
+  const lastDay = days[days.length - 1].date
+  const corpus = {
+    updatedAt: days[days.length - 1].generatedAt,
+    days: days
+      .filter(d => d.date >= offsetDay(lastDay, -HEALTH_CORPUS_RETENTION_DAYS + 1))
+      .map(d => ({
+        date: d.date,
+        // Which jscpd measured the day — the health shares carry that
+        // version's exclusion rules (markup, data, text), so the consumer
+        // can tell whether a value is comparable to a given score.
+        // Absent on days recorded before this field existed.
+        jscpdVersion: d.jscpdVersion ?? null,
+        repos: d.repos
+          .filter(r => r.health)
+          .map(r => ({
+            name: r.name,
+            lines: r.health.size.lines,
+            dimensions: Object.fromEntries(
+              r.health.dimensions
+                .filter(x => typeof x.value === 'number')
+                .map(x => [x.id, x.value])
+            )
+          }))
+      }))
+      .filter(d => d.repos.length > 0)
+  }
+  await writeFile(HEALTH_CORPUS_FILE, JSON.stringify(corpus, null, 1) + '\n')
 
   await writeFile(LATEST_FILE, JSON.stringify(days[days.length - 1], null, 1) + '\n')
   return { days: days.length, repos: repos.size }
