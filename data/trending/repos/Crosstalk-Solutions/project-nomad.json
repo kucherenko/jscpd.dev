@@ -15,38 +15,52 @@
    "percentage": 1.81,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-22",
+   "rank": 9,
+   "stars": 37960,
+   "starsToday": 394,
+   "headSha": "85da928019c428faf43cf96785f16f7da9efb0df",
+   "sources": 472,
+   "lines": 77243,
+   "clones": 107,
+   "duplicatedLines": 1359,
+   "percentage": 1.76,
+   "healthScore": 25.1,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-09-15",
-  "generatedAt": "2026-09-15T05:28:35.758Z",
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T05:28:55.327Z",
   "name": "Crosstalk-Solutions/project-nomad",
   "url": "https://github.com/Crosstalk-Solutions/project-nomad",
   "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
   "language": "TypeScript",
-  "stars": 37007,
-  "starsToday": 40,
+  "stars": 37960,
+  "starsToday": 394,
   "defaultBranch": "main",
   "headSha": "85da928019c428faf43cf96785f16f7da9efb0df",
-  "durationMs": 531,
+  "durationMs": 855,
   "total": {
    "sources": 472,
    "lines": 77243,
    "tokens": 389344,
-   "clones": 108,
-   "duplicatedLines": 1395,
-   "duplicatedTokens": 8228,
-   "percentage": 1.81,
-   "percentageTokens": 2.11
+   "clones": 107,
+   "duplicatedLines": 1359,
+   "duplicatedTokens": 8105,
+   "percentage": 1.76,
+   "percentageTokens": 2.08
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 283,
     "lines": 44314,
-    "clones": 78,
-    "duplicatedLines": 921,
-    "percentage": 2.08
+    "clones": 77,
+    "duplicatedLines": 911,
+    "percentage": 2.06
    },
    {
     "format": "tsx",
@@ -69,8 +83,8 @@
     "sources": 23,
     "lines": 3261,
     "clones": 5,
-    "duplicatedLines": 127,
-    "percentage": 3.89
+    "duplicatedLines": 101,
+    "percentage": 3.1
    },
    {
     "format": "markdown",
@@ -228,21 +242,6 @@
     }
    },
    {
-    "format": "bash",
-    "lines": 43,
-    "tokens": 136,
-    "firstFile": {
-     "name": "install/uninstall_nomad.sh",
-     "start": 37,
-     "end": 79
-    },
-    "secondFile": {
-     "name": "install/update_nomad.sh",
-     "start": 28,
-     "end": 66
-    }
-   },
-   {
     "format": "typescript",
     "lines": 22,
     "tokens": 133,
@@ -271,7 +270,237 @@
      "start": 281,
      "end": 304
     }
+   },
+   {
+    "format": "bash",
+    "lines": 35,
+    "tokens": 118,
+    "firstFile": {
+     "name": "install/install_nomad.sh",
+     "start": 53,
+     "end": 87
+    },
+    "secondFile": {
+     "name": "install/update_nomad.sh",
+     "start": 32,
+     "end": 66
+    }
    }
-  ]
+  ],
+  "health": {
+   "score": 25.1,
+   "grade": "E",
+   "size": {
+    "lines": 69412,
+    "files": 427,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.7,
+     "adjusted": 1.8,
+     "lines": 1212,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "tsx",
+      "bash",
+      "python",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 86.4
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 37.8,
+     "adjusted": 36.8,
+     "lines": 25248,
+     "halfLife": 7.5,
+     "coverage": 96.1,
+     "weight": 0.961,
+     "score": 3.3
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 48.7,
+     "adjusted": 48,
+     "lines": 33832,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 51.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 9376,
+   "mean": 22,
+   "files": [
+    {
+     "path": "admin/inertia/pages/easy-setup/index.tsx",
+     "complexity": 297,
+     "lines": 1495,
+     "bytes": 60819
+    },
+    {
+     "path": "admin/app/services/docker_service.ts",
+     "complexity": 293,
+     "lines": 2283,
+     "bytes": 95710
+    },
+    {
+     "path": "admin/inertia/pages/supply-depot.tsx",
+     "complexity": 277,
+     "lines": 1167,
+     "bytes": 48446
+    },
+    {
+     "path": "admin/app/services/rag_service.ts",
+     "complexity": 235,
+     "lines": 2174,
+     "bytes": 88250
+    },
+    {
+     "path": "admin/app/services/system_service.ts",
+     "complexity": 226,
+     "lines": 1129,
+     "bytes": 44151
+    },
+    {
+     "path": "admin/app/services/benchmark_service.ts",
+     "complexity": 225,
+     "lines": 1813,
+     "bytes": 76241
+    },
+    {
+     "path": "admin/inertia/pages/drug-reference/index.tsx",
+     "complexity": 222,
+     "lines": 986,
+     "bytes": 43192
+    },
+    {
+     "path": "admin/inertia/components/chat/KnowledgeBaseModal.tsx",
+     "complexity": 211,
+     "lines": 1098,
+     "bytes": 48499
+    },
+    {
+     "path": "admin/app/services/ollama_service.ts",
+     "complexity": 184,
+     "lines": 1037,
+     "bytes": 41876
+    },
+    {
+     "path": "admin/app/services/zim_service.ts",
+     "complexity": 155,
+     "lines": 1044,
+     "bytes": 39802
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 37.85,
+   "findings": 197,
+   "files": 426,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 96
+    },
+    {
+     "category": "unused-export",
+     "count": 91
+    },
+    {
+     "category": "unused-symbol",
+     "count": 4
+    },
+    {
+     "category": "unused-import",
+     "count": 6
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/docker_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 2283
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/rag_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 2174
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/benchmark_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1813
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/system_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1129
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/zim_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1044
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/ollama_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1037
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/map_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 987
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/jobs/ingest_drug_data_job.ts",
+     "name": "",
+     "line": 1,
+     "lines": 837
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/drug_reference_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 830
+    },
+    {
+     "category": "unused-file",
+     "path": "admin/app/services/content_auto_update_service.ts",
+     "name": "",
+     "line": 1,
+     "lines": 599
+    }
+   ]
+  }
  }
 }
