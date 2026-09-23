@@ -305,6 +305,26 @@ async function copyAddress() {
         </div>
       </div>
 
+      <section class="supported-by">
+        <h2 class="supported-by-title">Supported by</h2>
+        <a
+          href="https://jb.gg/OpenSource"
+          target="_blank"
+          rel="noopener"
+          class="supported-by-link"
+          aria-label="JetBrains — Open Source support programme"
+        >
+          <UColorModeImage
+            light="/jetbrains.svg"
+            dark="/jetbrains-dark.svg"
+            alt="JetBrains logo."
+            class="supported-by-logo"
+            width="298"
+            height="64"
+          />
+        </a>
+      </section>
+
       <p class="support-contact">
         Interested in other forms of support — company sponsorship, invoicing, or something custom?
         <a href="mailto:kucherenko.andrey@gmail.com?subject=Supporting%20jscpd">Get in touch</a>.
@@ -615,6 +635,38 @@ async function copyAddress() {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.supported-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1.75rem 0 0.5rem;
+}
+
+.supported-by-title {
+  margin: 0;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.supported-by-link {
+  display: inline-flex;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.supported-by-link:hover {
+  opacity: 1;
+}
+
+.supported-by-logo {
+  height: 2.25rem;
+  width: auto;
 }
 
 .support-contact {
