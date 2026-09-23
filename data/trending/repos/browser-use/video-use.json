@@ -29,29 +29,43 @@
    "percentage": 1.98,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-23",
+   "rank": 7,
+   "stars": 26018,
+   "starsToday": 191,
+   "headSha": "9575612f066aa517354790a645fd90f9f95a743b",
+   "sources": 66,
+   "lines": 11475,
+   "clones": 12,
+   "duplicatedLines": 162,
+   "percentage": 1.41,
+   "healthScore": 78.5,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-02",
-  "generatedAt": "2026-09-02T05:31:33.771Z",
+  "date": "2026-09-23",
+  "generatedAt": "2026-09-23T05:28:39.166Z",
   "name": "browser-use/video-use",
   "url": "https://github.com/browser-use/video-use",
   "description": "Edit videos with coding agents",
   "language": "Python",
-  "stars": 23123,
-  "starsToday": 472,
+  "stars": 26018,
+  "starsToday": 191,
   "defaultBranch": "main",
   "headSha": "9575612f066aa517354790a645fd90f9f95a743b",
-  "durationMs": 728,
+  "durationMs": 945,
   "total": {
    "sources": 66,
    "lines": 11475,
-   "tokens": 77306,
-   "clones": 16,
-   "duplicatedLines": 227,
-   "duplicatedTokens": 5305,
-   "percentage": 1.98,
-   "percentageTokens": 6.86
+   "tokens": 64463,
+   "clones": 12,
+   "duplicatedLines": 162,
+   "duplicatedTokens": 2745,
+   "percentage": 1.41,
+   "percentageTokens": 4.26
   },
   "formats": [
    {
@@ -63,20 +77,20 @@
     "percentage": 29.01
    },
    {
-    "format": "markdown",
-    "sources": 19,
-    "lines": 3638,
-    "clones": 4,
-    "duplicatedLines": 65,
-    "percentage": 1.79
-   },
-   {
     "format": "python",
     "sources": 23,
     "lines": 5159,
     "clones": 2,
     "duplicatedLines": 21,
     "percentage": 0.41
+   },
+   {
+    "format": "markdown",
+    "sources": 19,
+    "lines": 3638,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
    },
    {
     "format": "bash",
@@ -129,21 +143,6 @@
   ],
   "topClones": [
    {
-    "format": "markdown",
-    "lines": 35,
-    "tokens": 1534,
-    "firstFile": {
-     "name": "SKILL.md:markdown",
-     "start": 117,
-     "end": 151
-    },
-    "secondFile": {
-     "name": "SKILL.md:markdown",
-     "start": 127,
-     "end": 162
-    }
-   },
-   {
     "format": "markup",
     "lines": 56,
     "tokens": 993,
@@ -159,21 +158,6 @@
     }
    },
    {
-    "format": "markdown",
-    "lines": 16,
-    "tokens": 608,
-    "firstFile": {
-     "name": "SKILL.md:markdown",
-     "start": 117,
-     "end": 132
-    },
-    "secondFile": {
-     "name": "SKILL.md:markdown",
-     "start": 270,
-     "end": 289
-    }
-   },
-   {
     "format": "markup",
     "lines": 15,
     "tokens": 249,
@@ -186,21 +170,6 @@
      "name": "static/timeline-view.svg",
      "start": 117,
      "end": 131
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 10,
-    "tokens": 246,
-    "firstFile": {
-     "name": "SKILL.md:markdown",
-     "start": 116,
-     "end": 125
-    },
-    "secondFile": {
-     "name": "SKILL.md:markdown",
-     "start": 293,
-     "end": 302
     }
    },
    {
@@ -277,7 +246,177 @@
      "start": 181,
      "end": 191
     }
+   },
+   {
+    "format": "markup",
+    "lines": 9,
+    "tokens": 137,
+    "firstFile": {
+     "name": "poster.html",
+     "start": 212,
+     "end": 220
+    },
+    "secondFile": {
+     "name": "static/timeline-view.svg",
+     "start": 149,
+     "end": 157
+    }
+   },
+   {
+    "format": "markup",
+    "lines": 6,
+    "tokens": 96,
+    "firstFile": {
+     "name": "poster.html",
+     "start": 234,
+     "end": 239
+    },
+    "secondFile": {
+     "name": "static/timeline-view.svg",
+     "start": 171,
+     "end": 176
+    }
+   },
+   {
+    "format": "python",
+    "lines": 13,
+    "tokens": 64,
+    "firstFile": {
+     "name": "tests/test_render_fps.py",
+     "start": 8,
+     "end": 20
+    },
+    "secondFile": {
+     "name": "tests/test_render_orientation.py",
+     "start": 4,
+     "end": 16
+    }
    }
-  ]
+  ],
+  "health": {
+   "score": 78.5,
+   "grade": "B",
+   "size": {
+    "lines": 3192,
+    "files": 19,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0.7,
+     "adjusted": 1.8,
+     "lines": 21,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 86.7
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 1.4,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 72.6,
+     "weight": 0.726,
+     "score": 87.6
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 36.4,
+     "adjusted": 30.5,
+     "lines": 1163,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 65.6
+    }
+   ]
+  },
+  "complexity": {
+   "total": 448,
+   "mean": 23.6,
+   "files": [
+    {
+     "path": "helpers/render.py",
+     "complexity": 113,
+     "lines": 771,
+     "bytes": 28139
+    },
+    {
+     "path": "helpers/timeline_view.py",
+     "complexity": 62,
+     "lines": 392,
+     "bytes": 13748
+    },
+    {
+     "path": "helpers/grade.py",
+     "complexity": 49,
+     "lines": 375,
+     "bytes": 13244
+    },
+    {
+     "path": "helpers/pack_transcripts.py",
+     "complexity": 41,
+     "lines": 206,
+     "bytes": 7207
+    },
+    {
+     "path": "helpers/transcribe.py",
+     "complexity": 40,
+     "lines": 241,
+     "bytes": 8027
+    },
+    {
+     "path": "tests/test_render_fps.py",
+     "complexity": 20,
+     "lines": 143,
+     "bytes": 5347
+    },
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": "helpers/transcribe_batch.py",
+     "complexity": 19,
+     "lines": 126,
+     "bytes": 3970
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 8,
+   "byCategory": [],
+   "largest": []
+  }
  }
 }
