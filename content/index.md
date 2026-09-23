@@ -157,7 +157,7 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
   #description
   :copy-command{cmd="jscpd . --dead-code"}
 
-  Unused files, exports and imports in JavaScript, TypeScript and Python, each with a confidence score. `--complexity` ranks the most complex files without running clone detection.
+  Unused files, exports and imports in JavaScript, TypeScript and Python — and in Rust, read from the compiler's own diagnostics — each with a confidence score. `--complexity` ranks the most complex files without running clone detection.
 
   <a href="/guides/health" class="feature-card-link">
     Health score and dead code
