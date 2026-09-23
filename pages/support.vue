@@ -328,38 +328,7 @@ async function copyAddress() {
 
       <section class="supported-by">
         <h2 class="supported-by-title">Supported by</h2>
-        <div class="supported-by-logos">
-          <a
-            href="https://jb.gg/OpenSource"
-            target="_blank"
-            rel="noopener"
-            class="supported-by-link"
-            aria-label="JetBrains — Open Source support programme"
-          >
-            <UColorModeImage
-              light="/jetbrains.svg"
-              dark="/jetbrains-dark.svg"
-              alt="JetBrains logo."
-              width="298"
-              height="64"
-            />
-          </a>
-          <a
-            href="https://claude.com/contact-sales/claude-for-oss"
-            target="_blank"
-            rel="noopener"
-            class="supported-by-link supported-by-link-claude"
-            aria-label="Claude for Open Source programme"
-          >
-            <UColorModeImage
-              light="/claude.svg"
-              dark="/claude-dark.svg"
-              alt="Claude logo."
-              width="512"
-              height="110"
-            />
-          </a>
-        </div>
+        <SupportedBy />
         <p class="supported-by-note">
           JetBrains and Anthropic give jscpd their tools through their open source
           programmes — <a href="https://jb.gg/OpenSource" target="_blank" rel="noopener">JetBrains for Open Source</a>
@@ -773,37 +742,6 @@ async function copyAddress() {
   align-items: center;
   gap: 0.875rem;
   padding: 1.75rem 0 0.5rem;
-}
-
-.supported-by-logos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.25rem 2.5rem;
-}
-
-.supported-by-link {
-  display: inline-flex;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
-}
-
-.supported-by-link:hover {
-  opacity: 1;
-}
-
-/* UColorModeImage renders a light/dark pair, so the scoped attribute never
-   reaches the <img> — reach through to it */
-.supported-by-link :deep(img) {
-  height: 2.25rem;
-  width: auto;
-}
-
-/* the Claude wordmark has no square mark, so it needs a touch less height
-   to sit optically level with the JetBrains logo */
-.supported-by-link-claude :deep(img) {
-  height: 1.75rem;
 }
 
 .support-contact {

@@ -688,3 +688,14 @@ jscpd is built by its contributors. Bug reports, formats, reporters, docs — ev
   <img src="https://contrib.rocks/image?repo=kucherenko/jscpd" alt="Avatars of the people who have contributed to jscpd on GitHub" loading="lazy" width="890" height="300" />
 </a>
 ::
+
+::u-page-section
+#title
+Supported by
+
+#description
+JetBrains and Anthropic give jscpd their tools through their open source programmes, and both are open to other maintainers.
+
+#default
+<SupportedBy />
+::
