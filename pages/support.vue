@@ -1,5 +1,10 @@
 <script setup lang="ts">
+// Backers come from Open Collective; refresh with `node scripts/fetch-sponsors.mjs`
+import sponsorData from '~/data/sponsors.json'
+
 definePageMeta({ layout: 'default' })
+
+const sponsors = sponsorData.sponsors
 
 const title = 'Support jscpd'
 const description = 'jscpd has been free and open source since 2013. If it saves your team time, here is how to support its development.'
@@ -305,24 +310,62 @@ async function copyAddress() {
         </div>
       </div>
 
+      <section class="backers">
+        <h2 class="backers-title">Backers on Open Collective</h2>
+        <ul class="backers-list">
+          <li v-for="s in sponsors" :key="s.profile">
+            <a :href="s.profile" target="_blank" rel="noopener" class="backer" :title="s.name">
+              <img v-if="s.avatar" :src="s.avatar" :alt="`${s.name} avatar`" class="backer-avatar" width="40" height="40">
+              <span v-else class="backer-avatar backer-avatar-fallback">{{ s.name.charAt(0) }}</span>
+              <span class="backer-name">{{ s.name }}</span>
+            </a>
+          </li>
+        </ul>
+        <p class="backers-note">
+          Thank you — every one of you. <a href="https://opencollective.com/jscpd" target="_blank" rel="noopener">Join them</a>.
+        </p>
+      </section>
+
       <section class="supported-by">
         <h2 class="supported-by-title">Supported by</h2>
-        <a
-          href="https://jb.gg/OpenSource"
-          target="_blank"
-          rel="noopener"
-          class="supported-by-link"
-          aria-label="JetBrains — Open Source support programme"
-        >
-          <UColorModeImage
-            light="/jetbrains.svg"
-            dark="/jetbrains-dark.svg"
-            alt="JetBrains logo."
-            class="supported-by-logo"
-            width="298"
-            height="64"
-          />
-        </a>
+        <div class="supported-by-logos">
+          <a
+            href="https://jb.gg/OpenSource"
+            target="_blank"
+            rel="noopener"
+            class="supported-by-link"
+            aria-label="JetBrains — Open Source support programme"
+          >
+            <UColorModeImage
+              light="/jetbrains.svg"
+              dark="/jetbrains-dark.svg"
+              alt="JetBrains logo."
+              width="298"
+              height="64"
+            />
+          </a>
+          <a
+            href="https://claude.com/contact-sales/claude-for-oss"
+            target="_blank"
+            rel="noopener"
+            class="supported-by-link supported-by-link-claude"
+            aria-label="Claude for Open Source programme"
+          >
+            <UColorModeImage
+              light="/claude.svg"
+              dark="/claude-dark.svg"
+              alt="Claude logo."
+              width="512"
+              height="110"
+            />
+          </a>
+        </div>
+        <p class="supported-by-note">
+          JetBrains and Anthropic give jscpd their tools through their open source
+          programmes — <a href="https://jb.gg/OpenSource" target="_blank" rel="noopener">JetBrains for Open Source</a>
+          and <a href="https://claude.com/contact-sales/claude-for-oss" target="_blank" rel="noopener">Claude for Open Source</a>.
+          Both are open to other maintainers too.
+        </p>
       </section>
 
       <p class="support-contact">
@@ -637,6 +680,93 @@ async function copyAddress() {
   gap: 0.5rem;
 }
 
+.backers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1.75rem 0 0;
+}
+
+.backers-title,
+.backers-title,
+.supported-by-title {
+  margin: 0;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.backers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.backer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3125rem 0.75rem 0.3125rem 0.3125rem;
+  border: 1px solid var(--ui-border, rgba(100, 116, 139, 0.25));
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--ui-text-highlighted, inherit);
+  transition: all 0.2s ease;
+}
+
+.backer:hover {
+  border-color: rgba(0, 123, 255, 0.4);
+  color: var(--jscpd-blue, #007bff);
+}
+
+.backer-avatar {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  background: var(--ui-bg-muted, rgba(100, 116, 139, 0.12));
+  flex-shrink: 0;
+}
+
+.backer-avatar-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.backers-note,
+.supported-by-note {
+  margin: 0;
+  max-width: 34rem;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.backers-note a,
+.supported-by-note a {
+  color: var(--jscpd-blue, #007bff);
+  text-decoration: none;
+}
+
+.backers-note a:hover,
+.supported-by-note a:hover {
+  text-decoration: underline;
+}
+
 .supported-by {
   display: flex;
   flex-direction: column;
@@ -645,13 +775,12 @@ async function copyAddress() {
   padding: 1.75rem 0 0.5rem;
 }
 
-.supported-by-title {
-  margin: 0;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--ui-text-muted, #64748b);
+.supported-by-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem 2.5rem;
 }
 
 .supported-by-link {
@@ -664,9 +793,17 @@ async function copyAddress() {
   opacity: 1;
 }
 
-.supported-by-logo {
+/* UColorModeImage renders a light/dark pair, so the scoped attribute never
+   reaches the <img> — reach through to it */
+.supported-by-link :deep(img) {
   height: 2.25rem;
   width: auto;
+}
+
+/* the Claude wordmark has no square mark, so it needs a touch less height
+   to sit optically level with the JetBrains logo */
+.supported-by-link-claude :deep(img) {
+  height: 1.75rem;
 }
 
 .support-contact {
