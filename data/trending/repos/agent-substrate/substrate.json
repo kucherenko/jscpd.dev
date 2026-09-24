@@ -15,107 +15,121 @@
    "percentage": 8.47,
    "healthScore": 49.3,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-09-24",
+   "rank": 6,
+   "stars": 3570,
+   "starsToday": 558,
+   "headSha": "31a5e0ba29a525b3587882132fa13bd211653152",
+   "sources": 1189,
+   "lines": 273017,
+   "clones": 1852,
+   "duplicatedLines": 26146,
+   "percentage": 9.58,
+   "healthScore": 48,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-09-23",
-  "generatedAt": "2026-09-23T05:28:39.166Z",
+  "date": "2026-09-24",
+  "generatedAt": "2026-09-24T05:29:51.800Z",
   "name": "agent-substrate/substrate",
   "url": "https://github.com/agent-substrate/substrate",
   "description": "Agent Substrate: the core system",
   "language": "Go",
-  "stars": 3083,
-  "starsToday": 245,
+  "stars": 3570,
+  "starsToday": 558,
   "defaultBranch": "main",
-  "headSha": "d277088bc1d081ef716d81dd7986d05d0a36ad3a",
-  "durationMs": 1790,
+  "headSha": "31a5e0ba29a525b3587882132fa13bd211653152",
+  "durationMs": 1645,
   "total": {
-   "sources": 1173,
-   "lines": 287045,
-   "tokens": 1590576,
-   "clones": 1848,
-   "duplicatedLines": 24314,
-   "duplicatedTokens": 184247,
-   "percentage": 8.47,
-   "percentageTokens": 11.58
+   "sources": 1189,
+   "lines": 273017,
+   "tokens": 1605210,
+   "clones": 1852,
+   "duplicatedLines": 26146,
+   "duplicatedTokens": 186926,
+   "percentage": 9.58,
+   "percentageTokens": 11.64
   },
   "formats": [
    {
     "format": "go",
-    "sources": 823,
-    "lines": 218276,
-    "clones": 1668,
-    "duplicatedLines": 17436,
-    "percentage": 7.99
+    "sources": 841,
+    "lines": 220563,
+    "clones": 1716,
+    "duplicatedLines": 19681,
+    "percentage": 8.92
    },
    {
     "format": "yaml",
     "sources": 67,
-    "lines": 14816,
-    "clones": 68,
-    "duplicatedLines": 1292,
-    "percentage": 8.72
-   },
-   {
-    "format": "python",
-    "sources": 47,
-    "lines": 8500,
-    "clones": 54,
-    "duplicatedLines": 818,
-    "percentage": 9.62
+    "lines": 12107,
+    "clones": 67,
+    "duplicatedLines": 1326,
+    "percentage": 10.95
    },
    {
     "format": "txt",
     "sources": 33,
-    "lines": 4241,
+    "lines": 4239,
     "clones": 30,
-    "duplicatedLines": 3899,
-    "percentage": 91.94
+    "duplicatedLines": 3929,
+    "percentage": 92.69
    },
    {
     "format": "markup",
     "sources": 4,
     "lines": 2395,
     "clones": 12,
-    "duplicatedLines": 654,
-    "percentage": 27.31
+    "duplicatedLines": 666,
+    "percentage": 27.81
+   },
+   {
+    "format": "python",
+    "sources": 43,
+    "lines": 5787,
+    "clones": 11,
+    "duplicatedLines": 313,
+    "percentage": 5.41
    },
    {
     "format": "markdown",
     "sources": 79,
-    "lines": 15876,
+    "lines": 15884,
     "clones": 10,
-    "duplicatedLines": 111,
-    "percentage": 0.7
+    "duplicatedLines": 121,
+    "percentage": 0.76
    },
    {
     "format": "bash",
-    "sources": 83,
-    "lines": 11405,
+    "sources": 85,
+    "lines": 6512,
     "clones": 4,
-    "duplicatedLines": 64,
-    "percentage": 0.56
+    "duplicatedLines": 68,
+    "percentage": 1.04
    },
    {
     "format": "json",
     "sources": 7,
-    "lines": 1730,
+    "lines": 1347,
     "clones": 2,
-    "duplicatedLines": 40,
-    "percentage": 2.31
+    "duplicatedLines": 42,
+    "percentage": 3.12
    },
    {
-    "format": "text",
-    "sources": 15,
-    "lines": 3934,
+    "format": "protobuf",
+    "sources": 7,
+    "lines": 3450,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "protobuf",
-    "sources": 7,
-    "lines": 3838,
+    "format": "text",
+    "sources": 15,
+    "lines": 292,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -274,25 +288,25 @@
    }
   ],
   "health": {
-   "score": 49.3,
+   "score": 48,
    "grade": "D",
    "size": {
-    "lines": 230993,
-    "files": 924,
+    "lines": 232284,
+    "files": 940,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 7.9,
-     "adjusted": 7.9,
-     "lines": 18303,
+     "value": 8.6,
+     "adjusted": 8.6,
+     "lines": 20048,
      "halfLife": 8.5,
      "formats": [
       "go",
-      "python",
       "bash",
+      "python",
       "perl",
       "sql",
       "c"
@@ -303,118 +317,107 @@
       "data"
      ],
      "weight": 1,
-     "score": 52.6
+     "score": 49.6
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 55.8,
-     "adjusted": 55.5,
-     "lines": 128976,
+     "value": 55.6,
+     "adjusted": 55.3,
+     "lines": 129100,
      "halfLife": 50,
      "weight": 1,
-     "score": 46.3
+     "score": 46.5
     }
    ],
    "skipped": [
     {
      "id": "dead-code",
-     "reason": "JavaScript, TypeScript and Python are under 5% of the code"
+     "reason": "the languages dead code reads are under 5% of the code"
     }
    ]
   },
   "complexity": {
-   "total": 34865,
-   "mean": 37.7,
+   "total": 35545,
+   "mean": 37.8,
    "files": [
     {
      "path": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
-     "complexity": 2129,
-     "lines": 7675,
-     "bytes": 255930
+     "complexity": 2220,
+     "lines": 8008,
+     "bytes": 266647
     },
     {
      "path": "pkg/proto/ateapipb/ateapi.pb.go",
-     "complexity": 1181,
-     "lines": 7757,
-     "bytes": 254935
+     "complexity": 1193,
+     "lines": 7848,
+     "bytes": 258154
     },
     {
      "path": "cmd/ateapi/internal/store/storecontract/contract.go",
-     "complexity": 685,
-     "lines": 3059,
-     "bytes": 112269
+     "complexity": 764,
+     "lines": 3363,
+     "bytes": 126383
     },
     {
      "path": "cmd/ateapi/internal/controlapi/functionaltest/actor_test.go",
-     "complexity": 559,
-     "lines": 3787,
-     "bytes": 153482
+     "complexity": 588,
+     "lines": 3933,
+     "bytes": 160772
     },
     {
      "path": "internal/proto/ateletpb/atelet.pb.go",
      "complexity": 533,
      "lines": 3052,
-     "bytes": 99531
+     "bytes": 99506
     },
     {
      "path": "internal/proto/ateompb/ateom.pb.go",
      "complexity": 333,
      "lines": 2019,
-     "bytes": 70605
+     "bytes": 70572
     },
     {
      "path": "cmd/ateapi/internal/controlapi/validation_test.go",
-     "complexity": 325,
-     "lines": 1628,
-     "bytes": 63447
+     "complexity": 331,
+     "lines": 1670,
+     "bytes": 65089
     },
     {
      "path": "cmd/atelet/main.go",
-     "complexity": 322,
-     "lines": 2001,
-     "bytes": 83395
-    },
-    {
-     "path": "cmd/atelet/main_test.go",
-     "complexity": 308,
-     "lines": 1642,
-     "bytes": 62438
+     "complexity": 319,
+     "lines": 1980,
+     "bytes": 79704
     },
     {
      "path": "pkg/proto/ateapipb/ateapi_grpc.pb.go",
-     "complexity": 298,
-     "lines": 1661,
-     "bytes": 70263
+     "complexity": 306,
+     "lines": 1703,
+     "bytes": 72248
+    },
+    {
+     "path": "cmd/atelet/main_test.go",
+     "complexity": 290,
+     "lines": 1551,
+     "bytes": 58531
     }
    ]
   },
   "deadCode": {
-   "percentage": 18.16,
-   "findings": 28,
-   "files": 46,
+   "percentage": 17.64,
+   "findings": 22,
+   "files": 42,
    "byCategory": [
     {
      "category": "unused-file",
-     "count": 16
-    },
-    {
-     "category": "unused-symbol",
-     "count": 1
+     "count": 14
     },
     {
      "category": "unused-import",
-     "count": 11
+     "count": 8
     }
    ],
    "largest": [
-    {
-     "category": "unused-file",
-     "path": "benchmarking/locust/common/glutton_pb2_grpc.py",
-     "name": "",
-     "line": 1,
-     "lines": 391
-    },
     {
      "category": "unused-file",
      "path": "benchmarking/automation/testtypes/nighthawk_ingress.py",
@@ -445,13 +448,6 @@
     },
     {
      "category": "unused-file",
-     "path": "benchmarking/locust/common/glutton_pb2.py",
-     "name": "",
-     "line": 1,
-     "lines": 85
-    },
-    {
-     "category": "unused-file",
      "path": "benchmarking/locust/common/wait_time.py",
      "name": "",
      "line": 1,
@@ -477,6 +473,20 @@
      "name": "",
      "line": 1,
      "lines": 46
+    },
+    {
+     "category": "unused-file",
+     "path": "benchmarking/locust/common/durdir_config.py",
+     "name": "",
+     "line": 1,
+     "lines": 43
+    },
+    {
+     "category": "unused-file",
+     "path": "benchmarking/locust/shapes/burst_shape.py",
+     "name": "",
+     "line": 1,
+     "lines": 40
     }
    ]
   }
