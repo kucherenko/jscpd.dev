@@ -15,46 +15,60 @@
    "percentage": 7.13,
    "healthScore": 54.5,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-09-25",
+   "rank": 8,
+   "stars": 8321,
+   "starsToday": 455,
+   "headSha": "7ae759d3ad43916d373cf0f3251ac7f57e95339c",
+   "sources": 2448,
+   "lines": 546445,
+   "clones": 3117,
+   "duplicatedLines": 38986,
+   "percentage": 7.13,
+   "healthScore": 53.9,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-09-24",
-  "generatedAt": "2026-09-24T05:29:51.800Z",
+  "date": "2026-09-25",
+  "generatedAt": "2026-09-25T05:28:58.613Z",
   "name": "strands-agents/harness-sdk",
   "url": "https://github.com/strands-agents/harness-sdk",
   "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
   "language": "Python",
-  "stars": 7943,
-  "starsToday": 115,
+  "stars": 8321,
+  "starsToday": 455,
   "defaultBranch": "main",
-  "headSha": "43b15b723e7829c23ffc9d47897d637eac2f88e7",
-  "durationMs": 2771,
+  "headSha": "7ae759d3ad43916d373cf0f3251ac7f57e95339c",
+  "durationMs": 1787,
   "total": {
    "sources": 2448,
-   "lines": 546538,
-   "tokens": 3256092,
+   "lines": 546445,
+   "tokens": 3255345,
    "clones": 3117,
-   "duplicatedLines": 38980,
-   "duplicatedTokens": 230677,
+   "duplicatedLines": 38986,
+   "duplicatedTokens": 230704,
    "percentage": 7.13,
-   "percentageTokens": 7.08
+   "percentageTokens": 7.09
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 965,
-    "lines": 233030,
+    "sources": 962,
+    "lines": 232681,
     "clones": 1610,
-    "duplicatedLines": 17891,
-    "percentage": 7.68
+    "duplicatedLines": 17897,
+    "percentage": 7.69
    },
    {
     "format": "python",
-    "sources": 754,
-    "lines": 233866,
+    "sources": 757,
+    "lines": 234338,
     "clones": 1224,
     "duplicatedLines": 16185,
-    "percentage": 6.92
+    "percentage": 6.91
    },
    {
     "format": "yaml",
@@ -67,7 +81,7 @@
    {
     "format": "markdown",
     "sources": 118,
-    "lines": 22418,
+    "lines": 22415,
     "clones": 53,
     "duplicatedLines": 858,
     "percentage": 3.83
@@ -75,10 +89,10 @@
    {
     "format": "json",
     "sources": 53,
-    "lines": 4106,
+    "lines": 4108,
     "clones": 21,
     "duplicatedLines": 656,
-    "percentage": 15.98
+    "percentage": 15.97
    },
    {
     "format": "css",
@@ -107,7 +121,7 @@
    {
     "format": "tsx",
     "sources": 33,
-    "lines": 10557,
+    "lines": 10342,
     "clones": 3,
     "duplicatedLines": 26,
     "percentage": 0.25
@@ -274,10 +288,10 @@
    }
   ],
   "health": {
-   "score": 54.5,
+   "score": 53.9,
    "grade": "D",
    "size": {
-    "lines": 490249,
+    "lines": 490157,
     "files": 1763,
     "class": "L"
    },
@@ -287,7 +301,7 @@
      "source": "jscpd",
      "value": 7,
      "adjusted": 6.9,
-     "lines": 34124,
+     "lines": 34130,
      "halfLife": 8.5,
      "formats": [
       "python",
@@ -304,24 +318,24 @@
       "data"
      ],
      "weight": 1,
-     "score": 56.8
+     "score": 56.7
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 4.6,
-     "adjusted": 4.6,
-     "lines": 22573,
+     "value": 4.9,
+     "adjusted": 4.9,
+     "lines": 24079,
      "halfLife": 7.5,
      "weight": 1,
-     "score": 65.5
+     "score": 63.6
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 60.3,
+     "value": 60.2,
      "adjusted": 60.1,
-     "lines": 295559,
+     "lines": 295216,
      "halfLife": 50,
      "weight": 1,
      "score": 43.5
@@ -329,32 +343,32 @@
    ]
   },
   "complexity": {
-   "total": 61376,
+   "total": 61301,
    "mean": 34.8,
    "files": [
     {
      "path": "strands-cli/src/tui/view/setup-wizard/index.tsx",
-     "complexity": 931,
-     "lines": 2724,
-     "bytes": 110320
+     "complexity": 955,
+     "lines": 2774,
+     "bytes": 112735
     },
     {
      "path": "strands-cli/src/tui/chat/controller.ts",
-     "complexity": 536,
-     "lines": 2143,
-     "bytes": 72509
-    },
-    {
-     "path": "strands-cli/src/tui/view/app.tsx",
-     "complexity": 449,
-     "lines": 1266,
-     "bytes": 48968
+     "complexity": 529,
+     "lines": 2131,
+     "bytes": 72193
     },
     {
      "path": "strands-ts/src/models/__tests__/bedrock.test.ts",
      "complexity": 438,
      "lines": 6024,
      "bytes": 213904
+    },
+    {
+     "path": "strands-cli/src/tui/view/app.tsx",
+     "complexity": 432,
+     "lines": 1244,
+     "bytes": 48242
     },
     {
      "path": "strands-py/src/strands/tools/mcp/mcp_client.py",
@@ -388,20 +402,20 @@
     },
     {
      "path": "strands-cli/test/tui-chat.test.ts",
-     "complexity": 303,
-     "lines": 1972,
-     "bytes": 70569
+     "complexity": 309,
+     "lines": 2025,
+     "bytes": 72899
     }
    ]
   },
   "deadCode": {
-   "percentage": 4.59,
-   "findings": 314,
+   "percentage": 4.9,
+   "findings": 317,
    "files": 2002,
    "byCategory": [
     {
      "category": "unused-file",
-     "count": 196
+     "count": 199
     },
     {
      "category": "unused-export",
@@ -422,14 +436,14 @@
      "path": "strands-cli/src/tui/view/app.tsx",
      "name": "",
      "line": 1,
-     "lines": 1266
+     "lines": 1244
     },
     {
      "category": "unused-file",
-     "path": "strands-cli/src/tui/view/chat-view.tsx",
+     "path": "strands-cli/src/tui/view/frog-intro-renderer.ts",
      "name": "",
      "line": 1,
-     "lines": 670
+     "lines": 793
     },
     {
      "category": "unused-file",
@@ -437,6 +451,20 @@
      "name": "",
      "line": 1,
      "lines": 641
+    },
+    {
+     "category": "unused-file",
+     "path": "strands-cli/src/tui/view/chat-view.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 599
+    },
+    {
+     "category": "unused-file",
+     "path": "strands-cli/src/tui/view/panels.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 547
     },
     {
      "category": "unused-file",
@@ -454,10 +482,10 @@
     },
     {
      "category": "unused-file",
-     "path": "strands-cli/src/tui/view/panels.tsx",
+     "path": "strands-cli/src/tui/view/frog-drawing.ts",
      "name": "",
      "line": 1,
-     "lines": 529
+     "lines": 534
     },
     {
      "category": "unused-file",
@@ -472,20 +500,6 @@
      "name": "",
      "line": 1,
      "lines": 471
-    },
-    {
-     "category": "unused-file",
-     "path": "site/src/content/docs/user-guide/sdk/multi-agent/graph.ts",
-     "name": "",
-     "line": 1,
-     "lines": 412
-    },
-    {
-     "category": "unused-file",
-     "path": "strands-cli/src/tui/view/transcript-turn.tsx",
-     "name": "",
-     "line": 1,
-     "lines": 388
     }
    ]
   }

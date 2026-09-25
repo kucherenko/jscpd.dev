@@ -1,0 +1,493 @@
+{
+ "name": "NVIDIA/Model-Optimizer",
+ "url": "https://github.com/NVIDIA/Model-Optimizer",
+ "appearances": [
+  {
+   "date": "2026-09-25",
+   "rank": 3,
+   "stars": 4148,
+   "starsToday": 44,
+   "headSha": "ed7e87953c1a3ed6a21c8bf6eac90565fa6b7a36",
+   "sources": 2070,
+   "lines": 436782,
+   "clones": 1248,
+   "duplicatedLines": 18159,
+   "percentage": 4.16,
+   "healthScore": 66.3,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-09-25",
+  "generatedAt": "2026-09-25T05:28:58.613Z",
+  "name": "NVIDIA/Model-Optimizer",
+  "url": "https://github.com/NVIDIA/Model-Optimizer",
+  "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
+  "language": "Python",
+  "stars": 4148,
+  "starsToday": 44,
+  "defaultBranch": "main",
+  "headSha": "ed7e87953c1a3ed6a21c8bf6eac90565fa6b7a36",
+  "durationMs": 1646,
+  "total": {
+   "sources": 2070,
+   "lines": 436782,
+   "tokens": 2486565,
+   "clones": 1248,
+   "duplicatedLines": 18159,
+   "duplicatedTokens": 107981,
+   "percentage": 4.16,
+   "percentageTokens": 4.34
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 1247,
+    "lines": 371685,
+    "clones": 870,
+    "duplicatedLines": 11619,
+    "percentage": 3.13
+   },
+   {
+    "format": "yaml",
+    "sources": 394,
+    "lines": 22513,
+    "clones": 302,
+    "duplicatedLines": 5732,
+    "percentage": 25.46
+   },
+   {
+    "format": "markdown",
+    "sources": 187,
+    "lines": 27856,
+    "clones": 45,
+    "duplicatedLines": 433,
+    "percentage": 1.55
+   },
+   {
+    "format": "bash",
+    "sources": 159,
+    "lines": 10712,
+    "clones": 17,
+    "duplicatedLines": 176,
+    "percentage": 1.64
+   },
+   {
+    "format": "cpp",
+    "sources": 8,
+    "lines": 756,
+    "clones": 8,
+    "duplicatedLines": 117,
+    "percentage": 15.48
+   },
+   {
+    "format": "c-header",
+    "sources": 5,
+    "lines": 519,
+    "clones": 5,
+    "duplicatedLines": 73,
+    "percentage": 14.07
+   },
+   {
+    "format": "txt",
+    "sources": 10,
+    "lines": 140,
+    "clones": 1,
+    "duplicatedLines": 9,
+    "percentage": 6.43
+   },
+   {
+    "format": "json",
+    "sources": 17,
+    "lines": 923,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 26,
+    "lines": 572,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 10,
+    "lines": 565,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "cpp",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.cpp",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "cpp",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginRegistration.cpp",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "cpp",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.cpp",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "cpp",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "cpp",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "modelopt/torch/kernels/quantization/conv/implicit_gemm_binding.cpp",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "cpp",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.cpp",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "c-header",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.h",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "c-header",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.h",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "c-header",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.h",
+     "start": 1,
+     "end": 16
+    }
+   },
+   {
+    "format": "c-header",
+    "lines": 16,
+    "tokens": 682,
+    "firstFile": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
+     "start": 1,
+     "end": 16
+    },
+    "secondFile": {
+     "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant_mx.h",
+     "start": 1,
+     "end": 16
+    }
+   }
+  ],
+  "health": {
+   "score": 66.3,
+   "grade": "C",
+   "size": {
+    "lines": 379979,
+    "files": 1304,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.1,
+     "adjusted": 3.1,
+     "lines": 11907,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash",
+      "cpp",
+      "c-header",
+      "perl",
+      "javascript"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 77.4
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 2.6,
+     "adjusted": 2.6,
+     "lines": 9814,
+     "halfLife": 7.5,
+     "coverage": 98.1,
+     "weight": 0.981,
+     "score": 78.4
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 53,
+     "adjusted": 52.8,
+     "lines": 201249,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 48.1
+    }
+   ]
+  },
+  "complexity": {
+   "total": 45629,
+   "mean": 35,
+   "files": [
+    {
+     "path": "modelopt/onnx/utils.py",
+     "complexity": 539,
+     "lines": 2190,
+     "bytes": 89794
+    },
+    {
+     "path": "modelopt/onnx/autocast/precisionconverter.py",
+     "complexity": 502,
+     "lines": 1889,
+     "bytes": 89782
+    },
+    {
+     "path": "modelopt/torch/quantization/nn/modules/tensor_quantizer.py",
+     "complexity": 463,
+     "lines": 1919,
+     "bytes": 77131
+    },
+    {
+     "path": "modelopt/torch/export/quant_utils.py",
+     "complexity": 460,
+     "lines": 2026,
+     "bytes": 90436
+    },
+    {
+     "path": "modelopt/torch/quantization/algorithms.py",
+     "complexity": 453,
+     "lines": 2302,
+     "bytes": 100068
+    },
+    {
+     "path": "modelopt/torch/quantization/model_calib.py",
+     "complexity": 442,
+     "lines": 2410,
+     "bytes": 105057
+    },
+    {
+     "path": "modelopt/torch/export/unified_export_megatron.py",
+     "complexity": 430,
+     "lines": 2219,
+     "bytes": 105876
+    },
+    {
+     "path": "tests/_test_utils/torch/nas_prune/models.py",
+     "complexity": 391,
+     "lines": 2147,
+     "bytes": 63610
+    },
+    {
+     "path": "modelopt/torch/export/trtllm/layer_utils.py",
+     "complexity": 337,
+     "lines": 1617,
+     "bytes": 63175
+    },
+    {
+     "path": "modelopt/torch/quantization/plugins/huggingface.py",
+     "complexity": 330,
+     "lines": 2144,
+     "bytes": 94629
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 2.63,
+   "findings": 122,
+   "files": 1323,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 30
+    },
+    {
+     "category": "unused-export",
+     "count": 40
+    },
+    {
+     "category": "unused-symbol",
+     "count": 42
+    },
+    {
+     "category": "unused-import",
+     "count": 10
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/sparsity/attention_sparsity/plugins/vllm.py",
+     "name": "",
+     "line": 1,
+     "lines": 1121
+    },
+    {
+     "category": "unused-file",
+     "path": "tools/launcher/core.py",
+     "name": "",
+     "line": 1,
+     "lines": 899
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/utils/mlflow.py",
+     "name": "",
+     "line": 1,
+     "lines": 840
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/utils/plugins/transformers_dataset.py",
+     "name": "",
+     "line": 1,
+     "lines": 750
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/sparsity/attention_sparsity/plugins/vllm_runtime.py",
+     "name": "",
+     "line": 1,
+     "lines": 705
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/speculative/plugins/hf_streaming_dataset.py",
+     "name": "",
+     "line": 1,
+     "lines": 613
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/speculative/plugins/rdma_hidden_states_connector.py",
+     "name": "",
+     "line": 1,
+     "lines": 441
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/kernels/common/attention/decode_attention.py",
+     "name": "",
+     "line": 1,
+     "lines": 374
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/utils/plugins/mbridge.py",
+     "name": "",
+     "line": 1,
+     "lines": 305
+    },
+    {
+     "category": "unused-file",
+     "path": "modelopt/torch/sparsity/attention_sparsity/plugins/sparse_attn_calibration.py",
+     "name": "",
+     "line": 1,
+     "lines": 289
+    }
+   ]
+  }
+ }
+}
