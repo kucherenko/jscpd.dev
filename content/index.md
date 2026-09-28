@@ -13,7 +13,7 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds exact, renamed and near-miss duplicates, and fails the build when they cross your threshold. One native binary, no runtime: a 159 MB codebase scans in 3.4 seconds. It also finds dead code, ranks complexity and scores codebase health, speaks MCP, ships agent skills, and has a reporter LLMs can afford to read.
+**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds exact, renamed, near-miss and semantic duplicates, and fails the build when they cross your threshold. One native binary, no runtime: a 159 MB codebase scans in 3.4 seconds. It also finds dead code, ranks complexity and scores codebase health, speaks MCP, ships agent skills, and has a reporter LLMs can afford to read.
 
 #links
   :::u-button
@@ -185,11 +185,15 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
 ::
 
 ::u-page-section
+---
+ui:
+  features: "sm:grid-cols-2 lg:grid-cols-2"
+---
 #title
 Finds the copies that don't <span class="hero-gradient">look</span> like copies
 
 #description
-Exact copies are the easy case. jscpd also reports renamed and near-miss clones, each tagged with its kind and a similarity score. Default runs are unchanged; the extra kinds are opt-in flags.
+Exact copies are the easy case. jscpd also reports renamed, near-miss and semantic clones, each tagged with its kind and a similarity score. Default runs are unchanged; the extra kinds are opt-in flags.
 
 #features
   :::u-page-feature
@@ -242,6 +246,24 @@ Exact copies are the easy case. jscpd also reports renamed and near-miss clones,
 
   <a href="/guides/clone-types#type-3-near-miss-clones" class="feature-card-link">
     Type-3 clones
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-brain-circuit
+  ---
+  #title
+  Semantic clones
+
+  #description
+  :copy-command{cmd="jscpd . --semantic"}
+
+  Type-4: functions that do the same job with different code, even in another language, like a rule that a Rust backend enforces and a Svelte frontend repeats. A code embedding model compares them inside jscpd after a one-time `jscpd --semantic-download`. The mode is experimental and reports each pair as `semantic` with a score.
+
+  <a href="/guides/semantic-clones" class="feature-card-link">
+    Type-4 clones
     <span class="link-arrow">→</span>
   </a>
   :::
