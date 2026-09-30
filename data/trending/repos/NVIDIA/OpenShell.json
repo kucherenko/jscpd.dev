@@ -1,0 +1,436 @@
+{
+ "name": "NVIDIA/OpenShell",
+ "url": "https://github.com/NVIDIA/OpenShell",
+ "appearances": [
+  {
+   "date": "2026-09-30",
+   "rank": 2,
+   "stars": 10844,
+   "starsToday": 990,
+   "headSha": "252882f37f2daa63ef4078b3bbb89adbcf43b409",
+   "sources": 1775,
+   "lines": 791414,
+   "clones": 6821,
+   "duplicatedLines": 95353,
+   "percentage": 12.05,
+   "healthScore": 36.1,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30T05:32:45.199Z",
+  "name": "NVIDIA/OpenShell",
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+  "language": "Rust",
+  "stars": 10844,
+  "starsToday": 990,
+  "defaultBranch": "main",
+  "headSha": "252882f37f2daa63ef4078b3bbb89adbcf43b409",
+  "durationMs": 3929,
+  "total": {
+   "sources": 1775,
+   "lines": 791414,
+   "tokens": 5024429,
+   "clones": 6821,
+   "duplicatedLines": 95353,
+   "duplicatedTokens": 625269,
+   "percentage": 12.05,
+   "percentageTokens": 12.44
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 607,
+    "lines": 553793,
+    "clones": 5625,
+    "duplicatedLines": 68184,
+    "percentage": 12.31
+   },
+   {
+    "format": "go",
+    "sources": 228,
+    "lines": 69630,
+    "clones": 558,
+    "duplicatedLines": 5661,
+    "percentage": 8.13
+   },
+   {
+    "format": "json",
+    "sources": 60,
+    "lines": 29233,
+    "clones": 294,
+    "duplicatedLines": 16723,
+    "percentage": 57.21
+   },
+   {
+    "format": "yaml",
+    "sources": 262,
+    "lines": 22409,
+    "clones": 152,
+    "duplicatedLines": 2268,
+    "percentage": 10.12
+   },
+   {
+    "format": "bash",
+    "sources": 193,
+    "lines": 34654,
+    "clones": 61,
+    "duplicatedLines": 846,
+    "percentage": 2.44
+   },
+   {
+    "format": "python",
+    "sources": 61,
+    "lines": 21197,
+    "clones": 39,
+    "duplicatedLines": 473,
+    "percentage": 2.23
+   },
+   {
+    "format": "markup",
+    "sources": 16,
+    "lines": 963,
+    "clones": 19,
+    "duplicatedLines": 181,
+    "percentage": 18.8
+   },
+   {
+    "format": "typescript",
+    "sources": 13,
+    "lines": 5217,
+    "clones": 17,
+    "duplicatedLines": 154,
+    "percentage": 2.95
+   },
+   {
+    "format": "javascript",
+    "sources": 8,
+    "lines": 1245,
+    "clones": 14,
+    "duplicatedLines": 271,
+    "percentage": 21.77
+   },
+   {
+    "format": "markdown",
+    "sources": 155,
+    "lines": 33885,
+    "clones": 10,
+    "duplicatedLines": 190,
+    "percentage": 0.56
+   }
+  ],
+  "topClones": [
+   {
+    "format": "rust",
+    "lines": 380,
+    "tokens": 2225,
+    "firstFile": {
+     "name": "crates/openshell-sandbox/src/mechanistic_mapper.rs",
+     "start": 157,
+     "end": 536
+    },
+    "secondFile": {
+     "name": "crates/openshell-supervisor/src/mechanistic_mapper.rs",
+     "start": 158,
+     "end": 537
+    }
+   },
+   {
+    "format": "rust",
+    "lines": 253,
+    "tokens": 1900,
+    "firstFile": {
+     "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
+     "start": 550,
+     "end": 802
+    },
+    "secondFile": {
+     "name": "crates/openshell-cli/tests/provider_commands_integration.rs",
+     "start": 1358,
+     "end": 1610
+    }
+   },
+   {
+    "format": "rust",
+    "lines": 203,
+    "tokens": 1524,
+    "firstFile": {
+     "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
+     "start": 600,
+     "end": 802
+    },
+    "secondFile": {
+     "name": "crates/openshell-cli/tests/sandbox_name_fallback_integration.rs",
+     "start": 543,
+     "end": 745
+    }
+   },
+   {
+    "format": "rust",
+    "lines": 183,
+    "tokens": 1378,
+    "firstFile": {
+     "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
+     "start": 620,
+     "end": 802
+    },
+    "secondFile": {
+     "name": "crates/openshell-cli/tests/sandbox_create_lifecycle_integration.rs",
+     "start": 944,
+     "end": 1126
+    }
+   },
+   {
+    "format": "json",
+    "lines": 431,
+    "tokens": 1316,
+    "firstFile": {
+     "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/http_activity.json",
+     "start": 100,
+     "end": 530
+    },
+    "secondFile": {
+     "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/ssh_activity.json",
+     "start": 124,
+     "end": 554
+    }
+   },
+   {
+    "format": "json",
+    "lines": 421,
+    "tokens": 1273,
+    "firstFile": {
+     "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/objects/network_endpoint.json",
+     "start": 1,
+     "end": 421
+    },
+    "secondFile": {
+     "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/objects/network_proxy.json",
+     "start": 1,
+     "end": 421
+    }
+   },
+   {
+    "format": "rust",
+    "lines": 220,
+    "tokens": 1227,
+    "firstFile": {
+     "name": "crates/openshell-sandbox/src/activity_aggregator.rs",
+     "start": 5,
+     "end": 224
+    },
+    "secondFile": {
+     "name": "crates/openshell-supervisor/src/activity_aggregator.rs",
+     "start": 5,
+     "end": 224
+    }
+   },
+   {
+    "format": "json",
+    "lines": 360,
+    "tokens": 1181,
+    "firstFile": {
+     "name": "crates/openshell-ocsf/schemas/ocsf/v1.8.0/objects/network_endpoint.json",
+     "start": 1,
+     "end": 360
+    },
+    "secondFile": {
+     "name": "crates/openshell-ocsf/schemas/ocsf/v1.8.0/objects/network_proxy.json",
+     "start": 1,
+     "end": 360
+    }
+   },
+   {
+    "format": "rust",
+    "lines": 156,
+    "tokens": 1178,
+    "firstFile": {
+     "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
+     "start": 562,
+     "end": 717
+    },
+    "secondFile": {
+     "name": "crates/openshell-cli/tests/mtls_integration.rs",
+     "start": 414,
+     "end": 569
+    }
+   },
+   {
+    "format": "rust",
+    "lines": 132,
+    "tokens": 1117,
+    "firstFile": {
+     "name": "crates/openshell-providers/src/profiles.rs",
+     "start": 3383,
+     "end": 3514
+    },
+    "secondFile": {
+     "name": "crates/openshell-server/src/grpc/provider.rs",
+     "start": 1697,
+     "end": 1828
+    }
+   }
+  ],
+  "health": {
+   "score": 36.1,
+   "grade": "E",
+   "size": {
+    "lines": 685300,
+    "files": 1042,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 11,
+     "adjusted": 11,
+     "lines": 75586,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "go",
+      "bash",
+      "python",
+      "typescript",
+      "powershell",
+      "javascript",
+      "c",
+      "tsx",
+      "perl",
+      "sql"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 40.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 82.3,
+     "adjusted": 82.1,
+     "lines": 563754,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 32
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 74213,
+   "mean": 71.2,
+   "files": [
+    {
+     "path": "sdk/go/proto/openshellv1/openshell.pb.go",
+     "complexity": 3524,
+     "lines": 20285,
+     "bytes": 744931
+    },
+    {
+     "path": "crates/openshell-server/src/grpc/policy.rs",
+     "complexity": 1516,
+     "lines": 22855,
+     "bytes": 855915
+    },
+    {
+     "path": "crates/openshell-driver-vm/src/driver.rs",
+     "complexity": 1339,
+     "lines": 11443,
+     "bytes": 428373
+    },
+    {
+     "path": "crates/openshell-server/src/compute/mod.rs",
+     "complexity": 1334,
+     "lines": 15597,
+     "bytes": 587783
+    },
+    {
+     "path": "crates/openshell-driver-kubernetes/src/driver.rs",
+     "complexity": 1316,
+     "lines": 11755,
+     "bytes": 451084
+    },
+    {
+     "path": "crates/openshell-cli/src/run.rs",
+     "complexity": 1186,
+     "lines": 8179,
+     "bytes": 278067
+    },
+    {
+     "path": "crates/openshell-supervisor-network/src/l7/rest.rs",
+     "complexity": 1150,
+     "lines": 10587,
+     "bytes": 407467
+    },
+    {
+     "path": "crates/openshell-supervisor-network/src/proxy.rs",
+     "complexity": 1129,
+     "lines": 14877,
+     "bytes": 566274
+    },
+    {
+     "path": "crates/openshell-server/src/grpc/provider.rs",
+     "complexity": 1078,
+     "lines": 15876,
+     "bytes": 589261
+    },
+    {
+     "path": "crates/openshell-driver-docker/src/lib.rs",
+     "complexity": 960,
+     "lines": 6617,
+     "bytes": 243204
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.45,
+   "findings": 3,
+   "files": 87,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 2
+    },
+    {
+     "category": "unused-symbol",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "docs/_components/CommandTerminal.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 64
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/_components/BadgeLinks.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 60
+    },
+    {
+     "category": "unused-symbol",
+     "path": "tasks/scripts/release.py",
+     "name": "_run",
+     "line": 51,
+     "lines": 2
+    }
+   ]
+  }
+ }
+}

@@ -43,29 +43,43 @@
    "percentage": 0.32,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-09-30",
+   "rank": 7,
+   "stars": 10290,
+   "starsToday": 113,
+   "headSha": "1d161d15a4fe93d9b3371377f0a421dc3e965b10",
+   "sources": 14,
+   "lines": 1899,
+   "clones": 1,
+   "duplicatedLines": 7,
+   "percentage": 0.37,
+   "healthScore": 78.6,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-04",
-  "generatedAt": "2026-09-04T06:03:01.711Z",
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30T05:32:45.199Z",
   "name": "averygan/reclip",
   "url": "https://github.com/averygan/reclip",
   "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI.",
   "language": "HTML",
-  "stars": 8495,
-  "starsToday": 88,
+  "stars": 10290,
+  "starsToday": 113,
   "defaultBranch": "main",
   "headSha": "1d161d15a4fe93d9b3371377f0a421dc3e965b10",
-  "durationMs": 4893,
+  "durationMs": 840,
   "total": {
    "sources": 14,
    "lines": 1899,
-   "tokens": 10566,
+   "tokens": 10692,
    "clones": 1,
-   "duplicatedLines": 6,
+   "duplicatedLines": 7,
    "duplicatedTokens": 61,
-   "percentage": 0.32,
-   "percentageTokens": 0.58
+   "percentage": 0.37,
+   "percentageTokens": 0.57
   },
   "formats": [
    {
@@ -73,8 +87,8 @@
     "sources": 1,
     "lines": 210,
     "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 2.86
+    "duplicatedLines": 7,
+    "percentage": 3.33
    },
    {
     "format": "bash",
@@ -125,6 +139,130 @@
      "end": 156
     }
    }
-  ]
+  ],
+  "health": {
+   "score": 78.6,
+   "grade": "B",
+   "size": {
+    "lines": 1128,
+    "files": 12,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0.6,
+     "adjusted": 2.5,
+     "lines": 7,
+     "halfLife": 8.5,
+     "formats": [
+      "bash",
+      "python",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text"
+     ],
+     "weight": 1,
+     "score": 81.8
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2.8,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 18.6,
+     "weight": 0.186,
+     "score": 77.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 18.6,
+     "adjusted": 20.1,
+     "lines": 210,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 75.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 147,
+   "mean": 12.3,
+   "files": [
+    {
+     "path": "app.py",
+     "complexity": 53,
+     "lines": 210,
+     "bytes": 6835
+    },
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    },
+    {
+     "path": ".git/hooks/update.sample",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 3650
+    },
+    {
+     "path": "reclip.sh",
+     "complexity": 10,
+     "lines": 56,
+     "bytes": 1344
+    },
+    {
+     "path": ".git/hooks/push-to-checkout.sample",
+     "complexity": 6,
+     "lines": 78,
+     "bytes": 2783
+    },
+    {
+     "path": ".git/hooks/pre-commit.sample",
+     "complexity": 5,
+     "lines": 49,
+     "bytes": 1649
+    },
+    {
+     "path": ".git/hooks/pre-push.sample",
+     "complexity": 5,
+     "lines": 53,
+     "bytes": 1374
+    },
+    {
+     "path": ".git/hooks/pre-receive.sample",
+     "complexity": 4,
+     "lines": 24,
+     "bytes": 544
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 1,
+   "byCategory": [],
+   "largest": []
+  }
  }
 }

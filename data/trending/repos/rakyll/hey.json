@@ -1,0 +1,223 @@
+{
+ "name": "rakyll/hey",
+ "url": "https://github.com/rakyll/hey",
+ "appearances": [
+  {
+   "date": "2026-09-30",
+   "rank": 11,
+   "stars": 20534,
+   "starsToday": 34,
+   "headSha": "5626f79b8698df6daf9b25799c9805c6acc96740",
+   "sources": 20,
+   "lines": 2297,
+   "clones": 1,
+   "duplicatedLines": 12,
+   "percentage": 0.52,
+   "healthScore": 85.9,
+   "healthGrade": "A"
+  }
+ ],
+ "latest": {
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30T05:32:45.199Z",
+  "name": "rakyll/hey",
+  "url": "https://github.com/rakyll/hey",
+  "description": "HTTP load generator, ApacheBench (ab) replacement",
+  "language": "Go",
+  "stars": 20534,
+  "starsToday": 34,
+  "defaultBranch": "master",
+  "headSha": "5626f79b8698df6daf9b25799c9805c6acc96740",
+  "durationMs": 837,
+  "total": {
+   "sources": 20,
+   "lines": 2297,
+   "tokens": 12308,
+   "clones": 1,
+   "duplicatedLines": 12,
+   "duplicatedTokens": 88,
+   "percentage": 0.52,
+   "percentageTokens": 0.71
+  },
+  "formats": [
+   {
+    "format": "go",
+    "sources": 7,
+    "lines": 1260,
+    "clones": 1,
+    "duplicatedLines": 12,
+    "percentage": 0.95
+   },
+   {
+    "format": "bash",
+    "sources": 9,
+    "lines": 694,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 1,
+    "lines": 104,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 43,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "yaml",
+    "sources": 1,
+    "lines": 28,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "go",
+    "lines": 12,
+    "tokens": 88,
+    "firstFile": {
+     "name": "requester/requester_test.go",
+     "start": 29,
+     "end": 40
+    },
+    "secondFile": {
+     "name": "requester/requester_test.go",
+     "start": 50,
+     "end": 61
+    }
+   }
+  ],
+  "health": {
+   "score": 85.9,
+   "grade": "A",
+   "size": {
+    "lines": 2122,
+    "files": 17,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0.6,
+     "adjusted": 2,
+     "lines": 12,
+     "halfLife": 8.5,
+     "formats": [
+      "go",
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 85
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 10.1,
+     "lines": 0,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 86.9
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 232,
+   "mean": 13.6,
+   "files": [
+    {
+     "path": "hey.go",
+     "complexity": 40,
+     "lines": 289,
+     "bytes": 7159
+    },
+    {
+     "path": "requester/requester.go",
+     "complexity": 35,
+     "lines": 273,
+     "bytes": 6818
+    },
+    {
+     "path": "requester/report.go",
+     "complexity": 26,
+     "lines": 323,
+     "bytes": 7872
+    },
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": "requester/requester_test.go",
+     "complexity": 17,
+     "lines": 134,
+     "bytes": 3300
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    },
+    {
+     "path": "hey_test.go",
+     "complexity": 14,
+     "lines": 66,
+     "bytes": 2094
+    },
+    {
+     "path": ".git/hooks/update.sample",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 3650
+    },
+    {
+     "path": "requester/print.go",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 4937
+    }
+   ]
+  },
+  "deadCode": null
+ }
+}

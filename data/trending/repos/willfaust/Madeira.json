@@ -15,62 +15,84 @@
    "percentage": 11.62,
    "healthScore": 43.9,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-09-30",
+   "rank": 9,
+   "stars": 1135,
+   "starsToday": 81,
+   "headSha": "d5a8e0a60804bddf48a9efa751adec52ba9a4bda",
+   "sources": 182,
+   "lines": 65776,
+   "clones": 262,
+   "duplicatedLines": 5975,
+   "percentage": 9.08,
+   "healthScore": 46,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-09-28",
-  "generatedAt": "2026-09-28T05:32:46.532Z",
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30T05:32:45.199Z",
   "name": "willfaust/Madeira",
   "url": "https://github.com/willfaust/Madeira",
   "description": "Run x86-64 Windows PC games on jailed iOS via FEX-Emu + Wine + DXMT",
   "language": "C",
-  "stars": 868,
-  "starsToday": 83,
+  "stars": 1135,
+  "starsToday": 81,
   "defaultBranch": "main",
-  "headSha": "8c050d03f4d89096e1e2e2c8bb44479fffd86619",
-  "durationMs": 1098,
+  "headSha": "d5a8e0a60804bddf48a9efa751adec52ba9a4bda",
+  "durationMs": 1346,
   "total": {
-   "sources": 146,
-   "lines": 51276,
-   "tokens": 1040316,
+   "sources": 182,
+   "lines": 65776,
+   "tokens": 1192989,
    "clones": 262,
-   "duplicatedLines": 5956,
-   "duplicatedTokens": 180777,
-   "percentage": 11.62,
-   "percentageTokens": 17.38
+   "duplicatedLines": 5975,
+   "duplicatedTokens": 181270,
+   "percentage": 9.08,
+   "percentageTokens": 15.19
   },
   "formats": [
    {
     "format": "c-header",
-    "sources": 19,
-    "lines": 9690,
+    "sources": 23,
+    "lines": 10262,
     "clones": 182,
     "duplicatedLines": 3439,
-    "percentage": 35.49
+    "percentage": 33.51
    },
    {
     "format": "c",
-    "sources": 16,
-    "lines": 15660,
-    "clones": 34,
-    "duplicatedLines": 257,
-    "percentage": 1.64
+    "sources": 19,
+    "lines": 17136,
+    "clones": 33,
+    "duplicatedLines": 244,
+    "percentage": 1.42
    },
    {
     "format": "objectivec",
     "sources": 15,
-    "lines": 6762,
+    "lines": 7566,
     "clones": 22,
     "duplicatedLines": 196,
-    "percentage": 2.9
+    "percentage": 2.59
    },
    {
     "format": "txt",
     "sources": 25,
-    "lines": 3170,
+    "lines": 3191,
     "clones": 19,
     "duplicatedLines": 1863,
-    "percentage": 58.77
+    "percentage": 58.38
+   },
+   {
+    "format": "swift",
+    "sources": 33,
+    "lines": 15347,
+    "clones": 2,
+    "duplicatedLines": 17,
+    "percentage": 0.11
    },
    {
     "format": "diff",
@@ -82,19 +104,11 @@
    },
    {
     "format": "markdown",
-    "sources": 17,
-    "lines": 5885,
+    "sources": 23,
+    "lines": 7375,
     "clones": 1,
-    "duplicatedLines": 163,
-    "percentage": 2.77
-   },
-   {
-    "format": "swift",
-    "sources": 10,
-    "lines": 5210,
-    "clones": 1,
-    "duplicatedLines": 7,
-    "percentage": 0.13
+    "duplicatedLines": 185,
+    "percentage": 2.51
    },
    {
     "format": "bash",
@@ -274,26 +288,26 @@
    }
   ],
   "health": {
-   "score": 43.9,
+   "score": 46,
    "grade": "D",
    "size": {
-    "lines": 39879,
-    "files": 85,
+    "lines": 52868,
+    "files": 115,
     "class": "M"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 9.8,
-     "adjusted": 9.5,
-     "lines": 3908,
+     "value": 7.4,
+     "adjusted": 7.2,
+     "lines": 3905,
      "halfLife": 8.5,
      "formats": [
       "c",
+      "swift",
       "c-header",
       "objectivec",
-      "swift",
       "bash",
       "cpp",
       "python",
@@ -305,17 +319,17 @@
       "data"
      ],
      "weight": 1,
-     "score": 46.1
+     "score": 55.4
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 65.1,
-     "adjusted": 62.9,
-     "lines": 25943,
+     "value": 71.2,
+     "adjusted": 69.4,
+     "lines": 37640,
      "halfLife": 50,
      "weight": 1,
-     "score": 41.8
+     "score": 38.2
     }
    ],
    "skipped": [
@@ -326,26 +340,44 @@
    ]
   },
   "complexity": {
-   "total": 7852,
-   "mean": 92.4,
+   "total": 10721,
+   "mean": 93.2,
    "files": [
     {
      "path": "research/madeira-d3d12/src/pe/madeira_d3d12.c",
-     "complexity": 4415,
-     "lines": 11211,
-     "bytes": 680555
+     "complexity": 4528,
+     "lines": 11637,
+     "bytes": 701812
+    },
+    {
+     "path": "app/Madeira/HardwareInput.swift",
+     "complexity": 526,
+     "lines": 2117,
+     "bytes": 98298
     },
     {
      "path": "app/Madeira/ContentView.swift",
-     "complexity": 370,
-     "lines": 3254,
-     "bytes": 168329
+     "complexity": 517,
+     "lines": 3923,
+     "bytes": 204780
+    },
+    {
+     "path": "app/Madeira/Library.swift",
+     "complexity": 475,
+     "lines": 2192,
+     "bytes": 122993
     },
     {
      "path": "research/madeira-d3d12/src/unix/madeira_ir_unix.mm",
-     "complexity": 350,
-     "lines": 1470,
-     "bytes": 75193
+     "complexity": 414,
+     "lines": 1737,
+     "bytes": 87424
+    },
+    {
+     "path": "app/Madeira/WineProcessBridge.m",
+     "complexity": 271,
+     "lines": 1658,
+     "bytes": 91113
     },
     {
      "path": "research/madeira-d3d12/src/pe/madeira_d3d12_stubs.h",
@@ -355,39 +387,21 @@
     },
     {
      "path": "app/Madeira/Winios/Winios.m",
-     "complexity": 225,
-     "lines": 1370,
-     "bytes": 66281
+     "complexity": 246,
+     "lines": 1420,
+     "bytes": 68473
     },
     {
-     "path": "app/Madeira/WineProcessBridge.m",
-     "complexity": 187,
-     "lines": 1234,
-     "bytes": 68471
+     "path": "app/Madeira/DockInstallers.swift",
+     "complexity": 225,
+     "lines": 760,
+     "bytes": 45100
     },
     {
      "path": "research/madeira-d3d12/src/unix/madeira_ags.cpp",
      "complexity": 177,
      "lines": 490,
      "bytes": 24407
-    },
-    {
-     "path": "research/madeira-d3d12/tests/windows/m2_abi.c",
-     "complexity": 164,
-     "lines": 915,
-     "bytes": 50669
-    },
-    {
-     "path": "research/madeira-d3d12/tests/native/msc_canary.mm",
-     "complexity": 127,
-     "lines": 642,
-     "bytes": 32567
-    },
-    {
-     "path": "research/madeira-d3d12/tests/windows/vfetch_test.c",
-     "complexity": 120,
-     "lines": 568,
-     "bytes": 39767
     }
    ]
   },
