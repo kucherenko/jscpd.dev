@@ -15,46 +15,60 @@
    "percentage": 12.05,
    "healthScore": 36.1,
    "healthGrade": "E"
+  },
+  {
+   "date": "2026-10-01",
+   "rank": 1,
+   "stars": 13057,
+   "starsToday": 1281,
+   "headSha": "021400be8af471f8669369e679de3e18cf0bd672",
+   "sources": 1780,
+   "lines": 791622,
+   "clones": 6844,
+   "duplicatedLines": 95632,
+   "percentage": 12.08,
+   "healthScore": 36.1,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-09-30",
-  "generatedAt": "2026-09-30T05:32:45.199Z",
+  "date": "2026-10-01",
+  "generatedAt": "2026-10-01T05:31:24.085Z",
   "name": "NVIDIA/OpenShell",
   "url": "https://github.com/NVIDIA/OpenShell",
   "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
   "language": "Rust",
-  "stars": 10844,
-  "starsToday": 990,
+  "stars": 13057,
+  "starsToday": 1281,
   "defaultBranch": "main",
-  "headSha": "252882f37f2daa63ef4078b3bbb89adbcf43b409",
-  "durationMs": 3929,
+  "headSha": "021400be8af471f8669369e679de3e18cf0bd672",
+  "durationMs": 4313,
   "total": {
-   "sources": 1775,
-   "lines": 791414,
-   "tokens": 5024429,
-   "clones": 6821,
-   "duplicatedLines": 95353,
-   "duplicatedTokens": 625269,
-   "percentage": 12.05,
-   "percentageTokens": 12.44
+   "sources": 1780,
+   "lines": 791622,
+   "tokens": 5051570,
+   "clones": 6844,
+   "duplicatedLines": 95632,
+   "duplicatedTokens": 629069,
+   "percentage": 12.08,
+   "percentageTokens": 12.45
   },
   "formats": [
    {
     "format": "rust",
-    "sources": 607,
-    "lines": 553793,
-    "clones": 5625,
-    "duplicatedLines": 68184,
-    "percentage": 12.31
+    "sources": 609,
+    "lines": 553345,
+    "clones": 5646,
+    "duplicatedLines": 68440,
+    "percentage": 12.37
    },
    {
     "format": "go",
-    "sources": 228,
-    "lines": 69630,
+    "sources": 229,
+    "lines": 69822,
     "clones": 558,
-    "duplicatedLines": 5661,
-    "percentage": 8.13
+    "duplicatedLines": 5666,
+    "percentage": 8.11
    },
    {
     "format": "json",
@@ -66,16 +80,16 @@
    },
    {
     "format": "yaml",
-    "sources": 262,
-    "lines": 22409,
-    "clones": 152,
-    "duplicatedLines": 2268,
-    "percentage": 10.12
+    "sources": 264,
+    "lines": 22662,
+    "clones": 154,
+    "duplicatedLines": 2285,
+    "percentage": 10.08
    },
    {
     "format": "bash",
     "sources": 193,
-    "lines": 34654,
+    "lines": 34669,
     "clones": 61,
     "duplicatedLines": 846,
     "percentage": 2.44
@@ -83,7 +97,7 @@
    {
     "format": "python",
     "sources": 61,
-    "lines": 21197,
+    "lines": 21250,
     "clones": 39,
     "duplicatedLines": 473,
     "percentage": 2.23
@@ -99,10 +113,10 @@
    {
     "format": "typescript",
     "sources": 13,
-    "lines": 5217,
+    "lines": 5270,
     "clones": 17,
-    "duplicatedLines": 154,
-    "percentage": 2.95
+    "duplicatedLines": 155,
+    "percentage": 2.94
    },
    {
     "format": "javascript",
@@ -115,7 +129,7 @@
    {
     "format": "markdown",
     "sources": 155,
-    "lines": 33885,
+    "lines": 33953,
     "clones": 10,
     "duplicatedLines": 190,
     "percentage": 0.56
@@ -277,17 +291,17 @@
    "score": 36.1,
    "grade": "E",
    "size": {
-    "lines": 685300,
-    "files": 1042,
+    "lines": 685160,
+    "files": 1045,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 11,
+     "value": 11.1,
      "adjusted": 11,
-     "lines": 75586,
+     "lines": 75848,
      "halfLife": 8.5,
      "formats": [
       "rust",
@@ -308,17 +322,17 @@
       "data"
      ],
      "weight": 1,
-     "score": 40.8
+     "score": 40.6
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 82.3,
-     "adjusted": 82.1,
-     "lines": 563754,
+     "value": 82.2,
+     "adjusted": 82,
+     "lines": 563239,
      "halfLife": 50,
      "weight": 1,
-     "score": 32
+     "score": 32.1
     }
    ],
    "skipped": [
@@ -329,14 +343,14 @@
    ]
   },
   "complexity": {
-   "total": 74213,
-   "mean": 71.2,
+   "total": 73979,
+   "mean": 70.8,
    "files": [
     {
      "path": "sdk/go/proto/openshellv1/openshell.pb.go",
-     "complexity": 3524,
-     "lines": 20285,
-     "bytes": 744931
+     "complexity": 3536,
+     "lines": 20377,
+     "bytes": 749302
     },
     {
      "path": "crates/openshell-server/src/grpc/policy.rs",
@@ -345,40 +359,40 @@
      "bytes": 855915
     },
     {
-     "path": "crates/openshell-driver-vm/src/driver.rs",
-     "complexity": 1339,
-     "lines": 11443,
-     "bytes": 428373
+     "path": "crates/openshell-server/src/compute/mod.rs",
+     "complexity": 1346,
+     "lines": 15710,
+     "bytes": 592091
     },
     {
-     "path": "crates/openshell-server/src/compute/mod.rs",
-     "complexity": 1334,
-     "lines": 15597,
-     "bytes": 587783
+     "path": "crates/openshell-driver-vm/src/driver.rs",
+     "complexity": 1341,
+     "lines": 11422,
+     "bytes": 427451
     },
     {
      "path": "crates/openshell-driver-kubernetes/src/driver.rs",
-     "complexity": 1316,
-     "lines": 11755,
-     "bytes": 451084
+     "complexity": 1314,
+     "lines": 11751,
+     "bytes": 450843
     },
     {
      "path": "crates/openshell-cli/src/run.rs",
-     "complexity": 1186,
-     "lines": 8179,
-     "bytes": 278067
+     "complexity": 1188,
+     "lines": 8209,
+     "bytes": 279464
     },
     {
      "path": "crates/openshell-supervisor-network/src/l7/rest.rs",
-     "complexity": 1150,
-     "lines": 10587,
-     "bytes": 407467
+     "complexity": 1156,
+     "lines": 10655,
+     "bytes": 410555
     },
     {
      "path": "crates/openshell-supervisor-network/src/proxy.rs",
-     "complexity": 1129,
-     "lines": 14877,
-     "bytes": 566274
+     "complexity": 1131,
+     "lines": 14996,
+     "bytes": 570745
     },
     {
      "path": "crates/openshell-server/src/grpc/provider.rs",
@@ -388,9 +402,9 @@
     },
     {
      "path": "crates/openshell-driver-docker/src/lib.rs",
-     "complexity": 960,
-     "lines": 6617,
-     "bytes": 243204
+     "complexity": 958,
+     "lines": 6589,
+     "bytes": 242187
     }
    ]
   },
