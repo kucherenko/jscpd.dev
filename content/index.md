@@ -211,7 +211,7 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
   #description
   :copy-command{cmd="jscpd --compare python/ typescript/"}
 
-  Which functions of the source already have a counterpart in the target, and which are still to port. Pairs functions across languages with a code embedding model, measures tests apart from code, and tells a port from a copy. Experimental.
+  Which functions of the source already have a counterpart in the target, and which are still to port. A code embedding model pairs the functions across languages, and tests are measured apart from code, so the report tells a port from a copy. The mode is experimental.
 
   <a href="/getting-started/configuration#comparing-two-codebases" class="feature-card-link">
     Compare two codebases
