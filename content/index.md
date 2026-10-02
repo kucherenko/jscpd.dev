@@ -1,7 +1,7 @@
 ---
 seo:
   title: jscpd - Copy/Paste Detector for Source Code
-  description: Copy/paste detector for source code that finds duplicated, dead and overly complex code across 224 languages, scores overall codebase health, and fails the build when duplication crosses your threshold — a native Rust binary with an MCP server, agent skills, and an LLM-friendly reporter.
+  description: "Copy/paste detector for source code that finds duplicated, dead and overly complex code across 224 languages, scores overall codebase health, and fails the build when duplication crosses your threshold: a native Rust binary with a language server for your editor, an MCP server, five agent skills, a --compare mode that measures a port, and an LLM-friendly reporter."
   ogImage: https://jscpd.dev/og.png
 ---
 
@@ -13,7 +13,7 @@ orientation: horizontal
 Copy/Paste Detector for Source Code
 
 #description
-**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds exact, renamed, near-miss and semantic duplicates, and fails the build when they cross your threshold. One native binary, no runtime: a 159 MB codebase scans in 3.4 seconds. It also finds dead code, ranks complexity and scores codebase health, speaks MCP, ships agent skills, and has a reporter LLMs can afford to read.
+**Agents copy. Reviewers miss it. Your build shouldn't.** jscpd reads each of **224 languages** by its own syntax, finds exact, renamed, near-miss and semantic duplicates, and fails the build when they cross your threshold. One native binary, no runtime: a 159 MB codebase scans in 3.4 seconds. It also finds dead code, ranks complexity and scores codebase health, runs as a language server in your editor, measures how far a port to another language has come, speaks MCP, ships five agent skills, and has a reporter LLMs can afford to read.
 
 #links
   :::u-button
@@ -103,7 +103,7 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
   #description
   :copy-command{cmd="npx skills add kucherenko/jscpd"}
 
-  Skills that run the whole workflow: find duplicates, extract them, remove dead code, simplify complex files, then check the numbers improved.
+  Five skills that run the whole workflow: find duplicates and extract them, remove dead code, simplify complex files, check the numbers improved, or port a codebase to another language with `--compare` as the progress measure.
 
   <a href="/getting-started/agent-skill" class="feature-card-link">
     Install the agent skill
@@ -179,6 +179,42 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
 
   <a href="/guides/history" class="feature-card-link">
     Duplication trend over history
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-text-cursor-input
+  ---
+  #title
+  See it while you type
+
+  #description
+  :copy-command{cmd="jscpd --lsp"}
+
+  A language server for your editor. Clones, similar functions, dead code and complexity show up as diagnostics in the file you are editing, in Neovim, Helix, Sublime Text, Emacs and JetBrains IDEs.
+
+  <a href="/getting-started/configuration#editors" class="feature-card-link">
+    Editor setup
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-git-compare-arrows
+  ---
+  #title
+  Measure a port
+
+  #description
+  :copy-command{cmd="jscpd --compare python/ typescript/"}
+
+  Which functions of the source already have a counterpart in the target, and which are still to port. Pairs functions across languages with a code embedding model, measures tests apart from code, and tells a port from a copy. Experimental.
+
+  <a href="/getting-started/configuration#comparing-two-codebases" class="feature-card-link">
+    Compare two codebases
     <span class="link-arrow">→</span>
   </a>
   :::
@@ -287,7 +323,7 @@ id: how-teams-wire-it
 How teams wire it
 
 #description
-Four places, one binary. Each takes about a minute.
+Five places, one binary. Each takes about a minute.
 
 #features
   :::u-page-feature
@@ -361,12 +397,35 @@ Four places, one binary. Each takes about a minute.
   4. Agent skill
 
   #description
-  Teach the agent the workflow, not just the tool: scan, refactor duplicates, remove dead code, simplify complex files, check the health score improved.
+  Teach the agent the workflow, not just the tool: scan, refactor duplicates, remove dead code, simplify complex files, check the health score improved. Or port a codebase tests first, with `--compare` measuring progress.
 
-  :copy-command{cmd="npx skills add kucherenko/jscpd" caption="installs the jscpd, dry-refactoring and codebase-refactoring skills"}
+  :copy-command{cmd="npx skills add kucherenko/jscpd" caption="installs five skills: jscpd, dry-refactoring, codebase-refactoring, compare-codebases and code-migration"}
 
   <a href="/getting-started/agent-skill" class="feature-card-link">
     Skills for Claude, Copilot, Gemini, Cursor
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-text-cursor-input
+  ---
+  #title
+  5. Editor
+
+  #description
+  Get the same findings as diagnostics while you edit.
+
+  ```lua
+  -- init.lua, Neovim 0.11+
+  vim.lsp.config('jscpd', { cmd = { 'jscpd', '--lsp' },
+    root_markers = { '.jscpd.json', '.git' } })
+  vim.lsp.enable('jscpd')
+  ```
+
+  <a href="/getting-started/configuration#editors" class="feature-card-link">
+    Neovim, Helix, Sublime Text, Emacs, JetBrains
     <span class="link-arrow">→</span>
   </a>
   :::
@@ -604,6 +663,22 @@ Plug it into the tools you already run
 
   <a href="/ci-and-hooks/pre-commit" class="feature-card-link">
     Pre-commit docs
+    <span class="link-arrow">→</span>
+  </a>
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-text-cursor-input
+  ---
+  #title
+  Editors
+
+  #description
+  `jscpd --lsp` is a language server: clones, similar functions, dead code and complexity appear as diagnostics in the files you edit, with "Go to the other copy" on every clone. Works in Neovim, Helix, Sublime Text, Emacs and JetBrains IDEs.
+
+  <a href="/getting-started/configuration#editors" class="feature-card-link">
+    Editor setup
     <span class="link-arrow">→</span>
   </a>
   :::
