@@ -1,0 +1,347 @@
+{
+ "name": "pablostanley/yoinks",
+ "url": "https://github.com/pablostanley/yoinks",
+ "appearances": [
+  {
+   "date": "2026-10-02",
+   "rank": 7,
+   "stars": 3045,
+   "starsToday": 361,
+   "headSha": "6f03720813c22f907d3fb9ba98567f2169446b82",
+   "sources": 35,
+   "lines": 3076,
+   "clones": 2,
+   "duplicatedLines": 13,
+   "percentage": 0.42,
+   "healthScore": 31.4,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-02T05:30:30.297Z",
+  "name": "pablostanley/yoinks",
+  "url": "https://github.com/pablostanley/yoinks",
+  "description": "yoink any video from your terminal. no shady ads.",
+  "language": "TypeScript",
+  "stars": 3045,
+  "starsToday": 361,
+  "defaultBranch": "main",
+  "headSha": "6f03720813c22f907d3fb9ba98567f2169446b82",
+  "durationMs": 764,
+  "total": {
+   "sources": 35,
+   "lines": 3076,
+   "tokens": 19333,
+   "clones": 2,
+   "duplicatedLines": 13,
+   "duplicatedTokens": 118,
+   "percentage": 0.42,
+   "percentageTokens": 0.61
+  },
+  "formats": [
+   {
+    "format": "tsx",
+    "sources": 9,
+    "lines": 1115,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 0.63
+   },
+   {
+    "format": "markup",
+    "sources": 2,
+    "lines": 106,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 5.66
+   },
+   {
+    "format": "typescript",
+    "sources": 11,
+    "lines": 828,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 10,
+    "lines": 704,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 1,
+    "lines": 96,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 1,
+    "lines": 59,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markup",
+    "lines": 6,
+    "tokens": 64,
+    "firstFile": {
+     "name": "assets/logo-dark.svg",
+     "start": 5,
+     "end": 10
+    },
+    "secondFile": {
+     "name": "assets/logo-light.svg",
+     "start": 5,
+     "end": 10
+    }
+   },
+   {
+    "format": "tsx",
+    "lines": 7,
+    "tokens": 54,
+    "firstFile": {
+     "name": "src/app.tsx",
+     "start": 424,
+     "end": 430
+    },
+    "secondFile": {
+     "name": "src/app.tsx",
+     "start": 452,
+     "end": 458
+    }
+   }
+  ],
+  "health": {
+   "score": 31.4,
+   "grade": "E",
+   "size": {
+    "lines": 2805,
+    "files": 30,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0.2,
+     "adjusted": 1.6,
+     "lines": 7,
+     "halfLife": 8.5,
+     "formats": [
+      "tsx",
+      "typescript",
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 87.7
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 77.9,
+     "adjusted": 40.1,
+     "lines": 1521,
+     "halfLife": 7.5,
+     "coverage": 69.6,
+     "weight": 0.696,
+     "score": 2.5
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 37.5,
+     "adjusted": 30.6,
+     "lines": 1051,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 65.5
+    }
+   ]
+  },
+  "complexity": {
+   "total": 602,
+   "mean": 20.1,
+   "files": [
+    {
+     "path": "src/app.tsx",
+     "complexity": 130,
+     "lines": 513,
+     "bytes": 18827
+    },
+    {
+     "path": "src/lib/ytdlp.ts",
+     "complexity": 103,
+     "lines": 340,
+     "bytes": 11390
+    },
+    {
+     "path": "src/components/text-input.tsx",
+     "complexity": 85,
+     "lines": 198,
+     "bytes": 6897
+    },
+    {
+     "path": "src/components/logo.tsx",
+     "complexity": 37,
+     "lines": 110,
+     "bytes": 4184
+    },
+    {
+     "path": "src/lib/format.ts",
+     "complexity": 29,
+     "lines": 63,
+     "bytes": 2162
+    },
+    {
+     "path": "src/lib/click-map.ts",
+     "complexity": 22,
+     "lines": 82,
+     "bytes": 3158
+    },
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": "src/cli.tsx",
+     "complexity": 17,
+     "lines": 99,
+     "bytes": 2929
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 77.92,
+   "findings": 16,
+   "files": 21,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 12
+    },
+    {
+     "category": "unused-export",
+     "count": 2
+    },
+    {
+     "category": "unused-symbol",
+     "count": 1
+    },
+    {
+     "category": "unused-import",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/app.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 513
+    },
+    {
+     "category": "unused-file",
+     "path": "src/lib/ytdlp.ts",
+     "name": "",
+     "line": 1,
+     "lines": 340
+    },
+    {
+     "category": "unused-file",
+     "path": "src/components/text-input.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 198
+    },
+    {
+     "category": "unused-file",
+     "path": "src/components/logo.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 110
+    },
+    {
+     "category": "unused-file",
+     "path": "src/components/framed-input.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 77
+    },
+    {
+     "category": "unused-file",
+     "path": "src/lib/format.ts",
+     "name": "",
+     "line": 1,
+     "lines": 63
+    },
+    {
+     "category": "unused-file",
+     "path": "src/lib/use-mouse-click.ts",
+     "name": "",
+     "line": 1,
+     "lines": 43
+    },
+    {
+     "category": "unused-file",
+     "path": "src/components/fullscreen.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 41
+    },
+    {
+     "category": "unused-file",
+     "path": "src/components/panel.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 35
+    },
+    {
+     "category": "unused-file",
+     "path": "src/lib/history.ts",
+     "name": "",
+     "line": 1,
+     "lines": 27
+    }
+   ]
+  }
+ }
+}

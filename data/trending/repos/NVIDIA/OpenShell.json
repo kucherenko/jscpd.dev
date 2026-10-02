@@ -29,38 +29,52 @@
    "percentage": 12.08,
    "healthScore": 36.1,
    "healthGrade": "E"
+  },
+  {
+   "date": "2026-10-02",
+   "rank": 1,
+   "stars": 14111,
+   "starsToday": 2456,
+   "headSha": "76cfd0e31d5e1633db7ccd86ad9023ef7a2461b2",
+   "sources": 1752,
+   "lines": 786317,
+   "clones": 6876,
+   "duplicatedLines": 95996,
+   "percentage": 12.21,
+   "healthScore": 36,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-10-01",
-  "generatedAt": "2026-10-01T05:31:24.085Z",
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-02T05:30:30.297Z",
   "name": "NVIDIA/OpenShell",
   "url": "https://github.com/NVIDIA/OpenShell",
   "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
   "language": "Rust",
-  "stars": 13057,
-  "starsToday": 1281,
+  "stars": 14111,
+  "starsToday": 2456,
   "defaultBranch": "main",
-  "headSha": "021400be8af471f8669369e679de3e18cf0bd672",
-  "durationMs": 4313,
+  "headSha": "76cfd0e31d5e1633db7ccd86ad9023ef7a2461b2",
+  "durationMs": 2963,
   "total": {
-   "sources": 1780,
-   "lines": 791622,
-   "tokens": 5051570,
-   "clones": 6844,
-   "duplicatedLines": 95632,
-   "duplicatedTokens": 629069,
-   "percentage": 12.08,
-   "percentageTokens": 12.45
+   "sources": 1752,
+   "lines": 786317,
+   "tokens": 5019565,
+   "clones": 6876,
+   "duplicatedLines": 95996,
+   "duplicatedTokens": 630985,
+   "percentage": 12.21,
+   "percentageTokens": 12.57
   },
   "formats": [
    {
     "format": "rust",
-    "sources": 609,
-    "lines": 553345,
-    "clones": 5646,
-    "duplicatedLines": 68440,
-    "percentage": 12.37
+    "sources": 613,
+    "lines": 557116,
+    "clones": 5680,
+    "duplicatedLines": 68791,
+    "percentage": 12.35
    },
    {
     "format": "go",
@@ -72,35 +86,35 @@
    },
    {
     "format": "json",
-    "sources": 60,
-    "lines": 29233,
+    "sources": 59,
+    "lines": 28857,
     "clones": 294,
     "duplicatedLines": 16723,
-    "percentage": 57.21
+    "percentage": 57.95
    },
    {
     "format": "yaml",
-    "sources": 264,
-    "lines": 22662,
-    "clones": 154,
-    "duplicatedLines": 2285,
-    "percentage": 10.08
+    "sources": 263,
+    "lines": 22922,
+    "clones": 156,
+    "duplicatedLines": 2312,
+    "percentage": 10.09
    },
    {
     "format": "bash",
-    "sources": 193,
-    "lines": 34669,
-    "clones": 61,
-    "duplicatedLines": 846,
-    "percentage": 2.44
+    "sources": 182,
+    "lines": 31931,
+    "clones": 62,
+    "duplicatedLines": 878,
+    "percentage": 2.75
    },
    {
     "format": "python",
-    "sources": 61,
-    "lines": 21250,
-    "clones": 39,
-    "duplicatedLines": 473,
-    "percentage": 2.23
+    "sources": 53,
+    "lines": 18621,
+    "clones": 38,
+    "duplicatedLines": 462,
+    "percentage": 2.48
    },
    {
     "format": "markup",
@@ -128,11 +142,11 @@
    },
    {
     "format": "markdown",
-    "sources": 155,
-    "lines": 33953,
-    "clones": 10,
-    "duplicatedLines": 190,
-    "percentage": 0.56
+    "sources": 156,
+    "lines": 32008,
+    "clones": 11,
+    "duplicatedLines": 235,
+    "percentage": 0.73
    }
   ],
   "topClones": [
@@ -288,11 +302,11 @@
    }
   ],
   "health": {
-   "score": 36.1,
+   "score": 36,
    "grade": "E",
    "size": {
-    "lines": 685160,
-    "files": 1045,
+    "lines": 683801,
+    "files": 1033,
     "class": "L"
    },
    "dimensions": [
@@ -300,8 +314,8 @@
      "id": "duplication",
      "source": "jscpd",
      "value": 11.1,
-     "adjusted": 11,
-     "lines": 75848,
+     "adjusted": 11.1,
+     "lines": 76220,
      "halfLife": 8.5,
      "formats": [
       "rust",
@@ -322,17 +336,17 @@
       "data"
      ],
      "weight": 1,
-     "score": 40.6
+     "score": 40.4
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 82.2,
-     "adjusted": 82,
-     "lines": 563239,
+     "value": 82.3,
+     "adjusted": 82.1,
+     "lines": 562957,
      "halfLife": 50,
      "weight": 1,
-     "score": 32.1
+     "score": 32
     }
    ],
    "skipped": [
@@ -343,8 +357,8 @@
    ]
   },
   "complexity": {
-   "total": 73979,
-   "mean": 70.8,
+   "total": 73588,
+   "mean": 71.2,
    "files": [
     {
      "path": "sdk/go/proto/openshellv1/openshell.pb.go",
@@ -354,9 +368,9 @@
     },
     {
      "path": "crates/openshell-server/src/grpc/policy.rs",
-     "complexity": 1516,
-     "lines": 22855,
-     "bytes": 855915
+     "complexity": 1551,
+     "lines": 23492,
+     "bytes": 880482
     },
     {
      "path": "crates/openshell-server/src/compute/mod.rs",
@@ -366,9 +380,9 @@
     },
     {
      "path": "crates/openshell-driver-vm/src/driver.rs",
-     "complexity": 1341,
-     "lines": 11422,
-     "bytes": 427451
+     "complexity": 1344,
+     "lines": 11459,
+     "bytes": 428925
     },
     {
      "path": "crates/openshell-driver-kubernetes/src/driver.rs",
@@ -378,9 +392,9 @@
     },
     {
      "path": "crates/openshell-cli/src/run.rs",
-     "complexity": 1188,
-     "lines": 8209,
-     "bytes": 279464
+     "complexity": 1216,
+     "lines": 8455,
+     "bytes": 289404
     },
     {
      "path": "crates/openshell-supervisor-network/src/l7/rest.rs",
@@ -403,15 +417,15 @@
     {
      "path": "crates/openshell-driver-docker/src/lib.rs",
      "complexity": 958,
-     "lines": 6589,
-     "bytes": 242187
+     "lines": 6586,
+     "bytes": 242093
     }
    ]
   },
   "deadCode": {
-   "percentage": 0.45,
+   "percentage": 0.5,
    "findings": 3,
-   "files": 87,
+   "files": 79,
    "byCategory": [
     {
      "category": "unused-file",
