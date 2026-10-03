@@ -213,7 +213,7 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
 
   Which functions of the source already have a counterpart in the target, and which are still to port. Pairs functions across languages with a code embedding model, measures tests apart from code, and tells a port from a copy. Experimental.
 
-  <a href="/getting-started/configuration#comparing-two-codebases" class="feature-card-link">
+  <a href="/guides/compare" class="feature-card-link">
     Compare two codebases
     <span class="link-arrow">→</span>
   </a>
