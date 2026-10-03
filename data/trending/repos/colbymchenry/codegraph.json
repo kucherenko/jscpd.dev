@@ -15,38 +15,52 @@
    "percentage": 9.71,
    "healthScore": 52.4,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-10-03",
+   "rank": 5,
+   "stars": 73016,
+   "starsToday": 98,
+   "headSha": "dbb3d63cb1a92d04112dcc9ebb53bea4d1e317fb",
+   "sources": 1463,
+   "lines": 402753,
+   "clones": 2708,
+   "duplicatedLines": 38702,
+   "percentage": 9.61,
+   "healthScore": 52.7,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-10-01",
-  "generatedAt": "2026-10-01T05:31:24.085Z",
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-03T05:37:27.560Z",
   "name": "colbymchenry/codegraph",
   "url": "https://github.com/colbymchenry/codegraph",
   "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
   "language": "C",
-  "stars": 72654,
-  "starsToday": 118,
+  "stars": 73016,
+  "starsToday": 98,
   "defaultBranch": "main",
-  "headSha": "34ede4de888c55aab170c3d6349c60d8dc56e7f2",
-  "durationMs": 2251,
+  "headSha": "dbb3d63cb1a92d04112dcc9ebb53bea4d1e317fb",
+  "durationMs": 2153,
   "total": {
-   "sources": 1432,
-   "lines": 395215,
-   "tokens": 2764055,
-   "clones": 2672,
-   "duplicatedLines": 38372,
-   "duplicatedTokens": 247591,
-   "percentage": 9.71,
-   "percentageTokens": 8.96
+   "sources": 1463,
+   "lines": 402753,
+   "tokens": 2818477,
+   "clones": 2708,
+   "duplicatedLines": 38702,
+   "duplicatedTokens": 250579,
+   "percentage": 9.61,
+   "percentageTokens": 8.89
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 843,
-    "lines": 273232,
-    "clones": 1568,
-    "duplicatedLines": 18628,
-    "percentage": 6.82
+    "sources": 874,
+    "lines": 280562,
+    "clones": 1604,
+    "duplicatedLines": 18958,
+    "percentage": 6.76
    },
    {
     "format": "rust",
@@ -75,15 +89,15 @@
    {
     "format": "html",
     "sources": 57,
-    "lines": 4021,
+    "lines": 4030,
     "clones": 34,
     "duplicatedLines": 360,
-    "percentage": 8.95
+    "percentage": 8.93
    },
    {
     "format": "javascript",
     "sources": 50,
-    "lines": 8293,
+    "lines": 8297,
     "clones": 23,
     "duplicatedLines": 214,
     "percentage": 2.58
@@ -99,7 +113,7 @@
    {
     "format": "markdown",
     "sources": 96,
-    "lines": 29953,
+    "lines": 30054,
     "clones": 18,
     "duplicatedLines": 215,
     "percentage": 0.72
@@ -115,7 +129,7 @@
    {
     "format": "diff",
     "sources": 3,
-    "lines": 1822,
+    "lines": 1826,
     "clones": 7,
     "duplicatedLines": 46,
     "percentage": 2.52
@@ -274,20 +288,20 @@
    }
   ],
   "health": {
-   "score": 52.4,
+   "score": 52.7,
    "grade": "D",
    "size": {
-    "lines": 346927,
-    "files": 1045,
+    "lines": 354349,
+    "files": 1076,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 10.6,
-     "adjusted": 10.5,
-     "lines": 36709,
+     "value": 10.5,
+     "adjusted": 10.4,
+     "lines": 37039,
      "halfLife": 8.5,
      "formats": [
       "typescript",
@@ -311,10 +325,10 @@
       "swift",
       "cpp",
       "r",
+      "powershell",
       "perl",
       "java",
       "lua",
-      "powershell",
       "cpp-header"
      ],
      "excluded": [
@@ -323,58 +337,58 @@
       "data"
      ],
      "weight": 1,
-     "score": 42.3
+     "score": 42.8
     },
     {
      "id": "dead-code",
      "source": "jscpd",
      "value": 0.3,
      "adjusted": 0.3,
-     "lines": 901,
+     "lines": 966,
      "halfLife": 7.5,
-     "coverage": 84.4,
-     "weight": 0.844,
-     "score": 97
+     "coverage": 84.7,
+     "weight": 0.847,
+     "score": 96.9
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 68.8,
-     "adjusted": 68.6,
-     "lines": 238806,
+     "value": 68.5,
+     "adjusted": 68.2,
+     "lines": 242707,
      "halfLife": 50,
      "weight": 1,
-     "score": 38.7
+     "score": 38.8
     }
    ]
   },
   "complexity": {
-   "total": 64528,
-   "mean": 61.7,
+   "total": 66145,
+   "mean": 61.5,
    "files": [
     {
      "path": "src/resolution/name-matcher.ts",
-     "complexity": 3981,
-     "lines": 9594,
-     "bytes": 492353
+     "complexity": 4309,
+     "lines": 10116,
+     "bytes": 520843
     },
     {
      "path": "__tests__/extraction.test.ts",
-     "complexity": 2686,
-     "lines": 13349,
-     "bytes": 531354
+     "complexity": 2740,
+     "lines": 13507,
+     "bytes": 538993
     },
     {
      "path": "src/extraction/tree-sitter.ts",
      "complexity": 2107,
-     "lines": 7644,
-     "bytes": 357417
+     "lines": 7649,
+     "bytes": 357745
     },
     {
      "path": "src/mcp/tools.ts",
-     "complexity": 1796,
-     "lines": 8452,
-     "bytes": 433377
+     "complexity": 1816,
+     "lines": 8566,
+     "bytes": 438981
     },
     {
      "path": "src/resolution/callback-synthesizer.ts",
@@ -384,27 +398,27 @@
     },
     {
      "path": "__tests__/resolution.test.ts",
-     "complexity": 1082,
-     "lines": 6292,
-     "bytes": 258035
+     "complexity": 1084,
+     "lines": 6314,
+     "bytes": 258640
     },
     {
      "path": "src/graph/branch-guards.ts",
-     "complexity": 839,
-     "lines": 2396,
-     "bytes": 96429
+     "complexity": 838,
+     "lines": 2397,
+     "bytes": 96511
     },
     {
      "path": "src/resolution/import-resolver.ts",
-     "complexity": 705,
-     "lines": 2789,
-     "bytes": 113508
+     "complexity": 743,
+     "lines": 2889,
+     "bytes": 118835
     },
     {
      "path": "src/resolution/index.ts",
-     "complexity": 682,
-     "lines": 3070,
-     "bytes": 142704
+     "complexity": 689,
+     "lines": 3084,
+     "bytes": 143793
     },
     {
      "path": "src/ui-server/api/steps.ts",
@@ -415,17 +429,17 @@
    ]
   },
   "deadCode": {
-   "percentage": 0.31,
-   "findings": 36,
-   "files": 911,
+   "percentage": 0.32,
+   "findings": 39,
+   "files": 942,
    "byCategory": [
     {
      "category": "unused-file",
-     "count": 7
+     "count": 8
     },
     {
      "category": "unused-export",
-     "count": 11
+     "count": 13
     },
     {
      "category": "unused-symbol",
@@ -439,24 +453,24 @@
    "largest": [
     {
      "category": "unused-file",
-     "path": "src/extraction/parse-worker.ts",
-     "name": "",
-     "line": 1,
-     "lines": 150
-    },
-    {
-     "category": "unused-file",
      "path": "src/extraction/store-worker.ts",
      "name": "",
      "line": 1,
-     "lines": 149
+     "lines": 153
+    },
+    {
+     "category": "unused-file",
+     "path": "src/extraction/parse-worker.ts",
+     "name": "",
+     "line": 1,
+     "lines": 152
     },
     {
      "category": "unused-file",
      "path": "src/resolution/resolver-worker.ts",
      "name": "",
      "line": 1,
-     "lines": 140
+     "lines": 143
     },
     {
      "category": "unused-file",
@@ -483,7 +497,7 @@
      "category": "unused-symbol",
      "path": "src/mcp/proxy.ts",
      "name": "pipeUntilClose",
-     "line": 515,
+     "line": 659,
      "lines": 34
     },
     {
@@ -491,21 +505,21 @@
      "path": "src/mcp/index-freshness-worker.ts",
      "name": "",
      "line": 1,
-     "lines": 23
+     "lines": 29
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ui-server/highlight/tokenize-worker.ts",
+     "name": "",
+     "line": 1,
+     "lines": 25
     },
     {
      "category": "unused-symbol",
      "path": "src/mcp/proxy.ts",
      "name": "startPpidWatchdog",
-     "line": 559,
+     "line": 703,
      "lines": 23
-    },
-    {
-     "category": "unused-symbol",
-     "path": "ui/src/components/steps/StepBox.svelte",
-     "name": "cutNote",
-     "line": 37,
-     "lines": 18
     }
    ]
   }

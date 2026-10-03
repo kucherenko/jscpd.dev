@@ -15,62 +15,76 @@
    "percentage": 2.18,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-10-03",
+   "rank": 1,
+   "stars": 88922,
+   "starsToday": 696,
+   "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
+   "sources": 140,
+   "lines": 24133,
+   "clones": 63,
+   "duplicatedLines": 704,
+   "percentage": 2.92,
+   "healthScore": 71.3,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-15",
-  "generatedAt": "2026-09-15T05:28:35.758Z",
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-03T05:37:27.560Z",
   "name": "Panniantong/Agent-Reach",
   "url": "https://github.com/Panniantong/Agent-Reach",
   "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
   "language": "Python",
-  "stars": 81551,
-  "starsToday": 651,
+  "stars": 88922,
+  "starsToday": 696,
   "defaultBranch": "main",
-  "headSha": "da5044d26fc6adddb6554d5679c94ac22e76e428",
-  "durationMs": 472,
+  "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
+  "durationMs": 768,
   "total": {
-   "sources": 138,
-   "lines": 25627,
-   "tokens": 128220,
-   "clones": 54,
-   "duplicatedLines": 558,
-   "duplicatedTokens": 3562,
-   "percentage": 2.18,
-   "percentageTokens": 2.78
+   "sources": 140,
+   "lines": 24133,
+   "tokens": 136693,
+   "clones": 63,
+   "duplicatedLines": 704,
+   "duplicatedTokens": 4156,
+   "percentage": 2.92,
+   "percentageTokens": 3.04
   },
   "formats": [
    {
     "format": "python",
-    "sources": 66,
-    "lines": 17157,
-    "clones": 48,
-    "duplicatedLines": 502,
-    "percentage": 2.93
+    "sources": 68,
+    "lines": 17781,
+    "clones": 56,
+    "duplicatedLines": 625,
+    "percentage": 3.51
    },
    {
     "format": "markdown",
     "sources": 27,
-    "lines": 3568,
-    "clones": 4,
-    "duplicatedLines": 34,
-    "percentage": 0.95
+    "lines": 3901,
+    "clones": 5,
+    "duplicatedLines": 55,
+    "percentage": 1.41
    },
    {
     "format": "bash",
     "sources": 27,
-    "lines": 2888,
+    "lines": 1584,
     "clones": 1,
-    "duplicatedLines": 17,
-    "percentage": 0.59
+    "duplicatedLines": 18,
+    "percentage": 1.14
    },
    {
     "format": "text",
     "sources": 5,
-    "lines": 1256,
+    "lines": 118,
     "clones": 1,
-    "duplicatedLines": 5,
-    "percentage": 0.4
+    "duplicatedLines": 6,
+    "percentage": 5.08
    },
    {
     "format": "markup",
@@ -91,7 +105,7 @@
    {
     "format": "yaml",
     "sources": 3,
-    "lines": 135,
+    "lines": 126,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -142,6 +156,21 @@
      "name": "tests/test_transcribe.py",
      "start": 212,
      "end": 233
+    }
+   },
+   {
+    "format": "markdown",
+    "lines": 17,
+    "tokens": 107,
+    "firstFile": {
+     "name": "agent_reach/skill/references/career.md:markdown",
+     "start": 122,
+     "end": 138
+    },
+    "secondFile": {
+     "name": "docs/install.md:markdown",
+     "start": 328,
+     "end": 343
     }
    },
    {
@@ -221,17 +250,17 @@
    },
    {
     "format": "python",
-    "lines": 16,
-    "tokens": 78,
+    "lines": 11,
+    "tokens": 77,
     "firstFile": {
-     "name": "tests/test_cookie_security.py",
-     "start": 33,
-     "end": 48
+     "name": "tests/test_boss_channel.py",
+     "start": 107,
+     "end": 117
     },
     "secondFile": {
-     "name": "tests/test_cookie_security.py",
-     "start": 85,
-     "end": 99
+     "name": "tests/test_boss_channel.py",
+     "start": 129,
+     "end": 139
     }
    },
    {
@@ -248,22 +277,174 @@
      "start": 1242,
      "end": 1255
     }
-   },
-   {
-    "format": "python",
-    "lines": 9,
-    "tokens": 75,
-    "firstFile": {
-     "name": "tests/test_channels.py",
-     "start": 250,
-     "end": 258
-    },
-    "secondFile": {
-     "name": "tests/test_channels.py",
-     "start": 268,
-     "end": 276
-    }
    }
-  ]
+  ],
+  "health": {
+   "score": 71.3,
+   "grade": "B",
+   "size": {
+    "lines": 19166,
+    "files": 80,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.4,
+     "adjusted": 3.4,
+     "lines": 643,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 76
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.1,
+     "adjusted": 0.4,
+     "lines": 15,
+     "halfLife": 7.5,
+     "coverage": 92.9,
+     "weight": 0.929,
+     "score": 96.5
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 52.5,
+     "adjusted": 49.5,
+     "lines": 10055,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 50.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 2489,
+   "mean": 31.1,
+   "files": [
+    {
+     "path": "agent_reach/cli.py",
+     "complexity": 457,
+     "lines": 2399,
+     "bytes": 89749
+    },
+    {
+     "path": "tests/test_channels.py",
+     "complexity": 180,
+     "lines": 1822,
+     "bytes": 65038
+    },
+    {
+     "path": "tests/test_p0_cli.py",
+     "complexity": 125,
+     "lines": 1398,
+     "bytes": 40315
+    },
+    {
+     "path": "agent_reach/channels/xiaohongshu.py",
+     "complexity": 97,
+     "lines": 305,
+     "bytes": 11717
+    },
+    {
+     "path": "tests/test_transcribe.py",
+     "complexity": 92,
+     "lines": 908,
+     "bytes": 32193
+    },
+    {
+     "path": "agent_reach/transcribe.py",
+     "complexity": 78,
+     "lines": 499,
+     "bytes": 16108
+    },
+    {
+     "path": "agent_reach/channels/boss.py",
+     "complexity": 67,
+     "lines": 336,
+     "bytes": 14515
+    },
+    {
+     "path": "agent_reach/cookie_extract.py",
+     "complexity": 66,
+     "lines": 506,
+     "bytes": 16398
+    },
+    {
+     "path": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+     "complexity": 53,
+     "lines": 394,
+     "bytes": 13161
+    },
+    {
+     "path": "agent_reach/channels/v2ex.py",
+     "complexity": 52,
+     "lines": 348,
+     "bytes": 11831
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.08,
+   "findings": 4,
+   "files": 71,
+   "byCategory": [
+    {
+     "category": "unused-export",
+     "count": 2
+    },
+    {
+     "category": "unused-symbol",
+     "count": 1
+    },
+    {
+     "category": "unused-import",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-export",
+     "path": "agent_reach/utils/text.py",
+     "name": "read_utf8_text",
+     "line": 31,
+     "lines": 7
+    },
+    {
+     "category": "unused-export",
+     "path": "agent_reach/utils/process.py",
+     "name": "mcporter_utf8_env_args",
+     "line": 21,
+     "lines": 6
+    },
+    {
+     "category": "unused-import",
+     "path": "agent_reach/channels/rss.py",
+     "name": "feedparser",
+     "line": 18,
+     "lines": 1
+    },
+    {
+     "category": "unused-symbol",
+     "path": "agent_reach/cookie_extract.py",
+     "name": "_sync_bird_credentials",
+     "line": 411,
+     "lines": 1
+    }
+   ]
+  }
  }
 }
