@@ -29,70 +29,84 @@
    "percentage": 7.45,
    "healthScore": 58.6,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-10-04",
+   "rank": 6,
+   "stars": 112259,
+   "starsToday": 408,
+   "headSha": "200387122ca450d6387f033949423114a270b96c",
+   "sources": 1812,
+   "lines": 431800,
+   "clones": 2440,
+   "duplicatedLines": 31861,
+   "percentage": 7.38,
+   "healthScore": 58.8,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-10-02",
-  "generatedAt": "2026-10-02T05:30:30.297Z",
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-04T07:13:25.094Z",
   "name": "earendil-works/pi",
   "url": "https://github.com/earendil-works/pi",
   "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
   "language": "TypeScript",
-  "stars": 111357,
-  "starsToday": 298,
+  "stars": 112259,
+  "starsToday": 408,
   "defaultBranch": "main",
-  "headSha": "7fbbd5f4a1d982bb02d63472dde0774fa639f99b",
-  "durationMs": 2056,
+  "headSha": "200387122ca450d6387f033949423114a270b96c",
+  "durationMs": 2485,
   "total": {
-   "sources": 1805,
-   "lines": 431475,
-   "tokens": 3110112,
-   "clones": 2450,
-   "duplicatedLines": 32146,
-   "duplicatedTokens": 205313,
-   "percentage": 7.45,
-   "percentageTokens": 6.6
+   "sources": 1812,
+   "lines": 431800,
+   "tokens": 3123286,
+   "clones": 2440,
+   "duplicatedLines": 31861,
+   "duplicatedTokens": 203792,
+   "percentage": 7.38,
+   "percentageTokens": 6.52
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 1531,
-    "lines": 376389,
-    "clones": 2335,
-    "duplicatedLines": 30580,
-    "percentage": 8.12
+    "sources": 1536,
+    "lines": 378166,
+    "clones": 2337,
+    "duplicatedLines": 30607,
+    "percentage": 8.09
    },
    {
     "format": "markdown",
     "sources": 106,
-    "lines": 33336,
-    "clones": 50,
-    "duplicatedLines": 577,
-    "percentage": 1.73
+    "lines": 33645,
+    "clones": 51,
+    "duplicatedLines": 608,
+    "percentage": 1.81
    },
    {
     "format": "javascript",
-    "sources": 44,
-    "lines": 9603,
-    "clones": 43,
-    "duplicatedLines": 632,
-    "percentage": 6.58
+    "sources": 46,
+    "lines": 9571,
+    "clones": 31,
+    "duplicatedLines": 314,
+    "percentage": 3.28
    },
    {
     "format": "yaml",
-    "sources": 13,
-    "lines": 2162,
+    "sources": 14,
+    "lines": 2350,
     "clones": 17,
     "duplicatedLines": 230,
-    "percentage": 10.64
+    "percentage": 9.79
    },
    {
     "format": "json",
-    "sources": 43,
-    "lines": 4990,
-    "clones": 3,
-    "duplicatedLines": 110,
-    "percentage": 2.2
+    "sources": 42,
+    "lines": 3063,
+    "clones": 2,
+    "duplicatedLines": 85,
+    "percentage": 2.78
    },
    {
     "format": "css",
@@ -105,7 +119,7 @@
    {
     "format": "bash",
     "sources": 37,
-    "lines": 1882,
+    "lines": 1892,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -257,21 +271,6 @@
     }
    },
    {
-    "format": "javascript",
-    "lines": 122,
-    "tokens": 586,
-    "firstFile": {
-     "name": "scripts/generate-coding-agent-install-lock.mjs",
-     "start": 16,
-     "end": 137
-    },
-    "secondFile": {
-     "name": "scripts/generate-coding-agent-shrinkwrap.mjs",
-     "start": 13,
-     "end": 134
-    }
-   },
-   {
     "format": "typescript",
     "lines": 42,
     "tokens": 515,
@@ -285,23 +284,38 @@
      "start": 65,
      "end": 106
     }
+   },
+   {
+    "format": "typescript",
+    "lines": 60,
+    "tokens": 430,
+    "firstFile": {
+     "name": "packages/ai/test/openai-codex-stream.test.ts",
+     "start": 101,
+     "end": 160
+    },
+    "secondFile": {
+     "name": "packages/ai/test/openai-codex-stream.test.ts",
+     "start": 1184,
+     "end": 1244
+    }
    }
   ],
   "health": {
-   "score": 58.6,
+   "score": 58.8,
    "grade": "C",
    "size": {
-    "lines": 384745,
-    "files": 1574,
+    "lines": 386490,
+    "files": 1581,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 7.9,
-     "adjusted": 7.9,
-     "lines": 30302,
+     "value": 7.8,
+     "adjusted": 7.7,
+     "lines": 30011,
      "halfLife": 8.5,
      "formats": [
       "typescript",
@@ -319,7 +333,7 @@
       "data"
      ],
      "weight": 1,
-     "score": 52.7
+     "score": 53.2
     },
     {
      "id": "dead-code",
@@ -335,9 +349,9 @@
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 66,
-     "adjusted": 65.8,
-     "lines": 254068,
+     "value": 65.9,
+     "adjusted": 65.7,
+     "lines": 254860,
      "halfLife": 50,
      "weight": 1,
      "score": 40.2
@@ -345,26 +359,26 @@
    ]
   },
   "complexity": {
-   "total": 69084,
+   "total": 69409,
    "mean": 43.9,
    "files": [
     {
      "path": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
-     "complexity": 1492,
-     "lines": 7025,
-     "bytes": 246965
+     "complexity": 1500,
+     "lines": 7037,
+     "bytes": 247544
     },
     {
      "path": "packages/ai/scripts/generate-models.ts",
-     "complexity": 970,
-     "lines": 3680,
-     "bytes": 130278
+     "complexity": 961,
+     "lines": 3693,
+     "bytes": 130930
     },
     {
      "path": "packages/coding-agent/src/core/agent-session.ts",
-     "complexity": 704,
-     "lines": 4348,
-     "bytes": 158080
+     "complexity": 705,
+     "lines": 4349,
+     "bytes": 158139
     },
     {
      "path": "packages/chord/src/delta/tracker.ts",
@@ -386,15 +400,15 @@
     },
     {
      "path": "packages/ai/src/api/openai-completions.ts",
-     "complexity": 522,
-     "lines": 1726,
-     "bytes": 63058
+     "complexity": 524,
+     "lines": 1734,
+     "bytes": 63176
     },
     {
      "path": "packages/tui/src/tui-alt-screen.ts",
-     "complexity": 497,
-     "lines": 1755,
-     "bytes": 63437
+     "complexity": 520,
+     "lines": 1778,
+     "bytes": 64641
     },
     {
      "path": "packages/durable/test/harness-structured.test.ts",
@@ -413,7 +427,7 @@
   "deadCode": {
    "percentage": 0.49,
    "findings": 22,
-   "files": 1592,
+   "files": 1599,
    "byCategory": [
     {
      "category": "unused-file",
