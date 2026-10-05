@@ -278,7 +278,7 @@ Exact copies are the easy case. jscpd also reports renamed, near-miss and semant
   #description
   :copy-command{cmd="jscpd . --max-gap-lines 2 --similarity 0.7"}
 
-  Type-3: a copy with a few inserted or changed lines (`--max-gap-lines N`), or a JavaScript/TypeScript function with the same structure (`--similarity RATIO`, compared by syntax tree). Reported as `similar` with a score.
+  Type-3: a copy with a few inserted or changed lines (`--max-gap-lines N`), or a JavaScript, TypeScript or Python function with the same structure (`--similarity RATIO`, compared by syntax tree). Reported as `similar` with a score.
 
   <a href="/guides/clone-types#type-3-near-miss-clones" class="feature-card-link">
     Type-3 clones
