@@ -85,7 +85,7 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
   #description
   :copy-command{cmd="jscpd --mcp"}
 
-  MCP server built into the binary. Claude, Cursor or any MCP client can check for clones before writing more.
+  MCP server built into the binary. Claude, Cursor or any MCP client can check for exact, renamed, near-miss and semantic copies before writing more.
 
   <a href="/api/mcp-server" class="feature-card-link">
     MCP server docs
