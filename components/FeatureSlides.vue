@@ -77,7 +77,7 @@ const slides: Slide[] = [
     id: 'similar',
     label: 'Near-miss',
     title: 'Near-miss clones',
-    caption: 'A copy with a few lines inserted or changed. `--max-gap-lines` merges the two halves across the gap; `--similarity` compares whole JavaScript and TypeScript functions by syntax tree. Both report `similar` with a score.',
+    caption: 'A copy with a few lines inserted or changed. `--max-gap-lines` merges the two halves across the gap; `--similarity` compares whole JavaScript, TypeScript and Python functions by syntax tree. Both report `similar` with a score.',
     to: '/concepts/clone-types#type-3-near-miss-clones',
     linkLabel: 'Type-3 clones',
     screenTitle: 'fixtures/type3-demo',
