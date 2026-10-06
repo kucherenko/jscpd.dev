@@ -76,8 +76,10 @@ export default defineNuxtConfig({
   },
 
   // Old documentation URLs (the tree was reorganised in October 2026 into
-  // Start / Guides / Concepts / Reference / Project). Nitro turns these
-  // into Cloudflare Pages _redirects on build and serves them in dev.
+  // Start / Guides / Concepts / Reference / Project). These rules serve
+  // `nuxt dev`; production is a `nuxt generate` with the static preset,
+  // which writes no _redirects, so public/_redirects carries the same list
+  // and scripts/check-links.mjs keeps the two in step.
   routeRules: {
     "/getting-started/configuration": { redirect: { to: "/reference/config-file", statusCode: 301 } },
     "/getting-started/supported-formats": { redirect: { to: "/reference/supported-formats", statusCode: 301 } },
