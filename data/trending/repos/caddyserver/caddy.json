@@ -15,38 +15,52 @@
    "percentage": 5.57,
    "healthScore": 51.3,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-10-06",
+   "rank": 6,
+   "stars": 77230,
+   "starsToday": 515,
+   "headSha": "700d60327d77d56ba81455acb989a698f1819640",
+   "sources": 398,
+   "lines": 125710,
+   "clones": 548,
+   "duplicatedLines": 6978,
+   "percentage": 5.55,
+   "healthScore": 51.3,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-10-05",
-  "generatedAt": "2026-10-05T05:41:32.107Z",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T05:31:17.340Z",
   "name": "caddyserver/caddy",
   "url": "https://github.com/caddyserver/caddy",
   "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
   "language": "Go",
-  "stars": 76652,
-  "starsToday": 24,
+  "stars": 77230,
+  "starsToday": 515,
   "defaultBranch": "master",
-  "headSha": "8507b63cf03a7a0d90b2084f3aafbcc1d8e60a7b",
-  "durationMs": 1026,
+  "headSha": "700d60327d77d56ba81455acb989a698f1819640",
+  "durationMs": 972,
   "total": {
-   "sources": 397,
-   "lines": 125184,
-   "tokens": 663193,
-   "clones": 547,
-   "duplicatedLines": 6969,
-   "duplicatedTokens": 43697,
-   "percentage": 5.57,
-   "percentageTokens": 6.59
+   "sources": 398,
+   "lines": 125710,
+   "tokens": 666432,
+   "clones": 548,
+   "duplicatedLines": 6978,
+   "duplicatedTokens": 43784,
+   "percentage": 5.55,
+   "percentageTokens": 6.57
   },
   "formats": [
    {
     "format": "go",
-    "sources": 358,
-    "lines": 115640,
-    "clones": 508,
-    "duplicatedLines": 6605,
-    "percentage": 5.71
+    "sources": 359,
+    "lines": 116166,
+    "clones": 509,
+    "duplicatedLines": 6614,
+    "percentage": 5.69
    },
    {
     "format": "markup",
@@ -261,8 +275,8 @@
    "score": 51.3,
    "grade": "D",
    "size": {
-    "lines": 116427,
-    "files": 367,
+    "lines": 116953,
+    "files": 368,
     "class": "L"
    },
    "dimensions": [
@@ -271,7 +285,7 @@
      "source": "jscpd",
      "value": 5.7,
      "adjusted": 5.6,
-     "lines": 6605,
+     "lines": 6614,
      "halfLife": 8.5,
      "formats": [
       "go",
@@ -290,8 +304,8 @@
      "id": "complexity",
      "source": "jscpd",
      "value": 64,
-     "adjusted": 63.2,
-     "lines": 74487,
+     "adjusted": 63.3,
+     "lines": 74843,
      "halfLife": 50,
      "weight": 1,
      "score": 41.6
@@ -305,8 +319,8 @@
    ]
   },
   "complexity": {
-   "total": 16936,
-   "mean": 46.1,
+   "total": 17009,
+   "mean": 46.2,
    "files": [
     {
      "path": "modules/caddyhttp/reverseproxy/caddyfile.go",
@@ -347,8 +361,8 @@
     {
      "path": "modules/caddyhttp/server.go",
      "complexity": 247,
-     "lines": 1648,
-     "bytes": 59113
+     "lines": 1651,
+     "bytes": 59360
     },
     {
      "path": "admin.go",
@@ -357,16 +371,16 @@
      "bytes": 49722
     },
     {
+     "path": "modules/caddytls/connpolicy.go",
+     "complexity": 229,
+     "lines": 1150,
+     "bytes": 40283
+    },
+    {
      "path": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
      "complexity": 227,
      "lines": 962,
      "bytes": 28641
-    },
-    {
-     "path": "modules/caddytls/connpolicy.go",
-     "complexity": 226,
-     "lines": 1140,
-     "bytes": 39865
     }
    ]
   },

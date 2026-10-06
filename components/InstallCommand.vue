@@ -1,99 +1,42 @@
 <template>
-  <div class="hero-terminal-wrapper">
-    <div class="hero-terminal">
-      <div class="terminal-header">
-        <div class="terminal-header-left">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-          <span class="terminal-title">Terminal</span>
-        </div>
-        <div class="install-section" :class="{ 'has-more': stripHasMore }">
-          <div ref="tabStrip" class="install-tabs" @scroll.passive="updateStripHint">
-            <button
-              :class="['install-tab', { active: activeTab === 'npx' }]"
-              @click="activeTab = 'npx'"
-            >
-              <Icon name="simple-icons:nodedotjs" class="tab-icon" />
-              npx
-            </button>
-            <button
-              :class="['install-tab', { active: activeTab === 'curl' }]"
-              @click="activeTab = 'curl'"
-            >
-              <Icon name="lucide:terminal" class="tab-icon" />
-              curl
-            </button>
-            <button
-              :class="['install-tab', { active: activeTab === 'windows' }]"
-              @click="activeTab = 'windows'"
-            >
-              <Icon name="simple-icons:windows" class="tab-icon" />
-              windows
-            </button>
-            <button
-              :class="['install-tab', { active: activeTab === 'npm' }]"
-              @click="activeTab = 'npm'"
-            >
-              <Icon name="simple-icons:npm" class="tab-icon" />
-              npm
-            </button>
-            <button
-              :class="['install-tab', { active: activeTab === 'pip' }]"
-              @click="activeTab = 'pip'"
-            >
-              <Icon name="simple-icons:python" class="tab-icon" />
-              pip
-            </button>
-            <button
-              :class="['install-tab', { active: activeTab === 'cargo' }]"
-              @click="activeTab = 'cargo'"
-            >
-              <Icon name="simple-icons:rust" class="tab-icon" />
-              cargo
-            </button>
-            <button
-              :class="['install-tab', { active: activeTab === 'brew' }]"
-              @click="activeTab = 'brew'"
-            >
-              <Icon name="simple-icons:homebrew" class="tab-icon" />
-              brew
-            </button>
-            <button
-              :class="['install-tab', { active: activeTab === 'nix' }]"
-              @click="activeTab = 'nix'"
-            >
-              <Icon name="simple-icons:nixos" class="tab-icon" />
-              nix
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="terminal-body">
-        <div class="command-line">
-          <span class="prompt">$</span>
-          <code ref="commandText">{{ activeCommand }}</code>
-          <button class="copy-btn" type="button" aria-label="Copy command" @click="copyCommand" :title="copied ? 'Copied!' : 'Copy to clipboard'">
-            <Icon v-if="!copied" name="lucide:copy" class="copy-icon" />
-            <Icon v-else name="lucide:check" class="copy-icon copied" />
+  <TerminalFrame title="Terminal">
+    <template #header>
+      <div class="install-section" :class="{ 'has-more': stripHasMore }">
+        <div ref="tabStrip" class="install-tabs" @scroll.passive="updateStripHint">
+          <button
+            v-for="tab in visibleTabs"
+            :key="tab.id"
+            :class="['install-tab', { active: activeTab === tab.id }]"
+            @click="activeTab = tab.id"
+          >
+            <Icon :name="tab.icon" class="tab-icon" />
+            {{ tab.id }}
           </button>
         </div>
-        <div class="platform-hint">{{ activePlatforms }}</div>
-        <div class="terminal-divider"></div>
-        <div class="terminal-output">
-          <div class="text-muted mb-2 typing-text">// Your code deserves better than copy/paste chaos</div>
-          <div class="output-line mb-2">
-            <span class="text-green-400">$</span>
-            <span class="text-blue-400">jscpd</span>
-            <span class="text-muted">./src</span>
-            <span class="typing-cursor"></span>
-          </div>
-          <div class="text-muted" style="animation: fadeIn 0.5s ease 1s both;">→ Finding duplicates...</div>
-          <div class="text-green-400 mt-2" style="animation: fadeIn 0.5s ease 2s both;">✓ Found 90 clones · 54.4% duplication</div>
-        </div>
       </div>
+    </template>
+    <div class="command-line">
+      <span class="prompt">$</span>
+      <code ref="commandText">{{ activeCommand }}</code>
+      <button class="copy-btn" type="button" aria-label="Copy command" @click="copyCommand" :title="copied ? 'Copied!' : 'Copy to clipboard'">
+        <Icon v-if="!copied" name="lucide:copy" class="copy-icon" />
+        <Icon v-else name="lucide:check" class="copy-icon copied" />
+      </button>
     </div>
-  </div>
+    <div class="platform-hint">{{ activePlatforms }}</div>
+    <div class="terminal-divider"></div>
+    <div class="terminal-output">
+      <div class="text-muted mb-2 typing-text">// Your code deserves better than copy/paste chaos</div>
+      <div class="output-line mb-2">
+        <span class="text-green-400">$</span>
+        <span class="text-blue-400">jscpd</span>
+        <span class="text-muted">./src</span>
+        <span class="typing-cursor"></span>
+      </div>
+      <div class="text-muted" style="animation: fadeIn 0.5s ease 1s both;">→ Finding duplicates...</div>
+      <div class="text-green-400 mt-2" style="animation: fadeIn 0.5s ease 2s both;">✓ Found 90 clones · 54.4% duplication</div>
+    </div>
+  </TerminalFrame>
 </template>
 
 <script setup lang="ts">
@@ -129,7 +72,28 @@ const platforms: Record<string, string> = {
   nix: 'macOS & Linux'
 }
 
-const activeTab = ref('npx')
+// The landing page shows four tabs; the full set is the default so the
+// installation page and anything else can keep every method.
+const props = defineProps<{ tabs?: string | string[] }>()
+const tabDefs = [
+  { id: 'npx', icon: 'simple-icons:nodedotjs' },
+  { id: 'curl', icon: 'lucide:terminal' },
+  { id: 'windows', icon: 'simple-icons:windows' },
+  { id: 'npm', icon: 'simple-icons:npm' },
+  { id: 'pip', icon: 'simple-icons:python' },
+  { id: 'cargo', icon: 'simple-icons:rust' },
+  { id: 'brew', icon: 'simple-icons:homebrew' },
+  { id: 'nix', icon: 'simple-icons:nixos' }
+]
+const requestedTabs = computed(() => {
+  const raw = props.tabs
+  const ids = Array.isArray(raw) ? raw : typeof raw === 'string' ? raw.split(',').map(t => t.trim()).filter(Boolean) : []
+  return ids.length ? ids : tabDefs.map(t => t.id)
+})
+const visibleTabs = computed(() => requestedTabs.value
+  .map(id => tabDefs.find(t => t.id === id))
+  .filter((t): t is typeof tabDefs[number] => t !== undefined))
+const activeTab = ref(visibleTabs.value[0]?.id ?? 'npx')
 
 // On phones the tab strip scrolls horizontally; `has-more` fades its right
 // edge while there are tabs out of view so the strip does not read as a
@@ -171,60 +135,6 @@ async function copyCommand() {
 </script>
 
 <style scoped>
-.hero-terminal-wrapper {
-  position: relative;
-}
-
-.hero-terminal {
-  background: linear-gradient(to bottom right,
-    rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.05),
-    rgba(var(--ui-color-secondary-rgb, 178, 0, 178), 0.05));
-  border: 1px solid rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.15);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.hero-terminal:hover {
-  transform: translateY(-2px);
-}
-
-.terminal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* Seven install tabs plus the title do not fit the card on every desktop
-     width; let the tab strip drop to its own line instead of being clipped
-     by the card's overflow: hidden. */
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  padding: 0.75rem 1.25rem;
-  background: rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.06);
-  border-bottom: 1px solid rgba(var(--ui-color-primary-rgb, 0, 123, 255), 0.1);
-}
-
-.terminal-header-left {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-shrink: 0;
-}
-
-.dot {
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-}
-
-.dot-red { background: #ef4444; }
-.dot-yellow { background: #f59e0b; }
-.dot-green { background: #22c55e; }
-
-.terminal-title {
-  font-size: 0.8125rem;
-  color: var(--ui-text-muted, #94a3b8);
-  margin-left: 0.25rem;
-}
 
 .install-section {
   display: flex;
@@ -274,10 +184,6 @@ async function copyCommand() {
   width: 0.875rem;
   height: 0.875rem;
   flex-shrink: 0;
-}
-
-.terminal-body {
-  padding: 1rem 1.25rem 1.25rem;
 }
 
 .platform-hint {
@@ -400,19 +306,6 @@ async function copyCommand() {
 }
 
 @media (max-width: 640px) {
-  /* The seven install tabs need ~520px. Wrapping them stacked the header three
-     rows deep (128px of chrome before any content); a horizontally scrollable
-     strip keeps it to one row and is the familiar mobile pattern. */
-  .terminal-header {
-    gap: 0.5rem;
-    padding: 0.625rem 0.75rem;
-  }
-
-  /* The traffic-light dots and the "Terminal" title are decoration; on a
-     phone their row is better spent on the install tabs. */
-  .terminal-header-left {
-    display: none;
-  }
 
   /* min-width: 0 lets the strip shrink below its content width — without it
      the flex item's automatic minimum size forces the header to overflow. */

@@ -17,7 +17,7 @@
       </a>
     </div>
 
-    <div class="who-uses-projects">
+    <div v-if="variant !== 'compact'" class="who-uses-projects">
       <span class="projects-label">Also found in</span>
       <div class="project-pills">
         <a
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="who-uses-projects">
+    <div v-if="variant !== 'compact'" class="who-uses-projects">
       <span class="projects-label">Explicitly enabled in Super Linter by</span>
       <div class="project-pills">
         <a
@@ -55,6 +55,9 @@
 </template>
 
 <script setup lang="ts">
+// `compact` keeps the three platform cards and the numbers; the landing
+// page uses it, the project pill rows stay available for other pages.
+const { variant = 'full' } = defineProps<{ variant?: 'full' | 'compact' }>()
 const platforms = [
   {
     name: 'GitHub Super Linter',

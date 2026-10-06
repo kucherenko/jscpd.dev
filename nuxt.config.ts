@@ -75,6 +75,44 @@ export default defineNuxtConfig({
     },
   },
 
+  // Old documentation URLs (the tree was reorganised in October 2026 into
+  // Start / Guides / Concepts / Reference / Project). Nitro turns these
+  // into Cloudflare Pages _redirects on build and serves them in dev.
+  routeRules: {
+    "/getting-started/configuration": { redirect: { to: "/reference/config-file", statusCode: 301 } },
+    "/getting-started/supported-formats": { redirect: { to: "/reference/supported-formats", statusCode: 301 } },
+    "/getting-started/introduction": { redirect: { to: "/start", statusCode: 301 } },
+    "/getting-started/installation": { redirect: { to: "/start/installation", statusCode: 301 } },
+    "/getting-started/agent-skill": { redirect: { to: "/guides/agents", statusCode: 301 } },
+    "/getting-started/changelog": { redirect: { to: "/project/changelog", statusCode: 301 } },
+    "/getting-started/migration": { redirect: { to: "/project/migration", statusCode: 301 } },
+    "/getting-started/v4": { redirect: { to: "/project/v4", statusCode: 301 } },
+    "/guides/how-detection-works": { redirect: { to: "/concepts/how-detection-works", statusCode: 301 } },
+    "/guides/clone-types": { redirect: { to: "/concepts/clone-types", statusCode: 301 } },
+    "/guides/health": { redirect: { to: "/concepts/health-score", statusCode: 301 } },
+    "/ci-and-hooks/pre-commit": { redirect: { to: "/guides/pre-commit", statusCode: 301 } },
+    "/ci-and-hooks/ci": { redirect: { to: "/guides/ci", statusCode: 301 } },
+    "/ci-and-hooks": { redirect: { to: "/guides/ci", statusCode: 301 } },
+    "/reporters/openmetrics": { redirect: { to: "/reference/reporters/openmetrics", statusCode: 301 } },
+    "/reporters/codeclimate": { redirect: { to: "/reference/reporters/codeclimate", statusCode: 301 } },
+    "/reporters/sarif": { redirect: { to: "/reference/reporters/sarif", statusCode: 301 } },
+    "/reporters/badge": { redirect: { to: "/reference/reporters/badge", statusCode: 301 } },
+    "/reporters/json": { redirect: { to: "/reference/reporters/json", statusCode: 301 } },
+    "/reporters/html": { redirect: { to: "/reference/reporters/html", statusCode: 301 } },
+    "/reporters": { redirect: { to: "/reference/reporters", statusCode: 301 } },
+    "/benchmarks/embedding-models": { redirect: { to: "/project/benchmarks/embedding-models", statusCode: 301 } },
+    "/benchmarks/ai-token-efficiency": { redirect: { to: "/project/benchmarks/ai-token-efficiency", statusCode: 301 } },
+    "/benchmarks/cross-format": { redirect: { to: "/project/benchmarks/cross-format", statusCode: 301 } },
+    "/benchmarks/detection-speed": { redirect: { to: "/project/benchmarks/detection-speed", statusCode: 301 } },
+    "/benchmarks": { redirect: { to: "/project/benchmarks", statusCode: 301 } },
+    "/api/mcp-server": { redirect: { to: "/guides/agents", statusCode: 301 } },
+    "/api/core": { redirect: { to: "/reference/rust-crates", statusCode: 301 } },
+    "/api": { redirect: { to: "/reference/rust-crates", statusCode: 301 } },
+    "/research": { redirect: { to: "/project/research", statusCode: 301 } },
+    "/articles": { redirect: { to: "/project/articles", statusCode: 301 } },
+    "/getting-started": { redirect: { to: "/start", statusCode: 301 } },
+  },
+
   nitro: {
     alias: {
       "@nuxt/content/server": nuxtContentServer,
