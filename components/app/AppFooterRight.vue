@@ -1,6 +1,26 @@
 <script setup lang="ts">
 const links = [
   {
+    icon: 'i-lucide-book-open',
+    label: 'Docs',
+    to: '/start'
+  },
+  {
+    icon: 'i-lucide-scroll-text',
+    label: 'Changelog',
+    to: '/project/changelog'
+  },
+  {
+    icon: 'i-lucide-trending-up',
+    label: 'Trending',
+    to: '/trending'
+  },
+  {
+    icon: 'i-lucide-heart',
+    label: 'Support',
+    to: '/support'
+  },
+  {
     icon: 'i-simple-icons-github',
     label: 'GitHub',
     to: 'https://github.com/kucherenko/jscpd',
@@ -10,23 +30,6 @@ const links = [
     icon: 'i-simple-icons-x',
     label: 'X',
     to: 'https://x.com/a_kucherenko',
-    target: '_blank' as const
-  },
-  {
-    icon: 'i-lucide-heart',
-    label: 'Support',
-    to: '/support'
-  },
-  {
-    icon: 'i-simple-icons-rust',
-    label: 'Rust crate',
-    to: 'https://crates.io/crates/jscpd',
-    target: '_blank' as const
-  },
-  {
-    icon: 'i-simple-icons-pypi',
-    label: 'PyPI',
-    to: 'https://pypi.org/project/jscpd/',
     target: '_blank' as const
   }
 ]

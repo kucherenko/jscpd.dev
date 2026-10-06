@@ -3,6 +3,14 @@ const appConfig = useAppConfig()
 const site = useSiteConfig()
 
 const ariaLabel = `${appConfig.header?.title || site.name} home`
+
+// Text navigation beside the logo. The landing page has no sidebar, so
+// without these links the only way into the docs is a feature card.
+const navLinks = [
+  { label: 'Docs', to: '/start' },
+  { label: 'Guides', to: '/guides' },
+  { label: 'Trending', to: '/trending' }
+]
 </script>
 
 <template>
@@ -19,6 +27,21 @@ const ariaLabel = `${appConfig.header?.title || site.name} home`
   >
     <AppHeaderLogo />
   </NuxtLink>
+
+  <nav
+    aria-label="Primary"
+    class="hidden lg:flex items-center gap-0.5 ml-3"
+  >
+    <UButton
+      v-for="link in navLinks"
+      :key="link.to"
+      :to="link.to"
+      :label="link.label"
+      color="neutral"
+      variant="ghost"
+      size="sm"
+    />
+  </nav>
 </template>
 
 <style scoped>
