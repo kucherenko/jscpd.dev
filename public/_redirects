@@ -3,4 +3,42 @@
 https://www.jscpd.dev/* https://jscpd.dev/:splat 301!
 
 # /api/server documented the Node.js jscpd-server (v4 only); the page was removed.
-/api/server /api/mcp-server 301
+/api/server /guides/agents 301
+
+# Old documentation URLs (the tree moved to Start / Guides / Concepts /
+# Reference / Project in October 2026). nuxt.config.ts routeRules carry the
+# same rules for `nuxt dev`; the deploy is a `nuxt generate` with the static
+# preset, which writes no _redirects, so Cloudflare Pages reads them here.
+# scripts/check-links.mjs fails when a routeRules redirect is missing below.
+/getting-started/configuration /reference/config-file 301
+/getting-started/supported-formats /reference/supported-formats 301
+/getting-started/introduction /start 301
+/getting-started/installation /start/installation 301
+/getting-started/agent-skill /guides/agents 301
+/getting-started/changelog /project/changelog 301
+/getting-started/migration /project/migration 301
+/getting-started/v4 /project/v4 301
+/guides/how-detection-works /concepts/how-detection-works 301
+/guides/clone-types /concepts/clone-types 301
+/guides/health /concepts/health-score 301
+/ci-and-hooks/pre-commit /guides/pre-commit 301
+/ci-and-hooks/ci /guides/ci 301
+/ci-and-hooks /guides/ci 301
+/reporters/openmetrics /reference/reporters/openmetrics 301
+/reporters/codeclimate /reference/reporters/codeclimate 301
+/reporters/sarif /reference/reporters/sarif 301
+/reporters/badge /reference/reporters/badge 301
+/reporters/json /reference/reporters/json 301
+/reporters/html /reference/reporters/html 301
+/reporters /reference/reporters 301
+/benchmarks/embedding-models /project/benchmarks/embedding-models 301
+/benchmarks/ai-token-efficiency /project/benchmarks/ai-token-efficiency 301
+/benchmarks/cross-format /project/benchmarks/cross-format 301
+/benchmarks/detection-speed /project/benchmarks/detection-speed 301
+/benchmarks /project/benchmarks 301
+/api/mcp-server /guides/agents 301
+/api/core /reference/rust-crates 301
+/api /reference/rust-crates 301
+/research /project/research 301
+/articles /project/articles 301
+/getting-started /start 301

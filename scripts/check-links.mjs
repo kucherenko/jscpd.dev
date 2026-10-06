@@ -58,6 +58,11 @@ for (const f of sources) {
     dead.push(`${relative(root, f)}: ${url}`)
   }
 }
+// Every routeRules redirect must also be in public/_redirects: Cloudflare Pages
+// reads the file, the dev server reads the config. The file may hold more.
+const ruleSet = new Set([...config.matchAll(/"(\/[^"]+)": \{ redirect: \{ to: "(\/[^"]+)", statusCode: (\d+) \} \}/g)].map(m => `${m[1]} ${m[2]} ${m[3]}`))
+const fileSet = new Set(readFileSync(join(root, 'public/_redirects'), 'utf8').split('\n').filter(l => l && !l.startsWith('#')))
+for (const r of ruleSet) if (!fileSet.has(r)) dead.push(`public/_redirects: missing "${r}" (present in nuxt.config.ts routeRules)`)
 const unique = [...new Set(dead)].sort()
 console.log(`${total} internal links checked, ${unique.length} dead`)
 for (const d of unique) console.log('  ' + d)
