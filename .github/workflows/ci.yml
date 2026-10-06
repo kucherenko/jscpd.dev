@@ -55,3 +55,15 @@ jobs:
           name: jscpd-report
           path: report
         continue-on-error: true
+
+  # The CLI, GitHub Action and format reference pages are generated from the
+  # latest jscpd release; the job fails when the committed pages are behind.
+  reference-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+      - name: Regenerate the reference pages from the latest release
+        run: scripts/check-reference-drift.sh
