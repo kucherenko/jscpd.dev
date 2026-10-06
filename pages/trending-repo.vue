@@ -99,7 +99,7 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
 
     <p class="repo-cta">
       Want this for your own project?
-      <NuxtLink to="/getting-started/installation">Install jscpd</NuxtLink> and run <code>jscpd .</code>
+      <NuxtLink to="/start/installation">Install jscpd</NuxtLink> and run <code>jscpd .</code>
     </p>
   </div>
 </template>

@@ -1,0 +1,11 @@
+---
+title: Trending
+description: GitHub trending repositories analyzed with jscpd — clone counts and duplication statistics, refreshed daily.
+navigation: false
+seo:
+  title: Trending Repos Duplication — jscpd
+  description: Daily jscpd analysis of GitHub trending repositories — how much copy/pasted code ships in today's hottest projects.
+---
+
+<!-- This route is rendered by pages/trending.vue (standalone layout);
+     this file only provides the header navigation entry. -->

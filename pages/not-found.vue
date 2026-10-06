@@ -22,16 +22,16 @@ useSeoMeta({
     </p>
     <div class="not-found-actions">
       <UButton to="/" color="primary" size="lg" icon="i-lucide-house" label="Go to homepage" />
-      <UButton to="/getting-started/introduction" color="neutral" variant="outline" size="lg" icon="i-lucide-book-open" label="Read the docs" />
+      <UButton to="/start" color="neutral" variant="outline" size="lg" icon="i-lucide-book-open" label="Read the docs" />
       <UButton to="https://github.com/kucherenko/jscpd/issues" target="_blank" color="neutral" variant="ghost" size="lg" icon="i-simple-icons-github" label="Report a broken link" />
     </div>
     <ul class="not-found-links">
-      <li><NuxtLink to="/getting-started/installation">Installation</NuxtLink></li>
-      <li><NuxtLink to="/getting-started/configuration">Configuration</NuxtLink></li>
-      <li><NuxtLink to="/reporters">Reporters</NuxtLink></li>
-      <li><NuxtLink to="/ci-and-hooks">CI &amp; hooks</NuxtLink></li>
-      <li><NuxtLink to="/api">API</NuxtLink></li>
-      <li><NuxtLink to="/getting-started/migration">Migrating from v4</NuxtLink></li>
+      <li><NuxtLink to="/start/installation">Installation</NuxtLink></li>
+      <li><NuxtLink to="/reference/config-file">Configuration</NuxtLink></li>
+      <li><NuxtLink to="/reference/reporters">Reporters</NuxtLink></li>
+      <li><NuxtLink to="/guides/ci">CI &amp; hooks</NuxtLink></li>
+      <li><NuxtLink to="/reference/rust-crates">API</NuxtLink></li>
+      <li><NuxtLink to="/project/migration">Migrating from v4</NuxtLink></li>
     </ul>
   </div>
 </template>

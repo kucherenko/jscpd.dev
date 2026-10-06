@@ -109,6 +109,49 @@
   overflow: hidden;
 }
 
+/* Landing hero: UPageHero's horizontal layout, with the text column wider
+   than the install card on its right, and its py-24/py-40 padding cut down,
+   since the header already separates the hero from the top. */
+.landing-hero > div {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  gap: 2rem;
+}
+
+.landing-hero h1 {
+  text-wrap: balance;
+}
+
+@media (min-width: 1024px) {
+  .landing-hero > div {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    gap: 4rem;
+  }
+}
+
+/* The "What jscpd does" section follows the hero directly; UPageSection's
+   py-16/py-32 would open a screen of air between the two, so it gets its own
+   measure: 4rem above the heading, 6rem below the slides. */
+.landing-explorer > div {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .landing-explorer > div {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Two links inside one landing feature card ("MCP server" and "Agent skills"). */
+.feature-card-link + .feature-card-link {
+  margin-left: 1rem;
+}
+
 /* Gradient text effect with animation */
 .hero-gradient {
   font-family: 'Courier New', Courier, monospace;
@@ -282,10 +325,22 @@
    Code Blocks - Enhanced
    ======================================== */
 
+/* Code blocks behave like a terminal: long lines scroll sideways inside the
+   block instead of wrapping (Docus's default is whitespace-pre-wrap, which
+   folds command output and tables into an unreadable heap). */
 pre {
   border-left: 3px solid var(--jscpd-blue);
   position: relative;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+pre code,
+pre .line {
+  white-space: pre;
+  overflow-wrap: normal;
 }
 
 pre::before {

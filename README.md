@@ -38,41 +38,12 @@ bun run build
 ```
 content/
 ├── index.md                      # Landing page
-├── 1.getting-started/            # Getting started guides
-│   ├── 2.introduction.md
-│   ├── 3.installation.md
-│   ├── 4.configuration.md
-│   ├── 5.supported-formats.md
-│   ├── 6.agent-skill.md
-│   ├── 7.changelog.md
-│   ├── 8.migration.md
-│   └── 9.v4.md
-├── 2.guides/                     # Longer reads: clone types, how detection works
-│   ├── 1.index.md
-│   ├── 2.clone-types.md
-│   └── 3.how-detection-works.md
-├── 3.ci-and-hooks/               # CI pipelines and git hooks
-│   ├── 1.index.md
-│   ├── 2.ci.md
-│   └── 3.pre-commit.md
-├── 4.reporters/                  # Reporter documentation
-│   ├── 1.index.md
-│   ├── 2.html.md
-│   ├── 3.json.md
-│   ├── 4.badge.md
-│   ├── 5.sarif.md
-│   ├── 6.codeclimate.md
-│   └── 7.openmetrics.md
-├── 5.benchmarks/                 # Comparisons with other CPD tools
-│   ├── 1.index.md
-│   ├── 2.detection-speed.md
-│   ├── 3.cross-format.md
-│   └── 4.ai-token-efficiency.md
-├── 6.api/                        # API documentation
-│   ├── 1.index.md
-│   ├── 2.core.md
-│   └── 4.mcp-server.md
-└── 7.trending.md                 # Daily GitHub-trending analysis (data/trending.json)
+├── 1.start/                      # What jscpd finds, installation, quickstart, configuration basics
+├── 2.guides/                     # One task per page: CI, hooks, baseline, agents, editors, dead code, ...
+├── 3.concepts/                   # Clone types, how detection works, the health score
+├── 4.reference/                  # CLI options (generated), config file, exit codes, reporters, formats (generated), Action (generated), crates
+├── 5.project/                    # Changelog, migration, v4, benchmarks, research, articles
+└── trending.md                   # Header entry for the /trending pages (rendered by pages/trending.vue)
 
 pages/
 ├── support.vue                   # /support — how to fund the project
