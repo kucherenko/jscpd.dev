@@ -15,54 +15,68 @@
    "percentage": 44.52,
    "healthScore": 17.9,
    "healthGrade": "E"
+  },
+  {
+   "date": "2026-10-06",
+   "rank": 7,
+   "stars": 11086,
+   "starsToday": 101,
+   "headSha": "b304e8c25497b7de3e976daebce3cfc015bbd605",
+   "sources": 1301,
+   "lines": 674322,
+   "clones": 1382,
+   "duplicatedLines": 293312,
+   "percentage": 43.5,
+   "healthScore": 18.4,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-10-04",
-  "generatedAt": "2026-10-04T07:13:25.094Z",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T05:31:17.340Z",
   "name": "cloudflare/cloudflare-os",
   "url": "https://github.com/cloudflare/cloudflare-os",
   "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
   "language": "TypeScript",
-  "stars": 10651,
-  "starsToday": 85,
+  "stars": 11086,
+  "starsToday": 101,
   "defaultBranch": "main",
-  "headSha": "5cae880e5e54563895a067e7f4dae67514e581be",
-  "durationMs": 2564,
+  "headSha": "b304e8c25497b7de3e976daebce3cfc015bbd605",
+  "durationMs": 2566,
   "total": {
-   "sources": 1272,
-   "lines": 657889,
-   "tokens": 3326362,
-   "clones": 1333,
-   "duplicatedLines": 292899,
-   "duplicatedTokens": 902040,
-   "percentage": 44.52,
-   "percentageTokens": 27.12
+   "sources": 1301,
+   "lines": 674322,
+   "tokens": 3466873,
+   "clones": 1382,
+   "duplicatedLines": 293312,
+   "duplicatedTokens": 905502,
+   "percentage": 43.5,
+   "percentageTokens": 26.12
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 858,
-    "lines": 568179,
-    "clones": 1086,
-    "duplicatedLines": 290011,
-    "percentage": 51.04
+    "sources": 875,
+    "lines": 579730,
+    "clones": 1119,
+    "duplicatedLines": 290278,
+    "percentage": 50.07
    },
    {
     "format": "tsx",
-    "sources": 231,
-    "lines": 63177,
-    "clones": 180,
-    "duplicatedLines": 1773,
-    "percentage": 2.81
+    "sources": 240,
+    "lines": 66765,
+    "clones": 196,
+    "duplicatedLines": 1934,
+    "percentage": 2.9
    },
    {
     "format": "json",
     "sources": 69,
-    "lines": 3005,
-    "clones": 40,
-    "duplicatedLines": 701,
-    "percentage": 23.33
+    "lines": 3006,
+    "clones": 39,
+    "duplicatedLines": 679,
+    "percentage": 22.59
    },
    {
     "format": "css",
@@ -82,11 +96,19 @@
    },
    {
     "format": "markdown",
-    "sources": 59,
-    "lines": 18701,
+    "sources": 60,
+    "lines": 19958,
     "clones": 2,
     "duplicatedLines": 18,
-    "percentage": 0.1
+    "percentage": 0.09
+   },
+   {
+    "format": "text",
+    "sources": 13,
+    "lines": 187,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 3.74
    },
    {
     "format": "bash",
@@ -100,14 +122,6 @@
     "format": "perl",
     "sources": 1,
     "lines": 168,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "text",
-    "sources": 11,
-    "lines": 151,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -274,20 +288,20 @@
    }
   ],
   "health": {
-   "score": 17.9,
+   "score": 18.4,
    "grade": "E",
    "size": {
-    "lines": 631001,
-    "files": 1084,
+    "lines": 646117,
+    "files": 1108,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 46.2,
-     "adjusted": 46.1,
-     "lines": 291655,
+     "value": 45.2,
+     "adjusted": 45.1,
+     "lines": 292076,
      "halfLife": 8.5,
      "formats": [
       "typescript",
@@ -301,45 +315,45 @@
       "data"
      ],
      "weight": 1,
-     "score": 2.3
+     "score": 2.5
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 2.5,
+     "value": 2.4,
      "adjusted": 2.5,
      "lines": 15833,
      "halfLife": 7.5,
      "weight": 1,
-     "score": 79.3
+     "score": 79.7
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 84.2,
-     "adjusted": 84,
-     "lines": 531497,
+     "value": 84.5,
+     "adjusted": 84.3,
+     "lines": 545713,
      "halfLife": 50,
      "weight": 1,
-     "score": 31.2
+     "score": 31.1
     }
    ]
   },
   "complexity": {
-   "total": 62190,
-   "mean": 57.4,
+   "total": 64573,
+   "mean": 58.3,
    "files": [
     {
      "path": "packages/workshop-backend/src/overseer.ts",
-     "complexity": 1844,
-     "lines": 12162,
-     "bytes": 580728
+     "complexity": 1955,
+     "lines": 12669,
+     "bytes": 609634
     },
     {
      "path": "packages/workshop-frontend/src/ChatInterface.tsx",
-     "complexity": 1451,
-     "lines": 6554,
-     "bytes": 281211
+     "complexity": 1485,
+     "lines": 6693,
+     "bytes": 288618
     },
     {
      "path": "packages/bundled-blueprints/blueprints/workspace-sheets/files/client.ts",
@@ -361,9 +375,9 @@
     },
     {
      "path": "packages/gatekeeper-github/src/github.ts",
-     "complexity": 1099,
-     "lines": 5721,
-     "bytes": 227741
+     "complexity": 1115,
+     "lines": 5794,
+     "bytes": 231558
     },
     {
      "path": "packages/gatekeeper-google/src/google-api.ts",
@@ -385,16 +399,16 @@
     },
     {
      "path": "packages/gatekeeper-spotify/src/spotify.ts",
-     "complexity": 645,
-     "lines": 2623,
-     "bytes": 112306
+     "complexity": 643,
+     "lines": 2622,
+     "bytes": 112299
     }
    ]
   },
   "deadCode": {
-   "percentage": 2.51,
+   "percentage": 2.45,
    "findings": 93,
-   "files": 1194,
+   "files": 1219,
    "byCategory": [
     {
      "category": "unused-file",

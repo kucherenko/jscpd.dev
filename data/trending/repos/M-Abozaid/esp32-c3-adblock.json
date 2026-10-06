@@ -1,0 +1,253 @@
+{
+ "name": "M-Abozaid/esp32-c3-adblock",
+ "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
+ "appearances": [
+  {
+   "date": "2026-10-06",
+   "rank": 8,
+   "stars": 1464,
+   "starsToday": 196,
+   "headSha": "19473839c27d10f666406a3ae62df97b7b155273",
+   "sources": 24,
+   "lines": 2297,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "percentage": 0,
+   "healthScore": 76.1,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T05:31:17.340Z",
+  "name": "M-Abozaid/esp32-c3-adblock",
+  "url": "https://github.com/M-Abozaid/esp32-c3-adblock",
+  "description": "Pi-hole-class DNS ad-blocker on a $2 ESP32-C3 (no PSRAM): 537k domains as 40-bit FNV-1a hashes in flash, binary-searched. UDP DNS sinkhole + web dashboard. https://youtube.com/shorts/RaxszOUMi8E?feature=share",
+  "language": "C++",
+  "stars": 1464,
+  "starsToday": 196,
+  "defaultBranch": "main",
+  "headSha": "19473839c27d10f666406a3ae62df97b7b155273",
+  "durationMs": 701,
+  "total": {
+   "sources": 24,
+   "lines": 2297,
+   "tokens": 19063,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0
+  },
+  "formats": [
+   {
+    "format": "bash",
+    "sources": 11,
+    "lines": 731,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "cpp",
+    "sources": 1,
+    "lines": 624,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 2,
+    "lines": 364,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "python",
+    "sources": 1,
+    "lines": 118,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "c-header",
+    "sources": 1,
+    "lines": 90,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "yaml",
+    "sources": 2,
+    "lines": 85,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 1,
+    "lines": 69,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "ini",
+    "sources": 1,
+    "lines": 18,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 1,
+    "lines": 17,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [],
+  "health": {
+   "score": 76.1,
+   "grade": "B",
+   "size": {
+    "lines": 1694,
+    "files": 13,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 1.9,
+     "lines": 0,
+     "halfLife": 8.5,
+     "formats": [
+      "bash",
+      "cpp",
+      "perl",
+      "python",
+      "c-header"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 85.7
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2.9,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 7,
+     "weight": 0.07,
+     "score": 76.3
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 36.8,
+     "adjusted": 28.2,
+     "lines": 624,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 67.6
+    }
+   ]
+  },
+  "complexity": {
+   "total": 424,
+   "mean": 32.6,
+   "files": [
+    {
+     "path": "src/main.cpp",
+     "complexity": 267,
+     "lines": 624,
+     "bytes": 31121
+    },
+    {
+     "path": "src/page.h",
+     "complexity": 38,
+     "lines": 90,
+     "bytes": 8380
+    },
+    {
+     "path": "tools/build_blocklist.py",
+     "complexity": 35,
+     "lines": 118,
+     "bytes": 5512
+    },
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    },
+    {
+     "path": ".git/hooks/update.sample",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 3650
+    },
+    {
+     "path": ".git/hooks/push-to-checkout.sample",
+     "complexity": 6,
+     "lines": 78,
+     "bytes": 2783
+    },
+    {
+     "path": ".git/hooks/pre-commit.sample",
+     "complexity": 5,
+     "lines": 49,
+     "bytes": 1649
+    },
+    {
+     "path": ".git/hooks/pre-push.sample",
+     "complexity": 5,
+     "lines": 53,
+     "bytes": 1374
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 1,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

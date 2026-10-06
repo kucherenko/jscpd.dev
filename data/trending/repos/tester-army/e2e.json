@@ -15,78 +15,108 @@
    "percentage": 9.2,
    "healthScore": 71.1,
    "healthGrade": "B"
+  },
+  {
+   "date": "2026-10-06",
+   "rank": 1,
+   "stars": 5084,
+   "starsToday": 1398,
+   "headSha": "fd3a0c766b4d40c74fabdbc578e3832d80553bf9",
+   "sources": 1262,
+   "lines": 230529,
+   "clones": 736,
+   "duplicatedLines": 21095,
+   "percentage": 9.15,
+   "healthScore": 71.2,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-10-05",
-  "generatedAt": "2026-10-05T05:41:32.107Z",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T05:31:17.340Z",
   "name": "tester-army/e2e",
   "url": "https://github.com/tester-army/e2e",
   "description": "Next generation e2e testing framework for web and mobile apps.",
   "language": "TypeScript",
-  "stars": 3390,
-  "starsToday": 345,
+  "stars": 5084,
+  "starsToday": 1398,
   "defaultBranch": "main",
-  "headSha": "4bfc1aae9bb02465245f10e652f4b27db92409ad",
-  "durationMs": 1475,
+  "headSha": "fd3a0c766b4d40c74fabdbc578e3832d80553bf9",
+  "durationMs": 1748,
   "total": {
-   "sources": 1207,
-   "lines": 227782,
-   "tokens": 1588158,
-   "clones": 739,
-   "duplicatedLines": 20960,
-   "duplicatedTokens": 93687,
-   "percentage": 9.2,
-   "percentageTokens": 5.9
+   "sources": 1262,
+   "lines": 230529,
+   "tokens": 1609409,
+   "clones": 736,
+   "duplicatedLines": 21095,
+   "duplicatedTokens": 94585,
+   "percentage": 9.15,
+   "percentageTokens": 5.88
   },
   "formats": [
    {
     "format": "json",
-    "sources": 150,
-    "lines": 37032,
+    "sources": 156,
+    "lines": 37205,
     "clones": 312,
     "duplicatedLines": 15830,
-    "percentage": 42.75
+    "percentage": 42.55
    },
    {
     "format": "typescript",
-    "sources": 844,
-    "lines": 160693,
-    "clones": 297,
-    "duplicatedLines": 2931,
-    "percentage": 1.82
+    "sources": 862,
+    "lines": 161802,
+    "clones": 274,
+    "duplicatedLines": 2765,
+    "percentage": 1.71
    },
    {
     "format": "tsx",
-    "sources": 71,
-    "lines": 12688,
-    "clones": 72,
-    "duplicatedLines": 1406,
-    "percentage": 11.08
+    "sources": 77,
+    "lines": 12996,
+    "clones": 74,
+    "duplicatedLines": 1434,
+    "percentage": 11.03
    },
    {
     "format": "markdown",
-    "sources": 47,
-    "lines": 8786,
-    "clones": 40,
-    "duplicatedLines": 640,
-    "percentage": 7.28
+    "sources": 62,
+    "lines": 9053,
+    "clones": 42,
+    "duplicatedLines": 665,
+    "percentage": 7.35
+   },
+   {
+    "format": "markup",
+    "sources": 5,
+    "lines": 167,
+    "clones": 14,
+    "duplicatedLines": 87,
+    "percentage": 52.1
    },
    {
     "format": "yaml",
     "sources": 21,
-    "lines": 1236,
+    "lines": 1237,
     "clones": 11,
     "duplicatedLines": 98,
-    "percentage": 7.93
+    "percentage": 7.92
    },
    {
     "format": "txt",
-    "sources": 34,
-    "lines": 1239,
+    "sources": 35,
+    "lines": 1334,
     "clones": 6,
     "duplicatedLines": 45,
-    "percentage": 3.63
+    "percentage": 3.37
+   },
+   {
+    "format": "css",
+    "sources": 4,
+    "lines": 1098,
+    "clones": 2,
+    "duplicatedLines": 161,
+    "percentage": 14.66
    },
    {
     "format": "javascript",
@@ -100,22 +130,6 @@
     "format": "bash",
     "sources": 21,
     "lines": 819,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "jsx",
-    "sources": 3,
-    "lines": 811,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "css",
-    "sources": 2,
-    "lines": 645,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -274,20 +288,20 @@
    }
   ],
   "health": {
-   "score": 71.1,
+   "score": 71.2,
    "grade": "B",
    "size": {
-    "lines": 178420,
-    "files": 929,
+    "lines": 180011,
+    "files": 955,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 2.4,
+     "value": 2.3,
      "adjusted": 2.4,
-     "lines": 4347,
+     "lines": 4209,
      "halfLife": 8.5,
      "formats": [
       "typescript",
@@ -295,8 +309,8 @@
       "javascript",
       "jsx",
       "bash",
-      "perl",
-      "swift"
+      "swift",
+      "perl"
      ],
      "excluded": [
       "markup",
@@ -304,34 +318,34 @@
       "data"
      ],
      "weight": 1,
-     "score": 81.9
+     "score": 82.6
     },
     {
      "id": "dead-code",
      "source": "jscpd",
      "value": 1.4,
      "adjusted": 1.4,
-     "lines": 2436,
+     "lines": 2444,
      "halfLife": 7.5,
-     "coverage": 99.7,
-     "weight": 0.997,
+     "coverage": 99.6,
+     "weight": 0.996,
      "score": 88
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 50.3,
-     "adjusted": 50,
-     "lines": 89820,
+     "value": 50.9,
+     "adjusted": 50.6,
+     "lines": 91641,
      "halfLife": 50,
      "weight": 1,
-     "score": 50
+     "score": 49.6
     }
    ]
   },
   "complexity": {
-   "total": 30052,
-   "mean": 32.3,
+   "total": 30458,
+   "mean": 31.9,
    "files": [
     {
      "path": "packages/web/src/in-page/read-semantics.ts",
@@ -342,8 +356,8 @@
     {
      "path": "packages/mobile/tests/unit/engine.test.ts",
      "complexity": 348,
-     "lines": 2038,
-     "bytes": 109494
+     "lines": 2045,
+     "bytes": 109949
     },
     {
      "path": "packages/mobile/src/surface.ts",
@@ -353,9 +367,9 @@
     },
     {
      "path": "packages/e2e/src/cache/trace.ts",
-     "complexity": 298,
-     "lines": 911,
-     "bytes": 38423
+     "complexity": 300,
+     "lines": 916,
+     "bytes": 38642
     },
     {
      "path": "packages/decision/tests/executor.test.ts",
@@ -365,40 +379,40 @@
     },
     {
      "path": "packages/e2e/tests/unit/config.test.ts",
-     "complexity": 277,
-     "lines": 1131,
-     "bytes": 63854
+     "complexity": 262,
+     "lines": 1111,
+     "bytes": 62823
+    },
+    {
+     "path": "packages/e2e/tests/unit/scheduler.test.ts",
+     "complexity": 258,
+     "lines": 1351,
+     "bytes": 56773
     },
     {
      "path": "packages/e2e/tests/unit/select.test.ts",
-     "complexity": 261,
-     "lines": 833,
-     "bytes": 42973
+     "complexity": 244,
+     "lines": 786,
+     "bytes": 40614
     },
     {
      "path": "packages/e2e/src/report/list.ts",
      "complexity": 243,
-     "lines": 1078,
-     "bytes": 46171
+     "lines": 1098,
+     "bytes": 47063
     },
     {
      "path": "packages/e2e/src/collect/select.ts",
      "complexity": 240,
      "lines": 852,
      "bytes": 36621
-    },
-    {
-     "path": "packages/e2e/src/config/resolve.ts",
-     "complexity": 239,
-     "lines": 1034,
-     "bytes": 44832
     }
    ]
   },
   "deadCode": {
-   "percentage": 1.37,
+   "percentage": 1.36,
    "findings": 30,
-   "files": 945,
+   "files": 971,
    "byCategory": [
     {
      "category": "unused-file",
@@ -411,7 +425,7 @@
      "path": "docs/snippets/model-provider.jsx",
      "name": "",
      "line": 1,
-     "lines": 755
+     "lines": 763
     },
     {
      "category": "unused-file",

@@ -29,45 +29,59 @@
    "percentage": 5.56,
    "healthScore": 51.6,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-10-06",
+   "rank": 3,
+   "stars": 17530,
+   "starsToday": 437,
+   "headSha": "941ac2f16de7d4aa2315b4f685cd83b98cbd0c14",
+   "sources": 2741,
+   "lines": 563195,
+   "clones": 1476,
+   "duplicatedLines": 31273,
+   "percentage": 5.55,
+   "healthScore": 51.7,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-10-05",
-  "generatedAt": "2026-10-05T05:41:32.107Z",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T05:31:17.340Z",
   "name": "earthtojake/text-to-cad",
   "url": "https://github.com/earthtojake/text-to-cad",
   "description": "Give your agent CAD superpowers.",
   "language": "Python",
-  "stars": 16966,
-  "starsToday": 83,
+  "stars": 17530,
+  "starsToday": 437,
   "defaultBranch": "main",
-  "headSha": "d749a1980d806c7fed344b115651ccf1d8cfb28d",
-  "durationMs": 3835,
+  "headSha": "941ac2f16de7d4aa2315b4f685cd83b98cbd0c14",
+  "durationMs": 3863,
   "total": {
-   "sources": 2735,
-   "lines": 561270,
-   "tokens": 4985665,
-   "clones": 1472,
-   "duplicatedLines": 31227,
-   "duplicatedTokens": 670510,
-   "percentage": 5.56,
-   "percentageTokens": 13.45
+   "sources": 2741,
+   "lines": 563195,
+   "tokens": 5001216,
+   "clones": 1476,
+   "duplicatedLines": 31273,
+   "duplicatedTokens": 670715,
+   "percentage": 5.55,
+   "percentageTokens": 13.41
   },
   "formats": [
    {
     "format": "python",
-    "sources": 1387,
-    "lines": 291189,
+    "sources": 1391,
+    "lines": 292436,
     "clones": 841,
     "duplicatedLines": 15041,
-    "percentage": 5.17
+    "percentage": 5.14
    },
    {
     "format": "javascript",
     "sources": 700,
-    "lines": 137931,
-    "clones": 373,
-    "duplicatedLines": 4732,
+    "lines": 138059,
+    "clones": 374,
+    "duplicatedLines": 4738,
     "percentage": 3.43
    },
    {
@@ -81,18 +95,18 @@
    {
     "format": "markdown",
     "sources": 169,
-    "lines": 26853,
+    "lines": 27046,
     "clones": 21,
     "duplicatedLines": 1001,
-    "percentage": 3.73
+    "percentage": 3.7
    },
    {
     "format": "tsx",
-    "sources": 100,
-    "lines": 11889,
+    "sources": 101,
+    "lines": 12048,
     "clones": 14,
     "duplicatedLines": 108,
-    "percentage": 0.91
+    "percentage": 0.9
    },
    {
     "format": "css",
@@ -113,10 +127,10 @@
    {
     "format": "typescript",
     "sources": 67,
-    "lines": 4467,
+    "lines": 4472,
     "clones": 7,
     "duplicatedLines": 57,
-    "percentage": 1.28
+    "percentage": 1.27
    },
    {
     "format": "txt",
@@ -127,12 +141,12 @@
     "percentage": 72.18
    },
    {
-    "format": "bash",
-    "sources": 53,
-    "lines": 3929,
-    "clones": 2,
-    "duplicatedLines": 20,
-    "percentage": 0.51
+    "format": "yaml",
+    "sources": 18,
+    "lines": 1405,
+    "clones": 5,
+    "duplicatedLines": 63,
+    "percentage": 4.48
    }
   ],
   "topClones": [
@@ -288,11 +302,11 @@
    }
   ],
   "health": {
-   "score": 51.6,
+   "score": 51.7,
    "grade": "D",
    "size": {
-    "lines": 461154,
-    "files": 2332,
+    "lines": 462813,
+    "files": 2338,
     "class": "L"
    },
    "dimensions": [
@@ -301,7 +315,7 @@
      "source": "jscpd",
      "value": 4.3,
      "adjusted": 4.3,
-     "lines": 20035,
+     "lines": 20041,
      "halfLife": 8.5,
      "formats": [
       "python",
@@ -320,34 +334,34 @@
       "data"
      ],
      "weight": 1,
-     "score": 70.2
+     "score": 70.3
     },
     {
      "id": "dead-code",
      "source": "jscpd",
      "value": 8.9,
-     "adjusted": 8.9,
+     "adjusted": 8.8,
      "lines": 40685,
      "halfLife": 7.5,
      "coverage": 99.2,
      "weight": 0.992,
-     "score": 44.1
+     "score": 44.2
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 58.8,
-     "adjusted": 58.6,
-     "lines": 271201,
+     "value": 58.9,
+     "adjusted": 58.7,
+     "lines": 272556,
      "halfLife": 50,
      "weight": 1,
-     "score": 44.4
+     "score": 44.3
     }
    ]
   },
   "complexity": {
-   "total": 88026,
-   "mean": 37.7,
+   "total": 88407,
+   "mean": 37.8,
    "files": [
     {
      "path": "packages/ui/src/renderers/step/StepSurface.jsx",
@@ -362,16 +376,16 @@
      "bytes": 108669
     },
     {
+     "path": "packages/core/src/lib/surf/tessellate.js",
+     "complexity": 625,
+     "lines": 2160,
+     "bytes": 93062
+    },
+    {
      "path": "packages/core/src/lib/selectors/runtime.js",
      "complexity": 609,
      "lines": 1599,
      "bytes": 67005
-    },
-    {
-     "path": "packages/core/src/lib/surf/tessellate.js",
-     "complexity": 593,
-     "lines": 2051,
-     "bytes": 87649
     },
     {
      "path": "packages/cadgen/src/cadgen/snapshot_core.py",
@@ -412,9 +426,9 @@
    ]
   },
   "deadCode": {
-   "percentage": 8.9,
+   "percentage": 8.87,
    "findings": 703,
-   "files": 2401,
+   "files": 2406,
    "byCategory": [
     {
      "category": "unused-file",
