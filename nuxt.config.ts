@@ -1,3 +1,4 @@
+import { readFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -21,6 +22,29 @@ const trendingRoutes = [
   ...trendingHistory.weeks.map((w) => `/trending/week/${w.week}`),
   ...trendingRepos.map((r) => `/trending/${r.name}`),
 ];
+
+// The trending snapshots, per-repo and per-week files (data/trending/**)
+// carry code excerpts. As plain JSON modules they go through Nitro's
+// build-time text replacement (`typeof window` → `"undefined"`, same for
+// document, navigator, location, XMLHttpRequest and process.env.NODE_ENV),
+// which rewrites text inside string literals too: a snapshot whose excerpt
+// contained `typeof window` became a broken chunk and six prerendered pages
+// came out as 500. Shipping the files base64-encoded keeps every character
+// of the data out of reach of such replacements; the page decodes on load.
+const trendingDataDir = fileURLToPath(new URL("./data/trending/", import.meta.url));
+const trendingDataBase64 = {
+  name: "jscpd:trending-data-base64",
+  enforce: "post" as const,
+  async transform(_code: string, id: string) {
+    const file = id.split("?")[0] ?? "";
+    if (!file.startsWith(trendingDataDir) || !file.endsWith(".json")) return null;
+    const base64 = (await readFile(file)).toString("base64");
+    return {
+      code: `export default JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(${JSON.stringify(base64)}), (c) => c.charCodeAt(0))));`,
+      map: null,
+    };
+  },
+};
 
 export default defineNuxtConfig({
   extends: ["docus"],
@@ -131,23 +155,16 @@ export default defineNuxtConfig({
     alias: {
       "@nuxt/content/server": nuxtContentServer,
     },
-    // The trending snapshots, per-repo and per-week files are static JSON
-    // under /trending-data (fetched by composables/useTrendingData.ts), not
-    // bundled modules: the server build replaces `typeof window` with
-    // `"undefined"` in module source, and a code excerpt in a snapshot can
-    // contain exactly that text, which broke the chunk and the page with it.
-    publicAssets: [
-      {
-        baseURL: "/trending-data",
-        dir: fileURLToPath(new URL("./data/trending", import.meta.url)),
-      },
-    ],
     prerender: {
       // /health-corpus.json publishes the calibration corpus for the jscpd
       // repo's rust/scripts/calibrate-health.mjs; see server/routes/
       // health-corpus.json.ts.
       routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", ...trendingRoutes],
     },
+  },
+
+  vite: {
+    plugins: [trendingDataBase64],
   },
 
   css: ["~/assets/css/main.css"],
