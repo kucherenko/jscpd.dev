@@ -159,7 +159,11 @@ export default defineNuxtConfig({
       // /health-corpus.json publishes the calibration corpus for the jscpd
       // repo's rust/scripts/calibrate-health.mjs; see server/routes/
       // health-corpus.json.ts.
-      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", ...trendingRoutes],
+      // The section index pages (content/*/index.md with navigation: false)
+      // are linked from nowhere the crawler visits, so they were missing
+      // from the static output and the live URLs returned the 404 page
+      // while the sitemap listed them.
+      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", "/concepts", "/reference", "/project", ...trendingRoutes],
     },
   },
 
