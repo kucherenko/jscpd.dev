@@ -1,0 +1,471 @@
+{
+ "name": "deepseek-ai/DeepGEMM",
+ "url": "https://github.com/deepseek-ai/DeepGEMM",
+ "appearances": [
+  {
+   "date": "2026-10-07",
+   "rank": 6,
+   "stars": 8776,
+   "starsToday": 199,
+   "headSha": "057ca5964aae0879ff2e0eb71ee05a3cb0ba3df7",
+   "sources": 107,
+   "lines": 20006,
+   "clones": 252,
+   "duplicatedLines": 2522,
+   "percentage": 12.61,
+   "healthScore": 51.6,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-07T05:32:04.506Z",
+  "name": "deepseek-ai/DeepGEMM",
+  "url": "https://github.com/deepseek-ai/DeepGEMM",
+  "description": "DeepGEMM: clean and efficient BLAS kernel library on GPU",
+  "language": "Cuda",
+  "stars": 8776,
+  "starsToday": 199,
+  "defaultBranch": "main",
+  "headSha": "057ca5964aae0879ff2e0eb71ee05a3cb0ba3df7",
+  "durationMs": 970,
+  "total": {
+   "sources": 107,
+   "lines": 20006,
+   "tokens": 166226,
+   "clones": 252,
+   "duplicatedLines": 2522,
+   "duplicatedTokens": 20616,
+   "percentage": 12.61,
+   "percentageTokens": 12.4
+  },
+  "formats": [
+   {
+    "format": "cpp-header",
+    "sources": 48,
+    "lines": 10079,
+    "clones": 230,
+    "duplicatedLines": 2311,
+    "percentage": 22.93
+   },
+   {
+    "format": "python",
+    "sources": 36,
+    "lines": 7760,
+    "clones": 21,
+    "duplicatedLines": 195,
+    "percentage": 2.51
+   },
+   {
+    "format": "yaml",
+    "sources": 3,
+    "lines": 375,
+    "clones": 1,
+    "duplicatedLines": 16,
+    "percentage": 4.27
+   },
+   {
+    "format": "bash",
+    "sources": 12,
+    "lines": 821,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 2,
+    "lines": 684,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "cpp",
+    "sources": 2,
+    "lines": 54,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "txt",
+    "sources": 1,
+    "lines": 34,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 2,
+    "lines": 31,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "cpp-header",
+    "lines": 31,
+    "tokens": 327,
+    "firstFile": {
+     "name": "csrc/jit_kernels/impls/sm100_tf32_hc_prenorm_gemm.hpp",
+     "start": 28,
+     "end": 58
+    },
+    "secondFile": {
+     "name": "csrc/jit_kernels/impls/sm90_tf32_hc_prenorm_gemm.hpp",
+     "start": 30,
+     "end": 60
+    }
+   },
+   {
+    "format": "cpp-header",
+    "lines": 14,
+    "tokens": 204,
+    "firstFile": {
+     "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+     "start": 370,
+     "end": 383
+    },
+    "secondFile": {
+     "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+     "start": 528,
+     "end": 541
+    }
+   },
+   {
+    "format": "cpp-header",
+    "lines": 19,
+    "tokens": 178,
+    "firstFile": {
+     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+     "start": 297,
+     "end": 315
+    },
+    "secondFile": {
+     "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+     "start": 357,
+     "end": 375
+    }
+   },
+   {
+    "format": "python",
+    "lines": 10,
+    "tokens": 178,
+    "firstFile": {
+     "name": "deep_gemm/legacy/a_fused_k_grouped_gemm.py",
+     "start": 69,
+     "end": 78
+    },
+    "secondFile": {
+     "name": "deep_gemm/legacy/b_fused_k_grouped_gemm.py",
+     "start": 68,
+     "end": 77
+    }
+   },
+   {
+    "format": "python",
+    "lines": 21,
+    "tokens": 161,
+    "firstFile": {
+     "name": "deep_gemm/legacy/a_fused_k_grouped_gemm.py",
+     "start": 12,
+     "end": 32
+    },
+    "secondFile": {
+     "name": "deep_gemm/legacy/b_fused_k_grouped_gemm.py",
+     "start": 12,
+     "end": 32
+    }
+   },
+   {
+    "format": "cpp-header",
+    "lines": 17,
+    "tokens": 154,
+    "firstFile": {
+     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+     "start": 92,
+     "end": 108
+    },
+    "secondFile": {
+     "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+     "start": 112,
+     "end": 128
+    }
+   },
+   {
+    "format": "cpp-header",
+    "lines": 17,
+    "tokens": 150,
+    "firstFile": {
+     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+     "start": 104,
+     "end": 120
+    },
+    "secondFile": {
+     "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+     "start": 99,
+     "end": 115
+    }
+   },
+   {
+    "format": "cpp-header",
+    "lines": 17,
+    "tokens": 150,
+    "firstFile": {
+     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+     "start": 234,
+     "end": 250
+    },
+    "secondFile": {
+     "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+     "start": 231,
+     "end": 247
+    }
+   },
+   {
+    "format": "cpp-header",
+    "lines": 12,
+    "tokens": 146,
+    "firstFile": {
+     "name": "csrc/apis/gemm.hpp",
+     "start": 135,
+     "end": 146
+    },
+    "secondFile": {
+     "name": "csrc/apis/gemm.hpp",
+     "start": 150,
+     "end": 161
+    }
+   },
+   {
+    "format": "cpp-header",
+    "lines": 12,
+    "tokens": 146,
+    "firstFile": {
+     "name": "csrc/apis/gemm.hpp",
+     "start": 135,
+     "end": 146
+    },
+    "secondFile": {
+     "name": "csrc/apis/gemm.hpp",
+     "start": 166,
+     "end": 177
+    }
+   }
+  ],
+  "health": {
+   "score": 51.6,
+   "grade": "D",
+   "size": {
+    "lines": 18676,
+    "files": 96,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 13.4,
+     "adjusted": 12.5,
+     "lines": 2506,
+     "halfLife": 8.5,
+     "formats": [
+      "cpp-header",
+      "python",
+      "bash",
+      "perl",
+      "cpp"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 36.2
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.8,
+     "adjusted": 1.2,
+     "lines": 57,
+     "halfLife": 7.5,
+     "coverage": 40.6,
+     "weight": 0.406,
+     "score": 89.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 40,
+     "adjusted": 38.2,
+     "lines": 7476,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 58.9
+    }
+   ]
+  },
+  "complexity": {
+   "total": 2835,
+   "mean": 29.5,
+   "files": [
+    {
+     "path": "scripts/generate_pyi.py",
+     "complexity": 223,
+     "lines": 890,
+     "bytes": 29335
+    },
+    {
+     "path": "tests/generators.py",
+     "complexity": 214,
+     "lines": 608,
+     "bytes": 29383
+    },
+    {
+     "path": "csrc/apis/gemm.hpp",
+     "complexity": 173,
+     "lines": 997,
+     "bytes": 53320
+    },
+    {
+     "path": "tests/test_attention.py",
+     "complexity": 134,
+     "lines": 715,
+     "bytes": 39797
+    },
+    {
+     "path": "csrc/apis/attention.hpp",
+     "complexity": 106,
+     "lines": 478,
+     "bytes": 28921
+    },
+    {
+     "path": "csrc/jit_kernels/impls/runtime_utils.hpp",
+     "complexity": 93,
+     "lines": 410,
+     "bytes": 23087
+    },
+    {
+     "path": "csrc/apis/einsum.hpp",
+     "complexity": 88,
+     "lines": 311,
+     "bytes": 15289
+    },
+    {
+     "path": "tests/test_fp8_fp4.py",
+     "complexity": 87,
+     "lines": 406,
+     "bytes": 24817
+    },
+    {
+     "path": "csrc/jit_kernels/heuristics/sm100.hpp",
+     "complexity": 72,
+     "lines": 304,
+     "bytes": 14684
+    },
+    {
+     "path": "tests/test_bf16.py",
+     "complexity": 72,
+     "lines": 341,
+     "bytes": 18303
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.75,
+   "findings": 12,
+   "files": 40,
+   "byCategory": [
+    {
+     "category": "unused-import",
+     "count": 12
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/locality_domain.py",
+     "name": "get_granularity",
+     "line": 5,
+     "lines": 9
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/utils/layout.py",
+     "name": "get_tma_aligned_size",
+     "line": 2,
+     "lines": 8
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/locality_domain.py",
+     "name": "empty",
+     "line": 7,
+     "lines": 7
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/utils/layout.py",
+     "name": "get_mn_major_tma_aligned_tensor",
+     "line": 3,
+     "lines": 7
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/utils/layout.py",
+     "name": "get_mn_major_tma_aligned_packed_ue8m0_tensor",
+     "line": 4,
+     "lines": 6
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/utils/layout.py",
+     "name": "get_k_grouped_mn_major_tma_aligned_packed_ue8m0_tensor",
+     "line": 5,
+     "lines": 5
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/locality_domain.py",
+     "name": "get_sm_locality_domains",
+     "line": 10,
+     "lines": 4
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/utils/layout.py",
+     "name": "set_mk_alignment_for_contiguous_layout",
+     "line": 6,
+     "lines": 4
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/locality_domain.py",
+     "name": "get_balanced_sm_locality_domains",
+     "line": 11,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "deep_gemm/utils/layout.py",
+     "name": "get_theoretical_mk_alignment_for_contiguous_layout",
+     "line": 8,
+     "lines": 2
+    }
+   ]
+  }
+ }
+}

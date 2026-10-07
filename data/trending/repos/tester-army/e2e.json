@@ -29,46 +29,60 @@
    "percentage": 9.15,
    "healthScore": 71.2,
    "healthGrade": "B"
+  },
+  {
+   "date": "2026-10-07",
+   "rank": 1,
+   "stars": 6559,
+   "starsToday": 1725,
+   "headSha": "b7ba0097abe950b6cd3da25c45e58087fc77b668",
+   "sources": 1280,
+   "lines": 233402,
+   "clones": 797,
+   "duplicatedLines": 23252,
+   "percentage": 9.96,
+   "healthScore": 71.1,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-10-06",
-  "generatedAt": "2026-10-06T05:31:17.340Z",
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-07T05:32:04.506Z",
   "name": "tester-army/e2e",
   "url": "https://github.com/tester-army/e2e",
   "description": "Next generation e2e testing framework for web and mobile apps.",
   "language": "TypeScript",
-  "stars": 5084,
-  "starsToday": 1398,
+  "stars": 6559,
+  "starsToday": 1725,
   "defaultBranch": "main",
-  "headSha": "fd3a0c766b4d40c74fabdbc578e3832d80553bf9",
-  "durationMs": 1748,
+  "headSha": "b7ba0097abe950b6cd3da25c45e58087fc77b668",
+  "durationMs": 1591,
   "total": {
-   "sources": 1262,
-   "lines": 230529,
-   "tokens": 1609409,
-   "clones": 736,
-   "duplicatedLines": 21095,
-   "duplicatedTokens": 94585,
-   "percentage": 9.15,
-   "percentageTokens": 5.88
+   "sources": 1280,
+   "lines": 233402,
+   "tokens": 1625713,
+   "clones": 797,
+   "duplicatedLines": 23252,
+   "duplicatedTokens": 101973,
+   "percentage": 9.96,
+   "percentageTokens": 6.27
   },
   "formats": [
    {
     "format": "json",
-    "sources": 156,
-    "lines": 37205,
-    "clones": 312,
-    "duplicatedLines": 15830,
-    "percentage": 42.55
+    "sources": 186,
+    "lines": 39540,
+    "clones": 366,
+    "duplicatedLines": 17933,
+    "percentage": 45.35
    },
    {
     "format": "typescript",
-    "sources": 862,
-    "lines": 161802,
-    "clones": 274,
-    "duplicatedLines": 2765,
-    "percentage": 1.71
+    "sources": 864,
+    "lines": 162238,
+    "clones": 277,
+    "duplicatedLines": 2791,
+    "percentage": 1.72
    },
    {
     "format": "tsx",
@@ -80,11 +94,11 @@
    },
    {
     "format": "markdown",
-    "sources": 62,
-    "lines": 9053,
-    "clones": 42,
-    "duplicatedLines": 665,
-    "percentage": 7.35
+    "sources": 48,
+    "lines": 9118,
+    "clones": 46,
+    "duplicatedLines": 693,
+    "percentage": 7.6
    },
    {
     "format": "markup",
@@ -105,10 +119,10 @@
    {
     "format": "txt",
     "sources": 35,
-    "lines": 1334,
+    "lines": 1327,
     "clones": 6,
     "duplicatedLines": 45,
-    "percentage": 3.37
+    "percentage": 3.39
    },
    {
     "format": "css",
@@ -121,7 +135,7 @@
    {
     "format": "javascript",
     "sources": 12,
-    "lines": 3555,
+    "lines": 3599,
     "clones": 1,
     "duplicatedLines": 10,
     "percentage": 0.28
@@ -288,11 +302,11 @@
    }
   ],
   "health": {
-   "score": 71.2,
+   "score": 71.1,
    "grade": "B",
    "size": {
-    "lines": 180011,
-    "files": 955,
+    "lines": 180491,
+    "files": 957,
     "class": "L"
    },
    "dimensions": [
@@ -301,7 +315,7 @@
      "source": "jscpd",
      "value": 2.3,
      "adjusted": 2.4,
-     "lines": 4209,
+     "lines": 4235,
      "halfLife": 8.5,
      "formats": [
       "typescript",
@@ -318,25 +332,25 @@
       "data"
      ],
      "weight": 1,
-     "score": 82.6
+     "score": 82.5
     },
     {
      "id": "dead-code",
      "source": "jscpd",
      "value": 1.4,
      "adjusted": 1.4,
-     "lines": 2444,
+     "lines": 2498,
      "halfLife": 7.5,
      "coverage": 99.6,
      "weight": 0.996,
-     "score": 88
+     "score": 87.8
     },
     {
      "id": "complexity",
      "source": "jscpd",
      "value": 50.9,
-     "adjusted": 50.6,
-     "lines": 91641,
+     "adjusted": 50.5,
+     "lines": 91831,
      "halfLife": 50,
      "weight": 1,
      "score": 49.6
@@ -344,20 +358,26 @@
    ]
   },
   "complexity": {
-   "total": 30458,
+   "total": 30560,
    "mean": 31.9,
    "files": [
     {
      "path": "packages/web/src/in-page/read-semantics.ts",
-     "complexity": 481,
-     "lines": 1404,
-     "bytes": 63635
+     "complexity": 495,
+     "lines": 1416,
+     "bytes": 64454
     },
     {
      "path": "packages/mobile/tests/unit/engine.test.ts",
      "complexity": 348,
      "lines": 2045,
      "bytes": 109949
+    },
+    {
+     "path": "packages/decision/tests/executor.test.ts",
+     "complexity": 309,
+     "lines": 689,
+     "bytes": 38698
     },
     {
      "path": "packages/mobile/src/surface.ts",
@@ -372,22 +392,22 @@
      "bytes": 38642
     },
     {
-     "path": "packages/decision/tests/executor.test.ts",
-     "complexity": 291,
-     "lines": 646,
-     "bytes": 35643
-    },
-    {
      "path": "packages/e2e/tests/unit/config.test.ts",
-     "complexity": 262,
-     "lines": 1111,
-     "bytes": 62823
+     "complexity": 269,
+     "lines": 1138,
+     "bytes": 64242
     },
     {
      "path": "packages/e2e/tests/unit/scheduler.test.ts",
      "complexity": 258,
      "lines": 1351,
      "bytes": 56773
+    },
+    {
+     "path": "packages/e2e/src/config/resolve.ts",
+     "complexity": 246,
+     "lines": 1073,
+     "bytes": 46262
     },
     {
      "path": "packages/e2e/tests/unit/select.test.ts",
@@ -400,19 +420,13 @@
      "complexity": 243,
      "lines": 1098,
      "bytes": 47063
-    },
-    {
-     "path": "packages/e2e/src/collect/select.ts",
-     "complexity": 240,
-     "lines": 852,
-     "bytes": 36621
     }
    ]
   },
   "deadCode": {
-   "percentage": 1.36,
+   "percentage": 1.39,
    "findings": 30,
-   "files": 971,
+   "files": 973,
    "byCategory": [
     {
      "category": "unused-file",
@@ -450,6 +464,13 @@
     },
     {
      "category": "unused-file",
+     "path": "apps/testbed/tests-agent/judgments.e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 117
+    },
+    {
+     "category": "unused-file",
      "path": "apps/mobile-benchmark/tests-capture/snapshots.e2e.ts",
      "name": "",
      "line": 1,
@@ -475,13 +496,6 @@
      "name": "",
      "line": 1,
      "lines": 64
-    },
-    {
-     "category": "unused-file",
-     "path": "apps/testbed/tests-agent/judgments.e2e.ts",
-     "name": "",
-     "line": 1,
-     "lines": 63
     },
     {
      "category": "unused-file",
