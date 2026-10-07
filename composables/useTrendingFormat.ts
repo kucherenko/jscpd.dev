@@ -12,7 +12,10 @@ export const formatDay = (date: string, opts: Intl.DateTimeFormatOptions = { yea
 
 export const shortDay = (date: string) => formatDay(date, { month: 'short', day: 'numeric' })
 
-export const dupClass = (pct: number) => pct < 3 ? 'dup-low' : pct < 8 ? 'dup-mid' : 'dup-high'
+/** The three steps of the duplication colour scale. */
+export const dupTone = (pct: number): 'low' | 'mid' | 'high' => pct < 3 ? 'low' : pct < 8 ? 'mid' : 'high'
+
+export const dupClass = (pct: number) => `dup-${dupTone(pct)}`
 
 /** Health grade → CSS class, same A-E scale as the jscpd --health badge. */
 export const gradeClass = (grade: string | null | undefined) =>

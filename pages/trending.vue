@@ -45,7 +45,15 @@ useSeoMeta({
   ogDescription: description,
   twitterCard: 'summary_large_image'
 })
-defineOgImage('Docs', { headline: 'Trending', title: title.value, description: description.value })
+// The social card: the day's median next to the title (components/OgImage/Trending.takumi.vue).
+defineOgImage('Trending', {
+  headline: isLatest.value ? 'Trending today' : `Trending, ${formatDay(date.value, { month: 'short', day: 'numeric', year: 'numeric' })}`,
+  title: 'Trending Repos, Analyzed',
+  description: `${day.value.summary.repos} GitHub trending repositories measured with jscpd on ${formatDay(date.value)}: every file, and the code alone.`,
+  value: `${coded.value ? day.value.summary.codeMedianPercentage : day.value.summary.medianPercentage}%`,
+  label: coded.value ? 'median duplicated code' : 'median duplication, all files',
+  tone: dupTone(coded.value ? day.value.summary.codeMedianPercentage! : day.value.summary.medianPercentage)
+})
 useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(date.value, latestTrendingDate)}` }] })
 </script>
 
