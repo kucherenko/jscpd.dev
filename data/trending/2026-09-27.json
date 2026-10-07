@@ -6,19 +6,19 @@
  "summary": {
   "repos": 7,
   "sources": 19593,
-  "lines": 4922510,
-  "tokens": 29325591,
-  "clones": 38092,
-  "duplicatedLines": 585275,
-  "duplicatedTokens": 3386040,
+  "lines": 4922202,
+  "tokens": 29324436,
+  "clones": 38095,
+  "duplicatedLines": 585324,
+  "duplicatedTokens": 3386919,
   "percentage": 11.89,
   "percentageTokens": 11.55,
-  "avgPercentage": 12.92,
+  "avgPercentage": 12.93,
   "medianPercentage": 11.19,
   "mostDuplicated": {
    "name": "actions/runner-images",
    "clones": 453,
-   "percentage": 32.91
+   "percentage": 32.95
   },
   "cleanest": {
    "name": "NVIDIA/Model-Optimizer",
@@ -27,9 +27,27 @@
   },
   "mostClones": {
    "name": "paperclipai/paperclip",
-   "clones": 17602,
+   "clones": 17605,
    "percentage": 11.19
   },
+  "codeRepos": 7,
+  "codeSources": 9059,
+  "codeLines": 2334667,
+  "codeClones": 9734,
+  "codeDuplicatedLines": 162515,
+  "codePercentage": 6.96,
+  "codeMedianPercentage": 6.75,
+  "codeMostDuplicated": {
+   "name": "openbao/openbao",
+   "clones": 2017,
+   "percentage": 8.77
+  },
+  "codeCleanest": {
+   "name": "NVIDIA/Model-Optimizer",
+   "clones": 240,
+   "percentage": 1.85
+  },
+  "generatedFiles": 31,
   "avgHealth": 54.83,
   "healthiest": {
    "name": "mobile-next/mobile-mcp",
@@ -45,16 +63,16 @@
    {
     "language": "TypeScript",
     "repos": 4,
-    "clones": 28649,
-    "lines": 3748512,
-    "duplicatedLines": 443932,
+    "clones": 28652,
+    "lines": 3748336,
+    "duplicatedLines": 443981,
     "percentage": 11.84
    },
    {
     "language": "Go",
     "repos": 1,
     "clones": 7742,
-    "lines": 699076,
+    "lines": 699032,
     "duplicatedLines": 110633,
     "percentage": 15.83
    },
@@ -62,7 +80,7 @@
     "language": "Python",
     "repos": 1,
     "clones": 1248,
-    "lines": 436783,
+    "lines": 436739,
     "duplicatedLines": 18159,
     "percentage": 4.16
    },
@@ -70,9 +88,9 @@
     "language": "PowerShell",
     "repos": 1,
     "clones": 453,
-    "lines": 38139,
+    "lines": 38095,
     "duplicatedLines": 12551,
-    "percentage": 32.91
+    "percentage": 32.95
    }
   ]
  },
@@ -86,14 +104,14 @@
    "starsToday": 2608,
    "defaultBranch": "master",
    "headSha": "640dee18029f7651d56ae0f1828d04228f9ab044",
-   "durationMs": 9226,
+   "durationMs": 74326,
    "total": {
     "sources": 7361,
-    "lines": 2435067,
-    "tokens": 15699219,
-    "clones": 17602,
-    "duplicatedLines": 272533,
-    "duplicatedTokens": 1573937,
+    "lines": 2435023,
+    "tokens": 15699054,
+    "clones": 17605,
+    "duplicatedLines": 272582,
+    "duplicatedTokens": 1574816,
     "percentage": 11.19,
     "percentageTokens": 10.03
    },
@@ -134,9 +152,9 @@
      "format": "markdown",
      "sources": 583,
      "lines": 136261,
-     "clones": 221,
-     "duplicatedLines": 9200,
-     "percentage": 6.75
+     "clones": 224,
+     "duplicatedLines": 9249,
+     "percentage": 6.79
     },
     {
      "format": "javascript",
@@ -165,10 +183,10 @@
     {
      "format": "bash",
      "sources": 183,
-     "lines": 16383,
+     "lines": 16333,
      "clones": 60,
      "duplicatedLines": 1622,
-     "percentage": 9.9
+     "percentage": 9.93
     },
     {
      "format": "markup",
@@ -184,151 +202,261 @@
      "format": "markdown",
      "lines": 1287,
      "tokens": 9203,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "skills-releases/paperclip/v0/references/api-reference.md:markdown",
       "start": 1,
       "end": 1287
      },
-     "secondFile": {
-      "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
-      "start": 1,
-      "end": 1287
+     "others": [
+      {
+       "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
+       "start": 1,
+       "end": 1287
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Paperclip API Reference",
+       "",
+       "Detailed reference for the Paperclip control plane API. For the core heartbeat procedure and critical rules, see the main `SKILL.md`.",
+       "",
+       "---",
+       "",
+       "## Response Schemas",
+       "",
+       "### Agent Record (`GET /api/agents/me` or `GET /api/agents/:agentId`)",
+       ""
+      ],
+      "total": 1287
      }
     },
     {
      "format": "tsx",
      "lines": 1048,
      "tokens": 6783,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/CompanySkills.production.tsx",
       "start": 2319,
       "end": 3366
      },
-     "secondFile": {
-      "name": "ui/src/pages/CompanySkills.tsx",
-      "start": 2336,
-      "end": 3383
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 2336,
+       "end": 3383
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+       "isAgentDisabled={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return option.required || !option.supportsSkills;",
+       "}}",
+       "getDescription={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+       "}}",
+       "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+      ],
+      "total": 1048
      }
     },
     {
      "format": "markdown",
      "lines": 1014,
      "tokens": 4926,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "doc/plans/2026-03-13-workspace-product-model-and-work-product.md:markdown",
       "start": 1,
       "end": 1014
      },
-     "secondFile": {
-      "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
-      "start": 1,
-      "end": 1014
+     "others": [
+      {
+       "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
+       "start": 1,
+       "end": 1014
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Workspace Product Model, Work Product, and PR Flow",
+       "",
+       "## Context",
+       "",
+       "Paperclip needs to support two very different but equally valid ways of working:",
+       "",
+       "- a solo developer working directly on `master`, or in a folder that is not even a git repo",
+       "- a larger engineering workflow with isolated branches, previews, pull requests, and cleanup automation",
+       "",
+       "Today, Paperclip already has the beginnings of this model:"
+      ],
+      "total": 1014
      }
     },
     {
      "format": "tsx",
      "lines": 657,
      "tokens": 4344,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/AgentDetail.production.tsx",
       "start": 3714,
       "end": 4370
      },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 3796,
-      "end": 4452
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 3796,
+       "end": 4452
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 624,
      "tokens": 4232,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/Inbox.tsx",
       "start": 1711,
       "end": 2334
      },
-     "secondFile": {
-      "name": "ui/src/pages/LegacyInbox.tsx",
-      "start": 1590,
-      "end": 2213
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/LegacyInbox.tsx",
+       "start": 1590,
+       "end": 2213
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 587,
      "tokens": 4042,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/components/IssuesList.tsx",
       "start": 1102,
       "end": 1688
      },
-     "secondFile": {
-      "name": "ui/src/components/LegacyIssuesList.tsx",
-      "start": 1052,
-      "end": 1638
-     }
+     "others": [
+      {
+       "name": "ui/src/components/LegacyIssuesList.tsx",
+       "start": 1052,
+       "end": 1638
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 60,
+     "copies": 66,
+     "first": {
+      "name": "server/src/__tests__/activity-service.test.ts",
+      "start": 109,
+      "end": 118
+     },
+     "others": [
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 157,
+       "end": 166
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 259,
+       "end": 268
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 353,
+       "end": 362
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 476,
+       "end": 485
+      },
+      {
+       "name": "server/src/__tests__/agents-claude-oauth-binding.test.ts",
+       "start": 271,
+       "end": 278
+      },
+      {
+       "name": "server/src/__tests__/artifact-review-documents-service.test.ts",
+       "start": 94,
+       "end": 102
+      },
+      {
+       "name": "server/src/__tests__/company-skill-test-runs-service.test.ts",
+       "start": 74,
+       "end": 81
+      },
+      {
+       "name": "server/src/__tests__/company-skills-service.test.ts",
+       "start": 947,
+       "end": 954
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 619,
      "tokens": 3874,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/components/SidebarAgents.production.tsx",
       "start": 48,
       "end": 666
      },
-     "secondFile": {
-      "name": "ui/src/components/SidebarAgents.tsx",
-      "start": 48,
-      "end": 666
-     }
+     "others": [
+      {
+       "name": "ui/src/components/SidebarAgents.tsx",
+       "start": 48,
+       "end": 666
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 590,
      "tokens": 3620,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/AgentDetail.production.tsx",
       "start": 3785,
       "end": 4374
      },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 3867,
-      "end": 4456
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 3867,
+       "end": 4456
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 512,
      "tokens": 3520,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/CompanySkills.production.tsx",
       "start": 1667,
       "end": 2178
      },
-     "secondFile": {
-      "name": "ui/src/pages/CompanySkills.tsx",
-      "start": 1684,
-      "end": 2195
-     }
-    },
-    {
-     "format": "tsx",
-     "lines": 425,
-     "tokens": 2881,
-     "firstFile": {
-      "name": "ui/src/pages/AgentDetail.production.tsx",
-      "start": 346,
-      "end": 770
-     },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 346,
-      "end": 770
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 1684,
+       "end": 2195
+      }
+     ]
     }
    ],
    "health": {
@@ -551,7 +679,334 @@
       "lines": 955
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 3316,
+    "lines": 1210963,
+    "tokens": 6952252,
+    "clones": 4688,
+    "duplicatedLines": 81734,
+    "duplicatedTokens": 489801,
+    "percentage": 6.75,
+    "percentageTokens": 7.05,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 2202,
+      "lines": 769595,
+      "clones": 3335,
+      "duplicatedLines": 43799,
+      "percentage": 5.69
+     },
+     {
+      "format": "tsx",
+      "sources": 844,
+      "lines": 345153,
+      "clones": 1001,
+      "duplicatedLines": 33016,
+      "percentage": 9.57
+     },
+     {
+      "format": "rust",
+      "sources": 34,
+      "lines": 52139,
+      "clones": 257,
+      "duplicatedLines": 2999,
+      "percentage": 5.75
+     },
+     {
+      "format": "javascript",
+      "sources": 175,
+      "lines": 31529,
+      "clones": 59,
+      "duplicatedLines": 797,
+      "percentage": 2.53
+     },
+     {
+      "format": "bash",
+      "sources": 56,
+      "lines": 12144,
+      "clones": 36,
+      "duplicatedLines": 1123,
+      "percentage": 9.25
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "python",
+      "sources": 1,
+      "lines": 96,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "go",
+      "sources": 2,
+      "lines": 69,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "c",
+      "sources": 1,
+      "lines": 64,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 1048,
+      "tokens": 6783,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 2319,
+       "end": 3366
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 2336,
+        "end": 3383
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+        "isAgentDisabled={(agent) => {",
+        "  const option = agent as AttachAgentOption;",
+        "  return option.required || !option.supportsSkills;",
+        "}}",
+        "getDescription={(agent) => {",
+        "  const option = agent as AttachAgentOption;",
+        "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+        "}}",
+        "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+       ],
+       "total": 1048
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 657,
+      "tokens": 4344,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 3714,
+       "end": 4370
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 3796,
+        "end": 4452
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      <ScrollToBottom />",
+        "    </div>",
+        "  );",
+        "}",
+        "",
+        "/* ---- Log Viewer ---- */",
+        "",
+        "export function LogViewer({ run, adapterType }: { run: HeartbeatRun; adapterType: string }) {",
+        "  const { visible } = usePageVisibility();",
+        "  const [events, setEvents] = useState<HeartbeatRunEvent[]>([]);"
+       ],
+       "total": 657
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 624,
+      "tokens": 4232,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/Inbox.tsx",
+       "start": 1711,
+       "end": 2334
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/LegacyInbox.tsx",
+        "start": 1590,
+        "end": 2213
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  [selectedCompanyId, visibleIssueColumns],",
+        ");",
+        "const updateIssueFilters = useCallback((patch: Partial<IssueFilterState>) => {",
+        "  updateFilterPreferences((previous) => ({",
+        "    ...previous,",
+        "    issueFilters: { ...previous.issueFilters, ...patch },",
+        "  }));",
+        "}, [updateFilterPreferences]);",
+        "useEffect(() => {",
+        "  if (!experimentalSettingsLoaded || externalObjectsEnabled || issueFilters.externalObjectStatuses.length === 0) return;"
+       ],
+       "total": 624
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 587,
+      "tokens": 4042,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/components/IssuesList.tsx",
+       "start": 1102,
+       "end": 1688
+      },
+      "others": [
+       {
+        "name": "ui/src/components/LegacyIssuesList.tsx",
+        "start": 1052,
+        "end": 1638
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 619,
+      "tokens": 3874,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/components/SidebarAgents.production.tsx",
+       "start": 48,
+       "end": 666
+      },
+      "others": [
+       {
+        "name": "ui/src/components/SidebarAgents.tsx",
+        "start": 48,
+        "end": 666
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 590,
+      "tokens": 3620,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 3785,
+       "end": 4374
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 3867,
+        "end": 4456
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 512,
+      "tokens": 3520,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 1667,
+       "end": 2178
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 1684,
+        "end": 2195
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 425,
+      "tokens": 2881,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 346,
+       "end": 770
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 346,
+        "end": 770
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 400,
+      "tokens": 2771,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/Inbox.tsx",
+       "start": 899,
+       "end": 1298
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/LegacyInbox.tsx",
+        "start": 789,
+        "end": 1189
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 367,
+      "tokens": 2523,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 1814,
+       "end": 2180
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 1831,
+        "end": 2197
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 8,
+     "minified": 0,
+     "sample": [
+      "packages/paperclip-runner/runner/crates/runner-core/src/generated_acpx_sidecar_contract.rs",
+      "packages/paperclip-runner/src/drivers/acpx/generated-sidecar-contract.ts",
+      "packages/paperclip-runner/src/generated/capability-contract.ts",
+      "packages/paperclip-runner/src/mock-core/skill-frontmatter.generated.ts",
+      "packages/paperclip-runner/src/protocol/generated/schema-bundle.ts",
+      "packages/paperclip-runner/src/protocol/generated/standalone-validators.ts",
+      "packages/shared/src/cliplab/character.ts",
+      "packages/shared/src/telemetry/generated/paperclip-telemetry.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:42:29.435Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "NVIDIA/Model-Optimizer",
@@ -562,11 +1017,11 @@
    "starsToday": 357,
    "defaultBranch": "main",
    "headSha": "23355eda90a25c290f9b1fdfb928ad54caae7d10",
-   "durationMs": 2410,
+   "durationMs": 1174,
    "total": {
     "sources": 2070,
-    "lines": 436783,
-    "tokens": 2486573,
+    "lines": 436739,
+    "tokens": 2486408,
     "clones": 1248,
     "duplicatedLines": 18159,
     "duplicatedTokens": 107981,
@@ -601,10 +1056,10 @@
     {
      "format": "bash",
      "sources": 159,
-     "lines": 10712,
+     "lines": 10662,
      "clones": 17,
      "duplicatedLines": 176,
-     "percentage": 1.64
+     "percentage": 1.65
     },
     {
      "format": "cpp",
@@ -660,151 +1115,337 @@
      "format": "cpp",
      "lines": 16,
      "tokens": 682,
-     "firstFile": {
+     "copies": 7,
+     "first": {
       "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
       "start": 1,
       "end": 16
      },
-     "secondFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.cpp",
-      "start": 1,
-      "end": 16
-     }
-    },
-    {
-     "format": "cpp",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-      "start": 1,
-      "end": 16
-     },
-     "secondFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginRegistration.cpp",
-      "start": 1,
-      "end": 16
-     }
-    },
-    {
-     "format": "cpp",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-      "start": 1,
-      "end": 16
-     },
-     "secondFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.cpp",
-      "start": 1,
-      "end": 16
-     }
-    },
-    {
-     "format": "cpp",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-      "start": 1,
-      "end": 16
-     },
-     "secondFile": {
-      "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
-      "start": 1,
-      "end": 16
-     }
-    },
-    {
-     "format": "cpp",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-      "start": 1,
-      "end": 16
-     },
-     "secondFile": {
-      "name": "modelopt/torch/kernels/quantization/conv/implicit_gemm_binding.cpp",
-      "start": 1,
-      "end": 16
-     }
-    },
-    {
-     "format": "cpp",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-      "start": 1,
-      "end": 16
-     },
-     "secondFile": {
-      "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.cpp",
-      "start": 1,
-      "end": 16
+     "others": [
+      {
+       "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.cpp",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginRegistration.cpp",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.cpp",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "modelopt/torch/kernels/quantization/conv/implicit_gemm_binding.cpp",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.cpp",
+       "start": 1,
+       "end": 16
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+       " * SPDX-License-Identifier: Apache-2.0",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " * http://www.apache.org/licenses/LICENSE-2.0",
+       " *"
+      ],
+      "total": 16
      }
     },
     {
      "format": "c-header",
      "lines": 16,
      "tokens": 682,
-     "firstFile": {
+     "copies": 5,
+     "first": {
       "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
       "start": 1,
       "end": 16
      },
-     "secondFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.h",
-      "start": 1,
-      "end": 16
+     "others": [
+      {
+       "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.h",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.h",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.h",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant_mx.h",
+       "start": 1,
+       "end": 16
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+       " * SPDX-License-Identifier: Apache-2.0",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " * http://www.apache.org/licenses/LICENSE-2.0",
+       " *"
+      ],
+      "total": 16
      }
     },
     {
-     "format": "c-header",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
-      "start": 1,
-      "end": 16
+     "format": "markdown",
+     "lines": 6,
+     "tokens": 150,
+     "copies": 7,
+     "first": {
+      "name": "examples/diffusers/README.md:markdown",
+      "start": 482,
+      "end": 487
      },
-     "secondFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.h",
-      "start": 1,
-      "end": 16
+     "others": [
+      {
+       "name": "examples/hf_ptq/README.md:markdown",
+       "start": 792,
+       "end": 797
+      },
+      {
+       "name": "examples/llm_distill/README.md:markdown",
+       "start": 182,
+       "end": 187
+      },
+      {
+       "name": "examples/onnx_ptq/README.md:markdown",
+       "start": 273,
+       "end": 278
+      },
+      {
+       "name": "examples/speculative_decoding/README.md:markdown",
+       "start": 350,
+       "end": 355
+      },
+      {
+       "name": "examples/torch_onnx/README.md:markdown",
+       "start": 396,
+       "end": 401
+      },
+      {
+       "name": "examples/torch_trt/README.md:markdown",
+       "start": 235,
+       "end": 240
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "- 📅 [Roadmap](https://github.com/NVIDIA/Model-Optimizer/issues/1699)",
+       "- 📖 [Documentation](https://nvidia.github.io/Model-Optimizer)",
+       "- 🎯 [Benchmarks](../benchmark.md)",
+       "- 💡 [Release Notes](https://nvidia.github.io/Model-Optimizer/reference/0_changelog.html)",
+       "- 🐛 [File a bug](https://github.com/NVIDIA/Model-Optimizer/issues/new?template=1_bug_report.md)",
+       "- ✨ [File a Feature Request](https://github.com/NVIDIA/Model-Optimizer/issues/new?template=2_feature_request.md)"
+      ],
+      "total": 6
      }
     },
     {
-     "format": "c-header",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
-      "start": 1,
+     "format": "cpp",
+     "lines": 15,
+     "tokens": 636,
+     "copies": 2,
+     "first": {
+      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+      "start": 2,
       "end": 16
      },
-     "secondFile": {
-      "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.h",
-      "start": 1,
-      "end": 16
-     }
+     "others": [
+      {
+       "name": "modelopt/torch/kernels/quantization/ggml/ggml.cpp",
+       "start": 2,
+       "end": 16
+      }
+     ]
     },
     {
-     "format": "c-header",
-     "lines": 16,
-     "tokens": 682,
-     "firstFile": {
-      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
-      "start": 1,
-      "end": 16
+     "format": "python",
+     "lines": 122,
+     "tokens": 577,
+     "copies": 2,
+     "first": {
+      "name": "examples/llm_eval/mmlu.py",
+      "start": 62,
+      "end": 183
      },
-     "secondFile": {
-      "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant_mx.h",
+     "others": [
+      {
+       "name": "examples/windows/accuracy_benchmark/mmlu_benchmark.py",
+       "start": 46,
+       "end": 167
+      }
+     ]
+    },
+    {
+     "format": "yaml",
+     "lines": 17,
+     "tokens": 71,
+     "copies": 9,
+     "first": {
+      "name": "examples/puzzletron/configs/gptoss-20b_remove_experts_memory/validate_model_defaults.yaml",
       "start": 1,
-      "end": 16
-     }
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "examples/puzzletron/configs/llama-3_1-8B_pruneffn_memory/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "examples/puzzletron/configs/llama-3_1-8B_pruneffn_runtime/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "examples/puzzletron/configs/llama-3_2-3B_pruneffn_memory/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "examples/puzzletron/configs/mistral-small-24b-instruct-2501_pruneffn_memory/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "examples/puzzletron/configs/nemotron-nano-12b-v2/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "examples/puzzletron/configs/nemotron-nano-30b-A3b-v3/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "examples/puzzletron/configs/qwen2_5_7b_instruct_pruneffn_memory/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "examples/puzzletron/configs/qwen3-8b_pruneffn_memory/validate_model_defaults.yaml",
+       "start": 1,
+       "end": 17
+      }
+     ]
+    },
+    {
+     "format": "yaml",
+     "lines": 70,
+     "tokens": 268,
+     "copies": 3,
+     "first": {
+      "name": "examples/puzzletron/configs/nemotron-nano-12b-v2/nemotron_nano_12b_v2.yaml",
+      "start": 11,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "examples/puzzletron/configs/qwen2_5_7b_instruct_pruneffn_memory/qwen2_5_7b_instruct.yaml",
+       "start": 11,
+       "end": 80
+      },
+      {
+       "name": "examples/puzzletron/configs/qwen3-8b_pruneffn_memory/qwen3_8b.yaml",
+       "start": 11,
+       "end": 80
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 177,
+     "copies": 4,
+     "first": {
+      "name": "tests/unit/torch/quantization/test_quant_conv.py",
+      "start": 65,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "tests/unit/torch/quantization/test_quant_conv.py",
+       "start": 96,
+       "end": 111
+      },
+      {
+       "name": "tests/unit/torch/quantization/test_quant_conv.py",
+       "start": 152,
+       "end": 167
+      },
+      {
+       "name": "tests/unit/torch/quantization/test_quant_conv.py",
+       "start": 184,
+       "end": 199
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 67,
+     "tokens": 496,
+     "copies": 2,
+     "first": {
+      "name": "modelopt/torch/_deploy/compilation.py",
+      "start": 40,
+      "end": 106
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/_deploy/profiling.py",
+       "start": 35,
+       "end": 102
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 66,
+     "tokens": 493,
+     "copies": 2,
+     "first": {
+      "name": "modelopt/torch/_deploy/compilation.py",
+      "start": 40,
+      "end": 105
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/_deploy/profiling.py",
+       "start": 119,
+       "end": 184
+      }
+     ]
     }
    ],
    "health": {
@@ -1022,7 +1663,293 @@
       "lines": 289
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 608,
+    "lines": 191625,
+    "tokens": 1003272,
+    "clones": 240,
+    "duplicatedLines": 3538,
+    "duplicatedTokens": 23372,
+    "percentage": 1.85,
+    "percentageTokens": 2.33,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 558,
+      "lines": 185988,
+      "clones": 229,
+      "duplicatedLines": 3383,
+      "percentage": 1.82
+     },
+     {
+      "format": "bash",
+      "sources": 43,
+      "lines": 4809,
+      "clones": 5,
+      "duplicatedLines": 73,
+      "percentage": 1.52
+     },
+     {
+      "format": "cpp",
+      "sources": 4,
+      "lines": 339,
+      "clones": 4,
+      "duplicatedLines": 55,
+      "percentage": 16.22
+     },
+     {
+      "format": "c-header",
+      "sources": 2,
+      "lines": 315,
+      "clones": 2,
+      "duplicatedLines": 27,
+      "percentage": 8.57
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "cpp",
+      "lines": 18,
+      "tokens": 684,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+       "start": 1,
+       "end": 18
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.cpp",
+        "start": 1,
+        "end": 18
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "/*",
+        " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        " * SPDX-License-Identifier: Apache-2.0",
+        " *",
+        " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+        " * you may not use this file except in compliance with the License.",
+        " * You may obtain a copy of the License at",
+        " *",
+        " * http://www.apache.org/licenses/LICENSE-2.0",
+        " *"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "c-header",
+      "lines": 18,
+      "tokens": 683,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.h",
+       "start": 1,
+       "end": 18
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant_mx.h",
+        "start": 1,
+        "end": 18
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "/*",
+        " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        " * SPDX-License-Identifier: Apache-2.0",
+        " *",
+        " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+        " * you may not use this file except in compliance with the License.",
+        " * You may obtain a copy of the License at",
+        " *",
+        " * http://www.apache.org/licenses/LICENSE-2.0",
+        " *"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "cpp",
+      "lines": 16,
+      "tokens": 682,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+       "start": 1,
+       "end": 16
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/kernels/quantization/conv/implicit_gemm_binding.cpp",
+        "start": 1,
+        "end": 16
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "/*",
+        " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+        " * SPDX-License-Identifier: Apache-2.0",
+        " *",
+        " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+        " * you may not use this file except in compliance with the License.",
+        " * You may obtain a copy of the License at",
+        " *",
+        " * http://www.apache.org/licenses/LICENSE-2.0",
+        " *"
+       ],
+       "total": 16
+      }
+     },
+     {
+      "format": "cpp",
+      "lines": 15,
+      "tokens": 636,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+       "start": 2,
+       "end": 16
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/kernels/quantization/ggml/ggml.cpp",
+        "start": 2,
+        "end": 16
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 67,
+      "tokens": 496,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/torch/_deploy/compilation.py",
+       "start": 40,
+       "end": 106
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/_deploy/profiling.py",
+        "start": 35,
+        "end": 102
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 66,
+      "tokens": 493,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/torch/_deploy/compilation.py",
+       "start": 40,
+       "end": 105
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/_deploy/profiling.py",
+        "start": 119,
+        "end": 184
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 30,
+      "tokens": 390,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/torch/nas/algorithms.py",
+       "start": 525,
+       "end": 554
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/prune/pruning.py",
+        "start": 127,
+        "end": 156
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 48,
+      "tokens": 364,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/torch/_deploy/compilation.py",
+       "start": 41,
+       "end": 88
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/nas/algorithms.py",
+        "start": 605,
+        "end": 652
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 47,
+      "tokens": 363,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/torch/_deploy/compilation.py",
+       "start": 42,
+       "end": 88
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/nas/algorithms.py",
+        "start": 483,
+        "end": 529
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 46,
+      "tokens": 333,
+      "copies": 2,
+      "first": {
+       "name": "modelopt/torch/_deploy/compilation.py",
+       "start": 43,
+       "end": 88
+      },
+      "others": [
+       {
+        "name": "modelopt/torch/prune/pruning.py",
+        "start": 86,
+        "end": 131
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:26:49.025Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "dream-num/univer",
@@ -1033,11 +1960,11 @@
    "starsToday": 849,
    "defaultBranch": "dev",
    "headSha": "1defaf4ab67a63186331d37fbaec2958acd77680",
-   "durationMs": 4621,
+   "durationMs": 11204,
    "total": {
     "sources": 6218,
-    "lines": 1260644,
-    "tokens": 6748479,
+    "lines": 1260600,
+    "tokens": 6748314,
     "clones": 10817,
     "duplicatedLines": 167603,
     "duplicatedTokens": 945687,
@@ -1088,10 +2015,10 @@
     {
      "format": "bash",
      "sources": 17,
-     "lines": 748,
+     "lines": 698,
      "clones": 5,
      "duplicatedLines": 30,
-     "percentage": 4.01
+     "percentage": 4.3
     },
     {
      "format": "yaml",
@@ -1112,7 +2039,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1128,154 +2055,469 @@
    ],
    "topClones": [
     {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 56,
+     "copies": 191,
+     "first": {
+      "name": "packages/engine-formula/src/functions/array/array-constrain/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/betadist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/hypgeomdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/lognormdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/negbinomdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/normsdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/tdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/daverage/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dcount/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_ARRAY } from '../../function-names';"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_COMPATIBILITY } from '../../function-names';"
+      ],
+      "total": 7
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 56,
+     "copies": 71,
+     "first": {
+      "name": "packages/engine-formula/src/functions/statistical/avedev/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/statistical/average/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averagea/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/beta-dist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/beta-inv/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-dist-range/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-dist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-inv/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/chisq-dist-rt/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_STATISTICAL } from '../../function-names';",
+       "import { Avedev } from '../index';"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_STATISTICAL } from '../../function-names';",
+       "import { Average } from '../index';"
+      ],
+      "total": 8
+     }
+    },
+    {
+     "format": "json",
+     "lines": 17,
+     "tokens": 50,
+     "copies": 78,
+     "first": {
+      "name": "packages/action-recorder/package.json",
+      "start": 5,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "packages/core/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/data-validation/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/design/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-drawing-ui/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-drawing/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-find-replace/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-hyper-link-ui/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-hyper-link/package.json",
+       "start": 5,
+       "end": 21
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"description\": \"Record and replay user actions in Univer.\",",
+       "\"author\": \"DreamNum Co., Ltd. <developer@univer.ai>\",",
+       "\"license\": \"Apache-2.0\",",
+       "\"funding\": {",
+       "    \"type\": \"opencollective\",",
+       "    \"url\": \"https://opencollective.com/univer\"",
+       "},",
+       "\"homepage\": \"https://univer.ai\",",
+       "\"repository\": {",
+       "    \"type\": \"git\","
+      ],
+      "total": 17
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 56,
+     "copies": 48,
+     "first": {
+      "name": "packages/engine-formula/src/functions/math/acos/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/math/acosh/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/acot/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/acoth/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/arabic/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/asin/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/asinh/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/atan/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/atan2/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 51,
+     "tokens": 238,
+     "copies": 12,
+     "first": {
+      "name": "packages/engine-formula/src/functions/compatibility/rank/__tests__/index.spec.ts",
+      "start": 113,
+      "end": 163
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/lookup/offset/__tests__/index.spec.ts",
+       "start": 137,
+       "end": 187
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/randarray/__tests__/index.spec.ts",
+       "start": 133,
+       "end": 183
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sequence/__tests__/index.spec.ts",
+       "start": 131,
+       "end": 181
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sumif/__tests__/index.spec.ts",
+       "start": 142,
+       "end": 192
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sumifs/__tests__/index.spec.ts",
+       "start": 209,
+       "end": 259
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averageif/__tests__/index.spec.ts",
+       "start": 142,
+       "end": 192
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averageifs/__tests__/index.spec.ts",
+       "start": 125,
+       "end": 175
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/countif/__tests__/index.spec.ts",
+       "start": 179,
+       "end": 229
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 125,
+     "tokens": 853,
+     "copies": 4,
+     "first": {
+      "name": "packages/engine-formula/src/functions/database/daverage/__tests__/index.spec.ts",
+      "start": 62,
+      "end": 186
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/database/dmin/__tests__/index.spec.ts",
+       "start": 62,
+       "end": 186
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dproduct/__tests__/index.spec.ts",
+       "start": 62,
+       "end": 186
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dsum/__tests__/index.spec.ts",
+       "start": 98,
+       "end": 222
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 20,
+     "tokens": 637,
+     "copies": 5,
+     "first": {
+      "name": "docs/readme/es-ES.md:markdown",
+      "start": 18,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "docs/readme/ja-JP.md:markdown",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "docs/readme/ko-KR.md:markdown",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "docs/readme/zh-CN.md:markdown",
+       "start": 18,
+       "end": 37
+      },
+      {
+       "name": "docs/readme/zh-TW.md:markdown",
+       "start": 18,
+       "end": 37
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 59,
+     "tokens": 486,
+     "copies": 6,
+     "first": {
+      "name": "packages/engine-formula/src/functions/financial/coupdaybs/__tests__/index.spec.ts",
+      "start": 96,
+      "end": 154
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupdays/__tests__/index.spec.ts",
+       "start": 96,
+       "end": 154
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupdaysnc/__tests__/index.spec.ts",
+       "start": 103,
+       "end": 161
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupncd/__tests__/index.spec.ts",
+       "start": 96,
+       "end": 154
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupnum/__tests__/index.spec.ts",
+       "start": 112,
+       "end": 170
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/couppcd/__tests__/index.spec.ts",
+       "start": 134,
+       "end": 192
+      }
+     ]
+    },
+    {
      "format": "tsx",
      "lines": 371,
      "tokens": 2372,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/sheets-hyper-link-ui/src/views/CellLinkEdit.tsx",
       "start": 65,
       "end": 435
      },
-     "secondFile": {
-      "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
-      "start": 65,
-      "end": 435
-     }
+     "others": [
+      {
+       "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
+       "start": 65,
+       "end": 435
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 102,
      "tokens": 2326,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/engine-formula/src/functions/math/mdeterm/__tests__/index.spec.ts",
       "start": 65,
       "end": 166
      },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
-      "start": 111,
-      "end": 212
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 131,
-     "tokens": 2133,
-     "firstFile": {
-      "name": "packages/core/src/shared/numfmt/__tests__/date-bounds.spec.ts",
-      "start": 128,
-      "end": 258
-     },
-     "secondFile": {
-      "name": "packages/core/src/shared/numfmt/__tests__/leap-1900.spec.ts",
-      "start": 24,
-      "end": 154
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 32,
-     "tokens": 1864,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/math/mdeterm/__tests__/index.spec.ts",
-      "start": 126,
-      "end": 157
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
-      "start": 212,
-      "end": 243
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 251,
-     "tokens": 1331,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/correl/__tests__/index.spec.ts",
-      "start": 29,
-      "end": 279
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/pearson/__tests__/index.spec.ts",
-      "start": 29,
-      "end": 279
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 253,
-     "tokens": 1323,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/intercept/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 310
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/slope/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 310
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 251,
-     "tokens": 1317,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/intercept/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 308
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/steyx/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 308
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 245,
-     "tokens": 1281,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/growth/__tests__/index.spec.ts",
-      "start": 95,
-      "end": 339
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/trend/__tests__/index.spec.ts",
-      "start": 95,
-      "end": 339
-     }
-    },
-    {
-     "format": "tsx",
-     "lines": 234,
-     "tokens": 1262,
-     "firstFile": {
-      "name": "packages/thread-comment-ui/src/views/__tests__/ThreadCommentPanel.spec.tsx",
-      "start": 93,
-      "end": 326
-     },
-     "secondFile": {
-      "name": "packages/thread-comment-ui/src/views/__tests__/ThreadCommentTree.spec.tsx",
-      "start": 115,
-      "end": 348
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 202,
-     "tokens": 1236,
-     "firstFile": {
-      "name": "packages/docs-drawing-ui/src/controllers/mobile/drawing-popup-menu.controller.ts",
-      "start": 99,
-      "end": 300
-     },
-     "secondFile": {
-      "name": "packages/docs-drawing-ui/src/menu/drawing-popup-menu.controller.ts",
-      "start": 100,
-      "end": 300
-     }
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
+       "start": 111,
+       "end": 212
+      }
+     ]
     }
    ],
    "health": {
@@ -1487,7 +2729,515 @@
       "lines": 130
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 3117,
+    "lines": 549695,
+    "tokens": 2570006,
+    "clones": 2680,
+    "duplicatedLines": 45025,
+    "duplicatedTokens": 245059,
+    "percentage": 8.19,
+    "percentageTokens": 9.54,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 2692,
+      "lines": 476251,
+      "clones": 2479,
+      "duplicatedLines": 41325,
+      "percentage": 8.68
+     },
+     {
+      "format": "tsx",
+      "sources": 413,
+      "lines": 72510,
+      "clones": 201,
+      "duplicatedLines": 3700,
+      "percentage": 5.1
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 2,
+      "lines": 116,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 371,
+      "tokens": 2372,
+      "copies": 2,
+      "first": {
+       "name": "packages/sheets-hyper-link-ui/src/views/CellLinkEdit.tsx",
+       "start": 65,
+       "end": 435
+      },
+      "others": [
+       {
+        "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
+        "start": 65,
+        "end": 435
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export const CellLinkEdit = () => {",
+        "    const [id, setId] = useState('');",
+        "    const [display, setDisplay] = useState('');",
+        "    const [tooltip, setTooltip] = useState('');",
+        "    const [showLabel, setShowLabel] = useState(true);",
+        "    const [type, setType] = useState<SheetHyperLinkType | string>(SheetHyperLinkType.URL);",
+        "    const [payload, setPayload] = useState('');",
+        "",
+        "    const localeService = useDependency(LocaleService);",
+        "    const definedNameService = useDependency(IDefinedNamesService);"
+       ],
+       "total": 371
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 23,
+      "tokens": 104,
+      "copies": 13,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imabs/index.ts",
+       "start": 25,
+       "end": 47
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imaginary/index.ts",
+        "start": 25,
+        "end": 47
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imconjugate/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcos/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcosh/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imexp/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imreal/index.ts",
+        "start": 25,
+        "end": 47
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imsec/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imsech/index.ts",
+        "start": 26,
+        "end": 48
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export class Imabs extends BaseFunction {",
+        "    override minParams = 1;",
+        "",
+        "    override maxParams = 1;",
+        "",
+        "    override calculate(inumber: BaseValueObject): BaseValueObject {",
+        "        const { isError, errorObject, variants } = checkVariantsErrorIsArrayOrBoolean(inumber);",
+        "",
+        "        if (isError) {",
+        "            return errorObject as ErrorValueObject;"
+       ],
+       "total": 23
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 202,
+      "tokens": 1236,
+      "copies": 2,
+      "first": {
+       "name": "packages/docs-drawing-ui/src/controllers/mobile/drawing-popup-menu.controller.ts",
+       "start": 99,
+       "end": 300
+      },
+      "others": [
+       {
+        "name": "packages/docs-drawing-ui/src/menu/drawing-popup-menu.controller.ts",
+        "start": 100,
+        "end": 300
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "        if (command.id === SidebarDocDrawingMobileOperation.id) {",
+        "            const params = command.params as { value?: string } | undefined;",
+        "            this._isDrawingPanelOpen = params?.value === 'open';",
+        "            if (this._isDrawingPanelOpen) {",
+        "                this._clearPopups(undefined, true);",
+        "            }",
+        "        }",
+        "    })",
+        ");",
+        "this.disposeWithMe("
+       ],
+       "total": 202
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 61,
+      "copies": 21,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imconjugate/index.ts",
+       "start": 17,
+       "end": 26
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcos/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcosh/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcot/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcoth/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsc/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsch/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imdiv/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imexp/index.ts",
+        "start": 17,
+        "end": 26
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 45,
+      "tokens": 259,
+      "copies": 5,
+      "first": {
+       "name": "packages/engine-formula/src/functions/financial/coupdaybs/index.ts",
+       "start": 27,
+       "end": 71
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupdays/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupdaysnc/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupncd/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupnum/index.ts",
+        "start": 27,
+        "end": 71
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 21,
+      "tokens": 99,
+      "copies": 10,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imabs/index.ts",
+       "start": 25,
+       "end": 45
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imargument/index.ts",
+        "start": 25,
+        "end": 45
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcot/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcoth/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsc/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsch/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imln/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imlog10/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imlog2/index.ts",
+        "start": 26,
+        "end": 46
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 160,
+      "tokens": 850,
+      "copies": 2,
+      "first": {
+       "name": "packages/sheets-formula-ui/src/views/formula-editor/search-function/SearchFunction.tsx",
+       "start": 40,
+       "end": 199
+      },
+      "others": [
+       {
+        "name": "packages/sheets-formula-ui/src/views/mobile/formula-editor/search-function/MobileSearchFunction.tsx",
+        "start": 40,
+        "end": 199
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 11,
+      "tokens": 53,
+      "copies": 17,
+      "first": {
+       "name": "presets/packages/preset-docs-core/tailwind.config.ts",
+       "start": 17,
+       "end": 27
+      },
+      "others": [
+       {
+        "name": "presets/packages/preset-docs-drawing/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-hyper-link/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-node-core/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-thread-comment/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-conditional-formatting/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-core/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-data-validation/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-drawing/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 17,
+      "tokens": 60,
+      "copies": 15,
+      "first": {
+       "name": "packages/engine-formula/src/functions/math/abs/index.ts",
+       "start": 20,
+       "end": 36
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/math/acos/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/acosh/index.ts",
+        "start": 20,
+        "end": 35
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/asin/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/asinh/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/atan/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/atanh/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/cos/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/exp/index.ts",
+        "start": 20,
+        "end": 36
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 25,
+      "tokens": 119,
+      "copies": 8,
+      "first": {
+       "name": "packages/engine-formula/src/functions/database/daverage/index.ts",
+       "start": 24,
+       "end": 48
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/database/dcount/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dcounta/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dget/index.ts",
+        "start": 24,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dmax/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dmin/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dproduct/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dsum/index.ts",
+        "start": 22,
+        "end": 46
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 1,
+     "sample": [
+      "common/debugger/src/components/Image.tsx"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:42:58.265Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "openbao/openbao",
@@ -1498,11 +3248,11 @@
    "starsToday": 364,
    "defaultBranch": "main",
    "headSha": "a87e8099310da4c1ca7e812ec97d9700efbc967b",
-   "durationMs": 3164,
+   "durationMs": 2399,
    "total": {
     "sources": 3377,
-    "lines": 699076,
-    "tokens": 3883005,
+    "lines": 699032,
+    "tokens": 3882840,
     "clones": 7742,
     "duplicatedLines": 110633,
     "duplicatedTokens": 672399,
@@ -1585,162 +3335,432 @@
     {
      "format": "bash",
      "sources": 44,
-     "lines": 2418,
+     "lines": 2368,
      "clones": 2,
      "duplicatedLines": 77,
-     "percentage": 3.18
+     "percentage": 3.25
     }
    ],
    "topClones": [
     {
+     "format": "markup",
+     "lines": 295,
+     "tokens": 1397,
+     "copies": 4,
+     "first": {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
+      "start": 341,
+      "end": 635
+     },
+     "others": [
+      {
+       "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-5-1.svg",
+       "start": 341,
+       "end": 635
+      },
+      {
+       "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-4-4.svg",
+       "start": 341,
+       "end": 635
+      },
+      {
+       "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-5-1.svg",
+       "start": 341,
+       "end": 635
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "  <use xlink:href=\"#mc77df87d46\" x=\"541.829545\" y=\"390.04\" style=\"stroke: #000000; stroke-width: 0.8\"/>",
+       " </g>",
+       "</g>",
+       "<g id=\"text_8\">",
+       " <!-- 14 -->",
+       " <g transform=\"translate(535.467045 404.638438) scale(0.1 -0.1)\">",
+       "  <use xlink:href=\"#DejaVuSans-31\"/>",
+       "  <use xlink:href=\"#DejaVuSans-34\" transform=\"translate(63.623047 0)\"/>",
+       " </g>",
+       "</g>"
+      ],
+      "total": 295
+     }
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 51,
+     "copies": 73,
+     "first": {
+      "name": "internal/builtin/logical/kv/types.pb.go",
+      "start": 51,
+      "end": 60
+     },
+     "others": [
+      {
+       "name": "internal/builtin/logical/kv/types.pb.go",
+       "start": 124,
+       "end": 133
+      },
+      {
+       "name": "internal/builtin/logical/kv/types.pb.go",
+       "start": 215,
+       "end": 224
+      },
+      {
+       "name": "internal/builtin/logical/kv/types.pb.go",
+       "start": 344,
+       "end": 353
+      },
+      {
+       "name": "internal/builtin/logical/kv/types.pb.go",
+       "start": 406,
+       "end": 415
+      },
+      {
+       "name": "internal/builtin/logical/pki/cert_template.pb.go",
+       "start": 197,
+       "end": 206
+      },
+      {
+       "name": "internal/builtin/logical/pki/cert_template.pb.go",
+       "start": 412,
+       "end": 421
+      },
+      {
+       "name": "internal/builtin/logical/pki/cert_template.pb.go",
+       "start": 457,
+       "end": 466
+      },
+      {
+       "name": "internal/builtin/logical/pki/cert_template.pb.go",
+       "start": 521,
+       "end": 530
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    mi := &file_internal_builtin_logical_kv_types_proto_msgTypes[0]",
+       "    if x != nil {",
+       "        ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))",
+       "        if ms.LoadMessageInfo() == nil {",
+       "            ms.StoreMessageInfo(mi)",
+       "        }",
+       "        return ms",
+       "    }",
+       "    return mi.MessageOf(x)",
+       "}"
+      ],
+      "total": 10
+     }
+    },
+    {
+     "format": "go",
+     "lines": 17,
+     "tokens": 115,
+     "copies": 31,
+     "first": {
+      "name": "internal/command/audit_disable.go",
+      "start": 58,
+      "end": 74
+     },
+     "others": [
+      {
+       "name": "internal/command/auth_enable.go",
+       "start": 224,
+       "end": 240
+      },
+      {
+       "name": "internal/command/auth_help.go",
+       "start": 73,
+       "end": 89
+      },
+      {
+       "name": "internal/command/auth_tune.go",
+       "start": 210,
+       "end": 226
+      },
+      {
+       "name": "internal/command/kv_delete.go",
+       "start": 97,
+       "end": 113
+      },
+      {
+       "name": "internal/command/kv_destroy.go",
+       "start": 89,
+       "end": 105
+      },
+      {
+       "name": "internal/command/kv_enable_versioning.go",
+       "start": 56,
+       "end": 72
+      },
+      {
+       "name": "internal/command/kv_get.go",
+       "start": 93,
+       "end": 109
+      },
+      {
+       "name": "internal/command/kv_metadata_delete.go",
+       "start": 78,
+       "end": 94
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "func (c *AuditDisableCommand) Run(args []string) int {",
+       "    f := c.Flags()",
+       "",
+       "    if err := f.Parse(args); err != nil {",
+       "        c.UI.Error(err.Error())",
+       "        return 1",
+       "    }",
+       "",
+       "    args = f.Args()",
+       "    switch {"
+      ],
+      "total": 17
+     }
+    },
+    {
+     "format": "markup",
+     "lines": 193,
+     "tokens": 1000,
+     "copies": 4,
+     "first": {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
+      "start": 931,
+      "end": 1123
+     },
+     "others": [
+      {
+       "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-5-1.svg",
+       "start": 931,
+       "end": 1123
+      },
+      {
+       "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-4-4.svg",
+       "start": 931,
+       "end": 1123
+      },
+      {
+       "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-5-1.svg",
+       "start": 931,
+       "end": 1123
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 67,
+     "copies": 42,
+     "first": {
+      "name": "internal/command/audit_disable_test.go",
+      "start": 148,
+      "end": 157
+     },
+     "others": [
+      {
+       "name": "internal/command/audit_enable_test.go",
+       "start": 153,
+       "end": 162
+      },
+      {
+       "name": "internal/command/audit_list_test.go",
+       "start": 100,
+       "end": 109
+      },
+      {
+       "name": "internal/command/auth_disable_test.go",
+       "start": 125,
+       "end": 134
+      },
+      {
+       "name": "internal/command/auth_enable_test.go",
+       "start": 154,
+       "end": 163
+      },
+      {
+       "name": "internal/command/auth_help_test.go",
+       "start": 145,
+       "end": 154
+      },
+      {
+       "name": "internal/command/auth_list_test.go",
+       "start": 94,
+       "end": 103
+      },
+      {
+       "name": "internal/command/auth_move_test.go",
+       "start": 134,
+       "end": 143
+      },
+      {
+       "name": "internal/command/auth_tune_test.go",
+       "start": 271,
+       "end": 280
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 14,
+     "tokens": 87,
+     "copies": 30,
+     "first": {
+      "name": "internal/command/audit_disable_test.go",
+      "start": 77,
+      "end": 90
+     },
+     "others": [
+      {
+       "name": "internal/command/auth_disable_test.go",
+       "start": 58,
+       "end": 71
+      },
+      {
+       "name": "internal/command/auth_list_test.go",
+       "start": 63,
+       "end": 76
+      },
+      {
+       "name": "internal/command/auth_move_test.go",
+       "start": 65,
+       "end": 78
+      },
+      {
+       "name": "internal/command/auth_tune_test.go",
+       "start": 61,
+       "end": 74
+      },
+      {
+       "name": "internal/command/delete_test.go",
+       "start": 63,
+       "end": 76
+      },
+      {
+       "name": "internal/command/list_test.go",
+       "start": 88,
+       "end": 101
+      },
+      {
+       "name": "internal/command/operator_init_test.go",
+       "start": 114,
+       "end": 127
+      },
+      {
+       "name": "internal/command/operator_key_status_test.go",
+       "start": 51,
+       "end": 64
+      }
+     ]
+    },
+    {
      "format": "markdown",
      "lines": 78,
      "tokens": 2129,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "CHANGELOG.md:markdown",
       "start": 1204,
       "end": 1281
      },
-     "secondFile": {
-      "name": "CHANGELOG.md:markdown",
-      "start": 1282,
-      "end": 1359
-     }
+     "others": [
+      {
+       "name": "CHANGELOG.md:markdown",
+       "start": 1282,
+       "end": 1359
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 62,
      "tokens": 1994,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "CHANGELOG.md:markdown",
       "start": 16,
       "end": 77
      },
-     "secondFile": {
-      "name": "CHANGELOG.md:markdown",
-      "start": 177,
-      "end": 238
-     }
+     "others": [
+      {
+       "name": "CHANGELOG.md:markdown",
+       "start": 177,
+       "end": 238
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 55,
+     "copies": 35,
+     "first": {
+      "name": "internal/builtin/credential/approle/path_login.go",
+      "start": 90,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1359,
+       "end": 1364
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1599,
+       "end": 1604
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1758,
+       "end": 1763
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1858,
+       "end": 1863
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1905,
+       "end": 1910
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2002,
+       "end": 2007
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2074,
+       "end": 2079
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2145,
+       "end": 2150
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 40,
      "tokens": 1852,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "CHANGELOG.md:markdown",
       "start": 85,
       "end": 124
      },
-     "secondFile": {
-      "name": "CHANGELOG.md:markdown",
-      "start": 242,
-      "end": 281
-     }
-    },
-    {
-     "format": "yaml",
-     "lines": 1671,
-     "tokens": 1754,
-     "firstFile": {
-      "name": "internal/builtin/database/cassandra/test-fixtures/no_tls/cassandra.yaml",
-      "start": 2,
-      "end": 1672
-     },
-     "secondFile": {
-      "name": "internal/builtin/database/cassandra/test-fixtures/with_tls/cassandra.yaml",
-      "start": 2,
-      "end": 1672
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 295,
-     "tokens": 1397,
-     "firstFile": {
-      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
-      "start": 341,
-      "end": 635
-     },
-     "secondFile": {
-      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-5-1.svg",
-      "start": 341,
-      "end": 635
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 295,
-     "tokens": 1397,
-     "firstFile": {
-      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
-      "start": 341,
-      "end": 635
-     },
-     "secondFile": {
-      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-4-4.svg",
-      "start": 341,
-      "end": 635
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 295,
-     "tokens": 1397,
-     "firstFile": {
-      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
-      "start": 341,
-      "end": 635
-     },
-     "secondFile": {
-      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-5-1.svg",
-      "start": 341,
-      "end": 635
-     }
-    },
-    {
-     "format": "go",
-     "lines": 227,
-     "tokens": 1283,
-     "firstFile": {
-      "name": "internal/command/agent/config/config.go",
-      "start": 855,
-      "end": 1081
-     },
-     "secondFile": {
-      "name": "internal/command/proxy/config/config.go",
-      "start": 602,
-      "end": 829
-     }
-    },
-    {
-     "format": "go",
-     "lines": 180,
-     "tokens": 1198,
-     "firstFile": {
-      "name": "internal/vault/namespace_store_test.go",
-      "start": 1363,
-      "end": 1542
-     },
-     "secondFile": {
-      "name": "internal/vault/namespace_store_test.go",
-      "start": 1707,
-      "end": 1886
-     }
-    },
-    {
-     "format": "go",
-     "lines": 169,
-     "tokens": 1082,
-     "firstFile": {
-      "name": "internal/http/handler_test.go",
-      "start": 329,
-      "end": 497
-     },
-     "secondFile": {
-      "name": "internal/http/sys_mount_test.go",
-      "start": 27,
-      "end": 193
-     }
+     "others": [
+      {
+       "name": "CHANGELOG.md:markdown",
+       "start": 242,
+       "end": 281
+      }
+     ]
     }
    ],
    "health": {
@@ -1955,7 +3975,633 @@
       "lines": 107
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1601,
+    "lines": 341204,
+    "tokens": 1714856,
+    "clones": 2017,
+    "duplicatedLines": 29919,
+    "duplicatedTokens": 166455,
+    "percentage": 8.77,
+    "percentageTokens": 9.71,
+    "formats": [
+     {
+      "format": "go",
+      "sources": 890,
+      "lines": 293655,
+      "clones": 1870,
+      "duplicatedLines": 27527,
+      "percentage": 9.37
+     },
+     {
+      "format": "javascript",
+      "sources": 625,
+      "lines": 40333,
+      "clones": 142,
+      "duplicatedLines": 2281,
+      "percentage": 5.66
+     },
+     {
+      "format": "typescript",
+      "sources": 35,
+      "lines": 3553,
+      "clones": 2,
+      "duplicatedLines": 26,
+      "percentage": 0.73
+     },
+     {
+      "format": "bash",
+      "sources": 38,
+      "lines": 2188,
+      "clones": 2,
+      "duplicatedLines": 77,
+      "percentage": 3.52
+     },
+     {
+      "format": "tsx",
+      "sources": 12,
+      "lines": 1301,
+      "clones": 1,
+      "duplicatedLines": 8,
+      "percentage": 0.61
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "go",
+      "lines": 17,
+      "tokens": 115,
+      "copies": 31,
+      "first": {
+       "name": "internal/command/audit_disable.go",
+       "start": 58,
+       "end": 74
+      },
+      "others": [
+       {
+        "name": "internal/command/auth_enable.go",
+        "start": 224,
+        "end": 240
+       },
+       {
+        "name": "internal/command/auth_help.go",
+        "start": 73,
+        "end": 89
+       },
+       {
+        "name": "internal/command/auth_tune.go",
+        "start": 210,
+        "end": 226
+       },
+       {
+        "name": "internal/command/kv_delete.go",
+        "start": 97,
+        "end": 113
+       },
+       {
+        "name": "internal/command/kv_destroy.go",
+        "start": 89,
+        "end": 105
+       },
+       {
+        "name": "internal/command/kv_enable_versioning.go",
+        "start": 56,
+        "end": 72
+       },
+       {
+        "name": "internal/command/kv_get.go",
+        "start": 93,
+        "end": 109
+       },
+       {
+        "name": "internal/command/kv_metadata_delete.go",
+        "start": 78,
+        "end": 94
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "func (c *AuditDisableCommand) Run(args []string) int {",
+        "    f := c.Flags()",
+        "",
+        "    if err := f.Parse(args); err != nil {",
+        "        c.UI.Error(err.Error())",
+        "        return 1",
+        "    }",
+        "",
+        "    args = f.Args()",
+        "    switch {"
+       ],
+       "total": 17
+      }
+     },
+     {
+      "format": "go",
+      "lines": 6,
+      "tokens": 55,
+      "copies": 35,
+      "first": {
+       "name": "internal/builtin/credential/approle/path_login.go",
+       "start": 90,
+       "end": 95
+      },
+      "others": [
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 1359,
+        "end": 1364
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 1599,
+        "end": 1604
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 1758,
+        "end": 1763
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 1858,
+        "end": 1863
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 1905,
+        "end": 1910
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2002,
+        "end": 2007
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2074,
+        "end": 2079
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2145,
+        "end": 2150
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "func (b *backend) pathLoginResolveRole(ctx context.Context, req *logical.Request, data *framework.FieldData) (*logical.Response, error) {",
+        "    txRollback, err := logical.StartTxStorage(ctx, req)",
+        "    if err != nil {",
+        "        return nil, err",
+        "    }",
+        "    defer txRollback()"
+       ],
+       "total": 6
+      }
+     },
+     {
+      "format": "go",
+      "lines": 14,
+      "tokens": 92,
+      "copies": 21,
+      "first": {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1359,
+       "end": 1372
+      },
+      "others": [
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 1758,
+        "end": 1771
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 1858,
+        "end": 1871
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2237,
+        "end": 2250
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2352,
+        "end": 2365
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2408,
+        "end": 2421
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2471,
+        "end": 2484
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2536,
+        "end": 2549
+       },
+       {
+        "name": "internal/builtin/credential/approle/path_role.go",
+        "start": 2625,
+        "end": 2638
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "func (b *backend) pathRoleSecretIDList(ctx context.Context, req *logical.Request, data *framework.FieldData) (*logical.Response, error) {",
+        "    txRollback, err := logical.StartTxStorage(ctx, req)",
+        "    if err != nil {",
+        "        return nil, err",
+        "    }",
+        "    defer txRollback()",
+        "",
+        "    roleName := data.Get(\"role_name\").(string)",
+        "    if roleName == \"\" {",
+        "        return logical.ErrorResponse(\"missing role_name\"), nil"
+       ],
+       "total": 14
+      }
+     },
+     {
+      "format": "go",
+      "lines": 12,
+      "tokens": 80,
+      "copies": 20,
+      "first": {
+       "name": "internal/command/auth_enable.go",
+       "start": 235,
+       "end": 246
+      },
+      "others": [
+       {
+        "name": "internal/command/auth_help.go",
+        "start": 84,
+        "end": 95
+       },
+       {
+        "name": "internal/command/auth_tune.go",
+        "start": 221,
+        "end": 232
+       },
+       {
+        "name": "internal/command/kv_delete.go",
+        "start": 108,
+        "end": 119
+       },
+       {
+        "name": "internal/command/kv_enable_versioning.go",
+        "start": 67,
+        "end": 78
+       },
+       {
+        "name": "internal/command/kv_get.go",
+        "start": 104,
+        "end": 115
+       },
+       {
+        "name": "internal/command/kv_metadata_delete.go",
+        "start": 89,
+        "end": 100
+       },
+       {
+        "name": "internal/command/kv_metadata_get.go",
+        "start": 91,
+        "end": 102
+       },
+       {
+        "name": "internal/command/kv_metadata_patch.go",
+        "start": 163,
+        "end": 174
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 9,
+      "tokens": 56,
+      "copies": 26,
+      "first": {
+       "name": "internal/command/audit_disable.go",
+       "start": 58,
+       "end": 66
+      },
+      "others": [
+       {
+        "name": "internal/command/audit_enable.go",
+        "start": 107,
+        "end": 115
+       },
+       {
+        "name": "internal/command/audit_list.go",
+        "start": 76,
+        "end": 84
+       },
+       {
+        "name": "internal/command/auth_list.go",
+        "start": 78,
+        "end": 86
+       },
+       {
+        "name": "internal/command/kv_patch.go",
+        "start": 148,
+        "end": 156
+       },
+       {
+        "name": "internal/command/kv_put.go",
+        "start": 110,
+        "end": 118
+       },
+       {
+        "name": "internal/command/login.go",
+        "start": 147,
+        "end": 155
+       },
+       {
+        "name": "internal/command/namespace_api_lock.go",
+        "start": 57,
+        "end": 65
+       },
+       {
+        "name": "internal/command/namespace_api_unlock.go",
+        "start": 61,
+        "end": 69
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 227,
+      "tokens": 1283,
+      "copies": 2,
+      "first": {
+       "name": "internal/command/agent/config/config.go",
+       "start": 855,
+       "end": 1081
+      },
+      "others": [
+       {
+        "name": "internal/command/proxy/config/config.go",
+        "start": 602,
+        "end": 829
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 15,
+      "tokens": 98,
+      "copies": 12,
+      "first": {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 314,
+       "end": 328
+      },
+      "others": [
+       {
+        "name": "internal/builtin/credential/cert/path_certs.go",
+        "start": 28,
+        "end": 44
+       },
+       {
+        "name": "internal/builtin/credential/cert/path_crls.go",
+        "start": 27,
+        "end": 43
+       },
+       {
+        "name": "internal/builtin/credential/jwt/path_cel_role.go",
+        "start": 44,
+        "end": 60
+       },
+       {
+        "name": "internal/builtin/credential/kubernetes/path_role.go",
+        "start": 30,
+        "end": 46
+       },
+       {
+        "name": "internal/builtin/credential/userpass/path_users.go",
+        "start": 27,
+        "end": 43
+       },
+       {
+        "name": "internal/builtin/logical/database/path_roles.go",
+        "start": 60,
+        "end": 76
+       },
+       {
+        "name": "internal/builtin/logical/pki/path_cel.go",
+        "start": 29,
+        "end": 45
+       },
+       {
+        "name": "internal/builtin/logical/pki/path_fetch.go",
+        "start": 216,
+        "end": 232
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 6,
+      "tokens": 55,
+      "copies": 20,
+      "first": {
+       "name": "internal/builtin/credential/jwt/path_cel_login.go",
+       "start": 58,
+       "end": 63
+      },
+      "others": [
+       {
+        "name": "internal/builtin/credential/userpass/path_user_password.go",
+        "start": 62,
+        "end": 67
+       },
+       {
+        "name": "internal/builtin/credential/userpass/path_user_policies.go",
+        "start": 56,
+        "end": 61
+       },
+       {
+        "name": "internal/builtin/logical/rabbitmq/path_role_create.go",
+        "start": 52,
+        "end": 57
+       },
+       {
+        "name": "internal/builtin/logical/ssh/path_cleanup_dynamic_host_keys.go",
+        "start": 34,
+        "end": 39
+       },
+       {
+        "name": "internal/builtin/logical/ssh/path_config_issuers.go",
+        "start": 61,
+        "end": 66
+       },
+       {
+        "name": "internal/builtin/logical/ssh/path_config_zeroaddress.go",
+        "start": 87,
+        "end": 92
+       },
+       {
+        "name": "internal/builtin/logical/ssh/path_creds_create.go",
+        "start": 61,
+        "end": 66
+       },
+       {
+        "name": "internal/builtin/logical/ssh/path_issuers.go",
+        "start": 197,
+        "end": 202
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 19,
+      "first": {
+       "name": "internal/command/audit_enable.go",
+       "start": 107,
+       "end": 116
+      },
+      "others": [
+       {
+        "name": "internal/command/audit_list.go",
+        "start": 76,
+        "end": 85
+       },
+       {
+        "name": "internal/command/auth_list.go",
+        "start": 78,
+        "end": 87
+       },
+       {
+        "name": "internal/command/namespace_api_lock.go",
+        "start": 57,
+        "end": 66
+       },
+       {
+        "name": "internal/command/namespace_api_unlock.go",
+        "start": 61,
+        "end": 70
+       },
+       {
+        "name": "internal/command/namespace_list.go",
+        "start": 67,
+        "end": 76
+       },
+       {
+        "name": "internal/command/namespace_scan.go",
+        "start": 72,
+        "end": 81
+       },
+       {
+        "name": "internal/command/operator_generate_root.go",
+        "start": 199,
+        "end": 208
+       },
+       {
+        "name": "internal/command/operator_init.go",
+        "start": 179,
+        "end": 188
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 18,
+      "tokens": 104,
+      "copies": 10,
+      "first": {
+       "name": "internal/command/audit_list.go",
+       "start": 77,
+       "end": 94
+      },
+      "others": [
+       {
+        "name": "internal/command/auth_list.go",
+        "start": 79,
+        "end": 96
+       },
+       {
+        "name": "internal/command/namespace_list.go",
+        "start": 68,
+        "end": 85
+       },
+       {
+        "name": "internal/command/namespace_scan.go",
+        "start": 73,
+        "end": 90
+       },
+       {
+        "name": "internal/command/operator_init.go",
+        "start": 180,
+        "end": 197
+       },
+       {
+        "name": "internal/command/operator_key_status.go",
+        "start": 52,
+        "end": 69
+       },
+       {
+        "name": "internal/command/operator_rotate.go",
+        "start": 64,
+        "end": 81
+       },
+       {
+        "name": "internal/command/operator_seal.go",
+        "start": 63,
+        "end": 80
+       },
+       {
+        "name": "internal/command/operator_step_down.go",
+        "start": 59,
+        "end": 76
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 22,
+     "minified": 0,
+     "sample": [
+      "internal/builtin/logical/kv/types.pb.go",
+      "internal/builtin/logical/pki/cert_template.pb.go",
+      "internal/helper/forwarding/types.pb.go",
+      "internal/helper/identity/mfa/types.pb.go",
+      "internal/helper/identity/types.pb.go",
+      "internal/helper/storagepacker/types.pb.go",
+      "internal/physical/raft/types.pb.go",
+      "internal/vault/forwarding/request_forwarding_service_grpc.pb.go",
+      "internal/vault/forwarding/request_forwarding_service.pb.go",
+      "internal/vault/tokens/token.pb.go",
+      "sdk/database/dbplugin/database_grpc.pb.go",
+      "sdk/database/dbplugin/database.pb.go",
+      "sdk/database/dbplugin/v5/proto/database_grpc.pb.go",
+      "sdk/database/dbplugin/v5/proto/database.pb.go",
+      "sdk/helper/pluginutil/multiplexing_grpc.pb.go",
+      "sdk/helper/pluginutil/multiplexing.pb.go",
+      "sdk/logical/identity.pb.go",
+      "sdk/logical/plugin.pb.go",
+      "sdk/logical/version_grpc.pb.go",
+      "sdk/logical/version.pb.go"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T06:27:20.651Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "anthropics/claude-code-action",
@@ -1966,15 +4612,15 @@
    "starsToday": 31,
    "defaultBranch": "main",
    "headSha": "756cc22e19660d20e8cc9496b4f242475a7f7790",
-   "durationMs": 961,
+   "durationMs": 68,
    "total": {
     "sources": 225,
-    "lines": 43288,
-    "tokens": 212844,
+    "lines": 43244,
+    "tokens": 212679,
     "clones": 202,
     "duplicatedLines": 3276,
     "duplicatedTokens": 15592,
-    "percentage": 7.57,
+    "percentage": 7.58,
     "percentageTokens": 7.33
    },
    "formats": [
@@ -2005,10 +4651,10 @@
     {
      "format": "bash",
      "sources": 16,
-     "lines": 1031,
+     "lines": 981,
      "clones": 1,
      "duplicatedLines": 46,
-     "percentage": 4.46
+     "percentage": 4.69
     },
     {
      "format": "markup",
@@ -2037,7 +4683,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2064,151 +4710,291 @@
      "format": "markdown",
      "lines": 128,
      "tokens": 936,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "CODE_OF_CONDUCT.md:markdown",
       "start": 1,
       "end": 128
      },
-     "secondFile": {
-      "name": "base-action/CODE_OF_CONDUCT.md:markdown",
-      "start": 1,
-      "end": 128
+     "others": [
+      {
+       "name": "base-action/CODE_OF_CONDUCT.md:markdown",
+       "start": 1,
+       "end": 128
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Contributor Covenant Code of Conduct",
+       "",
+       "## Our Pledge",
+       "",
+       "We as members, contributors, and leaders pledge to make participation in our",
+       "community a harassment-free experience for everyone, regardless of age, body",
+       "size, visible or invisible disability, ethnicity, sex characteristics, gender",
+       "identity and expression, level of experience, education, socio-economic status,",
+       "nationality, personal appearance, race, religion, or sexual identity",
+       "and orientation."
+      ],
+      "total": 128
      }
     },
     {
      "format": "typescript",
      "lines": 69,
      "tokens": 298,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "src/mcp/github-file-ops-server.ts",
       "start": 307,
       "end": 375
      },
-     "secondFile": {
-      "name": "src/mcp/github-file-ops-server.ts",
-      "start": 468,
-      "end": 536
+     "others": [
+      {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 468,
+       "end": 536
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       ");",
+       "",
+       "// 4. Create a new tree",
+       "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+       "const treeResponse = await fetch(treeUrl, {",
+       "  method: \"POST\",",
+       "  headers: {",
+       "    Accept: \"application/vnd.github+json\",",
+       "    Authorization: `Bearer ${githubToken}`,",
+       "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+      ],
+      "total": 69
+     },
+     "excerptSecond": {
+      "lines": [
+       "}));",
+       "",
+       "// 4. Create a new tree with deletions",
+       "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+       "const treeResponse = await fetch(treeUrl, {",
+       "  method: \"POST\",",
+       "  headers: {",
+       "    Accept: \"application/vnd.github+json\",",
+       "    Authorization: `Bearer ${githubToken}`,",
+       "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+      ],
+      "total": 69
      }
+    },
+    {
+     "format": "typescript",
+     "lines": 23,
+     "tokens": 121,
+     "copies": 3,
+     "first": {
+      "name": "test/data-fetcher.test.ts",
+      "start": 1498,
+      "end": 1520
+     },
+     "others": [
+      {
+       "name": "test/data-fetcher.test.ts",
+       "start": 1609,
+       "end": 1631
+      },
+      {
+       "name": "test/data-fetcher.test.ts",
+       "start": 1645,
+       "end": 1667
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "body: \"PR body\",",
+       "author: { login: \"author\" },",
+       "createdAt: \"2024-01-15T10:00:00Z\",",
+       "additions: 10,",
+       "deletions: 5,",
+       "state: \"OPEN\",",
+       "commits: { totalCount: 1, nodes: [] },",
+       "files: { nodes: [] },",
+       "comments: { nodes: [] },",
+       "reviews: { nodes: [] },"
+      ],
+      "total": 23
+     }
+    },
+    {
+     "format": "yaml",
+     "lines": 8,
+     "tokens": 52,
+     "copies": 5,
+     "first": {
+      "name": ".github/workflows/test-structured-output.yml",
+      "start": 23,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": ".github/workflows/test-structured-output.yml",
+       "start": 86,
+       "end": 93
+      },
+      {
+       "name": ".github/workflows/test-structured-output.yml",
+       "start": 141,
+       "end": 148
+      },
+      {
+       "name": ".github/workflows/test-structured-output.yml",
+       "start": 204,
+       "end": 211
+      },
+      {
+       "name": ".github/workflows/test-structured-output.yml",
+       "start": 248,
+       "end": 255
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 68,
+     "copies": 4,
+     "first": {
+      "name": "test/image-downloader.test.ts",
+      "start": 225,
+      "end": 238
+     },
+     "others": [
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 269,
+       "end": 282
+      },
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 315,
+       "end": 328
+      },
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 506,
+       "end": 519
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 20,
+     "tokens": 94,
+     "copies": 3,
+     "first": {
+      "name": "test/modes/agent.test.ts",
+      "start": 70,
+      "end": 89
+     },
+     "others": [
+      {
+       "name": "test/modes/agent.test.ts",
+       "start": 135,
+       "end": 155
+      },
+      {
+       "name": "test/modes/agent.test.ts",
+       "start": 236,
+       "end": 255
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 62,
+     "copies": 4,
+     "first": {
+      "name": "test/image-downloader.test.ts",
+      "start": 109,
+      "end": 120
+     },
+     "others": [
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 661,
+       "end": 671
+      },
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 737,
+       "end": 747
+      },
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 1153,
+       "end": 1163
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 19,
+     "tokens": 90,
+     "copies": 3,
+     "first": {
+      "name": "test/image-downloader.test.ts",
+      "start": 502,
+      "end": 520
+     },
+     "others": [
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 624,
+       "end": 642
+      },
+      {
+       "name": "test/image-downloader.test.ts",
+       "start": 663,
+       "end": 681
+      }
+     ]
     },
     {
      "format": "yaml",
      "lines": 25,
      "tokens": 178,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".github/workflows/claude.yml",
       "start": 1,
       "end": 25
      },
-     "secondFile": {
-      "name": "examples/claude.yml",
-      "start": 1,
-      "end": 25
-     }
+     "others": [
+      {
+       "name": "examples/claude.yml",
+       "start": 1,
+       "end": 25
+      }
+     ]
     },
     {
      "format": "yaml",
      "lines": 17,
      "tokens": 176,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "action.yml",
       "start": 344,
       "end": 360
      },
-     "secondFile": {
-      "name": "base-action/action.yml",
-      "start": 211,
-      "end": 227
-     }
-    },
-    {
-     "format": "yaml",
-     "lines": 23,
-     "tokens": 174,
-     "firstFile": {
-      "name": ".github/workflows/claude.yml",
-      "start": 3,
-      "end": 25
-     },
-     "secondFile": {
-      "name": "examples/claude-wif.yml",
-      "start": 9,
-      "end": 31
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 30,
-     "tokens": 159,
-     "firstFile": {
-      "name": "test/data-fetcher.test.ts",
-      "start": 1491,
-      "end": 1520
-     },
-     "secondFile": {
-      "name": "test/data-fetcher.test.ts",
-      "start": 1527,
-      "end": 1556
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 37,
-     "tokens": 147,
-     "firstFile": {
-      "name": "base-action/README.md:markdown",
-      "start": 518,
-      "end": 554
-     },
-     "secondFile": {
-      "name": "docs/setup.md:markdown",
-      "start": 180,
-      "end": 216
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 40,
-     "tokens": 134,
-     "firstFile": {
-      "name": "CONTRIBUTING.md:markdown",
-      "start": 53,
-      "end": 92
-     },
-     "secondFile": {
-      "name": "base-action/CONTRIBUTING.md:markdown",
-      "start": 67,
-      "end": 106
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 17,
-     "tokens": 131,
-     "firstFile": {
-      "name": "CONTRIBUTING.md:markdown",
-      "start": 3,
-      "end": 19
-     },
-     "secondFile": {
-      "name": "base-action/CONTRIBUTING.md:markdown",
-      "start": 3,
-      "end": 19
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 25,
-     "tokens": 129,
-     "firstFile": {
-      "name": "test/data-fetcher.test.ts",
-      "start": 1569,
-      "end": 1593
-     },
-     "secondFile": {
-      "name": "test/data-fetcher.test.ts",
-      "start": 1680,
-      "end": 1704
-     }
+     "others": [
+      {
+       "name": "base-action/action.yml",
+       "start": 211,
+       "end": 227
+      }
+     ]
     }
    ],
    "health": {
@@ -2375,7 +5161,323 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 79,
+    "lines": 13914,
+    "tokens": 56507,
+    "clones": 21,
+    "duplicatedLines": 488,
+    "duplicatedTokens": 1881,
+    "percentage": 3.51,
+    "percentageTokens": 3.33,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 60,
+      "lines": 10769,
+      "clones": 20,
+      "duplicatedLines": 442,
+      "percentage": 4.1
+     },
+     {
+      "format": "bash",
+      "sources": 16,
+      "lines": 981,
+      "clones": 1,
+      "duplicatedLines": 46,
+      "percentage": 4.69
+     },
+     {
+      "format": "python",
+      "sources": 1,
+      "lines": 1828,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 1,
+      "lines": 162,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 69,
+      "tokens": 298,
+      "copies": 2,
+      "first": {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 307,
+       "end": 375
+      },
+      "others": [
+       {
+        "name": "src/mcp/github-file-ops-server.ts",
+        "start": 468,
+        "end": 536
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        ");",
+        "",
+        "// 4. Create a new tree",
+        "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+        "const treeResponse = await fetch(treeUrl, {",
+        "  method: \"POST\",",
+        "  headers: {",
+        "    Accept: \"application/vnd.github+json\",",
+        "    Authorization: `Bearer ${githubToken}`,",
+        "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+       ],
+       "total": 69
+      },
+      "excerptSecond": {
+       "lines": [
+        "}));",
+        "",
+        "// 4. Create a new tree with deletions",
+        "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+        "const treeResponse = await fetch(treeUrl, {",
+        "  method: \"POST\",",
+        "  headers: {",
+        "    Accept: \"application/vnd.github+json\",",
+        "    Authorization: `Bearer ${githubToken}`,",
+        "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+       ],
+       "total": 69
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 20,
+      "tokens": 114,
+      "copies": 2,
+      "first": {
+       "name": "src/github/validation/actor.ts",
+       "start": 9,
+       "end": 28
+      },
+      "others": [
+       {
+        "name": "src/github/validation/permissions.ts",
+        "start": 3,
+        "end": 25
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "import type { GitHubContext } from \"../context\";",
+        "",
+        "function isAllowedBot(actor: string, allowedBots: string): boolean {",
+        "  const trimmed = allowedBots.trim();",
+        "  if (trimmed === \"*\") return true;",
+        "  if (!trimmed) return false;",
+        "",
+        "  const allowedList = trimmed",
+        "    .split(\",\")",
+        "    .map((bot) =>"
+       ],
+       "total": 20
+      },
+      "excerptSecond": {
+       "lines": [
+        "import type { Octokit } from \"@octokit/rest\";",
+        "",
+        "/**",
+        " * Check if a bot actor is in the allowed bots list.",
+        " */",
+        "function isAllowedBot(actor: string, allowedBots: string): boolean {",
+        "  const trimmed = allowedBots.trim();",
+        "  if (trimmed === \"*\") return true;",
+        "  if (!trimmed) return false;",
+        ""
+       ],
+       "total": 23
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 31,
+      "tokens": 112,
+      "copies": 2,
+      "first": {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 223,
+       "end": 253
+      },
+      "others": [
+       {
+        "name": "src/mcp/github-file-ops-server.ts",
+        "start": 433,
+        "end": 463
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    return { fullPath, relativePath };",
+        "  }),",
+        ");",
+        "",
+        "// 1. Get the branch reference (create if doesn't exist)",
+        "const baseSha = await getOrCreateBranchRef(",
+        "  owner,",
+        "  repo,",
+        "  branch,",
+        "  githubToken,"
+       ],
+       "total": 31
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 30,
+      "tokens": 103,
+      "copies": 2,
+      "first": {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 378,
+       "end": 407
+      },
+      "others": [
+       {
+        "name": "src/mcp/github-file-ops-server.ts",
+        "start": 537,
+        "end": 566
+       }
+      ]
+     },
+     {
+      "format": "bash",
+      "lines": 46,
+      "tokens": 102,
+      "copies": 2,
+      "first": {
+       "name": "base-action/scripts/pre-push",
+       "start": 1,
+       "end": 46
+      },
+      "others": [
+       {
+        "name": "scripts/pre-commit",
+        "start": 1,
+        "end": 46
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 24,
+      "tokens": 96,
+      "copies": 2,
+      "first": {
+       "name": "src/mcp/github-comment-server.ts",
+       "start": 78,
+       "end": 101
+      },
+      "others": [
+       {
+        "name": "src/mcp/github-file-ops-server.ts",
+        "start": 553,
+        "end": 576
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 29,
+      "tokens": 94,
+      "copies": 2,
+      "first": {
+       "name": "src/mcp/github-actions-server.ts",
+       "start": 266,
+       "end": 294
+      },
+      "others": [
+       {
+        "name": "src/mcp/github-comment-server.ts",
+        "start": 66,
+        "end": 93
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 20,
+      "tokens": 94,
+      "copies": 2,
+      "first": {
+       "name": "src/modes/agent/index.ts",
+       "start": 30,
+       "end": 49
+      },
+      "others": [
+       {
+        "name": "src/modes/tag/index.ts",
+        "start": 67,
+        "end": 86
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 27,
+      "tokens": 89,
+      "copies": 2,
+      "first": {
+       "name": "src/mcp/github-actions-server.ts",
+       "start": 119,
+       "end": 145
+      },
+      "others": [
+       {
+        "name": "src/mcp/github-actions-server.ts",
+        "start": 186,
+        "end": 213
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 26,
+      "tokens": 87,
+      "copies": 2,
+      "first": {
+       "name": "src/mcp/github-actions-server.ts",
+       "start": 120,
+       "end": 145
+      },
+      "others": [
+       {
+        "name": "src/mcp/github-actions-server.ts",
+        "start": 266,
+        "end": 292
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:27:22.240Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "actions/runner-images",
@@ -2386,16 +5488,16 @@
    "starsToday": 19,
    "defaultBranch": "main",
    "headSha": "ede07f8e48022b2c00dc669c7a9d927c46e32a81",
-   "durationMs": 958,
+   "durationMs": 125,
    "total": {
     "sources": 274,
-    "lines": 38139,
-    "tokens": 230096,
+    "lines": 38095,
+    "tokens": 229931,
     "clones": 453,
     "duplicatedLines": 12551,
     "duplicatedTokens": 67285,
-    "percentage": 32.91,
-    "percentageTokens": 29.24
+    "percentage": 32.95,
+    "percentageTokens": 29.26
    },
    "formats": [
     {
@@ -2433,10 +5535,10 @@
     {
      "format": "bash",
      "sources": 22,
-     "lines": 2024,
+     "lines": 1974,
      "clones": 7,
      "duplicatedLines": 389,
-     "percentage": 19.22
+     "percentage": 19.71
     },
     {
      "format": "text",
@@ -2457,7 +5559,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2484,151 +5586,271 @@
      "format": "markdown",
      "lines": 120,
      "tokens": 1564,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/windows/Windows2022-Readme.md:markdown",
       "start": 284,
       "end": 403
      },
-     "secondFile": {
-      "name": "images/windows/Windows2025-Readme.md:markdown",
-      "start": 270,
-      "end": 389
+     "others": [
+      {
+       "name": "images/windows/Windows2025-Readme.md:markdown",
+       "start": 270,
+       "end": 389
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "| Microsoft.Net.Component.4.8.1.SDK                                         | 17.14.36510.44  |",
+       "| Microsoft.Net.Component.4.8.1.TargetingPack                               | 17.14.36510.44  |",
+       "| Microsoft.Net.Component.4.8.SDK                                           | 17.14.36510.44  |",
+       "| Microsoft.Net.Component.4.8.TargetingPack                                 | 17.14.36510.44  |",
+       "| Microsoft.Net.ComponentGroup.4.8.DeveloperTools                           | 17.14.36510.44  |",
+       "| Microsoft.Net.ComponentGroup.DevelopmentPrerequisites                     | 17.14.36510.44  |",
+       "| Microsoft.Net.ComponentGroup.TargetingPacks.Common                        | 17.14.36510.44  |",
+       "| microsoft.net.runtime.android                                             | 9.0.2026.41315  |",
+       "| microsoft.net.runtime.android.aot                                         | 9.0.2026.41315  |",
+       "| microsoft.net.runtime.android.aot.net8                                    | 9.0.2026.41315  |"
+      ],
+      "total": 120
      }
     },
     {
      "format": "markdown",
      "lines": 78,
      "tokens": 1407,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/macos/macos-14-Readme.md:markdown",
       "start": 161,
       "end": 238
      },
-     "secondFile": {
-      "name": "images/macos/macos-14-arm64-Readme.md:markdown",
-      "start": 154,
-      "end": 231
+     "others": [
+      {
+       "name": "images/macos/macos-14-arm64-Readme.md:markdown",
+       "start": 154,
+       "end": 231
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "- PSScriptAnalyzer: 1.25.0",
+       "",
+       "### Xcode",
+       "| Version        | Build    | Path                           | Symlinks                                                  |",
+       "| -------------- | -------- | ------------------------------ | --------------------------------------------------------- |",
+       "| 16.2           | 16C5032a | /Applications/Xcode_16.2.app   | /Applications/Xcode_16.2.0.app                            |",
+       "| 16.1           | 16B40    | /Applications/Xcode_16.1.app   | /Applications/Xcode_16.1.0.app                            |",
+       "| 15.4 (default) | 15F31d   | /Applications/Xcode_15.4.app   | /Applications/Xcode_15.4.0.app<br>/Applications/Xcode.app |",
+       "| 15.3           | 15E204a  | /Applications/Xcode_15.3.app   | /Applications/Xcode_15.3.0.app                            |",
+       "| 15.2           | 15C500b  | /Applications/Xcode_15.2.app   | /Applications/Xcode_15.2.0.app                            |"
+      ],
+      "total": 78
      }
     },
     {
      "format": "markdown",
      "lines": 12,
      "tokens": 1282,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/macos/macos-15-Readme.md:markdown",
       "start": 259,
       "end": 270
      },
-     "secondFile": {
-      "name": "images/macos/macos-15-arm64-Readme.md:markdown",
-      "start": 253,
-      "end": 264
+     "others": [
+      {
+       "name": "images/macos/macos-15-arm64-Readme.md:markdown",
+       "start": 253,
+       "end": 264
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "| ------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------…",
+       "| iOS 18.5     | 18.5   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generatio…",
+       "| iOS 18.6     | 18.6   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generatio…",
+       "| iOS 26.0     | 26.0.1 | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<br…",
+       "| iOS 26.1     | 26.1   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<br…",
+       "| iOS 26.2     | 26.2   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<br…",
+       "| tvOS 18.5    | 18.5   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                  …",
+       "| tvOS 26.1    | 26.1   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                  …",
+       "| tvOS 26.2    | 26.2   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                  …",
+       "| watchOS 11.5 | 11.5   | Apple Watch SE (40mm) (2nd generation)<br>Apple Watch SE (44mm) (2nd generation)<br>Apple Watch Series 10 (42mm)<br>Apple Watch Serie…"
+      ],
+      "total": 12
+     },
+     "excerptSecond": {
+      "lines": [
+       "| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------…",
+       "| iOS 18.5      | 18.5   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generati…",
+       "| iOS 18.6      | 18.6   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generati…",
+       "| iOS 26.0      | 26.0.1 | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<b…",
+       "| iOS 26.1      | 26.1   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<b…",
+       "| iOS 26.2      | 26.2   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<b…",
+       "| tvOS 18.5     | 18.5   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                 …",
+       "| tvOS 26.1     | 26.1   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                 …",
+       "| tvOS 26.2     | 26.2   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                 …",
+       "| watchOS 11.5  | 11.5   | Apple Watch SE (40mm) (2nd generation)<br>Apple Watch SE (44mm) (2nd generation)<br>Apple Watch Series 10 (42mm)<br>Apple Watch Seri…"
+      ],
+      "total": 12
      }
     },
     {
      "format": "markdown",
      "lines": 98,
      "tokens": 1254,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/macos/macos-15-Readme.md:markdown",
       "start": 162,
       "end": 259
      },
-     "secondFile": {
-      "name": "images/macos/macos-15-arm64-Readme.md:markdown",
-      "start": 156,
-      "end": 253
-     }
+     "others": [
+      {
+       "name": "images/macos/macos-15-arm64-Readme.md:markdown",
+       "start": 156,
+       "end": 253
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 6,
+     "tokens": 530,
+     "copies": 3,
+     "first": {
+      "name": "images/ubuntu/Ubuntu2204-Readme.md:markdown",
+      "start": 258,
+      "end": 263
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/Ubuntu2404-Readme.md:markdown",
+       "start": 231,
+       "end": 236
+      },
+      {
+       "name": "images/ubuntu/Ubuntu2604-Readme.md:markdown",
+       "start": 218,
+       "end": 223
+      }
+     ]
+    },
+    {
+     "format": "hcl",
+     "lines": 79,
+     "tokens": 169,
+     "copies": 7,
+     "first": {
+      "name": "images/macos/templates/macOS-14.anka.pkr.hcl",
+      "start": 1,
+      "end": 79
+     },
+     "others": [
+      {
+       "name": "images/macos/templates/macOS-14.arm64.anka.pkr.hcl",
+       "start": 1,
+       "end": 79
+      },
+      {
+       "name": "images/macos/templates/macOS-15.anka.pkr.hcl",
+       "start": 1,
+       "end": 79
+      },
+      {
+       "name": "images/macos/templates/macOS-15.arm64.anka.pkr.hcl",
+       "start": 1,
+       "end": 79
+      },
+      {
+       "name": "images/macos/templates/macOS-26.anka.pkr.hcl",
+       "start": 1,
+       "end": 79
+      },
+      {
+       "name": "images/macos/templates/macOS-26.arm64.anka.pkr.hcl",
+       "start": 1,
+       "end": 79
+      },
+      {
+       "name": "images/macos/templates/xcode-27.arm64.anka.pkr.hcl",
+       "start": 1,
+       "end": 79
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 14,
      "tokens": 1008,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/macos/macos-14-Readme.md:markdown",
       "start": 241,
       "end": 254
      },
-     "secondFile": {
-      "name": "images/macos/macos-14-arm64-Readme.md:markdown",
-      "start": 234,
-      "end": 247
-     }
+     "others": [
+      {
+       "name": "images/macos/macos-14-arm64-Readme.md:markdown",
+       "start": 234,
+       "end": 247
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 73,
      "tokens": 988,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/macos/macos-26-Readme.md:markdown",
       "start": 154,
       "end": 226
      },
-     "secondFile": {
-      "name": "images/macos/macos-26-arm64-Readme.md:markdown",
-      "start": 149,
-      "end": 221
-     }
+     "others": [
+      {
+       "name": "images/macos/macos-26-arm64-Readme.md:markdown",
+       "start": 149,
+       "end": 221
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 170,
      "tokens": 944,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/windows/Windows11-Arm64-Readme.md:markdown",
       "start": 10,
       "end": 179
      },
-     "secondFile": {
-      "name": "images/windows/Windows11-VS2026-Arm64-Readme.md:markdown",
-      "start": 10,
-      "end": 179
-     }
+     "others": [
+      {
+       "name": "images/windows/Windows11-VS2026-Arm64-Readme.md:markdown",
+       "start": 10,
+       "end": 179
+      }
+     ]
     },
     {
      "format": "bash",
      "lines": 188,
      "tokens": 922,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "images/ubuntu-slim/scripts/helpers/install.sh",
       "start": 47,
       "end": 234
      },
-     "secondFile": {
-      "name": "images/ubuntu/scripts/helpers/install.sh",
-      "start": 53,
-      "end": 240
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 49,
-     "tokens": 691,
-     "firstFile": {
-      "name": "images/windows/Windows2022-Readme.md:markdown",
-      "start": 203,
-      "end": 251
-     },
-     "secondFile": {
-      "name": "images/windows/Windows2025-Readme.md:markdown",
-      "start": 193,
-      "end": 241
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 57,
-     "tokens": 647,
-     "firstFile": {
-      "name": "images/windows/Windows2022-Readme.md:markdown",
-      "start": 404,
-      "end": 460
-     },
-     "secondFile": {
-      "name": "images/windows/Windows2025-Readme.md:markdown",
-      "start": 388,
-      "end": 444
-     }
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/helpers/install.sh",
+       "start": 53,
+       "end": 240
+      }
+     ]
     }
    ],
    "health": {
@@ -2752,7 +5974,293 @@
     "files": 1,
     "byCategory": [],
     "largest": []
-   }
+   },
+   "code": {
+    "sources": 311,
+    "lines": 22018,
+    "tokens": 110664,
+    "clones": 72,
+    "duplicatedLines": 1609,
+    "duplicatedTokens": 8051,
+    "percentage": 7.31,
+    "percentageTokens": 7.28,
+    "formats": [
+     {
+      "format": "powershell",
+      "sources": 154,
+      "lines": 13813,
+      "clones": 50,
+      "duplicatedLines": 929,
+      "percentage": 6.73
+     },
+     {
+      "format": "bash",
+      "sources": 154,
+      "lines": 7919,
+      "clones": 22,
+      "duplicatedLines": 680,
+      "percentage": 8.59
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "swift",
+      "sources": 1,
+      "lines": 64,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "python",
+      "sources": 1,
+      "lines": 48,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "bash",
+      "lines": 188,
+      "tokens": 922,
+      "copies": 2,
+      "first": {
+       "name": "images/ubuntu-slim/scripts/helpers/install.sh",
+       "start": 47,
+       "end": 234
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/helpers/install.sh",
+        "start": 53,
+        "end": 240
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "}",
+        "",
+        "get_github_releases_by_version() {",
+        "    local repo=$1",
+        "    local version=${2:-\".+\"}",
+        "    local allow_pre_release=${3:-false}",
+        "    local with_assets_only=${4:-false}",
+        "",
+        "    page_size=\"100\"",
+        ""
+       ],
+       "total": 188
+      }
+     },
+     {
+      "format": "powershell",
+      "lines": 90,
+      "tokens": 531,
+      "copies": 2,
+      "first": {
+       "name": "images/ubuntu-slim/scripts/docs-gen/Common.Helpers.psm1",
+       "start": 63,
+       "end": 152
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/helpers/Common.Helpers.psm1",
+        "start": 99,
+        "end": 188
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "}",
+        "",
+        "function Get-ToolsetContent {",
+        "    <#",
+        "    .SYNOPSIS",
+        "        Retrieves the content of the toolset.json file.",
+        "",
+        "    .DESCRIPTION",
+        "        This function reads the toolset.json in path provided by INSTALLER_SCRIPT_FOLDER",
+        "        environment variable and returns the content as a PowerShell object."
+       ],
+       "total": 90
+      }
+     },
+     {
+      "format": "powershell",
+      "lines": 65,
+      "tokens": 306,
+      "copies": 2,
+      "first": {
+       "name": "images/ubuntu-slim/scripts/docs-gen/Common.Helpers.psm1",
+       "start": 1,
+       "end": 65
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/helpers/Common.Helpers.psm1",
+        "start": 1,
+        "end": 65
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "function Get-CommandResult {",
+        "    <#",
+        "    .SYNOPSIS",
+        "        Runs a command in bash and returns the output and exit code.",
+        "",
+        "    .DESCRIPTION",
+        "        Function runs a provided command in bash and returns the output and exit code as hashtable.",
+        "",
+        "    .PARAMETER Command",
+        "        The command to run."
+       ],
+       "total": 65
+      }
+     },
+     {
+      "format": "bash",
+      "lines": 89,
+      "tokens": 246,
+      "copies": 2,
+      "first": {
+       "name": "images/ubuntu-slim/scripts/helpers/etc-environment.sh",
+       "start": 1,
+       "end": 89
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/helpers/etc-environment.sh",
+        "start": 1,
+        "end": 89
+       }
+      ]
+     },
+     {
+      "format": "powershell",
+      "lines": 30,
+      "tokens": 190,
+      "copies": 2,
+      "first": {
+       "name": "images/macos/scripts/docs-gen/SoftwareReport.Android.psm1",
+       "start": 158,
+       "end": 187
+      },
+      "others": [
+       {
+        "name": "images/windows/scripts/docs-gen/SoftwareReport.Android.psm1",
+        "start": 102,
+        "end": 131
+       }
+      ]
+     },
+     {
+      "format": "powershell",
+      "lines": 37,
+      "tokens": 186,
+      "copies": 2,
+      "first": {
+       "name": "images/ubuntu-slim/scripts/docs-gen/SoftwareReport.Helpers.psm1",
+       "start": 1,
+       "end": 37
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/docs-gen/SoftwareReport.Helpers.psm1",
+        "start": 1,
+        "end": 37
+       }
+      ]
+     },
+     {
+      "format": "powershell",
+      "lines": 37,
+      "tokens": 182,
+      "copies": 2,
+      "first": {
+       "name": "images/macos/scripts/docs-gen/SoftwareReport.Android.psm1",
+       "start": 121,
+       "end": 157
+      },
+      "others": [
+       {
+        "name": "images/windows/scripts/docs-gen/SoftwareReport.Android.psm1",
+        "start": 65,
+        "end": 101
+       }
+      ]
+     },
+     {
+      "format": "bash",
+      "lines": 36,
+      "tokens": 170,
+      "copies": 2,
+      "first": {
+       "name": "images/ubuntu-slim/scripts/build/install-zstd.sh",
+       "start": 1,
+       "end": 36
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/build/install-zstd.sh",
+        "start": 1,
+        "end": 36
+       }
+      ]
+     },
+     {
+      "format": "powershell",
+      "lines": 38,
+      "tokens": 161,
+      "copies": 2,
+      "first": {
+       "name": "images/macos/scripts/docs-gen/SoftwareReport.Android.psm1",
+       "start": 75,
+       "end": 112
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/docs-gen/SoftwareReport.Android.psm1",
+        "start": 45,
+        "end": 82
+       }
+      ]
+     },
+     {
+      "format": "powershell",
+      "lines": 28,
+      "tokens": 159,
+      "copies": 2,
+      "first": {
+       "name": "images/ubuntu-slim/scripts/docs-gen/SoftwareReport.Common.psm1",
+       "start": 50,
+       "end": 77
+      },
+      "others": [
+       {
+        "name": "images/ubuntu/scripts/docs-gen/SoftwareReport.Common.psm1",
+        "start": 287,
+        "end": 314
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:27:23.599Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "mobile-next/mobile-mcp",
@@ -2763,16 +6271,16 @@
    "starsToday": 168,
    "defaultBranch": "main",
    "headSha": "18d0e8c44ef4dbc4113d57ee917c51f2da5678d4",
-   "durationMs": 912,
+   "durationMs": 29,
    "total": {
     "sources": 68,
-    "lines": 9513,
-    "tokens": 65375,
+    "lines": 9469,
+    "tokens": 65210,
     "clones": 28,
     "duplicatedLines": 520,
     "duplicatedTokens": 3159,
-    "percentage": 5.47,
-    "percentageTokens": 4.83
+    "percentage": 5.49,
+    "percentageTokens": 4.84
    },
    "formats": [
     {
@@ -2794,10 +6302,10 @@
     {
      "format": "bash",
      "sources": 12,
-     "lines": 721,
+     "lines": 671,
      "clones": 2,
      "duplicatedLines": 18,
-     "percentage": 2.5
+     "percentage": 2.68
     },
     {
      "format": "json",
@@ -2834,7 +6342,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2845,151 +6353,286 @@
      "format": "text",
      "lines": 232,
      "tokens": 286,
-     "firstFile": {
+     "copies": 3,
+     "first": {
       "name": "README.ja.md:text",
       "start": 252,
       "end": 483
      },
-     "secondFile": {
-      "name": "README.md:text",
-      "start": 252,
-      "end": 483
+     "others": [
+      {
+       "name": "README.md:text",
+       "start": 252,
+       "end": 483
+      },
+      {
+       "name": "README.zh-CN.md:text",
+       "start": 252,
+       "end": 483
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "/mcp add",
+       "```",
+       "",
+       "設定ファイル `~/.copilot/mcp-config.json` を編集して次を追加することもできます:",
+       "",
+       "```json",
+       "{",
+       "  \"mcpServers\": {",
+       "    \"mobile-mcp\": {",
+       "      \"type\": \"local\","
+      ],
+      "total": 232
+     },
+     "excerptSecond": {
+      "lines": [
+       "/mcp add",
+       "```",
+       "",
+       "You can edit the configuration file `~/.copilot/mcp-config.json` and add:",
+       "",
+       "```json",
+       "{",
+       "  \"mcpServers\": {",
+       "    \"mobile-mcp\": {",
+       "      \"type\": \"local\","
+      ],
+      "total": 232
      }
     },
     {
-     "format": "text",
-     "lines": 232,
-     "tokens": 286,
-     "firstFile": {
-      "name": "README.ja.md:text",
-      "start": 252,
-      "end": 483
+     "format": "json",
+     "lines": 383,
+     "tokens": 165,
+     "copies": 3,
+     "first": {
+      "name": "README.ja.md:json",
+      "start": 145,
+      "end": 527
      },
-     "secondFile": {
-      "name": "README.zh-CN.md:text",
-      "start": 252,
-      "end": 483
+     "others": [
+      {
+       "name": "README.md:json",
+       "start": 145,
+       "end": 527
+      },
+      {
+       "name": "README.zh-CN.md:json",
+       "start": 145,
+       "end": 527
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{",
+       "  \"mcpServers\": {",
+       "    \"mobile-mcp\": {",
+       "      \"command\": \"npx\",",
+       "      \"args\": [\"-y\", \"@mobilenext/mobile-mcp@latest\"]",
+       "    }",
+       "  }",
+       "}",
+       "```",
+       ""
+      ],
+      "total": 383
      }
+    },
+    {
+     "format": "bash",
+     "lines": 336,
+     "tokens": 130,
+     "copies": 3,
+     "first": {
+      "name": "README.ja.md:bash",
+      "start": 176,
+      "end": 511
+     },
+     "others": [
+      {
+       "name": "README.md:bash",
+       "start": 176,
+       "end": 511
+      },
+      {
+       "name": "README.zh-CN.md:bash",
+       "start": 176,
+       "end": 511
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "amp mcp add mobile-mcp -- npx @mobilenext/mobile-mcp@latest",
+       "```",
+       "",
+       "</details>",
+       "",
+       "<details>",
+       "<summary>Antigravity 2</summary>",
+       "",
+       "Antigravity には MCP サーバーを追加する CLI コマンドがないため、手動で追加します。`~/.gemini/config/mcp_config.json` を編集して次を追加してください:",
+       ""
+      ],
+      "total": 336
+     },
+     "excerptSecond": {
+      "lines": [
+       "amp mcp add mobile-mcp -- npx @mobilenext/mobile-mcp@latest",
+       "```",
+       "",
+       "</details>",
+       "",
+       "<details>",
+       "<summary>Antigravity 2</summary>",
+       "",
+       "Antigravity doesn't have a CLI command to add MCP servers, so add it manually. Edit `~/.gemini/config/mcp_config.json` and add:",
+       ""
+      ],
+      "total": 336
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 18,
+     "tokens": 106,
+     "copies": 3,
+     "first": {
+      "name": "src/webdriver-agent.ts",
+      "start": 149,
+      "end": 166
+     },
+     "others": [
+      {
+       "name": "src/webdriver-agent.ts",
+       "start": 176,
+       "end": 193
+      },
+      {
+       "name": "src/webdriver-agent.ts",
+       "start": 209,
+       "end": 226
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 42,
      "tokens": 191,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "src/webdriver-agent.ts",
       "start": 331,
       "end": 372
      },
-     "secondFile": {
-      "name": "src/webdriver-agent.ts",
-      "start": 392,
-      "end": 433
-     }
+     "others": [
+      {
+       "name": "src/webdriver-agent.ts",
+       "start": 392,
+       "end": 433
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 34,
      "tokens": 188,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "README.ja.md:markdown",
       "start": 11,
       "end": 44
      },
-     "secondFile": {
-      "name": "README.zh-CN.md:markdown",
-      "start": 11,
-      "end": 44
-     }
+     "others": [
+      {
+       "name": "README.zh-CN.md:markdown",
+       "start": 11,
+       "end": 44
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 32,
      "tokens": 187,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "README.ja.md:markdown",
       "start": 13,
       "end": 44
      },
-     "secondFile": {
-      "name": "README.md:markdown",
-      "start": 13,
-      "end": 44
-     }
+     "others": [
+      {
+       "name": "README.md:markdown",
+       "start": 13,
+       "end": 44
+      }
+     ]
     },
     {
-     "format": "json",
-     "lines": 383,
-     "tokens": 165,
-     "firstFile": {
-      "name": "README.ja.md:json",
-      "start": 145,
-      "end": 527
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 86,
+     "copies": 3,
+     "first": {
+      "name": "src/android.ts",
+      "start": 393,
+      "end": 402
      },
-     "secondFile": {
-      "name": "README.md:json",
-      "start": 145,
-      "end": 527
-     }
+     "others": [
+      {
+       "name": "src/ios.ts",
+       "start": 176,
+       "end": 185
+      },
+      {
+       "name": "src/iphone-simulator.ts",
+       "start": 207,
+       "end": 216
+      }
+     ]
     },
     {
-     "format": "json",
-     "lines": 383,
-     "tokens": 165,
-     "firstFile": {
-      "name": "README.ja.md:json",
-      "start": 145,
-      "end": 527
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 72,
+     "copies": 3,
+     "first": {
+      "name": "src/android.ts",
+      "start": 382,
+      "end": 391
      },
-     "secondFile": {
-      "name": "README.zh-CN.md:json",
-      "start": 145,
-      "end": 527
-     }
+     "others": [
+      {
+       "name": "src/android.ts",
+       "start": 393,
+       "end": 402
+      },
+      {
+       "name": "src/ios.ts",
+       "start": 164,
+       "end": 173
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 9,
      "tokens": 139,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "test/prompt-android-emulator.md:markdown",
       "start": 1,
       "end": 9
      },
-     "secondFile": {
-      "name": "test/prompt-ios-simulator.md:markdown",
-      "start": 1,
-      "end": 9
-     }
-    },
-    {
-     "format": "bash",
-     "lines": 336,
-     "tokens": 130,
-     "firstFile": {
-      "name": "README.ja.md:bash",
-      "start": 176,
-      "end": 511
-     },
-     "secondFile": {
-      "name": "README.md:bash",
-      "start": 176,
-      "end": 511
-     }
-    },
-    {
-     "format": "bash",
-     "lines": 336,
-     "tokens": 130,
-     "firstFile": {
-      "name": "README.ja.md:bash",
-      "start": 176,
-      "end": 511
-     },
-     "secondFile": {
-      "name": "README.zh-CN.md:bash",
-      "start": 176,
-      "end": 511
-     }
+     "others": [
+      {
+       "name": "test/prompt-ios-simulator.md:markdown",
+       "start": 1,
+       "end": 9
+      }
+     ]
     }
    ],
    "health": {
@@ -3129,7 +6772,300 @@
       "lines": 283
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 27,
+    "lines": 5248,
+    "tokens": 27906,
+    "clones": 16,
+    "duplicatedLines": 202,
+    "duplicatedTokens": 1313,
+    "percentage": 3.85,
+    "percentageTokens": 4.71,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 15,
+      "lines": 4167,
+      "clones": 16,
+      "duplicatedLines": 202,
+      "percentage": 4.85
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 2,
+      "lines": 263,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 18,
+      "tokens": 106,
+      "copies": 3,
+      "first": {
+       "name": "src/webdriver-agent.ts",
+       "start": 149,
+       "end": 166
+      },
+      "others": [
+       {
+        "name": "src/webdriver-agent.ts",
+        "start": 176,
+        "end": 193
+       },
+       {
+        "name": "src/webdriver-agent.ts",
+        "start": 209,
+        "end": 226
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "public async tap(x: number, y: number) {",
+        "    await this.withinSession(async sessionUrl => {",
+        "        const url = `${sessionUrl}/actions`;",
+        "        await fetch(url, {",
+        "            method: \"POST\",",
+        "            headers: {",
+        "                \"Content-Type\": \"application/json\",",
+        "            },",
+        "            body: JSON.stringify({",
+        "                actions: ["
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 42,
+      "tokens": 191,
+      "copies": 2,
+      "first": {
+       "name": "src/webdriver-agent.ts",
+       "start": 331,
+       "end": 372
+      },
+      "others": [
+       {
+        "name": "src/webdriver-agent.ts",
+        "start": 392,
+        "end": 433
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "        x1 = centerX + Math.floor(horizontalDistance / 2);",
+        "        break;",
+        "    default:",
+        "        throw new ActionableError(`Swipe direction \"${direction}\" is not supported`);",
+        "}",
+        "",
+        "const url = `${sessionUrl}/actions`;",
+        "const response = await fetch(url, {",
+        "    method: \"POST\",",
+        "    headers: {"
+       ],
+       "total": 42
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 86,
+      "copies": 3,
+      "first": {
+       "name": "src/android.ts",
+       "start": 393,
+       "end": 402
+      },
+      "others": [
+       {
+        "name": "src/ios.ts",
+        "start": 176,
+        "end": 185
+       },
+       {
+        "name": "src/iphone-simulator.ts",
+        "start": 207,
+        "end": 216
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "        this.adb(\"uninstall\", bundleId);",
+        "    } catch (error: any) {",
+        "        const stdout = error.stdout ? error.stdout.toString() : \"\";",
+        "        const stderr = error.stderr ? error.stderr.toString() : \"\";",
+        "        const output = (stdout + stderr).trim();",
+        "        throw new ActionableError(output || error.message);",
+        "    }",
+        "}",
+        "",
+        "public async openUrl(url: string): Promise<void> {"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 72,
+      "copies": 3,
+      "first": {
+       "name": "src/android.ts",
+       "start": 382,
+       "end": 391
+      },
+      "others": [
+       {
+        "name": "src/android.ts",
+        "start": 393,
+        "end": 402
+       },
+       {
+        "name": "src/ios.ts",
+        "start": 164,
+        "end": 173
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 12,
+      "tokens": 100,
+      "copies": 2,
+      "first": {
+       "name": "src/android.ts",
+       "start": 573,
+       "end": 584
+      },
+      "others": [
+       {
+        "name": "src/android.ts",
+        "start": 594,
+        "end": 605
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 7,
+      "tokens": 69,
+      "copies": 2,
+      "first": {
+       "name": "src/android.ts",
+       "start": 382,
+       "end": 388
+      },
+      "others": [
+       {
+        "name": "src/iphone-simulator.ts",
+        "start": 184,
+        "end": 192
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 65,
+      "copies": 2,
+      "first": {
+       "name": "src/ios.ts",
+       "start": 202,
+       "end": 210
+      },
+      "others": [
+       {
+        "name": "src/iphone-simulator.ts",
+        "start": 251,
+        "end": 259
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 7,
+      "tokens": 64,
+      "copies": 2,
+      "first": {
+       "name": "src/ios.ts",
+       "start": 144,
+       "end": 150
+      },
+      "others": [
+       {
+        "name": "src/iphone-simulator.ts",
+        "start": 107,
+        "end": 113
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 64,
+      "copies": 2,
+      "first": {
+       "name": "src/ios.ts",
+       "start": 269,
+       "end": 277
+      },
+      "others": [
+       {
+        "name": "src/ios.ts",
+        "start": 285,
+        "end": 293
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 61,
+      "copies": 2,
+      "first": {
+       "name": "src/android.ts",
+       "start": 384,
+       "end": 392
+      },
+      "others": [
+       {
+        "name": "src/ios.ts",
+        "start": 166,
+        "end": 174
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:27:24.779Z",
+   "jscpdVersion": "5.4.0"
   }
  ]
 }

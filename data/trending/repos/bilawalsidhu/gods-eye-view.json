@@ -9,10 +9,12 @@
    "starsToday": 1762,
    "headSha": "a458d270672c066cee67bc6f18cb847cb7d2d2c9",
    "sources": 431,
-   "lines": 219303,
-   "clones": 825,
-   "duplicatedLines": 10919,
-   "percentage": 4.98,
+   "lines": 218273,
+   "clones": 912,
+   "duplicatedLines": 12381,
+   "percentage": 5.67,
+   "codePercentage": 5.33,
+   "codeSources": 223,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 3680,
    "headSha": "aacfa06a311f9eac2fe3cb37533ef08e43a3c7ac",
    "sources": 500,
-   "lines": 229638,
-   "clones": 850,
-   "duplicatedLines": 10992,
-   "percentage": 4.79,
+   "lines": 228579,
+   "clones": 926,
+   "duplicatedLines": 12323,
+   "percentage": 5.39,
+   "codePercentage": 5.01,
+   "codeSources": 265,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 2265,
    "headSha": "78199c2ab388987c954a581e8d1769192f56232f",
    "sources": 571,
-   "lines": 237618,
-   "clones": 859,
-   "duplicatedLines": 11069,
-   "percentage": 4.66,
+   "lines": 236559,
+   "clones": 935,
+   "duplicatedLines": 12409,
+   "percentage": 5.25,
+   "codePercentage": 4.92,
+   "codeSources": 321,
    "healthScore": null,
    "healthGrade": null
   },
@@ -51,10 +57,12 @@
    "starsToday": 2680,
    "headSha": "a0a0128a5972b9cfa044772703f7f59dfae7429f",
    "sources": 920,
-   "lines": 283802,
-   "clones": 936,
-   "duplicatedLines": 13053,
-   "percentage": 4.6,
+   "lines": 282643,
+   "clones": 1026,
+   "duplicatedLines": 14547,
+   "percentage": 5.15,
+   "codePercentage": 5.16,
+   "codeSources": 602,
    "healthScore": null,
    "healthGrade": null
   }
@@ -70,70 +78,62 @@
   "starsToday": 2680,
   "defaultBranch": "main",
   "headSha": "a0a0128a5972b9cfa044772703f7f59dfae7429f",
-  "durationMs": 1173,
+  "durationMs": 2514,
   "total": {
    "sources": 920,
-   "lines": 283802,
-   "tokens": 1775355,
-   "clones": 936,
-   "duplicatedLines": 13053,
-   "duplicatedTokens": 84115,
-   "percentage": 4.6,
-   "percentageTokens": 4.74
+   "lines": 282643,
+   "tokens": 1775190,
+   "clones": 1026,
+   "duplicatedLines": 14547,
+   "duplicatedTokens": 88220,
+   "percentage": 5.15,
+   "percentageTokens": 4.97
   },
   "formats": [
    {
     "format": "javascript",
     "sources": 839,
-    "lines": 254684,
-    "clones": 868,
-    "duplicatedLines": 12368,
-    "percentage": 4.86
+    "lines": 254582,
+    "clones": 957,
+    "duplicatedLines": 13795,
+    "percentage": 5.42
    },
    {
     "format": "css",
     "sources": 20,
     "lines": 10975,
-    "clones": 58,
-    "duplicatedLines": 487,
-    "percentage": 4.44
+    "clones": 59,
+    "duplicatedLines": 546,
+    "percentage": 4.97
    },
    {
     "format": "bash",
     "sources": 16,
-    "lines": 2069,
+    "lines": 1380,
     "clones": 5,
-    "duplicatedLines": 144,
-    "percentage": 6.96
+    "duplicatedLines": 149,
+    "percentage": 10.8
    },
    {
     "format": "markdown",
     "sources": 24,
     "lines": 6567,
     "clones": 3,
-    "duplicatedLines": 36,
-    "percentage": 0.55
+    "duplicatedLines": 37,
+    "percentage": 0.56
    },
    {
     "format": "markup",
     "sources": 6,
     "lines": 1261,
     "clones": 2,
-    "duplicatedLines": 18,
-    "percentage": 1.43
+    "duplicatedLines": 20,
+    "percentage": 1.59
    },
    {
     "format": "json",
     "sources": 7,
     "lines": 7417,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "text",
-    "sources": 2,
-    "lines": 407,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -149,7 +149,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -161,6 +161,14 @@
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 2,
+    "lines": 33,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
    }
   ],
   "topClones": [
@@ -168,152 +176,602 @@
     "format": "javascript",
     "lines": 203,
     "tokens": 801,
-    "firstFile": {
+    "first": {
      "name": "src/layers/flights/rendering.js",
      "start": 526,
      "end": 728
     },
-    "secondFile": {
-     "name": "src/layers/military/rendering.js",
-     "start": 465,
-     "end": 665
-    }
+    "others": [
+     {
+      "name": "src/layers/military/rendering.js",
+      "start": 465,
+      "end": 665
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    colorBlendAmount: flightState._irBoost ? 1.0 : spec.blendAmount,",
+      "    customShader: flightState._irBoost",
+      "      ? flightState._IR_UNLIT_SHADER",
+      "      : undefined,",
+      "    id: icao24, // so scene.pick returns the icao for click-to-track",
+      "  });",
+      "} catch {",
+      "  // asset/decode fail — stay billboard. Only touch this lifecycle's state if still current",
+      "  // (a destroy/re-init may have swapped the globals while this load was in flight).",
+      "  if (epoch === flightState._modelEpoch) {"
+     ],
+     "total": 203
+    },
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 137,
     "tokens": 793,
-    "firstFile": {
+    "first": {
      "name": "src/annotations/hybridAnnotationRenderer.test.mjs",
      "start": 4,
      "end": 140
     },
-    "secondFile": {
-     "name": "src/annotations/screenAnnotationRenderer.test.mjs",
-     "start": 4,
-     "end": 140
-    }
+    "others": [
+     {
+      "name": "src/annotations/screenAnnotationRenderer.test.mjs",
+      "start": 4,
+      "end": 140
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import { createHybridAnnotationRenderer } from './hybridAnnotationRenderer.js';",
+      "",
+      "class FakeClassList {",
+      "  constructor(owner) {",
+      "    this.owner = owner;",
+      "    this.names = new Set();",
+      "  }",
+      "",
+      "  reset(value) {",
+      "    this.names = new Set(String(value || '').split(/\\s+/).filter(Boolean));"
+     ],
+     "total": 137
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 32,
+    "tokens": 108,
+    "first": {
+     "name": "scripts/qa-cctv-v2.mjs",
+     "start": 101,
+     "end": 132
+    },
+    "others": [
+     {
+      "name": "scripts/qa-enrich-ambient.mjs",
+      "start": 86,
+      "end": 112
+     },
+     {
+      "name": "scripts/qa-heading-b3.mjs",
+      "start": 116,
+      "end": 145
+     },
+     {
+      "name": "scripts/qa-labels.mjs",
+      "start": 49,
+      "end": 79
+     },
+     {
+      "name": "scripts/qa-sprites-b5.mjs",
+      "start": 63,
+      "end": 89
+     },
+     {
+      "name": "scripts/track-regression.mjs",
+      "start": 111,
+      "end": 144
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "const SHOTS_DIR = path.join(REPO_ROOT, 'qa-shots', 'cctv-v2');",
+      "",
+      "const CHROME_EXECUTABLE_CANDIDATES = [",
+      "  process.env.PUPPETEER_EXECUTABLE_PATH,",
+      "  // Prefer puppeteer's version-pinned Chrome-for-Testing over the system",
+      "  // Chrome: /Applications auto-updates underneath the harnesses, and its",
+      "  // software-GL behavior shifts across majors (system Chrome 150 blew the",
+      "  // tile-gated drain budget under SwiftShader on 2026-07-30 — six",
+      "  // false-negative qa-cctv-v2 runs against a healthy build). A deterministic",
+      "  // pinned browser beats the newest one for regression harnesses."
+     ],
+     "total": 32
+    },
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 119,
     "tokens": 514,
-    "firstFile": {
+    "first": {
      "name": "src/layers/flights/rendering.js",
      "start": 833,
      "end": 951
     },
-    "secondFile": {
-     "name": "src/layers/military/rendering.js",
-     "start": 771,
-     "end": 890
-    }
+    "others": [
+     {
+      "name": "src/layers/military/rendering.js",
+      "start": 771,
+      "end": 890
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 8,
+    "tokens": 84,
+    "first": {
+     "name": "src/voice/gevActions.test.mjs",
+     "start": 158,
+     "end": 165
+    },
+    "others": [
+     {
+      "name": "src/voice/gevActions.test.mjs",
+      "start": 791,
+      "end": 798
+     },
+     {
+      "name": "src/voice/gevActions.test.mjs",
+      "start": 837,
+      "end": 844
+     },
+     {
+      "name": "src/voice/gevActions.test.mjs",
+      "start": 877,
+      "end": 884
+     },
+     {
+      "name": "src/voice/gevActions.test.mjs",
+      "start": 930,
+      "end": 937
+     },
+     {
+      "name": "src/voice/gevActions.test.mjs",
+      "start": 984,
+      "end": 991
+     },
+     {
+      "name": "src/voice/gevActions.test.mjs",
+      "start": 1076,
+      "end": 1083
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 46,
+    "tokens": 164,
+    "first": {
+     "name": "scripts/qa-cctv-v2.mjs",
+     "start": 101,
+     "end": 146
+    },
+    "others": [
+     {
+      "name": "scripts/qa-failstate-b10.mjs",
+      "start": 63,
+      "end": 97
+     },
+     {
+      "name": "scripts/qa-firms.mjs",
+      "start": 48,
+      "end": 80
+     },
+     {
+      "name": "scripts/qa-traffic.mjs",
+      "start": 50,
+      "end": 82
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 138,
     "tokens": 488,
-    "firstFile": {
+    "first": {
      "name": "src/layers/flights/rendering.js",
      "start": 354,
      "end": 491
     },
-    "secondFile": {
-     "name": "src/layers/military/rendering.js",
-     "start": 336,
-     "end": 433
-    }
+    "others": [
+     {
+      "name": "src/layers/military/rendering.js",
+      "start": 336,
+      "end": 433
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 78,
     "tokens": 470,
-    "firstFile": {
+    "first": {
      "name": "src/layers/flights/motion.js",
      "start": 274,
      "end": 351
     },
-    "secondFile": {
-     "name": "src/layers/military/motion.js",
-     "start": 181,
-     "end": 257
-    }
+    "others": [
+     {
+      "name": "src/layers/military/motion.js",
+      "start": 181,
+      "end": 257
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 100,
     "tokens": 426,
-    "firstFile": {
+    "first": {
      "name": "src/layers/flights/tracking.js",
      "start": 129,
      "end": 228
     },
-    "secondFile": {
-     "name": "src/layers/military/tracking.js",
-     "start": 124,
-     "end": 219
-    }
+    "others": [
+     {
+      "name": "src/layers/military/tracking.js",
+      "start": 124,
+      "end": 219
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 134,
     "tokens": 399,
-    "firstFile": {
+    "first": {
      "name": "src/layers/flights/motion.js",
      "start": 455,
      "end": 588
     },
-    "secondFile": {
-     "name": "src/layers/military/motion.js",
-     "start": 345,
-     "end": 470
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 115,
-    "tokens": 369,
-    "firstFile": {
-     "name": "src/layers/flights/tracking.js",
-     "start": 1100,
-     "end": 1214
-    },
-    "secondFile": {
-     "name": "src/layers/military/tracking.js",
-     "start": 1017,
-     "end": 1126
-    }
-   },
-   {
-    "format": "bash",
-    "lines": 63,
-    "tokens": 356,
-    "firstFile": {
-     "name": "scripts/dev-fresh.sh",
-     "start": 164,
-     "end": 226
-    },
-    "secondFile": {
-     "name": "scripts/dev-secure.sh",
-     "start": 86,
-     "end": 148
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 78,
-    "tokens": 330,
-    "firstFile": {
-     "name": "src/layers/flights/queries.js",
-     "start": 787,
-     "end": 864
-    },
-    "secondFile": {
-     "name": "src/layers/military/queries.js",
-     "start": 702,
-     "end": 779
-    }
+    "others": [
+     {
+      "name": "src/layers/military/motion.js",
+      "start": 345,
+      "end": 470
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 602,
+   "lines": 171923,
+   "tokens": 921593,
+   "clones": 495,
+   "duplicatedLines": 8867,
+   "duplicatedTokens": 47151,
+   "percentage": 5.16,
+   "percentageTokens": 5.12,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 589,
+     "lines": 170437,
+     "clones": 490,
+     "duplicatedLines": 8718,
+     "percentage": 5.12
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 1312,
+     "clones": 5,
+     "duplicatedLines": 149,
+     "percentage": 11.36
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 203,
+     "tokens": 801,
+     "first": {
+      "name": "src/layers/flights/rendering.js",
+      "start": 526,
+      "end": 728
+     },
+     "others": [
+      {
+       "name": "src/layers/military/rendering.js",
+       "start": 465,
+       "end": 665
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    colorBlendAmount: flightState._irBoost ? 1.0 : spec.blendAmount,",
+       "    customShader: flightState._irBoost",
+       "      ? flightState._IR_UNLIT_SHADER",
+       "      : undefined,",
+       "    id: icao24, // so scene.pick returns the icao for click-to-track",
+       "  });",
+       "} catch {",
+       "  // asset/decode fail — stay billboard. Only touch this lifecycle's state if still current",
+       "  // (a destroy/re-init may have swapped the globals while this load was in flight).",
+       "  if (epoch === flightState._modelEpoch) {"
+      ],
+      "total": 203
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 32,
+     "tokens": 108,
+     "first": {
+      "name": "scripts/qa-cctv-v2.mjs",
+      "start": 101,
+      "end": 132
+     },
+     "others": [
+      {
+       "name": "scripts/qa-enrich-ambient.mjs",
+       "start": 86,
+       "end": 112
+      },
+      {
+       "name": "scripts/qa-heading-b3.mjs",
+       "start": 116,
+       "end": 145
+      },
+      {
+       "name": "scripts/qa-labels.mjs",
+       "start": 49,
+       "end": 79
+      },
+      {
+       "name": "scripts/qa-sprites-b5.mjs",
+       "start": 63,
+       "end": 89
+      },
+      {
+       "name": "scripts/track-regression.mjs",
+       "start": 111,
+       "end": 144
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "const SHOTS_DIR = path.join(REPO_ROOT, 'qa-shots', 'cctv-v2');",
+       "",
+       "const CHROME_EXECUTABLE_CANDIDATES = [",
+       "  process.env.PUPPETEER_EXECUTABLE_PATH,",
+       "  // Prefer puppeteer's version-pinned Chrome-for-Testing over the system",
+       "  // Chrome: /Applications auto-updates underneath the harnesses, and its",
+       "  // software-GL behavior shifts across majors (system Chrome 150 blew the",
+       "  // tile-gated drain budget under SwiftShader on 2026-07-30 — six",
+       "  // false-negative qa-cctv-v2 runs against a healthy build). A deterministic",
+       "  // pinned browser beats the newest one for regression harnesses."
+      ],
+      "total": 32
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 119,
+     "tokens": 514,
+     "first": {
+      "name": "src/layers/flights/rendering.js",
+      "start": 833,
+      "end": 951
+     },
+     "others": [
+      {
+       "name": "src/layers/military/rendering.js",
+       "start": 771,
+       "end": 890
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       ");",
+       "flightState._trackedModel.scale = trackedModelScaleForPixelCap({",
+       "  baseScale: spec.scale,",
+       "  nativeRadiusM: spec.nativeRadiusM,",
+       "  rangeM: Cesium.Cartesian3.distance(",
+       "    flightState._viewer.camera.positionWC,",
+       "    displayPos,",
+       "  ),",
+       "  viewportHeightPx: flightState._viewer.scene.canvas.clientHeight,",
+       "  fovyRad: flightState._viewer.camera.frustum.fovy,"
+      ],
+      "total": 119
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 46,
+     "tokens": 164,
+     "first": {
+      "name": "scripts/qa-cctv-v2.mjs",
+      "start": 101,
+      "end": 146
+     },
+     "others": [
+      {
+       "name": "scripts/qa-failstate-b10.mjs",
+       "start": 63,
+       "end": 97
+      },
+      {
+       "name": "scripts/qa-firms.mjs",
+       "start": 48,
+       "end": 80
+      },
+      {
+       "name": "scripts/qa-traffic.mjs",
+       "start": 50,
+       "end": 82
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 138,
+     "tokens": 488,
+     "first": {
+      "name": "src/layers/flights/rendering.js",
+      "start": 354,
+      "end": 491
+     },
+     "others": [
+      {
+       "name": "src/layers/military/rendering.js",
+       "start": 336,
+       "end": 433
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 78,
+     "tokens": 470,
+     "first": {
+      "name": "src/layers/flights/motion.js",
+      "start": 274,
+      "end": 351
+     },
+     "others": [
+      {
+       "name": "src/layers/military/motion.js",
+       "start": 181,
+       "end": 257
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 100,
+     "tokens": 426,
+     "first": {
+      "name": "src/layers/flights/tracking.js",
+      "start": 129,
+      "end": 228
+     },
+     "others": [
+      {
+       "name": "src/layers/military/tracking.js",
+       "start": 124,
+       "end": 219
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 134,
+     "tokens": 399,
+     "first": {
+      "name": "src/layers/flights/motion.js",
+      "start": 455,
+      "end": 588
+     },
+     "others": [
+      {
+       "name": "src/layers/military/motion.js",
+       "start": 345,
+       "end": 470
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 115,
+     "tokens": 369,
+     "first": {
+      "name": "src/layers/flights/tracking.js",
+      "start": 1100,
+      "end": 1214
+     },
+     "others": [
+      {
+       "name": "src/layers/military/tracking.js",
+       "start": 1017,
+       "end": 1126
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 63,
+     "tokens": 356,
+     "first": {
+      "name": "scripts/dev-fresh.sh",
+      "start": 164,
+      "end": 226
+     },
+     "others": [
+      {
+       "name": "scripts/dev-secure.sh",
+       "start": 86,
+       "end": 148
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:00:38.614Z",
+  "jscpdVersion": "5.4.0"
  }
 }

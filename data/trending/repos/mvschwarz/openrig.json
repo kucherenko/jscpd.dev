@@ -9,10 +9,12 @@
    "starsToday": 114,
    "headSha": "ae957e59577bd05a715594fa9c589c2e883b2d19",
    "sources": 3012,
-   "lines": 628234,
+   "lines": 628190,
    "clones": 5220,
    "duplicatedLines": 67039,
    "percentage": 10.67,
+   "codePercentage": 4.54,
+   "codeSources": 1077,
    "healthScore": 44.1,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 734,
    "headSha": "50e519b399b401345b42e24c3ee3f2f298070628",
    "sources": 3045,
-   "lines": 636419,
+   "lines": 636375,
    "clones": 5174,
    "duplicatedLines": 66474,
    "percentage": 10.45,
+   "codePercentage": 4.47,
+   "codeSources": 1096,
    "healthScore": 44.5,
    "healthGrade": "D"
   },
@@ -37,10 +41,12 @@
    "starsToday": 737,
    "headSha": "f8f3aff68bf425735173df9e2c5ac5ef19716f5b",
    "sources": 3051,
-   "lines": 638361,
+   "lines": 638317,
    "clones": 5191,
    "duplicatedLines": 66714,
    "percentage": 10.45,
+   "codePercentage": 4.47,
+   "codeSources": 1091,
    "healthScore": 44.5,
    "healthGrade": "D"
   },
@@ -51,10 +57,12 @@
    "starsToday": 624,
    "headSha": "76ef4d9b13be7baa650e80ec26fda4c0df31babc",
    "sources": 3075,
-   "lines": 643371,
+   "lines": 643327,
    "clones": 5228,
    "duplicatedLines": 67041,
    "percentage": 10.42,
+   "codePercentage": 4.47,
+   "codeSources": 1093,
    "healthScore": 44.6,
    "healthGrade": "D"
   },
@@ -65,10 +73,12 @@
    "starsToday": 642,
    "headSha": "008c9faadacc821609ac5659a3596c0892139c66",
    "sources": 3144,
-   "lines": 657710,
+   "lines": 657666,
    "clones": 5300,
    "duplicatedLines": 67811,
    "percentage": 10.31,
+   "codePercentage": 4.41,
+   "codeSources": 1100,
    "healthScore": 44.9,
    "healthGrade": "D"
   },
@@ -79,10 +89,12 @@
    "starsToday": 683,
    "headSha": "0d794d0baac507fad9eed0131b55fb8e6f2af4e1",
    "sources": 3206,
-   "lines": 667148,
+   "lines": 667104,
    "clones": 5357,
    "duplicatedLines": 68261,
    "percentage": 10.23,
+   "codePercentage": 4.4,
+   "codeSources": 1104,
    "healthScore": 45.2,
    "healthGrade": "D"
   }
@@ -98,11 +110,11 @@
   "starsToday": 683,
   "defaultBranch": "main",
   "headSha": "0d794d0baac507fad9eed0131b55fb8e6f2af4e1",
-  "durationMs": 3494,
+  "durationMs": 1538,
   "total": {
    "sources": 3206,
-   "lines": 667148,
-   "tokens": 5099656,
+   "lines": 667104,
+   "tokens": 5099491,
    "clones": 5357,
    "duplicatedLines": 68261,
    "duplicatedTokens": 510887,
@@ -153,10 +165,10 @@
    {
     "format": "bash",
     "sources": 69,
-    "lines": 3766,
+    "lines": 3716,
     "clones": 10,
     "duplicatedLines": 417,
-    "percentage": 11.07
+    "percentage": 11.22
    },
    {
     "format": "text",
@@ -196,151 +208,246 @@
     "format": "javascript",
     "lines": 1417,
     "tokens": 11825,
-    "firstFile": {
+    "first": {
      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
      "start": 3,
      "end": 1419
     },
-    "secondFile": {
-     "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
-     "start": 3,
-     "end": 1419
-    }
+    "others": [
+     {
+      "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
+      "start": 3,
+      "end": 1419
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import crypto from \"node:crypto\";",
+      "import fs from \"node:fs\";",
+      "import path from \"node:path\";",
+      "import { spawnSync } from \"node:child_process\";",
+      "",
+      "const SCHEMA = \"openrig-telemetry-state-migration/v1\";",
+      "const rig = process.env.OPENRIG_RIG_BIN || \"rig\";",
+      "const HELP = `Usage: migrate-telemetry-state-0.5.9.mjs [options]",
+      "",
+      "No phase flag runs the read-only plan."
+     ],
+     "total": 1417
+    },
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 463,
     "tokens": 5706,
-    "firstFile": {
+    "first": {
      "name": "packages/daemon/specs/agents/shared/skills/process/context-engineering/SKILL.md:markdown",
      "start": 17,
      "end": 479
     },
-    "secondFile": {
-     "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
-     "start": 17,
-     "end": 479
-    }
+    "others": [
+     {
+      "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
+      "start": 17,
+      "end": 479
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Traditional Context Engineering — 2024–2025 Snapshot",
+      "",
+      "## Status: provisional historical research snapshot",
+      "",
+      "This skill is a provisional historical research snapshot of context-engineering practice as",
+      "published in 2024–2025. It is NOT normative. Do not apply it prescriptively to current frontier",
+      "models without re-verification. On any conflict, OpenRig current skills, explicit user rulings,",
+      "and directly measured OpenRig practice PREVAIL over this document. Treat these areas as",
+      "particularly suspect pending re-verification: compaction/summarization guidance, minimal-upfront",
+      "versus broad orientation, just-in-time lookup assumptions, fixed context ceilings, and"
+     ],
+     "total": 463
+    },
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 543,
     "tokens": 5694,
-    "firstFile": {
+    "first": {
      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-software-factory/references/worked-example.md:markdown",
      "start": 1,
      "end": 543
     },
-    "secondFile": {
-     "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
-     "start": 1,
-     "end": 543
-    }
+    "others": [
+     {
+      "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
+      "start": 1,
+      "end": 543
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Worked example: reviewed CSV validation",
+      "",
+      "Use this example to adapt reviewed work to a repository with CSV handling. Choose the simple team or queue loop first; the full Workflow files are optional. Ch…",
+      "",
+      "This is a concrete CSV-validation example for adaptation, not a requirement that an arbitrary repository become a CSV project or every outcome be split into tw…",
+      "",
+      "For the example only, repository root and work root are the same absolute directory, called `PROJECT_ROOT`. The selected project ID is `csv-tool`, mission is `…",
+      "",
+      "## Manual work and the queue loop",
+      ""
+     ],
+     "total": 543
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 123,
+    "tokens": 1963,
+    "first": {
+     "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
+     "start": 10,
+     "end": 132
+    },
+    "others": [
+     {
+      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
+      "start": 10,
+      "end": 132
+     },
+     {
+      "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
+      "start": 10,
+      "end": 132
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 345,
     "tokens": 3762,
-    "firstFile": {
+    "first": {
      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-architect/SKILL.md:markdown",
      "start": 27,
      "end": 371
     },
-    "secondFile": {
-     "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
-     "start": 27,
-     "end": 371
-    }
+    "others": [
+     {
+      "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
+      "start": 27,
+      "end": 371
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 264,
     "tokens": 3472,
-    "firstFile": {
+    "first": {
      "name": "packages/daemon/specs/agents/shared/skills/pods/orchestration-team/SKILL.md:markdown",
      "start": 6,
      "end": 269
     },
-    "secondFile": {
-     "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
-     "start": 6,
-     "end": 269
-    }
+    "others": [
+     {
+      "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
+      "start": 6,
+      "end": 269
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 533,
     "tokens": 3133,
-    "firstFile": {
+    "first": {
      "name": "packages/cli/src/lib/scope/scope-audit.ts",
      "start": 1,
      "end": 533
     },
-    "secondFile": {
-     "name": "packages/daemon/src/domain/scope/scope-audit.ts",
-     "start": 1,
-     "end": 533
-    }
+    "others": [
+     {
+      "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+      "start": 1,
+      "end": 533
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "markdown",
-    "lines": 123,
-    "tokens": 1963,
-    "firstFile": {
-     "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-     "start": 10,
-     "end": 132
+    "lines": 125,
+    "tokens": 1333,
+    "first": {
+     "name": "packages/daemon/assets/plugins/openrig-core/skills/messaging-the-human/SKILL.md:markdown",
+     "start": 20,
+     "end": 144
     },
-    "secondFile": {
-     "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
-     "start": 10,
-     "end": 132
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 123,
-    "tokens": 1963,
-    "firstFile": {
-     "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-     "start": 10,
-     "end": 132
-    },
-    "secondFile": {
-     "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
-     "start": 10,
-     "end": 132
-    }
+    "others": [
+     {
+      "name": "packages/daemon/specs/agents/shared/skills/core/messaging-the-human/SKILL.md:markdown",
+      "start": 20,
+      "end": 144
+     },
+     {
+      "name": "skills/_canonical/core/messaging-the-human/SKILL.md:markdown",
+      "start": 20,
+      "end": 144
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 149,
     "tokens": 1857,
-    "firstFile": {
+    "first": {
      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-software-factory/SKILL.md:markdown",
      "start": 21,
      "end": 169
     },
-    "secondFile": {
-     "name": "skills/_canonical/core/openrig-software-factory/SKILL.md:markdown",
-     "start": 21,
-     "end": 169
-    }
+    "others": [
+     {
+      "name": "skills/_canonical/core/openrig-software-factory/SKILL.md:markdown",
+      "start": 21,
+      "end": 169
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 214,
     "tokens": 1840,
-    "firstFile": {
+    "first": {
      "name": "packages/daemon/specs/agents/shared/skills/process/dogfood/SKILL.md:markdown",
      "start": 12,
      "end": 225
     },
-    "secondFile": {
-     "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
-     "start": 12,
-     "end": 225
-    }
+    "others": [
+     {
+      "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
+      "start": 12,
+      "end": 225
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -557,6 +664,387 @@
      "lines": 557
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 1104,
+   "lines": 263360,
+   "tokens": 1632444,
+   "clones": 762,
+   "duplicatedLines": 11593,
+   "duplicatedTokens": 70259,
+   "percentage": 4.4,
+   "percentageTokens": 4.3,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 856,
+     "lines": 214891,
+     "clones": 708,
+     "duplicatedLines": 10947,
+     "percentage": 5.09
+    },
+    {
+     "format": "tsx",
+     "sources": 178,
+     "lines": 36651,
+     "clones": 39,
+     "duplicatedLines": 445,
+     "percentage": 1.21
+    },
+    {
+     "format": "javascript",
+     "sources": 47,
+     "lines": 8739,
+     "clones": 14,
+     "duplicatedLines": 195,
+     "percentage": 2.23
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 888,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 0.68
+    },
+    {
+     "format": "bash",
+     "sources": 20,
+     "lines": 2017,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 533,
+     "tokens": 3133,
+     "first": {
+      "name": "packages/cli/src/lib/scope/scope-audit.ts",
+      "start": 1,
+      "end": 533
+     },
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+       "start": 1,
+       "end": 533
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import * as YAML from \"yaml\";",
+       "import { isMissionDotId, isSliceDotId } from \"./dot-id.js\";",
+       "import { isScaffoldPlaceholderText, hasAuthoredNumberedItem, isPristineScaffoldSection } from \"./scaffold-placeholder.js\";",
+       "",
+       "export type RailStatus = \"present\" | \"missing\" | \"malformed\" | \"readme-only\";",
+       "export type FindingSeverity = \"high\" | \"medium\" | \"low\" | \"info\";",
+       "export type FindingKind =",
+       "  | \"missing_progress\"",
+       "  | \"registration_ghost\"",
+       "  | \"missing_id\""
+      ],
+      "total": 533
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 230,
+     "tokens": 1280,
+     "first": {
+      "name": "packages/cli/src/host-registry.ts",
+      "start": 62,
+      "end": 291
+     },
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/hosts/hosts-registry-reader.ts",
+       "start": 21,
+       "end": 229
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "export interface SshHostEntry {",
+       "  id: string;",
+       "  /**",
+       "   * The observed, immutable self-id of the host this entry points at — the JOIN KEY.",
+       "   *",
+       "   * `id` is MY label for that machine; `hostId` is what that machine calls itself and stamps into",
+       "   * every envelope it sends. Optional because every entry that exists today predates the field:",
+       "   * absent means \"never learned\", which resolves exactly as it does now. Nothing populates this",
+       "   * automatically in this slice.",
+       "   */"
+      ],
+      "total": 230
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 11,
+     "tokens": 84,
+     "first": {
+      "name": "packages/cli/src/commands/attach.ts",
+      "start": 43,
+      "end": 53
+     },
+     "others": [
+      {
+       "name": "packages/cli/src/commands/bind.ts",
+       "start": 8,
+       "end": 18
+      },
+      {
+       "name": "packages/cli/src/commands/bootstrap.ts",
+       "start": 27,
+       "end": 37
+      },
+      {
+       "name": "packages/cli/src/commands/discover.ts",
+       "start": 8,
+       "end": 18
+      },
+      {
+       "name": "packages/cli/src/commands/launch.ts",
+       "start": 49,
+       "end": 59
+      },
+      {
+       "name": "packages/cli/src/commands/package.ts",
+       "start": 8,
+       "end": 19
+      },
+      {
+       "name": "packages/cli/src/commands/release.ts",
+       "start": 8,
+       "end": 18
+      },
+      {
+       "name": "packages/cli/src/commands/remove.ts",
+       "start": 8,
+       "end": 18
+      },
+      {
+       "name": "packages/cli/src/commands/requirements.ts",
+       "start": 8,
+       "end": 18
+      }
+     ],
+     "copies": 12,
+     "excerpt": {
+      "lines": [
+       "const cmd = new Command(\"attach\").description(\"Attach the current shell or agent into a rig node\");",
+       "const getDeps = () => depsOverride ?? { lifecycleDeps: realDeps(), clientFactory: (url: string) => new DaemonClient(url) };",
+       "",
+       "async function getClient(deps: StatusDeps): Promise<DaemonClient | null> {",
+       "  const status = await getDaemonStatus(deps.lifecycleDeps);",
+       "  if (!daemonStatusGuard(status)) return null;",
+       "  return deps.clientFactory(getDaemonUrl(status));",
+       "}",
+       "",
+       "cmd"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 111,
+     "tokens": 813,
+     "first": {
+      "name": "packages/cli/src/lib/permission-policy/policy-spec.ts",
+      "start": 9,
+      "end": 119
+     },
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/permission-policy/policy-spec.ts",
+       "start": 9,
+       "end": 119
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 156,
+     "tokens": 813,
+     "first": {
+      "name": "packages/cli/src/lib/scope/dot-id.ts",
+      "start": 18,
+      "end": 173
+     },
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/scope/dot-id.ts",
+       "start": 18,
+       "end": 173
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 215,
+     "tokens": 793,
+     "first": {
+      "name": "packages/cli/src/lib/permission-policy/policy-ref.ts",
+      "start": 17,
+      "end": 231
+     },
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/permission-policy/policy-ref.ts",
+       "start": 17,
+       "end": 231
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 62,
+     "tokens": 353,
+     "first": {
+      "name": "packages/cli/src/session-name.ts",
+      "start": 33,
+      "end": 94
+     },
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/session-name.ts",
+       "start": 138,
+       "end": 199
+      },
+      {
+       "name": "packages/ui/src/lib/session-name.ts",
+       "start": 33,
+       "end": 94
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 75,
+     "tokens": 507,
+     "first": {
+      "name": "packages/cli/src/commands/queue.ts",
+      "start": 834,
+      "end": 908
+     },
+     "others": [
+      {
+       "name": "packages/cli/src/commands/queue.ts",
+       "start": 929,
+       "end": 1001
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 77,
+     "tokens": 505,
+     "first": {
+      "name": "packages/cli/src/config-store.ts",
+      "start": 772,
+      "end": 848
+     },
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/user-settings/settings-store.ts",
+       "start": 683,
+       "end": 760
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 54,
+     "first": {
+      "name": "packages/cli/src/mcp-server.ts",
+      "start": 74,
+      "end": 83
+     },
+     "others": [
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 99,
+       "end": 108
+      },
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 114,
+       "end": 123
+      },
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 129,
+       "end": 138
+      },
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 163,
+       "end": 172
+      },
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 221,
+       "end": 230
+      },
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 261,
+       "end": 270
+      },
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 295,
+       "end": 304
+      },
+      {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 329,
+       "end": 338
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "packages/daemon/src/domain/scope/attestation-lineage.generated.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:37:53.234Z",
+  "jscpdVersion": "5.4.0"
  }
 }

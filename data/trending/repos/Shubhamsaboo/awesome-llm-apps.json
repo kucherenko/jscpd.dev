@@ -9,10 +9,12 @@
    "starsToday": 230,
    "headSha": "6272f8bd1fdeb75153d1a95d7fc761e26e477116",
    "sources": 1469,
-   "lines": 240063,
-   "clones": 586,
-   "duplicatedLines": 12341,
-   "percentage": 5.14,
+   "lines": 215735,
+   "clones": 613,
+   "duplicatedLines": 13038,
+   "percentage": 6.04,
+   "codePercentage": 6.2,
+   "codeSources": 797,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,250 +30,654 @@
   "starsToday": 230,
   "defaultBranch": "main",
   "headSha": "6272f8bd1fdeb75153d1a95d7fc761e26e477116",
-  "durationMs": 736,
+  "durationMs": 622,
   "total": {
    "sources": 1469,
-   "lines": 240063,
-   "tokens": 1263831,
-   "clones": 586,
-   "duplicatedLines": 12341,
-   "duplicatedTokens": 74328,
-   "percentage": 5.14,
-   "percentageTokens": 5.88
+   "lines": 215735,
+   "tokens": 1263703,
+   "clones": 613,
+   "duplicatedLines": 13038,
+   "duplicatedTokens": 74220,
+   "percentage": 6.04,
+   "percentageTokens": 5.87
   },
   "formats": [
    {
     "format": "python",
     "sources": 504,
-    "lines": 90669,
-    "clones": 197,
-    "duplicatedLines": 4986,
-    "percentage": 5.5
+    "lines": 85737,
+    "clones": 202,
+    "duplicatedLines": 5234,
+    "percentage": 6.1
    },
    {
     "format": "markdown",
     "sources": 281,
     "lines": 40051,
-    "clones": 80,
-    "duplicatedLines": 1252,
-    "percentage": 3.13
+    "clones": 90,
+    "duplicatedLines": 1415,
+    "percentage": 3.53
    },
    {
     "format": "javascript",
     "sources": 54,
-    "lines": 20798,
-    "clones": 76,
-    "duplicatedLines": 1731,
-    "percentage": 8.32
+    "lines": 20748,
+    "clones": 80,
+    "duplicatedLines": 1863,
+    "percentage": 8.98
    },
    {
     "format": "tsx",
     "sources": 220,
-    "lines": 33903,
-    "clones": 72,
-    "duplicatedLines": 1474,
-    "percentage": 4.35
+    "lines": 31002,
+    "clones": 74,
+    "duplicatedLines": 1546,
+    "percentage": 4.99
    },
    {
     "format": "markup",
     "sources": 23,
-    "lines": 8398,
-    "clones": 58,
-    "duplicatedLines": 1273,
-    "percentage": 15.16
+    "lines": 8252,
+    "clones": 55,
+    "duplicatedLines": 1263,
+    "percentage": 15.31
    },
    {
     "format": "typescript",
     "sources": 107,
-    "lines": 19160,
+    "lines": 13321,
     "clones": 36,
-    "duplicatedLines": 528,
-    "percentage": 2.76
+    "duplicatedLines": 521,
+    "percentage": 3.91
    },
    {
     "format": "css",
     "sources": 22,
     "lines": 6801,
-    "clones": 29,
-    "duplicatedLines": 393,
-    "percentage": 5.78
-   },
-   {
-    "format": "text",
-    "sources": 76,
-    "lines": 8161,
-    "clones": 13,
-    "duplicatedLines": 179,
-    "percentage": 2.19
+    "clones": 28,
+    "duplicatedLines": 411,
+    "percentage": 6.04
    },
    {
     "format": "json",
     "sources": 76,
-    "lines": 3718,
+    "lines": 3008,
+    "clones": 23,
+    "duplicatedLines": 436,
+    "percentage": 14.49
+   },
+   {
+    "format": "text",
+    "sources": 76,
+    "lines": 1796,
     "clones": 13,
-    "duplicatedLines": 261,
-    "percentage": 7.02
+    "duplicatedLines": 74,
+    "percentage": 4.12
    },
    {
     "format": "csv",
     "sources": 4,
     "lines": 1682,
     "clones": 7,
-    "duplicatedLines": 82,
-    "percentage": 4.88
+    "duplicatedLines": 89,
+    "percentage": 5.29
    }
   ],
   "topClones": [
    {
+    "format": "txt",
+    "lines": 71,
+    "tokens": 1663,
+    "first": {
+     "name": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/LICENSE.txt",
+     "start": 1,
+     "end": 71
+    },
+    "others": [
+     {
+      "name": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/LICENSE.txt",
+      "start": 1,
+      "end": 71
+     },
+     {
+      "name": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/LICENSE.txt",
+      "start": 1,
+      "end": 71
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "Apache License",
+      "Version 2.0, January 2004",
+      "http://www.apache.org/licenses/",
+      "",
+      "TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION",
+      "",
+      "1. Definitions.",
+      "",
+      "\"License\" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.",
+      ""
+     ],
+     "total": 71
+    },
+    "kind": "docs"
+   },
+   {
     "format": "markup",
     "lines": 213,
     "tokens": 1797,
-    "firstFile": {
+    "first": {
      "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/flights-app.html",
      "start": 230,
      "end": 442
     },
-    "secondFile": {
-     "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/hotels-app.html",
-     "start": 231,
-     "end": 443
-    }
+    "others": [
+     {
+      "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/hotels-app.html",
+      "start": 231,
+      "end": 443
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  width: 24px;",
+      "  height: 2px;",
+      "  background: var(--color-border);",
+      "  transition: background 0.3s ease;",
+      "}",
+      "",
+      ".step-line.active {",
+      "  background: linear-gradient(",
+      "    90deg,",
+      "    var(--color-lilac),"
+     ],
+     "total": 213
+    },
+    "kind": "markup"
    },
    {
     "format": "python",
     "lines": 322,
     "tokens": 1772,
-    "firstFile": {
+    "first": {
      "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/ai_real_estate_agent_team.py",
      "start": 267,
      "end": 588
     },
-    "secondFile": {
-     "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/local_ai_real_estate_agent_team.py",
-     "start": 265,
-     "end": 586
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 71,
-    "tokens": 1654,
-    "firstFile": {
-     "name": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/LICENSE.txt",
-     "start": 1,
-     "end": 71
+    "others": [
+     {
+      "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/local_ai_real_estate_agent_team.py",
+      "start": 265,
+      "end": 586
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      ")",
+      "",
+      "properties_data = direct_agent.find_properties_direct(",
+      "    city=city,",
+      "    state=state,",
+      "    user_criteria=user_criteria,",
+      "    selected_websites=selected_websites",
+      ")",
+      "",
+      "if \"error\" in properties_data:"
+     ],
+     "total": 322
     },
-    "secondFile": {
-     "name": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/LICENSE.txt",
-     "start": 1,
-     "end": 71
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 71,
-    "tokens": 1654,
-    "firstFile": {
-     "name": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/LICENSE.txt",
-     "start": 1,
-     "end": 71
-    },
-    "secondFile": {
-     "name": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/LICENSE.txt",
-     "start": 1,
-     "end": 71
-    }
+    "kind": "code"
    },
    {
     "format": "markup",
     "lines": 174,
     "tokens": 1396,
-    "firstFile": {
+    "first": {
      "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/flights-app.html",
      "start": 57,
      "end": 230
     },
-    "secondFile": {
-     "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/hotels-app.html",
-     "start": 58,
-     "end": 231
-    }
+    "others": [
+     {
+      "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/hotels-app.html",
+      "start": 58,
+      "end": 231
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
    },
    {
     "format": "python",
     "lines": 209,
     "tokens": 1212,
-    "firstFile": {
+    "first": {
      "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/ai_real_estate_agent_team.py",
      "start": 45,
      "end": 253
     },
-    "secondFile": {
-     "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/local_ai_real_estate_agent_team.py",
-     "start": 44,
-     "end": 252
-    }
+    "others": [
+     {
+      "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/local_ai_real_estate_agent_team.py",
+      "start": 44,
+      "end": 252
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "markup",
-    "lines": 140,
-    "tokens": 1197,
-    "firstFile": {
+    "lines": 123,
+    "tokens": 1018,
+    "first": {
      "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/flights-app.html",
-     "start": 176,
-     "end": 315
+     "start": 736,
+     "end": 858
     },
-    "secondFile": {
-     "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/hotels-app.html",
-     "start": 685,
-     "end": 821
-    }
+    "others": [
+     {
+      "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/hotels-app.html",
+      "start": 688,
+      "end": 810
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
    },
    {
     "format": "python",
     "lines": 233,
     "tokens": 896,
-    "firstFile": {
+    "first": {
      "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/9_2_agents_as_tools/agent.py",
      "start": 1,
      "end": 233
     },
-    "secondFile": {
-     "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/agents_as_tools.py",
-     "start": 1,
-     "end": 233
-    }
+    "others": [
+     {
+      "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/agents_as_tools.py",
+      "start": 1,
+      "end": 233
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 167,
     "tokens": 807,
-    "firstFile": {
+    "first": {
      "name": "rag_tutorials/deepseek_local_rag_agent/deepseek_rag_agent.py",
      "start": 360,
      "end": 526
     },
-    "secondFile": {
-     "name": "rag_tutorials/qwen_local_rag/qwen_local_rag_agent.py",
-     "start": 356,
-     "end": 522
-    }
+    "others": [
+     {
+      "name": "rag_tutorials/qwen_local_rag/qwen_local_rag_agent.py",
+      "start": 356,
+      "end": 522
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 208,
     "tokens": 718,
-    "firstFile": {
+    "first": {
      "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/9_1_parallel_execution/agent.py",
      "start": 1,
      "end": 208
     },
-    "secondFile": {
-     "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/parallel_execution.py",
-     "start": 1,
-     "end": 208
-    }
+    "others": [
+     {
+      "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/parallel_execution.py",
+      "start": 1,
+      "end": 208
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markup",
+    "lines": 52,
+    "tokens": 715,
+    "first": {
+     "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/flights-app.html",
+     "start": 6,
+     "end": 57
+    },
+    "others": [
+     {
+      "name": "generative_ui_agents/mcp-apps-generative-ui-showcase/mcp-server/apps/hotels-app.html",
+      "start": 6,
+      "end": 57
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
    }
-  ]
+  ],
+  "code": {
+   "sources": 797,
+   "lines": 140885,
+   "tokens": 708569,
+   "clones": 359,
+   "duplicatedLines": 8740,
+   "duplicatedTokens": 42900,
+   "percentage": 6.2,
+   "percentageTokens": 6.05,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 446,
+     "lines": 81962,
+     "clones": 195,
+     "duplicatedLines": 5138,
+     "percentage": 6.27
+    },
+    {
+     "format": "javascript",
+     "sources": 52,
+     "lines": 20701,
+     "clones": 80,
+     "duplicatedLines": 1863,
+     "percentage": 9
+    },
+    {
+     "format": "tsx",
+     "sources": 208,
+     "lines": 27270,
+     "clones": 60,
+     "duplicatedLines": 1367,
+     "percentage": 5.01
+    },
+    {
+     "format": "typescript",
+     "sources": 75,
+     "lines": 9944,
+     "clones": 24,
+     "duplicatedLines": 372,
+     "percentage": 3.74
+    },
+    {
+     "format": "bash",
+     "sources": 14,
+     "lines": 804,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "sql",
+     "sources": 1,
+     "lines": 30,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 322,
+     "tokens": 1772,
+     "first": {
+      "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/ai_real_estate_agent_team.py",
+      "start": 267,
+      "end": 588
+     },
+     "others": [
+      {
+       "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/local_ai_real_estate_agent_team.py",
+       "start": 265,
+       "end": 586
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       ")",
+       "",
+       "properties_data = direct_agent.find_properties_direct(",
+       "    city=city,",
+       "    state=state,",
+       "    user_criteria=user_criteria,",
+       "    selected_websites=selected_websites",
+       ")",
+       "",
+       "if \"error\" in properties_data:"
+      ],
+      "total": 322
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 209,
+     "tokens": 1212,
+     "first": {
+      "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/ai_real_estate_agent_team.py",
+      "start": 45,
+      "end": 253
+     },
+     "others": [
+      {
+       "name": "advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team/local_ai_real_estate_agent_team.py",
+       "start": 44,
+       "end": 252
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        model=Gemini(id=model_id, api_key=google_api_key),",
+       "        markdown=True,",
+       "        description=\"I am a real estate expert who helps find and analyze properties based on user preferences.\"",
+       "    )",
+       "    self.firecrawl = FirecrawlApp(api_key=firecrawl_api_key)",
+       "",
+       "def find_properties_direct(self, city: str, state: str, user_criteria: dict, selected_websites: list) -> dict:",
+       "    \"\"\"Direct Firecrawl integration for property search\"\"\"",
+       "    city_formatted = city.replace(' ', '-').lower()",
+       "    state_upper = state.upper() if state else ''"
+      ],
+      "total": 209
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 233,
+     "tokens": 896,
+     "first": {
+      "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/9_2_agents_as_tools/agent.py",
+      "start": 1,
+      "end": 233
+     },
+     "others": [
+      {
+       "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/agents_as_tools.py",
+       "start": 1,
+       "end": 233
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "from agents import Agent, Runner, function_tool",
+       "import asyncio",
+       "",
+       "# Define specialized research agent",
+       "research_agent = Agent(",
+       "    name=\"Research Specialist\",",
+       "    instructions=\"\"\"",
+       "    You are a research specialist. Provide detailed, well-researched information",
+       "    on any topic with proper analysis and insights. Focus on factual accuracy",
+       "    and comprehensive coverage."
+      ],
+      "total": 233
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 167,
+     "tokens": 807,
+     "first": {
+      "name": "rag_tutorials/deepseek_local_rag_agent/deepseek_rag_agent.py",
+      "start": 360,
+      "end": 526
+     },
+     "others": [
+      {
+       "name": "rag_tutorials/qwen_local_rag/qwen_local_rag_agent.py",
+       "start": 356,
+       "end": 522
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 208,
+     "tokens": 718,
+     "first": {
+      "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/9_1_parallel_execution/agent.py",
+      "start": 1,
+      "end": 208
+     },
+     "others": [
+      {
+       "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/9_multi_agent_orchestration/parallel_execution.py",
+       "start": 1,
+       "end": 208
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 188,
+     "tokens": 675,
+     "first": {
+      "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/10_tracing_observability/10_2_custom_tracing/agent.py",
+      "start": 1,
+      "end": 188
+     },
+     "others": [
+      {
+       "name": "ai_agent_framework_crash_course/openai_sdk_crash_course/10_tracing_observability/custom_tracing.py",
+       "start": 1,
+       "end": 188
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 151,
+     "tokens": 658,
+     "first": {
+      "name": "generative_ui_agents/ai-dashboard-canvas-agent/src/components/ui/chart.tsx",
+      "start": 165,
+      "end": 315
+     },
+     "others": [
+      {
+       "name": "generative_ui_agents/ai-shadcn-component-generator/apps/ui/src/components/ui/chart.tsx",
+       "start": 145,
+       "end": 292
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 81,
+     "tokens": 643,
+     "first": {
+      "name": "advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/agents/script_agent.py",
+      "start": 9,
+      "end": 89
+     },
+     "others": [
+      {
+       "name": "advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/beifong/tools/pipeline/script_agent.py",
+       "start": 10,
+       "end": 90
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 131,
+     "tokens": 624,
+     "first": {
+      "name": "advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/src/components/social/PostItem.js",
+      "start": 219,
+      "end": 349
+     },
+     "others": [
+      {
+       "name": "advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/web/src/components/social/StatsTab.js",
+       "start": 857,
+       "end": 987
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 60,
+     "tokens": 618,
+     "first": {
+      "name": "advanced_ai_agents/multi_agent_apps/ai_financial_coach_agent/ai_financial_coach_agent.py",
+      "start": 28,
+      "end": 87
+     },
+     "others": [
+      {
+       "name": "generative_ui_agents/ai-financial-coach-agent/agent/main.py",
+       "start": 24,
+       "end": 98
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "advanced_llm_apps/chat_with_X_tutorials/streaming_ai_chatbot/types.d.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:58:20.340Z",
+  "jscpdVersion": "5.4.0"
  }
 }

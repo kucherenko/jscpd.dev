@@ -9,73 +9,107 @@
    "starsToday": 997,
    "headSha": "109a3281f8de96a75e23b70b43c1e94358d09c09",
    "sources": 1404,
-   "lines": 243933,
+   "lines": 243889,
    "clones": 1651,
    "duplicatedLines": 22942,
    "percentage": 9.41,
+   "codePercentage": 3.46,
+   "codeSources": 938,
    "healthScore": 46.8,
+   "healthGrade": "D"
+  },
+  {
+   "date": "2026-10-07",
+   "rank": 3,
+   "stars": 6933,
+   "starsToday": 949,
+   "headSha": "9ab937b261a5bfdf253dd0f0d3bf371ffbdfb1fa",
+   "sources": 1439,
+   "lines": 247567,
+   "clones": 1698,
+   "duplicatedLines": 23534,
+   "percentage": 9.51,
+   "codePercentage": 3.29,
+   "codeSources": 941,
+   "healthScore": 46.6,
    "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-10-06",
-  "generatedAt": "2026-10-06T05:31:17.340Z",
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-07T05:32:04.506Z",
   "name": "boykopovar/AnyPS5",
   "url": "https://github.com/boykopovar/AnyPS5",
   "description": "Tool for automatic PS5 executables porting to Linux and Windows",
   "language": "C++",
-  "stars": 5099,
-  "starsToday": 997,
+  "stars": 6933,
+  "starsToday": 949,
   "defaultBranch": "main",
-  "headSha": "109a3281f8de96a75e23b70b43c1e94358d09c09",
-  "durationMs": 2022,
+  "headSha": "9ab937b261a5bfdf253dd0f0d3bf371ffbdfb1fa",
+  "durationMs": 1355,
   "total": {
-   "sources": 1404,
-   "lines": 243933,
-   "tokens": 2734128,
-   "clones": 1651,
-   "duplicatedLines": 22942,
-   "duplicatedTokens": 257602,
-   "percentage": 9.41,
-   "percentageTokens": 9.42
+   "sources": 1439,
+   "lines": 247567,
+   "tokens": 2813657,
+   "clones": 1698,
+   "duplicatedLines": 23534,
+   "duplicatedTokens": 263187,
+   "percentage": 9.51,
+   "percentageTokens": 9.35
   },
   "formats": [
    {
     "format": "cpp",
-    "sources": 909,
-    "lines": 202558,
-    "clones": 1516,
-    "duplicatedLines": 20822,
-    "percentage": 10.28
+    "sources": 931,
+    "lines": 204845,
+    "clones": 1562,
+    "duplicatedLines": 21413,
+    "percentage": 10.45
    },
    {
     "format": "cpp-header",
-    "sources": 365,
-    "lines": 31299,
+    "sources": 367,
+    "lines": 31730,
     "clones": 122,
     "duplicatedLines": 1986,
-    "percentage": 6.35
+    "percentage": 6.26
    },
    {
     "format": "txt",
-    "sources": 63,
-    "lines": 5192,
-    "clones": 8,
-    "duplicatedLines": 102,
-    "percentage": 1.96
+    "sources": 66,
+    "lines": 5437,
+    "clones": 7,
+    "duplicatedLines": 89,
+    "percentage": 1.64
    },
    {
     "format": "python",
-    "sources": 25,
-    "lines": 2623,
-    "clones": 5,
-    "duplicatedLines": 32,
-    "percentage": 1.22
+    "sources": 30,
+    "lines": 3020,
+    "clones": 6,
+    "duplicatedLines": 39,
+    "percentage": 1.29
+   },
+   {
+    "format": "c",
+    "sources": 2,
+    "lines": 179,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 3.91
    },
    {
     "format": "bash",
     "sources": 10,
-    "lines": 698,
+    "lines": 648,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 10,
+    "lines": 590,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -89,17 +123,9 @@
     "percentage": 0
    },
    {
-    "format": "markdown",
-    "sources": 10,
-    "lines": 482,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "cmake",
-    "sources": 6,
-    "lines": 291,
+    "sources": 8,
+    "lines": 328,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -107,15 +133,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "c-header",
-    "sources": 3,
-    "lines": 106,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -124,170 +142,510 @@
   "topClones": [
    {
     "format": "cpp",
+    "lines": 30,
+    "tokens": 487,
+    "first": {
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomics.cpp",
+     "start": 63,
+     "end": 92
+    },
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+      "start": 131,
+      "end": 160
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+      "start": 123,
+      "end": 152
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+      "start": 121,
+      "end": 150
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+      "start": 138,
+      "end": 167
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dpp16Operands.cpp",
+      "start": 130,
+      "end": 159
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DsPermute.cpp",
+      "start": 121,
+      "end": 150
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+      "start": 320,
+      "end": 349
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32OutputModifier.cpp",
+      "start": 140,
+      "end": 169
+     }
+    ],
+    "copies": 45,
+    "excerpt": {
+     "lines": [
+      "    Require(actual == expected, std::string(\"buffer atomics: lane \") + std::to_string(tid) + \" \" + name + \" is \" + Hex(actual) + \", expected \" + Hex(expected));",
+      "}",
+      "",
+      "void Run(AgcDriver::VulkanDevice& device) {",
+      "    for (std::uint32_t tid = 0; tid < Threads; ++tid) Fill(tid, &Input[tid * Inputs]);",
+      "    Output.fill(0xdeadbeefu);",
+      "    std::vector<std::uint32_t> userData(8, 0u);",
+      "    const auto input = BufferDescriptor(Input.data(), static_cast<std::uint32_t>(Input.size() * 4u));",
+      "    const auto output = BufferDescriptor(Output.data(), static_cast<std::uint32_t>(Output.size() * 4u));",
+      "    std::copy(input.begin(), input.end(), userData.begin());"
+     ],
+     "total": 30
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 48,
+    "tokens": 1415,
+    "first": {
+     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+     "start": 660,
+     "end": 707
+    },
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1552,
+      "end": 1598
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1839,
+      "end": 1886
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 2137,
+      "end": 2184
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 2417,
+      "end": 2464
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 2697,
+      "end": 2744
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "{0x017e, 0x00000000}, {0x017f, 0x00000000}, {0x0180, 0x00000000}, {0x0181, 0x00000000},",
+      "{0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000}, {0x0185, 0x00000000},",
+      "{0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000}, {0x0189, 0x00000000},",
+      "{0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000}, {0x018d, 0x00000000},",
+      "{0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000}, {0x0113, 0x3f800000},",
+      "{0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000}, {0x0094, 0x80000000},",
+      "{0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0115, 0x3f800000},",
+      "{0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000}, {0x0118, 0x00000000},",
+      "{0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000}, {0x00b6, 0x00000000},",
+      "{0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000}, {0x011f, 0x3f800000},"
+     ],
+     "total": 48
+    },
+    "excerptSecond": {
+     "lines": [
+      "{0x0181, 0x00000000}, {0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000},",
+      "{0x0185, 0x00000000}, {0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000},",
+      "{0x0189, 0x00000000}, {0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000},",
+      "{0x018d, 0x00000000}, {0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000},",
+      "{0x0113, 0x3f800000}, {0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000},",
+      "{0x0094, 0x80000000}, {0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000},",
+      "{0x0115, 0x3f800000}, {0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000},",
+      "{0x0118, 0x00000000}, {0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000},",
+      "{0x00b6, 0x00000000}, {0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000},",
+      "{0x011f, 0x3f800000}, {0x011c, 0x00000000}, {0x011e, 0x00000000}, {0x0120, 0x00000000},"
+     ],
+     "total": 47
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 17,
+    "tokens": 119,
+    "first": {
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+     "start": 10,
+     "end": 26
+    },
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+      "start": 10,
+      "end": 26
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+      "start": 10,
+      "end": 26
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+      "start": 10,
+      "end": 26
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionResultModifiers.cpp",
+      "start": 10,
+      "end": 26
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dpp16Operands.cpp",
+      "start": 10,
+      "end": 26
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DsPermute.cpp",
+      "start": 10,
+      "end": 26
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+      "start": 10,
+      "end": 26
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32OutputModifier.cpp",
+      "start": 10,
+      "end": 26
+     }
+    ],
+    "copies": 47,
+    "excerpt": {
+     "lines": [
+      "#include <cstdio>",
+      "#include <iostream>",
+      "#include <string>",
+      "#include <vector>",
+      "",
+      "namespace {",
+      "",
+      "using AgcDriver::Graphics::Require;",
+      "using ShaderRecompiler::ShaderStage;",
+      ""
+     ],
+     "total": 17
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 41,
+    "tokens": 1199,
+    "first": {
+     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+     "start": 1007,
+     "end": 1047
+    },
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1287,
+      "end": 1327
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1899,
+      "end": 1939
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 2197,
+      "end": 2237
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 2477,
+      "end": 2517
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 21,
+    "tokens": 90,
+    "first": {
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomics.cpp",
+     "start": 1,
+     "end": 21
+    },
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionResultModifiers.cpp",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dpp16Operands.cpp",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DsPermute.cpp",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+      "start": 1,
+      "end": 21
+     }
+    ],
+    "copies": 53,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
+    "lines": 20,
+    "tokens": 212,
+    "first": {
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+     "start": 112,
+     "end": 131
+    },
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+      "start": 104,
+      "end": 123
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+      "start": 119,
+      "end": 138
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionResultModifiers.cpp",
+      "start": 119,
+      "end": 138
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32OutputModifier.cpp",
+      "start": 121,
+      "end": 140
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32ResultClamp.cpp",
+      "start": 120,
+      "end": 139
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64NanConversions.cpp",
+      "start": 97,
+      "end": 114
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Float16TernaryClamp.cpp",
+      "start": 112,
+      "end": 131
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/PackedIntegerClamp.cpp",
+      "start": 119,
+      "end": 138
+     }
+    ],
+    "copies": 21,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
     "lines": 32,
     "tokens": 4161,
-    "firstFile": {
+    "first": {
      "name": "core/libs/prx/libSceAgcDriver/tests/execution/LdsIntegerAtomics.cpp",
      "start": 160,
      "end": 191
     },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/LdsIntegerAtomics.cpp",
-     "start": 194,
-     "end": 225
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 33,
-    "tokens": 3237,
-    "firstFile": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferIntegerAtomics.cpp",
-     "start": 152,
-     "end": 184
-    },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferIntegerAtomics.cpp",
-     "start": 186,
-     "end": 218
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 96,
-    "tokens": 2946,
-    "firstFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 899,
-     "end": 994
-    },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 1179,
-     "end": 1273
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 109,
-    "tokens": 2576,
-    "firstFile": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/VopcCompareTable.cpp",
-     "start": 26,
-     "end": 134
-    },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/VopcCompareTable.cpp",
-     "start": 283,
-     "end": 391
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 81,
-    "tokens": 2540,
-    "firstFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 871,
-     "end": 951
-    },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 2619,
-     "end": 2698
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 76,
-    "tokens": 2393,
-    "firstFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 876,
-     "end": 951
-    },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 2344,
-     "end": 2418
-    }
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/LdsIntegerAtomics.cpp",
+      "start": 194,
+      "end": 225
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "cpp-header",
     "lines": 64,
     "tokens": 2006,
-    "firstFile": {
+    "first": {
      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
      "start": 888,
      "end": 951
     },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 1778,
-     "end": 1841
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 64,
-    "tokens": 2006,
-    "firstFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 888,
-     "end": 951
-    },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-     "start": 2076,
-     "end": 2138
-    }
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1778,
+      "end": 1841
+     },
+     {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 2076,
+      "end": 2138
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "cpp",
-    "lines": 26,
-    "tokens": 1740,
-    "firstFile": {
-     "name": "core/libs/tests/GuestAjm.cpp",
-     "start": 35,
-     "end": 60
+    "lines": 19,
+    "tokens": 210,
+    "first": {
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+     "start": 113,
+     "end": 131
     },
-    "secondFile": {
-     "name": "core/libs/tests/GuestAudiodec.cpp",
-     "start": 51,
-     "end": 76
-    }
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+      "start": 103,
+      "end": 121
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Arithmetic.cpp",
+      "start": 101,
+      "end": 119
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Conversions.cpp",
+      "start": 101,
+      "end": 119
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Division.cpp",
+      "start": 102,
+      "end": 120
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64DivisionModifiers.cpp",
+      "start": 102,
+      "end": 120
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Rounding.cpp",
+      "start": 101,
+      "end": 119
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Float16Modifiers.cpp",
+      "start": 122,
+      "end": 140
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FormatD16.cpp",
+      "start": 110,
+      "end": 128
+     }
+    ],
+    "copies": 19,
+    "kind": "tests"
    },
    {
     "format": "cpp",
-    "lines": 148,
-    "tokens": 1699,
-    "firstFile": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalAtomics.cpp",
-     "start": 283,
-     "end": 430
+    "lines": 54,
+    "tokens": 611,
+    "first": {
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatD16Loads.cpp",
+     "start": 485,
+     "end": 538
     },
-    "secondFile": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalAtomics64.cpp",
-     "start": 247,
-     "end": 394
-    }
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoads.cpp",
+      "start": 97,
+      "end": 150
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoadsX2X3.cpp",
+      "start": 96,
+      "end": 149
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoadsX4.cpp",
+      "start": 96,
+      "end": 149
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoads.cpp",
+      "start": 97,
+      "end": 150
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoadsX2X3.cpp",
+      "start": 96,
+      "end": 149
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoadsX4.cpp",
+      "start": 96,
+      "end": 149
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
    }
   ],
   "health": {
-   "score": 46.8,
+   "score": 46.6,
    "grade": "D",
    "size": {
-    "lines": 237753,
-    "files": 1319,
+    "lines": 241073,
+    "files": 1350,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 9.6,
-     "adjusted": 9.6,
-     "lines": 22840,
+     "value": 9.7,
+     "adjusted": 9.7,
+     "lines": 23445,
      "halfLife": 8.5,
      "formats": [
       "cpp",
@@ -295,26 +653,26 @@
       "python",
       "bash",
       "cmake",
+      "c",
       "perl",
-      "c-header",
-      "c"
+      "c-header"
      ],
      "excluded": [
       "text",
       "data"
      ],
      "weight": 1,
-     "score": 45.9
+     "score": 45.4
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 53.6,
-     "adjusted": 53.4,
-     "lines": 127492,
+     "value": 53.3,
+     "adjusted": 53,
+     "lines": 128517,
      "halfLife": 50,
      "weight": 1,
-     "score": 47.7
+     "score": 47.9
     }
    ],
    "skipped": [
@@ -325,8 +683,8 @@
    ]
   },
   "complexity": {
-   "total": 53019,
-   "mean": 40.2,
+   "total": 53921,
+   "mean": 39.9,
    "files": [
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/Texture.cpp",
@@ -336,9 +694,9 @@
     },
     {
      "path": "core/shader/recompiler/RdnaDecoder/src/RdnaVectorOpDecoder.cpp",
-     "complexity": 959,
-     "lines": 2424,
-     "bytes": 98830
+     "complexity": 971,
+     "lines": 2441,
+     "bytes": 99370
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/ShaderResources.cpp",
@@ -354,9 +712,9 @@
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Execution/src/VulkanDevice.cpp",
-     "complexity": 852,
-     "lines": 3608,
-     "bytes": 233660
+     "complexity": 853,
+     "lines": 3616,
+     "bytes": 234003
     },
     {
      "path": "core/shader/recompiler/RdnaDecoder/src/RdnaOpcode.cpp",
@@ -366,9 +724,9 @@
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/GuestBufferMemory.cpp",
-     "complexity": 734,
-     "lines": 2591,
-     "bytes": 150899
+     "complexity": 736,
+     "lines": 2604,
+     "bytes": 151274
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/Draw.cpp",
@@ -393,9 +751,416 @@
   "deadCode": {
    "percentage": 0,
    "findings": 0,
-   "files": 25,
+   "files": 29,
    "byCategory": [],
    "largest": []
-  }
+  },
+  "code": {
+   "sources": 941,
+   "lines": 168053,
+   "tokens": 1615747,
+   "clones": 470,
+   "duplicatedLines": 5532,
+   "duplicatedTokens": 78387,
+   "percentage": 3.29,
+   "percentageTokens": 4.85,
+   "formats": [
+    {
+     "format": "cpp",
+     "sources": 561,
+     "lines": 135022,
+     "clones": 347,
+     "duplicatedLines": 3539,
+     "percentage": 2.62
+    },
+    {
+     "format": "cpp-header",
+     "sources": 361,
+     "lines": 31128,
+     "clones": 122,
+     "duplicatedLines": 1986,
+     "percentage": 6.38
+    },
+    {
+     "format": "c",
+     "sources": 1,
+     "lines": 165,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 4.24
+    },
+    {
+     "format": "python",
+     "sources": 5,
+     "lines": 806,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c-header",
+     "sources": 3,
+     "lines": 114,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "cpp-header",
+     "lines": 48,
+     "tokens": 1415,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 660,
+      "end": 707
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1552,
+       "end": 1598
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1839,
+       "end": 1886
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2137,
+       "end": 2184
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2417,
+       "end": 2464
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2697,
+       "end": 2744
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "{0x017e, 0x00000000}, {0x017f, 0x00000000}, {0x0180, 0x00000000}, {0x0181, 0x00000000},",
+       "{0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000}, {0x0185, 0x00000000},",
+       "{0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000}, {0x0189, 0x00000000},",
+       "{0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000}, {0x018d, 0x00000000},",
+       "{0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000}, {0x0113, 0x3f800000},",
+       "{0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000}, {0x0094, 0x80000000},",
+       "{0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0115, 0x3f800000},",
+       "{0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000}, {0x0118, 0x00000000},",
+       "{0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000}, {0x00b6, 0x00000000},",
+       "{0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000}, {0x011f, 0x3f800000},"
+      ],
+      "total": 48
+     },
+     "excerptSecond": {
+      "lines": [
+       "{0x0181, 0x00000000}, {0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000},",
+       "{0x0185, 0x00000000}, {0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000},",
+       "{0x0189, 0x00000000}, {0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000},",
+       "{0x018d, 0x00000000}, {0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000},",
+       "{0x0113, 0x3f800000}, {0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000},",
+       "{0x0094, 0x80000000}, {0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000},",
+       "{0x0115, 0x3f800000}, {0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000},",
+       "{0x0118, 0x00000000}, {0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000},",
+       "{0x00b6, 0x00000000}, {0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000},",
+       "{0x011f, 0x3f800000}, {0x011c, 0x00000000}, {0x011e, 0x00000000}, {0x0120, 0x00000000},"
+      ],
+      "total": 47
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 41,
+     "tokens": 1199,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1007,
+      "end": 1047
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1287,
+       "end": 1327
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1899,
+       "end": 1939
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2197,
+       "end": 2237
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2477,
+       "end": 2517
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "{0x008b, 0x00000000}, {0x010b, 0x00000000}, {0x000b, 0x00000000}, {0x0224, 0x00000000},",
+       "{0x0225, 0x00000000}, {0x0226, 0x00000000}, {0x0227, 0x00000000}, {0x0107, 0xffff0000},",
+       "{0x0087, 0x0000ffff}, {0x0007, 0x0000ffff}, {0x020c, 0x00000000}, {0x020d, 0x00000000},",
+       "{0x00c8, 0x00000000}, {0x00c9, 0x00000000}, {0x0088, 0x00000000}, {0x0089, 0x00000000},",
+       "{0x0108, 0x00000000}, {0x0109, 0x00000000}, {0x0148, 0x00000000}, {0x0149, 0x00000000},",
+       "{0x0008, 0x00000000}, {0x0009, 0x00000000}, {0x0280, 0x00000000}, {0x00b2, 0x00000000},",
+       "{0x00b3, 0x00000000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0132, 0x00000000},",
+       "{0x0133, 0x00000000}, {0x0134, 0x00000000}, {0x0135, 0x00000000}, {0x0032, 0x00000000},",
+       "{0x0033, 0x00000000}, {0x0034, 0x00000000}, {0x0035, 0x00000000}, {0x0082, 0x00000000},",
+       "{0x0083, 0x00000000}, {0x0102, 0x00000000}, {0x0103, 0x00000000}, {0x0240, 0x00000000},"
+      ],
+      "total": 41
+     },
+     "excerptSecond": {
+      "lines": [
+       "{0x010b, 0x00000000}, {0x000b, 0x00000000}, {0x0224, 0x00000000}, {0x0225, 0x00000000},",
+       "{0x0226, 0x00000000}, {0x0227, 0x00000000}, {0x0107, 0xffff0000}, {0x0087, 0x0000ffff},",
+       "{0x0007, 0x0000ffff}, {0x020c, 0x00000000}, {0x020d, 0x00000000}, {0x00c8, 0x00000000},",
+       "{0x00c9, 0x00000000}, {0x0088, 0x00000000}, {0x0089, 0x00000000}, {0x0108, 0x00000000},",
+       "{0x0109, 0x00000000}, {0x0148, 0x00000000}, {0x0149, 0x00000000}, {0x0008, 0x00000000},",
+       "{0x0009, 0x00000000}, {0x0280, 0x00000000}, {0x00b2, 0x00000000}, {0x00b3, 0x00000000},",
+       "{0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0132, 0x00000000}, {0x0133, 0x00000000},",
+       "{0x0134, 0x00000000}, {0x0135, 0x00000000}, {0x0032, 0x00000000}, {0x0033, 0x00000000},",
+       "{0x0034, 0x00000000}, {0x0035, 0x00000000}, {0x0082, 0x00000000}, {0x0083, 0x00000000},",
+       "{0x0102, 0x00000000}, {0x0103, 0x00000000}, {0x0240, 0x00000000}, {0x0241, 0x00000000},"
+      ],
+      "total": 41
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 64,
+     "tokens": 2006,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 888,
+      "end": 951
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1778,
+       "end": 1841
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2076,
+       "end": 2138
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "{0x0309, 0x00000000}, {0x030a, 0x00000000}, {0x030b, 0x00000000}, {0x030c, 0x00000000},",
+       "{0x030d, 0x00000000}, {0x030e, 0xffffffff}, {0x030f, 0xffffffff}, {0x0311, 0x01fd2002},",
+       "{0x0312, 0x03ff0080}, {0x0105, 0x00000000}, {0x0106, 0x00000000}, {0x0107, 0x00000000},",
+       "{0x0108, 0x00000000}, {0x01e0, 0x20010001}, {0x01e1, 0x20010001}, {0x01e2, 0x20010001},",
+       "{0x01e3, 0x20010001}, {0x01e4, 0x20010001}, {0x01e5, 0x20010001}, {0x01e6, 0x20010001},",
+       "{0x01e7, 0x20010001}, {0x0020, 0x00000000}, {0x0021, 0x00000000}, {0x0084, 0x00000000},",
+       "{0x0085, 0x20002000}, {0x0086, 0x00000000}, {0x0087, 0x20002000}, {0x0088, 0x00000000},",
+       "{0x0089, 0x20002000}, {0x008a, 0x00000000}, {0x008b, 0x20002000}, {0x00db, 0x00000000},",
+       "{0x0008, 0x00000000}, {0x0009, 0x00000000}, {0x0010, 0x80000180}, {0x0011, 0x20000180},",
+       "{0x0012, 0x00000000}, {0x0013, 0x00000000}, {0x0014, 0x00000000}, {0x0015, 0x00000000},"
+      ],
+      "total": 64
+     },
+     "excerptSecond": {
+      "lines": [
+       "{0x0308, 0x00000000}, {0x0309, 0x00000000}, {0x030a, 0x00000000}, {0x030b, 0x00000000},",
+       "{0x030c, 0x00000000}, {0x030d, 0x00000000}, {0x030e, 0xffffffff}, {0x030f, 0xffffffff},",
+       "{0x0311, 0x01fd2002}, {0x0312, 0x03ff0080}, {0x0105, 0x00000000}, {0x0106, 0x00000000},",
+       "{0x0107, 0x00000000}, {0x0108, 0x00000000}, {0x01e0, 0x20010001}, {0x01e1, 0x20010001},",
+       "{0x01e2, 0x20010001}, {0x01e3, 0x20010001}, {0x01e4, 0x20010001}, {0x01e5, 0x20010001},",
+       "{0x01e6, 0x20010001}, {0x01e7, 0x20010001}, {0x0020, 0x00000000}, {0x0021, 0x00000000},",
+       "{0x0084, 0x00000000}, {0x0085, 0x20002000}, {0x0086, 0x00000000}, {0x0087, 0x20002000},",
+       "{0x0088, 0x00000000}, {0x0089, 0x20002000}, {0x008a, 0x00000000}, {0x008b, 0x20002000},",
+       "{0x00db, 0x00000000}, {0x0008, 0x00000000}, {0x0009, 0x00000000}, {0x0010, 0x80000180},",
+       "{0x0011, 0x20000180}, {0x0012, 0x00000000}, {0x0013, 0x00000000}, {0x0014, 0x00000000},"
+      ],
+      "total": 64
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 96,
+     "tokens": 2946,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 899,
+      "end": 994
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1179,
+       "end": 1273
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 81,
+     "tokens": 2540,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 871,
+      "end": 951
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2619,
+       "end": 2698
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 76,
+     "tokens": 2393,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 876,
+      "end": 951
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2344,
+       "end": 2418
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 49,
+     "tokens": 1529,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 903,
+      "end": 951
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1505,
+       "end": 1553
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 44,
+     "tokens": 1309,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 664,
+      "end": 707
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 950,
+       "end": 994
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 17,
+     "tokens": 423,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1054,
+      "end": 1070
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2244,
+       "end": 2260
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2524,
+       "end": 2540
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2804,
+       "end": 2820
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 183,
+     "tokens": 1211,
+     "first": {
+      "name": "core/libs/prx/libSceAvPlayer.native/Export.cpp",
+      "start": 1,
+      "end": 183
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAvPlayer/Export.cpp",
+       "start": 1,
+       "end": 183
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:39:45.704Z",
+  "jscpdVersion": "5.4.0"
  }
 }

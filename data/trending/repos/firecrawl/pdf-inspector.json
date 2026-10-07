@@ -8,11 +8,13 @@
    "stars": 17674,
    "starsToday": 228,
    "headSha": "23cf1ad7b37eec6e3a21df61f8e6d5dce66c46bd",
-   "sources": 125,
-   "lines": 115477,
-   "clones": 525,
-   "duplicatedLines": 6586,
-   "percentage": 5.7,
+   "sources": 126,
+   "lines": 113659,
+   "clones": 587,
+   "duplicatedLines": 7536,
+   "percentage": 6.63,
+   "codePercentage": 6.18,
+   "codeSources": 70,
    "healthScore": null,
    "healthGrade": null
   },
@@ -22,11 +24,13 @@
    "stars": 18078,
    "starsToday": 541,
    "headSha": "65b7fa152ba9a728ad8b56e282e74559d81c0a40",
-   "sources": 125,
-   "lines": 115543,
-   "clones": 525,
-   "duplicatedLines": 6586,
-   "percentage": 5.7,
+   "sources": 126,
+   "lines": 113725,
+   "clones": 587,
+   "duplicatedLines": 7536,
+   "percentage": 6.63,
+   "codePercentage": 6.17,
+   "codeSources": 70,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,94 +46,94 @@
   "starsToday": 541,
   "defaultBranch": "main",
   "headSha": "65b7fa152ba9a728ad8b56e282e74559d81c0a40",
-  "durationMs": 936,
+  "durationMs": 1143,
   "total": {
-   "sources": 125,
-   "lines": 115543,
-   "tokens": 748928,
-   "clones": 525,
-   "duplicatedLines": 6586,
-   "duplicatedTokens": 44304,
-   "percentage": 5.7,
-   "percentageTokens": 5.92
+   "sources": 126,
+   "lines": 113725,
+   "tokens": 751155,
+   "clones": 587,
+   "duplicatedLines": 7536,
+   "duplicatedTokens": 47251,
+   "percentage": 6.63,
+   "percentageTokens": 6.29
   },
   "formats": [
    {
     "format": "rust",
     "sources": 57,
-    "lines": 104936,
-    "clones": 511,
-    "duplicatedLines": 6291,
-    "percentage": 6
+    "lines": 104624,
+    "clones": 569,
+    "duplicatedLines": 7243,
+    "percentage": 6.92
    },
    {
     "format": "yaml",
     "sources": 6,
     "lines": 1108,
     "clones": 7,
-    "duplicatedLines": 79,
-    "percentage": 7.13
+    "duplicatedLines": 86,
+    "percentage": 7.76
    },
    {
     "format": "markdown",
     "sources": 19,
     "lines": 2577,
-    "clones": 3,
-    "duplicatedLines": 115,
-    "percentage": 4.46
+    "clones": 5,
+    "duplicatedLines": 134,
+    "percentage": 5.2
    },
    {
     "format": "python",
-    "sources": 9,
-    "lines": 2244,
-    "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 0.27
-   },
-   {
-    "format": "bash",
-    "sources": 16,
-    "lines": 1582,
-    "clones": 1,
-    "duplicatedLines": 64,
-    "percentage": 4.05
+    "sources": 10,
+    "lines": 2439,
+    "clones": 3,
+    "duplicatedLines": 33,
+    "percentage": 1.35
    },
    {
     "format": "markup",
     "sources": 2,
     "lines": 1184,
     "clones": 1,
-    "duplicatedLines": 8,
-    "percentage": 0.68
+    "duplicatedLines": 9,
+    "percentage": 0.76
+   },
+   {
+    "format": "bash",
+    "sources": 16,
+    "lines": 724,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 0.97
    },
    {
     "format": "text",
     "sources": 3,
-    "lines": 383,
+    "lines": 91,
     "clones": 1,
-    "duplicatedLines": 23,
-    "percentage": 6.01
-   },
-   {
-    "format": "toml",
-    "sources": 5,
-    "lines": 550,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
+    "duplicatedLines": 24,
+    "percentage": 26.37
    },
    {
     "format": "javascript",
     "sources": 4,
-    "lines": 539,
+    "lines": 450,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "typescript",
-    "sources": 2,
-    "lines": 210,
+    "format": "toml",
+    "sources": 5,
+    "lines": 207,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,152 +144,658 @@
     "format": "markdown",
     "lines": 80,
     "tokens": 625,
-    "firstFile": {
+    "first": {
      "name": "AGENTS.md:markdown",
      "start": 1,
      "end": 80
     },
-    "secondFile": {
-     "name": "CLAUDE.md:markdown",
-     "start": 1,
-     "end": 80
-    }
+    "others": [
+     {
+      "name": "CLAUDE.md:markdown",
+      "start": 1,
+      "end": 80
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# pdf-inspector",
+      "",
+      "Fast PDF text extraction to structured Markdown. CLI binary: `pdf2md`. Detection binary: `detect-pdf`.",
+      "",
+      "## Build & Test",
+      "",
+      "```bash",
+      "cargo fmt                                    # format",
+      "cargo clippy -- -D warnings                  # lint (enforced, zero warnings)",
+      "cargo test                                   # unit + integration tests (267+ unit, 73+ integration)"
+     ],
+     "total": 80
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 17,
+    "tokens": 148,
+    "first": {
+     "name": "src/tables/detect_lines.rs",
+     "start": 2425,
+     "end": 2441
+    },
+    "others": [
+     {
+      "name": "src/tables/detect_lines.rs",
+      "start": 2478,
+      "end": 2494
+     },
+     {
+      "name": "src/tables/detect_lines.rs",
+      "start": 2504,
+      "end": 2520
+     },
+     {
+      "name": "src/tables/detect_lines.rs",
+      "start": 2531,
+      "end": 2547
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "    make_hline(440.0, 80.0, 420.0, 1),",
+      "];",
+      "let items = vec![",
+      "    make_item(\"Model\", 100.0, 490.0, 1),",
+      "    make_item(\"Accuracy\", 220.0, 490.0, 1),",
+      "    make_item(\"Latency\", 340.0, 490.0, 1),",
+      "    make_item(\"Alpha\", 100.0, 465.0, 1),",
+      "    make_item(\"91.2\", 220.0, 465.0, 1),",
+      "    make_item(\"12\", 340.0, 465.0, 1),",
+      "    make_item(\"Beta\", 100.0, 450.0, 1),"
+     ],
+     "total": 17
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 33,
+    "tokens": 196,
+    "first": {
+     "name": "src/detector.rs",
+     "start": 3183,
+     "end": 3215
+    },
+    "others": [
+     {
+      "name": "src/detector.rs",
+      "start": 3426,
+      "end": 3458
+     },
+     {
+      "name": "src/detector.rs",
+      "start": 3683,
+      "end": 3715
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "let content_id = doc.add_object(Object::Stream(lopdf::Stream::new(",
+      "    dictionary! {},",
+      "    content_data.to_vec(),",
+      ")));",
+      "let resources = dictionary! {",
+      "    \"Font\" => dictionary! {",
+      "        \"F1\" => Object::Reference(bad_font_id),",
+      "    },",
+      "    \"XObject\" => dictionary! {",
+      "        \"XF1\" => Object::Reference(xobj_id),"
+     ],
+     "total": 33
+    },
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 23,
+    "tokens": 297,
+    "first": {
+     "name": "docs/python.md:markdown",
+     "start": 14,
+     "end": 36
+    },
+    "others": [
+     {
+      "name": "napi/README.md:markdown",
+      "start": 14,
+      "end": 38
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 17,
+    "tokens": 289,
+    "first": {
+     "name": "docs/python.md:markdown",
+     "start": 14,
+     "end": 30
+    },
+    "others": [
+     {
+      "name": "docs/rust-api.md:markdown",
+      "start": 13,
+      "end": 29
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "text",
     "lines": 24,
     "tokens": 279,
-    "firstFile": {
+    "first": {
      "name": "AGENTS.md:text",
      "start": 24,
      "end": 47
     },
-    "secondFile": {
-     "name": "CLAUDE.md:text",
-     "start": 24,
-     "end": 47
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 44,
-    "tokens": 248,
-    "firstFile": {
-     "name": "tests/integration_tests.rs",
-     "start": 2476,
-     "end": 2519
-    },
-    "secondFile": {
-     "name": "tests/integration_tests.rs",
-     "start": 2564,
-     "end": 2606
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 41,
-    "tokens": 243,
-    "firstFile": {
-     "name": "tests/integration_tests.rs",
-     "start": 2370,
-     "end": 2410
-    },
-    "secondFile": {
-     "name": "tests/integration_tests.rs",
-     "start": 3810,
-     "end": 3850
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 32,
-    "tokens": 228,
-    "firstFile": {
-     "name": "src/extractor/content_stream.rs",
-     "start": 1206,
-     "end": 1237
-    },
-    "secondFile": {
-     "name": "src/extractor/content_stream.rs",
-     "start": 1240,
-     "end": 1271
-    }
+    "others": [
+     {
+      "name": "CLAUDE.md:text",
+      "start": 24,
+      "end": 47
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "rust",
     "lines": 21,
-    "tokens": 228,
-    "firstFile": {
-     "name": "src/markdown/mod.rs",
-     "start": 1088,
-     "end": 1108
-    },
-    "secondFile": {
-     "name": "src/tables/detect_rects.rs",
-     "start": 891,
-     "end": 911
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 29,
-    "tokens": 220,
-    "firstFile": {
-     "name": "src/extractor/content_stream.rs",
-     "start": 777,
-     "end": 805
-    },
-    "secondFile": {
-     "name": "src/extractor/xobjects.rs",
-     "start": 830,
-     "end": 858
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 37,
-    "tokens": 218,
-    "firstFile": {
-     "name": "src/detector.rs",
-     "start": 3330,
-     "end": 3366
-    },
-    "secondFile": {
-     "name": "src/detector.rs",
-     "start": 3588,
-     "end": 3624
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 50,
-    "tokens": 212,
-    "firstFile": {
+    "tokens": 136,
+    "first": {
      "name": "tests/integration_tests.rs",
-     "start": 17,
-     "end": 66
+     "start": 84,
+     "end": 104
     },
-    "secondFile": {
-     "name": "tests/integration_tests.rs",
-     "start": 4120,
-     "end": 4144
-    }
+    "others": [
+     {
+      "name": "tests/integration_tests.rs",
+      "start": 158,
+      "end": 178
+     },
+     {
+      "name": "wasm/src/lib.rs",
+      "start": 298,
+      "end": 318
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "rust",
-    "lines": 35,
-    "tokens": 211,
-    "firstFile": {
-     "name": "src/detector.rs",
-     "start": 3266,
-     "end": 3300
+    "lines": 16,
+    "tokens": 88,
+    "first": {
+     "name": "src/markdown/convert.rs",
+     "start": 1729,
+     "end": 1744
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "src/markdown/convert.rs",
+      "start": 1758,
+      "end": 1773
+     },
+     {
+      "name": "src/markdown/convert.rs",
+      "start": 1837,
+      "end": 1852
+     },
+     {
+      "name": "src/markdown/convert.rs",
+      "start": 1945,
+      "end": 1960
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 6,
+    "tokens": 66,
+    "first": {
      "name": "src/detector.rs",
-     "start": 3425,
-     "end": 3458
-    }
+     "start": 2594,
+     "end": 2599
+    },
+    "others": [
+     {
+      "name": "src/detector.rs",
+      "start": 2650,
+      "end": 2655
+     },
+     {
+      "name": "src/detector.rs",
+      "start": 2903,
+      "end": 2908
+     },
+     {
+      "name": "src/detector.rs",
+      "start": 3152,
+      "end": 3157
+     },
+     {
+      "name": "src/detector.rs",
+      "start": 3242,
+      "end": 3247
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 24,
+    "tokens": 129,
+    "first": {
+     "name": "src/detector.rs",
+     "start": 2236,
+     "end": 2259
+    },
+    "others": [
+     {
+      "name": "src/detector.rs",
+      "start": 2278,
+      "end": 2301
+     },
+     {
+      "name": "src/detector.rs",
+      "start": 2333,
+      "end": 2356
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 70,
+   "lines": 102240,
+   "tokens": 654631,
+   "clones": 514,
+   "duplicatedLines": 6313,
+   "duplicatedTokens": 39812,
+   "percentage": 6.17,
+   "percentageTokens": 6.08,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 53,
+     "lines": 99722,
+     "clones": 513,
+     "duplicatedLines": 6301,
+     "percentage": 6.32
+    },
+    {
+     "format": "python",
+     "sources": 4,
+     "lines": 1265,
+     "clones": 1,
+     "duplicatedLines": 12,
+     "percentage": 0.95
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 3,
+     "lines": 435,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 148,
+     "first": {
+      "name": "src/tables/detect_lines.rs",
+      "start": 2425,
+      "end": 2441
+     },
+     "others": [
+      {
+       "name": "src/tables/detect_lines.rs",
+       "start": 2478,
+       "end": 2494
+      },
+      {
+       "name": "src/tables/detect_lines.rs",
+       "start": 2504,
+       "end": 2520
+      },
+      {
+       "name": "src/tables/detect_lines.rs",
+       "start": 2531,
+       "end": 2547
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "    make_hline(440.0, 80.0, 420.0, 1),",
+       "];",
+       "let items = vec![",
+       "    make_item(\"Model\", 100.0, 490.0, 1),",
+       "    make_item(\"Accuracy\", 220.0, 490.0, 1),",
+       "    make_item(\"Latency\", 340.0, 490.0, 1),",
+       "    make_item(\"Alpha\", 100.0, 465.0, 1),",
+       "    make_item(\"91.2\", 220.0, 465.0, 1),",
+       "    make_item(\"12\", 340.0, 465.0, 1),",
+       "    make_item(\"Beta\", 100.0, 450.0, 1),"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 33,
+     "tokens": 196,
+     "first": {
+      "name": "src/detector.rs",
+      "start": 3183,
+      "end": 3215
+     },
+     "others": [
+      {
+       "name": "src/detector.rs",
+       "start": 3426,
+       "end": 3458
+      },
+      {
+       "name": "src/detector.rs",
+       "start": 3683,
+       "end": 3715
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "let content_id = doc.add_object(Object::Stream(lopdf::Stream::new(",
+       "    dictionary! {},",
+       "    content_data.to_vec(),",
+       ")));",
+       "let resources = dictionary! {",
+       "    \"Font\" => dictionary! {",
+       "        \"F1\" => Object::Reference(bad_font_id),",
+       "    },",
+       "    \"XObject\" => dictionary! {",
+       "        \"XF1\" => Object::Reference(xobj_id),"
+      ],
+      "total": 33
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 16,
+     "tokens": 88,
+     "first": {
+      "name": "src/markdown/convert.rs",
+      "start": 1729,
+      "end": 1744
+     },
+     "others": [
+      {
+       "name": "src/markdown/convert.rs",
+       "start": 1758,
+       "end": 1773
+      },
+      {
+       "name": "src/markdown/convert.rs",
+       "start": 1837,
+       "end": 1852
+      },
+      {
+       "name": "src/markdown/convert.rs",
+       "start": 1945,
+       "end": 1960
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "page_roles.insert(1i64, StructRole::P);",
+       "let mut roles = HashMap::new();",
+       "roles.insert(1u32, page_roles);",
+       "",
+       "let md = to_markdown_from_lines_with_tables_and_images(",
+       "    lines,",
+       "    MarkdownOptions::default(),",
+       "    HashMap::new(),",
+       "    HashMap::new(),",
+       "    &HashMap::new(),"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 66,
+     "first": {
+      "name": "src/detector.rs",
+      "start": 2594,
+      "end": 2599
+     },
+     "others": [
+      {
+       "name": "src/detector.rs",
+       "start": 2650,
+       "end": 2655
+      },
+      {
+       "name": "src/detector.rs",
+       "start": 2903,
+       "end": 2908
+      },
+      {
+       "name": "src/detector.rs",
+       "start": 3152,
+       "end": 3157
+      },
+      {
+       "name": "src/detector.rs",
+       "start": 3242,
+       "end": 3247
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 24,
+     "tokens": 129,
+     "first": {
+      "name": "src/detector.rs",
+      "start": 2236,
+      "end": 2259
+     },
+     "others": [
+      {
+       "name": "src/detector.rs",
+       "start": 2278,
+       "end": 2301
+      },
+      {
+       "name": "src/detector.rs",
+       "start": 2333,
+       "end": 2356
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 20,
+     "tokens": 81,
+     "first": {
+      "name": "src/markdown/furniture.rs",
+      "start": 951,
+      "end": 970
+     },
+     "others": [
+      {
+       "name": "src/markdown/furniture.rs",
+       "start": 1020,
+       "end": 1039
+      },
+      {
+       "name": "src/markdown/furniture.rs",
+       "start": 1056,
+       "end": 1075
+      },
+      {
+       "name": "src/markdown/furniture.rs",
+       "start": 1088,
+       "end": 1107
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 13,
+     "tokens": 58,
+     "first": {
+      "name": "src/extractor/mod.rs",
+      "start": 1425,
+      "end": 1437
+     },
+     "others": [
+      {
+       "name": "src/extractor/mod.rs",
+       "start": 1684,
+       "end": 1696
+      },
+      {
+       "name": "src/extractor/mod.rs",
+       "start": 1718,
+       "end": 1730
+      },
+      {
+       "name": "src/extractor/mod.rs",
+       "start": 2567,
+       "end": 2579
+      },
+      {
+       "name": "src/extractor/mod.rs",
+       "start": 2905,
+       "end": 2917
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 32,
+     "tokens": 228,
+     "first": {
+      "name": "src/extractor/content_stream.rs",
+      "start": 1206,
+      "end": 1237
+     },
+     "others": [
+      {
+       "name": "src/extractor/content_stream.rs",
+       "start": 1240,
+       "end": 1271
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 21,
+     "tokens": 228,
+     "first": {
+      "name": "src/markdown/mod.rs",
+      "start": 1088,
+      "end": 1108
+     },
+     "others": [
+      {
+       "name": "src/tables/detect_rects.rs",
+       "start": 891,
+       "end": 911
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 13,
+     "tokens": 113,
+     "first": {
+      "name": "src/tables/detect_lines.rs",
+      "start": 2622,
+      "end": 2634
+     },
+     "others": [
+      {
+       "name": "src/tables/detect_lines.rs",
+       "start": 2655,
+       "end": 2667
+      },
+      {
+       "name": "src/tables/detect_lines.rs",
+       "start": 2698,
+       "end": 2710
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:43:38.940Z",
+  "jscpdVersion": "5.4.0"
  }
 }

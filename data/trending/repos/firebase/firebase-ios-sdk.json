@@ -9,10 +9,12 @@
    "starsToday": 8,
    "headSha": "5dd405379179c09450e8e87c87823aec52c75033",
    "sources": 3839,
-   "lines": 786056,
+   "lines": 786012,
    "clones": 12425,
    "duplicatedLines": 208501,
-   "percentage": 26.52,
+   "percentage": 26.53,
+   "codePercentage": 15.27,
+   "codeSources": 3128,
    "healthScore": 37.5,
    "healthGrade": "E"
   },
@@ -23,10 +25,12 @@
    "starsToday": 112,
    "headSha": "fbeeaa433e134a22f447a8a54c85b738a7e797f6",
    "sources": 3839,
-   "lines": 786211,
+   "lines": 786167,
    "clones": 12427,
    "duplicatedLines": 208547,
    "percentage": 26.53,
+   "codePercentage": 15.28,
+   "codeSources": 3128,
    "healthScore": 37.5,
    "healthGrade": "E"
   }
@@ -42,11 +46,11 @@
   "starsToday": 112,
   "defaultBranch": "main",
   "headSha": "fbeeaa433e134a22f447a8a54c85b738a7e797f6",
-  "durationMs": 3112,
+  "durationMs": 3052,
   "total": {
    "sources": 3839,
-   "lines": 786211,
-   "tokens": 5853376,
+   "lines": 786167,
+   "tokens": 5853211,
    "clones": 12427,
    "duplicatedLines": 208547,
    "duplicatedTokens": 2030298,
@@ -137,154 +141,589 @@
   ],
   "topClones": [
    {
-    "format": "json",
-    "lines": 1202,
-    "tokens": 3403,
-    "firstFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/existence_filter_spec_test.json",
-     "start": 933,
-     "end": 2134
+    "format": "c-header",
+    "lines": 17,
+    "tokens": 577,
+    "first": {
+     "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuth.h",
+     "start": 1,
+     "end": 17
     },
-    "secondFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/existence_filter_spec_test.json",
-     "start": 2156,
-     "end": 3357
-    }
+    "others": [
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthErrors.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIREmailAuthProvider.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRFacebookAuthProvider.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRFederatedAuthProvider.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRGitHubAuthProvider.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRGoogleAuthProvider.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRPhoneAuthProvider.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRTwitterAuthProvider.h",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 261,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Copyright 2017 Google",
+      " *",
+      " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+      " * you may not use this file except in compliance with the License.",
+      " * You may obtain a copy of the License at",
+      " *",
+      " *      http://www.apache.org/licenses/LICENSE-2.0",
+      " *",
+      " * Unless required by applicable law or agreed to in writing, software"
+     ],
+     "total": 17
+    },
+    "kind": "code"
    },
    {
-    "format": "json",
-    "lines": 545,
-    "tokens": 1331,
-    "firstFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/write_spec_test.json",
-     "start": 4128,
-     "end": 4672
+    "format": "objectivec",
+    "lines": 17,
+    "tokens": 583,
+    "first": {
+     "name": "FirebaseAuth/Sources/ObjC/FIRAuth.m",
+     "start": 1,
+     "end": 17
     },
-    "secondFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/write_spec_test.json",
-     "start": 8482,
-     "end": 9026
-    }
+    "others": [
+     {
+      "name": "FirebaseAuth/Sources/ObjC/FIRAuthErrorUtils.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/ObjC/FIRAuthProvider.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/EmailPasswordAuthTests.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/Unit/FIROAuthProviderTests.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Sources/FIRTimestamp.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Sources/FIRVersion.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Tests/Unit/FIRTimestampTest.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseDatabase/Sources/Api/FIRDataSnapshot.m",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 255,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Copyright 2017 Google",
+      " *",
+      " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+      " * you may not use this file except in compliance with the License.",
+      " * You may obtain a copy of the License at",
+      " *",
+      " *      http://www.apache.org/licenses/LICENSE-2.0",
+      " *",
+      " * Unless required by applicable law or agreed to in writing, software"
+     ],
+     "total": 17
+    },
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 17,
-    "tokens": 958,
-    "firstFile": {
-     "name": "Firestore/Source/Public/FirebaseFirestore/FIRFirestore.h",
-     "start": 219,
-     "end": 235
+    "tokens": 576,
+    "first": {
+     "name": "Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FirebaseCrashlytics.h",
+     "start": 1,
+     "end": 17
     },
-    "secondFile": {
-     "name": "Firestore/Source/Public/FirebaseFirestore/FIRFirestore.h",
-     "start": 257,
-     "end": 273
-    }
-   },
-   {
-    "format": "objectivec",
-    "lines": 117,
-    "tokens": 912,
-    "firstFile": {
-     "name": "FirebaseMessaging/Sources/FIRMessaging.m",
-     "start": 1192,
-     "end": 1308
+    "others": [
+     {
+      "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachO.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachOSlice.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactor.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/FIRAuthApiTestsBase.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Sources/FIRConfigurationInternal.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/DefaultUI/Card/FIRIAMCardViewController.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/FIRInAppMessagingPrivate.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/Private/Util/NSString+FIRInterlaceStrings.h",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 158,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Copyright 2019 Google",
+      " *",
+      " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+      " * you may not use this file except in compliance with the License.",
+      " * You may obtain a copy of the License at",
+      " *",
+      " *      http://www.apache.org/licenses/LICENSE-2.0",
+      " *",
+      " * Unless required by applicable law or agreed to in writing, software"
+     ],
+     "total": 17
     },
-    "secondFile": {
-     "name": "FirebaseMessaging/Sources/FIRMessagingUtilities.m",
-     "start": 130,
-     "end": 246
-    }
-   },
-   {
-    "format": "json",
-    "lines": 364,
-    "tokens": 860,
-    "firstFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/limbo_spec_test.json",
-     "start": 7911,
-     "end": 8274
-    },
-    "secondFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/limbo_spec_test.json",
-     "start": 8449,
-     "end": 8812
-    }
-   },
-   {
-    "format": "c-header",
-    "lines": 13,
-    "tokens": 813,
-    "firstFile": {
-     "name": "Firestore/Source/Public/FirebaseFirestore/FIRFirestore.h",
-     "start": 207,
-     "end": 219
-    },
-    "secondFile": {
-     "name": "Firestore/Source/Public/FirebaseFirestore/FIRFirestore.h",
-     "start": 243,
-     "end": 255
-    }
-   },
-   {
-    "format": "json",
-    "lines": 335,
-    "tokens": 788,
-    "firstFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/limit_spec_test.json",
-     "start": 1484,
-     "end": 1818
-    },
-    "secondFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/limit_spec_test.json",
-     "start": 2429,
-     "end": 2763
-    }
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 17,
-    "tokens": 762,
-    "firstFile": {
-     "name": "FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseReference.h",
-     "start": 770,
-     "end": 786
+    "tokens": 575,
+    "first": {
+     "name": "FirebaseAuth/Interop/Public/FirebaseAuthInterop/FIRAuthInterop.h",
+     "start": 1,
+     "end": 17
     },
-    "secondFile": {
-     "name": "FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseReference.h",
-     "start": 790,
-     "end": 806
-    }
-   },
-   {
-    "format": "json",
-    "lines": 315,
-    "tokens": 755,
-    "firstFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/limbo_spec_test.json",
-     "start": 9642,
-     "end": 9956
-    },
-    "secondFile": {
-     "name": "Firestore/Example/Tests/SpecTests/json/limbo_spec_test.json",
-     "start": 11273,
-     "end": 11587
-    }
+    "others": [
+     {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRGameCenterAuthProvider.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Extension/FIRComponent.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Extension/FIRComponentContainer.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Extension/FIRComponentType.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Extension/FIRLibrary.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Sources/FIRComponentContainerInternal.h",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "FirebaseCore/Sources/FIRTimestampInternal.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Sources/Public/FirebaseCore/FIRTimestamp.h",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 119,
+    "kind": "code"
    },
    {
     "format": "objectivec",
-    "lines": 126,
-    "tokens": 749,
-    "firstFile": {
-     "name": "FirebaseStorage/Tests/ObjCIntegration/ObjCAPITests.m",
-     "start": 25,
-     "end": 150
+    "lines": 17,
+    "tokens": 576,
+    "first": {
+     "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachO.m",
+     "start": 1,
+     "end": 17
     },
-    "secondFile": {
-     "name": "FirebaseStorage/Tests/ObjCIntegration/ObjCPPAPITests.mm",
-     "start": 26,
-     "end": 151
-    }
+    "others": [
+     {
+      "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachOSlice.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Sources/ObjC/FIRMultiFactorConstants.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/AccountInfoTests.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/AnonymousAuthTests.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/CustomAuthTests.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/FacebookAuthTests.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/GoogleAuthTests.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/DefaultUI/Card/FIRIAMCardViewController.m",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 103,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 17,
+    "tokens": 576,
+    "first": {
+     "name": "Firestore/core/src/core/database_info.cc",
+     "start": 1,
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "Firestore/core/src/core/field_filter.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/core/filter.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/core/query.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/core/user_data.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/credentials/auth_token.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/credentials/user.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/firestore_version.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/geo_point.cc",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 92,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 17,
+    "tokens": 576,
+    "first": {
+     "name": "Firestore/core/src/api/collection_reference.cc",
+     "start": 1,
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "Firestore/core/src/api/document_change.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/api/document_snapshot.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/api/query_listener_registration.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/api/query_snapshot.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/api/snapshot_metadata.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/api/snapshots_in_sync_listener_registration.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/api/write_batch.cc",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Firestore/core/src/core/array_contains_any_filter.cc",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 79,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 17,
+    "tokens": 580,
+    "first": {
+     "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSRecordApplication.h",
+     "start": 1,
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSRecordBase.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSReportAdapter.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSReportAdapter_Private.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckInterop.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckTokenResultInterop.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAppCheck/Sources/Core/Errors/FIRAppCheckErrorUtil.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAppCheck/Sources/Core/FIRAppCheckLogger.h",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseAppCheck/Sources/Core/FIRAppCheckTokenResult.h",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 50,
+    "kind": "code"
+   },
+   {
+    "format": "objectivec",
+    "lines": 17,
+    "tokens": 576,
+    "first": {
+     "name": "FirebaseCore/Sources/FIRComponent.m",
+     "start": 1,
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "FirebaseCore/Sources/FIRComponentContainer.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Sources/FIRComponentType.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseCore/Tests/Unit/FIRAnalyticsConfigurationTest.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseDatabase/Sources/Api/FIRDatabaseComponent.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMAnalyticsEventLoggerImpl.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMClearcutHttpRequestSender.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMClearcutLogStorage.m",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMClearcutLogger.m",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 49,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 15,
+    "tokens": 578,
+    "first": {
+     "name": "FirebaseAppCheck/Sources/Public/FirebaseAppCheck/FIRRecaptchaProvider.h",
+     "start": 1,
+     "end": 15
+    },
+    "others": [
+     {
+      "name": "Firestore/Protos/cpp/firestore/bundle.pb.h",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "Firestore/Protos/cpp/firestore/local/maybe_document.pb.h",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "Firestore/Protos/cpp/firestore/local/mutation.pb.h",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "Firestore/Protos/cpp/firestore/local/target.pb.h",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "Firestore/Protos/cpp/google/api/annotations.pb.h",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "Firestore/Protos/cpp/google/api/field_behavior.pb.h",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "Firestore/Protos/cpp/google/api/http.pb.h",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "Firestore/Protos/cpp/google/api/resource.pb.h",
+      "start": 1,
+      "end": 15
+     }
+    ],
+    "copies": 46,
+    "kind": "code"
    }
   ],
   "health": {
@@ -485,6 +924,713 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 3128,
+   "lines": 502829,
+   "tokens": 4052917,
+   "clones": 6208,
+   "duplicatedLines": 76817,
+   "duplicatedTokens": 1305346,
+   "percentage": 15.28,
+   "percentageTokens": 32.21,
+   "formats": [
+    {
+     "format": "objectivec",
+     "sources": 838,
+     "lines": 185927,
+     "clones": 2558,
+     "duplicatedLines": 32094,
+     "percentage": 17.26
+    },
+    {
+     "format": "c-header",
+     "sources": 977,
+     "lines": 80988,
+     "clones": 1929,
+     "duplicatedLines": 22192,
+     "percentage": 27.4
+    },
+    {
+     "format": "swift",
+     "sources": 1001,
+     "lines": 166282,
+     "clones": 1405,
+     "duplicatedLines": 17766,
+     "percentage": 10.68
+    },
+    {
+     "format": "cpp",
+     "sources": 197,
+     "lines": 44035,
+     "clones": 280,
+     "duplicatedLines": 4175,
+     "percentage": 9.48
+    },
+    {
+     "format": "python",
+     "sources": 22,
+     "lines": 11725,
+     "clones": 30,
+     "duplicatedLines": 446,
+     "percentage": 3.8
+    },
+    {
+     "format": "bash",
+     "sources": 69,
+     "lines": 6142,
+     "clones": 3,
+     "duplicatedLines": 92,
+     "percentage": 1.5
+    },
+    {
+     "format": "c",
+     "sources": 14,
+     "lines": 5590,
+     "clones": 3,
+     "duplicatedLines": 52,
+     "percentage": 0.93
+    },
+    {
+     "format": "ruby",
+     "sources": 8,
+     "lines": 1737,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 229,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c-header",
+     "lines": 17,
+     "tokens": 577,
+     "first": {
+      "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuth.h",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthErrors.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIREmailAuthProvider.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRFacebookAuthProvider.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRFederatedAuthProvider.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRGitHubAuthProvider.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRGoogleAuthProvider.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRPhoneAuthProvider.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRTwitterAuthProvider.h",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 261,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Copyright 2017 Google",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " *      http://www.apache.org/licenses/LICENSE-2.0",
+       " *",
+       " * Unless required by applicable law or agreed to in writing, software"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "objectivec",
+     "lines": 17,
+     "tokens": 583,
+     "first": {
+      "name": "FirebaseAuth/Sources/ObjC/FIRAuth.m",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "FirebaseAuth/Sources/ObjC/FIRAuthErrorUtils.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/ObjC/FIRAuthProvider.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/EmailPasswordAuthTests.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/Unit/FIROAuthProviderTests.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Sources/FIRTimestamp.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Sources/FIRVersion.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Tests/Unit/FIRTimestampTest.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseDatabase/Sources/Api/FIRDataSnapshot.m",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 255,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Copyright 2017 Google",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " *      http://www.apache.org/licenses/LICENSE-2.0",
+       " *",
+       " * Unless required by applicable law or agreed to in writing, software"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 17,
+     "tokens": 576,
+     "first": {
+      "name": "Crashlytics/Crashlytics/Public/FirebaseCrashlytics/FirebaseCrashlytics.h",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachO.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachOSlice.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRMultiFactor.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/FIRAuthApiTestsBase.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Sources/FIRConfigurationInternal.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/DefaultUI/Card/FIRIAMCardViewController.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/FIRInAppMessagingPrivate.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/Private/Util/NSString+FIRInterlaceStrings.h",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 145,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Copyright 2019 Google",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " *      http://www.apache.org/licenses/LICENSE-2.0",
+       " *",
+       " * Unless required by applicable law or agreed to in writing, software"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 17,
+     "tokens": 575,
+     "first": {
+      "name": "FirebaseAuth/Interop/Public/FirebaseAuthInterop/FIRAuthInterop.h",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "FirebaseAuth/Sources/Public/FirebaseAuth/FIRGameCenterAuthProvider.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Extension/FIRComponent.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Extension/FIRComponentContainer.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Extension/FIRComponentType.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Extension/FIRLibrary.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Sources/FIRComponentContainerInternal.h",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "FirebaseCore/Sources/FIRTimestampInternal.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Sources/Public/FirebaseCore/FIRTimestamp.h",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 115,
+     "kind": "code"
+    },
+    {
+     "format": "objectivec",
+     "lines": 17,
+     "tokens": 576,
+     "first": {
+      "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachO.m",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "FirebaseAppDistribution/Sources/FIRAppDistributionMachOSlice.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Sources/ObjC/FIRMultiFactorConstants.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/AccountInfoTests.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/AnonymousAuthTests.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/CustomAuthTests.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/FacebookAuthTests.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAuth/Tests/SampleSwift/ObjCApiTests/GoogleAuthTests.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/DefaultUI/Card/FIRIAMCardViewController.m",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 100,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 17,
+     "tokens": 580,
+     "first": {
+      "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSRecordApplication.h",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSRecordBase.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSReportAdapter.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Crashlytics/Crashlytics/Models/Record/FIRCLSReportAdapter_Private.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckInterop.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckTokenResultInterop.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAppCheck/Sources/Core/Errors/FIRAppCheckErrorUtil.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAppCheck/Sources/Core/FIRAppCheckLogger.h",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseAppCheck/Sources/Core/FIRAppCheckTokenResult.h",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 49,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 17,
+     "tokens": 576,
+     "first": {
+      "name": "Firestore/core/src/core/database_info.cc",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "Firestore/core/src/core/field_filter.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/core/filter.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/core/query.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/core/user_data.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/credentials/auth_token.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/credentials/user.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/firestore_version.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/geo_point.cc",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 49,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 17,
+     "tokens": 576,
+     "first": {
+      "name": "Firestore/core/src/api/collection_reference.cc",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "Firestore/core/src/api/document_change.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/api/document_snapshot.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/api/query_listener_registration.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/api/query_snapshot.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/api/snapshot_metadata.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/api/snapshots_in_sync_listener_registration.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/api/write_batch.cc",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "Firestore/core/src/core/array_contains_any_filter.cc",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 47,
+     "kind": "code"
+    },
+    {
+     "format": "objectivec",
+     "lines": 17,
+     "tokens": 576,
+     "first": {
+      "name": "FirebaseCore/Sources/FIRComponent.m",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "FirebaseCore/Sources/FIRComponentContainer.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Sources/FIRComponentType.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseCore/Tests/Unit/FIRAnalyticsConfigurationTest.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseDatabase/Sources/Api/FIRDatabaseComponent.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMAnalyticsEventLoggerImpl.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMClearcutHttpRequestSender.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMClearcutLogStorage.m",
+       "start": 1,
+       "end": 17
+      },
+      {
+       "name": "FirebaseInAppMessaging/Sources/Analytics/FIRIAMClearcutLogger.m",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 42,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 15,
+     "tokens": 578,
+     "first": {
+      "name": "FirebaseAnalyticsCoreWrapper/include/dummy.h",
+      "start": 1,
+      "end": 15
+     },
+     "others": [
+      {
+       "name": "FirebaseAppCheck/Sources/Core/FIRAppCheckSettings.h",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "FirebaseAppCheck/Sources/Core/FIRAppCheckToken+Internal.h",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "FirebaseAppCheck/Sources/Public/FirebaseAppCheck/FIRAppAttestProvider.h",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "FirebaseAppCheck/Sources/Public/FirebaseAppCheck/FIRAppCheckAvailability.h",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "FirebaseAppCheck/Sources/Public/FirebaseAppCheck/FIRAppCheckErrors.h",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "FirebaseDatabase/Sources/Login/FIRDatabaseConnectionContextProvider.h",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "FirebaseMessaging/Tests/UnitTests/FIRMessagingFakeKeychain.h",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "Firestore/Source/API/FIRLoadBundleTask+Internal.h",
+       "start": 1,
+       "end": 15
+      }
+     ],
+     "copies": 37,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 102,
+    "minified": 0,
+    "sample": [
+     "Crashlytics/Protogen/nanopb/crashlytics.nanopb.c",
+     "Crashlytics/Protogen/nanopb/crashlytics.nanopb.h",
+     "FirebaseInAppMessaging/Sources/Analytics/Protogen/nanopb/fiam.nanopb.c",
+     "FirebaseInAppMessaging/Sources/Analytics/Protogen/nanopb/fiam.nanopb.h",
+     "FirebaseMessaging/Sources/Protogen/nanopb/me.nanopb.c",
+     "FirebaseMessaging/Sources/Protogen/nanopb/me.nanopb.h",
+     "FirebasePerformance/Sources/Protogen/nanopb/perf_metric.nanopb.c",
+     "FirebasePerformance/Sources/Protogen/nanopb/perf_metric.nanopb.h",
+     "FirebaseSessions/SourcesObjC/Protogen/nanopb/sessions.nanopb.c",
+     "FirebaseSessions/SourcesObjC/Protogen/nanopb/sessions.nanopb.h",
+     "Firestore/Protos/cpp/firestore/bundle.pb.cc",
+     "Firestore/Protos/cpp/firestore/bundle.pb.h",
+     "Firestore/Protos/cpp/firestore/local/maybe_document.pb.cc",
+     "Firestore/Protos/cpp/firestore/local/maybe_document.pb.h",
+     "Firestore/Protos/cpp/firestore/local/mutation.pb.cc",
+     "Firestore/Protos/cpp/firestore/local/mutation.pb.h",
+     "Firestore/Protos/cpp/firestore/local/target.pb.cc",
+     "Firestore/Protos/cpp/firestore/local/target.pb.h",
+     "Firestore/Protos/cpp/google/api/annotations.pb.cc",
+     "Firestore/Protos/cpp/google/api/annotations.pb.h"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:36:30.325Z",
+  "jscpdVersion": "5.4.0"
  }
 }

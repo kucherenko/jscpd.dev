@@ -9,10 +9,12 @@
    "starsToday": 158,
    "headSha": "749bd0f86a07a28a86347d8ce9c141e601057c40",
    "sources": 417,
-   "lines": 241644,
+   "lines": 241600,
    "clones": 652,
    "duplicatedLines": 34722,
    "percentage": 14.37,
+   "codePercentage": 10.08,
+   "codeSources": 284,
    "healthScore": 51.2,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 263,
    "headSha": "749bd0f86a07a28a86347d8ce9c141e601057c40",
    "sources": 417,
-   "lines": 241644,
+   "lines": 241600,
    "clones": 652,
    "duplicatedLines": 34722,
    "percentage": 14.37,
+   "codePercentage": 10.08,
+   "codeSources": 284,
    "healthScore": 51.2,
    "healthGrade": "D"
   }
@@ -42,11 +46,11 @@
   "starsToday": 263,
   "defaultBranch": "main",
   "headSha": "749bd0f86a07a28a86347d8ce9c141e601057c40",
-  "durationMs": 1811,
+  "durationMs": 838,
   "total": {
    "sources": 417,
-   "lines": 241644,
-   "tokens": 2383460,
+   "lines": 241600,
+   "tokens": 2383295,
    "clones": 652,
    "duplicatedLines": 34722,
    "duplicatedTokens": 483807,
@@ -140,151 +144,391 @@
     "format": "csv",
     "lines": 16385,
     "tokens": 227147,
-    "firstFile": {
+    "first": {
      "name": "8_Utils/Python/test_radar_data.csv",
      "start": 1,
      "end": 16385
     },
-    "secondFile": {
-     "name": "9_Firmware/9_3_GUI/test_radar_data.csv",
-     "start": 1,
-     "end": 16385
-    }
+    "others": [
+     {
+      "name": "9_Firmware/9_3_GUI/test_radar_data.csv",
+      "start": 1,
+      "end": 16385
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "timestamp_ns,chirp_number,chirp_type,sample_index,I_value,Q_value,magnitude_squared",
+      "0,0,LONG,0,-15,16,499",
+      "2,0,LONG,1,-12,17,484",
+      "4,0,LONG,2,0,9,94",
+      "6,0,LONG,3,-12,-8,228",
+      "8,0,LONG,4,-2,-4,26",
+      "10,0,LONG,5,-10,-2,124",
+      "12,0,LONG,6,-4,-13,195",
+      "14,0,LONG,7,-3,-5,44",
+      "16,0,LONG,8,-12,14,356"
+     ],
+     "total": 16385
+    },
+    "kind": "data"
+   },
+   {
+    "format": "c",
+    "lines": 26,
+    "tokens": 1479,
+    "first": {
+     "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.c",
+     "start": 6,
+     "end": 31
+    },
+    "others": [
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.c",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.c",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_app.c",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.c",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.c",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.c",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.c",
+      "start": 5,
+      "end": 30
+     }
+    ],
+    "copies": 9,
+    "excerpt": {
+     "lines": [
+      "* Copyright 2012-2016(c) Analog Devices, Inc.",
+      "*",
+      "* Redistribution and use in source and binary forms, with or without",
+      "* modification, are permitted provided that the following conditions are met:",
+      "*",
+      "* 1. Redistributions of source code must retain the above copyright notice,",
+      "*    this list of conditions and the following disclaimer.",
+      "*",
+      "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+      "*    this list of conditions and the following disclaimer in the documentation"
+     ],
+     "total": 26
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 26,
+    "tokens": 1479,
+    "first": {
+     "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.h",
+     "start": 6,
+     "end": 31
+    },
+    "others": [
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.h",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.h",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_circular_buffer.h",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.h",
+      "start": 6,
+      "end": 31
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.h",
+      "start": 6,
+      "end": 31
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "* Copyright 2012-2016(c) Analog Devices, Inc.",
+      "*",
+      "* Redistribution and use in source and binary forms, with or without",
+      "* modification, are permitted provided that the following conditions are met:",
+      "*",
+      "* 1. Redistributions of source code must retain the above copyright notice,",
+      "*    this list of conditions and the following disclaimer.",
+      "*",
+      "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+      "*    this list of conditions and the following disclaimer in the documentation"
+     ],
+     "total": 26
+    },
+    "kind": "code"
    },
    {
     "format": "csv",
     "lines": 1280,
     "tokens": 9730,
-    "firstFile": {
+    "first": {
      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
      "start": 770,
      "end": 2049
     },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_stationary.csv",
-     "start": 770,
-     "end": 2049
-    }
+    "others": [
+     {
+      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_stationary.csv",
+      "start": 770,
+      "end": 2049
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "c-header",
+    "lines": 30,
+    "tokens": 1610,
+    "first": {
+     "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+     "start": 5,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iiod.h",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_eeprom.h",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_init.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_units.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_irq.h",
+      "start": 5,
+      "end": 33
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 30,
+    "tokens": 1610,
+    "first": {
+     "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+     "start": 5,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.c",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.c",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.c",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.c",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_trng.c",
+      "start": 5,
+      "end": 34
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 30,
+    "tokens": 1610,
+    "first": {
+     "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+     "start": 5,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_delay.h",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_error.h",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_fifo.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.h",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_irq.h",
+      "start": 5,
+      "end": 34
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
    },
    {
     "format": "csv",
     "lines": 896,
     "tokens": 6787,
-    "firstFile": {
+    "first": {
      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
      "start": 1154,
      "end": 2049
     },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_two_targets.csv",
-     "start": 1154,
-     "end": 2049
-    }
+    "others": [
+     {
+      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_two_targets.csv",
+      "start": 1154,
+      "end": 2049
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
-    "format": "csv",
-    "lines": 1024,
-    "tokens": 6261,
-    "firstFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_chirp.csv",
-     "start": 2,
-     "end": 1025
+    "format": "c-header",
+    "lines": 29,
+    "tokens": 1610,
+    "first": {
+     "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.h",
+     "start": 5,
+     "end": 33
     },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_chirp.csv",
-     "start": 2,
-     "end": 1025
-    }
+    "others": [
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.h",
+      "start": 4,
+      "end": 32
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    },
    {
-    "format": "csv",
-    "lines": 1024,
-    "tokens": 6142,
-    "firstFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_tone5.csv",
-     "start": 2,
-     "end": 1025
+    "format": "c-header",
+    "lines": 29,
+    "tokens": 1610,
+    "first": {
+     "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_clk.h",
+     "start": 5,
+     "end": 33
     },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_tone5.csv",
-     "start": 2,
-     "end": 1025
-    }
-   },
-   {
-    "format": "csv",
-    "lines": 1024,
-    "tokens": 5512,
-    "firstFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_dc.csv",
-     "start": 2,
-     "end": 1025
-    },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_dc.csv",
-     "start": 2,
-     "end": 1025
-    }
-   },
-   {
-    "format": "csv",
-    "lines": 1024,
-    "tokens": 5376,
-    "firstFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_impulse.csv",
-     "start": 2,
-     "end": 1025
-    },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_impulse.csv",
-     "start": 2,
-     "end": 1025
-    }
-   },
-   {
-    "format": "csv",
-    "lines": 610,
-    "tokens": 4661,
-    "firstFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
-     "start": 1,
-     "end": 610
-    },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_stationary.csv",
-     "start": 1,
-     "end": 610
-    }
-   },
-   {
-    "format": "csv",
-    "lines": 323,
-    "tokens": 2461,
-    "firstFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
-     "start": 1,
-     "end": 323
-    },
-    "secondFile": {
-     "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_two_targets.csv",
-     "start": 1,
-     "end": 323
-    }
-   },
-   {
-    "format": "python",
-    "lines": 325,
-    "tokens": 1939,
-    "firstFile": {
-     "name": "9_Firmware/9_3_GUI/GUI_V5.py",
-     "start": 581,
-     "end": 905
-    },
-    "secondFile": {
-     "name": "9_Firmware/9_3_GUI/GUI_V5_Demo.py",
-     "start": 101,
-     "end": 425
-    }
+    "others": [
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_print_log.h",
+      "start": 5,
+      "end": 34
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.h",
+      "start": 5,
+      "end": 33
+     },
+     {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_rtc.h",
+      "start": 5,
+      "end": 34
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    }
   ],
   "health": {
@@ -501,6 +745,522 @@
      "lines": 34
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 284,
+   "lines": 97932,
+   "tokens": 891068,
+   "clones": 587,
+   "duplicatedLines": 9876,
+   "duplicatedTokens": 199812,
+   "percentage": 10.08,
+   "percentageTokens": 22.42,
+   "formats": [
+    {
+     "format": "c",
+     "sources": 54,
+     "lines": 20313,
+     "clones": 198,
+     "duplicatedLines": 2678,
+     "percentage": 13.18
+    },
+    {
+     "format": "verilog",
+     "sources": 76,
+     "lines": 33144,
+     "clones": 156,
+     "duplicatedLines": 2566,
+     "percentage": 7.74
+    },
+    {
+     "format": "c-header",
+     "sources": 72,
+     "lines": 10067,
+     "clones": 107,
+     "duplicatedLines": 2009,
+     "percentage": 19.96
+    },
+    {
+     "format": "python",
+     "sources": 49,
+     "lines": 24999,
+     "clones": 106,
+     "duplicatedLines": 2441,
+     "percentage": 9.76
+    },
+    {
+     "format": "cpp",
+     "sources": 8,
+     "lines": 5286,
+     "clones": 15,
+     "duplicatedLines": 99,
+     "percentage": 1.87
+    },
+    {
+     "format": "tcl",
+     "sources": 8,
+     "lines": 2031,
+     "clones": 3,
+     "duplicatedLines": 65,
+     "percentage": 3.2
+    },
+    {
+     "format": "objectivec",
+     "sources": 6,
+     "lines": 723,
+     "clones": 2,
+     "duplicatedLines": 18,
+     "percentage": 2.49
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 1195,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c",
+     "lines": 26,
+     "tokens": 1479,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.c",
+      "start": 6,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.c",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.c",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_app.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.c",
+       "start": 5,
+       "end": 30
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "* Copyright 2012-2016(c) Analog Devices, Inc.",
+       "*",
+       "* Redistribution and use in source and binary forms, with or without",
+       "* modification, are permitted provided that the following conditions are met:",
+       "*",
+       "* 1. Redistributions of source code must retain the above copyright notice,",
+       "*    this list of conditions and the following disclaimer.",
+       "*",
+       "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+       "*    this list of conditions and the following disclaimer in the documentation"
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 26,
+     "tokens": 1479,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.h",
+      "start": 6,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.h",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.h",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_circular_buffer.h",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.h",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.h",
+       "start": 6,
+       "end": 31
+      }
+     ],
+     "copies": 8,
+     "excerpt": {
+      "lines": [
+       "* Copyright 2012-2016(c) Analog Devices, Inc.",
+       "*",
+       "* Redistribution and use in source and binary forms, with or without",
+       "* modification, are permitted provided that the following conditions are met:",
+       "*",
+       "* 1. Redistributions of source code must retain the above copyright notice,",
+       "*    this list of conditions and the following disclaimer.",
+       "*",
+       "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+       "*    this list of conditions and the following disclaimer in the documentation"
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 30,
+     "tokens": 1610,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+      "start": 5,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iiod.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_eeprom.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_init.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_units.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_irq.h",
+       "start": 5,
+       "end": 33
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "********************************************************************************",
+       " * Copyright 2022(c) Analog Devices, Inc.",
+       " *",
+       " * Redistribution and use in source and binary forms, with or without",
+       " * modification, are permitted provided that the following conditions are met:",
+       " *",
+       " * 1. Redistributions of source code must retain the above copyright notice,",
+       " *    this list of conditions and the following disclaimer.",
+       " *",
+       " * 2. Redistributions in binary form must reproduce the above copyright notice,"
+      ],
+      "total": 30
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 30,
+     "tokens": 1610,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+      "start": 5,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.c",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.c",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.c",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.c",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_trng.c",
+       "start": 5,
+       "end": 34
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 30,
+     "tokens": 1610,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+      "start": 5,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_delay.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_error.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_fifo.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_irq.h",
+       "start": 5,
+       "end": 34
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 29,
+     "tokens": 1610,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.h",
+      "start": 5,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.h",
+       "start": 4,
+       "end": 32
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 29,
+     "tokens": 1610,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_clk.h",
+      "start": 5,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_print_log.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_rtc.h",
+       "start": 5,
+       "end": 34
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 30,
+     "tokens": 1609,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_app.c",
+      "start": 5,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc16.c",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.c",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_list.c",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_gpio.c",
+       "start": 5,
+       "end": 33
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 27,
+     "tokens": 1529,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.c",
+      "start": 5,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iiod.c",
+       "start": 5,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_eeprom.c",
+       "start": 5,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_irq.c",
+       "start": 5,
+       "end": 31
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 33,
+     "tokens": 1731,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.c",
+      "start": 3,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_i2c.c",
+       "start": 3,
+       "end": 35
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_spi.c",
+       "start": 3,
+       "end": 35
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/syscalls.c",
+     "9_Firmware/9_2_FPGA/scripts/utils/insert_ila_probes.tcl"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:36:22.863Z",
+  "jscpdVersion": "5.4.0"
  }
 }

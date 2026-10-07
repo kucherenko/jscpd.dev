@@ -9,10 +9,12 @@
    "starsToday": 232,
    "headSha": "dc8e617f179cf0bdc68b61e672f33e9eb64c20cf",
    "sources": 257,
-   "lines": 29994,
+   "lines": 29950,
    "clones": 33,
    "duplicatedLines": 340,
-   "percentage": 1.13,
+   "percentage": 1.14,
+   "codePercentage": 0.36,
+   "codeSources": 51,
    "healthScore": 66.8,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 223,
    "headSha": "4d4e159a77aec356ae6be320f281808aab0d25ca",
    "sources": 286,
-   "lines": 34569,
+   "lines": 34525,
    "clones": 38,
    "duplicatedLines": 386,
    "percentage": 1.12,
+   "codePercentage": 0.33,
+   "codeSources": 60,
    "healthScore": 66,
    "healthGrade": "C"
   }
@@ -42,11 +46,11 @@
   "starsToday": 223,
   "defaultBranch": "main",
   "headSha": "4d4e159a77aec356ae6be320f281808aab0d25ca",
-  "durationMs": 944,
+  "durationMs": 83,
   "total": {
    "sources": 286,
-   "lines": 34569,
-   "tokens": 340336,
+   "lines": 34525,
+   "tokens": 340171,
    "clones": 38,
    "duplicatedLines": 386,
    "duplicatedTokens": 3582,
@@ -97,7 +101,7 @@
    {
     "format": "bash",
     "sources": 23,
-    "lines": 1418,
+    "lines": 1368,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -121,7 +125,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,151 +144,271 @@
     "format": "markdown",
     "lines": 27,
     "tokens": 487,
-    "firstFile": {
+    "first": {
      "name": "plugins/pstack/agents/comment-sicko.md:markdown",
      "start": 6,
      "end": 32
     },
-    "secondFile": {
-     "name": "plugins/pstack/skills/poteto-mode/references/agents/comment-sicko.md:markdown",
-     "start": 6,
-     "end": 32
-    }
+    "others": [
+     {
+      "name": "plugins/pstack/skills/poteto-mode/references/agents/comment-sicko.md:markdown",
+      "start": 6,
+      "end": 32
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Comment Sicko",
+      "",
+      "My first output when spawned is exactly this.",
+      "",
+      "Yes... Ha ha ha... Yes!",
+      "",
+      "I hate comments. Feed me the parent scoped files or diff. If none exists, feed me the current diff against `main`. Narration, banners, commented-out corpses, w…",
+      "",
+      "Only these exceptions get to crawl away.",
+      ""
+     ],
+     "total": 27
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 12,
+    "tokens": 180,
+    "first": {
+     "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
+     "start": 19,
+     "end": 30
+    },
+    "others": [
+     {
+      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+      "start": 18,
+      "end": 29
+     },
+     {
+      "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
+      "start": 31,
+      "end": 42
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "## Scope to skills and tools the session actually used",
+      "",
+      "Findings must point to skills, tools, or MCPs invoked in this transcript. Speculative routings to skills the parent never opened do not count. To check whether…",
+      "",
+      "- `Read` tool calls against any `SKILL.md` file (workspace `.claude/skills/`, user-level `~/.claude/skills/`, or plugin-installed paths under `~/.claude/plugin…",
+      "- `Agent` prompts that name a skill path",
+      "- Tool calls (Shell, Grep, MCP, etc.) that match a skill's documented commands",
+      "",
+      "Two valid finding shapes:",
+      ""
+     ],
+     "total": 12
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 12,
     "tokens": 340,
-    "firstFile": {
+    "first": {
      "name": "NOTICE-skills.md:markdown",
      "start": 1,
      "end": 12
     },
-    "secondFile": {
-     "name": "plugins/pstack/skills/poteto-mode/references/licenses/NOTICE.md:markdown",
-     "start": 1,
-     "end": 12
-    }
+    "others": [
+     {
+      "name": "plugins/pstack/skills/poteto-mode/references/licenses/NOTICE.md:markdown",
+      "start": 1,
+      "end": 12
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# NOTICE for the skills-only distribution",
+      "",
+      "This distribution contains MIT-licensed work from two upstream sources. The copyright notices and license terms travel beside this file.",
+      "",
+      "## Upstream sources",
+      "",
+      "| Included work | Upstream | Copyright | License |",
+      "| --- | --- | --- | --- |",
+      "| pstack-derived skills, principles, scripts, and the `comment-sicko` definition | [cursor/plugins/pstack](https://github.com/cursor/plugins/tree/e46364b8be460…",
+      "| `deslop`, `thermo-nuclear-code-quality-review`, `make-pr-easy-to-review`, `fix-ci`, `fix-merge-conflicts`, `get-pr-comments`, and `what-did-i-get-done` | [cu…"
+     ],
+     "total": 12
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 7,
+    "tokens": 68,
+    "first": {
+     "name": "plugins/pstack/skills/arena/SKILL.md:markdown",
+     "start": 74,
+     "end": 80
+    },
+    "others": [
+     {
+      "name": "plugins/pstack/skills/how/SKILL.md:markdown",
+      "start": 61,
+      "end": 67
+     },
+     {
+      "name": "plugins/pstack/skills/poteto-mode/SKILL.md:markdown",
+      "start": 154,
+      "end": 160
+     },
+     {
+      "name": "plugins/pstack/skills/reflect/SKILL.md:markdown",
+      "start": 76,
+      "end": 82
+     },
+     {
+      "name": "plugins/pstack/skills/swarm/SKILL.md:markdown",
+      "start": 49,
+      "end": 55
+     },
+     {
+      "name": "plugins/pstack/skills/why/SKILL.md:markdown",
+      "start": 161,
+      "end": 167
+     }
+    ],
+    "copies": 6,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 8,
     "tokens": 182,
-    "firstFile": {
+    "first": {
      "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
      "start": 5,
      "end": 12
     },
-    "secondFile": {
-     "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-     "start": 3,
-     "end": 10
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 12,
-    "tokens": 180,
-    "firstFile": {
-     "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-     "start": 19,
-     "end": 30
-    },
-    "secondFile": {
-     "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-     "start": 18,
-     "end": 29
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 12,
-    "tokens": 180,
-    "firstFile": {
-     "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-     "start": 19,
-     "end": 30
-    },
-    "secondFile": {
-     "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-     "start": 31,
-     "end": 42
-    }
+    "others": [
+     {
+      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+      "start": 3,
+      "end": 10
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "javascript",
     "lines": 6,
     "tokens": 131,
-    "firstFile": {
+    "first": {
      "name": "tests/pi/agents-messages.test.mjs",
      "start": 108,
      "end": 113
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "tests/pi/agents-messages.test.mjs",
+      "start": 121,
+      "end": 126
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 6,
+    "tokens": 62,
+    "first": {
      "name": "tests/pi/agents-messages.test.mjs",
-     "start": 121,
-     "end": 126
-    }
+     "start": 53,
+     "end": 58
+    },
+    "others": [
+     {
+      "name": "tests/pi/agents-messages.test.mjs",
+      "start": 88,
+      "end": 93
+     },
+     {
+      "name": "tests/pi/agents-messages.test.mjs",
+      "start": 101,
+      "end": 105
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 13,
     "tokens": 117,
-    "firstFile": {
+    "first": {
      "name": "plugins/pstack/skills/interrogate/references/code-quality-review.md:markdown",
      "start": 5,
      "end": 17
     },
-    "secondFile": {
-     "name": "plugins/pstack/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
-     "start": 10,
-     "end": 22
-    }
+    "others": [
+     {
+      "name": "plugins/pstack/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
+      "start": 10,
+      "end": 22
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "javascript",
+    "lines": 6,
+    "tokens": 51,
+    "first": {
+     "name": "tests/sync.test.mjs",
+     "start": 732,
+     "end": 737
+    },
+    "others": [
+     {
+      "name": "tests/sync.test.mjs",
+      "start": 1043,
+      "end": 1048
+     },
+     {
+      "name": "tests/sync.test.mjs",
+      "start": 1064,
+      "end": 1069
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 11,
     "tokens": 80,
-    "firstFile": {
+    "first": {
      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
      "start": 24,
      "end": 34
     },
-    "secondFile": {
-     "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-     "start": 37,
-     "end": 47
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 13,
-    "tokens": 75,
-    "firstFile": {
-     "name": "plugins/pstack/skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-     "start": 280,
-     "end": 292
-    },
-    "secondFile": {
-     "name": "plugins/pstack/skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-     "start": 364,
-     "end": 376
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 9,
-    "tokens": 75,
-    "firstFile": {
-     "name": "tests/sync.test.mjs",
-     "start": 1077,
-     "end": 1085
-    },
-    "secondFile": {
-     "name": "tests/sync.test.mjs",
-     "start": 1092,
-     "end": 1100
-    }
+    "others": [
+     {
+      "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
+      "start": 37,
+      "end": 47
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -455,6 +579,176 @@
      "lines": 65
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 60,
+   "lines": 11891,
+   "tokens": 78727,
+   "clones": 3,
+   "duplicatedLines": 39,
+   "duplicatedTokens": 178,
+   "percentage": 0.33,
+   "percentageTokens": 0.23,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 12,
+     "lines": 3213,
+     "clones": 2,
+     "duplicatedLines": 30,
+     "percentage": 0.93
+    },
+    {
+     "format": "typescript",
+     "sources": 27,
+     "lines": 7132,
+     "clones": 1,
+     "duplicatedLines": 9,
+     "percentage": 0.13
+    },
+    {
+     "format": "bash",
+     "sources": 14,
+     "lines": 781,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "awk",
+     "sources": 5,
+     "lines": 567,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 24,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 16,
+     "tokens": 65,
+     "first": {
+      "name": "plugins/pstack/skills/poteto-mode/scripts/worktree-audit.mjs",
+      "start": 331,
+      "end": 346
+     },
+     "others": [
+      {
+       "name": "plugins/pstack/skills/reflect/scripts/find-transcript.mjs",
+       "start": 202,
+       "end": 217
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  process.stdout.write(audit({ repo: repo.value, transcripts }));",
+       "  return 0;",
+       "}",
+       "",
+       "// node leaves argv[1] unresolved and may set it to a non-file (`node -e ... arg`).",
+       "function invokedDirectly() {",
+       "  if (!process.argv[1]) return false;",
+       "  try {",
+       "    return fileURLToPath(import.meta.url) === realpathSync(process.argv[1]);",
+       "  } catch {"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 57,
+     "first": {
+      "name": "plugins/pstack/skills/poteto-mode/scripts/check-playbooks.mjs",
+      "start": 43,
+      "end": 56
+     },
+     "others": [
+      {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/worktree-audit.mjs",
+       "start": 332,
+       "end": 345
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  return problems;",
+       "}",
+       "",
+       "// node leaves argv[1] unresolved and may set it to a non-file (`node -e ... arg`).",
+       "function invokedDirectly() {",
+       "  if (!process.argv[1]) return false;",
+       "  try {",
+       "    return fileURLToPath(import.meta.url) === realpathSync(process.argv[1]);",
+       "  } catch {",
+       "    return false;"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 56,
+     "first": {
+      "name": "plugins/pstack/skills/poteto-mode/scripts/orch/orch.ts",
+      "start": 104,
+      "end": 112
+     },
+     "others": [
+      {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/orch/store.ts",
+       "start": 962,
+       "end": 970
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  return parts.map(positiveInteger);",
+       "}",
+       "",
+       "function countLine(value: Counts): string {",
+       "  const entries = Object.entries(value);",
+       "  return entries.length === 0",
+       "    ? \"none\"",
+       "    : entries.map(([name, count]) => `${name}=${count}`).join(\", \");",
+       "}"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:27:52.357Z",
+  "jscpdVersion": "5.4.0"
  }
 }

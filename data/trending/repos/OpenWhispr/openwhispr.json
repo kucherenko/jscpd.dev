@@ -9,10 +9,12 @@
    "starsToday": 121,
    "headSha": "a9cf27b49bdcc9069922641ec39ac06d3483a125",
    "sources": 1289,
-   "lines": 318275,
-   "clones": 787,
-   "duplicatedLines": 9450,
-   "percentage": 2.97,
+   "lines": 316931,
+   "clones": 838,
+   "duplicatedLines": 10601,
+   "percentage": 3.34,
+   "codePercentage": 2.49,
+   "codeSources": 767,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,97 +30,97 @@
   "starsToday": 121,
   "defaultBranch": "main",
   "headSha": "a9cf27b49bdcc9069922641ec39ac06d3483a125",
-  "durationMs": 1001,
+  "durationMs": 1120,
   "total": {
    "sources": 1289,
-   "lines": 318275,
-   "tokens": 1821464,
-   "clones": 787,
-   "duplicatedLines": 9450,
-   "duplicatedTokens": 61848,
-   "percentage": 2.97,
-   "percentageTokens": 3.4
+   "lines": 316931,
+   "tokens": 1774549,
+   "clones": 838,
+   "duplicatedLines": 10601,
+   "duplicatedTokens": 62717,
+   "percentage": 3.34,
+   "percentageTokens": 3.53
   },
   "formats": [
    {
     "format": "javascript",
     "sources": 702,
-    "lines": 161682,
-    "clones": 643,
-    "duplicatedLines": 7534,
-    "percentage": 4.66
+    "lines": 161456,
+    "clones": 698,
+    "duplicatedLines": 8576,
+    "percentage": 5.31
    },
    {
     "format": "tsx",
     "sources": 203,
     "lines": 52469,
-    "clones": 50,
-    "duplicatedLines": 592,
-    "percentage": 1.13
+    "clones": 56,
+    "duplicatedLines": 713,
+    "percentage": 1.36
    },
    {
     "format": "typescript",
     "sources": 246,
     "lines": 37570,
     "clones": 27,
-    "duplicatedLines": 272,
-    "percentage": 0.72
+    "duplicatedLines": 299,
+    "percentage": 0.8
    },
    {
     "format": "yaml",
     "sources": 17,
-    "lines": 1640,
+    "lines": 1638,
     "clones": 25,
-    "duplicatedLines": 408,
-    "percentage": 24.88
-   },
-   {
-    "format": "markdown",
-    "sources": 20,
-    "lines": 5372,
-    "clones": 10,
-    "duplicatedLines": 96,
-    "percentage": 1.79
+    "duplicatedLines": 433,
+    "percentage": 26.43
    },
    {
     "format": "json",
     "sources": 19,
-    "lines": 42063,
+    "lines": 41826,
     "clones": 9,
-    "duplicatedLines": 252,
-    "percentage": 0.6
+    "duplicatedLines": 261,
+    "percentage": 0.62
    },
    {
     "format": "c",
     "sources": 10,
     "lines": 5887,
     "clones": 9,
-    "duplicatedLines": 104,
-    "percentage": 1.77
+    "duplicatedLines": 113,
+    "percentage": 1.92
    },
    {
     "format": "css",
     "sources": 4,
     "lines": 2468,
     "clones": 7,
-    "duplicatedLines": 55,
-    "percentage": 2.23
+    "duplicatedLines": 62,
+    "percentage": 2.51
    },
    {
     "format": "python",
     "sources": 4,
     "lines": 940,
     "clones": 3,
-    "duplicatedLines": 91,
-    "percentage": 9.68
+    "duplicatedLines": 94,
+    "percentage": 10
    },
    {
     "format": "objectivec",
     "sources": 14,
     "lines": 1697,
     "clones": 2,
-    "duplicatedLines": 32,
-    "percentage": 1.89
+    "duplicatedLines": 34,
+    "percentage": 2
+   },
+   {
+    "format": "perl",
+    "sources": 2,
+    "lines": 454,
+    "clones": 1,
+    "duplicatedLines": 10,
+    "percentage": 2.2
    }
   ],
   "topClones": [
@@ -126,152 +128,769 @@
     "format": "c",
     "lines": 19,
     "tokens": 829,
-    "firstFile": {
+    "first": {
      "name": "resources/linux-text-monitor.c",
      "start": 4,
      "end": 22
     },
-    "secondFile": {
-     "name": "resources/windows-text-monitor.c",
-     "start": 4,
-     "end": 22
-    }
+    "others": [
+     {
+      "name": "resources/windows-text-monitor.c",
+      "start": 4,
+      "end": 22
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "* Uses AT-SPI2 to monitor the focused text field for value changes.",
+      "* Outputs \"CHANGED:<value>\" to stdout when the text changes.",
+      "* Exits after a timeout or on receiving a termination signal.",
+      "*",
+      "* Protocol (stdout):",
+      "*   INITIAL_VALUE:<text>  - Initial text field value",
+      "*   INITIAL_VALUE_B64:<base64> - Initial text field value (multiline)",
+      "*   CHANGED:<text>        - Text field value after a change",
+      "*   CHANGED_B64:<base64>  - Text field value after a change (multiline)",
+      "*   EDITABLE              - Focused element is writable with no live selection (--probe-editable)"
+     ],
+     "total": 19
+    },
+    "kind": "code"
    },
    {
-    "format": "markdown",
-    "lines": 13,
-    "tokens": 392,
-    "firstFile": {
-     "name": "docs/network-allowlist.md:markdown",
-     "start": 25,
+    "format": "json",
+    "lines": 29,
+    "tokens": 91,
+    "first": {
+     "name": "src/locales/de/translation.json",
+     "start": 1324,
+     "end": 1352
+    },
+    "others": [
+     {
+      "name": "src/locales/en/translation.json",
+      "start": 1324,
+      "end": 1352
+     },
+     {
+      "name": "src/locales/es/translation.json",
+      "start": 1283,
+      "end": 1311
+     },
+     {
+      "name": "src/locales/fr/translation.json",
+      "start": 1324,
+      "end": 1352
+     },
+     {
+      "name": "src/locales/it/translation.json",
+      "start": 1235,
+      "end": 1263
+     },
+     {
+      "name": "src/locales/ja/translation.json",
+      "start": 1235,
+      "end": 1263
+     },
+     {
+      "name": "src/locales/pt/translation.json",
+      "start": 1214,
+      "end": 1242
+     },
+     {
+      "name": "src/locales/ru/translation.json",
+      "start": 1235,
+      "end": 1263
+     },
+     {
+      "name": "src/locales/zh-CN/translation.json",
+      "start": 1235,
+      "end": 1263
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "\"examplesTitle\": \"Gültige Beispiele\",",
+      "\"platforms\": {",
+      "  \"linux\": \"Linux\",",
+      "  \"macos\": \"macOS\",",
+      "  \"windows\": \"Windows\"",
+      "},",
+      "\"recommended\": {",
+      "  \"linux\": {",
+      "    \"0\": \"Ctrl+Alt+Space\",",
+      "    \"1\": \"Super+S\","
+     ],
+     "total": 29
+    },
+    "kind": "translations"
+   },
+   {
+    "format": "javascript",
+    "lines": 8,
+    "tokens": 65,
+    "first": {
+     "name": "test/helpers/calendarDatabase.test.js",
+     "start": 1,
+     "end": 8
+    },
+    "others": [
+     {
+      "name": "test/helpers/cliBridgeDictionary.test.js",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "test/helpers/containerConversationsDatabase.test.js",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "test/helpers/dictionaryDatabase.test.js",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "test/helpers/granolaImportDatabase.test.js",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "test/helpers/noteCloudUpsertGuard.test.js",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "test/helpers/notesOwnerDatabase.test.js",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "test/helpers/snippetsDatabase.test.js",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "test/helpers/spacesDatabase.test.js",
+      "start": 1,
+      "end": 8
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "const test = require(\"node:test\");",
+      "const assert = require(\"node:assert/strict\");",
+      "const fs = require(\"node:fs\");",
+      "const os = require(\"node:os\");",
+      "const path = require(\"node:path\");",
+      "const Module = require(\"node:module\");",
+      "",
+      "let userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), \"openwhispr-calendar-db-\"));"
+     ],
+     "total": 8
+    },
+    "excerptSecond": {
+     "lines": [
+      "const test = require(\"node:test\");",
+      "const assert = require(\"node:assert/strict\");",
+      "const fs = require(\"node:fs\");",
+      "const os = require(\"node:os\");",
+      "const path = require(\"node:path\");",
+      "const Module = require(\"node:module\");",
+      "",
+      "let userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), \"openwhispr-cli-dict-\"));"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 30,
+    "tokens": 156,
+    "first": {
+     "name": "test/helpers/calendarDatabase.test.js",
+     "start": 8,
      "end": 37
     },
-    "secondFile": {
-     "name": "docs/network-allowlist.md:markdown",
-     "start": 70,
-     "end": 71
-    }
+    "others": [
+     {
+      "name": "test/helpers/containerConversationsDatabase.test.js",
+      "start": 8,
+      "end": 37
+     },
+     {
+      "name": "test/helpers/notesOwnerDatabase.test.js",
+      "start": 8,
+      "end": 37
+     },
+     {
+      "name": "test/helpers/spacesDatabase.test.js",
+      "start": 8,
+      "end": 37
+     },
+     {
+      "name": "test/helpers/transcriptRetention.test.js",
+      "start": 8,
+      "end": 37
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 19,
+    "tokens": 98,
+    "first": {
+     "name": "test/helpers/calendarDatabase.test.js",
+     "start": 8,
+     "end": 26
+    },
+    "others": [
+     {
+      "name": "test/helpers/dictionaryDatabase.test.js",
+      "start": 8,
+      "end": 26
+     },
+     {
+      "name": "test/helpers/granolaImportDatabase.test.js",
+      "start": 8,
+      "end": 26
+     },
+     {
+      "name": "test/helpers/noteCloudUpsertGuard.test.js",
+      "start": 8,
+      "end": 26
+     },
+     {
+      "name": "test/helpers/snippetsDatabase.test.js",
+      "start": 8,
+      "end": 26
+     },
+     {
+      "name": "test/helpers/translationHistory.test.js",
+      "start": 8,
+      "end": 26
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
    },
    {
     "format": "javascript",
     "lines": 80,
     "tokens": 381,
-    "firstFile": {
+    "first": {
      "name": "scripts/build-windows-fast-paste.js",
      "start": 105,
      "end": 184
     },
-    "secondFile": {
-     "name": "scripts/build-windows-key-listener.js",
-     "start": 75,
-     "end": 163
-    }
+    "others": [
+     {
+      "name": "scripts/build-windows-key-listener.js",
+      "start": 75,
+      "end": 163
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 79,
-    "tokens": 374,
-    "firstFile": {
-     "name": "scripts/build-macos-audio-tap.js",
-     "start": 67,
-     "end": 145
+    "tokens": 368,
+    "first": {
+     "name": "scripts/build-macos-fast-paste.js",
+     "start": 70,
+     "end": 148
     },
-    "secondFile": {
-     "name": "scripts/build-media-remote.js",
-     "start": 71,
-     "end": 151
-    }
+    "others": [
+     {
+      "name": "scripts/build-media-remote.js",
+      "start": 72,
+      "end": 151
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "yaml",
     "lines": 45,
     "tokens": 346,
-    "firstFile": {
+    "first": {
      "name": ".github/workflows/build-and-notarize.yml",
      "start": 262,
      "end": 306
     },
-    "secondFile": {
-     "name": ".github/workflows/release.yml",
-     "start": 259,
-     "end": 303
-    }
+    "others": [
+     {
+      "name": ".github/workflows/release.yml",
+      "start": 259,
+      "end": 303
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "python",
     "lines": 50,
     "tokens": 328,
-    "firstFile": {
+    "first": {
      "name": "examples/custom-asr-shim/shim_template.py",
      "start": 97,
      "end": 146
     },
-    "secondFile": {
-     "name": "examples/custom-asr-shim/stepaudio_shim.py",
-     "start": 171,
-     "end": 220
-    }
+    "others": [
+     {
+      "name": "examples/custom-asr-shim/stepaudio_shim.py",
+      "start": 171,
+      "end": 220
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 37,
     "tokens": 326,
-    "firstFile": {
+    "first": {
      "name": "examples/custom-asr-shim/shim_template.py",
      "start": 35,
      "end": 71
     },
-    "secondFile": {
-     "name": "examples/custom-asr-shim/stepaudio_shim.py",
-     "start": 37,
-     "end": 73
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 30,
-    "tokens": 307,
-    "firstFile": {
-     "name": "DEBUG.md:markdown",
-     "start": 39,
-     "end": 68
-    },
-    "secondFile": {
-     "name": "README.md:markdown",
-     "start": 34,
-     "end": 36
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 50,
-    "tokens": 301,
-    "firstFile": {
-     "name": "test/helpers/agentDictationPillIpc.test.js",
-     "start": 35,
-     "end": 84
-    },
-    "secondFile": {
-     "name": "test/helpers/ipcPasteOutcome.test.js",
-     "start": 23,
-     "end": 68
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 10,
-    "tokens": 285,
-    "firstFile": {
-     "name": "CLAUDE.md:markdown",
-     "start": 293,
-     "end": 302
-    },
-    "secondFile": {
-     "name": "CLAUDE.md:markdown",
-     "start": 321,
-     "end": 334
-    }
+    "others": [
+     {
+      "name": "examples/custom-asr-shim/stepaudio_shim.py",
+      "start": 37,
+      "end": 73
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 767,
+   "lines": 187463,
+   "tokens": 1013115,
+   "clones": 340,
+   "duplicatedLines": 4662,
+   "duplicatedTokens": 26260,
+   "percentage": 2.49,
+   "percentageTokens": 2.59,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 262,
+     "lines": 84439,
+     "clones": 244,
+     "duplicatedLines": 3487,
+     "percentage": 4.13
+    },
+    {
+     "format": "tsx",
+     "sources": 203,
+     "lines": 52469,
+     "clones": 56,
+     "duplicatedLines": 713,
+     "percentage": 1.36
+    },
+    {
+     "format": "typescript",
+     "sources": 243,
+     "lines": 37476,
+     "clones": 27,
+     "duplicatedLines": 299,
+     "percentage": 0.8
+    },
+    {
+     "format": "c",
+     "sources": 10,
+     "lines": 5887,
+     "clones": 9,
+     "duplicatedLines": 113,
+     "percentage": 1.92
+    },
+    {
+     "format": "objectivec",
+     "sources": 14,
+     "lines": 1697,
+     "clones": 2,
+     "duplicatedLines": 34,
+     "percentage": 2
+    },
+    {
+     "format": "perl",
+     "sources": 2,
+     "lines": 454,
+     "clones": 1,
+     "duplicatedLines": 10,
+     "percentage": 2.2
+    },
+    {
+     "format": "cpp",
+     "sources": 3,
+     "lines": 400,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 1.5
+    },
+    {
+     "format": "swift",
+     "sources": 7,
+     "lines": 2107,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "jsx",
+     "sources": 3,
+     "lines": 1035,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 866,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c",
+     "lines": 19,
+     "tokens": 829,
+     "first": {
+      "name": "resources/linux-text-monitor.c",
+      "start": 4,
+      "end": 22
+     },
+     "others": [
+      {
+       "name": "resources/windows-text-monitor.c",
+       "start": 4,
+       "end": 22
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "* Uses AT-SPI2 to monitor the focused text field for value changes.",
+       "* Outputs \"CHANGED:<value>\" to stdout when the text changes.",
+       "* Exits after a timeout or on receiving a termination signal.",
+       "*",
+       "* Protocol (stdout):",
+       "*   INITIAL_VALUE:<text>  - Initial text field value",
+       "*   INITIAL_VALUE_B64:<base64> - Initial text field value (multiline)",
+       "*   CHANGED:<text>        - Text field value after a change",
+       "*   CHANGED_B64:<base64>  - Text field value after a change (multiline)",
+       "*   EDITABLE              - Focused element is writable with no live selection (--probe-editable)"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 80,
+     "tokens": 381,
+     "first": {
+      "name": "scripts/build-windows-fast-paste.js",
+      "start": 105,
+      "end": 184
+     },
+     "others": [
+      {
+       "name": "scripts/build-windows-key-listener.js",
+       "start": 75,
+       "end": 163
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    return false;",
+       "  }",
+       "",
+       "  log(\"Download failed or binary not found after download\");",
+       "  return false;",
+       "}",
+       "",
+       "/**",
+       " * Quote a path for use in shell commands on Windows.",
+       " * @param {string} p - Path to quote"
+      ],
+      "total": 80
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 79,
+     "tokens": 368,
+     "first": {
+      "name": "scripts/build-macos-fast-paste.js",
+      "start": 70,
+      "end": 148
+     },
+     "others": [
+      {
+       "name": "scripts/build-media-remote.js",
+       "start": 72,
+       "end": 151
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  process.exit(1);",
+       "}",
+       "",
+       "ensureDir(outputDir);",
+       "ensureDir(moduleCacheDir);",
+       "",
+       "let needsBuild = true;",
+       "if (fs.existsSync(outputBinary)) {",
+       "  if (!verifyBinaryArch(outputBinary, targetArch)) {",
+       "    log(`Existing binary is wrong architecture (expected ${targetArch}), rebuild needed`);"
+      ],
+      "total": 79
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 8,
+     "tokens": 50,
+     "first": {
+      "name": "src/helpers/cloudConfigRequest.js",
+      "start": 12,
+      "end": 19
+     },
+     "others": [
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 5797,
+       "end": 5804
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 8834,
+       "end": 8841
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 8986,
+       "end": 8993
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 9042,
+       "end": 9051
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 9078,
+       "end": 9085
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 9124,
+       "end": 9131
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 21,
+     "tokens": 94,
+     "first": {
+      "name": "scripts/build-linux-text-monitor.js",
+      "start": 30,
+      "end": 50
+     },
+     "others": [
+      {
+       "name": "scripts/build-windows-fast-paste.js",
+       "start": 29,
+       "end": 49
+      },
+      {
+       "name": "scripts/build-windows-key-listener.js",
+       "start": 29,
+       "end": 51
+      },
+      {
+       "name": "scripts/build-windows-text-monitor.js",
+       "start": 23,
+       "end": 43
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 28,
+     "tokens": 276,
+     "first": {
+      "name": "resources/linux-text-monitor.c",
+      "start": 50,
+      "end": 77
+     },
+     "others": [
+      {
+       "name": "resources/windows-text-monitor.c",
+       "start": 48,
+       "end": 75
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 8,
+     "tokens": 68,
+     "first": {
+      "name": "scripts/download-llama-server.js",
+      "start": 188,
+      "end": 195
+     },
+     "others": [
+      {
+       "name": "scripts/download-qdrant.js",
+       "start": 179,
+       "end": 186
+      },
+      {
+       "name": "scripts/download-sherpa-onnx.js",
+       "start": 351,
+       "end": 358
+      },
+      {
+       "name": "scripts/download-whisper-cpp.js",
+       "start": 224,
+       "end": 231
+      },
+      {
+       "name": "scripts/download-yt-dlp.js",
+       "start": 106,
+       "end": 113
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 21,
+     "tokens": 120,
+     "first": {
+      "name": "scripts/download-windows-key-listener.js",
+      "start": 92,
+      "end": 112
+     },
+     "others": [
+      {
+       "name": "scripts/download-windows-mic-listener.js",
+       "start": 116,
+       "end": 136
+      },
+      {
+       "name": "scripts/download-windows-system-audio-helper.js",
+       "start": 98,
+       "end": 118
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 7,
+     "tokens": 52,
+     "first": {
+      "name": "src/helpers/ipcHandlers.js",
+      "start": 8945,
+      "end": 8951
+     },
+     "others": [
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 8985,
+       "end": 8991
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 9041,
+       "end": 9047
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 9077,
+       "end": 9083
+      },
+      {
+       "name": "src/helpers/ipcHandlers.js",
+       "start": 9123,
+       "end": 9129
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 10,
+     "tokens": 66,
+     "first": {
+      "name": "scripts/download-windows-fast-paste.js",
+      "start": 106,
+      "end": 115
+     },
+     "others": [
+      {
+       "name": "scripts/download-windows-key-listener.js",
+       "start": 89,
+       "end": 99
+      },
+      {
+       "name": "scripts/download-windows-mic-listener.js",
+       "start": 113,
+       "end": 123
+      },
+      {
+       "name": "scripts/download-windows-system-audio-helper.js",
+       "start": 95,
+       "end": 105
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:51:39.622Z",
+  "jscpdVersion": "5.4.0"
  }
 }

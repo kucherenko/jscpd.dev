@@ -9,10 +9,12 @@
    "starsToday": 57,
    "headSha": "8705bd510abe22b09e30a586062f8a65f2f3721b",
    "sources": 1116,
-   "lines": 411006,
+   "lines": 402999,
    "clones": 2332,
-   "duplicatedLines": 60331,
-   "percentage": 14.68,
+   "duplicatedLines": 62661,
+   "percentage": 15.55,
+   "codePercentage": 1.8,
+   "codeSources": 393,
    "healthScore": 57.1,
    "healthGrade": "C"
   }
@@ -28,15 +30,15 @@
   "starsToday": 57,
   "defaultBranch": "dev",
   "headSha": "8705bd510abe22b09e30a586062f8a65f2f3721b",
-  "durationMs": 1699,
+  "durationMs": 898,
   "total": {
    "sources": 1116,
-   "lines": 411006,
-   "tokens": 2281106,
+   "lines": 402999,
+   "tokens": 2280941,
    "clones": 2332,
-   "duplicatedLines": 60331,
+   "duplicatedLines": 62661,
    "duplicatedTokens": 312113,
-   "percentage": 14.68,
+   "percentage": 15.55,
    "percentageTokens": 13.68
   },
   "formats": [
@@ -45,77 +47,77 @@
     "sources": 53,
     "lines": 133714,
     "clones": 1007,
-    "duplicatedLines": 44734,
-    "percentage": 33.45
+    "duplicatedLines": 45741,
+    "percentage": 34.21
    },
    {
     "format": "python",
     "sources": 359,
-    "lines": 141519,
+    "lines": 140855,
     "clones": 678,
-    "duplicatedLines": 8572,
-    "percentage": 6.06
+    "duplicatedLines": 9248,
+    "percentage": 6.57
    },
    {
     "format": "typescript",
     "sources": 399,
     "lines": 70973,
     "clones": 261,
-    "duplicatedLines": 3536,
-    "percentage": 4.98
+    "duplicatedLines": 3797,
+    "percentage": 5.35
    },
    {
     "format": "markdown",
     "sources": 19,
     "lines": 18531,
     "clones": 138,
-    "duplicatedLines": 873,
-    "percentage": 4.71
+    "duplicatedLines": 1011,
+    "percentage": 5.46
    },
    {
     "format": "markup",
     "sources": 126,
     "lines": 10193,
     "clones": 114,
-    "duplicatedLines": 947,
-    "percentage": 9.29
+    "duplicatedLines": 1061,
+    "percentage": 10.41
    },
    {
     "format": "txt",
     "sources": 3,
     "lines": 2345,
     "clones": 84,
-    "duplicatedLines": 935,
-    "percentage": 39.87
+    "duplicatedLines": 1019,
+    "percentage": 43.45
    },
    {
     "format": "yaml",
     "sources": 37,
-    "lines": 4582,
+    "lines": 3453,
     "clones": 40,
-    "duplicatedLines": 555,
-    "percentage": 12.11
+    "duplicatedLines": 595,
+    "percentage": 17.23
    },
    {
     "format": "scss",
     "sources": 45,
     "lines": 3718,
     "clones": 9,
-    "duplicatedLines": 174,
-    "percentage": 4.68
+    "duplicatedLines": 183,
+    "percentage": 4.92
    },
    {
     "format": "css",
     "sources": 4,
     "lines": 910,
     "clones": 1,
-    "duplicatedLines": 5,
-    "percentage": 0.55
+    "duplicatedLines": 6,
+    "percentage": 0.66
    },
    {
     "format": "json",
     "sources": 10,
-    "lines": 15605,
+    "lines": 15282,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -126,151 +128,401 @@
     "format": "gettext",
     "lines": 1544,
     "tokens": 5584,
-    "firstFile": {
+    "first": {
      "name": "src/locale/am_ET/LC_MESSAGES/django.po",
      "start": 1169,
      "end": 2712
     },
-    "secondFile": {
-     "name": "src/locale/et_EE/LC_MESSAGES/django.po",
-     "start": 1169,
-     "end": 2712
-    }
+    "others": [
+     {
+      "name": "src/locale/et_EE/LC_MESSAGES/django.po",
+      "start": 1169,
+      "end": 2712
+     },
+     {
+      "name": "src/locale/mk_MK/LC_MESSAGES/django.po",
+      "start": 1169,
+      "end": 2712
+     },
+     {
+      "name": "src/locale/ms_MY/LC_MESSAGES/django.po",
+      "start": 1169,
+      "end": 2712
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "msgid \"filter path\"",
+      "msgstr \"\"",
+      "",
+      "#: documents/models.py:1409",
+      "msgid \"Only consume documents with a path that matches this if specified. Wildcards specified as * are allowed. Case insensitive.\"",
+      "msgstr \"\"",
+      "",
+      "#: documents/models.py:1416",
+      "msgid \"filter filename\"",
+      "msgstr \"\""
+     ],
+     "total": 1544
+    },
+    "kind": "translations"
    },
    {
     "format": "gettext",
-    "lines": 1544,
-    "tokens": 5584,
-    "firstFile": {
-     "name": "src/locale/am_ET/LC_MESSAGES/django.po",
-     "start": 1169,
-     "end": 2712
+    "lines": 119,
+    "tokens": 396,
+    "first": {
+     "name": "src/locale/af_ZA/LC_MESSAGES/django.po",
+     "start": 283,
+     "end": 401
     },
-    "secondFile": {
-     "name": "src/locale/mk_MK/LC_MESSAGES/django.po",
-     "start": 1169,
-     "end": 2712
-    }
+    "others": [
+     {
+      "name": "src/locale/ar_AR/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     },
+     {
+      "name": "src/locale/bg_BG/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     },
+     {
+      "name": "src/locale/ca_ES/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     },
+     {
+      "name": "src/locale/cs_CZ/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     },
+     {
+      "name": "src/locale/el_GR/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     },
+     {
+      "name": "src/locale/es_ES/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     },
+     {
+      "name": "src/locale/fa_IR/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     },
+     {
+      "name": "src/locale/he_IL/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 401
+     }
+    ],
+    "copies": 24,
+    "excerpt": {
+     "lines": [
+      "#: documents/models.py:553",
+      "msgid \"Bank\"",
+      "msgstr \"\"",
+      "",
+      "#: documents/models.py:554",
+      "msgid \"Basket\"",
+      "msgstr \"\"",
+      "",
+      "#: documents/models.py:555",
+      "msgid \"Bell\""
+     ],
+     "total": 119
+    },
+    "kind": "translations"
    },
    {
     "format": "gettext",
-    "lines": 1544,
-    "tokens": 5583,
-    "firstFile": {
-     "name": "src/locale/am_ET/LC_MESSAGES/django.po",
-     "start": 1169,
-     "end": 2712
+    "lines": 87,
+    "tokens": 299,
+    "first": {
+     "name": "src/locale/af_ZA/LC_MESSAGES/django.po",
+     "start": 403,
+     "end": 489
     },
-    "secondFile": {
-     "name": "src/locale/ms_MY/LC_MESSAGES/django.po",
-     "start": 1169,
-     "end": 2712
-    }
+    "others": [
+     {
+      "name": "src/locale/am_ET/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     },
+     {
+      "name": "src/locale/ar_AR/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     },
+     {
+      "name": "src/locale/bg_BG/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     },
+     {
+      "name": "src/locale/cs_CZ/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     },
+     {
+      "name": "src/locale/el_GR/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     },
+     {
+      "name": "src/locale/es_ES/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     },
+     {
+      "name": "src/locale/fi_FI/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     },
+     {
+      "name": "src/locale/he_IL/LC_MESSAGES/django.po",
+      "start": 403,
+      "end": 489
+     }
+    ],
+    "copies": 20,
+    "excerpt": {
+     "lines": [
+      "#: documents/models.py:586",
+      "msgid \"Gear\"",
+      "msgstr \"\"",
+      "",
+      "#: documents/models.py:587",
+      "msgid \"Globe\"",
+      "msgstr \"\"",
+      "",
+      "#: documents/models.py:588",
+      "msgid \"Hash\""
+     ],
+     "total": 87
+    },
+    "kind": "translations"
    },
    {
     "format": "gettext",
     "lines": 1096,
     "tokens": 4060,
-    "firstFile": {
+    "first": {
      "name": "src/locale/am_ET/LC_MESSAGES/django.po",
      "start": 1617,
      "end": 2712
     },
-    "secondFile": {
-     "name": "src/locale/hi_IN/LC_MESSAGES/django.po",
-     "start": 1617,
-     "end": 2712
-    }
+    "others": [
+     {
+      "name": "src/locale/hi_IN/LC_MESSAGES/django.po",
+      "start": 1617,
+      "end": 2712
+     }
+    ],
+    "copies": 2,
+    "kind": "translations"
    },
    {
     "format": "gettext",
     "lines": 999,
     "tokens": 3434,
-    "firstFile": {
+    "first": {
      "name": "src/locale/en_US/LC_MESSAGES/django.po",
      "start": 179,
      "end": 1177
     },
-    "secondFile": {
-     "name": "src/locale/mk_MK/LC_MESSAGES/django.po",
-     "start": 175,
-     "end": 1173
-    }
+    "others": [
+     {
+      "name": "src/locale/mk_MK/LC_MESSAGES/django.po",
+      "start": 175,
+      "end": 1173
+     }
+    ],
+    "copies": 2,
+    "kind": "translations"
+   },
+   {
+    "format": "gettext",
+    "lines": 187,
+    "tokens": 621,
+    "first": {
+     "name": "src/locale/af_ZA/LC_MESSAGES/django.po",
+     "start": 1184,
+     "end": 1370
+    },
+    "others": [
+     {
+      "name": "src/locale/am_ET/LC_MESSAGES/django.po",
+      "start": 1184,
+      "end": 1370
+     },
+     {
+      "name": "src/locale/be_BY/LC_MESSAGES/django.po",
+      "start": 1184,
+      "end": 1370
+     },
+     {
+      "name": "src/locale/fi_FI/LC_MESSAGES/django.po",
+      "start": 1184,
+      "end": 1370
+     },
+     {
+      "name": "src/locale/hi_IN/LC_MESSAGES/django.po",
+      "start": 1184,
+      "end": 1370
+     },
+     {
+      "name": "src/locale/lb_LU/LC_MESSAGES/django.po",
+      "start": 1184,
+      "end": 1370
+     }
+    ],
+    "copies": 6,
+    "kind": "translations"
+   },
+   {
+    "format": "gettext",
+    "lines": 115,
+    "tokens": 376,
+    "first": {
+     "name": "src/locale/af_ZA/LC_MESSAGES/django.po",
+     "start": 2114,
+     "end": 2228
+    },
+    "others": [
+     {
+      "name": "src/locale/bg_BG/LC_MESSAGES/django.po",
+      "start": 2115,
+      "end": 2229
+     },
+     {
+      "name": "src/locale/da_DK/LC_MESSAGES/django.po",
+      "start": 2115,
+      "end": 2229
+     },
+     {
+      "name": "src/locale/el_GR/LC_MESSAGES/django.po",
+      "start": 2115,
+      "end": 2229
+     },
+     {
+      "name": "src/locale/ja_JP/LC_MESSAGES/django.po",
+      "start": 2115,
+      "end": 2229
+     },
+     {
+      "name": "src/locale/nl_NL/LC_MESSAGES/django.po",
+      "start": 2115,
+      "end": 2229
+     },
+     {
+      "name": "src/locale/pt_PT/LC_MESSAGES/django.po",
+      "start": 2115,
+      "end": 2229
+     },
+     {
+      "name": "src/locale/uk_UA/LC_MESSAGES/django.po",
+      "start": 2115,
+      "end": 2229
+     }
+    ],
+    "copies": 8,
+    "kind": "translations"
+   },
+   {
+    "format": "gettext",
+    "lines": 103,
+    "tokens": 372,
+    "first": {
+     "name": "src/locale/af_ZA/LC_MESSAGES/django.po",
+     "start": 815,
+     "end": 917
+    },
+    "others": [
+     {
+      "name": "src/locale/am_ET/LC_MESSAGES/django.po",
+      "start": 815,
+      "end": 917
+     },
+     {
+      "name": "src/locale/be_BY/LC_MESSAGES/django.po",
+      "start": 815,
+      "end": 917
+     },
+     {
+      "name": "src/locale/fi_FI/LC_MESSAGES/django.po",
+      "start": 815,
+      "end": 917
+     },
+     {
+      "name": "src/locale/lb_LU/LC_MESSAGES/django.po",
+      "start": 815,
+      "end": 917
+     },
+     {
+      "name": "src/locale/lv_LV/LC_MESSAGES/django.po",
+      "start": 815,
+      "end": 917
+     },
+     {
+      "name": "src/locale/ms_MY/LC_MESSAGES/django.po",
+      "start": 815,
+      "end": 917
+     }
+    ],
+    "copies": 7,
+    "kind": "translations"
+   },
+   {
+    "format": "gettext",
+    "lines": 207,
+    "tokens": 696,
+    "first": {
+     "name": "src/locale/af_ZA/LC_MESSAGES/django.po",
+     "start": 283,
+     "end": 489
+    },
+    "others": [
+     {
+      "name": "src/locale/da_DK/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 489
+     },
+     {
+      "name": "src/locale/hr_HR/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 489
+     },
+     {
+      "name": "src/locale/nl_NL/LC_MESSAGES/django.po",
+      "start": 283,
+      "end": 489
+     }
+    ],
+    "copies": 4,
+    "kind": "translations"
    },
    {
     "format": "gettext",
     "lines": 619,
     "tokens": 2078,
-    "firstFile": {
+    "first": {
      "name": "src/locale/en_US/LC_MESSAGES/django.po",
      "start": 559,
      "end": 1177
     },
-    "secondFile": {
-     "name": "src/locale/et_EE/LC_MESSAGES/django.po",
-     "start": 555,
-     "end": 1173
-    }
-   },
-   {
-    "format": "gettext",
-    "lines": 515,
-    "tokens": 1735,
-    "firstFile": {
-     "name": "src/locale/am_ET/LC_MESSAGES/django.po",
-     "start": 659,
-     "end": 1173
-    },
-    "secondFile": {
-     "name": "src/locale/en_US/LC_MESSAGES/django.po",
-     "start": 663,
-     "end": 1177
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 67,
-    "tokens": 1652,
-    "firstFile": {
-     "name": ".mypy-baseline.txt",
-     "start": 472,
-     "end": 538
-    },
-    "secondFile": {
-     "name": ".mypy-baseline.txt",
-     "start": 473,
-     "end": 539
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 64,
-    "tokens": 1577,
-    "firstFile": {
-     "name": ".mypy-baseline.txt",
-     "start": 1454,
-     "end": 1517
-    },
-    "secondFile": {
-     "name": ".mypy-baseline.txt",
-     "start": 1455,
-     "end": 1518
-    }
-   },
-   {
-    "format": "gettext",
-    "lines": 454,
-    "tokens": 1572,
-    "firstFile": {
-     "name": "src/locale/am_ET/LC_MESSAGES/django.po",
-     "start": 1938,
-     "end": 2391
-    },
-    "secondFile": {
-     "name": "src/locale/en_US/LC_MESSAGES/django.po",
-     "start": 1969,
-     "end": 2422
-    }
+    "others": [
+     {
+      "name": "src/locale/et_EE/LC_MESSAGES/django.po",
+      "start": 555,
+      "end": 1173
+     }
+    ],
+    "copies": 2,
+    "kind": "translations"
    }
   ],
   "health": {
@@ -487,6 +739,327 @@
      "lines": 253
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 393,
+   "lines": 84591,
+   "tokens": 396983,
+   "clones": 103,
+   "duplicatedLines": 1522,
+   "duplicatedTokens": 6950,
+   "percentage": 1.8,
+   "percentageTokens": 1.75,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 133,
+     "lines": 48953,
+     "clones": 64,
+     "duplicatedLines": 922,
+     "percentage": 1.88
+    },
+    {
+     "format": "typescript",
+     "sources": 211,
+     "lines": 33419,
+     "clones": 39,
+     "duplicatedLines": 600,
+     "percentage": 1.8
+    },
+    {
+     "format": "bash",
+     "sources": 46,
+     "lines": 1919,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 2,
+     "lines": 126,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 58,
+     "tokens": 196,
+     "first": {
+      "name": "src/paperless/parsers/mail.py",
+      "start": 95,
+      "end": 152
+     },
+     "others": [
+      {
+       "name": "src/paperless/parsers/text.py",
+       "start": 62,
+       "end": 119
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "version: str = __full_version_str__",
+       "author: str = \"Paperless-ngx Contributors\"",
+       "url: str = \"https://github.com/paperless-ngx/paperless-ngx\"",
+       "",
+       "# ------------------------------------------------------------------",
+       "# Class methods",
+       "# ------------------------------------------------------------------",
+       "",
+       "@classmethod",
+       "def supported_mime_types(cls) -> dict[str, str]:"
+      ],
+      "total": 58
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 19,
+     "tokens": 84,
+     "first": {
+      "name": "src/paperless/parsers/mail.py",
+      "start": 181,
+      "end": 199
+     },
+     "others": [
+      {
+       "name": "src/paperless/parsers/remote.py",
+       "start": 216,
+       "end": 234
+      },
+      {
+       "name": "src/paperless/parsers/text.py",
+       "start": 143,
+       "end": 161
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "    self._mailrule_id: int | None = None",
+       "",
+       "def __enter__(self) -> Self:",
+       "    return self",
+       "",
+       "def __exit__(",
+       "    self,",
+       "    exc_type: type[BaseException] | None,",
+       "    exc_val: BaseException | None,",
+       "    exc_tb: TracebackType | None,"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 39,
+     "tokens": 155,
+     "first": {
+      "name": "src-ui/src/app/components/document-list/document-card-large/document-card-large.component.ts",
+      "start": 1,
+      "end": 39
+     },
+     "others": [
+      {
+       "name": "src-ui/src/app/components/document-list/document-card-small/document-card-small.component.ts",
+       "start": 1,
+       "end": 39
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import { AsyncPipe, NgOptimizedImage } from '@angular/common'",
+       "import {",
+       "  AfterViewInit,",
+       "  Component,",
+       "  EventEmitter,",
+       "  Output,",
+       "  ViewChild,",
+       "  inject,",
+       "  input,",
+       "} from '@angular/core'"
+      ],
+      "total": 39
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 50,
+     "first": {
+      "name": "src-ui/src/app/components/document-list/bulk-editor/bulk-editor.component.ts",
+      "start": 558,
+      "end": 566
+     },
+     "others": [
+      {
+       "name": "src-ui/src/app/components/document-list/bulk-editor/bulk-editor.component.ts",
+       "start": 599,
+       "end": 606
+      },
+      {
+       "name": "src-ui/src/app/components/document-list/bulk-editor/bulk-editor.component.ts",
+       "start": 637,
+       "end": 644
+      },
+      {
+       "name": "src-ui/src/app/components/document-list/bulk-editor/bulk-editor.component.ts",
+       "start": 675,
+       "end": 682
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 74,
+     "first": {
+      "name": "src/paperless/parsers/mail.py",
+      "start": 285,
+      "end": 306
+     },
+     "others": [
+      {
+       "name": "src/paperless/parsers/text.py",
+       "start": 187,
+       "end": 208
+      },
+      {
+       "name": "src/paperless/parsers/tika.py",
+       "start": 276,
+       "end": 297
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 35,
+     "tokens": 140,
+     "first": {
+      "name": "src-ui/setup-jest.ts",
+      "start": 16,
+      "end": 50
+     },
+     "others": [
+      {
+       "name": "src-ui/src/main.ts",
+       "start": 192,
+       "end": 226
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 30,
+     "tokens": 138,
+     "first": {
+      "name": "src/paperless/parsers/mail.py",
+      "start": 358,
+      "end": 387
+     },
+     "others": [
+      {
+       "name": "src/paperless/parsers/tika.py",
+       "start": 336,
+       "end": 365
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 33,
+     "tokens": 134,
+     "first": {
+      "name": "src-ui/setup-jest.ts",
+      "start": 52,
+      "end": 84
+     },
+     "others": [
+      {
+       "name": "src-ui/src/main.ts",
+       "start": 233,
+       "end": 265
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 29,
+     "tokens": 132,
+     "first": {
+      "name": "src/documents/bulk_edit.py",
+      "start": 938,
+      "end": 966
+     },
+     "others": [
+      {
+       "name": "src/documents/bulk_edit.py",
+       "start": 1065,
+       "end": 1093
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 59,
+     "first": {
+      "name": "src/paperless/parsers/remote.py",
+      "start": 95,
+      "end": 106
+     },
+     "others": [
+      {
+       "name": "src/paperless/parsers/text.py",
+       "start": 47,
+       "end": 58
+      },
+      {
+       "name": "src/paperless/parsers/tika.py",
+       "start": 71,
+       "end": 82
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:17:16.889Z",
+  "jscpdVersion": "5.4.0"
  }
 }

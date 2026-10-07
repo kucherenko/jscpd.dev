@@ -9,10 +9,12 @@
    "starsToday": 129,
    "headSha": "890dd42d017497c955a56a1d2cfc3f0af5bc2aa9",
    "sources": 1115,
-   "lines": 581778,
+   "lines": 568797,
    "clones": 4272,
-   "duplicatedLines": 148359,
-   "percentage": 25.5,
+   "duplicatedLines": 152089,
+   "percentage": 26.74,
+   "codePercentage": 4.08,
+   "codeSources": 240,
    "healthScore": 60.9,
    "healthGrade": "C"
   }
@@ -28,97 +30,97 @@
   "starsToday": 129,
   "defaultBranch": "main",
   "headSha": "890dd42d017497c955a56a1d2cfc3f0af5bc2aa9",
-  "durationMs": 2198,
+  "durationMs": 1686,
   "total": {
    "sources": 1115,
-   "lines": 581778,
-   "tokens": 2847099,
+   "lines": 568797,
+   "tokens": 2846934,
    "clones": 4272,
-   "duplicatedLines": 148359,
+   "duplicatedLines": 152089,
    "duplicatedTokens": 527855,
-   "percentage": 25.5,
+   "percentage": 26.74,
    "percentageTokens": 18.54
   },
   "formats": [
    {
     "format": "json",
     "sources": 208,
-    "lines": 344361,
+    "lines": 344213,
     "clones": 3448,
-    "duplicatedLines": 135190,
-    "percentage": 39.26
+    "duplicatedLines": 138638,
+    "percentage": 40.28
    },
    {
     "format": "python",
     "sources": 480,
-    "lines": 156541,
+    "lines": 150481,
     "clones": 597,
-    "duplicatedLines": 8788,
-    "percentage": 5.61
+    "duplicatedLines": 8854,
+    "percentage": 5.88
    },
    {
     "format": "apex",
     "sources": 4,
     "lines": 9540,
     "clones": 78,
-    "duplicatedLines": 1110,
-    "percentage": 11.64
+    "duplicatedLines": 1188,
+    "percentage": 12.45
    },
    {
     "format": "markdown",
     "sources": 267,
     "lines": 31456,
     "clones": 77,
-    "duplicatedLines": 1566,
-    "percentage": 4.98
+    "duplicatedLines": 1643,
+    "percentage": 5.22
    },
    {
     "format": "markup",
     "sources": 40,
     "lines": 4498,
     "clones": 37,
-    "duplicatedLines": 1240,
-    "percentage": 27.57
+    "duplicatedLines": 1277,
+    "percentage": 28.39
    },
    {
     "format": "yaml",
     "sources": 25,
-    "lines": 4071,
+    "lines": 3281,
     "clones": 10,
-    "duplicatedLines": 153,
-    "percentage": 3.76
+    "duplicatedLines": 163,
+    "percentage": 4.97
    },
    {
     "format": "latex",
     "sources": 24,
     "lines": 19200,
     "clones": 9,
-    "duplicatedLines": 50,
-    "percentage": 0.26
+    "duplicatedLines": 59,
+    "percentage": 0.31
    },
    {
     "format": "txt",
     "sources": 17,
     "lines": 2384,
     "clones": 8,
-    "duplicatedLines": 58,
-    "percentage": 2.43
+    "duplicatedLines": 66,
+    "percentage": 2.77
    },
    {
     "format": "toml",
     "sources": 5,
-    "lines": 2284,
+    "lines": 1736,
     "clones": 6,
-    "duplicatedLines": 192,
-    "percentage": 8.41
+    "duplicatedLines": 187,
+    "percentage": 10.77
    },
    {
     "format": "bash",
     "sources": 27,
-    "lines": 4504,
+    "lines": 1476,
     "clones": 1,
-    "duplicatedLines": 5,
-    "percentage": 0.11
+    "duplicatedLines": 6,
+    "percentage": 0.41
    }
   ],
   "topClones": [
@@ -126,151 +128,311 @@
     "format": "json",
     "lines": 5168,
     "tokens": 17552,
-    "firstFile": {
+    "first": {
      "name": "tests/data/xlsx/groundtruth/xlsx_01.xlsx.json",
      "start": 12,
      "end": 5179
     },
-    "secondFile": {
-     "name": "tests/data/xlsx/groundtruth/xlsx_04_inflated.xlsx.json",
-     "start": 12,
-     "end": 5179
-    }
+    "others": [
+     {
+      "name": "tests/data/xlsx/groundtruth/xlsx_04_inflated.xlsx.json",
+      "start": 12,
+      "end": 5179
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  \"children\": [],",
+      "  \"content_layer\": \"furniture\",",
+      "  \"name\": \"_root_\",",
+      "  \"label\": \"unspecified\"",
+      "},",
+      "\"body\": {",
+      "  \"self_ref\": \"#/body\",",
+      "  \"children\": [",
+      "    {",
+      "      \"$ref\": \"#/groups/0\""
+     ],
+     "total": 5168
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "apex",
+    "lines": 276,
+    "tokens": 3151,
+    "first": {
+     "name": "tests/data/latex/sources/2501.00089/aastex631.cls",
+     "start": 3817,
+     "end": 4092
+    },
+    "others": [
+     {
+      "name": "tests/data/latex/sources/2501.00089/aastex631.cls",
+      "start": 4124,
+      "end": 4399
+     },
+     {
+      "name": "tests/data/latex/sources/2501.00089/aastex631.cls",
+      "start": 4440,
+      "end": 4715
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "\\ifcase\\totalcolumncount%",
+      "\\or%",
+      "\\csname tab1\\endcsname%",
+      "\\or%",
+      "\\csname tab1\\endcsname&\\csname tab2\\endcsname%",
+      "\\or%",
+      "\\csname tab1\\endcsname&\\csname tab2\\endcsname&%",
+      "\\csname tab3\\endcsname%",
+      "\\or%",
+      "\\csname tab1\\endcsname&\\csname tab2\\endcsname&%"
+     ],
+     "total": 276
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 466,
+    "tokens": 1630,
+    "first": {
+     "name": "tests/data/csv/groundtruth/csv-comma.csv.json",
+     "start": 885,
+     "end": 1350
+    },
+    "others": [
+     {
+      "name": "tests/data/csv/groundtruth/csv-pipe.csv.json",
+      "start": 885,
+      "end": 1350
+     },
+     {
+      "name": "tests/data/csv/groundtruth/csv-semicolon.csv.json",
+      "start": 885,
+      "end": 1350
+     },
+     {
+      "name": "tests/data/csv/groundtruth/csv-tab.csv.json",
+      "start": 885,
+      "end": 1350
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "  \"text\": \"Martin, Lang and Andrade\",",
+      "  \"column_header\": false,",
+      "  \"row_header\": false,",
+      "  \"row_section\": false,",
+      "  \"fillable\": false",
+      "},",
+      "{",
+      "  \"row_span\": 1,",
+      "  \"col_span\": 1,",
+      "  \"start_row_offset_idx\": 5,"
+     ],
+     "total": 466
+    },
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 1309,
     "tokens": 4563,
-    "firstFile": {
+    "first": {
      "name": "tests/data/ppt/groundtruth/legacy_sample.ppt.json",
      "start": 1021,
      "end": 2329
     },
-    "secondFile": {
-     "name": "tests/data/pptx/groundtruth/powerpoint_sample.pptx.json",
-     "start": 1021,
-     "end": 2329
-    }
+    "others": [
+     {
+      "name": "tests/data/pptx/groundtruth/powerpoint_sample.pptx.json",
+      "start": 1021,
+      "end": 2329
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
-    "format": "apex",
-    "lines": 276,
-    "tokens": 3151,
-    "firstFile": {
-     "name": "tests/data/latex/sources/2501.00089/aastex631.cls",
-     "start": 3817,
-     "end": 4092
+    "format": "json",
+    "lines": 365,
+    "tokens": 1291,
+    "first": {
+     "name": "tests/data/csv/groundtruth/csv-comma.csv.json",
+     "start": 40,
+     "end": 404
     },
-    "secondFile": {
-     "name": "tests/data/latex/sources/2501.00089/aastex631.cls",
-     "start": 4124,
-     "end": 4399
-    }
+    "others": [
+     {
+      "name": "tests/data/csv/groundtruth/csv-pipe.csv.json",
+      "start": 40,
+      "end": 404
+     },
+     {
+      "name": "tests/data/csv/groundtruth/csv-semicolon.csv.json",
+      "start": 40,
+      "end": 404
+     },
+     {
+      "name": "tests/data/csv/groundtruth/csv-tab.csv.json",
+      "start": 40,
+      "end": 404
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
-    "format": "apex",
-    "lines": 276,
-    "tokens": 3151,
-    "firstFile": {
-     "name": "tests/data/latex/sources/2501.00089/aastex631.cls",
-     "start": 3817,
-     "end": 4092
+    "format": "markup",
+    "lines": 172,
+    "tokens": 881,
+    "first": {
+     "name": "tests/data/docx/groundtruth/docx_rich_cells.docx.html",
+     "start": 5,
+     "end": 176
     },
-    "secondFile": {
-     "name": "tests/data/latex/sources/2501.00089/aastex631.cls",
-     "start": 4440,
-     "end": 4715
-    }
+    "others": [
+     {
+      "name": "tests/data/docx/groundtruth/word_tables.docx.html",
+      "start": 5,
+      "end": 176
+     },
+     {
+      "name": "tests/data/odf/groundtruth/odf_presentation_01.odp.html",
+      "start": 5,
+      "end": 176
+     },
+     {
+      "name": "tests/data/odf/groundtruth/odf_table_with_title_01.ods.html",
+      "start": 5,
+      "end": 176
+     },
+     {
+      "name": "tests/data/odf/groundtruth/text_document_01.odt.html",
+      "start": 5,
+      "end": 176
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 833,
     "tokens": 2896,
-    "firstFile": {
+    "first": {
      "name": "tests/data/odf/groundtruth/odf_presentation_01.odp.json",
      "start": 2981,
      "end": 3813
     },
-    "secondFile": {
-     "name": "tests/data/ppt/groundtruth/legacy_sample.ppt.json",
-     "start": 1494,
-     "end": 2326
-    }
+    "others": [
+     {
+      "name": "tests/data/ppt/groundtruth/legacy_sample.ppt.json",
+      "start": 1494,
+      "end": 2326
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 984,
     "tokens": 2811,
-    "firstFile": {
+    "first": {
      "name": "docs/examples/data/normal_4pages.json",
      "start": 280,
      "end": 1263
     },
-    "secondFile": {
-     "name": "tests/data/pdf/groundtruth/normal_4pages.json",
-     "start": 305,
-     "end": 1288
-    }
+    "others": [
+     {
+      "name": "tests/data/pdf/groundtruth/normal_4pages.json",
+      "start": 305,
+      "end": 1288
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 15,
+    "tokens": 54,
+    "first": {
+     "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+     "start": 17497,
+     "end": 17511
+    },
+    "others": [
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 17591,
+      "end": 17605
+     },
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 17685,
+      "end": 17699
+     },
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 17805,
+      "end": 17819
+     },
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 18060,
+      "end": 18074
+     },
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 18123,
+      "end": 18137
+     },
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 18186,
+      "end": 18200
+     },
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 18424,
+      "end": 18438
+     },
+     {
+      "name": "tests/data/html/groundtruth/wiki_duck.html.json",
+      "start": 18487,
+      "end": 18501
+     }
+    ],
+    "copies": 50,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 734,
     "tokens": 2564,
-    "firstFile": {
+    "first": {
      "name": "tests/data/xbrl/groundtruth/grve_10q_htm.xml.json",
      "start": 1387,
      "end": 2120
     },
-    "secondFile": {
-     "name": "tests/data/xbrl/groundtruth/grve_10q_htm.xml.json",
-     "start": 2315,
-     "end": 3048
-    }
-   },
-   {
-    "format": "json",
-    "lines": 730,
-    "tokens": 2536,
-    "firstFile": {
-     "name": "tests/data/xlsx/groundtruth/xlsx_03_chartsheet.xlsx.json",
-     "start": 766,
-     "end": 1495
-    },
-    "secondFile": {
-     "name": "tests/data/xlsx/groundtruth/xlsx_comments.xlsx.json",
-     "start": 377,
-     "end": 1106
-    }
-   },
-   {
-    "format": "json",
-    "lines": 678,
-    "tokens": 2282,
-    "firstFile": {
-     "name": "docs/examples/data/normal_4pages.json",
-     "start": 2685,
-     "end": 3362
-    },
-    "secondFile": {
-     "name": "tests/data/pdf/groundtruth/normal_4pages.json",
-     "start": 2683,
-     "end": 3360
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 68,
-    "tokens": 1808,
-    "firstFile": {
-     "name": "tests/data/xbrl/groundtruth/mlac-20251231.xml.md:markdown",
-     "start": 87,
-     "end": 154
-    },
-    "secondFile": {
-     "name": "tests/data/xbrl/groundtruth/mlac-20251231.xml.md:markdown",
-     "start": 210,
-     "end": 277
-    }
+    "others": [
+     {
+      "name": "tests/data/xbrl/groundtruth/grve_10q_htm.xml.json",
+      "start": 2315,
+      "end": 3048
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -487,6 +649,321 @@
      "lines": 55
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 240,
+   "lines": 89007,
+   "tokens": 424493,
+   "clones": 202,
+   "duplicatedLines": 3635,
+   "duplicatedTokens": 17836,
+   "percentage": 4.08,
+   "percentageTokens": 4.2,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 227,
+     "lines": 87680,
+     "clones": 202,
+     "duplicatedLines": 3635,
+     "percentage": 4.15
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 1153,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 266,
+     "tokens": 1235,
+     "first": {
+      "name": "docling/models/stages/ocr/_nemotron_ocr_model.py",
+      "start": 175,
+      "end": 440
+     },
+     "others": [
+      {
+       "name": "docling/models/stages/ocr/nemotron_ocr_model.py",
+       "start": 206,
+       "end": 471
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "raise OcrLanguageNotSupportedError(",
+       "    self._engine_name,",
+       "    language.tag(),",
+       "    supported=self.supported_ocr_languages(),",
+       "    detail=(",
+       "        \"nemotron-OCR-v2 ships an English and a multilingual recognizer \"",
+       "        \"only; write 'multilingual' to run the multilingual one.\"",
+       "    ),",
+       ")",
+       ""
+      ],
+      "total": 266
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 48,
+     "tokens": 270,
+     "first": {
+      "name": "docling/backend/msexcel_backend.py",
+      "start": 1554,
+      "end": 1601
+     },
+     "others": [
+      {
+       "name": "docling/backend/mspowerpoint_backend.py",
+       "start": 1068,
+       "end": 1115
+      },
+      {
+       "name": "docling/backend/msword_backend.py",
+       "start": 3665,
+       "end": 3712
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "    columns.append((name, values))",
+       "",
+       "num_data_rows = max([len(categories)] + [len(values) for _, values in columns])",
+       "if num_data_rows == 0:",
+       "    return None",
+       "",
+       "num_rows = num_data_rows + 1",
+       "num_cols = 1 + len(columns)",
+       "cells: list[TableCell] = []",
+       ""
+      ],
+      "total": 48
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 105,
+     "tokens": 366,
+     "first": {
+      "name": "docling/models/stages/ocr/_nemotron_ocr_model.py",
+      "start": 57,
+      "end": 161
+     },
+     "others": [
+      {
+       "name": "docling/models/stages/ocr/nemotron_ocr_model.py",
+       "start": 76,
+       "end": 181
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "# Mappings of nemotron language to the artifacts subdir. Also nemotron's own native vocabulary",
+       "_NEMOTRON_CODE_TO_ARTIFACT = {",
+       "    \"english\": \"v2_english\",",
+       "    \"multilingual\": \"v2_multilingual\",",
+       "}",
+       "",
+       "",
+       "def nemotron_ocr_model_dir() -> str:",
+       "    return _NEMOTRON_OCR_REPO_ID.replace(\"/\", \"--\")",
+       ""
+      ],
+      "total": 105
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 72,
+     "first": {
+      "name": "docling/datamodel/asr_model_specs.py",
+      "start": 55,
+      "end": 69
+     },
+     "others": [
+      {
+       "name": "docling/datamodel/asr_model_specs.py",
+       "start": 97,
+       "end": 111
+      },
+      {
+       "name": "docling/datamodel/asr_model_specs.py",
+       "start": 139,
+       "end": 153
+      },
+      {
+       "name": "docling/datamodel/asr_model_specs.py",
+       "start": 181,
+       "end": 195
+      },
+      {
+       "name": "docling/datamodel/asr_model_specs.py",
+       "start": 223,
+       "end": 237
+      },
+      {
+       "name": "docling/datamodel/asr_model_specs.py",
+       "start": 265,
+       "end": 279
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 52,
+     "tokens": 276,
+     "first": {
+      "name": "docling/backend/xml/uspto_backend.py",
+      "start": 580,
+      "end": 631
+     },
+     "others": [
+      {
+       "name": "docling/backend/xml/uspto_backend.py",
+       "start": 1155,
+       "end": 1206
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 127,
+     "first": {
+      "name": "docling/models/extraction/nuextract_transformers_model.py",
+      "start": 190,
+      "end": 206
+     },
+     "others": [
+      {
+       "name": "docling/models/extraction/transformers_extraction_model.py",
+       "start": 125,
+       "end": 141
+      },
+      {
+       "name": "docling/models/vlm_pipeline_models/hf_transformers_model.py",
+       "start": 264,
+       "end": 280
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 48,
+     "tokens": 251,
+     "first": {
+      "name": "docling/backend/xml/uspto_backend.py",
+      "start": 233,
+      "end": 280
+     },
+     "others": [
+      {
+       "name": "docling/backend/xml/uspto_backend.py",
+       "start": 584,
+       "end": 631
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 122,
+     "first": {
+      "name": "docling/backend/xml/uspto_backend.py",
+      "start": 343,
+      "end": 365
+     },
+     "others": [
+      {
+       "name": "docling/backend/xml/uspto_backend.py",
+       "start": 692,
+       "end": 714
+      },
+      {
+       "name": "docling/backend/xml/uspto_backend.py",
+       "start": 1267,
+       "end": 1289
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 238,
+     "first": {
+      "name": "docling/models/inference_engines/image_classification/api_kserve_v2_engine.py",
+      "start": 95,
+      "end": 136
+     },
+     "others": [
+      {
+       "name": "docling/models/inference_engines/object_detection/api_kserve_v2_engine.py",
+       "start": 109,
+       "end": 150
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 220,
+     "first": {
+      "name": "docling/backend/xml/uspto_backend.py",
+      "start": 392,
+      "end": 433
+     },
+     "others": [
+      {
+       "name": "docling/backend/xml/uspto_backend.py",
+       "start": 1313,
+       "end": 1354
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:14:02.471Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 560,
    "headSha": "39d849138ef254f6c737ab4c4705e5545dbe31d4",
    "sources": 157,
-   "lines": 88987,
-   "clones": 168,
-   "duplicatedLines": 3881,
-   "percentage": 4.36,
+   "lines": 72361,
+   "clones": 176,
+   "duplicatedLines": 3786,
+   "percentage": 5.23,
+   "codePercentage": 5.44,
+   "codeSources": 117,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,65 +30,65 @@
   "starsToday": 560,
   "defaultBranch": "main",
   "headSha": "39d849138ef254f6c737ab4c4705e5545dbe31d4",
-  "durationMs": 536,
+  "durationMs": 772,
   "total": {
    "sources": 157,
-   "lines": 88987,
-   "tokens": 397214,
-   "clones": 168,
-   "duplicatedLines": 3881,
-   "duplicatedTokens": 21994,
-   "percentage": 4.36,
-   "percentageTokens": 5.54
+   "lines": 72361,
+   "tokens": 397049,
+   "clones": 176,
+   "duplicatedLines": 3786,
+   "duplicatedTokens": 22383,
+   "percentage": 5.23,
+   "percentageTokens": 5.64
   },
   "formats": [
    {
     "format": "python",
     "sources": 59,
     "lines": 30661,
-    "clones": 71,
-    "duplicatedLines": 1634,
-    "percentage": 5.33
+    "clones": 72,
+    "duplicatedLines": 1717,
+    "percentage": 5.6
    },
    {
     "format": "css",
     "sources": 16,
-    "lines": 20441,
-    "clones": 38,
-    "duplicatedLines": 1207,
-    "percentage": 5.9
+    "lines": 9300,
+    "clones": 42,
+    "duplicatedLines": 1120,
+    "percentage": 12.04
    },
    {
     "format": "javascript",
     "sources": 23,
-    "lines": 10072,
-    "clones": 33,
-    "duplicatedLines": 625,
-    "percentage": 6.21
+    "lines": 5304,
+    "clones": 36,
+    "duplicatedLines": 533,
+    "percentage": 10.05
    },
    {
     "format": "html",
     "sources": 15,
-    "lines": 2619,
+    "lines": 2374,
     "clones": 21,
-    "duplicatedLines": 331,
-    "percentage": 12.64
+    "duplicatedLines": 330,
+    "percentage": 13.9
    },
    {
     "format": "yaml",
     "sources": 3,
     "lines": 574,
     "clones": 4,
-    "duplicatedLines": 58,
-    "percentage": 10.1
+    "duplicatedLines": 59,
+    "percentage": 10.28
    },
    {
     "format": "markdown",
     "sources": 3,
     "lines": 435,
     "clones": 1,
-    "duplicatedLines": 26,
-    "percentage": 5.98
+    "duplicatedLines": 27,
+    "percentage": 6.21
    },
    {
     "format": "vue",
@@ -107,7 +109,7 @@
    {
     "format": "bash",
     "sources": 11,
-    "lines": 1038,
+    "lines": 678,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -115,7 +117,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -123,155 +125,602 @@
   ],
   "topClones": [
    {
+    "format": "css",
+    "lines": 109,
+    "tokens": 486,
+    "first": {
+     "name": "frontend/src/views/InteractionView.vue:css",
+     "start": 222,
+     "end": 330
+    },
+    "others": [
+     {
+      "name": "frontend/src/views/ReportView.vue:css",
+      "start": 221,
+      "end": 329
+     },
+     {
+      "name": "frontend/src/views/SimulationRunView.vue:css",
+      "start": 319,
+      "end": 427
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      ".main-view {",
+      "  height: 100vh;",
+      "  display: flex;",
+      "  flex-direction: column;",
+      "  background: #FFF;",
+      "  overflow: hidden;",
+      "  font-family: 'Space Grotesk', 'Noto Sans SC', system-ui, sans-serif;",
+      "}",
+      "",
+      "/* Header */"
+     ],
+     "total": 109
+    },
+    "kind": "code"
+   },
+   {
     "format": "python",
     "lines": 176,
     "tokens": 913,
-    "firstFile": {
+    "first": {
      "name": "backend/scripts/run_reddit_simulation.py",
      "start": 127,
      "end": 302
     },
-    "secondFile": {
-     "name": "backend/scripts/run_twitter_simulation.py",
-     "start": 127,
-     "end": 302
-    }
+    "others": [
+     {
+      "name": "backend/scripts/run_twitter_simulation.py",
+      "start": 127,
+      "end": 302
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    )",
+      "except ImportError as e:",
+      "    print(f\"错误: 缺少依赖 {e}\")",
+      "    print(\"请先安装: pip install oasis-ai camel-ai\")",
+      "    sys.exit(1)",
+      "",
+      "",
+      "# IPC相关常量",
+      "IPC_COMMANDS_DIR = \"ipc_commands\"",
+      "IPC_RESPONSES_DIR = \"ipc_responses\""
+     ],
+     "total": 176
+    },
+    "kind": "code"
    },
    {
     "format": "css",
     "lines": 142,
     "tokens": 717,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/components/Step4Report.vue:css",
      "start": 2323,
      "end": 2464
     },
-    "secondFile": {
-     "name": "frontend/src/components/Step5Interaction.vue:css",
-     "start": 986,
-     "end": 1127
-    }
+    "others": [
+     {
+      "name": "frontend/src/components/Step5Interaction.vue:css",
+      "start": 986,
+      "end": 1127
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "/* Left Panel - Report Style */",
+      ".left-panel.report-style {",
+      "  width: 45%;",
+      "  min-width: 450px;",
+      "  background: #FFFFFF;",
+      "  border-right: 1px solid #E5E7EB;",
+      "  overflow-y: auto;",
+      "  display: flex;",
+      "  flex-direction: column;",
+      "  padding: 30px 50px 60px 50px;"
+     ],
+     "total": 142
+    },
+    "kind": "code"
+   },
+   {
+    "format": "html",
+    "lines": 26,
+    "tokens": 157,
+    "first": {
+     "name": "frontend/src/views/InteractionView.vue:html",
+     "start": 2,
+     "end": 27
+    },
+    "others": [
+     {
+      "name": "frontend/src/views/MainView.vue:html",
+      "start": 2,
+      "end": 27
+     },
+     {
+      "name": "frontend/src/views/ReportView.vue:html",
+      "start": 2,
+      "end": 27
+     },
+     {
+      "name": "frontend/src/views/SimulationRunView.vue:html",
+      "start": 2,
+      "end": 27
+     },
+     {
+      "name": "frontend/src/views/SimulationView.vue:html",
+      "start": 2,
+      "end": 27
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    },
    {
     "format": "html",
     "lines": 78,
     "tokens": 612,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/components/Step4Report.vue:html",
      "start": 2,
      "end": 79
     },
-    "secondFile": {
-     "name": "frontend/src/components/Step5Interaction.vue:html",
-     "start": 2,
-     "end": 79
-    }
+    "others": [
+     {
+      "name": "frontend/src/components/Step5Interaction.vue:html",
+      "start": 2,
+      "end": 79
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 113,
     "tokens": 586,
-    "firstFile": {
+    "first": {
      "name": "backend/scripts/run_reddit_simulation.py",
      "start": 13,
      "end": 125
     },
-    "secondFile": {
-     "name": "backend/scripts/run_twitter_simulation.py",
-     "start": 13,
-     "end": 125
-    }
+    "others": [
+     {
+      "name": "backend/scripts/run_twitter_simulation.py",
+      "start": 13,
+      "end": 125
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 108,
     "tokens": 568,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/components/Step4Report.vue:javascript",
      "start": 1872,
      "end": 1979
     },
-    "secondFile": {
-     "name": "frontend/src/components/Step5Interaction.vue:javascript",
-     "start": 555,
-     "end": 645
-    }
+    "others": [
+     {
+      "name": "frontend/src/components/Step5Interaction.vue:javascript",
+      "start": 555,
+      "end": 645
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 27,
     "tokens": 522,
-    "firstFile": {
+    "first": {
      "name": "README-ZH.md:markdown",
      "start": 1,
      "end": 27
     },
-    "secondFile": {
-     "name": "README.md:markdown",
-     "start": 1,
-     "end": 27
-    }
+    "others": [
+     {
+      "name": "README.md:markdown",
+      "start": 1,
+      "end": 27
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "javascript",
     "lines": 96,
     "tokens": 512,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/views/InteractionView.vue:javascript",
      "start": 121,
      "end": 216
     },
-    "secondFile": {
-     "name": "frontend/src/views/ReportView.vue:javascript",
-     "start": 120,
-     "end": 215
-    }
+    "others": [
+     {
+      "name": "frontend/src/views/ReportView.vue:javascript",
+      "start": 120,
+      "end": 215
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
-    "format": "css",
-    "lines": 109,
-    "tokens": 493,
-    "firstFile": {
-     "name": "frontend/src/views/InteractionView.vue:css",
-     "start": 222,
-     "end": 330
+    "format": "python",
+    "lines": 63,
+    "tokens": 255,
+    "first": {
+     "name": "backend/scripts/run_parallel_simulation.py",
+     "start": 519,
+     "end": 581
     },
-    "secondFile": {
-     "name": "frontend/src/views/SimulationRunView.vue:css",
-     "start": 319,
-     "end": 427
-    }
-   },
-   {
-    "format": "css",
-    "lines": 109,
-    "tokens": 486,
-    "firstFile": {
-     "name": "frontend/src/views/InteractionView.vue:css",
-     "start": 222,
-     "end": 330
-    },
-    "secondFile": {
-     "name": "frontend/src/views/ReportView.vue:css",
-     "start": 221,
-     "end": 329
-    }
-   },
-   {
-    "format": "css",
-    "lines": 98,
-    "tokens": 477,
-    "firstFile": {
-     "name": "frontend/src/views/InteractionView.vue:css",
-     "start": 255,
-     "end": 352
-    },
-    "secondFile": {
-     "name": "frontend/src/views/SimulationView.vue:css",
-     "start": 339,
-     "end": 437
-    }
+    "others": [
+     {
+      "name": "backend/scripts/run_reddit_simulation.py",
+      "start": 302,
+      "end": 364
+     },
+     {
+      "name": "backend/scripts/run_twitter_simulation.py",
+      "start": 302,
+      "end": 364
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 117,
+   "lines": 64079,
+   "tokens": 357359,
+   "clones": 156,
+   "duplicatedLines": 3486,
+   "duplicatedTokens": 20489,
+   "percentage": 5.44,
+   "percentageTokens": 5.73,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 38,
+     "lines": 25853,
+     "clones": 57,
+     "duplicatedLines": 1503,
+     "percentage": 5.81
+    },
+    {
+     "format": "css",
+     "sources": 16,
+     "lines": 9300,
+     "clones": 42,
+     "duplicatedLines": 1120,
+     "percentage": 12.04
+    },
+    {
+     "format": "javascript",
+     "sources": 22,
+     "lines": 5277,
+     "clones": 36,
+     "duplicatedLines": 533,
+     "percentage": 10.1
+    },
+    {
+     "format": "html",
+     "sources": 15,
+     "lines": 2374,
+     "clones": 21,
+     "duplicatedLines": 330,
+     "percentage": 13.9
+    },
+    {
+     "format": "vue",
+     "sources": 16,
+     "lines": 20457,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "css",
+     "lines": 109,
+     "tokens": 486,
+     "first": {
+      "name": "frontend/src/views/InteractionView.vue:css",
+      "start": 222,
+      "end": 330
+     },
+     "others": [
+      {
+       "name": "frontend/src/views/ReportView.vue:css",
+       "start": 221,
+       "end": 329
+      },
+      {
+       "name": "frontend/src/views/SimulationRunView.vue:css",
+       "start": 319,
+       "end": 427
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       ".main-view {",
+       "  height: 100vh;",
+       "  display: flex;",
+       "  flex-direction: column;",
+       "  background: #FFF;",
+       "  overflow: hidden;",
+       "  font-family: 'Space Grotesk', 'Noto Sans SC', system-ui, sans-serif;",
+       "}",
+       "",
+       "/* Header */"
+      ],
+      "total": 109
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 176,
+     "tokens": 913,
+     "first": {
+      "name": "backend/scripts/run_reddit_simulation.py",
+      "start": 127,
+      "end": 302
+     },
+     "others": [
+      {
+       "name": "backend/scripts/run_twitter_simulation.py",
+       "start": 127,
+       "end": 302
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    )",
+       "except ImportError as e:",
+       "    print(f\"错误: 缺少依赖 {e}\")",
+       "    print(\"请先安装: pip install oasis-ai camel-ai\")",
+       "    sys.exit(1)",
+       "",
+       "",
+       "# IPC相关常量",
+       "IPC_COMMANDS_DIR = \"ipc_commands\"",
+       "IPC_RESPONSES_DIR = \"ipc_responses\""
+      ],
+      "total": 176
+     },
+     "kind": "code"
+    },
+    {
+     "format": "css",
+     "lines": 142,
+     "tokens": 717,
+     "first": {
+      "name": "frontend/src/components/Step4Report.vue:css",
+      "start": 2323,
+      "end": 2464
+     },
+     "others": [
+      {
+       "name": "frontend/src/components/Step5Interaction.vue:css",
+       "start": 986,
+       "end": 1127
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "/* Left Panel - Report Style */",
+       ".left-panel.report-style {",
+       "  width: 45%;",
+       "  min-width: 450px;",
+       "  background: #FFFFFF;",
+       "  border-right: 1px solid #E5E7EB;",
+       "  overflow-y: auto;",
+       "  display: flex;",
+       "  flex-direction: column;",
+       "  padding: 30px 50px 60px 50px;"
+      ],
+      "total": 142
+     },
+     "kind": "code"
+    },
+    {
+     "format": "html",
+     "lines": 26,
+     "tokens": 157,
+     "first": {
+      "name": "frontend/src/views/InteractionView.vue:html",
+      "start": 2,
+      "end": 27
+     },
+     "others": [
+      {
+       "name": "frontend/src/views/MainView.vue:html",
+       "start": 2,
+       "end": 27
+      },
+      {
+       "name": "frontend/src/views/ReportView.vue:html",
+       "start": 2,
+       "end": 27
+      },
+      {
+       "name": "frontend/src/views/SimulationRunView.vue:html",
+       "start": 2,
+       "end": 27
+      },
+      {
+       "name": "frontend/src/views/SimulationView.vue:html",
+       "start": 2,
+       "end": 27
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "html",
+     "lines": 78,
+     "tokens": 612,
+     "first": {
+      "name": "frontend/src/components/Step4Report.vue:html",
+      "start": 2,
+      "end": 79
+     },
+     "others": [
+      {
+       "name": "frontend/src/components/Step5Interaction.vue:html",
+       "start": 2,
+       "end": 79
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 113,
+     "tokens": 586,
+     "first": {
+      "name": "backend/scripts/run_reddit_simulation.py",
+      "start": 13,
+      "end": 125
+     },
+     "others": [
+      {
+       "name": "backend/scripts/run_twitter_simulation.py",
+       "start": 13,
+       "end": 125
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 108,
+     "tokens": 568,
+     "first": {
+      "name": "frontend/src/components/Step4Report.vue:javascript",
+      "start": 1872,
+      "end": 1979
+     },
+     "others": [
+      {
+       "name": "frontend/src/components/Step5Interaction.vue:javascript",
+       "start": 555,
+       "end": 645
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 96,
+     "tokens": 512,
+     "first": {
+      "name": "frontend/src/views/InteractionView.vue:javascript",
+      "start": 121,
+      "end": 216
+     },
+     "others": [
+      {
+       "name": "frontend/src/views/ReportView.vue:javascript",
+       "start": 120,
+       "end": 215
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 63,
+     "tokens": 255,
+     "first": {
+      "name": "backend/scripts/run_parallel_simulation.py",
+      "start": 519,
+      "end": 581
+     },
+     "others": [
+      {
+       "name": "backend/scripts/run_reddit_simulation.py",
+       "start": 302,
+       "end": 364
+      },
+      {
+       "name": "backend/scripts/run_twitter_simulation.py",
+       "start": 302,
+       "end": 364
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 107,
+     "tokens": 461,
+     "first": {
+      "name": "backend/scripts/run_parallel_simulation.py",
+      "start": 1187,
+      "end": 1293
+     },
+     "others": [
+      {
+       "name": "backend/scripts/run_parallel_simulation.py",
+       "start": 1386,
+       "end": 1492
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:04:11.575Z",
+  "jscpdVersion": "5.4.0"
  }
 }

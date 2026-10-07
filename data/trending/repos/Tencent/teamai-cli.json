@@ -9,10 +9,12 @@
    "starsToday": 556,
    "headSha": "4068f6f32960847aa7084a6fdffbf75bdfca2204",
    "sources": 563,
-   "lines": 149987,
-   "clones": 757,
-   "duplicatedLines": 9804,
-   "percentage": 6.54,
+   "lines": 136733,
+   "clones": 899,
+   "duplicatedLines": 10333,
+   "percentage": 7.56,
+   "codePercentage": 1.87,
+   "codeSources": 244,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 841,
    "headSha": "7b8e95de3e865150c007756084462724c9ce0963",
    "sources": 567,
-   "lines": 151992,
-   "clones": 772,
-   "duplicatedLines": 9989,
-   "percentage": 6.57,
+   "lines": 138477,
+   "clones": 916,
+   "duplicatedLines": 10479,
+   "percentage": 7.57,
+   "codePercentage": 1.85,
+   "codeSources": 244,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,70 +46,70 @@
   "starsToday": 841,
   "defaultBranch": "main",
   "headSha": "7b8e95de3e865150c007756084462724c9ce0963",
-  "durationMs": 631,
+  "durationMs": 360,
   "total": {
    "sources": 567,
-   "lines": 151992,
-   "tokens": 894160,
-   "clones": 772,
-   "duplicatedLines": 9989,
-   "duplicatedTokens": 64863,
-   "percentage": 6.57,
-   "percentageTokens": 7.25
+   "lines": 138477,
+   "tokens": 893995,
+   "clones": 916,
+   "duplicatedLines": 10479,
+   "duplicatedTokens": 71245,
+   "percentage": 7.57,
+   "percentageTokens": 7.97
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 474,
     "lines": 124129,
-    "clones": 748,
-    "duplicatedLines": 8430,
-    "percentage": 6.79
+    "clones": 892,
+    "duplicatedLines": 10194,
+    "percentage": 8.21
    },
    {
     "format": "markdown",
     "sources": 31,
     "lines": 9845,
     "clones": 8,
-    "duplicatedLines": 115,
-    "percentage": 1.17
+    "duplicatedLines": 123,
+    "percentage": 1.25
    },
    {
     "format": "yaml",
     "sources": 10,
-    "lines": 3649,
+    "lines": 815,
     "clones": 6,
-    "duplicatedLines": 707,
-    "percentage": 19.38
+    "duplicatedLines": 85,
+    "percentage": 10.43
    },
    {
     "format": "bash",
     "sources": 18,
-    "lines": 5714,
+    "lines": 1219,
     "clones": 5,
-    "duplicatedLines": 163,
-    "percentage": 2.85
+    "duplicatedLines": 26,
+    "percentage": 2.13
    },
    {
     "format": "markup",
     "sources": 3,
     "lines": 55,
     "clones": 3,
-    "duplicatedLines": 28,
-    "percentage": 50.91
+    "duplicatedLines": 31,
+    "percentage": 56.36
    },
    {
     "format": "text",
     "sources": 19,
-    "lines": 7011,
+    "lines": 1149,
     "clones": 2,
-    "duplicatedLines": 546,
-    "percentage": 7.79
+    "duplicatedLines": 20,
+    "percentage": 1.74
    },
    {
     "format": "json",
     "sources": 8,
-    "lines": 844,
+    "lines": 514,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -121,7 +125,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,152 +144,811 @@
     "format": "markdown",
     "lines": 30,
     "tokens": 1935,
-    "firstFile": {
+    "first": {
      "name": "README.md:markdown",
      "start": 69,
      "end": 98
     },
-    "secondFile": {
-     "name": "README.zh-CN.md:markdown",
-     "start": 69,
-     "end": 98
-    }
+    "others": [
+     {
+      "name": "README.zh-CN.md:markdown",
+      "start": 69,
+      "end": 98
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<table>",
+      "  <thead>",
+      "    <tr>",
+      "      <th rowspan=\"2\">Agent</th>",
+      "      <th colspan=\"7\">Team Execution</th>",
+      "      <th colspan=\"3\">Team Context (beta)</th>",
+      "      <th colspan=\"3\">Team Improvement (beta)</th>",
+      "    </tr>",
+      "    <tr>",
+      "      <th>skills</th><th>rules</th><th>docs</th><th>env</th><th>agents</th><th>hooks</th><th>mcp</th>"
+     ],
+     "total": 30
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 55,
+    "first": {
+     "name": "src/__tests__/agent-skills.test.ts",
+     "start": 8,
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "src/__tests__/builtin-agents.test.ts",
+      "start": 9,
+      "end": 18
+     },
+     {
+      "name": "src/__tests__/coauthor-reconcile.test.ts",
+      "start": 8,
+      "end": 17
+     },
+     {
+      "name": "src/__tests__/gf-org.test.ts",
+      "start": 10,
+      "end": 19
+     },
+     {
+      "name": "src/__tests__/git.test.ts",
+      "start": 47,
+      "end": 56
+     },
+     {
+      "name": "src/__tests__/migrate.test.ts",
+      "start": 12,
+      "end": 21
+     },
+     {
+      "name": "src/__tests__/recall-toggle.test.ts",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "src/__tests__/search-index-multi.test.ts",
+      "start": 8,
+      "end": 17
+     },
+     {
+      "name": "src/__tests__/self-mode-push-scan.test.ts",
+      "start": 8,
+      "end": 17
+     }
+    ],
+    "copies": 14,
+    "excerpt": {
+     "lines": [
+      "    info: vi.fn(),",
+      "    success: vi.fn(),",
+      "    warn: vi.fn(),",
+      "    error: vi.fn(),",
+      "    debug: vi.fn(),",
+      "    dim: vi.fn(),",
+      "  },",
+      "}));",
+      "",
+      "import {"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "    info: vi.fn(),",
+      "    success: vi.fn(),",
+      "    warn: vi.fn(),",
+      "    error: vi.fn(),",
+      "    debug: vi.fn(),",
+      "    dim: vi.fn(),",
+      "  },",
+      "}));",
+      "",
+      "import { deployBuiltinAgents, BUILTIN_AGENT_NAMES } from '../builtin-agents.js';"
+     ],
+     "total": 10
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 14,
+    "tokens": 96,
+    "first": {
+     "name": "src/__tests__/agent-format.test.ts",
+     "start": 1,
+     "end": 14
+    },
+    "others": [
+     {
+      "name": "src/__tests__/agent-skills.test.ts",
+      "start": 1,
+      "end": 14
+     },
+     {
+      "name": "src/__tests__/coauthor-reconcile.test.ts",
+      "start": 1,
+      "end": 14
+     },
+     {
+      "name": "src/__tests__/pre-push-sync.test.ts",
+      "start": 1,
+      "end": 14
+     },
+     {
+      "name": "src/__tests__/search-index-multi.test.ts",
+      "start": 1,
+      "end": 14
+     },
+     {
+      "name": "src/__tests__/self-mode-push-scan.test.ts",
+      "start": 1,
+      "end": 14
+     },
+     {
+      "name": "src/__tests__/skill-show.test.ts",
+      "start": 1,
+      "end": 14
+     },
+     {
+      "name": "src/__tests__/todowrite-hint.test.ts",
+      "start": 1,
+      "end": 14
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';",
+      "import path from 'node:path';",
+      "import os from 'node:os';",
+      "import fse from 'fs-extra';",
+      "",
+      "vi.mock('../utils/logger.js', () => ({",
+      "  log: {",
+      "    info: vi.fn(),",
+      "    success: vi.fn(),",
+      "    warn: vi.fn(),"
+     ],
+     "total": 14
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 37,
+    "tokens": 215,
+    "first": {
+     "name": "src/__tests__/remove.test.ts",
+     "start": 257,
+     "end": 293
+    },
+    "others": [
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 46,
+      "end": 82
+     },
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 240,
+      "end": 276
+     },
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 353,
+      "end": 389
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 93,
+    "first": {
+     "name": "src/__tests__/contribute-self-learnings.test.ts",
+     "start": 35,
+     "end": 44
+    },
+    "others": [
+     {
+      "name": "src/__tests__/env-commands.test.ts",
+      "start": 25,
+      "end": 34
+     },
+     {
+      "name": "src/__tests__/pull-learnings-deletion.test.ts",
+      "start": 27,
+      "end": 36
+     },
+     {
+      "name": "src/__tests__/pull-scope-isolation.test.ts",
+      "start": 33,
+      "end": 42
+     },
+     {
+      "name": "src/__tests__/push-pending-pr.test.ts",
+      "start": 92,
+      "end": 101
+     },
+     {
+      "name": "src/__tests__/push-role.test.ts",
+      "start": 86,
+      "end": 95
+     },
+     {
+      "name": "src/__tests__/roles-set-state.test.ts",
+      "start": 40,
+      "end": 49
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 99,
+    "first": {
+     "name": "src/__tests__/agent-format.test.ts",
+     "start": 7,
+     "end": 18
+    },
+    "others": [
+     {
+      "name": "src/__tests__/env-commands.test.ts",
+      "start": 18,
+      "end": 29
+     },
+     {
+      "name": "src/__tests__/pull-scope-isolation.test.ts",
+      "start": 26,
+      "end": 37
+     },
+     {
+      "name": "src/__tests__/push-pending-pr.test.ts",
+      "start": 90,
+      "end": 96
+     },
+     {
+      "name": "src/__tests__/push-role.test.ts",
+      "start": 79,
+      "end": 90
+     },
+     {
+      "name": "src/__tests__/roles-set-state.test.ts",
+      "start": 33,
+      "end": 44
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 15,
+    "tokens": 78,
+    "first": {
+     "name": "src/__tests__/contribute-check-phase2.test.ts",
+     "start": 32,
+     "end": 46
+    },
+    "others": [
+     {
+      "name": "src/__tests__/contribute-check.test.ts",
+      "start": 41,
+      "end": 55
+     },
+     {
+      "name": "src/__tests__/contribute-check.test.ts",
+      "start": 232,
+      "end": 246
+     },
+     {
+      "name": "src/__tests__/contribute-check.test.ts",
+      "start": 407,
+      "end": 421
+     },
+     {
+      "name": "src/__tests__/contribute-check.test.ts",
+      "start": 915,
+      "end": 929
+     },
+     {
+      "name": "src/__tests__/recall-quality.test.ts",
+      "start": 16,
+      "end": 30
+     },
+     {
+      "name": "src/__tests__/recall-quality.test.ts",
+      "start": 49,
+      "end": 63
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 13,
+    "tokens": 93,
+    "first": {
+     "name": "src/__tests__/agent-format.test.ts",
+     "start": 1,
+     "end": 13
+    },
+    "others": [
+     {
+      "name": "src/__tests__/learnings-namespace.test.ts",
+      "start": 1,
+      "end": 7
+     },
+     {
+      "name": "src/__tests__/opencode-config.test.ts",
+      "start": 1,
+      "end": 7
+     },
+     {
+      "name": "src/__tests__/pull-project-cleanup.test.ts",
+      "start": 1,
+      "end": 7
+     },
+     {
+      "name": "src/__tests__/self-mode-agents.test.ts",
+      "start": 1,
+      "end": 7
+     },
+     {
+      "name": "src/__tests__/self-mode-env-agents.test.ts",
+      "start": 1,
+      "end": 7
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 54,
+    "first": {
+     "name": "src/__tests__/remove.test.ts",
+     "start": 39,
+     "end": 47
+    },
+    "others": [
+     {
+      "name": "src/__tests__/remove.test.ts",
+      "start": 248,
+      "end": 256
+     },
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 37,
+      "end": 45
+     },
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 231,
+      "end": 239
+     },
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 344,
+      "end": 352
+     },
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 414,
+      "end": 422
+     },
+     {
+      "name": "src/__tests__/rules.test.ts",
+      "start": 589,
+      "end": 597
+     },
+     {
+      "name": "src/__tests__/skip-uninstalled-tools.test.ts",
+      "start": 196,
+      "end": 204
+     },
+     {
+      "name": "src/__tests__/skip-uninstalled-tools.test.ts",
+      "start": 296,
+      "end": 304
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 61,
     "tokens": 422,
-    "firstFile": {
+    "first": {
      "name": "src/__tests__/hooks-wrapper.test.ts",
      "start": 20,
      "end": 80
     },
-    "secondFile": {
-     "name": "src/__tests__/hooks-wrapper.test.ts",
-     "start": 80,
-     "end": 140
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 46,
-    "tokens": 342,
-    "firstFile": {
-     "name": "src/__tests__/pull-scope-isolation.test.ts",
-     "start": 1,
-     "end": 46
-    },
-    "secondFile": {
-     "name": "src/__tests__/pull-skip-sync.test.ts",
-     "start": 1,
-     "end": 42
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 31,
-    "tokens": 330,
-    "firstFile": {
-     "name": "src/__tests__/pull-learnings-deletion.test.ts",
-     "start": 8,
-     "end": 38
-    },
-    "secondFile": {
-     "name": "src/__tests__/pull-scope-isolation.test.ts",
-     "start": 4,
-     "end": 47
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 38,
-    "tokens": 316,
-    "firstFile": {
-     "name": "src/__tests__/push-role.test.ts",
-     "start": 23,
-     "end": 60
-    },
-    "secondFile": {
-     "name": "src/__tests__/push-skill-flag.test.ts",
-     "start": 18,
-     "end": 51
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 24,
-    "tokens": 304,
-    "firstFile": {
-     "name": "AGENTS.md:markdown",
-     "start": 1,
-     "end": 24
-    },
-    "secondFile": {
-     "name": "CLAUDE.md:markdown",
-     "start": 1,
-     "end": 24
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 46,
-    "tokens": 272,
-    "firstFile": {
-     "name": "src/__tests__/remove.test.ts",
-     "start": 140,
-     "end": 185
-    },
-    "secondFile": {
-     "name": "src/__tests__/remove.test.ts",
-     "start": 497,
-     "end": 547
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 37,
-    "tokens": 271,
-    "firstFile": {
-     "name": "src/__tests__/push-role.test.ts",
-     "start": 63,
-     "end": 99
-    },
-    "secondFile": {
-     "name": "src/__tests__/push-skill-flag.test.ts",
-     "start": 51,
-     "end": 87
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 46,
-    "tokens": 267,
-    "firstFile": {
-     "name": "src/__tests__/push-role-skill-e2e.test.ts",
-     "start": 13,
-     "end": 58
-    },
-    "secondFile": {
-     "name": "src/__tests__/source-project-scope-e2e.test.ts",
-     "start": 11,
-     "end": 56
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 40,
-    "tokens": 262,
-    "firstFile": {
-     "name": "src/__tests__/e2e/mcp-uninstall.test.ts",
-     "start": 2,
-     "end": 41
-    },
-    "secondFile": {
-     "name": "src/__tests__/e2e/scope-isolation-issue85.test.ts",
-     "start": 2,
-     "end": 49
-    }
+    "others": [
+     {
+      "name": "src/__tests__/hooks-wrapper.test.ts",
+      "start": 80,
+      "end": 140
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 244,
+   "lines": 65306,
+   "tokens": 341094,
+   "clones": 105,
+   "duplicatedLines": 1205,
+   "duplicatedTokens": 7660,
+   "percentage": 1.85,
+   "percentageTokens": 2.25,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 231,
+     "lines": 63911,
+     "clones": 105,
+     "duplicatedLines": 1205,
+     "percentage": 1.89
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 474,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 103,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 46,
+     "tokens": 251,
+     "first": {
+      "name": "src/init.ts",
+      "start": 287,
+      "end": 332
+     },
+     "others": [
+      {
+       "name": "src/init.ts",
+       "start": 1002,
+       "end": 1047
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "log.info('Initializing teamai (HTTP read-only consumer)...');",
+       "",
+       "// Step 0: scope (same rules as git init — default project)",
+       "let scope: Scope;",
+       "let projectRoot: string | undefined;",
+       "let explicit: boolean;",
+       "let fallbackReason: string | undefined;",
+       "try {",
+       "  ({ scope, projectRoot, explicit, fallbackReason } = resolveInitScope(",
+       "    options.scope,"
+      ],
+      "total": 46
+     },
+     "excerptSecond": {
+      "lines": [
+       "log.info('Initializing teamai...');",
+       "",
+       "// Step 0: Resolve scope (default project; only explicit --scope user → ~/ )",
+       "let scope: Scope;",
+       "let projectRoot: string | undefined;",
+       "let explicit: boolean;",
+       "let fallbackReason: string | undefined;",
+       "try {",
+       "  ({ scope, projectRoot, explicit, fallbackReason } = resolveInitScope(",
+       "    options.scope,"
+      ],
+      "total": 46
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 13,
+     "tokens": 69,
+     "first": {
+      "name": "src/wiki-engine/code-knowledge/extractors/java.ts",
+      "start": 114,
+      "end": 126
+     },
+     "others": [
+      {
+       "name": "src/wiki-engine/code-knowledge/extractors/python.ts",
+       "start": 118,
+       "end": 130
+      },
+      {
+       "name": "src/wiki-engine/code-knowledge/extractors/rust.ts",
+       "start": 131,
+       "end": 143
+      },
+      {
+       "name": "src/wiki-engine/code-knowledge/extractors/typescript.ts",
+       "start": 95,
+       "end": 107
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "  return /(?:application|bootstrap|config)\\.(?:properties|ya?ml)$/iu.test(relativePath);",
+       "}",
+       "",
+       "function makeFact(",
+       "  kind: CodeFactKind,",
+       "  name: string,",
+       "  file: string,",
+       "  lineStart: number,",
+       "  rawLine: string,",
+       "  confidence: CodeFact[\"confidence\"]"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 59,
+     "first": {
+      "name": "src/providers/gitcode/gitcode-api.ts",
+      "start": 217,
+      "end": 225
+     },
+     "others": [
+      {
+       "name": "src/providers/gitcode/gitcode-api.ts",
+       "start": 261,
+       "end": 269
+      },
+      {
+       "name": "src/providers/gitlab/gitlab-api.ts",
+       "start": 255,
+       "end": 263
+      },
+      {
+       "name": "src/providers/gitlab/gitlab-api.ts",
+       "start": 333,
+       "end": 341
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "const resp = await fetch(endpoint, {",
+       "  method: 'POST',",
+       "  headers: authHeaders(token),",
+       "  body: JSON.stringify(body),",
+       "  redirect: 'manual',",
+       "});",
+       "if (!resp.ok) {",
+       "  const errBody = await resp.text().catch(() => '');",
+       "  throw new Error(`Failed to create GitCode repo: ${resp.status} ${errBody}`);"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "const resp = await fetch(`${gitcodeApiBase()}/repos/${opts.repo}/pulls`, {",
+       "  method: 'POST',",
+       "  headers: authHeaders(token),",
+       "  body: JSON.stringify(body),",
+       "  redirect: 'manual',",
+       "});",
+       "if (!resp.ok) {",
+       "  const errBody = await resp.text().catch(() => '');",
+       "  throw new Error(`Failed to create GitCode PR: ${resp.status} ${errBody}`);"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 88,
+     "first": {
+      "name": "src/pull.ts",
+      "start": 1623,
+      "end": 1634
+     },
+     "others": [
+      {
+       "name": "src/pull.ts",
+       "start": 1654,
+       "end": 1665
+      },
+      {
+       "name": "src/pull.ts",
+       "start": 1688,
+       "end": 1699
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 88,
+     "first": {
+      "name": "src/resources/agent-format.ts",
+      "start": 342,
+      "end": 353
+     },
+     "others": [
+      {
+       "name": "src/resources/agent-format.ts",
+       "start": 453,
+       "end": 464
+      },
+      {
+       "name": "src/resources/agent-format.ts",
+       "start": 495,
+       "end": 506
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 171,
+     "first": {
+      "name": "src/local-agent.ts",
+      "start": 2829,
+      "end": 2850
+     },
+     "others": [
+      {
+       "name": "src/local-agent.ts",
+       "start": 2901,
+       "end": 2922
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 156,
+     "first": {
+      "name": "src/local-agent.ts",
+      "start": 2681,
+      "end": 2694
+     },
+     "others": [
+      {
+       "name": "src/local-agent.ts",
+       "start": 3348,
+       "end": 3361
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 11,
+     "tokens": 75,
+     "first": {
+      "name": "src/wiki-engine/code-knowledge/extractors/go.ts",
+      "start": 8,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "src/wiki-engine/code-knowledge/extractors/python.ts",
+       "start": 9,
+       "end": 19
+      },
+      {
+       "name": "src/wiki-engine/code-knowledge/extractors/typescript.ts",
+       "start": 8,
+       "end": 18
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 148,
+     "first": {
+      "name": "src/maintenance/promote.ts",
+      "start": 242,
+      "end": 256
+     },
+     "others": [
+      {
+       "name": "src/maintenance/quality-update.ts",
+       "start": 41,
+       "end": 55
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 23,
+     "tokens": 148,
+     "first": {
+      "name": "src/providers/tgit/gf-org.ts",
+      "start": 87,
+      "end": 109
+     },
+     "others": [
+      {
+       "name": "src/providers/tgit/gf-org.ts",
+       "start": 130,
+       "end": 152
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:54:00.378Z",
+  "jscpdVersion": "5.4.0"
  }
 }

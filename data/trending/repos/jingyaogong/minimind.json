@@ -9,10 +9,12 @@
    "starsToday": 495,
    "headSha": "7a6fddd63a30c06b2fdd5fac4089922b29bc841b",
    "sources": 44,
-   "lines": 55416,
-   "clones": 81,
-   "duplicatedLines": 4631,
-   "percentage": 8.36,
+   "lines": 41998,
+   "clones": 97,
+   "duplicatedLines": 1352,
+   "percentage": 3.22,
+   "codePercentage": 15.34,
+   "codeSources": 30,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 1005,
    "headSha": "7a6fddd63a30c06b2fdd5fac4089922b29bc841b",
    "sources": 44,
-   "lines": 55416,
-   "clones": 81,
-   "duplicatedLines": 4631,
-   "percentage": 8.36,
+   "lines": 41998,
+   "clones": 97,
+   "duplicatedLines": 1352,
+   "percentage": 3.22,
+   "codePercentage": 15.34,
+   "codeSources": 30,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,62 +46,62 @@
   "starsToday": 1005,
   "defaultBranch": "master",
   "headSha": "7a6fddd63a30c06b2fdd5fac4089922b29bc841b",
-  "durationMs": 827,
+  "durationMs": 722,
   "total": {
    "sources": 44,
-   "lines": 55416,
-   "tokens": 170676,
-   "clones": 81,
-   "duplicatedLines": 4631,
-   "duplicatedTokens": 13622,
-   "percentage": 8.36,
-   "percentageTokens": 7.98
+   "lines": 41998,
+   "tokens": 174635,
+   "clones": 97,
+   "duplicatedLines": 1352,
+   "duplicatedTokens": 15208,
+   "percentage": 3.22,
+   "percentageTokens": 8.71
   },
   "formats": [
    {
     "format": "python",
     "sources": 22,
-    "lines": 8090,
-    "clones": 53,
-    "duplicatedLines": 1298,
-    "percentage": 16.04
+    "lines": 4680,
+    "clones": 69,
+    "duplicatedLines": 847,
+    "percentage": 18.1
    },
    {
     "format": "markdown",
     "sources": 3,
     "lines": 4100,
     "clones": 14,
-    "duplicatedLines": 196,
-    "percentage": 4.78
+    "duplicatedLines": 213,
+    "percentage": 5.2
    },
    {
     "format": "text",
     "sources": 2,
-    "lines": 3962,
+    "lines": 504,
     "clones": 8,
-    "duplicatedLines": 1247,
-    "percentage": 31.47
+    "duplicatedLines": 210,
+    "percentage": 41.67
    },
    {
     "format": "bash",
     "sources": 11,
-    "lines": 4434,
+    "lines": 932,
     "clones": 5,
-    "duplicatedLines": 806,
-    "percentage": 18.18
+    "duplicatedLines": 58,
+    "percentage": 6.22
    },
    {
     "format": "json",
     "sources": 4,
-    "lines": 34628,
+    "lines": 31574,
     "clones": 1,
-    "duplicatedLines": 1084,
-    "percentage": 3.13
+    "duplicatedLines": 24,
+    "percentage": 0.08
    },
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -116,152 +120,622 @@
     "format": "text",
     "lines": 95,
     "tokens": 1570,
-    "firstFile": {
+    "first": {
      "name": "README.md:text",
      "start": 1340,
      "end": 1434
     },
-    "secondFile": {
-     "name": "README_en.md:text",
-     "start": 1338,
-     "end": 1432
-    }
+    "others": [
+     {
+      "name": "README_en.md:text",
+      "start": 1338,
+      "end": 1432
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "[A]: 鲁迅的《狂人日记》是其作品中对封建礼教的批判，主要通过以下几个方面进行批判：1. **文学结构的变革**：《狂人日记》在文学上进行了大量的反思和批判，从最初的虚构世界为封建礼教的建立埋下了根基。然而，随着社会观念的转变，一些人开始反思封建礼教的性质和目的，比如对社会秩序的忽视、对个人自由的质疑，以及对社会不…",
+      "[B]: 鲁迅的《狂人日记》是中国古典四大名著之一，全称为《后传》。这部作品通过细腻的笔触，展现了中国社会的复杂与深邃。1. **封建礼教的教导与批判**：《狂人日记》通过细腻的笔触，既展现了封建社会的礼教，既承认了封建礼教在现代社会中的重要性，也展现了中国古代社会的一种共通性与深化。2. **对社会与文化的深刻反思…",
+      "[C]: 鲁迅是中国现代文学史上第一位作家，他于1912年出版，自诞生以来便以诗歌为题，通过多次诠释封建礼教的复杂性与多面性。鲁迅通过他的批判性视角，不仅在文学与社会交汇处绽放共舞，更在无垠共舞间编织共舞的璀璨篇章。1. **批判与共舞**：鲁迅通过细腻的笔触与深刻的思考，既在形式与深度间共舞。他既在知识与共舞间绽放…",
+      "```",
+      "",
+      "",
+      "### 测试2：轻 Agent 任务对比",
+      "",
+      "一个基于 `eval_toolcall` 脚本改出来的测试，用一组数学 ToolUse 任务，对比当前 `agent` 权重和 `full_sft` 权重的表现：",
+      ""
+     ],
+     "total": 95
+    },
+    "excerptSecond": {
+     "lines": [
+      "[A]: 鲁迅的《狂人日记》是其作品中对封建礼教的批判，主要通过以下几个方面进行批判：1. **文学结构的变革**：《狂人日记》在文学上进行了大量的反思和批判，从最初的虚构世界为封建礼教的建立埋下了根基。然而，随着社会观念的转变，一些人开始反思封建礼教的性质和目的，比如对社会秩序的忽视、对个人自由的质疑，以及对社会不…",
+      "[B]: 鲁迅的《狂人日记》是中国古典四大名著之一，全称为《后传》。这部作品通过细腻的笔触，展现了中国社会的复杂与深邃。1. **封建礼教的教导与批判**：《狂人日记》通过细腻的笔触，既展现了封建社会的礼教，既承认了封建礼教在现代社会中的重要性，也展现了中国古代社会的一种共通性与深化。2. **对社会与文化的深刻反思…",
+      "[C]: 鲁迅是中国现代文学史上第一位作家，他于1912年出版，自诞生以来便以诗歌为题，通过多次诠释封建礼教的复杂性与多面性。鲁迅通过他的批判性视角，不仅在文学与社会交汇处绽放共舞，更在无垠共舞间编织共舞的璀璨篇章。1. **批判与共舞**：鲁迅通过细腻的笔触与深刻的思考，既在形式与深度间共舞。他既在知识与共舞间绽放…",
+      "```",
+      "",
+      "",
+      "### Test 2: Light Agent Task Comparison",
+      "",
+      "A test adapted from the `eval_toolcall` script, using a set of math ToolUse tasks to compare the performance of the current `agent` weights and `full_sft` weig…",
+      ""
+     ],
+     "total": 95
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 31,
+    "tokens": 276,
+    "first": {
+     "name": "trainer/train_distillation.py",
+     "start": 211,
+     "end": 241
+    },
+    "others": [
+     {
+      "name": "trainer/train_dpo.py",
+      "start": 191,
+      "end": 221
+     },
+     {
+      "name": "trainer/train_pretrain.py",
+      "start": 135,
+      "end": 165
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "train_ds = SFTDataset(args.data_path, tokenizer, max_length=args.max_seq_len)",
+      "train_sampler = DistributedSampler(train_ds) if dist.is_initialized() else None",
+      "scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype == 'float16'))",
+      "optimizer = optim.AdamW(model.parameters(), lr=args.learning_rate)",
+      "",
+      "# ========== 6. 从ckp恢复状态 ==========",
+      "start_epoch, start_step = 0, 0",
+      "if ckp_data:",
+      "    model.load_state_dict(ckp_data['model'])",
+      "    optimizer.load_state_dict(ckp_data['optimizer'])"
+     ],
+     "total": 31
+    },
+    "kind": "code"
    },
    {
     "format": "text",
     "lines": 277,
     "tokens": 544,
-    "firstFile": {
+    "first": {
      "name": "README.md:text",
      "start": 1704,
      "end": 1980
     },
-    "secondFile": {
-     "name": "README_en.md:text",
-     "start": 1704,
-     "end": 1980
-    }
+    "others": [
+     {
+      "name": "README_en.md:text",
+      "start": 1704,
+      "end": 1980
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    ├── build/",
+      "    ├── convert_hf_to_gguf.py",
+      "    └── ...",
+      "```",
+      "",
+      "0、参考 `llama.cpp` 官方文档完成安装（如 `cmake` 等依赖）",
+      "",
+      "1、在 `convert_hf_to_gguf.py` 的 `get_vocab_base_pre` 函数末尾插入：",
+      "",
+      "```python"
+     ],
+     "total": 277
+    },
+    "excerptSecond": {
+     "lines": [
+      "    ├── build/",
+      "    ├── convert_hf_to_gguf.py",
+      "    └── ...",
+      "```",
+      "",
+      "0. Refer to the `llama.cpp` official documentation to complete installation (dependencies such as `cmake`, etc.)",
+      "",
+      "1. Insert at the end of the `get_vocab_base_pre` function in `convert_hf_to_gguf.py`:",
+      "",
+      "```python"
+     ],
+     "total": 277
+    },
+    "kind": "docs"
    },
    {
     "format": "text",
     "lines": 14,
     "tokens": 495,
-    "firstFile": {
+    "first": {
      "name": "README.md:text",
      "start": 1448,
      "end": 1461
     },
-    "secondFile": {
-     "name": "README_en.md:text",
-     "start": 1446,
-     "end": 1459
-    }
+    "others": [
+     {
+      "name": "README_en.md:text",
+      "start": 1446,
+      "end": 1459
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "text",
     "lines": 15,
     "tokens": 494,
-    "firstFile": {
+    "first": {
      "name": "README.md:text",
      "start": 1434,
      "end": 1448
     },
-    "secondFile": {
-     "name": "README_en.md:text",
-     "start": 1432,
-     "end": 1446
-    }
-   },
-   {
-    "format": "python",
-    "lines": 56,
-    "tokens": 493,
-    "firstFile": {
-     "name": "trainer/train_full_sft.py",
-     "start": 19,
-     "end": 74
-    },
-    "secondFile": {
-     "name": "trainer/train_pretrain.py",
-     "start": 19,
-     "end": 73
-    }
+    "others": [
+     {
+      "name": "README_en.md:text",
+      "start": 1432,
+      "end": 1446
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "text",
     "lines": 323,
     "tokens": 474,
-    "firstFile": {
+    "first": {
      "name": "README.md:text",
      "start": 1018,
      "end": 1340
     },
-    "secondFile": {
-     "name": "README_en.md:text",
-     "start": 1018,
-     "end": 1338
-    }
-   },
-   {
-    "format": "text",
-    "lines": 18,
-    "tokens": 356,
-    "firstFile": {
-     "name": "README.md:text",
-     "start": 1461,
-     "end": 1478
-    },
-    "secondFile": {
-     "name": "README_en.md:text",
-     "start": 1459,
-     "end": 1476
-    }
+    "others": [
+     {
+      "name": "README_en.md:text",
+      "start": 1018,
+      "end": 1338
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
-    "lines": 33,
-    "tokens": 315,
-    "firstFile": {
-     "name": "trainer/train_distillation.py",
-     "start": 211,
-     "end": 243
-    },
-    "secondFile": {
-     "name": "trainer/train_pretrain.py",
-     "start": 135,
-     "end": 172
-    }
-   },
-   {
-    "format": "text",
-    "lines": 272,
-    "tokens": 280,
-    "firstFile": {
-     "name": "README.md:text",
-     "start": 743,
-     "end": 1014
-    },
-    "secondFile": {
-     "name": "README_en.md:text",
-     "start": 743,
-     "end": 1014
-    }
-   },
-   {
-    "format": "python",
-    "lines": 32,
-    "tokens": 280,
-    "firstFile": {
-     "name": "trainer/train_distillation.py",
-     "start": 210,
-     "end": 241
-    },
-    "secondFile": {
+    "lines": 51,
+    "tokens": 465,
+    "first": {
      "name": "trainer/train_full_sft.py",
-     "start": 135,
-     "end": 166
-    }
+     "start": 19,
+     "end": 69
+    },
+    "others": [
+     {
+      "name": "trainer/train_pretrain.py",
+      "start": 19,
+      "end": 69
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 15,
+    "tokens": 379,
+    "first": {
+     "name": "README.md:markdown",
+     "start": 1917,
+     "end": 1931
+    },
+    "others": [
+     {
+      "name": "README_en.md:markdown",
+      "start": 1917,
+      "end": 1931
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 21,
+    "tokens": 189,
+    "first": {
+     "name": "trainer/train_dpo.py",
+     "start": 159,
+     "end": 179
+    },
+    "others": [
+     {
+      "name": "trainer/train_full_sft.py",
+      "start": 111,
+      "end": 131
+     },
+     {
+      "name": "trainer/train_pretrain.py",
+      "start": 110,
+      "end": 130
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 90,
+    "first": {
+     "name": "trainer/train_distillation.py",
+     "start": 175,
+     "end": 185
+    },
+    "others": [
+     {
+      "name": "trainer/train_dpo.py",
+      "start": 154,
+      "end": 164
+     },
+     {
+      "name": "trainer/train_full_sft.py",
+      "start": 106,
+      "end": 116
+     },
+     {
+      "name": "trainer/train_lora.py",
+      "start": 100,
+      "end": 110
+     },
+     {
+      "name": "trainer/train_pretrain.py",
+      "start": 105,
+      "end": 115
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 30,
+   "lines": 5476,
+   "tokens": 47343,
+   "clones": 68,
+   "duplicatedLines": 840,
+   "duplicatedTokens": 7608,
+   "percentage": 15.34,
+   "percentageTokens": 16.07,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 20,
+     "lines": 4658,
+     "clones": 68,
+     "duplicatedLines": 840,
+     "percentage": 18.03
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 31,
+     "tokens": 276,
+     "first": {
+      "name": "trainer/train_distillation.py",
+      "start": 211,
+      "end": 241
+     },
+     "others": [
+      {
+       "name": "trainer/train_dpo.py",
+       "start": 191,
+       "end": 221
+      },
+      {
+       "name": "trainer/train_pretrain.py",
+       "start": 135,
+       "end": 165
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "train_ds = SFTDataset(args.data_path, tokenizer, max_length=args.max_seq_len)",
+       "train_sampler = DistributedSampler(train_ds) if dist.is_initialized() else None",
+       "scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype == 'float16'))",
+       "optimizer = optim.AdamW(model.parameters(), lr=args.learning_rate)",
+       "",
+       "# ========== 6. 从ckp恢复状态 ==========",
+       "start_epoch, start_step = 0, 0",
+       "if ckp_data:",
+       "    model.load_state_dict(ckp_data['model'])",
+       "    optimizer.load_state_dict(ckp_data['optimizer'])"
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 51,
+     "tokens": 465,
+     "first": {
+      "name": "trainer/train_full_sft.py",
+      "start": 19,
+      "end": 69
+     },
+     "others": [
+      {
+       "name": "trainer/train_pretrain.py",
+       "start": 19,
+       "end": 69
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "from trainer.trainer_utils import get_lr, Logger, is_main_process, lm_checkpoint, init_distributed_mode, setup_seed, init_model, SkipBatchSampler",
+       "",
+       "warnings.filterwarnings('ignore')",
+       "",
+       "",
+       "def train_epoch(epoch, loader, iters, start_step=0, wandb=None):",
+       "    start_time = time.time()",
+       "    last_step = start_step",
+       "    for step, (input_ids, labels) in enumerate(loader, start=start_step + 1):",
+       "        input_ids = input_ids.to(args.device)"
+      ],
+      "total": 51
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 21,
+     "tokens": 189,
+     "first": {
+      "name": "trainer/train_dpo.py",
+      "start": 159,
+      "end": 179
+     },
+     "others": [
+      {
+       "name": "trainer/train_full_sft.py",
+       "start": 111,
+       "end": 131
+      },
+      {
+       "name": "trainer/train_pretrain.py",
+       "start": 110,
+       "end": 130
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "local_rank = init_distributed_mode()",
+       "if dist.is_initialized(): args.device = f\"cuda:{local_rank}\"",
+       "setup_seed(42 + (dist.get_rank() if dist.is_initialized() else 0))",
+       "",
+       "# ========== 2. 配置目录、模型参数、检查ckp ==========",
+       "os.makedirs(args.save_dir, exist_ok=True)",
+       "lm_config = MiniMindConfig(hidden_size=args.hidden_size, num_hidden_layers=args.num_hidden_layers, use_moe=bool(args.use_moe))",
+       "ckp_data = lm_checkpoint(lm_config, weight=args.save_weight, save_dir='../checkpoints') if args.from_resume==1 else None",
+       "",
+       "# ========== 3. 设置混合精度 =========="
+      ],
+      "total": 21
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 90,
+     "first": {
+      "name": "trainer/train_distillation.py",
+      "start": 175,
+      "end": 185
+     },
+     "others": [
+      {
+       "name": "trainer/train_dpo.py",
+       "start": 154,
+       "end": 164
+      },
+      {
+       "name": "trainer/train_full_sft.py",
+       "start": 106,
+       "end": 116
+      },
+      {
+       "name": "trainer/train_lora.py",
+       "start": 100,
+       "end": 110
+      },
+      {
+       "name": "trainer/train_pretrain.py",
+       "start": 105,
+       "end": 115
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 117,
+     "first": {
+      "name": "trainer/train_distillation.py",
+      "start": 153,
+      "end": 159
+     },
+     "others": [
+      {
+       "name": "trainer/train_grpo.py",
+       "start": 212,
+       "end": 218
+      },
+      {
+       "name": "trainer/train_lora.py",
+       "start": 84,
+       "end": 90
+      },
+      {
+       "name": "trainer/train_ppo.py",
+       "start": 316,
+       "end": 322
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 32,
+     "tokens": 280,
+     "first": {
+      "name": "trainer/train_distillation.py",
+      "start": 210,
+      "end": 241
+     },
+     "others": [
+      {
+       "name": "trainer/train_full_sft.py",
+       "start": 135,
+       "end": 166
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 110,
+     "first": {
+      "name": "trainer/train_distillation.py",
+      "start": 188,
+      "end": 201
+     },
+     "others": [
+      {
+       "name": "trainer/train_dpo.py",
+       "start": 166,
+       "end": 179
+      },
+      {
+       "name": "trainer/train_lora.py",
+       "start": 112,
+       "end": 125
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 104,
+     "first": {
+      "name": "trainer/train_distillation.py",
+      "start": 230,
+      "end": 240
+     },
+     "others": [
+      {
+       "name": "trainer/train_grpo.py",
+       "start": 316,
+       "end": 326
+      },
+      {
+       "name": "trainer/train_ppo.py",
+       "start": 433,
+       "end": 443
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 91,
+     "first": {
+      "name": "trainer/train_agent.py",
+      "start": 478,
+      "end": 483
+     },
+     "others": [
+      {
+       "name": "trainer/train_distillation.py",
+       "start": 233,
+       "end": 238
+      },
+      {
+       "name": "trainer/train_lora.py",
+       "start": 171,
+       "end": 176
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 178,
+     "first": {
+      "name": "scripts/convert_model.py",
+      "start": 26,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "scripts/convert_model.py",
+       "start": 85,
+       "end": 96
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:43:16.622Z",
+  "jscpdVersion": "5.4.0"
  }
 }

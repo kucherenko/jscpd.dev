@@ -9,10 +9,12 @@
    "starsToday": 74,
    "headSha": "9d57bcf9edea2486f214e190931de2a5537f23c1",
    "sources": 146,
-   "lines": 31306,
+   "lines": 31126,
    "clones": 13,
-   "duplicatedLines": 144,
-   "percentage": 0.46,
+   "duplicatedLines": 157,
+   "percentage": 0.5,
+   "codePercentage": 0.47,
+   "codeSources": 122,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 86,
    "headSha": "9d57bcf9edea2486f214e190931de2a5537f23c1",
    "sources": 146,
-   "lines": 31306,
+   "lines": 31126,
    "clones": 13,
-   "duplicatedLines": 144,
-   "percentage": 0.46,
+   "duplicatedLines": 157,
+   "percentage": 0.5,
+   "codePercentage": 0.47,
+   "codeSources": 122,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,16 +46,16 @@
   "starsToday": 86,
   "defaultBranch": "master",
   "headSha": "9d57bcf9edea2486f214e190931de2a5537f23c1",
-  "durationMs": 786,
+  "durationMs": 215,
   "total": {
    "sources": 146,
-   "lines": 31306,
-   "tokens": 199970,
+   "lines": 31126,
+   "tokens": 200578,
    "clones": 13,
-   "duplicatedLines": 144,
+   "duplicatedLines": 157,
    "duplicatedTokens": 912,
-   "percentage": 0.46,
-   "percentageTokens": 0.46
+   "percentage": 0.5,
+   "percentageTokens": 0.45
   },
   "formats": [
    {
@@ -59,29 +63,29 @@
     "sources": 103,
     "lines": 27565,
     "clones": 7,
-    "duplicatedLines": 66,
-    "percentage": 0.24
+    "duplicatedLines": 73,
+    "percentage": 0.26
    },
    {
     "format": "wgsl",
     "sources": 20,
     "lines": 1376,
     "clones": 5,
-    "duplicatedLines": 63,
-    "percentage": 4.58
+    "duplicatedLines": 68,
+    "percentage": 4.94
    },
    {
     "format": "yaml",
     "sources": 4,
     "lines": 1019,
     "clones": 1,
-    "duplicatedLines": 15,
-    "percentage": 1.47
+    "duplicatedLines": 16,
+    "percentage": 1.57
    },
    {
     "format": "bash",
     "sources": 10,
-    "lines": 855,
+    "lines": 669,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -97,7 +101,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -116,152 +120,525 @@
     "format": "wgsl",
     "lines": 20,
     "tokens": 120,
-    "firstFile": {
+    "first": {
      "name": "manimlib/shaders/mandelbrot_fractal.wgsl",
      "start": 25,
      "end": 44
     },
-    "secondFile": {
-     "name": "manimlib/shaders/newton_fractal.wgsl",
-     "start": 53,
-     "end": 72
-    }
+    "others": [
+     {
+      "name": "manimlib/shaders/newton_fractal.wgsl",
+      "start": 53,
+      "end": 72
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "const N_COLORS: u32 = 9u;",
+      "",
+      "struct VertexOutput {",
+      "    @builtin(position) position: vec4f,",
+      "    @location(0) clip_distances: vec4f,",
+      "    @location(1) plane_point: vec3f,",
+      "}",
+      "",
+      "@vertex",
+      "fn vs_main(@builtin(vertex_index) index: u32) -> VertexOutput {"
+     ],
+     "total": 20
+    },
+    "kind": "code"
    },
    {
     "format": "wgsl",
     "lines": 10,
     "tokens": 95,
-    "firstFile": {
+    "first": {
      "name": "manimlib/shaders/mandelbrot_fractal.wgsl",
      "start": 11,
      "end": 20
     },
-    "secondFile": {
-     "name": "manimlib/shaders/newton_fractal.wgsl",
-     "start": 11,
-     "end": 20
-    }
+    "others": [
+     {
+      "name": "manimlib/shaders/newton_fractal.wgsl",
+      "start": 11,
+      "end": 20
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "Drawn by MandelbrotFractal and JuliaFractal, whose uniform_dtype says what mob holds here.",
+      "*/",
+      "#INSERT mobject_uniforms.wgsl",
+      "#INSERT frame_uniforms.wgsl",
+      "#INSERT read_data.wgsl",
+      "#INSERT project_point.wgsl",
+      "#INSERT quad_corners.wgsl",
+      "#INSERT finalize_color.wgsl",
+      "#INSERT complex_functions.wgsl",
+      "#INSERT clip_test.wgsl"
+     ],
+     "total": 10
+    },
+    "kind": "code"
    },
    {
     "format": "wgsl",
     "lines": 15,
     "tokens": 88,
-    "firstFile": {
+    "first": {
      "name": "manimlib/shaders/surface.wgsl",
      "start": 16,
      "end": 30
     },
-    "secondFile": {
-     "name": "manimlib/shaders/textured_surface.wgsl",
-     "start": 24,
-     "end": 38
-    }
+    "others": [
+     {
+      "name": "manimlib/shaders/textured_surface.wgsl",
+      "start": 24,
+      "end": 38
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    @location(1) color: vec4f,",
+      "}",
+      "",
+      "@vertex",
+      "fn vs_main(@builtin(vertex_index) index: u32) -> VertexOutput {",
+      "    var out: VertexOutput;",
+      "    let vertex = read_surface_vertex(index);",
+      "    if (!vertex.drawn) {",
+      "        out.position = vec4f(0.0, 0.0, 0.0, 1.0);",
+      "        return out;"
+     ],
+     "total": 15
+    },
+    "kind": "code"
    },
    {
     "format": "wgsl",
     "lines": 12,
     "tokens": 86,
-    "firstFile": {
+    "first": {
      "name": "manimlib/shaders/mandelbrot_fractal.wgsl",
      "start": 34,
      "end": 45
     },
-    "secondFile": {
-     "name": "manimlib/shaders/newton_fractal.wgsl",
-     "start": 62,
-     "end": 73
-    }
+    "others": [
+     {
+      "name": "manimlib/shaders/newton_fractal.wgsl",
+      "start": 62,
+      "end": 73
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "yaml",
     "lines": 16,
     "tokens": 74,
-    "firstFile": {
+    "first": {
      "name": "manimlib/tex_templates.yml",
      "start": 9,
      "end": 24
     },
-    "secondFile": {
-     "name": "manimlib/tex_templates.yml",
-     "start": 34,
-     "end": 49
-    }
+    "others": [
+     {
+      "name": "manimlib/tex_templates.yml",
+      "start": 34,
+      "end": 49
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "python",
     "lines": 14,
     "tokens": 69,
-    "firstFile": {
+    "first": {
      "name": "manimlib/mobject/three_dimensions.py",
      "start": 284,
      "end": 297
     },
-    "secondFile": {
-     "name": "manimlib/mobject/three_dimensions.py",
-     "start": 330,
-     "end": 343
-    }
+    "others": [
+     {
+      "name": "manimlib/mobject/three_dimensions.py",
+      "start": 330,
+      "end": 343
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 15,
     "tokens": 62,
-    "firstFile": {
+    "first": {
      "name": "manimlib/mobject/mobject.py",
      "start": 956,
      "end": 970
     },
-    "secondFile": {
-     "name": "manimlib/mobject/types/vectorized_mobject.py",
-     "start": 1373,
-     "end": 1387
-    }
+    "others": [
+     {
+      "name": "manimlib/mobject/types/vectorized_mobject.py",
+      "start": 1373,
+      "end": 1387
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 9,
     "tokens": 54,
-    "firstFile": {
+    "first": {
      "name": "docs/example.py",
      "start": 3,
      "end": 11
     },
-    "secondFile": {
-     "name": "example_scenes.py",
-     "start": 650,
-     "end": 658
-    }
+    "others": [
+     {
+      "name": "example_scenes.py",
+      "start": 650,
+      "end": 658
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 8,
     "tokens": 54,
-    "firstFile": {
+    "first": {
      "name": "manimlib/mobject/mobject.py",
      "start": 2265,
      "end": 2272
     },
-    "secondFile": {
-     "name": "manimlib/mobject/mobject.py",
-     "start": 2278,
-     "end": 2286
-    }
+    "others": [
+     {
+      "name": "manimlib/mobject/mobject.py",
+      "start": 2278,
+      "end": 2286
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 9,
     "tokens": 53,
-    "firstFile": {
+    "first": {
      "name": "manimlib/mobject/boolean_ops.py",
      "start": 84,
      "end": 92
     },
-    "secondFile": {
-     "name": "manimlib/mobject/boolean_ops.py",
-     "start": 107,
-     "end": 115
-    }
+    "others": [
+     {
+      "name": "manimlib/mobject/boolean_ops.py",
+      "start": 107,
+      "end": 115
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 122,
+   "lines": 28220,
+   "tokens": 181867,
+   "clones": 11,
+   "duplicatedLines": 132,
+   "duplicatedTokens": 784,
+   "percentage": 0.47,
+   "percentageTokens": 0.43,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 92,
+     "lines": 26026,
+     "clones": 6,
+     "duplicatedLines": 64,
+     "percentage": 0.25
+    },
+    {
+     "format": "wgsl",
+     "sources": 20,
+     "lines": 1376,
+     "clones": 5,
+     "duplicatedLines": 68,
+     "percentage": 4.94
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "wgsl",
+     "lines": 20,
+     "tokens": 120,
+     "first": {
+      "name": "manimlib/shaders/mandelbrot_fractal.wgsl",
+      "start": 25,
+      "end": 44
+     },
+     "others": [
+      {
+       "name": "manimlib/shaders/newton_fractal.wgsl",
+       "start": 53,
+       "end": 72
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "const N_COLORS: u32 = 9u;",
+       "",
+       "struct VertexOutput {",
+       "    @builtin(position) position: vec4f,",
+       "    @location(0) clip_distances: vec4f,",
+       "    @location(1) plane_point: vec3f,",
+       "}",
+       "",
+       "@vertex",
+       "fn vs_main(@builtin(vertex_index) index: u32) -> VertexOutput {"
+      ],
+      "total": 20
+     },
+     "kind": "code"
+    },
+    {
+     "format": "wgsl",
+     "lines": 10,
+     "tokens": 95,
+     "first": {
+      "name": "manimlib/shaders/mandelbrot_fractal.wgsl",
+      "start": 11,
+      "end": 20
+     },
+     "others": [
+      {
+       "name": "manimlib/shaders/newton_fractal.wgsl",
+       "start": 11,
+       "end": 20
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "Drawn by MandelbrotFractal and JuliaFractal, whose uniform_dtype says what mob holds here.",
+       "*/",
+       "#INSERT mobject_uniforms.wgsl",
+       "#INSERT frame_uniforms.wgsl",
+       "#INSERT read_data.wgsl",
+       "#INSERT project_point.wgsl",
+       "#INSERT quad_corners.wgsl",
+       "#INSERT finalize_color.wgsl",
+       "#INSERT complex_functions.wgsl",
+       "#INSERT clip_test.wgsl"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "wgsl",
+     "lines": 15,
+     "tokens": 88,
+     "first": {
+      "name": "manimlib/shaders/surface.wgsl",
+      "start": 16,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "manimlib/shaders/textured_surface.wgsl",
+       "start": 24,
+       "end": 38
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    @location(1) color: vec4f,",
+       "}",
+       "",
+       "@vertex",
+       "fn vs_main(@builtin(vertex_index) index: u32) -> VertexOutput {",
+       "    var out: VertexOutput;",
+       "    let vertex = read_surface_vertex(index);",
+       "    if (!vertex.drawn) {",
+       "        out.position = vec4f(0.0, 0.0, 0.0, 1.0);",
+       "        return out;"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "wgsl",
+     "lines": 12,
+     "tokens": 86,
+     "first": {
+      "name": "manimlib/shaders/mandelbrot_fractal.wgsl",
+      "start": 34,
+      "end": 45
+     },
+     "others": [
+      {
+       "name": "manimlib/shaders/newton_fractal.wgsl",
+       "start": 62,
+       "end": 73
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 69,
+     "first": {
+      "name": "manimlib/mobject/three_dimensions.py",
+      "start": 284,
+      "end": 297
+     },
+     "others": [
+      {
+       "name": "manimlib/mobject/three_dimensions.py",
+       "start": 330,
+       "end": 343
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 62,
+     "first": {
+      "name": "manimlib/mobject/mobject.py",
+      "start": 956,
+      "end": 970
+     },
+     "others": [
+      {
+       "name": "manimlib/mobject/types/vectorized_mobject.py",
+       "start": 1373,
+       "end": 1387
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 54,
+     "first": {
+      "name": "manimlib/mobject/mobject.py",
+      "start": 2265,
+      "end": 2272
+     },
+     "others": [
+      {
+       "name": "manimlib/mobject/mobject.py",
+       "start": 2278,
+       "end": 2286
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 53,
+     "first": {
+      "name": "manimlib/mobject/boolean_ops.py",
+      "start": 84,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "manimlib/mobject/boolean_ops.py",
+       "start": 107,
+       "end": 115
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "wgsl",
+     "lines": 11,
+     "tokens": 53,
+     "first": {
+      "name": "manimlib/shaders/image.wgsl",
+      "start": 18,
+      "end": 28
+     },
+     "others": [
+      {
+       "name": "manimlib/shaders/mandelbrot_fractal.wgsl",
+       "start": 30,
+       "end": 40
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 52,
+     "first": {
+      "name": "manimlib/animation/update.py",
+      "start": 22,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "manimlib/animation/update.py",
+       "start": 41,
+       "end": 48
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:43:20.849Z",
+  "jscpdVersion": "5.4.0"
  }
 }

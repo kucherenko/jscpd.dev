@@ -9,10 +9,12 @@
    "starsToday": 118,
    "headSha": "34ede4de888c55aab170c3d6349c60d8dc56e7f2",
    "sources": 1432,
-   "lines": 395215,
+   "lines": 395171,
    "clones": 2672,
    "duplicatedLines": 38372,
    "percentage": 9.71,
+   "codePercentage": 9.43,
+   "codeSources": 655,
    "healthScore": 52.4,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 98,
    "headSha": "dbb3d63cb1a92d04112dcc9ebb53bea4d1e317fb",
    "sources": 1463,
-   "lines": 402753,
+   "lines": 402709,
    "clones": 2708,
    "duplicatedLines": 38702,
    "percentage": 9.61,
+   "codePercentage": 9.27,
+   "codeSources": 662,
    "healthScore": 52.7,
    "healthGrade": "D"
   }
@@ -42,11 +46,11 @@
   "starsToday": 98,
   "defaultBranch": "main",
   "headSha": "dbb3d63cb1a92d04112dcc9ebb53bea4d1e317fb",
-  "durationMs": 2153,
+  "durationMs": 873,
   "total": {
    "sources": 1463,
-   "lines": 402753,
-   "tokens": 2818477,
+   "lines": 402709,
+   "tokens": 2818312,
    "clones": 2708,
    "duplicatedLines": 38702,
    "duplicatedTokens": 250579,
@@ -121,10 +125,10 @@
    {
     "format": "bash",
     "sources": 71,
-    "lines": 4844,
+    "lines": 4794,
     "clones": 16,
     "duplicatedLines": 125,
-    "percentage": 2.58
+    "percentage": 2.61
    },
    {
     "format": "diff",
@@ -138,153 +142,453 @@
   "topClones": [
    {
     "format": "typescript",
+    "lines": 13,
+    "tokens": 117,
+    "first": {
+     "name": "__tests__/astro-component-markup-only.test.ts",
+     "start": 35,
+     "end": 47
+    },
+    "others": [
+     {
+      "name": "__tests__/cfml-tag-calls.test.ts",
+      "start": 48,
+      "end": 60
+     },
+     {
+      "name": "__tests__/commonjs-require-calls.test.ts",
+      "start": 69,
+      "end": 81
+     },
+     {
+      "name": "__tests__/commonjs-require-imports.test.ts",
+      "start": 59,
+      "end": 71
+     },
+     {
+      "name": "__tests__/cpp-overload-choice.test.ts",
+      "start": 68,
+      "end": 80
+     },
+     {
+      "name": "__tests__/csharp-namespace-scope.test.ts",
+      "start": 128,
+      "end": 140
+     },
+     {
+      "name": "__tests__/csharp-namespace-visibility.test.ts",
+      "start": 58,
+      "end": 70
+     },
+     {
+      "name": "__tests__/dart-bare-call-scope.test.ts",
+      "start": 106,
+      "end": 118
+     },
+     {
+      "name": "__tests__/dart-unnamed-extension.test.ts",
+      "start": 48,
+      "end": 60
+     }
+    ],
+    "copies": 61,
+    "excerpt": {
+     "lines": [
+      "`,",
+      "  };",
+      "  for (const [rel, content] of Object.entries(files)) {",
+      "    fs.mkdirSync(path.dirname(path.join(root, rel)), { recursive: true });",
+      "    fs.writeFileSync(path.join(root, rel), content);",
+      "  }",
+      "  cg = await CodeGraph.init(root, { index: true });",
+      "});",
+      "",
+      "afterAll(() => {"
+     ],
+     "total": 13
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 11,
+    "tokens": 76,
+    "first": {
+     "name": "__tests__/astro-component-markup-only.test.ts",
+     "start": 8,
+     "end": 18
+    },
+    "others": [
+     {
+      "name": "__tests__/c-calls-never-methods.test.ts",
+      "start": 6,
+      "end": 16
+     },
+     {
+      "name": "__tests__/cfml-call-scope.test.ts",
+      "start": 13,
+      "end": 23
+     },
+     {
+      "name": "__tests__/cfml-tag-calls.test.ts",
+      "start": 9,
+      "end": 19
+     },
+     {
+      "name": "__tests__/commonjs-require-calls.test.ts",
+      "start": 12,
+      "end": 22
+     },
+     {
+      "name": "__tests__/commonjs-require-imports.test.ts",
+      "start": 11,
+      "end": 21
+     },
+     {
+      "name": "__tests__/cpp-macro-namespace.test.ts",
+      "start": 10,
+      "end": 20
+     },
+     {
+      "name": "__tests__/cpp-overload-choice.test.ts",
+      "start": 8,
+      "end": 18
+     },
+     {
+      "name": "__tests__/csharp-bare-member-scope.test.ts",
+      "start": 9,
+      "end": 19
+     }
+    ],
+    "copies": 88,
+    "excerpt": {
+     "lines": [
+      "import { describe, it, expect, afterAll, beforeAll } from 'vitest';",
+      "import * as fs from 'fs';",
+      "import * as os from 'os';",
+      "import * as path from 'path';",
+      "import { CodeGraph } from '../src';",
+      "",
+      "let root = '';",
+      "let cg: CodeGraph;",
+      "",
+      "beforeAll(async () => {"
+     ],
+     "total": 11
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 15,
+    "tokens": 119,
+    "first": {
+     "name": "__tests__/astro-component-markup-only.test.ts",
+     "start": 35,
+     "end": 49
+    },
+    "others": [
+     {
+      "name": "__tests__/c-calls-never-methods.test.ts",
+      "start": 28,
+      "end": 42
+     },
+     {
+      "name": "__tests__/cfml-call-scope.test.ts",
+      "start": 58,
+      "end": 72
+     },
+     {
+      "name": "__tests__/cpp-macro-namespace.test.ts",
+      "start": 62,
+      "end": 76
+     },
+     {
+      "name": "__tests__/csharp-bare-member-scope.test.ts",
+      "start": 67,
+      "end": 81
+     },
+     {
+      "name": "__tests__/dart-extension-receiver.test.ts",
+      "start": 40,
+      "end": 54
+     },
+     {
+      "name": "__tests__/destructured-call-result.test.ts",
+      "start": 46,
+      "end": 60
+     },
+     {
+      "name": "__tests__/esm-unexported-binding.test.ts",
+      "start": 51,
+      "end": 65
+     },
+     {
+      "name": "__tests__/external-type-receiver.test.ts",
+      "start": 34,
+      "end": 48
+     }
+    ],
+    "copies": 35,
+    "excerpt": {
+     "lines": [
+      "`,",
+      "  };",
+      "  for (const [rel, content] of Object.entries(files)) {",
+      "    fs.mkdirSync(path.dirname(path.join(root, rel)), { recursive: true });",
+      "    fs.writeFileSync(path.join(root, rel), content);",
+      "  }",
+      "  cg = await CodeGraph.init(root, { index: true });",
+      "});",
+      "",
+      "afterAll(() => {"
+     ],
+     "total": 15
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 6,
+    "tokens": 87,
+    "first": {
+     "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+     "start": 17,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 29,
+      "end": 34
+     },
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 41,
+      "end": 46
+     },
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 53,
+      "end": 58
+     },
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 65,
+      "end": 70
+     },
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 77,
+      "end": 82
+     },
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 89,
+      "end": 94
+     },
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 101,
+      "end": 106
+     },
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 113,
+      "end": 118
+     }
+    ],
+    "copies": 40,
+    "kind": "tests"
+   },
+   {
+    "format": "c-header",
+    "lines": 286,
+    "tokens": 1252,
+    "first": {
+     "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
+     "start": 1,
+     "end": 286
+    },
+    "others": [
+     {
+      "name": "codegraph-kernel/grammars/lua/tree_sitter/parser.h",
+      "start": 1,
+      "end": 286
+     },
+     {
+      "name": "codegraph-kernel/grammars/scala/tree_sitter/parser.h",
+      "start": 1,
+      "end": 286
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
     "lines": 214,
     "tokens": 2286,
-    "firstFile": {
+    "first": {
      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
      "start": 136,
      "end": 349
     },
-    "secondFile": {
-     "name": "__tests__/fixtures/oversize-member-ts/src/report/quarterly.ts",
-     "start": 11,
-     "end": 224
-    }
+    "others": [
+     {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/quarterly.ts",
+      "start": 11,
+      "end": 224
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 36,
+    "tokens": 281,
+    "first": {
+     "name": "__tests__/kernel-csharp-parity.test.ts",
+     "start": 32,
+     "end": 67
+    },
+    "others": [
+     {
+      "name": "__tests__/kernel-dart-parity.test.ts",
+      "start": 32,
+      "end": 67
+     },
+     {
+      "name": "__tests__/kernel-kotlin-parity.test.ts",
+      "start": 30,
+      "end": 65
+     },
+     {
+      "name": "__tests__/kernel-php-parity.test.ts",
+      "start": 33,
+      "end": 68
+     },
+     {
+      "name": "__tests__/kernel-r-parity.test.ts",
+      "start": 24,
+      "end": 59
+     },
+     {
+      "name": "__tests__/kernel-ruby-parity.test.ts",
+      "start": 23,
+      "end": 58
+     },
+     {
+      "name": "__tests__/kernel-rustlang-parity.test.ts",
+      "start": 22,
+      "end": 57
+     },
+     {
+      "name": "__tests__/kernel-scala-parity.test.ts",
+      "start": 32,
+      "end": 67
+     },
+     {
+      "name": "__tests__/kernel-swift-parity.test.ts",
+      "start": 29,
+      "end": 64
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 50,
+    "first": {
+     "name": "__tests__/cfml-tag-calls.test.ts",
+     "start": 54,
+     "end": 62
+    },
+    "others": [
+     {
+      "name": "__tests__/commonjs-require-imports.test.ts",
+      "start": 65,
+      "end": 73
+     },
+     {
+      "name": "__tests__/cpp-overload-choice.test.ts",
+      "start": 74,
+      "end": 82
+     },
+     {
+      "name": "__tests__/csharp-namespace-scope.test.ts",
+      "start": 134,
+      "end": 142
+     },
+     {
+      "name": "__tests__/csharp-namespace-visibility.test.ts",
+      "start": 64,
+      "end": 72
+     },
+     {
+      "name": "__tests__/dart-unnamed-extension.test.ts",
+      "start": 54,
+      "end": 62
+     },
+     {
+      "name": "__tests__/enum-constant-bodies.test.ts",
+      "start": 67,
+      "end": 75
+     },
+     {
+      "name": "__tests__/express-heuristic-same-file.test.ts",
+      "start": 43,
+      "end": 51
+     },
+     {
+      "name": "__tests__/express-inline-function-handler.test.ts",
+      "start": 77,
+      "end": 85
+     }
+    ],
+    "copies": 42,
+    "kind": "tests"
    },
    {
     "format": "c-header",
     "lines": 291,
     "tokens": 1775,
-    "firstFile": {
+    "first": {
      "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
      "start": 1,
      "end": 291
     },
-    "secondFile": {
-     "name": "codegraph-kernel/grammars/lua/tree_sitter/array.h",
-     "start": 1,
-     "end": 291
-    }
+    "others": [
+     {
+      "name": "codegraph-kernel/grammars/lua/tree_sitter/array.h",
+      "start": 1,
+      "end": 291
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 265,
     "tokens": 1684,
-    "firstFile": {
+    "first": {
      "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
      "start": 18,
      "end": 282
     },
-    "secondFile": {
-     "name": "codegraph-kernel/grammars/kotlin/tree_sitter/array.h",
-     "start": 17,
-     "end": 281
-    }
-   },
-   {
-    "format": "c-header",
-    "lines": 286,
-    "tokens": 1252,
-    "firstFile": {
-     "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
-     "start": 1,
-     "end": 286
-    },
-    "secondFile": {
-     "name": "codegraph-kernel/grammars/lua/tree_sitter/parser.h",
-     "start": 1,
-     "end": 286
-    }
-   },
-   {
-    "format": "c-header",
-    "lines": 286,
-    "tokens": 1252,
-    "firstFile": {
-     "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
-     "start": 1,
-     "end": 286
-    },
-    "secondFile": {
-     "name": "codegraph-kernel/grammars/scala/tree_sitter/parser.h",
-     "start": 1,
-     "end": 286
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 115,
-    "tokens": 850,
-    "firstFile": {
-     "name": "__tests__/daemon-pid-reuse.test.ts",
-     "start": 60,
-     "end": 174
-    },
-    "secondFile": {
-     "name": "__tests__/mcp-daemon.test.ts",
-     "start": 65,
-     "end": 179
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 75,
-    "tokens": 659,
-    "firstFile": {
-     "name": "codegraph-kernel/src/go.rs",
-     "start": 122,
-     "end": 196
-    },
-    "secondFile": {
-     "name": "codegraph-kernel/src/rustlang.rs",
-     "start": 146,
-     "end": 220
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 78,
-    "tokens": 649,
-    "firstFile": {
-     "name": "codegraph-kernel/src/java.rs",
-     "start": 219,
-     "end": 296
-    },
-    "secondFile": {
-     "name": "codegraph-kernel/src/kotlin.rs",
-     "start": 282,
-     "end": 359
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 73,
-    "tokens": 637,
-    "firstFile": {
-     "name": "codegraph-kernel/src/ccpp/mod.rs",
-     "start": 399,
-     "end": 471
-    },
-    "secondFile": {
-     "name": "codegraph-kernel/src/go.rs",
-     "start": 128,
-     "end": 200
-    }
-   },
-   {
-    "format": "html",
-    "lines": 24,
-    "tokens": 622,
-    "firstFile": {
-     "name": "ui/src/views/StepsView.svelte:html",
-     "start": 722,
-     "end": 745
-    },
-    "secondFile": {
-     "name": "ui/src/views/StepsView.svelte:html",
-     "start": 769,
-     "end": 792
-    }
+    "others": [
+     {
+      "name": "codegraph-kernel/grammars/kotlin/tree_sitter/array.h",
+      "start": 17,
+      "end": 281
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -522,6 +826,523 @@
      "lines": 23
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 662,
+   "lines": 217516,
+   "tokens": 1262981,
+   "clones": 1302,
+   "duplicatedLines": 20174,
+   "duplicatedTokens": 132499,
+   "percentage": 9.27,
+   "percentageTokens": 10.49,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 26,
+     "lines": 26122,
+     "clones": 680,
+     "duplicatedLines": 10404,
+     "percentage": 39.83
+    },
+    {
+     "format": "typescript",
+     "sources": 348,
+     "lines": 150089,
+     "clones": 487,
+     "duplicatedLines": 6686,
+     "percentage": 4.45
+    },
+    {
+     "format": "css",
+     "sources": 58,
+     "lines": 4586,
+     "clones": 49,
+     "duplicatedLines": 759,
+     "percentage": 16.55
+    },
+    {
+     "format": "html",
+     "sources": 57,
+     "lines": 4030,
+     "clones": 34,
+     "duplicatedLines": 360,
+     "percentage": 8.93
+    },
+    {
+     "format": "javascript",
+     "sources": 46,
+     "lines": 8157,
+     "clones": 23,
+     "duplicatedLines": 214,
+     "percentage": 2.62
+    },
+    {
+     "format": "c-header",
+     "sources": 12,
+     "lines": 2541,
+     "clones": 20,
+     "duplicatedLines": 1687,
+     "percentage": 66.39
+    },
+    {
+     "format": "bash",
+     "sources": 46,
+     "lines": 4170,
+     "clones": 9,
+     "duplicatedLines": 64,
+     "percentage": 1.53
+    },
+    {
+     "format": "svelte",
+     "sources": 55,
+     "lines": 13292,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c",
+     "sources": 4,
+     "lines": 2766,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "astro",
+     "sources": 4,
+     "lines": 635,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c-header",
+     "lines": 286,
+     "tokens": 1252,
+     "first": {
+      "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
+      "start": 1,
+      "end": 286
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/grammars/lua/tree_sitter/parser.h",
+       "start": 1,
+       "end": 286
+      },
+      {
+       "name": "codegraph-kernel/grammars/scala/tree_sitter/parser.h",
+       "start": 1,
+       "end": 286
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "#ifndef TREE_SITTER_PARSER_H_",
+       "#define TREE_SITTER_PARSER_H_",
+       "",
+       "#ifdef __cplusplus",
+       "extern \"C\" {",
+       "#endif",
+       "",
+       "#include <stdbool.h>",
+       "#include <stdint.h>",
+       "#include <stdlib.h>"
+      ],
+      "total": 286
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 291,
+     "tokens": 1775,
+     "first": {
+      "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
+      "start": 1,
+      "end": 291
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/grammars/lua/tree_sitter/array.h",
+       "start": 1,
+       "end": 291
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#ifndef TREE_SITTER_ARRAY_H_",
+       "#define TREE_SITTER_ARRAY_H_",
+       "",
+       "#ifdef __cplusplus",
+       "extern \"C\" {",
+       "#endif",
+       "",
+       "#include \"./alloc.h\"",
+       "",
+       "#include <assert.h>"
+      ],
+      "total": 291
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 265,
+     "tokens": 1684,
+     "first": {
+      "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
+      "start": 18,
+      "end": 282
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/grammars/kotlin/tree_sitter/array.h",
+       "start": 17,
+       "end": 281
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#pragma warning(disable : 4101)",
+       "#elif defined(__GNUC__) || defined(__clang__)",
+       "#pragma GCC diagnostic push",
+       "#pragma GCC diagnostic ignored \"-Wunused-variable\"",
+       "#endif",
+       "",
+       "#define Array(T)       \\",
+       "  struct {             \\",
+       "    T *contents;       \\",
+       "    uint32_t size;     \\"
+      ],
+      "total": 265
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 34,
+     "tokens": 248,
+     "first": {
+      "name": "codegraph-kernel/src/ccpp/mod.rs",
+      "start": 399,
+      "end": 432
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/src/kotlin.rs",
+       "start": 233,
+       "end": 266
+      },
+      {
+       "name": "codegraph-kernel/src/php.rs",
+       "start": 180,
+       "end": 213
+      },
+      {
+       "name": "codegraph-kernel/src/ruby.rs",
+       "start": 156,
+       "end": 189
+      },
+      {
+       "name": "codegraph-kernel/src/swift.rs",
+       "start": 208,
+       "end": 241
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 150,
+     "first": {
+      "name": "codegraph-kernel/src/csharp.rs",
+      "start": 36,
+      "end": 49
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/src/dart.rs",
+       "start": 56,
+       "end": 69
+      },
+      {
+       "name": "codegraph-kernel/src/go.rs",
+       "start": 1241,
+       "end": 1254
+      },
+      {
+       "name": "codegraph-kernel/src/java.rs",
+       "start": 39,
+       "end": 52
+      },
+      {
+       "name": "codegraph-kernel/src/rustlang.rs",
+       "start": 1542,
+       "end": 1555
+      },
+      {
+       "name": "codegraph-kernel/src/scala.rs",
+       "start": 71,
+       "end": 84
+      },
+      {
+       "name": "codegraph-kernel/src/tsjs/mod.rs",
+       "start": 115,
+       "end": 128
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 24,
+     "tokens": 176,
+     "first": {
+      "name": "codegraph-kernel/src/csharp.rs",
+      "start": 153,
+      "end": 176
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/src/dart.rs",
+       "start": 147,
+       "end": 170
+      },
+      {
+       "name": "codegraph-kernel/src/php.rs",
+       "start": 163,
+       "end": 186
+      },
+      {
+       "name": "codegraph-kernel/src/python.rs",
+       "start": 163,
+       "end": 186
+      },
+      {
+       "name": "codegraph-kernel/src/ruby.rs",
+       "start": 139,
+       "end": 162
+      },
+      {
+       "name": "codegraph-kernel/src/swift.rs",
+       "start": 191,
+       "end": 214
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 18,
+     "tokens": 121,
+     "first": {
+      "name": "codegraph-kernel/src/csharp.rs",
+      "start": 1484,
+      "end": 1501
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/src/go.rs",
+       "start": 1059,
+       "end": 1076
+      },
+      {
+       "name": "codegraph-kernel/src/java.rs",
+       "start": 1239,
+       "end": 1256
+      },
+      {
+       "name": "codegraph-kernel/src/php.rs",
+       "start": 1367,
+       "end": 1384
+      },
+      {
+       "name": "codegraph-kernel/src/python.rs",
+       "start": 947,
+       "end": 964
+      },
+      {
+       "name": "codegraph-kernel/src/ruby.rs",
+       "start": 964,
+       "end": 981
+      },
+      {
+       "name": "codegraph-kernel/src/rustlang.rs",
+       "start": 1356,
+       "end": 1373
+      },
+      {
+       "name": "codegraph-kernel/src/tsjs/mod.rs",
+       "start": 585,
+       "end": 602
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 16,
+     "tokens": 138,
+     "first": {
+      "name": "codegraph-kernel/src/csharp.rs",
+      "start": 396,
+      "end": 411
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/src/dart.rs",
+       "start": 348,
+       "end": 363
+      },
+      {
+       "name": "codegraph-kernel/src/go.rs",
+       "start": 297,
+       "end": 312
+      },
+      {
+       "name": "codegraph-kernel/src/kotlin.rs",
+       "start": 482,
+       "end": 497
+      },
+      {
+       "name": "codegraph-kernel/src/php.rs",
+       "start": 391,
+       "end": 406
+      },
+      {
+       "name": "codegraph-kernel/src/python.rs",
+       "start": 354,
+       "end": 369
+      },
+      {
+       "name": "codegraph-kernel/src/swift.rs",
+       "start": 430,
+       "end": 445
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 26,
+     "tokens": 199,
+     "first": {
+      "name": "codegraph-kernel/src/ccpp/mod.rs",
+      "start": 407,
+      "end": 432
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/src/csharp.rs",
+       "start": 180,
+       "end": 205
+      },
+      {
+       "name": "codegraph-kernel/src/dart.rs",
+       "start": 173,
+       "end": 198
+      },
+      {
+       "name": "codegraph-kernel/src/rlang.rs",
+       "start": 102,
+       "end": 127
+      },
+      {
+       "name": "codegraph-kernel/src/tsjs/mod.rs",
+       "start": 241,
+       "end": 266
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 106,
+     "first": {
+      "name": "codegraph-kernel/src/ccpp/mod.rs",
+      "start": 188,
+      "end": 202
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/src/go.rs",
+       "start": 1224,
+       "end": 1238
+      },
+      {
+       "name": "codegraph-kernel/src/kotlin.rs",
+       "start": 50,
+       "end": 64
+      },
+      {
+       "name": "codegraph-kernel/src/python.rs",
+       "start": 1109,
+       "end": 1123
+      },
+      {
+       "name": "codegraph-kernel/src/rustlang.rs",
+       "start": 1524,
+       "end": 1538
+      },
+      {
+       "name": "codegraph-kernel/src/scala.rs",
+       "start": 54,
+       "end": 68
+      },
+      {
+       "name": "codegraph-kernel/src/swift.rs",
+       "start": 68,
+       "end": 82
+      },
+      {
+       "name": "codegraph-kernel/src/tsjs/mod.rs",
+       "start": 98,
+       "end": 112
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 15,
+    "minified": 0,
+    "sample": [
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/employee/contract.go",
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/employee/employee.go",
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/calculate.go",
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/dto.go",
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/payroll_cycle.go",
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/payslip.go",
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/store.go",
+     "__tests__/fixtures/payroll-go/internal/gen/fkit/timesheet/timesheet.go",
+     "__tests__/fixtures/payroll-go/internal/gen/payrollpb/payroll_grpc.pb.go",
+     "__tests__/fixtures/payroll-go/internal/gen/payrollpb/payroll.pb.go",
+     "__tests__/fixtures/tail-render-ts/types/worker-configuration.d.ts",
+     "__tests__/generated-flag-index.test.ts",
+     "codegraph-kernel/grammars/dart/parser.c",
+     "codegraph-kernel/grammars/lua/parser.c",
+     "codegraph-kernel/grammars/scala/parser.c"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:37:36.328Z",
+  "jscpdVersion": "5.4.0"
  }
 }

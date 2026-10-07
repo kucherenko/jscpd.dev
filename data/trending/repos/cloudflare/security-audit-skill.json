@@ -9,10 +9,12 @@
    "starsToday": 927,
    "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
    "sources": 48,
-   "lines": 7139,
+   "lines": 6531,
    "clones": 28,
-   "duplicatedLines": 442,
-   "percentage": 6.19,
+   "duplicatedLines": 468,
+   "percentage": 7.17,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 3607,
    "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
    "sources": 48,
-   "lines": 7139,
+   "lines": 6531,
    "clones": 28,
-   "duplicatedLines": 442,
-   "percentage": 6.19,
+   "duplicatedLines": 468,
+   "percentage": 7.17,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 3006,
    "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
    "sources": 48,
-   "lines": 7139,
+   "lines": 6531,
    "clones": 28,
-   "duplicatedLines": 442,
-   "percentage": 6.19,
+   "duplicatedLines": 468,
+   "percentage": 7.17,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": 61.6,
    "healthGrade": "C"
   },
@@ -51,10 +57,12 @@
    "starsToday": 3155,
    "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
    "sources": 48,
-   "lines": 7139,
+   "lines": 6531,
    "clones": 28,
-   "duplicatedLines": 442,
-   "percentage": 6.19,
+   "duplicatedLines": 468,
+   "percentage": 7.17,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": 61.6,
    "healthGrade": "C"
   },
@@ -65,10 +73,12 @@
    "starsToday": 2428,
    "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
    "sources": 48,
-   "lines": 7139,
+   "lines": 6531,
    "clones": 28,
-   "duplicatedLines": 442,
-   "percentage": 6.19,
+   "duplicatedLines": 468,
+   "percentage": 7.17,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": 61.6,
    "healthGrade": "C"
   }
@@ -84,16 +94,16 @@
   "starsToday": 2428,
   "defaultBranch": "main",
   "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
-  "durationMs": 637,
+  "durationMs": 63,
   "total": {
    "sources": 48,
-   "lines": 7139,
-   "tokens": 68478,
+   "lines": 6531,
+   "tokens": 68313,
    "clones": 28,
-   "duplicatedLines": 442,
+   "duplicatedLines": 468,
    "duplicatedTokens": 2850,
-   "percentage": 6.19,
-   "percentageTokens": 4.16
+   "percentage": 7.17,
+   "percentageTokens": 4.17
   },
   "formats": [
    {
@@ -101,24 +111,24 @@
     "sources": 4,
     "lines": 3037,
     "clones": 24,
-    "duplicatedLines": 252,
-    "percentage": 8.3
+    "duplicatedLines": 276,
+    "percentage": 9.09
    },
    {
     "format": "json",
     "sources": 3,
-    "lines": 835,
+    "lines": 537,
     "clones": 3,
-    "duplicatedLines": 157,
-    "percentage": 18.8
+    "duplicatedLines": 160,
+    "percentage": 29.8
    },
    {
     "format": "text",
     "sources": 13,
-    "lines": 455,
+    "lines": 248,
     "clones": 1,
-    "duplicatedLines": 33,
-    "percentage": 7.25
+    "duplicatedLines": 32,
+    "percentage": 12.9
    },
    {
     "format": "markdown",
@@ -131,7 +141,7 @@
    {
     "format": "bash",
     "sources": 10,
-    "lines": 757,
+    "lines": 649,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -139,7 +149,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -147,7 +157,7 @@
    {
     "format": "yaml",
     "sources": 1,
-    "lines": 3,
+    "lines": 2,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -158,151 +168,241 @@
     "format": "text",
     "lines": 34,
     "tokens": 399,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/HUNTING.md:text",
      "start": 102,
      "end": 135
     },
-    "secondFile": {
-     "name": "skills/security-audit/VALIDATION-AND-REPORTING.md:text",
-     "start": 51,
-     "end": 84
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/VALIDATION-AND-REPORTING.md:text",
+      "start": 51,
+      "end": 84
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "Artifact promotion procedure (trusted parent-side code only):",
+      "Reference only for you: the parent performs these steps; you never perform them.",
+      "",
+      "Before execution, the parent opens and retains trusted, non-inheritable directory",
+      "descriptors for the agent's scratch/ and artifacts/ roots, and records an allowlist",
+      "of expected scratch-relative artifact files plus explicit per-file and cumulative",
+      "byte limits. Never pass those descriptors to the agent or sandbox. After the sandbox",
+      "and all its processes terminate, trusted parent-side code promotes each allowlisted",
+      "file separately:",
+      ""
+     ],
+     "total": 34
+    },
+    "kind": "docs"
    },
    {
     "format": "json",
     "lines": 80,
     "tokens": 268,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/report-schema.json",
      "start": 253,
      "end": 332
     },
-    "secondFile": {
-     "name": "skills/security-audit/report-schema.json",
-     "start": 370,
-     "end": 449
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/report-schema.json",
+      "start": 370,
+      "end": 449
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "},",
+      "\"fingerprint\": {",
+      "  \"type\": \"string\",",
+      "  \"minLength\": 1,",
+      "  \"pattern\": \"^[A-Za-z0-9][A-Za-z0-9._:/@+-]*$\"",
+      "},",
+      "\"title\": {",
+      "  \"type\": \"string\",",
+      "  \"minLength\": 1,",
+      "  \"visibleContent\": true"
+     ],
+     "total": 80
+    },
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 64,
     "tokens": 217,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/report-schema.json",
      "start": 35,
      "end": 98
     },
-    "secondFile": {
-     "name": "skills/security-audit/report-schema.json",
-     "start": 269,
-     "end": 332
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/report-schema.json",
+      "start": 269,
+      "end": 332
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"intended_behavior\": {",
+      "  \"type\": \"string\",",
+      "  \"minLength\": 1,",
+      "  \"visibleContent\": true",
+      "},",
+      "\"trace\": {",
+      "  \"type\": \"array\",",
+      "  \"minItems\": 1,",
+      "  \"uniqueItems\": true,",
+      "  \"items\": {"
+     ],
+     "total": 64
+    },
+    "kind": "data"
    },
    {
     "format": "javascript",
     "lines": 32,
     "tokens": 199,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/validate-coverage-ledger.cjs",
      "start": 92,
      "end": 123
     },
-    "secondFile": {
-     "name": "skills/security-audit/validate-findings.cjs",
-     "start": 55,
-     "end": 86
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/validate-findings.cjs",
+      "start": 55,
+      "end": 86
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 7,
+    "tokens": 80,
+    "first": {
+     "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
+     "start": 705,
+     "end": 711
+    },
+    "others": [
+     {
+      "name": "skills/security-audit/validate-findings.test.cjs",
+      "start": 543,
+      "end": 549
+     },
+     {
+      "name": "skills/security-audit/validate-findings.test.cjs",
+      "start": 565,
+      "end": 571
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "javascript",
     "lines": 14,
     "tokens": 124,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
      "start": 628,
      "end": 641
     },
-    "secondFile": {
-     "name": "skills/security-audit/validate-findings.test.cjs",
-     "start": 467,
-     "end": 480
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/validate-findings.test.cjs",
+      "start": 467,
+      "end": 480
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "javascript",
     "lines": 23,
     "tokens": 122,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/validate-coverage-ledger.cjs",
      "start": 318,
      "end": 340
     },
-    "secondFile": {
-     "name": "skills/security-audit/validate-findings.cjs",
-     "start": 138,
-     "end": 160
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/validate-findings.cjs",
+      "start": 138,
+      "end": 160
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 16,
     "tokens": 109,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/validate-coverage-ledger.cjs",
      "start": 718,
      "end": 733
     },
-    "secondFile": {
-     "name": "skills/security-audit/validate-findings.cjs",
-     "start": 601,
-     "end": 615
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/validate-findings.cjs",
+      "start": 601,
+      "end": 615
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 14,
     "tokens": 106,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
      "start": 610,
      "end": 623
     },
-    "secondFile": {
-     "name": "skills/security-audit/validate-findings.test.cjs",
-     "start": 387,
-     "end": 400
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/validate-findings.test.cjs",
+      "start": 387,
+      "end": 400
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "javascript",
     "lines": 11,
     "tokens": 94,
-    "firstFile": {
+    "first": {
      "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
      "start": 652,
      "end": 662
     },
-    "secondFile": {
-     "name": "skills/security-audit/validate-findings.test.cjs",
-     "start": 491,
-     "end": 501
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 14,
-    "tokens": 91,
-    "firstFile": {
-     "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
-     "start": 575,
-     "end": 588
-    },
-    "secondFile": {
-     "name": "skills/security-audit/validate-findings.test.cjs",
-     "start": 412,
-     "end": 425
-    }
+    "others": [
+     {
+      "name": "skills/security-audit/validate-findings.test.cjs",
+      "start": 491,
+      "end": 501
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -428,6 +528,282 @@
    "files": 4,
    "byCategory": [],
    "largest": []
-  }
+  },
+  "code": {
+   "sources": 12,
+   "lines": 2463,
+   "tokens": 15306,
+   "clones": 9,
+   "duplicatedLines": 138,
+   "duplicatedTokens": 816,
+   "percentage": 5.6,
+   "percentageTokens": 5.33,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 2,
+     "lines": 1645,
+     "clones": 9,
+     "duplicatedLines": 138,
+     "percentage": 8.39
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 32,
+     "tokens": 199,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 92,
+      "end": 123
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 55,
+       "end": 86
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "const hasOwn = (value, key) => Object.prototype.hasOwnProperty.call(value, key);",
+       "",
+       "class JsonStructureError extends Error {}",
+       "class SafeInputError extends Error {}",
+       "",
+       "function escapeUnsafeDiagnosticCharacters(value) {",
+       "  return String(value).replace(UNSAFE_DIAGNOSTIC_CHARACTER, (character) => {",
+       "    const codePoint = character.codePointAt(0);",
+       "    return codePoint <= 0xffff",
+       "      ? `\\\\u${codePoint.toString(16).padStart(4, \"0\")}`"
+      ],
+      "total": 32
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 23,
+     "tokens": 122,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 318,
+      "end": 340
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 138,
+       "end": 160
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  return errors;",
+       "}",
+       "",
+       "function hasValidUnicodeScalarValues(value) {",
+       "  let index = 0;",
+       "  while (index < value.length) {",
+       "    const first = value.charCodeAt(index++);",
+       "    if (first >= 0xd800 && first <= 0xdbff) {",
+       "      if (index >= value.length) return false;",
+       "      const second = value.charCodeAt(index++);"
+      ],
+      "total": 23
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 16,
+     "tokens": 109,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 718,
+      "end": 733
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 601,
+       "end": 615
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  return errors;",
+       "}",
+       "",
+       "function readFileWithinLimit(file) {",
+       "  const noFollow = fs.constants.O_NOFOLLOW;",
+       "  const nonBlock = fs.constants.O_NONBLOCK;",
+       "  if (!Number.isInteger(noFollow) || noFollow === 0 || !Number.isInteger(nonBlock) || nonBlock === 0) {",
+       "    // Node exposes no race-safe fallback on these platforms, so reject all inputs.",
+       "    throw new SafeInputError(\"OS no-follow and nonblocking input protection is unavailable\");",
+       "  }"
+      ],
+      "total": 16
+     },
+     "excerptSecond": {
+      "lines": [
+       "  return schema;",
+       "}",
+       "",
+       "function readFileWithinLimit(file) {",
+       "  const noFollow = fs.constants.O_NOFOLLOW;",
+       "  const nonBlock = fs.constants.O_NONBLOCK;",
+       "  if (!Number.isInteger(noFollow) || noFollow === 0 || !Number.isInteger(nonBlock) || nonBlock === 0) {",
+       "    throw new SafeInputError(\"OS no-follow and nonblocking input protection is unavailable\");",
+       "  }",
+       ""
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 18,
+     "tokens": 87,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 120,
+      "end": 137
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 89,
+       "end": 106
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 15,
+     "tokens": 72,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 230,
+      "end": 244
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 664,
+       "end": 679
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 8,
+     "tokens": 64,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 741,
+      "end": 748
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 629,
+       "end": 636
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 13,
+     "tokens": 61,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 749,
+      "end": 761
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 639,
+       "end": 651
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 7,
+     "tokens": 52,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 845,
+      "end": 851
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 749,
+       "end": 755
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 6,
+     "tokens": 50,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 421,
+      "end": 426
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 471,
+       "end": 476
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:16:32.645Z",
+  "jscpdVersion": "5.4.0"
  }
 }

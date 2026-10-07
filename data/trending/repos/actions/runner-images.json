@@ -9,10 +9,12 @@
    "starsToday": 19,
    "headSha": "ede07f8e48022b2c00dc669c7a9d927c46e32a81",
    "sources": 274,
-   "lines": 38139,
+   "lines": 38095,
    "clones": 453,
    "duplicatedLines": 12551,
-   "percentage": 32.91,
+   "percentage": 32.95,
+   "codePercentage": 7.31,
+   "codeSources": 311,
    "healthScore": 35.1,
    "healthGrade": "E"
   }
@@ -28,16 +30,16 @@
   "starsToday": 19,
   "defaultBranch": "main",
   "headSha": "ede07f8e48022b2c00dc669c7a9d927c46e32a81",
-  "durationMs": 958,
+  "durationMs": 125,
   "total": {
    "sources": 274,
-   "lines": 38139,
-   "tokens": 230096,
+   "lines": 38095,
+   "tokens": 229931,
    "clones": 453,
    "duplicatedLines": 12551,
    "duplicatedTokens": 67285,
-   "percentage": 32.91,
-   "percentageTokens": 29.24
+   "percentage": 32.95,
+   "percentageTokens": 29.26
   },
   "formats": [
    {
@@ -75,10 +77,10 @@
    {
     "format": "bash",
     "sources": 22,
-    "lines": 2024,
+    "lines": 1974,
     "clones": 7,
     "duplicatedLines": 389,
-    "percentage": 19.22
+    "percentage": 19.71
    },
    {
     "format": "text",
@@ -99,7 +101,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -126,151 +128,281 @@
     "format": "markdown",
     "lines": 120,
     "tokens": 1564,
-    "firstFile": {
+    "first": {
      "name": "images/windows/Windows2022-Readme.md:markdown",
      "start": 284,
      "end": 403
     },
-    "secondFile": {
-     "name": "images/windows/Windows2025-Readme.md:markdown",
-     "start": 270,
-     "end": 389
-    }
+    "others": [
+     {
+      "name": "images/windows/Windows2025-Readme.md:markdown",
+      "start": 270,
+      "end": 389
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "| Microsoft.Net.Component.4.8.1.SDK                                         | 17.14.36510.44  |",
+      "| Microsoft.Net.Component.4.8.1.TargetingPack                               | 17.14.36510.44  |",
+      "| Microsoft.Net.Component.4.8.SDK                                           | 17.14.36510.44  |",
+      "| Microsoft.Net.Component.4.8.TargetingPack                                 | 17.14.36510.44  |",
+      "| Microsoft.Net.ComponentGroup.4.8.DeveloperTools                           | 17.14.36510.44  |",
+      "| Microsoft.Net.ComponentGroup.DevelopmentPrerequisites                     | 17.14.36510.44  |",
+      "| Microsoft.Net.ComponentGroup.TargetingPacks.Common                        | 17.14.36510.44  |",
+      "| microsoft.net.runtime.android                                             | 9.0.2026.41315  |",
+      "| microsoft.net.runtime.android.aot                                         | 9.0.2026.41315  |",
+      "| microsoft.net.runtime.android.aot.net8                                    | 9.0.2026.41315  |"
+     ],
+     "total": 120
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 78,
     "tokens": 1407,
-    "firstFile": {
+    "first": {
      "name": "images/macos/macos-14-Readme.md:markdown",
      "start": 161,
      "end": 238
     },
-    "secondFile": {
-     "name": "images/macos/macos-14-arm64-Readme.md:markdown",
-     "start": 154,
-     "end": 231
-    }
+    "others": [
+     {
+      "name": "images/macos/macos-14-arm64-Readme.md:markdown",
+      "start": 154,
+      "end": 231
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "- PSScriptAnalyzer: 1.25.0",
+      "",
+      "### Xcode",
+      "| Version        | Build    | Path                           | Symlinks                                                  |",
+      "| -------------- | -------- | ------------------------------ | --------------------------------------------------------- |",
+      "| 16.2           | 16C5032a | /Applications/Xcode_16.2.app   | /Applications/Xcode_16.2.0.app                            |",
+      "| 16.1           | 16B40    | /Applications/Xcode_16.1.app   | /Applications/Xcode_16.1.0.app                            |",
+      "| 15.4 (default) | 15F31d   | /Applications/Xcode_15.4.app   | /Applications/Xcode_15.4.0.app<br>/Applications/Xcode.app |",
+      "| 15.3           | 15E204a  | /Applications/Xcode_15.3.app   | /Applications/Xcode_15.3.0.app                            |",
+      "| 15.2           | 15C500b  | /Applications/Xcode_15.2.app   | /Applications/Xcode_15.2.0.app                            |"
+     ],
+     "total": 78
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 12,
     "tokens": 1282,
-    "firstFile": {
+    "first": {
      "name": "images/macos/macos-15-Readme.md:markdown",
      "start": 259,
      "end": 270
     },
-    "secondFile": {
-     "name": "images/macos/macos-15-arm64-Readme.md:markdown",
-     "start": 253,
-     "end": 264
-    }
+    "others": [
+     {
+      "name": "images/macos/macos-15-arm64-Readme.md:markdown",
+      "start": 253,
+      "end": 264
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "| ------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------…",
+      "| iOS 18.5     | 18.5   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generatio…",
+      "| iOS 18.6     | 18.6   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generatio…",
+      "| iOS 26.0     | 26.0.1 | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<br…",
+      "| iOS 26.1     | 26.1   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<br…",
+      "| iOS 26.2     | 26.2   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<br…",
+      "| tvOS 18.5    | 18.5   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                  …",
+      "| tvOS 26.1    | 26.1   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                  …",
+      "| tvOS 26.2    | 26.2   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                  …",
+      "| watchOS 11.5 | 11.5   | Apple Watch SE (40mm) (2nd generation)<br>Apple Watch SE (44mm) (2nd generation)<br>Apple Watch Series 10 (42mm)<br>Apple Watch Serie…"
+     ],
+     "total": 12
+    },
+    "excerptSecond": {
+     "lines": [
+      "| ------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------…",
+      "| iOS 18.5      | 18.5   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generati…",
+      "| iOS 18.6      | 18.6   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone SE (3rd generation)<br>iPad (10th generati…",
+      "| iOS 26.0      | 26.0.1 | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<b…",
+      "| iOS 26.1      | 26.1   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<b…",
+      "| iOS 26.2      | 26.2   | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<b…",
+      "| tvOS 18.5     | 18.5   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                 …",
+      "| tvOS 26.1     | 26.1   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                 …",
+      "| tvOS 26.2     | 26.2   | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                 …",
+      "| watchOS 11.5  | 11.5   | Apple Watch SE (40mm) (2nd generation)<br>Apple Watch SE (44mm) (2nd generation)<br>Apple Watch Series 10 (42mm)<br>Apple Watch Seri…"
+     ],
+     "total": 12
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 98,
     "tokens": 1254,
-    "firstFile": {
+    "first": {
      "name": "images/macos/macos-15-Readme.md:markdown",
      "start": 162,
      "end": 259
     },
-    "secondFile": {
-     "name": "images/macos/macos-15-arm64-Readme.md:markdown",
-     "start": 156,
-     "end": 253
-    }
+    "others": [
+     {
+      "name": "images/macos/macos-15-arm64-Readme.md:markdown",
+      "start": 156,
+      "end": 253
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 6,
+    "tokens": 530,
+    "first": {
+     "name": "images/ubuntu/Ubuntu2204-Readme.md:markdown",
+     "start": 258,
+     "end": 263
+    },
+    "others": [
+     {
+      "name": "images/ubuntu/Ubuntu2404-Readme.md:markdown",
+      "start": 231,
+      "end": 236
+     },
+     {
+      "name": "images/ubuntu/Ubuntu2604-Readme.md:markdown",
+      "start": 218,
+      "end": 223
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   },
+   {
+    "format": "hcl",
+    "lines": 79,
+    "tokens": 169,
+    "first": {
+     "name": "images/macos/templates/macOS-14.anka.pkr.hcl",
+     "start": 1,
+     "end": 79
+    },
+    "others": [
+     {
+      "name": "images/macos/templates/macOS-14.arm64.anka.pkr.hcl",
+      "start": 1,
+      "end": 79
+     },
+     {
+      "name": "images/macos/templates/macOS-15.anka.pkr.hcl",
+      "start": 1,
+      "end": 79
+     },
+     {
+      "name": "images/macos/templates/macOS-15.arm64.anka.pkr.hcl",
+      "start": 1,
+      "end": 79
+     },
+     {
+      "name": "images/macos/templates/macOS-26.anka.pkr.hcl",
+      "start": 1,
+      "end": 79
+     },
+     {
+      "name": "images/macos/templates/macOS-26.arm64.anka.pkr.hcl",
+      "start": 1,
+      "end": 79
+     },
+     {
+      "name": "images/macos/templates/xcode-27.arm64.anka.pkr.hcl",
+      "start": 1,
+      "end": 79
+     }
+    ],
+    "copies": 7,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 14,
     "tokens": 1008,
-    "firstFile": {
+    "first": {
      "name": "images/macos/macos-14-Readme.md:markdown",
      "start": 241,
      "end": 254
     },
-    "secondFile": {
-     "name": "images/macos/macos-14-arm64-Readme.md:markdown",
-     "start": 234,
-     "end": 247
-    }
+    "others": [
+     {
+      "name": "images/macos/macos-14-arm64-Readme.md:markdown",
+      "start": 234,
+      "end": 247
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 73,
     "tokens": 988,
-    "firstFile": {
+    "first": {
      "name": "images/macos/macos-26-Readme.md:markdown",
      "start": 154,
      "end": 226
     },
-    "secondFile": {
-     "name": "images/macos/macos-26-arm64-Readme.md:markdown",
-     "start": 149,
-     "end": 221
-    }
+    "others": [
+     {
+      "name": "images/macos/macos-26-arm64-Readme.md:markdown",
+      "start": 149,
+      "end": 221
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 170,
     "tokens": 944,
-    "firstFile": {
+    "first": {
      "name": "images/windows/Windows11-Arm64-Readme.md:markdown",
      "start": 10,
      "end": 179
     },
-    "secondFile": {
-     "name": "images/windows/Windows11-VS2026-Arm64-Readme.md:markdown",
-     "start": 10,
-     "end": 179
-    }
+    "others": [
+     {
+      "name": "images/windows/Windows11-VS2026-Arm64-Readme.md:markdown",
+      "start": 10,
+      "end": 179
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "bash",
     "lines": 188,
     "tokens": 922,
-    "firstFile": {
+    "first": {
      "name": "images/ubuntu-slim/scripts/helpers/install.sh",
      "start": 47,
      "end": 234
     },
-    "secondFile": {
-     "name": "images/ubuntu/scripts/helpers/install.sh",
-     "start": 53,
-     "end": 240
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 49,
-    "tokens": 691,
-    "firstFile": {
-     "name": "images/windows/Windows2022-Readme.md:markdown",
-     "start": 203,
-     "end": 251
-    },
-    "secondFile": {
-     "name": "images/windows/Windows2025-Readme.md:markdown",
-     "start": 193,
-     "end": 241
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 57,
-    "tokens": 647,
-    "firstFile": {
-     "name": "images/windows/Windows2022-Readme.md:markdown",
-     "start": 404,
-     "end": 460
-    },
-    "secondFile": {
-     "name": "images/windows/Windows2025-Readme.md:markdown",
-     "start": 388,
-     "end": 444
-    }
+    "others": [
+     {
+      "name": "images/ubuntu/scripts/helpers/install.sh",
+      "start": 53,
+      "end": 240
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -394,6 +526,302 @@
    "files": 1,
    "byCategory": [],
    "largest": []
-  }
+  },
+  "code": {
+   "sources": 311,
+   "lines": 22018,
+   "tokens": 110664,
+   "clones": 72,
+   "duplicatedLines": 1609,
+   "duplicatedTokens": 8051,
+   "percentage": 7.31,
+   "percentageTokens": 7.28,
+   "formats": [
+    {
+     "format": "powershell",
+     "sources": 154,
+     "lines": 13813,
+     "clones": 50,
+     "duplicatedLines": 929,
+     "percentage": 6.73
+    },
+    {
+     "format": "bash",
+     "sources": 154,
+     "lines": 7919,
+     "clones": 22,
+     "duplicatedLines": 680,
+     "percentage": 8.59
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "swift",
+     "sources": 1,
+     "lines": 64,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 48,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "bash",
+     "lines": 188,
+     "tokens": 922,
+     "first": {
+      "name": "images/ubuntu-slim/scripts/helpers/install.sh",
+      "start": 47,
+      "end": 234
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/helpers/install.sh",
+       "start": 53,
+       "end": 240
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "get_github_releases_by_version() {",
+       "    local repo=$1",
+       "    local version=${2:-\".+\"}",
+       "    local allow_pre_release=${3:-false}",
+       "    local with_assets_only=${4:-false}",
+       "",
+       "    page_size=\"100\"",
+       ""
+      ],
+      "total": 188
+     },
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 90,
+     "tokens": 531,
+     "first": {
+      "name": "images/ubuntu-slim/scripts/docs-gen/Common.Helpers.psm1",
+      "start": 63,
+      "end": 152
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/helpers/Common.Helpers.psm1",
+       "start": 99,
+       "end": 188
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "function Get-ToolsetContent {",
+       "    <#",
+       "    .SYNOPSIS",
+       "        Retrieves the content of the toolset.json file.",
+       "",
+       "    .DESCRIPTION",
+       "        This function reads the toolset.json in path provided by INSTALLER_SCRIPT_FOLDER",
+       "        environment variable and returns the content as a PowerShell object."
+      ],
+      "total": 90
+     },
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 65,
+     "tokens": 306,
+     "first": {
+      "name": "images/ubuntu-slim/scripts/docs-gen/Common.Helpers.psm1",
+      "start": 1,
+      "end": 65
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/helpers/Common.Helpers.psm1",
+       "start": 1,
+       "end": 65
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "function Get-CommandResult {",
+       "    <#",
+       "    .SYNOPSIS",
+       "        Runs a command in bash and returns the output and exit code.",
+       "",
+       "    .DESCRIPTION",
+       "        Function runs a provided command in bash and returns the output and exit code as hashtable.",
+       "",
+       "    .PARAMETER Command",
+       "        The command to run."
+      ],
+      "total": 65
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 89,
+     "tokens": 246,
+     "first": {
+      "name": "images/ubuntu-slim/scripts/helpers/etc-environment.sh",
+      "start": 1,
+      "end": 89
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/helpers/etc-environment.sh",
+       "start": 1,
+       "end": 89
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 30,
+     "tokens": 190,
+     "first": {
+      "name": "images/macos/scripts/docs-gen/SoftwareReport.Android.psm1",
+      "start": 158,
+      "end": 187
+     },
+     "others": [
+      {
+       "name": "images/windows/scripts/docs-gen/SoftwareReport.Android.psm1",
+       "start": 102,
+       "end": 131
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 37,
+     "tokens": 186,
+     "first": {
+      "name": "images/ubuntu-slim/scripts/docs-gen/SoftwareReport.Helpers.psm1",
+      "start": 1,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/docs-gen/SoftwareReport.Helpers.psm1",
+       "start": 1,
+       "end": 37
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 37,
+     "tokens": 182,
+     "first": {
+      "name": "images/macos/scripts/docs-gen/SoftwareReport.Android.psm1",
+      "start": 121,
+      "end": 157
+     },
+     "others": [
+      {
+       "name": "images/windows/scripts/docs-gen/SoftwareReport.Android.psm1",
+       "start": 65,
+       "end": 101
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 36,
+     "tokens": 170,
+     "first": {
+      "name": "images/ubuntu-slim/scripts/build/install-zstd.sh",
+      "start": 1,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/build/install-zstd.sh",
+       "start": 1,
+       "end": 36
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 38,
+     "tokens": 161,
+     "first": {
+      "name": "images/macos/scripts/docs-gen/SoftwareReport.Android.psm1",
+      "start": 75,
+      "end": 112
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/docs-gen/SoftwareReport.Android.psm1",
+       "start": 45,
+       "end": 82
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 28,
+     "tokens": 159,
+     "first": {
+      "name": "images/ubuntu-slim/scripts/docs-gen/SoftwareReport.Common.psm1",
+      "start": 50,
+      "end": 77
+     },
+     "others": [
+      {
+       "name": "images/ubuntu/scripts/docs-gen/SoftwareReport.Common.psm1",
+       "start": 287,
+       "end": 314
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:27:23.599Z",
+  "jscpdVersion": "5.4.0"
  }
 }

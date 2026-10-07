@@ -9,10 +9,12 @@
    "starsToday": 129,
    "headSha": "ff1df854bb9db63066364bbb0d16484fcc72fb75",
    "sources": 68,
-   "lines": 11361,
+   "lines": 11245,
    "clones": 34,
-   "duplicatedLines": 448,
-   "percentage": 3.94,
+   "duplicatedLines": 482,
+   "percentage": 4.29,
+   "codePercentage": 4.45,
+   "codeSources": 48,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,15 +30,15 @@
   "starsToday": 129,
   "defaultBranch": "main",
   "headSha": "ff1df854bb9db63066364bbb0d16484fcc72fb75",
-  "durationMs": 489,
+  "durationMs": 46,
   "total": {
    "sources": 68,
-   "lines": 11361,
-   "tokens": 82972,
+   "lines": 11245,
+   "tokens": 82807,
    "clones": 34,
-   "duplicatedLines": 448,
+   "duplicatedLines": 482,
    "duplicatedTokens": 2985,
-   "percentage": 3.94,
+   "percentage": 4.29,
    "percentageTokens": 3.6
   },
   "formats": [
@@ -45,13 +47,13 @@
     "sources": 47,
     "lines": 9738,
     "clones": 34,
-    "duplicatedLines": 448,
-    "percentage": 4.6
+    "duplicatedLines": 482,
+    "percentage": 4.95
    },
    {
     "format": "bash",
     "sources": 11,
-    "lines": 747,
+    "lines": 655,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -67,7 +69,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -89,14 +91,6 @@
     "percentage": 0
    },
    {
-    "format": "text",
-    "sources": 1,
-    "lines": 49,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "json",
     "sources": 1,
     "lines": 44,
@@ -111,6 +105,14 @@
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 19,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
    }
   ],
   "topClones": [
@@ -118,152 +120,540 @@
     "format": "python",
     "lines": 72,
     "tokens": 248,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_core/models/dvm_opcode.py",
      "start": 1,
      "end": 72
     },
-    "secondFile": {
-     "name": "droidasc/asc_core/resource/dvmopcode_template.py",
-     "start": 1,
-     "end": 72
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_core/resource/dvmopcode_template.py",
+      "start": 1,
+      "end": 72
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "from enum import IntFlag",
+      "from enum import Enum",
+      "",
+      "# Auth: MG1937",
+      "",
+      "vflags = [",
+      "    \"kVerifyNothing\", \"kVerifyRegA\", \"kVerifyRegB\", \"kVerifyRegAWide\",",
+      "    \"kVerifyRegBWide\", \"kVerifyRegBString\", \"kVerifyRegBType\", \"kVerifyRegCType\",",
+      "    \"kVerifyRegBNewInstance\", \"kVerifyRegCNewArray\", \"kVerifyRegBFilledNewArray\",",
+      "    \"kVerifyVarArg\", \"kVerifyVarArgRange\", \"kVerifyArrayData\", \"kVerifyBranchTarget\","
+     ],
+     "total": 72
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 28,
     "tokens": 144,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_client/gui/source_edit.py",
      "start": 188,
      "end": 215
     },
-    "secondFile": {
-     "name": "droidasc/asc_client/gui/source_edit.py",
-     "start": 250,
-     "end": 277
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_client/gui/source_edit.py",
+      "start": 250,
+      "end": 277
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "state = \"code\"",
+      "i = start",
+      "while i < end:",
+      "    ch = text[i]",
+      "    nxt = text[i + 1] if i + 1 < end else \"\"",
+      "    if state == \"code\":",
+      "        if ch == \"/\" and nxt == \"/\":",
+      "            state = \"line_comment\"",
+      "            i += 2",
+      "            continue"
+     ],
+     "total": 28
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 11,
     "tokens": 140,
-    "firstFile": {
+    "first": {
      "name": "tests/dex_fixture.py",
      "start": 42,
      "end": 52
     },
-    "secondFile": {
-     "name": "tests/dex_fixture.py",
-     "start": 91,
-     "end": 103
-    }
+    "others": [
+     {
+      "name": "tests/dex_fixture.py",
+      "start": 91,
+      "end": 103
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "struct.pack_into('<IIIIIIII', buf, class_defs, 0, 1, 1, 0, 0xffffffff, 0, class_data, 0)",
+      "buf.extend(b'\\0' * (-len(buf) % 4))",
+      "map_off = len(buf)",
+      "sections.append((0x1000, 1, map_off))",
+      "buf.extend(struct.pack('<I', len(sections)))",
+      "for kind, count, offset in sections:",
+      "    buf.extend(struct.pack('<HHII', kind, 0, count, offset))",
+      "buf[:8] = b'dex\\n035\\0'",
+      "struct.pack_into('<IIIIII', buf, 32, len(buf), 112, 0x12345678, 0, 0, map_off)",
+      "struct.pack_into('<IIIIIIIIIIIIII', buf, 56,"
+     ],
+     "total": 11
+    },
+    "excerptSecond": {
+     "lines": [
+      "struct.pack_into('<IIIIIIII', buf, class_defs, 0, 1, 1, 0, 0xffffffff, 0, class_data, static_values)",
+      "",
+      "buf.extend(b'\\0' * (-len(buf) % 4))",
+      "map_off = len(buf)",
+      "sections.append((0x1000, 1, map_off))",
+      "buf.extend(struct.pack('<I', len(sections)))",
+      "for kind, count, offset in sections:",
+      "    buf.extend(struct.pack('<HHII', kind, 0, count, offset))",
+      "",
+      "buf[:8] = b'dex\\n035\\0'"
+     ],
+     "total": 13
+    },
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 14,
     "tokens": 138,
-    "firstFile": {
+    "first": {
      "name": "tests/dex_fixture.py",
      "start": 17,
      "end": 30
     },
-    "secondFile": {
-     "name": "tests/dex_fixture.py",
-     "start": 61,
-     "end": 74
-    }
+    "others": [
+     {
+      "name": "tests/dex_fixture.py",
+      "start": 61,
+      "end": 74
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 21,
     "tokens": 133,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_core/core/dex/dex_remapper.py",
      "start": 236,
      "end": 256
     },
-    "secondFile": {
-     "name": "droidasc/asc_core/core/dex/dex_remapper.py",
-     "start": 360,
-     "end": 380
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_core/core/dex/dex_remapper.py",
+      "start": 360,
+      "end": 380
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 20,
     "tokens": 132,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_core/core/dex/dex_remapper.py",
      "start": 237,
      "end": 256
     },
-    "secondFile": {
-     "name": "droidasc/asc_core/core/dex/dex_remapper.py",
-     "start": 284,
-     "end": 303
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_core/core/dex/dex_remapper.py",
+      "start": 284,
+      "end": 303
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 10,
     "tokens": 121,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_core/utils/dvm_regdec.py",
      "start": 36,
      "end": 45
     },
-    "secondFile": {
-     "name": "droidasc/asc_core/utils/dvm_regdec.py",
-     "start": 97,
-     "end": 106
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_core/utils/dvm_regdec.py",
+      "start": 97,
+      "end": 106
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 24,
     "tokens": 113,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_core/findrefs/locator/field_locator.py",
      "start": 41,
      "end": 64
     },
-    "secondFile": {
-     "name": "droidasc/asc_core/findrefs/locator/method_locator.py",
-     "start": 40,
-     "end": 63
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_core/findrefs/locator/method_locator.py",
+      "start": 40,
+      "end": 63
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 10,
     "tokens": 107,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_core/utils/dvm_regdec.py",
      "start": 56,
      "end": 65
     },
-    "secondFile": {
-     "name": "droidasc/asc_core/utils/dvm_regdec.py",
-     "start": 117,
-     "end": 126
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_core/utils/dvm_regdec.py",
+      "start": 117,
+      "end": 126
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 14,
     "tokens": 103,
-    "firstFile": {
+    "first": {
      "name": "droidasc/asc_core/utils/dex_parser.py",
      "start": 42,
      "end": 55
     },
-    "secondFile": {
-     "name": "droidasc/asc_core/utils/dex_parser.py",
-     "start": 80,
-     "end": 93
-    }
+    "others": [
+     {
+      "name": "droidasc/asc_core/utils/dex_parser.py",
+      "start": 80,
+      "end": 93
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 48,
+   "lines": 9942,
+   "tokens": 71082,
+   "clones": 30,
+   "duplicatedLines": 442,
+   "duplicatedTokens": 2570,
+   "percentage": 4.45,
+   "percentageTokens": 3.62,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 37,
+     "lines": 8821,
+     "clones": 30,
+     "duplicatedLines": 442,
+     "percentage": 5.01
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c-header",
+     "sources": 1,
+     "lines": 303,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 72,
+     "tokens": 248,
+     "first": {
+      "name": "droidasc/asc_core/models/dvm_opcode.py",
+      "start": 1,
+      "end": 72
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_core/resource/dvmopcode_template.py",
+       "start": 1,
+       "end": 72
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "from enum import IntFlag",
+       "from enum import Enum",
+       "",
+       "# Auth: MG1937",
+       "",
+       "vflags = [",
+       "    \"kVerifyNothing\", \"kVerifyRegA\", \"kVerifyRegB\", \"kVerifyRegAWide\",",
+       "    \"kVerifyRegBWide\", \"kVerifyRegBString\", \"kVerifyRegBType\", \"kVerifyRegCType\",",
+       "    \"kVerifyRegBNewInstance\", \"kVerifyRegCNewArray\", \"kVerifyRegBFilledNewArray\",",
+       "    \"kVerifyVarArg\", \"kVerifyVarArgRange\", \"kVerifyArrayData\", \"kVerifyBranchTarget\","
+      ],
+      "total": 72
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 28,
+     "tokens": 144,
+     "first": {
+      "name": "droidasc/asc_client/gui/source_edit.py",
+      "start": 188,
+      "end": 215
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_client/gui/source_edit.py",
+       "start": 250,
+       "end": 277
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "state = \"code\"",
+       "i = start",
+       "while i < end:",
+       "    ch = text[i]",
+       "    nxt = text[i + 1] if i + 1 < end else \"\"",
+       "    if state == \"code\":",
+       "        if ch == \"/\" and nxt == \"/\":",
+       "            state = \"line_comment\"",
+       "            i += 2",
+       "            continue"
+      ],
+      "total": 28
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 21,
+     "tokens": 133,
+     "first": {
+      "name": "droidasc/asc_core/core/dex/dex_remapper.py",
+      "start": 236,
+      "end": 256
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_core/core/dex/dex_remapper.py",
+       "start": 360,
+       "end": 380
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "method = self.dex.methods[origin_method_idx]",
+       "params = method.prototype.parameters_type",
+       "",
+       "param_count = len(params)",
+       "new_prototype = [short_idx, rettypeidx, param_count]",
+       "",
+       "for param in params:",
+       "    if param.type == Type.TYPES.PRIMITIVE:",
+       "        new_prototype.append(self.typeidx_data_types[param.value])",
+       "        continue"
+      ],
+      "total": 21
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 20,
+     "tokens": 132,
+     "first": {
+      "name": "droidasc/asc_core/core/dex/dex_remapper.py",
+      "start": 237,
+      "end": 256
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_core/core/dex/dex_remapper.py",
+       "start": 284,
+       "end": 303
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 121,
+     "first": {
+      "name": "droidasc/asc_core/utils/dvm_regdec.py",
+      "start": 36,
+      "end": 45
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_core/utils/dvm_regdec.py",
+       "start": 97,
+       "end": 106
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 24,
+     "tokens": 113,
+     "first": {
+      "name": "droidasc/asc_core/findrefs/locator/field_locator.py",
+      "start": 41,
+      "end": 64
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_core/findrefs/locator/method_locator.py",
+       "start": 40,
+       "end": 63
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 107,
+     "first": {
+      "name": "droidasc/asc_core/utils/dvm_regdec.py",
+      "start": 56,
+      "end": 65
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_core/utils/dvm_regdec.py",
+       "start": 117,
+       "end": 126
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 103,
+     "first": {
+      "name": "droidasc/asc_core/utils/dex_parser.py",
+      "start": 42,
+      "end": 55
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_core/utils/dex_parser.py",
+       "start": 80,
+       "end": 93
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 97,
+     "first": {
+      "name": "droidasc/asc_client/gui/app.py",
+      "start": 804,
+      "end": 812
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_client/gui/app.py",
+       "start": 816,
+       "end": 824
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 97,
+     "first": {
+      "name": "droidasc/asc_client/gui/source_edit.py",
+      "start": 220,
+      "end": 241
+     },
+     "others": [
+      {
+       "name": "droidasc/asc_client/gui/source_edit.py",
+       "start": 279,
+       "end": 300
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:05:28.194Z",
+  "jscpdVersion": "5.4.0"
  }
 }

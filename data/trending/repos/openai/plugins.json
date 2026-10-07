@@ -9,10 +9,12 @@
    "starsToday": 105,
    "headSha": "d416fd5a43426019986b1e489506db3db66dee3d",
    "sources": 7170,
-   "lines": 1372783,
-   "clones": 2834,
-   "duplicatedLines": 220023,
-   "percentage": 16.03,
+   "lines": 1025844,
+   "clones": 3033,
+   "duplicatedLines": 206741,
+   "percentage": 20.15,
+   "codePercentage": 41.24,
+   "codeSources": 578,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 498,
    "headSha": "d416fd5a43426019986b1e489506db3db66dee3d",
    "sources": 7170,
-   "lines": 1372783,
-   "clones": 2834,
-   "duplicatedLines": 220023,
-   "percentage": 16.03,
+   "lines": 1025844,
+   "clones": 3033,
+   "duplicatedLines": 206741,
+   "percentage": 20.15,
+   "codePercentage": 41.24,
+   "codeSources": 578,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,250 +46,1024 @@
   "starsToday": 498,
   "defaultBranch": "main",
   "headSha": "d416fd5a43426019986b1e489506db3db66dee3d",
-  "durationMs": 2392,
+  "durationMs": 3255,
   "total": {
    "sources": 7170,
-   "lines": 1372783,
-   "tokens": 7299651,
-   "clones": 2834,
-   "duplicatedLines": 220023,
-   "duplicatedTokens": 1177054,
-   "percentage": 16.03,
-   "percentageTokens": 16.12
+   "lines": 1025844,
+   "tokens": 7299313,
+   "clones": 3033,
+   "duplicatedLines": 206741,
+   "duplicatedTokens": 1183797,
+   "percentage": 20.15,
+   "percentageTokens": 16.22
   },
   "formats": [
    {
     "format": "markdown",
     "sources": 3368,
     "lines": 469530,
-    "clones": 1182,
-    "duplicatedLines": 32197,
-    "percentage": 6.86
+    "clones": 1274,
+    "duplicatedLines": 34205,
+    "percentage": 7.28
    },
    {
     "format": "python",
     "sources": 500,
-    "lines": 166693,
-    "clones": 592,
-    "duplicatedLines": 18518,
-    "percentage": 11.11
+    "lines": 146540,
+    "clones": 642,
+    "duplicatedLines": 19348,
+    "percentage": 13.2
    },
    {
     "format": "javascript",
     "sources": 474,
-    "lines": 248852,
-    "clones": 356,
-    "duplicatedLines": 111037,
-    "percentage": 44.62
+    "lines": 199967,
+    "clones": 380,
+    "duplicatedLines": 110798,
+    "percentage": 55.41
    },
    {
     "format": "tsx",
     "sources": 279,
-    "lines": 54644,
-    "clones": 188,
-    "duplicatedLines": 11891,
-    "percentage": 21.76
+    "lines": 26859,
+    "clones": 190,
+    "duplicatedLines": 6979,
+    "percentage": 25.98
    },
    {
     "format": "typescript",
     "sources": 462,
-    "lines": 89835,
-    "clones": 133,
-    "duplicatedLines": 9651,
-    "percentage": 10.74
+    "lines": 36986,
+    "clones": 135,
+    "duplicatedLines": 3089,
+    "percentage": 8.35
    },
    {
     "format": "css",
     "sources": 34,
-    "lines": 16219,
-    "clones": 79,
-    "duplicatedLines": 1306,
-    "percentage": 8.05
+    "lines": 13600,
+    "clones": 81,
+    "duplicatedLines": 1392,
+    "percentage": 10.24
    },
    {
     "format": "bash",
     "sources": 411,
-    "lines": 69358,
-    "clones": 60,
-    "duplicatedLines": 3637,
-    "percentage": 5.24
+    "lines": 14184,
+    "clones": 71,
+    "duplicatedLines": 947,
+    "percentage": 6.68
    },
    {
     "format": "text",
     "sources": 449,
-    "lines": 87862,
-    "clones": 48,
-    "duplicatedLines": 1672,
-    "percentage": 1.9
+    "lines": 13234,
+    "clones": 59,
+    "duplicatedLines": 349,
+    "percentage": 2.64
    },
    {
     "format": "cpp",
     "sources": 74,
-    "lines": 29900,
-    "clones": 45,
-    "duplicatedLines": 897,
-    "percentage": 3
+    "lines": 14145,
+    "clones": 47,
+    "duplicatedLines": 698,
+    "percentage": 4.93
    },
    {
     "format": "markup",
     "sources": 119,
-    "lines": 9771,
-    "clones": 40,
-    "duplicatedLines": 489,
-    "percentage": 5
+    "lines": 4343,
+    "clones": 42,
+    "duplicatedLines": 531,
+    "percentage": 12.23
    }
   ],
   "topClones": [
    {
     "format": "javascript",
-    "lines": 18374,
-    "tokens": 98637,
-    "firstFile": {
+    "lines": 18358,
+    "tokens": 98592,
+    "first": {
      "name": "plugins/shopify/skills/shopify-admin/scripts/validate.mjs",
      "start": 2,
-     "end": 18375
+     "end": 18359
     },
-    "secondFile": {
-     "name": "plugins/shopify/skills/shopify-customer/scripts/validate.mjs",
-     "start": 2,
-     "end": 18375
-    }
+    "others": [
+     {
+      "name": "plugins/shopify/skills/shopify-customer/scripts/validate.mjs",
+      "start": 2,
+      "end": 18359
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-partner/scripts/validate.mjs",
+      "start": 2,
+      "end": 18359
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-payments-apps/scripts/validate.mjs",
+      "start": 2,
+      "end": 18359
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-storefront-graphql/scripts/validate.mjs",
+      "start": 2,
+      "end": 18359
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "var __create = Object.create;",
+      "var __defProp = Object.defineProperty;",
+      "var __getOwnPropDesc = Object.getOwnPropertyDescriptor;",
+      "var __getOwnPropNames = Object.getOwnPropertyNames;",
+      "var __getProtoOf = Object.getPrototypeOf;",
+      "var __hasOwnProp = Object.prototype.hasOwnProperty;",
+      "var __commonJS = (cb, mod) => function __require() {",
+      "  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;",
+      "};",
+      "var __copyProps = (to, from, except, desc) => {"
+     ],
+     "total": 18358
+    },
+    "kind": "code"
    },
    {
-    "format": "javascript",
-    "lines": 18374,
-    "tokens": 98637,
-    "firstFile": {
-     "name": "plugins/shopify/skills/shopify-admin/scripts/validate.mjs",
-     "start": 2,
-     "end": 18375
+    "format": "json",
+    "lines": 7535,
+    "tokens": 45121,
+    "first": {
+     "name": "plugins/remotion/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+     "start": 1,
+     "end": 7535
     },
-    "secondFile": {
-     "name": "plugins/shopify/skills/shopify-partner/scripts/validate.mjs",
-     "start": 2,
-     "end": 18375
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 18374,
-    "tokens": 98637,
-    "firstFile": {
-     "name": "plugins/shopify/skills/shopify-admin/scripts/validate.mjs",
-     "start": 2,
-     "end": 18375
+    "others": [
+     {
+      "name": "plugins/remotion/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+      "start": 1,
+      "end": 7535
+     },
+     {
+      "name": "plugins/remotion/skills/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+      "start": 1,
+      "end": 7535
+     },
+     {
+      "name": "plugins/remotion/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+      "start": 1,
+      "end": 7535
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "{",
+      "    \"china\": {",
+      "        \"stop\": 0,",
+      "        \"anchor\": [87.78260869565217, 30.663811291452628],",
+      "        \"border\": [",
+      "            [",
+      "                [104, 22.607404598007214],",
+      "                [103.99006555200009, 22.58534088100008],",
+      "                [103.98556970200013, 22.57025136400007],",
+      "                [103.98556970200013, 22.554541728000103],"
+     ],
+     "total": 7535
     },
-    "secondFile": {
-     "name": "plugins/shopify/skills/shopify-payments-apps/scripts/validate.mjs",
-     "start": 2,
-     "end": 18375
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 18374,
-    "tokens": 98637,
-    "firstFile": {
-     "name": "plugins/shopify/skills/shopify-admin/scripts/validate.mjs",
-     "start": 2,
-     "end": 18375
-    },
-    "secondFile": {
-     "name": "plugins/shopify/skills/shopify-storefront-graphql/scripts/validate.mjs",
-     "start": 2,
-     "end": 18375
-    }
+    "kind": "data"
    },
    {
     "format": "javascript",
     "lines": 17300,
     "tokens": 93317,
-    "firstFile": {
+    "first": {
      "name": "plugins/shopify/skills/shopify-admin/scripts/validate.mjs",
      "start": 2,
      "end": 17301
     },
-    "secondFile": {
-     "name": "plugins/shopify/skills/shopify-functions/scripts/validate.mjs",
-     "start": 2,
-     "end": 17301
-    }
+    "others": [
+     {
+      "name": "plugins/shopify/skills/shopify-functions/scripts/validate.mjs",
+      "start": 2,
+      "end": 17301
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "var __create = Object.create;",
+      "var __defProp = Object.defineProperty;",
+      "var __getOwnPropDesc = Object.getOwnPropertyDescriptor;",
+      "var __getOwnPropNames = Object.getOwnPropertyNames;",
+      "var __getProtoOf = Object.getPrototypeOf;",
+      "var __hasOwnProp = Object.prototype.hasOwnProperty;",
+      "var __commonJS = (cb, mod) => function __require() {",
+      "  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;",
+      "};",
+      "var __copyProps = (to, from, except, desc) => {"
+     ],
+     "total": 17300
+    },
+    "kind": "code"
    },
    {
-    "format": "json",
-    "lines": 7535,
-    "tokens": 45121,
-    "firstFile": {
-     "name": "plugins/remotion/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+    "format": "python",
+    "lines": 291,
+    "tokens": 1942,
+    "first": {
+     "name": "plugins/life-science-research/skills/alphafold-skill/scripts/rest_request.py",
      "start": 1,
-     "end": 7535
+     "end": 291
     },
-    "secondFile": {
-     "name": "plugins/remotion/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
-     "start": 1,
-     "end": 7535
-    }
+    "others": [
+     {
+      "name": "plugins/life-science-research/skills/bindingdb-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     {
+      "name": "plugins/life-science-research/skills/biorxiv-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     {
+      "name": "plugins/life-science-research/skills/biostudies-arrayexpress-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     {
+      "name": "plugins/life-science-research/skills/cbioportal-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     {
+      "name": "plugins/life-science-research/skills/cellxgene-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     {
+      "name": "plugins/life-science-research/skills/chebi-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     {
+      "name": "plugins/life-science-research/skills/chembl-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     {
+      "name": "plugins/life-science-research/skills/efo-ontology-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     }
+    ],
+    "copies": 30,
+    "kind": "code"
    },
    {
-    "format": "json",
-    "lines": 7535,
-    "tokens": 45121,
-    "firstFile": {
-     "name": "plugins/remotion/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
-     "start": 1,
-     "end": 7535
+    "format": "javascript",
+    "lines": 1861,
+    "tokens": 8994,
+    "first": {
+     "name": "plugins/shopify/skills/shopify-hydrogen/scripts/validate.mjs",
+     "start": 4,
+     "end": 1864
     },
-    "secondFile": {
-     "name": "plugins/remotion/skills/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
-     "start": 1,
-     "end": 7535
-    }
-   },
-   {
-    "format": "json",
-    "lines": 7535,
-    "tokens": 45121,
-    "firstFile": {
-     "name": "plugins/remotion/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
-     "start": 1,
-     "end": 7535
-    },
-    "secondFile": {
-     "name": "plugins/remotion/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
-     "start": 1,
-     "end": 7535
-    }
+    "others": [
+     {
+      "name": "plugins/shopify/skills/shopify-polaris-admin-extensions/scripts/validate.mjs",
+      "start": 4,
+      "end": 1864
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-polaris-app-home/scripts/validate.mjs",
+      "start": 4,
+      "end": 1864
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-polaris-checkout-extensions/scripts/validate.mjs",
+      "start": 4,
+      "end": 1864
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-polaris-customer-account-extensions/scripts/validate.mjs",
+      "start": 4,
+      "end": 1864
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-pos-ui/scripts/validate.mjs",
+      "start": 4,
+      "end": 1864
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 3373,
     "tokens": 10979,
-    "firstFile": {
+    "first": {
      "name": "plugins/build-web-apps/skills/react-best-practices/AGENTS.md:markdown",
      "start": 1,
      "end": 3373
     },
-    "secondFile": {
-     "name": "plugins/vercel/skills/react-best-practices/AGENTS.md:markdown",
+    "others": [
+     {
+      "name": "plugins/vercel/skills/react-best-practices/AGENTS.md:markdown",
+      "start": 1,
+      "end": 3373
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 605,
+    "tokens": 3619,
+    "first": {
+     "name": "plugins/remotion/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
      "start": 1,
-     "end": 3373
-    }
+     "end": 605
+    },
+    "others": [
+     {
+      "name": "plugins/remotion/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+      "start": 1,
+      "end": 605
+     },
+     {
+      "name": "plugins/remotion/skills/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+      "start": 1,
+      "end": 605
+     },
+     {
+      "name": "plugins/remotion/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+      "start": 1,
+      "end": 605
+     }
+    ],
+    "copies": 4,
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 397,
+    "tokens": 2284,
+    "first": {
+     "name": "plugins/life-science-research/skills/biobankjapan-phewas-skill/scripts/variant_resolution.py",
+     "start": 1,
+     "end": 397
+    },
+    "others": [
+     {
+      "name": "plugins/life-science-research/skills/finngen-phewas-skill/scripts/variant_resolution.py",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "plugins/life-science-research/skills/gtex-eqtl-skill/scripts/variant_resolution.py",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "plugins/life-science-research/skills/tpmi-phewas-skill/scripts/variant_resolution.py",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "plugins/life-science-research/skills/ukb-topmed-phewas-skill/scripts/variant_resolution.py",
+      "start": 1,
+      "end": 397
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    },
    {
     "format": "javascript",
-    "lines": 1877,
-    "tokens": 9039,
-    "firstFile": {
-     "name": "plugins/shopify/skills/shopify-hydrogen/scripts/validate.mjs",
+    "lines": 113,
+    "tokens": 653,
+    "first": {
+     "name": "plugins/shopify/skills/shopify-admin/scripts/search_docs.mjs",
      "start": 4,
-     "end": 1880
+     "end": 116
     },
-    "secondFile": {
-     "name": "plugins/shopify/skills/shopify-polaris-admin-extensions/scripts/validate.mjs",
-     "start": 4,
-     "end": 1880
-    }
+    "others": [
+     {
+      "name": "plugins/shopify/skills/shopify-customer/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-dev/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-functions/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-hydrogen/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-liquid/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-partner/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-payments-apps/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     {
+      "name": "plugins/shopify/skills/shopify-polaris-admin-extensions/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     }
+    ],
+    "copies": 14,
+    "kind": "code"
+   },
+   {
+    "format": "txt",
+    "lines": 201,
+    "tokens": 1870,
+    "first": {
+     "name": "plugins/cloudflare/skills/agents-sdk/LICENSE.txt",
+     "start": 1,
+     "end": 201
+    },
+    "others": [
+     {
+      "name": "plugins/cloudflare/skills/cloudflare/LICENSE.txt",
+      "start": 1,
+      "end": 201
+     },
+     {
+      "name": "plugins/cloudflare/skills/wrangler/LICENSE.txt",
+      "start": 1,
+      "end": 201
+     },
+     {
+      "name": "plugins/sentry/skills/sentry/LICENSE.txt",
+      "start": 1,
+      "end": 201
+     },
+     {
+      "name": "plugins/test-android-apps/skills/android-emulator-qa/LICENSE.txt",
+      "start": 1,
+      "end": 201
+     }
+    ],
+    "copies": 5,
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 578,
+   "lines": 312322,
+   "tokens": 1809397,
+   "clones": 847,
+   "duplicatedLines": 128795,
+   "duplicatedTokens": 711707,
+   "percentage": 41.24,
+   "percentageTokens": 39.33,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 322,
+     "lines": 126833,
+     "clones": 546,
+     "duplicatedLines": 18210,
+     "percentage": 14.36
+    },
+    {
+     "format": "javascript",
+     "sources": 149,
+     "lines": 163819,
+     "clones": 225,
+     "duplicatedLines": 109143,
+     "percentage": 66.62
+    },
+    {
+     "format": "tsx",
+     "sources": 22,
+     "lines": 10606,
+     "clones": 32,
+     "duplicatedLines": 333,
+     "percentage": 3.14
+    },
+    {
+     "format": "bash",
+     "sources": 38,
+     "lines": 4269,
+     "clones": 24,
+     "duplicatedLines": 568,
+     "percentage": 13.31
+    },
+    {
+     "format": "typescript",
+     "sources": 33,
+     "lines": 3287,
+     "clones": 16,
+     "duplicatedLines": 467,
+     "percentage": 14.21
+    },
+    {
+     "format": "perl",
+     "sources": 3,
+     "lines": 359,
+     "clones": 3,
+     "duplicatedLines": 66,
+     "percentage": 18.38
+    },
+    {
+     "format": "r",
+     "sources": 2,
+     "lines": 678,
+     "clones": 1,
+     "duplicatedLines": 8,
+     "percentage": 1.18
+    },
+    {
+     "format": "jsx",
+     "sources": 5,
+     "lines": 1890,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "swift",
+     "sources": 3,
+     "lines": 568,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 13,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 18358,
+     "tokens": 98592,
+     "first": {
+      "name": "plugins/shopify/skills/shopify-admin/scripts/validate.mjs",
+      "start": 2,
+      "end": 18359
+     },
+     "others": [
+      {
+       "name": "plugins/shopify/skills/shopify-customer/scripts/validate.mjs",
+       "start": 2,
+       "end": 18359
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-partner/scripts/validate.mjs",
+       "start": 2,
+       "end": 18359
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-payments-apps/scripts/validate.mjs",
+       "start": 2,
+       "end": 18359
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-storefront-graphql/scripts/validate.mjs",
+       "start": 2,
+       "end": 18359
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "var __create = Object.create;",
+       "var __defProp = Object.defineProperty;",
+       "var __getOwnPropDesc = Object.getOwnPropertyDescriptor;",
+       "var __getOwnPropNames = Object.getOwnPropertyNames;",
+       "var __getProtoOf = Object.getPrototypeOf;",
+       "var __hasOwnProp = Object.prototype.hasOwnProperty;",
+       "var __commonJS = (cb, mod) => function __require() {",
+       "  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;",
+       "};",
+       "var __copyProps = (to, from, except, desc) => {"
+      ],
+      "total": 18358
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 17300,
+     "tokens": 93317,
+     "first": {
+      "name": "plugins/shopify/skills/shopify-admin/scripts/validate.mjs",
+      "start": 2,
+      "end": 17301
+     },
+     "others": [
+      {
+       "name": "plugins/shopify/skills/shopify-functions/scripts/validate.mjs",
+       "start": 2,
+       "end": 17301
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "var __create = Object.create;",
+       "var __defProp = Object.defineProperty;",
+       "var __getOwnPropDesc = Object.getOwnPropertyDescriptor;",
+       "var __getOwnPropNames = Object.getOwnPropertyNames;",
+       "var __getProtoOf = Object.getPrototypeOf;",
+       "var __hasOwnProp = Object.prototype.hasOwnProperty;",
+       "var __commonJS = (cb, mod) => function __require() {",
+       "  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;",
+       "};",
+       "var __copyProps = (to, from, except, desc) => {"
+      ],
+      "total": 17300
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 291,
+     "tokens": 1942,
+     "first": {
+      "name": "plugins/life-science-research/skills/alphafold-skill/scripts/rest_request.py",
+      "start": 1,
+      "end": 291
+     },
+     "others": [
+      {
+       "name": "plugins/life-science-research/skills/bindingdb-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/life-science-research/skills/biorxiv-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/life-science-research/skills/biostudies-arrayexpress-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/life-science-research/skills/cbioportal-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/life-science-research/skills/cellxgene-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/life-science-research/skills/chebi-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/life-science-research/skills/chembl-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/life-science-research/skills/efo-ontology-skill/scripts/rest_request.py",
+       "start": 1,
+       "end": 291
+      }
+     ],
+     "copies": 30,
+     "excerpt": {
+      "lines": [
+       "#!/usr/bin/env python3",
+       "\"\"\"Generic compact REST client for ChatGPT-imported skills.\"\"\"",
+       "",
+       "from __future__ import annotations",
+       "",
+       "import json",
+       "import sys",
+       "from pathlib import Path",
+       "from typing import Any",
+       ""
+      ],
+      "total": 291
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 1861,
+     "tokens": 8994,
+     "first": {
+      "name": "plugins/shopify/skills/shopify-hydrogen/scripts/validate.mjs",
+      "start": 4,
+      "end": 1864
+     },
+     "others": [
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-admin-extensions/scripts/validate.mjs",
+       "start": 4,
+       "end": 1864
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-app-home/scripts/validate.mjs",
+       "start": 4,
+       "end": 1864
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-checkout-extensions/scripts/validate.mjs",
+       "start": 4,
+       "end": 1864
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-customer-account-extensions/scripts/validate.mjs",
+       "start": 4,
+       "end": 1864
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-pos-ui/scripts/validate.mjs",
+       "start": 4,
+       "end": 1864
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 397,
+     "tokens": 2284,
+     "first": {
+      "name": "plugins/life-science-research/skills/biobankjapan-phewas-skill/scripts/variant_resolution.py",
+      "start": 1,
+      "end": 397
+     },
+     "others": [
+      {
+       "name": "plugins/life-science-research/skills/finngen-phewas-skill/scripts/variant_resolution.py",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "plugins/life-science-research/skills/gtex-eqtl-skill/scripts/variant_resolution.py",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "plugins/life-science-research/skills/tpmi-phewas-skill/scripts/variant_resolution.py",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "plugins/life-science-research/skills/ukb-topmed-phewas-skill/scripts/variant_resolution.py",
+       "start": 1,
+       "end": 397
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 113,
+     "tokens": 653,
+     "first": {
+      "name": "plugins/shopify/skills/shopify-admin/scripts/search_docs.mjs",
+      "start": 4,
+      "end": 116
+     },
+     "others": [
+      {
+       "name": "plugins/shopify/skills/shopify-customer/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-dev/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-functions/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-hydrogen/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-liquid/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-partner/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-payments-apps/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-admin-extensions/scripts/search_docs.mjs",
+       "start": 4,
+       "end": 116
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 189,
+     "tokens": 1483,
+     "first": {
+      "name": "plugins/remotion/skills/remotion-best-practices/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+      "start": 14,
+      "end": 202
+     },
+     "others": [
+      {
+       "name": "plugins/remotion/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+       "start": 14,
+       "end": 202
+      },
+      {
+       "name": "plugins/remotion/skills/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+       "start": 14,
+       "end": 202
+      },
+      {
+       "name": "plugins/remotion/skills/remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+       "start": 14,
+       "end": 202
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 146,
+     "tokens": 1395,
+     "first": {
+      "name": "plugins/remotion/skills/remotion-best-practices/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+      "start": 16,
+      "end": 161
+     },
+     "others": [
+      {
+       "name": "plugins/remotion/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+       "start": 16,
+       "end": 161
+      },
+      {
+       "name": "plugins/remotion/skills/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+       "start": 16,
+       "end": 161
+      },
+      {
+       "name": "plugins/remotion/skills/remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+       "start": 16,
+       "end": 161
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 55,
+     "tokens": 241,
+     "first": {
+      "name": "plugins/shopify/skills/shopify-admin/scripts/search_docs.mjs",
+      "start": 116,
+      "end": 170
+     },
+     "others": [
+      {
+       "name": "plugins/shopify/skills/shopify-customer/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-dev/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-functions/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-hydrogen/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-liquid/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-partner/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-payments-apps/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-admin-extensions/scripts/search_docs.mjs",
+       "start": 116,
+       "end": 170
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 121,
+     "tokens": 622,
+     "first": {
+      "name": "plugins/shopify/skills/shopify-hydrogen/scripts/validate.mjs",
+      "start": 1894,
+      "end": 2014
+     },
+     "others": [
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-admin-extensions/scripts/validate.mjs",
+       "start": 1894,
+       "end": 2014
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-app-home/scripts/validate.mjs",
+       "start": 1894,
+       "end": 2014
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-checkout-extensions/scripts/validate.mjs",
+       "start": 1894,
+       "end": 2014
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-polaris-customer-account-extensions/scripts/validate.mjs",
+       "start": 1894,
+       "end": 2014
+      },
+      {
+       "name": "plugins/shopify/skills/shopify-pos-ui/scripts/validate.mjs",
+       "start": 1894,
+       "end": 2014
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "plugins/figma/skills/figma-use/references/plugin-api-standalone.d.ts",
+     "plugins/temporal/skills/temporal-cloud-setup/scripts/provision.sh"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:53:56.666Z",
+  "jscpdVersion": "5.4.0"
  }
 }

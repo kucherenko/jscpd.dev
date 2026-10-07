@@ -9,10 +9,12 @@
    "starsToday": 1302,
    "headSha": "75e2c64abaf4b7cc75682d94b0c1fd5db0cbd5e5",
    "sources": 723,
-   "lines": 175210,
+   "lines": 171433,
    "clones": 1285,
-   "duplicatedLines": 21021,
-   "percentage": 12,
+   "duplicatedLines": 21791,
+   "percentage": 12.71,
+   "codePercentage": 3.38,
+   "codeSources": 346,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 1306,
    "headSha": "fa953dc6fcd868827b93164e3bea26198e691224",
    "sources": 734,
-   "lines": 179245,
+   "lines": 175439,
    "clones": 1308,
-   "duplicatedLines": 21246,
-   "percentage": 11.85,
+   "duplicatedLines": 22026,
+   "percentage": 12.55,
+   "codePercentage": 3.31,
+   "codeSources": 350,
    "healthScore": 29.5,
    "healthGrade": "E"
   }
@@ -42,97 +46,97 @@
   "starsToday": 1306,
   "defaultBranch": "main",
   "headSha": "fa953dc6fcd868827b93164e3bea26198e691224",
-  "durationMs": 1440,
+  "durationMs": 522,
   "total": {
    "sources": 734,
-   "lines": 179245,
-   "tokens": 1137392,
+   "lines": 175439,
+   "tokens": 1137227,
    "clones": 1308,
-   "duplicatedLines": 21246,
+   "duplicatedLines": 22026,
    "duplicatedTokens": 123311,
-   "percentage": 11.85,
+   "percentage": 12.55,
    "percentageTokens": 10.84
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 330,
-    "lines": 94075,
+    "lines": 94056,
     "clones": 766,
-    "duplicatedLines": 7776,
-    "percentage": 8.27
+    "duplicatedLines": 8542,
+    "percentage": 9.08
    },
    {
     "format": "rust",
     "sources": 135,
     "lines": 47755,
     "clones": 408,
-    "duplicatedLines": 4860,
-    "percentage": 10.18
+    "duplicatedLines": 5268,
+    "percentage": 11.03
    },
    {
     "format": "json",
     "sources": 112,
-    "lines": 13844,
+    "lines": 13589,
     "clones": 85,
-    "duplicatedLines": 7310,
-    "percentage": 52.8
+    "duplicatedLines": 7395,
+    "percentage": 54.42
    },
    {
     "format": "tsx",
     "sources": 41,
     "lines": 8773,
     "clones": 32,
-    "duplicatedLines": 307,
-    "percentage": 3.5
+    "duplicatedLines": 339,
+    "percentage": 3.86
    },
    {
     "format": "bash",
     "sources": 24,
-    "lines": 3368,
+    "lines": 1010,
     "clones": 5,
-    "duplicatedLines": 578,
-    "percentage": 17.16
+    "duplicatedLines": 55,
+    "percentage": 5.45
    },
    {
     "format": "yaml",
     "sources": 6,
-    "lines": 928,
+    "lines": 926,
     "clones": 5,
-    "duplicatedLines": 59,
-    "percentage": 6.36
+    "duplicatedLines": 64,
+    "percentage": 6.91
    },
    {
     "format": "markdown",
     "sources": 28,
     "lines": 4037,
     "clones": 2,
-    "duplicatedLines": 287,
-    "percentage": 7.11
+    "duplicatedLines": 289,
+    "percentage": 7.16
    },
    {
     "format": "javascript",
     "sources": 32,
     "lines": 3369,
     "clones": 2,
-    "duplicatedLines": 20,
-    "percentage": 0.59
+    "duplicatedLines": 22,
+    "percentage": 0.65
    },
    {
     "format": "css",
     "sources": 7,
     "lines": 707,
     "clones": 2,
-    "duplicatedLines": 38,
-    "percentage": 5.37
+    "duplicatedLines": 40,
+    "percentage": 5.66
    },
    {
     "format": "text",
     "sources": 5,
-    "lines": 509,
+    "lines": 42,
     "clones": 1,
-    "duplicatedLines": 11,
-    "percentage": 2.16
+    "duplicatedLines": 12,
+    "percentage": 28.57
    }
   ],
   "topClones": [
@@ -140,151 +144,336 @@
     "format": "markdown",
     "lines": 275,
     "tokens": 3118,
-    "firstFile": {
+    "first": {
      "name": "crates/bsk-cli/skill/SKILL.md:markdown",
      "start": 10,
      "end": 284
     },
-    "secondFile": {
-     "name": "skill/SKILL.md:markdown",
-     "start": 10,
-     "end": 284
-    }
+    "others": [
+     {
+      "name": "skill/SKILL.md:markdown",
+      "start": 10,
+      "end": 284
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# browser-skill",
+      "",
+      "Use `bsk` to work in an **Agent Window** with the user's existing logins. User tabs",
+      "require explicit borrowing. This skill does not install the extension or handle",
+      "advice-only tasks. Never extract credentials, cookies, tokens, or other secrets.",
+      "",
+      "## Before starting a session",
+      "",
+      "For remote setup or pairing, follow the [remote guide](https://github.com/Tencent/BrowserSkill/blob/main/docs/remote-extension-connection.md).",
+      ""
+     ],
+     "total": 275
+    },
+    "kind": "docs"
    },
    {
     "format": "json",
     "lines": 980,
     "tokens": 2363,
-    "firstFile": {
+    "first": {
      "name": "crates/bsk-protocol/schema/tool_record_await_result.json",
      "start": 3,
      "end": 982
     },
-    "secondFile": {
-     "name": "crates/bsk-protocol/schema/tool_record_stop_result.json",
-     "start": 3,
-     "end": 982
-    }
+    "others": [
+     {
+      "name": "crates/bsk-protocol/schema/tool_record_stop_result.json",
+      "start": 3,
+      "end": 982
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"title\": \"RecordAwaitResult\",",
+      "\"type\": \"object\",",
+      "\"required\": [",
+      "  \"trace\"",
+      "],",
+      "\"properties\": {",
+      "  \"trace\": {",
+      "    \"$ref\": \"#/definitions/RecordedTrace\"",
+      "  }",
+      "},"
+     ],
+     "total": 980
+    },
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 901,
     "tokens": 2178,
-    "firstFile": {
+    "first": {
      "name": "crates/bsk-protocol/schema/tool_record_await_result.json",
      "start": 82,
      "end": 982
     },
-    "secondFile": {
-     "name": "crates/bsk-protocol/schema/trace.json",
-     "start": 71,
-     "end": 971
-    }
+    "others": [
+     {
+      "name": "crates/bsk-protocol/schema/trace.json",
+      "start": 71,
+      "end": 971
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  }",
+      "},",
+      "\"RecorderInfo\": {",
+      "  \"type\": \"object\",",
+      "  \"required\": [",
+      "    \"bsk\",",
+      "    \"vom\"",
+      "  ],",
+      "  \"properties\": {",
+      "    \"bsk\": {"
+     ],
+     "total": 901
+    },
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 651,
     "tokens": 1588,
-    "firstFile": {
+    "first": {
      "name": "crates/bsk-protocol/schema/tool_record_await_result.json",
      "start": 100,
      "end": 750
     },
-    "secondFile": {
-     "name": "crates/bsk-protocol/schema/trace_step.json",
-     "start": 51,
-     "end": 701
-    }
+    "others": [
+     {
+      "name": "crates/bsk-protocol/schema/trace_step.json",
+      "start": 51,
+      "end": 701
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "rust",
+    "lines": 61,
+    "tokens": 500,
+    "first": {
+     "name": "crates/bsk-cli/tests/tools_ipc.rs",
+     "start": 44,
+     "end": 104
+    },
+    "others": [
+     {
+      "name": "crates/bsk-cli/tests/tools_m7_ipc.rs",
+      "start": 48,
+      "end": 108
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_m8_ipc.rs",
+      "start": 46,
+      "end": 106
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_m9_ipc.rs",
+      "start": 56,
+      "end": 116
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 6,
+    "tokens": 51,
+    "first": {
+     "name": "crates/bsk-cli/tests/tools_ipc.rs",
+     "start": 185,
+     "end": 190
+    },
+    "others": [
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 227,
+      "end": 232
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 270,
+      "end": 275
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 319,
+      "end": 324
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 376,
+      "end": 381
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 432,
+      "end": 437
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 472,
+      "end": 477
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 518,
+      "end": 523
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_m7_ipc.rs",
+      "start": 186,
+      "end": 191
+     }
+    ],
+    "copies": 30,
+    "kind": "tests"
    },
    {
     "format": "rust",
     "lines": 202,
     "tokens": 1436,
-    "firstFile": {
+    "first": {
      "name": "crates/bsk-protocol/src/tools/record.rs",
      "start": 272,
      "end": 473
     },
-    "secondFile": {
-     "name": "crates/bsk-protocol/src/tools/record_v3.rs",
-     "start": 190,
-     "end": 391
-    }
+    "others": [
+     {
+      "name": "crates/bsk-protocol/src/tools/record_v3.rs",
+      "start": 190,
+      "end": 391
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 59,
+    "first": {
+     "name": "crates/bsk-cli/tests/tools_ipc.rs",
+     "start": 227,
+     "end": 233
+    },
+    "others": [
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 319,
+      "end": 325
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 376,
+      "end": 382
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 432,
+      "end": 438
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_ipc.rs",
+      "start": 472,
+      "end": 478
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_m7_ipc.rs",
+      "start": 186,
+      "end": 192
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_m7_ipc.rs",
+      "start": 332,
+      "end": 338
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_m7_ipc.rs",
+      "start": 394,
+      "end": 400
+     },
+     {
+      "name": "crates/bsk-cli/tests/tools_m7_ipc.rs",
+      "start": 436,
+      "end": 442
+     }
+    ],
+    "copies": 21,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 73,
+    "tokens": 173,
+    "first": {
+     "name": "crates/bsk-protocol/schema/tool_blur_result.json",
+     "start": 40,
+     "end": 112
+    },
+    "others": [
+     {
+      "name": "crates/bsk-protocol/schema/tool_click_result.json",
+      "start": 42,
+      "end": 114
+     },
+     {
+      "name": "crates/bsk-protocol/schema/tool_fill_result.json",
+      "start": 37,
+      "end": 109
+     },
+     {
+      "name": "crates/bsk-protocol/schema/tool_focus_result.json",
+      "start": 35,
+      "end": 107
+     },
+     {
+      "name": "crates/bsk-protocol/schema/tool_navigate_back_result.json",
+      "start": 40,
+      "end": 112
+     },
+     {
+      "name": "crates/bsk-protocol/schema/tool_navigate_result.json",
+      "start": 40,
+      "end": 112
+     }
+    ],
+    "copies": 6,
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 317,
     "tokens": 792,
-    "firstFile": {
+    "first": {
      "name": "crates/bsk-protocol/schema/tool_record_await_result.json",
      "start": 441,
      "end": 757
     },
-    "secondFile": {
-     "name": "crates/bsk-protocol/schema/trace_v3.json",
-     "start": 134,
-     "end": 450
-    }
-   },
-   {
-    "format": "json",
-    "lines": 307,
-    "tokens": 769,
-    "firstFile": {
-     "name": "crates/bsk-protocol/schema/tool_record_await_result.json",
-     "start": 443,
-     "end": 749
-    },
-    "secondFile": {
-     "name": "crates/bsk-protocol/schema/trace_step_v3.json",
-     "start": 4,
-     "end": 310
-    }
-   },
-   {
-    "format": "json",
-    "lines": 285,
-    "tokens": 675,
-    "firstFile": {
-     "name": "crates/bsk-protocol/schema/tool_record_await_result.json",
-     "start": 157,
-     "end": 441
-    },
-    "secondFile": {
-     "name": "crates/bsk-protocol/schema/trace_v2.json",
-     "start": 112,
-     "end": 396
-    }
-   },
-   {
-    "format": "json",
-    "lines": 279,
-    "tokens": 663,
-    "firstFile": {
-     "name": "crates/bsk-protocol/schema/tool_record_await_result.json",
-     "start": 162,
-     "end": 440
-    },
-    "secondFile": {
-     "name": "crates/bsk-protocol/schema/trace_step_v2.json",
-     "start": 4,
-     "end": 282
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 81,
-    "tokens": 640,
-    "firstFile": {
-     "name": "crates/bsk-cli/tests/tools_m7_ipc.rs",
-     "start": 103,
-     "end": 183
-    },
-    "secondFile": {
-     "name": "crates/bsk-cli/tests/tools_m9_ipc.rs",
-     "start": 111,
-     "end": 191
-    }
+    "others": [
+     {
+      "name": "crates/bsk-protocol/schema/trace_v3.json",
+      "start": 134,
+      "end": 450
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    }
   ],
   "health": {
@@ -503,6 +692,366 @@
      "lines": 665
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 350,
+   "lines": 87916,
+   "tokens": 527929,
+   "clones": 242,
+   "duplicatedLines": 2913,
+   "duplicatedTokens": 19221,
+   "percentage": 3.31,
+   "percentageTokens": 3.64,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 99,
+     "lines": 34663,
+     "clones": 179,
+     "duplicatedLines": 2125,
+     "percentage": 6.13
+    },
+    {
+     "format": "typescript",
+     "sources": 188,
+     "lines": 43814,
+     "clones": 57,
+     "duplicatedLines": 718,
+     "percentage": 1.64
+    },
+    {
+     "format": "tsx",
+     "sources": 26,
+     "lines": 5375,
+     "clones": 4,
+     "duplicatedLines": 48,
+     "percentage": 0.89
+    },
+    {
+     "format": "javascript",
+     "sources": 25,
+     "lines": 2776,
+     "clones": 2,
+     "duplicatedLines": 22,
+     "percentage": 0.79
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 847,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 267,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 202,
+     "tokens": 1436,
+     "first": {
+      "name": "crates/bsk-protocol/src/tools/record.rs",
+      "start": 272,
+      "end": 473
+     },
+     "others": [
+      {
+       "name": "crates/bsk-protocol/src/tools/record_v3.rs",
+       "start": 190,
+       "end": 391
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    pub trace: RecordedTrace,",
+       "}",
+       "",
+       "#[cfg(test)]",
+       "mod tests {",
+       "    use super::*;",
+       "    use serde_json::json;",
+       "",
+       "    fn sample_common(id: u32, state: &str, result_state: &str) -> StepCommonV3 {",
+       "        StepCommonV3 {"
+      ],
+      "total": 202
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 72,
+     "first": {
+      "name": "crates/bsk-cli/src/cli/console.rs",
+      "start": 69,
+      "end": 76
+     },
+     "others": [
+      {
+       "name": "crates/bsk-cli/src/cli/human_loop.rs",
+       "start": 128,
+       "end": 135
+      },
+      {
+       "name": "crates/bsk-cli/src/cli/navigate.rs",
+       "start": 278,
+       "end": 285
+      },
+      {
+       "name": "crates/bsk-cli/src/cli/waits.rs",
+       "start": 75,
+       "end": 82
+      },
+      {
+       "name": "crates/bsk-cli/src/cli/waits.rs",
+       "start": 167,
+       "end": 174
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "fn render(reply: &ConsoleResult, format: Format) -> Result<(), CliError> {",
+       "    match format {",
+       "        Format::Json => {",
+       "            let json = serde_json::to_string_pretty(reply)",
+       "                .map_err(|e| CliError::Local(anyhow::anyhow!(e)))?;",
+       "            println!(\"{json}\");",
+       "        }",
+       "        Format::Human => {"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 85,
+     "first": {
+      "name": "crates/bsk-protocol/src/tools/interaction.rs",
+      "start": 100,
+      "end": 116
+     },
+     "others": [
+      {
+       "name": "crates/bsk-protocol/src/tools/interaction.rs",
+       "start": 146,
+       "end": 162
+      },
+      {
+       "name": "crates/bsk-protocol/src/tools/interaction.rs",
+       "start": 181,
+       "end": 197
+      },
+      {
+       "name": "crates/bsk-protocol/src/tools/scroll.rs",
+       "start": 9,
+       "end": 25
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "pub struct HoverParams {",
+       "    pub session_id: String,",
+       "    /// Optional `@e<N>` ref allocated by the last observation.",
+       "    /// Mutually exclusive with `selector`.",
+       "    #[serde(",
+       "        rename = \"ref\",",
+       "        alias = \"ref_\",",
+       "        default,",
+       "        skip_serializing_if = \"Option::is_none\"",
+       "    )]"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 42,
+     "tokens": 240,
+     "first": {
+      "name": "crates/bsk-protocol/src/tools/record.rs",
+      "start": 706,
+      "end": 747
+     },
+     "others": [
+      {
+       "name": "crates/bsk-protocol/src/tools/record_v3.rs",
+       "start": 404,
+       "end": 445
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 31,
+     "tokens": 222,
+     "first": {
+      "name": "apps/extension/src/tools/scroll.ts",
+      "start": 50,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "apps/extension/src/tools/wheel.ts",
+       "start": 87,
+       "end": 115
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 30,
+     "tokens": 221,
+     "first": {
+      "name": "crates/bsk-cli/src/ipc_client.rs",
+      "start": 75,
+      "end": 104
+     },
+     "others": [
+      {
+       "name": "crates/bsk-cli/src/ipc_client.rs",
+       "start": 226,
+       "end": 255
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 53,
+     "first": {
+      "name": "crates/bsk-protocol/src/tools/interaction.rs",
+      "start": 73,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "crates/bsk-protocol/src/tools/interaction.rs",
+       "start": 121,
+       "end": 128
+      },
+      {
+       "name": "crates/bsk-protocol/src/tools/interaction.rs",
+       "start": 161,
+       "end": 168
+      },
+      {
+       "name": "crates/bsk-protocol/src/tools/interaction.rs",
+       "start": 239,
+       "end": 246
+      },
+      {
+       "name": "crates/bsk-protocol/src/tools/navigation.rs",
+       "start": 85,
+       "end": 92
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 70,
+     "first": {
+      "name": "crates/bsk-cli/src/cli/get_html.rs",
+      "start": 11,
+      "end": 20
+     },
+     "others": [
+      {
+       "name": "crates/bsk-cli/src/cli/observe.rs",
+       "start": 7,
+       "end": 16
+      },
+      {
+       "name": "crates/bsk-cli/src/cli/screenshot.rs",
+       "start": 17,
+       "end": 26
+      },
+      {
+       "name": "crates/bsk-cli/src/cli/snapshot.rs",
+       "start": 9,
+       "end": 18
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 24,
+     "tokens": 197,
+     "first": {
+      "name": "crates/bsk-cli/src/daemon/ipc.rs",
+      "start": 1382,
+      "end": 1405
+     },
+     "others": [
+      {
+       "name": "crates/bsk-cli/src/daemon/ipc.rs",
+       "start": 1551,
+       "end": 1574
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 35,
+     "tokens": 195,
+     "first": {
+      "name": "crates/bsk-cli/src/cli/browsers.rs",
+      "start": 65,
+      "end": 99
+     },
+     "others": [
+      {
+       "name": "crates/bsk-cli/src/cli/tab.rs",
+       "start": 309,
+       "end": 343
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:08:45.472Z",
+  "jscpdVersion": "5.4.0"
  }
 }

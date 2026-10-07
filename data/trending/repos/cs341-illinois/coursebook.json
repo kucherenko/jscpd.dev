@@ -9,10 +9,12 @@
    "starsToday": 195,
    "headSha": "61c706f1037dab30feac2e4bb852c01c9257af64",
    "sources": 120,
-   "lines": 98463,
+   "lines": 98419,
    "clones": 564,
    "duplicatedLines": 57908,
-   "percentage": 58.81,
+   "percentage": 58.84,
+   "codePercentage": 1.6,
+   "codeSources": 20,
    "healthScore": 57.1,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 572,
    "headSha": "61c706f1037dab30feac2e4bb852c01c9257af64",
    "sources": 120,
-   "lines": 98463,
+   "lines": 98419,
    "clones": 564,
    "duplicatedLines": 57908,
-   "percentage": 58.81,
+   "percentage": 58.84,
+   "codePercentage": 1.6,
+   "codeSources": 20,
    "healthScore": 57.1,
    "healthGrade": "C"
   }
@@ -42,16 +46,16 @@
   "starsToday": 572,
   "defaultBranch": "master",
   "headSha": "61c706f1037dab30feac2e4bb852c01c9257af64",
-  "durationMs": 1181,
+  "durationMs": 155,
   "total": {
    "sources": 120,
-   "lines": 98463,
-   "tokens": 486965,
+   "lines": 98419,
+   "tokens": 486800,
    "clones": 564,
    "duplicatedLines": 57908,
    "duplicatedTokens": 216904,
-   "percentage": 58.81,
-   "percentageTokens": 44.54
+   "percentage": 58.84,
+   "percentageTokens": 44.56
   },
   "formats": [
    {
@@ -89,7 +93,7 @@
    {
     "format": "bash",
     "sources": 14,
-    "lines": 913,
+    "lines": 863,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -105,7 +109,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -122,153 +126,263 @@
   "topClones": [
    {
     "format": "markup",
-    "lines": 2346,
-    "tokens": 8235,
-    "firstFile": {
-     "name": "deadlock/drawings/dining_arbitrator.svg",
-     "start": 38,
-     "end": 2383
-    },
-    "secondFile": {
-     "name": "deadlock/drawings/dining_stalling.svg",
-     "start": 38,
-     "end": 2383
-    }
-   },
-   {
-    "format": "markup",
     "lines": 2344,
     "tokens": 8225,
-    "firstFile": {
+    "first": {
      "name": "deadlock/drawings/dining_arbitrator.svg",
      "start": 38,
      "end": 2381
     },
-    "secondFile": {
-     "name": "deadlock/drawings/dining_livelock.svg",
-     "start": 38,
-     "end": 2381
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 2344,
-    "tokens": 8225,
-    "firstFile": {
-     "name": "deadlock/drawings/dining_arbitrator.svg",
-     "start": 38,
-     "end": 2381
+    "others": [
+     {
+      "name": "deadlock/drawings/dining_livelock.svg",
+      "start": 38,
+      "end": 2381
+     },
+     {
+      "name": "deadlock/drawings/dining_partial.svg",
+      "start": 38,
+      "end": 2381
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "   inkscape:current-layer=\"svg8\"",
+      "   fit-margin-top=\"0\"",
+      "   fit-margin-left=\"0\"",
+      "   fit-margin-right=\"0\"",
+      "   fit-margin-bottom=\"0\" />",
+      "<defs",
+      "   id=\"defs2\">",
+      "  <inkscape:path-effect",
+      "     effect=\"bspline\"",
+      "     id=\"path-effect3001\""
+     ],
+     "total": 2344
     },
-    "secondFile": {
-     "name": "deadlock/drawings/dining_partial.svg",
-     "start": 38,
-     "end": 2381
-    }
+    "kind": "markup"
    },
    {
     "format": "markup",
-    "lines": 1690,
-    "tokens": 5918,
-    "firstFile": {
-     "name": "deadlock/drawings/dining_arbitrator.svg",
-     "start": 64,
-     "end": 1753
-    },
-    "secondFile": {
-     "name": "deadlock/drawings/dining_naive.svg",
-     "start": 44,
-     "end": 1733
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 1430,
-    "tokens": 5072,
-    "firstFile": {
-     "name": "appendix/drawings/ip_datagram.svg",
+    "lines": 1208,
+    "tokens": 4300,
+    "first": {
+     "name": "ipc/drawings/level_split.svg",
      "start": 19,
-     "end": 1448
+     "end": 1226
     },
-    "secondFile": {
-     "name": "networking/drawings/tcp_header.svg",
-     "start": 19,
-     "end": 1448
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 1427,
-    "tokens": 5052,
-    "firstFile": {
-     "name": "appendix/drawings/ip_datagram.svg",
-     "start": 22,
-     "end": 1448
+    "others": [
+     {
+      "name": "ipc/drawings/level_split_filled.svg",
+      "start": 19,
+      "end": 1226
+     },
+     {
+      "name": "ipc/drawings/multi_level_filled.svg",
+      "start": 19,
+      "end": 1226
+     },
+     {
+      "name": "ipc/drawings/multi_level_split.svg",
+      "start": 19,
+      "end": 1226
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      " inkscape:export-xdpi=\"96\"",
+      " inkscape:export-ydpi=\"96\">",
+      "<defs",
+      "   id=\"defs2\">",
+      "  <inkscape:path-effect",
+      "     effect=\"bspline\"",
+      "     id=\"path-effect19165\"",
+      "     is_visible=\"true\"",
+      "     weight=\"33.333333\"",
+      "     steps=\"2\""
+     ],
+     "total": 1208
     },
-    "secondFile": {
-     "name": "networking/drawings/ipv6_datagram.svg",
-     "start": 48,
-     "end": 1474
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 1267,
-    "tokens": 4492,
-    "firstFile": {
-     "name": "appendix/drawings/ip_datagram.svg",
-     "start": 52,
-     "end": 1318
-    },
-    "secondFile": {
-     "name": "ipc/drawings/pipe_process.svg",
-     "start": 22,
-     "end": 1288
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 1268,
-    "tokens": 4333,
-    "firstFile": {
-     "name": "scheduling/drawings/psjf.svg",
-     "start": 21,
-     "end": 1288
-    },
-    "secondFile": {
-     "name": "scheduling/drawings/sjf.svg",
-     "start": 20,
-     "end": 1287
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 1267,
-    "tokens": 4328,
-    "firstFile": {
-     "name": "scheduling/drawings/psjf.svg",
-     "start": 21,
-     "end": 1287
-    },
-    "secondFile": {
-     "name": "scheduling/drawings/rr.svg",
-     "start": 20,
-     "end": 1286
-    }
+    "kind": "markup"
    },
    {
     "format": "markup",
     "lines": 1266,
     "tokens": 4314,
-    "firstFile": {
+    "first": {
      "name": "scheduling/drawings/fcfs.svg",
      "start": 19,
      "end": 1284
     },
-    "secondFile": {
-     "name": "scheduling/drawings/psjf.svg",
+    "others": [
+     {
+      "name": "scheduling/drawings/psjf.svg",
+      "start": 22,
+      "end": 1287
+     },
+     {
+      "name": "threads/drawings/thread_nonrace_timing.svg",
+      "start": 19,
+      "end": 1284
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      " sodipodi:docname=\"fcfs.svg\">",
+      "<defs",
+      "   id=\"defs2\">",
+      "  <inkscape:path-effect",
+      "     effect=\"bspline\"",
+      "     id=\"path-effect2726\"",
+      "     is_visible=\"true\"",
+      "     weight=\"33.333333\"",
+      "     steps=\"2\"",
+      "     helper_size=\"0\""
+     ],
+     "total": 1266
+    },
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 2346,
+    "tokens": 8235,
+    "first": {
+     "name": "deadlock/drawings/dining_arbitrator.svg",
+     "start": 38,
+     "end": 2383
+    },
+    "others": [
+     {
+      "name": "deadlock/drawings/dining_stalling.svg",
+      "start": 38,
+      "end": 2383
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 1041,
+    "tokens": 3524,
+    "first": {
+     "name": "malloc/drawings/heap_best_fit.svg",
+     "start": 19,
+     "end": 1059
+    },
+    "others": [
+     {
+      "name": "malloc/drawings/heap_first_fit.svg",
+      "start": 19,
+      "end": 1059
+     },
+     {
+      "name": "malloc/drawings/heap_worst_fit.svg",
+      "start": 19,
+      "end": 1059
+     }
+    ],
+    "copies": 3,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 1690,
+    "tokens": 5918,
+    "first": {
+     "name": "deadlock/drawings/dining_arbitrator.svg",
+     "start": 64,
+     "end": 1753
+    },
+    "others": [
+     {
+      "name": "deadlock/drawings/dining_naive.svg",
+      "start": 44,
+      "end": 1733
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 1430,
+    "tokens": 5072,
+    "first": {
+     "name": "appendix/drawings/ip_datagram.svg",
+     "start": 19,
+     "end": 1448
+    },
+    "others": [
+     {
+      "name": "networking/drawings/tcp_header.svg",
+      "start": 19,
+      "end": 1448
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 1427,
+    "tokens": 5052,
+    "first": {
+     "name": "appendix/drawings/ip_datagram.svg",
      "start": 22,
-     "end": 1287
-    }
+     "end": 1448
+    },
+    "others": [
+     {
+      "name": "networking/drawings/ipv6_datagram.svg",
+      "start": 48,
+      "end": 1474
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 1267,
+    "tokens": 4492,
+    "first": {
+     "name": "appendix/drawings/ip_datagram.svg",
+     "start": 52,
+     "end": 1318
+    },
+    "others": [
+     {
+      "name": "ipc/drawings/pipe_process.svg",
+      "start": 22,
+      "end": 1288
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 1268,
+    "tokens": 4333,
+    "first": {
+     "name": "scheduling/drawings/psjf.svg",
+     "start": 21,
+     "end": 1288
+    },
+    "others": [
+     {
+      "name": "scheduling/drawings/sjf.svg",
+      "start": 20,
+      "end": 1287
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
    }
   ],
   "health": {
@@ -467,6 +581,117 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 20,
+   "lines": 1630,
+   "tokens": 6887,
+   "clones": 2,
+   "duplicatedLines": 26,
+   "duplicatedTokens": 151,
+   "percentage": 1.6,
+   "percentageTokens": 2.19,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 5,
+     "lines": 593,
+     "clones": 2,
+     "duplicatedLines": 26,
+     "percentage": 4.38
+    },
+    {
+     "format": "bash",
+     "sources": 14,
+     "lines": 863,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 92,
+     "first": {
+      "name": "_scripts/pandoc_epub_filter.py",
+      "start": 17,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "_scripts/pandoc_wiki_filter.py",
+       "start": 15,
+       "end": 32
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def replace_suffix(content, suffix_old, suffix_new):",
+       "    ret = content",
+       "    if content.endswith(suffix_old):",
+       "        ret = content[:-len(suffix_old)] + suffix_new",
+       "    return ret",
+       "",
+       "def deserialize(x):",
+       "    \"\"\"",
+       "    Takes a panflute element x and returns",
+       "    a basic stringified version of that element"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 59,
+     "first": {
+      "name": "_scripts/pandoc_epub_filter.py",
+      "start": 34,
+      "end": 41
+     },
+     "others": [
+      {
+       "name": "_scripts/pandoc_header_filter.py",
+       "start": 101,
+       "end": 108
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "if type(elem) == Image:",
+       "    # Get the number of chars for the alt tag",
+       "    alt_name = ''.join(map(deserialize, elem._content.list))",
+       "    alt_length = len(elem._content)",
+       "    # No alt means no compile",
+       "    # Accessibility by default",
+       "    if alt_length == 0 or alt_name.lower() == default_image_alt:",
+       "        raise NoAltTagException(elem.url)"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:29:42.806Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 230,
    "headSha": "95bdc8d2760ece95896cf5bd7a4d7148c397584d",
    "sources": 2960,
-   "lines": 516208,
+   "lines": 494147,
    "clones": 3950,
-   "duplicatedLines": 74205,
-   "percentage": 14.38,
+   "duplicatedLines": 75194,
+   "percentage": 15.22,
+   "codePercentage": 1.54,
+   "codeSources": 390,
    "healthScore": 63.9,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 506,
    "headSha": "87a49eb5e5243109fca6ad4ee49e0685e21e3359",
    "sources": 2983,
-   "lines": 497096,
+   "lines": 497052,
    "clones": 3954,
    "duplicatedLines": 75241,
    "percentage": 15.14,
+   "codePercentage": 1.52,
+   "codeSources": 393,
    "healthScore": 63.5,
    "healthGrade": "C"
   },
@@ -37,10 +41,12 @@
    "starsToday": 468,
    "headSha": "9d9d7f6996c06848bd9d3e4500c8ec3009984658",
    "sources": 3005,
-   "lines": 503164,
+   "lines": 503120,
    "clones": 3974,
    "duplicatedLines": 75493,
    "percentage": 15,
+   "codePercentage": 1.48,
+   "codeSources": 410,
    "healthScore": 63.5,
    "healthGrade": "C"
   }
@@ -56,16 +62,16 @@
   "starsToday": 468,
   "defaultBranch": "main",
   "headSha": "9d9d7f6996c06848bd9d3e4500c8ec3009984658",
-  "durationMs": 2200,
+  "durationMs": 2062,
   "total": {
    "sources": 3005,
-   "lines": 503164,
-   "tokens": 3850214,
+   "lines": 503120,
+   "tokens": 3850049,
    "clones": 3974,
    "duplicatedLines": 75493,
    "duplicatedTokens": 397136,
    "percentage": 15,
-   "percentageTokens": 10.31
+   "percentageTokens": 10.32
   },
   "formats": [
    {
@@ -111,10 +117,10 @@
    {
     "format": "bash",
     "sources": 49,
-    "lines": 2188,
+    "lines": 2138,
     "clones": 7,
     "duplicatedLines": 319,
-    "percentage": 14.58
+    "percentage": 14.92
    },
    {
     "format": "html",
@@ -152,153 +158,383 @@
   "topClones": [
    {
     "format": "markdown",
+    "lines": 375,
+    "tokens": 4847,
+    "first": {
+     "name": "dsh/skills/treg/SKILL.md:markdown",
+     "start": 41,
+     "end": 415
+    },
+    "others": [
+     {
+      "name": "plugin/skills/treg/SKILL.md:markdown",
+      "start": 44,
+      "end": 418
+     },
+     {
+      "name": "plugins/minimax/skills/treg/SKILL.md:markdown",
+      "start": 25,
+      "end": 399
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "a directory dsh also scans. Harmless, but redundant with this bundle.",
+      "",
+      "---",
+      "",
+      "# treg — the tool catalog for your agent",
+      "",
+      "**Ask for the task, not the tool.** When a job needs external or live data — backlinks, keyword",
+      "volume, a TikTok profile, a work email, competitor ad creative — search the catalog, read the price,",
+      "call it.",
+      ""
+     ],
+     "total": 375
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markup",
+    "lines": 79,
+    "tokens": 1688,
+    "first": {
+     "name": "src/treg/web/usecase-ads.html",
+     "start": 208,
+     "end": 286
+    },
+    "others": [
+     {
+      "name": "src/treg/web/usecase-company.html",
+      "start": 212,
+      "end": 290
+     },
+     {
+      "name": "src/treg/web/usecase-enrichment.html",
+      "start": 187,
+      "end": 265
+     },
+     {
+      "name": "src/treg/web/usecase-seo.html",
+      "start": 227,
+      "end": 305
+     },
+     {
+      "name": "src/treg/web/usecase-social.html",
+      "start": 200,
+      "end": 278
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "  <div class=\"ctas\"><a class=\"candy\" href=\"/app?ref=p4\" data-ev=\"lp_cta_primary\" data-page=\"p4\">Start Free</a></div>",
+      "  <div class=\"trust\"><p>$1.00 of free credit once per new verified account. No credit card, no provider signup. treg.to is open source",
+      "(AGPL).</p></div>",
+      "</div></section>",
+      "",
+      "<footer>",
+      "  <div class=\"foot-in\">",
+      "    <a class=\"brand\" href=\"/\"><span class=\"glyph\">&#9626;</span> treg.to</a>",
+      "    <span class=\"note\">100% open source</span>",
+      "    <span class=\"sp\"></span>"
+     ],
+     "total": 79
+    },
+    "kind": "markup"
+   },
+   {
+    "format": "markdown",
     "lines": 376,
     "tokens": 4882,
-    "firstFile": {
+    "first": {
      "name": "plugin/skills/treg/SKILL.md:markdown",
      "start": 43,
      "end": 418
     },
-    "secondFile": {
-     "name": "plugins/treg/skills/treg/SKILL.md:markdown",
-     "start": 38,
-     "end": 413
-    }
+    "others": [
+     {
+      "name": "plugins/treg/skills/treg/SKILL.md:markdown",
+      "start": 38,
+      "end": 413
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "Either way, the rest of this page is the part that matters — **when** treg is the right move, and",
+      "**how to choose** between providers.",
+      "",
+      "---",
+      "",
+      "# treg — the tool catalog for your agent",
+      "",
+      "**Ask for the task, not the tool.** When a job needs external or live data — backlinks, keyword",
+      "volume, a TikTok profile, a work email, competitor ad creative — search the catalog, read the price,",
+      "call it."
+     ],
+     "total": 376
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 378,
     "tokens": 4882,
-    "firstFile": {
+    "first": {
      "name": "plugins/minimax/skills/treg/SKILL.md:markdown",
      "start": 22,
      "end": 399
     },
-    "secondFile": {
-     "name": "skills/treg/SKILL.md:markdown",
-     "start": 20,
-     "end": 397
-    }
+    "others": [
+     {
+      "name": "skills/treg/SKILL.md:markdown",
+      "start": 20,
+      "end": 397
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
-    "format": "markdown",
-    "lines": 375,
-    "tokens": 4847,
-    "firstFile": {
-     "name": "dsh/skills/treg/SKILL.md:markdown",
-     "start": 41,
-     "end": 415
+    "format": "yaml",
+    "lines": 12,
+    "tokens": 58,
+    "first": {
+     "name": "src/treg/catalog/scrapecreators.extended.yaml",
+     "start": 137,
+     "end": 148
     },
-    "secondFile": {
-     "name": "plugin/skills/treg/SKILL.md:markdown",
-     "start": 44,
-     "end": 418
-    }
+    "others": [
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 171,
+      "end": 182
+     },
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 205,
+      "end": 216
+     },
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 239,
+      "end": 250
+     },
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 482,
+      "end": 493
+     },
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 562,
+      "end": 573
+     },
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 643,
+      "end": 654
+     },
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 672,
+      "end": 683
+     },
+     {
+      "name": "src/treg/catalog/scrapecreators.extended.yaml",
+      "start": 709,
+      "end": 720
+     }
+    ],
+    "copies": 64,
+    "kind": "data"
    },
    {
-    "format": "markdown",
-    "lines": 375,
-    "tokens": 4847,
-    "firstFile": {
-     "name": "dsh/skills/treg/SKILL.md:markdown",
-     "start": 41,
-     "end": 415
+    "format": "bash",
+    "lines": 303,
+    "tokens": 596,
+    "first": {
+     "name": "dsh/skills/treg/SKILL.md:bash",
+     "start": 73,
+     "end": 375
     },
-    "secondFile": {
-     "name": "plugins/minimax/skills/treg/SKILL.md:markdown",
-     "start": 25,
-     "end": 399
-    }
+    "others": [
+     {
+      "name": "plugin/skills/treg/SKILL.md:bash",
+      "start": 76,
+      "end": 378
+     },
+     {
+      "name": "plugins/minimax/skills/treg/SKILL.md:bash",
+      "start": 57,
+      "end": 359
+     },
+     {
+      "name": "plugins/treg/skills/treg/SKILL.md:bash",
+      "start": 71,
+      "end": 373
+     },
+     {
+      "name": "skills/treg/SKILL.md:bash",
+      "start": 55,
+      "end": 357
+     },
+     {
+      "name": "src/treg/web/skill.md:bash",
+      "start": 34,
+      "end": 338
+     }
+    ],
+    "copies": 6,
+    "kind": "docs"
    },
    {
     "format": "javascript",
     "lines": 547,
     "tokens": 2925,
-    "firstFile": {
+    "first": {
      "name": "src/treg/web/dashboard-legacy/assets/81e84d6e19e3b54f7b591d1ea45e99c8c7a4560a/tutorial.js",
      "start": 12,
      "end": 558
     },
-    "secondFile": {
-     "name": "src/treg/web/tutorial.js",
-     "start": 12,
-     "end": 558
-    }
+    "others": [
+     {
+      "name": "src/treg/web/tutorial.js",
+      "start": 12,
+      "end": 558
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "yaml",
+    "lines": 8,
+    "tokens": 115,
+    "first": {
+     "name": "src/treg/catalog/dataforseo.extended.yaml",
+     "start": 57,
+     "end": 64
+    },
+    "others": [
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 128,
+      "end": 135
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 428,
+      "end": 435
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 521,
+      "end": 528
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 803,
+      "end": 810
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 918,
+      "end": 925
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 1033,
+      "end": 1040
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 1268,
+      "end": 1275
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 1510,
+      "end": 1517
+     }
+    ],
+    "copies": 23,
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 8,
+    "tokens": 75,
+    "first": {
+     "name": "src/treg/catalog/dataforseo.extended.yaml",
+     "start": 1701,
+     "end": 1708
+    },
+    "others": [
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 1772,
+      "end": 1779
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 1846,
+      "end": 1853
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 1903,
+      "end": 1910
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 2491,
+      "end": 2498
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 2717,
+      "end": 2724
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 2844,
+      "end": 2851
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 3292,
+      "end": 3299
+     },
+     {
+      "name": "src/treg/catalog/dataforseo.extended.yaml",
+      "start": 3530,
+      "end": 3537
+     }
+    ],
+    "copies": 33,
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 795,
     "tokens": 2296,
-    "firstFile": {
+    "first": {
      "name": "src/treg/catalog/examples/fiber-ai.companies.enrich.json",
      "start": 1,
      "end": 795
     },
-    "secondFile": {
-     "name": "src/treg/catalog/examples/fiber-ai.companies.search.json",
-     "start": 1,
-     "end": 795
-    }
-   },
-   {
-    "format": "json",
-    "lines": 734,
-    "tokens": 2153,
-    "firstFile": {
-     "name": "src/treg/catalog/examples/dataforseo.account.usage.json",
-     "start": 31,
-     "end": 764
-    },
-    "secondFile": {
-     "name": "src/treg/catalog/examples/dataforseo.account.usage.json",
-     "start": 1537,
-     "end": 2270
-    }
-   },
-   {
-    "format": "json",
-    "lines": 723,
-    "tokens": 2115,
-    "firstFile": {
-     "name": "src/treg/catalog/examples/dataforseo.account.usage.json",
-     "start": 42,
-     "end": 764
-    },
-    "secondFile": {
-     "name": "src/treg/catalog/examples/dataforseo.account.usage.json",
-     "start": 5297,
-     "end": 6019
-    }
-   },
-   {
-    "format": "json",
-    "lines": 708,
-    "tokens": 2065,
-    "firstFile": {
-     "name": "src/treg/catalog/examples/dataforseo.account.usage.json",
-     "start": 57,
-     "end": 764
-    },
-    "secondFile": {
-     "name": "src/treg/catalog/examples/dataforseo.account.usage.json",
-     "start": 4577,
-     "end": 5284
-    }
-   },
-   {
-    "format": "json",
-    "lines": 742,
-    "tokens": 2013,
-    "firstFile": {
-     "name": "src/treg/catalog/examples/influencersclub.creators.enrich.analytics.json",
-     "start": 58,
-     "end": 799
-    },
-    "secondFile": {
-     "name": "src/treg/catalog/examples/influencersclub.creators.enrich.full.json",
-     "start": 142,
-     "end": 883
-    }
+    "others": [
+     {
+      "name": "src/treg/catalog/examples/fiber-ai.companies.search.json",
+      "start": 1,
+      "end": 795
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -513,6 +749,346 @@
      "lines": 89
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 410,
+   "lines": 97882,
+   "tokens": 805991,
+   "clones": 84,
+   "duplicatedLines": 1450,
+   "duplicatedTokens": 10593,
+   "percentage": 1.48,
+   "percentageTokens": 1.31,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 233,
+     "lines": 83103,
+     "clones": 76,
+     "duplicatedLines": 699,
+     "percentage": 0.84
+    },
+    {
+     "format": "html",
+     "sources": 40,
+     "lines": 1897,
+     "clones": 5,
+     "duplicatedLines": 38,
+     "percentage": 2
+    },
+    {
+     "format": "javascript",
+     "sources": 67,
+     "lines": 7157,
+     "clones": 3,
+     "duplicatedLines": 713,
+     "percentage": 9.96
+    },
+    {
+     "format": "vue",
+     "sources": 40,
+     "lines": 3615,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 17,
+     "lines": 1295,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 6,
+     "lines": 330,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "css",
+     "sources": 5,
+     "lines": 198,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "sql",
+     "sources": 1,
+     "lines": 113,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 547,
+     "tokens": 2925,
+     "first": {
+      "name": "src/treg/web/dashboard-legacy/assets/81e84d6e19e3b54f7b591d1ea45e99c8c7a4560a/tutorial.js",
+      "start": 12,
+      "end": 558
+     },
+     "others": [
+      {
+       "name": "src/treg/web/tutorial.js",
+       "start": 12,
+       "end": 558
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "(function () {",
+       "  const PERSONAS = {",
+       "    tom:   { label: \"Tom · owner\",        cls: \"tom\"   },",
+       "    bob:   { label: \"Bob · member→admin\", cls: \"bob\"   },",
+       "    alice: { label: \"Alice · viewer\",     cls: \"alice\" },",
+       "    sys:   { label: \"setup\",              cls: \"sys\"   },",
+       "    ops:   { label: \"platform operator\",  cls: \"ops\"   },",
+       "    you:   { label: \"you · member\",       cls: \"you\"   },",
+       "    sam:   { label: \"Sam · restricted member\", cls: \"sam\" },",
+       "  };"
+      ],
+      "total": 547
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 88,
+     "tokens": 891,
+     "first": {
+      "name": "src/treg/web/agent-setup.js",
+      "start": 2,
+      "end": 89
+     },
+     "others": [
+      {
+       "name": "src/treg/web/dashboard-legacy/assets/81e84d6e19e3b54f7b591d1ea45e99c8c7a4560a/agent-setup.js",
+       "start": 2,
+       "end": 89
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "(function(global){",
+       "  const agents=[",
+       "    {id:'openclaw',name:'OpenClaw',icon:'openclaw-color'},",
+       "    {id:'grokbot',name:'Grok Bot',icon:'/logos/agents/grokbot.png',plugin:'https://x.ai/bot/plugin/55647425'},",
+       "    {id:'hermes',name:'Hermes Agent',icon:'hermesagent'},",
+       "    {id:'claudeai',name:'Claude.ai',icon:'claude-color'},",
+       "    {id:'claude-code',name:'Claude Code',icon:'claudecode-color'},",
+       "    {id:'codex',name:'Codex',icon:'codex-color'},",
+       "  ];",
+       "  const moreAgents=["
+      ],
+      "total": 88
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 78,
+     "tokens": 602,
+     "first": {
+      "name": "src/treg/web/dashboard-legacy/assets/81e84d6e19e3b54f7b591d1ea45e99c8c7a4560a/dashboard-tour/tour.js",
+      "start": 4,
+      "end": 81
+     },
+     "others": [
+      {
+       "name": "src/treg/web/tour/tour.js",
+       "start": 4,
+       "end": 81
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "(function () {",
+       "  window.TREG_TOUR = {",
+       "    personas: { tom:\"Tom · owner\", bob:\"Bob · member→admin\", alice:\"Alice · viewer\", sys:\"sign-in\" },",
+       "    colors: [\"--accent\",\"--green\",\"--amber\",\"--teal\",\"--red\"],  // one mat colour per Part, cycled",
+       "    steps: [",
+       "      { part:\"Sign in\", who:\"sys\", img:\"01-signin.webp\", title:\"Three ways in\",",
+       "        explain:\"The sign-in screen offers three separate doors — pick <b>one</b>: <b>Continue with GitHub</b> (real OAuth), <b>Email me a sign-in code</b> (wo…",
+       "        notice:\"This tour uses the email-code door. In production the code is <b>emailed</b> to you (via Resend); the screenshots here were captured in dev mod…",
+       "      { part:\"Sign in\", who:\"sys\", img:\"02-email-code.webp\", title:\"The email code\",",
+       "        explain:\"Type your email and click <b>Email me a sign-in code</b>. <b>Check your inbox</b> for the 6-digit code, paste it into the field, and <b>Sign i…"
+      ],
+      "total": 78
+     },
+     "kind": "code"
+    },
+    {
+     "format": "html",
+     "lines": 12,
+     "tokens": 378,
+     "first": {
+      "name": "frontend/src/pages/SecretsPage.vue:html",
+      "start": 69,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "frontend/src/pages/ToolsPage.vue:html",
+       "start": 76,
+       "end": 87
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 33,
+     "tokens": 254,
+     "first": {
+      "name": "src/treg/routers/orgs.py",
+      "start": 539,
+      "end": 571
+     },
+     "others": [
+      {
+       "name": "src/treg/routers/orgs.py",
+       "start": 643,
+       "end": 675
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 34,
+     "tokens": 215,
+     "first": {
+      "name": "src/treg/alembic/versions/0021_ledgerentry_org_created_at_index.py",
+      "start": 63,
+      "end": 96
+     },
+     "others": [
+      {
+       "name": "src/treg/alembic/versions/0023_callrecord_org_user_created_at_index.py",
+       "start": 41,
+       "end": 74
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 173,
+     "first": {
+      "name": "src/treg/application/call/service.py",
+      "start": 1193,
+      "end": 1207
+     },
+     "others": [
+      {
+       "name": "src/treg/application/call/service.py",
+       "start": 1218,
+       "end": 1231
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 50,
+     "first": {
+      "name": "src/treg/bootstrap_http.py",
+      "start": 46,
+      "end": 53
+     },
+     "others": [
+      {
+       "name": "src/treg/bootstrap_http.py",
+       "start": 75,
+       "end": 82
+      },
+      {
+       "name": "src/treg/bootstrap_http.py",
+       "start": 121,
+       "end": 128
+      },
+      {
+       "name": "src/treg/mcp.py",
+       "start": 1851,
+       "end": 1859
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 135,
+     "first": {
+      "name": "src/treg/domain/governance/access.py",
+      "start": 107,
+      "end": 117
+     },
+     "others": [
+      {
+       "name": "src/treg/routers/orgs.py",
+       "start": 214,
+       "end": 224
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 132,
+     "first": {
+      "name": "marketing/landing/build_html.py",
+      "start": 545,
+      "end": 556
+     },
+     "others": [
+      {
+       "name": "marketing/landing/build_html.py",
+       "start": 760,
+       "end": 771
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "src/treg/alembic/versions/0001_baseline_current_schema.py"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:24:52.629Z",
+  "jscpdVersion": "5.4.0"
  }
 }

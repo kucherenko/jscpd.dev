@@ -6,30 +6,48 @@
  "summary": {
   "repos": 7,
   "sources": 20587,
-  "lines": 5468409,
-  "tokens": 35371744,
-  "clones": 37368,
-  "duplicatedLines": 656509,
-  "duplicatedTokens": 3989940,
-  "percentage": 12.01,
-  "percentageTokens": 11.28,
-  "avgPercentage": 17.01,
-  "medianPercentage": 11.16,
+  "lines": 5468101,
+  "tokens": 35370589,
+  "clones": 37358,
+  "duplicatedLines": 655253,
+  "duplicatedTokens": 3981199,
+  "percentage": 11.98,
+  "percentageTokens": 11.26,
+  "avgPercentage": 17,
+  "medianPercentage": 11.11,
   "mostDuplicated": {
    "name": "cs341-illinois/coursebook",
    "clones": 564,
-   "percentage": 58.81
+   "percentage": 58.84
   },
   "cleanest": {
    "name": "byoungd/up",
-   "clones": 56,
-   "percentage": 3.65
+   "clones": 55,
+   "percentage": 3.64
   },
   "mostClones": {
    "name": "paperclipai/paperclip",
-   "clones": 17695,
-   "percentage": 11.16
+   "clones": 17686,
+   "percentage": 11.11
   },
+  "codeRepos": 7,
+  "codeSources": 9117,
+  "codeLines": 2435053,
+  "codeClones": 9102,
+  "codeDuplicatedLines": 153940,
+  "codePercentage": 6.32,
+  "codeMedianPercentage": 4.47,
+  "codeMostDuplicated": {
+   "name": "NawfalMotii79/PLFM_RADAR",
+   "clones": 587,
+   "percentage": 10.08
+  },
+  "codeCleanest": {
+   "name": "byoungd/up",
+   "clones": 4,
+   "percentage": 0.91
+  },
+  "generatedFiles": 16,
   "avgHealth": 56.86,
   "healthiest": {
    "name": "debpalash/VoiceStudio",
@@ -45,16 +63,16 @@
    {
     "language": "TypeScript",
     "repos": 3,
-    "clones": 33688,
-    "lines": 4355998,
-    "duplicatedLines": 508441,
-    "percentage": 11.67
+    "clones": 33679,
+    "lines": 4355866,
+    "duplicatedLines": 507191,
+    "percentage": 11.64
    },
    {
     "language": "Python",
     "repos": 1,
     "clones": 2408,
-    "lines": 739266,
+    "lines": 739222,
     "duplicatedLines": 54231,
     "percentage": 7.34
    },
@@ -62,7 +80,7 @@
     "language": "PLSQL",
     "repos": 1,
     "clones": 652,
-    "lines": 241644,
+    "lines": 241600,
     "duplicatedLines": 34722,
     "percentage": 14.37
    },
@@ -70,17 +88,17 @@
     "language": "TeX",
     "repos": 1,
     "clones": 564,
-    "lines": 98463,
+    "lines": 98419,
     "duplicatedLines": 57908,
-    "percentage": 58.81
+    "percentage": 58.84
    },
    {
     "language": "JavaScript",
     "repos": 1,
-    "clones": 56,
-    "lines": 33038,
-    "duplicatedLines": 1207,
-    "percentage": 3.65
+    "clones": 55,
+    "lines": 32994,
+    "duplicatedLines": 1201,
+    "percentage": 3.64
    }
   ]
  },
@@ -94,11 +112,11 @@
    "starsToday": 3221,
    "defaultBranch": "main",
    "headSha": "eef0e2304be21c9bfd08cfca0254918522105b06",
-   "durationMs": 3613,
+   "durationMs": 1130,
    "total": {
     "sources": 3037,
-    "lines": 739266,
-    "tokens": 4739971,
+    "lines": 739222,
+    "tokens": 4739806,
     "clones": 2408,
     "duplicatedLines": 54231,
     "duplicatedTokens": 252737,
@@ -165,10 +183,10 @@
     {
      "format": "bash",
      "sources": 59,
-     "lines": 4660,
+     "lines": 4610,
      "clones": 14,
      "duplicatedLines": 122,
-     "percentage": 2.62
+     "percentage": 2.65
     },
     {
      "format": "markdown",
@@ -192,151 +210,226 @@
      "format": "json",
      "lines": 198,
      "tokens": 788,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/en.json",
       "start": 797,
       "end": 994
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/en.json",
-      "start": 1395,
-      "end": 1592
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/en.json",
+       "start": 1395,
+       "end": 1592
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"remove_video_confirm\": \"Remove this video, its transcript and unsaved edits? This cannot be undone.\",",
+       "\"cookie_transport_error\": \"Cookie exports require HTTPS or the local desktop app.\",",
+       "\"cookie_size_error\": \"The cookie export must be 1 MB or smaller.\",",
+       "\"save\": \"Save\",",
+       "\"reset\": \"Reset\",",
+       "\"save_project\": \"Save project\",",
+       "\"change_file\": \"Change file\",",
+       "\"import_srt\": \"Import .srt\",",
+       "\"import_srt_alt\": \"Import .srt instead\",",
+       "\"cast\": \"CAST\","
+      ],
+      "total": 198
      }
     },
     {
      "format": "json",
      "lines": 198,
      "tokens": 788,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/ko.json",
       "start": 632,
       "end": 829
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/ko.json",
-      "start": 1455,
-      "end": 1652
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/ko.json",
+       "start": 1455,
+       "end": 1652
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"remove_video_confirm\": \"이 동영상과 자막, 저장하지 않은 편집 내용을 삭제할까요? 되돌릴 수 없습니다.\",",
+       "\"cookie_transport_error\": \"쿠키 내보내기에는 HTTPS 또는 로컬 데스크톱 앱이 필요합니다.\",",
+       "\"cookie_size_error\": \"쿠키 내보내기 파일은 1MB 이하여야 합니다.\",",
+       "\"save\": \"저장\",",
+       "\"reset\": \"재설정\",",
+       "\"save_project\": \"프로젝트 저장\",",
+       "\"change_file\": \"파일 변경\",",
+       "\"import_srt\": \".srt 가져오기\",",
+       "\"import_srt_alt\": \"대신 .srt를 가져오세요.\",",
+       "\"cast\": \"캐스트\","
+      ],
+      "total": 198
      }
     },
     {
      "format": "json",
      "lines": 196,
      "tokens": 780,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/zh-CN.json",
       "start": 651,
       "end": 846
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/zh-CN.json",
-      "start": 1409,
-      "end": 1604
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/zh-CN.json",
+       "start": 1409,
+       "end": 1604
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"remove_video_confirm\": \"要移除此视频、转录文本和未保存的编辑吗？此操作无法撤销。\",",
+       "\"cookie_transport_error\": \"Cookie 导出文件只能通过 HTTPS 或本地桌面应用发送。\",",
+       "\"cookie_size_error\": \"Cookie 导出文件必须小于或等于 1 MB。\",",
+       "\"save\": \"保存\",",
+       "\"reset\": \"重置\",",
+       "\"save_project\": \"保存项目\",",
+       "\"change_file\": \"更换文件\",",
+       "\"import_srt\": \"导入 SRT\",",
+       "\"import_srt_alt\": \"改为导入 SRT\",",
+       "\"cast\": \"配音角色\","
+      ],
+      "total": 196
      }
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/ar.json",
       "start": 642,
       "end": 830
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/ar.json",
-      "start": 1166,
-      "end": 1354
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/ar.json",
+       "start": 1166,
+       "end": 1354
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/de.json",
       "start": 634,
       "end": 822
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/de.json",
-      "start": 1166,
-      "end": 1354
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/de.json",
+       "start": 1166,
+       "end": 1354
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/es.json",
       "start": 636,
       "end": 824
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/es.json",
-      "start": 1166,
-      "end": 1354
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/es.json",
+       "start": 1166,
+       "end": 1354
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/fr.json",
       "start": 636,
       "end": 824
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/fr.json",
-      "start": 1166,
-      "end": 1354
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/fr.json",
+       "start": 1166,
+       "end": 1354
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/hi.json",
       "start": 634,
       "end": 822
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/hi.json",
-      "start": 1166,
-      "end": 1354
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/hi.json",
+       "start": 1166,
+       "end": 1354
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/id.json",
       "start": 634,
       "end": 822
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/id.json",
-      "start": 1166,
-      "end": 1354
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/id.json",
+       "start": 1166,
+       "end": 1354
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/it.json",
       "start": 636,
       "end": 824
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/it.json",
-      "start": 1166,
-      "end": 1354
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/it.json",
+       "start": 1166,
+       "end": 1354
+      }
+     ]
     }
    ],
    "health": {
@@ -558,7 +651,380 @@
       "lines": 197
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1208,
+    "lines": 304904,
+    "tokens": 1730917,
+    "clones": 372,
+    "duplicatedLines": 5729,
+    "duplicatedTokens": 31282,
+    "percentage": 1.88,
+    "percentageTokens": 1.81,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 344,
+      "lines": 144825,
+      "clones": 241,
+      "duplicatedLines": 3941,
+      "percentage": 2.72
+     },
+     {
+      "format": "jsx",
+      "sources": 223,
+      "lines": 54636,
+      "clones": 46,
+      "duplicatedLines": 634,
+      "percentage": 1.16
+     },
+     {
+      "format": "typescript",
+      "sources": 229,
+      "lines": 32005,
+      "clones": 31,
+      "duplicatedLines": 432,
+      "percentage": 1.35
+     },
+     {
+      "format": "javascript",
+      "sources": 146,
+      "lines": 17501,
+      "clones": 24,
+      "duplicatedLines": 446,
+      "percentage": 2.55
+     },
+     {
+      "format": "tsx",
+      "sources": 224,
+      "lines": 47497,
+      "clones": 23,
+      "duplicatedLines": 221,
+      "percentage": 0.47
+     },
+     {
+      "format": "rust",
+      "sources": 7,
+      "lines": 4081,
+      "clones": 5,
+      "duplicatedLines": 39,
+      "percentage": 0.96
+     },
+     {
+      "format": "bash",
+      "sources": 29,
+      "lines": 3685,
+      "clones": 2,
+      "duplicatedLines": 16,
+      "percentage": 0.43
+     },
+     {
+      "format": "powershell",
+      "sources": 5,
+      "lines": 500,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 144,
+      "tokens": 742,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 246,
+       "end": 389
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 436,
+        "end": 579
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "# Convert to numpy format for subsequent serialization (int16 to save space)",
+        "audio_tokens_np = audio_tokens.to(torch.int16).cpu().numpy()",
+        "",
+        "return {",
+        "    \"status\": \"success\",",
+        "    \"key\": key,",
+        "    \"audio_tokens\": audio_tokens_np,",
+        "    \"metadata\": metadata,",
+        "    \"error_msg\": None,",
+        "}"
+       ],
+       "total": 144
+      }
+     },
+     {
+      "format": "python",
+      "lines": 117,
+      "tokens": 643,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 430,
+       "end": 546
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 625,
+        "end": 743
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        ")",
+        "",
+        "# Shared GPU rank queue for process assignment",
+        "manager = mp.Manager()",
+        "rank_queue = manager.Queue()",
+        "for rank in list(range(num_devices)) * args.nj_per_gpu:",
+        "    rank_queue.put(rank)",
+        "if num_devices == 0:",
+        "    for _ in range(num_processes):",
+        "        rank_queue.put(-1)"
+       ],
+       "total": 117
+      }
+     },
+     {
+      "format": "python",
+      "lines": 27,
+      "tokens": 136,
+      "copies": 5,
+      "first": {
+       "name": "backend/engines/confucius4/main.py",
+       "start": 253,
+       "end": 279
+      },
+      "others": [
+       {
+        "name": "backend/engines/dots_tts/main.py",
+        "start": 240,
+        "end": 269
+       },
+       {
+        "name": "backend/engines/moss_tts_v15/main.py",
+        "start": 321,
+        "end": 350
+       },
+       {
+        "name": "backend/engines/omnivoice_subprocess/main.py",
+        "start": 289,
+        "end": 318
+       },
+       {
+        "name": "backend/engines/pockettts/main.py",
+        "start": 320,
+        "end": 349
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    \"sample_rate\": CONFUCIUS_SAMPLE_RATE,",
+        "})",
+        "",
+        "while True:",
+        "    try:",
+        "        msg = _recv(stdin)",
+        "    except Exception as exc:",
+        "        _send(stdout, {",
+        "            \"op\": \"error\", \"stage\": \"recv\",",
+        "            \"message\": f\"{type(exc).__name__}: {exc}\","
+       ],
+       "total": 27
+      },
+      "excerptSecond": {
+       "lines": [
+        "    \"sample_rate\": DOTS_SAMPLE_RATE,",
+        "})",
+        "",
+        "while True:",
+        "    try:",
+        "        msg = _recv(stdin)",
+        "    except Exception as exc:",
+        "        _send(stdout, {",
+        "            \"op\": \"error\",",
+        "            \"stage\": \"recv\","
+       ],
+       "total": 30
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 99,
+      "tokens": 456,
+      "copies": 2,
+      "first": {
+       "name": "electron/src/shared/utils/watchFolder.js",
+       "start": 24,
+       "end": 122
+      },
+      "others": [
+       {
+        "name": "electron/src/shared/utils/watchFolderTracker.js",
+        "start": 3,
+        "end": 101
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 36,
+      "tokens": 188,
+      "copies": 3,
+      "first": {
+       "name": "backend/engines/cosyvoice_subprocess/main.py",
+       "start": 345,
+       "end": 380
+      },
+      "others": [
+       {
+        "name": "backend/engines/moss_tts_nano_subprocess/main.py",
+        "start": 219,
+        "end": 254
+       },
+       {
+        "name": "backend/engines/voxcpm2_subprocess/main.py",
+        "start": 251,
+        "end": 286
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 80,
+      "tokens": 350,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 546,
+       "end": 625
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 746,
+        "end": 825
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 24,
+      "tokens": 167,
+      "copies": 3,
+      "first": {
+       "name": "backend/engines/_echo/main.py",
+       "start": 54,
+       "end": 77
+      },
+      "others": [
+       {
+        "name": "backend/engines/confucius4/main.py",
+        "start": 46,
+        "end": 69
+       },
+       {
+        "name": "backend/engines/dots_tts/main.py",
+        "start": 59,
+        "end": 82
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 25,
+      "tokens": 108,
+      "copies": 4,
+      "first": {
+       "name": "backend/worker/agent.py",
+       "start": 515,
+       "end": 539
+      },
+      "others": [
+       {
+        "name": "backend/worker/inbound/artifacts.py",
+        "start": 1108,
+        "end": 1132
+       },
+       {
+        "name": "backend/worker/task_store.py",
+        "start": 179,
+        "end": 203
+       },
+       {
+        "name": "backend/worker/tls.py",
+        "start": 445,
+        "end": 469
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 56,
+      "tokens": 323,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/eval/wer/fleurs.py",
+       "start": 424,
+       "end": 479
+      },
+      "others": [
+       {
+        "name": "omnivoice/eval/wer/minimax.py",
+        "start": 515,
+        "end": 570
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 96,
+      "tokens": 310,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 77,
+       "end": 172
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 88,
+        "end": 183
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 4,
+     "minified": 0,
+     "sample": [
+      "backend/worker/protocol/gen/__init__.py",
+      "backend/worker/protocol/gen/worker_v1_pb2_grpc.py",
+      "backend/worker/protocol/gen/worker_v1_pb2.py",
+      "omnivoice/utils/lang_map.py"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:49:52.306Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "paperclipai/paperclip",
@@ -569,16 +1035,16 @@
    "starsToday": 3197,
    "defaultBranch": "master",
    "headSha": "53aad90b9e83dc147707797bf224bec12600b171",
-   "durationMs": 10167,
+   "durationMs": 5266,
    "total": {
     "sources": 7474,
-    "lines": 2457577,
-    "tokens": 15925773,
-    "clones": 17695,
-    "duplicatedLines": 274365,
-    "duplicatedTokens": 1587973,
-    "percentage": 11.16,
-    "percentageTokens": 9.97
+    "lines": 2457533,
+    "tokens": 15925608,
+    "clones": 17686,
+    "duplicatedLines": 273115,
+    "duplicatedTokens": 1579294,
+    "percentage": 11.11,
+    "percentageTokens": 9.92
    },
    "formats": [
     {
@@ -617,9 +1083,9 @@
      "format": "markdown",
      "sources": 588,
      "lines": 137374,
-     "clones": 233,
-     "duplicatedLines": 10407,
-     "percentage": 7.58
+     "clones": 224,
+     "duplicatedLines": 9157,
+     "percentage": 6.67
     },
     {
      "format": "javascript",
@@ -648,10 +1114,10 @@
     {
      "format": "bash",
      "sources": 183,
-     "lines": 16387,
+     "lines": 16337,
      "clones": 60,
      "duplicatedLines": 1622,
-     "percentage": 9.9
+     "percentage": 9.93
     },
     {
      "format": "css",
@@ -667,151 +1133,261 @@
      "format": "markdown",
      "lines": 1287,
      "tokens": 9203,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "skills-releases/paperclip/v0/references/api-reference.md:markdown",
       "start": 1,
       "end": 1287
      },
-     "secondFile": {
-      "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
-      "start": 1,
-      "end": 1287
+     "others": [
+      {
+       "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
+       "start": 1,
+       "end": 1287
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Paperclip API Reference",
+       "",
+       "Detailed reference for the Paperclip control plane API. For the core heartbeat procedure and critical rules, see the main `SKILL.md`.",
+       "",
+       "---",
+       "",
+       "## Response Schemas",
+       "",
+       "### Agent Record (`GET /api/agents/me` or `GET /api/agents/:agentId`)",
+       ""
+      ],
+      "total": 1287
      }
     },
     {
      "format": "tsx",
      "lines": 1048,
      "tokens": 6783,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/CompanySkills.production.tsx",
       "start": 2319,
       "end": 3366
      },
-     "secondFile": {
-      "name": "ui/src/pages/CompanySkills.tsx",
-      "start": 2336,
-      "end": 3383
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 2336,
+       "end": 3383
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+       "isAgentDisabled={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return option.required || !option.supportsSkills;",
+       "}}",
+       "getDescription={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+       "}}",
+       "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+      ],
+      "total": 1048
      }
     },
     {
      "format": "markdown",
      "lines": 1014,
      "tokens": 4926,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "doc/plans/2026-03-13-workspace-product-model-and-work-product.md:markdown",
       "start": 1,
       "end": 1014
      },
-     "secondFile": {
-      "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
-      "start": 1,
-      "end": 1014
+     "others": [
+      {
+       "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
+       "start": 1,
+       "end": 1014
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Workspace Product Model, Work Product, and PR Flow",
+       "",
+       "## Context",
+       "",
+       "Paperclip needs to support two very different but equally valid ways of working:",
+       "",
+       "- a solo developer working directly on `master`, or in a folder that is not even a git repo",
+       "- a larger engineering workflow with isolated branches, previews, pull requests, and cleanup automation",
+       "",
+       "Today, Paperclip already has the beginnings of this model:"
+      ],
+      "total": 1014
      }
     },
     {
      "format": "tsx",
      "lines": 657,
      "tokens": 4344,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/AgentDetail.production.tsx",
       "start": 3714,
       "end": 4370
      },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 3796,
-      "end": 4452
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 3796,
+       "end": 4452
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 624,
      "tokens": 4232,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/Inbox.tsx",
       "start": 1711,
       "end": 2334
      },
-     "secondFile": {
-      "name": "ui/src/pages/LegacyInbox.tsx",
-      "start": 1590,
-      "end": 2213
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/LegacyInbox.tsx",
+       "start": 1590,
+       "end": 2213
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 587,
      "tokens": 4042,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/components/IssuesList.tsx",
       "start": 1102,
       "end": 1688
      },
-     "secondFile": {
-      "name": "ui/src/components/LegacyIssuesList.tsx",
-      "start": 1052,
-      "end": 1638
-     }
+     "others": [
+      {
+       "name": "ui/src/components/LegacyIssuesList.tsx",
+       "start": 1052,
+       "end": 1638
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 60,
+     "copies": 66,
+     "first": {
+      "name": "server/src/__tests__/activity-service.test.ts",
+      "start": 109,
+      "end": 118
+     },
+     "others": [
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 157,
+       "end": 166
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 259,
+       "end": 268
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 353,
+       "end": 362
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 476,
+       "end": 485
+      },
+      {
+       "name": "server/src/__tests__/agents-claude-oauth-binding.test.ts",
+       "start": 271,
+       "end": 278
+      },
+      {
+       "name": "server/src/__tests__/artifact-review-documents-service.test.ts",
+       "start": 94,
+       "end": 102
+      },
+      {
+       "name": "server/src/__tests__/company-skill-test-runs-service.test.ts",
+       "start": 74,
+       "end": 81
+      },
+      {
+       "name": "server/src/__tests__/company-skills-service.test.ts",
+       "start": 947,
+       "end": 954
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 619,
      "tokens": 3874,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/components/SidebarAgents.production.tsx",
       "start": 48,
       "end": 666
      },
-     "secondFile": {
-      "name": "ui/src/components/SidebarAgents.tsx",
-      "start": 48,
-      "end": 666
-     }
+     "others": [
+      {
+       "name": "ui/src/components/SidebarAgents.tsx",
+       "start": 48,
+       "end": 666
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 590,
      "tokens": 3620,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/AgentDetail.production.tsx",
       "start": 3785,
       "end": 4374
      },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 3867,
-      "end": 4456
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 3867,
+       "end": 4456
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 512,
      "tokens": 3520,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/CompanySkills.production.tsx",
       "start": 1667,
       "end": 2178
      },
-     "secondFile": {
-      "name": "ui/src/pages/CompanySkills.tsx",
-      "start": 1684,
-      "end": 2195
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 857,
-     "tokens": 3369,
-     "firstFile": {
-      "name": "skills-releases/paperclip/v0/references/api-reference.md:markdown",
-      "start": 46,
-      "end": 902
-     },
-     "secondFile": {
-      "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
-      "start": 46,
-      "end": 902
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 1684,
+       "end": 2195
+      }
+     ]
     }
    ],
    "health": {
@@ -1034,7 +1610,334 @@
       "lines": 955
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 3369,
+    "lines": 1219407,
+    "tokens": 7028014,
+    "clones": 4697,
+    "duplicatedLines": 81722,
+    "duplicatedTokens": 490066,
+    "percentage": 6.7,
+    "percentageTokens": 6.97,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 2226,
+      "lines": 773842,
+      "clones": 3332,
+      "duplicatedLines": 43661,
+      "percentage": 5.64
+     },
+     {
+      "format": "tsx",
+      "sources": 868,
+      "lines": 348889,
+      "clones": 1012,
+      "duplicatedLines": 33119,
+      "percentage": 9.49
+     },
+     {
+      "format": "rust",
+      "sources": 34,
+      "lines": 52200,
+      "clones": 257,
+      "duplicatedLines": 3016,
+      "percentage": 5.78
+     },
+     {
+      "format": "javascript",
+      "sources": 180,
+      "lines": 31929,
+      "clones": 60,
+      "duplicatedLines": 803,
+      "percentage": 2.51
+     },
+     {
+      "format": "bash",
+      "sources": 56,
+      "lines": 12144,
+      "clones": 36,
+      "duplicatedLines": 1123,
+      "percentage": 9.25
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "python",
+      "sources": 1,
+      "lines": 96,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "go",
+      "sources": 2,
+      "lines": 69,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "c",
+      "sources": 1,
+      "lines": 64,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 1048,
+      "tokens": 6783,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 2319,
+       "end": 3366
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 2336,
+        "end": 3383
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+        "isAgentDisabled={(agent) => {",
+        "  const option = agent as AttachAgentOption;",
+        "  return option.required || !option.supportsSkills;",
+        "}}",
+        "getDescription={(agent) => {",
+        "  const option = agent as AttachAgentOption;",
+        "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+        "}}",
+        "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+       ],
+       "total": 1048
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 657,
+      "tokens": 4344,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 3714,
+       "end": 4370
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 3796,
+        "end": 4452
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      <ScrollToBottom />",
+        "    </div>",
+        "  );",
+        "}",
+        "",
+        "/* ---- Log Viewer ---- */",
+        "",
+        "export function LogViewer({ run, adapterType }: { run: HeartbeatRun; adapterType: string }) {",
+        "  const { visible } = usePageVisibility();",
+        "  const [events, setEvents] = useState<HeartbeatRunEvent[]>([]);"
+       ],
+       "total": 657
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 624,
+      "tokens": 4232,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/Inbox.tsx",
+       "start": 1711,
+       "end": 2334
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/LegacyInbox.tsx",
+        "start": 1590,
+        "end": 2213
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  [selectedCompanyId, visibleIssueColumns],",
+        ");",
+        "const updateIssueFilters = useCallback((patch: Partial<IssueFilterState>) => {",
+        "  updateFilterPreferences((previous) => ({",
+        "    ...previous,",
+        "    issueFilters: { ...previous.issueFilters, ...patch },",
+        "  }));",
+        "}, [updateFilterPreferences]);",
+        "useEffect(() => {",
+        "  if (!experimentalSettingsLoaded || externalObjectsEnabled || issueFilters.externalObjectStatuses.length === 0) return;"
+       ],
+       "total": 624
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 587,
+      "tokens": 4042,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/components/IssuesList.tsx",
+       "start": 1102,
+       "end": 1688
+      },
+      "others": [
+       {
+        "name": "ui/src/components/LegacyIssuesList.tsx",
+        "start": 1052,
+        "end": 1638
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 619,
+      "tokens": 3874,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/components/SidebarAgents.production.tsx",
+       "start": 48,
+       "end": 666
+      },
+      "others": [
+       {
+        "name": "ui/src/components/SidebarAgents.tsx",
+        "start": 48,
+        "end": 666
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 590,
+      "tokens": 3620,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 3785,
+       "end": 4374
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 3867,
+        "end": 4456
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 512,
+      "tokens": 3520,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 1667,
+       "end": 2178
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 1684,
+        "end": 2195
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 425,
+      "tokens": 2881,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 346,
+       "end": 770
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 346,
+        "end": 770
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 400,
+      "tokens": 2771,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/Inbox.tsx",
+       "start": 899,
+       "end": 1298
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/LegacyInbox.tsx",
+        "start": 789,
+        "end": 1189
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 367,
+      "tokens": 2523,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 1814,
+       "end": 2180
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 1831,
+        "end": 2197
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 8,
+     "minified": 0,
+     "sample": [
+      "packages/paperclip-runner/runner/crates/runner-core/src/generated_acpx_sidecar_contract.rs",
+      "packages/paperclip-runner/src/drivers/acpx/generated-sidecar-contract.ts",
+      "packages/paperclip-runner/src/generated/capability-contract.ts",
+      "packages/paperclip-runner/src/mock-core/skill-frontmatter.generated.ts",
+      "packages/paperclip-runner/src/protocol/generated/schema-bundle.ts",
+      "packages/paperclip-runner/src/protocol/generated/standalone-validators.ts",
+      "packages/shared/src/cliplab/character.ts",
+      "packages/shared/src/telemetry/generated/paperclip-telemetry.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:50:15.411Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "NawfalMotii79/PLFM_RADAR",
@@ -1045,11 +1948,11 @@
    "starsToday": 158,
    "defaultBranch": "main",
    "headSha": "749bd0f86a07a28a86347d8ce9c141e601057c40",
-   "durationMs": 1847,
+   "durationMs": 706,
    "total": {
     "sources": 417,
-    "lines": 241644,
-    "tokens": 2383460,
+    "lines": 241600,
+    "tokens": 2383295,
     "clones": 652,
     "duplicatedLines": 34722,
     "duplicatedTokens": 483807,
@@ -1143,151 +2046,381 @@
      "format": "csv",
      "lines": 16385,
      "tokens": 227147,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "8_Utils/Python/test_radar_data.csv",
       "start": 1,
       "end": 16385
      },
-     "secondFile": {
-      "name": "9_Firmware/9_3_GUI/test_radar_data.csv",
-      "start": 1,
-      "end": 16385
+     "others": [
+      {
+       "name": "9_Firmware/9_3_GUI/test_radar_data.csv",
+       "start": 1,
+       "end": 16385
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "timestamp_ns,chirp_number,chirp_type,sample_index,I_value,Q_value,magnitude_squared",
+       "0,0,LONG,0,-15,16,499",
+       "2,0,LONG,1,-12,17,484",
+       "4,0,LONG,2,0,9,94",
+       "6,0,LONG,3,-12,-8,228",
+       "8,0,LONG,4,-2,-4,26",
+       "10,0,LONG,5,-10,-2,124",
+       "12,0,LONG,6,-4,-13,195",
+       "14,0,LONG,7,-3,-5,44",
+       "16,0,LONG,8,-12,14,356"
+      ],
+      "total": 16385
+     }
+    },
+    {
+     "format": "c",
+     "lines": 26,
+     "tokens": 1479,
+     "copies": 9,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.c",
+      "start": 6,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.c",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.c",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_app.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.c",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.c",
+       "start": 5,
+       "end": 30
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "* Copyright 2012-2016(c) Analog Devices, Inc.",
+       "*",
+       "* Redistribution and use in source and binary forms, with or without",
+       "* modification, are permitted provided that the following conditions are met:",
+       "*",
+       "* 1. Redistributions of source code must retain the above copyright notice,",
+       "*    this list of conditions and the following disclaimer.",
+       "*",
+       "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+       "*    this list of conditions and the following disclaimer in the documentation"
+      ],
+      "total": 26
+     }
+    },
+    {
+     "format": "c-header",
+     "lines": 26,
+     "tokens": 1479,
+     "copies": 8,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.h",
+      "start": 6,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.h",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.h",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_circular_buffer.h",
+       "start": 7,
+       "end": 32
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.h",
+       "start": 6,
+       "end": 31
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.h",
+       "start": 6,
+       "end": 31
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "* Copyright 2012-2016(c) Analog Devices, Inc.",
+       "*",
+       "* Redistribution and use in source and binary forms, with or without",
+       "* modification, are permitted provided that the following conditions are met:",
+       "*",
+       "* 1. Redistributions of source code must retain the above copyright notice,",
+       "*    this list of conditions and the following disclaimer.",
+       "*",
+       "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+       "*    this list of conditions and the following disclaimer in the documentation"
+      ],
+      "total": 26
      }
     },
     {
      "format": "csv",
      "lines": 1280,
      "tokens": 9730,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
       "start": 770,
       "end": 2049
      },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_stationary.csv",
-      "start": 770,
-      "end": 2049
-     }
+     "others": [
+      {
+       "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_stationary.csv",
+       "start": 770,
+       "end": 2049
+      }
+     ]
+    },
+    {
+     "format": "c-header",
+     "lines": 30,
+     "tokens": 1610,
+     "copies": 6,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+      "start": 5,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iiod.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_eeprom.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_init.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_units.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_irq.h",
+       "start": 5,
+       "end": 33
+      }
+     ]
+    },
+    {
+     "format": "c",
+     "lines": 30,
+     "tokens": 1610,
+     "copies": 6,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+      "start": 5,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.c",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.c",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.c",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.c",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_trng.c",
+       "start": 5,
+       "end": 34
+      }
+     ]
+    },
+    {
+     "format": "c-header",
+     "lines": 30,
+     "tokens": 1610,
+     "copies": 6,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+      "start": 5,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_delay.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_error.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_fifo.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_irq.h",
+       "start": 5,
+       "end": 34
+      }
+     ]
     },
     {
      "format": "csv",
      "lines": 896,
      "tokens": 6787,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
       "start": 1154,
       "end": 2049
      },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_two_targets.csv",
-      "start": 1154,
-      "end": 2049
-     }
+     "others": [
+      {
+       "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_two_targets.csv",
+       "start": 1154,
+       "end": 2049
+      }
+     ]
     },
     {
-     "format": "csv",
-     "lines": 1024,
-     "tokens": 6261,
-     "firstFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_chirp.csv",
-      "start": 2,
-      "end": 1025
+     "format": "c-header",
+     "lines": 29,
+     "tokens": 1610,
+     "copies": 5,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.h",
+      "start": 5,
+      "end": 33
      },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_chirp.csv",
-      "start": 2,
-      "end": 1025
-     }
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.h",
+       "start": 4,
+       "end": 32
+      }
+     ]
     },
     {
-     "format": "csv",
-     "lines": 1024,
-     "tokens": 6142,
-     "firstFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_tone5.csv",
-      "start": 2,
-      "end": 1025
+     "format": "c-header",
+     "lines": 29,
+     "tokens": 1610,
+     "copies": 5,
+     "first": {
+      "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_clk.h",
+      "start": 5,
+      "end": 33
      },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_tone5.csv",
-      "start": 2,
-      "end": 1025
-     }
-    },
-    {
-     "format": "csv",
-     "lines": 1024,
-     "tokens": 5512,
-     "firstFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_dc.csv",
-      "start": 2,
-      "end": 1025
-     },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_dc.csv",
-      "start": 2,
-      "end": 1025
-     }
-    },
-    {
-     "format": "csv",
-     "lines": 1024,
-     "tokens": 5376,
-     "firstFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/mf_golden_py_impulse.csv",
-      "start": 2,
-      "end": 1025
-     },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/rtl_mf_impulse.csv",
-      "start": 2,
-      "end": 1025
-     }
-    },
-    {
-     "format": "csv",
-     "lines": 610,
-     "tokens": 4661,
-     "firstFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
-      "start": 1,
-      "end": 610
-     },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_stationary.csv",
-      "start": 1,
-      "end": 610
-     }
-    },
-    {
-     "format": "csv",
-     "lines": 323,
-     "tokens": 2461,
-     "firstFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_moving.csv",
-      "start": 1,
-      "end": 323
-     },
-     "secondFile": {
-      "name": "9_Firmware/9_2_FPGA/tb/cosim/doppler_golden_py_two_targets.csv",
-      "start": 1,
-      "end": 323
-     }
-    },
-    {
-     "format": "python",
-     "lines": 325,
-     "tokens": 1939,
-     "firstFile": {
-      "name": "9_Firmware/9_3_GUI/GUI_V5.py",
-      "start": 581,
-      "end": 905
-     },
-     "secondFile": {
-      "name": "9_Firmware/9_3_GUI/GUI_V5_Demo.py",
-      "start": 101,
-      "end": 425
-     }
+     "others": [
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_print_log.h",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.h",
+       "start": 5,
+       "end": 33
+      },
+      {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_rtc.h",
+       "start": 5,
+       "end": 34
+      }
+     ]
     }
    ],
    "health": {
@@ -1504,7 +2637,513 @@
       "lines": 34
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 284,
+    "lines": 97932,
+    "tokens": 891068,
+    "clones": 587,
+    "duplicatedLines": 9876,
+    "duplicatedTokens": 199812,
+    "percentage": 10.08,
+    "percentageTokens": 22.42,
+    "formats": [
+     {
+      "format": "c",
+      "sources": 54,
+      "lines": 20313,
+      "clones": 198,
+      "duplicatedLines": 2678,
+      "percentage": 13.18
+     },
+     {
+      "format": "verilog",
+      "sources": 76,
+      "lines": 33144,
+      "clones": 156,
+      "duplicatedLines": 2566,
+      "percentage": 7.74
+     },
+     {
+      "format": "c-header",
+      "sources": 72,
+      "lines": 10067,
+      "clones": 107,
+      "duplicatedLines": 2009,
+      "percentage": 19.96
+     },
+     {
+      "format": "python",
+      "sources": 49,
+      "lines": 24999,
+      "clones": 106,
+      "duplicatedLines": 2441,
+      "percentage": 9.76
+     },
+     {
+      "format": "cpp",
+      "sources": 8,
+      "lines": 5286,
+      "clones": 15,
+      "duplicatedLines": 99,
+      "percentage": 1.87
+     },
+     {
+      "format": "tcl",
+      "sources": 8,
+      "lines": 2031,
+      "clones": 3,
+      "duplicatedLines": 65,
+      "percentage": 3.2
+     },
+     {
+      "format": "objectivec",
+      "sources": 6,
+      "lines": 723,
+      "clones": 2,
+      "duplicatedLines": 18,
+      "percentage": 2.49
+     },
+     {
+      "format": "bash",
+      "sources": 10,
+      "lines": 1195,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "c",
+      "lines": 26,
+      "tokens": 1479,
+      "copies": 9,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.c",
+       "start": 6,
+       "end": 31
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.c",
+        "start": 7,
+        "end": 32
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.c",
+        "start": 7,
+        "end": 32
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_app.c",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.c",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.c",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.c",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.c",
+        "start": 5,
+        "end": 30
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "* Copyright 2012-2016(c) Analog Devices, Inc.",
+        "*",
+        "* Redistribution and use in source and binary forms, with or without",
+        "* modification, are permitted provided that the following conditions are met:",
+        "*",
+        "* 1. Redistributions of source code must retain the above copyright notice,",
+        "*    this list of conditions and the following disclaimer.",
+        "*",
+        "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+        "*    this list of conditions and the following disclaimer in the documentation"
+       ],
+       "total": 26
+      }
+     },
+     {
+      "format": "c-header",
+      "lines": 26,
+      "tokens": 1479,
+      "copies": 8,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/ad9523.h",
+       "start": 6,
+       "end": 31
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/adf4382.h",
+        "start": 7,
+        "end": 32
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio.h",
+        "start": 7,
+        "end": 32
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_circular_buffer.h",
+        "start": 7,
+        "end": 32
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc24.h",
+        "start": 6,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_util.h",
+        "start": 6,
+        "end": 31
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "* Copyright 2012-2016(c) Analog Devices, Inc.",
+        "*",
+        "* Redistribution and use in source and binary forms, with or without",
+        "* modification, are permitted provided that the following conditions are met:",
+        "*",
+        "* 1. Redistributions of source code must retain the above copyright notice,",
+        "*    this list of conditions and the following disclaimer.",
+        "*",
+        "* 2. Redistributions in binary form must reproduce the above copyright notice,",
+        "*    this list of conditions and the following disclaimer in the documentation"
+       ],
+       "total": 26
+      }
+     },
+     {
+      "format": "c-header",
+      "lines": 30,
+      "tokens": 1610,
+      "copies": 6,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.h",
+       "start": 5,
+       "end": 34
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iiod.h",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_eeprom.h",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_init.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_units.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_irq.h",
+        "start": 5,
+        "end": 33
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "********************************************************************************",
+        " * Copyright 2022(c) Analog Devices, Inc.",
+        " *",
+        " * Redistribution and use in source and binary forms, with or without",
+        " * modification, are permitted provided that the following conditions are met:",
+        " *",
+        " * 1. Redistributions of source code must retain the above copyright notice,",
+        " *    this list of conditions and the following disclaimer.",
+        " *",
+        " * 2. Redistributions in binary form must reproduce the above copyright notice,"
+       ],
+       "total": 30
+      }
+     },
+     {
+      "format": "c",
+      "lines": 30,
+      "tokens": 1610,
+      "copies": 6,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.c",
+       "start": 5,
+       "end": 34
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.c",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.c",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.c",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.c",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_trng.c",
+        "start": 5,
+        "end": 34
+       }
+      ]
+     },
+     {
+      "format": "c-header",
+      "lines": 30,
+      "tokens": 1610,
+      "copies": 6,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_axi_io.h",
+       "start": 5,
+       "end": 34
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_delay.h",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_error.h",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_fifo.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.h",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_irq.h",
+        "start": 5,
+        "end": 34
+       }
+      ]
+     },
+     {
+      "format": "c-header",
+      "lines": 29,
+      "tokens": 1610,
+      "copies": 5,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_alloc.h",
+       "start": 5,
+       "end": 33
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mdio.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_mutex.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pid.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_pwm.h",
+        "start": 4,
+        "end": 32
+       }
+      ]
+     },
+     {
+      "format": "c-header",
+      "lines": 29,
+      "tokens": 1610,
+      "copies": 5,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_clk.h",
+       "start": 5,
+       "end": 33
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_print_log.h",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_pwm.h",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_rtc.h",
+        "start": 5,
+        "end": 34
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 30,
+      "tokens": 1609,
+      "copies": 5,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_app.c",
+       "start": 5,
+       "end": 34
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_crc16.c",
+        "start": 5,
+        "end": 33
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.c",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_list.c",
+        "start": 5,
+        "end": 34
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_gpio.c",
+        "start": 5,
+        "end": 33
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 27,
+      "tokens": 1529,
+      "copies": 4,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iio_trigger.c",
+       "start": 5,
+       "end": 31
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/iiod.c",
+        "start": 5,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_eeprom.c",
+        "start": 5,
+        "end": 31
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/stm32_irq.c",
+        "start": 5,
+        "end": 31
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 33,
+      "tokens": 1731,
+      "copies": 3,
+      "first": {
+       "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_gpio.c",
+       "start": 3,
+       "end": 35
+      },
+      "others": [
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_i2c.c",
+        "start": 3,
+        "end": 35
+       },
+       {
+        "name": "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/no_os_spi.c",
+        "start": 3,
+        "end": 35
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 2,
+     "minified": 0,
+     "sample": [
+      "9_Firmware/9_1_Microcontroller/9_1_1_C_Cpp_Libraries/syscalls.c",
+      "9_Firmware/9_2_FPGA/scripts/utils/insert_ila_probes.tcl"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:53:58.525Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "cs341-illinois/coursebook",
@@ -1515,16 +3154,16 @@
    "starsToday": 195,
    "defaultBranch": "master",
    "headSha": "61c706f1037dab30feac2e4bb852c01c9257af64",
-   "durationMs": 951,
+   "durationMs": 163,
    "total": {
     "sources": 120,
-    "lines": 98463,
-    "tokens": 486965,
+    "lines": 98419,
+    "tokens": 486800,
     "clones": 564,
     "duplicatedLines": 57908,
     "duplicatedTokens": 216904,
-    "percentage": 58.81,
-    "percentageTokens": 44.54
+    "percentage": 58.84,
+    "percentageTokens": 44.56
    },
    "formats": [
     {
@@ -1562,7 +3201,7 @@
     {
      "format": "bash",
      "sources": 14,
-     "lines": 913,
+     "lines": 863,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1578,7 +3217,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1595,153 +3234,253 @@
    "topClones": [
     {
      "format": "markup",
-     "lines": 2346,
-     "tokens": 8235,
-     "firstFile": {
-      "name": "deadlock/drawings/dining_arbitrator.svg",
-      "start": 38,
-      "end": 2383
-     },
-     "secondFile": {
-      "name": "deadlock/drawings/dining_stalling.svg",
-      "start": 38,
-      "end": 2383
-     }
-    },
-    {
-     "format": "markup",
      "lines": 2344,
      "tokens": 8225,
-     "firstFile": {
+     "copies": 3,
+     "first": {
       "name": "deadlock/drawings/dining_arbitrator.svg",
       "start": 38,
       "end": 2381
      },
-     "secondFile": {
-      "name": "deadlock/drawings/dining_livelock.svg",
-      "start": 38,
-      "end": 2381
+     "others": [
+      {
+       "name": "deadlock/drawings/dining_livelock.svg",
+       "start": 38,
+       "end": 2381
+      },
+      {
+       "name": "deadlock/drawings/dining_partial.svg",
+       "start": 38,
+       "end": 2381
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "   inkscape:current-layer=\"svg8\"",
+       "   fit-margin-top=\"0\"",
+       "   fit-margin-left=\"0\"",
+       "   fit-margin-right=\"0\"",
+       "   fit-margin-bottom=\"0\" />",
+       "<defs",
+       "   id=\"defs2\">",
+       "  <inkscape:path-effect",
+       "     effect=\"bspline\"",
+       "     id=\"path-effect3001\""
+      ],
+      "total": 2344
      }
     },
     {
      "format": "markup",
-     "lines": 2344,
-     "tokens": 8225,
-     "firstFile": {
-      "name": "deadlock/drawings/dining_arbitrator.svg",
-      "start": 38,
-      "end": 2381
-     },
-     "secondFile": {
-      "name": "deadlock/drawings/dining_partial.svg",
-      "start": 38,
-      "end": 2381
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 1690,
-     "tokens": 5918,
-     "firstFile": {
-      "name": "deadlock/drawings/dining_arbitrator.svg",
-      "start": 64,
-      "end": 1753
-     },
-     "secondFile": {
-      "name": "deadlock/drawings/dining_naive.svg",
-      "start": 44,
-      "end": 1733
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 1430,
-     "tokens": 5072,
-     "firstFile": {
-      "name": "appendix/drawings/ip_datagram.svg",
+     "lines": 1208,
+     "tokens": 4300,
+     "copies": 4,
+     "first": {
+      "name": "ipc/drawings/level_split.svg",
       "start": 19,
-      "end": 1448
+      "end": 1226
      },
-     "secondFile": {
-      "name": "networking/drawings/tcp_header.svg",
-      "start": 19,
-      "end": 1448
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 1427,
-     "tokens": 5052,
-     "firstFile": {
-      "name": "appendix/drawings/ip_datagram.svg",
-      "start": 22,
-      "end": 1448
-     },
-     "secondFile": {
-      "name": "networking/drawings/ipv6_datagram.svg",
-      "start": 48,
-      "end": 1474
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 1267,
-     "tokens": 4492,
-     "firstFile": {
-      "name": "appendix/drawings/ip_datagram.svg",
-      "start": 52,
-      "end": 1318
-     },
-     "secondFile": {
-      "name": "ipc/drawings/pipe_process.svg",
-      "start": 22,
-      "end": 1288
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 1268,
-     "tokens": 4333,
-     "firstFile": {
-      "name": "scheduling/drawings/psjf.svg",
-      "start": 21,
-      "end": 1288
-     },
-     "secondFile": {
-      "name": "scheduling/drawings/sjf.svg",
-      "start": 20,
-      "end": 1287
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 1267,
-     "tokens": 4328,
-     "firstFile": {
-      "name": "scheduling/drawings/psjf.svg",
-      "start": 21,
-      "end": 1287
-     },
-     "secondFile": {
-      "name": "scheduling/drawings/rr.svg",
-      "start": 20,
-      "end": 1286
+     "others": [
+      {
+       "name": "ipc/drawings/level_split_filled.svg",
+       "start": 19,
+       "end": 1226
+      },
+      {
+       "name": "ipc/drawings/multi_level_filled.svg",
+       "start": 19,
+       "end": 1226
+      },
+      {
+       "name": "ipc/drawings/multi_level_split.svg",
+       "start": 19,
+       "end": 1226
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       " inkscape:export-xdpi=\"96\"",
+       " inkscape:export-ydpi=\"96\">",
+       "<defs",
+       "   id=\"defs2\">",
+       "  <inkscape:path-effect",
+       "     effect=\"bspline\"",
+       "     id=\"path-effect19165\"",
+       "     is_visible=\"true\"",
+       "     weight=\"33.333333\"",
+       "     steps=\"2\""
+      ],
+      "total": 1208
      }
     },
     {
      "format": "markup",
      "lines": 1266,
      "tokens": 4314,
-     "firstFile": {
+     "copies": 3,
+     "first": {
       "name": "scheduling/drawings/fcfs.svg",
       "start": 19,
       "end": 1284
      },
-     "secondFile": {
-      "name": "scheduling/drawings/psjf.svg",
-      "start": 22,
-      "end": 1287
+     "others": [
+      {
+       "name": "scheduling/drawings/psjf.svg",
+       "start": 22,
+       "end": 1287
+      },
+      {
+       "name": "threads/drawings/thread_nonrace_timing.svg",
+       "start": 19,
+       "end": 1284
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       " sodipodi:docname=\"fcfs.svg\">",
+       "<defs",
+       "   id=\"defs2\">",
+       "  <inkscape:path-effect",
+       "     effect=\"bspline\"",
+       "     id=\"path-effect2726\"",
+       "     is_visible=\"true\"",
+       "     weight=\"33.333333\"",
+       "     steps=\"2\"",
+       "     helper_size=\"0\""
+      ],
+      "total": 1266
      }
+    },
+    {
+     "format": "markup",
+     "lines": 2346,
+     "tokens": 8235,
+     "copies": 2,
+     "first": {
+      "name": "deadlock/drawings/dining_arbitrator.svg",
+      "start": 38,
+      "end": 2383
+     },
+     "others": [
+      {
+       "name": "deadlock/drawings/dining_stalling.svg",
+       "start": 38,
+       "end": 2383
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 1041,
+     "tokens": 3524,
+     "copies": 3,
+     "first": {
+      "name": "malloc/drawings/heap_best_fit.svg",
+      "start": 19,
+      "end": 1059
+     },
+     "others": [
+      {
+       "name": "malloc/drawings/heap_first_fit.svg",
+       "start": 19,
+       "end": 1059
+      },
+      {
+       "name": "malloc/drawings/heap_worst_fit.svg",
+       "start": 19,
+       "end": 1059
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 1690,
+     "tokens": 5918,
+     "copies": 2,
+     "first": {
+      "name": "deadlock/drawings/dining_arbitrator.svg",
+      "start": 64,
+      "end": 1753
+     },
+     "others": [
+      {
+       "name": "deadlock/drawings/dining_naive.svg",
+       "start": 44,
+       "end": 1733
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 1430,
+     "tokens": 5072,
+     "copies": 2,
+     "first": {
+      "name": "appendix/drawings/ip_datagram.svg",
+      "start": 19,
+      "end": 1448
+     },
+     "others": [
+      {
+       "name": "networking/drawings/tcp_header.svg",
+       "start": 19,
+       "end": 1448
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 1427,
+     "tokens": 5052,
+     "copies": 2,
+     "first": {
+      "name": "appendix/drawings/ip_datagram.svg",
+      "start": 22,
+      "end": 1448
+     },
+     "others": [
+      {
+       "name": "networking/drawings/ipv6_datagram.svg",
+       "start": 48,
+       "end": 1474
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 1267,
+     "tokens": 4492,
+     "copies": 2,
+     "first": {
+      "name": "appendix/drawings/ip_datagram.svg",
+      "start": 52,
+      "end": 1318
+     },
+     "others": [
+      {
+       "name": "ipc/drawings/pipe_process.svg",
+       "start": 22,
+       "end": 1288
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 1268,
+     "tokens": 4333,
+     "copies": 2,
+     "first": {
+      "name": "scheduling/drawings/psjf.svg",
+      "start": 21,
+      "end": 1288
+     },
+     "others": [
+      {
+       "name": "scheduling/drawings/sjf.svg",
+       "start": 20,
+       "end": 1287
+      }
+     ]
     }
    ],
    "health": {
@@ -1940,7 +3679,116 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 20,
+    "lines": 1630,
+    "tokens": 6887,
+    "clones": 2,
+    "duplicatedLines": 26,
+    "duplicatedTokens": 151,
+    "percentage": 1.6,
+    "percentageTokens": 2.19,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 5,
+      "lines": 593,
+      "clones": 2,
+      "duplicatedLines": 26,
+      "percentage": 4.38
+     },
+     {
+      "format": "bash",
+      "sources": 14,
+      "lines": 863,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 18,
+      "tokens": 92,
+      "copies": 2,
+      "first": {
+       "name": "_scripts/pandoc_epub_filter.py",
+       "start": 17,
+       "end": 34
+      },
+      "others": [
+       {
+        "name": "_scripts/pandoc_wiki_filter.py",
+        "start": 15,
+        "end": 32
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "def replace_suffix(content, suffix_old, suffix_new):",
+        "    ret = content",
+        "    if content.endswith(suffix_old):",
+        "        ret = content[:-len(suffix_old)] + suffix_new",
+        "    return ret",
+        "",
+        "def deserialize(x):",
+        "    \"\"\"",
+        "    Takes a panflute element x and returns",
+        "    a basic stringified version of that element"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 59,
+      "copies": 2,
+      "first": {
+       "name": "_scripts/pandoc_epub_filter.py",
+       "start": 34,
+       "end": 41
+      },
+      "others": [
+       {
+        "name": "_scripts/pandoc_header_filter.py",
+        "start": 101,
+        "end": 108
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "if type(elem) == Image:",
+        "    # Get the number of chars for the alt tag",
+        "    alt_name = ''.join(map(deserialize, elem._content.list))",
+        "    alt_length = len(elem._content)",
+        "    # No alt means no compile",
+        "    # Accessibility by default",
+        "    if alt_length == 0 or alt_name.lower() == default_image_alt:",
+        "        raise NoAltTagException(elem.url)"
+       ],
+       "total": 8
+      }
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T07:54:01.662Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "byoungd/up",
@@ -1951,25 +3799,25 @@
    "starsToday": 327,
    "defaultBranch": "master",
    "headSha": "7478ac2b740cba5d423ebf61143f14442b278725",
-   "durationMs": 851,
+   "durationMs": 71,
    "total": {
     "sources": 277,
-    "lines": 33038,
-    "tokens": 306737,
-    "clones": 56,
-    "duplicatedLines": 1207,
-    "duplicatedTokens": 9509,
-    "percentage": 3.65,
-    "percentageTokens": 3.1
+    "lines": 32994,
+    "tokens": 306572,
+    "clones": 55,
+    "duplicatedLines": 1201,
+    "duplicatedTokens": 9447,
+    "percentage": 3.64,
+    "percentageTokens": 3.08
    },
    "formats": [
     {
      "format": "markdown",
      "sources": 173,
      "lines": 24021,
-     "clones": 22,
-     "duplicatedLines": 622,
-     "percentage": 2.59
+     "clones": 21,
+     "duplicatedLines": 616,
+     "percentage": 2.56
     },
     {
      "format": "javascript",
@@ -2022,7 +3870,7 @@
     {
      "format": "bash",
      "sources": 9,
-     "lines": 694,
+     "lines": 644,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2049,151 +3897,261 @@
      "format": "txt",
      "lines": 89,
      "tokens": 885,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "book-assets/fonts/OFL-NotoSans.txt",
       "start": 5,
       "end": 93
      },
-     "secondFile": {
-      "name": "book-assets/fonts/OFL-NotoSerifSC.txt",
-      "start": 7,
-      "end": 94
+     "others": [
+      {
+       "name": "book-assets/fonts/OFL-NotoSerifSC.txt",
+       "start": 7,
+       "end": 94
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "https://scripts.sil.org/OFL",
+       "",
+       "",
+       "-----------------------------------------------------------",
+       "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
+       "-----------------------------------------------------------",
+       "",
+       "PREAMBLE",
+       "The goals of the Open Font License (OFL) are to stimulate worldwide",
+       "development of collaborative font projects, to support the font creation"
+      ],
+      "total": 89
+     },
+     "excerptSecond": {
+      "lines": [
+       "http://scripts.sil.org/OFL",
+       "",
+       "-----------------------------------------------------------",
+       "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
+       "-----------------------------------------------------------",
+       "",
+       "PREAMBLE",
+       "The goals of the Open Font License (OFL) are to stimulate worldwide",
+       "development of collaborative font projects, to support the font",
+       "creation efforts of academic and linguistic communities, and to"
+      ],
+      "total": 88
      }
     },
     {
      "format": "markup",
      "lines": 54,
      "tokens": 845,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "docs/assets/feature-en.svg",
       "start": 1,
       "end": 54
      },
-     "secondFile": {
-      "name": "docs/public/assets/feature-en.svg",
-      "start": 1,
-      "end": 54
+     "others": [
+      {
+       "name": "docs/public/assets/feature-en.svg",
+       "start": 1,
+       "end": 54
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "<svg width=\"1200\" height=\"630\" viewBox=\"0 0 1200 630\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"title description\">",
+       "  <title id=\"title\">Life Level-up Guide book sharing cover</title>",
+       "  <desc id=\"description\">By Han Xiankai. Five rising stages represent input, life, tools, practice, and action.</desc>",
+       "  <rect width=\"1200\" height=\"630\" fill=\"#f5f7f3\"/>",
+       "  <rect width=\"14\" height=\"630\" fill=\"#176f5b\"/>",
+       "  <path d=\"M58 94H650M58 570H650\" stroke=\"#cfd7d1\" stroke-width=\"1\"/>",
+       "  <g fill=\"none\" stroke=\"#dfe5e0\" stroke-width=\"1\">",
+       "    <path d=\"M720 70V570\"/>",
+       "    <path d=\"M1190 70V570\"/>",
+       "    <path d=\"M720 570H1190\"/>"
+      ],
+      "total": 54
      }
     },
     {
      "format": "markup",
      "lines": 53,
      "tokens": 814,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "docs/assets/cover-portrait-en.svg",
       "start": 1,
       "end": 53
      },
-     "secondFile": {
-      "name": "docs/public/assets/cover-portrait-en.svg",
-      "start": 1,
-      "end": 53
+     "others": [
+      {
+       "name": "docs/public/assets/cover-portrait-en.svg",
+       "start": 1,
+       "end": 53
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "<svg width=\"1600\" height=\"2560\" viewBox=\"0 0 1600 2560\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"title description\">",
+       "  <title id=\"title\">Life Level-up Guide English ebook cover</title>",
+       "  <desc id=\"description\">By Han Xiankai. Five rising stages represent input, life, tools, practice, and action.</desc>",
+       "  <rect width=\"1600\" height=\"2560\" fill=\"#f5f7f3\"/>",
+       "  <rect width=\"30\" height=\"2560\" fill=\"#176f5b\"/>",
+       "  <path d=\"M110 210H1490M110 2290H1490\" stroke=\"#cfd7d1\" stroke-width=\"2\"/>",
+       "",
+       "  <g font-family=\"system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif\">",
+       "    <text x=\"120\" y=\"170\" fill=\"#176f5b\" font-size=\"38\" font-weight=\"700\">A LIFELONG LEARNING GUIDE FOR THE AI ERA</text>",
+       "    <text x=\"112\" y=\"500\" fill=\"#1d2926\" font-size=\"158\" font-weight=\"800\">LIFE LEVEL-UP</text>"
+      ],
+      "total": 53
      }
     },
     {
      "format": "markup",
      "lines": 53,
      "tokens": 784,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "docs/assets/feature.svg",
       "start": 1,
       "end": 53
      },
-     "secondFile": {
-      "name": "docs/public/assets/feature.svg",
-      "start": 1,
-      "end": 53
-     }
+     "others": [
+      {
+       "name": "docs/public/assets/feature.svg",
+       "start": 1,
+       "end": 53
+      }
+     ]
     },
     {
      "format": "markup",
      "lines": 53,
      "tokens": 773,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "docs/assets/cover-portrait.svg",
       "start": 1,
       "end": 53
      },
-     "secondFile": {
-      "name": "docs/public/assets/cover-portrait.svg",
-      "start": 1,
-      "end": 53
-     }
+     "others": [
+      {
+       "name": "docs/public/assets/cover-portrait.svg",
+       "start": 1,
+       "end": 53
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 10,
+     "tokens": 109,
+     "copies": 6,
+     "first": {
+      "name": "tests/site.spec.mjs",
+      "start": 264,
+      "end": 273
+     },
+     "others": [
+      {
+       "name": "tests/site.spec.mjs",
+       "start": 291,
+       "end": 300
+      },
+      {
+       "name": "tests/site.spec.mjs",
+       "start": 319,
+       "end": 328
+      },
+      {
+       "name": "tests/site.spec.mjs",
+       "start": 348,
+       "end": 357
+      },
+      {
+       "name": "tests/site.spec.mjs",
+       "start": 378,
+       "end": 387
+      },
+      {
+       "name": "tests/site.spec.mjs",
+       "start": 461,
+       "end": 470
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 35,
      "tokens": 316,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "README.md:markdown",
       "start": 111,
       "end": 145
      },
-     "secondFile": {
-      "name": "docs/README.md:markdown",
-      "start": 111,
-      "end": 145
-     }
+     "others": [
+      {
+       "name": "docs/README.md:markdown",
+       "start": 111,
+       "end": 145
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 27,
      "tokens": 274,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "README.md:markdown",
       "start": 22,
       "end": 48
      },
-     "secondFile": {
-      "name": "docs/README.md:markdown",
-      "start": 22,
-      "end": 48
-     }
+     "others": [
+      {
+       "name": "docs/README.md:markdown",
+       "start": 22,
+       "end": 48
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 14,
      "tokens": 237,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "README.md:markdown",
       "start": 174,
       "end": 187
      },
-     "secondFile": {
-      "name": "docs/README.md:markdown",
-      "start": 174,
-      "end": 187
-     }
+     "others": [
+      {
+       "name": "docs/README.md:markdown",
+       "start": 174,
+       "end": 187
+      }
+     ]
     },
     {
      "format": "markup",
      "lines": 15,
      "tokens": 226,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "docs/assets/feature-en.svg",
       "start": 25,
       "end": 39
      },
-     "secondFile": {
-      "name": "docs/assets/feature.svg",
-      "start": 24,
-      "end": 38
-     }
-    },
-    {
-     "format": "markup",
-     "lines": 15,
-     "tokens": 221,
-     "firstFile": {
-      "name": "docs/assets/cover-portrait-en.svg",
-      "start": 21,
-      "end": 35
-     },
-     "secondFile": {
-      "name": "docs/assets/cover-portrait.svg",
-      "start": 20,
-      "end": 34
-     }
+     "others": [
+      {
+       "name": "docs/assets/feature.svg",
+       "start": 24,
+       "end": 38
+      }
+     ]
     }
    ],
    "health": {
@@ -2375,7 +4333,183 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 23,
+    "lines": 3610,
+    "tokens": 22561,
+    "clones": 4,
+    "duplicatedLines": 33,
+    "duplicatedTokens": 266,
+    "percentage": 0.91,
+    "percentageTokens": 1.18,
+    "formats": [
+     {
+      "format": "javascript",
+      "sources": 11,
+      "lines": 1731,
+      "clones": 4,
+      "duplicatedLines": 33,
+      "percentage": 1.91
+     },
+     {
+      "format": "python",
+      "sources": 2,
+      "lines": 1061,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "javascript",
+      "lines": 8,
+      "tokens": 72,
+      "copies": 2,
+      "first": {
+       "name": "scripts/check-content.mjs",
+       "start": 280,
+       "end": 287
+      },
+      "others": [
+       {
+        "name": "scripts/check-content.mjs",
+        "start": 342,
+        "end": 350
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "function checkBilingualParity(markdownFiles) {",
+        "  const publicFiles = markdownFiles.filter(",
+        "    (file) => file.startsWith(`${DOCS}/`) && !file.endsWith(\"SUMMARY.md\"),",
+        "  );",
+        "  const chineseFiles = publicFiles.filter(",
+        "    (file) => !file.startsWith(`${join(DOCS, \"en\")}/`) && file !== join(DOCS, \"README.md\"),",
+        "  );",
+        "  const englishFiles = publicFiles.filter("
+       ],
+       "total": 8
+      },
+      "excerptSecond": {
+       "lines": [
+        "function checkUpdatedParity(markdownFiles) {",
+        "  const publicFiles = markdownFiles.filter(",
+        "    (file) => file.startsWith(`${DOCS}/`) && !file.endsWith(\"SUMMARY.md\"),",
+        "  );",
+        "  const chineseFiles = publicFiles.filter(",
+        "    (file) => !file.startsWith(`${join(DOCS, \"en\")}/`) && file !== join(DOCS, \"README.md\"),",
+        "  );",
+        "",
+        "  const pairs = [[join(DOCS, \"README.md\"), join(DOCS, \"en/README.md\")]];"
+       ],
+       "total": 9
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 7,
+      "tokens": 71,
+      "copies": 2,
+      "first": {
+       "name": "scripts/check-content.mjs",
+       "start": 280,
+       "end": 286
+      },
+      "others": [
+       {
+        "name": "scripts/check-content.mjs",
+        "start": 318,
+        "end": 324
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "function checkBilingualParity(markdownFiles) {",
+        "  const publicFiles = markdownFiles.filter(",
+        "    (file) => file.startsWith(`${DOCS}/`) && !file.endsWith(\"SUMMARY.md\"),",
+        "  );",
+        "  const chineseFiles = publicFiles.filter(",
+        "    (file) => !file.startsWith(`${join(DOCS, \"en\")}/`) && file !== join(DOCS, \"README.md\"),",
+        "  );"
+       ],
+       "total": 7
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 7,
+      "tokens": 64,
+      "copies": 2,
+      "first": {
+       "name": "scripts/check-content.mjs",
+       "start": 57,
+       "end": 63
+      },
+      "others": [
+       {
+        "name": "scripts/sanitize-assets.mjs",
+        "start": 25,
+        "end": 31
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    const path = join(dir, name);",
+        "    const stat = statSync(path);",
+        "    if (stat.isDirectory()) walk(path, extensions, output);",
+        "    else if (extensions.has(extname(name).toLowerCase())) output.push(path);",
+        "  }",
+        "  return output;",
+        "}"
+       ],
+       "total": 7
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 11,
+      "tokens": 59,
+      "copies": 2,
+      "first": {
+       "name": "scripts/check-content.mjs",
+       "start": 403,
+       "end": 413
+      },
+      "others": [
+       {
+        "name": "scripts/sync-readme.mjs",
+        "start": 12,
+        "end": 22
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T07:54:05.642Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "mvschwarz/openrig",
@@ -2386,11 +4520,11 @@
    "starsToday": 734,
    "defaultBranch": "main",
    "headSha": "50e519b399b401345b42e24c3ee3f2f298070628",
-   "durationMs": 3386,
+   "durationMs": 1399,
    "total": {
     "sources": 3045,
-    "lines": 636419,
-    "tokens": 4767743,
+    "lines": 636375,
+    "tokens": 4767578,
     "clones": 5174,
     "duplicatedLines": 66474,
     "duplicatedTokens": 493195,
@@ -2441,10 +4575,10 @@
     {
      "format": "bash",
      "sources": 67,
-     "lines": 3676,
+     "lines": 3626,
      "clones": 10,
      "duplicatedLines": 417,
-     "percentage": 11.34
+     "percentage": 11.5
     },
     {
      "format": "text",
@@ -2484,151 +4618,261 @@
      "format": "javascript",
      "lines": 1417,
      "tokens": 11825,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
       "start": 3,
       "end": 1419
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
-      "start": 3,
-      "end": 1419
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
+       "start": 3,
+       "end": 1419
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import crypto from \"node:crypto\";",
+       "import fs from \"node:fs\";",
+       "import path from \"node:path\";",
+       "import { spawnSync } from \"node:child_process\";",
+       "",
+       "const SCHEMA = \"openrig-telemetry-state-migration/v1\";",
+       "const rig = process.env.OPENRIG_RIG_BIN || \"rig\";",
+       "const HELP = `Usage: migrate-telemetry-state-0.5.9.mjs [options]",
+       "",
+       "No phase flag runs the read-only plan."
+      ],
+      "total": 1417
      }
     },
     {
      "format": "markdown",
      "lines": 463,
      "tokens": 5706,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/process/context-engineering/SKILL.md:markdown",
       "start": 17,
       "end": 479
      },
-     "secondFile": {
-      "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
-      "start": 17,
-      "end": 479
+     "others": [
+      {
+       "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
+       "start": 17,
+       "end": 479
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Traditional Context Engineering — 2024–2025 Snapshot",
+       "",
+       "## Status: provisional historical research snapshot",
+       "",
+       "This skill is a provisional historical research snapshot of context-engineering practice as",
+       "published in 2024–2025. It is NOT normative. Do not apply it prescriptively to current frontier",
+       "models without re-verification. On any conflict, OpenRig current skills, explicit user rulings,",
+       "and directly measured OpenRig practice PREVAIL over this document. Treat these areas as",
+       "particularly suspect pending re-verification: compaction/summarization guidance, minimal-upfront",
+       "versus broad orientation, just-in-time lookup assumptions, fixed context ceilings, and"
+      ],
+      "total": 463
      }
     },
     {
      "format": "markdown",
      "lines": 543,
      "tokens": 5694,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-software-factory/references/worked-example.md:markdown",
       "start": 1,
       "end": 543
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
-      "start": 1,
-      "end": 543
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
+       "start": 1,
+       "end": 543
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Worked example: reviewed CSV validation",
+       "",
+       "Use this example to adapt reviewed work to a repository with CSV handling. Choose the simple team or queue loop first; the full Workflow files are optional. Ch…",
+       "",
+       "This is a concrete CSV-validation example for adaptation, not a requirement that an arbitrary repository become a CSV project or every outcome be split into tw…",
+       "",
+       "For the example only, repository root and work root are the same absolute directory, called `PROJECT_ROOT`. The selected project ID is `csv-tool`, mission is `…",
+       "",
+       "## Manual work and the queue loop",
+       ""
+      ],
+      "total": 543
      }
+    },
+    {
+     "format": "markdown",
+     "lines": 116,
+     "tokens": 1958,
+     "copies": 3,
+     "first": {
+      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
+      "start": 10,
+      "end": 125
+     },
+     "others": [
+      {
+       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
+       "start": 10,
+       "end": 125
+      },
+      {
+       "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
+       "start": 10,
+       "end": 125
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 345,
      "tokens": 3762,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-architect/SKILL.md:markdown",
       "start": 27,
       "end": 371
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
-      "start": 27,
-      "end": 371
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
+       "start": 27,
+       "end": 371
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 264,
      "tokens": 3472,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/pods/orchestration-team/SKILL.md:markdown",
       "start": 6,
       "end": 269
      },
-     "secondFile": {
-      "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
-      "start": 6,
-      "end": 269
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
+       "start": 6,
+       "end": 269
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 533,
      "tokens": 3133,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/cli/src/lib/scope/scope-audit.ts",
       "start": 1,
       "end": 533
      },
-     "secondFile": {
-      "name": "packages/daemon/src/domain/scope/scope-audit.ts",
-      "start": 1,
-      "end": 533
-     }
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+       "start": 1,
+       "end": 533
+      }
+     ]
     },
     {
      "format": "markdown",
-     "lines": 116,
-     "tokens": 1958,
-     "firstFile": {
-      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 125
+     "lines": 101,
+     "tokens": 981,
+     "copies": 3,
+     "first": {
+      "name": "packages/daemon/assets/plugins/openrig-core/skills/messaging-the-human/SKILL.md:markdown",
+      "start": 20,
+      "end": 120
      },
-     "secondFile": {
-      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 125
-     }
+     "others": [
+      {
+       "name": "packages/daemon/specs/agents/shared/skills/core/messaging-the-human/SKILL.md:markdown",
+       "start": 20,
+       "end": 120
+      },
+      {
+       "name": "skills/_canonical/core/messaging-the-human/SKILL.md:markdown",
+       "start": 20,
+       "end": 120
+      }
+     ]
     },
     {
-     "format": "markdown",
-     "lines": 116,
-     "tokens": 1958,
-     "firstFile": {
-      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 125
+     "format": "typescript",
+     "lines": 30,
+     "tokens": 310,
+     "copies": 7,
+     "first": {
+      "name": "packages/cli/test/archive.test.ts",
+      "start": 11,
+      "end": 40
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 125
-     }
+     "others": [
+      {
+       "name": "packages/cli/test/attach.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/bootstrap.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/discover.test.ts",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "packages/cli/test/down.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/package.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/requirements.test.ts",
+       "start": 4,
+       "end": 33
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 214,
      "tokens": 1840,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/process/dogfood/SKILL.md:markdown",
       "start": 12,
       "end": 225
      },
-     "secondFile": {
-      "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
-      "start": 12,
-      "end": 225
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 291,
-     "tokens": 1800,
-     "firstFile": {
-      "name": "packages/daemon/specs/agents/shared/skills/process/systematic-debugging/SKILL.md:markdown",
-      "start": 11,
-      "end": 301
-     },
-     "secondFile": {
-      "name": "skills/_canonical/process/systematic-debugging/SKILL.md:markdown",
-      "start": 11,
-      "end": 301
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
+       "start": 12,
+       "end": 225
+      }
+     ]
     }
    ],
    "health": {
@@ -2845,7 +5089,378 @@
       "lines": 557
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1096,
+    "lines": 257487,
+    "tokens": 1585994,
+    "clones": 758,
+    "duplicatedLines": 11520,
+    "duplicatedTokens": 69941,
+    "percentage": 4.47,
+    "percentageTokens": 4.41,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 843,
+      "lines": 208730,
+      "clones": 704,
+      "duplicatedLines": 10874,
+      "percentage": 5.21
+     },
+     {
+      "format": "tsx",
+      "sources": 178,
+      "lines": 36632,
+      "clones": 39,
+      "duplicatedLines": 445,
+      "percentage": 1.21
+     },
+     {
+      "format": "javascript",
+      "sources": 52,
+      "lines": 9150,
+      "clones": 14,
+      "duplicatedLines": 195,
+      "percentage": 2.13
+     },
+     {
+      "format": "python",
+      "sources": 2,
+      "lines": 836,
+      "clones": 1,
+      "duplicatedLines": 6,
+      "percentage": 0.72
+     },
+     {
+      "format": "bash",
+      "sources": 20,
+      "lines": 1965,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 533,
+      "tokens": 3133,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/scope/scope-audit.ts",
+       "start": 1,
+       "end": 533
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+        "start": 1,
+        "end": 533
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "import * as YAML from \"yaml\";",
+        "import { isMissionDotId, isSliceDotId } from \"./dot-id.js\";",
+        "import { isScaffoldPlaceholderText, hasAuthoredNumberedItem, isPristineScaffoldSection } from \"./scaffold-placeholder.js\";",
+        "",
+        "export type RailStatus = \"present\" | \"missing\" | \"malformed\" | \"readme-only\";",
+        "export type FindingSeverity = \"high\" | \"medium\" | \"low\" | \"info\";",
+        "export type FindingKind =",
+        "  | \"missing_progress\"",
+        "  | \"registration_ghost\"",
+        "  | \"missing_id\""
+       ],
+       "total": 533
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 230,
+      "tokens": 1280,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/host-registry.ts",
+       "start": 62,
+       "end": 291
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/hosts/hosts-registry-reader.ts",
+        "start": 21,
+        "end": 229
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export interface SshHostEntry {",
+        "  id: string;",
+        "  /**",
+        "   * The observed, immutable self-id of the host this entry points at — the JOIN KEY.",
+        "   *",
+        "   * `id` is MY label for that machine; `hostId` is what that machine calls itself and stamps into",
+        "   * every envelope it sends. Optional because every entry that exists today predates the field:",
+        "   * absent means \"never learned\", which resolves exactly as it does now. Nothing populates this",
+        "   * automatically in this slice.",
+        "   */"
+       ],
+       "total": 230
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 111,
+      "tokens": 813,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/permission-policy/policy-spec.ts",
+       "start": 9,
+       "end": 119
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/permission-policy/policy-spec.ts",
+        "start": 9,
+        "end": 119
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "import { parse as parseYaml, stringify as stringifyYaml } from \"yaml\";",
+        "",
+        "export type PolicySurface = \"flag\" | \"config\";",
+        "export type PolicySource = \"builtin\" | \"custom\";",
+        "export type LaunchPosture = \"floor\" | \"full_bypass\";",
+        "export type DefaultPosture = \"allow\" | \"ask\" | \"deny\";",
+        "",
+        "/** A parsed policy spec: the raw frontmatter object + the preserved Markdown body. */",
+        "export interface ParsedPolicySpec {",
+        "  frontmatter: Record<string, unknown>;"
+       ],
+       "total": 111
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 156,
+      "tokens": 813,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/scope/dot-id.ts",
+       "start": 18,
+       "end": 173
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/scope/dot-id.ts",
+        "start": 18,
+        "end": 173
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 215,
+      "tokens": 793,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/permission-policy/policy-ref.ts",
+       "start": 17,
+       "end": 231
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/permission-policy/policy-ref.ts",
+        "start": 17,
+        "end": 231
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 11,
+      "tokens": 84,
+      "copies": 10,
+      "first": {
+       "name": "packages/cli/src/commands/attach.ts",
+       "start": 43,
+       "end": 53
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/commands/bind.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/launch.ts",
+        "start": 49,
+        "end": 59
+       },
+       {
+        "name": "packages/cli/src/commands/package.ts",
+        "start": 8,
+        "end": 19
+       },
+       {
+        "name": "packages/cli/src/commands/release.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/remove.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/requirements.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/shrink.ts",
+        "start": 28,
+        "end": 38
+       },
+       {
+        "name": "packages/cli/src/commands/snapshot.ts",
+        "start": 8,
+        "end": 19
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 62,
+      "tokens": 353,
+      "copies": 3,
+      "first": {
+       "name": "packages/cli/src/session-name.ts",
+       "start": 33,
+       "end": 94
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/session-name.ts",
+        "start": 132,
+        "end": 193
+       },
+       {
+        "name": "packages/ui/src/lib/session-name.ts",
+        "start": 33,
+        "end": 94
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 75,
+      "tokens": 507,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/commands/queue.ts",
+       "start": 744,
+       "end": 818
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/commands/queue.ts",
+        "start": 839,
+        "end": 911
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 77,
+      "tokens": 505,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/config-store.ts",
+       "start": 766,
+       "end": 842
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/user-settings/settings-store.ts",
+        "start": 678,
+        "end": 755
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 10,
+      "first": {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 74,
+       "end": 83
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 99,
+        "end": 108
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 114,
+        "end": 123
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 129,
+        "end": 138
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 163,
+        "end": 172
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 221,
+        "end": 230
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 261,
+        "end": 270
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 295,
+        "end": 304
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 329,
+        "end": 338
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 0,
+     "sample": [
+      "packages/daemon/src/domain/scope/attestation-lineage.generated.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:54:10.545Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "dream-num/univer",
@@ -2856,11 +5471,11 @@
    "starsToday": 1099,
    "defaultBranch": "dev",
    "headSha": "14bb44a587d938501e7f3235b8f128e3e876ac74",
-   "durationMs": 4757,
+   "durationMs": 2878,
    "total": {
     "sources": 6217,
-    "lines": 1262002,
-    "tokens": 6761095,
+    "lines": 1261958,
+    "tokens": 6760930,
     "clones": 10819,
     "duplicatedLines": 167602,
     "duplicatedTokens": 945815,
@@ -2911,10 +5526,10 @@
     {
      "format": "bash",
      "sources": 17,
-     "lines": 748,
+     "lines": 698,
      "clones": 5,
      "duplicatedLines": 30,
-     "percentage": 4.01
+     "percentage": 4.3
     },
     {
      "format": "yaml",
@@ -2935,7 +5550,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2951,154 +5566,469 @@
    ],
    "topClones": [
     {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 56,
+     "copies": 191,
+     "first": {
+      "name": "packages/engine-formula/src/functions/array/array-constrain/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/betadist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/hypgeomdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/lognormdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/negbinomdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/normsdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/tdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/daverage/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dcount/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_ARRAY } from '../../function-names';"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_COMPATIBILITY } from '../../function-names';"
+      ],
+      "total": 7
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 56,
+     "copies": 71,
+     "first": {
+      "name": "packages/engine-formula/src/functions/statistical/avedev/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/statistical/average/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averagea/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/beta-dist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/beta-inv/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-dist-range/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-dist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-inv/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/chisq-dist-rt/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_STATISTICAL } from '../../function-names';",
+       "import { Avedev } from '../index';"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_STATISTICAL } from '../../function-names';",
+       "import { Average } from '../index';"
+      ],
+      "total": 8
+     }
+    },
+    {
+     "format": "json",
+     "lines": 17,
+     "tokens": 50,
+     "copies": 78,
+     "first": {
+      "name": "packages/action-recorder/package.json",
+      "start": 5,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "packages/core/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/data-validation/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/design/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-drawing-ui/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-drawing/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-find-replace/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-hyper-link-ui/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-hyper-link/package.json",
+       "start": 5,
+       "end": 21
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"description\": \"Record and replay user actions in Univer.\",",
+       "\"author\": \"DreamNum Co., Ltd. <developer@univer.ai>\",",
+       "\"license\": \"Apache-2.0\",",
+       "\"funding\": {",
+       "    \"type\": \"opencollective\",",
+       "    \"url\": \"https://opencollective.com/univer\"",
+       "},",
+       "\"homepage\": \"https://univer.ai\",",
+       "\"repository\": {",
+       "    \"type\": \"git\","
+      ],
+      "total": 17
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 56,
+     "copies": 48,
+     "first": {
+      "name": "packages/engine-formula/src/functions/math/acos/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/math/acosh/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/acot/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/acoth/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/arabic/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/asin/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/asinh/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/atan/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/atan2/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 51,
+     "tokens": 238,
+     "copies": 12,
+     "first": {
+      "name": "packages/engine-formula/src/functions/compatibility/rank/__tests__/index.spec.ts",
+      "start": 113,
+      "end": 163
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/lookup/offset/__tests__/index.spec.ts",
+       "start": 137,
+       "end": 187
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/randarray/__tests__/index.spec.ts",
+       "start": 133,
+       "end": 183
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sequence/__tests__/index.spec.ts",
+       "start": 131,
+       "end": 181
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sumif/__tests__/index.spec.ts",
+       "start": 142,
+       "end": 192
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sumifs/__tests__/index.spec.ts",
+       "start": 209,
+       "end": 259
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averageif/__tests__/index.spec.ts",
+       "start": 142,
+       "end": 192
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averageifs/__tests__/index.spec.ts",
+       "start": 125,
+       "end": 175
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/countif/__tests__/index.spec.ts",
+       "start": 179,
+       "end": 229
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 125,
+     "tokens": 853,
+     "copies": 4,
+     "first": {
+      "name": "packages/engine-formula/src/functions/database/daverage/__tests__/index.spec.ts",
+      "start": 62,
+      "end": 186
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/database/dmin/__tests__/index.spec.ts",
+       "start": 62,
+       "end": 186
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dproduct/__tests__/index.spec.ts",
+       "start": 62,
+       "end": 186
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dsum/__tests__/index.spec.ts",
+       "start": 98,
+       "end": 222
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 20,
+     "tokens": 637,
+     "copies": 5,
+     "first": {
+      "name": "docs/readme/es-ES.md:markdown",
+      "start": 18,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "docs/readme/ja-JP.md:markdown",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "docs/readme/ko-KR.md:markdown",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "docs/readme/zh-CN.md:markdown",
+       "start": 18,
+       "end": 37
+      },
+      {
+       "name": "docs/readme/zh-TW.md:markdown",
+       "start": 18,
+       "end": 37
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 59,
+     "tokens": 486,
+     "copies": 6,
+     "first": {
+      "name": "packages/engine-formula/src/functions/financial/coupdaybs/__tests__/index.spec.ts",
+      "start": 96,
+      "end": 154
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupdays/__tests__/index.spec.ts",
+       "start": 96,
+       "end": 154
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupdaysnc/__tests__/index.spec.ts",
+       "start": 103,
+       "end": 161
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupncd/__tests__/index.spec.ts",
+       "start": 96,
+       "end": 154
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupnum/__tests__/index.spec.ts",
+       "start": 112,
+       "end": 170
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/couppcd/__tests__/index.spec.ts",
+       "start": 134,
+       "end": 192
+      }
+     ]
+    },
+    {
      "format": "tsx",
      "lines": 371,
      "tokens": 2372,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/sheets-hyper-link-ui/src/views/CellLinkEdit.tsx",
       "start": 65,
       "end": 435
      },
-     "secondFile": {
-      "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
-      "start": 65,
-      "end": 435
-     }
+     "others": [
+      {
+       "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
+       "start": 65,
+       "end": 435
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 102,
      "tokens": 2326,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/engine-formula/src/functions/math/mdeterm/__tests__/index.spec.ts",
       "start": 65,
       "end": 166
      },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
-      "start": 111,
-      "end": 212
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 131,
-     "tokens": 2133,
-     "firstFile": {
-      "name": "packages/core/src/shared/numfmt/__tests__/date-bounds.spec.ts",
-      "start": 128,
-      "end": 258
-     },
-     "secondFile": {
-      "name": "packages/core/src/shared/numfmt/__tests__/leap-1900.spec.ts",
-      "start": 24,
-      "end": 154
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 32,
-     "tokens": 1864,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/math/mdeterm/__tests__/index.spec.ts",
-      "start": 126,
-      "end": 157
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
-      "start": 212,
-      "end": 243
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 251,
-     "tokens": 1331,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/correl/__tests__/index.spec.ts",
-      "start": 29,
-      "end": 279
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/pearson/__tests__/index.spec.ts",
-      "start": 29,
-      "end": 279
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 253,
-     "tokens": 1323,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/intercept/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 310
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/slope/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 310
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 251,
-     "tokens": 1317,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/intercept/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 308
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/steyx/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 308
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 245,
-     "tokens": 1281,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/growth/__tests__/index.spec.ts",
-      "start": 95,
-      "end": 339
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/trend/__tests__/index.spec.ts",
-      "start": 95,
-      "end": 339
-     }
-    },
-    {
-     "format": "tsx",
-     "lines": 234,
-     "tokens": 1262,
-     "firstFile": {
-      "name": "packages/thread-comment-ui/src/views/__tests__/ThreadCommentPanel.spec.tsx",
-      "start": 93,
-      "end": 326
-     },
-     "secondFile": {
-      "name": "packages/thread-comment-ui/src/views/__tests__/ThreadCommentTree.spec.tsx",
-      "start": 115,
-      "end": 348
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 202,
-     "tokens": 1236,
-     "firstFile": {
-      "name": "packages/docs-drawing-ui/src/controllers/mobile/drawing-popup-menu.controller.ts",
-      "start": 99,
-      "end": 300
-     },
-     "secondFile": {
-      "name": "packages/docs-drawing-ui/src/menu/drawing-popup-menu.controller.ts",
-      "start": 100,
-      "end": 300
-     }
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
+       "start": 111,
+       "end": 212
+      }
+     ]
     }
    ],
    "health": {
@@ -3310,7 +6240,515 @@
       "lines": 130
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 3117,
+    "lines": 550083,
+    "tokens": 2572998,
+    "clones": 2682,
+    "duplicatedLines": 45034,
+    "duplicatedTokens": 245184,
+    "percentage": 8.19,
+    "percentageTokens": 9.53,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 2692,
+      "lines": 476634,
+      "clones": 2481,
+      "duplicatedLines": 41334,
+      "percentage": 8.67
+     },
+     {
+      "format": "tsx",
+      "sources": 413,
+      "lines": 72515,
+      "clones": 201,
+      "duplicatedLines": 3700,
+      "percentage": 5.1
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 2,
+      "lines": 116,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 371,
+      "tokens": 2372,
+      "copies": 2,
+      "first": {
+       "name": "packages/sheets-hyper-link-ui/src/views/CellLinkEdit.tsx",
+       "start": 65,
+       "end": 435
+      },
+      "others": [
+       {
+        "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
+        "start": 65,
+        "end": 435
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export const CellLinkEdit = () => {",
+        "    const [id, setId] = useState('');",
+        "    const [display, setDisplay] = useState('');",
+        "    const [tooltip, setTooltip] = useState('');",
+        "    const [showLabel, setShowLabel] = useState(true);",
+        "    const [type, setType] = useState<SheetHyperLinkType | string>(SheetHyperLinkType.URL);",
+        "    const [payload, setPayload] = useState('');",
+        "",
+        "    const localeService = useDependency(LocaleService);",
+        "    const definedNameService = useDependency(IDefinedNamesService);"
+       ],
+       "total": 371
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 23,
+      "tokens": 104,
+      "copies": 13,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imabs/index.ts",
+       "start": 25,
+       "end": 47
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imaginary/index.ts",
+        "start": 25,
+        "end": 47
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imconjugate/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcos/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcosh/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imexp/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imreal/index.ts",
+        "start": 25,
+        "end": 47
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imsec/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imsech/index.ts",
+        "start": 26,
+        "end": 48
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export class Imabs extends BaseFunction {",
+        "    override minParams = 1;",
+        "",
+        "    override maxParams = 1;",
+        "",
+        "    override calculate(inumber: BaseValueObject): BaseValueObject {",
+        "        const { isError, errorObject, variants } = checkVariantsErrorIsArrayOrBoolean(inumber);",
+        "",
+        "        if (isError) {",
+        "            return errorObject as ErrorValueObject;"
+       ],
+       "total": 23
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 202,
+      "tokens": 1236,
+      "copies": 2,
+      "first": {
+       "name": "packages/docs-drawing-ui/src/controllers/mobile/drawing-popup-menu.controller.ts",
+       "start": 99,
+       "end": 300
+      },
+      "others": [
+       {
+        "name": "packages/docs-drawing-ui/src/menu/drawing-popup-menu.controller.ts",
+        "start": 100,
+        "end": 300
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "        if (command.id === SidebarDocDrawingMobileOperation.id) {",
+        "            const params = command.params as { value?: string } | undefined;",
+        "            this._isDrawingPanelOpen = params?.value === 'open';",
+        "            if (this._isDrawingPanelOpen) {",
+        "                this._clearPopups(undefined, true);",
+        "            }",
+        "        }",
+        "    })",
+        ");",
+        "this.disposeWithMe("
+       ],
+       "total": 202
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 61,
+      "copies": 21,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imconjugate/index.ts",
+       "start": 17,
+       "end": 26
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcos/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcosh/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcot/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcoth/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsc/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsch/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imdiv/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imexp/index.ts",
+        "start": 17,
+        "end": 26
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 45,
+      "tokens": 259,
+      "copies": 5,
+      "first": {
+       "name": "packages/engine-formula/src/functions/financial/coupdaybs/index.ts",
+       "start": 27,
+       "end": 71
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupdays/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupdaysnc/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupncd/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupnum/index.ts",
+        "start": 27,
+        "end": 71
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 21,
+      "tokens": 99,
+      "copies": 10,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imabs/index.ts",
+       "start": 25,
+       "end": 45
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imargument/index.ts",
+        "start": 25,
+        "end": 45
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcot/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcoth/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsc/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsch/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imln/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imlog10/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imlog2/index.ts",
+        "start": 26,
+        "end": 46
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 160,
+      "tokens": 850,
+      "copies": 2,
+      "first": {
+       "name": "packages/sheets-formula-ui/src/views/formula-editor/search-function/SearchFunction.tsx",
+       "start": 40,
+       "end": 199
+      },
+      "others": [
+       {
+        "name": "packages/sheets-formula-ui/src/views/mobile/formula-editor/search-function/MobileSearchFunction.tsx",
+        "start": 40,
+        "end": 199
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 11,
+      "tokens": 53,
+      "copies": 17,
+      "first": {
+       "name": "presets/packages/preset-docs-core/tailwind.config.ts",
+       "start": 17,
+       "end": 27
+      },
+      "others": [
+       {
+        "name": "presets/packages/preset-docs-drawing/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-hyper-link/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-node-core/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-thread-comment/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-conditional-formatting/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-core/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-data-validation/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-drawing/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 17,
+      "tokens": 60,
+      "copies": 15,
+      "first": {
+       "name": "packages/engine-formula/src/functions/math/abs/index.ts",
+       "start": 20,
+       "end": 36
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/math/acos/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/acosh/index.ts",
+        "start": 20,
+        "end": 35
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/asin/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/asinh/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/atan/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/atanh/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/cos/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/exp/index.ts",
+        "start": 20,
+        "end": 36
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 25,
+      "tokens": 119,
+      "copies": 8,
+      "first": {
+       "name": "packages/engine-formula/src/functions/database/daverage/index.ts",
+       "start": 24,
+       "end": 48
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/database/dcount/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dcounta/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dget/index.ts",
+        "start": 24,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dmax/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dmin/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dproduct/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dsum/index.ts",
+        "start": 22,
+        "end": 46
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 1,
+     "sample": [
+      "common/debugger/src/components/Image.tsx"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:54:38.292Z",
+   "jscpdVersion": "5.4.0"
   }
  ]
 }

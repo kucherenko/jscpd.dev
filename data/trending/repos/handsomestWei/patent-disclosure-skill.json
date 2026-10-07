@@ -9,10 +9,12 @@
    "starsToday": 571,
    "headSha": "fd8cd0b89d5c6ac97da253e841f0c3904ec00e7d",
    "sources": 257,
-   "lines": 43284,
+   "lines": 40732,
    "clones": 109,
-   "duplicatedLines": 1192,
-   "percentage": 2.75,
+   "duplicatedLines": 1259,
+   "percentage": 3.09,
+   "codePercentage": 3.93,
+   "codeSources": 81,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 501,
    "headSha": "fd8cd0b89d5c6ac97da253e841f0c3904ec00e7d",
    "sources": 257,
-   "lines": 43284,
+   "lines": 40732,
    "clones": 109,
-   "duplicatedLines": 1192,
-   "percentage": 2.75,
+   "duplicatedLines": 1259,
+   "percentage": 3.09,
+   "codePercentage": 3.93,
+   "codeSources": 81,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,62 +46,46 @@
   "starsToday": 501,
   "defaultBranch": "main",
   "headSha": "fd8cd0b89d5c6ac97da253e841f0c3904ec00e7d",
-  "durationMs": 776,
+  "durationMs": 113,
   "total": {
    "sources": 257,
-   "lines": 43284,
-   "tokens": 297759,
+   "lines": 40732,
+   "tokens": 278070,
    "clones": 109,
-   "duplicatedLines": 1192,
-   "duplicatedTokens": 13917,
-   "percentage": 2.75,
-   "percentageTokens": 4.67
+   "duplicatedLines": 1259,
+   "duplicatedTokens": 7569,
+   "percentage": 3.09,
+   "percentageTokens": 2.72
   },
   "formats": [
    {
     "format": "python",
     "sources": 104,
     "lines": 31480,
-    "clones": 92,
-    "duplicatedLines": 1018,
-    "percentage": 3.23
+    "clones": 107,
+    "duplicatedLines": 1231,
+    "percentage": 3.91
    },
    {
     "format": "markdown",
     "sources": 73,
-    "lines": 5969,
-    "clones": 17,
-    "duplicatedLines": 174,
-    "percentage": 2.92
-   },
-   {
-    "format": "bash",
-    "sources": 23,
-    "lines": 2214,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
+    "lines": 5968,
+    "clones": 2,
+    "duplicatedLines": 28,
+    "percentage": 0.47
    },
    {
     "format": "yaml",
     "sources": 30,
-    "lines": 2030,
+    "lines": 1692,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "text",
-    "sources": 13,
-    "lines": 644,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "json",
-    "sources": 2,
-    "lines": 385,
+    "format": "bash",
+    "sources": 23,
+    "lines": 926,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -105,15 +93,15 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "mermaid",
-    "sources": 1,
-    "lines": 146,
+    "format": "text",
+    "sources": 13,
+    "lines": 129,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -127,9 +115,25 @@
     "percentage": 0
    },
    {
+    "format": "json",
+    "sources": 2,
+    "lines": 86,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
     "format": "css",
     "sources": 1,
     "lines": 69,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "txt",
+    "sources": 3,
+    "lines": 45,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -137,155 +141,734 @@
   ],
   "topClones": [
    {
-    "format": "markdown",
-    "lines": 19,
-    "tokens": 3229,
-    "firstFile": {
-     "name": "SKILL.md:markdown",
-     "start": 244,
-     "end": 262
+    "format": "python",
+    "lines": 6,
+    "tokens": 56,
+    "first": {
+     "name": "tools/patent_reader/analyze/build_claim_mermaid.py",
+     "start": 29,
+     "end": 34
     },
-    "secondFile": {
-     "name": "SKILL.md:markdown",
-     "start": 244,
-     "end": 262
-    }
+    "others": [
+     {
+      "name": "tools/patent_reader/analyze/build_context_anchor.py",
+      "start": 170,
+      "end": 175
+     },
+     {
+      "name": "tools/patent_reader/analyze/lint_patent_note.py",
+      "start": 63,
+      "end": 68
+     },
+     {
+      "name": "tools/patent_reader/analyze/validate_claim_tree.py",
+      "start": 33,
+      "end": 38
+     },
+     {
+      "name": "tools/patent_reader/extract/extract_patent_figures.py",
+      "start": 35,
+      "end": 40
+     },
+     {
+      "name": "tools/patent_reader/extract/extract_patent_text.py",
+      "start": 274,
+      "end": 279
+     },
+     {
+      "name": "tools/patent_reader/extract/fetch_patent_pdf.py",
+      "start": 276,
+      "end": 281
+     },
+     {
+      "name": "tools/patent_reader/vault/check_obsidian_env.py",
+      "start": 95,
+      "end": 100
+     },
+     {
+      "name": "tools/patent_reader/vault/link_patent_notes.py",
+      "start": 41,
+      "end": 46
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "def main(argv: list[str] | None = None) -> int:",
+      "    if hasattr(sys.stdout, \"reconfigure\"):",
+      "        sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")",
+      "",
+      "    ap = argparse.ArgumentParser(description=__doc__)",
+      "    ap.add_argument(\"--claim-tree\", required=True, type=Path)"
+     ],
+     "total": 6
+    },
+    "excerptSecond": {
+     "lines": [
+      "def main(argv: list[str] | None = None) -> int:",
+      "    if hasattr(sys.stdout, \"reconfigure\"):",
+      "        sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")",
+      "",
+      "    ap = argparse.ArgumentParser(description=__doc__)",
+      "    ap.add_argument(\"-w\", \"--workdir\", required=True, type=Path, help=\"extract 产出目录\")"
+     ],
+     "total": 6
+    },
+    "kind": "code"
    },
    {
-    "format": "markdown",
-    "lines": 7,
-    "tokens": 971,
-    "firstFile": {
-     "name": "SKILL.md:markdown",
-     "start": 244,
-     "end": 250
-    },
-    "secondFile": {
-     "name": "tools/README.md:markdown",
-     "start": 145,
-     "end": 162
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 15,
-    "tokens": 483,
-    "firstFile": {
-     "name": "tools/README.md:markdown",
-     "start": 177,
-     "end": 191
-    },
-    "secondFile": {
-     "name": "tools/README.md:markdown",
-     "start": 370,
-     "end": 387
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 13,
-    "tokens": 340,
-    "firstFile": {
-     "name": "tools/README.md:markdown",
-     "start": 177,
-     "end": 189
-    },
-    "secondFile": {
-     "name": "tools/README.md:markdown",
-     "start": 279,
-     "end": 288
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 9,
-    "tokens": 306,
-    "firstFile": {
-     "name": "tools/README.md:markdown",
-     "start": 141,
-     "end": 149
-    },
-    "secondFile": {
-     "name": "tools/README.md:markdown",
-     "start": 226,
-     "end": 234
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 7,
-    "tokens": 298,
-    "firstFile": {
-     "name": "tools/README.md:markdown",
-     "start": 143,
-     "end": 149
-    },
-    "secondFile": {
-     "name": "tools/README.md:markdown",
-     "start": 203,
-     "end": 214
-    }
-   },
-   {
-    "format": "markdown",
+    "format": "python",
     "lines": 14,
-    "tokens": 280,
-    "firstFile": {
-     "name": "prompts/evolution/apply_after_confirm.md:markdown",
-     "start": 10,
-     "end": 23
+    "tokens": 61,
+    "first": {
+     "name": "tools/patent_reader/analyze/build_claim_mermaid.py",
+     "start": 7,
+     "end": 20
     },
-    "secondFile": {
-     "name": "prompts/reader/patent_plain_reader.md:markdown",
-     "start": 322,
-     "end": 329
-    }
+    "others": [
+     {
+      "name": "tools/patent_reader/analyze/build_context_anchor.py",
+      "start": 11,
+      "end": 24
+     },
+     {
+      "name": "tools/patent_reader/analyze/lint_patent_note.py",
+      "start": 9,
+      "end": 22
+     },
+     {
+      "name": "tools/patent_reader/extract/extract_patent_text.py",
+      "start": 17,
+      "end": 30
+     },
+     {
+      "name": "tools/patent_reader/vault/build_patent_canvas.py",
+      "start": 13,
+      "end": 26
+     },
+     {
+      "name": "tools/patent_reader/vault/check_obsidian_env.py",
+      "start": 14,
+      "end": 27
+     },
+     {
+      "name": "tools/patent_reader/vault/materialize_public_clues.py",
+      "start": 15,
+      "end": 28
+     }
+    ],
+    "copies": 7,
+    "excerpt": {
+     "lines": [
+      "\"\"\"",
+      "from __future__ import annotations",
+      "",
+      "# Ensure tools/patent_reader is importable when run as a script.",
+      "from pathlib import Path as _Path",
+      "import sys as _sys",
+      "",
+      "_PR_ROOT = _Path(__file__).resolve().parents[1]",
+      "if str(_PR_ROOT) not in _sys.path:",
+      "    _sys.path.insert(0, str(_PR_ROOT))"
+     ],
+     "total": 14
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 18,
+    "tokens": 69,
+    "first": {
+     "name": "tools/patent_reader/analyze/build_claim_mermaid.py",
+     "start": 7,
+     "end": 24
+    },
+    "others": [
+     {
+      "name": "tools/patent_reader/analyze/validate_claim_tree.py",
+      "start": 11,
+      "end": 28
+     },
+     {
+      "name": "tools/patent_reader/extract/extract_patent_figures.py",
+      "start": 13,
+      "end": 30
+     },
+     {
+      "name": "tools/patent_reader/vault/link_patent_notes.py",
+      "start": 17,
+      "end": 34
+     },
+     {
+      "name": "tools/patent_reader/vault/setup_obsidian_vault.py",
+      "start": 8,
+      "end": 25
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "\"\"\"",
+      "from __future__ import annotations",
+      "",
+      "# Ensure tools/patent_reader is importable when run as a script.",
+      "from pathlib import Path as _Path",
+      "import sys as _sys",
+      "",
+      "_PR_ROOT = _Path(__file__).resolve().parents[1]",
+      "if str(_PR_ROOT) not in _sys.path:",
+      "    _sys.path.insert(0, str(_PR_ROOT))"
+     ],
+     "total": 18
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 39,
     "tokens": 240,
-    "firstFile": {
+    "first": {
      "name": "tools/shared/structure_callout_overlay.py",
      "start": 54,
      "end": 92
     },
-    "secondFile": {
-     "name": "tools/shared/structure_lineart_compose.py",
-     "start": 50,
-     "end": 77
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 14,
-    "tokens": 228,
-    "firstFile": {
-     "name": "prompts/evolution/apply_after_confirm.md:markdown",
-     "start": 10,
-     "end": 23
-    },
-    "secondFile": {
-     "name": "prompts/reader/patent_plain_reader.md:markdown",
-     "start": 376,
-     "end": 385
-    }
+    "others": [
+     {
+      "name": "tools/shared/structure_lineart_compose.py",
+      "start": 50,
+      "end": 77
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 26,
     "tokens": 226,
-    "firstFile": {
+    "first": {
      "name": "tools/shared/design_lineart_gate.py",
      "start": 212,
      "end": 237
     },
-    "secondFile": {
-     "name": "tools/shared/structure_lineart_gate.py",
-     "start": 317,
-     "end": 342
-    }
+    "others": [
+     {
+      "name": "tools/shared/structure_lineart_gate.py",
+      "start": 317,
+      "end": 342
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 45,
+    "tokens": 223,
+    "first": {
+     "name": "tools/shared/design_lineart_gate.py",
+     "start": 27,
+     "end": 71
+    },
+    "others": [
+     {
+      "name": "tools/shared/structure_lineart_gate.py",
+      "start": 27,
+      "end": 71
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 15,
+    "tokens": 64,
+    "first": {
+     "name": "tools/patent_reader/analyze/build_context_anchor.py",
+     "start": 15,
+     "end": 29
+    },
+    "others": [
+     {
+      "name": "tools/patent_reader/extract/extract_patent_text.py",
+      "start": 21,
+      "end": 35
+     },
+     {
+      "name": "tools/patent_reader/vault/build_patent_canvas.py",
+      "start": 17,
+      "end": 31
+     },
+     {
+      "name": "tools/patent_reader/vault/materialize_public_clues.py",
+      "start": 19,
+      "end": 33
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 6,
+    "tokens": 57,
+    "first": {
+     "name": "tools/patent_reader/vault/build_patent_canvas.py",
+     "start": 52,
+     "end": 57
+    },
+    "others": [
+     {
+      "name": "tools/patent_reader/vault/link_patent_notes.py",
+      "start": 41,
+      "end": 46
+     },
+     {
+      "name": "tools/patent_reader/vault/materialize_public_clues.py",
+      "start": 96,
+      "end": 101
+     },
+     {
+      "name": "tools/patent_reader/vault/setup_obsidian_vault.py",
+      "start": 32,
+      "end": 37
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 19,
+    "tokens": 152,
+    "first": {
+     "name": "tests/shared/test_design_lineart_gate.py",
+     "start": 25,
+     "end": 43
+    },
+    "others": [
+     {
+      "name": "tests/shared/test_structure_lineart_gate.py",
+      "start": 25,
+      "end": 43
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 69,
+    "first": {
+     "name": "tools/patent_reader/analyze/validate_claim_tree.py",
+     "start": 33,
+     "end": 41
+    },
+    "others": [
+     {
+      "name": "tools/patent_reader/extract/extract_patent_figures.py",
+      "start": 35,
+      "end": 41
+     },
+     {
+      "name": "tools/patent_reader/extract/extract_patent_text.py",
+      "start": 274,
+      "end": 280
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 81,
+   "lines": 26924,
+   "tokens": 163720,
+   "clones": 91,
+   "duplicatedLines": 1057,
+   "duplicatedTokens": 6354,
+   "percentage": 3.93,
+   "percentageTokens": 3.88,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 71,
+     "lines": 26106,
+     "clones": 91,
+     "duplicatedLines": 1057,
+     "percentage": 4.05
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 56,
+     "first": {
+      "name": "tools/patent_reader/analyze/build_claim_mermaid.py",
+      "start": 29,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "tools/patent_reader/analyze/build_context_anchor.py",
+       "start": 170,
+       "end": 175
+      },
+      {
+       "name": "tools/patent_reader/analyze/lint_patent_note.py",
+       "start": 63,
+       "end": 68
+      },
+      {
+       "name": "tools/patent_reader/analyze/validate_claim_tree.py",
+       "start": 33,
+       "end": 38
+      },
+      {
+       "name": "tools/patent_reader/extract/extract_patent_figures.py",
+       "start": 35,
+       "end": 40
+      },
+      {
+       "name": "tools/patent_reader/extract/extract_patent_text.py",
+       "start": 274,
+       "end": 279
+      },
+      {
+       "name": "tools/patent_reader/extract/fetch_patent_pdf.py",
+       "start": 276,
+       "end": 281
+      },
+      {
+       "name": "tools/patent_reader/vault/check_obsidian_env.py",
+       "start": 95,
+       "end": 100
+      },
+      {
+       "name": "tools/patent_reader/vault/link_patent_notes.py",
+       "start": 41,
+       "end": 46
+      }
+     ],
+     "copies": 11,
+     "excerpt": {
+      "lines": [
+       "def main(argv: list[str] | None = None) -> int:",
+       "    if hasattr(sys.stdout, \"reconfigure\"):",
+       "        sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")",
+       "",
+       "    ap = argparse.ArgumentParser(description=__doc__)",
+       "    ap.add_argument(\"--claim-tree\", required=True, type=Path)"
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "def main(argv: list[str] | None = None) -> int:",
+       "    if hasattr(sys.stdout, \"reconfigure\"):",
+       "        sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")",
+       "",
+       "    ap = argparse.ArgumentParser(description=__doc__)",
+       "    ap.add_argument(\"-w\", \"--workdir\", required=True, type=Path, help=\"extract 产出目录\")"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 61,
+     "first": {
+      "name": "tools/patent_reader/analyze/build_claim_mermaid.py",
+      "start": 7,
+      "end": 20
+     },
+     "others": [
+      {
+       "name": "tools/patent_reader/analyze/build_context_anchor.py",
+       "start": 11,
+       "end": 24
+      },
+      {
+       "name": "tools/patent_reader/analyze/lint_patent_note.py",
+       "start": 9,
+       "end": 22
+      },
+      {
+       "name": "tools/patent_reader/extract/extract_patent_text.py",
+       "start": 17,
+       "end": 30
+      },
+      {
+       "name": "tools/patent_reader/vault/build_patent_canvas.py",
+       "start": 13,
+       "end": 26
+      },
+      {
+       "name": "tools/patent_reader/vault/check_obsidian_env.py",
+       "start": 14,
+       "end": 27
+      },
+      {
+       "name": "tools/patent_reader/vault/materialize_public_clues.py",
+       "start": 15,
+       "end": 28
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "\"\"\"",
+       "from __future__ import annotations",
+       "",
+       "# Ensure tools/patent_reader is importable when run as a script.",
+       "from pathlib import Path as _Path",
+       "import sys as _sys",
+       "",
+       "_PR_ROOT = _Path(__file__).resolve().parents[1]",
+       "if str(_PR_ROOT) not in _sys.path:",
+       "    _sys.path.insert(0, str(_PR_ROOT))"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 69,
+     "first": {
+      "name": "tools/patent_reader/analyze/build_claim_mermaid.py",
+      "start": 7,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "tools/patent_reader/analyze/validate_claim_tree.py",
+       "start": 11,
+       "end": 28
+      },
+      {
+       "name": "tools/patent_reader/extract/extract_patent_figures.py",
+       "start": 13,
+       "end": 30
+      },
+      {
+       "name": "tools/patent_reader/vault/link_patent_notes.py",
+       "start": 17,
+       "end": 34
+      },
+      {
+       "name": "tools/patent_reader/vault/setup_obsidian_vault.py",
+       "start": 8,
+       "end": 25
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "\"\"\"",
+       "from __future__ import annotations",
+       "",
+       "# Ensure tools/patent_reader is importable when run as a script.",
+       "from pathlib import Path as _Path",
+       "import sys as _sys",
+       "",
+       "_PR_ROOT = _Path(__file__).resolve().parents[1]",
+       "if str(_PR_ROOT) not in _sys.path:",
+       "    _sys.path.insert(0, str(_PR_ROOT))"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 39,
+     "tokens": 240,
+     "first": {
+      "name": "tools/shared/structure_callout_overlay.py",
+      "start": 54,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "tools/shared/structure_lineart_compose.py",
+       "start": 50,
+       "end": 77
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 226,
+     "first": {
+      "name": "tools/shared/design_lineart_gate.py",
+      "start": 212,
+      "end": 237
+     },
+     "others": [
+      {
+       "name": "tools/shared/structure_lineart_gate.py",
+       "start": 317,
+       "end": 342
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 45,
+     "tokens": 223,
+     "first": {
+      "name": "tools/shared/design_lineart_gate.py",
+      "start": 27,
+      "end": 71
+     },
+     "others": [
+      {
+       "name": "tools/shared/structure_lineart_gate.py",
+       "start": 27,
+       "end": 71
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 64,
+     "first": {
+      "name": "tools/patent_reader/analyze/build_context_anchor.py",
+      "start": 15,
+      "end": 29
+     },
+     "others": [
+      {
+       "name": "tools/patent_reader/extract/extract_patent_text.py",
+       "start": 21,
+       "end": 35
+      },
+      {
+       "name": "tools/patent_reader/vault/build_patent_canvas.py",
+       "start": 17,
+       "end": 31
+      },
+      {
+       "name": "tools/patent_reader/vault/materialize_public_clues.py",
+       "start": 19,
+       "end": 33
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 57,
+     "first": {
+      "name": "tools/patent_reader/vault/build_patent_canvas.py",
+      "start": 52,
+      "end": 57
+     },
+     "others": [
+      {
+       "name": "tools/patent_reader/vault/link_patent_notes.py",
+       "start": 41,
+       "end": 46
+      },
+      {
+       "name": "tools/patent_reader/vault/materialize_public_clues.py",
+       "start": 96,
+       "end": 101
+      },
+      {
+       "name": "tools/patent_reader/vault/setup_obsidian_vault.py",
+       "start": 32,
+       "end": 37
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 69,
+     "first": {
+      "name": "tools/patent_reader/analyze/validate_claim_tree.py",
+      "start": 33,
+      "end": 41
+     },
+     "others": [
+      {
+       "name": "tools/patent_reader/extract/extract_patent_figures.py",
+       "start": 35,
+       "end": 41
+      },
+      {
+       "name": "tools/patent_reader/extract/extract_patent_text.py",
+       "start": 274,
+       "end": 280
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 128,
+     "first": {
+      "name": "tools/shared/design_lineart_gate.py",
+      "start": 121,
+      "end": 132
+     },
+     "others": [
+      {
+       "name": "tools/shared/structure_lineart_gate.py",
+       "start": 190,
+       "end": 201
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:46:18.478Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -13,6 +13,8 @@
    "clones": 2388,
    "duplicatedLines": 76945,
    "percentage": 19.77,
+   "codePercentage": 24.26,
+   "codeSources": 762,
    "healthScore": 11.6,
    "healthGrade": "E"
   },
@@ -27,6 +29,8 @@
    "clones": 2388,
    "duplicatedLines": 76945,
    "percentage": 19.77,
+   "codePercentage": 24.26,
+   "codeSources": 762,
    "healthScore": 11.6,
    "healthGrade": "E"
   }
@@ -42,7 +46,7 @@
   "starsToday": 413,
   "defaultBranch": "main",
   "headSha": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
-  "durationMs": 1993,
+  "durationMs": 5632,
   "total": {
    "sources": 1842,
    "lines": 389265,
@@ -137,154 +141,439 @@
   ],
   "topClones": [
    {
+    "format": "python",
+    "lines": 565,
+    "tokens": 2975,
+    "first": {
+     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
+     "start": 3,
+     "end": 567
+    },
+    "others": [
+     {
+      "name": "anygen/agent-harness/cli_anything/anygen/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     {
+      "name": "audacity/agent-harness/cli_anything/audacity/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     {
+      "name": "blender/agent-harness/cli_anything/blender/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     {
+      "name": "browser/agent-harness/cli_anything/browser/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     {
+      "name": "cc-switch/agent-harness/cli_anything/ccswitch/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     {
+      "name": "chromadb/agent-harness/cli_anything/chromadb/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     {
+      "name": "cli-anything-plugin/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     {
+      "name": "cloudanalyzer/agent-harness/cli_anything/cloudanalyzer/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     }
+    ],
+    "copies": 49,
+    "excerpt": {
+     "lines": [
+      "Copy this file into your CLI package at:",
+      "    cli_anything/<software>/utils/repl_skin.py",
+      "",
+      "Usage:",
+      "    from cli_anything.<software>.utils.repl_skin import ReplSkin",
+      "",
+      "    skin = ReplSkin(\"shotcut\", version=\"1.0.0\")",
+      "    skin.print_banner()  # auto-detects repo-root or packaged SKILL.md",
+      "    prompt_text = skin.prompt(project_name=\"my_video.mlt\", modified=True)",
+      "    skin.success(\"Project saved\")"
+     ],
+     "total": 565
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 468,
+    "tokens": 2905,
+    "first": {
+     "name": "blender/agent-harness/cli_anything/blender/utils/preview_bundle.py",
+     "start": 1,
+     "end": 468
+    },
+    "others": [
+     {
+      "name": "cli-anything-plugin/preview_bundle.py",
+      "start": 1,
+      "end": 468
+     },
+     {
+      "name": "freecad/agent-harness/cli_anything/freecad/utils/preview_bundle.py",
+      "start": 1,
+      "end": 468
+     },
+     {
+      "name": "openscreen/agent-harness/cli_anything/openscreen/utils/preview_bundle.py",
+      "start": 1,
+      "end": 468
+     },
+     {
+      "name": "renderdoc/agent-harness/cli_anything/renderdoc/utils/preview_bundle.py",
+      "start": 1,
+      "end": 468
+     },
+     {
+      "name": "shotcut/agent-harness/cli_anything/shotcut/utils/preview_bundle.py",
+      "start": 1,
+      "end": 468
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "\"\"\"Shared helpers for CLI-Anything preview bundles.\"\"\"",
+      "",
+      "from __future__ import annotations",
+      "",
+      "import hashlib",
+      "import json",
+      "import mimetypes",
+      "import os",
+      "import re",
+      "from datetime import datetime, timezone"
+     ],
+     "total": 468
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 13,
+    "tokens": 98,
+    "first": {
+     "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_export.py",
+     "start": 41,
+     "end": 53
+    },
+    "others": [
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+      "start": 110,
+      "end": 122
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/authorized_apps.py",
+      "start": 69,
+      "end": 81
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 100,
+      "end": 112
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+      "start": 110,
+      "end": 122
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+      "start": 110,
+      "end": 122
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+      "start": 110,
+      "end": 122
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+      "start": 373,
+      "end": 385
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+      "start": 422,
+      "end": 434
+     }
+    ],
+    "copies": 62,
+    "excerpt": {
+     "lines": [
+      "params = {k: v for k, v in {",
+      "    \"fields\": fields,",
+      "    \"exclude_fields\": exclude_fields,",
+      "}.items() if v is not None}",
+      "if extra_params:",
+      "    params.update(_parse_json_option(extra_params, \"--extra-params\", require_object=True))",
+      "client = get_client()",
+      "try:",
+      "    result = client.get(path, params=params or None)",
+      "except MailchimpError as e:"
+     ],
+     "total": 13
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 521,
+    "tokens": 2643,
+    "first": {
+     "name": "3MF/agent-harness/cli_anything/threemf/utils/repl_skin.py",
+     "start": 1,
+     "end": 521
+    },
+    "others": [
+     {
+      "name": "macrocli/agent-harness/cli_anything/macrocli/utils/repl_skin.py",
+      "start": 1,
+      "end": 521
+     },
+     {
+      "name": "unrealinsights/agent-harness/cli_anything/unrealinsights/utils/repl_skin.py",
+      "start": 1,
+      "end": 521
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 50,
+    "first": {
+     "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_exports.py",
+     "start": 50,
+     "end": 58
+    },
+    "others": [
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+      "start": 63,
+      "end": 71
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+      "start": 116,
+      "end": 124
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 60,
+      "end": 68
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 106,
+      "end": 114
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 230,
+      "end": 238
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 316,
+      "end": 324
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 361,
+      "end": 369
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 381,
+      "end": 389
+     }
+    ],
+    "copies": 85,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 84,
+    "first": {
+     "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_exports.py",
+     "start": 67,
+     "end": 77
+    },
+    "others": [
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+      "start": 86,
+      "end": 96
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 77,
+      "end": 87
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 335,
+      "end": 345
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 399,
+      "end": 409
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+      "start": 67,
+      "end": 77
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+      "start": 67,
+      "end": 77
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+      "start": 67,
+      "end": 77
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+      "start": 93,
+      "end": 103
+     }
+    ],
+    "copies": 46,
+    "kind": "code"
+   },
+   {
     "format": "bash",
     "lines": 285,
     "tokens": 3204,
-    "firstFile": {
+    "first": {
      "name": "freecad/agent-harness/cli_anything/freecad/skills/SKILL.md:bash",
      "start": 17,
      "end": 301
     },
-    "secondFile": {
-     "name": "skills/cli-anything-freecad/SKILL.md:bash",
-     "start": 17,
-     "end": 301
-    }
+    "others": [
+     {
+      "name": "skills/cli-anything-freecad/SKILL.md:bash",
+      "start": 17,
+      "end": 301
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
+    "lines": 23,
+    "tokens": 106,
+    "first": {
+     "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_export.py",
      "start": 3,
-     "end": 567
+     "end": 25
     },
-    "secondFile": {
-     "name": "anygen/agent-harness/cli_anything/anygen/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
+    "others": [
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_exports.py",
+      "start": 3,
+      "end": 25
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/activity_feed.py",
+      "start": 3,
+      "end": 25
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+      "start": 3,
+      "end": 25
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/authorized_apps.py",
+      "start": 3,
+      "end": 25
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 3,
+      "end": 25
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+      "start": 3,
+      "end": 25
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+      "start": 3,
+      "end": 25
+     },
+     {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+      "start": 3,
+      "end": 25
+     }
+    ],
+    "copies": 30,
+    "kind": "code"
    },
    {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
+    "format": "markdown",
+    "lines": 784,
+    "tokens": 2936,
+    "first": {
+     "name": "cloudcompare/agent-harness/cli_anything/cloudcompare/skills/SKILL.md:markdown",
+     "start": 6,
+     "end": 789
     },
-    "secondFile": {
-     "name": "audacity/agent-harness/cli_anything/audacity/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
+    "others": [
+     {
+      "name": "skills/cli-anything-cloudcompare/SKILL.md:markdown",
+      "start": 6,
+      "end": 789
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
+    "format": "bash",
+    "lines": 753,
+    "tokens": 2911,
+    "first": {
+     "name": "cloudcompare/agent-harness/cli_anything/cloudcompare/skills/SKILL.md:bash",
+     "start": 15,
+     "end": 767
     },
-    "secondFile": {
-     "name": "blender/agent-harness/cli_anything/blender/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
-   },
-   {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    },
-    "secondFile": {
-     "name": "browser/agent-harness/cli_anything/browser/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
-   },
-   {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    },
-    "secondFile": {
-     "name": "cc-switch/agent-harness/cli_anything/ccswitch/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
-   },
-   {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    },
-    "secondFile": {
-     "name": "chromadb/agent-harness/cli_anything/chromadb/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
-   },
-   {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    },
-    "secondFile": {
-     "name": "cli-anything-plugin/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
-   },
-   {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    },
-    "secondFile": {
-     "name": "cloudanalyzer/agent-harness/cli_anything/cloudanalyzer/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
-   },
-   {
-    "format": "python",
-    "lines": 565,
-    "tokens": 2975,
-    "firstFile": {
-     "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    },
-    "secondFile": {
-     "name": "cloudcompare/agent-harness/cli_anything/cloudcompare/utils/repl_skin.py",
-     "start": 3,
-     "end": 567
-    }
+    "others": [
+     {
+      "name": "skills/cli-anything-cloudcompare/SKILL.md:bash",
+      "start": 15,
+      "end": 767
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -502,6 +791,625 @@
      "lines": 981
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 762,
+   "lines": 225256,
+   "tokens": 1304935,
+   "clones": 1738,
+   "duplicatedLines": 54645,
+   "duplicatedTokens": 309505,
+   "percentage": 24.26,
+   "percentageTokens": 23.72,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 729,
+     "lines": 217738,
+     "clones": 1678,
+     "duplicatedLines": 53936,
+     "percentage": 24.77
+    },
+    {
+     "format": "csharp",
+     "sources": 7,
+     "lines": 4457,
+     "clones": 55,
+     "duplicatedLines": 656,
+     "percentage": 14.72
+    },
+    {
+     "format": "swift",
+     "sources": 2,
+     "lines": 381,
+     "clones": 3,
+     "duplicatedLines": 37,
+     "percentage": 9.71
+    },
+    {
+     "format": "powershell",
+     "sources": 6,
+     "lines": 360,
+     "clones": 2,
+     "duplicatedLines": 16,
+     "percentage": 4.44
+    },
+    {
+     "format": "javascript",
+     "sources": 5,
+     "lines": 1148,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 986,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 1,
+     "lines": 186,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 565,
+     "tokens": 2975,
+     "first": {
+      "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
+      "start": 3,
+      "end": 567
+     },
+     "others": [
+      {
+       "name": "anygen/agent-harness/cli_anything/anygen/utils/repl_skin.py",
+       "start": 3,
+       "end": 567
+      },
+      {
+       "name": "audacity/agent-harness/cli_anything/audacity/utils/repl_skin.py",
+       "start": 3,
+       "end": 567
+      },
+      {
+       "name": "blender/agent-harness/cli_anything/blender/utils/repl_skin.py",
+       "start": 3,
+       "end": 567
+      },
+      {
+       "name": "browser/agent-harness/cli_anything/browser/utils/repl_skin.py",
+       "start": 3,
+       "end": 567
+      },
+      {
+       "name": "cc-switch/agent-harness/cli_anything/ccswitch/utils/repl_skin.py",
+       "start": 3,
+       "end": 567
+      },
+      {
+       "name": "chromadb/agent-harness/cli_anything/chromadb/utils/repl_skin.py",
+       "start": 3,
+       "end": 567
+      },
+      {
+       "name": "cli-anything-plugin/repl_skin.py",
+       "start": 3,
+       "end": 567
+      },
+      {
+       "name": "cloudanalyzer/agent-harness/cli_anything/cloudanalyzer/utils/repl_skin.py",
+       "start": 3,
+       "end": 567
+      }
+     ],
+     "copies": 49,
+     "excerpt": {
+      "lines": [
+       "Copy this file into your CLI package at:",
+       "    cli_anything/<software>/utils/repl_skin.py",
+       "",
+       "Usage:",
+       "    from cli_anything.<software>.utils.repl_skin import ReplSkin",
+       "",
+       "    skin = ReplSkin(\"shotcut\", version=\"1.0.0\")",
+       "    skin.print_banner()  # auto-detects repo-root or packaged SKILL.md",
+       "    prompt_text = skin.prompt(project_name=\"my_video.mlt\", modified=True)",
+       "    skin.success(\"Project saved\")"
+      ],
+      "total": 565
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 468,
+     "tokens": 2905,
+     "first": {
+      "name": "blender/agent-harness/cli_anything/blender/utils/preview_bundle.py",
+      "start": 1,
+      "end": 468
+     },
+     "others": [
+      {
+       "name": "cli-anything-plugin/preview_bundle.py",
+       "start": 1,
+       "end": 468
+      },
+      {
+       "name": "freecad/agent-harness/cli_anything/freecad/utils/preview_bundle.py",
+       "start": 1,
+       "end": 468
+      },
+      {
+       "name": "openscreen/agent-harness/cli_anything/openscreen/utils/preview_bundle.py",
+       "start": 1,
+       "end": 468
+      },
+      {
+       "name": "renderdoc/agent-harness/cli_anything/renderdoc/utils/preview_bundle.py",
+       "start": 1,
+       "end": 468
+      },
+      {
+       "name": "shotcut/agent-harness/cli_anything/shotcut/utils/preview_bundle.py",
+       "start": 1,
+       "end": 468
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "\"\"\"Shared helpers for CLI-Anything preview bundles.\"\"\"",
+       "",
+       "from __future__ import annotations",
+       "",
+       "import hashlib",
+       "import json",
+       "import mimetypes",
+       "import os",
+       "import re",
+       "from datetime import datetime, timezone"
+      ],
+      "total": 468
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 98,
+     "first": {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_export.py",
+      "start": 41,
+      "end": 53
+     },
+     "others": [
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+       "start": 110,
+       "end": 122
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/authorized_apps.py",
+       "start": 69,
+       "end": 81
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 100,
+       "end": 112
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+       "start": 110,
+       "end": 122
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+       "start": 110,
+       "end": 122
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+       "start": 110,
+       "end": 122
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+       "start": 373,
+       "end": 385
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+       "start": 422,
+       "end": 434
+      }
+     ],
+     "copies": 62,
+     "excerpt": {
+      "lines": [
+       "params = {k: v for k, v in {",
+       "    \"fields\": fields,",
+       "    \"exclude_fields\": exclude_fields,",
+       "}.items() if v is not None}",
+       "if extra_params:",
+       "    params.update(_parse_json_option(extra_params, \"--extra-params\", require_object=True))",
+       "client = get_client()",
+       "try:",
+       "    result = client.get(path, params=params or None)",
+       "except MailchimpError as e:"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 521,
+     "tokens": 2643,
+     "first": {
+      "name": "3MF/agent-harness/cli_anything/threemf/utils/repl_skin.py",
+      "start": 1,
+      "end": 521
+     },
+     "others": [
+      {
+       "name": "macrocli/agent-harness/cli_anything/macrocli/utils/repl_skin.py",
+       "start": 1,
+       "end": 521
+      },
+      {
+       "name": "unrealinsights/agent-harness/cli_anything/unrealinsights/utils/repl_skin.py",
+       "start": 1,
+       "end": 521
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 50,
+     "first": {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_exports.py",
+      "start": 50,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+       "start": 63,
+       "end": 71
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+       "start": 116,
+       "end": 124
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 60,
+       "end": 68
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 106,
+       "end": 114
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 230,
+       "end": 238
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 316,
+       "end": 324
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 361,
+       "end": 369
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 381,
+       "end": 389
+      }
+     ],
+     "copies": 85,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 84,
+     "first": {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_exports.py",
+      "start": 67,
+      "end": 77
+     },
+     "others": [
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+       "start": 86,
+       "end": 96
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 77,
+       "end": 87
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 335,
+       "end": 345
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 399,
+       "end": 409
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+       "start": 67,
+       "end": 77
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+       "start": 67,
+       "end": 77
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+       "start": 67,
+       "end": 77
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+       "start": 93,
+       "end": 103
+      }
+     ],
+     "copies": 46,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 106,
+     "first": {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_export.py",
+      "start": 3,
+      "end": 25
+     },
+     "others": [
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_exports.py",
+       "start": 3,
+       "end": 25
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/activity_feed.py",
+       "start": 3,
+       "end": 25
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/audiences.py",
+       "start": 3,
+       "end": 25
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/authorized_apps.py",
+       "start": 3,
+       "end": 25
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+       "start": 3,
+       "end": 25
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+       "start": 3,
+       "end": 25
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+       "start": 3,
+       "end": 25
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+       "start": 3,
+       "end": 25
+      }
+     ],
+     "copies": 30,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 107,
+     "first": {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/account_exports.py",
+      "start": 42,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/authorized_apps.py",
+       "start": 42,
+       "end": 58
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+       "start": 42,
+       "end": 58
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+       "start": 42,
+       "end": 58
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+       "start": 42,
+       "end": 58
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/connected_sites.py",
+       "start": 42,
+       "end": 58
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/contacts.py",
+       "start": 42,
+       "end": 58
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
+       "start": 78,
+       "end": 94
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
+       "start": 195,
+       "end": 211
+      }
+     ],
+     "copies": 26,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 51,
+     "first": {
+      "name": "3MF/agent-harness/cli_anything/threemf/utils/repl_skin.py",
+      "start": 1,
+      "end": 10
+     },
+     "others": [
+      {
+       "name": "QGIS/agent-harness/cli_anything/qgis/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      },
+      {
+       "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      },
+      {
+       "name": "anygen/agent-harness/cli_anything/anygen/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      },
+      {
+       "name": "audacity/agent-harness/cli_anything/audacity/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      },
+      {
+       "name": "blender/agent-harness/cli_anything/blender/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      },
+      {
+       "name": "browser/agent-harness/cli_anything/browser/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      },
+      {
+       "name": "cc-switch/agent-harness/cli_anything/ccswitch/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      },
+      {
+       "name": "chromadb/agent-harness/cli_anything/chromadb/utils/repl_skin.py",
+       "start": 1,
+       "end": 10
+      }
+     ],
+     "copies": 53,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 72,
+     "first": {
+      "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/automations.py",
+      "start": 206,
+      "end": 217
+     },
+     "others": [
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batch_webhooks.py",
+       "start": 88,
+       "end": 99
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/batches.py",
+       "start": 88,
+       "end": 99
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaign_folders.py",
+       "start": 88,
+       "end": 99
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+       "start": 114,
+       "end": 125
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/campaigns.py",
+       "start": 468,
+       "end": 479
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/connected_sites.py",
+       "start": 88,
+       "end": 99
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
+       "start": 124,
+       "end": 135
+      },
+      {
+       "name": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
+       "start": 243,
+       "end": 254
+      }
+     ],
+     "copies": 34,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "mailchimp/agent-harness/cli_anything/mailchimp/commands/__init__.py"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:23:56.195Z",
+  "jscpdVersion": "5.4.0"
  }
 }

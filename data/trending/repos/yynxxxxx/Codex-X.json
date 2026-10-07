@@ -9,10 +9,12 @@
    "starsToday": 32,
    "headSha": "fb9048fb03f024000c162097c32102a6d9c33298",
    "sources": 184,
-   "lines": 82809,
+   "lines": 82004,
    "clones": 188,
-   "duplicatedLines": 2431,
-   "percentage": 2.94,
+   "duplicatedLines": 2609,
+   "percentage": 3.18,
+   "codePercentage": 2.4,
+   "codeSources": 122,
    "healthScore": 57.4,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 50,
    "headSha": "fb9048fb03f024000c162097c32102a6d9c33298",
    "sources": 184,
-   "lines": 82809,
+   "lines": 82004,
    "clones": 188,
-   "duplicatedLines": 2431,
-   "percentage": 2.94,
+   "duplicatedLines": 2609,
+   "percentage": 3.18,
+   "codePercentage": 2.4,
+   "codeSources": 122,
    "healthScore": 54.2,
    "healthGrade": "D"
   }
@@ -42,15 +46,15 @@
   "starsToday": 50,
   "defaultBranch": "main",
   "headSha": "fb9048fb03f024000c162097c32102a6d9c33298",
-  "durationMs": 915,
+  "durationMs": 203,
   "total": {
    "sources": 184,
-   "lines": 82809,
-   "tokens": 616318,
+   "lines": 82004,
+   "tokens": 616153,
    "clones": 188,
-   "duplicatedLines": 2431,
+   "duplicatedLines": 2609,
    "duplicatedTokens": 20117,
-   "percentage": 2.94,
+   "percentage": 3.18,
    "percentageTokens": 3.26
   },
   "formats": [
@@ -59,69 +63,69 @@
     "sources": 63,
     "lines": 52044,
     "clones": 152,
-    "duplicatedLines": 1380,
-    "percentage": 2.65
+    "duplicatedLines": 1532,
+    "percentage": 2.94
    },
    {
     "format": "css",
     "sources": 16,
     "lines": 8069,
     "clones": 18,
-    "duplicatedLines": 104,
-    "percentage": 1.29
+    "duplicatedLines": 122,
+    "percentage": 1.51
    },
    {
     "format": "markup",
     "sources": 3,
     "lines": 1629,
     "clones": 6,
-    "duplicatedLines": 845,
-    "percentage": 51.87
+    "duplicatedLines": 851,
+    "percentage": 52.24
    },
    {
     "format": "tsx",
     "sources": 25,
     "lines": 9587,
     "clones": 5,
-    "duplicatedLines": 26,
-    "percentage": 0.27
+    "duplicatedLines": 31,
+    "percentage": 0.32
    },
    {
     "format": "javascript",
     "sources": 16,
     "lines": 3177,
     "clones": 3,
-    "duplicatedLines": 28,
-    "percentage": 0.88
+    "duplicatedLines": 31,
+    "percentage": 0.98
    },
    {
     "format": "markdown",
     "sources": 20,
     "lines": 3573,
     "clones": 2,
-    "duplicatedLines": 28,
-    "percentage": 0.78
+    "duplicatedLines": 30,
+    "percentage": 0.84
    },
    {
     "format": "typescript",
     "sources": 18,
     "lines": 1681,
     "clones": 1,
-    "duplicatedLines": 5,
-    "percentage": 0.3
+    "duplicatedLines": 6,
+    "percentage": 0.36
    },
    {
     "format": "text",
     "sources": 3,
-    "lines": 782,
+    "lines": 21,
     "clones": 1,
-    "duplicatedLines": 15,
-    "percentage": 1.92
+    "duplicatedLines": 6,
+    "percentage": 28.57
    },
    {
     "format": "bash",
     "sources": 10,
-    "lines": 775,
+    "lines": 725,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,151 +144,325 @@
     "format": "markup",
     "lines": 806,
     "tokens": 7495,
-    "firstFile": {
+    "first": {
      "name": "docs/codex-x介绍.html",
      "start": 1,
      "end": 806
     },
-    "secondFile": {
-     "name": "docs/index.html",
-     "start": 1,
-     "end": 806
-    }
+    "others": [
+     {
+      "name": "docs/index.html",
+      "start": 1,
+      "end": 806
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<!DOCTYPE html>",
+      "",
+      "<html class=\"dark\" lang=\"zh-CN\"> <!-- 默认开启深色模式 -->",
+      "<head>",
+      "<meta charset=\"utf-8\"/>",
+      "<meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\"/>",
+      "<title>Codex-X 逆向 Skills 导航 | 破甲指南</title>",
+      "<script src=\"https://cdn.tailwindcss.com\"></script>",
+      "<script src=\"https://unpkg.com/lucide@latest\"></script>",
+      "<!-- 配置 Tailwind 以支持基于 class 的暗黑模式 -->"
+     ],
+     "total": 806
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 11,
+    "tokens": 82,
+    "first": {
+     "name": "apps/desktop/src-tauri/src/tests.rs",
+     "start": 1922,
+     "end": 1932
+    },
+    "others": [
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 1980,
+      "end": 1990
+     },
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 2354,
+      "end": 2364
+     },
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 2676,
+      "end": 2686
+     },
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 2952,
+      "end": 2962
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "assert!(!snapshot_path.exists());",
+      "",
+      "switch_provider_inner(ProviderInput {",
+      "    config_dir: Some(codex_dir.display().to_string()),",
+      "    provider_id: Some(\"proxy\".to_string()),",
+      "    provider_name: \"Proxy\".to_string(),",
+      "    base_url: \"https://proxy.example.com/v1\".to_string(),",
+      "    model: \"proxy-model\".to_string(),",
+      "    api_key: Some(\"sk-proxy\".to_string()),",
+      "    wire_api: Some(\"responses\".to_string()),"
+     ],
+     "total": 11
+    },
+    "kind": "code"
+   },
+   {
+    "format": "css",
+    "lines": 7,
+    "tokens": 52,
+    "first": {
+     "name": "apps/desktop/src/styles/dark-theme.css",
+     "start": 305,
+     "end": 311
+    },
+    "others": [
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 327,
+      "end": 333
+     },
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 550,
+      "end": 556
+     },
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 902,
+      "end": 908
+     },
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 1071,
+      "end": 1077
+     },
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 1129,
+      "end": 1135
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      ":root[data-theme=\"dark\"] .cx-overview-status-card--success .cx-overview-status-icon {",
+      "  color: var(--cx-dark-green);",
+      "  background: var(--cx-dark-green-surface);",
+      "  border-color: #4f7767;",
+      "}",
+      "",
+      ":root[data-theme=\"dark\"] .cx-overview-status-card--active .cx-overview-status-icon {"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      ":root[data-theme=\"dark\"] .cx-overview-instruction-pill--active {",
+      "  color: var(--cx-dark-green);",
+      "  background: var(--cx-dark-green-surface);",
+      "  border-color: #4f7767;",
+      "}",
+      "",
+      ":root[data-theme=\"dark\"] .cx-overview-config-row {"
+     ],
+     "total": 7
+    },
+    "kind": "styles"
+   },
+   {
+    "format": "css",
+    "lines": 7,
+    "tokens": 59,
+    "first": {
+     "name": "apps/desktop/src/styles/dark-theme.css",
+     "start": 299,
+     "end": 305
+    },
+    "others": [
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 321,
+      "end": 327
+     },
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 422,
+      "end": 428
+     },
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 457,
+      "end": 463
+     },
+     {
+      "name": "apps/desktop/src/styles/dark-theme.css",
+      "start": 580,
+      "end": 586
+     }
+    ],
+    "copies": 5,
+    "kind": "styles"
+   },
+   {
+    "format": "markup",
+    "lines": 7,
+    "tokens": 72,
+    "first": {
+     "name": "docs/codex-x介绍.html",
+     "start": 570,
+     "end": 576
+    },
+    "others": [
+     {
+      "name": "docs/codex-x介绍.html",
+      "start": 609,
+      "end": 615
+     },
+     {
+      "name": "docs/codex-x介绍.html",
+      "start": 642,
+      "end": 648
+     },
+     {
+      "name": "docs/codex-x介绍.html",
+      "start": 675,
+      "end": 681
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
    },
    {
     "format": "rust",
     "lines": 36,
     "tokens": 175,
-    "firstFile": {
+    "first": {
      "name": "apps/desktop/src-tauri/src/sessions/catalog.rs",
      "start": 955,
      "end": 990
     },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/sessions/sync.rs",
-     "start": 565,
-     "end": 600
-    }
+    "others": [
+     {
+      "name": "apps/desktop/src-tauri/src/sessions/sync.rs",
+      "start": 565,
+      "end": 600
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 57,
+    "first": {
+     "name": "apps/desktop/src-tauri/src/tests.rs",
+     "start": 1985,
+     "end": 1992
+    },
+    "others": [
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 2359,
+      "end": 2366
+     },
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 2681,
+      "end": 2688
+     },
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 2957,
+      "end": 2964
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 80,
+    "first": {
+     "name": "apps/desktop/src-tauri/src/tests.rs",
+     "start": 1924,
+     "end": 1932
+    },
+    "others": [
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 2602,
+      "end": 2610
+     },
+     {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 3385,
+      "end": 3394
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 74,
+    "first": {
+     "name": "apps/desktop/src-tauri/src/providers/live.rs",
+     "start": 1833,
+     "end": 1840
+    },
+    "others": [
+     {
+      "name": "apps/desktop/src-tauri/src/providers/live.rs",
+      "start": 2049,
+      "end": 2056
+     },
+     {
+      "name": "apps/desktop/src-tauri/src/providers/live.rs",
+      "start": 2090,
+      "end": 2097
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 14,
     "tokens": 142,
-    "firstFile": {
+    "first": {
      "name": "apps/desktop/src-tauri/src/providers/store.rs",
      "start": 670,
      "end": 683
     },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/providers/store.rs",
-     "start": 754,
-     "end": 767
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 14,
-    "tokens": 139,
-    "firstFile": {
-     "name": "apps/desktop/src-tauri/src/tests.rs",
-     "start": 1313,
-     "end": 1326
-    },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/tests.rs",
-     "start": 1376,
-     "end": 1389
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 21,
-    "tokens": 128,
-    "firstFile": {
-     "name": "apps/desktop/src-tauri/src/tests.rs",
-     "start": 3541,
-     "end": 3561
-    },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/tests.rs",
-     "start": 3845,
-     "end": 3865
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 17,
-    "tokens": 126,
-    "firstFile": {
-     "name": "apps/desktop/src-tauri/src/failover/tests.rs",
-     "start": 610,
-     "end": 626
-    },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/failover/tests.rs",
-     "start": 642,
-     "end": 658
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 17,
-    "tokens": 121,
-    "firstFile": {
-     "name": "apps/desktop/src-tauri/src/providers/live.rs",
-     "start": 1833,
-     "end": 1849
-    },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/providers/live.rs",
-     "start": 1889,
-     "end": 1905
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 11,
-    "tokens": 119,
-    "firstFile": {
-     "name": "apps/desktop/src-tauri/src/skills_mcp/skills.rs",
-     "start": 184,
-     "end": 194
-    },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/skills_mcp/skills.rs",
-     "start": 245,
-     "end": 255
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 8,
-    "tokens": 113,
-    "firstFile": {
-     "name": "apps/desktop/src-tauri/src/tests.rs",
-     "start": 1317,
-     "end": 1324
-    },
-    "secondFile": {
-     "name": "apps/desktop/src-tauri/src/tests.rs",
-     "start": 1448,
-     "end": 1456
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 15,
-    "tokens": 112,
-    "firstFile": {
-     "name": "docs/codex-x介绍.html",
-     "start": 580,
-     "end": 594
-    },
-    "secondFile": {
-     "name": "docs/codex-x介绍.html",
-     "start": 652,
-     "end": 666
-    }
+    "others": [
+     {
+      "name": "apps/desktop/src-tauri/src/providers/store.rs",
+      "start": 754,
+      "end": 767
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -428,6 +606,369 @@
      "lines": 10
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 122,
+   "lines": 65354,
+   "tokens": 466430,
+   "clones": 158,
+   "duplicatedLines": 1569,
+   "duplicatedTokens": 10815,
+   "percentage": 2.4,
+   "percentageTokens": 2.32,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 63,
+     "lines": 52044,
+     "clones": 152,
+     "duplicatedLines": 1532,
+     "percentage": 2.94
+    },
+    {
+     "format": "tsx",
+     "sources": 25,
+     "lines": 9587,
+     "clones": 5,
+     "duplicatedLines": 31,
+     "percentage": 0.32
+    },
+    {
+     "format": "typescript",
+     "sources": 18,
+     "lines": 1681,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 0.36
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 725,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 3,
+     "lines": 685,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 458,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 82,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 1922,
+      "end": 1932
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 1980,
+       "end": 1990
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 2354,
+       "end": 2364
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 2676,
+       "end": 2686
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 2952,
+       "end": 2962
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "assert!(!snapshot_path.exists());",
+       "",
+       "switch_provider_inner(ProviderInput {",
+       "    config_dir: Some(codex_dir.display().to_string()),",
+       "    provider_id: Some(\"proxy\".to_string()),",
+       "    provider_name: \"Proxy\".to_string(),",
+       "    base_url: \"https://proxy.example.com/v1\".to_string(),",
+       "    model: \"proxy-model\".to_string(),",
+       "    api_key: Some(\"sk-proxy\".to_string()),",
+       "    wire_api: Some(\"responses\".to_string()),"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 36,
+     "tokens": 175,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/sessions/catalog.rs",
+      "start": 955,
+      "end": 990
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/sessions/sync.rs",
+       "start": 565,
+       "end": 600
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "conn.execute_batch(",
+       "    \"CREATE TABLE local_thread_catalog (",
+       "        host_id TEXT NOT NULL,",
+       "        thread_id TEXT NOT NULL,",
+       "        display_title TEXT NOT NULL,",
+       "        source_created_at REAL NOT NULL,",
+       "        source_updated_at REAL NOT NULL,",
+       "        cwd TEXT NOT NULL,",
+       "        source_kind TEXT NOT NULL,",
+       "        source_detail TEXT,"
+      ],
+      "total": 36
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 57,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 1985,
+      "end": 1992
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 2359,
+       "end": 2366
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 2681,
+       "end": 2688
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 2957,
+       "end": 2964
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "    provider_name: \"Proxy\".to_string(),",
+       "    base_url: \"https://proxy.example.com/v1\".to_string(),",
+       "    model: \"proxy-model\".to_string(),",
+       "    api_key: Some(\"sk-proxy\".to_string()),",
+       "    wire_api: Some(\"responses\".to_string()),",
+       "    requires_openai_auth: Some(true),",
+       "})",
+       ".expect(\"switch away from polluted official state\");"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "    provider_name: \"Proxy\".to_string(),",
+       "    base_url: \"https://proxy.example.com/v1\".to_string(),",
+       "    model: \"proxy-model\".to_string(),",
+       "    api_key: Some(\"sk-proxy\".to_string()),",
+       "    wire_api: Some(\"responses\".to_string()),",
+       "    requires_openai_auth: Some(true),",
+       "})",
+       ".expect(\"switch to proxy\");"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 80,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 1924,
+      "end": 1932
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 2602,
+       "end": 2610
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 3385,
+       "end": 3394
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 74,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/providers/live.rs",
+      "start": 1833,
+      "end": 1840
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/providers/live.rs",
+       "start": 2049,
+       "end": 2056
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/providers/live.rs",
+       "start": 2090,
+       "end": 2097
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 142,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/providers/store.rs",
+      "start": 670,
+      "end": 683
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/providers/store.rs",
+       "start": 754,
+       "end": 767
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 139,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 1313,
+      "end": 1326
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 1376,
+       "end": 1389
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 21,
+     "tokens": 128,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/tests.rs",
+      "start": 3541,
+      "end": 3561
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 3845,
+       "end": 3865
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 126,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/failover/tests.rs",
+      "start": 610,
+      "end": 626
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/failover/tests.rs",
+       "start": 642,
+       "end": 658
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 61,
+     "first": {
+      "name": "apps/desktop/src-tauri/src/file_io.rs",
+      "start": 429,
+      "end": 435
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src-tauri/src/file_io.rs",
+       "start": 494,
+       "end": 500
+      },
+      {
+       "name": "apps/desktop/src-tauri/src/tests.rs",
+       "start": 41,
+       "end": 47
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:18:04.417Z",
+  "jscpdVersion": "5.4.0"
  }
 }

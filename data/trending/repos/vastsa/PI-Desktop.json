@@ -9,10 +9,12 @@
    "starsToday": 417,
    "headSha": "8ce8ed36c1afe03297a754f9542ae5972b9ba52f",
    "sources": 1196,
-   "lines": 385103,
-   "clones": 921,
-   "duplicatedLines": 22839,
-   "percentage": 5.93,
+   "lines": 335742,
+   "clones": 997,
+   "duplicatedLines": 12088,
+   "percentage": 3.6,
+   "codePercentage": 3.4,
+   "codeSources": 331,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 552,
    "headSha": "24a2c4349975ef1d7f7d35677384575baae3753d",
    "sources": 1282,
-   "lines": 413043,
-   "clones": 991,
-   "duplicatedLines": 24808,
-   "percentage": 6.01,
+   "lines": 361251,
+   "clones": 1085,
+   "duplicatedLines": 13825,
+   "percentage": 3.83,
+   "codePercentage": 3.4,
+   "codeSources": 355,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,97 +46,97 @@
   "starsToday": 552,
   "defaultBranch": "main",
   "headSha": "24a2c4349975ef1d7f7d35677384575baae3753d",
-  "durationMs": 1194,
+  "durationMs": 770,
   "total": {
    "sources": 1282,
-   "lines": 413043,
-   "tokens": 2706978,
-   "clones": 991,
-   "duplicatedLines": 24808,
-   "duplicatedTokens": 88791,
-   "percentage": 6.01,
-   "percentageTokens": 3.28
+   "lines": 361251,
+   "tokens": 2706884,
+   "clones": 1085,
+   "duplicatedLines": 13825,
+   "duplicatedTokens": 93093,
+   "percentage": 3.83,
+   "percentageTokens": 3.44
   },
   "formats": [
    {
     "format": "rust",
     "sources": 37,
     "lines": 41700,
-    "clones": 284,
-    "duplicatedLines": 2592,
-    "percentage": 6.22
+    "clones": 312,
+    "duplicatedLines": 3059,
+    "percentage": 7.34
    },
    {
     "format": "typescript",
     "sources": 328,
-    "lines": 129638,
-    "clones": 231,
-    "duplicatedLines": 7054,
-    "percentage": 5.44
+    "lines": 112591,
+    "clones": 247,
+    "duplicatedLines": 3712,
+    "percentage": 3.3
    },
    {
     "format": "css",
     "sources": 37,
-    "lines": 26807,
-    "clones": 160,
-    "duplicatedLines": 1602,
-    "percentage": 5.98
+    "lines": 22546,
+    "clones": 191,
+    "duplicatedLines": 1621,
+    "percentage": 7.19
    },
    {
     "format": "tsx",
     "sources": 76,
     "lines": 33448,
-    "clones": 87,
-    "duplicatedLines": 1033,
-    "percentage": 3.09
+    "clones": 91,
+    "duplicatedLines": 1151,
+    "percentage": 3.44
    },
    {
     "format": "javascript",
     "sources": 233,
-    "lines": 40280,
-    "clones": 77,
-    "duplicatedLines": 1297,
-    "percentage": 3.22
+    "lines": 39086,
+    "clones": 88,
+    "duplicatedLines": 1004,
+    "percentage": 2.57
    },
    {
     "format": "markdown",
     "sources": 420,
     "lines": 99821,
     "clones": 53,
-    "duplicatedLines": 394,
-    "percentage": 0.39
+    "duplicatedLines": 445,
+    "percentage": 0.45
    },
    {
     "format": "text",
     "sources": 63,
-    "lines": 21183,
-    "clones": 48,
-    "duplicatedLines": 6611,
-    "percentage": 31.21
+    "lines": 1758,
+    "clones": 49,
+    "duplicatedLines": 598,
+    "percentage": 34.02
    },
    {
     "format": "json",
     "sources": 29,
-    "lines": 7285,
-    "clones": 25,
-    "duplicatedLines": 1933,
-    "percentage": 26.53
+    "lines": 4095,
+    "clones": 27,
+    "duplicatedLines": 1473,
+    "percentage": 35.97
    },
    {
     "format": "markup",
     "sources": 8,
-    "lines": 3077,
+    "lines": 2638,
     "clones": 12,
-    "duplicatedLines": 120,
-    "percentage": 3.9
+    "duplicatedLines": 132,
+    "percentage": 5
    },
    {
     "format": "bash",
     "sources": 27,
-    "lines": 5905,
+    "lines": 1033,
     "clones": 5,
-    "duplicatedLines": 1128,
-    "percentage": 19.1
+    "duplicatedLines": 62,
+    "percentage": 6
    }
   ],
   "topClones": [
@@ -140,152 +144,775 @@
     "format": "css",
     "lines": 409,
     "tokens": 1343,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/04-ux/07-ui-design-system.md:css",
      "start": 270,
      "end": 678
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/04-ux/07-ui-design-system.md:css",
-     "start": 243,
-     "end": 614
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/04-ux/07-ui-design-system.md:css",
+      "start": 243,
+      "end": 614
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "/* === Design System Token Bridge (spec reference, not runtime file) === */",
+      "/* Dark theme (default) */",
+      ":root[data-theme=\"dark\"] {",
+      "  --color-bg-primary:       #181818;",
+      "  --color-bg-secondary:     #212121;",
+      "  --color-bg-tertiary:      #282828;",
+      "  --color-bg-inset:         #0d0d0d;",
+      "  --color-text-primary:     #FFFFFF;",
+      "  --color-text-secondary:   rgba(255,255,255,0.70);",
+      "  --color-text-muted:       #5d5d5d;"
+     ],
+     "total": 409
+    },
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 295,
     "tokens": 1101,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/07-plugins/03-plugin-api.md:typescript",
      "start": 303,
      "end": 597
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/07-plugins/03-plugin-api.md:typescript",
-     "start": 250,
-     "end": 514
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/07-plugins/03-plugin-api.md:typescript",
+      "start": 250,
+      "end": 514
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    modelId?: string",
+      "    providerId?: string",
+      "    toolName?: string",
+      "    toolCallId?: string",
+      "    toolStatus?: \"success\" | \"error\"",
+      "    toolArgs?: unknown",
+      "    toolResult?: unknown",
+      "  }>",
+      "}): Promise<{ sessionId: string; imported: boolean; skipped: boolean }>",
+      ""
+     ],
+     "total": 295
+    },
+    "kind": "tests"
    },
    {
     "format": "sql",
     "lines": 446,
     "tokens": 1044,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/03-runtime/04-data-storage.md:sql",
      "start": 478,
      "end": 923
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/03-runtime/04-data-storage.md:sql",
-     "start": 447,
-     "end": 872
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/03-runtime/04-data-storage.md:sql",
+      "start": 447,
+      "end": 872
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "CREATE INDEX idx_turns_ended_at ON turns(ended_at DESC);",
+      "```",
+      "",
+      "### 4.6a plan_approvals — immutable checkpoint and execution fields (schema v11)",
+      "",
+      "The host writes each submitted Markdown snapshot to a new unique file under the",
+      "proposal kind's directory: `<workspaceRoot>/.pi/plan/` for a plan and",
+      "`<workspaceRoot>/.pi/goal/` for a goal. The existing `plan_approvals` row stores",
+      "the kind, the structured title/question, artifact metadata, and post-approval",
+      "execution descriptor. The file path is relative to the session workspace and"
+     ],
+     "total": 446
+    },
+    "excerptSecond": {
+     "lines": [
+      "CREATE INDEX idx_turns_session ON turns(session_id, started_at DESC);",
+      "```",
+      "",
+      "### 4.6a plan_approvals — 不可变的检查点和执行字段（模式 v11）",
+      "",
+      "主机将每个提交的 Markdown 快照写入到一个新的唯一文件中",
+      "提案类型的目录：`<workspaceRoot>/.pi/plan/` 用于计划和",
+      "`<workspaceRoot>/.pi/goal/` 实现目标。现有 `plan_approvals` 行存储",
+      "种类、结构化 title/question、工件元数据和批准后",
+      "执行描述符。文件路径是相对于会话工作空间的"
+     ],
+     "total": 426
+    },
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 90,
-    "tokens": 907,
-    "firstFile": {
+    "tokens": 915,
+    "first": {
      "name": "apps/desktop/src/assets/fonts/licenses/OFL-Geist.txt",
      "start": 3,
      "end": 92
     },
-    "secondFile": {
-     "name": "apps/desktop/src/assets/fonts/licenses/OFL-Inter.txt",
-     "start": 3,
-     "end": 92
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 88,
-    "tokens": 877,
-    "firstFile": {
-     "name": "apps/desktop/src/assets/fonts/licenses/OFL-Geist.txt",
-     "start": 5,
-     "end": 92
-    },
-    "secondFile": {
-     "name": "apps/desktop/src/assets/fonts/licenses/OFL-NotoSansSC.txt",
-     "start": 5,
-     "end": 93
-    }
+    "others": [
+     {
+      "name": "apps/desktop/src/assets/fonts/licenses/OFL-Inter.txt",
+      "start": 3,
+      "end": 92
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "typescript",
     "lines": 341,
     "tokens": 740,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/03-runtime/01-ipc-protocol.md:typescript",
      "start": 96,
      "end": 436
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/03-runtime/01-ipc-protocol.md:typescript",
-     "start": 85,
-     "end": 395
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/03-runtime/01-ipc-protocol.md:typescript",
+      "start": 85,
+      "end": 395
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 507,
     "tokens": 737,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/03-runtime/01-ipc-protocol.md:typescript",
      "start": 1062,
      "end": 1568
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/03-runtime/01-ipc-protocol.md:typescript",
-     "start": 890,
-     "end": 1371
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/03-runtime/01-ipc-protocol.md:typescript",
+      "start": 890,
+      "end": 1371
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 789,
     "tokens": 709,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/03-runtime/06-host-rpc-protocol.md:typescript",
      "start": 132,
      "end": 920
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/03-runtime/06-host-rpc-protocol.md:typescript",
-     "start": 128,
-     "end": 832
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/03-runtime/06-host-rpc-protocol.md:typescript",
+      "start": 128,
+      "end": 832
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "text",
     "lines": 330,
     "tokens": 652,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/04-ux/08-component-spec.md:text",
      "start": 2721,
      "end": 3050
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/04-ux/08-component-spec.md:text",
-     "start": 2135,
-     "end": 2390
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/04-ux/08-component-spec.md:text",
+      "start": 2135,
+      "end": 2390
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 122,
+    "tokens": 304,
+    "first": {
+     "name": "packages/shared/fixtures/racp.schema.json",
+     "start": 146,
+     "end": 267
+    },
+    "others": [
+     {
+      "name": "packages/shared/fixtures/racp.schema.json",
+      "start": 638,
+      "end": 759
+     },
+     {
+      "name": "packages/shared/fixtures/racp.schema.json",
+      "start": 762,
+      "end": 883
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 186,
     "tokens": 573,
-    "firstFile": {
+    "first": {
      "name": "docs/spec/07-plugins/02-plugin-manifest-schema.md:typescript",
      "start": 64,
      "end": 249
     },
-    "secondFile": {
-     "name": "docs/zh-CN/spec/07-plugins/02-plugin-manifest-schema.md:typescript",
-     "start": 63,
-     "end": 244
-    }
+    "others": [
+     {
+      "name": "docs/zh-CN/spec/07-plugins/02-plugin-manifest-schema.md:typescript",
+      "start": 63,
+      "end": 244
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 355,
+   "lines": 155989,
+   "tokens": 919247,
+   "clones": 499,
+   "duplicatedLines": 5299,
+   "duplicatedTokens": 34891,
+   "percentage": 3.4,
+   "percentageTokens": 3.8,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 37,
+     "lines": 41700,
+     "clones": 312,
+     "duplicatedLines": 3059,
+     "percentage": 7.34
+    },
+    {
+     "format": "typescript",
+     "sources": 211,
+     "lines": 73971,
+     "clones": 92,
+     "duplicatedLines": 1030,
+     "percentage": 1.39
+    },
+    {
+     "format": "tsx",
+     "sources": 76,
+     "lines": 33448,
+     "clones": 91,
+     "duplicatedLines": 1151,
+     "percentage": 3.44
+    },
+    {
+     "format": "javascript",
+     "sources": 15,
+     "lines": 5578,
+     "clones": 4,
+     "duplicatedLines": 59,
+     "percentage": 1.06
+    },
+    {
+     "format": "bash",
+     "sources": 13,
+     "lines": 866,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 252,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 54,
+     "first": {
+      "name": "crates/host-core/src/db.rs",
+      "start": 1645,
+      "end": 1651
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 1811,
+       "end": 1817
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 1920,
+       "end": 1926
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2055,
+       "end": 2061
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2162,
+       "end": 2168
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2193,
+       "end": 2199
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2228,
+       "end": 2234
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2393,
+       "end": 2399
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2502,
+       "end": 2508
+      }
+     ],
+     "copies": 11,
+     "excerpt": {
+      "lines": [
+       "fn v14_database_migrates_to_v15_with_the_turn_queue() {",
+       "    let dir = tempfile::tempdir().unwrap();",
+       "    let path = dir.path().join(\"pi.sqlite\");",
+       "    {",
+       "        let db = Database::open(&path).unwrap();",
+       "        db.conn()",
+       "            .execute_batch("
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "fn migrates_v13_plugin_session_schema() {",
+       "    let dir = tempfile::tempdir().unwrap();",
+       "    let path = dir.path().join(\"pi.sqlite\");",
+       "    {",
+       "        let db = Database::open(&path).unwrap();",
+       "        db.conn()",
+       "            .execute("
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 52,
+     "first": {
+      "name": "crates/host-core/src/rpc/mod.rs",
+      "start": 1432,
+      "end": 1438
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 1442,
+       "end": 1448
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 1452,
+       "end": 1458
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 1480,
+       "end": 1486
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 1655,
+       "end": 1661
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 2086,
+       "end": 2092
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 2096,
+       "end": 2102
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 2523,
+       "end": 2529
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 2544,
+       "end": 2550
+      }
+     ],
+     "copies": 11,
+     "excerpt": {
+      "lines": [
+       "\"providers.delete\" => {",
+       "    let id = params",
+       "        .get(\"id\")",
+       "        .and_then(|v| v.as_str())",
+       "        .ok_or_else(|| rpc_err(1002, \"id required\", \"INVALID_PARAMS\"))?;",
+       "    let st = state.lock().await;",
+       "    let ok = providers::delete_provider(&st.db, &st.secrets, id)"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "\"providers.get\" => {",
+       "    let id = params",
+       "        .get(\"id\")",
+       "        .and_then(|v| v.as_str())",
+       "        .ok_or_else(|| rpc_err(1002, \"id required\", \"INVALID_PARAMS\"))?;",
+       "    let st = state.lock().await;",
+       "    let provider = providers::get_provider(&st.db, &st.secrets, id)"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 100,
+     "first": {
+      "name": "crates/host-core/src/rpc/mod.rs",
+      "start": 5054,
+      "end": 5065
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 5141,
+       "end": 5152
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 5254,
+       "end": 5265
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 5437,
+       "end": 5448
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 5516,
+       "end": 5527
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "async fn tools_abort_before_approval_cleans_the_cancellation_registry() {",
+       "    let Some(shell_id) = available_test_shell_id() else {",
+       "        return;",
+       "    };",
+       "    let data_dir = tempfile::tempdir().unwrap();",
+       "    let project = data_dir.path().join(\"project\");",
+       "    fs::create_dir_all(&project).unwrap();",
+       "    let mut app_state = AppState::open(data_dir.path()).unwrap();",
+       "    app_state.handshook = true;",
+       "    let session = sessions::create_session("
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 19,
+     "tokens": 103,
+     "first": {
+      "name": "crates/host-core/src/rpc/mod.rs",
+      "start": 4950,
+      "end": 4968
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 5359,
+       "end": 5377
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 5448,
+       "end": 5466
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 5527,
+       "end": 5545
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 51,
+     "first": {
+      "name": "crates/host-core/src/db.rs",
+      "start": 1812,
+      "end": 1817
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 1921,
+       "end": 1926
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2056,
+       "end": 2061
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2163,
+       "end": 2168
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2194,
+       "end": 2199
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2229,
+       "end": 2234
+      },
+      {
+       "name": "crates/host-core/src/db.rs",
+       "start": 2394,
+       "end": 2399
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 75,
+     "first": {
+      "name": "crates/host-core/src/rpc/mod.rs",
+      "start": 3999,
+      "end": 4005
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 4085,
+       "end": 4091
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 4465,
+       "end": 4472
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 4735,
+       "end": 4741
+      },
+      {
+       "name": "crates/host-core/src/rpc/mod.rs",
+       "start": 6650,
+       "end": 6657
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 57,
+     "first": {
+      "name": "crates/host-core/src/plans.rs",
+      "start": 1407,
+      "end": 1417
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1532,
+       "end": 1542
+      },
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1547,
+       "end": 1557
+      },
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1666,
+       "end": 1676
+      },
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1749,
+       "end": 1759
+      },
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1891,
+       "end": 1901
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 64,
+     "first": {
+      "name": "crates/host-core/src/plans.rs",
+      "start": 1395,
+      "end": 1401
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1491,
+       "end": 1497
+      },
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1526,
+       "end": 1532
+      },
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1586,
+       "end": 1592
+      },
+      {
+       "name": "crates/host-core/src/plans.rs",
+       "start": 1660,
+       "end": 1666
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 83,
+     "first": {
+      "name": "crates/host-core/src/sessions.rs",
+      "start": 5115,
+      "end": 5120
+     },
+     "others": [
+      {
+       "name": "crates/host-core/src/sessions.rs",
+       "start": 5162,
+       "end": 5167
+      },
+      {
+       "name": "crates/host-core/src/sessions.rs",
+       "start": 5220,
+       "end": 5225
+      },
+      {
+       "name": "crates/host-core/src/sessions.rs",
+       "start": 5244,
+       "end": 5249
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 13,
+     "tokens": 116,
+     "first": {
+      "name": "apps/desktop/src/components/settings/LanguageRow.tsx",
+      "start": 68,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "apps/desktop/src/components/settings/ServicePicker.tsx",
+       "start": 69,
+       "end": 81
+      },
+      {
+       "name": "apps/desktop/src/components/settings/ThemeRow.tsx",
+       "start": 77,
+       "end": 89
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "packages/shared/src/changelog.ts",
+     "scripts/release.mjs"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:57:03.540Z",
+  "jscpdVersion": "5.4.0"
  }
 }

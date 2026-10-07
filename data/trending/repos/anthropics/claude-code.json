@@ -9,10 +9,12 @@
    "starsToday": 165,
    "headSha": "68ac8bbf0245b615b41517bf8f2b2f35af1ae31d",
    "sources": 566,
-   "lines": 97337,
+   "lines": 79824,
    "clones": 53,
-   "duplicatedLines": 708,
-   "percentage": 0.73,
+   "duplicatedLines": 761,
+   "percentage": 0.95,
+   "codePercentage": 1.43,
+   "codeSources": 213,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 538,
    "headSha": "31a3b00bef145a0393d9dbf840a98674fec07712",
    "sources": 566,
-   "lines": 97487,
+   "lines": 79974,
    "clones": 53,
-   "duplicatedLines": 708,
-   "percentage": 0.73,
+   "duplicatedLines": 761,
+   "percentage": 0.95,
+   "codePercentage": 1.43,
+   "codeSources": 213,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 444,
    "headSha": "bf7d404e26a5fb6167d21b46c93a2bf6c22ab274",
    "sources": 594,
-   "lines": 101392,
+   "lines": 83878,
    "clones": 57,
-   "duplicatedLines": 778,
-   "percentage": 0.77,
+   "duplicatedLines": 835,
+   "percentage": 1,
+   "codePercentage": 1.37,
+   "codeSources": 232,
    "healthScore": 72.6,
    "healthGrade": "B"
   },
@@ -51,10 +57,12 @@
    "starsToday": 483,
    "headSha": "bf7d404e26a5fb6167d21b46c93a2bf6c22ab274",
    "sources": 594,
-   "lines": 101392,
+   "lines": 83878,
    "clones": 57,
-   "duplicatedLines": 778,
-   "percentage": 0.77,
+   "duplicatedLines": 835,
+   "percentage": 1,
+   "codePercentage": 1.37,
+   "codeSources": 232,
    "healthScore": 72.6,
    "healthGrade": "B"
   },
@@ -65,10 +73,12 @@
    "starsToday": 419,
    "headSha": "7974a70773fa229e4cc65aa1b356cc21f5c216c4",
    "sources": 645,
-   "lines": 104122,
+   "lines": 86608,
    "clones": 67,
-   "duplicatedLines": 862,
-   "percentage": 0.83,
+   "duplicatedLines": 929,
+   "percentage": 1.07,
+   "codePercentage": 1.26,
+   "codeSources": 268,
    "healthScore": 73.6,
    "healthGrade": "B"
   },
@@ -79,10 +89,12 @@
    "starsToday": 128,
    "headSha": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
    "sources": 689,
-   "lines": 91972,
+   "lines": 91928,
    "clones": 90,
    "duplicatedLines": 1191,
-   "percentage": 1.29,
+   "percentage": 1.3,
+   "codePercentage": 1.21,
+   "codeSources": 277,
    "healthScore": 73.4,
    "healthGrade": "B"
   }
@@ -98,15 +110,15 @@
   "starsToday": 128,
   "defaultBranch": "main",
   "headSha": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
-  "durationMs": 1198,
+  "durationMs": 398,
   "total": {
    "sources": 689,
-   "lines": 91972,
-   "tokens": 609354,
+   "lines": 91928,
+   "tokens": 609189,
    "clones": 90,
    "duplicatedLines": 1191,
    "duplicatedTokens": 7552,
-   "percentage": 1.29,
+   "percentage": 1.3,
    "percentageTokens": 1.24
   },
   "formats": [
@@ -153,7 +165,7 @@
    {
     "format": "bash",
     "sources": 47,
-    "lines": 5597,
+    "lines": 5547,
     "clones": 1,
     "duplicatedLines": 7,
     "percentage": 0.13
@@ -196,151 +208,265 @@
     "format": "markdown",
     "lines": 120,
     "tokens": 1149,
-    "firstFile": {
+    "first": {
      "name": "plugins/plugin-dev/skills/skill-development/SKILL.md:markdown",
      "start": 9,
      "end": 128
     },
-    "secondFile": {
-     "name": "plugins/plugin-dev/skills/skill-development/references/skill-creator-original.md:markdown",
-     "start": 9,
-     "end": 128
-    }
+    "others": [
+     {
+      "name": "plugins/plugin-dev/skills/skill-development/references/skill-creator-original.md:markdown",
+      "start": 9,
+      "end": 128
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "This skill provides guidance for creating effective skills for Claude Code plugins.",
+      "",
+      "## About Skills",
+      "",
+      "Skills are modular, self-contained packages that extend Claude's capabilities by providing",
+      "specialized knowledge, workflows, and tools. Think of them as \"onboarding guides\" for specific",
+      "domains or tasks—they transform Claude from a general-purpose agent into a specialized agent",
+      "equipped with procedural knowledge that no model can fully possess.",
+      "",
+      "### What Skills Provide"
+     ],
+     "total": 120
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 15,
     "tokens": 189,
-    "firstFile": {
+    "first": {
      "name": "plugins/feature-dev/agents/code-reviewer.md:markdown",
      "start": 9,
      "end": 23
     },
-    "secondFile": {
-     "name": "plugins/pr-review-toolkit/agents/code-reviewer.md:markdown",
-     "start": 8,
-     "end": 22
-    }
+    "others": [
+     {
+      "name": "plugins/pr-review-toolkit/agents/code-reviewer.md:markdown",
+      "start": 8,
+      "end": 22
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "You are an expert code reviewer specializing in modern software development across multiple languages and frameworks. Your primary responsibility is to review …",
+      "",
+      "## Review Scope",
+      "",
+      "By default, review unstaged changes from `git diff`. The user may specify different files or scope to review.",
+      "",
+      "## Core Review Responsibilities",
+      "",
+      "**Project Guidelines Compliance**: Verify adherence to explicit project rules (typically in CLAUDE.md or equivalent) including import patterns, framework conve…",
+      ""
+     ],
+     "total": 15
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 7,
     "tokens": 161,
-    "firstFile": {
+    "first": {
      "name": "plugins/plugin-dev/skills/skill-development/SKILL.md:markdown",
      "start": 150,
      "end": 156
     },
-    "secondFile": {
-     "name": "plugins/plugin-dev/skills/skill-development/references/skill-creator-original.md:markdown",
-     "start": 157,
-     "end": 163
-    }
+    "others": [
+     {
+      "name": "plugins/plugin-dev/skills/skill-development/references/skill-creator-original.md:markdown",
+      "start": 157,
+      "end": 163
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "When editing the (newly-created or existing) skill, remember that the skill is being created for another instance of Claude to use. Focus on including informat…",
+      "",
+      "#### Start with Reusable Skill Contents",
+      "",
+      "To begin implementation, start with the reusable resources identified above: `scripts/`, `references/`, and `assets/` files. Note that this step may require us…",
+      "",
+      "Also, delete any example files and directories not needed for the skill. Create only the directories you actually need (references/, examples/, scripts/)."
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "When editing the (newly-generated or existing) skill, remember that the skill is being created for another instance of Claude to use. Focus on including inform…",
+      "",
+      "#### Start with Reusable Skill Contents",
+      "",
+      "To begin implementation, start with the reusable resources identified above: `scripts/`, `references/`, and `assets/` files. Note that this step may require us…",
+      "",
+      "Also, delete any example files and directories not needed for the skill. The initialization script creates example files in `scripts/`, `references/`, and `ass…"
+     ],
+     "total": 7
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "hcl",
+    "lines": 8,
+    "tokens": 50,
+    "first": {
+     "name": "examples/gateway/gcp/terraform/main.tf",
+     "start": 155,
+     "end": 162
+    },
+    "others": [
+     {
+      "name": "examples/gateway/gcp/terraform/main.tf",
+      "start": 177,
+      "end": 184
+     },
+     {
+      "name": "examples/gateway/gcp/terraform/main.tf",
+      "start": 193,
+      "end": 200
+     },
+     {
+      "name": "examples/gateway/gcp/terraform/main.tf",
+      "start": 222,
+      "end": 229
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 28,
     "tokens": 144,
-    "firstFile": {
+    "first": {
      "name": "plugins/hookify/hooks/posttooluse.py",
      "start": 4,
      "end": 31
     },
-    "secondFile": {
-     "name": "plugins/hookify/hooks/userpromptsubmit.py",
-     "start": 4,
-     "end": 31
-    }
+    "others": [
+     {
+      "name": "plugins/hookify/hooks/userpromptsubmit.py",
+      "start": 4,
+      "end": 31
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 25,
     "tokens": 142,
-    "firstFile": {
+    "first": {
      "name": "mods/diff/tests/register.test.ts",
      "start": 610,
      "end": 634
     },
-    "secondFile": {
-     "name": "mods/diff/tests/register.test.ts",
-     "start": 671,
-     "end": 694
-    }
+    "others": [
+     {
+      "name": "mods/diff/tests/register.test.ts",
+      "start": 671,
+      "end": 694
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 14,
     "tokens": 138,
-    "firstFile": {
+    "first": {
      "name": ".claude/commands/commit-push-pr.md:markdown",
      "start": 6,
      "end": 19
     },
-    "secondFile": {
-     "name": "plugins/commit-commands/commands/commit-push-pr.md:markdown",
-     "start": 6,
-     "end": 20
-    }
+    "others": [
+     {
+      "name": "plugins/commit-commands/commands/commit-push-pr.md:markdown",
+      "start": 6,
+      "end": 20
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 67,
+    "first": {
+     "name": "mods/sec-default/tests/register.test.ts",
+     "start": 499,
+     "end": 507
+    },
+    "others": [
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 571,
+      "end": 579
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 586,
+      "end": 594
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 66,
+    "first": {
+     "name": "mods/sec-default/tests/register.test.ts",
+     "start": 558,
+     "end": 569
+    },
+    "others": [
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 573,
+      "end": 584
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 588,
+      "end": 599
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 12,
     "tokens": 129,
-    "firstFile": {
+    "first": {
      "name": "plugins/security-guidance/hooks/llm.py",
      "start": 1391,
      "end": 1402
     },
-    "secondFile": {
-     "name": "plugins/security-guidance/hooks/review_api.py",
-     "start": 306,
-     "end": 323
-    }
-   },
-   {
-    "format": "python",
-    "lines": 27,
-    "tokens": 128,
-    "firstFile": {
-     "name": "plugins/hookify/hooks/posttooluse.py",
-     "start": 5,
-     "end": 31
-    },
-    "secondFile": {
-     "name": "plugins/hookify/hooks/stop.py",
-     "start": 5,
-     "end": 31
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 25,
-    "tokens": 126,
-    "firstFile": {
-     "name": "mods/telemetry/tests/gate.test.ts",
-     "start": 135,
-     "end": 159
-    },
-    "secondFile": {
-     "name": "mods/telemetry/tests/gate.test.ts",
-     "start": 163,
-     "end": 187
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 18,
-    "tokens": 120,
-    "firstFile": {
-     "name": "mods/sec-default/tests/register.test.ts",
-     "start": 160,
-     "end": 177
-    },
-    "secondFile": {
-     "name": "mods/sec-default/tests/register.test.ts",
-     "start": 179,
-     "end": 196
-    }
+    "others": [
+     {
+      "name": "plugins/security-guidance/hooks/review_api.py",
+      "start": 306,
+      "end": 323
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -550,6 +676,325 @@
      "lines": 9
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 277,
+   "lines": 21432,
+   "tokens": 106466,
+   "clones": 14,
+   "duplicatedLines": 260,
+   "duplicatedTokens": 1177,
+   "percentage": 1.21,
+   "percentageTokens": 1.11,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 17,
+     "lines": 7827,
+     "clones": 11,
+     "duplicatedLines": 223,
+     "percentage": 2.85
+    },
+    {
+     "format": "typescript",
+     "sources": 215,
+     "lines": 9649,
+     "clones": 3,
+     "duplicatedLines": 37,
+     "percentage": 0.38
+    },
+    {
+     "format": "bash",
+     "sources": 22,
+     "lines": 2420,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "tsx",
+     "sources": 21,
+     "lines": 1210,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 152,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 28,
+     "tokens": 144,
+     "first": {
+      "name": "plugins/hookify/hooks/posttooluse.py",
+      "start": 4,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "plugins/hookify/hooks/userpromptsubmit.py",
+       "start": 4,
+       "end": 31
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "This script is called by Claude Code after a tool executes.",
+       "It reads .claude/hookify.*.local.md files and evaluates rules.",
+       "\"\"\"",
+       "",
+       "import os",
+       "import sys",
+       "import json",
+       "",
+       "# CRITICAL: Add plugin root to Python path for imports",
+       "PLUGIN_ROOT = os.environ.get('CLAUDE_PLUGIN_ROOT')"
+      ],
+      "total": 28
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 129,
+     "first": {
+      "name": "plugins/security-guidance/hooks/llm.py",
+      "start": 1391,
+      "end": 1402
+     },
+     "others": [
+      {
+       "name": "plugins/security-guidance/hooks/review_api.py",
+       "start": 306,
+       "end": 323
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "added = [ln[1:] for ln in diff_text.splitlines()",
+       "         if ln.startswith(\"+\") and not ln.startswith(\"+++\")]",
+       "removed = [ln[1:] for ln in diff_text.splitlines()",
+       "           if ln.startswith(\"-\") and not ln.startswith(\"---\")]",
+       "",
+       "def _norm(s: str) -> str:",
+       "    return \" \".join(t for t in \" \".join(s.split()).split() if len(t) > 2)",
+       "",
+       "added_norm = _norm(\"\\n\".join(added))",
+       "removed_norm = _norm(\"\\n\".join(removed))"
+      ],
+      "total": 12
+     },
+     "excerptSecond": {
+      "lines": [
+       "added = [",
+       "    ln[1:]",
+       "    for ln in diff_text.splitlines()",
+       "    if ln.startswith(\"+\") and not ln.startswith(\"+++\")",
+       "]",
+       "removed = [",
+       "    ln[1:]",
+       "    for ln in diff_text.splitlines()",
+       "    if ln.startswith(\"-\") and not ln.startswith(\"---\")",
+       "]"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 27,
+     "tokens": 128,
+     "first": {
+      "name": "plugins/hookify/hooks/posttooluse.py",
+      "start": 5,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "plugins/hookify/hooks/stop.py",
+       "start": 5,
+       "end": 31
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "It reads .claude/hookify.*.local.md files and evaluates rules.",
+       "\"\"\"",
+       "",
+       "import os",
+       "import sys",
+       "import json",
+       "",
+       "# CRITICAL: Add plugin root to Python path for imports",
+       "PLUGIN_ROOT = os.environ.get('CLAUDE_PLUGIN_ROOT')",
+       "if PLUGIN_ROOT:"
+      ],
+      "total": 27
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 103,
+     "first": {
+      "name": "plugins/security-guidance/hooks/security_reminder_hook.py",
+      "start": 1347,
+      "end": 1355
+     },
+     "others": [
+      {
+       "name": "plugins/security-guidance/hooks/security_reminder_hook.py",
+       "start": 1904,
+       "end": 1912
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 73,
+     "tokens": 91,
+     "first": {
+      "name": "plugins/security-guidance/hooks/llm.py",
+      "start": 1455,
+      "end": 1527
+     },
+     "others": [
+      {
+       "name": "plugins/security-guidance/hooks/review_api.py",
+       "start": 211,
+       "end": 283
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 82,
+     "first": {
+      "name": "plugins/hookify/hooks/posttooluse.py",
+      "start": 37,
+      "end": 54
+     },
+     "others": [
+      {
+       "name": "plugins/hookify/hooks/pretooluse.py",
+       "start": 43,
+       "end": 61
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 79,
+     "first": {
+      "name": "plugins/hookify/hooks/posttooluse.py",
+      "start": 45,
+      "end": 66
+     },
+     "others": [
+      {
+       "name": "plugins/hookify/hooks/userpromptsubmit.py",
+       "start": 37,
+       "end": 58
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 72,
+     "first": {
+      "name": "plugins/security-guidance/hooks/llm.py",
+      "start": 297,
+      "end": 306
+     },
+     "others": [
+      {
+       "name": "plugins/security-guidance/hooks/llm.py",
+       "start": 1093,
+       "end": 1102
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 65,
+     "first": {
+      "name": "scripts/auto-close-duplicates.ts",
+      "start": 34,
+      "end": 47
+     },
+     "others": [
+      {
+       "name": "scripts/backfill-duplicate-comments.ts",
+       "start": 32,
+       "end": 45
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 62,
+     "first": {
+      "name": "scripts/auto-close-duplicates.ts",
+      "start": 25,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "scripts/backfill-duplicate-comments.ts",
+       "start": 23,
+       "end": 32
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:26:52.744Z",
+  "jscpdVersion": "5.4.0"
  }
 }

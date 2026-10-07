@@ -9,10 +9,12 @@
    "starsToday": 217,
    "headSha": "2c5b384715aa63d8639b1ed7eb74bfe614570c7a",
    "sources": 159,
-   "lines": 39923,
+   "lines": 39879,
    "clones": 132,
    "duplicatedLines": 2090,
    "percentage": 5.24,
+   "codePercentage": 4.06,
+   "codeSources": 142,
    "healthScore": 69.3,
    "healthGrade": "C"
   }
@@ -28,11 +30,11 @@
   "starsToday": 217,
   "defaultBranch": "main",
   "headSha": "2c5b384715aa63d8639b1ed7eb74bfe614570c7a",
-  "durationMs": 670,
+  "durationMs": 104,
   "total": {
    "sources": 159,
-   "lines": 39923,
-   "tokens": 259287,
+   "lines": 39879,
+   "tokens": 259122,
    "clones": 132,
    "duplicatedLines": 2090,
    "duplicatedTokens": 12518,
@@ -59,10 +61,10 @@
    {
     "format": "bash",
     "sources": 41,
-    "lines": 2637,
+    "lines": 2587,
     "clones": 5,
     "duplicatedLines": 40,
-    "percentage": 1.52
+    "percentage": 1.55
    },
    {
     "format": "markdown",
@@ -75,7 +77,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -110,151 +112,256 @@
     "format": "python",
     "lines": 33,
     "tokens": 359,
-    "firstFile": {
+    "first": {
      "name": "unimate/dataset/mixture/augmentations.py",
      "start": 238,
      "end": 270
     },
-    "secondFile": {
-     "name": "unimate/dataset/mixture/augmentations.py",
-     "start": 358,
-     "end": 390
-    }
+    "others": [
+     {
+      "name": "unimate/dataset/mixture/augmentations.py",
+      "start": 358,
+      "end": 390
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "new_motion = np.zeros((n_frames, 1, D), dtype=motion.dtype)",
+      "new_motion[:, 0, 3:9] = motion[:, ji, 3:9]",
+      "",
+      "aug['motion'] = np.concatenate(",
+      "    [motion[:, :ji], new_motion, motion[:, ji:]], axis=1,",
+      ")",
+      "aug['offsets'] = np.concatenate(",
+      "    [offsets[:ji], offset_new[None], offsets[ji:]], axis=0,",
+      ")",
+      "aug['offsets'][ji + 1] = offset_ji_rem"
+     ],
+     "total": 33
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 40,
     "tokens": 295,
-    "firstFile": {
+    "first": {
      "name": "data_process/motion_rendering/render_mixamo.py",
      "start": 102,
      "end": 141
     },
-    "secondFile": {
-     "name": "data_process/motion_rendering/render_truebones.py",
-     "start": 106,
-     "end": 145
-    }
+    "others": [
+     {
+      "name": "data_process/motion_rendering/render_truebones.py",
+      "start": 106,
+      "end": 145
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "                         \"mesh_animation/animate_mixamo.py.\")",
+      "parser.add_argument(\"--output_dir\", type=str, required=True,",
+      "                    help=\"Output directory.\")",
+      "parser.add_argument(\"--scale\", type=float, default=1.0,",
+      "                    help=\"Scene normalization scale.\")",
+      "parser.add_argument(\"--camera_dist\", type=float, default=1.5,",
+      "                    help=\"Camera distance from origin.\")",
+      "parser.add_argument(\"--resolution\", type=int, default=512,",
+      "                    help=\"Render resolution (square).\")",
+      "parser.add_argument(\"--fps\", type=int, default=RENDER_FPS,"
+     ],
+     "total": 40
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 33,
     "tokens": 248,
-    "firstFile": {
+    "first": {
      "name": "unimate/models/denoiser/blocks/cross.py",
      "start": 147,
      "end": 179
     },
-    "secondFile": {
-     "name": "unimate/models/denoiser/blocks/graph.py",
-     "start": 303,
-     "end": 335
-    }
+    "others": [
+     {
+      "name": "unimate/models/denoiser/blocks/graph.py",
+      "start": 303,
+      "end": 335
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "(shift_s, scale_s, gate_s,",
+      " shift_t, scale_t, gate_t,",
+      " shift_m, scale_m, gate_m) = self.adaLN_modulation(c).chunk(9, dim=-1)",
+      "",
+      "def expand_to_x(z):",
+      "    return z[:, None, None, :]",
+      "",
+      "use_ckpt = self.gradient_checkpointing and self.training",
+      "",
+      "# spatial attn"
+     ],
+     "total": 33
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 8,
+    "tokens": 121,
+    "first": {
+     "name": "data_process/utils/plotting.py",
+     "start": 645,
+     "end": 652
+    },
+    "others": [
+     {
+      "name": "data_process/utils/plotting.py",
+      "start": 750,
+      "end": 757
+     },
+     {
+      "name": "data_process/utils/plotting.py",
+      "start": 1194,
+      "end": 1201
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 34,
     "tokens": 240,
-    "firstFile": {
+    "first": {
      "name": "data_process/utils/topology.py",
      "start": 140,
      "end": 173
     },
-    "secondFile": {
-     "name": "unimate/utils/topology_utils.py",
-     "start": 167,
-     "end": 201
-    }
+    "others": [
+     {
+      "name": "unimate/utils/topology_utils.py",
+      "start": 167,
+      "end": 201
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 25,
     "tokens": 205,
-    "firstFile": {
+    "first": {
      "name": "unimate/models/diffusion/gaussian_diffusion.py",
      "start": 504,
      "end": 528
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 555,
+      "end": 579
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 15,
+    "tokens": 51,
+    "first": {
      "name": "unimate/models/diffusion/gaussian_diffusion.py",
-     "start": 555,
-     "end": 579
-    }
+     "start": 647,
+     "end": 661
+    },
+    "others": [
+     {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 782,
+      "end": 796
+     },
+     {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 848,
+      "end": 862
+     },
+     {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 1255,
+      "end": 1269
+     },
+     {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 1297,
+      "end": 1311
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 32,
     "tokens": 199,
-    "firstFile": {
+    "first": {
      "name": "unimate/models/denoiser/full_adaln.py",
      "start": 80,
      "end": 111
     },
-    "secondFile": {
-     "name": "unimate/models/denoiser/full_cross_attn.py",
-     "start": 103,
-     "end": 134
-    }
+    "others": [
+     {
+      "name": "unimate/models/denoiser/full_cross_attn.py",
+      "start": 103,
+      "end": 134
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 29,
     "tokens": 190,
-    "firstFile": {
+    "first": {
      "name": "unimate/models/denoiser/full_adaln.py",
      "start": 23,
      "end": 51
     },
-    "secondFile": {
-     "name": "unimate/models/denoiser/full_cross_attn.py",
-     "start": 27,
-     "end": 55
-    }
+    "others": [
+     {
+      "name": "unimate/models/denoiser/full_cross_attn.py",
+      "start": 27,
+      "end": 55
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 29,
     "tokens": 188,
-    "firstFile": {
+    "first": {
      "name": "unimate/models/diffusion/gaussian_diffusion.py",
      "start": 806,
      "end": 834
     },
-    "secondFile": {
-     "name": "unimate/models/diffusion/gaussian_diffusion.py",
-     "start": 1130,
-     "end": 1158
-    }
-   },
-   {
-    "format": "python",
-    "lines": 19,
-    "tokens": 182,
-    "firstFile": {
-     "name": "unimate/models/diffusion/gaussian_diffusion.py",
-     "start": 503,
-     "end": 521
-    },
-    "secondFile": {
-     "name": "unimate/models/diffusion/gaussian_diffusion.py",
-     "start": 607,
-     "end": 625
-    }
-   },
-   {
-    "format": "python",
-    "lines": 16,
-    "tokens": 182,
-    "firstFile": {
-     "name": "unimate/models/diffusion/gaussian_diffusion.py",
-     "start": 670,
-     "end": 685
-    },
-    "secondFile": {
-     "name": "unimate/models/diffusion/gaussian_diffusion.py",
-     "start": 734,
-     "end": 749
-    }
+    "others": [
+     {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 1130,
+      "end": 1158
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -460,6 +567,306 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 142,
+   "lines": 37949,
+   "tokens": 238678,
+   "clones": 113,
+   "duplicatedLines": 1540,
+   "duplicatedTokens": 10618,
+   "percentage": 4.06,
+   "percentageTokens": 4.45,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 102,
+     "lines": 35286,
+     "clones": 108,
+     "duplicatedLines": 1500,
+     "percentage": 4.25
+    },
+    {
+     "format": "bash",
+     "sources": 39,
+     "lines": 2489,
+     "clones": 5,
+     "duplicatedLines": 40,
+     "percentage": 1.61
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 33,
+     "tokens": 359,
+     "first": {
+      "name": "unimate/dataset/mixture/augmentations.py",
+      "start": 238,
+      "end": 270
+     },
+     "others": [
+      {
+       "name": "unimate/dataset/mixture/augmentations.py",
+       "start": 358,
+       "end": 390
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "new_motion = np.zeros((n_frames, 1, D), dtype=motion.dtype)",
+       "new_motion[:, 0, 3:9] = motion[:, ji, 3:9]",
+       "",
+       "aug['motion'] = np.concatenate(",
+       "    [motion[:, :ji], new_motion, motion[:, ji:]], axis=1,",
+       ")",
+       "aug['offsets'] = np.concatenate(",
+       "    [offsets[:ji], offset_new[None], offsets[ji:]], axis=0,",
+       ")",
+       "aug['offsets'][ji + 1] = offset_ji_rem"
+      ],
+      "total": 33
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 40,
+     "tokens": 295,
+     "first": {
+      "name": "data_process/motion_rendering/render_mixamo.py",
+      "start": 102,
+      "end": 141
+     },
+     "others": [
+      {
+       "name": "data_process/motion_rendering/render_truebones.py",
+       "start": 106,
+       "end": 145
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "                         \"mesh_animation/animate_mixamo.py.\")",
+       "parser.add_argument(\"--output_dir\", type=str, required=True,",
+       "                    help=\"Output directory.\")",
+       "parser.add_argument(\"--scale\", type=float, default=1.0,",
+       "                    help=\"Scene normalization scale.\")",
+       "parser.add_argument(\"--camera_dist\", type=float, default=1.5,",
+       "                    help=\"Camera distance from origin.\")",
+       "parser.add_argument(\"--resolution\", type=int, default=512,",
+       "                    help=\"Render resolution (square).\")",
+       "parser.add_argument(\"--fps\", type=int, default=RENDER_FPS,"
+      ],
+      "total": 40
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 33,
+     "tokens": 248,
+     "first": {
+      "name": "unimate/models/denoiser/blocks/cross.py",
+      "start": 147,
+      "end": 179
+     },
+     "others": [
+      {
+       "name": "unimate/models/denoiser/blocks/graph.py",
+       "start": 303,
+       "end": 335
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "(shift_s, scale_s, gate_s,",
+       " shift_t, scale_t, gate_t,",
+       " shift_m, scale_m, gate_m) = self.adaLN_modulation(c).chunk(9, dim=-1)",
+       "",
+       "def expand_to_x(z):",
+       "    return z[:, None, None, :]",
+       "",
+       "use_ckpt = self.gradient_checkpointing and self.training",
+       "",
+       "# spatial attn"
+      ],
+      "total": 33
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 121,
+     "first": {
+      "name": "data_process/utils/plotting.py",
+      "start": 645,
+      "end": 652
+     },
+     "others": [
+      {
+       "name": "data_process/utils/plotting.py",
+       "start": 750,
+       "end": 757
+      },
+      {
+       "name": "data_process/utils/plotting.py",
+       "start": 1194,
+       "end": 1201
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 34,
+     "tokens": 240,
+     "first": {
+      "name": "data_process/utils/topology.py",
+      "start": 140,
+      "end": 173
+     },
+     "others": [
+      {
+       "name": "unimate/utils/topology_utils.py",
+       "start": 167,
+       "end": 201
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 25,
+     "tokens": 205,
+     "first": {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 504,
+      "end": 528
+     },
+     "others": [
+      {
+       "name": "unimate/models/diffusion/gaussian_diffusion.py",
+       "start": 555,
+       "end": 579
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 51,
+     "first": {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 647,
+      "end": 661
+     },
+     "others": [
+      {
+       "name": "unimate/models/diffusion/gaussian_diffusion.py",
+       "start": 782,
+       "end": 796
+      },
+      {
+       "name": "unimate/models/diffusion/gaussian_diffusion.py",
+       "start": 848,
+       "end": 862
+      },
+      {
+       "name": "unimate/models/diffusion/gaussian_diffusion.py",
+       "start": 1255,
+       "end": 1269
+      },
+      {
+       "name": "unimate/models/diffusion/gaussian_diffusion.py",
+       "start": 1297,
+       "end": 1311
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 32,
+     "tokens": 199,
+     "first": {
+      "name": "unimate/models/denoiser/full_adaln.py",
+      "start": 80,
+      "end": 111
+     },
+     "others": [
+      {
+       "name": "unimate/models/denoiser/full_cross_attn.py",
+       "start": 103,
+       "end": 134
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 29,
+     "tokens": 190,
+     "first": {
+      "name": "unimate/models/denoiser/full_adaln.py",
+      "start": 23,
+      "end": 51
+     },
+     "others": [
+      {
+       "name": "unimate/models/denoiser/full_cross_attn.py",
+       "start": 27,
+       "end": 55
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 29,
+     "tokens": 188,
+     "first": {
+      "name": "unimate/models/diffusion/gaussian_diffusion.py",
+      "start": 806,
+      "end": 834
+     },
+     "others": [
+      {
+       "name": "unimate/models/diffusion/gaussian_diffusion.py",
+       "start": 1130,
+       "end": 1158
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:36:53.314Z",
+  "jscpdVersion": "5.4.0"
  }
 }

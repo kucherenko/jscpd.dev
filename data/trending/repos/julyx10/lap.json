@@ -9,10 +9,12 @@
    "starsToday": 122,
    "headSha": "69a1633836d9a6a5d63f6ed8fcaf0f253f133726",
    "sources": 459,
-   "lines": 140984,
+   "lines": 140940,
    "clones": 267,
    "duplicatedLines": 2929,
    "percentage": 2.08,
+   "codePercentage": 1.99,
+   "codeSources": 263,
    "healthScore": 59.4,
    "healthGrade": "C"
   }
@@ -28,11 +30,11 @@
   "starsToday": 122,
   "defaultBranch": "main",
   "headSha": "69a1633836d9a6a5d63f6ed8fcaf0f253f133726",
-  "durationMs": 1238,
+  "durationMs": 236,
   "total": {
    "sources": 459,
-   "lines": 140984,
-   "tokens": 892719,
+   "lines": 140940,
+   "tokens": 892554,
    "clones": 267,
    "duplicatedLines": 2929,
    "duplicatedTokens": 21608,
@@ -75,10 +77,10 @@
    {
     "format": "bash",
     "sources": 21,
-    "lines": 1277,
+    "lines": 1227,
     "clones": 8,
     "duplicatedLines": 72,
-    "percentage": 5.64
+    "percentage": 5.87
    },
    {
     "format": "html",
@@ -123,154 +125,342 @@
   ],
   "topClones": [
    {
+    "format": "bash",
+    "lines": 26,
+    "tokens": 88,
+    "first": {
+     "name": "README.md:bash",
+     "start": 171,
+     "end": 196
+    },
+    "others": [
+     {
+      "name": "i18n/README.de.md:bash",
+      "start": 168,
+      "end": 193
+     },
+     {
+      "name": "i18n/README.es.md:bash",
+      "start": 168,
+      "end": 193
+     },
+     {
+      "name": "i18n/README.fr.md:bash",
+      "start": 168,
+      "end": 193
+     },
+     {
+      "name": "i18n/README.ja.md:bash",
+      "start": 168,
+      "end": 193
+     },
+     {
+      "name": "i18n/README.ko.md:bash",
+      "start": 168,
+      "end": 193
+     },
+     {
+      "name": "i18n/README.pt.md:bash",
+      "start": 168,
+      "end": 193
+     },
+     {
+      "name": "i18n/README.ru.md:bash",
+      "start": 168,
+      "end": 193
+     },
+     {
+      "name": "i18n/README.zh-CN.md:bash",
+      "start": 180,
+      "end": 205
+     }
+    ],
+    "copies": 9,
+    "excerpt": {
+     "lines": [
+      "git clone --recursive https://github.com/julyx10/lap.git",
+      "cd lap",
+      "git submodule update --init --recursive",
+      "cargo install tauri-cli --version \"^2.0.0\" --locked",
+      "./scripts/download_models.sh            # Windows: .\\scripts\\download_models.ps1",
+      "./scripts/download_ffmpeg_sidecar.sh    # Windows: .\\scripts\\download_ffmpeg_sidecar.ps1",
+      "cd src-vite && pnpm install && cd ..",
+      "cargo tauri dev",
+      "```",
+      ""
+     ],
+     "total": 26
+    },
+    "kind": "docs"
+   },
+   {
     "format": "yaml",
     "lines": 65,
     "tokens": 448,
-    "firstFile": {
+    "first": {
      "name": ".github/workflows/pr-build.yml",
      "start": 257,
      "end": 321
     },
-    "secondFile": {
-     "name": ".github/workflows/release-windows.yml",
-     "start": 104,
-     "end": 170
-    }
+    "others": [
+     {
+      "name": ".github/workflows/release-windows.yml",
+      "start": 104,
+      "end": 170
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "      windows-${{ matrix.arch }}-cargo-pr-",
+      "",
+      "- name: Install frontend dependencies",
+      "  working-directory: src-vite",
+      "  run: pnpm install --frozen-lockfile",
+      "",
+      "- name: Cache AI Models",
+      "  id: cache-ai-models",
+      "  uses: actions/cache@v4",
+      "  with:"
+     ],
+     "total": 65
+    },
+    "kind": "data"
+   },
+   {
+    "format": "markdown",
+    "lines": 9,
+    "tokens": 86,
+    "first": {
+     "name": "i18n/README.de.md:markdown",
+     "start": 4,
+     "end": 12
+    },
+    "others": [
+     {
+      "name": "i18n/README.fr.md:markdown",
+      "start": 4,
+      "end": 12
+     },
+     {
+      "name": "i18n/README.ja.md:markdown",
+      "start": 4,
+      "end": 12
+     },
+     {
+      "name": "i18n/README.ko.md:markdown",
+      "start": 4,
+      "end": 12
+     },
+     {
+      "name": "i18n/README.pt.md:markdown",
+      "start": 4,
+      "end": 12
+     },
+     {
+      "name": "i18n/README.ru.md:markdown",
+      "start": 4,
+      "end": 12
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "  <h3>Open-Source-Desktop-Fotomanager für macOS, Windows und Linux.</h3>",
+      "  <p>",
+      "    <a href=\"https://github.com/julyx10/lap/releases\"><img src=\"https://img.shields.io/github/v/release/julyx10/lap\" alt=\"GitHub release\"></a>",
+      "    <a href=\"https://github.com/julyx10/lap/releases\"><img src=\"https://img.shields.io/github/downloads/julyx10/lap/total\" alt=\"GitHub all releases\"></a>",
+      "    <a href=\"https://github.com/julyx10/lap/stargazers\"><img src=\"https://img.shields.io/github/stars/julyx10/lap\" alt=\"GitHub stars\"></a>",
+      "  </p>",
+      "</div>",
+      "",
+      "[English](../README.md) | Deutsch | [Français](README.fr.md) | [Español](README.es.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [简体中文](README.zh…"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "  <h3>Gestionnaire de photos de bureau open source pour macOS, Windows et Linux.</h3>",
+      "  <p>",
+      "    <a href=\"https://github.com/julyx10/lap/releases\"><img src=\"https://img.shields.io/github/v/release/julyx10/lap\" alt=\"GitHub release\"></a>",
+      "    <a href=\"https://github.com/julyx10/lap/releases\"><img src=\"https://img.shields.io/github/downloads/julyx10/lap/total\" alt=\"GitHub all releases\"></a>",
+      "    <a href=\"https://github.com/julyx10/lap/stargazers\"><img src=\"https://img.shields.io/github/stars/julyx10/lap\" alt=\"GitHub stars\"></a>",
+      "  </p>",
+      "</div>",
+      "",
+      "[English](../README.md) | [Deutsch](README.de.md) | Français | [Español](README.es.md) | [Português](README.pt.md) | [Русский](README.ru.md) | [简体中文](README.zh…"
+     ],
+     "total": 9
+    },
+    "kind": "translations"
    },
    {
     "format": "yaml",
     "lines": 49,
     "tokens": 375,
-    "firstFile": {
+    "first": {
      "name": ".github/workflows/pr-build.yml",
      "start": 73,
      "end": 121
     },
-    "secondFile": {
-     "name": ".github/workflows/release.yml",
-     "start": 86,
-     "end": 134
-    }
+    "others": [
+     {
+      "name": ".github/workflows/release.yml",
+      "start": 86,
+      "end": 134
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 172,
+    "first": {
+     "name": "src-tauri/src/t_sqlite.rs",
+     "start": 5166,
+     "end": 5180
+    },
+    "others": [
+     {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 5249,
+      "end": 5263
+     },
+     {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 6081,
+      "end": 6096
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 11,
+    "tokens": 154,
+    "first": {
+     "name": "src-tauri/src/t_sqlite.rs",
+     "start": 1690,
+     "end": 1700
+    },
+    "others": [
+     {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 7978,
+      "end": 7988
+     },
+     {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 8003,
+      "end": 8013
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 50,
+    "first": {
+     "name": "src-vite/src/views/Settings.vue:typescript",
+     "start": 791,
+     "end": 800
+    },
+    "others": [
+     {
+      "name": "src-vite/src/views/Settings.vue:typescript",
+      "start": 819,
+      "end": 829
+     },
+     {
+      "name": "src-vite/src/views/Settings.vue:typescript",
+      "start": 944,
+      "end": 954
+     },
+     {
+      "name": "src-vite/src/views/Settings.vue:typescript",
+      "start": 961,
+      "end": 971
+     },
+     {
+      "name": "src-vite/src/views/Settings.vue:typescript",
+      "start": 978,
+      "end": 988
+     },
+     {
+      "name": "src-vite/src/views/Settings.vue:typescript",
+      "start": 1007,
+      "end": 1018
+     },
+     {
+      "name": "src-vite/src/views/Settings.vue:typescript",
+      "start": 1034,
+      "end": 1044
+     }
+    ],
+    "copies": 7,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 31,
     "tokens": 254,
-    "firstFile": {
+    "first": {
      "name": "src-vite/src/components/Content.vue:typescript",
      "start": 2444,
      "end": 2474
     },
-    "secondFile": {
-     "name": "src-vite/src/views/ImageViewer.vue:typescript",
-     "start": 694,
-     "end": 723
-    }
+    "others": [
+     {
+      "name": "src-vite/src/views/ImageViewer.vue:typescript",
+      "start": 694,
+      "end": 723
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 25,
     "tokens": 241,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/t_dedup.rs",
      "start": 315,
      "end": 339
     },
-    "secondFile": {
-     "name": "src-tauri/src/t_sqlite.rs",
-     "start": 3258,
-     "end": 3285
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 3258,
+      "end": 3285
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "yaml",
     "lines": 39,
     "tokens": 237,
-    "firstFile": {
+    "first": {
      "name": ".github/workflows/pr-build.yml",
      "start": 217,
      "end": 255
     },
-    "secondFile": {
-     "name": ".github/workflows/release-windows.yml",
-     "start": 64,
-     "end": 102
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 34,
-    "tokens": 231,
-    "firstFile": {
-     "name": "src-tauri/src/t_heif.rs",
-     "start": 92,
-     "end": 125
-    },
-    "secondFile": {
-     "name": "src-tauri/src/t_heif.rs",
-     "start": 134,
-     "end": 167
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 21,
-    "tokens": 212,
-    "firstFile": {
-     "name": "src-tauri/src/t_sqlite.rs",
-     "start": 9125,
-     "end": 9145
-    },
-    "secondFile": {
-     "name": "src-tauri/src/t_sqlite.rs",
-     "start": 9203,
-     "end": 9223
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 24,
-    "tokens": 193,
-    "firstFile": {
-     "name": "src-tauri/src/t_sqlite.rs",
-     "start": 4981,
-     "end": 5004
-    },
-    "secondFile": {
-     "name": "src-tauri/src/t_sqlite.rs",
-     "start": 5970,
-     "end": 5993
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 20,
-    "tokens": 184,
-    "firstFile": {
-     "name": "src-tauri/src/t_sqlite.rs",
-     "start": 6079,
-     "end": 6098
-    },
-    "secondFile": {
-     "name": "src-tauri/src/t_sqlite.rs",
-     "start": 6110,
-     "end": 6129
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 28,
-    "tokens": 181,
-    "firstFile": {
-     "name": "src-tauri/src/t_cmds.rs",
-     "start": 1598,
-     "end": 1625
-    },
-    "secondFile": {
-     "name": "src-tauri/src/t_cmds.rs",
-     "start": 1677,
-     "end": 1704
-    }
+    "others": [
+     {
+      "name": ".github/workflows/release-windows.yml",
+      "start": 64,
+      "end": 102
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    }
   ],
   "health": {
@@ -492,6 +682,402 @@
      "lines": 10
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 263,
+   "lines": 118943,
+   "tokens": 779815,
+   "clones": 224,
+   "duplicatedLines": 2363,
+   "duplicatedTokens": 17467,
+   "percentage": 1.99,
+   "percentageTokens": 2.24,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 29,
+     "lines": 32537,
+     "clones": 140,
+     "duplicatedLines": 1507,
+     "percentage": 4.63
+    },
+    {
+     "format": "typescript",
+     "sources": 69,
+     "lines": 30559,
+     "clones": 71,
+     "duplicatedLines": 735,
+     "percentage": 2.41
+    },
+    {
+     "format": "html",
+     "sources": 57,
+     "lines": 5763,
+     "clones": 6,
+     "duplicatedLines": 64,
+     "percentage": 1.11
+    },
+    {
+     "format": "javascript",
+     "sources": 20,
+     "lines": 4920,
+     "clones": 4,
+     "duplicatedLines": 37,
+     "percentage": 0.75
+    },
+    {
+     "format": "cpp",
+     "sources": 2,
+     "lines": 530,
+     "clones": 1,
+     "duplicatedLines": 8,
+     "percentage": 1.51
+    },
+    {
+     "format": "css",
+     "sources": 8,
+     "lines": 325,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 1.85
+    },
+    {
+     "format": "objectivec",
+     "sources": 1,
+     "lines": 92,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 6.52
+    },
+    {
+     "format": "vue",
+     "sources": 61,
+     "lines": 42793,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 984,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 172,
+     "first": {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 5166,
+      "end": 5180
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 5249,
+       "end": 5263
+      },
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 6081,
+       "end": 6096
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "query.push_str(&format!(\" ORDER BY {}\", Self::build_order_clause(params)));",
+       "",
+       "let final_params: Vec<&dyn ToSql> = sql_params.iter().map(|p| p.as_ref()).collect();",
+       "let conn = open_conn()?;",
+       "let mut stmt = conn.prepare(&query).map_err(|e| e.to_string())?;",
+       "let rows = stmt",
+       "    .query_map(&final_params[..], |row| row.get::<_, i64>(0))",
+       "    .map_err(|e| e.to_string())?;",
+       "",
+       "let mut ids = Vec::new();"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 154,
+     "first": {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 1690,
+      "end": 1700
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 7978,
+       "end": 7988
+      },
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 8003,
+       "end": 8013
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "     GROUP BY cf.collection_id\",",
+       "    AFile::live_photo_companion_exclusion_condition(),",
+       "    AFile::album_filter_sql(\"a\"),",
+       "    AFile::inaccessible_album_filter(\"b\"),",
+       "    AFile::search_exclusion_condition(\"b\"),",
+       ");",
+       "let mut stmt = conn.prepare(&query).map_err(|e| e.to_string())?;",
+       "let rows = stmt.query_map([], |row| Ok((row.get::<_, i64>(0)?, row.get::<_, i64>(1)?)))",
+       "    .map_err(|e| e.to_string())?;",
+       "rows.collect::<Result<HashMap<_, _>, _>>().map_err(|e| e.to_string())"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 50,
+     "first": {
+      "name": "src-vite/src/views/Settings.vue:typescript",
+      "start": 791,
+      "end": 800
+     },
+     "others": [
+      {
+       "name": "src-vite/src/views/Settings.vue:typescript",
+       "start": 819,
+       "end": 829
+      },
+      {
+       "name": "src-vite/src/views/Settings.vue:typescript",
+       "start": 944,
+       "end": 954
+      },
+      {
+       "name": "src-vite/src/views/Settings.vue:typescript",
+       "start": 961,
+       "end": 971
+      },
+      {
+       "name": "src-vite/src/views/Settings.vue:typescript",
+       "start": 978,
+       "end": 988
+      },
+      {
+       "name": "src-vite/src/views/Settings.vue:typescript",
+       "start": 1007,
+       "end": 1018
+      },
+      {
+       "name": "src-vite/src/views/Settings.vue:typescript",
+       "start": 1034,
+       "end": 1044
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "    : localeMsg.value.settings.general.theme_options_dark;",
+       "",
+       "  const result = [];",
+       "  for (let i = 0; i < options.length; i++) {",
+       "    result.push({ label: options[i], value: i });",
+       "  }",
+       "  return result;",
+       "});",
+       "",
+       "const currentTheme = computed({"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "  const options = localeMsg.value.settings.browse.folder_sort_options || [];",
+       "  const result = [];",
+       "",
+       "  for (let i = 0; i < options.length; i++) {",
+       "    result.push({ label: options[i], value: i });",
+       "  }",
+       "",
+       "  return result;",
+       "});",
+       ""
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 31,
+     "tokens": 254,
+     "first": {
+      "name": "src-vite/src/components/Content.vue:typescript",
+      "start": 2444,
+      "end": 2474
+     },
+     "others": [
+      {
+       "name": "src-vite/src/views/ImageViewer.vue:typescript",
+       "start": 694,
+       "end": 723
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 25,
+     "tokens": 241,
+     "first": {
+      "name": "src-tauri/src/t_dedup.rs",
+      "start": 315,
+      "end": 339
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 3258,
+       "end": 3285
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 34,
+     "tokens": 231,
+     "first": {
+      "name": "src-tauri/src/t_heif.rs",
+      "start": 92,
+      "end": 125
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_heif.rs",
+       "start": 134,
+       "end": 167
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 21,
+     "tokens": 212,
+     "first": {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 9125,
+      "end": 9145
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 9203,
+       "end": 9223
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 24,
+     "tokens": 193,
+     "first": {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 4981,
+      "end": 5004
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 5970,
+       "end": 5993
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 96,
+     "first": {
+      "name": "src-tauri/src/t_image.rs",
+      "start": 364,
+      "end": 375
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_jxl.rs",
+       "start": 8,
+       "end": 19
+      },
+      {
+       "name": "src-tauri/src/t_libraw.rs",
+       "start": 108,
+       "end": 119
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 93,
+     "first": {
+      "name": "src-tauri/src/t_sqlite.rs",
+      "start": 3472,
+      "end": 3485
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 5005,
+       "end": 5018
+      },
+      {
+       "name": "src-tauri/src/t_sqlite.rs",
+       "start": 5994,
+       "end": 6007
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:24:27.299Z",
+  "jscpdVersion": "5.4.0"
  }
 }

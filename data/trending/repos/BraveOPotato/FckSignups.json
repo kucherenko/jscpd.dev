@@ -9,10 +9,12 @@
    "starsToday": 68,
    "headSha": "530abdd667923a44e93eeca7435ff56ee4294761",
    "sources": 62,
-   "lines": 9838,
+   "lines": 9793,
    "clones": 9,
-   "duplicatedLines": 122,
-   "percentage": 1.24,
+   "duplicatedLines": 131,
+   "percentage": 1.34,
+   "codePercentage": 2.79,
+   "codeSources": 41,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 436,
    "headSha": "dae24891d8f2ba143744685f8fdf286f83598cec",
    "sources": 64,
-   "lines": 9860,
+   "lines": 9815,
    "clones": 9,
-   "duplicatedLines": 122,
-   "percentage": 1.24,
+   "duplicatedLines": 131,
+   "percentage": 1.33,
+   "codePercentage": 2.77,
+   "codeSources": 42,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 501,
    "headSha": "5dcc2627982916954208ac9398f2bb6716f0deaf",
    "sources": 64,
-   "lines": 9941,
+   "lines": 9896,
    "clones": 9,
-   "duplicatedLines": 122,
-   "percentage": 1.23,
+   "duplicatedLines": 131,
+   "percentage": 1.32,
+   "codePercentage": 2.77,
+   "codeSources": 42,
    "healthScore": null,
    "healthGrade": null
   }
@@ -56,15 +62,15 @@
   "starsToday": 501,
   "defaultBranch": "main",
   "headSha": "5dcc2627982916954208ac9398f2bb6716f0deaf",
-  "durationMs": 568,
+  "durationMs": 73,
   "total": {
    "sources": 64,
-   "lines": 9941,
-   "tokens": 39778,
+   "lines": 9896,
+   "tokens": 39741,
    "clones": 9,
-   "duplicatedLines": 122,
+   "duplicatedLines": 131,
    "duplicatedTokens": 643,
-   "percentage": 1.23,
+   "percentage": 1.32,
    "percentageTokens": 1.62
   },
   "formats": [
@@ -73,24 +79,24 @@
     "sources": 11,
     "lines": 867,
     "clones": 4,
-    "duplicatedLines": 68,
-    "percentage": 7.84
+    "duplicatedLines": 72,
+    "percentage": 8.3
    },
    {
     "format": "css",
     "sources": 12,
     "lines": 1727,
     "clones": 3,
-    "duplicatedLines": 30,
-    "percentage": 1.74
+    "duplicatedLines": 33,
+    "percentage": 1.91
    },
    {
     "format": "tsx",
     "sources": 17,
     "lines": 1440,
     "clones": 2,
-    "duplicatedLines": 24,
-    "percentage": 1.67
+    "duplicatedLines": 26,
+    "percentage": 1.81
    },
    {
     "format": "json",
@@ -103,7 +109,7 @@
    {
     "format": "bash",
     "sources": 9,
-    "lines": 694,
+    "lines": 644,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -127,7 +133,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -143,7 +149,7 @@
    {
     "format": "yaml",
     "sources": 1,
-    "lines": 7,
+    "lines": 6,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -154,137 +160,382 @@
     "format": "typescript",
     "lines": 22,
     "tokens": 105,
-    "firstFile": {
+    "first": {
      "name": "cloudflare-worker/urlHandlers/handleReportTool.ts",
      "start": 46,
      "end": 67
     },
-    "secondFile": {
-     "name": "cloudflare-worker/urlHandlers/handleSubmitTool.ts",
-     "start": 60,
-     "end": 81
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 22,
-    "tokens": 104,
-    "firstFile": {
-     "name": "cloudflare-worker/urlHandlers/handleReportTool.ts",
-     "start": 46,
-     "end": 67
+    "others": [
+     {
+      "name": "cloudflare-worker/urlHandlers/handleSubmitTool.ts",
+      "start": 60,
+      "end": 81
+     },
+     {
+      "name": "cloudflare-worker/urlHandlers/handleSuggestTool.ts",
+      "start": 44,
+      "end": 65
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "      title: `[Tool Report] ${sub.toolId}`,",
+      "      body: issueBody,",
+      "      labels: labels,",
+      "    }),",
+      "  },",
+      ");",
+      "",
+      "if (!res.ok) {",
+      "  const err = (await res.json().catch(() => ({}))) as { message?: string };",
+      "  console.error(\"GitHub API error:\", err.message);"
+     ],
+     "total": 22
     },
-    "secondFile": {
-     "name": "cloudflare-worker/urlHandlers/handleSuggestTool.ts",
-     "start": 44,
-     "end": 65
-    }
-   },
-   {
-    "format": "tsx",
-    "lines": 16,
-    "tokens": 88,
-    "firstFile": {
-     "name": "src/hooks/useModal/fieldsMaker.tsx",
-     "start": 16,
-     "end": 31
-    },
-    "secondFile": {
-     "name": "src/hooks/useModal/fieldsMaker.tsx",
-     "start": 39,
-     "end": 54
-    }
-   },
-   {
-    "format": "css",
-    "lines": 12,
-    "tokens": 72,
-    "firstFile": {
-     "name": "src/components/Home/Header/Header.module.css",
-     "start": 135,
-     "end": 146
-    },
-    "secondFile": {
-     "name": "src/styles/index.css",
-     "start": 107,
-     "end": 118
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 14,
-    "tokens": 57,
-    "firstFile": {
-     "name": "cloudflare-worker/urlHandlers/handleReportTool.ts",
-     "start": 33,
-     "end": 46
-    },
-    "secondFile": {
-     "name": "cloudflare-worker/urlHandlers/handleSuggestTool.ts",
-     "start": 31,
-     "end": 44
-    }
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 14,
     "tokens": 56,
-    "firstFile": {
+    "first": {
      "name": "cloudflare-worker/urlHandlers/handleReportTool.ts",
      "start": 33,
      "end": 46
     },
-    "secondFile": {
-     "name": "cloudflare-worker/urlHandlers/handleSubmitTool.ts",
-     "start": 47,
-     "end": 60
-    }
+    "others": [
+     {
+      "name": "cloudflare-worker/urlHandlers/handleSubmitTool.ts",
+      "start": 47,
+      "end": 60
+     },
+     {
+      "name": "cloudflare-worker/urlHandlers/handleSuggestTool.ts",
+      "start": 31,
+      "end": 44
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "const labels = [\"tool-report\"];",
+      "",
+      "const res = await fetch(",
+      "  `https://api.github.com/repos/${env.GITHUB_REPO_OWNER}/${env.GITHUB_REPO_NAME}/issues`,",
+      "  {",
+      "    method: \"POST\",",
+      "    headers: {",
+      "      Authorization: `Bearer ${env.GITHUB_TOKEN}`,",
+      "      \"Content-Type\": \"application/json\",",
+      "      Accept: \"application/vnd.github+json\","
+     ],
+     "total": 14
+    },
+    "kind": "code"
+   },
+   {
+    "format": "tsx",
+    "lines": 16,
+    "tokens": 88,
+    "first": {
+     "name": "src/hooks/useModal/fieldsMaker.tsx",
+     "start": 16,
+     "end": 31
+    },
+    "others": [
+     {
+      "name": "src/hooks/useModal/fieldsMaker.tsx",
+      "start": 39,
+      "end": 54
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "function makeTextField(",
+      "  field: TextField,",
+      "  fieldValues: ModalFieldValues,",
+      "  updateField: (name: string, value: string) => void,",
+      ") {",
+      "  return (",
+      "    <>",
+      "      <label className=\"modal-label\" htmlFor={field.name}>",
+      "        {field.label}",
+      "      </label>"
+     ],
+     "total": 16
+    },
+    "kind": "code"
+   },
+   {
+    "format": "css",
+    "lines": 12,
+    "tokens": 72,
+    "first": {
+     "name": "src/components/Home/Header/Header.module.css",
+     "start": 135,
+     "end": 146
+    },
+    "others": [
+     {
+      "name": "src/styles/index.css",
+      "start": 107,
+      "end": 118
+     }
+    ],
+    "copies": 2,
+    "kind": "styles"
    },
    {
     "format": "css",
     "lines": 11,
     "tokens": 55,
-    "firstFile": {
+    "first": {
      "name": "src/components/Home/Tools/ToolCard/ToolCard.module.css",
      "start": 182,
      "end": 192
     },
-    "secondFile": {
-     "name": "src/components/Home/Tools/ToolCard/ToolCard.module.css",
-     "start": 194,
-     "end": 204
-    }
+    "others": [
+     {
+      "name": "src/components/Home/Tools/ToolCard/ToolCard.module.css",
+      "start": 194,
+      "end": 204
+     }
+    ],
+    "copies": 2,
+    "kind": "styles"
    },
    {
     "format": "css",
     "lines": 10,
     "tokens": 54,
-    "firstFile": {
+    "first": {
      "name": "src/components/Home/Tools/ToolCard/ToolCard.module.css",
      "start": 183,
      "end": 192
     },
-    "secondFile": {
-     "name": "src/components/Home/Tools/ToolCard/ToolCard.module.css",
-     "start": 205,
-     "end": 214
-    }
+    "others": [
+     {
+      "name": "src/components/Home/Tools/ToolCard/ToolCard.module.css",
+      "start": 205,
+      "end": 214
+     }
+    ],
+    "copies": 2,
+    "kind": "styles"
    },
    {
     "format": "tsx",
     "lines": 10,
     "tokens": 52,
-    "firstFile": {
+    "first": {
      "name": "src/hooks/useModal/fieldsMaker.tsx",
      "start": 17,
      "end": 26
     },
-    "secondFile": {
-     "name": "src/hooks/useModal/fieldsMaker.tsx",
-     "start": 98,
-     "end": 107
-    }
+    "others": [
+     {
+      "name": "src/hooks/useModal/fieldsMaker.tsx",
+      "start": 98,
+      "end": 107
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 42,
+   "lines": 3538,
+   "tokens": 15720,
+   "clones": 6,
+   "duplicatedLines": 98,
+   "duplicatedTokens": 462,
+   "percentage": 2.77,
+   "percentageTokens": 2.94,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 11,
+     "lines": 867,
+     "clones": 4,
+     "duplicatedLines": 72,
+     "percentage": 8.3
+    },
+    {
+     "format": "tsx",
+     "sources": 17,
+     "lines": 1440,
+     "clones": 2,
+     "duplicatedLines": 26,
+     "percentage": 1.81
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 4,
+     "lines": 413,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 105,
+     "first": {
+      "name": "cloudflare-worker/urlHandlers/handleReportTool.ts",
+      "start": 46,
+      "end": 67
+     },
+     "others": [
+      {
+       "name": "cloudflare-worker/urlHandlers/handleSubmitTool.ts",
+       "start": 60,
+       "end": 81
+      },
+      {
+       "name": "cloudflare-worker/urlHandlers/handleSuggestTool.ts",
+       "start": 44,
+       "end": 65
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "      title: `[Tool Report] ${sub.toolId}`,",
+       "      body: issueBody,",
+       "      labels: labels,",
+       "    }),",
+       "  },",
+       ");",
+       "",
+       "if (!res.ok) {",
+       "  const err = (await res.json().catch(() => ({}))) as { message?: string };",
+       "  console.error(\"GitHub API error:\", err.message);"
+      ],
+      "total": 22
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 56,
+     "first": {
+      "name": "cloudflare-worker/urlHandlers/handleReportTool.ts",
+      "start": 33,
+      "end": 46
+     },
+     "others": [
+      {
+       "name": "cloudflare-worker/urlHandlers/handleSubmitTool.ts",
+       "start": 47,
+       "end": 60
+      },
+      {
+       "name": "cloudflare-worker/urlHandlers/handleSuggestTool.ts",
+       "start": 31,
+       "end": 44
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "const labels = [\"tool-report\"];",
+       "",
+       "const res = await fetch(",
+       "  `https://api.github.com/repos/${env.GITHUB_REPO_OWNER}/${env.GITHUB_REPO_NAME}/issues`,",
+       "  {",
+       "    method: \"POST\",",
+       "    headers: {",
+       "      Authorization: `Bearer ${env.GITHUB_TOKEN}`,",
+       "      \"Content-Type\": \"application/json\",",
+       "      Accept: \"application/vnd.github+json\","
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 16,
+     "tokens": 88,
+     "first": {
+      "name": "src/hooks/useModal/fieldsMaker.tsx",
+      "start": 16,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "src/hooks/useModal/fieldsMaker.tsx",
+       "start": 39,
+       "end": 54
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "function makeTextField(",
+       "  field: TextField,",
+       "  fieldValues: ModalFieldValues,",
+       "  updateField: (name: string, value: string) => void,",
+       ") {",
+       "  return (",
+       "    <>",
+       "      <label className=\"modal-label\" htmlFor={field.name}>",
+       "        {field.label}",
+       "      </label>"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 10,
+     "tokens": 52,
+     "first": {
+      "name": "src/hooks/useModal/fieldsMaker.tsx",
+      "start": 17,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "src/hooks/useModal/fieldsMaker.tsx",
+       "start": 98,
+       "end": 107
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:51:43.316Z",
+  "jscpdVersion": "5.4.0"
  }
 }

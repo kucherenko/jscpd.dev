@@ -9,10 +9,12 @@
    "starsToday": 44,
    "headSha": "529be9555ef93836833279a667cda07175abc29c",
    "sources": 807,
-   "lines": 226771,
+   "lines": 226727,
    "clones": 663,
    "duplicatedLines": 8283,
    "percentage": 3.65,
+   "codePercentage": 3.76,
+   "codeSources": 443,
    "healthScore": 62.4,
    "healthGrade": "C"
   }
@@ -28,11 +30,11 @@
   "starsToday": 44,
   "defaultBranch": "main",
   "headSha": "529be9555ef93836833279a667cda07175abc29c",
-  "durationMs": 1698,
+  "durationMs": 657,
   "total": {
    "sources": 807,
-   "lines": 226771,
-   "tokens": 1517056,
+   "lines": 226727,
+   "tokens": 1516891,
    "clones": 663,
    "duplicatedLines": 8283,
    "duplicatedTokens": 60135,
@@ -83,10 +85,10 @@
    {
     "format": "bash",
     "sources": 16,
-    "lines": 961,
+    "lines": 911,
     "clones": 1,
     "duplicatedLines": 3,
-    "percentage": 0.31
+    "percentage": 0.33
    },
    {
     "format": "yaml",
@@ -126,151 +128,261 @@
     "format": "tsx",
     "lines": 78,
     "tokens": 1087,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/pages/ConceptAnalysis.tsx",
      "start": 707,
      "end": 784
     },
-    "secondFile": {
-     "name": "frontend/src/pages/IndustryAnalysis.tsx",
-     "start": 776,
-     "end": 853
-    }
+    "others": [
+     {
+      "name": "frontend/src/pages/IndustryAnalysis.tsx",
+      "start": 776,
+      "end": 853
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    <span className=\"rounded-full bg-blue-400/10 px-2 py-0.5 text-[10px] text-blue-300\">强度 {stat.heatScore.toFixed(0)}</span>",
+      "  </div>",
+      "  <div className=\"mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted\">",
+      "    <span>{stat.count} 只成分</span>",
+      "    <span className={priceColorClass(stat.avgPct)}>平均 {stat.avgPct != null ? fmtPct(stat.avgPct) : '—'}</span>",
+      "    <span>上涨占比 {(stat.upRate * 100).toFixed(0)}%</span>",
+      "    <span>成交额 {fmtBigNum(stat.totalAmount)}</span>",
+      "    {stat.avgTurnover != null && <span>均换手 {stat.avgTurnover.toFixed(2)}%</span>}",
+      "  </div>",
+      "</div>"
+     ],
+     "total": 78
+    },
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 85,
     "tokens": 887,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/pages/ConceptAnalysis.tsx",
      "start": 552,
      "end": 636
     },
-    "secondFile": {
-     "name": "frontend/src/pages/IndustryAnalysis.tsx",
-     "start": 617,
-     "end": 703
-    }
+    "others": [
+     {
+      "name": "frontend/src/pages/IndustryAnalysis.tsx",
+      "start": 617,
+      "end": 703
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  items: ConceptStat[]",
+      "  mode: 'up' | 'down'",
+      "  selectedKey: string | null",
+      "  onSelect: (key: string) => void",
+      "  onStockClick: (symbol: string, name?: string, navList?: NavItem[]) => void",
+      "  activeSymbol: string | null",
+      "}) {",
+      "  const toneText = mode === 'up' ? 'text-bull' : 'text-bear'",
+      "  const toneBorder = mode === 'up' ? 'border-bull/20' : 'border-bear/20'",
+      "  const toneBg = mode === 'up' ? 'bg-bull/10' : 'bg-bear/10'"
+     ],
+     "total": 85
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 36,
+    "tokens": 238,
+    "first": {
+     "name": "frontend/src/lib/api.ts",
+     "start": 3408,
+     "end": 3443
+    },
+    "others": [
+     {
+      "name": "frontend/src/lib/api.ts",
+      "start": 3555,
+      "end": 3584
+     },
+     {
+      "name": "frontend/src/lib/api.ts",
+      "start": 3597,
+      "end": 3626
+     },
+     {
+      "name": "frontend/src/lib/api.ts",
+      "start": 3886,
+      "end": 3915
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "  body: JSON.stringify({ symbol, focus: focus ?? '' }),",
+      "})",
+      "if (!res.ok) {",
+      "  let detail = ''",
+      "  try { const j = JSON.parse(await res.text()); detail = j.detail ?? j.message ?? '' } catch { /* ignore */ }",
+      "  const msg = detail || `${res.status} ${res.statusText}`",
+      "  toast(msg, 'error')",
+      "  throw new Error(msg)",
+      "}",
+      "if (!res.body) throw new Error('响应无 body')"
+     ],
+     "total": 36
+    },
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 84,
     "tokens": 688,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/pages/ConceptAnalysis.tsx",
      "start": 87,
      "end": 170
     },
-    "secondFile": {
-     "name": "frontend/src/pages/IndustryAnalysis.tsx",
-     "start": 88,
-     "end": 176
-    }
+    "others": [
+     {
+      "name": "frontend/src/pages/IndustryAnalysis.tsx",
+      "start": 88,
+      "end": 176
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 44,
     "tokens": 580,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/pages/ConceptAnalysis.tsx",
      "start": 786,
      "end": 829
     },
-    "secondFile": {
-     "name": "frontend/src/pages/IndustryAnalysis.tsx",
-     "start": 855,
-     "end": 898
-    }
+    "others": [
+     {
+      "name": "frontend/src/pages/IndustryAnalysis.tsx",
+      "start": 855,
+      "end": 898
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 57,
     "tokens": 562,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/pages/ConceptAnalysis.tsx",
      "start": 170,
      "end": 226
     },
-    "secondFile": {
-     "name": "frontend/src/pages/IndustryAnalysis.tsx",
-     "start": 176,
-     "end": 232
-    }
+    "others": [
+     {
+      "name": "frontend/src/pages/IndustryAnalysis.tsx",
+      "start": 176,
+      "end": 232
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 55,
     "tokens": 462,
-    "firstFile": {
+    "first": {
      "name": "backend/app/api/overview.py",
      "start": 44,
      "end": 98
     },
-    "secondFile": {
-     "name": "backend/app/services/market_overview_builder.py",
-     "start": 158,
-     "end": 215
-    }
+    "others": [
+     {
+      "name": "backend/app/services/market_overview_builder.py",
+      "start": 158,
+      "end": 215
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 48,
     "tokens": 415,
-    "firstFile": {
+    "first": {
      "name": "backend/app/backtest/engine.py",
      "start": 1332,
      "end": 1379
     },
-    "secondFile": {
-     "name": "backend/app/backtest/engine.py",
-     "start": 2394,
-     "end": 2441
-    }
+    "others": [
+     {
+      "name": "backend/app/backtest/engine.py",
+      "start": 2394,
+      "end": 2441
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 61,
     "tokens": 413,
-    "firstFile": {
+    "first": {
      "name": "frontend/src/components/financials/AiAnalysisDialog.tsx",
      "start": 44,
      "end": 104
     },
-    "secondFile": {
-     "name": "frontend/src/components/stock-analysis/StockAnalysisDialog.tsx",
-     "start": 45,
-     "end": 103
-    }
-   },
-   {
-    "format": "tsx",
-    "lines": 46,
-    "tokens": 389,
-    "firstFile": {
-     "name": "frontend/src/components/EChartsCandlestick.tsx",
-     "start": 490,
-     "end": 535
-    },
-    "secondFile": {
-     "name": "frontend/src/components/EChartsCandlestick.tsx",
-     "start": 1181,
-     "end": 1225
-    }
+    "others": [
+     {
+      "name": "frontend/src/components/stock-analysis/StockAnalysisDialog.tsx",
+      "start": 45,
+      "end": 103
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
-    "lines": 58,
-    "tokens": 388,
-    "firstFile": {
-     "name": "backend/app/api/overview.py",
-     "start": 240,
-     "end": 297
+    "lines": 8,
+    "tokens": 102,
+    "first": {
+     "name": "backend/app/strategy/builtin/broken_board_recovery.py",
+     "start": 79,
+     "end": 86
     },
-    "secondFile": {
-     "name": "backend/app/services/market_overview_builder.py",
-     "start": 94,
-     "end": 151
-    }
+    "others": [
+     {
+      "name": "backend/app/strategy/builtin/low_volatility_leader.py",
+      "start": 76,
+      "end": 83
+     },
+     {
+      "name": "backend/app/strategy/builtin/macd_below_zero_revival.py",
+      "start": 77,
+      "end": 84
+     },
+     {
+      "name": "backend/app/strategy/builtin/platform_consolidation_breakout.py",
+      "start": 87,
+      "end": 94
+     },
+     {
+      "name": "backend/app/strategy/builtin/pullback_to_support.py",
+      "start": 93,
+      "end": 100
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    }
   ],
   "health": {
@@ -489,6 +601,343 @@
      "lines": 95
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 443,
+   "lines": 163575,
+   "tokens": 1079972,
+   "clones": 475,
+   "duplicatedLines": 6153,
+   "duplicatedTokens": 45684,
+   "percentage": 3.76,
+   "percentageTokens": 4.23,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 210,
+     "lines": 86072,
+     "clones": 246,
+     "duplicatedLines": 2720,
+     "percentage": 3.16
+    },
+    {
+     "format": "tsx",
+     "sources": 160,
+     "lines": 64192,
+     "clones": 195,
+     "duplicatedLines": 2748,
+     "percentage": 4.28
+    },
+    {
+     "format": "typescript",
+     "sources": 60,
+     "lines": 11696,
+     "clones": 33,
+     "duplicatedLines": 679,
+     "percentage": 5.81
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 293,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 2.05
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 847,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 301,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 78,
+     "tokens": 1087,
+     "first": {
+      "name": "frontend/src/pages/ConceptAnalysis.tsx",
+      "start": 707,
+      "end": 784
+     },
+     "others": [
+      {
+       "name": "frontend/src/pages/IndustryAnalysis.tsx",
+       "start": 776,
+       "end": 853
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    <span className=\"rounded-full bg-blue-400/10 px-2 py-0.5 text-[10px] text-blue-300\">强度 {stat.heatScore.toFixed(0)}</span>",
+       "  </div>",
+       "  <div className=\"mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted\">",
+       "    <span>{stat.count} 只成分</span>",
+       "    <span className={priceColorClass(stat.avgPct)}>平均 {stat.avgPct != null ? fmtPct(stat.avgPct) : '—'}</span>",
+       "    <span>上涨占比 {(stat.upRate * 100).toFixed(0)}%</span>",
+       "    <span>成交额 {fmtBigNum(stat.totalAmount)}</span>",
+       "    {stat.avgTurnover != null && <span>均换手 {stat.avgTurnover.toFixed(2)}%</span>}",
+       "  </div>",
+       "</div>"
+      ],
+      "total": 78
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 85,
+     "tokens": 887,
+     "first": {
+      "name": "frontend/src/pages/ConceptAnalysis.tsx",
+      "start": 552,
+      "end": 636
+     },
+     "others": [
+      {
+       "name": "frontend/src/pages/IndustryAnalysis.tsx",
+       "start": 617,
+       "end": 703
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  items: ConceptStat[]",
+       "  mode: 'up' | 'down'",
+       "  selectedKey: string | null",
+       "  onSelect: (key: string) => void",
+       "  onStockClick: (symbol: string, name?: string, navList?: NavItem[]) => void",
+       "  activeSymbol: string | null",
+       "}) {",
+       "  const toneText = mode === 'up' ? 'text-bull' : 'text-bear'",
+       "  const toneBorder = mode === 'up' ? 'border-bull/20' : 'border-bear/20'",
+       "  const toneBg = mode === 'up' ? 'bg-bull/10' : 'bg-bear/10'"
+      ],
+      "total": 85
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 36,
+     "tokens": 238,
+     "first": {
+      "name": "frontend/src/lib/api.ts",
+      "start": 3408,
+      "end": 3443
+     },
+     "others": [
+      {
+       "name": "frontend/src/lib/api.ts",
+       "start": 3555,
+       "end": 3584
+      },
+      {
+       "name": "frontend/src/lib/api.ts",
+       "start": 3597,
+       "end": 3626
+      },
+      {
+       "name": "frontend/src/lib/api.ts",
+       "start": 3886,
+       "end": 3915
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "  body: JSON.stringify({ symbol, focus: focus ?? '' }),",
+       "})",
+       "if (!res.ok) {",
+       "  let detail = ''",
+       "  try { const j = JSON.parse(await res.text()); detail = j.detail ?? j.message ?? '' } catch { /* ignore */ }",
+       "  const msg = detail || `${res.status} ${res.statusText}`",
+       "  toast(msg, 'error')",
+       "  throw new Error(msg)",
+       "}",
+       "if (!res.body) throw new Error('响应无 body')"
+      ],
+      "total": 36
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 84,
+     "tokens": 688,
+     "first": {
+      "name": "frontend/src/pages/ConceptAnalysis.tsx",
+      "start": 87,
+      "end": 170
+     },
+     "others": [
+      {
+       "name": "frontend/src/pages/IndustryAnalysis.tsx",
+       "start": 88,
+       "end": 176
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 44,
+     "tokens": 580,
+     "first": {
+      "name": "frontend/src/pages/ConceptAnalysis.tsx",
+      "start": 786,
+      "end": 829
+     },
+     "others": [
+      {
+       "name": "frontend/src/pages/IndustryAnalysis.tsx",
+       "start": 855,
+       "end": 898
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 57,
+     "tokens": 562,
+     "first": {
+      "name": "frontend/src/pages/ConceptAnalysis.tsx",
+      "start": 170,
+      "end": 226
+     },
+     "others": [
+      {
+       "name": "frontend/src/pages/IndustryAnalysis.tsx",
+       "start": 176,
+       "end": 232
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 55,
+     "tokens": 462,
+     "first": {
+      "name": "backend/app/api/overview.py",
+      "start": 44,
+      "end": 98
+     },
+     "others": [
+      {
+       "name": "backend/app/services/market_overview_builder.py",
+       "start": 158,
+       "end": 215
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 48,
+     "tokens": 415,
+     "first": {
+      "name": "backend/app/backtest/engine.py",
+      "start": 1332,
+      "end": 1379
+     },
+     "others": [
+      {
+       "name": "backend/app/backtest/engine.py",
+       "start": 2394,
+       "end": 2441
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 61,
+     "tokens": 413,
+     "first": {
+      "name": "frontend/src/components/financials/AiAnalysisDialog.tsx",
+      "start": 44,
+      "end": 104
+     },
+     "others": [
+      {
+       "name": "frontend/src/components/stock-analysis/StockAnalysisDialog.tsx",
+       "start": 45,
+       "end": 103
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 102,
+     "first": {
+      "name": "backend/app/strategy/builtin/broken_board_recovery.py",
+      "start": 79,
+      "end": 86
+     },
+     "others": [
+      {
+       "name": "backend/app/strategy/builtin/low_volatility_leader.py",
+       "start": 76,
+       "end": 83
+      },
+      {
+       "name": "backend/app/strategy/builtin/macd_below_zero_revival.py",
+       "start": 77,
+       "end": 84
+      },
+      {
+       "name": "backend/app/strategy/builtin/platform_consolidation_breakout.py",
+       "start": 87,
+       "end": 94
+      },
+      {
+       "name": "backend/app/strategy/builtin/pullback_to_support.py",
+       "start": 93,
+       "end": 100
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:26:43.374Z",
+  "jscpdVersion": "5.4.0"
  }
 }

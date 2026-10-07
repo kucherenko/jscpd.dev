@@ -9,10 +9,12 @@
    "starsToday": 417,
    "headSha": "51f49dea198384b4eb6087b72c17057c6eb1c1cd",
    "sources": 488,
-   "lines": 120559,
+   "lines": 113896,
    "clones": 214,
-   "duplicatedLines": 17246,
-   "percentage": 14.31,
+   "duplicatedLines": 17444,
+   "percentage": 15.32,
+   "codePercentage": 3.81,
+   "codeSources": 319,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 667,
    "headSha": "51f49dea198384b4eb6087b72c17057c6eb1c1cd",
    "sources": 488,
-   "lines": 120559,
+   "lines": 113896,
    "clones": 214,
-   "duplicatedLines": 17246,
-   "percentage": 14.31,
+   "duplicatedLines": 17444,
+   "percentage": 15.32,
+   "codePercentage": 3.81,
+   "codeSources": 319,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,15 +46,15 @@
   "starsToday": 667,
   "defaultBranch": "main",
   "headSha": "51f49dea198384b4eb6087b72c17057c6eb1c1cd",
-  "durationMs": 728,
+  "durationMs": 2201,
   "total": {
    "sources": 488,
-   "lines": 120559,
-   "tokens": 560432,
+   "lines": 113896,
+   "tokens": 560331,
    "clones": 214,
-   "duplicatedLines": 17246,
+   "duplicatedLines": 17444,
    "duplicatedTokens": 58447,
-   "percentage": 14.31,
+   "percentage": 15.32,
    "percentageTokens": 10.43
   },
   "formats": [
@@ -59,72 +63,72 @@
     "sources": 142,
     "lines": 30172,
     "clones": 74,
-    "duplicatedLines": 983,
-    "percentage": 3.26
+    "duplicatedLines": 1057,
+    "percentage": 3.5
    },
    {
     "format": "python",
     "sources": 122,
-    "lines": 26902,
+    "lines": 26352,
     "clones": 53,
-    "duplicatedLines": 728,
-    "percentage": 2.71
+    "duplicatedLines": 781,
+    "percentage": 2.96
    },
    {
     "format": "typescript",
     "sources": 87,
-    "lines": 9085,
+    "lines": 8884,
     "clones": 28,
-    "duplicatedLines": 342,
-    "percentage": 3.76
+    "duplicatedLines": 370,
+    "percentage": 4.16
    },
    {
     "format": "rust",
     "sources": 17,
     "lines": 5700,
     "clones": 26,
-    "duplicatedLines": 293,
-    "percentage": 5.14
+    "duplicatedLines": 319,
+    "percentage": 5.6
    },
    {
     "format": "json",
     "sources": 32,
-    "lines": 32274,
+    "lines": 32138,
     "clones": 23,
-    "duplicatedLines": 14746,
-    "percentage": 45.69
+    "duplicatedLines": 14769,
+    "percentage": 45.95
    },
    {
     "format": "yaml",
     "sources": 10,
-    "lines": 1314,
+    "lines": 759,
     "clones": 4,
-    "duplicatedLines": 41,
-    "percentage": 3.12
-   },
-   {
-    "format": "text",
-    "sources": 13,
-    "lines": 3048,
-    "clones": 2,
-    "duplicatedLines": 23,
-    "percentage": 0.75
+    "duplicatedLines": 45,
+    "percentage": 5.93
    },
    {
     "format": "javascript",
     "sources": 3,
     "lines": 487,
     "clones": 2,
-    "duplicatedLines": 59,
-    "percentage": 12.11
+    "duplicatedLines": 61,
+    "percentage": 12.53
+   },
+   {
+    "format": "text",
+    "sources": 13,
+    "lines": 273,
+    "clones": 2,
+    "duplicatedLines": 9,
+    "percentage": 3.3
    },
    {
     "format": "markup",
     "sources": 3,
     "lines": 70,
     "clones": 2,
-    "duplicatedLines": 31,
-    "percentage": 44.29
+    "duplicatedLines": 33,
+    "percentage": 47.14
    },
    {
     "format": "markdown",
@@ -140,152 +144,668 @@
     "format": "json",
     "lines": 6242,
     "tokens": 18415,
-    "firstFile": {
+    "first": {
      "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
      "start": 1,
      "end": 6242
     },
-    "secondFile": {
-     "name": "tauri/src-tauri/gen/schemas/macOS-schema.json",
-     "start": 1,
-     "end": 6242
-    }
-   },
-   {
-    "format": "json",
-    "lines": 6242,
-    "tokens": 18415,
-    "firstFile": {
-     "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
-     "start": 1,
-     "end": 6242
+    "others": [
+     {
+      "name": "tauri/src-tauri/gen/schemas/macOS-schema.json",
+      "start": 1,
+      "end": 6242
+     },
+     {
+      "name": "tauri/src-tauri/gen/schemas/windows-schema.json",
+      "start": 1,
+      "end": 6242
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"$schema\": \"http://json-schema.org/draft-07/schema#\",",
+      "  \"title\": \"CapabilityFile\",",
+      "  \"description\": \"Capability formats accepted in a capability file.\",",
+      "  \"anyOf\": [",
+      "    {",
+      "      \"description\": \"A single capability.\",",
+      "      \"allOf\": [",
+      "        {",
+      "          \"$ref\": \"#/definitions/Capability\""
+     ],
+     "total": 6242
     },
-    "secondFile": {
-     "name": "tauri/src-tauri/gen/schemas/windows-schema.json",
-     "start": 1,
-     "end": 6242
-    }
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 1728,
     "tokens": 5183,
-    "firstFile": {
+    "first": {
      "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
      "start": 142,
      "end": 1869
     },
-    "secondFile": {
-     "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
-     "start": 4223,
-     "end": 5950
-    }
+    "others": [
+     {
+      "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
+      "start": 4223,
+      "end": 5950
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"description\": \"This set of permissions describes the what kind of\\nfile system access the `fs` plugin has enabled or denied by default.\\n\\n#### Granted Perm…",
+      "  \"type\": \"string\",",
+      "  \"const\": \"fs:default\",",
+      "  \"markdownDescription\": \"This set of permissions describes the what kind of\\nfile system access the `fs` plugin has enabled or denied by default.\\n\\n#### Gran…",
+      "},",
+      "{",
+      "  \"description\": \"This allows non-recursive read access to metadata of the application folders, including file listing and statistics.\\n#### This permission se…",
+      "  \"type\": \"string\",",
+      "  \"const\": \"fs:allow-app-meta\","
+     ],
+     "total": 1728
+    },
+    "kind": "data"
    },
    {
     "format": "python",
     "lines": 88,
     "tokens": 416,
-    "firstFile": {
+    "first": {
      "name": "backend/services/cuda.py",
      "start": 162,
      "end": 249
     },
-    "secondFile": {
-     "name": "backend/services/rocm.py",
-     "start": 139,
-     "end": 226
-    }
+    "others": [
+     {
+      "name": "backend/services/rocm.py",
+      "start": 139,
+      "end": 226
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "async def _download_and_extract_archive(",
+      "    client,",
+      "    url: str,",
+      "    sha256_url: Optional[str],",
+      "    dest_dir: Path,",
+      "    label: str,",
+      "    progress_offset: int,",
+      "    total_size: int,",
+      "):",
+      "    \"\"\"Download a .tar.gz archive and extract it into dest_dir."
+     ],
+     "total": 88
+    },
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 32,
     "tokens": 232,
-    "firstFile": {
+    "first": {
      "name": "tauri/src-tauri/src/audio_capture/linux.rs",
      "start": 291,
      "end": 322
     },
-    "secondFile": {
-     "name": "tauri/src-tauri/src/audio_capture/windows.rs",
-     "start": 210,
-     "end": 239
-    }
+    "others": [
+     {
+      "name": "tauri/src-tauri/src/audio_capture/windows.rs",
+      "start": 210,
+      "end": 239
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 55,
+    "first": {
+     "name": "app/src/lib/hooks/useStories.ts",
+     "start": 130,
+     "end": 138
+    },
+    "others": [
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 150,
+      "end": 158
+     },
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 170,
+      "end": 178
+     },
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 190,
+      "end": 198
+     },
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 223,
+      "end": 231
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 35,
     "tokens": 217,
-    "firstFile": {
+    "first": {
      "name": "app/src/components/AudioTab/AudioTab.tsx",
      "start": 473,
      "end": 507
     },
-    "secondFile": {
-     "name": "app/src/components/AudioTab/AudioTab.tsx",
-     "start": 582,
-     "end": 616
-    }
+    "others": [
+     {
+      "name": "app/src/components/AudioTab/AudioTab.tsx",
+      "start": 582,
+      "end": 616
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "tsx",
+    "lines": 7,
+    "tokens": 72,
+    "first": {
+     "name": "app/src/components/ServerSettings/GpuAcceleration.tsx",
+     "start": 306,
+     "end": 312
+    },
+    "others": [
+     {
+      "name": "app/src/components/ServerSettings/ModelManagement.tsx",
+      "start": 120,
+      "end": 126
+     },
+     {
+      "name": "app/src/components/ServerSettings/ModelProgress.tsx",
+      "start": 70,
+      "end": 76
+     },
+     {
+      "name": "app/src/lib/hooks/useModelDownloadToast.tsx",
+      "start": 34,
+      "end": 40
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 53,
+    "first": {
+     "name": "app/src/lib/hooks/useStories.ts",
+     "start": 47,
+     "end": 55
+    },
+    "others": [
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 71,
+      "end": 79
+     },
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 97,
+      "end": 105
+     },
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 110,
+      "end": 118
+     },
+     {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 130,
+      "end": 138
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 35,
     "tokens": 198,
-    "firstFile": {
+    "first": {
      "name": "app/src/components/ServerSettings/GpuAcceleration.tsx",
      "start": 27,
      "end": 61
     },
-    "secondFile": {
-     "name": "app/src/components/ServerTab/GpuPage.tsx",
-     "start": 132,
-     "end": 163
-    }
+    "others": [
+     {
+      "name": "app/src/components/ServerTab/GpuPage.tsx",
+      "start": 132,
+      "end": 163
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "json",
     "lines": 66,
     "tokens": 197,
-    "firstFile": {
+    "first": {
      "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
      "start": 1942,
      "end": 2007
     },
-    "secondFile": {
-     "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
-     "start": 5981,
-     "end": 6046
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 32,
-    "tokens": 189,
-    "firstFile": {
-     "name": "tauri/src-tauri/src/audio_capture/linux.rs",
-     "start": 351,
-     "end": 382
-    },
-    "secondFile": {
-     "name": "tauri/src-tauri/src/audio_capture/macos.rs",
-     "start": 236,
-     "end": 265
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 31,
-    "tokens": 188,
-    "firstFile": {
-     "name": "tauri/src-tauri/src/audio_capture/linux.rs",
-     "start": 352,
-     "end": 382
-    },
-    "secondFile": {
-     "name": "tauri/src-tauri/src/audio_capture/windows.rs",
-     "start": 260,
-     "end": 288
-    }
+    "others": [
+     {
+      "name": "tauri/src-tauri/gen/schemas/desktop-schema.json",
+      "start": 5981,
+      "end": 6046
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    }
-  ]
+  ],
+  "code": {
+   "sources": 319,
+   "lines": 65257,
+   "tokens": 332257,
+   "clones": 176,
+   "duplicatedLines": 2484,
+   "duplicatedTokens": 13828,
+   "percentage": 3.81,
+   "percentageTokens": 4.16,
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 134,
+     "lines": 29682,
+     "clones": 73,
+     "duplicatedLines": 1049,
+     "percentage": 3.53
+    },
+    {
+     "format": "python",
+     "sources": 89,
+     "lines": 20820,
+     "clones": 48,
+     "duplicatedLines": 724,
+     "percentage": 3.48
+    },
+    {
+     "format": "typescript",
+     "sources": 62,
+     "lines": 7264,
+     "clones": 27,
+     "duplicatedLines": 331,
+     "percentage": 4.56
+    },
+    {
+     "format": "rust",
+     "sources": 16,
+     "lines": 5641,
+     "clones": 26,
+     "duplicatedLines": 319,
+     "percentage": 5.66
+    },
+    {
+     "format": "javascript",
+     "sources": 2,
+     "lines": 462,
+     "clones": 2,
+     "duplicatedLines": 61,
+     "percentage": 13.2
+    },
+    {
+     "format": "bash",
+     "sources": 15,
+     "lines": 1214,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 88,
+     "tokens": 416,
+     "first": {
+      "name": "backend/services/cuda.py",
+      "start": 162,
+      "end": 249
+     },
+     "others": [
+      {
+       "name": "backend/services/rocm.py",
+       "start": 139,
+       "end": 226
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "async def _download_and_extract_archive(",
+       "    client,",
+       "    url: str,",
+       "    sha256_url: Optional[str],",
+       "    dest_dir: Path,",
+       "    label: str,",
+       "    progress_offset: int,",
+       "    total_size: int,",
+       "):",
+       "    \"\"\"Download a .tar.gz archive and extract it into dest_dir."
+      ],
+      "total": 88
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 32,
+     "tokens": 232,
+     "first": {
+      "name": "tauri/src-tauri/src/audio_capture/linux.rs",
+      "start": 291,
+      "end": 322
+     },
+     "others": [
+      {
+       "name": "tauri/src-tauri/src/audio_capture/windows.rs",
+       "start": 210,
+       "end": 239
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        let tx = stop_tx_clone.lock().unwrap().take();",
+       "        if let Some(tx) = tx {",
+       "            let _ = tx.send(()).await;",
+       "        }",
+       "    });",
+       "",
+       "    Ok(())",
+       "}",
+       "",
+       "pub async fn stop_capture(state: &AudioCaptureState) -> Result<String, String> {"
+      ],
+      "total": 32
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 55,
+     "first": {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 130,
+      "end": 138
+     },
+     "others": [
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 150,
+       "end": 158
+      },
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 170,
+       "end": 178
+      },
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 190,
+       "end": 198
+      },
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 223,
+       "end": 231
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "    }) => apiClient.moveStoryItem(storyId, itemId, data),",
+       "    onSuccess: (_, variables) => {",
+       "      queryClient.invalidateQueries({ queryKey: ['stories'] });",
+       "      queryClient.invalidateQueries({ queryKey: ['stories', variables.storyId] });",
+       "    },",
+       "  });",
+       "}",
+       "",
+       "export function useTrimStoryItem() {"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "    }) => apiClient.trimStoryItem(storyId, itemId, data),",
+       "    onSuccess: (_, variables) => {",
+       "      queryClient.invalidateQueries({ queryKey: ['stories'] });",
+       "      queryClient.invalidateQueries({ queryKey: ['stories', variables.storyId] });",
+       "    },",
+       "  });",
+       "}",
+       "",
+       "export function useUpdateStoryItemVolume() {"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 35,
+     "tokens": 217,
+     "first": {
+      "name": "app/src/components/AudioTab/AudioTab.tsx",
+      "start": 473,
+      "end": 507
+     },
+     "others": [
+      {
+       "name": "app/src/components/AudioTab/AudioTab.tsx",
+       "start": 582,
+       "end": 616
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 7,
+     "tokens": 72,
+     "first": {
+      "name": "app/src/components/ServerSettings/GpuAcceleration.tsx",
+      "start": 306,
+      "end": 312
+     },
+     "others": [
+      {
+       "name": "app/src/components/ServerSettings/ModelManagement.tsx",
+       "start": 120,
+       "end": 126
+      },
+      {
+       "name": "app/src/components/ServerSettings/ModelProgress.tsx",
+       "start": 70,
+       "end": 76
+      },
+      {
+       "name": "app/src/lib/hooks/useModelDownloadToast.tsx",
+       "start": 34,
+       "end": 40
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 53,
+     "first": {
+      "name": "app/src/lib/hooks/useStories.ts",
+      "start": 47,
+      "end": 55
+     },
+     "others": [
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 71,
+       "end": 79
+      },
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 97,
+       "end": 105
+      },
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 110,
+       "end": 118
+      },
+      {
+       "name": "app/src/lib/hooks/useStories.ts",
+       "start": 130,
+       "end": 138
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 35,
+     "tokens": 198,
+     "first": {
+      "name": "app/src/components/ServerSettings/GpuAcceleration.tsx",
+      "start": 27,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "app/src/components/ServerTab/GpuPage.tsx",
+       "start": 132,
+       "end": 163
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 32,
+     "tokens": 189,
+     "first": {
+      "name": "tauri/src-tauri/src/audio_capture/linux.rs",
+      "start": 351,
+      "end": 382
+     },
+     "others": [
+      {
+       "name": "tauri/src-tauri/src/audio_capture/macos.rs",
+       "start": 236,
+       "end": 265
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 31,
+     "tokens": 188,
+     "first": {
+      "name": "tauri/src-tauri/src/audio_capture/linux.rs",
+      "start": 352,
+      "end": 382
+     },
+     "others": [
+      {
+       "name": "tauri/src-tauri/src/audio_capture/windows.rs",
+       "start": 260,
+       "end": 288
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 27,
+     "tokens": 184,
+     "first": {
+      "name": "app/src/components/ui/card.tsx",
+      "start": 17,
+      "end": 43
+     },
+     "others": [
+      {
+       "name": "landing/src/components/ui/card.tsx",
+       "start": 20,
+       "end": 46
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 40,
+    "minified": 0,
+    "sample": [
+     "app/src/lib/api/core/ApiError.ts",
+     "app/src/lib/api/core/ApiRequestOptions.ts",
+     "app/src/lib/api/core/ApiResult.ts",
+     "app/src/lib/api/core/CancelablePromise.ts",
+     "app/src/lib/api/core/OpenAPI.ts",
+     "app/src/lib/api/core/request.ts",
+     "app/src/lib/api/index.ts",
+     "app/src/lib/api/models/Body_add_profile_sample_profiles__profile_id__samples_post.ts",
+     "app/src/lib/api/models/Body_transcribe_audio_transcribe_post.ts",
+     "app/src/lib/api/models/GenerationRequest.ts",
+     "app/src/lib/api/models/GenerationResponse.ts",
+     "app/src/lib/api/models/HealthResponse.ts",
+     "app/src/lib/api/models/HistoryListResponse.ts",
+     "app/src/lib/api/models/HistoryResponse.ts",
+     "app/src/lib/api/models/HTTPValidationError.ts",
+     "app/src/lib/api/models/ModelDownloadRequest.ts",
+     "app/src/lib/api/models/ModelStatus.ts",
+     "app/src/lib/api/models/ModelStatusListResponse.ts",
+     "app/src/lib/api/models/ProfileSampleResponse.ts",
+     "app/src/lib/api/models/TranscriptionResponse.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:08:03.470Z",
+  "jscpdVersion": "5.4.0"
  }
 }

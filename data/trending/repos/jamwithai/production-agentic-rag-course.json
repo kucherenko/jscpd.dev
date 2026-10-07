@@ -9,10 +9,12 @@
    "starsToday": 193,
    "headSha": "424a0eb99edf841994f2a9a053912b489d2a94ff",
    "sources": 134,
-   "lines": 15148,
+   "lines": 15104,
    "clones": 9,
    "duplicatedLines": 115,
    "percentage": 0.76,
+   "codePercentage": 0.69,
+   "codeSources": 87,
    "healthScore": 67.9,
    "healthGrade": "C"
   }
@@ -28,16 +30,16 @@
   "starsToday": 193,
   "defaultBranch": "main",
   "headSha": "424a0eb99edf841994f2a9a053912b489d2a94ff",
-  "durationMs": 960,
+  "durationMs": 59,
   "total": {
    "sources": 134,
-   "lines": 15148,
-   "tokens": 79652,
+   "lines": 15104,
+   "tokens": 79487,
    "clones": 9,
    "duplicatedLines": 115,
    "duplicatedTokens": 672,
    "percentage": 0.76,
-   "percentageTokens": 0.84
+   "percentageTokens": 0.85
   },
   "formats": [
    {
@@ -67,7 +69,7 @@
    {
     "format": "bash",
     "sources": 16,
-    "lines": 947,
+    "lines": 897,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -83,7 +85,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -118,136 +120,224 @@
     "format": "yaml",
     "lines": 28,
     "tokens": 135,
-    "firstFile": {
+    "first": {
      "name": "compose.yml",
      "start": 216,
      "end": 243
     },
-    "secondFile": {
-     "name": "compose.yml",
-     "start": 267,
-     "end": 294
-    }
+    "others": [
+     {
+      "name": "compose.yml",
+      "start": 267,
+      "end": 294
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "SALT: ${LANGFUSE_SALT}",
+      "ENCRYPTION_KEY: ${LANGFUSE_ENCRYPTION_KEY}",
+      "TELEMETRY_ENABLED: \"false\"",
+      "LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES: \"true\"",
+      "CLICKHOUSE_MIGRATION_URL: clickhouse://clickhouse:9000",
+      "CLICKHOUSE_URL: http://clickhouse:8123",
+      "CLICKHOUSE_USER: langfuse",
+      "CLICKHOUSE_PASSWORD: langfuse",
+      "CLICKHOUSE_CLUSTER_ENABLED: \"false\"",
+      "LANGFUSE_USE_AZURE_BLOB: \"false\""
+     ],
+     "total": 28
+    },
+    "kind": "data"
    },
    {
     "format": "python",
     "lines": 16,
     "tokens": 97,
-    "firstFile": {
+    "first": {
      "name": "src/services/arxiv/client.py",
      "start": 107,
      "end": 122
     },
-    "secondFile": {
-     "name": "src/services/arxiv/client.py",
-     "start": 182,
-     "end": 197
-    }
+    "others": [
+     {
+      "name": "src/services/arxiv/client.py",
+      "start": 182,
+      "end": 197
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Add rate limiting delay between all requests (arXiv recommends 3 seconds)",
+      "if self._last_request_time is not None:",
+      "    time_since_last = time.time() - self._last_request_time",
+      "    if time_since_last < self.rate_limit_delay:",
+      "        sleep_time = self.rate_limit_delay - time_since_last",
+      "        await asyncio.sleep(sleep_time)",
+      "",
+      "self._last_request_time = time.time()",
+      "",
+      "async with httpx.AsyncClient(timeout=self.timeout_seconds) as client:"
+     ],
+     "total": 16
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 6,
     "tokens": 78,
-    "firstFile": {
+    "first": {
      "name": "src/schemas/arxiv/paper.py",
      "start": 11,
      "end": 16
     },
-    "secondFile": {
-     "name": "src/schemas/arxiv/paper.py",
-     "start": 22,
-     "end": 27
-    }
+    "others": [
+     {
+      "name": "src/schemas/arxiv/paper.py",
+      "start": 22,
+      "end": 27
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "arxiv_id: str = Field(..., description=\"arXiv paper ID\")",
+      "title: str = Field(..., description=\"Paper title\")",
+      "authors: List[str] = Field(..., description=\"List of author names\")",
+      "abstract: str = Field(..., description=\"Paper abstract\")",
+      "categories: List[str] = Field(..., description=\"Paper categories\")",
+      "published_date: str = Field(..., description=\"Date published on arXiv (ISO format)\")"
+     ],
+     "total": 6
+    },
+    "excerptSecond": {
+     "lines": [
+      "arxiv_id: str = Field(..., description=\"arXiv paper ID\")",
+      "title: str = Field(..., description=\"Paper title\")",
+      "authors: List[str] = Field(..., description=\"List of author names\")",
+      "abstract: str = Field(..., description=\"Paper abstract\")",
+      "categories: List[str] = Field(..., description=\"Paper categories\")",
+      "published_date: datetime = Field(..., description=\"Date published on arXiv\")"
+     ],
+     "total": 6
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 8,
     "tokens": 74,
-    "firstFile": {
+    "first": {
      "name": "src/services/opensearch/client.py",
      "start": 165,
      "end": 172
     },
-    "secondFile": {
-     "name": "src/services/opensearch/client.py",
-     "start": 232,
-     "end": 239
-    }
+    "others": [
+     {
+      "name": "src/services/opensearch/client.py",
+      "start": 232,
+      "end": 239
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 8,
     "tokens": 65,
-    "firstFile": {
+    "first": {
      "name": "src/services/indexing/text_chunker.py",
      "start": 250,
      "end": 257
     },
-    "secondFile": {
-     "name": "src/services/indexing/text_chunker.py",
-     "start": 266,
-     "end": 273
-    }
+    "others": [
+     {
+      "name": "src/services/indexing/text_chunker.py",
+      "start": 266,
+      "end": 273
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 15,
     "tokens": 63,
-    "firstFile": {
+    "first": {
      "name": "src/services/arxiv/client.py",
      "start": 122,
      "end": 136
     },
-    "secondFile": {
-     "name": "src/services/arxiv/client.py",
-     "start": 197,
-     "end": 211
-    }
+    "others": [
+     {
+      "name": "src/services/arxiv/client.py",
+      "start": 197,
+      "end": 211
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 13,
     "tokens": 58,
-    "firstFile": {
+    "first": {
      "name": "tests/unit/services/agents/test_nodes.py",
      "start": 104,
      "end": 116
     },
-    "secondFile": {
-     "name": "tests/unit/services/agents/test_nodes.py",
-     "start": 125,
-     "end": 137
-    }
+    "others": [
+     {
+      "name": "tests/unit/services/agents/test_nodes.py",
+      "start": 125,
+      "end": 137
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 9,
     "tokens": 52,
-    "firstFile": {
+    "first": {
      "name": "tests/unit/services/test_arxiv_client.py",
      "start": 57,
      "end": 65
     },
-    "secondFile": {
-     "name": "tests/unit/services/test_arxiv_client.py",
-     "start": 76,
-     "end": 84
-    }
+    "others": [
+     {
+      "name": "tests/unit/services/test_arxiv_client.py",
+      "start": 76,
+      "end": 84
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 12,
     "tokens": 50,
-    "firstFile": {
+    "first": {
      "name": "src/services/embeddings/factory.py",
      "start": 11,
      "end": 22
     },
-    "secondFile": {
-     "name": "src/services/embeddings/factory.py",
-     "start": 28,
-     "end": 39
-    }
+    "others": [
+     {
+      "name": "src/services/embeddings/factory.py",
+      "start": 28,
+      "end": 39
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -457,6 +547,215 @@
      "lines": 22
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 87,
+   "lines": 9477,
+   "tokens": 45768,
+   "clones": 6,
+   "duplicatedLines": 65,
+   "duplicatedTokens": 427,
+   "percentage": 0.69,
+   "percentageTokens": 0.93,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 76,
+     "lines": 8628,
+     "clones": 6,
+     "duplicatedLines": 65,
+     "percentage": 0.75
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 675,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 97,
+     "first": {
+      "name": "src/services/arxiv/client.py",
+      "start": 107,
+      "end": 122
+     },
+     "others": [
+      {
+       "name": "src/services/arxiv/client.py",
+       "start": 182,
+       "end": 197
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "# Add rate limiting delay between all requests (arXiv recommends 3 seconds)",
+       "if self._last_request_time is not None:",
+       "    time_since_last = time.time() - self._last_request_time",
+       "    if time_since_last < self.rate_limit_delay:",
+       "        sleep_time = self.rate_limit_delay - time_since_last",
+       "        await asyncio.sleep(sleep_time)",
+       "",
+       "self._last_request_time = time.time()",
+       "",
+       "async with httpx.AsyncClient(timeout=self.timeout_seconds) as client:"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 78,
+     "first": {
+      "name": "src/schemas/arxiv/paper.py",
+      "start": 11,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": "src/schemas/arxiv/paper.py",
+       "start": 22,
+       "end": 27
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "arxiv_id: str = Field(..., description=\"arXiv paper ID\")",
+       "title: str = Field(..., description=\"Paper title\")",
+       "authors: List[str] = Field(..., description=\"List of author names\")",
+       "abstract: str = Field(..., description=\"Paper abstract\")",
+       "categories: List[str] = Field(..., description=\"Paper categories\")",
+       "published_date: str = Field(..., description=\"Date published on arXiv (ISO format)\")"
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "arxiv_id: str = Field(..., description=\"arXiv paper ID\")",
+       "title: str = Field(..., description=\"Paper title\")",
+       "authors: List[str] = Field(..., description=\"List of author names\")",
+       "abstract: str = Field(..., description=\"Paper abstract\")",
+       "categories: List[str] = Field(..., description=\"Paper categories\")",
+       "published_date: datetime = Field(..., description=\"Date published on arXiv\")"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 74,
+     "first": {
+      "name": "src/services/opensearch/client.py",
+      "start": 165,
+      "end": 172
+     },
+     "others": [
+      {
+       "name": "src/services/opensearch/client.py",
+       "start": 232,
+       "end": 239
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "response = self.client.search(index=self.index_name, body=search_body)",
+       "",
+       "results = {\"total\": response[\"hits\"][\"total\"][\"value\"], \"hits\": []}",
+       "",
+       "for hit in response[\"hits\"][\"hits\"]:",
+       "    chunk = hit[\"_source\"]",
+       "    chunk[\"score\"] = hit[\"_score\"]",
+       "    chunk[\"chunk_id\"] = hit[\"_id\"]"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 65,
+     "first": {
+      "name": "src/services/indexing/text_chunker.py",
+      "start": 250,
+      "end": 257
+     },
+     "others": [
+      {
+       "name": "src/services/indexing/text_chunker.py",
+       "start": 266,
+       "end": 273
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 63,
+     "first": {
+      "name": "src/services/arxiv/client.py",
+      "start": 122,
+      "end": 136
+     },
+     "others": [
+      {
+       "name": "src/services/arxiv/client.py",
+       "start": 197,
+       "end": 211
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 50,
+     "first": {
+      "name": "src/services/embeddings/factory.py",
+      "start": 11,
+      "end": 22
+     },
+     "others": [
+      {
+       "name": "src/services/embeddings/factory.py",
+       "start": 28,
+       "end": 39
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:27:10.915Z",
+  "jscpdVersion": "5.4.0"
  }
 }

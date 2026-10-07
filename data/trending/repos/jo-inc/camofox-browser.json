@@ -9,10 +9,12 @@
    "starsToday": 135,
    "headSha": "e5a36f5cd0332fde6597de474329a308a53a0716",
    "sources": 195,
-   "lines": 44628,
-   "clones": 210,
-   "duplicatedLines": 5099,
-   "percentage": 11.43,
+   "lines": 40630,
+   "clones": 231,
+   "duplicatedLines": 5493,
+   "percentage": 13.52,
+   "codePercentage": 3.56,
+   "codeSources": 68,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 871,
    "headSha": "e5a36f5cd0332fde6597de474329a308a53a0716",
    "sources": 195,
-   "lines": 44628,
-   "clones": 204,
-   "duplicatedLines": 5031,
-   "percentage": 11.27,
+   "lines": 40630,
+   "clones": 231,
+   "duplicatedLines": 5493,
+   "percentage": 13.52,
+   "codePercentage": 3.56,
+   "codeSources": 68,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,57 +46,57 @@
   "starsToday": 871,
   "defaultBranch": "master",
   "headSha": "e5a36f5cd0332fde6597de474329a308a53a0716",
-  "durationMs": 633,
+  "durationMs": 171,
   "total": {
    "sources": 195,
-   "lines": 44628,
-   "tokens": 231621,
-   "clones": 204,
-   "duplicatedLines": 5031,
-   "duplicatedTokens": 20343,
-   "percentage": 11.27,
-   "percentageTokens": 8.78
+   "lines": 40630,
+   "tokens": 231456,
+   "clones": 231,
+   "duplicatedLines": 5493,
+   "duplicatedTokens": 21552,
+   "percentage": 13.52,
+   "percentageTokens": 9.31
   },
   "formats": [
    {
     "format": "javascript",
     "sources": 141,
-    "lines": 29006,
-    "clones": 156,
-    "duplicatedLines": 1415,
-    "percentage": 4.88
+    "lines": 28534,
+    "clones": 173,
+    "duplicatedLines": 1679,
+    "percentage": 5.88
    },
    {
     "format": "json",
     "sources": 9,
-    "lines": 7087,
-    "clones": 40,
-    "duplicatedLines": 3513,
-    "percentage": 49.57
+    "lines": 6214,
+    "clones": 49,
+    "duplicatedLines": 3720,
+    "percentage": 59.86
    },
    {
     "format": "yaml",
     "sources": 7,
     "lines": 578,
-    "clones": 6,
-    "duplicatedLines": 69,
-    "percentage": 11.94
+    "clones": 7,
+    "duplicatedLines": 84,
+    "percentage": 14.53
    },
    {
     "format": "bash",
     "sources": 19,
-    "lines": 2620,
+    "lines": 1287,
     "clones": 1,
-    "duplicatedLines": 29,
-    "percentage": 1.11
+    "duplicatedLines": 4,
+    "percentage": 0.31
    },
    {
     "format": "markup",
     "sources": 1,
     "lines": 837,
     "clones": 1,
-    "duplicatedLines": 5,
-    "percentage": 0.6
+    "duplicatedLines": 6,
+    "percentage": 0.72
    },
    {
     "format": "markdown",
@@ -103,17 +107,9 @@
     "percentage": 0
    },
    {
-    "format": "text",
-    "sources": 2,
-    "lines": 1229,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "typescript",
     "sources": 3,
-    "lines": 781,
+    "lines": 769,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -121,7 +117,7 @@
    {
     "format": "powershell",
     "sources": 2,
-    "lines": 322,
+    "lines": 184,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -129,7 +125,15 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 2,
+    "lines": 53,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,152 +144,706 @@
     "format": "json",
     "lines": 1024,
     "tokens": 2508,
-    "firstFile": {
+    "first": {
      "name": "docs/openapi.json",
      "start": 1631,
      "end": 2654
     },
-    "secondFile": {
-     "name": "openapi.json",
-     "start": 1936,
-     "end": 2959
-    }
+    "others": [
+     {
+      "name": "openapi.json",
+      "start": 1936,
+      "end": 2959
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    \"description\": \"Tab not found.\",",
+      "    \"content\": {",
+      "      \"application/json\": {",
+      "        \"schema\": {",
+      "          \"$ref\": \"#/components/schemas/Error\"",
+      "        }",
+      "      }",
+      "    }",
+      "  }",
+      "}"
+     ],
+     "total": 1024
+    },
+    "kind": "docs"
    },
    {
     "format": "json",
-    "lines": 631,
-    "tokens": 1544,
-    "firstFile": {
+    "lines": 627,
+    "tokens": 1538,
+    "first": {
      "name": "docs/openapi.json",
      "start": 1013,
-     "end": 1643
+     "end": 1639
     },
-    "secondFile": {
-     "name": "openapi.json",
-     "start": 1298,
-     "end": 1926
-    }
+    "others": [
+     {
+      "name": "openapi.json",
+      "start": 1298,
+      "end": 1924
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "},",
+      "\"404\": {",
+      "  \"description\": \"Tab not found.\",",
+      "  \"content\": {",
+      "    \"application/json\": {",
+      "      \"schema\": {",
+      "        \"$ref\": \"#/components/schemas/Error\"",
+      "      }",
+      "    }",
+      "  }"
+     ],
+     "total": 627
+    },
+    "kind": "docs"
    },
    {
     "format": "json",
     "lines": 506,
     "tokens": 1256,
-    "firstFile": {
+    "first": {
      "name": "docs/openapi.json",
      "start": 292,
      "end": 797
     },
-    "secondFile": {
-     "name": "openapi.json",
-     "start": 396,
-     "end": 901
-    }
+    "others": [
+     {
+      "name": "openapi.json",
+      "start": 396,
+      "end": 901
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "            }",
+      "          }",
+      "        }",
+      "      }",
+      "    }",
+      "  }",
+      "},",
+      "\"/tabs\": {",
+      "  \"post\": {",
+      "    \"tags\": ["
+     ],
+     "total": 506
+    },
+    "kind": "docs"
    },
    {
     "format": "json",
     "lines": 236,
     "tokens": 574,
-    "firstFile": {
+    "first": {
      "name": "docs/openapi.json",
      "start": 63,
      "end": 298
     },
-    "secondFile": {
-     "name": "openapi.json",
-     "start": 68,
-     "end": 303
-    }
+    "others": [
+     {
+      "name": "openapi.json",
+      "start": 68,
+      "end": 303
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "javascript",
+    "lines": 9,
+    "tokens": 56,
+    "first": {
+     "name": "tests/unit/accessKey.test.js",
+     "start": 104,
+     "end": 112
+    },
+    "others": [
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 113,
+      "end": 123
+     },
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 146,
+      "end": 154
+     },
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 241,
+      "end": 249
+     },
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 250,
+      "end": 258
+     },
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 259,
+      "end": 267
+     },
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 268,
+      "end": 276
+     },
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 277,
+      "end": 285
+     },
+     {
+      "name": "tests/unit/accessKey.test.js",
+      "start": 310,
+      "end": 318
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 24,
+    "tokens": 64,
+    "first": {
+     "name": "docs/openapi.json",
+     "start": 457,
+     "end": 480
+    },
+    "others": [
+     {
+      "name": "docs/openapi.json",
+      "start": 645,
+      "end": 668
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 716,
+      "end": 739
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 961,
+      "end": 984
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1032,
+      "end": 1055
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1098,
+      "end": 1121
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1164,
+      "end": 1187
+     }
+    ],
+    "copies": 7,
+    "kind": "docs"
    },
    {
     "format": "json",
     "lines": 151,
     "tokens": 359,
-    "firstFile": {
+    "first": {
      "name": "docs/openapi.json",
      "start": 876,
      "end": 1026
     },
-    "secondFile": {
-     "name": "openapi.json",
-     "start": 1076,
-     "end": 1226
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 26,
-    "tokens": 257,
-    "firstFile": {
-     "name": "scripts/mcp-call.mjs",
-     "start": 23,
-     "end": 48
-    },
-    "secondFile": {
-     "name": "scripts/mcp-run.mjs",
-     "start": 16,
-     "end": 40
-    }
+    "others": [
+     {
+      "name": "openapi.json",
+      "start": 1076,
+      "end": 1226
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "json",
-    "lines": 92,
-    "tokens": 223,
-    "firstFile": {
+    "lines": 32,
+    "tokens": 69,
+    "first": {
      "name": "docs/openapi.json",
-     "start": 797,
-     "end": 888
+     "start": 505,
+     "end": 536
     },
-    "secondFile": {
-     "name": "openapi.json",
-     "start": 987,
-     "end": 1076
-    }
+    "others": [
+     {
+      "name": "docs/openapi.json",
+      "start": 769,
+      "end": 800
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 856,
+      "end": 887
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 2450,
+      "end": 2481
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 2535,
+      "end": 2566
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 2621,
+      "end": 2652
+     }
+    ],
+    "copies": 6,
+    "kind": "docs"
    },
    {
-    "format": "javascript",
+    "format": "json",
     "lines": 19,
-    "tokens": 177,
-    "firstFile": {
-     "name": "server.js",
-     "start": 6353,
-     "end": 6371
+    "tokens": 51,
+    "first": {
+     "name": "docs/openapi.json",
+     "start": 457,
+     "end": 475
     },
-    "secondFile": {
-     "name": "server.js",
-     "start": 6384,
-     "end": 6405
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 13,
-    "tokens": 154,
-    "firstFile": {
-     "name": "server.js",
-     "start": 5360,
-     "end": 5372
-    },
-    "secondFile": {
-     "name": "tests/unit/tracingApi.test.js",
-     "start": 114,
-     "end": 126
-    }
+    "others": [
+     {
+      "name": "docs/openapi.json",
+      "start": 807,
+      "end": 825
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 893,
+      "end": 911
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1569,
+      "end": 1587
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1649,
+      "end": 1667
+     },
+     {
+      "name": "openapi.json",
+      "start": 921,
+      "end": 939
+     },
+     {
+      "name": "openapi.json",
+      "start": 1233,
+      "end": 1251
+     }
+    ],
+    "copies": 7,
+    "kind": "docs"
    },
    {
     "format": "json",
-    "lines": 58,
-    "tokens": 151,
-    "firstFile": {
+    "lines": 22,
+    "tokens": 57,
+    "first": {
      "name": "docs/openapi.json",
-     "start": 5,
-     "end": 62
+     "start": 1230,
+     "end": 1251
     },
-    "secondFile": {
-     "name": "openapi.json",
-     "start": 5,
-     "end": 62
-    }
+    "others": [
+     {
+      "name": "docs/openapi.json",
+      "start": 1297,
+      "end": 1318
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1364,
+      "end": 1385
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1435,
+      "end": 1456
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1497,
+      "end": 1518
+     },
+     {
+      "name": "docs/openapi.json",
+      "start": 1824,
+      "end": 1845
+     }
+    ],
+    "copies": 6,
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 68,
+   "lines": 15909,
+   "tokens": 84047,
+   "clones": 58,
+   "duplicatedLines": 566,
+   "duplicatedTokens": 4507,
+   "percentage": 3.56,
+   "percentageTokens": 5.36,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 49,
+     "lines": 13793,
+     "clones": 58,
+     "duplicatedLines": 566,
+     "percentage": 4.1
+    },
+    {
+     "format": "bash",
+     "sources": 15,
+     "lines": 1013,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 2,
+     "lines": 758,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 171,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 26,
+     "tokens": 257,
+     "first": {
+      "name": "scripts/mcp-call.mjs",
+      "start": 23,
+      "end": 48
+     },
+     "others": [
+      {
+       "name": "scripts/mcp-run.mjs",
+       "start": 16,
+       "end": 40
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "const proc = spawn(process.execPath, [SERVER], {",
+       "  cwd: ROOT,",
+       "  env: {",
+       "    PATH: process.env.PATH, HOME: process.env.HOME, USER: process.env.USER,",
+       "    NODE_OPTIONS: process.env.NODE_OPTIONS || \"\",",
+       "    CAMOFOX_BASE_URL: process.env.CAMOFOX_BASE_URL || \"http://localhost:9377\",",
+       "  },",
+       "  stdio: [\"pipe\", \"pipe\", \"pipe\"],",
+       "});",
+       ""
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 124,
+     "first": {
+      "name": "server.js",
+      "start": 4330,
+      "end": 4343
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 4408,
+       "end": 4421
+      },
+      {
+       "name": "server.js",
+       "start": 4476,
+       "end": 4489
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "app.post('/tabs/:tabId/back', async (req, res) => {",
+       "  const tabId = req.params.tabId;",
+       "",
+       "  try {",
+       "    const { userId } = req.body;",
+       "    const session = sessions.get(normalizeUserId(userId));",
+       "    const found = session && findTab(session, tabId);",
+       "    if (!found) return tabNotFoundResponse(res, req.params.tabId || req.body?.tabId);",
+       "    session.lastAccess = Date.now();",
+       ""
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 8,
+     "tokens": 75,
+     "first": {
+      "name": "server.js",
+      "start": 3240,
+      "end": 3247
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 4641,
+       "end": 4648
+      },
+      {
+       "name": "server.js",
+       "start": 4717,
+       "end": 4724
+      },
+      {
+       "name": "server.js",
+       "start": 4937,
+       "end": 4945
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "const offset = parseInt(req.query.offset) || 0;",
+       "const session = sessions.get(normalizeUserId(userId));",
+       "const found = session && findTab(session, req.params.tabId);",
+       "if (!found) return tabNotFoundResponse(res, req.params.tabId || req.body?.tabId);",
+       "session.lastAccess = Date.now();",
+       "",
+       "const { tabState } = found;",
+       "tabState.toolCalls++; tabState.consecutiveTimeouts = 0; tabState.consecutiveFailures = 0;"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "const maxBytes = Number.isFinite(maxBytesRaw) && maxBytesRaw > 0 ? maxBytesRaw : MAX_DOWNLOAD_INLINE_BYTES;",
+       "const session = sessions.get(normalizeUserId(userId));",
+       "const found = session && findTab(session, req.params.tabId);",
+       "if (!found) return tabNotFoundResponse(res, req.params.tabId || req.body?.tabId);",
+       "session.lastAccess = Date.now();",
+       "",
+       "const { tabState } = found;",
+       "tabState.toolCalls++;"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 7,
+     "tokens": 70,
+     "first": {
+      "name": "server.js",
+      "start": 3240,
+      "end": 3246
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 3422,
+       "end": 3428
+      },
+      {
+       "name": "server.js",
+       "start": 4780,
+       "end": 4786
+      },
+      {
+       "name": "server.js",
+       "start": 4847,
+       "end": 4853
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 8,
+     "tokens": 88,
+     "first": {
+      "name": "server.js",
+      "start": 3982,
+      "end": 3989
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 4112,
+       "end": 4119
+      },
+      {
+       "name": "server.js",
+       "start": 4334,
+       "end": 4341
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 21,
+     "tokens": 151,
+     "first": {
+      "name": "server.js",
+      "start": 4013,
+      "end": 4033
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 6386,
+       "end": 6405
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 22,
+     "tokens": 144,
+     "first": {
+      "name": "server.js",
+      "start": 2352,
+      "end": 2373
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 2442,
+       "end": 2462
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 9,
+     "tokens": 102,
+     "first": {
+      "name": "server.js",
+      "start": 6418,
+      "end": 6426
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 6438,
+       "end": 6447
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 18,
+     "tokens": 101,
+     "first": {
+      "name": "server.js",
+      "start": 2317,
+      "end": 2334
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 2378,
+       "end": 2391
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 7,
+     "tokens": 50,
+     "first": {
+      "name": "server.js",
+      "start": 3829,
+      "end": 3835
+     },
+     "others": [
+      {
+       "name": "server.js",
+       "start": 4013,
+       "end": 4016
+      },
+      {
+       "name": "server.js",
+       "start": 6386,
+       "end": 6389
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "tests/unit/openapi.test.js"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:52:37.735Z",
+  "jscpdVersion": "5.4.0"
  }
 }

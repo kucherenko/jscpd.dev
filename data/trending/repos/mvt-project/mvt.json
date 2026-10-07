@@ -9,10 +9,12 @@
    "starsToday": 169,
    "headSha": "e0697a58e977dc7035efe37363ea784ed8c6bc88",
    "sources": 307,
-   "lines": 43851,
+   "lines": 42238,
    "clones": 281,
-   "duplicatedLines": 4142,
-   "percentage": 9.45,
+   "duplicatedLines": 4423,
+   "percentage": 10.47,
+   "codePercentage": 16.1,
+   "codeSources": 150,
    "healthScore": 63.7,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 441,
    "headSha": "777db67291876c026506e5a53c92b88e86f06626",
    "sources": 307,
-   "lines": 43850,
+   "lines": 42237,
    "clones": 281,
-   "duplicatedLines": 4142,
-   "percentage": 9.45,
+   "duplicatedLines": 4423,
+   "percentage": 10.47,
+   "codePercentage": 16.1,
+   "codeSources": 150,
    "healthScore": 63.7,
    "healthGrade": "C"
   },
@@ -37,10 +41,12 @@
    "starsToday": 543,
    "headSha": "777db67291876c026506e5a53c92b88e86f06626",
    "sources": 307,
-   "lines": 42281,
+   "lines": 42237,
    "clones": 281,
    "duplicatedLines": 4423,
-   "percentage": 10.46,
+   "percentage": 10.47,
+   "codePercentage": 16.1,
+   "codeSources": 150,
    "healthScore": 62.4,
    "healthGrade": "C"
   },
@@ -51,10 +57,12 @@
    "starsToday": 272,
    "headSha": "777db67291876c026506e5a53c92b88e86f06626",
    "sources": 307,
-   "lines": 42281,
+   "lines": 42237,
    "clones": 281,
    "duplicatedLines": 4423,
-   "percentage": 10.46,
+   "percentage": 10.47,
+   "codePercentage": 16.1,
+   "codeSources": 150,
    "healthScore": 62.4,
    "healthGrade": "C"
   }
@@ -70,16 +78,16 @@
   "starsToday": 272,
   "defaultBranch": "main",
   "headSha": "777db67291876c026506e5a53c92b88e86f06626",
-  "durationMs": 585,
+  "durationMs": 281,
   "total": {
    "sources": 307,
-   "lines": 42281,
-   "tokens": 233649,
+   "lines": 42237,
+   "tokens": 233484,
    "clones": 281,
    "duplicatedLines": 4423,
    "duplicatedTokens": 24631,
-   "percentage": 10.46,
-   "percentageTokens": 10.54
+   "percentage": 10.47,
+   "percentageTokens": 10.55
   },
   "formats": [
    {
@@ -125,7 +133,7 @@
    {
     "format": "bash",
     "sources": 19,
-    "lines": 768,
+    "lines": 718,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -141,7 +149,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -165,154 +173,504 @@
   ],
   "topClones": [
    {
+    "format": "python",
+    "lines": 19,
+    "tokens": 100,
+    "first": {
+     "name": "src/mvt/android/modules/androidqf/aqf_getprop.py",
+     "start": 16,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "src/mvt/android/modules/androidqf/aqf_packages.py",
+      "start": 28,
+      "end": 46
+     },
+     {
+      "name": "src/mvt/android/modules/androidqf/aqf_processes.py",
+      "start": 16,
+      "end": 34
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_accessibility.py",
+      "start": 16,
+      "end": 34
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_adb_state.py",
+      "start": 20,
+      "end": 38
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_appops.py",
+      "start": 16,
+      "end": 34
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_battery_daily.py",
+      "start": 16,
+      "end": 34
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_platform_compat.py",
+      "start": 16,
+      "end": 34
+     },
+     {
+      "name": "src/mvt/ios/modules/backup/configuration_profiles.py",
+      "start": 27,
+      "end": 45
+     }
+    ],
+    "copies": 21,
+    "excerpt": {
+     "lines": [
+      "\"\"\"This module extracts data from get properties.\"\"\"",
+      "",
+      "def __init__(",
+      "    self,",
+      "    file_path: Optional[str] = None,",
+      "    target_path: Optional[str] = None,",
+      "    results_path: Optional[str] = None,",
+      "    module_options: Optional[dict] = None,",
+      "    log: logging.Logger = logging.getLogger(__name__),",
+      "    results: Optional[ModuleResults] = None,"
+     ],
+     "total": 19
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 13,
+    "tokens": 50,
+    "first": {
+     "name": "src/mvt/android/modules/androidqf/aqf_files.py",
+     "start": 43,
+     "end": 55
+    },
+    "others": [
+     {
+      "name": "src/mvt/android/modules/androidqf/aqf_packages.py",
+      "start": 36,
+      "end": 48
+     },
+     {
+      "name": "src/mvt/android/modules/androidqf/aqf_processes.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_accessibility.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_adb_state.py",
+      "start": 28,
+      "end": 40
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_appops.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_battery_daily.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_packages.py",
+      "start": 25,
+      "end": 37
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_platform_compat.py",
+      "start": 24,
+      "end": 36
+     }
+    ],
+    "copies": 24,
+    "excerpt": {
+     "lines": [
+      "    log: logging.Logger = logging.getLogger(__name__),",
+      "    results: Optional[ModuleResults] = None,",
+      ") -> None:",
+      "    super().__init__(",
+      "        file_path=file_path,",
+      "        target_path=target_path,",
+      "        results_path=results_path,",
+      "        module_options=module_options,",
+      "        log=log,",
+      "        results=results,"
+     ],
+     "total": 13
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 20,
+    "tokens": 102,
+    "first": {
+     "name": "src/mvt/android/modules/androidqf/aqf_getprop.py",
+     "start": 16,
+     "end": 35
+    },
+    "others": [
+     {
+      "name": "src/mvt/android/modules/androidqf/base.py",
+      "start": 17,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/backup/base.py",
+      "start": 16,
+      "end": 35
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/base.py",
+      "start": 18,
+      "end": 38
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_activities.py",
+      "start": 18,
+      "end": 38
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_getprop.py",
+      "start": 16,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/ios/modules/backup/backup_info.py",
+      "start": 19,
+      "end": 39
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/calendar.py",
+      "start": 25,
+      "end": 44
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/locationd.py",
+      "start": 30,
+      "end": 50
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "\"\"\"This module extracts data from get properties.\"\"\"",
+      "",
+      "def __init__(",
+      "    self,",
+      "    file_path: Optional[str] = None,",
+      "    target_path: Optional[str] = None,",
+      "    results_path: Optional[str] = None,",
+      "    module_options: Optional[dict] = None,",
+      "    log: logging.Logger = logging.getLogger(__name__),",
+      "    results: Optional[ModuleResults] = None,"
+     ],
+     "total": 20
+    },
+    "kind": "code"
+   },
+   {
     "format": "txt",
     "lines": 104,
     "tokens": 950,
-    "firstFile": {
+    "first": {
      "name": "tests/artifacts/android_data/bugreport/dumpstate.txt",
      "start": 18,
      "end": 121
     },
-    "secondFile": {
-     "name": "tests/artifacts/androidqf/dumpsys.txt",
-     "start": 149,
-     "end": 252
-    }
+    "others": [
+     {
+      "name": "tests/artifacts/androidqf/dumpsys.txt",
+      "start": 149,
+      "end": 252
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 100,
     "tokens": 890,
-    "firstFile": {
+    "first": {
      "name": "tests/artifacts/android_data/bugreport/dumpstate.txt",
      "start": 20,
      "end": 119
     },
-    "secondFile": {
-     "name": "tests/artifacts/android_data/dumpsys_appops.txt",
-     "start": 1,
-     "end": 100
-    }
+    "others": [
+     {
+      "name": "tests/artifacts/android_data/dumpsys_appops.txt",
+      "start": 1,
+      "end": 100
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
-    "format": "txt",
-    "lines": 38,
-    "tokens": 407,
-    "firstFile": {
-     "name": "tests/artifacts/android_data/bugreport/dumpstate.txt",
-     "start": 142,
-     "end": 179
-    },
-    "secondFile": {
-     "name": "tests/artifacts/android_data/dumpsys_packages.txt",
-     "start": 39,
-     "end": 76
-    }
-   },
-   {
-    "format": "txt",
+    "format": "python",
     "lines": 13,
-    "tokens": 322,
-    "firstFile": {
-     "name": "tests/artifacts/android_data/dumpsys_adb.txt",
-     "start": 1,
-     "end": 13
+    "tokens": 54,
+    "first": {
+     "name": "src/mvt/ios/modules/backup/profile_events.py",
+     "start": 38,
+     "end": 50
     },
-    "secondFile": {
-     "name": "tests/artifacts/androidqf/dumpsys.txt",
-     "start": 252,
-     "end": 264
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 10,
-    "tokens": 289,
-    "firstFile": {
-     "name": "tests/artifacts/android_data/dumpsys_adb.txt",
-     "start": 1,
-     "end": 10
-    },
-    "secondFile": {
-     "name": "tests/artifacts/android_data/dumpsys_adb_wifi.txt",
-     "start": 1,
-     "end": 10
-    }
-   },
-   {
-    "format": "python",
-    "lines": 66,
-    "tokens": 280,
-    "firstFile": {
-     "name": "src/mvt/android/cli.py",
-     "start": 52,
-     "end": 117
-    },
-    "secondFile": {
-     "name": "src/mvt/ios/cli.py",
-     "start": 64,
-     "end": 129
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 17,
-    "tokens": 271,
-    "firstFile": {
-     "name": "tests/artifacts/android_data/bugreport/dumpstate.txt",
-     "start": 250,
-     "end": 266
-    },
-    "secondFile": {
-     "name": "tests/artifacts/androidqf/dumpsys.txt",
-     "start": 383,
-     "end": 399
-    }
+    "others": [
+     {
+      "name": "src/mvt/ios/modules/fs/analytics_ios_versions.py",
+      "start": 34,
+      "end": 46
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/filesystem.py",
+      "start": 33,
+      "end": 45
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/shutdownlog.py",
+      "start": 36,
+      "end": 48
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/webkit_indexeddb.py",
+      "start": 38,
+      "end": 50
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+      "start": 36,
+      "end": 48
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/calls.py",
+      "start": 31,
+      "end": 43
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/chrome_favicon.py",
+      "start": 35,
+      "end": 47
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/chrome_history.py",
+      "start": 37,
+      "end": 49
+     }
+    ],
+    "copies": 14,
+    "kind": "code"
    },
    {
     "format": "python",
-    "lines": 36,
-    "tokens": 245,
-    "firstFile": {
-     "name": "tests/android_androidqf/test_tcc.py",
-     "start": 1,
+    "lines": 13,
+    "tokens": 57,
+    "first": {
+     "name": "src/mvt/android/modules/androidqf/aqf_processes.py",
+     "start": 24,
      "end": 36
     },
-    "secondFile": {
-     "name": "tests/ios_backup/test_tcc.py",
-     "start": 1,
-     "end": 36
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 16,
-    "tokens": 225,
-    "firstFile": {
-     "name": "tests/artifacts/android_data/bugreport/dumpstate.txt",
-     "start": 251,
-     "end": 266
-    },
-    "secondFile": {
-     "name": "tests/artifacts/android_data/dumpsys_platform_compat.txt",
-     "start": 1,
-     "end": 16
-    }
+    "others": [
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_accessibility.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_adb_state.py",
+      "start": 28,
+      "end": 40
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_appops.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_battery_daily.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_dbinfo.py",
+      "start": 26,
+      "end": 38
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_packages.py",
+      "start": 25,
+      "end": 37
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/dumpsys_platform_compat.py",
+      "start": 24,
+      "end": 36
+     },
+     {
+      "name": "src/mvt/android/modules/bugreport/fs_timestamps.py",
+      "start": 26,
+      "end": 38
+     }
+    ],
+    "copies": 13,
+    "kind": "code"
    },
    {
     "format": "python",
-    "lines": 34,
-    "tokens": 190,
-    "firstFile": {
-     "name": "src/mvt/android/cmd_check_androidqf.py",
-     "start": 41,
-     "end": 74
-    },
-    "secondFile": {
-     "name": "src/mvt/android/cmd_check_backup.py",
+    "lines": 14,
+    "tokens": 63,
+    "first": {
+     "name": "src/mvt/ios/modules/fs/analytics_ios_versions.py",
      "start": 35,
-     "end": 68
-    }
+     "end": 48
+    },
+    "others": [
+     {
+      "name": "src/mvt/ios/modules/fs/shutdownlog.py",
+      "start": 37,
+      "end": 50
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/webkit_indexeddb.py",
+      "start": 39,
+      "end": 52
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+      "start": 37,
+      "end": 50
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/calls.py",
+      "start": 32,
+      "end": 45
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/chrome_favicon.py",
+      "start": 36,
+      "end": 49
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/chrome_history.py",
+      "start": 38,
+      "end": 51
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/firefox_favicon.py",
+      "start": 38,
+      "end": 51
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/firefox_history.py",
+      "start": 42,
+      "end": 55
+     }
+    ],
+    "copies": 11,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 61,
+    "first": {
+     "name": "src/mvt/android/modules/intrusion_logs/base.py",
+     "start": 41,
+     "end": 51
+    },
+    "others": [
+     {
+      "name": "src/mvt/ios/modules/backup/profile_events.py",
+      "start": 25,
+      "end": 37
+     },
+     {
+      "name": "src/mvt/ios/modules/base.py",
+      "start": 40,
+      "end": 49
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/analytics.py",
+      "start": 28,
+      "end": 37
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/filesystem.py",
+      "start": 22,
+      "end": 32
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+      "start": 23,
+      "end": 35
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/firefox_history.py",
+      "start": 28,
+      "end": 40
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/webkit_resource_load_statistics.py",
+      "start": 31,
+      "end": 40
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/whatsapp.py",
+      "start": 91,
+      "end": 100
+     }
+    ],
+    "copies": 11,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 17,
+    "tokens": 103,
+    "first": {
+     "name": "src/mvt/android/modules/androidqf/aqf_files.py",
+     "start": 39,
+     "end": 55
+    },
+    "others": [
+     {
+      "name": "src/mvt/ios/modules/backup/profile_events.py",
+      "start": 32,
+      "end": 48
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/filesystem.py",
+      "start": 27,
+      "end": 43
+     },
+     {
+      "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+      "start": 30,
+      "end": 46
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/firefox_history.py",
+      "start": 35,
+      "end": 51
+     },
+     {
+      "name": "src/mvt/ios/modules/mixed/whatsapp.py",
+      "start": 95,
+      "end": 111
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
    }
   ],
   "health": {
@@ -477,6 +835,593 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 150,
+   "lines": 23328,
+   "tokens": 105552,
+   "clones": 241,
+   "duplicatedLines": 3755,
+   "duplicatedTokens": 18757,
+   "percentage": 16.1,
+   "percentageTokens": 17.77,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 140,
+     "lines": 22510,
+     "clones": 241,
+     "duplicatedLines": 3755,
+     "percentage": 16.68
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 19,
+     "tokens": 100,
+     "first": {
+      "name": "src/mvt/android/modules/androidqf/aqf_getprop.py",
+      "start": 16,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "src/mvt/android/modules/androidqf/aqf_packages.py",
+       "start": 28,
+       "end": 46
+      },
+      {
+       "name": "src/mvt/android/modules/androidqf/aqf_processes.py",
+       "start": 16,
+       "end": 34
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_accessibility.py",
+       "start": 16,
+       "end": 34
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_adb_state.py",
+       "start": 20,
+       "end": 38
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_appops.py",
+       "start": 16,
+       "end": 34
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_battery_daily.py",
+       "start": 16,
+       "end": 34
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_platform_compat.py",
+       "start": 16,
+       "end": 34
+      },
+      {
+       "name": "src/mvt/ios/modules/backup/configuration_profiles.py",
+       "start": 27,
+       "end": 45
+      }
+     ],
+     "copies": 21,
+     "excerpt": {
+      "lines": [
+       "\"\"\"This module extracts data from get properties.\"\"\"",
+       "",
+       "def __init__(",
+       "    self,",
+       "    file_path: Optional[str] = None,",
+       "    target_path: Optional[str] = None,",
+       "    results_path: Optional[str] = None,",
+       "    module_options: Optional[dict] = None,",
+       "    log: logging.Logger = logging.getLogger(__name__),",
+       "    results: Optional[ModuleResults] = None,"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 50,
+     "first": {
+      "name": "src/mvt/android/modules/androidqf/aqf_files.py",
+      "start": 43,
+      "end": 55
+     },
+     "others": [
+      {
+       "name": "src/mvt/android/modules/androidqf/aqf_packages.py",
+       "start": 36,
+       "end": 48
+      },
+      {
+       "name": "src/mvt/android/modules/androidqf/aqf_processes.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_accessibility.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_adb_state.py",
+       "start": 28,
+       "end": 40
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_appops.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_battery_daily.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_packages.py",
+       "start": 25,
+       "end": 37
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_platform_compat.py",
+       "start": 24,
+       "end": 36
+      }
+     ],
+     "copies": 24,
+     "excerpt": {
+      "lines": [
+       "    log: logging.Logger = logging.getLogger(__name__),",
+       "    results: Optional[ModuleResults] = None,",
+       ") -> None:",
+       "    super().__init__(",
+       "        file_path=file_path,",
+       "        target_path=target_path,",
+       "        results_path=results_path,",
+       "        module_options=module_options,",
+       "        log=log,",
+       "        results=results,"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 20,
+     "tokens": 102,
+     "first": {
+      "name": "src/mvt/android/modules/androidqf/aqf_getprop.py",
+      "start": 16,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "src/mvt/android/modules/androidqf/base.py",
+       "start": 17,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/backup/base.py",
+       "start": 16,
+       "end": 35
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/base.py",
+       "start": 18,
+       "end": 38
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_activities.py",
+       "start": 18,
+       "end": 38
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_getprop.py",
+       "start": 16,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/ios/modules/backup/backup_info.py",
+       "start": 19,
+       "end": 39
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/calendar.py",
+       "start": 25,
+       "end": 44
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/locationd.py",
+       "start": 30,
+       "end": 50
+      }
+     ],
+     "copies": 11,
+     "excerpt": {
+      "lines": [
+       "\"\"\"This module extracts data from get properties.\"\"\"",
+       "",
+       "def __init__(",
+       "    self,",
+       "    file_path: Optional[str] = None,",
+       "    target_path: Optional[str] = None,",
+       "    results_path: Optional[str] = None,",
+       "    module_options: Optional[dict] = None,",
+       "    log: logging.Logger = logging.getLogger(__name__),",
+       "    results: Optional[ModuleResults] = None,"
+      ],
+      "total": 20
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 54,
+     "first": {
+      "name": "src/mvt/ios/modules/backup/profile_events.py",
+      "start": 38,
+      "end": 50
+     },
+     "others": [
+      {
+       "name": "src/mvt/ios/modules/fs/analytics_ios_versions.py",
+       "start": 34,
+       "end": 46
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/filesystem.py",
+       "start": 33,
+       "end": 45
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/shutdownlog.py",
+       "start": 36,
+       "end": 48
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/webkit_indexeddb.py",
+       "start": 38,
+       "end": 50
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+       "start": 36,
+       "end": 48
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/calls.py",
+       "start": 31,
+       "end": 43
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/chrome_favicon.py",
+       "start": 35,
+       "end": 47
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/chrome_history.py",
+       "start": 37,
+       "end": 49
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 57,
+     "first": {
+      "name": "src/mvt/android/modules/androidqf/aqf_processes.py",
+      "start": 24,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_accessibility.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_adb_state.py",
+       "start": 28,
+       "end": 40
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_appops.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_battery_daily.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_dbinfo.py",
+       "start": 26,
+       "end": 38
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_packages.py",
+       "start": 25,
+       "end": 37
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_platform_compat.py",
+       "start": 24,
+       "end": 36
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/fs_timestamps.py",
+       "start": 26,
+       "end": 38
+      }
+     ],
+     "copies": 13,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 63,
+     "first": {
+      "name": "src/mvt/ios/modules/fs/analytics_ios_versions.py",
+      "start": 35,
+      "end": 48
+     },
+     "others": [
+      {
+       "name": "src/mvt/ios/modules/fs/shutdownlog.py",
+       "start": 37,
+       "end": 50
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/webkit_indexeddb.py",
+       "start": 39,
+       "end": 52
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+       "start": 37,
+       "end": 50
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/calls.py",
+       "start": 32,
+       "end": 45
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/chrome_favicon.py",
+       "start": 36,
+       "end": 49
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/chrome_history.py",
+       "start": 38,
+       "end": 51
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/firefox_favicon.py",
+       "start": 38,
+       "end": 51
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/firefox_history.py",
+       "start": 42,
+       "end": 55
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 61,
+     "first": {
+      "name": "src/mvt/android/modules/intrusion_logs/base.py",
+      "start": 41,
+      "end": 51
+     },
+     "others": [
+      {
+       "name": "src/mvt/ios/modules/backup/profile_events.py",
+       "start": 25,
+       "end": 37
+      },
+      {
+       "name": "src/mvt/ios/modules/base.py",
+       "start": 40,
+       "end": 49
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/analytics.py",
+       "start": 28,
+       "end": 37
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/filesystem.py",
+       "start": 22,
+       "end": 32
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+       "start": 23,
+       "end": 35
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/firefox_history.py",
+       "start": 28,
+       "end": 40
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/webkit_resource_load_statistics.py",
+       "start": 31,
+       "end": 40
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/whatsapp.py",
+       "start": 91,
+       "end": 100
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 103,
+     "first": {
+      "name": "src/mvt/android/modules/androidqf/aqf_files.py",
+      "start": 39,
+      "end": 55
+     },
+     "others": [
+      {
+       "name": "src/mvt/ios/modules/backup/profile_events.py",
+       "start": 32,
+       "end": 48
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/filesystem.py",
+       "start": 27,
+       "end": 43
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/webkit_localstorage.py",
+       "start": 30,
+       "end": 46
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/firefox_history.py",
+       "start": 35,
+       "end": 51
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/whatsapp.py",
+       "start": 95,
+       "end": 111
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 19,
+     "tokens": 100,
+     "first": {
+      "name": "src/mvt/android/modules/androidqf/aqf_files.py",
+      "start": 37,
+      "end": 55
+     },
+     "others": [
+      {
+       "name": "src/mvt/android/modules/androidqf/aqf_log_timestamps.py",
+       "start": 23,
+       "end": 41
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/dumpsys_dbinfo.py",
+       "start": 20,
+       "end": 38
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/fs_timestamps.py",
+       "start": 20,
+       "end": 38
+      },
+      {
+       "name": "src/mvt/android/modules/bugreport/tombstones.py",
+       "start": 19,
+       "end": 37
+      },
+      {
+       "name": "src/mvt/ios/modules/fs/webkit_indexeddb.py",
+       "start": 30,
+       "end": 48
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 90,
+     "first": {
+      "name": "src/mvt/android/modules/androidqf/mounts.py",
+      "start": 20,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "src/mvt/android/modules/androidqf/root_binaries.py",
+       "start": 18,
+       "end": 32
+      },
+      {
+       "name": "src/mvt/android/modules/intrusion_logs/base.py",
+       "start": 46,
+       "end": 60
+      },
+      {
+       "name": "src/mvt/android/modules/intrusion_logs/connect_event.py",
+       "start": 17,
+       "end": 31
+      },
+      {
+       "name": "src/mvt/android/modules/intrusion_logs/dns_event.py",
+       "start": 17,
+       "end": 31
+      },
+      {
+       "name": "src/mvt/ios/modules/mixed/calls.py",
+       "start": 25,
+       "end": 39
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "src/mvt/android/parsers/proto/tombstone.py"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:23:59.502Z",
+  "jscpdVersion": "5.4.0"
  }
 }

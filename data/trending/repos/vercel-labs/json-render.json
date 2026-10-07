@@ -9,10 +9,12 @@
    "starsToday": 291,
    "headSha": "3ad381881194e7011ad3ccd6d668033495a06c29",
    "sources": 1628,
-   "lines": 216214,
+   "lines": 194865,
    "clones": 1543,
-   "duplicatedLines": 45754,
-   "percentage": 21.16,
+   "duplicatedLines": 45997,
+   "percentage": 23.6,
+   "codePercentage": 22.98,
+   "codeSources": 617,
    "healthScore": 39.9,
    "healthGrade": "E"
   }
@@ -28,86 +30,86 @@
   "starsToday": 291,
   "defaultBranch": "main",
   "headSha": "3ad381881194e7011ad3ccd6d668033495a06c29",
-  "durationMs": 1230,
+  "durationMs": 580,
   "total": {
    "sources": 1628,
-   "lines": 216214,
-   "tokens": 1016971,
+   "lines": 194865,
+   "tokens": 1016806,
    "clones": 1543,
-   "duplicatedLines": 45754,
+   "duplicatedLines": 45997,
    "duplicatedTokens": 230738,
-   "percentage": 21.16,
+   "percentage": 23.6,
    "percentageTokens": 22.69
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 604,
-    "lines": 93450,
+    "lines": 86992,
     "clones": 694,
-    "duplicatedLines": 18882,
-    "percentage": 20.21
+    "duplicatedLines": 19014,
+    "percentage": 21.86
    },
    {
     "format": "tsx",
     "sources": 422,
-    "lines": 76752,
+    "lines": 71657,
     "clones": 618,
-    "duplicatedLines": 20068,
-    "percentage": 26.15
+    "duplicatedLines": 20543,
+    "percentage": 28.67
    },
    {
     "format": "markdown",
     "sources": 156,
     "lines": 19725,
     "clones": 93,
-    "duplicatedLines": 3137,
-    "percentage": 15.9
+    "duplicatedLines": 3230,
+    "percentage": 16.38
    },
    {
     "format": "json",
     "sources": 109,
-    "lines": 8120,
+    "lines": 4523,
     "clones": 93,
-    "duplicatedLines": 2214,
-    "percentage": 27.27
+    "duplicatedLines": 1913,
+    "percentage": 42.29
    },
    {
     "format": "css",
     "sources": 20,
-    "lines": 2660,
+    "lines": 2482,
     "clones": 26,
-    "duplicatedLines": 955,
-    "percentage": 35.9
+    "duplicatedLines": 981,
+    "percentage": 39.52
    },
    {
     "format": "html",
     "sources": 112,
-    "lines": 5243,
+    "lines": 2225,
     "clones": 14,
-    "duplicatedLines": 419,
-    "percentage": 7.99
+    "duplicatedLines": 232,
+    "percentage": 10.43
    },
    {
     "format": "javascript",
     "sources": 11,
     "lines": 407,
     "clones": 3,
-    "duplicatedLines": 61,
-    "percentage": 14.99
+    "duplicatedLines": 64,
+    "percentage": 15.72
    },
    {
     "format": "yaml",
     "sources": 18,
-    "lines": 285,
+    "lines": 269,
     "clones": 2,
-    "duplicatedLines": 18,
-    "percentage": 6.32
+    "duplicatedLines": 20,
+    "percentage": 7.43
    },
    {
     "format": "svelte",
     "sources": 138,
-    "lines": 4880,
+    "lines": 4647,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -115,7 +117,7 @@
    {
     "format": "bash",
     "sources": 18,
-    "lines": 2111,
+    "lines": 719,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -126,151 +128,266 @@
     "format": "typescript",
     "lines": 1385,
     "tokens": 8549,
-    "firstFile": {
+    "first": {
      "name": "examples/stripe-app/drawer-app/src/lib/render/catalog/actions.ts",
      "start": 202,
      "end": 1586
     },
-    "secondFile": {
-     "name": "examples/stripe-app/fullpage-app/src/lib/render/catalog/actions.ts",
-     "start": 182,
-     "end": 1566
-    }
+    "others": [
+     {
+      "name": "examples/stripe-app/fullpage-app/src/lib/render/catalog/actions.ts",
+      "start": 182,
+      "end": 1566
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  }",
+      "},",
+      "",
+      "createPaymentIntent: async (params, setState) => {",
+      "  try {",
+      "    await stripe.paymentIntents.create({",
+      "      amount: (params?.amount as number) ?? 0,",
+      "      currency: (params?.currency as string) ?? \"usd\",",
+      "      customer: (params?.customerId as string) ?? undefined,",
+      "      description: (params?.description as string) ?? undefined,"
+     ],
+     "total": 1385
+    },
+    "kind": "docs"
    },
    {
     "format": "typescript",
     "lines": 1358,
     "tokens": 7640,
-    "firstFile": {
+    "first": {
      "name": "examples/stripe-app/drawer-app/src/lib/render/catalog.ts",
      "start": 1,
      "end": 1358
     },
-    "secondFile": {
-     "name": "examples/stripe-app/fullpage-app/src/lib/render/catalog.ts",
-     "start": 1,
-     "end": 1358
-    }
+    "others": [
+     {
+      "name": "examples/stripe-app/fullpage-app/src/lib/render/catalog.ts",
+      "start": 1,
+      "end": 1358
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import { defineCatalog } from \"@json-render/core\";",
+      "import { schema } from \"@json-render/react/schema\";",
+      "import { z } from \"zod\";",
+      "",
+      "/**",
+      " * Stripe UIXT Catalog",
+      " *",
+      " * Comprehensive catalog mapping to Stripe UI Extension SDK components.",
+      " */",
+      "export const stripeCatalog = defineCatalog(schema, {"
+     ],
+     "total": 1358
+    },
+    "kind": "docs"
    },
    {
     "format": "tsx",
     "lines": 1400,
     "tokens": 7242,
-    "firstFile": {
+    "first": {
      "name": "examples/stripe-app/drawer-app/src/lib/render/catalog/components.tsx",
      "start": 6,
      "end": 1405
     },
-    "secondFile": {
-     "name": "examples/stripe-app/fullpage-app/src/lib/render/catalog/components.tsx",
-     "start": 6,
-     "end": 1405
-    }
+    "others": [
+     {
+      "name": "examples/stripe-app/fullpage-app/src/lib/render/catalog/components.tsx",
+      "start": 6,
+      "end": 1405
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import type { FunctionComponent } from \"react\";",
+      "import type { ComponentRenderProps } from \"@json-render/react\";",
+      "import {",
+      "  Box,",
+      "  Badge as UIBadge,",
+      "  Banner as UIBanner,",
+      "  Button as UIButton,",
+      "  Checkbox as UICheckbox,",
+      "  DateField as UIDateField,",
+      "  Divider as UIDivider,"
+     ],
+     "total": 1400
+    },
+    "kind": "docs"
    },
    {
     "format": "typescript",
     "lines": 1046,
     "tokens": 3940,
-    "firstFile": {
+    "first": {
      "name": "examples/react-email/lib/examples.ts",
      "start": 10,
      "end": 1055
     },
-    "secondFile": {
-     "name": "packages/react-email/src/__fixtures__/examples.ts",
-     "start": 12,
-     "end": 1057
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 426,
-    "tokens": 2158,
-    "firstFile": {
-     "name": "packages/shadcn-svelte/src/catalog.ts",
-     "start": 81,
-     "end": 506
-    },
-    "secondFile": {
-     "name": "packages/shadcn/src/catalog.ts",
-     "start": 84,
-     "end": 509
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 222,
-    "tokens": 1835,
-    "firstFile": {
-     "name": "packages/codegen/CHANGELOG.md:markdown",
-     "start": 3,
-     "end": 224
-    },
-    "secondFile": {
-     "name": "packages/remotion/CHANGELOG.md:markdown",
-     "start": 3,
-     "end": 224
-    }
-   },
-   {
-    "format": "tsx",
-    "lines": 357,
-    "tokens": 1576,
-    "firstFile": {
-     "name": "examples/chat/components/ui/chart.tsx",
-     "start": 1,
-     "end": 357
-    },
-    "secondFile": {
-     "name": "examples/dashboard/components/ui/chart.tsx",
-     "start": 1,
-     "end": 357
-    }
+    "others": [
+     {
+      "name": "packages/react-email/src/__fixtures__/examples.ts",
+      "start": 12,
+      "end": 1057
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "css",
     "lines": 124,
     "tokens": 1463,
-    "firstFile": {
+    "first": {
      "name": "examples/image/app/globals.css",
      "start": 1,
      "end": 124
     },
-    "secondFile": {
-     "name": "examples/react-email/app/globals.css",
-     "start": 1,
-     "end": 124
-    }
-   },
-   {
-    "format": "css",
-    "lines": 124,
-    "tokens": 1463,
-    "firstFile": {
-     "name": "examples/image/app/globals.css",
-     "start": 1,
-     "end": 124
-    },
-    "secondFile": {
-     "name": "examples/react-pdf/app/globals.css",
-     "start": 1,
-     "end": 124
-    }
+    "others": [
+     {
+      "name": "examples/react-email/app/globals.css",
+      "start": 1,
+      "end": 124
+     },
+     {
+      "name": "examples/react-pdf/app/globals.css",
+      "start": 1,
+      "end": 124
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
     "format": "tsx",
     "lines": 262,
     "tokens": 1342,
-    "firstFile": {
+    "first": {
      "name": "packages/react-email/src/contexts/validation.tsx",
      "start": 1,
      "end": 262
     },
-    "secondFile": {
-     "name": "packages/react-native/src/contexts/validation.tsx",
-     "start": 1,
-     "end": 308
-    }
+    "others": [
+     {
+      "name": "packages/react-native/src/contexts/validation.tsx",
+      "start": 1,
+      "end": 308
+     },
+     {
+      "name": "packages/react-pdf/src/contexts/validation.tsx",
+      "start": 1,
+      "end": 262
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 426,
+    "tokens": 2158,
+    "first": {
+     "name": "packages/shadcn-svelte/src/catalog.ts",
+     "start": 81,
+     "end": 506
+    },
+    "others": [
+     {
+      "name": "packages/shadcn/src/catalog.ts",
+      "start": 84,
+      "end": 509
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 111,
+    "tokens": 709,
+    "first": {
+     "name": "packages/codegen/CHANGELOG.md:markdown",
+     "start": 3,
+     "end": 113
+    },
+    "others": [
+     {
+      "name": "packages/jotai/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 113
+     },
+     {
+      "name": "packages/redux/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 113
+     },
+     {
+      "name": "packages/zustand/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 113
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 222,
+    "tokens": 1835,
+    "first": {
+     "name": "packages/codegen/CHANGELOG.md:markdown",
+     "start": 3,
+     "end": 224
+    },
+    "others": [
+     {
+      "name": "packages/remotion/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 224
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "tsx",
+    "lines": 135,
+    "tokens": 557,
+    "first": {
+     "name": "apps/web/components/code-block.tsx",
+     "start": 5,
+     "end": 139
+    },
+    "others": [
+     {
+      "name": "apps/web/components/code.tsx",
+      "start": 3,
+      "end": 137
+     },
+     {
+      "name": "apps/web/components/package-install.tsx",
+      "start": 2,
+      "end": 136
+     },
+     {
+      "name": "examples/dashboard/components/code-highlight.tsx",
+      "start": 4,
+      "end": 138
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    }
   ],
   "health": {
@@ -489,6 +606,361 @@
      "lines": 56
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 617,
+   "lines": 75325,
+   "tokens": 347316,
+   "clones": 554,
+   "duplicatedLines": 17311,
+   "duplicatedTokens": 74785,
+   "percentage": 22.98,
+   "percentageTokens": 21.53,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 285,
+     "lines": 37454,
+     "clones": 283,
+     "duplicatedLines": 7689,
+     "percentage": 20.53
+    },
+    {
+     "format": "tsx",
+     "sources": 155,
+     "lines": 31768,
+     "clones": 266,
+     "duplicatedLines": 9551,
+     "percentage": 30.06
+    },
+    {
+     "format": "html",
+     "sources": 70,
+     "lines": 1277,
+     "clones": 3,
+     "duplicatedLines": 49,
+     "percentage": 3.84
+    },
+    {
+     "format": "javascript",
+     "sources": 6,
+     "lines": 228,
+     "clones": 2,
+     "duplicatedLines": 22,
+     "percentage": 9.65
+    },
+    {
+     "format": "svelte",
+     "sources": 87,
+     "lines": 3223,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 3,
+     "lines": 508,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "css",
+     "sources": 1,
+     "lines": 49,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 262,
+     "tokens": 1342,
+     "first": {
+      "name": "packages/react-email/src/contexts/validation.tsx",
+      "start": 1,
+      "end": 262
+     },
+     "others": [
+      {
+       "name": "packages/react-native/src/contexts/validation.tsx",
+       "start": 1,
+       "end": 308
+      },
+      {
+       "name": "packages/react-pdf/src/contexts/validation.tsx",
+       "start": 1,
+       "end": 262
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "import React, {",
+       "  createContext,",
+       "  useContext,",
+       "  useState,",
+       "  useCallback,",
+       "  useMemo,",
+       "  type ReactNode,",
+       "} from \"react\";",
+       "import {",
+       "  runValidation,"
+      ],
+      "total": 262
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 426,
+     "tokens": 2158,
+     "first": {
+      "name": "packages/shadcn-svelte/src/catalog.ts",
+      "start": 81,
+      "end": 506
+     },
+     "others": [
+      {
+       "name": "packages/shadcn/src/catalog.ts",
+       "start": 84,
+       "end": 509
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    z.object({",
+       "      label: z.string(),",
+       "      value: z.string(),",
+       "    }),",
+       "  ),",
+       "  defaultValue: z.string().nullable(),",
+       "  value: z.string().nullable(),",
+       "}),",
+       "slots: [\"default\"],",
+       "events: [\"change\"],"
+      ],
+      "total": 426
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 135,
+     "tokens": 557,
+     "first": {
+      "name": "apps/web/components/code-block.tsx",
+      "start": 5,
+      "end": 139
+     },
+     "others": [
+      {
+       "name": "apps/web/components/code.tsx",
+       "start": 3,
+       "end": 137
+      },
+      {
+       "name": "apps/web/components/package-install.tsx",
+       "start": 2,
+       "end": 136
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "import { CopyButton } from \"./copy-button\";",
+       "",
+       "const vercelDarkTheme = {",
+       "  name: \"vercel-dark\",",
+       "  type: \"dark\" as const,",
+       "  colors: {",
+       "    \"editor.background\": \"transparent\",",
+       "    \"editor.foreground\": \"#EDEDED\",",
+       "  },",
+       "  settings: ["
+      ],
+      "total": 135
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 232,
+     "tokens": 1011,
+     "first": {
+      "name": "apps/web/components/ui/carousel.tsx",
+      "start": 10,
+      "end": 241
+     },
+     "others": [
+      {
+       "name": "packages/shadcn/src/ui/carousel.tsx",
+       "start": 10,
+       "end": 241
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 221,
+     "tokens": 1005,
+     "first": {
+      "name": "packages/react/src/hooks.ts",
+      "start": 3,
+      "end": 223
+     },
+     "others": [
+      {
+       "name": "packages/vue/src/hooks.ts",
+       "start": 10,
+       "end": 230
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 219,
+     "tokens": 1003,
+     "first": {
+      "name": "packages/react/src/hooks.ts",
+      "start": 3,
+      "end": 221
+     },
+     "others": [
+      {
+       "name": "packages/solid/src/hooks.ts",
+       "start": 1,
+       "end": 219
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 251,
+     "tokens": 897,
+     "first": {
+      "name": "apps/web/components/ui/dropdown-menu.tsx",
+      "start": 7,
+      "end": 257
+     },
+     "others": [
+      {
+       "name": "packages/shadcn/src/ui/dropdown-menu.tsx",
+       "start": 7,
+       "end": 257
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 190,
+     "tokens": 831,
+     "first": {
+      "name": "packages/react-native/src/contexts/actions.tsx",
+      "start": 9,
+      "end": 198
+     },
+     "others": [
+      {
+       "name": "packages/react-pdf/src/contexts/actions.tsx",
+       "start": 8,
+       "end": 148
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 184,
+     "tokens": 705,
+     "first": {
+      "name": "apps/web/components/ui/select.tsx",
+      "start": 7,
+      "end": 190
+     },
+     "others": [
+      {
+       "name": "packages/shadcn/src/ui/select.tsx",
+       "start": 5,
+       "end": 188
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 33,
+     "tokens": 171,
+     "first": {
+      "name": "packages/image/src/schema.ts",
+      "start": 1,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "packages/ink/src/schema.ts",
+       "start": 1,
+       "end": 43
+      },
+      {
+       "name": "packages/react-native/src/schema.ts",
+       "start": 1,
+       "end": 45
+      },
+      {
+       "name": "packages/solid/src/schema.ts",
+       "start": 1,
+       "end": 45
+      },
+      {
+       "name": "packages/svelte/src/schema.ts",
+       "start": 1,
+       "end": 45
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "packages/core/src/directives.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:17:26.068Z",
+  "jscpdVersion": "5.4.0"
  }
 }

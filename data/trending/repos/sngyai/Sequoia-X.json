@@ -9,10 +9,12 @@
    "starsToday": 63,
    "headSha": "444c0db69ff36b46ef2b22ab265051d60c16029d",
    "sources": 32,
-   "lines": 2646,
+   "lines": 2517,
    "clones": 2,
-   "duplicatedLines": 24,
-   "percentage": 0.91,
+   "duplicatedLines": 26,
+   "percentage": 1.03,
+   "codePercentage": 1.25,
+   "codeSources": 23,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,16 +30,16 @@
   "starsToday": 63,
   "defaultBranch": "master",
   "headSha": "444c0db69ff36b46ef2b22ab265051d60c16029d",
-  "durationMs": 550,
+  "durationMs": 28,
   "total": {
    "sources": 32,
-   "lines": 2646,
-   "tokens": 11754,
+   "lines": 2517,
+   "tokens": 11620,
    "clones": 2,
-   "duplicatedLines": 24,
+   "duplicatedLines": 26,
    "duplicatedTokens": 106,
-   "percentage": 0.91,
-   "percentageTokens": 0.9
+   "percentage": 1.03,
+   "percentageTokens": 0.91
   },
   "formats": [
    {
@@ -45,13 +47,13 @@
     "sources": 19,
     "lines": 1524,
     "clones": 2,
-    "duplicatedLines": 24,
-    "percentage": 1.57
+    "duplicatedLines": 26,
+    "percentage": 1.71
    },
    {
     "format": "bash",
     "sources": 9,
-    "lines": 694,
+    "lines": 644,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -59,7 +61,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -73,17 +75,17 @@
     "percentage": 0
    },
    {
-    "format": "text",
+    "format": "toml",
     "sources": 1,
-    "lines": 108,
+    "lines": 28,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "toml",
+    "format": "text",
     "sources": 1,
-    "lines": 28,
+    "lines": 23,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -94,32 +96,125 @@
     "format": "python",
     "lines": 13,
     "tokens": 53,
-    "firstFile": {
+    "first": {
      "name": "sequoia_x/strategy/high_tight_flag.py",
      "start": 28,
      "end": 40
     },
-    "secondFile": {
-     "name": "sequoia_x/strategy/limit_up_shakeout.py",
-     "start": 29,
-     "end": 41
-    }
-   },
-   {
-    "format": "python",
-    "lines": 13,
-    "tokens": 53,
-    "firstFile": {
-     "name": "sequoia_x/strategy/high_tight_flag.py",
-     "start": 28,
-     "end": 40
+    "others": [
+     {
+      "name": "sequoia_x/strategy/limit_up_shakeout.py",
+      "start": 29,
+      "end": 41
+     },
+     {
+      "name": "sequoia_x/strategy/uptrend_limit_down.py",
+      "start": 28,
+      "end": 40
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "遍历全市场，返回满足高旗形整理条件的股票代码列表。",
+      "",
+      "Returns:",
+      "    满足条件的股票代码列表。",
+      "\"\"\"",
+      "symbols = self.engine.get_local_symbols()",
+      "selected: list[str] = []",
+      "",
+      "for symbol in symbols:",
+      "    try:"
+     ],
+     "total": 13
     },
-    "secondFile": {
-     "name": "sequoia_x/strategy/uptrend_limit_down.py",
-     "start": 28,
-     "end": 40
-    }
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 23,
+   "lines": 2079,
+   "tokens": 9056,
+   "clones": 2,
+   "duplicatedLines": 26,
+   "duplicatedTokens": 106,
+   "percentage": 1.25,
+   "percentageTokens": 1.17,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 13,
+     "lines": 1261,
+     "clones": 2,
+     "duplicatedLines": 26,
+     "percentage": 2.06
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 53,
+     "first": {
+      "name": "sequoia_x/strategy/high_tight_flag.py",
+      "start": 28,
+      "end": 40
+     },
+     "others": [
+      {
+       "name": "sequoia_x/strategy/limit_up_shakeout.py",
+       "start": 29,
+       "end": 41
+      },
+      {
+       "name": "sequoia_x/strategy/uptrend_limit_down.py",
+       "start": 28,
+       "end": 40
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "遍历全市场，返回满足高旗形整理条件的股票代码列表。",
+       "",
+       "Returns:",
+       "    满足条件的股票代码列表。",
+       "\"\"\"",
+       "symbols = self.engine.get_local_symbols()",
+       "selected: list[str] = []",
+       "",
+       "for symbol in symbols:",
+       "    try:"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:46:19.420Z",
+  "jscpdVersion": "5.4.0"
  }
 }

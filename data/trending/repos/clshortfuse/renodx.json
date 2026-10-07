@@ -9,10 +9,12 @@
    "starsToday": 261,
    "headSha": "66f4a40362cd7840bc0647734c434670539addb0",
    "sources": 742,
-   "lines": 218278,
-   "clones": 5778,
-   "duplicatedLines": 110447,
-   "percentage": 50.6,
+   "lines": 217312,
+   "clones": 9409,
+   "duplicatedLines": 144223,
+   "percentage": 66.37,
+   "codePercentage": 69.46,
+   "codeSources": 638,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,94 +30,94 @@
   "starsToday": 261,
   "defaultBranch": "main",
   "headSha": "66f4a40362cd7840bc0647734c434670539addb0",
-  "durationMs": 1196,
+  "durationMs": 7098,
   "total": {
    "sources": 742,
-   "lines": 218278,
-   "tokens": 1651235,
-   "clones": 5778,
-   "duplicatedLines": 110447,
-   "duplicatedTokens": 861543,
-   "percentage": 50.6,
-   "percentageTokens": 52.18
+   "lines": 217312,
+   "tokens": 1623737,
+   "clones": 9409,
+   "duplicatedLines": 144223,
+   "duplicatedTokens": 1045505,
+   "percentage": 66.37,
+   "percentageTokens": 64.39
   },
   "formats": [
    {
     "format": "cpp",
     "sources": 270,
     "lines": 127333,
-    "clones": 4811,
-    "duplicatedLines": 86836,
-    "percentage": 68.2
-   },
-   {
-    "format": "cpp-header",
-    "sources": 131,
-    "lines": 59921,
-    "clones": 523,
-    "duplicatedLines": 13661,
-    "percentage": 22.8
+    "clones": 8152,
+    "duplicatedLines": 115421,
+    "percentage": 90.65
    },
    {
     "format": "c-header",
     "sources": 236,
     "lines": 19067,
-    "clones": 396,
-    "duplicatedLines": 9363,
-    "percentage": 49.11
+    "clones": 624,
+    "duplicatedLines": 13641,
+    "percentage": 71.54
+   },
+   {
+    "format": "cpp-header",
+    "sources": 131,
+    "lines": 59921,
+    "clones": 598,
+    "duplicatedLines": 14605,
+    "percentage": 24.37
    },
    {
     "format": "markup",
     "sources": 4,
     "lines": 515,
     "clones": 14,
-    "duplicatedLines": 123,
-    "percentage": 23.88
+    "duplicatedLines": 137,
+    "percentage": 26.6
    },
    {
     "format": "yaml",
     "sources": 9,
     "lines": 678,
-    "clones": 12,
-    "duplicatedLines": 253,
-    "percentage": 37.32
+    "clones": 13,
+    "duplicatedLines": 304,
+    "percentage": 44.84
    },
    {
     "format": "txt",
     "sources": 10,
     "lines": 1880,
-    "clones": 11,
-    "duplicatedLines": 74,
-    "percentage": 3.94
-   },
-   {
-    "format": "markdown",
-    "sources": 27,
-    "lines": 3007,
-    "clones": 8,
-    "duplicatedLines": 79,
-    "percentage": 2.63
+    "clones": 4,
+    "duplicatedLines": 39,
+    "percentage": 2.07
    },
    {
     "format": "json",
     "sources": 23,
     "lines": 1342,
     "clones": 2,
-    "duplicatedLines": 34,
-    "percentage": 2.53
+    "duplicatedLines": 36,
+    "percentage": 2.68
+   },
+   {
+    "format": "markdown",
+    "sources": 27,
+    "lines": 3007,
+    "clones": 1,
+    "duplicatedLines": 15,
+    "percentage": 0.5
    },
    {
     "format": "javascript",
     "sources": 6,
     "lines": 880,
     "clones": 1,
-    "duplicatedLines": 24,
-    "percentage": 2.73
+    "duplicatedLines": 25,
+    "percentage": 2.84
    },
    {
     "format": "powershell",
     "sources": 6,
-    "lines": 1762,
+    "lines": 1323,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -123,155 +125,1140 @@
   ],
   "topClones": [
    {
+    "format": "cpp-header",
+    "lines": 397,
+    "tokens": 3025,
+    "first": {
+     "name": "src/games/botw/utils/shader_hotswap.hpp",
+     "start": 1,
+     "end": 397
+    },
+    "others": [
+     {
+      "name": "src/games/kirbyfl/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "src/games/lm3/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "src/games/metroiddread/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "src/games/metroidprime/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "src/games/mhgu/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "src/games/mk8/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "src/games/splatoon/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     {
+      "name": "src/games/splatoon2/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     }
+    ],
+    "copies": 13,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Copyright (C) 2024 Carlos Lopez",
+      " * SPDX-License-Identifier: MIT",
+      " */",
+      "",
+      "#pragma once",
+      "",
+      "#include <windows.h>",
+      "",
+      "#include <cstdint>"
+     ],
+     "total": 397
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 250,
+    "tokens": 2032,
+    "first": {
+     "name": "src/games/kirbyfl/ryujinxlog.hpp",
+     "start": 1,
+     "end": 250
+    },
+    "others": [
+     {
+      "name": "src/games/lm3/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     },
+     {
+      "name": "src/games/metroidprime/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     },
+     {
+      "name": "src/games/mhgu/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     },
+     {
+      "name": "src/games/mk8/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     },
+     {
+      "name": "src/games/splatoon2/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     },
+     {
+      "name": "src/games/splatoon3/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     },
+     {
+      "name": "src/games/zelda-eow/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "#pragma once",
+      "",
+      "#include <algorithm>",
+      "#include <array>",
+      "#include <bit>",
+      "#include <charconv>",
+      "#include <cctype>",
+      "#include <filesystem>",
+      "#include <optional>",
+      "#include <span>"
+     ],
+     "total": 250
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 173,
+    "tokens": 1321,
+    "first": {
+     "name": "src/games/botw/ryujinxlog.hpp",
+     "start": 1,
+     "end": 173
+    },
+    "others": [
+     {
+      "name": "src/games/metroiddread/ryujinxlog.hpp",
+      "start": 1,
+      "end": 174
+     },
+     {
+      "name": "src/games/splatoon/ryujinxlog.hpp",
+      "start": 1,
+      "end": 173
+     },
+     {
+      "name": "src/games/supermario3dworld/ryujinxlog.hpp",
+      "start": 1,
+      "end": 173
+     },
+     {
+      "name": "src/games/totk/ryujinxlog.hpp",
+      "start": 1,
+      "end": 174
+     },
+     {
+      "name": "src/games/xbcx/ryujinxlog.hpp",
+      "start": 1,
+      "end": 210
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "#pragma once",
+      "",
+      "#include <algorithm>",
+      "#include <array>",
+      "#include <bit>",
+      "#include <cctype>",
+      "#include <filesystem>",
+      "#include <optional>",
+      "#include <span>",
+      "#include <string>"
+     ],
+     "total": 173
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 57,
+    "tokens": 1240,
+    "first": {
+     "name": "src/games/botw/shared.h",
+     "start": 85,
+     "end": 141
+    },
+    "others": [
+     {
+      "name": "src/games/splatoon/shared.h",
+      "start": 85,
+      "end": 141
+     },
+     {
+      "name": "src/games/splatoon2/shared.h",
+      "start": 85,
+      "end": 141
+     },
+     {
+      "name": "src/games/supermario3dworld/shared.h",
+      "start": 81,
+      "end": 137
+     },
+     {
+      "name": "src/games/zelda-eow/shared.h",
+      "start": 86,
+      "end": 142
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
     "format": "cpp",
-    "lines": 550,
-    "tokens": 3977,
-    "firstFile": {
+    "lines": 41,
+    "tokens": 803,
+    "first": {
+     "name": "src/games/kirbyfl/addon.cpp",
+     "start": 261,
+     "end": 301
+    },
+    "others": [
+     {
+      "name": "src/games/lm3/addon.cpp",
+      "start": 269,
+      "end": 310
+     },
+     {
+      "name": "src/games/metroidprime/addon.cpp",
+      "start": 273,
+      "end": 314
+     },
+     {
+      "name": "src/games/mhgu/addon.cpp",
+      "start": 243,
+      "end": 284
+     },
+     {
+      "name": "src/games/splatoon2/addon.cpp",
+      "start": 231,
+      "end": 271
+     },
+     {
+      "name": "src/games/splatoon3/addon.cpp",
+      "start": 230,
+      "end": 270
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 60,
+    "tokens": 465,
+    "first": {
+     "name": "src/games/animalwell/addon.cpp",
+     "start": 184,
+     "end": 243
+    },
+    "others": [
+     {
+      "name": "src/games/clivebarkersjericho/addon.cpp",
+      "start": 179,
+      "end": 238
+     },
+     {
+      "name": "src/games/digimonstorytimestranger/addon.cpp",
+      "start": 183,
+      "end": 242
+     },
+     {
+      "name": "src/games/dyinglight2/addon.cpp",
+      "start": 119,
+      "end": 178
+     },
+     {
+      "name": "src/games/eternights/addon.cpp",
+      "start": 184,
+      "end": 243
+     },
+     {
+      "name": "src/games/gatesofhell/addon.cpp",
+      "start": 188,
+      "end": 247
+     },
+     {
+      "name": "src/games/generic/addon.cpp",
+      "start": 182,
+      "end": 241
+     },
+     {
+      "name": "src/games/hatintime/addon.cpp",
+      "start": 179,
+      "end": 238
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 12,
+    "tokens": 68,
+    "first": {
+     "name": "src/addons/fpslimiter/addon.cpp",
+     "start": 2,
+     "end": 13
+    },
+    "others": [
+     {
+      "name": "src/games/aisomniumfiles/addon.cpp",
+      "start": 2,
+      "end": 13
+     },
+     {
+      "name": "src/games/animalwell/addon.cpp",
+      "start": 2,
+      "end": 13
+     },
+     {
+      "name": "src/games/asscreedvalhalla/addon.cpp",
+      "start": 3,
+      "end": 14
+     },
+     {
+      "name": "src/games/atelierryzadx/addon.cpp",
+      "start": 2,
+      "end": 13
+     },
+     {
+      "name": "src/games/atlasfallen/addon.cpp",
+      "start": 2,
+      "end": 13
+     },
+     {
+      "name": "src/games/beyondblue/addon.cpp",
+      "start": 2,
+      "end": 13
+     },
+     {
+      "name": "src/games/bge20/addon.cpp",
+      "start": 2,
+      "end": 13
+     },
+     {
+      "name": "src/games/bioshock-alt/addon.cpp",
+      "start": 2,
+      "end": 13
+     }
+    ],
+    "copies": 48,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 8,
+    "tokens": 73,
+    "first": {
      "name": "src/addons/devkit/addon.cpp",
      "start": 1,
-     "end": 550
+     "end": 8
     },
-    "secondFile": {
-     "name": "src/games/hatintime/addon.cpp",
-     "start": 1,
-     "end": 498
-    }
+    "others": [
+     {
+      "name": "src/games/beyondblue/addon.cpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/games/black-desert-online/addon.cpp",
+      "start": 1,
+      "end": 9
+     },
+     {
+      "name": "src/games/bladesoffire/addon.cpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/games/bmw/addon.cpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/games/borderlands4/addon.cpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/games/botw/addon.cpp",
+      "start": 1,
+      "end": 7
+     },
+     {
+      "name": "src/games/clairobscur_expedition33/addon.cpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/games/clivebarkersjericho/addon.cpp",
+      "start": 1,
+      "end": 8
+     }
+    ],
+    "copies": 42,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 35,
+    "tokens": 322,
+    "first": {
+     "name": "src/games/dai/addon.cpp",
+     "start": 452,
+     "end": 486
+    },
+    "others": [
+     {
+      "name": "src/games/ereban/addon.cpp",
+      "start": 418,
+      "end": 452
+     },
+     {
+      "name": "src/games/fe/addon.cpp",
+      "start": 433,
+      "end": 468
+     },
+     {
+      "name": "src/games/koarr/addon.cpp",
+      "start": 446,
+      "end": 480
+     },
+     {
+      "name": "src/games/mafiade/addon.cpp",
+      "start": 499,
+      "end": 534
+     },
+     {
+      "name": "src/games/nfs16/addon.cpp",
+      "start": 387,
+      "end": 421
+     },
+     {
+      "name": "src/games/shadowsawakening/addon.cpp",
+      "start": 434,
+      "end": 468
+     },
+     {
+      "name": "src/games/thesurge/addon.cpp",
+      "start": 430,
+      "end": 465
+     },
+     {
+      "name": "src/games/vrising/addon.cpp",
+      "start": 430,
+      "end": 464
+     }
+    ],
+    "copies": 10,
+    "kind": "code"
    },
    {
     "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
+    "lines": 8,
+    "tokens": 74,
+    "first": {
+     "name": "src/addons/devkit/formatting.hpp",
      "start": 1,
-     "end": 397
+     "end": 8
     },
-    "secondFile": {
-     "name": "src/games/kirbyfl/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/lm3/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/metroiddread/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/metroidprime/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/mhgu/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/mk8/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/splatoon/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/splatoon2/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 397,
-    "tokens": 3025,
-    "firstFile": {
-     "name": "src/games/botw/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    },
-    "secondFile": {
-     "name": "src/games/splatoon3/utils/shader_hotswap.hpp",
-     "start": 1,
-     "end": 397
-    }
+    "others": [
+     {
+      "name": "src/addons/devkit/mcp/device_selection.hpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/addons/devkit/mcp/device_summary.hpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/addons/devkit/mcp/draw_summary.hpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/addons/devkit/mcp/resource_analysis.hpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/addons/devkit/mcp/resource_clone.hpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/addons/devkit/mcp/resource_handle.hpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/addons/devkit/mcp/runtime.hpp",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "src/addons/devkit/mcp/server_session.hpp",
+      "start": 1,
+      "end": 8
+     }
+    ],
+    "copies": 36,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 638,
+   "lines": 206011,
+   "tokens": 1526619,
+   "clones": 9322,
+   "duplicatedLines": 143100,
+   "duplicatedTokens": 1037893,
+   "percentage": 69.46,
+   "percentageTokens": 67.99,
+   "formats": [
+    {
+     "format": "cpp",
+     "sources": 250,
+     "lines": 123912,
+     "clones": 8099,
+     "duplicatedLines": 114829,
+     "percentage": 92.67
+    },
+    {
+     "format": "c-header",
+     "sources": 236,
+     "lines": 19067,
+     "clones": 624,
+     "duplicatedLines": 13641,
+     "percentage": 71.54
+    },
+    {
+     "format": "cpp-header",
+     "sources": 130,
+     "lines": 59844,
+     "clones": 598,
+     "duplicatedLines": 14605,
+     "percentage": 24.41
+    },
+    {
+     "format": "javascript",
+     "sources": 6,
+     "lines": 880,
+     "clones": 1,
+     "duplicatedLines": 25,
+     "percentage": 2.84
+    },
+    {
+     "format": "powershell",
+     "sources": 3,
+     "lines": 1307,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 3,
+     "lines": 183,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "cpp-header",
+     "lines": 397,
+     "tokens": 3025,
+     "first": {
+      "name": "src/games/botw/utils/shader_hotswap.hpp",
+      "start": 1,
+      "end": 397
+     },
+     "others": [
+      {
+       "name": "src/games/kirbyfl/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "src/games/lm3/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "src/games/metroiddread/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "src/games/metroidprime/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "src/games/mhgu/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "src/games/mk8/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "src/games/splatoon/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      },
+      {
+       "name": "src/games/splatoon2/utils/shader_hotswap.hpp",
+       "start": 1,
+       "end": 397
+      }
+     ],
+     "copies": 13,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Copyright (C) 2024 Carlos Lopez",
+       " * SPDX-License-Identifier: MIT",
+       " */",
+       "",
+       "#pragma once",
+       "",
+       "#include <windows.h>",
+       "",
+       "#include <cstdint>"
+      ],
+      "total": 397
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 250,
+     "tokens": 2032,
+     "first": {
+      "name": "src/games/kirbyfl/ryujinxlog.hpp",
+      "start": 1,
+      "end": 250
+     },
+     "others": [
+      {
+       "name": "src/games/lm3/ryujinxlog.hpp",
+       "start": 1,
+       "end": 250
+      },
+      {
+       "name": "src/games/metroidprime/ryujinxlog.hpp",
+       "start": 1,
+       "end": 250
+      },
+      {
+       "name": "src/games/mhgu/ryujinxlog.hpp",
+       "start": 1,
+       "end": 250
+      },
+      {
+       "name": "src/games/mk8/ryujinxlog.hpp",
+       "start": 1,
+       "end": 250
+      },
+      {
+       "name": "src/games/splatoon2/ryujinxlog.hpp",
+       "start": 1,
+       "end": 250
+      },
+      {
+       "name": "src/games/splatoon3/ryujinxlog.hpp",
+       "start": 1,
+       "end": 250
+      },
+      {
+       "name": "src/games/zelda-eow/ryujinxlog.hpp",
+       "start": 1,
+       "end": 250
+      }
+     ],
+     "copies": 8,
+     "excerpt": {
+      "lines": [
+       "#pragma once",
+       "",
+       "#include <algorithm>",
+       "#include <array>",
+       "#include <bit>",
+       "#include <charconv>",
+       "#include <cctype>",
+       "#include <filesystem>",
+       "#include <optional>",
+       "#include <span>"
+      ],
+      "total": 250
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 173,
+     "tokens": 1321,
+     "first": {
+      "name": "src/games/botw/ryujinxlog.hpp",
+      "start": 1,
+      "end": 173
+     },
+     "others": [
+      {
+       "name": "src/games/metroiddread/ryujinxlog.hpp",
+       "start": 1,
+       "end": 174
+      },
+      {
+       "name": "src/games/splatoon/ryujinxlog.hpp",
+       "start": 1,
+       "end": 173
+      },
+      {
+       "name": "src/games/supermario3dworld/ryujinxlog.hpp",
+       "start": 1,
+       "end": 173
+      },
+      {
+       "name": "src/games/totk/ryujinxlog.hpp",
+       "start": 1,
+       "end": 174
+      },
+      {
+       "name": "src/games/xbcx/ryujinxlog.hpp",
+       "start": 1,
+       "end": 210
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "#pragma once",
+       "",
+       "#include <algorithm>",
+       "#include <array>",
+       "#include <bit>",
+       "#include <cctype>",
+       "#include <filesystem>",
+       "#include <optional>",
+       "#include <span>",
+       "#include <string>"
+      ],
+      "total": 173
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 57,
+     "tokens": 1240,
+     "first": {
+      "name": "src/games/botw/shared.h",
+      "start": 85,
+      "end": 141
+     },
+     "others": [
+      {
+       "name": "src/games/splatoon/shared.h",
+       "start": 85,
+       "end": 141
+      },
+      {
+       "name": "src/games/splatoon2/shared.h",
+       "start": 85,
+       "end": 141
+      },
+      {
+       "name": "src/games/supermario3dworld/shared.h",
+       "start": 81,
+       "end": 137
+      },
+      {
+       "name": "src/games/zelda-eow/shared.h",
+       "start": 86,
+       "end": 142
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 41,
+     "tokens": 803,
+     "first": {
+      "name": "src/games/kirbyfl/addon.cpp",
+      "start": 261,
+      "end": 301
+     },
+     "others": [
+      {
+       "name": "src/games/lm3/addon.cpp",
+       "start": 269,
+       "end": 310
+      },
+      {
+       "name": "src/games/metroidprime/addon.cpp",
+       "start": 273,
+       "end": 314
+      },
+      {
+       "name": "src/games/mhgu/addon.cpp",
+       "start": 243,
+       "end": 284
+      },
+      {
+       "name": "src/games/splatoon2/addon.cpp",
+       "start": 231,
+       "end": 271
+      },
+      {
+       "name": "src/games/splatoon3/addon.cpp",
+       "start": 230,
+       "end": 270
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 60,
+     "tokens": 465,
+     "first": {
+      "name": "src/games/animalwell/addon.cpp",
+      "start": 184,
+      "end": 243
+     },
+     "others": [
+      {
+       "name": "src/games/clivebarkersjericho/addon.cpp",
+       "start": 179,
+       "end": 238
+      },
+      {
+       "name": "src/games/digimonstorytimestranger/addon.cpp",
+       "start": 183,
+       "end": 242
+      },
+      {
+       "name": "src/games/dyinglight2/addon.cpp",
+       "start": 119,
+       "end": 178
+      },
+      {
+       "name": "src/games/eternights/addon.cpp",
+       "start": 184,
+       "end": 243
+      },
+      {
+       "name": "src/games/gatesofhell/addon.cpp",
+       "start": 188,
+       "end": 247
+      },
+      {
+       "name": "src/games/generic/addon.cpp",
+       "start": 182,
+       "end": 241
+      },
+      {
+       "name": "src/games/hatintime/addon.cpp",
+       "start": 179,
+       "end": 238
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 12,
+     "tokens": 68,
+     "first": {
+      "name": "src/addons/fpslimiter/addon.cpp",
+      "start": 2,
+      "end": 13
+     },
+     "others": [
+      {
+       "name": "src/games/aisomniumfiles/addon.cpp",
+       "start": 2,
+       "end": 13
+      },
+      {
+       "name": "src/games/animalwell/addon.cpp",
+       "start": 2,
+       "end": 13
+      },
+      {
+       "name": "src/games/asscreedvalhalla/addon.cpp",
+       "start": 3,
+       "end": 14
+      },
+      {
+       "name": "src/games/atelierryzadx/addon.cpp",
+       "start": 2,
+       "end": 13
+      },
+      {
+       "name": "src/games/atlasfallen/addon.cpp",
+       "start": 2,
+       "end": 13
+      },
+      {
+       "name": "src/games/beyondblue/addon.cpp",
+       "start": 2,
+       "end": 13
+      },
+      {
+       "name": "src/games/bge20/addon.cpp",
+       "start": 2,
+       "end": 13
+      },
+      {
+       "name": "src/games/bioshock-alt/addon.cpp",
+       "start": 2,
+       "end": 13
+      }
+     ],
+     "copies": 48,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 8,
+     "tokens": 73,
+     "first": {
+      "name": "src/addons/devkit/addon.cpp",
+      "start": 1,
+      "end": 8
+     },
+     "others": [
+      {
+       "name": "src/games/beyondblue/addon.cpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/games/black-desert-online/addon.cpp",
+       "start": 1,
+       "end": 9
+      },
+      {
+       "name": "src/games/bladesoffire/addon.cpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/games/bmw/addon.cpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/games/borderlands4/addon.cpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/games/botw/addon.cpp",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "src/games/clairobscur_expedition33/addon.cpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/games/clivebarkersjericho/addon.cpp",
+       "start": 1,
+       "end": 8
+      }
+     ],
+     "copies": 42,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 35,
+     "tokens": 322,
+     "first": {
+      "name": "src/games/dai/addon.cpp",
+      "start": 452,
+      "end": 486
+     },
+     "others": [
+      {
+       "name": "src/games/ereban/addon.cpp",
+       "start": 418,
+       "end": 452
+      },
+      {
+       "name": "src/games/fe/addon.cpp",
+       "start": 433,
+       "end": 468
+      },
+      {
+       "name": "src/games/koarr/addon.cpp",
+       "start": 446,
+       "end": 480
+      },
+      {
+       "name": "src/games/mafiade/addon.cpp",
+       "start": 499,
+       "end": 534
+      },
+      {
+       "name": "src/games/nfs16/addon.cpp",
+       "start": 387,
+       "end": 421
+      },
+      {
+       "name": "src/games/shadowsawakening/addon.cpp",
+       "start": 434,
+       "end": 468
+      },
+      {
+       "name": "src/games/thesurge/addon.cpp",
+       "start": 430,
+       "end": 465
+      },
+      {
+       "name": "src/games/vrising/addon.cpp",
+       "start": 430,
+       "end": 464
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 8,
+     "tokens": 74,
+     "first": {
+      "name": "src/addons/devkit/formatting.hpp",
+      "start": 1,
+      "end": 8
+     },
+     "others": [
+      {
+       "name": "src/addons/devkit/mcp/device_selection.hpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/addons/devkit/mcp/device_summary.hpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/addons/devkit/mcp/draw_summary.hpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/addons/devkit/mcp/resource_analysis.hpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/addons/devkit/mcp/resource_clone.hpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/addons/devkit/mcp/resource_handle.hpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/addons/devkit/mcp/runtime.hpp",
+       "start": 1,
+       "end": 8
+      },
+      {
+       "name": "src/addons/devkit/mcp/server_session.hpp",
+       "start": 1,
+       "end": 8
+      }
+     ],
+     "copies": 36,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:49:39.263Z",
+  "jscpdVersion": "5.4.0"
  }
 }

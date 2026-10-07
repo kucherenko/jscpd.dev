@@ -9,10 +9,12 @@
    "starsToday": 148,
    "headSha": "b2007ab86639a0ae4e4370484561158773112b93",
    "sources": 265,
-   "lines": 56864,
-   "clones": 344,
-   "duplicatedLines": 4481,
-   "percentage": 7.88,
+   "lines": 55465,
+   "clones": 391,
+   "duplicatedLines": 5268,
+   "percentage": 9.5,
+   "codePercentage": 0.8,
+   "codeSources": 129,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,54 +30,46 @@
   "starsToday": 148,
   "defaultBranch": "main",
   "headSha": "b2007ab86639a0ae4e4370484561158773112b93",
-  "durationMs": 616,
+  "durationMs": 146,
   "total": {
    "sources": 265,
-   "lines": 56864,
-   "tokens": 279267,
-   "clones": 344,
-   "duplicatedLines": 4481,
-   "duplicatedTokens": 24189,
-   "percentage": 7.88,
-   "percentageTokens": 8.66
+   "lines": 55465,
+   "tokens": 305273,
+   "clones": 391,
+   "duplicatedLines": 5268,
+   "duplicatedTokens": 26371,
+   "percentage": 9.5,
+   "percentageTokens": 8.64
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 182,
-    "lines": 46196,
-    "clones": 325,
-    "duplicatedLines": 4316,
-    "percentage": 9.34
+    "lines": 46023,
+    "clones": 370,
+    "duplicatedLines": 5063,
+    "percentage": 11
    },
    {
     "format": "markdown",
     "sources": 29,
     "lines": 4728,
     "clones": 13,
-    "duplicatedLines": 70,
-    "percentage": 1.48
+    "duplicatedLines": 83,
+    "percentage": 1.76
    },
    {
     "format": "yaml",
     "sources": 16,
-    "lines": 670,
-    "clones": 6,
-    "duplicatedLines": 95,
-    "percentage": 14.18
+    "lines": 666,
+    "clones": 8,
+    "duplicatedLines": 122,
+    "percentage": 18.32
    },
    {
     "format": "json",
     "sources": 12,
-    "lines": 2093,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "bash",
-    "sources": 15,
-    "lines": 1804,
+    "lines": 1919,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -83,7 +77,15 @@
    {
     "format": "javascript",
     "sources": 10,
-    "lines": 1205,
+    "lines": 1147,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 15,
+    "lines": 808,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -91,7 +93,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -100,154 +102,771 @@
   "topClones": [
    {
     "format": "typescript",
-    "lines": 51,
-    "tokens": 213,
-    "firstFile": {
-     "name": "tests/tools/thirdPartyDeveloper.test.ts",
-     "start": 485,
-     "end": 535
+    "lines": 24,
+    "tokens": 127,
+    "first": {
+     "name": "tests/tools/console.test.ts",
+     "start": 507,
+     "end": 530
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "tests/tools/console.test.ts",
+      "start": 536,
+      "end": 559
+     },
+     {
+      "name": "tests/tools/console.test.ts",
+      "start": 565,
+      "end": 588
+     },
+     {
+      "name": "tests/tools/console.test.ts",
+      "start": 594,
+      "end": 617
+     },
+     {
+      "name": "tests/tools/console.test.ts",
+      "start": 623,
+      "end": 646
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "    `);",
+      "});",
+      "server.addHtmlRoute(",
+      "  '/index.html',",
+      "  `<script src=\"${server.getRoute('/main.min.js')}\"></script>`,",
+      ");",
+      "",
+      "await withMcpContext(async (response, context) => {",
+      "  const page = context.getSelectedMcpPage();",
+      "  await page.pptrPage.goto(server.getRoute('/index.html'));"
+     ],
+     "total": 24
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 14,
+    "tokens": 66,
+    "first": {
+     "name": "tests/tools/memory.test.ts",
+     "start": 69,
+     "end": 82
+    },
+    "others": [
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 116,
+      "end": 128
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 138,
+      "end": 150
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 193,
+      "end": 206
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 366,
+      "end": 378
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 438,
+      "end": 450
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 518,
+      "end": 530
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 693,
+      "end": 705
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "  {params: {filePath}},",
+      "  response,",
+      "  context,",
+      ");",
+      "",
+      "// Call handle to trigger formatting (similar to network tests)",
+      "const responseData = await response.handle(context);",
+      "const output = responseData.content",
+      "  .map(c => (c.type === 'text' ? c.text : ''))",
+      "  .join('\\n');"
+     ],
+     "total": 14
+    },
+    "excerptSecond": {
+     "lines": [
+      "  {params: {filePath, filterName: 'objectsRetainedByContexts'}},",
+      "  response,",
+      "  context,",
+      ");",
+      "",
+      "const responseData = await response.handle(context);",
+      "const output = responseData.content",
+      "  .map(c => (c.type === 'text' ? c.text : ''))",
+      "  .join('\\n');",
+      ""
+     ],
+     "total": 13
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "tests/tools/memory.test.ts",
+     "start": 99,
+     "end": 108
+    },
+    "others": [
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 121,
+      "end": 130
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 143,
+      "end": 152
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 371,
+      "end": 380
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 421,
+      "end": 430
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 443,
+      "end": 452
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 523,
+      "end": 532
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 581,
+      "end": 590
+     },
+     {
+      "name": "tests/tools/memory.test.ts",
+      "start": 698,
+      "end": 707
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "    const responseData = await response.handle(context);",
+      "    const output = responseData.content",
+      "      .map(c => (c.type === 'text' ? c.text : ''))",
+      "      .join('\\n');",
+      "",
+      "    t.assert.snapshot(output);",
+      "  });",
+      "});",
+      "",
+      "it('with objectsRetainedByContexts filterName', async t => {"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "    const responseData = await response.handle(context);",
+      "    const output = responseData.content",
+      "      .map(c => (c.type === 'text' ? c.text : ''))",
+      "      .join('\\n');",
+      "",
+      "    t.assert.snapshot(output);",
+      "  });",
+      "});",
+      "",
+      "it('with sharedNativeContext filterName', async t => {"
+     ],
+     "total": 10
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 13,
+    "tokens": 50,
+    "first": {
+     "name": "tests/ToolHandler.test.ts",
+     "start": 276,
+     "end": 288
+    },
+    "others": [
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 503,
+      "end": 515
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 579,
+      "end": 591
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 635,
+      "end": 647
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 692,
+      "end": 704
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 752,
+      "end": 764
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 802,
+      "end": 814
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 850,
+      "end": 862
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 906,
+      "end": 918
+     }
+    ],
+    "copies": 10,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 13,
+    "tokens": 51,
+    "first": {
+     "name": "tests/ToolHandler.test.ts",
+     "start": 59,
+     "end": 71
+    },
+    "others": [
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 274,
+      "end": 286
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 577,
+      "end": 589
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 633,
+      "end": 645
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 690,
+      "end": 702
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 800,
+      "end": 812
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 904,
+      "end": 916
+     },
+     {
+      "name": "tests/ToolHandler.test.ts",
+      "start": 1092,
+      "end": 1104
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 18,
+    "tokens": 124,
+    "first": {
+     "name": "tests/formatters/NetworkFormatter.test.ts",
+     "start": 239,
+     "end": 256
+    },
+    "others": [
+     {
+      "name": "tests/formatters/NetworkFormatter.test.ts",
+      "start": 386,
+      "end": 403
+     },
+     {
+      "name": "tests/formatters/NetworkFormatter.test.ts",
+      "start": 553,
+      "end": 570
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 55,
+    "first": {
      "name": "tests/tools/thirdPartyDeveloper.test.ts",
-     "start": 777,
-     "end": 830
-    }
+     "start": 310,
+     "end": 321
+    },
+    "others": [
+     {
+      "name": "tests/tools/thirdPartyDeveloper.test.ts",
+      "start": 442,
+      "end": 453
+     },
+     {
+      "name": "tests/tools/thirdPartyDeveloper.test.ts",
+      "start": 578,
+      "end": 589
+     },
+     {
+      "name": "tests/tools/thirdPartyDeveloper.test.ts",
+      "start": 624,
+      "end": 635
+     },
+     {
+      "name": "tests/tools/thirdPartyDeveloper.test.ts",
+      "start": 890,
+      "end": 901
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 8,
+    "tokens": 53,
+    "first": {
+     "name": "tests/McpResponse.test.ts",
+     "start": 319,
+     "end": 326
+    },
+    "others": [
+     {
+      "name": "tests/McpResponse.test.ts",
+      "start": 328,
+      "end": 335
+     },
+     {
+      "name": "tests/McpResponse.test.ts",
+      "start": 339,
+      "end": 346
+     },
+     {
+      "name": "tests/McpResponse.test.ts",
+      "start": 348,
+      "end": 355
+     },
+     {
+      "name": "tests/McpResponse.test.ts",
+      "start": 357,
+      "end": 364
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 55,
     "tokens": 205,
-    "firstFile": {
+    "first": {
      "name": "tests/network_blocking.test.ts",
      "start": 25,
      "end": 79
     },
-    "secondFile": {
-     "name": "tests/network_blocking.test.ts",
-     "start": 89,
-     "end": 144
-    }
+    "others": [
+     {
+      "name": "tests/network_blocking.test.ts",
+      "start": 89,
+      "end": 144
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "typescript",
-    "lines": 41,
-    "tokens": 176,
-    "firstFile": {
-     "name": "tests/tools/input.test.ts",
-     "start": 299,
-     "end": 339
+    "lines": 21,
+    "tokens": 102,
+    "first": {
+     "name": "tests/formatters/snapshotFormatter.test.ts",
+     "start": 26,
+     "end": 46
     },
-    "secondFile": {
-     "name": "tests/tools/input.test.ts",
-     "start": 348,
-     "end": 388
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 20,
-    "tokens": 175,
-    "firstFile": {
-     "name": "tests/utils/check-for-updates.test.ts",
-     "start": 125,
-     "end": 144
-    },
-    "secondFile": {
-     "name": "tests/utils/check-for-updates.test.ts",
-     "start": 150,
-     "end": 169
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 46,
-    "tokens": 148,
-    "firstFile": {
-     "name": "tests/formatters/ConsoleFormatter.test.ts",
-     "start": 378,
-     "end": 423
-    },
-    "secondFile": {
-     "name": "tests/formatters/ConsoleFormatter.test.ts",
-     "start": 525,
-     "end": 570
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 36,
-    "tokens": 142,
-    "firstFile": {
-     "name": "tests/formatters/ConsoleFormatter.test.ts",
-     "start": 130,
-     "end": 165
-    },
-    "secondFile": {
-     "name": "tests/formatters/ConsoleFormatter.test.ts",
-     "start": 310,
-     "end": 349
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 28,
-    "tokens": 141,
-    "firstFile": {
-     "name": "tests/tools/performance.test.ts",
-     "start": 456,
-     "end": 483
-    },
-    "secondFile": {
-     "name": "tests/tools/performance.test.ts",
-     "start": 520,
-     "end": 547
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 26,
-    "tokens": 133,
-    "firstFile": {
-     "name": "tests/browser.test.ts",
-     "start": 177,
-     "end": 202
-    },
-    "secondFile": {
-     "name": "tests/browser.test.ts",
-     "start": 220,
-     "end": 245
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 39,
-    "tokens": 133,
-    "firstFile": {
-     "name": "tests/formatters/ConsoleFormatter.test.ts",
-     "start": 160,
-     "end": 198
-    },
-    "secondFile": {
-     "name": "tests/formatters/ConsoleFormatter.test.ts",
-     "start": 312,
-     "end": 350
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 24,
-    "tokens": 127,
-    "firstFile": {
-     "name": "tests/tools/console.test.ts",
-     "start": 507,
-     "end": 530
-    },
-    "secondFile": {
-     "name": "tests/tools/console.test.ts",
-     "start": 536,
-     "end": 559
-    }
+    "others": [
+     {
+      "name": "tests/formatters/snapshotFormatter.test.ts",
+      "start": 60,
+      "end": 80
+     },
+     {
+      "name": "tests/formatters/snapshotFormatter.test.ts",
+      "start": 291,
+      "end": 311
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 129,
+   "lines": 22589,
+   "tokens": 100118,
+   "clones": 16,
+   "duplicatedLines": 180,
+   "duplicatedTokens": 941,
+   "percentage": 0.8,
+   "percentageTokens": 0.94,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 112,
+     "lines": 20784,
+     "clones": 16,
+     "duplicatedLines": 180,
+     "percentage": 0.87
+    },
+    {
+     "format": "javascript",
+     "sources": 7,
+     "lines": 987,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 13,
+     "tokens": 61,
+     "first": {
+      "name": "src/tools/memory.ts",
+      "start": 187,
+      "end": 199
+     },
+     "others": [
+      {
+       "name": "src/tools/memory.ts",
+       "start": 292,
+       "end": 304
+      },
+      {
+       "name": "src/tools/memory.ts",
+       "start": 341,
+       "end": 355
+      },
+      {
+       "name": "src/tools/memory.ts",
+       "start": 446,
+       "end": 458
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "  'Loads a memory heapsnapshot and returns retainers for a specific node ID.',",
+       "annotations: {",
+       "  category: ToolCategory.MEMORY,",
+       "  readOnlyHint: true,",
+       "  conditions: ['memoryDebugging'],",
+       "},",
+       "blockedByDialog: false,",
+       "verifyFilesSchema: {",
+       "  filePath: true,",
+       "},"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 6,
+     "tokens": 51,
+     "first": {
+      "name": "src/tools/memory.ts",
+      "start": 199,
+      "end": 204
+     },
+     "others": [
+      {
+       "name": "src/tools/memory.ts",
+       "start": 315,
+       "end": 320
+      },
+      {
+       "name": "src/tools/memory.ts",
+       "start": 427,
+       "end": 432
+      },
+      {
+       "name": "src/tools/memory.ts",
+       "start": 510,
+       "end": 515
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "  nodeId: zod.number().describe('The node ID to get retainers for.'),",
+       "  pageIdx: zod.number().optional().describe('The page index for pagination.'),",
+       "  pageSize: zod.number().optional().describe('The page size for pagination.'),",
+       "},",
+       "handler: async (request, response, context) => {",
+       "  const retainers = await context.getHeapSnapshotRetainers("
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "    .describe('Whether to exclude primitive target nodes. Default is true.'),",
+       "  pageIdx: zod.number().optional().describe('The page index for pagination.'),",
+       "  pageSize: zod.number().optional().describe('The page size for pagination.'),",
+       "},",
+       "handler: async (request, response, context) => {",
+       "  const edges = await context.getHeapSnapshotEdges("
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 26,
+     "tokens": 67,
+     "first": {
+      "name": "scripts/eval_scenarios/lighthouse_a11y_test.ts",
+      "start": 12,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "scripts/eval_scenarios/lighthouse_best_practices_test.ts",
+       "start": 12,
+       "end": 37
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "prompt: 'Check a11y issues on the page at <TEST_URL>',",
+       "maxTurns: 3,",
+       "htmlRoute: {",
+       "  path: '/lighthouse_test.html',",
+       "  htmlContent: `",
+       "    <!DOCTYPE html>",
+       "    <html>",
+       "      <head>",
+       "        <title>Lighthouse Audit Test</title>",
+       "      </head>"
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 66,
+     "first": {
+      "name": "scripts/profile/scenarios/navigation.ts",
+      "start": 13,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "scripts/profile/scenarios/navigation.ts",
+       "start": 17,
+       "end": 30
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 65,
+     "first": {
+      "name": "src/devtools/DevtoolsUtils.ts",
+      "start": 334,
+      "end": 343
+     },
+     "others": [
+      {
+       "name": "src/devtools/DevtoolsUtils.ts",
+       "start": 355,
+       "end": 365
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 63,
+     "first": {
+      "name": "scripts/generate-cli.ts",
+      "start": 175,
+      "end": 183
+     },
+     "others": [
+      {
+       "name": "scripts/generate-docs.ts",
+       "start": 337,
+       "end": 345
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 61,
+     "first": {
+      "name": "src/tools/screenshot.ts",
+      "start": 48,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "src/tools/screenshot.ts",
+       "start": 77,
+       "end": 90
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 59,
+     "first": {
+      "name": "src/McpPage.ts",
+      "start": 416,
+      "end": 425
+     },
+     "others": [
+      {
+       "name": "src/utils/WaitForHelper.ts",
+       "start": 112,
+       "end": 121
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 59,
+     "first": {
+      "name": "src/McpResponse.ts",
+      "start": 951,
+      "end": 959
+     },
+     "others": [
+      {
+       "name": "src/McpResponse.ts",
+       "start": 973,
+       "end": 981
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 58,
+     "first": {
+      "name": "src/processors/HeapSnapshotManager.ts",
+      "start": 209,
+      "end": 216
+     },
+     "others": [
+      {
+       "name": "src/processors/HeapSnapshotManager.ts",
+       "start": 267,
+       "end": 274
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "src/config/cli-options.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:46:22.057Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 651,
    "headSha": "da5044d26fc6adddb6554d5679c94ac22e76e428",
    "sources": 138,
-   "lines": 25627,
-   "clones": 54,
-   "duplicatedLines": 558,
-   "percentage": 2.18,
+   "lines": 22897,
+   "clones": 57,
+   "duplicatedLines": 636,
+   "percentage": 2.78,
+   "codePercentage": 0.93,
+   "codeSources": 44,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 696,
    "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
    "sources": 140,
-   "lines": 24133,
+   "lines": 24089,
    "clones": 63,
    "duplicatedLines": 704,
    "percentage": 2.92,
+   "codePercentage": 0.89,
+   "codeSources": 45,
    "healthScore": 71.3,
    "healthGrade": "B"
   },
@@ -37,10 +41,12 @@
    "starsToday": 1696,
    "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
    "sources": 140,
-   "lines": 24133,
+   "lines": 24089,
    "clones": 63,
    "duplicatedLines": 704,
    "percentage": 2.92,
+   "codePercentage": 0.89,
+   "codeSources": 45,
    "healthScore": 71.3,
    "healthGrade": "B"
   },
@@ -51,10 +57,12 @@
    "starsToday": 980,
    "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
    "sources": 140,
-   "lines": 24133,
+   "lines": 24089,
    "clones": 63,
    "duplicatedLines": 704,
    "percentage": 2.92,
+   "codePercentage": 0.89,
+   "codeSources": 45,
    "healthScore": 71.3,
    "healthGrade": "B"
   },
@@ -65,10 +73,12 @@
    "starsToday": 1155,
    "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
    "sources": 140,
-   "lines": 24133,
+   "lines": 24089,
    "clones": 63,
    "duplicatedLines": 704,
    "percentage": 2.92,
+   "codePercentage": 0.89,
+   "codeSources": 45,
    "healthScore": 71.3,
    "healthGrade": "B"
   }
@@ -84,11 +94,11 @@
   "starsToday": 1155,
   "defaultBranch": "main",
   "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
-  "durationMs": 762,
+  "durationMs": 83,
   "total": {
    "sources": 140,
-   "lines": 24133,
-   "tokens": 136693,
+   "lines": 24089,
+   "tokens": 136528,
    "clones": 63,
    "duplicatedLines": 704,
    "duplicatedTokens": 4156,
@@ -115,10 +125,10 @@
    {
     "format": "bash",
     "sources": 27,
-    "lines": 1584,
+    "lines": 1534,
     "clones": 1,
     "duplicatedLines": 18,
-    "percentage": 1.14
+    "percentage": 1.17
    },
    {
     "format": "text",
@@ -139,7 +149,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -171,154 +181,263 @@
   ],
   "topClones": [
    {
+    "format": "python",
+    "lines": 13,
+    "tokens": 66,
+    "first": {
+     "name": "tests/test_cookie_security.py",
+     "start": 33,
+     "end": 45
+    },
+    "others": [
+     {
+      "name": "tests/test_cookie_security.py",
+      "start": 59,
+      "end": 71
+     },
+     {
+      "name": "tests/test_cookie_security.py",
+      "start": 85,
+      "end": 97
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "        {\"name\": \"bili_jct\", \"value\": \"csrf\", \"domain\": \".bilibili.com\"},",
+      "    ]",
+      "",
+      "fake_rookiepy = SimpleNamespace(",
+      "    chrome=chrome,",
+      "    firefox=lambda domains: [],",
+      "    edge=lambda domains: [],",
+      "    brave=lambda domains: [],",
+      "    opera=lambda domains: [],",
+      ")"
+     ],
+     "total": 13
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 62,
+    "first": {
+     "name": "tests/test_transcribe.py",
+     "start": 635,
+     "end": 643
+    },
+    "others": [
+     {
+      "name": "tests/test_transcribe.py",
+      "start": 655,
+      "end": 663
+     },
+     {
+      "name": "tests/test_transcribe.py",
+      "start": 761,
+      "end": 769
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "def test_passes_public_url_after_end_of_options_marker(self, monkeypatch, tmp_path):",
+      "    monkeypatch.setattr(tr, \"_require\", lambda binary: None)",
+      "    captured = {}",
+      "",
+      "    def fake_run(cmd, timeout=600):",
+      "        captured[\"cmd\"] = cmd",
+      "        (tmp_path / \"source.m4a\").write_bytes(b\"audio\")",
+      "",
+      "    monkeypatch.setattr(tr, \"_run\", fake_run)"
+     ],
+     "total": 9
+    },
+    "kind": "tests"
+   },
+   {
     "format": "bash",
     "lines": 18,
     "tokens": 122,
-    "firstFile": {
+    "first": {
      "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
      "start": 212,
      "end": 229
     },
-    "secondFile": {
-     "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-     "start": 243,
-     "end": 259
-    }
+    "others": [
+     {
+      "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+      "start": 243,
+      "end": 259
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "RESPONSE=$(curl --silent --show-error \\",
+      "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+      "    --max-time \"$GROQ_TIMEOUT\" \\",
+      "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+      "    -w \"\\n%{http_code}\" \\",
+      "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+      "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+      "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+      "    -F model=\"whisper-large-v3\" \\",
+      "    -F language=\"zh\" \\"
+     ],
+     "total": 18
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 22,
     "tokens": 122,
-    "firstFile": {
+    "first": {
      "name": "tests/test_transcribe.py",
      "start": 180,
      "end": 201
     },
-    "secondFile": {
-     "name": "tests/test_transcribe.py",
-     "start": 212,
-     "end": 233
-    }
+    "others": [
+     {
+      "name": "tests/test_transcribe.py",
+      "start": 212,
+      "end": 233
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 10,
+    "tokens": 60,
+    "first": {
+     "name": "agent_reach/cli.py",
+     "start": 976,
+     "end": 985
+    },
+    "others": [
+     {
+      "name": "agent_reach/cli.py",
+      "start": 1148,
+      "end": 1157
+     },
+     {
+      "name": "agent_reach/cli.py",
+      "start": 1177,
+      "end": 1186
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 8,
+    "tokens": 57,
+    "first": {
+     "name": "tests/test_youtube_channel.py",
+     "start": 124,
+     "end": 131
+    },
+    "others": [
+     {
+      "name": "tests/test_youtube_channel.py",
+      "start": 138,
+      "end": 145
+     },
+     {
+      "name": "tests/test_youtube_channel.py",
+      "start": 154,
+      "end": 161
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 54,
+    "first": {
+     "name": "agent_reach/channels/reddit.py",
+     "start": 53,
+     "end": 61
+    },
+    "others": [
+     {
+      "name": "agent_reach/channels/twitter.py",
+      "start": 65,
+      "end": 73
+     },
+     {
+      "name": "agent_reach/channels/xiaohongshu.py",
+      "start": 190,
+      "end": 198
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 17,
     "tokens": 107,
-    "firstFile": {
+    "first": {
      "name": "agent_reach/skill/references/career.md:markdown",
      "start": 122,
      "end": 138
     },
-    "secondFile": {
-     "name": "docs/install.md:markdown",
-     "start": 328,
-     "end": 343
-    }
+    "others": [
+     {
+      "name": "docs/install.md:markdown",
+      "start": 328,
+      "end": 343
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 18,
     "tokens": 105,
-    "firstFile": {
+    "first": {
      "name": "tests/test_private_file_writes.py",
      "start": 282,
      "end": 299
     },
-    "secondFile": {
-     "name": "tests/test_private_file_writes.py",
-     "start": 316,
-     "end": 333
-    }
+    "others": [
+     {
+      "name": "tests/test_private_file_writes.py",
+      "start": 316,
+      "end": 333
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 12,
     "tokens": 94,
-    "firstFile": {
+    "first": {
      "name": "agent_reach/channels/v2ex.py",
      "start": 183,
      "end": 194
     },
-    "secondFile": {
-     "name": "agent_reach/channels/v2ex.py",
-     "start": 217,
-     "end": 228
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 85,
-    "firstFile": {
-     "name": "docs/README_ja.md:markdown",
-     "start": 4,
-     "end": 14
-    },
-    "secondFile": {
-     "name": "docs/README_ko.md:markdown",
-     "start": 4,
-     "end": 14
-    }
-   },
-   {
-    "format": "python",
-    "lines": 23,
-    "tokens": 85,
-    "firstFile": {
-     "name": "tests/test_channels.py",
-     "start": 1029,
-     "end": 1051
-    },
-    "secondFile": {
-     "name": "tests/test_channels.py",
-     "start": 1064,
-     "end": 1087
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 82,
-    "firstFile": {
-     "name": "docs/README_en.md:markdown",
-     "start": 13,
-     "end": 23
-    },
-    "secondFile": {
-     "name": "docs/README_ja.md:markdown",
-     "start": 4,
-     "end": 14
-    }
-   },
-   {
-    "format": "python",
-    "lines": 11,
-    "tokens": 77,
-    "firstFile": {
-     "name": "tests/test_boss_channel.py",
-     "start": 107,
-     "end": 117
-    },
-    "secondFile": {
-     "name": "tests/test_boss_channel.py",
-     "start": 129,
-     "end": 139
-    }
-   },
-   {
-    "format": "python",
-    "lines": 14,
-    "tokens": 76,
-    "firstFile": {
-     "name": "tests/test_channels.py",
-     "start": 1223,
-     "end": 1236
-    },
-    "secondFile": {
-     "name": "tests/test_channels.py",
-     "start": 1242,
-     "end": 1255
-    }
+    "others": [
+     {
+      "name": "agent_reach/channels/v2ex.py",
+      "start": 217,
+      "end": 228
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -487,6 +606,229 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 45,
+   "lines": 8579,
+   "tokens": 38829,
+   "clones": 7,
+   "duplicatedLines": 76,
+   "duplicatedTokens": 494,
+   "percentage": 0.89,
+   "percentageTokens": 1.27,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 32,
+     "lines": 7225,
+     "clones": 6,
+     "duplicatedLines": 58,
+     "percentage": 0.8
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 1180,
+     "clones": 1,
+     "duplicatedLines": 18,
+     "percentage": 1.53
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "bash",
+     "lines": 18,
+     "tokens": 122,
+     "first": {
+      "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+      "start": 212,
+      "end": 229
+     },
+     "others": [
+      {
+       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+       "start": 243,
+       "end": 259
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "RESPONSE=$(curl --silent --show-error \\",
+       "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+       "    --max-time \"$GROQ_TIMEOUT\" \\",
+       "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+       "    -w \"\\n%{http_code}\" \\",
+       "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+       "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+       "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+       "    -F model=\"whisper-large-v3\" \\",
+       "    -F language=\"zh\" \\"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 60,
+     "first": {
+      "name": "agent_reach/cli.py",
+      "start": 976,
+      "end": 985
+     },
+     "others": [
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1148,
+       "end": 1157
+      },
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1177,
+       "end": 1186
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "    (\"uv\", [\"tool\", \"install\", \"twitter-cli\"]),",
+       "]:",
+       "    tool_cmd = shutil.which(tool)",
+       "    if tool_cmd:",
+       "        try:",
+       "            result = subprocess.run(",
+       "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+       "                errors=\"replace\", timeout=120,",
+       "            )",
+       "            if result.returncode == 0 and shutil.which(\"twitter\"):"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "    (\"uv\", [\"tool\", \"install\", \"--from\", _RDT_GIT_SOURCE, \"rdt-cli\"]),",
+       "]:",
+       "    tool_cmd = shutil.which(tool)",
+       "    if tool_cmd:",
+       "        try:",
+       "            result = subprocess.run(",
+       "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+       "                errors=\"replace\", timeout=120,",
+       "            )",
+       "            if result.returncode == 0 and shutil.which(\"rdt\"):"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 54,
+     "first": {
+      "name": "agent_reach/channels/reddit.py",
+      "start": 53,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "agent_reach/channels/twitter.py",
+       "start": 65,
+       "end": 73
+      },
+      {
+       "name": "agent_reach/channels/xiaohongshu.py",
+       "start": 190,
+       "end": 198
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "    findings.append((backend, *result))",
+       "",
+       "for wanted in (\"ok\", \"warn\"):",
+       "    for backend, status, message in findings:",
+       "        if status == wanted:",
+       "            self.active_backend = backend if status == \"ok\" else None",
+       "            return status, message",
+       "",
+       "if findings:"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "    findings.append((backend, *result))",
+       "",
+       "for wanted in (\"ok\", \"warn\"):",
+       "    for backend, status, message in findings:",
+       "        if status == wanted:",
+       "            self.active_backend = backend if status == \"ok\" else None",
+       "            return status, message",
+       "",
+       "if findings:  # 只剩 broken/timeout 候选"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 94,
+     "first": {
+      "name": "agent_reach/channels/v2ex.py",
+      "start": 183,
+      "end": 194
+     },
+     "others": [
+      {
+       "name": "agent_reach/channels/v2ex.py",
+       "start": 217,
+       "end": 228
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 50,
+     "first": {
+      "name": "agent_reach/config.py",
+      "start": 55,
+      "end": 62
+     },
+     "others": [
+      {
+       "name": "agent_reach/utils/paths.py",
+       "start": 92,
+       "end": 99
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:28:20.864Z",
+  "jscpdVersion": "5.4.0"
  }
 }

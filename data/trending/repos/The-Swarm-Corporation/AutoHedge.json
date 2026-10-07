@@ -9,10 +9,12 @@
    "starsToday": 142,
    "headSha": "c549c7950da112286e76725d49f6a25de8fa99bd",
    "sources": 46,
-   "lines": 3268,
-   "clones": 6,
-   "duplicatedLines": 107,
-   "percentage": 3.27,
+   "lines": 3224,
+   "clones": 9,
+   "duplicatedLines": 144,
+   "percentage": 4.47,
+   "codePercentage": 0.69,
+   "codeSources": 23,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 517,
    "headSha": "c549c7950da112286e76725d49f6a25de8fa99bd",
    "sources": 46,
-   "lines": 3268,
-   "clones": 6,
-   "duplicatedLines": 107,
-   "percentage": 3.27,
+   "lines": 3224,
+   "clones": 9,
+   "duplicatedLines": 144,
+   "percentage": 4.47,
+   "codePercentage": 0.69,
+   "codeSources": 23,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 494,
    "headSha": "c549c7950da112286e76725d49f6a25de8fa99bd",
    "sources": 46,
-   "lines": 3268,
-   "clones": 6,
-   "duplicatedLines": 107,
-   "percentage": 3.27,
+   "lines": 3224,
+   "clones": 9,
+   "duplicatedLines": 144,
+   "percentage": 4.47,
+   "codePercentage": 0.69,
+   "codeSources": 23,
    "healthScore": null,
    "healthGrade": null
   }
@@ -56,38 +62,46 @@
   "starsToday": 494,
   "defaultBranch": "main",
   "headSha": "c549c7950da112286e76725d49f6a25de8fa99bd",
-  "durationMs": 553,
+  "durationMs": 34,
   "total": {
    "sources": 46,
-   "lines": 3268,
-   "tokens": 15760,
-   "clones": 6,
-   "duplicatedLines": 107,
-   "duplicatedTokens": 455,
-   "percentage": 3.27,
-   "percentageTokens": 2.89
+   "lines": 3224,
+   "tokens": 15595,
+   "clones": 9,
+   "duplicatedLines": 144,
+   "duplicatedTokens": 602,
+   "percentage": 4.47,
+   "percentageTokens": 3.86
   },
   "formats": [
    {
     "format": "yaml",
     "sources": 19,
     "lines": 540,
-    "clones": 5,
-    "duplicatedLines": 91,
-    "percentage": 16.85
+    "clones": 8,
+    "duplicatedLines": 127,
+    "percentage": 23.52
    },
    {
     "format": "python",
     "sources": 13,
     "lines": 1632,
     "clones": 1,
-    "duplicatedLines": 16,
-    "percentage": 0.98
+    "duplicatedLines": 17,
+    "percentage": 1.04
    },
    {
     "format": "bash",
     "sources": 9,
-    "lines": 694,
+    "lines": 644,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -96,14 +110,6 @@
     "format": "markdown",
     "sources": 3,
     "lines": 170,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -120,94 +126,286 @@
   "topClones": [
    {
     "format": "yaml",
-    "lines": 27,
-    "tokens": 88,
-    "firstFile": {
-     "name": ".github/workflows/docs_test.yml",
-     "start": 1,
-     "end": 27
+    "lines": 16,
+    "tokens": 68,
+    "first": {
+     "name": ".github/workflows/code_quality_control.yml",
+     "start": 9,
+     "end": 24
     },
-    "secondFile": {
-     "name": ".github/workflows/testing.yml",
-     "start": 1,
-     "end": 25
-    }
+    "others": [
+     {
+      "name": ".github/workflows/cos_integration.yml",
+      "start": 9,
+      "end": 23
+     },
+     {
+      "name": ".github/workflows/lints.yml",
+      "start": 9,
+      "end": 24
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "lint_and_format:",
+      "  runs-on: ubuntu-latest",
+      "",
+      "  steps:",
+      "    - name: Checkout code",
+      "      uses: actions/checkout@v4",
+      "",
+      "    - name: Set up Python",
+      "      uses: actions/setup-python@v5",
+      "      with:"
+     ],
+     "total": 16
+    },
+    "excerptSecond": {
+     "lines": [
+      "test:",
+      "  runs-on: ubuntu-latest",
+      "  steps:",
+      "    - name: Checkout code",
+      "      uses: actions/checkout@v4",
+      "",
+      "    - name: Set up Python",
+      "      uses: actions/setup-python@v5",
+      "      with:",
+      "        python-version: '3.10'"
+     ],
+     "total": 15
+    },
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 11,
+    "tokens": 50,
+    "first": {
+     "name": ".github/workflows/cos_integration.yml",
+     "start": 13,
+     "end": 23
+    },
+    "others": [
+     {
+      "name": ".github/workflows/lints.yml",
+      "start": 14,
+      "end": 24
+     },
+     {
+      "name": ".github/workflows/pr_request_checks.yml",
+      "start": 14,
+      "end": 24
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "  uses: actions/checkout@v4",
+      "",
+      "- name: Set up Python",
+      "  uses: actions/setup-python@v5",
+      "  with:",
+      "    python-version: '3.10'",
+      "",
+      "- name: Install dependencies",
+      "  run: pip install --no-cache-dir -r requirements.txt",
+      ""
+     ],
+     "total": 11
+    },
+    "kind": "data"
    },
    {
     "format": "python",
     "lines": 17,
     "tokens": 82,
-    "firstFile": {
+    "first": {
      "name": "autohedge/tools/jupiter_price.py",
      "start": 57,
      "end": 73
     },
-    "secondFile": {
-     "name": "autohedge/tools/jupiter_search.py",
-     "start": 50,
-     "end": 66
-    }
+    "others": [
+     {
+      "name": "autohedge/tools/jupiter_search.py",
+      "start": 50,
+      "end": 66
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "params = {\"ids\": ids_param}",
+      "headers = {}",
+      "",
+      "key = os.getenv(\"JUPITER_API_KEY\")",
+      "",
+      "if key:",
+      "    headers[\"x-api-key\"] = key",
+      "",
+      "try:",
+      "    with httpx.Client(timeout=10) as client:"
+     ],
+     "total": 17
+    },
+    "kind": "code"
+   },
+   {
+    "format": "yaml",
+    "lines": 24,
+    "tokens": 80,
+    "first": {
+     "name": ".github/workflows/docs_test.yml",
+     "start": 1,
+     "end": 24
+    },
+    "others": [
+     {
+      "name": ".github/workflows/testing.yml",
+      "start": 1,
+      "end": 24
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 21,
-    "tokens": 77,
-    "firstFile": {
+    "tokens": 76,
+    "first": {
      "name": ".github/workflows/docs_test.yml",
      "start": 4,
      "end": 24
     },
-    "secondFile": {
-     "name": ".github/workflows/pr_request_checks.yml",
-     "start": 4,
-     "end": 24
-    }
+    "others": [
+     {
+      "name": ".github/workflows/pr_request_checks.yml",
+      "start": 4,
+      "end": 24
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 16,
     "tokens": 71,
-    "firstFile": {
+    "first": {
      "name": ".github/workflows/cos_integration.yml",
      "start": 8,
      "end": 23
     },
-    "secondFile": {
-     "name": ".github/workflows/docs_test.yml",
-     "start": 8,
-     "end": 24
-    }
+    "others": [
+     {
+      "name": ".github/workflows/docs_test.yml",
+      "start": 8,
+      "end": 24
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "yaml",
-    "lines": 16,
-    "tokens": 69,
-    "firstFile": {
-     "name": ".github/workflows/code_quality_control.yml",
-     "start": 9,
-     "end": 24
-    },
-    "secondFile": {
-     "name": ".github/workflows/lints.yml",
-     "start": 9,
-     "end": 24
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 16,
-    "tokens": 68,
-    "firstFile": {
-     "name": ".github/workflows/code_quality_control.yml",
-     "start": 9,
-     "end": 24
-    },
-    "secondFile": {
+    "lines": 12,
+    "tokens": 57,
+    "first": {
      "name": ".github/workflows/cos_integration.yml",
-     "start": 9,
-     "end": 23
-    }
+     "start": 13,
+     "end": 24
+    },
+    "others": [
+     {
+      "name": ".github/workflows/testing.yml",
+      "start": 14,
+      "end": 25
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    }
-  ]
+  ],
+  "code": {
+   "sources": 23,
+   "lines": 2450,
+   "tokens": 11997,
+   "clones": 1,
+   "duplicatedLines": 17,
+   "duplicatedTokens": 82,
+   "percentage": 0.69,
+   "percentageTokens": 0.68,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 13,
+     "lines": 1632,
+     "clones": 1,
+     "duplicatedLines": 17,
+     "percentage": 1.04
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 82,
+     "first": {
+      "name": "autohedge/tools/jupiter_price.py",
+      "start": 57,
+      "end": 73
+     },
+     "others": [
+      {
+       "name": "autohedge/tools/jupiter_search.py",
+       "start": 50,
+       "end": 66
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "params = {\"ids\": ids_param}",
+       "headers = {}",
+       "",
+       "key = os.getenv(\"JUPITER_API_KEY\")",
+       "",
+       "if key:",
+       "    headers[\"x-api-key\"] = key",
+       "",
+       "try:",
+       "    with httpx.Client(timeout=10) as client:"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:52:46.018Z",
+  "jscpdVersion": "5.4.0"
  }
 }

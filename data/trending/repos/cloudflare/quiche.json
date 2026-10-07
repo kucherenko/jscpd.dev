@@ -9,10 +9,12 @@
    "starsToday": 31,
    "headSha": "4d23d859166a2eab86286eb77a836111938abf68",
    "sources": 315,
-   "lines": 152543,
+   "lines": 150688,
    "clones": 1752,
-   "duplicatedLines": 21293,
-   "percentage": 13.96,
+   "duplicatedLines": 23019,
+   "percentage": 15.28,
+   "codePercentage": 14.32,
+   "codeSources": 207,
    "healthScore": 34.6,
    "healthGrade": "E"
   },
@@ -23,10 +25,12 @@
    "starsToday": 32,
    "headSha": "cdf610571c76f0a41927466b6e27c6ec12e3fc82",
    "sources": 315,
-   "lines": 152544,
+   "lines": 150689,
    "clones": 1752,
-   "duplicatedLines": 21293,
-   "percentage": 13.96,
+   "duplicatedLines": 23019,
+   "percentage": 15.28,
+   "codePercentage": 14.32,
+   "codeSources": 207,
    "healthScore": 34.6,
    "healthGrade": "E"
   }
@@ -42,65 +46,57 @@
   "starsToday": 32,
   "defaultBranch": "master",
   "headSha": "cdf610571c76f0a41927466b6e27c6ec12e3fc82",
-  "durationMs": 1133,
+  "durationMs": 529,
   "total": {
    "sources": 315,
-   "lines": 152544,
-   "tokens": 841114,
+   "lines": 150689,
+   "tokens": 840949,
    "clones": 1752,
-   "duplicatedLines": 21293,
+   "duplicatedLines": 23019,
    "duplicatedTokens": 155932,
-   "percentage": 13.96,
+   "percentage": 15.28,
    "percentageTokens": 18.54
   },
   "formats": [
    {
     "format": "rust",
     "sources": 227,
-    "lines": 141128,
+    "lines": 140566,
     "clones": 1709,
-    "duplicatedLines": 20155,
-    "percentage": 14.28
+    "duplicatedLines": 21838,
+    "percentage": 15.54
    },
    {
     "format": "c",
     "sources": 4,
     "lines": 1959,
     "clones": 30,
-    "duplicatedLines": 1011,
-    "percentage": 51.61
+    "duplicatedLines": 1041,
+    "percentage": 53.14
    },
    {
     "format": "yaml",
     "sources": 8,
     "lines": 837,
     "clones": 11,
-    "duplicatedLines": 113,
-    "percentage": 13.5
+    "duplicatedLines": 124,
+    "percentage": 14.81
    },
    {
     "format": "markdown",
     "sources": 23,
     "lines": 2559,
     "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 0.23
+    "duplicatedLines": 7,
+    "percentage": 0.27
    },
    {
     "format": "javascript",
     "sources": 1,
     "lines": 747,
     "clones": 1,
-    "duplicatedLines": 8,
-    "percentage": 1.07
-   },
-   {
-    "format": "bash",
-    "sources": 18,
-    "lines": 1873,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
+    "duplicatedLines": 9,
+    "percentage": 1.2
    },
    {
     "format": "c-header",
@@ -111,9 +107,9 @@
     "percentage": 0
    },
    {
-    "format": "text",
-    "sources": 14,
-    "lines": 821,
+    "format": "bash",
+    "sources": 18,
+    "lines": 1142,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -122,6 +118,14 @@
     "format": "toml",
     "sources": 16,
     "lines": 814,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 14,
+    "lines": 253,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,151 +144,411 @@
     "format": "rust",
     "lines": 112,
     "tokens": 3605,
-    "firstFile": {
+    "first": {
      "name": "quiche/src/packet.rs",
      "start": 1539,
      "end": 1650
     },
-    "secondFile": {
-     "name": "quiche/src/packet.rs",
-     "start": 1916,
-     "end": 2027
-    }
+    "others": [
+     {
+      "name": "quiche/src/packet.rs",
+      "start": 1916,
+      "end": 2027
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "let mut pkt = [",
+      "    0xc0, 0x00, 0x00, 0x00, 0x01, 0x08, 0x83, 0x94, 0xc8, 0xf0, 0x3e,",
+      "    0x51, 0x57, 0x08, 0x00, 0x00, 0x44, 0x9e, 0x7b, 0x9a, 0xec, 0x34,",
+      "    0xd1, 0xb1, 0xc9, 0x8d, 0xd7, 0x68, 0x9f, 0xb8, 0xec, 0x11, 0xd2,",
+      "    0x42, 0xb1, 0x23, 0xdc, 0x9b, 0xd8, 0xba, 0xb9, 0x36, 0xb4, 0x7d,",
+      "    0x92, 0xec, 0x35, 0x6c, 0x0b, 0xab, 0x7d, 0xf5, 0x97, 0x6d, 0x27,",
+      "    0xcd, 0x44, 0x9f, 0x63, 0x30, 0x00, 0x99, 0xf3, 0x99, 0x1c, 0x26,",
+      "    0x0e, 0xc4, 0xc6, 0x0d, 0x17, 0xb3, 0x1f, 0x84, 0x29, 0x15, 0x7b,",
+      "    0xb3, 0x5a, 0x12, 0x82, 0xa6, 0x43, 0xa8, 0xd2, 0x26, 0x2c, 0xad,",
+      "    0x67, 0x50, 0x0c, 0xad, 0xb8, 0xe7, 0x37, 0x8c, 0x8e, 0xb7, 0x53,"
+     ],
+     "total": 112
+    },
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 84,
     "tokens": 2749,
-    "firstFile": {
+    "first": {
      "name": "quiche/src/packet.rs",
      "start": 1830,
      "end": 1913
     },
-    "secondFile": {
-     "name": "quiche/src/packet.rs",
-     "start": 1830,
-     "end": 1913
-    }
+    "others": [
+     {
+      "name": "quiche/src/packet.rs",
+      "start": 1830,
+      "end": 1913
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "0x00, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+      "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,"
+     ],
+     "total": 84
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 94,
+    "first": {
+     "name": "quiche/src/tests.rs",
+     "start": 1263,
+     "end": 1277
+    },
+    "others": [
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 6875,
+      "end": 6889
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 6950,
+      "end": 6964
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 7135,
+      "end": 7149
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 10097,
+      "end": 10111
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 10306,
+      "end": 10320
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 10394,
+      "end": 10408
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 10454,
+      "end": 10468
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 10779,
+      "end": 10793
+     }
+    ],
+    "copies": 21,
+    "excerpt": {
+     "lines": [
+      "fn stream_send_on_32bit_arch(",
+      "    #[values(\"cubic\", \"bbr2_gcongestion\")] cc_algorithm_name: &str,",
+      ") {",
+      "    let mut config = Config::new(PROTOCOL_VERSION).unwrap();",
+      "    assert_eq!(config.set_cc_algorithm_name(cc_algorithm_name), Ok(()));",
+      "    config",
+      "        .load_cert_chain_from_pem_file(\"examples/cert.crt\")",
+      "        .unwrap();",
+      "    config",
+      "        .load_priv_key_from_pem_file(\"examples/cert.key\")"
+     ],
+     "total": 15
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 62,
+    "first": {
+     "name": "quiche/src/tests.rs",
+     "start": 1412,
+     "end": 1418
+    },
+    "others": [
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 1450,
+      "end": 1456
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 1534,
+      "end": 1540
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 1565,
+      "end": 1571
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 1595,
+      "end": 1601
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 2140,
+      "end": 2146
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 2161,
+      "end": 2167
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 2286,
+      "end": 2292
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 2333,
+      "end": 2339
+     }
+    ],
+    "copies": 25,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 62,
+    "first": {
+     "name": "quiche/src/tests.rs",
+     "start": 630,
+     "end": 638
+    },
+    "others": [
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 799,
+      "end": 807
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 1683,
+      "end": 1691
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 1757,
+      "end": 1765
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 5937,
+      "end": 5945
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 6005,
+      "end": 6013
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 6067,
+      "end": 6075
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 6130,
+      "end": 6138
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 6201,
+      "end": 6209
+     }
+    ],
+    "copies": 17,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 75,
+    "first": {
+     "name": "quiche/src/tests.rs",
+     "start": 1298,
+     "end": 1305
+    },
+    "others": [
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 1828,
+      "end": 1835
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 3217,
+      "end": 3224
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 3294,
+      "end": 3301
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 3543,
+      "end": 3550
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 3662,
+      "end": 3669
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 3815,
+      "end": 3822
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 3938,
+      "end": 3945
+     },
+     {
+      "name": "quiche/src/tests.rs",
+      "start": 4059,
+      "end": 4066
+     }
+    ],
+    "copies": 14,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 168,
     "tokens": 810,
-    "firstFile": {
+    "first": {
      "name": "quiche/examples/http3-server.rs",
      "start": 109,
      "end": 276
     },
-    "secondFile": {
-     "name": "quiche/examples/server.rs",
-     "start": 107,
-     "end": 274
-    }
+    "others": [
+     {
+      "name": "quiche/examples/server.rs",
+      "start": 107,
+      "end": 274
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "rust",
     "lines": 29,
     "tokens": 771,
-    "firstFile": {
+    "first": {
      "name": "quiche/src/packet.rs",
      "start": 1649,
      "end": 1677
     },
-    "secondFile": {
-     "name": "quiche/src/packet.rs",
-     "start": 1802,
-     "end": 1830
-    }
+    "others": [
+     {
+      "name": "quiche/src/packet.rs",
+      "start": 1802,
+      "end": 1830
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 79,
+    "first": {
+     "name": "quiche/src/frame.rs",
+     "start": 1429,
+     "end": 1435
+    },
+    "others": [
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 1456,
+      "end": 1462
+     },
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 1564,
+      "end": 1570
+     },
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 1593,
+      "end": 1599
+     },
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 1682,
+      "end": 1688
+     },
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 1733,
+      "end": 1739
+     },
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 1952,
+      "end": 1958
+     },
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 2006,
+      "end": 2012
+     },
+     {
+      "name": "quiche/src/frame.rs",
+      "start": 2093,
+      "end": 2099
+     }
+    ],
+    "copies": 10,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 137,
     "tokens": 699,
-    "firstFile": {
+    "first": {
      "name": "quiche/src/recovery/mod.rs",
      "start": 957,
      "end": 1093
     },
-    "secondFile": {
-     "name": "quiche/src/recovery/mod.rs",
-     "start": 1243,
-     "end": 1377
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 111,
-    "tokens": 596,
-    "firstFile": {
-     "name": "quiche/examples/http3-server.rs",
-     "start": 392,
-     "end": 502
-    },
-    "secondFile": {
-     "name": "quiche/examples/server.rs",
-     "start": 334,
-     "end": 444
-    }
-   },
-   {
-    "format": "c",
-    "lines": 114,
-    "tokens": 592,
-    "firstFile": {
-     "name": "quiche/examples/http3-server.c",
-     "start": 116,
-     "end": 229
-    },
-    "secondFile": {
-     "name": "quiche/examples/server.c",
-     "start": 114,
-     "end": 227
-    }
-   },
-   {
-    "format": "c",
-    "lines": 99,
-    "tokens": 519,
-    "firstFile": {
-     "name": "quiche/examples/http3-server.c",
-     "start": 470,
-     "end": 568
-    },
-    "secondFile": {
-     "name": "quiche/examples/server.c",
-     "start": 398,
-     "end": 495
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 74,
-    "tokens": 478,
-    "firstFile": {
-     "name": "quiche/src/recovery/gcongestion/bbr/windowed_filter.rs",
-     "start": 82,
-     "end": 155
-    },
-    "secondFile": {
-     "name": "tokio-quiche/src/quic/io/utilization_estimator.rs",
-     "start": 299,
-     "end": 372
-    }
-   },
-   {
-    "format": "c",
-    "lines": 101,
-    "tokens": 450,
-    "firstFile": {
-     "name": "quiche/examples/http3-server.c",
-     "start": 283,
-     "end": 383
-    },
-    "secondFile": {
-     "name": "quiche/examples/server.c",
-     "start": 272,
-     "end": 372
-    }
+    "others": [
+     {
+      "name": "quiche/src/recovery/mod.rs",
+      "start": 1243,
+      "end": 1377
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -422,6 +686,487 @@
      "lines": 747
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 207,
+   "lines": 134890,
+   "tokens": 740664,
+   "clones": 1547,
+   "duplicatedLines": 19322,
+   "duplicatedTokens": 135359,
+   "percentage": 14.32,
+   "percentageTokens": 18.28,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 191,
+     "lines": 131611,
+     "clones": 1546,
+     "duplicatedLines": 19313,
+     "percentage": 14.67
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 747,
+     "clones": 1,
+     "duplicatedLines": 9,
+     "percentage": 1.2
+    },
+    {
+     "format": "c-header",
+     "sources": 1,
+     "lines": 1297,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 13,
+     "lines": 1061,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 112,
+     "tokens": 3605,
+     "first": {
+      "name": "quiche/src/packet.rs",
+      "start": 1539,
+      "end": 1650
+     },
+     "others": [
+      {
+       "name": "quiche/src/packet.rs",
+       "start": 1916,
+       "end": 2027
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "let mut pkt = [",
+       "    0xc0, 0x00, 0x00, 0x00, 0x01, 0x08, 0x83, 0x94, 0xc8, 0xf0, 0x3e,",
+       "    0x51, 0x57, 0x08, 0x00, 0x00, 0x44, 0x9e, 0x7b, 0x9a, 0xec, 0x34,",
+       "    0xd1, 0xb1, 0xc9, 0x8d, 0xd7, 0x68, 0x9f, 0xb8, 0xec, 0x11, 0xd2,",
+       "    0x42, 0xb1, 0x23, 0xdc, 0x9b, 0xd8, 0xba, 0xb9, 0x36, 0xb4, 0x7d,",
+       "    0x92, 0xec, 0x35, 0x6c, 0x0b, 0xab, 0x7d, 0xf5, 0x97, 0x6d, 0x27,",
+       "    0xcd, 0x44, 0x9f, 0x63, 0x30, 0x00, 0x99, 0xf3, 0x99, 0x1c, 0x26,",
+       "    0x0e, 0xc4, 0xc6, 0x0d, 0x17, 0xb3, 0x1f, 0x84, 0x29, 0x15, 0x7b,",
+       "    0xb3, 0x5a, 0x12, 0x82, 0xa6, 0x43, 0xa8, 0xd2, 0x26, 0x2c, 0xad,",
+       "    0x67, 0x50, 0x0c, 0xad, 0xb8, 0xe7, 0x37, 0x8c, 0x8e, 0xb7, 0x53,"
+      ],
+      "total": 112
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 84,
+     "tokens": 2749,
+     "first": {
+      "name": "quiche/src/packet.rs",
+      "start": 1830,
+      "end": 1913
+     },
+     "others": [
+      {
+       "name": "quiche/src/packet.rs",
+       "start": 1830,
+       "end": 1913
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "0x00, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,",
+       "0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,"
+      ],
+      "total": 84
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 94,
+     "first": {
+      "name": "quiche/src/tests.rs",
+      "start": 1263,
+      "end": 1277
+     },
+     "others": [
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 6875,
+       "end": 6889
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 6950,
+       "end": 6964
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 7135,
+       "end": 7149
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 10097,
+       "end": 10111
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 10306,
+       "end": 10320
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 10394,
+       "end": 10408
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 10454,
+       "end": 10468
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 10779,
+       "end": 10793
+      }
+     ],
+     "copies": 21,
+     "excerpt": {
+      "lines": [
+       "fn stream_send_on_32bit_arch(",
+       "    #[values(\"cubic\", \"bbr2_gcongestion\")] cc_algorithm_name: &str,",
+       ") {",
+       "    let mut config = Config::new(PROTOCOL_VERSION).unwrap();",
+       "    assert_eq!(config.set_cc_algorithm_name(cc_algorithm_name), Ok(()));",
+       "    config",
+       "        .load_cert_chain_from_pem_file(\"examples/cert.crt\")",
+       "        .unwrap();",
+       "    config",
+       "        .load_priv_key_from_pem_file(\"examples/cert.key\")"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 62,
+     "first": {
+      "name": "quiche/src/tests.rs",
+      "start": 1412,
+      "end": 1418
+     },
+     "others": [
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 1450,
+       "end": 1456
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 1534,
+       "end": 1540
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 1565,
+       "end": 1571
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 1595,
+       "end": 1601
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 2140,
+       "end": 2146
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 2161,
+       "end": 2167
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 2286,
+       "end": 2292
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 2333,
+       "end": 2339
+      }
+     ],
+     "copies": 25,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 62,
+     "first": {
+      "name": "quiche/src/tests.rs",
+      "start": 630,
+      "end": 638
+     },
+     "others": [
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 799,
+       "end": 807
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 1683,
+       "end": 1691
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 1757,
+       "end": 1765
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 5937,
+       "end": 5945
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 6005,
+       "end": 6013
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 6067,
+       "end": 6075
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 6130,
+       "end": 6138
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 6201,
+       "end": 6209
+      }
+     ],
+     "copies": 17,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 75,
+     "first": {
+      "name": "quiche/src/tests.rs",
+      "start": 1298,
+      "end": 1305
+     },
+     "others": [
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 1828,
+       "end": 1835
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 3217,
+       "end": 3224
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 3294,
+       "end": 3301
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 3543,
+       "end": 3550
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 3662,
+       "end": 3669
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 3815,
+       "end": 3822
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 3938,
+       "end": 3945
+      },
+      {
+       "name": "quiche/src/tests.rs",
+       "start": 4059,
+       "end": 4066
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 29,
+     "tokens": 771,
+     "first": {
+      "name": "quiche/src/packet.rs",
+      "start": 1649,
+      "end": 1677
+     },
+     "others": [
+      {
+       "name": "quiche/src/packet.rs",
+       "start": 1802,
+       "end": 1830
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 79,
+     "first": {
+      "name": "quiche/src/frame.rs",
+      "start": 1429,
+      "end": 1435
+     },
+     "others": [
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1456,
+       "end": 1462
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1564,
+       "end": 1570
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1593,
+       "end": 1599
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1682,
+       "end": 1688
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1733,
+       "end": 1739
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1952,
+       "end": 1958
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 2006,
+       "end": 2012
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 2093,
+       "end": 2099
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 137,
+     "tokens": 699,
+     "first": {
+      "name": "quiche/src/recovery/mod.rs",
+      "start": 957,
+      "end": 1093
+     },
+     "others": [
+      {
+       "name": "quiche/src/recovery/mod.rs",
+       "start": 1243,
+       "end": 1377
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 24,
+     "tokens": 225,
+     "first": {
+      "name": "quiche/src/frame.rs",
+      "start": 1726,
+      "end": 1749
+     },
+     "others": [
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1781,
+       "end": 1804
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1807,
+       "end": 1830
+      },
+      {
+       "name": "quiche/src/frame.rs",
+       "start": 1833,
+       "end": 1856
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:17:32.313Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 21,
    "headSha": "1d161d15a4fe93d9b3371377f0a421dc3e965b10",
    "sources": 14,
-   "lines": 1899,
+   "lines": 1855,
    "clones": 1,
-   "duplicatedLines": 6,
-   "percentage": 0.32,
+   "duplicatedLines": 7,
+   "percentage": 0.38,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 56,
    "headSha": "1d161d15a4fe93d9b3371377f0a421dc3e965b10",
    "sources": 14,
-   "lines": 1899,
+   "lines": 1855,
    "clones": 1,
-   "duplicatedLines": 6,
-   "percentage": 0.32,
+   "duplicatedLines": 7,
+   "percentage": 0.38,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 88,
    "headSha": "1d161d15a4fe93d9b3371377f0a421dc3e965b10",
    "sources": 14,
-   "lines": 1899,
+   "lines": 1855,
    "clones": 1,
-   "duplicatedLines": 6,
-   "percentage": 0.32,
+   "duplicatedLines": 7,
+   "percentage": 0.38,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": null,
    "healthGrade": null
   },
@@ -51,10 +57,12 @@
    "starsToday": 113,
    "headSha": "1d161d15a4fe93d9b3371377f0a421dc3e965b10",
    "sources": 14,
-   "lines": 1899,
+   "lines": 1855,
    "clones": 1,
    "duplicatedLines": 7,
-   "percentage": 0.37,
+   "percentage": 0.38,
+   "codePercentage": null,
+   "codeSources": 12,
    "healthScore": 78.6,
    "healthGrade": "B"
   }
@@ -70,16 +78,16 @@
   "starsToday": 113,
   "defaultBranch": "main",
   "headSha": "1d161d15a4fe93d9b3371377f0a421dc3e965b10",
-  "durationMs": 840,
+  "durationMs": 18,
   "total": {
    "sources": 14,
-   "lines": 1899,
-   "tokens": 10692,
+   "lines": 1855,
+   "tokens": 10527,
    "clones": 1,
    "duplicatedLines": 7,
    "duplicatedTokens": 61,
-   "percentage": 0.37,
-   "percentageTokens": 0.57
+   "percentage": 0.38,
+   "percentageTokens": 0.58
   },
   "formats": [
    {
@@ -91,14 +99,6 @@
     "percentage": 3.33
    },
    {
-    "format": "bash",
-    "sources": 10,
-    "lines": 750,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "markup",
     "sources": 1,
     "lines": 705,
@@ -107,9 +107,17 @@
     "percentage": 0
    },
    {
+    "format": "bash",
+    "sources": 10,
+    "lines": 700,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -128,16 +136,44 @@
     "format": "python",
     "lines": 7,
     "tokens": 61,
-    "firstFile": {
+    "first": {
      "name": "app.py",
      "start": 104,
      "end": 110
     },
-    "secondFile": {
-     "name": "app.py",
-     "start": 150,
-     "end": 156
-    }
+    "others": [
+     {
+      "name": "app.py",
+      "start": 150,
+      "end": 156
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "cmd = [\"yt-dlp\", \"--no-playlist\", \"-j\", url]",
+      "try:",
+      "    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)",
+      "    if result.returncode != 0:",
+      "        return jsonify({\"error\": result.stderr.strip().split(\"\\n\")[-1]}), 400",
+      "",
+      "    info = parse_ytdlp_json(result.stdout)"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "cmd = [\"yt-dlp\", \"--flat-playlist\", \"-J\", url]",
+      "try:",
+      "    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)",
+      "    if result.returncode != 0:",
+      "        return jsonify({\"error\": result.stderr.strip().split(\"\\n\")[-1]}), 400",
+      "",
+      "    info = json.loads(result.stdout)"
+     ],
+     "total": 7
+    },
+    "kind": "code"
    }
   ],
   "health": {
@@ -263,6 +299,94 @@
    "files": 1,
    "byCategory": [],
    "largest": []
-  }
+  },
+  "code": {
+   "sources": 12,
+   "lines": 1084,
+   "tokens": 4719,
+   "clones": 1,
+   "duplicatedLines": 7,
+   "duplicatedTokens": 61,
+   "percentage": 0.65,
+   "percentageTokens": 1.29,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 210,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 3.33
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 700,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 61,
+     "first": {
+      "name": "app.py",
+      "start": 104,
+      "end": 110
+     },
+     "others": [
+      {
+       "name": "app.py",
+       "start": 150,
+       "end": 156
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "cmd = [\"yt-dlp\", \"--no-playlist\", \"-j\", url]",
+       "try:",
+       "    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)",
+       "    if result.returncode != 0:",
+       "        return jsonify({\"error\": result.stderr.strip().split(\"\\n\")[-1]}), 400",
+       "",
+       "    info = parse_ytdlp_json(result.stdout)"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "cmd = [\"yt-dlp\", \"--flat-playlist\", \"-J\", url]",
+       "try:",
+       "    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)",
+       "    if result.returncode != 0:",
+       "        return jsonify({\"error\": result.stderr.strip().split(\"\\n\")[-1]}), 400",
+       "",
+       "    info = json.loads(result.stdout)"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:29:40.780Z",
+  "jscpdVersion": "5.4.0"
  }
 }
