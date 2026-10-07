@@ -23,3 +23,4 @@ The reference pages say what a flag does; these pages say when to reach for it a
 | [Dead code](/guides/dead-code) | `--dead-code`: unused files, exports, symbols and imports in JavaScript, TypeScript and Python, with confidence scores |
 | [Comparing two codebases](/guides/compare) | `--compare`: how far a port has come, or two implementations of one app checked for parity (5.4.0+, experimental) |
 | [Semantic clones](/guides/semantic-clones) | `--semantic`: functions that do the same job with different code, in one language or across two (5.3.3+, experimental) |
+| [Similar functions](/guides/similarity) | `--similarity`: functions with the same structure in 15 languages, renamed and lightly edited copies included, and how the score works |

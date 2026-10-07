@@ -69,7 +69,7 @@ function defaultOf(opt) {
 // ---- groups ----
 const GROUPS = [
   ['What to scan', ['--pattern', '--format', '--ignore', '--ignore-pattern', '--no-gitignore', '--follow-symlinks', '--max-size', '--formats-exts', '--formats-names', '--cross-formats', '--skip-local', '--skip-isolated', '--config', '--list', '--debug']],
-  ['Clone size and kinds', ['--min-tokens', '--min-lines', '--max-lines', '--mode', '--skip-comments', '--ignore-case', '--ignore-identifiers', '--ignore-literals', '--ignore-annotations', '--max-gap-lines', '--similarity', '--kind']],
+  ['Clone size and kinds', ['--min-tokens', '--min-lines', '--max-lines', '--mode', '--skip-comments', '--ignore-case', '--ignore-identifiers', '--ignore-literals', '--ignore-annotations', '--max-gap-lines', '--similarity', '--min-nodes', '--kind']],
   ['Semantic clones', ['--semantic', '--semantic-scope', '--semantic-provider', '--semantic-download', '--semantic-rebuild-cache', '--semantic-threshold', '--semantic-same-threshold', '--semantic-model', '--semantic-models', '--semantic-url']],
   ['Reports', ['--reporters', '--output', '--absolute', '--blame', '--sarif-error-tokens', '--no-colors', '--silent', '--no-tips']],
   ['Gates and exit codes', ['--threshold', '--exit-code', '--baseline', '--update-baseline', '--fail-on-new-clones', '--fail-on-empty', '--baseline-from-ref']],

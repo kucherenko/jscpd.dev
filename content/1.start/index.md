@@ -39,7 +39,7 @@ The run is `fixtures/ignore-demo/glob` from the jscpd repository: one file copie
 ## What it finds when you ask
 
 - Renamed copies, the same code under other variable, function or literal names: `--ignore-identifiers`, `--ignore-literals` and `--ignore-annotations`.
-- Near-miss copies with a few inserted or edited lines: `--max-gap-lines`; and JavaScript or TypeScript functions with the same structure: `--similarity`.
+- Near-miss copies with a few inserted or edited lines: `--max-gap-lines`; and functions with the same structure in 15 languages: [`--similarity`](/guides/similarity).
 - Semantic clones, functions that do the same job with different code, in one language or across languages: `--semantic`, experimental, with a code embedding model.
 
 [Types of code clones](/concepts/clone-types) says where the lines between these sit and which flag turns each on.

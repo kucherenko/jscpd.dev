@@ -1,6 +1,6 @@
 ---
 title: Reporters
-description: The 15 reporters of jscpd, what each one writes, and which to pick for a terminal, a script, a merge request widget or a README.
+description: The 16 reporters of jscpd, what each one writes, and which to pick for a terminal, a script, a merge request widget or a README.
 navigation:
   icon: i-lucide-file-chart-column
 ---
@@ -26,6 +26,7 @@ Every reporter ships inside the jscpd binary, so there is nothing to install. `-
 | `sarif` | `jscpd-report.sarif` | GitHub code scanning or another SARIF consumer shows the clones on the diff |
 | `codeclimate` (alias `gitlab`) | `gl-code-quality-report.json` | GitLab lists the clones in the Code Quality widget of a merge request (5.1.0+) |
 | `openmetrics` | `jscpd-metrics.txt` | GitLab metrics reports or a Prometheus-style parser track the numbers (5.1.0+) |
+| `edn` | `jscpd-report.edn` | a Clojure tool or a script reads every pair of [similar functions](/guides/similarity) with its score, and the other clones |
 
 jscpd 5 has no `time` reporter: the timing line prints on its own, and a `time` entry left over from a v4 config is accepted and ignored.
 
