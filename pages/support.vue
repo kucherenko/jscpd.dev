@@ -15,6 +15,9 @@ useSeoMeta({
   ogTitle: title,
   ogDescription: description
 })
+// The social card, drawn at build time like the docs pages' (docus's Docs
+// template); pages/ routes do not go through the docs page component.
+defineOgImage('Docs', { headline: 'Project', title, description })
 
 // Addresses are checksum-validated and must match the public/qr-*.svg
 // files and the list published in the repository README
