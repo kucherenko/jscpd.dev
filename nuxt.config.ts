@@ -10,13 +10,14 @@ const require = createRequire(import.meta.url);
 const docusDir = dirname(require.resolve("docus/package.json"));
 const nuxtContentServer = require.resolve("@nuxt/content/server", { paths: [docusDir] });
 
-// /trending/<day> and /trending/<owner>/<repo> are dynamic routes; the static
-// build needs the full list up front (data/ is refreshed by trending.yml).
-// The latest day is served at /trending itself, but its dated URL is
-// prerendered too: a /trending/<date> link shared on the day it was latest
-// must not 404 until the next day's deploy.
+// /trending/<day>, /trending/week/<week> and /trending/<owner>/<repo> are
+// dynamic routes; the static build needs the full list up front (data/ is
+// refreshed by trending.yml). The latest day is served at /trending itself,
+// but its dated URL is prerendered too: a /trending/<date> link shared on the
+// day it was latest must not 404 until the next day's deploy.
 const trendingRoutes = [
   ...trendingHistory.days.map((d) => `/trending/${d.date}`),
+  ...trendingHistory.weeks.map((w) => `/trending/week/${w.week}`),
   ...trendingRepos.map((r) => `/trending/${r.name}`),
 ];
 
@@ -27,11 +28,14 @@ export default defineNuxtConfig({
   // scanned, so register standalone (non-docs-layout) routes explicitly
   hooks: {
     "pages:extend"(pages) {
-      // pages/ is also scanned, which turns pages/trending-repo.vue into a
-      // stray /trending-repo route; only the parameterised registration below
-      // should exist (its name must differ, or vue-router keeps the scanned one).
-      const scanned = pages.findIndex((p) => p.path === "/trending-repo");
-      if (scanned !== -1) pages.splice(scanned, 1);
+      // pages/ is also scanned, which turns pages/trending-repo.vue and
+      // pages/trending-week.vue into stray /trending-repo and /trending-week
+      // routes; only the parameterised registrations below should exist
+      // (their names must differ, or vue-router keeps the scanned ones).
+      for (const stray of ["/trending-repo", "/trending-week"]) {
+        const scanned = pages.findIndex((p) => p.path === stray);
+        if (scanned !== -1) pages.splice(scanned, 1);
+      }
       pages.unshift(
         {
           name: "trending",
@@ -42,6 +46,13 @@ export default defineNuxtConfig({
           name: "trending-day",
           path: "/trending/:date(\\d{4}-\\d{2}-\\d{2})",
           file: "~/pages/trending.vue",
+        },
+        {
+          // Static segments outrank params in vue-router, so this wins over
+          // /trending/:owner/:repo for /trending/week/2026-W41.
+          name: "trending-week",
+          path: "/trending/week/:week(\\d{4}-W\\d{2})",
+          file: "~/pages/trending-week.vue",
         },
         {
           name: "trending-repository",
@@ -123,7 +134,7 @@ export default defineNuxtConfig({
       // /health-corpus.json publishes the calibration corpus for the jscpd
       // repo's rust/scripts/calibrate-health.mjs; see server/routes/
       // health-corpus.json.ts.
-      routes: ["/404", "/health-corpus.json", ...trendingRoutes],
+      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", ...trendingRoutes],
     },
   },
 

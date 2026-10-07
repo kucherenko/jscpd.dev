@@ -47,10 +47,16 @@ content/
 
 pages/
 ├── support.vue                   # /support — how to fund the project
-└── trending.vue                  # /trending — standalone layout for the trending data
+├── trending.vue                  # /trending and /trending/<day> — the day's repos, baselines, the week
+├── trending-week.vue             # /trending/week/<ISO week> — every repo that trended that week
+└── trending-repo.vue             # /trending/<owner>/<repo> — findings with code, every appearance
 ```
 
-Both `pages/` routes live outside Nuxt Content, so they are registered explicitly in `nuxt.config.ts` (`pages:extend`), the sitemap route (`server/routes/sitemap.xml.ts`) and the `llms` section list.
+The `pages/` routes live outside Nuxt Content, so they are registered explicitly in `nuxt.config.ts` (`pages:extend`), the sitemap route (`server/routes/sitemap.xml.ts`) and the `llms` section list.
+
+### Trending data
+
+`.github/workflows/trending.yml` runs `scripts/analyze-trending.mjs` daily: it clones the day's GitHub trending repositories and measures each one with jscpd twice, over every file and over the code alone (`scripts/trending-scan.mjs` holds the rules: no tests, docs, data, vendored or generated files, programming-language formats only). Snapshots land in `data/trending/<day>.json`; `scripts/build-trending-index.mjs` derives the history, the per-repo and per-week files, the per-language baselines; `server/routes/trending/code-only.jscpd.json.ts` serves the code scan's config so a reader can measure their own repo the same way. `scripts/backfill-trending.mjs` re-measures past days at their recorded commits when the scan rules change.
 
 ## 🤝 Contributing
 

@@ -26,12 +26,16 @@ const EXTRA_ROUTES: Array<{ loc: string, file: string }> = [
 
 const buildDate = new Date().toISOString().slice(0, 10)
 
-// Trending pages are generated from data/ (see nuxt.config.ts); every day
-// and repository gets its own URL, dated by the analysis that produced it.
+// Trending pages are generated from data/ (see nuxt.config.ts); every day,
+// week and repository gets its own URL, dated by the analysis that produced it.
 function trendingUrls(): SitemapUrl[] {
-  const days = (trendingHistory as { days: Array<{ date: string }> }).days
-  const urls: SitemapUrl[] = [{ loc: '/trending', lastmod: days[days.length - 1]?.date }]
+  const history = trendingHistory as { days: Array<{ date: string }>, weeks: Array<{ week: string, to: string }> }
+  const days = history.days
+  const latest = days[days.length - 1]?.date
+  const urls: SitemapUrl[] = [{ loc: '/trending', lastmod: latest }]
   for (const d of days.slice(0, -1)) urls.push({ loc: `/trending/${d.date}`, lastmod: d.date })
+  // a week keeps changing until it is over
+  for (const w of history.weeks) urls.push({ loc: `/trending/week/${w.week}`, lastmod: w.to < (latest ?? '') ? w.to : latest })
   for (const r of trendingRepos as Array<{ name: string, date: string }>) urls.push({ loc: `/trending/${r.name}`, lastmod: r.date })
   return urls
 }

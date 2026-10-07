@@ -9,30 +9,11 @@
     </div>
 
     <div class="tsum-highlights">
-      <NuxtLink v-if="summary.mostDuplicated" :to="trendingRepoPath(summary.mostDuplicated.name)" class="tsum-hl">
-        <span class="tsum-hl-label">Most duplicated</span>
-        <span class="tsum-hl-name">{{ summary.mostDuplicated.name }}</span>
-        <span class="dup-badge" :class="dupClass(summary.mostDuplicated.percentage)">{{ summary.mostDuplicated.percentage }}%</span>
-      </NuxtLink>
-      <NuxtLink v-if="summary.mostClones" :to="trendingRepoPath(summary.mostClones.name)" class="tsum-hl">
-        <span class="tsum-hl-label">Most clones</span>
-        <span class="tsum-hl-name">{{ summary.mostClones.name }}</span>
-        <span class="tsum-hl-num">{{ num(summary.mostClones.clones) }}</span>
-      </NuxtLink>
-      <NuxtLink v-if="summary.cleanest" :to="trendingRepoPath(summary.cleanest.name)" class="tsum-hl">
-        <span class="tsum-hl-label">Cleanest</span>
-        <span class="tsum-hl-name">{{ summary.cleanest.name }}</span>
-        <span class="dup-badge" :class="dupClass(summary.cleanest.percentage)">{{ summary.cleanest.percentage }}%</span>
-      </NuxtLink>
-      <NuxtLink v-if="summary.healthiest" :to="trendingRepoPath(summary.healthiest.name)" class="tsum-hl">
-        <span class="tsum-hl-label">Healthiest</span>
-        <span class="tsum-hl-name">{{ summary.healthiest.name }}</span>
-        <span class="health-badge" :class="gradeClass(summary.healthiest.grade)">{{ summary.healthiest.grade }} {{ summary.healthiest.score }}</span>
-      </NuxtLink>
-      <NuxtLink v-if="summary.leastHealthy" :to="trendingRepoPath(summary.leastHealthy.name)" class="tsum-hl">
-        <span class="tsum-hl-label">Least healthy</span>
-        <span class="tsum-hl-name">{{ summary.leastHealthy.name }}</span>
-        <span class="health-badge" :class="gradeClass(summary.leastHealthy.grade)">{{ summary.leastHealthy.grade }} {{ summary.leastHealthy.score }}</span>
+      <NuxtLink v-for="h in highlights" :key="h.label" :to="trendingRepoPath(h.name)" class="tsum-hl">
+        <span class="tsum-hl-label">{{ h.label }}</span>
+        <span class="tsum-hl-name">{{ h.name }}</span>
+        <span v-if="h.percentage != null" class="dup-badge" :class="dupClass(h.percentage)">{{ h.percentage }}%</span>
+        <span v-else class="tsum-hl-num">{{ num(h.clones) }}</span>
       </NuxtLink>
     </div>
   </div>
@@ -44,15 +25,32 @@ import type { DaySummary } from '~/composables/useTrendingData'
 
 const props = defineProps<{ summary: DaySummary }>()
 
-const tiles = computed(() => [
-  { label: 'repos analyzed', value: String(props.summary.repos) },
-  { label: 'files scanned', value: compact(props.summary.sources) },
-  { label: 'lines scanned', value: compact(props.summary.lines) },
-  { label: 'clones found', value: compact(props.summary.clones) },
-  { label: 'duplicated lines', value: compact(props.summary.duplicatedLines), hint: `${props.summary.percentage}% of all lines` },
-  { label: 'median duplication', value: `${props.summary.medianPercentage}%`, hint: `mean ${props.summary.avgPercentage}%` },
-  ...(props.summary.avgHealth != null ? [{ label: 'average health', value: String(props.summary.avgHealth), hint: 'out of 100' }] : [])
-])
+const tiles = computed(() => {
+  const s = props.summary
+  const coded = s.codeMedianPercentage != null
+  return [
+    { label: 'repos analyzed', value: String(s.repos), hint: coded ? `${s.codeRepos} with a code-only scan` : undefined },
+    { label: 'files scanned', value: compact(s.sources), hint: coded ? `${compact(s.codeSources)} count as code` : undefined },
+    { label: 'lines scanned', value: compact(s.lines) },
+    { label: 'clones found', value: compact(s.clones), hint: coded ? `${compact(s.codeClones)} in code` : undefined },
+    coded
+      ? { label: 'median code duplication', value: `${s.codeMedianPercentage}%`, hint: `all files ${s.medianPercentage}%` }
+      : { label: 'median duplication, all files', value: `${s.medianPercentage}%`, hint: `mean ${s.avgPercentage}%` },
+    ...(coded ? [{ label: 'generated files skipped', value: String(s.generatedFiles ?? 0) }] : [])
+  ]
+})
+
+const highlights = computed(() => {
+  const s = props.summary
+  const list: Array<{ label: string, name: string, percentage?: number, clones?: number }> = []
+  const most = s.codeMostDuplicated ?? s.mostDuplicated
+  const cleanest = s.codeCleanest ?? s.cleanest
+  const scope = s.codeMostDuplicated ? ' code' : ''
+  if (most) list.push({ label: `Most duplicated${scope}`, name: most.name, percentage: most.percentage })
+  if (cleanest && cleanest.name !== most?.name) list.push({ label: `Cleanest${scope}`, name: cleanest.name, percentage: cleanest.percentage })
+  if (s.mostClones) list.push({ label: 'Most clones, all files', name: s.mostClones.name, clones: s.mostClones.clones })
+  return list
+})
 </script>
 
 <style scoped>
@@ -139,5 +137,4 @@ const tiles = computed(() => [
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
-
 </style>

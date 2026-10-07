@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { hasTrendingDay, latestTrendingDate, loadTrendingDay, trendingHistory } from '~/composables/useTrendingData'
+import {
+  hasTrendingDay, latestTrendingDate, latestTrendingWeek, loadTrendingDay, loadTrendingWeek, trendingBaselines, trendingHistory, trendingWeeks
+} from '~/composables/useTrendingData'
 
 definePageMeta({ layout: 'default', key: route => route.path })
 
@@ -15,11 +17,23 @@ if (!hasTrendingDay(date.value)) {
 const { data } = await useAsyncData(`trending-day-${date.value}`, () => loadTrendingDay(date.value))
 const day = computed(() => data.value!)
 
+// The week block is for the latest page only; archive days keep to themselves.
+const weekId = isLatest.value ? latestTrendingWeek : null
+const { data: weekData } = await useAsyncData(`trending-week-${weekId}`, () => weekId ? loadTrendingWeek(weekId) : Promise.resolve(null))
+const week = computed(() => weekData.value)
+const weekIndex = computed(() => trendingWeeks.find(w => w.week === weekId) ?? null)
+
+const coded = computed(() => day.value.summary.codeMedianPercentage != null)
 const title = computed(() => isLatest.value
   ? 'Trending Repos, Analyzed'
   : `Trending Repos on ${formatDay(date.value, { month: 'short', day: 'numeric', year: 'numeric' })}`)
-const description = computed(() => `jscpd analysis of ${day.value.summary.repos} GitHub trending repositories on ${formatDay(date.value)}: `
-  + `${num(day.value.summary.clones)} clones and ${day.value.summary.percentage}% duplicated lines across ${compact(day.value.summary.lines)} lines of code.`)
+const description = computed(() => {
+  const s = day.value.summary
+  return `jscpd analysis of ${s.repos} GitHub trending repositories on ${formatDay(date.value)}: `
+    + (coded.value
+      ? `median ${s.codeMedianPercentage}% duplicated code once tests, docs, data and generated files are left out.`
+      : `${num(s.clones)} clones and ${s.percentage}% duplicated lines across ${compact(s.lines)} lines.`)
+})
 
 useSeoMeta({
   title,
@@ -38,29 +52,66 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
         Trending Repos, <span class="hero-gradient">Analyzed</span>
       </h1>
       <p class="trending-subtitle">
-        How much duplicated code ships in GitHub's trending repositories?
         Every day a
         <a
           href="https://github.com/kucherenko/jscpd.dev/blob/master/.github/workflows/trending.yml"
           target="_blank"
           rel="noopener"
         >GitHub Actions pipeline</a>
-        picks the day's trending repos, runs <strong>jscpd v5</strong> on each, and publishes the results here.
+        takes the day's <a href="https://github.com/trending" target="_blank" rel="noopener">GitHub trending</a> repositories and runs
+        <strong>jscpd</strong> on each one twice: over every file, and over the code alone, without tests, docs, data, vendored and
+        generated files. The code number is the one worth comparing. The all-files number mostly says how much copied or generated material a repository carries.
       </p>
       <div class="trending-nav">
         <TrendingDayNav :date="date" />
       </div>
       <p class="trending-hero-stats">
-        Analyzed {{ formatDay(date) }} · {{ num(day.summary.clones) }} clones in {{ day.summary.repos }} repos
+        {{ formatDay(date) }} · {{ day.summary.repos }} repos
+        <template v-if="coded"> · median {{ day.summary.codeMedianPercentage }}% duplicated code</template>
+        <template v-else> · {{ num(day.summary.clones) }} clones, all files</template>
         <template v-if="!isLatest"> · <NuxtLink to="/trending">jump to latest</NuxtLink></template>
+      </p>
+    </section>
+
+    <p v-if="!isLatest && !coded" class="archive-note">
+      Archive day. Measured over every file: tests, data and generated files are in these numbers.
+      Code-only measurements start on {{ trendingBaselines.from ? formatDay(trendingBaselines.from) : 'the days that follow' }}.
+    </p>
+
+    <section class="trending-section">
+      <h2 class="section-heading">Repositories</h2>
+      <p class="section-note">
+        Ranked as on GitHub trending that day. Open a repository for the largest duplicated blocks with the code, every day it trended, and the per-format breakdown.
+      </p>
+      <TrendingRepos :repos="day.repos" />
+    </section>
+
+    <section v-if="isLatest" class="trending-section">
+      <h2 class="section-heading">Typical duplication by language</h2>
+      <TrendingBaselines />
+    </section>
+
+    <section v-if="week && weekIndex" class="trending-section">
+      <h2 class="section-heading">This week</h2>
+      <p class="section-note">
+        {{ weekTitle(week.week) }}, {{ weekRange(week) }}: {{ week.repos.length }} repositories so far<template v-if="week.summary.codeMedianPercentage != null">,
+          median {{ week.summary.codeMedianPercentage }}% duplicated code across the {{ week.summary.codeRepos }} with a code-only scan</template>.
+      </p>
+      <TrendingWeekTable :repos="week.repos" :limit="6" />
+      <p class="section-more">
+        <NuxtLink :to="trendingWeekPath(week.week)">The whole week<template v-if="week.repos.length > 6"> ({{ week.repos.length }} repositories)</template> →</NuxtLink>
+        <template v-if="trendingWeeks.length > 1">
+          · earlier:
+          <template v-for="(w, i) in [...trendingWeeks].reverse().slice(1, 5)" :key="w.week">{{ i ? ', ' : ' ' }}<NuxtLink :to="trendingWeekPath(w.week)">{{ weekTitle(w.week) }}</NuxtLink></template>
+        </template>
       </p>
     </section>
 
     <details class="trending-section stats-details">
       <summary class="stats-summary">
         <Icon name="lucide:chevron-right" class="stats-chevron" />
-        <span class="section-heading stats-heading">Daily statistics</span>
-        <span class="stats-teaser">{{ compact(day.summary.lines) }} lines · {{ num(day.summary.clones) }} clones · {{ day.summary.percentage }}% duplicated</span>
+        <span class="section-heading stats-heading">Statistics for the day</span>
+        <span class="stats-teaser">{{ compact(day.summary.lines) }} lines · {{ num(day.summary.clones) }} clones · {{ day.summary.percentage }}% duplicated over all files</span>
       </summary>
       <div class="stats-body">
         <TrendingSummary :summary="day.summary" />
@@ -69,36 +120,6 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
 
     <section class="trending-section">
       <TrendingChart :days="trendingHistory.days" :selected="date" :latest="latestTrendingDate" />
-    </section>
-
-    <section class="trending-section">
-      <h2 class="section-heading">Repositories</h2>
-      <p class="section-note">
-        Ranked as on <a href="https://github.com/trending" target="_blank" rel="noopener">GitHub trending</a> that day.
-        Open a repository for its full statistics, per-format breakdown and largest duplicated blocks.
-      </p>
-      <TrendingRepos :repos="day.repos" />
-    </section>
-
-    <section v-if="day.summary.languages?.length" class="trending-section">
-      <h2 class="section-heading">By language</h2>
-      <div class="table-scroll">
-        <table class="lang-table">
-          <thead>
-            <tr><th>Language</th><th>Repos</th><th>Lines</th><th>Clones</th><th>Duplicated lines</th><th>Duplication</th></tr>
-          </thead>
-          <tbody>
-            <tr v-for="l in day.summary.languages" :key="l.language">
-              <td>{{ l.language }}</td>
-              <td>{{ l.repos }}</td>
-              <td>{{ num(l.lines) }}</td>
-              <td>{{ num(l.clones) }}</td>
-              <td>{{ num(l.duplicatedLines) }}</td>
-              <td><span class="dup-badge" :class="dupClass(l.percentage)">{{ l.percentage }}%</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </section>
   </div>
 </template>
@@ -110,12 +131,12 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
   padding: 0 1rem 4rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.25rem;
 }
 
 .trending-hero {
   text-align: center;
-  padding: 4rem 0 0.5rem;
+  padding: 4rem 0 0;
 }
 
 .trending-title {
@@ -127,7 +148,7 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
 }
 
 .trending-subtitle {
-  max-width: 42rem;
+  max-width: 44rem;
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.6;
@@ -136,14 +157,18 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
 
 .trending-subtitle a,
 .trending-hero-stats a,
-.section-note a {
+.section-note a,
+.section-more a,
+.archive-note a {
   color: var(--jscpd-blue, #007bff);
   text-decoration: none;
 }
 
 .trending-subtitle a:hover,
 .trending-hero-stats a:hover,
-.section-note a:hover {
+.section-note a:hover,
+.section-more a:hover,
+.archive-note a:hover {
   text-decoration: underline;
 }
 
@@ -156,6 +181,16 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
   font-size: 0.8125rem;
   color: var(--ui-text-muted, #64748b);
   font-variant-numeric: tabular-nums;
+}
+
+.archive-note {
+  margin: -1rem 0 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--ui-text-muted, #64748b);
 }
 
 .section-heading {
@@ -213,38 +248,19 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
 .section-note {
   margin: -0.25rem 0 0.75rem;
   font-size: 0.875rem;
+  line-height: 1.6;
   color: var(--ui-text-muted, #64748b);
 }
 
-.table-scroll {
-  overflow-x: auto;
-}
-
-.lang-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.8125rem;
-}
-
-.lang-table th,
-.lang-table td {
-  text-align: left;
-  padding: 0.375rem 0.75rem;
-  border-bottom: 1px solid var(--ui-border, rgba(100, 116, 139, 0.12));
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-}
-
-.lang-table th {
-  font-size: 0.6875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.section-more {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
   color: var(--ui-text-muted, #64748b);
 }
 
 @media (max-width: 640px) {
   .trending-hero {
-    padding: 2.5rem 0 0.5rem;
+    padding: 2.5rem 0 0;
   }
 }
 </style>

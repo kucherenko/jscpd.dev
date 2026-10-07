@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { hasTrendingRepo, latestTrendingDate, loadTrendingRepo } from '~/composables/useTrendingData'
+import { codeMetric, hasTrendingRepo, latestTrendingDate, loadTrendingRepo } from '~/composables/useTrendingData'
 
 definePageMeta({ layout: 'default', key: route => route.path })
 
@@ -14,11 +14,25 @@ if (!hasTrendingRepo(name)) {
 const { data } = await useAsyncData(`trending-repo-${name}`, () => loadTrendingRepo(name))
 const record = computed(() => data.value!)
 const repo = computed(() => record.value.latest)
+const code = computed(() => codeMetric(repo.value))
 const latestAppearance = computed(() => record.value.appearances[record.value.appearances.length - 1]!)
 
+// The change in code duplication between the first and the last code-measured
+// appearance; shown only when there are two to compare.
+const codeTrend = computed(() => {
+  const measured = record.value.appearances.filter(a => a.codePercentage != null)
+  if (measured.length < 2) return null
+  const first = measured[0]!
+  const last = measured[measured.length - 1]!
+  return { first, last, delta: Math.round((last.codePercentage! - first.codePercentage!) * 100) / 100, count: measured.length }
+})
+
 const title = computed(() => `${repo.value.name}: duplicated code report`)
-const description = computed(() => `jscpd found ${num(repo.value.total.clones)} clones and ${repo.value.total.percentage}% duplicated lines in ${repo.value.name} `
-  + `(${num(repo.value.total.sources)} files, ${compact(repo.value.total.lines)} lines) while it was trending on GitHub on ${formatDay(repo.value.date)}.`)
+const description = computed(() => code.value
+  ? `jscpd found ${code.value.percentage}% duplicated code in ${repo.value.name} (${num(code.value.sources)} code files, ${compact(code.value.lines)} lines, tests and generated files left out) `
+    + `while it was trending on GitHub on ${formatDay(repo.value.date)}.`
+  : `jscpd found ${num(repo.value.total.clones)} clones and ${repo.value.total.percentage}% duplicated lines in ${repo.value.name} `
+    + `(${num(repo.value.total.sources)} files, ${compact(repo.value.total.lines)} lines) while it was trending on GitHub on ${formatDay(repo.value.date)}.`)
 
 useSeoMeta({
   title,
@@ -49,24 +63,22 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
       <p v-if="repo.description" class="repo-desc">{{ repo.description }}</p>
       <div class="repo-chips">
         <span v-if="repo.language" class="chip">{{ repo.language }}</span>
-        <span class="chip">★ {{ num(repo.stars) }}</span>
-        <span v-if="repo.starsToday" class="chip chip-accent">+{{ num(repo.starsToday) }} that day</span>
+        <span class="chip">★ {{ num(repo.stars) }}<span v-if="repo.starsToday" class="chip-delta">+{{ num(repo.starsToday) }} that day</span></span>
         <span class="chip">#{{ latestAppearance.rank }} on trending</span>
-        <span
-          v-if="repo.health?.score != null"
-          class="health-badge"
-          :class="gradeClass(repo.health.grade)"
-        >{{ repo.health.grade }} {{ repo.health.score }} health</span>
-        <span class="dup-badge" :class="dupClass(repo.total.percentage)">{{ repo.total.percentage }}% duplicated</span>
       </div>
       <p class="repo-meta">
         Analyzed {{ formatDay(repo.date) }} at
         <a :href="`${repo.url}/tree/${repo.headSha}`" target="_blank" rel="noopener"><code>{{ repo.headSha.slice(0, 7) }}</code></a>
-        ({{ repo.defaultBranch }}) with <strong>jscpd v5</strong> in {{ (repo.durationMs / 1000).toFixed(1) }}s.
+        ({{ repo.defaultBranch }}) with <strong>jscpd {{ repo.jscpdVersion ?? 'v5' }}</strong> in {{ (repo.durationMs / 1000).toFixed(1) }}s.
+        <template v-if="codeTrend">
+          Code duplication
+          <template v-if="codeTrend.delta === 0">stayed at {{ codeTrend.last.codePercentage }}% across {{ codeTrend.count }} appearances since {{ shortDay(codeTrend.first.date) }}.</template>
+          <template v-else>went from {{ codeTrend.first.codePercentage }}% on {{ shortDay(codeTrend.first.date) }} to {{ codeTrend.last.codePercentage }}% on {{ shortDay(codeTrend.last.date) }}.</template>
+        </template>
       </p>
     </header>
 
-    <TrendingRepoDashboard v-if="repo.health" :repo="repo" />
+    <TrendingRepoDashboard :repo="repo" />
 
     <TrendingRepoDetails :repo="repo" />
 
@@ -75,7 +87,7 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
       <div class="table-scroll">
         <table class="detail-table">
           <thead>
-            <tr><th>Day</th><th>Rank</th><th>Stars</th><th>Files</th><th>Lines</th><th>Clones</th><th>Duplication</th><th>Health</th><th>Commit</th></tr>
+            <tr><th>Day</th><th>Rank</th><th>Stars</th><th>Files</th><th>Lines</th><th>Clones</th><th>All files</th><th>Code</th><th>Health</th><th>Commit</th></tr>
           </thead>
           <tbody>
             <tr v-for="a in [...record.appearances].reverse()" :key="a.date">
@@ -86,6 +98,10 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
               <td>{{ num(a.lines) }}</td>
               <td>{{ num(a.clones) }}</td>
               <td><span class="dup-badge" :class="dupClass(a.percentage)">{{ a.percentage }}%</span></td>
+              <td>
+                <span v-if="a.codePercentage != null" class="dup-badge" :class="dupClass(a.codePercentage)">{{ a.codePercentage }}%</span>
+                <span v-else class="muted" :title="a.codeSources != null ? `${a.codeSources} code files, too few to quote` : 'No code-only scan that day'">—</span>
+              </td>
               <td>
                 <span v-if="a.healthScore != null" class="health-badge" :class="gradeClass(a.healthGrade)">{{ a.healthGrade }} {{ a.healthScore }}</span>
                 <span v-else class="muted">—</span>
@@ -99,7 +115,8 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
 
     <p class="repo-cta">
       Want this for your own project?
-      <NuxtLink to="/start/installation">Install jscpd</NuxtLink> and run <code>jscpd .</code>
+      <NuxtLink to="/start/installation">Install jscpd</NuxtLink> and run <code>jscpd .</code>, or
+      <NuxtLink to="/trending#baselines">measure it the way the baselines were measured</NuxtLink>.
     </p>
   </div>
 </template>
@@ -186,6 +203,7 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
 .repo-meta {
   margin: 0;
   font-size: 0.8125rem;
+  line-height: 1.6;
   color: var(--ui-text-muted, #64748b);
 }
 

@@ -2,7 +2,7 @@
   <div class="tchart">
     <div class="tchart-head">
       <div>
-        <h3 class="tchart-title">Daily totals across trending repos</h3>
+        <h3 class="tchart-title">Day by day</h3>
         <p class="tchart-sub">{{ activeMetric.label }} per analysis day · click a day to open it</p>
       </div>
       <div class="tchart-metrics" role="tablist" aria-label="Chart metric">
@@ -43,7 +43,7 @@
             class="tchart-hit"
             tabindex="0"
             role="link"
-            :aria-label="`${formatDay(p.date)}: ${activeMetric.full(p.value)}`"
+            :aria-label="`${formatDay(p.date)}: ${p.value === null ? 'not measured' : activeMetric.full(p.value)}`"
             @mouseenter="hover = i"
             @focus="hover = i"
             @blur="hover = null"
@@ -58,10 +58,10 @@
       <div
         v-if="hover !== null && points[hover]"
         class="tchart-tip"
-        :style="{ left: `${(cx(hover) / W) * 100}%`, top: `${(y(points[hover]!.value) / H) * 100}%` }"
+        :style="{ left: `${(cx(hover) / W) * 100}%`, top: `${(y(points[hover]!.value ?? 0) / H) * 100}%` }"
       >
         <span class="tchart-tip-date">{{ formatDay(points[hover]!.date) }}</span>
-        <span class="tchart-tip-value">{{ activeMetric.full(points[hover]!.value) }}</span>
+        <span class="tchart-tip-value">{{ points[hover]!.value === null ? 'not measured' : activeMetric.full(points[hover]!.value!) }}</span>
         <span class="tchart-tip-meta">{{ tipMeta(points[hover]!) }}</span>
       </div>
     </div>
@@ -71,16 +71,16 @@
       <div class="table-scroll">
         <table>
           <thead>
-            <tr><th>Day</th><th>Repos</th><th>Lines</th><th>Clones</th><th>Duplicated lines</th><th>Duplication</th></tr>
+            <tr><th>Day</th><th>Repos</th><th>Median, all files</th><th>Median, code</th><th>Clones</th><th>Duplicated lines</th></tr>
           </thead>
           <tbody>
             <tr v-for="d in [...days].reverse()" :key="d.date" :class="{ selected: d.date === selected }">
               <td><NuxtLink :to="trendingDayPath(d.date, latest)">{{ formatDay(d.date, { year: 'numeric', month: 'short', day: 'numeric' }) }}</NuxtLink></td>
               <td>{{ d.repos }}</td>
-              <td>{{ num(d.lines) }}</td>
+              <td>{{ d.medianPercentage }}%</td>
+              <td>{{ d.codeMedianPercentage != null ? `${d.codeMedianPercentage}%` : '—' }}</td>
               <td>{{ num(d.clones) }}</td>
               <td>{{ num(d.duplicatedLines) }}</td>
-              <td>{{ d.percentage }}%</td>
             </tr>
           </tbody>
         </table>
@@ -95,15 +95,20 @@ import type { HistoryDay } from '~/composables/useTrendingData'
 
 const props = defineProps<{ days: HistoryDay[], selected: string, latest: string }>()
 
-type MetricKey = 'clones' | 'duplicatedLines' | 'percentage'
+type MetricKey = 'medianPercentage' | 'codeMedianPercentage' | 'clones' | 'duplicatedLines'
 interface Metric { key: MetricKey, label: string, tick: (v: number) => string, full: (v: number) => string }
 
+// Days before the code-only scan have no code median; the metric is offered
+// once any day carries one and becomes the default after a week of them, so
+// the archive keeps reading the same way while the new numbers accumulate.
+const codeDays = props.days.filter(d => d.codeMedianPercentage != null).length
 const metrics: Metric[] = [
+  { key: 'medianPercentage', label: 'Median duplication', tick: v => `${v}%`, full: v => `${v}% median duplication over all files` },
+  ...(codeDays ? [{ key: 'codeMedianPercentage' as const, label: 'Median code duplication', tick: (v: number) => `${v}%`, full: (v: number) => `${v}% median duplication in code` }] : []),
   { key: 'clones', label: 'Clones', tick: compact, full: v => `${num(v)} clones` },
-  { key: 'duplicatedLines', label: 'Duplicated lines', tick: compact, full: v => `${num(v)} duplicated lines` },
-  { key: 'percentage', label: 'Duplication %', tick: v => `${v}%`, full: v => `${v}% of scanned lines duplicated` }
+  { key: 'duplicatedLines', label: 'Duplicated lines', tick: compact, full: v => `${num(v)} duplicated lines` }
 ]
-const metric = ref<MetricKey>('clones')
+const metric = ref<MetricKey>(codeDays >= 7 ? 'codeMedianPercentage' : 'medianPercentage')
 const activeMetric = computed(() => metrics.find(m => m.key === metric.value)!)
 const hover = ref<number | null>(null)
 
@@ -115,7 +120,7 @@ const points = computed(() => {
   // latest window by default; centre an older selected day instead
   const end = selIdx >= all.length - MAX_POINTS ? all.length : Math.min(all.length, selIdx + Math.ceil(MAX_POINTS / 2))
   const start = Math.max(0, end - MAX_POINTS)
-  return all.slice(start, end).map(d => ({ date: d.date, value: d[metric.value] ?? 0, repos: d.repos, clones: d.clones, percentage: d.percentage }))
+  return all.slice(start, end).map(d => ({ date: d.date, value: d[metric.value] ?? null, repos: d.repos, clones: d.clones, percentage: d.percentage }))
 })
 
 const W = 720
@@ -125,7 +130,7 @@ const plotW = W - PAD.left - PAD.right
 const plotH = H - PAD.top - PAD.bottom
 
 const ticks = computed(() => {
-  const max = Math.max(1, ...points.value.map(p => p.value))
+  const max = Math.max(1, ...points.value.map(p => p.value ?? 0))
   const raw = max / 4
   const mag = 10 ** Math.floor(Math.log10(raw))
   const step = [1, 2, 2.5, 5, 10].map(s => s * mag).find(s => s >= raw) ?? raw
@@ -140,7 +145,8 @@ const slot = computed(() => plotW / Math.max(points.value.length, 1))
 const barW = computed(() => Math.min(24, slot.value * 0.7))
 const cx = (i: number) => PAD.left + i * slot.value + slot.value / 2
 
-function bar(i: number, v: number) {
+function bar(i: number, v: number | null) {
+  if (v === null) return ''
   const x = cx(i) - barW.value / 2
   const top = y(v)
   const base = y(0)

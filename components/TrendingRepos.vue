@@ -1,30 +1,29 @@
 <template>
   <div class="trending-list">
-    <NuxtLink v-for="(repo, i) in repos" :key="repo.name" :to="trendingRepoPath(repo.name)" class="trending-row">
+    <NuxtLink v-for="({ repo, code }, i) in rows" :key="repo.name" :to="trendingRepoPath(repo.name)" class="trending-row">
       <span class="trending-rank">{{ i + 1 }}</span>
       <span class="trending-main">
         <span class="trending-name">{{ repo.name }}</span>
         <span v-if="repo.description" class="trending-desc">{{ repo.description }}</span>
         <span class="trending-chips">
           <span v-if="repo.language" class="chip">{{ repo.language }}</span>
-          <span class="chip">★ {{ num(repo.stars) }}</span>
-          <span v-if="repo.starsToday" class="chip chip-accent">+{{ num(repo.starsToday) }} today</span>
-          <span class="chip">{{ num(repo.total.sources) }} files</span>
-          <span class="chip">{{ compact(repo.total.lines) }} lines</span>
+          <span class="chip">★ {{ num(repo.stars) }}<span v-if="repo.starsToday" class="chip-delta">+{{ num(repo.starsToday) }} today</span></span>
+          <span v-if="code" class="chip">{{ num(code.sources) }} code files of {{ num(repo.total.sources) }}</span>
+          <span v-else class="chip">{{ num(repo.total.sources) }} files</span>
+          <span v-if="code?.generated.files" class="chip">{{ code.generated.files }} generated skipped</span>
         </span>
       </span>
       <span class="trending-side">
-        <span class="trending-clones">{{ num(repo.total.clones) }}</span>
-        <span class="trending-clones-label">clones</span>
-        <span class="trending-badges">
-          <span
-            v-if="repo.health?.score != null"
-            class="health-badge"
-            :class="gradeClass(repo.health.grade)"
-            :title="`Health ${repo.health.score}/100`"
-          >{{ repo.health.grade }} {{ repo.health.score }}</span>
-          <span class="dup-badge" :class="dupClass(repo.total.percentage)">{{ repo.total.percentage }}%</span>
-        </span>
+        <template v-if="code">
+          <span class="dup-badge trending-pct" :class="dupClass(code.percentage)">{{ code.percentage }}%</span>
+          <span class="trending-pct-label">duplicated code</span>
+          <span class="trending-secondary">{{ repo.total.percentage }}% over all files</span>
+        </template>
+        <template v-else>
+          <span class="dup-badge trending-pct" :class="dupClass(repo.total.percentage)">{{ repo.total.percentage }}%</span>
+          <span class="trending-pct-label">duplicated, all files</span>
+          <span class="trending-secondary">{{ num(repo.total.clones) }} clones</span>
+        </template>
       </span>
       <Icon name="lucide:chevron-right" class="trending-chevron" />
     </NuxtLink>
@@ -32,9 +31,12 @@
 </template>
 
 <script setup lang="ts">
-import type { RepoAnalysis } from '~/composables/useTrendingData'
+import { computed } from 'vue'
+import { codeMetric, type RepoAnalysis } from '~/composables/useTrendingData'
 
-defineProps<{ repos: RepoAnalysis[] }>()
+const props = defineProps<{ repos: RepoAnalysis[] }>()
+
+const rows = computed(() => props.repos.map(repo => ({ repo, code: codeMetric(repo) })))
 </script>
 
 <style scoped>
@@ -107,25 +109,24 @@ defineProps<{ repos: RepoAnalysis[] }>()
   align-items: flex-end;
   gap: 0.125rem;
   flex-shrink: 0;
+  text-align: right;
 }
 
-.trending-clones {
-  font-size: 1.125rem;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  color: var(--ui-text-highlighted, inherit);
-  line-height: 1;
+.trending-pct {
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
 }
 
-.trending-badges {
-  display: flex;
-  align-items: center;
-  gap: 0.375rem;
-}
-
-.trending-clones-label {
+.trending-pct-label {
   font-size: 0.6875rem;
   color: var(--ui-text-muted, #64748b);
+}
+
+.trending-secondary {
+  font-size: 0.6875rem;
+  color: var(--ui-text-muted, #64748b);
+  opacity: 0.8;
+  font-variant-numeric: tabular-nums;
 }
 
 .trending-chevron {
@@ -133,5 +134,11 @@ defineProps<{ repos: RepoAnalysis[] }>()
   height: 1rem;
   flex-shrink: 0;
   color: var(--ui-text-muted, #64748b);
+}
+
+@media (max-width: 480px) {
+  .trending-secondary {
+    display: none;
+  }
 }
 </style>
