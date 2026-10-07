@@ -14,7 +14,10 @@ if (!hasTrendingDay(date.value)) {
   throw createError({ statusCode: 404, statusMessage: `No trending analysis for ${date.value}`, fatal: true })
 }
 
-const { data } = await useAsyncData(`trending-day-${date.value}`, () => loadTrendingDay(date.value))
+const { data, error } = await useAsyncData(`trending-day-${date.value}`, () => loadTrendingDay(date.value))
+if (error.value || !data.value) {
+  throw createError({ statusCode: 500, statusMessage: `Trending data for ${date.value} failed to load: ${error.value?.message ?? 'empty'}`, fatal: true })
+}
 const day = computed(() => data.value!)
 
 // The week block is for the latest page only; archive days keep to themselves.

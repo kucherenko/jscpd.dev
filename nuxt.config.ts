@@ -1,5 +1,6 @@
 import { createRequire } from "node:module";
 import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 import trendingHistory from "./data/trending-history.json" with { type: "json" };
 import trendingRepos from "./data/trending-repos.json" with { type: "json" };
 
@@ -130,6 +131,17 @@ export default defineNuxtConfig({
     alias: {
       "@nuxt/content/server": nuxtContentServer,
     },
+    // The trending snapshots, per-repo and per-week files are static JSON
+    // under /trending-data (fetched by composables/useTrendingData.ts), not
+    // bundled modules: the server build replaces `typeof window` with
+    // `"undefined"` in module source, and a code excerpt in a snapshot can
+    // contain exactly that text, which broke the chunk and the page with it.
+    publicAssets: [
+      {
+        baseURL: "/trending-data",
+        dir: fileURLToPath(new URL("./data/trending", import.meta.url)),
+      },
+    ],
     prerender: {
       // /health-corpus.json publishes the calibration corpus for the jscpd
       // repo's rust/scripts/calibrate-health.mjs; see server/routes/

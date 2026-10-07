@@ -11,7 +11,10 @@ if (!hasTrendingWeek(week)) {
   throw createError({ statusCode: 404, statusMessage: `No trending analysis for ${week}`, fatal: true })
 }
 
-const { data } = await useAsyncData(`trending-week-${week}`, () => loadTrendingWeek(week))
+const { data, error } = await useAsyncData(`trending-week-${week}`, () => loadTrendingWeek(week))
+if (error.value || !data.value) {
+  throw createError({ statusCode: 500, statusMessage: `Trending data for ${week} failed to load: ${error.value?.message ?? 'empty'}`, fatal: true })
+}
 const w = computed(() => data.value!)
 const idx = trendingWeeks.findIndex(x => x.week === week)
 const prev = trendingWeeks[idx - 1] ?? null

@@ -1,5 +1,6 @@
 import history from '~/data/trending-history.json'
 import baselines from '~/data/trending-baselines.json'
+import repoIndex from '~/data/trending-repos.json'
 
 export interface RepoTotal {
   sources: number
@@ -280,24 +281,6 @@ export interface Baselines {
   method: { format: string[], ignore: string[] }
 }
 
-// One lazy chunk per file: a page only ever loads the day, week or repo it shows.
-const dayModules = import.meta.glob<DaySnapshot>('../data/trending/*.json', { import: 'default' })
-const repoModules = import.meta.glob<RepoRecord>('../data/trending/repos/**/*.json', { import: 'default' })
-const weekModules = import.meta.glob<WeekSnapshot>('../data/trending/weeks/*.json', { import: 'default' })
-
-const byBasename = <T>(modules: Record<string, () => Promise<T>>, prefix: string) => {
-  const map: Record<string, () => Promise<T>> = {}
-  for (const [path, load] of Object.entries(modules)) {
-    const i = path.indexOf(prefix)
-    if (i !== -1) map[path.slice(i + prefix.length).replace(/\.json$/, '')] = load
-  }
-  return map
-}
-
-const days = byBasename(dayModules, '/data/trending/')
-const repos = byBasename(repoModules, '/data/trending/repos/')
-const weeks = byBasename(weekModules, '/data/trending/weeks/')
-
 export interface TrendingHistory { updatedAt: string, days: HistoryDay[], weeks: WeekIndex[] }
 
 export const trendingHistory: TrendingHistory = history
@@ -306,15 +289,30 @@ export const latestTrendingDate: string = trendingDates[trendingDates.length - 1
 export const trendingWeeks: WeekIndex[] = trendingHistory.weeks
 export const latestTrendingWeek: string = trendingWeeks[trendingWeeks.length - 1]!.week
 export const trendingBaselines: Baselines = baselines as Baselines
+const repoNames = new Set((repoIndex as Array<{ name: string }>).map(r => r.name))
 
-export const hasTrendingDay = (date: string) => Object.hasOwn(days, date)
-export const loadTrendingDay = (date: string) => days[date]!()
+// The day, repo and week files are served as static JSON from data/trending
+// (nitro.publicAssets in nuxt.config.ts) and fetched, not imported: a bundled
+// JSON module goes through Nitro's build-time text replacement (`typeof
+// window` becomes `"undefined"`), and a code excerpt in a snapshot can
+// contain exactly that text, which breaks the module. A page only ever loads
+// the one file it shows; the prerendered HTML carries the data in its payload.
+const dataUrl = (path: string) => {
+  const url = `/trending-data/${path}.json`
+  // The dev server serves public assets from its proxy layer, which the
+  // app's internal fetch cannot reach; go through the real server there.
+  // Prerendering serves them inside the app (nitro-prerender has serveStatic).
+  return import.meta.dev && import.meta.server ? `${useRequestURL().origin}${url}` : url
+}
 
-export const hasTrendingRepo = (name: string) => Object.hasOwn(repos, name)
-export const loadTrendingRepo = (name: string) => repos[name]!()
+export const hasTrendingDay = (date: string) => trendingDates.includes(date)
+export const loadTrendingDay = (date: string) => $fetch<DaySnapshot>(dataUrl(date))
 
-export const hasTrendingWeek = (week: string) => Object.hasOwn(weeks, week)
-export const loadTrendingWeek = (week: string) => weeks[week]!()
+export const hasTrendingRepo = (name: string) => repoNames.has(name)
+export const loadTrendingRepo = (name: string) => $fetch<RepoRecord>(dataUrl(`repos/${name}`))
+
+export const hasTrendingWeek = (week: string) => trendingWeeks.some(w => w.week === week)
+export const loadTrendingWeek = (week: string) => $fetch<WeekSnapshot>(dataUrl(`weeks/${week}`))
 
 /** The code scan when it is wide enough to quote a percentage for, else null. */
 export const codeMetric = (repo: { code?: CodeScan | null }) =>

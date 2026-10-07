@@ -11,7 +11,10 @@ if (!hasTrendingRepo(name)) {
   throw createError({ statusCode: 404, statusMessage: `${name} has not been analyzed`, fatal: true })
 }
 
-const { data } = await useAsyncData(`trending-repo-${name}`, () => loadTrendingRepo(name))
+const { data, error } = await useAsyncData(`trending-repo-${name}`, () => loadTrendingRepo(name))
+if (error.value || !data.value) {
+  throw createError({ statusCode: 500, statusMessage: `Trending data for ${name} failed to load: ${error.value?.message ?? 'empty'}`, fatal: true })
+}
 const record = computed(() => data.value!)
 const repo = computed(() => record.value.latest)
 const code = computed(() => codeMetric(repo.value))
