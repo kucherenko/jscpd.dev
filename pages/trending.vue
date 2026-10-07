@@ -28,6 +28,7 @@ useSeoMeta({
   ogDescription: description,
   twitterCard: 'summary_large_image'
 })
+defineOgImage('Docs', { headline: 'Trending', title: title.value, description: description.value })
 useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(date.value, latestTrendingDate)}` }] })
 </script>
 

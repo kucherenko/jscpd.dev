@@ -153,13 +153,16 @@ export default defineNuxtConfig({
         },
         { property: "og:url", content: "https://jscpd.dev" },
         { property: "og:type", content: "website" },
-        // Static social card: nuxt-og-image's generated /_og/ URLs are not
-        // served under `nuxt generate`, so every page shares this one image.
+        // The hand-drawn social card. The landing keeps it (seo.ogImage in
+        // content/index.md); every other page replaces it with the card
+        // nuxt-og-image draws from its title at build time (the docus layer
+        // runs the module in zero-runtime mode, so the images are
+        // prerendered next to the pages). Pages without their own card,
+        // such as the 404 page, fall back to this one.
         { property: "og:image", content: "https://jscpd.dev/og.png" },
         { property: "og:image:type", content: "image/png" },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
-        { property: "og:image:alt", content: "jscpd - Copy/Paste Detector for Source Code" },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: "https://jscpd.dev/og.png" },
         { name: "twitter:title", content: "jscpd - Copy/Paste Detector" },
@@ -180,13 +183,6 @@ export default defineNuxtConfig({
     url: "https://jscpd.dev",
     name: "jscpd",
     description: "Copy/paste detector for programming source code. Rust engine, self-contained binary, no Node.js runtime required.",
-  },
-
-  // The docus layer enables nuxt-og-image in zero-runtime mode, but the
-  // images it links are not part of the static output — use public/og.png
-  // (declared in app.head above) instead.
-  ogImage: {
-    enabled: false,
   },
 
   llms: {
