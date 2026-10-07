@@ -120,7 +120,7 @@ Exact copies are the default. The other three kinds are opt-in flags, and every 
   #description
   :copy-command{cmd="jscpd . --max-gap-lines 2 --similarity 0.7"}
 
-  Type-3: a copy with a few inserted or changed lines (`--max-gap-lines N`), or a JavaScript, TypeScript or Python function with the same structure (`--similarity RATIO`, compared by syntax tree). Reported as `similar` with a score.
+  Type-3: a copy with a few inserted or changed lines (`--max-gap-lines N`), or a function with the same structure in one of 15 languages (`--similarity RATIO`, compared by syntax tree). Reported as `similar` with a score.
 
   <a href="/concepts/clone-types#type-3-near-miss-clones" class="feature-card-link">
     Type-3 clones
