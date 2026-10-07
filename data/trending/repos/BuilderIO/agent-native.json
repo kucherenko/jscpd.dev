@@ -9,10 +9,12 @@
    "starsToday": 98,
    "headSha": "9ce49995382f7584f4c12774db2e39d7b70d3971",
    "sources": 16130,
-   "lines": 4561744,
+   "lines": 4406952,
    "clones": 24113,
-   "duplicatedLines": 586760,
-   "percentage": 12.86,
+   "duplicatedLines": 550096,
+   "percentage": 12.48,
+   "codePercentage": 5.64,
+   "codeSources": 7357,
    "healthScore": 38.7,
    "healthGrade": "E"
   },
@@ -23,10 +25,12 @@
    "starsToday": 607,
    "headSha": "6661c5921d3affa9e409d9cfc14a05d0fc912080",
    "sources": 16217,
-   "lines": 4568385,
+   "lines": 4413555,
    "clones": 24233,
-   "duplicatedLines": 587964,
-   "percentage": 12.87,
+   "duplicatedLines": 551420,
+   "percentage": 12.49,
+   "codePercentage": 5.66,
+   "codeSources": 7406,
    "healthScore": 40.4,
    "healthGrade": "D"
   },
@@ -37,10 +41,12 @@
    "starsToday": 87,
    "headSha": "b883e02215d31258d9247d948c00cb5cd0d6ded8",
    "sources": 16379,
-   "lines": 4477948,
+   "lines": 4477904,
    "clones": 24749,
    "duplicatedLines": 560459,
    "percentage": 12.52,
+   "codePercentage": 5.71,
+   "codeSources": 7465,
    "healthScore": 39.6,
    "healthGrade": "E"
   }
@@ -56,11 +62,11 @@
   "starsToday": 87,
   "defaultBranch": "main",
   "headSha": "b883e02215d31258d9247d948c00cb5cd0d6ded8",
-  "durationMs": 15125,
+  "durationMs": 16497,
   "total": {
    "sources": 16379,
-   "lines": 4477948,
-   "tokens": 24613684,
+   "lines": 4477904,
+   "tokens": 24613519,
    "clones": 24749,
    "duplicatedLines": 560459,
    "duplicatedTokens": 4009013,
@@ -119,10 +125,10 @@
    {
     "format": "bash",
     "sources": 208,
-    "lines": 2832,
+    "lines": 2782,
     "clones": 146,
     "duplicatedLines": 1413,
-    "percentage": 49.89
+    "percentage": 50.79
    },
    {
     "format": "rust",
@@ -152,153 +158,588 @@
   "topClones": [
    {
     "format": "markdown",
-    "lines": 542,
-    "tokens": 7405,
-    "firstFile": {
-     "name": ".agents/plugins/agent-native-visual-plans/skills/visual-recap/SKILL.md:markdown",
-     "start": 11,
-     "end": 552
-    },
-    "secondFile": {
-     "name": "skills/visual-recap/SKILL.md:markdown",
-     "start": 11,
-     "end": 552
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 542,
-    "tokens": 7405,
-    "firstFile": {
-     "name": ".agents/plugins/agent-native-visual-plans/skills/visual-recap/SKILL.md:markdown",
-     "start": 11,
-     "end": 552
-    },
-    "secondFile": {
-     "name": "templates/plan/.agents/skills/visual-recap/SKILL.md:markdown",
-     "start": 11,
-     "end": 552
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 526,
-    "tokens": 6858,
-    "firstFile": {
-     "name": ".agents/plugins/agent-native-visual-plans/skills/visual-plan/SKILL.md:markdown",
-     "start": 11,
-     "end": 536
-    },
-    "secondFile": {
-     "name": "skills/visual-plans/SKILL.md:markdown",
-     "start": 11,
-     "end": 536
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 526,
-    "tokens": 6858,
-    "firstFile": {
-     "name": ".agents/plugins/agent-native-visual-plans/skills/visual-plan/SKILL.md:markdown",
-     "start": 11,
-     "end": 536
-    },
-    "secondFile": {
-     "name": "templates/plan/.agents/skills/visual-plan/SKILL.md:markdown",
-     "start": 11,
-     "end": 536
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 593,
-    "tokens": 5935,
-    "firstFile": {
-     "name": ".agents/plugins/agent-native-design/skills/visual-edit/SKILL.md:markdown",
-     "start": 12,
-     "end": 604
-    },
-    "secondFile": {
-     "name": "skills/visual-edit/SKILL.md:markdown",
-     "start": 12,
-     "end": 604
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 593,
-    "tokens": 5935,
-    "firstFile": {
-     "name": ".agents/plugins/agent-native-design/skills/visual-edit/SKILL.md:markdown",
-     "start": 12,
-     "end": 604
-    },
-    "secondFile": {
-     "name": "templates/design/.agents/skills/visual-edit/SKILL.md:markdown",
-     "start": 12,
-     "end": 604
-    }
-   },
-   {
-    "format": "markdown",
     "lines": 533,
     "tokens": 5696,
-    "firstFile": {
+    "first": {
      "name": ".agents/skills/external-agents/SKILL.md:markdown",
      "start": 16,
      "end": 548
     },
-    "secondFile": {
-     "name": "community-templates/account-expert/.agents/skills/external-agents/SKILL.md:markdown",
-     "start": 16,
-     "end": 548
-    }
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/external-agents/SKILL.md:markdown",
+      "start": 16,
+      "end": 548
+     }
+    ],
+    "copies": 28,
+    "excerpt": {
+     "lines": [
+      "# External Agents (MCP bridge + deep links)",
+      "",
+      "## Rule",
+      "",
+      "- **The connected model is the author.** Write content yourself with create/update tools; never delegate via `ask_app` or wait on an unreachable in-app form — …",
+      "- **Result shape and key tools are in `actions`** (Return Values, Key Actions).",
+      "- **Artifacts fit in one call.** Up to 500,000 characters; return a `storing-data` handle.",
+      "- **One tab, one id.** WebMCP sends `X-Agent-Native-Browser-Tab`; state resolves to the driving tab (`context-awareness`).",
+      "",
+      "An agent-native app is reachable by any MCP-compatible host. Keep"
+     ],
+     "total": 533
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 533,
-    "tokens": 5696,
-    "firstFile": {
-     "name": ".agents/skills/external-agents/SKILL.md:markdown",
-     "start": 16,
-     "end": 548
+    "lines": 423,
+    "tokens": 3728,
+    "first": {
+     "name": ".agents/skills/secrets/SKILL.md:markdown",
+     "start": 13,
+     "end": 435
     },
-    "secondFile": {
-     "name": "community-templates/account-tiering/.agents/skills/external-agents/SKILL.md:markdown",
-     "start": 16,
-     "end": 548
-    }
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/secrets/SKILL.md:markdown",
+      "start": 13,
+      "end": 435
+     }
+    ],
+    "copies": 29,
+    "excerpt": {
+     "lines": [
+      "# Secrets Registry",
+      "",
+      "## Non-negotiable rule",
+      "",
+      "Never hardcode credential values. Source, docs, tests, fixtures, prompts, seed",
+      "data, and generated extension/app content may mention credential **names** such",
+      "as `OPENAI_API_KEY`, but must not contain real API keys, tokens, webhook URLs,",
+      "signing secrets, OAuth refresh tokens, or private Builder/customer data.",
+      "",
+      "Never write real secrets to non-gitignored files. Put temporary secret material"
+     ],
+     "total": 423
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 533,
-    "tokens": 5696,
-    "firstFile": {
-     "name": ".agents/skills/external-agents/SKILL.md:markdown",
-     "start": 16,
-     "end": 548
+    "lines": 342,
+    "tokens": 3683,
+    "first": {
+     "name": ".agents/skills/security/SKILL.md:markdown",
+     "start": 12,
+     "end": 353
     },
-    "secondFile": {
-     "name": "community-templates/call-follow-up-drafter/.agents/skills/external-agents/SKILL.md:markdown",
-     "start": 16,
-     "end": 548
-    }
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/security/SKILL.md:markdown",
+      "start": 12,
+      "end": 353
+     }
+    ],
+    "copies": 29,
+    "excerpt": {
+     "lines": [
+      "# Security",
+      "",
+      "## Rule",
+      "",
+      "Use the framework's security primitives everywhere. Never bypass them.",
+      "",
+      "## Absolute Secrets Rule",
+      "",
+      "Never hardcode secret values or real private data. This applies to source code,",
+      "docs, tests, fixtures, generated prompts, screenshots, seed data, and extension"
+     ],
+     "total": 342
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 533,
-    "tokens": 5696,
-    "firstFile": {
-     "name": ".agents/skills/external-agents/SKILL.md:markdown",
-     "start": 16,
-     "end": 548
+    "lines": 210,
+    "tokens": 3479,
+    "first": {
+     "name": ".agents/skills/adding-a-feature/SKILL.md:markdown",
+     "start": 11,
+     "end": 220
     },
-    "secondFile": {
-     "name": "community-templates/churn-early-warning/.agents/skills/external-agents/SKILL.md:markdown",
-     "start": 16,
-     "end": 548
-    }
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/adding-a-feature/SKILL.md:markdown",
+      "start": 11,
+      "end": 220
+     }
+    ],
+    "copies": 27,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 469,
+    "tokens": 4508,
+    "first": {
+     "name": ".agents/plugins/agent-native-turn-into-app/skills/turn-into-app/SKILL.md:markdown",
+     "start": 14,
+     "end": 482
+    },
+    "others": [
+     {
+      "name": "packages/core/src/templates/default/.agents/skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     },
+     {
+      "name": "packages/core/src/templates/workspace-core/.agents/skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     },
+     {
+      "name": "skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     },
+     {
+      "name": "templates/analytics/.agents/skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     },
+     {
+      "name": "templates/assets/.agents/skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     },
+     {
+      "name": "templates/brain/.agents/skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     },
+     {
+      "name": "templates/calendar/.agents/skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     },
+     {
+      "name": "templates/chat/.agents/skills/turn-into-app/SKILL.md:markdown",
+      "start": 14,
+      "end": 482
+     }
+    ],
+    "copies": 20,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 154,
+    "tokens": 2897,
+    "first": {
+     "name": ".agents/skills/actions/SKILL.md:markdown",
+     "start": 13,
+     "end": 166
+    },
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/actions/SKILL.md:markdown",
+      "start": 13,
+      "end": 166
+     }
+    ],
+    "copies": 29,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 334,
+    "tokens": 4492,
+    "first": {
+     "name": ".agents/skills/frontend-design/SKILL.md:markdown",
+     "start": 21,
+     "end": 354
+    },
+    "others": [
+     {
+      "name": "packages/core/src/templates/default/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     },
+     {
+      "name": "packages/core/src/templates/workspace-core/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     },
+     {
+      "name": "templates/analytics/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     },
+     {
+      "name": "templates/assets/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     },
+     {
+      "name": "templates/brain/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     },
+     {
+      "name": "templates/calendar/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     },
+     {
+      "name": "templates/chat/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     },
+     {
+      "name": "templates/clips/.agents/skills/frontend-design/SKILL.md:markdown",
+      "start": 21,
+      "end": 354
+     }
+    ],
+    "copies": 19,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 216,
+    "tokens": 2872,
+    "first": {
+     "name": ".agents/plugins/agent-native-turn-into-app/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+     "start": 1,
+     "end": 216
+    },
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/turn-into-app/references/spreadsheet-source.md:markdown",
+      "start": 1,
+      "end": 216
+     }
+    ],
+    "copies": 29,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 254,
+    "tokens": 2773,
+    "first": {
+     "name": ".agents/skills/agent-native-toolkit/SKILL.md:markdown",
+     "start": 12,
+     "end": 265
+    },
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/agent-native-toolkit/SKILL.md:markdown",
+      "start": 12,
+      "end": 265
+     }
+    ],
+    "copies": 29,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 169,
+    "tokens": 2542,
+    "first": {
+     "name": ".agents/skills/storing-data/SKILL.md:markdown",
+     "start": 12,
+     "end": 180
+    },
+    "others": [
+     {
+      "name": "community-templates/account-expert/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     },
+     {
+      "name": "community-templates/account-tiering/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     },
+     {
+      "name": "community-templates/call-follow-up-drafter/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     },
+     {
+      "name": "community-templates/churn-early-warning/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     },
+     {
+      "name": "community-templates/demo-clip-library/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     },
+     {
+      "name": "community-templates/linkedin-icp-prospect-tracker/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     },
+     {
+      "name": "community-templates/linkedin-signal-watch/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     },
+     {
+      "name": "community-templates/outbound-in-your-voice/.agents/skills/storing-data/SKILL.md:markdown",
+      "start": 12,
+      "end": 180
+     }
+    ],
+    "copies": 28,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -520,6 +961,678 @@
      "lines": 3192
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 7465,
+   "lines": 2385076,
+   "tokens": 11626015,
+   "clones": 6944,
+   "duplicatedLines": 136263,
+   "duplicatedTokens": 707643,
+   "percentage": 5.71,
+   "percentageTokens": 6.09,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 5562,
+     "lines": 1591046,
+     "clones": 4685,
+     "duplicatedLines": 80249,
+     "percentage": 5.04
+    },
+    {
+     "format": "tsx",
+     "sources": 1753,
+     "lines": 722605,
+     "clones": 2052,
+     "duplicatedLines": 53399,
+     "percentage": 7.39
+    },
+    {
+     "format": "rust",
+     "sources": 43,
+     "lines": 48516,
+     "clones": 130,
+     "duplicatedLines": 1384,
+     "percentage": 2.85
+    },
+    {
+     "format": "javascript",
+     "sources": 67,
+     "lines": 18070,
+     "clones": 70,
+     "duplicatedLines": 1129,
+     "percentage": 6.25
+    },
+    {
+     "format": "sql",
+     "sources": 9,
+     "lines": 1410,
+     "clones": 5,
+     "duplicatedLines": 83,
+     "percentage": 5.89
+    },
+    {
+     "format": "swift",
+     "sources": 8,
+     "lines": 2078,
+     "clones": 1,
+     "duplicatedLines": 12,
+     "percentage": 0.58
+    },
+    {
+     "format": "wgsl",
+     "sources": 11,
+     "lines": 482,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 1.45
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 666,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "objectivec",
+     "sources": 1,
+     "lines": 29,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 542,
+     "tokens": 2877,
+     "first": {
+      "name": "community-templates/account-expert/app/components/layout/Sidebar.tsx",
+      "start": 1,
+      "end": 542
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/components/layout/Sidebar.tsx",
+       "start": 1,
+       "end": 542
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "import { AgentNativeIcon } from \"@agent-native/core/client/agent-native-icon\";",
+       "import {",
+       "  navigateWithAgentChatViewTransition,",
+       "  useAgentChatRunningThreads,",
+       "  useChatThreads,",
+       "  type ChatThreadSummary,",
+       "} from \"@agent-native/core/client/agentkit-chat/rail\";",
+       "import { useT } from \"@agent-native/core/client/i18n\";",
+       "import { openCommandMenu } from \"@agent-native/core/client/navigation\";",
+       "import { OrgSwitcher } from \"@agent-native/core/client/org\";"
+      ],
+      "total": 542
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 556,
+     "tokens": 2054,
+     "first": {
+      "name": "community-templates/account-expert/app/i18n-data.ts",
+      "start": 1,
+      "end": 556
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/i18n-data.ts",
+       "start": 1,
+       "end": 556
+      }
+     ],
+     "copies": 11,
+     "excerpt": {
+      "lines": [
+       "import { type LocaleCode } from \"@agent-native/core/client/i18n\";",
+       "",
+       "import zhTW from \"./i18n/zh-TW\";",
+       "",
+       "const enUS = {",
+       "  root: {",
+       "    commandActions: \"Actions\",",
+       "    commandSearch: \"Search\",",
+       "    commandAppearance: \"Appearance\",",
+       "    toggleTheme: \"Toggle theme\","
+      ],
+      "total": 556
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 433,
+     "tokens": 2126,
+     "first": {
+      "name": "community-templates/account-expert/app/components/chat/ChatRouteContent.tsx",
+      "start": 1,
+      "end": 433
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/components/chat/ChatRouteContent.tsx",
+       "start": 1,
+       "end": 433
+      }
+     ],
+     "copies": 10,
+     "excerpt": {
+      "lines": [
+       "import type {",
+       "  AgentConnectionRequest,",
+       "  AgentMessage,",
+       "} from \"@agent-native/agentkit\";",
+       "import {",
+       "  AgentConnectionRequestCard,",
+       "  AgentKitChat,",
+       "} from \"@agent-native/agentkit/react/components\";",
+       "import {",
+       "  useAgentKit,"
+      ],
+      "total": 433
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 222,
+     "tokens": 1298,
+     "first": {
+      "name": "community-templates/account-expert/app/components/workflow-home.tsx",
+      "start": 1,
+      "end": 222
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/components/workflow-home.tsx",
+       "start": 1,
+       "end": 222
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 190,
+     "tokens": 908,
+     "first": {
+      "name": "community-templates/account-expert/app/components/layout/Layout.tsx",
+      "start": 1,
+      "end": 190
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/components/layout/Layout.tsx",
+       "start": 1,
+       "end": 190
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 156,
+     "tokens": 857,
+     "first": {
+      "name": "community-templates/account-expert/app/root.tsx",
+      "start": 42,
+      "end": 197
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/root.tsx",
+       "start": 42,
+       "end": 197
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/root.tsx",
+       "start": 42,
+       "end": 197
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/root.tsx",
+       "start": 42,
+       "end": 197
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/root.tsx",
+       "start": 42,
+       "end": 197
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/root.tsx",
+       "start": 42,
+       "end": 197
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/root.tsx",
+       "start": 42,
+       "end": 197
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/root.tsx",
+       "start": 42,
+       "end": 197
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/root.tsx",
+       "start": 42,
+       "end": 197
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 100,
+     "tokens": 535,
+     "first": {
+      "name": "community-templates/account-expert/app/hooks/use-navigation-state.ts",
+      "start": 1,
+      "end": 100
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/hooks/use-navigation-state.ts",
+       "start": 1,
+       "end": 100
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 840,
+     "tokens": 4135,
+     "first": {
+      "name": "packages/core/src/cli/mcp-config-writers.ts",
+      "start": 26,
+      "end": 865
+     },
+     "others": [
+      {
+       "name": "packages/skills/src/mcp-config-writers.ts",
+       "start": 26,
+       "end": 865
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 86,
+     "tokens": 374,
+     "first": {
+      "name": "community-templates/account-expert/app/lib/chat-home-thread.ts",
+      "start": 1,
+      "end": 86
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "community-templates/churn-early-warning/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "community-templates/demo-clip-library/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "community-templates/win-loss-memo/app/lib/chat-home-thread.ts",
+       "start": 1,
+       "end": 86
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 72,
+     "tokens": 403,
+     "first": {
+      "name": "community-templates/account-expert/actions/get-workflow.ts",
+      "start": 1,
+      "end": 72
+     },
+     "others": [
+      {
+       "name": "community-templates/account-tiering/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      },
+      {
+       "name": "community-templates/call-follow-up-drafter/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      },
+      {
+       "name": "community-templates/churn-early-warning/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      },
+      {
+       "name": "community-templates/demo-clip-library/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      },
+      {
+       "name": "community-templates/linkedin-icp-prospect-tracker/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      },
+      {
+       "name": "community-templates/linkedin-signal-watch/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      },
+      {
+       "name": "community-templates/outbound-in-your-voice/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      },
+      {
+       "name": "community-templates/win-loss-memo/actions/get-workflow.ts",
+       "start": 1,
+       "end": 72
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 23,
+    "minified": 0,
+    "sample": [
+     "packages/core/src/assets/branding/favicon-base64.ts",
+     "packages/core/src/client/blocks/index.ts",
+     "packages/core/src/client/blocks/types.ts",
+     "packages/core/src/docs-false-claims.guard.spec.ts",
+     "packages/core/src/server/og-background-data.ts",
+     "packages/core/src/server/og-fonts-data.ts",
+     "packages/dispatch/src/server/plugins/core-routes.ts",
+     "packages/mobile-app/uniwind-types.d.ts",
+     "templates/design/.generated/bridge/editor-chrome.generated.ts",
+     "templates/design/.generated/bridge/embedded-wheel.generated.ts",
+     "templates/design/.generated/bridge/group-runtime.generated.ts",
+     "templates/design/.generated/bridge/hit-test.generated.ts",
+     "templates/design/.generated/bridge/motion-preview.generated.ts",
+     "templates/design/.generated/bridge/nav.generated.ts",
+     "templates/design/.generated/bridge/sample.generated.ts",
+     "templates/design/.generated/bridge/shader-fill-preview.generated.ts",
+     "templates/design/.generated/bridge/shader-runtime.generated.ts",
+     "templates/design/.generated/bridge/source-location.generated.ts",
+     "templates/design/.generated/bridge/tweak.generated.ts",
+     "templates/design/.generated/bridge/zoom.generated.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:19:18.110Z",
+  "jscpdVersion": "5.4.0"
  }
 }

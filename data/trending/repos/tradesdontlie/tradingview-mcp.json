@@ -9,10 +9,12 @@
    "starsToday": 79,
    "headSha": "c05b8f5755ed8e64ea242de88ddbf46aa24d56a4",
    "sources": 94,
-   "lines": 12618,
+   "lines": 11764,
    "clones": 19,
-   "duplicatedLines": 236,
-   "percentage": 1.87,
+   "duplicatedLines": 255,
+   "percentage": 2.17,
+   "codePercentage": 1.24,
+   "codeSources": 67,
    "healthScore": 73.7,
    "healthGrade": "B"
   }
@@ -28,16 +30,16 @@
   "starsToday": 79,
   "defaultBranch": "main",
   "headSha": "c05b8f5755ed8e64ea242de88ddbf46aa24d56a4",
-  "durationMs": 960,
+  "durationMs": 35,
   "total": {
    "sources": 94,
-   "lines": 12618,
-   "tokens": 67377,
+   "lines": 11764,
+   "tokens": 67212,
    "clones": 19,
-   "duplicatedLines": 236,
+   "duplicatedLines": 255,
    "duplicatedTokens": 1680,
-   "percentage": 1.87,
-   "percentageTokens": 2.49
+   "percentage": 2.17,
+   "percentageTokens": 2.5
   },
   "formats": [
    {
@@ -45,16 +47,16 @@
     "sources": 64,
     "lines": 9466,
     "clones": 18,
-    "duplicatedLines": 216,
-    "percentage": 2.28
+    "duplicatedLines": 234,
+    "percentage": 2.47
    },
    {
     "format": "bash",
     "sources": 13,
-    "lines": 1282,
+    "lines": 816,
     "clones": 1,
-    "duplicatedLines": 20,
-    "percentage": 1.56
+    "duplicatedLines": 21,
+    "percentage": 2.57
    },
    {
     "format": "markdown",
@@ -65,17 +67,9 @@
     "percentage": 0
    },
    {
-    "format": "text",
-    "sources": 2,
-    "lines": 427,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -95,6 +89,14 @@
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 2,
+    "lines": 33,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
    }
   ],
   "topClones": [
@@ -102,151 +104,276 @@
     "format": "javascript",
     "lines": 45,
     "tokens": 393,
-    "firstFile": {
+    "first": {
      "name": "src/core/pine.js",
      "start": 78,
      "end": 122
     },
-    "secondFile": {
-     "name": "tests/pine_analyze.test.js",
-     "start": 12,
-     "end": 56
-    }
+    "others": [
+     {
+      "name": "tests/pine_analyze.test.js",
+      "start": 12,
+      "end": 56
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "export function analyze({ source }) {",
+      "  const lines = source.split('\\n');",
+      "  const diagnostics = [];",
+      "",
+      "  let isV6 = false;",
+      "  for (const line of lines) {",
+      "    const trimmed = line.trim();",
+      "    if (trimmed.startsWith('//@version=6')) { isV6 = true; break; }",
+      "    if (trimmed.startsWith('//@version=')) break;",
+      "    if (trimmed === '' || trimmed.startsWith('//')) continue;"
+     ],
+     "total": 45
+    },
+    "excerptSecond": {
+     "lines": [
+      "function analyze(source) {",
+      "  const lines = source.split('\\n');",
+      "  const diagnostics = [];",
+      "  let isV6 = false;",
+      "  for (const line of lines) {",
+      "    const trimmed = line.trim();",
+      "    if (trimmed.startsWith('//@version=6')) { isV6 = true; break; }",
+      "    if (trimmed.startsWith('//@version=')) break;",
+      "    if (trimmed === '' || trimmed.startsWith('//')) continue;",
+      "    break;"
+     ],
+     "total": 45
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 13,
+    "tokens": 77,
+    "first": {
+     "name": "src/cli/commands/pine.js",
+     "start": 20,
+     "end": 32
+    },
+    "others": [
+     {
+      "name": "src/cli/commands/pine.js",
+      "start": 44,
+      "end": 56
+     },
+     {
+      "name": "src/cli/commands/pine.js",
+      "start": 60,
+      "end": 72
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "description: 'Set Pine Script source (reads stdin or --file)',",
+      "options: {",
+      "  file: { type: 'string', short: 'f', description: 'Read source from file' },",
+      "},",
+      "handler: async (opts) => {",
+      "  let source;",
+      "  if (opts.file) {",
+      "    source = readFileSync(opts.file, 'utf-8');",
+      "  } else {",
+      "    source = await readStdin();"
+     ],
+     "total": 13
+    },
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 19,
     "tokens": 126,
-    "firstFile": {
+    "first": {
      "name": "src/core/pine.js",
      "start": 122,
      "end": 140
     },
-    "secondFile": {
-     "name": "tests/pine_analyze.test.js",
-     "start": 56,
-     "end": 75
-    }
+    "others": [
+     {
+      "name": "tests/pine_analyze.test.js",
+      "start": 56,
+      "end": 75
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "        line: i + 1, column: match.index + 1,",
+      "        message: `array.${method}(${arrName}, ${idx}) — index ${idx} out of bounds (array size is ${info.size})`,",
+      "        severity: 'error',",
+      "      });",
+      "    }",
+      "  }",
+      "}",
+      "",
+      "for (let i = 0; i < lines.length; i++) {",
+      "  const line = lines[i];"
+     ],
+     "total": 19
+    },
+    "excerptSecond": {
+     "lines": [
+      "        line: i + 1,",
+      "        message: `array.${method}(${arrName}, ${idx}) — index ${idx} out of bounds (array size is ${info.size})`,",
+      "        severity: 'error',",
+      "      });",
+      "    }",
+      "  }",
+      "}",
+      "",
+      "// Unguarded first/last on empty arrays",
+      "for (let i = 0; i < lines.length; i++) {"
+     ],
+     "total": 20
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 6,
+    "tokens": 54,
+    "first": {
+     "name": "src/tools/alerts.js",
+     "start": 15,
+     "end": 20
+    },
+    "others": [
+     {
+      "name": "src/tools/pane.js",
+      "start": 6,
+      "end": 11
+     },
+     {
+      "name": "src/tools/tab.js",
+      "start": 6,
+      "end": 11
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "bash",
     "lines": 21,
     "tokens": 93,
-    "firstFile": {
+    "first": {
      "name": "scripts/launch_tv_debug_linux.sh",
      "start": 47,
      "end": 67
     },
-    "secondFile": {
-     "name": "scripts/launch_tv_debug_mac.sh",
-     "start": 47,
-     "end": 67
-    }
+    "others": [
+     {
+      "name": "scripts/launch_tv_debug_mac.sh",
+      "start": 47,
+      "end": 67
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 9,
     "tokens": 90,
-    "firstFile": {
+    "first": {
      "name": "scripts/pine_pull.js",
      "start": 4,
      "end": 12
     },
-    "secondFile": {
-     "name": "scripts/pine_push.js",
-     "start": 7,
-     "end": 16
-    }
+    "others": [
+     {
+      "name": "scripts/pine_push.js",
+      "start": 7,
+      "end": 16
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 20,
     "tokens": 80,
-    "firstFile": {
+    "first": {
      "name": "tests/pine_analyze.test.js",
      "start": 247,
      "end": 266
     },
-    "secondFile": {
-     "name": "tests/pine_analyze.test.js",
-     "start": 273,
-     "end": 292
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 13,
-    "tokens": 77,
-    "firstFile": {
-     "name": "src/cli/commands/pine.js",
-     "start": 20,
-     "end": 32
-    },
-    "secondFile": {
-     "name": "src/cli/commands/pine.js",
-     "start": 44,
-     "end": 56
-    }
-   },
-   {
-    "format": "javascript",
-    "lines": 13,
-    "tokens": 77,
-    "firstFile": {
-     "name": "src/cli/commands/pine.js",
-     "start": 20,
-     "end": 32
-    },
-    "secondFile": {
-     "name": "src/cli/commands/pine.js",
-     "start": 60,
-     "end": 72
-    }
+    "others": [
+     {
+      "name": "tests/pine_analyze.test.js",
+      "start": 273,
+      "end": 292
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "javascript",
     "lines": 9,
     "tokens": 74,
-    "firstFile": {
+    "first": {
      "name": "src/core/pine.js",
      "start": 150,
      "end": 158
     },
-    "secondFile": {
-     "name": "tests/pine_analyze.test.js",
-     "start": 85,
-     "end": 93
-    }
+    "others": [
+     {
+      "name": "tests/pine_analyze.test.js",
+      "start": 85,
+      "end": 93
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 19,
     "tokens": 74,
-    "firstFile": {
+    "first": {
      "name": "tests/pine_analyze.test.js",
      "start": 249,
      "end": 267
     },
-    "secondFile": {
-     "name": "tests/pine_analyze.test.js",
-     "start": 275,
-     "end": 294
-    }
+    "others": [
+     {
+      "name": "tests/pine_analyze.test.js",
+      "start": 275,
+      "end": 294
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "javascript",
     "lines": 7,
     "tokens": 73,
-    "firstFile": {
+    "first": {
      "name": "src/core/pine.js",
      "start": 312,
      "end": 318
     },
-    "secondFile": {
-     "name": "src/core/pine.js",
-     "start": 466,
-     "end": 472
-    }
+    "others": [
+     {
+      "name": "src/core/pine.js",
+      "start": 466,
+      "end": 472
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -385,6 +512,246 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 67,
+   "lines": 7279,
+   "tokens": 38320,
+   "clones": 9,
+   "duplicatedLines": 90,
+   "duplicatedTokens": 644,
+   "percentage": 1.24,
+   "percentageTokens": 1.68,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 55,
+     "lines": 6326,
+     "clones": 8,
+     "duplicatedLines": 69,
+     "percentage": 1.09
+    },
+    {
+     "format": "bash",
+     "sources": 11,
+     "lines": 779,
+     "clones": 1,
+     "duplicatedLines": 21,
+     "percentage": 2.7
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 13,
+     "tokens": 77,
+     "first": {
+      "name": "src/cli/commands/pine.js",
+      "start": 20,
+      "end": 32
+     },
+     "others": [
+      {
+       "name": "src/cli/commands/pine.js",
+       "start": 44,
+       "end": 56
+      },
+      {
+       "name": "src/cli/commands/pine.js",
+       "start": 60,
+       "end": 72
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "description: 'Set Pine Script source (reads stdin or --file)',",
+       "options: {",
+       "  file: { type: 'string', short: 'f', description: 'Read source from file' },",
+       "},",
+       "handler: async (opts) => {",
+       "  let source;",
+       "  if (opts.file) {",
+       "    source = readFileSync(opts.file, 'utf-8');",
+       "  } else {",
+       "    source = await readStdin();"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 6,
+     "tokens": 54,
+     "first": {
+      "name": "src/tools/alerts.js",
+      "start": 15,
+      "end": 20
+     },
+     "others": [
+      {
+       "name": "src/tools/pane.js",
+       "start": 6,
+       "end": 11
+      },
+      {
+       "name": "src/tools/tab.js",
+       "start": 6,
+       "end": 11
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "server.tool('alert_list', 'List active alerts', {}, async () => {",
+       "  try { return jsonResult(await core.list()); }",
+       "  catch (err) { return jsonResult({ success: false, error: err.message }, true); }",
+       "});",
+       "",
+       "server.tool('alert_delete', 'Delete a specific alert by id, or all active alerts', {"
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "server.tool('pane_list', 'List all chart panes in the current layout with their symbols and active state', {}, async () => {",
+       "  try { return jsonResult(await core.list()); }",
+       "  catch (err) { return jsonResult({ success: false, error: err.message }, true); }",
+       "});",
+       "",
+       "server.tool('pane_set_layout', 'Change the chart grid layout (e.g., single, 2x2, 2h, 3v)', {"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 21,
+     "tokens": 93,
+     "first": {
+      "name": "scripts/launch_tv_debug_linux.sh",
+      "start": 47,
+      "end": 67
+     },
+     "others": [
+      {
+       "name": "scripts/launch_tv_debug_mac.sh",
+       "start": 47,
+       "end": 67
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "pkill -f \"[Tt]rading[Vv]iew\" 2>/dev/null",
+       "sleep 1",
+       "",
+       "echo \"Found TradingView at: $APP\"",
+       "echo \"Launching with --remote-debugging-port=$PORT ...\"",
+       "\"$APP\" --remote-debugging-port=$PORT &",
+       "TV_PID=$!",
+       "echo \"PID: $TV_PID\"",
+       "",
+       "# Wait for CDP to be ready"
+      ],
+      "total": 21
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 9,
+     "tokens": 90,
+     "first": {
+      "name": "scripts/pine_pull.js",
+      "start": 4,
+      "end": 12
+     },
+     "others": [
+      {
+       "name": "scripts/pine_push.js",
+       "start": 7,
+       "end": 16
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 7,
+     "tokens": 73,
+     "first": {
+      "name": "src/core/pine.js",
+      "start": 312,
+      "end": 318
+     },
+     "others": [
+      {
+       "name": "src/core/pine.js",
+       "start": 466,
+       "end": 472
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 6,
+     "tokens": 63,
+     "first": {
+      "name": "scripts/pine_push.js",
+      "start": 33,
+      "end": 38
+     },
+     "others": [
+      {
+       "name": "src/core/pine.js",
+       "start": 314,
+       "end": 318
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 9,
+     "tokens": 63,
+     "first": {
+      "name": "src/core/batch.js",
+      "start": 5,
+      "end": 13
+     },
+     "others": [
+      {
+       "name": "src/core/capture.js",
+       "start": 5,
+       "end": 13
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:10:38.111Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -6,12 +6,12 @@
  "summary": {
   "repos": 7,
   "sources": 8193,
-  "lines": 1705614,
-  "tokens": 14047049,
+  "lines": 1705306,
+  "tokens": 14045894,
   "clones": 5709,
   "duplicatedLines": 118439,
   "duplicatedTokens": 1430733,
-  "percentage": 6.94,
+  "percentage": 6.95,
   "percentageTokens": 10.19,
   "avgPercentage": 4.98,
   "medianPercentage": 5.56,
@@ -23,13 +23,31 @@
   "cleanest": {
    "name": "michael-denyer/pstack-claude",
    "clones": 33,
-   "percentage": 1.13
+   "percentage": 1.14
   },
   "mostClones": {
    "name": "garrytan/gstack",
    "clones": 2804,
    "percentage": 8.1
   },
+  "codeRepos": 7,
+  "codeSources": 2677,
+  "codeLines": 612271,
+  "codeClones": 1241,
+  "codeDuplicatedLines": 20996,
+  "codePercentage": 3.43,
+  "codeMedianPercentage": 2.71,
+  "codeMostDuplicated": {
+   "name": "earthtojake/text-to-cad",
+   "clones": 838,
+   "percentage": 4.78
+  },
+  "codeCleanest": {
+   "name": "michael-denyer/pstack-claude",
+   "clones": 3,
+   "percentage": 0.36
+  },
+  "generatedFiles": 10,
   "avgHealth": 64.57,
   "healthiest": {
    "name": "addyosmani/agent-skills",
@@ -46,7 +64,7 @@
     "language": "TypeScript",
     "repos": 2,
     "clones": 3543,
-    "lines": 939187,
+    "lines": 939099,
     "duplicatedLines": 78591,
     "percentage": 8.37
    },
@@ -54,15 +72,15 @@
     "language": "Python",
     "repos": 2,
     "clones": 1535,
-    "lines": 585403,
+    "lines": 585315,
     "duplicatedLines": 31931,
-    "percentage": 5.45
+    "percentage": 5.46
    },
    {
     "language": "JavaScript",
     "repos": 2,
     "clones": 84,
-    "lines": 55840,
+    "lines": 55752,
     "duplicatedLines": 948,
     "percentage": 1.7
    },
@@ -70,7 +88,7 @@
     "language": "Go",
     "repos": 1,
     "clones": 547,
-    "lines": 125184,
+    "lines": 125140,
     "duplicatedLines": 6969,
     "percentage": 5.57
    }
@@ -86,11 +104,11 @@
    "starsToday": 345,
    "defaultBranch": "main",
    "headSha": "4bfc1aae9bb02465245f10e652f4b27db92409ad",
-   "durationMs": 1475,
+   "durationMs": 584,
    "total": {
     "sources": 1207,
-    "lines": 227782,
-    "tokens": 1588158,
+    "lines": 227738,
+    "tokens": 1587993,
     "clones": 739,
     "duplicatedLines": 20960,
     "duplicatedTokens": 93687,
@@ -155,17 +173,17 @@
      "percentage": 0.28
     },
     {
-     "format": "bash",
-     "sources": 21,
-     "lines": 819,
+     "format": "jsx",
+     "sources": 3,
+     "lines": 811,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
     },
     {
-     "format": "jsx",
-     "sources": 3,
-     "lines": 811,
+     "format": "bash",
+     "sources": 21,
+     "lines": 769,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -184,151 +202,401 @@
      "format": "json",
      "lines": 436,
      "tokens": 1535,
-     "firstFile": {
+     "copies": 11,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
       "start": 1,
       "end": 436
      },
-     "secondFile": {
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/sticky-chrome-target.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/text-input-variations.json",
+       "start": 1,
+       "end": 436
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{",
+       "  \"nodes\": [",
+       "    {",
+       "      \"index\": 0,",
+       "      \"type\": \"android.widget.TextView\",",
+       "      \"label\": \"6:53\",",
+       "      \"value\": \"6:53\",",
+       "      \"contentDescription\": \"6:53 PM\",",
+       "      \"identifier\": \"com.android.systemui:id/clock\",",
+       "      \"bundleId\": \"com.android.systemui\","
+      ],
+      "total": 436
+     }
+    },
+    {
+     "format": "json",
+     "lines": 436,
+     "tokens": 1535,
+     "copies": 5,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+      "start": 1,
+      "end": 436
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/error-recovery.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/sequential-onboarding.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/stripe-paymentsheet.json",
+       "start": 1,
+       "end": 436
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{",
+       "  \"nodes\": [",
+       "    {",
+       "      \"index\": 0,",
+       "      \"type\": \"android.widget.TextView\",",
+       "      \"label\": \"6:54\",",
+       "      \"value\": \"6:54\",",
+       "      \"contentDescription\": \"6:54 PM\",",
+       "      \"identifier\": \"com.android.systemui:id/clock\",",
+       "      \"bundleId\": \"com.android.systemui\","
+      ],
+      "total": 436
+     }
+    },
+    {
+     "format": "json",
+     "lines": 291,
+     "tokens": 1023,
+     "copies": 5,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+      "start": 80,
+      "end": 370
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/home.json",
+       "start": 80,
+       "end": 370
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+       "start": 80,
+       "end": 370
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+       "start": 80,
+       "end": 370
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/modal-flow.json",
+       "start": 80,
+       "end": 370
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "},",
+       "\"enabled\": true,",
+       "\"selected\": false,",
+       "\"editable\": false,",
+       "\"password\": false,",
+       "\"hintShowing\": false,",
+       "\"visibleToUser\": true,",
+       "\"depth\": 0,",
+       "\"ref\": \"e4\",",
+       "\"kind\": \"image\""
+      ],
+      "total": 291
+     }
+    },
+    {
+     "format": "json",
+     "lines": 357,
+     "tokens": 1257,
+     "copies": 4,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
+      "start": 80,
+      "end": 436
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/permission-prompt.json",
+       "start": 80,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/photo-picker.json",
+       "start": 80,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/product-catalog.json",
+       "start": 80,
+       "end": 436
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 57,
+     "tokens": 197,
+     "copies": 17,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
-      "start": 1,
-      "end": 436
-     }
+      "start": 444,
+      "end": 500
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+       "start": 444,
+       "end": 500
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
+     "lines": 94,
+     "tokens": 327,
+     "copies": 6,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
       "start": 1,
-      "end": 436
+      "end": 94
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/home.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/modal-flow.json",
+       "start": 1,
+       "end": 94
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
+     "lines": 343,
+     "tokens": 1207,
+     "copies": 2,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
+      "start": 94,
       "end": 436
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+       "start": 94,
+       "end": 436
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
+     "lines": 17,
+     "tokens": 54,
+     "copies": 22,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
+      "start": 442,
+      "end": 458
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+       "start": 444,
+       "end": 460
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+       "start": 442,
+       "end": 458
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 93,
+     "tokens": 1060,
+     "copies": 2,
+     "first": {
+      "name": "packages/e2e/CHANGELOG.md:markdown",
+      "start": 1878,
+      "end": 1970
+     },
+     "others": [
+      {
+       "name": "packages/web/CHANGELOG.md:markdown",
+       "start": 577,
+       "end": 669
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
+     "lines": 94,
+     "tokens": 327,
+     "copies": 4,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
       "start": 1,
-      "end": 436
+      "end": 94
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/sticky-chrome-target.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/text-input-variations.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/vision-only.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/webview-accessibility.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/permission-prompt.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/photo-picker.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/product-catalog.json",
+       "start": 1,
+       "end": 94
+      }
+     ]
     }
    ],
    "health": {
@@ -535,7 +803,361 @@
       "lines": 57
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 216,
+    "lines": 35123,
+    "tokens": 187056,
+    "clones": 79,
+    "duplicatedLines": 1516,
+    "duplicatedTokens": 5601,
+    "percentage": 4.32,
+    "percentageTokens": 2.99,
+    "formats": [
+     {
+      "format": "tsx",
+      "sources": 71,
+      "lines": 12688,
+      "clones": 72,
+      "duplicatedLines": 1406,
+      "percentage": 11.08
+     },
+     {
+      "format": "typescript",
+      "sources": 124,
+      "lines": 19607,
+      "clones": 6,
+      "duplicatedLines": 100,
+      "percentage": 0.51
+     },
+     {
+      "format": "javascript",
+      "sources": 10,
+      "lines": 1900,
+      "clones": 1,
+      "duplicatedLines": 10,
+      "percentage": 0.53
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "swift",
+      "sources": 1,
+      "lines": 110,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 18,
+      "tokens": 58,
+      "copies": 7,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+       "start": 169,
+       "end": 186
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DeferredDialog.tsx",
+        "start": 69,
+        "end": 86
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/InfiniteScroll.tsx",
+        "start": 92,
+        "end": 109
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+        "start": 86,
+        "end": 103
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NativeDialogs.tsx",
+        "start": 60,
+        "end": 77
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+        "start": 89,
+        "end": 106
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/RichTextEditor.tsx",
+        "start": 122,
+        "end": 139
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      </button>",
+        "    </div>",
+        "  );",
+        "}",
+        "",
+        "const styles = {",
+        "  container: {",
+        "    display: \"flex\",",
+        "    flexDirection: \"column\",",
+        "    gap: 12,"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 55,
+      "tokens": 236,
+      "copies": 2,
+      "first": {
+       "name": "apps/mobile-benchmark/src/Examples/ApplePay.tsx",
+       "start": 50,
+       "end": 104
+      },
+      "others": [
+       {
+        "name": "apps/mobile-benchmark/src/Examples/ApplePayBillingAddress.tsx",
+        "start": 59,
+        "end": 113
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "</View>",
+        "{state === \"dismissed\" && (",
+        "  <Text testID=\"payment-canceled\" style={styles.warning}>",
+        "    Payment canceled — the order was not placed",
+        "  </Text>",
+        ")}",
+        "{state === \"error\" && errorMessage && (",
+        "  <Text testID=\"payment-error\" style={styles.warning}>",
+        "    {errorMessage}",
+        "  </Text>"
+       ],
+       "total": 55
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 18,
+      "tokens": 54,
+      "copies": 5,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/AsyncStates.tsx",
+       "start": 119,
+       "end": 136
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+        "start": 169,
+        "end": 186
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+        "start": 153,
+        "end": 171
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/FilterDeepLink.tsx",
+        "start": 65,
+        "end": 82
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/StaleDom.tsx",
+        "start": 83,
+        "end": 100
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      ) : null}",
+        "    </div>",
+        "  );",
+        "}",
+        "",
+        "const styles = {",
+        "  container: {",
+        "    display: \"flex\",",
+        "    flexDirection: \"column\",",
+        "    gap: 12,"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 23,
+      "tokens": 86,
+      "copies": 3,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/FileRoundTrip.tsx",
+       "start": 93,
+       "end": 115
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/HoverMenu.tsx",
+        "start": 140,
+        "end": 162
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/IframeForm.tsx",
+        "start": 106,
+        "end": 128
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 15,
+      "tokens": 54,
+      "copies": 4,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/AsyncStates.tsx",
+       "start": 178,
+       "end": 192
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+        "start": 261,
+        "end": 275
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+        "start": 204,
+        "end": 218
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/FileRoundTrip.tsx",
+        "start": 140,
+        "end": 154
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 35,
+      "tokens": 153,
+      "copies": 2,
+      "first": {
+       "name": "apps/mobile-benchmark/src/Examples/LoginForm.tsx",
+       "start": 2,
+       "end": 36
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+        "start": 3,
+        "end": 37
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 40,
+      "tokens": 141,
+      "copies": 2,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/DeferredDialog.tsx",
+       "start": 71,
+       "end": 110
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NativeDialogs.tsx",
+        "start": 62,
+        "end": 101
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 22,
+      "tokens": 70,
+      "copies": 3,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+       "start": 156,
+       "end": 177
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+        "start": 88,
+        "end": 109
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+        "start": 91,
+        "end": 112
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 30,
+      "tokens": 139,
+      "copies": 2,
+      "first": {
+       "name": "apps/mobile-benchmark/src/Examples/FlattenedLogin.tsx",
+       "start": 15,
+       "end": 44
+      },
+      "others": [
+       {
+        "name": "apps/mobile-benchmark/src/Examples/LoginForm.tsx",
+        "start": 7,
+        "end": 36
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 38,
+      "tokens": 137,
+      "copies": 2,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+       "start": 95,
+       "end": 132
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+        "start": 98,
+        "end": 135
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:15.638Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "earthtojake/text-to-cad",
@@ -546,11 +1168,11 @@
    "starsToday": 83,
    "defaultBranch": "main",
    "headSha": "d749a1980d806c7fed344b115651ccf1d8cfb28d",
-   "durationMs": 3835,
+   "durationMs": 2656,
    "total": {
     "sources": 2735,
-    "lines": 561270,
-    "tokens": 4985665,
+    "lines": 561226,
+    "tokens": 4985500,
     "clones": 1472,
     "duplicatedLines": 31227,
     "duplicatedTokens": 670510,
@@ -633,162 +1255,301 @@
     {
      "format": "bash",
      "sources": 53,
-     "lines": 3929,
+     "lines": 3879,
      "clones": 2,
      "duplicatedLines": 20,
-     "percentage": 0.51
+     "percentage": 0.52
     }
    ],
    "topClones": [
     {
      "format": "python",
-     "lines": 33,
-     "tokens": 50505,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
-      "start": 1,
-      "end": 33
+     "lines": 7,
+     "tokens": 50299,
+     "copies": 5,
+     "first": {
+      "name": "models/tendon_hand/src/hand_export_repair_context.py",
+      "start": 8,
+      "end": 14
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
-      "start": 1,
-      "end": 33
+     "others": [
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+       "start": 27,
+       "end": 33
+      },
+      {
+       "name": "models/tendon_hand/src/hand_native_review.py",
+       "start": 8,
+       "end": 14
+      },
+      {
+       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+       "start": 7,
+       "end": 13
+      },
+      {
+       "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
+       "start": 7,
+       "end": 13
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/hand_export_repair_context.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/hand_mechanical_candidate.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+      ],
+      "total": 7
      }
     },
     {
      "format": "python",
      "lines": 33,
      "tokens": 50505,
-     "firstFile": {
+     "copies": 3,
+     "first": {
       "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
       "start": 1,
       "end": 33
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
-      "start": 1,
-      "end": 33
+     "others": [
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
+       "start": 1,
+       "end": 33
+      },
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
+       "start": 1,
+       "end": 33
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"\"\"Complete mechanical candidate assembled from the actual exported components.",
+       "",
+       "The pose/explode gauntlet is still separate. Native reconstruction here keeps",
+       "this assembled export aligned with the components used by the physical audits.",
+       "\"\"\"",
+       "import hashlib,json",
+       "from pathlib import Path",
+       "from cadgen import step,read_step",
+       "from lib.native_integration import integrated_native_bodies,overlay,ROOT",
+       "from lib.assembly import compound"
+      ],
+      "total": 33
      }
     },
     {
      "format": "python",
      "lines": 10,
      "tokens": 50315,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
       "start": 4,
       "end": 13
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
-      "start": 4,
-      "end": 13
+     "others": [
+      {
+       "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
+       "start": 4,
+       "end": 13
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "from lib.native_integration import frozen_bodies",
+       "from lib.palette import ASSEMBLY_MATERIALS",
+       "from phalanx_beauty_review import replacements",
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/phalanx_beauty_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "from lib.native_integration import frozen_bodies",
+       "from lib.palette import ASSEMBLY_MATERIALS",
+       "from phalanx_beauty_review import replacements",
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/phalanx_sculpt_representative_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+      ],
+      "total": 10
      }
     },
     {
      "format": "python",
      "lines": 8,
      "tokens": 50303,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
       "start": 6,
       "end": 13
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/pulley_hub_context.py",
-      "start": 7,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
-      "start": 27,
-      "end": 33
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_native_review.py",
-      "start": 8,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/phalanx_beauty_context.py",
-      "start": 7,
-      "end": 13
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
-      "start": 7,
-      "end": 13
-     }
+     "others": [
+      {
+       "name": "models/tendon_hand/src/pulley_hub_context.py",
+       "start": 7,
+       "end": 14
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 6,
      "tokens": 38144,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/tendon_hand/src/hand_export_repair_context.py",
       "start": 9,
       "end": 14
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/routing_layout_review.py",
-      "start": 14,
-      "end": 19
-     }
+     "others": [
+      {
+       "name": "models/tendon_hand/src/routing_layout_review.py",
+       "start": 14,
+       "end": 19
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 955,
      "tokens": 7131,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/radial/src/lib/castings.py",
       "start": 3,
       "end": 957
      },
-     "secondFile": {
-      "name": "models/w16/src/lib/castings.py",
+     "others": [
+      {
+       "name": "models/w16/src/lib/castings.py",
+       "start": 3,
+       "end": 957
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 214,
+     "tokens": 4326,
+     "copies": 2,
+     "first": {
+      "name": "models/radial/src/lib/anim_js.py",
+      "start": 16,
+      "end": 229
+     },
+     "others": [
+      {
+       "name": "models/radial/src/lib/animgen.py",
+       "start": 245,
+       "end": 458
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 318,
+     "tokens": 1755,
+     "copies": 3,
+     "first": {
+      "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+      "start": 13,
+      "end": 330
+     },
+     "others": [
+      {
+       "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+       "start": 330,
+       "end": 647
+      },
+      {
+       "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+       "start": 662,
+       "end": 979
+      }
+     ]
+    },
+    {
+     "format": "txt",
+     "lines": 86,
+     "tokens": 875,
+     "copies": 5,
+     "first": {
+      "name": "packages/ui/licenses/excalidraw/Assistant-OFL.txt",
       "start": 3,
-      "end": 957
-     }
+      "end": 88
+     },
+     "others": [
+      {
+       "name": "packages/ui/licenses/excalidraw/Cascadia-OFL.txt",
+       "start": 9,
+       "end": 94
+      },
+      {
+       "name": "packages/ui/licenses/excalidraw/Lilita-OFL.txt",
+       "start": 3,
+       "end": 88
+      },
+      {
+       "name": "packages/ui/licenses/excalidraw/Nunito-OFL.txt",
+       "start": 3,
+       "end": 88
+      },
+      {
+       "name": "packages/ui/licenses/excalidraw/Xiaolai-OFL.txt",
+       "start": 3,
+       "end": 88
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 391,
+     "tokens": 2855,
+     "copies": 2,
+     "first": {
+      "name": "models/radial/src/lib/fasteners.py",
+      "start": 503,
+      "end": 893
+     },
+     "others": [
+      {
+       "name": "models/w16/src/lib/fasteners.py",
+       "start": 497,
+       "end": 887
+      }
+     ]
     }
    ],
    "health": {
@@ -1009,7 +1770,368 @@
       "lines": 601
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1628,
+    "lines": 321367,
+    "tokens": 3148161,
+    "clones": 838,
+    "duplicatedLines": 15366,
+    "duplicatedTokens": 589758,
+    "percentage": 4.78,
+    "percentageTokens": 18.73,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 1085,
+      "lines": 220091,
+      "clones": 695,
+      "duplicatedLines": 13263,
+      "percentage": 6.03
+     },
+     {
+      "format": "javascript",
+      "sources": 385,
+      "lines": 81179,
+      "clones": 125,
+      "duplicatedLines": 1912,
+      "percentage": 2.36
+     },
+     {
+      "format": "jsx",
+      "sources": 67,
+      "lines": 11800,
+      "clones": 10,
+      "duplicatedLines": 113,
+      "percentage": 0.96
+     },
+     {
+      "format": "typescript",
+      "sources": 46,
+      "lines": 2849,
+      "clones": 6,
+      "duplicatedLines": 51,
+      "percentage": 1.79
+     },
+     {
+      "format": "bash",
+      "sources": 21,
+      "lines": 2454,
+      "clones": 1,
+      "duplicatedLines": 14,
+      "percentage": 0.57
+     },
+     {
+      "format": "tsx",
+      "sources": 22,
+      "lines": 2067,
+      "clones": 1,
+      "duplicatedLines": 13,
+      "percentage": 0.63
+     },
+     {
+      "format": "c",
+      "sources": 1,
+      "lines": 753,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 7,
+      "tokens": 50299,
+      "copies": 5,
+      "first": {
+       "name": "models/tendon_hand/src/hand_export_repair_context.py",
+       "start": 8,
+       "end": 14
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+        "start": 27,
+        "end": 33
+       },
+       {
+        "name": "models/tendon_hand/src/hand_native_review.py",
+        "start": 8,
+        "end": 14
+       },
+       {
+        "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+        "start": 7,
+        "end": 13
+       },
+       {
+        "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
+        "start": 7,
+        "end": 13
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/hand_export_repair_context.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+       ],
+       "total": 7
+      },
+      "excerptSecond": {
+       "lines": [
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/hand_mechanical_candidate.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+       ],
+       "total": 7
+      }
+     },
+     {
+      "format": "python",
+      "lines": 33,
+      "tokens": 50505,
+      "copies": 3,
+      "first": {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+       "start": 1,
+       "end": 33
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
+        "start": 1,
+        "end": 33
+       },
+       {
+        "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
+        "start": 1,
+        "end": 33
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "\"\"\"Complete mechanical candidate assembled from the actual exported components.",
+        "",
+        "The pose/explode gauntlet is still separate. Native reconstruction here keeps",
+        "this assembled export aligned with the components used by the physical audits.",
+        "\"\"\"",
+        "import hashlib,json",
+        "from pathlib import Path",
+        "from cadgen import step,read_step",
+        "from lib.native_integration import integrated_native_bodies,overlay,ROOT",
+        "from lib.assembly import compound"
+       ],
+       "total": 33
+      }
+     },
+     {
+      "format": "python",
+      "lines": 10,
+      "tokens": 50315,
+      "copies": 2,
+      "first": {
+       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+       "start": 4,
+       "end": 13
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
+        "start": 4,
+        "end": 13
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "from lib.native_integration import frozen_bodies",
+        "from lib.palette import ASSEMBLY_MATERIALS",
+        "from phalanx_beauty_review import replacements",
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/phalanx_beauty_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "from lib.native_integration import frozen_bodies",
+        "from lib.palette import ASSEMBLY_MATERIALS",
+        "from phalanx_beauty_review import replacements",
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/phalanx_sculpt_representative_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 50303,
+      "copies": 2,
+      "first": {
+       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+       "start": 6,
+       "end": 13
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/pulley_hub_context.py",
+        "start": 7,
+        "end": 14
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 6,
+      "tokens": 38144,
+      "copies": 2,
+      "first": {
+       "name": "models/tendon_hand/src/hand_export_repair_context.py",
+       "start": 9,
+       "end": 14
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/routing_layout_review.py",
+        "start": 14,
+        "end": 19
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 955,
+      "tokens": 7131,
+      "copies": 2,
+      "first": {
+       "name": "models/radial/src/lib/castings.py",
+       "start": 3,
+       "end": 957
+      },
+      "others": [
+       {
+        "name": "models/w16/src/lib/castings.py",
+        "start": 3,
+        "end": 957
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 391,
+      "tokens": 2855,
+      "copies": 2,
+      "first": {
+       "name": "models/radial/src/lib/fasteners.py",
+       "start": 503,
+       "end": 893
+      },
+      "others": [
+       {
+        "name": "models/w16/src/lib/fasteners.py",
+        "start": 497,
+        "end": 887
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 180,
+      "tokens": 2836,
+      "copies": 2,
+      "first": {
+       "name": "models/w16/src/lib/animgen.py",
+       "start": 341,
+       "end": 520
+      },
+      "others": [
+       {
+        "name": "models/w16/src/w16.py",
+        "start": 215,
+        "end": 394
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 330,
+      "tokens": 2150,
+      "copies": 2,
+      "first": {
+       "name": "models/radial/src/lib/fasteners.py",
+       "start": 145,
+       "end": 474
+      },
+      "others": [
+       {
+        "name": "models/w16/src/lib/fasteners.py",
+        "start": 139,
+        "end": 468
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 86,
+      "tokens": 1032,
+      "copies": 3,
+      "first": {
+       "name": "models/tendon_hand/src/lib/phalanx.py",
+       "start": 1,
+       "end": 86
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/validation/phalanx_before_nail.py",
+        "start": 1,
+        "end": 86
+       },
+       {
+        "name": "models/tendon_hand/validation/phalanx_pre_beauty_baseline.py",
+        "start": 1,
+        "end": 86
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 0,
+     "sample": [
+      "models/radial/src/lib/anim_js.py"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:21.583Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "Panniantong/Agent-Reach",
@@ -1020,11 +2142,11 @@
    "starsToday": 980,
    "defaultBranch": "main",
    "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
-   "durationMs": 715,
+   "durationMs": 50,
    "total": {
     "sources": 140,
-    "lines": 24133,
-    "tokens": 136693,
+    "lines": 24089,
+    "tokens": 136528,
     "clones": 63,
     "duplicatedLines": 704,
     "duplicatedTokens": 4156,
@@ -1051,10 +2173,10 @@
     {
      "format": "bash",
      "sources": 27,
-     "lines": 1584,
+     "lines": 1534,
      "clones": 1,
      "duplicatedLines": 18,
-     "percentage": 1.14
+     "percentage": 1.17
     },
     {
      "format": "text",
@@ -1075,7 +2197,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1107,154 +2229,253 @@
    ],
    "topClones": [
     {
+     "format": "python",
+     "lines": 13,
+     "tokens": 66,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_cookie_security.py",
+      "start": 33,
+      "end": 45
+     },
+     "others": [
+      {
+       "name": "tests/test_cookie_security.py",
+       "start": 59,
+       "end": 71
+      },
+      {
+       "name": "tests/test_cookie_security.py",
+       "start": 85,
+       "end": 97
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "        {\"name\": \"bili_jct\", \"value\": \"csrf\", \"domain\": \".bilibili.com\"},",
+       "    ]",
+       "",
+       "fake_rookiepy = SimpleNamespace(",
+       "    chrome=chrome,",
+       "    firefox=lambda domains: [],",
+       "    edge=lambda domains: [],",
+       "    brave=lambda domains: [],",
+       "    opera=lambda domains: [],",
+       ")"
+      ],
+      "total": 13
+     }
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 62,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_transcribe.py",
+      "start": 635,
+      "end": 643
+     },
+     "others": [
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 655,
+       "end": 663
+      },
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 761,
+       "end": 769
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "def test_passes_public_url_after_end_of_options_marker(self, monkeypatch, tmp_path):",
+       "    monkeypatch.setattr(tr, \"_require\", lambda binary: None)",
+       "    captured = {}",
+       "",
+       "    def fake_run(cmd, timeout=600):",
+       "        captured[\"cmd\"] = cmd",
+       "        (tmp_path / \"source.m4a\").write_bytes(b\"audio\")",
+       "",
+       "    monkeypatch.setattr(tr, \"_run\", fake_run)"
+      ],
+      "total": 9
+     }
+    },
+    {
      "format": "bash",
      "lines": 18,
      "tokens": 122,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
       "start": 212,
       "end": 229
      },
-     "secondFile": {
-      "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-      "start": 243,
-      "end": 259
+     "others": [
+      {
+       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+       "start": 243,
+       "end": 259
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "RESPONSE=$(curl --silent --show-error \\",
+       "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+       "    --max-time \"$GROQ_TIMEOUT\" \\",
+       "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+       "    -w \"\\n%{http_code}\" \\",
+       "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+       "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+       "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+       "    -F model=\"whisper-large-v3\" \\",
+       "    -F language=\"zh\" \\"
+      ],
+      "total": 18
      }
     },
     {
      "format": "python",
      "lines": 22,
      "tokens": 122,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/test_transcribe.py",
       "start": 180,
       "end": 201
      },
-     "secondFile": {
-      "name": "tests/test_transcribe.py",
-      "start": 212,
-      "end": 233
-     }
+     "others": [
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 212,
+       "end": 233
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 60,
+     "copies": 3,
+     "first": {
+      "name": "agent_reach/cli.py",
+      "start": 976,
+      "end": 985
+     },
+     "others": [
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1148,
+       "end": 1157
+      },
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1177,
+       "end": 1186
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 57,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_youtube_channel.py",
+      "start": 124,
+      "end": 131
+     },
+     "others": [
+      {
+       "name": "tests/test_youtube_channel.py",
+       "start": 138,
+       "end": 145
+      },
+      {
+       "name": "tests/test_youtube_channel.py",
+       "start": 154,
+       "end": 161
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 54,
+     "copies": 3,
+     "first": {
+      "name": "agent_reach/channels/reddit.py",
+      "start": 53,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "agent_reach/channels/twitter.py",
+       "start": 65,
+       "end": 73
+      },
+      {
+       "name": "agent_reach/channels/xiaohongshu.py",
+       "start": 190,
+       "end": 198
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 17,
      "tokens": 107,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/skill/references/career.md:markdown",
       "start": 122,
       "end": 138
      },
-     "secondFile": {
-      "name": "docs/install.md:markdown",
-      "start": 328,
-      "end": 343
-     }
+     "others": [
+      {
+       "name": "docs/install.md:markdown",
+       "start": 328,
+       "end": 343
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 18,
      "tokens": 105,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/test_private_file_writes.py",
       "start": 282,
       "end": 299
      },
-     "secondFile": {
-      "name": "tests/test_private_file_writes.py",
-      "start": 316,
-      "end": 333
-     }
+     "others": [
+      {
+       "name": "tests/test_private_file_writes.py",
+       "start": 316,
+       "end": 333
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 12,
      "tokens": 94,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/channels/v2ex.py",
       "start": 183,
       "end": 194
      },
-     "secondFile": {
-      "name": "agent_reach/channels/v2ex.py",
-      "start": 217,
-      "end": 228
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 11,
-     "tokens": 85,
-     "firstFile": {
-      "name": "docs/README_ja.md:markdown",
-      "start": 4,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "docs/README_ko.md:markdown",
-      "start": 4,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 23,
-     "tokens": 85,
-     "firstFile": {
-      "name": "tests/test_channels.py",
-      "start": 1029,
-      "end": 1051
-     },
-     "secondFile": {
-      "name": "tests/test_channels.py",
-      "start": 1064,
-      "end": 1087
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 11,
-     "tokens": 82,
-     "firstFile": {
-      "name": "docs/README_en.md:markdown",
-      "start": 13,
-      "end": 23
-     },
-     "secondFile": {
-      "name": "docs/README_ja.md:markdown",
-      "start": 4,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 11,
-     "tokens": 77,
-     "firstFile": {
-      "name": "tests/test_boss_channel.py",
-      "start": 107,
-      "end": 117
-     },
-     "secondFile": {
-      "name": "tests/test_boss_channel.py",
-      "start": 129,
-      "end": 139
-     }
-    },
-    {
-     "format": "python",
-     "lines": 14,
-     "tokens": 76,
-     "firstFile": {
-      "name": "tests/test_channels.py",
-      "start": 1223,
-      "end": 1236
-     },
-     "secondFile": {
-      "name": "tests/test_channels.py",
-      "start": 1242,
-      "end": 1255
-     }
+     "others": [
+      {
+       "name": "agent_reach/channels/v2ex.py",
+       "start": 217,
+       "end": 228
+      }
+     ]
     }
    ],
    "health": {
@@ -1423,7 +2644,225 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 45,
+    "lines": 8579,
+    "tokens": 38829,
+    "clones": 7,
+    "duplicatedLines": 76,
+    "duplicatedTokens": 494,
+    "percentage": 0.89,
+    "percentageTokens": 1.27,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 32,
+      "lines": 7225,
+      "clones": 6,
+      "duplicatedLines": 58,
+      "percentage": 0.8
+     },
+     {
+      "format": "bash",
+      "sources": 12,
+      "lines": 1180,
+      "clones": 1,
+      "duplicatedLines": 18,
+      "percentage": 1.53
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "bash",
+      "lines": 18,
+      "tokens": 122,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+       "start": 212,
+       "end": 229
+      },
+      "others": [
+       {
+        "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+        "start": 243,
+        "end": 259
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "RESPONSE=$(curl --silent --show-error \\",
+        "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+        "    --max-time \"$GROQ_TIMEOUT\" \\",
+        "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+        "    -w \"\\n%{http_code}\" \\",
+        "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+        "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+        "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+        "    -F model=\"whisper-large-v3\" \\",
+        "    -F language=\"zh\" \\"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "python",
+      "lines": 10,
+      "tokens": 60,
+      "copies": 3,
+      "first": {
+       "name": "agent_reach/cli.py",
+       "start": 976,
+       "end": 985
+      },
+      "others": [
+       {
+        "name": "agent_reach/cli.py",
+        "start": 1148,
+        "end": 1157
+       },
+       {
+        "name": "agent_reach/cli.py",
+        "start": 1177,
+        "end": 1186
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    (\"uv\", [\"tool\", \"install\", \"twitter-cli\"]),",
+        "]:",
+        "    tool_cmd = shutil.which(tool)",
+        "    if tool_cmd:",
+        "        try:",
+        "            result = subprocess.run(",
+        "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+        "                errors=\"replace\", timeout=120,",
+        "            )",
+        "            if result.returncode == 0 and shutil.which(\"twitter\"):"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "    (\"uv\", [\"tool\", \"install\", \"--from\", _RDT_GIT_SOURCE, \"rdt-cli\"]),",
+        "]:",
+        "    tool_cmd = shutil.which(tool)",
+        "    if tool_cmd:",
+        "        try:",
+        "            result = subprocess.run(",
+        "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+        "                errors=\"replace\", timeout=120,",
+        "            )",
+        "            if result.returncode == 0 and shutil.which(\"rdt\"):"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "python",
+      "lines": 9,
+      "tokens": 54,
+      "copies": 3,
+      "first": {
+       "name": "agent_reach/channels/reddit.py",
+       "start": 53,
+       "end": 61
+      },
+      "others": [
+       {
+        "name": "agent_reach/channels/twitter.py",
+        "start": 65,
+        "end": 73
+       },
+       {
+        "name": "agent_reach/channels/xiaohongshu.py",
+        "start": 190,
+        "end": 198
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    findings.append((backend, *result))",
+        "",
+        "for wanted in (\"ok\", \"warn\"):",
+        "    for backend, status, message in findings:",
+        "        if status == wanted:",
+        "            self.active_backend = backend if status == \"ok\" else None",
+        "            return status, message",
+        "",
+        "if findings:"
+       ],
+       "total": 9
+      },
+      "excerptSecond": {
+       "lines": [
+        "    findings.append((backend, *result))",
+        "",
+        "for wanted in (\"ok\", \"warn\"):",
+        "    for backend, status, message in findings:",
+        "        if status == wanted:",
+        "            self.active_backend = backend if status == \"ok\" else None",
+        "            return status, message",
+        "",
+        "if findings:  # 只剩 broken/timeout 候选"
+       ],
+       "total": 9
+      }
+     },
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 94,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/channels/v2ex.py",
+       "start": 183,
+       "end": 194
+      },
+      "others": [
+       {
+        "name": "agent_reach/channels/v2ex.py",
+        "start": 217,
+        "end": 228
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 50,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/config.py",
+       "start": 55,
+       "end": 62
+      },
+      "others": [
+       {
+        "name": "agent_reach/utils/paths.py",
+        "start": 92,
+        "end": 99
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:22.852Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "caddyserver/caddy",
@@ -1434,11 +2873,11 @@
    "starsToday": 24,
    "defaultBranch": "master",
    "headSha": "8507b63cf03a7a0d90b2084f3aafbcc1d8e60a7b",
-   "durationMs": 1026,
+   "durationMs": 267,
    "total": {
     "sources": 397,
-    "lines": 125184,
-    "tokens": 663193,
+    "lines": 125140,
+    "tokens": 663028,
     "clones": 547,
     "duplicatedLines": 6969,
     "duplicatedTokens": 43697,
@@ -1497,7 +2936,7 @@
     {
      "format": "bash",
      "sources": 10,
-     "lines": 701,
+     "lines": 651,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1505,7 +2944,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1516,151 +2955,376 @@
      "format": "go",
      "lines": 127,
      "tokens": 479,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "listeners_test.go",
       "start": 236,
       "end": 362
      },
-     "secondFile": {
-      "name": "listeners_test.go",
-      "start": 362,
-      "end": 488
+     "others": [
+      {
+       "name": "listeners_test.go",
+       "start": 362,
+       "end": 488
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "func TestParseNetworkAddress(t *testing.T) {",
+       "    for i, tc := range []struct {",
+       "        input          string",
+       "        defaultNetwork string",
+       "        defaultPort    uint",
+       "        expectAddr     NetworkAddress",
+       "        expectErr      bool",
+       "    }{",
+       "        {",
+       "            input:      \"\","
+      ],
+      "total": 127
      }
     },
     {
      "format": "go",
      "lines": 67,
      "tokens": 469,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "modules/caddyhttp/metrics_test.go",
       "start": 36,
       "end": 102
      },
-     "secondFile": {
-      "name": "modules/caddyhttp/metrics_test.go",
-      "start": 210,
-      "end": 276
+     "others": [
+      {
+       "name": "modules/caddyhttp/metrics_test.go",
+       "start": 210,
+       "end": 276
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    httpMetrics: &httpMetrics{},",
+       "}",
+       "handlerErr := errors.New(\"oh noes\")",
+       "response := []byte(\"hello world!\")",
+       "h := HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {",
+       "    if actual := testutil.ToFloat64(metrics.httpMetrics.requestInFlight); actual != 1.0 {",
+       "        t.Errorf(\"Not same: expected %#v, but got %#v\", 1.0, actual)",
+       "    }",
+       "    if handlerErr == nil {",
+       "        w.Write(response)"
+      ],
+      "total": 67
      }
+    },
+    {
+     "format": "go",
+     "lines": 14,
+     "tokens": 115,
+     "copies": 5,
+     "first": {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 598,
+      "end": 611
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 617,
+       "end": 630
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 638,
+       "end": 651
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 659,
+       "end": 672
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 1153,
+       "end": 1166
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "func TestServer_serveHTTP_AllowlistKeepsExactMatch(t *testing.T) {",
+       "    got := &http.Header{}",
+       "    s := &Server{",
+       "        logger:                    zap.NewNop(),",
+       "        ExpectedUnderscoreHeaders: []string{\"user_id\"},",
+       "        primaryHandlerChain: HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {",
+       "            *got = r.Header.Clone()",
+       "            return nil",
+       "        }),",
+       "    }"
+      ],
+      "total": 14
+     }
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 90,
+     "copies": 6,
+     "first": {
+      "name": "modules/caddyhttp/encode/sse_test.go",
+      "start": 89,
+      "end": 97
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 126,
+       "end": 134
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 150,
+       "end": 158
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 179,
+       "end": 187
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 203,
+       "end": 211
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 227,
+       "end": 235
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 14,
+     "tokens": 105,
+     "copies": 5,
+     "first": {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 747,
+      "end": 760
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 766,
+       "end": 779
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 785,
+       "end": 798
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 1054,
+       "end": 1067
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 1174,
+       "end": 1187
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 70,
+     "copies": 7,
+     "first": {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 160,
+      "end": 165
+     },
+     "others": [
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 172,
+       "end": 177
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 184,
+       "end": 189
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 190,
+       "end": 195
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 196,
+       "end": 201
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 217,
+       "end": 222
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 229,
+       "end": 234
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 6,
+     "tokens": 51,
+     "copies": 9,
+     "first": {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 90,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 101,
+       "end": 105
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 130,
+       "end": 135
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 149,
+       "end": 153
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 226,
+       "end": 230
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 245,
+       "end": 250
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 256,
+       "end": 258
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 269,
+       "end": 273
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 453,
+       "end": 455
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 54,
+     "copies": 8,
+     "first": {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 345,
+      "end": 354
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 370,
+       "end": 379
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 390,
+       "end": 399
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 451,
+       "end": 460
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 467,
+       "end": 476
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 483,
+       "end": 492
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 527,
+       "end": 536
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 543,
+       "end": 552
+      }
+     ]
     },
     {
      "format": "go",
      "lines": 12,
      "tokens": 357,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "caddyconfig/caddyfile/parse_test.go",
       "start": 783,
       "end": 794
      },
-     "secondFile": {
-      "name": "caddyconfig/caddyfile/parse_test.go",
-      "start": 886,
-      "end": 898
-     }
+     "others": [
+      {
+       "name": "caddyconfig/caddyfile/parse_test.go",
+       "start": 886,
+       "end": 898
+      }
+     ]
     },
     {
      "format": "go",
-     "lines": 17,
-     "tokens": 289,
-     "firstFile": {
-      "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-      "start": 91,
-      "end": 107
+     "lines": 14,
+     "tokens": 115,
+     "copies": 4,
+     "first": {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 851,
+      "end": 864
      },
-     "secondFile": {
-      "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-      "start": 234,
-      "end": 249
-     }
-    },
-    {
-     "format": "go",
-     "lines": 16,
-     "tokens": 286,
-     "firstFile": {
-      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-      "start": 259,
-      "end": 274
-     },
-     "secondFile": {
-      "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-      "start": 91,
-      "end": 107
-     }
-    },
-    {
-     "format": "go",
-     "lines": 17,
-     "tokens": 270,
-     "firstFile": {
-      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-      "start": 322,
-      "end": 338
-     },
-     "secondFile": {
-      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-      "start": 395,
-      "end": 411
-     }
-    },
-    {
-     "format": "go",
-     "lines": 50,
-     "tokens": 269,
-     "firstFile": {
-      "name": "modules/caddyhttp/celmatcher.go",
-      "start": 757,
-      "end": 806
-     },
-     "secondFile": {
-      "name": "modules/caddyhttp/fileserver/matcher.go",
-      "start": 665,
-      "end": 714
-     }
-    },
-    {
-     "format": "go",
-     "lines": 44,
-     "tokens": 269,
-     "firstFile": {
-      "name": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
-      "start": 345,
-      "end": 388
-     },
-     "secondFile": {
-      "name": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
-      "start": 488,
-      "end": 531
-     }
-    },
-    {
-     "format": "go",
-     "lines": 42,
-     "tokens": 248,
-     "firstFile": {
-      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
-      "start": 1555,
-      "end": 1596
-     },
-     "secondFile": {
-      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
-      "start": 1655,
-      "end": 1696
-     }
-    },
-    {
-     "format": "go",
-     "lines": 48,
-     "tokens": 241,
-     "firstFile": {
-      "name": "caddytest/integration/reverseproxy_test.go",
-      "start": 457,
-      "end": 504
-     },
-     "secondFile": {
-      "name": "caddytest/integration/reverseproxy_test.go",
-      "start": 515,
-      "end": 562
-     }
+     "others": [
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 873,
+       "end": 886
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 900,
+       "end": 913
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 923,
+       "end": 936
+      }
+     ]
     }
    ],
    "health": {
@@ -1782,7 +3446,344 @@
     "files": 1,
     "byCategory": [],
     "largest": []
-   }
+   },
+   "code": {
+    "sources": 222,
+    "lines": 73367,
+    "tokens": 332945,
+    "clones": 155,
+    "duplicatedLines": 1989,
+    "duplicatedTokens": 11606,
+    "percentage": 2.71,
+    "percentageTokens": 3.49,
+    "formats": [
+     {
+      "format": "go",
+      "sources": 212,
+      "lines": 72549,
+      "clones": 155,
+      "duplicatedLines": 1989,
+      "percentage": 2.74
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "go",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 8,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 345,
+       "end": 354
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 370,
+        "end": 379
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 390,
+        "end": 399
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 451,
+        "end": 460
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 467,
+        "end": 476
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 483,
+        "end": 492
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 527,
+        "end": 536
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 543,
+        "end": 552
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "case \"health_uri\":",
+        "    if !d.NextArg() {",
+        "        return d.ArgErr()",
+        "    }",
+        "    if h.HealthChecks == nil {",
+        "        h.HealthChecks = new(HealthChecks)",
+        "    }",
+        "    if h.HealthChecks.Active == nil {",
+        "        h.HealthChecks.Active = new(ActiveHealthChecks)",
+        "    }"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "go",
+      "lines": 50,
+      "tokens": 269,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/celmatcher.go",
+       "start": 757,
+       "end": 806
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/fileserver/matcher.go",
+        "start": 665,
+        "end": 714
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "        if call.FunctionName() == CELPlaceholderFuncName {",
+        "            return true",
+        "        }",
+        "    case ast.UnspecifiedExprKind, ast.ComprehensionKind, ast.IdentKind, ast.ListKind, ast.LiteralKind, ast.MapKind, ast.SelectKind, ast.StructKind:",
+        "        // appeasing the linter :)",
+        "    }",
+        "    return false",
+        "}",
+        "",
+        "// isCELConcatCall tests whether the expression is a concat function (+) with string, placeholder, or"
+       ],
+       "total": 50
+      }
+     },
+     {
+      "format": "go",
+      "lines": 42,
+      "tokens": 248,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 1555,
+       "end": 1596
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 1655,
+        "end": 1696
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    u.Name = d.Val()",
+        "",
+        "case \"refresh\":",
+        "    if !d.NextArg() {",
+        "        return d.ArgErr()",
+        "    }",
+        "    dur, err := caddy.ParseDuration(d.Val())",
+        "    if err != nil {",
+        "        return d.Errf(\"parsing refresh interval duration: %v\", err)",
+        "    }"
+       ],
+       "total": 42
+      }
+     },
+     {
+      "format": "go",
+      "lines": 11,
+      "tokens": 60,
+      "copies": 5,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 345,
+       "end": 355
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 357,
+        "end": 367
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 427,
+        "end": 437
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 439,
+        "end": 449
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 503,
+        "end": 513
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 39,
+      "tokens": 206,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/matchers.go",
+       "start": 1608,
+       "end": 1646
+      },
+      "others": [
+       {
+        "name": "modules/caddytls/matchers.go",
+        "start": 199,
+        "end": 237
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 45,
+      "tokens": 194,
+      "copies": 2,
+      "first": {
+       "name": "modules/logging/filters.go",
+       "start": 483,
+       "end": 527
+      },
+      "others": [
+       {
+        "name": "modules/logging/filters.go",
+        "start": 606,
+        "end": 650
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 38,
+      "tokens": 174,
+      "copies": 2,
+      "first": {
+       "name": "modules/logging/appendencoder.go",
+       "start": 146,
+       "end": 183
+      },
+      "others": [
+       {
+        "name": "modules/logging/filterencoder.go",
+        "start": 195,
+        "end": 232
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 35,
+      "tokens": 168,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/vars.go",
+       "start": 187,
+       "end": 221
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/vars.go",
+        "start": 333,
+        "end": 367
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 4,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 559,
+       "end": 568
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 575,
+        "end": 584
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 591,
+        "end": 600
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 629,
+        "end": 638
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 8,
+      "tokens": 53,
+      "copies": 4,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 1164,
+       "end": 1171
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 1252,
+        "end": 1259
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 1576,
+        "end": 1583
+       },
+       {
+        "name": "modules/caddytls/capools.go",
+        "start": 559,
+        "end": 566
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 1,
+     "sample": [
+      "modules/caddyhttp/encode/testdata/caddy_asciinema_player.js"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:24.705Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "michael-denyer/pstack-claude",
@@ -1793,15 +3794,15 @@
    "starsToday": 232,
    "defaultBranch": "main",
    "headSha": "dc8e617f179cf0bdc68b61e672f33e9eb64c20cf",
-   "durationMs": 767,
+   "durationMs": 72,
    "total": {
     "sources": 257,
-    "lines": 29994,
-    "tokens": 291667,
+    "lines": 29950,
+    "tokens": 291502,
     "clones": 33,
     "duplicatedLines": 340,
     "duplicatedTokens": 3321,
-    "percentage": 1.13,
+    "percentage": 1.14,
     "percentageTokens": 1.14
    },
    "formats": [
@@ -1848,7 +3849,7 @@
     {
      "format": "bash",
      "sources": 18,
-     "lines": 868,
+     "lines": 818,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1856,7 +3857,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1891,151 +3892,261 @@
      "format": "markdown",
      "lines": 27,
      "tokens": 487,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/pstack/agents/comment-sicko.md:markdown",
       "start": 6,
       "end": 32
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/poteto-mode/references/agents/comment-sicko.md:markdown",
-      "start": 6,
-      "end": 32
+     "others": [
+      {
+       "name": "plugins/pstack/skills/poteto-mode/references/agents/comment-sicko.md:markdown",
+       "start": 6,
+       "end": 32
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Comment Sicko",
+       "",
+       "My first output when spawned is exactly this.",
+       "",
+       "Yes... Ha ha ha... Yes!",
+       "",
+       "I hate comments. Feed me the parent scoped files or diff. If none exists, feed me the current diff against `main`. Narration, banners, commented-out corpses, w…",
+       "",
+       "Only these exceptions get to crawl away.",
+       ""
+      ],
+      "total": 27
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 12,
+     "tokens": 180,
+     "copies": 3,
+     "first": {
+      "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
+      "start": 19,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+       "start": 18,
+       "end": 29
+      },
+      {
+       "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
+       "start": 31,
+       "end": 42
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "## Scope to skills and tools the session actually used",
+       "",
+       "Findings must point to skills, tools, or MCPs invoked in this transcript. Speculative routings to skills the parent never opened do not count. To check whether…",
+       "",
+       "- `Read` tool calls against any `SKILL.md` file (workspace `.claude/skills/`, user-level `~/.claude/skills/`, or plugin-installed paths under `~/.claude/plugin…",
+       "- `Agent` prompts that name a skill path",
+       "- Tool calls (Shell, Grep, MCP, etc.) that match a skill's documented commands",
+       "",
+       "Two valid finding shapes:",
+       ""
+      ],
+      "total": 12
      }
     },
     {
      "format": "markdown",
      "lines": 12,
      "tokens": 340,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "NOTICE-skills.md:markdown",
       "start": 1,
       "end": 12
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/poteto-mode/references/licenses/NOTICE.md:markdown",
-      "start": 1,
-      "end": 12
+     "others": [
+      {
+       "name": "plugins/pstack/skills/poteto-mode/references/licenses/NOTICE.md:markdown",
+       "start": 1,
+       "end": 12
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# NOTICE for the skills-only distribution",
+       "",
+       "This distribution contains MIT-licensed work from two upstream sources. The copyright notices and license terms travel beside this file.",
+       "",
+       "## Upstream sources",
+       "",
+       "| Included work | Upstream | Copyright | License |",
+       "| --- | --- | --- | --- |",
+       "| pstack-derived skills, principles, scripts, and the `comment-sicko` definition | [cursor/plugins/pstack](https://github.com/cursor/plugins/tree/e46364b8be460…",
+       "| `deslop`, `thermo-nuclear-code-quality-review`, `make-pr-easy-to-review`, `fix-ci`, `fix-merge-conflicts`, `get-pr-comments`, and `what-did-i-get-done` | [cu…"
+      ],
+      "total": 12
      }
+    },
+    {
+     "format": "markdown",
+     "lines": 7,
+     "tokens": 68,
+     "copies": 6,
+     "first": {
+      "name": "plugins/pstack/skills/arena/SKILL.md:markdown",
+      "start": 72,
+      "end": 78
+     },
+     "others": [
+      {
+       "name": "plugins/pstack/skills/how/SKILL.md:markdown",
+       "start": 59,
+       "end": 65
+      },
+      {
+       "name": "plugins/pstack/skills/poteto-mode/SKILL.md:markdown",
+       "start": 152,
+       "end": 158
+      },
+      {
+       "name": "plugins/pstack/skills/reflect/SKILL.md:markdown",
+       "start": 74,
+       "end": 80
+      },
+      {
+       "name": "plugins/pstack/skills/swarm/SKILL.md:markdown",
+       "start": 47,
+       "end": 53
+      },
+      {
+       "name": "plugins/pstack/skills/why/SKILL.md:markdown",
+       "start": 159,
+       "end": 165
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 8,
      "tokens": 182,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
       "start": 5,
       "end": 12
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-      "start": 3,
-      "end": 10
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 12,
-     "tokens": 180,
-     "firstFile": {
-      "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-      "start": 19,
-      "end": 30
-     },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-      "start": 18,
-      "end": 29
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 12,
-     "tokens": 180,
-     "firstFile": {
-      "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-      "start": 19,
-      "end": 30
-     },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-      "start": 31,
-      "end": 42
-     }
+     "others": [
+      {
+       "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+       "start": 3,
+       "end": 10
+      }
+     ]
     },
     {
      "format": "javascript",
      "lines": 6,
      "tokens": 131,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/pi/agents-messages.test.mjs",
       "start": 108,
       "end": 113
      },
-     "secondFile": {
+     "others": [
+      {
+       "name": "tests/pi/agents-messages.test.mjs",
+       "start": 121,
+       "end": 126
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 6,
+     "tokens": 62,
+     "copies": 3,
+     "first": {
       "name": "tests/pi/agents-messages.test.mjs",
-      "start": 121,
-      "end": 126
-     }
+      "start": 53,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "tests/pi/agents-messages.test.mjs",
+       "start": 88,
+       "end": 93
+      },
+      {
+       "name": "tests/pi/agents-messages.test.mjs",
+       "start": 101,
+       "end": 105
+      }
+     ]
     },
     {
      "format": "javascript",
      "lines": 8,
      "tokens": 123,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/pi/agents-session.test.mjs",
       "start": 103,
       "end": 110
      },
-     "secondFile": {
-      "name": "tests/pi/agents-session.test.mjs",
-      "start": 117,
-      "end": 123
-     }
+     "others": [
+      {
+       "name": "tests/pi/agents-session.test.mjs",
+       "start": 117,
+       "end": 123
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 13,
      "tokens": 117,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/pstack/skills/interrogate/references/code-quality-review.md:markdown",
       "start": 5,
       "end": 17
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
-      "start": 10,
-      "end": 22
-     }
+     "others": [
+      {
+       "name": "plugins/pstack/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
+       "start": 10,
+       "end": 22
+      }
+     ]
     },
     {
-     "format": "markdown",
-     "lines": 11,
-     "tokens": 80,
-     "firstFile": {
-      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-      "start": 24,
-      "end": 34
+     "format": "javascript",
+     "lines": 6,
+     "tokens": 51,
+     "copies": 3,
+     "first": {
+      "name": "tests/sync.test.mjs",
+      "start": 717,
+      "end": 722
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-      "start": 37,
-      "end": 47
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 13,
-     "tokens": 75,
-     "firstFile": {
-      "name": "plugins/pstack/skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "start": 280,
-      "end": 292
-     },
-     "secondFile": {
-      "name": "plugins/pstack/skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "start": 364,
-      "end": 376
-     }
+     "others": [
+      {
+       "name": "tests/sync.test.mjs",
+       "start": 1028,
+       "end": 1033
+      },
+      {
+       "name": "tests/sync.test.mjs",
+       "start": 1049,
+       "end": 1054
+      }
+     ]
     }
    ],
    "health": {
@@ -2204,7 +4315,166 @@
       "lines": 65
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 51,
+    "lines": 10723,
+    "tokens": 69983,
+    "clones": 3,
+    "duplicatedLines": 39,
+    "duplicatedTokens": 178,
+    "percentage": 0.36,
+    "percentageTokens": 0.25,
+    "formats": [
+     {
+      "format": "javascript",
+      "sources": 11,
+      "lines": 2778,
+      "clones": 2,
+      "duplicatedLines": 30,
+      "percentage": 1.08
+     },
+     {
+      "format": "typescript",
+      "sources": 27,
+      "lines": 7046,
+      "clones": 1,
+      "duplicatedLines": 9,
+      "percentage": 0.13
+     },
+     {
+      "format": "bash",
+      "sources": 11,
+      "lines": 707,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "powershell",
+      "sources": 1,
+      "lines": 18,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "javascript",
+      "lines": 16,
+      "tokens": 65,
+      "copies": 2,
+      "first": {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/worktree-audit.mjs",
+       "start": 230,
+       "end": 245
+      },
+      "others": [
+       {
+        "name": "plugins/pstack/skills/reflect/scripts/find-transcript.mjs",
+        "start": 141,
+        "end": 156
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  process.stdout.write(audit({ repo: repo.value, transcripts }));",
+        "  return 0;",
+        "}",
+        "",
+        "// node leaves argv[1] unresolved and may set it to a non-file (`node -e ... arg`).",
+        "function invokedDirectly() {",
+        "  if (!process.argv[1]) return false;",
+        "  try {",
+        "    return fileURLToPath(import.meta.url) === realpathSync(process.argv[1]);",
+        "  } catch {"
+       ],
+       "total": 16
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 14,
+      "tokens": 57,
+      "copies": 2,
+      "first": {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/check-playbooks.mjs",
+       "start": 43,
+       "end": 56
+      },
+      "others": [
+       {
+        "name": "plugins/pstack/skills/poteto-mode/scripts/worktree-audit.mjs",
+        "start": 231,
+        "end": 244
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  return problems;",
+        "}",
+        "",
+        "// node leaves argv[1] unresolved and may set it to a non-file (`node -e ... arg`).",
+        "function invokedDirectly() {",
+        "  if (!process.argv[1]) return false;",
+        "  try {",
+        "    return fileURLToPath(import.meta.url) === realpathSync(process.argv[1]);",
+        "  } catch {",
+        "    return false;"
+       ],
+       "total": 14
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 56,
+      "copies": 2,
+      "first": {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/orch/orch.ts",
+       "start": 104,
+       "end": 112
+      },
+      "others": [
+       {
+        "name": "plugins/pstack/skills/poteto-mode/scripts/orch/store.ts",
+        "start": 961,
+        "end": 969
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  return parts.map(positiveInteger);",
+        "}",
+        "",
+        "function countLine(value: Counts): string {",
+        "  const entries = Object.entries(value);",
+        "  return entries.length === 0",
+        "    ? \"none\"",
+        "    : entries.map(([name, count]) => `${name}=${count}`).join(\", \");",
+        "}"
+       ],
+       "total": 9
+      }
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:26.261Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "addyosmani/agent-skills",
@@ -2215,15 +4485,15 @@
    "starsToday": 336,
    "defaultBranch": "main",
    "headSha": "1401c8b8030e023baeebb31781a6653fe8e93026",
-   "durationMs": 756,
+   "durationMs": 59,
    "total": {
     "sources": 300,
-    "lines": 25846,
-    "tokens": 214394,
+    "lines": 25802,
+    "tokens": 214229,
     "clones": 51,
     "duplicatedLines": 608,
     "duplicatedTokens": 5494,
-    "percentage": 2.35,
+    "percentage": 2.36,
     "percentageTokens": 2.56
    },
    "formats": [
@@ -2246,10 +4516,10 @@
     {
      "format": "bash",
      "sources": 32,
-     "lines": 2326,
+     "lines": 2276,
      "clones": 7,
      "duplicatedLines": 76,
-     "percentage": 3.27
+     "percentage": 3.34
     },
     {
      "format": "markdown",
@@ -2300,9 +4570,9 @@
      "percentage": 0
     },
     {
-     "format": "tsx",
-     "sources": 5,
-     "lines": 172,
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2313,151 +4583,236 @@
      "format": "toml",
      "lines": 43,
      "tokens": 743,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/build.toml",
       "start": 1,
       "end": 43
      },
-     "secondFile": {
-      "name": "commands/build.toml",
-      "start": 1,
-      "end": 43
+     "others": [
+      {
+       "name": "commands/build.toml",
+       "start": 1,
+       "end": 43
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "description = \"Implement tasks incrementally — build, test, verify, commit. Add \\\"auto\\\" to run the whole plan in one approved pass.\"",
+       "",
+       "prompt = \"\"\"",
+       "Invoke the incremental-implementation skill alongside test-driven-development.",
+       "",
+       "## Modes",
+       "",
+       "- `/build` — implement the next pending task, then stop (careful, one slice at a time).",
+       "- `/build auto` — generate the plan if needed, get a single approval, then implement every task without stopping between them.",
+       ""
+      ],
+      "total": 43
      }
     },
     {
      "format": "toml",
      "lines": 46,
      "tokens": 429,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/ship.toml",
       "start": 27,
       "end": 72
      },
-     "secondFile": {
-      "name": "commands/ship.toml",
-      "start": 27,
-      "end": 72
+     "others": [
+      {
+       "name": "commands/ship.toml",
+       "start": 27,
+       "end": 72
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "## Phase B — Merge in main context",
+       "",
+       "Once all three reports are back, the main agent (not a sub-persona) synthesizes them:",
+       "",
+       "1. **Code Quality** — Aggregate Critical/Important findings from `code-reviewer` and any failing tests, lint, or build output. Resolve duplicates between revie…",
+       "2. **Security** — Promote any Critical/High `security-auditor` findings to launch blockers. Cross-reference with `code-reviewer`'s security axis.",
+       "3. **Performance** — Pull from `code-reviewer`'s performance axis; cross-check Core Web Vitals if applicable.",
+       "4. **Accessibility** — Verify keyboard nav, screen reader support, contrast (not covered by the three personas — handle directly here, or invoke the accessibil…",
+       "5. **Infrastructure** — Env vars, migrations, monitoring, feature flags. Verify directly.",
+       "6. **Documentation** — README, ADRs, changelog. Verify directly."
+      ],
+      "total": 46
      }
     },
     {
      "format": "toml",
      "lines": 24,
      "tokens": 421,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/constraints.toml",
       "start": 1,
       "end": 24
      },
-     "secondFile": {
-      "name": "commands/constraints.toml",
-      "start": 1,
-      "end": 24
+     "others": [
+      {
+       "name": "commands/constraints.toml",
+       "start": 1,
+       "end": 24
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "description = \"Define and enforce this project's quality bar — interview, sane defaults, CONSTRAINTS.md\"",
+       "",
+       "prompt = \"\"\"",
+       "Invoke the constraint-driven-development skill.",
+       "",
+       "$ARGUMENTS",
+       "",
+       "Default behaviour with no arguments: set up constraints for this repository.",
+       "",
+       "1. **Detect first.** Read package.json / pyproject.toml / go.mod, the test runner, existing lint configs, current coverage output, CI workflows, and the agent …"
+      ],
+      "total": 24
      }
     },
     {
      "format": "toml",
      "lines": 9,
      "tokens": 223,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/ship.toml",
       "start": 10,
       "end": 18
      },
-     "secondFile": {
-      "name": "commands/ship.toml",
-      "start": 10,
-      "end": 18
-     }
+     "others": [
+      {
+       "name": "commands/ship.toml",
+       "start": 10,
+       "end": 18
+      }
+     ]
     },
     {
      "format": "toml",
      "lines": 16,
      "tokens": 163,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/review.toml",
       "start": 1,
       "end": 16
      },
-     "secondFile": {
-      "name": "commands/review.toml",
-      "start": 1,
-      "end": 16
-     }
+     "others": [
+      {
+       "name": "commands/review.toml",
+       "start": 1,
+       "end": 16
+      }
+     ]
+    },
+    {
+     "format": "bash",
+     "lines": 12,
+     "tokens": 79,
+     "copies": 3,
+     "first": {
+      "name": "hooks/simplify-ignore-test.sh",
+      "start": 257,
+      "end": 268
+     },
+     "others": [
+      {
+       "name": "hooks/simplify-ignore-test.sh",
+       "start": 301,
+       "end": 312
+      },
+      {
+       "name": "hooks/simplify-ignore-test.sh",
+       "start": 341,
+       "end": 352
+      }
+     ]
     },
     {
      "format": "toml",
      "lines": 18,
      "tokens": 146,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/planning.toml",
       "start": 1,
       "end": 18
      },
-     "secondFile": {
-      "name": "commands/planning.toml",
-      "start": 1,
-      "end": 18
-     }
+     "others": [
+      {
+       "name": "commands/planning.toml",
+       "start": 1,
+       "end": 18
+      }
+     ]
     },
     {
      "format": "toml",
      "lines": 17,
      "tokens": 142,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/spec.toml",
       "start": 1,
       "end": 17
      },
-     "secondFile": {
-      "name": "commands/spec.toml",
-      "start": 1,
-      "end": 17
-     }
+     "others": [
+      {
+       "name": "commands/spec.toml",
+       "start": 1,
+       "end": 17
+      }
+     ]
     },
     {
      "format": "toml",
      "lines": 15,
      "tokens": 131,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": ".gemini/commands/code-simplify.toml",
       "start": 8,
       "end": 22
      },
-     "secondFile": {
-      "name": "commands/code-simplify.toml",
-      "start": 8,
-      "end": 22
-     }
+     "others": [
+      {
+       "name": "commands/code-simplify.toml",
+       "start": 8,
+       "end": 22
+      }
+     ]
     },
     {
-     "format": "toml",
-     "lines": 11,
-     "tokens": 129,
-     "firstFile": {
-      "name": ".gemini/commands/webperf.toml",
-      "start": 1,
-      "end": 11
+     "format": "javascript",
+     "lines": 10,
+     "tokens": 65,
+     "copies": 3,
+     "first": {
+      "name": "scripts/validate-artifact-paths-test.js",
+      "start": 3,
+      "end": 12
      },
-     "secondFile": {
-      "name": "commands/webperf.toml",
-      "start": 1,
-      "end": 11
-     }
-    },
-    {
-     "format": "toml",
-     "lines": 9,
-     "tokens": 122,
-     "firstFile": {
-      "name": ".gemini/commands/constraints.toml",
-      "start": 24,
-      "end": 32
-     },
-     "secondFile": {
-      "name": "commands/constraints.toml",
-      "start": 24,
-      "end": 32
-     }
+     "others": [
+      {
+       "name": "scripts/validate-commands-test.js",
+       "start": 3,
+       "end": 12
+      },
+      {
+       "name": "scripts/validate-reference-links-test.js",
+       "start": 3,
+       "end": 12
+      }
+     ]
     }
    ],
    "health": {
@@ -2586,7 +4941,307 @@
     "files": 36,
     "byCategory": [],
     "largest": []
-   }
+   },
+   "code": {
+    "sources": 31,
+    "lines": 6560,
+    "tokens": 34976,
+    "clones": 29,
+    "duplicatedLines": 296,
+    "duplicatedTokens": 1949,
+    "percentage": 4.51,
+    "percentageTokens": 5.57,
+    "formats": [
+     {
+      "format": "javascript",
+      "sources": 14,
+      "lines": 4347,
+      "clones": 22,
+      "duplicatedLines": 220,
+      "percentage": 5.06
+     },
+     {
+      "format": "bash",
+      "sources": 16,
+      "lines": 2039,
+      "clones": 7,
+      "duplicatedLines": 76,
+      "percentage": 3.73
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "bash",
+      "lines": 12,
+      "tokens": 79,
+      "copies": 3,
+      "first": {
+       "name": "hooks/simplify-ignore-test.sh",
+       "start": 257,
+       "end": 268
+      },
+      "others": [
+       {
+        "name": "hooks/simplify-ignore-test.sh",
+        "start": 301,
+        "end": 312
+       },
+       {
+        "name": "hooks/simplify-ignore-test.sh",
+        "start": 341,
+        "end": 352
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  rm -rf \"$PROJ\"",
+        "  mkdir -p \"$PROJ/.claude\"",
+        "  TARGET=\"$PROJ/app.js\"",
+        "  cat > \"$TARGET\" <<'EOF'",
+        "const editable = 1;",
+        "/* simplify-ignore-start: perf-critical */",
+        "const protectedValue = 42;",
+        "/* simplify-ignore-end */",
+        "EOF",
+        ""
+       ],
+       "total": 12
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 10,
+      "tokens": 65,
+      "copies": 3,
+      "first": {
+       "name": "scripts/validate-artifact-paths-test.js",
+       "start": 3,
+       "end": 12
+      },
+      "others": [
+       {
+        "name": "scripts/validate-commands-test.js",
+        "start": 3,
+        "end": 12
+       },
+       {
+        "name": "scripts/validate-reference-links-test.js",
+        "start": 3,
+        "end": 12
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "'use strict';",
+        "",
+        "const assert = require('node:assert/strict');",
+        "const fs = require('node:fs');",
+        "const os = require('node:os');",
+        "const path = require('node:path');",
+        "const { spawnSync } = require('node:child_process');",
+        "const { afterEach, test } = require('node:test');",
+        "",
+        "const VALIDATOR = path.join(__dirname, 'validate-artifact-paths.js');"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "'use strict';",
+        "",
+        "const assert = require('node:assert/strict');",
+        "const fs = require('node:fs');",
+        "const os = require('node:os');",
+        "const path = require('node:path');",
+        "const { spawnSync } = require('node:child_process');",
+        "const { afterEach, test } = require('node:test');",
+        "",
+        "const VALIDATOR = path.join(__dirname, 'validate-commands.js');"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "bash",
+      "lines": 13,
+      "tokens": 118,
+      "copies": 2,
+      "first": {
+       "name": "hooks/sdd-cache-post.sh",
+       "start": 16,
+       "end": 28
+      },
+      "others": [
+       {
+        "name": "hooks/sdd-cache-pre.sh",
+        "start": 21,
+        "end": 33
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "command -v jq   >/dev/null 2>&1 || exit 0",
+        "command -v curl >/dev/null 2>&1 || exit 0",
+        "command -v shasum >/dev/null 2>&1 || command -v sha256sum >/dev/null 2>&1 || exit 0",
+        "",
+        "if [ -t 0 ]; then INPUT=\"{}\"; else INPUT=$(cat); fi",
+        "",
+        "# Debug logging: active when SDD_CACHE_DEBUG=1 is set, or when a sentinel",
+        "# file exists at .claude/sdd-cache/.debug. Toggle with `touch` / `rm`.",
+        "dbg() {",
+        "  local dir=\"${CLAUDE_PROJECT_DIR:-$PWD}/.claude/sdd-cache\""
+       ],
+       "total": 13
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 13,
+      "tokens": 58,
+      "copies": 3,
+      "first": {
+       "name": "scripts/validate-artifact-paths-test.js",
+       "start": 31,
+       "end": 43
+      },
+      "others": [
+       {
+        "name": "scripts/validate-commands-test.js",
+        "start": 54,
+        "end": 66
+       },
+       {
+        "name": "scripts/validate-reference-links-test.js",
+        "start": 33,
+        "end": 45
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 14,
+      "tokens": 101,
+      "copies": 2,
+      "first": {
+       "name": "scripts/run-evals-test.js",
+       "start": 319,
+       "end": 332
+      },
+      "others": [
+       {
+        "name": "scripts/run-evals-test.js",
+        "start": 342,
+        "end": 355
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 10,
+      "tokens": 86,
+      "copies": 2,
+      "first": {
+       "name": "scripts/run-evals-test.js",
+       "start": 319,
+       "end": 328
+      },
+      "others": [
+       {
+        "name": "scripts/run-evals-test.js",
+        "start": 389,
+        "end": 398
+       }
+      ]
+     },
+     {
+      "format": "bash",
+      "lines": 7,
+      "tokens": 85,
+      "copies": 2,
+      "first": {
+       "name": "hooks/simplify-ignore-test.sh",
+       "start": 17,
+       "end": 23
+      },
+      "others": [
+       {
+        "name": "hooks/simplify-ignore.sh",
+        "start": 49,
+        "end": 55
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 12,
+      "tokens": 75,
+      "copies": 2,
+      "first": {
+       "name": "scripts/validate-commands-test.js",
+       "start": 24,
+       "end": 35
+      },
+      "others": [
+       {
+        "name": "scripts/validate-reference-links-test.js",
+        "start": 21,
+        "end": 32
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 8,
+      "tokens": 74,
+      "copies": 2,
+      "first": {
+       "name": "scripts/run-evals-test.js",
+       "start": 205,
+       "end": 212
+      },
+      "others": [
+       {
+        "name": "scripts/run-evals-test.js",
+        "start": 255,
+        "end": 262
+       }
+      ]
+     },
+     {
+      "format": "bash",
+      "lines": 12,
+      "tokens": 72,
+      "copies": 2,
+      "first": {
+       "name": "hooks/sdd-cache-test.sh",
+       "start": 52,
+       "end": 63
+      },
+      "others": [
+       {
+        "name": "hooks/simplify-ignore-test.sh",
+        "start": 36,
+        "end": 47
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:27.533Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "garrytan/gstack",
@@ -2597,11 +5252,11 @@
    "starsToday": 125,
    "defaultBranch": "main",
    "headSha": "857466ff8b93c0575bc9e46cf2838d1962077d8f",
-   "durationMs": 4134,
+   "durationMs": 1901,
    "total": {
     "sources": 3157,
-    "lines": 711405,
-    "tokens": 6167279,
+    "lines": 711361,
+    "tokens": 6167114,
     "clones": 2804,
     "duplicatedLines": 57631,
     "duplicatedTokens": 609868,
@@ -2628,10 +5283,10 @@
     {
      "format": "bash",
      "sources": 249,
-     "lines": 31409,
+     "lines": 31359,
      "clones": 272,
      "duplicatedLines": 3214,
-     "percentage": 10.23
+     "percentage": 10.25
     },
     {
      "format": "json",
@@ -2693,153 +5348,443 @@
    "topClones": [
     {
      "format": "markdown",
-     "lines": 1177,
-     "tokens": 14681,
-     "firstFile": {
-      "name": "ship/SKILL.md:markdown",
-      "start": 22,
-      "end": 1198
-     },
-     "secondFile": {
-      "name": "test/fixtures/golden/claude-ship-SKILL.md:markdown",
-      "start": 22,
-      "end": 1198
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 531,
-     "tokens": 6805,
-     "firstFile": {
-      "name": "test/fixtures/golden/codex-ship-SKILL.md:markdown",
-      "start": 247,
-      "end": 777
-     },
-     "secondFile": {
-      "name": "test/fixtures/golden/factory-ship-SKILL.md:markdown",
-      "start": 228,
-      "end": 758
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 358,
-     "tokens": 5270,
-     "firstFile": {
+     "lines": 239,
+     "tokens": 4087,
+     "copies": 24,
+     "first": {
       "name": "autoplan/SKILL.md:markdown",
       "start": 81,
-      "end": 438
+      "end": 319
      },
-     "secondFile": {
-      "name": "devex-review/SKILL.md:markdown",
-      "start": 68,
-      "end": 425
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 358,
-     "tokens": 5269,
-     "firstFile": {
-      "name": "autoplan/SKILL.md:markdown",
-      "start": 81,
-      "end": 438
-     },
-     "secondFile": {
-      "name": "codex/SKILL.md:markdown",
-      "start": 65,
-      "end": 422
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 358,
-     "tokens": 5269,
-     "firstFile": {
-      "name": "autoplan/SKILL.md:markdown",
-      "start": 81,
-      "end": 438
-     },
-     "secondFile": {
-      "name": "qa/SKILL.md:markdown",
-      "start": 68,
-      "end": 427
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 358,
-     "tokens": 5269,
-     "firstFile": {
-      "name": "autoplan/SKILL.md:markdown",
-      "start": 81,
-      "end": 438
-     },
-     "secondFile": {
-      "name": "review/SKILL.md:markdown",
-      "start": 66,
-      "end": 423
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 319,
-     "tokens": 4838,
-     "firstFile": {
-      "name": "autoplan/SKILL.md:markdown",
-      "start": 81,
-      "end": 399
-     },
-     "secondFile": {
-      "name": "land-and-deploy/SKILL.md:markdown",
-      "start": 61,
-      "end": 379
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 319,
-     "tokens": 4838,
-     "firstFile": {
-      "name": "autoplan/SKILL.md:markdown",
-      "start": 81,
-      "end": 399
-     },
-     "secondFile": {
-      "name": "ship/SKILL.md:markdown",
-      "start": 66,
-      "end": 384
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 319,
-     "tokens": 4838,
-     "firstFile": {
-      "name": "autoplan/SKILL.md:markdown",
-      "start": 81,
-      "end": 399
-     },
-     "secondFile": {
-      "name": "spec/SKILL.md:markdown",
-      "start": 64,
-      "end": 382
+     "others": [
+      {
+       "name": "canary/SKILL.md:markdown",
+       "start": 62,
+       "end": 300
+      },
+      {
+       "name": "context-restore/SKILL.md:markdown",
+       "start": 64,
+       "end": 302
+      },
+      {
+       "name": "context-save/SKILL.md:markdown",
+       "start": 63,
+       "end": 301
+      },
+      {
+       "name": "design-html/SKILL.md:markdown",
+       "start": 69,
+       "end": 307
+      },
+      {
+       "name": "design-shotgun/SKILL.md:markdown",
+       "start": 82,
+       "end": 320
+      },
+      {
+       "name": "document-generate/SKILL.md:markdown",
+       "start": 68,
+       "end": 306
+      },
+      {
+       "name": "document-release/SKILL.md:markdown",
+       "start": 66,
+       "end": 304
+      },
+      {
+       "name": "health/SKILL.md:markdown",
+       "start": 64,
+       "end": 302
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "If `PROACTIVE` is `false`, do not auto-invoke or suggest skills, including by asking whether to run one. Only run skills the user explicitly invokes.",
+       "",
+       "If `SKILL_PREFIX` is `\"true\"`, suggest/invoke `/gstack-*` names. Disk paths stay `~/.claude/skills/gstack/[skill-name]/SKILL.md`.",
+       "",
+       "## AskUserQuestion Format",
+       "",
+       "### Tool resolution (read first)",
+       "",
+       "Branch on the skill-start STATUS lines, in this order:",
+       ""
+      ],
+      "total": 239
      }
     },
     {
      "format": "markdown",
      "lines": 319,
      "tokens": 4837,
-     "firstFile": {
+     "copies": 8,
+     "first": {
       "name": "autoplan/SKILL.md:markdown",
       "start": 81,
       "end": 399
      },
-     "secondFile": {
-      "name": "design-consultation/SKILL.md:markdown",
-      "start": 88,
-      "end": 406
+     "others": [
+      {
+       "name": "design-consultation/SKILL.md:markdown",
+       "start": 88,
+       "end": 406
+      },
+      {
+       "name": "design-review/SKILL.md:markdown",
+       "start": 66,
+       "end": 386
+      },
+      {
+       "name": "ios-qa/SKILL.md:markdown",
+       "start": 72,
+       "end": 390
+      },
+      {
+       "name": "land-and-deploy/SKILL.md:markdown",
+       "start": 61,
+       "end": 379
+      },
+      {
+       "name": "qa-only/SKILL.md:markdown",
+       "start": 64,
+       "end": 382
+      },
+      {
+       "name": "ship/SKILL.md:markdown",
+       "start": 66,
+       "end": 384
+      },
+      {
+       "name": "spec/SKILL.md:markdown",
+       "start": 64,
+       "end": 382
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "If `PROACTIVE` is `false`, do not auto-invoke or suggest skills, including by asking whether to run one. Only run skills the user explicitly invokes.",
+       "",
+       "If `SKILL_PREFIX` is `\"true\"`, suggest/invoke `/gstack-*` names. Disk paths stay `~/.claude/skills/gstack/[skill-name]/SKILL.md`.",
+       "",
+       "## AskUserQuestion Format",
+       "",
+       "### Tool resolution (read first)",
+       "",
+       "Branch on the skill-start STATUS lines, in this order:",
+       ""
+      ],
+      "total": 319
      }
+    },
+    {
+     "format": "markdown",
+     "lines": 358,
+     "tokens": 5269,
+     "copies": 5,
+     "first": {
+      "name": "autoplan/SKILL.md:markdown",
+      "start": 81,
+      "end": 438
+     },
+     "others": [
+      {
+       "name": "codex/SKILL.md:markdown",
+       "start": 65,
+       "end": 422
+      },
+      {
+       "name": "devex-review/SKILL.md:markdown",
+       "start": 68,
+       "end": 425
+      },
+      {
+       "name": "qa/SKILL.md:markdown",
+       "start": 68,
+       "end": 427
+      },
+      {
+       "name": "review/SKILL.md:markdown",
+       "start": 66,
+       "end": 423
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "If `PROACTIVE` is `false`, do not auto-invoke or suggest skills, including by asking whether to run one. Only run skills the user explicitly invokes.",
+       "",
+       "If `SKILL_PREFIX` is `\"true\"`, suggest/invoke `/gstack-*` names. Disk paths stay `~/.claude/skills/gstack/[skill-name]/SKILL.md`.",
+       "",
+       "## AskUserQuestion Format",
+       "",
+       "### Tool resolution (read first)",
+       "",
+       "Branch on the skill-start STATUS lines, in this order:",
+       ""
+      ],
+      "total": 358
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 40,
+     "tokens": 486,
+     "copies": 34,
+     "first": {
+      "name": "SKILL.md:markdown",
+      "start": 25,
+      "end": 64
+     },
+     "others": [
+      {
+       "name": "autoplan/SKILL.md:markdown",
+       "start": 46,
+       "end": 85
+      },
+      {
+       "name": "canary/SKILL.md:markdown",
+       "start": 27,
+       "end": 66
+      },
+      {
+       "name": "codex/SKILL.md:markdown",
+       "start": 30,
+       "end": 69
+      },
+      {
+       "name": "context-restore/SKILL.md:markdown",
+       "start": 29,
+       "end": 68
+      },
+      {
+       "name": "context-save/SKILL.md:markdown",
+       "start": 28,
+       "end": 67
+      },
+      {
+       "name": "design-consultation/SKILL.md:markdown",
+       "start": 53,
+       "end": 92
+      },
+      {
+       "name": "design-html/SKILL.md:markdown",
+       "start": 34,
+       "end": 73
+      },
+      {
+       "name": "design-review/SKILL.md:markdown",
+       "start": 31,
+       "end": 70
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 1177,
+     "tokens": 14681,
+     "copies": 2,
+     "first": {
+      "name": "ship/SKILL.md:markdown",
+      "start": 22,
+      "end": 1198
+     },
+     "others": [
+      {
+       "name": "test/fixtures/golden/claude-ship-SKILL.md:markdown",
+       "start": 22,
+       "end": 1198
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 60,
+     "tokens": 505,
+     "copies": 22,
+     "first": {
+      "name": "canary/SKILL.md:markdown",
+      "start": 291,
+      "end": 350
+     },
+     "others": [
+      {
+       "name": "context-restore/SKILL.md:markdown",
+       "start": 293,
+       "end": 352
+      },
+      {
+       "name": "context-save/SKILL.md:markdown",
+       "start": 292,
+       "end": 351
+      },
+      {
+       "name": "design-html/SKILL.md:markdown",
+       "start": 298,
+       "end": 357
+      },
+      {
+       "name": "design-shotgun/SKILL.md:markdown",
+       "start": 311,
+       "end": 370
+      },
+      {
+       "name": "document-generate/SKILL.md:markdown",
+       "start": 297,
+       "end": 356
+      },
+      {
+       "name": "document-release/SKILL.md:markdown",
+       "start": 295,
+       "end": 354
+      },
+      {
+       "name": "health/SKILL.md:markdown",
+       "start": 293,
+       "end": 352
+      },
+      {
+       "name": "investigate/SKILL.md:markdown",
+       "start": 332,
+       "end": 391
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 128,
+     "tokens": 1373,
+     "copies": 7,
+     "first": {
+      "name": "SKILL.md:markdown",
+      "start": 25,
+      "end": 152
+     },
+     "others": [
+      {
+       "name": "benchmark-models/SKILL.md:markdown",
+       "start": 29,
+       "end": 156
+      },
+      {
+       "name": "benchmark/SKILL.md:markdown",
+       "start": 29,
+       "end": 156
+      },
+      {
+       "name": "browse/SKILL.md:markdown",
+       "start": 25,
+       "end": 152
+      },
+      {
+       "name": "open-gstack-browser/SKILL.md:markdown",
+       "start": 27,
+       "end": 154
+      },
+      {
+       "name": "scrape/SKILL.md:markdown",
+       "start": 24,
+       "end": 151
+      },
+      {
+       "name": "setup-browser-cookies/SKILL.md:markdown",
+       "start": 23,
+       "end": 150
+      }
+     ]
+    },
+    {
+     "format": "text",
+     "lines": 14,
+     "tokens": 170,
+     "copies": 44,
+     "first": {
+      "name": "autoplan/SKILL.md:text",
+      "start": 125,
+      "end": 138
+     },
+     "others": [
+      {
+       "name": "canary/SKILL.md:text",
+       "start": 106,
+       "end": 119
+      },
+      {
+       "name": "codex/SKILL.md:text",
+       "start": 109,
+       "end": 122
+      },
+      {
+       "name": "context-restore/SKILL.md:text",
+       "start": 108,
+       "end": 121
+      },
+      {
+       "name": "context-save/SKILL.md:text",
+       "start": 107,
+       "end": 120
+      },
+      {
+       "name": "design-consultation/SKILL.md:text",
+       "start": 132,
+       "end": 145
+      },
+      {
+       "name": "design-html/SKILL.md:text",
+       "start": 113,
+       "end": 126
+      },
+      {
+       "name": "design-review/SKILL.md:text",
+       "start": 110,
+       "end": 123
+      },
+      {
+       "name": "design-shotgun/SKILL.md:text",
+       "start": 126,
+       "end": 139
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 531,
+     "tokens": 6805,
+     "copies": 2,
+     "first": {
+      "name": "test/fixtures/golden/codex-ship-SKILL.md:markdown",
+      "start": 247,
+      "end": 777
+     },
+     "others": [
+      {
+       "name": "test/fixtures/golden/factory-ship-SKILL.md:markdown",
+       "start": 228,
+       "end": 758
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 256,
+     "tokens": 3268,
+     "copies": 3,
+     "first": {
+      "name": "plan-ceo-review/SKILL.md:markdown",
+      "start": 186,
+      "end": 441
+     },
+     "others": [
+      {
+       "name": "plan-design-review/SKILL.md:markdown",
+       "start": 192,
+       "end": 447
+      },
+      {
+       "name": "plan-devex-review/SKILL.md:markdown",
+       "start": 164,
+       "end": 419
+      }
+     ]
     }
    ],
    "health": {
@@ -3063,7 +6008,381 @@
       "lines": 113
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 484,
+    "lines": 156552,
+    "tokens": 973052,
+    "clones": 130,
+    "duplicatedLines": 1714,
+    "duplicatedTokens": 11698,
+    "percentage": 1.09,
+    "percentageTokens": 1.2,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 361,
+      "lines": 125874,
+      "clones": 95,
+      "duplicatedLines": 1210,
+      "percentage": 0.96
+     },
+     {
+      "format": "bash",
+      "sources": 101,
+      "lines": 23843,
+      "clones": 20,
+      "duplicatedLines": 215,
+      "percentage": 0.9
+     },
+     {
+      "format": "javascript",
+      "sources": 11,
+      "lines": 4660,
+      "clones": 11,
+      "duplicatedLines": 250,
+      "percentage": 5.36
+     },
+     {
+      "format": "c",
+      "sources": 5,
+      "lines": 892,
+      "clones": 4,
+      "duplicatedLines": 39,
+      "percentage": 4.37
+     },
+     {
+      "format": "swift",
+      "sources": 2,
+      "lines": 711,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "powershell",
+      "sources": 2,
+      "lines": 216,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "python",
+      "sources": 1,
+      "lines": 182,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 231,
+      "tokens": 1864,
+      "copies": 2,
+      "first": {
+       "name": "browse/src/browse-client.ts",
+       "start": 34,
+       "end": 264
+      },
+      "others": [
+       {
+        "name": "browser-skills/hackernews-frontpage/_lib/browse-client.ts",
+        "start": 34,
+        "end": 264
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "import * as fs from 'fs';",
+        "import * as path from 'path';",
+        "import * as cp from 'child_process';",
+        "",
+        "export interface BrowseClientOptions {",
+        "  /** Override port. Default: GSTACK_PORT env or state file. */",
+        "  port?: number;",
+        "  /** Override token. Default: GSTACK_SKILL_TOKEN env, then state file root token. */",
+        "  token?: string;",
+        "  /** Tab id to target (every command can scope to a tab). Default: BROWSE_TAB env or undefined (active tab). */"
+       ],
+       "total": 231
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 62,
+      "tokens": 435,
+      "copies": 2,
+      "first": {
+       "name": "extension/content.js",
+       "start": 158,
+       "end": 219
+      },
+      "others": [
+       {
+        "name": "extension/inspector.js",
+        "start": 195,
+        "end": 259
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "for (const prop of BASIC_KEY_PROPERTIES) {",
+        "  computedStyles[prop] = computed.getPropertyValue(prop);",
+        "}",
+        "",
+        "const boxModel = {",
+        "  content: { width: rect.width, height: rect.height },",
+        "  padding: {",
+        "    top: parseFloat(computed.paddingTop) || 0,",
+        "    right: parseFloat(computed.paddingRight) || 0,",
+        "    bottom: parseFloat(computed.paddingBottom) || 0,"
+       ],
+       "total": 62
+      },
+      "excerptSecond": {
+       "lines": [
+        "for (const prop of KEY_PROPERTIES) {",
+        "  computedStyles[prop] = computed.getPropertyValue(prop);",
+        "}",
+        "",
+        "// Box model from computed",
+        "const boxModel = {",
+        "  content: { width: rect.width, height: rect.height },",
+        "  padding: {",
+        "    top: parseFloat(computed.paddingTop) || 0,",
+        "    right: parseFloat(computed.paddingRight) || 0,"
+       ],
+       "total": 65
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 75,
+      "tokens": 380,
+      "copies": 2,
+      "first": {
+       "name": "extension/sidepanel-terminal.js",
+       "start": 604,
+       "end": 678
+      },
+      "others": [
+       {
+        "name": "extension/sidepanel-terminal.js",
+        "start": 822,
+        "end": 889
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "          reason: 'initial',",
+        "        }));",
+        "      } catch {}",
+        "    }",
+        "  });",
+        "} catch {}",
+        "// v1.44 eager spawn: send {type:\"start\"} so the agent boots claude",
+        "// without requiring the user to type a keystroke. Pre-v1.44 the",
+        "// lazy-binary-spawn pattern made forceRestart look stuck for ~2-3s",
+        "// until the user pressed any key."
+       ],
+       "total": 75
+      },
+      "excerptSecond": {
+       "lines": [
+        "          reason: 'restart',",
+        "        }));",
+        "      } catch {}",
+        "    }",
+        "  });",
+        "} catch {}",
+        "// Eager spawn — fresh claude prompt visible without user keystroke.",
+        "try { ws.send(JSON.stringify({ type: 'start' })); } catch {}",
+        "if (keepaliveInterval) clearInterval(keepaliveInterval);",
+        "keepaliveInterval = setInterval(() => {"
+       ],
+       "total": 68
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 21,
+      "tokens": 136,
+      "copies": 3,
+      "first": {
+       "name": "design/src/evolve.ts",
+       "start": 85,
+       "end": 105
+      },
+      "others": [
+       {
+        "name": "design/src/iterate.ts",
+        "start": 101,
+        "end": 121
+       },
+       {
+        "name": "design/src/iterate.ts",
+        "start": 144,
+        "end": 164
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 16,
+      "tokens": 109,
+      "copies": 3,
+      "first": {
+       "name": "hosts/claude/hooks/auq-error-fallback-hook.ts",
+       "start": 44,
+       "end": 59
+      },
+      "others": [
+       {
+        "name": "hosts/claude/hooks/question-log-hook.ts",
+        "start": 72,
+        "end": 87
+       },
+       {
+        "name": "hosts/claude/hooks/question-preference-hook.ts",
+        "start": 76,
+        "end": 90
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 8,
+      "tokens": 105,
+      "copies": 3,
+      "first": {
+       "name": "bin/gstack-autoplan-snapshot.ts",
+       "start": 73,
+       "end": 80
+      },
+      "others": [
+       {
+        "name": "bin/gstack-autoplan-snapshot.ts",
+        "start": 111,
+        "end": 118
+       },
+       {
+        "name": "bin/gstack-autoplan-snapshot.ts",
+        "start": 189,
+        "end": 196
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 14,
+      "tokens": 170,
+      "copies": 2,
+      "first": {
+       "name": "lib/cso/launcher-windows.c",
+       "start": 49,
+       "end": 62
+      },
+      "others": [
+       {
+        "name": "lib/cso/publish-lock.c",
+        "start": 26,
+        "end": 39
+       }
+      ]
+     },
+     {
+      "format": "bash",
+      "lines": 6,
+      "tokens": 53,
+      "copies": 4,
+      "first": {
+       "name": "bin/gstack-learnings-search",
+       "start": 10,
+       "end": 15
+      },
+      "others": [
+       {
+        "name": "bin/gstack-specialist-stats",
+        "start": 8,
+        "end": 13
+       },
+       {
+        "name": "bin/gstack-timeline-log",
+        "start": 12,
+        "end": 17
+       },
+       {
+        "name": "bin/gstack-timeline-read",
+        "start": 9,
+        "end": 14
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 18,
+      "tokens": 158,
+      "copies": 2,
+      "first": {
+       "name": "browse/src/snapshot.ts",
+       "start": 341,
+       "end": 358
+      },
+      "others": [
+       {
+        "name": "browse/src/snapshot.ts",
+        "start": 471,
+        "end": 488
+       }
+      ]
+     },
+     {
+      "format": "bash",
+      "lines": 22,
+      "tokens": 154,
+      "copies": 2,
+      "first": {
+       "name": "bin/gstack-artifacts-init",
+       "start": 412,
+       "end": 433
+      },
+      "others": [
+       {
+        "name": "bin/gstack-brain-restore",
+        "start": 198,
+        "end": 217
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 8,
+     "minified": 0,
+     "sample": [
+      "browse/test/server-route-auth-blackbox.test.ts",
+      "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeCore/DebugBridgeManager.swift",
+      "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeCore/StateServer.swift",
+      "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeUI/Bridges.swift",
+      "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeUI/DebugOverlay.swift",
+      "test/memory-ingest-include-gitignored.test.ts",
+      "test/section-manifest-consistency.test.ts",
+      "test/uninstall-windows-copies.test.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:39.041Z",
+   "jscpdVersion": "5.4.0"
   }
  ]
 }

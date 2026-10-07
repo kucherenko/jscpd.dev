@@ -9,10 +9,12 @@
    "starsToday": 296,
    "headSha": "bae58cf61479986431bb798acbe5a688a591c18c",
    "sources": 1360,
-   "lines": 267193,
-   "clones": 1395,
-   "duplicatedLines": 18484,
-   "percentage": 6.92,
+   "lines": 217187,
+   "clones": 1394,
+   "duplicatedLines": 19580,
+   "percentage": 9.02,
+   "codePercentage": 2.54,
+   "codeSources": 207,
    "healthScore": 62.1,
    "healthGrade": "C"
   }
@@ -28,94 +30,94 @@
   "starsToday": 296,
   "defaultBranch": "main",
   "headSha": "bae58cf61479986431bb798acbe5a688a591c18c",
-  "durationMs": 1699,
+  "durationMs": 3412,
   "total": {
    "sources": 1360,
-   "lines": 267193,
-   "tokens": 1600357,
-   "clones": 1395,
-   "duplicatedLines": 18484,
-   "duplicatedTokens": 162139,
-   "percentage": 6.92,
+   "lines": 217187,
+   "tokens": 1600192,
+   "clones": 1394,
+   "duplicatedLines": 19580,
+   "duplicatedTokens": 162048,
+   "percentage": 9.02,
    "percentageTokens": 10.13
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 419,
-    "lines": 131109,
+    "lines": 127926,
     "clones": 1005,
-    "duplicatedLines": 10380,
-    "percentage": 7.92
+    "duplicatedLines": 11337,
+    "percentage": 8.86
    },
    {
     "format": "markdown",
     "sources": 700,
     "lines": 78855,
-    "clones": 364,
-    "duplicatedLines": 7504,
-    "percentage": 9.52
+    "clones": 363,
+    "duplicatedLines": 7861,
+    "percentage": 9.97
    },
    {
     "format": "text",
     "sources": 96,
-    "lines": 25347,
+    "lines": 3879,
     "clones": 15,
-    "duplicatedLines": 289,
-    "percentage": 1.14
+    "duplicatedLines": 169,
+    "percentage": 4.36
    },
    {
     "format": "yaml",
     "sources": 45,
-    "lines": 8142,
+    "lines": 1815,
     "clones": 4,
-    "duplicatedLines": 51,
-    "percentage": 0.63
+    "duplicatedLines": 55,
+    "percentage": 3.03
    },
    {
     "format": "bash",
     "sources": 46,
-    "lines": 13599,
+    "lines": 1560,
     "clones": 3,
-    "duplicatedLines": 118,
-    "percentage": 0.87
+    "duplicatedLines": 13,
+    "percentage": 0.83
    },
    {
     "format": "json",
     "sources": 18,
-    "lines": 4951,
+    "lines": 931,
     "clones": 2,
-    "duplicatedLines": 43,
-    "percentage": 0.87
+    "duplicatedLines": 45,
+    "percentage": 4.83
    },
    {
     "format": "markup",
     "sources": 7,
-    "lines": 777,
+    "lines": 308,
     "clones": 1,
-    "duplicatedLines": 88,
-    "percentage": 11.33
+    "duplicatedLines": 89,
+    "percentage": 28.9
    },
    {
     "format": "nix",
     "sources": 2,
-    "lines": 334,
+    "lines": 22,
     "clones": 1,
     "duplicatedLines": 11,
-    "percentage": 3.29
-   },
-   {
-    "format": "gherkin",
-    "sources": 1,
-    "lines": 1290,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
+    "percentage": 50
    },
    {
     "format": "javascript",
     "sources": 11,
     "lines": 1088,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "tsx",
+    "sources": 11,
+    "lines": 527,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -126,151 +128,281 @@
     "format": "markdown",
     "lines": 172,
     "tokens": 2116,
-    "firstFile": {
+    "first": {
      "name": "openspec/changes/archive/2025-12-23-extend-shell-completions/specs/cli-completion/spec.md:markdown",
      "start": 123,
      "end": 294
     },
-    "secondFile": {
-     "name": "openspec/specs/cli-completion/spec.md:markdown",
-     "start": 168,
-     "end": 339
-    }
+    "others": [
+     {
+      "name": "openspec/specs/cli-completion/spec.md:markdown",
+      "start": 168,
+      "end": 339
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "### Requirement: Installation Automation",
+      "",
+      "The completion command SHALL automatically install completion scripts into shell configuration files for all supported shells.",
+      "",
+      "#### Scenario: Installing for Oh My Zsh",
+      "",
+      "- **WHEN** user executes `openspec completion install zsh`",
+      "- **THEN** detect if Oh My Zsh is installed by checking for `$ZSH` environment variable or `~/.oh-my-zsh/` directory",
+      "- **AND** create custom completions directory at `~/.oh-my-zsh/custom/completions/` if it doesn't exist",
+      "- **AND** write completion script to `~/.oh-my-zsh/custom/completions/_openspec`"
+     ],
+     "total": 172
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 16,
+    "tokens": 648,
+    "first": {
+     "name": "skills/openspec-apply-change/SKILL.md:markdown",
+     "start": 12,
+     "end": 27
+    },
+    "others": [
+     {
+      "name": "skills/openspec-continue-change/SKILL.md:markdown",
+      "start": 12,
+      "end": 27
+     },
+     {
+      "name": "skills/openspec-ff-change/SKILL.md:markdown",
+      "start": 12,
+      "end": 27
+     },
+     {
+      "name": "skills/openspec-new-change/SKILL.md:markdown",
+      "start": 12,
+      "end": 27
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "Implement tasks from an OpenSpec change.",
+      "",
+      "**Store selection:** If the user names a store (a store is a standalone OpenSpec repo registered on this machine) or the work lives in one, run `openspec store…",
+      "",
+      "**Project check:** These steps expect a project that already uses OpenSpec. Before the first step that writes anything (`new change`, `archive`, `sync specs`, …",
+      "",
+      "One `\"root\": null` is not about setup: when a `status` error message starts with `Declared in` or `Invalid store declaration in` and names this project's `open…",
+      "",
+      "Otherwise, with no root, what happens next depends on how this workflow was reached:",
+      ""
+     ],
+     "total": 16
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 12,
+    "tokens": 636,
+    "first": {
+     "name": "skills/openspec-apply-change/SKILL.md:markdown",
+     "start": 14,
+     "end": 25
+    },
+    "others": [
+     {
+      "name": "skills/openspec-bulk-archive-change/SKILL.md:markdown",
+      "start": 16,
+      "end": 27
+     },
+     {
+      "name": "skills/openspec-explore/SKILL.md:markdown",
+      "start": 18,
+      "end": 29
+     },
+     {
+      "name": "skills/openspec-onboard/SKILL.md:markdown",
+      "start": 14,
+      "end": 25
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "**Store selection:** If the user names a store (a store is a standalone OpenSpec repo registered on this machine) or the work lives in one, run `openspec store…",
+      "",
+      "**Project check:** These steps expect a project that already uses OpenSpec. Before the first step that writes anything (`new change`, `archive`, `sync specs`, …",
+      "",
+      "One `\"root\": null` is not about setup: when a `status` error message starts with `Declared in` or `Invalid store declaration in` and names this project's `open…",
+      "",
+      "Otherwise, with no root, what happens next depends on how this workflow was reached:",
+      "",
+      "- **Auto-selected**: you chose this workflow yourself, without the user naming OpenSpec, naming this skill, or running its slash command. Stop using OpenSpec a…",
+      "- **Explicit OpenSpec request**: the user named OpenSpec, named this skill, or ran its slash command. Stop before writing and ask how to proceed: set this proj…"
+     ],
+     "total": 12
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 29,
+    "tokens": 583,
+    "first": {
+     "name": "openspec/changes/archive/2025-10-14-add-github-copilot-prompts/specs/cli-init/spec.md:markdown",
+     "start": 20,
+     "end": 48
+    },
+    "others": [
+     {
+      "name": "openspec/changes/archive/2025-10-22-add-cline-support/specs/cli-init/spec.md:markdown",
+      "start": 69,
+      "end": 97
+     },
+     {
+      "name": "openspec/changes/archive/2025-10-22-add-crush-support/specs/cli-init/spec.md:markdown",
+      "start": 39,
+      "end": 67
+     },
+     {
+      "name": "openspec/changes/archive/2025-10-22-add-factory-slash-commands/specs/cli-init/spec.md:markdown",
+      "start": 26,
+      "end": 54
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
     "format": "markup",
     "lines": 89,
     "tokens": 1672,
-    "firstFile": {
+    "first": {
      "name": "assets/openspec_pixel_light.svg",
      "start": 1,
      "end": 89
     },
-    "secondFile": {
-     "name": "website/public/openspec-pixel.svg",
-     "start": 1,
-     "end": 89
-    }
+    "others": [
+     {
+      "name": "website/public/openspec-pixel.svg",
+      "start": 1,
+      "end": 89
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markdown",
+    "lines": 42,
+    "tokens": 827,
+    "first": {
+     "name": "openspec/changes/archive/2025-10-22-add-factory-slash-commands/specs/cli-init/spec.md:markdown",
+     "start": 13,
+     "end": 54
+    },
+    "others": [
+     {
+      "name": "openspec/changes/archive/2025-12-30-add-antigravity-support/specs/cli-init/spec.md:markdown",
+      "start": 41,
+      "end": 82
+     },
+     {
+      "name": "openspec/changes/archive/2025-12-30-fix-cline-workflows-implementation/specs/cli-init/spec.md:markdown",
+      "start": 41,
+      "end": 82
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 162,
     "tokens": 1439,
-    "firstFile": {
+    "first": {
      "name": "openspec/changes/archive/2026-02-17-add-opsx-onboard-skill/specs/opsx-onboard-skill/spec.md:markdown",
      "start": 1,
      "end": 162
     },
-    "secondFile": {
-     "name": "openspec/specs/opsx-onboard-skill/spec.md:markdown",
-     "start": 6,
-     "end": 166
-    }
+    "others": [
+     {
+      "name": "openspec/specs/opsx-onboard-skill/spec.md:markdown",
+      "start": 6,
+      "end": 166
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 167,
     "tokens": 1357,
-    "firstFile": {
+    "first": {
      "name": "openspec/changes/archive/2025-12-21-add-config-command/specs/cli-config/spec.md:markdown",
      "start": 7,
      "end": 173
     },
-    "secondFile": {
-     "name": "openspec/specs/cli-config/spec.md:markdown",
-     "start": 5,
-     "end": 170
-    }
+    "others": [
+     {
+      "name": "openspec/specs/cli-config/spec.md:markdown",
+      "start": 5,
+      "end": 170
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "markdown",
-    "lines": 117,
-    "tokens": 1226,
-    "firstFile": {
-     "name": "openspec/changes/archive/2026-02-17-project-config/specs/config-loading/spec.md:markdown",
-     "start": 3,
-     "end": 119
+    "lines": 14,
+    "tokens": 642,
+    "first": {
+     "name": "skills/openspec-apply-change/SKILL.md:markdown",
+     "start": 14,
+     "end": 27
     },
-    "secondFile": {
-     "name": "openspec/specs/config-loading/spec.md:markdown",
-     "start": 6,
-     "end": 121
-    }
+    "others": [
+     {
+      "name": "skills/openspec-propose/SKILL.md:markdown",
+      "start": 28,
+      "end": 41
+     },
+     {
+      "name": "skills/openspec-update-change/SKILL.md:markdown",
+      "start": 14,
+      "end": 27
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 143,
-    "tokens": 1220,
-    "firstFile": {
-     "name": "openspec/changes/archive/2026-02-17-merge-init-experimental/specs/legacy-cleanup/spec.md:markdown",
-     "start": 1,
-     "end": 143
+    "lines": 14,
+    "tokens": 637,
+    "first": {
+     "name": "skills/openspec-apply-change/SKILL.md:markdown",
+     "start": 12,
+     "end": 25
     },
-    "secondFile": {
-     "name": "openspec/specs/legacy-cleanup/spec.md:markdown",
-     "start": 6,
-     "end": 147
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 69,
-    "tokens": 1152,
-    "firstFile": {
-     "name": "openspec/changes/archive/2025-12-30-add-antigravity-support/specs/cli-update/spec.md:markdown",
-     "start": 24,
-     "end": 92
-    },
-    "secondFile": {
-     "name": "openspec/changes/archive/2025-12-30-fix-cline-workflows-implementation/specs/cli-update/spec.md:markdown",
-     "start": 24,
-     "end": 92
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 116,
-    "tokens": 1144,
-    "firstFile": {
-     "name": "openspec/changes/archive/2026-01-09-add-posthog-analytics/specs/telemetry/spec.md:markdown",
-     "start": 1,
-     "end": 116
-    },
-    "secondFile": {
-     "name": "openspec/specs/telemetry/spec.md:markdown",
-     "start": 7,
-     "end": 122
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 88,
-    "tokens": 1124,
-    "firstFile": {
-     "name": "openspec/changes/archive/2026-02-17-project-local-schemas/specs/schema-resolution/spec.md:markdown",
-     "start": 1,
-     "end": 88
-    },
-    "secondFile": {
-     "name": "openspec/specs/schema-resolution/spec.md:markdown",
-     "start": 5,
-     "end": 91
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 101,
-    "tokens": 1115,
-    "firstFile": {
-     "name": "openspec/changes/archive/2025-08-19-bulk-validation-interactive-selection/specs/cli-validate/spec.md:markdown",
-     "start": 49,
-     "end": 149
-    },
-    "secondFile": {
-     "name": "openspec/specs/cli-validate/spec.md:markdown",
-     "start": 166,
-     "end": 266
-    }
+    "others": [
+     {
+      "name": "skills/openspec-archive-change/SKILL.md:markdown",
+      "start": 12,
+      "end": 25
+     },
+     {
+      "name": "skills/openspec-sync-specs/SKILL.md:markdown",
+      "start": 14,
+      "end": 27
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -487,6 +619,361 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 207,
+   "lines": 45433,
+   "tokens": 206114,
+   "clones": 80,
+   "duplicatedLines": 1153,
+   "duplicatedTokens": 6332,
+   "percentage": 2.54,
+   "percentageTokens": 3.07,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 177,
+     "lines": 43000,
+     "clones": 80,
+     "duplicatedLines": 1153,
+     "percentage": 2.68
+    },
+    {
+     "format": "javascript",
+     "sources": 11,
+     "lines": 1088,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 786,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "tsx",
+     "sources": 8,
+     "lines": 385,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 17,
+     "tokens": 223,
+     "first": {
+      "name": "src/ui/ascii-patterns.ts",
+      "start": 106,
+      "end": 122
+     },
+     "others": [
+      {
+       "name": "src/ui/ascii-patterns.ts",
+       "start": 119,
+       "end": 135
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  `${_}${_}${D}${_}${F}${F}${_}${D}`,",
+       "  `${_}${_}${_}${F}${_}${_}${F}${_}`,",
+       "  `${_}${_}${_}${_}${F}${F}${_}${_}`,",
+       "],",
+       "// Frame 7: Full logo",
+       "[",
+       "  `${_}${_}${_}${_}${_}${_}${_}${_}`, // padding row 1",
+       "  `${_}${_}${_}${_}${_}${_}${_}${_}`, // padding row 2",
+       "  `${_}${_}${_}${_}${_}${_}${_}${_}`, // padding row 3",
+       "  `${_}${_}${_}${_}${F}${F}${_}${_}`,"
+      ],
+      "total": 17
+     },
+     "excerptSecond": {
+      "lines": [
+       "  `${_}${_}${F}${_}${F}${F}${_}${F}`,",
+       "  `${_}${_}${_}${F}${_}${_}${F}${_}`,",
+       "  `${_}${_}${_}${_}${F}${F}${_}${_}`,",
+       "],",
+       "// Frame 8: Hold complete logo",
+       "[",
+       "  `${_}${_}${_}${_}${_}${_}${_}${_}`, // padding row 1",
+       "  `${_}${_}${_}${_}${_}${_}${_}${_}`, // padding row 2",
+       "  `${_}${_}${_}${_}${_}${_}${_}${_}`, // padding row 3",
+       "  `${_}${_}${_}${_}${F}${F}${_}${_}`,"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 54,
+     "first": {
+      "name": "src/core/command-generation/adapters/crush.ts",
+      "start": 20,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "src/core/command-generation/adapters/devin.ts",
+       "start": 26,
+       "end": 40
+      },
+      {
+       "name": "src/core/command-generation/adapters/lingma.ts",
+       "start": 20,
+       "end": 34
+      },
+      {
+       "name": "src/core/command-generation/adapters/qoder.ts",
+       "start": 20,
+       "end": 34
+      },
+      {
+       "name": "src/core/command-generation/adapters/zcode.ts",
+       "start": 23,
+       "end": 37
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "    return path.join('.crush', 'commands', 'opsx', `${commandId}.md`);",
+       "  },",
+       "",
+       "  formatFile(content: CommandContent): string {",
+       "    return `---",
+       "name: ${escapeYamlValue(content.name)}",
+       "description: ${escapeYamlValue(content.description)}",
+       "category: ${escapeYamlValue(content.category)}",
+       "tags: ${formatTagsArray(content.tags)}",
+       "---"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 24,
+     "tokens": 107,
+     "first": {
+      "name": "src/core/completions/installers/bash-installer.ts",
+      "start": 251,
+      "end": 274
+     },
+     "others": [
+      {
+       "name": "src/core/completions/installers/fish-installer.ts",
+       "start": 84,
+       "end": 107
+      },
+      {
+       "name": "src/core/completions/installers/zsh-installer.ts",
+       "start": 262,
+       "end": 285
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "        'If completions are not working, try: exec bash',",
+       "      ],",
+       "    };",
+       "  }",
+       "  // File exists but content is different - this is an update",
+       "  isUpdate = true;",
+       "} catch (error: any) {",
+       "  // File doesn't exist or can't be read, proceed with installation",
+       "  console.debug(`Unable to read existing completion file at ${targetPath}: ${error.message}`);",
+       "}"
+      ],
+      "total": 24
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 202,
+     "first": {
+      "name": "src/core/completions/generators/powershell-generator.ts",
+      "start": 89,
+      "end": 110
+     },
+     "others": [
+      {
+       "name": "src/core/completions/generators/powershell-generator.ts",
+       "start": 155,
+       "end": 176
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 162,
+     "first": {
+      "name": "src/ui/ascii-patterns.ts",
+      "start": 34,
+      "end": 42
+     },
+     "others": [
+      {
+       "name": "src/ui/ascii-patterns.ts",
+       "start": 35,
+       "end": 43
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 73,
+     "first": {
+      "name": "src/core/artifact-graph/resolver.ts",
+      "start": 315,
+      "end": 323
+     },
+     "others": [
+      {
+       "name": "src/core/artifact-graph/resolver.ts",
+       "start": 340,
+       "end": 348
+      },
+      {
+       "name": "src/core/artifact-graph/resolver.ts",
+       "start": 364,
+       "end": 372
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 144,
+     "first": {
+      "name": "src/ui/ascii-patterns.ts",
+      "start": 41,
+      "end": 52
+     },
+     "others": [
+      {
+       "name": "src/ui/ascii-patterns.ts",
+       "start": 54,
+       "end": 65
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 72,
+     "first": {
+      "name": "src/ui/ascii-patterns.ts",
+      "start": 43,
+      "end": 50
+     },
+     "others": [
+      {
+       "name": "src/ui/ascii-patterns.ts",
+       "start": 82,
+       "end": 89
+      },
+      {
+       "name": "src/ui/ascii-patterns.ts",
+       "start": 95,
+       "end": 102
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 132,
+     "first": {
+      "name": "src/core/completions/generators/bash-generator.ts",
+      "start": 92,
+      "end": 105
+     },
+     "others": [
+      {
+       "name": "src/core/completions/generators/bash-generator.ts",
+       "start": 141,
+       "end": 154
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 19,
+     "tokens": 131,
+     "first": {
+      "name": "src/core/converters/json-converter.ts",
+      "start": 43,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "src/core/validation/validator.ts",
+       "start": 893,
+       "end": 913
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 13,
+    "minified": 0,
+    "sample": [
+     "src/core/templates/workflows/apply-change.ts",
+     "src/core/templates/workflows/archive-change.ts",
+     "src/core/templates/workflows/bulk-archive-change.ts",
+     "src/core/templates/workflows/continue-change.ts",
+     "src/core/templates/workflows/explore.ts",
+     "src/core/templates/workflows/feedback.ts",
+     "src/core/templates/workflows/ff-change.ts",
+     "src/core/templates/workflows/new-change.ts",
+     "src/core/templates/workflows/onboard.ts",
+     "src/core/templates/workflows/propose.ts",
+     "src/core/templates/workflows/sync-specs.ts",
+     "src/core/templates/workflows/update-change.ts",
+     "src/core/templates/workflows/verify-change.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:09:42.617Z",
+  "jscpdVersion": "5.4.0"
  }
 }

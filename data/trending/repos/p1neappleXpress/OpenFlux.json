@@ -9,10 +9,12 @@
    "starsToday": 198,
    "headSha": "6443d42ac3fe643e702c8774bc4508e2c5ec222c",
    "sources": 52,
-   "lines": 8122,
+   "lines": 7510,
    "clones": 14,
    "duplicatedLines": 351,
-   "percentage": 4.32,
+   "percentage": 4.67,
+   "codePercentage": 5.02,
+   "codeSources": 42,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 355,
    "headSha": "4f1bdb554c262f3ae9adbfe317a092c6b929ba7d",
    "sources": 56,
-   "lines": 8527,
+   "lines": 7915,
    "clones": 14,
    "duplicatedLines": 351,
-   "percentage": 4.12,
+   "percentage": 4.43,
+   "codePercentage": 4.84,
+   "codeSources": 44,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,16 +46,16 @@
   "starsToday": 355,
   "defaultBranch": "main",
   "headSha": "4f1bdb554c262f3ae9adbfe317a092c6b929ba7d",
-  "durationMs": 462,
+  "durationMs": 40,
   "total": {
    "sources": 56,
-   "lines": 8527,
-   "tokens": 45977,
+   "lines": 7915,
+   "tokens": 45812,
    "clones": 14,
    "duplicatedLines": 351,
    "duplicatedTokens": 2698,
-   "percentage": 4.12,
-   "percentageTokens": 5.87
+   "percentage": 4.43,
+   "percentageTokens": 5.89
   },
   "formats": [
    {
@@ -59,16 +63,16 @@
     "sources": 27,
     "lines": 5566,
     "clones": 13,
-    "duplicatedLines": 332,
-    "percentage": 5.96
+    "duplicatedLines": 345,
+    "percentage": 6.2
    },
    {
     "format": "bash",
     "sources": 15,
-    "lines": 1175,
+    "lines": 871,
     "clones": 1,
-    "duplicatedLines": 19,
-    "percentage": 1.62
+    "duplicatedLines": 6,
+    "percentage": 0.69
    },
    {
     "format": "swift",
@@ -87,17 +91,9 @@
     "percentage": 0
    },
    {
-    "format": "text",
-    "sources": 2,
-    "lines": 356,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -109,6 +105,14 @@
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 2,
+    "lines": 42,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
    }
   ],
   "topClones": [
@@ -116,152 +120,525 @@
     "format": "go",
     "lines": 221,
     "tokens": 1622,
-    "firstFile": {
+    "first": {
      "name": "tunnel/rawsocket_darwin.go",
      "start": 1,
      "end": 221
     },
-    "secondFile": {
-     "name": "tunnel/rawsocket_linux.go",
-     "start": 1,
-     "end": 221
-    }
+    "others": [
+     {
+      "name": "tunnel/rawsocket_linux.go",
+      "start": 1,
+      "end": 221
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "package tunnel",
+      "",
+      "import (",
+      "    \"fmt\"",
+      "    \"net\"",
+      "    \"sync\"",
+      "    \"sync/atomic\"",
+      "    \"syscall\"",
+      "    \"time\"",
+      ""
+     ],
+     "total": 221
+    },
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 17,
     "tokens": 178,
-    "firstFile": {
+    "first": {
      "name": "tunnel/rawsocket_darwin.go",
      "start": 114,
      "end": 130
     },
-    "secondFile": {
-     "name": "tunnel/rawsocket_darwin.go",
-     "start": 153,
-     "end": 169
-    }
+    "others": [
+     {
+      "name": "tunnel/rawsocket_darwin.go",
+      "start": 153,
+      "end": 169
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "copy(pktCopy[16:20], []byte{10, 10, 10, 2})",
+      "",
+      "pktCopy[10] = 0",
+      "pktCopy[11] = 0",
+      "ipChecksumVal := network.IPChecksum(pktCopy[:20])",
+      "pktCopy[10] = byte(ipChecksumVal >> 8)",
+      "pktCopy[11] = byte(ipChecksumVal & 0xFF)",
+      "",
+      "ipHeaderLen := int(pktCopy[0]&0x0F) * 4",
+      "tcpHeader := pktCopy[ipHeaderLen:]"
+     ],
+     "total": 17
+    },
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 17,
     "tokens": 154,
-    "firstFile": {
+    "first": {
      "name": "transport/oneme/max_call.go",
      "start": 346,
      "end": 362
     },
-    "secondFile": {
-     "name": "transport/oneme/max_call.go",
-     "start": 471,
-     "end": 487
-    }
+    "others": [
+     {
+      "name": "transport/oneme/max_call.go",
+      "start": 471,
+      "end": 487
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "h.msgHandler = func(text string) {",
+      "    var data map[string]interface{}",
+      "    json.Unmarshal([]byte(text), &data)",
+      "",
+      "    if h.localID == 0 {",
+      "        if conv, ok := data[\"conversation\"].(map[string]interface{}); ok {",
+      "            if parts, ok := conv[\"participants\"].([]interface{}); ok {",
+      "                for _, p := range parts {",
+      "                    part := p.(map[string]interface{})",
+      "                    roles, _ := part[\"roles\"].([]interface{})"
+     ],
+     "total": 17
+    },
+    "kind": "code"
    },
    {
     "format": "bash",
     "lines": 20,
     "tokens": 108,
-    "firstFile": {
+    "first": {
      "name": "README.md:bash",
      "start": 120,
      "end": 139
     },
-    "secondFile": {
-     "name": "README.ru.md:bash",
-     "start": 121,
-     "end": 141
-    }
+    "others": [
+     {
+      "name": "README.ru.md:bash",
+      "start": 121,
+      "end": 141
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "go",
     "lines": 8,
     "tokens": 87,
-    "firstFile": {
+    "first": {
      "name": "transport/oneme/max_call.go",
      "start": 237,
      "end": 244
     },
-    "secondFile": {
-     "name": "transport/oneme/max_call.go",
-     "start": 257,
-     "end": 264
-    }
+    "others": [
+     {
+      "name": "transport/oneme/max_call.go",
+      "start": 257,
+      "end": 264
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 11,
     "tokens": 76,
-    "firstFile": {
+    "first": {
      "name": "export_ios.go",
      "start": 164,
      "end": 174
     },
-    "secondFile": {
-     "name": "export_ios_packet.go",
-     "start": 73,
-     "end": 83
-    }
+    "others": [
+     {
+      "name": "export_ios_packet.go",
+      "start": 73,
+      "end": 83
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 12,
     "tokens": 72,
-    "firstFile": {
+    "first": {
      "name": "transport/oneme/max_call.go",
      "start": 403,
      "end": 414
     },
-    "secondFile": {
-     "name": "transport/oneme/max_call.go",
-     "start": 506,
-     "end": 517
-    }
+    "others": [
+     {
+      "name": "transport/oneme/max_call.go",
+      "start": 506,
+      "end": 517
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 13,
     "tokens": 67,
-    "firstFile": {
+    "first": {
      "name": "tunnel/rawsocket_darwin.go",
      "start": 193,
      "end": 205
     },
-    "secondFile": {
-     "name": "tunnel/rawsocket_windows.go",
-     "start": 83,
-     "end": 94
-    }
+    "others": [
+     {
+      "name": "tunnel/rawsocket_windows.go",
+      "start": 83,
+      "end": 94
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 6,
     "tokens": 60,
-    "firstFile": {
+    "first": {
      "name": "tunnel/rawsocket_darwin.go",
      "start": 216,
      "end": 221
     },
-    "secondFile": {
-     "name": "tunnel/rawsocket_windows.go",
-     "start": 111,
-     "end": 116
-    }
+    "others": [
+     {
+      "name": "tunnel/rawsocket_windows.go",
+      "start": 111,
+      "end": 116
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 10,
     "tokens": 57,
-    "firstFile": {
+    "first": {
      "name": "transport/oneme/max_call.go",
      "start": 362,
      "end": 371
     },
-    "secondFile": {
-     "name": "transport/oneme/max_call.go",
-     "start": 487,
-     "end": 496
-    }
+    "others": [
+     {
+      "name": "transport/oneme/max_call.go",
+      "start": 487,
+      "end": 496
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 44,
+   "lines": 6947,
+   "tokens": 37897,
+   "clones": 12,
+   "duplicatedLines": 336,
+   "duplicatedTokens": 2537,
+   "percentage": 4.84,
+   "percentageTokens": 6.69,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 25,
+     "lines": 5313,
+     "clones": 12,
+     "duplicatedLines": 336,
+     "percentage": 6.32
+    },
+    {
+     "format": "bash",
+     "sources": 13,
+     "lines": 845,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "swift",
+     "sources": 5,
+     "lines": 615,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 221,
+     "tokens": 1622,
+     "first": {
+      "name": "tunnel/rawsocket_darwin.go",
+      "start": 1,
+      "end": 221
+     },
+     "others": [
+      {
+       "name": "tunnel/rawsocket_linux.go",
+       "start": 1,
+       "end": 221
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "package tunnel",
+       "",
+       "import (",
+       "    \"fmt\"",
+       "    \"net\"",
+       "    \"sync\"",
+       "    \"sync/atomic\"",
+       "    \"syscall\"",
+       "    \"time\"",
+       ""
+      ],
+      "total": 221
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 17,
+     "tokens": 178,
+     "first": {
+      "name": "tunnel/rawsocket_darwin.go",
+      "start": 114,
+      "end": 130
+     },
+     "others": [
+      {
+       "name": "tunnel/rawsocket_darwin.go",
+       "start": 153,
+       "end": 169
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "copy(pktCopy[16:20], []byte{10, 10, 10, 2})",
+       "",
+       "pktCopy[10] = 0",
+       "pktCopy[11] = 0",
+       "ipChecksumVal := network.IPChecksum(pktCopy[:20])",
+       "pktCopy[10] = byte(ipChecksumVal >> 8)",
+       "pktCopy[11] = byte(ipChecksumVal & 0xFF)",
+       "",
+       "ipHeaderLen := int(pktCopy[0]&0x0F) * 4",
+       "tcpHeader := pktCopy[ipHeaderLen:]"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 17,
+     "tokens": 154,
+     "first": {
+      "name": "transport/oneme/max_call.go",
+      "start": 346,
+      "end": 362
+     },
+     "others": [
+      {
+       "name": "transport/oneme/max_call.go",
+       "start": 471,
+       "end": 487
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "h.msgHandler = func(text string) {",
+       "    var data map[string]interface{}",
+       "    json.Unmarshal([]byte(text), &data)",
+       "",
+       "    if h.localID == 0 {",
+       "        if conv, ok := data[\"conversation\"].(map[string]interface{}); ok {",
+       "            if parts, ok := conv[\"participants\"].([]interface{}); ok {",
+       "                for _, p := range parts {",
+       "                    part := p.(map[string]interface{})",
+       "                    roles, _ := part[\"roles\"].([]interface{})"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 8,
+     "tokens": 87,
+     "first": {
+      "name": "transport/oneme/max_call.go",
+      "start": 237,
+      "end": 244
+     },
+     "others": [
+      {
+       "name": "transport/oneme/max_call.go",
+       "start": 257,
+       "end": 264
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 11,
+     "tokens": 76,
+     "first": {
+      "name": "export_ios.go",
+      "start": 164,
+      "end": 174
+     },
+     "others": [
+      {
+       "name": "export_ios_packet.go",
+       "start": 73,
+       "end": 83
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 12,
+     "tokens": 72,
+     "first": {
+      "name": "transport/oneme/max_call.go",
+      "start": 403,
+      "end": 414
+     },
+     "others": [
+      {
+       "name": "transport/oneme/max_call.go",
+       "start": 506,
+       "end": 517
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 13,
+     "tokens": 67,
+     "first": {
+      "name": "tunnel/rawsocket_darwin.go",
+      "start": 193,
+      "end": 205
+     },
+     "others": [
+      {
+       "name": "tunnel/rawsocket_windows.go",
+       "start": 83,
+       "end": 94
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 60,
+     "first": {
+      "name": "tunnel/rawsocket_darwin.go",
+      "start": 216,
+      "end": 221
+     },
+     "others": [
+      {
+       "name": "tunnel/rawsocket_windows.go",
+       "start": 111,
+       "end": 116
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 57,
+     "first": {
+      "name": "transport/oneme/max_call.go",
+      "start": 362,
+      "end": 371
+     },
+     "others": [
+      {
+       "name": "transport/oneme/max_call.go",
+       "start": 487,
+       "end": 496
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 7,
+     "tokens": 57,
+     "first": {
+      "name": "tunnel/rawsocket_darwin.go",
+      "start": 137,
+      "end": 143
+     },
+     "others": [
+      {
+       "name": "tunnel/rawsocket_windows.go",
+       "start": 66,
+       "end": 72
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:58:22.927Z",
+  "jscpdVersion": "5.4.0"
  }
 }

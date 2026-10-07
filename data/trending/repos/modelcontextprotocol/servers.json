@@ -9,10 +9,12 @@
    "starsToday": 50,
    "headSha": "f46d9578190b476b3501923ea8977d899e8db2cb",
    "sources": 147,
-   "lines": 22053,
+   "lines": 22009,
    "clones": 106,
    "duplicatedLines": 1413,
-   "percentage": 6.41,
+   "percentage": 6.42,
+   "codePercentage": 2.78,
+   "codeSources": 68,
    "healthScore": 69.9,
    "healthGrade": "C"
   }
@@ -28,15 +30,15 @@
   "starsToday": 50,
   "defaultBranch": "main",
   "headSha": "f46d9578190b476b3501923ea8977d899e8db2cb",
-  "durationMs": 988,
+  "durationMs": 44,
   "total": {
    "sources": 147,
-   "lines": 22053,
-   "tokens": 126964,
+   "lines": 22009,
+   "tokens": 126799,
    "clones": 106,
    "duplicatedLines": 1413,
    "duplicatedTokens": 7854,
-   "percentage": 6.41,
+   "percentage": 6.42,
    "percentageTokens": 6.19
   },
   "formats": [
@@ -83,7 +85,7 @@
    {
     "format": "bash",
     "sources": 12,
-    "lines": 724,
+    "lines": 674,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -91,7 +93,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -116,153 +118,371 @@
   "topClones": [
    {
     "format": "markdown",
+    "lines": 11,
+    "tokens": 180,
+    "first": {
+     "name": "src/everything/README.md:markdown",
+     "start": 58,
+     "end": 68
+    },
+    "others": [
+     {
+      "name": "src/filesystem/README.md:markdown",
+      "start": 284,
+      "end": 294
+     },
+     {
+      "name": "src/git/README.md:markdown",
+      "start": 177,
+      "end": 187
+     },
+     {
+      "name": "src/sequentialthinking/README.md:markdown",
+      "start": 138,
+      "end": 148
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "[![Install with Docker in VS Code](https://img.shields.io/badge/VS_Code-Docker-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insider…",
+      "",
+      "For manual installation, you can configure the MCP server using one of these methods:",
+      "",
+      "**Method 1: User Configuration (Recommended)**",
+      "Add the configuration to your user-level MCP configuration file. Open the Command Palette (`Ctrl + Shift + P`) and run `MCP: Open User Configuration`. This wil…",
+      "",
+      "**Method 2: Workspace Configuration**",
+      "Alternatively, you can add the configuration to a file called `.vscode/mcp.json` in your workspace. This will allow you to share the configuration with others.",
+      ""
+     ],
+     "total": 11
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 6,
+    "tokens": 52,
+    "first": {
+     "name": "src/everything/__tests__/tools.test.ts",
+     "start": 614,
+     "end": 619
+    },
+    "others": [
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 723,
+      "end": 728
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 739,
+      "end": 744
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 766,
+      "end": 771
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 870,
+      "end": 875
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 899,
+      "end": 904
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 928,
+      "end": 933
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 970,
+      "end": 975
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "const mockServer = {",
+      "  registerTool: vi.fn((name: string, config: any, handler: Function) => {",
+      "    handlers.set(name, handler);",
+      "  }),",
+      "  server: {",
+      "    getClientCapabilities: vi.fn(() => ({ elicitation: {} })),"
+     ],
+     "total": 6
+    },
+    "excerptSecond": {
+     "lines": [
+      "const mockServer = {",
+      "  registerTool: vi.fn((name: string, config: any, handler: Function) => {",
+      "    handlers.set(name, handler);",
+      "  }),",
+      "  server: {",
+      "    getClientCapabilities: vi.fn(() => ({ elicitation: { form: {} } })),"
+     ],
+     "total": 6
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 8,
+    "tokens": 71,
+    "first": {
+     "name": "src/everything/__tests__/tools.test.ts",
+     "start": 544,
+     "end": 551
+    },
+    "others": [
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 612,
+      "end": 619
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 721,
+      "end": 728
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 737,
+      "end": 744
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 926,
+      "end": 933
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 1034,
+      "end": 1041
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "it('should register when client supports sampling', () => {",
+      "  const handlers: Map<string, Function> = new Map();",
+      "  const mockServer = {",
+      "    registerTool: vi.fn((name: string, config: any, handler: Function) => {",
+      "      handlers.set(name, handler);",
+      "    }),",
+      "    server: {",
+      "      getClientCapabilities: vi.fn(() => ({ sampling: {} })),"
+     ],
+     "total": 8
+    },
+    "excerptSecond": {
+     "lines": [
+      "it('should register when client supports elicitation', () => {",
+      "  const handlers: Map<string, Function> = new Map();",
+      "  const mockServer = {",
+      "    registerTool: vi.fn((name: string, config: any, handler: Function) => {",
+      "      handlers.set(name, handler);",
+      "    }),",
+      "    server: {",
+      "      getClientCapabilities: vi.fn(() => ({ elicitation: {} })),"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 71,
+    "first": {
+     "name": "src/everything/__tests__/tools.test.ts",
+     "start": 740,
+     "end": 748
+    },
+    "others": [
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 767,
+      "end": 775
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 871,
+      "end": 879
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 900,
+      "end": 908
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 929,
+      "end": 937
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 971,
+      "end": 979
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 56,
+    "first": {
+     "name": "src/everything/__tests__/tools.test.ts",
+     "start": 571,
+     "end": 579
+    },
+    "others": [
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 643,
+      "end": 651
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 668,
+      "end": 676
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 692,
+      "end": 700
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 763,
+      "end": 771
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 70,
+    "first": {
+     "name": "src/everything/__tests__/tools.test.ts",
+     "start": 614,
+     "end": 623
+    },
+    "others": [
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 646,
+      "end": 655
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 671,
+      "end": 680
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 695,
+      "end": 704
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
     "lines": 39,
     "tokens": 192,
-    "firstFile": {
+    "first": {
      "name": "src/everything/README.md:markdown",
      "start": 58,
      "end": 96
     },
-    "secondFile": {
-     "name": "src/memory/README.md:markdown",
-     "start": 241,
-     "end": 287
-    }
+    "others": [
+     {
+      "name": "src/memory/README.md:markdown",
+      "start": 241,
+      "end": 287
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "typescript",
     "lines": 26,
     "tokens": 188,
-    "firstFile": {
+    "first": {
      "name": "src/filesystem/__tests__/directory-tree.test.ts",
      "start": 17,
      "end": 42
     },
-    "secondFile": {
-     "name": "src/filesystem/index.ts",
-     "start": 572,
-     "end": 597
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 180,
-    "firstFile": {
-     "name": "src/everything/README.md:markdown",
-     "start": 58,
-     "end": 68
-    },
-    "secondFile": {
-     "name": "src/filesystem/README.md:markdown",
-     "start": 284,
-     "end": 294
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 180,
-    "firstFile": {
-     "name": "src/everything/README.md:markdown",
-     "start": 58,
-     "end": 68
-    },
-    "secondFile": {
-     "name": "src/git/README.md:markdown",
-     "start": 177,
-     "end": 187
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 180,
-    "firstFile": {
-     "name": "src/everything/README.md:markdown",
-     "start": 58,
-     "end": 68
-    },
-    "secondFile": {
-     "name": "src/sequentialthinking/README.md:markdown",
-     "start": 138,
-     "end": 148
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 43,
-    "tokens": 148,
-    "firstFile": {
-     "name": "src/fetch/README.md:markdown",
-     "start": 111,
-     "end": 153
-    },
-    "secondFile": {
-     "name": "src/time/README.md:markdown",
-     "start": 135,
-     "end": 177
-    }
+    "others": [
+     {
+      "name": "src/filesystem/index.ts",
+      "start": 572,
+      "end": 597
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "typescript",
-    "lines": 18,
-    "tokens": 127,
-    "firstFile": {
+    "lines": 21,
+    "tokens": 94,
+    "first": {
      "name": "src/everything/__tests__/tools.test.ts",
-     "start": 760,
-     "end": 777
+     "start": 768,
+     "end": 788
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 872,
+      "end": 892
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 901,
+      "end": 921
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 14,
+    "tokens": 90,
+    "first": {
      "name": "src/everything/__tests__/tools.test.ts",
-     "start": 833,
-     "end": 850
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 25,
-    "tokens": 123,
-    "firstFile": {
-     "name": "src/memory/version.ts",
-     "start": 3,
-     "end": 27
+     "start": 647,
+     "end": 660
     },
-    "secondFile": {
-     "name": "src/sequentialthinking/version.ts",
-     "start": 3,
-     "end": 33
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 38,
-    "tokens": 115,
-    "firstFile": {
-     "name": "src/everything/tools/trigger-elicitation-request-async.ts",
-     "start": 185,
-     "end": 222
-    },
-    "secondFile": {
-     "name": "src/everything/tools/trigger-sampling-request-async.ts",
-     "start": 181,
-     "end": 218
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 34,
-    "tokens": 113,
-    "firstFile": {
-     "name": "src/fetch/README.md:markdown",
-     "start": 76,
-     "end": 109
-    },
-    "secondFile": {
-     "name": "src/time/README.md:markdown",
-     "start": 104,
-     "end": 133
-    }
+    "others": [
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 672,
+      "end": 685
+     },
+     {
+      "name": "src/everything/__tests__/tools.test.ts",
+      "start": 696,
+      "end": 709
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -420,6 +640,319 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 68,
+   "lines": 8932,
+   "tokens": 37764,
+   "clones": 13,
+   "duplicatedLines": 248,
+   "duplicatedTokens": 1002,
+   "percentage": 2.78,
+   "percentageTokens": 2.65,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 51,
+     "lines": 6738,
+     "clones": 13,
+     "duplicatedLines": 248,
+     "percentage": 3.68
+    },
+    {
+     "format": "python",
+     "sources": 7,
+     "lines": 1376,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 57,
+     "first": {
+      "name": "src/everything/vitest.config.ts",
+      "start": 1,
+      "end": 14
+     },
+     "others": [
+      {
+       "name": "src/filesystem/vitest.config.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "src/memory/vitest.config.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "src/sequentialthinking/vitest.config.ts",
+       "start": 1,
+       "end": 14
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "import { defineConfig } from 'vitest/config';",
+       "",
+       "export default defineConfig({",
+       "  test: {",
+       "    globals: true,",
+       "    environment: 'node',",
+       "    include: ['**/__tests__/**/*.test.ts'],",
+       "    coverage: {",
+       "      provider: 'v8',",
+       "      include: ['**/*.ts'],"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 25,
+     "tokens": 123,
+     "first": {
+      "name": "src/memory/version.ts",
+      "start": 3,
+      "end": 27
+     },
+     "others": [
+      {
+       "name": "src/sequentialthinking/version.ts",
+       "start": 3,
+       "end": 33
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import { fileURLToPath } from 'url';",
+       "",
+       "export function resolvePackageVersion(): string {",
+       "  const require = createRequire(import.meta.url);",
+       "  const moduleDir = path.dirname(fileURLToPath(import.meta.url));",
+       "  const candidates = [",
+       "    path.join(moduleDir, 'package.json'),",
+       "    path.join(moduleDir, '..', 'package.json'),",
+       "  ];",
+       ""
+      ],
+      "total": 25
+     },
+     "excerptSecond": {
+      "lines": [
+       "import { fileURLToPath } from 'node:url';",
+       "",
+       "/**",
+       " * Resolve this package's version from package.json.",
+       " *",
+       " * Works both from source (`src/sequentialthinking/`) and from the published",
+       " * layout (`dist/`), where package.json lives one directory up.",
+       " */",
+       "export function resolvePackageVersion(): string {",
+       "  const require = createRequire(import.meta.url);"
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 38,
+     "tokens": 115,
+     "first": {
+      "name": "src/everything/tools/trigger-elicitation-request-async.ts",
+      "start": 185,
+      "end": 222
+     },
+     "others": [
+      {
+       "name": "src/everything/tools/trigger-sampling-request-async.ts",
+       "start": 181,
+       "end": 218
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "// Check for timeout",
+       "if (attempts >= MAX_POLL_ATTEMPTS) {",
+       "  return {",
+       "    content: [",
+       "      {",
+       "        type: \"text\",",
+       "        text: `[TIMEOUT] Task timed out after ${MAX_POLL_ATTEMPTS} poll attempts\\n\\nProgress:\\n${statusMessages.join(",
+       "          \"\\n\""
+      ],
+      "total": 38
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 27,
+     "tokens": 112,
+     "first": {
+      "name": "src/everything/tools/trigger-elicitation-request-async.ts",
+      "start": 145,
+      "end": 171
+     },
+     "others": [
+      {
+       "name": "src/everything/tools/trigger-sampling-request-async.ts",
+       "start": 149,
+       "end": 175
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 30,
+     "tokens": 104,
+     "first": {
+      "name": "src/everything/prompts/resource.ts",
+      "start": 44,
+      "end": 73
+     },
+     "others": [
+      {
+       "name": "src/everything/tools/get-resource-reference.ts",
+       "start": 59,
+       "end": 87
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 19,
+     "tokens": 71,
+     "first": {
+      "name": "src/memory/index.ts",
+      "start": 321,
+      "end": 339
+     },
+     "others": [
+      {
+       "name": "src/memory/index.ts",
+       "start": 345,
+       "end": 364
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 70,
+     "first": {
+      "name": "src/everything/transports/streamableHttp.ts",
+      "start": 139,
+      "end": 150
+     },
+     "others": [
+      {
+       "name": "src/everything/transports/streamableHttp.ts",
+       "start": 166,
+       "end": 177
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 13,
+     "tokens": 69,
+     "first": {
+      "name": "src/everything/tools/trigger-elicitation-request-async.ts",
+      "start": 102,
+      "end": 114
+     },
+     "others": [
+      {
+       "name": "src/everything/tools/trigger-sampling-request-async.ts",
+       "start": 103,
+       "end": 115
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 65,
+     "first": {
+      "name": "src/filesystem/index.ts",
+      "start": 556,
+      "end": 562
+     },
+     "others": [
+      {
+       "name": "src/filesystem/index.ts",
+       "start": 657,
+       "end": 663
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 26,
+     "tokens": 51,
+     "first": {
+      "name": "src/everything/tools/toggle-simulated-logging.ts",
+      "start": 12,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "src/everything/tools/toggle-subscriber-updates.ts",
+       "start": 12,
+       "end": 40
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:32:05.958Z",
+  "jscpdVersion": "5.4.0"
  }
 }

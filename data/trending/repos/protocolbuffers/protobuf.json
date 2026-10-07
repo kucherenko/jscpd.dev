@@ -8,11 +8,13 @@
    "stars": 71961,
    "starsToday": 18,
    "headSha": "065d6fabf7345bd469844f5ed472664602570bc5",
-   "sources": 2777,
-   "lines": 1361826,
-   "clones": 16311,
-   "duplicatedLines": 449217,
-   "percentage": 32.99,
+   "sources": 2779,
+   "lines": 1352227,
+   "clones": 19753,
+   "duplicatedLines": 511226,
+   "percentage": 37.81,
+   "codePercentage": 17.9,
+   "codeSources": 1734,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,250 +30,752 @@
   "starsToday": 18,
   "defaultBranch": "main",
   "headSha": "065d6fabf7345bd469844f5ed472664602570bc5",
-  "durationMs": 5353,
+  "durationMs": 12159,
   "total": {
-   "sources": 2777,
-   "lines": 1361826,
-   "tokens": 10386420,
-   "clones": 16311,
-   "duplicatedLines": 449217,
-   "duplicatedTokens": 4220146,
-   "percentage": 32.99,
-   "percentageTokens": 40.63
+   "sources": 2779,
+   "lines": 1352227,
+   "tokens": 10384418,
+   "clones": 19753,
+   "duplicatedLines": 511226,
+   "duplicatedTokens": 4620443,
+   "percentage": 37.81,
+   "percentageTokens": 44.49
   },
   "formats": [
    {
     "format": "java",
     "sources": 278,
-    "lines": 342075,
-    "clones": 5065,
-    "duplicatedLines": 191934,
-    "percentage": 56.11
+    "lines": 341402,
+    "clones": 6070,
+    "duplicatedLines": 222663,
+    "percentage": 65.22
    },
    {
     "format": "csharp",
     "sources": 217,
-    "lines": 158672,
-    "clones": 2879,
-    "duplicatedLines": 74210,
-    "percentage": 46.77
+    "lines": 158560,
+    "clones": 4068,
+    "duplicatedLines": 89403,
+    "percentage": 56.38
    },
    {
     "format": "cpp",
     "sources": 521,
-    "lines": 310256,
-    "clones": 2476,
-    "duplicatedLines": 27244,
-    "percentage": 8.78
+    "lines": 309499,
+    "clones": 2763,
+    "duplicatedLines": 31442,
+    "percentage": 10.16
    },
    {
     "format": "c-header",
     "sources": 578,
     "lines": 188083,
-    "clones": 2321,
-    "duplicatedLines": 62021,
-    "percentage": 32.98
+    "clones": 2570,
+    "duplicatedLines": 66123,
+    "percentage": 35.16
    },
    {
     "format": "objectivec",
     "sources": 56,
     "lines": 69808,
-    "clones": 1747,
-    "duplicatedLines": 21803,
-    "percentage": 31.23
+    "clones": 2305,
+    "duplicatedLines": 27552,
+    "percentage": 39.47
    },
    {
     "format": "php",
     "sources": 151,
     "lines": 33269,
-    "clones": 852,
-    "duplicatedLines": 9781,
-    "percentage": 29.4
+    "clones": 889,
+    "duplicatedLines": 10445,
+    "percentage": 31.4
    },
    {
     "format": "protobuf",
     "sources": 286,
-    "lines": 50825,
-    "clones": 382,
-    "duplicatedLines": 19235,
-    "percentage": 37.85
+    "lines": 50420,
+    "clones": 438,
+    "duplicatedLines": 19625,
+    "percentage": 38.92
    },
    {
     "format": "c",
     "sources": 125,
-    "lines": 89398,
-    "clones": 220,
-    "duplicatedLines": 37888,
-    "percentage": 42.38
+    "lines": 88972,
+    "clones": 250,
+    "duplicatedLines": 38351,
+    "percentage": 43.1
    },
    {
     "format": "python",
     "sources": 99,
-    "lines": 46180,
+    "lines": 45094,
     "clones": 95,
-    "duplicatedLines": 1151,
-    "percentage": 2.49
+    "duplicatedLines": 1244,
+    "percentage": 2.76
    },
    {
     "format": "yaml",
     "sources": 27,
     "lines": 3122,
-    "clones": 54,
-    "duplicatedLines": 595,
-    "percentage": 19.06
+    "clones": 71,
+    "duplicatedLines": 749,
+    "percentage": 23.99
    }
   ],
   "topClones": [
    {
     "format": "java",
-    "lines": 9116,
-    "tokens": 102129,
-    "firstFile": {
+    "lines": 7686,
+    "tokens": 110605,
+    "first": {
      "name": "compatibility/smoke/v3.19.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 7201,
-     "end": 16316
+     "start": 15366,
+     "end": 23051
     },
-    "secondFile": {
-     "name": "compatibility/smoke/v3.19.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 15518,
-     "end": 22503
-    }
+    "others": [
+     {
+      "name": "compatibility/smoke/v3.20.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+      "start": 15388,
+      "end": 23073
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      " * @return The optionalNestedEnum.",
+      " */",
+      "@java.lang.Override",
+      "public legacy_gencode_test.proto3.Proto3GencodeTestProto.TestMostTypesProto3.NestedEnum",
+      "    getOptionalNestedEnum() {",
+      "  @SuppressWarnings(\"deprecation\")",
+      "  legacy_gencode_test.proto3.Proto3GencodeTestProto.TestMostTypesProto3.NestedEnum result =",
+      "      legacy_gencode_test.proto3.Proto3GencodeTestProto.TestMostTypesProto3.NestedEnum",
+      "          .valueOf(optionalNestedEnum_);",
+      "  return result == null"
+     ],
+     "total": 7686
+    },
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 8844,
     "tokens": 87580,
-    "firstFile": {
+    "first": {
      "name": "php/ext/google/protobuf/php-upb.h",
      "start": 7082,
      "end": 15925
     },
-    "secondFile": {
-     "name": "ruby/ext/google/protobuf_c/ruby-upb.h",
-     "start": 7339,
-     "end": 16182
-    }
+    "others": [
+     {
+      "name": "ruby/ext/google/protobuf_c/ruby-upb.h",
+      "start": 7339,
+      "end": 16182
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "#ifndef UPB_REFLECTION_DEF_H_",
+      "#define UPB_REFLECTION_DEF_H_",
+      "",
+      "// IWYU pragma: begin_exports",
+      "",
+      "// IWYU pragma: private, include \"upb/reflection/def.h\"",
+      "",
+      "#ifndef UPB_REFLECTION_DEF_POOL_H_",
+      "#define UPB_REFLECTION_DEF_POOL_H_",
+      ""
+     ],
+     "total": 8844
+    },
+    "kind": "code"
    },
    {
     "format": "c",
     "lines": 13445,
     "tokens": 86741,
-    "firstFile": {
+    "first": {
      "name": "php/ext/google/protobuf/php-upb.c",
      "start": 3847,
      "end": 17291
     },
-    "secondFile": {
-     "name": "ruby/ext/google/protobuf_c/ruby-upb.c",
-     "start": 2598,
-     "end": 16044
-    }
+    "others": [
+     {
+      "name": "ruby/ext/google/protobuf_c/ruby-upb.c",
+      "start": 2598,
+      "end": 16044
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "                        sizeof(descriptor_google_protobuf_json_enumvalue_options_proto_upbdefinit)),",
+      "};",
+      "",
+      "",
+      "#include <errno.h>",
+      "#include <float.h>",
+      "#include <stdarg.h>",
+      "#include <stdlib.h>",
+      "#include <string.h>",
+      ""
+     ],
+     "total": 13445
+    },
+    "excerptSecond": {
+     "lines": [
+      "  1,",
+      "};",
+      "",
+      "",
+      "",
+      "",
+      "#include <errno.h>",
+      "#include <float.h>",
+      "#include <stdarg.h>",
+      "#include <stdlib.h>"
+     ],
+     "total": 13447
+    },
+    "kind": "code"
    },
    {
     "format": "java",
-    "lines": 6020,
-    "tokens": 85325,
-    "firstFile": {
-     "name": "compatibility/smoke/v21.12/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 17424,
-     "end": 23443
+    "lines": 5536,
+    "tokens": 85815,
+    "first": {
+     "name": "compatibility/smoke/v3.11.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "start": 15118,
+     "end": 20653
     },
-    "secondFile": {
-     "name": "compatibility/smoke/v26.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 17442,
-     "end": 23624
-    }
+    "others": [
+     {
+      "name": "compatibility/smoke/v3.19.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+      "start": 15522,
+      "end": 21057
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 8151,
     "tokens": 83689,
-    "firstFile": {
+    "first": {
      "name": "php/ext/google/protobuf/php-upb.h",
      "start": 7128,
      "end": 15278
     },
-    "secondFile": {
-     "name": "upb/reflection/cmake/google/protobuf/descriptor.upb.h",
-     "start": 18,
-     "end": 8167
-    }
+    "others": [
+     {
+      "name": "upb/reflection/cmake/google/protobuf/descriptor.upb.h",
+      "start": 18,
+      "end": 8167
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "java",
-    "lines": 4398,
-    "tokens": 61820,
-    "firstFile": {
-     "name": "compatibility/smoke/v21.12/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 14078,
-     "end": 18475
+    "lines": 5811,
+    "tokens": 78414,
+    "first": {
+     "name": "compatibility/smoke/v25.8/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "start": 17941,
+     "end": 23751
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "compatibility/smoke/v26.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+      "start": 17814,
+      "end": 23624
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 4538,
+    "tokens": 58288,
+    "first": {
+     "name": "compatibility/smoke/v25.8/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "start": 4910,
+     "end": 9447
+    },
+    "others": [
+     {
+      "name": "compatibility/smoke/v26.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+      "start": 4820,
+      "end": 9357
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 4416,
+    "tokens": 55022,
+    "first": {
      "name": "compatibility/smoke/v3.19.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 717,
-     "end": 5394
-    }
-   },
-   {
-    "format": "java",
-    "lines": 4615,
-    "tokens": 58549,
-    "firstFile": {
-     "name": "compatibility/smoke/v21.12/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 4850,
-     "end": 9464
+     "start": 6124,
+     "end": 10539
     },
-    "secondFile": {
-     "name": "compatibility/smoke/v26.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 4770,
-     "end": 9357
-    }
+    "others": [
+     {
+      "name": "compatibility/smoke/v3.20.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+      "start": 6143,
+      "end": 10558
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "java",
-    "lines": 2756,
-    "tokens": 49773,
-    "firstFile": {
+    "lines": 2754,
+    "tokens": 49746,
+    "first": {
      "name": "compatibility/smoke/v26.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
      "start": 924,
-     "end": 3679
+     "end": 3677
     },
-    "secondFile": {
-     "name": "compatibility/smoke/v32.1/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 926,
-     "end": 3681
-    }
+    "others": [
+     {
+      "name": "compatibility/smoke/v32.1/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+      "start": 926,
+      "end": 3679
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "java",
-    "lines": 2264,
-    "tokens": 45882,
-    "firstFile": {
-     "name": "compatibility/smoke/v21.12/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 1471,
-     "end": 3734
+    "lines": 2492,
+    "tokens": 46107,
+    "first": {
+     "name": "compatibility/smoke/v3.11.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "start": 1085,
+     "end": 3576
     },
-    "secondFile": {
-     "name": "compatibility/smoke/v26.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 1405,
-     "end": 3667
-    }
-   },
-   {
-    "format": "java",
-    "lines": 2283,
-    "tokens": 45800,
-    "firstFile": {
-     "name": "compatibility/smoke/v25.8/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 1424,
-     "end": 3706
-    },
-    "secondFile": {
-     "name": "compatibility/smoke/v25.8/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
-     "start": 1451,
-     "end": 3722
-    }
+    "others": [
+     {
+      "name": "compatibility/smoke/v3.19.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+      "start": 1102,
+      "end": 3593
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 1734,
+   "lines": 704848,
+   "tokens": 4558259,
+   "clones": 4868,
+   "duplicatedLines": 126185,
+   "duplicatedTokens": 913018,
+   "percentage": 17.9,
+   "percentageTokens": 20.03,
+   "formats": [
+    {
+     "format": "cpp",
+     "sources": 479,
+     "lines": 271465,
+     "clones": 1840,
+     "duplicatedLines": 22772,
+     "percentage": 8.39
+    },
+    {
+     "format": "objectivec",
+     "sources": 40,
+     "lines": 47005,
+     "clones": 912,
+     "duplicatedLines": 12674,
+     "percentage": 26.96
+    },
+    {
+     "format": "c-header",
+     "sources": 536,
+     "lines": 143388,
+     "clones": 783,
+     "duplicatedLines": 36247,
+     "percentage": 25.28
+    },
+    {
+     "format": "java",
+     "sources": 152,
+     "lines": 65536,
+     "clones": 747,
+     "duplicatedLines": 9220,
+     "percentage": 14.07
+    },
+    {
+     "format": "c",
+     "sources": 120,
+     "lines": 86912,
+     "clones": 229,
+     "duplicatedLines": 36426,
+     "percentage": 41.91
+    },
+    {
+     "format": "csharp",
+     "sources": 172,
+     "lines": 41725,
+     "clones": 216,
+     "duplicatedLines": 6887,
+     "percentage": 16.51
+    },
+    {
+     "format": "python",
+     "sources": 52,
+     "lines": 19339,
+     "clones": 47,
+     "duplicatedLines": 727,
+     "percentage": 3.76
+    },
+    {
+     "format": "php",
+     "sources": 35,
+     "lines": 7087,
+     "clones": 42,
+     "duplicatedLines": 524,
+     "percentage": 7.39
+    },
+    {
+     "format": "rust",
+     "sources": 61,
+     "lines": 11359,
+     "clones": 27,
+     "duplicatedLines": 363,
+     "percentage": 3.2
+    },
+    {
+     "format": "ruby",
+     "sources": 26,
+     "lines": 4414,
+     "clones": 8,
+     "duplicatedLines": 80,
+     "percentage": 1.81
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c-header",
+     "lines": 8844,
+     "tokens": 87580,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.h",
+      "start": 7082,
+      "end": 15925
+     },
+     "others": [
+      {
+       "name": "ruby/ext/google/protobuf_c/ruby-upb.h",
+       "start": 7339,
+       "end": 16182
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#ifndef UPB_REFLECTION_DEF_H_",
+       "#define UPB_REFLECTION_DEF_H_",
+       "",
+       "// IWYU pragma: begin_exports",
+       "",
+       "// IWYU pragma: private, include \"upb/reflection/def.h\"",
+       "",
+       "#ifndef UPB_REFLECTION_DEF_POOL_H_",
+       "#define UPB_REFLECTION_DEF_POOL_H_",
+       ""
+      ],
+      "total": 8844
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 13445,
+     "tokens": 86741,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.c",
+      "start": 3847,
+      "end": 17291
+     },
+     "others": [
+      {
+       "name": "ruby/ext/google/protobuf_c/ruby-upb.c",
+       "start": 2598,
+       "end": 16044
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "                        sizeof(descriptor_google_protobuf_json_enumvalue_options_proto_upbdefinit)),",
+       "};",
+       "",
+       "",
+       "#include <errno.h>",
+       "#include <float.h>",
+       "#include <stdarg.h>",
+       "#include <stdlib.h>",
+       "#include <string.h>",
+       ""
+      ],
+      "total": 13445
+     },
+     "excerptSecond": {
+      "lines": [
+       "  1,",
+       "};",
+       "",
+       "",
+       "",
+       "",
+       "#include <errno.h>",
+       "#include <float.h>",
+       "#include <stdarg.h>",
+       "#include <stdlib.h>"
+      ],
+      "total": 13447
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 7080,
+     "tokens": 45129,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.h",
+      "start": 1,
+      "end": 7080
+     },
+     "others": [
+      {
+       "name": "ruby/ext/google/protobuf_c/ruby-upb.h",
+       "start": 1,
+       "end": 7080
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "/* Amalgamated source file */",
+       "",
+       "/*",
+       " * This is where we define internal portability macros used across upb.",
+       " *",
+       " * All of these macros are undef'd in undef.inc to avoid leaking them to users.",
+       " *",
+       " * The correct usage is:",
+       " *",
+       " *   #include \"upb/foobar.h\""
+      ],
+      "total": 7080
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 2526,
+     "tokens": 22264,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.c",
+      "start": 4,
+      "end": 2529
+     },
+     "others": [
+      {
+       "name": "ruby/ext/google/protobuf_c/ruby-upb.c",
+       "start": 4,
+       "end": 2530
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 2580,
+     "tokens": 15874,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.c",
+      "start": 17287,
+      "end": 19866
+     },
+     "others": [
+      {
+       "name": "ruby/ext/google/protobuf_c/ruby-upb.c",
+       "start": 16750,
+       "end": 19329
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 1588,
+     "tokens": 12990,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.c",
+      "start": 4877,
+      "end": 6464
+     },
+     "others": [
+      {
+       "name": "upb/json/decode.c",
+       "start": 42,
+       "end": 1629
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 2472,
+     "tokens": 12409,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.h",
+      "start": 16470,
+      "end": 18941
+     },
+     "others": [
+      {
+       "name": "ruby/ext/google/protobuf_c/ruby-upb.h",
+       "start": 16184,
+       "end": 18655
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 35,
+     "tokens": 1649,
+     "first": {
+      "name": "ruby/src/main/java/com/google/protobuf/jruby/RubyDescriptor.java",
+      "start": 1,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "ruby/src/main/java/com/google/protobuf/jruby/RubyDescriptorPool.java",
+       "start": 1,
+       "end": 35
+      },
+      {
+       "name": "ruby/src/main/java/com/google/protobuf/jruby/RubyEnum.java",
+       "start": 1,
+       "end": 35
+      },
+      {
+       "name": "ruby/src/main/java/com/google/protobuf/jruby/RubyMap.java",
+       "start": 1,
+       "end": 35
+      },
+      {
+       "name": "ruby/src/main/java/com/google/protobuf/jruby/RubyMessage.java",
+       "start": 1,
+       "end": 35
+      },
+      {
+       "name": "ruby/src/main/java/com/google/protobuf/jruby/RubyProtobuf.java",
+       "start": 1,
+       "end": 35
+      },
+      {
+       "name": "ruby/src/main/java/com/google/protobuf/jruby/RubyRepeatedField.java",
+       "start": 1,
+       "end": 35
+      },
+      {
+       "name": "ruby/src/main/java/com/google/protobuf/jruby/Utils.java",
+       "start": 1,
+       "end": 35
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 1335,
+     "tokens": 8368,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.c",
+      "start": 17310,
+      "end": 18644
+     },
+     "others": [
+      {
+       "name": "upb/wire/decode.c",
+       "start": 61,
+       "end": 1395
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 942,
+     "tokens": 7610,
+     "first": {
+      "name": "php/ext/google/protobuf/php-upb.c",
+      "start": 3916,
+      "end": 4857
+     },
+     "others": [
+      {
+       "name": "upb/hash/common.c",
+       "start": 30,
+       "end": 971
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 238,
+    "minified": 0,
+    "sample": [
+     "ci/push_auto_update.sh",
+     "compatibility/smoke/v21.12/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v25.8/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v26.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v3.0.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v3.11.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v3.19.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v3.20.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v3.8.0/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "compatibility/smoke/v32.1/legacy_gencode_test/proto3/Proto3GencodeTestProto.java",
+     "csharp/src/AddressBook/Addressbook.pb.cs",
+     "csharp/src/Google.Protobuf.Conformance/Conformance.pb.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/JsonEnumvalCustomString.pb.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/MapUnittestProto3.pb.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/Nrt.pb.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/OldExtensions1.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/OldExtensions2.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/TestMessagesEdition2023.pb.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/TestMessagesEditionUnstable.pb.cs",
+     "csharp/src/Google.Protobuf.Test.TestProtos/TestMessagesProto2.pb.cs"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:47:45.199Z",
+  "jscpdVersion": "5.4.0"
  }
 }

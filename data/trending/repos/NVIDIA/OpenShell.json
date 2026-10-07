@@ -9,10 +9,12 @@
    "starsToday": 990,
    "headSha": "252882f37f2daa63ef4078b3bbb89adbcf43b409",
    "sources": 1775,
-   "lines": 791414,
+   "lines": 791370,
    "clones": 6821,
    "duplicatedLines": 95353,
    "percentage": 12.05,
+   "codePercentage": 11.03,
+   "codeSources": 707,
    "healthScore": 36.1,
    "healthGrade": "E"
   },
@@ -23,10 +25,12 @@
    "starsToday": 1281,
    "headSha": "021400be8af471f8669369e679de3e18cf0bd672",
    "sources": 1780,
-   "lines": 791622,
+   "lines": 791578,
    "clones": 6844,
    "duplicatedLines": 95632,
    "percentage": 12.08,
+   "codePercentage": 11.1,
+   "codeSources": 708,
    "healthScore": 36.1,
    "healthGrade": "E"
   },
@@ -37,10 +41,12 @@
    "starsToday": 2456,
    "headSha": "76cfd0e31d5e1633db7ccd86ad9023ef7a2461b2",
    "sources": 1752,
-   "lines": 786317,
+   "lines": 786273,
    "clones": 6876,
    "duplicatedLines": 95996,
    "percentage": 12.21,
+   "codePercentage": 11.08,
+   "codeSources": 712,
    "healthScore": 36,
    "healthGrade": "E"
   },
@@ -51,10 +57,12 @@
    "starsToday": 594,
    "headSha": "48d9ab3d0d9a343365dea1b0cd87565050ac658e",
    "sources": 1758,
-   "lines": 789722,
+   "lines": 789678,
    "clones": 6892,
    "duplicatedLines": 96150,
    "percentage": 12.18,
+   "codePercentage": 11.06,
+   "codeSources": 715,
    "healthScore": 36,
    "healthGrade": "E"
   }
@@ -70,11 +78,11 @@
   "starsToday": 594,
   "defaultBranch": "main",
   "headSha": "48d9ab3d0d9a343365dea1b0cd87565050ac658e",
-  "durationMs": 3644,
+  "durationMs": 3369,
   "total": {
    "sources": 1758,
-   "lines": 789722,
-   "tokens": 5044020,
+   "lines": 789678,
+   "tokens": 5043855,
    "clones": 6892,
    "duplicatedLines": 96150,
    "duplicatedTokens": 632063,
@@ -117,7 +125,7 @@
    {
     "format": "bash",
     "sources": 182,
-    "lines": 31972,
+    "lines": 31922,
     "clones": 62,
     "duplicatedLines": 878,
     "percentage": 2.75
@@ -165,154 +173,397 @@
   ],
   "topClones": [
    {
+    "format": "go",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+     "start": 110,
+     "end": 119
+    },
+    "others": [
+     {
+      "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "start": 192,
+      "end": 201
+     },
+     {
+      "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "start": 255,
+      "end": 264
+     },
+     {
+      "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "start": 349,
+      "end": 358
+     },
+     {
+      "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "start": 400,
+      "end": 409
+     },
+     {
+      "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "start": 458,
+      "end": 467
+     },
+     {
+      "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "start": 535,
+      "end": 544
+     },
+     {
+      "name": "sdk/go/proto/openshellv1/openshell.pb.go",
+      "start": 1277,
+      "end": 1286
+     },
+     {
+      "name": "sdk/go/proto/openshellv1/openshell.pb.go",
+      "start": 1664,
+      "end": 1673
+     }
+    ],
+    "copies": 235,
+    "excerpt": {
+     "lines": [
+      "    mi := &file_datamodel_proto_msgTypes[0]",
+      "    if x != nil {",
+      "        ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))",
+      "        if ms.LoadMessageInfo() == nil {",
+      "            ms.StoreMessageInfo(mi)",
+      "        }",
+      "        return ms",
+      "    }",
+      "    return mi.MessageOf(x)",
+      "}"
+     ],
+     "total": 10
+    },
+    "kind": "generated"
+   },
+   {
     "format": "rust",
     "lines": 380,
     "tokens": 2225,
-    "firstFile": {
+    "first": {
      "name": "crates/openshell-sandbox/src/mechanistic_mapper.rs",
      "start": 157,
      "end": 536
     },
-    "secondFile": {
-     "name": "crates/openshell-supervisor/src/mechanistic_mapper.rs",
-     "start": 158,
-     "end": 537
-    }
+    "others": [
+     {
+      "name": "crates/openshell-supervisor/src/mechanistic_mapper.rs",
+      "start": 158,
+      "end": 537
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    }]",
+      "};",
+      "",
+      "let proposed_rule = NetworkPolicyRule {",
+      "    name: rule_name.clone(),",
+      "    endpoints: vec![endpoint],",
+      "    binaries,",
+      "};",
+      "",
+      "// Compute confidence."
+     ],
+     "total": 380
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 50,
+    "first": {
+     "name": "crates/openshell-server/src/grpc/provider.rs",
+     "start": 6101,
+     "end": 6109
+    },
+    "others": [
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 7381,
+      "end": 7389
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 7933,
+      "end": 7941
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 8018,
+      "end": 8026
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 8210,
+      "end": 8218
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 8344,
+      "end": 8352
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 8413,
+      "end": 8421
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 8441,
+      "end": 8449
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 10726,
+      "end": 10734
+     }
+    ],
+    "copies": 44,
+    "excerpt": {
+     "lines": [
+      "    name: name.to_string(),",
+      "    created_time: None,",
+      "    labels: HashMap::new(),",
+      "    resource_version: 0,",
+      "    annotations: HashMap::new(),",
+      "    workspace: \"default\".to_string(),",
+      "    deletion_time: None,",
+      "}),",
+      "r#type: provider_type.to_string(),"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "    name: \"msgraph\".to_string(),",
+      "    created_time: None,",
+      "    labels: HashMap::new(),",
+      "    resource_version: 0,",
+      "    annotations: HashMap::new(),",
+      "    workspace: \"default\".to_string(),",
+      "    deletion_time: None,",
+      "}),",
+      "r#type: TEST_GRAPH_PROVIDER_TYPE.to_string(),"
+     ],
+     "total": 9
+    },
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 253,
     "tokens": 1900,
-    "firstFile": {
+    "first": {
      "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
      "start": 550,
      "end": 802
     },
-    "secondFile": {
-     "name": "crates/openshell-cli/tests/provider_commands_integration.rs",
-     "start": 1358,
-     "end": 1610
-    }
+    "others": [
+     {
+      "name": "crates/openshell-cli/tests/provider_commands_integration.rs",
+      "start": 1358,
+      "end": 1610
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 59,
+    "first": {
+     "name": "crates/openshell-server/src/compute/mod.rs",
+     "start": 15113,
+     "end": 15120
+    },
+    "others": [
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 9752,
+      "end": 9759
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 10713,
+      "end": 10720
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 10768,
+      "end": 10775
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 10964,
+      "end": 10971
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 11454,
+      "end": 11461
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 11548,
+      "end": 11555
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 11908,
+      "end": 11915
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 12541,
+      "end": 12548
+     }
+    ],
+    "copies": 30,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 25,
+    "tokens": 816,
+    "first": {
+     "name": "crates/openshell-supervisor-network/src/opa.rs",
+     "start": 7924,
+     "end": 7948
+    },
+    "others": [
+     {
+      "name": "crates/openshell-supervisor-network/src/opa.rs",
+      "start": 8039,
+      "end": 8063
+     },
+     {
+      "name": "crates/openshell-supervisor-network/src/opa.rs",
+      "start": 8099,
+      "end": 8123
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 50,
+    "first": {
+     "name": "crates/openshell-server/src/compute/mod.rs",
+     "start": 9593,
+     "end": 9599
+    },
+    "others": [
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 9753,
+      "end": 9759
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 10714,
+      "end": 10720
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 10769,
+      "end": 10775
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 10965,
+      "end": 10971
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 11455,
+      "end": 11461
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 11549,
+      "end": 11555
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 11909,
+      "end": 11915
+     },
+     {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 12542,
+      "end": 12548
+     }
+    ],
+    "copies": 32,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 203,
     "tokens": 1524,
-    "firstFile": {
+    "first": {
      "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
      "start": 600,
      "end": 802
     },
-    "secondFile": {
-     "name": "crates/openshell-cli/tests/sandbox_name_fallback_integration.rs",
-     "start": 543,
-     "end": 745
-    }
+    "others": [
+     {
+      "name": "crates/openshell-cli/tests/sandbox_name_fallback_integration.rs",
+      "start": 543,
+      "end": 745
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "rust",
     "lines": 183,
     "tokens": 1378,
-    "firstFile": {
+    "first": {
      "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
      "start": 620,
      "end": 802
     },
-    "secondFile": {
-     "name": "crates/openshell-cli/tests/sandbox_create_lifecycle_integration.rs",
-     "start": 944,
-     "end": 1126
-    }
+    "others": [
+     {
+      "name": "crates/openshell-cli/tests/sandbox_create_lifecycle_integration.rs",
+      "start": 944,
+      "end": 1126
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 431,
     "tokens": 1316,
-    "firstFile": {
+    "first": {
      "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/http_activity.json",
      "start": 100,
      "end": 530
     },
-    "secondFile": {
-     "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/ssh_activity.json",
-     "start": 124,
-     "end": 554
-    }
-   },
-   {
-    "format": "json",
-    "lines": 421,
-    "tokens": 1273,
-    "firstFile": {
-     "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/objects/network_endpoint.json",
-     "start": 1,
-     "end": 421
-    },
-    "secondFile": {
-     "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/objects/network_proxy.json",
-     "start": 1,
-     "end": 421
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 220,
-    "tokens": 1227,
-    "firstFile": {
-     "name": "crates/openshell-sandbox/src/activity_aggregator.rs",
-     "start": 5,
-     "end": 224
-    },
-    "secondFile": {
-     "name": "crates/openshell-supervisor/src/activity_aggregator.rs",
-     "start": 5,
-     "end": 224
-    }
-   },
-   {
-    "format": "json",
-    "lines": 360,
-    "tokens": 1181,
-    "firstFile": {
-     "name": "crates/openshell-ocsf/schemas/ocsf/v1.8.0/objects/network_endpoint.json",
-     "start": 1,
-     "end": 360
-    },
-    "secondFile": {
-     "name": "crates/openshell-ocsf/schemas/ocsf/v1.8.0/objects/network_proxy.json",
-     "start": 1,
-     "end": 360
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 156,
-    "tokens": 1178,
-    "firstFile": {
-     "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
-     "start": 562,
-     "end": 717
-    },
-    "secondFile": {
-     "name": "crates/openshell-cli/tests/mtls_integration.rs",
-     "start": 414,
-     "end": 569
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 132,
-    "tokens": 1117,
-    "firstFile": {
-     "name": "crates/openshell-providers/src/profiles.rs",
-     "start": 3383,
-     "end": 3514
-    },
-    "secondFile": {
-     "name": "crates/openshell-server/src/grpc/provider.rs",
-     "start": 1697,
-     "end": 1828
-    }
+    "others": [
+     {
+      "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/ssh_activity.json",
+      "start": 124,
+      "end": 554
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    }
   ],
   "health": {
@@ -473,6 +724,544 @@
      "lines": 2
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 715,
+   "lines": 542445,
+   "tokens": 3435004,
+   "clones": 5103,
+   "duplicatedLines": 59985,
+   "duplicatedTokens": 435191,
+   "percentage": 11.06,
+   "percentageTokens": 12.67,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 475,
+     "lines": 497052,
+     "clones": 4992,
+     "duplicatedLines": 58711,
+     "percentage": 11.81
+    },
+    {
+     "format": "go",
+     "sources": 116,
+     "lines": 15873,
+     "clones": 58,
+     "duplicatedLines": 623,
+     "percentage": 3.92
+    },
+    {
+     "format": "bash",
+     "sources": 92,
+     "lines": 19061,
+     "clones": 28,
+     "duplicatedLines": 391,
+     "percentage": 2.05
+    },
+    {
+     "format": "python",
+     "sources": 17,
+     "lines": 6628,
+     "clones": 19,
+     "duplicatedLines": 197,
+     "percentage": 2.97
+    },
+    {
+     "format": "typescript",
+     "sources": 7,
+     "lines": 2478,
+     "clones": 3,
+     "duplicatedLines": 35,
+     "percentage": 1.41
+    },
+    {
+     "format": "powershell",
+     "sources": 5,
+     "lines": 897,
+     "clones": 3,
+     "duplicatedLines": 28,
+     "percentage": 3.12
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 188,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "tsx",
+     "sources": 1,
+     "lines": 94,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 380,
+     "tokens": 2225,
+     "first": {
+      "name": "crates/openshell-sandbox/src/mechanistic_mapper.rs",
+      "start": 157,
+      "end": 536
+     },
+     "others": [
+      {
+       "name": "crates/openshell-supervisor/src/mechanistic_mapper.rs",
+       "start": 158,
+       "end": 537
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    }]",
+       "};",
+       "",
+       "let proposed_rule = NetworkPolicyRule {",
+       "    name: rule_name.clone(),",
+       "    endpoints: vec![endpoint],",
+       "    binaries,",
+       "};",
+       "",
+       "// Compute confidence."
+      ],
+      "total": 380
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 50,
+     "first": {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 6101,
+      "end": 6109
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 7381,
+       "end": 7389
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 7933,
+       "end": 7941
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8018,
+       "end": 8026
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8210,
+       "end": 8218
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8344,
+       "end": 8352
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8413,
+       "end": 8421
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8441,
+       "end": 8449
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 10726,
+       "end": 10734
+      }
+     ],
+     "copies": 44,
+     "excerpt": {
+      "lines": [
+       "    name: name.to_string(),",
+       "    created_time: None,",
+       "    labels: HashMap::new(),",
+       "    resource_version: 0,",
+       "    annotations: HashMap::new(),",
+       "    workspace: \"default\".to_string(),",
+       "    deletion_time: None,",
+       "}),",
+       "r#type: provider_type.to_string(),"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "    name: \"msgraph\".to_string(),",
+       "    created_time: None,",
+       "    labels: HashMap::new(),",
+       "    resource_version: 0,",
+       "    annotations: HashMap::new(),",
+       "    workspace: \"default\".to_string(),",
+       "    deletion_time: None,",
+       "}),",
+       "r#type: TEST_GRAPH_PROVIDER_TYPE.to_string(),"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 59,
+     "first": {
+      "name": "crates/openshell-server/src/compute/mod.rs",
+      "start": 15113,
+      "end": 15120
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 9752,
+       "end": 9759
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10713,
+       "end": 10720
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10768,
+       "end": 10775
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10964,
+       "end": 10971
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11454,
+       "end": 11461
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11548,
+       "end": 11555
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11908,
+       "end": 11915
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 12541,
+       "end": 12548
+      }
+     ],
+     "copies": 30,
+     "excerpt": {
+      "lines": [
+       "    name: \"test-sandbox\".to_string(),",
+       "    created_time: openshell_core::time::timestamp_from_millis(1_000_000).ok(),",
+       "    labels: HashMap::new(),",
+       "    resource_version: 0,",
+       "    annotations: HashMap::new(),",
+       "    workspace: \"default\".to_string(),",
+       "    deletion_time: None,",
+       "});"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "    name: \"test-user\".to_string(),",
+       "    created_time: openshell_core::time::timestamp_from_millis(1_000_000).ok(),",
+       "    labels: HashMap::new(),",
+       "    resource_version: 0,",
+       "    annotations: HashMap::new(),",
+       "    workspace: \"default\".to_string(),",
+       "    deletion_time: None,",
+       "}),"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 25,
+     "tokens": 816,
+     "first": {
+      "name": "crates/openshell-supervisor-network/src/opa.rs",
+      "start": 7924,
+      "end": 7948
+     },
+     "others": [
+      {
+       "name": "crates/openshell-supervisor-network/src/opa.rs",
+       "start": 8039,
+       "end": 8063
+      },
+      {
+       "name": "crates/openshell-supervisor-network/src/opa.rs",
+       "start": 8099,
+       "end": 8123
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 50,
+     "first": {
+      "name": "crates/openshell-server/src/compute/mod.rs",
+      "start": 9593,
+      "end": 9599
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 9753,
+       "end": 9759
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10714,
+       "end": 10720
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10769,
+       "end": 10775
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10965,
+       "end": 10971
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11455,
+       "end": 11461
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11549,
+       "end": 11555
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11909,
+       "end": 11915
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 12542,
+       "end": 12548
+      }
+     ],
+     "copies": 32,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 220,
+     "tokens": 1227,
+     "first": {
+      "name": "crates/openshell-sandbox/src/activity_aggregator.rs",
+      "start": 5,
+      "end": 224
+     },
+     "others": [
+      {
+       "name": "crates/openshell-supervisor/src/activity_aggregator.rs",
+       "start": 5,
+       "end": 224
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 82,
+     "first": {
+      "name": "crates/openshell-server/src/grpc/policy.rs",
+      "start": 15889,
+      "end": 15899
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 15995,
+       "end": 16005
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 16116,
+       "end": 16126
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 16329,
+       "end": 16339
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 17330,
+       "end": 17340
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 17441,
+       "end": 17451
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 17540,
+       "end": 17550
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 17631,
+       "end": 17641
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 17724,
+       "end": 17734
+      }
+     ],
+     "copies": 15,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 132,
+     "tokens": 1117,
+     "first": {
+      "name": "crates/openshell-providers/src/profiles.rs",
+      "start": 3383,
+      "end": 3514
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 1697,
+       "end": 1828
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 111,
+     "first": {
+      "name": "crates/openshell-driver-docker/src/tests.rs",
+      "start": 901,
+      "end": 911
+     },
+     "others": [
+      {
+       "name": "crates/openshell-driver-docker/src/tests.rs",
+       "start": 940,
+       "end": 950
+      },
+      {
+       "name": "crates/openshell-driver-docker/src/tests.rs",
+       "start": 994,
+       "end": 1004
+      },
+      {
+       "name": "crates/openshell-driver-docker/src/tests.rs",
+       "start": 1126,
+       "end": 1137
+      },
+      {
+       "name": "crates/openshell-driver-docker/src/tests.rs",
+       "start": 1182,
+       "end": 1193
+      },
+      {
+       "name": "crates/openshell-driver-docker/src/tests.rs",
+       "start": 1226,
+       "end": 1237
+      },
+      {
+       "name": "crates/openshell-driver-kubernetes/src/driver.rs",
+       "start": 7686,
+       "end": 7697
+      },
+      {
+       "name": "crates/openshell-driver-podman/src/driver.rs",
+       "start": 2539,
+       "end": 2550
+      },
+      {
+       "name": "crates/openshell-driver-podman/src/grpc.rs",
+       "start": 497,
+       "end": 508
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 136,
+     "tokens": 1081,
+     "first": {
+      "name": "crates/openshell-sandbox/src/main_session.rs",
+      "start": 936,
+      "end": 1071
+     },
+     "others": [
+      {
+       "name": "crates/openshell-supervisor-process/src/main_session.rs",
+       "start": 644,
+       "end": 779
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 5,
+    "minified": 0,
+    "sample": [
+     "sdk/go/proto/datamodelv1/datamodel.pb.go",
+     "sdk/go/proto/openshellv1/openshell_grpc.pb.go",
+     "sdk/go/proto/openshellv1/openshell.pb.go",
+     "sdk/go/proto/optionsv1/options.pb.go",
+     "sdk/go/proto/sandboxv1/sandbox.pb.go"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:37:09.164Z",
+  "jscpdVersion": "5.4.0"
  }
 }

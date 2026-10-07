@@ -9,10 +9,12 @@
    "starsToday": 199,
    "headSha": "057ca5964aae0879ff2e0eb71ee05a3cb0ba3df7",
    "sources": 107,
-   "lines": 20006,
+   "lines": 19962,
    "clones": 252,
    "duplicatedLines": 2522,
-   "percentage": 12.61,
+   "percentage": 12.63,
+   "codePercentage": 17.48,
+   "codeSources": 78,
    "healthScore": 51.6,
    "healthGrade": "D"
   }
@@ -28,16 +30,16 @@
   "starsToday": 199,
   "defaultBranch": "main",
   "headSha": "057ca5964aae0879ff2e0eb71ee05a3cb0ba3df7",
-  "durationMs": 970,
+  "durationMs": 118,
   "total": {
    "sources": 107,
-   "lines": 20006,
-   "tokens": 166226,
+   "lines": 19962,
+   "tokens": 166061,
    "clones": 252,
    "duplicatedLines": 2522,
    "duplicatedTokens": 20616,
-   "percentage": 12.61,
-   "percentageTokens": 12.4
+   "percentage": 12.63,
+   "percentageTokens": 12.41
   },
   "formats": [
    {
@@ -67,7 +69,7 @@
    {
     "format": "bash",
     "sources": 12,
-    "lines": 821,
+    "lines": 771,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -83,7 +85,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -116,153 +118,338 @@
   "topClones": [
    {
     "format": "cpp-header",
+    "lines": 10,
+    "tokens": 80,
+    "first": {
+     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+     "start": 121,
+     "end": 130
+    },
+    "others": [
+     {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+      "start": 193,
+      "end": 202
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+      "start": 251,
+      "end": 260
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+      "start": 318,
+      "end": 327
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 146,
+      "end": 155
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 231,
+      "end": 240
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 302,
+      "end": 311
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 383,
+      "end": 392
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 460,
+      "end": 469
+     }
+    ],
+    "copies": 17,
+    "excerpt": {
+     "lines": [
+      "SM100BF16GemmRuntime::compile_and_launch(\"sm100_bf16_gemm\", {",
+      "    .gemm_desc = desc,",
+      "    .gemm_config = config,",
+      "    .options = {",
+      "        .num_smem_bytes = config.pipeline_config.smem_size,",
+      "        .grid_dim = dim3(config.launch_config.num_sms, 1, 1),",
+      "        .block_dim = dim3(config.launch_config.num_threads, 1, 1),",
+      "        .cluster_dim = dim3(config.layout.get_cluster_size(), 1, 1),",
+      "    },",
+      "    .grouped_layout = nullptr,"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "SM100BF16GemmRuntime::compile_and_launch(\"sm100_bf16_m_grouped_gemm_contiguous\", {",
+      "    .gemm_desc = desc,",
+      "    .gemm_config = config,",
+      "    .options = {",
+      "        .num_smem_bytes = config.pipeline_config.smem_size,",
+      "        .grid_dim = dim3(config.launch_config.num_sms, 1, 1),",
+      "        .block_dim = dim3(config.launch_config.num_threads, 1, 1),",
+      "        .cluster_dim = dim3(config.layout.get_cluster_size(), 1, 1),",
+      "    },",
+      "    .grouped_layout = grouped_layout.data_ptr(),"
+     ],
+     "total": 10
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
     "lines": 31,
     "tokens": 327,
-    "firstFile": {
+    "first": {
      "name": "csrc/jit_kernels/impls/sm100_tf32_hc_prenorm_gemm.hpp",
      "start": 28,
      "end": 58
     },
-    "secondFile": {
-     "name": "csrc/jit_kernels/impls/sm90_tf32_hc_prenorm_gemm.hpp",
-     "start": 30,
-     "end": 60
-    }
+    "others": [
+     {
+      "name": "csrc/jit_kernels/impls/sm90_tf32_hc_prenorm_gemm.hpp",
+      "start": 30,
+      "end": 60
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "DG_HOST_ASSERT(n <= 128 and n % 8 == 0);",
+      "DG_HOST_ASSERT(k % block_k == 0);",
+      "",
+      "const auto swizzle_cd_mode = get_swizzle_mode(block_n, sizeof(float));",
+      "const auto tensor_map_a = make_tma_a_desc(cute::UMMA::Major::K, a, m, k,",
+      "                                          block_m, block_k,",
+      "                                          static_cast<int>(a.stride(get_non_contiguous_dim(cute::UMMA::Major::K))), 1,",
+      "                                          get_swizzle_mode(block_k, a.element_size()), 0,",
+      "                                          true);",
+      "const auto tensor_map_b = make_tma_b_desc(cute::UMMA::Major::K, b, n, k,"
+     ],
+     "total": 31
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 12,
+    "tokens": 146,
+    "first": {
+     "name": "csrc/apis/gemm.hpp",
+     "start": 135,
+     "end": 146
+    },
+    "others": [
+     {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 150,
+      "end": 161
+     },
+     {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 166,
+      "end": 177
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "static void fp8_fp4_gemm_nn(const std::pair<torch::Tensor, torch::Tensor>& a,",
+      "                            const std::pair<torch::Tensor, torch::Tensor>& b,",
+      "                            const torch::Tensor& d,",
+      "                            const std::optional<torch::Tensor>& c,",
+      "                            const std::optional<std::tuple<int, int, int>>& recipe,",
+      "                            const std::optional<std::tuple<int, int>>& recipe_a,",
+      "                            const std::optional<std::tuple<int, int>>& recipe_b,",
+      "                            const std::string& compiled_dims,",
+      "                            const bool& disable_ue8m0_cast,",
+      "                            const std::optional<float>& alpha,"
+     ],
+     "total": 12
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 13,
+    "tokens": 97,
+    "first": {
+     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+     "start": 121,
+     "end": 133
+    },
+    "others": [
+     {
+      "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+      "start": 116,
+      "end": 128
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+      "start": 370,
+      "end": 382
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+      "start": 424,
+      "end": 436
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 13,
+    "tokens": 52,
+    "first": {
+     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+     "start": 41,
+     "end": 53
+    },
+    "others": [
+     {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_mega_gate.hpp",
+      "start": 51,
+      "end": 58
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_mega_moe.hpp",
+      "start": 105,
+      "end": 118
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_mega_moe.hpp",
+      "start": 160,
+      "end": 174
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+      "start": 35,
+      "end": 47
+     },
+     {
+      "name": "csrc/jit_kernels/impls/sm90_fp8_gemm_1d1d.hpp",
+      "start": 39,
+      "end": 50
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 12,
+    "tokens": 125,
+    "first": {
+     "name": "csrc/apis/gemm.hpp",
+     "start": 320,
+     "end": 331
+    },
+    "others": [
+     {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 373,
+      "end": 384
+     },
+     {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 429,
+      "end": 440
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "cpp-header",
+    "lines": 7,
+    "tokens": 70,
+    "first": {
+     "name": "csrc/apis/gemm.hpp",
+     "start": 488,
+     "end": 494
+    },
+    "others": [
+     {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 537,
+      "end": 543
+     },
+     {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 547,
+      "end": 553
+     },
+     {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 557,
+      "end": 563
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "cpp-header",
     "lines": 14,
     "tokens": 204,
-    "firstFile": {
+    "first": {
      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
      "start": 370,
      "end": 383
     },
-    "secondFile": {
-     "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
-     "start": 528,
-     "end": 541
-    }
+    "others": [
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 528,
+      "end": 541
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "cpp-header",
     "lines": 19,
     "tokens": 178,
-    "firstFile": {
+    "first": {
      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
      "start": 297,
      "end": 315
     },
-    "secondFile": {
-     "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
-     "start": 357,
-     "end": 375
-    }
+    "others": [
+     {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 357,
+      "end": 375
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 10,
     "tokens": 178,
-    "firstFile": {
+    "first": {
      "name": "deep_gemm/legacy/a_fused_k_grouped_gemm.py",
      "start": 69,
      "end": 78
     },
-    "secondFile": {
-     "name": "deep_gemm/legacy/b_fused_k_grouped_gemm.py",
-     "start": 68,
-     "end": 77
-    }
-   },
-   {
-    "format": "python",
-    "lines": 21,
-    "tokens": 161,
-    "firstFile": {
-     "name": "deep_gemm/legacy/a_fused_k_grouped_gemm.py",
-     "start": 12,
-     "end": 32
-    },
-    "secondFile": {
-     "name": "deep_gemm/legacy/b_fused_k_grouped_gemm.py",
-     "start": 12,
-     "end": 32
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 17,
-    "tokens": 154,
-    "firstFile": {
-     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
-     "start": 92,
-     "end": 108
-    },
-    "secondFile": {
-     "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
-     "start": 112,
-     "end": 128
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 17,
-    "tokens": 150,
-    "firstFile": {
-     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
-     "start": 104,
-     "end": 120
-    },
-    "secondFile": {
-     "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
-     "start": 99,
-     "end": 115
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 17,
-    "tokens": 150,
-    "firstFile": {
-     "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
-     "start": 234,
-     "end": 250
-    },
-    "secondFile": {
-     "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
-     "start": 231,
-     "end": 247
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 12,
-    "tokens": 146,
-    "firstFile": {
-     "name": "csrc/apis/gemm.hpp",
-     "start": 135,
-     "end": 146
-    },
-    "secondFile": {
-     "name": "csrc/apis/gemm.hpp",
-     "start": 150,
-     "end": 161
-    }
-   },
-   {
-    "format": "cpp-header",
-    "lines": 12,
-    "tokens": 146,
-    "firstFile": {
-     "name": "csrc/apis/gemm.hpp",
-     "start": 135,
-     "end": 146
-    },
-    "secondFile": {
-     "name": "csrc/apis/gemm.hpp",
-     "start": 166,
-     "end": 177
-    }
+    "others": [
+     {
+      "name": "deep_gemm/legacy/b_fused_k_grouped_gemm.py",
+      "start": 68,
+      "end": 77
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -466,6 +653,402 @@
      "lines": 2
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 78,
+   "lines": 14030,
+   "tokens": 113315,
+   "clones": 243,
+   "duplicatedLines": 2453,
+   "duplicatedTokens": 19994,
+   "percentage": 17.48,
+   "percentageTokens": 17.64,
+   "formats": [
+    {
+     "format": "cpp-header",
+     "sources": 48,
+     "lines": 10079,
+     "clones": 230,
+     "duplicatedLines": 2311,
+     "percentage": 22.93
+    },
+    {
+     "format": "python",
+     "sources": 16,
+     "lines": 2957,
+     "clones": 13,
+     "duplicatedLines": 142,
+     "percentage": 4.8
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 771,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "cpp",
+     "sources": 1,
+     "lines": 49,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "cpp-header",
+     "lines": 10,
+     "tokens": 80,
+     "first": {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+      "start": 121,
+      "end": 130
+     },
+     "others": [
+      {
+       "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+       "start": 193,
+       "end": 202
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+       "start": 251,
+       "end": 260
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+       "start": 318,
+       "end": 327
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+       "start": 146,
+       "end": 155
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+       "start": 231,
+       "end": 240
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+       "start": 302,
+       "end": 311
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+       "start": 383,
+       "end": 392
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+       "start": 460,
+       "end": 469
+      }
+     ],
+     "copies": 17,
+     "excerpt": {
+      "lines": [
+       "SM100BF16GemmRuntime::compile_and_launch(\"sm100_bf16_gemm\", {",
+       "    .gemm_desc = desc,",
+       "    .gemm_config = config,",
+       "    .options = {",
+       "        .num_smem_bytes = config.pipeline_config.smem_size,",
+       "        .grid_dim = dim3(config.launch_config.num_sms, 1, 1),",
+       "        .block_dim = dim3(config.launch_config.num_threads, 1, 1),",
+       "        .cluster_dim = dim3(config.layout.get_cluster_size(), 1, 1),",
+       "    },",
+       "    .grouped_layout = nullptr,"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "SM100BF16GemmRuntime::compile_and_launch(\"sm100_bf16_m_grouped_gemm_contiguous\", {",
+       "    .gemm_desc = desc,",
+       "    .gemm_config = config,",
+       "    .options = {",
+       "        .num_smem_bytes = config.pipeline_config.smem_size,",
+       "        .grid_dim = dim3(config.launch_config.num_sms, 1, 1),",
+       "        .block_dim = dim3(config.launch_config.num_threads, 1, 1),",
+       "        .cluster_dim = dim3(config.layout.get_cluster_size(), 1, 1),",
+       "    },",
+       "    .grouped_layout = grouped_layout.data_ptr(),"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 31,
+     "tokens": 327,
+     "first": {
+      "name": "csrc/jit_kernels/impls/sm100_tf32_hc_prenorm_gemm.hpp",
+      "start": 28,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "csrc/jit_kernels/impls/sm90_tf32_hc_prenorm_gemm.hpp",
+       "start": 30,
+       "end": 60
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "DG_HOST_ASSERT(n <= 128 and n % 8 == 0);",
+       "DG_HOST_ASSERT(k % block_k == 0);",
+       "",
+       "const auto swizzle_cd_mode = get_swizzle_mode(block_n, sizeof(float));",
+       "const auto tensor_map_a = make_tma_a_desc(cute::UMMA::Major::K, a, m, k,",
+       "                                          block_m, block_k,",
+       "                                          static_cast<int>(a.stride(get_non_contiguous_dim(cute::UMMA::Major::K))), 1,",
+       "                                          get_swizzle_mode(block_k, a.element_size()), 0,",
+       "                                          true);",
+       "const auto tensor_map_b = make_tma_b_desc(cute::UMMA::Major::K, b, n, k,"
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 12,
+     "tokens": 146,
+     "first": {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 135,
+      "end": 146
+     },
+     "others": [
+      {
+       "name": "csrc/apis/gemm.hpp",
+       "start": 150,
+       "end": 161
+      },
+      {
+       "name": "csrc/apis/gemm.hpp",
+       "start": 166,
+       "end": 177
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "static void fp8_fp4_gemm_nn(const std::pair<torch::Tensor, torch::Tensor>& a,",
+       "                            const std::pair<torch::Tensor, torch::Tensor>& b,",
+       "                            const torch::Tensor& d,",
+       "                            const std::optional<torch::Tensor>& c,",
+       "                            const std::optional<std::tuple<int, int, int>>& recipe,",
+       "                            const std::optional<std::tuple<int, int>>& recipe_a,",
+       "                            const std::optional<std::tuple<int, int>>& recipe_b,",
+       "                            const std::string& compiled_dims,",
+       "                            const bool& disable_ue8m0_cast,",
+       "                            const std::optional<float>& alpha,"
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 13,
+     "tokens": 97,
+     "first": {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+      "start": 121,
+      "end": 133
+     },
+     "others": [
+      {
+       "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+       "start": 116,
+       "end": 128
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+       "start": 370,
+       "end": 382
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+       "start": 424,
+       "end": 436
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 13,
+     "tokens": 52,
+     "first": {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+      "start": 41,
+      "end": 53
+     },
+     "others": [
+      {
+       "name": "csrc/jit_kernels/impls/sm100_bf16_mega_gate.hpp",
+       "start": 51,
+       "end": 58
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_bf16_mega_moe.hpp",
+       "start": 105,
+       "end": 118
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_mega_moe.hpp",
+       "start": 160,
+       "end": 174
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm90_bf16_gemm.hpp",
+       "start": 35,
+       "end": 47
+      },
+      {
+       "name": "csrc/jit_kernels/impls/sm90_fp8_gemm_1d1d.hpp",
+       "start": 39,
+       "end": 50
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 12,
+     "tokens": 125,
+     "first": {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 320,
+      "end": 331
+     },
+     "others": [
+      {
+       "name": "csrc/apis/gemm.hpp",
+       "start": 373,
+       "end": 384
+      },
+      {
+       "name": "csrc/apis/gemm.hpp",
+       "start": 429,
+       "end": 440
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 7,
+     "tokens": 70,
+     "first": {
+      "name": "csrc/apis/gemm.hpp",
+      "start": 488,
+      "end": 494
+     },
+     "others": [
+      {
+       "name": "csrc/apis/gemm.hpp",
+       "start": 537,
+       "end": 543
+      },
+      {
+       "name": "csrc/apis/gemm.hpp",
+       "start": 547,
+       "end": 553
+      },
+      {
+       "name": "csrc/apis/gemm.hpp",
+       "start": 557,
+       "end": 563
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 14,
+     "tokens": 204,
+     "first": {
+      "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+      "start": 370,
+      "end": 383
+     },
+     "others": [
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+       "start": 528,
+       "end": 541
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp-header",
+     "lines": 19,
+     "tokens": 178,
+     "first": {
+      "name": "csrc/jit_kernels/impls/sm100_bf16_gemm.hpp",
+      "start": 297,
+      "end": 315
+     },
+     "others": [
+      {
+       "name": "csrc/jit_kernels/impls/sm100_fp8_fp4_gemm_1d1d.hpp",
+       "start": 357,
+       "end": 375
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 178,
+     "first": {
+      "name": "deep_gemm/legacy/a_fused_k_grouped_gemm.py",
+      "start": 69,
+      "end": 78
+     },
+     "others": [
+      {
+       "name": "deep_gemm/legacy/b_fused_k_grouped_gemm.py",
+       "start": 68,
+       "end": 77
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:39:56.704Z",
+  "jscpdVersion": "5.4.0"
  }
 }

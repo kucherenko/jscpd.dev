@@ -9,10 +9,12 @@
    "starsToday": 1179,
    "headSha": "db35515fed81efd25e2bbf53bd12e11d5782b9b2",
    "sources": 883,
-   "lines": 149027,
+   "lines": 146400,
    "clones": 237,
-   "duplicatedLines": 2524,
-   "percentage": 1.69,
+   "duplicatedLines": 2761,
+   "percentage": 1.89,
+   "codePercentage": 2.06,
+   "codeSources": 759,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 739,
    "headSha": "7dc4450fa011ccebe72d7f7cec9ff53e05806785",
    "sources": 897,
-   "lines": 152246,
+   "lines": 149607,
    "clones": 234,
-   "duplicatedLines": 2507,
-   "percentage": 1.65,
+   "duplicatedLines": 2741,
+   "percentage": 1.83,
+   "codePercentage": 1.99,
+   "codeSources": 771,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,15 +46,15 @@
   "starsToday": 739,
   "defaultBranch": "main",
   "headSha": "7dc4450fa011ccebe72d7f7cec9ff53e05806785",
-  "durationMs": 864,
+  "durationMs": 3362,
   "total": {
    "sources": 897,
-   "lines": 152246,
-   "tokens": 1192902,
+   "lines": 149607,
+   "tokens": 1192737,
    "clones": 234,
-   "duplicatedLines": 2507,
+   "duplicatedLines": 2741,
    "duplicatedTokens": 17456,
-   "percentage": 1.65,
+   "percentage": 1.83,
    "percentageTokens": 1.46
   },
   "formats": [
@@ -59,48 +63,48 @@
     "sources": 684,
     "lines": 114560,
     "clones": 207,
-    "duplicatedLines": 2195,
-    "percentage": 1.92
+    "duplicatedLines": 2402,
+    "percentage": 2.1
    },
    {
     "format": "javascript",
     "sources": 30,
     "lines": 9644,
     "clones": 9,
-    "duplicatedLines": 122,
-    "percentage": 1.27
+    "duplicatedLines": 131,
+    "percentage": 1.36
    },
    {
     "format": "yaml",
     "sources": 10,
     "lines": 1467,
     "clones": 7,
-    "duplicatedLines": 101,
-    "percentage": 6.88
+    "duplicatedLines": 108,
+    "percentage": 7.36
    },
    {
     "format": "bash",
     "sources": 23,
-    "lines": 3275,
+    "lines": 1617,
     "clones": 4,
-    "duplicatedLines": 27,
-    "percentage": 0.82
+    "duplicatedLines": 31,
+    "percentage": 1.92
    },
    {
     "format": "txt",
     "sources": 4,
     "lines": 240,
     "clones": 4,
-    "duplicatedLines": 44,
-    "percentage": 18.33
+    "duplicatedLines": 48,
+    "percentage": 20
    },
    {
     "format": "markdown",
     "sources": 81,
     "lines": 14624,
     "clones": 3,
-    "duplicatedLines": 18,
-    "percentage": 0.12
+    "duplicatedLines": 21,
+    "percentage": 0.14
    },
    {
     "format": "json",
@@ -119,17 +123,17 @@
     "percentage": 0
    },
    {
-    "format": "text",
-    "sources": 8,
-    "lines": 1129,
+    "format": "typescript",
+    "sources": 16,
+    "lines": 845,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "typescript",
-    "sources": 16,
-    "lines": 845,
+    "format": "css",
+    "sources": 1,
+    "lines": 600,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,152 +144,748 @@
     "format": "txt",
     "lines": 17,
     "tokens": 602,
-    "firstFile": {
+    "first": {
      "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
      "start": 35,
      "end": 51
     },
-    "secondFile": {
-     "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
-     "start": 57,
-     "end": 73
-    }
+    "others": [
+     {
+      "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
+      "start": 57,
+      "end": 73
+     },
+     {
+      "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
+      "start": 81,
+      "end": 97
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "data: {\"id\":\"gen-1786242345-6EfeRYvogwFsbuw8r4pY\",\"object\":\"chat.completion.chunk\",\"created\":1786242345,\"model\":\"nvidia/nemotron-3-nano-30b-a3b:free\",\"provider…",
+      "",
+      "data: {\"id\":\"gen-1786242345-6EfeRYvogwFsbuw8r4pY\",\"object\":\"chat.completion.chunk\",\"created\":1786242345,\"model\":\"nvidia/nemotron-3-nano-30b-a3b:free\",\"provider…",
+      "",
+      "data: {\"id\":\"gen-1786242345-6EfeRYvogwFsbuw8r4pY\",\"object\":\"chat.completion.chunk\",\"created\":1786242345,\"model\":\"nvidia/nemotron-3-nano-30b-a3b:free\",\"provider…",
+      "",
+      "data: {\"id\":\"gen-1786242345-6EfeRYvogwFsbuw8r4pY\",\"object\":\"chat.completion.chunk\",\"created\":1786242345,\"model\":\"nvidia/nemotron-3-nano-30b-a3b:free\",\"provider…",
+      "",
+      "data: {\"id\":\"gen-1786242345-6EfeRYvogwFsbuw8r4pY\",\"object\":\"chat.completion.chunk\",\"created\":1786242345,\"model\":\"nvidia/nemotron-3-nano-30b-a3b:free\",\"provider…",
+      ""
+     ],
+     "total": 17
+    },
+    "kind": "docs"
    },
    {
-    "format": "txt",
-    "lines": 17,
-    "tokens": 602,
-    "firstFile": {
-     "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
-     "start": 35,
-     "end": 51
+    "format": "swift",
+    "lines": 14,
+    "tokens": 59,
+    "first": {
+     "name": "Tests/action-menu-search-test.swift",
+     "start": 5,
+     "end": 18
     },
-    "secondFile": {
-     "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
-     "start": 81,
-     "end": 97
-    }
+    "others": [
+     {
+      "name": "Tests/ai-chat-test.swift",
+      "start": 6,
+      "end": 19
+     },
+     {
+      "name": "Tests/apple-intelligence-test.swift",
+      "start": 8,
+      "end": 21
+     },
+     {
+      "name": "Tests/hotkey-test.swift",
+      "start": 39,
+      "end": 52
+     },
+     {
+      "name": "Tests/interface-size-test.swift",
+      "start": 7,
+      "end": 20
+     },
+     {
+      "name": "Tests/mcp-test.swift",
+      "start": 7,
+      "end": 20
+     },
+     {
+      "name": "Tests/palette-selection-test.swift",
+      "start": 5,
+      "end": 18
+     },
+     {
+      "name": "Tests/quick-action-test.swift",
+      "start": 7,
+      "end": 20
+     },
+     {
+      "name": "Tests/raycast-test.swift",
+      "start": 7,
+      "end": 20
+     }
+    ],
+    "copies": 16,
+    "excerpt": {
+     "lines": [
+      "struct ActionMenuSearchTests {",
+      "    static var failures = 0",
+      "    static var passes = 0",
+      "",
+      "    static func expect(_ condition: @autoclosure () -> Bool, _ message: String) {",
+      "        if condition() {",
+      "            passes += 1",
+      "        } else {",
+      "            failures += 1",
+      "            print(\"FAIL: \\(message)\")"
+     ],
+     "total": 14
+    },
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 20,
     "tokens": 263,
-    "firstFile": {
+    "first": {
      "name": "Scripts/raycast-runtime/src/api/index.js",
      "start": 52,
      "end": 71
     },
-    "secondFile": {
-     "name": "Tinycast/Resources/RaycastRuntime.generated.js",
-     "start": 23,
-     "end": 23
-    }
+    "others": [
+     {
+      "name": "Tinycast/Resources/RaycastRuntime.generated.js",
+      "start": 23,
+      "end": 23
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "const Keyboard = {",
+      "  Shortcut: {",
+      "    Common: {",
+      "      Copy: { modifiers: [\"cmd\", \"shift\"], key: \"c\" },",
+      "      CopyDeeplink: { modifiers: [\"cmd\", \"shift\"], key: \"c\" },",
+      "      CopyName: { modifiers: [\"cmd\", \"shift\"], key: \".\" },",
+      "      CopyPath: { modifiers: [\"cmd\", \"shift\"], key: \",\" },",
+      "      Save: { modifiers: [\"cmd\"], key: \"s\" },",
+      "      Duplicate: { modifiers: [\"cmd\"], key: \"d\" },",
+      "      Edit: { modifiers: [\"cmd\"], key: \"e\" },"
+     ],
+     "total": 20
+    },
+    "excerptSecond": {
+     "lines": [
+      "`):()=>{};return s.enabled=i,n?.(s),s}var rr=Symbol.for(\"nodejs.util.promisify.custom\"),Ou={promisify(a){return a[rr]?a[rr]:(...n)=>new Promise((i,s)=>{a(...n,…"
+     ],
+     "total": 1
+    },
+    "kind": "code"
+   },
+   {
+    "format": "swift",
+    "lines": 16,
+    "tokens": 108,
+    "first": {
+     "name": "Tinycast/Features/AI/UI/ChatHistoryView.swift",
+     "start": 89,
+     "end": 104
+    },
+    "others": [
+     {
+      "name": "Tinycast/Features/Calculator/UI/CalculatorHistoryView.swift",
+      "start": 110,
+      "end": 125
+     },
+     {
+      "name": "Tinycast/Features/Snippets/UI/SnippetsListView.swift",
+      "start": 53,
+      "end": 68
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "swift",
+    "lines": 12,
+    "tokens": 53,
+    "first": {
+     "name": "Tests/ai-instructions-test.swift",
+     "start": 5,
+     "end": 16
+    },
+    "others": [
+     {
+      "name": "Tests/apple-shortcut-test.swift",
+      "start": 4,
+      "end": 15
+     },
+     {
+      "name": "Tests/favorites-test.swift",
+      "start": 4,
+      "end": 15
+     },
+     {
+      "name": "Tests/redaction-test.swift",
+      "start": 5,
+      "end": 16
+     },
+     {
+      "name": "Tests/settings-backup-test.swift",
+      "start": 4,
+      "end": 15
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
+    "format": "swift",
+    "lines": 15,
+    "tokens": 70,
+    "first": {
+     "name": "Tinycast/Features/AI/UI/ChatHistoryView.swift",
+     "start": 38,
+     "end": 52
+    },
+    "others": [
+     {
+      "name": "Tinycast/Features/Calculator/UI/CalculatorHistoryView.swift",
+      "start": 55,
+      "end": 69
+     },
+     {
+      "name": "Tinycast/Features/Clipboard/UI/ClipboardView.swift",
+      "start": 48,
+      "end": 62
+     },
+     {
+      "name": "Tinycast/Features/Quicklinks/UI/QuicklinkListView.swift",
+      "start": 41,
+      "end": 55
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "txt",
     "lines": 7,
     "tokens": 207,
-    "firstFile": {
+    "first": {
      "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
      "start": 37,
      "end": 43
     },
-    "secondFile": {
-     "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
-     "start": 43,
-     "end": 49
-    }
+    "others": [
+     {
+      "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
+      "start": 43,
+      "end": 49
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "swift",
+    "lines": 11,
+    "tokens": 65,
+    "first": {
+     "name": "Tinycast/Features/CustomCommands/UI/CustomCommandCoordinator.swift",
+     "start": 275,
+     "end": 285
+    },
+    "others": [
+     {
+      "name": "Tinycast/Features/Quicklinks/UI/QuicklinkCoordinator.swift",
+      "start": 267,
+      "end": 277
+     },
+     {
+      "name": "Tinycast/Features/WindowManagement/UI/CustomWindowSizeCoordinator.swift",
+      "start": 72,
+      "end": 82
+     },
+     {
+      "name": "Tinycast/Features/WindowManagement/UI/WindowLayoutCoordinator.swift",
+      "start": 178,
+      "end": 188
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 26,
     "tokens": 187,
-    "firstFile": {
+    "first": {
      "name": "Tests/ai-fixtures/codex-stub.js",
      "start": 38,
      "end": 63
     },
-    "secondFile": {
-     "name": "Tests/ai-fixtures/mcp-stub.js",
-     "start": 23,
-     "end": 48
-    }
+    "others": [
+     {
+      "name": "Tests/ai-fixtures/mcp-stub.js",
+      "start": 23,
+      "end": 48
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "swift",
-    "lines": 26,
-    "tokens": 173,
-    "firstFile": {
-     "name": "Tinycast/Features/Quicklinks/UI/QuicklinkListView.swift",
-     "start": 203,
-     "end": 228
+    "lines": 12,
+    "tokens": 62,
+    "first": {
+     "name": "Tinycast/Features/AI/UI/ChatHistoryScreen.swift",
+     "start": 52,
+     "end": 63
     },
-    "secondFile": {
-     "name": "Tinycast/Features/Snippets/UI/SnippetsListView.swift",
-     "start": 133,
-     "end": 158
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 7,
-    "tokens": 158,
-    "firstFile": {
-     "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
-     "start": 105,
-     "end": 111
-    },
-    "secondFile": {
-     "name": "Tests/ai-fixtures/openrouter-nemotron-reasoning.txt",
-     "start": 111,
-     "end": 117
-    }
-   },
-   {
-    "format": "swift",
-    "lines": 23,
-    "tokens": 158,
-    "firstFile": {
-     "name": "Tinycast/Features/AI/Service/CodexAppServerClient.swift",
-     "start": 108,
-     "end": 130
-    },
-    "secondFile": {
-     "name": "Tinycast/Features/MCP/Service/MCPStdioTransport.swift",
-     "start": 51,
-     "end": 73
-    }
-   },
-   {
-    "format": "swift",
-    "lines": 32,
-    "tokens": 143,
-    "firstFile": {
-     "name": "Tinycast/Features/FileSearch/Settings/FileSearchSettingsView.swift",
-     "start": 91,
-     "end": 122
-    },
-    "secondFile": {
-     "name": "Tinycast/Features/Launcher/Settings/SearchScopesSection.swift",
-     "start": 58,
-     "end": 89
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 15,
-    "tokens": 132,
-    "firstFile": {
-     "name": ".github/ISSUE_TEMPLATE/bug_report.yml",
-     "start": 51,
-     "end": 65
-    },
-    "secondFile": {
-     "name": ".github/ISSUE_TEMPLATE/feature_request.yml",
-     "start": 20,
-     "end": 34
-    }
+    "others": [
+     {
+      "name": "Tinycast/Features/Calendar/UI/ScheduleScreen.swift",
+      "start": 46,
+      "end": 56
+     },
+     {
+      "name": "Tinycast/Features/Quicklinks/UI/QuicklinkListScreen.swift",
+      "start": 82,
+      "end": 92
+     },
+     {
+      "name": "Tinycast/Features/Snippets/UI/SnippetsScreen.swift",
+      "start": 40,
+      "end": 50
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 771,
+   "lines": 125493,
+   "tokens": 795406,
+   "clones": 216,
+   "duplicatedLines": 2501,
+   "duplicatedTokens": 14514,
+   "percentage": 1.99,
+   "percentageTokens": 1.82,
+   "formats": [
+    {
+     "format": "swift",
+     "sources": 681,
+     "lines": 111800,
+     "clones": 207,
+     "duplicatedLines": 2402,
+     "percentage": 2.15
+    },
+    {
+     "format": "javascript",
+     "sources": 28,
+     "lines": 9030,
+     "clones": 5,
+     "duplicatedLines": 68,
+     "percentage": 0.75
+    },
+    {
+     "format": "bash",
+     "sources": 17,
+     "lines": 1518,
+     "clones": 4,
+     "duplicatedLines": 31,
+     "percentage": 2.04
+    },
+    {
+     "format": "tsx",
+     "sources": 29,
+     "lines": 2153,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 15,
+     "lines": 818,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "swift",
+     "lines": 14,
+     "tokens": 59,
+     "first": {
+      "name": "Tests/action-menu-search-test.swift",
+      "start": 5,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "Tests/ai-chat-test.swift",
+       "start": 6,
+       "end": 19
+      },
+      {
+       "name": "Tests/apple-intelligence-test.swift",
+       "start": 8,
+       "end": 21
+      },
+      {
+       "name": "Tests/hotkey-test.swift",
+       "start": 39,
+       "end": 52
+      },
+      {
+       "name": "Tests/interface-size-test.swift",
+       "start": 7,
+       "end": 20
+      },
+      {
+       "name": "Tests/mcp-test.swift",
+       "start": 7,
+       "end": 20
+      },
+      {
+       "name": "Tests/palette-selection-test.swift",
+       "start": 5,
+       "end": 18
+      },
+      {
+       "name": "Tests/quick-action-test.swift",
+       "start": 7,
+       "end": 20
+      },
+      {
+       "name": "Tests/raycast-test.swift",
+       "start": 7,
+       "end": 20
+      }
+     ],
+     "copies": 16,
+     "excerpt": {
+      "lines": [
+       "struct ActionMenuSearchTests {",
+       "    static var failures = 0",
+       "    static var passes = 0",
+       "",
+       "    static func expect(_ condition: @autoclosure () -> Bool, _ message: String) {",
+       "        if condition() {",
+       "            passes += 1",
+       "        } else {",
+       "            failures += 1",
+       "            print(\"FAIL: \\(message)\")"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 16,
+     "tokens": 108,
+     "first": {
+      "name": "Tinycast/Features/AI/UI/ChatHistoryView.swift",
+      "start": 89,
+      "end": 104
+     },
+     "others": [
+      {
+       "name": "Tinycast/Features/Calculator/UI/CalculatorHistoryView.swift",
+       "start": 110,
+       "end": 125
+      },
+      {
+       "name": "Tinycast/Features/Snippets/UI/SnippetsListView.swift",
+       "start": 53,
+       "end": 68
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "let selected: Bool",
+       "@State private var hovered = false",
+       "",
+       "private var fill: Color {",
+       "    if selected { return Theme.Colors.selection }",
+       "    if hovered { return Theme.Colors.rowHover }",
+       "    return .clear",
+       "}",
+       "",
+       "var body: some View {"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 12,
+     "tokens": 53,
+     "first": {
+      "name": "Tests/ai-instructions-test.swift",
+      "start": 5,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": "Tests/apple-shortcut-test.swift",
+       "start": 4,
+       "end": 15
+      },
+      {
+       "name": "Tests/favorites-test.swift",
+       "start": 4,
+       "end": 15
+      },
+      {
+       "name": "Tests/redaction-test.swift",
+       "start": 5,
+       "end": 16
+      },
+      {
+       "name": "Tests/settings-backup-test.swift",
+       "start": 4,
+       "end": 15
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "struct AIInstructionsTest {",
+       "    static func main() {",
+       "        var failures = 0",
+       "",
+       "        func check(_ description: String, _ condition: @autoclosure () -> Bool) {",
+       "            if condition() {",
+       "                print(\"PASS  \\(description)\")",
+       "            } else {",
+       "                print(\"FAIL  \\(description)\")",
+       "                failures += 1"
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 15,
+     "tokens": 70,
+     "first": {
+      "name": "Tinycast/Features/AI/UI/ChatHistoryView.swift",
+      "start": 38,
+      "end": 52
+     },
+     "others": [
+      {
+       "name": "Tinycast/Features/Calculator/UI/CalculatorHistoryView.swift",
+       "start": 55,
+       "end": 69
+      },
+      {
+       "name": "Tinycast/Features/Clipboard/UI/ClipboardView.swift",
+       "start": 48,
+       "end": 62
+      },
+      {
+       "name": "Tinycast/Features/Quicklinks/UI/QuicklinkListView.swift",
+       "start": 41,
+       "end": 55
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 11,
+     "tokens": 65,
+     "first": {
+      "name": "Tinycast/Features/CustomCommands/UI/CustomCommandCoordinator.swift",
+      "start": 275,
+      "end": 285
+     },
+     "others": [
+      {
+       "name": "Tinycast/Features/Quicklinks/UI/QuicklinkCoordinator.swift",
+       "start": 267,
+       "end": 277
+      },
+      {
+       "name": "Tinycast/Features/WindowManagement/UI/CustomWindowSizeCoordinator.swift",
+       "start": 72,
+       "end": 82
+      },
+      {
+       "name": "Tinycast/Features/WindowManagement/UI/WindowLayoutCoordinator.swift",
+       "start": 178,
+       "end": 188
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 26,
+     "tokens": 187,
+     "first": {
+      "name": "Tests/ai-fixtures/codex-stub.js",
+      "start": 38,
+      "end": 63
+     },
+     "others": [
+      {
+       "name": "Tests/ai-fixtures/mcp-stub.js",
+       "start": 23,
+       "end": 48
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 12,
+     "tokens": 62,
+     "first": {
+      "name": "Tinycast/Features/AI/UI/ChatHistoryScreen.swift",
+      "start": 52,
+      "end": 63
+     },
+     "others": [
+      {
+       "name": "Tinycast/Features/Calendar/UI/ScheduleScreen.swift",
+       "start": 46,
+       "end": 56
+      },
+      {
+       "name": "Tinycast/Features/Quicklinks/UI/QuicklinkListScreen.swift",
+       "start": 82,
+       "end": 92
+      },
+      {
+       "name": "Tinycast/Features/Snippets/UI/SnippetsScreen.swift",
+       "start": 40,
+       "end": 50
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 11,
+     "tokens": 58,
+     "first": {
+      "name": "Tinycast/Features/AI/UI/ChatHistoryView.swift",
+      "start": 89,
+      "end": 99
+     },
+     "others": [
+      {
+       "name": "Tinycast/Features/Calendar/UI/ScheduleView.swift",
+       "start": 82,
+       "end": 92
+      },
+      {
+       "name": "Tinycast/Features/Extensions/UI/ExtensionListView.swift",
+       "start": 173,
+       "end": 183
+      },
+      {
+       "name": "Tinycast/Features/MenuSearch/UI/MenuSearchList.swift",
+       "start": 99,
+       "end": 109
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 26,
+     "tokens": 173,
+     "first": {
+      "name": "Tinycast/Features/Quicklinks/UI/QuicklinkListView.swift",
+      "start": 203,
+      "end": 228
+     },
+     "others": [
+      {
+       "name": "Tinycast/Features/Snippets/UI/SnippetsListView.swift",
+       "start": 133,
+       "end": 158
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "swift",
+     "lines": 12,
+     "tokens": 57,
+     "first": {
+      "name": "Tinycast/Features/Calendar/UI/ScheduleView.swift",
+      "start": 59,
+      "end": 70
+     },
+     "others": [
+      {
+       "name": "Tinycast/Features/Clipboard/UI/ClipboardView.swift",
+       "start": 79,
+       "end": 90
+      },
+      {
+       "name": "Tinycast/Features/Launcher/UI/LauncherList.swift",
+       "start": 170,
+       "end": 181
+      },
+      {
+       "name": "Tinycast/Features/Uninstall/UI/UninstallView.swift",
+       "start": 44,
+       "end": 54
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 5,
+    "minified": 0,
+    "sample": [
+     "Scripts/raycast-runtime/src/api/enums.generated.js",
+     "Tinycast/Features/Calculator/Model/CountryZoneData.generated.swift",
+     "Tinycast/Features/Calculator/Model/CurrencyData.generated.swift",
+     "Tinycast/Features/Emoji/Model/EmojiData.generated.swift",
+     "Tinycast/Resources/RaycastRuntime.generated.js"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:07:47.571Z",
+  "jscpdVersion": "5.4.0"
  }
 }

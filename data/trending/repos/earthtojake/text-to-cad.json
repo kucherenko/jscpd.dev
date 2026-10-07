@@ -9,10 +9,12 @@
    "starsToday": 124,
    "headSha": "d0e4cb63bf3500d0c4702d611a9e4ece3cde9a09",
    "sources": 1344,
-   "lines": 327860,
-   "clones": 599,
-   "duplicatedLines": 8521,
-   "percentage": 2.6,
+   "lines": 313411,
+   "clones": 621,
+   "duplicatedLines": 9168,
+   "percentage": 2.93,
+   "codePercentage": 2.44,
+   "codeSources": 759,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 83,
    "headSha": "d749a1980d806c7fed344b115651ccf1d8cfb28d",
    "sources": 2735,
-   "lines": 561270,
+   "lines": 561226,
    "clones": 1472,
    "duplicatedLines": 31227,
    "percentage": 5.56,
+   "codePercentage": 4.78,
+   "codeSources": 1628,
    "healthScore": 51.6,
    "healthGrade": "D"
   },
@@ -37,10 +41,12 @@
    "starsToday": 437,
    "headSha": "941ac2f16de7d4aa2315b4f685cd83b98cbd0c14",
    "sources": 2741,
-   "lines": 563195,
+   "lines": 563151,
    "clones": 1476,
    "duplicatedLines": 31273,
    "percentage": 5.55,
+   "codePercentage": 4.77,
+   "codeSources": 1630,
    "healthScore": 51.7,
    "healthGrade": "D"
   },
@@ -51,10 +57,12 @@
    "starsToday": 619,
    "headSha": "af990e6108eb77ccd5db0eae16abbfca1c7ffe24",
    "sources": 2742,
-   "lines": 563315,
+   "lines": 563271,
    "clones": 1477,
    "duplicatedLines": 31293,
    "percentage": 5.56,
+   "codePercentage": 4.77,
+   "codeSources": 1630,
    "healthScore": 51.7,
    "healthGrade": "D"
   }
@@ -70,11 +78,11 @@
   "starsToday": 619,
   "defaultBranch": "main",
   "headSha": "af990e6108eb77ccd5db0eae16abbfca1c7ffe24",
-  "durationMs": 3819,
+  "durationMs": 4747,
   "total": {
    "sources": 2742,
-   "lines": 563315,
-   "tokens": 5002140,
+   "lines": 563271,
+   "tokens": 5001975,
    "clones": 1477,
    "duplicatedLines": 31293,
    "duplicatedTokens": 670770,
@@ -166,153 +174,302 @@
   "topClones": [
    {
     "format": "python",
-    "lines": 33,
-    "tokens": 50505,
-    "firstFile": {
-     "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
-     "start": 1,
-     "end": 33
+    "lines": 7,
+    "tokens": 50299,
+    "first": {
+     "name": "models/tendon_hand/src/hand_export_repair_context.py",
+     "start": 8,
+     "end": 14
     },
-    "secondFile": {
-     "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
-     "start": 1,
-     "end": 33
-    }
+    "others": [
+     {
+      "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+      "start": 27,
+      "end": 33
+     },
+     {
+      "name": "models/tendon_hand/src/hand_native_review.py",
+      "start": 8,
+      "end": 14
+     },
+     {
+      "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+      "start": 7,
+      "end": 13
+     },
+     {
+      "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
+      "start": 7,
+      "end": 13
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+      "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+      "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+      "'''",
+      "",
+      "",
+      "@step(out='../STEP/hand_export_repair_context.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+      "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+      "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+      "'''",
+      "",
+      "",
+      "@step(out='../STEP/hand_mechanical_candidate.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+     ],
+     "total": 7
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 33,
     "tokens": 50505,
-    "firstFile": {
+    "first": {
      "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
      "start": 1,
      "end": 33
     },
-    "secondFile": {
-     "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
-     "start": 1,
-     "end": 33
-    }
+    "others": [
+     {
+      "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
+      "start": 1,
+      "end": 33
+     },
+     {
+      "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
+      "start": 1,
+      "end": 33
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "\"\"\"Complete mechanical candidate assembled from the actual exported components.",
+      "",
+      "The pose/explode gauntlet is still separate. Native reconstruction here keeps",
+      "this assembled export aligned with the components used by the physical audits.",
+      "\"\"\"",
+      "import hashlib,json",
+      "from pathlib import Path",
+      "from cadgen import step,read_step",
+      "from lib.native_integration import integrated_native_bodies,overlay,ROOT",
+      "from lib.assembly import compound"
+     ],
+     "total": 33
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 10,
     "tokens": 50315,
-    "firstFile": {
+    "first": {
      "name": "models/tendon_hand/src/phalanx_beauty_context.py",
      "start": 4,
      "end": 13
     },
-    "secondFile": {
-     "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
-     "start": 4,
-     "end": 13
-    }
+    "others": [
+     {
+      "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
+      "start": 4,
+      "end": 13
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "from lib.native_integration import frozen_bodies",
+      "from lib.palette import ASSEMBLY_MATERIALS",
+      "from phalanx_beauty_review import replacements",
+      "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+      "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+      "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+      "'''",
+      "",
+      "",
+      "@step(out='../STEP/phalanx_beauty_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "from lib.native_integration import frozen_bodies",
+      "from lib.palette import ASSEMBLY_MATERIALS",
+      "from phalanx_beauty_review import replacements",
+      "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+      "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+      "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+      "'''",
+      "",
+      "",
+      "@step(out='../STEP/phalanx_sculpt_representative_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+     ],
+     "total": 10
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 8,
     "tokens": 50303,
-    "firstFile": {
+    "first": {
      "name": "models/tendon_hand/src/phalanx_beauty_context.py",
      "start": 6,
      "end": 13
     },
-    "secondFile": {
-     "name": "models/tendon_hand/src/pulley_hub_context.py",
-     "start": 7,
-     "end": 14
-    }
-   },
-   {
-    "format": "python",
-    "lines": 7,
-    "tokens": 50299,
-    "firstFile": {
-     "name": "models/tendon_hand/src/hand_export_repair_context.py",
-     "start": 8,
-     "end": 14
-    },
-    "secondFile": {
-     "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
-     "start": 27,
-     "end": 33
-    }
-   },
-   {
-    "format": "python",
-    "lines": 7,
-    "tokens": 50299,
-    "firstFile": {
-     "name": "models/tendon_hand/src/hand_export_repair_context.py",
-     "start": 8,
-     "end": 14
-    },
-    "secondFile": {
-     "name": "models/tendon_hand/src/hand_native_review.py",
-     "start": 8,
-     "end": 14
-    }
-   },
-   {
-    "format": "python",
-    "lines": 7,
-    "tokens": 50299,
-    "firstFile": {
-     "name": "models/tendon_hand/src/hand_export_repair_context.py",
-     "start": 8,
-     "end": 14
-    },
-    "secondFile": {
-     "name": "models/tendon_hand/src/phalanx_beauty_context.py",
-     "start": 7,
-     "end": 13
-    }
-   },
-   {
-    "format": "python",
-    "lines": 7,
-    "tokens": 50299,
-    "firstFile": {
-     "name": "models/tendon_hand/src/hand_export_repair_context.py",
-     "start": 8,
-     "end": 14
-    },
-    "secondFile": {
-     "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
-     "start": 7,
-     "end": 13
-    }
+    "others": [
+     {
+      "name": "models/tendon_hand/src/pulley_hub_context.py",
+      "start": 7,
+      "end": 14
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 6,
     "tokens": 38144,
-    "firstFile": {
+    "first": {
      "name": "models/tendon_hand/src/hand_export_repair_context.py",
      "start": 9,
      "end": 14
     },
-    "secondFile": {
-     "name": "models/tendon_hand/src/routing_layout_review.py",
-     "start": 14,
-     "end": 19
-    }
+    "others": [
+     {
+      "name": "models/tendon_hand/src/routing_layout_review.py",
+      "start": 14,
+      "end": 19
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 955,
     "tokens": 7131,
-    "firstFile": {
+    "first": {
      "name": "models/radial/src/lib/castings.py",
      "start": 3,
      "end": 957
     },
-    "secondFile": {
-     "name": "models/w16/src/lib/castings.py",
+    "others": [
+     {
+      "name": "models/w16/src/lib/castings.py",
+      "start": 3,
+      "end": 957
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 214,
+    "tokens": 4326,
+    "first": {
+     "name": "models/radial/src/lib/anim_js.py",
+     "start": 16,
+     "end": 229
+    },
+    "others": [
+     {
+      "name": "models/radial/src/lib/animgen.py",
+      "start": 245,
+      "end": 458
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 318,
+    "tokens": 1755,
+    "first": {
+     "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+     "start": 13,
+     "end": 330
+    },
+    "others": [
+     {
+      "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+      "start": 330,
+      "end": 647
+     },
+     {
+      "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+      "start": 662,
+      "end": 979
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   },
+   {
+    "format": "txt",
+    "lines": 86,
+    "tokens": 875,
+    "first": {
+     "name": "packages/ui/licenses/excalidraw/Assistant-OFL.txt",
      "start": 3,
-     "end": 957
-    }
+     "end": 88
+    },
+    "others": [
+     {
+      "name": "packages/ui/licenses/excalidraw/Cascadia-OFL.txt",
+      "start": 9,
+      "end": 94
+     },
+     {
+      "name": "packages/ui/licenses/excalidraw/Lilita-OFL.txt",
+      "start": 3,
+      "end": 88
+     },
+     {
+      "name": "packages/ui/licenses/excalidraw/Nunito-OFL.txt",
+      "start": 3,
+      "end": 88
+     },
+     {
+      "name": "packages/ui/licenses/excalidraw/Xiaolai-OFL.txt",
+      "start": 3,
+      "end": 88
+     }
+    ],
+    "copies": 5,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 391,
+    "tokens": 2855,
+    "first": {
+     "name": "models/radial/src/lib/fasteners.py",
+     "start": 503,
+     "end": 893
+    },
+    "others": [
+     {
+      "name": "models/w16/src/lib/fasteners.py",
+      "start": 497,
+      "end": 887
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -533,6 +690,377 @@
      "lines": 601
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 1630,
+   "lines": 322142,
+   "tokens": 3154012,
+   "clones": 839,
+   "duplicatedLines": 15372,
+   "duplicatedTokens": 589809,
+   "percentage": 4.77,
+   "percentageTokens": 18.7,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 1087,
+     "lines": 220705,
+     "clones": 695,
+     "duplicatedLines": 13263,
+     "percentage": 6.01
+    },
+    {
+     "format": "javascript",
+     "sources": 385,
+     "lines": 81290,
+     "clones": 126,
+     "duplicatedLines": 1918,
+     "percentage": 2.36
+    },
+    {
+     "format": "jsx",
+     "sources": 67,
+     "lines": 11800,
+     "clones": 10,
+     "duplicatedLines": 113,
+     "percentage": 0.96
+    },
+    {
+     "format": "typescript",
+     "sources": 46,
+     "lines": 2849,
+     "clones": 6,
+     "duplicatedLines": 51,
+     "percentage": 1.79
+    },
+    {
+     "format": "bash",
+     "sources": 21,
+     "lines": 2504,
+     "clones": 1,
+     "duplicatedLines": 14,
+     "percentage": 0.56
+    },
+    {
+     "format": "tsx",
+     "sources": 22,
+     "lines": 2067,
+     "clones": 1,
+     "duplicatedLines": 13,
+     "percentage": 0.63
+    },
+    {
+     "format": "c",
+     "sources": 1,
+     "lines": 753,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 50299,
+     "first": {
+      "name": "models/tendon_hand/src/hand_export_repair_context.py",
+      "start": 8,
+      "end": 14
+     },
+     "others": [
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+       "start": 27,
+       "end": 33
+      },
+      {
+       "name": "models/tendon_hand/src/hand_native_review.py",
+       "start": 8,
+       "end": 14
+      },
+      {
+       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+       "start": 7,
+       "end": 13
+      },
+      {
+       "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
+       "start": 7,
+       "end": 13
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/hand_export_repair_context.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/hand_mechanical_candidate.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 33,
+     "tokens": 50505,
+     "first": {
+      "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+      "start": 1,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
+       "start": 1,
+       "end": 33
+      },
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
+       "start": 1,
+       "end": 33
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "\"\"\"Complete mechanical candidate assembled from the actual exported components.",
+       "",
+       "The pose/explode gauntlet is still separate. Native reconstruction here keeps",
+       "this assembled export aligned with the components used by the physical audits.",
+       "\"\"\"",
+       "import hashlib,json",
+       "from pathlib import Path",
+       "from cadgen import step,read_step",
+       "from lib.native_integration import integrated_native_bodies,overlay,ROOT",
+       "from lib.assembly import compound"
+      ],
+      "total": 33
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 50315,
+     "first": {
+      "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+      "start": 4,
+      "end": 13
+     },
+     "others": [
+      {
+       "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
+       "start": 4,
+       "end": 13
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "from lib.native_integration import frozen_bodies",
+       "from lib.palette import ASSEMBLY_MATERIALS",
+       "from phalanx_beauty_review import replacements",
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/phalanx_beauty_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "from lib.native_integration import frozen_bodies",
+       "from lib.palette import ASSEMBLY_MATERIALS",
+       "from phalanx_beauty_review import replacements",
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/phalanx_sculpt_representative_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 50303,
+     "first": {
+      "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+      "start": 6,
+      "end": 13
+     },
+     "others": [
+      {
+       "name": "models/tendon_hand/src/pulley_hub_context.py",
+       "start": 7,
+       "end": 14
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 38144,
+     "first": {
+      "name": "models/tendon_hand/src/hand_export_repair_context.py",
+      "start": 9,
+      "end": 14
+     },
+     "others": [
+      {
+       "name": "models/tendon_hand/src/routing_layout_review.py",
+       "start": 14,
+       "end": 19
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 955,
+     "tokens": 7131,
+     "first": {
+      "name": "models/radial/src/lib/castings.py",
+      "start": 3,
+      "end": 957
+     },
+     "others": [
+      {
+       "name": "models/w16/src/lib/castings.py",
+       "start": 3,
+       "end": 957
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 391,
+     "tokens": 2855,
+     "first": {
+      "name": "models/radial/src/lib/fasteners.py",
+      "start": 503,
+      "end": 893
+     },
+     "others": [
+      {
+       "name": "models/w16/src/lib/fasteners.py",
+       "start": 497,
+       "end": 887
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 180,
+     "tokens": 2836,
+     "first": {
+      "name": "models/w16/src/lib/animgen.py",
+      "start": 341,
+      "end": 520
+     },
+     "others": [
+      {
+       "name": "models/w16/src/w16.py",
+       "start": 215,
+       "end": 394
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 330,
+     "tokens": 2150,
+     "first": {
+      "name": "models/radial/src/lib/fasteners.py",
+      "start": 145,
+      "end": 474
+     },
+     "others": [
+      {
+       "name": "models/w16/src/lib/fasteners.py",
+       "start": 139,
+       "end": 468
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 86,
+     "tokens": 1032,
+     "first": {
+      "name": "models/tendon_hand/src/lib/phalanx.py",
+      "start": 1,
+      "end": 86
+     },
+     "others": [
+      {
+       "name": "models/tendon_hand/validation/phalanx_before_nail.py",
+       "start": 1,
+       "end": 86
+      },
+      {
+       "name": "models/tendon_hand/validation/phalanx_pre_beauty_baseline.py",
+       "start": 1,
+       "end": 86
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "models/radial/src/lib/anim_js.py"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:39:41.941Z",
+  "jscpdVersion": "5.4.0"
  }
 }

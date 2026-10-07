@@ -9,10 +9,12 @@
    "starsToday": 234,
    "headSha": "fc5bae0f9b6138828fe7589f6b531fb9a26968de",
    "sources": 66,
-   "lines": 10882,
+   "lines": 10637,
    "clones": 12,
-   "duplicatedLines": 131,
-   "percentage": 1.2,
+   "duplicatedLines": 143,
+   "percentage": 1.34,
+   "codePercentage": 1.5,
+   "codeSources": 33,
    "healthScore": 70.2,
    "healthGrade": "B"
   }
@@ -28,46 +30,46 @@
   "starsToday": 234,
   "defaultBranch": "main",
   "headSha": "fc5bae0f9b6138828fe7589f6b531fb9a26968de",
-  "durationMs": 647,
+  "durationMs": 100,
   "total": {
    "sources": 66,
-   "lines": 10882,
-   "tokens": 113003,
+   "lines": 10637,
+   "tokens": 112838,
    "clones": 12,
-   "duplicatedLines": 131,
+   "duplicatedLines": 143,
    "duplicatedTokens": 1426,
-   "percentage": 1.2,
+   "percentage": 1.34,
    "percentageTokens": 1.26
   },
   "formats": [
    {
     "format": "python",
     "sources": 40,
-    "lines": 7751,
+    "lines": 7718,
     "clones": 8,
-    "duplicatedLines": 97,
-    "percentage": 1.25
+    "duplicatedLines": 105,
+    "percentage": 1.36
    },
    {
     "format": "markup",
     "sources": 6,
     "lines": 654,
     "clones": 3,
-    "duplicatedLines": 28,
-    "percentage": 4.28
+    "duplicatedLines": 31,
+    "percentage": 4.74
    },
    {
     "format": "css",
     "sources": 1,
     "lines": 513,
     "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 1.17
+    "duplicatedLines": 7,
+    "percentage": 1.36
    },
    {
     "format": "bash",
     "sources": 11,
-    "lines": 817,
+    "lines": 692,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -89,17 +91,17 @@
     "percentage": 0
    },
    {
-    "format": "yaml",
-    "sources": 2,
+    "format": "perl",
+    "sources": 1,
     "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
+    "format": "yaml",
+    "sources": 2,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -113,9 +115,9 @@
     "percentage": 0
    },
    {
-    "format": "text",
+    "format": "toml",
     "sources": 1,
-    "lines": 101,
+    "lines": 46,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -123,154 +125,236 @@
   ],
   "topClones": [
    {
+    "format": "python",
+    "lines": 16,
+    "tokens": 86,
+    "first": {
+     "name": "needle/environments/data_capture.py",
+     "start": 117,
+     "end": 132
+    },
+    "others": [
+     {
+      "name": "needle/environments/kitchen_appliance.py",
+      "start": 106,
+      "end": 121
+     },
+     {
+      "name": "needle/environments/media_player.py",
+      "start": 89,
+      "end": 104
+     },
+     {
+      "name": "needle/environments/productivity.py",
+      "start": 118,
+      "end": 133
+     },
+     {
+      "name": "needle/environments/smart_home.py",
+      "start": 124,
+      "end": 139
+     },
+     {
+      "name": "needle/environments/wearable.py",
+      "start": 96,
+      "end": 111
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "    {'query': 'log my weight of 78.4 kg and 350 ml of water', 'calls': [{'name': 'log_weight', 'arguments': {'weight_kg': 78.4}}, {'name': 'log_water_intake', …",
+      "]",
+      "",
+      "",
+      "def run_tests(min_confidence=0.0, verbose=True):",
+      "    return _harness.run_tests(sys.modules[__name__], min_confidence, verbose)",
+      "",
+      "",
+      "def __getattr__(name):",
+      "    if name == \"agent\":"
+     ],
+     "total": 16
+    },
+    "kind": "code"
+   },
+   {
     "format": "markup",
     "lines": 11,
     "tokens": 268,
-    "firstFile": {
+    "first": {
      "name": "assets/benchmarks.svg",
      "start": 231,
      "end": 241
     },
-    "secondFile": {
-     "name": "assets/benchmarks.svg",
-     "start": 284,
-     "end": 294
-    }
+    "others": [
+     {
+      "name": "assets/benchmarks.svg",
+      "start": 284,
+      "end": 294
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<text x=\"40\" y=\"70\" font-family=\"Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif\" font-size=\"20\" font-weight=\"600\" fill=\"#e8e6df\">SNIPS gold</te…",
+      "<text x=\"40\" y=\"88\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"11\" fill=\"#85827a\">field F1 · 700 rows · F1 (%)</text>",
+      "<line x1=\"382.5\" y1=\"102\" x2=\"382.5\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"382.5\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">25</text>",
+      "<line x1=\"515.0\" y1=\"102\" x2=\"515.0\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"515.0\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">50</text>",
+      "<line x1=\"647.5\" y1=\"102\" x2=\"647.5\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"647.5\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">75</text>",
+      "<line x1=\"780.0\" y1=\"102\" x2=\"780.0\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"780.0\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">100</text>"
+     ],
+     "total": 11
+    },
+    "kind": "markup"
    },
    {
     "format": "markup",
     "lines": 10,
     "tokens": 237,
-    "firstFile": {
+    "first": {
      "name": "assets/benchmarks.svg",
      "start": 179,
      "end": 188
     },
-    "secondFile": {
-     "name": "assets/benchmarks.svg",
-     "start": 232,
-     "end": 241
-    }
+    "others": [
+     {
+      "name": "assets/benchmarks.svg",
+      "start": 232,
+      "end": 241
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<text x=\"40\" y=\"88\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"11\" fill=\"#85827a\">field F1 · 1,813 turns · F1 (%)</text>",
+      "<line x1=\"382.5\" y1=\"102\" x2=\"382.5\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"382.5\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">25</text>",
+      "<line x1=\"515.0\" y1=\"102\" x2=\"515.0\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"515.0\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">50</text>",
+      "<line x1=\"647.5\" y1=\"102\" x2=\"647.5\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"647.5\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">75</text>",
+      "<line x1=\"780.0\" y1=\"102\" x2=\"780.0\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"780.0\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">100</text>",
+      "<line x1=\"674.0\" y1=\"96\" x2=\"674.0\" y2=\"370\" stroke=\"#e8593d\" stroke-width=\"1.2\" stroke-dasharray=\"1 5\" stroke-linecap=\"round\" opacity=\"0.8\"/>"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "<text x=\"40\" y=\"88\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"11\" fill=\"#85827a\">field F1 · 700 rows · F1 (%)</text>",
+      "<line x1=\"382.5\" y1=\"102\" x2=\"382.5\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"382.5\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">25</text>",
+      "<line x1=\"515.0\" y1=\"102\" x2=\"515.0\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"515.0\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">50</text>",
+      "<line x1=\"647.5\" y1=\"102\" x2=\"647.5\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"647.5\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">75</text>",
+      "<line x1=\"780.0\" y1=\"102\" x2=\"780.0\" y2=\"366\" stroke=\"#232326\" stroke-width=\"1\"/>",
+      "<text x=\"780.0\" y=\"384\" text-anchor=\"middle\" font-family=\"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace\" font-size=\"10\" fill=\"#4a4844\">100</text>",
+      "<line x1=\"617.8\" y1=\"96\" x2=\"617.8\" y2=\"370\" stroke=\"#e8593d\" stroke-width=\"1.2\" stroke-dasharray=\"1 5\" stroke-linecap=\"round\" opacity=\"0.8\"/>"
+     ],
+     "total": 10
+    },
+    "kind": "markup"
    },
    {
     "format": "markup",
     "lines": 10,
     "tokens": 235,
-    "firstFile": {
+    "first": {
      "name": "assets/benchmarks.svg",
      "start": 126,
      "end": 135
     },
-    "secondFile": {
-     "name": "assets/benchmarks.svg",
-     "start": 179,
-     "end": 188
-    }
-   },
-   {
-    "format": "python",
-    "lines": 16,
-    "tokens": 86,
-    "firstFile": {
-     "name": "needle/environments/data_capture.py",
-     "start": 117,
-     "end": 132
-    },
-    "secondFile": {
-     "name": "needle/environments/kitchen_appliance.py",
-     "start": 106,
-     "end": 121
-    }
-   },
-   {
-    "format": "python",
-    "lines": 16,
-    "tokens": 86,
-    "firstFile": {
-     "name": "needle/environments/data_capture.py",
-     "start": 117,
-     "end": 132
-    },
-    "secondFile": {
-     "name": "needle/environments/media_player.py",
-     "start": 89,
-     "end": 104
-    }
-   },
-   {
-    "format": "python",
-    "lines": 16,
-    "tokens": 86,
-    "firstFile": {
-     "name": "needle/environments/data_capture.py",
-     "start": 117,
-     "end": 132
-    },
-    "secondFile": {
-     "name": "needle/environments/productivity.py",
-     "start": 118,
-     "end": 133
-    }
-   },
-   {
-    "format": "python",
-    "lines": 16,
-    "tokens": 86,
-    "firstFile": {
-     "name": "needle/environments/data_capture.py",
-     "start": 117,
-     "end": 132
-    },
-    "secondFile": {
-     "name": "needle/environments/smart_home.py",
-     "start": 124,
-     "end": 139
-    }
-   },
-   {
-    "format": "python",
-    "lines": 16,
-    "tokens": 86,
-    "firstFile": {
-     "name": "needle/environments/data_capture.py",
-     "start": 117,
-     "end": 132
-    },
-    "secondFile": {
-     "name": "needle/environments/wearable.py",
-     "start": 96,
-     "end": 111
-    }
+    "others": [
+     {
+      "name": "assets/benchmarks.svg",
+      "start": 179,
+      "end": 188
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
    },
    {
     "format": "python",
     "lines": 8,
     "tokens": 76,
-    "firstFile": {
+    "first": {
      "name": "needle/__init__.py",
      "start": 111,
      "end": 118
     },
-    "secondFile": {
-     "name": "needle/_worker.py",
-     "start": 58,
-     "end": 65
-    }
+    "others": [
+     {
+      "name": "needle/_worker.py",
+      "start": 58,
+      "end": 65
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 10,
     "tokens": 65,
-    "firstFile": {
+    "first": {
      "name": "tests/test_fetch.py",
      "start": 120,
      "end": 129
     },
-    "secondFile": {
-     "name": "tests/test_fetch.py",
-     "start": 142,
-     "end": 151
-    }
+    "others": [
+     {
+      "name": "tests/test_fetch.py",
+      "start": 142,
+      "end": 151
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 62,
+    "first": {
+     "name": "needle/__init__.py",
+     "start": 105,
+     "end": 111
+    },
+    "others": [
+     {
+      "name": "needle/_worker.py",
+      "start": 51,
+      "end": 58
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "css",
+    "lines": 7,
+    "tokens": 53,
+    "first": {
+     "name": "needle/playground/style.css",
+     "start": 208,
+     "end": 214
+    },
+    "others": [
+     {
+      "name": "needle/playground/style.css",
+      "start": 382,
+      "end": 388
+     }
+    ],
+    "copies": 2,
+    "kind": "styles"
    }
   ],
   "health": {
@@ -482,6 +566,183 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 33,
+   "lines": 6342,
+   "tokens": 48943,
+   "clones": 7,
+   "duplicatedLines": 95,
+   "duplicatedTokens": 568,
+   "percentage": 1.5,
+   "percentageTokens": 1.16,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 22,
+     "lines": 5483,
+     "clones": 7,
+     "duplicatedLines": 95,
+     "percentage": 1.73
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 685,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 86,
+     "first": {
+      "name": "needle/environments/data_capture.py",
+      "start": 117,
+      "end": 132
+     },
+     "others": [
+      {
+       "name": "needle/environments/kitchen_appliance.py",
+       "start": 106,
+       "end": 121
+      },
+      {
+       "name": "needle/environments/media_player.py",
+       "start": 89,
+       "end": 104
+      },
+      {
+       "name": "needle/environments/productivity.py",
+       "start": 118,
+       "end": 133
+      },
+      {
+       "name": "needle/environments/smart_home.py",
+       "start": 124,
+       "end": 139
+      },
+      {
+       "name": "needle/environments/wearable.py",
+       "start": 96,
+       "end": 111
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "    {'query': 'log my weight of 78.4 kg and 350 ml of water', 'calls': [{'name': 'log_weight', 'arguments': {'weight_kg': 78.4}}, {'name': 'log_water_intake', …",
+       "]",
+       "",
+       "",
+       "def run_tests(min_confidence=0.0, verbose=True):",
+       "    return _harness.run_tests(sys.modules[__name__], min_confidence, verbose)",
+       "",
+       "",
+       "def __getattr__(name):",
+       "    if name == \"agent\":"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 76,
+     "first": {
+      "name": "needle/__init__.py",
+      "start": 111,
+      "end": 118
+     },
+     "others": [
+      {
+       "name": "needle/_worker.py",
+       "start": 58,
+       "end": 65
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "if generation >= 3:",
+       "    lib.needle_embed.argtypes = [",
+       "        ctypes.c_char_p, ctypes.POINTER(ctypes.c_float), ctypes.c_int]",
+       "    lib.needle_embed.restype = ctypes.c_int",
+       "lib.needle_reset.argtypes = []",
+       "lib.needle_reset.restype = None",
+       "lib.needle_load.argtypes = [ctypes.c_char_p, ctypes.c_uint64]",
+       "lib.needle_load.restype = ctypes.c_int"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 62,
+     "first": {
+      "name": "needle/__init__.py",
+      "start": 105,
+      "end": 111
+     },
+     "others": [
+      {
+       "name": "needle/_worker.py",
+       "start": 51,
+       "end": 58
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "lib = ctypes.CDLL(_library_path(generation))",
+       "lib.needle_init.argtypes = [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p]",
+       "lib.needle_init.restype = ctypes.c_int",
+       "lib.needle_complete.argtypes = [",
+       "    ctypes.c_char_p, ctypes.c_int, ctypes.c_char_p, ctypes.c_int]",
+       "lib.needle_complete.restype = ctypes.c_int",
+       "if generation >= 3:"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "lib = ctypes.CDLL(path)",
+       "lib.needle_init.argtypes = [ctypes.c_char_p, ctypes.c_char_p,",
+       "                            ctypes.c_char_p]",
+       "lib.needle_init.restype = ctypes.c_int",
+       "lib.needle_complete.argtypes = [ctypes.c_char_p, ctypes.c_int,",
+       "                                ctypes.c_char_p, ctypes.c_int]",
+       "lib.needle_complete.restype = ctypes.c_int",
+       "if int(generation) >= 3:"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 1,
+    "sample": [
+     "needle/playground/app.js"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:16:31.212Z",
+  "jscpdVersion": "5.4.0"
  }
 }

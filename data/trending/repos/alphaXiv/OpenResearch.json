@@ -9,10 +9,12 @@
    "starsToday": 289,
    "headSha": "5d7042640f13e043dbd068b2783439819658488b",
    "sources": 415,
-   "lines": 164003,
-   "clones": 327,
-   "duplicatedLines": 3860,
-   "percentage": 2.35,
+   "lines": 162243,
+   "clones": 345,
+   "duplicatedLines": 4328,
+   "percentage": 2.67,
+   "codePercentage": 2.7,
+   "codeSources": 253,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 531,
    "headSha": "955ebe7849ce5993586a0d759b76e0d8a1338d70",
    "sources": 427,
-   "lines": 171623,
+   "lines": 169859,
    "clones": 352,
-   "duplicatedLines": 4022,
-   "percentage": 2.34,
+   "duplicatedLines": 4374,
+   "percentage": 2.58,
+   "codePercentage": 2.62,
+   "codeSources": 263,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 1017,
    "headSha": "10ad2e5b7d5bcf93021ea85d5e034396fd9cde7d",
    "sources": 430,
-   "lines": 173738,
+   "lines": 171974,
    "clones": 355,
-   "duplicatedLines": 4043,
-   "percentage": 2.33,
+   "duplicatedLines": 4398,
+   "percentage": 2.56,
+   "codePercentage": 2.62,
+   "codeSources": 265,
    "healthScore": null,
    "healthGrade": null
   },
@@ -51,10 +57,12 @@
    "starsToday": 939,
    "headSha": "69768ff1b0537a4656e69f550fc444ac35b945d2",
    "sources": 430,
-   "lines": 173883,
+   "lines": 172119,
    "clones": 355,
-   "duplicatedLines": 4043,
-   "percentage": 2.33,
+   "duplicatedLines": 4398,
+   "percentage": 2.56,
+   "codePercentage": 2.62,
+   "codeSources": 265,
    "healthScore": null,
    "healthGrade": null
   }
@@ -70,15 +78,15 @@
   "starsToday": 939,
   "defaultBranch": "main",
   "headSha": "69768ff1b0537a4656e69f550fc444ac35b945d2",
-  "durationMs": 844,
+  "durationMs": 894,
   "total": {
    "sources": 430,
-   "lines": 173883,
-   "tokens": 1164308,
+   "lines": 172119,
+   "tokens": 1164143,
    "clones": 355,
-   "duplicatedLines": 4043,
+   "duplicatedLines": 4398,
    "duplicatedTokens": 30547,
-   "percentage": 2.33,
+   "percentage": 2.56,
    "percentageTokens": 2.62
   },
   "formats": [
@@ -87,64 +95,64 @@
     "sources": 115,
     "lines": 94587,
     "clones": 286,
-    "duplicatedLines": 2782,
-    "percentage": 2.94
+    "duplicatedLines": 3068,
+    "percentage": 3.24
    },
    {
     "format": "tsx",
     "sources": 80,
     "lines": 25761,
     "clones": 30,
-    "duplicatedLines": 298,
-    "percentage": 1.16
+    "duplicatedLines": 328,
+    "percentage": 1.27
    },
    {
     "format": "python",
     "sources": 44,
-    "lines": 10121,
+    "lines": 9641,
     "clones": 19,
-    "duplicatedLines": 703,
-    "percentage": 6.95
+    "duplicatedLines": 722,
+    "percentage": 7.49
    },
    {
     "format": "markup",
     "sources": 9,
     "lines": 9368,
     "clones": 11,
-    "duplicatedLines": 127,
-    "percentage": 1.36
+    "duplicatedLines": 138,
+    "percentage": 1.47
    },
    {
     "format": "bash",
     "sources": 27,
-    "lines": 2081,
+    "lines": 1437,
     "clones": 4,
-    "duplicatedLines": 82,
-    "percentage": 3.94
+    "duplicatedLines": 86,
+    "percentage": 5.98
    },
    {
     "format": "javascript",
     "sources": 33,
     "lines": 4606,
     "clones": 3,
-    "duplicatedLines": 30,
-    "percentage": 0.65
+    "duplicatedLines": 33,
+    "percentage": 0.72
    },
    {
     "format": "typescript",
     "sources": 46,
     "lines": 7062,
     "clones": 1,
-    "duplicatedLines": 11,
-    "percentage": 0.16
+    "duplicatedLines": 12,
+    "percentage": 0.17
    },
    {
     "format": "yaml",
     "sources": 8,
-    "lines": 941,
+    "lines": 922,
     "clones": 1,
-    "duplicatedLines": 10,
-    "percentage": 1.06
+    "duplicatedLines": 11,
+    "percentage": 1.19
    },
    {
     "format": "json",
@@ -168,152 +176,769 @@
     "format": "python",
     "lines": 185,
     "tokens": 1402,
-    "firstFile": {
+    "first": {
      "name": "demo/nanochat/base/scripts/chat_sft.py",
      "start": 1,
      "end": 185
     },
-    "secondFile": {
-     "name": "demo/nanochat/experiment/scripts/chat_sft.py",
-     "start": 1,
-     "end": 185
-    }
+    "others": [
+     {
+      "name": "demo/nanochat/experiment/scripts/chat_sft.py",
+      "start": 1,
+      "end": 185
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"\"\"",
+      "Supervised fine-tuning (SFT) the model.",
+      "Run as:",
+      "",
+      "python -m scripts.chat_sft",
+      "",
+      "Or torchrun for training:",
+      "",
+      "torchrun --standalone --nproc_per_node=8 -m scripts.chat_sft -- --device-batch-size=16",
+      "\"\"\""
+     ],
+     "total": 185
+    },
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 237,
     "tokens": 1358,
-    "firstFile": {
+    "first": {
      "name": "demo/nanochat/base/scripts/chat_sft.py",
      "start": 263,
      "end": 499
     },
-    "secondFile": {
-     "name": "demo/nanochat/experiment/scripts/chat_sft.py",
-     "start": 268,
-     "end": 504
-    }
+    "others": [
+     {
+      "name": "demo/nanochat/experiment/scripts/chat_sft.py",
+      "start": 268,
+      "end": 504
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Stopping condition to respect num_iterations, if given",
+      "it += 1",
+      "if 0 < args.num_iterations <= it and split == \"train\":",
+      "    last_step = True",
+      "",
+      "# Update progress tracking (based on consumed, not cursor, to account for buffering)",
+      "if split == \"train\":",
+      "    current_epoch = epoch",
+      "    if args.num_iterations > 0:",
+      "        approx_progress = it / args.num_iterations"
+     ],
+     "total": 237
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 26,
+    "tokens": 149,
+    "first": {
+     "name": "src/local/hf.rs",
+     "start": 128,
+     "end": 153
+    },
+    "others": [
+     {
+      "name": "src/local/k8s.rs",
+      "start": 172,
+      "end": 197
+     },
+     {
+      "name": "src/local/localrun.rs",
+      "start": 140,
+      "end": 165
+     },
+     {
+      "name": "src/local/modal.rs",
+      "start": 132,
+      "end": 157
+     },
+     {
+      "name": "src/local/ray.rs",
+      "start": 145,
+      "end": 170
+     },
+     {
+      "name": "src/local/slurm.rs",
+      "start": 144,
+      "end": 169
+     },
+     {
+      "name": "src/local/ssh.rs",
+      "start": 117,
+      "end": 142
+     }
+    ],
+    "copies": 7,
+    "excerpt": {
+     "lines": [
+      "    let _ = hf::cancel_job(&token, &namespace, &job.id).await;",
+      "    return Err(error);",
+      "}",
+      "let run = StoredRun {",
+      "    id: run_id.clone(),",
+      "    experiment_id: exp.id.clone(),",
+      "    project_id: project.id.clone(),",
+      "    status: \"starting\".to_string(),",
+      "    backend_json: descriptor.to_json(),",
+      "    command: run_command,"
+     ],
+     "total": 26
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 93,
     "tokens": 569,
-    "firstFile": {
+    "first": {
      "name": "demo/nanochat/base/scripts/chat_cli.py",
      "start": 8,
      "end": 100
     },
-    "secondFile": {
-     "name": "demo/nanochat/experiment/scripts/chat_cli.py",
-     "start": 21,
-     "end": 113
-    }
+    "others": [
+     {
+      "name": "demo/nanochat/experiment/scripts/chat_cli.py",
+      "start": 21,
+      "end": 113
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 26,
+    "tokens": 140,
+    "first": {
+     "name": "src/commands/supervise.rs",
+     "start": 220,
+     "end": 245
+    },
+    "others": [
+     {
+      "name": "src/commands/supervise.rs",
+      "start": 381,
+      "end": 406
+     },
+     {
+      "name": "src/commands/supervise.rs",
+      "start": 525,
+      "end": 550
+     },
+     {
+      "name": "src/commands/supervise.rs",
+      "start": 667,
+      "end": 692
+     },
+     {
+      "name": "src/commands/supervise.rs",
+      "start": 991,
+      "end": 1016
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 10,
+    "tokens": 137,
+    "first": {
+     "name": "src/local/k8s.rs",
+     "start": 89,
+     "end": 98
+    },
+    "others": [
+     {
+      "name": "src/local/localrun.rs",
+      "start": 72,
+      "end": 81
+     },
+     {
+      "name": "src/local/modal.rs",
+      "start": 71,
+      "end": 80
+     },
+     {
+      "name": "src/local/ssh.rs",
+      "start": 69,
+      "end": 78
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 56,
+    "first": {
+     "name": "src/local/overleaf_live.rs",
+     "start": 2386,
+     "end": 2394
+    },
+    "others": [
+     {
+      "name": "src/local/overleaf_live.rs",
+      "start": 2440,
+      "end": 2448
+     },
+     {
+      "name": "src/local/overleaf_live.rs",
+      "start": 2459,
+      "end": 2467
+     },
+     {
+      "name": "src/local/overleaf_live.rs",
+      "start": 2553,
+      "end": 2561
+     },
+     {
+      "name": "src/local/overleaf_live.rs",
+      "start": 2646,
+      "end": 2654
+     },
+     {
+      "name": "src/local/overleaf_live.rs",
+      "start": 2699,
+      "end": 2707
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 136,
+    "first": {
+     "name": "src/local/hf.rs",
+     "start": 53,
+     "end": 67
+    },
+    "others": [
+     {
+      "name": "src/local/k8s.rs",
+      "start": 78,
+      "end": 92
+     },
+     {
+      "name": "src/local/modal.rs",
+      "start": 60,
+      "end": 74
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 136,
+    "first": {
+     "name": "src/local/k8s.rs",
+     "start": 89,
+     "end": 96
+    },
+    "others": [
+     {
+      "name": "src/local/ray.rs",
+      "start": 73,
+      "end": 80
+     },
+     {
+      "name": "src/local/slurm.rs",
+      "start": 89,
+      "end": 96
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 16,
     "tokens": 268,
-    "firstFile": {
+    "first": {
      "name": "demo/nanochat/base/tests/test_attention_fallback.py",
      "start": 160,
      "end": 175
     },
-    "secondFile": {
-     "name": "demo/nanochat/base/tests/test_attention_fallback.py",
-     "start": 193,
-     "end": 208
-    }
-   },
-   {
-    "format": "python",
-    "lines": 53,
-    "tokens": 247,
-    "firstFile": {
-     "name": "demo/nanochat/base/scripts/chat_sft.py",
-     "start": 209,
-     "end": 261
-    },
-    "secondFile": {
-     "name": "demo/nanochat/experiment/scripts/chat_sft.py",
-     "start": 210,
-     "end": 262
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 36,
-    "tokens": 238,
-    "firstFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 1095,
-     "end": 1130
-    },
-    "secondFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 1202,
-     "end": 1237
-    }
-   },
-   {
-    "format": "bash",
-    "lines": 30,
-    "tokens": 235,
-    "firstFile": {
-     "name": "demo/nanochat/base/runs/runcpu.sh",
-     "start": 16,
-     "end": 45
-    },
-    "secondFile": {
-     "name": "src/local/demo_fixtures/runcpu-before-windows.sh",
-     "start": 17,
-     "end": 46
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 31,
-    "tokens": 222,
-    "firstFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 320,
-     "end": 350
-    },
-    "secondFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 947,
-     "end": 977
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 30,
-    "tokens": 221,
-    "firstFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 321,
-     "end": 350
-    },
-    "secondFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 1101,
-     "end": 1130
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 29,
-    "tokens": 210,
-    "firstFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 322,
-     "end": 350
-    },
-    "secondFile": {
-     "name": "src/commands/supervise.rs",
-     "start": 483,
-     "end": 511
-    }
+    "others": [
+     {
+      "name": "demo/nanochat/base/tests/test_attention_fallback.py",
+      "start": 193,
+      "end": 208
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 265,
+   "lines": 130820,
+   "tokens": 884939,
+   "clones": 319,
+   "duplicatedLines": 3430,
+   "duplicatedTokens": 23823,
+   "percentage": 2.62,
+   "percentageTokens": 2.69,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 115,
+     "lines": 94587,
+     "clones": 286,
+     "duplicatedLines": 3068,
+     "percentage": 3.24
+    },
+    {
+     "format": "tsx",
+     "sources": 80,
+     "lines": 25761,
+     "clones": 30,
+     "duplicatedLines": 328,
+     "percentage": 1.27
+    },
+    {
+     "format": "javascript",
+     "sources": 8,
+     "lines": 1569,
+     "clones": 2,
+     "duplicatedLines": 22,
+     "percentage": 1.4
+    },
+    {
+     "format": "typescript",
+     "sources": 45,
+     "lines": 6792,
+     "clones": 1,
+     "duplicatedLines": 12,
+     "percentage": 0.18
+    },
+    {
+     "format": "python",
+     "sources": 3,
+     "lines": 1005,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 906,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 26,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 26,
+     "tokens": 149,
+     "first": {
+      "name": "src/local/hf.rs",
+      "start": 128,
+      "end": 153
+     },
+     "others": [
+      {
+       "name": "src/local/k8s.rs",
+       "start": 172,
+       "end": 197
+      },
+      {
+       "name": "src/local/localrun.rs",
+       "start": 140,
+       "end": 165
+      },
+      {
+       "name": "src/local/modal.rs",
+       "start": 132,
+       "end": 157
+      },
+      {
+       "name": "src/local/ray.rs",
+       "start": 145,
+       "end": 170
+      },
+      {
+       "name": "src/local/slurm.rs",
+       "start": 144,
+       "end": 169
+      },
+      {
+       "name": "src/local/ssh.rs",
+       "start": 117,
+       "end": 142
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "    let _ = hf::cancel_job(&token, &namespace, &job.id).await;",
+       "    return Err(error);",
+       "}",
+       "let run = StoredRun {",
+       "    id: run_id.clone(),",
+       "    experiment_id: exp.id.clone(),",
+       "    project_id: project.id.clone(),",
+       "    status: \"starting\".to_string(),",
+       "    backend_json: descriptor.to_json(),",
+       "    command: run_command,"
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 26,
+     "tokens": 140,
+     "first": {
+      "name": "src/commands/supervise.rs",
+      "start": 220,
+      "end": 245
+     },
+     "others": [
+      {
+       "name": "src/commands/supervise.rs",
+       "start": 381,
+       "end": 406
+      },
+      {
+       "name": "src/commands/supervise.rs",
+       "start": 525,
+       "end": 550
+      },
+      {
+       "name": "src/commands/supervise.rs",
+       "start": 667,
+       "end": 692
+      },
+      {
+       "name": "src/commands/supervise.rs",
+       "start": 991,
+       "end": 1016
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "    job_id: String,",
+       "    path: std::path::PathBuf,",
+       "    run_id: String,",
+       "    done: tokio::sync::watch::Receiver<bool>,",
+       ") {",
+       "    let mut log_file = match std::fs::OpenOptions::new()",
+       "        .create(true)",
+       "        .write(true)",
+       "        .truncate(true)",
+       "        .open(&path)"
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 137,
+     "first": {
+      "name": "src/local/k8s.rs",
+      "start": 89,
+      "end": 98
+     },
+     "others": [
+      {
+       "name": "src/local/localrun.rs",
+       "start": 72,
+       "end": 81
+      },
+      {
+       "name": "src/local/modal.rs",
+       "start": 71,
+       "end": 80
+      },
+      {
+       "name": "src/local/ssh.rs",
+       "start": 69,
+       "end": 78
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "    .ok_or_else(|| anyhow!(\"Local project {} not found.\", exp.project_id))?;",
+       "if let Some(w) = crate::local::experiments::legacy_root_warning(&project, &exp) {",
+       "    eprintln!(\"{w}\");",
+       "}",
+       "let run_command = Some(exp.run_command.clone())",
+       "    .filter(|c| !c.trim().is_empty())",
+       "    .or_else(|| project.run_command.clone().filter(|c| !c.trim().is_empty()))",
+       "    .ok_or_else(|| anyhow!(\"{}\", crate::invocation::no_run_command(&project.id)))?;",
+       "",
+       "let manifest = {"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "    .ok_or_else(|| anyhow!(\"Local project {} not found.\", exp.project_id))?;",
+       "if let Some(w) = crate::local::experiments::legacy_root_warning(&project, &exp) {",
+       "    eprintln!(\"{w}\");",
+       "}",
+       "let run_command = Some(exp.run_command.clone())",
+       "    .filter(|c| !c.trim().is_empty())",
+       "    .or_else(|| project.run_command.clone().filter(|c| !c.trim().is_empty()))",
+       "    .ok_or_else(|| anyhow!(\"{}\", crate::invocation::no_run_command(&project.id)))?;",
+       "",
+       "let script ="
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 56,
+     "first": {
+      "name": "src/local/overleaf_live.rs",
+      "start": 2386,
+      "end": 2394
+     },
+     "others": [
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2440,
+       "end": 2448
+      },
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2459,
+       "end": 2467
+      },
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2553,
+       "end": 2561
+      },
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2646,
+       "end": 2654
+      },
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2699,
+       "end": 2707
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 136,
+     "first": {
+      "name": "src/local/hf.rs",
+      "start": 53,
+      "end": 67
+     },
+     "others": [
+      {
+       "name": "src/local/k8s.rs",
+       "start": 78,
+       "end": 92
+      },
+      {
+       "name": "src/local/modal.rs",
+       "start": 60,
+       "end": 74
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 136,
+     "first": {
+      "name": "src/local/k8s.rs",
+      "start": 89,
+      "end": 96
+     },
+     "others": [
+      {
+       "name": "src/local/ray.rs",
+       "start": 73,
+       "end": 80
+      },
+      {
+       "name": "src/local/slurm.rs",
+       "start": 89,
+       "end": 96
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 51,
+     "first": {
+      "name": "src/local/k8s.rs",
+      "start": 12,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "src/local/localrun.rs",
+       "start": 7,
+       "end": 12
+      },
+      {
+       "name": "src/local/modal.rs",
+       "start": 7,
+       "end": 12
+      },
+      {
+       "name": "src/local/ray.rs",
+       "start": 4,
+       "end": 9
+      },
+      {
+       "name": "src/local/slurm.rs",
+       "start": 7,
+       "end": 12
+      },
+      {
+       "name": "src/local/ssh.rs",
+       "start": 7,
+       "end": 12
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 62,
+     "first": {
+      "name": "src/local/overleaf_live.rs",
+      "start": 2413,
+      "end": 2422
+     },
+     "others": [
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2551,
+       "end": 2560
+      },
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2628,
+       "end": 2637
+      },
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2668,
+       "end": 2677
+      },
+      {
+       "name": "src/local/overleaf_live.rs",
+       "start": 2713,
+       "end": 2722
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 36,
+     "tokens": 238,
+     "first": {
+      "name": "src/commands/supervise.rs",
+      "start": 1095,
+      "end": 1130
+     },
+     "others": [
+      {
+       "name": "src/commands/supervise.rs",
+       "start": 1202,
+       "end": 1237
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 31,
+     "tokens": 222,
+     "first": {
+      "name": "src/commands/supervise.rs",
+      "start": 320,
+      "end": 350
+     },
+     "others": [
+      {
+       "name": "src/commands/supervise.rs",
+       "start": 947,
+       "end": 977
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "ui/src/routeTree.gen.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:05:48.484Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 34,
    "headSha": "5626f79b8698df6daf9b25799c9805c6acc96740",
    "sources": 20,
-   "lines": 2297,
+   "lines": 2253,
    "clones": 1,
    "duplicatedLines": 12,
-   "percentage": 0.52,
+   "percentage": 0.53,
+   "codePercentage": null,
+   "codeSources": 15,
    "healthScore": 85.9,
    "healthGrade": "A"
   }
@@ -28,16 +30,16 @@
   "starsToday": 34,
   "defaultBranch": "master",
   "headSha": "5626f79b8698df6daf9b25799c9805c6acc96740",
-  "durationMs": 837,
+  "durationMs": 18,
   "total": {
    "sources": 20,
-   "lines": 2297,
-   "tokens": 12308,
+   "lines": 2253,
+   "tokens": 12143,
    "clones": 1,
    "duplicatedLines": 12,
    "duplicatedTokens": 88,
-   "percentage": 0.52,
-   "percentageTokens": 0.71
+   "percentage": 0.53,
+   "percentageTokens": 0.72
   },
   "formats": [
    {
@@ -51,7 +53,7 @@
    {
     "format": "bash",
     "sources": 9,
-    "lines": 694,
+    "lines": 644,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -59,7 +61,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -94,16 +96,35 @@
     "format": "go",
     "lines": 12,
     "tokens": 88,
-    "firstFile": {
+    "first": {
      "name": "requester/requester_test.go",
      "start": 29,
      "end": 40
     },
-    "secondFile": {
-     "name": "requester/requester_test.go",
-     "start": 50,
-     "end": 61
-    }
+    "others": [
+     {
+      "name": "requester/requester_test.go",
+      "start": 50,
+      "end": 61
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "var count int64",
+      "handler := func(w http.ResponseWriter, r *http.Request) {",
+      "    atomic.AddInt64(&count, int64(1))",
+      "}",
+      "server := httptest.NewServer(http.HandlerFunc(handler))",
+      "defer server.Close()",
+      "",
+      "req, _ := http.NewRequest(\"GET\", server.URL, nil)",
+      "w := &Work{",
+      "    Request: req,"
+     ],
+     "total": 12
+    },
+    "kind": "tests"
    }
   ],
   "health": {
@@ -218,6 +239,50 @@
     }
    ]
   },
-  "deadCode": null
+  "deadCode": null,
+  "code": {
+   "sources": 15,
+   "lines": 1878,
+   "tokens": 9953,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 5,
+     "lines": 1060,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:30:49.006Z",
+  "jscpdVersion": "5.4.0"
  }
 }

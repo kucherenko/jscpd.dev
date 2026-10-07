@@ -9,10 +9,12 @@
    "starsToday": 191,
    "headSha": "91c4ae17c07fb08b7f651e45cfcead6ec7128a2c",
    "sources": 3778,
-   "lines": 405378,
-   "clones": 2751,
-   "duplicatedLines": 48131,
-   "percentage": 11.87,
+   "lines": 405334,
+   "clones": 3024,
+   "duplicatedLines": 53007,
+   "percentage": 13.08,
+   "codePercentage": 11.58,
+   "codeSources": 3395,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 227,
    "headSha": "91c4ae17c07fb08b7f651e45cfcead6ec7128a2c",
    "sources": 3778,
-   "lines": 405378,
-   "clones": 2751,
-   "duplicatedLines": 48131,
-   "percentage": 11.87,
+   "lines": 405334,
+   "clones": 3024,
+   "duplicatedLines": 53007,
+   "percentage": 13.08,
+   "codePercentage": 11.58,
+   "codeSources": 3395,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,94 +46,94 @@
   "starsToday": 227,
   "defaultBranch": "v5-develop",
   "headSha": "91c4ae17c07fb08b7f651e45cfcead6ec7128a2c",
-  "durationMs": 1059,
+  "durationMs": 1697,
   "total": {
    "sources": 3778,
-   "lines": 405378,
-   "tokens": 2053117,
-   "clones": 2751,
-   "duplicatedLines": 48131,
-   "duplicatedTokens": 258849,
-   "percentage": 11.87,
-   "percentageTokens": 12.61
+   "lines": 405334,
+   "tokens": 2052952,
+   "clones": 3024,
+   "duplicatedLines": 53007,
+   "duplicatedTokens": 271356,
+   "percentage": 13.08,
+   "percentageTokens": 13.22
   },
   "formats": [
    {
     "format": "csharp",
     "sources": 2541,
     "lines": 229069,
-    "clones": 1983,
-    "duplicatedLines": 27136,
-    "percentage": 11.85
+    "clones": 2201,
+    "duplicatedLines": 30656,
+    "percentage": 13.38
    },
    {
     "format": "json",
     "sources": 46,
     "lines": 71018,
-    "clones": 356,
-    "duplicatedLines": 12141,
-    "percentage": 17.1
+    "clones": 373,
+    "duplicatedLines": 12742,
+    "percentage": 17.94
    },
    {
     "format": "tsx",
     "sources": 609,
     "lines": 65280,
-    "clones": 281,
-    "duplicatedLines": 4771,
-    "percentage": 7.31
+    "clones": 299,
+    "duplicatedLines": 5222,
+    "percentage": 8
    },
    {
     "format": "css",
     "sources": 221,
     "lines": 8693,
-    "clones": 52,
-    "duplicatedLines": 984,
-    "percentage": 11.32
+    "clones": 56,
+    "duplicatedLines": 1112,
+    "percentage": 12.79
    },
    {
     "format": "markup",
     "sources": 38,
     "lines": 7819,
-    "clones": 41,
-    "duplicatedLines": 2313,
-    "percentage": 29.58
+    "clones": 56,
+    "duplicatedLines": 2438,
+    "percentage": 31.18
    },
    {
     "format": "typescript",
     "sources": 252,
     "lines": 17382,
-    "clones": 25,
-    "duplicatedLines": 427,
-    "percentage": 2.46
+    "clones": 26,
+    "duplicatedLines": 465,
+    "percentage": 2.68
    },
    {
     "format": "txt",
     "sources": 7,
     "lines": 625,
     "clones": 9,
-    "duplicatedLines": 289,
-    "percentage": 46.24
+    "duplicatedLines": 298,
+    "percentage": 47.68
    },
    {
     "format": "yaml",
     "sources": 19,
     "lines": 1463,
     "clones": 3,
-    "duplicatedLines": 40,
-    "percentage": 2.73
+    "duplicatedLines": 43,
+    "percentage": 2.94
    },
    {
     "format": "javascript",
     "sources": 19,
     "lines": 1540,
     "clones": 1,
-    "duplicatedLines": 30,
-    "percentage": 1.95
+    "duplicatedLines": 31,
+    "percentage": 2.01
    },
    {
     "format": "bash",
     "sources": 17,
-    "lines": 1334,
+    "lines": 1284,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,152 +144,842 @@
     "format": "markup",
     "lines": 1850,
     "tokens": 16208,
-    "firstFile": {
+    "first": {
      "name": "src/NzbDrone.Core.Test/Files/Indexers/Newznab/newznab_language.xml",
      "start": 78,
      "end": 1927
     },
-    "secondFile": {
-     "name": "src/NzbDrone.Core.Test/Files/Indexers/Newznab/newznab_nzb_su.xml",
-     "start": 74,
-     "end": 1923
-    }
+    "others": [
+     {
+      "name": "src/NzbDrone.Core.Test/Files/Indexers/Newznab/newznab_nzb_su.xml",
+      "start": 74,
+      "end": 1923
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  <newznab:attr name=\"language\" value=\"French\" />",
+      "",
+      "",
+      "</item>",
+      "<item>",
+      "  <title>White.Collar.S03E02.720p.HDTV.X264-DIMENSION</title>",
+      "",
+      "  <guid isPermaLink=\"true\">http://nzb.su/details/79eacdb15c967465bf6667c46bcff3e4</guid>",
+      "  <link>http://nzb.su/getnzb/79eacdb15c967465bf6667c46bcff3e4.nzb&amp;i=37292&amp;r=xxx</link>",
+      "  <comments>http://nzb.su/details/79eacdb15c967465bf6667c46bcff3e4#comments</comments>"
+     ],
+     "total": 1850
+    },
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 19,
+    "tokens": 53,
+    "first": {
+     "name": "src/Sonarr.Api.V3/openapi.json",
+     "start": 245,
+     "end": 263
+    },
+    "others": [
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 591,
+      "end": 609
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 754,
+      "end": 772
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 909,
+      "end": 927
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 1064,
+      "end": 1082
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 1238,
+      "end": 1256
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 1393,
+      "end": 1411
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 1626,
+      "end": 1644
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 1864,
+      "end": 1882
+     }
+    ],
+    "copies": 44,
+    "excerpt": {
+     "lines": [
+      "],",
+      "\"parameters\": [",
+      "  {",
+      "    \"name\": \"id\",",
+      "    \"in\": \"path\",",
+      "    \"required\": true,",
+      "    \"schema\": {",
+      "      \"type\": \"integer\",",
+      "      \"format\": \"int32\"",
+      "    }"
+     ],
+     "total": 19
+    },
+    "kind": "data"
+   },
+   {
+    "format": "csharp",
+    "lines": 39,
+    "tokens": 262,
+    "first": {
+     "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheFixture.cs",
+     "start": 16,
+     "end": 54
+    },
+    "others": [
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheWithoutYearFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheYearFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleWithoutYearFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleYearFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleTheWithoutYearFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleTheYearFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleWithoutYearFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleYearFixture.cs",
+      "start": 16,
+      "end": 54
+     }
+    ],
+    "copies": 9,
+    "excerpt": {
+     "lines": [
+      "public class CleanTitleTheFixture : CoreTest<FileNameBuilder>",
+      "{",
+      "    private Series _series;",
+      "    private Episode _episode;",
+      "    private EpisodeFile _episodeFile;",
+      "    private NamingConfig _namingConfig;",
+      "",
+      "    [SetUp]",
+      "    public void Setup()",
+      "    {"
+     ],
+     "total": 39
+    },
+    "kind": "code"
+   },
+   {
+    "format": "csharp",
+    "lines": 16,
+    "tokens": 85,
+    "first": {
+     "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/AbsoluteEpisodeFormatFixture.cs",
+     "start": 1,
+     "end": 16
+    },
+    "others": [
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheWithoutYearFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheYearFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleWithoutYearFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleYearFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/ColonReplacementFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CustomFormatsFixture.cs",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 22,
+    "kind": "code"
    },
    {
     "format": "csharp",
     "lines": 307,
     "tokens": 1385,
-    "firstFile": {
+    "first": {
      "name": "src/NzbDrone.Core/Datastore/WhereBuilderPostgres.cs",
      "start": 22,
      "end": 328
     },
-    "secondFile": {
-     "name": "src/NzbDrone.Core/Datastore/WhereBuilderSqlite.cs",
-     "start": 22,
-     "end": 328
-    }
+    "others": [
+     {
+      "name": "src/NzbDrone.Core/Datastore/WhereBuilderSqlite.cs",
+      "start": 22,
+      "end": 328
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markup",
+    "lines": 15,
+    "tokens": 512,
+    "first": {
+     "name": "src/NzbDrone.Core.Test/Files/Indexers/TorrentRss/ImmortalSeed.xml",
+     "start": 280,
+     "end": 294
+    },
+    "others": [
+     {
+      "name": "src/NzbDrone.Core.Test/Files/Indexers/TorrentRss/ImmortalSeed.xml",
+      "start": 366,
+      "end": 380
+     },
+     {
+      "name": "src/NzbDrone.Core.Test/Files/Indexers/TorrentRss/ImmortalSeed.xml",
+      "start": 464,
+      "end": 478
+     }
+    ],
+    "copies": 3,
+    "kind": "data"
    },
    {
     "format": "csharp",
     "lines": 135,
     "tokens": 819,
-    "firstFile": {
+    "first": {
      "name": "src/NzbDrone.Core.Test/Download/DownloadClientTests/TransmissionTests/TransmissionFixture.cs",
      "start": 60,
      "end": 194
     },
-    "secondFile": {
-     "name": "src/NzbDrone.Core.Test/Download/DownloadClientTests/VuzeTests/VuzeFixture.cs",
-     "start": 60,
-     "end": 194
-    }
+    "others": [
+     {
+      "name": "src/NzbDrone.Core.Test/Download/DownloadClientTests/VuzeTests/VuzeFixture.cs",
+      "start": 60,
+      "end": 194
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 50,
+    "tokens": 149,
+    "first": {
+     "name": "src/Sonarr.Api.V3/openapi.json",
+     "start": 8386,
+     "end": 8435
+    },
+    "others": [
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 9282,
+      "end": 9331
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 9486,
+      "end": 9535
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 10135,
+      "end": 10184
+     },
+     {
+      "name": "src/Sonarr.Api.V3/openapi.json",
+      "start": 10287,
+      "end": 10336
+     },
+     {
+      "name": "src/Sonarr.Api.V5/openapi.json",
+      "start": 8421,
+      "end": 8470
+     }
+    ],
+    "copies": 6,
+    "kind": "data"
    },
    {
     "format": "csharp",
     "lines": 126,
     "tokens": 702,
-    "firstFile": {
+    "first": {
      "name": "src/Sonarr.Api.V3/Profiles/Quality/QualityItemsValidator.cs",
      "start": 9,
      "end": 134
     },
-    "secondFile": {
-     "name": "src/Sonarr.Api.V5/Profiles/Quality/QualityItemsValidator.cs",
-     "start": 7,
-     "end": 132
-    }
+    "others": [
+     {
+      "name": "src/Sonarr.Api.V5/Profiles/Quality/QualityItemsValidator.cs",
+      "start": 7,
+      "end": 132
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "json",
     "lines": 240,
     "tokens": 692,
-    "firstFile": {
+    "first": {
      "name": "src/Sonarr.Api.V3/openapi.json",
      "start": 8492,
      "end": 8731
     },
-    "secondFile": {
-     "name": "src/Sonarr.Api.V5/openapi.json",
-     "start": 9033,
-     "end": 9272
-    }
-   },
-   {
-    "format": "csharp",
-    "lines": 63,
-    "tokens": 626,
-    "firstFile": {
-     "name": "src/Sonarr.Api.V3/Config/HostConfigController.cs",
-     "start": 35,
-     "end": 97
-    },
-    "secondFile": {
-     "name": "src/Sonarr.Api.V5/Settings/GeneralSettingsController.cs",
-     "start": 27,
-     "end": 89
-    }
-   },
-   {
-    "format": "csharp",
-    "lines": 136,
-    "tokens": 622,
-    "firstFile": {
-     "name": "src/Sonarr.Api.V3/Episodes/EpisodeControllerWithSignalR.cs",
-     "start": 17,
-     "end": 152
-    },
-    "secondFile": {
-     "name": "src/Sonarr.Api.V5/Episodes/EpisodeControllerWithSignalR.cs",
-     "start": 16,
-     "end": 151
-    }
-   },
-   {
-    "format": "json",
-    "lines": 210,
-    "tokens": 611,
-    "firstFile": {
-     "name": "src/Sonarr.Api.V3/openapi.json",
-     "start": 11664,
-     "end": 11873
-    },
-    "secondFile": {
-     "name": "src/Sonarr.Api.V5/openapi.json",
-     "start": 12625,
-     "end": 12834
-    }
-   },
-   {
-    "format": "json",
-    "lines": 200,
-    "tokens": 571,
-    "firstFile": {
-     "name": "src/Sonarr.Api.V3/openapi.json",
-     "start": 9788,
-     "end": 9987
-    },
-    "secondFile": {
-     "name": "src/Sonarr.Api.V5/openapi.json",
-     "start": 10477,
-     "end": 10676
-    }
-   },
-   {
-    "format": "csharp",
-    "lines": 19,
-    "tokens": 537,
-    "firstFile": {
-     "name": "src/NzbDrone.Core.Test/JobTests/JobRepositoryFixture.cs",
-     "start": 57,
-     "end": 75
-    },
-    "secondFile": {
-     "name": "src/NzbDrone.Core.Test/JobTests/JobRepositoryFixture.cs",
-     "start": 81,
-     "end": 99
-    }
+    "others": [
+     {
+      "name": "src/Sonarr.Api.V5/openapi.json",
+      "start": 9033,
+      "end": 9272
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    }
-  ]
+  ],
+  "code": {
+   "sources": 3395,
+   "lines": 313534,
+   "tokens": 1645271,
+   "clones": 2523,
+   "duplicatedLines": 36307,
+   "duplicatedTokens": 209374,
+   "percentage": 11.58,
+   "percentageTokens": 12.73,
+   "formats": [
+    {
+     "format": "csharp",
+     "sources": 2535,
+     "lines": 228491,
+     "clones": 2198,
+     "duplicatedLines": 30608,
+     "percentage": 13.4
+    },
+    {
+     "format": "tsx",
+     "sources": 609,
+     "lines": 65280,
+     "clones": 299,
+     "duplicatedLines": 5222,
+     "percentage": 8
+    },
+    {
+     "format": "typescript",
+     "sources": 214,
+     "lines": 16610,
+     "clones": 25,
+     "duplicatedLines": 446,
+     "percentage": 2.69
+    },
+    {
+     "format": "javascript",
+     "sources": 21,
+     "lines": 1831,
+     "clones": 1,
+     "duplicatedLines": 31,
+     "percentage": 1.69
+    },
+    {
+     "format": "bash",
+     "sources": 15,
+     "lines": 1148,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "csharp",
+     "lines": 39,
+     "tokens": 262,
+     "first": {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheFixture.cs",
+      "start": 16,
+      "end": 54
+     },
+     "others": [
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheWithoutYearFixture.cs",
+       "start": 16,
+       "end": 54
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheYearFixture.cs",
+       "start": 16,
+       "end": 54
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleWithoutYearFixture.cs",
+       "start": 16,
+       "end": 54
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleYearFixture.cs",
+       "start": 16,
+       "end": 54
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleTheWithoutYearFixture.cs",
+       "start": 16,
+       "end": 54
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleTheYearFixture.cs",
+       "start": 16,
+       "end": 54
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleWithoutYearFixture.cs",
+       "start": 16,
+       "end": 54
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/TitleYearFixture.cs",
+       "start": 16,
+       "end": 54
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "public class CleanTitleTheFixture : CoreTest<FileNameBuilder>",
+       "{",
+       "    private Series _series;",
+       "    private Episode _episode;",
+       "    private EpisodeFile _episodeFile;",
+       "    private NamingConfig _namingConfig;",
+       "",
+       "    [SetUp]",
+       "    public void Setup()",
+       "    {"
+      ],
+      "total": 39
+     },
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 16,
+     "tokens": 85,
+     "first": {
+      "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/AbsoluteEpisodeFormatFixture.cs",
+      "start": 1,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleFixture.cs",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheFixture.cs",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheWithoutYearFixture.cs",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleTheYearFixture.cs",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleWithoutYearFixture.cs",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CleanTitleYearFixture.cs",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/ColonReplacementFixture.cs",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/OrganizerTests/FileNameBuilderTests/CustomFormatsFixture.cs",
+       "start": 1,
+       "end": 17
+      }
+     ],
+     "copies": 22,
+     "excerpt": {
+      "lines": [
+       "using System.Collections.Generic;",
+       "using System.Linq;",
+       "using FizzWare.NBuilder;",
+       "using FluentAssertions;",
+       "using NUnit.Framework;",
+       "using NzbDrone.Core.CustomFormats;",
+       "using NzbDrone.Core.MediaFiles;",
+       "using NzbDrone.Core.Organizer;",
+       "using NzbDrone.Core.Qualities;",
+       "using NzbDrone.Core.Test.Framework;"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 307,
+     "tokens": 1385,
+     "first": {
+      "name": "src/NzbDrone.Core/Datastore/WhereBuilderPostgres.cs",
+      "start": 22,
+      "end": 328
+     },
+     "others": [
+      {
+       "name": "src/NzbDrone.Core/Datastore/WhereBuilderSqlite.cs",
+       "start": 22,
+       "end": 328
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "public WhereBuilderPostgres(Expression filter, bool requireConcreteValue, int seq)",
+       "{",
+       "    _paramNamePrefix = string.Format(\"Clause{0}\", seq + 1);",
+       "    _requireConcreteValue = requireConcreteValue;",
+       "    _sb = new StringBuilder();",
+       "",
+       "    Parameters = new DynamicParameters();",
+       "",
+       "    if (filter != null)",
+       "    {"
+      ],
+      "total": 307
+     },
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 135,
+     "tokens": 819,
+     "first": {
+      "name": "src/NzbDrone.Core.Test/Download/DownloadClientTests/TransmissionTests/TransmissionFixture.cs",
+      "start": 60,
+      "end": 194
+     },
+     "others": [
+      {
+       "name": "src/NzbDrone.Core.Test/Download/DownloadClientTests/VuzeTests/VuzeFixture.cs",
+       "start": 60,
+       "end": 194
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 126,
+     "tokens": 702,
+     "first": {
+      "name": "src/Sonarr.Api.V3/Profiles/Quality/QualityItemsValidator.cs",
+      "start": 9,
+      "end": 134
+     },
+     "others": [
+      {
+       "name": "src/Sonarr.Api.V5/Profiles/Quality/QualityItemsValidator.cs",
+       "start": 7,
+       "end": 132
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 9,
+     "tokens": 85,
+     "first": {
+      "name": "src/NzbDrone.Core.Test/IndexerTests/FanzubTests/FanzubFixture.cs",
+      "start": 32,
+      "end": 40
+     },
+     "others": [
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/IPTorrentsTests/IPTorrentsFixture.cs",
+       "start": 91,
+       "end": 99
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/NewznabTests/NewznabFixture.cs",
+       "start": 49,
+       "end": 57
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/NewznabTests/NewznabFixture.cs",
+       "start": 75,
+       "end": 83
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/NewznabTests/NewznabFixture.cs",
+       "start": 145,
+       "end": 153
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/NyaaTests/NyaaFixture.cs",
+       "start": 65,
+       "end": 73
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/TorrentleechTests/TorrentleechFixture.cs",
+       "start": 33,
+       "end": 41
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/TorznabTests/TorznabFixture.cs",
+       "start": 51,
+       "end": 59
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/IndexerTests/TorznabTests/TorznabFixture.cs",
+       "start": 82,
+       "end": 90
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 63,
+     "tokens": 626,
+     "first": {
+      "name": "src/Sonarr.Api.V3/Config/HostConfigController.cs",
+      "start": 35,
+      "end": 97
+     },
+     "others": [
+      {
+       "name": "src/Sonarr.Api.V5/Settings/GeneralSettingsController.cs",
+       "start": 27,
+       "end": 89
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 136,
+     "tokens": 622,
+     "first": {
+      "name": "src/Sonarr.Api.V3/Episodes/EpisodeControllerWithSignalR.cs",
+      "start": 17,
+      "end": 152
+     },
+     "others": [
+      {
+       "name": "src/Sonarr.Api.V5/Episodes/EpisodeControllerWithSignalR.cs",
+       "start": 16,
+       "end": 151
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "csharp",
+     "lines": 8,
+     "tokens": 65,
+     "first": {
+      "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+      "start": 100,
+      "end": 107
+     },
+     "others": [
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 114,
+       "end": 121
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 128,
+       "end": 135
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 249,
+       "end": 256
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 280,
+       "end": 287
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 312,
+       "end": 319
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 329,
+       "end": 336
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 473,
+       "end": 480
+      },
+      {
+       "name": "src/NzbDrone.Core.Test/DecisionEngineTests/PrioritizeDownloadDecisionFixture.cs",
+       "start": 516,
+       "end": 523
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 36,
+     "tokens": 185,
+     "first": {
+      "name": "frontend/src/Series/Index/Select/Tags/TagsModalContent.tsx",
+      "start": 122,
+      "end": 157
+     },
+     "others": [
+      {
+       "name": "frontend/src/Settings/DownloadClients/DownloadClients/Manage/Tags/TagsModalContent.tsx",
+       "start": 121,
+       "end": 156
+      },
+      {
+       "name": "frontend/src/Settings/ImportLists/ImportLists/Manage/Tags/TagsModalContent.tsx",
+       "start": 127,
+       "end": 162
+      },
+      {
+       "name": "frontend/src/Settings/Indexers/Indexers/Manage/Tags/TagsModalContent.tsx",
+       "start": 127,
+       "end": 162
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 351,
+    "minified": 0,
+    "sample": [
+     "frontend/src/Activity/Blocklist/BlocklistRow.css.d.ts",
+     "frontend/src/Activity/History/Details/HistoryDetails.css.d.ts",
+     "frontend/src/Activity/History/Details/HistoryDetailsModal.css.d.ts",
+     "frontend/src/Activity/History/HistoryEventTypeCell.css.d.ts",
+     "frontend/src/Activity/History/HistoryRow.css.d.ts",
+     "frontend/src/Activity/Queue/EpisodeTitleCellContent.css.d.ts",
+     "frontend/src/Activity/Queue/ProtocolLabel.css.d.ts",
+     "frontend/src/Activity/Queue/QueueDetails.css.d.ts",
+     "frontend/src/Activity/Queue/QueueRow.css.d.ts",
+     "frontend/src/Activity/Queue/QueueStatus.css.d.ts",
+     "frontend/src/Activity/Queue/QueueStatusCell.css.d.ts",
+     "frontend/src/Activity/Queue/RemoveQueueItemModal.css.d.ts",
+     "frontend/src/Activity/Queue/TimeLeftCell.css.d.ts",
+     "frontend/src/AddSeries/AddNewSeries/AddNewSeries.css.d.ts",
+     "frontend/src/AddSeries/AddNewSeries/AddNewSeriesModalContent.css.d.ts",
+     "frontend/src/AddSeries/AddNewSeries/AddNewSeriesSearchResult.css.d.ts",
+     "frontend/src/AddSeries/ImportSeries/Import/ImportSeriesFooter.css.d.ts",
+     "frontend/src/AddSeries/ImportSeries/Import/ImportSeriesHeader.css.d.ts",
+     "frontend/src/AddSeries/ImportSeries/Import/ImportSeriesRow.css.d.ts",
+     "frontend/src/AddSeries/ImportSeries/Import/ImportSeriesTable.css.d.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:57:50.892Z",
+  "jscpdVersion": "5.4.0"
  }
 }

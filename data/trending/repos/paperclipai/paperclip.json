@@ -9,10 +9,12 @@
    "starsToday": 2109,
    "headSha": "4ca404b49ab3ec5513b9cfa824ff2eeaef941f7a",
    "sources": 7356,
-   "lines": 2434019,
-   "clones": 17593,
-   "duplicatedLines": 272727,
+   "lines": 2433975,
+   "clones": 17586,
+   "duplicatedLines": 272623,
    "percentage": 11.2,
+   "codePercentage": 6.76,
+   "codeSources": 3313,
    "healthScore": 48.1,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 2608,
    "headSha": "640dee18029f7651d56ae0f1828d04228f9ab044",
    "sources": 7361,
-   "lines": 2435067,
-   "clones": 17602,
-   "duplicatedLines": 272533,
+   "lines": 2435023,
+   "clones": 17605,
+   "duplicatedLines": 272582,
    "percentage": 11.19,
+   "codePercentage": 6.75,
+   "codeSources": 3316,
    "healthScore": 48.1,
    "healthGrade": "D"
   },
@@ -37,10 +41,12 @@
    "starsToday": 2401,
    "headSha": "0f14d261233c545aa6a8a38ec253c498a5130fff",
    "sources": 7363,
-   "lines": 2435963,
-   "clones": 17605,
-   "duplicatedLines": 272573,
+   "lines": 2435919,
+   "clones": 17609,
+   "duplicatedLines": 272628,
    "percentage": 11.19,
+   "codePercentage": 6.75,
+   "codeSources": 3317,
    "healthScore": 48.1,
    "healthGrade": "D"
   },
@@ -51,10 +57,12 @@
    "starsToday": 3197,
    "headSha": "53aad90b9e83dc147707797bf224bec12600b171",
    "sources": 7474,
-   "lines": 2457577,
-   "clones": 17695,
-   "duplicatedLines": 274365,
-   "percentage": 11.16,
+   "lines": 2457533,
+   "clones": 17686,
+   "duplicatedLines": 273115,
+   "percentage": 11.11,
+   "codePercentage": 6.7,
+   "codeSources": 3369,
    "healthScore": 48.2,
    "healthGrade": "D"
   },
@@ -65,10 +73,12 @@
    "starsToday": 2458,
    "headSha": "a027f76a726e8a556674eded807c2de0e55f5cc0",
    "sources": 7560,
-   "lines": 2479693,
+   "lines": 2479649,
    "clones": 17754,
    "duplicatedLines": 273747,
    "percentage": 11.04,
+   "codePercentage": 6.66,
+   "codeSources": 3403,
    "healthScore": 48.3,
    "healthGrade": "D"
   }
@@ -84,11 +94,11 @@
   "starsToday": 2458,
   "defaultBranch": "master",
   "headSha": "a027f76a726e8a556674eded807c2de0e55f5cc0",
-  "durationMs": 9791,
+  "durationMs": 9357,
   "total": {
    "sources": 7560,
-   "lines": 2479693,
-   "tokens": 16174892,
+   "lines": 2479649,
+   "tokens": 16174727,
    "clones": 17754,
    "duplicatedLines": 273747,
    "duplicatedTokens": 1583069,
@@ -163,10 +173,10 @@
    {
     "format": "bash",
     "sources": 183,
-    "lines": 16390,
+    "lines": 16340,
     "clones": 60,
     "duplicatedLines": 1622,
-    "percentage": 9.9
+    "percentage": 9.93
    },
    {
     "format": "css",
@@ -182,151 +192,271 @@
     "format": "markdown",
     "lines": 1287,
     "tokens": 9203,
-    "firstFile": {
+    "first": {
      "name": "skills-releases/paperclip/v0/references/api-reference.md:markdown",
      "start": 1,
      "end": 1287
     },
-    "secondFile": {
-     "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
-     "start": 1,
-     "end": 1287
-    }
+    "others": [
+     {
+      "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
+      "start": 1,
+      "end": 1287
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Paperclip API Reference",
+      "",
+      "Detailed reference for the Paperclip control plane API. For the core heartbeat procedure and critical rules, see the main `SKILL.md`.",
+      "",
+      "---",
+      "",
+      "## Response Schemas",
+      "",
+      "### Agent Record (`GET /api/agents/me` or `GET /api/agents/:agentId`)",
+      ""
+     ],
+     "total": 1287
+    },
+    "kind": "docs"
    },
    {
     "format": "tsx",
     "lines": 1048,
     "tokens": 6783,
-    "firstFile": {
+    "first": {
      "name": "ui/src/pages/CompanySkills.production.tsx",
      "start": 2319,
      "end": 3366
     },
-    "secondFile": {
-     "name": "ui/src/pages/CompanySkills.tsx",
-     "start": 2336,
-     "end": 3383
-    }
+    "others": [
+     {
+      "name": "ui/src/pages/CompanySkills.tsx",
+      "start": 2336,
+      "end": 3383
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+      "isAgentDisabled={(agent) => {",
+      "  const option = agent as AttachAgentOption;",
+      "  return option.required || !option.supportsSkills;",
+      "}}",
+      "getDescription={(agent) => {",
+      "  const option = agent as AttachAgentOption;",
+      "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+      "}}",
+      "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+     ],
+     "total": 1048
+    },
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 1014,
     "tokens": 4926,
-    "firstFile": {
+    "first": {
      "name": "doc/plans/2026-03-13-workspace-product-model-and-work-product.md:markdown",
      "start": 1,
      "end": 1014
     },
-    "secondFile": {
-     "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
-     "start": 1,
-     "end": 1014
-    }
+    "others": [
+     {
+      "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
+      "start": 1,
+      "end": 1014
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Workspace Product Model, Work Product, and PR Flow",
+      "",
+      "## Context",
+      "",
+      "Paperclip needs to support two very different but equally valid ways of working:",
+      "",
+      "- a solo developer working directly on `master`, or in a folder that is not even a git repo",
+      "- a larger engineering workflow with isolated branches, previews, pull requests, and cleanup automation",
+      "",
+      "Today, Paperclip already has the beginnings of this model:"
+     ],
+     "total": 1014
+    },
+    "kind": "docs"
    },
    {
     "format": "tsx",
     "lines": 657,
     "tokens": 4344,
-    "firstFile": {
+    "first": {
      "name": "ui/src/pages/AgentDetail.production.tsx",
      "start": 3714,
      "end": 4370
     },
-    "secondFile": {
-     "name": "ui/src/pages/AgentDetail.tsx",
-     "start": 3976,
-     "end": 4632
-    }
+    "others": [
+     {
+      "name": "ui/src/pages/AgentDetail.tsx",
+      "start": 3976,
+      "end": 4632
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 622,
     "tokens": 4223,
-    "firstFile": {
+    "first": {
      "name": "ui/src/pages/Inbox.tsx",
      "start": 1710,
      "end": 2331
     },
-    "secondFile": {
-     "name": "ui/src/pages/LegacyInbox.tsx",
-     "start": 1589,
-     "end": 2210
-    }
+    "others": [
+     {
+      "name": "ui/src/pages/LegacyInbox.tsx",
+      "start": 1589,
+      "end": 2210
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 586,
     "tokens": 4033,
-    "firstFile": {
+    "first": {
      "name": "ui/src/components/IssuesList.tsx",
      "start": 1100,
      "end": 1685
     },
-    "secondFile": {
-     "name": "ui/src/components/LegacyIssuesList.tsx",
-     "start": 1050,
-     "end": 1635
-    }
+    "others": [
+     {
+      "name": "ui/src/components/LegacyIssuesList.tsx",
+      "start": 1050,
+      "end": 1635
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 619,
     "tokens": 3874,
-    "firstFile": {
+    "first": {
      "name": "ui/src/components/SidebarAgents.production.tsx",
      "start": 48,
      "end": 666
     },
-    "secondFile": {
-     "name": "ui/src/components/SidebarAgents.tsx",
-     "start": 48,
-     "end": 666
-    }
+    "others": [
+     {
+      "name": "ui/src/components/SidebarAgents.tsx",
+      "start": 48,
+      "end": 666
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 60,
+    "first": {
+     "name": "server/src/__tests__/activity-service.test.ts",
+     "start": 109,
+     "end": 118
+    },
+    "others": [
+     {
+      "name": "server/src/__tests__/activity-service.test.ts",
+      "start": 157,
+      "end": 166
+     },
+     {
+      "name": "server/src/__tests__/activity-service.test.ts",
+      "start": 259,
+      "end": 268
+     },
+     {
+      "name": "server/src/__tests__/activity-service.test.ts",
+      "start": 353,
+      "end": 362
+     },
+     {
+      "name": "server/src/__tests__/activity-service.test.ts",
+      "start": 476,
+      "end": 485
+     },
+     {
+      "name": "server/src/__tests__/agents-claude-oauth-binding.test.ts",
+      "start": 271,
+      "end": 278
+     },
+     {
+      "name": "server/src/__tests__/artifact-review-documents-service.test.ts",
+      "start": 94,
+      "end": 102
+     },
+     {
+      "name": "server/src/__tests__/company-skill-test-runs-service.test.ts",
+      "start": 74,
+      "end": 81
+     },
+     {
+      "name": "server/src/__tests__/company-skills-service.test.ts",
+      "start": 947,
+      "end": 954
+     }
+    ],
+    "copies": 65,
+    "kind": "tests"
    },
    {
     "format": "tsx",
     "lines": 590,
     "tokens": 3620,
-    "firstFile": {
+    "first": {
      "name": "ui/src/pages/AgentDetail.production.tsx",
      "start": 3785,
      "end": 4374
     },
-    "secondFile": {
-     "name": "ui/src/pages/AgentDetail.tsx",
-     "start": 4047,
-     "end": 4636
-    }
+    "others": [
+     {
+      "name": "ui/src/pages/AgentDetail.tsx",
+      "start": 4047,
+      "end": 4636
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 512,
     "tokens": 3520,
-    "firstFile": {
+    "first": {
      "name": "ui/src/pages/CompanySkills.production.tsx",
      "start": 1667,
      "end": 2178
     },
-    "secondFile": {
-     "name": "ui/src/pages/CompanySkills.tsx",
-     "start": 1684,
-     "end": 2195
-    }
-   },
-   {
-    "format": "tsx",
-    "lines": 425,
-    "tokens": 2881,
-    "firstFile": {
-     "name": "ui/src/pages/AgentDetail.production.tsx",
-     "start": 346,
-     "end": 770
-    },
-    "secondFile": {
-     "name": "ui/src/pages/AgentDetail.tsx",
-     "start": 348,
-     "end": 772
-    }
+    "others": [
+     {
+      "name": "ui/src/pages/CompanySkills.tsx",
+      "start": 1684,
+      "end": 2195
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -549,6 +679,343 @@
      "lines": 971
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 3403,
+   "lines": 1228355,
+   "tokens": 7110224,
+   "clones": 4717,
+   "duplicatedLines": 81775,
+   "duplicatedTokens": 490210,
+   "percentage": 6.66,
+   "percentageTokens": 6.89,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 2254,
+     "lines": 779704,
+     "clones": 3331,
+     "duplicatedLines": 43684,
+     "percentage": 5.6
+    },
+    {
+     "format": "tsx",
+     "sources": 873,
+     "lines": 350193,
+     "clones": 1030,
+     "duplicatedLines": 33144,
+     "percentage": 9.46
+    },
+    {
+     "format": "rust",
+     "sources": 34,
+     "lines": 53932,
+     "clones": 260,
+     "duplicatedLines": 3021,
+     "percentage": 5.6
+    },
+    {
+     "format": "javascript",
+     "sources": 181,
+     "lines": 31979,
+     "clones": 60,
+     "duplicatedLines": 803,
+     "percentage": 2.51
+    },
+    {
+     "format": "bash",
+     "sources": 56,
+     "lines": 12144,
+     "clones": 36,
+     "duplicatedLines": 1123,
+     "percentage": 9.25
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 96,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "go",
+     "sources": 2,
+     "lines": 69,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c",
+     "sources": 1,
+     "lines": 64,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 1048,
+     "tokens": 6783,
+     "first": {
+      "name": "ui/src/pages/CompanySkills.production.tsx",
+      "start": 2319,
+      "end": 3366
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 2336,
+       "end": 3383
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+       "isAgentDisabled={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return option.required || !option.supportsSkills;",
+       "}}",
+       "getDescription={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+       "}}",
+       "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+      ],
+      "total": 1048
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 657,
+     "tokens": 4344,
+     "first": {
+      "name": "ui/src/pages/AgentDetail.production.tsx",
+      "start": 3714,
+      "end": 4370
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 3976,
+       "end": 4632
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "      <ScrollToBottom />",
+       "    </div>",
+       "  );",
+       "}",
+       "",
+       "/* ---- Log Viewer ---- */",
+       "",
+       "export function LogViewer({ run, adapterType }: { run: HeartbeatRun; adapterType: string }) {",
+       "  const { visible } = usePageVisibility();",
+       "  const [events, setEvents] = useState<HeartbeatRunEvent[]>([]);"
+      ],
+      "total": 657
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 622,
+     "tokens": 4223,
+     "first": {
+      "name": "ui/src/pages/Inbox.tsx",
+      "start": 1710,
+      "end": 2331
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/LegacyInbox.tsx",
+       "start": 1589,
+       "end": 2210
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  [selectedCompanyId, visibleIssueColumns],",
+       ");",
+       "const updateIssueFilters = useCallback((patch: Partial<IssueFilterState>) => {",
+       "  updateFilterPreferences((previous) => ({",
+       "    ...previous,",
+       "    issueFilters: { ...previous.issueFilters, ...patch },",
+       "  }));",
+       "}, [updateFilterPreferences]);",
+       "useEffect(() => {",
+       "  if (!experimentalSettingsLoaded || externalObjectsEnabled || issueFilters.externalObjectStatuses.length === 0) return;"
+      ],
+      "total": 622
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 586,
+     "tokens": 4033,
+     "first": {
+      "name": "ui/src/components/IssuesList.tsx",
+      "start": 1100,
+      "end": 1685
+     },
+     "others": [
+      {
+       "name": "ui/src/components/LegacyIssuesList.tsx",
+       "start": 1050,
+       "end": 1635
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 619,
+     "tokens": 3874,
+     "first": {
+      "name": "ui/src/components/SidebarAgents.production.tsx",
+      "start": 48,
+      "end": 666
+     },
+     "others": [
+      {
+       "name": "ui/src/components/SidebarAgents.tsx",
+       "start": 48,
+       "end": 666
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 590,
+     "tokens": 3620,
+     "first": {
+      "name": "ui/src/pages/AgentDetail.production.tsx",
+      "start": 3785,
+      "end": 4374
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 4047,
+       "end": 4636
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 512,
+     "tokens": 3520,
+     "first": {
+      "name": "ui/src/pages/CompanySkills.production.tsx",
+      "start": 1667,
+      "end": 2178
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 1684,
+       "end": 2195
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 425,
+     "tokens": 2881,
+     "first": {
+      "name": "ui/src/pages/AgentDetail.production.tsx",
+      "start": 346,
+      "end": 770
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 348,
+       "end": 772
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 400,
+     "tokens": 2771,
+     "first": {
+      "name": "ui/src/pages/Inbox.tsx",
+      "start": 897,
+      "end": 1296
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/LegacyInbox.tsx",
+       "start": 787,
+       "end": 1187
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 367,
+     "tokens": 2523,
+     "first": {
+      "name": "ui/src/pages/CompanySkills.production.tsx",
+      "start": 1814,
+      "end": 2180
+     },
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 1831,
+       "end": 2197
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 8,
+    "minified": 0,
+    "sample": [
+     "packages/paperclip-runner/runner/crates/runner-core/src/generated_acpx_sidecar_contract.rs",
+     "packages/paperclip-runner/src/drivers/acpx/generated-sidecar-contract.ts",
+     "packages/paperclip-runner/src/generated/capability-contract.ts",
+     "packages/paperclip-runner/src/mock-core/skill-frontmatter.generated.ts",
+     "packages/paperclip-runner/src/protocol/generated/schema-bundle.ts",
+     "packages/paperclip-runner/src/protocol/generated/standalone-validators.ts",
+     "packages/shared/src/cliplab/character.ts",
+     "packages/shared/src/telemetry/generated/paperclip-telemetry.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:28:29.611Z",
+  "jscpdVersion": "5.4.0"
  }
 }

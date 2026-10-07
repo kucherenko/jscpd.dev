@@ -9,10 +9,12 @@
    "starsToday": 345,
    "headSha": "4bfc1aae9bb02465245f10e652f4b27db92409ad",
    "sources": 1207,
-   "lines": 227782,
+   "lines": 227738,
    "clones": 739,
    "duplicatedLines": 20960,
    "percentage": 9.2,
+   "codePercentage": 4.32,
+   "codeSources": 216,
    "healthScore": 71.1,
    "healthGrade": "B"
   },
@@ -23,10 +25,12 @@
    "starsToday": 1398,
    "headSha": "fd3a0c766b4d40c74fabdbc578e3832d80553bf9",
    "sources": 1262,
-   "lines": 230529,
+   "lines": 230485,
    "clones": 736,
    "duplicatedLines": 21095,
    "percentage": 9.15,
+   "codePercentage": 4.29,
+   "codeSources": 216,
    "healthScore": 71.2,
    "healthGrade": "B"
   },
@@ -37,10 +41,12 @@
    "starsToday": 1725,
    "headSha": "b7ba0097abe950b6cd3da25c45e58087fc77b668",
    "sources": 1280,
-   "lines": 233402,
+   "lines": 233358,
    "clones": 797,
    "duplicatedLines": 23252,
    "percentage": 9.96,
+   "codePercentage": 4.3,
+   "codeSources": 217,
    "healthScore": 71.1,
    "healthGrade": "B"
   }
@@ -56,11 +62,11 @@
   "starsToday": 1725,
   "defaultBranch": "main",
   "headSha": "b7ba0097abe950b6cd3da25c45e58087fc77b668",
-  "durationMs": 1591,
+  "durationMs": 1259,
   "total": {
    "sources": 1280,
-   "lines": 233402,
-   "tokens": 1625713,
+   "lines": 233358,
+   "tokens": 1625548,
    "clones": 797,
    "duplicatedLines": 23252,
    "duplicatedTokens": 101973,
@@ -141,8 +147,8 @@
     "percentage": 0.28
    },
    {
-    "format": "bash",
-    "sources": 21,
+    "format": "jsx",
+    "sources": 3,
     "lines": 819,
     "clones": 0,
     "duplicatedLines": 0,
@@ -154,151 +160,406 @@
     "format": "json",
     "lines": 436,
     "tokens": 1535,
-    "firstFile": {
+    "first": {
      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
      "start": 1,
      "end": 436
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/sticky-chrome-target.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/text-input-variations.json",
+      "start": 1,
+      "end": 436
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"nodes\": [",
+      "    {",
+      "      \"index\": 0,",
+      "      \"type\": \"android.widget.TextView\",",
+      "      \"label\": \"6:53\",",
+      "      \"value\": \"6:53\",",
+      "      \"contentDescription\": \"6:53 PM\",",
+      "      \"identifier\": \"com.android.systemui:id/clock\",",
+      "      \"bundleId\": \"com.android.systemui\","
+     ],
+     "total": 436
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 436,
+    "tokens": 1535,
+    "first": {
+     "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+     "start": 1,
+     "end": 436
+    },
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/error-recovery.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/sequential-onboarding.json",
+      "start": 1,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/stripe-paymentsheet.json",
+      "start": 1,
+      "end": 436
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"nodes\": [",
+      "    {",
+      "      \"index\": 0,",
+      "      \"type\": \"android.widget.TextView\",",
+      "      \"label\": \"6:54\",",
+      "      \"value\": \"6:54\",",
+      "      \"contentDescription\": \"6:54 PM\",",
+      "      \"identifier\": \"com.android.systemui:id/clock\",",
+      "      \"bundleId\": \"com.android.systemui\","
+     ],
+     "total": 436
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 291,
+    "tokens": 1023,
+    "first": {
+     "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+     "start": 80,
+     "end": 370
+    },
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/home.json",
+      "start": 80,
+      "end": 370
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+      "start": 80,
+      "end": 370
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+      "start": 80,
+      "end": 370
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/modal-flow.json",
+      "start": 80,
+      "end": 370
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "},",
+      "\"enabled\": true,",
+      "\"selected\": false,",
+      "\"editable\": false,",
+      "\"password\": false,",
+      "\"hintShowing\": false,",
+      "\"visibleToUser\": true,",
+      "\"depth\": 0,",
+      "\"ref\": \"e4\",",
+      "\"kind\": \"image\""
+     ],
+     "total": 291
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 357,
+    "tokens": 1257,
+    "first": {
+     "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
+     "start": 80,
+     "end": 436
+    },
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/permission-prompt.json",
+      "start": 80,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/photo-picker.json",
+      "start": 80,
+      "end": 436
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/product-catalog.json",
+      "start": 80,
+      "end": 436
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 57,
+    "tokens": 197,
+    "first": {
      "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
-     "start": 1,
-     "end": 436
-    }
+     "start": 444,
+     "end": 500
+    },
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+      "start": 444,
+      "end": 500
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+      "start": 444,
+      "end": 500
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+      "start": 444,
+      "end": 500
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+      "start": 444,
+      "end": 500
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+      "start": 444,
+      "end": 500
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
+      "start": 444,
+      "end": 500
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+      "start": 444,
+      "end": 500
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+      "start": 444,
+      "end": 500
+     }
+    ],
+    "copies": 17,
+    "kind": "tests"
    },
    {
     "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
+    "lines": 94,
+    "tokens": 327,
+    "first": {
      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
      "start": 1,
-     "end": 436
+     "end": 94
     },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
-     "start": 1,
-     "end": 436
-    }
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+      "start": 1,
+      "end": 94
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/home.json",
+      "start": 1,
+      "end": 94
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+      "start": 1,
+      "end": 94
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+      "start": 1,
+      "end": 94
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/modal-flow.json",
+      "start": 1,
+      "end": 94
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
    },
    {
     "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
+    "lines": 343,
+    "tokens": 1207,
+    "first": {
      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
+     "start": 94,
      "end": 436
     },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
-     "start": 1,
-     "end": 436
-    }
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+      "start": 94,
+      "end": 436
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
+    "lines": 17,
+    "tokens": 54,
+    "first": {
      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
-     "end": 436
+     "start": 442,
+     "end": 458
     },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
-     "start": 1,
-     "end": 436
-    }
+    "others": [
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+      "start": 444,
+      "end": 460
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
+      "start": 442,
+      "end": 458
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+      "start": 442,
+      "end": 458
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+      "start": 442,
+      "end": 458
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+      "start": 442,
+      "end": 458
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
+      "start": 442,
+      "end": 458
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+      "start": 442,
+      "end": 458
+     },
+     {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+      "start": 442,
+      "end": 458
+     }
+    ],
+    "copies": 22,
+    "kind": "tests"
    },
    {
-    "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
-     "end": 436
+    "format": "markdown",
+    "lines": 7,
+    "tokens": 564,
+    "first": {
+     "name": "packages/eas/CHANGELOG.md:markdown",
+     "start": 5,
+     "end": 11
     },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
-     "start": 1,
-     "end": 436
-    }
+    "others": [
+     {
+      "name": "packages/github/CHANGELOG.md:markdown",
+      "start": 5,
+      "end": 11
+     },
+     {
+      "name": "packages/kernel/CHANGELOG.md:markdown",
+      "start": 5,
+      "end": 11
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
-    "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
-     "end": 436
+    "format": "markdown",
+    "lines": 93,
+    "tokens": 1060,
+    "first": {
+     "name": "packages/e2e/CHANGELOG.md:markdown",
+     "start": 1938,
+     "end": 2030
     },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
-     "start": 1,
-     "end": 436
-    }
-   },
-   {
-    "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
-     "end": 436
-    },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/sticky-chrome-target.json",
-     "start": 1,
-     "end": 436
-    }
-   },
-   {
-    "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
-     "end": 436
-    },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/text-input-variations.json",
-     "start": 1,
-     "end": 436
-    }
-   },
-   {
-    "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
-     "end": 436
-    },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/vision-only.json",
-     "start": 1,
-     "end": 436
-    }
-   },
-   {
-    "format": "json",
-    "lines": 436,
-    "tokens": 1535,
-    "firstFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-     "start": 1,
-     "end": 436
-    },
-    "secondFile": {
-     "name": "packages/mobile/tests/fixtures/snapshots/android/webview-accessibility.json",
-     "start": 1,
-     "end": 436
-    }
+    "others": [
+     {
+      "name": "packages/web/CHANGELOG.md:markdown",
+      "start": 601,
+      "end": 693
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -505,6 +766,370 @@
      "lines": 57
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 217,
+   "lines": 35496,
+   "tokens": 189214,
+   "clones": 80,
+   "duplicatedLines": 1525,
+   "duplicatedTokens": 5668,
+   "percentage": 4.3,
+   "percentageTokens": 3,
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 71,
+     "lines": 12688,
+     "clones": 72,
+     "duplicatedLines": 1406,
+     "percentage": 11.08
+    },
+    {
+     "format": "typescript",
+     "sources": 125,
+     "lines": 19936,
+     "clones": 7,
+     "duplicatedLines": 109,
+     "percentage": 0.55
+    },
+    {
+     "format": "javascript",
+     "sources": 10,
+     "lines": 1944,
+     "clones": 1,
+     "duplicatedLines": 10,
+     "percentage": 0.51
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "swift",
+     "sources": 1,
+     "lines": 110,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 18,
+     "tokens": 58,
+     "first": {
+      "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+      "start": 169,
+      "end": 186
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/DeferredDialog.tsx",
+       "start": 69,
+       "end": 86
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/InfiniteScroll.tsx",
+       "start": 92,
+       "end": 109
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+       "start": 86,
+       "end": 103
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/NativeDialogs.tsx",
+       "start": 60,
+       "end": 77
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+       "start": 89,
+       "end": 106
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/RichTextEditor.tsx",
+       "start": 122,
+       "end": 139
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "      </button>",
+       "    </div>",
+       "  );",
+       "}",
+       "",
+       "const styles = {",
+       "  container: {",
+       "    display: \"flex\",",
+       "    flexDirection: \"column\",",
+       "    gap: 12,"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 55,
+     "tokens": 236,
+     "first": {
+      "name": "apps/mobile-benchmark/src/Examples/ApplePay.tsx",
+      "start": 50,
+      "end": 104
+     },
+     "others": [
+      {
+       "name": "apps/mobile-benchmark/src/Examples/ApplePayBillingAddress.tsx",
+       "start": 59,
+       "end": 113
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "</View>",
+       "{state === \"dismissed\" && (",
+       "  <Text testID=\"payment-canceled\" style={styles.warning}>",
+       "    Payment canceled — the order was not placed",
+       "  </Text>",
+       ")}",
+       "{state === \"error\" && errorMessage && (",
+       "  <Text testID=\"payment-error\" style={styles.warning}>",
+       "    {errorMessage}",
+       "  </Text>"
+      ],
+      "total": 55
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 18,
+     "tokens": 54,
+     "first": {
+      "name": "apps/web-benchmark/app/src/Examples/AsyncStates.tsx",
+      "start": 119,
+      "end": 136
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+       "start": 169,
+       "end": 186
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+       "start": 153,
+       "end": 171
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/FilterDeepLink.tsx",
+       "start": 65,
+       "end": 82
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/StaleDom.tsx",
+       "start": 83,
+       "end": 100
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "      ) : null}",
+       "    </div>",
+       "  );",
+       "}",
+       "",
+       "const styles = {",
+       "  container: {",
+       "    display: \"flex\",",
+       "    flexDirection: \"column\",",
+       "    gap: 12,"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 23,
+     "tokens": 86,
+     "first": {
+      "name": "apps/web-benchmark/app/src/Examples/FileRoundTrip.tsx",
+      "start": 93,
+      "end": 115
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/HoverMenu.tsx",
+       "start": 140,
+       "end": 162
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/IframeForm.tsx",
+       "start": 106,
+       "end": 128
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 15,
+     "tokens": 54,
+     "first": {
+      "name": "apps/web-benchmark/app/src/Examples/AsyncStates.tsx",
+      "start": 178,
+      "end": 192
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+       "start": 261,
+       "end": 275
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+       "start": 204,
+       "end": 218
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/FileRoundTrip.tsx",
+       "start": 140,
+       "end": 154
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 35,
+     "tokens": 153,
+     "first": {
+      "name": "apps/mobile-benchmark/src/Examples/LoginForm.tsx",
+      "start": 2,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+       "start": 3,
+       "end": 37
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 40,
+     "tokens": 141,
+     "first": {
+      "name": "apps/web-benchmark/app/src/Examples/DeferredDialog.tsx",
+      "start": 71,
+      "end": 110
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/NativeDialogs.tsx",
+       "start": 62,
+       "end": 101
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 22,
+     "tokens": 70,
+     "first": {
+      "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+      "start": 156,
+      "end": 177
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+       "start": 88,
+       "end": 109
+      },
+      {
+       "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+       "start": 91,
+       "end": 112
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 30,
+     "tokens": 139,
+     "first": {
+      "name": "apps/mobile-benchmark/src/Examples/FlattenedLogin.tsx",
+      "start": 15,
+      "end": 44
+     },
+     "others": [
+      {
+       "name": "apps/mobile-benchmark/src/Examples/LoginForm.tsx",
+       "start": 7,
+       "end": 36
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 38,
+     "tokens": 137,
+     "first": {
+      "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+      "start": 95,
+      "end": 132
+     },
+     "others": [
+      {
+       "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+       "start": 98,
+       "end": 135
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:39:31.446Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 140,
    "headSha": "57b430b5b6a19106a989651f4cde853c05147682",
    "sources": 506,
-   "lines": 85979,
+   "lines": 75606,
    "clones": 231,
-   "duplicatedLines": 3538,
-   "percentage": 4.11,
+   "duplicatedLines": 3702,
+   "percentage": 4.9,
+   "codePercentage": 3.47,
+   "codeSources": 281,
    "healthScore": 44.2,
    "healthGrade": "D"
   }
@@ -28,94 +30,94 @@
   "starsToday": 140,
   "defaultBranch": "main",
   "headSha": "57b430b5b6a19106a989651f4cde853c05147682",
-  "durationMs": 1110,
+  "durationMs": 337,
   "total": {
    "sources": 506,
-   "lines": 85979,
-   "tokens": 372935,
+   "lines": 75606,
+   "tokens": 372770,
    "clones": 231,
-   "duplicatedLines": 3538,
+   "duplicatedLines": 3702,
    "duplicatedTokens": 19663,
-   "percentage": 4.11,
+   "percentage": 4.9,
    "percentageTokens": 5.27
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 201,
-    "lines": 37715,
+    "lines": 35037,
     "clones": 125,
-    "duplicatedLines": 1850,
-    "percentage": 4.91
+    "duplicatedLines": 1908,
+    "percentage": 5.45
    },
    {
     "format": "python",
     "sources": 52,
-    "lines": 12636,
+    "lines": 10502,
     "clones": 42,
-    "duplicatedLines": 673,
-    "percentage": 5.33
+    "duplicatedLines": 715,
+    "percentage": 6.81
    },
    {
     "format": "yaml",
     "sources": 12,
-    "lines": 936,
+    "lines": 935,
     "clones": 25,
-    "duplicatedLines": 319,
-    "percentage": 34.08
+    "duplicatedLines": 344,
+    "percentage": 36.79
    },
    {
     "format": "tsx",
     "sources": 127,
-    "lines": 14976,
+    "lines": 14935,
     "clones": 19,
-    "duplicatedLines": 278,
-    "percentage": 1.86
+    "duplicatedLines": 297,
+    "percentage": 1.99
    },
    {
     "format": "markdown",
     "sources": 28,
     "lines": 8221,
     "clones": 8,
-    "duplicatedLines": 127,
-    "percentage": 1.54
+    "duplicatedLines": 135,
+    "percentage": 1.64
    },
    {
     "format": "css",
     "sources": 8,
     "lines": 1342,
     "clones": 5,
-    "duplicatedLines": 151,
-    "percentage": 11.25
+    "duplicatedLines": 156,
+    "percentage": 11.62
    },
    {
     "format": "toml",
     "sources": 5,
     "lines": 335,
     "clones": 4,
-    "duplicatedLines": 83,
-    "percentage": 24.78
+    "duplicatedLines": 87,
+    "percentage": 25.97
    },
    {
     "format": "json",
     "sources": 28,
-    "lines": 2585,
+    "lines": 2220,
     "clones": 2,
-    "duplicatedLines": 50,
-    "percentage": 1.93
+    "duplicatedLines": 52,
+    "percentage": 2.34
    },
    {
     "format": "markup",
     "sources": 18,
     "lines": 741,
     "clones": 1,
-    "duplicatedLines": 7,
-    "percentage": 0.94
+    "duplicatedLines": 8,
+    "percentage": 1.08
    },
    {
     "format": "bash",
     "sources": 16,
-    "lines": 3160,
+    "lines": 878,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -126,151 +128,306 @@
     "format": "css",
     "lines": 49,
     "tokens": 574,
-    "firstFile": {
+    "first": {
      "name": "apps/mcp/src/widget/design/tokens.css",
      "start": 268,
      "end": 316
     },
-    "secondFile": {
-     "name": "apps/mcp/src/widget/design/tokens.css",
-     "start": 370,
-     "end": 418
-    }
+    "others": [
+     {
+      "name": "apps/mcp/src/widget/design/tokens.css",
+      "start": 370,
+      "end": 418
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "--shadow-inset: inset 2px 2px 5px rgba(4, 8, 13, 0.55);",
+      "--shadow-inset-strong: inset 2.4px 2.4px 4.5px rgba(6, 10, 16, 0.7);",
+      "",
+      "--text-primary: #eef2f7;",
+      "--text-secondary: #a9b4c2;",
+      "--text-muted: #6f7d8f;",
+      "--text-inverse: #0b1119;",
+      "",
+      "--success: #34d399;",
+      "--success-muted: rgba(52, 211, 153, 0.14);"
+     ],
+     "total": 49
+    },
+    "kind": "styles"
    },
    {
     "format": "css",
     "lines": 49,
     "tokens": 505,
-    "firstFile": {
+    "first": {
      "name": "apps/mcp/src/widget/design/tokens.css",
      "start": 217,
      "end": 265
     },
-    "secondFile": {
-     "name": "apps/mcp/src/widget/design/tokens.css",
-     "start": 320,
-     "end": 368
-    }
+    "others": [
+     {
+      "name": "apps/mcp/src/widget/design/tokens.css",
+      "start": 320,
+      "end": 368
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "[data-theme=\"dark\"] {",
+      "    color-scheme: dark;",
+      "",
+      "    --accent: #4ba0fa;",
+      "    --accent-foreground: #0a0f16;",
+      "    --accent-hover: #66b0ff;",
+      "    --accent-muted: rgba(75, 160, 250, 0.14);",
+      "    --accent-ring: rgba(75, 160, 250, 0.4);",
+      "",
+      "    --button-primary-bg: #0d121a;"
+     ],
+     "total": 49
+    },
+    "kind": "styles"
    },
    {
     "format": "css",
     "lines": 25,
     "tokens": 423,
-    "firstFile": {
+    "first": {
      "name": "packages/ui/globals.css",
      "start": 84,
      "end": 108
     },
-    "secondFile": {
-     "name": "packages/ui/globals.css",
-     "start": 145,
-     "end": 169
-    }
+    "others": [
+     {
+      "name": "packages/ui/globals.css",
+      "start": 145,
+      "end": 169
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "--destructive-foreground: oklch(0.967 0.0029 264.5419);",
+      "--font-sans: Space Grotesk, ui-sans-serif, sans-serif, system-ui;",
+      "--font-serif: ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif;",
+      "--font-mono: Space Mono, ui-monospace, monospace;",
+      "--shadow-color: oklch(0 0 0);",
+      "--shadow-opacity: 0.04;",
+      "--shadow-blur: 3px;",
+      "--shadow-spread: 0px;",
+      "--shadow-offset-x: 0;",
+      "--shadow-offset-y: 1px;"
+     ],
+     "total": 25
+    },
+    "kind": "styles"
+   },
+   {
+    "format": "yaml",
+    "lines": 14,
+    "tokens": 66,
+    "first": {
+     "name": ".github/workflows/publish-agent-framework-python.yml",
+     "start": 10,
+     "end": 23
+    },
+    "others": [
+     {
+      "name": ".github/workflows/publish-ai-sdk.yml",
+      "start": 10,
+      "end": 23
+     },
+     {
+      "name": ".github/workflows/publish-cartesia-sdk-python.yml",
+      "start": 10,
+      "end": 23
+     },
+     {
+      "name": ".github/workflows/publish-memory-graph.yml",
+      "start": 10,
+      "end": 23
+     },
+     {
+      "name": ".github/workflows/publish-openai-sdk-python.yml",
+      "start": 10,
+      "end": 23
+     },
+     {
+      "name": ".github/workflows/publish-pipecat-sdk-python.yml",
+      "start": 10,
+      "end": 23
+     },
+     {
+      "name": ".github/workflows/publish-tools.yml",
+      "start": 10,
+      "end": 23
+     }
+    ],
+    "copies": 7,
+    "kind": "data"
+   },
+   {
+    "format": "typescript",
+    "lines": 18,
+    "tokens": 113,
+    "first": {
+     "name": "packages/validation/api.ts",
+     "start": 962,
+     "end": 979
+    },
+    "others": [
+     {
+      "name": "packages/validation/api.ts",
+      "start": 980,
+      "end": 997
+     },
+     {
+      "name": "packages/validation/api.ts",
+      "start": 998,
+      "end": 1015
+     },
+     {
+      "name": "packages/validation/api.ts",
+      "start": 1016,
+      "end": 1033
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 59,
     "tokens": 319,
-    "firstFile": {
+    "first": {
      "name": "packages/cartesia-sdk-python/src/supermemory_cartesia/utils.py",
      "start": 131,
      "end": 189
     },
-    "secondFile": {
-     "name": "packages/pipecat-sdk-python/src/supermemory_pipecat/utils.py",
-     "start": 134,
-     "end": 192
-    }
+    "others": [
+     {
+      "name": "packages/pipecat-sdk-python/src/supermemory_pipecat/utils.py",
+      "start": 134,
+      "end": 192
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 58,
     "tokens": 302,
-    "firstFile": {
+    "first": {
      "name": "packages/cartesia-sdk-python/src/supermemory_cartesia/utils.py",
      "start": 13,
      "end": 70
     },
-    "secondFile": {
-     "name": "packages/pipecat-sdk-python/src/supermemory_pipecat/utils.py",
-     "start": 33,
-     "end": 90
-    }
+    "others": [
+     {
+      "name": "packages/pipecat-sdk-python/src/supermemory_pipecat/utils.py",
+      "start": 33,
+      "end": 90
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 21,
+    "tokens": 94,
+    "first": {
+     "name": "packages/memory-graph/src/__tests__/version-chain.test.ts",
+     "start": 46,
+     "end": 66
+    },
+    "others": [
+     {
+      "name": "packages/memory-graph/src/__tests__/version-chain.test.ts",
+      "start": 118,
+      "end": 138
+     },
+     {
+      "name": "packages/memory-graph/src/__tests__/version-chain.test.ts",
+      "start": 164,
+      "end": 184
+     },
+     {
+      "name": "packages/memory-graph/src/__tests__/version-chain.test.ts",
+      "start": 419,
+      "end": 442
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
     "format": "python",
-    "lines": 66,
-    "tokens": 238,
-    "firstFile": {
-     "name": "packages/agent-framework-python/src/supermemory_agent_framework/exceptions.py",
-     "start": 1,
-     "end": 66
+    "lines": 10,
+    "tokens": 86,
+    "first": {
+     "name": "packages/openai-sdk-python/tests/test_middleware.py",
+     "start": 404,
+     "end": 413
     },
-    "secondFile": {
-     "name": "packages/openai-sdk-python/src/supermemory_openai/exceptions.py",
-     "start": 1,
-     "end": 62
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 33,
-    "tokens": 187,
-    "firstFile": {
-     "name": ".github/workflows/publish-memory-graph.yml",
-     "start": 31,
-     "end": 63
-    },
-    "secondFile": {
-     "name": ".github/workflows/publish-tools.yml",
-     "start": 31,
-     "end": 63
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 80,
-    "tokens": 174,
-    "firstFile": {
-     "name": "README.md:typescript",
-     "start": 203,
-     "end": 282
-    },
-    "secondFile": {
-     "name": "README.zh-CN.md:typescript",
-     "start": 178,
-     "end": 257
-    }
-   },
-   {
-    "format": "tsx",
-    "lines": 37,
-    "tokens": 171,
-    "firstFile": {
-     "name": "packages/tools/test/chatapp/app/page.tsx",
-     "start": 39,
-     "end": 75
-    },
-    "secondFile": {
-     "name": "packages/tools/test/chatapp/app/stream/page.tsx",
-     "start": 16,
-     "end": 52
-    }
+    "others": [
+     {
+      "name": "packages/openai-sdk-python/tests/test_middleware.py",
+      "start": 674,
+      "end": 683
+     },
+     {
+      "name": "packages/openai-sdk-python/tests/test_middleware.py",
+      "start": 716,
+      "end": 725
+     },
+     {
+      "name": "packages/openai-sdk-python/tests/test_middleware.py",
+      "start": 755,
+      "end": 764
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
     "format": "typescript",
-    "lines": 28,
-    "tokens": 169,
-    "firstFile": {
-     "name": "packages/tools/src/shared/memory-client.ts",
-     "start": 232,
-     "end": 259
+    "lines": 9,
+    "tokens": 64,
+    "first": {
+     "name": "packages/memory-graph/src/__tests__/edge-logic.test.ts",
+     "start": 284,
+     "end": 292
     },
-    "secondFile": {
-     "name": "packages/tools/src/shared/memory-client.ts",
-     "start": 282,
-     "end": 309
-    }
+    "others": [
+     {
+      "name": "packages/memory-graph/src/__tests__/edge-logic.test.ts",
+      "start": 366,
+      "end": 374
+     },
+     {
+      "name": "packages/memory-graph/src/__tests__/edge-logic.test.ts",
+      "start": 381,
+      "end": 389
+     },
+     {
+      "name": "packages/memory-graph/src/__tests__/edge-logic.test.ts",
+      "start": 396,
+      "end": 404
+     },
+     {
+      "name": "packages/memory-graph/src/__tests__/edge-logic.test.ts",
+      "start": 432,
+      "end": 440
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -479,6 +636,327 @@
      "lines": 256
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 281,
+   "lines": 42738,
+   "tokens": 193294,
+   "clones": 90,
+   "duplicatedLines": 1483,
+   "duplicatedTokens": 7445,
+   "percentage": 3.47,
+   "percentageTokens": 3.85,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 132,
+     "lines": 21523,
+     "clones": 44,
+     "duplicatedLines": 709,
+     "percentage": 3.29
+    },
+    {
+     "format": "python",
+     "sources": 21,
+     "lines": 6413,
+     "clones": 31,
+     "duplicatedLines": 579,
+     "percentage": 9.03
+    },
+    {
+     "format": "tsx",
+     "sources": 118,
+     "lines": 13984,
+     "clones": 15,
+     "duplicatedLines": 195,
+     "percentage": 1.39
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 18,
+     "tokens": 113,
+     "first": {
+      "name": "packages/validation/api.ts",
+      "start": 962,
+      "end": 979
+     },
+     "others": [
+      {
+       "name": "packages/validation/api.ts",
+       "start": 980,
+       "end": 997
+      },
+      {
+       "name": "packages/validation/api.ts",
+       "start": 998,
+       "end": 1015
+      },
+      {
+       "name": "packages/validation/api.ts",
+       "start": 1016,
+       "end": 1033
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "\"7d\": z.object({",
+       "    amountSaved: z.object({",
+       "        current: z.number(),",
+       "        previousPeriod: z.number(),",
+       "    }),",
+       "    tokensProcessed: z.object({",
+       "        current: z.number(),",
+       "        previousPeriod: z.number(),",
+       "    }),",
+       "    tokensSent: z.object({"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 59,
+     "tokens": 319,
+     "first": {
+      "name": "packages/cartesia-sdk-python/src/supermemory_cartesia/utils.py",
+      "start": 131,
+      "end": 189
+     },
+     "others": [
+      {
+       "name": "packages/pipecat-sdk-python/src/supermemory_pipecat/utils.py",
+       "start": 134,
+       "end": 192
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        key = _memory_key(memory)",
+       "        if key and key not in seen:",
+       "            seen.add(key)",
+       "            out.append(r)",
+       "    return out",
+       "",
+       "return {",
+       "    \"static\": unique_strings(static),",
+       "    \"dynamic\": unique_strings(dynamic),",
+       "    \"search_results\": unique_search(search_results),"
+      ],
+      "total": 59
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 58,
+     "tokens": 302,
+     "first": {
+      "name": "packages/cartesia-sdk-python/src/supermemory_cartesia/utils.py",
+      "start": 13,
+      "end": 70
+     },
+     "others": [
+      {
+       "name": "packages/pipecat-sdk-python/src/supermemory_pipecat/utils.py",
+       "start": 33,
+       "end": 90
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    return None",
+       "",
+       "",
+       "def format_relative_time(iso_timestamp: str) -> str:",
+       "    \"\"\"Convert ISO timestamp to relative time string.",
+       "",
+       "    Format rules:",
+       "    - [just now] - within 30 minutes",
+       "    - [Xmins ago] - 30-60 minutes",
+       "    - [X hrs ago] - less than 1 day"
+      ],
+      "total": 58
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 123,
+     "first": {
+      "name": "packages/agent-framework-python/src/supermemory_agent_framework/exceptions.py",
+      "start": 26,
+      "end": 51
+     },
+     "others": [
+      {
+       "name": "packages/cartesia-sdk-python/src/supermemory_cartesia/exceptions.py",
+       "start": 32,
+       "end": 57
+      },
+      {
+       "name": "packages/pipecat-sdk-python/src/supermemory_pipecat/exceptions.py",
+       "start": 32,
+       "end": 57
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 66,
+     "tokens": 238,
+     "first": {
+      "name": "packages/agent-framework-python/src/supermemory_agent_framework/exceptions.py",
+      "start": 1,
+      "end": 66
+     },
+     "others": [
+      {
+       "name": "packages/openai-sdk-python/src/supermemory_openai/exceptions.py",
+       "start": 1,
+       "end": 62
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 28,
+     "tokens": 169,
+     "first": {
+      "name": "packages/tools/src/shared/memory-client.ts",
+      "start": 232,
+      "end": 259
+     },
+     "others": [
+      {
+       "name": "packages/tools/src/shared/memory-client.ts",
+       "start": 282,
+       "end": 309
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 70,
+     "first": {
+      "name": "packages/validation/api.ts",
+      "start": 110,
+      "end": 121
+     },
+     "others": [
+      {
+       "name": "packages/validation/api.ts",
+       "start": 1246,
+       "end": 1257
+      },
+      {
+       "name": "packages/validation/api.ts",
+       "start": 1486,
+       "end": 1497
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 129,
+     "first": {
+      "name": "packages/agent-framework-python/src/supermemory_agent_framework/context_provider.py",
+      "start": 257,
+      "end": 279
+     },
+     "others": [
+      {
+       "name": "packages/agent-framework-python/src/supermemory_agent_framework/middleware.py",
+       "start": 41,
+       "end": 63
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 33,
+     "tokens": 121,
+     "first": {
+      "name": "packages/tools/src/ai-sdk.ts",
+      "start": 333,
+      "end": 365
+     },
+     "others": [
+      {
+       "name": "packages/tools/src/openai/tools.ts",
+       "start": 496,
+       "end": 528
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 60,
+     "first": {
+      "name": "packages/agent-framework-python/src/supermemory_agent_framework/context_provider.py",
+      "start": 270,
+      "end": 277
+     },
+     "others": [
+      {
+       "name": "packages/agent-framework-python/src/supermemory_agent_framework/context_provider.py",
+       "start": 323,
+       "end": 330
+      },
+      {
+       "name": "packages/agent-framework-python/src/supermemory_agent_framework/middleware.py",
+       "start": 87,
+       "end": 94
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:10:36.436Z",
+  "jscpdVersion": "5.4.0"
  }
 }

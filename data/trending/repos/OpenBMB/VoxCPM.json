@@ -9,10 +9,12 @@
    "starsToday": 216,
    "headSha": "f772e498a45fbb5fb8e13fbf9b9c48be9fe33e69",
    "sources": 72,
-   "lines": 18496,
-   "clones": 89,
-   "duplicatedLines": 1811,
-   "percentage": 9.79,
+   "lines": 15486,
+   "clones": 93,
+   "duplicatedLines": 1839,
+   "percentage": 11.88,
+   "codePercentage": 12.55,
+   "codeSources": 43,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,62 +30,62 @@
   "starsToday": 216,
   "defaultBranch": "main",
   "headSha": "f772e498a45fbb5fb8e13fbf9b9c48be9fe33e69",
-  "durationMs": 468,
+  "durationMs": 51,
   "total": {
    "sources": 72,
-   "lines": 18496,
-   "tokens": 96586,
-   "clones": 89,
-   "duplicatedLines": 1811,
-   "duplicatedTokens": 12072,
-   "percentage": 9.79,
-   "percentageTokens": 12.5
+   "lines": 15486,
+   "tokens": 96421,
+   "clones": 93,
+   "duplicatedLines": 1839,
+   "duplicatedTokens": 12268,
+   "percentage": 11.88,
+   "percentageTokens": 12.72
   },
   "formats": [
    {
     "format": "python",
     "sources": 44,
-    "lines": 12987,
-    "clones": 74,
-    "duplicatedLines": 1583,
-    "percentage": 12.19
+    "lines": 12535,
+    "clones": 78,
+    "duplicatedLines": 1610,
+    "percentage": 12.84
    },
    {
     "format": "markdown",
     "sources": 3,
     "lines": 1542,
     "clones": 8,
-    "duplicatedLines": 120,
-    "percentage": 7.78
+    "duplicatedLines": 128,
+    "percentage": 8.3
    },
    {
     "format": "yaml",
     "sources": 8,
     "lines": 272,
     "clones": 5,
-    "duplicatedLines": 79,
-    "percentage": 29.04
+    "duplicatedLines": 84,
+    "percentage": 30.88
    },
    {
     "format": "bash",
     "sources": 12,
-    "lines": 2038,
+    "lines": 819,
     "clones": 1,
-    "duplicatedLines": 17,
-    "percentage": 0.83
+    "duplicatedLines": 5,
+    "percentage": 0.61
    },
    {
     "format": "text",
     "sources": 3,
-    "lines": 1389,
+    "lines": 44,
     "clones": 1,
     "duplicatedLines": 12,
-    "percentage": 0.86
+    "percentage": 27.27
    },
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -102,152 +104,547 @@
     "format": "python",
     "lines": 107,
     "tokens": 693,
-    "firstFile": {
+    "first": {
      "name": "src/voxcpm/modules/locdit/local_dit.py",
      "start": 1,
      "end": 107
     },
-    "secondFile": {
-     "name": "src/voxcpm/modules/locdit/local_dit_v2.py",
-     "start": 1,
-     "end": 107
-    }
+    "others": [
+     {
+      "name": "src/voxcpm/modules/locdit/local_dit_v2.py",
+      "start": 1,
+      "end": 107
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import torch",
+      "from ..minicpm4 import MiniCPMModel, MiniCPM4Config",
+      "import torch.nn as nn",
+      "import math",
+      "",
+      "",
+      "class SinusoidalPosEmb(torch.nn.Module):",
+      "    def __init__(self, dim):",
+      "        super().__init__()",
+      "        self.dim = dim"
+     ],
+     "total": 107
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 89,
     "tokens": 685,
-    "firstFile": {
+    "first": {
      "name": "src/voxcpm/model/voxcpm.py",
      "start": 201,
      "end": 289
     },
-    "secondFile": {
-     "name": "src/voxcpm/model/voxcpm2.py",
-     "start": 251,
-     "end": 339
-    }
+    "others": [
+     {
+      "name": "src/voxcpm/model/voxcpm2.py",
+      "start": 251,
+      "end": 339
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    if self.lora_config is not None:",
+      "        self._apply_lora()",
+      "",
+      "def _apply_lora(self):",
+      "    \"\"\"注入 LoRA 到 LM / DiT / 投影层\"\"\"",
+      "    cfg = self.lora_config",
+      "    lora_kwargs = dict(r=cfg.r, alpha=cfg.alpha, dropout=cfg.dropout)",
+      "",
+      "    # LM: base_lm + residual_lm",
+      "    if cfg.enable_lm:"
+     ],
+     "total": 89
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 90,
     "tokens": 647,
-    "firstFile": {
+    "first": {
      "name": "src/voxcpm/modules/audiovae/audio_vae.py",
      "start": 26,
      "end": 115
     },
-    "secondFile": {
-     "name": "src/voxcpm/modules/audiovae/audio_vae_v2.py",
-     "start": 27,
-     "end": 116
-    }
+    "others": [
+     {
+      "name": "src/voxcpm/modules/audiovae/audio_vae_v2.py",
+      "start": 27,
+      "end": 116
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "        x_pad = F.pad(x, (self.__padding * 2, 0))",
+      "        return super().forward(x_pad)",
+      "",
+      "",
+      "class CausalTransposeConv1d(nn.ConvTranspose1d):",
+      "    def __init__(self, *args, padding: int = 0, output_padding: int = 0, **kwargs):",
+      "        super().__init__(*args, **kwargs)",
+      "        self.__padding = padding",
+      "        self.__output_padding = output_padding",
+      ""
+     ],
+     "total": 90
+    },
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 28,
     "tokens": 591,
-    "firstFile": {
+    "first": {
      "name": "README.md:markdown",
      "start": 406,
      "end": 433
     },
-    "secondFile": {
-     "name": "README_zh.md:markdown",
-     "start": 406,
-     "end": 433
-    }
+    "others": [
+     {
+      "name": "README_zh.md:markdown",
+      "start": 406,
+      "end": 433
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 90,
     "tokens": 506,
-    "firstFile": {
+    "first": {
      "name": "src/voxcpm/modules/audiovae/audio_vae.py",
      "start": 115,
      "end": 204
     },
-    "secondFile": {
-     "name": "src/voxcpm/modules/audiovae/audio_vae_v2.py",
-     "start": 117,
-     "end": 206
-    }
+    "others": [
+     {
+      "name": "src/voxcpm/modules/audiovae/audio_vae_v2.py",
+      "start": 117,
+      "end": 206
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 78,
     "tokens": 484,
-    "firstFile": {
+    "first": {
      "name": "src/voxcpm/model/voxcpm.py",
      "start": 949,
      "end": 1026
     },
-    "secondFile": {
-     "name": "src/voxcpm/model/voxcpm2.py",
-     "start": 1202,
-     "end": 1279
-    }
+    "others": [
+     {
+      "name": "src/voxcpm/model/voxcpm2.py",
+      "start": 1202,
+      "end": 1279
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 25,
     "tokens": 409,
-    "firstFile": {
+    "first": {
      "name": "README.md:markdown",
      "start": 492,
      "end": 516
     },
-    "secondFile": {
-     "name": "README_zh.md:markdown",
-     "start": 487,
-     "end": 511
-    }
+    "others": [
+     {
+      "name": "README_zh.md:markdown",
+      "start": 487,
+      "end": 511
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 25,
     "tokens": 401,
-    "firstFile": {
+    "first": {
      "name": "README.md:markdown",
      "start": 459,
      "end": 483
     },
-    "secondFile": {
-     "name": "README_zh.md:markdown",
-     "start": 455,
-     "end": 479
-    }
+    "others": [
+     {
+      "name": "README_zh.md:markdown",
+      "start": 455,
+      "end": 479
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 53,
     "tokens": 340,
-    "firstFile": {
+    "first": {
      "name": "src/voxcpm/model/voxcpm.py",
      "start": 893,
      "end": 945
     },
-    "secondFile": {
-     "name": "src/voxcpm/model/voxcpm2.py",
-     "start": 1146,
-     "end": 1198
-    }
+    "others": [
+     {
+      "name": "src/voxcpm/model/voxcpm2.py",
+      "start": 1146,
+      "end": 1198
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
-    "lines": 37,
-    "tokens": 284,
-    "firstFile": {
-     "name": "src/voxcpm/model/voxcpm.py",
-     "start": 297,
-     "end": 333
+    "lines": 13,
+    "tokens": 62,
+    "first": {
+     "name": "scripts/test_voxcpm_ft_infer.py",
+     "start": 120,
+     "end": 132
     },
-    "secondFile": {
-     "name": "src/voxcpm/model/voxcpm2.py",
-     "start": 349,
-     "end": 385
-    }
+    "others": [
+     {
+      "name": "scripts/test_voxcpm_lora_infer.py",
+      "start": 163,
+      "end": 174
+     },
+     {
+      "name": "scripts/test_voxcpm_lora_infer.py",
+      "start": 184,
+      "end": 195
+     },
+     {
+      "name": "scripts/test_voxcpm_lora_infer.py",
+      "start": 205,
+      "end": 216
+     },
+     {
+      "name": "scripts/test_voxcpm_lora_infer.py",
+      "start": 226,
+      "end": 237
+     },
+     {
+      "name": "scripts/test_voxcpm_lora_infer.py",
+      "start": 248,
+      "end": 259
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 43,
+   "lines": 11358,
+   "tokens": 65153,
+   "clones": 67,
+   "duplicatedLines": 1425,
+   "duplicatedTokens": 9020,
+   "percentage": 12.55,
+   "percentageTokens": 13.84,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 33,
+     "lines": 10540,
+     "clones": 67,
+     "duplicatedLines": 1425,
+     "percentage": 13.52
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 107,
+     "tokens": 693,
+     "first": {
+      "name": "src/voxcpm/modules/locdit/local_dit.py",
+      "start": 1,
+      "end": 107
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/modules/locdit/local_dit_v2.py",
+       "start": 1,
+       "end": 107
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import torch",
+       "from ..minicpm4 import MiniCPMModel, MiniCPM4Config",
+       "import torch.nn as nn",
+       "import math",
+       "",
+       "",
+       "class SinusoidalPosEmb(torch.nn.Module):",
+       "    def __init__(self, dim):",
+       "        super().__init__()",
+       "        self.dim = dim"
+      ],
+      "total": 107
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 89,
+     "tokens": 685,
+     "first": {
+      "name": "src/voxcpm/model/voxcpm.py",
+      "start": 201,
+      "end": 289
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 251,
+       "end": 339
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    if self.lora_config is not None:",
+       "        self._apply_lora()",
+       "",
+       "def _apply_lora(self):",
+       "    \"\"\"注入 LoRA 到 LM / DiT / 投影层\"\"\"",
+       "    cfg = self.lora_config",
+       "    lora_kwargs = dict(r=cfg.r, alpha=cfg.alpha, dropout=cfg.dropout)",
+       "",
+       "    # LM: base_lm + residual_lm",
+       "    if cfg.enable_lm:"
+      ],
+      "total": 89
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 90,
+     "tokens": 647,
+     "first": {
+      "name": "src/voxcpm/modules/audiovae/audio_vae.py",
+      "start": 26,
+      "end": 115
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/modules/audiovae/audio_vae_v2.py",
+       "start": 27,
+       "end": 116
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        x_pad = F.pad(x, (self.__padding * 2, 0))",
+       "        return super().forward(x_pad)",
+       "",
+       "",
+       "class CausalTransposeConv1d(nn.ConvTranspose1d):",
+       "    def __init__(self, *args, padding: int = 0, output_padding: int = 0, **kwargs):",
+       "        super().__init__(*args, **kwargs)",
+       "        self.__padding = padding",
+       "        self.__output_padding = output_padding",
+       ""
+      ],
+      "total": 90
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 90,
+     "tokens": 506,
+     "first": {
+      "name": "src/voxcpm/modules/audiovae/audio_vae.py",
+      "start": 115,
+      "end": 204
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/modules/audiovae/audio_vae_v2.py",
+       "start": 117,
+       "end": 206
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 78,
+     "tokens": 484,
+     "first": {
+      "name": "src/voxcpm/model/voxcpm.py",
+      "start": 949,
+      "end": 1026
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 1202,
+       "end": 1279
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 53,
+     "tokens": 340,
+     "first": {
+      "name": "src/voxcpm/model/voxcpm.py",
+      "start": 893,
+      "end": 945
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 1146,
+       "end": 1198
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 37,
+     "tokens": 284,
+     "first": {
+      "name": "src/voxcpm/model/voxcpm.py",
+      "start": 297,
+      "end": 333
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 349,
+       "end": 385
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 284,
+     "first": {
+      "name": "src/voxcpm/model/voxcpm.py",
+      "start": 765,
+      "end": 806
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 1009,
+       "end": 1050
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 66,
+     "first": {
+      "name": "src/voxcpm/model/voxcpm.py",
+      "start": 403,
+      "end": 412
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 492,
+       "end": 501
+      },
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 539,
+       "end": 548
+      },
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 600,
+       "end": 609
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 25,
+     "tokens": 195,
+     "first": {
+      "name": "src/voxcpm/model/voxcpm.py",
+      "start": 151,
+      "end": 175
+     },
+     "others": [
+      {
+       "name": "src/voxcpm/model/voxcpm2.py",
+       "start": 198,
+       "end": 222
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:04:31.669Z",
+  "jscpdVersion": "5.4.0"
  }
 }

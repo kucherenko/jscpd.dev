@@ -6,8 +6,8 @@
  "summary": {
   "repos": 8,
   "sources": 7556,
-  "lines": 1898688,
-  "tokens": 13974150,
+  "lines": 1898336,
+  "tokens": 13972830,
   "clones": 5894,
   "duplicatedLines": 376690,
   "duplicatedTokens": 1979926,
@@ -30,6 +30,24 @@
    "clones": 1651,
    "percentage": 9.41
   },
+  "codeRepos": 7,
+  "codeSources": 3758,
+  "codeLines": 837742,
+  "codeClones": 1926,
+  "codeDuplicatedLines": 29299,
+  "codePercentage": 3.5,
+  "codeMedianPercentage": 2.71,
+  "codeMostDuplicated": {
+   "name": "earthtojake/text-to-cad",
+   "clones": 839,
+   "percentage": 4.77
+  },
+  "codeCleanest": {
+   "name": "michael-denyer/pstack-claude",
+   "clones": 3,
+   "percentage": 0.33
+  },
+  "generatedFiles": 4,
   "avgHealth": 56.6,
   "healthiest": {
    "name": "M-Abozaid/esp32-c3-adblock",
@@ -46,7 +64,7 @@
     "language": "TypeScript",
     "repos": 2,
     "clones": 2118,
-    "lines": 904851,
+    "lines": 904763,
     "duplicatedLines": 314407,
     "percentage": 34.75
    },
@@ -54,7 +72,7 @@
     "language": "C++",
     "repos": 2,
     "clones": 1651,
-    "lines": 246230,
+    "lines": 246142,
     "duplicatedLines": 22942,
     "percentage": 9.32
    },
@@ -62,15 +80,15 @@
     "language": "Python",
     "repos": 2,
     "clones": 1539,
-    "lines": 587328,
+    "lines": 587240,
     "duplicatedLines": 31977,
-    "percentage": 5.44
+    "percentage": 5.45
    },
    {
     "language": "Go",
     "repos": 1,
     "clones": 548,
-    "lines": 125710,
+    "lines": 125666,
     "duplicatedLines": 6978,
     "percentage": 5.55
    },
@@ -78,7 +96,7 @@
     "language": "JavaScript",
     "repos": 1,
     "clones": 38,
-    "lines": 34569,
+    "lines": 34525,
     "duplicatedLines": 386,
     "percentage": 1.12
    }
@@ -94,11 +112,11 @@
    "starsToday": 1398,
    "defaultBranch": "main",
    "headSha": "fd3a0c766b4d40c74fabdbc578e3832d80553bf9",
-   "durationMs": 1748,
+   "durationMs": 429,
    "total": {
     "sources": 1262,
-    "lines": 230529,
-    "tokens": 1609409,
+    "lines": 230485,
+    "tokens": 1609244,
     "clones": 736,
     "duplicatedLines": 21095,
     "duplicatedTokens": 94585,
@@ -179,8 +197,8 @@
      "percentage": 0.28
     },
     {
-     "format": "bash",
-     "sources": 21,
+     "format": "jsx",
+     "sources": 3,
      "lines": 819,
      "clones": 0,
      "duplicatedLines": 0,
@@ -192,151 +210,401 @@
      "format": "json",
      "lines": 436,
      "tokens": 1535,
-     "firstFile": {
+     "copies": 11,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
       "start": 1,
       "end": 436
      },
-     "secondFile": {
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/sticky-chrome-target.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/text-input-variations.json",
+       "start": 1,
+       "end": 436
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{",
+       "  \"nodes\": [",
+       "    {",
+       "      \"index\": 0,",
+       "      \"type\": \"android.widget.TextView\",",
+       "      \"label\": \"6:53\",",
+       "      \"value\": \"6:53\",",
+       "      \"contentDescription\": \"6:53 PM\",",
+       "      \"identifier\": \"com.android.systemui:id/clock\",",
+       "      \"bundleId\": \"com.android.systemui\","
+      ],
+      "total": 436
+     }
+    },
+    {
+     "format": "json",
+     "lines": 436,
+     "tokens": 1535,
+     "copies": 5,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+      "start": 1,
+      "end": 436
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/error-recovery.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/sequential-onboarding.json",
+       "start": 1,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/stripe-paymentsheet.json",
+       "start": 1,
+       "end": 436
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{",
+       "  \"nodes\": [",
+       "    {",
+       "      \"index\": 0,",
+       "      \"type\": \"android.widget.TextView\",",
+       "      \"label\": \"6:54\",",
+       "      \"value\": \"6:54\",",
+       "      \"contentDescription\": \"6:54 PM\",",
+       "      \"identifier\": \"com.android.systemui:id/clock\",",
+       "      \"bundleId\": \"com.android.systemui\","
+      ],
+      "total": 436
+     }
+    },
+    {
+     "format": "json",
+     "lines": 291,
+     "tokens": 1023,
+     "copies": 5,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+      "start": 80,
+      "end": 370
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/home.json",
+       "start": 80,
+       "end": 370
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+       "start": 80,
+       "end": 370
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+       "start": 80,
+       "end": 370
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/modal-flow.json",
+       "start": 80,
+       "end": 370
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "},",
+       "\"enabled\": true,",
+       "\"selected\": false,",
+       "\"editable\": false,",
+       "\"password\": false,",
+       "\"hintShowing\": false,",
+       "\"visibleToUser\": true,",
+       "\"depth\": 0,",
+       "\"ref\": \"e4\",",
+       "\"kind\": \"image\""
+      ],
+      "total": 291
+     }
+    },
+    {
+     "format": "json",
+     "lines": 357,
+     "tokens": 1257,
+     "copies": 4,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
+      "start": 80,
+      "end": 436
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/permission-prompt.json",
+       "start": 80,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/photo-picker.json",
+       "start": 80,
+       "end": 436
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/product-catalog.json",
+       "start": 80,
+       "end": 436
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 57,
+     "tokens": 197,
+     "copies": 17,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
-      "start": 1,
-      "end": 436
-     }
+      "start": 444,
+      "end": 500
+     },
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+       "start": 444,
+       "end": 500
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+       "start": 444,
+       "end": 500
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
+     "lines": 94,
+     "tokens": 327,
+     "copies": 6,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
       "start": 1,
-      "end": 436
+      "end": 94
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/home.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/infinite-scroll-list.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/login-form.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/modal-flow.json",
+       "start": 1,
+       "end": 94
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
+     "lines": 343,
+     "tokens": 1207,
+     "copies": 2,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
+      "start": 94,
       "end": 436
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+       "start": 94,
+       "end": 436
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
+     "lines": 17,
+     "tokens": 54,
+     "copies": 22,
+     "first": {
       "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
+      "start": 442,
+      "end": 458
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/bottom-tabs.json",
+       "start": 444,
+       "end": 460
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/broken-accessibility.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/control-inventory.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/debounced-search.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-login.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/flattened-registration-form.json",
+       "start": 442,
+       "end": 458
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
+       "start": 442,
+       "end": 458
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 93,
+     "tokens": 1060,
+     "copies": 2,
+     "first": {
+      "name": "packages/e2e/CHANGELOG.md:markdown",
+      "start": 1878,
+      "end": 1970
+     },
+     "others": [
+      {
+       "name": "packages/web/CHANGELOG.md:markdown",
+       "start": 577,
+       "end": 669
+      }
+     ]
     },
     {
      "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
+     "lines": 94,
+     "tokens": 327,
+     "copies": 4,
+     "first": {
+      "name": "packages/mobile/tests/fixtures/snapshots/android/choice-controls.json",
       "start": 1,
-      "end": 436
+      "end": 94
      },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/gestures.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/huge-virtualized-list.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/sticky-chrome-target.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/text-input-variations.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/vision-only.json",
-      "start": 1,
-      "end": 436
-     }
-    },
-    {
-     "format": "json",
-     "lines": 436,
-     "tokens": 1535,
-     "firstFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/async-states.json",
-      "start": 1,
-      "end": 436
-     },
-     "secondFile": {
-      "name": "packages/mobile/tests/fixtures/snapshots/android/webview-accessibility.json",
-      "start": 1,
-      "end": 436
-     }
+     "others": [
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/permission-prompt.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/photo-picker.json",
+       "start": 1,
+       "end": 94
+      },
+      {
+       "name": "packages/mobile/tests/fixtures/snapshots/android/product-catalog.json",
+       "start": 1,
+       "end": 94
+      }
+     ]
     }
    ],
    "health": {
@@ -543,7 +811,361 @@
       "lines": 57
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 216,
+    "lines": 35322,
+    "tokens": 188208,
+    "clones": 79,
+    "duplicatedLines": 1516,
+    "duplicatedTokens": 5601,
+    "percentage": 4.29,
+    "percentageTokens": 2.98,
+    "formats": [
+     {
+      "format": "tsx",
+      "sources": 71,
+      "lines": 12688,
+      "clones": 72,
+      "duplicatedLines": 1406,
+      "percentage": 11.08
+     },
+     {
+      "format": "typescript",
+      "sources": 124,
+      "lines": 19806,
+      "clones": 6,
+      "duplicatedLines": 100,
+      "percentage": 0.5
+     },
+     {
+      "format": "javascript",
+      "sources": 10,
+      "lines": 1900,
+      "clones": 1,
+      "duplicatedLines": 10,
+      "percentage": 0.53
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "swift",
+      "sources": 1,
+      "lines": 110,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 18,
+      "tokens": 58,
+      "copies": 7,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+       "start": 169,
+       "end": 186
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DeferredDialog.tsx",
+        "start": 69,
+        "end": 86
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/InfiniteScroll.tsx",
+        "start": 92,
+        "end": 109
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+        "start": 86,
+        "end": 103
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NativeDialogs.tsx",
+        "start": 60,
+        "end": 77
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+        "start": 89,
+        "end": 106
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/RichTextEditor.tsx",
+        "start": 122,
+        "end": 139
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      </button>",
+        "    </div>",
+        "  );",
+        "}",
+        "",
+        "const styles = {",
+        "  container: {",
+        "    display: \"flex\",",
+        "    flexDirection: \"column\",",
+        "    gap: 12,"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 55,
+      "tokens": 236,
+      "copies": 2,
+      "first": {
+       "name": "apps/mobile-benchmark/src/Examples/ApplePay.tsx",
+       "start": 50,
+       "end": 104
+      },
+      "others": [
+       {
+        "name": "apps/mobile-benchmark/src/Examples/ApplePayBillingAddress.tsx",
+        "start": 59,
+        "end": 113
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "</View>",
+        "{state === \"dismissed\" && (",
+        "  <Text testID=\"payment-canceled\" style={styles.warning}>",
+        "    Payment canceled — the order was not placed",
+        "  </Text>",
+        ")}",
+        "{state === \"error\" && errorMessage && (",
+        "  <Text testID=\"payment-error\" style={styles.warning}>",
+        "    {errorMessage}",
+        "  </Text>"
+       ],
+       "total": 55
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 18,
+      "tokens": 54,
+      "copies": 5,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/AsyncStates.tsx",
+       "start": 119,
+       "end": 136
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+        "start": 169,
+        "end": 186
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+        "start": 153,
+        "end": 171
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/FilterDeepLink.tsx",
+        "start": 65,
+        "end": 82
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/StaleDom.tsx",
+        "start": 83,
+        "end": 100
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      ) : null}",
+        "    </div>",
+        "  );",
+        "}",
+        "",
+        "const styles = {",
+        "  container: {",
+        "    display: \"flex\",",
+        "    flexDirection: \"column\",",
+        "    gap: 12,"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 23,
+      "tokens": 86,
+      "copies": 3,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/FileRoundTrip.tsx",
+       "start": 93,
+       "end": 115
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/HoverMenu.tsx",
+        "start": 140,
+        "end": 162
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/IframeForm.tsx",
+        "start": 106,
+        "end": 128
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 15,
+      "tokens": 54,
+      "copies": 4,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/AsyncStates.tsx",
+       "start": 178,
+       "end": 192
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DatePicker.tsx",
+        "start": 261,
+        "end": 275
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+        "start": 204,
+        "end": 218
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/FileRoundTrip.tsx",
+        "start": 140,
+        "end": 154
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 35,
+      "tokens": 153,
+      "copies": 2,
+      "first": {
+       "name": "apps/mobile-benchmark/src/Examples/LoginForm.tsx",
+       "start": 2,
+       "end": 36
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+        "start": 3,
+        "end": 37
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 40,
+      "tokens": 141,
+      "copies": 2,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/DeferredDialog.tsx",
+       "start": 71,
+       "end": 110
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NativeDialogs.tsx",
+        "start": 62,
+        "end": 101
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 22,
+      "tokens": 70,
+      "copies": 3,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/DebouncedSearch.tsx",
+       "start": 156,
+       "end": 177
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+        "start": 88,
+        "end": 109
+       },
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+        "start": 91,
+        "end": 112
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 30,
+      "tokens": 139,
+      "copies": 2,
+      "first": {
+       "name": "apps/mobile-benchmark/src/Examples/FlattenedLogin.tsx",
+       "start": 15,
+       "end": 44
+      },
+      "others": [
+       {
+        "name": "apps/mobile-benchmark/src/Examples/LoginForm.tsx",
+        "start": 7,
+        "end": 36
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 38,
+      "tokens": 137,
+      "copies": 2,
+      "first": {
+       "name": "apps/web-benchmark/app/src/Examples/LoginForm.tsx",
+       "start": 95,
+       "end": 132
+      },
+      "others": [
+       {
+        "name": "apps/web-benchmark/app/src/Examples/NewTabFlow.tsx",
+        "start": 98,
+        "end": 135
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:50.806Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "michael-denyer/pstack-claude",
@@ -554,11 +1176,11 @@
    "starsToday": 223,
    "defaultBranch": "main",
    "headSha": "4d4e159a77aec356ae6be320f281808aab0d25ca",
-   "durationMs": 944,
+   "durationMs": 83,
    "total": {
     "sources": 286,
-    "lines": 34569,
-    "tokens": 340336,
+    "lines": 34525,
+    "tokens": 340171,
     "clones": 38,
     "duplicatedLines": 386,
     "duplicatedTokens": 3582,
@@ -609,7 +1231,7 @@
     {
      "format": "bash",
      "sources": 23,
-     "lines": 1418,
+     "lines": 1368,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -633,7 +1255,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -652,151 +1274,261 @@
      "format": "markdown",
      "lines": 27,
      "tokens": 487,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/pstack/agents/comment-sicko.md:markdown",
       "start": 6,
       "end": 32
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/poteto-mode/references/agents/comment-sicko.md:markdown",
-      "start": 6,
-      "end": 32
+     "others": [
+      {
+       "name": "plugins/pstack/skills/poteto-mode/references/agents/comment-sicko.md:markdown",
+       "start": 6,
+       "end": 32
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Comment Sicko",
+       "",
+       "My first output when spawned is exactly this.",
+       "",
+       "Yes... Ha ha ha... Yes!",
+       "",
+       "I hate comments. Feed me the parent scoped files or diff. If none exists, feed me the current diff against `main`. Narration, banners, commented-out corpses, w…",
+       "",
+       "Only these exceptions get to crawl away.",
+       ""
+      ],
+      "total": 27
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 12,
+     "tokens": 180,
+     "copies": 3,
+     "first": {
+      "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
+      "start": 19,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+       "start": 18,
+       "end": 29
+      },
+      {
+       "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
+       "start": 31,
+       "end": 42
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "## Scope to skills and tools the session actually used",
+       "",
+       "Findings must point to skills, tools, or MCPs invoked in this transcript. Speculative routings to skills the parent never opened do not count. To check whether…",
+       "",
+       "- `Read` tool calls against any `SKILL.md` file (workspace `.claude/skills/`, user-level `~/.claude/skills/`, or plugin-installed paths under `~/.claude/plugin…",
+       "- `Agent` prompts that name a skill path",
+       "- Tool calls (Shell, Grep, MCP, etc.) that match a skill's documented commands",
+       "",
+       "Two valid finding shapes:",
+       ""
+      ],
+      "total": 12
      }
     },
     {
      "format": "markdown",
      "lines": 12,
      "tokens": 340,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "NOTICE-skills.md:markdown",
       "start": 1,
       "end": 12
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/poteto-mode/references/licenses/NOTICE.md:markdown",
-      "start": 1,
-      "end": 12
+     "others": [
+      {
+       "name": "plugins/pstack/skills/poteto-mode/references/licenses/NOTICE.md:markdown",
+       "start": 1,
+       "end": 12
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# NOTICE for the skills-only distribution",
+       "",
+       "This distribution contains MIT-licensed work from two upstream sources. The copyright notices and license terms travel beside this file.",
+       "",
+       "## Upstream sources",
+       "",
+       "| Included work | Upstream | Copyright | License |",
+       "| --- | --- | --- | --- |",
+       "| pstack-derived skills, principles, scripts, and the `comment-sicko` definition | [cursor/plugins/pstack](https://github.com/cursor/plugins/tree/e46364b8be460…",
+       "| `deslop`, `thermo-nuclear-code-quality-review`, `make-pr-easy-to-review`, `fix-ci`, `fix-merge-conflicts`, `get-pr-comments`, and `what-did-i-get-done` | [cu…"
+      ],
+      "total": 12
      }
+    },
+    {
+     "format": "markdown",
+     "lines": 7,
+     "tokens": 68,
+     "copies": 6,
+     "first": {
+      "name": "plugins/pstack/skills/arena/SKILL.md:markdown",
+      "start": 74,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "plugins/pstack/skills/how/SKILL.md:markdown",
+       "start": 61,
+       "end": 67
+      },
+      {
+       "name": "plugins/pstack/skills/poteto-mode/SKILL.md:markdown",
+       "start": 154,
+       "end": 160
+      },
+      {
+       "name": "plugins/pstack/skills/reflect/SKILL.md:markdown",
+       "start": 76,
+       "end": 82
+      },
+      {
+       "name": "plugins/pstack/skills/swarm/SKILL.md:markdown",
+       "start": 49,
+       "end": 55
+      },
+      {
+       "name": "plugins/pstack/skills/why/SKILL.md:markdown",
+       "start": 161,
+       "end": 167
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 8,
      "tokens": 182,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
       "start": 5,
       "end": 12
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-      "start": 3,
-      "end": 10
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 12,
-     "tokens": 180,
-     "firstFile": {
-      "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-      "start": 19,
-      "end": 30
-     },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-      "start": 18,
-      "end": 29
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 12,
-     "tokens": 180,
-     "firstFile": {
-      "name": "plugins/pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-      "start": 19,
-      "end": 30
-     },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-      "start": 31,
-      "end": 42
-     }
+     "others": [
+      {
+       "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+       "start": 3,
+       "end": 10
+      }
+     ]
     },
     {
      "format": "javascript",
      "lines": 6,
      "tokens": 131,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/pi/agents-messages.test.mjs",
       "start": 108,
       "end": 113
      },
-     "secondFile": {
+     "others": [
+      {
+       "name": "tests/pi/agents-messages.test.mjs",
+       "start": 121,
+       "end": 126
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 6,
+     "tokens": 62,
+     "copies": 3,
+     "first": {
       "name": "tests/pi/agents-messages.test.mjs",
-      "start": 121,
-      "end": 126
-     }
+      "start": 53,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "tests/pi/agents-messages.test.mjs",
+       "start": 88,
+       "end": 93
+      },
+      {
+       "name": "tests/pi/agents-messages.test.mjs",
+       "start": 101,
+       "end": 105
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 13,
      "tokens": 117,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/pstack/skills/interrogate/references/code-quality-review.md:markdown",
       "start": 5,
       "end": 17
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
-      "start": 10,
-      "end": 22
-     }
+     "others": [
+      {
+       "name": "plugins/pstack/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
+       "start": 10,
+       "end": 22
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 6,
+     "tokens": 51,
+     "copies": 3,
+     "first": {
+      "name": "tests/sync.test.mjs",
+      "start": 732,
+      "end": 737
+     },
+     "others": [
+      {
+       "name": "tests/sync.test.mjs",
+       "start": 1043,
+       "end": 1048
+      },
+      {
+       "name": "tests/sync.test.mjs",
+       "start": 1064,
+       "end": 1069
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 11,
      "tokens": 80,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/pstack/skills/reflect/references/judgment-reviewer.md:markdown",
       "start": 24,
       "end": 34
      },
-     "secondFile": {
-      "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-      "start": 37,
-      "end": 47
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 13,
-     "tokens": 75,
-     "firstFile": {
-      "name": "plugins/pstack/skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "start": 280,
-      "end": 292
-     },
-     "secondFile": {
-      "name": "plugins/pstack/skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "start": 364,
-      "end": 376
-     }
-    },
-    {
-     "format": "javascript",
-     "lines": 9,
-     "tokens": 75,
-     "firstFile": {
-      "name": "tests/sync.test.mjs",
-      "start": 1077,
-      "end": 1085
-     },
-     "secondFile": {
-      "name": "tests/sync.test.mjs",
-      "start": 1092,
-      "end": 1100
-     }
+     "others": [
+      {
+       "name": "plugins/pstack/skills/reflect/references/tooling-reviewer.md:markdown",
+       "start": 37,
+       "end": 47
+      }
+     ]
     }
    ],
    "health": {
@@ -967,7 +1699,174 @@
       "lines": 65
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 60,
+    "lines": 11891,
+    "tokens": 78727,
+    "clones": 3,
+    "duplicatedLines": 39,
+    "duplicatedTokens": 178,
+    "percentage": 0.33,
+    "percentageTokens": 0.23,
+    "formats": [
+     {
+      "format": "javascript",
+      "sources": 12,
+      "lines": 3213,
+      "clones": 2,
+      "duplicatedLines": 30,
+      "percentage": 0.93
+     },
+     {
+      "format": "typescript",
+      "sources": 27,
+      "lines": 7132,
+      "clones": 1,
+      "duplicatedLines": 9,
+      "percentage": 0.13
+     },
+     {
+      "format": "bash",
+      "sources": 14,
+      "lines": 781,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "awk",
+      "sources": 5,
+      "lines": 567,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "powershell",
+      "sources": 1,
+      "lines": 24,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "javascript",
+      "lines": 16,
+      "tokens": 65,
+      "copies": 2,
+      "first": {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/worktree-audit.mjs",
+       "start": 331,
+       "end": 346
+      },
+      "others": [
+       {
+        "name": "plugins/pstack/skills/reflect/scripts/find-transcript.mjs",
+        "start": 202,
+        "end": 217
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  process.stdout.write(audit({ repo: repo.value, transcripts }));",
+        "  return 0;",
+        "}",
+        "",
+        "// node leaves argv[1] unresolved and may set it to a non-file (`node -e ... arg`).",
+        "function invokedDirectly() {",
+        "  if (!process.argv[1]) return false;",
+        "  try {",
+        "    return fileURLToPath(import.meta.url) === realpathSync(process.argv[1]);",
+        "  } catch {"
+       ],
+       "total": 16
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 14,
+      "tokens": 57,
+      "copies": 2,
+      "first": {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/check-playbooks.mjs",
+       "start": 43,
+       "end": 56
+      },
+      "others": [
+       {
+        "name": "plugins/pstack/skills/poteto-mode/scripts/worktree-audit.mjs",
+        "start": 332,
+        "end": 345
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  return problems;",
+        "}",
+        "",
+        "// node leaves argv[1] unresolved and may set it to a non-file (`node -e ... arg`).",
+        "function invokedDirectly() {",
+        "  if (!process.argv[1]) return false;",
+        "  try {",
+        "    return fileURLToPath(import.meta.url) === realpathSync(process.argv[1]);",
+        "  } catch {",
+        "    return false;"
+       ],
+       "total": 14
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 56,
+      "copies": 2,
+      "first": {
+       "name": "plugins/pstack/skills/poteto-mode/scripts/orch/orch.ts",
+       "start": 104,
+       "end": 112
+      },
+      "others": [
+       {
+        "name": "plugins/pstack/skills/poteto-mode/scripts/orch/store.ts",
+        "start": 962,
+        "end": 970
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  return parts.map(positiveInteger);",
+        "}",
+        "",
+        "function countLine(value: Counts): string {",
+        "  const entries = Object.entries(value);",
+        "  return entries.length === 0",
+        "    ? \"none\"",
+        "    : entries.map(([name, count]) => `${name}=${count}`).join(\", \");",
+        "}"
+       ],
+       "total": 9
+      }
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:27:52.357Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "earthtojake/text-to-cad",
@@ -978,11 +1877,11 @@
    "starsToday": 437,
    "defaultBranch": "main",
    "headSha": "941ac2f16de7d4aa2315b4f685cd83b98cbd0c14",
-   "durationMs": 3863,
+   "durationMs": 4696,
    "total": {
     "sources": 2741,
-    "lines": 563195,
-    "tokens": 5001216,
+    "lines": 563151,
+    "tokens": 5001051,
     "clones": 1476,
     "duplicatedLines": 31273,
     "duplicatedTokens": 670715,
@@ -1074,153 +1973,292 @@
    "topClones": [
     {
      "format": "python",
-     "lines": 33,
-     "tokens": 50505,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
-      "start": 1,
-      "end": 33
+     "lines": 7,
+     "tokens": 50299,
+     "copies": 5,
+     "first": {
+      "name": "models/tendon_hand/src/hand_export_repair_context.py",
+      "start": 8,
+      "end": 14
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
-      "start": 1,
-      "end": 33
+     "others": [
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+       "start": 27,
+       "end": 33
+      },
+      {
+       "name": "models/tendon_hand/src/hand_native_review.py",
+       "start": 8,
+       "end": 14
+      },
+      {
+       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+       "start": 7,
+       "end": 13
+      },
+      {
+       "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
+       "start": 7,
+       "end": 13
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/hand_export_repair_context.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/hand_mechanical_candidate.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+      ],
+      "total": 7
      }
     },
     {
      "format": "python",
      "lines": 33,
      "tokens": 50505,
-     "firstFile": {
+     "copies": 3,
+     "first": {
       "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
       "start": 1,
       "end": 33
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
-      "start": 1,
-      "end": 33
+     "others": [
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
+       "start": 1,
+       "end": 33
+      },
+      {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
+       "start": 1,
+       "end": 33
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"\"\"Complete mechanical candidate assembled from the actual exported components.",
+       "",
+       "The pose/explode gauntlet is still separate. Native reconstruction here keeps",
+       "this assembled export aligned with the components used by the physical audits.",
+       "\"\"\"",
+       "import hashlib,json",
+       "from pathlib import Path",
+       "from cadgen import step,read_step",
+       "from lib.native_integration import integrated_native_bodies,overlay,ROOT",
+       "from lib.assembly import compound"
+      ],
+      "total": 33
      }
     },
     {
      "format": "python",
      "lines": 10,
      "tokens": 50315,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
       "start": 4,
       "end": 13
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
-      "start": 4,
-      "end": 13
+     "others": [
+      {
+       "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
+       "start": 4,
+       "end": 13
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "from lib.native_integration import frozen_bodies",
+       "from lib.palette import ASSEMBLY_MATERIALS",
+       "from phalanx_beauty_review import replacements",
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/phalanx_beauty_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "from lib.native_integration import frozen_bodies",
+       "from lib.palette import ASSEMBLY_MATERIALS",
+       "from phalanx_beauty_review import replacements",
+       "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+       "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+       "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+       "'''",
+       "",
+       "",
+       "@step(out='../STEP/phalanx_sculpt_representative_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+      ],
+      "total": 10
      }
     },
     {
      "format": "python",
      "lines": 8,
      "tokens": 50303,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
       "start": 6,
       "end": 13
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/pulley_hub_context.py",
-      "start": 7,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
-      "start": 27,
-      "end": 33
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/hand_native_review.py",
-      "start": 8,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/phalanx_beauty_context.py",
-      "start": 7,
-      "end": 13
-     }
-    },
-    {
-     "format": "python",
-     "lines": 7,
-     "tokens": 50299,
-     "firstFile": {
-      "name": "models/tendon_hand/src/hand_export_repair_context.py",
-      "start": 8,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
-      "start": 7,
-      "end": 13
-     }
+     "others": [
+      {
+       "name": "models/tendon_hand/src/pulley_hub_context.py",
+       "start": 7,
+       "end": 14
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 6,
      "tokens": 38144,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/tendon_hand/src/hand_export_repair_context.py",
       "start": 9,
       "end": 14
      },
-     "secondFile": {
-      "name": "models/tendon_hand/src/routing_layout_review.py",
-      "start": 14,
-      "end": 19
-     }
+     "others": [
+      {
+       "name": "models/tendon_hand/src/routing_layout_review.py",
+       "start": 14,
+       "end": 19
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 955,
      "tokens": 7131,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "models/radial/src/lib/castings.py",
       "start": 3,
       "end": 957
      },
-     "secondFile": {
-      "name": "models/w16/src/lib/castings.py",
+     "others": [
+      {
+       "name": "models/w16/src/lib/castings.py",
+       "start": 3,
+       "end": 957
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 214,
+     "tokens": 4326,
+     "copies": 2,
+     "first": {
+      "name": "models/radial/src/lib/anim_js.py",
+      "start": 16,
+      "end": 229
+     },
+     "others": [
+      {
+       "name": "models/radial/src/lib/animgen.py",
+       "start": 245,
+       "end": 458
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 318,
+     "tokens": 1755,
+     "copies": 3,
+     "first": {
+      "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+      "start": 13,
+      "end": 330
+     },
+     "others": [
+      {
+       "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+       "start": 330,
+       "end": 647
+      },
+      {
+       "name": "models/falcon_heavy/HIERARCHY.md:markdown",
+       "start": 662,
+       "end": 979
+      }
+     ]
+    },
+    {
+     "format": "txt",
+     "lines": 86,
+     "tokens": 875,
+     "copies": 5,
+     "first": {
+      "name": "packages/ui/licenses/excalidraw/Assistant-OFL.txt",
       "start": 3,
-      "end": 957
-     }
+      "end": 88
+     },
+     "others": [
+      {
+       "name": "packages/ui/licenses/excalidraw/Cascadia-OFL.txt",
+       "start": 9,
+       "end": 94
+      },
+      {
+       "name": "packages/ui/licenses/excalidraw/Lilita-OFL.txt",
+       "start": 3,
+       "end": 88
+      },
+      {
+       "name": "packages/ui/licenses/excalidraw/Nunito-OFL.txt",
+       "start": 3,
+       "end": 88
+      },
+      {
+       "name": "packages/ui/licenses/excalidraw/Xiaolai-OFL.txt",
+       "start": 3,
+       "end": 88
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 391,
+     "tokens": 2855,
+     "copies": 2,
+     "first": {
+      "name": "models/radial/src/lib/fasteners.py",
+      "start": 503,
+      "end": 893
+     },
+     "others": [
+      {
+       "name": "models/w16/src/lib/fasteners.py",
+       "start": 497,
+       "end": 887
+      }
+     ]
     }
    ],
    "health": {
@@ -1441,7 +2479,368 @@
       "lines": 601
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1630,
+    "lines": 322134,
+    "tokens": 3153969,
+    "clones": 839,
+    "duplicatedLines": 15372,
+    "duplicatedTokens": 589809,
+    "percentage": 4.77,
+    "percentageTokens": 18.7,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 1087,
+      "lines": 220699,
+      "clones": 695,
+      "duplicatedLines": 13263,
+      "percentage": 6.01
+     },
+     {
+      "format": "javascript",
+      "sources": 385,
+      "lines": 81288,
+      "clones": 126,
+      "duplicatedLines": 1918,
+      "percentage": 2.36
+     },
+     {
+      "format": "jsx",
+      "sources": 67,
+      "lines": 11800,
+      "clones": 10,
+      "duplicatedLines": 113,
+      "percentage": 0.96
+     },
+     {
+      "format": "typescript",
+      "sources": 46,
+      "lines": 2849,
+      "clones": 6,
+      "duplicatedLines": 51,
+      "percentage": 1.79
+     },
+     {
+      "format": "bash",
+      "sources": 21,
+      "lines": 2504,
+      "clones": 1,
+      "duplicatedLines": 14,
+      "percentage": 0.56
+     },
+     {
+      "format": "tsx",
+      "sources": 22,
+      "lines": 2067,
+      "clones": 1,
+      "duplicatedLines": 13,
+      "percentage": 0.63
+     },
+     {
+      "format": "c",
+      "sources": 1,
+      "lines": 753,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 7,
+      "tokens": 50299,
+      "copies": 5,
+      "first": {
+       "name": "models/tendon_hand/src/hand_export_repair_context.py",
+       "start": 8,
+       "end": 14
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+        "start": 27,
+        "end": 33
+       },
+       {
+        "name": "models/tendon_hand/src/hand_native_review.py",
+        "start": 8,
+        "end": 14
+       },
+       {
+        "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+        "start": 7,
+        "end": 13
+       },
+       {
+        "name": "models/tendon_hand/src/phalanx_continuous_context_r5.py",
+        "start": 7,
+        "end": 13
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/hand_export_repair_context.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+       ],
+       "total": 7
+      },
+      "excerptSecond": {
+       "lines": [
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/hand_mechanical_candidate.step', materials=ASSEMBLY_MATERIALS, animation=ANIMATION_JS)"
+       ],
+       "total": 7
+      }
+     },
+     {
+      "format": "python",
+      "lines": 33,
+      "tokens": 50505,
+      "copies": 3,
+      "first": {
+       "name": "models/tendon_hand/src/hand_mechanical_candidate.py",
+       "start": 1,
+       "end": 33
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/hand_mechanical_candidate_r11.py",
+        "start": 1,
+        "end": 33
+       },
+       {
+        "name": "models/tendon_hand/src/hand_mechanical_candidate_r12.py",
+        "start": 1,
+        "end": 33
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "\"\"\"Complete mechanical candidate assembled from the actual exported components.",
+        "",
+        "The pose/explode gauntlet is still separate. Native reconstruction here keeps",
+        "this assembled export aligned with the components used by the physical audits.",
+        "\"\"\"",
+        "import hashlib,json",
+        "from pathlib import Path",
+        "from cadgen import step,read_step",
+        "from lib.native_integration import integrated_native_bodies,overlay,ROOT",
+        "from lib.assembly import compound"
+       ],
+       "total": 33
+      }
+     },
+     {
+      "format": "python",
+      "lines": 10,
+      "tokens": 50315,
+      "copies": 2,
+      "first": {
+       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+       "start": 4,
+       "end": 13
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/phalanx_sculpt_representative_context.py",
+        "start": 4,
+        "end": 13
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "from lib.native_integration import frozen_bodies",
+        "from lib.palette import ASSEMBLY_MATERIALS",
+        "from phalanx_beauty_review import replacements",
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/phalanx_beauty_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "from lib.native_integration import frozen_bodies",
+        "from lib.palette import ASSEMBLY_MATERIALS",
+        "from phalanx_beauty_review import replacements",
+        "ANIMATION_JS = r'''// Static surface presentation only; no joint choreography.",
+        "const ropes = [{\"name\":\"thumb_cmc_abduction_positive\",\"normal\":[1,0,0],\"segments\":[{\"kind\":\"bezier\",\"points\":[[-20.0,-252.0,30.6],[-20.0,-248.13400675118444,30…",
+        "export const clips={presentation:{label:\"Braided surface study\",duration:1,loop:false,update(t,m){for(const rope of ropes){const rest={normal:rope.normal,segme…",
+        "'''",
+        "",
+        "",
+        "@step(out='../STEP/phalanx_sculpt_representative_context.step', animation=ANIMATION_JS, materials=ASSEMBLY_MATERIALS)"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 50303,
+      "copies": 2,
+      "first": {
+       "name": "models/tendon_hand/src/phalanx_beauty_context.py",
+       "start": 6,
+       "end": 13
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/pulley_hub_context.py",
+        "start": 7,
+        "end": 14
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 6,
+      "tokens": 38144,
+      "copies": 2,
+      "first": {
+       "name": "models/tendon_hand/src/hand_export_repair_context.py",
+       "start": 9,
+       "end": 14
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/src/routing_layout_review.py",
+        "start": 14,
+        "end": 19
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 955,
+      "tokens": 7131,
+      "copies": 2,
+      "first": {
+       "name": "models/radial/src/lib/castings.py",
+       "start": 3,
+       "end": 957
+      },
+      "others": [
+       {
+        "name": "models/w16/src/lib/castings.py",
+        "start": 3,
+        "end": 957
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 391,
+      "tokens": 2855,
+      "copies": 2,
+      "first": {
+       "name": "models/radial/src/lib/fasteners.py",
+       "start": 503,
+       "end": 893
+      },
+      "others": [
+       {
+        "name": "models/w16/src/lib/fasteners.py",
+        "start": 497,
+        "end": 887
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 180,
+      "tokens": 2836,
+      "copies": 2,
+      "first": {
+       "name": "models/w16/src/lib/animgen.py",
+       "start": 341,
+       "end": 520
+      },
+      "others": [
+       {
+        "name": "models/w16/src/w16.py",
+        "start": 215,
+        "end": 394
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 330,
+      "tokens": 2150,
+      "copies": 2,
+      "first": {
+       "name": "models/radial/src/lib/fasteners.py",
+       "start": 145,
+       "end": 474
+      },
+      "others": [
+       {
+        "name": "models/w16/src/lib/fasteners.py",
+        "start": 139,
+        "end": 468
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 86,
+      "tokens": 1032,
+      "copies": 3,
+      "first": {
+       "name": "models/tendon_hand/src/lib/phalanx.py",
+       "start": 1,
+       "end": 86
+      },
+      "others": [
+       {
+        "name": "models/tendon_hand/validation/phalanx_before_nail.py",
+        "start": 1,
+        "end": 86
+       },
+       {
+        "name": "models/tendon_hand/validation/phalanx_pre_beauty_baseline.py",
+        "start": 1,
+        "end": 86
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 0,
+     "sample": [
+      "models/radial/src/lib/anim_js.py"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T05:28:12.844Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "boykopovar/AnyPS5",
@@ -1452,11 +2851,11 @@
    "starsToday": 997,
    "defaultBranch": "main",
    "headSha": "109a3281f8de96a75e23b70b43c1e94358d09c09",
-   "durationMs": 2022,
+   "durationMs": 2728,
    "total": {
     "sources": 1404,
-    "lines": 243933,
-    "tokens": 2734128,
+    "lines": 243889,
+    "tokens": 2733963,
     "clones": 1651,
     "duplicatedLines": 22942,
     "duplicatedTokens": 257602,
@@ -1499,7 +2898,7 @@
     {
      "format": "bash",
      "sources": 10,
-     "lines": 698,
+     "lines": 648,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1531,7 +2930,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1548,153 +2947,483 @@
    "topClones": [
     {
      "format": "cpp",
+     "lines": 30,
+     "tokens": 487,
+     "copies": 42,
+     "first": {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomics.cpp",
+      "start": 63,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+       "start": 131,
+       "end": 160
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+       "start": 123,
+       "end": 152
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+       "start": 121,
+       "end": 150
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+       "start": 138,
+       "end": 167
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dpp16Operands.cpp",
+       "start": 130,
+       "end": 159
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DsPermute.cpp",
+       "start": 121,
+       "end": 150
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+       "start": 320,
+       "end": 349
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32OutputModifier.cpp",
+       "start": 140,
+       "end": 169
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    Require(actual == expected, std::string(\"buffer atomics: lane \") + std::to_string(tid) + \" \" + name + \" is \" + Hex(actual) + \", expected \" + Hex(expected));",
+       "}",
+       "",
+       "void Run(AgcDriver::VulkanDevice& device) {",
+       "    for (std::uint32_t tid = 0; tid < Threads; ++tid) Fill(tid, &Input[tid * Inputs]);",
+       "    Output.fill(0xdeadbeefu);",
+       "    std::vector<std::uint32_t> userData(8, 0u);",
+       "    const auto input = BufferDescriptor(Input.data(), static_cast<std::uint32_t>(Input.size() * 4u));",
+       "    const auto output = BufferDescriptor(Output.data(), static_cast<std::uint32_t>(Output.size() * 4u));",
+       "    std::copy(input.begin(), input.end(), userData.begin());"
+      ],
+      "total": 30
+     }
+    },
+    {
+     "format": "cpp-header",
+     "lines": 48,
+     "tokens": 1415,
+     "copies": 6,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 660,
+      "end": 707
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1552,
+       "end": 1598
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1839,
+       "end": 1886
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2137,
+       "end": 2184
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2417,
+       "end": 2464
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2697,
+       "end": 2744
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{0x017e, 0x00000000}, {0x017f, 0x00000000}, {0x0180, 0x00000000}, {0x0181, 0x00000000},",
+       "{0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000}, {0x0185, 0x00000000},",
+       "{0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000}, {0x0189, 0x00000000},",
+       "{0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000}, {0x018d, 0x00000000},",
+       "{0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000}, {0x0113, 0x3f800000},",
+       "{0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000}, {0x0094, 0x80000000},",
+       "{0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0115, 0x3f800000},",
+       "{0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000}, {0x0118, 0x00000000},",
+       "{0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000}, {0x00b6, 0x00000000},",
+       "{0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000}, {0x011f, 0x3f800000},"
+      ],
+      "total": 48
+     },
+     "excerptSecond": {
+      "lines": [
+       "{0x0181, 0x00000000}, {0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000},",
+       "{0x0185, 0x00000000}, {0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000},",
+       "{0x0189, 0x00000000}, {0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000},",
+       "{0x018d, 0x00000000}, {0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000},",
+       "{0x0113, 0x3f800000}, {0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000},",
+       "{0x0094, 0x80000000}, {0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000},",
+       "{0x0115, 0x3f800000}, {0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000},",
+       "{0x0118, 0x00000000}, {0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000},",
+       "{0x00b6, 0x00000000}, {0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000},",
+       "{0x011f, 0x3f800000}, {0x011c, 0x00000000}, {0x011e, 0x00000000}, {0x0120, 0x00000000},"
+      ],
+      "total": 47
+     }
+    },
+    {
+     "format": "cpp",
+     "lines": 17,
+     "tokens": 119,
+     "copies": 44,
+     "first": {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+      "start": 10,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+       "start": 10,
+       "end": 26
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+       "start": 10,
+       "end": 26
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+       "start": 10,
+       "end": 26
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionResultModifiers.cpp",
+       "start": 10,
+       "end": 26
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dpp16Operands.cpp",
+       "start": 10,
+       "end": 26
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DsPermute.cpp",
+       "start": 10,
+       "end": 26
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+       "start": 10,
+       "end": 26
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32OutputModifier.cpp",
+       "start": 10,
+       "end": 26
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "#include <cstdio>",
+       "#include <iostream>",
+       "#include <string>",
+       "#include <vector>",
+       "",
+       "namespace {",
+       "",
+       "using AgcDriver::Graphics::Require;",
+       "using ShaderRecompiler::ShaderStage;",
+       ""
+      ],
+      "total": 17
+     }
+    },
+    {
+     "format": "cpp-header",
+     "lines": 41,
+     "tokens": 1199,
+     "copies": 5,
+     "first": {
+      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+      "start": 1007,
+      "end": 1047
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1287,
+       "end": 1327
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1899,
+       "end": 1939
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2197,
+       "end": 2237
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2477,
+       "end": 2517
+      }
+     ]
+    },
+    {
+     "format": "cpp",
+     "lines": 21,
+     "tokens": 90,
+     "copies": 49,
+     "first": {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomics.cpp",
+      "start": 1,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionResultModifiers.cpp",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dpp16Operands.cpp",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DsPermute.cpp",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+       "start": 1,
+       "end": 21
+      }
+     ]
+    },
+    {
+     "format": "cpp",
      "lines": 32,
      "tokens": 4161,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "core/libs/prx/libSceAgcDriver/tests/execution/LdsIntegerAtomics.cpp",
       "start": 160,
       "end": 191
      },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/LdsIntegerAtomics.cpp",
-      "start": 194,
-      "end": 225
-     }
-    },
-    {
-     "format": "cpp",
-     "lines": 33,
-     "tokens": 3237,
-     "firstFile": {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferIntegerAtomics.cpp",
-      "start": 152,
-      "end": 184
-     },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferIntegerAtomics.cpp",
-      "start": 186,
-      "end": 218
-     }
-    },
-    {
-     "format": "cpp-header",
-     "lines": 96,
-     "tokens": 2946,
-     "firstFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 899,
-      "end": 994
-     },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 1179,
-      "end": 1273
-     }
-    },
-    {
-     "format": "cpp",
-     "lines": 109,
-     "tokens": 2576,
-     "firstFile": {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/VopcCompareTable.cpp",
-      "start": 26,
-      "end": 134
-     },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/VopcCompareTable.cpp",
-      "start": 283,
-      "end": 391
-     }
-    },
-    {
-     "format": "cpp-header",
-     "lines": 81,
-     "tokens": 2540,
-     "firstFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 871,
-      "end": 951
-     },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 2619,
-      "end": 2698
-     }
-    },
-    {
-     "format": "cpp-header",
-     "lines": 76,
-     "tokens": 2393,
-     "firstFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 876,
-      "end": 951
-     },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 2344,
-      "end": 2418
-     }
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/LdsIntegerAtomics.cpp",
+       "start": 194,
+       "end": 225
+      }
+     ]
     },
     {
      "format": "cpp-header",
      "lines": 64,
      "tokens": 2006,
-     "firstFile": {
+     "copies": 3,
+     "first": {
       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
       "start": 888,
       "end": 951
      },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 1778,
-      "end": 1841
-     }
-    },
-    {
-     "format": "cpp-header",
-     "lines": 64,
-     "tokens": 2006,
-     "firstFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 888,
-      "end": 951
-     },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
-      "start": 2076,
-      "end": 2138
-     }
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1778,
+       "end": 1841
+      },
+      {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 2076,
+       "end": 2138
+      }
+     ]
     },
     {
      "format": "cpp",
-     "lines": 26,
-     "tokens": 1740,
-     "firstFile": {
-      "name": "core/libs/tests/GuestAjm.cpp",
-      "start": 35,
-      "end": 60
+     "lines": 20,
+     "tokens": 212,
+     "copies": 19,
+     "first": {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+      "start": 112,
+      "end": 131
      },
-     "secondFile": {
-      "name": "core/libs/tests/GuestAudiodec.cpp",
-      "start": 51,
-      "end": 76
-     }
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsIncDec64.cpp",
+       "start": 104,
+       "end": 123
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionOutputModifiers.cpp",
+       "start": 119,
+       "end": 138
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivisionResultModifiers.cpp",
+       "start": 119,
+       "end": 138
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32OutputModifier.cpp",
+       "start": 121,
+       "end": 140
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32ResultClamp.cpp",
+       "start": 120,
+       "end": 139
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64NanConversions.cpp",
+       "start": 97,
+       "end": 114
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/PackedIntegerClamp.cpp",
+       "start": 119,
+       "end": 138
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/SdwaFloatSelectors.cpp",
+       "start": 121,
+       "end": 140
+      }
+     ]
     },
     {
      "format": "cpp",
-     "lines": 148,
-     "tokens": 1699,
-     "firstFile": {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalAtomics.cpp",
-      "start": 283,
-      "end": 430
+     "lines": 54,
+     "tokens": 611,
+     "copies": 7,
+     "first": {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatD16Loads.cpp",
+      "start": 485,
+      "end": 538
      },
-     "secondFile": {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalAtomics64.cpp",
-      "start": 247,
-      "end": 394
-     }
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoads.cpp",
+       "start": 97,
+       "end": 150
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoadsX2X3.cpp",
+       "start": 96,
+       "end": 149
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoadsX4.cpp",
+       "start": 96,
+       "end": 149
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoads.cpp",
+       "start": 97,
+       "end": 150
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoadsX2X3.cpp",
+       "start": 96,
+       "end": 149
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoadsX4.cpp",
+       "start": 96,
+       "end": 149
+      }
+     ]
+    },
+    {
+     "format": "cpp",
+     "lines": 19,
+     "tokens": 210,
+     "copies": 17,
+     "first": {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+      "start": 113,
+      "end": 131
+     },
+     "others": [
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+       "start": 103,
+       "end": 121
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Arithmetic.cpp",
+       "start": 101,
+       "end": 119
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Conversions.cpp",
+       "start": 101,
+       "end": 119
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Division.cpp",
+       "start": 102,
+       "end": 120
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64DivisionModifiers.cpp",
+       "start": 102,
+       "end": 120
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Rounding.cpp",
+       "start": 101,
+       "end": 119
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/FormatD16.cpp",
+       "start": 110,
+       "end": 128
+      },
+      {
+       "name": "core/libs/prx/libSceAgcDriver/tests/execution/FormatD16Store.cpp",
+       "start": 107,
+       "end": 125
+      }
+     ]
     }
    ],
    "health": {
@@ -1820,7 +3549,396 @@
     "files": 25,
     "byCategory": [],
     "largest": []
-   }
+   },
+   "code": {
+    "sources": 938,
+    "lines": 169652,
+    "tokens": 1612815,
+    "clones": 492,
+    "duplicatedLines": 5872,
+    "duplicatedTokens": 80243,
+    "percentage": 3.46,
+    "percentageTokens": 4.98,
+    "formats": [
+     {
+      "format": "cpp",
+      "sources": 562,
+      "lines": 137326,
+      "clones": 370,
+      "duplicatedLines": 3886,
+      "percentage": 2.83
+     },
+     {
+      "format": "cpp-header",
+      "sources": 359,
+      "lines": 30705,
+      "clones": 122,
+      "duplicatedLines": 1986,
+      "percentage": 6.47
+     },
+     {
+      "format": "python",
+      "sources": 4,
+      "lines": 697,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "c-header",
+      "sources": 3,
+      "lines": 106,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "cpp-header",
+      "lines": 48,
+      "tokens": 1415,
+      "copies": 6,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 660,
+       "end": 707
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 1552,
+        "end": 1598
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 1839,
+        "end": 1886
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2137,
+        "end": 2184
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2417,
+        "end": 2464
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2697,
+        "end": 2744
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "{0x017e, 0x00000000}, {0x017f, 0x00000000}, {0x0180, 0x00000000}, {0x0181, 0x00000000},",
+        "{0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000}, {0x0185, 0x00000000},",
+        "{0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000}, {0x0189, 0x00000000},",
+        "{0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000}, {0x018d, 0x00000000},",
+        "{0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000}, {0x0113, 0x3f800000},",
+        "{0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000}, {0x0094, 0x80000000},",
+        "{0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0115, 0x3f800000},",
+        "{0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000}, {0x0118, 0x00000000},",
+        "{0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000}, {0x00b6, 0x00000000},",
+        "{0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000}, {0x011f, 0x3f800000},"
+       ],
+       "total": 48
+      },
+      "excerptSecond": {
+       "lines": [
+        "{0x0181, 0x00000000}, {0x0182, 0x00000000}, {0x0183, 0x00000000}, {0x0184, 0x00000000},",
+        "{0x0185, 0x00000000}, {0x0186, 0x00000000}, {0x0187, 0x00000000}, {0x0188, 0x00000000},",
+        "{0x0189, 0x00000000}, {0x018a, 0x00000000}, {0x018b, 0x00000000}, {0x018c, 0x00000000},",
+        "{0x018d, 0x00000000}, {0x018e, 0x00000000}, {0x010f, 0x3f800000}, {0x0111, 0x3f800000},",
+        "{0x0113, 0x3f800000}, {0x0110, 0x00000000}, {0x0112, 0x00000000}, {0x0114, 0x00000000},",
+        "{0x0094, 0x80000000}, {0x0095, 0x40004000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000},",
+        "{0x0115, 0x3f800000}, {0x0117, 0x3f800000}, {0x0119, 0x3f800000}, {0x0116, 0x00000000},",
+        "{0x0118, 0x00000000}, {0x011a, 0x00000000}, {0x0096, 0x80000000}, {0x0097, 0x40004000},",
+        "{0x00b6, 0x00000000}, {0x00b7, 0x00000000}, {0x011b, 0x3f800000}, {0x011d, 0x3f800000},",
+        "{0x011f, 0x3f800000}, {0x011c, 0x00000000}, {0x011e, 0x00000000}, {0x0120, 0x00000000},"
+       ],
+       "total": 47
+      }
+     },
+     {
+      "format": "cpp-header",
+      "lines": 41,
+      "tokens": 1199,
+      "copies": 5,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1007,
+       "end": 1047
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 1287,
+        "end": 1327
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 1899,
+        "end": 1939
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2197,
+        "end": 2237
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2477,
+        "end": 2517
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "{0x008b, 0x00000000}, {0x010b, 0x00000000}, {0x000b, 0x00000000}, {0x0224, 0x00000000},",
+        "{0x0225, 0x00000000}, {0x0226, 0x00000000}, {0x0227, 0x00000000}, {0x0107, 0xffff0000},",
+        "{0x0087, 0x0000ffff}, {0x0007, 0x0000ffff}, {0x020c, 0x00000000}, {0x020d, 0x00000000},",
+        "{0x00c8, 0x00000000}, {0x00c9, 0x00000000}, {0x0088, 0x00000000}, {0x0089, 0x00000000},",
+        "{0x0108, 0x00000000}, {0x0109, 0x00000000}, {0x0148, 0x00000000}, {0x0149, 0x00000000},",
+        "{0x0008, 0x00000000}, {0x0009, 0x00000000}, {0x0280, 0x00000000}, {0x00b2, 0x00000000},",
+        "{0x00b3, 0x00000000}, {0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0132, 0x00000000},",
+        "{0x0133, 0x00000000}, {0x0134, 0x00000000}, {0x0135, 0x00000000}, {0x0032, 0x00000000},",
+        "{0x0033, 0x00000000}, {0x0034, 0x00000000}, {0x0035, 0x00000000}, {0x0082, 0x00000000},",
+        "{0x0083, 0x00000000}, {0x0102, 0x00000000}, {0x0103, 0x00000000}, {0x0240, 0x00000000},"
+       ],
+       "total": 41
+      },
+      "excerptSecond": {
+       "lines": [
+        "{0x010b, 0x00000000}, {0x000b, 0x00000000}, {0x0224, 0x00000000}, {0x0225, 0x00000000},",
+        "{0x0226, 0x00000000}, {0x0227, 0x00000000}, {0x0107, 0xffff0000}, {0x0087, 0x0000ffff},",
+        "{0x0007, 0x0000ffff}, {0x020c, 0x00000000}, {0x020d, 0x00000000}, {0x00c8, 0x00000000},",
+        "{0x00c9, 0x00000000}, {0x0088, 0x00000000}, {0x0089, 0x00000000}, {0x0108, 0x00000000},",
+        "{0x0109, 0x00000000}, {0x0148, 0x00000000}, {0x0149, 0x00000000}, {0x0008, 0x00000000},",
+        "{0x0009, 0x00000000}, {0x0280, 0x00000000}, {0x00b2, 0x00000000}, {0x00b3, 0x00000000},",
+        "{0x00b4, 0x00000000}, {0x00b5, 0x00000000}, {0x0132, 0x00000000}, {0x0133, 0x00000000},",
+        "{0x0134, 0x00000000}, {0x0135, 0x00000000}, {0x0032, 0x00000000}, {0x0033, 0x00000000},",
+        "{0x0034, 0x00000000}, {0x0035, 0x00000000}, {0x0082, 0x00000000}, {0x0083, 0x00000000},",
+        "{0x0102, 0x00000000}, {0x0103, 0x00000000}, {0x0240, 0x00000000}, {0x0241, 0x00000000},"
+       ],
+       "total": 41
+      }
+     },
+     {
+      "format": "cpp-header",
+      "lines": 64,
+      "tokens": 2006,
+      "copies": 3,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 888,
+       "end": 951
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 1778,
+        "end": 1841
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2076,
+        "end": 2138
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "{0x0309, 0x00000000}, {0x030a, 0x00000000}, {0x030b, 0x00000000}, {0x030c, 0x00000000},",
+        "{0x030d, 0x00000000}, {0x030e, 0xffffffff}, {0x030f, 0xffffffff}, {0x0311, 0x01fd2002},",
+        "{0x0312, 0x03ff0080}, {0x0105, 0x00000000}, {0x0106, 0x00000000}, {0x0107, 0x00000000},",
+        "{0x0108, 0x00000000}, {0x01e0, 0x20010001}, {0x01e1, 0x20010001}, {0x01e2, 0x20010001},",
+        "{0x01e3, 0x20010001}, {0x01e4, 0x20010001}, {0x01e5, 0x20010001}, {0x01e6, 0x20010001},",
+        "{0x01e7, 0x20010001}, {0x0020, 0x00000000}, {0x0021, 0x00000000}, {0x0084, 0x00000000},",
+        "{0x0085, 0x20002000}, {0x0086, 0x00000000}, {0x0087, 0x20002000}, {0x0088, 0x00000000},",
+        "{0x0089, 0x20002000}, {0x008a, 0x00000000}, {0x008b, 0x20002000}, {0x00db, 0x00000000},",
+        "{0x0008, 0x00000000}, {0x0009, 0x00000000}, {0x0010, 0x80000180}, {0x0011, 0x20000180},",
+        "{0x0012, 0x00000000}, {0x0013, 0x00000000}, {0x0014, 0x00000000}, {0x0015, 0x00000000},"
+       ],
+       "total": 64
+      },
+      "excerptSecond": {
+       "lines": [
+        "{0x0308, 0x00000000}, {0x0309, 0x00000000}, {0x030a, 0x00000000}, {0x030b, 0x00000000},",
+        "{0x030c, 0x00000000}, {0x030d, 0x00000000}, {0x030e, 0xffffffff}, {0x030f, 0xffffffff},",
+        "{0x0311, 0x01fd2002}, {0x0312, 0x03ff0080}, {0x0105, 0x00000000}, {0x0106, 0x00000000},",
+        "{0x0107, 0x00000000}, {0x0108, 0x00000000}, {0x01e0, 0x20010001}, {0x01e1, 0x20010001},",
+        "{0x01e2, 0x20010001}, {0x01e3, 0x20010001}, {0x01e4, 0x20010001}, {0x01e5, 0x20010001},",
+        "{0x01e6, 0x20010001}, {0x01e7, 0x20010001}, {0x0020, 0x00000000}, {0x0021, 0x00000000},",
+        "{0x0084, 0x00000000}, {0x0085, 0x20002000}, {0x0086, 0x00000000}, {0x0087, 0x20002000},",
+        "{0x0088, 0x00000000}, {0x0089, 0x20002000}, {0x008a, 0x00000000}, {0x008b, 0x20002000},",
+        "{0x00db, 0x00000000}, {0x0008, 0x00000000}, {0x0009, 0x00000000}, {0x0010, 0x80000180},",
+        "{0x0011, 0x20000180}, {0x0012, 0x00000000}, {0x0013, 0x00000000}, {0x0014, 0x00000000},"
+       ],
+       "total": 64
+      }
+     },
+     {
+      "format": "cpp-header",
+      "lines": 96,
+      "tokens": 2946,
+      "copies": 2,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 899,
+       "end": 994
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 1179,
+        "end": 1273
+       }
+      ]
+     },
+     {
+      "format": "cpp-header",
+      "lines": 81,
+      "tokens": 2540,
+      "copies": 2,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 871,
+       "end": 951
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2619,
+        "end": 2698
+       }
+      ]
+     },
+     {
+      "format": "cpp-header",
+      "lines": 76,
+      "tokens": 2393,
+      "copies": 2,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 876,
+       "end": 951
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2344,
+        "end": 2418
+       }
+      ]
+     },
+     {
+      "format": "cpp-header",
+      "lines": 49,
+      "tokens": 1529,
+      "copies": 2,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 903,
+       "end": 951
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 1505,
+        "end": 1553
+       }
+      ]
+     },
+     {
+      "format": "cpp-header",
+      "lines": 44,
+      "tokens": 1309,
+      "copies": 2,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 664,
+       "end": 707
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 950,
+        "end": 994
+       }
+      ]
+     },
+     {
+      "format": "cpp-header",
+      "lines": 17,
+      "tokens": 423,
+      "copies": 4,
+      "first": {
+       "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+       "start": 1054,
+       "end": 1070
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2244,
+        "end": 2260
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2524,
+        "end": 2540
+       },
+       {
+        "name": "core/libs/prx/libSceAgc/Command/include/RegisterDefaultsData.hpp",
+        "start": 2804,
+        "end": 2820
+       }
+      ]
+     },
+     {
+      "format": "cpp",
+      "lines": 183,
+      "tokens": 1211,
+      "copies": 2,
+      "first": {
+       "name": "core/libs/prx/libSceAvPlayer.native/Export.cpp",
+       "start": 1,
+       "end": 183
+      },
+      "others": [
+       {
+        "name": "core/libs/prx/libSceAvPlayer/Export.cpp",
+        "start": 1,
+        "end": 183
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:28:19.383Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "Panniantong/Agent-Reach",
@@ -1831,11 +3949,11 @@
    "starsToday": 1155,
    "defaultBranch": "main",
    "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
-   "durationMs": 762,
+   "durationMs": 83,
    "total": {
     "sources": 140,
-    "lines": 24133,
-    "tokens": 136693,
+    "lines": 24089,
+    "tokens": 136528,
     "clones": 63,
     "duplicatedLines": 704,
     "duplicatedTokens": 4156,
@@ -1862,10 +3980,10 @@
     {
      "format": "bash",
      "sources": 27,
-     "lines": 1584,
+     "lines": 1534,
      "clones": 1,
      "duplicatedLines": 18,
-     "percentage": 1.14
+     "percentage": 1.17
     },
     {
      "format": "text",
@@ -1886,7 +4004,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1918,154 +4036,253 @@
    ],
    "topClones": [
     {
+     "format": "python",
+     "lines": 13,
+     "tokens": 66,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_cookie_security.py",
+      "start": 33,
+      "end": 45
+     },
+     "others": [
+      {
+       "name": "tests/test_cookie_security.py",
+       "start": 59,
+       "end": 71
+      },
+      {
+       "name": "tests/test_cookie_security.py",
+       "start": 85,
+       "end": 97
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "        {\"name\": \"bili_jct\", \"value\": \"csrf\", \"domain\": \".bilibili.com\"},",
+       "    ]",
+       "",
+       "fake_rookiepy = SimpleNamespace(",
+       "    chrome=chrome,",
+       "    firefox=lambda domains: [],",
+       "    edge=lambda domains: [],",
+       "    brave=lambda domains: [],",
+       "    opera=lambda domains: [],",
+       ")"
+      ],
+      "total": 13
+     }
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 62,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_transcribe.py",
+      "start": 635,
+      "end": 643
+     },
+     "others": [
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 655,
+       "end": 663
+      },
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 761,
+       "end": 769
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "def test_passes_public_url_after_end_of_options_marker(self, monkeypatch, tmp_path):",
+       "    monkeypatch.setattr(tr, \"_require\", lambda binary: None)",
+       "    captured = {}",
+       "",
+       "    def fake_run(cmd, timeout=600):",
+       "        captured[\"cmd\"] = cmd",
+       "        (tmp_path / \"source.m4a\").write_bytes(b\"audio\")",
+       "",
+       "    monkeypatch.setattr(tr, \"_run\", fake_run)"
+      ],
+      "total": 9
+     }
+    },
+    {
      "format": "bash",
      "lines": 18,
      "tokens": 122,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
       "start": 212,
       "end": 229
      },
-     "secondFile": {
-      "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-      "start": 243,
-      "end": 259
+     "others": [
+      {
+       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+       "start": 243,
+       "end": 259
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "RESPONSE=$(curl --silent --show-error \\",
+       "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+       "    --max-time \"$GROQ_TIMEOUT\" \\",
+       "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+       "    -w \"\\n%{http_code}\" \\",
+       "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+       "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+       "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+       "    -F model=\"whisper-large-v3\" \\",
+       "    -F language=\"zh\" \\"
+      ],
+      "total": 18
      }
     },
     {
      "format": "python",
      "lines": 22,
      "tokens": 122,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/test_transcribe.py",
       "start": 180,
       "end": 201
      },
-     "secondFile": {
-      "name": "tests/test_transcribe.py",
-      "start": 212,
-      "end": 233
-     }
+     "others": [
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 212,
+       "end": 233
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 60,
+     "copies": 3,
+     "first": {
+      "name": "agent_reach/cli.py",
+      "start": 976,
+      "end": 985
+     },
+     "others": [
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1148,
+       "end": 1157
+      },
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1177,
+       "end": 1186
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 57,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_youtube_channel.py",
+      "start": 124,
+      "end": 131
+     },
+     "others": [
+      {
+       "name": "tests/test_youtube_channel.py",
+       "start": 138,
+       "end": 145
+      },
+      {
+       "name": "tests/test_youtube_channel.py",
+       "start": 154,
+       "end": 161
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 54,
+     "copies": 3,
+     "first": {
+      "name": "agent_reach/channels/reddit.py",
+      "start": 53,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "agent_reach/channels/twitter.py",
+       "start": 65,
+       "end": 73
+      },
+      {
+       "name": "agent_reach/channels/xiaohongshu.py",
+       "start": 190,
+       "end": 198
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 17,
      "tokens": 107,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/skill/references/career.md:markdown",
       "start": 122,
       "end": 138
      },
-     "secondFile": {
-      "name": "docs/install.md:markdown",
-      "start": 328,
-      "end": 343
-     }
+     "others": [
+      {
+       "name": "docs/install.md:markdown",
+       "start": 328,
+       "end": 343
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 18,
      "tokens": 105,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/test_private_file_writes.py",
       "start": 282,
       "end": 299
      },
-     "secondFile": {
-      "name": "tests/test_private_file_writes.py",
-      "start": 316,
-      "end": 333
-     }
+     "others": [
+      {
+       "name": "tests/test_private_file_writes.py",
+       "start": 316,
+       "end": 333
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 12,
      "tokens": 94,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/channels/v2ex.py",
       "start": 183,
       "end": 194
      },
-     "secondFile": {
-      "name": "agent_reach/channels/v2ex.py",
-      "start": 217,
-      "end": 228
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 11,
-     "tokens": 85,
-     "firstFile": {
-      "name": "docs/README_ja.md:markdown",
-      "start": 4,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "docs/README_ko.md:markdown",
-      "start": 4,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 23,
-     "tokens": 85,
-     "firstFile": {
-      "name": "tests/test_channels.py",
-      "start": 1029,
-      "end": 1051
-     },
-     "secondFile": {
-      "name": "tests/test_channels.py",
-      "start": 1064,
-      "end": 1087
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 11,
-     "tokens": 82,
-     "firstFile": {
-      "name": "docs/README_en.md:markdown",
-      "start": 13,
-      "end": 23
-     },
-     "secondFile": {
-      "name": "docs/README_ja.md:markdown",
-      "start": 4,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 11,
-     "tokens": 77,
-     "firstFile": {
-      "name": "tests/test_boss_channel.py",
-      "start": 107,
-      "end": 117
-     },
-     "secondFile": {
-      "name": "tests/test_boss_channel.py",
-      "start": 129,
-      "end": 139
-     }
-    },
-    {
-     "format": "python",
-     "lines": 14,
-     "tokens": 76,
-     "firstFile": {
-      "name": "tests/test_channels.py",
-      "start": 1223,
-      "end": 1236
-     },
-     "secondFile": {
-      "name": "tests/test_channels.py",
-      "start": 1242,
-      "end": 1255
-     }
+     "others": [
+      {
+       "name": "agent_reach/channels/v2ex.py",
+       "start": 217,
+       "end": 228
+      }
+     ]
     }
    ],
    "health": {
@@ -2234,7 +4451,225 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 45,
+    "lines": 8579,
+    "tokens": 38829,
+    "clones": 7,
+    "duplicatedLines": 76,
+    "duplicatedTokens": 494,
+    "percentage": 0.89,
+    "percentageTokens": 1.27,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 32,
+      "lines": 7225,
+      "clones": 6,
+      "duplicatedLines": 58,
+      "percentage": 0.8
+     },
+     {
+      "format": "bash",
+      "sources": 12,
+      "lines": 1180,
+      "clones": 1,
+      "duplicatedLines": 18,
+      "percentage": 1.53
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "bash",
+      "lines": 18,
+      "tokens": 122,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+       "start": 212,
+       "end": 229
+      },
+      "others": [
+       {
+        "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+        "start": 243,
+        "end": 259
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "RESPONSE=$(curl --silent --show-error \\",
+        "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+        "    --max-time \"$GROQ_TIMEOUT\" \\",
+        "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+        "    -w \"\\n%{http_code}\" \\",
+        "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+        "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+        "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+        "    -F model=\"whisper-large-v3\" \\",
+        "    -F language=\"zh\" \\"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "python",
+      "lines": 10,
+      "tokens": 60,
+      "copies": 3,
+      "first": {
+       "name": "agent_reach/cli.py",
+       "start": 976,
+       "end": 985
+      },
+      "others": [
+       {
+        "name": "agent_reach/cli.py",
+        "start": 1148,
+        "end": 1157
+       },
+       {
+        "name": "agent_reach/cli.py",
+        "start": 1177,
+        "end": 1186
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    (\"uv\", [\"tool\", \"install\", \"twitter-cli\"]),",
+        "]:",
+        "    tool_cmd = shutil.which(tool)",
+        "    if tool_cmd:",
+        "        try:",
+        "            result = subprocess.run(",
+        "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+        "                errors=\"replace\", timeout=120,",
+        "            )",
+        "            if result.returncode == 0 and shutil.which(\"twitter\"):"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "    (\"uv\", [\"tool\", \"install\", \"--from\", _RDT_GIT_SOURCE, \"rdt-cli\"]),",
+        "]:",
+        "    tool_cmd = shutil.which(tool)",
+        "    if tool_cmd:",
+        "        try:",
+        "            result = subprocess.run(",
+        "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+        "                errors=\"replace\", timeout=120,",
+        "            )",
+        "            if result.returncode == 0 and shutil.which(\"rdt\"):"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "python",
+      "lines": 9,
+      "tokens": 54,
+      "copies": 3,
+      "first": {
+       "name": "agent_reach/channels/reddit.py",
+       "start": 53,
+       "end": 61
+      },
+      "others": [
+       {
+        "name": "agent_reach/channels/twitter.py",
+        "start": 65,
+        "end": 73
+       },
+       {
+        "name": "agent_reach/channels/xiaohongshu.py",
+        "start": 190,
+        "end": 198
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    findings.append((backend, *result))",
+        "",
+        "for wanted in (\"ok\", \"warn\"):",
+        "    for backend, status, message in findings:",
+        "        if status == wanted:",
+        "            self.active_backend = backend if status == \"ok\" else None",
+        "            return status, message",
+        "",
+        "if findings:"
+       ],
+       "total": 9
+      },
+      "excerptSecond": {
+       "lines": [
+        "    findings.append((backend, *result))",
+        "",
+        "for wanted in (\"ok\", \"warn\"):",
+        "    for backend, status, message in findings:",
+        "        if status == wanted:",
+        "            self.active_backend = backend if status == \"ok\" else None",
+        "            return status, message",
+        "",
+        "if findings:  # 只剩 broken/timeout 候选"
+       ],
+       "total": 9
+      }
+     },
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 94,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/channels/v2ex.py",
+       "start": 183,
+       "end": 194
+      },
+      "others": [
+       {
+        "name": "agent_reach/channels/v2ex.py",
+        "start": 217,
+        "end": 228
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 50,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/config.py",
+       "start": 55,
+       "end": 62
+      },
+      "others": [
+       {
+        "name": "agent_reach/utils/paths.py",
+        "start": 92,
+        "end": 99
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:28:20.864Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "caddyserver/caddy",
@@ -2245,11 +4680,11 @@
    "starsToday": 515,
    "defaultBranch": "master",
    "headSha": "700d60327d77d56ba81455acb989a698f1819640",
-   "durationMs": 972,
+   "durationMs": 580,
    "total": {
     "sources": 398,
-    "lines": 125710,
-    "tokens": 666432,
+    "lines": 125666,
+    "tokens": 666267,
     "clones": 548,
     "duplicatedLines": 6978,
     "duplicatedTokens": 43784,
@@ -2308,7 +4743,7 @@
     {
      "format": "bash",
      "sources": 10,
-     "lines": 701,
+     "lines": 651,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2316,7 +4751,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2327,151 +4762,376 @@
      "format": "go",
      "lines": 127,
      "tokens": 479,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "listeners_test.go",
       "start": 236,
       "end": 362
      },
-     "secondFile": {
-      "name": "listeners_test.go",
-      "start": 362,
-      "end": 488
+     "others": [
+      {
+       "name": "listeners_test.go",
+       "start": 362,
+       "end": 488
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "func TestParseNetworkAddress(t *testing.T) {",
+       "    for i, tc := range []struct {",
+       "        input          string",
+       "        defaultNetwork string",
+       "        defaultPort    uint",
+       "        expectAddr     NetworkAddress",
+       "        expectErr      bool",
+       "    }{",
+       "        {",
+       "            input:      \"\","
+      ],
+      "total": 127
      }
     },
     {
      "format": "go",
      "lines": 67,
      "tokens": 469,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "modules/caddyhttp/metrics_test.go",
       "start": 36,
       "end": 102
      },
-     "secondFile": {
-      "name": "modules/caddyhttp/metrics_test.go",
-      "start": 210,
-      "end": 276
+     "others": [
+      {
+       "name": "modules/caddyhttp/metrics_test.go",
+       "start": 210,
+       "end": 276
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    httpMetrics: &httpMetrics{},",
+       "}",
+       "handlerErr := errors.New(\"oh noes\")",
+       "response := []byte(\"hello world!\")",
+       "h := HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {",
+       "    if actual := testutil.ToFloat64(metrics.httpMetrics.requestInFlight); actual != 1.0 {",
+       "        t.Errorf(\"Not same: expected %#v, but got %#v\", 1.0, actual)",
+       "    }",
+       "    if handlerErr == nil {",
+       "        w.Write(response)"
+      ],
+      "total": 67
      }
+    },
+    {
+     "format": "go",
+     "lines": 14,
+     "tokens": 115,
+     "copies": 5,
+     "first": {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 598,
+      "end": 611
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 617,
+       "end": 630
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 638,
+       "end": 651
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 659,
+       "end": 672
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 1153,
+       "end": 1166
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "func TestServer_serveHTTP_AllowlistKeepsExactMatch(t *testing.T) {",
+       "    got := &http.Header{}",
+       "    s := &Server{",
+       "        logger:                    zap.NewNop(),",
+       "        ExpectedUnderscoreHeaders: []string{\"user_id\"},",
+       "        primaryHandlerChain: HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {",
+       "            *got = r.Header.Clone()",
+       "            return nil",
+       "        }),",
+       "    }"
+      ],
+      "total": 14
+     }
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 90,
+     "copies": 6,
+     "first": {
+      "name": "modules/caddyhttp/encode/sse_test.go",
+      "start": 89,
+      "end": 97
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 126,
+       "end": 134
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 150,
+       "end": 158
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 179,
+       "end": 187
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 203,
+       "end": 211
+      },
+      {
+       "name": "modules/caddyhttp/encode/sse_test.go",
+       "start": 227,
+       "end": 235
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 14,
+     "tokens": 105,
+     "copies": 5,
+     "first": {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 747,
+      "end": 760
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 766,
+       "end": 779
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 785,
+       "end": 798
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 1054,
+       "end": 1067
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 1174,
+       "end": 1187
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 70,
+     "copies": 7,
+     "first": {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 160,
+      "end": 165
+     },
+     "others": [
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 172,
+       "end": 177
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 184,
+       "end": 189
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 190,
+       "end": 195
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 196,
+       "end": 201
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 217,
+       "end": 222
+      },
+      {
+       "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+       "start": 229,
+       "end": 234
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 6,
+     "tokens": 51,
+     "copies": 9,
+     "first": {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 90,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 101,
+       "end": 105
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 130,
+       "end": 135
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 149,
+       "end": 153
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 226,
+       "end": 230
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 245,
+       "end": 250
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 256,
+       "end": 258
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 269,
+       "end": 273
+      },
+      {
+       "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+       "start": 453,
+       "end": 455
+      }
+     ]
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 54,
+     "copies": 8,
+     "first": {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 345,
+      "end": 354
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 370,
+       "end": 379
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 390,
+       "end": 399
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 451,
+       "end": 460
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 467,
+       "end": 476
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 483,
+       "end": 492
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 527,
+       "end": 536
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 543,
+       "end": 552
+      }
+     ]
     },
     {
      "format": "go",
      "lines": 12,
      "tokens": 357,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "caddyconfig/caddyfile/parse_test.go",
       "start": 783,
       "end": 794
      },
-     "secondFile": {
-      "name": "caddyconfig/caddyfile/parse_test.go",
-      "start": 886,
-      "end": 898
-     }
+     "others": [
+      {
+       "name": "caddyconfig/caddyfile/parse_test.go",
+       "start": 886,
+       "end": 898
+      }
+     ]
     },
     {
      "format": "go",
-     "lines": 17,
-     "tokens": 289,
-     "firstFile": {
-      "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-      "start": 91,
-      "end": 107
+     "lines": 14,
+     "tokens": 115,
+     "copies": 4,
+     "first": {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 851,
+      "end": 864
      },
-     "secondFile": {
-      "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-      "start": 234,
-      "end": 249
-     }
-    },
-    {
-     "format": "go",
-     "lines": 16,
-     "tokens": 286,
-     "firstFile": {
-      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-      "start": 259,
-      "end": 274
-     },
-     "secondFile": {
-      "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-      "start": 91,
-      "end": 107
-     }
-    },
-    {
-     "format": "go",
-     "lines": 17,
-     "tokens": 270,
-     "firstFile": {
-      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-      "start": 322,
-      "end": 338
-     },
-     "secondFile": {
-      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-      "start": 395,
-      "end": 411
-     }
-    },
-    {
-     "format": "go",
-     "lines": 50,
-     "tokens": 269,
-     "firstFile": {
-      "name": "modules/caddyhttp/celmatcher.go",
-      "start": 757,
-      "end": 806
-     },
-     "secondFile": {
-      "name": "modules/caddyhttp/fileserver/matcher.go",
-      "start": 665,
-      "end": 714
-     }
-    },
-    {
-     "format": "go",
-     "lines": 44,
-     "tokens": 269,
-     "firstFile": {
-      "name": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
-      "start": 345,
-      "end": 388
-     },
-     "secondFile": {
-      "name": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
-      "start": 488,
-      "end": 531
-     }
-    },
-    {
-     "format": "go",
-     "lines": 42,
-     "tokens": 248,
-     "firstFile": {
-      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
-      "start": 1555,
-      "end": 1596
-     },
-     "secondFile": {
-      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
-      "start": 1655,
-      "end": 1696
-     }
-    },
-    {
-     "format": "go",
-     "lines": 48,
-     "tokens": 241,
-     "firstFile": {
-      "name": "caddytest/integration/reverseproxy_test.go",
-      "start": 457,
-      "end": 504
-     },
-     "secondFile": {
-      "name": "caddytest/integration/reverseproxy_test.go",
-      "start": 515,
-      "end": 562
-     }
+     "others": [
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 873,
+       "end": 886
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 900,
+       "end": 913
+      },
+      {
+       "name": "modules/caddyhttp/server_test.go",
+       "start": 923,
+       "end": 936
+      }
+     ]
     }
    ],
    "health": {
@@ -2593,7 +5253,344 @@
     "files": 1,
     "byCategory": [],
     "largest": []
-   }
+   },
+   "code": {
+    "sources": 222,
+    "lines": 73444,
+    "tokens": 333156,
+    "clones": 155,
+    "duplicatedLines": 1989,
+    "duplicatedTokens": 11606,
+    "percentage": 2.71,
+    "percentageTokens": 3.48,
+    "formats": [
+     {
+      "format": "go",
+      "sources": 212,
+      "lines": 72626,
+      "clones": 155,
+      "duplicatedLines": 1989,
+      "percentage": 2.74
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "go",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 8,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 345,
+       "end": 354
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 370,
+        "end": 379
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 390,
+        "end": 399
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 451,
+        "end": 460
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 467,
+        "end": 476
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 483,
+        "end": 492
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 527,
+        "end": 536
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 543,
+        "end": 552
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "case \"health_uri\":",
+        "    if !d.NextArg() {",
+        "        return d.ArgErr()",
+        "    }",
+        "    if h.HealthChecks == nil {",
+        "        h.HealthChecks = new(HealthChecks)",
+        "    }",
+        "    if h.HealthChecks.Active == nil {",
+        "        h.HealthChecks.Active = new(ActiveHealthChecks)",
+        "    }"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "go",
+      "lines": 50,
+      "tokens": 269,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/celmatcher.go",
+       "start": 757,
+       "end": 806
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/fileserver/matcher.go",
+        "start": 665,
+        "end": 714
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "        if call.FunctionName() == CELPlaceholderFuncName {",
+        "            return true",
+        "        }",
+        "    case ast.UnspecifiedExprKind, ast.ComprehensionKind, ast.IdentKind, ast.ListKind, ast.LiteralKind, ast.MapKind, ast.SelectKind, ast.StructKind:",
+        "        // appeasing the linter :)",
+        "    }",
+        "    return false",
+        "}",
+        "",
+        "// isCELConcatCall tests whether the expression is a concat function (+) with string, placeholder, or"
+       ],
+       "total": 50
+      }
+     },
+     {
+      "format": "go",
+      "lines": 42,
+      "tokens": 248,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 1555,
+       "end": 1596
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 1655,
+        "end": 1696
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    u.Name = d.Val()",
+        "",
+        "case \"refresh\":",
+        "    if !d.NextArg() {",
+        "        return d.ArgErr()",
+        "    }",
+        "    dur, err := caddy.ParseDuration(d.Val())",
+        "    if err != nil {",
+        "        return d.Errf(\"parsing refresh interval duration: %v\", err)",
+        "    }"
+       ],
+       "total": 42
+      }
+     },
+     {
+      "format": "go",
+      "lines": 11,
+      "tokens": 60,
+      "copies": 5,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 345,
+       "end": 355
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 357,
+        "end": 367
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 427,
+        "end": 437
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 439,
+        "end": 449
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 503,
+        "end": 513
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 39,
+      "tokens": 206,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/matchers.go",
+       "start": 1608,
+       "end": 1646
+      },
+      "others": [
+       {
+        "name": "modules/caddytls/matchers.go",
+        "start": 199,
+        "end": 237
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 45,
+      "tokens": 194,
+      "copies": 2,
+      "first": {
+       "name": "modules/logging/filters.go",
+       "start": 483,
+       "end": 527
+      },
+      "others": [
+       {
+        "name": "modules/logging/filters.go",
+        "start": 606,
+        "end": 650
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 38,
+      "tokens": 174,
+      "copies": 2,
+      "first": {
+       "name": "modules/logging/appendencoder.go",
+       "start": 146,
+       "end": 183
+      },
+      "others": [
+       {
+        "name": "modules/logging/filterencoder.go",
+        "start": 195,
+        "end": 232
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 35,
+      "tokens": 168,
+      "copies": 2,
+      "first": {
+       "name": "modules/caddyhttp/vars.go",
+       "start": 187,
+       "end": 221
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/vars.go",
+        "start": 333,
+        "end": 367
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 4,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 559,
+       "end": 568
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 575,
+        "end": 584
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 591,
+        "end": 600
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 629,
+        "end": 638
+       }
+      ]
+     },
+     {
+      "format": "go",
+      "lines": 8,
+      "tokens": 53,
+      "copies": 4,
+      "first": {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 1164,
+       "end": 1171
+      },
+      "others": [
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 1252,
+        "end": 1259
+       },
+       {
+        "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+        "start": 1576,
+        "end": 1583
+       },
+       {
+        "name": "modules/caddytls/capools.go",
+        "start": 559,
+        "end": 566
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 1,
+     "sample": [
+      "modules/caddyhttp/encode/testdata/caddy_asciinema_player.js"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T05:28:22.962Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "cloudflare/cloudflare-os",
@@ -2604,11 +5601,11 @@
    "starsToday": 101,
    "defaultBranch": "main",
    "headSha": "b304e8c25497b7de3e976daebce3cfc015bbd605",
-   "durationMs": 2566,
+   "durationMs": 2224,
    "total": {
     "sources": 1301,
-    "lines": 674322,
-    "tokens": 3466873,
+    "lines": 674278,
+    "tokens": 3466708,
     "clones": 1382,
     "duplicatedLines": 293312,
     "duplicatedTokens": 905502,
@@ -2675,7 +5672,7 @@
     {
      "format": "bash",
      "sources": 11,
-     "lines": 709,
+     "lines": 659,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2683,7 +5680,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2702,151 +5699,276 @@
      "format": "typescript",
      "lines": 15362,
      "tokens": 44685,
-     "firstFile": {
+     "copies": 11,
+     "first": {
       "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
       "start": 9,
       "end": 15370
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-confluence/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
+     "others": [
+      {
+       "name": "packages/gatekeeper-confluence/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      },
+      {
+       "name": "packages/gatekeeper-email/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      },
+      {
+       "name": "packages/gatekeeper-github/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      },
+      {
+       "name": "packages/gatekeeper-google/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      },
+      {
+       "name": "packages/gatekeeper-linear/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      },
+      {
+       "name": "packages/gatekeeper-notion/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      },
+      {
+       "name": "packages/gatekeeper-slack/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      },
+      {
+       "name": "packages/gatekeeper-spotify/worker-configuration.d.ts",
+       "start": 9,
+       "end": 15370
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "        durableNamespaces: \"UserAccount\" | \"CloudflareObservabilityGatekeeper\";",
+       "    }",
+       "    interface Env extends __BaseEnv_Env {}",
+       "}",
+       "interface Env extends __BaseEnv_Env {}",
+       "declare module \"*.txt\" {",
+       "    const value: string;",
+       "    export default value;",
+       "}",
+       "declare module \"*.svg\" {"
+      ],
+      "total": 15362
      }
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
+     "lines": 15332,
+     "tokens": 44642,
+     "copies": 5,
+     "first": {
       "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
-      "start": 9,
+      "start": 39,
       "end": 15370
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-email/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
+     "others": [
+      {
+       "name": "packages/gatekeeper-context/worker-configuration.d.ts",
+       "start": 20,
+       "end": 15351
+      },
+      {
+       "name": "packages/gatekeeper-mcp-portal/worker-configuration.d.ts",
+       "start": 20,
+       "end": 15351
+      },
+      {
+       "name": "packages/gatekeeper-mcp/worker-configuration.d.ts",
+       "start": 20,
+       "end": 15351
+      },
+      {
+       "name": "packages/mcp-shared/worker-configuration.d.ts",
+       "start": 20,
+       "end": 15351
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "declare var onmessage: never;",
+       "/**",
+       " * The **`DOMException`** interface represents an abnormal event (called an exception) that occurs as a result of calling a method or accessing a property of a…",
+       " *",
+       " * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMException)",
+       " */",
+       "declare class DOMException extends Error {",
+       "    constructor(message?: string, name?: string);",
+       "    /**",
+       "     * The **`message`** read-only property of the DOMException interface returns a string representing a message or description associated with the given erro…"
+      ],
+      "total": 15332
      }
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
+     "lines": 15353,
+     "tokens": 44653,
+     "copies": 2,
+     "first": {
       "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
-      "start": 9,
+      "start": 18,
       "end": 15370
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-github/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
+     "others": [
+      {
+       "name": "packages/gatekeeper-scheduler/worker-configuration.d.ts",
+       "start": 14,
+       "end": 15366
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "declare module \"*.svg\" {",
+       "    const value: string;",
+       "    export default value;",
+       "}",
+       "// Begin runtime types",
+       "/*! *****************************************************************************",
+       "Copyright (c) Cloudflare. All rights reserved.",
+       "Copyright (c) Microsoft Corporation. All rights reserved.",
+       "",
+       "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use"
+      ],
+      "total": 15353
      }
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
+     "lines": 15350,
+     "tokens": 44643,
+     "copies": 2,
+     "first": {
       "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
-      "start": 9,
+      "start": 21,
       "end": 15370
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-google/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
-     }
+     "others": [
+      {
+       "name": "packages/gatekeeper-homeassistant/worker-configuration.d.ts",
+       "start": 13,
+       "end": 15363
+      }
+     ]
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
+     "lines": 14816,
+     "tokens": 41703,
+     "copies": 2,
+     "first": {
       "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
-      "start": 9,
+      "start": 555,
       "end": 15370
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-linear/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
-     }
+     "others": [
+      {
+       "name": "packages/router/worker-configuration.d.ts",
+       "start": 547,
+       "end": 15362
+      }
+     ]
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
-      "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
+     "lines": 13809,
+     "tokens": 41196,
+     "copies": 2,
+     "first": {
+      "name": "packages/gatekeeper-homeassistant/worker-configuration.d.ts",
       "start": 9,
-      "end": 15370
+      "end": 13817
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-notion/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
-     }
+     "others": [
+      {
+       "name": "packages/workshop-backend/worker-configuration.d.ts",
+       "start": 14,
+       "end": 13822
+      }
+     ]
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
+     "lines": 1547,
+     "tokens": 3462,
+     "copies": 2,
+     "first": {
       "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
-      "start": 9,
+      "start": 13824,
       "end": 15370
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-slack/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
-     }
+     "others": [
+      {
+       "name": "packages/workshop-backend/worker-configuration.d.ts",
+       "start": 13826,
+       "end": 15372
+      }
+     ]
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
-      "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
+     "lines": 430,
+     "tokens": 1885,
+     "copies": 2,
+     "first": {
+      "name": "packages/gatekeeper-homeassistant/worker-configuration.d.ts",
       "start": 9,
-      "end": 15370
+      "end": 438
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-spotify/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
-     }
+     "others": [
+      {
+       "name": "packages/router/worker-configuration.d.ts",
+       "start": 10,
+       "end": 439
+      }
+     ]
     },
     {
      "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
+     "lines": 109,
+     "tokens": 1047,
+     "copies": 2,
+     "first": {
       "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
+      "start": 446,
+      "end": 554
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-supabase/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
-     }
+     "others": [
+      {
+       "name": "packages/router/worker-configuration.d.ts",
+       "start": 439,
+       "end": 547
+      }
+     ]
     },
     {
-     "format": "typescript",
-     "lines": 15362,
-     "tokens": 44685,
-     "firstFile": {
-      "name": "packages/gatekeeper-cloudflare/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
+     "format": "css",
+     "lines": 74,
+     "tokens": 1042,
+     "copies": 2,
+     "first": {
+      "name": "packages/gatekeeper-context/app/styles.css",
+      "start": 145,
+      "end": 218
      },
-     "secondFile": {
-      "name": "packages/gatekeeper-zoominfo/worker-configuration.d.ts",
-      "start": 9,
-      "end": 15370
-     }
+     "others": [
+      {
+       "name": "packages/workshop-frontend/src/styles.css",
+       "start": 146,
+       "end": 219
+      }
+     ]
     }
    ],
    "health": {
@@ -3057,7 +6179,358 @@
       "lines": 188
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 647,
+    "lines": 216720,
+    "tokens": 1209039,
+    "clones": 351,
+    "duplicatedLines": 4435,
+    "duplicatedTokens": 27880,
+    "percentage": 2.05,
+    "percentageTokens": 2.31,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 452,
+      "lines": 166670,
+      "clones": 306,
+      "duplicatedLines": 3907,
+      "percentage": 2.34
+     },
+     {
+      "format": "tsx",
+      "sources": 185,
+      "lines": 49232,
+      "clones": 45,
+      "duplicatedLines": 528,
+      "percentage": 1.07
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 48,
+      "tokens": 368,
+      "copies": 2,
+      "first": {
+       "name": "packages/gatekeeper-linear/src/linear.ts",
+       "start": 529,
+       "end": 576
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-spotify/src/spotify.ts",
+        "start": 511,
+        "end": 558
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  if (!this.ctx.storage.kv.get<LinearOAuthGrant>(\"grant\")) {",
+        "    await this.ctx.storage.setAlarm(Date.now() + CONNECT_TIMEOUT_MS);",
+        "  }",
+        "  this.ctx.storage.kv.put(\"callback\", callback);",
+        "  this.ctx.storage.kv.put<StoredNonce>(\"nonce\", {",
+        "    value: initiationNonce,",
+        "    expiresAt: Date.now() + INITIATION_NONCE_LIFETIME_MS,",
+        "    stage: \"initiation\",",
+        "  });",
+        "}"
+       ],
+       "total": 48
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 48,
+      "tokens": 362,
+      "copies": 2,
+      "first": {
+       "name": "packages/gatekeeper-confluence/src/confluence.ts",
+       "start": 284,
+       "end": 331
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-notion/src/notion.ts",
+        "start": 327,
+        "end": 381
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  if (!this.ctx.storage.kv.get<StoredGrant>(\"grant\")) {",
+        "    this.ctx.storage.setAlarm(Date.now() + CONNECT_TIMEOUT_MS);",
+        "  }",
+        "  this.ctx.storage.kv.put(\"callback\", callback);",
+        "  this.ctx.storage.kv.put<StoredNonce>(\"nonce\", {",
+        "    value: initiationNonce, expiresAt: Date.now() + INITIATION_NONCE_LIFETIME_MS, stage: \"initiation\",",
+        "  });",
+        "}",
+        "",
+        "async prepareReconnect(initiationNonce: string) {"
+       ],
+       "total": 48
+      },
+      "excerptSecond": {
+       "lines": [
+        "  if (!this.ctx.storage.kv.get<string>(\"accessToken\")) {",
+        "    this.ctx.storage.setAlarm(Date.now() + CONNECT_TIMEOUT_MS);",
+        "  }",
+        "  this.ctx.storage.kv.put(\"callback\", callback);",
+        "  this.ctx.storage.kv.put<StoredNonce>(\"nonce\", {",
+        "    value: initiationNonce,",
+        "    expiresAt: Date.now() + INITIATION_NONCE_LIFETIME_MS,",
+        "    stage: \"initiation\",",
+        "  });",
+        "}"
+       ],
+       "total": 55
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 27,
+      "tokens": 150,
+      "copies": 3,
+      "first": {
+       "name": "packages/gatekeeper-confluence/src/confluence.ts",
+       "start": 257,
+       "end": 283
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-spotify/src/spotify.ts",
+        "start": 483,
+        "end": 510
+       },
+       {
+        "name": "packages/gatekeeper-zoominfo/src/zoominfo.ts",
+        "start": 354,
+        "end": 382
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      \"knowledge bases, or keep pages up to date.\",",
+        "  };",
+        "}",
+        "",
+        "async connectAccount(",
+        "  callback: Fetcher<GatekeeperConnectCallback>, _options?: GatekeeperConnectOptions,",
+        "): Promise<{ url: string }> {",
+        "  const userObjectId = this.ctx.exports.UserAccount.newUniqueId();",
+        "  const initiationNonce = generateNonce();",
+        "  await this.ctx.exports.UserAccount.get(userObjectId).setCallback(callback, initiationNonce);"
+       ],
+       "total": 27
+      },
+      "excerptSecond": {
+       "lines": [
+        "      \"or scope a Gadget to a single playlist.\",",
+        "  };",
+        "}",
+        "",
+        "async connectAccount(",
+        "  callback: Fetcher<GatekeeperConnectCallback>,",
+        "  _options?: GatekeeperConnectOptions,",
+        "): Promise<{ url: string }> {",
+        "  const userObjectId = this.ctx.exports.UserAccount.newUniqueId();",
+        "  const initiationNonce = generateNonce();"
+       ],
+       "total": 28
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 16,
+      "tokens": 132,
+      "copies": 3,
+      "first": {
+       "name": "packages/gatekeeper-email/src/email.ts",
+       "start": 150,
+       "end": 165
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-google/src/google.ts",
+        "start": 212,
+        "end": 225
+       },
+       {
+        "name": "packages/gatekeeper-slack/src/slack.ts",
+        "start": 215,
+        "end": 229
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 52,
+      "copies": 6,
+      "first": {
+       "name": "packages/gatekeeper-cloudflare/src/cloudflare.ts",
+       "start": 281,
+       "end": 290
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-confluence/src/confluence.ts",
+        "start": 315,
+        "end": 324
+       },
+       {
+        "name": "packages/gatekeeper-github/src/github.ts",
+        "start": 1475,
+        "end": 1484
+       },
+       {
+        "name": "packages/gatekeeper-linear/src/linear.ts",
+        "start": 563,
+        "end": 572
+       },
+       {
+        "name": "packages/gatekeeper-supabase/src/supabase.ts",
+        "start": 439,
+        "end": 448
+       },
+       {
+        "name": "packages/gatekeeper-zoominfo/src/zoominfo.ts",
+        "start": 426,
+        "end": 435
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 24,
+      "tokens": 252,
+      "copies": 2,
+      "first": {
+       "name": "packages/gatekeeper-google/src/gmail.ts",
+       "start": 1387,
+       "end": 1410
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-google/src/gmail.ts",
+        "start": 1418,
+        "end": 1441
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 31,
+      "tokens": 244,
+      "copies": 2,
+      "first": {
+       "name": "packages/gatekeeper-spotify/src/spotify.ts",
+       "start": 394,
+       "end": 424
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-zoominfo/src/zoominfo.ts",
+        "start": 261,
+        "end": 291
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 18,
+      "tokens": 116,
+      "copies": 3,
+      "first": {
+       "name": "packages/gatekeeper-cloudflare/src/cloudflare.ts",
+       "start": 163,
+       "end": 180
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-linear/src/linear.ts",
+        "start": 462,
+        "end": 482
+       },
+       {
+        "name": "packages/gatekeeper-spotify/src/spotify.ts",
+        "start": 455,
+        "end": 475
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 36,
+      "tokens": 219,
+      "copies": 2,
+      "first": {
+       "name": "packages/gatekeeper-spotify/src/spotify.ts",
+       "start": 497,
+       "end": 532
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-zoominfo/src/zoominfo.ts",
+        "start": 368,
+        "end": 409
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 23,
+      "tokens": 109,
+      "copies": 3,
+      "first": {
+       "name": "packages/gatekeeper-spotify/src/spotify.ts",
+       "start": 453,
+       "end": 475
+      },
+      "others": [
+       {
+        "name": "packages/gatekeeper-supabase/src/supabase.ts",
+        "start": 343,
+        "end": 365
+       },
+       {
+        "name": "packages/gatekeeper-zoominfo/src/zoominfo.ts",
+        "start": 323,
+        "end": 345
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 2,
+     "minified": 0,
+     "sample": [
+      "packages/workshop-backend/src/env.d.ts",
+      "packages/workshop-frontend/src/routeTree.gen.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T05:28:28.252Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "M-Abozaid/esp32-c3-adblock",
@@ -3068,11 +6541,11 @@
    "starsToday": 196,
    "defaultBranch": "main",
    "headSha": "19473839c27d10f666406a3ae62df97b7b155273",
-   "durationMs": 701,
+   "durationMs": 21,
    "total": {
     "sources": 24,
-    "lines": 2297,
-    "tokens": 19063,
+    "lines": 2253,
+    "tokens": 18898,
     "clones": 0,
     "duplicatedLines": 0,
     "duplicatedTokens": 0,
@@ -3083,7 +6556,7 @@
     {
      "format": "bash",
      "sources": 11,
-     "lines": 731,
+     "lines": 681,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -3107,7 +6580,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -3288,7 +6761,67 @@
     "files": 1,
     "byCategory": [],
     "largest": []
-   }
+   },
+   "code": {
+    "sources": 13,
+    "lines": 1650,
+    "tokens": 13372,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "duplicatedTokens": 0,
+    "percentage": 0,
+    "percentageTokens": 0,
+    "formats": [
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "cpp",
+      "sources": 1,
+      "lines": 624,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "python",
+      "sources": 1,
+      "lines": 118,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "c-header",
+      "sources": 1,
+      "lines": 90,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T05:28:29.615Z",
+   "jscpdVersion": "5.4.0"
   }
  ]
 }

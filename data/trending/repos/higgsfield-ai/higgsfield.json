@@ -9,10 +9,12 @@
    "starsToday": 196,
    "headSha": "d12a36e66024a93d33ec61826a77d5a346c16869",
    "sources": 55,
-   "lines": 5460,
+   "lines": 4854,
    "clones": 16,
-   "duplicatedLines": 327,
-   "percentage": 5.99,
+   "duplicatedLines": 343,
+   "percentage": 7.07,
+   "codePercentage": 8.39,
+   "codeSources": 39,
    "healthScore": 47.4,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 465,
    "headSha": "d12a36e66024a93d33ec61826a77d5a346c16869",
    "sources": 55,
-   "lines": 5460,
+   "lines": 4854,
    "clones": 16,
-   "duplicatedLines": 327,
-   "percentage": 5.99,
+   "duplicatedLines": 343,
+   "percentage": 7.07,
+   "codePercentage": 8.39,
+   "codeSources": 39,
    "healthScore": 47.4,
    "healthGrade": "D"
   }
@@ -42,33 +46,25 @@
   "starsToday": 465,
   "defaultBranch": "main",
   "headSha": "d12a36e66024a93d33ec61826a77d5a346c16869",
-  "durationMs": 618,
+  "durationMs": 28,
   "total": {
    "sources": 55,
-   "lines": 5460,
-   "tokens": 24541,
+   "lines": 4854,
+   "tokens": 24376,
    "clones": 16,
-   "duplicatedLines": 327,
+   "duplicatedLines": 343,
    "duplicatedTokens": 1468,
-   "percentage": 5.99,
-   "percentageTokens": 5.98
+   "percentage": 7.07,
+   "percentageTokens": 6.02
   },
   "formats": [
    {
     "format": "python",
     "sources": 34,
-    "lines": 3495,
+    "lines": 3214,
     "clones": 16,
-    "duplicatedLines": 327,
-    "percentage": 9.36
-   },
-   {
-    "format": "bash",
-    "sources": 10,
-    "lines": 869,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
+    "duplicatedLines": 343,
+    "percentage": 10.67
    },
    {
     "format": "markdown",
@@ -79,17 +75,17 @@
     "percentage": 0
    },
    {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
+    "format": "bash",
+    "sources": 10,
+    "lines": 655,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "text",
+    "format": "perl",
     "sources": 1,
-    "lines": 138,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -109,6 +105,14 @@
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 21,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
    }
   ],
   "topClones": [
@@ -116,151 +120,256 @@
     "format": "python",
     "lines": 45,
     "tokens": 271,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/llama/llama.py",
      "start": 182,
      "end": 226
     },
-    "secondFile": {
-     "name": "higgsfield/mistral/mistral.py",
-     "start": 165,
-     "end": 209
-    }
+    "others": [
+     {
+      "name": "higgsfield/mistral/mistral.py",
+      "start": 165,
+      "end": 209
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "def __call__(self, batch):",
+      "    local_rank = int(os.environ[\"LOCAL_RANK\"])",
+      "",
+      "    for key in batch.keys():",
+      "        batch[key] = batch[key].to(local_rank)",
+      "",
+      "    if self.precision == \"fp16\":",
+      "        with torch.cuda.amp.autocast():",
+      "            loss = super().__call__(**batch).loss",
+      "    else:"
+     ],
+     "total": 45
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 49,
     "tokens": 177,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/llama/llama.py",
      "start": 121,
      "end": 169
     },
-    "secondFile": {
-     "name": "higgsfield/mistral/mistral.py",
-     "start": 103,
-     "end": 151
-    }
+    "others": [
+     {
+      "name": "higgsfield/mistral/mistral.py",
+      "start": 103,
+      "end": 151
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "        LlamaDecoderLayer,",
+      "    }",
+      ")",
+      "",
+      "if zero_stage == 0:",
+      "    sharding_strategy = ShardingStrategy.NO_SHARD",
+      "",
+      "elif zero_stage == 1:",
+      "    raise NotImplementedError(\"stage 1 is not supported. Only 0 2 3\")",
+      ""
+     ],
+     "total": 49
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 38,
     "tokens": 119,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/llama/llama.py",
      "start": 83,
      "end": 120
     },
-    "secondFile": {
-     "name": "higgsfield/mistral/mistral.py",
-     "start": 64,
-     "end": 102
-    }
+    "others": [
+     {
+      "name": "higgsfield/mistral/mistral.py",
+      "start": 64,
+      "end": 102
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "            model = LlamaForCausalLM(llama_config)",
+      "",
+      "if fast_attn:",
+      "    #raise NotImplementedError(\"Fast attention is not supported yet\")",
+      "    model = BetterTransformer.transform(model)",
+      "",
+      "fpSixteen = MixedPrecision(",
+      "    param_dtype=torch.float16,",
+      "    reduce_dtype=torch.float16,",
+      "    buffer_dtype=torch.float16,"
+     ],
+     "total": 38
+    },
+    "excerptSecond": {
+     "lines": [
+      "    model.resize_token_embeddings(num_embeddings)",
+      "",
+      "",
+      "if fast_attn:",
+      "    #raise NotImplementedError(\"Fast attention is not supported yet\")",
+      "    model = BetterTransformer.transform(model)",
+      "",
+      "fpSixteen = MixedPrecision(",
+      "    param_dtype=torch.float16,",
+      "    reduce_dtype=torch.float16,"
+     ],
+     "total": 39
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 33,
     "tokens": 112,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/static/project/src/dataset.py",
      "start": 3,
      "end": 35
     },
-    "secondFile": {
-     "name": "tutorial.md:python",
-     "start": 35,
-     "end": 67
-    }
+    "others": [
+     {
+      "name": "tutorial.md:python",
+      "start": 35,
+      "end": 67
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 10,
+    "tokens": 52,
+    "first": {
+     "name": "higgsfield/dataset/dataset.py",
+     "start": 24,
+     "end": 33
+    },
+    "others": [
+     {
+      "name": "higgsfield/dataset/dataset.py",
+      "start": 84,
+      "end": 93
+     },
+     {
+      "name": "higgsfield/dataset/dataset.py",
+      "start": 131,
+      "end": 140
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 18,
     "tokens": 90,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/static/project/src/alpaca_bf16.py",
      "start": 12,
      "end": 29
     },
-    "secondFile": {
-     "name": "higgsfield/static/project/src/alpaca_fp16.py",
-     "start": 12,
-     "end": 29
-    }
+    "others": [
+     {
+      "name": "higgsfield/static/project/src/alpaca_fp16.py",
+      "start": 12,
+      "end": 29
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 26,
     "tokens": 82,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/llama/llama.py",
      "start": 1,
      "end": 26
     },
-    "secondFile": {
-     "name": "higgsfield/mistral/mistral.py",
-     "start": 1,
-     "end": 26
-    }
+    "others": [
+     {
+      "name": "higgsfield/mistral/mistral.py",
+      "start": 1,
+      "end": 26
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 11,
     "tokens": 79,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/dataset/dataset.py",
      "start": 106,
      "end": 116
     },
-    "secondFile": {
-     "name": "higgsfield/dataset/dataset.py",
-     "start": 145,
-     "end": 156
-    }
+    "others": [
+     {
+      "name": "higgsfield/dataset/dataset.py",
+      "start": 145,
+      "end": 156
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 21,
     "tokens": 75,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/loaders/llama_loader.py",
      "start": 15,
      "end": 35
     },
-    "secondFile": {
-     "name": "higgsfield/mistral/mistral_loader.py",
-     "start": 44,
-     "end": 64
-    }
+    "others": [
+     {
+      "name": "higgsfield/mistral/mistral_loader.py",
+      "start": 44,
+      "end": 64
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 20,
     "tokens": 75,
-    "firstFile": {
+    "first": {
      "name": "higgsfield/static/project/src/alpaca_bf16.py",
      "start": 49,
      "end": 68
     },
-    "secondFile": {
-     "name": "higgsfield/static/project/src/alpaca_fp16.py",
-     "start": 52,
-     "end": 71
-    }
-   },
-   {
-    "format": "python",
-    "lines": 9,
-    "tokens": 63,
-    "firstFile": {
-     "name": "higgsfield/llama/llama.py",
-     "start": 199,
-     "end": 207
-    },
-    "secondFile": {
-     "name": "higgsfield/llama/llama.py",
-     "start": 214,
-     "end": 222
-    }
+    "others": [
+     {
+      "name": "higgsfield/static/project/src/alpaca_fp16.py",
+      "start": 52,
+      "end": 71
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -466,6 +575,308 @@
      "lines": 21
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 39,
+   "lines": 3694,
+   "tokens": 16445,
+   "clones": 15,
+   "duplicatedLines": 310,
+   "duplicatedTokens": 1356,
+   "percentage": 8.39,
+   "percentageTokens": 8.25,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 29,
+     "lines": 2876,
+     "clones": 15,
+     "duplicatedLines": 310,
+     "percentage": 10.78
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 45,
+     "tokens": 271,
+     "first": {
+      "name": "higgsfield/llama/llama.py",
+      "start": 182,
+      "end": 226
+     },
+     "others": [
+      {
+       "name": "higgsfield/mistral/mistral.py",
+       "start": 165,
+       "end": 209
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def __call__(self, batch):",
+       "    local_rank = int(os.environ[\"LOCAL_RANK\"])",
+       "",
+       "    for key in batch.keys():",
+       "        batch[key] = batch[key].to(local_rank)",
+       "",
+       "    if self.precision == \"fp16\":",
+       "        with torch.cuda.amp.autocast():",
+       "            loss = super().__call__(**batch).loss",
+       "    else:"
+      ],
+      "total": 45
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 49,
+     "tokens": 177,
+     "first": {
+      "name": "higgsfield/llama/llama.py",
+      "start": 121,
+      "end": 169
+     },
+     "others": [
+      {
+       "name": "higgsfield/mistral/mistral.py",
+       "start": 103,
+       "end": 151
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        LlamaDecoderLayer,",
+       "    }",
+       ")",
+       "",
+       "if zero_stage == 0:",
+       "    sharding_strategy = ShardingStrategy.NO_SHARD",
+       "",
+       "elif zero_stage == 1:",
+       "    raise NotImplementedError(\"stage 1 is not supported. Only 0 2 3\")",
+       ""
+      ],
+      "total": 49
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 38,
+     "tokens": 119,
+     "first": {
+      "name": "higgsfield/llama/llama.py",
+      "start": 83,
+      "end": 120
+     },
+     "others": [
+      {
+       "name": "higgsfield/mistral/mistral.py",
+       "start": 64,
+       "end": 102
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "            model = LlamaForCausalLM(llama_config)",
+       "",
+       "if fast_attn:",
+       "    #raise NotImplementedError(\"Fast attention is not supported yet\")",
+       "    model = BetterTransformer.transform(model)",
+       "",
+       "fpSixteen = MixedPrecision(",
+       "    param_dtype=torch.float16,",
+       "    reduce_dtype=torch.float16,",
+       "    buffer_dtype=torch.float16,"
+      ],
+      "total": 38
+     },
+     "excerptSecond": {
+      "lines": [
+       "    model.resize_token_embeddings(num_embeddings)",
+       "",
+       "",
+       "if fast_attn:",
+       "    #raise NotImplementedError(\"Fast attention is not supported yet\")",
+       "    model = BetterTransformer.transform(model)",
+       "",
+       "fpSixteen = MixedPrecision(",
+       "    param_dtype=torch.float16,",
+       "    reduce_dtype=torch.float16,"
+      ],
+      "total": 39
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 52,
+     "first": {
+      "name": "higgsfield/dataset/dataset.py",
+      "start": 24,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "higgsfield/dataset/dataset.py",
+       "start": 84,
+       "end": 93
+      },
+      {
+       "name": "higgsfield/dataset/dataset.py",
+       "start": 131,
+       "end": 140
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 90,
+     "first": {
+      "name": "higgsfield/static/project/src/alpaca_bf16.py",
+      "start": 12,
+      "end": 29
+     },
+     "others": [
+      {
+       "name": "higgsfield/static/project/src/alpaca_fp16.py",
+       "start": 12,
+       "end": 29
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 82,
+     "first": {
+      "name": "higgsfield/llama/llama.py",
+      "start": 1,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "higgsfield/mistral/mistral.py",
+       "start": 1,
+       "end": 26
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 79,
+     "first": {
+      "name": "higgsfield/dataset/dataset.py",
+      "start": 106,
+      "end": 116
+     },
+     "others": [
+      {
+       "name": "higgsfield/dataset/dataset.py",
+       "start": 145,
+       "end": 156
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 21,
+     "tokens": 75,
+     "first": {
+      "name": "higgsfield/loaders/llama_loader.py",
+      "start": 15,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "higgsfield/mistral/mistral_loader.py",
+       "start": 44,
+       "end": 64
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 20,
+     "tokens": 75,
+     "first": {
+      "name": "higgsfield/static/project/src/alpaca_bf16.py",
+      "start": 49,
+      "end": 68
+     },
+     "others": [
+      {
+       "name": "higgsfield/static/project/src/alpaca_fp16.py",
+       "start": 52,
+       "end": 71
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 63,
+     "first": {
+      "name": "higgsfield/llama/llama.py",
+      "start": 199,
+      "end": 207
+     },
+     "others": [
+      {
+       "name": "higgsfield/llama/llama.py",
+       "start": 214,
+       "end": 222
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "higgsfield/internal/experiment/builder.py"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:17:22.596Z",
+  "jscpdVersion": "5.4.0"
  }
 }

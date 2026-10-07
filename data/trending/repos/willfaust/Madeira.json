@@ -9,10 +9,12 @@
    "starsToday": 83,
    "headSha": "8c050d03f4d89096e1e2e2c8bb44479fffd86619",
    "sources": 146,
-   "lines": 51276,
+   "lines": 51232,
    "clones": 262,
    "duplicatedLines": 5956,
-   "percentage": 11.62,
+   "percentage": 11.63,
+   "codePercentage": 4.77,
+   "codeSources": 161,
    "healthScore": 43.9,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 81,
    "headSha": "d5a8e0a60804bddf48a9efa751adec52ba9a4bda",
    "sources": 182,
-   "lines": 65776,
+   "lines": 65732,
    "clones": 262,
    "duplicatedLines": 5975,
-   "percentage": 9.08,
+   "percentage": 9.09,
+   "codePercentage": 4.28,
+   "codeSources": 239,
    "healthScore": 46,
    "healthGrade": "D"
   }
@@ -42,16 +46,16 @@
   "starsToday": 81,
   "defaultBranch": "main",
   "headSha": "d5a8e0a60804bddf48a9efa751adec52ba9a4bda",
-  "durationMs": 1346,
+  "durationMs": 659,
   "total": {
    "sources": 182,
-   "lines": 65776,
-   "tokens": 1192989,
+   "lines": 65732,
+   "tokens": 1192824,
    "clones": 262,
    "duplicatedLines": 5975,
    "duplicatedTokens": 181270,
-   "percentage": 9.08,
-   "percentageTokens": 15.19
+   "percentage": 9.09,
+   "percentageTokens": 15.2
   },
   "formats": [
    {
@@ -113,10 +117,10 @@
    {
     "format": "bash",
     "sources": 21,
-    "lines": 1167,
+    "lines": 1117,
     "clones": 1,
     "duplicatedLines": 9,
-    "percentage": 0.77
+    "percentage": 0.81
    },
    {
     "format": "cpp",
@@ -138,153 +142,338 @@
   "topClones": [
    {
     "format": "c-header",
+    "lines": 21,
+    "tokens": 953,
+    "first": {
+     "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+     "start": 89,
+     "end": 109
+    },
+    "others": [
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 289,
+      "end": 309
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 371,
+      "end": 391
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 768,
+      "end": 788
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 848,
+      "end": 869
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 1224,
+      "end": 1244
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 1328,
+      "end": 1348
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 1790,
+      "end": 1810
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 1894,
+      "end": 1914
+     }
+    ],
+    "copies": 19,
+    "excerpt": {
+     "lines": [
+      "0x46,0x57,0x26,0x37,0x37,0x25,0x50,0x03,0x00,0x00,0x00,0x00,0x79,0x18,0x00,0x00,",
+      "0x4c,0x00,0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,0x1c,0x66,0x14,0x01,0x3d,0x88,",
+      "0x43,0x38,0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,0x07,0x73,0x98,0x71,0x0c,0xe6,",
+      "0x00,0x0f,0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,0x42,0x1e,0xc2,0xc1,0x1d,0xce,",
+      "0xa1,0x1c,0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,0x83,0x1b,0xcc,0x03,0x3d,0xc8,",
+      "0x43,0x3d,0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,0x07,0x7b,0x08,0x07,0x79,0x48,",
+      "0x87,0x70,0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,0x70,0x20,0x87,0x19,0xcc,0x11,",
+      "0x0e,0xec,0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,0xe3,0xf0,0x0e,0xf0,0x50,0x0e,",
+      "0x33,0x10,0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,0xc2,0x61,0x1e,0x66,0x30,0x89,",
+      "0x3b,0xbc,0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,0xbc,0x83,0x3c,0x84,0x03,0x3b,"
+     ],
+     "total": 21
+    },
+    "excerptSecond": {
+     "lines": [
+      "0x21,0xc3,0x73,0x19,0x7b,0xab,0x73,0xa3,0x2b,0x93,0x9b,0x9b,0x12,0xdc,0x01,0x00,",
+      "0x79,0x18,0x00,0x00,0x4c,0x00,0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,0x1c,0x66,",
+      "0x14,0x01,0x3d,0x88,0x43,0x38,0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,0x07,0x73,",
+      "0x98,0x71,0x0c,0xe6,0x00,0x0f,0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,0x42,0x1e,",
+      "0xc2,0xc1,0x1d,0xce,0xa1,0x1c,0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,0x83,0x1b,",
+      "0xcc,0x03,0x3d,0xc8,0x43,0x3d,0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,0x07,0x7b,",
+      "0x08,0x07,0x79,0x48,0x87,0x70,0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,0x70,0x20,",
+      "0x87,0x19,0xcc,0x11,0x0e,0xec,0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,0xe3,0xf0,",
+      "0x0e,0xf0,0x50,0x0e,0x33,0x10,0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,0xc2,0x61,",
+      "0x1e,0x66,0x30,0x89,0x3b,0xbc,0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,0xbc,0x83,"
+     ],
+     "total": 21
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "c-header",
     "lines": 121,
     "tokens": 5768,
-    "firstFile": {
+    "first": {
      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
      "start": 73,
      "end": 193
     },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 433,
-     "end": 553
-    }
+    "others": [
+     {
+      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+      "start": 433,
+      "end": 553
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "0x05,0x28,0x50,0x10,0x05,0x32,0x02,0x50,0x04,0xc5,0x50,0x06,0xa5,0x50,0x18,0x00,",
+      "0x00,0x00,0xb1,0x18,0x00,0x00,0xa9,0x00,0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,",
+      "0x1c,0x66,0x14,0x01,0x3d,0x88,0x43,0x38,0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,",
+      "0x07,0x73,0x98,0x71,0x0c,0xe6,0x00,0x0f,0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,",
+      "0x42,0x1e,0xc2,0xc1,0x1d,0xce,0xa1,0x1c,0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,",
+      "0x83,0x1b,0xcc,0x03,0x3d,0xc8,0x43,0x3d,0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,",
+      "0x07,0x7b,0x08,0x07,0x79,0x48,0x87,0x70,0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,",
+      "0x70,0x20,0x87,0x19,0xcc,0x11,0x0e,0xec,0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,",
+      "0xe3,0xf0,0x0e,0xf0,0x50,0x0e,0x33,0x10,0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,",
+      "0xc2,0x61,0x1e,0x66,0x30,0x89,0x3b,0xbc,0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,"
+     ],
+     "total": 121
+    },
+    "excerptSecond": {
+     "lines": [
+      "0x04,0x65,0x50,0x0a,0xc5,0x50,0x18,0x00,0x00,0x00,0xb1,0x18,0x00,0x00,0xa9,0x00,",
+      "0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,0x1c,0x66,0x14,0x01,0x3d,0x88,0x43,0x38,",
+      "0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,0x07,0x73,0x98,0x71,0x0c,0xe6,0x00,0x0f,",
+      "0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,0x42,0x1e,0xc2,0xc1,0x1d,0xce,0xa1,0x1c,",
+      "0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,0x83,0x1b,0xcc,0x03,0x3d,0xc8,0x43,0x3d,",
+      "0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,0x07,0x7b,0x08,0x07,0x79,0x48,0x87,0x70,",
+      "0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,0x70,0x20,0x87,0x19,0xcc,0x11,0x0e,0xec,",
+      "0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,0xe3,0xf0,0x0e,0xf0,0x50,0x0e,0x33,0x10,",
+      "0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,0xc2,0x61,0x1e,0x66,0x30,0x89,0x3b,0xbc,",
+      "0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,0xbc,0x83,0x3c,0x84,0x03,0x3b,0xcc,0xf0,"
+     ],
+     "total": 121
+    },
+    "kind": "code"
    },
    {
     "format": "txt",
     "lines": 502,
     "tokens": 4778,
-    "firstFile": {
+    "first": {
      "name": "LICENSES/LGPL-2.1.txt",
      "start": 1,
      "end": 502
     },
-    "secondFile": {
-     "name": "app/Madeira/legal/LICENSES/LGPL-2.1.txt",
-     "start": 1,
-     "end": 502
-    }
+    "others": [
+     {
+      "name": "app/Madeira/legal/LICENSES/LGPL-2.1.txt",
+      "start": 1,
+      "end": 502
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "          GNU LESSER GENERAL PUBLIC LICENSE",
+      "               Version 2.1, February 1999",
+      "",
+      " Copyright (C) 1991, 1999 Free Software Foundation, Inc.",
+      " 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
+      " Everyone is permitted to copy and distribute verbatim copies",
+      " of this license document, but changing it is not allowed.",
+      "",
+      "[This is the first released version of the Lesser GPL.  It also counts",
+      " as the successor of the GNU Library Public License, version 2, hence"
+     ],
+     "total": 502
+    },
+    "kind": "docs"
    },
    {
     "format": "c-header",
     "lines": 102,
     "tokens": 4693,
-    "firstFile": {
+    "first": {
      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
      "start": 1646,
      "end": 1747
     },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 2042,
-     "end": 2143
-    }
+    "others": [
+     {
+      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+      "start": 2042,
+      "end": 2143
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "txt",
     "lines": 482,
     "tokens": 4628,
-    "firstFile": {
+    "first": {
      "name": "LICENSES/LGPL-2.1.txt",
      "start": 6,
      "end": 487
     },
-    "secondFile": {
-     "name": "app/Madeira/licenses/LGPL-2.1.txt",
-     "start": 6,
-     "end": 487
-    }
+    "others": [
+     {
+      "name": "app/Madeira/licenses/LGPL-2.1.txt",
+      "start": 6,
+      "end": 487
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "c-header",
     "lines": 94,
     "tokens": 4348,
-    "firstFile": {
+    "first": {
      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
      "start": 271,
      "end": 364
     },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 630,
-     "end": 723
-    }
+    "others": [
+     {
+      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+      "start": 630,
+      "end": 723
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 81,
     "tokens": 3844,
-    "firstFile": {
+    "first": {
      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
      "start": 1463,
      "end": 1543
     },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 1859,
-     "end": 1939
-    }
+    "others": [
+     {
+      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+      "start": 1859,
+      "end": 1939
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 10,
+    "tokens": 467,
+    "first": {
+     "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+     "start": 51,
+     "end": 60
+    },
+    "others": [
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 244,
+      "end": 254
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 570,
+      "end": 579
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 1170,
+      "end": 1179
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 1736,
+      "end": 1746
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+      "start": 191,
+      "end": 200
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+      "start": 698,
+      "end": 707
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+      "start": 964,
+      "end": 974
+     },
+     {
+      "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+      "start": 1638,
+      "end": 1648
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
    },
    {
     "format": "c-header",
     "lines": 67,
     "tokens": 3205,
-    "firstFile": {
+    "first": {
      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
      "start": 2255,
      "end": 2321
     },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 2571,
-     "end": 2638
-    }
+    "others": [
+     {
+      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+      "start": 2571,
+      "end": 2638
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 66,
     "tokens": 3155,
-    "firstFile": {
+    "first": {
      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
      "start": 1569,
      "end": 1634
     },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 1964,
-     "end": 2030
-    }
-   },
-   {
-    "format": "c-header",
-    "lines": 67,
-    "tokens": 3120,
-    "firstFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 2391,
-     "end": 2457
-    },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 2707,
-     "end": 2773
-    }
-   },
-   {
-    "format": "c-header",
-    "lines": 65,
-    "tokens": 3037,
-    "firstFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 836,
-     "end": 900
-    },
-    "secondFile": {
-     "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-     "start": 1151,
-     "end": 1214
-    }
+    "others": [
+     {
+      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+      "start": 1964,
+      "end": 2030
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -435,6 +624,460 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 239,
+   "lines": 137845,
+   "tokens": 2054487,
+   "clones": 634,
+   "duplicatedLines": 5903,
+   "duplicatedTokens": 93996,
+   "percentage": 4.28,
+   "percentageTokens": 4.58,
+   "formats": [
+    {
+     "format": "c",
+     "sources": 68,
+     "lines": 99674,
+     "clones": 580,
+     "duplicatedLines": 5349,
+     "percentage": 5.37
+    },
+    {
+     "format": "python",
+     "sources": 43,
+     "lines": 8918,
+     "clones": 25,
+     "duplicatedLines": 289,
+     "percentage": 3.24
+    },
+    {
+     "format": "objectivec",
+     "sources": 7,
+     "lines": 6145,
+     "clones": 13,
+     "duplicatedLines": 113,
+     "percentage": 1.84
+    },
+    {
+     "format": "bash",
+     "sources": 48,
+     "lines": 3641,
+     "clones": 10,
+     "duplicatedLines": 97,
+     "percentage": 2.66
+    },
+    {
+     "format": "swift",
+     "sources": 32,
+     "lines": 15080,
+     "clones": 2,
+     "duplicatedLines": 17,
+     "percentage": 0.11
+    },
+    {
+     "format": "c-header",
+     "sources": 36,
+     "lines": 2975,
+     "clones": 2,
+     "duplicatedLines": 19,
+     "percentage": 0.64
+    },
+    {
+     "format": "cpp",
+     "sources": 3,
+     "lines": 907,
+     "clones": 2,
+     "duplicatedLines": 19,
+     "percentage": 2.09
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 331,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c",
+     "lines": 47,
+     "tokens": 1679,
+     "first": {
+      "name": "build/x86-tests/wma-x86.c",
+      "start": 178,
+      "end": 224
+     },
+     "others": [
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 178,
+       "end": 224
+      },
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 227,
+       "end": 274
+      },
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 289,
+       "end": 336
+      },
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 351,
+       "end": 398
+      },
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 475,
+       "end": 521
+      },
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 661,
+       "end": 708
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "0x26, 0x1e, 0xb0, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,"
+      ],
+      "total": 47
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 6,
+     "tokens": 86,
+     "first": {
+      "name": "build/ntdll-unix/env_ios.c",
+      "start": 344,
+      "end": 349
+     },
+     "others": [
+      {
+       "name": "build/ntdll-unix/env_ios.c",
+       "start": 471,
+       "end": 476
+      },
+      {
+       "name": "build/ntdll-unix/env_ios.c",
+       "start": 480,
+       "end": 485
+      },
+      {
+       "name": "build/ntdll-unix/env_ios.c",
+       "start": 489,
+       "end": 494
+      },
+      {
+       "name": "build/ntdll-unix/env_ios.c",
+       "start": 545,
+       "end": 550
+      },
+      {
+       "name": "build/ntdll-unix/env_ios.c",
+       "start": 2439,
+       "end": 2443
+      },
+      {
+       "name": "build/ntdll-unix/loader_ios.c",
+       "start": 798,
+       "end": 803
+      },
+      {
+       "name": "build/ntdll-unix/loader_ios.c",
+       "start": 826,
+       "end": 831
+      },
+      {
+       "name": "build/ntdll-unix/loader_ios.c",
+       "start": 853,
+       "end": 858
+      }
+     ],
+     "copies": 101,
+     "excerpt": {
+      "lines": [
+       "            STARTS_WITH( var, \"XDG_\" ));",
+       "}",
+       "",
+       "",
+       "/***********************************************************************",
+       " *           is_ignored_env_var"
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "    return ret;",
+       "}",
+       "",
+       "",
+       "/***********************************************************************",
+       " *           ntdll_get_build_dir  (ntdll.so)"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 60,
+     "tokens": 2132,
+     "first": {
+      "name": "build/x86-tests/wma-x86.c",
+      "start": 227,
+      "end": 286
+     },
+     "others": [
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 536,
+       "end": 596
+      },
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 599,
+       "end": 658
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "0x00, 0x06, 0x02, 0xc0, 0x69, 0xa0, 0x26, 0x25, 0xeb, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,",
+       "0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e, 0x4e,"
+      ],
+      "total": 60
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 21,
+     "tokens": 737,
+     "first": {
+      "name": "build/crypto-unix/crypt32_unixlib_ios.c",
+      "start": 3,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "build/ntdll-unix/signal_arm64_ios.c",
+       "start": 5,
+       "end": 25
+      },
+      {
+       "name": "build/win32u-unix/class_ios.c",
+       "start": 7,
+       "end": 27
+      },
+      {
+       "name": "build/win32u-unix/message_ios.c",
+       "start": 6,
+       "end": 27
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 60,
+     "tokens": 2131,
+     "first": {
+      "name": "build/x86-tests/wma-x86.c",
+      "start": 289,
+      "end": 348
+     },
+     "others": [
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 784,
+       "end": 844
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 60,
+     "tokens": 2126,
+     "first": {
+      "name": "build/x86-tests/wma-x86.c",
+      "start": 351,
+      "end": 410
+     },
+     "others": [
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 413,
+       "end": 472
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 60,
+     "tokens": 2126,
+     "first": {
+      "name": "build/x86-tests/wma-x86.c",
+      "start": 661,
+      "end": 720
+     },
+     "others": [
+      {
+       "name": "build/x86-tests/wma-x86.c",
+       "start": 722,
+       "end": 781
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 18,
+     "tokens": 275,
+     "first": {
+      "name": "build/wineserver/fd_ios.c",
+      "start": 257,
+      "end": 274
+     },
+     "others": [
+      {
+       "name": "build/wineserver/fd_ios.c",
+       "start": 298,
+       "end": 315
+      },
+      {
+       "name": "build/wineserver/mapping_ios.c",
+       "start": 78,
+       "end": 95
+      },
+      {
+       "name": "build/wineserver/mapping_ios.c",
+       "start": 115,
+       "end": 132
+      },
+      {
+       "name": "build/wineserver/queue_ios.c",
+       "start": 203,
+       "end": 220
+      },
+      {
+       "name": "build/wineserver/request_ios.c",
+       "start": 91,
+       "end": 108
+      },
+      {
+       "name": "build/wineserver/window_ios.c",
+       "start": 107,
+       "end": 124
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 24,
+     "tokens": 766,
+     "first": {
+      "name": "build/ntdll-unix/loader_ios.c",
+      "start": 4,
+      "end": 27
+     },
+     "others": [
+      {
+       "name": "build/ntdll-unix/process_ios.c",
+       "start": 5,
+       "end": 28
+      },
+      {
+       "name": "build/ntdll-unix/server_ios.c",
+       "start": 4,
+       "end": 27
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 22,
+     "tokens": 757,
+     "first": {
+      "name": "build/ntdll-unix/loader_ios.c",
+      "start": 4,
+      "end": 25
+     },
+     "others": [
+      {
+       "name": "build/win32u-unix/driver_ios.c",
+       "start": 5,
+       "end": 26
+      },
+      {
+       "name": "build/win32u-unix/winstation_ios.c",
+       "start": 4,
+       "end": 25
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 8,
+    "minified": 0,
+    "sample": [
+     "app/Madeira/ConfigCatalog.generated.swift",
+     "build/crypto-unix/gnutls_symtab_ios.c",
+     "build/x64-tests/asmconf_tests.h",
+     "research/madeira-d3d12/src/pe/madeira_d3d12_stubs.h",
+     "research/madeira-d3d12/src/pe/tri_metallib.h",
+     "research/madeira-d3d12/tests/windows/tri_dxil.h",
+     "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+     "research/remote-metal/wmt_wire.h"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:30:35.040Z",
+  "jscpdVersion": "5.4.0"
  }
 }

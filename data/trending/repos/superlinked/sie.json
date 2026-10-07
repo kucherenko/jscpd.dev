@@ -9,10 +9,12 @@
    "starsToday": 60,
    "headSha": "9a7e8d3599f7f16ee57c5218f2ad3822e45c129f",
    "sources": 1771,
-   "lines": 621906,
-   "clones": 3035,
-   "duplicatedLines": 55050,
-   "percentage": 8.85,
+   "lines": 609253,
+   "clones": 3274,
+   "duplicatedLines": 59761,
+   "percentage": 9.81,
+   "codePercentage": 9.7,
+   "codeSources": 461,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,97 +30,97 @@
   "starsToday": 60,
   "defaultBranch": "main",
   "headSha": "9a7e8d3599f7f16ee57c5218f2ad3822e45c129f",
-  "durationMs": 1689,
+  "durationMs": 2416,
   "total": {
    "sources": 1771,
-   "lines": 621906,
-   "tokens": 3612501,
-   "clones": 3035,
-   "duplicatedLines": 55050,
-   "duplicatedTokens": 339559,
-   "percentage": 8.85,
-   "percentageTokens": 9.4
+   "lines": 609253,
+   "tokens": 3509598,
+   "clones": 3274,
+   "duplicatedLines": 59761,
+   "duplicatedTokens": 333512,
+   "percentage": 9.81,
+   "percentageTokens": 9.5
   },
   "formats": [
    {
     "format": "python",
     "sources": 785,
-    "lines": 262779,
-    "clones": 1436,
-    "duplicatedLines": 21134,
-    "percentage": 8.04
+    "lines": 261642,
+    "clones": 1575,
+    "duplicatedLines": 23547,
+    "percentage": 9
    },
    {
     "format": "rust",
     "sources": 130,
     "lines": 137389,
-    "clones": 927,
-    "duplicatedLines": 11378,
-    "percentage": 8.28
+    "clones": 1048,
+    "duplicatedLines": 13211,
+    "percentage": 9.62
    },
    {
     "format": "json",
     "sources": 174,
-    "lines": 116908,
-    "clones": 204,
-    "duplicatedLines": 7195,
-    "percentage": 6.15
+    "lines": 115730,
+    "clones": 225,
+    "duplicatedLines": 7703,
+    "percentage": 6.66
    },
    {
     "format": "yaml",
     "sources": 252,
-    "lines": 34070,
-    "clones": 197,
-    "duplicatedLines": 11677,
-    "percentage": 34.27
+    "lines": 32239,
+    "clones": 206,
+    "duplicatedLines": 11987,
+    "percentage": 37.18
    },
    {
     "format": "typescript",
     "sources": 102,
-    "lines": 25625,
-    "clones": 161,
-    "duplicatedLines": 2198,
-    "percentage": 8.58
+    "lines": 25383,
+    "clones": 172,
+    "duplicatedLines": 2478,
+    "percentage": 9.76
    },
    {
     "format": "markdown",
     "sources": 105,
     "lines": 15314,
-    "clones": 80,
-    "duplicatedLines": 974,
-    "percentage": 6.36
+    "clones": 16,
+    "duplicatedLines": 297,
+    "percentage": 1.94
    },
    {
     "format": "markup",
     "sources": 32,
     "lines": 1928,
-    "clones": 10,
-    "duplicatedLines": 191,
-    "percentage": 9.91
+    "clones": 12,
+    "duplicatedLines": 215,
+    "percentage": 11.15
    },
    {
     "format": "tsx",
     "sources": 62,
     "lines": 8938,
     "clones": 9,
-    "duplicatedLines": 209,
-    "percentage": 2.34
+    "duplicatedLines": 218,
+    "percentage": 2.44
    },
    {
     "format": "smarty",
     "sources": 2,
     "lines": 1911,
     "clones": 5,
-    "duplicatedLines": 45,
-    "percentage": 2.35
+    "duplicatedLines": 50,
+    "percentage": 2.62
    },
    {
     "format": "css",
     "sources": 4,
     "lines": 1527,
     "clones": 3,
-    "duplicatedLines": 30,
-    "percentage": 1.96
+    "duplicatedLines": 33,
+    "percentage": 2.16
    }
   ],
   "topClones": [
@@ -126,152 +128,631 @@
     "format": "yaml",
     "lines": 3574,
     "tokens": 25316,
-    "firstFile": {
+    "first": {
      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
      "start": 4385,
      "end": 7958
     },
-    "secondFile": {
-     "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
-     "start": 8112,
-     "end": 11685
-    }
+    "others": [
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 8112,
+      "end": 11685
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "description: Desired state of the ClusterIssuer resource.",
+      "type: object",
+      "properties:",
+      "  acme:",
+      "    description: |-",
+      "      ACME configures this issuer to communicate with a RFC8555 (ACME) server",
+      "      to obtain signed x509 certificates.",
+      "    type: object",
+      "    required:",
+      "      - privateKeySecretRef"
+     ],
+     "total": 3574
+    },
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 3013,
     "tokens": 21732,
-    "firstFile": {
+    "first": {
      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
      "start": 1231,
      "end": 4243
     },
-    "secondFile": {
-     "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
-     "start": 4545,
-     "end": 7557
-    }
+    "others": [
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 4545,
+      "end": 7557
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  solve this challenge resource.",
+      "type: object",
+      "properties:",
+      "  dns01:",
+      "    description: |-",
+      "      Configures cert-manager to attempt to complete authorizations by",
+      "      performing the DNS01 challenge flow.",
+      "    type: object",
+      "    properties:",
+      "      acmeDNS:"
+     ],
+     "total": 3013
+    },
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 1124,
     "tokens": 8212,
-    "firstFile": {
+    "first": {
      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
      "start": 1899,
      "end": 3022
     },
-    "secondFile": {
-     "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
-     "start": 3078,
-     "end": 4201
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 33,
-    "tokens": 1985,
-    "firstFile": {
-     "name": "deploy/helm/sie-cluster/README.md:markdown",
-     "start": 85,
-     "end": 117
+    "others": [
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 3078,
+      "end": 4201
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "podTemplate:",
+      "  description: |-",
+      "    Optional pod template used to configure the ACME challenge solver pods",
+      "    used for HTTP01 challenges.",
+      "  type: object",
+      "  properties:",
+      "    metadata:",
+      "      description: |-",
+      "        ObjectMeta overrides for the pod used to solve HTTP01 challenges.",
+      "        Only the 'labels' and 'annotations' fields may be set."
+     ],
+     "total": 1124
     },
-    "secondFile": {
-     "name": "packages/sie_gateway/README.md:markdown",
-     "start": 224,
-     "end": 266
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 37,
-    "tokens": 1757,
-    "firstFile": {
-     "name": "deploy/helm/sie-cluster/README.md:markdown",
-     "start": 166,
-     "end": 202
-    },
-    "secondFile": {
-     "name": "deploy/helm/sie-cluster/README.md:markdown",
-     "start": 480,
-     "end": 528
-    }
+    "kind": "data"
    },
    {
     "format": "markup",
     "lines": 118,
     "tokens": 1679,
-    "firstFile": {
+    "first": {
      "name": "examples/stripe-link-fraud/docs/architecture.svg",
      "start": 1,
      "end": 118
     },
-    "secondFile": {
-     "name": "examples/stripe-link-fraud/web/public/architecture.svg",
-     "start": 1,
-     "end": 118
-    }
+    "others": [
+     {
+      "name": "examples/stripe-link-fraud/web/public/architecture.svg",
+      "start": 1,
+      "end": 118
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "yaml",
     "lines": 162,
     "tokens": 1254,
-    "firstFile": {
+    "first": {
      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
      "start": 2304,
      "end": 2465
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 2649,
+      "end": 2810
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 16,
+    "tokens": 89,
+    "first": {
      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
-     "start": 2649,
-     "end": 2810
-    }
+     "start": 556,
+     "end": 571
+    },
+    "others": [
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 596,
+      "end": 611
+     },
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 1252,
+      "end": 1267
+     },
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 1355,
+      "end": 1370
+     },
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 1450,
+      "end": 1465
+     },
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 1467,
+      "end": 1482
+     },
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 1549,
+      "end": 1564
+     },
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 4464,
+      "end": 4479
+     },
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 4498,
+      "end": 4513
+     }
+    ],
+    "copies": 15,
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 171,
     "tokens": 1234,
-    "firstFile": {
+    "first": {
      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
      "start": 2132,
      "end": 2302
     },
-    "secondFile": {
-     "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
-     "start": 2477,
-     "end": 2647
-    }
+    "others": [
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 2477,
+      "end": 2647
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 92,
+    "tokens": 239,
+    "first": {
+     "name": "packages/sie_gateway/openapi.json",
+     "start": 4099,
+     "end": 4190
+    },
+    "others": [
+     {
+      "name": "packages/sie_gateway/openapi.json",
+      "start": 4388,
+      "end": 4479
+     },
+     {
+      "name": "packages/sie_gateway/openapi.json",
+      "start": 4586,
+      "end": 4677
+     },
+     {
+      "name": "packages/sie_gateway/openapi.json",
+      "start": 5170,
+      "end": 5261
+     },
+     {
+      "name": "packages/sie_gateway/openapi.json",
+      "start": 6165,
+      "end": 6256
+     },
+     {
+      "name": "packages/sie_gateway/openapi.json",
+      "start": 7146,
+      "end": 7237
+     }
+    ],
+    "copies": 6,
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 147,
     "tokens": 1084,
-    "firstFile": {
+    "first": {
      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
      "start": 2146,
      "end": 2292
     },
-    "secondFile": {
-     "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
-     "start": 2318,
-     "end": 2464
-    }
+    "others": [
+     {
+      "name": "deploy/helm/sie-cluster/crds/cert-manager.crds.yaml",
+      "start": 2318,
+      "end": 2464
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "python",
     "lines": 112,
     "tokens": 958,
-    "firstFile": {
+    "first": {
      "name": "examples/financial-filing-agent/financial_filing/review.py",
      "start": 57,
      "end": 168
     },
-    "secondFile": {
-     "name": "examples/prior-authorization-review-agent/prior_authorization/review.py",
-     "start": 134,
-     "end": 245
-    }
+    "others": [
+     {
+      "name": "examples/prior-authorization-review-agent/prior_authorization/review.py",
+      "start": 134,
+      "end": 245
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 461,
+   "lines": 259434,
+   "tokens": 1737295,
+   "clones": 1763,
+   "duplicatedLines": 25154,
+   "duplicatedTokens": 145382,
+   "percentage": 9.7,
+   "percentageTokens": 8.37,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 121,
+     "lines": 132457,
+     "clones": 954,
+     "duplicatedLines": 12065,
+     "percentage": 9.11
+    },
+    {
+     "format": "python",
+     "sources": 267,
+     "lines": 112042,
+     "clones": 767,
+     "duplicatedLines": 12382,
+     "percentage": 11.05
+    },
+    {
+     "format": "typescript",
+     "sources": 38,
+     "lines": 11355,
+     "clones": 42,
+     "duplicatedLines": 707,
+     "percentage": 6.23
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 1831,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 33,
+     "lines": 1575,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 103,
+     "tokens": 628,
+     "first": {
+      "name": "packages/sie_gateway/src/observability/tracing.rs",
+      "start": 736,
+      "end": 838
+     },
+     "others": [
+      {
+       "name": "packages/sie_server_sidecar/src/observability/tracing.rs",
+       "start": 357,
+       "end": 459
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "static ENV_LOCK: Mutex<()> = Mutex::new(());",
+       "",
+       "#[test]",
+       "fn endpoint_log_origin_removes_every_credential_bearing_url_component() {",
+       "    assert_eq!(",
+       "        endpoint_origin_for_log(",
+       "            \"https://telemetry-user:telemetry-secret@collector.example:8443/v1/traces?api_key=secret#fragment\"",
+       "        ),",
+       "        \"https://collector.example:8443\"",
+       "    );"
+      ],
+      "total": 103
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 67,
+     "tokens": 628,
+     "first": {
+      "name": "packages/sie_server_sidecar/src/output/numpy_sentinel.rs",
+      "start": 235,
+      "end": 301
+     },
+     "others": [
+      {
+       "name": "packages/sie_server_sidecar/src/prep/numpy_sentinel.rs",
+       "start": 149,
+       "end": 215
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "#[cfg(test)]",
+       "mod tests {",
+       "    use super::*;",
+       "",
+       "    /// Golden: `msgpack.packb(np.array([1.0, 2.0, 3.0], dtype=np.float32))`",
+       "    /// after `msgpack_numpy.patch()`. Captured from CPython",
+       "    /// (see docs: 53 bytes).",
+       "    const GOLDEN_F32_123: &[u8] = &["
+      ],
+      "total": 67
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 92,
+     "tokens": 599,
+     "first": {
+      "name": "packages/sie_server_sidecar/src/output/numpy_sentinel.rs",
+      "start": 57,
+      "end": 148
+     },
+     "others": [
+      {
+       "name": "packages/sie_server_sidecar/src/prep/numpy_sentinel.rs",
+       "start": 58,
+       "end": 149
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "pub const DTYPE_F16: &str = \"<f2\";",
+       "",
+       "/// msgpack-numpy dtype string for int32 little-endian, used for",
+       "/// sparse indices.",
+       "pub const DTYPE_I32: &str = \"<i4\";",
+       "",
+       "/// Write the 5-key numpy sentinel map into `buf`, with pre-encoded",
+       "/// raw bytes and explicit shape. The caller supplies:",
+       "///",
+       "/// * `dtype_str` — the `\"<f4\"`, `\"<i4\"`, etc. code. Must match the"
+      ],
+      "total": 92
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 68,
+     "tokens": 448,
+     "first": {
+      "name": "packages/sie_server/src/sie_server/adapters/colqwen3/__init__.py",
+      "start": 217,
+      "end": 284
+     },
+     "others": [
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/colsmol/__init__.py",
+       "start": 265,
+       "end": 332
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 438,
+     "first": {
+      "name": "packages/sie_sdk/src/sie_sdk/client/sync.py",
+      "start": 2026,
+      "end": 2067
+     },
+     "others": [
+      {
+       "name": "packages/sie_sdk/src/sie_sdk/client/sync.py",
+       "start": 3225,
+       "end": 3266
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 80,
+     "tokens": 424,
+     "first": {
+      "name": "packages/sie_server/src/sie_server/adapters/mineru_vl/__init__.py",
+      "start": 237,
+      "end": 316
+     },
+     "others": [
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/paddleocr_vl/__init__.py",
+       "start": 225,
+       "end": 304
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 56,
+     "tokens": 416,
+     "first": {
+      "name": "packages/sie_gateway/src/queue/publisher.rs",
+      "start": 583,
+      "end": 638
+     },
+     "others": [
+      {
+       "name": "packages/sie_server_sidecar/src/protocol/ipc_types.rs",
+       "start": 106,
+       "end": 161
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 64,
+     "tokens": 408,
+     "first": {
+      "name": "packages/sie_gateway/src/queue/oss_payload_store.rs",
+      "start": 383,
+      "end": 446
+     },
+     "others": [
+      {
+       "name": "packages/sie_server_sidecar/src/oss_payload_store.rs",
+       "start": 434,
+       "end": 497
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 51,
+     "first": {
+      "name": "packages/sie_server/src/sie_server/adapters/docling/adapter.py",
+      "start": 240,
+      "end": 245
+     },
+     "others": [
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/donut/__init__.py",
+       "start": 216,
+       "end": 221
+      },
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/gliclass/__init__.py",
+       "start": 236,
+       "end": 241
+      },
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/gliner/__init__.py",
+       "start": 137,
+       "end": 142
+      },
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/gliner2/adapter.py",
+       "start": 122,
+       "end": 127
+      },
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/gliner_bi/__init__.py",
+       "start": 157,
+       "end": 162
+      },
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/nli_classification/__init__.py",
+       "start": 139,
+       "end": 144
+      },
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/sglang_vision_extract/adapter.py",
+       "start": 237,
+       "end": 242
+      },
+      {
+       "name": "packages/sie_server/src/sie_server/adapters/stablebridge_pruner/__init__.py",
+       "start": 296,
+       "end": 301
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 81,
+     "tokens": 405,
+     "first": {
+      "name": "integrations/sie_crewai/src/sie_crewai/embedders.py",
+      "start": 39,
+      "end": 119
+     },
+     "others": [
+      {
+       "name": "integrations/sie_dspy/src/sie_dspy/embedder.py",
+       "start": 135,
+       "end": 215
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:47:04.045Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 163,
    "headSha": "994b44eca1a83a00d19d926e5264a6c608700656",
    "sources": 1897,
-   "lines": 531916,
+   "lines": 531872,
    "clones": 5837,
    "duplicatedLines": 79786,
    "percentage": 15,
+   "codePercentage": 10.82,
+   "codeSources": 822,
    "healthScore": 43.8,
    "healthGrade": "D"
   }
@@ -28,11 +30,11 @@
   "starsToday": 163,
   "defaultBranch": "main",
   "headSha": "994b44eca1a83a00d19d926e5264a6c608700656",
-  "durationMs": 2490,
+  "durationMs": 1962,
   "total": {
    "sources": 1897,
-   "lines": 531916,
-   "tokens": 4503869,
+   "lines": 531872,
+   "tokens": 4503704,
    "clones": 5837,
    "duplicatedLines": 79786,
    "duplicatedTokens": 794040,
@@ -99,10 +101,10 @@
    {
     "format": "bash",
     "sources": 42,
-    "lines": 2320,
+    "lines": 2270,
     "clones": 5,
     "duplicatedLines": 46,
-    "percentage": 1.98
+    "percentage": 2.03
    },
    {
     "format": "txt",
@@ -124,153 +126,398 @@
   "topClones": [
    {
     "format": "cpp",
+    "lines": 21,
+    "tokens": 799,
+    "first": {
+     "name": "src/ascend/target.cc",
+     "start": 1,
+     "end": 21
+    },
+    "others": [
+     {
+      "name": "src/ascend/transform/assign_core.cc",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule.cc",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/dependency_analysis.cc",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/ir_structure.cc",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/estimate_latency.cc",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/infer_buffer_aliases.cc",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/insert_sync.cc",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/legalize_simd_merging.cc",
+      "start": 1,
+      "end": 21
+     }
+    ],
+    "copies": 21,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Licensed to the Apache Software Foundation (ASF) under one",
+      " * or more contributor license agreements.  See the NOTICE file",
+      " * distributed with this work for additional information",
+      " * regarding copyright ownership.  The ASF licenses this file",
+      " * to you under the Apache License, Version 2.0 (the",
+      " * \"License\"); you may not use this file except in compliance",
+      " * with the License.  You may obtain a copy of the License at",
+      " *",
+      " *   http://www.apache.org/licenses/LICENSE-2.0"
+     ],
+     "total": 21
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 23,
+    "tokens": 1086,
+    "first": {
+     "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_channel_descriptor.h",
+     "start": 1,
+     "end": 23
+    },
+    "others": [
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_device_functions.h",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_math_functions.h",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/hip_fp16_math_fwd.h",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/math_fwd.h",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/ockl_image.h",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/hip_common.h",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/library_types.h",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/linker_types.h",
+      "start": 2,
+      "end": 24
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "/*",
+      "Copyright (c) 2015 - 2023 Advanced Micro Devices, Inc. All rights reserved.",
+      "",
+      "Permission is hereby granted, free of charge, to any person obtaining a copy",
+      "of this software and associated documentation files (the \"Software\"), to deal",
+      "in the Software without restriction, including without limitation the rights",
+      "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+      "copies of the Software, and to permit persons to whom the Software is",
+      "furnished to do so, subject to the following conditions:",
+      ""
+     ],
+     "total": 23
+    },
+    "kind": "vendored"
+   },
+   {
+    "format": "cpp",
     "lines": 1010,
     "tokens": 8914,
-    "firstFile": {
+    "first": {
      "name": "src/ascend/transform/thread_storage_sync.cc",
      "start": 582,
      "end": 1591
     },
-    "secondFile": {
-     "name": "src/transform/thread_storage_sync.cc",
-     "start": 583,
-     "end": 1592
-    }
+    "others": [
+     {
+      "name": "src/transform/thread_storage_sync.cc",
+      "start": 583,
+      "end": 1592
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  // depend on threadIdx, the recursive visit of args below (via",
+      "  // IRMutatorWithAnalyzer::VisitExpr_) will correctly mark the",
+      "  // condition as non-block-uniform through VisitExpr_(VarNode*).",
+      "  //",
+      "  // Mirrors the BufferLoadNode handling above(#90299d68); without this,",
+      "  // conditions like `T.any_of(local_fragment[:])` get hoisted out of the",
+      "  // if-body and break write-before-read sync between shared-memory loads",
+      "  // and mma/tma reads.",
+      "}",
+      "return IRMutatorWithAnalyzer::VisitExpr_(op);"
+     ],
+     "total": 1010
+    },
+    "kind": "code"
    },
    {
     "format": "cpp",
     "lines": 670,
     "tokens": 6121,
-    "firstFile": {
+    "first": {
      "name": "src/ascend/transform/layout_inference.cc",
      "start": 51,
      "end": 720
     },
-    "secondFile": {
-     "name": "src/transform/layout_inference/layout_inference.cc",
-     "start": 46,
-     "end": 715
-    }
+    "others": [
+     {
+      "name": "src/transform/layout_inference/layout_inference.cc",
+      "start": 46,
+      "end": 715
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "cpp",
     "lines": 640,
     "tokens": 6084,
-    "firstFile": {
+    "first": {
      "name": "src/ascend/transform/lower_tile_op.cc",
      "start": 515,
      "end": 1154
     },
-    "secondFile": {
-     "name": "src/transform/lower_tile_op.cc",
-     "start": 457,
-     "end": 1096
-    }
+    "others": [
+     {
+      "name": "src/transform/lower_tile_op.cc",
+      "start": 457,
+      "end": 1096
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 21,
+    "tokens": 799,
+    "first": {
+     "name": "src/ascend/transform/ascend_pipe.h",
+     "start": 1,
+     "end": 21
+    },
+    "others": [
+     {
+      "name": "src/ascend/transform/auto_schedule/buffer_alias_analysis.h",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/buffer_lifetime_analysis.h",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/dependency_analysis.h",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/kernel_rewriter.h",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/buffer_alias.h",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/buffer_version.h",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ascend/transform/merge_ub_common.h",
+      "start": 1,
+      "end": 21
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 22,
+    "tokens": 1059,
+    "first": {
+     "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_channel_descriptor.h",
+     "start": 2,
+     "end": 23
+    },
+    "others": [
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_hip_atomic.h",
+      "start": 2,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_hip_gl_interop.h",
+      "start": 2,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_hip_unsafe_atomics.h",
+      "start": 2,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/amd_detail/amd_warp_functions.h",
+      "start": 2,
+      "end": 23
+     },
+     {
+      "name": "3rdparty/hip-headers/include/hip/driver_types.h",
+      "start": 2,
+      "end": 23
+     }
+    ],
+    "copies": 6,
+    "kind": "vendored"
+   },
+   {
+    "format": "c-header",
+    "lines": 18,
+    "tokens": 788,
+    "first": {
+     "name": "src/ascend/transform/ascend_pipe.h",
+     "start": 1,
+     "end": 18
+    },
+    "others": [
+     {
+      "name": "src/ascend/transform/auto_schedule/multi_buffer.h",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/scheduled_tir.h",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/task_analysis.h",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "src/ascend/transform/auto_schedule/task_annotations.h",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "src/ascend/transform/core_mask.h",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "src/ascend/transform/estimate_latency.h",
+      "start": 1,
+      "end": 18
+     }
+    ],
+    "copies": 7,
+    "kind": "code"
    },
    {
     "format": "cpp",
     "lines": 495,
     "tokens": 4279,
-    "firstFile": {
+    "first": {
      "name": "src/ascend/transform/thread_storage_sync.cc",
      "start": 61,
      "end": 555
     },
-    "secondFile": {
-     "name": "src/transform/thread_storage_sync.cc",
-     "start": 58,
-     "end": 552
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 364,
-    "tokens": 3464,
-    "firstFile": {
-     "name": "src/ascend/transform/thread_storage_sync.cc",
-     "start": 193,
-     "end": 556
-    },
-    "secondFile": {
-     "name": "src/transform/thread_storage_sync.cc",
-     "start": 190,
-     "end": 553
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 287,
-    "tokens": 1807,
-    "firstFile": {
-     "name": "src/cuda/transform/ptx_async_copy_injector.cc",
-     "start": 389,
-     "end": 675
-    },
-    "secondFile": {
-     "name": "src/rocm/transform/async_copy_injector.cc",
-     "start": 391,
-     "end": 677
-    }
+    "others": [
+     {
+      "name": "src/transform/thread_storage_sync.cc",
+      "start": 58,
+      "end": 552
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "c-header",
-    "lines": 24,
-    "tokens": 1743,
-    "firstFile": {
-     "name": "3rdparty/hip-headers/include/hip/hip_runtime_api.h",
-     "start": 4102,
-     "end": 4125
-    },
-    "secondFile": {
-     "name": "3rdparty/hip-headers/include/hip/hip_runtime_api.h",
-     "start": 4141,
-     "end": 4164
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 182,
-    "tokens": 1727,
-    "firstFile": {
-     "name": "THIRDPARTYNOTICES.txt",
-     "start": 5,
+    "lines": 66,
+    "tokens": 1061,
+    "first": {
+     "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+     "start": 121,
      "end": 186
     },
-    "secondFile": {
-     "name": "THIRDPARTYNOTICES.txt",
-     "start": 210,
-     "end": 391
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 182,
-    "tokens": 1727,
-    "firstFile": {
-     "name": "THIRDPARTYNOTICES.txt",
-     "start": 5,
-     "end": 186
-    },
-    "secondFile": {
-     "name": "THIRDPARTYNOTICES.txt",
-     "start": 415,
-     "end": 596
-    }
-   },
-   {
-    "format": "python",
-    "lines": 144,
-    "tokens": 1606,
-    "firstFile": {
-     "name": "examples/deepseek_nsa/benchmark/benchmark_nsa_fwd.py",
-     "start": 306,
-     "end": 449
-    },
-    "secondFile": {
-     "name": "examples/deepseek_nsa/reference.py",
-     "start": 9,
-     "end": 152
-    }
+    "others": [
+     {
+      "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+      "start": 291,
+      "end": 356
+     },
+     {
+      "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+      "start": 634,
+      "end": 699
+     },
+     {
+      "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+      "start": 965,
+      "end": 1030
+     },
+     {
+      "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+      "start": 1284,
+      "end": 1349
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    }
   ],
   "health": {
@@ -489,6 +736,458 @@
      "lines": 42
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 822,
+   "lines": 287152,
+   "tokens": 2188278,
+   "clones": 2055,
+   "duplicatedLines": 31077,
+   "duplicatedTokens": 284672,
+   "percentage": 10.82,
+   "percentageTokens": 13.01,
+   "formats": [
+    {
+     "format": "cpp",
+     "sources": 215,
+     "lines": 132826,
+     "clones": 920,
+     "duplicatedLines": 15890,
+     "percentage": 11.96
+    },
+    {
+     "format": "python",
+     "sources": 415,
+     "lines": 103451,
+     "clones": 626,
+     "duplicatedLines": 9035,
+     "percentage": 8.73
+    },
+    {
+     "format": "c-header",
+     "sources": 169,
+     "lines": 42497,
+     "clones": 430,
+     "duplicatedLines": 5439,
+     "percentage": 12.8
+    },
+    {
+     "format": "cpp-header",
+     "sources": 3,
+     "lines": 6364,
+     "clones": 78,
+     "duplicatedLines": 706,
+     "percentage": 11.09
+    },
+    {
+     "format": "bash",
+     "sources": 19,
+     "lines": 1840,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 0.38
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "cpp",
+     "lines": 21,
+     "tokens": 799,
+     "first": {
+      "name": "src/ascend/target.cc",
+      "start": 1,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "src/ascend/transform/assign_core.cc",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule.cc",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/dependency_analysis.cc",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/ir_structure.cc",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/estimate_latency.cc",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/infer_buffer_aliases.cc",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/insert_sync.cc",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/legalize_simd_merging.cc",
+       "start": 1,
+       "end": 21
+      }
+     ],
+     "copies": 21,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Licensed to the Apache Software Foundation (ASF) under one",
+       " * or more contributor license agreements.  See the NOTICE file",
+       " * distributed with this work for additional information",
+       " * regarding copyright ownership.  The ASF licenses this file",
+       " * to you under the Apache License, Version 2.0 (the",
+       " * \"License\"); you may not use this file except in compliance",
+       " * with the License.  You may obtain a copy of the License at",
+       " *",
+       " *   http://www.apache.org/licenses/LICENSE-2.0"
+      ],
+      "total": 21
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 1010,
+     "tokens": 8914,
+     "first": {
+      "name": "src/ascend/transform/thread_storage_sync.cc",
+      "start": 582,
+      "end": 1591
+     },
+     "others": [
+      {
+       "name": "src/transform/thread_storage_sync.cc",
+       "start": 583,
+       "end": 1592
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  // depend on threadIdx, the recursive visit of args below (via",
+       "  // IRMutatorWithAnalyzer::VisitExpr_) will correctly mark the",
+       "  // condition as non-block-uniform through VisitExpr_(VarNode*).",
+       "  //",
+       "  // Mirrors the BufferLoadNode handling above(#90299d68); without this,",
+       "  // conditions like `T.any_of(local_fragment[:])` get hoisted out of the",
+       "  // if-body and break write-before-read sync between shared-memory loads",
+       "  // and mma/tma reads.",
+       "}",
+       "return IRMutatorWithAnalyzer::VisitExpr_(op);"
+      ],
+      "total": 1010
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 670,
+     "tokens": 6121,
+     "first": {
+      "name": "src/ascend/transform/layout_inference.cc",
+      "start": 51,
+      "end": 720
+     },
+     "others": [
+      {
+       "name": "src/transform/layout_inference/layout_inference.cc",
+       "start": 46,
+       "end": 715
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "namespace ascend {",
+       "",
+       "using namespace tirx;",
+       "using namespace ffi;",
+       "",
+       "namespace {",
+       "",
+       "int64_t GetElementStorageBits(DataType dtype) {",
+       "  // Layout aliasing must be reasoned about in logical storage bits per element,",
+       "  // not in bytes.  For sub-byte dtypes such as fp4, `dtype.bytes()` rounds up"
+      ],
+      "total": 670
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 640,
+     "tokens": 6084,
+     "first": {
+      "name": "src/ascend/transform/lower_tile_op.cc",
+      "start": 515,
+      "end": 1154
+     },
+     "others": [
+      {
+       "name": "src/transform/lower_tile_op.cc",
+       "start": 457,
+       "end": 1096
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 21,
+     "tokens": 799,
+     "first": {
+      "name": "src/ascend/transform/ascend_pipe.h",
+      "start": 1,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "src/ascend/transform/auto_schedule/buffer_alias_analysis.h",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/buffer_lifetime_analysis.h",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/dependency_analysis.h",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/kernel_rewriter.h",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/buffer_alias.h",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/buffer_version.h",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ascend/transform/merge_ub_common.h",
+       "start": 1,
+       "end": 21
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 18,
+     "tokens": 788,
+     "first": {
+      "name": "src/ascend/transform/ascend_pipe.h",
+      "start": 1,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "src/ascend/transform/auto_schedule/multi_buffer.h",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/scheduled_tir.h",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/task_analysis.h",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "src/ascend/transform/auto_schedule/task_annotations.h",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "src/ascend/transform/core_mask.h",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "src/ascend/transform/estimate_latency.h",
+       "start": 1,
+       "end": 18
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 495,
+     "tokens": 4279,
+     "first": {
+      "name": "src/ascend/transform/thread_storage_sync.cc",
+      "start": 61,
+      "end": 555
+     },
+     "others": [
+      {
+       "name": "src/transform/thread_storage_sync.cc",
+       "start": 58,
+       "end": 552
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 66,
+     "tokens": 1061,
+     "first": {
+      "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+      "start": 121,
+      "end": 186
+     },
+     "others": [
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+       "start": 291,
+       "end": 356
+      },
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+       "start": 634,
+       "end": 699
+      },
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+       "start": 965,
+       "end": 1030
+      },
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_ld.h",
+       "start": 1284,
+       "end": 1349
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 60,
+     "tokens": 1057,
+     "first": {
+      "name": "src/tl_templates/cuda/tcgen_05_st.h",
+      "start": 116,
+      "end": 175
+     },
+     "others": [
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_st.h",
+       "start": 275,
+       "end": 334
+      },
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_st.h",
+       "start": 597,
+       "end": 656
+      },
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_st.h",
+       "start": 907,
+       "end": 966
+      },
+      {
+       "name": "src/tl_templates/cuda/tcgen_05_st.h",
+       "start": 1205,
+       "end": 1264
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 18,
+     "tokens": 633,
+     "first": {
+      "name": "src/transform/flatten_buffer.cc",
+      "start": 4,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "src/transform/frontend_legalize.cc",
+       "start": 4,
+       "end": 21
+      },
+      {
+       "name": "src/transform/legalize_vectorized_loop.cc",
+       "start": 4,
+       "end": 21
+      },
+      {
+       "name": "src/transform/loop_partition.cc",
+       "start": 4,
+       "end": 21
+      },
+      {
+       "name": "src/transform/loop_vectorize.cc",
+       "start": 4,
+       "end": 21
+      },
+      {
+       "name": "src/transform/lower_opaque_block.cc",
+       "start": 4,
+       "end": 21
+      },
+      {
+       "name": "src/transform/split_host_device.cc",
+       "start": 4,
+       "end": 21
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "3rdparty/hip-headers/include/hip/amd_detail/hip_prof_str.h",
+     "3rdparty/hip-headers/include/hip/hip_version.h"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:36:35.147Z",
+  "jscpdVersion": "5.4.0"
  }
 }

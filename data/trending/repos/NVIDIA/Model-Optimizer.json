@@ -9,10 +9,12 @@
    "starsToday": 44,
    "headSha": "ed7e87953c1a3ed6a21c8bf6eac90565fa6b7a36",
    "sources": 2070,
-   "lines": 436782,
+   "lines": 436738,
    "clones": 1248,
    "duplicatedLines": 18159,
    "percentage": 4.16,
+   "codePercentage": 1.85,
+   "codeSources": 608,
    "healthScore": 66.3,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 359,
    "headSha": "23355eda90a25c290f9b1fdfb928ad54caae7d10",
    "sources": 2070,
-   "lines": 436783,
+   "lines": 436739,
    "clones": 1248,
    "duplicatedLines": 18159,
    "percentage": 4.16,
+   "codePercentage": 1.85,
+   "codeSources": 608,
    "healthScore": 66.3,
    "healthGrade": "C"
   },
@@ -37,10 +41,12 @@
    "starsToday": 357,
    "headSha": "23355eda90a25c290f9b1fdfb928ad54caae7d10",
    "sources": 2070,
-   "lines": 436783,
+   "lines": 436739,
    "clones": 1248,
    "duplicatedLines": 18159,
    "percentage": 4.16,
+   "codePercentage": 1.85,
+   "codeSources": 608,
    "healthScore": 66.3,
    "healthGrade": "C"
   }
@@ -56,11 +62,11 @@
   "starsToday": 357,
   "defaultBranch": "main",
   "headSha": "23355eda90a25c290f9b1fdfb928ad54caae7d10",
-  "durationMs": 2410,
+  "durationMs": 1174,
   "total": {
    "sources": 2070,
-   "lines": 436783,
-   "tokens": 2486573,
+   "lines": 436739,
+   "tokens": 2486408,
    "clones": 1248,
    "duplicatedLines": 18159,
    "duplicatedTokens": 107981,
@@ -95,10 +101,10 @@
    {
     "format": "bash",
     "sources": 159,
-    "lines": 10712,
+    "lines": 10662,
     "clones": 17,
     "duplicatedLines": 176,
-    "percentage": 1.64
+    "percentage": 1.65
    },
    {
     "format": "cpp",
@@ -154,151 +160,347 @@
     "format": "cpp",
     "lines": 16,
     "tokens": 682,
-    "firstFile": {
+    "first": {
      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
      "start": 1,
      "end": 16
     },
-    "secondFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.cpp",
-     "start": 1,
-     "end": 16
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-     "start": 1,
-     "end": 16
+    "others": [
+     {
+      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.cpp",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginRegistration.cpp",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.cpp",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "modelopt/torch/kernels/quantization/conv/implicit_gemm_binding.cpp",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.cpp",
+      "start": 1,
+      "end": 16
+     }
+    ],
+    "copies": 7,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+      " * SPDX-License-Identifier: Apache-2.0",
+      " *",
+      " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+      " * you may not use this file except in compliance with the License.",
+      " * You may obtain a copy of the License at",
+      " *",
+      " * http://www.apache.org/licenses/LICENSE-2.0",
+      " *"
+     ],
+     "total": 16
     },
-    "secondFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginRegistration.cpp",
-     "start": 1,
-     "end": 16
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-     "start": 1,
-     "end": 16
-    },
-    "secondFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.cpp",
-     "start": 1,
-     "end": 16
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-     "start": 1,
-     "end": 16
-    },
-    "secondFile": {
-     "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
-     "start": 1,
-     "end": 16
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-     "start": 1,
-     "end": 16
-    },
-    "secondFile": {
-     "name": "modelopt/torch/kernels/quantization/conv/implicit_gemm_binding.cpp",
-     "start": 1,
-     "end": 16
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
-     "start": 1,
-     "end": 16
-    },
-    "secondFile": {
-     "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.cpp",
-     "start": 1,
-     "end": 16
-    }
+    "kind": "docs"
    },
    {
     "format": "c-header",
     "lines": 16,
     "tokens": 682,
-    "firstFile": {
+    "first": {
      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
      "start": 1,
      "end": 16
     },
-    "secondFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.h",
-     "start": 1,
-     "end": 16
-    }
+    "others": [
+     {
+      "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPluginCreator.h",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.h",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.h",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant_mx.h",
+      "start": 1,
+      "end": 16
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+      " * SPDX-License-Identifier: Apache-2.0",
+      " *",
+      " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+      " * you may not use this file except in compliance with the License.",
+      " * You may obtain a copy of the License at",
+      " *",
+      " * http://www.apache.org/licenses/LICENSE-2.0",
+      " *"
+     ],
+     "total": 16
+    },
+    "kind": "docs"
    },
    {
-    "format": "c-header",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
-     "start": 1,
-     "end": 16
+    "format": "markdown",
+    "lines": 6,
+    "tokens": 150,
+    "first": {
+     "name": "examples/diffusers/README.md:markdown",
+     "start": 482,
+     "end": 487
     },
-    "secondFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/PluginUtils.h",
-     "start": 1,
-     "end": 16
-    }
+    "others": [
+     {
+      "name": "examples/hf_ptq/README.md:markdown",
+      "start": 792,
+      "end": 797
+     },
+     {
+      "name": "examples/llm_distill/README.md:markdown",
+      "start": 182,
+      "end": 187
+     },
+     {
+      "name": "examples/onnx_ptq/README.md:markdown",
+      "start": 273,
+      "end": 278
+     },
+     {
+      "name": "examples/speculative_decoding/README.md:markdown",
+      "start": 350,
+      "end": 355
+     },
+     {
+      "name": "examples/torch_onnx/README.md:markdown",
+      "start": 396,
+      "end": 401
+     },
+     {
+      "name": "examples/torch_trt/README.md:markdown",
+      "start": 235,
+      "end": 240
+     }
+    ],
+    "copies": 7,
+    "excerpt": {
+     "lines": [
+      "- 📅 [Roadmap](https://github.com/NVIDIA/Model-Optimizer/issues/1699)",
+      "- 📖 [Documentation](https://nvidia.github.io/Model-Optimizer)",
+      "- 🎯 [Benchmarks](../benchmark.md)",
+      "- 💡 [Release Notes](https://nvidia.github.io/Model-Optimizer/reference/0_changelog.html)",
+      "- 🐛 [File a bug](https://github.com/NVIDIA/Model-Optimizer/issues/new?template=1_bug_report.md)",
+      "- ✨ [File a Feature Request](https://github.com/NVIDIA/Model-Optimizer/issues/new?template=2_feature_request.md)"
+     ],
+     "total": 6
+    },
+    "kind": "docs"
    },
    {
-    "format": "c-header",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
-     "start": 1,
+    "format": "cpp",
+    "lines": 15,
+    "tokens": 636,
+    "first": {
+     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.cpp",
+     "start": 2,
      "end": 16
     },
-    "secondFile": {
-     "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.h",
-     "start": 1,
-     "end": 16
-    }
+    "others": [
+     {
+      "name": "modelopt/torch/kernels/quantization/ggml/ggml.cpp",
+      "start": 2,
+      "end": 16
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
-    "format": "c-header",
-    "lines": 16,
-    "tokens": 682,
-    "firstFile": {
-     "name": "examples/onnx_ptq/custom_op_plugin/plugin/IdentityConvPlugin.h",
-     "start": 1,
-     "end": 16
+    "format": "python",
+    "lines": 122,
+    "tokens": 577,
+    "first": {
+     "name": "examples/llm_eval/mmlu.py",
+     "start": 62,
+     "end": 183
     },
-    "secondFile": {
-     "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant_mx.h",
+    "others": [
+     {
+      "name": "examples/windows/accuracy_benchmark/mmlu_benchmark.py",
+      "start": 46,
+      "end": 167
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "yaml",
+    "lines": 17,
+    "tokens": 71,
+    "first": {
+     "name": "examples/puzzletron/configs/gptoss-20b_remove_experts_memory/validate_model_defaults.yaml",
      "start": 1,
-     "end": 16
-    }
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "examples/puzzletron/configs/llama-3_1-8B_pruneffn_memory/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "examples/puzzletron/configs/llama-3_1-8B_pruneffn_runtime/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "examples/puzzletron/configs/llama-3_2-3B_pruneffn_memory/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "examples/puzzletron/configs/mistral-small-24b-instruct-2501_pruneffn_memory/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "examples/puzzletron/configs/nemotron-nano-12b-v2/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "examples/puzzletron/configs/nemotron-nano-30b-A3b-v3/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "examples/puzzletron/configs/qwen2_5_7b_instruct_pruneffn_memory/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     },
+     {
+      "name": "examples/puzzletron/configs/qwen3-8b_pruneffn_memory/validate_model_defaults.yaml",
+      "start": 1,
+      "end": 17
+     }
+    ],
+    "copies": 9,
+    "kind": "docs"
+   },
+   {
+    "format": "yaml",
+    "lines": 70,
+    "tokens": 268,
+    "first": {
+     "name": "examples/puzzletron/configs/nemotron-nano-12b-v2/nemotron_nano_12b_v2.yaml",
+     "start": 11,
+     "end": 80
+    },
+    "others": [
+     {
+      "name": "examples/puzzletron/configs/qwen2_5_7b_instruct_pruneffn_memory/qwen2_5_7b_instruct.yaml",
+      "start": 11,
+      "end": 80
+     },
+     {
+      "name": "examples/puzzletron/configs/qwen3-8b_pruneffn_memory/qwen3_8b.yaml",
+      "start": 11,
+      "end": 80
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 16,
+    "tokens": 177,
+    "first": {
+     "name": "tests/unit/torch/quantization/test_quant_conv.py",
+     "start": 65,
+     "end": 80
+    },
+    "others": [
+     {
+      "name": "tests/unit/torch/quantization/test_quant_conv.py",
+      "start": 96,
+      "end": 111
+     },
+     {
+      "name": "tests/unit/torch/quantization/test_quant_conv.py",
+      "start": 152,
+      "end": 167
+     },
+     {
+      "name": "tests/unit/torch/quantization/test_quant_conv.py",
+      "start": 184,
+      "end": 199
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 67,
+    "tokens": 496,
+    "first": {
+     "name": "modelopt/torch/_deploy/compilation.py",
+     "start": 40,
+     "end": 106
+    },
+    "others": [
+     {
+      "name": "modelopt/torch/_deploy/profiling.py",
+      "start": 35,
+      "end": 102
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 66,
+    "tokens": 493,
+    "first": {
+     "name": "modelopt/torch/_deploy/compilation.py",
+     "start": 40,
+     "end": 105
+    },
+    "others": [
+     {
+      "name": "modelopt/torch/_deploy/profiling.py",
+      "start": 119,
+      "end": 184
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -516,6 +718,302 @@
      "lines": 289
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 608,
+   "lines": 191625,
+   "tokens": 1003272,
+   "clones": 240,
+   "duplicatedLines": 3538,
+   "duplicatedTokens": 23372,
+   "percentage": 1.85,
+   "percentageTokens": 2.33,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 558,
+     "lines": 185988,
+     "clones": 229,
+     "duplicatedLines": 3383,
+     "percentage": 1.82
+    },
+    {
+     "format": "bash",
+     "sources": 43,
+     "lines": 4809,
+     "clones": 5,
+     "duplicatedLines": 73,
+     "percentage": 1.52
+    },
+    {
+     "format": "cpp",
+     "sources": 4,
+     "lines": 339,
+     "clones": 4,
+     "duplicatedLines": 55,
+     "percentage": 16.22
+    },
+    {
+     "format": "c-header",
+     "sources": 2,
+     "lines": 315,
+     "clones": 2,
+     "duplicatedLines": 27,
+     "percentage": 8.57
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "cpp",
+     "lines": 18,
+     "tokens": 684,
+     "first": {
+      "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+      "start": 1,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.cpp",
+       "start": 1,
+       "end": 18
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+       " * SPDX-License-Identifier: Apache-2.0",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " * http://www.apache.org/licenses/LICENSE-2.0",
+       " *"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 18,
+     "tokens": 683,
+     "first": {
+      "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant.h",
+      "start": 1,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/kernels/quantization/gemm/tensor_quant_mx.h",
+       "start": 1,
+       "end": 18
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+       " * SPDX-License-Identifier: Apache-2.0",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " * http://www.apache.org/licenses/LICENSE-2.0",
+       " *"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 16,
+     "tokens": 682,
+     "first": {
+      "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+      "start": 1,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/kernels/quantization/conv/implicit_gemm_binding.cpp",
+       "start": 1,
+       "end": 16
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+       " * SPDX-License-Identifier: Apache-2.0",
+       " *",
+       " * Licensed under the Apache License, Version 2.0 (the \"License\");",
+       " * you may not use this file except in compliance with the License.",
+       " * You may obtain a copy of the License at",
+       " *",
+       " * http://www.apache.org/licenses/LICENSE-2.0",
+       " *"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 15,
+     "tokens": 636,
+     "first": {
+      "name": "modelopt/onnx/quantization/src/modelopt_round_and_pack_ext.cpp",
+      "start": 2,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/kernels/quantization/ggml/ggml.cpp",
+       "start": 2,
+       "end": 16
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 67,
+     "tokens": 496,
+     "first": {
+      "name": "modelopt/torch/_deploy/compilation.py",
+      "start": 40,
+      "end": 106
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/_deploy/profiling.py",
+       "start": 35,
+       "end": 102
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 66,
+     "tokens": 493,
+     "first": {
+      "name": "modelopt/torch/_deploy/compilation.py",
+      "start": 40,
+      "end": 105
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/_deploy/profiling.py",
+       "start": 119,
+       "end": 184
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 30,
+     "tokens": 390,
+     "first": {
+      "name": "modelopt/torch/nas/algorithms.py",
+      "start": 525,
+      "end": 554
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/prune/pruning.py",
+       "start": 127,
+       "end": 156
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 48,
+     "tokens": 364,
+     "first": {
+      "name": "modelopt/torch/_deploy/compilation.py",
+      "start": 41,
+      "end": 88
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/nas/algorithms.py",
+       "start": 605,
+       "end": 652
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 47,
+     "tokens": 363,
+     "first": {
+      "name": "modelopt/torch/_deploy/compilation.py",
+      "start": 42,
+      "end": 88
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/nas/algorithms.py",
+       "start": 483,
+       "end": 529
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 46,
+     "tokens": 333,
+     "first": {
+      "name": "modelopt/torch/_deploy/compilation.py",
+      "start": 43,
+      "end": 88
+     },
+     "others": [
+      {
+       "name": "modelopt/torch/prune/pruning.py",
+       "start": 86,
+       "end": 131
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:26:49.025Z",
+  "jscpdVersion": "5.4.0"
  }
 }

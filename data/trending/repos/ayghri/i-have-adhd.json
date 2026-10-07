@@ -9,10 +9,12 @@
    "starsToday": 656,
    "headSha": "24d22f783e57cb73c957848b588c6f651b6f9cd8",
    "sources": 67,
-   "lines": 13905,
-   "clones": 35,
-   "duplicatedLines": 6073,
-   "percentage": 43.67,
+   "lines": 9964,
+   "clones": 40,
+   "duplicatedLines": 3867,
+   "percentage": 38.81,
+   "codePercentage": 0,
+   "codeSources": 20,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 4650,
    "headSha": "ff690b6fbd3383e4fce6a7e50c7b409ca9a6a804",
    "sources": 67,
-   "lines": 13909,
-   "clones": 35,
-   "duplicatedLines": 6075,
-   "percentage": 43.68,
+   "lines": 9968,
+   "clones": 40,
+   "duplicatedLines": 3869,
+   "percentage": 38.81,
+   "codePercentage": 0,
+   "codeSources": 20,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 3882,
    "headSha": "6f1f982d0a47c65899af3c5a7450b7098bc65325",
    "sources": 69,
-   "lines": 15038,
-   "clones": 36,
-   "duplicatedLines": 6202,
-   "percentage": 41.24,
+   "lines": 10310,
+   "clones": 41,
+   "duplicatedLines": 3998,
+   "percentage": 38.78,
+   "codePercentage": 0,
+   "codeSources": 20,
    "healthScore": null,
    "healthGrade": null
   },
@@ -51,10 +57,12 @@
    "starsToday": 3463,
    "headSha": "6f1f982d0a47c65899af3c5a7450b7098bc65325",
    "sources": 69,
-   "lines": 15038,
-   "clones": 36,
-   "duplicatedLines": 6202,
-   "percentage": 41.24,
+   "lines": 10310,
+   "clones": 41,
+   "duplicatedLines": 3998,
+   "percentage": 38.78,
+   "codePercentage": 0,
+   "codeSources": 20,
    "healthScore": null,
    "healthGrade": null
   },
@@ -65,10 +73,12 @@
    "starsToday": 326,
    "headSha": "723af7d9afaf43eb871dbcce6129e2bf80de90d5",
    "sources": 85,
-   "lines": 15040,
+   "lines": 14996,
    "clones": 83,
    "duplicatedLines": 7011,
-   "percentage": 46.62,
+   "percentage": 46.75,
+   "codePercentage": 0,
+   "codeSources": 21,
    "healthScore": 64.4,
    "healthGrade": "C"
   }
@@ -84,25 +94,25 @@
   "starsToday": 326,
   "defaultBranch": "main",
   "headSha": "723af7d9afaf43eb871dbcce6129e2bf80de90d5",
-  "durationMs": 1338,
+  "durationMs": 154,
   "total": {
    "sources": 85,
-   "lines": 15040,
-   "tokens": 107543,
+   "lines": 14996,
+   "tokens": 107378,
    "clones": 83,
    "duplicatedLines": 7011,
    "duplicatedTokens": 19999,
-   "percentage": 46.62,
-   "percentageTokens": 18.6
+   "percentage": 46.75,
+   "percentageTokens": 18.62
   },
   "formats": [
    {
     "format": "bash",
     "sources": 23,
-    "lines": 1631,
+    "lines": 1581,
     "clones": 41,
     "duplicatedLines": 640,
-    "percentage": 39.24
+    "percentage": 40.48
    },
    {
     "format": "markdown",
@@ -147,7 +157,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -179,154 +189,329 @@
   ],
   "topClones": [
    {
+    "format": "bash",
+    "lines": 436,
+    "tokens": 551,
+    "first": {
+     "name": ".github/install/INSTALL.ar.md:bash",
+     "start": 373,
+     "end": 808
+    },
+    "others": [
+     {
+      "name": ".github/install/INSTALL.fa.md:bash",
+      "start": 295,
+      "end": 724
+     },
+     {
+      "name": ".github/install/INSTALL.ja.md:bash",
+      "start": 255,
+      "end": 687
+     },
+     {
+      "name": ".github/install/INSTALL.zh-CN.md:bash",
+      "start": 308,
+      "end": 741
+     },
+     {
+      "name": "INSTALL.md:bash",
+      "start": 381,
+      "end": 816
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "npx skills update i-have-adhd",
+      "```",
+      "",
+      "أو أعد نسخ المجلد بعد `git pull`.",
+      "",
+      "### إلغاء التثبيت",
+      "",
+      "```bash",
+      "npx skills remove i-have-adhd",
+      "```"
+     ],
+     "total": 436
+    },
+    "excerptSecond": {
+     "lines": [
+      "npx skills update i-have-adhd",
+      "```",
+      "",
+      "یا پس از `git pull`، پوشه را مجدداً کپی کنید.",
+      "",
+      "### حذف نصب",
+      "",
+      "```bash",
+      "npx skills remove i-have-adhd",
+      "```"
+     ],
+     "total": 430
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "bash",
+    "lines": 195,
+    "tokens": 233,
+    "first": {
+     "name": ".github/install/INSTALL.ar.md:bash",
+     "start": 9,
+     "end": 203
+    },
+    "others": [
+     {
+      "name": ".github/install/INSTALL.fa.md:bash",
+      "start": 9,
+      "end": 187
+     },
+     {
+      "name": ".github/install/INSTALL.id.md:bash",
+      "start": 9,
+      "end": 146
+     },
+     {
+      "name": ".github/install/INSTALL.ja.md:bash",
+      "start": 9,
+      "end": 147
+     },
+     {
+      "name": ".github/install/INSTALL.ko.md:bash",
+      "start": 9,
+      "end": 147
+     },
+     {
+      "name": ".github/install/INSTALL.pt-BR.md:bash",
+      "start": 9,
+      "end": 147
+     },
+     {
+      "name": ".github/install/INSTALL.vi.md:bash",
+      "start": 9,
+      "end": 147
+     },
+     {
+      "name": ".github/install/INSTALL.zh-CN.md:bash",
+      "start": 9,
+      "end": 200
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "agy plugin install https://github.com/ayghri/i-have-adhd",
+      "```",
+      "",
+      "### تحقق",
+      "",
+      "```bash",
+      "agy plugin list",
+      "```",
+      "",
+      "### تحديث"
+     ],
+     "total": 195
+    },
+    "excerptSecond": {
+     "lines": [
+      "agy plugin install https://github.com/ayghri/i-have-adhd",
+      "```",
+      "",
+      "### بررسی صحت نصب",
+      "",
+      "```bash",
+      "agy plugin list",
+      "```",
+      "",
+      "### به‌روزرسانی"
+     ],
+     "total": 179
+    },
+    "kind": "docs"
+   },
+   {
     "format": "markdown",
     "lines": 587,
     "tokens": 1392,
-    "firstFile": {
+    "first": {
      "name": ".github/install/INSTALL.vi.md:markdown",
      "start": 38,
      "end": 624
     },
-    "secondFile": {
-     "name": ".github/install/INSTALL.vi.md:markdown",
-     "start": 155,
-     "end": 694
-    }
+    "others": [
+     {
+      "name": ".github/install/INSTALL.vi.md:markdown",
+      "start": 155,
+      "end": 694
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "## Phong cách đầu ra",
+      "",
+      "Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:",
+      "",
+      "1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.",
+      "2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.",
+      "3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.",
+      "4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.",
+      "5. Nhắc lại tiến độ ở mỗi lượt (\"đã xong bước 3/5\").",
+      "6. Ước tính thời gian bằng đơn vị cụ thể, không nói \"một chút\"."
+     ],
+     "total": 587
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "bash",
+    "lines": 191,
+    "tokens": 291,
+    "first": {
+     "name": ".github/install/INSTALL.ar.md:bash",
+     "start": 373,
+     "end": 563
+    },
+    "others": [
+     {
+      "name": ".github/install/INSTALL.id.md:bash",
+      "start": 254,
+      "end": 442
+     },
+     {
+      "name": ".github/install/INSTALL.ko.md:bash",
+      "start": 255,
+      "end": 444
+     },
+     {
+      "name": ".github/install/INSTALL.pt-BR.md:bash",
+      "start": 255,
+      "end": 444
+     },
+     {
+      "name": ".github/install/INSTALL.vi.md:bash",
+      "start": 255,
+      "end": 444
+     }
+    ],
+    "copies": 5,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 582,
     "tokens": 1144,
-    "firstFile": {
+    "first": {
      "name": ".github/install/INSTALL.id.md:markdown",
      "start": 40,
      "end": 621
     },
-    "secondFile": {
-     "name": ".github/install/INSTALL.id.md:markdown",
-     "start": 156,
-     "end": 691
-    }
+    "others": [
+     {
+      "name": ".github/install/INSTALL.id.md:markdown",
+      "start": 156,
+      "end": 691
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 132,
     "tokens": 1139,
-    "firstFile": {
+    "first": {
      "name": ".cursor/skills/i-have-adhd/SKILL.md:markdown",
      "start": 11,
      "end": 142
     },
-    "secondFile": {
-     "name": "skills/i-have-adhd/SKILL.md:markdown",
-     "start": 11,
-     "end": 142
-    }
+    "others": [
+     {
+      "name": "skills/i-have-adhd/SKILL.md:markdown",
+      "start": 11,
+      "end": 142
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 587,
     "tokens": 1080,
-    "firstFile": {
+    "first": {
      "name": ".github/install/INSTALL.pt-BR.md:markdown",
      "start": 38,
      "end": 624
     },
-    "secondFile": {
-     "name": ".github/install/INSTALL.pt-BR.md:markdown",
-     "start": 155,
-     "end": 694
-    }
+    "others": [
+     {
+      "name": ".github/install/INSTALL.pt-BR.md:markdown",
+      "start": 155,
+      "end": 694
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 758,
     "tokens": 1020,
-    "firstFile": {
+    "first": {
      "name": ".github/install/INSTALL.ar.md:markdown",
      "start": 38,
      "end": 795
     },
-    "secondFile": {
-     "name": ".github/install/INSTALL.ar.md:markdown",
-     "start": 211,
-     "end": 865
-    }
+    "others": [
+     {
+      "name": ".github/install/INSTALL.ar.md:markdown",
+      "start": 211,
+      "end": 865
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 744,
     "tokens": 1020,
-    "firstFile": {
+    "first": {
      "name": ".github/install/INSTALL.fa.md:markdown",
      "start": 38,
      "end": 781
     },
-    "secondFile": {
-     "name": "INSTALL.md:markdown",
-     "start": 38,
-     "end": 803
-    }
+    "others": [
+     {
+      "name": "INSTALL.md:markdown",
+      "start": 38,
+      "end": 803
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 587,
     "tokens": 942,
-    "firstFile": {
+    "first": {
      "name": ".github/install/INSTALL.ko.md:markdown",
      "start": 38,
      "end": 624
     },
-    "secondFile": {
-     "name": ".github/install/INSTALL.ko.md:markdown",
-     "start": 155,
-     "end": 694
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 674,
-    "tokens": 850,
-    "firstFile": {
-     "name": ".github/install/INSTALL.fa.md:markdown",
-     "start": 38,
-     "end": 711
-    },
-    "secondFile": {
-     "name": ".github/install/INSTALL.fa.md:markdown",
-     "start": 195,
-     "end": 781
-    }
-   },
-   {
-    "format": "bash",
-    "lines": 436,
-    "tokens": 551,
-    "firstFile": {
-     "name": ".github/install/INSTALL.ar.md:bash",
-     "start": 373,
-     "end": 808
-    },
-    "secondFile": {
-     "name": ".github/install/INSTALL.fa.md:bash",
-     "start": 295,
-     "end": 724
-    }
-   },
-   {
-    "format": "bash",
-    "lines": 436,
-    "tokens": 551,
-    "firstFile": {
-     "name": ".github/install/INSTALL.ar.md:bash",
-     "start": 373,
-     "end": 808
-    },
-    "secondFile": {
-     "name": ".github/install/INSTALL.ja.md:bash",
-     "start": 255,
-     "end": 687
-    }
+    "others": [
+     {
+      "name": ".github/install/INSTALL.ko.md:markdown",
+      "start": 155,
+      "end": 694
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -496,6 +681,74 @@
      "lines": 2
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 21,
+   "lines": 2954,
+   "tokens": 15829,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 4,
+     "lines": 1482,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 681,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 3,
+     "lines": 388,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 2,
+     "lines": 179,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 50,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:39:47.016Z",
+  "jscpdVersion": "5.4.0"
  }
 }

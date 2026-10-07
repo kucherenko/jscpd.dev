@@ -9,10 +9,12 @@
    "starsToday": 172,
    "headSha": "ca2df55b78d6194612b65ae3fbfaa55a4678a683",
    "sources": 111,
-   "lines": 5750,
+   "lines": 5502,
    "clones": 70,
-   "duplicatedLines": 1534,
-   "percentage": 26.68,
+   "duplicatedLines": 1594,
+   "percentage": 28.97,
+   "codePercentage": 27.61,
+   "codeSources": 55,
    "healthScore": 41.5,
    "healthGrade": "D"
   }
@@ -28,16 +30,16 @@
   "starsToday": 172,
   "defaultBranch": "master",
   "headSha": "ca2df55b78d6194612b65ae3fbfaa55a4678a683",
-  "durationMs": 705,
+  "durationMs": 34,
   "total": {
    "sources": 111,
-   "lines": 5750,
-   "tokens": 35163,
+   "lines": 5502,
+   "tokens": 34998,
    "clones": 70,
-   "duplicatedLines": 1534,
+   "duplicatedLines": 1594,
    "duplicatedTokens": 10057,
-   "percentage": 26.68,
-   "percentageTokens": 28.6
+   "percentage": 28.97,
+   "percentageTokens": 28.74
   },
   "formats": [
    {
@@ -45,69 +47,69 @@
     "sources": 54,
     "lines": 2487,
     "clones": 32,
-    "duplicatedLines": 853,
-    "percentage": 34.3
+    "duplicatedLines": 885,
+    "percentage": 35.59
    },
    {
     "format": "markdown",
     "sources": 20,
     "lines": 1367,
     "clones": 14,
-    "duplicatedLines": 222,
-    "percentage": 16.24
+    "duplicatedLines": 236,
+    "percentage": 17.26
    },
    {
     "format": "javascript",
     "sources": 4,
     "lines": 312,
     "clones": 8,
-    "duplicatedLines": 210,
-    "percentage": 67.31
+    "duplicatedLines": 218,
+    "percentage": 69.87
    },
    {
     "format": "markup",
     "sources": 5,
     "lines": 226,
     "clones": 7,
-    "duplicatedLines": 111,
-    "percentage": 49.12
+    "duplicatedLines": 118,
+    "percentage": 52.21
    },
    {
     "format": "yaml",
     "sources": 4,
     "lines": 60,
     "clones": 3,
-    "duplicatedLines": 42,
-    "percentage": 70
+    "duplicatedLines": 45,
+    "percentage": 75
    },
    {
     "format": "css",
     "sources": 4,
     "lines": 32,
     "clones": 3,
-    "duplicatedLines": 21,
-    "percentage": 65.63
+    "duplicatedLines": 24,
+    "percentage": 75
    },
    {
     "format": "sql",
     "sources": 4,
     "lines": 84,
     "clones": 2,
-    "duplicatedLines": 40,
-    "percentage": 47.62
+    "duplicatedLines": 42,
+    "percentage": 50
    },
    {
     "format": "text",
     "sources": 2,
-    "lines": 158,
+    "lines": 50,
     "clones": 1,
-    "duplicatedLines": 35,
-    "percentage": 22.15
+    "duplicatedLines": 26,
+    "percentage": 52
    },
    {
     "format": "bash",
     "sources": 11,
-    "lines": 806,
+    "lines": 660,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -115,7 +117,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -124,153 +126,276 @@
   "topClones": [
    {
     "format": "python",
+    "lines": 56,
+    "tokens": 283,
+    "first": {
+     "name": "week4/backend/app/db.py",
+     "start": 1,
+     "end": 56
+    },
+    "others": [
+     {
+      "name": "week5/backend/app/db.py",
+      "start": 1,
+      "end": 56
+     },
+     {
+      "name": "week6/backend/app/db.py",
+      "start": 1,
+      "end": 56
+     },
+     {
+      "name": "week7/backend/app/db.py",
+      "start": 1,
+      "end": 56
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "import os",
+      "from collections.abc import Iterator",
+      "from contextlib import contextmanager",
+      "from pathlib import Path",
+      "",
+      "from dotenv import load_dotenv",
+      "from sqlalchemy import create_engine, text",
+      "from sqlalchemy.orm import Session, sessionmaker",
+      "",
+      "load_dotenv()"
+     ],
+     "total": 56
+    },
+    "kind": "code"
+   },
+   {
+    "format": "css",
+    "lines": 8,
+    "tokens": 206,
+    "first": {
+     "name": "week4/frontend/styles.css",
+     "start": 1,
+     "end": 8
+    },
+    "others": [
+     {
+      "name": "week5/frontend/styles.css",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "week6/frontend/styles.css",
+      "start": 1,
+      "end": 8
+     },
+     {
+      "name": "week7/frontend/styles.css",
+      "start": 1,
+      "end": 8
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;margin:0;padding:0;background:#fafafa;color:#111}",
+      "main{max-width:900px;margin:2rem auto;padding:0 1rem}",
+      "h1{font-size:1.8rem}",
+      "section{background:#fff;border:1px solid #eee;border-radius:8px;padding:1rem;margin:1rem 0}",
+      "form{display:flex;gap:.5rem;margin-bottom:.5rem}",
+      "input{flex:1;padding:.5rem;border:1px solid #ccc;border-radius:4px}",
+      "button{padding:.5rem .8rem;border:1px solid #ccc;border-radius:4px;background:#f5f5f5;cursor:pointer}",
+      "ul{list-style:disc;padding-left:1.25rem}"
+     ],
+     "total": 8
+    },
+    "kind": "styles"
+   },
+   {
+    "format": "python",
+    "lines": 39,
+    "tokens": 188,
+    "first": {
+     "name": "week4/backend/tests/conftest.py",
+     "start": 1,
+     "end": 39
+    },
+    "others": [
+     {
+      "name": "week5/backend/tests/conftest.py",
+      "start": 1,
+      "end": 39
+     },
+     {
+      "name": "week6/backend/tests/conftest.py",
+      "start": 1,
+      "end": 39
+     },
+     {
+      "name": "week7/backend/tests/conftest.py",
+      "start": 1,
+      "end": 39
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "import os",
+      "import tempfile",
+      "from collections.abc import Generator",
+      "",
+      "import pytest",
+      "from backend.app.db import get_db",
+      "from backend.app.main import app",
+      "from backend.app.models import Base",
+      "from fastapi.testclient import TestClient",
+      "from sqlalchemy import create_engine"
+     ],
+     "total": 39
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
     "lines": 70,
     "tokens": 532,
-    "firstFile": {
+    "first": {
      "name": "week6/backend/app/routers/action_items.py",
      "start": 1,
      "end": 70
     },
-    "secondFile": {
-     "name": "week7/backend/app/routers/action_items.py",
-     "start": 1,
-     "end": 70
-    }
+    "others": [
+     {
+      "name": "week7/backend/app/routers/action_items.py",
+      "start": 1,
+      "end": 70
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 77,
     "tokens": 527,
-    "firstFile": {
+    "first": {
      "name": "week6/frontend/app.js",
      "start": 14,
      "end": 90
     },
-    "secondFile": {
-     "name": "week7/frontend/app.js",
-     "start": 14,
-     "end": 90
-    }
+    "others": [
+     {
+      "name": "week7/frontend/app.js",
+      "start": 14,
+      "end": 90
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 62,
     "tokens": 504,
-    "firstFile": {
+    "first": {
      "name": "week6/backend/app/routers/notes.py",
      "start": 5,
      "end": 66
     },
-    "secondFile": {
-     "name": "week7/backend/app/routers/notes.py",
-     "start": 5,
-     "end": 66
-    }
+    "others": [
+     {
+      "name": "week7/backend/app/routers/notes.py",
+      "start": 5,
+      "end": 66
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "javascript",
     "lines": 66,
     "tokens": 457,
-    "firstFile": {
+    "first": {
      "name": "week4/frontend/app.js",
      "start": 1,
      "end": 66
     },
-    "secondFile": {
-     "name": "week5/frontend/app.js",
-     "start": 1,
-     "end": 66
-    }
+    "others": [
+     {
+      "name": "week5/frontend/app.js",
+      "start": 1,
+      "end": 66
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 47,
     "tokens": 385,
-    "firstFile": {
+    "first": {
      "name": "week4/backend/app/routers/notes.py",
      "start": 1,
      "end": 47
     },
-    "secondFile": {
-     "name": "week5/backend/app/routers/notes.py",
-     "start": 1,
-     "end": 47
-    }
+    "others": [
+     {
+      "name": "week5/backend/app/routers/notes.py",
+      "start": 1,
+      "end": 47
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
-    "format": "python",
-    "lines": 56,
-    "tokens": 283,
-    "firstFile": {
-     "name": "week4/backend/app/db.py",
+    "format": "yaml",
+    "lines": 15,
+    "tokens": 104,
+    "first": {
+     "name": "week4/pre-commit-config.yaml",
      "start": 1,
-     "end": 56
+     "end": 15
     },
-    "secondFile": {
-     "name": "week5/backend/app/db.py",
-     "start": 1,
-     "end": 56
-    }
-   },
-   {
-    "format": "python",
-    "lines": 56,
-    "tokens": 283,
-    "firstFile": {
-     "name": "week4/backend/app/db.py",
-     "start": 1,
-     "end": 56
-    },
-    "secondFile": {
-     "name": "week6/backend/app/db.py",
-     "start": 1,
-     "end": 56
-    }
-   },
-   {
-    "format": "python",
-    "lines": 56,
-    "tokens": 283,
-    "firstFile": {
-     "name": "week4/backend/app/db.py",
-     "start": 1,
-     "end": 56
-    },
-    "secondFile": {
-     "name": "week7/backend/app/db.py",
-     "start": 1,
-     "end": 56
-    }
+    "others": [
+     {
+      "name": "week5/pre-commit-config.yaml",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "week6/pre-commit-config.yaml",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "week7/pre-commit-config.yaml",
+      "start": 1,
+      "end": 15
+     }
+    ],
+    "copies": 4,
+    "kind": "data"
    },
    {
     "format": "python",
     "lines": 36,
     "tokens": 275,
-    "firstFile": {
+    "first": {
      "name": "week4/backend/app/routers/action_items.py",
      "start": 1,
      "end": 36
     },
-    "secondFile": {
-     "name": "week5/backend/app/routers/action_items.py",
-     "start": 1,
-     "end": 36
-    }
-   },
-   {
-    "format": "text",
-    "lines": 36,
-    "tokens": 244,
-    "firstFile": {
-     "name": "week8/writeup.md:text",
-     "start": 27,
-     "end": 62
-    },
-    "secondFile": {
-     "name": "week8/writeup.md:text",
-     "start": 47,
-     "end": 82
-    }
+    "others": [
+     {
+      "name": "week5/backend/app/routers/action_items.py",
+      "start": 1,
+      "end": 36
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -483,6 +608,312 @@
      "lines": 10
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 55,
+   "lines": 3310,
+   "tokens": 17291,
+   "clones": 32,
+   "duplicatedLines": 914,
+   "duplicatedTokens": 5673,
+   "percentage": 27.61,
+   "percentageTokens": 32.81,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 37,
+     "lines": 2096,
+     "clones": 22,
+     "duplicatedLines": 654,
+     "percentage": 31.2
+    },
+    {
+     "format": "javascript",
+     "sources": 4,
+     "lines": 312,
+     "clones": 8,
+     "duplicatedLines": 218,
+     "percentage": 69.87
+    },
+    {
+     "format": "sql",
+     "sources": 4,
+     "lines": 84,
+     "clones": 2,
+     "duplicatedLines": 42,
+     "percentage": 50
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 56,
+     "tokens": 283,
+     "first": {
+      "name": "week4/backend/app/db.py",
+      "start": 1,
+      "end": 56
+     },
+     "others": [
+      {
+       "name": "week5/backend/app/db.py",
+       "start": 1,
+       "end": 56
+      },
+      {
+       "name": "week6/backend/app/db.py",
+       "start": 1,
+       "end": 56
+      },
+      {
+       "name": "week7/backend/app/db.py",
+       "start": 1,
+       "end": 56
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "import os",
+       "from collections.abc import Iterator",
+       "from contextlib import contextmanager",
+       "from pathlib import Path",
+       "",
+       "from dotenv import load_dotenv",
+       "from sqlalchemy import create_engine, text",
+       "from sqlalchemy.orm import Session, sessionmaker",
+       "",
+       "load_dotenv()"
+      ],
+      "total": 56
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 70,
+     "tokens": 532,
+     "first": {
+      "name": "week6/backend/app/routers/action_items.py",
+      "start": 1,
+      "end": 70
+     },
+     "others": [
+      {
+       "name": "week7/backend/app/routers/action_items.py",
+       "start": 1,
+       "end": 70
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "from typing import Optional",
+       "",
+       "from fastapi import APIRouter, Depends, HTTPException, Query",
+       "from sqlalchemy import asc, desc, select",
+       "from sqlalchemy.orm import Session",
+       "",
+       "from ..db import get_db",
+       "from ..models import ActionItem",
+       "from ..schemas import ActionItemCreate, ActionItemPatch, ActionItemRead",
+       ""
+      ],
+      "total": 70
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 77,
+     "tokens": 527,
+     "first": {
+      "name": "week6/frontend/app.js",
+      "start": 14,
+      "end": 90
+     },
+     "others": [
+      {
+       "name": "week7/frontend/app.js",
+       "start": 14,
+       "end": 90
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    li.innerHTML = `<strong>${n.title}</strong>: ${n.content}`;",
+       "    list.appendChild(li);",
+       "  }",
+       "}",
+       "",
+       "async function loadActions(params = {}) {",
+       "  const list = document.getElementById('actions');",
+       "  list.innerHTML = '';",
+       "  const query = new URLSearchParams(params);",
+       "  const items = await fetchJSON('/action-items/?' + query.toString());"
+      ],
+      "total": 77
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 62,
+     "tokens": 504,
+     "first": {
+      "name": "week6/backend/app/routers/notes.py",
+      "start": 5,
+      "end": 66
+     },
+     "others": [
+      {
+       "name": "week7/backend/app/routers/notes.py",
+       "start": 5,
+       "end": 66
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 66,
+     "tokens": 457,
+     "first": {
+      "name": "week4/frontend/app.js",
+      "start": 1,
+      "end": 66
+     },
+     "others": [
+      {
+       "name": "week5/frontend/app.js",
+       "start": 1,
+       "end": 66
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 47,
+     "tokens": 385,
+     "first": {
+      "name": "week4/backend/app/routers/notes.py",
+      "start": 1,
+      "end": 47
+     },
+     "others": [
+      {
+       "name": "week5/backend/app/routers/notes.py",
+       "start": 1,
+       "end": 47
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 36,
+     "tokens": 275,
+     "first": {
+      "name": "week4/backend/app/routers/action_items.py",
+      "start": 1,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "week5/backend/app/routers/action_items.py",
+       "start": 1,
+       "end": 36
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 181,
+     "first": {
+      "name": "week4/backend/app/routers/action_items.py",
+      "start": 14,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "week6/backend/app/routers/action_items.py",
+       "start": 33,
+       "end": 55
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 29,
+     "tokens": 167,
+     "first": {
+      "name": "week6/backend/app/models.py",
+      "start": 1,
+      "end": 29
+     },
+     "others": [
+      {
+       "name": "week7/backend/app/models.py",
+       "start": 1,
+       "end": 29
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "sql",
+     "lines": 23,
+     "tokens": 148,
+     "first": {
+      "name": "week6/data/seed.sql",
+      "start": 1,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "week7/data/seed.sql",
+       "start": 1,
+       "end": 23
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:17:18.148Z",
+  "jscpdVersion": "5.4.0"
  }
 }

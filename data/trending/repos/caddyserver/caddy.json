@@ -9,10 +9,12 @@
    "starsToday": 24,
    "headSha": "8507b63cf03a7a0d90b2084f3aafbcc1d8e60a7b",
    "sources": 397,
-   "lines": 125184,
+   "lines": 125140,
    "clones": 547,
    "duplicatedLines": 6969,
    "percentage": 5.57,
+   "codePercentage": 2.71,
+   "codeSources": 222,
    "healthScore": 51.3,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 515,
    "headSha": "700d60327d77d56ba81455acb989a698f1819640",
    "sources": 398,
-   "lines": 125710,
+   "lines": 125666,
    "clones": 548,
    "duplicatedLines": 6978,
    "percentage": 5.55,
+   "codePercentage": 2.71,
+   "codeSources": 222,
    "healthScore": 51.3,
    "healthGrade": "D"
   }
@@ -42,11 +46,11 @@
   "starsToday": 515,
   "defaultBranch": "master",
   "headSha": "700d60327d77d56ba81455acb989a698f1819640",
-  "durationMs": 972,
+  "durationMs": 580,
   "total": {
    "sources": 398,
-   "lines": 125710,
-   "tokens": 666432,
+   "lines": 125666,
+   "tokens": 666267,
    "clones": 548,
    "duplicatedLines": 6978,
    "duplicatedTokens": 43784,
@@ -105,7 +109,7 @@
    {
     "format": "bash",
     "sources": 10,
-    "lines": 701,
+    "lines": 651,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -113,7 +117,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -124,151 +128,386 @@
     "format": "go",
     "lines": 127,
     "tokens": 479,
-    "firstFile": {
+    "first": {
      "name": "listeners_test.go",
      "start": 236,
      "end": 362
     },
-    "secondFile": {
-     "name": "listeners_test.go",
-     "start": 362,
-     "end": 488
-    }
+    "others": [
+     {
+      "name": "listeners_test.go",
+      "start": 362,
+      "end": 488
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "func TestParseNetworkAddress(t *testing.T) {",
+      "    for i, tc := range []struct {",
+      "        input          string",
+      "        defaultNetwork string",
+      "        defaultPort    uint",
+      "        expectAddr     NetworkAddress",
+      "        expectErr      bool",
+      "    }{",
+      "        {",
+      "            input:      \"\","
+     ],
+     "total": 127
+    },
+    "kind": "tests"
    },
    {
     "format": "go",
     "lines": 67,
     "tokens": 469,
-    "firstFile": {
+    "first": {
      "name": "modules/caddyhttp/metrics_test.go",
      "start": 36,
      "end": 102
     },
-    "secondFile": {
-     "name": "modules/caddyhttp/metrics_test.go",
-     "start": 210,
-     "end": 276
-    }
+    "others": [
+     {
+      "name": "modules/caddyhttp/metrics_test.go",
+      "start": 210,
+      "end": 276
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    httpMetrics: &httpMetrics{},",
+      "}",
+      "handlerErr := errors.New(\"oh noes\")",
+      "response := []byte(\"hello world!\")",
+      "h := HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {",
+      "    if actual := testutil.ToFloat64(metrics.httpMetrics.requestInFlight); actual != 1.0 {",
+      "        t.Errorf(\"Not same: expected %#v, but got %#v\", 1.0, actual)",
+      "    }",
+      "    if handlerErr == nil {",
+      "        w.Write(response)"
+     ],
+     "total": 67
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 14,
+    "tokens": 115,
+    "first": {
+     "name": "modules/caddyhttp/server_test.go",
+     "start": 598,
+     "end": 611
+    },
+    "others": [
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 617,
+      "end": 630
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 638,
+      "end": 651
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 659,
+      "end": 672
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 1153,
+      "end": 1166
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "func TestServer_serveHTTP_AllowlistKeepsExactMatch(t *testing.T) {",
+      "    got := &http.Header{}",
+      "    s := &Server{",
+      "        logger:                    zap.NewNop(),",
+      "        ExpectedUnderscoreHeaders: []string{\"user_id\"},",
+      "        primaryHandlerChain: HandlerFunc(func(w http.ResponseWriter, r *http.Request) error {",
+      "            *got = r.Header.Clone()",
+      "            return nil",
+      "        }),",
+      "    }"
+     ],
+     "total": 14
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 9,
+    "tokens": 90,
+    "first": {
+     "name": "modules/caddyhttp/encode/sse_test.go",
+     "start": 89,
+     "end": 97
+    },
+    "others": [
+     {
+      "name": "modules/caddyhttp/encode/sse_test.go",
+      "start": 126,
+      "end": 134
+     },
+     {
+      "name": "modules/caddyhttp/encode/sse_test.go",
+      "start": 150,
+      "end": 158
+     },
+     {
+      "name": "modules/caddyhttp/encode/sse_test.go",
+      "start": 179,
+      "end": 187
+     },
+     {
+      "name": "modules/caddyhttp/encode/sse_test.go",
+      "start": 203,
+      "end": 211
+     },
+     {
+      "name": "modules/caddyhttp/encode/sse_test.go",
+      "start": 227,
+      "end": 235
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 14,
+    "tokens": 105,
+    "first": {
+     "name": "modules/caddyhttp/server_test.go",
+     "start": 747,
+     "end": 760
+    },
+    "others": [
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 766,
+      "end": 779
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 785,
+      "end": 798
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 1054,
+      "end": 1067
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 1174,
+      "end": 1187
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 6,
+    "tokens": 70,
+    "first": {
+     "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+     "start": 160,
+     "end": 165
+    },
+    "others": [
+     {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 172,
+      "end": 177
+     },
+     {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 184,
+      "end": 189
+     },
+     {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 190,
+      "end": 195
+     },
+     {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 196,
+      "end": 201
+     },
+     {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 217,
+      "end": 222
+     },
+     {
+      "name": "caddyconfig/httpcaddyfile/builtins_test.go",
+      "start": 229,
+      "end": 234
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 6,
+    "tokens": 51,
+    "first": {
+     "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+     "start": 90,
+     "end": 95
+    },
+    "others": [
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 101,
+      "end": 105
+     },
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 130,
+      "end": 135
+     },
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 149,
+      "end": 153
+     },
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 226,
+      "end": 230
+     },
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 245,
+      "end": 250
+     },
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 256,
+      "end": 258
+     },
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 269,
+      "end": 273
+     },
+     {
+      "name": "modules/caddyhttp/encode/testdata/caddy_home.html",
+      "start": 453,
+      "end": 455
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 10,
+    "tokens": 54,
+    "first": {
+     "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+     "start": 345,
+     "end": 354
+    },
+    "others": [
+     {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 370,
+      "end": 379
+     },
+     {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 390,
+      "end": 399
+     },
+     {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 451,
+      "end": 460
+     },
+     {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 467,
+      "end": 476
+     },
+     {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 483,
+      "end": 492
+     },
+     {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 527,
+      "end": 536
+     },
+     {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 543,
+      "end": 552
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 12,
     "tokens": 357,
-    "firstFile": {
+    "first": {
      "name": "caddyconfig/caddyfile/parse_test.go",
      "start": 783,
      "end": 794
     },
-    "secondFile": {
-     "name": "caddyconfig/caddyfile/parse_test.go",
-     "start": 886,
-     "end": 898
-    }
+    "others": [
+     {
+      "name": "caddyconfig/caddyfile/parse_test.go",
+      "start": 886,
+      "end": 898
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "go",
-    "lines": 17,
-    "tokens": 289,
-    "firstFile": {
-     "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-     "start": 91,
-     "end": 107
+    "lines": 14,
+    "tokens": 115,
+    "first": {
+     "name": "modules/caddyhttp/server_test.go",
+     "start": 851,
+     "end": 864
     },
-    "secondFile": {
-     "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-     "start": 234,
-     "end": 249
-    }
-   },
-   {
-    "format": "go",
-    "lines": 16,
-    "tokens": 286,
-    "firstFile": {
-     "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-     "start": 259,
-     "end": 274
-    },
-    "secondFile": {
-     "name": "caddyconfig/httpcaddyfile/httptype_test.go",
-     "start": 91,
-     "end": 107
-    }
-   },
-   {
-    "format": "go",
-    "lines": 17,
-    "tokens": 270,
-    "firstFile": {
-     "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-     "start": 322,
-     "end": 338
-    },
-    "secondFile": {
-     "name": "caddyconfig/httpcaddyfile/builtins_test.go",
-     "start": 395,
-     "end": 411
-    }
-   },
-   {
-    "format": "go",
-    "lines": 50,
-    "tokens": 269,
-    "firstFile": {
-     "name": "modules/caddyhttp/celmatcher.go",
-     "start": 757,
-     "end": 806
-    },
-    "secondFile": {
-     "name": "modules/caddyhttp/fileserver/matcher.go",
-     "start": 665,
-     "end": 714
-    }
-   },
-   {
-    "format": "go",
-    "lines": 44,
-    "tokens": 269,
-    "firstFile": {
-     "name": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
-     "start": 345,
-     "end": 388
-    },
-    "secondFile": {
-     "name": "modules/caddyhttp/reverseproxy/selectionpolicies_test.go",
-     "start": 488,
-     "end": 531
-    }
-   },
-   {
-    "format": "go",
-    "lines": 42,
-    "tokens": 248,
-    "firstFile": {
-     "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
-     "start": 1555,
-     "end": 1596
-    },
-    "secondFile": {
-     "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
-     "start": 1655,
-     "end": 1696
-    }
-   },
-   {
-    "format": "go",
-    "lines": 48,
-    "tokens": 241,
-    "firstFile": {
-     "name": "caddytest/integration/reverseproxy_test.go",
-     "start": 457,
-     "end": 504
-    },
-    "secondFile": {
-     "name": "caddytest/integration/reverseproxy_test.go",
-     "start": 515,
-     "end": 562
-    }
+    "others": [
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 873,
+      "end": 886
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 900,
+      "end": 913
+     },
+     {
+      "name": "modules/caddyhttp/server_test.go",
+      "start": 923,
+      "end": 936
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -390,6 +629,353 @@
    "files": 1,
    "byCategory": [],
    "largest": []
-  }
+  },
+  "code": {
+   "sources": 222,
+   "lines": 73444,
+   "tokens": 333156,
+   "clones": 155,
+   "duplicatedLines": 1989,
+   "duplicatedTokens": 11606,
+   "percentage": 2.71,
+   "percentageTokens": 3.48,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 212,
+     "lines": 72626,
+     "clones": 155,
+     "duplicatedLines": 1989,
+     "percentage": 2.74
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 54,
+     "first": {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 345,
+      "end": 354
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 370,
+       "end": 379
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 390,
+       "end": 399
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 451,
+       "end": 460
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 467,
+       "end": 476
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 483,
+       "end": 492
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 527,
+       "end": 536
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 543,
+       "end": 552
+      }
+     ],
+     "copies": 8,
+     "excerpt": {
+      "lines": [
+       "case \"health_uri\":",
+       "    if !d.NextArg() {",
+       "        return d.ArgErr()",
+       "    }",
+       "    if h.HealthChecks == nil {",
+       "        h.HealthChecks = new(HealthChecks)",
+       "    }",
+       "    if h.HealthChecks.Active == nil {",
+       "        h.HealthChecks.Active = new(ActiveHealthChecks)",
+       "    }"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 50,
+     "tokens": 269,
+     "first": {
+      "name": "modules/caddyhttp/celmatcher.go",
+      "start": 757,
+      "end": 806
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/fileserver/matcher.go",
+       "start": 665,
+       "end": 714
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        if call.FunctionName() == CELPlaceholderFuncName {",
+       "            return true",
+       "        }",
+       "    case ast.UnspecifiedExprKind, ast.ComprehensionKind, ast.IdentKind, ast.ListKind, ast.LiteralKind, ast.MapKind, ast.SelectKind, ast.StructKind:",
+       "        // appeasing the linter :)",
+       "    }",
+       "    return false",
+       "}",
+       "",
+       "// isCELConcatCall tests whether the expression is a concat function (+) with string, placeholder, or"
+      ],
+      "total": 50
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 42,
+     "tokens": 248,
+     "first": {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 1555,
+      "end": 1596
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 1655,
+       "end": 1696
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    u.Name = d.Val()",
+       "",
+       "case \"refresh\":",
+       "    if !d.NextArg() {",
+       "        return d.ArgErr()",
+       "    }",
+       "    dur, err := caddy.ParseDuration(d.Val())",
+       "    if err != nil {",
+       "        return d.Errf(\"parsing refresh interval duration: %v\", err)",
+       "    }"
+      ],
+      "total": 42
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 11,
+     "tokens": 60,
+     "first": {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 345,
+      "end": 355
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 357,
+       "end": 367
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 427,
+       "end": 437
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 439,
+       "end": 449
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 503,
+       "end": 513
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 39,
+     "tokens": 206,
+     "first": {
+      "name": "modules/caddyhttp/matchers.go",
+      "start": 1608,
+      "end": 1646
+     },
+     "others": [
+      {
+       "name": "modules/caddytls/matchers.go",
+       "start": 199,
+       "end": 237
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 45,
+     "tokens": 194,
+     "first": {
+      "name": "modules/logging/filters.go",
+      "start": 483,
+      "end": 527
+     },
+     "others": [
+      {
+       "name": "modules/logging/filters.go",
+       "start": 606,
+       "end": 650
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 38,
+     "tokens": 174,
+     "first": {
+      "name": "modules/logging/appendencoder.go",
+      "start": 146,
+      "end": 183
+     },
+     "others": [
+      {
+       "name": "modules/logging/filterencoder.go",
+       "start": 195,
+       "end": 232
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 35,
+     "tokens": 168,
+     "first": {
+      "name": "modules/caddyhttp/vars.go",
+      "start": 187,
+      "end": 221
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/vars.go",
+       "start": 333,
+       "end": 367
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 54,
+     "first": {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 559,
+      "end": 568
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 575,
+       "end": 584
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 591,
+       "end": 600
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 629,
+       "end": 638
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 8,
+     "tokens": 53,
+     "first": {
+      "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+      "start": 1164,
+      "end": 1171
+     },
+     "others": [
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 1252,
+       "end": 1259
+      },
+      {
+       "name": "modules/caddyhttp/reverseproxy/caddyfile.go",
+       "start": 1576,
+       "end": 1583
+      },
+      {
+       "name": "modules/caddytls/capools.go",
+       "start": 559,
+       "end": 566
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 1,
+    "sample": [
+     "modules/caddyhttp/encode/testdata/caddy_asciinema_player.js"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:28:22.962Z",
+  "jscpdVersion": "5.4.0"
  }
 }

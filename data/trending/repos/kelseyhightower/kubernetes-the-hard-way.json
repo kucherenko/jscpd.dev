@@ -9,10 +9,12 @@
    "starsToday": 119,
    "headSha": "52eb26dad1a3e9e8083a899bc854421eb4842a73",
    "sources": 44,
-   "lines": 3153,
+   "lines": 3109,
    "clones": 3,
    "duplicatedLines": 18,
-   "percentage": 0.57,
+   "percentage": 0.58,
+   "codePercentage": null,
+   "codeSources": 10,
    "healthScore": 81.8,
    "healthGrade": "B"
   }
@@ -28,25 +30,25 @@
   "starsToday": 119,
   "defaultBranch": "master",
   "headSha": "52eb26dad1a3e9e8083a899bc854421eb4842a73",
-  "durationMs": 920,
+  "durationMs": 21,
   "total": {
    "sources": 44,
-   "lines": 3153,
-   "tokens": 20440,
+   "lines": 3109,
+   "tokens": 20275,
    "clones": 3,
    "duplicatedLines": 18,
    "duplicatedTokens": 168,
-   "percentage": 0.57,
-   "percentageTokens": 0.82
+   "percentage": 0.58,
+   "percentageTokens": 0.83
   },
   "formats": [
    {
     "format": "bash",
     "sources": 19,
-    "lines": 1133,
+    "lines": 1083,
     "clones": 2,
     "duplicatedLines": 14,
-    "percentage": 1.24
+    "percentage": 1.29
    },
    {
     "format": "text",
@@ -67,7 +69,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -102,46 +104,140 @@
     "format": "bash",
     "lines": 21,
     "tokens": 57,
-    "firstFile": {
+    "first": {
      "name": "docs/05-kubernetes-configuration-files.md:bash",
      "start": 72,
      "end": 92
     },
-    "secondFile": {
-     "name": "docs/05-kubernetes-configuration-files.md:bash",
-     "start": 106,
-     "end": 127
-    }
+    "others": [
+     {
+      "name": "docs/05-kubernetes-configuration-files.md:bash",
+      "start": 106,
+      "end": 127
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    --kubeconfig=kube-proxy.kubeconfig",
+      "}",
+      "```",
+      "",
+      "Results:",
+      "",
+      "```text",
+      "kube-proxy.kubeconfig",
+      "```",
+      ""
+     ],
+     "total": 21
+    },
+    "excerptSecond": {
+     "lines": [
+      "    --kubeconfig=kube-controller-manager.kubeconfig",
+      "}",
+      "```",
+      "",
+      "Results:",
+      "",
+      "```text",
+      "kube-controller-manager.kubeconfig",
+      "```",
+      ""
+     ],
+     "total": 22
+    },
+    "kind": "docs"
    },
    {
     "format": "text",
     "lines": 11,
     "tokens": 57,
-    "firstFile": {
+    "first": {
      "name": "docs/11-pod-network-routes.md:text",
      "start": 52,
      "end": 62
     },
-    "secondFile": {
-     "name": "docs/11-pod-network-routes.md:text",
-     "start": 62,
-     "end": 72
-    }
+    "others": [
+     {
+      "name": "docs/11-pod-network-routes.md:text",
+      "start": 62,
+      "end": 72
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "10.200.0.0/24 via XXX.XXX.XXX.XXX dev ens160",
+      "10.200.1.0/24 via XXX.XXX.XXX.XXX dev ens160",
+      "XXX.XXX.XXX.0/24 dev ens160 proto kernel scope link src XXX.XXX.XXX.XXX",
+      "```",
+      "",
+      "```bash",
+      "ssh root@node-0 ip route",
+      "```",
+      "",
+      "```text"
+     ],
+     "total": 11
+    },
+    "excerptSecond": {
+     "lines": [
+      "default via XXX.XXX.XXX.XXX dev ens160",
+      "10.200.1.0/24 via XXX.XXX.XXX.XXX dev ens160",
+      "XXX.XXX.XXX.0/24 dev ens160 proto kernel scope link src XXX.XXX.XXX.XXX",
+      "```",
+      "",
+      "```bash",
+      "ssh root@node-1 ip route",
+      "```",
+      "",
+      "```text"
+     ],
+     "total": 11
+    },
+    "kind": "docs"
    },
    {
     "format": "bash",
     "lines": 6,
     "tokens": 54,
-    "firstFile": {
+    "first": {
      "name": "docs/05-kubernetes-configuration-files.md:bash",
      "start": 53,
      "end": 58
     },
-    "secondFile": {
-     "name": "docs/05-kubernetes-configuration-files.md:bash",
-     "start": 87,
-     "end": 92
-    }
+    "others": [
+     {
+      "name": "docs/05-kubernetes-configuration-files.md:bash",
+      "start": 87,
+      "end": 92
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  kubectl config set-cluster kubernetes-the-hard-way \\",
+      "    --certificate-authority=ca.crt \\",
+      "    --embed-certs=true \\",
+      "    --server=https://server.kubernetes.local:6443 \\",
+      "    --kubeconfig=kube-proxy.kubeconfig"
+     ],
+     "total": 6
+    },
+    "excerptSecond": {
+     "lines": [
+      "{",
+      "  kubectl config set-cluster kubernetes-the-hard-way \\",
+      "    --certificate-authority=ca.crt \\",
+      "    --embed-certs=true \\",
+      "    --server=https://server.kubernetes.local:6443 \\",
+      "    --kubeconfig=kube-controller-manager.kubeconfig"
+     ],
+     "total": 6
+    },
+    "kind": "docs"
    }
   ],
   "health": {
@@ -255,6 +351,42 @@
     }
    ]
   },
-  "deadCode": null
+  "deadCode": null,
+  "code": {
+   "sources": 10,
+   "lines": 818,
+   "tokens": 3040,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:26:18.034Z",
+  "jscpdVersion": "5.4.0"
  }
 }

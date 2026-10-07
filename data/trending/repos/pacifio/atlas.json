@@ -9,10 +9,12 @@
    "starsToday": 888,
    "headSha": "342ee3eb99a769a0a17fda962fa46c2fdf0263e6",
    "sources": 804,
-   "lines": 243588,
-   "clones": 549,
-   "duplicatedLines": 11502,
-   "percentage": 4.72,
+   "lines": 239520,
+   "clones": 595,
+   "duplicatedLines": 12258,
+   "percentage": 5.12,
+   "codePercentage": 1.82,
+   "codeSources": 632,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 91,
    "headSha": "81e6384c7cc962ab6ddde278f76f843b6370f1b3",
    "sources": 1024,
-   "lines": 302017,
+   "lines": 297621,
    "clones": 776,
-   "duplicatedLines": 16402,
-   "percentage": 5.43,
+   "duplicatedLines": 17178,
+   "percentage": 5.77,
+   "codePercentage": 2.03,
+   "codeSources": 794,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,73 +46,73 @@
   "starsToday": 91,
   "defaultBranch": "main",
   "headSha": "81e6384c7cc962ab6ddde278f76f843b6370f1b3",
-  "durationMs": 881,
+  "durationMs": 1229,
   "total": {
    "sources": 1024,
-   "lines": 302017,
-   "tokens": 1787210,
+   "lines": 297621,
+   "tokens": 1787045,
    "clones": 776,
-   "duplicatedLines": 16402,
+   "duplicatedLines": 17178,
    "duplicatedTokens": 82316,
-   "percentage": 5.43,
+   "percentage": 5.77,
    "percentageTokens": 4.61
   },
   "formats": [
    {
     "format": "rust",
     "sources": 274,
-    "lines": 133417,
+    "lines": 133154,
     "clones": 516,
-    "duplicatedLines": 4392,
-    "percentage": 3.29
+    "duplicatedLines": 4908,
+    "percentage": 3.69
    },
    {
     "format": "tsx",
     "sources": 291,
     "lines": 77746,
     "clones": 141,
-    "duplicatedLines": 2247,
-    "percentage": 2.89
+    "duplicatedLines": 2388,
+    "percentage": 3.07
    },
    {
     "format": "typescript",
     "sources": 348,
-    "lines": 52231,
+    "lines": 51141,
     "clones": 49,
-    "duplicatedLines": 657,
-    "percentage": 1.26
+    "duplicatedLines": 706,
+    "percentage": 1.38
    },
    {
     "format": "markup",
     "sources": 4,
     "lines": 4840,
     "clones": 43,
-    "duplicatedLines": 301,
-    "percentage": 6.22
+    "duplicatedLines": 344,
+    "percentage": 7.11
    },
    {
     "format": "css",
     "sources": 7,
     "lines": 4268,
     "clones": 16,
-    "duplicatedLines": 116,
-    "percentage": 2.72
+    "duplicatedLines": 132,
+    "percentage": 3.09
    },
    {
     "format": "bash",
     "sources": 19,
-    "lines": 6096,
+    "lines": 5787,
     "clones": 6,
-    "duplicatedLines": 105,
-    "percentage": 1.72
+    "duplicatedLines": 111,
+    "percentage": 1.92
    },
    {
     "format": "json",
     "sources": 12,
-    "lines": 12440,
+    "lines": 11795,
     "clones": 5,
-    "duplicatedLines": 8584,
-    "percentage": 69
+    "duplicatedLines": 8589,
+    "percentage": 72.82
    },
    {
     "format": "markdown",
@@ -121,15 +125,15 @@
    {
     "format": "toml",
     "sources": 22,
-    "lines": 2333,
+    "lines": 2245,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "text",
+    "format": "yaml",
     "sources": 5,
-    "lines": 1572,
+    "lines": 468,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,152 +144,839 @@
     "format": "json",
     "lines": 2831,
     "tokens": 8243,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/gen/schemas/desktop-schema.json",
      "start": 1,
      "end": 2831
     },
-    "secondFile": {
-     "name": "src-tauri/gen/schemas/linux-schema.json",
-     "start": 1,
-     "end": 2795
-    }
-   },
-   {
-    "format": "json",
-    "lines": 2831,
-    "tokens": 8243,
-    "firstFile": {
-     "name": "src-tauri/gen/schemas/desktop-schema.json",
-     "start": 1,
-     "end": 2831
+    "others": [
+     {
+      "name": "src-tauri/gen/schemas/linux-schema.json",
+      "start": 1,
+      "end": 2795
+     },
+     {
+      "name": "src-tauri/gen/schemas/macOS-schema.json",
+      "start": 1,
+      "end": 2831
+     },
+     {
+      "name": "src-tauri/gen/schemas/windows-schema.json",
+      "start": 1,
+      "end": 2831
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"$schema\": \"http://json-schema.org/draft-07/schema#\",",
+      "  \"title\": \"CapabilityFile\",",
+      "  \"description\": \"Capability formats accepted in a capability file.\",",
+      "  \"anyOf\": [",
+      "    {",
+      "      \"description\": \"A single capability.\",",
+      "      \"allOf\": [",
+      "        {",
+      "          \"$ref\": \"#/definitions/Capability\""
+     ],
+     "total": 2831
     },
-    "secondFile": {
-     "name": "src-tauri/gen/schemas/macOS-schema.json",
-     "start": 1,
-     "end": 2831
-    }
-   },
-   {
-    "format": "json",
-    "lines": 2831,
-    "tokens": 8243,
-    "firstFile": {
-     "name": "src-tauri/gen/schemas/desktop-schema.json",
-     "start": 1,
-     "end": 2831
-    },
-    "secondFile": {
-     "name": "src-tauri/gen/schemas/windows-schema.json",
-     "start": 1,
-     "end": 2831
-    }
+    "kind": "data"
    },
    {
     "format": "tsx",
     "lines": 183,
     "tokens": 1172,
-    "firstFile": {
+    "first": {
      "name": "src/features/knowledge/components/knowledge-graph.tsx",
      "start": 533,
      "end": 715
     },
-    "secondFile": {
-     "name": "src/features/memory/components/memory-graph-canvas.tsx",
-     "start": 519,
-     "end": 682
-    }
+    "others": [
+     {
+      "name": "src/features/memory/components/memory-graph-canvas.tsx",
+      "start": 519,
+      "end": 682
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  };",
+      "});",
+      "",
+      "// ── Viewport pan / zoom ──────────────────────────────────────",
+      "// Two pan paths:",
+      "//   • Middle / right-click drag — goes through pointer events.",
+      "//   • Space + left-click drag   — flips into a hard \"pan mode\" that",
+      "//     removes Matter's MouseConstraint and disables Pixi interaction",
+      "//     for the duration, then restores both on release.",
+      "let panStart: { startX: number; startY: number; origX: number; origY: number } | null = null;"
+     ],
+     "total": 183
+    },
+    "excerptSecond": {
+     "lines": [
+      "  sceneRef.current = { ...sceneRef.current, draggingId: null, draggingNeighbors: new Set() };",
+      "});",
+      "",
+      "let panStart: { startX: number; startY: number; origX: number; origY: number } | null = null;",
+      "let panMode = false;",
+      "let panOrigin: { startX: number; startY: number; origX: number; origY: number } | null = null;",
+      "let spaceHeld = false;",
+      "const stageEventMode = app.stage.eventMode;",
+      "const canvas = app.canvas as HTMLCanvasElement;",
+      ""
+     ],
+     "total": 164
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 59,
+    "first": {
+     "name": "crates/atlas-checkpoint/tests/capture.rs",
+     "start": 46,
+     "end": 53
+    },
+    "others": [
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 84,
+      "end": 91
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 149,
+      "end": 155
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 162,
+      "end": 168
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 183,
+      "end": 189
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 239,
+      "end": 245
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 265,
+      "end": 272
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 294,
+      "end": 300
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 324,
+      "end": 330
+     }
+    ],
+    "copies": 14,
+    "excerpt": {
+     "lines": [
+      "fn a_session_with_several_turns_produces_one_session_and_one_message_per_turn() {",
+      "    let dir = tempfile::tempdir().unwrap();",
+      "    let mut store = store_in(dir.path());",
+      "    let mut capture = Capture::new(&mut store, WorkspaceMode::Local);",
+      "",
+      "    let session_id = capture",
+      "        .record_prompt(",
+      "            &key(\"sess-1\"),"
+     ],
+     "total": 8
+    },
+    "excerptSecond": {
+     "lines": [
+      "fn the_session_row_carries_its_identifying_facts() {",
+      "    let dir = tempfile::tempdir().unwrap();",
+      "    let mut store = store_in(dir.path());",
+      "    let mut capture = Capture::new(&mut store, WorkspaceMode::Local);",
+      "",
+      "    let session_id = capture",
+      "        .record_prompt(",
+      "            &key(\"sess-abc\"),"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 6,
+    "tokens": 52,
+    "first": {
+     "name": "crates/atlas-checkpoint/tests/capture.rs",
+     "start": 125,
+     "end": 130
+    },
+    "others": [
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 150,
+      "end": 155
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 163,
+      "end": 168
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 184,
+      "end": 189
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 240,
+      "end": 245
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 266,
+      "end": 272
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 295,
+      "end": 300
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 325,
+      "end": 330
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/capture.rs",
+      "start": 351,
+      "end": 355
+     }
+    ],
+    "copies": 15,
+    "kind": "tests"
+   },
+   {
+    "format": "tsx",
+    "lines": 7,
+    "tokens": 52,
+    "first": {
+     "name": ".design-sync/previews/ContextMenuCheckboxItem.tsx",
+     "start": 49,
+     "end": 55
+    },
+    "others": [
+     {
+      "name": ".design-sync/previews/ContextMenuContent.tsx",
+      "start": 49,
+      "end": 55
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuItem.tsx",
+      "start": 49,
+      "end": 55
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuItem.tsx",
+      "start": 69,
+      "end": 75
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuLabel.tsx",
+      "start": 49,
+      "end": 55
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuSeparator.tsx",
+      "start": 48,
+      "end": 54
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuShortcut.tsx",
+      "start": 49,
+      "end": 55
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuSub.tsx",
+      "start": 51,
+      "end": 57
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuSubContent.tsx",
+      "start": 51,
+      "end": 57
+     }
+    ],
+    "copies": 13,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 118,
     "tokens": 489,
-    "firstFile": {
+    "first": {
      "name": "src/features/knowledge/components/knowledge-graph.tsx",
      "start": 245,
      "end": 362
     },
-    "secondFile": {
-     "name": "src/features/memory/components/memory-graph-canvas.tsx",
-     "start": 251,
-     "end": 358
-    }
+    "others": [
+     {
+      "name": "src/features/memory/components/memory-graph-canvas.tsx",
+      "start": 251,
+      "end": 358
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "tsx",
+    "lines": 43,
+    "tokens": 159,
+    "first": {
+     "name": ".design-sync/previews/ContextMenuItem.tsx",
+     "start": 7,
+     "end": 49
+    },
+    "others": [
+     {
+      "name": ".design-sync/previews/ContextMenuLabel.tsx",
+      "start": 7,
+      "end": 49
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuSeparator.tsx",
+      "start": 6,
+      "end": 48
+     },
+     {
+      "name": ".design-sync/previews/ContextMenuSub.tsx",
+      "start": 9,
+      "end": 51
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 39,
     "tokens": 452,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/commands/byok.rs",
      "start": 193,
      "end": 231
     },
-    "secondFile": {
-     "name": "src-tauri/src/commands/byok.rs",
-     "start": 655,
-     "end": 693
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/commands/byok.rs",
+      "start": 655,
+      "end": 693
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 51,
     "tokens": 424,
-    "firstFile": {
+    "first": {
      "name": "src/features/canvas/components/canvas-panel.tsx",
      "start": 252,
      "end": 302
     },
-    "secondFile": {
-     "name": "src/features/spaces/components/space-canvas.tsx",
-     "start": 305,
-     "end": 353
-    }
-   },
-   {
-    "format": "tsx",
-    "lines": 48,
-    "tokens": 393,
-    "firstFile": {
-     "name": "src/features/knowledge/components/knowledge-graph.tsx",
-     "start": 362,
-     "end": 409
-    },
-    "secondFile": {
-     "name": "src/features/memory/components/memory-graph-canvas.tsx",
-     "start": 358,
-     "end": 401
-    }
+    "others": [
+     {
+      "name": "src/features/spaces/components/space-canvas.tsx",
+      "start": 305,
+      "end": 353
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "rust",
-    "lines": 45,
-    "tokens": 338,
-    "firstFile": {
-     "name": "crates/atlas-checkpoint/tests/linkage.rs",
-     "start": 21,
-     "end": 65
+    "lines": 6,
+    "tokens": 50,
+    "first": {
+     "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+     "start": 162,
+     "end": 167
     },
-    "secondFile": {
-     "name": "crates/atlas-checkpoint/tests/rewrites.rs",
-     "start": 20,
-     "end": 64
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 28,
-    "tokens": 212,
-    "firstFile": {
-     "name": "crates/atlas-agent-delta/tests/pipeline.rs",
-     "start": 59,
-     "end": 86
-    },
-    "secondFile": {
-     "name": "crates/atlas-agent-delta/tests/projection.rs",
-     "start": 66,
-     "end": 93
-    }
+    "others": [
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 262,
+      "end": 267
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 406,
+      "end": 411
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 440,
+      "end": 445
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 483,
+      "end": 488
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 516,
+      "end": 521
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 903,
+      "end": 908
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 939,
+      "end": 944
+     },
+     {
+      "name": "crates/atlas-checkpoint/tests/tool_calls.rs",
+      "start": 1041,
+      "end": 1046
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 794,
+   "lines": 229360,
+   "tokens": 1232986,
+   "clones": 380,
+   "duplicatedLines": 4650,
+   "duplicatedTokens": 30530,
+   "percentage": 2.03,
+   "percentageTokens": 2.48,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 224,
+     "lines": 106018,
+     "clones": 211,
+     "duplicatedLines": 1924,
+     "percentage": 1.81
+    },
+    {
+     "format": "tsx",
+     "sources": 281,
+     "lines": 76171,
+     "clones": 140,
+     "duplicatedLines": 2370,
+     "percentage": 3.11
+    },
+    {
+     "format": "typescript",
+     "sources": 266,
+     "lines": 40777,
+     "clones": 23,
+     "duplicatedLines": 245,
+     "percentage": 0.6
+    },
+    {
+     "format": "bash",
+     "sources": 17,
+     "lines": 5736,
+     "clones": 6,
+     "duplicatedLines": 111,
+     "percentage": 1.94
+    },
+    {
+     "format": "javascript",
+     "sources": 4,
+     "lines": 293,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 191,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 183,
+     "tokens": 1172,
+     "first": {
+      "name": "src/features/knowledge/components/knowledge-graph.tsx",
+      "start": 533,
+      "end": 715
+     },
+     "others": [
+      {
+       "name": "src/features/memory/components/memory-graph-canvas.tsx",
+       "start": 519,
+       "end": 682
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  };",
+       "});",
+       "",
+       "// ── Viewport pan / zoom ──────────────────────────────────────",
+       "// Two pan paths:",
+       "//   • Middle / right-click drag — goes through pointer events.",
+       "//   • Space + left-click drag   — flips into a hard \"pan mode\" that",
+       "//     removes Matter's MouseConstraint and disables Pixi interaction",
+       "//     for the duration, then restores both on release.",
+       "let panStart: { startX: number; startY: number; origX: number; origY: number } | null = null;"
+      ],
+      "total": 183
+     },
+     "excerptSecond": {
+      "lines": [
+       "  sceneRef.current = { ...sceneRef.current, draggingId: null, draggingNeighbors: new Set() };",
+       "});",
+       "",
+       "let panStart: { startX: number; startY: number; origX: number; origY: number } | null = null;",
+       "let panMode = false;",
+       "let panOrigin: { startX: number; startY: number; origX: number; origY: number } | null = null;",
+       "let spaceHeld = false;",
+       "const stageEventMode = app.stage.eventMode;",
+       "const canvas = app.canvas as HTMLCanvasElement;",
+       ""
+      ],
+      "total": 164
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 7,
+     "tokens": 52,
+     "first": {
+      "name": ".design-sync/previews/ContextMenuCheckboxItem.tsx",
+      "start": 49,
+      "end": 55
+     },
+     "others": [
+      {
+       "name": ".design-sync/previews/ContextMenuContent.tsx",
+       "start": 49,
+       "end": 55
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuItem.tsx",
+       "start": 49,
+       "end": 55
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuItem.tsx",
+       "start": 69,
+       "end": 75
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuLabel.tsx",
+       "start": 49,
+       "end": 55
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuSeparator.tsx",
+       "start": 48,
+       "end": 54
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuShortcut.tsx",
+       "start": 49,
+       "end": 55
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuSub.tsx",
+       "start": 51,
+       "end": 57
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuSubContent.tsx",
+       "start": 51,
+       "end": 57
+      }
+     ],
+     "copies": 13,
+     "excerpt": {
+      "lines": [
+       "export const CheckedAndUnchecked = () => {",
+       "  const ref = useOpenAt(60, 13);",
+       "  return (",
+       "    <div style={{ height: 200 }}>",
+       "      <ContextMenu>",
+       "        <ContextMenuTrigger asChild>",
+       "          <div ref={ref} style={targetStyle}>"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 118,
+     "tokens": 489,
+     "first": {
+      "name": "src/features/knowledge/components/knowledge-graph.tsx",
+      "start": 245,
+      "end": 362
+     },
+     "others": [
+      {
+       "name": "src/features/memory/components/memory-graph-canvas.tsx",
+       "start": 251,
+       "end": 358
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}, [selectedId, graph.edges]);",
+       "",
+       "// Esc deselects (mirrors the \"click empty area\" affordance).",
+       "useEffect(() => {",
+       "  const handler = (e: KeyboardEvent) => {",
+       "    if (e.key === \"Escape\" && selectedId !== null) onSelect(null);",
+       "  };",
+       "  window.addEventListener(\"keydown\", handler);",
+       "  return () => window.removeEventListener(\"keydown\", handler);",
+       "}, [selectedId, onSelect]);"
+      ],
+      "total": 118
+     },
+     "excerptSecond": {
+      "lines": [
+       "}, [cutoffMs]);",
+       "",
+       "useEffect(() => {",
+       "  const handler = (e: KeyboardEvent) => {",
+       "    if (e.key === \"Escape\" && selectedId !== null) onSelect(null);",
+       "  };",
+       "  window.addEventListener(\"keydown\", handler);",
+       "  return () => window.removeEventListener(\"keydown\", handler);",
+       "}, [selectedId, onSelect]);",
+       ""
+      ],
+      "total": 108
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 43,
+     "tokens": 159,
+     "first": {
+      "name": ".design-sync/previews/ContextMenuItem.tsx",
+      "start": 7,
+      "end": 49
+     },
+     "others": [
+      {
+       "name": ".design-sync/previews/ContextMenuLabel.tsx",
+       "start": 7,
+       "end": 49
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuSeparator.tsx",
+       "start": 6,
+       "end": 48
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuSub.tsx",
+       "start": 9,
+       "end": 51
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 39,
+     "tokens": 452,
+     "first": {
+      "name": "src-tauri/src/commands/byok.rs",
+      "start": 193,
+      "end": 231
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/commands/byok.rs",
+       "start": 655,
+       "end": 693
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 51,
+     "tokens": 424,
+     "first": {
+      "name": "src/features/canvas/components/canvas-panel.tsx",
+      "start": 252,
+      "end": 302
+     },
+     "others": [
+      {
+       "name": "src/features/spaces/components/space-canvas.tsx",
+       "start": 305,
+       "end": 353
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 48,
+     "tokens": 393,
+     "first": {
+      "name": "src/features/knowledge/components/knowledge-graph.tsx",
+      "start": 362,
+      "end": 409
+     },
+     "others": [
+      {
+       "name": "src/features/memory/components/memory-graph-canvas.tsx",
+       "start": 358,
+       "end": 401
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 26,
+     "tokens": 109,
+     "first": {
+      "name": ".design-sync/previews/ContextMenu.tsx",
+      "start": 13,
+      "end": 38
+     },
+     "others": [
+      {
+       "name": ".design-sync/previews/ContextMenuCheckboxItem.tsx",
+       "start": 8,
+       "end": 35
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuItem.tsx",
+       "start": 8,
+       "end": 35
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuTrigger.tsx",
+       "start": 6,
+       "end": 34
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 100,
+     "first": {
+      "name": "src-tauri/src/auth/tests.rs",
+      "start": 1584,
+      "end": 1592
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/auth/tests.rs",
+       "start": 1656,
+       "end": 1664
+      },
+      {
+       "name": "src-tauri/src/auth/tests.rs",
+       "start": 1676,
+       "end": 1684
+      },
+      {
+       "name": "src-tauri/src/auth/tests.rs",
+       "start": 1781,
+       "end": 1788
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 25,
+     "tokens": 97,
+     "first": {
+      "name": ".design-sync/previews/ContextMenuCheckboxItem.tsx",
+      "start": 25,
+      "end": 49
+     },
+     "others": [
+      {
+       "name": ".design-sync/previews/ContextMenuItem.tsx",
+       "start": 25,
+       "end": 49
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuSubTrigger.tsx",
+       "start": 26,
+       "end": 50
+      },
+      {
+       "name": ".design-sync/previews/ContextMenuTrigger.tsx",
+       "start": 24,
+       "end": 48
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "crates/atlas-redact/src/vendor_rules.rs"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:05:25.969Z",
+  "jscpdVersion": "5.4.0"
  }
 }

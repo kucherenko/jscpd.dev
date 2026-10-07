@@ -9,10 +9,12 @@
    "starsToday": 197,
    "headSha": "388089d2a1799c2b2ef7c17357dc7c5b19d8f26f",
    "sources": 133,
-   "lines": 34490,
-   "clones": 192,
-   "duplicatedLines": 3017,
-   "percentage": 8.75,
+   "lines": 34343,
+   "clones": 202,
+   "duplicatedLines": 3275,
+   "percentage": 9.54,
+   "codePercentage": 9.9,
+   "codeSources": 124,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 505,
    "headSha": "388089d2a1799c2b2ef7c17357dc7c5b19d8f26f",
    "sources": 133,
-   "lines": 34490,
-   "clones": 192,
-   "duplicatedLines": 3017,
-   "percentage": 8.75,
+   "lines": 34343,
+   "clones": 202,
+   "duplicatedLines": 3275,
+   "percentage": 9.54,
+   "codePercentage": 9.9,
+   "codeSources": 124,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,49 +46,49 @@
   "starsToday": 505,
   "defaultBranch": "main",
   "headSha": "388089d2a1799c2b2ef7c17357dc7c5b19d8f26f",
-  "durationMs": 609,
+  "durationMs": 87,
   "total": {
    "sources": 133,
-   "lines": 34490,
-   "tokens": 177642,
-   "clones": 192,
-   "duplicatedLines": 3017,
-   "duplicatedTokens": 16720,
-   "percentage": 8.75,
-   "percentageTokens": 9.41
+   "lines": 34343,
+   "tokens": 177477,
+   "clones": 202,
+   "duplicatedLines": 3275,
+   "duplicatedTokens": 17131,
+   "percentage": 9.54,
+   "percentageTokens": 9.65
   },
   "formats": [
    {
     "format": "tsx",
     "sources": 37,
     "lines": 19195,
-    "clones": 98,
-    "duplicatedLines": 1589,
-    "percentage": 8.28
+    "clones": 104,
+    "duplicatedLines": 1722,
+    "percentage": 8.97
    },
    {
     "format": "typescript",
     "sources": 68,
     "lines": 11804,
-    "clones": 91,
-    "duplicatedLines": 1394,
-    "percentage": 11.81
+    "clones": 95,
+    "duplicatedLines": 1516,
+    "percentage": 12.84
    },
    {
     "format": "css",
     "sources": 3,
     "lines": 844,
     "clones": 2,
-    "duplicatedLines": 20,
-    "percentage": 2.37
+    "duplicatedLines": 22,
+    "percentage": 2.61
    },
    {
     "format": "yaml",
     "sources": 3,
-    "lines": 370,
+    "lines": 267,
     "clones": 1,
-    "duplicatedLines": 14,
-    "percentage": 3.78
+    "duplicatedLines": 15,
+    "percentage": 5.62
    },
    {
     "format": "javascript",
@@ -97,7 +101,7 @@
    {
     "format": "bash",
     "sources": 10,
-    "lines": 734,
+    "lines": 684,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -113,7 +117,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -129,155 +133,616 @@
   ],
   "topClones": [
    {
+    "format": "typescript",
+    "lines": 36,
+    "tokens": 185,
+    "first": {
+     "name": "src/app/api/favorites/route.ts",
+     "start": 61,
+     "end": 96
+    },
+    "others": [
+     {
+      "name": "src/app/api/playrecords/route.ts",
+      "start": 37,
+      "end": 68
+     },
+     {
+      "name": "src/app/api/searchhistory/route.ts",
+      "start": 43,
+      "end": 78
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "    console.error('获取收藏失败', err);",
+      "    return NextResponse.json(",
+      "      { error: 'Internal Server Error' },",
+      "      { status: 500 }",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "/**",
+      " * POST /api/favorites"
+     ],
+     "total": 36
+    },
+    "excerptSecond": {
+     "lines": [
+      "    console.error('获取播放记录失败', err);",
+      "    return NextResponse.json(",
+      "      { error: 'Internal Server Error' },",
+      "      { status: 500 }",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "export async function POST(request: NextRequest) {",
+      "  try {"
+     ],
+     "total": 32
+    },
+    "kind": "code"
+   },
+   {
     "format": "css",
     "lines": 11,
     "tokens": 351,
-    "firstFile": {
+    "first": {
      "name": "src/styles/colors.css",
      "start": 363,
      "end": 373
     },
-    "secondFile": {
-     "name": "src/styles/globals.css",
-     "start": 17,
-     "end": 27
-    }
+    "others": [
+     {
+      "name": "src/styles/globals.css",
+      "start": 17,
+      "end": 27
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "--tw-color-primary-950: 8 47 73;",
+      "--color-primary-50: rgb(var(--tw-color-primary-50)); /* #f0f9ff */",
+      "--color-primary-100: rgb(var(--tw-color-primary-100)); /* #e0f2fe */",
+      "--color-primary-200: rgb(var(--tw-color-primary-200)); /* #bae6fd */",
+      "--color-primary-300: rgb(var(--tw-color-primary-300)); /* #7dd3fc */",
+      "--color-primary-400: rgb(var(--tw-color-primary-400)); /* #38bdf8 */",
+      "--color-primary-500: rgb(var(--tw-color-primary-500)); /* #0ea5e9 */",
+      "--color-primary-600: rgb(var(--tw-color-primary-600)); /* #0284c7 */",
+      "--color-primary-700: rgb(var(--tw-color-primary-700)); /* #0369a1 */",
+      "--color-primary-800: rgb(var(--tw-color-primary-800)); /* #075985 */"
+     ],
+     "total": 11
+    },
+    "kind": "styles"
+   },
+   {
+    "format": "tsx",
+    "lines": 21,
+    "tokens": 103,
+    "first": {
+     "name": "src/app/page.tsx",
+     "start": 251,
+     "end": 271
+    },
+    "others": [
+     {
+      "name": "src/app/page.tsx",
+      "start": 299,
+      "end": 319
+     },
+     {
+      "name": "src/app/page.tsx",
+      "start": 346,
+      "end": 366
+     },
+     {
+      "name": "src/app/page.tsx",
+      "start": 421,
+      "end": 441
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "    className='flex items-center text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'",
+      "  >",
+      "    查看更多",
+      "    <ChevronRight className='w-4 h-4 ml-1' />",
+      "  </Link>",
+      "</div>",
+      "<ScrollableRow>",
+      "  {loading",
+      "    ? // 加载状态显示灰色占位数据",
+      "    Array.from({ length: 8 }).map((_, index) => ("
+     ],
+     "total": 21
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 23,
+    "tokens": 144,
+    "first": {
+     "name": "src/app/api/favorites/route.ts",
+     "start": 19,
+     "end": 41
+    },
+    "others": [
+     {
+      "name": "src/app/api/favorites/route.ts",
+      "start": 73,
+      "end": 95
+     },
+     {
+      "name": "src/app/api/favorites/route.ts",
+      "start": 144,
+      "end": 166
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 50,
     "tokens": 251,
-    "firstFile": {
+    "first": {
      "name": "src/app/api/favorites/route.ts",
      "start": 130,
      "end": 179
     },
-    "secondFile": {
-     "name": "src/app/api/playrecords/route.ts",
-     "start": 103,
-     "end": 147
-    }
+    "others": [
+     {
+      "name": "src/app/api/playrecords/route.ts",
+      "start": 103,
+      "end": 147
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 39,
     "tokens": 237,
-    "firstFile": {
+    "first": {
      "name": "src/app/live/page.tsx",
      "start": 1015,
      "end": 1053
     },
-    "secondFile": {
-     "name": "src/app/play/page.tsx",
-     "start": 1034,
-     "end": 1072
-    }
+    "others": [
+     {
+      "name": "src/app/play/page.tsx",
+      "start": 1034,
+      "end": 1072
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 25,
+    "tokens": 109,
+    "first": {
+     "name": "src/app/api/douban/categories/route.ts",
+     "start": 76,
+     "end": 100
+    },
+    "others": [
+     {
+      "name": "src/app/api/douban/recommends/route.ts",
+      "start": 107,
+      "end": 130
+     },
+     {
+      "name": "src/app/api/douban/route.ts",
+      "start": 72,
+      "end": 96
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 51,
     "tokens": 210,
-    "firstFile": {
+    "first": {
      "name": "src/components/DoubanCustomSelector.tsx",
      "start": 221,
      "end": 271
     },
-    "secondFile": {
-     "name": "src/components/DoubanSelector.tsx",
-     "start": 302,
-     "end": 352
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 36,
-    "tokens": 185,
-    "firstFile": {
-     "name": "src/app/api/favorites/route.ts",
-     "start": 61,
-     "end": 96
-    },
-    "secondFile": {
-     "name": "src/app/api/playrecords/route.ts",
-     "start": 37,
-     "end": 68
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 38,
-    "tokens": 185,
-    "firstFile": {
-     "name": "src/app/api/favorites/route.ts",
-     "start": 130,
-     "end": 167
-    },
-    "secondFile": {
-     "name": "src/app/api/searchhistory/route.ts",
-     "start": 93,
-     "end": 130
-    }
+    "others": [
+     {
+      "name": "src/components/DoubanSelector.tsx",
+      "start": 302,
+      "end": 352
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 39,
     "tokens": 184,
-    "firstFile": {
+    "first": {
      "name": "src/components/DoubanCustomSelector.tsx",
      "start": 123,
      "end": 161
     },
-    "secondFile": {
-     "name": "src/components/DoubanSelector.tsx",
-     "start": 107,
-     "end": 145
-    }
+    "others": [
+     {
+      "name": "src/components/DoubanSelector.tsx",
+      "start": 107,
+      "end": 145
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 39,
     "tokens": 183,
-    "firstFile": {
+    "first": {
      "name": "src/components/MultiLevelSelector.tsx",
      "start": 507,
      "end": 545
     },
-    "secondFile": {
-     "name": "src/components/SearchResultFilter.tsx",
-     "start": 148,
-     "end": 169
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 36,
-    "tokens": 182,
-    "firstFile": {
-     "name": "src/app/api/favorites/route.ts",
-     "start": 61,
-     "end": 96
-    },
-    "secondFile": {
-     "name": "src/app/api/searchhistory/route.ts",
-     "start": 43,
-     "end": 78
-    }
-   },
-   {
-    "format": "tsx",
-    "lines": 39,
-    "tokens": 174,
-    "firstFile": {
-     "name": "src/app/admin/page.tsx",
-     "start": 3463,
-     "end": 3501
-    },
-    "secondFile": {
-     "name": "src/components/UserMenu.tsx",
-     "start": 216,
-     "end": 253
-    }
+    "others": [
+     {
+      "name": "src/components/SearchResultFilter.tsx",
+      "start": 148,
+      "end": 169
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 124,
+   "lines": 32698,
+   "tokens": 157877,
+   "clones": 199,
+   "duplicatedLines": 3238,
+   "duplicatedTokens": 16556,
+   "percentage": 9.9,
+   "percentageTokens": 10.49,
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 37,
+     "lines": 19195,
+     "clones": 104,
+     "duplicatedLines": 1722,
+     "percentage": 8.97
+    },
+    {
+     "format": "typescript",
+     "sources": 68,
+     "lines": 11804,
+     "clones": 95,
+     "duplicatedLines": 1516,
+     "percentage": 12.84
+    },
+    {
+     "format": "javascript",
+     "sources": 8,
+     "lines": 841,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 684,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 36,
+     "tokens": 185,
+     "first": {
+      "name": "src/app/api/favorites/route.ts",
+      "start": 61,
+      "end": 96
+     },
+     "others": [
+      {
+       "name": "src/app/api/playrecords/route.ts",
+       "start": 37,
+       "end": 68
+      },
+      {
+       "name": "src/app/api/searchhistory/route.ts",
+       "start": 43,
+       "end": 78
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "    console.error('获取收藏失败', err);",
+       "    return NextResponse.json(",
+       "      { error: 'Internal Server Error' },",
+       "      { status: 500 }",
+       "    );",
+       "  }",
+       "}",
+       "",
+       "/**",
+       " * POST /api/favorites"
+      ],
+      "total": 36
+     },
+     "excerptSecond": {
+      "lines": [
+       "    console.error('获取播放记录失败', err);",
+       "    return NextResponse.json(",
+       "      { error: 'Internal Server Error' },",
+       "      { status: 500 }",
+       "    );",
+       "  }",
+       "}",
+       "",
+       "export async function POST(request: NextRequest) {",
+       "  try {"
+      ],
+      "total": 32
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 21,
+     "tokens": 103,
+     "first": {
+      "name": "src/app/page.tsx",
+      "start": 251,
+      "end": 271
+     },
+     "others": [
+      {
+       "name": "src/app/page.tsx",
+       "start": 299,
+       "end": 319
+      },
+      {
+       "name": "src/app/page.tsx",
+       "start": 346,
+       "end": 366
+      },
+      {
+       "name": "src/app/page.tsx",
+       "start": 421,
+       "end": 441
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "    className='flex items-center text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'",
+       "  >",
+       "    查看更多",
+       "    <ChevronRight className='w-4 h-4 ml-1' />",
+       "  </Link>",
+       "</div>",
+       "<ScrollableRow>",
+       "  {loading",
+       "    ? // 加载状态显示灰色占位数据",
+       "    Array.from({ length: 8 }).map((_, index) => ("
+      ],
+      "total": 21
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 23,
+     "tokens": 144,
+     "first": {
+      "name": "src/app/api/favorites/route.ts",
+      "start": 19,
+      "end": 41
+     },
+     "others": [
+      {
+       "name": "src/app/api/favorites/route.ts",
+       "start": 73,
+       "end": 95
+      },
+      {
+       "name": "src/app/api/favorites/route.ts",
+       "start": 144,
+       "end": 166
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "export async function GET(request: NextRequest) {",
+       "  try {",
+       "    // 从 cookie 获取用户信息",
+       "    const authInfo = getAuthInfoFromCookie(request);",
+       "    if (!authInfo || !authInfo.username) {",
+       "      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });",
+       "    }",
+       "",
+       "    const config = await getConfig();",
+       "    if (authInfo.username !== process.env.USERNAME) {"
+      ],
+      "total": 23
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 50,
+     "tokens": 251,
+     "first": {
+      "name": "src/app/api/favorites/route.ts",
+      "start": 130,
+      "end": 179
+     },
+     "others": [
+      {
+       "name": "src/app/api/playrecords/route.ts",
+       "start": 103,
+       "end": 147
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 39,
+     "tokens": 237,
+     "first": {
+      "name": "src/app/live/page.tsx",
+      "start": 1015,
+      "end": 1053
+     },
+     "others": [
+      {
+       "name": "src/app/play/page.tsx",
+       "start": 1034,
+       "end": 1072
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 25,
+     "tokens": 109,
+     "first": {
+      "name": "src/app/api/douban/categories/route.ts",
+      "start": 76,
+      "end": 100
+     },
+     "others": [
+      {
+       "name": "src/app/api/douban/recommends/route.ts",
+       "start": 107,
+       "end": 130
+      },
+      {
+       "name": "src/app/api/douban/route.ts",
+       "start": 72,
+       "end": 96
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 51,
+     "tokens": 210,
+     "first": {
+      "name": "src/components/DoubanCustomSelector.tsx",
+      "start": 221,
+      "end": 271
+     },
+     "others": [
+      {
+       "name": "src/components/DoubanSelector.tsx",
+       "start": 302,
+       "end": 352
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 39,
+     "tokens": 184,
+     "first": {
+      "name": "src/components/DoubanCustomSelector.tsx",
+      "start": 123,
+      "end": 161
+     },
+     "others": [
+      {
+       "name": "src/components/DoubanSelector.tsx",
+       "start": 107,
+       "end": 145
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 39,
+     "tokens": 183,
+     "first": {
+      "name": "src/components/MultiLevelSelector.tsx",
+      "start": 507,
+      "end": 545
+     },
+     "others": [
+      {
+       "name": "src/components/SearchResultFilter.tsx",
+       "start": 148,
+       "end": 169
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 39,
+     "tokens": 174,
+     "first": {
+      "name": "src/app/admin/page.tsx",
+      "start": 3463,
+      "end": 3501
+     },
+     "others": [
+      {
+       "name": "src/components/UserMenu.tsx",
+       "start": 216,
+       "end": 253
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:52:41.679Z",
+  "jscpdVersion": "5.4.0"
  }
 }

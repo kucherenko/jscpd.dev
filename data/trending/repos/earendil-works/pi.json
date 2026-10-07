@@ -9,10 +9,12 @@
    "starsToday": 458,
    "headSha": "60e7e76bd7ea25cad1dd6f3f1ce0d18814a42759",
    "sources": 1714,
-   "lines": 481868,
+   "lines": 413821,
    "clones": 2519,
-   "duplicatedLines": 30959,
-   "percentage": 6.42,
+   "duplicatedLines": 33249,
+   "percentage": 8.03,
+   "codePercentage": 3.96,
+   "codeSources": 670,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 298,
    "headSha": "7fbbd5f4a1d982bb02d63472dde0774fa639f99b",
    "sources": 1805,
-   "lines": 431475,
+   "lines": 431431,
    "clones": 2450,
    "duplicatedLines": 32146,
    "percentage": 7.45,
+   "codePercentage": 3.54,
+   "codeSources": 703,
    "healthScore": 58.6,
    "healthGrade": "C"
   },
@@ -37,10 +41,12 @@
    "starsToday": 408,
    "headSha": "200387122ca450d6387f033949423114a270b96c",
    "sources": 1812,
-   "lines": 431800,
+   "lines": 431756,
    "clones": 2440,
    "duplicatedLines": 31861,
    "percentage": 7.38,
+   "codePercentage": 3.35,
+   "codeSources": 706,
    "healthScore": 58.8,
    "healthGrade": "C"
   }
@@ -56,16 +62,16 @@
   "starsToday": 408,
   "defaultBranch": "main",
   "headSha": "200387122ca450d6387f033949423114a270b96c",
-  "durationMs": 2485,
+  "durationMs": 1184,
   "total": {
    "sources": 1812,
-   "lines": 431800,
-   "tokens": 3123286,
+   "lines": 431756,
+   "tokens": 3123121,
    "clones": 2440,
    "duplicatedLines": 31861,
    "duplicatedTokens": 203792,
    "percentage": 7.38,
-   "percentageTokens": 6.52
+   "percentageTokens": 6.53
   },
   "formats": [
    {
@@ -119,7 +125,7 @@
    {
     "format": "bash",
     "sources": 37,
-    "lines": 1892,
+    "lines": 1842,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -154,151 +160,376 @@
     "format": "typescript",
     "lines": 655,
     "tokens": 5420,
-    "firstFile": {
+    "first": {
      "name": "packages/coding-agent/src/experimental/durable/tui.ts",
      "start": 1,
      "end": 655
     },
-    "secondFile": {
-     "name": "packages/coding-agent/src/experimental/vacation/tui.ts",
-     "start": 1,
-     "end": 655
-    }
+    "others": [
+     {
+      "name": "packages/coding-agent/src/experimental/vacation/tui.ts",
+      "start": 1,
+      "end": 655
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import type { AssistantMessage, ToolResultMessage, Usage, UserMessage } from \"@earendil-works/pi-ai\";",
+      "import type {",
+      "    ConversationId,",
+      "    EntryRecord,",
+      "    InboxState,",
+      "    LiveState,",
+      "    TaskGraph,",
+      "    TaskGraphNode,",
+      "    UsageState,",
+      "} from \"@earendil-works/pi-durable\";"
+     ],
+     "total": 655
+    },
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 231,
     "tokens": 2810,
-    "firstFile": {
+    "first": {
      "name": "packages/chord/test/delta-diff.test.ts",
      "start": 1,
      "end": 231
     },
-    "secondFile": {
-     "name": "packages/chord/test/state-diff.test.ts",
-     "start": 1,
-     "end": 231
-    }
+    "others": [
+     {
+      "name": "packages/chord/test/state-diff.test.ts",
+      "start": 1,
+      "end": 231
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import { describe, expect, it } from \"vitest\";",
+      "import {",
+      "    applyImmutable,",
+      "    assertValidOp,",
+      "    assertValidWireOp,",
+      "    decoder,",
+      "    diffRevisions,",
+      "    encoder,",
+      "    type Op,",
+      "} from \"../src/delta/index.ts\";"
+     ],
+     "total": 231
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 20,
+    "tokens": 129,
+    "first": {
+     "name": "packages/ai/test/empty.test.ts",
+     "start": 148,
+     "end": 167
+    },
+    "others": [
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 168,
+      "end": 187
+     },
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 188,
+      "end": 207
+     },
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 230,
+      "end": 249
+     },
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 250,
+      "end": 269
+     },
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 270,
+      "end": 289
+     },
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 290,
+      "end": 309
+     },
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 310,
+      "end": 329
+     },
+     {
+      "name": "packages/ai/test/empty.test.ts",
+      "start": 330,
+      "end": 349
+     }
+    ],
+    "copies": 20,
+    "excerpt": {
+     "lines": [
+      "const llm = getModel(\"google\", \"gemini-2.5-flash\");",
+      "",
+      "it(\"should handle empty content array\", { retry: 3, timeout: 30000 }, async () => {",
+      "    await testEmptyMessage(llm);",
+      "});",
+      "",
+      "it(\"should handle empty string content\", { retry: 3, timeout: 30000 }, async () => {",
+      "    await testEmptyStringMessage(llm);",
+      "});",
+      ""
+     ],
+     "total": 20
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 16,
+    "tokens": 101,
+    "first": {
+     "name": "packages/ai/test/unicode-surrogate.test.ts",
+     "start": 287,
+     "end": 302
+    },
+    "others": [
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 303,
+      "end": 318
+     },
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 319,
+      "end": 334
+     },
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 353,
+      "end": 372
+     },
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 453,
+      "end": 468
+     },
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 469,
+      "end": 484
+     },
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 485,
+      "end": 500
+     },
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 501,
+      "end": 516
+     },
+     {
+      "name": "packages/ai/test/unicode-surrogate.test.ts",
+      "start": 517,
+      "end": 532
+     }
+    ],
+    "copies": 19,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 15,
+    "tokens": 75,
+    "first": {
+     "name": "packages/ai/test/stream.test.ts",
+     "start": 352,
+     "end": 366
+    },
+    "others": [
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 430,
+      "end": 444
+     },
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 450,
+      "end": 464
+     },
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 474,
+      "end": 488
+     },
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 544,
+      "end": 558
+     },
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 568,
+      "end": 582
+     },
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 592,
+      "end": 606
+     },
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 618,
+      "end": 632
+     },
+     {
+      "name": "packages/ai/test/stream.test.ts",
+      "start": 645,
+      "end": 659
+     }
+    ],
+    "copies": 24,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 202,
     "tokens": 1703,
-    "firstFile": {
+    "first": {
      "name": "packages/coding-agent/src/experimental/durable/runtime.ts",
      "start": 152,
      "end": 353
     },
-    "secondFile": {
-     "name": "packages/coding-agent/src/experimental/vacation/runtime.ts",
-     "start": 149,
-     "end": 350
-    }
+    "others": [
+     {
+      "name": "packages/coding-agent/src/experimental/vacation/runtime.ts",
+      "start": 149,
+      "end": 350
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 256,
     "tokens": 1499,
-    "firstFile": {
+    "first": {
      "name": "packages/coding-agent/src/core/tools/edit-diff.ts",
      "start": 244,
      "end": 499
     },
-    "secondFile": {
-     "name": "packages/durable/src/tools/edit-diff.ts",
-     "start": 245,
-     "end": 500
-    }
+    "others": [
+     {
+      "name": "packages/durable/src/tools/edit-diff.ts",
+      "start": 245,
+      "end": 500
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 184,
     "tokens": 1096,
-    "firstFile": {
+    "first": {
      "name": "packages/ai/src/api/google-generative-ai.ts",
      "start": 94,
      "end": 277
     },
-    "secondFile": {
-     "name": "packages/ai/src/api/google-vertex.ts",
-     "start": 103,
-     "end": 285
-    }
+    "others": [
+     {
+      "name": "packages/ai/src/api/google-vertex.ts",
+      "start": 103,
+      "end": 285
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 237,
     "tokens": 1082,
-    "firstFile": {
+    "first": {
      "name": "packages/coding-agent/src/core/tools/edit-diff.ts",
      "start": 9,
      "end": 245
     },
-    "secondFile": {
-     "name": "packages/durable/src/tools/edit-diff.ts",
-     "start": 5,
-     "end": 241
-    }
+    "others": [
+     {
+      "name": "packages/durable/src/tools/edit-diff.ts",
+      "start": 5,
+      "end": 241
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
-    "lines": 83,
-    "tokens": 649,
-    "firstFile": {
-     "name": "packages/coding-agent/src/utils/mime.ts",
-     "start": 34,
-     "end": 116
+    "lines": 9,
+    "tokens": 50,
+    "first": {
+     "name": "packages/agent/src/proxy.ts",
+     "start": 135,
+     "end": 143
     },
-    "secondFile": {
-     "name": "packages/durable/src/tools/image.ts",
-     "start": 10,
-     "end": 89
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 98,
-    "tokens": 587,
-    "firstFile": {
-     "name": "packages/coding-agent/src/experimental/durable/runtime.ts",
-     "start": 28,
-     "end": 125
-    },
-    "secondFile": {
-     "name": "packages/coding-agent/src/experimental/vacation/runtime.ts",
-     "start": 27,
-     "end": 124
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 42,
-    "tokens": 515,
-    "firstFile": {
-     "name": "packages/durable/test/jsonl-storage.test.ts",
-     "start": 75,
-     "end": 116
-    },
-    "secondFile": {
-     "name": "packages/durable/test/sqlite-storage.test.ts",
-     "start": 65,
-     "end": 106
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 60,
-    "tokens": 430,
-    "firstFile": {
-     "name": "packages/ai/test/openai-codex-stream.test.ts",
-     "start": 101,
-     "end": 160
-    },
-    "secondFile": {
-     "name": "packages/ai/test/openai-codex-stream.test.ts",
-     "start": 1184,
-     "end": 1244
-    }
+    "others": [
+     {
+      "name": "packages/agent/test/agent.test.ts",
+      "start": 45,
+      "end": 53
+     },
+     {
+      "name": "packages/ai/src/api/anthropic-messages.ts",
+      "start": 588,
+      "end": 596
+     },
+     {
+      "name": "packages/ai/test/assistant-message-frame.test.ts",
+      "start": 20,
+      "end": 28
+     },
+     {
+      "name": "packages/ai/test/bedrock-convert-messages.test.ts",
+      "start": 207,
+      "end": 215
+     },
+     {
+      "name": "packages/ai/test/mistral-http-transport.test.ts",
+      "start": 174,
+      "end": 182
+     },
+     {
+      "name": "packages/ai/test/openai-completions-empty-tools.test.ts",
+      "start": 272,
+      "end": 280
+     },
+     {
+      "name": "packages/ai/test/telemetry-options.test.ts",
+      "start": 51,
+      "end": 59
+     },
+     {
+      "name": "packages/ai/test/transform-messages-copilot-openai-to-anthropic.test.ts",
+      "start": 35,
+      "end": 43
+     }
+    ],
+    "copies": 19,
+    "kind": "code"
    }
   ],
   "health": {
@@ -518,6 +749,367 @@
      "lines": 60
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 706,
+   "lines": 185980,
+   "tokens": 1136764,
+   "clones": 360,
+   "duplicatedLines": 6228,
+   "duplicatedTokens": 40397,
+   "percentage": 3.35,
+   "percentageTokens": 3.55,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 648,
+     "lines": 174452,
+     "clones": 331,
+     "duplicatedLines": 5930,
+     "percentage": 3.4
+    },
+    {
+     "format": "javascript",
+     "sources": 31,
+     "lines": 8771,
+     "clones": 29,
+     "duplicatedLines": 298,
+     "percentage": 3.4
+    },
+    {
+     "format": "bash",
+     "sources": 19,
+     "lines": 1499,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c",
+     "sources": 2,
+     "lines": 515,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c-header",
+     "sources": 3,
+     "lines": 369,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "objectivec",
+     "sources": 1,
+     "lines": 132,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 68,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 655,
+     "tokens": 5420,
+     "first": {
+      "name": "packages/coding-agent/src/experimental/durable/tui.ts",
+      "start": 1,
+      "end": 655
+     },
+     "others": [
+      {
+       "name": "packages/coding-agent/src/experimental/vacation/tui.ts",
+       "start": 1,
+       "end": 655
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import type { AssistantMessage, ToolResultMessage, Usage, UserMessage } from \"@earendil-works/pi-ai\";",
+       "import type {",
+       "    ConversationId,",
+       "    EntryRecord,",
+       "    InboxState,",
+       "    LiveState,",
+       "    TaskGraph,",
+       "    TaskGraphNode,",
+       "    UsageState,",
+       "} from \"@earendil-works/pi-durable\";"
+      ],
+      "total": 655
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 202,
+     "tokens": 1703,
+     "first": {
+      "name": "packages/coding-agent/src/experimental/durable/runtime.ts",
+      "start": 152,
+      "end": 353
+     },
+     "others": [
+      {
+       "name": "packages/coding-agent/src/experimental/vacation/runtime.ts",
+       "start": 149,
+       "end": 350
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        cwd: location.cwd,",
+       "        ...(initial?.model === undefined ? {} : { model: initial.model }),",
+       "        ...(initial?.thinkingLevel === undefined ? {} : { thinkingLevel: initial.thinkingLevel }),",
+       "    },",
+       "});",
+       "const label = (id: ConversationId): string => (id === root.id ? \"main\" : `subagent ${id}`);",
+       "const opened = harness;",
+       "const summaries: ConversationSummary[] = [];",
+       "let cursor: Cursor | undefined;",
+       "do {"
+      ],
+      "total": 202
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 256,
+     "tokens": 1499,
+     "first": {
+      "name": "packages/coding-agent/src/core/tools/edit-diff.ts",
+      "start": 244,
+      "end": 499
+     },
+     "others": [
+      {
+       "name": "packages/durable/src/tools/edit-diff.ts",
+       "start": 245,
+       "end": 500
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    };",
+       "}",
+       "",
+       "function countOccurrences(content: string, oldText: string): number {",
+       "    const fuzzyContent = normalizeForFuzzyMatch(content);",
+       "    const fuzzyOldText = normalizeForFuzzyMatch(oldText);",
+       "    return fuzzyContent.split(fuzzyOldText).length - 1;",
+       "}",
+       "",
+       "function getNotFoundError(path: string, editIndex: number, totalEdits: number): Error {"
+      ],
+      "total": 256
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 184,
+     "tokens": 1096,
+     "first": {
+      "name": "packages/ai/src/api/google-generative-ai.ts",
+      "start": 94,
+      "end": 277
+     },
+     "others": [
+      {
+       "name": "packages/ai/src/api/google-vertex.ts",
+       "start": 103,
+       "end": 285
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 237,
+     "tokens": 1082,
+     "first": {
+      "name": "packages/coding-agent/src/core/tools/edit-diff.ts",
+      "start": 9,
+      "end": 245
+     },
+     "others": [
+      {
+       "name": "packages/durable/src/tools/edit-diff.ts",
+       "start": 5,
+       "end": 241
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 83,
+     "tokens": 649,
+     "first": {
+      "name": "packages/coding-agent/src/utils/mime.ts",
+      "start": 34,
+      "end": 116
+     },
+     "others": [
+      {
+       "name": "packages/durable/src/tools/image.ts",
+       "start": 10,
+       "end": 89
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 98,
+     "tokens": 587,
+     "first": {
+      "name": "packages/coding-agent/src/experimental/durable/runtime.ts",
+      "start": 28,
+      "end": 125
+     },
+     "others": [
+      {
+       "name": "packages/coding-agent/src/experimental/vacation/runtime.ts",
+       "start": 27,
+       "end": 124
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 13,
+     "tokens": 102,
+     "first": {
+      "name": "packages/ai/scripts/generate-models.ts",
+      "start": 1815,
+      "end": 1827
+     },
+     "others": [
+      {
+       "name": "packages/ai/scripts/generate-models.ts",
+       "start": 1846,
+       "end": 1858
+      },
+      {
+       "name": "packages/ai/scripts/generate-models.ts",
+       "start": 1873,
+       "end": 1885
+      },
+      {
+       "name": "packages/ai/scripts/generate-models.ts",
+       "start": 1900,
+       "end": 1912
+      },
+      {
+       "name": "packages/ai/scripts/generate-models.ts",
+       "start": 2075,
+       "end": 2087
+      },
+      {
+       "name": "packages/ai/scripts/generate-models.ts",
+       "start": 2573,
+       "end": 2585
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 61,
+     "tokens": 379,
+     "first": {
+      "name": "packages/ai/src/api/google-generative-ai.ts",
+      "start": 372,
+      "end": 432
+     },
+     "others": [
+      {
+       "name": "packages/ai/src/api/google-vertex.ts",
+       "start": 465,
+       "end": 525
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 45,
+     "tokens": 298,
+     "first": {
+      "name": "packages/coding-agent/src/core/package-manager.ts",
+      "start": 235,
+      "end": 279
+     },
+     "others": [
+      {
+       "name": "packages/coding-agent/src/core/skills.ts",
+       "start": 21,
+       "end": 65
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 43,
+    "minified": 0,
+    "sample": [
+     "packages/ai/src/models.generated.ts",
+     "packages/ai/src/providers/amazon-bedrock.models.ts",
+     "packages/ai/src/providers/ant-ling.models.ts",
+     "packages/ai/src/providers/anthropic.models.ts",
+     "packages/ai/src/providers/azure-openai-responses.models.ts",
+     "packages/ai/src/providers/baseten.models.ts",
+     "packages/ai/src/providers/cerebras.models.ts",
+     "packages/ai/src/providers/cloudflare-ai-gateway.models.ts",
+     "packages/ai/src/providers/cloudflare-workers-ai.models.ts",
+     "packages/ai/src/providers/deepseek.models.ts",
+     "packages/ai/src/providers/fireworks.models.ts",
+     "packages/ai/src/providers/github-copilot.models.ts",
+     "packages/ai/src/providers/google-vertex.models.ts",
+     "packages/ai/src/providers/google.models.ts",
+     "packages/ai/src/providers/groq.models.ts",
+     "packages/ai/src/providers/huggingface.models.ts",
+     "packages/ai/src/providers/kimi-coding.models.ts",
+     "packages/ai/src/providers/meta.models.ts",
+     "packages/ai/src/providers/minimax-cn.models.ts",
+     "packages/ai/src/providers/minimax.models.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:26:44.485Z",
+  "jscpdVersion": "5.4.0"
  }
 }

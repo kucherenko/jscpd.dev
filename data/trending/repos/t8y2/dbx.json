@@ -9,10 +9,12 @@
    "starsToday": 232,
    "headSha": "89964dafe411b6ad36d3db1ac03b0915ff52627c",
    "sources": 6149,
-   "lines": 1949693,
+   "lines": 1949649,
    "clones": 12903,
    "duplicatedLines": 168022,
    "percentage": 8.62,
+   "codePercentage": 7.02,
+   "codeSources": 3434,
    "healthScore": 50.3,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 1138,
    "headSha": "8d9e2dc49fbf8163df9310479c1b3cc17bc6df8b",
    "sources": 6201,
-   "lines": 1965230,
+   "lines": 1965186,
    "clones": 13028,
    "duplicatedLines": 169647,
    "percentage": 8.63,
+   "codePercentage": 7.01,
+   "codeSources": 3467,
    "healthScore": 50.4,
    "healthGrade": "D"
   }
@@ -42,11 +46,11 @@
   "starsToday": 1138,
   "defaultBranch": "main",
   "headSha": "8d9e2dc49fbf8163df9310479c1b3cc17bc6df8b",
-  "durationMs": 7534,
+  "durationMs": 7159,
   "total": {
    "sources": 6201,
-   "lines": 1965230,
-   "tokens": 14255664,
+   "lines": 1965186,
+   "tokens": 14255499,
    "clones": 13028,
    "duplicatedLines": 169647,
    "duplicatedTokens": 1161968,
@@ -138,153 +142,308 @@
   "topClones": [
    {
     "format": "go",
+    "lines": 20,
+    "tokens": 792,
+    "first": {
+     "name": "agents/go-common/iotdb-client-go/client/bitmap.go",
+     "start": 1,
+     "end": 20
+    },
+    "others": [
+     {
+      "name": "agents/go-common/iotdb-client-go/client/column.go",
+      "start": 1,
+      "end": 20
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/client/column_decoder.go",
+      "start": 1,
+      "end": 20
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/client/errors.go",
+      "start": 1,
+      "end": 20
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/client/field.go",
+      "start": 1,
+      "end": 20
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/client/options.go",
+      "start": 1,
+      "end": 20
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/client/protocol.go",
+      "start": 1,
+      "end": 20
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/client/session.go",
+      "start": 1,
+      "end": 20
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/client/sessionpool.go",
+      "start": 1,
+      "end": 20
+     }
+    ],
+    "copies": 15,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Licensed to the Apache Software Foundation (ASF) under one",
+      " * or more contributor license agreements.  See the NOTICE file",
+      " * distributed with this work for additional information",
+      " * regarding copyright ownership.  The ASF licenses this file",
+      " * to you under the Apache License, Version 2.0 (the",
+      " * \"License\"); you may not use this file except in compliance",
+      " * with the License.  You may obtain a copy of the License at",
+      " *",
+      " *     http://www.apache.org/licenses/LICENSE-2.0"
+     ],
+     "total": 20
+    },
+    "kind": "code"
+   },
+   {
+    "format": "go",
     "lines": 620,
     "tokens": 5011,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/metadata_test.go",
      "start": 92,
      "end": 711
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/metadata_test.go",
-     "start": 155,
-     "end": 774
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/metadata_test.go",
+      "start": 155,
+      "end": 774
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "        t.Fatalf(\"unexpected object source DDL: %q\", source.Source)",
+      "    }",
+      "}",
+      "",
+      "func TestListDatabasesUsesShowDatabasesBeforeHiveServerMetadata(t *testing.T) {",
+      "    behavior := &scriptedBehavior{",
+      "        query: func(ctx context.Context, sql string) (driver.Rows, error) {",
+      "            if sql != \"SHOW DATABASES\" {",
+      "                t.Fatalf(\"unexpected query: %q\", sql)",
+      "            }"
+     ],
+     "total": 620
+    },
+    "kind": "tests"
    },
    {
     "format": "go",
     "lines": 563,
     "tokens": 4190,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/config.go",
      "start": 173,
      "end": 735
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/config.go",
-     "start": 179,
-     "end": 741
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/config.go",
+      "start": 179,
+      "end": 741
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "if strings.EqualFold(params.DatabaseType, \"impala\") {",
+      "    config.Auth = \"NOSASL\"",
+      "    config.Kerberos.Service = defaultImpalaService",
+      "}",
+      "if params.ConnectTimeout > 0 {",
+      "    config.ConnectTimeout = time.Duration(params.ConnectTimeout) * time.Second",
+      "}",
+      "",
+      "parsed, err := parseHiveConnectionString(params.ConnectionString)",
+      "if err != nil {"
+     ],
+     "total": 563
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 664,
     "tokens": 4019,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/bench/agent_compare.py",
      "start": 1,
      "end": 664
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/bench/agent_compare.py",
-     "start": 1,
-     "end": 664
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/bench/agent_compare.py",
+      "start": 1,
+      "end": 664
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 620,
     "tokens": 3909,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/main.go",
      "start": 1,
      "end": 620
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/main.go",
-     "start": 1,
-     "end": 620
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/main.go",
+      "start": 1,
+      "end": 620
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 562,
     "tokens": 3599,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/zookeeper_protocol_test.go",
      "start": 1,
      "end": 562
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/zookeeper_protocol_test.go",
-     "start": 1,
-     "end": 562
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/zookeeper_protocol_test.go",
+      "start": 1,
+      "end": 562
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "go",
     "lines": 568,
     "tokens": 3548,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/zookeeper_protocol.go",
      "start": 1,
      "end": 568
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/zookeeper_protocol.go",
-     "start": 1,
-     "end": 568
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/zookeeper_protocol.go",
+      "start": 1,
+      "end": 568
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 507,
     "tokens": 3455,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/config.go",
      "start": 730,
      "end": 1236
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/config.go",
-     "start": 761,
-     "end": 1267
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/config.go",
+      "start": 761,
+      "end": 1267
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
     "lines": 392,
     "tokens": 2733,
-    "firstFile": {
+    "first": {
      "name": "agents/drivers/argo-go/discovery.go",
      "start": 1,
      "end": 392
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/discovery.go",
-     "start": 1,
-     "end": 392
-    }
+    "others": [
+     {
+      "name": "agents/drivers/hive-go/discovery.go",
+      "start": 1,
+      "end": 392
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "go",
-    "lines": 274,
-    "tokens": 2580,
-    "firstFile": {
-     "name": "agents/drivers/argo-go/query_test.go",
-     "start": 266,
-     "end": 539
+    "lines": 19,
+    "tokens": 106,
+    "first": {
+     "name": "agents/go-common/iotdb-client-go/common/common.go",
+     "start": 948,
+     "end": 966
     },
-    "secondFile": {
-     "name": "agents/drivers/hive-go/query_test.go",
-     "start": 307,
-     "end": 580
-    }
-   },
-   {
-    "format": "go",
-    "lines": 213,
-    "tokens": 2373,
-    "firstFile": {
-     "name": "agents/drivers/kingbase-go/kingbase_metadata.go",
-     "start": 608,
-     "end": 820
-    },
-    "secondFile": {
-     "name": "agents/drivers/vastbase-go/vastbase_metadata.go",
-     "start": 467,
-     "end": 679
-    }
+    "others": [
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 1546,
+      "end": 1564
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 1708,
+      "end": 1726
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 1842,
+      "end": 1860
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 2003,
+      "end": 2021
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 2206,
+      "end": 2224
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 2421,
+      "end": 2439
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 2742,
+      "end": 2760
+     },
+     {
+      "name": "agents/go-common/iotdb-client-go/common/common.go",
+      "start": 3033,
+      "end": 3051
+     }
+    ],
+    "copies": 26,
+    "kind": "code"
    }
   ],
   "health": {
@@ -514,6 +673,423 @@
      "lines": 144
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 3467,
+   "lines": 1323125,
+   "tokens": 9713958,
+   "clones": 7189,
+   "duplicatedLines": 92744,
+   "duplicatedTokens": 646416,
+   "percentage": 7.01,
+   "percentageTokens": 6.65,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 529,
+     "lines": 544305,
+     "clones": 4795,
+     "duplicatedLines": 54946,
+     "percentage": 10.09
+    },
+    {
+     "format": "typescript",
+     "sources": 1545,
+     "lines": 364674,
+     "clones": 956,
+     "duplicatedLines": 11165,
+     "percentage": 3.06
+    },
+    {
+     "format": "go",
+     "sources": 153,
+     "lines": 75248,
+     "clones": 696,
+     "duplicatedLines": 16203,
+     "percentage": 21.53
+    },
+    {
+     "format": "java",
+     "sources": 101,
+     "lines": 40349,
+     "clones": 362,
+     "duplicatedLines": 4541,
+     "percentage": 11.25
+    },
+    {
+     "format": "html",
+     "sources": 414,
+     "lines": 38285,
+     "clones": 181,
+     "duplicatedLines": 2149,
+     "percentage": 5.61
+    },
+    {
+     "format": "css",
+     "sources": 118,
+     "lines": 12075,
+     "clones": 167,
+     "duplicatedLines": 2200,
+     "percentage": 18.22
+    },
+    {
+     "format": "javascript",
+     "sources": 70,
+     "lines": 12544,
+     "clones": 12,
+     "duplicatedLines": 196,
+     "percentage": 1.56
+    },
+    {
+     "format": "python",
+     "sources": 12,
+     "lines": 3232,
+     "clones": 9,
+     "duplicatedLines": 985,
+     "percentage": 30.48
+    },
+    {
+     "format": "powershell",
+     "sources": 16,
+     "lines": 1010,
+     "clones": 4,
+     "duplicatedLines": 44,
+     "percentage": 4.36
+    },
+    {
+     "format": "sql",
+     "sources": 6,
+     "lines": 48,
+     "clones": 3,
+     "duplicatedLines": 24,
+     "percentage": 50
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 20,
+     "tokens": 792,
+     "first": {
+      "name": "agents/go-common/iotdb-client-go/client/bitmap.go",
+      "start": 1,
+      "end": 20
+     },
+     "others": [
+      {
+       "name": "agents/go-common/iotdb-client-go/client/column.go",
+       "start": 1,
+       "end": 20
+      },
+      {
+       "name": "agents/go-common/iotdb-client-go/client/column_decoder.go",
+       "start": 1,
+       "end": 20
+      },
+      {
+       "name": "agents/go-common/iotdb-client-go/client/errors.go",
+       "start": 1,
+       "end": 20
+      },
+      {
+       "name": "agents/go-common/iotdb-client-go/client/field.go",
+       "start": 1,
+       "end": 20
+      },
+      {
+       "name": "agents/go-common/iotdb-client-go/client/options.go",
+       "start": 1,
+       "end": 20
+      },
+      {
+       "name": "agents/go-common/iotdb-client-go/client/protocol.go",
+       "start": 1,
+       "end": 20
+      },
+      {
+       "name": "agents/go-common/iotdb-client-go/client/session.go",
+       "start": 1,
+       "end": 20
+      },
+      {
+       "name": "agents/go-common/iotdb-client-go/client/sessionpool.go",
+       "start": 1,
+       "end": 20
+      }
+     ],
+     "copies": 15,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Licensed to the Apache Software Foundation (ASF) under one",
+       " * or more contributor license agreements.  See the NOTICE file",
+       " * distributed with this work for additional information",
+       " * regarding copyright ownership.  The ASF licenses this file",
+       " * to you under the Apache License, Version 2.0 (the",
+       " * \"License\"); you may not use this file except in compliance",
+       " * with the License.  You may obtain a copy of the License at",
+       " *",
+       " *     http://www.apache.org/licenses/LICENSE-2.0"
+      ],
+      "total": 20
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 563,
+     "tokens": 4190,
+     "first": {
+      "name": "agents/drivers/argo-go/config.go",
+      "start": 173,
+      "end": 735
+     },
+     "others": [
+      {
+       "name": "agents/drivers/hive-go/config.go",
+       "start": 179,
+       "end": 741
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "if strings.EqualFold(params.DatabaseType, \"impala\") {",
+       "    config.Auth = \"NOSASL\"",
+       "    config.Kerberos.Service = defaultImpalaService",
+       "}",
+       "if params.ConnectTimeout > 0 {",
+       "    config.ConnectTimeout = time.Duration(params.ConnectTimeout) * time.Second",
+       "}",
+       "",
+       "parsed, err := parseHiveConnectionString(params.ConnectionString)",
+       "if err != nil {"
+      ],
+      "total": 563
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 664,
+     "tokens": 4019,
+     "first": {
+      "name": "agents/drivers/argo-go/bench/agent_compare.py",
+      "start": 1,
+      "end": 664
+     },
+     "others": [
+      {
+       "name": "agents/drivers/hive-go/bench/agent_compare.py",
+       "start": 1,
+       "end": 664
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#!/usr/bin/env python3",
+       "import json",
+       "import os",
+       "import queue",
+       "import shlex",
+       "import statistics",
+       "import subprocess",
+       "import sys",
+       "import threading",
+       "import time"
+      ],
+      "total": 664
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 620,
+     "tokens": 3909,
+     "first": {
+      "name": "agents/drivers/argo-go/main.go",
+      "start": 1,
+      "end": 620
+     },
+     "others": [
+      {
+       "name": "agents/drivers/hive-go/main.go",
+       "start": 1,
+       "end": 620
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 568,
+     "tokens": 3548,
+     "first": {
+      "name": "agents/drivers/argo-go/zookeeper_protocol.go",
+      "start": 1,
+      "end": 568
+     },
+     "others": [
+      {
+       "name": "agents/drivers/hive-go/zookeeper_protocol.go",
+       "start": 1,
+       "end": 568
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 507,
+     "tokens": 3455,
+     "first": {
+      "name": "agents/drivers/argo-go/config.go",
+      "start": 730,
+      "end": 1236
+     },
+     "others": [
+      {
+       "name": "agents/drivers/hive-go/config.go",
+       "start": 761,
+       "end": 1267
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 392,
+     "tokens": 2733,
+     "first": {
+      "name": "agents/drivers/argo-go/discovery.go",
+      "start": 1,
+      "end": 392
+     },
+     "others": [
+      {
+       "name": "agents/drivers/hive-go/discovery.go",
+       "start": 1,
+       "end": 392
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 213,
+     "tokens": 2373,
+     "first": {
+      "name": "agents/drivers/kingbase-go/kingbase_metadata.go",
+      "start": 608,
+      "end": 820
+     },
+     "others": [
+      {
+       "name": "agents/drivers/vastbase-go/vastbase_metadata.go",
+       "start": 467,
+       "end": 679
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 336,
+     "tokens": 2036,
+     "first": {
+      "name": "agents/drivers/argo-go/query.go",
+      "start": 1,
+      "end": 336
+     },
+     "others": [
+      {
+       "name": "agents/drivers/hive-go/query.go",
+       "start": 1,
+       "end": 336
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 76,
+     "first": {
+      "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+      "start": 432,
+      "end": 446
+     },
+     "others": [
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 795,
+       "end": 807
+      },
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 1062,
+       "end": 1074
+      },
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 1100,
+       "end": 1112
+      },
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 1163,
+       "end": 1177
+      },
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 1208,
+       "end": 1222
+      },
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 1530,
+       "end": 1542
+      },
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 1723,
+       "end": 1737
+      },
+      {
+       "name": "crates/dbx-sql-schema/src/table_structure_sql/tests.rs",
+       "start": 2057,
+       "end": 2069
+      }
+     ],
+     "copies": 24,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 10,
+    "minified": 1,
+    "sample": [
+     "agents/go-common/iotdb-client-go/common/common-consts.go",
+     "agents/go-common/iotdb-client-go/common/common.go",
+     "agents/go-common/iotdb-client-go/common/GoUnusedProtection__.go",
+     "agents/go-common/iotdb-client-go/rpc/client-consts.go",
+     "agents/go-common/iotdb-client-go/rpc/client.go",
+     "agents/go-common/iotdb-client-go/rpc/GoUnusedProtection__.go",
+     "apps/desktop/src/lib/database/databaseObjectCapabilities.ts",
+     "apps/desktop/src/types/generated/connectionProfiles.ts",
+     "apps/desktop/src/types/generated/databaseTypes.ts",
+     "crates/dbx-core/assets/docs-export.js"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:33:22.230Z",
+  "jscpdVersion": "5.4.0"
  }
 }

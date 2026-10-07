@@ -9,10 +9,12 @@
    "starsToday": 22,
    "headSha": "ccb49e5cd07e3a73850a1e1d36e666297ced9018",
    "sources": 370,
-   "lines": 28648,
-   "clones": 114,
-   "duplicatedLines": 3008,
-   "percentage": 10.5,
+   "lines": 26280,
+   "clones": 98,
+   "duplicatedLines": 2850,
+   "percentage": 10.84,
+   "codePercentage": null,
+   "codeSources": 17,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,62 +30,62 @@
   "starsToday": 22,
   "defaultBranch": "master",
   "headSha": "ccb49e5cd07e3a73850a1e1d36e666297ced9018",
-  "durationMs": 597,
+  "durationMs": 319,
   "total": {
    "sources": 370,
-   "lines": 28648,
-   "tokens": 160416,
-   "clones": 114,
-   "duplicatedLines": 3008,
-   "duplicatedTokens": 24808,
-   "percentage": 10.5,
-   "percentageTokens": 15.46
+   "lines": 26280,
+   "tokens": 131367,
+   "clones": 98,
+   "duplicatedLines": 2850,
+   "duplicatedTokens": 18297,
+   "percentage": 10.84,
+   "percentageTokens": 13.93
   },
   "formats": [
    {
     "format": "bash",
     "sources": 326,
-    "lines": 20146,
-    "clones": 42,
-    "duplicatedLines": 614,
-    "percentage": 3.05
+    "lines": 18901,
+    "clones": 43,
+    "duplicatedLines": 664,
+    "percentage": 3.51
    },
    {
     "format": "txt",
     "sources": 10,
     "lines": 2967,
     "clones": 33,
-    "duplicatedLines": 1843,
-    "percentage": 62.12
-   },
-   {
-    "format": "markdown",
-    "sources": 12,
-    "lines": 2345,
-    "clones": 21,
-    "duplicatedLines": 298,
-    "percentage": 12.71
+    "duplicatedLines": 1876,
+    "percentage": 63.23
    },
    {
     "format": "yaml",
     "sources": 17,
     "lines": 1756,
-    "clones": 18,
-    "duplicatedLines": 253,
-    "percentage": 14.41
+    "clones": 21,
+    "duplicatedLines": 300,
+    "percentage": 17.08
    },
    {
-    "format": "text",
-    "sources": 3,
-    "lines": 1213,
+    "format": "markdown",
+    "sources": 12,
+    "lines": 2345,
+    "clones": 1,
+    "duplicatedLines": 10,
+    "percentage": 0.43
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
+    "format": "text",
+    "sources": 3,
+    "lines": 84,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -102,152 +104,468 @@
     "format": "txt",
     "lines": 522,
     "tokens": 5086,
-    "firstFile": {
+    "first": {
      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
      "start": 238,
      "end": 759
     },
-    "secondFile": {
-     "name": "test/fast/Unit tests/mocks/nvm ls-remote.txt",
-     "start": 279,
-     "end": 800
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 78,
-    "tokens": 1742,
-    "firstFile": {
-     "name": "README.md:markdown",
-     "start": 338,
-     "end": 415
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote.txt",
+      "start": 279,
+      "end": 800
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "v4.0.0",
+      "v4.1.0",
+      "v4.1.1",
+      "v4.1.2",
+      "v4.2.0  \u001b[0;37m (LTS: Argon)\u001b[0m",
+      "v4.2.1  \u001b[0;37m (LTS: Argon)\u001b[0m",
+      "v4.2.2  \u001b[0;37m (LTS: Argon)\u001b[0m",
+      "v4.2.3  \u001b[0;37m (LTS: Argon)\u001b[0m",
+      "v4.2.4  \u001b[0;37m (LTS: Argon)\u001b[0m",
+      "v4.2.5  \u001b[0;37m (LTS: Argon)\u001b[0m"
+     ],
+     "total": 522
     },
-    "secondFile": {
-     "name": "README.md:markdown",
-     "start": 716,
-     "end": 765
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 53,
-    "tokens": 961,
-    "firstFile": {
-     "name": "README.md:markdown",
-     "start": 517,
-     "end": 569
-    },
-    "secondFile": {
-     "name": "README.md:markdown",
-     "start": 805,
-     "end": 840
-    }
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 242,
     "tokens": 726,
-    "firstFile": {
+    "first": {
      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
      "start": 1,
      "end": 242
     },
-    "secondFile": {
-     "name": "test/fast/Unit tests/mocks/nvm_ls_remote.txt",
-     "start": 1,
-     "end": 242
-    }
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm_ls_remote.txt",
+      "start": 1,
+      "end": 242
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "v0.1.14",
+      "v0.1.15",
+      "v0.1.16",
+      "v0.1.17",
+      "v0.1.18",
+      "v0.1.19",
+      "v0.1.20",
+      "v0.1.21",
+      "v0.1.22",
+      "v0.1.23"
+     ],
+     "total": 242
+    },
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 237,
     "tokens": 711,
-    "firstFile": {
+    "first": {
      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
      "start": 1,
      "end": 237
     },
-    "secondFile": {
-     "name": "test/fast/Unit tests/mocks/nvm ls-remote.txt",
-     "start": 1,
-     "end": 237
-    }
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote.txt",
+      "start": 1,
+      "end": 237
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "v0.1.14",
+      "v0.1.15",
+      "v0.1.16",
+      "v0.1.17",
+      "v0.1.18",
+      "v0.1.19",
+      "v0.1.20",
+      "v0.1.21",
+      "v0.1.22",
+      "v0.1.23"
+     ],
+     "total": 237
+    },
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 36,
     "tokens": 649,
-    "firstFile": {
+    "first": {
      "name": "test/fast/Unit tests/mocks/nvm ls-remote lts.txt",
      "start": 1,
      "end": 36
     },
-    "secondFile": {
-     "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
-     "start": 242,
-     "end": 277
-    }
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
+      "start": 242,
+      "end": 277
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 34,
     "tokens": 613,
-    "firstFile": {
+    "first": {
      "name": "test/fast/Unit tests/mocks/nvm ls-remote lts.txt",
      "start": 117,
      "end": 150
     },
-    "secondFile": {
-     "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
-     "start": 489,
-     "end": 522
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 17,
-    "tokens": 609,
-    "firstFile": {
-     "name": "README.md:markdown",
-     "start": 338,
-     "end": 354
-    },
-    "secondFile": {
-     "name": "README.md:markdown",
-     "start": 772,
-     "end": 799
-    }
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
+      "start": 489,
+      "end": 522
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 32,
     "tokens": 577,
-    "firstFile": {
+    "first": {
      "name": "test/fast/Unit tests/mocks/nvm ls-remote lts.txt",
      "start": 37,
      "end": 68
     },
-    "secondFile": {
-     "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
-     "start": 310,
-     "end": 341
-    }
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
+      "start": 310,
+      "end": 341
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "txt",
     "lines": 29,
     "tokens": 523,
-    "firstFile": {
+    "first": {
      "name": "test/fast/Unit tests/mocks/nvm ls-remote lts.txt",
      "start": 151,
      "end": 179
     },
-    "secondFile": {
-     "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
-     "start": 557,
-     "end": 585
-    }
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
+      "start": 557,
+      "end": 585
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "txt",
+    "lines": 27,
+    "tokens": 487,
+    "first": {
+     "name": "test/fast/Unit tests/mocks/nvm ls-remote lts.txt",
+     "start": 90,
+     "end": 116
+    },
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
+      "start": 428,
+      "end": 454
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "txt",
+    "lines": 41,
+    "tokens": 205,
+    "first": {
+     "name": "test/fast/Unit tests/mocks/nvm ls-remote iojs.txt",
+     "start": 1,
+     "end": 41
+    },
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote.txt",
+      "start": 238,
+      "end": 278
+     },
+     {
+      "name": "test/fast/Unit tests/mocks/nvm_ls_remote_iojs.txt",
+      "start": 1,
+      "end": 41
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "txt",
+    "lines": 21,
+    "tokens": 379,
+    "first": {
+     "name": "test/fast/Unit tests/mocks/nvm ls-remote lts.txt",
+     "start": 69,
+     "end": 89
+    },
+    "others": [
+     {
+      "name": "test/fast/Unit tests/mocks/nvm ls-remote node.txt",
+      "start": 374,
+      "end": 394
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 17,
+   "lines": 6907,
+   "tokens": 26180,
+   "clones": 7,
+   "duplicatedLines": 102,
+   "duplicatedTokens": 518,
+   "percentage": 1.48,
+   "percentageTokens": 1.98,
+   "formats": [
+    {
+     "format": "bash",
+     "sources": 16,
+     "lines": 6733,
+     "clones": 7,
+     "duplicatedLines": 102,
+     "percentage": 1.51
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "bash",
+     "lines": 25,
+     "tokens": 122,
+     "first": {
+      "name": "install.sh",
+      "start": 123,
+      "end": 147
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 153,
+       "end": 177
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "# Emulate curl with wget",
+       "local NVM_DOWNLOAD_WGET_COUNT",
+       "NVM_DOWNLOAD_WGET_COUNT=$#",
+       "local NVM_DOWNLOAD_WGET_SKIP",
+       "NVM_DOWNLOAD_WGET_SKIP=0",
+       "local NVM_DOWNLOAD_WGET_ARG",
+       "for NVM_DOWNLOAD_WGET_ARG in \"$@\"; do",
+       "  if [ \"${NVM_DOWNLOAD_WGET_SKIP}\" = '1' ]; then",
+       "    NVM_DOWNLOAD_WGET_SKIP=0",
+       "    continue"
+      ],
+      "total": 25
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 8,
+     "tokens": 107,
+     "first": {
+      "name": "nvm.sh",
+      "start": 729,
+      "end": 736
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 744,
+       "end": 751
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "nvm_version_greater() {",
+       "  command awk 'BEGIN {",
+       "    if (ARGV[1] == \"\" || ARGV[2] == \"\") exit(1)",
+       "    split(ARGV[1], a, /\\./);",
+       "    split(ARGV[2], b, /\\./);",
+       "    for (i=1; i<=3; i++) {",
+       "      if (a[i] && a[i] !~ /^[0-9]+$/) exit(2);",
+       "      if (b[i] && b[i] !~ /^[0-9]+$/) { exit(0); }"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "nvm_version_greater_than_or_equal_to() {",
+       "  command awk 'BEGIN {",
+       "    if (ARGV[1] == \"\" || ARGV[2] == \"\") exit(1)",
+       "    split(ARGV[1], a, /\\./);",
+       "    split(ARGV[2], b, /\\./);",
+       "    for (i=1; i<=3; i++) {",
+       "      if (a[i] && a[i] !~ /^[0-9]+$/) exit(2);",
+       "      if (a[i] < b[i]) exit(3);"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 11,
+     "tokens": 73,
+     "first": {
+      "name": "nvm.sh",
+      "start": 4007,
+      "end": 4017
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 4123,
+       "end": 4133
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "if [ \"${NVM_UPGRADE_NPM}\" = 1 ]; then",
+       "  nvm install-latest-npm",
+       "  EXIT_CODE=$?",
+       "fi",
+       "if [ $EXIT_CODE -eq 0 ] && [ -z \"${SKIP_DEFAULT_PACKAGES-}\" ]; then",
+       "  nvm_install_default_packages",
+       "fi",
+       "if [ $EXIT_CODE -eq 0 ] && [ -n \"${REINSTALL_PACKAGES_FROM-}\" ] && [ \"_${REINSTALL_PACKAGES_FROM}\" != \"_N/A\" ]; then",
+       "  nvm reinstall-packages \"${REINSTALL_PACKAGES_FROM}\"",
+       "  EXIT_CODE=$?"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 14,
+     "tokens": 58,
+     "first": {
+      "name": "install.sh",
+      "start": 6,
+      "end": 19
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 52,
+       "end": 65
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 12,
+     "tokens": 55,
+     "first": {
+      "name": "nvm.sh",
+      "start": 3802,
+      "end": 3813
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 3958,
+       "end": 3969
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 11,
+     "tokens": 53,
+     "first": {
+      "name": "nvm.sh",
+      "start": 3790,
+      "end": 3800
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 3947,
+       "end": 3957
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 21,
+     "tokens": 50,
+     "first": {
+      "name": "nvm.sh",
+      "start": 2525,
+      "end": 2545
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 2875,
+       "end": 2895
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:49:58.400Z",
+  "jscpdVersion": "5.4.0"
  }
 }

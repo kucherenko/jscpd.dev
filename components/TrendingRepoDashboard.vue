@@ -1,6 +1,6 @@
 <template>
   <div class="dash">
-    <div class="dash-health">
+    <div v-if="repo.health" class="dash-health">
       <div class="dash-score">
         <span class="dash-grade" :class="gradeClass(repo.health!.grade)">{{ repo.health!.grade ?? '—' }}</span>
         <span class="dash-score-num">{{ repo.health!.score ?? '—' }}<span class="dash-score-max">/100</span></span>
@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <div class="dash-dims">
+    <div v-if="repo.health" class="dash-dims">
       <div v-for="d in dimensions" :key="d.id" class="dash-dim">
         <div class="dash-dim-head">
           <span class="dash-dim-name">{{ d.label }}</span>
@@ -24,7 +24,28 @@
       </div>
     </div>
 
-    <div class="dash-grid">
+    <p v-if="repo.health" class="dash-note">
+      The score is jscpd's own <code>--health</code> model: markup, data and text left out, tests kept. The numbers below are the trending scan's.
+    </p>
+
+    <div class="stat-grid">
+      <template v-if="code">
+        <div class="stat stat-primary">
+          <span class="stat-value">{{ code.percentage }}%</span>
+          <span class="stat-label">duplicated code · {{ num(code.duplicatedLines) }} of {{ num(code.lines) }} lines</span>
+        </div>
+        <div class="stat"><span class="stat-value">{{ num(code.clones) }}</span><span class="stat-label">clones in code</span></div>
+        <div class="stat"><span class="stat-value">{{ num(code.sources) }}</span><span class="stat-label">code files of {{ num(repo.total.sources) }} scanned</span></div>
+        <div class="stat"><span class="stat-value">{{ repo.total.percentage }}%</span><span class="stat-label">duplicated over all files · {{ num(repo.total.clones) }} clones</span></div>
+      </template>
+      <template v-else>
+        <div class="stat stat-primary"><span class="stat-value">{{ repo.total.percentage }}%</span><span class="stat-label">duplicated over all files · {{ num(repo.total.duplicatedLines) }} of {{ num(repo.total.lines) }} lines</span></div>
+        <div class="stat"><span class="stat-value">{{ num(repo.total.clones) }}</span><span class="stat-label">clones</span></div>
+        <div class="stat"><span class="stat-value">{{ num(repo.total.sources) }}</span><span class="stat-label">files scanned</span></div>
+      </template>
+    </div>
+
+    <div v-if="repo.complexity?.files.length || repo.deadCode || deadCodeSkippedReason" class="dash-grid">
       <section v-if="repo.complexity?.files.length" class="dash-panel">
         <h3 class="dash-panel-heading">Most complex files</h3>
         <ul class="dash-list">
@@ -60,9 +81,15 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { RepoAnalysis } from '~/composables/useTrendingData'
+import { codeMetric, type RepoAnalysis } from '~/composables/useTrendingData'
 
 const props = defineProps<{ repo: RepoAnalysis }>()
+
+// The duplication numbers the trending pipeline measured (see
+// trending-scan.mjs); the health card above them is jscpd's own --health
+// model, which excludes markup, data and text but keeps tests, so its
+// duplication share is not the same number.
+const code = computed(() => codeMetric(props.repo))
 
 const gradeBarClass = (score: number) => score >= 85 ? 'grade-a' : score >= 70 ? 'grade-b' : score >= 55 ? 'grade-c' : score >= 40 ? 'grade-d' : 'grade-e'
 
@@ -220,6 +247,47 @@ const fileUrl = (path: string, line?: number) => {
 
 .dash-dim-hint {
   font-size: 0.6875rem;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.dash-note {
+  margin: -0.5rem 0 0;
+  font-size: 0.75rem;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.dash-note code {
+  font-size: 0.6875rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.625rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.75rem 0.875rem;
+  border: 1px solid var(--ui-border, rgba(100, 116, 139, 0.2));
+  border-radius: 0.625rem;
+}
+
+.stat-primary {
+  border-color: rgba(0, 123, 255, 0.35);
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ui-text-highlighted, inherit);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: 0.75rem;
   color: var(--ui-text-muted, #64748b);
 }
 

@@ -9,10 +9,12 @@
    "starsToday": 472,
    "headSha": "53553ec7189da1e1904815ee17cd56669aaf6ee5",
    "sources": 117,
-   "lines": 12165,
+   "lines": 11405,
    "clones": 8,
    "duplicatedLines": 125,
-   "percentage": 1.03,
+   "percentage": 1.1,
+   "codePercentage": 0.83,
+   "codeSources": 95,
    "healthScore": 58.6,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 755,
    "headSha": "53553ec7189da1e1904815ee17cd56669aaf6ee5",
    "sources": 117,
-   "lines": 12165,
+   "lines": 11405,
    "clones": 8,
    "duplicatedLines": 125,
-   "percentage": 1.03,
+   "percentage": 1.1,
+   "codePercentage": 0.83,
+   "codeSources": 95,
    "healthScore": 58.6,
    "healthGrade": "C"
   },
@@ -37,10 +41,12 @@
    "starsToday": 844,
    "headSha": "9677edd2097b80023a0a6883e2d05f2814a181fc",
    "sources": 117,
-   "lines": 12181,
+   "lines": 11409,
    "clones": 8,
    "duplicatedLines": 125,
-   "percentage": 1.03,
+   "percentage": 1.1,
+   "codePercentage": 0.83,
+   "codeSources": 95,
    "healthScore": 58.1,
    "healthGrade": "C"
   },
@@ -51,10 +57,12 @@
    "starsToday": 344,
    "headSha": "7570db299aa9846094c90d8ca72db77f56e6a0e0",
    "sources": 117,
-   "lines": 11453,
+   "lines": 11409,
    "clones": 8,
    "duplicatedLines": 125,
-   "percentage": 1.09,
+   "percentage": 1.1,
+   "codePercentage": 0.83,
+   "codeSources": 95,
    "healthScore": 58,
    "healthGrade": "C"
   }
@@ -70,15 +78,15 @@
   "starsToday": 344,
   "defaultBranch": "main",
   "headSha": "7570db299aa9846094c90d8ca72db77f56e6a0e0",
-  "durationMs": 662,
+  "durationMs": 37,
   "total": {
    "sources": 117,
-   "lines": 11453,
-   "tokens": 62552,
+   "lines": 11409,
+   "tokens": 62387,
    "clones": 8,
    "duplicatedLines": 125,
    "duplicatedTokens": 560,
-   "percentage": 1.09,
+   "percentage": 1.1,
    "percentageTokens": 0.9
   },
   "formats": [
@@ -125,7 +133,7 @@
    {
     "format": "bash",
     "sources": 10,
-    "lines": 713,
+    "lines": 663,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -157,7 +165,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -168,121 +176,198 @@
     "format": "text",
     "lines": 31,
     "tokens": 146,
-    "firstFile": {
+    "first": {
      "name": "README.md:text",
      "start": 259,
      "end": 289
     },
-    "secondFile": {
-     "name": "README.md:text",
-     "start": 300,
-     "end": 330
-    }
+    "others": [
+     {
+      "name": "README.md:text",
+      "start": 300,
+      "end": 330
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Better Auth",
+      "BETTER_AUTH_SECRET=your_better_auth_secret",
+      "BETTER_AUTH_URL=http://localhost:3000",
+      "",
+      "# Finnhub",
+      "# Note: NEXT_PUBLIC_FINNHUB_API_KEY is required for Vercel deployment",
+      "NEXT_PUBLIC_FINNHUB_API_KEY=your_finnhub_key",
+      "FINNHUB_BASE_URL=https://finnhub.io/api/v1",
+      "",
+      "# Sentiment insights (optional)"
+     ],
+     "total": 31
+    },
+    "kind": "docs"
    },
    {
     "format": "tsx",
     "lines": 13,
     "tokens": 71,
-    "firstFile": {
+    "first": {
      "name": "app/(auth)/sign-in/page.tsx",
      "start": 87,
      "end": 99
     },
-    "secondFile": {
-     "name": "app/(auth)/sign-up/page.tsx",
-     "start": 142,
-     "end": 154
-    }
+    "others": [
+     {
+      "name": "app/(auth)/sign-up/page.tsx",
+      "start": 142,
+      "end": 154
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<OpenDevSocietyBranding outerClassName=\"mt-10 flex justify-center\" />",
+      "<div className=\"mt-5 flex justify-center\">",
+      "    <a href=\"https://peerlist.io/ravixalgorithm/project/openstock\" target=\"_blank\" rel=\"noreferrer\">",
+      "        <img",
+      "            src=\"https://peerlist.io/api/v1/projects/embed/PRJH8OED7MBL9MGB9HRMKAKLM66KNN?showUpvote=true&theme=light\"",
+      "            alt=\"OpenStock\"",
+      "            style={{ width: 'auto', height: '72px' }}",
+      "        />",
+      "    </a>",
+      "</div>"
+     ],
+     "total": 13
+    },
+    "kind": "code"
    },
    {
     "format": "yaml",
     "lines": 19,
     "tokens": 68,
-    "firstFile": {
+    "first": {
      "name": "README.md:yaml",
      "start": 226,
      "end": 244
     },
-    "secondFile": {
-     "name": "docker-compose.yml",
-     "start": 15,
-     "end": 33
-    }
+    "others": [
+     {
+      "name": "docker-compose.yml",
+      "start": 15,
+      "end": 33
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "mongodb:",
+      "  image: mongo:7",
+      "  container_name: mongodb",
+      "  restart: unless-stopped",
+      "  environment:",
+      "    MONGO_INITDB_ROOT_USERNAME: root",
+      "    MONGO_INITDB_ROOT_PASSWORD: example",
+      "  ports:",
+      "    - \"27017:27017\"",
+      "  volumes:"
+     ],
+     "total": 19
+    },
+    "kind": "docs"
    },
    {
     "format": "tsx",
     "lines": 14,
     "tokens": 58,
-    "firstFile": {
+    "first": {
      "name": "app/(auth)/forgot-password/page.tsx",
      "start": 52,
      "end": 65
     },
-    "secondFile": {
-     "name": "app/(auth)/sign-in/page.tsx",
-     "start": 48,
-     "end": 61
-    }
+    "others": [
+     {
+      "name": "app/(auth)/sign-in/page.tsx",
+      "start": 48,
+      "end": 61
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 19,
     "tokens": 57,
-    "firstFile": {
+    "first": {
      "name": "app/(auth)/sign-in/page.tsx",
      "start": 51,
      "end": 69
     },
-    "secondFile": {
-     "name": "app/(auth)/sign-up/page.tsx",
-     "start": 72,
-     "end": 90
-    }
+    "others": [
+     {
+      "name": "app/(auth)/sign-up/page.tsx",
+      "start": 72,
+      "end": 90
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 15,
     "tokens": 57,
-    "firstFile": {
+    "first": {
      "name": "lib/constants.ts",
      "start": 195,
      "end": 209
     },
-    "secondFile": {
-     "name": "lib/constants.ts",
-     "start": 221,
-     "end": 235
-    }
+    "others": [
+     {
+      "name": "lib/constants.ts",
+      "start": 221,
+      "end": 235
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 10,
     "tokens": 53,
-    "firstFile": {
+    "first": {
      "name": "lib/kit.ts",
      "start": 42,
      "end": 51
     },
-    "secondFile": {
-     "name": "lib/kit.ts",
-     "start": 109,
-     "end": 118
-    }
+    "others": [
+     {
+      "name": "lib/kit.ts",
+      "start": 109,
+      "end": 118
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 12,
     "tokens": 50,
-    "firstFile": {
+    "first": {
      "name": "__tests__/ai-provider.test.ts",
      "start": 102,
      "end": 113
     },
-    "secondFile": {
-     "name": "__tests__/ai-provider.test.ts",
-     "start": 256,
-     "end": 267
-    }
+    "others": [
+     {
+      "name": "__tests__/ai-provider.test.ts",
+      "start": 256,
+      "end": 267
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -498,6 +583,207 @@
      "lines": 44
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 95,
+   "lines": 8578,
+   "tokens": 42087,
+   "clones": 5,
+   "duplicatedLines": 71,
+   "duplicatedTokens": 296,
+   "percentage": 0.83,
+   "percentageTokens": 0.7,
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 49,
+     "lines": 4511,
+     "clones": 3,
+     "duplicatedLines": 46,
+     "percentage": 1.02
+    },
+    {
+     "format": "typescript",
+     "sources": 24,
+     "lines": 2598,
+     "clones": 2,
+     "duplicatedLines": 25,
+     "percentage": 0.96
+    },
+    {
+     "format": "javascript",
+     "sources": 12,
+     "lines": 651,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 13,
+     "tokens": 71,
+     "first": {
+      "name": "app/(auth)/sign-in/page.tsx",
+      "start": 87,
+      "end": 99
+     },
+     "others": [
+      {
+       "name": "app/(auth)/sign-up/page.tsx",
+       "start": 142,
+       "end": 154
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "<OpenDevSocietyBranding outerClassName=\"mt-10 flex justify-center\" />",
+       "<div className=\"mt-5 flex justify-center\">",
+       "    <a href=\"https://peerlist.io/ravixalgorithm/project/openstock\" target=\"_blank\" rel=\"noreferrer\">",
+       "        <img",
+       "            src=\"https://peerlist.io/api/v1/projects/embed/PRJH8OED7MBL9MGB9HRMKAKLM66KNN?showUpvote=true&theme=light\"",
+       "            alt=\"OpenStock\"",
+       "            style={{ width: 'auto', height: '72px' }}",
+       "        />",
+       "    </a>",
+       "</div>"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 14,
+     "tokens": 58,
+     "first": {
+      "name": "app/(auth)/forgot-password/page.tsx",
+      "start": 52,
+      "end": 65
+     },
+     "others": [
+      {
+       "name": "app/(auth)/sign-in/page.tsx",
+       "start": 48,
+       "end": 61
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "</p>",
+       "",
+       "<form onSubmit={handleSubmit(onSubmit)} className=\"space-y-5\">",
+       "    <InputField",
+       "        name=\"email\"",
+       "        label=\"Email\"",
+       "        placeholder=\"opendevsociety@cc.cc\"",
+       "        register={register}",
+       "        error={errors.email}",
+       "        validation={{"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 19,
+     "tokens": 57,
+     "first": {
+      "name": "app/(auth)/sign-in/page.tsx",
+      "start": 51,
+      "end": 69
+     },
+     "others": [
+      {
+       "name": "app/(auth)/sign-up/page.tsx",
+       "start": 72,
+       "end": 90
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "<InputField",
+       "    name=\"email\"",
+       "    label=\"Email\"",
+       "    placeholder=\"opendevsociety@cc.cc\"",
+       "    register={register}",
+       "    error={errors.email}",
+       "    validation={{",
+       "        required: 'Email is required',",
+       "        pattern: {",
+       "            value: /^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,}$/,"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 57,
+     "first": {
+      "name": "lib/constants.ts",
+      "start": 195,
+      "end": 209
+     },
+     "others": [
+      {
+       "name": "lib/constants.ts",
+       "start": 221,
+       "end": 235
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 53,
+     "first": {
+      "name": "lib/kit.ts",
+      "start": 42,
+      "end": 51
+     },
+     "others": [
+      {
+       "name": "lib/kit.ts",
+       "start": 109,
+       "end": 118
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:19:21.307Z",
+  "jscpdVersion": "5.4.0"
  }
 }

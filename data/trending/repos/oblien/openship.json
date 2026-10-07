@@ -9,10 +9,12 @@
    "starsToday": 437,
    "headSha": "0ca13fe9c52f9fb5a447350f2d0ea1e8fbc657a3",
    "sources": 4798,
-   "lines": 1436609,
+   "lines": 1436565,
    "clones": 2877,
    "duplicatedLines": 428042,
    "percentage": 29.8,
+   "codePercentage": 2.07,
+   "codeSources": 2834,
    "healthScore": 67.4,
    "healthGrade": "C"
   }
@@ -28,11 +30,11 @@
   "starsToday": 437,
   "defaultBranch": "main",
   "headSha": "0ca13fe9c52f9fb5a447350f2d0ea1e8fbc657a3",
-  "durationMs": 5174,
+  "durationMs": 3520,
   "total": {
    "sources": 4798,
-   "lines": 1436609,
-   "tokens": 7341933,
+   "lines": 1436565,
+   "tokens": 7341768,
    "clones": 2877,
    "duplicatedLines": 428042,
    "duplicatedTokens": 1459360,
@@ -99,10 +101,10 @@
    {
     "format": "bash",
     "sources": 79,
-    "lines": 11340,
+    "lines": 11290,
     "clones": 13,
     "duplicatedLines": 473,
-    "percentage": 4.17
+    "percentage": 4.19
    },
    {
     "format": "sql",
@@ -124,153 +126,473 @@
   "topClones": [
    {
     "format": "json",
-    "lines": 6354,
-    "tokens": 20463,
-    "firstFile": {
-     "name": "packages/db/drizzle/meta/0047_snapshot.json",
-     "start": 2187,
-     "end": 8540
-    },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0048_snapshot.json",
-     "start": 2187,
-     "end": 8540
-    }
-   },
-   {
-    "format": "json",
-    "lines": 5024,
-    "tokens": 16133,
-    "firstFile": {
+    "lines": 1378,
+    "tokens": 4367,
+    "first": {
      "name": "packages/db/drizzle/meta/0026_snapshot.json",
      "start": 521,
-     "end": 5544
+     "end": 1898
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0027_snapshot.json",
-     "start": 521,
-     "end": 5544
-    }
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0029_snapshot.json",
+      "start": 521,
+      "end": 1898
+     },
+     {
+      "name": "packages/db/drizzle/meta/0030_snapshot.json",
+      "start": 521,
+      "end": 1898
+     },
+     {
+      "name": "packages/db/drizzle/meta/0031_snapshot.json",
+      "start": 521,
+      "end": 1898
+     },
+     {
+      "name": "packages/db/drizzle/meta/0032_snapshot.json",
+      "start": 521,
+      "end": 1898
+     },
+     {
+      "name": "packages/db/drizzle/meta/0033_snapshot.json",
+      "start": 521,
+      "end": 1898
+     },
+     {
+      "name": "packages/db/drizzle/meta/0034_snapshot.json",
+      "start": 521,
+      "end": 1898
+     },
+     {
+      "name": "packages/db/drizzle/meta/0035_snapshot.json",
+      "start": 521,
+      "end": 1898
+     },
+     {
+      "name": "packages/db/drizzle/meta/0036_snapshot.json",
+      "start": 521,
+      "end": 1898
+     }
+    ],
+    "copies": 25,
+    "excerpt": {
+     "lines": [
+      "  \"policies\": {},",
+      "  \"checkConstraints\": {},",
+      "  \"isRLSEnabled\": false",
+      "},",
+      "\"public.backup_policy\": {",
+      "  \"name\": \"backup_policy\",",
+      "  \"schema\": \"\",",
+      "  \"columns\": {",
+      "    \"id\": {",
+      "      \"name\": \"id\","
+     ],
+     "total": 1378
+    },
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 4838,
     "tokens": 15576,
-    "firstFile": {
+    "first": {
      "name": "packages/db/drizzle/meta/0049_snapshot.json",
      "start": 2790,
      "end": 7627
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0050_snapshot.json",
-     "start": 2790,
-     "end": 7627
-    }
-   },
-   {
-    "format": "json",
-    "lines": 4838,
-    "tokens": 15576,
-    "firstFile": {
-     "name": "packages/db/drizzle/meta/0049_snapshot.json",
-     "start": 2790,
-     "end": 7627
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0050_snapshot.json",
+      "start": 2790,
+      "end": 7627
+     },
+     {
+      "name": "packages/db/drizzle/meta/0051_snapshot.json",
+      "start": 2790,
+      "end": 7627
+     },
+     {
+      "name": "packages/db/drizzle/meta/0052_snapshot.json",
+      "start": 2790,
+      "end": 7627
+     },
+     {
+      "name": "packages/db/drizzle/meta/0053_snapshot.json",
+      "start": 2878,
+      "end": 7715
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "  \"notNull\": false",
+      "},",
+      "\"verified\": {",
+      "  \"name\": \"verified\",",
+      "  \"type\": \"boolean\",",
+      "  \"primaryKey\": false,",
+      "  \"notNull\": true,",
+      "  \"default\": false",
+      "},",
+      "\"verified_at\": {"
+     ],
+     "total": 4838
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0051_snapshot.json",
-     "start": 2790,
-     "end": 7627
-    }
+    "kind": "data"
    },
    {
     "format": "json",
-    "lines": 4838,
-    "tokens": 15576,
-    "firstFile": {
-     "name": "packages/db/drizzle/meta/0049_snapshot.json",
-     "start": 2790,
-     "end": 7627
+    "lines": 532,
+    "tokens": 1711,
+    "first": {
+     "name": "packages/db/drizzle/meta/0000_snapshot.json",
+     "start": 3,
+     "end": 534
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0052_snapshot.json",
-     "start": 2790,
-     "end": 7627
-    }
-   },
-   {
-    "format": "json",
-    "lines": 4838,
-    "tokens": 15576,
-    "firstFile": {
-     "name": "packages/db/drizzle/meta/0049_snapshot.json",
-     "start": 2790,
-     "end": 7627
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0026_snapshot.json",
+      "start": 3,
+      "end": 534
+     },
+     {
+      "name": "packages/db/drizzle/meta/0027_snapshot.json",
+      "start": 3,
+      "end": 534
+     },
+     {
+      "name": "packages/db/drizzle/meta/0028_snapshot.json",
+      "start": 3,
+      "end": 534
+     },
+     {
+      "name": "packages/db/drizzle/meta/0029_snapshot.json",
+      "start": 3,
+      "end": 534
+     },
+     {
+      "name": "packages/db/drizzle/meta/0030_snapshot.json",
+      "start": 3,
+      "end": 534
+     },
+     {
+      "name": "packages/db/drizzle/meta/0031_snapshot.json",
+      "start": 3,
+      "end": 534
+     },
+     {
+      "name": "packages/db/drizzle/meta/0032_snapshot.json",
+      "start": 3,
+      "end": 534
+     },
+     {
+      "name": "packages/db/drizzle/meta/0033_snapshot.json",
+      "start": 3,
+      "end": 534
+     }
+    ],
+    "copies": 36,
+    "excerpt": {
+     "lines": [
+      "\"prevId\": \"00000000-0000-0000-0000-000000000000\",",
+      "\"version\": \"7\",",
+      "\"dialect\": \"postgresql\",",
+      "\"tables\": {",
+      "  \"public.account\": {",
+      "    \"name\": \"account\",",
+      "    \"schema\": \"\",",
+      "    \"columns\": {",
+      "      \"id\": {",
+      "        \"name\": \"id\","
+     ],
+     "total": 532
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0053_snapshot.json",
-     "start": 2878,
-     "end": 7715
-    }
+    "kind": "data"
    },
    {
     "format": "json",
-    "lines": 4743,
-    "tokens": 15237,
-    "firstFile": {
-     "name": "packages/db/drizzle/meta/0057_snapshot.json",
-     "start": 2817,
-     "end": 7559
+    "lines": 1329,
+    "tokens": 4217,
+    "first": {
+     "name": "packages/db/drizzle/meta/0000_snapshot.json",
+     "start": 3,
+     "end": 1331
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0058_snapshot.json",
-     "start": 2817,
-     "end": 7559
-    }
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0016_snapshot.json",
+      "start": 3,
+      "end": 1331
+     },
+     {
+      "name": "packages/db/drizzle/meta/0017_snapshot.json",
+      "start": 3,
+      "end": 1331
+     },
+     {
+      "name": "packages/db/drizzle/meta/0018_snapshot.json",
+      "start": 3,
+      "end": 1331
+     },
+     {
+      "name": "packages/db/drizzle/meta/0019_snapshot.json",
+      "start": 3,
+      "end": 1331
+     },
+     {
+      "name": "packages/db/drizzle/meta/0020_snapshot.json",
+      "start": 3,
+      "end": 1331
+     },
+     {
+      "name": "packages/db/drizzle/meta/0021_snapshot.json",
+      "start": 3,
+      "end": 1331
+     },
+     {
+      "name": "packages/db/drizzle/meta/0022_snapshot.json",
+      "start": 3,
+      "end": 1331
+     },
+     {
+      "name": "packages/db/drizzle/meta/0023_snapshot.json",
+      "start": 3,
+      "end": 1331
+     }
+    ],
+    "copies": 11,
+    "kind": "data"
    },
    {
     "format": "json",
-    "lines": 4564,
-    "tokens": 14728,
-    "firstFile": {
+    "lines": 1629,
+    "tokens": 5208,
+    "first": {
+     "name": "packages/db/drizzle/meta/0000_snapshot.json",
+     "start": 3,
+     "end": 1631
+    },
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0001_snapshot.json",
+      "start": 3,
+      "end": 1631
+     },
+     {
+      "name": "packages/db/drizzle/meta/0002_snapshot.json",
+      "start": 3,
+      "end": 1631
+     },
+     {
+      "name": "packages/db/drizzle/meta/0003_snapshot.json",
+      "start": 3,
+      "end": 1631
+     },
+     {
+      "name": "packages/db/drizzle/meta/0004_snapshot.json",
+      "start": 3,
+      "end": 1631
+     },
+     {
+      "name": "packages/db/drizzle/meta/0005_snapshot.json",
+      "start": 3,
+      "end": 1631
+     },
+     {
+      "name": "packages/db/drizzle/meta/0006_snapshot.json",
+      "start": 3,
+      "end": 1631
+     },
+     {
+      "name": "packages/db/drizzle/meta/0007_snapshot.json",
+      "start": 3,
+      "end": 1631
+     }
+    ],
+    "copies": 8,
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 2125,
+    "tokens": 6806,
+    "first": {
      "name": "packages/db/drizzle/meta/0021_snapshot.json",
      "start": 1946,
-     "end": 6509
+     "end": 4070
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0022_snapshot.json",
-     "start": 1946,
-     "end": 6509
-    }
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0023_snapshot.json",
+      "start": 1946,
+      "end": 4070
+     },
+     {
+      "name": "packages/db/drizzle/meta/0024_snapshot.json",
+      "start": 1946,
+      "end": 4070
+     },
+     {
+      "name": "packages/db/drizzle/meta/0025_snapshot.json",
+      "start": 1946,
+      "end": 4070
+     },
+     {
+      "name": "packages/db/drizzle/meta/0026_snapshot.json",
+      "start": 2048,
+      "end": 4172
+     },
+     {
+      "name": "packages/db/drizzle/meta/0029_snapshot.json",
+      "start": 2181,
+      "end": 4305
+     }
+    ],
+    "copies": 6,
+    "kind": "data"
    },
    {
     "format": "json",
-    "lines": 4416,
-    "tokens": 14233,
-    "firstFile": {
-     "name": "packages/db/drizzle/meta/0039_snapshot.json",
-     "start": 3675,
-     "end": 8090
+    "lines": 3488,
+    "tokens": 11204,
+    "first": {
+     "name": "packages/db/drizzle/meta/0054_snapshot.json",
+     "start": 3703,
+     "end": 7190
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0040_snapshot.json",
-     "start": 3783,
-     "end": 8198
-    }
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0055_snapshot.json",
+      "start": 3703,
+      "end": 7190
+     },
+     {
+      "name": "packages/db/drizzle/meta/0056_snapshot.json",
+      "start": 3724,
+      "end": 7211
+     },
+     {
+      "name": "packages/db/drizzle/meta/0057_snapshot.json",
+      "start": 3765,
+      "end": 7252
+     }
+    ],
+    "copies": 4,
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 2609,
+    "tokens": 8357,
+    "first": {
+     "name": "packages/db/drizzle/meta/0016_snapshot.json",
+     "start": 1315,
+     "end": 3923
+    },
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0017_snapshot.json",
+      "start": 1315,
+      "end": 3923
+     },
+     {
+      "name": "packages/db/drizzle/meta/0018_snapshot.json",
+      "start": 1315,
+      "end": 3923
+     },
+     {
+      "name": "packages/db/drizzle/meta/0019_snapshot.json",
+      "start": 1315,
+      "end": 3923
+     },
+     {
+      "name": "packages/db/drizzle/meta/0020_snapshot.json",
+      "start": 1315,
+      "end": 3923
+     }
+    ],
+    "copies": 5,
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 1216,
+    "tokens": 3838,
+    "first": {
+     "name": "packages/db/drizzle/meta/0026_snapshot.json",
+     "start": 521,
+     "end": 1736
+    },
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0053_snapshot.json",
+      "start": 521,
+      "end": 1736
+     },
+     {
+      "name": "packages/db/drizzle/meta/0054_snapshot.json",
+      "start": 521,
+      "end": 1736
+     },
+     {
+      "name": "packages/db/drizzle/meta/0055_snapshot.json",
+      "start": 521,
+      "end": 1736
+     },
+     {
+      "name": "packages/db/drizzle/meta/0056_snapshot.json",
+      "start": 521,
+      "end": 1736
+     },
+     {
+      "name": "packages/db/drizzle/meta/0057_snapshot.json",
+      "start": 521,
+      "end": 1736
+     },
+     {
+      "name": "packages/db/drizzle/meta/0058_snapshot.json",
+      "start": 521,
+      "end": 1736
+     },
+     {
+      "name": "packages/db/drizzle/meta/0059_snapshot.json",
+      "start": 521,
+      "end": 1736
+     },
+     {
+      "name": "packages/db/drizzle/meta/0060_snapshot.json",
+      "start": 521,
+      "end": 1736
+     }
+    ],
+    "copies": 9,
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 3970,
     "tokens": 12764,
-    "firstFile": {
+    "first": {
      "name": "packages/db/drizzle/meta/0042_snapshot.json",
      "start": 3834,
      "end": 7803
     },
-    "secondFile": {
-     "name": "packages/db/drizzle/meta/0043_snapshot.json",
-     "start": 3834,
-     "end": 7803
-    }
+    "others": [
+     {
+      "name": "packages/db/drizzle/meta/0043_snapshot.json",
+      "start": 3834,
+      "end": 7803
+     },
+     {
+      "name": "packages/db/drizzle/meta/0044_snapshot.json",
+      "start": 3878,
+      "end": 7847
+     }
+    ],
+    "copies": 3,
+    "kind": "data"
    }
   ],
   "health": {
@@ -496,6 +818,469 @@
      "lines": 342
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 2834,
+   "lines": 603727,
+   "tokens": 3166286,
+   "clones": 828,
+   "duplicatedLines": 12469,
+   "duplicatedTokens": 69936,
+   "percentage": 2.07,
+   "percentageTokens": 2.21,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 1838,
+     "lines": 398681,
+     "clones": 549,
+     "duplicatedLines": 6726,
+     "percentage": 1.69
+    },
+    {
+     "format": "tsx",
+     "sources": 816,
+     "lines": 184385,
+     "clones": 254,
+     "duplicatedLines": 5443,
+     "percentage": 2.95
+    },
+    {
+     "format": "bash",
+     "sources": 60,
+     "lines": 10129,
+     "clones": 9,
+     "duplicatedLines": 153,
+     "percentage": 1.51
+    },
+    {
+     "format": "sql",
+     "sources": 69,
+     "lines": 3668,
+     "clones": 7,
+     "duplicatedLines": 55,
+     "percentage": 1.5
+    },
+    {
+     "format": "lua",
+     "sources": 7,
+     "lines": 1723,
+     "clones": 7,
+     "duplicatedLines": 57,
+     "percentage": 3.31
+    },
+    {
+     "format": "python",
+     "sources": 8,
+     "lines": 1091,
+     "clones": 2,
+     "duplicatedLines": 35,
+     "percentage": 3.21
+    },
+    {
+     "format": "javascript",
+     "sources": 32,
+     "lines": 3572,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 192,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "jsx",
+     "sources": 2,
+     "lines": 112,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 1783,
+     "tokens": 7173,
+     "first": {
+      "name": "apps/email/client/components/icons/icons.tsx",
+      "start": 1,
+      "end": 1783
+     },
+     "others": [
+      {
+       "name": "apps/web/src/app/(site)/(marketing)/mail/_components/icons.tsx",
+       "start": 1,
+       "end": 1783
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "export const Vercel = ({ className }: { className?: string }) => (",
+       "  <svg role=\"img\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" className={className}>",
+       "    <title>Vercel</title>",
+       "    <path d=\"M24 22.525H0l12-21.05 12 21.05z\" fill=\"var(--icon-color)\" />",
+       "  </svg>",
+       ");",
+       "",
+       "export const Gmail = ({ className }: { className?: string }) => (",
+       "  <svg role=\"img\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" className={className}>",
+       "    <title>Gmail</title>"
+      ],
+      "total": 1783
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 93,
+     "first": {
+      "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+      "start": 98,
+      "end": 106
+     },
+     "others": [
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 115,
+       "end": 123
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 225,
+       "end": 233
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 301,
+       "end": 309
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 471,
+       "end": 479
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 493,
+       "end": 501
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 512,
+       "end": 520
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 656,
+       "end": 664
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 871,
+       "end": 879
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "export async function listDomainsHandler(c: Context) {",
+       "  const guard = assertNotCloud(c);",
+       "  if (guard) return guard;",
+       "  const serverId = param(c, \"serverId\");",
+       "  await permission.assert(getRequestContext(c), { resourceType: \"mail_server\", resourceId: serverId, action: \"read\" });",
+       "  const ctx = getRequestContext(c);",
+       "  if (!(await isServerInOrg(ctx, serverId))) {",
+       "    return c.json({ error: \"Server not found\" }, 404);",
+       "  }"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 25,
+     "tokens": 192,
+     "first": {
+      "name": "apps/email/engine/tools/backup_mysql.sh",
+      "start": 99,
+      "end": 123
+     },
+     "others": [
+      {
+       "name": "apps/email/engine/tools/backup_openldap.sh",
+       "start": 111,
+       "end": 135
+      },
+      {
+       "name": "apps/email/engine/tools/backup_pgsql.sh",
+       "start": 86,
+       "end": 110
+      },
+      {
+       "name": "apps/email/engine/tools/backup_sogo.sh",
+       "start": 79,
+       "end": 103
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "# Find the old backup which should be removed.",
+       "export REMOVE_OLD_BACKUP='YES'",
+       "",
+       "export KERNEL=\"$(uname -s)\"",
+       "if [[ X\"${KERNEL}\" == X'Linux' ]]; then",
+       "    shift_year=$(date --date=\"${KEEP_DAYS} days ago\" \"+%Y\")",
+       "    shift_month=$(date --date=\"${KEEP_DAYS} days ago\" \"+%m\")",
+       "    shift_day=$(date --date=\"${KEEP_DAYS} days ago\" \"+%d\")",
+       "elif [[ X\"${KERNEL}\" == X'FreeBSD' ]]; then",
+       "    shift_year=$(date -j -v-${KEEP_DAYS}d \"+%Y\")"
+      ],
+      "total": 25
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 82,
+     "tokens": 498,
+     "first": {
+      "name": "apps/email/client/components/mail/mail-skeleton.tsx",
+      "start": 9,
+      "end": 90
+     },
+     "others": [
+      {
+       "name": "apps/email/client/components/mail/mail-skeleton.tsx",
+       "start": 50,
+       "end": 131
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 91,
+     "first": {
+      "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+      "start": 135,
+      "end": 144
+     },
+     "others": [
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 162,
+       "end": 171
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 252,
+       "end": 261
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 324,
+       "end": 333
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 559,
+       "end": 568
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 704,
+       "end": 713
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 82,
+     "tokens": 408,
+     "first": {
+      "name": "apps/dashboard/src/components/terminal/ServerTerminal.tsx",
+      "start": 330,
+      "end": 411
+     },
+     "others": [
+      {
+       "name": "apps/dashboard/src/components/terminal/ServiceTerminal.tsx",
+       "start": 304,
+       "end": 384
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 23,
+     "tokens": 192,
+     "first": {
+      "name": "apps/dashboard/src/components/migration/ServerMigrationWizard.tsx",
+      "start": 1608,
+      "end": 1630
+     },
+     "others": [
+      {
+       "name": "apps/dashboard/src/components/migration/ServerMigrationWizard.tsx",
+       "start": 2354,
+       "end": 2375
+      },
+      {
+       "name": "apps/dashboard/src/components/migration/ServerMigrationWizard.tsx",
+       "start": 2662,
+       "end": 2685
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 11,
+     "tokens": 96,
+     "first": {
+      "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+      "start": 98,
+      "end": 108
+     },
+     "others": [
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 276,
+       "end": 286
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 346,
+       "end": 356
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 760,
+       "end": 770
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 808,
+       "end": 820
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 91,
+     "first": {
+      "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+      "start": 191,
+      "end": 200
+     },
+     "others": [
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 368,
+       "end": 377
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 623,
+       "end": 632
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 733,
+       "end": 742
+      },
+      {
+       "name": "apps/api/src/modules/mail/admin/admin.controller.ts",
+       "start": 830,
+       "end": 839
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 6,
+     "tokens": 70,
+     "first": {
+      "name": "packages/platform/src/native-worker.ts",
+      "start": 210,
+      "end": 215
+     },
+     "others": [
+      {
+       "name": "packages/platform/src/native-worker.ts",
+       "start": 216,
+       "end": 221
+      },
+      {
+       "name": "packages/platform/src/native-worker.ts",
+       "start": 222,
+       "end": 227
+      },
+      {
+       "name": "packages/platform/src/native-worker.ts",
+       "start": 228,
+       "end": 233
+      },
+      {
+       "name": "packages/platform/src/native-worker.ts",
+       "start": 242,
+       "end": 247
+      },
+      {
+       "name": "packages/platform/src/native-worker.ts",
+       "start": 252,
+       "end": 257
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 7,
+    "minified": 0,
+    "sample": [
+     "packages/adapters/src/infra/cloudflare-ips.generated.ts",
+     "packages/adapters/src/infra/lua-embedded.ts",
+     "packages/adapters/src/infra/lua/maxminddb.lua",
+     "packages/adapters/src/system/modules/catalog-embedded.ts",
+     "packages/core/src/app-templates.ts",
+     "packages/core/src/stacks.ts",
+     "packages/db-email/src/schema/vmail.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:29:39.172Z",
+  "jscpdVersion": "5.4.0"
  }
 }

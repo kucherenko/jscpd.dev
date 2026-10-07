@@ -9,10 +9,12 @@
    "starsToday": 251,
    "headSha": "230fb692962668ca22ce0e61a8f53ce1cfd32102",
    "sources": 655,
-   "lines": 222789,
-   "clones": 636,
-   "duplicatedLines": 9775,
-   "percentage": 4.39,
+   "lines": 222086,
+   "clones": 736,
+   "duplicatedLines": 11190,
+   "percentage": 5.04,
+   "codePercentage": 1.99,
+   "codeSources": 373,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,97 +30,97 @@
   "starsToday": 251,
   "defaultBranch": "main",
   "headSha": "230fb692962668ca22ce0e61a8f53ce1cfd32102",
-  "durationMs": 762,
+  "durationMs": 522,
   "total": {
    "sources": 655,
-   "lines": 222789,
-   "tokens": 1165156,
-   "clones": 636,
-   "duplicatedLines": 9775,
-   "duplicatedTokens": 54537,
-   "percentage": 4.39,
-   "percentageTokens": 4.68
+   "lines": 222086,
+   "tokens": 1165025,
+   "clones": 736,
+   "duplicatedLines": 11190,
+   "duplicatedTokens": 59344,
+   "percentage": 5.04,
+   "percentageTokens": 5.09
   },
   "formats": [
    {
     "format": "rust",
     "sources": 97,
     "lines": 30343,
-    "clones": 321,
-    "duplicatedLines": 3972,
-    "percentage": 13.09
+    "clones": 409,
+    "duplicatedLines": 5068,
+    "percentage": 16.7
    },
    {
     "format": "dart",
     "sources": 361,
-    "lines": 148431,
-    "clones": 237,
-    "duplicatedLines": 4218,
-    "percentage": 2.84
+    "lines": 148379,
+    "clones": 239,
+    "duplicatedLines": 4471,
+    "percentage": 3.01
    },
    {
     "format": "yaml",
     "sources": 31,
     "lines": 2433,
-    "clones": 43,
-    "duplicatedLines": 642,
-    "percentage": 26.39
+    "clones": 52,
+    "duplicatedLines": 774,
+    "percentage": 31.81
    },
    {
     "format": "json",
     "sources": 68,
     "lines": 32297,
     "clones": 19,
-    "duplicatedLines": 670,
-    "percentage": 2.07
+    "duplicatedLines": 689,
+    "percentage": 2.13
    },
    {
     "format": "markup",
     "sources": 14,
     "lines": 1934,
     "clones": 6,
-    "duplicatedLines": 68,
-    "percentage": 3.52
+    "duplicatedLines": 74,
+    "percentage": 3.83
    },
    {
     "format": "markdown",
     "sources": 9,
     "lines": 1454,
     "clones": 4,
-    "duplicatedLines": 39,
-    "percentage": 2.68
+    "duplicatedLines": 41,
+    "percentage": 2.82
+   },
+   {
+    "format": "txt",
+    "sources": 9,
+    "lines": 548,
+    "clones": 3,
+    "duplicatedLines": 30,
+    "percentage": 5.47
    },
    {
     "format": "kotlin",
     "sources": 4,
     "lines": 870,
     "clones": 2,
-    "duplicatedLines": 21,
-    "percentage": 2.41
-   },
-   {
-    "format": "txt",
-    "sources": 9,
-    "lines": 548,
-    "clones": 2,
-    "duplicatedLines": 19,
-    "percentage": 3.47
+    "duplicatedLines": 23,
+    "percentage": 2.64
    },
    {
     "format": "bash",
     "sources": 19,
-    "lines": 1695,
+    "lines": 1038,
     "clones": 1,
-    "duplicatedLines": 119,
-    "percentage": 7.02
+    "duplicatedLines": 12,
+    "percentage": 1.16
    },
    {
     "format": "cmake",
     "sources": 3,
     "lines": 174,
     "clones": 1,
-    "duplicatedLines": 7,
-    "percentage": 4.02
+    "duplicatedLines": 8,
+    "percentage": 4.6
    }
   ],
   "topClones": [
@@ -126,152 +128,914 @@
     "format": "dart",
     "lines": 1430,
     "tokens": 4714,
-    "firstFile": {
+    "first": {
      "name": "packages/localsend_isolates/lib/rust/frb_generated.io.dart",
      "start": 64,
      "end": 1493
     },
-    "secondFile": {
-     "name": "packages/localsend_isolates/lib/rust/frb_generated.web.dart",
-     "start": 66,
-     "end": 1495
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 53,
-    "tokens": 383,
-    "firstFile": {
-     "name": ".github/workflows/build_windows_exe.yml",
-     "start": 25,
-     "end": 77
+    "others": [
+     {
+      "name": "packages/localsend_isolates/lib/rust/frb_generated.web.dart",
+      "start": 66,
+      "end": 1495
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    wire._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerRsHttpServerPtr;",
+      "",
+      "@protected",
+      "AnyhowException dco_decode_AnyhowException(dynamic raw);",
+      "",
+      "@protected",
+      "Dart2RustStreamReceiver dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDart2RustStreamReceiver(dynamic raw);",
+      "",
+      "@protected",
+      "Dart2RustStreamSink dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDart2RustStreamSink(dynamic raw);"
+     ],
+     "total": 1430
     },
-    "secondFile": {
-     "name": ".github/workflows/build_windows_zip_x64.yml",
-     "start": 25,
-     "end": 80
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 15,
-    "tokens": 301,
-    "firstFile": {
-     "name": "README.md:markdown",
-     "start": 83,
-     "end": 97
-    },
-    "secondFile": {
-     "name": "support/readme/README_ZH.md:markdown",
-     "start": 73,
-     "end": 87
-    }
+    "kind": "code"
    },
    {
     "format": "rust",
-    "lines": 48,
-    "tokens": 274,
-    "firstFile": {
+    "lines": 16,
+    "tokens": 84,
+    "first": {
      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
      "start": 63,
-     "end": 110
+     "end": 78
     },
-    "secondFile": {
-     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
-     "start": 1401,
-     "end": 1442
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 45,
-    "tokens": 250,
-    "firstFile": {
-     "name": "packages/core/tests/v2_server.rs",
-     "start": 939,
-     "end": 983
+    "others": [
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 171,
+      "end": 186
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 240,
+      "end": 255
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 311,
+      "end": 326
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 419,
+      "end": 434
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 482,
+      "end": 497
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 539,
+      "end": 554
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 593,
+      "end": 608
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 662,
+      "end": 677
+     }
+    ],
+    "copies": 42,
+    "excerpt": {
+     "lines": [
+      "    debug_name: \"Dart2RustStreamSink_add\",",
+      "    port: Some(port_),",
+      "    mode: flutter_rust_bridge::for_generated::FfiCallMode::Normal,",
+      "},",
+      "move || {",
+      "    let message = unsafe {",
+      "        flutter_rust_bridge::for_generated::Dart2RustMessageSse::from_wire(",
+      "            ptr_,",
+      "            rust_vec_len_,",
+      "            data_len_,"
+     ],
+     "total": 16
     },
-    "secondFile": {
-     "name": "packages/core/tests/v2_server.rs",
-     "start": 1041,
-     "end": 1085
-    }
+    "kind": "code"
    },
    {
     "format": "dart",
-    "lines": 14,
-    "tokens": 250,
-    "firstFile": {
-     "name": "packages/localsend_isolates/lib/rust/api/server.freezed.dart",
-     "start": 146,
-     "end": 159
-    },
-    "secondFile": {
-     "name": "packages/localsend_isolates/lib/rust/api/server.freezed.dart",
-     "start": 202,
-     "end": 215
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 40,
-    "tokens": 244,
-    "firstFile": {
-     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
-     "start": 63,
-     "end": 102
-    },
-    "secondFile": {
-     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
-     "start": 894,
-     "end": 933
-    }
-   },
-   {
-    "format": "markdown",
     "lines": 10,
-    "tokens": 243,
-    "firstFile": {
-     "name": "README.md:markdown",
-     "start": 67,
-     "end": 76
+    "tokens": 53,
+    "first": {
+     "name": "app/lib/gen/strings_ar.g.dart",
+     "start": 16,
+     "end": 25
     },
-    "secondFile": {
-     "name": "support/readme/README_ZH.md:markdown",
-     "start": 60,
-     "end": 69
-    }
+    "others": [
+     {
+      "name": "app/lib/gen/strings_az.g.dart",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "app/lib/gen/strings_be.g.dart",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "app/lib/gen/strings_bg.g.dart",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "app/lib/gen/strings_bn.g.dart",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "app/lib/gen/strings_ca.g.dart",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "app/lib/gen/strings_cs.g.dart",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "app/lib/gen/strings_da.g.dart",
+      "start": 16,
+      "end": 25
+     },
+     {
+      "name": "app/lib/gen/strings_de.g.dart",
+      "start": 16,
+      "end": 25
+     }
+    ],
+    "copies": 59,
+    "excerpt": {
+     "lines": [
+      "TranslationsAr({",
+      "  Map<String, Node>? overrides,",
+      "  PluralResolver? cardinalResolver,",
+      "  PluralResolver? ordinalResolver,",
+      "  TranslationMetadata<AppLocale, Translations>? meta,",
+      "}) : assert(overrides == null, 'Set \"translation_overrides: true\" in order to enable this feature.'),",
+      "     $meta =",
+      "         meta ??",
+      "         TranslationMetadata(",
+      "           locale: AppLocale.ar,"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "TranslationsAz({",
+      "  Map<String, Node>? overrides,",
+      "  PluralResolver? cardinalResolver,",
+      "  PluralResolver? ordinalResolver,",
+      "  TranslationMetadata<AppLocale, Translations>? meta,",
+      "}) : assert(overrides == null, 'Set \"translation_overrides: true\" in order to enable this feature.'),",
+      "     $meta =",
+      "         meta ??",
+      "         TranslationMetadata(",
+      "           locale: AppLocale.az,"
+     ],
+     "total": 10
+    },
+    "kind": "generated"
    },
    {
     "format": "rust",
-    "lines": 40,
-    "tokens": 238,
-    "firstFile": {
+    "lines": 9,
+    "tokens": 62,
+    "first": {
      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
-     "start": 63,
-     "end": 102
+     "start": 55,
+     "end": 63
     },
-    "secondFile": {
-     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
-     "start": 2141,
-     "end": 2179
-    }
+    "others": [
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 163,
+      "end": 171
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 232,
+      "end": 240
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 303,
+      "end": 311
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 411,
+      "end": 419
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 474,
+      "end": 482
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 585,
+      "end": 593
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 654,
+      "end": 662
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 767,
+      "end": 775
+     }
+    ],
+    "copies": 43,
+    "kind": "code"
    },
    {
-    "format": "json",
-    "lines": 91,
-    "tokens": 206,
-    "firstFile": {
-     "name": "app/assets/i18n/en-IN.json",
-     "start": 281,
-     "end": 371
+    "format": "rust",
+    "lines": 23,
+    "tokens": 151,
+    "first": {
+     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+     "start": 193,
+     "end": 215
     },
-    "secondFile": {
-     "name": "app/assets/i18n/en.json",
-     "start": 334,
-     "end": 424
-    }
+    "others": [
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 263,
+      "end": 285
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 328,
+      "end": 350
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 615,
+      "end": 637
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 794,
+      "end": 816
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1547,
+      "end": 1569
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1686,
+      "end": 1708
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1747,
+      "end": 1769
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1918,
+      "end": 1940
+     }
+    ],
+    "copies": 14,
+    "kind": "code"
+   },
+   {
+    "format": "dart",
+    "lines": 11,
+    "tokens": 50,
+    "first": {
+     "name": "app/lib/gen/strings_ar.g.dart",
+     "start": 1196,
+     "end": 1206
+    },
+    "others": [
+     {
+      "name": "app/lib/gen/strings_az.g.dart",
+      "start": 1112,
+      "end": 1122
+     },
+     {
+      "name": "app/lib/gen/strings_be.g.dart",
+      "start": 1112,
+      "end": 1122
+     },
+     {
+      "name": "app/lib/gen/strings_bg.g.dart",
+      "start": 1113,
+      "end": 1123
+     },
+     {
+      "name": "app/lib/gen/strings_bn.g.dart",
+      "start": 1197,
+      "end": 1207
+     },
+     {
+      "name": "app/lib/gen/strings_ca.g.dart",
+      "start": 1198,
+      "end": 1208
+     },
+     {
+      "name": "app/lib/gen/strings_da.g.dart",
+      "start": 1111,
+      "end": 1121
+     },
+     {
+      "name": "app/lib/gen/strings_el.g.dart",
+      "start": 1199,
+      "end": 1209
+     },
+     {
+      "name": "app/lib/gen/strings_gu.g.dart",
+      "start": 1195,
+      "end": 1205
+     }
+    ],
+    "copies": 31,
+    "kind": "generated"
+   },
+   {
+    "format": "dart",
+    "lines": 13,
+    "tokens": 58,
+    "first": {
+     "name": "app/lib/gen/strings_ca.g.dart",
+     "start": 1196,
+     "end": 1208
+    },
+    "others": [
+     {
+      "name": "app/lib/gen/strings_cs.g.dart",
+      "start": 1109,
+      "end": 1121
+     },
+     {
+      "name": "app/lib/gen/strings_de.g.dart",
+      "start": 1110,
+      "end": 1122
+     },
+     {
+      "name": "app/lib/gen/strings_es_ES.g.dart",
+      "start": 1115,
+      "end": 1127
+     },
+     {
+      "name": "app/lib/gen/strings_eu.g.dart",
+      "start": 1111,
+      "end": 1123
+     },
+     {
+      "name": "app/lib/gen/strings_fil_PH.g.dart",
+      "start": 1205,
+      "end": 1217
+     },
+     {
+      "name": "app/lib/gen/strings_fr.g.dart",
+      "start": 1111,
+      "end": 1123
+     },
+     {
+      "name": "app/lib/gen/strings_gl.g.dart",
+      "start": 1110,
+      "end": 1122
+     },
+     {
+      "name": "app/lib/gen/strings_it.g.dart",
+      "start": 1110,
+      "end": 1122
+     }
+    ],
+    "copies": 14,
+    "kind": "generated"
+   },
+   {
+    "format": "rust",
+    "lines": 26,
+    "tokens": 160,
+    "first": {
+     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+     "start": 680,
+     "end": 705
+    },
+    "others": [
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1483,
+      "end": 1508
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 2094,
+      "end": 2119
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 2217,
+      "end": 2242
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 2282,
+      "end": 2307
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 56,
+    "first": {
+     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+     "start": 5392,
+     "end": 5399
+    },
+    "others": [
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5412,
+      "end": 5419
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5430,
+      "end": 5437
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5450,
+      "end": 5456
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5465,
+      "end": 5471
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5480,
+      "end": 5487
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5498,
+      "end": 5504
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5513,
+      "end": 5520
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 5531,
+      "end": 5537
+     }
+    ],
+    "copies": 11,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 12,
+    "tokens": 78,
+    "first": {
+     "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+     "start": 1281,
+     "end": 1292
+    },
+    "others": [
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1343,
+      "end": 1354
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1407,
+      "end": 1418
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1471,
+      "end": 1482
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1533,
+      "end": 1544
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1599,
+      "end": 1610
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1674,
+      "end": 1685
+     },
+     {
+      "name": "packages/localsend_isolates/rust/src/frb_generated.rs",
+      "start": 1736,
+      "end": 1747
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 373,
+   "lines": 49796,
+   "tokens": 251262,
+   "clones": 82,
+   "duplicatedLines": 993,
+   "duplicatedTokens": 5749,
+   "percentage": 1.99,
+   "percentageTokens": 2.29,
+   "formats": [
+    {
+     "format": "dart",
+     "sources": 235,
+     "lines": 27324,
+     "clones": 40,
+     "duplicatedLines": 530,
+     "percentage": 1.94
+    },
+    {
+     "format": "rust",
+     "sources": 86,
+     "lines": 18308,
+     "clones": 40,
+     "duplicatedLines": 440,
+     "percentage": 2.4
+    },
+    {
+     "format": "kotlin",
+     "sources": 4,
+     "lines": 870,
+     "clones": 2,
+     "duplicatedLines": 23,
+     "percentage": 2.64
+    },
+    {
+     "format": "bash",
+     "sources": 16,
+     "lines": 1001,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "cpp",
+     "sources": 6,
+     "lines": 655,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "swift",
+     "sources": 9,
+     "lines": 651,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "groovy",
+     "sources": 5,
+     "lines": 414,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 7,
+     "lines": 227,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c-header",
+     "sources": 4,
+     "lines": 172,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "dart",
+     "lines": 34,
+     "tokens": 201,
+     "first": {
+      "name": "app/lib/widget/dialogs/address_input_dialog.dart",
+      "start": 214,
+      "end": 247
+     },
+     "others": [
+      {
+       "name": "app/lib/widget/dialogs/favorite_dialog.dart",
+       "start": 102,
+       "end": 135
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "],",
+       "if (_error != null)",
+       "  Padding(",
+       "    padding: const EdgeInsets.only(top: 10),",
+       "    child: Row(",
+       "      children: [",
+       "        Text(t.general.error, style: TextStyle(color: Theme.of(context).colorScheme.warning)),",
+       "        if (_error != null) ...[",
+       "          const SizedBox(width: 5),",
+       "          InkWell("
+      ],
+      "total": 34
+     },
+     "kind": "code"
+    },
+    {
+     "format": "dart",
+     "lines": 26,
+     "tokens": 195,
+     "first": {
+      "name": "app/lib/config/theme.dart",
+      "start": 55,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "app/lib/config/theme.dart",
+       "start": 182,
+       "end": 207
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "// same density on all platforms so desktop matches mobile (defaults to compact on desktop)",
+       "visualDensity: VisualDensity.standard,",
+       "navigationBarTheme: colorScheme.brightness == Brightness.dark",
+       "    ? NavigationBarThemeData(",
+       "        iconTheme: WidgetStateProperty.all(const IconThemeData(color: Colors.white)),",
+       "      )",
+       "    : null,",
+       "inputDecorationTheme: InputDecorationTheme(",
+       "  filled: true,",
+       "  fillColor: colorScheme.secondaryContainer,"
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "dart",
+     "lines": 29,
+     "tokens": 172,
+     "first": {
+      "name": "app/lib/widget/dialogs/address_input_dialog.dart",
+      "start": 212,
+      "end": 240
+     },
+     "others": [
+      {
+       "name": "app/lib/widget/dialogs/favorite_edit_dialog.dart",
+       "start": 114,
+       "end": 142
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "      ),",
+       "    ),",
+       "],",
+       "if (_error != null)",
+       "  Padding(",
+       "    padding: const EdgeInsets.only(top: 10),",
+       "    child: Row(",
+       "      children: [",
+       "        Text(t.general.error, style: TextStyle(color: Theme.of(context).colorScheme.warning)),",
+       "        if (_error != null) ...["
+      ],
+      "total": 29
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 52,
+     "first": {
+      "name": "packages/core/src/discovery/store.rs",
+      "start": 305,
+      "end": 311
+     },
+     "others": [
+      {
+       "name": "packages/core/src/discovery/store.rs",
+       "start": 336,
+       "end": 342
+      },
+      {
+       "name": "packages/core/src/discovery/store.rs",
+       "start": 367,
+       "end": 373
+      },
+      {
+       "name": "packages/core/src/discovery/store.rs",
+       "start": 430,
+       "end": 436
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "dart",
+     "lines": 13,
+     "tokens": 71,
+     "first": {
+      "name": "app/lib/widget/dialogs/custom_color_dialog.dart",
+      "start": 42,
+      "end": 54
+     },
+     "others": [
+      {
+       "name": "app/lib/widget/dialogs/file_name_input_dialog.dart",
+       "start": 97,
+       "end": 109
+      },
+      {
+       "name": "app/lib/widget/dialogs/message_input_dialog.dart",
+       "start": 37,
+       "end": 49
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 141,
+     "first": {
+      "name": "packages/core/src/webrtc/signaling.rs",
+      "start": 315,
+      "end": 331
+     },
+     "others": [
+      {
+       "name": "packages/core/src/webrtc/signaling.rs",
+       "start": 345,
+       "end": 361
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "dart",
+     "lines": 19,
+     "tokens": 139,
+     "first": {
+      "name": "app/lib/widget/dialogs/qr_dialog.dart",
+      "start": 55,
+      "end": 73
+     },
+     "others": [
+      {
+       "name": "app/lib/widget/dialogs/zoom_dialog.dart",
+       "start": 58,
+       "end": 76
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 25,
+     "tokens": 123,
+     "first": {
+      "name": "packages/core/src/http/client/server_cert_verifier.rs",
+      "start": 114,
+      "end": 138
+     },
+     "others": [
+      {
+       "name": "packages/core/src/http/server/common/client_cert_verifier.rs",
+       "start": 65,
+       "end": 89
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 21,
+     "tokens": 119,
+     "first": {
+      "name": "packages/core/src/http/client/v2.rs",
+      "start": 176,
+      "end": 196
+     },
+     "others": [
+      {
+       "name": "packages/core/src/http/client/v3.rs",
+       "start": 167,
+       "end": 187
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "dart",
+     "lines": 19,
+     "tokens": 115,
+     "first": {
+      "name": "app/lib/widget/dialogs/text_field_tv.dart",
+      "start": 50,
+      "end": 68
+     },
+     "others": [
+      {
+       "name": "app/lib/widget/dialogs/text_field_with_actions.dart",
+       "start": 56,
+       "end": 76
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 116,
+    "minified": 0,
+    "sample": [
+     "app/lib/gen/assets.gen.dart",
+     "app/lib/gen/strings_ar.g.dart",
+     "app/lib/gen/strings_az.g.dart",
+     "app/lib/gen/strings_be.g.dart",
+     "app/lib/gen/strings_bg.g.dart",
+     "app/lib/gen/strings_bn.g.dart",
+     "app/lib/gen/strings_ca.g.dart",
+     "app/lib/gen/strings_cs.g.dart",
+     "app/lib/gen/strings_da.g.dart",
+     "app/lib/gen/strings_de.g.dart",
+     "app/lib/gen/strings_el.g.dart",
+     "app/lib/gen/strings_en_IN.g.dart",
+     "app/lib/gen/strings_en.g.dart",
+     "app/lib/gen/strings_es_ES.g.dart",
+     "app/lib/gen/strings_et.g.dart",
+     "app/lib/gen/strings_eu.g.dart",
+     "app/lib/gen/strings_fa.g.dart",
+     "app/lib/gen/strings_fi.g.dart",
+     "app/lib/gen/strings_fil_PH.g.dart",
+     "app/lib/gen/strings_fr.g.dart"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:04:22.649Z",
+  "jscpdVersion": "5.4.0"
  }
 }

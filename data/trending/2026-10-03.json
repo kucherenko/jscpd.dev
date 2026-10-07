@@ -6,30 +6,48 @@
  "summary": {
   "repos": 9,
   "sources": 13058,
-  "lines": 3595550,
-  "tokens": 26347294,
-  "clones": 25738,
-  "duplicatedLines": 758977,
-  "duplicatedTokens": 6818091,
+  "lines": 3595198,
+  "tokens": 26345974,
+  "clones": 25737,
+  "duplicatedLines": 758964,
+  "duplicatedTokens": 6817992,
   "percentage": 21.11,
   "percentageTokens": 25.88,
   "avgPercentage": 14.07,
   "medianPercentage": 10.23,
   "mostDuplicated": {
    "name": "pbakaus/impeccable",
-   "clones": 2890,
+   "clones": 2889,
    "percentage": 63.78
   },
   "cleanest": {
    "name": "pablostanley/yoinks",
    "clones": 2,
-   "percentage": 0.42
+   "percentage": 0.43
   },
   "mostClones": {
    "name": "Effect-TS/effect",
    "clones": 7121,
    "percentage": 13.8
   },
+  "codeRepos": 9,
+  "codeSources": 4030,
+  "codeLines": 2000161,
+  "codeClones": 10997,
+  "codeDuplicatedLines": 423688,
+  "codePercentage": 21.18,
+  "codeMedianPercentage": 4.4,
+  "codeMostDuplicated": {
+   "name": "pbakaus/impeccable",
+   "clones": 498,
+   "percentage": 64.41
+  },
+  "codeCleanest": {
+   "name": "pablostanley/yoinks",
+   "clones": 1,
+   "percentage": 0.26
+  },
+  "generatedFiles": 88,
   "avgHealth": 47.06,
   "healthiest": {
    "name": "Panniantong/Agent-Reach",
@@ -46,7 +64,7 @@
     "language": "TypeScript",
     "repos": 4,
     "clones": 12541,
-    "lines": 1568283,
+    "lines": 1568151,
     "duplicatedLines": 187899,
     "percentage": 11.98
    },
@@ -54,7 +72,7 @@
     "language": "Python",
     "repos": 2,
     "clones": 707,
-    "lines": 176816,
+    "lines": 176728,
     "duplicatedLines": 16581,
     "percentage": 9.38
    },
@@ -62,23 +80,23 @@
     "language": "Rust",
     "repos": 1,
     "clones": 6892,
-    "lines": 789722,
+    "lines": 789678,
     "duplicatedLines": 96150,
     "percentage": 12.18
    },
    {
     "language": "JavaScript",
     "repos": 1,
-    "clones": 2890,
-    "lines": 657976,
-    "duplicatedLines": 419645,
+    "clones": 2889,
+    "lines": 657932,
+    "duplicatedLines": 419632,
     "percentage": 63.78
    },
    {
     "language": "C",
     "repos": 1,
     "clones": 2708,
-    "lines": 402753,
+    "lines": 402709,
     "duplicatedLines": 38702,
     "percentage": 9.61
    }
@@ -94,11 +112,11 @@
    "starsToday": 696,
    "defaultBranch": "main",
    "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
-   "durationMs": 768,
+   "durationMs": 45,
    "total": {
     "sources": 140,
-    "lines": 24133,
-    "tokens": 136693,
+    "lines": 24089,
+    "tokens": 136528,
     "clones": 63,
     "duplicatedLines": 704,
     "duplicatedTokens": 4156,
@@ -125,10 +143,10 @@
     {
      "format": "bash",
      "sources": 27,
-     "lines": 1584,
+     "lines": 1534,
      "clones": 1,
      "duplicatedLines": 18,
-     "percentage": 1.14
+     "percentage": 1.17
     },
     {
      "format": "text",
@@ -149,7 +167,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -181,154 +199,253 @@
    ],
    "topClones": [
     {
+     "format": "python",
+     "lines": 13,
+     "tokens": 66,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_cookie_security.py",
+      "start": 33,
+      "end": 45
+     },
+     "others": [
+      {
+       "name": "tests/test_cookie_security.py",
+       "start": 59,
+       "end": 71
+      },
+      {
+       "name": "tests/test_cookie_security.py",
+       "start": 85,
+       "end": 97
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "        {\"name\": \"bili_jct\", \"value\": \"csrf\", \"domain\": \".bilibili.com\"},",
+       "    ]",
+       "",
+       "fake_rookiepy = SimpleNamespace(",
+       "    chrome=chrome,",
+       "    firefox=lambda domains: [],",
+       "    edge=lambda domains: [],",
+       "    brave=lambda domains: [],",
+       "    opera=lambda domains: [],",
+       ")"
+      ],
+      "total": 13
+     }
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 62,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_transcribe.py",
+      "start": 635,
+      "end": 643
+     },
+     "others": [
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 655,
+       "end": 663
+      },
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 761,
+       "end": 769
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "def test_passes_public_url_after_end_of_options_marker(self, monkeypatch, tmp_path):",
+       "    monkeypatch.setattr(tr, \"_require\", lambda binary: None)",
+       "    captured = {}",
+       "",
+       "    def fake_run(cmd, timeout=600):",
+       "        captured[\"cmd\"] = cmd",
+       "        (tmp_path / \"source.m4a\").write_bytes(b\"audio\")",
+       "",
+       "    monkeypatch.setattr(tr, \"_run\", fake_run)"
+      ],
+      "total": 9
+     }
+    },
+    {
      "format": "bash",
      "lines": 18,
      "tokens": 122,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
       "start": 212,
       "end": 229
      },
-     "secondFile": {
-      "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-      "start": 243,
-      "end": 259
+     "others": [
+      {
+       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+       "start": 243,
+       "end": 259
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "RESPONSE=$(curl --silent --show-error \\",
+       "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+       "    --max-time \"$GROQ_TIMEOUT\" \\",
+       "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+       "    -w \"\\n%{http_code}\" \\",
+       "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+       "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+       "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+       "    -F model=\"whisper-large-v3\" \\",
+       "    -F language=\"zh\" \\"
+      ],
+      "total": 18
      }
     },
     {
      "format": "python",
      "lines": 22,
      "tokens": 122,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/test_transcribe.py",
       "start": 180,
       "end": 201
      },
-     "secondFile": {
-      "name": "tests/test_transcribe.py",
-      "start": 212,
-      "end": 233
-     }
+     "others": [
+      {
+       "name": "tests/test_transcribe.py",
+       "start": 212,
+       "end": 233
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 60,
+     "copies": 3,
+     "first": {
+      "name": "agent_reach/cli.py",
+      "start": 976,
+      "end": 985
+     },
+     "others": [
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1148,
+       "end": 1157
+      },
+      {
+       "name": "agent_reach/cli.py",
+       "start": 1177,
+       "end": 1186
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 57,
+     "copies": 3,
+     "first": {
+      "name": "tests/test_youtube_channel.py",
+      "start": 124,
+      "end": 131
+     },
+     "others": [
+      {
+       "name": "tests/test_youtube_channel.py",
+       "start": 138,
+       "end": 145
+      },
+      {
+       "name": "tests/test_youtube_channel.py",
+       "start": 154,
+       "end": 161
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 54,
+     "copies": 3,
+     "first": {
+      "name": "agent_reach/channels/reddit.py",
+      "start": 53,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "agent_reach/channels/twitter.py",
+       "start": 65,
+       "end": 73
+      },
+      {
+       "name": "agent_reach/channels/xiaohongshu.py",
+       "start": 190,
+       "end": 198
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 17,
      "tokens": 107,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/skill/references/career.md:markdown",
       "start": 122,
       "end": 138
      },
-     "secondFile": {
-      "name": "docs/install.md:markdown",
-      "start": 328,
-      "end": 343
-     }
+     "others": [
+      {
+       "name": "docs/install.md:markdown",
+       "start": 328,
+       "end": 343
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 18,
      "tokens": 105,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/test_private_file_writes.py",
       "start": 282,
       "end": 299
      },
-     "secondFile": {
-      "name": "tests/test_private_file_writes.py",
-      "start": 316,
-      "end": 333
-     }
+     "others": [
+      {
+       "name": "tests/test_private_file_writes.py",
+       "start": 316,
+       "end": 333
+      }
+     ]
     },
     {
      "format": "python",
      "lines": 12,
      "tokens": 94,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "agent_reach/channels/v2ex.py",
       "start": 183,
       "end": 194
      },
-     "secondFile": {
-      "name": "agent_reach/channels/v2ex.py",
-      "start": 217,
-      "end": 228
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 11,
-     "tokens": 85,
-     "firstFile": {
-      "name": "docs/README_ja.md:markdown",
-      "start": 4,
-      "end": 14
-     },
-     "secondFile": {
-      "name": "docs/README_ko.md:markdown",
-      "start": 4,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 23,
-     "tokens": 85,
-     "firstFile": {
-      "name": "tests/test_channels.py",
-      "start": 1029,
-      "end": 1051
-     },
-     "secondFile": {
-      "name": "tests/test_channels.py",
-      "start": 1064,
-      "end": 1087
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 11,
-     "tokens": 82,
-     "firstFile": {
-      "name": "docs/README_en.md:markdown",
-      "start": 13,
-      "end": 23
-     },
-     "secondFile": {
-      "name": "docs/README_ja.md:markdown",
-      "start": 4,
-      "end": 14
-     }
-    },
-    {
-     "format": "python",
-     "lines": 11,
-     "tokens": 77,
-     "firstFile": {
-      "name": "tests/test_boss_channel.py",
-      "start": 107,
-      "end": 117
-     },
-     "secondFile": {
-      "name": "tests/test_boss_channel.py",
-      "start": 129,
-      "end": 139
-     }
-    },
-    {
-     "format": "python",
-     "lines": 14,
-     "tokens": 76,
-     "firstFile": {
-      "name": "tests/test_channels.py",
-      "start": 1223,
-      "end": 1236
-     },
-     "secondFile": {
-      "name": "tests/test_channels.py",
-      "start": 1242,
-      "end": 1255
-     }
+     "others": [
+      {
+       "name": "agent_reach/channels/v2ex.py",
+       "start": 217,
+       "end": 228
+      }
+     ]
     }
    ],
    "health": {
@@ -497,7 +614,225 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 45,
+    "lines": 8579,
+    "tokens": 38829,
+    "clones": 7,
+    "duplicatedLines": 76,
+    "duplicatedTokens": 494,
+    "percentage": 0.89,
+    "percentageTokens": 1.27,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 32,
+      "lines": 7225,
+      "clones": 6,
+      "duplicatedLines": 58,
+      "percentage": 0.8
+     },
+     {
+      "format": "bash",
+      "sources": 12,
+      "lines": 1180,
+      "clones": 1,
+      "duplicatedLines": 18,
+      "percentage": 1.53
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "bash",
+      "lines": 18,
+      "tokens": 122,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+       "start": 212,
+       "end": 229
+      },
+      "others": [
+       {
+        "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
+        "start": 243,
+        "end": 259
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "RESPONSE=$(curl --silent --show-error \\",
+        "    --connect-timeout \"$CURL_CONNECT_TIMEOUT\" \\",
+        "    --max-time \"$GROQ_TIMEOUT\" \\",
+        "    --max-filesize \"$MAX_API_RESPONSE_BYTES\" \\",
+        "    -w \"\\n%{http_code}\" \\",
+        "    https://api.groq.com/openai/v1/audio/transcriptions \\",
+        "    -H \"Authorization: Bearer $GROQ_API_KEY\" \\",
+        "    -F file=\"@$WORK_DIR/chunk_${i}.mp3\" \\",
+        "    -F model=\"whisper-large-v3\" \\",
+        "    -F language=\"zh\" \\"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "python",
+      "lines": 10,
+      "tokens": 60,
+      "copies": 3,
+      "first": {
+       "name": "agent_reach/cli.py",
+       "start": 976,
+       "end": 985
+      },
+      "others": [
+       {
+        "name": "agent_reach/cli.py",
+        "start": 1148,
+        "end": 1157
+       },
+       {
+        "name": "agent_reach/cli.py",
+        "start": 1177,
+        "end": 1186
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    (\"uv\", [\"tool\", \"install\", \"twitter-cli\"]),",
+        "]:",
+        "    tool_cmd = shutil.which(tool)",
+        "    if tool_cmd:",
+        "        try:",
+        "            result = subprocess.run(",
+        "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+        "                errors=\"replace\", timeout=120,",
+        "            )",
+        "            if result.returncode == 0 and shutil.which(\"twitter\"):"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "    (\"uv\", [\"tool\", \"install\", \"--from\", _RDT_GIT_SOURCE, \"rdt-cli\"]),",
+        "]:",
+        "    tool_cmd = shutil.which(tool)",
+        "    if tool_cmd:",
+        "        try:",
+        "            result = subprocess.run(",
+        "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
+        "                errors=\"replace\", timeout=120,",
+        "            )",
+        "            if result.returncode == 0 and shutil.which(\"rdt\"):"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "python",
+      "lines": 9,
+      "tokens": 54,
+      "copies": 3,
+      "first": {
+       "name": "agent_reach/channels/reddit.py",
+       "start": 53,
+       "end": 61
+      },
+      "others": [
+       {
+        "name": "agent_reach/channels/twitter.py",
+        "start": 65,
+        "end": 73
+       },
+       {
+        "name": "agent_reach/channels/xiaohongshu.py",
+        "start": 190,
+        "end": 198
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    findings.append((backend, *result))",
+        "",
+        "for wanted in (\"ok\", \"warn\"):",
+        "    for backend, status, message in findings:",
+        "        if status == wanted:",
+        "            self.active_backend = backend if status == \"ok\" else None",
+        "            return status, message",
+        "",
+        "if findings:"
+       ],
+       "total": 9
+      },
+      "excerptSecond": {
+       "lines": [
+        "    findings.append((backend, *result))",
+        "",
+        "for wanted in (\"ok\", \"warn\"):",
+        "    for backend, status, message in findings:",
+        "        if status == wanted:",
+        "            self.active_backend = backend if status == \"ok\" else None",
+        "            return status, message",
+        "",
+        "if findings:  # 只剩 broken/timeout 候选"
+       ],
+       "total": 9
+      }
+     },
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 94,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/channels/v2ex.py",
+       "start": 183,
+       "end": 194
+      },
+      "others": [
+       {
+        "name": "agent_reach/channels/v2ex.py",
+        "start": 217,
+        "end": 228
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 50,
+      "copies": 2,
+      "first": {
+       "name": "agent_reach/config.py",
+       "start": 55,
+       "end": 62
+      },
+      "others": [
+       {
+        "name": "agent_reach/utils/paths.py",
+        "start": 92,
+        "end": 99
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T07:57:57.361Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "pbakaus/impeccable",
@@ -508,14 +843,14 @@
    "starsToday": 722,
    "defaultBranch": "main",
    "headSha": "e103efe779e2dd01274dabae83531fef00bf2563",
-   "durationMs": 4358,
+   "durationMs": 1836,
    "total": {
     "sources": 2582,
-    "lines": 657976,
-    "tokens": 5851310,
-    "clones": 2890,
-    "duplicatedLines": 419645,
-    "duplicatedTokens": 3612825,
+    "lines": 657932,
+    "tokens": 5851145,
+    "clones": 2889,
+    "duplicatedLines": 419632,
+    "duplicatedTokens": 3612726,
     "percentage": 63.78,
     "percentageTokens": 61.74
    },
@@ -524,9 +859,9 @@
      "format": "markdown",
      "sources": 1050,
      "lines": 125570,
-     "clones": 1615,
-     "duplicatedLines": 116396,
-     "percentage": 92.69
+     "clones": 1614,
+     "duplicatedLines": 116383,
+     "percentage": 92.68
     },
     {
      "format": "rust",
@@ -571,10 +906,10 @@
     {
      "format": "bash",
      "sources": 100,
-     "lines": 5526,
+     "lines": 5476,
      "clones": 41,
      "duplicatedLines": 4173,
-     "percentage": 75.52
+     "percentage": 76.21
     },
     {
      "format": "yaml",
@@ -606,151 +941,576 @@
      "format": "javascript",
      "lines": 13499,
      "tokens": 81435,
-     "firstFile": {
+     "copies": 21,
+     "first": {
       "name": ".agent/skills/impeccable/scripts/live-browser.js",
       "start": 12,
       "end": 13510
      },
-     "secondFile": {
-      "name": ".agents/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "others": [
+      {
+       "name": ".agents/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      {
+       "name": ".claude/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      {
+       "name": ".cursor/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      {
+       "name": ".dsh/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      {
+       "name": ".gemini/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      {
+       "name": ".github/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      {
+       "name": ".grok/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      {
+       "name": ".hermes/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "(function () {",
+       "  'use strict';",
+       "  if (typeof window === 'undefined') return;",
+       "",
+       "  // Guard against double-init. Bun's HTML loader may process the <script> tag",
+       "  // and create a bundled copy alongside the external load, or HMR may re-execute.",
+       "  // Check BEFORE reading token/port to catch all cases.",
+       "  if (window.__IMPECCABLE_LIVE_INIT__) return;",
+       "  window.__IMPECCABLE_LIVE_INIT__ = true;",
+       ""
+      ],
+      "total": 13499
      }
     },
     {
      "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "lines": 14,
+     "tokens": 12419,
+     "copies": 21,
+     "first": {
+      "name": ".agent/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "start": 1,
+      "end": 14
      },
-     "secondFile": {
-      "name": ".claude/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "others": [
+      {
+       "name": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": ".claude/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": ".cursor/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": ".dsh/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": ".gemini/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": ".github/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": ".grok/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": ".hermes/skills/impeccable/scripts/modern-screenshot.umd.js",
+       "start": 1,
+       "end": 14
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "(function(y,v){typeof exports==\"object\"&&typeof module!=\"undefined\"?v(exports):typeof define==\"function\"&&define.amd?define([\"exports\"],v):(y=typeof globalThis…",
+       ".______background-clip--text {",
+       "  background-clip: text;",
+       "  -webkit-background-clip: text;",
+       "}",
+       "`);return t.appendChild(r),t}function pt(e,t){let{width:r,height:n}=t;if(I(e)&&(!r||!n)){const i=e.getBoundingClientRect();r=r||i.width||Number(e.getAttribute(…",
+       "  `);let b=o.get(E);b||(b=[],o.set(E,b)),b.push(`.${f[0]}${l}`)}kt.forEach(u),r&&Dt.forEach(u)}const Te=new Set([\"symbol\"]);function ve(e,t,r,n,i){return C(thi…",
+       "`))}else{const c=Array.from(r.styleSheets).filter(f=>{try{return\"cssRules\"in f&&!!f.cssRules.length}catch(h){return t.log.warn(`Error while reading CSS rules f…",
+       "`)):s.push(Re(h.cssText,h.parentStyleSheet?h.parentStyleSheet.href:null,t).then(p=>{p=Ue(p,t),a.set(h.cssText,p),n.appendChild(r.createTextNode(`${p}",
+       "`))}))})}})}const Wt=/(\\/\\*[\\s\\S]*?\\*\\/)/g,Pe=/((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})/gi;function Ht(e){if(e==null)return[];const t=[];let r=e.replace(Wt,…"
+      ],
+      "total": 14
      }
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 240,
+     "tokens": 4220,
+     "copies": 20,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/live.md:markdown",
+      "start": 13,
+      "end": 252
      },
-     "secondFile": {
-      "name": ".cursor/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "others": [
+      {
+       "name": ".agents/skills/impeccable/reference/live.md:markdown",
+       "start": 15,
+       "end": 254
+      },
+      {
+       "name": ".claude/skills/impeccable/reference/live.md:markdown",
+       "start": 13,
+       "end": 252
+      },
+      {
+       "name": ".cursor/skills/impeccable/reference/live.md:markdown",
+       "start": 13,
+       "end": 252
+      },
+      {
+       "name": ".dsh/skills/impeccable/reference/live.md:markdown",
+       "start": 13,
+       "end": 252
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/live.md:markdown",
+       "start": 13,
+       "end": 252
+      },
+      {
+       "name": ".github/skills/impeccable/reference/live.md:markdown",
+       "start": 13,
+       "end": 252
+      },
+      {
+       "name": ".grok/skills/impeccable/reference/live.md:markdown",
+       "start": 13,
+       "end": 252
+      },
+      {
+       "name": ".hermes/skills/impeccable/reference/live.md:markdown",
+       "start": 13,
+       "end": 252
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "1. `impeccable live`: boot. If the request names or implies a file, route, or app inside a monorepo, infer the concrete path and run `.agent/skills/impeccable/…",
+       "2. Open the app URL that serves `pageFile` (infer from `package.json`, docs, terminal output, or an open tab). Never use `serverPort`; it's the helper, not the…",
+       "3. Poll loop with the default long timeout (600000 ms). Run `impeccable live-poll` again immediately after every event or `--reply`; Codex runs this one-shot p…",
+       "4. On `generate`: reuse `event.scaffold` when present; read the screenshot if present; load the action's reference; deliver variants; `--reply done`; poll agai…",
+       "5. On `steer`: read the message and `pageUrl`; do the work; `--reply steer_done`; poll again. No pickup ack.",
+       "6. On `accept` / `discard`: the poll script runs `impeccable live-accept`, acknowledges delivery, and prints `_completionAck`. Plain accepts/discards are termi…",
+       "7. If interrupted, run `impeccable live-status` or `impeccable live-resume` before guessing. The journal under `.impeccable/live/sessions/` is canonical and re…",
+       "8. On `exit`: run the cleanup at the bottom.",
+       "",
+       "Harness policy:"
+      ],
+      "total": 240
      }
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 416,
+     "tokens": 4092,
+     "copies": 14,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/document.md:markdown",
+      "start": 1,
+      "end": 416
      },
-     "secondFile": {
-      "name": ".dsh/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
-     }
+     "others": [
+      {
+       "name": ".cursor/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      },
+      {
+       "name": ".github/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      },
+      {
+       "name": ".hermes/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      },
+      {
+       "name": ".kiro/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      },
+      {
+       "name": ".pi/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      },
+      {
+       "name": ".qoder/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      },
+      {
+       "name": ".rovodev/skills/impeccable/reference/document.md:markdown",
+       "start": 1,
+       "end": 416
+      }
+     ]
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 585,
+     "tokens": 5685,
+     "copies": 9,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/critique.md:markdown",
+      "start": 206,
+      "end": 790
      },
-     "secondFile": {
-      "name": ".gemini/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
-     }
+     "others": [
+      {
+       "name": ".cursor/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      },
+      {
+       "name": ".github/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      },
+      {
+       "name": ".kiro/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      },
+      {
+       "name": ".trae-cn/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      },
+      {
+       "name": ".trae/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      },
+      {
+       "name": ".veto/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      },
+      {
+       "name": "cursor-plugin/skills/impeccable/reference/critique.md:markdown",
+       "start": 206,
+       "end": 790
+      }
+     ]
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 34,
+     "tokens": 2362,
+     "copies": 19,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/new-work.md:markdown",
+      "start": 103,
+      "end": 136
      },
-     "secondFile": {
-      "name": ".github/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
-     }
+     "others": [
+      {
+       "name": ".agents/skills/impeccable/reference/new-work.md:markdown",
+       "start": 103,
+       "end": 136
+      },
+      {
+       "name": ".claude/skills/impeccable/reference/new-work.md:markdown",
+       "start": 105,
+       "end": 138
+      },
+      {
+       "name": ".cursor/skills/impeccable/reference/new-work.md:markdown",
+       "start": 103,
+       "end": 136
+      },
+      {
+       "name": ".dsh/skills/impeccable/reference/new-work.md:markdown",
+       "start": 103,
+       "end": 136
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/new-work.md:markdown",
+       "start": 103,
+       "end": 136
+      },
+      {
+       "name": ".github/skills/impeccable/reference/new-work.md:markdown",
+       "start": 103,
+       "end": 136
+      },
+      {
+       "name": ".grok/skills/impeccable/reference/new-work.md:markdown",
+       "start": 103,
+       "end": 136
+      },
+      {
+       "name": ".hermes/skills/impeccable/reference/new-work.md:markdown",
+       "start": 103,
+       "end": 136
+      }
+     ]
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 31,
+     "tokens": 2259,
+     "copies": 18,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/new-work.md:markdown",
+      "start": 51,
+      "end": 81
      },
-     "secondFile": {
-      "name": ".grok/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
-     }
+     "others": [
+      {
+       "name": ".agents/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      },
+      {
+       "name": ".cursor/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      },
+      {
+       "name": ".dsh/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      },
+      {
+       "name": ".github/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      },
+      {
+       "name": ".grok/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      },
+      {
+       "name": ".hermes/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      },
+      {
+       "name": ".kiro/skills/impeccable/reference/new-work.md:markdown",
+       "start": 51,
+       "end": 81
+      }
+     ]
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 318,
+     "tokens": 2033,
+     "copies": 19,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/adapt.md:markdown",
+      "start": 1,
+      "end": 318
      },
-     "secondFile": {
-      "name": ".hermes/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
-     }
+     "others": [
+      {
+       "name": ".claude/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      },
+      {
+       "name": ".cursor/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      },
+      {
+       "name": ".dsh/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      },
+      {
+       "name": ".github/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      },
+      {
+       "name": ".grok/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      },
+      {
+       "name": ".hermes/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      },
+      {
+       "name": ".kiro/skills/impeccable/reference/adapt.md:markdown",
+       "start": 1,
+       "end": 318
+      }
+     ]
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 139,
+     "tokens": 1978,
+     "copies": 19,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/audit.native.md:markdown",
+      "start": 1,
+      "end": 139
      },
-     "secondFile": {
-      "name": ".kiro/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
-     }
+     "others": [
+      {
+       "name": ".claude/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      },
+      {
+       "name": ".cursor/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      },
+      {
+       "name": ".dsh/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      },
+      {
+       "name": ".github/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      },
+      {
+       "name": ".grok/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      },
+      {
+       "name": ".hermes/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      },
+      {
+       "name": ".kiro/skills/impeccable/reference/audit.native.md:markdown",
+       "start": 1,
+       "end": 139
+      }
+     ]
     },
     {
-     "format": "javascript",
-     "lines": 13499,
-     "tokens": 81435,
-     "firstFile": {
-      "name": ".agent/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
+     "format": "markdown",
+     "lines": 137,
+     "tokens": 1967,
+     "copies": 19,
+     "first": {
+      "name": ".agent/skills/impeccable/reference/audit.md:markdown",
+      "start": 1,
+      "end": 137
      },
-     "secondFile": {
-      "name": ".opencode/skills/impeccable/scripts/live-browser.js",
-      "start": 12,
-      "end": 13510
-     }
+     "others": [
+      {
+       "name": ".claude/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      },
+      {
+       "name": ".cursor/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      },
+      {
+       "name": ".dsh/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      },
+      {
+       "name": ".gemini/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      },
+      {
+       "name": ".github/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      },
+      {
+       "name": ".grok/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      },
+      {
+       "name": ".hermes/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      },
+      {
+       "name": ".kiro/skills/impeccable/reference/audit.md:markdown",
+       "start": 1,
+       "end": 137
+      }
+     ]
     }
    ],
    "health": {
@@ -968,7 +1728,519 @@
       "lines": 13510
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 437,
+    "lines": 447827,
+    "tokens": 2948626,
+    "clones": 498,
+    "duplicatedLines": 288447,
+    "duplicatedTokens": 1738924,
+    "percentage": 64.41,
+    "percentageTokens": 58.97,
+    "formats": [
+     {
+      "format": "rust",
+      "sources": 253,
+      "lines": 131717,
+      "clones": 354,
+      "duplicatedLines": 3702,
+      "percentage": 2.81
+     },
+     {
+      "format": "javascript",
+      "sources": 144,
+      "lines": 309232,
+      "clones": 122,
+      "duplicatedLines": 280607,
+      "percentage": 90.74
+     },
+     {
+      "format": "bash",
+      "sources": 30,
+      "lines": 4970,
+      "clones": 20,
+      "duplicatedLines": 4120,
+      "percentage": 82.9
+     },
+     {
+      "format": "typescript",
+      "sources": 9,
+      "lines": 1734,
+      "clones": 2,
+      "duplicatedLines": 18,
+      "percentage": 1.04
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "javascript",
+      "lines": 13499,
+      "tokens": 81435,
+      "copies": 21,
+      "first": {
+       "name": ".agent/skills/impeccable/scripts/live-browser.js",
+       "start": 12,
+       "end": 13510
+      },
+      "others": [
+       {
+        "name": ".agents/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       },
+       {
+        "name": ".claude/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       },
+       {
+        "name": ".cursor/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       },
+       {
+        "name": ".dsh/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       },
+       {
+        "name": ".gemini/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       },
+       {
+        "name": ".github/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       },
+       {
+        "name": ".grok/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       },
+       {
+        "name": ".hermes/skills/impeccable/scripts/live-browser.js",
+        "start": 12,
+        "end": 13510
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "(function () {",
+        "  'use strict';",
+        "  if (typeof window === 'undefined') return;",
+        "",
+        "  // Guard against double-init. Bun's HTML loader may process the <script> tag",
+        "  // and create a bundled copy alongside the external load, or HMR may re-execute.",
+        "  // Check BEFORE reading token/port to catch all cases.",
+        "  if (window.__IMPECCABLE_LIVE_INIT__) return;",
+        "  window.__IMPECCABLE_LIVE_INIT__ = true;",
+        ""
+       ],
+       "total": 13499
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 205,
+      "tokens": 1149,
+      "copies": 21,
+      "first": {
+       "name": ".agent/skills/impeccable/scripts/live-browser-ignores.js",
+       "start": 38,
+       "end": 242
+      },
+      "others": [
+       {
+        "name": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       },
+       {
+        "name": ".claude/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       },
+       {
+        "name": ".cursor/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       },
+       {
+        "name": ".dsh/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       },
+       {
+        "name": ".gemini/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       },
+       {
+        "name": ".github/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       },
+       {
+        "name": ".grok/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       },
+       {
+        "name": ".hermes/skills/impeccable/scripts/live-browser-ignores.js",
+        "start": 38,
+        "end": 242
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "(function (root) {",
+        "  'use strict';",
+        "  if (!root) return;",
+        "",
+        "  // Keep in step with normalizeIgnoreRule / normalizeIgnoreValue in",
+        "  // cli/lib/impeccable-config.mjs.",
+        "  function normalizeIgnoreRule(rule) {",
+        "    return String(rule || '').trim().toLowerCase();",
+        "  }",
+        ""
+       ],
+       "total": 205
+      }
+     },
+     {
+      "format": "bash",
+      "lines": 206,
+      "tokens": 1000,
+      "copies": 21,
+      "first": {
+       "name": ".agent/skills/impeccable/scripts/impeccable",
+       "start": 1,
+       "end": 206
+      },
+      "others": [
+       {
+        "name": ".agents/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       },
+       {
+        "name": ".claude/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       },
+       {
+        "name": ".cursor/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       },
+       {
+        "name": ".dsh/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       },
+       {
+        "name": ".gemini/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       },
+       {
+        "name": ".github/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       },
+       {
+        "name": ".grok/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       },
+       {
+        "name": ".hermes/skills/impeccable/scripts/impeccable",
+        "start": 1,
+        "end": 206
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "#!/bin/sh",
+        "# Impeccable launcher. Runs the platform binary shipped next to this script:",
+        "#   <this dir>/bin/<os>-<arch>/impeccable",
+        "# Order: $IMPECCABLE_BIN, the sibling binary, ~/.impeccable/bin/impeccable,",
+        "# the version-pinned cache, then `impeccable` on PATH. Never needs Node.",
+        "# The unversioned home binary and the PATH candidate are validated with the",
+        "# engine-probe handshake first: the retired 3.x npm CLI also installed a bin",
+        "# named `impeccable`, and exec'ing it would fail every verb with",
+        "# \"Unknown command\". Trusted candidates (IMPECCABLE_BIN, the sibling binary,",
+        "# the version-pinned cache) are exec'd without a probe: hooks run them on"
+       ],
+       "total": 206
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 160,
+      "tokens": 995,
+      "copies": 21,
+      "first": {
+       "name": ".agent/skills/impeccable/scripts/live-browser-dom.js",
+       "start": 8,
+       "end": 167
+      },
+      "others": [
+       {
+        "name": ".agents/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       },
+       {
+        "name": ".claude/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       },
+       {
+        "name": ".cursor/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       },
+       {
+        "name": ".dsh/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       },
+       {
+        "name": ".gemini/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       },
+       {
+        "name": ".github/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       },
+       {
+        "name": ".grok/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       },
+       {
+        "name": ".hermes/skills/impeccable/scripts/live-browser-dom.js",
+        "start": 8,
+        "end": 167
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 141,
+      "tokens": 719,
+      "copies": 21,
+      "first": {
+       "name": ".agent/skills/impeccable/scripts/live-browser-session.js",
+       "start": 8,
+       "end": 148
+      },
+      "others": [
+       {
+        "name": ".agents/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       },
+       {
+        "name": ".claude/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       },
+       {
+        "name": ".cursor/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       },
+       {
+        "name": ".dsh/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       },
+       {
+        "name": ".gemini/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       },
+       {
+        "name": ".github/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       },
+       {
+        "name": ".grok/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       },
+       {
+        "name": ".hermes/skills/impeccable/scripts/live-browser-session.js",
+        "start": 8,
+        "end": 148
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 144,
+      "tokens": 1118,
+      "copies": 2,
+      "first": {
+       "name": "crates/browser/src/html_snapshot.rs",
+       "start": 199,
+       "end": 342
+      },
+      "others": [
+       {
+        "name": "crates/cli/src/capture_snapshot.rs",
+        "start": 302,
+        "end": 445
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 45,
+      "tokens": 459,
+      "copies": 2,
+      "first": {
+       "name": "crates/browser/src/html_snapshot.rs",
+       "start": 77,
+       "end": 121
+      },
+      "others": [
+       {
+        "name": "crates/cli/src/capture_snapshot.rs",
+        "start": 45,
+        "end": 89
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 42,
+      "tokens": 433,
+      "copies": 2,
+      "first": {
+       "name": "crates/browser/src/html_snapshot.rs",
+       "start": 343,
+       "end": 384
+      },
+      "others": [
+       {
+        "name": "crates/cli/src/capture_snapshot.rs",
+        "start": 445,
+        "end": 486
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 7,
+      "tokens": 59,
+      "copies": 7,
+      "first": {
+       "name": "crates/core/src/browser/background.rs",
+       "start": 13,
+       "end": 19
+      },
+      "others": [
+       {
+        "name": "crates/core/src/browser/page_checks.rs",
+        "start": 32,
+        "end": 38
+       },
+       {
+        "name": "crates/core/src/browser/visual.rs",
+        "start": 25,
+        "end": 31
+       },
+       {
+        "name": "crates/core/src/checks/measures.rs",
+        "start": 24,
+        "end": 30
+       },
+       {
+        "name": "crates/foundation/src/css/measures.rs",
+        "start": 20,
+        "end": 26
+       },
+       {
+        "name": "crates/foundation/src/css/scan.rs",
+        "start": 12,
+        "end": 18
+       },
+       {
+        "name": "crates/hook/src/hook_lib.rs",
+        "start": 42,
+        "end": 48
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 18,
+      "tokens": 163,
+      "copies": 3,
+      "first": {
+       "name": "crates/wasm/tools/ab-diff.mjs",
+       "start": 16,
+       "end": 33
+      },
+      "others": [
+       {
+        "name": "crates/wasm/tools/ext-diff.mjs",
+        "start": 18,
+        "end": 35
+       },
+       {
+        "name": "crates/wasm/tools/snapshot-diff.mjs",
+        "start": 13,
+        "end": 30
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 25,
+     "minified": 22,
+     "sample": [
+      ".agent/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".claude/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".cursor/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".dsh/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".gemini/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".github/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".grok/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".hermes/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".kiro/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".opencode/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".pi/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".qoder/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".rovodev/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".trae-cn/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".trae/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".veto/skills/impeccable/scripts/modern-screenshot.umd.js",
+      ".vibe/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "browser-bundle/00-header.js",
+      "crates/context/assets/component-review.js"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:58:02.511Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "NVIDIA/OpenShell",
@@ -979,11 +2251,11 @@
    "starsToday": 594,
    "defaultBranch": "main",
    "headSha": "48d9ab3d0d9a343365dea1b0cd87565050ac658e",
-   "durationMs": 3644,
+   "durationMs": 3369,
    "total": {
     "sources": 1758,
-    "lines": 789722,
-    "tokens": 5044020,
+    "lines": 789678,
+    "tokens": 5043855,
     "clones": 6892,
     "duplicatedLines": 96150,
     "duplicatedTokens": 632063,
@@ -1026,7 +2298,7 @@
     {
      "format": "bash",
      "sources": 182,
-     "lines": 31972,
+     "lines": 31922,
      "clones": 62,
      "duplicatedLines": 878,
      "percentage": 2.75
@@ -1074,154 +2346,387 @@
    ],
    "topClones": [
     {
+     "format": "go",
+     "lines": 10,
+     "tokens": 51,
+     "copies": 235,
+     "first": {
+      "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "start": 110,
+      "end": 119
+     },
+     "others": [
+      {
+       "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+       "start": 192,
+       "end": 201
+      },
+      {
+       "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+       "start": 255,
+       "end": 264
+      },
+      {
+       "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+       "start": 349,
+       "end": 358
+      },
+      {
+       "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+       "start": 400,
+       "end": 409
+      },
+      {
+       "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+       "start": 458,
+       "end": 467
+      },
+      {
+       "name": "sdk/go/proto/datamodelv1/datamodel.pb.go",
+       "start": 535,
+       "end": 544
+      },
+      {
+       "name": "sdk/go/proto/openshellv1/openshell.pb.go",
+       "start": 1277,
+       "end": 1286
+      },
+      {
+       "name": "sdk/go/proto/openshellv1/openshell.pb.go",
+       "start": 1664,
+       "end": 1673
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    mi := &file_datamodel_proto_msgTypes[0]",
+       "    if x != nil {",
+       "        ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))",
+       "        if ms.LoadMessageInfo() == nil {",
+       "            ms.StoreMessageInfo(mi)",
+       "        }",
+       "        return ms",
+       "    }",
+       "    return mi.MessageOf(x)",
+       "}"
+      ],
+      "total": 10
+     }
+    },
+    {
      "format": "rust",
      "lines": 380,
      "tokens": 2225,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "crates/openshell-sandbox/src/mechanistic_mapper.rs",
       "start": 157,
       "end": 536
      },
-     "secondFile": {
-      "name": "crates/openshell-supervisor/src/mechanistic_mapper.rs",
-      "start": 158,
-      "end": 537
+     "others": [
+      {
+       "name": "crates/openshell-supervisor/src/mechanistic_mapper.rs",
+       "start": 158,
+       "end": 537
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    }]",
+       "};",
+       "",
+       "let proposed_rule = NetworkPolicyRule {",
+       "    name: rule_name.clone(),",
+       "    endpoints: vec![endpoint],",
+       "    binaries,",
+       "};",
+       "",
+       "// Compute confidence."
+      ],
+      "total": 380
+     }
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 50,
+     "copies": 44,
+     "first": {
+      "name": "crates/openshell-server/src/grpc/provider.rs",
+      "start": 6101,
+      "end": 6109
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 7381,
+       "end": 7389
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 7933,
+       "end": 7941
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8018,
+       "end": 8026
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8210,
+       "end": 8218
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8344,
+       "end": 8352
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8413,
+       "end": 8421
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 8441,
+       "end": 8449
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 10726,
+       "end": 10734
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    name: name.to_string(),",
+       "    created_time: None,",
+       "    labels: HashMap::new(),",
+       "    resource_version: 0,",
+       "    annotations: HashMap::new(),",
+       "    workspace: \"default\".to_string(),",
+       "    deletion_time: None,",
+       "}),",
+       "r#type: provider_type.to_string(),"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "    name: \"msgraph\".to_string(),",
+       "    created_time: None,",
+       "    labels: HashMap::new(),",
+       "    resource_version: 0,",
+       "    annotations: HashMap::new(),",
+       "    workspace: \"default\".to_string(),",
+       "    deletion_time: None,",
+       "}),",
+       "r#type: TEST_GRAPH_PROVIDER_TYPE.to_string(),"
+      ],
+      "total": 9
      }
     },
     {
      "format": "rust",
      "lines": 253,
      "tokens": 1900,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
       "start": 550,
       "end": 802
      },
-     "secondFile": {
-      "name": "crates/openshell-cli/tests/provider_commands_integration.rs",
-      "start": 1358,
-      "end": 1610
-     }
+     "others": [
+      {
+       "name": "crates/openshell-cli/tests/provider_commands_integration.rs",
+       "start": 1358,
+       "end": 1610
+      }
+     ]
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 59,
+     "copies": 30,
+     "first": {
+      "name": "crates/openshell-server/src/compute/mod.rs",
+      "start": 15113,
+      "end": 15120
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 9752,
+       "end": 9759
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10713,
+       "end": 10720
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10768,
+       "end": 10775
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10964,
+       "end": 10971
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11454,
+       "end": 11461
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11548,
+       "end": 11555
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11908,
+       "end": 11915
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 12541,
+       "end": 12548
+      }
+     ]
+    },
+    {
+     "format": "rust",
+     "lines": 25,
+     "tokens": 816,
+     "copies": 3,
+     "first": {
+      "name": "crates/openshell-supervisor-network/src/opa.rs",
+      "start": 7924,
+      "end": 7948
+     },
+     "others": [
+      {
+       "name": "crates/openshell-supervisor-network/src/opa.rs",
+       "start": 8039,
+       "end": 8063
+      },
+      {
+       "name": "crates/openshell-supervisor-network/src/opa.rs",
+       "start": 8099,
+       "end": 8123
+      }
+     ]
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 50,
+     "copies": 32,
+     "first": {
+      "name": "crates/openshell-server/src/compute/mod.rs",
+      "start": 9593,
+      "end": 9599
+     },
+     "others": [
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 9753,
+       "end": 9759
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10714,
+       "end": 10720
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10769,
+       "end": 10775
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 10965,
+       "end": 10971
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11455,
+       "end": 11461
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11549,
+       "end": 11555
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 11909,
+       "end": 11915
+      },
+      {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 12542,
+       "end": 12548
+      }
+     ]
     },
     {
      "format": "rust",
      "lines": 203,
      "tokens": 1524,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
       "start": 600,
       "end": 802
      },
-     "secondFile": {
-      "name": "crates/openshell-cli/tests/sandbox_name_fallback_integration.rs",
-      "start": 543,
-      "end": 745
-     }
+     "others": [
+      {
+       "name": "crates/openshell-cli/tests/sandbox_name_fallback_integration.rs",
+       "start": 543,
+       "end": 745
+      }
+     ]
     },
     {
      "format": "rust",
      "lines": 183,
      "tokens": 1378,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
       "start": 620,
       "end": 802
      },
-     "secondFile": {
-      "name": "crates/openshell-cli/tests/sandbox_create_lifecycle_integration.rs",
-      "start": 944,
-      "end": 1126
-     }
+     "others": [
+      {
+       "name": "crates/openshell-cli/tests/sandbox_create_lifecycle_integration.rs",
+       "start": 944,
+       "end": 1126
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 431,
      "tokens": 1316,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/http_activity.json",
       "start": 100,
       "end": 530
      },
-     "secondFile": {
-      "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/ssh_activity.json",
-      "start": 124,
-      "end": 554
-     }
-    },
-    {
-     "format": "json",
-     "lines": 421,
-     "tokens": 1273,
-     "firstFile": {
-      "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/objects/network_endpoint.json",
-      "start": 1,
-      "end": 421
-     },
-     "secondFile": {
-      "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/objects/network_proxy.json",
-      "start": 1,
-      "end": 421
-     }
-    },
-    {
-     "format": "rust",
-     "lines": 220,
-     "tokens": 1227,
-     "firstFile": {
-      "name": "crates/openshell-sandbox/src/activity_aggregator.rs",
-      "start": 5,
-      "end": 224
-     },
-     "secondFile": {
-      "name": "crates/openshell-supervisor/src/activity_aggregator.rs",
-      "start": 5,
-      "end": 224
-     }
-    },
-    {
-     "format": "json",
-     "lines": 360,
-     "tokens": 1181,
-     "firstFile": {
-      "name": "crates/openshell-ocsf/schemas/ocsf/v1.8.0/objects/network_endpoint.json",
-      "start": 1,
-      "end": 360
-     },
-     "secondFile": {
-      "name": "crates/openshell-ocsf/schemas/ocsf/v1.8.0/objects/network_proxy.json",
-      "start": 1,
-      "end": 360
-     }
-    },
-    {
-     "format": "rust",
-     "lines": 156,
-     "tokens": 1178,
-     "firstFile": {
-      "name": "crates/openshell-cli/tests/ensure_providers_integration.rs",
-      "start": 562,
-      "end": 717
-     },
-     "secondFile": {
-      "name": "crates/openshell-cli/tests/mtls_integration.rs",
-      "start": 414,
-      "end": 569
-     }
-    },
-    {
-     "format": "rust",
-     "lines": 132,
-     "tokens": 1117,
-     "firstFile": {
-      "name": "crates/openshell-providers/src/profiles.rs",
-      "start": 3383,
-      "end": 3514
-     },
-     "secondFile": {
-      "name": "crates/openshell-server/src/grpc/provider.rs",
-      "start": 1697,
-      "end": 1828
-     }
+     "others": [
+      {
+       "name": "crates/openshell-ocsf/schemas/ocsf/v1.7.0/classes/ssh_activity.json",
+       "start": 124,
+       "end": 554
+      }
+     ]
     }
    ],
    "health": {
@@ -1382,7 +2887,535 @@
       "lines": 2
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 715,
+    "lines": 542445,
+    "tokens": 3435004,
+    "clones": 5103,
+    "duplicatedLines": 59985,
+    "duplicatedTokens": 435191,
+    "percentage": 11.06,
+    "percentageTokens": 12.67,
+    "formats": [
+     {
+      "format": "rust",
+      "sources": 475,
+      "lines": 497052,
+      "clones": 4992,
+      "duplicatedLines": 58711,
+      "percentage": 11.81
+     },
+     {
+      "format": "go",
+      "sources": 116,
+      "lines": 15873,
+      "clones": 58,
+      "duplicatedLines": 623,
+      "percentage": 3.92
+     },
+     {
+      "format": "bash",
+      "sources": 92,
+      "lines": 19061,
+      "clones": 28,
+      "duplicatedLines": 391,
+      "percentage": 2.05
+     },
+     {
+      "format": "python",
+      "sources": 17,
+      "lines": 6628,
+      "clones": 19,
+      "duplicatedLines": 197,
+      "percentage": 2.97
+     },
+     {
+      "format": "typescript",
+      "sources": 7,
+      "lines": 2478,
+      "clones": 3,
+      "duplicatedLines": 35,
+      "percentage": 1.41
+     },
+     {
+      "format": "powershell",
+      "sources": 5,
+      "lines": 897,
+      "clones": 3,
+      "duplicatedLines": 28,
+      "percentage": 3.12
+     },
+     {
+      "format": "javascript",
+      "sources": 1,
+      "lines": 188,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "tsx",
+      "sources": 1,
+      "lines": 94,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "rust",
+      "lines": 380,
+      "tokens": 2225,
+      "copies": 2,
+      "first": {
+       "name": "crates/openshell-sandbox/src/mechanistic_mapper.rs",
+       "start": 157,
+       "end": 536
+      },
+      "others": [
+       {
+        "name": "crates/openshell-supervisor/src/mechanistic_mapper.rs",
+        "start": 158,
+        "end": 537
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    }]",
+        "};",
+        "",
+        "let proposed_rule = NetworkPolicyRule {",
+        "    name: rule_name.clone(),",
+        "    endpoints: vec![endpoint],",
+        "    binaries,",
+        "};",
+        "",
+        "// Compute confidence."
+       ],
+       "total": 380
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 9,
+      "tokens": 50,
+      "copies": 44,
+      "first": {
+       "name": "crates/openshell-server/src/grpc/provider.rs",
+       "start": 6101,
+       "end": 6109
+      },
+      "others": [
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 7381,
+        "end": 7389
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 7933,
+        "end": 7941
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 8018,
+        "end": 8026
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 8210,
+        "end": 8218
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 8344,
+        "end": 8352
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 8413,
+        "end": 8421
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 8441,
+        "end": 8449
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 10726,
+        "end": 10734
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    name: name.to_string(),",
+        "    created_time: None,",
+        "    labels: HashMap::new(),",
+        "    resource_version: 0,",
+        "    annotations: HashMap::new(),",
+        "    workspace: \"default\".to_string(),",
+        "    deletion_time: None,",
+        "}),",
+        "r#type: provider_type.to_string(),"
+       ],
+       "total": 9
+      },
+      "excerptSecond": {
+       "lines": [
+        "    name: \"msgraph\".to_string(),",
+        "    created_time: None,",
+        "    labels: HashMap::new(),",
+        "    resource_version: 0,",
+        "    annotations: HashMap::new(),",
+        "    workspace: \"default\".to_string(),",
+        "    deletion_time: None,",
+        "}),",
+        "r#type: TEST_GRAPH_PROVIDER_TYPE.to_string(),"
+       ],
+       "total": 9
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 8,
+      "tokens": 59,
+      "copies": 30,
+      "first": {
+       "name": "crates/openshell-server/src/compute/mod.rs",
+       "start": 15113,
+       "end": 15120
+      },
+      "others": [
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 9752,
+        "end": 9759
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 10713,
+        "end": 10720
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 10768,
+        "end": 10775
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 10964,
+        "end": 10971
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 11454,
+        "end": 11461
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 11548,
+        "end": 11555
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 11908,
+        "end": 11915
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 12541,
+        "end": 12548
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    name: \"test-sandbox\".to_string(),",
+        "    created_time: openshell_core::time::timestamp_from_millis(1_000_000).ok(),",
+        "    labels: HashMap::new(),",
+        "    resource_version: 0,",
+        "    annotations: HashMap::new(),",
+        "    workspace: \"default\".to_string(),",
+        "    deletion_time: None,",
+        "});"
+       ],
+       "total": 8
+      },
+      "excerptSecond": {
+       "lines": [
+        "    name: \"test-user\".to_string(),",
+        "    created_time: openshell_core::time::timestamp_from_millis(1_000_000).ok(),",
+        "    labels: HashMap::new(),",
+        "    resource_version: 0,",
+        "    annotations: HashMap::new(),",
+        "    workspace: \"default\".to_string(),",
+        "    deletion_time: None,",
+        "}),"
+       ],
+       "total": 8
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 25,
+      "tokens": 816,
+      "copies": 3,
+      "first": {
+       "name": "crates/openshell-supervisor-network/src/opa.rs",
+       "start": 7924,
+       "end": 7948
+      },
+      "others": [
+       {
+        "name": "crates/openshell-supervisor-network/src/opa.rs",
+        "start": 8039,
+        "end": 8063
+       },
+       {
+        "name": "crates/openshell-supervisor-network/src/opa.rs",
+        "start": 8099,
+        "end": 8123
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 7,
+      "tokens": 50,
+      "copies": 32,
+      "first": {
+       "name": "crates/openshell-server/src/compute/mod.rs",
+       "start": 9593,
+       "end": 9599
+      },
+      "others": [
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 9753,
+        "end": 9759
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 10714,
+        "end": 10720
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 10769,
+        "end": 10775
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 10965,
+        "end": 10971
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 11455,
+        "end": 11461
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 11549,
+        "end": 11555
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 11909,
+        "end": 11915
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 12542,
+        "end": 12548
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 220,
+      "tokens": 1227,
+      "copies": 2,
+      "first": {
+       "name": "crates/openshell-sandbox/src/activity_aggregator.rs",
+       "start": 5,
+       "end": 224
+      },
+      "others": [
+       {
+        "name": "crates/openshell-supervisor/src/activity_aggregator.rs",
+        "start": 5,
+        "end": 224
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 11,
+      "tokens": 82,
+      "copies": 15,
+      "first": {
+       "name": "crates/openshell-server/src/grpc/policy.rs",
+       "start": 15889,
+       "end": 15899
+      },
+      "others": [
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 15995,
+        "end": 16005
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 16116,
+        "end": 16126
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 16329,
+        "end": 16339
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 17330,
+        "end": 17340
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 17441,
+        "end": 17451
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 17540,
+        "end": 17550
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 17631,
+        "end": 17641
+       },
+       {
+        "name": "crates/openshell-server/src/grpc/policy.rs",
+        "start": 17724,
+        "end": 17734
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 132,
+      "tokens": 1117,
+      "copies": 2,
+      "first": {
+       "name": "crates/openshell-providers/src/profiles.rs",
+       "start": 3383,
+       "end": 3514
+      },
+      "others": [
+       {
+        "name": "crates/openshell-server/src/grpc/provider.rs",
+        "start": 1697,
+        "end": 1828
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 11,
+      "tokens": 111,
+      "copies": 11,
+      "first": {
+       "name": "crates/openshell-driver-docker/src/tests.rs",
+       "start": 901,
+       "end": 911
+      },
+      "others": [
+       {
+        "name": "crates/openshell-driver-docker/src/tests.rs",
+        "start": 940,
+        "end": 950
+       },
+       {
+        "name": "crates/openshell-driver-docker/src/tests.rs",
+        "start": 994,
+        "end": 1004
+       },
+       {
+        "name": "crates/openshell-driver-docker/src/tests.rs",
+        "start": 1126,
+        "end": 1137
+       },
+       {
+        "name": "crates/openshell-driver-docker/src/tests.rs",
+        "start": 1182,
+        "end": 1193
+       },
+       {
+        "name": "crates/openshell-driver-docker/src/tests.rs",
+        "start": 1226,
+        "end": 1237
+       },
+       {
+        "name": "crates/openshell-driver-kubernetes/src/driver.rs",
+        "start": 7686,
+        "end": 7697
+       },
+       {
+        "name": "crates/openshell-driver-podman/src/driver.rs",
+        "start": 2539,
+        "end": 2550
+       },
+       {
+        "name": "crates/openshell-driver-podman/src/grpc.rs",
+        "start": 497,
+        "end": 508
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 136,
+      "tokens": 1081,
+      "copies": 2,
+      "first": {
+       "name": "crates/openshell-sandbox/src/main_session.rs",
+       "start": 936,
+       "end": 1071
+      },
+      "others": [
+       {
+        "name": "crates/openshell-supervisor-process/src/main_session.rs",
+        "start": 644,
+        "end": 779
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 5,
+     "minified": 0,
+     "sample": [
+      "sdk/go/proto/datamodelv1/datamodel.pb.go",
+      "sdk/go/proto/openshellv1/openshell_grpc.pb.go",
+      "sdk/go/proto/openshellv1/openshell.pb.go",
+      "sdk/go/proto/optionsv1/options.pb.go",
+      "sdk/go/proto/sandboxv1/sandbox.pb.go"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T06:37:09.164Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "google/skills",
@@ -1393,11 +3426,11 @@
    "starsToday": 39,
    "defaultBranch": "main",
    "headSha": "1d77046ad3670d62227f50a8f53286f6c6cde08b",
-   "durationMs": 1276,
+   "durationMs": 326,
    "total": {
     "sources": 1367,
-    "lines": 152683,
-    "tokens": 1315767,
+    "lines": 152639,
+    "tokens": 1315602,
     "clones": 644,
     "duplicatedLines": 15877,
     "duplicatedTokens": 80893,
@@ -1448,10 +3481,10 @@
     {
      "format": "bash",
      "sources": 124,
-     "lines": 4780,
+     "lines": 4730,
      "clones": 6,
      "duplicatedLines": 344,
-     "percentage": 7.2
+     "percentage": 7.27
     },
     {
      "format": "cpp",
@@ -1489,153 +3522,283 @@
    "topClones": [
     {
      "format": "markdown",
+     "lines": 39,
+     "tokens": 83,
+     "copies": 157,
+     "first": {
+      "name": "skills/ads/ima-sdk-client-side/references/ima-sdk-android-guide.md:markdown",
+      "start": 117,
+      "end": 155
+     },
+     "others": [
+      {
+       "name": "skills/ads/ima-sdk-client-side/references/ima-sdk-tvos-guide.md:markdown",
+       "start": 12,
+       "end": 16
+      },
+      {
+       "name": "skills/ads/ima-sdk-client-side/references/ima-sdk-tvos-guide.md:markdown",
+       "start": 52,
+       "end": 56
+      },
+      {
+       "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+       "start": 15,
+       "end": 19
+      },
+      {
+       "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+       "start": 30,
+       "end": 34
+      },
+      {
+       "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+       "start": 50,
+       "end": 54
+      },
+      {
+       "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+       "start": 132,
+       "end": 136
+      },
+      {
+       "name": "skills/cloud/agent-platform-troubleshooting/references/agent-gateway.md:markdown",
+       "start": 142,
+       "end": 146
+      },
+      {
+       "name": "skills/cloud/agent-platform-troubleshooting/references/agent-gateway.md:markdown",
+       "start": 205,
+       "end": 209
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    triggering callbacks after lifecycle teardown.",
+       "",
+       "```kotlin",
+       "// In your Activity or Fragment",
+       "override fun onDestroy() {",
+       "    super.onDestroy()",
+       "    cleanupAds()",
+       "",
+       "    // If this Activity owns the AdsLoader (non-singleton), release it here:",
+       "    adsLoader?.removeAdsLoadedListener(adsLoadedListener)"
+      ],
+      "total": 39
+     },
+     "excerptSecond": {
+      "lines": [
+       "you must implement.",
+       "",
+       "--------------------------------------------------------------------------------",
+       "",
+       "## Key differences from iOS"
+      ],
+      "total": 5
+     }
+    },
+    {
+     "format": "markdown",
      "lines": 259,
      "tokens": 2926,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/cloud/google-cloud-developer/skills/gcloud/SKILL.md:markdown",
       "start": 15,
       "end": 273
      },
-     "secondFile": {
-      "name": "skills/cloud/gcloud/SKILL.md:markdown",
-      "start": 15,
-      "end": 273
+     "others": [
+      {
+       "name": "skills/cloud/gcloud/SKILL.md:markdown",
+       "start": 15,
+       "end": 273
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# gcloud CLI Skill for AI Agents",
+       "",
+       "> [!CAUTION]",
+       ">",
+       "> ### MANDATORY PRE-CONDITION: EXPLICIT LEAF-LEVEL SYNTAX VALIDATION",
+       ">",
+       "> All pre-existing knowledge of `gcloud` commands, flags, flag values, and",
+       "> positional argument syntax is **stale and prone to hallucination**.",
+       ">",
+       "> NEVER propose command parameters, output flag options, execute commands, OR"
+      ],
+      "total": 259
      }
     },
     {
      "format": "markdown",
      "lines": 251,
      "tokens": 2876,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/cloud/google-cloud-developer/skills/google-cloud-recipe-auth/SKILL.md:markdown",
       "start": 9,
       "end": 259
      },
-     "secondFile": {
-      "name": "skills/cloud/google-cloud-recipe-auth/SKILL.md:markdown",
-      "start": 9,
-      "end": 259
+     "others": [
+      {
+       "name": "skills/cloud/google-cloud-recipe-auth/SKILL.md:markdown",
+       "start": 9,
+       "end": 259
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Authenticating to Google Cloud",
+       "",
+       "[Authentication](https://docs.cloud.google.com/docs/authentication.md.txt) is the",
+       "process of proving **who you are**. In Google Cloud, you represent a",
+       "**Principal** (an identity like a user or a service). This is the first step",
+       "before [Authorization](https://docs.cloud.google.com/iam/docs/overview.md.txt)",
+       "(determining **what you can do**).",
+       "",
+       "## Authentication",
+       ""
+      ],
+      "total": 251
      }
     },
     {
      "format": "markdown",
      "lines": 215,
      "tokens": 2541,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/cloud/google-cloud-developer/skills/google-cloud-recipe-onboarding/SKILL.md:markdown",
       "start": 15,
       "end": 229
      },
-     "secondFile": {
-      "name": "skills/cloud/google-cloud-recipe-onboarding/SKILL.md:markdown",
-      "start": 15,
-      "end": 229
-     }
+     "others": [
+      {
+       "name": "skills/cloud/google-cloud-recipe-onboarding/SKILL.md:markdown",
+       "start": 15,
+       "end": 229
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 187,
      "tokens": 1627,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/cloud/google-cloud-developer/skills/gcloud/references/mcp-usage.md:markdown",
       "start": 1,
       "end": 187
      },
-     "secondFile": {
-      "name": "skills/cloud/gcloud/references/mcp-usage.md:markdown",
-      "start": 1,
-      "end": 187
-     }
+     "others": [
+      {
+       "name": "skills/cloud/gcloud/references/mcp-usage.md:markdown",
+       "start": 1,
+       "end": 187
+      }
+     ]
     },
     {
      "format": "bash",
      "lines": 268,
      "tokens": 1460,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "skills/cloud/gke-cluster-autoscaler/assets/log-autoscaler-events.sh",
       "start": 1,
       "end": 268
      },
-     "secondFile": {
-      "name": "skills/cloud/gke-compute-classes/assets/log-autoscaler-events.sh",
-      "start": 1,
-      "end": 268
-     }
+     "others": [
+      {
+       "name": "skills/cloud/gke-compute-classes/assets/log-autoscaler-events.sh",
+       "start": 1,
+       "end": 268
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 58,
+     "tokens": 471,
+     "copies": 4,
+     "first": {
+      "name": "skills/cloud/google-cloud-solution-agentic-ai-bidirectional-streaming/assets/output-template.md:markdown",
+      "start": 6,
+      "end": 63
+     },
+     "others": [
+      {
+       "name": "skills/cloud/google-cloud-solution-agentic-ai-borderless-data-lakehouse/assets/output-template.md:markdown",
+       "start": 6,
+       "end": 60
+      },
+      {
+       "name": "skills/cloud/google-cloud-solution-agentic-ai-data-science-workflow/assets/output-template.md:markdown",
+       "start": 6,
+       "end": 64
+      },
+      {
+       "name": "skills/cloud/google-cloud-solution-architecture/assets/output-template.md:markdown",
+       "start": 6,
+       "end": 55
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 93,
      "tokens": 1388,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/SKILL.md:markdown",
       "start": 15,
       "end": 107
      },
-     "secondFile": {
-      "name": "skills/developers/retrieving-developer-knowledge/SKILL.md:markdown",
-      "start": 15,
-      "end": 107
-     }
+     "others": [
+      {
+       "name": "skills/developers/retrieving-developer-knowledge/SKILL.md:markdown",
+       "start": 15,
+       "end": 107
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 120,
      "tokens": 1353,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/references/api-fallback.md:markdown",
       "start": 1,
       "end": 120
      },
-     "secondFile": {
-      "name": "skills/developers/retrieving-developer-knowledge/references/api-fallback.md:markdown",
-      "start": 1,
-      "end": 120
-     }
+     "others": [
+      {
+       "name": "skills/developers/retrieving-developer-knowledge/references/api-fallback.md:markdown",
+       "start": 1,
+       "end": 120
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 119,
      "tokens": 1212,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "plugins/cloud/google-cloud-developer/skills/finding-google-skills/SKILL.md:markdown",
       "start": 18,
       "end": 136
      },
-     "secondFile": {
-      "name": "skills/developers/finding-google-skills/SKILL.md:markdown",
-      "start": 18,
-      "end": 136
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 221,
-     "tokens": 1083,
-     "firstFile": {
-      "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_cpp.md:markdown",
-      "start": 22,
-      "end": 242
-     },
-     "secondFile": {
-      "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_go.md:markdown",
-      "start": 27,
-      "end": 246
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 218,
-     "tokens": 1038,
-     "firstFile": {
-      "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_cpp.md:markdown",
-      "start": 25,
-      "end": 242
-     },
-     "secondFile": {
-      "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_java.md:markdown",
-      "start": 15,
-      "end": 286
-     }
+     "others": [
+      {
+       "name": "skills/developers/finding-google-skills/SKILL.md:markdown",
+       "start": 18,
+       "end": 136
+      }
+     ]
     }
    ],
    "health": {
@@ -1848,7 +4011,305 @@
       "lines": 14
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 84,
+    "lines": 15767,
+    "tokens": 96760,
+    "clones": 22,
+    "duplicatedLines": 632,
+    "duplicatedTokens": 3157,
+    "percentage": 4.01,
+    "percentageTokens": 3.26,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 58,
+      "lines": 13570,
+      "clones": 19,
+      "duplicatedLines": 307,
+      "percentage": 2.26
+     },
+     {
+      "format": "bash",
+      "sources": 24,
+      "lines": 1994,
+      "clones": 3,
+      "duplicatedLines": 325,
+      "percentage": 16.3
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 1,
+      "lines": 29,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "bash",
+      "lines": 268,
+      "tokens": 1460,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/gke-cluster-autoscaler/assets/log-autoscaler-events.sh",
+       "start": 1,
+       "end": 268
+      },
+      "others": [
+       {
+        "name": "skills/cloud/gke-compute-classes/assets/log-autoscaler-events.sh",
+        "start": 1,
+        "end": 268
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "#!/usr/bin/env bash",
+        "#",
+        "# Live tail of GKE cluster autoscaler visibility logs for a single cluster.",
+        "# Surfaces both successful scale events (scale-ups, node pool auto-creation node-pool creations,",
+        "# scale-downs) and failures / stalls (per-MIG scale-up errors, noScaleUp,",
+        "# noScaleDown). Polls every $POLL_INTERVAL_SECS, colorizes terminal output,",
+        "# and appends a plain-text copy to the log file.",
+        "#",
+        "# Schema reference:",
+        "#   https://docs.cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler-visibility"
+       ],
+       "total": 268
+      }
+     },
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 54,
+      "copies": 6,
+      "first": {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 87,
+       "end": 98
+      },
+      "others": [
+       {
+        "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+        "start": 108,
+        "end": 119
+       },
+       {
+        "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+        "start": 129,
+        "end": 140
+       },
+       {
+        "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+        "start": 232,
+        "end": 243
+       },
+       {
+        "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+        "start": 256,
+        "end": 267
+       },
+       {
+        "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+        "start": 278,
+        "end": 289
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "print(f\"Searching skills at {endpoint} with query '{args.query}'...\")",
+        "response = requests.get(url, headers=headers)",
+        "",
+        "if response.status_code >= 400:",
+        "  print(f\"Error: {response.status_code} - {response.text}\")",
+        "  sys.exit(1)",
+        "",
+        "print(\"Response:\")",
+        "print(json.dumps(response.json(), indent=2))",
+        ""
+       ],
+       "total": 12
+      }
+     },
+     {
+      "format": "python",
+      "lines": 46,
+      "tokens": 184,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/agent-platform-alert-configuration/scripts/config_utils.py",
+       "start": 182,
+       "end": 227
+      },
+      "others": [
+       {
+        "name": "skills/cloud/gke-alert-configuration/scripts/validate_config.py",
+        "start": 129,
+        "end": 174
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "def extract_alert_policies(hcl_content: str) -> list[dict]:",
+        "  \"\"\"Extracts resource 'google_monitoring_alert_policy' blocks and metadata.\"\"\"",
+        "  policies = []",
+        "  pattern = re.compile(",
+        "      r'resource\\s+\"google_monitoring_alert_policy\"\\s+\"([^\"]+)\"\\s*\\{'",
+        "  )",
+        "",
+        "  for match in pattern.finditer(hcl_content):",
+        "    resource_name = match.group(1)",
+        "    start_pos = match.start()"
+       ],
+       "total": 46
+      }
+     },
+     {
+      "format": "python",
+      "lines": 31,
+      "tokens": 145,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/dbt-sf-to-bq-translator/scripts/dbt_translator.py",
+       "start": 115,
+       "end": 145
+      },
+      "others": [
+       {
+        "name": "skills/cloud/dbt-sf-to-bq-translator/scripts/dbt_translator.py",
+        "start": 184,
+        "end": 214
+       }
+      ]
+     },
+     {
+      "format": "bash",
+      "lines": 49,
+      "tokens": 141,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/iam-helper-for-privileged-access-management/scripts/list_entitlements_hierarchy.sh",
+       "start": 10,
+       "end": 58
+      },
+      "others": [
+       {
+        "name": "skills/cloud/iam-helper-for-privileged-access-management/scripts/search_eligible_entitlements.sh",
+        "start": 10,
+        "end": 58
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 114,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 41,
+       "end": 52
+      },
+      "others": [
+       {
+        "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+        "start": 178,
+        "end": 189
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 103,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/google-cloud-filestore-nfs-browser/scripts/jump_host_engine.py",
+       "start": 108,
+       "end": 115
+      },
+      "others": [
+       {
+        "name": "skills/cloud/google-cloud-filestore-nfs-browser/scripts/jump_host_engine.py",
+        "start": 155,
+        "end": 162
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 28,
+      "tokens": 97,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/agent-platform-alert-configuration/scripts/list_log_scope_table_names.py",
+       "start": 17,
+       "end": 44
+      },
+      "others": [
+       {
+        "name": "skills/cloud/agent-platform-alert-configuration/scripts/list_trace_scope_table_names.py",
+        "start": 17,
+        "end": 45
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 18,
+      "tokens": 83,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/agent-platform-alert-configuration/scripts/scan_duplicates.py",
+       "start": 27,
+       "end": 44
+      },
+      "others": [
+       {
+        "name": "skills/cloud/gke-alert-configuration/scripts/validate_config.py",
+        "start": 317,
+        "end": 333
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 17,
+      "tokens": 81,
+      "copies": 2,
+      "first": {
+       "name": "skills/cloud/agent-platform-alert-configuration/scripts/config_utils.py",
+       "start": 247,
+       "end": 263
+      },
+      "others": [
+       {
+        "name": "skills/cloud/gke-alert-configuration/scripts/validate_config.py",
+        "start": 190,
+        "end": 206
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:37:11.071Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "colbymchenry/codegraph",
@@ -1859,11 +4320,11 @@
    "starsToday": 98,
    "defaultBranch": "main",
    "headSha": "dbb3d63cb1a92d04112dcc9ebb53bea4d1e317fb",
-   "durationMs": 2153,
+   "durationMs": 873,
    "total": {
     "sources": 1463,
-    "lines": 402753,
-    "tokens": 2818477,
+    "lines": 402709,
+    "tokens": 2818312,
     "clones": 2708,
     "duplicatedLines": 38702,
     "duplicatedTokens": 250579,
@@ -1938,10 +4399,10 @@
     {
      "format": "bash",
      "sources": 71,
-     "lines": 4844,
+     "lines": 4794,
      "clones": 16,
      "duplicatedLines": 125,
-     "percentage": 2.58
+     "percentage": 2.61
     },
     {
      "format": "diff",
@@ -1955,153 +4416,443 @@
    "topClones": [
     {
      "format": "typescript",
+     "lines": 13,
+     "tokens": 117,
+     "copies": 61,
+     "first": {
+      "name": "__tests__/astro-component-markup-only.test.ts",
+      "start": 35,
+      "end": 47
+     },
+     "others": [
+      {
+       "name": "__tests__/cfml-tag-calls.test.ts",
+       "start": 48,
+       "end": 60
+      },
+      {
+       "name": "__tests__/commonjs-require-calls.test.ts",
+       "start": 69,
+       "end": 81
+      },
+      {
+       "name": "__tests__/commonjs-require-imports.test.ts",
+       "start": 59,
+       "end": 71
+      },
+      {
+       "name": "__tests__/cpp-overload-choice.test.ts",
+       "start": 68,
+       "end": 80
+      },
+      {
+       "name": "__tests__/csharp-namespace-scope.test.ts",
+       "start": 128,
+       "end": 140
+      },
+      {
+       "name": "__tests__/csharp-namespace-visibility.test.ts",
+       "start": 58,
+       "end": 70
+      },
+      {
+       "name": "__tests__/dart-bare-call-scope.test.ts",
+       "start": 106,
+       "end": 118
+      },
+      {
+       "name": "__tests__/dart-unnamed-extension.test.ts",
+       "start": 48,
+       "end": 60
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "`,",
+       "  };",
+       "  for (const [rel, content] of Object.entries(files)) {",
+       "    fs.mkdirSync(path.dirname(path.join(root, rel)), { recursive: true });",
+       "    fs.writeFileSync(path.join(root, rel), content);",
+       "  }",
+       "  cg = await CodeGraph.init(root, { index: true });",
+       "});",
+       "",
+       "afterAll(() => {"
+      ],
+      "total": 13
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 11,
+     "tokens": 76,
+     "copies": 88,
+     "first": {
+      "name": "__tests__/astro-component-markup-only.test.ts",
+      "start": 8,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "__tests__/c-calls-never-methods.test.ts",
+       "start": 6,
+       "end": 16
+      },
+      {
+       "name": "__tests__/cfml-call-scope.test.ts",
+       "start": 13,
+       "end": 23
+      },
+      {
+       "name": "__tests__/cfml-tag-calls.test.ts",
+       "start": 9,
+       "end": 19
+      },
+      {
+       "name": "__tests__/commonjs-require-calls.test.ts",
+       "start": 12,
+       "end": 22
+      },
+      {
+       "name": "__tests__/commonjs-require-imports.test.ts",
+       "start": 11,
+       "end": 21
+      },
+      {
+       "name": "__tests__/cpp-macro-namespace.test.ts",
+       "start": 10,
+       "end": 20
+      },
+      {
+       "name": "__tests__/cpp-overload-choice.test.ts",
+       "start": 8,
+       "end": 18
+      },
+      {
+       "name": "__tests__/csharp-bare-member-scope.test.ts",
+       "start": 9,
+       "end": 19
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import { describe, it, expect, afterAll, beforeAll } from 'vitest';",
+       "import * as fs from 'fs';",
+       "import * as os from 'os';",
+       "import * as path from 'path';",
+       "import { CodeGraph } from '../src';",
+       "",
+       "let root = '';",
+       "let cg: CodeGraph;",
+       "",
+       "beforeAll(async () => {"
+      ],
+      "total": 11
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 119,
+     "copies": 35,
+     "first": {
+      "name": "__tests__/astro-component-markup-only.test.ts",
+      "start": 35,
+      "end": 49
+     },
+     "others": [
+      {
+       "name": "__tests__/c-calls-never-methods.test.ts",
+       "start": 28,
+       "end": 42
+      },
+      {
+       "name": "__tests__/cfml-call-scope.test.ts",
+       "start": 58,
+       "end": 72
+      },
+      {
+       "name": "__tests__/cpp-macro-namespace.test.ts",
+       "start": 62,
+       "end": 76
+      },
+      {
+       "name": "__tests__/csharp-bare-member-scope.test.ts",
+       "start": 67,
+       "end": 81
+      },
+      {
+       "name": "__tests__/dart-extension-receiver.test.ts",
+       "start": 40,
+       "end": 54
+      },
+      {
+       "name": "__tests__/destructured-call-result.test.ts",
+       "start": 46,
+       "end": 60
+      },
+      {
+       "name": "__tests__/esm-unexported-binding.test.ts",
+       "start": 51,
+       "end": 65
+      },
+      {
+       "name": "__tests__/external-type-receiver.test.ts",
+       "start": 34,
+       "end": 48
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "`,",
+       "  };",
+       "  for (const [rel, content] of Object.entries(files)) {",
+       "    fs.mkdirSync(path.dirname(path.join(root, rel)), { recursive: true });",
+       "    fs.writeFileSync(path.join(root, rel), content);",
+       "  }",
+       "  cg = await CodeGraph.init(root, { index: true });",
+       "});",
+       "",
+       "afterAll(() => {"
+      ],
+      "total": 15
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 6,
+     "tokens": 87,
+     "copies": 40,
+     "first": {
+      "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+      "start": 17,
+      "end": 22
+     },
+     "others": [
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 29,
+       "end": 34
+      },
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 41,
+       "end": 46
+      },
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 53,
+       "end": 58
+      },
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 65,
+       "end": 70
+      },
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 77,
+       "end": 82
+      },
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 89,
+       "end": 94
+      },
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 101,
+       "end": 106
+      },
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
+       "start": 113,
+       "end": 118
+      }
+     ]
+    },
+    {
+     "format": "c-header",
+     "lines": 286,
+     "tokens": 1252,
+     "copies": 3,
+     "first": {
+      "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
+      "start": 1,
+      "end": 286
+     },
+     "others": [
+      {
+       "name": "codegraph-kernel/grammars/lua/tree_sitter/parser.h",
+       "start": 1,
+       "end": 286
+      },
+      {
+       "name": "codegraph-kernel/grammars/scala/tree_sitter/parser.h",
+       "start": 1,
+       "end": 286
+      }
+     ]
+    },
+    {
+     "format": "typescript",
      "lines": 214,
      "tokens": 2286,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "__tests__/fixtures/oversize-member-ts/src/report/monthly.ts",
       "start": 136,
       "end": 349
      },
-     "secondFile": {
-      "name": "__tests__/fixtures/oversize-member-ts/src/report/quarterly.ts",
-      "start": 11,
-      "end": 224
-     }
+     "others": [
+      {
+       "name": "__tests__/fixtures/oversize-member-ts/src/report/quarterly.ts",
+       "start": 11,
+       "end": 224
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 36,
+     "tokens": 281,
+     "copies": 9,
+     "first": {
+      "name": "__tests__/kernel-csharp-parity.test.ts",
+      "start": 32,
+      "end": 67
+     },
+     "others": [
+      {
+       "name": "__tests__/kernel-dart-parity.test.ts",
+       "start": 32,
+       "end": 67
+      },
+      {
+       "name": "__tests__/kernel-kotlin-parity.test.ts",
+       "start": 30,
+       "end": 65
+      },
+      {
+       "name": "__tests__/kernel-php-parity.test.ts",
+       "start": 33,
+       "end": 68
+      },
+      {
+       "name": "__tests__/kernel-r-parity.test.ts",
+       "start": 24,
+       "end": 59
+      },
+      {
+       "name": "__tests__/kernel-ruby-parity.test.ts",
+       "start": 23,
+       "end": 58
+      },
+      {
+       "name": "__tests__/kernel-rustlang-parity.test.ts",
+       "start": 22,
+       "end": 57
+      },
+      {
+       "name": "__tests__/kernel-scala-parity.test.ts",
+       "start": 32,
+       "end": 67
+      },
+      {
+       "name": "__tests__/kernel-swift-parity.test.ts",
+       "start": 29,
+       "end": 64
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 50,
+     "copies": 42,
+     "first": {
+      "name": "__tests__/cfml-tag-calls.test.ts",
+      "start": 54,
+      "end": 62
+     },
+     "others": [
+      {
+       "name": "__tests__/commonjs-require-imports.test.ts",
+       "start": 65,
+       "end": 73
+      },
+      {
+       "name": "__tests__/cpp-overload-choice.test.ts",
+       "start": 74,
+       "end": 82
+      },
+      {
+       "name": "__tests__/csharp-namespace-scope.test.ts",
+       "start": 134,
+       "end": 142
+      },
+      {
+       "name": "__tests__/csharp-namespace-visibility.test.ts",
+       "start": 64,
+       "end": 72
+      },
+      {
+       "name": "__tests__/dart-unnamed-extension.test.ts",
+       "start": 54,
+       "end": 62
+      },
+      {
+       "name": "__tests__/enum-constant-bodies.test.ts",
+       "start": 67,
+       "end": 75
+      },
+      {
+       "name": "__tests__/express-heuristic-same-file.test.ts",
+       "start": 43,
+       "end": 51
+      },
+      {
+       "name": "__tests__/express-inline-function-handler.test.ts",
+       "start": 77,
+       "end": 85
+      }
+     ]
     },
     {
      "format": "c-header",
      "lines": 291,
      "tokens": 1775,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
       "start": 1,
       "end": 291
      },
-     "secondFile": {
-      "name": "codegraph-kernel/grammars/lua/tree_sitter/array.h",
-      "start": 1,
-      "end": 291
-     }
+     "others": [
+      {
+       "name": "codegraph-kernel/grammars/lua/tree_sitter/array.h",
+       "start": 1,
+       "end": 291
+      }
+     ]
     },
     {
      "format": "c-header",
      "lines": 265,
      "tokens": 1684,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
       "start": 18,
       "end": 282
      },
-     "secondFile": {
-      "name": "codegraph-kernel/grammars/kotlin/tree_sitter/array.h",
-      "start": 17,
-      "end": 281
-     }
-    },
-    {
-     "format": "c-header",
-     "lines": 286,
-     "tokens": 1252,
-     "firstFile": {
-      "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
-      "start": 1,
-      "end": 286
-     },
-     "secondFile": {
-      "name": "codegraph-kernel/grammars/lua/tree_sitter/parser.h",
-      "start": 1,
-      "end": 286
-     }
-    },
-    {
-     "format": "c-header",
-     "lines": 286,
-     "tokens": 1252,
-     "firstFile": {
-      "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
-      "start": 1,
-      "end": 286
-     },
-     "secondFile": {
-      "name": "codegraph-kernel/grammars/scala/tree_sitter/parser.h",
-      "start": 1,
-      "end": 286
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 115,
-     "tokens": 850,
-     "firstFile": {
-      "name": "__tests__/daemon-pid-reuse.test.ts",
-      "start": 60,
-      "end": 174
-     },
-     "secondFile": {
-      "name": "__tests__/mcp-daemon.test.ts",
-      "start": 65,
-      "end": 179
-     }
-    },
-    {
-     "format": "rust",
-     "lines": 75,
-     "tokens": 659,
-     "firstFile": {
-      "name": "codegraph-kernel/src/go.rs",
-      "start": 122,
-      "end": 196
-     },
-     "secondFile": {
-      "name": "codegraph-kernel/src/rustlang.rs",
-      "start": 146,
-      "end": 220
-     }
-    },
-    {
-     "format": "rust",
-     "lines": 78,
-     "tokens": 649,
-     "firstFile": {
-      "name": "codegraph-kernel/src/java.rs",
-      "start": 219,
-      "end": 296
-     },
-     "secondFile": {
-      "name": "codegraph-kernel/src/kotlin.rs",
-      "start": 282,
-      "end": 359
-     }
-    },
-    {
-     "format": "rust",
-     "lines": 73,
-     "tokens": 637,
-     "firstFile": {
-      "name": "codegraph-kernel/src/ccpp/mod.rs",
-      "start": 399,
-      "end": 471
-     },
-     "secondFile": {
-      "name": "codegraph-kernel/src/go.rs",
-      "start": 128,
-      "end": 200
-     }
-    },
-    {
-     "format": "html",
-     "lines": 24,
-     "tokens": 622,
-     "firstFile": {
-      "name": "ui/src/views/StepsView.svelte:html",
-      "start": 722,
-      "end": 745
-     },
-     "secondFile": {
-      "name": "ui/src/views/StepsView.svelte:html",
-      "start": 769,
-      "end": 792
-     }
+     "others": [
+      {
+       "name": "codegraph-kernel/grammars/kotlin/tree_sitter/array.h",
+       "start": 17,
+       "end": 281
+      }
+     ]
     }
    ],
    "health": {
@@ -2339,7 +5090,514 @@
       "lines": 23
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 662,
+    "lines": 217516,
+    "tokens": 1262981,
+    "clones": 1302,
+    "duplicatedLines": 20174,
+    "duplicatedTokens": 132499,
+    "percentage": 9.27,
+    "percentageTokens": 10.49,
+    "formats": [
+     {
+      "format": "rust",
+      "sources": 26,
+      "lines": 26122,
+      "clones": 680,
+      "duplicatedLines": 10404,
+      "percentage": 39.83
+     },
+     {
+      "format": "typescript",
+      "sources": 348,
+      "lines": 150089,
+      "clones": 487,
+      "duplicatedLines": 6686,
+      "percentage": 4.45
+     },
+     {
+      "format": "css",
+      "sources": 58,
+      "lines": 4586,
+      "clones": 49,
+      "duplicatedLines": 759,
+      "percentage": 16.55
+     },
+     {
+      "format": "html",
+      "sources": 57,
+      "lines": 4030,
+      "clones": 34,
+      "duplicatedLines": 360,
+      "percentage": 8.93
+     },
+     {
+      "format": "javascript",
+      "sources": 46,
+      "lines": 8157,
+      "clones": 23,
+      "duplicatedLines": 214,
+      "percentage": 2.62
+     },
+     {
+      "format": "c-header",
+      "sources": 12,
+      "lines": 2541,
+      "clones": 20,
+      "duplicatedLines": 1687,
+      "percentage": 66.39
+     },
+     {
+      "format": "bash",
+      "sources": 46,
+      "lines": 4170,
+      "clones": 9,
+      "duplicatedLines": 64,
+      "percentage": 1.53
+     },
+     {
+      "format": "svelte",
+      "sources": 55,
+      "lines": 13292,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "c",
+      "sources": 4,
+      "lines": 2766,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "astro",
+      "sources": 4,
+      "lines": 635,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "c-header",
+      "lines": 286,
+      "tokens": 1252,
+      "copies": 3,
+      "first": {
+       "name": "codegraph-kernel/grammars/dart/tree_sitter/parser.h",
+       "start": 1,
+       "end": 286
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/grammars/lua/tree_sitter/parser.h",
+        "start": 1,
+        "end": 286
+       },
+       {
+        "name": "codegraph-kernel/grammars/scala/tree_sitter/parser.h",
+        "start": 1,
+        "end": 286
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "#ifndef TREE_SITTER_PARSER_H_",
+        "#define TREE_SITTER_PARSER_H_",
+        "",
+        "#ifdef __cplusplus",
+        "extern \"C\" {",
+        "#endif",
+        "",
+        "#include <stdbool.h>",
+        "#include <stdint.h>",
+        "#include <stdlib.h>"
+       ],
+       "total": 286
+      }
+     },
+     {
+      "format": "c-header",
+      "lines": 291,
+      "tokens": 1775,
+      "copies": 2,
+      "first": {
+       "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
+       "start": 1,
+       "end": 291
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/grammars/lua/tree_sitter/array.h",
+        "start": 1,
+        "end": 291
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "#ifndef TREE_SITTER_ARRAY_H_",
+        "#define TREE_SITTER_ARRAY_H_",
+        "",
+        "#ifdef __cplusplus",
+        "extern \"C\" {",
+        "#endif",
+        "",
+        "#include \"./alloc.h\"",
+        "",
+        "#include <assert.h>"
+       ],
+       "total": 291
+      }
+     },
+     {
+      "format": "c-header",
+      "lines": 265,
+      "tokens": 1684,
+      "copies": 2,
+      "first": {
+       "name": "codegraph-kernel/grammars/dart/tree_sitter/array.h",
+       "start": 18,
+       "end": 282
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/grammars/kotlin/tree_sitter/array.h",
+        "start": 17,
+        "end": 281
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "#pragma warning(disable : 4101)",
+        "#elif defined(__GNUC__) || defined(__clang__)",
+        "#pragma GCC diagnostic push",
+        "#pragma GCC diagnostic ignored \"-Wunused-variable\"",
+        "#endif",
+        "",
+        "#define Array(T)       \\",
+        "  struct {             \\",
+        "    T *contents;       \\",
+        "    uint32_t size;     \\"
+       ],
+       "total": 265
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 34,
+      "tokens": 248,
+      "copies": 5,
+      "first": {
+       "name": "codegraph-kernel/src/ccpp/mod.rs",
+       "start": 399,
+       "end": 432
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/src/kotlin.rs",
+        "start": 233,
+        "end": 266
+       },
+       {
+        "name": "codegraph-kernel/src/php.rs",
+        "start": 180,
+        "end": 213
+       },
+       {
+        "name": "codegraph-kernel/src/ruby.rs",
+        "start": 156,
+        "end": 189
+       },
+       {
+        "name": "codegraph-kernel/src/swift.rs",
+        "start": 208,
+        "end": 241
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 14,
+      "tokens": 150,
+      "copies": 7,
+      "first": {
+       "name": "codegraph-kernel/src/csharp.rs",
+       "start": 36,
+       "end": 49
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/src/dart.rs",
+        "start": 56,
+        "end": 69
+       },
+       {
+        "name": "codegraph-kernel/src/go.rs",
+        "start": 1241,
+        "end": 1254
+       },
+       {
+        "name": "codegraph-kernel/src/java.rs",
+        "start": 39,
+        "end": 52
+       },
+       {
+        "name": "codegraph-kernel/src/rustlang.rs",
+        "start": 1542,
+        "end": 1555
+       },
+       {
+        "name": "codegraph-kernel/src/scala.rs",
+        "start": 71,
+        "end": 84
+       },
+       {
+        "name": "codegraph-kernel/src/tsjs/mod.rs",
+        "start": 115,
+        "end": 128
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 24,
+      "tokens": 176,
+      "copies": 6,
+      "first": {
+       "name": "codegraph-kernel/src/csharp.rs",
+       "start": 153,
+       "end": 176
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/src/dart.rs",
+        "start": 147,
+        "end": 170
+       },
+       {
+        "name": "codegraph-kernel/src/php.rs",
+        "start": 163,
+        "end": 186
+       },
+       {
+        "name": "codegraph-kernel/src/python.rs",
+        "start": 163,
+        "end": 186
+       },
+       {
+        "name": "codegraph-kernel/src/ruby.rs",
+        "start": 139,
+        "end": 162
+       },
+       {
+        "name": "codegraph-kernel/src/swift.rs",
+        "start": 191,
+        "end": 214
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 18,
+      "tokens": 121,
+      "copies": 8,
+      "first": {
+       "name": "codegraph-kernel/src/csharp.rs",
+       "start": 1484,
+       "end": 1501
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/src/go.rs",
+        "start": 1059,
+        "end": 1076
+       },
+       {
+        "name": "codegraph-kernel/src/java.rs",
+        "start": 1239,
+        "end": 1256
+       },
+       {
+        "name": "codegraph-kernel/src/php.rs",
+        "start": 1367,
+        "end": 1384
+       },
+       {
+        "name": "codegraph-kernel/src/python.rs",
+        "start": 947,
+        "end": 964
+       },
+       {
+        "name": "codegraph-kernel/src/ruby.rs",
+        "start": 964,
+        "end": 981
+       },
+       {
+        "name": "codegraph-kernel/src/rustlang.rs",
+        "start": 1356,
+        "end": 1373
+       },
+       {
+        "name": "codegraph-kernel/src/tsjs/mod.rs",
+        "start": 585,
+        "end": 602
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 16,
+      "tokens": 138,
+      "copies": 7,
+      "first": {
+       "name": "codegraph-kernel/src/csharp.rs",
+       "start": 396,
+       "end": 411
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/src/dart.rs",
+        "start": 348,
+        "end": 363
+       },
+       {
+        "name": "codegraph-kernel/src/go.rs",
+        "start": 297,
+        "end": 312
+       },
+       {
+        "name": "codegraph-kernel/src/kotlin.rs",
+        "start": 482,
+        "end": 497
+       },
+       {
+        "name": "codegraph-kernel/src/php.rs",
+        "start": 391,
+        "end": 406
+       },
+       {
+        "name": "codegraph-kernel/src/python.rs",
+        "start": 354,
+        "end": 369
+       },
+       {
+        "name": "codegraph-kernel/src/swift.rs",
+        "start": 430,
+        "end": 445
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 26,
+      "tokens": 199,
+      "copies": 5,
+      "first": {
+       "name": "codegraph-kernel/src/ccpp/mod.rs",
+       "start": 407,
+       "end": 432
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/src/csharp.rs",
+        "start": 180,
+        "end": 205
+       },
+       {
+        "name": "codegraph-kernel/src/dart.rs",
+        "start": 173,
+        "end": 198
+       },
+       {
+        "name": "codegraph-kernel/src/rlang.rs",
+        "start": 102,
+        "end": 127
+       },
+       {
+        "name": "codegraph-kernel/src/tsjs/mod.rs",
+        "start": 241,
+        "end": 266
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 15,
+      "tokens": 106,
+      "copies": 8,
+      "first": {
+       "name": "codegraph-kernel/src/ccpp/mod.rs",
+       "start": 188,
+       "end": 202
+      },
+      "others": [
+       {
+        "name": "codegraph-kernel/src/go.rs",
+        "start": 1224,
+        "end": 1238
+       },
+       {
+        "name": "codegraph-kernel/src/kotlin.rs",
+        "start": 50,
+        "end": 64
+       },
+       {
+        "name": "codegraph-kernel/src/python.rs",
+        "start": 1109,
+        "end": 1123
+       },
+       {
+        "name": "codegraph-kernel/src/rustlang.rs",
+        "start": 1524,
+        "end": 1538
+       },
+       {
+        "name": "codegraph-kernel/src/scala.rs",
+        "start": 54,
+        "end": 68
+       },
+       {
+        "name": "codegraph-kernel/src/swift.rs",
+        "start": 68,
+        "end": 82
+       },
+       {
+        "name": "codegraph-kernel/src/tsjs/mod.rs",
+        "start": 98,
+        "end": 112
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 15,
+     "minified": 0,
+     "sample": [
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/employee/contract.go",
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/employee/employee.go",
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/calculate.go",
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/dto.go",
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/payroll_cycle.go",
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/payslip.go",
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/payroll/store.go",
+      "__tests__/fixtures/payroll-go/internal/gen/fkit/timesheet/timesheet.go",
+      "__tests__/fixtures/payroll-go/internal/gen/payrollpb/payroll_grpc.pb.go",
+      "__tests__/fixtures/payroll-go/internal/gen/payrollpb/payroll.pb.go",
+      "__tests__/fixtures/tail-render-ts/types/worker-configuration.d.ts",
+      "__tests__/generated-flag-index.test.ts",
+      "codegraph-kernel/grammars/dart/parser.c",
+      "codegraph-kernel/grammars/lua/parser.c",
+      "codegraph-kernel/grammars/scala/parser.c"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T06:37:36.328Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "cursor/plugins",
@@ -2350,15 +5608,15 @@
    "starsToday": 163,
    "defaultBranch": "main",
    "headSha": "23e4138daa01c42d4969f7a5465f82704e64f798",
-   "durationMs": 831,
+   "durationMs": 220,
    "total": {
     "sources": 444,
-    "lines": 41153,
-    "tokens": 326572,
+    "lines": 41109,
+    "tokens": 326407,
     "clones": 61,
     "duplicatedLines": 1343,
     "duplicatedTokens": 8044,
-    "percentage": 3.26,
+    "percentage": 3.27,
     "percentageTokens": 2.46
    },
    "formats": [
@@ -2389,7 +5647,7 @@
     {
      "format": "bash",
      "sources": 28,
-     "lines": 1257,
+     "lines": 1207,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2421,7 +5679,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2448,151 +5706,236 @@
      "format": "markdown",
      "lines": 186,
      "tokens": 2206,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
       "start": 7,
       "end": 192
      },
-     "secondFile": {
-      "name": "thermos/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
-      "start": 7,
-      "end": 192
+     "others": [
+      {
+       "name": "thermos/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
+       "start": 7,
+       "end": 192
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Thermo-Nuclear Code Quality Review",
+       "",
+       "Use this skill for an unusually strict review focused on implementation quality, maintainability, abstraction quality, and codebase health.",
+       "",
+       "Above all, this skill should push the reviewer to be **ambitious** about code structure. Do not merely identify local cleanup opportunities. Actively search fo…",
+       "",
+       "## Core Prompt",
+       "",
+       "Start from this baseline:",
+       ""
+      ],
+      "total": 186
      }
     },
     {
      "format": "json",
      "lines": 158,
      "tokens": 446,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
       "start": 255,
       "end": 412
      },
-     "secondFile": {
-      "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
-      "start": 413,
-      "end": 570
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
+       "start": 413,
+       "end": 570
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "  },",
+       "  \"verifies\": {",
+       "    \"not\": {}",
+       "  }",
+       "},",
+       "\"required\": [",
+       "  \"name\",",
+       "  \"scopedGoal\",",
+       "  \"type\"",
+       "],"
+      ],
+      "total": 158
      }
     },
     {
      "format": "json",
      "lines": 146,
      "tokens": 419,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
       "start": 109,
       "end": 254
      },
-     "secondFile": {
-      "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
-      "start": 267,
-      "end": 412
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
+       "start": 267,
+       "end": 412
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{",
+       "  \"type\": \"object\",",
+       "  \"properties\": {",
+       "    \"name\": {",
+       "      \"type\": \"string\",",
+       "      \"pattern\": \"^[a-z0-9-]+$\",",
+       "      \"description\": \"Kebab-case ASCII. Used in branch and agent-title.\"",
+       "    },",
+       "    \"scopedGoal\": {",
+       "      \"type\": \"string\","
+      ],
+      "total": 146
      }
+    },
+    {
+     "format": "markdown",
+     "lines": 12,
+     "tokens": 180,
+     "copies": 3,
+     "first": {
+      "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
+      "start": 19,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+       "start": 18,
+       "end": 29
+      },
+      {
+       "name": "pstack/skills/reflect/references/tooling-reviewer.md:markdown",
+       "start": 31,
+       "end": 42
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 12,
      "tokens": 210,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "cursor-team-kit/agents/thermo-nuclear-code-quality-review.md:markdown",
       "start": 12,
       "end": 23
      },
-     "secondFile": {
-      "name": "thermos/agents/thermo-nuclear-code-quality-review-subagent.md:markdown",
-      "start": 12,
-      "end": 23
-     }
+     "others": [
+      {
+       "name": "thermos/agents/thermo-nuclear-code-quality-review-subagent.md:markdown",
+       "start": 12,
+       "end": 23
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 98,
+     "copies": 3,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+      "start": 1125,
+      "end": 1136
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 1223,
+       "end": 1234
+      },
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 1241,
+       "end": 1252
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 22,
      "tokens": 185,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "orchestrate/skills/orchestrate/scripts/__tests__/andon-root-cache.test.ts",
       "start": 277,
       "end": 298
      },
-     "secondFile": {
-      "name": "orchestrate/skills/orchestrate/scripts/__tests__/andon-root-cache.test.ts",
-      "start": 344,
-      "end": 364
-     }
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/__tests__/andon-root-cache.test.ts",
+       "start": 344,
+       "end": 364
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 8,
      "tokens": 182,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
       "start": 5,
       "end": 12
      },
-     "secondFile": {
-      "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-      "start": 3,
-      "end": 10
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 12,
-     "tokens": 180,
-     "firstFile": {
-      "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-      "start": 19,
-      "end": 30
-     },
-     "secondFile": {
-      "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-      "start": 18,
-      "end": 29
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 12,
-     "tokens": 180,
-     "firstFile": {
-      "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-      "start": 19,
-      "end": 30
-     },
-     "secondFile": {
-      "name": "pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-      "start": 31,
-      "end": 42
-     }
+     "others": [
+      {
+       "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+       "start": 3,
+       "end": 10
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 18,
      "tokens": 158,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "orchestrate/skills/orchestrate/prompts/verifier.md:markdown",
       "start": 55,
       "end": 72
      },
-     "secondFile": {
-      "name": "orchestrate/skills/orchestrate/references/handoffs.md:markdown",
-      "start": 110,
-      "end": 127
-     }
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/references/handoffs.md:markdown",
+       "start": 110,
+       "end": 127
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 36,
      "tokens": 153,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "orchestrate/skills/orchestrate/scripts/__tests__/agent-manager-slack-mirror.test.ts",
       "start": 514,
       "end": 549
      },
-     "secondFile": {
-      "name": "orchestrate/skills/orchestrate/scripts/__tests__/agent-manager-slack-mirror.test.ts",
-      "start": 576,
-      "end": 611
-     }
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/__tests__/agent-manager-slack-mirror.test.ts",
+       "start": 576,
+       "end": 611
+      }
+     ]
     }
    ],
    "health": {
@@ -2754,7 +6097,290 @@
       "lines": 93
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 59,
+    "lines": 14733,
+    "tokens": 81474,
+    "clones": 11,
+    "duplicatedLines": 121,
+    "duplicatedTokens": 794,
+    "percentage": 0.82,
+    "percentageTokens": 0.97,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 37,
+      "lines": 13001,
+      "clones": 11,
+      "duplicatedLines": 121,
+      "percentage": 0.93
+     },
+     {
+      "format": "bash",
+      "sources": 18,
+      "lines": 1101,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 3,
+      "lines": 457,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 12,
+      "tokens": 98,
+      "copies": 3,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 1125,
+       "end": 1136
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+        "start": 1223,
+        "end": 1234
+       },
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+        "start": 1241,
+        "end": 1252
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "async cancel(taskName: string): Promise<void> {",
+        "  const s = this.getTask(taskName);",
+        "  if (!s) throw new Error(`unknown task: ${taskName}`);",
+        "  if (!s.runId)",
+        "    throw new Error(`task ${taskName} has no runId (status=${s.status})`);",
+        "  if (!s.agentId)",
+        "    throw new Error(`task ${taskName} has no agentId (status=${s.status})`);",
+        "  const run = await Agent.getRun(s.runId, {",
+        "    runtime: \"cloud\",",
+        "    apiKey: this.apiKey,"
+       ],
+       "total": 12
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 13,
+      "tokens": 90,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/core/prompts.ts",
+       "start": 115,
+       "end": 127
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/core/prompts.ts",
+        "start": 208,
+        "end": 220
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  \"  - (none declared — ask before touching anything broad)\";",
+        "const forbid =",
+        "  (t.pathsForbidden ?? []).map(p => `  - ${p}`).join(\"\\n\") || \"  - (none)\";",
+        "const accept =",
+        "  (t.acceptance ?? []).map(a => `  - [ ] ${a}`).join(\"\\n\") ||",
+        "  \"  - (none declared)\";",
+        "const verifyPlan = renderVerifyPlan(",
+        "  t,",
+        "  \"Verification plan (how the planner / a verifier will check your work):\"",
+        ");"
+       ],
+       "total": 13
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 19,
+      "tokens": 89,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 1607,
+       "end": 1625
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/core/prompts.ts",
+        "start": 302,
+        "end": 320
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "}",
+        "",
+        "function normalizedDependsOn(t: PlanTask): string[] {",
+        "  const deps = [...(t.dependsOn ?? [])];",
+        "  switch (t.type) {",
+        "    case \"worker\":",
+        "    case \"subplanner\":",
+        "      return deps;",
+        "    case \"verifier\":",
+        "      if (!deps.includes(t.verifies)) {"
+       ],
+       "total": 19
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 15,
+      "tokens": 63,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/cli/forensics.ts",
+       "start": 40,
+       "end": 54
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/cli/forensics.ts",
+        "start": 100,
+        "end": 114
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 62,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 2086,
+       "end": 2095
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/core/andon.ts",
+        "start": 242,
+        "end": 251
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 61,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 2087,
+       "end": 2095
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/measurements.ts",
+        "start": 387,
+        "end": 395
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 6,
+      "tokens": 61,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/core/loop.ts",
+       "start": 240,
+       "end": 245
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/core/loop.ts",
+        "start": 262,
+        "end": 267
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 7,
+      "tokens": 59,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+       "start": 230,
+       "end": 236
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+        "start": 249,
+        "end": 255
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 57,
+      "copies": 2,
+      "first": {
+       "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+       "start": 222,
+       "end": 230
+      },
+      "others": [
+       {
+        "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+        "start": 240,
+        "end": 248
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 56,
+      "copies": 2,
+      "first": {
+       "name": "pstack/skills/poteto-mode/scripts/orch/orch.ts",
+       "start": 104,
+       "end": 112
+      },
+      "others": [
+       {
+        "name": "pstack/skills/poteto-mode/scripts/orch/store.ts",
+        "start": 960,
+        "end": 968
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:37:38.142Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "mvschwarz/openrig",
@@ -2765,11 +6391,11 @@
    "starsToday": 683,
    "defaultBranch": "main",
    "headSha": "0d794d0baac507fad9eed0131b55fb8e6f2af4e1",
-   "durationMs": 3494,
+   "durationMs": 1538,
    "total": {
     "sources": 3206,
-    "lines": 667148,
-    "tokens": 5099656,
+    "lines": 667104,
+    "tokens": 5099491,
     "clones": 5357,
     "duplicatedLines": 68261,
     "duplicatedTokens": 510887,
@@ -2820,10 +6446,10 @@
     {
      "format": "bash",
      "sources": 69,
-     "lines": 3766,
+     "lines": 3716,
      "clones": 10,
      "duplicatedLines": 417,
-     "percentage": 11.07
+     "percentage": 11.22
     },
     {
      "format": "text",
@@ -2863,151 +6489,236 @@
      "format": "javascript",
      "lines": 1417,
      "tokens": 11825,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
       "start": 3,
       "end": 1419
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
-      "start": 3,
-      "end": 1419
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
+       "start": 3,
+       "end": 1419
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import crypto from \"node:crypto\";",
+       "import fs from \"node:fs\";",
+       "import path from \"node:path\";",
+       "import { spawnSync } from \"node:child_process\";",
+       "",
+       "const SCHEMA = \"openrig-telemetry-state-migration/v1\";",
+       "const rig = process.env.OPENRIG_RIG_BIN || \"rig\";",
+       "const HELP = `Usage: migrate-telemetry-state-0.5.9.mjs [options]",
+       "",
+       "No phase flag runs the read-only plan."
+      ],
+      "total": 1417
      }
     },
     {
      "format": "markdown",
      "lines": 463,
      "tokens": 5706,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/process/context-engineering/SKILL.md:markdown",
       "start": 17,
       "end": 479
      },
-     "secondFile": {
-      "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
-      "start": 17,
-      "end": 479
+     "others": [
+      {
+       "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
+       "start": 17,
+       "end": 479
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Traditional Context Engineering — 2024–2025 Snapshot",
+       "",
+       "## Status: provisional historical research snapshot",
+       "",
+       "This skill is a provisional historical research snapshot of context-engineering practice as",
+       "published in 2024–2025. It is NOT normative. Do not apply it prescriptively to current frontier",
+       "models without re-verification. On any conflict, OpenRig current skills, explicit user rulings,",
+       "and directly measured OpenRig practice PREVAIL over this document. Treat these areas as",
+       "particularly suspect pending re-verification: compaction/summarization guidance, minimal-upfront",
+       "versus broad orientation, just-in-time lookup assumptions, fixed context ceilings, and"
+      ],
+      "total": 463
      }
     },
     {
      "format": "markdown",
      "lines": 543,
      "tokens": 5694,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-software-factory/references/worked-example.md:markdown",
       "start": 1,
       "end": 543
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
-      "start": 1,
-      "end": 543
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
+       "start": 1,
+       "end": 543
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Worked example: reviewed CSV validation",
+       "",
+       "Use this example to adapt reviewed work to a repository with CSV handling. Choose the simple team or queue loop first; the full Workflow files are optional. Ch…",
+       "",
+       "This is a concrete CSV-validation example for adaptation, not a requirement that an arbitrary repository become a CSV project or every outcome be split into tw…",
+       "",
+       "For the example only, repository root and work root are the same absolute directory, called `PROJECT_ROOT`. The selected project ID is `csv-tool`, mission is `…",
+       "",
+       "## Manual work and the queue loop",
+       ""
+      ],
+      "total": 543
      }
+    },
+    {
+     "format": "markdown",
+     "lines": 123,
+     "tokens": 1963,
+     "copies": 3,
+     "first": {
+      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
+      "start": 10,
+      "end": 132
+     },
+     "others": [
+      {
+       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
+       "start": 10,
+       "end": 132
+      },
+      {
+       "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
+       "start": 10,
+       "end": 132
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 345,
      "tokens": 3762,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-architect/SKILL.md:markdown",
       "start": 27,
       "end": 371
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
-      "start": 27,
-      "end": 371
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
+       "start": 27,
+       "end": 371
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 264,
      "tokens": 3472,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/pods/orchestration-team/SKILL.md:markdown",
       "start": 6,
       "end": 269
      },
-     "secondFile": {
-      "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
-      "start": 6,
-      "end": 269
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
+       "start": 6,
+       "end": 269
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 533,
      "tokens": 3133,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/cli/src/lib/scope/scope-audit.ts",
       "start": 1,
       "end": 533
      },
-     "secondFile": {
-      "name": "packages/daemon/src/domain/scope/scope-audit.ts",
-      "start": 1,
-      "end": 533
-     }
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+       "start": 1,
+       "end": 533
+      }
+     ]
     },
     {
      "format": "markdown",
-     "lines": 123,
-     "tokens": 1963,
-     "firstFile": {
-      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 132
+     "lines": 125,
+     "tokens": 1333,
+     "copies": 3,
+     "first": {
+      "name": "packages/daemon/assets/plugins/openrig-core/skills/messaging-the-human/SKILL.md:markdown",
+      "start": 20,
+      "end": 144
      },
-     "secondFile": {
-      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 132
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 123,
-     "tokens": 1963,
-     "firstFile": {
-      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 132
-     },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 132
-     }
+     "others": [
+      {
+       "name": "packages/daemon/specs/agents/shared/skills/core/messaging-the-human/SKILL.md:markdown",
+       "start": 20,
+       "end": 144
+      },
+      {
+       "name": "skills/_canonical/core/messaging-the-human/SKILL.md:markdown",
+       "start": 20,
+       "end": 144
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 149,
      "tokens": 1857,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-software-factory/SKILL.md:markdown",
       "start": 21,
       "end": 169
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-software-factory/SKILL.md:markdown",
-      "start": 21,
-      "end": 169
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-software-factory/SKILL.md:markdown",
+       "start": 21,
+       "end": 169
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 214,
      "tokens": 1840,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/process/dogfood/SKILL.md:markdown",
       "start": 12,
       "end": 225
      },
-     "secondFile": {
-      "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
-      "start": 12,
-      "end": 225
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
+       "start": 12,
+       "end": 225
+      }
+     ]
     }
    ],
    "health": {
@@ -3224,7 +6935,378 @@
       "lines": 557
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1104,
+    "lines": 263360,
+    "tokens": 1632444,
+    "clones": 762,
+    "duplicatedLines": 11593,
+    "duplicatedTokens": 70259,
+    "percentage": 4.4,
+    "percentageTokens": 4.3,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 856,
+      "lines": 214891,
+      "clones": 708,
+      "duplicatedLines": 10947,
+      "percentage": 5.09
+     },
+     {
+      "format": "tsx",
+      "sources": 178,
+      "lines": 36651,
+      "clones": 39,
+      "duplicatedLines": 445,
+      "percentage": 1.21
+     },
+     {
+      "format": "javascript",
+      "sources": 47,
+      "lines": 8739,
+      "clones": 14,
+      "duplicatedLines": 195,
+      "percentage": 2.23
+     },
+     {
+      "format": "python",
+      "sources": 2,
+      "lines": 888,
+      "clones": 1,
+      "duplicatedLines": 6,
+      "percentage": 0.68
+     },
+     {
+      "format": "bash",
+      "sources": 20,
+      "lines": 2017,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 533,
+      "tokens": 3133,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/scope/scope-audit.ts",
+       "start": 1,
+       "end": 533
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+        "start": 1,
+        "end": 533
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "import * as YAML from \"yaml\";",
+        "import { isMissionDotId, isSliceDotId } from \"./dot-id.js\";",
+        "import { isScaffoldPlaceholderText, hasAuthoredNumberedItem, isPristineScaffoldSection } from \"./scaffold-placeholder.js\";",
+        "",
+        "export type RailStatus = \"present\" | \"missing\" | \"malformed\" | \"readme-only\";",
+        "export type FindingSeverity = \"high\" | \"medium\" | \"low\" | \"info\";",
+        "export type FindingKind =",
+        "  | \"missing_progress\"",
+        "  | \"registration_ghost\"",
+        "  | \"missing_id\""
+       ],
+       "total": 533
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 230,
+      "tokens": 1280,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/host-registry.ts",
+       "start": 62,
+       "end": 291
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/hosts/hosts-registry-reader.ts",
+        "start": 21,
+        "end": 229
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export interface SshHostEntry {",
+        "  id: string;",
+        "  /**",
+        "   * The observed, immutable self-id of the host this entry points at — the JOIN KEY.",
+        "   *",
+        "   * `id` is MY label for that machine; `hostId` is what that machine calls itself and stamps into",
+        "   * every envelope it sends. Optional because every entry that exists today predates the field:",
+        "   * absent means \"never learned\", which resolves exactly as it does now. Nothing populates this",
+        "   * automatically in this slice.",
+        "   */"
+       ],
+       "total": 230
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 11,
+      "tokens": 84,
+      "copies": 12,
+      "first": {
+       "name": "packages/cli/src/commands/attach.ts",
+       "start": 43,
+       "end": 53
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/commands/bind.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/bootstrap.ts",
+        "start": 27,
+        "end": 37
+       },
+       {
+        "name": "packages/cli/src/commands/discover.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/launch.ts",
+        "start": 49,
+        "end": 59
+       },
+       {
+        "name": "packages/cli/src/commands/package.ts",
+        "start": 8,
+        "end": 19
+       },
+       {
+        "name": "packages/cli/src/commands/release.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/remove.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/requirements.ts",
+        "start": 8,
+        "end": 18
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "const cmd = new Command(\"attach\").description(\"Attach the current shell or agent into a rig node\");",
+        "const getDeps = () => depsOverride ?? { lifecycleDeps: realDeps(), clientFactory: (url: string) => new DaemonClient(url) };",
+        "",
+        "async function getClient(deps: StatusDeps): Promise<DaemonClient | null> {",
+        "  const status = await getDaemonStatus(deps.lifecycleDeps);",
+        "  if (!daemonStatusGuard(status)) return null;",
+        "  return deps.clientFactory(getDaemonUrl(status));",
+        "}",
+        "",
+        "cmd"
+       ],
+       "total": 11
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 111,
+      "tokens": 813,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/permission-policy/policy-spec.ts",
+       "start": 9,
+       "end": 119
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/permission-policy/policy-spec.ts",
+        "start": 9,
+        "end": 119
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 156,
+      "tokens": 813,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/scope/dot-id.ts",
+       "start": 18,
+       "end": 173
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/scope/dot-id.ts",
+        "start": 18,
+        "end": 173
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 215,
+      "tokens": 793,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/permission-policy/policy-ref.ts",
+       "start": 17,
+       "end": 231
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/permission-policy/policy-ref.ts",
+        "start": 17,
+        "end": 231
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 62,
+      "tokens": 353,
+      "copies": 3,
+      "first": {
+       "name": "packages/cli/src/session-name.ts",
+       "start": 33,
+       "end": 94
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/session-name.ts",
+        "start": 138,
+        "end": 199
+       },
+       {
+        "name": "packages/ui/src/lib/session-name.ts",
+        "start": 33,
+        "end": 94
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 75,
+      "tokens": 507,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/commands/queue.ts",
+       "start": 834,
+       "end": 908
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/commands/queue.ts",
+        "start": 929,
+        "end": 1001
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 77,
+      "tokens": 505,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/config-store.ts",
+       "start": 772,
+       "end": 848
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/user-settings/settings-store.ts",
+        "start": 683,
+        "end": 760
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 10,
+      "first": {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 74,
+       "end": 83
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 99,
+        "end": 108
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 114,
+        "end": 123
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 129,
+        "end": 138
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 163,
+        "end": 172
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 221,
+        "end": 230
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 261,
+        "end": 270
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 295,
+        "end": 304
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 329,
+        "end": 338
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 0,
+     "sample": [
+      "packages/daemon/src/domain/scope/attestation-lineage.generated.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T06:37:53.234Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "Effect-TS/effect",
@@ -3235,7 +7317,7 @@
    "starsToday": 80,
    "defaultBranch": "main",
    "headSha": "480bba2dfebba5b0e58695a9837895dfb65895ee",
-   "durationMs": 3803,
+   "durationMs": 1758,
    "total": {
     "sources": 2063,
     "lines": 856906,
@@ -3331,153 +7413,466 @@
    "topClones": [
     {
      "format": "markdown",
+     "lines": 9,
+     "tokens": 6137,
+     "copies": 16,
+     "first": {
+      "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+      "start": 124,
+      "end": 132
+     },
+     "others": [
+      {
+       "name": "packages/atom/solid/CHANGELOG.md:markdown",
+       "start": 113,
+       "end": 121
+      },
+      {
+       "name": "packages/atom/vue/CHANGELOG.md:markdown",
+       "start": 113,
+       "end": 121
+      },
+      {
+       "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+       "start": 125,
+       "end": 133
+      },
+      {
+       "name": "packages/platform/browser/CHANGELOG.md:markdown",
+       "start": 139,
+       "end": 147
+      },
+      {
+       "name": "packages/sql/d1/CHANGELOG.md:markdown",
+       "start": 120,
+       "end": 128
+      },
+      {
+       "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+       "start": 119,
+       "end": 127
+      },
+      {
+       "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+       "start": 115,
+       "end": 123
+      },
+      {
+       "name": "packages/sql/pg/CHANGELOG.md:markdown",
+       "start": 182,
+       "end": 190
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "- [#7805](https://github.com/Effect-TS/effect/pull/7805) [`0b93584`](https://github.com/Effect-TS/effect/commit/0b935848082dd178db8278bff52a2cd07e5bf69a) Thank…",
+       "- Updated dependencies [[`49e3901`](https://github.com/Effect-TS/effect/commit/49e39010ff84acbde32c50d559a2f76426cf830e), [`b945ded`](https://github.com/Effect…",
+       "  - effect@4.0.0-rc.113",
+       "",
+       "## 4.0.0-rc.112",
+       "",
+       "### Patch Changes",
+       "",
+       "- [#7437](https://github.com/Effect-TS/effect/pull/7437) [`44675cb`](https://github.com/Effect-TS/effect/commit/44675cbce3dabfb85c68a3703b5de525768336fb) Thank…"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "- [#7533](https://github.com/Effect-TS/effect/pull/7533) [`7e24e3a`](https://github.com/Effect-TS/effect/commit/7e24e3a5ef62fd46f8fbee814c7da8f94d834c75) Thank…",
+       "- Updated dependencies [[`49e3901`](https://github.com/Effect-TS/effect/commit/49e39010ff84acbde32c50d559a2f76426cf830e), [`b945ded`](https://github.com/Effect…",
+       "  - effect@4.0.0-rc.113",
+       "",
+       "## 4.0.0-rc.112",
+       "",
+       "### Patch Changes",
+       "",
+       "- Updated dependencies [[`20cb4f2`](https://github.com/Effect-TS/effect/commit/20cb4f260e45d37fa417c292c57be015314efe16), [`44675cb`](https://github.com/Effect…"
+      ],
+      "total": 9
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 476,
+     "tokens": 12862,
+     "copies": 6,
+     "first": {
+      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+      "start": 455,
+      "end": 930
+     },
+     "others": [
+      {
+       "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+       "start": 466,
+       "end": 941
+      },
+      {
+       "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
+       "start": 461,
+       "end": 936
+      },
+      {
+       "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
+       "start": 457,
+       "end": 932
+      },
+      {
+       "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
+       "start": 453,
+       "end": 928
+      },
+      {
+       "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
+       "start": 461,
+       "end": 936
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "- Updated dependencies [[`ca2498e`](https://github.com/Effect-TS/effect-smol/commit/ca2498e702ac2d83fb7187707b7eb069bdb261a2), [`cd7d1fb`](https://github.com/E…",
+       "  - effect@4.0.0-beta.66",
+       "",
+       "## 4.0.0-beta.65",
+       "",
+       "### Patch Changes",
+       "",
+       "- [#2148](https://github.com/Effect-TS/effect-smol/pull/2148) [`6f11454`](https://github.com/Effect-TS/effect-smol/commit/6f11454a9b6c3bd00f6b35fd7af14a2f2d63a…",
+       "",
+       "  This covers PostgreSQL, PGlite, MySQL, MSSQL, and the shared SQLite classification used by the SQLite-family clients. `UniqueViolation.constraint` contains t…"
+      ],
+      "total": 476
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 76,
+     "tokens": 1962,
+     "copies": 24,
+     "first": {
+      "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     "others": [
+      {
+       "name": "packages/ai/openai-compat/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      },
+      {
+       "name": "packages/ai/openai/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      },
+      {
+       "name": "packages/ai/openrouter/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      },
+      {
+       "name": "packages/ai/typesafe/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      },
+      {
+       "name": "packages/atom/react/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      },
+      {
+       "name": "packages/atom/solid/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      },
+      {
+       "name": "packages/atom/vue/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      },
+      {
+       "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+       "start": 3,
+       "end": 78
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "## 4.0.0",
+       "",
+       "### Patch Changes",
+       "",
+       "- [#8633](https://github.com/Effect-TS/effect/pull/8633) [`2c552f2`](https://github.com/Effect-TS/effect/commit/2c552f220e09dd63d4a777db6cd20b9a13e732f4) Thank…",
+       "",
+       "  **Packaging and versioning**",
+       "",
+       "  - All Effect packages share one version number and are released together. Use the same version of `effect` and every `@effect/*` package.",
+       "  - `@effect/platform`, `@effect/rpc`, `@effect/cluster`, `@effect/cli`, `@effect/ai`, `@effect/sql`, `@effect/workflow`, `@effect/experimental` and similar pa…"
+      ],
+      "total": 76
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 157,
+     "tokens": 3735,
+     "copies": 10,
+     "first": {
+      "name": "packages/sql/d1/CHANGELOG.md:markdown",
+      "start": 310,
+      "end": 466
+     },
+     "others": [
+      {
+       "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+       "start": 306,
+       "end": 462
+      },
+      {
+       "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+       "start": 317,
+       "end": 473
+      },
+      {
+       "name": "packages/sql/mysql2/CHANGELOG.md:markdown",
+       "start": 307,
+       "end": 463
+      },
+      {
+       "name": "packages/sql/pg/CHANGELOG.md:markdown",
+       "start": 377,
+       "end": 533
+      },
+      {
+       "name": "packages/sql/pglite/CHANGELOG.md:markdown",
+       "start": 306,
+       "end": 462
+      },
+      {
+       "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
+       "start": 312,
+       "end": 468
+      },
+      {
+       "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
+       "start": 308,
+       "end": 464
+      },
+      {
+       "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
+       "start": 304,
+       "end": 460
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 43,
+     "tokens": 4442,
+     "copies": 6,
+     "first": {
+      "name": "packages/atom/react/CHANGELOG.md:markdown",
+      "start": 71,
+      "end": 113
+     },
+     "others": [
+      {
+       "name": "packages/atom/solid/CHANGELOG.md:markdown",
+       "start": 71,
+       "end": 113
+      },
+      {
+       "name": "packages/atom/vue/CHANGELOG.md:markdown",
+       "start": 71,
+       "end": 113
+      },
+      {
+       "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+       "start": 71,
+       "end": 113
+      },
+      {
+       "name": "packages/platform/browser/CHANGELOG.md:markdown",
+       "start": 71,
+       "end": 113
+      },
+      {
+       "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+       "start": 71,
+       "end": 113
+      }
+     ]
+    },
+    {
+     "format": "markdown",
      "lines": 487,
      "tokens": 20278,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/atom/solid/CHANGELOG.md:markdown",
       "start": 114,
       "end": 600
      },
-     "secondFile": {
-      "name": "packages/atom/vue/CHANGELOG.md:markdown",
-      "start": 114,
-      "end": 600
-     }
+     "others": [
+      {
+       "name": "packages/atom/vue/CHANGELOG.md:markdown",
+       "start": 114,
+       "end": 600
+      }
+     ]
     },
     {
      "format": "markdown",
-     "lines": 634,
-     "tokens": 16696,
-     "firstFile": {
-      "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
-      "start": 303,
-      "end": 936
+     "lines": 9,
+     "tokens": 2723,
+     "copies": 8,
+     "first": {
+      "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+      "start": 195,
+      "end": 203
      },
-     "secondFile": {
-      "name": "packages/sql/sqlite-do/CHANGELOG.md:markdown",
-      "start": 298,
-      "end": 931
-     }
+     "others": [
+      {
+       "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+       "start": 197,
+       "end": 205
+      },
+      {
+       "name": "packages/platform/browser/CHANGELOG.md:markdown",
+       "start": 206,
+       "end": 214
+      },
+      {
+       "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+       "start": 181,
+       "end": 189
+      },
+      {
+       "name": "packages/sql/pg/CHANGELOG.md:markdown",
+       "start": 253,
+       "end": 261
+      },
+      {
+       "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
+       "start": 188,
+       "end": 196
+      },
+      {
+       "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
+       "start": 182,
+       "end": 190
+      },
+      {
+       "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
+       "start": 186,
+       "end": 194
+      }
+     ]
     },
     {
      "format": "markdown",
-     "lines": 1040,
-     "tokens": 13681,
-     "firstFile": {
-      "name": "packages/sql/pg/CHANGELOG.md:markdown",
-      "start": 1006,
-      "end": 2045
+     "lines": 106,
+     "tokens": 3628,
+     "copies": 6,
+     "first": {
+      "name": "packages/ai/openrouter/CHANGELOG.md:markdown",
+      "start": 709,
+      "end": 814
      },
-     "secondFile": {
-      "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
-      "start": 927,
-      "end": 1966
-     }
+     "others": [
+      {
+       "name": "packages/atom/react/CHANGELOG.md:markdown",
+       "start": 668,
+       "end": 773
+      },
+      {
+       "name": "packages/atom/solid/CHANGELOG.md:markdown",
+       "start": 665,
+       "end": 770
+      },
+      {
+       "name": "packages/atom/vue/CHANGELOG.md:markdown",
+       "start": 663,
+       "end": 768
+      },
+      {
+       "name": "packages/sql/d1/CHANGELOG.md:markdown",
+       "start": 680,
+       "end": 785
+      },
+      {
+       "name": "packages/sql/pg/CHANGELOG.md:markdown",
+       "start": 759,
+       "end": 864
+      }
+     ]
     },
     {
      "format": "markdown",
-     "lines": 73,
-     "tokens": 12935,
-     "firstFile": {
+     "lines": 12,
+     "tokens": 2939,
+     "copies": 7,
+     "first": {
+      "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+      "start": 205,
+      "end": 216
+     },
+     "others": [
+      {
+       "name": "packages/atom/react/CHANGELOG.md:markdown",
+       "start": 186,
+       "end": 197
+      },
+      {
+       "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+       "start": 207,
+       "end": 218
+      },
+      {
+       "name": "packages/platform/browser/CHANGELOG.md:markdown",
+       "start": 224,
+       "end": 235
+      },
+      {
+       "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+       "start": 193,
+       "end": 204
+      },
+      {
+       "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
+       "start": 194,
+       "end": 205
+      },
+      {
+       "name": "packages/vitest/CHANGELOG.md:markdown",
+       "start": 326,
+       "end": 337
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 274,
+     "tokens": 8566,
+     "copies": 3,
+     "first": {
       "name": "packages/sql/d1/CHANGELOG.md:markdown",
-      "start": 118,
-      "end": 190
-     },
-     "secondFile": {
-      "name": "packages/sql/mysql2/CHANGELOG.md:markdown",
-      "start": 117,
-      "end": 189
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 476,
-     "tokens": 12862,
-     "firstFile": {
-      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-      "start": 455,
+      "start": 657,
       "end": 930
      },
-     "secondFile": {
-      "name": "packages/sql/mssql/CHANGELOG.md:markdown",
-      "start": 466,
-      "end": 941
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 476,
-     "tokens": 12862,
-     "firstFile": {
-      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-      "start": 455,
-      "end": 930
-     },
-     "secondFile": {
-      "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
-      "start": 461,
-      "end": 936
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 476,
-     "tokens": 12862,
-     "firstFile": {
-      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-      "start": 455,
-      "end": 930
-     },
-     "secondFile": {
-      "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
-      "start": 457,
-      "end": 932
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 476,
-     "tokens": 12862,
-     "firstFile": {
-      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-      "start": 455,
-      "end": 930
-     },
-     "secondFile": {
-      "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
-      "start": 453,
-      "end": 928
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 476,
-     "tokens": 12862,
-     "firstFile": {
-      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-      "start": 455,
-      "end": 930
-     },
-     "secondFile": {
-      "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
-      "start": 461,
-      "end": 936
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 414,
-     "tokens": 10612,
-     "firstFile": {
-      "name": "packages/atom/react/CHANGELOG.md:markdown",
-      "start": 190,
-      "end": 603
-     },
-     "secondFile": {
-      "name": "packages/atom/solid/CHANGELOG.md:markdown",
-      "start": 187,
-      "end": 600
-     }
+     "others": [
+      {
+       "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+       "start": 657,
+       "end": 930
+      },
+      {
+       "name": "packages/sql/mysql2/CHANGELOG.md:markdown",
+       "start": 660,
+       "end": 933
+      }
+     ]
     }
    ],
    "health": {
@@ -3691,7 +8086,683 @@
       "lines": 422
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 896,
+    "lines": 487272,
+    "tokens": 2077098,
+    "clones": 3291,
+    "duplicatedLines": 42653,
+    "duplicatedTokens": 267554,
+    "percentage": 8.75,
+    "percentageTokens": 12.88,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 882,
+      "lines": 485965,
+      "clones": 3286,
+      "duplicatedLines": 42589,
+      "percentage": 8.76
+     },
+     {
+      "format": "javascript",
+      "sources": 10,
+      "lines": 1079,
+      "clones": 4,
+      "duplicatedLines": 36,
+      "percentage": 3.34
+     },
+     {
+      "format": "bash",
+      "sources": 4,
+      "lines": 228,
+      "clones": 1,
+      "duplicatedLines": 28,
+      "percentage": 12.28
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 64,
+      "copies": 91,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9481,
+       "end": 9489
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9520,
+        "end": 9528
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9545,
+        "end": 9553
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9570,
+        "end": 9578
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9597,
+        "end": 9605
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9624,
+        "end": 9632
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9653,
+        "end": 9661
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9682,
+        "end": 9690
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9713,
+        "end": 9721
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E",
+        "      : never,",
+        "    [Eff] extends [never] ? never",
+        "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+        "      : never",
+        "  >,",
+        "  ...args: Args",
+        ") => A,",
+        "b: (_: A, ...args: Args) => B"
+       ],
+       "total": 9
+      },
+      "excerptSecond": {
+       "lines": [
+        "      : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E",
+        "      : never,",
+        "    [Eff] extends [never] ? never",
+        "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+        "      : never",
+        "  >,",
+        "  ...args: Args",
+        ") => A,",
+        "b: (_: A, ...args: Args) => B,"
+       ],
+       "total": 9
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 8,
+      "tokens": 64,
+      "copies": 86,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9522,
+       "end": 9529
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9572,
+        "end": 9579
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9599,
+        "end": 9606
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9626,
+        "end": 9633
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9655,
+        "end": 9662
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9684,
+        "end": 9691
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9715,
+        "end": 9722
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9746,
+        "end": 9753
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9779,
+        "end": 9786
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    [Eff] extends [never] ? never",
+        "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+        "      : never",
+        "  >,",
+        "  ...args: Args",
+        ") => A,",
+        "b: (_: A, ...args: Args) => B,",
+        "c: (_: B, ...args: Args) => C"
+       ],
+       "total": 8
+      },
+      "excerptSecond": {
+       "lines": [
+        "    [Eff] extends [never] ? never",
+        "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+        "      : never",
+        "  >,",
+        "  ...args: Args",
+        ") => A,",
+        "b: (_: A, ...args: Args) => B,",
+        "c: (_: B, ...args: Args) => C,"
+       ],
+       "total": 8
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 8,
+      "tokens": 64,
+      "copies": 81,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9573,
+       "end": 9580
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9627,
+        "end": 9634
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9656,
+        "end": 9663
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9685,
+        "end": 9692
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9716,
+        "end": 9723
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9747,
+        "end": 9754
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9780,
+        "end": 9787
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9813,
+        "end": 9820
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9848,
+        "end": 9855
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+        "      : never",
+        "  >,",
+        "  ...args: Args",
+        ") => A,",
+        "b: (_: A, ...args: Args) => B,",
+        "c: (_: B, ...args: Args) => C,",
+        "d: (_: C, ...args: Args) => D"
+       ],
+       "total": 8
+      },
+      "excerptSecond": {
+       "lines": [
+        "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+        "      : never",
+        "  >,",
+        "  ...args: Args",
+        ") => A,",
+        "b: (_: A, ...args: Args) => B,",
+        "c: (_: B, ...args: Args) => C,",
+        "d: (_: C, ...args: Args) => D,"
+       ],
+       "total": 8
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 6,
+      "tokens": 64,
+      "copies": 76,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9630,
+       "end": 9635
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9688,
+        "end": 9693
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9719,
+        "end": 9724
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9750,
+        "end": 9755
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9783,
+        "end": 9788
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9816,
+        "end": 9821
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9851,
+        "end": 9856
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9886,
+        "end": 9891
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9923,
+        "end": 9928
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 15,
+      "tokens": 127,
+      "copies": 20,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11075,
+       "end": 11089
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11124,
+        "end": 11138
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11199,
+        "end": 11213
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11281,
+        "end": 11295
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11369,
+        "end": 11383
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11463,
+        "end": 11477
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11563,
+        "end": 11577
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11669,
+        "end": 11683
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11781,
+        "end": 11795
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 14,
+      "tokens": 118,
+      "copies": 20,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11045,
+       "end": 11058
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11092,
+        "end": 11105
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11149,
+        "end": 11162
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11226,
+        "end": 11239
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11310,
+        "end": 11323
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11400,
+        "end": 11413
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11496,
+        "end": 11509
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11598,
+        "end": 11611
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11706,
+        "end": 11719
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 14,
+      "tokens": 118,
+      "copies": 20,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11060,
+       "end": 11073
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11108,
+        "end": 11121
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11174,
+        "end": 11187
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11253,
+        "end": 11266
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11339,
+        "end": 11352
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11431,
+        "end": 11444
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11529,
+        "end": 11542
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11633,
+        "end": 11646
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 11743,
+        "end": 11756
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 14,
+      "tokens": 105,
+      "copies": 20,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9460,
+       "end": 9473
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9491,
+        "end": 9504
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9539,
+        "end": 9552
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9591,
+        "end": 9604
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9647,
+        "end": 9660
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9707,
+        "end": 9720
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9771,
+        "end": 9784
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9839,
+        "end": 9852
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9911,
+        "end": 9924
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 14,
+      "tokens": 105,
+      "copies": 19,
+      "first": {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9445,
+       "end": 9458
+      },
+      "others": [
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9475,
+        "end": 9488
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9514,
+        "end": 9527
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9618,
+        "end": 9631
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9676,
+        "end": 9689
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9738,
+        "end": 9751
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9804,
+        "end": 9817
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9874,
+        "end": 9887
+       },
+       {
+        "name": "packages/effect/src/Effect.ts",
+        "start": 9948,
+        "end": 9961
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 22,
+      "tokens": 77,
+      "copies": 17,
+      "first": {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 9904,
+       "end": 9925
+      },
+      "others": [
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 9934,
+        "end": 9955
+       },
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 9964,
+        "end": 9985
+       },
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 10070,
+        "end": 10091
+       },
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 10100,
+        "end": 10121
+       },
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 10202,
+        "end": 10223
+       },
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 10232,
+        "end": 10253
+       },
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 10446,
+        "end": 10467
+       },
+       {
+        "name": "packages/ai/anthropic/src/Generated.ts",
+        "start": 10476,
+        "end": 10497
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 42,
+     "minified": 0,
+     "sample": [
+      "packages/ai/anthropic/src/index.ts",
+      "packages/ai/openai-compat/src/index.ts",
+      "packages/ai/openai/src/index.ts",
+      "packages/ai/openrouter/src/index.ts",
+      "packages/effect/src/ai/index.ts",
+      "packages/effect/src/cli/index.ts",
+      "packages/effect/src/cluster/index.ts",
+      "packages/effect/src/devtools/index.ts",
+      "packages/effect/src/encoding/index.ts",
+      "packages/effect/src/eventlog/index.ts",
+      "packages/effect/src/http-api/index.ts",
+      "packages/effect/src/http/index.ts",
+      "packages/effect/src/net/index.ts",
+      "packages/effect/src/observability/index.ts",
+      "packages/effect/src/persistence/index.ts",
+      "packages/effect/src/process/index.ts",
+      "packages/effect/src/reactivity/index.ts",
+      "packages/effect/src/rpc/index.ts",
+      "packages/effect/src/schema/index.ts",
+      "packages/effect/src/socket/index.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:58:08.394Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "pablostanley/yoinks",
@@ -3702,16 +8773,16 @@
    "starsToday": 623,
    "defaultBranch": "main",
    "headSha": "6f03720813c22f907d3fb9ba98567f2169446b82",
-   "durationMs": 682,
+   "durationMs": 20,
    "total": {
     "sources": 35,
-    "lines": 3076,
-    "tokens": 19333,
+    "lines": 3032,
+    "tokens": 19168,
     "clones": 2,
     "duplicatedLines": 13,
     "duplicatedTokens": 118,
-    "percentage": 0.42,
-    "percentageTokens": 0.61
+    "percentage": 0.43,
+    "percentageTokens": 0.62
    },
    "formats": [
     {
@@ -3741,7 +8812,7 @@
     {
      "format": "bash",
      "sources": 10,
-     "lines": 704,
+     "lines": 654,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -3749,7 +8820,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -3776,30 +8847,82 @@
      "format": "markup",
      "lines": 6,
      "tokens": 64,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "assets/logo-dark.svg",
       "start": 5,
       "end": 10
      },
-     "secondFile": {
-      "name": "assets/logo-light.svg",
-      "start": 5,
-      "end": 10
+     "others": [
+      {
+       "name": "assets/logo-light.svg",
+       "start": 5,
+       "end": 10
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "<rect x=\"2.5\" y=\"2.5\" width=\"2.5\" height=\"2.5\" fill=\"#e6edf3\"/>",
+       "</pattern>",
+       "</defs>",
+       "<rect x=\"0\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+       "<rect x=\"20\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+       "<rect x=\"40\" y=\"0\" width=\"10\" height=\"20\" fill=\"#e6edf3\"/>"
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "<rect x=\"2.5\" y=\"2.5\" width=\"2.5\" height=\"2.5\" fill=\"#1f2328\"/>",
+       "</pattern>",
+       "</defs>",
+       "<rect x=\"0\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+       "<rect x=\"20\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+       "<rect x=\"40\" y=\"0\" width=\"10\" height=\"20\" fill=\"#1f2328\"/>"
+      ],
+      "total": 6
      }
     },
     {
      "format": "tsx",
      "lines": 7,
      "tokens": 54,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "src/app.tsx",
       "start": 424,
       "end": 430
      },
-     "secondFile": {
-      "name": "src/app.tsx",
-      "start": 452,
-      "end": 458
+     "others": [
+      {
+       "name": "src/app.tsx",
+       "start": 452,
+       "end": 458
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "<ProgressBar percent={1} />",
+       "<Gap />",
+       "<Text>",
+       "  <Text color={theme.primary}>",
+       "    <Spinner type=\"dots\" />",
+       "  </Text>",
+       "  <Text color={theme.gray} dimColor={theme.dimSecondary}> processing…</Text>"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "<ProgressBar percent={0} />",
+       "<Gap />",
+       "<Text>",
+       "  <Text color={theme.primary}>",
+       "    <Spinner type=\"dots\" />",
+       "  </Text>",
+       "  <Text color={theme.gray} dimColor={theme.dimSecondary}>"
+      ],
+      "total": 7
      }
     }
    ],
@@ -4016,7 +9139,102 @@
       "lines": 27
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 28,
+    "lines": 2662,
+    "tokens": 15735,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "duplicatedTokens": 54,
+    "percentage": 0.26,
+    "percentageTokens": 0.34,
+    "formats": [
+     {
+      "format": "tsx",
+      "sources": 9,
+      "lines": 1115,
+      "clones": 1,
+      "duplicatedLines": 7,
+      "percentage": 0.63
+     },
+     {
+      "format": "typescript",
+      "sources": 9,
+      "lines": 729,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 7,
+      "tokens": 54,
+      "copies": 2,
+      "first": {
+       "name": "src/app.tsx",
+       "start": 424,
+       "end": 430
+      },
+      "others": [
+       {
+        "name": "src/app.tsx",
+        "start": 452,
+        "end": 458
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "<ProgressBar percent={1} />",
+        "<Gap />",
+        "<Text>",
+        "  <Text color={theme.primary}>",
+        "    <Spinner type=\"dots\" />",
+        "  </Text>",
+        "  <Text color={theme.gray} dimColor={theme.dimSecondary}> processing…</Text>"
+       ],
+       "total": 7
+      },
+      "excerptSecond": {
+       "lines": [
+        "<ProgressBar percent={0} />",
+        "<Gap />",
+        "<Text>",
+        "  <Text color={theme.primary}>",
+        "    <Spinner type=\"dots\" />",
+        "  </Text>",
+        "  <Text color={theme.gray} dimColor={theme.dimSecondary}>"
+       ],
+       "total": 7
+      }
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:37:54.605Z",
+   "jscpdVersion": "5.4.0"
   }
  ]
 }

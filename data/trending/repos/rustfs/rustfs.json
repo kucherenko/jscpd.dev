@@ -9,10 +9,12 @@
    "starsToday": 267,
    "headSha": "ddc5f97a0432fb72e1aa335ccddab22ed48365a7",
    "sources": 2681,
-   "lines": 1657657,
+   "lines": 1638733,
    "clones": 13784,
-   "duplicatedLines": 154477,
-   "percentage": 9.32,
+   "duplicatedLines": 167938,
+   "percentage": 10.25,
+   "codePercentage": 8.78,
+   "codeSources": 1833,
    "healthScore": 40,
    "healthGrade": "D"
   }
@@ -28,249 +30,683 @@
   "starsToday": 267,
   "defaultBranch": "main",
   "headSha": "ddc5f97a0432fb72e1aa335ccddab22ed48365a7",
-  "durationMs": 6851,
+  "durationMs": 89762,
   "total": {
    "sources": 2681,
-   "lines": 1657657,
-   "tokens": 11107373,
+   "lines": 1638733,
+   "tokens": 11107208,
    "clones": 13784,
-   "duplicatedLines": 154477,
+   "duplicatedLines": 167938,
    "duplicatedTokens": 1117927,
-   "percentage": 9.32,
+   "percentage": 10.25,
    "percentageTokens": 10.06
   },
   "formats": [
    {
     "format": "rust",
     "sources": 1834,
-    "lines": 1463282,
+    "lines": 1461141,
     "clones": 12320,
-    "duplicatedLines": 124448,
-    "percentage": 8.5
+    "duplicatedLines": 136571,
+    "percentage": 9.35
    },
    {
     "format": "json",
     "sources": 75,
-    "lines": 30968,
+    "lines": 30441,
     "clones": 739,
-    "duplicatedLines": 19752,
-    "percentage": 63.78
+    "duplicatedLines": 20491,
+    "percentage": 67.31
    },
    {
     "format": "yaml",
     "sources": 136,
-    "lines": 24127,
+    "lines": 23804,
     "clones": 392,
-    "duplicatedLines": 5798,
-    "percentage": 24.03
+    "duplicatedLines": 6190,
+    "percentage": 26
    },
    {
     "format": "bash",
     "sources": 226,
-    "lines": 62979,
+    "lines": 54156,
     "clones": 198,
-    "duplicatedLines": 2900,
-    "percentage": 4.6
+    "duplicatedLines": 3039,
+    "percentage": 5.61
    },
    {
     "format": "python",
     "sources": 63,
     "lines": 31939,
     "clones": 84,
-    "duplicatedLines": 1029,
-    "percentage": 3.22
+    "duplicatedLines": 1113,
+    "percentage": 3.48
    },
    {
     "format": "markdown",
     "sources": 234,
     "lines": 27072,
     "clones": 46,
-    "duplicatedLines": 452,
-    "percentage": 1.67
+    "duplicatedLines": 498,
+    "percentage": 1.84
    },
    {
     "format": "toml",
     "sources": 58,
-    "lines": 6264,
+    "lines": 5804,
     "clones": 1,
-    "duplicatedLines": 8,
-    "percentage": 0.13
+    "duplicatedLines": 9,
+    "percentage": 0.16
    },
    {
     "format": "text",
     "sources": 26,
-    "lines": 5291,
+    "lines": 480,
     "clones": 1,
-    "duplicatedLines": 64,
-    "percentage": 1.21
+    "duplicatedLines": 3,
+    "percentage": 0.63
    },
    {
     "format": "smarty",
     "sources": 1,
     "lines": 387,
     "clones": 1,
-    "duplicatedLines": 7,
-    "percentage": 1.81
+    "duplicatedLines": 8,
+    "percentage": 2.07
    },
    {
-    "format": "powershell",
-    "sources": 3,
-    "lines": 364,
+    "format": "diff",
+    "sources": 4,
+    "lines": 304,
     "clones": 1,
-    "duplicatedLines": 9,
-    "percentage": 2.47
+    "duplicatedLines": 11,
+    "percentage": 3.62
    }
   ],
   "topClones": [
    {
     "format": "rust",
-    "lines": 33,
-    "tokens": 1671,
-    "firstFile": {
-     "name": "crates/data-usage/src/data_usage.rs",
-     "start": 2793,
-     "end": 2825
+    "lines": 10,
+    "tokens": 77,
+    "first": {
+     "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+     "start": 3916,
+     "end": 3925
     },
-    "secondFile": {
-     "name": "crates/scanner/src/data_usage_define/tests.rs",
-     "start": 1487,
-     "end": 1518
-    }
+    "others": [
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 3944,
+      "end": 3953
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 3972,
+      "end": 3981
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4000,
+      "end": 4009
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4028,
+      "end": 4037
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4056,
+      "end": 4065
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4084,
+      "end": 4093
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4112,
+      "end": 4121
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4140,
+      "end": 4149
+     }
+    ],
+    "copies": 102,
+    "excerpt": {
+     "lines": [
+      "        let method = PingSvc(inner);",
+      "        let codec = tonic_prost::ProstCodec::default();",
+      "        let mut grpc = tonic::server::Grpc::new(codec)",
+      "            .apply_compression_config(accept_compression_encodings, send_compression_encodings)",
+      "            .apply_max_message_size_config(max_decoding_message_size, max_encoding_message_size);",
+      "        let res = grpc.unary(method, req).await;",
+      "        Ok(res)",
+      "    };",
+      "    Box::pin(fut)",
+      "}"
+     ],
+     "total": 10
+    },
+    "kind": "generated"
    },
    {
     "format": "rust",
-    "lines": 36,
-    "tokens": 1537,
-    "firstFile": {
-     "name": "rustfs/src/admin/handlers/site_replication.rs",
-     "start": 15469,
-     "end": 15504
+    "lines": 11,
+    "tokens": 67,
+    "first": {
+     "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+     "start": 3906,
+     "end": 3916
     },
-    "secondFile": {
-     "name": "rustfs/src/admin/handlers/site_replication.rs",
-     "start": 15571,
-     "end": 15606
-    }
+    "others": [
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 3934,
+      "end": 3944
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 3962,
+      "end": 3972
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 3990,
+      "end": 4000
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4018,
+      "end": 4028
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4046,
+      "end": 4056
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4074,
+      "end": 4084
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4102,
+      "end": 4112
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 4130,
+      "end": 4140
+     }
+    ],
+    "copies": 105,
+    "excerpt": {
+     "lines": [
+      "        let fut = async move { <T as NodeService>::ping(&inner, request).await };",
+      "        Box::pin(fut)",
+      "    }",
+      "}",
+      "let accept_compression_encodings = self.accept_compression_encodings;",
+      "let send_compression_encodings = self.send_compression_encodings;",
+      "let max_decoding_message_size = self.max_decoding_message_size;",
+      "let max_encoding_message_size = self.max_encoding_message_size;",
+      "let inner = self.inner.clone();",
+      "let fut = async move {"
+     ],
+     "total": 11
+    },
+    "kind": "generated"
    },
    {
     "format": "rust",
-    "lines": 29,
-    "tokens": 1181,
-    "firstFile": {
-     "name": "rustfs/src/admin/handlers/site_replication.rs",
-     "start": 15016,
-     "end": 15044
+    "lines": 7,
+    "tokens": 73,
+    "first": {
+     "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+     "start": 1902,
+     "end": 1908
     },
-    "secondFile": {
-     "name": "rustfs/src/admin/handlers/site_replication.rs",
-     "start": 15079,
-     "end": 15107
-    }
+    "others": [
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 1917,
+      "end": 1923
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 1947,
+      "end": 1953
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 1962,
+      "end": 1968
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 1977,
+      "end": 1983
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 1992,
+      "end": 1998
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 2007,
+      "end": 2013
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 2022,
+      "end": 2028
+     },
+     {
+      "name": "crates/protos/src/generated/proto_gen/node_service.rs",
+      "start": 2037,
+      "end": 2043
+     }
+    ],
+    "copies": 90,
+    "excerpt": {
+     "lines": [
+      ") -> std::result::Result<tonic::Response<super::PingResponse>, tonic::Status> {",
+      "    self.inner",
+      "        .ready()",
+      "        .await",
+      "        .map_err(|e| tonic::Status::unknown(format!(\"Service was not ready: {}\", e.into())))?;",
+      "    let codec = tonic_prost::ProstCodec::default();",
+      "    let path = http::uri::PathAndQuery::from_static(\"/node_service.NodeService/Ping\");"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      ") -> std::result::Result<tonic::Response<super::HealBucketResponse>, tonic::Status> {",
+      "    self.inner",
+      "        .ready()",
+      "        .await",
+      "        .map_err(|e| tonic::Status::unknown(format!(\"Service was not ready: {}\", e.into())))?;",
+      "    let codec = tonic_prost::ProstCodec::default();",
+      "    let path = http::uri::PathAndQuery::from_static(\"/node_service.NodeService/HealBucket\");"
+     ],
+     "total": 7
+    },
+    "kind": "generated"
+   },
+   {
+    "format": "json",
+    "lines": 55,
+    "tokens": 173,
+    "first": {
+     "name": ".docker/observability/grafana/dashboards/rustfs.json",
+     "start": 796,
+     "end": 850
+    },
+    "others": [
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 1287,
+      "end": 1341
+     },
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 1476,
+      "end": 1530
+     },
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 1757,
+      "end": 1811
+     },
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 2311,
+      "end": 2365
+     },
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 2590,
+      "end": 2644
+     },
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 2960,
+      "end": 3014
+     },
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 3091,
+      "end": 3145
+     },
+     {
+      "name": ".docker/observability/grafana/dashboards/rustfs.json",
+      "start": 3211,
+      "end": 3265
+     }
+    ],
+    "copies": 38,
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 108,
     "tokens": 969,
-    "firstFile": {
+    "first": {
      "name": ".github/workflows/connect-performance-drive-acceptance.yml",
      "start": 51,
      "end": 158
     },
-    "secondFile": {
-     "name": ".github/workflows/connect-performance-network-acceptance.yml",
-     "start": 51,
-     "end": 158
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 108,
-    "tokens": 969,
-    "firstFile": {
-     "name": ".github/workflows/connect-performance-drive-acceptance.yml",
-     "start": 51,
-     "end": 158
-    },
-    "secondFile": {
-     "name": ".github/workflows/connect-profile-cpu-acceptance.yml",
-     "start": 51,
-     "end": 158
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 108,
-    "tokens": 969,
-    "firstFile": {
-     "name": ".github/workflows/connect-performance-drive-acceptance.yml",
-     "start": 51,
-     "end": 158
-    },
-    "secondFile": {
-     "name": ".github/workflows/connect-profile-threads-acceptance.yml",
-     "start": 51,
-     "end": 158
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 108,
-    "tokens": 969,
-    "firstFile": {
-     "name": ".github/workflows/connect-performance-drive-acceptance.yml",
-     "start": 51,
-     "end": 158
-    },
-    "secondFile": {
-     "name": ".github/workflows/connect-top-api-acceptance.yml",
-     "start": 51,
-     "end": 158
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 108,
-    "tokens": 969,
-    "firstFile": {
-     "name": ".github/workflows/connect-performance-drive-acceptance.yml",
-     "start": 51,
-     "end": 158
-    },
-    "secondFile": {
-     "name": ".github/workflows/connect-top-locks-acceptance.yml",
-     "start": 51,
-     "end": 158
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 108,
-    "tokens": 969,
-    "firstFile": {
-     "name": ".github/workflows/connect-performance-drive-acceptance.yml",
-     "start": 51,
-     "end": 158
-    },
-    "secondFile": {
-     "name": ".github/workflows/connect-top-rpc-acceptance.yml",
-     "start": 51,
-     "end": 158
-    }
+    "others": [
+     {
+      "name": ".github/workflows/connect-performance-network-acceptance.yml",
+      "start": 51,
+      "end": 158
+     },
+     {
+      "name": ".github/workflows/connect-profile-cpu-acceptance.yml",
+      "start": 51,
+      "end": 158
+     },
+     {
+      "name": ".github/workflows/connect-profile-threads-acceptance.yml",
+      "start": 51,
+      "end": 158
+     },
+     {
+      "name": ".github/workflows/connect-top-api-acceptance.yml",
+      "start": 51,
+      "end": 158
+     },
+     {
+      "name": ".github/workflows/connect-top-locks-acceptance.yml",
+      "start": 51,
+      "end": 158
+     },
+     {
+      "name": ".github/workflows/connect-top-rpc-acceptance.yml",
+      "start": 51,
+      "end": 158
+     }
+    ],
+    "copies": 7,
+    "kind": "data"
    },
    {
     "format": "rust",
-    "lines": 178,
-    "tokens": 957,
-    "firstFile": {
-     "name": "crates/filemeta/src/replication.rs",
-     "start": 265,
-     "end": 442
+    "lines": 7,
+    "tokens": 58,
+    "first": {
+     "name": "crates/e2e_test/src/group_delete_test.rs",
+     "start": 26,
+     "end": 32
     },
-    "secondFile": {
-     "name": "crates/replication/src/filemeta.rs",
-     "start": 260,
-     "end": 437
-    }
+    "others": [
+     {
+      "name": "crates/e2e_test/src/group_delete_test.rs",
+      "start": 189,
+      "end": 195
+     },
+     {
+      "name": "crates/e2e_test/src/group_delete_test.rs",
+      "start": 272,
+      "end": 278
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1005,
+      "end": 1011
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1078,
+      "end": 1084
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1111,
+      "end": 1117
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1174,
+      "end": 1180
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1246,
+      "end": 1252
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1291,
+      "end": 1297
+     }
+    ],
+    "copies": 69,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 64,
+    "first": {
+     "name": "rustfs/src/table_catalog/tests.rs",
+     "start": 3944,
+     "end": 3950
+    },
+    "others": [
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 6303,
+      "end": 6309
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 6343,
+      "end": 6349
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 6474,
+      "end": 6480
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 6816,
+      "end": 6822
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 6876,
+      "end": 6882
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 6950,
+      "end": 6956
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 6987,
+      "end": 6993
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 7913,
+      "end": 7919
+     }
+    ],
+    "copies": 53,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 51,
+    "first": {
+     "name": "crates/e2e_test/src/multipart_auth_test.rs",
+     "start": 1005,
+     "end": 1011
+    },
+    "others": [
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1078,
+      "end": 1084
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1111,
+      "end": 1117
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1174,
+      "end": 1180
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1246,
+      "end": 1252
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1291,
+      "end": 1297
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1539,
+      "end": 1545
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1653,
+      "end": 1659
+     },
+     {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1702,
+      "end": 1709
+     }
+    ],
+    "copies": 64,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 65,
+    "first": {
+     "name": "rustfs/src/table_catalog/tests.rs",
+     "start": 3888,
+     "end": 3894
+    },
+    "others": [
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 3917,
+      "end": 3923
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4034,
+      "end": 4040
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4446,
+      "end": 4452
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4487,
+      "end": 4493
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4531,
+      "end": 4537
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4588,
+      "end": 4594
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4637,
+      "end": 4643
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4672,
+      "end": 4678
+     }
+    ],
+    "copies": 39,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 6,
+    "tokens": 50,
+    "first": {
+     "name": "rustfs/src/table_catalog/tests.rs",
+     "start": 3833,
+     "end": 3838
+    },
+    "others": [
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 3888,
+      "end": 3893
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 3917,
+      "end": 3922
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4034,
+      "end": 4039
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4185,
+      "end": 4190
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4214,
+      "end": 4219
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4359,
+      "end": 4364
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4446,
+      "end": 4451
+     },
+     {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 4487,
+      "end": 4492
+     }
+    ],
+    "copies": 48,
+    "kind": "code"
    }
   ],
   "health": {
@@ -436,6 +872,598 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 1833,
+   "lines": 1447990,
+   "tokens": 9704029,
+   "clones": 11334,
+   "duplicatedLines": 127201,
+   "duplicatedTokens": 910450,
+   "percentage": 8.78,
+   "percentageTokens": 9.38,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 1635,
+     "lines": 1374567,
+     "clones": 11083,
+     "duplicatedLines": 123375,
+     "percentage": 8.98
+    },
+    {
+     "format": "bash",
+     "sources": 154,
+     "lines": 49713,
+     "clones": 187,
+     "duplicatedLines": 2953,
+     "percentage": 5.94
+    },
+    {
+     "format": "python",
+     "sources": 42,
+     "lines": 23336,
+     "clones": 64,
+     "duplicatedLines": 873,
+     "percentage": 3.74
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 200,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 58,
+     "first": {
+      "name": "crates/e2e_test/src/group_delete_test.rs",
+      "start": 26,
+      "end": 32
+     },
+     "others": [
+      {
+       "name": "crates/e2e_test/src/group_delete_test.rs",
+       "start": 189,
+       "end": 195
+      },
+      {
+       "name": "crates/e2e_test/src/group_delete_test.rs",
+       "start": 272,
+       "end": 278
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1005,
+       "end": 1011
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1078,
+       "end": 1084
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1111,
+       "end": 1117
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1174,
+       "end": 1180
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1246,
+       "end": 1252
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1291,
+       "end": 1297
+      }
+     ],
+     "copies": 69,
+     "excerpt": {
+      "lines": [
+       "async fn update_group_members_rejects_invalid_new_group_names() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {",
+       "    init_logging();",
+       "",
+       "    let mut env = RustFSTestEnvironment::new().await?;",
+       "    env.start_rustfs_server(vec![]).await?;",
+       "",
+       "    let invalid_groups = ["
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "async fn test_user_with_only_group_gets_group_policies() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {",
+       "    init_logging();",
+       "",
+       "    let mut env = RustFSTestEnvironment::new().await?;",
+       "    env.start_rustfs_server(vec![]).await?;",
+       "",
+       "    let user_name = \"grouponlyuser\";"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 64,
+     "first": {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 3944,
+      "end": 3950
+     },
+     "others": [
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 6303,
+       "end": 6309
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 6343,
+       "end": 6349
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 6474,
+       "end": 6480
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 6816,
+       "end": 6822
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 6876,
+       "end": 6882
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 6950,
+       "end": 6956
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 6987,
+       "end": 6993
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 7913,
+       "end": 7919
+      }
+     ],
+     "copies": 53,
+     "excerpt": {
+      "lines": [
+       "async fn table_metadata_data_plane_resource_resolves_only_current_metadata() {",
+       "    let backend = TestCatalogObjectBackend::default();",
+       "    let store = ObjectTableCatalogStore::new(backend.clone());",
+       "    let bucket = \"analytics\";",
+       "    let namespace = Namespace::parse(\"sales\").unwrap();",
+       "    let table = IdentifierSegment::parse(\"orders\").unwrap();",
+       "    let current = default_table_metadata_file_path(&namespace, &table, \"00001.metadata.json\");"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "async fn maintenance_dry_run_reports_job_context_and_deletable_candidates() {",
+       "    let backend = TestCatalogObjectBackend::default();",
+       "    let store = ObjectTableCatalogStore::new(backend.clone());",
+       "    let bucket = \"analytics\";",
+       "    let namespace = Namespace::parse(\"sales\").unwrap();",
+       "    let table = IdentifierSegment::parse(\"orders\").unwrap();",
+       "    let old = default_table_metadata_file_path(&namespace, &table, \"00001.metadata.json\");"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 51,
+     "first": {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1005,
+      "end": 1011
+     },
+     "others": [
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1078,
+       "end": 1084
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1111,
+       "end": 1117
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1174,
+       "end": 1180
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1246,
+       "end": 1252
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1291,
+       "end": 1297
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1539,
+       "end": 1545
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1653,
+       "end": 1659
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1702,
+       "end": 1709
+      }
+     ],
+     "copies": 64,
+     "excerpt": {
+      "lines": [
+       "async fn test_anonymous_multipart_control_apis_require_auth() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {",
+       "    init_logging();",
+       "",
+       "    let mut env = RustFSTestEnvironment::new().await?;",
+       "    env.start_rustfs_server(vec![]).await?;",
+       "",
+       "    let bucket = \"anon-multipart-auth\";"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "async fn test_anonymous_post_object_requires_auth() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {",
+       "    init_logging();",
+       "",
+       "    let mut env = RustFSTestEnvironment::new().await?;",
+       "    env.start_rustfs_server(vec![]).await?;",
+       "",
+       "    let bucket = \"anon-post-auth\";"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 65,
+     "first": {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 3888,
+      "end": 3894
+     },
+     "others": [
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 3917,
+       "end": 3923
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4034,
+       "end": 4040
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4446,
+       "end": 4452
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4487,
+       "end": 4493
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4531,
+       "end": 4537
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4588,
+       "end": 4594
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4637,
+       "end": 4643
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4672,
+       "end": 4678
+      }
+     ],
+     "copies": 39,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 50,
+     "first": {
+      "name": "rustfs/src/table_catalog/tests.rs",
+      "start": 3833,
+      "end": 3838
+     },
+     "others": [
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 3888,
+       "end": 3893
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 3917,
+       "end": 3922
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4034,
+       "end": 4039
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4185,
+       "end": 4190
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4214,
+       "end": 4219
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4359,
+       "end": 4364
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4446,
+       "end": 4451
+      },
+      {
+       "name": "rustfs/src/table_catalog/tests.rs",
+       "start": 4487,
+       "end": 4492
+      }
+     ],
+     "copies": 48,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 83,
+     "first": {
+      "name": "crates/e2e_test/src/multipart_auth_test.rs",
+      "start": 1347,
+      "end": 1356
+     },
+     "others": [
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1606,
+       "end": 1615
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1660,
+       "end": 1669
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1710,
+       "end": 1719
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1761,
+       "end": 1770
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1816,
+       "end": 1825
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 1939,
+       "end": 1948
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 2015,
+       "end": 2024
+      },
+      {
+       "name": "crates/e2e_test/src/multipart_auth_test.rs",
+       "start": 2068,
+       "end": 2077
+      }
+     ],
+     "copies": 22,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 54,
+     "first": {
+      "name": "crates/e2e_test/src/admin_auth_test.rs",
+      "start": 121,
+      "end": 126
+     },
+     "others": [
+      {
+       "name": "crates/e2e_test/src/admin_auth_test.rs",
+       "start": 156,
+       "end": 161
+      },
+      {
+       "name": "crates/e2e_test/src/admin_pools_test.rs",
+       "start": 51,
+       "end": 57
+      },
+      {
+       "name": "crates/e2e_test/src/copy_source_invalid_date_test.rs",
+       "start": 86,
+       "end": 91
+      },
+      {
+       "name": "crates/e2e_test/src/create_bucket_region_test.rs",
+       "start": 33,
+       "end": 37
+      },
+      {
+       "name": "crates/e2e_test/src/create_bucket_region_test.rs",
+       "start": 63,
+       "end": 67
+      },
+      {
+       "name": "crates/e2e_test/src/list_buckets_double_slash_test.rs",
+       "start": 69,
+       "end": 74
+      },
+      {
+       "name": "crates/e2e_test/src/list_buckets_double_slash_test.rs",
+       "start": 87,
+       "end": 92
+      },
+      {
+       "name": "crates/e2e_test/src/list_buckets_double_slash_test.rs",
+       "start": 105,
+       "end": 110
+      }
+     ],
+     "copies": 33,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 33,
+     "tokens": 1671,
+     "first": {
+      "name": "crates/data-usage/src/data_usage.rs",
+      "start": 2793,
+      "end": 2825
+     },
+     "others": [
+      {
+       "name": "crates/scanner/src/data_usage_define/tests.rs",
+       "start": 1487,
+       "end": 1518
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 36,
+     "tokens": 1537,
+     "first": {
+      "name": "rustfs/src/admin/handlers/site_replication.rs",
+      "start": 15469,
+      "end": 15504
+     },
+     "others": [
+      {
+       "name": "rustfs/src/admin/handlers/site_replication.rs",
+       "start": 15571,
+       "end": 15606
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 257,
+     "first": {
+      "name": "crates/iam/src/sys.rs",
+      "start": 4075,
+      "end": 4081
+     },
+     "others": [
+      {
+       "name": "crates/iam/src/sys.rs",
+       "start": 4122,
+       "end": 4128
+      },
+      {
+       "name": "crates/iam/src/sys.rs",
+       "start": 4166,
+       "end": 4172
+      },
+      {
+       "name": "crates/iam/src/sys.rs",
+       "start": 4196,
+       "end": 4202
+      },
+      {
+       "name": "crates/iam/src/sys.rs",
+       "start": 4228,
+       "end": 4234
+      },
+      {
+       "name": "crates/iam/src/sys.rs",
+       "start": 4268,
+       "end": 4274
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 3,
+    "minified": 0,
+    "sample": [
+     "crates/protocols/src/swift/staticweb.rs",
+     "crates/protos/src/generated/flatbuffers_generated/models.rs",
+     "crates/protos/src/generated/proto_gen/node_service.rs"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:12:42.588Z",
+  "jscpdVersion": "5.4.0"
  }
 }

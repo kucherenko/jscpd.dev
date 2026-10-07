@@ -9,10 +9,12 @@
    "starsToday": 182,
    "headSha": "b7970b5f273ea40dacd6ddf3eed41d07e5e71289",
    "sources": 429,
-   "lines": 81884,
+   "lines": 81840,
    "clones": 664,
    "duplicatedLines": 24294,
-   "percentage": 29.67,
+   "percentage": 29.68,
+   "codePercentage": 9.43,
+   "codeSources": 251,
    "healthScore": 58.6,
    "healthGrade": "C"
   }
@@ -28,16 +30,16 @@
   "starsToday": 182,
   "defaultBranch": "main",
   "headSha": "b7970b5f273ea40dacd6ddf3eed41d07e5e71289",
-  "durationMs": 612,
+  "durationMs": 180,
   "total": {
    "sources": 429,
-   "lines": 81884,
-   "tokens": 398825,
+   "lines": 81840,
+   "tokens": 398660,
    "clones": 664,
    "duplicatedLines": 24294,
    "duplicatedTokens": 93810,
-   "percentage": 29.67,
-   "percentageTokens": 23.52
+   "percentage": 29.68,
+   "percentageTokens": 23.53
   },
   "formats": [
    {
@@ -83,7 +85,7 @@
    {
     "format": "bash",
     "sources": 10,
-    "lines": 701,
+    "lines": 651,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -99,7 +101,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -118,151 +120,236 @@
     "format": "json",
     "lines": 2142,
     "tokens": 6181,
-    "firstFile": {
+    "first": {
      "name": "docs/specs/fxbluesky-openapi.json",
      "start": 12,
      "end": 2153
     },
-    "secondFile": {
-     "name": "docs/specs/fxtwitter-openapi.json",
-     "start": 12,
-     "end": 2153
-    }
+    "others": [
+     {
+      "name": "docs/specs/fxtwitter-openapi.json",
+      "start": 12,
+      "end": 2153
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  }",
+      "],",
+      "\"components\": {",
+      "  \"schemas\": {",
+      "    \"SocialThread\": {",
+      "      \"type\": \"object\",",
+      "      \"properties\": {",
+      "        \"code\": {",
+      "          \"type\": \"number\",",
+      "          \"description\": \"HTTP-style status; mirrors response status code\""
+     ],
+     "total": 2142
+    },
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 1098,
     "tokens": 3572,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/TweetResultByRestId/1964084223871971826.json",
      "start": 3,
      "end": 1100
     },
-    "secondFile": {
-     "name": "test/mocks/TweetResultsByRestIds/1964084223871971826.json",
-     "start": 4,
-     "end": 1101
-    }
+    "others": [
+     {
+      "name": "test/mocks/TweetResultsByRestIds/1964084223871971826.json",
+      "start": 4,
+      "end": 1101
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"tweetResult\": {",
+      "  \"result\": {",
+      "    \"__typename\": \"Tweet\",",
+      "    \"rest_id\": \"1964084223871971826\",",
+      "    \"post_image_description\": \"A red fox with closed eyes and relaxed expression, lying on grass with pinecones nearby. Text overlay reads \\\"LIVE 14:21 BREAKIN…",
+      "    \"core\": {",
+      "      \"user_results\": {",
+      "        \"result\": {",
+      "          \"__typename\": \"User\",",
+      "          \"id\": \"VXNlcjoxNzg3MzExNDU5MTc0NTg4NDE3\","
+     ],
+     "total": 1098
+    },
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 670,
     "tokens": 2078,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/TweetResultsByIds/1848831595014459513.json",
      "start": 3,
      "end": 672
     },
-    "secondFile": {
-     "name": "test/mocks/TweetResultsByRestIds/1848831595014459513.json",
-     "start": 3,
-     "end": 672
-    }
+    "others": [
+     {
+      "name": "test/mocks/TweetResultsByRestIds/1848831595014459513.json",
+      "start": 3,
+      "end": 672
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"tweet_results\": [",
+      "  {",
+      "    \"result\": {",
+      "      \"__typename\": \"Tweet\",",
+      "      \"rest_id\": \"1848831595014459513\",",
+      "      \"core\": {",
+      "        \"user_results\": {",
+      "          \"result\": {",
+      "            \"__typename\": \"User\",",
+      "            \"id\": \"VXNlcjozNDc0MzI1MQ==\","
+     ],
+     "total": 670
+    },
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 666,
     "tokens": 2073,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/TweetResultByRestId/1848831595014459513.json",
      "start": 3,
      "end": 668
     },
-    "secondFile": {
-     "name": "test/mocks/TweetResultsByIds/1848831595014459513.json",
-     "start": 4,
-     "end": 669
-    }
+    "others": [
+     {
+      "name": "test/mocks/TweetResultsByIds/1848831595014459513.json",
+      "start": 4,
+      "end": 669
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 591,
     "tokens": 1808,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/TweetDetail/1848831595014459513.json",
      "start": 86,
      "end": 676
     },
-    "secondFile": {
-     "name": "test/mocks/TweetResultByRestId/1848831595014459513.json",
-     "start": 76,
-     "end": 666
-    }
+    "others": [
+     {
+      "name": "test/mocks/TweetResultByRestId/1848831595014459513.json",
+      "start": 76,
+      "end": 666
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 542,
     "tokens": 1594,
-    "firstFile": {
+    "first": {
      "name": "docs/specs/fxbluesky-openapi.json",
      "start": 105,
      "end": 646
     },
-    "secondFile": {
-     "name": "docs/specs/fxbluesky-openapi.json",
-     "start": 2295,
-     "end": 2836
-    }
+    "others": [
+     {
+      "name": "docs/specs/fxbluesky-openapi.json",
+      "start": 2295,
+      "end": 2836
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 508,
     "tokens": 1434,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/TweetResultsByIds/991610.json",
      "start": 3,
      "end": 510
     },
-    "secondFile": {
-     "name": "test/mocks/TweetResultsByRestIds/991610.json",
-     "start": 3,
-     "end": 510
-    }
+    "others": [
+     {
+      "name": "test/mocks/TweetResultsByRestIds/991610.json",
+      "start": 3,
+      "end": 510
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 504,
     "tokens": 1429,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/TweetResultByRestId/991610.json",
      "start": 3,
      "end": 506
     },
-    "secondFile": {
-     "name": "test/mocks/TweetResultsByIds/991610.json",
-     "start": 4,
-     "end": 507
-    }
+    "others": [
+     {
+      "name": "test/mocks/TweetResultsByIds/991610.json",
+      "start": 4,
+      "end": 507
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 450,
     "tokens": 1335,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/SearchTimeline/neo.json",
      "start": 2564,
      "end": 3013
     },
-    "secondFile": {
-     "name": "test/mocks/SearchTimeline/neo.json",
-     "start": 3020,
-     "end": 3469
-    }
+    "others": [
+     {
+      "name": "test/mocks/SearchTimeline/neo.json",
+      "start": 3020,
+      "end": 3469
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "json",
     "lines": 399,
     "tokens": 1322,
-    "firstFile": {
+    "first": {
      "name": "test/mocks/TweetResultsByIds/1902059299591090335.json",
      "start": 3,
      "end": 401
     },
-    "secondFile": {
-     "name": "test/mocks/TweetResultsByRestIds/1902059299591090335.json",
-     "start": 3,
-     "end": 401
-    }
+    "others": [
+     {
+      "name": "test/mocks/TweetResultsByRestIds/1902059299591090335.json",
+      "start": 3,
+      "end": 401
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -474,6 +561,354 @@
      "lines": 11
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 251,
+   "lines": 41753,
+   "tokens": 234289,
+   "clones": 283,
+   "duplicatedLines": 3938,
+   "duplicatedTokens": 23884,
+   "percentage": 9.43,
+   "percentageTokens": 10.19,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 235,
+     "lines": 40249,
+     "clones": 282,
+     "duplicatedLines": 3924,
+     "percentage": 9.75
+    },
+    {
+     "format": "javascript",
+     "sources": 6,
+     "lines": 686,
+     "clones": 1,
+     "duplicatedLines": 14,
+     "percentage": 2.04
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 122,
+     "first": {
+      "name": "packages/atmosphere/src/types/api-schemas.ts",
+      "start": 635,
+      "end": 649
+     },
+     "others": [
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 851,
+       "end": 865
+      },
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 1023,
+       "end": 1037
+      },
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 1089,
+       "end": 1103
+      },
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 1166,
+       "end": 1180
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "quote: z.union([APIBlueskyStatusSchema, APIStatusTombstoneSchema]).optional(),",
+       "poll: APIPollSchema.optional(),",
+       "author: APIUserSchema,",
+       "media: APIMediaContainerSchema,",
+       "raw_text: z.object({",
+       "  text: z.string(),",
+       "  facets: z.array(APIFacetSchema)",
+       "}),",
+       "lang: z.string().nullable(),",
+       "translation: APITranslateSchema.optional(),"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 100,
+     "first": {
+      "name": "packages/atmosphere/src/types/api-schemas.ts",
+      "start": 600,
+      "end": 614
+     },
+     "others": [
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 818,
+       "end": 832
+      },
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 990,
+       "end": 1004
+      },
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 1056,
+       "end": 1070
+      },
+      {
+       "name": "packages/atmosphere/src/types/api-schemas.ts",
+       "start": 1134,
+       "end": 1148
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "quote?: APIBlueskyStatus | APIStatusTombstone;",
+       "poll?: z.infer<typeof APIPollSchema>;",
+       "author: z.infer<typeof APIUserSchema>;",
+       "media: z.infer<typeof APIMediaContainerSchema>;",
+       "raw_text: {",
+       "  text: string;",
+       "  facets: z.infer<typeof APIFacetSchema>[];",
+       "};",
+       "lang: string | null;",
+       "translation?: z.infer<typeof APITranslateSchema>;"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 17,
+     "tokens": 99,
+     "first": {
+      "name": "src/realms/api/routes.ts",
+      "start": 344,
+      "end": 360
+     },
+     "others": [
+      {
+       "name": "src/realms/api/routes.ts",
+       "start": 407,
+       "end": 423
+      },
+      {
+       "name": "src/realms/api/routes.ts",
+       "start": 450,
+       "end": 466
+      },
+      {
+       "name": "src/realms/api/routes.ts",
+       "start": 493,
+       "end": 509
+      },
+      {
+       "name": "src/realms/api/routes.ts",
+       "start": 535,
+       "end": 551
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "  'Optional `since` (Unix time): when used without `cursor`, returns **204 No Content** if no posts in the page are newer than that instant; otherwise returns …",
+       "request: {",
+       "  params: z.object({",
+       "    handle: z.string().openapi({",
+       "      description:",
+       "        'Username without @, or numeric user id as `id:<rest_id>` (e.g. `id:783214`). Case-insensitive `id:` prefix.'",
+       "    })",
+       "  }),",
+       "  query: z.object({",
+       "    count: z.coerce.number().int().min(1).max(100).optional().openapi({"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 25,
+     "tokens": 192,
+     "first": {
+      "name": "packages/atmosphere/src/providers/mastodon/profileFollowers.ts",
+      "start": 6,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "packages/atmosphere/src/providers/mastodon/statusLikes.ts",
+       "start": 2,
+       "end": 24
+      },
+      {
+       "name": "packages/atmosphere/src/providers/mastodon/statusReposts.ts",
+       "start": 2,
+       "end": 24
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 47,
+     "tokens": 309,
+     "first": {
+      "name": "src/realms/bluesky/routes/feed.ts",
+      "start": 16,
+      "end": 62
+     },
+     "others": [
+      {
+       "name": "src/realms/twitter/routes/feed.ts",
+       "start": 17,
+       "end": 64
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 17,
+     "tokens": 102,
+     "first": {
+      "name": "src/realms/bluesky-api/routes.ts",
+      "start": 481,
+      "end": 497
+     },
+     "others": [
+      {
+       "name": "src/realms/bluesky-api/routes.ts",
+       "start": 569,
+       "end": 585
+      },
+      {
+       "name": "src/realms/bluesky-api/routes.ts",
+       "start": 614,
+       "end": 630
+      },
+      {
+       "name": "src/realms/bluesky-api/routes.ts",
+       "start": 663,
+       "end": 679
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 29,
+     "tokens": 225,
+     "first": {
+      "name": "src/realms/bluesky/routes/status.ts",
+      "start": 32,
+      "end": 60
+     },
+     "others": [
+      {
+       "name": "src/realms/twitter/routes/status.ts",
+       "start": 48,
+       "end": 81
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 27,
+     "tokens": 223,
+     "first": {
+      "name": "src/realms/bluesky/routes/status.ts",
+      "start": 32,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "src/realms/instagram/routes/post.ts",
+       "start": 39,
+       "end": 65
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 34,
+     "tokens": 217,
+     "first": {
+      "name": "packages/atmosphere/src/providers/instagram/account-proxy.ts",
+      "start": 148,
+      "end": 181
+     },
+     "others": [
+      {
+       "name": "packages/atmosphere/src/providers/threads/account-proxy.ts",
+       "start": 148,
+       "end": 181
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 44,
+     "tokens": 215,
+     "first": {
+      "name": "src/realms/bluesky-api/routes.ts",
+      "start": 86,
+      "end": 129
+     },
+     "others": [
+      {
+       "name": "src/realms/bluesky-api/routes.ts",
+       "start": 134,
+       "end": 177
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:23:22.470Z",
+  "jscpdVersion": "5.4.0"
  }
 }

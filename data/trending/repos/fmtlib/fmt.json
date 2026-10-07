@@ -9,10 +9,12 @@
    "starsToday": 14,
    "headSha": "bc82c408a6ac75d356396332b1e70793e86620ad",
    "sources": 122,
-   "lines": 86650,
-   "clones": 100,
-   "duplicatedLines": 1020,
-   "percentage": 1.18,
+   "lines": 84653,
+   "clones": 96,
+   "duplicatedLines": 1041,
+   "percentage": 1.23,
+   "codePercentage": 1.24,
+   "codeSources": 36,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 963,
    "headSha": "bc82c408a6ac75d356396332b1e70793e86620ad",
    "sources": 122,
-   "lines": 86650,
-   "clones": 100,
-   "duplicatedLines": 1020,
-   "percentage": 1.18,
+   "lines": 84653,
+   "clones": 96,
+   "duplicatedLines": 1041,
+   "percentage": 1.23,
+   "codePercentage": 1.24,
+   "codeSources": 36,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 688,
    "headSha": "6226bc70b8e15060a21a281c5ec5f4b91be8582f",
    "sources": 122,
-   "lines": 86597,
-   "clones": 100,
-   "duplicatedLines": 1020,
-   "percentage": 1.18,
+   "lines": 84598,
+   "clones": 96,
+   "duplicatedLines": 1041,
+   "percentage": 1.23,
+   "codePercentage": 1.24,
+   "codeSources": 36,
    "healthScore": null,
    "healthGrade": null
   },
@@ -51,10 +57,12 @@
    "starsToday": 134,
    "headSha": "0f3c5fd596f27108e0c338b52a5aae9e4a491e26",
    "sources": 122,
-   "lines": 86595,
-   "clones": 101,
-   "duplicatedLines": 1025,
-   "percentage": 1.18,
+   "lines": 84596,
+   "clones": 97,
+   "duplicatedLines": 1047,
+   "percentage": 1.24,
+   "codePercentage": 1.24,
+   "codeSources": 36,
    "healthScore": null,
    "healthGrade": null
   }
@@ -70,49 +78,49 @@
   "starsToday": 134,
   "defaultBranch": "main",
   "headSha": "0f3c5fd596f27108e0c338b52a5aae9e4a491e26",
-  "durationMs": 1206,
+  "durationMs": 824,
   "total": {
    "sources": 122,
-   "lines": 86595,
-   "tokens": 560285,
-   "clones": 101,
-   "duplicatedLines": 1025,
-   "duplicatedTokens": 8625,
-   "percentage": 1.18,
-   "percentageTokens": 1.54
+   "lines": 84596,
+   "tokens": 562694,
+   "clones": 97,
+   "duplicatedLines": 1047,
+   "duplicatedTokens": 7702,
+   "percentage": 1.24,
+   "percentageTokens": 1.37
   },
   "formats": [
    {
     "format": "c-header",
     "sources": 25,
     "lines": 42619,
-    "clones": 59,
-    "duplicatedLines": 593,
-    "percentage": 1.39
+    "clones": 56,
+    "duplicatedLines": 589,
+    "percentage": 1.38
    },
    {
     "format": "cpp",
     "sources": 43,
-    "lines": 28572,
+    "lines": 27322,
     "clones": 35,
-    "duplicatedLines": 376,
-    "percentage": 1.32
+    "duplicatedLines": 411,
+    "percentage": 1.5
    },
    {
     "format": "markdown",
     "sources": 11,
     "lines": 9135,
-    "clones": 6,
-    "duplicatedLines": 49,
-    "percentage": 0.54
+    "clones": 5,
+    "duplicatedLines": 39,
+    "percentage": 0.43
    },
    {
     "format": "yaml",
     "sources": 10,
     "lines": 769,
     "clones": 1,
-    "duplicatedLines": 7,
-    "percentage": 0.91
+    "duplicatedLines": 8,
+    "percentage": 1.04
    },
    {
     "format": "txt",
@@ -133,15 +141,7 @@
    {
     "format": "bash",
     "sources": 11,
-    "lines": 807,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "text",
-    "sources": 1,
-    "lines": 694,
+    "lines": 743,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -149,7 +149,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -161,159 +161,616 @@
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
+   },
+   {
+    "format": "c",
+    "sources": 1,
+    "lines": 112,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
    }
   ],
   "topClones": [
    {
     "format": "c-header",
-    "lines": 10,
-    "tokens": 211,
-    "firstFile": {
-     "name": "include/fmt/color.h",
-     "start": 504,
-     "end": 513
+    "lines": 19,
+    "tokens": 73,
+    "first": {
+     "name": "test/gtest/gmock/gmock.h",
+     "start": 3771,
+     "end": 3789
     },
-    "secondFile": {
-     "name": "include/fmt/color.h",
-     "start": 554,
-     "end": 563
-    }
+    "others": [
+     {
+      "name": "test/gtest/gmock/gmock.h",
+      "start": 3839,
+      "end": 3857
+     },
+     {
+      "name": "test/gtest/gmock/gmock.h",
+      "start": 3892,
+      "end": 3911
+     },
+     {
+      "name": "test/gtest/gmock/gmock.h",
+      "start": 3947,
+      "end": 3965
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "        case_sensitive_(case_sensitive) {}",
+      "",
+      "#if GTEST_INTERNAL_HAS_STRING_VIEW",
+      "  bool MatchAndExplain(const internal::StringView& s,",
+      "                       MatchResultListener* listener) const {",
+      "    // This should fail to compile if StringView is used with wide",
+      "    // strings.",
+      "    const StringType& str = std::string(s);",
+      "    return MatchAndExplain(str, listener);",
+      "  }"
+     ],
+     "total": 19
+    },
+    "kind": "tests"
    },
    {
     "format": "cpp",
     "lines": 29,
     "tokens": 203,
-    "firstFile": {
+    "first": {
      "name": "test/gtest/gmock-gtest-all.cc",
      "start": 9068,
      "end": 9096
     },
-    "secondFile": {
-     "name": "test/gtest/gmock-gtest-all.cc",
-     "start": 9417,
-     "end": 9445
-    }
+    "others": [
+     {
+      "name": "test/gtest/gmock-gtest-all.cc",
+      "start": 9417,
+      "end": 9445
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  zx::socket stderr_socket_;",
+      "};",
+      "",
+      "// Utility class for accumulating command-line arguments.",
+      "class Arguments {",
+      " public:",
+      "  Arguments() { args_.push_back(nullptr); }",
+      "",
+      "  ~Arguments() {",
+      "    for (std::vector<char*>::iterator i = args_.begin(); i != args_.end();"
+     ],
+     "total": 29
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "c-header",
+    "lines": 23,
+    "tokens": 101,
+    "first": {
+     "name": "test/gtest/gmock/gmock.h",
+     "start": 3845,
+     "end": 3867
+    },
+    "others": [
+     {
+      "name": "test/gtest/gmock/gmock.h",
+      "start": 3899,
+      "end": 3921
+     },
+     {
+      "name": "test/gtest/gmock/gmock.h",
+      "start": 3953,
+      "end": 3975
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "    // strings.",
+      "    const StringType& str = std::string(s);",
+      "    return MatchAndExplain(str, listener);",
+      "  }",
+      "#endif  // GTEST_INTERNAL_HAS_STRING_VIEW",
+      "",
+      "  // Accepts pointer types, particularly:",
+      "  //   const char*",
+      "  //   char*",
+      "  //   const wchar_t*"
+     ],
+     "total": 23
+    },
+    "kind": "tests"
    },
    {
     "format": "cpp",
     "lines": 45,
     "tokens": 188,
-    "firstFile": {
+    "first": {
      "name": "test/fuzzing/named-arg.cc",
      "start": 41,
      "end": 85
     },
-    "secondFile": {
-     "name": "test/fuzzing/two-args.cc",
-     "start": 37,
-     "end": 81
-    }
+    "others": [
+     {
+      "name": "test/fuzzing/two-args.cc",
+      "start": 37,
+      "end": 81
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "c-header",
+    "lines": 13,
+    "tokens": 93,
+    "first": {
+     "name": "include/fmt/chrono.h",
+     "start": 1933,
+     "end": 1945
+    },
+    "others": [
+     {
+      "name": "include/fmt/chrono.h",
+      "start": 1985,
+      "end": 1997
+     },
+     {
+      "name": "include/fmt/chrono.h",
+      "start": 2009,
+      "end": 2021
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "c-header",
     "lines": 9,
     "tokens": 174,
-    "firstFile": {
+    "first": {
      "name": "include/fmt/color.h",
      "start": 505,
      "end": 513
     },
-    "secondFile": {
-     "name": "include/fmt/color.h",
-     "start": 519,
-     "end": 527
-    }
+    "others": [
+     {
+      "name": "include/fmt/color.h",
+      "start": 519,
+      "end": 527
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "c-header",
-    "lines": 34,
-    "tokens": 165,
-    "firstFile": {
-     "name": "test/gtest/gmock/gmock.h",
-     "start": 2650,
-     "end": 2683
+    "lines": 7,
+    "tokens": 58,
+    "first": {
+     "name": "include/fmt/chrono.h",
+     "start": 1905,
+     "end": 1911
     },
-    "secondFile": {
-     "name": "test/gtest/gtest/gtest.h",
-     "start": 6154,
-     "end": 6160
-    }
+    "others": [
+     {
+      "name": "include/fmt/chrono.h",
+      "start": 1933,
+      "end": 1939
+     },
+     {
+      "name": "include/fmt/chrono.h",
+      "start": 1985,
+      "end": 1991
+     },
+     {
+      "name": "include/fmt/chrono.h",
+      "start": 2009,
+      "end": 2015
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "c-header",
-    "lines": 8,
+    "lines": 9,
+    "tokens": 166,
+    "first": {
+     "name": "include/fmt/color.h",
+     "start": 541,
+     "end": 549
+    },
+    "others": [
+     {
+      "name": "include/fmt/color.h",
+      "start": 555,
+      "end": 563
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 7,
     "tokens": 162,
-    "firstFile": {
+    "first": {
      "name": "test/gtest/gmock/gmock.h",
      "start": 3152,
-     "end": 3159
+     "end": 3158
     },
-    "secondFile": {
-     "name": "test/gtest/gtest/gtest.h",
-     "start": 6154,
-     "end": 6161
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 157,
-    "firstFile": {
-     "name": "ChangeLog.md:markdown",
-     "start": 1639,
-     "end": 1649
-    },
-    "secondFile": {
-     "name": "ChangeLog.md:markdown",
-     "start": 3045,
-     "end": 3049
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 157,
-    "firstFile": {
-     "name": "ChangeLog.md:markdown",
-     "start": 1639,
-     "end": 1649
-    },
-    "secondFile": {
-     "name": "ChangeLog.md:markdown",
-     "start": 3068,
-     "end": 3072
-    }
-   },
-   {
-    "format": "cpp",
-    "lines": 18,
-    "tokens": 156,
-    "firstFile": {
-     "name": "test/gtest/gmock-gtest-all.cc",
-     "start": 5095,
-     "end": 5112
-    },
-    "secondFile": {
-     "name": "test/gtest/gmock-gtest-all.cc",
-     "start": 5205,
-     "end": 5222
-    }
+    "others": [
+     {
+      "name": "test/gtest/gtest/gtest.h",
+      "start": 6154,
+      "end": 6160
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "c-header",
-    "lines": 34,
-    "tokens": 141,
-    "firstFile": {
+    "lines": 9,
+    "tokens": 81,
+    "first": {
      "name": "test/gtest/gmock/gmock.h",
-     "start": 3771,
-     "end": 3804
+     "start": 11530,
+     "end": 11538
     },
-    "secondFile": {
-     "name": "test/gtest/gmock/gmock.h",
-     "start": 3947,
-     "end": 3977
-    }
+    "others": [
+     {
+      "name": "test/gtest/gmock/gmock.h",
+      "start": 11571,
+      "end": 11579
+     },
+     {
+      "name": "test/gtest/gmock/gmock.h",
+      "start": 11612,
+      "end": 11620
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 36,
+   "lines": 20306,
+   "tokens": 159942,
+   "clones": 29,
+   "duplicatedLines": 251,
+   "duplicatedTokens": 2391,
+   "percentage": 1.24,
+   "percentageTokens": 1.49,
+   "formats": [
+    {
+     "format": "c-header",
+     "sources": 15,
+     "lines": 17081,
+     "clones": 28,
+     "duplicatedLines": 244,
+     "percentage": 1.43
+    },
+    {
+     "format": "cpp",
+     "sources": 4,
+     "lines": 676,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 1.04
+    },
+    {
+     "format": "python",
+     "sources": 6,
+     "lines": 1601,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "groovy",
+     "sources": 1,
+     "lines": 130,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c-header",
+     "lines": 13,
+     "tokens": 93,
+     "first": {
+      "name": "include/fmt/chrono.h",
+      "start": 1933,
+      "end": 1945
+     },
+     "others": [
+      {
+       "name": "include/fmt/chrono.h",
+       "start": 1985,
+       "end": 1997
+      },
+      {
+       "name": "include/fmt/chrono.h",
+       "start": 2009,
+       "end": 2021
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "struct formatter<day, Char> : private formatter<std::tm, Char> {",
+       " private:",
+       "  bool use_tm_formatter_ = false;",
+       "",
+       " public:",
+       "  FMT_CONSTEXPR auto parse(parse_context<Char>& ctx) -> const Char* {",
+       "    auto it = ctx.begin(), end = ctx.end();",
+       "    use_tm_formatter_ = it != end && *it != '}';",
+       "    return use_tm_formatter_ ? formatter<std::tm, Char>::parse(ctx) : it;",
+       "  }"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 9,
+     "tokens": 174,
+     "first": {
+      "name": "include/fmt/color.h",
+      "start": 505,
+      "end": 513
+     },
+     "others": [
+      {
+       "name": "include/fmt/color.h",
+       "start": 519,
+       "end": 527
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       " * escape sequences to specify text formatting.",
+       " *",
+       " * **Example**:",
+       " *",
+       " *     fmt::print(fmt::emphasis::bold | fg(fmt::color::red),",
+       " *                \"Elapsed time: {0:.2f} seconds\", 1.23);",
+       " */",
+       "template <typename... T>",
+       "void print(FILE* f, text_style ts, format_string<T...> fmt, T&&... args) {"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       " * specify text formatting.",
+       " *",
+       " * **Example**:",
+       " *",
+       " *     fmt::print(fmt::emphasis::bold | fg(fmt::color::red),",
+       " *                \"Elapsed time: {0:.2f} seconds\", 1.23);",
+       " */",
+       "template <typename... T>",
+       "void print(text_style ts, format_string<T...> fmt, T&&... args) {"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 7,
+     "tokens": 58,
+     "first": {
+      "name": "include/fmt/chrono.h",
+      "start": 1905,
+      "end": 1911
+     },
+     "others": [
+      {
+       "name": "include/fmt/chrono.h",
+       "start": 1933,
+       "end": 1939
+      },
+      {
+       "name": "include/fmt/chrono.h",
+       "start": 1985,
+       "end": 1991
+      },
+      {
+       "name": "include/fmt/chrono.h",
+       "start": 2009,
+       "end": 2015
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "struct formatter<weekday, Char> : private formatter<std::tm, Char> {",
+       " private:",
+       "  bool use_tm_formatter_ = false;",
+       "",
+       " public:",
+       "  FMT_CONSTEXPR auto parse(parse_context<Char>& ctx) -> const Char* {",
+       "    auto it = ctx.begin(), end = ctx.end();"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 9,
+     "tokens": 166,
+     "first": {
+      "name": "include/fmt/color.h",
+      "start": 541,
+      "end": 549
+     },
+     "others": [
+      {
+       "name": "include/fmt/color.h",
+       "start": 555,
+       "end": 563
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 17,
+     "tokens": 129,
+     "first": {
+      "name": "include/fmt/chrono.h",
+      "start": 1905,
+      "end": 1921
+     },
+     "others": [
+      {
+       "name": "include/fmt/chrono.h",
+       "start": 1957,
+       "end": 1973
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 12,
+     "tokens": 122,
+     "first": {
+      "name": "include/fmt/chrono.h",
+      "start": 2044,
+      "end": 2055
+     },
+     "others": [
+      {
+       "name": "include/fmt/chrono.h",
+       "start": 2112,
+       "end": 2124
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 7,
+     "tokens": 119,
+     "first": {
+      "name": "include/fmt/format.h",
+      "start": 4361,
+      "end": 4367
+     },
+     "others": [
+      {
+       "name": "include/fmt/format.h",
+       "start": 4374,
+       "end": 4380
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 6,
+     "tokens": 110,
+     "first": {
+      "name": "include/fmt/base.h",
+      "start": 2901,
+      "end": 2906
+     },
+     "others": [
+      {
+       "name": "include/fmt/printf.h",
+       "start": 638,
+       "end": 643
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 6,
+     "tokens": 101,
+     "first": {
+      "name": "include/fmt/args.h",
+      "start": 143,
+      "end": 148
+     },
+     "others": [
+      {
+       "name": "include/fmt/args.h",
+       "start": 162,
+       "end": 167
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 6,
+     "tokens": 94,
+     "first": {
+      "name": "include/fmt/color.h",
+      "start": 504,
+      "end": 509
+     },
+     "others": [
+      {
+       "name": "include/fmt/color.h",
+       "start": 554,
+       "end": 559
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:49:50.112Z",
+  "jscpdVersion": "5.4.0"
  }
 }

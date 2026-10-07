@@ -9,10 +9,12 @@
    "starsToday": 242,
    "headSha": "7349b0f632d67613cf7bbc408d611116698eb820",
    "sources": 92,
-   "lines": 2857,
+   "lines": 2813,
    "clones": 8,
    "duplicatedLines": 142,
-   "percentage": 4.97,
+   "percentage": 5.05,
+   "codePercentage": null,
+   "codeSources": 11,
    "healthScore": 81.9,
    "healthGrade": "B"
   }
@@ -28,16 +30,16 @@
   "starsToday": 242,
   "defaultBranch": "main",
   "headSha": "7349b0f632d67613cf7bbc408d611116698eb820",
-  "durationMs": 931,
+  "durationMs": 23,
   "total": {
    "sources": 92,
-   "lines": 2857,
-   "tokens": 17473,
+   "lines": 2813,
+   "tokens": 17308,
    "clones": 8,
    "duplicatedLines": 142,
    "duplicatedTokens": 1106,
-   "percentage": 4.97,
-   "percentageTokens": 6.33
+   "percentage": 5.05,
+   "percentageTokens": 6.39
   },
   "formats": [
    {
@@ -49,14 +51,6 @@
     "percentage": 11.99
    },
    {
-    "format": "bash",
-    "sources": 10,
-    "lines": 710,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "yaml",
     "sources": 5,
     "lines": 685,
@@ -65,9 +59,17 @@
     "percentage": 0
    },
    {
+    "format": "bash",
+    "sources": 10,
+    "lines": 660,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -86,121 +88,198 @@
     "format": "txt",
     "lines": 22,
     "tokens": 351,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1007.txt",
      "start": 1,
      "end": 22
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1008.txt",
-     "start": 1,
-     "end": 22
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1008.txt",
+      "start": 1,
+      "end": 22
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "• feat: support bullet comments/live chats for all maintained services(i.e. Youtube, BiliBili, NicoNico). SuperChats are also supported and have different appe…",
+      "• feat: apply new styled channel tabs for all maintained services, enabling show other type of contents like live replays and playlists.",
+      "• feat: directly seek to the timestamp when opening timestamps in comments, rather than open it in the popup player.",
+      "• feat: add more kiosks for all maintained services, including Recommended Lives kiosk.",
+      "• feat: remove the related items tab/ comments tab if it is not supported in the current stream instead of show \"Comments are disabled\" and \"No videos\".",
+      "• feat: show more specified error message, for example \"Live not started\" rather than just say \"Could not fetch stream\".",
+      "• feat: support search, open and play livestreams on NicoNico.",
+      "• feat: support open channels and play contents from channels on NicoNico.",
+      "• feat: support search, open and play Bangumis(animes, movies and TV series) on BiliBili.",
+      "• feat: support round-play live streams on BiliBili."
+     ],
+     "total": 22
+    },
+    "kind": "docs"
    },
    {
     "format": "txt",
     "lines": 28,
     "tokens": 156,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1065.txt",
      "start": 1,
      "end": 28
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1066.txt",
-     "start": 3,
-     "end": 30
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1066.txt",
+      "start": 3,
+      "end": 30
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "### New Features",
+      "",
+      "- Support content filters: filter out unwanted items everywhere by keywords and channel names",
+      "",
+      "### Bug Fixes",
+      "",
+      "- Videos failed to play: 403 errors (YouTube)",
+      "- Random crash when switching videos (YouTube)",
+      "- Blurry channel banner images (YouTube)",
+      "- New comments/related items/desc are not updated when resuming to app from background playing"
+     ],
+     "total": 28
+    },
+    "kind": "docs"
    },
    {
     "format": "txt",
     "lines": 22,
     "tokens": 151,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1083.txt",
      "start": 1,
      "end": 22
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1084.txt",
-     "start": 1,
-     "end": 22
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1084.txt",
+      "start": 1,
+      "end": 22
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "### New Features",
+      "",
+      "- Support Android Auto",
+      "- Support customize the action of right swiping in local playlists: delete, enqueue or disabled",
+      "- Support import URLs from txt file to playlist",
+      "- Support add all items in local playlist to another local playlist",
+      "- Support filter out paid videos",
+      "- Add a preference to control whether to enable auto-translation in YouTube",
+      "- Support storyboard preview (BiliBili)",
+      ""
+     ],
+     "total": 22
+    },
+    "kind": "docs"
    },
    {
     "format": "txt",
     "lines": 13,
     "tokens": 116,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1013.txt",
      "start": 1,
      "end": 13
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1014.txt",
-     "start": 5,
-     "end": 17
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1014.txt",
+      "start": 5,
+      "end": 17
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "txt",
     "lines": 16,
     "tokens": 112,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1078.txt",
      "start": 1,
      "end": 16
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1079.txt",
-     "start": 1,
-     "end": 16
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1079.txt",
+      "start": 1,
+      "end": 16
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "txt",
     "lines": 15,
     "tokens": 82,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1035.txt",
      "start": 1,
      "end": 15
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1036.txt",
-     "start": 6,
-     "end": 20
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1036.txt",
+      "start": 6,
+      "end": 20
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "txt",
     "lines": 11,
     "tokens": 69,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1033.txt",
      "start": 1,
      "end": 11
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1034.txt",
-     "start": 1,
-     "end": 11
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1034.txt",
+      "start": 1,
+      "end": 11
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "txt",
     "lines": 15,
     "tokens": 69,
-    "firstFile": {
+    "first": {
      "name": "fastlane/metadata/android/en-US/changelogs/1058.txt",
      "start": 1,
      "end": 15
     },
-    "secondFile": {
-     "name": "fastlane/metadata/android/en-US/changelogs/1059.txt",
-     "start": 1,
-     "end": 15
-    }
+    "others": [
+     {
+      "name": "fastlane/metadata/android/en-US/changelogs/1059.txt",
+      "start": 1,
+      "end": 15
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -314,6 +393,42 @@
     }
    ]
   },
-  "deadCode": null
+  "deadCode": null,
+  "code": {
+   "sources": 11,
+   "lines": 834,
+   "tokens": 3132,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 660,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:27:29.718Z",
+  "jscpdVersion": "5.4.0"
  }
 }

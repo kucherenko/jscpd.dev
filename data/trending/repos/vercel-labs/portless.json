@@ -9,10 +9,12 @@
    "starsToday": 73,
    "headSha": "1ad573bb95810daf6cd50c1718707015450f3f09",
    "sources": 158,
-   "lines": 37632,
-   "clones": 189,
-   "duplicatedLines": 2156,
-   "percentage": 5.73,
+   "lines": 35497,
+   "clones": 228,
+   "duplicatedLines": 2634,
+   "percentage": 7.42,
+   "codePercentage": 2.24,
+   "codeSources": 39,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,94 +30,94 @@
   "starsToday": 73,
   "defaultBranch": "main",
   "headSha": "1ad573bb95810daf6cd50c1718707015450f3f09",
-  "durationMs": 600,
+  "durationMs": 144,
   "total": {
    "sources": 158,
-   "lines": 37632,
-   "tokens": 210581,
-   "clones": 189,
-   "duplicatedLines": 2156,
-   "duplicatedTokens": 14620,
-   "percentage": 5.73,
-   "percentageTokens": 6.94
+   "lines": 35497,
+   "tokens": 210883,
+   "clones": 228,
+   "duplicatedLines": 2634,
+   "duplicatedTokens": 16540,
+   "percentage": 7.42,
+   "percentageTokens": 7.84
   },
   "formats": [
    {
     "format": "typescript",
     "sources": 77,
     "lines": 28479,
-    "clones": 176,
-    "duplicatedLines": 2010,
-    "percentage": 7.06
+    "clones": 214,
+    "duplicatedLines": 2467,
+    "percentage": 8.66
    },
    {
     "format": "markdown",
     "sources": 6,
     "lines": 1973,
-    "clones": 5,
-    "duplicatedLines": 55,
-    "percentage": 2.79
+    "clones": 6,
+    "duplicatedLines": 68,
+    "percentage": 3.45
    },
    {
     "format": "tsx",
     "sources": 22,
     "lines": 2285,
     "clones": 3,
-    "duplicatedLines": 33,
-    "percentage": 1.44
+    "duplicatedLines": 36,
+    "percentage": 1.58
    },
    {
     "format": "bash",
     "sources": 18,
-    "lines": 2363,
+    "lines": 1240,
     "clones": 1,
-    "duplicatedLines": 10,
-    "percentage": 0.42
+    "duplicatedLines": 11,
+    "percentage": 0.89
    },
    {
     "format": "json",
     "sources": 16,
-    "lines": 980,
+    "lines": 505,
     "clones": 1,
-    "duplicatedLines": 24,
-    "percentage": 2.45
+    "duplicatedLines": 25,
+    "percentage": 4.95
    },
    {
     "format": "css",
     "sources": 2,
     "lines": 347,
     "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 1.73
+    "duplicatedLines": 7,
+    "percentage": 2.02
    },
    {
     "format": "yaml",
     "sources": 4,
-    "lines": 280,
+    "lines": 278,
     "clones": 1,
-    "duplicatedLines": 13,
-    "percentage": 4.64
+    "duplicatedLines": 14,
+    "percentage": 5.04
    },
    {
     "format": "javascript",
     "sources": 8,
-    "lines": 253,
+    "lines": 135,
     "clones": 1,
-    "duplicatedLines": 5,
-    "percentage": 1.98
+    "duplicatedLines": 6,
+    "percentage": 4.44
    },
    {
-    "format": "text",
+    "format": "perl",
     "sources": 1,
-    "lines": 461,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "perl",
+    "format": "text",
     "sources": 1,
-    "lines": 168,
+    "lines": 38,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -124,154 +126,653 @@
   "topClones": [
    {
     "format": "typescript",
-    "lines": 48,
-    "tokens": 308,
-    "firstFile": {
+    "lines": 7,
+    "tokens": 66,
+    "first": {
      "name": "packages/portless/src/proxy.test.ts",
-     "start": 819,
-     "end": 866
+     "start": 1122,
+     "end": 1128
     },
-    "secondFile": {
-     "name": "packages/portless/src/proxy.test.ts",
-     "start": 1981,
-     "end": 2031
-    }
+    "others": [
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1165,
+      "end": 1173
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1618,
+      "end": 1626
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1692,
+      "end": 1700
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1879,
+      "end": 1887
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1992,
+      "end": 2000
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "await listen(backend);",
+      "const backendAddr = backend.address();",
+      "if (!backendAddr || typeof backendAddr === \"string\") throw new Error(\"no addr\");",
+      "",
+      "const routes: RouteInfo[] = [{ hostname: \"ws.localhost\", port: backendAddr.port }];",
+      "const server = trackServer(",
+      "  createProxyServer({ getRoutes: () => routes, proxyPort: TEST_PROXY_PORT })"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "await listen(backend);",
+      "const backendAddr = backend.address();",
+      "if (!backendAddr || typeof backendAddr === \"string\") throw new Error(\"no addr\");",
+      "",
+      "const routes: RouteInfo[] = [{ hostname: \"ws.localhost\", port: backendAddr.port }];",
+      "const server = trackServer(",
+      "  createProxyServer({",
+      "    getRoutes: () => routes,",
+      "    proxyPort: TEST_PROXY_PORT,"
+     ],
+     "total": 9
+    },
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 53,
     "tokens": 304,
-    "firstFile": {
+    "first": {
      "name": "tests/e2e/src/parallel.test.ts",
      "start": 12,
      "end": 64
     },
-    "secondFile": {
-     "name": "tests/e2e/src/zombie.test.ts",
-     "start": 12,
-     "end": 64
-    }
+    "others": [
+     {
+      "name": "tests/e2e/src/zombie.test.ts",
+      "start": 12,
+      "end": 64
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "const PROXY_PORT = 19012;",
+      "",
+      "const isWindows = process.platform === \"win32\";",
+      "",
+      "function killPort(port: number): void {",
+      "  try {",
+      "    if (isWindows) {",
+      "      const output = execSync(\"netstat -ano -p tcp\", {",
+      "        encoding: \"utf-8\",",
+      "        timeout: 5000,"
+     ],
+     "total": 53
+    },
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 50,
     "tokens": 294,
-    "firstFile": {
+    "first": {
      "name": "tests/e2e/src/harness.ts",
      "start": 22,
      "end": 71
     },
-    "secondFile": {
-     "name": "tests/e2e/src/parallel.test.ts",
-     "start": 14,
-     "end": 62
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 33,
-    "tokens": 196,
-    "firstFile": {
-     "name": "packages/portless/src/service.test.ts",
-     "start": 444,
-     "end": 476
+    "others": [
+     {
+      "name": "tests/e2e/src/parallel.test.ts",
+      "start": 14,
+      "end": 62
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  : path.join(VENV_DIR, \"bin\", \"python3\");",
+      "",
+      "/** Kill any process listening on the given TCP port (skips our own PID). */",
+      "function killPort(port: number): void {",
+      "  try {",
+      "    if (isWindows) {",
+      "      const output = execSync(\"netstat -ano -p tcp\", {",
+      "        encoding: \"utf-8\",",
+      "        timeout: 5000,",
+      "      });"
+     ],
+     "total": 50
     },
-    "secondFile": {
-     "name": "packages/portless/src/service.test.ts",
-     "start": 534,
-     "end": 566
-    }
+    "excerptSecond": {
+     "lines": [
+      "const isWindows = process.platform === \"win32\";",
+      "",
+      "function killPort(port: number): void {",
+      "  try {",
+      "    if (isWindows) {",
+      "      const output = execSync(\"netstat -ano -p tcp\", {",
+      "        encoding: \"utf-8\",",
+      "        timeout: 5000,",
+      "      });",
+      "      const myPid = process.pid;"
+     ],
+     "total": 49
+    },
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 19,
-    "tokens": 150,
-    "firstFile": {
-     "name": "packages/portless/src/proxy.test.ts",
-     "start": 1559,
-     "end": 1577
+    "tokens": 98,
+    "first": {
+     "name": "packages/portless/src/cli.test.ts",
+     "start": 1162,
+     "end": 1180
     },
-    "secondFile": {
-     "name": "packages/portless/src/proxy.test.ts",
-     "start": 1580,
-     "end": 1601
-    }
+    "others": [
+     {
+      "name": "packages/portless/src/cli.test.ts",
+      "start": 1250,
+      "end": 1268
+     },
+     {
+      "name": "packages/portless/src/cli.test.ts",
+      "start": 1288,
+      "end": 1307
+     },
+     {
+      "name": "packages/portless/src/cli.test.ts",
+      "start": 1381,
+      "end": 1397
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
     "format": "typescript",
-    "lines": 27,
-    "tokens": 139,
-    "firstFile": {
-     "name": "packages/portless/src/proxy.ts",
-     "start": 335,
-     "end": 361
+    "lines": 10,
+    "tokens": 77,
+    "first": {
+     "name": "packages/portless/src/proxy.test.ts",
+     "start": 146,
+     "end": 155
     },
-    "secondFile": {
-     "name": "packages/portless/src/proxy.ts",
-     "start": 448,
-     "end": 473
-    }
+    "others": [
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 193,
+      "end": 204
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1411,
+      "end": 1422
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1480,
+      "end": 1491
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
     "format": "typescript",
-    "lines": 26,
-    "tokens": 134,
-    "firstFile": {
-     "name": "packages/portless/src/service.test.ts",
-     "start": 451,
-     "end": 476
-    },
-    "secondFile": {
-     "name": "packages/portless/src/service.test.ts",
-     "start": 586,
-     "end": 610
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 20,
-    "tokens": 125,
-    "firstFile": {
+    "lines": 14,
+    "tokens": 75,
+    "first": {
      "name": "packages/portless/src/proxy.test.ts",
-     "start": 819,
-     "end": 838
+     "start": 1487,
+     "end": 1500
     },
-    "secondFile": {
-     "name": "packages/portless/src/proxy.test.ts",
-     "start": 1607,
-     "end": 1626
-    }
+    "others": [
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1622,
+      "end": 1635
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 2095,
+      "end": 2109
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 2170,
+      "end": 2187
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 16,
-    "tokens": 123,
-    "firstFile": {
-     "name": "packages/portless/src/proxy.test.ts",
-     "start": 146,
-     "end": 161
+    "tokens": 55,
+    "first": {
+     "name": "packages/portless/src/cli-utils.test.ts",
+     "start": 1181,
+     "end": 1196
     },
-    "secondFile": {
-     "name": "packages/portless/src/proxy.test.ts",
-     "start": 532,
-     "end": 547
-    }
+    "others": [
+     {
+      "name": "packages/portless/src/cli-utils.test.ts",
+      "start": 1251,
+      "end": 1266
+     },
+     {
+      "name": "packages/portless/src/cli-utils.test.ts",
+      "start": 1267,
+      "end": 1282
+     },
+     {
+      "name": "packages/portless/src/cli-utils.test.ts",
+      "start": 1446,
+      "end": 1463
+     },
+     {
+      "name": "packages/portless/src/cli-utils.test.ts",
+      "start": 1473,
+      "end": 1488
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
    },
    {
     "format": "typescript",
-    "lines": 21,
-    "tokens": 121,
-    "firstFile": {
+    "lines": 8,
+    "tokens": 55,
+    "first": {
      "name": "packages/portless/src/proxy.test.ts",
-     "start": 825,
-     "end": 845
+     "start": 77,
+     "end": 84
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 89,
+      "end": 96
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 645,
+      "end": 652
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 656,
+      "end": 663
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1080,
+      "end": 1088
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 11,
+    "tokens": 55,
+    "first": {
      "name": "packages/portless/src/proxy.test.ts",
-     "start": 1224,
-     "end": 1242
-    }
+     "start": 1418,
+     "end": 1428
+    },
+    "others": [
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1544,
+      "end": 1554
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1622,
+      "end": 1632
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 2095,
+      "end": 2105
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 2170,
+      "end": 2180
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 17,
+    "tokens": 107,
+    "first": {
+     "name": "packages/portless/src/proxy.test.ts",
+     "start": 819,
+     "end": 835
+    },
+    "others": [
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1607,
+      "end": 1623
+     },
+     {
+      "name": "packages/portless/src/proxy.test.ts",
+      "start": 1981,
+      "end": 1997
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    }
-  ]
+  ],
+  "code": {
+   "sources": 39,
+   "lines": 14431,
+   "tokens": 72210,
+   "clones": 28,
+   "duplicatedLines": 323,
+   "duplicatedTokens": 1966,
+   "percentage": 2.24,
+   "percentageTokens": 2.72,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 23,
+     "lines": 13166,
+     "clones": 27,
+     "duplicatedLines": 312,
+     "percentage": 2.37
+    },
+    {
+     "format": "bash",
+     "sources": 14,
+     "lines": 1058,
+     "clones": 1,
+     "duplicatedLines": 11,
+     "percentage": 1.04
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 33,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 27,
+     "tokens": 139,
+     "first": {
+      "name": "packages/portless/src/proxy.ts",
+      "start": 335,
+      "end": 361
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/proxy.ts",
+       "start": 448,
+       "end": 473
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "const forwardedHeaders = buildForwardedHeaders(req, reqTls);",
+       "const proxyReqHeaders: http.OutgoingHttpHeaders = { ...req.headers };",
+       "for (const [key, value] of Object.entries(forwardedHeaders)) {",
+       "  proxyReqHeaders[key] = value;",
+       "}",
+       "proxyReqHeaders[PORTLESS_HOPS_HEADER] = String(hops + 1);",
+       "// Remove HTTP/2 pseudo-headers before forwarding to HTTP/1.1 backend",
+       "for (const key of Object.keys(proxyReqHeaders)) {",
+       "  if (key.startsWith(\":\")) {",
+       "    delete proxyReqHeaders[key];"
+      ],
+      "total": 27
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 20,
+     "tokens": 116,
+     "first": {
+      "name": "packages/portless/src/cli.ts",
+      "start": 1754,
+      "end": 1773
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/cli.ts",
+       "start": 1780,
+       "end": 1799
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "while (i < args.length && args[i].startsWith(\"-\")) {",
+       "  if (args[i] === \"--\") {",
+       "    i++;",
+       "    break;",
+       "  } else if (args[i] === \"--force\") {",
+       "    force = true;",
+       "  } else if (args[i] === \"--app-port\") {",
+       "    i++;",
+       "    appPort = parseAppPort(args[i]);",
+       "  } else if (applySharingFlag(args[i])) {"
+      ],
+      "total": 20
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 17,
+     "tokens": 104,
+     "first": {
+      "name": "packages/portless/src/routes.ts",
+      "start": 174,
+      "end": 190
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/routes.ts",
+       "start": 258,
+       "end": 274
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "loadRoutes(persistCleanup = false): RouteMapping[] {",
+       "  if (!fs.existsSync(this.routesPath)) {",
+       "    return [];",
+       "  }",
+       "  try {",
+       "    const raw = fs.readFileSync(this.routesPath, \"utf-8\");",
+       "    let parsed: unknown;",
+       "    try {",
+       "      parsed = JSON.parse(raw);",
+       "    } catch {"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 98,
+     "first": {
+      "name": "packages/portless/src/cli.ts",
+      "start": 921,
+      "end": 936
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/cli.ts",
+       "start": 1016,
+       "end": 1031
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 13,
+     "tokens": 92,
+     "first": {
+      "name": "packages/portless/src/cli.ts",
+      "start": 173,
+      "end": 185
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/service.ts",
+       "start": 25,
+       "end": 37
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 87,
+     "first": {
+      "name": "packages/portless/src/cli.ts",
+      "start": 3963,
+      "end": 3972
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/cli.ts",
+       "start": 4064,
+       "end": 4073
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 85,
+     "first": {
+      "name": "packages/portless/src/proxy.ts",
+      "start": 448,
+      "end": 459
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/proxy.ts",
+       "start": 597,
+       "end": 608
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 80,
+     "first": {
+      "name": "packages/portless/src/cli.ts",
+      "start": 3695,
+      "end": 3702
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/cli.ts",
+       "start": 3720,
+       "end": 3728
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 75,
+     "first": {
+      "name": "packages/portless/src/certs.ts",
+      "start": 483,
+      "end": 497
+     },
+     "others": [
+      {
+       "name": "packages/portless/src/certs.ts",
+       "start": 1043,
+       "end": 1051
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 11,
+     "tokens": 75,
+     "first": {
+      "name": "scripts/windows-debug/run.sh",
+      "start": 61,
+      "end": 71
+     },
+     "others": [
+      {
+       "name": "scripts/windows-debug/run.sh",
+       "start": 74,
+       "end": 84
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:47:48.237Z",
+  "jscpdVersion": "5.4.0"
  }
 }

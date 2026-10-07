@@ -9,10 +9,12 @@
    "starsToday": 333,
    "headSha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
    "sources": 24,
-   "lines": 3692,
+   "lines": 2157,
    "clones": 2,
-   "duplicatedLines": 62,
-   "percentage": 1.68,
+   "duplicatedLines": 60,
+   "percentage": 2.78,
+   "codePercentage": null,
+   "codeSources": 10,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,16 +30,16 @@
   "starsToday": 333,
   "defaultBranch": "main",
   "headSha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-  "durationMs": 545,
+  "durationMs": 24,
   "total": {
    "sources": 24,
-   "lines": 3692,
-   "tokens": 11286,
+   "lines": 2157,
+   "tokens": 11121,
    "clones": 2,
-   "duplicatedLines": 62,
+   "duplicatedLines": 60,
    "duplicatedTokens": 390,
-   "percentage": 1.68,
-   "percentageTokens": 3.46
+   "percentage": 2.78,
+   "percentageTokens": 3.51
   },
   "formats": [
    {
@@ -45,21 +47,21 @@
     "sources": 6,
     "lines": 1024,
     "clones": 1,
-    "duplicatedLines": 56,
-    "percentage": 5.47
+    "duplicatedLines": 57,
+    "percentage": 5.57
    },
    {
     "format": "bash",
     "sources": 11,
-    "lines": 944,
+    "lines": 650,
     "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 0.64
+    "duplicatedLines": 3,
+    "percentage": 0.46
    },
    {
-    "format": "text",
-    "sources": 3,
-    "lines": 671,
+    "format": "perl",
+    "sources": 1,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -67,7 +69,7 @@
    {
     "format": "python",
     "sources": 1,
-    "lines": 493,
+    "lines": 116,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -75,15 +77,15 @@
    {
     "format": "diff",
     "sources": 1,
-    "lines": 363,
+    "lines": 89,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
+    "format": "text",
+    "sources": 3,
+    "lines": 75,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -102,32 +104,115 @@
     "format": "markdown",
     "lines": 57,
     "tokens": 325,
-    "firstFile": {
+    "first": {
      "name": "CLAUDE.md:markdown",
      "start": 5,
      "end": 61
     },
-    "secondFile": {
-     "name": "skills/karpathy-guidelines/SKILL.md:markdown",
-     "start": 11,
-     "end": 67
-    }
+    "others": [
+     {
+      "name": "skills/karpathy-guidelines/SKILL.md:markdown",
+      "start": 11,
+      "end": 67
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "**Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.",
+      "",
+      "## 1. Think Before Coding",
+      "",
+      "**Don't assume. Don't hide confusion. Surface tradeoffs.**",
+      "",
+      "Before implementing:",
+      "- State your assumptions explicitly. If uncertain, ask.",
+      "- If multiple interpretations exist, present them - don't pick silently.",
+      "- If a simpler approach exists, say so. Push back when warranted."
+     ],
+     "total": 57
+    },
+    "kind": "docs"
    },
    {
     "format": "bash",
     "lines": 7,
     "tokens": 65,
-    "firstFile": {
+    "first": {
      "name": "README.md:bash",
      "start": 119,
      "end": 125
     },
-    "secondFile": {
-     "name": "README.zh.md:bash",
-     "start": 119,
-     "end": 125
-    }
+    "others": [
+     {
+      "name": "README.zh.md:bash",
+      "start": 119,
+      "end": 125
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md",
+      "```",
+      "",
+      "Existing project (append):",
+      "```bash",
+      "echo \"\" >> CLAUDE.md",
+      "curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md",
+      "```",
+      "",
+      "已有项目（追加）：",
+      "```bash",
+      "echo \"\" >> CLAUDE.md",
+      "curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md"
+     ],
+     "total": 7
+    },
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 10,
+   "lines": 818,
+   "tokens": 3040,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:52:34.108Z",
+  "jscpdVersion": "5.4.0"
  }
 }

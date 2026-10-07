@@ -9,10 +9,12 @@
    "starsToday": 153,
    "headSha": "1367c9becdc2b0ace9d8dc0d412e530125642365",
    "sources": 294,
-   "lines": 58698,
-   "clones": 200,
-   "duplicatedLines": 3156,
-   "percentage": 5.38,
+   "lines": 54421,
+   "clones": 223,
+   "duplicatedLines": 3270,
+   "percentage": 6.01,
+   "codePercentage": 3.79,
+   "codeSources": 108,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,70 +30,70 @@
   "starsToday": 153,
   "defaultBranch": "main",
   "headSha": "1367c9becdc2b0ace9d8dc0d412e530125642365",
-  "durationMs": 642,
+  "durationMs": 114,
   "total": {
    "sources": 294,
-   "lines": 58698,
-   "tokens": 414760,
-   "clones": 200,
-   "duplicatedLines": 3156,
-   "duplicatedTokens": 27075,
-   "percentage": 5.38,
-   "percentageTokens": 6.53
+   "lines": 54421,
+   "tokens": 414595,
+   "clones": 223,
+   "duplicatedLines": 3270,
+   "duplicatedTokens": 28199,
+   "percentage": 6.01,
+   "percentageTokens": 6.8
   },
   "formats": [
    {
     "format": "python",
     "sources": 159,
     "lines": 43653,
-    "clones": 142,
-    "duplicatedLines": 1435,
-    "percentage": 3.29
+    "clones": 163,
+    "duplicatedLines": 1707,
+    "percentage": 3.91
    },
    {
     "format": "markdown",
     "sources": 49,
     "lines": 8586,
-    "clones": 45,
-    "duplicatedLines": 1330,
-    "percentage": 15.49
+    "clones": 46,
+    "duplicatedLines": 1382,
+    "percentage": 16.1
    },
    {
     "format": "yaml",
     "sources": 43,
-    "lines": 615,
+    "lines": 578,
     "clones": 6,
-    "duplicatedLines": 45,
-    "percentage": 7.32
+    "duplicatedLines": 51,
+    "percentage": 8.82
    },
    {
     "format": "bash",
     "sources": 19,
-    "lines": 2413,
-    "clones": 3,
-    "duplicatedLines": 93,
+    "lines": 754,
+    "clones": 4,
+    "duplicatedLines": 29,
     "percentage": 3.85
    },
    {
     "format": "text",
     "sources": 13,
-    "lines": 1936,
+    "lines": 310,
     "clones": 3,
-    "duplicatedLines": 243,
-    "percentage": 12.55
+    "duplicatedLines": 90,
+    "percentage": 29.03
    },
    {
     "format": "json",
     "sources": 7,
-    "lines": 970,
+    "lines": 155,
     "clones": 1,
-    "duplicatedLines": 10,
-    "percentage": 1.03
+    "duplicatedLines": 11,
+    "percentage": 7.1
    },
    {
     "format": "toml",
     "sources": 2,
-    "lines": 259,
+    "lines": 189,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -99,7 +101,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -107,7 +109,7 @@
    {
     "format": "sql",
     "sources": 1,
-    "lines": 98,
+    "lines": 22,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -118,152 +120,684 @@
     "format": "markdown",
     "lines": 183,
     "tokens": 2882,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch.md:markdown",
      "start": 105,
      "end": 287
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch.md:markdown",
-     "start": 105,
-     "end": 287
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch.md:markdown",
+      "start": 105,
+      "end": 287
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "   For a standard run, pass the installed gear (`<< p.name >>`) unless the user asked for something else.",
+      "   Pass `--budget <usd>` when the user set a spend ceiling. This scaffolds `research/runs/<vault_tag>/` (with `temp/`) and writes `run.json` — the run manifest…",
+      "",
+      "3. **Persist the query file.** Write the verbatim canonical query to `research/runs/<vault_tag>/query.md`:",
+      "   ```markdown",
+      "   ---",
+      "   vault_tag: <slug>",
+      "   created: <ISO-8601 timestamp>",
+      "   source: prompt.txt | user-prompt",
+      "   ---"
+     ],
+     "total": 183
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 152,
     "tokens": 994,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-16-readability-audit.md:markdown",
      "start": 15,
      "end": 166
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-16-readability-audit.md:markdown",
-     "start": 15,
-     "end": 166
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-16-readability-audit.md:markdown",
+      "start": 15,
+      "end": 166
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Step 16 — Readability audit & selective apply (FINAL STEP)",
+      "",
+      "**Tier gate:** Runs for ALL tiers. Every report gets a readability audit, regardless of tier — readability is the dimension where small structural changes (par…",
+      "",
+      "**Goal:** improve the report's visual structure, paragraph rhythm, and scannability without changing substantive content. The recommender writes a JSON list of…",
+      "",
+      "**Why split recommender + orchestrator-applied:** an Edit-based reformatter (V7-style) sometimes makes changes that hurt the argument — converting a flowing pa…",
+      "",
+      "---",
+      ""
+     ],
+     "total": 152
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 61,
     "tokens": 982,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-2-width-sweep.md:markdown",
      "start": 16,
      "end": 76
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-2-width-sweep.md:markdown",
-     "start": 16,
-     "end": 76
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-2-width-sweep.md:markdown",
+      "start": 16,
+      "end": 76
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "**Goal:** achieve comprehensive topical coverage — every atomic item from the decomposition must have at least 3 supporting sources by the end of this step. Ta…",
+      "",
+      "---",
+      "",
+      "## Recover state",
+      "",
+      "Read these inputs:",
+      "- `research/runs/<vault_tag>/scaffold.md` — vault_tag (in Run config), modality",
+      "- `research/runs/<vault_tag>/prompt-decomposition.json` — atomic items, sub_questions, entities, pipeline_tier",
+      "- `research/runs/<vault_tag>/temp/coverage-matrix.md` — verbatim query phrases mapped to atomic items"
+     ],
+     "total": 61
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 39,
     "tokens": 667,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-10-triple-draft.md:markdown",
      "start": 62,
      "end": 100
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-10-triple-draft.md:markdown",
-     "start": 62,
-     "end": 100
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-10-triple-draft.md:markdown",
+      "start": 62,
+      "end": 100
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 74,
     "tokens": 649,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-5-depth-investigation.md:markdown",
      "start": 34,
      "end": 107
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-5-depth-investigation.md:markdown",
-     "start": 34,
-     "end": 107
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-5-depth-investigation.md:markdown",
+      "start": 34,
+      "end": 107
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 35,
     "tokens": 600,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-10-triple-draft.md:markdown",
      "start": 14,
      "end": 48
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-10-triple-draft.md:markdown",
-     "start": 14,
-     "end": 48
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-10-triple-draft.md:markdown",
+      "start": 14,
+      "end": 48
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 83,
     "tokens": 594,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-10-triple-draft.md:markdown",
      "start": 144,
      "end": 226
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-10-triple-draft.md:markdown",
-     "start": 144,
-     "end": 226
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-10-triple-draft.md:markdown",
+      "start": 144,
+      "end": 226
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 29,
     "tokens": 566,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch.md:markdown",
      "start": 77,
      "end": 105
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch.md:markdown",
-     "start": 77,
-     "end": 105
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch.md:markdown",
+      "start": 77,
+      "end": 105
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 66,
     "tokens": 499,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-2-width-sweep.md:markdown",
      "start": 222,
      "end": 287
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-2-width-sweep.md:markdown",
-     "start": 222,
-     "end": 287
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-2-width-sweep.md:markdown",
+      "start": 222,
+      "end": 287
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "text",
     "lines": 188,
     "tokens": 487,
-    "firstFile": {
+    "first": {
      "name": "src/hyperresearch/skills/hyperresearch-2-width-sweep.md:text",
      "start": 136,
      "end": 323
     },
-    "secondFile": {
-     "name": "tests/fixtures/golden_prompts/skills/hyperresearch-2-width-sweep.md:text",
-     "start": 136,
-     "end": 323
-    }
+    "others": [
+     {
+      "name": "tests/fixtures/golden_prompts/skills/hyperresearch-2-width-sweep.md:text",
+      "start": 136,
+      "end": 323
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 108,
+   "lines": 28795,
+   "tokens": 180187,
+   "clones": 98,
+   "duplicatedLines": 1091,
+   "duplicatedTokens": 6587,
+   "percentage": 3.79,
+   "percentageTokens": 3.66,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 98,
+     "lines": 27977,
+     "clones": 98,
+     "duplicatedLines": 1091,
+     "percentage": 3.9
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 59,
+     "first": {
+      "name": "src/hyperresearch/cli/archive.py",
+      "start": 110,
+      "end": 119
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/cli/assets.py",
+       "start": 20,
+       "end": 29
+      },
+      {
+       "name": "src/hyperresearch/cli/citecheck_cmd.py",
+       "start": 29,
+       "end": 38
+      },
+      {
+       "name": "src/hyperresearch/cli/embed_cmd.py",
+       "start": 24,
+       "end": 33
+      },
+      {
+       "name": "src/hyperresearch/cli/graph.py",
+       "start": 304,
+       "end": 313
+      },
+      {
+       "name": "src/hyperresearch/cli/link.py",
+       "start": 28,
+       "end": 37
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 114,
+       "end": 123
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 151,
+       "end": 160
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 231,
+       "end": 240
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "from hyperresearch.core.vault import Vault, VaultError",
+       "",
+       "try:",
+       "    vault = Vault.discover()",
+       "except VaultError as e:",
+       "    if json_output:",
+       "        output(error(str(e), \"NO_VAULT\"), json_mode=True)",
+       "    else:",
+       "        console.print(f\"[red]Error:[/] {e}\")",
+       "    raise typer.Exit(1)"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 60,
+     "first": {
+      "name": "src/hyperresearch/cli/assets.py",
+      "start": 19,
+      "end": 29
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/cli/assets.py",
+       "start": 80,
+       "end": 90
+      },
+      {
+       "name": "src/hyperresearch/cli/embed_cmd.py",
+       "start": 58,
+       "end": 68
+      },
+      {
+       "name": "src/hyperresearch/cli/git_cmd.py",
+       "start": 33,
+       "end": 43
+      },
+      {
+       "name": "src/hyperresearch/cli/import_cmd.py",
+       "start": 20,
+       "end": 30
+      },
+      {
+       "name": "src/hyperresearch/cli/repair.py",
+       "start": 21,
+       "end": 31
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 19,
+       "end": 29
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 69,
+       "end": 79
+      }
+     ],
+     "copies": 8,
+     "excerpt": {
+      "lines": [
+       "\"\"\"List downloaded assets (images, screenshots, PDFs).\"\"\"",
+       "from hyperresearch.core.vault import Vault, VaultError",
+       "",
+       "try:",
+       "    vault = Vault.discover()",
+       "except VaultError as e:",
+       "    if json_output:",
+       "        output(error(str(e), \"NO_VAULT\"), json_mode=True)",
+       "    else:",
+       "        console.print(f\"[red]Error:[/] {e}\")"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 52,
+     "first": {
+      "name": "src/hyperresearch/core/hooks.py",
+      "start": 129,
+      "end": 138
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 347,
+       "end": 356
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 623,
+       "end": 632
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 750,
+       "end": 759
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 1371,
+       "end": 1380
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 1529,
+       "end": 1538
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 2764,
+       "end": 2773
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 3208,
+       "end": 3217
+      }
+     ],
+     "copies": 8,
+     "excerpt": {
+      "lines": [
+       "depth packet becomes a weak draft section.",
+       "",
+       "## Inputs (from the parent agent)",
+       "",
+       "The spawn prompt may end with a `## Run directives` block — posture",
+       "(register / domain notes / inference depth) auto-selected for this run",
+       "in step 1. It is BINDING and wins wherever it adjusts a default in this",
+       "prompt. No block = this prompt's defaults apply unchanged.",
+       "",
+       "- **research_query**: the user's original question, verbatim. GOSPEL."
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "reading of the evidence.",
+       "",
+       "## Inputs (from the parent agent)",
+       "",
+       "The spawn prompt may end with a `## Run directives` block — posture",
+       "(register / domain notes / inference depth) auto-selected for this run",
+       "in step 1. It is BINDING and wins wherever it adjusts a default in this",
+       "prompt. No block = this prompt's defaults apply unchanged.",
+       "",
+       "- **locus**: the full locus object from the loci-analyst output (name,"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 54,
+     "first": {
+      "name": "src/hyperresearch/cli/assets.py",
+      "start": 22,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/cli/citecheck_cmd.py",
+       "start": 31,
+       "end": 40
+      },
+      {
+       "name": "src/hyperresearch/cli/embed_cmd.py",
+       "start": 26,
+       "end": 35
+      },
+      {
+       "name": "src/hyperresearch/cli/link.py",
+       "start": 30,
+       "end": 39
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 116,
+       "end": 125
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 153,
+       "end": 162
+      },
+      {
+       "name": "src/hyperresearch/cli/sources.py",
+       "start": 233,
+       "end": 242
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 55,
+     "first": {
+      "name": "src/hyperresearch/core/hooks.py",
+      "start": 627,
+      "end": 632
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 754,
+       "end": 759
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 870,
+       "end": 875
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 2545,
+       "end": 2550
+      },
+      {
+       "name": "src/hyperresearch/core/hooks.py",
+       "start": 3212,
+       "end": 3217
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 59,
+     "first": {
+      "name": "src/hyperresearch/cli/assets.py",
+      "start": 22,
+      "end": 32
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/cli/fetch.py",
+       "start": 234,
+       "end": 244
+      },
+      {
+       "name": "src/hyperresearch/cli/fetch_batch.py",
+       "start": 54,
+       "end": 64
+      },
+      {
+       "name": "src/hyperresearch/cli/graph.py",
+       "start": 306,
+       "end": 316
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 168,
+     "first": {
+      "name": "src/hyperresearch/core/db.py",
+      "start": 19,
+      "end": 40
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/core/migrations.py",
+       "start": 122,
+       "end": 143
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 71,
+     "first": {
+      "name": "src/hyperresearch/cli/escalation_cmd.py",
+      "start": 219,
+      "end": 229
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/cli/escalation_cmd.py",
+       "start": 242,
+       "end": 252
+      },
+      {
+       "name": "src/hyperresearch/cli/escalation_cmd.py",
+       "start": 266,
+       "end": 276
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 136,
+     "first": {
+      "name": "src/hyperresearch/cli/note.py",
+      "start": 46,
+      "end": 68
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/cli/note.py",
+       "start": 309,
+       "end": 331
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 134,
+     "first": {
+      "name": "src/hyperresearch/core/db.py",
+      "start": 143,
+      "end": 164
+     },
+     "others": [
+      {
+       "name": "src/hyperresearch/core/migrations.py",
+       "start": 219,
+       "end": 239
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "src/hyperresearch/indexgen/__init__.py"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:57:43.717Z",
+  "jscpdVersion": "5.4.0"
  }
 }

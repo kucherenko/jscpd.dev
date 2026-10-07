@@ -13,6 +13,8 @@
    "clones": 2576,
    "duplicatedLines": 60003,
    "percentage": 21.21,
+   "codePercentage": 24.6,
+   "codeSources": 775,
    "healthScore": 44.1,
    "healthGrade": "D"
   }
@@ -28,7 +30,7 @@
   "starsToday": 183,
   "defaultBranch": "master",
   "headSha": "d2cf284ef29a93968ec30e192cdad1535374affd",
-  "durationMs": 2261,
+  "durationMs": 1114,
   "total": {
    "sources": 1179,
    "lines": 282948,
@@ -102,151 +104,321 @@
     "format": "python",
     "lines": 1047,
     "tokens": 18840,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/bb_agc_tab_tbl.py",
      "start": 11,
      "end": 1057
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtw88_8814au/assets/agc_tbl.py",
-     "start": 10,
-     "end": 3149
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtw88_8814au/assets/agc_tbl.py",
+      "start": 10,
+      "end": 3149
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "0x80000002, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+      "0x90000003, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+      "0x90000004, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+      "0x90000005, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+      "0x90000007, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFF000003,",
+      "0x90000008, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+      "0x90000009, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFF000003,",
+      "0x9000000A, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+      "0x9000000B, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+      "0xA0000000, 0x00000000, 0x0000081C, 0xFF000003, 0xB0000000, 0x00000000,"
+     ],
+     "total": 1047
+    },
+    "excerptSecond": {
+     "lines": [
+      "0x80000002, 0x00000000,",
+      "0x40000000, 0x00000000,",
+      "0x0000081C, 0xFE000003,",
+      "0x90000003, 0x00000000,",
+      "0x40000000, 0x00000000,",
+      "0x0000081C, 0xFE000003,",
+      "0x90000004, 0x00000000,",
+      "0x40000000, 0x00000000,",
+      "0x0000081C, 0xFE000003,",
+      "0x90000005, 0x00000000,"
+     ],
+     "total": 3140
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 773,
     "tokens": 13902,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_a_tbl.py",
      "start": 11,
      "end": 783
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtw88_8814au/assets/rf_a_tbl.py",
-     "start": 10,
-     "end": 2326
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtw88_8814au/assets/rf_a_tbl.py",
+      "start": 10,
+      "end": 2326
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "0x00000018, 0x00013124, 0x00000040, 0x00000C00, 0x00000058, 0x00000F98,",
+      "0x0000007F, 0x00068004, 0x000000B0, 0x000FFFFE, 0x000000B1, 0x0003FF48,",
+      "0x000000B2, 0x0006AA3F, 0x000000B3, 0x000FFC9A, 0x000000B4, 0x0000A78F,",
+      "0x000000B5, 0x00000A3F, 0x000000B6, 0x0000C09C, 0x80000001, 0x00000000,",
+      "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000002, 0x00000000,",
+      "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000003, 0x00000000,",
+      "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000004, 0x00000000,",
+      "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000005, 0x00000000,",
+      "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000006, 0x00000000,",
+      "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000008, 0x00000000,"
+     ],
+     "total": 773
+    },
+    "excerptSecond": {
+     "lines": [
+      "0x00000018, 0x00013124,",
+      "0x00000040, 0x00000C00,",
+      "0x00000058, 0x00000F98,",
+      "0x0000007F, 0x00068004,",
+      "0x000000B0, 0x000FFFFE,",
+      "0x000000B1, 0x0003FF48,",
+      "0x000000B2, 0x0006AA3F,",
+      "0x000000B3, 0x000FFC9A,",
+      "0x000000B4, 0x0000A78F,",
+      "0x000000B5, 0x00000A3F,"
+     ],
+     "total": 2317
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 771,
     "tokens": 13866,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/bb_phy_reg_tbl.py",
      "start": 11,
      "end": 781
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtw88_8814au/assets/bb_tbl.py",
-     "start": 10,
-     "end": 2320
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtw88_8814au/assets/bb_tbl.py",
+      "start": 10,
+      "end": 2320
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "0x00000800, 0x9020D010, 0x00000804, 0x08011280, 0x00000808, 0x0E0282FF,",
+      "0x0000080C, 0x1000002F, 0x80000003, 0x00000000, 0x40000000, 0x00000000,",
+      "0x00000810, 0x33303265, 0xA0000000, 0x00000000, 0x00000810, 0x33303265,",
+      "0xB0000000, 0x00000000, 0x00000814, 0x020C3D10, 0x00000818, 0x04A10385,",
+      "0x00000820, 0x00000000, 0x00000824, 0x00033E40, 0x00000828, 0x00000000,",
+      "0x0000082C, 0x73985170, 0x00000830, 0x79A0EA08, 0x00000834, 0x042E708A,",
+      "0x80000002, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667640,",
+      "0x90000004, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667641,",
+      "0x9000000A, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667641,",
+      "0x9000000B, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667641,"
+     ],
+     "total": 771
+    },
+    "excerptSecond": {
+     "lines": [
+      "0x00000800, 0x9020D010,",
+      "0x00000804, 0x08011280,",
+      "0x00000808, 0x0E0282FF,",
+      "0x0000080C, 0x1000002F,",
+      "0x80000003, 0x00000000,",
+      "0x40000000, 0x00000000,",
+      "0x00000810, 0x33303265,",
+      "0xA0000000, 0x00000000,",
+      "0x00000810, 0x33303265,",
+      "0xB0000000, 0x00000000,"
+     ],
+     "total": 2311
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 755,
     "tokens": 13569,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_d_tbl.py",
      "start": 23,
      "end": 777
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtw88_8814au/assets/rf_d_tbl.py",
-     "start": 48,
-     "end": 2309
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtw88_8814au/assets/rf_d_tbl.py",
+      "start": 48,
+      "end": 2309
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 742,
     "tokens": 13341,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_c_tbl.py",
      "start": 23,
      "end": 764
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtw88_8814au/assets/rf_c_tbl.py",
-     "start": 48,
-     "end": 2271
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtw88_8814au/assets/rf_c_tbl.py",
+      "start": 48,
+      "end": 2271
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 733,
     "tokens": 13188,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_b_tbl.py",
      "start": 11,
      "end": 743
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtw88_8814au/assets/rf_b_tbl.py",
-     "start": 10,
-     "end": 2207
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtw88_8814au/assets/rf_b_tbl.py",
+      "start": 10,
+      "end": 2207
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 429,
     "tokens": 7677,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/bb_phy_reg_tbl.py",
      "start": 354,
      "end": 782
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtw88_8814au/assets/bb_tbl.py",
-     "start": 1041,
-     "end": 2321
-    }
-   },
-   {
-    "format": "python",
-    "lines": 867,
-    "tokens": 5202,
-    "firstFile": {
-     "name": "src/wifit3/chips/rtl8821au/assets/rf_a_tbl.py",
-     "start": 10,
-     "end": 876
-    },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtl8821au_dkms/rf_radioa_tbl.py",
-     "start": 5,
-     "end": 221
-    }
-   },
-   {
-    "format": "python",
-    "lines": 122,
-    "tokens": 3871,
-    "firstFile": {
-     "name": "src/wifit3/chips/rtl8822bu_dkms/rf_radioa_tbl.py",
-     "start": 724,
-     "end": 845
-    },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtl8822bu_dkms/rf_radiob_tbl.py",
-     "start": 577,
-     "end": 698
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtw88_8814au/assets/bb_tbl.py",
+      "start": 1041,
+      "end": 2321
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 183,
     "tokens": 3286,
-    "firstFile": {
+    "first": {
      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_b_tbl.py",
      "start": 502,
      "end": 684
     },
-    "secondFile": {
-     "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_c_tbl.py",
-     "start": 523,
-     "end": 706
-    }
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_c_tbl.py",
+      "start": 523,
+      "end": 706
+     },
+     {
+      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_d_tbl.py",
+      "start": 536,
+      "end": 718
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 17,
+    "tokens": 535,
+    "first": {
+     "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+     "start": 1339,
+     "end": 1355
+    },
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1372,
+      "end": 1389
+     },
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1389,
+      "end": 1406
+     },
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1422,
+      "end": 1439
+     },
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1473,
+      "end": 1489
+     },
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1506,
+      "end": 1523
+     },
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1540,
+      "end": 1556
+     },
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1556,
+      "end": 1573
+     },
+     {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1573,
+      "end": 1590
+     }
+    ],
+    "copies": 13,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 867,
+    "tokens": 5202,
+    "first": {
+     "name": "src/wifit3/chips/rtl8821au/assets/rf_a_tbl.py",
+     "start": 10,
+     "end": 876
+    },
+    "others": [
+     {
+      "name": "src/wifit3/chips/rtl8821au_dkms/rf_radioa_tbl.py",
+      "start": 5,
+      "end": 221
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -459,6 +631,363 @@
      "lines": 71
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 775,
+   "lines": 222294,
+   "tokens": 1746651,
+   "clones": 2207,
+   "duplicatedLines": 54677,
+   "duplicatedTokens": 501604,
+   "percentage": 24.6,
+   "percentageTokens": 28.72,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 774,
+     "lines": 222216,
+     "clones": 2207,
+     "duplicatedLines": 54677,
+     "percentage": 24.61
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 78,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 1047,
+     "tokens": 18840,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/bb_agc_tab_tbl.py",
+      "start": 11,
+      "end": 1057
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtw88_8814au/assets/agc_tbl.py",
+       "start": 10,
+       "end": 3149
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "0x80000002, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+       "0x90000003, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+       "0x90000004, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+       "0x90000005, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+       "0x90000007, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFF000003,",
+       "0x90000008, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+       "0x90000009, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFF000003,",
+       "0x9000000A, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+       "0x9000000B, 0x00000000, 0x40000000, 0x00000000, 0x0000081C, 0xFE000003,",
+       "0xA0000000, 0x00000000, 0x0000081C, 0xFF000003, 0xB0000000, 0x00000000,"
+      ],
+      "total": 1047
+     },
+     "excerptSecond": {
+      "lines": [
+       "0x80000002, 0x00000000,",
+       "0x40000000, 0x00000000,",
+       "0x0000081C, 0xFE000003,",
+       "0x90000003, 0x00000000,",
+       "0x40000000, 0x00000000,",
+       "0x0000081C, 0xFE000003,",
+       "0x90000004, 0x00000000,",
+       "0x40000000, 0x00000000,",
+       "0x0000081C, 0xFE000003,",
+       "0x90000005, 0x00000000,"
+      ],
+      "total": 3140
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 773,
+     "tokens": 13902,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_a_tbl.py",
+      "start": 11,
+      "end": 783
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtw88_8814au/assets/rf_a_tbl.py",
+       "start": 10,
+       "end": 2326
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "0x00000018, 0x00013124, 0x00000040, 0x00000C00, 0x00000058, 0x00000F98,",
+       "0x0000007F, 0x00068004, 0x000000B0, 0x000FFFFE, 0x000000B1, 0x0003FF48,",
+       "0x000000B2, 0x0006AA3F, 0x000000B3, 0x000FFC9A, 0x000000B4, 0x0000A78F,",
+       "0x000000B5, 0x00000A3F, 0x000000B6, 0x0000C09C, 0x80000001, 0x00000000,",
+       "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000002, 0x00000000,",
+       "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000003, 0x00000000,",
+       "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000004, 0x00000000,",
+       "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000005, 0x00000000,",
+       "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000006, 0x00000000,",
+       "0x40000000, 0x00000000, 0x000000B7, 0x00030008, 0x90000008, 0x00000000,"
+      ],
+      "total": 773
+     },
+     "excerptSecond": {
+      "lines": [
+       "0x00000018, 0x00013124,",
+       "0x00000040, 0x00000C00,",
+       "0x00000058, 0x00000F98,",
+       "0x0000007F, 0x00068004,",
+       "0x000000B0, 0x000FFFFE,",
+       "0x000000B1, 0x0003FF48,",
+       "0x000000B2, 0x0006AA3F,",
+       "0x000000B3, 0x000FFC9A,",
+       "0x000000B4, 0x0000A78F,",
+       "0x000000B5, 0x00000A3F,"
+      ],
+      "total": 2317
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 771,
+     "tokens": 13866,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/bb_phy_reg_tbl.py",
+      "start": 11,
+      "end": 781
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtw88_8814au/assets/bb_tbl.py",
+       "start": 10,
+       "end": 2320
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "0x00000800, 0x9020D010, 0x00000804, 0x08011280, 0x00000808, 0x0E0282FF,",
+       "0x0000080C, 0x1000002F, 0x80000003, 0x00000000, 0x40000000, 0x00000000,",
+       "0x00000810, 0x33303265, 0xA0000000, 0x00000000, 0x00000810, 0x33303265,",
+       "0xB0000000, 0x00000000, 0x00000814, 0x020C3D10, 0x00000818, 0x04A10385,",
+       "0x00000820, 0x00000000, 0x00000824, 0x00033E40, 0x00000828, 0x00000000,",
+       "0x0000082C, 0x73985170, 0x00000830, 0x79A0EA08, 0x00000834, 0x042E708A,",
+       "0x80000002, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667640,",
+       "0x90000004, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667641,",
+       "0x9000000A, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667641,",
+       "0x9000000B, 0x00000000, 0x40000000, 0x00000000, 0x00000838, 0x86667641,"
+      ],
+      "total": 771
+     },
+     "excerptSecond": {
+      "lines": [
+       "0x00000800, 0x9020D010,",
+       "0x00000804, 0x08011280,",
+       "0x00000808, 0x0E0282FF,",
+       "0x0000080C, 0x1000002F,",
+       "0x80000003, 0x00000000,",
+       "0x40000000, 0x00000000,",
+       "0x00000810, 0x33303265,",
+       "0xA0000000, 0x00000000,",
+       "0x00000810, 0x33303265,",
+       "0xB0000000, 0x00000000,"
+      ],
+      "total": 2311
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 755,
+     "tokens": 13569,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_d_tbl.py",
+      "start": 23,
+      "end": 777
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtw88_8814au/assets/rf_d_tbl.py",
+       "start": 48,
+       "end": 2309
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 742,
+     "tokens": 13341,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_c_tbl.py",
+      "start": 23,
+      "end": 764
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtw88_8814au/assets/rf_c_tbl.py",
+       "start": 48,
+       "end": 2271
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 733,
+     "tokens": 13188,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_b_tbl.py",
+      "start": 11,
+      "end": 743
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtw88_8814au/assets/rf_b_tbl.py",
+       "start": 10,
+       "end": 2207
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 429,
+     "tokens": 7677,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/bb_phy_reg_tbl.py",
+      "start": 354,
+      "end": 782
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtw88_8814au/assets/bb_tbl.py",
+       "start": 1041,
+       "end": 2321
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 183,
+     "tokens": 3286,
+     "first": {
+      "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_b_tbl.py",
+      "start": 502,
+      "end": 684
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_c_tbl.py",
+       "start": 523,
+       "end": 706
+      },
+      {
+       "name": "src/wifit3/chips/rtl8814au_dkms/rf_radio_d_tbl.py",
+       "start": 536,
+       "end": 718
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 535,
+     "first": {
+      "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+      "start": 1339,
+      "end": 1355
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1372,
+       "end": 1389
+      },
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1389,
+       "end": 1406
+      },
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1422,
+       "end": 1439
+      },
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1473,
+       "end": 1489
+      },
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1506,
+       "end": 1523
+      },
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1540,
+       "end": 1556
+      },
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1556,
+       "end": 1573
+      },
+      {
+       "name": "src/wifit3/chips/rtl8822bu_dkms/bb_agc_tbl.py",
+       "start": 1573,
+       "end": 1590
+      }
+     ],
+     "copies": 13,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 867,
+     "tokens": 5202,
+     "first": {
+      "name": "src/wifit3/chips/rtl8821au/assets/rf_a_tbl.py",
+      "start": 10,
+      "end": 876
+     },
+     "others": [
+      {
+       "name": "src/wifit3/chips/rtl8821au_dkms/rf_radioa_tbl.py",
+       "start": 5,
+       "end": 221
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:26:16.992Z",
+  "jscpdVersion": "5.4.0"
  }
 }

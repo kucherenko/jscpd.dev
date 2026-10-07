@@ -9,10 +9,12 @@
    "starsToday": 150,
    "headSha": "c47b12849e43f18d5c374c7069c744cc55b0ea00",
    "sources": 442,
-   "lines": 41078,
+   "lines": 41034,
    "clones": 61,
    "duplicatedLines": 1343,
    "percentage": 3.27,
+   "codePercentage": 0.82,
+   "codeSources": 59,
    "healthScore": 67.1,
    "healthGrade": "C"
   },
@@ -23,10 +25,12 @@
    "starsToday": 163,
    "headSha": "23e4138daa01c42d4969f7a5465f82704e64f798",
    "sources": 444,
-   "lines": 41153,
+   "lines": 41109,
    "clones": 61,
    "duplicatedLines": 1343,
-   "percentage": 3.26,
+   "percentage": 3.27,
+   "codePercentage": 0.82,
+   "codeSources": 59,
    "healthScore": 67.1,
    "healthGrade": "C"
   }
@@ -42,15 +46,15 @@
   "starsToday": 163,
   "defaultBranch": "main",
   "headSha": "23e4138daa01c42d4969f7a5465f82704e64f798",
-  "durationMs": 831,
+  "durationMs": 220,
   "total": {
    "sources": 444,
-   "lines": 41153,
-   "tokens": 326572,
+   "lines": 41109,
+   "tokens": 326407,
    "clones": 61,
    "duplicatedLines": 1343,
    "duplicatedTokens": 8044,
-   "percentage": 3.26,
+   "percentage": 3.27,
    "percentageTokens": 2.46
   },
   "formats": [
@@ -81,7 +85,7 @@
    {
     "format": "bash",
     "sources": 28,
-    "lines": 1257,
+    "lines": 1207,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -113,7 +117,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,151 +144,246 @@
     "format": "markdown",
     "lines": 186,
     "tokens": 2206,
-    "firstFile": {
+    "first": {
      "name": "cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
      "start": 7,
      "end": 192
     },
-    "secondFile": {
-     "name": "thermos/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
-     "start": 7,
-     "end": 192
-    }
+    "others": [
+     {
+      "name": "thermos/skills/thermo-nuclear-code-quality-review/SKILL.md:markdown",
+      "start": 7,
+      "end": 192
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Thermo-Nuclear Code Quality Review",
+      "",
+      "Use this skill for an unusually strict review focused on implementation quality, maintainability, abstraction quality, and codebase health.",
+      "",
+      "Above all, this skill should push the reviewer to be **ambitious** about code structure. Do not merely identify local cleanup opportunities. Actively search fo…",
+      "",
+      "## Core Prompt",
+      "",
+      "Start from this baseline:",
+      ""
+     ],
+     "total": 186
+    },
+    "kind": "docs"
    },
    {
     "format": "json",
     "lines": 158,
     "tokens": 446,
-    "firstFile": {
+    "first": {
      "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
      "start": 255,
      "end": 412
     },
-    "secondFile": {
-     "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
-     "start": 413,
-     "end": 570
-    }
+    "others": [
+     {
+      "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
+      "start": 413,
+      "end": 570
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  },",
+      "  \"verifies\": {",
+      "    \"not\": {}",
+      "  }",
+      "},",
+      "\"required\": [",
+      "  \"name\",",
+      "  \"scopedGoal\",",
+      "  \"type\"",
+      "],"
+     ],
+     "total": 158
+    },
+    "kind": "data"
    },
    {
     "format": "json",
     "lines": 146,
     "tokens": 419,
-    "firstFile": {
+    "first": {
      "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
      "start": 109,
      "end": 254
     },
-    "secondFile": {
-     "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
-     "start": 267,
-     "end": 412
-    }
+    "others": [
+     {
+      "name": "orchestrate/skills/orchestrate/schemas/plan.schema.json",
+      "start": 267,
+      "end": 412
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"type\": \"object\",",
+      "  \"properties\": {",
+      "    \"name\": {",
+      "      \"type\": \"string\",",
+      "      \"pattern\": \"^[a-z0-9-]+$\",",
+      "      \"description\": \"Kebab-case ASCII. Used in branch and agent-title.\"",
+      "    },",
+      "    \"scopedGoal\": {",
+      "      \"type\": \"string\","
+     ],
+     "total": 146
+    },
+    "kind": "data"
+   },
+   {
+    "format": "markdown",
+    "lines": 12,
+    "tokens": 180,
+    "first": {
+     "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
+     "start": 19,
+     "end": 30
+    },
+    "others": [
+     {
+      "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+      "start": 18,
+      "end": 29
+     },
+     {
+      "name": "pstack/skills/reflect/references/tooling-reviewer.md:markdown",
+      "start": 31,
+      "end": 42
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 12,
     "tokens": 210,
-    "firstFile": {
+    "first": {
      "name": "cursor-team-kit/agents/thermo-nuclear-code-quality-review.md:markdown",
      "start": 12,
      "end": 23
     },
-    "secondFile": {
-     "name": "thermos/agents/thermo-nuclear-code-quality-review-subagent.md:markdown",
-     "start": 12,
-     "end": 23
-    }
+    "others": [
+     {
+      "name": "thermos/agents/thermo-nuclear-code-quality-review-subagent.md:markdown",
+      "start": 12,
+      "end": 23
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 98,
+    "first": {
+     "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+     "start": 1125,
+     "end": 1136
+    },
+    "others": [
+     {
+      "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+      "start": 1223,
+      "end": 1234
+     },
+     {
+      "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+      "start": 1241,
+      "end": 1252
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 22,
     "tokens": 185,
-    "firstFile": {
+    "first": {
      "name": "orchestrate/skills/orchestrate/scripts/__tests__/andon-root-cache.test.ts",
      "start": 277,
      "end": 298
     },
-    "secondFile": {
-     "name": "orchestrate/skills/orchestrate/scripts/__tests__/andon-root-cache.test.ts",
-     "start": 344,
-     "end": 364
-    }
+    "others": [
+     {
+      "name": "orchestrate/skills/orchestrate/scripts/__tests__/andon-root-cache.test.ts",
+      "start": 344,
+      "end": 364
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "markdown",
     "lines": 8,
     "tokens": 182,
-    "firstFile": {
+    "first": {
      "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
      "start": 5,
      "end": 12
     },
-    "secondFile": {
-     "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-     "start": 3,
-     "end": 10
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 12,
-    "tokens": 180,
-    "firstFile": {
-     "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-     "start": 19,
-     "end": 30
-    },
-    "secondFile": {
-     "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
-     "start": 18,
-     "end": 29
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 12,
-    "tokens": 180,
-    "firstFile": {
-     "name": "pstack/skills/reflect/references/divergent-reviewer.md:markdown",
-     "start": 19,
-     "end": 30
-    },
-    "secondFile": {
-     "name": "pstack/skills/reflect/references/tooling-reviewer.md:markdown",
-     "start": 31,
-     "end": 42
-    }
+    "others": [
+     {
+      "name": "pstack/skills/reflect/references/judgment-reviewer.md:markdown",
+      "start": 3,
+      "end": 10
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 18,
     "tokens": 158,
-    "firstFile": {
+    "first": {
      "name": "orchestrate/skills/orchestrate/prompts/verifier.md:markdown",
      "start": 55,
      "end": 72
     },
-    "secondFile": {
-     "name": "orchestrate/skills/orchestrate/references/handoffs.md:markdown",
-     "start": 110,
-     "end": 127
-    }
+    "others": [
+     {
+      "name": "orchestrate/skills/orchestrate/references/handoffs.md:markdown",
+      "start": 110,
+      "end": 127
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "typescript",
     "lines": 36,
     "tokens": 153,
-    "firstFile": {
+    "first": {
      "name": "orchestrate/skills/orchestrate/scripts/__tests__/agent-manager-slack-mirror.test.ts",
      "start": 514,
      "end": 549
     },
-    "secondFile": {
-     "name": "orchestrate/skills/orchestrate/scripts/__tests__/agent-manager-slack-mirror.test.ts",
-     "start": 576,
-     "end": 611
-    }
+    "others": [
+     {
+      "name": "orchestrate/skills/orchestrate/scripts/__tests__/agent-manager-slack-mirror.test.ts",
+      "start": 576,
+      "end": 611
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    }
   ],
   "health": {
@@ -446,6 +545,299 @@
      "lines": 93
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 59,
+   "lines": 14733,
+   "tokens": 81474,
+   "clones": 11,
+   "duplicatedLines": 121,
+   "duplicatedTokens": 794,
+   "percentage": 0.82,
+   "percentageTokens": 0.97,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 37,
+     "lines": 13001,
+     "clones": 11,
+     "duplicatedLines": 121,
+     "percentage": 0.93
+    },
+    {
+     "format": "bash",
+     "sources": 18,
+     "lines": 1101,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 3,
+     "lines": 457,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 98,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+      "start": 1125,
+      "end": 1136
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 1223,
+       "end": 1234
+      },
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+       "start": 1241,
+       "end": 1252
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "async cancel(taskName: string): Promise<void> {",
+       "  const s = this.getTask(taskName);",
+       "  if (!s) throw new Error(`unknown task: ${taskName}`);",
+       "  if (!s.runId)",
+       "    throw new Error(`task ${taskName} has no runId (status=${s.status})`);",
+       "  if (!s.agentId)",
+       "    throw new Error(`task ${taskName} has no agentId (status=${s.status})`);",
+       "  const run = await Agent.getRun(s.runId, {",
+       "    runtime: \"cloud\",",
+       "    apiKey: this.apiKey,"
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 13,
+     "tokens": 90,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/core/prompts.ts",
+      "start": 115,
+      "end": 127
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/prompts.ts",
+       "start": 208,
+       "end": 220
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  \"  - (none declared — ask before touching anything broad)\";",
+       "const forbid =",
+       "  (t.pathsForbidden ?? []).map(p => `  - ${p}`).join(\"\\n\") || \"  - (none)\";",
+       "const accept =",
+       "  (t.acceptance ?? []).map(a => `  - [ ] ${a}`).join(\"\\n\") ||",
+       "  \"  - (none declared)\";",
+       "const verifyPlan = renderVerifyPlan(",
+       "  t,",
+       "  \"Verification plan (how the planner / a verifier will check your work):\"",
+       ");"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 19,
+     "tokens": 89,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+      "start": 1607,
+      "end": 1625
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/prompts.ts",
+       "start": 302,
+       "end": 320
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "function normalizedDependsOn(t: PlanTask): string[] {",
+       "  const deps = [...(t.dependsOn ?? [])];",
+       "  switch (t.type) {",
+       "    case \"worker\":",
+       "    case \"subplanner\":",
+       "      return deps;",
+       "    case \"verifier\":",
+       "      if (!deps.includes(t.verifies)) {"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 63,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/cli/forensics.ts",
+      "start": 40,
+      "end": 54
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/cli/forensics.ts",
+       "start": 100,
+       "end": 114
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 62,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+      "start": 2086,
+      "end": 2095
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/andon.ts",
+       "start": 242,
+       "end": 251
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 61,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
+      "start": 2087,
+      "end": 2095
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/measurements.ts",
+       "start": 387,
+       "end": 395
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 6,
+     "tokens": 61,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/core/loop.ts",
+      "start": 240,
+      "end": 245
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/core/loop.ts",
+       "start": 262,
+       "end": 267
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 59,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+      "start": 230,
+      "end": 236
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+       "start": 249,
+       "end": 255
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 57,
+     "first": {
+      "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+      "start": 222,
+      "end": 230
+     },
+     "others": [
+      {
+       "name": "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
+       "start": 240,
+       "end": 248
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 56,
+     "first": {
+      "name": "pstack/skills/poteto-mode/scripts/orch/orch.ts",
+      "start": 104,
+      "end": 112
+     },
+     "others": [
+      {
+       "name": "pstack/skills/poteto-mode/scripts/orch/store.ts",
+       "start": 960,
+       "end": 968
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:37:38.142Z",
+  "jscpdVersion": "5.4.0"
  }
 }

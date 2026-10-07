@@ -9,10 +9,12 @@
    "starsToday": 125,
    "headSha": "857466ff8b93c0575bc9e46cf2838d1962077d8f",
    "sources": 3157,
-   "lines": 711405,
+   "lines": 711361,
    "clones": 2804,
    "duplicatedLines": 57631,
    "percentage": 8.1,
+   "codePercentage": 1.09,
+   "codeSources": 484,
    "healthScore": 66,
    "healthGrade": "C"
   }
@@ -28,11 +30,11 @@
   "starsToday": 125,
   "defaultBranch": "main",
   "headSha": "857466ff8b93c0575bc9e46cf2838d1962077d8f",
-  "durationMs": 4134,
+  "durationMs": 1901,
   "total": {
    "sources": 3157,
-   "lines": 711405,
-   "tokens": 6167279,
+   "lines": 711361,
+   "tokens": 6167114,
    "clones": 2804,
    "duplicatedLines": 57631,
    "duplicatedTokens": 609868,
@@ -59,10 +61,10 @@
    {
     "format": "bash",
     "sources": 249,
-    "lines": 31409,
+    "lines": 31359,
     "clones": 272,
     "duplicatedLines": 3214,
-    "percentage": 10.23
+    "percentage": 10.25
    },
    {
     "format": "json",
@@ -124,153 +126,453 @@
   "topClones": [
    {
     "format": "markdown",
-    "lines": 1177,
-    "tokens": 14681,
-    "firstFile": {
-     "name": "ship/SKILL.md:markdown",
-     "start": 22,
-     "end": 1198
-    },
-    "secondFile": {
-     "name": "test/fixtures/golden/claude-ship-SKILL.md:markdown",
-     "start": 22,
-     "end": 1198
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 531,
-    "tokens": 6805,
-    "firstFile": {
-     "name": "test/fixtures/golden/codex-ship-SKILL.md:markdown",
-     "start": 247,
-     "end": 777
-    },
-    "secondFile": {
-     "name": "test/fixtures/golden/factory-ship-SKILL.md:markdown",
-     "start": 228,
-     "end": 758
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 358,
-    "tokens": 5270,
-    "firstFile": {
+    "lines": 239,
+    "tokens": 4087,
+    "first": {
      "name": "autoplan/SKILL.md:markdown",
      "start": 81,
-     "end": 438
+     "end": 319
     },
-    "secondFile": {
-     "name": "devex-review/SKILL.md:markdown",
-     "start": 68,
-     "end": 425
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 358,
-    "tokens": 5269,
-    "firstFile": {
-     "name": "autoplan/SKILL.md:markdown",
-     "start": 81,
-     "end": 438
+    "others": [
+     {
+      "name": "canary/SKILL.md:markdown",
+      "start": 62,
+      "end": 300
+     },
+     {
+      "name": "context-restore/SKILL.md:markdown",
+      "start": 64,
+      "end": 302
+     },
+     {
+      "name": "context-save/SKILL.md:markdown",
+      "start": 63,
+      "end": 301
+     },
+     {
+      "name": "design-html/SKILL.md:markdown",
+      "start": 69,
+      "end": 307
+     },
+     {
+      "name": "design-shotgun/SKILL.md:markdown",
+      "start": 82,
+      "end": 320
+     },
+     {
+      "name": "document-generate/SKILL.md:markdown",
+      "start": 68,
+      "end": 306
+     },
+     {
+      "name": "document-release/SKILL.md:markdown",
+      "start": 66,
+      "end": 304
+     },
+     {
+      "name": "health/SKILL.md:markdown",
+      "start": 64,
+      "end": 302
+     }
+    ],
+    "copies": 24,
+    "excerpt": {
+     "lines": [
+      "If `PROACTIVE` is `false`, do not auto-invoke or suggest skills, including by asking whether to run one. Only run skills the user explicitly invokes.",
+      "",
+      "If `SKILL_PREFIX` is `\"true\"`, suggest/invoke `/gstack-*` names. Disk paths stay `~/.claude/skills/gstack/[skill-name]/SKILL.md`.",
+      "",
+      "## AskUserQuestion Format",
+      "",
+      "### Tool resolution (read first)",
+      "",
+      "Branch on the skill-start STATUS lines, in this order:",
+      ""
+     ],
+     "total": 239
     },
-    "secondFile": {
-     "name": "codex/SKILL.md:markdown",
-     "start": 65,
-     "end": 422
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 358,
-    "tokens": 5269,
-    "firstFile": {
-     "name": "autoplan/SKILL.md:markdown",
-     "start": 81,
-     "end": 438
-    },
-    "secondFile": {
-     "name": "qa/SKILL.md:markdown",
-     "start": 68,
-     "end": 427
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 358,
-    "tokens": 5269,
-    "firstFile": {
-     "name": "autoplan/SKILL.md:markdown",
-     "start": 81,
-     "end": 438
-    },
-    "secondFile": {
-     "name": "review/SKILL.md:markdown",
-     "start": 66,
-     "end": 423
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 319,
-    "tokens": 4838,
-    "firstFile": {
-     "name": "autoplan/SKILL.md:markdown",
-     "start": 81,
-     "end": 399
-    },
-    "secondFile": {
-     "name": "land-and-deploy/SKILL.md:markdown",
-     "start": 61,
-     "end": 379
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 319,
-    "tokens": 4838,
-    "firstFile": {
-     "name": "autoplan/SKILL.md:markdown",
-     "start": 81,
-     "end": 399
-    },
-    "secondFile": {
-     "name": "ship/SKILL.md:markdown",
-     "start": 66,
-     "end": 384
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 319,
-    "tokens": 4838,
-    "firstFile": {
-     "name": "autoplan/SKILL.md:markdown",
-     "start": 81,
-     "end": 399
-    },
-    "secondFile": {
-     "name": "spec/SKILL.md:markdown",
-     "start": 64,
-     "end": 382
-    }
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 319,
     "tokens": 4837,
-    "firstFile": {
+    "first": {
      "name": "autoplan/SKILL.md:markdown",
      "start": 81,
      "end": 399
     },
-    "secondFile": {
-     "name": "design-consultation/SKILL.md:markdown",
-     "start": 88,
-     "end": 406
-    }
+    "others": [
+     {
+      "name": "design-consultation/SKILL.md:markdown",
+      "start": 88,
+      "end": 406
+     },
+     {
+      "name": "design-review/SKILL.md:markdown",
+      "start": 66,
+      "end": 386
+     },
+     {
+      "name": "ios-qa/SKILL.md:markdown",
+      "start": 72,
+      "end": 390
+     },
+     {
+      "name": "land-and-deploy/SKILL.md:markdown",
+      "start": 61,
+      "end": 379
+     },
+     {
+      "name": "qa-only/SKILL.md:markdown",
+      "start": 64,
+      "end": 382
+     },
+     {
+      "name": "ship/SKILL.md:markdown",
+      "start": 66,
+      "end": 384
+     },
+     {
+      "name": "spec/SKILL.md:markdown",
+      "start": 64,
+      "end": 382
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "If `PROACTIVE` is `false`, do not auto-invoke or suggest skills, including by asking whether to run one. Only run skills the user explicitly invokes.",
+      "",
+      "If `SKILL_PREFIX` is `\"true\"`, suggest/invoke `/gstack-*` names. Disk paths stay `~/.claude/skills/gstack/[skill-name]/SKILL.md`.",
+      "",
+      "## AskUserQuestion Format",
+      "",
+      "### Tool resolution (read first)",
+      "",
+      "Branch on the skill-start STATUS lines, in this order:",
+      ""
+     ],
+     "total": 319
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 358,
+    "tokens": 5269,
+    "first": {
+     "name": "autoplan/SKILL.md:markdown",
+     "start": 81,
+     "end": 438
+    },
+    "others": [
+     {
+      "name": "codex/SKILL.md:markdown",
+      "start": 65,
+      "end": 422
+     },
+     {
+      "name": "devex-review/SKILL.md:markdown",
+      "start": 68,
+      "end": 425
+     },
+     {
+      "name": "qa/SKILL.md:markdown",
+      "start": 68,
+      "end": 427
+     },
+     {
+      "name": "review/SKILL.md:markdown",
+      "start": 66,
+      "end": 423
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "If `PROACTIVE` is `false`, do not auto-invoke or suggest skills, including by asking whether to run one. Only run skills the user explicitly invokes.",
+      "",
+      "If `SKILL_PREFIX` is `\"true\"`, suggest/invoke `/gstack-*` names. Disk paths stay `~/.claude/skills/gstack/[skill-name]/SKILL.md`.",
+      "",
+      "## AskUserQuestion Format",
+      "",
+      "### Tool resolution (read first)",
+      "",
+      "Branch on the skill-start STATUS lines, in this order:",
+      ""
+     ],
+     "total": 358
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 40,
+    "tokens": 486,
+    "first": {
+     "name": "SKILL.md:markdown",
+     "start": 25,
+     "end": 64
+    },
+    "others": [
+     {
+      "name": "autoplan/SKILL.md:markdown",
+      "start": 46,
+      "end": 85
+     },
+     {
+      "name": "canary/SKILL.md:markdown",
+      "start": 27,
+      "end": 66
+     },
+     {
+      "name": "codex/SKILL.md:markdown",
+      "start": 30,
+      "end": 69
+     },
+     {
+      "name": "context-restore/SKILL.md:markdown",
+      "start": 29,
+      "end": 68
+     },
+     {
+      "name": "context-save/SKILL.md:markdown",
+      "start": 28,
+      "end": 67
+     },
+     {
+      "name": "design-consultation/SKILL.md:markdown",
+      "start": 53,
+      "end": 92
+     },
+     {
+      "name": "design-html/SKILL.md:markdown",
+      "start": 34,
+      "end": 73
+     },
+     {
+      "name": "design-review/SKILL.md:markdown",
+      "start": 31,
+      "end": 70
+     }
+    ],
+    "copies": 34,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 1177,
+    "tokens": 14681,
+    "first": {
+     "name": "ship/SKILL.md:markdown",
+     "start": 22,
+     "end": 1198
+    },
+    "others": [
+     {
+      "name": "test/fixtures/golden/claude-ship-SKILL.md:markdown",
+      "start": 22,
+      "end": 1198
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 60,
+    "tokens": 505,
+    "first": {
+     "name": "canary/SKILL.md:markdown",
+     "start": 291,
+     "end": 350
+    },
+    "others": [
+     {
+      "name": "context-restore/SKILL.md:markdown",
+      "start": 293,
+      "end": 352
+     },
+     {
+      "name": "context-save/SKILL.md:markdown",
+      "start": 292,
+      "end": 351
+     },
+     {
+      "name": "design-html/SKILL.md:markdown",
+      "start": 298,
+      "end": 357
+     },
+     {
+      "name": "design-shotgun/SKILL.md:markdown",
+      "start": 311,
+      "end": 370
+     },
+     {
+      "name": "document-generate/SKILL.md:markdown",
+      "start": 297,
+      "end": 356
+     },
+     {
+      "name": "document-release/SKILL.md:markdown",
+      "start": 295,
+      "end": 354
+     },
+     {
+      "name": "health/SKILL.md:markdown",
+      "start": 293,
+      "end": 352
+     },
+     {
+      "name": "investigate/SKILL.md:markdown",
+      "start": 332,
+      "end": 391
+     }
+    ],
+    "copies": 22,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 128,
+    "tokens": 1373,
+    "first": {
+     "name": "SKILL.md:markdown",
+     "start": 25,
+     "end": 152
+    },
+    "others": [
+     {
+      "name": "benchmark-models/SKILL.md:markdown",
+      "start": 29,
+      "end": 156
+     },
+     {
+      "name": "benchmark/SKILL.md:markdown",
+      "start": 29,
+      "end": 156
+     },
+     {
+      "name": "browse/SKILL.md:markdown",
+      "start": 25,
+      "end": 152
+     },
+     {
+      "name": "open-gstack-browser/SKILL.md:markdown",
+      "start": 27,
+      "end": 154
+     },
+     {
+      "name": "scrape/SKILL.md:markdown",
+      "start": 24,
+      "end": 151
+     },
+     {
+      "name": "setup-browser-cookies/SKILL.md:markdown",
+      "start": 23,
+      "end": 150
+     }
+    ],
+    "copies": 7,
+    "kind": "docs"
+   },
+   {
+    "format": "text",
+    "lines": 14,
+    "tokens": 170,
+    "first": {
+     "name": "autoplan/SKILL.md:text",
+     "start": 125,
+     "end": 138
+    },
+    "others": [
+     {
+      "name": "canary/SKILL.md:text",
+      "start": 106,
+      "end": 119
+     },
+     {
+      "name": "codex/SKILL.md:text",
+      "start": 109,
+      "end": 122
+     },
+     {
+      "name": "context-restore/SKILL.md:text",
+      "start": 108,
+      "end": 121
+     },
+     {
+      "name": "context-save/SKILL.md:text",
+      "start": 107,
+      "end": 120
+     },
+     {
+      "name": "design-consultation/SKILL.md:text",
+      "start": 132,
+      "end": 145
+     },
+     {
+      "name": "design-html/SKILL.md:text",
+      "start": 113,
+      "end": 126
+     },
+     {
+      "name": "design-review/SKILL.md:text",
+      "start": 110,
+      "end": 123
+     },
+     {
+      "name": "design-shotgun/SKILL.md:text",
+      "start": 126,
+      "end": 139
+     }
+    ],
+    "copies": 44,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 531,
+    "tokens": 6805,
+    "first": {
+     "name": "test/fixtures/golden/codex-ship-SKILL.md:markdown",
+     "start": 247,
+     "end": 777
+    },
+    "others": [
+     {
+      "name": "test/fixtures/golden/factory-ship-SKILL.md:markdown",
+      "start": 228,
+      "end": 758
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 256,
+    "tokens": 3268,
+    "first": {
+     "name": "plan-ceo-review/SKILL.md:markdown",
+     "start": 186,
+     "end": 441
+    },
+    "others": [
+     {
+      "name": "plan-design-review/SKILL.md:markdown",
+      "start": 192,
+      "end": 447
+     },
+     {
+      "name": "plan-devex-review/SKILL.md:markdown",
+      "start": 164,
+      "end": 419
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -494,6 +796,390 @@
      "lines": 113
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 484,
+   "lines": 156552,
+   "tokens": 973052,
+   "clones": 130,
+   "duplicatedLines": 1714,
+   "duplicatedTokens": 11698,
+   "percentage": 1.09,
+   "percentageTokens": 1.2,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 361,
+     "lines": 125874,
+     "clones": 95,
+     "duplicatedLines": 1210,
+     "percentage": 0.96
+    },
+    {
+     "format": "bash",
+     "sources": 101,
+     "lines": 23843,
+     "clones": 20,
+     "duplicatedLines": 215,
+     "percentage": 0.9
+    },
+    {
+     "format": "javascript",
+     "sources": 11,
+     "lines": 4660,
+     "clones": 11,
+     "duplicatedLines": 250,
+     "percentage": 5.36
+    },
+    {
+     "format": "c",
+     "sources": 5,
+     "lines": 892,
+     "clones": 4,
+     "duplicatedLines": 39,
+     "percentage": 4.37
+    },
+    {
+     "format": "swift",
+     "sources": 2,
+     "lines": 711,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 2,
+     "lines": 216,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 182,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 231,
+     "tokens": 1864,
+     "first": {
+      "name": "browse/src/browse-client.ts",
+      "start": 34,
+      "end": 264
+     },
+     "others": [
+      {
+       "name": "browser-skills/hackernews-frontpage/_lib/browse-client.ts",
+       "start": 34,
+       "end": 264
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import * as fs from 'fs';",
+       "import * as path from 'path';",
+       "import * as cp from 'child_process';",
+       "",
+       "export interface BrowseClientOptions {",
+       "  /** Override port. Default: GSTACK_PORT env or state file. */",
+       "  port?: number;",
+       "  /** Override token. Default: GSTACK_SKILL_TOKEN env, then state file root token. */",
+       "  token?: string;",
+       "  /** Tab id to target (every command can scope to a tab). Default: BROWSE_TAB env or undefined (active tab). */"
+      ],
+      "total": 231
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 62,
+     "tokens": 435,
+     "first": {
+      "name": "extension/content.js",
+      "start": 158,
+      "end": 219
+     },
+     "others": [
+      {
+       "name": "extension/inspector.js",
+       "start": 195,
+       "end": 259
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "for (const prop of BASIC_KEY_PROPERTIES) {",
+       "  computedStyles[prop] = computed.getPropertyValue(prop);",
+       "}",
+       "",
+       "const boxModel = {",
+       "  content: { width: rect.width, height: rect.height },",
+       "  padding: {",
+       "    top: parseFloat(computed.paddingTop) || 0,",
+       "    right: parseFloat(computed.paddingRight) || 0,",
+       "    bottom: parseFloat(computed.paddingBottom) || 0,"
+      ],
+      "total": 62
+     },
+     "excerptSecond": {
+      "lines": [
+       "for (const prop of KEY_PROPERTIES) {",
+       "  computedStyles[prop] = computed.getPropertyValue(prop);",
+       "}",
+       "",
+       "// Box model from computed",
+       "const boxModel = {",
+       "  content: { width: rect.width, height: rect.height },",
+       "  padding: {",
+       "    top: parseFloat(computed.paddingTop) || 0,",
+       "    right: parseFloat(computed.paddingRight) || 0,"
+      ],
+      "total": 65
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 75,
+     "tokens": 380,
+     "first": {
+      "name": "extension/sidepanel-terminal.js",
+      "start": 604,
+      "end": 678
+     },
+     "others": [
+      {
+       "name": "extension/sidepanel-terminal.js",
+       "start": 822,
+       "end": 889
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "          reason: 'initial',",
+       "        }));",
+       "      } catch {}",
+       "    }",
+       "  });",
+       "} catch {}",
+       "// v1.44 eager spawn: send {type:\"start\"} so the agent boots claude",
+       "// without requiring the user to type a keystroke. Pre-v1.44 the",
+       "// lazy-binary-spawn pattern made forceRestart look stuck for ~2-3s",
+       "// until the user pressed any key."
+      ],
+      "total": 75
+     },
+     "excerptSecond": {
+      "lines": [
+       "          reason: 'restart',",
+       "        }));",
+       "      } catch {}",
+       "    }",
+       "  });",
+       "} catch {}",
+       "// Eager spawn — fresh claude prompt visible without user keystroke.",
+       "try { ws.send(JSON.stringify({ type: 'start' })); } catch {}",
+       "if (keepaliveInterval) clearInterval(keepaliveInterval);",
+       "keepaliveInterval = setInterval(() => {"
+      ],
+      "total": 68
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 21,
+     "tokens": 136,
+     "first": {
+      "name": "design/src/evolve.ts",
+      "start": 85,
+      "end": 105
+     },
+     "others": [
+      {
+       "name": "design/src/iterate.ts",
+       "start": 101,
+       "end": 121
+      },
+      {
+       "name": "design/src/iterate.ts",
+       "start": 144,
+       "end": 164
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 109,
+     "first": {
+      "name": "hosts/claude/hooks/auq-error-fallback-hook.ts",
+      "start": 44,
+      "end": 59
+     },
+     "others": [
+      {
+       "name": "hosts/claude/hooks/question-log-hook.ts",
+       "start": 72,
+       "end": 87
+      },
+      {
+       "name": "hosts/claude/hooks/question-preference-hook.ts",
+       "start": 76,
+       "end": 90
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 105,
+     "first": {
+      "name": "bin/gstack-autoplan-snapshot.ts",
+      "start": 73,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "bin/gstack-autoplan-snapshot.ts",
+       "start": 111,
+       "end": 118
+      },
+      {
+       "name": "bin/gstack-autoplan-snapshot.ts",
+       "start": 189,
+       "end": 196
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 14,
+     "tokens": 170,
+     "first": {
+      "name": "lib/cso/launcher-windows.c",
+      "start": 49,
+      "end": 62
+     },
+     "others": [
+      {
+       "name": "lib/cso/publish-lock.c",
+       "start": 26,
+       "end": 39
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 6,
+     "tokens": 53,
+     "first": {
+      "name": "bin/gstack-learnings-search",
+      "start": 10,
+      "end": 15
+     },
+     "others": [
+      {
+       "name": "bin/gstack-specialist-stats",
+       "start": 8,
+       "end": 13
+      },
+      {
+       "name": "bin/gstack-timeline-log",
+       "start": 12,
+       "end": 17
+      },
+      {
+       "name": "bin/gstack-timeline-read",
+       "start": 9,
+       "end": 14
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 18,
+     "tokens": 158,
+     "first": {
+      "name": "browse/src/snapshot.ts",
+      "start": 341,
+      "end": 358
+     },
+     "others": [
+      {
+       "name": "browse/src/snapshot.ts",
+       "start": 471,
+       "end": 488
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 22,
+     "tokens": 154,
+     "first": {
+      "name": "bin/gstack-artifacts-init",
+      "start": 412,
+      "end": 433
+     },
+     "others": [
+      {
+       "name": "bin/gstack-brain-restore",
+       "start": 198,
+       "end": 217
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 8,
+    "minified": 0,
+    "sample": [
+     "browse/test/server-route-auth-blackbox.test.ts",
+     "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeCore/DebugBridgeManager.swift",
+     "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeCore/StateServer.swift",
+     "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeUI/Bridges.swift",
+     "test/fixtures/ios-qa/FixtureApp/Sources/DebugBridgeUI/DebugOverlay.swift",
+     "test/memory-ingest-include-gitignored.test.ts",
+     "test/section-manifest-consistency.test.ts",
+     "test/uninstall-windows-copies.test.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:27:39.041Z",
+  "jscpdVersion": "5.4.0"
  }
 }

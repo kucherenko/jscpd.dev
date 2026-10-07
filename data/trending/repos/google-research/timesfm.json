@@ -9,10 +9,12 @@
    "starsToday": 343,
    "headSha": "aa480150652811e732d87a3c5344b235234104e3",
    "sources": 128,
-   "lines": 33115,
-   "clones": 105,
-   "duplicatedLines": 2634,
-   "percentage": 7.95,
+   "lines": 30681,
+   "clones": 133,
+   "duplicatedLines": 3372,
+   "percentage": 10.99,
+   "codePercentage": 7.4,
+   "codeSources": 61,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 1618,
    "headSha": "aa480150652811e732d87a3c5344b235234104e3",
    "sources": 128,
-   "lines": 33115,
-   "clones": 105,
-   "duplicatedLines": 2634,
-   "percentage": 7.95,
+   "lines": 30681,
+   "clones": 133,
+   "duplicatedLines": 3372,
+   "percentage": 10.99,
+   "codePercentage": 7.4,
+   "codeSources": 61,
    "healthScore": null,
    "healthGrade": null
   },
@@ -37,10 +41,12 @@
    "starsToday": 342,
    "headSha": "0df95ae62085a6ac0d0afd1ad40dee2e6c1356ab",
    "sources": 128,
-   "lines": 33186,
-   "clones": 106,
-   "duplicatedLines": 2639,
-   "percentage": 7.95,
+   "lines": 30752,
+   "clones": 134,
+   "duplicatedLines": 3378,
+   "percentage": 10.98,
+   "codePercentage": 7.4,
+   "codeSources": 61,
    "healthScore": null,
    "healthGrade": null
   }
@@ -56,62 +62,54 @@
   "starsToday": 342,
   "defaultBranch": "master",
   "headSha": "0df95ae62085a6ac0d0afd1ad40dee2e6c1356ab",
-  "durationMs": 548,
+  "durationMs": 423,
   "total": {
    "sources": 128,
-   "lines": 33186,
-   "tokens": 170591,
-   "clones": 106,
-   "duplicatedLines": 2639,
-   "duplicatedTokens": 10769,
-   "percentage": 7.95,
-   "percentageTokens": 6.31
+   "lines": 30752,
+   "tokens": 171679,
+   "clones": 134,
+   "duplicatedLines": 3378,
+   "duplicatedTokens": 12127,
+   "percentage": 10.98,
+   "percentageTokens": 7.06
   },
   "formats": [
    {
-    "format": "python",
-    "sources": 78,
-    "lines": 21833,
-    "clones": 55,
-    "duplicatedLines": 1172,
-    "percentage": 5.37
-   },
-   {
     "format": "json",
     "sources": 5,
-    "lines": 6219,
-    "clones": 49,
-    "duplicatedLines": 1446,
-    "percentage": 23.25
+    "lines": 6157,
+    "clones": 74,
+    "duplicatedLines": 2110,
+    "percentage": 34.27
+   },
+   {
+    "format": "python",
+    "sources": 78,
+    "lines": 20433,
+    "clones": 57,
+    "duplicatedLines": 1238,
+    "percentage": 6.06
    },
    {
     "format": "markdown",
     "sources": 15,
     "lines": 2462,
-    "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 0.24
+    "clones": 2,
+    "duplicatedLines": 14,
+    "percentage": 0.57
    },
    {
     "format": "yaml",
     "sources": 3,
-    "lines": 73,
+    "lines": 72,
     "clones": 1,
-    "duplicatedLines": 15,
-    "percentage": 20.55
+    "duplicatedLines": 16,
+    "percentage": 22.22
    },
    {
     "format": "bash",
     "sources": 13,
-    "lines": 1345,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "text",
-    "sources": 4,
-    "lines": 460,
+    "lines": 798,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -127,7 +125,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -141,9 +139,17 @@
     "percentage": 0
    },
    {
-    "format": "mermaid",
+    "format": "text",
+    "sources": 4,
+    "lines": 110,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "txt",
     "sources": 1,
-    "lines": 94,
+    "lines": 49,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -154,152 +160,667 @@
     "format": "python",
     "lines": 130,
     "tokens": 1056,
-    "firstFile": {
+    "first": {
      "name": "src/timesfm/utils/xreg_lib.py",
      "start": 72,
      "end": 201
     },
-    "secondFile": {
-     "name": "v1/src/timesfm/xreg_lib.py",
-     "start": 56,
-     "end": 182
-    }
+    "others": [
+     {
+      "name": "v1/src/timesfm/xreg_lib.py",
+      "start": 56,
+      "end": 182
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "class BatchedInContextXRegBase:",
+      "  \"\"\"Helper class for in-context regression covariate formatting.",
+      "",
+      "  Attributes:",
+      "    targets: List of targets (responses) of the in-context regression.",
+      "    train_lens: List of lengths of each target vector from the context.",
+      "    test_lens: List of lengths of each forecast horizon.",
+      "    train_dynamic_numerical_covariates: Dict of covariate names mapping to the",
+      "      dynamic numerical covariates of each forecast task on the context. Their",
+      "      lengths should match the corresponding lengths in `train_lens`."
+     ],
+     "total": 130
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 165,
     "tokens": 777,
-    "firstFile": {
+    "first": {
      "name": "src/timesfm/utils/xreg_lib.py",
      "start": 207,
      "end": 371
     },
-    "secondFile": {
-     "name": "v1/src/timesfm/xreg_lib.py",
-     "start": 190,
-     "end": 340
-    }
+    "others": [
+     {
+      "name": "v1/src/timesfm/xreg_lib.py",
+      "start": 190,
+      "end": 340
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  self.static_numerical_covariates = static_numerical_covariates or {}",
+      "  self.static_categorical_covariates = static_categorical_covariates or {}",
+      "",
+      "def _assert_covariates(self, assert_covariate_shapes: bool = False) -> None:",
+      "  \"\"\"Verifies the validity of the covariate inputs.\"\"\"",
+      "",
+      "  # Check presence.",
+      "  if (",
+      "    self.train_dynamic_numerical_covariates",
+      "    and not self.test_dynamic_numerical_covariates"
+     ],
+     "total": 165
+    },
+    "excerptSecond": {
+     "lines": [
+      "  self.static_numerical_covariates = static_numerical_covariates or {}",
+      "  self.static_categorical_covariates = static_categorical_covariates or {}",
+      "",
+      "def _assert_covariates(self, assert_covariate_shapes: bool = False) -> None:",
+      "  \"\"\"Verifies the validity of the covariate inputs.\"\"\"",
+      "",
+      "  # Check presence.",
+      "  if (self.train_dynamic_numerical_covariates and",
+      "      not self.test_dynamic_numerical_covariates) or (",
+      "          not self.train_dynamic_numerical_covariates and"
+     ],
+     "total": 151
+    },
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 25,
+    "tokens": 50,
+    "first": {
+     "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+     "start": 2781,
+     "end": 2805
+    },
+    "others": [
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3000,
+      "end": 3024
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3215,
+      "end": 3239
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3426,
+      "end": 3450
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3633,
+      "end": 3657
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3836,
+      "end": 3860
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4035,
+      "end": 4059
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4230,
+      "end": 4254
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4421,
+      "end": 4445
+     }
+    ],
+    "copies": 14,
+    "excerpt": {
+     "lines": [
+      "],",
+      "\"historical_values\": [",
+      "  0.8899999856948853,",
+      "  0.8899999856948853,",
+      "  1.0199999809265137,",
+      "  0.8799999952316284,",
+      "  0.8500000238418579,",
+      "  0.8799999952316284,",
+      "  0.8799999952316284,",
+      "  0.8999999761581421,"
+     ],
+     "total": 25
+    },
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 88,
     "tokens": 626,
-    "firstFile": {
+    "first": {
      "name": "src/timesfm/utils/xreg_lib.py",
      "start": 377,
      "end": 464
     },
-    "secondFile": {
-     "name": "v1/src/timesfm/xreg_lib.py",
-     "start": 355,
-     "end": 440
-    }
+    "others": [
+     {
+      "name": "v1/src/timesfm/xreg_lib.py",
+      "start": 355,
+      "end": 440
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 26,
+    "tokens": 51,
+    "first": {
+     "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+     "start": 2974,
+     "end": 2999
+    },
+    "others": [
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3188,
+      "end": 3213
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3398,
+      "end": 3423
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3604,
+      "end": 3629
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3806,
+      "end": 3831
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4004,
+      "end": 4029
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4198,
+      "end": 4223
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4388,
+      "end": 4413
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4574,
+      "end": 4599
+     }
+    ],
+    "copies": 13,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 26,
+    "tokens": 51,
+    "first": {
+     "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+     "start": 3000,
+     "end": 3025
+    },
+    "others": [
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3215,
+      "end": 3240
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3426,
+      "end": 3451
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3633,
+      "end": 3658
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 3836,
+      "end": 3861
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4035,
+      "end": 4060
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4230,
+      "end": 4255
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4421,
+      "end": 4446
+     },
+     {
+      "name": "timesfm-forecasting/examples/global-temperature/output/animation_data.json",
+      "start": 4608,
+      "end": 4633
+     }
+    ],
+    "copies": 13,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 28,
     "tokens": 265,
-    "firstFile": {
+    "first": {
      "name": "src/timesfm/utils/xreg_lib.py",
      "start": 30,
      "end": 57
     },
-    "secondFile": {
-     "name": "v1/src/timesfm/xreg_lib.py",
-     "start": 25,
-     "end": 53
-    }
-   },
-   {
-    "format": "python",
-    "lines": 31,
-    "tokens": 224,
-    "firstFile": {
-     "name": "v1/src/timesfm/timesfm_base.py",
-     "start": 314,
-     "end": 344
-    },
-    "secondFile": {
-     "name": "v1/src/timesfm/timesfm_torch.py",
-     "start": 72,
-     "end": 103
-    }
+    "others": [
+     {
+      "name": "v1/src/timesfm/xreg_lib.py",
+      "start": 25,
+      "end": 53
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 21,
     "tokens": 203,
-    "firstFile": {
+    "first": {
      "name": "src/timesfm/utils/xreg_lib.py",
      "start": 75,
      "end": 95
     },
-    "secondFile": {
-     "name": "src/timesfm/utils/xreg_lib.py",
-     "start": 177,
-     "end": 197
-    }
+    "others": [
+     {
+      "name": "src/timesfm/utils/xreg_lib.py",
+      "start": 177,
+      "end": 197
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 26,
     "tokens": 187,
-    "firstFile": {
+    "first": {
      "name": "v1/src/timesfm/timesfm_base.py",
      "start": 312,
      "end": 337
     },
-    "secondFile": {
-     "name": "v1/src/timesfm/timesfm_jax.py",
-     "start": 237,
-     "end": 262
-    }
+    "others": [
+     {
+      "name": "v1/src/timesfm/timesfm_jax.py",
+      "start": 237,
+      "end": 262
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
-    "lines": 29,
-    "tokens": 185,
-    "firstFile": {
-     "name": "src/timesfm/timesfm_2p5/timesfm_2p5_flax.py",
-     "start": 515,
-     "end": 543
+    "lines": 24,
+    "tokens": 186,
+    "first": {
+     "name": "v1/src/timesfm/timesfm_base.py",
+     "start": 314,
+     "end": 337
     },
-    "secondFile": {
-     "name": "src/timesfm/timesfm_2p5/timesfm_2p5_torch.py",
-     "start": 391,
-     "end": 419
-    }
-   },
-   {
-    "format": "python",
-    "lines": 37,
-    "tokens": 157,
-    "firstFile": {
-     "name": "v1/src/adapter/lora_layers.py",
-     "start": 103,
-     "end": 139
-    },
-    "secondFile": {
-     "name": "v1/src/adapter/lora_layers.py",
-     "start": 139,
-     "end": 166
-    }
-   },
-   {
-    "format": "python",
-    "lines": 17,
-    "tokens": 142,
-    "firstFile": {
-     "name": "src/timesfm/timesfm_2p5/timesfm_2p5_flax.py",
-     "start": 99,
-     "end": 115
-    },
-    "secondFile": {
-     "name": "src/timesfm/timesfm_2p5/timesfm_2p5_torch.py",
-     "start": 42,
-     "end": 58
-    }
+    "others": [
+     {
+      "name": "v1/src/timesfm/timesfm_torch.py",
+      "start": 72,
+      "end": 95
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 61,
+   "lines": 15657,
+   "tokens": 85059,
+   "clones": 48,
+   "duplicatedLines": 1158,
+   "duplicatedTokens": 7112,
+   "percentage": 7.4,
+   "percentageTokens": 8.36,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 50,
+     "lines": 14808,
+     "clones": 48,
+     "duplicatedLines": 1158,
+     "percentage": 7.82
+    },
+    {
+     "format": "bash",
+     "sources": 10,
+     "lines": 675,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 130,
+     "tokens": 1056,
+     "first": {
+      "name": "src/timesfm/utils/xreg_lib.py",
+      "start": 72,
+      "end": 201
+     },
+     "others": [
+      {
+       "name": "v1/src/timesfm/xreg_lib.py",
+       "start": 56,
+       "end": 182
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "class BatchedInContextXRegBase:",
+       "  \"\"\"Helper class for in-context regression covariate formatting.",
+       "",
+       "  Attributes:",
+       "    targets: List of targets (responses) of the in-context regression.",
+       "    train_lens: List of lengths of each target vector from the context.",
+       "    test_lens: List of lengths of each forecast horizon.",
+       "    train_dynamic_numerical_covariates: Dict of covariate names mapping to the",
+       "      dynamic numerical covariates of each forecast task on the context. Their",
+       "      lengths should match the corresponding lengths in `train_lens`."
+      ],
+      "total": 130
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 165,
+     "tokens": 777,
+     "first": {
+      "name": "src/timesfm/utils/xreg_lib.py",
+      "start": 207,
+      "end": 371
+     },
+     "others": [
+      {
+       "name": "v1/src/timesfm/xreg_lib.py",
+       "start": 190,
+       "end": 340
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  self.static_numerical_covariates = static_numerical_covariates or {}",
+       "  self.static_categorical_covariates = static_categorical_covariates or {}",
+       "",
+       "def _assert_covariates(self, assert_covariate_shapes: bool = False) -> None:",
+       "  \"\"\"Verifies the validity of the covariate inputs.\"\"\"",
+       "",
+       "  # Check presence.",
+       "  if (",
+       "    self.train_dynamic_numerical_covariates",
+       "    and not self.test_dynamic_numerical_covariates"
+      ],
+      "total": 165
+     },
+     "excerptSecond": {
+      "lines": [
+       "  self.static_numerical_covariates = static_numerical_covariates or {}",
+       "  self.static_categorical_covariates = static_categorical_covariates or {}",
+       "",
+       "def _assert_covariates(self, assert_covariate_shapes: bool = False) -> None:",
+       "  \"\"\"Verifies the validity of the covariate inputs.\"\"\"",
+       "",
+       "  # Check presence.",
+       "  if (self.train_dynamic_numerical_covariates and",
+       "      not self.test_dynamic_numerical_covariates) or (",
+       "          not self.train_dynamic_numerical_covariates and"
+      ],
+      "total": 151
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 88,
+     "tokens": 626,
+     "first": {
+      "name": "src/timesfm/utils/xreg_lib.py",
+      "start": 377,
+      "end": 464
+     },
+     "others": [
+      {
+       "name": "v1/src/timesfm/xreg_lib.py",
+       "start": 355,
+       "end": 440
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  x_test = [(x_test - x_mean) / x_std]",
+       "",
+       "# Categorical features. Encode one by one.",
+       "one_hot_encoder = preprocessing.OneHotEncoder(",
+       "  drop=one_hot_encoder_drop,",
+       "  sparse_output=False,",
+       "  handle_unknown=\"ignore\",",
+       ")",
+       "for name in sorted(self.train_dynamic_categorical_covariates.keys()):",
+       "  ohe_train = _unnest(self.train_dynamic_categorical_covariates[name])["
+      ],
+      "total": 88
+     },
+     "excerptSecond": {
+      "lines": [
+       "  x_test = [np.concatenate(norm_test, axis=0)]",
+       "",
+       "# Categorical features. Encode one by one.",
+       "one_hot_encoder = preprocessing.OneHotEncoder(",
+       "    drop=one_hot_encoder_drop,",
+       "    sparse_output=False,",
+       "    handle_unknown=\"ignore\",",
+       ")",
+       "for name in sorted(self.train_dynamic_categorical_covariates.keys()):",
+       "  ohe_train = _unnest("
+      ],
+      "total": 86
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 28,
+     "tokens": 265,
+     "first": {
+      "name": "src/timesfm/utils/xreg_lib.py",
+      "start": 30,
+      "end": 57
+     },
+     "others": [
+      {
+       "name": "v1/src/timesfm/xreg_lib.py",
+       "start": 25,
+       "end": 53
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 21,
+     "tokens": 203,
+     "first": {
+      "name": "src/timesfm/utils/xreg_lib.py",
+      "start": 75,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "src/timesfm/utils/xreg_lib.py",
+       "start": 177,
+       "end": 197
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 187,
+     "first": {
+      "name": "v1/src/timesfm/timesfm_base.py",
+      "start": 312,
+      "end": 337
+     },
+     "others": [
+      {
+       "name": "v1/src/timesfm/timesfm_jax.py",
+       "start": 237,
+       "end": 262
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 24,
+     "tokens": 186,
+     "first": {
+      "name": "v1/src/timesfm/timesfm_base.py",
+      "start": 314,
+      "end": 337
+     },
+     "others": [
+      {
+       "name": "v1/src/timesfm/timesfm_torch.py",
+       "start": 72,
+       "end": 95
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 29,
+     "tokens": 185,
+     "first": {
+      "name": "src/timesfm/timesfm_2p5/timesfm_2p5_flax.py",
+      "start": 515,
+      "end": 543
+     },
+     "others": [
+      {
+       "name": "src/timesfm/timesfm_2p5/timesfm_2p5_torch.py",
+       "start": 391,
+       "end": 419
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 142,
+     "first": {
+      "name": "src/timesfm/timesfm_2p5/timesfm_2p5_flax.py",
+      "start": 99,
+      "end": 115
+     },
+     "others": [
+      {
+       "name": "src/timesfm/timesfm_2p5/timesfm_2p5_torch.py",
+       "start": 42,
+       "end": 58
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 141,
+     "first": {
+      "name": "v1/src/timesfm/timesfm_base.py",
+      "start": 320,
+      "end": 334
+     },
+     "others": [
+      {
+       "name": "v1/src/timesfm/timesfm_base.py",
+       "start": 354,
+       "end": 368
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:48:34.235Z",
+  "jscpdVersion": "5.4.0"
  }
 }

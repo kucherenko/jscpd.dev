@@ -9,10 +9,12 @@
    "starsToday": 40,
    "headSha": "85da928019c428faf43cf96785f16f7da9efb0df",
    "sources": 472,
-   "lines": 77243,
-   "clones": 108,
-   "duplicatedLines": 1395,
-   "percentage": 1.81,
+   "lines": 76559,
+   "clones": 107,
+   "duplicatedLines": 1452,
+   "percentage": 1.9,
+   "codePercentage": 1.97,
+   "codeSources": 350,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 394,
    "headSha": "85da928019c428faf43cf96785f16f7da9efb0df",
    "sources": 472,
-   "lines": 77243,
+   "lines": 76559,
    "clones": 107,
-   "duplicatedLines": 1359,
-   "percentage": 1.76,
+   "duplicatedLines": 1452,
+   "percentage": 1.9,
+   "codePercentage": 1.97,
+   "codeSources": 350,
    "healthScore": 25.1,
    "healthGrade": "E"
   }
@@ -42,15 +46,15 @@
   "starsToday": 394,
   "defaultBranch": "main",
   "headSha": "85da928019c428faf43cf96785f16f7da9efb0df",
-  "durationMs": 855,
+  "durationMs": 190,
   "total": {
    "sources": 472,
-   "lines": 77243,
-   "tokens": 389344,
+   "lines": 76559,
+   "tokens": 389179,
    "clones": 107,
-   "duplicatedLines": 1359,
+   "duplicatedLines": 1452,
    "duplicatedTokens": 8105,
-   "percentage": 1.76,
+   "percentage": 1.9,
    "percentageTokens": 2.08
   },
   "formats": [
@@ -59,40 +63,40 @@
     "sources": 283,
     "lines": 44314,
     "clones": 77,
-    "duplicatedLines": 911,
-    "percentage": 2.06
+    "duplicatedLines": 988,
+    "percentage": 2.23
    },
    {
     "format": "tsx",
     "sources": 121,
     "lines": 21955,
     "clones": 17,
-    "duplicatedLines": 217,
-    "percentage": 0.99
+    "duplicatedLines": 234,
+    "percentage": 1.07
    },
    {
     "format": "yaml",
     "sources": 12,
-    "lines": 945,
+    "lines": 916,
     "clones": 6,
-    "duplicatedLines": 115,
-    "percentage": 12.17
+    "duplicatedLines": 121,
+    "percentage": 13.21
    },
    {
     "format": "bash",
     "sources": 23,
-    "lines": 3261,
+    "lines": 2755,
     "clones": 5,
-    "duplicatedLines": 101,
-    "percentage": 3.1
+    "duplicatedLines": 92,
+    "percentage": 3.34
    },
    {
     "format": "markdown",
     "sources": 19,
     "lines": 3284,
     "clones": 2,
-    "duplicatedLines": 15,
-    "percentage": 0.46
+    "duplicatedLines": 17,
+    "percentage": 0.52
    },
    {
     "format": "json",
@@ -121,15 +125,15 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "text",
+    "format": "css",
     "sources": 1,
-    "lines": 160,
+    "lines": 158,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,151 +144,246 @@
     "format": "tsx",
     "lines": 20,
     "tokens": 240,
-    "firstFile": {
+    "first": {
      "name": "admin/inertia/pages/supply-depot.tsx",
      "start": 480,
      "end": 499
     },
-    "secondFile": {
-     "name": "admin/inertia/pages/supply-depot.tsx",
-     "start": 517,
-     "end": 536
-    }
+    "others": [
+     {
+      "name": "admin/inertia/pages/supply-depot.tsx",
+      "start": 517,
+      "end": 536
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{installedServices.map((service) => (",
+      "  <AppCard",
+      "    key={service.service_name}",
+      "    service={service}",
+      "    openDropdown={openDropdown}",
+      "    dropdownRef={dropdownRef}",
+      "    onOpenDropdown={setOpenDropdown}",
+      "    onInstall={() => setModal({ type: 'install', service })}",
+      "    onStart={() => setModal({ type: 'start', service })}",
+      "    onStop={() => setModal({ type: 'stop', service })}"
+     ],
+     "total": 20
+    },
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 23,
     "tokens": 219,
-    "firstFile": {
+    "first": {
      "name": "admin/app/validators/system.ts",
      "start": 74,
      "end": 96
     },
-    "secondFile": {
-     "name": "admin/app/validators/system.ts",
-     "start": 152,
-     "end": 172
-    }
+    "others": [
+     {
+      "name": "admin/app/validators/system.ts",
+      "start": 152,
+      "end": 172
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "friendly_name: vine.string().trim().minLength(1).maxLength(100),",
+      "image: vine.string().trim().minLength(1),",
+      "ports: vine",
+      "  .array(",
+      "    vine.object({",
+      "      container: vine.number().min(1).max(65535),",
+      "      host: vine.number().min(1024).max(65535),",
+      "    })",
+      "  )",
+      "  .optional(),"
+     ],
+     "total": 23
+    },
+    "kind": "code"
+   },
+   {
+    "format": "yaml",
+    "lines": 27,
+    "tokens": 96,
+    "first": {
+     "name": ".github/workflows/build-disk-collector.yml",
+     "start": 1,
+     "end": 27
+    },
+    "others": [
+     {
+      "name": ".github/workflows/build-sidecar-updater.yml",
+      "start": 1,
+      "end": 27
+     },
+     {
+      "name": ".github/workflows/build-translate-proxy.yml",
+      "start": 1,
+      "end": 27
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "name: Build Disk Collector Image",
+      "",
+      "on:",
+      "  workflow_dispatch:",
+      "    inputs:",
+      "      version:",
+      "        description: 'Semantic version to label the Docker image under (no \"v\" prefix, e.g. \"1.2.3\")'",
+      "        required: true",
+      "        type: string",
+      "      tag_latest:"
+     ],
+     "total": 27
+    },
+    "kind": "data"
    },
    {
     "format": "typescript",
     "lines": 23,
     "tokens": 151,
-    "firstFile": {
+    "first": {
      "name": "admin/commands/app_auto_update/dry_run.ts",
      "start": 205,
      "end": 227
     },
-    "secondFile": {
-     "name": "admin/commands/auto_update/dry_run.ts",
-     "start": 280,
-     "end": 302
-    }
+    "others": [
+     {
+      "name": "admin/commands/auto_update/dry_run.ts",
+      "start": 280,
+      "end": 302
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 22,
     "tokens": 149,
-    "firstFile": {
+    "first": {
      "name": "admin/app/controllers/system_controller.ts",
      "start": 382,
      "end": 403
     },
-    "secondFile": {
-     "name": "admin/app/controllers/system_controller.ts",
-     "start": 608,
-     "end": 624
-    }
+    "others": [
+     {
+      "name": "admin/app/controllers/system_controller.ts",
+      "start": 608,
+      "end": 624
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 27,
     "tokens": 140,
-    "firstFile": {
+    "first": {
      "name": "admin/bin/console.ts",
      "start": 14,
      "end": 40
     },
-    "secondFile": {
-     "name": "admin/bin/server.ts",
-     "start": 12,
-     "end": 38
-    }
+    "others": [
+     {
+      "name": "admin/bin/server.ts",
+      "start": 12,
+      "end": 38
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 32,
     "tokens": 138,
-    "firstFile": {
+    "first": {
      "name": "admin/inertia/pages/settings/models.tsx",
      "start": 37,
      "end": 68
     },
-    "secondFile": {
-     "name": "admin/inertia/pages/settings/system.tsx",
-     "start": 26,
-     "end": 57
-    }
+    "others": [
+     {
+      "name": "admin/inertia/pages/settings/system.tsx",
+      "start": 26,
+      "end": 57
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 18,
+    "tokens": 69,
+    "first": {
+     "name": "admin/app/jobs/app_auto_update_job.ts",
+     "start": 58,
+     "end": 75
+    },
+    "others": [
+     {
+      "name": "admin/app/jobs/auto_update_job.ts",
+      "start": 60,
+      "end": 77
+     },
+     {
+      "name": "admin/app/jobs/content_auto_update_job.ts",
+      "start": 62,
+      "end": 79
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "typescript",
     "lines": 15,
     "tokens": 136,
-    "firstFile": {
+    "first": {
      "name": "admin/tests/standalone/drug_interactions.standalone.ts",
      "start": 54,
      "end": 68
     },
-    "secondFile": {
-     "name": "admin/tests/unit/drug_interactions.spec.ts",
-     "start": 25,
-     "end": 39
-    }
+    "others": [
+     {
+      "name": "admin/tests/unit/drug_interactions.spec.ts",
+      "start": 25,
+      "end": 39
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
    },
    {
     "format": "typescript",
     "lines": 22,
     "tokens": 133,
-    "firstFile": {
+    "first": {
      "name": "admin/bin/console.ts",
      "start": 21,
      "end": 42
     },
-    "secondFile": {
-     "name": "admin/bin/test.ts",
-     "start": 23,
-     "end": 44
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 26,
-    "tokens": 131,
-    "firstFile": {
-     "name": "admin/app/services/condition_service.ts",
-     "start": 295,
-     "end": 320
-    },
-    "secondFile": {
-     "name": "admin/app/services/drug_reference_service.ts",
-     "start": 281,
-     "end": 304
-    }
-   },
-   {
-    "format": "bash",
-    "lines": 35,
-    "tokens": 118,
-    "firstFile": {
-     "name": "install/install_nomad.sh",
-     "start": 53,
-     "end": 87
-    },
-    "secondFile": {
-     "name": "install/update_nomad.sh",
-     "start": 32,
-     "end": 66
-    }
+    "others": [
+     {
+      "name": "admin/bin/test.ts",
+      "start": 23,
+      "end": 44
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
   ],
   "health": {
@@ -501,6 +600,311 @@
      "lines": 599
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 350,
+   "lines": 63012,
+   "tokens": 299960,
+   "clones": 92,
+   "duplicatedLines": 1243,
+   "duplicatedTokens": 6914,
+   "percentage": 1.97,
+   "percentageTokens": 2.3,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 207,
+     "lines": 37988,
+     "clones": 71,
+     "duplicatedLines": 921,
+     "percentage": 2.42
+    },
+    {
+     "format": "tsx",
+     "sources": 120,
+     "lines": 21925,
+     "clones": 17,
+     "duplicatedLines": 234,
+     "percentage": 1.07
+    },
+    {
+     "format": "bash",
+     "sources": 21,
+     "lines": 2730,
+     "clones": 4,
+     "duplicatedLines": 88,
+     "percentage": 3.22
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 195,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 20,
+     "tokens": 240,
+     "first": {
+      "name": "admin/inertia/pages/supply-depot.tsx",
+      "start": 480,
+      "end": 499
+     },
+     "others": [
+      {
+       "name": "admin/inertia/pages/supply-depot.tsx",
+       "start": 517,
+       "end": 536
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "{installedServices.map((service) => (",
+       "  <AppCard",
+       "    key={service.service_name}",
+       "    service={service}",
+       "    openDropdown={openDropdown}",
+       "    dropdownRef={dropdownRef}",
+       "    onOpenDropdown={setOpenDropdown}",
+       "    onInstall={() => setModal({ type: 'install', service })}",
+       "    onStart={() => setModal({ type: 'start', service })}",
+       "    onStop={() => setModal({ type: 'stop', service })}"
+      ],
+      "total": 20
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 23,
+     "tokens": 219,
+     "first": {
+      "name": "admin/app/validators/system.ts",
+      "start": 74,
+      "end": 96
+     },
+     "others": [
+      {
+       "name": "admin/app/validators/system.ts",
+       "start": 152,
+       "end": 172
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "friendly_name: vine.string().trim().minLength(1).maxLength(100),",
+       "image: vine.string().trim().minLength(1),",
+       "ports: vine",
+       "  .array(",
+       "    vine.object({",
+       "      container: vine.number().min(1).max(65535),",
+       "      host: vine.number().min(1024).max(65535),",
+       "    })",
+       "  )",
+       "  .optional(),"
+      ],
+      "total": 23
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 23,
+     "tokens": 151,
+     "first": {
+      "name": "admin/commands/app_auto_update/dry_run.ts",
+      "start": 205,
+      "end": 227
+     },
+     "others": [
+      {
+       "name": "admin/commands/auto_update/dry_run.ts",
+       "start": 280,
+       "end": 302
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  const got = isWithinWindow(c.start, c.end, DateTime.fromISO(c.at))",
+       "  const ok = got === c.expect",
+       "  this.report(ok, `${c.name} (expected ${c.expect}, got ${got})`)",
+       "  ok ? passed++ : failed++",
+       "}",
+       "",
+       "this.logger.log('')",
+       "if (failed === 0) {",
+       "  this.logger.success(`All ${passed} scenarios passed`)",
+       "} else {"
+      ],
+      "total": 23
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 149,
+     "first": {
+      "name": "admin/app/controllers/system_controller.ts",
+      "start": 382,
+      "end": 403
+     },
+     "others": [
+      {
+       "name": "admin/app/controllers/system_controller.ts",
+       "start": 608,
+       "end": 624
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 27,
+     "tokens": 140,
+     "first": {
+      "name": "admin/bin/console.ts",
+      "start": 14,
+      "end": 40
+     },
+     "others": [
+      {
+       "name": "admin/bin/server.ts",
+       "start": 12,
+       "end": 38
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 32,
+     "tokens": 138,
+     "first": {
+      "name": "admin/inertia/pages/settings/models.tsx",
+      "start": 37,
+      "end": 68
+     },
+     "others": [
+      {
+       "name": "admin/inertia/pages/settings/system.tsx",
+       "start": 26,
+       "end": 57
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 18,
+     "tokens": 69,
+     "first": {
+      "name": "admin/app/jobs/app_auto_update_job.ts",
+      "start": 58,
+      "end": 75
+     },
+     "others": [
+      {
+       "name": "admin/app/jobs/auto_update_job.ts",
+       "start": 60,
+       "end": 77
+      },
+      {
+       "name": "admin/app/jobs/content_auto_update_job.ts",
+       "start": 62,
+       "end": 79
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 133,
+     "first": {
+      "name": "admin/bin/console.ts",
+      "start": 21,
+      "end": 42
+     },
+     "others": [
+      {
+       "name": "admin/bin/test.ts",
+       "start": 23,
+       "end": 44
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 26,
+     "tokens": 131,
+     "first": {
+      "name": "admin/app/services/condition_service.ts",
+      "start": 295,
+      "end": 320
+     },
+     "others": [
+      {
+       "name": "admin/app/services/drug_reference_service.ts",
+       "start": 281,
+       "end": 304
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 35,
+     "tokens": 118,
+     "first": {
+      "name": "install/install_nomad.sh",
+      "start": 53,
+      "end": 87
+     },
+     "others": [
+      {
+       "name": "install/update_nomad.sh",
+       "start": 32,
+       "end": 66
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 3,
+    "minified": 0,
+    "sample": [
+     "admin/app/data/conditions.ts",
+     "admin/app/data/home_remedies.ts",
+     "admin/app/data/natural_remedies.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:17:50.769Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -9,10 +9,12 @@
    "starsToday": 39,
    "headSha": "1d77046ad3670d62227f50a8f53286f6c6cde08b",
    "sources": 1367,
-   "lines": 152683,
+   "lines": 152639,
    "clones": 644,
    "duplicatedLines": 15877,
    "percentage": 10.4,
+   "codePercentage": 4.01,
+   "codeSources": 84,
    "healthScore": 69.1,
    "healthGrade": "C"
   }
@@ -28,11 +30,11 @@
   "starsToday": 39,
   "defaultBranch": "main",
   "headSha": "1d77046ad3670d62227f50a8f53286f6c6cde08b",
-  "durationMs": 1276,
+  "durationMs": 326,
   "total": {
    "sources": 1367,
-   "lines": 152683,
-   "tokens": 1315767,
+   "lines": 152639,
+   "tokens": 1315602,
    "clones": 644,
    "duplicatedLines": 15877,
    "duplicatedTokens": 80893,
@@ -83,10 +85,10 @@
    {
     "format": "bash",
     "sources": 124,
-    "lines": 4780,
+    "lines": 4730,
     "clones": 6,
     "duplicatedLines": 344,
-    "percentage": 7.2
+    "percentage": 7.27
    },
    {
     "format": "cpp",
@@ -124,153 +126,293 @@
   "topClones": [
    {
     "format": "markdown",
+    "lines": 39,
+    "tokens": 83,
+    "first": {
+     "name": "skills/ads/ima-sdk-client-side/references/ima-sdk-android-guide.md:markdown",
+     "start": 117,
+     "end": 155
+    },
+    "others": [
+     {
+      "name": "skills/ads/ima-sdk-client-side/references/ima-sdk-tvos-guide.md:markdown",
+      "start": 12,
+      "end": 16
+     },
+     {
+      "name": "skills/ads/ima-sdk-client-side/references/ima-sdk-tvos-guide.md:markdown",
+      "start": 52,
+      "end": 56
+     },
+     {
+      "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+      "start": 15,
+      "end": 19
+     },
+     {
+      "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+      "start": 30,
+      "end": 34
+     },
+     {
+      "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+      "start": 50,
+      "end": 54
+     },
+     {
+      "name": "skills/cloud/agent-platform-migrate-from-ai-studio/SKILL.md:markdown",
+      "start": 132,
+      "end": 136
+     },
+     {
+      "name": "skills/cloud/agent-platform-troubleshooting/references/agent-gateway.md:markdown",
+      "start": 142,
+      "end": 146
+     },
+     {
+      "name": "skills/cloud/agent-platform-troubleshooting/references/agent-gateway.md:markdown",
+      "start": 205,
+      "end": 209
+     }
+    ],
+    "copies": 157,
+    "excerpt": {
+     "lines": [
+      "    triggering callbacks after lifecycle teardown.",
+      "",
+      "```kotlin",
+      "// In your Activity or Fragment",
+      "override fun onDestroy() {",
+      "    super.onDestroy()",
+      "    cleanupAds()",
+      "",
+      "    // If this Activity owns the AdsLoader (non-singleton), release it here:",
+      "    adsLoader?.removeAdsLoadedListener(adsLoadedListener)"
+     ],
+     "total": 39
+    },
+    "excerptSecond": {
+     "lines": [
+      "you must implement.",
+      "",
+      "--------------------------------------------------------------------------------",
+      "",
+      "## Key differences from iOS"
+     ],
+     "total": 5
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
     "lines": 259,
     "tokens": 2926,
-    "firstFile": {
+    "first": {
      "name": "plugins/cloud/google-cloud-developer/skills/gcloud/SKILL.md:markdown",
      "start": 15,
      "end": 273
     },
-    "secondFile": {
-     "name": "skills/cloud/gcloud/SKILL.md:markdown",
-     "start": 15,
-     "end": 273
-    }
+    "others": [
+     {
+      "name": "skills/cloud/gcloud/SKILL.md:markdown",
+      "start": 15,
+      "end": 273
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# gcloud CLI Skill for AI Agents",
+      "",
+      "> [!CAUTION]",
+      ">",
+      "> ### MANDATORY PRE-CONDITION: EXPLICIT LEAF-LEVEL SYNTAX VALIDATION",
+      ">",
+      "> All pre-existing knowledge of `gcloud` commands, flags, flag values, and",
+      "> positional argument syntax is **stale and prone to hallucination**.",
+      ">",
+      "> NEVER propose command parameters, output flag options, execute commands, OR"
+     ],
+     "total": 259
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 251,
     "tokens": 2876,
-    "firstFile": {
+    "first": {
      "name": "plugins/cloud/google-cloud-developer/skills/google-cloud-recipe-auth/SKILL.md:markdown",
      "start": 9,
      "end": 259
     },
-    "secondFile": {
-     "name": "skills/cloud/google-cloud-recipe-auth/SKILL.md:markdown",
-     "start": 9,
-     "end": 259
-    }
+    "others": [
+     {
+      "name": "skills/cloud/google-cloud-recipe-auth/SKILL.md:markdown",
+      "start": 9,
+      "end": 259
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Authenticating to Google Cloud",
+      "",
+      "[Authentication](https://docs.cloud.google.com/docs/authentication.md.txt) is the",
+      "process of proving **who you are**. In Google Cloud, you represent a",
+      "**Principal** (an identity like a user or a service). This is the first step",
+      "before [Authorization](https://docs.cloud.google.com/iam/docs/overview.md.txt)",
+      "(determining **what you can do**).",
+      "",
+      "## Authentication",
+      ""
+     ],
+     "total": 251
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 215,
     "tokens": 2541,
-    "firstFile": {
+    "first": {
      "name": "plugins/cloud/google-cloud-developer/skills/google-cloud-recipe-onboarding/SKILL.md:markdown",
      "start": 15,
      "end": 229
     },
-    "secondFile": {
-     "name": "skills/cloud/google-cloud-recipe-onboarding/SKILL.md:markdown",
-     "start": 15,
-     "end": 229
-    }
+    "others": [
+     {
+      "name": "skills/cloud/google-cloud-recipe-onboarding/SKILL.md:markdown",
+      "start": 15,
+      "end": 229
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 187,
     "tokens": 1627,
-    "firstFile": {
+    "first": {
      "name": "plugins/cloud/google-cloud-developer/skills/gcloud/references/mcp-usage.md:markdown",
      "start": 1,
      "end": 187
     },
-    "secondFile": {
-     "name": "skills/cloud/gcloud/references/mcp-usage.md:markdown",
-     "start": 1,
-     "end": 187
-    }
+    "others": [
+     {
+      "name": "skills/cloud/gcloud/references/mcp-usage.md:markdown",
+      "start": 1,
+      "end": 187
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "bash",
     "lines": 268,
     "tokens": 1460,
-    "firstFile": {
+    "first": {
      "name": "skills/cloud/gke-cluster-autoscaler/assets/log-autoscaler-events.sh",
      "start": 1,
      "end": 268
     },
-    "secondFile": {
-     "name": "skills/cloud/gke-compute-classes/assets/log-autoscaler-events.sh",
-     "start": 1,
-     "end": 268
-    }
+    "others": [
+     {
+      "name": "skills/cloud/gke-compute-classes/assets/log-autoscaler-events.sh",
+      "start": 1,
+      "end": 268
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 58,
+    "tokens": 471,
+    "first": {
+     "name": "skills/cloud/google-cloud-solution-agentic-ai-bidirectional-streaming/assets/output-template.md:markdown",
+     "start": 6,
+     "end": 63
+    },
+    "others": [
+     {
+      "name": "skills/cloud/google-cloud-solution-agentic-ai-borderless-data-lakehouse/assets/output-template.md:markdown",
+      "start": 6,
+      "end": 60
+     },
+     {
+      "name": "skills/cloud/google-cloud-solution-agentic-ai-data-science-workflow/assets/output-template.md:markdown",
+      "start": 6,
+      "end": 64
+     },
+     {
+      "name": "skills/cloud/google-cloud-solution-architecture/assets/output-template.md:markdown",
+      "start": 6,
+      "end": 55
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 93,
     "tokens": 1388,
-    "firstFile": {
+    "first": {
      "name": "plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/SKILL.md:markdown",
      "start": 15,
      "end": 107
     },
-    "secondFile": {
-     "name": "skills/developers/retrieving-developer-knowledge/SKILL.md:markdown",
-     "start": 15,
-     "end": 107
-    }
+    "others": [
+     {
+      "name": "skills/developers/retrieving-developer-knowledge/SKILL.md:markdown",
+      "start": 15,
+      "end": 107
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 120,
     "tokens": 1353,
-    "firstFile": {
+    "first": {
      "name": "plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/references/api-fallback.md:markdown",
      "start": 1,
      "end": 120
     },
-    "secondFile": {
-     "name": "skills/developers/retrieving-developer-knowledge/references/api-fallback.md:markdown",
-     "start": 1,
-     "end": 120
-    }
+    "others": [
+     {
+      "name": "skills/developers/retrieving-developer-knowledge/references/api-fallback.md:markdown",
+      "start": 1,
+      "end": 120
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 119,
     "tokens": 1212,
-    "firstFile": {
+    "first": {
      "name": "plugins/cloud/google-cloud-developer/skills/finding-google-skills/SKILL.md:markdown",
      "start": 18,
      "end": 136
     },
-    "secondFile": {
-     "name": "skills/developers/finding-google-skills/SKILL.md:markdown",
-     "start": 18,
-     "end": 136
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 221,
-    "tokens": 1083,
-    "firstFile": {
-     "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_cpp.md:markdown",
-     "start": 22,
-     "end": 242
-    },
-    "secondFile": {
-     "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_go.md:markdown",
-     "start": 27,
-     "end": 246
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 218,
-    "tokens": 1038,
-    "firstFile": {
-     "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_cpp.md:markdown",
-     "start": 25,
-     "end": 242
-    },
-    "secondFile": {
-     "name": "skills/cloud/google-cloud-storage-bucket-architect/references/sdk_java.md:markdown",
-     "start": 15,
-     "end": 286
-    }
+    "others": [
+     {
+      "name": "skills/developers/finding-google-skills/SKILL.md:markdown",
+      "start": 18,
+      "end": 136
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -483,6 +625,314 @@
      "lines": 14
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 84,
+   "lines": 15767,
+   "tokens": 96760,
+   "clones": 22,
+   "duplicatedLines": 632,
+   "duplicatedTokens": 3157,
+   "percentage": 4.01,
+   "percentageTokens": 3.26,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 58,
+     "lines": 13570,
+     "clones": 19,
+     "duplicatedLines": 307,
+     "percentage": 2.26
+    },
+    {
+     "format": "bash",
+     "sources": 24,
+     "lines": 1994,
+     "clones": 3,
+     "duplicatedLines": 325,
+     "percentage": 16.3
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 29,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "bash",
+     "lines": 268,
+     "tokens": 1460,
+     "first": {
+      "name": "skills/cloud/gke-cluster-autoscaler/assets/log-autoscaler-events.sh",
+      "start": 1,
+      "end": 268
+     },
+     "others": [
+      {
+       "name": "skills/cloud/gke-compute-classes/assets/log-autoscaler-events.sh",
+       "start": 1,
+       "end": 268
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#!/usr/bin/env bash",
+       "#",
+       "# Live tail of GKE cluster autoscaler visibility logs for a single cluster.",
+       "# Surfaces both successful scale events (scale-ups, node pool auto-creation node-pool creations,",
+       "# scale-downs) and failures / stalls (per-MIG scale-up errors, noScaleUp,",
+       "# noScaleDown). Polls every $POLL_INTERVAL_SECS, colorizes terminal output,",
+       "# and appends a plain-text copy to the log file.",
+       "#",
+       "# Schema reference:",
+       "#   https://docs.cloud.google.com/kubernetes-engine/docs/how-to/cluster-autoscaler-visibility"
+      ],
+      "total": 268
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 54,
+     "first": {
+      "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+      "start": 87,
+      "end": 98
+     },
+     "others": [
+      {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 108,
+       "end": 119
+      },
+      {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 129,
+       "end": 140
+      },
+      {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 232,
+       "end": 243
+      },
+      {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 256,
+       "end": 267
+      },
+      {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 278,
+       "end": 289
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "print(f\"Searching skills at {endpoint} with query '{args.query}'...\")",
+       "response = requests.get(url, headers=headers)",
+       "",
+       "if response.status_code >= 400:",
+       "  print(f\"Error: {response.status_code} - {response.text}\")",
+       "  sys.exit(1)",
+       "",
+       "print(\"Response:\")",
+       "print(json.dumps(response.json(), indent=2))",
+       ""
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 46,
+     "tokens": 184,
+     "first": {
+      "name": "skills/cloud/agent-platform-alert-configuration/scripts/config_utils.py",
+      "start": 182,
+      "end": 227
+     },
+     "others": [
+      {
+       "name": "skills/cloud/gke-alert-configuration/scripts/validate_config.py",
+       "start": 129,
+       "end": 174
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def extract_alert_policies(hcl_content: str) -> list[dict]:",
+       "  \"\"\"Extracts resource 'google_monitoring_alert_policy' blocks and metadata.\"\"\"",
+       "  policies = []",
+       "  pattern = re.compile(",
+       "      r'resource\\s+\"google_monitoring_alert_policy\"\\s+\"([^\"]+)\"\\s*\\{'",
+       "  )",
+       "",
+       "  for match in pattern.finditer(hcl_content):",
+       "    resource_name = match.group(1)",
+       "    start_pos = match.start()"
+      ],
+      "total": 46
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 31,
+     "tokens": 145,
+     "first": {
+      "name": "skills/cloud/dbt-sf-to-bq-translator/scripts/dbt_translator.py",
+      "start": 115,
+      "end": 145
+     },
+     "others": [
+      {
+       "name": "skills/cloud/dbt-sf-to-bq-translator/scripts/dbt_translator.py",
+       "start": 184,
+       "end": 214
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 49,
+     "tokens": 141,
+     "first": {
+      "name": "skills/cloud/iam-helper-for-privileged-access-management/scripts/list_entitlements_hierarchy.sh",
+      "start": 10,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "skills/cloud/iam-helper-for-privileged-access-management/scripts/search_eligible_entitlements.sh",
+       "start": 10,
+       "end": 58
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 114,
+     "first": {
+      "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+      "start": 41,
+      "end": 52
+     },
+     "others": [
+      {
+       "name": "skills/cloud/agent-platform-skill-registry/scripts/skill_registry_ops.py",
+       "start": 178,
+       "end": 189
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 103,
+     "first": {
+      "name": "skills/cloud/google-cloud-filestore-nfs-browser/scripts/jump_host_engine.py",
+      "start": 108,
+      "end": 115
+     },
+     "others": [
+      {
+       "name": "skills/cloud/google-cloud-filestore-nfs-browser/scripts/jump_host_engine.py",
+       "start": 155,
+       "end": 162
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 28,
+     "tokens": 97,
+     "first": {
+      "name": "skills/cloud/agent-platform-alert-configuration/scripts/list_log_scope_table_names.py",
+      "start": 17,
+      "end": 44
+     },
+     "others": [
+      {
+       "name": "skills/cloud/agent-platform-alert-configuration/scripts/list_trace_scope_table_names.py",
+       "start": 17,
+       "end": 45
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 83,
+     "first": {
+      "name": "skills/cloud/agent-platform-alert-configuration/scripts/scan_duplicates.py",
+      "start": 27,
+      "end": 44
+     },
+     "others": [
+      {
+       "name": "skills/cloud/gke-alert-configuration/scripts/validate_config.py",
+       "start": 317,
+       "end": 333
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 81,
+     "first": {
+      "name": "skills/cloud/agent-platform-alert-configuration/scripts/config_utils.py",
+      "start": 247,
+      "end": 263
+     },
+     "others": [
+      {
+       "name": "skills/cloud/gke-alert-configuration/scripts/validate_config.py",
+       "start": 190,
+       "end": 206
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:37:11.071Z",
+  "jscpdVersion": "5.4.0"
  }
 }

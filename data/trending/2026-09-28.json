@@ -6,14 +6,14 @@
  "summary": {
   "repos": 7,
   "sources": 22323,
-  "lines": 5572110,
-  "tokens": 37290014,
-  "clones": 38446,
-  "duplicatedLines": 594624,
-  "duplicatedTokens": 3681007,
+  "lines": 5571802,
+  "tokens": 37288859,
+  "clones": 38450,
+  "duplicatedLines": 594679,
+  "duplicatedTokens": 3681786,
   "percentage": 10.67,
   "percentageTokens": 9.87,
-  "avgPercentage": 9.32,
+  "avgPercentage": 9.33,
   "medianPercentage": 10.67,
   "mostDuplicated": {
    "name": "dream-num/univer",
@@ -23,13 +23,31 @@
   "cleanest": {
    "name": "InfinityLoop1308/PipePipe",
    "clones": 8,
-   "percentage": 4.97
+   "percentage": 5.05
   },
   "mostClones": {
    "name": "paperclipai/paperclip",
-   "clones": 17605,
+   "clones": 17609,
    "percentage": 11.19
   },
+  "codeRepos": 6,
+  "codeSources": 9158,
+  "codeLines": 2736292,
+  "codeClones": 10455,
+  "codeDuplicatedLines": 162808,
+  "codePercentage": 5.95,
+  "codeMedianPercentage": 4.65,
+  "codeMostDuplicated": {
+   "name": "dream-num/univer",
+   "clones": 2682,
+   "percentage": 8.19
+  },
+  "codeCleanest": {
+   "name": "debpalash/VoiceStudio",
+   "clones": 372,
+   "percentage": 1.91
+  },
+  "generatedFiles": 23,
   "avgHealth": 57.86,
   "healthiest": {
    "name": "InfinityLoop1308/PipePipe",
@@ -45,16 +63,16 @@
    {
     "language": "TypeScript",
     "repos": 4,
-    "clones": 35864,
-    "lines": 4797540,
-    "duplicatedLines": 537719,
+    "clones": 35868,
+    "lines": 4797364,
+    "duplicatedLines": 537774,
     "percentage": 11.21
    },
    {
     "language": "Python",
     "repos": 1,
     "clones": 2312,
-    "lines": 720437,
+    "lines": 720393,
     "duplicatedLines": 50807,
     "percentage": 7.05
    },
@@ -62,17 +80,17 @@
     "language": "C",
     "repos": 1,
     "clones": 262,
-    "lines": 51276,
+    "lines": 51232,
     "duplicatedLines": 5956,
-    "percentage": 11.62
+    "percentage": 11.63
    },
    {
     "language": "Shell",
     "repos": 1,
     "clones": 8,
-    "lines": 2857,
+    "lines": 2813,
     "duplicatedLines": 142,
-    "percentage": 4.97
+    "percentage": 5.05
    }
   ]
  },
@@ -86,14 +104,14 @@
    "starsToday": 2401,
    "defaultBranch": "master",
    "headSha": "0f14d261233c545aa6a8a38ec253c498a5130fff",
-   "durationMs": 9966,
+   "durationMs": 103197,
    "total": {
     "sources": 7363,
-    "lines": 2435963,
-    "tokens": 15707743,
-    "clones": 17605,
-    "duplicatedLines": 272573,
-    "duplicatedTokens": 1574861,
+    "lines": 2435919,
+    "tokens": 15707578,
+    "clones": 17609,
+    "duplicatedLines": 272628,
+    "duplicatedTokens": 1575640,
     "percentage": 11.19,
     "percentageTokens": 10.03
    },
@@ -134,9 +152,9 @@
      "format": "markdown",
      "sources": 583,
      "lines": 136284,
-     "clones": 224,
-     "duplicatedLines": 9249,
-     "percentage": 6.79
+     "clones": 228,
+     "duplicatedLines": 9304,
+     "percentage": 6.83
     },
     {
      "format": "javascript",
@@ -165,10 +183,10 @@
     {
      "format": "bash",
      "sources": 183,
-     "lines": 16383,
+     "lines": 16333,
      "clones": 60,
      "duplicatedLines": 1622,
-     "percentage": 9.9
+     "percentage": 9.93
     },
     {
      "format": "markup",
@@ -184,151 +202,261 @@
      "format": "markdown",
      "lines": 1287,
      "tokens": 9203,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "skills-releases/paperclip/v0/references/api-reference.md:markdown",
       "start": 1,
       "end": 1287
      },
-     "secondFile": {
-      "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
-      "start": 1,
-      "end": 1287
+     "others": [
+      {
+       "name": "skills-releases/paperclip/v7-roster/references/api-reference.md:markdown",
+       "start": 1,
+       "end": 1287
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Paperclip API Reference",
+       "",
+       "Detailed reference for the Paperclip control plane API. For the core heartbeat procedure and critical rules, see the main `SKILL.md`.",
+       "",
+       "---",
+       "",
+       "## Response Schemas",
+       "",
+       "### Agent Record (`GET /api/agents/me` or `GET /api/agents/:agentId`)",
+       ""
+      ],
+      "total": 1287
      }
     },
     {
      "format": "tsx",
      "lines": 1048,
      "tokens": 6783,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/CompanySkills.production.tsx",
       "start": 2319,
       "end": 3366
      },
-     "secondFile": {
-      "name": "ui/src/pages/CompanySkills.tsx",
-      "start": 2336,
-      "end": 3383
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 2336,
+       "end": 3383
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+       "isAgentDisabled={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return option.required || !option.supportsSkills;",
+       "}}",
+       "getDescription={(agent) => {",
+       "  const option = agent as AttachAgentOption;",
+       "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+       "}}",
+       "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+      ],
+      "total": 1048
      }
     },
     {
      "format": "markdown",
      "lines": 1014,
      "tokens": 4926,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "doc/plans/2026-03-13-workspace-product-model-and-work-product.md:markdown",
       "start": 1,
       "end": 1014
      },
-     "secondFile": {
-      "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
-      "start": 1,
-      "end": 1014
+     "others": [
+      {
+       "name": "doc/plans/workspace-product-model-and-work-product.md:markdown",
+       "start": 1,
+       "end": 1014
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Workspace Product Model, Work Product, and PR Flow",
+       "",
+       "## Context",
+       "",
+       "Paperclip needs to support two very different but equally valid ways of working:",
+       "",
+       "- a solo developer working directly on `master`, or in a folder that is not even a git repo",
+       "- a larger engineering workflow with isolated branches, previews, pull requests, and cleanup automation",
+       "",
+       "Today, Paperclip already has the beginnings of this model:"
+      ],
+      "total": 1014
      }
     },
     {
      "format": "tsx",
      "lines": 657,
      "tokens": 4344,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/AgentDetail.production.tsx",
       "start": 3714,
       "end": 4370
      },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 3796,
-      "end": 4452
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 3796,
+       "end": 4452
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 624,
      "tokens": 4232,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/Inbox.tsx",
       "start": 1711,
       "end": 2334
      },
-     "secondFile": {
-      "name": "ui/src/pages/LegacyInbox.tsx",
-      "start": 1590,
-      "end": 2213
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/LegacyInbox.tsx",
+       "start": 1590,
+       "end": 2213
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 587,
      "tokens": 4042,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/components/IssuesList.tsx",
       "start": 1102,
       "end": 1688
      },
-     "secondFile": {
-      "name": "ui/src/components/LegacyIssuesList.tsx",
-      "start": 1052,
-      "end": 1638
-     }
+     "others": [
+      {
+       "name": "ui/src/components/LegacyIssuesList.tsx",
+       "start": 1052,
+       "end": 1638
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 60,
+     "copies": 66,
+     "first": {
+      "name": "server/src/__tests__/activity-service.test.ts",
+      "start": 109,
+      "end": 118
+     },
+     "others": [
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 157,
+       "end": 166
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 259,
+       "end": 268
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 353,
+       "end": 362
+      },
+      {
+       "name": "server/src/__tests__/activity-service.test.ts",
+       "start": 476,
+       "end": 485
+      },
+      {
+       "name": "server/src/__tests__/agents-claude-oauth-binding.test.ts",
+       "start": 271,
+       "end": 278
+      },
+      {
+       "name": "server/src/__tests__/artifact-review-documents-service.test.ts",
+       "start": 94,
+       "end": 102
+      },
+      {
+       "name": "server/src/__tests__/company-skill-test-runs-service.test.ts",
+       "start": 74,
+       "end": 81
+      },
+      {
+       "name": "server/src/__tests__/company-skills-service.test.ts",
+       "start": 947,
+       "end": 954
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 619,
      "tokens": 3874,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/components/SidebarAgents.production.tsx",
       "start": 48,
       "end": 666
      },
-     "secondFile": {
-      "name": "ui/src/components/SidebarAgents.tsx",
-      "start": 48,
-      "end": 666
-     }
+     "others": [
+      {
+       "name": "ui/src/components/SidebarAgents.tsx",
+       "start": 48,
+       "end": 666
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 590,
      "tokens": 3620,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/AgentDetail.production.tsx",
       "start": 3785,
       "end": 4374
      },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 3867,
-      "end": 4456
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/AgentDetail.tsx",
+       "start": 3867,
+       "end": 4456
+      }
+     ]
     },
     {
      "format": "tsx",
      "lines": 512,
      "tokens": 3520,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "ui/src/pages/CompanySkills.production.tsx",
       "start": 1667,
       "end": 2178
      },
-     "secondFile": {
-      "name": "ui/src/pages/CompanySkills.tsx",
-      "start": 1684,
-      "end": 2195
-     }
-    },
-    {
-     "format": "tsx",
-     "lines": 425,
-     "tokens": 2881,
-     "firstFile": {
-      "name": "ui/src/pages/AgentDetail.production.tsx",
-      "start": 346,
-      "end": 770
-     },
-     "secondFile": {
-      "name": "ui/src/pages/AgentDetail.tsx",
-      "start": 346,
-      "end": 770
-     }
+     "others": [
+      {
+       "name": "ui/src/pages/CompanySkills.tsx",
+       "start": 1684,
+       "end": 2195
+      }
+     ]
     }
    ],
    "health": {
@@ -551,7 +679,334 @@
       "lines": 955
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 3317,
+    "lines": 1211368,
+    "tokens": 6955084,
+    "clones": 4690,
+    "duplicatedLines": 81756,
+    "duplicatedTokens": 489966,
+    "percentage": 6.75,
+    "percentageTokens": 7.04,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 2203,
+      "lines": 769820,
+      "clones": 3335,
+      "duplicatedLines": 43799,
+      "percentage": 5.69
+     },
+     {
+      "format": "tsx",
+      "sources": 844,
+      "lines": 345333,
+      "clones": 1003,
+      "duplicatedLines": 33038,
+      "percentage": 9.57
+     },
+     {
+      "format": "rust",
+      "sources": 34,
+      "lines": 52139,
+      "clones": 257,
+      "duplicatedLines": 2999,
+      "percentage": 5.75
+     },
+     {
+      "format": "javascript",
+      "sources": 175,
+      "lines": 31529,
+      "clones": 59,
+      "duplicatedLines": 797,
+      "percentage": 2.53
+     },
+     {
+      "format": "bash",
+      "sources": 56,
+      "lines": 12144,
+      "clones": 36,
+      "duplicatedLines": 1123,
+      "percentage": 9.25
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "python",
+      "sources": 1,
+      "lines": 96,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "go",
+      "sources": 2,
+      "lines": 69,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "c",
+      "sources": 1,
+      "lines": 64,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 1048,
+      "tokens": 6783,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 2319,
+       "end": 3366
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 2336,
+        "end": 3383
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "emptyMessage={eligible.length === 0 ? \"No agents in this company support skills yet.\" : \"No agents yet.\"}",
+        "isAgentDisabled={(agent) => {",
+        "  const option = agent as AttachAgentOption;",
+        "  return option.required || !option.supportsSkills;",
+        "}}",
+        "getDescription={(agent) => {",
+        "  const option = agent as AttachAgentOption;",
+        "  return `${option.adapterType}${option.required ? \" · required\" : \"\"}${!option.supportsSkills ? \" · skills not supported\" : \"\"}`;",
+        "}}",
+        "renderNameSuffix={(agent) => (agent as AttachAgentOption).paused ? ("
+       ],
+       "total": 1048
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 657,
+      "tokens": 4344,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 3714,
+       "end": 4370
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 3796,
+        "end": 4452
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "      <ScrollToBottom />",
+        "    </div>",
+        "  );",
+        "}",
+        "",
+        "/* ---- Log Viewer ---- */",
+        "",
+        "export function LogViewer({ run, adapterType }: { run: HeartbeatRun; adapterType: string }) {",
+        "  const { visible } = usePageVisibility();",
+        "  const [events, setEvents] = useState<HeartbeatRunEvent[]>([]);"
+       ],
+       "total": 657
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 624,
+      "tokens": 4232,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/Inbox.tsx",
+       "start": 1711,
+       "end": 2334
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/LegacyInbox.tsx",
+        "start": 1590,
+        "end": 2213
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  [selectedCompanyId, visibleIssueColumns],",
+        ");",
+        "const updateIssueFilters = useCallback((patch: Partial<IssueFilterState>) => {",
+        "  updateFilterPreferences((previous) => ({",
+        "    ...previous,",
+        "    issueFilters: { ...previous.issueFilters, ...patch },",
+        "  }));",
+        "}, [updateFilterPreferences]);",
+        "useEffect(() => {",
+        "  if (!experimentalSettingsLoaded || externalObjectsEnabled || issueFilters.externalObjectStatuses.length === 0) return;"
+       ],
+       "total": 624
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 587,
+      "tokens": 4042,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/components/IssuesList.tsx",
+       "start": 1102,
+       "end": 1688
+      },
+      "others": [
+       {
+        "name": "ui/src/components/LegacyIssuesList.tsx",
+        "start": 1052,
+        "end": 1638
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 619,
+      "tokens": 3874,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/components/SidebarAgents.production.tsx",
+       "start": 48,
+       "end": 666
+      },
+      "others": [
+       {
+        "name": "ui/src/components/SidebarAgents.tsx",
+        "start": 48,
+        "end": 666
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 590,
+      "tokens": 3620,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 3785,
+       "end": 4374
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 3867,
+        "end": 4456
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 512,
+      "tokens": 3520,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 1667,
+       "end": 2178
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 1684,
+        "end": 2195
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 425,
+      "tokens": 2881,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/AgentDetail.production.tsx",
+       "start": 346,
+       "end": 770
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/AgentDetail.tsx",
+        "start": 346,
+        "end": 770
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 400,
+      "tokens": 2771,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/Inbox.tsx",
+       "start": 899,
+       "end": 1298
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/LegacyInbox.tsx",
+        "start": 789,
+        "end": 1189
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 367,
+      "tokens": 2523,
+      "copies": 2,
+      "first": {
+       "name": "ui/src/pages/CompanySkills.production.tsx",
+       "start": 1814,
+       "end": 2180
+      },
+      "others": [
+       {
+        "name": "ui/src/pages/CompanySkills.tsx",
+        "start": 1831,
+        "end": 2197
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 8,
+     "minified": 0,
+     "sample": [
+      "packages/paperclip-runner/runner/crates/runner-core/src/generated_acpx_sidecar_contract.rs",
+      "packages/paperclip-runner/src/drivers/acpx/generated-sidecar-contract.ts",
+      "packages/paperclip-runner/src/generated/capability-contract.ts",
+      "packages/paperclip-runner/src/mock-core/skill-frontmatter.generated.ts",
+      "packages/paperclip-runner/src/protocol/generated/schema-bundle.ts",
+      "packages/paperclip-runner/src/protocol/generated/standalone-validators.ts",
+      "packages/shared/src/cliplab/character.ts",
+      "packages/shared/src/telemetry/generated/paperclip-telemetry.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:45:08.376Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "debpalash/VoiceStudio",
@@ -562,11 +1017,11 @@
    "starsToday": 3086,
    "defaultBranch": "main",
    "headSha": "08a1592e3cb9b4c36beef5fa3185ec2313bb1fea",
-   "durationMs": 3678,
+   "durationMs": 1716,
    "total": {
     "sources": 2957,
-    "lines": 720437,
-    "tokens": 4622371,
+    "lines": 720393,
+    "tokens": 4622206,
     "clones": 2312,
     "duplicatedLines": 50807,
     "duplicatedTokens": 239904,
@@ -633,10 +1088,10 @@
     {
      "format": "bash",
      "sources": 58,
-     "lines": 4656,
+     "lines": 4606,
      "clones": 14,
      "duplicatedLines": 122,
-     "percentage": 2.62
+     "percentage": 2.65
     },
     {
      "format": "markdown",
@@ -660,151 +1115,226 @@
      "format": "json",
      "lines": 198,
      "tokens": 788,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/en.json",
       "start": 699,
       "end": 896
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/en.json",
-      "start": 1272,
-      "end": 1469
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/en.json",
+       "start": 1272,
+       "end": 1469
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"remove_video_confirm\": \"Remove this video, its transcript and unsaved edits? This cannot be undone.\",",
+       "\"cookie_transport_error\": \"Cookie exports require HTTPS or the local desktop app.\",",
+       "\"cookie_size_error\": \"The cookie export must be 1 MB or smaller.\",",
+       "\"save\": \"Save\",",
+       "\"reset\": \"Reset\",",
+       "\"save_project\": \"Save project\",",
+       "\"change_file\": \"Change file\",",
+       "\"import_srt\": \"Import .srt\",",
+       "\"import_srt_alt\": \"Import .srt instead\",",
+       "\"cast\": \"CAST\","
+      ],
+      "total": 198
      }
     },
     {
      "format": "json",
      "lines": 198,
      "tokens": 788,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/ko.json",
       "start": 534,
       "end": 731
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/ko.json",
-      "start": 1332,
-      "end": 1529
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/ko.json",
+       "start": 1332,
+       "end": 1529
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"remove_video_confirm\": \"이 동영상과 자막, 저장하지 않은 편집 내용을 삭제할까요? 되돌릴 수 없습니다.\",",
+       "\"cookie_transport_error\": \"쿠키 내보내기에는 HTTPS 또는 로컬 데스크톱 앱이 필요합니다.\",",
+       "\"cookie_size_error\": \"쿠키 내보내기 파일은 1MB 이하여야 합니다.\",",
+       "\"save\": \"저장\",",
+       "\"reset\": \"재설정\",",
+       "\"save_project\": \"프로젝트 저장\",",
+       "\"change_file\": \"파일 변경\",",
+       "\"import_srt\": \".srt 가져오기\",",
+       "\"import_srt_alt\": \"대신 .srt를 가져오세요.\",",
+       "\"cast\": \"캐스트\","
+      ],
+      "total": 198
      }
     },
     {
      "format": "json",
      "lines": 196,
      "tokens": 780,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/zh-CN.json",
       "start": 553,
       "end": 748
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/zh-CN.json",
-      "start": 1286,
-      "end": 1481
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/zh-CN.json",
+       "start": 1286,
+       "end": 1481
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"remove_video_confirm\": \"要移除此视频、转录文本和未保存的编辑吗？此操作无法撤销。\",",
+       "\"cookie_transport_error\": \"Cookie 导出文件只能通过 HTTPS 或本地桌面应用发送。\",",
+       "\"cookie_size_error\": \"Cookie 导出文件必须小于或等于 1 MB。\",",
+       "\"save\": \"保存\",",
+       "\"reset\": \"重置\",",
+       "\"save_project\": \"保存项目\",",
+       "\"change_file\": \"更换文件\",",
+       "\"import_srt\": \"导入 SRT\",",
+       "\"import_srt_alt\": \"改为导入 SRT\",",
+       "\"cast\": \"配音角色\","
+      ],
+      "total": 196
      }
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/ar.json",
       "start": 544,
       "end": 732
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/ar.json",
-      "start": 1042,
-      "end": 1230
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/ar.json",
+       "start": 1042,
+       "end": 1230
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/de.json",
       "start": 536,
       "end": 724
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/de.json",
-      "start": 1042,
-      "end": 1230
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/de.json",
+       "start": 1042,
+       "end": 1230
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/es.json",
       "start": 538,
       "end": 726
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/es.json",
-      "start": 1042,
-      "end": 1230
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/es.json",
+       "start": 1042,
+       "end": 1230
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/fr.json",
       "start": 538,
       "end": 726
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/fr.json",
-      "start": 1042,
-      "end": 1230
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/fr.json",
+       "start": 1042,
+       "end": 1230
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/hi.json",
       "start": 536,
       "end": 724
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/hi.json",
-      "start": 1042,
-      "end": 1230
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/hi.json",
+       "start": 1042,
+       "end": 1230
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/id.json",
       "start": 536,
       "end": 724
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/id.json",
-      "start": 1042,
-      "end": 1230
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/id.json",
+       "start": 1042,
+       "end": 1230
+      }
+     ]
     },
     {
      "format": "json",
      "lines": 189,
      "tokens": 752,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "electron/src/renderer/src/i18n/locales/it.json",
       "start": 538,
       "end": 726
      },
-     "secondFile": {
-      "name": "electron/src/shared/i18n/locales/it.json",
-      "start": 1042,
-      "end": 1230
-     }
+     "others": [
+      {
+       "name": "electron/src/shared/i18n/locales/it.json",
+       "start": 1042,
+       "end": 1230
+      }
+     ]
     }
    ],
    "health": {
@@ -1026,7 +1556,380 @@
       "lines": 197
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1175,
+    "lines": 300442,
+    "tokens": 1700429,
+    "clones": 372,
+    "duplicatedLines": 5748,
+    "duplicatedTokens": 31337,
+    "percentage": 1.91,
+    "percentageTokens": 1.84,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 336,
+      "lines": 143418,
+      "clones": 240,
+      "duplicatedLines": 3944,
+      "percentage": 2.75
+     },
+     {
+      "format": "jsx",
+      "sources": 223,
+      "lines": 54627,
+      "clones": 46,
+      "duplicatedLines": 634,
+      "percentage": 1.16
+     },
+     {
+      "format": "typescript",
+      "sources": 215,
+      "lines": 30790,
+      "clones": 31,
+      "duplicatedLines": 432,
+      "percentage": 1.4
+     },
+     {
+      "format": "tsx",
+      "sources": 213,
+      "lines": 45690,
+      "clones": 24,
+      "duplicatedLines": 237,
+      "percentage": 0.52
+     },
+     {
+      "format": "javascript",
+      "sources": 146,
+      "lines": 17477,
+      "clones": 24,
+      "duplicatedLines": 446,
+      "percentage": 2.55
+     },
+     {
+      "format": "rust",
+      "sources": 7,
+      "lines": 4081,
+      "clones": 5,
+      "duplicatedLines": 39,
+      "percentage": 0.96
+     },
+     {
+      "format": "bash",
+      "sources": 29,
+      "lines": 3685,
+      "clones": 2,
+      "duplicatedLines": 16,
+      "percentage": 0.43
+     },
+     {
+      "format": "powershell",
+      "sources": 5,
+      "lines": 500,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 144,
+      "tokens": 742,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 246,
+       "end": 389
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 436,
+        "end": 579
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "# Convert to numpy format for subsequent serialization (int16 to save space)",
+        "audio_tokens_np = audio_tokens.to(torch.int16).cpu().numpy()",
+        "",
+        "return {",
+        "    \"status\": \"success\",",
+        "    \"key\": key,",
+        "    \"audio_tokens\": audio_tokens_np,",
+        "    \"metadata\": metadata,",
+        "    \"error_msg\": None,",
+        "}"
+       ],
+       "total": 144
+      }
+     },
+     {
+      "format": "python",
+      "lines": 117,
+      "tokens": 643,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 430,
+       "end": 546
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 625,
+        "end": 743
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        ")",
+        "",
+        "# Shared GPU rank queue for process assignment",
+        "manager = mp.Manager()",
+        "rank_queue = manager.Queue()",
+        "for rank in list(range(num_devices)) * args.nj_per_gpu:",
+        "    rank_queue.put(rank)",
+        "if num_devices == 0:",
+        "    for _ in range(num_processes):",
+        "        rank_queue.put(-1)"
+       ],
+       "total": 117
+      }
+     },
+     {
+      "format": "python",
+      "lines": 27,
+      "tokens": 136,
+      "copies": 5,
+      "first": {
+       "name": "backend/engines/confucius4/main.py",
+       "start": 253,
+       "end": 279
+      },
+      "others": [
+       {
+        "name": "backend/engines/dots_tts/main.py",
+        "start": 240,
+        "end": 269
+       },
+       {
+        "name": "backend/engines/moss_tts_v15/main.py",
+        "start": 321,
+        "end": 350
+       },
+       {
+        "name": "backend/engines/omnivoice_subprocess/main.py",
+        "start": 284,
+        "end": 313
+       },
+       {
+        "name": "backend/engines/pockettts/main.py",
+        "start": 320,
+        "end": 349
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    \"sample_rate\": CONFUCIUS_SAMPLE_RATE,",
+        "})",
+        "",
+        "while True:",
+        "    try:",
+        "        msg = _recv(stdin)",
+        "    except Exception as exc:",
+        "        _send(stdout, {",
+        "            \"op\": \"error\", \"stage\": \"recv\",",
+        "            \"message\": f\"{type(exc).__name__}: {exc}\","
+       ],
+       "total": 27
+      },
+      "excerptSecond": {
+       "lines": [
+        "    \"sample_rate\": DOTS_SAMPLE_RATE,",
+        "})",
+        "",
+        "while True:",
+        "    try:",
+        "        msg = _recv(stdin)",
+        "    except Exception as exc:",
+        "        _send(stdout, {",
+        "            \"op\": \"error\",",
+        "            \"stage\": \"recv\","
+       ],
+       "total": 30
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 99,
+      "tokens": 456,
+      "copies": 2,
+      "first": {
+       "name": "electron/src/shared/utils/watchFolder.js",
+       "start": 24,
+       "end": 122
+      },
+      "others": [
+       {
+        "name": "electron/src/shared/utils/watchFolderTracker.js",
+        "start": 3,
+        "end": 101
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 36,
+      "tokens": 188,
+      "copies": 3,
+      "first": {
+       "name": "backend/engines/cosyvoice_subprocess/main.py",
+       "start": 345,
+       "end": 380
+      },
+      "others": [
+       {
+        "name": "backend/engines/moss_tts_nano_subprocess/main.py",
+        "start": 219,
+        "end": 254
+       },
+       {
+        "name": "backend/engines/voxcpm2_subprocess/main.py",
+        "start": 242,
+        "end": 277
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 80,
+      "tokens": 350,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 546,
+       "end": 625
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 746,
+        "end": 825
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 24,
+      "tokens": 167,
+      "copies": 3,
+      "first": {
+       "name": "backend/engines/_echo/main.py",
+       "start": 54,
+       "end": 77
+      },
+      "others": [
+       {
+        "name": "backend/engines/confucius4/main.py",
+        "start": 46,
+        "end": 69
+       },
+       {
+        "name": "backend/engines/dots_tts/main.py",
+        "start": 59,
+        "end": 82
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 25,
+      "tokens": 108,
+      "copies": 4,
+      "first": {
+       "name": "backend/worker/agent.py",
+       "start": 515,
+       "end": 539
+      },
+      "others": [
+       {
+        "name": "backend/worker/inbound/artifacts.py",
+        "start": 1108,
+        "end": 1132
+       },
+       {
+        "name": "backend/worker/task_store.py",
+        "start": 179,
+        "end": 203
+       },
+       {
+        "name": "backend/worker/tls.py",
+        "start": 445,
+        "end": 469
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 56,
+      "tokens": 323,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/eval/wer/fleurs.py",
+       "start": 424,
+       "end": 479
+      },
+      "others": [
+       {
+        "name": "omnivoice/eval/wer/minimax.py",
+        "start": 515,
+        "end": 570
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 96,
+      "tokens": 310,
+      "copies": 2,
+      "first": {
+       "name": "omnivoice/scripts/extract_audio_tokens.py",
+       "start": 77,
+       "end": 172
+      },
+      "others": [
+       {
+        "name": "omnivoice/scripts/extract_audio_tokens_add_noise.py",
+        "start": 88,
+        "end": 183
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 4,
+     "minified": 0,
+     "sample": [
+      "backend/worker/protocol/gen/__init__.py",
+      "backend/worker/protocol/gen/worker_v1_pb2_grpc.py",
+      "backend/worker/protocol/gen/worker_v1_pb2.py",
+      "omnivoice/utils/lang_map.py"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:45:47.592Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "InfinityLoop1308/PipePipe",
@@ -1037,16 +1940,16 @@
    "starsToday": 242,
    "defaultBranch": "main",
    "headSha": "7349b0f632d67613cf7bbc408d611116698eb820",
-   "durationMs": 931,
+   "durationMs": 23,
    "total": {
     "sources": 92,
-    "lines": 2857,
-    "tokens": 17473,
+    "lines": 2813,
+    "tokens": 17308,
     "clones": 8,
     "duplicatedLines": 142,
     "duplicatedTokens": 1106,
-    "percentage": 4.97,
-    "percentageTokens": 6.33
+    "percentage": 5.05,
+    "percentageTokens": 6.39
    },
    "formats": [
     {
@@ -1058,14 +1961,6 @@
      "percentage": 11.99
     },
     {
-     "format": "bash",
-     "sources": 10,
-     "lines": 710,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
-    },
-    {
      "format": "yaml",
      "sources": 5,
      "lines": 685,
@@ -1074,9 +1969,17 @@
      "percentage": 0
     },
     {
+     "format": "bash",
+     "sources": 10,
+     "lines": 660,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1095,121 +1998,190 @@
      "format": "txt",
      "lines": 22,
      "tokens": 351,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1007.txt",
       "start": 1,
       "end": 22
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1008.txt",
-      "start": 1,
-      "end": 22
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1008.txt",
+       "start": 1,
+       "end": 22
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "• feat: support bullet comments/live chats for all maintained services(i.e. Youtube, BiliBili, NicoNico). SuperChats are also supported and have different appe…",
+       "• feat: apply new styled channel tabs for all maintained services, enabling show other type of contents like live replays and playlists.",
+       "• feat: directly seek to the timestamp when opening timestamps in comments, rather than open it in the popup player.",
+       "• feat: add more kiosks for all maintained services, including Recommended Lives kiosk.",
+       "• feat: remove the related items tab/ comments tab if it is not supported in the current stream instead of show \"Comments are disabled\" and \"No videos\".",
+       "• feat: show more specified error message, for example \"Live not started\" rather than just say \"Could not fetch stream\".",
+       "• feat: support search, open and play livestreams on NicoNico.",
+       "• feat: support open channels and play contents from channels on NicoNico.",
+       "• feat: support search, open and play Bangumis(animes, movies and TV series) on BiliBili.",
+       "• feat: support round-play live streams on BiliBili."
+      ],
+      "total": 22
      }
     },
     {
      "format": "txt",
      "lines": 28,
      "tokens": 156,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1065.txt",
       "start": 1,
       "end": 28
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1066.txt",
-      "start": 3,
-      "end": 30
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1066.txt",
+       "start": 3,
+       "end": 30
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "### New Features",
+       "",
+       "- Support content filters: filter out unwanted items everywhere by keywords and channel names",
+       "",
+       "### Bug Fixes",
+       "",
+       "- Videos failed to play: 403 errors (YouTube)",
+       "- Random crash when switching videos (YouTube)",
+       "- Blurry channel banner images (YouTube)",
+       "- New comments/related items/desc are not updated when resuming to app from background playing"
+      ],
+      "total": 28
      }
     },
     {
      "format": "txt",
      "lines": 22,
      "tokens": 151,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1083.txt",
       "start": 1,
       "end": 22
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1084.txt",
-      "start": 1,
-      "end": 22
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1084.txt",
+       "start": 1,
+       "end": 22
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "### New Features",
+       "",
+       "- Support Android Auto",
+       "- Support customize the action of right swiping in local playlists: delete, enqueue or disabled",
+       "- Support import URLs from txt file to playlist",
+       "- Support add all items in local playlist to another local playlist",
+       "- Support filter out paid videos",
+       "- Add a preference to control whether to enable auto-translation in YouTube",
+       "- Support storyboard preview (BiliBili)",
+       ""
+      ],
+      "total": 22
      }
     },
     {
      "format": "txt",
      "lines": 13,
      "tokens": 116,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1013.txt",
       "start": 1,
       "end": 13
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1014.txt",
-      "start": 5,
-      "end": 17
-     }
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1014.txt",
+       "start": 5,
+       "end": 17
+      }
+     ]
     },
     {
      "format": "txt",
      "lines": 16,
      "tokens": 112,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1078.txt",
       "start": 1,
       "end": 16
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1079.txt",
-      "start": 1,
-      "end": 16
-     }
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1079.txt",
+       "start": 1,
+       "end": 16
+      }
+     ]
     },
     {
      "format": "txt",
      "lines": 15,
      "tokens": 82,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1035.txt",
       "start": 1,
       "end": 15
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1036.txt",
-      "start": 6,
-      "end": 20
-     }
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1036.txt",
+       "start": 6,
+       "end": 20
+      }
+     ]
     },
     {
      "format": "txt",
      "lines": 11,
      "tokens": 69,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1033.txt",
       "start": 1,
       "end": 11
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1034.txt",
-      "start": 1,
-      "end": 11
-     }
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1034.txt",
+       "start": 1,
+       "end": 11
+      }
+     ]
     },
     {
      "format": "txt",
      "lines": 15,
      "tokens": 69,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "fastlane/metadata/android/en-US/changelogs/1058.txt",
       "start": 1,
       "end": 15
      },
-     "secondFile": {
-      "name": "fastlane/metadata/android/en-US/changelogs/1059.txt",
-      "start": 1,
-      "end": 15
-     }
+     "others": [
+      {
+       "name": "fastlane/metadata/android/en-US/changelogs/1059.txt",
+       "start": 1,
+       "end": 15
+      }
+     ]
     }
    ],
    "health": {
@@ -1323,7 +2295,43 @@
      }
     ]
    },
-   "deadCode": null
+   "deadCode": null,
+   "code": {
+    "sources": 11,
+    "lines": 834,
+    "tokens": 3132,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "duplicatedTokens": 0,
+    "percentage": 0,
+    "percentageTokens": 0,
+    "formats": [
+     {
+      "format": "bash",
+      "sources": 10,
+      "lines": 660,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "measuredAt": "2026-10-07T06:27:29.718Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "vercel-labs/scriptc",
@@ -1334,11 +2342,11 @@
    "starsToday": 102,
    "defaultBranch": "main",
    "headSha": "6aa732c08966731790891c1c8f99cc2fa49d4f49",
-   "durationMs": 3005,
+   "durationMs": 2157,
    "total": {
     "sources": 2535,
-    "lines": 471976,
-    "tokens": 4464041,
+    "lines": 471932,
+    "tokens": 4463876,
     "clones": 2218,
     "duplicatedLines": 30467,
     "duplicatedTokens": 231988,
@@ -1432,151 +2440,356 @@
      "format": "c-header",
      "lines": 738,
      "tokens": 26511,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/runtime/src/scr_text_decoder_data.h",
       "start": 4012,
       "end": 4749
      },
-     "secondFile": {
-      "name": "packages/runtime/src/scr_text_decoder_data.h",
-      "start": 5492,
-      "end": 6229
+     "others": [
+      {
+       "name": "packages/runtime/src/scr_text_decoder_data.h",
+       "start": 5492,
+       "end": 6229
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "static const uint16_t scr_td_jis0208[94 * 94] = {",
+       "  0x3000, 0x3001, 0x3002, 0xff0c, 0xff0e, 0x30fb, 0xff1a, 0xff1b, 0xff1f, 0xff01, 0x309b, 0x309c,",
+       "  0x00b4, 0xff40, 0x00a8, 0xff3e, 0xffe3, 0xff3f, 0x30fd, 0x30fe, 0x309d, 0x309e, 0x3003, 0x4edd,",
+       "  0x3005, 0x3006, 0x3007, 0x30fc, 0x2015, 0x2010, 0xff0f, 0xff3c, 0xff5e, 0x2225, 0xff5c, 0x2026,",
+       "  0x2025, 0x2018, 0x2019, 0x201c, 0x201d, 0xff08, 0xff09, 0x3014, 0x3015, 0xff3b, 0xff3d, 0xff5b,",
+       "  0xff5d, 0x3008, 0x3009, 0x300a, 0x300b, 0x300c, 0x300d, 0x300e, 0x300f, 0x3010, 0x3011, 0xff0b,",
+       "  0xff0d, 0x00b1, 0x00d7, 0x00f7, 0xff1d, 0x2260, 0xff1c, 0xff1e, 0x2266, 0x2267, 0x221e, 0x2234,",
+       "  0x2642, 0x2640, 0x00b0, 0x2032, 0x2033, 0x2103, 0xffe5, 0xff04, 0xffe0, 0xffe1, 0xff05, 0xff03,",
+       "  0xff06, 0xff0a, 0xff20, 0x00a7, 0x2606, 0x2605, 0x25cb, 0x25cf, 0x25ce, 0x25c7, 0x25c6, 0x25a1,",
+       "  0x25a0, 0x25b3, 0x25b2, 0x25bd, 0x25bc, 0x203b, 0x3012, 0x2192, 0x2190, 0x2191, 0x2193, 0x3013,"
+      ],
+      "total": 738
      }
     },
     {
      "format": "typescript",
      "lines": 6999,
      "tokens": 13997,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "tests/diagnostics/deep-nesting-preflight.ts",
       "start": 2,
       "end": 7000
      },
-     "secondFile": {
-      "name": "tests/diagnostics/deep-nesting-preflight.ts",
-      "start": 3,
-      "end": 7001
+     "others": [
+      {
+       "name": "tests/diagnostics/deep-nesting-preflight.ts",
+       "start": 3,
+       "end": 7001
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "1 +",
+       "1 +",
+       "1 +",
+       "1 +",
+       "1 +",
+       "1 +",
+       "1 +",
+       "1 +",
+       "1 +",
+       "1 +"
+      ],
+      "total": 6999
      }
     },
     {
      "format": "c-header",
      "lines": 89,
      "tokens": 3151,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/runtime/src/scr_text_decoder_data.h",
       "start": 2534,
       "end": 2622
      },
-     "secondFile": {
-      "name": "packages/runtime/src/scr_text_decoder_data.h",
-      "start": 6298,
-      "end": 6386
+     "others": [
+      {
+       "name": "packages/runtime/src/scr_text_decoder_data.h",
+       "start": 6298,
+       "end": 6386
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "0xe334, 0xe335, 0xe336, 0xe337, 0xe338, 0xe339, 0xe33a, 0xe33b, 0xe33c, 0xe33d, 0xe33e, 0xe33f,",
+       "0xe340, 0xe341, 0xe342, 0xe343, 0xe344, 0xe345, 0xe346, 0xe347, 0xe348, 0xe349, 0xe34a, 0xe34b,",
+       "0xe34c, 0xe34d, 0xe34e, 0xe34f, 0xe350, 0xe351, 0xe352, 0xe353, 0xe354, 0xe355, 0xe356, 0xe357,",
+       "0xe358, 0xe359, 0xe35a, 0xe35b, 0xe35c, 0xe35d, 0xe35e, 0xe35f, 0xe360, 0xe361, 0xe362, 0xe363,",
+       "0xe364, 0xe365, 0xe366, 0xe367, 0xe368, 0xe369, 0xe36a, 0xe36b, 0xe36c, 0xe36d, 0xe36e, 0xe36f,",
+       "0xe370, 0xe371, 0xe372, 0xe373, 0xe374, 0xe375, 0xe376, 0xe377, 0xe378, 0xe379, 0xe37a, 0xe37b,",
+       "0xe37c, 0xe37d, 0xe37e, 0xe37f, 0xe380, 0xe381, 0xe382, 0xe383, 0xe384, 0xe385, 0xe386, 0xe387,",
+       "0xe388, 0xe389, 0xe38a, 0xe38b, 0xe38c, 0xe38d, 0xe38e, 0xe38f, 0xe390, 0xe391, 0xe392, 0xe393,",
+       "0xe394, 0xe395, 0xe396, 0xe397, 0xe398, 0xe399, 0xe39a, 0xe39b, 0xe39c, 0xe39d, 0xe39e, 0xe39f,",
+       "0xe3a0, 0xe3a1, 0xe3a2, 0xe3a3, 0xe3a4, 0xe3a5, 0xe3a6, 0xe3a7, 0xe3a8, 0xe3a9, 0xe3aa, 0xe3ab,"
+      ],
+      "total": 89
+     },
+     "excerptSecond": {
+      "lines": [
+       "0xe338, 0xe339, 0xe33a, 0xe33b, 0xe33c, 0xe33d, 0xe33e, 0xe33f, 0xe340, 0xe341, 0xe342, 0xe343,",
+       "0xe344, 0xe345, 0xe346, 0xe347, 0xe348, 0xe349, 0xe34a, 0xe34b, 0xe34c, 0xe34d, 0xe34e, 0xe34f,",
+       "0xe350, 0xe351, 0xe352, 0xe353, 0xe354, 0xe355, 0xe356, 0xe357, 0xe358, 0xe359, 0xe35a, 0xe35b,",
+       "0xe35c, 0xe35d, 0xe35e, 0xe35f, 0xe360, 0xe361, 0xe362, 0xe363, 0xe364, 0xe365, 0xe366, 0xe367,",
+       "0xe368, 0xe369, 0xe36a, 0xe36b, 0xe36c, 0xe36d, 0xe36e, 0xe36f, 0xe370, 0xe371, 0xe372, 0xe373,",
+       "0xe374, 0xe375, 0xe376, 0xe377, 0xe378, 0xe379, 0xe37a, 0xe37b, 0xe37c, 0xe37d, 0xe37e, 0xe37f,",
+       "0xe380, 0xe381, 0xe382, 0xe383, 0xe384, 0xe385, 0xe386, 0xe387, 0xe388, 0xe389, 0xe38a, 0xe38b,",
+       "0xe38c, 0xe38d, 0xe38e, 0xe38f, 0xe390, 0xe391, 0xe392, 0xe393, 0xe394, 0xe395, 0xe396, 0xe397,",
+       "0xe398, 0xe399, 0xe39a, 0xe39b, 0xe39c, 0xe39d, 0xe39e, 0xe39f, 0xe3a0, 0xe3a1, 0xe3a2, 0xe3a3,",
+       "0xe3a4, 0xe3a5, 0xe3a6, 0xe3a7, 0xe3a8, 0xe3a9, 0xe3aa, 0xe3ab, 0xe3ac, 0xe3ad, 0xe3ae, 0xe3af,"
+      ],
+      "total": 89
      }
     },
     {
      "format": "c-header",
      "lines": 60,
      "tokens": 2121,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/runtime/src/scr_text_decoder_data.h",
       "start": 3950,
       "end": 4009
      },
-     "secondFile": {
-      "name": "packages/runtime/src/scr_text_decoder_data.h",
-      "start": 6235,
-      "end": 6294
-     }
+     "others": [
+      {
+       "name": "packages/runtime/src/scr_text_decoder_data.h",
+       "start": 6235,
+       "end": 6294
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 70,
+     "copies": 23,
+     "first": {
+      "name": "packages/compiler/src/ir/ir.ts",
+      "start": 6510,
+      "end": 6516
+     },
+     "others": [
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6539,
+       "end": 6545
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6566,
+       "end": 6574
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6630,
+       "end": 6636
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6653,
+       "end": 6659
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6678,
+       "end": 6684
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6703,
+       "end": 6709
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6768,
+       "end": 6774
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6790,
+       "end": 6798
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 66,
+     "copies": 21,
+     "first": {
+      "name": "packages/compiler/src/ir/ir.ts",
+      "start": 6335,
+      "end": 6343
+     },
+     "others": [
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6372,
+       "end": 6380
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6507,
+       "end": 6515
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6650,
+       "end": 6658
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6675,
+       "end": 6683
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6700,
+       "end": 6708
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6765,
+       "end": 6773
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6787,
+       "end": 6795
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6822,
+       "end": 6830
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 59,
+     "copies": 21,
+     "first": {
+      "name": "packages/compiler/src/ir/ir.ts",
+      "start": 6374,
+      "end": 6380
+     },
+     "others": [
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6462,
+       "end": 6468
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6509,
+       "end": 6515
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6652,
+       "end": 6658
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6677,
+       "end": 6683
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6702,
+       "end": 6708
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6767,
+       "end": 6773
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6789,
+       "end": 6795
+      },
+      {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6824,
+       "end": 6830
+      }
+     ]
     },
     {
      "format": "c-header",
      "lines": 31,
      "tokens": 1088,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/runtime/src/scr_text_decoder_data.h",
       "start": 4702,
       "end": 4732
      },
-     "secondFile": {
+     "others": [
+      {
+       "name": "packages/runtime/src/scr_text_decoder_data.h",
+       "start": 6388,
+       "end": 6418
+      }
+     ]
+    },
+    {
+     "format": "c-header",
+     "lines": 9,
+     "tokens": 284,
+     "copies": 4,
+     "first": {
       "name": "packages/runtime/src/scr_text_decoder_data.h",
-      "start": 6388,
-      "end": 6418
-     }
+      "start": 1020,
+      "end": 1028
+     },
+     "others": [
+      {
+       "name": "packages/runtime/src/scr_text_decoder_data.h",
+       "start": 3944,
+       "end": 3951
+      },
+      {
+       "name": "packages/runtime/src/scr_text_decoder_data.h",
+       "start": 6229,
+       "end": 6237
+      },
+      {
+       "name": "packages/runtime/src/scr_text_decoder_data.h",
+       "start": 6749,
+       "end": 6757
+      }
+     ]
     },
     {
      "format": "c",
      "lines": 85,
      "tokens": 813,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/runtime/src/scr_child.c",
       "start": 1960,
       "end": 2044
      },
-     "secondFile": {
-      "name": "packages/runtime/src/scr_child.c",
-      "start": 4471,
-      "end": 4555
-     }
-    },
-    {
-     "format": "c",
-     "lines": 51,
-     "tokens": 543,
-     "firstFile": {
-      "name": "packages/runtime/src/scr_child.c",
-      "start": 2359,
-      "end": 2409
-     },
-     "secondFile": {
-      "name": "packages/runtime/src/scr_child.c",
-      "start": 4947,
-      "end": 4997
-     }
-    },
-    {
-     "format": "c",
-     "lines": 67,
-     "tokens": 529,
-     "firstFile": {
-      "name": "packages/runtime/src/scr_child.c",
-      "start": 1893,
-      "end": 1959
-     },
-     "secondFile": {
-      "name": "packages/runtime/src/scr_child.c",
-      "start": 4404,
-      "end": 4470
-     }
-    },
-    {
-     "format": "javascript",
-     "lines": 93,
-     "tokens": 509,
-     "firstFile": {
-      "name": "tests/corpus/1700-mustcall-common/common.cjs",
-      "start": 6,
-      "end": 98
-     },
-     "secondFile": {
-      "name": "tests/corpus/1701-mustcall-exit-report/common.cjs",
-      "start": 6,
-      "end": 98
-     }
-    },
-    {
-     "format": "c",
-     "lines": 43,
-     "tokens": 424,
-     "firstFile": {
-      "name": "packages/runtime/src/scr_child.c",
-      "start": 2215,
-      "end": 2257
-     },
-     "secondFile": {
-      "name": "packages/runtime/src/scr_child.c",
-      "start": 4783,
-      "end": 4825
-     }
+     "others": [
+      {
+       "name": "packages/runtime/src/scr_child.c",
+       "start": 4471,
+       "end": 4555
+      }
+     ]
     }
    ],
    "health": {
@@ -1740,7 +2953,558 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 311,
+    "lines": 292602,
+    "tokens": 2969106,
+    "clones": 1246,
+    "duplicatedLines": 12630,
+    "duplicatedTokens": 103084,
+    "percentage": 4.32,
+    "percentageTokens": 3.47,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 179,
+      "lines": 193895,
+      "clones": 837,
+      "duplicatedLines": 8207,
+      "percentage": 4.23
+     },
+     {
+      "format": "c",
+      "sources": 63,
+      "lines": 85604,
+      "clones": 382,
+      "duplicatedLines": 4166,
+      "percentage": 4.87
+     },
+     {
+      "format": "javascript",
+      "sources": 47,
+      "lines": 4557,
+      "clones": 23,
+      "duplicatedLines": 233,
+      "percentage": 5.11
+     },
+     {
+      "format": "c-header",
+      "sources": 6,
+      "lines": 7143,
+      "clones": 4,
+      "duplicatedLines": 24,
+      "percentage": 0.34
+     },
+     {
+      "format": "bash",
+      "sources": 11,
+      "lines": 779,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "cpp",
+      "sources": 4,
+      "lines": 450,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 7,
+      "tokens": 70,
+      "copies": 23,
+      "first": {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6510,
+       "end": 6516
+      },
+      "others": [
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6539,
+        "end": 6545
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6566,
+        "end": 6574
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6630,
+        "end": 6636
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6653,
+        "end": 6659
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6678,
+        "end": 6684
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6703,
+        "end": 6709
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6768,
+        "end": 6774
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6790,
+        "end": 6798
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "if (found || v === null || typeof v !== \"object\") return;",
+        "if (Array.isArray(v)) {",
+        "  for (const item of v) visit(item);",
+        "  return;",
+        "}",
+        "const node = v as { kind?: unknown; fn?: unknown };",
+        "if (node.kind === \"libCall\" && typeof node.fn === \"string\" && PROCESS_EVENT_LIB_FNS.has(node.fn)) {"
+       ],
+       "total": 7
+      },
+      "excerptSecond": {
+       "lines": [
+        "if (found || v === null || typeof v !== \"object\") return;",
+        "if (Array.isArray(v)) {",
+        "  for (const item of v) visit(item);",
+        "  return;",
+        "}",
+        "const node = v as { kind?: unknown; fn?: unknown };",
+        "if (node.kind === \"libCall\" && typeof node.fn === \"string\" && node.fn.startsWith(\"emitter.\")) {"
+       ],
+       "total": 7
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 66,
+      "copies": 21,
+      "first": {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6335,
+       "end": 6343
+      },
+      "others": [
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6372,
+        "end": 6380
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6507,
+        "end": 6515
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6650,
+        "end": 6658
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6675,
+        "end": 6683
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6700,
+        "end": 6708
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6765,
+        "end": 6773
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6787,
+        "end": 6795
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6822,
+        "end": 6830
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export function moduleUsesRegex(mod: IrModule): boolean {",
+        "  let found = false;",
+        "  const visit = (v: unknown): void => {",
+        "    if (found || v === null || typeof v !== \"object\") return;",
+        "    if (Array.isArray(v)) {",
+        "      for (const item of v) visit(item);",
+        "      return;",
+        "    }",
+        "    const kind = (v as { kind?: unknown }).kind;"
+       ],
+       "total": 9
+      },
+      "excerptSecond": {
+       "lines": [
+        "export function moduleUsesCopying(mod: IrModule): boolean {",
+        "  let found = false;",
+        "  const visit = (v: unknown): void => {",
+        "    if (found || v === null || typeof v !== \"object\") return;",
+        "    if (Array.isArray(v)) {",
+        "      for (const item of v) visit(item);",
+        "      return;",
+        "    }",
+        "    const node = v as { kind?: unknown; method?: unknown };"
+       ],
+       "total": 9
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 7,
+      "tokens": 59,
+      "copies": 21,
+      "first": {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6374,
+       "end": 6380
+      },
+      "others": [
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6462,
+        "end": 6468
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6509,
+        "end": 6515
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6652,
+        "end": 6658
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6677,
+        "end": 6683
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6702,
+        "end": 6708
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6767,
+        "end": 6773
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6789,
+        "end": 6795
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6824,
+        "end": 6830
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "const visit = (v: unknown): void => {",
+        "  if (found || v === null || typeof v !== \"object\") return;",
+        "  if (Array.isArray(v)) {",
+        "    for (const item of v) visit(item);",
+        "    return;",
+        "  }",
+        "  const node = v as { kind?: unknown; method?: unknown };"
+       ],
+       "total": 7
+      },
+      "excerptSecond": {
+       "lines": [
+        "const visit = (v: unknown): void => {",
+        "  if (found || v === null || typeof v !== \"object\") return;",
+        "  if (Array.isArray(v)) {",
+        "    for (const item of v) visit(item);",
+        "    return;",
+        "  }",
+        "  const node = v as { kind?: unknown; op?: unknown; name?: unknown; fn?: unknown };"
+       ],
+       "total": 7
+      }
+     },
+     {
+      "format": "c",
+      "lines": 85,
+      "tokens": 813,
+      "copies": 2,
+      "first": {
+       "name": "packages/runtime/src/scr_child.c",
+       "start": 1960,
+       "end": 2044
+      },
+      "others": [
+       {
+        "name": "packages/runtime/src/scr_child.c",
+        "start": 4471,
+        "end": 4555
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 14,
+      "tokens": 51,
+      "copies": 15,
+      "first": {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6359,
+       "end": 6372
+      },
+      "others": [
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6397,
+        "end": 6410
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6440,
+        "end": 6457
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6583,
+        "end": 6596
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6755,
+        "end": 6765
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6807,
+        "end": 6822
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6848,
+        "end": 6865
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6878,
+        "end": 6891
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6903,
+        "end": 6921
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 51,
+      "tokens": 543,
+      "copies": 2,
+      "first": {
+       "name": "packages/runtime/src/scr_child.c",
+       "start": 2359,
+       "end": 2409
+      },
+      "others": [
+       {
+        "name": "packages/runtime/src/scr_child.c",
+        "start": 4947,
+        "end": 4997
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 67,
+      "tokens": 529,
+      "copies": 2,
+      "first": {
+       "name": "packages/runtime/src/scr_child.c",
+       "start": 1893,
+       "end": 1959
+      },
+      "others": [
+       {
+        "name": "packages/runtime/src/scr_child.c",
+        "start": 4404,
+        "end": 4470
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 24,
+      "tokens": 233,
+      "copies": 3,
+      "first": {
+       "name": "packages/runtime/src/scr_regex.c",
+       "start": 714,
+       "end": 737
+      },
+      "others": [
+       {
+        "name": "packages/runtime/src/scr_regex.c",
+        "start": 999,
+        "end": 1012
+       },
+       {
+        "name": "packages/runtime/src/scr_string.c",
+        "start": 494,
+        "end": 517
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 9,
+      "tokens": 56,
+      "copies": 9,
+      "first": {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6567,
+       "end": 6575
+      },
+      "others": [
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6791,
+        "end": 6799
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6826,
+        "end": 6832
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6925,
+        "end": 6931
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6956,
+        "end": 6962
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 7003,
+        "end": 7009
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 7065,
+        "end": 7071
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 7094,
+        "end": 7100
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 7165,
+        "end": 7171
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 6,
+      "tokens": 55,
+      "copies": 9,
+      "first": {
+       "name": "packages/compiler/src/ir/ir.ts",
+       "start": 6540,
+       "end": 6545
+      },
+      "others": [
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6631,
+        "end": 6636
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6654,
+        "end": 6659
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6679,
+        "end": 6684
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6769,
+        "end": 6774
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 6869,
+        "end": 6874
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 7034,
+        "end": 7039
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 7136,
+        "end": 7142
+       },
+       {
+        "name": "packages/compiler/src/ir/ir.ts",
+        "start": 7199,
+        "end": 7204
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 2,
+     "minified": 0,
+     "sample": [
+      "packages/runtime/src/scr_island_manifest.h",
+      "packages/runtime/src/scr_text_decoder_data.h"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T06:27:51.089Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "mvschwarz/openrig",
@@ -1751,11 +3515,11 @@
    "starsToday": 114,
    "defaultBranch": "main",
    "headSha": "ae957e59577bd05a715594fa9c589c2e883b2d19",
-   "durationMs": 3467,
+   "durationMs": 10306,
    "total": {
     "sources": 3012,
-    "lines": 628234,
-    "tokens": 4682572,
+    "lines": 628190,
+    "tokens": 4682407,
     "clones": 5220,
     "duplicatedLines": 67039,
     "duplicatedTokens": 506436,
@@ -1814,10 +3578,10 @@
     {
      "format": "bash",
      "sources": 66,
-     "lines": 3607,
+     "lines": 3557,
      "clones": 9,
      "duplicatedLines": 413,
-     "percentage": 11.45
+     "percentage": 11.61
     },
     {
      "format": "text",
@@ -1849,151 +3613,261 @@
      "format": "javascript",
      "lines": 1417,
      "tokens": 11825,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
       "start": 3,
       "end": 1419
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
-      "start": 3,
-      "end": 1419
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-upgrade/scripts/migrate-telemetry-state-0.5.9.mjs",
+       "start": 3,
+       "end": 1419
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import crypto from \"node:crypto\";",
+       "import fs from \"node:fs\";",
+       "import path from \"node:path\";",
+       "import { spawnSync } from \"node:child_process\";",
+       "",
+       "const SCHEMA = \"openrig-telemetry-state-migration/v1\";",
+       "const rig = process.env.OPENRIG_RIG_BIN || \"rig\";",
+       "const HELP = `Usage: migrate-telemetry-state-0.5.9.mjs [options]",
+       "",
+       "No phase flag runs the read-only plan."
+      ],
+      "total": 1417
      }
     },
     {
      "format": "markdown",
      "lines": 463,
      "tokens": 5706,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/process/context-engineering/SKILL.md:markdown",
       "start": 17,
       "end": 479
      },
-     "secondFile": {
-      "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
-      "start": 17,
-      "end": 479
+     "others": [
+      {
+       "name": "skills/_canonical/process/context-engineering/SKILL.md:markdown",
+       "start": 17,
+       "end": 479
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Traditional Context Engineering — 2024–2025 Snapshot",
+       "",
+       "## Status: provisional historical research snapshot",
+       "",
+       "This skill is a provisional historical research snapshot of context-engineering practice as",
+       "published in 2024–2025. It is NOT normative. Do not apply it prescriptively to current frontier",
+       "models without re-verification. On any conflict, OpenRig current skills, explicit user rulings,",
+       "and directly measured OpenRig practice PREVAIL over this document. Treat these areas as",
+       "particularly suspect pending re-verification: compaction/summarization guidance, minimal-upfront",
+       "versus broad orientation, just-in-time lookup assumptions, fixed context ceilings, and"
+      ],
+      "total": 463
      }
     },
     {
      "format": "markdown",
      "lines": 543,
      "tokens": 5694,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-software-factory/references/worked-example.md:markdown",
       "start": 1,
       "end": 543
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
-      "start": 1,
-      "end": 543
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-software-factory/references/worked-example.md:markdown",
+       "start": 1,
+       "end": 543
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Worked example: reviewed CSV validation",
+       "",
+       "Use this example to adapt reviewed work to a repository with CSV handling. Choose the simple team or queue loop first; the full Workflow files are optional. Ch…",
+       "",
+       "This is a concrete CSV-validation example for adaptation, not a requirement that an arbitrary repository become a CSV project or every outcome be split into tw…",
+       "",
+       "For the example only, repository root and work root are the same absolute directory, called `PROJECT_ROOT`. The selected project ID is `csv-tool`, mission is `…",
+       "",
+       "## Manual work and the queue loop",
+       ""
+      ],
+      "total": 543
      }
     },
     {
      "format": "markdown",
      "lines": 345,
      "tokens": 3762,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-architect/SKILL.md:markdown",
       "start": 27,
       "end": 371
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
-      "start": 27,
-      "end": 371
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/core/openrig-architect/SKILL.md:markdown",
+       "start": 27,
+       "end": 371
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 109,
+     "tokens": 1864,
+     "copies": 3,
+     "first": {
+      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
+      "start": 10,
+      "end": 118
+     },
+     "others": [
+      {
+       "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
+       "start": 10,
+       "end": 118
+      },
+      {
+       "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
+       "start": 10,
+       "end": 118
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 264,
      "tokens": 3472,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/pods/orchestration-team/SKILL.md:markdown",
       "start": 6,
       "end": 269
      },
-     "secondFile": {
-      "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
-      "start": 6,
-      "end": 269
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/pods/orchestration-team/SKILL.md:markdown",
+       "start": 6,
+       "end": 269
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 533,
      "tokens": 3133,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/cli/src/lib/scope/scope-audit.ts",
       "start": 1,
       "end": 533
      },
-     "secondFile": {
-      "name": "packages/daemon/src/domain/scope/scope-audit.ts",
-      "start": 1,
-      "end": 533
-     }
+     "others": [
+      {
+       "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+       "start": 1,
+       "end": 533
+      }
+     ]
     },
     {
      "format": "markdown",
-     "lines": 109,
-     "tokens": 1864,
-     "firstFile": {
-      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 118
+     "lines": 101,
+     "tokens": 981,
+     "copies": 3,
+     "first": {
+      "name": "packages/daemon/assets/plugins/openrig-core/skills/messaging-the-human/SKILL.md:markdown",
+      "start": 20,
+      "end": 120
      },
-     "secondFile": {
-      "name": "packages/daemon/specs/agents/shared/skills/core/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 118
-     }
+     "others": [
+      {
+       "name": "packages/daemon/specs/agents/shared/skills/core/messaging-the-human/SKILL.md:markdown",
+       "start": 20,
+       "end": 120
+      },
+      {
+       "name": "skills/_canonical/core/messaging-the-human/SKILL.md:markdown",
+       "start": 20,
+       "end": 120
+      }
+     ]
     },
     {
-     "format": "markdown",
-     "lines": 109,
-     "tokens": 1864,
-     "firstFile": {
-      "name": "packages/daemon/assets/plugins/openrig-core/skills/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 118
+     "format": "typescript",
+     "lines": 30,
+     "tokens": 310,
+     "copies": 7,
+     "first": {
+      "name": "packages/cli/test/archive.test.ts",
+      "start": 11,
+      "end": 40
      },
-     "secondFile": {
-      "name": "skills/_canonical/core/openrig-skills/SKILL.md:markdown",
-      "start": 10,
-      "end": 118
-     }
+     "others": [
+      {
+       "name": "packages/cli/test/attach.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/bootstrap.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/discover.test.ts",
+       "start": 5,
+       "end": 34
+      },
+      {
+       "name": "packages/cli/test/down.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/package.test.ts",
+       "start": 4,
+       "end": 33
+      },
+      {
+       "name": "packages/cli/test/requirements.test.ts",
+       "start": 4,
+       "end": 33
+      }
+     ]
     },
     {
      "format": "markdown",
      "lines": 214,
      "tokens": 1840,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/daemon/specs/agents/shared/skills/process/dogfood/SKILL.md:markdown",
       "start": 12,
       "end": 225
      },
-     "secondFile": {
-      "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
-      "start": 12,
-      "end": 225
-     }
-    },
-    {
-     "format": "markdown",
-     "lines": 291,
-     "tokens": 1800,
-     "firstFile": {
-      "name": "packages/daemon/specs/agents/shared/skills/process/systematic-debugging/SKILL.md:markdown",
-      "start": 11,
-      "end": 301
-     },
-     "secondFile": {
-      "name": "skills/_canonical/process/systematic-debugging/SKILL.md:markdown",
-      "start": 11,
-      "end": 301
-     }
+     "others": [
+      {
+       "name": "skills/_canonical/process/dogfood/SKILL.md:markdown",
+       "start": 12,
+       "end": 225
+      }
+     ]
     }
    ],
    "health": {
@@ -2210,7 +4084,378 @@
       "lines": 557
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 1077,
+    "lines": 253253,
+    "tokens": 1546248,
+    "clones": 756,
+    "duplicatedLines": 11500,
+    "duplicatedTokens": 69818,
+    "percentage": 4.54,
+    "percentageTokens": 4.52,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 828,
+      "lines": 204832,
+      "clones": 702,
+      "duplicatedLines": 10854,
+      "percentage": 5.3
+     },
+     {
+      "format": "tsx",
+      "sources": 178,
+      "lines": 36632,
+      "clones": 39,
+      "duplicatedLines": 445,
+      "percentage": 1.21
+     },
+     {
+      "format": "javascript",
+      "sources": 49,
+      "lines": 8871,
+      "clones": 14,
+      "duplicatedLines": 195,
+      "percentage": 2.2
+     },
+     {
+      "format": "python",
+      "sources": 2,
+      "lines": 836,
+      "clones": 1,
+      "duplicatedLines": 6,
+      "percentage": 0.72
+     },
+     {
+      "format": "bash",
+      "sources": 19,
+      "lines": 1908,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 533,
+      "tokens": 3133,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/scope/scope-audit.ts",
+       "start": 1,
+       "end": 533
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/scope/scope-audit.ts",
+        "start": 1,
+        "end": 533
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "import * as YAML from \"yaml\";",
+        "import { isMissionDotId, isSliceDotId } from \"./dot-id.js\";",
+        "import { isScaffoldPlaceholderText, hasAuthoredNumberedItem, isPristineScaffoldSection } from \"./scaffold-placeholder.js\";",
+        "",
+        "export type RailStatus = \"present\" | \"missing\" | \"malformed\" | \"readme-only\";",
+        "export type FindingSeverity = \"high\" | \"medium\" | \"low\" | \"info\";",
+        "export type FindingKind =",
+        "  | \"missing_progress\"",
+        "  | \"registration_ghost\"",
+        "  | \"missing_id\""
+       ],
+       "total": 533
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 230,
+      "tokens": 1280,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/host-registry.ts",
+       "start": 62,
+       "end": 291
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/hosts/hosts-registry-reader.ts",
+        "start": 21,
+        "end": 229
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export interface SshHostEntry {",
+        "  id: string;",
+        "  /**",
+        "   * The observed, immutable self-id of the host this entry points at — the JOIN KEY.",
+        "   *",
+        "   * `id` is MY label for that machine; `hostId` is what that machine calls itself and stamps into",
+        "   * every envelope it sends. Optional because every entry that exists today predates the field:",
+        "   * absent means \"never learned\", which resolves exactly as it does now. Nothing populates this",
+        "   * automatically in this slice.",
+        "   */"
+       ],
+       "total": 230
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 111,
+      "tokens": 813,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/permission-policy/policy-spec.ts",
+       "start": 9,
+       "end": 119
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/permission-policy/policy-spec.ts",
+        "start": 9,
+        "end": 119
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "import { parse as parseYaml, stringify as stringifyYaml } from \"yaml\";",
+        "",
+        "export type PolicySurface = \"flag\" | \"config\";",
+        "export type PolicySource = \"builtin\" | \"custom\";",
+        "export type LaunchPosture = \"floor\" | \"full_bypass\";",
+        "export type DefaultPosture = \"allow\" | \"ask\" | \"deny\";",
+        "",
+        "/** A parsed policy spec: the raw frontmatter object + the preserved Markdown body. */",
+        "export interface ParsedPolicySpec {",
+        "  frontmatter: Record<string, unknown>;"
+       ],
+       "total": 111
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 156,
+      "tokens": 813,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/scope/dot-id.ts",
+       "start": 18,
+       "end": 173
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/scope/dot-id.ts",
+        "start": 18,
+        "end": 173
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 215,
+      "tokens": 793,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/lib/permission-policy/policy-ref.ts",
+       "start": 17,
+       "end": 231
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/permission-policy/policy-ref.ts",
+        "start": 17,
+        "end": 231
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 11,
+      "tokens": 84,
+      "copies": 10,
+      "first": {
+       "name": "packages/cli/src/commands/attach.ts",
+       "start": 43,
+       "end": 53
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/commands/bind.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/launch.ts",
+        "start": 49,
+        "end": 59
+       },
+       {
+        "name": "packages/cli/src/commands/package.ts",
+        "start": 8,
+        "end": 19
+       },
+       {
+        "name": "packages/cli/src/commands/release.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/remove.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/requirements.ts",
+        "start": 8,
+        "end": 18
+       },
+       {
+        "name": "packages/cli/src/commands/shrink.ts",
+        "start": 28,
+        "end": 38
+       },
+       {
+        "name": "packages/cli/src/commands/snapshot.ts",
+        "start": 8,
+        "end": 19
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 62,
+      "tokens": 353,
+      "copies": 3,
+      "first": {
+       "name": "packages/cli/src/session-name.ts",
+       "start": 33,
+       "end": 94
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/session-name.ts",
+        "start": 132,
+        "end": 193
+       },
+       {
+        "name": "packages/ui/src/lib/session-name.ts",
+        "start": 33,
+        "end": 94
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 75,
+      "tokens": 507,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/commands/queue.ts",
+       "start": 744,
+       "end": 818
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/commands/queue.ts",
+        "start": 839,
+        "end": 911
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 77,
+      "tokens": 505,
+      "copies": 2,
+      "first": {
+       "name": "packages/cli/src/config-store.ts",
+       "start": 766,
+       "end": 842
+      },
+      "others": [
+       {
+        "name": "packages/daemon/src/domain/user-settings/settings-store.ts",
+        "start": 678,
+        "end": 755
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 54,
+      "copies": 10,
+      "first": {
+       "name": "packages/cli/src/mcp-server.ts",
+       "start": 74,
+       "end": 83
+      },
+      "others": [
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 99,
+        "end": 108
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 114,
+        "end": 123
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 129,
+        "end": 138
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 163,
+        "end": 172
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 221,
+        "end": 230
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 261,
+        "end": 270
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 295,
+        "end": 304
+       },
+       {
+        "name": "packages/cli/src/mcp-server.ts",
+        "start": 329,
+        "end": 338
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 0,
+     "sample": [
+      "packages/daemon/src/domain/scope/attestation-lineage.generated.ts"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:46:03.074Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "dream-num/univer",
@@ -2221,11 +4466,11 @@
    "starsToday": 895,
    "defaultBranch": "dev",
    "headSha": "ee793e17b238b1198330990b0d70b96b08264c39",
-   "durationMs": 5048,
+   "durationMs": 4757,
    "total": {
     "sources": 6218,
-    "lines": 1261367,
-    "tokens": 6755498,
+    "lines": 1261323,
+    "tokens": 6755333,
     "clones": 10821,
     "duplicatedLines": 167640,
     "duplicatedTokens": 945935,
@@ -2276,10 +4521,10 @@
     {
      "format": "bash",
      "sources": 17,
-     "lines": 748,
+     "lines": 698,
      "clones": 5,
      "duplicatedLines": 30,
-     "percentage": 4.01
+     "percentage": 4.3
     },
     {
      "format": "yaml",
@@ -2300,7 +4545,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 174,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -2316,154 +4561,469 @@
    ],
    "topClones": [
     {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 56,
+     "copies": 191,
+     "first": {
+      "name": "packages/engine-formula/src/functions/array/array-constrain/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/betadist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/hypgeomdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/lognormdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/negbinomdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/normsdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/compatibility/tdist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/daverage/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dcount/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 23
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_ARRAY } from '../../function-names';"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_COMPATIBILITY } from '../../function-names';"
+      ],
+      "total": 7
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 56,
+     "copies": 71,
+     "first": {
+      "name": "packages/engine-formula/src/functions/statistical/avedev/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/statistical/average/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averagea/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/beta-dist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/beta-inv/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-dist-range/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-dist/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/binom-inv/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/chisq-dist-rt/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_STATISTICAL } from '../../function-names';",
+       "import { Avedev } from '../index';"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "import { describe, expect, it } from 'vitest';",
+       "import { ErrorType } from '../../../../basics/error-type';",
+       "import { ArrayValueObject, transformToValueObject } from '../../../../engine/value-object/array-value-object';",
+       "import { ErrorValueObject } from '../../../../engine/value-object/base-value-object';",
+       "import { BooleanValueObject, NullValueObject, NumberValueObject, StringValueObject } from '../../../../engine/value-object/primitive-object';",
+       "import { getObjectValue } from '../../../util';",
+       "import { FUNCTION_NAMES_STATISTICAL } from '../../function-names';",
+       "import { Average } from '../index';"
+      ],
+      "total": 8
+     }
+    },
+    {
+     "format": "json",
+     "lines": 17,
+     "tokens": 50,
+     "copies": 78,
+     "first": {
+      "name": "packages/action-recorder/package.json",
+      "start": 5,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "packages/core/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/data-validation/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/design/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-drawing-ui/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-drawing/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-find-replace/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-hyper-link-ui/package.json",
+       "start": 5,
+       "end": 21
+      },
+      {
+       "name": "packages/docs-hyper-link/package.json",
+       "start": 5,
+       "end": 21
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"description\": \"Record and replay user actions in Univer.\",",
+       "\"author\": \"DreamNum Co., Ltd. <developer@univer.ai>\",",
+       "\"license\": \"Apache-2.0\",",
+       "\"funding\": {",
+       "    \"type\": \"opencollective\",",
+       "    \"url\": \"https://opencollective.com/univer\"",
+       "},",
+       "\"homepage\": \"https://univer.ai\",",
+       "\"repository\": {",
+       "    \"type\": \"git\","
+      ],
+      "total": 17
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 56,
+     "copies": 48,
+     "first": {
+      "name": "packages/engine-formula/src/functions/math/acos/__tests__/index.spec.ts",
+      "start": 17,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/math/acosh/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/acot/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/acoth/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/arabic/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/asin/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/asinh/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/atan/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/atan2/__tests__/index.spec.ts",
+       "start": 17,
+       "end": 24
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 51,
+     "tokens": 238,
+     "copies": 12,
+     "first": {
+      "name": "packages/engine-formula/src/functions/compatibility/rank/__tests__/index.spec.ts",
+      "start": 113,
+      "end": 163
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/lookup/offset/__tests__/index.spec.ts",
+       "start": 137,
+       "end": 187
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/randarray/__tests__/index.spec.ts",
+       "start": 133,
+       "end": 183
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sequence/__tests__/index.spec.ts",
+       "start": 131,
+       "end": 181
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sumif/__tests__/index.spec.ts",
+       "start": 142,
+       "end": 192
+      },
+      {
+       "name": "packages/engine-formula/src/functions/math/sumifs/__tests__/index.spec.ts",
+       "start": 209,
+       "end": 259
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averageif/__tests__/index.spec.ts",
+       "start": 142,
+       "end": 192
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/averageifs/__tests__/index.spec.ts",
+       "start": 125,
+       "end": 175
+      },
+      {
+       "name": "packages/engine-formula/src/functions/statistical/countif/__tests__/index.spec.ts",
+       "start": 179,
+       "end": 229
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 125,
+     "tokens": 853,
+     "copies": 4,
+     "first": {
+      "name": "packages/engine-formula/src/functions/database/daverage/__tests__/index.spec.ts",
+      "start": 62,
+      "end": 186
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/database/dmin/__tests__/index.spec.ts",
+       "start": 62,
+       "end": 186
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dproduct/__tests__/index.spec.ts",
+       "start": 62,
+       "end": 186
+      },
+      {
+       "name": "packages/engine-formula/src/functions/database/dsum/__tests__/index.spec.ts",
+       "start": 98,
+       "end": 222
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 20,
+     "tokens": 637,
+     "copies": 5,
+     "first": {
+      "name": "docs/readme/es-ES.md:markdown",
+      "start": 18,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "docs/readme/ja-JP.md:markdown",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "docs/readme/ko-KR.md:markdown",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "docs/readme/zh-CN.md:markdown",
+       "start": 18,
+       "end": 37
+      },
+      {
+       "name": "docs/readme/zh-TW.md:markdown",
+       "start": 18,
+       "end": 37
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 59,
+     "tokens": 486,
+     "copies": 6,
+     "first": {
+      "name": "packages/engine-formula/src/functions/financial/coupdaybs/__tests__/index.spec.ts",
+      "start": 96,
+      "end": 154
+     },
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupdays/__tests__/index.spec.ts",
+       "start": 96,
+       "end": 154
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupdaysnc/__tests__/index.spec.ts",
+       "start": 103,
+       "end": 161
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupncd/__tests__/index.spec.ts",
+       "start": 96,
+       "end": 154
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/coupnum/__tests__/index.spec.ts",
+       "start": 112,
+       "end": 170
+      },
+      {
+       "name": "packages/engine-formula/src/functions/financial/couppcd/__tests__/index.spec.ts",
+       "start": 134,
+       "end": 192
+      }
+     ]
+    },
+    {
      "format": "tsx",
      "lines": 371,
      "tokens": 2372,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/sheets-hyper-link-ui/src/views/CellLinkEdit.tsx",
       "start": 65,
       "end": 435
      },
-     "secondFile": {
-      "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
-      "start": 65,
-      "end": 435
-     }
+     "others": [
+      {
+       "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
+       "start": 65,
+       "end": 435
+      }
+     ]
     },
     {
      "format": "typescript",
      "lines": 102,
      "tokens": 2326,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "packages/engine-formula/src/functions/math/mdeterm/__tests__/index.spec.ts",
       "start": 65,
       "end": 166
      },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
-      "start": 111,
-      "end": 212
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 131,
-     "tokens": 2133,
-     "firstFile": {
-      "name": "packages/core/src/shared/numfmt/__tests__/date-bounds.spec.ts",
-      "start": 128,
-      "end": 258
-     },
-     "secondFile": {
-      "name": "packages/core/src/shared/numfmt/__tests__/leap-1900.spec.ts",
-      "start": 24,
-      "end": 154
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 32,
-     "tokens": 1864,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/math/mdeterm/__tests__/index.spec.ts",
-      "start": 126,
-      "end": 157
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
-      "start": 212,
-      "end": 243
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 251,
-     "tokens": 1331,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/correl/__tests__/index.spec.ts",
-      "start": 29,
-      "end": 279
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/pearson/__tests__/index.spec.ts",
-      "start": 29,
-      "end": 279
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 253,
-     "tokens": 1323,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/intercept/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 310
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/slope/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 310
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 251,
-     "tokens": 1317,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/intercept/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 308
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/steyx/__tests__/index.spec.ts",
-      "start": 58,
-      "end": 308
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 245,
-     "tokens": 1281,
-     "firstFile": {
-      "name": "packages/engine-formula/src/functions/statistical/growth/__tests__/index.spec.ts",
-      "start": 95,
-      "end": 339
-     },
-     "secondFile": {
-      "name": "packages/engine-formula/src/functions/statistical/trend/__tests__/index.spec.ts",
-      "start": 95,
-      "end": 339
-     }
-    },
-    {
-     "format": "tsx",
-     "lines": 234,
-     "tokens": 1262,
-     "firstFile": {
-      "name": "packages/thread-comment-ui/src/views/__tests__/ThreadCommentPanel.spec.tsx",
-      "start": 93,
-      "end": 326
-     },
-     "secondFile": {
-      "name": "packages/thread-comment-ui/src/views/__tests__/ThreadCommentTree.spec.tsx",
-      "start": 115,
-      "end": 348
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 202,
-     "tokens": 1236,
-     "firstFile": {
-      "name": "packages/docs-drawing-ui/src/controllers/mobile/drawing-popup-menu.controller.ts",
-      "start": 99,
-      "end": 300
-     },
-     "secondFile": {
-      "name": "packages/docs-drawing-ui/src/menu/drawing-popup-menu.controller.ts",
-      "start": 100,
-      "end": 300
-     }
+     "others": [
+      {
+       "name": "packages/engine-formula/src/functions/math/minverse/__tests__/index.spec.ts",
+       "start": 111,
+       "end": 212
+      }
+     ]
     }
    ],
    "health": {
@@ -2675,7 +5235,515 @@
       "lines": 130
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 3117,
+    "lines": 550003,
+    "tokens": 2572338,
+    "clones": 2682,
+    "duplicatedLines": 45043,
+    "duplicatedTokens": 245202,
+    "percentage": 8.19,
+    "percentageTokens": 9.53,
+    "formats": [
+     {
+      "format": "typescript",
+      "sources": 2692,
+      "lines": 476554,
+      "clones": 2481,
+      "duplicatedLines": 41343,
+      "percentage": 8.68
+     },
+     {
+      "format": "tsx",
+      "sources": 413,
+      "lines": 72515,
+      "clones": 201,
+      "duplicatedLines": 3700,
+      "percentage": 5.1
+     },
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 644,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 2,
+      "lines": 116,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 371,
+      "tokens": 2372,
+      "copies": 2,
+      "first": {
+       "name": "packages/sheets-hyper-link-ui/src/views/CellLinkEdit.tsx",
+       "start": 65,
+       "end": 435
+      },
+      "others": [
+       {
+        "name": "packages/sheets-hyper-link-ui/src/views/MobileCellLinkEdit.tsx",
+        "start": 65,
+        "end": 435
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export const CellLinkEdit = () => {",
+        "    const [id, setId] = useState('');",
+        "    const [display, setDisplay] = useState('');",
+        "    const [tooltip, setTooltip] = useState('');",
+        "    const [showLabel, setShowLabel] = useState(true);",
+        "    const [type, setType] = useState<SheetHyperLinkType | string>(SheetHyperLinkType.URL);",
+        "    const [payload, setPayload] = useState('');",
+        "",
+        "    const localeService = useDependency(LocaleService);",
+        "    const definedNameService = useDependency(IDefinedNamesService);"
+       ],
+       "total": 371
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 23,
+      "tokens": 104,
+      "copies": 13,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imabs/index.ts",
+       "start": 25,
+       "end": 47
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imaginary/index.ts",
+        "start": 25,
+        "end": 47
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imconjugate/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcos/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcosh/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imexp/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imreal/index.ts",
+        "start": 25,
+        "end": 47
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imsec/index.ts",
+        "start": 26,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imsech/index.ts",
+        "start": 26,
+        "end": 48
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export class Imabs extends BaseFunction {",
+        "    override minParams = 1;",
+        "",
+        "    override maxParams = 1;",
+        "",
+        "    override calculate(inumber: BaseValueObject): BaseValueObject {",
+        "        const { isError, errorObject, variants } = checkVariantsErrorIsArrayOrBoolean(inumber);",
+        "",
+        "        if (isError) {",
+        "            return errorObject as ErrorValueObject;"
+       ],
+       "total": 23
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 202,
+      "tokens": 1236,
+      "copies": 2,
+      "first": {
+       "name": "packages/docs-drawing-ui/src/controllers/mobile/drawing-popup-menu.controller.ts",
+       "start": 99,
+       "end": 300
+      },
+      "others": [
+       {
+        "name": "packages/docs-drawing-ui/src/menu/drawing-popup-menu.controller.ts",
+        "start": 100,
+        "end": 300
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "        if (command.id === SidebarDocDrawingMobileOperation.id) {",
+        "            const params = command.params as { value?: string } | undefined;",
+        "            this._isDrawingPanelOpen = params?.value === 'open';",
+        "            if (this._isDrawingPanelOpen) {",
+        "                this._clearPopups(undefined, true);",
+        "            }",
+        "        }",
+        "    })",
+        ");",
+        "this.disposeWithMe("
+       ],
+       "total": 202
+      }
+     },
+     {
+      "format": "typescript",
+      "lines": 10,
+      "tokens": 61,
+      "copies": 21,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imconjugate/index.ts",
+       "start": 17,
+       "end": 26
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcos/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcosh/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcot/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcoth/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsc/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsch/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imdiv/index.ts",
+        "start": 17,
+        "end": 26
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imexp/index.ts",
+        "start": 17,
+        "end": 26
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 45,
+      "tokens": 259,
+      "copies": 5,
+      "first": {
+       "name": "packages/engine-formula/src/functions/financial/coupdaybs/index.ts",
+       "start": 27,
+       "end": 71
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupdays/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupdaysnc/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupncd/index.ts",
+        "start": 26,
+        "end": 70
+       },
+       {
+        "name": "packages/engine-formula/src/functions/financial/coupnum/index.ts",
+        "start": 27,
+        "end": 71
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 21,
+      "tokens": 99,
+      "copies": 10,
+      "first": {
+       "name": "packages/engine-formula/src/functions/engineering/imabs/index.ts",
+       "start": 25,
+       "end": 45
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imargument/index.ts",
+        "start": 25,
+        "end": 45
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcot/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcoth/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsc/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imcsch/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imln/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imlog10/index.ts",
+        "start": 26,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/engineering/imlog2/index.ts",
+        "start": 26,
+        "end": 46
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 160,
+      "tokens": 850,
+      "copies": 2,
+      "first": {
+       "name": "packages/sheets-formula-ui/src/views/formula-editor/search-function/SearchFunction.tsx",
+       "start": 40,
+       "end": 199
+      },
+      "others": [
+       {
+        "name": "packages/sheets-formula-ui/src/views/mobile/formula-editor/search-function/MobileSearchFunction.tsx",
+        "start": 40,
+        "end": 199
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 11,
+      "tokens": 53,
+      "copies": 17,
+      "first": {
+       "name": "presets/packages/preset-docs-core/tailwind.config.ts",
+       "start": 17,
+       "end": 27
+      },
+      "others": [
+       {
+        "name": "presets/packages/preset-docs-drawing/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-hyper-link/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-node-core/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-docs-thread-comment/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-conditional-formatting/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-core/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-data-validation/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       },
+       {
+        "name": "presets/packages/preset-sheets-drawing/tailwind.config.ts",
+        "start": 17,
+        "end": 27
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 17,
+      "tokens": 60,
+      "copies": 15,
+      "first": {
+       "name": "packages/engine-formula/src/functions/math/abs/index.ts",
+       "start": 20,
+       "end": 36
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/math/acos/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/acosh/index.ts",
+        "start": 20,
+        "end": 35
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/asin/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/asinh/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/atan/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/atanh/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/cos/index.ts",
+        "start": 20,
+        "end": 36
+       },
+       {
+        "name": "packages/engine-formula/src/functions/math/exp/index.ts",
+        "start": 20,
+        "end": 36
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 25,
+      "tokens": 119,
+      "copies": 8,
+      "first": {
+       "name": "packages/engine-formula/src/functions/database/daverage/index.ts",
+       "start": 24,
+       "end": 48
+      },
+      "others": [
+       {
+        "name": "packages/engine-formula/src/functions/database/dcount/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dcounta/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dget/index.ts",
+        "start": 24,
+        "end": 48
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dmax/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dmin/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dproduct/index.ts",
+        "start": 22,
+        "end": 46
+       },
+       {
+        "name": "packages/engine-formula/src/functions/database/dsum/index.ts",
+        "start": 22,
+        "end": 46
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 1,
+     "sample": [
+      "common/debugger/src/components/Image.tsx"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:47:12.368Z",
+   "jscpdVersion": "5.4.0"
   },
   {
    "name": "willfaust/Madeira",
@@ -2686,15 +5754,15 @@
    "starsToday": 83,
    "defaultBranch": "main",
    "headSha": "8c050d03f4d89096e1e2e2c8bb44479fffd86619",
-   "durationMs": 1098,
+   "durationMs": 619,
    "total": {
     "sources": 146,
-    "lines": 51276,
-    "tokens": 1040316,
+    "lines": 51232,
+    "tokens": 1040151,
     "clones": 262,
     "duplicatedLines": 5956,
     "duplicatedTokens": 180777,
-    "percentage": 11.62,
+    "percentage": 11.63,
     "percentageTokens": 17.38
    },
    "formats": [
@@ -2757,10 +5825,10 @@
     {
      "format": "bash",
      "sources": 21,
-     "lines": 1167,
+     "lines": 1117,
      "clones": 1,
      "duplicatedLines": 9,
-     "percentage": 0.77
+     "percentage": 0.81
     },
     {
      "format": "cpp",
@@ -2782,153 +5850,328 @@
    "topClones": [
     {
      "format": "c-header",
+     "lines": 21,
+     "tokens": 953,
+     "copies": 19,
+     "first": {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 89,
+      "end": 109
+     },
+     "others": [
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 289,
+       "end": 309
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 371,
+       "end": 391
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 768,
+       "end": 788
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 848,
+       "end": 869
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 1224,
+       "end": 1244
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 1328,
+       "end": 1348
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 1790,
+       "end": 1810
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 1894,
+       "end": 1914
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "0x46,0x57,0x26,0x37,0x37,0x25,0x50,0x03,0x00,0x00,0x00,0x00,0x79,0x18,0x00,0x00,",
+       "0x4c,0x00,0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,0x1c,0x66,0x14,0x01,0x3d,0x88,",
+       "0x43,0x38,0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,0x07,0x73,0x98,0x71,0x0c,0xe6,",
+       "0x00,0x0f,0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,0x42,0x1e,0xc2,0xc1,0x1d,0xce,",
+       "0xa1,0x1c,0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,0x83,0x1b,0xcc,0x03,0x3d,0xc8,",
+       "0x43,0x3d,0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,0x07,0x7b,0x08,0x07,0x79,0x48,",
+       "0x87,0x70,0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,0x70,0x20,0x87,0x19,0xcc,0x11,",
+       "0x0e,0xec,0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,0xe3,0xf0,0x0e,0xf0,0x50,0x0e,",
+       "0x33,0x10,0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,0xc2,0x61,0x1e,0x66,0x30,0x89,",
+       "0x3b,0xbc,0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,0xbc,0x83,0x3c,0x84,0x03,0x3b,"
+      ],
+      "total": 21
+     },
+     "excerptSecond": {
+      "lines": [
+       "0x21,0xc3,0x73,0x19,0x7b,0xab,0x73,0xa3,0x2b,0x93,0x9b,0x9b,0x12,0xdc,0x01,0x00,",
+       "0x79,0x18,0x00,0x00,0x4c,0x00,0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,0x1c,0x66,",
+       "0x14,0x01,0x3d,0x88,0x43,0x38,0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,0x07,0x73,",
+       "0x98,0x71,0x0c,0xe6,0x00,0x0f,0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,0x42,0x1e,",
+       "0xc2,0xc1,0x1d,0xce,0xa1,0x1c,0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,0x83,0x1b,",
+       "0xcc,0x03,0x3d,0xc8,0x43,0x3d,0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,0x07,0x7b,",
+       "0x08,0x07,0x79,0x48,0x87,0x70,0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,0x70,0x20,",
+       "0x87,0x19,0xcc,0x11,0x0e,0xec,0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,0xe3,0xf0,",
+       "0x0e,0xf0,0x50,0x0e,0x33,0x10,0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,0xc2,0x61,",
+       "0x1e,0x66,0x30,0x89,0x3b,0xbc,0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,0xbc,0x83,"
+      ],
+      "total": 21
+     }
+    },
+    {
+     "format": "c-header",
      "lines": 121,
      "tokens": 5768,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
       "start": 73,
       "end": 193
      },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 433,
-      "end": 553
+     "others": [
+      {
+       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+       "start": 433,
+       "end": 553
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "0x05,0x28,0x50,0x10,0x05,0x32,0x02,0x50,0x04,0xc5,0x50,0x06,0xa5,0x50,0x18,0x00,",
+       "0x00,0x00,0xb1,0x18,0x00,0x00,0xa9,0x00,0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,",
+       "0x1c,0x66,0x14,0x01,0x3d,0x88,0x43,0x38,0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,",
+       "0x07,0x73,0x98,0x71,0x0c,0xe6,0x00,0x0f,0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,",
+       "0x42,0x1e,0xc2,0xc1,0x1d,0xce,0xa1,0x1c,0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,",
+       "0x83,0x1b,0xcc,0x03,0x3d,0xc8,0x43,0x3d,0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,",
+       "0x07,0x7b,0x08,0x07,0x79,0x48,0x87,0x70,0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,",
+       "0x70,0x20,0x87,0x19,0xcc,0x11,0x0e,0xec,0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,",
+       "0xe3,0xf0,0x0e,0xf0,0x50,0x0e,0x33,0x10,0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,",
+       "0xc2,0x61,0x1e,0x66,0x30,0x89,0x3b,0xbc,0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,"
+      ],
+      "total": 121
+     },
+     "excerptSecond": {
+      "lines": [
+       "0x04,0x65,0x50,0x0a,0xc5,0x50,0x18,0x00,0x00,0x00,0xb1,0x18,0x00,0x00,0xa9,0x00,",
+       "0x00,0x00,0x33,0x08,0x80,0x1c,0xc4,0xe1,0x1c,0x66,0x14,0x01,0x3d,0x88,0x43,0x38,",
+       "0x84,0xc3,0x8c,0x42,0x80,0x07,0x79,0x78,0x07,0x73,0x98,0x71,0x0c,0xe6,0x00,0x0f,",
+       "0xed,0x10,0x0e,0xf4,0x80,0x0e,0x33,0x0c,0x42,0x1e,0xc2,0xc1,0x1d,0xce,0xa1,0x1c,",
+       "0x66,0x30,0x05,0x3d,0x88,0x43,0x38,0x84,0x83,0x1b,0xcc,0x03,0x3d,0xc8,0x43,0x3d,",
+       "0x8c,0x03,0x3d,0xcc,0x78,0x8c,0x74,0x70,0x07,0x7b,0x08,0x07,0x79,0x48,0x87,0x70,",
+       "0x70,0x07,0x7a,0x70,0x03,0x76,0x78,0x87,0x70,0x20,0x87,0x19,0xcc,0x11,0x0e,0xec,",
+       "0x90,0x0e,0xe1,0x30,0x0f,0x6e,0x30,0x0f,0xe3,0xf0,0x0e,0xf0,0x50,0x0e,0x33,0x10,",
+       "0xc4,0x1d,0xde,0x21,0x1c,0xd8,0x21,0x1d,0xc2,0x61,0x1e,0x66,0x30,0x89,0x3b,0xbc,",
+       "0x83,0x3b,0xd0,0x43,0x39,0xb4,0x03,0x3c,0xbc,0x83,0x3c,0x84,0x03,0x3b,0xcc,0xf0,"
+      ],
+      "total": 121
      }
     },
     {
      "format": "txt",
      "lines": 502,
      "tokens": 4778,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "LICENSES/LGPL-2.1.txt",
       "start": 1,
       "end": 502
      },
-     "secondFile": {
-      "name": "app/Madeira/legal/LICENSES/LGPL-2.1.txt",
-      "start": 1,
-      "end": 502
+     "others": [
+      {
+       "name": "app/Madeira/legal/LICENSES/LGPL-2.1.txt",
+       "start": 1,
+       "end": 502
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "          GNU LESSER GENERAL PUBLIC LICENSE",
+       "               Version 2.1, February 1999",
+       "",
+       " Copyright (C) 1991, 1999 Free Software Foundation, Inc.",
+       " 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
+       " Everyone is permitted to copy and distribute verbatim copies",
+       " of this license document, but changing it is not allowed.",
+       "",
+       "[This is the first released version of the Lesser GPL.  It also counts",
+       " as the successor of the GNU Library Public License, version 2, hence"
+      ],
+      "total": 502
      }
     },
     {
      "format": "c-header",
      "lines": 102,
      "tokens": 4693,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
       "start": 1646,
       "end": 1747
      },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 2042,
-      "end": 2143
-     }
+     "others": [
+      {
+       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+       "start": 2042,
+       "end": 2143
+      }
+     ]
     },
     {
      "format": "txt",
      "lines": 482,
      "tokens": 4628,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "LICENSES/LGPL-2.1.txt",
       "start": 6,
       "end": 487
      },
-     "secondFile": {
-      "name": "app/Madeira/licenses/LGPL-2.1.txt",
-      "start": 6,
-      "end": 487
-     }
+     "others": [
+      {
+       "name": "app/Madeira/licenses/LGPL-2.1.txt",
+       "start": 6,
+       "end": 487
+      }
+     ]
     },
     {
      "format": "c-header",
      "lines": 94,
      "tokens": 4348,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
       "start": 271,
       "end": 364
      },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 630,
-      "end": 723
-     }
+     "others": [
+      {
+       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+       "start": 630,
+       "end": 723
+      }
+     ]
     },
     {
      "format": "c-header",
      "lines": 81,
      "tokens": 3844,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
       "start": 1463,
       "end": 1543
      },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 1859,
-      "end": 1939
-     }
+     "others": [
+      {
+       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+       "start": 1859,
+       "end": 1939
+      }
+     ]
+    },
+    {
+     "format": "c-header",
+     "lines": 10,
+     "tokens": 467,
+     "copies": 9,
+     "first": {
+      "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "start": 51,
+      "end": 60
+     },
+     "others": [
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 244,
+       "end": 254
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 570,
+       "end": 579
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 1170,
+       "end": 1179
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/tri_dxil.h",
+       "start": 1736,
+       "end": 1746
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+       "start": 191,
+       "end": 200
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+       "start": 698,
+       "end": 707
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+       "start": 964,
+       "end": 974
+      },
+      {
+       "name": "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+       "start": 1638,
+       "end": 1648
+      }
+     ]
     },
     {
      "format": "c-header",
      "lines": 67,
      "tokens": 3205,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
       "start": 2255,
       "end": 2321
      },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 2571,
-      "end": 2638
-     }
+     "others": [
+      {
+       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+       "start": 2571,
+       "end": 2638
+      }
+     ]
     },
     {
      "format": "c-header",
      "lines": 66,
      "tokens": 3155,
-     "firstFile": {
+     "copies": 2,
+     "first": {
       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
       "start": 1569,
       "end": 1634
      },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 1964,
-      "end": 2030
-     }
-    },
-    {
-     "format": "c-header",
-     "lines": 67,
-     "tokens": 3120,
-     "firstFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 2391,
-      "end": 2457
-     },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 2707,
-      "end": 2773
-     }
-    },
-    {
-     "format": "c-header",
-     "lines": 65,
-     "tokens": 3037,
-     "firstFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 836,
-      "end": 900
-     },
-     "secondFile": {
-      "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
-      "start": 1151,
-      "end": 1214
-     }
+     "others": [
+      {
+       "name": "research/madeira-d3d12/src/pe/tri_metallib.h",
+       "start": 1964,
+       "end": 2030
+      }
+     ]
     }
    ],
    "health": {
@@ -3079,7 +6322,425 @@
       "lines": 1
      }
     ]
-   }
+   },
+   "code": {
+    "sources": 161,
+    "lines": 128624,
+    "tokens": 2134562,
+    "clones": 709,
+    "duplicatedLines": 6131,
+    "duplicatedTokens": 91459,
+    "percentage": 4.77,
+    "percentageTokens": 4.28,
+    "formats": [
+     {
+      "format": "c",
+      "sources": 61,
+      "lines": 110598,
+      "clones": 684,
+      "duplicatedLines": 5903,
+      "percentage": 5.34
+     },
+     {
+      "format": "objectivec",
+      "sources": 7,
+      "lines": 5341,
+      "clones": 13,
+      "duplicatedLines": 113,
+      "percentage": 2.12
+     },
+     {
+      "format": "bash",
+      "sources": 40,
+      "lines": 2699,
+      "clones": 9,
+      "duplicatedLines": 89,
+      "percentage": 3.3
+     },
+     {
+      "format": "c-header",
+      "sources": 30,
+      "lines": 2146,
+      "clones": 2,
+      "duplicatedLines": 19,
+      "percentage": 0.89
+     },
+     {
+      "format": "swift",
+      "sources": 10,
+      "lines": 5210,
+      "clones": 1,
+      "duplicatedLines": 7,
+      "percentage": 0.13
+     },
+     {
+      "format": "python",
+      "sources": 9,
+      "lines": 1550,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "cpp",
+      "sources": 2,
+      "lines": 575,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 1,
+      "lines": 331,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "perl",
+      "sources": 1,
+      "lines": 174,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "c",
+      "lines": 6,
+      "tokens": 86,
+      "copies": 126,
+      "first": {
+       "name": "build/ntdll-unix/env_ios.c",
+       "start": 342,
+       "end": 347
+      },
+      "others": [
+       {
+        "name": "build/ntdll-unix/env_ios.c",
+        "start": 469,
+        "end": 474
+       },
+       {
+        "name": "build/ntdll-unix/env_ios.c",
+        "start": 478,
+        "end": 483
+       },
+       {
+        "name": "build/ntdll-unix/env_ios.c",
+        "start": 487,
+        "end": 492
+       },
+       {
+        "name": "build/ntdll-unix/env_ios.c",
+        "start": 543,
+        "end": 548
+       },
+       {
+        "name": "build/ntdll-unix/env_ios.c",
+        "start": 2358,
+        "end": 2362
+       },
+       {
+        "name": "build/ntdll-unix/loader_ios.c",
+        "start": 759,
+        "end": 764
+       },
+       {
+        "name": "build/ntdll-unix/loader_ios.c",
+        "start": 787,
+        "end": 792
+       },
+       {
+        "name": "build/ntdll-unix/loader_ios.c",
+        "start": 814,
+        "end": 819
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "            STARTS_WITH( var, \"XDG_\" ));",
+        "}",
+        "",
+        "",
+        "/***********************************************************************",
+        " *           is_ignored_env_var"
+       ],
+       "total": 6
+      },
+      "excerptSecond": {
+       "lines": [
+        "    return ret;",
+        "}",
+        "",
+        "",
+        "/***********************************************************************",
+        " *           ntdll_get_build_dir  (ntdll.so)"
+       ],
+       "total": 6
+      }
+     },
+     {
+      "format": "c",
+      "lines": 136,
+      "tokens": 6521,
+      "copies": 2,
+      "first": {
+       "name": "build/ntdll-unix/virtual_ios.c",
+       "start": 16960,
+       "end": 17095
+      },
+      "others": [
+       {
+        "name": "build/ntdll-unix/virtual_ios.c",
+        "start": 18633,
+        "end": 18768
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "if (jumbo_size >= 0x10000000 && jumbo_size < 0x40000000 && (type & MEM_RESERVE))",
+        "{",
+        "    static unsigned bigres_n;",
+        "    static unsigned long long bigres_tot;",
+        "    bigres_n++;",
+        "    bigres_tot += jumbo_size;",
+        "    ios_bigres_reserved_total += jumbo_size;",
+        "    /* ml126: ATTRIBUTE BY PROCESS, not by size. All 23 were exactly",
+        "     * 512MB, which rules out FEXCore's LookupCache (a computed sum) and",
+        "     * the CallRetStack (16MB), and no FEX VirtualAlloc site asks for"
+       ],
+       "total": 136
+      }
+     },
+     {
+      "format": "c",
+      "lines": 73,
+      "tokens": 4147,
+      "copies": 2,
+      "first": {
+       "name": "build/ntdll-unix/virtual_ios.c",
+       "start": 17591,
+       "end": 17663
+      },
+      "others": [
+       {
+        "name": "build/ntdll-unix/virtual_ios.c",
+        "start": 18773,
+        "end": 18845
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "if (is_jumbo) ios_jumbo_census( jumbo_hint, jumbo_size, st ? NULL : *ret, (unsigned)st );",
+        "if (!st && *size_ptr >= 0x10000000 && *size_ptr < 0x40000000 && (type & MEM_RESERVE))",
+        "    ios_bigres_note( *ret, *size_ptr );",
+        "if (!st) ios_span_census( *ret, *size_ptr, 0 );   /* ml435 (#73) */",
+        "",
+        "/* iOS-Madeira ml310 (task #54): SYSCALL-BOUNDARY census of arena-band allocations.",
+        " *",
+        " * ml310's [va-arena] probe inside allocate_virtual_memory's reserve branch logged 26 lines,",
+        " * ALL of them size=0x20000000 type=0x2000 (jemalloc's MEM_RESERVE-only arenas) and NOT ONE",
+        " * of the 0x3000 FEXMem_ThreadState allocations -- even though three of those landed on"
+       ],
+       "total": 73
+      }
+     },
+     {
+      "format": "c",
+      "lines": 48,
+      "tokens": 2977,
+      "copies": 2,
+      "first": {
+       "name": "build/ntdll-unix/virtual_ios.c",
+       "start": 16745,
+       "end": 16792
+      },
+      "others": [
+       {
+        "name": "build/ntdll-unix/virtual_ios.c",
+        "start": 18246,
+        "end": 18293
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 21,
+      "tokens": 737,
+      "copies": 4,
+      "first": {
+       "name": "build/crypto-unix/crypt32_unixlib_ios.c",
+       "start": 3,
+       "end": 23
+      },
+      "others": [
+       {
+        "name": "build/ntdll-unix/signal_arm64_ios.c",
+        "start": 5,
+        "end": 25
+       },
+       {
+        "name": "build/win32u-unix/class_ios.c",
+        "start": 7,
+        "end": 27
+       },
+       {
+        "name": "build/win32u-unix/message_ios.c",
+        "start": 6,
+        "end": 27
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 52,
+      "tokens": 1889,
+      "copies": 2,
+      "first": {
+       "name": "build/ntdll-unix/virtual_ios.c",
+       "start": 17045,
+       "end": 17096
+      },
+      "others": [
+       {
+        "name": "build/ntdll-unix/virtual_ios.c",
+        "start": 18718,
+        "end": 18770
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 18,
+      "tokens": 275,
+      "copies": 7,
+      "first": {
+       "name": "build/wineserver/fd_ios.c",
+       "start": 257,
+       "end": 274
+      },
+      "others": [
+       {
+        "name": "build/wineserver/fd_ios.c",
+        "start": 298,
+        "end": 315
+       },
+       {
+        "name": "build/wineserver/mapping_ios.c",
+        "start": 78,
+        "end": 95
+       },
+       {
+        "name": "build/wineserver/mapping_ios.c",
+        "start": 115,
+        "end": 132
+       },
+       {
+        "name": "build/wineserver/queue_ios.c",
+        "start": 203,
+        "end": 220
+       },
+       {
+        "name": "build/wineserver/request_ios.c",
+        "start": 91,
+        "end": 108
+       },
+       {
+        "name": "build/wineserver/window_ios.c",
+        "start": 107,
+        "end": 124
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 24,
+      "tokens": 766,
+      "copies": 3,
+      "first": {
+       "name": "build/ntdll-unix/loader_ios.c",
+       "start": 4,
+       "end": 27
+      },
+      "others": [
+       {
+        "name": "build/ntdll-unix/process_ios.c",
+        "start": 5,
+        "end": 28
+       },
+       {
+        "name": "build/ntdll-unix/server_ios.c",
+        "start": 4,
+        "end": 27
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 22,
+      "tokens": 757,
+      "copies": 3,
+      "first": {
+       "name": "build/ntdll-unix/loader_ios.c",
+       "start": 4,
+       "end": 25
+      },
+      "others": [
+       {
+        "name": "build/win32u-unix/driver_ios.c",
+        "start": 5,
+        "end": 26
+       },
+       {
+        "name": "build/win32u-unix/winstation_ios.c",
+        "start": 4,
+        "end": 25
+       }
+      ]
+     },
+     {
+      "format": "c",
+      "lines": 18,
+      "tokens": 747,
+      "copies": 3,
+      "first": {
+       "name": "build/ntdll-unix/loader_ios.c",
+       "start": 4,
+       "end": 21
+      },
+      "others": [
+       {
+        "name": "build/wineserver/mapping_ios.c",
+        "start": 4,
+        "end": 21
+       },
+       {
+        "name": "build/wineserver/queue_ios.c",
+        "start": 4,
+        "end": 21
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 7,
+     "minified": 0,
+     "sample": [
+      "build/crypto-unix/gnutls_symtab_ios.c",
+      "build/x64-tests/asmconf_tests.h",
+      "research/madeira-d3d12/src/pe/madeira_d3d12_stubs.h",
+      "research/madeira-d3d12/src/pe/tri_metallib.h",
+      "research/madeira-d3d12/tests/windows/tri_dxil.h",
+      "research/madeira-d3d12/tests/windows/vfetch_dxil.h",
+      "research/remote-metal/wmt_wire.h"
+     ]
+    }
+   },
+   "measuredAt": "2026-10-07T07:48:05.583Z",
+   "jscpdVersion": "5.4.0"
   }
  ]
 }

@@ -9,10 +9,12 @@
    "starsToday": 49,
    "headSha": "a87e8099310da4c1ca7e812ec97d9700efbc967b",
    "sources": 3377,
-   "lines": 699076,
+   "lines": 699032,
    "clones": 7742,
    "duplicatedLines": 110633,
    "percentage": 15.83,
+   "codePercentage": 8.77,
+   "codeSources": 1601,
    "healthScore": 36.8,
    "healthGrade": "E"
   },
@@ -23,10 +25,12 @@
    "starsToday": 364,
    "headSha": "a87e8099310da4c1ca7e812ec97d9700efbc967b",
    "sources": 3377,
-   "lines": 699076,
+   "lines": 699032,
    "clones": 7742,
    "duplicatedLines": 110633,
    "percentage": 15.83,
+   "codePercentage": 8.77,
+   "codeSources": 1601,
    "healthScore": 36.8,
    "healthGrade": "E"
   }
@@ -42,11 +46,11 @@
   "starsToday": 364,
   "defaultBranch": "main",
   "headSha": "a87e8099310da4c1ca7e812ec97d9700efbc967b",
-  "durationMs": 3164,
+  "durationMs": 2399,
   "total": {
    "sources": 3377,
-   "lines": 699076,
-   "tokens": 3883005,
+   "lines": 699032,
+   "tokens": 3882840,
    "clones": 7742,
    "duplicatedLines": 110633,
    "duplicatedTokens": 672399,
@@ -129,162 +133,442 @@
    {
     "format": "bash",
     "sources": 44,
-    "lines": 2418,
+    "lines": 2368,
     "clones": 2,
     "duplicatedLines": 77,
-    "percentage": 3.18
+    "percentage": 3.25
    }
   ],
   "topClones": [
    {
+    "format": "markup",
+    "lines": 295,
+    "tokens": 1397,
+    "first": {
+     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
+     "start": 341,
+     "end": 635
+    },
+    "others": [
+     {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-5-1.svg",
+      "start": 341,
+      "end": 635
+     },
+     {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-4-4.svg",
+      "start": 341,
+      "end": 635
+     },
+     {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-5-1.svg",
+      "start": 341,
+      "end": 635
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "  <use xlink:href=\"#mc77df87d46\" x=\"541.829545\" y=\"390.04\" style=\"stroke: #000000; stroke-width: 0.8\"/>",
+      " </g>",
+      "</g>",
+      "<g id=\"text_8\">",
+      " <!-- 14 -->",
+      " <g transform=\"translate(535.467045 404.638438) scale(0.1 -0.1)\">",
+      "  <use xlink:href=\"#DejaVuSans-31\"/>",
+      "  <use xlink:href=\"#DejaVuSans-34\" transform=\"translate(63.623047 0)\"/>",
+      " </g>",
+      "</g>"
+     ],
+     "total": 295
+    },
+    "kind": "markup"
+   },
+   {
+    "format": "go",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "internal/builtin/logical/kv/types.pb.go",
+     "start": 51,
+     "end": 60
+    },
+    "others": [
+     {
+      "name": "internal/builtin/logical/kv/types.pb.go",
+      "start": 124,
+      "end": 133
+     },
+     {
+      "name": "internal/builtin/logical/kv/types.pb.go",
+      "start": 215,
+      "end": 224
+     },
+     {
+      "name": "internal/builtin/logical/kv/types.pb.go",
+      "start": 344,
+      "end": 353
+     },
+     {
+      "name": "internal/builtin/logical/kv/types.pb.go",
+      "start": 406,
+      "end": 415
+     },
+     {
+      "name": "internal/builtin/logical/pki/cert_template.pb.go",
+      "start": 197,
+      "end": 206
+     },
+     {
+      "name": "internal/builtin/logical/pki/cert_template.pb.go",
+      "start": 412,
+      "end": 421
+     },
+     {
+      "name": "internal/builtin/logical/pki/cert_template.pb.go",
+      "start": 457,
+      "end": 466
+     },
+     {
+      "name": "internal/builtin/logical/pki/cert_template.pb.go",
+      "start": 521,
+      "end": 530
+     }
+    ],
+    "copies": 73,
+    "excerpt": {
+     "lines": [
+      "    mi := &file_internal_builtin_logical_kv_types_proto_msgTypes[0]",
+      "    if x != nil {",
+      "        ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))",
+      "        if ms.LoadMessageInfo() == nil {",
+      "            ms.StoreMessageInfo(mi)",
+      "        }",
+      "        return ms",
+      "    }",
+      "    return mi.MessageOf(x)",
+      "}"
+     ],
+     "total": 10
+    },
+    "kind": "generated"
+   },
+   {
+    "format": "go",
+    "lines": 17,
+    "tokens": 115,
+    "first": {
+     "name": "internal/command/audit_disable.go",
+     "start": 58,
+     "end": 74
+    },
+    "others": [
+     {
+      "name": "internal/command/auth_enable.go",
+      "start": 224,
+      "end": 240
+     },
+     {
+      "name": "internal/command/auth_help.go",
+      "start": 73,
+      "end": 89
+     },
+     {
+      "name": "internal/command/auth_tune.go",
+      "start": 210,
+      "end": 226
+     },
+     {
+      "name": "internal/command/kv_delete.go",
+      "start": 97,
+      "end": 113
+     },
+     {
+      "name": "internal/command/kv_destroy.go",
+      "start": 89,
+      "end": 105
+     },
+     {
+      "name": "internal/command/kv_enable_versioning.go",
+      "start": 56,
+      "end": 72
+     },
+     {
+      "name": "internal/command/kv_get.go",
+      "start": 93,
+      "end": 109
+     },
+     {
+      "name": "internal/command/kv_metadata_delete.go",
+      "start": 78,
+      "end": 94
+     }
+    ],
+    "copies": 31,
+    "excerpt": {
+     "lines": [
+      "func (c *AuditDisableCommand) Run(args []string) int {",
+      "    f := c.Flags()",
+      "",
+      "    if err := f.Parse(args); err != nil {",
+      "        c.UI.Error(err.Error())",
+      "        return 1",
+      "    }",
+      "",
+      "    args = f.Args()",
+      "    switch {"
+     ],
+     "total": 17
+    },
+    "kind": "code"
+   },
+   {
+    "format": "markup",
+    "lines": 193,
+    "tokens": 1000,
+    "first": {
+     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
+     "start": 931,
+     "end": 1123
+    },
+    "others": [
+     {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-5-1.svg",
+      "start": 931,
+      "end": 1123
+     },
+     {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-4-4.svg",
+      "start": 931,
+      "end": 1123
+     },
+     {
+      "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-5-1.svg",
+      "start": 931,
+      "end": 1123
+     }
+    ],
+    "copies": 4,
+    "kind": "markup"
+   },
+   {
+    "format": "go",
+    "lines": 10,
+    "tokens": 67,
+    "first": {
+     "name": "internal/command/audit_disable_test.go",
+     "start": 148,
+     "end": 157
+    },
+    "others": [
+     {
+      "name": "internal/command/audit_enable_test.go",
+      "start": 153,
+      "end": 162
+     },
+     {
+      "name": "internal/command/audit_list_test.go",
+      "start": 100,
+      "end": 109
+     },
+     {
+      "name": "internal/command/auth_disable_test.go",
+      "start": 125,
+      "end": 134
+     },
+     {
+      "name": "internal/command/auth_enable_test.go",
+      "start": 154,
+      "end": 163
+     },
+     {
+      "name": "internal/command/auth_help_test.go",
+      "start": 145,
+      "end": 154
+     },
+     {
+      "name": "internal/command/auth_list_test.go",
+      "start": 94,
+      "end": 103
+     },
+     {
+      "name": "internal/command/auth_move_test.go",
+      "start": 134,
+      "end": 143
+     },
+     {
+      "name": "internal/command/auth_tune_test.go",
+      "start": 271,
+      "end": 280
+     }
+    ],
+    "copies": 42,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 14,
+    "tokens": 87,
+    "first": {
+     "name": "internal/command/audit_disable_test.go",
+     "start": 77,
+     "end": 90
+    },
+    "others": [
+     {
+      "name": "internal/command/auth_disable_test.go",
+      "start": 58,
+      "end": 71
+     },
+     {
+      "name": "internal/command/auth_list_test.go",
+      "start": 63,
+      "end": 76
+     },
+     {
+      "name": "internal/command/auth_move_test.go",
+      "start": 65,
+      "end": 78
+     },
+     {
+      "name": "internal/command/auth_tune_test.go",
+      "start": 61,
+      "end": 74
+     },
+     {
+      "name": "internal/command/delete_test.go",
+      "start": 63,
+      "end": 76
+     },
+     {
+      "name": "internal/command/list_test.go",
+      "start": 88,
+      "end": 101
+     },
+     {
+      "name": "internal/command/operator_init_test.go",
+      "start": 114,
+      "end": 127
+     },
+     {
+      "name": "internal/command/operator_key_status_test.go",
+      "start": 51,
+      "end": 64
+     }
+    ],
+    "copies": 30,
+    "kind": "tests"
+   },
+   {
     "format": "markdown",
     "lines": 78,
     "tokens": 2129,
-    "firstFile": {
+    "first": {
      "name": "CHANGELOG.md:markdown",
      "start": 1204,
      "end": 1281
     },
-    "secondFile": {
-     "name": "CHANGELOG.md:markdown",
-     "start": 1282,
-     "end": 1359
-    }
+    "others": [
+     {
+      "name": "CHANGELOG.md:markdown",
+      "start": 1282,
+      "end": 1359
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 62,
     "tokens": 1994,
-    "firstFile": {
+    "first": {
      "name": "CHANGELOG.md:markdown",
      "start": 16,
      "end": 77
     },
-    "secondFile": {
-     "name": "CHANGELOG.md:markdown",
-     "start": 177,
-     "end": 238
-    }
+    "others": [
+     {
+      "name": "CHANGELOG.md:markdown",
+      "start": 177,
+      "end": 238
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "go",
+    "lines": 6,
+    "tokens": 55,
+    "first": {
+     "name": "internal/builtin/credential/approle/path_login.go",
+     "start": 90,
+     "end": 95
+    },
+    "others": [
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 1359,
+      "end": 1364
+     },
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 1599,
+      "end": 1604
+     },
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 1758,
+      "end": 1763
+     },
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 1858,
+      "end": 1863
+     },
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 1905,
+      "end": 1910
+     },
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 2002,
+      "end": 2007
+     },
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 2074,
+      "end": 2079
+     },
+     {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 2145,
+      "end": 2150
+     }
+    ],
+    "copies": 35,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 40,
     "tokens": 1852,
-    "firstFile": {
+    "first": {
      "name": "CHANGELOG.md:markdown",
      "start": 85,
      "end": 124
     },
-    "secondFile": {
-     "name": "CHANGELOG.md:markdown",
-     "start": 242,
-     "end": 281
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 1671,
-    "tokens": 1754,
-    "firstFile": {
-     "name": "internal/builtin/database/cassandra/test-fixtures/no_tls/cassandra.yaml",
-     "start": 2,
-     "end": 1672
-    },
-    "secondFile": {
-     "name": "internal/builtin/database/cassandra/test-fixtures/with_tls/cassandra.yaml",
-     "start": 2,
-     "end": 1672
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 295,
-    "tokens": 1397,
-    "firstFile": {
-     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
-     "start": 341,
-     "end": 635
-    },
-    "secondFile": {
-     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-5-1.svg",
-     "start": 341,
-     "end": 635
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 295,
-    "tokens": 1397,
-    "firstFile": {
-     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
-     "start": 341,
-     "end": 635
-    },
-    "secondFile": {
-     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-4-4.svg",
-     "start": 341,
-     "end": 635
-    }
-   },
-   {
-    "format": "markup",
-    "lines": 295,
-    "tokens": 1397,
-    "firstFile": {
-     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-kv-2-4-4.svg",
-     "start": 341,
-     "end": 635
-    },
-    "secondFile": {
-     "name": "website/public/img/2026-03-25-improved-horizontal-scalability/benchmark-pki-2-5-1.svg",
-     "start": 341,
-     "end": 635
-    }
-   },
-   {
-    "format": "go",
-    "lines": 227,
-    "tokens": 1283,
-    "firstFile": {
-     "name": "internal/command/agent/config/config.go",
-     "start": 855,
-     "end": 1081
-    },
-    "secondFile": {
-     "name": "internal/command/proxy/config/config.go",
-     "start": 602,
-     "end": 829
-    }
-   },
-   {
-    "format": "go",
-    "lines": 180,
-    "tokens": 1198,
-    "firstFile": {
-     "name": "internal/vault/namespace_store_test.go",
-     "start": 1363,
-     "end": 1542
-    },
-    "secondFile": {
-     "name": "internal/vault/namespace_store_test.go",
-     "start": 1707,
-     "end": 1886
-    }
-   },
-   {
-    "format": "go",
-    "lines": 169,
-    "tokens": 1082,
-    "firstFile": {
-     "name": "internal/http/handler_test.go",
-     "start": 329,
-     "end": 497
-    },
-    "secondFile": {
-     "name": "internal/http/sys_mount_test.go",
-     "start": 27,
-     "end": 193
-    }
+    "others": [
+     {
+      "name": "CHANGELOG.md:markdown",
+      "start": 242,
+      "end": 281
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -499,6 +783,642 @@
      "lines": 107
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 1601,
+   "lines": 341204,
+   "tokens": 1714856,
+   "clones": 2017,
+   "duplicatedLines": 29919,
+   "duplicatedTokens": 166455,
+   "percentage": 8.77,
+   "percentageTokens": 9.71,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 890,
+     "lines": 293655,
+     "clones": 1870,
+     "duplicatedLines": 27527,
+     "percentage": 9.37
+    },
+    {
+     "format": "javascript",
+     "sources": 625,
+     "lines": 40333,
+     "clones": 142,
+     "duplicatedLines": 2281,
+     "percentage": 5.66
+    },
+    {
+     "format": "typescript",
+     "sources": 35,
+     "lines": 3553,
+     "clones": 2,
+     "duplicatedLines": 26,
+     "percentage": 0.73
+    },
+    {
+     "format": "bash",
+     "sources": 38,
+     "lines": 2188,
+     "clones": 2,
+     "duplicatedLines": 77,
+     "percentage": 3.52
+    },
+    {
+     "format": "tsx",
+     "sources": 12,
+     "lines": 1301,
+     "clones": 1,
+     "duplicatedLines": 8,
+     "percentage": 0.61
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 17,
+     "tokens": 115,
+     "first": {
+      "name": "internal/command/audit_disable.go",
+      "start": 58,
+      "end": 74
+     },
+     "others": [
+      {
+       "name": "internal/command/auth_enable.go",
+       "start": 224,
+       "end": 240
+      },
+      {
+       "name": "internal/command/auth_help.go",
+       "start": 73,
+       "end": 89
+      },
+      {
+       "name": "internal/command/auth_tune.go",
+       "start": 210,
+       "end": 226
+      },
+      {
+       "name": "internal/command/kv_delete.go",
+       "start": 97,
+       "end": 113
+      },
+      {
+       "name": "internal/command/kv_destroy.go",
+       "start": 89,
+       "end": 105
+      },
+      {
+       "name": "internal/command/kv_enable_versioning.go",
+       "start": 56,
+       "end": 72
+      },
+      {
+       "name": "internal/command/kv_get.go",
+       "start": 93,
+       "end": 109
+      },
+      {
+       "name": "internal/command/kv_metadata_delete.go",
+       "start": 78,
+       "end": 94
+      }
+     ],
+     "copies": 31,
+     "excerpt": {
+      "lines": [
+       "func (c *AuditDisableCommand) Run(args []string) int {",
+       "    f := c.Flags()",
+       "",
+       "    if err := f.Parse(args); err != nil {",
+       "        c.UI.Error(err.Error())",
+       "        return 1",
+       "    }",
+       "",
+       "    args = f.Args()",
+       "    switch {"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 55,
+     "first": {
+      "name": "internal/builtin/credential/approle/path_login.go",
+      "start": 90,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1359,
+       "end": 1364
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1599,
+       "end": 1604
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1758,
+       "end": 1763
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1858,
+       "end": 1863
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1905,
+       "end": 1910
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2002,
+       "end": 2007
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2074,
+       "end": 2079
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2145,
+       "end": 2150
+      }
+     ],
+     "copies": 35,
+     "excerpt": {
+      "lines": [
+       "func (b *backend) pathLoginResolveRole(ctx context.Context, req *logical.Request, data *framework.FieldData) (*logical.Response, error) {",
+       "    txRollback, err := logical.StartTxStorage(ctx, req)",
+       "    if err != nil {",
+       "        return nil, err",
+       "    }",
+       "    defer txRollback()"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 14,
+     "tokens": 92,
+     "first": {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 1359,
+      "end": 1372
+     },
+     "others": [
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1758,
+       "end": 1771
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 1858,
+       "end": 1871
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2237,
+       "end": 2250
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2352,
+       "end": 2365
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2408,
+       "end": 2421
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2471,
+       "end": 2484
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2536,
+       "end": 2549
+      },
+      {
+       "name": "internal/builtin/credential/approle/path_role.go",
+       "start": 2625,
+       "end": 2638
+      }
+     ],
+     "copies": 21,
+     "excerpt": {
+      "lines": [
+       "func (b *backend) pathRoleSecretIDList(ctx context.Context, req *logical.Request, data *framework.FieldData) (*logical.Response, error) {",
+       "    txRollback, err := logical.StartTxStorage(ctx, req)",
+       "    if err != nil {",
+       "        return nil, err",
+       "    }",
+       "    defer txRollback()",
+       "",
+       "    roleName := data.Get(\"role_name\").(string)",
+       "    if roleName == \"\" {",
+       "        return logical.ErrorResponse(\"missing role_name\"), nil"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 12,
+     "tokens": 80,
+     "first": {
+      "name": "internal/command/auth_enable.go",
+      "start": 235,
+      "end": 246
+     },
+     "others": [
+      {
+       "name": "internal/command/auth_help.go",
+       "start": 84,
+       "end": 95
+      },
+      {
+       "name": "internal/command/auth_tune.go",
+       "start": 221,
+       "end": 232
+      },
+      {
+       "name": "internal/command/kv_delete.go",
+       "start": 108,
+       "end": 119
+      },
+      {
+       "name": "internal/command/kv_enable_versioning.go",
+       "start": 67,
+       "end": 78
+      },
+      {
+       "name": "internal/command/kv_get.go",
+       "start": 104,
+       "end": 115
+      },
+      {
+       "name": "internal/command/kv_metadata_delete.go",
+       "start": 89,
+       "end": 100
+      },
+      {
+       "name": "internal/command/kv_metadata_get.go",
+       "start": 91,
+       "end": 102
+      },
+      {
+       "name": "internal/command/kv_metadata_patch.go",
+       "start": 163,
+       "end": 174
+      }
+     ],
+     "copies": 20,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 56,
+     "first": {
+      "name": "internal/command/audit_disable.go",
+      "start": 58,
+      "end": 66
+     },
+     "others": [
+      {
+       "name": "internal/command/audit_enable.go",
+       "start": 107,
+       "end": 115
+      },
+      {
+       "name": "internal/command/audit_list.go",
+       "start": 76,
+       "end": 84
+      },
+      {
+       "name": "internal/command/auth_list.go",
+       "start": 78,
+       "end": 86
+      },
+      {
+       "name": "internal/command/kv_patch.go",
+       "start": 148,
+       "end": 156
+      },
+      {
+       "name": "internal/command/kv_put.go",
+       "start": 110,
+       "end": 118
+      },
+      {
+       "name": "internal/command/login.go",
+       "start": 147,
+       "end": 155
+      },
+      {
+       "name": "internal/command/namespace_api_lock.go",
+       "start": 57,
+       "end": 65
+      },
+      {
+       "name": "internal/command/namespace_api_unlock.go",
+       "start": 61,
+       "end": 69
+      }
+     ],
+     "copies": 26,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 227,
+     "tokens": 1283,
+     "first": {
+      "name": "internal/command/agent/config/config.go",
+      "start": 855,
+      "end": 1081
+     },
+     "others": [
+      {
+       "name": "internal/command/proxy/config/config.go",
+       "start": 602,
+       "end": 829
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 15,
+     "tokens": 98,
+     "first": {
+      "name": "internal/builtin/credential/approle/path_role.go",
+      "start": 314,
+      "end": 328
+     },
+     "others": [
+      {
+       "name": "internal/builtin/credential/cert/path_certs.go",
+       "start": 28,
+       "end": 44
+      },
+      {
+       "name": "internal/builtin/credential/cert/path_crls.go",
+       "start": 27,
+       "end": 43
+      },
+      {
+       "name": "internal/builtin/credential/jwt/path_cel_role.go",
+       "start": 44,
+       "end": 60
+      },
+      {
+       "name": "internal/builtin/credential/kubernetes/path_role.go",
+       "start": 30,
+       "end": 46
+      },
+      {
+       "name": "internal/builtin/credential/userpass/path_users.go",
+       "start": 27,
+       "end": 43
+      },
+      {
+       "name": "internal/builtin/logical/database/path_roles.go",
+       "start": 60,
+       "end": 76
+      },
+      {
+       "name": "internal/builtin/logical/pki/path_cel.go",
+       "start": 29,
+       "end": 45
+      },
+      {
+       "name": "internal/builtin/logical/pki/path_fetch.go",
+       "start": 216,
+       "end": 232
+      }
+     ],
+     "copies": 12,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 55,
+     "first": {
+      "name": "internal/builtin/credential/jwt/path_cel_login.go",
+      "start": 58,
+      "end": 63
+     },
+     "others": [
+      {
+       "name": "internal/builtin/credential/userpass/path_user_password.go",
+       "start": 62,
+       "end": 67
+      },
+      {
+       "name": "internal/builtin/credential/userpass/path_user_policies.go",
+       "start": 56,
+       "end": 61
+      },
+      {
+       "name": "internal/builtin/logical/rabbitmq/path_role_create.go",
+       "start": 52,
+       "end": 57
+      },
+      {
+       "name": "internal/builtin/logical/ssh/path_cleanup_dynamic_host_keys.go",
+       "start": 34,
+       "end": 39
+      },
+      {
+       "name": "internal/builtin/logical/ssh/path_config_issuers.go",
+       "start": 61,
+       "end": 66
+      },
+      {
+       "name": "internal/builtin/logical/ssh/path_config_zeroaddress.go",
+       "start": 87,
+       "end": 92
+      },
+      {
+       "name": "internal/builtin/logical/ssh/path_creds_create.go",
+       "start": 61,
+       "end": 66
+      },
+      {
+       "name": "internal/builtin/logical/ssh/path_issuers.go",
+       "start": 197,
+       "end": 202
+      }
+     ],
+     "copies": 20,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 54,
+     "first": {
+      "name": "internal/command/audit_enable.go",
+      "start": 107,
+      "end": 116
+     },
+     "others": [
+      {
+       "name": "internal/command/audit_list.go",
+       "start": 76,
+       "end": 85
+      },
+      {
+       "name": "internal/command/auth_list.go",
+       "start": 78,
+       "end": 87
+      },
+      {
+       "name": "internal/command/namespace_api_lock.go",
+       "start": 57,
+       "end": 66
+      },
+      {
+       "name": "internal/command/namespace_api_unlock.go",
+       "start": 61,
+       "end": 70
+      },
+      {
+       "name": "internal/command/namespace_list.go",
+       "start": 67,
+       "end": 76
+      },
+      {
+       "name": "internal/command/namespace_scan.go",
+       "start": 72,
+       "end": 81
+      },
+      {
+       "name": "internal/command/operator_generate_root.go",
+       "start": 199,
+       "end": 208
+      },
+      {
+       "name": "internal/command/operator_init.go",
+       "start": 179,
+       "end": 188
+      }
+     ],
+     "copies": 19,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 18,
+     "tokens": 104,
+     "first": {
+      "name": "internal/command/audit_list.go",
+      "start": 77,
+      "end": 94
+     },
+     "others": [
+      {
+       "name": "internal/command/auth_list.go",
+       "start": 79,
+       "end": 96
+      },
+      {
+       "name": "internal/command/namespace_list.go",
+       "start": 68,
+       "end": 85
+      },
+      {
+       "name": "internal/command/namespace_scan.go",
+       "start": 73,
+       "end": 90
+      },
+      {
+       "name": "internal/command/operator_init.go",
+       "start": 180,
+       "end": 197
+      },
+      {
+       "name": "internal/command/operator_key_status.go",
+       "start": 52,
+       "end": 69
+      },
+      {
+       "name": "internal/command/operator_rotate.go",
+       "start": 64,
+       "end": 81
+      },
+      {
+       "name": "internal/command/operator_seal.go",
+       "start": 63,
+       "end": 80
+      },
+      {
+       "name": "internal/command/operator_step_down.go",
+       "start": 59,
+       "end": 76
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 22,
+    "minified": 0,
+    "sample": [
+     "internal/builtin/logical/kv/types.pb.go",
+     "internal/builtin/logical/pki/cert_template.pb.go",
+     "internal/helper/forwarding/types.pb.go",
+     "internal/helper/identity/mfa/types.pb.go",
+     "internal/helper/identity/types.pb.go",
+     "internal/helper/storagepacker/types.pb.go",
+     "internal/physical/raft/types.pb.go",
+     "internal/vault/forwarding/request_forwarding_service_grpc.pb.go",
+     "internal/vault/forwarding/request_forwarding_service.pb.go",
+     "internal/vault/tokens/token.pb.go",
+     "sdk/database/dbplugin/database_grpc.pb.go",
+     "sdk/database/dbplugin/database.pb.go",
+     "sdk/database/dbplugin/v5/proto/database_grpc.pb.go",
+     "sdk/database/dbplugin/v5/proto/database.pb.go",
+     "sdk/helper/pluginutil/multiplexing_grpc.pb.go",
+     "sdk/helper/pluginutil/multiplexing.pb.go",
+     "sdk/logical/identity.pb.go",
+     "sdk/logical/plugin.pb.go",
+     "sdk/logical/version_grpc.pb.go",
+     "sdk/logical/version.pb.go"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:27:20.651Z",
+  "jscpdVersion": "5.4.0"
  }
 }

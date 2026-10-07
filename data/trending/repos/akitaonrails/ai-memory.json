@@ -9,10 +9,12 @@
    "starsToday": 167,
    "headSha": "5157c6be10b5830d7adc7e29b0a4358c3ecbe6a2",
    "sources": 654,
-   "lines": 326063,
+   "lines": 299844,
    "clones": 2454,
-   "duplicatedLines": 25907,
-   "percentage": 7.95,
+   "duplicatedLines": 28306,
+   "percentage": 9.44,
+   "codePercentage": 8.59,
+   "codeSources": 307,
    "healthScore": 39,
    "healthGrade": "E"
   }
@@ -28,78 +30,78 @@
   "starsToday": 167,
   "defaultBranch": "main",
   "headSha": "5157c6be10b5830d7adc7e29b0a4358c3ecbe6a2",
-  "durationMs": 1556,
+  "durationMs": 1247,
   "total": {
    "sources": 654,
-   "lines": 326063,
-   "tokens": 1900691,
+   "lines": 299844,
+   "tokens": 1900526,
    "clones": 2454,
-   "duplicatedLines": 25907,
+   "duplicatedLines": 28306,
    "duplicatedTokens": 183356,
-   "percentage": 7.95,
+   "percentage": 9.44,
    "percentageTokens": 9.65
   },
   "formats": [
    {
     "format": "rust",
     "sources": 293,
-    "lines": 253232,
+    "lines": 252762,
     "clones": 2364,
-    "duplicatedLines": 24618,
-    "percentage": 9.72
+    "duplicatedLines": 26982,
+    "percentage": 10.67
    },
    {
     "format": "sql",
     "sources": 56,
-    "lines": 2714,
+    "lines": 2670,
     "clones": 40,
-    "duplicatedLines": 675,
-    "percentage": 24.87
+    "duplicatedLines": 715,
+    "percentage": 26.78
    },
    {
     "format": "bash",
     "sources": 130,
-    "lines": 18582,
+    "lines": 8939,
     "clones": 22,
-    "duplicatedLines": 320,
-    "percentage": 1.72
+    "duplicatedLines": 288,
+    "percentage": 3.22
    },
    {
     "format": "markdown",
     "sources": 90,
     "lines": 29816,
     "clones": 19,
-    "duplicatedLines": 194,
-    "percentage": 0.65
+    "duplicatedLines": 213,
+    "percentage": 0.71
    },
    {
     "format": "yaml",
     "sources": 10,
-    "lines": 1823,
+    "lines": 1519,
     "clones": 6,
-    "duplicatedLines": 56,
-    "percentage": 3.07
+    "duplicatedLines": 62,
+    "percentage": 4.08
    },
    {
     "format": "markup",
     "sources": 9,
-    "lines": 986,
+    "lines": 607,
     "clones": 2,
-    "duplicatedLines": 24,
-    "percentage": 2.43
+    "duplicatedLines": 26,
+    "percentage": 4.28
    },
    {
     "format": "toml",
     "sources": 23,
-    "lines": 3047,
+    "lines": 1411,
     "clones": 1,
     "duplicatedLines": 20,
-    "percentage": 0.66
+    "percentage": 1.42
    },
    {
-    "format": "text",
-    "sources": 20,
-    "lines": 9481,
+    "format": "powershell",
+    "sources": 4,
+    "lines": 711,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -107,15 +109,15 @@
    {
     "format": "json",
     "sources": 13,
-    "lines": 3358,
+    "lines": 607,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "powershell",
-    "sources": 4,
-    "lines": 1112,
+    "format": "text",
+    "sources": 20,
+    "lines": 424,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -124,153 +126,533 @@
   "topClones": [
    {
     "format": "rust",
+    "lines": 11,
+    "tokens": 65,
+    "first": {
+     "name": "crates/ai-memory-cli/src/commands/serve.rs",
+     "start": 4122,
+     "end": 4132
+    },
+    "others": [
+     {
+      "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+      "start": 2320,
+      "end": 2330
+     },
+     {
+      "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+      "start": 2397,
+      "end": 2407
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 396,
+      "end": 406
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 502,
+      "end": 512
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 577,
+      "end": 587
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 734,
+      "end": 744
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 848,
+      "end": 858
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 886,
+      "end": 896
+     }
+    ],
+    "copies": 57,
+    "excerpt": {
+     "lines": [
+      "async fn reranker_without_llm_provider_fails_server_setup() {",
+      "    let tmp = TempDir::new().unwrap();",
+      "    let store = Store::open(tmp.path()).unwrap();",
+      "    let ws = store",
+      "        .writer",
+      "        .get_or_create_workspace(\"default\")",
+      "        .await",
+      "        .unwrap();",
+      "    let proj = store",
+      "        .writer"
+     ],
+     "total": 11
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 131,
+    "first": {
+     "name": "crates/ai-memory-cli/src/commands/serve.rs",
+     "start": 4122,
+     "end": 4136
+    },
+    "others": [
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 9944,
+      "end": 9958
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 10021,
+      "end": 10035
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 10077,
+      "end": 10091
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 10428,
+      "end": 10442
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 10483,
+      "end": 10497
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 10581,
+      "end": 10595
+     },
+     {
+      "name": "crates/ai-memory-wiki/src/wiki.rs",
+      "start": 3799,
+      "end": 3814
+     },
+     {
+      "name": "crates/ai-memory-wiki/src/wiki.rs",
+      "start": 4009,
+      "end": 4023
+     }
+    ],
+    "copies": 13,
+    "excerpt": {
+     "lines": [
+      "async fn reranker_without_llm_provider_fails_server_setup() {",
+      "    let tmp = TempDir::new().unwrap();",
+      "    let store = Store::open(tmp.path()).unwrap();",
+      "    let ws = store",
+      "        .writer",
+      "        .get_or_create_workspace(\"default\")",
+      "        .await",
+      "        .unwrap();",
+      "    let proj = store",
+      "        .writer"
+     ],
+     "total": 15
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 12,
+    "tokens": 72,
+    "first": {
+     "name": "crates/ai-memory-cli/src/commands/reindex.rs",
+     "start": 124,
+     "end": 135
+    },
+    "others": [
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 5193,
+      "end": 5204
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 5490,
+      "end": 5501
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 7575,
+      "end": 7586
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 8117,
+      "end": 8128
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 8201,
+      "end": 8212
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 9197,
+      "end": 9208
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 9216,
+      "end": 9227
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/server.rs",
+      "start": 9235,
+      "end": 9246
+     }
+    ],
+    "copies": 21,
+    "excerpt": {
+     "lines": [
+      "    body: \"stale body\".into(),",
+      "    tier: Tier::Semantic,",
+      "    frontmatter_json: serde_json::json!({}),",
+      "    pinned: false,",
+      "    links: Vec::new(),",
+      "    author_id: None,",
+      "    expires_at: None,",
+      "    entities: Vec::new(),",
+      "    evidence: Vec::new(),",
+      "})"
+     ],
+     "total": 12
+    },
+    "kind": "code"
+   },
+   {
+    "format": "sql",
+    "lines": 59,
+    "tokens": 336,
+    "first": {
+     "name": "crates/ai-memory-store/migrations/V44__sessions_hermes_agent_kind.sql",
+     "start": 17,
+     "end": 75
+    },
+    "others": [
+     {
+      "name": "crates/ai-memory-store/migrations/V45__sessions_kiro_cli_agent_kind.sql",
+      "start": 15,
+      "end": 73
+     },
+     {
+      "name": "crates/ai-memory-store/migrations/V47__sessions_command_code_agent_kind.sql",
+      "start": 15,
+      "end": 73
+     },
+     {
+      "name": "crates/ai-memory-store/migrations/V50__sessions_pool_agent_kind.sql",
+      "start": 15,
+      "end": 73
+     },
+     {
+      "name": "crates/ai-memory-store/migrations/V51__sessions_zcode_agent_kind.sql",
+      "start": 15,
+      "end": 73
+     }
+    ],
+    "copies": 5,
+    "kind": "generated"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 95,
+    "first": {
+     "name": "crates/ai-memory-web/tests/suite/routes.rs",
+     "start": 89,
+     "end": 96
+    },
+    "others": [
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 166,
+      "end": 175
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 364,
+      "end": 373
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 421,
+      "end": 430
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 484,
+      "end": 493
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 545,
+      "end": 554
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 582,
+      "end": 591
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 707,
+      "end": 716
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 773,
+      "end": 782
+     }
+    ],
+    "copies": 15,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
     "lines": 161,
     "tokens": 1199,
-    "firstFile": {
+    "first": {
      "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
      "start": 3581,
      "end": 3741
     },
-    "secondFile": {
-     "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
-     "start": 4326,
-     "end": 4486
-    }
+    "others": [
+     {
+      "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
+      "start": 4326,
+      "end": 4486
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "rust",
-    "lines": 60,
-    "tokens": 535,
-    "firstFile": {
-     "name": "crates/ai-memory-mcp/tests/suite/agent_messages_briefing.rs",
-     "start": 50,
-     "end": 109
+    "lines": 6,
+    "tokens": 52,
+    "first": {
+     "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+     "start": 95,
+     "end": 100
     },
-    "secondFile": {
-     "name": "crates/ai-memory-mcp/tests/suite/agent_messages_tools.rs",
-     "start": 57,
-     "end": 116
-    }
+    "others": [
+     {
+      "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+      "start": 123,
+      "end": 128
+     },
+     {
+      "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+      "start": 175,
+      "end": 180
+     },
+     {
+      "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+      "start": 472,
+      "end": 477
+     },
+     {
+      "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+      "start": 180,
+      "end": 184
+     },
+     {
+      "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+      "start": 266,
+      "end": 271
+     },
+     {
+      "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+      "start": 344,
+      "end": 349
+     },
+     {
+      "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+      "start": 450,
+      "end": 455
+     },
+     {
+      "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+      "start": 484,
+      "end": 488
+     }
+    ],
+    "copies": 22,
+    "kind": "tests"
    },
    {
     "format": "rust",
-    "lines": 63,
-    "tokens": 495,
-    "firstFile": {
-     "name": "crates/ai-memory-mcp/src/admin.rs",
-     "start": 10255,
-     "end": 10317
+    "lines": 12,
+    "tokens": 58,
+    "first": {
+     "name": "crates/ai-memory-web/tests/suite/routes.rs",
+     "start": 70,
+     "end": 81
     },
-    "secondFile": {
-     "name": "crates/ai-memory-mcp/src/admin.rs",
-     "start": 10365,
-     "end": 10427
-    }
+    "others": [
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 147,
+      "end": 158
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 229,
+      "end": 240
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 561,
+      "end": 572
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 598,
+      "end": 609
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 689,
+      "end": 700
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 1621,
+      "end": 1632
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 1778,
+      "end": 1789
+     },
+     {
+      "name": "crates/ai-memory-web/tests/suite/routes.rs",
+      "start": 1849,
+      "end": 1860
+     }
+    ],
+    "copies": 17,
+    "kind": "tests"
    },
    {
     "format": "rust",
-    "lines": 62,
-    "tokens": 494,
-    "firstFile": {
-     "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
-     "start": 3680,
-     "end": 3741
+    "lines": 6,
+    "tokens": 62,
+    "first": {
+     "name": "crates/ai-memory-cli/src/commands/serve.rs",
+     "start": 3563,
+     "end": 3568
     },
-    "secondFile": {
-     "name": "crates/ai-memory-cli/src/commands/openclaw_plugin.rs",
-     "start": 352,
-     "end": 413
-    }
+    "others": [
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 7638,
+      "end": 7643
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 7692,
+      "end": 7697
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 8646,
+      "end": 8651
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 9386,
+      "end": 9391
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 9504,
+      "end": 9509
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 10034,
+      "end": 10039
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 10135,
+      "end": 10140
+     },
+     {
+      "name": "crates/ai-memory-mcp/src/admin.rs",
+      "start": 10686,
+      "end": 10691
+     }
+    ],
+    "copies": 15,
+    "kind": "code"
    },
    {
     "format": "rust",
-    "lines": 84,
-    "tokens": 441,
-    "firstFile": {
-     "name": "crates/ai-memory-mcp/src/admin.rs",
-     "start": 9102,
-     "end": 9185
+    "lines": 12,
+    "tokens": 60,
+    "first": {
+     "name": "crates/ai-memory-store/src/lib.rs",
+     "start": 397,
+     "end": 408
     },
-    "secondFile": {
-     "name": "crates/ai-memory-mcp/src/admin.rs",
-     "start": 9398,
-     "end": 9482
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 28,
-    "tokens": 368,
-    "firstFile": {
-     "name": "crates/ai-memory-cli/src/commands/install_mcp.rs",
-     "start": 1934,
-     "end": 1961
-    },
-    "secondFile": {
-     "name": "crates/ai-memory-cli/src/commands/install_mcp.rs",
-     "start": 2041,
-     "end": 2068
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 36,
-    "tokens": 351,
-    "firstFile": {
-     "name": "crates/ai-memory-consolidate/prompts/batch_consolidate_system.md:markdown",
-     "start": 64,
-     "end": 99
-    },
-    "secondFile": {
-     "name": "crates/ai-memory-consolidate/prompts/bootstrap_system.md:markdown",
-     "start": 55,
-     "end": 90
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 34,
-    "tokens": 350,
-    "firstFile": {
-     "name": "crates/ai-memory-consolidate/prompts/batch_consolidate_system.md:markdown",
-     "start": 66,
-     "end": 99
-    },
-    "secondFile": {
-     "name": "crates/ai-memory-consolidate/prompts/single_consolidate_system.md:markdown",
-     "start": 61,
-     "end": 94
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 38,
-    "tokens": 337,
-    "firstFile": {
-     "name": "crates/ai-memory-mcp/tests/suite/admin_audit_log.rs",
-     "start": 3,
-     "end": 40
-    },
-    "secondFile": {
-     "name": "crates/ai-memory-mcp/tests/suite/admin_status_search.rs",
-     "start": 7,
-     "end": 44
-    }
-   },
-   {
-    "format": "rust",
-    "lines": 42,
-    "tokens": 337,
-    "firstFile": {
-     "name": "crates/ai-memory-mcp/tests/suite/admin_move.rs",
-     "start": 724,
-     "end": 765
-    },
-    "secondFile": {
-     "name": "crates/ai-memory-mcp/tests/suite/admin_move.rs",
-     "start": 1507,
-     "end": 1550
-    }
+    "others": [
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 503,
+      "end": 514
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 578,
+      "end": 589
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 735,
+      "end": 746
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 849,
+      "end": 860
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 887,
+      "end": 898
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 941,
+      "end": 952
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 1017,
+      "end": 1028
+     },
+     {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 1367,
+      "end": 1378
+     }
+    ],
+    "copies": 15,
+    "kind": "code"
    }
   ],
   "health": {
@@ -395,6 +777,592 @@
    "files": 2,
    "byCategory": [],
    "largest": []
-  }
+  },
+  "code": {
+   "sources": 307,
+   "lines": 224830,
+   "tokens": 1283325,
+   "clones": 1665,
+   "duplicatedLines": 19313,
+   "duplicatedTokens": 123274,
+   "percentage": 8.59,
+   "percentageTokens": 9.61,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 203,
+     "lines": 217219,
+     "clones": 1650,
+     "duplicatedLines": 19072,
+     "percentage": 8.78
+    },
+    {
+     "format": "bash",
+     "sources": 101,
+     "lines": 6817,
+     "clones": 15,
+     "duplicatedLines": 241,
+     "percentage": 3.54
+    },
+    {
+     "format": "powershell",
+     "sources": 2,
+     "lines": 620,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 65,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/serve.rs",
+      "start": 4122,
+      "end": 4132
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+       "start": 2320,
+       "end": 2330
+      },
+      {
+       "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+       "start": 2397,
+       "end": 2407
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 396,
+       "end": 406
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 502,
+       "end": 512
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 577,
+       "end": 587
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 734,
+       "end": 744
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 848,
+       "end": 858
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 886,
+       "end": 896
+      }
+     ],
+     "copies": 57,
+     "excerpt": {
+      "lines": [
+       "async fn reranker_without_llm_provider_fails_server_setup() {",
+       "    let tmp = TempDir::new().unwrap();",
+       "    let store = Store::open(tmp.path()).unwrap();",
+       "    let ws = store",
+       "        .writer",
+       "        .get_or_create_workspace(\"default\")",
+       "        .await",
+       "        .unwrap();",
+       "    let proj = store",
+       "        .writer"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 131,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/serve.rs",
+      "start": 4122,
+      "end": 4136
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 9944,
+       "end": 9958
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 10021,
+       "end": 10035
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 10077,
+       "end": 10091
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 10428,
+       "end": 10442
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 10483,
+       "end": 10497
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 10581,
+       "end": 10595
+      },
+      {
+       "name": "crates/ai-memory-wiki/src/wiki.rs",
+       "start": 3799,
+       "end": 3814
+      },
+      {
+       "name": "crates/ai-memory-wiki/src/wiki.rs",
+       "start": 4009,
+       "end": 4023
+      }
+     ],
+     "copies": 13,
+     "excerpt": {
+      "lines": [
+       "async fn reranker_without_llm_provider_fails_server_setup() {",
+       "    let tmp = TempDir::new().unwrap();",
+       "    let store = Store::open(tmp.path()).unwrap();",
+       "    let ws = store",
+       "        .writer",
+       "        .get_or_create_workspace(\"default\")",
+       "        .await",
+       "        .unwrap();",
+       "    let proj = store",
+       "        .writer"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 161,
+     "tokens": 1199,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
+      "start": 3581,
+      "end": 3741
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
+       "start": 4326,
+       "end": 4486
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "const AGENT = \"open-code\";",
+       "{token_line}",
+       "{capture_policy}",
+       "",
+       "function timeoutSignal(ms: number): AbortSignal | undefined {{",
+       "  if (typeof AbortSignal === \"undefined\") return undefined;",
+       "  const factory = (AbortSignal as unknown as {{ timeout?: (ms: number) => AbortSignal }}).timeout;",
+       "  return factory ? factory(ms) : undefined;",
+       "}}",
+       ""
+      ],
+      "total": 161
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 62,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/serve.rs",
+      "start": 3563,
+      "end": 3568
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 7638,
+       "end": 7643
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 7692,
+       "end": 7697
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 8646,
+       "end": 8651
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9386,
+       "end": 9391
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9504,
+       "end": 9509
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 10034,
+       "end": 10039
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 10135,
+       "end": 10140
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 10686,
+       "end": 10691
+      }
+     ],
+     "copies": 15,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 60,
+     "first": {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 397,
+      "end": 408
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 503,
+       "end": 514
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 578,
+       "end": 589
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 735,
+       "end": 746
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 849,
+       "end": 860
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 887,
+       "end": 898
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 941,
+       "end": 952
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 1017,
+       "end": 1028
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 1367,
+       "end": 1378
+      }
+     ],
+     "copies": 15,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 72,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/reindex.rs",
+      "start": 124,
+      "end": 135
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 5193,
+       "end": 5204
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 5490,
+       "end": 5501
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 7575,
+       "end": 7586
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 8117,
+       "end": 8128
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 8201,
+       "end": 8212
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 9197,
+       "end": 9208
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 9216,
+       "end": 9227
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 9235,
+       "end": 9246
+      }
+     ],
+     "copies": 12,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 80,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/serve.rs",
+      "start": 3563,
+      "end": 3573
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-consolidate/src/auto_improve_schedule.rs",
+       "start": 803,
+       "end": 813
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9088,
+       "end": 9098
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9244,
+       "end": 9254
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9621,
+       "end": 9631
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9720,
+       "end": 9730
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9856,
+       "end": 9866
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/admin.rs",
+       "start": 9920,
+       "end": 9930
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 12206,
+       "end": 12216
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 24,
+     "tokens": 173,
+     "first": {
+      "name": "crates/ai-memory-store/src/migrations.rs",
+      "start": 540,
+      "end": 563
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-store/src/migrations.rs",
+       "start": 624,
+       "end": 647
+      },
+      {
+       "name": "crates/ai-memory-store/src/migrations.rs",
+       "start": 696,
+       "end": 719
+      },
+      {
+       "name": "crates/ai-memory-store/src/migrations.rs",
+       "start": 768,
+       "end": 791
+      },
+      {
+       "name": "crates/ai-memory-store/src/migrations.rs",
+       "start": 840,
+       "end": 863
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 13,
+     "tokens": 61,
+     "first": {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 1972,
+      "end": 1984
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2268,
+       "end": 2281
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2607,
+       "end": 2619
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2750,
+       "end": 2763
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2781,
+       "end": 2794
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2812,
+       "end": 2825
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 3051,
+       "end": 3064
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 3179,
+       "end": 3191
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 3239,
+       "end": 3251
+      }
+     ],
+     "copies": 12,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 60,
+     "first": {
+      "name": "crates/ai-memory-store/src/lib.rs",
+      "start": 1972,
+      "end": 1983
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2093,
+       "end": 2104
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2211,
+       "end": 2222
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2489,
+       "end": 2500
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2524,
+       "end": 2535
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2687,
+       "end": 2698
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 2985,
+       "end": 2996
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 3718,
+       "end": 3729
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 4009,
+       "end": 4020
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "crates/ai-memory-cli/src/commands/init.rs",
+     "crates/ai-memory-store/migrations/V14__users.sql"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:17:29.791Z",
+  "jscpdVersion": "5.4.0"
  }
 }

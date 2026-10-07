@@ -9,10 +9,12 @@
    "starsToday": 886,
    "headSha": "b6e8bbdce628d564c6af031b5f26cda6e818ea10",
    "sources": 108,
-   "lines": 22430,
-   "clones": 83,
-   "duplicatedLines": 1272,
-   "percentage": 5.67,
+   "lines": 21298,
+   "clones": 91,
+   "duplicatedLines": 1403,
+   "percentage": 6.59,
+   "codePercentage": 7.68,
+   "codeSources": 53,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 2047,
    "headSha": "b6e8bbdce628d564c6af031b5f26cda6e818ea10",
    "sources": 108,
-   "lines": 22430,
-   "clones": 83,
-   "duplicatedLines": 1272,
-   "percentage": 5.67,
+   "lines": 21298,
+   "clones": 91,
+   "duplicatedLines": 1403,
+   "percentage": 6.59,
+   "codePercentage": 7.68,
+   "codeSources": 53,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,49 +46,49 @@
   "starsToday": 2047,
   "defaultBranch": "main",
   "headSha": "b6e8bbdce628d564c6af031b5f26cda6e818ea10",
-  "durationMs": 598,
+  "durationMs": 93,
   "total": {
    "sources": 108,
-   "lines": 22430,
-   "tokens": 193065,
-   "clones": 83,
-   "duplicatedLines": 1272,
-   "duplicatedTokens": 6815,
-   "percentage": 5.67,
-   "percentageTokens": 3.53
+   "lines": 21298,
+   "tokens": 192900,
+   "clones": 91,
+   "duplicatedLines": 1403,
+   "duplicatedTokens": 7132,
+   "percentage": 6.59,
+   "percentageTokens": 3.7
   },
   "formats": [
    {
     "format": "python",
     "sources": 70,
-    "lines": 16433,
-    "clones": 75,
-    "duplicatedLines": 1196,
-    "percentage": 7.28
+    "lines": 16006,
+    "clones": 83,
+    "duplicatedLines": 1319,
+    "percentage": 8.24
    },
    {
     "format": "markdown",
     "sources": 14,
     "lines": 1545,
     "clones": 5,
-    "duplicatedLines": 31,
-    "percentage": 2.01
+    "duplicatedLines": 36,
+    "percentage": 2.33
    },
    {
     "format": "toml",
     "sources": 4,
     "lines": 311,
     "clones": 2,
-    "duplicatedLines": 34,
-    "percentage": 10.93
+    "duplicatedLines": 36,
+    "percentage": 11.58
    },
    {
     "format": "yaml",
     "sources": 2,
     "lines": 66,
     "clones": 1,
-    "duplicatedLines": 11,
-    "percentage": 16.67
+    "duplicatedLines": 12,
+    "percentage": 18.18
    },
    {
     "format": "markup",
@@ -97,7 +101,7 @@
    {
     "format": "bash",
     "sources": 12,
-    "lines": 1329,
+    "lines": 688,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -105,7 +109,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -113,7 +117,7 @@
    {
     "format": "json",
     "sources": 2,
-    "lines": 130,
+    "lines": 60,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -122,154 +126,664 @@
   "topClones": [
    {
     "format": "python",
-    "lines": 42,
-    "tokens": 152,
-    "firstFile": {
-     "name": "packages/markitdown/src/markitdown/converters/_image_converter.py",
-     "start": 95,
-     "end": 136
+    "lines": 17,
+    "tokens": 108,
+    "first": {
+     "name": "packages/markitdown/tests/test_pdf_tables.py",
+     "start": 735,
+     "end": 751
     },
-    "secondFile": {
-     "name": "packages/markitdown/src/markitdown/converters/_llm_caption.py",
-     "start": 9,
-     "end": 48
-    }
+    "others": [
+     {
+      "name": "packages/markitdown/tests/test_pdf_tables.py",
+      "start": 788,
+      "end": 804
+     },
+     {
+      "name": "packages/markitdown/tests/test_pdf_tables.py",
+      "start": 830,
+      "end": 846
+     },
+     {
+      "name": "packages/markitdown/tests/test_pdf_tables.py",
+      "start": 913,
+      "end": 929
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      ")",
+      "",
+      "if not os.path.exists(pdf_path):",
+      "    pytest.skip(f\"Test file not found: {pdf_path}\")",
+      "",
+      "if not os.path.exists(expected_path):",
+      "    pytest.skip(f\"Expected output not found: {expected_path}\")",
+      "",
+      "result = markitdown.convert(pdf_path)",
+      "actual_output = result.text_content"
+     ],
+     "total": 17
+    },
+    "kind": "tests"
    },
    {
     "format": "python",
-    "lines": 26,
-    "tokens": 148,
-    "firstFile": {
-     "name": "packages/markitdown-ocr/src/markitdown_ocr/_pptx_converter_with_ocr.py",
-     "start": 155,
-     "end": 180
+    "lines": 24,
+    "tokens": 100,
+    "first": {
+     "name": "packages/markitdown/src/markitdown/converters/_audio_converter.py",
+     "start": 28,
+     "end": 51
     },
-    "secondFile": {
-     "name": "packages/markitdown/src/markitdown/converters/_pptx_converter.py",
-     "start": 187,
-     "end": 212
-    }
+    "others": [
+     {
+      "name": "packages/markitdown/src/markitdown/converters/_csv_converter.py",
+      "start": 54,
+      "end": 74
+     },
+     {
+      "name": "packages/markitdown/src/markitdown/converters/_html_converter.py",
+      "start": 24,
+      "end": 47
+     },
+     {
+      "name": "packages/markitdown/src/markitdown/converters/_zip_converter.py",
+      "start": 69,
+      "end": 92
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "def accepts(",
+      "    self,",
+      "    file_stream: BinaryIO,",
+      "    stream_info: StreamInfo,",
+      "    **kwargs: Any,  # Options to pass to the converter",
+      ") -> bool:",
+      "    mimetype = (stream_info.mimetype or \"\").lower()",
+      "    extension = (stream_info.extension or \"\").lower()",
+      "",
+      "    if extension in ACCEPTED_FILE_EXTENSIONS:"
+     ],
+     "total": 24
+    },
+    "excerptSecond": {
+     "lines": [
+      "def accepts(",
+      "    self,",
+      "    file_stream: BinaryIO,",
+      "    stream_info: StreamInfo,",
+      "    **kwargs: Any,  # Options to pass to the converter",
+      ") -> bool:",
+      "    mimetype = (stream_info.mimetype or \"\").lower()",
+      "    extension = (stream_info.extension or \"\").lower()",
+      "    if extension in ACCEPTED_FILE_EXTENSIONS:",
+      "        return True"
+     ],
+     "total": 21
+    },
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 31,
     "tokens": 143,
-    "firstFile": {
+    "first": {
      "name": "packages/markitdown/src/markitdown/converters/_docx_converter.py",
      "start": 45,
      "end": 75
     },
-    "secondFile": {
-     "name": "packages/markitdown/src/markitdown/converters/_epub_converter.py",
-     "start": 28,
-     "end": 58
-    }
+    "others": [
+     {
+      "name": "packages/markitdown/src/markitdown/converters/_epub_converter.py",
+      "start": 28,
+      "end": 58
+     },
+     {
+      "name": "packages/markitdown/src/markitdown/converters/_pptx_converter.py",
+      "start": 36,
+      "end": 66
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "Converts DOCX files to Markdown. Style information (e.g., headings) and tables are preserved where possible.",
+      "\"\"\"",
+      "",
+      "def __init__(self):",
+      "    super().__init__()",
+      "    self._html_converter = HtmlConverter()",
+      "",
+      "def accepts(",
+      "    self,",
+      "    file_stream: BinaryIO,"
+     ],
+     "total": 31
+    },
+    "kind": "code"
    },
    {
     "format": "python",
-    "lines": 26,
-    "tokens": 141,
-    "firstFile": {
-     "name": "packages/markitdown/tests/test_pdf_tables.py",
-     "start": 735,
-     "end": 760
+    "lines": 8,
+    "tokens": 91,
+    "first": {
+     "name": "packages/markitdown/tests/test_docx_math.py",
+     "start": 8,
+     "end": 15
     },
-    "secondFile": {
-     "name": "packages/markitdown/tests/test_pdf_tables.py",
-     "start": 830,
-     "end": 855
-    }
-   },
-   {
-    "format": "python",
-    "lines": 24,
-    "tokens": 133,
-    "firstFile": {
-     "name": "packages/markitdown/tests/test_pdf_tables.py",
-     "start": 787,
-     "end": 810
-    },
-    "secondFile": {
-     "name": "packages/markitdown/tests/test_pdf_tables.py",
-     "start": 875,
-     "end": 898
-    }
-   },
-   {
-    "format": "python",
-    "lines": 23,
-    "tokens": 132,
-    "firstFile": {
-     "name": "packages/markitdown/tests/test_pdf_tables.py",
-     "start": 735,
-     "end": 757
-    },
-    "secondFile": {
-     "name": "packages/markitdown/tests/test_pdf_tables.py",
-     "start": 913,
-     "end": 935
-    }
+    "others": [
+     {
+      "name": "packages/markitdown/tests/test_docx_math.py",
+      "start": 22,
+      "end": 29
+     },
+     {
+      "name": "packages/markitdown/tests/test_docx_math.py",
+      "start": 38,
+      "end": 45
+     },
+     {
+      "name": "packages/markitdown/tests/test_docx_math.py",
+      "start": 52,
+      "end": 59
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
    },
    {
     "format": "markdown",
-    "lines": 8,
-    "tokens": 129,
-    "firstFile": {
-     "name": "packages/markitdown/tests/test_files/expected_outputs/REPAIR-2022-INV-001_multipage.md:markdown",
-     "start": 30,
-     "end": 37
+    "lines": 7,
+    "tokens": 72,
+    "first": {
+     "name": "README.md:markdown",
+     "start": 398,
+     "end": 404
     },
-    "secondFile": {
-     "name": "packages/markitdown/tests/test_files/expected_outputs/REPAIR-2022-INV-001_multipage.md:markdown",
-     "start": 68,
-     "end": 76
-    }
+    "others": [
+     {
+      "name": "packages/markitdown-mcp/README.md:markdown",
+      "start": 136,
+      "end": 142
+     },
+     {
+      "name": "packages/markitdown-sample-plugin/README.md:markdown",
+      "start": 105,
+      "end": 111
+     },
+     {
+      "name": "packages/markitdown/README.md:markdown",
+      "start": 49,
+      "end": 55
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
    },
    {
     "format": "python",
-    "lines": 33,
-    "tokens": 128,
-    "firstFile": {
-     "name": "packages/markitdown-sample-plugin/src/markitdown_sample_plugin/_plugin.py",
+    "lines": 16,
+    "tokens": 72,
+    "first": {
+     "name": "packages/markitdown/tests/test_cu_converter.py",
+     "start": 318,
+     "end": 333
+    },
+    "others": [
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 342,
+      "end": 357
+     },
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 365,
+      "end": 380
+     },
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 428,
+      "end": 443
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 13,
+    "tokens": 71,
+    "first": {
+     "name": "packages/markitdown/tests/test_cu_converter.py",
+     "start": 388,
+     "end": 400
+    },
+    "others": [
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 408,
+      "end": 420
+     },
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 506,
+      "end": 517
+     },
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 523,
+      "end": 534
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 19,
+    "tokens": 93,
+    "first": {
+     "name": "packages/markitdown-ocr/tests/test_pdf_converter.py",
      "start": 36,
-     "end": 68
+     "end": 54
     },
-    "secondFile": {
-     "name": "packages/markitdown/src/markitdown/converters/_image_converter.py",
-     "start": 18,
-     "end": 53
-    }
+    "others": [
+     {
+      "name": "packages/markitdown-ocr/tests/test_pptx_converter.py",
+      "start": 36,
+      "end": 54
+     },
+     {
+      "name": "packages/markitdown-ocr/tests/test_xlsx_converter.py",
+      "start": 37,
+      "end": 55
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "python",
-    "lines": 11,
-    "tokens": 125,
-    "firstFile": {
-     "name": "packages/markitdown-ocr/tests/test_docx_converter.py",
-     "start": 236,
-     "end": 246
+    "lines": 15,
+    "tokens": 82,
+    "first": {
+     "name": "packages/markitdown/tests/test_cu_converter.py",
+     "start": 411,
+     "end": 425
     },
-    "secondFile": {
-     "name": "packages/markitdown/tests/test_module_misc.py",
-     "start": 389,
-     "end": 399
-    }
+    "others": [
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 434,
+      "end": 448
+     },
+     {
+      "name": "packages/markitdown/tests/test_cu_converter.py",
+      "start": 457,
+      "end": 471
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "python",
-    "lines": 31,
-    "tokens": 123,
-    "firstFile": {
-     "name": "packages/markitdown/src/markitdown/converters/_docx_converter.py",
-     "start": 45,
-     "end": 75
+    "lines": 16,
+    "tokens": 54,
+    "first": {
+     "name": "packages/markitdown-ocr/src/markitdown_ocr/_docx_converter_with_ocr.py",
+     "start": 70,
+     "end": 85
     },
-    "secondFile": {
-     "name": "packages/markitdown/src/markitdown/converters/_pptx_converter.py",
-     "start": 36,
-     "end": 66
-    }
+    "others": [
+     {
+      "name": "packages/markitdown-ocr/src/markitdown_ocr/_pdf_converter_with_ocr.py",
+      "start": 153,
+      "end": 168
+     },
+     {
+      "name": "packages/markitdown-ocr/src/markitdown_ocr/_pptx_converter_with_ocr.py",
+      "start": 49,
+      "end": 64
+     },
+     {
+      "name": "packages/markitdown/src/markitdown/converters/_pdf_converter.py",
+      "start": 515,
+      "end": 530
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 53,
+   "lines": 9231,
+   "tokens": 41571,
+   "clones": 39,
+   "duplicatedLines": 709,
+   "duplicatedTokens": 3051,
+   "percentage": 7.68,
+   "percentageTokens": 7.34,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 43,
+     "lines": 8413,
+     "clones": 39,
+     "duplicatedLines": 709,
+     "percentage": 8.43
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 24,
+     "tokens": 100,
+     "first": {
+      "name": "packages/markitdown/src/markitdown/converters/_audio_converter.py",
+      "start": 28,
+      "end": 51
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_csv_converter.py",
+       "start": 54,
+       "end": 74
+      },
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_html_converter.py",
+       "start": 24,
+       "end": 47
+      },
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_zip_converter.py",
+       "start": 69,
+       "end": 92
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "def accepts(",
+       "    self,",
+       "    file_stream: BinaryIO,",
+       "    stream_info: StreamInfo,",
+       "    **kwargs: Any,  # Options to pass to the converter",
+       ") -> bool:",
+       "    mimetype = (stream_info.mimetype or \"\").lower()",
+       "    extension = (stream_info.extension or \"\").lower()",
+       "",
+       "    if extension in ACCEPTED_FILE_EXTENSIONS:"
+      ],
+      "total": 24
+     },
+     "excerptSecond": {
+      "lines": [
+       "def accepts(",
+       "    self,",
+       "    file_stream: BinaryIO,",
+       "    stream_info: StreamInfo,",
+       "    **kwargs: Any,  # Options to pass to the converter",
+       ") -> bool:",
+       "    mimetype = (stream_info.mimetype or \"\").lower()",
+       "    extension = (stream_info.extension or \"\").lower()",
+       "    if extension in ACCEPTED_FILE_EXTENSIONS:",
+       "        return True"
+      ],
+      "total": 21
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 31,
+     "tokens": 143,
+     "first": {
+      "name": "packages/markitdown/src/markitdown/converters/_docx_converter.py",
+      "start": 45,
+      "end": 75
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_epub_converter.py",
+       "start": 28,
+       "end": 58
+      },
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_pptx_converter.py",
+       "start": 36,
+       "end": 66
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "Converts DOCX files to Markdown. Style information (e.g., headings) and tables are preserved where possible.",
+       "\"\"\"",
+       "",
+       "def __init__(self):",
+       "    super().__init__()",
+       "    self._html_converter = HtmlConverter()",
+       "",
+       "def accepts(",
+       "    self,",
+       "    file_stream: BinaryIO,"
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 54,
+     "first": {
+      "name": "packages/markitdown-ocr/src/markitdown_ocr/_docx_converter_with_ocr.py",
+      "start": 70,
+      "end": 85
+     },
+     "others": [
+      {
+       "name": "packages/markitdown-ocr/src/markitdown_ocr/_pdf_converter_with_ocr.py",
+       "start": 153,
+       "end": 168
+      },
+      {
+       "name": "packages/markitdown-ocr/src/markitdown_ocr/_pptx_converter_with_ocr.py",
+       "start": 49,
+       "end": 64
+      },
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_pdf_converter.py",
+       "start": 515,
+       "end": 530
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "    ):",
+       "        return True",
+       "",
+       "    return False",
+       "",
+       "def convert(",
+       "    self,",
+       "    file_stream: BinaryIO,",
+       "    stream_info: StreamInfo,",
+       "    **kwargs: Any,"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 152,
+     "first": {
+      "name": "packages/markitdown/src/markitdown/converters/_image_converter.py",
+      "start": 95,
+      "end": 136
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_llm_caption.py",
+       "start": 9,
+       "end": 48
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 148,
+     "first": {
+      "name": "packages/markitdown-ocr/src/markitdown_ocr/_pptx_converter_with_ocr.py",
+      "start": 155,
+      "end": 180
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_pptx_converter.py",
+       "start": 187,
+       "end": 212
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 52,
+     "first": {
+      "name": "packages/markitdown/src/markitdown/converters/_bing_serp_converter.py",
+      "start": 45,
+      "end": 62
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_wikipedia_converter.py",
+       "start": 39,
+       "end": 56
+      },
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_youtube_converter.py",
+       "start": 76,
+       "end": 93
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 102,
+     "first": {
+      "name": "packages/markitdown/src/markitdown/converters/_csv_converter.py",
+      "start": 52,
+      "end": 74
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_docx_converter.py",
+       "start": 50,
+       "end": 75
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 27,
+     "tokens": 101,
+     "first": {
+      "name": "packages/markitdown-sample-plugin/src/markitdown_sample_plugin/_plugin.py",
+      "start": 36,
+      "end": 62
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_pdf_converter.py",
+       "start": 499,
+       "end": 525
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 96,
+     "first": {
+      "name": "packages/markitdown-sample-plugin/src/markitdown_sample_plugin/_plugin.py",
+      "start": 36,
+      "end": 61
+     },
+     "others": [
+      {
+       "name": "packages/markitdown/src/markitdown/converters/_image_converter.py",
+       "start": 18,
+       "end": 43
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 91,
+     "first": {
+      "name": "packages/markitdown-ocr/src/markitdown_ocr/_docx_converter_with_ocr.py",
+      "start": 48,
+      "end": 65
+     },
+     "others": [
+      {
+       "name": "packages/markitdown-ocr/src/markitdown_ocr/_xlsx_converter_with_ocr.py",
+       "start": 30,
+       "end": 47
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:52:35.936Z",
+  "jscpdVersion": "5.4.0"
  }
 }

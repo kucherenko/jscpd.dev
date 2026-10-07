@@ -9,10 +9,12 @@
    "starsToday": 361,
    "headSha": "6f03720813c22f907d3fb9ba98567f2169446b82",
    "sources": 35,
-   "lines": 3076,
+   "lines": 3032,
    "clones": 2,
    "duplicatedLines": 13,
-   "percentage": 0.42,
+   "percentage": 0.43,
+   "codePercentage": 0.26,
+   "codeSources": 28,
    "healthScore": 31.4,
    "healthGrade": "E"
   },
@@ -23,10 +25,12 @@
    "starsToday": 623,
    "headSha": "6f03720813c22f907d3fb9ba98567f2169446b82",
    "sources": 35,
-   "lines": 3076,
+   "lines": 3032,
    "clones": 2,
    "duplicatedLines": 13,
-   "percentage": 0.42,
+   "percentage": 0.43,
+   "codePercentage": 0.26,
+   "codeSources": 28,
    "healthScore": 31.4,
    "healthGrade": "E"
   }
@@ -42,16 +46,16 @@
   "starsToday": 623,
   "defaultBranch": "main",
   "headSha": "6f03720813c22f907d3fb9ba98567f2169446b82",
-  "durationMs": 682,
+  "durationMs": 20,
   "total": {
    "sources": 35,
-   "lines": 3076,
-   "tokens": 19333,
+   "lines": 3032,
+   "tokens": 19168,
    "clones": 2,
    "duplicatedLines": 13,
    "duplicatedTokens": 118,
-   "percentage": 0.42,
-   "percentageTokens": 0.61
+   "percentage": 0.43,
+   "percentageTokens": 0.62
   },
   "formats": [
    {
@@ -81,7 +85,7 @@
    {
     "format": "bash",
     "sources": 10,
-    "lines": 704,
+    "lines": 654,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -89,7 +93,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -116,31 +120,85 @@
     "format": "markup",
     "lines": 6,
     "tokens": 64,
-    "firstFile": {
+    "first": {
      "name": "assets/logo-dark.svg",
      "start": 5,
      "end": 10
     },
-    "secondFile": {
-     "name": "assets/logo-light.svg",
-     "start": 5,
-     "end": 10
-    }
+    "others": [
+     {
+      "name": "assets/logo-light.svg",
+      "start": 5,
+      "end": 10
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<rect x=\"2.5\" y=\"2.5\" width=\"2.5\" height=\"2.5\" fill=\"#e6edf3\"/>",
+      "</pattern>",
+      "</defs>",
+      "<rect x=\"0\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+      "<rect x=\"20\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+      "<rect x=\"40\" y=\"0\" width=\"10\" height=\"20\" fill=\"#e6edf3\"/>"
+     ],
+     "total": 6
+    },
+    "excerptSecond": {
+     "lines": [
+      "<rect x=\"2.5\" y=\"2.5\" width=\"2.5\" height=\"2.5\" fill=\"#1f2328\"/>",
+      "</pattern>",
+      "</defs>",
+      "<rect x=\"0\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+      "<rect x=\"20\" y=\"0\" width=\"10\" height=\"20\" fill=\"url(#shade)\"/>",
+      "<rect x=\"40\" y=\"0\" width=\"10\" height=\"20\" fill=\"#1f2328\"/>"
+     ],
+     "total": 6
+    },
+    "kind": "markup"
    },
    {
     "format": "tsx",
     "lines": 7,
     "tokens": 54,
-    "firstFile": {
+    "first": {
      "name": "src/app.tsx",
      "start": 424,
      "end": 430
     },
-    "secondFile": {
-     "name": "src/app.tsx",
-     "start": 452,
-     "end": 458
-    }
+    "others": [
+     {
+      "name": "src/app.tsx",
+      "start": 452,
+      "end": 458
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<ProgressBar percent={1} />",
+      "<Gap />",
+      "<Text>",
+      "  <Text color={theme.primary}>",
+      "    <Spinner type=\"dots\" />",
+      "  </Text>",
+      "  <Text color={theme.gray} dimColor={theme.dimSecondary}> processing…</Text>"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "<ProgressBar percent={0} />",
+      "<Gap />",
+      "<Text>",
+      "  <Text color={theme.primary}>",
+      "    <Spinner type=\"dots\" />",
+      "  </Text>",
+      "  <Text color={theme.gray} dimColor={theme.dimSecondary}>"
+     ],
+     "total": 7
+    },
+    "kind": "code"
    }
   ],
   "health": {
@@ -356,6 +414,102 @@
      "lines": 27
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 28,
+   "lines": 2662,
+   "tokens": 15735,
+   "clones": 1,
+   "duplicatedLines": 7,
+   "duplicatedTokens": 54,
+   "percentage": 0.26,
+   "percentageTokens": 0.34,
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 9,
+     "lines": 1115,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 0.63
+    },
+    {
+     "format": "typescript",
+     "sources": 9,
+     "lines": 729,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 7,
+     "tokens": 54,
+     "first": {
+      "name": "src/app.tsx",
+      "start": 424,
+      "end": 430
+     },
+     "others": [
+      {
+       "name": "src/app.tsx",
+       "start": 452,
+       "end": 458
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "<ProgressBar percent={1} />",
+       "<Gap />",
+       "<Text>",
+       "  <Text color={theme.primary}>",
+       "    <Spinner type=\"dots\" />",
+       "  </Text>",
+       "  <Text color={theme.gray} dimColor={theme.dimSecondary}> processing…</Text>"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "<ProgressBar percent={0} />",
+       "<Gap />",
+       "<Text>",
+       "  <Text color={theme.primary}>",
+       "    <Spinner type=\"dots\" />",
+       "  </Text>",
+       "  <Text color={theme.gray} dimColor={theme.dimSecondary}>"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:37:54.605Z",
+  "jscpdVersion": "5.4.0"
  }
 }

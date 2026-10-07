@@ -9,10 +9,12 @@
    "starsToday": 245,
    "headSha": "d277088bc1d081ef716d81dd7986d05d0a36ad3a",
    "sources": 1173,
-   "lines": 287045,
+   "lines": 271780,
    "clones": 1848,
-   "duplicatedLines": 24314,
-   "percentage": 8.47,
+   "duplicatedLines": 26140,
+   "percentage": 9.62,
+   "codePercentage": 3.12,
+   "codeSources": 472,
    "healthScore": 49.3,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 558,
    "headSha": "31a5e0ba29a525b3587882132fa13bd211653152",
    "sources": 1189,
-   "lines": 273017,
+   "lines": 272973,
    "clones": 1852,
    "duplicatedLines": 26146,
    "percentage": 9.58,
+   "codePercentage": 3.2,
+   "codeSources": 484,
    "healthScore": 48,
    "healthGrade": "D"
   }
@@ -42,16 +46,16 @@
   "starsToday": 558,
   "defaultBranch": "main",
   "headSha": "31a5e0ba29a525b3587882132fa13bd211653152",
-  "durationMs": 1645,
+  "durationMs": 1033,
   "total": {
    "sources": 1189,
-   "lines": 273017,
-   "tokens": 1605210,
+   "lines": 272973,
+   "tokens": 1605045,
    "clones": 1852,
    "duplicatedLines": 26146,
    "duplicatedTokens": 186926,
    "percentage": 9.58,
-   "percentageTokens": 11.64
+   "percentageTokens": 11.65
   },
   "formats": [
    {
@@ -105,10 +109,10 @@
    {
     "format": "bash",
     "sources": 85,
-    "lines": 6512,
+    "lines": 6462,
     "clones": 4,
     "duplicatedLines": 68,
-    "percentage": 1.04
+    "percentage": 1.05
    },
    {
     "format": "json",
@@ -140,151 +144,516 @@
     "format": "txt",
     "lines": 201,
     "tokens": 1869,
-    "firstFile": {
+    "first": {
      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
      "start": 2,
      "end": 202
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/config/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/credentials/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/feature/ec2/imds/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/feature/s3/manager/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/internal/configsources/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/internal/endpoints/v2/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     {
+      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/internal/v4a/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     }
+    ],
+    "copies": 18,
+    "excerpt": {
+     "lines": [
+      "                              Apache License",
+      "                        Version 2.0, January 2004",
+      "                     http://www.apache.org/licenses/",
+      "",
+      "TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION",
+      "",
+      "1. Definitions.",
+      "",
+      "   \"License\" shall mean the terms and conditions for use, reproduction,",
+      "   and distribution as defined by Sections 1 through 9 of this document."
+     ],
+     "total": 201
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "go",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "internal/proto/ateletpb/atelet.pb.go",
+     "start": 231,
+     "end": 240
+    },
+    "others": [
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 274,
+      "end": 283
+     },
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 319,
+      "end": 328
+     },
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 385,
+      "end": 394
+     },
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 435,
+      "end": 444
+     },
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 520,
+      "end": 529
+     },
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 574,
+      "end": 583
+     },
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 691,
+      "end": 700
+     },
+     {
+      "name": "internal/proto/ateletpb/atelet.pb.go",
+      "start": 740,
+      "end": 749
+     }
+    ],
+    "copies": 102,
+    "excerpt": {
+     "lines": [
+      "    mi := &file_atelet_proto_msgTypes[0]",
+      "    if x != nil {",
+      "        ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))",
+      "        if ms.LoadMessageInfo() == nil {",
+      "            ms.StoreMessageInfo(mi)",
+      "        }",
+      "        return ms",
+      "    }",
+      "    return mi.MessageOf(x)",
+      "}"
+     ],
+     "total": 10
+    },
+    "kind": "generated"
+   },
+   {
+    "format": "go",
+    "lines": 40,
+    "tokens": 307,
+    "first": {
+     "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+     "start": 91,
+     "end": 130
+    },
+    "others": [
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 1607,
+      "end": 1646
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2009,
+      "end": 2048
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2094,
+      "end": 2133
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2207,
+      "end": 2246
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2452,
+      "end": 2491
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3429,
+      "end": 3468
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3484,
+      "end": 3523
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3539,
+      "end": 3578
+     }
+    ],
+    "copies": 16,
+    "excerpt": {
+     "lines": [
+      "fn := func(",
+      "    fldPath *field.Path,",
+      "    obj, oldObj *ateapipb.ObjectRef,",
+      "    oldValueCorrelated bool) (errs field.ErrorList) {",
+      "    // don't revalidate unchanged data",
+      "    if oldValueCorrelated && op.Type == operation.Update {",
+      "        if ateDeepEqual(obj, oldObj) {",
+      "            return nil",
+      "        }",
+      "    }"
+     ],
+     "total": 40
+    },
+    "kind": "code"
    },
    {
     "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
+    "lines": 174,
+    "tokens": 1658,
+    "first": {
      "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
      "start": 2,
-     "end": 202
+     "end": 175
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/config/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "_LICENSES/github.com/spf13/afero/LICENSE.txt",
+      "start": 1,
+      "end": 174
+     },
+     {
+      "name": "_LICENSES/github.com/spf13/cobra/LICENSE.txt",
+      "start": 1,
+      "end": 174
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
+    "format": "go",
+    "lines": 19,
+    "tokens": 130,
+    "first": {
+     "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+     "start": 349,
+     "end": 367
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/credentials/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 1188,
+      "end": 1206
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3047,
+      "end": 3065
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3388,
+      "end": 3406
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4028,
+      "end": 4046
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4060,
+      "end": 4078
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4814,
+      "end": 4832
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4953,
+      "end": 4971
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 5083,
+      "end": 5101
+     }
+    ],
+    "copies": 21,
+    "kind": "code"
    },
    {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
+    "format": "go",
+    "lines": 13,
+    "tokens": 84,
+    "first": {
+     "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+     "start": 349,
+     "end": 361
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/feature/ec2/imds/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 466,
+      "end": 478
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 603,
+      "end": 615
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 1935,
+      "end": 1947
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2412,
+      "end": 2424
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3007,
+      "end": 3019
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3113,
+      "end": 3125
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3187,
+      "end": 3199
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4101,
+      "end": 4113
+     }
+    ],
+    "copies": 29,
+    "kind": "code"
    },
    {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
+    "format": "go",
+    "lines": 14,
+    "tokens": 90,
+    "first": {
+     "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+     "start": 471,
+     "end": 484
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/feature/s3/manager/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 608,
+      "end": 621
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2386,
+      "end": 2399
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2417,
+      "end": 2430
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3012,
+      "end": 3025
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3084,
+      "end": 3097
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3273,
+      "end": 3286
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4106,
+      "end": 4119
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4137,
+      "end": 4150
+     }
+    ],
+    "copies": 25,
+    "kind": "code"
    },
    {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
+    "format": "go",
+    "lines": 18,
+    "tokens": 90,
+    "first": {
+     "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+     "start": 139,
+     "end": 156
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/internal/configsources/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 218,
+      "end": 235
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 499,
+      "end": 516
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 529,
+      "end": 546
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 880,
+      "end": 897
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 910,
+      "end": 927
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 949,
+      "end": 966
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 1380,
+      "end": 1397
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 1460,
+      "end": 1477
+     }
+    ],
+    "copies": 22,
+    "kind": "code"
    },
    {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
+    "format": "go",
+    "lines": 25,
+    "tokens": 266,
+    "first": {
+     "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+     "start": 2311,
+     "end": 2335
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/internal/endpoints/v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2556,
+      "end": 2580
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 2645,
+      "end": 2669
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3613,
+      "end": 3637
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 3727,
+      "end": 3751
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 4497,
+      "end": 4521
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 5915,
+      "end": 5939
+     },
+     {
+      "name": "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+      "start": 7610,
+      "end": 7634
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
    },
    {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
+    "format": "markup",
+    "lines": 410,
+    "tokens": 1712,
+    "first": {
+     "name": "logo/ate-logo-with-border.svg",
+     "start": 266,
+     "end": 675
     },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/internal/v4a/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
-   },
-   {
-    "format": "txt",
-    "lines": 201,
-    "tokens": 1869,
-    "firstFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    },
-    "secondFile": {
-     "name": "_LICENSES/github.com/aws/aws-sdk-go-v2/service/internal/checksum/LICENSE.txt",
-     "start": 2,
-     "end": 202
-    }
+    "others": [
+     {
+      "name": "logo/ate-logo.svg",
+      "start": 62,
+      "end": 471
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
    }
   ],
   "health": {
@@ -489,6 +858,392 @@
      "lines": 40
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 484,
+   "lines": 93039,
+   "tokens": 465065,
+   "clones": 267,
+   "duplicatedLines": 2973,
+   "duplicatedTokens": 21676,
+   "percentage": 3.2,
+   "percentageTokens": 4.66,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 398,
+     "lines": 82985,
+     "clones": 262,
+     "duplicatedLines": 2885,
+     "percentage": 3.48
+    },
+    {
+     "format": "bash",
+     "sources": 54,
+     "lines": 5334,
+     "clones": 4,
+     "duplicatedLines": 68,
+     "percentage": 1.27
+    },
+    {
+     "format": "python",
+     "sources": 31,
+     "lines": 4546,
+     "clones": 1,
+     "duplicatedLines": 20,
+     "percentage": 0.44
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 14,
+     "tokens": 176,
+     "first": {
+      "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+      "start": 306,
+      "end": 319
+     },
+     "others": [
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 810,
+       "end": 823
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 1049,
+       "end": 1062
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 1286,
+       "end": 1299
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 1930,
+       "end": 1943
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2913,
+       "end": 2926
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "uid, version := policy.GetMetadata().GetUid(), policy.GetMetadata().GetVersion()",
+       "if err := del(store.DeletePreconditions{Version: version + 1}); !errors.Is(err, store.ErrVersionConflict) {",
+       "    t.Errorf(\"stale version alone = %v, want ErrVersionConflict\", err)",
+       "}",
+       "if err := del(store.DeletePreconditions{UID: uid, Version: version + 1}); !errors.Is(err, store.ErrVersionConflict) {",
+       "    t.Errorf(\"matching uid, stale version = %v, want ErrVersionConflict\", err)",
+       "}",
+       "if err := del(store.DeletePreconditions{UID: foreignUID}); !errors.Is(err, store.ErrUIDConflict) {",
+       "    t.Errorf(\"foreign uid alone = %v, want ErrUIDConflict\", err)",
+       "}"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 7,
+     "tokens": 59,
+     "first": {
+      "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+      "start": 1732,
+      "end": 1738
+     },
+     "others": [
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2094,
+       "end": 2100
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2139,
+       "end": 2145
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2169,
+       "end": 2175
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2202,
+       "end": 2208
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2237,
+       "end": 2243
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2276,
+       "end": 2282
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2444,
+       "end": 2450
+      },
+      {
+       "name": "cmd/ateapi/internal/store/storecontract/contract.go",
+       "start": 2485,
+       "end": 2491
+      }
+     ],
+     "copies": 14,
+     "excerpt": {
+      "lines": [
+       "t.Run(\"UpdateWorker_Conflict\", func(t *testing.T) {",
+       "    s := setup(t)",
+       "    ctx := context.Background()",
+       "",
+       "    if _, err := s.CreateWorker(ctx, newTestWorker(testWorkerName, \"pod-1\")); err != nil {",
+       "        t.Fatalf(\"CreateWorker failed: %v\", err)",
+       "    }"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 16,
+     "tokens": 182,
+     "first": {
+      "name": "cmd/atelet/main.go",
+      "start": 1630,
+      "end": 1645
+     },
+     "others": [
+      {
+       "name": "cmd/atelet/main.go",
+       "start": 1649,
+       "end": 1664
+      },
+      {
+       "name": "cmd/atelet/main.go",
+       "start": 1695,
+       "end": 1710
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "func validateRunRequest(req *ateletpb.RunRequest) error {",
+       "    var errs field.ErrorList",
+       "    errs = append(errs, resources.ValidateResourceName(req.GetAtespace(), field.NewPath(\"atespace\"))...)",
+       "    errs = append(errs, resources.ValidateResourceName(req.GetActorName(), field.NewPath(\"actor_name\"))...)",
+       "    errs = append(errs, resources.ValidateResourceName(req.GetActorUid(), field.NewPath(\"actor_uid\"))...)",
+       "    if len(errs) > 0 {",
+       "        return errs.ToAggregate()",
+       "    }",
+       "    // TODO: Migrate all validations below to the validation framework.",
+       "    if err := resources.ValidateAteomUID(req.GetTargetAteomUid()); err != nil {"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 52,
+     "tokens": 309,
+     "first": {
+      "name": "cmd/ateom-gvisor/main.go",
+      "start": 1088,
+      "end": 1139
+     },
+     "others": [
+      {
+       "name": "cmd/ateom-microvm/main.go",
+       "start": 525,
+       "end": 577
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 12,
+     "tokens": 95,
+     "first": {
+      "name": "tools/apitool/internal/lint/create.go",
+      "start": 34,
+      "end": 45
+     },
+     "others": [
+      {
+       "name": "tools/apitool/internal/lint/delete.go",
+       "start": 35,
+       "end": 46
+      },
+      {
+       "name": "tools/apitool/internal/lint/get.go",
+       "start": 32,
+       "end": 43
+      },
+      {
+       "name": "tools/apitool/internal/lint/update.go",
+       "start": 35,
+       "end": 46
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 32,
+     "tokens": 273,
+     "first": {
+      "name": "internal/benchmarking/boomer/glutton/durdir.go",
+      "start": 440,
+      "end": 471
+     },
+     "others": [
+      {
+       "name": "internal/benchmarking/boomer/sweperf/sweperf.go",
+       "start": 636,
+       "end": 667
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 54,
+     "tokens": 268,
+     "first": {
+      "name": "cmd/podcertcontroller/internal/podidentitysigner/podidentitysigner.go",
+      "start": 42,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "cmd/podcertcontroller/internal/servicednssigner/servicednssigner.go",
+       "start": 39,
+       "end": 92
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 11,
+     "tokens": 87,
+     "first": {
+      "name": "cmd/kubectl-ate/internal/cmd/actor.go",
+      "start": 184,
+      "end": 194
+     },
+     "others": [
+      {
+       "name": "cmd/kubectl-ate/internal/cmd/actor.go",
+       "start": 208,
+       "end": 218
+      },
+      {
+       "name": "cmd/kubectl-ate/internal/cmd/actor.go",
+       "start": 232,
+       "end": 242
+      },
+      {
+       "name": "cmd/kubectl-ate/internal/cmd/revert_actor.go",
+       "start": 35,
+       "end": 45
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 40,
+     "tokens": 260,
+     "first": {
+      "name": "cmd/podcertcontroller/internal/podidentitysigner/podidentitysigner.go",
+      "start": 162,
+      "end": 201
+     },
+     "others": [
+      {
+       "name": "cmd/podcertcontroller/internal/servicednssigner/servicednssigner.go",
+       "start": 179,
+       "end": 218
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 32,
+     "tokens": 258,
+     "first": {
+      "name": "internal/benchmarking/boomer/glutton/durdir.go",
+      "start": 441,
+      "end": 472
+     },
+     "others": [
+      {
+       "name": "internal/benchmarking/boomer/sweperf/sweperf.go",
+       "start": 637,
+       "end": 668
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 43,
+    "minified": 0,
+    "sample": [
+     "cmd/ateapi/internal/controlapi/zz_generated.validation.go",
+     "internal/proto/ateletpb/atelet_grpc.pb.go",
+     "internal/proto/ateletpb/atelet.pb.go",
+     "internal/proto/ateompb/ateom_grpc.pb.go",
+     "internal/proto/ateompb/ateom.pb.go",
+     "internal/proto/glutton/glutton_grpc.pb.go",
+     "internal/proto/glutton/glutton.pb.go",
+     "internal/proto/grpcechopb/grpcecho_grpc.pb.go",
+     "internal/proto/grpcechopb/grpcecho.pb.go",
+     "pkg/api/v1alpha1/zz_generated.deepcopy.go",
+     "pkg/client/clientset/versioned/clientset.go",
+     "pkg/client/clientset/versioned/fake/clientset_generated.go",
+     "pkg/client/clientset/versioned/fake/doc.go",
+     "pkg/client/clientset/versioned/fake/register.go",
+     "pkg/client/clientset/versioned/scheme/doc.go",
+     "pkg/client/clientset/versioned/scheme/register.go",
+     "pkg/client/clientset/versioned/typed/api/v1alpha1/api_client.go",
+     "pkg/client/clientset/versioned/typed/api/v1alpha1/csidriverconfig.go",
+     "pkg/client/clientset/versioned/typed/api/v1alpha1/doc.go",
+     "pkg/client/clientset/versioned/typed/api/v1alpha1/fake/doc.go"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T06:20:09.436Z",
+  "jscpdVersion": "5.4.0"
  }
 }

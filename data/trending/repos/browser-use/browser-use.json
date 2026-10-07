@@ -9,10 +9,12 @@
    "starsToday": 228,
    "headSha": "2b1f9d377999a59fe7627c1a5aa88c12aa42e11f",
    "sources": 537,
-   "lines": 138952,
-   "clones": 470,
-   "duplicatedLines": 7265,
-   "percentage": 5.23,
+   "lines": 130224,
+   "clones": 515,
+   "duplicatedLines": 7887,
+   "percentage": 6.06,
+   "codePercentage": 3.23,
+   "codeSources": 158,
    "healthScore": null,
    "healthGrade": null
   }
@@ -28,81 +30,65 @@
   "starsToday": 228,
   "defaultBranch": "main",
   "headSha": "2b1f9d377999a59fe7627c1a5aa88c12aa42e11f",
-  "durationMs": 827,
+  "durationMs": 503,
   "total": {
    "sources": 537,
-   "lines": 138952,
-   "tokens": 695719,
-   "clones": 470,
-   "duplicatedLines": 7265,
-   "duplicatedTokens": 42595,
-   "percentage": 5.23,
-   "percentageTokens": 6.12
+   "lines": 130224,
+   "tokens": 695554,
+   "clones": 515,
+   "duplicatedLines": 7887,
+   "duplicatedTokens": 44536,
+   "percentage": 6.06,
+   "percentageTokens": 6.4
   },
   "formats": [
    {
     "format": "python",
     "sources": 408,
-    "lines": 115936,
-    "clones": 398,
-    "duplicatedLines": 5220,
-    "percentage": 4.5
+    "lines": 111722,
+    "clones": 438,
+    "duplicatedLines": 5896,
+    "percentage": 5.28
    },
    {
     "format": "yaml",
     "sources": 23,
-    "lines": 4320,
-    "clones": 41,
-    "duplicatedLines": 1180,
-    "percentage": 27.31
+    "lines": 4017,
+    "clones": 43,
+    "duplicatedLines": 1212,
+    "percentage": 30.17
    },
    {
     "format": "markdown",
     "sources": 59,
     "lines": 12169,
-    "clones": 27,
-    "duplicatedLines": 650,
-    "percentage": 5.34
+    "clones": 30,
+    "duplicatedLines": 686,
+    "percentage": 5.64
    },
    {
     "format": "markup",
     "sources": 3,
     "lines": 268,
     "clones": 2,
-    "duplicatedLines": 53,
-    "percentage": 19.78
+    "duplicatedLines": 55,
+    "percentage": 20.52
    },
    {
     "format": "bash",
     "sources": 31,
-    "lines": 4209,
+    "lines": 1379,
     "clones": 1,
-    "duplicatedLines": 134,
-    "percentage": 3.18
+    "duplicatedLines": 17,
+    "percentage": 1.23
    },
    {
     "format": "json",
     "sources": 3,
-    "lines": 443,
+    "lines": 97,
     "clones": 1,
-    "duplicatedLines": 28,
-    "percentage": 6.32
-   },
-   {
-    "format": "text",
-    "sources": 3,
-    "lines": 606,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "typescript",
-    "sources": 4,
-    "lines": 490,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
+    "duplicatedLines": 21,
+    "percentage": 21.65
    },
    {
     "format": "toml",
@@ -115,7 +101,23 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "typescript",
+    "sources": 4,
+    "lines": 115,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 3,
+    "lines": 29,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -124,154 +126,649 @@
   "topClones": [
    {
     "format": "markdown",
-    "lines": 87,
-    "tokens": 2026,
-    "firstFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt.md:markdown",
-     "start": 63,
-     "end": 149
-    },
-    "secondFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
-     "start": 56,
-     "end": 143
-    }
-   },
-   {
-    "format": "markdown",
     "lines": 208,
     "tokens": 1987,
-    "firstFile": {
+    "first": {
      "name": "browser_use/skills/browser-use/SKILL.md:markdown",
      "start": 24,
      "end": 231
     },
-    "secondFile": {
-     "name": "skills/browser-use/SKILL.md:markdown",
-     "start": 24,
-     "end": 231
-    }
+    "others": [
+     {
+      "name": "skills/browser-use/SKILL.md:markdown",
+      "start": 24,
+      "end": 231
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Browser Use",
+      "",
+      "Direct browser control via CDP. For task-specific edits, use `agent-workspace/agent_helpers.py`. For setup, install, or connection problems, read https://githu…",
+      "",
+      "## When Not to Use",
+      "",
+      "A basic fetch of public information needs no browser. If a plain HTTP request can read it — a public page, an API, docs — use `curl` or your fetch tool, and le…",
+      "",
+      "Domain skills are off by default. Set `BH_DOMAIN_SKILLS=1` to enable them; see the bottom section.",
+      ""
+     ],
+     "total": 208
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 49,
+    "tokens": 1172,
+    "first": {
+     "name": "browser_use/agent/system_prompts/system_prompt.md:markdown",
+     "start": 85,
+     "end": 133
+    },
+    "others": [
+     {
+      "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
+      "start": 75,
+      "end": 123
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "- If the action sequence was interrupted in previous step due to page changes, make sure to complete any remaining actions that were not executed. For example,…",
+      "- If the <user_request> includes specific page information such as product type, rating, price, location, etc., ALWAYS look for filter/sort options FIRST befor…",
+      "- The <user_request> is the ultimate goal. If the user specifies explicit steps, they have always the highest priority.",
+      "- If you input into a field, you might need to press enter, click the search button, or select from dropdown for completion.",
+      "- For autocomplete/combobox fields (e.g. search boxes with suggestions, fields with role=\"combobox\"): type your search text, then WAIT for the suggestions drop…",
+      "- Don't login into a page if you don't have to. Don't login if you don't have the credentials.",
+      "- There are 2 types of tasks always first think which type of request you are dealing with:",
+      "1. Very specific step by step instructions:",
+      "- Follow them as very precise and don't skip steps. Try to complete everything as requested.",
+      "2. Open ended tasks. Plan yourself, be creative in achieving them."
+     ],
+     "total": 49
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 52,
+    "first": {
+     "name": "examples/browser/real_browser.py",
+     "start": 5,
+     "end": 15
+    },
+    "others": [
+     {
+      "name": "examples/custom-functions/notification.py",
+      "start": 1,
+      "end": 11
+     },
+     {
+      "name": "examples/custom-functions/save_to_file_hugging_face.py",
+      "start": 1,
+      "end": 11
+     },
+     {
+      "name": "examples/features/blocked_domains.py",
+      "start": 1,
+      "end": 11
+     },
+     {
+      "name": "examples/features/download_file.py",
+      "start": 1,
+      "end": 12
+     },
+     {
+      "name": "examples/features/fallback_model.py",
+      "start": 21,
+      "end": 31
+     },
+     {
+      "name": "examples/features/initial_actions.py",
+      "start": 1,
+      "end": 11
+     },
+     {
+      "name": "examples/features/multi_tab.py",
+      "start": 7,
+      "end": 17
+     },
+     {
+      "name": "examples/features/restrict_urls.py",
+      "start": 1,
+      "end": 11
+     }
+    ],
+    "copies": 15,
+    "excerpt": {
+     "lines": [
+      "import asyncio",
+      "import os",
+      "import sys",
+      "",
+      "sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))",
+      "",
+      "from dotenv import load_dotenv",
+      "",
+      "load_dotenv()",
+      ""
+     ],
+     "total": 11
+    },
+    "kind": "docs"
    },
    {
     "format": "markdown",
     "lines": 53,
     "tokens": 606,
-    "firstFile": {
+    "first": {
      "name": "browser_use/agent/system_prompts/system_prompt.md:markdown",
      "start": 182,
      "end": 234
     },
-    "secondFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
-     "start": 160,
-     "end": 211
-    }
+    "others": [
+     {
+      "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
+      "start": 160,
+      "end": 211
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 109,
     "tokens": 577,
-    "firstFile": {
+    "first": {
      "name": "browser_use/actor/element.py",
      "start": 832,
      "end": 940
     },
-    "secondFile": {
-     "name": "browser_use/browser/watchdogs/default_action_watchdog.py",
-     "start": 1216,
-     "end": 1324
-    }
+    "others": [
+     {
+      "name": "browser_use/browser/watchdogs/default_action_watchdog.py",
+      "start": 1216,
+      "end": 1324
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "python",
     "lines": 58,
     "tokens": 542,
-    "firstFile": {
+    "first": {
      "name": "tests/ci/interactions/test_dropdown_aria_menus.py",
      "start": 56,
      "end": 113
     },
-    "secondFile": {
-     "name": "tests/ci/interactions/test_dropdown_native.py",
-     "start": 91,
-     "end": 149
-    }
+    "others": [
+     {
+      "name": "tests/ci/interactions/test_dropdown_native.py",
+      "start": 91,
+      "end": 149
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 117,
+    "first": {
+     "name": "browser_use/llm/anthropic/chat.py",
+     "start": 374,
+     "end": 384
+    },
+    "others": [
+     {
+      "name": "browser_use/llm/aws/chat_bedrock.py",
+      "start": 147,
+      "end": 157
+     },
+     {
+      "name": "browser_use/llm/azure/chat.py",
+      "start": 260,
+      "end": 270
+     },
+     {
+      "name": "browser_use/llm/base.py",
+      "start": 49,
+      "end": 59
+     },
+     {
+      "name": "browser_use/llm/ollama/chat.py",
+      "start": 100,
+      "end": 110
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 44,
     "tokens": 453,
-    "firstFile": {
+    "first": {
      "name": "browser_use/agent/system_prompts/system_prompt.md:markdown",
      "start": 1,
      "end": 44
     },
-    "secondFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
-     "start": 1,
-     "end": 44
-    }
+    "others": [
+     {
+      "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
+      "start": 1,
+      "end": 44
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 20,
+    "tokens": 400,
+    "first": {
+     "name": "browser_use/agent/system_prompts/system_prompt_anthropic_flash.md:markdown",
+     "start": 83,
+     "end": 102
+    },
+    "others": [
+     {
+      "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
+      "start": 121,
+      "end": 140
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
-    "lines": 48,
-    "tokens": 365,
-    "firstFile": {
-     "name": "browser_use/agent/service.py",
-     "start": 167,
-     "end": 214
+    "lines": 9,
+    "tokens": 50,
+    "first": {
+     "name": "examples/features/blocked_domains.py",
+     "start": 3,
+     "end": 11
     },
-    "secondFile": {
-     "name": "browser_use/beta/service.py",
-     "start": 4256,
-     "end": 4303
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 35,
-    "tokens": 364,
-    "firstFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt.md:markdown",
-     "start": 236,
-     "end": 270
-    },
-    "secondFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt_no_thinking.md:markdown",
-     "start": 212,
-     "end": 246
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 110,
-    "tokens": 362,
-    "firstFile": {
-     "name": "CLOUD.md:yaml",
-     "start": 1563,
-     "end": 1672
-    },
-    "secondFile": {
-     "name": "CLOUD.md:yaml",
-     "start": 1681,
-     "end": 1789
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 17,
-    "tokens": 351,
-    "firstFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt.md:markdown",
-     "start": 139,
-     "end": 155
-    },
-    "secondFile": {
-     "name": "browser_use/agent/system_prompts/system_prompt_anthropic_flash.md:markdown",
-     "start": 86,
-     "end": 102
-    }
+    "others": [
+     {
+      "name": "examples/features/custom_system_prompt.py",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "examples/features/initial_actions.py",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "examples/features/multi_tab.py",
+      "start": 9,
+      "end": 17
+     },
+     {
+      "name": "examples/features/sensitive_data.py",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "examples/features/small_model_for_extraction.py",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "examples/models/novita.py",
+      "start": 9,
+      "end": 18
+     },
+     {
+      "name": "examples/use-cases/captcha.py",
+      "start": 13,
+      "end": 21
+     },
+     {
+      "name": "examples/use-cases/shopping.py",
+      "start": 3,
+      "end": 11
+     }
+    ],
+    "copies": 9,
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 158,
+   "lines": 66500,
+   "tokens": 344623,
+   "clones": 156,
+   "duplicatedLines": 2149,
+   "duplicatedTokens": 13103,
+   "percentage": 3.23,
+   "percentageTokens": 3.8,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 145,
+     "lines": 65321,
+     "clones": 156,
+     "duplicatedLines": 2149,
+     "percentage": 3.29
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 1005,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 109,
+     "tokens": 577,
+     "first": {
+      "name": "browser_use/actor/element.py",
+      "start": 832,
+      "end": 940
+     },
+     "others": [
+      {
+       "name": "browser_use/browser/watchdogs/default_action_watchdog.py",
+       "start": 1216,
+       "end": 1324
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def _get_char_modifiers_and_vk(self, char: str) -> tuple[int, int, str]:",
+       "    \"\"\"Get modifiers, virtual key code, and base key for a character.",
+       "",
+       "    Returns:",
+       "        (modifiers, windowsVirtualKeyCode, base_key)",
+       "    \"\"\"",
+       "    # Characters that require Shift modifier",
+       "    shift_chars = {",
+       "        '!': ('1', 49),",
+       "        '@': ('2', 50),"
+      ],
+      "total": 109
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 117,
+     "first": {
+      "name": "browser_use/llm/anthropic/chat.py",
+      "start": 374,
+      "end": 384
+     },
+     "others": [
+      {
+       "name": "browser_use/llm/aws/chat_bedrock.py",
+       "start": 147,
+       "end": 157
+      },
+      {
+       "name": "browser_use/llm/azure/chat.py",
+       "start": 260,
+       "end": 270
+      },
+      {
+       "name": "browser_use/llm/base.py",
+       "start": 49,
+       "end": 59
+      },
+      {
+       "name": "browser_use/llm/ollama/chat.py",
+       "start": 100,
+       "end": 110
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "@overload",
+       "async def ainvoke(",
+       "    self, messages: list[BaseMessage], output_format: None = None, **kwargs: Any",
+       ") -> ChatInvokeCompletion[str]: ...",
+       "",
+       "@overload",
+       "async def ainvoke(self, messages: list[BaseMessage], output_format: type[T], **kwargs: Any) -> ChatInvokeCompletion[T]: ...",
+       "",
+       "async def ainvoke(",
+       "    self, messages: list[BaseMessage], output_format: type[T] | None = None, **kwargs: Any"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 48,
+     "tokens": 365,
+     "first": {
+      "name": "browser_use/agent/service.py",
+      "start": 167,
+      "end": 214
+     },
+     "others": [
+      {
+       "name": "browser_use/beta/service.py",
+       "start": 4256,
+       "end": 4303
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "output_model_schema: type[AgentStructuredOutput] | None = None,",
+       "extraction_schema: dict | None = None,",
+       "use_vision: bool | Literal['auto'] = True,",
+       "save_conversation_path: str | Path | None = None,",
+       "save_conversation_path_encoding: str | None = 'utf-8',",
+       "max_failures: int = 5,",
+       "override_system_message: str | None = None,",
+       "extend_system_message: str | None = None,",
+       "generate_gif: bool | str = False,",
+       "available_file_paths: list[str] | None = None,"
+      ],
+      "total": 48
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 122,
+     "first": {
+      "name": "browser_use/llm/aws/chat_bedrock.py",
+      "start": 145,
+      "end": 159
+     },
+     "others": [
+      {
+       "name": "browser_use/llm/oci_raw/chat.py",
+       "start": 322,
+       "end": 336
+      },
+      {
+       "name": "browser_use/llm/vercel/chat.py",
+       "start": 483,
+       "end": 497
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 55,
+     "first": {
+      "name": "browser_use/llm/azure/chat.py",
+      "start": 266,
+      "end": 272
+     },
+     "others": [
+      {
+       "name": "browser_use/llm/google/chat.py",
+       "start": 244,
+       "end": 250
+      },
+      {
+       "name": "browser_use/llm/openai/chat.py",
+       "start": 150,
+       "end": 156
+      },
+      {
+       "name": "browser_use/llm/openrouter/chat.py",
+       "start": 138,
+       "end": 144
+      },
+      {
+       "name": "browser_use/llm/vercel/chat.py",
+       "start": 491,
+       "end": 497
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 39,
+     "tokens": 216,
+     "first": {
+      "name": "browser_use/llm/google/chat.py",
+      "start": 580,
+      "end": 618
+     },
+     "others": [
+      {
+       "name": "browser_use/llm/vercel/chat.py",
+       "start": 406,
+       "end": 444
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 30,
+     "tokens": 199,
+     "first": {
+      "name": "browser_use/llm/openrouter/chat.py",
+      "start": 115,
+      "end": 144
+     },
+     "others": [
+      {
+       "name": "browser_use/llm/orcarouter/chat.py",
+       "start": 105,
+       "end": 134
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 38,
+     "tokens": 183,
+     "first": {
+      "name": "browser_use/actor/element.py",
+      "start": 212,
+      "end": 249
+     },
+     "others": [
+      {
+       "name": "browser_use/browser/watchdogs/default_action_watchdog.py",
+       "start": 827,
+       "end": 864
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 47,
+     "tokens": 178,
+     "first": {
+      "name": "browser_use/sync/auth.py",
+      "start": 173,
+      "end": 219
+     },
+     "others": [
+      {
+       "name": "browser_use/sync/auth.py",
+       "start": 225,
+       "end": 271
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 53,
+     "first": {
+      "name": "browser_use/llm/aws/chat_bedrock.py",
+      "start": 153,
+      "end": 159
+     },
+     "others": [
+      {
+       "name": "browser_use/llm/azure/chat.py",
+       "start": 266,
+       "end": 272
+      },
+      {
+       "name": "browser_use/llm/google/chat.py",
+       "start": 244,
+       "end": 250
+      },
+      {
+       "name": "browser_use/llm/openai/chat.py",
+       "start": 150,
+       "end": 156
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:52:43.854Z",
+  "jscpdVersion": "5.4.0"
  }
 }

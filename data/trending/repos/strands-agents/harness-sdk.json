@@ -9,10 +9,12 @@
    "starsToday": 115,
    "headSha": "43b15b723e7829c23ffc9d47897d637eac2f88e7",
    "sources": 2448,
-   "lines": 546538,
+   "lines": 546494,
    "clones": 3117,
    "duplicatedLines": 38980,
    "percentage": 7.13,
+   "codePercentage": 1.59,
+   "codeSources": 1000,
    "healthScore": 54.5,
    "healthGrade": "D"
   },
@@ -23,10 +25,12 @@
    "starsToday": 455,
    "headSha": "7ae759d3ad43916d373cf0f3251ac7f57e95339c",
    "sources": 2448,
-   "lines": 546445,
+   "lines": 546401,
    "clones": 3117,
    "duplicatedLines": 38986,
-   "percentage": 7.13,
+   "percentage": 7.14,
+   "codePercentage": 1.59,
+   "codeSources": 1000,
    "healthScore": 53.9,
    "healthGrade": "D"
   }
@@ -42,15 +46,15 @@
   "starsToday": 455,
   "defaultBranch": "main",
   "headSha": "7ae759d3ad43916d373cf0f3251ac7f57e95339c",
-  "durationMs": 1787,
+  "durationMs": 1392,
   "total": {
    "sources": 2448,
-   "lines": 546445,
-   "tokens": 3255345,
+   "lines": 546401,
+   "tokens": 3255180,
    "clones": 3117,
    "duplicatedLines": 38986,
    "duplicatedTokens": 230704,
-   "percentage": 7.13,
+   "percentage": 7.14,
    "percentageTokens": 7.09
   },
   "formats": [
@@ -137,154 +141,384 @@
   ],
   "topClones": [
    {
+    "format": "json",
+    "lines": 88,
+    "tokens": 321,
+    "first": {
+     "name": "site/docs/examples/cdk/deploy_to_apprunner/cdk.json",
+     "start": 1,
+     "end": 88
+    },
+    "others": [
+     {
+      "name": "site/docs/examples/cdk/deploy_to_ec2/cdk.json",
+      "start": 1,
+      "end": 88
+     },
+     {
+      "name": "site/docs/examples/cdk/deploy_to_fargate/cdk.json",
+      "start": 1,
+      "end": 88
+     },
+     {
+      "name": "site/docs/examples/cdk/deploy_to_lambda/cdk.json",
+      "start": 1,
+      "end": 88
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"app\": \"npx tsx bin/cdk-app.ts\",",
+      "  \"watch\": {",
+      "    \"include\": [\"**\"],",
+      "    \"exclude\": [",
+      "      \"README.md\",",
+      "      \"cdk*.json\",",
+      "      \"**/*.d.ts\",",
+      "      \"**/*.js\",",
+      "      \"tsconfig.json\","
+     ],
+     "total": 88
+    },
+    "kind": "docs"
+   },
+   {
     "format": "typescript",
     "lines": 170,
     "tokens": 739,
-    "firstFile": {
+    "first": {
      "name": "strands-ts/src/models/__tests__/bedrock.test.ts",
      "start": 3295,
      "end": 3464
     },
-    "secondFile": {
-     "name": "strands-ts/src/models/__tests__/bedrock.test.ts",
-     "start": 3731,
-     "end": 3900
-    }
+    "others": [
+     {
+      "name": "strands-ts/src/models/__tests__/bedrock.test.ts",
+      "start": 3731,
+      "end": 3900
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    })",
+      "  })",
+      "})",
+      "",
+      "describe('media blocks in tool results', () => {",
+      "  const mockConverseStreamCommand = vi.mocked(ConverseStreamCommand)",
+      "",
+      "  it('formats image block in tool result', async () => {",
+      "    const provider = new BedrockModel()",
+      "    const imageBytes = new Uint8Array([1, 2, 3])"
+     ],
+     "total": 170
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 178,
+    "first": {
+     "name": "strands-ts/src/context-manager/strategies/__tests__/offload-strategy.test.ts",
+     "start": 346,
+     "end": 357
+    },
+    "others": [
+     {
+      "name": "strands-ts/src/context-manager/strategies/__tests__/offload-strategy.test.ts",
+      "start": 367,
+      "end": 378
+     },
+     {
+      "name": "strands-ts/src/context-manager/strategies/__tests__/offload-strategy.test.ts",
+      "start": 388,
+      "end": 399
+     },
+     {
+      "name": "strands-ts/src/context-manager/strategies/__tests__/offload-strategy.test.ts",
+      "start": 558,
+      "end": 569
+     },
+     {
+      "name": "strands-ts/src/context-manager/strategies/__tests__/offload-strategy.test.ts",
+      "start": 582,
+      "end": 593
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "it('drop(\"assistantText\") repairs alternation after removing assistant messages', async () => {",
+      "  const messages = [",
+      "    new Message({ role: 'user', content: [new TextBlock('q1')] }),",
+      "    new Message({ role: 'assistant', content: [new TextBlock('a1')] }),",
+      "    new Message({ role: 'user', content: [new TextBlock('q2')] }),",
+      "    new Message({ role: 'assistant', content: [new TextBlock('a2')] }),",
+      "    new Message({ role: 'user', content: [new TextBlock('q3')] }),",
+      "    new Message({ role: 'assistant', content: [new TextBlock('a3')] }),",
+      "    new Message({ role: 'user', content: [new TextBlock('q4')] }),",
+      "    new Message({ role: 'assistant', content: [new TextBlock('a4')] }),"
+     ],
+     "total": 12
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 6,
+    "tokens": 87,
+    "first": {
+     "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+     "start": 1437,
+     "end": 1442
+    },
+    "others": [
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1505,
+      "end": 1510
+     },
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1542,
+      "end": 1547
+     },
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1580,
+      "end": 1585
+     },
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1615,
+      "end": 1624
+     },
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1658,
+      "end": 1663
+     },
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1695,
+      "end": 1704
+     },
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1859,
+      "end": 1868
+     },
+     {
+      "name": "strands-ts/src/models/openai/__tests__/chat.test.ts",
+      "start": 1888,
+      "end": 1897
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 27,
+    "tokens": 126,
+    "first": {
+     "name": "site/docs/examples/evals-sdk/coherence_evaluator.py",
+     "start": 7,
+     "end": 33
+    },
+    "others": [
+     {
+      "name": "site/docs/examples/evals-sdk/correctness_evaluator.py",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "site/docs/examples/evals-sdk/faithfulness_evaluator.py",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "site/docs/examples/evals-sdk/goal_success_rate_evaluator.py",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "site/docs/examples/evals-sdk/harmfulness_evaluator.py",
+      "start": 7,
+      "end": 32
+     },
+     {
+      "name": "site/docs/examples/evals-sdk/helpfulness_evaluator.py",
+      "start": 7,
+      "end": 32
+     }
+    ],
+    "copies": 6,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 24,
+    "tokens": 87,
+    "first": {
+     "name": "strands-py/tests/strands/models/test_anthropic.py",
+     "start": 1182,
+     "end": 1205
+    },
+    "others": [
+     {
+      "name": "strands-py/tests/strands/models/test_gemini.py",
+      "start": 1603,
+      "end": 1626
+     },
+     {
+      "name": "strands-py/tests/strands/models/test_llamaapi.py",
+      "start": 527,
+      "end": 550
+     },
+     {
+      "name": "strands-py/tests/strands/models/test_llamacpp.py",
+      "start": 917,
+      "end": 940
+     },
+     {
+      "name": "strands-py/tests/strands/models/test_mistral.py",
+      "start": 957,
+      "end": 980
+     },
+     {
+      "name": "strands-py/tests/strands/models/test_ollama.py",
+      "start": 661,
+      "end": 684
+     },
+     {
+      "name": "strands-py/tests/strands/models/test_openai.py",
+      "start": 2001,
+      "end": 2024
+     },
+     {
+      "name": "strands-py/tests/strands/models/test_writer.py",
+      "start": 548,
+      "end": 571
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 114,
     "tokens": 597,
-    "firstFile": {
+    "first": {
      "name": "site/docs/examples/cdk/deploy_to_fargate/docker/app/app.py",
      "start": 1,
      "end": 114
     },
-    "secondFile": {
-     "name": "site/docs/examples/deploy_to_eks/docker/app/app.py",
-     "start": 1,
-     "end": 114
-    }
+    "others": [
+     {
+      "name": "site/docs/examples/deploy_to_eks/docker/app/app.py",
+      "start": 1,
+      "end": 114
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 11,
+    "tokens": 65,
+    "first": {
+     "name": "strands-ts/test/integ/interventions.test.ts",
+     "start": 260,
+     "end": 270
+    },
+    "others": [
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 280,
+      "end": 290
+     },
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 715,
+      "end": 725
+     },
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 732,
+      "end": 742
+     },
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 977,
+      "end": 987
+     },
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 994,
+      "end": 1004
+     },
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 1011,
+      "end": 1021
+     },
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 1028,
+      "end": 1038
+     },
+     {
+      "name": "strands-ts/test/integ/interventions.test.ts",
+      "start": 1045,
+      "end": 1055
+     }
+    ],
+    "copies": 10,
+    "kind": "tests"
    },
    {
     "format": "python",
     "lines": 111,
     "tokens": 583,
-    "firstFile": {
+    "first": {
      "name": "site/docs/examples/cdk/deploy_to_ec2/app/app.py",
      "start": 2,
      "end": 112
     },
-    "secondFile": {
-     "name": "site/docs/examples/cdk/deploy_to_fargate/docker/app/app.py",
-     "start": 4,
-     "end": 114
-    }
+    "others": [
+     {
+      "name": "site/docs/examples/cdk/deploy_to_fargate/docker/app/app.py",
+      "start": 4,
+      "end": 114
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "python",
     "lines": 108,
     "tokens": 571,
-    "firstFile": {
+    "first": {
      "name": "site/docs/examples/cdk/deploy_to_apprunner/docker/app/app.py",
      "start": 1,
      "end": 108
     },
-    "secondFile": {
-     "name": "site/docs/examples/cdk/deploy_to_ec2/app/app.py",
-     "start": 5,
-     "end": 112
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 108,
-    "tokens": 521,
-    "firstFile": {
-     "name": "strands-ts/src/models/__tests__/bedrock.test.ts",
-     "start": 3514,
-     "end": 3621
-    },
-    "secondFile": {
-     "name": "strands-ts/src/models/__tests__/bedrock.test.ts",
-     "start": 3898,
-     "end": 4005
-    }
-   },
-   {
-    "format": "python",
-    "lines": 37,
-    "tokens": 462,
-    "firstFile": {
-     "name": "strands-py/src/strands/agent/agent.py",
-     "start": 921,
-     "end": 957
-    },
-    "secondFile": {
-     "name": "strands-py/src/strands/agent/agent.py",
-     "start": 1264,
-     "end": 1300
-    }
-   },
-   {
-    "format": "python",
-    "lines": 70,
-    "tokens": 460,
-    "firstFile": {
-     "name": "strands-py/tests/strands/agent/test_agent_hooks.py",
-     "start": 167,
-     "end": 236
-    },
-    "secondFile": {
-     "name": "strands-py/tests/strands/agent/test_agent_hooks.py",
-     "start": 254,
-     "end": 323
-    }
-   },
-   {
-    "format": "python",
-    "lines": 36,
-    "tokens": 439,
-    "firstFile": {
-     "name": "strands-py/src/strands/agent/agent.py",
-     "start": 831,
-     "end": 866
-    },
-    "secondFile": {
-     "name": "strands-py/src/strands/agent/agent.py",
-     "start": 925,
-     "end": 960
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 76,
-    "tokens": 384,
-    "firstFile": {
-     "name": ".github/workflows/release-mcp.yml",
-     "start": 367,
-     "end": 442
-    },
-    "secondFile": {
-     "name": ".github/workflows/release-python.yml",
-     "start": 412,
-     "end": 487
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 79,
-    "tokens": 384,
-    "firstFile": {
-     "name": ".github/workflows/release-python.yml",
-     "start": 398,
-     "end": 476
-    },
-    "secondFile": {
-     "name": ".github/workflows/release-typescript.yml",
-     "start": 382,
-     "end": 460
-    }
+    "others": [
+     {
+      "name": "site/docs/examples/cdk/deploy_to_ec2/app/app.py",
+      "start": 5,
+      "end": 112
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -502,6 +736,369 @@
      "lines": 471
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 1000,
+   "lines": 202823,
+   "tokens": 1118655,
+   "clones": 260,
+   "duplicatedLines": 3224,
+   "duplicatedTokens": 20027,
+   "percentage": 1.59,
+   "percentageTokens": 1.79,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 337,
+     "lines": 78508,
+     "clones": 182,
+     "duplicatedLines": 2337,
+     "percentage": 2.98
+    },
+    {
+     "format": "typescript",
+     "sources": 432,
+     "lines": 88845,
+     "clones": 52,
+     "duplicatedLines": 649,
+     "percentage": 0.73
+    },
+    {
+     "format": "css",
+     "sources": 45,
+     "lines": 5155,
+     "clones": 15,
+     "duplicatedLines": 132,
+     "percentage": 2.56
+    },
+    {
+     "format": "html",
+     "sources": 48,
+     "lines": 2117,
+     "clones": 7,
+     "duplicatedLines": 69,
+     "percentage": 3.26
+    },
+    {
+     "format": "tsx",
+     "sources": 33,
+     "lines": 10342,
+     "clones": 3,
+     "duplicatedLines": 26,
+     "percentage": 0.25
+    },
+    {
+     "format": "javascript",
+     "sources": 40,
+     "lines": 4130,
+     "clones": 1,
+     "duplicatedLines": 11,
+     "percentage": 0.27
+    },
+    {
+     "format": "astro",
+     "sources": 50,
+     "lines": 12182,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 14,
+     "lines": 1370,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 37,
+     "tokens": 462,
+     "first": {
+      "name": "strands-py/src/strands/agent/agent.py",
+      "start": 921,
+      "end": 957
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/agent/agent.py",
+       "start": 1264,
+       "end": 1300
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "This method implements the conversational interface with multiple input patterns:",
+       "- String input: Simple text input",
+       "- ContentBlock list: Multi-modal content blocks",
+       "- Message list: Complete messages with roles",
+       "- No input: Use existing conversation history",
+       "",
+       "Args:",
+       "    prompt: User input in various formats:",
+       "        - str: Simple text input",
+       "        - list[ContentBlock]: Multi-modal content blocks"
+      ],
+      "total": 37
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 36,
+     "tokens": 439,
+     "first": {
+      "name": "strands-py/src/strands/agent/agent.py",
+      "start": 831,
+      "end": 866
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/agent/agent.py",
+       "start": 925,
+       "end": 960
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "- No input: `agent()` - uses existing conversation history",
+       "",
+       "Args:",
+       "    prompt: User input in various formats:",
+       "        - str: Simple text input",
+       "        - list[ContentBlock]: Multi-modal content blocks",
+       "        - list[Message]: Complete messages with roles",
+       "        - None: Use existing conversation history",
+       "    invocation_state: Additional parameters to pass through the event loop.",
+       "    structured_output_model: Pydantic model type(s) for structured output (overrides agent default)."
+      ],
+      "total": 36
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 31,
+     "tokens": 351,
+     "first": {
+      "name": "strands-py/src/strands/tools/mcp/mcp_client.py",
+      "start": 1022,
+      "end": 1052
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/tools/mcp/mcp_client.py",
+       "start": 1087,
+       "end": 1117
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "This method automatically uses task-augmented execution when the client",
+       "opted in via ``tasks_config`` and the server advertises task support (on",
+       "the mcp 1.x line, the tool's ``taskSupport`` setting is also honored).",
+       "",
+       "Args:",
+       "    tool_use_id: Unique identifier for this tool use",
+       "    name: Name of the tool to call",
+       "    arguments: Optional arguments to pass to the tool",
+       "    read_timeout_seconds: Optional timeout for the tool call. On the mcp 2.x line, the timeout",
+       "        bounds each request round of a multi round-trip tool call rather than the call as a"
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 32,
+     "tokens": 250,
+     "first": {
+      "name": "strands-py/src/strands/agent/agent.py",
+      "start": 1149,
+      "end": 1180
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/experimental/bidi/agent/agent.py",
+       "start": 242,
+       "end": 273
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 227,
+     "first": {
+      "name": "strands-py/src/strands/models/llamacpp.py",
+      "start": 500,
+      "end": 541
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/models/openai.py",
+       "start": 557,
+       "end": 601
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 106,
+     "first": {
+      "name": "strands-py/src/strands/models/anthropic.py",
+      "start": 1021,
+      "end": 1033
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/models/llamaapi.py",
+       "start": 450,
+       "end": 462
+      },
+      {
+       "name": "strands-py/src/strands/models/model.py",
+       "start": 234,
+       "end": 246
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 51,
+     "first": {
+      "name": "strands-py/src/strands/models/llamaapi.py",
+      "start": 456,
+      "end": 464
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/models/model.py",
+       "start": 240,
+       "end": 248
+      },
+      {
+       "name": "strands-py/src/strands/models/ollama.py",
+       "start": 386,
+       "end": 394
+      },
+      {
+       "name": "strands-py/src/strands/models/openai.py",
+       "start": 846,
+       "end": 854
+      },
+      {
+       "name": "strands-py/src/strands/models/openai_responses.py",
+       "start": 514,
+       "end": 522
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 93,
+     "first": {
+      "name": "strands-py/src/strands/models/llamaapi.py",
+      "start": 366,
+      "end": 378
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/models/llamacpp.py",
+       "start": 623,
+       "end": 635
+      },
+      {
+       "name": "strands-py/src/strands/models/ollama.py",
+       "start": 321,
+       "end": 333
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 36,
+     "tokens": 180,
+     "first": {
+      "name": "strands-py/src/strands/models/openai.py",
+      "start": 550,
+      "end": 585
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/models/openai_responses.py",
+       "start": 849,
+       "end": 884
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 60,
+     "first": {
+      "name": "strands-py/src/strands/models/bedrock.py",
+      "start": 1343,
+      "end": 1348
+     },
+     "others": [
+      {
+       "name": "strands-py/src/strands/models/litellm.py",
+       "start": 339,
+       "end": 344
+      },
+      {
+       "name": "strands-py/src/strands/models/model.py",
+       "start": 276,
+       "end": 281
+      },
+      {
+       "name": "strands-py/src/strands/models/openai.py",
+       "start": 497,
+       "end": 502
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:24:18.340Z",
+  "jscpdVersion": "5.4.0"
  }
 }

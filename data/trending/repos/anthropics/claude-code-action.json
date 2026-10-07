@@ -9,10 +9,12 @@
    "starsToday": 31,
    "headSha": "756cc22e19660d20e8cc9496b4f242475a7f7790",
    "sources": 225,
-   "lines": 43288,
+   "lines": 43244,
    "clones": 202,
    "duplicatedLines": 3276,
-   "percentage": 7.57,
+   "percentage": 7.58,
+   "codePercentage": 3.51,
+   "codeSources": 79,
    "healthScore": 66.7,
    "healthGrade": "C"
   }
@@ -28,15 +30,15 @@
   "starsToday": 31,
   "defaultBranch": "main",
   "headSha": "756cc22e19660d20e8cc9496b4f242475a7f7790",
-  "durationMs": 961,
+  "durationMs": 68,
   "total": {
    "sources": 225,
-   "lines": 43288,
-   "tokens": 212844,
+   "lines": 43244,
+   "tokens": 212679,
    "clones": 202,
    "duplicatedLines": 3276,
    "duplicatedTokens": 15592,
-   "percentage": 7.57,
+   "percentage": 7.58,
    "percentageTokens": 7.33
   },
   "formats": [
@@ -67,10 +69,10 @@
    {
     "format": "bash",
     "sources": 16,
-    "lines": 1031,
+    "lines": 981,
     "clones": 1,
     "duplicatedLines": 46,
-    "percentage": 4.46
+    "percentage": 4.69
    },
    {
     "format": "markup",
@@ -99,7 +101,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -126,151 +128,301 @@
     "format": "markdown",
     "lines": 128,
     "tokens": 936,
-    "firstFile": {
+    "first": {
      "name": "CODE_OF_CONDUCT.md:markdown",
      "start": 1,
      "end": 128
     },
-    "secondFile": {
-     "name": "base-action/CODE_OF_CONDUCT.md:markdown",
-     "start": 1,
-     "end": 128
-    }
+    "others": [
+     {
+      "name": "base-action/CODE_OF_CONDUCT.md:markdown",
+      "start": 1,
+      "end": 128
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Contributor Covenant Code of Conduct",
+      "",
+      "## Our Pledge",
+      "",
+      "We as members, contributors, and leaders pledge to make participation in our",
+      "community a harassment-free experience for everyone, regardless of age, body",
+      "size, visible or invisible disability, ethnicity, sex characteristics, gender",
+      "identity and expression, level of experience, education, socio-economic status,",
+      "nationality, personal appearance, race, religion, or sexual identity",
+      "and orientation."
+     ],
+     "total": 128
+    },
+    "kind": "docs"
    },
    {
     "format": "typescript",
     "lines": 69,
     "tokens": 298,
-    "firstFile": {
+    "first": {
      "name": "src/mcp/github-file-ops-server.ts",
      "start": 307,
      "end": 375
     },
-    "secondFile": {
-     "name": "src/mcp/github-file-ops-server.ts",
-     "start": 468,
-     "end": 536
-    }
+    "others": [
+     {
+      "name": "src/mcp/github-file-ops-server.ts",
+      "start": 468,
+      "end": 536
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      ");",
+      "",
+      "// 4. Create a new tree",
+      "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+      "const treeResponse = await fetch(treeUrl, {",
+      "  method: \"POST\",",
+      "  headers: {",
+      "    Accept: \"application/vnd.github+json\",",
+      "    Authorization: `Bearer ${githubToken}`,",
+      "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+     ],
+     "total": 69
+    },
+    "excerptSecond": {
+     "lines": [
+      "}));",
+      "",
+      "// 4. Create a new tree with deletions",
+      "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+      "const treeResponse = await fetch(treeUrl, {",
+      "  method: \"POST\",",
+      "  headers: {",
+      "    Accept: \"application/vnd.github+json\",",
+      "    Authorization: `Bearer ${githubToken}`,",
+      "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+     ],
+     "total": 69
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 23,
+    "tokens": 121,
+    "first": {
+     "name": "test/data-fetcher.test.ts",
+     "start": 1498,
+     "end": 1520
+    },
+    "others": [
+     {
+      "name": "test/data-fetcher.test.ts",
+      "start": 1609,
+      "end": 1631
+     },
+     {
+      "name": "test/data-fetcher.test.ts",
+      "start": 1645,
+      "end": 1667
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "body: \"PR body\",",
+      "author: { login: \"author\" },",
+      "createdAt: \"2024-01-15T10:00:00Z\",",
+      "additions: 10,",
+      "deletions: 5,",
+      "state: \"OPEN\",",
+      "commits: { totalCount: 1, nodes: [] },",
+      "files: { nodes: [] },",
+      "comments: { nodes: [] },",
+      "reviews: { nodes: [] },"
+     ],
+     "total": 23
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "yaml",
+    "lines": 8,
+    "tokens": 52,
+    "first": {
+     "name": ".github/workflows/test-structured-output.yml",
+     "start": 23,
+     "end": 30
+    },
+    "others": [
+     {
+      "name": ".github/workflows/test-structured-output.yml",
+      "start": 86,
+      "end": 93
+     },
+     {
+      "name": ".github/workflows/test-structured-output.yml",
+      "start": 141,
+      "end": 148
+     },
+     {
+      "name": ".github/workflows/test-structured-output.yml",
+      "start": 204,
+      "end": 211
+     },
+     {
+      "name": ".github/workflows/test-structured-output.yml",
+      "start": 248,
+      "end": 255
+     }
+    ],
+    "copies": 5,
+    "kind": "data"
+   },
+   {
+    "format": "typescript",
+    "lines": 14,
+    "tokens": 68,
+    "first": {
+     "name": "test/image-downloader.test.ts",
+     "start": 225,
+     "end": 238
+    },
+    "others": [
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 269,
+      "end": 282
+     },
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 315,
+      "end": 328
+     },
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 506,
+      "end": 519
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 20,
+    "tokens": 94,
+    "first": {
+     "name": "test/modes/agent.test.ts",
+     "start": 70,
+     "end": 89
+    },
+    "others": [
+     {
+      "name": "test/modes/agent.test.ts",
+      "start": 135,
+      "end": 155
+     },
+     {
+      "name": "test/modes/agent.test.ts",
+      "start": 236,
+      "end": 255
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 62,
+    "first": {
+     "name": "test/image-downloader.test.ts",
+     "start": 109,
+     "end": 120
+    },
+    "others": [
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 661,
+      "end": 671
+     },
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 737,
+      "end": 747
+     },
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 1153,
+      "end": 1163
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 19,
+    "tokens": 90,
+    "first": {
+     "name": "test/image-downloader.test.ts",
+     "start": 502,
+     "end": 520
+    },
+    "others": [
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 624,
+      "end": 642
+     },
+     {
+      "name": "test/image-downloader.test.ts",
+      "start": 663,
+      "end": 681
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
    },
    {
     "format": "yaml",
     "lines": 25,
     "tokens": 178,
-    "firstFile": {
+    "first": {
      "name": ".github/workflows/claude.yml",
      "start": 1,
      "end": 25
     },
-    "secondFile": {
-     "name": "examples/claude.yml",
-     "start": 1,
-     "end": 25
-    }
+    "others": [
+     {
+      "name": "examples/claude.yml",
+      "start": 1,
+      "end": 25
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 17,
     "tokens": 176,
-    "firstFile": {
+    "first": {
      "name": "action.yml",
      "start": 344,
      "end": 360
     },
-    "secondFile": {
-     "name": "base-action/action.yml",
-     "start": 211,
-     "end": 227
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 23,
-    "tokens": 174,
-    "firstFile": {
-     "name": ".github/workflows/claude.yml",
-     "start": 3,
-     "end": 25
-    },
-    "secondFile": {
-     "name": "examples/claude-wif.yml",
-     "start": 9,
-     "end": 31
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 30,
-    "tokens": 159,
-    "firstFile": {
-     "name": "test/data-fetcher.test.ts",
-     "start": 1491,
-     "end": 1520
-    },
-    "secondFile": {
-     "name": "test/data-fetcher.test.ts",
-     "start": 1527,
-     "end": 1556
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 37,
-    "tokens": 147,
-    "firstFile": {
-     "name": "base-action/README.md:markdown",
-     "start": 518,
-     "end": 554
-    },
-    "secondFile": {
-     "name": "docs/setup.md:markdown",
-     "start": 180,
-     "end": 216
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 40,
-    "tokens": 134,
-    "firstFile": {
-     "name": "CONTRIBUTING.md:markdown",
-     "start": 53,
-     "end": 92
-    },
-    "secondFile": {
-     "name": "base-action/CONTRIBUTING.md:markdown",
-     "start": 67,
-     "end": 106
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 17,
-    "tokens": 131,
-    "firstFile": {
-     "name": "CONTRIBUTING.md:markdown",
-     "start": 3,
-     "end": 19
-    },
-    "secondFile": {
-     "name": "base-action/CONTRIBUTING.md:markdown",
-     "start": 3,
-     "end": 19
-    }
-   },
-   {
-    "format": "typescript",
-    "lines": 25,
-    "tokens": 129,
-    "firstFile": {
-     "name": "test/data-fetcher.test.ts",
-     "start": 1569,
-     "end": 1593
-    },
-    "secondFile": {
-     "name": "test/data-fetcher.test.ts",
-     "start": 1680,
-     "end": 1704
-    }
+    "others": [
+     {
+      "name": "base-action/action.yml",
+      "start": 211,
+      "end": 227
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    }
   ],
   "health": {
@@ -437,6 +589,332 @@
      "lines": 1
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 79,
+   "lines": 13914,
+   "tokens": 56507,
+   "clones": 21,
+   "duplicatedLines": 488,
+   "duplicatedTokens": 1881,
+   "percentage": 3.51,
+   "percentageTokens": 3.33,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 60,
+     "lines": 10769,
+     "clones": 20,
+     "duplicatedLines": 442,
+     "percentage": 4.1
+    },
+    {
+     "format": "bash",
+     "sources": 16,
+     "lines": 981,
+     "clones": 1,
+     "duplicatedLines": 46,
+     "percentage": 4.69
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 1828,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 162,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 69,
+     "tokens": 298,
+     "first": {
+      "name": "src/mcp/github-file-ops-server.ts",
+      "start": 307,
+      "end": 375
+     },
+     "others": [
+      {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 468,
+       "end": 536
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       ");",
+       "",
+       "// 4. Create a new tree",
+       "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+       "const treeResponse = await fetch(treeUrl, {",
+       "  method: \"POST\",",
+       "  headers: {",
+       "    Accept: \"application/vnd.github+json\",",
+       "    Authorization: `Bearer ${githubToken}`,",
+       "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+      ],
+      "total": 69
+     },
+     "excerptSecond": {
+      "lines": [
+       "}));",
+       "",
+       "// 4. Create a new tree with deletions",
+       "const treeUrl = `${GITHUB_API_URL}/repos/${owner}/${repo}/git/trees`;",
+       "const treeResponse = await fetch(treeUrl, {",
+       "  method: \"POST\",",
+       "  headers: {",
+       "    Accept: \"application/vnd.github+json\",",
+       "    Authorization: `Bearer ${githubToken}`,",
+       "    \"X-GitHub-Api-Version\": \"2022-11-28\","
+      ],
+      "total": 69
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 20,
+     "tokens": 114,
+     "first": {
+      "name": "src/github/validation/actor.ts",
+      "start": 9,
+      "end": 28
+     },
+     "others": [
+      {
+       "name": "src/github/validation/permissions.ts",
+       "start": 3,
+       "end": 25
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import type { GitHubContext } from \"../context\";",
+       "",
+       "function isAllowedBot(actor: string, allowedBots: string): boolean {",
+       "  const trimmed = allowedBots.trim();",
+       "  if (trimmed === \"*\") return true;",
+       "  if (!trimmed) return false;",
+       "",
+       "  const allowedList = trimmed",
+       "    .split(\",\")",
+       "    .map((bot) =>"
+      ],
+      "total": 20
+     },
+     "excerptSecond": {
+      "lines": [
+       "import type { Octokit } from \"@octokit/rest\";",
+       "",
+       "/**",
+       " * Check if a bot actor is in the allowed bots list.",
+       " */",
+       "function isAllowedBot(actor: string, allowedBots: string): boolean {",
+       "  const trimmed = allowedBots.trim();",
+       "  if (trimmed === \"*\") return true;",
+       "  if (!trimmed) return false;",
+       ""
+      ],
+      "total": 23
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 31,
+     "tokens": 112,
+     "first": {
+      "name": "src/mcp/github-file-ops-server.ts",
+      "start": 223,
+      "end": 253
+     },
+     "others": [
+      {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 433,
+       "end": 463
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    return { fullPath, relativePath };",
+       "  }),",
+       ");",
+       "",
+       "// 1. Get the branch reference (create if doesn't exist)",
+       "const baseSha = await getOrCreateBranchRef(",
+       "  owner,",
+       "  repo,",
+       "  branch,",
+       "  githubToken,"
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 30,
+     "tokens": 103,
+     "first": {
+      "name": "src/mcp/github-file-ops-server.ts",
+      "start": 378,
+      "end": 407
+     },
+     "others": [
+      {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 537,
+       "end": 566
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 46,
+     "tokens": 102,
+     "first": {
+      "name": "base-action/scripts/pre-push",
+      "start": 1,
+      "end": 46
+     },
+     "others": [
+      {
+       "name": "scripts/pre-commit",
+       "start": 1,
+       "end": 46
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 24,
+     "tokens": 96,
+     "first": {
+      "name": "src/mcp/github-comment-server.ts",
+      "start": 78,
+      "end": 101
+     },
+     "others": [
+      {
+       "name": "src/mcp/github-file-ops-server.ts",
+       "start": 553,
+       "end": 576
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 29,
+     "tokens": 94,
+     "first": {
+      "name": "src/mcp/github-actions-server.ts",
+      "start": 266,
+      "end": 294
+     },
+     "others": [
+      {
+       "name": "src/mcp/github-comment-server.ts",
+       "start": 66,
+       "end": 93
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 20,
+     "tokens": 94,
+     "first": {
+      "name": "src/modes/agent/index.ts",
+      "start": 30,
+      "end": 49
+     },
+     "others": [
+      {
+       "name": "src/modes/tag/index.ts",
+       "start": 67,
+       "end": 86
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 27,
+     "tokens": 89,
+     "first": {
+      "name": "src/mcp/github-actions-server.ts",
+      "start": 119,
+      "end": 145
+     },
+     "others": [
+      {
+       "name": "src/mcp/github-actions-server.ts",
+       "start": 186,
+       "end": 213
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 26,
+     "tokens": 87,
+     "first": {
+      "name": "src/mcp/github-actions-server.ts",
+      "start": 120,
+      "end": 145
+     },
+     "others": [
+      {
+       "name": "src/mcp/github-actions-server.ts",
+       "start": 266,
+       "end": 292
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:27:22.240Z",
+  "jscpdVersion": "5.4.0"
  }
 }

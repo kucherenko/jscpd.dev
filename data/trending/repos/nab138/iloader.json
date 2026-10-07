@@ -9,10 +9,12 @@
    "starsToday": 50,
    "headSha": "348eefd7de78e9bc612c9d619b8b1e7a80ba3ba0",
    "sources": 91,
-   "lines": 14909,
+   "lines": 14865,
    "clones": 16,
-   "duplicatedLines": 171,
-   "percentage": 1.15,
+   "duplicatedLines": 187,
+   "percentage": 1.26,
+   "codePercentage": 3.16,
+   "codeSources": 43,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 209,
    "headSha": "348eefd7de78e9bc612c9d619b8b1e7a80ba3ba0",
    "sources": 91,
-   "lines": 14909,
+   "lines": 14865,
    "clones": 16,
-   "duplicatedLines": 171,
-   "percentage": 1.15,
+   "duplicatedLines": 187,
+   "percentage": 1.26,
+   "codePercentage": 3.16,
+   "codeSources": 43,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,15 +46,15 @@
   "starsToday": 209,
   "defaultBranch": "main",
   "headSha": "348eefd7de78e9bc612c9d619b8b1e7a80ba3ba0",
-  "durationMs": 493,
+  "durationMs": 46,
   "total": {
    "sources": 91,
-   "lines": 14909,
-   "tokens": 68490,
+   "lines": 14865,
+   "tokens": 68325,
    "clones": 16,
-   "duplicatedLines": 171,
+   "duplicatedLines": 187,
    "duplicatedTokens": 1068,
-   "percentage": 1.15,
+   "percentage": 1.26,
    "percentageTokens": 1.56
   },
   "formats": [
@@ -59,16 +63,16 @@
     "sources": 10,
     "lines": 1803,
     "clones": 9,
-    "duplicatedLines": 91,
-    "percentage": 5.05
+    "duplicatedLines": 100,
+    "percentage": 5.55
    },
    {
     "format": "tsx",
     "sources": 18,
     "lines": 3012,
     "clones": 7,
-    "duplicatedLines": 80,
-    "percentage": 2.66
+    "duplicatedLines": 87,
+    "percentage": 2.89
    },
    {
     "format": "json",
@@ -89,7 +93,7 @@
    {
     "format": "bash",
     "sources": 9,
-    "lines": 694,
+    "lines": 644,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -111,17 +115,17 @@
     "percentage": 0
    },
    {
-    "format": "markdown",
-    "sources": 2,
-    "lines": 173,
+    "format": "perl",
+    "sources": 1,
+    "lines": 174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
+    "format": "markdown",
+    "sources": 2,
+    "lines": 173,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -140,152 +144,531 @@
     "format": "rust",
     "lines": 15,
     "tokens": 99,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/pairing.rs",
      "start": 347,
      "end": 361
     },
-    "secondFile": {
-     "name": "src-tauri/src/pairing.rs",
-     "start": 370,
-     "end": 384
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 370,
+      "end": 384
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      ");",
+      "",
+      "let (generated_plist, generated_bytes) = tokio::select! {",
+      "    _ = cancel.cancelled() => {",
+      "        return Err(AppError::Canceled(\"Pairing\".into()));",
+      "    }",
+      "    res = generate_rppairing_plist(&provider) => {",
+      "        res.map_err(|e| AppError::RemotePairing(e.to_string()))?",
+      "    }",
+      "};"
+     ],
+     "total": 15
+    },
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 17,
     "tokens": 92,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/pairing.rs",
      "start": 453,
      "end": 469
     },
-    "secondFile": {
-     "name": "src-tauri/src/pairing.rs",
-     "start": 504,
-     "end": 520
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 504,
+      "end": 520
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "let provider = get_provider(&device.info).await?;",
+      "let mut installation_proxy =",
+      "    InstallationProxyClient::connect(&provider)",
+      "        .await",
+      "        .map_err(|e| {",
+      "            AppError::DeviceComsWithMessage(",
+      "                \"Failed to connect to installation proxy\".into(),",
+      "                e.to_string(),",
+      "            )",
+      "        })?;"
+     ],
+     "total": 17
+    },
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 9,
     "tokens": 80,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/account.rs",
      "start": 51,
      "end": 59
     },
-    "secondFile": {
-     "name": "src-tauri/src/account.rs",
-     "start": 95,
-     "end": 103
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/account.rs",
+      "start": 95,
+      "end": 103
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "let store = handle",
+      "    .store(\"data.json\")",
+      "    .map_err(|e| AppError::Misc(format!(\"Failed to get store: {:?}\", e)))?;",
+      "let mut existing_ids = store",
+      "    .get(\"ids\")",
+      "    .unwrap_or_else(|| Value::Array(vec![]))",
+      "    .as_array()",
+      "    .cloned()",
+      "    .unwrap_or_else(std::vec::Vec::new);"
+     ],
+     "total": 9
+    },
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 13,
     "tokens": 71,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/pairing.rs",
      "start": 233,
      "end": 245
     },
-    "secondFile": {
-     "name": "src-tauri/src/pairing.rs",
-     "start": 403,
-     "end": 415
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 403,
+      "end": 415
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 10,
     "tokens": 71,
-    "firstFile": {
+    "first": {
      "name": "src/App.tsx",
      "start": 150,
      "end": 159
     },
-    "secondFile": {
-     "name": "src/pages/Settings.tsx",
-     "start": 81,
-     "end": 90
-    }
+    "others": [
+     {
+      "name": "src/pages/Settings.tsx",
+      "start": 81,
+      "end": 90
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 10,
     "tokens": 67,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/pairing.rs",
      "start": 217,
      "end": 226
     },
-    "secondFile": {
-     "name": "src-tauri/src/pairing.rs",
-     "start": 445,
-     "end": 453
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 445,
+      "end": 453
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 13,
     "tokens": 66,
-    "firstFile": {
+    "first": {
      "name": "src/ErrorContext.tsx",
      "start": 132,
      "end": 144
     },
-    "secondFile": {
-     "name": "src/components/OperationView.tsx",
-     "start": 176,
-     "end": 188
-    }
+    "others": [
+     {
+      "name": "src/components/OperationView.tsx",
+      "start": 176,
+      "end": 188
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "tsx",
     "lines": 21,
     "tokens": 65,
-    "firstFile": {
+    "first": {
      "name": "src/ErrorContext.tsx",
      "start": 157,
      "end": 177
     },
-    "secondFile": {
-     "name": "src/components/OperationView.tsx",
-     "start": 201,
-     "end": 221
-    }
+    "others": [
+     {
+      "name": "src/components/OperationView.tsx",
+      "start": 201,
+      "end": 221
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 10,
     "tokens": 64,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/account.rs",
      "start": 291,
      "end": 300
     },
-    "secondFile": {
-     "name": "src-tauri/src/account.rs",
-     "start": 322,
-     "end": 330
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/account.rs",
+      "start": 322,
+      "end": 330
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
     "format": "rust",
     "lines": 11,
     "tokens": 62,
-    "firstFile": {
+    "first": {
      "name": "src-tauri/src/pairing.rs",
      "start": 216,
      "end": 226
     },
-    "secondFile": {
-     "name": "src-tauri/src/pairing.rs",
-     "start": 235,
-     "end": 245
-    }
+    "others": [
+     {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 235,
+      "end": 245
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 43,
+   "lines": 5920,
+   "tokens": 33032,
+   "clones": 16,
+   "duplicatedLines": 187,
+   "duplicatedTokens": 1068,
+   "percentage": 3.16,
+   "percentageTokens": 3.23,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 10,
+     "lines": 1803,
+     "clones": 9,
+     "duplicatedLines": 100,
+     "percentage": 5.55
+    },
+    {
+     "format": "tsx",
+     "sources": 18,
+     "lines": 3012,
+     "clones": 7,
+     "duplicatedLines": 87,
+     "percentage": 2.89
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 644,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 5,
+     "lines": 287,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 99,
+     "first": {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 347,
+      "end": 361
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/pairing.rs",
+       "start": 370,
+       "end": 384
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       ");",
+       "",
+       "let (generated_plist, generated_bytes) = tokio::select! {",
+       "    _ = cancel.cancelled() => {",
+       "        return Err(AppError::Canceled(\"Pairing\".into()));",
+       "    }",
+       "    res = generate_rppairing_plist(&provider) => {",
+       "        res.map_err(|e| AppError::RemotePairing(e.to_string()))?",
+       "    }",
+       "};"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 92,
+     "first": {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 453,
+      "end": 469
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/pairing.rs",
+       "start": 504,
+       "end": 520
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "let provider = get_provider(&device.info).await?;",
+       "let mut installation_proxy =",
+       "    InstallationProxyClient::connect(&provider)",
+       "        .await",
+       "        .map_err(|e| {",
+       "            AppError::DeviceComsWithMessage(",
+       "                \"Failed to connect to installation proxy\".into(),",
+       "                e.to_string(),",
+       "            )",
+       "        })?;"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 80,
+     "first": {
+      "name": "src-tauri/src/account.rs",
+      "start": 51,
+      "end": 59
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/account.rs",
+       "start": 95,
+       "end": 103
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "let store = handle",
+       "    .store(\"data.json\")",
+       "    .map_err(|e| AppError::Misc(format!(\"Failed to get store: {:?}\", e)))?;",
+       "let mut existing_ids = store",
+       "    .get(\"ids\")",
+       "    .unwrap_or_else(|| Value::Array(vec![]))",
+       "    .as_array()",
+       "    .cloned()",
+       "    .unwrap_or_else(std::vec::Vec::new);"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 13,
+     "tokens": 71,
+     "first": {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 233,
+      "end": 245
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/pairing.rs",
+       "start": 403,
+       "end": 415
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 10,
+     "tokens": 71,
+     "first": {
+      "name": "src/App.tsx",
+      "start": 150,
+      "end": 159
+     },
+     "others": [
+      {
+       "name": "src/pages/Settings.tsx",
+       "start": 81,
+       "end": 90
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 67,
+     "first": {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 217,
+      "end": 226
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/pairing.rs",
+       "start": 445,
+       "end": 453
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 13,
+     "tokens": 66,
+     "first": {
+      "name": "src/ErrorContext.tsx",
+      "start": 132,
+      "end": 144
+     },
+     "others": [
+      {
+       "name": "src/components/OperationView.tsx",
+       "start": 176,
+       "end": 188
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 21,
+     "tokens": 65,
+     "first": {
+      "name": "src/ErrorContext.tsx",
+      "start": 157,
+      "end": 177
+     },
+     "others": [
+      {
+       "name": "src/components/OperationView.tsx",
+       "start": 201,
+       "end": 221
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 64,
+     "first": {
+      "name": "src-tauri/src/account.rs",
+      "start": 291,
+      "end": 300
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/account.rs",
+       "start": 322,
+       "end": 330
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 62,
+     "first": {
+      "name": "src-tauri/src/pairing.rs",
+      "start": 216,
+      "end": 226
+     },
+     "others": [
+      {
+       "name": "src-tauri/src/pairing.rs",
+       "start": 235,
+       "end": 245
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T05:57:44.835Z",
+  "jscpdVersion": "5.4.0"
  }
 }

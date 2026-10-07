@@ -9,10 +9,12 @@
    "starsToday": 583,
    "headSha": "b3a3f3a6df47d090c22c2f16bb8128688020538d",
    "sources": 271,
-   "lines": 61440,
-   "clones": 136,
-   "duplicatedLines": 1720,
-   "percentage": 2.8,
+   "lines": 61396,
+   "clones": 148,
+   "duplicatedLines": 1948,
+   "percentage": 3.17,
+   "codePercentage": 5.27,
+   "codeSources": 153,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 577,
    "headSha": "b3a3f3a6df47d090c22c2f16bb8128688020538d",
    "sources": 271,
-   "lines": 61440,
-   "clones": 136,
-   "duplicatedLines": 1720,
-   "percentage": 2.8,
+   "lines": 61396,
+   "clones": 148,
+   "duplicatedLines": 1948,
+   "percentage": 3.17,
+   "codePercentage": 5.27,
+   "codeSources": 153,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,65 +46,65 @@
   "starsToday": 577,
   "defaultBranch": "master",
   "headSha": "b3a3f3a6df47d090c22c2f16bb8128688020538d",
-  "durationMs": 829,
+  "durationMs": 629,
   "total": {
    "sources": 271,
-   "lines": 61440,
-   "tokens": 385811,
-   "clones": 136,
-   "duplicatedLines": 1720,
-   "duplicatedTokens": 11987,
-   "percentage": 2.8,
-   "percentageTokens": 3.11
+   "lines": 61396,
+   "tokens": 396580,
+   "clones": 148,
+   "duplicatedLines": 1948,
+   "duplicatedTokens": 12469,
+   "percentage": 3.17,
+   "percentageTokens": 3.14
   },
   "formats": [
    {
     "format": "crystal",
     "sources": 140,
     "lines": 23808,
-    "clones": 99,
-    "duplicatedLines": 1159,
-    "percentage": 4.87
+    "clones": 111,
+    "duplicatedLines": 1354,
+    "percentage": 5.69
    },
    {
     "format": "javascript",
     "sources": 15,
     "lines": 2417,
     "clones": 11,
-    "duplicatedLines": 124,
-    "percentage": 5.13
+    "duplicatedLines": 135,
+    "percentage": 5.59
    },
    {
     "format": "markdown",
     "sources": 5,
     "lines": 1976,
     "clones": 11,
-    "duplicatedLines": 106,
-    "percentage": 5.36
+    "duplicatedLines": 113,
+    "percentage": 5.72
    },
    {
     "format": "json",
     "sources": 60,
     "lines": 25626,
     "clones": 5,
-    "duplicatedLines": 124,
-    "percentage": 0.48
+    "duplicatedLines": 129,
+    "percentage": 0.5
    },
    {
     "format": "yaml",
     "sources": 15,
     "lines": 2033,
     "clones": 5,
-    "duplicatedLines": 176,
-    "percentage": 8.66
+    "duplicatedLines": 181,
+    "percentage": 8.9
    },
    {
     "format": "css",
     "sources": 9,
     "lines": 1507,
     "clones": 5,
-    "duplicatedLines": 31,
-    "percentage": 2.06
+    "duplicatedLines": 36,
+    "percentage": 2.39
    },
    {
     "format": "markup",
@@ -113,7 +117,7 @@
    {
     "format": "bash",
     "sources": 13,
-    "lines": 962,
+    "lines": 912,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -138,154 +142,710 @@
   "topClones": [
    {
     "format": "markdown",
+    "lines": 9,
+    "tokens": 127,
+    "first": {
+     "name": "CHANGELOG_legacy.md:markdown",
+     "start": 179,
+     "end": 187
+    },
+    "others": [
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 432,
+      "end": 440
+     },
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 504,
+      "end": 512
+     },
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 573,
+      "end": 581
+     },
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 631,
+      "end": 639
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "### Expenses",
+      "",
+      "- invidious-load1 (nyc1) : \\$10.00 (load balancer)",
+      "- invidious-update1 (s-1vcpu-1gb) : \\$5.00 (updates feeds)",
+      "- invidious-node1 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node2 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node3 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node4 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node5 (s-1vcpu-1gb) : \\$5.00 (web server)"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "### Expenses",
+      "",
+      "- invidious-load1 (nyc1) : \\$10.00 (load balancer)",
+      "- invidious-update1 (s-1vcpu-1gb) : \\$5.00 (updates feeds)",
+      "- invidious-node1 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node2 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node3 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node4 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-db1 (s-4vcpu-8gb) : \\$40.00 (database)"
+     ],
+     "total": 9
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "crystal",
+    "lines": 13,
+    "tokens": 63,
+    "first": {
+     "name": "src/invidious/routes/account.cr",
+     "start": 11,
+     "end": 23
+    },
+    "others": [
+     {
+      "name": "src/invidious/routes/account.cr",
+      "start": 30,
+      "end": 42
+     },
+     {
+      "name": "src/invidious/routes/account.cr",
+      "start": 105,
+      "end": 117
+     },
+     {
+      "name": "src/invidious/routes/account.cr",
+      "start": 163,
+      "end": 175
+     },
+     {
+      "name": "src/invidious/routes/feeds.cr",
+      "start": 64,
+      "end": 76
+     },
+     {
+      "name": "src/invidious/routes/login.cr",
+      "start": 153,
+      "end": 165
+     },
+     {
+      "name": "src/invidious/routes/subscriptions.cr",
+      "start": 58,
+      "end": 70
+     }
+    ],
+    "copies": 7,
+    "excerpt": {
+     "lines": [
+      "def get_change_password(env)",
+      "  locale = env.get(\"preferences\").as(Preferences).locale",
+      "",
+      "  user = env.get? \"user\"",
+      "  sid = env.get? \"sid\"",
+      "  referer = get_referer(env)",
+      "",
+      "  if !user",
+      "    return env.redirect referer",
+      "  end"
+     ],
+     "total": 13
+    },
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
     "lines": 19,
     "tokens": 364,
-    "firstFile": {
+    "first": {
      "name": "CHANGELOG_legacy.md:markdown",
      "start": 83,
      "end": 101
     },
-    "secondFile": {
+    "others": [
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 115,
+      "end": 133
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "- invidious-lb1 (nyc1) : \\$10.00 (load balancer)",
+      "- invidious-update1 (s-1vcpu-1gb) : \\$5.00 (updates feeds)",
+      "- invidious-node1 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node2 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node3 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node4 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node5 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node6 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node7 (s-1vcpu-1gb) : \\$5.00 (web server)",
+      "- invidious-node8 (s-1vcpu-1gb) : \\$5.00 (web server)"
+     ],
+     "total": 19
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 10,
+    "tokens": 148,
+    "first": {
      "name": "CHANGELOG_legacy.md:markdown",
-     "start": 115,
-     "end": 133
-    }
+     "start": 179,
+     "end": 188
+    },
+    "others": [
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 305,
+      "end": 314
+     },
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 367,
+      "end": 376
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    },
    {
     "format": "yaml",
     "lines": 44,
     "tokens": 287,
-    "firstFile": {
+    "first": {
      "name": ".github/ISSUE_TEMPLATE/enhancement.yml",
      "start": 38,
      "end": 81
     },
-    "secondFile": {
-     "name": ".github/ISSUE_TEMPLATE/feature_request.yml",
-     "start": 38,
-     "end": 81
-    }
+    "others": [
+     {
+      "name": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "start": 38,
+      "end": 81
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
    },
    {
     "format": "yaml",
     "lines": 43,
     "tokens": 285,
-    "firstFile": {
+    "first": {
      "name": ".github/ISSUE_TEMPLATE/bug_report.yml",
      "start": 61,
      "end": 103
     },
-    "secondFile": {
-     "name": ".github/ISSUE_TEMPLATE/enhancement.yml",
-     "start": 39,
-     "end": 81
-    }
+    "others": [
+     {
+      "name": ".github/ISSUE_TEMPLATE/enhancement.yml",
+      "start": 39,
+      "end": 81
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "crystal",
+    "lines": 11,
+    "tokens": 68,
+    "first": {
+     "name": "src/invidious/channels/community.cr",
+     "start": 304,
+     "end": 314
+    },
+    "others": [
+     {
+      "name": "src/invidious/channels/videos.cr",
+      "start": 193,
+      "end": 203
+     },
+     {
+      "name": "src/invidious/comments/youtube.cr",
+      "start": 350,
+      "end": 360
+     },
+     {
+      "name": "src/invidious/hashtag.cr",
+      "start": 31,
+      "end": 41
+     },
+     {
+      "name": "src/invidious/search/ctoken.cr",
+      "start": 22,
+      "end": 32
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
+    "format": "crystal",
+    "lines": 19,
+    "tokens": 85,
+    "first": {
+     "name": "src/invidious/routes/account.cr",
+     "start": 31,
+     "end": 49
+    },
+    "others": [
+     {
+      "name": "src/invidious/routes/account.cr",
+      "start": 106,
+      "end": 124
+     },
+     {
+      "name": "src/invidious/routes/account.cr",
+      "start": 164,
+      "end": 182
+     },
+     {
+      "name": "src/invidious/routes/login.cr",
+      "start": 154,
+      "end": 172
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
    },
    {
     "format": "markdown",
     "lines": 13,
     "tokens": 245,
-    "firstFile": {
+    "first": {
      "name": "CHANGELOG_legacy.md:markdown",
      "start": 83,
      "end": 95
     },
-    "secondFile": {
-     "name": "CHANGELOG_legacy.md:markdown",
-     "start": 181,
-     "end": 193
-    }
-   },
-   {
-    "format": "json",
-    "lines": 51,
-    "tokens": 203,
-    "firstFile": {
-     "name": "locales/bn.json",
-     "start": 2,
-     "end": 52
-    },
-    "secondFile": {
-     "name": "locales/bn_BD.json",
-     "start": 5,
-     "end": 55
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 32,
-    "tokens": 199,
-    "firstFile": {
-     "name": ".github/workflows/build-nightly-container.yml",
-     "start": 64,
-     "end": 95
-    },
-    "secondFile": {
-     "name": ".github/workflows/build-stable-container.yml",
-     "start": 53,
-     "end": 84
-    }
-   },
-   {
-    "format": "yaml",
-    "lines": 39,
-    "tokens": 171,
-    "firstFile": {
-     "name": ".github/workflows/build-nightly-container.yml",
-     "start": 21,
-     "end": 59
-    },
-    "secondFile": {
-     "name": ".github/workflows/build-stable-container.yml",
-     "start": 9,
-     "end": 47
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 171,
-    "firstFile": {
-     "name": "CHANGELOG_legacy.md:markdown",
-     "start": 179,
-     "end": 189
-    },
-    "secondFile": {
-     "name": "CHANGELOG_legacy.md:markdown",
-     "start": 367,
-     "end": 377
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 11,
-    "tokens": 169,
-    "firstFile": {
-     "name": "CHANGELOG_legacy.md:markdown",
-     "start": 179,
-     "end": 189
-    },
-    "secondFile": {
-     "name": "CHANGELOG_legacy.md:markdown",
-     "start": 249,
-     "end": 259
-    }
+    "others": [
+     {
+      "name": "CHANGELOG_legacy.md:markdown",
+      "start": 181,
+      "end": 193
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "javascript",
-    "lines": 17,
-    "tokens": 169,
-    "firstFile": {
+    "lines": 9,
+    "tokens": 114,
+    "first": {
      "name": "assets/js/embed.js",
-     "start": 23,
-     "end": 39
+     "start": 27,
+     "end": 35
     },
-    "secondFile": {
-     "name": "assets/js/watch.js",
-     "start": 84,
-     "end": 100
-    }
+    "others": [
+     {
+      "name": "assets/js/embed.js",
+      "start": 48,
+      "end": 57
+     },
+     {
+      "name": "assets/js/watch.js",
+      "start": 30,
+      "end": 39
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
    }
-  ]
+  ],
+  "code": {
+   "sources": 153,
+   "lines": 25295,
+   "tokens": 132445,
+   "clones": 106,
+   "duplicatedLines": 1334,
+   "duplicatedTokens": 7704,
+   "percentage": 5.27,
+   "percentageTokens": 5.82,
+   "formats": [
+    {
+     "format": "crystal",
+     "sources": 115,
+     "lines": 21201,
+     "clones": 95,
+     "duplicatedLines": 1199,
+     "percentage": 5.66
+    },
+    {
+     "format": "javascript",
+     "sources": 15,
+     "lines": 2417,
+     "clones": 11,
+     "duplicatedLines": 135,
+     "percentage": 5.59
+    },
+    {
+     "format": "bash",
+     "sources": 13,
+     "lines": 912,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 397,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "sql",
+     "sources": 8,
+     "lines": 194,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "crystal",
+     "lines": 13,
+     "tokens": 63,
+     "first": {
+      "name": "src/invidious/routes/account.cr",
+      "start": 11,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "src/invidious/routes/account.cr",
+       "start": 30,
+       "end": 42
+      },
+      {
+       "name": "src/invidious/routes/account.cr",
+       "start": 105,
+       "end": 117
+      },
+      {
+       "name": "src/invidious/routes/account.cr",
+       "start": 163,
+       "end": 175
+      },
+      {
+       "name": "src/invidious/routes/feeds.cr",
+       "start": 64,
+       "end": 76
+      },
+      {
+       "name": "src/invidious/routes/login.cr",
+       "start": 153,
+       "end": 165
+      },
+      {
+       "name": "src/invidious/routes/subscriptions.cr",
+       "start": 58,
+       "end": 70
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "def get_change_password(env)",
+       "  locale = env.get(\"preferences\").as(Preferences).locale",
+       "",
+       "  user = env.get? \"user\"",
+       "  sid = env.get? \"sid\"",
+       "  referer = get_referer(env)",
+       "",
+       "  if !user",
+       "    return env.redirect referer",
+       "  end"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "crystal",
+     "lines": 11,
+     "tokens": 68,
+     "first": {
+      "name": "src/invidious/channels/community.cr",
+      "start": 304,
+      "end": 314
+     },
+     "others": [
+      {
+       "name": "src/invidious/channels/videos.cr",
+       "start": 193,
+       "end": 203
+      },
+      {
+       "name": "src/invidious/comments/youtube.cr",
+       "start": 350,
+       "end": 360
+      },
+      {
+       "name": "src/invidious/hashtag.cr",
+       "start": 31,
+       "end": 41
+      },
+      {
+       "name": "src/invidious/search/ctoken.cr",
+       "start": 22,
+       "end": 32
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "    \"3:string\" => cursor || \"\",",
+       "  },",
+       "}",
+       "",
+       "continuation = object.try { |i| Protodec::Any.cast_json(i) }",
+       "  .try { |i| Protodec::Any.from_json(i) }",
+       "  .try { |i| Base64.urlsafe_encode(i) }",
+       "  .try { |i| URI.encode_www_form(i) }",
+       "",
+       "return continuation"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "crystal",
+     "lines": 19,
+     "tokens": 85,
+     "first": {
+      "name": "src/invidious/routes/account.cr",
+      "start": 31,
+      "end": 49
+     },
+     "others": [
+      {
+       "name": "src/invidious/routes/account.cr",
+       "start": 106,
+       "end": 124
+      },
+      {
+       "name": "src/invidious/routes/account.cr",
+       "start": 164,
+       "end": 182
+      },
+      {
+       "name": "src/invidious/routes/login.cr",
+       "start": 154,
+       "end": 172
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "locale = env.get(\"preferences\").as(Preferences).locale",
+       "",
+       "user = env.get? \"user\"",
+       "sid = env.get? \"sid\"",
+       "referer = get_referer(env)",
+       "",
+       "if !user",
+       "  return env.redirect referer",
+       "end",
+       ""
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 9,
+     "tokens": 114,
+     "first": {
+      "name": "assets/js/embed.js",
+      "start": 27,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "assets/js/embed.js",
+       "start": 48,
+       "end": 57
+      },
+      {
+       "name": "assets/js/watch.js",
+       "start": 30,
+       "end": 39
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "crystal",
+     "lines": 11,
+     "tokens": 64,
+     "first": {
+      "name": "src/invidious/routes/playlists.cr",
+      "start": 4,
+      "end": 14
+     },
+     "others": [
+      {
+       "name": "src/invidious/routes/playlists.cr",
+       "start": 20,
+       "end": 30
+      },
+      {
+       "name": "src/invidious/routes/playlists.cr",
+       "start": 81,
+       "end": 91
+      },
+      {
+       "name": "src/invidious/routes/playlists.cr",
+       "start": 140,
+       "end": 150
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 17,
+     "tokens": 169,
+     "first": {
+      "name": "assets/js/embed.js",
+      "start": 23,
+      "end": 39
+     },
+     "others": [
+      {
+       "name": "assets/js/watch.js",
+       "start": 84,
+       "end": 100
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "crystal",
+     "lines": 26,
+     "tokens": 156,
+     "first": {
+      "name": "src/invidious/routes/playlists.cr",
+      "start": 108,
+      "end": 133
+     },
+     "others": [
+      {
+       "name": "src/invidious/routes/playlists.cr",
+       "start": 183,
+       "end": 208
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 15,
+     "tokens": 153,
+     "first": {
+      "name": "assets/js/watch.js",
+      "start": 29,
+      "end": 43
+     },
+     "others": [
+      {
+       "name": "assets/js/watch.js",
+       "start": 164,
+       "end": 178
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "crystal",
+     "lines": 18,
+     "tokens": 71,
+     "first": {
+      "name": "src/invidious/routes/api/v1/channels.cr",
+      "start": 325,
+      "end": 342
+     },
+     "others": [
+      {
+       "name": "src/invidious/routes/api/v1/channels.cr",
+       "start": 354,
+       "end": 371
+      },
+      {
+       "name": "src/invidious/routes/api/v1/channels.cr",
+       "start": 383,
+       "end": 400
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "crystal",
+     "lines": 14,
+     "tokens": 70,
+     "first": {
+      "name": "src/invidious/routes/account.cr",
+      "start": 11,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "src/invidious/routes/account.cr",
+       "start": 86,
+       "end": 99
+      },
+      {
+       "name": "src/invidious/routes/account.cr",
+       "start": 144,
+       "end": 157
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 3,
+    "minified": 1,
+    "sample": [
+     "assets/js/videojs-youtube-annotations.min.js",
+     "src/invidious/frontend/channel_page.cr",
+     "src/invidious/videos/transcript.cr"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:43:07.416Z",
+  "jscpdVersion": "5.4.0"
  }
 }

@@ -1,5 +1,7 @@
+import { readFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 import trendingHistory from "./data/trending-history.json" with { type: "json" };
 import trendingRepos from "./data/trending-repos.json" with { type: "json" };
 
@@ -10,15 +12,39 @@ const require = createRequire(import.meta.url);
 const docusDir = dirname(require.resolve("docus/package.json"));
 const nuxtContentServer = require.resolve("@nuxt/content/server", { paths: [docusDir] });
 
-// /trending/<day> and /trending/<owner>/<repo> are dynamic routes; the static
-// build needs the full list up front (data/ is refreshed by trending.yml).
-// The latest day is served at /trending itself, but its dated URL is
-// prerendered too: a /trending/<date> link shared on the day it was latest
-// must not 404 until the next day's deploy.
+// /trending/<day>, /trending/week/<week> and /trending/<owner>/<repo> are
+// dynamic routes; the static build needs the full list up front (data/ is
+// refreshed by trending.yml). The latest day is served at /trending itself,
+// but its dated URL is prerendered too: a /trending/<date> link shared on the
+// day it was latest must not 404 until the next day's deploy.
 const trendingRoutes = [
   ...trendingHistory.days.map((d) => `/trending/${d.date}`),
+  ...trendingHistory.weeks.map((w) => `/trending/week/${w.week}`),
   ...trendingRepos.map((r) => `/trending/${r.name}`),
 ];
+
+// The trending snapshots, per-repo and per-week files (data/trending/**)
+// carry code excerpts. As plain JSON modules they go through Nitro's
+// build-time text replacement (`typeof window` → `"undefined"`, same for
+// document, navigator, location, XMLHttpRequest and process.env.NODE_ENV),
+// which rewrites text inside string literals too: a snapshot whose excerpt
+// contained `typeof window` became a broken chunk and six prerendered pages
+// came out as 500. Shipping the files base64-encoded keeps every character
+// of the data out of reach of such replacements; the page decodes on load.
+const trendingDataDir = fileURLToPath(new URL("./data/trending/", import.meta.url));
+const trendingDataBase64 = {
+  name: "jscpd:trending-data-base64",
+  enforce: "post" as const,
+  async transform(_code: string, id: string) {
+    const file = id.split("?")[0] ?? "";
+    if (!file.startsWith(trendingDataDir) || !file.endsWith(".json")) return null;
+    const base64 = (await readFile(file)).toString("base64");
+    return {
+      code: `export default JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(${JSON.stringify(base64)}), (c) => c.charCodeAt(0))));`,
+      map: null,
+    };
+  },
+};
 
 export default defineNuxtConfig({
   extends: ["docus"],
@@ -27,11 +53,14 @@ export default defineNuxtConfig({
   // scanned, so register standalone (non-docs-layout) routes explicitly
   hooks: {
     "pages:extend"(pages) {
-      // pages/ is also scanned, which turns pages/trending-repo.vue into a
-      // stray /trending-repo route; only the parameterised registration below
-      // should exist (its name must differ, or vue-router keeps the scanned one).
-      const scanned = pages.findIndex((p) => p.path === "/trending-repo");
-      if (scanned !== -1) pages.splice(scanned, 1);
+      // pages/ is also scanned, which turns pages/trending-repo.vue and
+      // pages/trending-week.vue into stray /trending-repo and /trending-week
+      // routes; only the parameterised registrations below should exist
+      // (their names must differ, or vue-router keeps the scanned ones).
+      for (const stray of ["/trending-repo", "/trending-week"]) {
+        const scanned = pages.findIndex((p) => p.path === stray);
+        if (scanned !== -1) pages.splice(scanned, 1);
+      }
       pages.unshift(
         {
           name: "trending",
@@ -42,6 +71,13 @@ export default defineNuxtConfig({
           name: "trending-day",
           path: "/trending/:date(\\d{4}-\\d{2}-\\d{2})",
           file: "~/pages/trending.vue",
+        },
+        {
+          // Static segments outrank params in vue-router, so this wins over
+          // /trending/:owner/:repo for /trending/week/2026-W41.
+          name: "trending-week",
+          path: "/trending/week/:week(\\d{4}-W\\d{2})",
+          file: "~/pages/trending-week.vue",
         },
         {
           name: "trending-repository",
@@ -123,8 +159,12 @@ export default defineNuxtConfig({
       // /health-corpus.json publishes the calibration corpus for the jscpd
       // repo's rust/scripts/calibrate-health.mjs; see server/routes/
       // health-corpus.json.ts.
-      routes: ["/404", "/health-corpus.json", ...trendingRoutes],
+      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", ...trendingRoutes],
     },
+  },
+
+  vite: {
+    plugins: [trendingDataBase64],
   },
 
   css: ["~/assets/css/main.css"],

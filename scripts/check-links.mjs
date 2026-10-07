@@ -33,6 +33,7 @@ for (const f of walk(join(root, 'content')).filter(f => f.endsWith('.md'))) {
 try {
   const history = JSON.parse(readFileSync(join(root, 'data/trending-history.json'), 'utf8'))
   for (const d of history.days) pages.add(`/trending/${d.date}`)
+  for (const w of history.weeks ?? []) pages.add(`/trending/week/${w.week}`)
   const repos = JSON.parse(readFileSync(join(root, 'data/trending-repos.json'), 'utf8'))
   for (const r of repos) pages.add(`/trending/${r.name}`)
 } catch {}

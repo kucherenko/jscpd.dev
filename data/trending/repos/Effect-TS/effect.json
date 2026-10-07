@@ -13,6 +13,8 @@
    "clones": 7121,
    "duplicatedLines": 118282,
    "percentage": 13.8,
+   "codePercentage": 8.75,
+   "codeSources": 896,
    "healthScore": 47.3,
    "healthGrade": "D"
   },
@@ -27,6 +29,8 @@
    "clones": 7127,
    "duplicatedLines": 118356,
    "percentage": 13.79,
+   "codePercentage": 8.75,
+   "codeSources": 896,
    "healthScore": 47.3,
    "healthGrade": "D"
   }
@@ -42,7 +46,7 @@
   "starsToday": 302,
   "defaultBranch": "main",
   "headSha": "234672ba8650196369dcdc74c317104540c54dc3",
-  "durationMs": 4105,
+  "durationMs": 4226,
   "total": {
    "sources": 2067,
    "lines": 858055,
@@ -138,153 +142,476 @@
   "topClones": [
    {
     "format": "markdown",
+    "lines": 9,
+    "tokens": 6137,
+    "first": {
+     "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+     "start": 124,
+     "end": 132
+    },
+    "others": [
+     {
+      "name": "packages/atom/solid/CHANGELOG.md:markdown",
+      "start": 113,
+      "end": 121
+     },
+     {
+      "name": "packages/atom/vue/CHANGELOG.md:markdown",
+      "start": 113,
+      "end": 121
+     },
+     {
+      "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+      "start": 125,
+      "end": 133
+     },
+     {
+      "name": "packages/platform/browser/CHANGELOG.md:markdown",
+      "start": 139,
+      "end": 147
+     },
+     {
+      "name": "packages/sql/d1/CHANGELOG.md:markdown",
+      "start": 120,
+      "end": 128
+     },
+     {
+      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+      "start": 119,
+      "end": 127
+     },
+     {
+      "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+      "start": 115,
+      "end": 123
+     },
+     {
+      "name": "packages/sql/pg/CHANGELOG.md:markdown",
+      "start": 182,
+      "end": 190
+     }
+    ],
+    "copies": 16,
+    "excerpt": {
+     "lines": [
+      "- [#7805](https://github.com/Effect-TS/effect/pull/7805) [`0b93584`](https://github.com/Effect-TS/effect/commit/0b935848082dd178db8278bff52a2cd07e5bf69a) Thank…",
+      "- Updated dependencies [[`49e3901`](https://github.com/Effect-TS/effect/commit/49e39010ff84acbde32c50d559a2f76426cf830e), [`b945ded`](https://github.com/Effect…",
+      "  - effect@4.0.0-rc.113",
+      "",
+      "## 4.0.0-rc.112",
+      "",
+      "### Patch Changes",
+      "",
+      "- [#7437](https://github.com/Effect-TS/effect/pull/7437) [`44675cb`](https://github.com/Effect-TS/effect/commit/44675cbce3dabfb85c68a3703b5de525768336fb) Thank…"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "- [#7533](https://github.com/Effect-TS/effect/pull/7533) [`7e24e3a`](https://github.com/Effect-TS/effect/commit/7e24e3a5ef62fd46f8fbee814c7da8f94d834c75) Thank…",
+      "- Updated dependencies [[`49e3901`](https://github.com/Effect-TS/effect/commit/49e39010ff84acbde32c50d559a2f76426cf830e), [`b945ded`](https://github.com/Effect…",
+      "  - effect@4.0.0-rc.113",
+      "",
+      "## 4.0.0-rc.112",
+      "",
+      "### Patch Changes",
+      "",
+      "- Updated dependencies [[`20cb4f2`](https://github.com/Effect-TS/effect/commit/20cb4f260e45d37fa417c292c57be015314efe16), [`44675cb`](https://github.com/Effect…"
+     ],
+     "total": 9
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 476,
+    "tokens": 12862,
+    "first": {
+     "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+     "start": 455,
+     "end": 930
+    },
+    "others": [
+     {
+      "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+      "start": 466,
+      "end": 941
+     },
+     {
+      "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
+      "start": 461,
+      "end": 936
+     },
+     {
+      "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
+      "start": 457,
+      "end": 932
+     },
+     {
+      "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
+      "start": 453,
+      "end": 928
+     },
+     {
+      "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
+      "start": 461,
+      "end": 936
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "- Updated dependencies [[`ca2498e`](https://github.com/Effect-TS/effect-smol/commit/ca2498e702ac2d83fb7187707b7eb069bdb261a2), [`cd7d1fb`](https://github.com/E…",
+      "  - effect@4.0.0-beta.66",
+      "",
+      "## 4.0.0-beta.65",
+      "",
+      "### Patch Changes",
+      "",
+      "- [#2148](https://github.com/Effect-TS/effect-smol/pull/2148) [`6f11454`](https://github.com/Effect-TS/effect-smol/commit/6f11454a9b6c3bd00f6b35fd7af14a2f2d63a…",
+      "",
+      "  This covers PostgreSQL, PGlite, MySQL, MSSQL, and the shared SQLite classification used by the SQLite-family clients. `UniqueViolation.constraint` contains t…"
+     ],
+     "total": 476
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 76,
+    "tokens": 1962,
+    "first": {
+     "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+     "start": 3,
+     "end": 78
+    },
+    "others": [
+     {
+      "name": "packages/ai/openai-compat/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     {
+      "name": "packages/ai/openai/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     {
+      "name": "packages/ai/openrouter/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     {
+      "name": "packages/ai/typesafe/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     {
+      "name": "packages/atom/react/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     {
+      "name": "packages/atom/solid/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     {
+      "name": "packages/atom/vue/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     },
+     {
+      "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+      "start": 3,
+      "end": 78
+     }
+    ],
+    "copies": 24,
+    "excerpt": {
+     "lines": [
+      "## 4.0.0",
+      "",
+      "### Patch Changes",
+      "",
+      "- [#8633](https://github.com/Effect-TS/effect/pull/8633) [`2c552f2`](https://github.com/Effect-TS/effect/commit/2c552f220e09dd63d4a777db6cd20b9a13e732f4) Thank…",
+      "",
+      "  **Packaging and versioning**",
+      "",
+      "  - All Effect packages share one version number and are released together. Use the same version of `effect` and every `@effect/*` package.",
+      "  - `@effect/platform`, `@effect/rpc`, `@effect/cluster`, `@effect/cli`, `@effect/ai`, `@effect/sql`, `@effect/workflow`, `@effect/experimental` and similar pa…"
+     ],
+     "total": 76
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 157,
+    "tokens": 3735,
+    "first": {
+     "name": "packages/sql/d1/CHANGELOG.md:markdown",
+     "start": 310,
+     "end": 466
+    },
+    "others": [
+     {
+      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+      "start": 306,
+      "end": 462
+     },
+     {
+      "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+      "start": 317,
+      "end": 473
+     },
+     {
+      "name": "packages/sql/mysql2/CHANGELOG.md:markdown",
+      "start": 307,
+      "end": 463
+     },
+     {
+      "name": "packages/sql/pg/CHANGELOG.md:markdown",
+      "start": 377,
+      "end": 533
+     },
+     {
+      "name": "packages/sql/pglite/CHANGELOG.md:markdown",
+      "start": 306,
+      "end": 462
+     },
+     {
+      "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
+      "start": 312,
+      "end": 468
+     },
+     {
+      "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
+      "start": 308,
+      "end": 464
+     },
+     {
+      "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
+      "start": 304,
+      "end": 460
+     }
+    ],
+    "copies": 10,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 43,
+    "tokens": 4442,
+    "first": {
+     "name": "packages/atom/react/CHANGELOG.md:markdown",
+     "start": 71,
+     "end": 113
+    },
+    "others": [
+     {
+      "name": "packages/atom/solid/CHANGELOG.md:markdown",
+      "start": 71,
+      "end": 113
+     },
+     {
+      "name": "packages/atom/vue/CHANGELOG.md:markdown",
+      "start": 71,
+      "end": 113
+     },
+     {
+      "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+      "start": 71,
+      "end": 113
+     },
+     {
+      "name": "packages/platform/browser/CHANGELOG.md:markdown",
+      "start": 71,
+      "end": 113
+     },
+     {
+      "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+      "start": 71,
+      "end": 113
+     }
+    ],
+    "copies": 6,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
     "lines": 487,
     "tokens": 20278,
-    "firstFile": {
+    "first": {
      "name": "packages/atom/solid/CHANGELOG.md:markdown",
      "start": 114,
      "end": 600
     },
-    "secondFile": {
-     "name": "packages/atom/vue/CHANGELOG.md:markdown",
-     "start": 114,
-     "end": 600
-    }
+    "others": [
+     {
+      "name": "packages/atom/vue/CHANGELOG.md:markdown",
+      "start": 114,
+      "end": 600
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 634,
-    "tokens": 16696,
-    "firstFile": {
-     "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
-     "start": 303,
-     "end": 936
+    "lines": 9,
+    "tokens": 2723,
+    "first": {
+     "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+     "start": 195,
+     "end": 203
     },
-    "secondFile": {
-     "name": "packages/sql/sqlite-do/CHANGELOG.md:markdown",
-     "start": 298,
-     "end": 931
-    }
+    "others": [
+     {
+      "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+      "start": 197,
+      "end": 205
+     },
+     {
+      "name": "packages/platform/browser/CHANGELOG.md:markdown",
+      "start": 206,
+      "end": 214
+     },
+     {
+      "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+      "start": 181,
+      "end": 189
+     },
+     {
+      "name": "packages/sql/pg/CHANGELOG.md:markdown",
+      "start": 253,
+      "end": 261
+     },
+     {
+      "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
+      "start": 188,
+      "end": 196
+     },
+     {
+      "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
+      "start": 182,
+      "end": 190
+     },
+     {
+      "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
+      "start": 186,
+      "end": 194
+     }
+    ],
+    "copies": 8,
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 1040,
-    "tokens": 13681,
-    "firstFile": {
-     "name": "packages/sql/pg/CHANGELOG.md:markdown",
-     "start": 1006,
-     "end": 2045
+    "lines": 106,
+    "tokens": 3628,
+    "first": {
+     "name": "packages/ai/openrouter/CHANGELOG.md:markdown",
+     "start": 709,
+     "end": 814
     },
-    "secondFile": {
-     "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
-     "start": 927,
-     "end": 1966
-    }
+    "others": [
+     {
+      "name": "packages/atom/react/CHANGELOG.md:markdown",
+      "start": 668,
+      "end": 773
+     },
+     {
+      "name": "packages/atom/solid/CHANGELOG.md:markdown",
+      "start": 665,
+      "end": 770
+     },
+     {
+      "name": "packages/atom/vue/CHANGELOG.md:markdown",
+      "start": 663,
+      "end": 768
+     },
+     {
+      "name": "packages/sql/d1/CHANGELOG.md:markdown",
+      "start": 680,
+      "end": 785
+     },
+     {
+      "name": "packages/sql/pg/CHANGELOG.md:markdown",
+      "start": 759,
+      "end": 864
+     }
+    ],
+    "copies": 6,
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 73,
-    "tokens": 12935,
-    "firstFile": {
+    "lines": 12,
+    "tokens": 2939,
+    "first": {
+     "name": "packages/ai/anthropic/CHANGELOG.md:markdown",
+     "start": 205,
+     "end": 216
+    },
+    "others": [
+     {
+      "name": "packages/atom/react/CHANGELOG.md:markdown",
+      "start": 186,
+      "end": 197
+     },
+     {
+      "name": "packages/opentelemetry/CHANGELOG.md:markdown",
+      "start": 207,
+      "end": 218
+     },
+     {
+      "name": "packages/platform/browser/CHANGELOG.md:markdown",
+      "start": 224,
+      "end": 235
+     },
+     {
+      "name": "packages/sql/mssql/CHANGELOG.md:markdown",
+      "start": 193,
+      "end": 204
+     },
+     {
+      "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
+      "start": 194,
+      "end": 205
+     },
+     {
+      "name": "packages/vitest/CHANGELOG.md:markdown",
+      "start": 326,
+      "end": 337
+     }
+    ],
+    "copies": 7,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 274,
+    "tokens": 8566,
+    "first": {
      "name": "packages/sql/d1/CHANGELOG.md:markdown",
-     "start": 118,
-     "end": 190
-    },
-    "secondFile": {
-     "name": "packages/sql/mysql2/CHANGELOG.md:markdown",
-     "start": 117,
-     "end": 189
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 476,
-    "tokens": 12862,
-    "firstFile": {
-     "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-     "start": 455,
+     "start": 657,
      "end": 930
     },
-    "secondFile": {
-     "name": "packages/sql/mssql/CHANGELOG.md:markdown",
-     "start": 466,
-     "end": 941
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 476,
-    "tokens": 12862,
-    "firstFile": {
-     "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-     "start": 455,
-     "end": 930
-    },
-    "secondFile": {
-     "name": "packages/sql/sqlite-bun/CHANGELOG.md:markdown",
-     "start": 461,
-     "end": 936
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 476,
-    "tokens": 12862,
-    "firstFile": {
-     "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-     "start": 455,
-     "end": 930
-    },
-    "secondFile": {
-     "name": "packages/sql/sqlite-node/CHANGELOG.md:markdown",
-     "start": 457,
-     "end": 932
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 476,
-    "tokens": 12862,
-    "firstFile": {
-     "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-     "start": 455,
-     "end": 930
-    },
-    "secondFile": {
-     "name": "packages/sql/sqlite-react-native/CHANGELOG.md:markdown",
-     "start": 453,
-     "end": 928
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 476,
-    "tokens": 12862,
-    "firstFile": {
-     "name": "packages/sql/libsql/CHANGELOG.md:markdown",
-     "start": 455,
-     "end": 930
-    },
-    "secondFile": {
-     "name": "packages/sql/sqlite-wasm/CHANGELOG.md:markdown",
-     "start": 461,
-     "end": 936
-    }
-   },
-   {
-    "format": "markdown",
-    "lines": 414,
-    "tokens": 10612,
-    "firstFile": {
-     "name": "packages/atom/react/CHANGELOG.md:markdown",
-     "start": 190,
-     "end": 603
-    },
-    "secondFile": {
-     "name": "packages/atom/solid/CHANGELOG.md:markdown",
-     "start": 187,
-     "end": 600
-    }
+    "others": [
+     {
+      "name": "packages/sql/libsql/CHANGELOG.md:markdown",
+      "start": 657,
+      "end": 930
+     },
+     {
+      "name": "packages/sql/mysql2/CHANGELOG.md:markdown",
+      "start": 660,
+      "end": 933
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
    }
   ],
   "health": {
@@ -498,6 +825,692 @@
      "lines": 422
     }
    ]
-  }
+  },
+  "code": {
+   "sources": 896,
+   "lines": 487554,
+   "tokens": 2078635,
+   "clones": 3293,
+   "duplicatedLines": 42643,
+   "duplicatedTokens": 267583,
+   "percentage": 8.75,
+   "percentageTokens": 12.87,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 882,
+     "lines": 486247,
+     "clones": 3288,
+     "duplicatedLines": 42579,
+     "percentage": 8.76
+    },
+    {
+     "format": "javascript",
+     "sources": 10,
+     "lines": 1079,
+     "clones": 4,
+     "duplicatedLines": 36,
+     "percentage": 3.34
+    },
+    {
+     "format": "bash",
+     "sources": 4,
+     "lines": 228,
+     "clones": 1,
+     "duplicatedLines": 28,
+     "percentage": 12.28
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 64,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 9481,
+      "end": 9489
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9520,
+       "end": 9528
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9545,
+       "end": 9553
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9570,
+       "end": 9578
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9597,
+       "end": 9605
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9624,
+       "end": 9632
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9653,
+       "end": 9661
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9682,
+       "end": 9690
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9713,
+       "end": 9721
+      }
+     ],
+     "copies": 91,
+     "excerpt": {
+      "lines": [
+       "      : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E",
+       "      : never,",
+       "    [Eff] extends [never] ? never",
+       "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+       "      : never",
+       "  >,",
+       "  ...args: Args",
+       ") => A,",
+       "b: (_: A, ...args: Args) => B"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "      : [Eff] extends [Effect<infer _A, infer E, infer _R>] ? E",
+       "      : never,",
+       "    [Eff] extends [never] ? never",
+       "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+       "      : never",
+       "  >,",
+       "  ...args: Args",
+       ") => A,",
+       "b: (_: A, ...args: Args) => B,"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 64,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 9522,
+      "end": 9529
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9572,
+       "end": 9579
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9599,
+       "end": 9606
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9626,
+       "end": 9633
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9655,
+       "end": 9662
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9684,
+       "end": 9691
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9715,
+       "end": 9722
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9746,
+       "end": 9753
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9779,
+       "end": 9786
+      }
+     ],
+     "copies": 86,
+     "excerpt": {
+      "lines": [
+       "    [Eff] extends [never] ? never",
+       "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+       "      : never",
+       "  >,",
+       "  ...args: Args",
+       ") => A,",
+       "b: (_: A, ...args: Args) => B,",
+       "c: (_: B, ...args: Args) => C"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "    [Eff] extends [never] ? never",
+       "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+       "      : never",
+       "  >,",
+       "  ...args: Args",
+       ") => A,",
+       "b: (_: A, ...args: Args) => B,",
+       "c: (_: B, ...args: Args) => C,"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 64,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 9573,
+      "end": 9580
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9627,
+       "end": 9634
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9656,
+       "end": 9663
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9685,
+       "end": 9692
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9716,
+       "end": 9723
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9747,
+       "end": 9754
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9780,
+       "end": 9787
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9813,
+       "end": 9820
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9848,
+       "end": 9855
+      }
+     ],
+     "copies": 81,
+     "excerpt": {
+      "lines": [
+       "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+       "      : never",
+       "  >,",
+       "  ...args: Args",
+       ") => A,",
+       "b: (_: A, ...args: Args) => B,",
+       "c: (_: B, ...args: Args) => C,",
+       "d: (_: C, ...args: Args) => D"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "      : [Eff] extends [Effect<infer _A, infer _E, infer R>] ? R",
+       "      : never",
+       "  >,",
+       "  ...args: Args",
+       ") => A,",
+       "b: (_: A, ...args: Args) => B,",
+       "c: (_: B, ...args: Args) => C,",
+       "d: (_: C, ...args: Args) => D,"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 6,
+     "tokens": 64,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 9630,
+      "end": 9635
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9688,
+       "end": 9693
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9719,
+       "end": 9724
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9750,
+       "end": 9755
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9783,
+       "end": 9788
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9816,
+       "end": 9821
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9851,
+       "end": 9856
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9886,
+       "end": 9891
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9923,
+       "end": 9928
+      }
+     ],
+     "copies": 76,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 127,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 11075,
+      "end": 11089
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11124,
+       "end": 11138
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11199,
+       "end": 11213
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11281,
+       "end": 11295
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11369,
+       "end": 11383
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11463,
+       "end": 11477
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11563,
+       "end": 11577
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11669,
+       "end": 11683
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11781,
+       "end": 11795
+      }
+     ],
+     "copies": 20,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 118,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 11045,
+      "end": 11058
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11092,
+       "end": 11105
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11149,
+       "end": 11162
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11226,
+       "end": 11239
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11310,
+       "end": 11323
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11400,
+       "end": 11413
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11496,
+       "end": 11509
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11598,
+       "end": 11611
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11706,
+       "end": 11719
+      }
+     ],
+     "copies": 20,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 118,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 11060,
+      "end": 11073
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11108,
+       "end": 11121
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11174,
+       "end": 11187
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11253,
+       "end": 11266
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11339,
+       "end": 11352
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11431,
+       "end": 11444
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11529,
+       "end": 11542
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11633,
+       "end": 11646
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 11743,
+       "end": 11756
+      }
+     ],
+     "copies": 20,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 105,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 9460,
+      "end": 9473
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9491,
+       "end": 9504
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9539,
+       "end": 9552
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9591,
+       "end": 9604
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9647,
+       "end": 9660
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9707,
+       "end": 9720
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9771,
+       "end": 9784
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9839,
+       "end": 9852
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9911,
+       "end": 9924
+      }
+     ],
+     "copies": 20,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 105,
+     "first": {
+      "name": "packages/effect/src/Effect.ts",
+      "start": 9445,
+      "end": 9458
+     },
+     "others": [
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9475,
+       "end": 9488
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9514,
+       "end": 9527
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9618,
+       "end": 9631
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9676,
+       "end": 9689
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9738,
+       "end": 9751
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9804,
+       "end": 9817
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9874,
+       "end": 9887
+      },
+      {
+       "name": "packages/effect/src/Effect.ts",
+       "start": 9948,
+       "end": 9961
+      }
+     ],
+     "copies": 19,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 77,
+     "first": {
+      "name": "packages/ai/anthropic/src/Generated.ts",
+      "start": 9904,
+      "end": 9925
+     },
+     "others": [
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 9934,
+       "end": 9955
+      },
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 9964,
+       "end": 9985
+      },
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 10070,
+       "end": 10091
+      },
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 10100,
+       "end": 10121
+      },
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 10202,
+       "end": 10223
+      },
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 10232,
+       "end": 10253
+      },
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 10446,
+       "end": 10467
+      },
+      {
+       "name": "packages/ai/anthropic/src/Generated.ts",
+       "start": 10476,
+       "end": 10497
+      }
+     ],
+     "copies": 17,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 42,
+    "minified": 0,
+    "sample": [
+     "packages/ai/anthropic/src/index.ts",
+     "packages/ai/openai-compat/src/index.ts",
+     "packages/ai/openai/src/index.ts",
+     "packages/ai/openrouter/src/index.ts",
+     "packages/effect/src/ai/index.ts",
+     "packages/effect/src/cli/index.ts",
+     "packages/effect/src/cluster/index.ts",
+     "packages/effect/src/devtools/index.ts",
+     "packages/effect/src/encoding/index.ts",
+     "packages/effect/src/eventlog/index.ts",
+     "packages/effect/src/http-api/index.ts",
+     "packages/effect/src/http/index.ts",
+     "packages/effect/src/net/index.ts",
+     "packages/effect/src/observability/index.ts",
+     "packages/effect/src/persistence/index.ts",
+     "packages/effect/src/process/index.ts",
+     "packages/effect/src/reactivity/index.ts",
+     "packages/effect/src/rpc/index.ts",
+     "packages/effect/src/schema/index.ts",
+     "packages/effect/src/socket/index.ts"
+    ]
+   }
+  },
+  "measuredAt": "2026-10-07T05:26:17.349Z",
+  "jscpdVersion": "5.4.0"
  }
 }

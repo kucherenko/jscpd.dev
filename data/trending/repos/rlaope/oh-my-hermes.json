@@ -9,10 +9,12 @@
    "starsToday": 77,
    "headSha": "84cc746d86e1e51b75c353f42ffcc4ec7f526f11",
    "sources": 2353,
-   "lines": 850637,
-   "clones": 3382,
-   "duplicatedLines": 59587,
-   "percentage": 7,
+   "lines": 817024,
+   "clones": 3919,
+   "duplicatedLines": 65036,
+   "percentage": 7.96,
+   "codePercentage": 2.75,
+   "codeSources": 937,
    "healthScore": null,
    "healthGrade": null
   },
@@ -23,10 +25,12 @@
    "starsToday": 80,
    "headSha": "964ddc10b83d465b9a30942859e7ce71f9a14ec0",
    "sources": 2432,
-   "lines": 868964,
+   "lines": 834561,
    "clones": 3333,
-   "duplicatedLines": 60139,
-   "percentage": 6.92,
+   "duplicatedLines": 61093,
+   "percentage": 7.32,
+   "codePercentage": 2.73,
+   "codeSources": 957,
    "healthScore": null,
    "healthGrade": null
   }
@@ -42,97 +46,97 @@
   "starsToday": 80,
   "defaultBranch": "main",
   "headSha": "964ddc10b83d465b9a30942859e7ce71f9a14ec0",
-  "durationMs": 2377,
+  "durationMs": 3248,
   "total": {
    "sources": 2432,
-   "lines": 868964,
-   "tokens": 5593139,
+   "lines": 834561,
+   "tokens": 5592974,
    "clones": 3333,
-   "duplicatedLines": 60139,
+   "duplicatedLines": 61093,
    "duplicatedTokens": 472292,
-   "percentage": 6.92,
+   "percentage": 7.32,
    "percentageTokens": 8.44
   },
   "formats": [
    {
     "format": "python",
     "sources": 1664,
-    "lines": 702165,
+    "lines": 701668,
     "clones": 1800,
-    "duplicatedLines": 17310,
-    "percentage": 2.47
+    "duplicatedLines": 19110,
+    "percentage": 2.72
    },
    {
     "format": "markdown",
     "sources": 518,
     "lines": 76736,
     "clones": 1222,
-    "duplicatedLines": 23615,
-    "percentage": 30.77
+    "duplicatedLines": 24837,
+    "percentage": 32.37
    },
    {
     "format": "json",
     "sources": 100,
-    "lines": 34076,
+    "lines": 28317,
     "clones": 222,
-    "duplicatedLines": 10120,
-    "percentage": 29.7
+    "duplicatedLines": 10342,
+    "percentage": 36.52
    },
    {
     "format": "bash",
     "sources": 73,
-    "lines": 23166,
+    "lines": 6510,
     "clones": 30,
-    "duplicatedLines": 4911,
-    "percentage": 21.2
+    "duplicatedLines": 3547,
+    "percentage": 54.49
    },
    {
     "format": "markup",
     "sources": 18,
     "lines": 5655,
     "clones": 28,
-    "duplicatedLines": 364,
-    "percentage": 6.44
+    "duplicatedLines": 392,
+    "percentage": 6.93
    },
    {
     "format": "powershell",
     "sources": 10,
-    "lines": 5136,
+    "lines": 4162,
     "clones": 15,
-    "duplicatedLines": 2617,
-    "percentage": 50.95
+    "duplicatedLines": 2632,
+    "percentage": 63.24
    },
    {
     "format": "yaml",
     "sources": 19,
-    "lines": 2165,
+    "lines": 2161,
     "clones": 8,
-    "duplicatedLines": 154,
-    "percentage": 7.11
+    "duplicatedLines": 162,
+    "percentage": 7.5
    },
    {
     "format": "text",
     "sources": 16,
-    "lines": 11091,
+    "lines": 609,
     "clones": 4,
-    "duplicatedLines": 1019,
-    "percentage": 9.19
+    "duplicatedLines": 38,
+    "percentage": 6.24
    },
    {
     "format": "css",
     "sources": 2,
     "lines": 4384,
     "clones": 3,
-    "duplicatedLines": 18,
-    "percentage": 0.41
+    "duplicatedLines": 21,
+    "percentage": 0.48
    },
    {
     "format": "javascript",
     "sources": 9,
     "lines": 3992,
     "clones": 1,
-    "duplicatedLines": 11,
-    "percentage": 0.28
+    "duplicatedLines": 12,
+    "percentage": 0.3
    }
   ],
   "topClones": [
@@ -140,152 +144,883 @@
     "format": "bash",
     "lines": 567,
     "tokens": 4931,
-    "firstFile": {
+    "first": {
      "name": ".codex/install.sh",
      "start": 10,
      "end": 576
     },
-    "secondFile": {
-     "name": ".cursor/install.sh",
-     "start": 10,
-     "end": 576
-    }
+    "others": [
+     {
+      "name": ".cursor/install.sh",
+      "start": 10,
+      "end": 576
+     },
+     {
+      "name": ".openclaw/install.sh",
+      "start": 10,
+      "end": 576
+     },
+     {
+      "name": ".opencode/install.sh",
+      "start": 10,
+      "end": 576
+     },
+     {
+      "name": ".pi/install.sh",
+      "start": 10,
+      "end": 576
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "    *) fail 'Usage: install.sh [--user]' ;;",
+      "esac",
+      "base=$(pwd -P)",
+      "if [ \"$scope\" = user ]; then",
+      "    [ -n \"${HOME:-}\" ] || fail 'HOME is required for --user'",
+      "    base=$(CDPATH= cd -- \"$HOME\" && pwd -P)",
+      "    target=\"$base/.agents/skills\"",
+      "else",
+      "    target=\"$base/.agents/skills\"",
+      "fi"
+     ],
+     "total": 567
+    },
+    "kind": "code"
    },
    {
-    "format": "bash",
-    "lines": 567,
-    "tokens": 4931,
-    "firstFile": {
-     "name": ".codex/install.sh",
-     "start": 10,
-     "end": 576
+    "format": "powershell",
+    "lines": 412,
+    "tokens": 3392,
+    "first": {
+     "name": ".codex/install.ps1",
+     "start": 7,
+     "end": 418
     },
-    "secondFile": {
-     "name": ".openclaw/install.sh",
-     "start": 10,
-     "end": 576
-    }
+    "others": [
+     {
+      "name": ".cursor/install.ps1",
+      "start": 7,
+      "end": 418
+     },
+     {
+      "name": ".openclaw/install.ps1",
+      "start": 7,
+      "end": 418
+     },
+     {
+      "name": ".opencode/install.ps1",
+      "start": 7,
+      "end": 418
+     },
+     {
+      "name": ".pi/install.ps1",
+      "start": 7,
+      "end": 418
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "$base = (Get-Location).ProviderPath",
+      "if ($User) {",
+      "    $base = $env:USERPROFILE",
+      "    if (-not $base) { $base = $env:HOME }",
+      "    if (-not $base) { throw 'User profile is required for -User' }",
+      "    $target = Join-Path $base '.agents/skills'",
+      "} else {",
+      "    $target = Join-Path $base '.agents/skills'",
+      "}",
+      "$source = Join-Path (Split-Path -Parent $PSScriptRoot) 'agent-skills'"
+     ],
+     "total": 412
+    },
+    "kind": "code"
    },
    {
-    "format": "bash",
-    "lines": 567,
-    "tokens": 4931,
-    "firstFile": {
-     "name": ".codex/install.sh",
-     "start": 10,
-     "end": 576
+    "format": "markdown",
+    "lines": 16,
+    "tokens": 172,
+    "first": {
+     "name": "agent-skills/omh-accessibility-audit/SKILL.md:markdown",
+     "start": 123,
+     "end": 138
     },
-    "secondFile": {
-     "name": ".opencode/install.sh",
-     "start": 10,
-     "end": 576
-    }
+    "others": [
+     {
+      "name": "agent-skills/omh-agent-debug/SKILL.md:markdown",
+      "start": 102,
+      "end": 117
+     },
+     {
+      "name": "agent-skills/omh-ai-slop-cleaner/SKILL.md:markdown",
+      "start": 100,
+      "end": 115
+     },
+     {
+      "name": "agent-skills/omh-apple-design/SKILL.md:markdown",
+      "start": 106,
+      "end": 121
+     },
+     {
+      "name": "agent-skills/omh-application-threat-model/SKILL.md:markdown",
+      "start": 117,
+      "end": 132
+     },
+     {
+      "name": "agent-skills/omh-ask/SKILL.md:markdown",
+      "start": 91,
+      "end": 106
+     },
+     {
+      "name": "agent-skills/omh-autoresearch-goal/SKILL.md:markdown",
+      "start": 92,
+      "end": 107
+     },
+     {
+      "name": "agent-skills/omh-award-bar-score/SKILL.md:markdown",
+      "start": 107,
+      "end": 122
+     },
+     {
+      "name": "agent-skills/omh-backend/SKILL.md:markdown",
+      "start": 122,
+      "end": 137
+     }
+    ],
+    "copies": 50,
+    "excerpt": {
+     "lines": [
+      "- Do not call external scanners, browsers, screen readers, LLMs, or platform services from OMH core.",
+      "",
+      "## Runtime Evidence",
+      "",
+      "Use the current host's own tools and subagent/task mechanism when available;",
+      "otherwise run the same lanes sequentially or name the unavailable capability.",
+      "A prepared plan, handoff, checklist, or skill installation is not execution,",
+      "review, CI, merge-readiness, or merge evidence. Report actual tool results or",
+      "`not_observed` / `not_available`; never invent dispatch or host accounting.",
+      "Treat supplied context as advisory, not proof of hidden memory reads or writes."
+     ],
+     "total": 16
+    },
+    "kind": "docs"
    },
    {
-    "format": "bash",
-    "lines": 567,
-    "tokens": 4931,
-    "firstFile": {
-     "name": ".codex/install.sh",
-     "start": 10,
-     "end": 576
+    "format": "markdown",
+    "lines": 14,
+    "tokens": 136,
+    "first": {
+     "name": "skills/omh-accessibility-audit/SKILL.md:markdown",
+     "start": 136,
+     "end": 149
     },
-    "secondFile": {
-     "name": ".pi/install.sh",
-     "start": 10,
-     "end": 576
-    }
+    "others": [
+     {
+      "name": "skills/omh-achievements/SKILL.md:markdown",
+      "start": 108,
+      "end": 121
+     },
+     {
+      "name": "skills/omh-adversarial-consensus/SKILL.md:markdown",
+      "start": 124,
+      "end": 137
+     },
+     {
+      "name": "skills/omh-agent-board/SKILL.md:markdown",
+      "start": 110,
+      "end": 123
+     },
+     {
+      "name": "skills/omh-agent-debug/SKILL.md:markdown",
+      "start": 115,
+      "end": 128
+     },
+     {
+      "name": "skills/omh-agent-evaluation/SKILL.md:markdown",
+      "start": 117,
+      "end": 130
+     },
+     {
+      "name": "skills/omh-agent-ops-review/SKILL.md:markdown",
+      "start": 115,
+      "end": 128
+     },
+     {
+      "name": "skills/omh-apple-design/SKILL.md:markdown",
+      "start": 119,
+      "end": 132
+     },
+     {
+      "name": "skills/omh-apps/SKILL.md:markdown",
+      "start": 115,
+      "end": 128
+     }
+    ],
+    "copies": 52,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 514,
+    "tokens": 1581,
+    "first": {
+     "name": "benchmarks/cross-harness/v1/example-failing-child-submission.json",
+     "start": 1,
+     "end": 514
+    },
+    "others": [
+     {
+      "name": "benchmarks/cross-harness/v1/example-level-four-submission.json",
+      "start": 1,
+      "end": 514
+     },
+     {
+      "name": "benchmarks/cross-harness/v1/example-partial-submission.json",
+      "start": 1,
+      "end": 514
+     },
+     {
+      "name": "benchmarks/cross-harness/v1/example-passing-submission.json",
+      "start": 1,
+      "end": 514
+     },
+     {
+      "name": "benchmarks/cross-harness/v1/example-unsupported-submission.json",
+      "start": 1,
+      "end": 514
+     }
+    ],
+    "copies": 5,
+    "kind": "data"
    },
    {
     "format": "bash",
     "lines": 558,
     "tokens": 4877,
-    "firstFile": {
+    "first": {
      "name": ".claude/install.sh",
      "start": 19,
      "end": 576
     },
-    "secondFile": {
-     "name": ".codex/install.sh",
-     "start": 19,
-     "end": 576
-    }
+    "others": [
+     {
+      "name": ".codex/install.sh",
+      "start": 19,
+      "end": 576
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
    },
    {
-    "format": "powershell",
-    "lines": 412,
-    "tokens": 3392,
-    "firstFile": {
-     "name": ".codex/install.ps1",
-     "start": 7,
-     "end": 418
+    "format": "json",
+    "lines": 174,
+    "tokens": 687,
+    "first": {
+     "name": ".claude/manifest.json",
+     "start": 2,
+     "end": 175
     },
-    "secondFile": {
-     "name": ".cursor/install.ps1",
-     "start": 7,
-     "end": 418
-    }
+    "others": [
+     {
+      "name": ".codex/manifest.json",
+      "start": 2,
+      "end": 175
+     },
+     {
+      "name": ".cursor/manifest.json",
+      "start": 2,
+      "end": 175
+     },
+     {
+      "name": ".openclaw/manifest.json",
+      "start": 2,
+      "end": 175
+     },
+     {
+      "name": ".opencode/manifest.json",
+      "start": 2,
+      "end": 175
+     },
+     {
+      "name": ".pi/manifest.json",
+      "start": 2,
+      "end": 175
+     }
+    ],
+    "copies": 6,
+    "kind": "data"
    },
    {
-    "format": "powershell",
-    "lines": 412,
-    "tokens": 3392,
-    "firstFile": {
-     "name": ".codex/install.ps1",
-     "start": 7,
-     "end": 418
+    "format": "markdown",
+    "lines": 11,
+    "tokens": 142,
+    "first": {
+     "name": "skills/omh-achievements/SKILL.md:markdown",
+     "start": 50,
+     "end": 60
     },
-    "secondFile": {
-     "name": ".openclaw/install.ps1",
-     "start": 7,
-     "end": 418
-    }
-   },
-   {
-    "format": "powershell",
-    "lines": 412,
-    "tokens": 3392,
-    "firstFile": {
-     "name": ".codex/install.ps1",
-     "start": 7,
-     "end": 418
-    },
-    "secondFile": {
-     "name": ".opencode/install.ps1",
-     "start": 7,
-     "end": 418
-    }
-   },
-   {
-    "format": "powershell",
-    "lines": 412,
-    "tokens": 3392,
-    "firstFile": {
-     "name": ".codex/install.ps1",
-     "start": 7,
-     "end": 418
-    },
-    "secondFile": {
-     "name": ".pi/install.ps1",
-     "start": 7,
-     "end": 418
-    }
+    "others": [
+     {
+      "name": "skills/omh-agent-debug/SKILL.md:markdown",
+      "start": 51,
+      "end": 61
+     },
+     {
+      "name": "skills/omh-agent-evaluation/SKILL.md:markdown",
+      "start": 51,
+      "end": 61
+     },
+     {
+      "name": "skills/omh-agent-ops-review/SKILL.md:markdown",
+      "start": 50,
+      "end": 60
+     },
+     {
+      "name": "skills/omh-apps/SKILL.md:markdown",
+      "start": 51,
+      "end": 61
+     },
+     {
+      "name": "skills/omh-ask/SKILL.md:markdown",
+      "start": 49,
+      "end": 59
+     },
+     {
+      "name": "skills/omh-browser/SKILL.md:markdown",
+      "start": 54,
+      "end": 64
+     },
+     {
+      "name": "skills/omh-capability-toggle/SKILL.md:markdown",
+      "start": 52,
+      "end": 62
+     },
+     {
+      "name": "skills/omh-doctor/SKILL.md:markdown",
+      "start": 53,
+      "end": 63
+     }
+    ],
+    "copies": 25,
+    "kind": "docs"
    },
    {
     "format": "powershell",
     "lines": 404,
     "tokens": 3330,
-    "firstFile": {
+    "first": {
      "name": ".claude/install.ps1",
      "start": 15,
      "end": 418
     },
-    "secondFile": {
-     "name": ".codex/install.ps1",
-     "start": 15,
-     "end": 418
-    }
+    "others": [
+     {
+      "name": ".codex/install.ps1",
+      "start": 15,
+      "end": 418
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 63,
+    "tokens": 193,
+    "first": {
+     "name": "examples/wrapper-golden/platform-capability-matrix.json",
+     "start": 138,
+     "end": 200
+    },
+    "others": [
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 268,
+      "end": 330
+     },
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 333,
+      "end": 395
+     },
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 398,
+      "end": 460
+     },
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 463,
+      "end": 525
+     },
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 528,
+      "end": 590
+     },
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 593,
+      "end": 655
+     },
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 658,
+      "end": 720
+     },
+     {
+      "name": "examples/wrapper-golden/platform-capability-matrix.json",
+      "start": 723,
+      "end": 785
+     }
+    ],
+    "copies": 18,
+    "kind": "docs"
    }
-  ]
+  ],
+  "code": {
+   "sources": 957,
+   "lines": 420065,
+   "tokens": 2459719,
+   "clones": 478,
+   "duplicatedLines": 11477,
+   "duplicatedTokens": 80695,
+   "percentage": 2.73,
+   "percentageTokens": 3.28,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 925,
+     "lines": 407098,
+     "clones": 447,
+     "duplicatedLines": 5402,
+     "percentage": 1.33
+    },
+    {
+     "format": "bash",
+     "sources": 16,
+     "lines": 5255,
+     "clones": 15,
+     "duplicatedLines": 3431,
+     "percentage": 65.29
+    },
+    {
+     "format": "powershell",
+     "sources": 7,
+     "lines": 3951,
+     "clones": 15,
+     "duplicatedLines": 2632,
+     "percentage": 66.62
+    },
+    {
+     "format": "javascript",
+     "sources": 8,
+     "lines": 3587,
+     "clones": 1,
+     "duplicatedLines": 12,
+     "percentage": 0.33
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 174,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "bash",
+     "lines": 567,
+     "tokens": 4931,
+     "first": {
+      "name": ".codex/install.sh",
+      "start": 10,
+      "end": 576
+     },
+     "others": [
+      {
+       "name": ".cursor/install.sh",
+       "start": 10,
+       "end": 576
+      },
+      {
+       "name": ".openclaw/install.sh",
+       "start": 10,
+       "end": 576
+      },
+      {
+       "name": ".opencode/install.sh",
+       "start": 10,
+       "end": 576
+      },
+      {
+       "name": ".pi/install.sh",
+       "start": 10,
+       "end": 576
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "    *) fail 'Usage: install.sh [--user]' ;;",
+       "esac",
+       "base=$(pwd -P)",
+       "if [ \"$scope\" = user ]; then",
+       "    [ -n \"${HOME:-}\" ] || fail 'HOME is required for --user'",
+       "    base=$(CDPATH= cd -- \"$HOME\" && pwd -P)",
+       "    target=\"$base/.agents/skills\"",
+       "else",
+       "    target=\"$base/.agents/skills\"",
+       "fi"
+      ],
+      "total": 567
+     },
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 412,
+     "tokens": 3392,
+     "first": {
+      "name": ".codex/install.ps1",
+      "start": 7,
+      "end": 418
+     },
+     "others": [
+      {
+       "name": ".cursor/install.ps1",
+       "start": 7,
+       "end": 418
+      },
+      {
+       "name": ".openclaw/install.ps1",
+       "start": 7,
+       "end": 418
+      },
+      {
+       "name": ".opencode/install.ps1",
+       "start": 7,
+       "end": 418
+      },
+      {
+       "name": ".pi/install.ps1",
+       "start": 7,
+       "end": 418
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "$base = (Get-Location).ProviderPath",
+       "if ($User) {",
+       "    $base = $env:USERPROFILE",
+       "    if (-not $base) { $base = $env:HOME }",
+       "    if (-not $base) { throw 'User profile is required for -User' }",
+       "    $target = Join-Path $base '.agents/skills'",
+       "} else {",
+       "    $target = Join-Path $base '.agents/skills'",
+       "}",
+       "$source = Join-Path (Split-Path -Parent $PSScriptRoot) 'agent-skills'"
+      ],
+      "total": 412
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 558,
+     "tokens": 4877,
+     "first": {
+      "name": ".claude/install.sh",
+      "start": 19,
+      "end": 576
+     },
+     "others": [
+      {
+       "name": ".codex/install.sh",
+       "start": 19,
+       "end": 576
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "fi",
+       "source=\"$(dirname -- \"$0\")/../agent-skills\"",
+       "[ ! -L \"$source\" ] || fail 'Symlink source root'",
+       "source=$(CDPATH= cd -- \"$source\" && pwd -P)",
+       "if command -v sha256sum >/dev/null 2>&1; then",
+       "    checksum() { sha256sum \"$@\"; }",
+       "elif command -v shasum >/dev/null 2>&1; then",
+       "    checksum() { shasum -a 256 \"$@\"; }",
+       "else",
+       "    fail 'SHA256 verification requires sha256sum or shasum'"
+      ],
+      "total": 558
+     },
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 404,
+     "tokens": 3330,
+     "first": {
+      "name": ".claude/install.ps1",
+      "start": 15,
+      "end": 418
+     },
+     "others": [
+      {
+       "name": ".codex/install.ps1",
+       "start": 15,
+       "end": 418
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 105,
+     "tokens": 528,
+     "first": {
+      "name": ".claude/install.sh",
+      "start": 576,
+      "end": 680
+     },
+     "others": [
+      {
+       "name": ".codex/install.sh",
+       "start": 576,
+       "end": 680
+      },
+      {
+       "name": ".cursor/install.sh",
+       "start": 576,
+       "end": 680
+      },
+      {
+       "name": ".openclaw/install.sh",
+       "start": 576,
+       "end": 680
+      },
+      {
+       "name": ".opencode/install.sh",
+       "start": 576,
+       "end": 680
+      },
+      {
+       "name": ".pi/install.sh",
+       "start": 576,
+       "end": 680
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 104,
+     "tokens": 525,
+     "first": {
+      "name": ".claude/install.ps1",
+      "start": 419,
+      "end": 522
+     },
+     "others": [
+      {
+       "name": ".codex/install.ps1",
+       "start": 419,
+       "end": 522
+      },
+      {
+       "name": ".cursor/install.ps1",
+       "start": 419,
+       "end": 522
+      },
+      {
+       "name": ".openclaw/install.ps1",
+       "start": 419,
+       "end": 522
+      },
+      {
+       "name": ".opencode/install.ps1",
+       "start": 419,
+       "end": 522
+      },
+      {
+       "name": ".pi/install.ps1",
+       "start": 419,
+       "end": 522
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 16,
+     "tokens": 100,
+     "first": {
+      "name": ".claude/install.sh",
+      "start": 1,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": ".codex/install.sh",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": ".cursor/install.sh",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": ".openclaw/install.sh",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": ".opencode/install.sh",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": ".pi/install.sh",
+       "start": 1,
+       "end": 16
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 12,
+     "tokens": 89,
+     "first": {
+      "name": ".claude/install.ps1",
+      "start": 1,
+      "end": 12
+     },
+     "others": [
+      {
+       "name": ".codex/install.ps1",
+       "start": 1,
+       "end": 12
+      },
+      {
+       "name": ".cursor/install.ps1",
+       "start": 1,
+       "end": 12
+      },
+      {
+       "name": ".openclaw/install.ps1",
+       "start": 1,
+       "end": 12
+      },
+      {
+       "name": ".opencode/install.ps1",
+       "start": 1,
+       "end": 12
+      },
+      {
+       "name": ".pi/install.ps1",
+       "start": 1,
+       "end": 12
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 140,
+     "first": {
+      "name": "src/workflows/hermes_ops.py",
+      "start": 675,
+      "end": 690
+     },
+     "others": [
+      {
+       "name": "src/workflows/materials.py",
+       "start": 427,
+       "end": 442
+      },
+      {
+       "name": "src/workflows/paper_learning.py",
+       "start": 954,
+       "end": 969
+      },
+      {
+       "name": "src/workflows/recurring_intents.py",
+       "start": 1756,
+       "end": 1771
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 57,
+     "first": {
+      "name": "src/wrapper/contract.py",
+      "start": 4474,
+      "end": 4480
+     },
+     "others": [
+      {
+       "name": "src/wrapper/contract.py",
+       "start": 4515,
+       "end": 4521
+      },
+      {
+       "name": "src/wrapper/contract.py",
+       "start": 4566,
+       "end": 4572
+      },
+      {
+       "name": "src/wrapper/contract.py",
+       "start": 4587,
+       "end": 4593
+      },
+      {
+       "name": "src/wrapper/contract.py",
+       "start": 4623,
+       "end": 4629
+      },
+      {
+       "name": "src/wrapper/contract.py",
+       "start": 4641,
+       "end": 4647
+      },
+      {
+       "name": "src/wrapper/contract.py",
+       "start": 4697,
+       "end": 4703
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "measuredAt": "2026-10-07T06:05:43.361Z",
+  "jscpdVersion": "5.4.0"
  }
 }
