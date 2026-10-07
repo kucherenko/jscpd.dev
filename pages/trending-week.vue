@@ -27,6 +27,15 @@ const description = computed(() => `${w.value.repos.length} GitHub trending repo
 
 useSeoMeta({ title, description, ogTitle: title, ogDescription: description, twitterCard: 'summary_large_image' })
 useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingWeekPath(week)}` }] })
+// The social card: the week's median next to its title (components/OgImage/Trending.takumi.vue).
+defineOgImage('Trending', {
+  headline: `Trending, ${weekRange(w.value)}`,
+  title: weekTitle(week),
+  description: `${w.value.repos.length} GitHub trending repositories measured with jscpd during the week.`,
+  value: `${coded.value ? w.value.summary.codeMedianPercentage : w.value.summary.medianPercentage}%`,
+  label: coded.value ? 'median duplicated code' : 'median duplication, all files',
+  tone: dupTone(coded.value ? w.value.summary.codeMedianPercentage! : w.value.summary.medianPercentage)
+})
 
 const tiles = computed(() => {
   const s = w.value.summary

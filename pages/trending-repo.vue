@@ -44,7 +44,17 @@ useSeoMeta({
   ogDescription: description,
   twitterCard: 'summary_large_image'
 })
-defineOgImage('Docs', { headline: 'Trending', title: title.value, description: description.value })
+// The social card: the repo's number next to its name (components/OgImage/Trending.takumi.vue).
+defineOgImage('Trending', {
+  headline: `Trending, ${formatDay(repo.value.date, { month: 'short', day: 'numeric', year: 'numeric' })}`,
+  title: repo.value.name,
+  description: code.value
+    ? `${num(code.value.sources)} code files, ${num(code.value.clones)} clones in code, ${repo.value.total.percentage}% duplicated over all files.`
+    : `${num(repo.value.total.sources)} files, ${num(repo.value.total.clones)} clones, measured with jscpd.`,
+  value: `${code.value ? code.value.percentage : repo.value.total.percentage}%`,
+  label: code.value ? 'duplicated code' : 'duplicated, all files',
+  tone: dupTone(code.value ? code.value.percentage : repo.value.total.percentage)
+})
 useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(name)}` }] })
 </script>
 
