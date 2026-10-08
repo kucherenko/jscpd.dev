@@ -1,0 +1,885 @@
+{
+ "name": "EpicGames/raddebugger",
+ "url": "https://github.com/EpicGames/raddebugger",
+ "appearances": [
+  {
+   "date": "2026-10-08",
+   "rank": 5,
+   "stars": 7923,
+   "starsToday": 90,
+   "headSha": "b6d8c3fd9eaf7b55960d80738365742a8fba9e29",
+   "sources": 436,
+   "lines": 270402,
+   "clones": 1184,
+   "duplicatedLines": 20188,
+   "percentage": 7.47,
+   "codePercentage": 5.75,
+   "codeSources": 384,
+   "healthScore": 43.3,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08T05:32:29.361Z",
+  "name": "EpicGames/raddebugger",
+  "url": "https://github.com/EpicGames/raddebugger",
+  "description": "A native, user-mode, multi-process, graphical debugger.",
+  "language": "C",
+  "stars": 7923,
+  "starsToday": 90,
+  "defaultBranch": "master",
+  "headSha": "b6d8c3fd9eaf7b55960d80738365742a8fba9e29",
+  "durationMs": 2056,
+  "total": {
+   "sources": 436,
+   "lines": 270402,
+   "tokens": 1708230,
+   "clones": 1184,
+   "duplicatedLines": 20188,
+   "duplicatedTokens": 133281,
+   "percentage": 7.47,
+   "percentageTokens": 7.8
+  },
+  "formats": [
+   {
+    "format": "c",
+    "sources": 228,
+    "lines": 216610,
+    "clones": 1154,
+    "duplicatedLines": 16455,
+    "percentage": 7.6
+   },
+   {
+    "format": "cpp",
+    "sources": 5,
+    "lines": 7198,
+    "clones": 17,
+    "duplicatedLines": 3453,
+    "percentage": 47.97
+   },
+   {
+    "format": "c-header",
+    "sources": 186,
+    "lines": 44090,
+    "clones": 10,
+    "duplicatedLines": 248,
+    "percentage": 0.56
+   },
+   {
+    "format": "yaml",
+    "sources": 1,
+    "lines": 218,
+    "clones": 2,
+    "duplicatedLines": 13,
+    "percentage": 5.96
+   },
+   {
+    "format": "json",
+    "sources": 1,
+    "lines": 93,
+    "clones": 1,
+    "duplicatedLines": 19,
+    "percentage": 20.43
+   },
+   {
+    "format": "markdown",
+    "sources": 2,
+    "lines": 1064,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 11,
+    "lines": 910,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 51,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "cpp",
+    "lines": 1646,
+    "tokens": 16245,
+    "first": {
+     "name": "src/mule/mule_main.cpp",
+     "start": 729,
+     "end": 2374
+    },
+    "others": [
+     {
+      "name": "src/mule/old_test_debuggees/mule.cpp",
+      "start": 1064,
+      "end": 2708
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  variadic_params(\"foo\", 123, 456);",
+      "}",
+      "",
+      "////////////////////////////////",
+      "// NOTE(allen): Mutating Variables Eval",
+      "",
+      "static const int con_some_constant = 4;",
+      "static const float con_some_constant_f = 0.04f;",
+      "",
+      "static int mut_x = 0;"
+     ],
+     "total": 1646
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 659,
+    "tokens": 2444,
+    "first": {
+     "name": "src/mule/mule_main.cpp",
+     "start": 2549,
+     "end": 3207
+    },
+    "others": [
+     {
+      "name": "src/mule/old_test_debuggees/mule.cpp",
+      "start": 2874,
+      "end": 3532
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  int i = 17;",
+      "",
+      "  check_again:",
+      "  if (i <= 1) goto done;",
+      "  if ((i&1) == 0) goto even_case;",
+      "",
+      "  // odd_case:",
+      "  i = 3*i + 1;",
+      ""
+     ],
+     "total": 659
+    },
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 484,
+    "tokens": 1819,
+    "first": {
+     "name": "src/mule/mule_main.cpp",
+     "start": 13,
+     "end": 496
+    },
+    "others": [
+     {
+      "name": "src/mule/old_test_debuggees/mule.cpp",
+      "start": 347,
+      "end": 830
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "#if _WIN32 && _DEBUG",
+      "#pragma comment(linker, \"/nodefaultlib:libcmt\")",
+      "#pragma comment(lib, \"libcmtd\")",
+      "#endif",
+      "",
+      "#include <string>",
+      "#include <vector>",
+      "#include <unordered_map>",
+      "#include <memory>",
+      "#if !_WIN32"
+     ],
+     "total": 484
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 184,
+    "tokens": 1474,
+    "first": {
+     "name": "src/linker/tests/linker_tests.c",
+     "start": 6888,
+     "end": 7071
+    },
+    "others": [
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 7075,
+      "end": 7258
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
+    "lines": 210,
+    "tokens": 1280,
+    "first": {
+     "name": "src/mule/mule_main.cpp",
+     "start": 496,
+     "end": 705
+    },
+    "others": [
+     {
+      "name": "src/mule/old_test_debuggees/mule.cpp",
+      "start": 833,
+      "end": 1042
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 151,
+    "tokens": 1107,
+    "first": {
+     "name": "src/text/text.c",
+     "start": 843,
+     "end": 993
+    },
+    "others": [
+     {
+      "name": "src/text/text.c",
+      "start": 1126,
+      "end": 1276
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 8,
+    "tokens": 63,
+    "first": {
+     "name": "src/linker/tests/linker_tests.c",
+     "start": 1981,
+     "end": 1988
+    },
+    "others": [
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2032,
+      "end": 2039
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2301,
+      "end": 2307
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2392,
+      "end": 2398
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2575,
+      "end": 2582
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2663,
+      "end": 2670
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2947,
+      "end": 2954
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 3412,
+      "end": 3418
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 3612,
+      "end": 3618
+     }
+    ],
+    "copies": 17,
+    "kind": "tests"
+   },
+   {
+    "format": "c",
+    "lines": 6,
+    "tokens": 52,
+    "first": {
+     "name": "src/linker/tests/linker_tests.c",
+     "start": 977,
+     "end": 982
+    },
+    "others": [
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 1980,
+      "end": 1985
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2031,
+      "end": 2036
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2300,
+      "end": 2305
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2391,
+      "end": 2396
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2574,
+      "end": 2579
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2621,
+      "end": 2626
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2662,
+      "end": 2667
+     },
+     {
+      "name": "src/linker/tests/linker_tests.c",
+      "start": 2946,
+      "end": 2951
+     }
+    ],
+    "copies": 20,
+    "kind": "tests"
+   },
+   {
+    "format": "c",
+    "lines": 170,
+    "tokens": 972,
+    "first": {
+     "name": "src/pdb/pdb_parse.c",
+     "start": 862,
+     "end": 1031
+    },
+    "others": [
+     {
+      "name": "src/rdi_from_codeview/rdi_from_codeview.c",
+      "start": 166,
+      "end": 336
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 111,
+    "tokens": 843,
+    "first": {
+     "name": "src/ui/generated/ui.meta.h",
+     "start": 315,
+     "end": 425
+    },
+    "others": [
+     {
+      "name": "src/ui/ui_core.h",
+      "start": 1033,
+      "end": 1143
+     }
+    ],
+    "copies": 2,
+    "kind": "generated"
+   }
+  ],
+  "code": {
+   "sources": 384,
+   "lines": 243394,
+   "tokens": 1447951,
+   "clones": 846,
+   "duplicatedLines": 14002,
+   "duplicatedTokens": 95946,
+   "percentage": 5.75,
+   "percentageTokens": 6.63,
+   "formats": [
+    {
+     "format": "c",
+     "sources": 200,
+     "lines": 196141,
+     "clones": 824,
+     "duplicatedLines": 10502,
+     "percentage": 5.35
+    },
+    {
+     "format": "cpp",
+     "sources": 5,
+     "lines": 7198,
+     "clones": 17,
+     "duplicatedLines": 3453,
+     "percentage": 47.97
+    },
+    {
+     "format": "c-header",
+     "sources": 167,
+     "lines": 38977,
+     "clones": 5,
+     "duplicatedLines": 47,
+     "percentage": 0.12
+    },
+    {
+     "format": "bash",
+     "sources": 11,
+     "lines": 910,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "cpp",
+     "lines": 1646,
+     "tokens": 16245,
+     "first": {
+      "name": "src/mule/mule_main.cpp",
+      "start": 729,
+      "end": 2374
+     },
+     "others": [
+      {
+       "name": "src/mule/old_test_debuggees/mule.cpp",
+       "start": 1064,
+       "end": 2708
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  variadic_params(\"foo\", 123, 456);",
+       "}",
+       "",
+       "////////////////////////////////",
+       "// NOTE(allen): Mutating Variables Eval",
+       "",
+       "static const int con_some_constant = 4;",
+       "static const float con_some_constant_f = 0.04f;",
+       "",
+       "static int mut_x = 0;"
+      ],
+      "total": 1646
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 659,
+     "tokens": 2444,
+     "first": {
+      "name": "src/mule/mule_main.cpp",
+      "start": 2549,
+      "end": 3207
+     },
+     "others": [
+      {
+       "name": "src/mule/old_test_debuggees/mule.cpp",
+       "start": 2874,
+       "end": 3532
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "{",
+       "  int i = 17;",
+       "",
+       "  check_again:",
+       "  if (i <= 1) goto done;",
+       "  if ((i&1) == 0) goto even_case;",
+       "",
+       "  // odd_case:",
+       "  i = 3*i + 1;",
+       ""
+      ],
+      "total": 659
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 484,
+     "tokens": 1819,
+     "first": {
+      "name": "src/mule/mule_main.cpp",
+      "start": 13,
+      "end": 496
+     },
+     "others": [
+      {
+       "name": "src/mule/old_test_debuggees/mule.cpp",
+       "start": 347,
+       "end": 830
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#if _WIN32 && _DEBUG",
+       "#pragma comment(linker, \"/nodefaultlib:libcmt\")",
+       "#pragma comment(lib, \"libcmtd\")",
+       "#endif",
+       "",
+       "#include <string>",
+       "#include <vector>",
+       "#include <unordered_map>",
+       "#include <memory>",
+       "#if !_WIN32"
+      ],
+      "total": 484
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 210,
+     "tokens": 1280,
+     "first": {
+      "name": "src/mule/mule_main.cpp",
+      "start": 496,
+      "end": 705
+     },
+     "others": [
+      {
+       "name": "src/mule/old_test_debuggees/mule.cpp",
+       "start": 833,
+       "end": 1042
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 151,
+     "tokens": 1107,
+     "first": {
+      "name": "src/text/text.c",
+      "start": 843,
+      "end": 993
+     },
+     "others": [
+      {
+       "name": "src/text/text.c",
+       "start": 1126,
+       "end": 1276
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 170,
+     "tokens": 972,
+     "first": {
+      "name": "src/pdb/pdb_parse.c",
+      "start": 862,
+      "end": 1031
+     },
+     "others": [
+      {
+       "name": "src/rdi_from_codeview/rdi_from_codeview.c",
+       "start": 166,
+       "end": 336
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 12,
+     "tokens": 81,
+     "first": {
+      "name": "obsolete/dwarf/dwarf_expr_old.c",
+      "start": 421,
+      "end": 432
+     },
+     "others": [
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 463,
+       "end": 474
+      },
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 505,
+       "end": 516
+      },
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 547,
+       "end": 558
+      },
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 589,
+       "end": 600
+      },
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 631,
+       "end": 642
+      },
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 673,
+       "end": 684
+      },
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 715,
+       "end": 726
+      },
+      {
+       "name": "obsolete/dwarf/dwarf_expr_old.c",
+       "start": 757,
+       "end": 768
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 28,
+     "tokens": 163,
+     "first": {
+      "name": "src/text/text.c",
+      "start": 767,
+      "end": 794
+     },
+     "others": [
+      {
+       "name": "src/text/text.c",
+       "start": 1051,
+       "end": 1078
+      },
+      {
+       "name": "src/text/text.c",
+       "start": 1333,
+       "end": 1360
+      },
+      {
+       "name": "src/text/text.c",
+       "start": 1624,
+       "end": 1651
+      },
+      {
+       "name": "src/text/text.c",
+       "start": 1988,
+       "end": 2015
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 75,
+     "tokens": 582,
+     "first": {
+      "name": "src/text/text.c",
+      "start": 504,
+      "end": 578
+     },
+     "others": [
+      {
+       "name": "src/text/text.c",
+       "start": 845,
+       "end": 919
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 116,
+     "tokens": 550,
+     "first": {
+      "name": "src/mule/mule_o2.cpp",
+      "start": 4,
+      "end": 119
+     },
+     "others": [
+      {
+       "name": "src/mule/old_test_debuggees/mule.cpp",
+       "start": 221,
+       "end": 336
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 43.3,
+   "grade": "D",
+   "size": {
+    "lines": 268976,
+    "files": 431,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 7.5,
+     "adjusted": 7.5,
+     "lines": 20156,
+     "halfLife": 8.5,
+     "formats": [
+      "c",
+      "c-header",
+      "cpp",
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 54.4
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 77.3,
+     "adjusted": 76.9,
+     "lines": 208031,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 34.4
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 40788,
+   "mean": 94.6,
+   "files": [
+    {
+     "path": "src/raddbg/raddbg_core.c",
+     "complexity": 3311,
+     "lines": 18804,
+     "bytes": 866784
+    },
+    {
+     "path": "src/text/text.c",
+     "complexity": 1390,
+     "lines": 4297,
+     "bytes": 155885
+    },
+    {
+     "path": "src/linker/lnk.c",
+     "complexity": 1242,
+     "lines": 7084,
+     "bytes": 302551
+    },
+    {
+     "path": "src/eval2/eval2.c",
+     "complexity": 1076,
+     "lines": 4157,
+     "bytes": 155836
+    },
+    {
+     "path": "src/dbg_engine/dbg_engine_ctrl.c",
+     "complexity": 1044,
+     "lines": 6783,
+     "bytes": 244041
+    },
+    {
+     "path": "src/raddbg/raddbg_views.c",
+     "complexity": 962,
+     "lines": 5617,
+     "bytes": 227981
+    },
+    {
+     "path": "src/rdi_from_dwarf/rdi_from_dwarf.c",
+     "complexity": 957,
+     "lines": 4508,
+     "bytes": 197907
+    },
+    {
+     "path": "obsolete/rdi_from_dwarf/rdi_from_dwarf_old.c",
+     "complexity": 879,
+     "lines": 3138,
+     "bytes": 134438
+    },
+    {
+     "path": "src/raddump/raddump.c",
+     "complexity": 799,
+     "lines": 4192,
+     "bytes": 175403
+    },
+    {
+     "path": "src/rdi_from_codeview/rdi_from_codeview.c",
+     "complexity": 798,
+     "lines": 5112,
+     "bytes": 225714
+    }
+   ]
+  },
+  "deadCode": null
+ }
+}
