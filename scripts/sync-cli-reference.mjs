@@ -25,10 +25,11 @@ const version = run(['--version']).trim().replace(/^jscpd\s+/, '')
 const options = []
 let current = null
 for (const raw of help.split('\n')) {
-  // clap aligns options with a short form at two spaces and the others at six
-  const m = raw.match(/^ {2,6}(?:(-[A-Za-z]), )?(--[a-z][a-z-]*)(?: (\[?<[^>]+>\]?))?\s*$/)
+  // clap aligns options with a short form at two spaces and the others at six;
+  // an optional value is written `--flag[=<VALUE>]`, a required one `--flag <VALUE>`
+  const m = raw.match(/^ {2,6}(?:(-[A-Za-z]), )?(--[a-z][a-z-]*)(?:(\[=<[^>]+>\])| (\[?<[^>]+>\]?))?\s*$/)
   if (m) {
-    current = { short: m[1] || '', long: m[2], value: m[3] || '', description: [] }
+    current = { short: m[1] || '', long: m[2], value: m[3] || m[4] || '', description: [] }
     options.push(current)
     continue
   }
@@ -58,9 +59,13 @@ function configKey(flag) {
 }
 
 // ---- defaults, read from the description text ----
+// flags whose help text words the default in a way the rules below can't read
+const DEFAULTS = { '--similarity': 'off; 0.8 when given without a ratio', '--min-nodes': '20' }
 function defaultOf(opt) {
+  if (DEFAULTS[opt.long]) return DEFAULTS[opt.long]
   const d = opt.description.join(' ')
-  const m = d.match(/[Dd]efault(?: code)?: ([^)]+?)(?:[).;]|$)/) || d.match(/\((?:the )?default ([^)]+)\)/) || d.match(/default N: (\d+)/)
+  // a period inside a number such as 0.4125 does not end the default
+  const m = d.match(/[Dd]efault(?: code)?: ([^)]+?)(?:[);]|\.(?=\s|$)|$)/) || d.match(/default N: (\d+)/) || d.match(/\((?:the )?default ([^)]+)\)/)
   if (m) return m[1].trim()
   if (/the default (\d+(?:\.\d+)?) means/.test(d)) return RegExp.$1
   return '—'
@@ -71,8 +76,8 @@ const GROUPS = [
   ['What to scan', ['--pattern', '--format', '--ignore', '--ignore-pattern', '--no-gitignore', '--follow-symlinks', '--max-size', '--formats-exts', '--formats-names', '--cross-formats', '--skip-local', '--skip-isolated', '--config', '--list', '--debug']],
   ['Clone size and kinds', ['--min-tokens', '--min-lines', '--max-lines', '--mode', '--skip-comments', '--ignore-case', '--ignore-identifiers', '--ignore-literals', '--ignore-annotations', '--max-gap-lines', '--similarity', '--min-nodes', '--kind']],
   ['Semantic clones', ['--semantic', '--semantic-scope', '--semantic-provider', '--semantic-download', '--semantic-rebuild-cache', '--semantic-threshold', '--semantic-same-threshold', '--semantic-model', '--semantic-models', '--semantic-url']],
-  ['Reports', ['--reporters', '--output', '--absolute', '--blame', '--sarif-error-tokens', '--no-colors', '--silent', '--no-tips']],
-  ['Gates and exit codes', ['--threshold', '--exit-code', '--baseline', '--update-baseline', '--fail-on-new-clones', '--fail-on-empty', '--baseline-from-ref']],
+  ['Reports', ['--reporters', '--output', '--report-name', '--absolute', '--blame', '--sarif-error-tokens', '--no-colors', '--silent', '--no-tips']],
+  ['Gates and exit codes', ['--threshold', '--exit-code', '--baseline', '--update-baseline', '--fail-on-new-clones', '--fail-on-empty', '--baseline-from-ref', '--changed', '--changed-only']],
   ['Other modes of the same binary', ['--dashboard', '--health', '--health-input', '--dead-code', '--dead-code-categories', '--min-confidence', '--rust-diagnostics', '--entry', '--include-tests', '--include-entry-exports', '--complexity', '--summary', '--summary-top', '--summary-by', '--history', '--history-since', '--history-every', '--history-limit', '--compare', '--mcp', '--lsp', '--lsp-analyses']],
   ['Runtime', ['--workers', '--help', '--version']],
 ]
