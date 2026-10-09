@@ -65,24 +65,40 @@
    "codeSources": 37,
    "healthScore": 68.9,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-10-09",
+   "rank": 4,
+   "stars": 27787,
+   "starsToday": 392,
+   "headSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+   "sources": 2148,
+   "lines": 249654,
+   "clones": 604,
+   "duplicatedLines": 9240,
+   "percentage": 3.7,
+   "codePercentage": 1.07,
+   "codeSources": 37,
+   "healthScore": 73.1,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-20",
-  "generatedAt": "2026-09-20T05:26:31.958Z",
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-09T05:33:13.671Z",
   "name": "anthropics/knowledge-work-plugins",
   "url": "https://github.com/anthropics/knowledge-work-plugins",
   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
   "language": "Python",
-  "stars": 25179,
-  "starsToday": 281,
+  "stars": 27787,
+  "starsToday": 392,
   "defaultBranch": "main",
-  "headSha": "67e216dbe5621470581dd3d944df22d1cc8231ce",
-  "durationMs": 880,
+  "headSha": "ae1513ea94dcb74a7f1505ddcf3b0ec3fab327f1",
+  "durationMs": 1881,
   "total": {
    "sources": 2148,
-   "lines": 249464,
-   "tokens": 1942115,
+   "lines": 249654,
+   "tokens": 1942892,
    "clones": 604,
    "duplicatedLines": 9240,
    "duplicatedTokens": 86225,
@@ -93,7 +109,7 @@
    {
     "format": "markdown",
     "sources": 1154,
-    "lines": 182223,
+    "lines": 182237,
     "clones": 390,
     "duplicatedLines": 5792,
     "percentage": 3.18
@@ -117,10 +133,10 @@
    {
     "format": "text",
     "sources": 330,
-    "lines": 8610,
+    "lines": 8616,
     "clones": 32,
     "duplicatedLines": 295,
-    "percentage": 3.43
+    "percentage": 3.42
    },
    {
     "format": "markup",
@@ -165,10 +181,10 @@
    {
     "format": "json",
     "sources": 43,
-    "lines": 3409,
+    "lines": 3535,
     "clones": 3,
     "duplicatedLines": 61,
-    "percentage": 1.79
+    "percentage": 1.73
    }
   ],
   "topClones": [
@@ -667,216 +683,10 @@
     "kind": "docs"
    }
   ],
-  "health": {
-   "score": 68.9,
-   "grade": "C",
-   "size": {
-    "lines": 14183,
-    "files": 39,
-    "class": "M"
-   },
-   "dimensions": [
-    {
-     "id": "duplication",
-     "source": "jscpd",
-     "value": 1,
-     "adjusted": 1.4,
-     "lines": 103,
-     "halfLife": 8.5,
-     "formats": [
-      "python",
-      "bash",
-      "perl",
-      "javascript"
-     ],
-     "excluded": [
-      "markup",
-      "text",
-      "data"
-     ],
-     "weight": 1,
-     "score": 89.5
-    },
-    {
-     "id": "dead-code",
-     "source": "jscpd",
-     "value": 0.2,
-     "adjusted": 0.7,
-     "lines": 24,
-     "halfLife": 7.5,
-     "coverage": 69.8,
-     "weight": 0.698,
-     "score": 93.5
-    },
-    {
-     "id": "complexity",
-     "source": "jscpd",
-     "value": 66.7,
-     "adjusted": 61.1,
-     "lines": 9464,
-     "halfLife": 50,
-     "weight": 1,
-     "score": 42.9
-    }
-   ]
-  },
-  "complexity": {
-   "total": 1679,
-   "mean": 43.1,
-   "files": [
-    {
-     "path": "productivity/skills/dashboard.html",
-     "complexity": 270,
-     "lines": 3111,
-     "bytes": 98403
-    },
-    {
-     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/validate_asm.py",
-     "complexity": 172,
-     "lines": 1102,
-     "bytes": 36719
-    },
-    {
-     "path": "bio-research/skills/nextflow-development/scripts/utils/ncbi_utils.py",
-     "complexity": 128,
-     "lines": 808,
-     "bytes": 28480
-    },
-    {
-     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
-     "complexity": 116,
-     "lines": 732,
-     "bytes": 24982
-    },
-    {
-     "path": "bio-research/skills/nextflow-development/scripts/generate_samplesheet.py",
-     "complexity": 111,
-     "lines": 455,
-     "bytes": 15440
-    },
-    {
-     "path": "bio-research/skills/nextflow-development/scripts/check_environment.py",
-     "complexity": 71,
-     "lines": 452,
-     "bytes": 14111
-    },
-    {
-     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/convert_to_asm.py",
-     "complexity": 70,
-     "lines": 543,
-     "bytes": 17278
-    },
-    {
-     "path": "bio-research/skills/nextflow-development/scripts/utils/validators.py",
-     "complexity": 69,
-     "lines": 256,
-     "bytes": 8419
-    },
-    {
-     "path": "bio-research/skills/scvi-tools/scripts/model_utils.py",
-     "complexity": 64,
-     "lines": 634,
-     "bytes": 17434
-    },
-    {
-     "path": "bio-research/skills/scvi-tools/scripts/validate_adata.py",
-     "complexity": 60,
-     "lines": 397,
-     "bytes": 12211
-    }
-   ]
-  },
-  "deadCode": {
-   "percentage": 0.24,
-   "findings": 20,
-   "files": 27,
-   "byCategory": [
-    {
-     "category": "unused-export",
-     "count": 2
-    },
-    {
-     "category": "unused-import",
-     "count": 18
-    }
-   ],
-   "largest": [
-    {
-     "category": "unused-export",
-     "path": "bio-research/skills/nextflow-development/scripts/utils/validators.py",
-     "name": "validate_file_exists",
-     "line": 249,
-     "lines": 3
-    },
-    {
-     "category": "unused-export",
-     "path": "bio-research/skills/nextflow-development/scripts/utils/validators.py",
-     "name": "validate_absolute_path",
-     "line": 254,
-     "lines": 3
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/export_parser.py",
-     "name": "Optional",
-     "line": 17,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/flatten_asm.py",
-     "name": "re",
-     "line": 14,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/flatten_asm.py",
-     "name": "Optional",
-     "line": 16,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/flatten_asm.py",
-     "name": "datetime",
-     "line": 17,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/nextflow-development/scripts/detect_data_type.py",
-     "name": "List",
-     "line": 18,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
-     "name": "os",
-     "line": 23,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
-     "name": "subprocess",
-     "line": 25,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
-     "name": "asdict",
-     "line": 28,
-     "lines": 1
-    }
-   ]
-  },
   "code": {
    "sources": 37,
-   "lines": 10712,
-   "tokens": 50118,
+   "lines": 10756,
+   "tokens": 50283,
    "clones": 12,
    "duplicatedLines": 115,
    "duplicatedTokens": 863,
@@ -894,7 +704,7 @@
     {
      "format": "bash",
      "sources": 9,
-     "lines": 644,
+     "lines": 694,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -902,7 +712,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 174,
+     "lines": 168,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1178,7 +988,211 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T06:16:29.656Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 73.1,
+   "grade": "B",
+   "size": {
+    "lines": 10756,
+    "files": 37,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.1,
+     "adjusted": 1.5,
+     "lines": 115,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash",
+      "perl",
+      "javascript"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 88.8
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.2,
+     "adjusted": 0.7,
+     "lines": 24,
+     "halfLife": 7.5,
+     "coverage": 92,
+     "weight": 0.92,
+     "score": 93.5
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 59.1,
+     "adjusted": 53.1,
+     "lines": 6353,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 47.9
+    }
+   ]
+  },
+  "complexity": {
+   "total": 1403,
+   "mean": 37.9,
+   "files": [
+    {
+     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/validate_asm.py",
+     "complexity": 172,
+     "lines": 1102,
+     "bytes": 36719
+    },
+    {
+     "path": "bio-research/skills/nextflow-development/scripts/utils/ncbi_utils.py",
+     "complexity": 128,
+     "lines": 808,
+     "bytes": 28480
+    },
+    {
+     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
+     "complexity": 116,
+     "lines": 732,
+     "bytes": 24982
+    },
+    {
+     "path": "bio-research/skills/nextflow-development/scripts/generate_samplesheet.py",
+     "complexity": 111,
+     "lines": 455,
+     "bytes": 15440
+    },
+    {
+     "path": "bio-research/skills/nextflow-development/scripts/check_environment.py",
+     "complexity": 71,
+     "lines": 452,
+     "bytes": 14111
+    },
+    {
+     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/convert_to_asm.py",
+     "complexity": 70,
+     "lines": 543,
+     "bytes": 17278
+    },
+    {
+     "path": "bio-research/skills/nextflow-development/scripts/utils/validators.py",
+     "complexity": 69,
+     "lines": 256,
+     "bytes": 8419
+    },
+    {
+     "path": "bio-research/skills/scvi-tools/scripts/model_utils.py",
+     "complexity": 64,
+     "lines": 634,
+     "bytes": 17434
+    },
+    {
+     "path": "bio-research/skills/scvi-tools/scripts/validate_adata.py",
+     "complexity": 60,
+     "lines": 397,
+     "bytes": 12211
+    },
+    {
+     "path": "bio-research/skills/nextflow-development/scripts/detect_data_type.py",
+     "complexity": 56,
+     "lines": 300,
+     "bytes": 9953
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.24,
+   "findings": 20,
+   "files": 27,
+   "byCategory": [
+    {
+     "category": "unused-export",
+     "count": 2
+    },
+    {
+     "category": "unused-import",
+     "count": 18
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-export",
+     "path": "bio-research/skills/nextflow-development/scripts/utils/validators.py",
+     "name": "validate_file_exists",
+     "line": 249,
+     "lines": 3
+    },
+    {
+     "category": "unused-export",
+     "path": "bio-research/skills/nextflow-development/scripts/utils/validators.py",
+     "name": "validate_absolute_path",
+     "line": 254,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/export_parser.py",
+     "name": "Optional",
+     "line": 17,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/flatten_asm.py",
+     "name": "re",
+     "line": 14,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/flatten_asm.py",
+     "name": "Optional",
+     "line": 16,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/instrument-data-to-allotrope/scripts/flatten_asm.py",
+     "name": "datetime",
+     "line": 17,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/nextflow-development/scripts/detect_data_type.py",
+     "name": "List",
+     "line": 18,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
+     "name": "os",
+     "line": 23,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
+     "name": "subprocess",
+     "line": 25,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "bio-research/skills/nextflow-development/scripts/sra_geo_fetch.py",
+     "name": "asdict",
+     "line": 28,
+     "lines": 1
+    }
+   ]
+  }
  }
 }

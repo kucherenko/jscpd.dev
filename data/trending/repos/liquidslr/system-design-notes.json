@@ -33,24 +33,40 @@
    "codeSources": 10,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-10-09",
+   "rank": 5,
+   "stars": 24856,
+   "starsToday": 393,
+   "headSha": "9d8388721e7231442763ad37398b8d82224aa68f",
+   "sources": 49,
+   "lines": 9306,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "percentage": 0,
+   "codePercentage": null,
+   "codeSources": 10,
+   "healthScore": 81.8,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-11",
-  "generatedAt": "2026-09-11T05:27:19.651Z",
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-09T05:33:13.671Z",
   "name": "liquidslr/system-design-notes",
   "url": "https://github.com/liquidslr/system-design-notes",
   "description": "Notes of the book System Desgin Interview - An Insider's Guide",
   "language": null,
-  "stars": 18963,
-  "starsToday": 900,
+  "stars": 24856,
+  "starsToday": 393,
   "defaultBranch": "main",
   "headSha": "9d8388721e7231442763ad37398b8d82224aa68f",
-  "durationMs": 86,
+  "durationMs": 1480,
   "total": {
    "sources": 49,
-   "lines": 9262,
-   "tokens": 78923,
+   "lines": 9306,
+   "tokens": 79088,
    "clones": 0,
    "duplicatedLines": 0,
    "duplicatedTokens": 0,
@@ -69,7 +85,7 @@
    {
     "format": "bash",
     "sources": 9,
-    "lines": 644,
+    "lines": 694,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -85,7 +101,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 174,
+    "lines": 168,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -110,8 +126,8 @@
   "topClones": [],
   "code": {
    "sources": 10,
-   "lines": 818,
-   "tokens": 3040,
+   "lines": 862,
+   "tokens": 3205,
    "clones": 0,
    "duplicatedLines": 0,
    "duplicatedTokens": 0,
@@ -121,7 +137,7 @@
     {
      "format": "bash",
      "sources": 9,
-     "lines": 644,
+     "lines": 694,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -129,7 +145,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 174,
+     "lines": 168,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -142,7 +158,116 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T05:54:38.969Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 81.8,
+   "grade": "B",
+   "size": {
+    "lines": 862,
+    "files": 10,
+    "class": "XS"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2.4,
+     "lines": 0,
+     "halfLife": 8.5,
+     "formats": [
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "text"
+     ],
+     "weight": 1,
+     "score": 81.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 14.6,
+     "lines": 0,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 81.7
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 84,
+   "mean": 8.4,
+   "files": [
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    },
+    {
+     "path": ".git/hooks/update.sample",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 3650
+    },
+    {
+     "path": ".git/hooks/push-to-checkout.sample",
+     "complexity": 6,
+     "lines": 78,
+     "bytes": 2783
+    },
+    {
+     "path": ".git/hooks/pre-commit.sample",
+     "complexity": 5,
+     "lines": 49,
+     "bytes": 1649
+    },
+    {
+     "path": ".git/hooks/pre-push.sample",
+     "complexity": 5,
+     "lines": 53,
+     "bytes": 1374
+    },
+    {
+     "path": ".git/hooks/pre-receive.sample",
+     "complexity": 4,
+     "lines": 24,
+     "bytes": 544
+    },
+    {
+     "path": ".git/hooks/commit-msg.sample",
+     "complexity": 3,
+     "lines": 74,
+     "bytes": 1972
+    },
+    {
+     "path": ".git/hooks/prepare-commit-msg.sample",
+     "complexity": 1,
+     "lines": 42,
+     "bytes": 1492
+    }
+   ]
+  },
+  "deadCode": null
  }
 }
