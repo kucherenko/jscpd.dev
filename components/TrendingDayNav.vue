@@ -96,6 +96,24 @@ const onChange = (e: Event) => navigateTo(trendingDayPath((e.target as HTMLSelec
   cursor: pointer;
 }
 
+/* On a narrow phone the two arrows and the date do not fit in one row, so
+   the date takes the room between the arrows instead of its own width. */
+@media (max-width: 400px) {
+  .daynav {
+    display: flex;
+    width: 100%;
+  }
+
+  .daynav-current {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .daynav-select {
+    width: 100%;
+  }
+}
+
 .daynav-select:hover {
   border-color: rgba(0, 123, 255, 0.4);
 }

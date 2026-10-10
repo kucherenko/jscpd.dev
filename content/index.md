@@ -65,7 +65,7 @@ One binary, ten jobs. Each tab shows the command and what it prints on a demo fi
 ::u-page-section
 ---
 ui:
-  features: "sm:grid-cols-2 lg:grid-cols-2"
+  features: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
 ---
 #title
 Four kinds of <span class="hero-gradient">clones</span>, one scan
@@ -152,7 +152,7 @@ Exact copies are the default. The other three kinds are opt-in flags, and every 
 ---
 id: where-it-runs
 ui:
-  features: "sm:grid-cols-2 lg:grid-cols-2"
+  features: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
 ---
 #title
 Where it runs
