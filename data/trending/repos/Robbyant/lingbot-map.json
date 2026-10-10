@@ -1,0 +1,873 @@
+{
+ "name": "Robbyant/lingbot-map",
+ "url": "https://github.com/Robbyant/lingbot-map",
+ "appearances": [
+  {
+   "date": "2026-10-10",
+   "rank": 6,
+   "stars": 17789,
+   "starsToday": 110,
+   "headSha": "8fdf984a7f9caf391622ea5843a8410900d27ef2",
+   "sources": 118,
+   "lines": 33442,
+   "clones": 111,
+   "duplicatedLines": 2815,
+   "percentage": 8.42,
+   "codePercentage": 8.89,
+   "codeSources": 94,
+   "healthScore": 52.4,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-10T05:30:09.856Z",
+  "name": "Robbyant/lingbot-map",
+  "url": "https://github.com/Robbyant/lingbot-map",
+  "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
+  "language": "Python",
+  "stars": 17789,
+  "starsToday": 110,
+  "defaultBranch": "main",
+  "headSha": "8fdf984a7f9caf391622ea5843a8410900d27ef2",
+  "durationMs": 1143,
+  "total": {
+   "sources": 118,
+   "lines": 33442,
+   "tokens": 209788,
+   "clones": 111,
+   "duplicatedLines": 2815,
+   "duplicatedTokens": 18241,
+   "percentage": 8.42,
+   "percentageTokens": 8.69
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 81,
+    "lines": 28225,
+    "clones": 101,
+    "duplicatedLines": 2686,
+    "percentage": 9.52
+   },
+   {
+    "format": "markdown",
+    "sources": 3,
+    "lines": 1950,
+    "clones": 5,
+    "duplicatedLines": 55,
+    "percentage": 2.82
+   },
+   {
+    "format": "bash",
+    "sources": 15,
+    "lines": 1048,
+    "clones": 3,
+    "duplicatedLines": 22,
+    "percentage": 2.1
+   },
+   {
+    "format": "yaml",
+    "sources": 9,
+    "lines": 242,
+    "clones": 2,
+    "duplicatedLines": 52,
+    "percentage": 21.49
+   },
+   {
+    "format": "javascript",
+    "sources": 1,
+    "lines": 829,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "css",
+    "sources": 1,
+    "lines": 477,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "txt",
+    "sources": 1,
+    "lines": 201,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 3,
+    "lines": 110,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "cpp",
+    "sources": 1,
+    "lines": 89,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 287,
+    "tokens": 1708,
+    "first": {
+     "name": "lingbot_map/models/gct_stream_window.py",
+     "start": 527,
+     "end": 813
+    },
+    "others": [
+     {
+      "name": "lingbot_map/models/gct_stream_window_v2.py",
+      "start": 590,
+      "end": 876
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Phase 1: Process scale frames together",
+      "# These frames get bidirectional attention among themselves via scale token",
+      "logger.info(f'Processing {scale_frames} scale frames...')",
+      "scale_images = images[:, :scale_frames].to(_model_device, non_blocking=True)",
+      "scale_output = self.forward(",
+      "    scale_images,",
+      "    num_frame_for_scale=scale_frames,",
+      "    num_frame_per_block=scale_frames,  # Process all scale frames as one block",
+      "    causal_inference=True,",
+      ")"
+     ],
+     "total": 287
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 180,
+    "tokens": 1411,
+    "first": {
+     "name": "lingbot_map/models/gct_stream_window.py",
+     "start": 820,
+     "end": 999
+    },
+    "others": [
+     {
+      "name": "lingbot_map/models/gct_stream_window_v2.py",
+      "start": 883,
+      "end": 1062
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# Scale from depth — aggregate across all paired keyframes in overlap.",
+      "s_ab = unit_s.clone()",
+      "da = prev_pred.get(\"depth\")",
+      "db = curr_pred.get(\"depth\")",
+      "if (da is not None and db is not None",
+      "        and int(prev_depth_idx.max().item()) < da.shape[1]",
+      "        and int(curr_depth_idx.max().item()) < db.shape[1]):",
+      "    s_ab = GCTStream._depth_ratio_scale(",
+      "        da[:, prev_depth_idx, ..., 0],",
+      "        db[:, curr_depth_idx, ..., 0],"
+     ],
+     "total": 180
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 163,
+    "tokens": 1293,
+    "first": {
+     "name": "lingbot_map/models/gct_stream_window.py",
+     "start": 346,
+     "end": 508
+    },
+    "others": [
+     {
+      "name": "lingbot_map/models/gct_stream_window_v2.py",
+      "start": 409,
+      "end": 571
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "non-keyframe processing in keyframe-based streaming inference.",
+      "",
+      "Args:",
+      "    skip: If True, subsequent forward passes will not append KV to cache.",
+      "\"\"\"",
+      "if hasattr(self.aggregator, 'kv_cache') and self.aggregator.kv_cache is not None:",
+      "    self.aggregator.kv_cache[\"_skip_append\"] = skip",
+      "# FlashInfer manager",
+      "if hasattr(self.aggregator, 'kv_cache_manager') and self.aggregator.kv_cache_manager is not None:",
+      "    self.aggregator.kv_cache_manager._skip_append = skip"
+     ],
+     "total": 163
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 241,
+    "tokens": 1218,
+    "first": {
+     "name": "lingbot_map/models/gct_stream.py",
+     "start": 93,
+     "end": 333
+    },
+    "others": [
+     {
+      "name": "lingbot_map/models/gct_stream_window.py",
+      "start": 112,
+      "end": 352
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 211,
+    "tokens": 1190,
+    "first": {
+     "name": "lingbot_map/models/gct_stream_window.py",
+     "start": 1000,
+     "end": 1210
+    },
+    "others": [
+     {
+      "name": "lingbot_map/models/gct_stream_window_v2.py",
+      "start": 1062,
+      "end": 1272
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 216,
+    "tokens": 1110,
+    "first": {
+     "name": "lingbot_map/models/gct_stream.py",
+     "start": 118,
+     "end": 333
+    },
+    "others": [
+     {
+      "name": "lingbot_map/models/gct_stream_window_v2.py",
+      "start": 200,
+      "end": 415
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 113,
+    "tokens": 845,
+    "first": {
+     "name": "lingbot_map/models/gct_stream_window.py",
+     "start": 25,
+     "end": 137
+    },
+    "others": [
+     {
+      "name": "lingbot_map/models/gct_stream_window_v2.py",
+      "start": 88,
+      "end": 200
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 36,
+    "tokens": 286,
+    "first": {
+     "name": "benchmark/datasets/kitti.py",
+     "start": 116,
+     "end": 151
+    },
+    "others": [
+     {
+      "name": "benchmark/datasets/vbr.py",
+      "start": 95,
+      "end": 130
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 24,
+    "tokens": 284,
+    "first": {
+     "name": "lingbot_map/layers/attention.py",
+     "start": 326,
+     "end": 349
+    },
+    "others": [
+     {
+      "name": "lingbot_map/layers/attention.py",
+      "start": 706,
+      "end": 729
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 50,
+    "tokens": 273,
+    "first": {
+     "name": "benchmark/run.py",
+     "start": 35,
+     "end": 84
+    },
+    "others": [
+     {
+      "name": "benchmark/run_worker.py",
+      "start": 32,
+      "end": 81
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 94,
+   "lines": 30056,
+   "tokens": 183026,
+   "clones": 99,
+   "duplicatedLines": 2671,
+   "duplicatedTokens": 17147,
+   "percentage": 8.89,
+   "percentageTokens": 9.37,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 79,
+     "lines": 28102,
+     "clones": 99,
+     "duplicatedLines": 2671,
+     "percentage": 9.5
+    },
+    {
+     "format": "bash",
+     "sources": 12,
+     "lines": 868,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 829,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "cpp",
+     "sources": 1,
+     "lines": 89,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 287,
+     "tokens": 1708,
+     "first": {
+      "name": "lingbot_map/models/gct_stream_window.py",
+      "start": 527,
+      "end": 813
+     },
+     "others": [
+      {
+       "name": "lingbot_map/models/gct_stream_window_v2.py",
+       "start": 590,
+       "end": 876
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "# Phase 1: Process scale frames together",
+       "# These frames get bidirectional attention among themselves via scale token",
+       "logger.info(f'Processing {scale_frames} scale frames...')",
+       "scale_images = images[:, :scale_frames].to(_model_device, non_blocking=True)",
+       "scale_output = self.forward(",
+       "    scale_images,",
+       "    num_frame_for_scale=scale_frames,",
+       "    num_frame_per_block=scale_frames,  # Process all scale frames as one block",
+       "    causal_inference=True,",
+       ")"
+      ],
+      "total": 287
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 180,
+     "tokens": 1411,
+     "first": {
+      "name": "lingbot_map/models/gct_stream_window.py",
+      "start": 820,
+      "end": 999
+     },
+     "others": [
+      {
+       "name": "lingbot_map/models/gct_stream_window_v2.py",
+       "start": 883,
+       "end": 1062
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "# Scale from depth — aggregate across all paired keyframes in overlap.",
+       "s_ab = unit_s.clone()",
+       "da = prev_pred.get(\"depth\")",
+       "db = curr_pred.get(\"depth\")",
+       "if (da is not None and db is not None",
+       "        and int(prev_depth_idx.max().item()) < da.shape[1]",
+       "        and int(curr_depth_idx.max().item()) < db.shape[1]):",
+       "    s_ab = GCTStream._depth_ratio_scale(",
+       "        da[:, prev_depth_idx, ..., 0],",
+       "        db[:, curr_depth_idx, ..., 0],"
+      ],
+      "total": 180
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 163,
+     "tokens": 1293,
+     "first": {
+      "name": "lingbot_map/models/gct_stream_window.py",
+      "start": 346,
+      "end": 508
+     },
+     "others": [
+      {
+       "name": "lingbot_map/models/gct_stream_window_v2.py",
+       "start": 409,
+       "end": 571
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "non-keyframe processing in keyframe-based streaming inference.",
+       "",
+       "Args:",
+       "    skip: If True, subsequent forward passes will not append KV to cache.",
+       "\"\"\"",
+       "if hasattr(self.aggregator, 'kv_cache') and self.aggregator.kv_cache is not None:",
+       "    self.aggregator.kv_cache[\"_skip_append\"] = skip",
+       "# FlashInfer manager",
+       "if hasattr(self.aggregator, 'kv_cache_manager') and self.aggregator.kv_cache_manager is not None:",
+       "    self.aggregator.kv_cache_manager._skip_append = skip"
+      ],
+      "total": 163
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 241,
+     "tokens": 1218,
+     "first": {
+      "name": "lingbot_map/models/gct_stream.py",
+      "start": 93,
+      "end": 333
+     },
+     "others": [
+      {
+       "name": "lingbot_map/models/gct_stream_window.py",
+       "start": 112,
+       "end": 352
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 211,
+     "tokens": 1190,
+     "first": {
+      "name": "lingbot_map/models/gct_stream_window.py",
+      "start": 1000,
+      "end": 1210
+     },
+     "others": [
+      {
+       "name": "lingbot_map/models/gct_stream_window_v2.py",
+       "start": 1062,
+       "end": 1272
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 216,
+     "tokens": 1110,
+     "first": {
+      "name": "lingbot_map/models/gct_stream.py",
+      "start": 118,
+      "end": 333
+     },
+     "others": [
+      {
+       "name": "lingbot_map/models/gct_stream_window_v2.py",
+       "start": 200,
+       "end": 415
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 113,
+     "tokens": 845,
+     "first": {
+      "name": "lingbot_map/models/gct_stream_window.py",
+      "start": 25,
+      "end": 137
+     },
+     "others": [
+      {
+       "name": "lingbot_map/models/gct_stream_window_v2.py",
+       "start": 88,
+       "end": 200
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 36,
+     "tokens": 286,
+     "first": {
+      "name": "benchmark/datasets/kitti.py",
+      "start": 116,
+      "end": 151
+     },
+     "others": [
+      {
+       "name": "benchmark/datasets/vbr.py",
+       "start": 95,
+       "end": 130
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 24,
+     "tokens": 284,
+     "first": {
+      "name": "lingbot_map/layers/attention.py",
+      "start": 326,
+      "end": 349
+     },
+     "others": [
+      {
+       "name": "lingbot_map/layers/attention.py",
+       "start": 706,
+       "end": 729
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 50,
+     "tokens": 273,
+     "first": {
+      "name": "benchmark/run.py",
+      "start": 35,
+      "end": 84
+     },
+     "others": [
+      {
+       "name": "benchmark/run_worker.py",
+       "start": 32,
+       "end": 81
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 52.4,
+   "grade": "D",
+   "size": {
+    "lines": 30056,
+    "files": 94,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 8.9,
+     "adjusted": 8.6,
+     "lines": 2671,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash",
+      "javascript",
+      "perl",
+      "cpp"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 49.8
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 5.1,
+     "adjusted": 5,
+     "lines": 1484,
+     "halfLife": 7.5,
+     "coverage": 96.3,
+     "weight": 0.963,
+     "score": 63
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 58,
+     "adjusted": 55.6,
+     "lines": 17419,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 46.2
+    }
+   ]
+  },
+  "complexity": {
+   "total": 3874,
+   "mean": 41.2,
+   "files": [
+    {
+     "path": "benchmark/viewer.py",
+     "complexity": 326,
+     "lines": 2000,
+     "bytes": 82652
+    },
+    {
+     "path": "benchmark/benchmark/report/templates/app.js",
+     "complexity": 267,
+     "lines": 829,
+     "bytes": 30093
+    },
+    {
+     "path": "lingbot_map/vis/point_cloud_viewer.py",
+     "complexity": 215,
+     "lines": 1443,
+     "bytes": 58434
+    },
+    {
+     "path": "lingbot_map/models/gct_stream_window_v2.py",
+     "complexity": 195,
+     "lines": 1349,
+     "bytes": 56615
+    },
+    {
+     "path": "lingbot_map/models/gct_stream_window.py",
+     "complexity": 178,
+     "lines": 1274,
+     "bytes": 53660
+    },
+    {
+     "path": "benchmark/benchmark/core/loader.py",
+     "complexity": 112,
+     "lines": 549,
+     "bytes": 21085
+    },
+    {
+     "path": "benchmark/benchmark/core/saver.py",
+     "complexity": 102,
+     "lines": 433,
+     "bytes": 18741
+    },
+    {
+     "path": "lingbot_map/layers/attention.py",
+     "complexity": 100,
+     "lines": 729,
+     "bytes": 35600
+    },
+    {
+     "path": "lingbot_map/vis/sky_segmentation.py",
+     "complexity": 94,
+     "lines": 510,
+     "bytes": 18720
+    },
+    {
+     "path": "preprocess/oxford.py",
+     "complexity": 91,
+     "lines": 838,
+     "bytes": 31836
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 5.13,
+   "findings": 43,
+   "files": 95,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 1
+    },
+    {
+     "category": "unused-export",
+     "count": 3
+    },
+    {
+     "category": "unused-symbol",
+     "count": 1
+    },
+    {
+     "category": "unused-import",
+     "count": 38
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "lingbot_map/models/gct_stream_window_v2.py",
+     "name": "",
+     "line": 1,
+     "lines": 1349
+    },
+    {
+     "category": "unused-export",
+     "path": "lingbot_map/utils/load_fn.py",
+     "name": "load_and_preprocess_images_square",
+     "line": 16,
+     "lines": 86
+    },
+    {
+     "category": "unused-symbol",
+     "path": "lingbot_map/utils/geometry.py",
+     "name": "_sqrt_positive_part",
+     "line": 686,
+     "lines": 9
+    },
+    {
+     "category": "unused-import",
+     "path": "lingbot_map/aggregator/stream.py",
+     "name": "Block",
+     "line": 16,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "lingbot_map/heads/camera_head.py",
+     "name": "math",
+     "line": 7,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "lingbot_map/heads/camera_head.py",
+     "name": "np",
+     "line": 8,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "lingbot_map/heads/camera_head.py",
+     "name": "F",
+     "line": 12,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "lingbot_map/heads/dpt_head.py",
+     "name": "os",
+     "line": 11,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "lingbot_map/heads/dpt_head.py",
+     "name": "Dict",
+     "line": 12,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "lingbot_map/heads/utils.py",
+     "name": "nn",
+     "line": 8,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

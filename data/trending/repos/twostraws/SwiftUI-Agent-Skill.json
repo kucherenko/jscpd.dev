@@ -1,0 +1,363 @@
+{
+ "name": "twostraws/SwiftUI-Agent-Skill",
+ "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+ "appearances": [
+  {
+   "date": "2026-10-10",
+   "rank": 7,
+   "stars": 5552,
+   "starsToday": 65,
+   "headSha": "f9800713b24580bc444931949aad4519128605e8",
+   "sources": 35,
+   "lines": 2068,
+   "clones": 3,
+   "duplicatedLines": 109,
+   "percentage": 5.27,
+   "codePercentage": null,
+   "codeSources": 10,
+   "healthScore": 81.8,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-10T05:30:09.856Z",
+  "name": "twostraws/SwiftUI-Agent-Skill",
+  "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+  "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
+  "language": null,
+  "stars": 5552,
+  "starsToday": 65,
+  "defaultBranch": "main",
+  "headSha": "f9800713b24580bc444931949aad4519128605e8",
+  "durationMs": 1035,
+  "total": {
+   "sources": 35,
+   "lines": 2068,
+   "tokens": 20780,
+   "clones": 3,
+   "duplicatedLines": 109,
+   "duplicatedTokens": 637,
+   "percentage": 5.27,
+   "percentageTokens": 3.07
+  },
+  "formats": [
+   {
+    "format": "markdown",
+    "sources": 16,
+    "lines": 990,
+    "clones": 2,
+    "duplicatedLines": 89,
+    "percentage": 8.99
+   },
+   {
+    "format": "swift",
+    "sources": 5,
+    "lines": 113,
+    "clones": 1,
+    "duplicatedLines": 20,
+    "percentage": 17.7
+   },
+   {
+    "format": "bash",
+    "sources": 9,
+    "lines": 694,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 2,
+    "lines": 75,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 1,
+    "lines": 21,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "yaml",
+    "sources": 1,
+    "lines": 7,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markdown",
+    "lines": 82,
+    "tokens": 452,
+    "first": {
+     "name": "swiftui-pro/SKILL.md:markdown",
+     "start": 30,
+     "end": 111
+    },
+    "others": [
+     {
+      "name": "swiftui-pro/skills/swiftui-pro/SKILL.md:markdown",
+      "start": 31,
+      "end": 112
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "Keep `references/performance-plus.md` out of routine reviews. Load it for a requested deep performance review; its more involved changes can also help investig…",
+      "",
+      "",
+      "## Core Instructions",
+      "",
+      "- iOS 27 exists, and is the default deployment target for new apps.",
+      "- Xcode 27.1 and the corresponding 27.1 platform releases are available. Do not dismiss their APIs as speculative.",
+      "- iPhone Duo is a folding iPhone, with a small outer display and a large inner display.",
+      "- Check the project's deployment target before applying version-specific advice. Use newer runtime APIs only when the target supports them or within an appropr…",
+      "- Target Swift 6.4 or later, using modern Swift concurrency."
+     ],
+     "total": 82
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "swift",
+    "lines": 33,
+    "tokens": 113,
+    "first": {
+     "name": "swiftui-pro/SKILL.md:swift",
+     "start": 63,
+     "end": 95
+    },
+    "others": [
+     {
+      "name": "swiftui-pro/skills/swiftui-pro/SKILL.md:swift",
+      "start": 64,
+      "end": 96
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "// Before",
+      "Text(\"Hello\").foregroundColor(.red)",
+      "",
+      "// After",
+      "Text(\"Hello\").foregroundStyle(.red)",
+      "```",
+      "",
+      "**Line 24: Give the button a descriptive label so VoiceOver explains its action.**",
+      "",
+      "```swift"
+     ],
+     "total": 33
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 7,
+    "tokens": 72,
+    "first": {
+     "name": "swiftui-pro/SKILL.md:markdown",
+     "start": 10,
+     "end": 16
+    },
+    "others": [
+     {
+      "name": "swiftui-pro/skills/swiftui-pro/SKILL.md:markdown",
+      "start": 11,
+      "end": 17
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "Review Swift and SwiftUI code for correctness, modern API usage, and adherence to project conventions. Report only genuine problems – do not nitpick or invent …",
+      "",
+      "Include deprecated API in review findings. During feature work or bug fixes, complete the requested change and suggest unrelated modernization separately; do n…",
+      "",
+      "Review process:",
+      "",
+      "1. Check for deprecated API using `references/api.md`."
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "Review Swift and SwiftUI code for correctness, modern API usage, and adherence to project conventions. Report only genuine problems – do not nitpick or invent …",
+      "",
+      "Include deprecated API in review findings. During feature work or bug fixes, complete the requested change and suggest unrelated modernization separately; do n…",
+      "",
+      "Review process:",
+      "",
+      "1. Check for deprecated API using `${CLAUDE_SKILL_DIR}/references/api.md`."
+     ],
+     "total": 7
+    },
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 10,
+   "lines": 862,
+   "tokens": 3205,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 694,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 81.8,
+   "grade": "B",
+   "size": {
+    "lines": 862,
+    "files": 10,
+    "class": "XS"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2.4,
+     "lines": 0,
+     "halfLife": 8.5,
+     "formats": [
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 81.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 14.6,
+     "lines": 0,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 81.7
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 84,
+   "mean": 8.4,
+   "files": [
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    },
+    {
+     "path": ".git/hooks/update.sample",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 3650
+    },
+    {
+     "path": ".git/hooks/push-to-checkout.sample",
+     "complexity": 6,
+     "lines": 78,
+     "bytes": 2783
+    },
+    {
+     "path": ".git/hooks/pre-commit.sample",
+     "complexity": 5,
+     "lines": 49,
+     "bytes": 1649
+    },
+    {
+     "path": ".git/hooks/pre-push.sample",
+     "complexity": 5,
+     "lines": 53,
+     "bytes": 1374
+    },
+    {
+     "path": ".git/hooks/pre-receive.sample",
+     "complexity": 4,
+     "lines": 24,
+     "bytes": 544
+    },
+    {
+     "path": ".git/hooks/commit-msg.sample",
+     "complexity": 3,
+     "lines": 74,
+     "bytes": 1972
+    },
+    {
+     "path": ".git/hooks/prepare-commit-msg.sample",
+     "complexity": 1,
+     "lines": 42,
+     "bytes": 1492
+    }
+   ]
+  },
+  "deadCode": null
+ }
+}
