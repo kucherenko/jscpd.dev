@@ -343,6 +343,32 @@ pre .line {
   overflow-wrap: normal;
 }
 
+/* Inline code can hold a long glob, URL or option list with no space in it. On a
+   phone that single token is wider than the screen, so it may break anywhere
+   instead of pushing the page out. Code blocks keep their lines and scroll. */
+:not(pre) > code {
+  overflow-wrap: anywhere;
+}
+
+/* The feature cards on the landing page are flex rows (icon, then the text).
+   A flex item does not shrink below its content by default, and the code
+   block inside a card is as wide as its longest line, so on a phone the card
+   stayed 517px wide and the whole page scrolled sideways. With a zero minimum
+   the code block scrolls inside the card instead. */
+#where-it-runs ul > * > * {
+  min-width: 0;
+}
+
+/* Docus puts "Report an issue" and "Edit this page" in a separator label that
+   never wraps. On the narrowest phones the pair is wider than the column, so
+   the links may go on two rows there. */
+@media (max-width: 360px) {
+  .whitespace-nowrap.mx-3 > .gap-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 pre::before {
   content: '';
   position: absolute;

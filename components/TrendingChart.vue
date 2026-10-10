@@ -373,4 +373,17 @@ const open = (date: string) => navigateTo(trendingDayPath(date, props.latest))
     padding: 0.875rem 0.875rem 0.625rem;
   }
 }
+
+/* Four metric buttons in one pill are wider than a narrow phone, so the pill
+   wraps into two rows there. */
+@media (max-width: 420px) {
+  .tchart-head {
+    flex-wrap: wrap;
+  }
+
+  .tchart-metrics {
+    flex-wrap: wrap;
+    border-radius: 1rem;
+  }
+}
 </style>

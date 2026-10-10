@@ -3,7 +3,7 @@
     <NuxtLink v-for="({ repo, code }, i) in rows" :key="repo.name" :to="trendingRepoPath(repo.name)" class="trending-row">
       <span class="trending-rank">{{ i + 1 }}</span>
       <span class="trending-main">
-        <span class="trending-name">{{ repo.name }}</span>
+        <span class="trending-name">{{ owner(repo.name) }}/<wbr>{{ project(repo.name) }}</span>
         <span v-if="repo.description" class="trending-desc">{{ repo.description }}</span>
         <span class="trending-chips">
           <span v-if="repo.language" class="chip">{{ repo.language }}</span>
@@ -37,6 +37,9 @@ import { codeMetric, type RepoAnalysis } from '~/composables/useTrendingData'
 const props = defineProps<{ repos: RepoAnalysis[] }>()
 
 const rows = computed(() => props.repos.map(repo => ({ repo, code: codeMetric(repo) })))
+// The name breaks after the owner on a narrow screen, not in the middle of a word.
+const owner = (name: string) => name.split('/')[0]
+const project = (name: string) => name.split('/').slice(1).join('/')
 </script>
 
 <style scoped>
@@ -136,8 +139,30 @@ const rows = computed(() => props.repos.map(repo => ({ repo, code: codeMetric(re
   color: var(--ui-text-muted, #64748b);
 }
 
+/* On a phone the row wraps: rank and text on top, the percentage with its
+   label on a line of its own under the chips, and no chevron, the card is the
+   link anyway. The text column then has the whole width for the name. */
 @media (max-width: 480px) {
-  .trending-secondary {
+  .trending-row {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .trending-main {
+    flex-basis: calc(100% - 1.5rem - 0.875rem);
+  }
+
+  .trending-side {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding-left: calc(1.5rem + 0.875rem);
+    text-align: left;
+  }
+
+  .trending-secondary,
+  .trending-chevron {
     display: none;
   }
 }
