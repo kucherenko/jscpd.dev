@@ -59,7 +59,7 @@ The `pages/` routes live outside Nuxt Content, so they are registered explicitly
 
 ### Blog
 
-A post is a Markdown file in `content/blog/`, with `title`, `description`, `date` (YYYY-MM-DD) and `authors` in its front matter. Author ids map to names, GitHub and X links in `data/authors.ts`. `content.config.ts` keeps the posts in their own `blog` collection, so they stay out of the docs navigation and search; the list is `pages/blog.vue`, a post is `pages/blog-post.vue`, and `server/routes/blog/feed.xml.ts` writes the Atom feed at `/blog/feed.xml`.
+A post is a Markdown file in `content/blog/`, with `title`, `description`, `date` (YYYY-MM-DD) and `authors` in its front matter. Author ids map to names, GitHub and X links in `data/authors.ts`. `content.config.ts` keeps the posts in their own `blog` collection, so they stay out of the docs navigation and search; the list is `pages/blog.vue`, a post is `pages/blog-post.vue`, and `server/routes/blog/feed.xml.ts` writes the Atom feed at `/blog/feed.xml`. Comments under a post come from [giscus](https://giscus.app) (`components/BlogComments.vue`): each post is a GitHub Discussion in this repository's Announcements category, matched by pathname, so the giscus app has to stay installed on the repository.
 
 ### Trending data
 

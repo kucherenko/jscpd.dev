@@ -49,6 +49,9 @@ const toc = computed(() => post.value?.body?.toc?.links || [])
 
     <UPageBody>
       <ContentRenderer :value="post" />
+      <ClientOnly>
+        <BlogComments />
+      </ClientOnly>
       <USeparator />
       <p class="blog-post-foot">
         <NuxtLink to="/blog">All posts</NuxtLink>
