@@ -43,9 +43,12 @@ content/
 ├── 3.concepts/                   # Clone types, how detection works, the health score
 ├── 4.reference/                  # CLI options (generated), config file, exit codes, reporters, formats (generated), Action (generated), crates
 ├── 5.project/                    # Changelog, migration, v4, benchmarks, research, articles
+├── blog/                         # Posts, one file each (the `blog` collection in content.config.ts)
 └── trending.md                   # Header entry for the /trending pages (rendered by pages/trending.vue)
 
 pages/
+├── blog.vue                      # /blog — the list of posts, newest first
+├── blog-post.vue                 # /blog/<slug> — one post, with its authors and table of contents
 ├── support.vue                   # /support — how to fund the project
 ├── trending.vue                  # /trending and /trending/<day> — the day's repos, baselines, the week
 ├── trending-week.vue             # /trending/week/<ISO week> — every repo that trended that week
@@ -53,6 +56,10 @@ pages/
 ```
 
 The `pages/` routes live outside Nuxt Content, so they are registered explicitly in `nuxt.config.ts` (`pages:extend`), the sitemap route (`server/routes/sitemap.xml.ts`) and the `llms` section list.
+
+### Blog
+
+A post is a Markdown file in `content/blog/`, with `title`, `description`, `date` (YYYY-MM-DD) and `authors` in its front matter. Author ids map to names, GitHub and X links in `data/authors.ts`. `content.config.ts` keeps the posts in their own `blog` collection, so they stay out of the docs navigation and search; the list is `pages/blog.vue`, a post is `pages/blog-post.vue`, and `server/routes/blog/feed.xml.ts` writes the Atom feed at `/blog/feed.xml`.
 
 ### Trending data
 

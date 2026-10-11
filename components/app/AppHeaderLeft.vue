@@ -9,7 +9,8 @@ const ariaLabel = `${appConfig.header?.title || site.name} home`
 const navLinks = [
   { label: 'Docs', to: '/start' },
   { label: 'Guides', to: '/guides' },
-  { label: 'Trending', to: '/trending' }
+  { label: 'Trending', to: '/trending' },
+  { label: 'Blog', to: '/blog' }
 ]
 </script>
 

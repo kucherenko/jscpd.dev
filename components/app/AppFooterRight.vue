@@ -16,6 +16,11 @@ const links = [
     to: '/trending'
   },
   {
+    icon: 'i-lucide-newspaper',
+    label: 'Blog',
+    to: '/blog'
+  },
+  {
     icon: 'i-lucide-heart',
     label: 'Support',
     to: '/support'
