@@ -15,6 +15,15 @@ const colorMode = useColorMode()
 const theme = computed(() => (colorMode.value === 'dark' ? 'dark' : 'light'))
 const host = ref<HTMLElement | null>(null)
 
+// The widget takes its colors from public/giscus-light.css and
+// giscus-dark.css, the giscus themes with the site's palette on top. giscus
+// loads a theme by https URL, so the dev server (http) uses the files on the
+// live site.
+const themeUrl = (mode: 'light' | 'dark') => {
+  const origin = typeof location !== 'undefined' && location.origin.startsWith('https://') ? location.origin : 'https://jscpd.dev'
+  return `${origin}/giscus-${mode}.css`
+}
+
 onMounted(() => {
   const script = document.createElement('script')
   script.src = 'https://giscus.app/client.js'
@@ -30,7 +39,7 @@ onMounted(() => {
     'data-reactions-enabled': '1',
     'data-emit-metadata': '0',
     'data-input-position': 'top',
-    'data-theme': theme.value,
+    'data-theme': themeUrl(theme.value),
     'data-lang': 'en',
     'data-loading': 'lazy',
   }
@@ -40,7 +49,7 @@ onMounted(() => {
 
 watch(theme, (value) => {
   const frame = host.value?.querySelector<HTMLIFrameElement>('iframe.giscus-frame')
-  frame?.contentWindow?.postMessage({ giscus: { setConfig: { theme: value } } }, 'https://giscus.app')
+  frame?.contentWindow?.postMessage({ giscus: { setConfig: { theme: themeUrl(value) } } }, 'https://giscus.app')
 })
 </script>
 
