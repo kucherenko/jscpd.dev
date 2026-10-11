@@ -3,6 +3,11 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main, master]
+  # A blog post with a publishedAt in the future is left out of a build;
+  # this daily rebuild at 08:05 UTC puts posts scheduled for the morning
+  # on the site (the trending data commit already rebuilds at ~05:30 UTC).
+  schedule:
+    - cron: "5 8 * * *"
   workflow_dispatch:
     inputs:
       sha:

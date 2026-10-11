@@ -5,7 +5,7 @@
 definePageMeta({ layout: 'default' })
 
 const route = useRoute()
-const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, () => queryCollection('blog').path(route.path).first())
+const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, () => queryCollection('blog').path(route.path).where('publishedAt', '<=', new Date().toISOString()).first())
 
 if (!post.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })

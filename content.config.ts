@@ -37,6 +37,9 @@ export default defineContentConfig({
       },
       schema: z.object({
         date: z.string(),
+        // ISO instant from which the post is listed, served and in the feed;
+        // a rebuild after it (the daily deploy) makes it visible.
+        publishedAt: z.string(),
         authors: z.array(z.string()),
         tags: z.array(z.string()).optional(),
       }),

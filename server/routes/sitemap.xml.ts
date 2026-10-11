@@ -60,7 +60,7 @@ export default defineEventHandler(async (event) => {
   const seen = new Set<string>()
 
   for (const collection of COLLECTIONS) {
-    let pages: Array<{ path?: string, stem?: string, extension?: string, meta?: Record<string, unknown> }> = []
+    let pages: Array<{ path?: string, stem?: string, extension?: string, publishedAt?: string, meta?: Record<string, unknown> }> = []
     try {
       pages = await (queryCollection as unknown as (
         event: unknown,
@@ -72,7 +72,12 @@ export default defineEventHandler(async (event) => {
       continue
     }
 
+    // a blog post scheduled for later is not on the site yet
+
+    const buildTime = new Date().toISOString()
+
     for (const page of pages) {
+      if (collection === 'blog' && page.publishedAt && page.publishedAt > buildTime) continue
       const path = page.path || '/'
       const meta = (page.meta || {}) as Record<string, unknown>
       if (meta.sitemap === false) continue

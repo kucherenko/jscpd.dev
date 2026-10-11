@@ -51,6 +51,7 @@ const profiles = (author: Author) => [
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .compact .blog-author {
