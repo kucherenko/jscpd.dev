@@ -2,6 +2,7 @@
 title: What's new in jscpd 5.4 and 5.4.1
 description: Similar functions by structure in 15 languages, clones of the files you are changing, jscpd inside the editor, and a progress number for a port. With commands and real output.
 date: 2026-10-11
+publishedAt: 2026-10-11T12:00:00Z
 authors:
   - kucherenko
 tags:

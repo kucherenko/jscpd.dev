@@ -9,6 +9,7 @@ interface Post {
   title: string
   description?: string
   date: string
+  publishedAt: string
   authors?: string[]
 }
 
@@ -21,7 +22,7 @@ export default defineEventHandler(async (event) => {
   const posts = await (queryCollection as unknown as (
     event: unknown,
     collection: string,
-  ) => { order: (field: string, dir: 'ASC' | 'DESC') => { all: () => Promise<Post[]> } })(event, 'blog').order('date', 'DESC').all()
+  ) => { where: (field: string, op: string, value: string) => { order: (field: string, dir: 'ASC' | 'DESC') => { all: () => Promise<Post[]> } } })(event, 'blog').where('publishedAt', '<=', new Date().toISOString()).order('date', 'DESC').all()
 
   const updated = posts[0]?.date ? `${posts[0].date}T00:00:00Z` : new Date().toISOString()
   const entries = posts.map((post) => {

@@ -17,7 +17,8 @@ useHead({
   link: [{ rel: 'alternate', type: 'application/atom+xml', title: 'jscpd blog', href: '/blog/feed.xml' }],
 })
 
-const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('blog').order('date', 'DESC').all())
+// Posts with a publishedAt in the future stay out until a build after it.
+const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('blog').where('publishedAt', '<=', new Date().toISOString()).order('date', 'DESC').all())
 </script>
 
 <template>

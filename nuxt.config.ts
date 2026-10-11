@@ -261,7 +261,11 @@ export default defineNuxtConfig({
         title: "Blog",
         description: "Release notes with commands and real output, and notes on how jscpd finds what it finds.",
         contentCollection: "blog",
-        contentFilters: [{ field: "extension", operator: "=", value: "md" }],
+        contentFilters: [
+          { field: "extension", operator: "=", value: "md" },
+          // scheduled posts appear here with the build that publishes them
+          { field: "publishedAt", operator: "<=", value: new Date().toISOString() },
+        ],
       },
     ],
   },
