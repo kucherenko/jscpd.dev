@@ -17,29 +17,45 @@
    "codeSources": 10,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-10-11",
+   "rank": 5,
+   "stars": 218422,
+   "starsToday": 278,
+   "headSha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+   "sources": 24,
+   "lines": 2201,
+   "clones": 2,
+   "duplicatedLines": 60,
+   "percentage": 2.73,
+   "codePercentage": null,
+   "codeSources": 10,
+   "healthScore": 81.8,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-09",
-  "generatedAt": "2026-09-09T05:27:26.558Z",
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-11T05:30:24.061Z",
   "name": "multica-ai/andrej-karpathy-skills",
   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
   "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
   "language": null,
-  "stars": 211590,
-  "starsToday": 333,
+  "stars": 218422,
+  "starsToday": 278,
   "defaultBranch": "main",
   "headSha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-  "durationMs": 24,
+  "durationMs": 1018,
   "total": {
    "sources": 24,
-   "lines": 2157,
-   "tokens": 11121,
+   "lines": 2201,
+   "tokens": 11286,
    "clones": 2,
    "duplicatedLines": 60,
    "duplicatedTokens": 390,
-   "percentage": 2.78,
-   "percentageTokens": 3.51
+   "percentage": 2.73,
+   "percentageTokens": 3.46
   },
   "formats": [
    {
@@ -53,15 +69,15 @@
    {
     "format": "bash",
     "sources": 11,
-    "lines": 650,
+    "lines": 700,
     "clones": 1,
     "duplicatedLines": 3,
-    "percentage": 0.46
+    "percentage": 0.43
    },
    {
     "format": "perl",
     "sources": 1,
-    "lines": 174,
+    "lines": 168,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -180,8 +196,8 @@
   ],
   "code": {
    "sources": 10,
-   "lines": 818,
-   "tokens": 3040,
+   "lines": 862,
+   "tokens": 3205,
    "clones": 0,
    "duplicatedLines": 0,
    "duplicatedTokens": 0,
@@ -191,7 +207,7 @@
     {
      "format": "bash",
      "sources": 9,
-     "lines": 644,
+     "lines": 694,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -199,7 +215,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 174,
+     "lines": 168,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -212,7 +228,117 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T05:52:34.108Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 81.8,
+   "grade": "B",
+   "size": {
+    "lines": 862,
+    "files": 10,
+    "class": "XS"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2.4,
+     "lines": 0,
+     "halfLife": 8.5,
+     "formats": [
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 81.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 14.6,
+     "lines": 0,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 81.7
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 84,
+   "mean": 8.4,
+   "files": [
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    },
+    {
+     "path": ".git/hooks/update.sample",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 3650
+    },
+    {
+     "path": ".git/hooks/push-to-checkout.sample",
+     "complexity": 6,
+     "lines": 78,
+     "bytes": 2783
+    },
+    {
+     "path": ".git/hooks/pre-commit.sample",
+     "complexity": 5,
+     "lines": 49,
+     "bytes": 1649
+    },
+    {
+     "path": ".git/hooks/pre-push.sample",
+     "complexity": 5,
+     "lines": 53,
+     "bytes": 1374
+    },
+    {
+     "path": ".git/hooks/pre-receive.sample",
+     "complexity": 4,
+     "lines": 24,
+     "bytes": 544
+    },
+    {
+     "path": ".git/hooks/commit-msg.sample",
+     "complexity": 3,
+     "lines": 74,
+     "bytes": 1972
+    },
+    {
+     "path": ".git/hooks/prepare-commit-msg.sample",
+     "complexity": 1,
+     "lines": 42,
+     "bytes": 1492
+    }
+   ]
+  },
+  "deadCode": null
  }
 }

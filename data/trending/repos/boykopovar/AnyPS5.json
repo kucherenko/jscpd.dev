@@ -81,70 +81,86 @@
    "codeSources": 996,
    "healthScore": 46,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-10-11",
+   "rank": 2,
+   "stars": 27387,
+   "starsToday": 5805,
+   "headSha": "f5c0fe00f715ed61dbe0aff70e4b3fe3d943d923",
+   "sources": 1865,
+   "lines": 344928,
+   "clones": 2818,
+   "duplicatedLines": 36398,
+   "percentage": 10.55,
+   "codePercentage": 3.02,
+   "codeSources": 1030,
+   "healthScore": 44.4,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-10-10",
-  "generatedAt": "2026-10-10T05:30:09.856Z",
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-11T05:30:24.061Z",
   "name": "boykopovar/AnyPS5",
   "url": "https://github.com/boykopovar/AnyPS5",
   "description": "Tool for automatic PS5 executables porting to Linux and Windows",
   "language": "C++",
-  "stars": 23100,
-  "starsToday": 5868,
+  "stars": 27387,
+  "starsToday": 5805,
   "defaultBranch": "main",
-  "headSha": "b7bb2684ecb8e165557f67fbcce1f81e911d69a4",
-  "durationMs": 3111,
+  "headSha": "f5c0fe00f715ed61dbe0aff70e4b3fe3d943d923",
+  "durationMs": 3491,
   "total": {
-   "sources": 1713,
-   "lines": 304888,
-   "tokens": 3533473,
-   "clones": 2253,
-   "duplicatedLines": 29844,
-   "duplicatedTokens": 328211,
-   "percentage": 9.79,
-   "percentageTokens": 9.29
+   "sources": 1865,
+   "lines": 344928,
+   "tokens": 4014765,
+   "clones": 2818,
+   "duplicatedLines": 36398,
+   "duplicatedTokens": 391838,
+   "percentage": 10.55,
+   "percentageTokens": 9.76
   },
   "formats": [
    {
     "format": "cpp",
-    "sources": 1120,
-    "lines": 253166,
-    "clones": 2100,
-    "duplicatedLines": 27569,
-    "percentage": 10.89
+    "sources": 1239,
+    "lines": 288297,
+    "clones": 2657,
+    "duplicatedLines": 34014,
+    "percentage": 11.8
    },
    {
     "format": "cpp-header",
-    "sources": 397,
-    "lines": 34648,
-    "clones": 126,
-    "duplicatedLines": 2031,
-    "percentage": 5.86
+    "sources": 410,
+    "lines": 36780,
+    "clones": 127,
+    "duplicatedLines": 2042,
+    "percentage": 5.55
    },
    {
     "format": "python",
-    "sources": 64,
-    "lines": 7250,
-    "clones": 17,
-    "duplicatedLines": 130,
-    "percentage": 1.79
+    "sources": 80,
+    "lines": 9017,
+    "clones": 24,
+    "duplicatedLines": 228,
+    "percentage": 2.53
    },
    {
     "format": "txt",
-    "sources": 79,
-    "lines": 6454,
+    "sources": 83,
+    "lines": 7261,
     "clones": 6,
     "duplicatedLines": 72,
-    "percentage": 1.12
+    "percentage": 0.99
    },
    {
     "format": "yaml",
     "sources": 12,
-    "lines": 804,
+    "lines": 827,
     "clones": 3,
     "duplicatedLines": 35,
-    "percentage": 4.35
+    "percentage": 4.23
    },
    {
     "format": "c",
@@ -157,7 +173,7 @@
    {
     "format": "markdown",
     "sources": 12,
-    "lines": 996,
+    "lines": 1172,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -165,7 +181,7 @@
    {
     "format": "bash",
     "sources": 12,
-    "lines": 719,
+    "lines": 722,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -173,7 +189,7 @@
    {
     "format": "cmake",
     "sources": 8,
-    "lines": 329,
+    "lines": 330,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -229,17 +245,17 @@
       "end": 168
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Arithmetic.cpp",
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Rounding.cpp",
       "start": 119,
       "end": 148
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Conversions.cpp",
-      "start": 119,
-      "end": 148
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Float16ResultModifiers.cpp",
+      "start": 151,
+      "end": 180
      }
     ],
-    "copies": 40,
+    "copies": 33,
     "excerpt": {
      "lines": [
       "    Require(actual == expected, std::string(\"buffer atomics: lane \") + std::to_string(tid) + \" \" + name + \" is \" + Hex(actual) + \", expected \" + Hex(expected));",
@@ -367,17 +383,17 @@
       "end": 26
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F16MinMaxNan.cpp",
       "start": 10,
       "end": 26
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32ResultClamp.cpp",
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
       "start": 10,
       "end": 26
      }
     ],
-    "copies": 46,
+    "copies": 45,
     "excerpt": {
      "lines": [
       "#include <cstdio>",
@@ -393,60 +409,6 @@
      ],
      "total": 17
     },
-    "kind": "tests"
-   },
-   {
-    "format": "cpp",
-    "lines": 19,
-    "tokens": 210,
-    "first": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
-     "start": 113,
-     "end": 131
-    },
-    "others": [
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
-      "start": 103,
-      "end": 121
-     },
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dx10Clamp.cpp",
-      "start": 157,
-      "end": 175
-     },
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32ArithmeticNan.cpp",
-      "start": 157,
-      "end": 175
-     },
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32DenormalFlush.cpp",
-      "start": 121,
-      "end": 139
-     },
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Arithmetic.cpp",
-      "start": 101,
-      "end": 119
-     },
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Conversions.cpp",
-      "start": 101,
-      "end": 119
-     },
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Division.cpp",
-      "start": 102,
-      "end": 120
-     },
-     {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64DivisionModifiers.cpp",
-      "start": 102,
-      "end": 120
-     }
-    ],
-    "copies": 24,
     "kind": "tests"
    },
    {
@@ -529,12 +491,12 @@
       "end": 21
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F16MinMaxNan.cpp",
       "start": 1,
       "end": 21
      }
     ],
-    "copies": 51,
+    "copies": 52,
     "kind": "tests"
    },
    {
@@ -593,6 +555,60 @@
    },
    {
     "format": "cpp",
+    "lines": 19,
+    "tokens": 210,
+    "first": {
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomicsFloat.cpp",
+     "start": 113,
+     "end": 131
+    },
+    "others": [
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+      "start": 103,
+      "end": 121
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/Dx10Clamp.cpp",
+      "start": 157,
+      "end": 175
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32ArithmeticNan.cpp",
+      "start": 157,
+      "end": 175
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Arithmetic.cpp",
+      "start": 136,
+      "end": 154
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Conversions.cpp",
+      "start": 101,
+      "end": 119
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Division.cpp",
+      "start": 102,
+      "end": 120
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64DivisionModifiers.cpp",
+      "start": 102,
+      "end": 120
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Rounding.cpp",
+      "start": 101,
+      "end": 119
+     }
+    ],
+    "copies": 21,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
     "lines": 32,
     "tokens": 4161,
     "first": {
@@ -636,74 +652,84 @@
    },
    {
     "format": "cpp",
-    "lines": 54,
-    "tokens": 611,
+    "lines": 21,
+    "tokens": 381,
     "first": {
-     "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatD16Loads.cpp",
-     "start": 485,
-     "end": 538
+     "name": "core/libs/prx/libSceAgcDriver/tests/execution/BufferAtomics.cpp",
+     "start": 63,
+     "end": 83
     },
     "others": [
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoads.cpp",
-      "start": 97,
-      "end": 150
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/DivFixupF16.cpp",
+      "start": 121,
+      "end": 141
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoadsX2X3.cpp",
-      "start": 96,
-      "end": 149
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F32MinMaxNan.cpp",
+      "start": 451,
+      "end": 471
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/FlatLoadsX4.cpp",
-      "start": 96,
-      "end": 149
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Arithmetic.cpp",
+      "start": 154,
+      "end": 174
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoads.cpp",
-      "start": 97,
-      "end": 150
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Conversions.cpp",
+      "start": 119,
+      "end": 139
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoadsX2X3.cpp",
-      "start": 96,
-      "end": 149
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Division.cpp",
+      "start": 120,
+      "end": 140
      },
      {
-      "name": "core/libs/prx/libSceAgcDriver/tests/execution/GlobalLoadsX4.cpp",
-      "start": 96,
-      "end": 149
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64DivisionModifiers.cpp",
+      "start": 120,
+      "end": 140
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64NanConversions.cpp",
+      "start": 114,
+      "end": 134
+     },
+     {
+      "name": "core/libs/prx/libSceAgcDriver/tests/execution/F64Transcendental.cpp",
+      "start": 134,
+      "end": 154
      }
     ],
-    "copies": 7,
+    "copies": 11,
     "kind": "tests"
    }
   ],
   "code": {
-   "sources": 996,
-   "lines": 186921,
-   "tokens": 1831285,
-   "clones": 490,
-   "duplicatedLines": 5527,
-   "duplicatedTokens": 79095,
-   "percentage": 2.96,
-   "percentageTokens": 4.32,
+   "sources": 1030,
+   "lines": 199773,
+   "tokens": 1971497,
+   "clones": 539,
+   "duplicatedLines": 6031,
+   "duplicatedTokens": 83311,
+   "percentage": 3.02,
+   "percentageTokens": 4.23,
    "formats": [
     {
      "format": "cpp",
-     "sources": 586,
-     "lines": 150402,
-     "clones": 364,
-     "duplicatedLines": 3501,
-     "percentage": 2.33
+     "sources": 609,
+     "lines": 162131,
+     "clones": 412,
+     "duplicatedLines": 3994,
+     "percentage": 2.46
     },
     {
      "format": "cpp-header",
-     "sources": 386,
-     "lines": 33564,
-     "clones": 125,
-     "duplicatedLines": 2019,
-     "percentage": 6.02
+     "sources": 397,
+     "lines": 34671,
+     "clones": 126,
+     "duplicatedLines": 2030,
+     "percentage": 5.86
     },
     {
      "format": "c",
@@ -716,7 +742,7 @@
     {
      "format": "python",
      "sources": 10,
-     "lines": 1814,
+     "lines": 1830,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1085,20 +1111,20 @@
    }
   },
   "health": {
-   "score": 46,
+   "score": 44.4,
    "grade": "D",
    "size": {
-    "lines": 296542,
-    "files": 1603,
+    "lines": 335573,
+    "files": 1751,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 10,
-     "adjusted": 10,
-     "lines": 29737,
+     "value": 10.8,
+     "adjusted": 10.8,
+     "lines": 36291,
      "halfLife": 8.5,
      "formats": [
       "cpp",
@@ -1115,17 +1141,17 @@
       "data"
      ],
      "weight": 1,
-     "score": 44.3
+     "score": 41.5
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 53.5,
-     "adjusted": 53.2,
-     "lines": 158521,
+     "value": 53.7,
+     "adjusted": 53.5,
+     "lines": 180233,
      "halfLife": 50,
      "weight": 1,
-     "score": 47.8
+     "score": 47.6
     }
    ],
    "skipped": [
@@ -1136,75 +1162,75 @@
    ]
   },
   "complexity": {
-   "total": 66910,
-   "mean": 41.7,
+   "total": 74930,
+   "mean": 42.8,
    "files": [
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/Texture.cpp",
-     "complexity": 1229,
-     "lines": 3857,
-     "bytes": 245099
+     "complexity": 1348,
+     "lines": 4176,
+     "bytes": 265619
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/ShaderResources.cpp",
-     "complexity": 1100,
-     "lines": 3329,
-     "bytes": 202831
+     "complexity": 1162,
+     "lines": 3479,
+     "bytes": 211571
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/Recorder.cpp",
-     "complexity": 997,
-     "lines": 3626,
-     "bytes": 202228
+     "complexity": 1025,
+     "lines": 3694,
+     "bytes": 205606
     },
     {
      "path": "core/shader/recompiler/RdnaDecoder/src/RdnaVectorOpDecoder.cpp",
-     "complexity": 988,
-     "lines": 2486,
-     "bytes": 101813
+     "complexity": 1000,
+     "lines": 2487,
+     "bytes": 102012
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Execution/src/VulkanDevice.cpp",
-     "complexity": 906,
-     "lines": 3811,
-     "bytes": 247479
-    },
-    {
-     "path": "core/shader/recompiler/RdnaDecoder/src/RdnaOpcode.cpp",
-     "complexity": 855,
-     "lines": 935,
-     "bytes": 34572
-    },
-    {
-     "path": "core/libs/prx/libSceAgcDriver/Graphics/src/GuestBufferMemory.cpp",
-     "complexity": 847,
-     "lines": 2980,
-     "bytes": 169897
+     "complexity": 957,
+     "lines": 4011,
+     "bytes": 262163
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/tests/Graphics.cpp",
-     "complexity": 708,
-     "lines": 3222,
-     "bytes": 213587
+     "complexity": 949,
+     "lines": 4147,
+     "bytes": 281705
+    },
+    {
+     "path": "core/libs/prx/libSceAgcDriver/Graphics/src/GuestBufferMemory.cpp",
+     "complexity": 940,
+     "lines": 3293,
+     "bytes": 185372
+    },
+    {
+     "path": "core/shader/recompiler/RdnaDecoder/src/RdnaOpcode.cpp",
+     "complexity": 852,
+     "lines": 932,
+     "bytes": 34467
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/tests/Recorder.cpp",
-     "complexity": 642,
-     "lines": 3471,
-     "bytes": 211123
+     "complexity": 849,
+     "lines": 4904,
+     "bytes": 288812
     },
     {
      "path": "core/libs/prx/libSceAgcDriver/Graphics/src/Draw.cpp",
-     "complexity": 636,
-     "lines": 2200,
-     "bytes": 144290
+     "complexity": 738,
+     "lines": 2498,
+     "bytes": 161739
     }
    ]
   },
   "deadCode": {
-   "percentage": 0.08,
+   "percentage": 0.07,
    "findings": 2,
-   "files": 63,
+   "files": 79,
    "byCategory": [
     {
      "category": "unused-import",
