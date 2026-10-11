@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // The editors the guide covers, as a row of logos that jump to their
-// sections. Mono brand icons come from the simple-icons set in their brand
+// sections, most used first (the order of the Stack Overflow developer
+// survey). Mono brand icons come from the simple-icons set in their brand
 // colours; JetBrains and VS Code use the same marks as the landing page.
 interface Editor {
   name: string
@@ -14,13 +15,13 @@ interface Editor {
 }
 
 const editors: Editor[] = [
+  { name: 'VS Code', to: '#vs-code', how: 'extension on the Marketplace', icon: 'vscode-icons:file-type-vscode', mode: 'svg' },
+  { name: 'JetBrains IDEs', to: '#jetbrains-ides', how: 'plugin on the Marketplace', img: '/jetbrains-mark.svg' },
   { name: 'Neovim', to: '#neovim', how: 'a few lines of config', icon: 'simple-icons:neovim', color: '#57a143' },
-  { name: 'Helix', to: '#helix', how: 'a few lines of config', icon: 'simple-icons:helix', color: '#702457', dark: '#c68fb8' },
   { name: 'Sublime Text', to: '#sublime-text', how: 'LSP package', icon: 'simple-icons:sublimetext', color: '#ff9800' },
   { name: 'Emacs', to: '#emacs', how: 'lsp-mode or Eglot', icon: 'simple-icons:gnuemacs', color: '#7f5ab6', dark: '#b39ddb' },
-  { name: 'JetBrains IDEs', to: '#jetbrains-ides', how: 'plugin on the Marketplace', img: '/jetbrains-mark.svg' },
-  { name: 'VS Code', to: '#vs-code', how: 'extension on the Marketplace', icon: 'vscode-icons:file-type-vscode', mode: 'svg' },
   { name: 'Zed', to: '#zed', how: 'extension, in review', icon: 'simple-icons:zedindustries', color: '#084ccf', dark: '#7aa7ff' },
+  { name: 'Helix', to: '#helix', how: 'a few lines of config', icon: 'simple-icons:helix', color: '#702457', dark: '#c68fb8' },
 ]
 </script>
 
