@@ -1,10 +1,18 @@
 <script setup lang="ts">
 // The authors of a post: avatar, name linked to GitHub, and an X link when
 // the author has one. Ids come from the post's front matter.
-import { authorsOf } from '~/data/authors'
+import { authorsOf, type Author } from '~/data/authors'
 
 const props = defineProps<{ ids?: string[], compact?: boolean }>()
 const list = computed(() => authorsOf(props.ids))
+
+// One icon link per profile the author has, in this order.
+const profiles = (author: Author) => [
+  { href: author.github, icon: 'simple-icons:github', label: 'GitHub' },
+  { href: author.x, icon: 'simple-icons:x', label: 'X' },
+  { href: author.linkedin, icon: 'simple-icons:linkedin', label: 'LinkedIn' },
+  { href: author.telegram, icon: 'simple-icons:telegram', label: 'Telegram' },
+].filter((p): p is { href: string, icon: string, label: string } => Boolean(p.href))
 </script>
 
 <template>
@@ -12,11 +20,17 @@ const list = computed(() => authorsOf(props.ids))
     <li v-for="author in list" :key="author.github" class="blog-author">
       <img :src="author.avatar" :alt="`${author.name} avatar`" width="28" height="28" loading="lazy" class="blog-author-avatar">
       <a :href="author.github" target="_blank" rel="noopener" class="blog-author-name">{{ author.name }}</a>
-      <a :href="author.github" target="_blank" rel="noopener" class="blog-author-link" :aria-label="`${author.name} on GitHub`">
-        <Icon name="simple-icons:github" class="blog-author-icon" />
-      </a>
-      <a v-if="author.x" :href="author.x" target="_blank" rel="noopener" class="blog-author-link" :aria-label="`${author.name} on X`">
-        <Icon name="simple-icons:x" class="blog-author-icon" />
+      <a
+        v-for="profile in profiles(author)"
+        :key="profile.label"
+        :href="profile.href"
+        target="_blank"
+        rel="noopener"
+        class="blog-author-link"
+        :aria-label="`${author.name} on ${profile.label}`"
+        :title="profile.label"
+      >
+        <Icon :name="profile.icon" class="blog-author-icon" />
       </a>
     </li>
   </ul>
