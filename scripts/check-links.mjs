@@ -22,7 +22,7 @@ function walk(dir, out = []) {
 }
 
 // content file -> URL, the way Nuxt Content does it: numeric prefixes drop, index.md is the directory
-const pages = new Set(['/', '/trending', '/support', '/404'])
+const pages = new Set(['/', '/trending', '/support', '/404', '/blog', '/blog/feed.xml'])
 for (const f of walk(join(root, 'content')).filter(f => f.endsWith('.md'))) {
   const rel = relative(join(root, 'content'), f).replace(/\.md$/, '')
   const parts = rel.split('/').map(s => s.replace(/^\d+\./, ''))

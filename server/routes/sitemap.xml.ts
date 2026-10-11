@@ -16,12 +16,13 @@ interface SitemapUrl {
   lastmod?: string
 }
 
-const COLLECTIONS = ['docs', 'landing']
+const COLLECTIONS = ['docs', 'landing', 'blog']
 
 // Routes registered via `pages:extend` in nuxt.config.ts, with the source
 // file whose git history gives their lastmod.
 const EXTRA_ROUTES: Array<{ loc: string, file: string }> = [
   { loc: '/support', file: 'pages/support.vue' },
+  { loc: '/blog', file: 'pages/blog.vue' },
 ]
 
 const buildDate = new Date().toISOString().slice(0, 10)

@@ -57,7 +57,7 @@ export default defineNuxtConfig({
       // pages/trending-week.vue into stray /trending-repo and /trending-week
       // routes; only the parameterised registrations below should exist
       // (their names must differ, or vue-router keeps the scanned ones).
-      for (const stray of ["/trending-repo", "/trending-week"]) {
+      for (const stray of ["/trending-repo", "/trending-week", "/blog-post"]) {
         const scanned = pages.findIndex((p) => p.path === stray);
         if (scanned !== -1) pages.splice(scanned, 1);
       }
@@ -88,6 +88,16 @@ export default defineNuxtConfig({
           name: "support",
           path: "/support",
           file: "~/pages/support.vue",
+        },
+        {
+          name: "blog",
+          path: "/blog",
+          file: "~/pages/blog.vue",
+        },
+        {
+          name: "blog-post",
+          path: "/blog/:slug",
+          file: "~/pages/blog-post.vue",
         },
         {
           // pages/not-found.vue is also scanned as /not-found; the name must
@@ -163,7 +173,7 @@ export default defineNuxtConfig({
       // are linked from nowhere the crawler visits, so they were missing
       // from the static output and the live URLs returned the 404 page
       // while the sitemap listed them.
-      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", "/concepts", "/reference", "/project", ...trendingRoutes],
+      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", "/concepts", "/reference", "/project", "/blog", "/blog/feed.xml", ...trendingRoutes],
     },
   },
 
@@ -219,6 +229,7 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "apple-touch-icon", href: "/favicon.svg" },
+        { rel: "alternate", type: "application/atom+xml", title: "jscpd blog", href: "/blog/feed.xml" },
       ],
     },
   },
@@ -245,6 +256,12 @@ export default defineNuxtConfig({
             description: "How to support jscpd development: Open Collective, GitHub Sponsors, and crypto.",
           },
         ],
+      },
+      {
+        title: "Blog",
+        description: "Release notes with commands and real output, and notes on how jscpd finds what it finds.",
+        contentCollection: "blog",
+        contentFilters: [{ field: "extension", operator: "=", value: "md" }],
       },
     ],
   },

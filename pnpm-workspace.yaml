@@ -5,3 +5,10 @@ allowBuilds:
   esbuild: true
   sharp: true
   vue-demi: true
+
+# content.config.ts imports @nuxt/content, which only docus depends on; the
+# pattern links it at the root of node_modules so the import resolves under
+# pnpm's strict layout without adding a second copy to the lockfile.
+publicHoistPattern:
+  - '@nuxt/content'
+
