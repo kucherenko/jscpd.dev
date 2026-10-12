@@ -153,6 +153,28 @@ In practice a project of 25 thousand lines takes six or seven minutes the first 
 
 The model runs inside the process, no Python, no Ollama. 14 languages plus Vue, Svelte and Astro. Cross-language search on by default. SARIF, JSON and HTML reports. In codedupes, Deslop and sensegrep the cross-language search is a separate switch. Deslop, sensegrep and the Ollama-based tool need a model server next to them. fallow reads JavaScript and TypeScript, codedupes five languages, sensegrep four and Vue, codebase-memory-mcp does not compare files with different extensions at all.
 
+This is what a run looks like. The demo shop from the repository has a Rust backend and a Svelte frontend with eight rules written on both sides, and two features written twice within one language. The default scan finds nothing, `--semantic` finds the eight cross-language pairs, and with the same-language bar at 0.55 the two twins come in as well:
+
+```bash
+jscpd fixtures/semantic-demo --semantic --semantic-same-threshold 0.55 -r html,json
+# Semantic clones (experimental): embedding 38 functions with nomic-ai/CodeRankEmbed on this machine
+# Found 10 clones.
+```
+
+::report-screenshot
+---
+light: /images/semantic/demo-report-light.png
+width: 1560
+height: 1200
+href: /examples/semantic-demo.html
+link-text: Open the HTML report
+alt: "The HTML report of jscpd --semantic on the demo shop: a dashboard with 39 files, 1,514 lines, 10 clones and 194 duplicated lines, the table of formats, and the Rust section listing each pair of functions with a Show code button, the first pair expanded to its code."
+caption: "The HTML report of that run: ten pairs, eight across Rust and Svelte and two within one language, each with the code of both sides a click away."
+---
+::
+
+The same run is there as [JSON](/examples/semantic-demo.json), the shape the SARIF and Code Climate reporters build on, and the demo itself is [fixtures/semantic-demo](https://github.com/kucherenko/jscpd/tree/master/fixtures/semantic-demo) in the repository, with the commands and the expected output in its README.
+
 ## What changes in jscpd
 
 In the order of value against effort.

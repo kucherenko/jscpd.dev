@@ -1,0 +1,483 @@
+{
+  "duplicates": [
+    {
+      "firstFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 1,
+          "line": 22,
+          "position": 660
+        },
+        "name": "backend/src/feeds.rs",
+        "start": 10,
+        "startLoc": {
+          "column": 0,
+          "line": 10,
+          "position": 269
+        }
+      },
+      "format": "rust",
+      "fragment": "fn feed_item_slug(title: &str) -> String {\n    let lowered = title.to_lowercase();\n    let words: Vec<&str> = lowered\n        .split(|c: char| !c.is_ascii_alphanumeric())\n        .filter(|word| !word.is_empty())\n        .collect();\n    let mut slug = words.join(\"-\");\n    if slug.len() > 80 {\n        slug.truncate(80);\n        slug = slug.trim_end_matches('-').to_string();\n    }\n    slug\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 13,
+      "secondFile": {
+        "end": 27,
+        "endLoc": {
+          "column": 1,
+          "line": 27,
+          "position": 747
+        },
+        "name": "backend/src/text.rs",
+        "start": 6,
+        "startLoc": {
+          "column": 0,
+          "line": 6,
+          "position": 141
+        }
+      },
+      "similarity": 0.624,
+      "tokens": 107
+    },
+    {
+      "firstFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 1,
+          "line": 22,
+          "position": 660
+        },
+        "name": "backend/src/feeds.rs",
+        "start": 10,
+        "startLoc": {
+          "column": 0,
+          "line": 10,
+          "position": 269
+        }
+      },
+      "format": "rust",
+      "fragment": "fn feed_item_slug(title: &str) -> String {\n    let lowered = title.to_lowercase();\n    let words: Vec<&str> = lowered\n        .split(|c: char| !c.is_ascii_alphanumeric())\n        .filter(|word| !word.is_empty())\n        .collect();\n    let mut slug = words.join(\"-\");\n    if slug.len() > 80 {\n        slug.truncate(80);\n        slug = slug.trim_end_matches('-').to_string();\n    }\n    slug\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 13,
+      "secondFile": {
+        "end": 16,
+        "endLoc": {
+          "column": 3,
+          "line": 16,
+          "position": 463
+        },
+        "name": "frontend/src/lib/components/ArticleCard.svelte:typescript",
+        "start": 7,
+        "startLoc": {
+          "column": 2,
+          "line": 7,
+          "position": 214
+        }
+      },
+      "similarity": 0.546,
+      "tokens": 58
+    },
+    {
+      "firstFile": {
+        "end": 36,
+        "endLoc": {
+          "column": 1,
+          "line": 36,
+          "position": 1005
+        },
+        "name": "backend/src/pagination.rs",
+        "start": 14,
+        "startLoc": {
+          "column": 0,
+          "line": 14,
+          "position": 319
+        }
+      },
+      "format": "rust",
+      "fragment": "pub fn page_links(current: u32, total_pages: u32, radius: u32) -> Vec<PageLink> {\n    if total_pages == 0 {\n        return Vec::new();\n    }\n    let current = current.clamp(1, total_pages);\n    let from = current.saturating_sub(radius).max(1);\n    let to = (current + radius).min(total_pages);\n    let mut links = Vec::new();\n    if from > 1 {\n        links.push(PageLink::Page(1));\n        if from > 2 {\n            links.push(PageLink::Gap);\n        }\n    }\n    links.extend((from..=to).map(PageLink::Page));\n    if to < total_pages {\n        if to < total_pages - 1 {\n            links.push(PageLink::Gap);\n        }\n        links.push(PageLink::Page(total_pages));\n    }\n    links\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 23,
+      "secondFile": {
+        "end": 30,
+        "endLoc": {
+          "column": 3,
+          "line": 30,
+          "position": 798
+        },
+        "name": "frontend/src/lib/components/Pager.svelte:typescript",
+        "start": 12,
+        "startLoc": {
+          "column": 2,
+          "line": 12,
+          "position": 223
+        }
+      },
+      "similarity": 0.492,
+      "tokens": 172
+    },
+    {
+      "firstFile": {
+        "end": 29,
+        "endLoc": {
+          "column": 1,
+          "line": 29,
+          "position": 813
+        },
+        "name": "backend/src/payments.rs",
+        "start": 5,
+        "startLoc": {
+          "column": 0,
+          "line": 5,
+          "position": 162
+        }
+      },
+      "format": "rust",
+      "fragment": "pub fn is_valid_card_number(input: &str) -> bool {\n    let digits: Vec<u32> = input\n        .chars()\n        .filter(|c| !matches!(c, ' ' | '-'))\n        .map(|c| c.to_digit(10))\n        .collect::<Option<Vec<u32>>>()\n        .unwrap_or_default();\n    if !(12..=19).contains(&digits.len()) {\n        return false;\n    }\n    let sum: u32 = digits\n        .iter()\n        .rev()\n        .enumerate()\n        .map(|(i, &d)| {\n            if i % 2 == 1 {\n                let doubled = d * 2;\n                if doubled > 9 { doubled - 9 } else { doubled }\n            } else {\n                d\n            }\n        })\n        .sum();\n    sum % 10 == 0\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 25,
+      "secondFile": {
+        "end": 22,
+        "endLoc": {
+          "column": 3,
+          "line": 22,
+          "position": 606
+        },
+        "name": "frontend/src/lib/components/PaymentForm.svelte:typescript",
+        "start": 8,
+        "startLoc": {
+          "column": 2,
+          "line": 8,
+          "position": 194
+        }
+      },
+      "similarity": 0.688,
+      "tokens": 99
+    },
+    {
+      "firstFile": {
+        "end": 58,
+        "endLoc": {
+          "column": 1,
+          "line": 58,
+          "position": 1609
+        },
+        "name": "backend/src/pricing.rs",
+        "start": 34,
+        "startLoc": {
+          "column": 0,
+          "line": 34,
+          "position": 816
+        }
+      },
+      "format": "rust",
+      "fragment": "pub fn cart_totals(lines: &[CartLine], coupon: Option<&Coupon>) -> Totals {\n    let subtotal: i64 = lines\n        .iter()\n        .map(|line| line.unit_price_cents * i64::from(line.quantity))\n        .sum();\n    let discount = match coupon {\n        Some(Coupon::Percent { percent }) => subtotal * i64::from((*percent).min(100)) / 100,\n        Some(Coupon::Fixed { amount_cents }) => (*amount_cents).clamp(0, subtotal),\n        None => 0,\n    };\n    let taxable = subtotal - discount;\n    let tax = (taxable * TAX_RATE_PERCENT + 50) / 100;\n    let shipping = if lines.is_empty() || taxable >= FREE_SHIPPING_FROM {\n        0\n    } else {\n        SHIPPING_FEE\n    };\n    Totals {\n        subtotal,\n        discount,\n        tax,\n        shipping,\n        total: taxable + tax + shipping,\n    }\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 25,
+      "secondFile": {
+        "end": 31,
+        "endLoc": {
+          "column": 3,
+          "line": 31,
+          "position": 1188
+        },
+        "name": "frontend/src/lib/components/CartSummary.svelte:typescript",
+        "start": 19,
+        "startLoc": {
+          "column": 2,
+          "line": 19,
+          "position": 465
+        }
+      },
+      "similarity": 0.733,
+      "tokens": 174
+    },
+    {
+      "firstFile": {
+        "end": 41,
+        "endLoc": {
+          "column": 1,
+          "line": 41,
+          "position": 1191
+        },
+        "name": "backend/src/text.rs",
+        "start": 30,
+        "startLoc": {
+          "column": 0,
+          "line": 30,
+          "position": 819
+        }
+      },
+      "format": "rust",
+      "fragment": "pub fn excerpt(body: &str, max_words: usize) -> String {\n    let words: Vec<&str> = body.split_whitespace().collect();\n    if words.len() <= max_words {\n        return words.join(\" \");\n    }\n    let mut cut = words[..max_words].join(\" \");\n    while cut.ends_with(|c: char| matches!(c, ',' | ';' | ':' | '.' | '-')) {\n        cut.pop();\n    }\n    cut.push('…');\n    cut\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 12,
+      "secondFile": {
+        "end": 25,
+        "endLoc": {
+          "column": 3,
+          "line": 25,
+          "position": 750
+        },
+        "name": "frontend/src/lib/components/ArticleCard.svelte:typescript",
+        "start": 18,
+        "startLoc": {
+          "column": 2,
+          "line": 18,
+          "position": 467
+        }
+      },
+      "similarity": 0.538,
+      "tokens": 76
+    },
+    {
+      "firstFile": {
+        "end": 21,
+        "endLoc": {
+          "column": 1,
+          "line": 21,
+          "position": 809
+        },
+        "name": "backend/src/time.rs",
+        "start": 6,
+        "startLoc": {
+          "column": 0,
+          "line": 6,
+          "position": 160
+        }
+      },
+      "format": "rust",
+      "fragment": "pub fn relative_time(then: DateTime<Utc>, now: DateTime<Utc>) -> String {\n    let seconds = (now - then).num_seconds().max(0);\n    let minutes = seconds / 60;\n    let hours = minutes / 60;\n    let days = hours / 24;\n    match () {\n        _ if seconds < 45 => \"just now\".to_string(),\n        _ if minutes < 60 => plural(minutes.max(1), \"minute\"),\n        _ if hours < 24 => plural(hours, \"hour\"),\n        _ if days == 1 => \"yesterday\".to_string(),\n        _ if days < 7 => plural(days, \"day\"),\n        _ if days < 30 => plural(days / 7, \"week\"),\n        _ if days < 365 => plural(days / 30, \"month\"),\n        _ => plural(days / 365, \"year\"),\n    }\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 16,
+      "secondFile": {
+        "end": 27,
+        "endLoc": {
+          "column": 3,
+          "line": 27,
+          "position": 897
+        },
+        "name": "frontend/src/lib/components/RelativeTime.svelte:typescript",
+        "start": 16,
+        "startLoc": {
+          "column": 2,
+          "line": 16,
+          "position": 396
+        }
+      },
+      "similarity": 0.477,
+      "tokens": 128
+    },
+    {
+      "firstFile": {
+        "end": 46,
+        "endLoc": {
+          "column": 1,
+          "line": 46,
+          "position": 1553
+        },
+        "name": "backend/src/validation.rs",
+        "start": 20,
+        "startLoc": {
+          "column": 0,
+          "line": 20,
+          "position": 496
+        }
+      },
+      "format": "rust",
+      "fragment": "pub fn validate_email(input: &str) -> Result<(), FieldError> {\n    let email = input.trim();\n    if email.is_empty() {\n        return Err(FieldError::new(\"email\", \"Email is required\"));\n    }\n    if email.len() > MAX_EMAIL_LEN {\n        return Err(FieldError::new(\"email\", \"Email is too long\"));\n    }\n    let Some((local, domain)) = email.split_once('@') else {\n        return Err(FieldError::new(\"email\", \"Email must contain @\"));\n    };\n    if local.is_empty() || local.len() > MAX_LOCAL_PART_LEN || domain.contains('@') {\n        return Err(FieldError::new(\"email\", \"Email address is invalid\"));\n    }\n    let labels: Vec<&str> = domain.split('.').collect();\n    let domain_ok = labels.len() >= 2\n        && labels.iter().all(|label| {\n            !label.is_empty()\n                && !label.starts_with('-')\n                && !label.ends_with('-')\n                && label.chars().all(|c| c.is_ascii_alphanumeric() || c == '-')\n        });\n    if !domain_ok {\n        return Err(FieldError::new(\"email\", \"Email domain is invalid\"));\n    }\n    Ok(())\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 27,
+      "secondFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 3,
+          "line": 28,
+          "position": 1095
+        },
+        "name": "frontend/src/lib/components/SignupForm.svelte:typescript",
+        "start": 15,
+        "startLoc": {
+          "column": 2,
+          "line": 15,
+          "position": 462
+        }
+      },
+      "similarity": 0.622,
+      "tokens": 125
+    },
+    {
+      "firstFile": {
+        "end": 74,
+        "endLoc": {
+          "column": 1,
+          "line": 74,
+          "position": 2330
+        },
+        "name": "backend/src/validation.rs",
+        "start": 49,
+        "startLoc": {
+          "column": 0,
+          "line": 49,
+          "position": 1610
+        }
+      },
+      "format": "rust",
+      "fragment": "pub fn password_strength(password: &str) -> Strength {\n    if COMMON_PASSWORDS.contains(&password.to_lowercase().as_str()) {\n        return Strength::Weak;\n    }\n    let mut score = 0;\n    if password.chars().count() >= 8 {\n        score += 1;\n    }\n    if password.chars().count() >= 12 {\n        score += 1;\n    }\n    if password.chars().any(|c| c.is_lowercase()) && password.chars().any(|c| c.is_uppercase()) {\n        score += 1;\n    }\n    if password.chars().any(|c| c.is_ascii_digit()) {\n        score += 1;\n    }\n    if password.chars().any(|c| !c.is_alphanumeric()) {\n        score += 1;\n    }\n    match score {\n        0..=2 => Strength::Weak,\n        3 => Strength::Fair,\n        _ => Strength::Strong,\n    }\n}",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 26,
+      "secondFile": {
+        "end": 42,
+        "endLoc": {
+          "column": 3,
+          "line": 42,
+          "position": 1504
+        },
+        "name": "frontend/src/lib/components/SignupForm.svelte:typescript",
+        "start": 30,
+        "startLoc": {
+          "column": 2,
+          "line": 30,
+          "position": 1099
+        }
+      },
+      "similarity": 0.669,
+      "tokens": 103
+    },
+    {
+      "firstFile": {
+        "end": 28,
+        "endLoc": {
+          "column": 3,
+          "line": 28,
+          "position": 1095
+        },
+        "name": "frontend/src/lib/components/SignupForm.svelte:typescript",
+        "start": 15,
+        "startLoc": {
+          "column": 2,
+          "line": 15,
+          "position": 462
+        }
+      },
+      "format": "typescript",
+      "fragment": "  function checkEmail(value: string): string | null {\n    const address = value.trim();\n    if (address === '') return 'Please enter your email';\n    if (address.length > MAX_EMAIL_LENGTH) return 'That email is too long';\n    const at = address.indexOf('@');\n    if (at <= 0 || at !== address.lastIndexOf('@') || at > 64) {\n      return 'That does not look like an email address';\n    }\n    const domainParts = address.slice(at + 1).split('.');\n    const goodDomain =\n      domainParts.length > 1 &&\n      domainParts.every((part) => /^[a-z0-9]+(-[a-z0-9]+)*$/i.test(part));\n    return goodDomain ? null : 'Check the part after @';\n  }",
+      "isNew": false,
+      "kind": "semantic",
+      "lines": 14,
+      "secondFile": {
+        "end": 15,
+        "endLoc": {
+          "column": 1,
+          "line": 15,
+          "position": 489
+        },
+        "name": "frontend/src/lib/validators.ts",
+        "start": 6,
+        "startLoc": {
+          "column": 7,
+          "line": 6,
+          "position": 226
+        }
+      },
+      "similarity": 0.598,
+      "tokens": 65
+    }
+  ],
+  "statistics": {
+    "detectionDate": "2026-10-12T14:26:40.241Z",
+    "formats": {
+      "bash": {
+        "clones": 0,
+        "duplicatedLines": 0,
+        "duplicatedTokens": 0,
+        "lines": 43,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 0.0,
+        "percentageTokens": 0.0,
+        "sources": 1,
+        "tokens": 333
+      },
+      "html": {
+        "clones": 0,
+        "duplicatedLines": 0,
+        "duplicatedTokens": 0,
+        "lines": 85,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 0.0,
+        "percentageTokens": 0.0,
+        "sources": 7,
+        "tokens": 796
+      },
+      "markdown": {
+        "clones": 0,
+        "duplicatedLines": 0,
+        "duplicatedTokens": 0,
+        "lines": 246,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 0.0,
+        "percentageTokens": 0.0,
+        "sources": 1,
+        "tokens": 2310
+      },
+      "rust": {
+        "clones": 9,
+        "duplicatedLines": 180,
+        "duplicatedTokens": 1042,
+        "lines": 555,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 32.432432432432435,
+        "percentageTokens": 26.945952935091803,
+        "sources": 11,
+        "tokens": 3867
+      },
+      "svelte": {
+        "clones": 0,
+        "duplicatedLines": 0,
+        "duplicatedTokens": 0,
+        "lines": 269,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 0.0,
+        "percentageTokens": 0.0,
+        "sources": 8,
+        "tokens": 1963
+      },
+      "typescript": {
+        "clones": 1,
+        "duplicatedLines": 14,
+        "duplicatedTokens": 65,
+        "lines": 316,
+        "newClones": 0,
+        "newDuplicatedLines": 0,
+        "percentage": 4.430379746835443,
+        "percentageTokens": 2.593774940143655,
+        "sources": 11,
+        "tokens": 2506
+      }
+    },
+    "total": {
+      "clones": 10,
+      "duplicatedLines": 194,
+      "duplicatedTokens": 1107,
+      "lines": 1514,
+      "newClones": 0,
+      "newDuplicatedLines": 0,
+      "percentage": 12.813738441215325,
+      "percentageTokens": 9.401273885350319,
+      "sources": 39,
+      "tokens": 11775
+    }
+  }
+}

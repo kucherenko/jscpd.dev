@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy/Paste Detector Report</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f7fafc; color: #2d3748; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .header { background: #fff; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); padding: 1rem 0; }
+    .header-inner { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
+    .header h1 { font-size: 1.875rem; font-weight: 600; color: #2d3748; margin: 0; }
+    .main { max-width: 80rem; margin: 2rem auto; padding: 0 1rem; }
+    .card { background: #fff; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); border-radius: 0.25rem; padding: 1.5rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.5rem; font-weight: 600; color: #4a5568; margin: 0 0 1rem 0; }
+    .dashboard { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .stat-card { padding: 1rem; border-radius: 0.25rem; text-align: center; }
+    .stat-card h3 { font-size: 1.125rem; font-weight: 600; margin: 0 0 0.5rem 0; }
+    .stat-card .val { font-size: 2.25rem; font-weight: 700; }
+    .stat-blue { background: #bee3f8; color: #2a4365; }
+    .stat-green { background: #c6f6d5; color: #276749; }
+    .stat-yellow { background: #fefcbf; color: #975a16; }
+    .stat-red { background: #fed7d7; color: #9b2c2c; }
+    table { width: 100%; border-collapse: collapse; }
+    thead th { background: #edf2f7; color: #718096; text-transform: uppercase; font-size: 0.75rem; font-weight: 600; padding: 0.75rem 1.5rem; text-align: left; }
+    tbody td { padding: 0.75rem 1.5rem; border-bottom: 1px solid #edf2f7; font-size: 0.875rem; }
+    tbody tr:hover { background: #f7fafc; }
+    .clone-section { margin-bottom: 2rem; }
+    .clone-section h2 { border-bottom: 2px solid #edf2f7; padding-bottom: 0.5rem; }
+    .clone-item { padding: 1rem 0; border-bottom: 1px solid #edf2f7; }
+    .clone-item:last-child { border-bottom: none; }
+    .clone-info { color: #718096; font-size: 0.875rem; margin-bottom: 0.25rem; }
+    .toggle-btn { background: #a0aec0; color: #fff; border: none; padding: 0.125rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; margin-left: 0.5rem; }
+    .toggle-btn:focus { outline: none; }
+    .code-block { background: #f7fafc; border: 1px solid #edf2f7; border-radius: 0.25rem; padding: 1rem; margin-top: 0.5rem; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 0.875rem; color: #2d3748; white-space: pre-wrap; overflow-x: auto; display: none; }
+    .code-block.visible { display: block; }
+    .no-dupes { color: #27ae60; font-weight: 700; font-size: 1.125rem; }
+    .footer { margin-top: 3rem; padding: 2rem 0; border-top: 1px solid #e0e0e0; text-align: center; font-family: -apple-system, sans-serif; color: #666; }
+    .footer p { margin: 0.5rem 0; font-size: 0.875rem; }
+    .footer a { color: #0066cc; }
+    .footer .small { font-size: 0.75rem; color: #999; }
+    @media (max-width: 768px) { .dashboard { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1>jscpd - copy/paste report</h1>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="card">
+      <section>
+        <h2>Dashboard</h2>
+        <div class="dashboard">
+          <div class="stat-card stat-blue">
+            <h3>Total Files</h3>
+            <div class="val">39</div>
+          </div>
+          <div class="stat-card stat-green">
+            <h3>Total Lines of Code</h3>
+            <div class="val">1514</div>
+          </div>
+          <div class="stat-card stat-yellow">
+            <h3>Number of Clones</h3>
+            <div class="val">10</div>
+          </div>
+          <div class="stat-card stat-red">
+            <h3>Duplicated Lines</h3>
+            <div class="val">194 (12.81%)</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="card">
+      <section>
+        <h2>Formats with Duplications</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Format</th>
+              <th>Files</th>
+              <th>Lines</th>
+              <th>Clones</th>
+              <th>Duplicated Lines</th>
+              <th>Duplicated Tokens</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td><a href="#bash-clones">bash</a></td>
+              <td>1</td>
+              <td>43</td>
+              <td>0</td>
+              <td>0 (0.00%)</td>
+              <td>0 (0.00%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#html-clones">html</a></td>
+              <td>7</td>
+              <td>85</td>
+              <td>0</td>
+              <td>0 (0.00%)</td>
+              <td>0 (0.00%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#markdown-clones">markdown</a></td>
+              <td>1</td>
+              <td>246</td>
+              <td>0</td>
+              <td>0 (0.00%)</td>
+              <td>0 (0.00%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#rust-clones">rust</a></td>
+              <td>11</td>
+              <td>555</td>
+              <td>9</td>
+              <td>180 (32.43%)</td>
+              <td>1042 (26.95%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#svelte-clones">svelte</a></td>
+              <td>8</td>
+              <td>269</td>
+              <td>0</td>
+              <td>0 (0.00%)</td>
+              <td>0 (0.00%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#typescript-clones">typescript</a></td>
+              <td>11</td>
+              <td>316</td>
+              <td>1</td>
+              <td>14 (4.43%)</td>
+              <td>65 (2.59%)</td>
+            </tr>
+            
+            <tr style="font-weight: 700;">
+              <td>Total</td>
+              <td>39</td>
+              <td>1514</td>
+              <td>10</td>
+              <td>194 (12.81%)</td>
+              <td>1107 (9.40%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    
+    
+    <div class="card">
+      <section class="clone-section">
+        <a name="rust-clones"></a>
+        <h2>rust</h2>
+        <div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/feeds.rs (Line 10:1 - Line 22:2),
+              backend/src/text.rs (Line 6:1 - Line 27:2)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-1')">Show code</button>
+            </div>
+            <pre id="code-rust-1" class="code-block">fn feed_item_slug(title: &#38;str) -&#62; String {
+    let lowered = title.to_lowercase();
+    let words: Vec&#60;&#38;str&#62; = lowered
+        .split(|c: char| !c.is_ascii_alphanumeric())
+        .filter(|word| !word.is_empty())
+        .collect();
+    let mut slug = words.join(&#34;-&#34;);
+    if slug.len() &#62; 80 {
+        slug.truncate(80);
+        slug = slug.trim_end_matches(&#39;-&#39;).to_string();
+    }
+    slug
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/feeds.rs (Line 10:1 - Line 22:2),
+              frontend/src/lib/components/ArticleCard.svelte:typescript (Line 7:3 - Line 16:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-2')">Show code</button>
+            </div>
+            <pre id="code-rust-2" class="code-block">fn feed_item_slug(title: &#38;str) -&#62; String {
+    let lowered = title.to_lowercase();
+    let words: Vec&#60;&#38;str&#62; = lowered
+        .split(|c: char| !c.is_ascii_alphanumeric())
+        .filter(|word| !word.is_empty())
+        .collect();
+    let mut slug = words.join(&#34;-&#34;);
+    if slug.len() &#62; 80 {
+        slug.truncate(80);
+        slug = slug.trim_end_matches(&#39;-&#39;).to_string();
+    }
+    slug
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/pagination.rs (Line 14:1 - Line 36:2),
+              frontend/src/lib/components/Pager.svelte:typescript (Line 12:3 - Line 30:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-3')">Show code</button>
+            </div>
+            <pre id="code-rust-3" class="code-block">pub fn page_links(current: u32, total_pages: u32, radius: u32) -&#62; Vec&#60;PageLink&#62; {
+    if total_pages == 0 {
+        return Vec::new();
+    }
+    let current = current.clamp(1, total_pages);
+    let from = current.saturating_sub(radius).max(1);
+    let to = (current + radius).min(total_pages);
+    let mut links = Vec::new();
+    if from &#62; 1 {
+        links.push(PageLink::Page(1));
+        if from &#62; 2 {
+            links.push(PageLink::Gap);
+        }
+    }
+    links.extend((from..=to).map(PageLink::Page));
+    if to &#60; total_pages {
+        if to &#60; total_pages - 1 {
+            links.push(PageLink::Gap);
+        }
+        links.push(PageLink::Page(total_pages));
+    }
+    links
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/payments.rs (Line 5:1 - Line 29:2),
+              frontend/src/lib/components/PaymentForm.svelte:typescript (Line 8:3 - Line 22:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-4')">Show code</button>
+            </div>
+            <pre id="code-rust-4" class="code-block">pub fn is_valid_card_number(input: &#38;str) -&#62; bool {
+    let digits: Vec&#60;u32&#62; = input
+        .chars()
+        .filter(|c| !matches!(c, &#39; &#39; | &#39;-&#39;))
+        .map(|c| c.to_digit(10))
+        .collect::&#60;Option&#60;Vec&#60;u32&#62;&#62;&#62;()
+        .unwrap_or_default();
+    if !(12..=19).contains(&#38;digits.len()) {
+        return false;
+    }
+    let sum: u32 = digits
+        .iter()
+        .rev()
+        .enumerate()
+        .map(|(i, &#38;d)| {
+            if i % 2 == 1 {
+                let doubled = d * 2;
+                if doubled &#62; 9 { doubled - 9 } else { doubled }
+            } else {
+                d
+            }
+        })
+        .sum();
+    sum % 10 == 0
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/pricing.rs (Line 34:1 - Line 58:2),
+              frontend/src/lib/components/CartSummary.svelte:typescript (Line 19:3 - Line 31:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-5')">Show code</button>
+            </div>
+            <pre id="code-rust-5" class="code-block">pub fn cart_totals(lines: &#38;[CartLine], coupon: Option&#60;&#38;Coupon&#62;) -&#62; Totals {
+    let subtotal: i64 = lines
+        .iter()
+        .map(|line| line.unit_price_cents * i64::from(line.quantity))
+        .sum();
+    let discount = match coupon {
+        Some(Coupon::Percent { percent }) =&#62; subtotal * i64::from((*percent).min(100)) / 100,
+        Some(Coupon::Fixed { amount_cents }) =&#62; (*amount_cents).clamp(0, subtotal),
+        None =&#62; 0,
+    };
+    let taxable = subtotal - discount;
+    let tax = (taxable * TAX_RATE_PERCENT + 50) / 100;
+    let shipping = if lines.is_empty() || taxable &#62;= FREE_SHIPPING_FROM {
+        0
+    } else {
+        SHIPPING_FEE
+    };
+    Totals {
+        subtotal,
+        discount,
+        tax,
+        shipping,
+        total: taxable + tax + shipping,
+    }
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/text.rs (Line 30:1 - Line 41:2),
+              frontend/src/lib/components/ArticleCard.svelte:typescript (Line 18:3 - Line 25:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-6')">Show code</button>
+            </div>
+            <pre id="code-rust-6" class="code-block">pub fn excerpt(body: &#38;str, max_words: usize) -&#62; String {
+    let words: Vec&#60;&#38;str&#62; = body.split_whitespace().collect();
+    if words.len() &#60;= max_words {
+        return words.join(&#34; &#34;);
+    }
+    let mut cut = words[..max_words].join(&#34; &#34;);
+    while cut.ends_with(|c: char| matches!(c, &#39;,&#39; | &#39;;&#39; | &#39;:&#39; | &#39;.&#39; | &#39;-&#39;)) {
+        cut.pop();
+    }
+    cut.push(&#39;…&#39;);
+    cut
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/time.rs (Line 6:1 - Line 21:2),
+              frontend/src/lib/components/RelativeTime.svelte:typescript (Line 16:3 - Line 27:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-7')">Show code</button>
+            </div>
+            <pre id="code-rust-7" class="code-block">pub fn relative_time(then: DateTime&#60;Utc&#62;, now: DateTime&#60;Utc&#62;) -&#62; String {
+    let seconds = (now - then).num_seconds().max(0);
+    let minutes = seconds / 60;
+    let hours = minutes / 60;
+    let days = hours / 24;
+    match () {
+        _ if seconds &#60; 45 =&#62; &#34;just now&#34;.to_string(),
+        _ if minutes &#60; 60 =&#62; plural(minutes.max(1), &#34;minute&#34;),
+        _ if hours &#60; 24 =&#62; plural(hours, &#34;hour&#34;),
+        _ if days == 1 =&#62; &#34;yesterday&#34;.to_string(),
+        _ if days &#60; 7 =&#62; plural(days, &#34;day&#34;),
+        _ if days &#60; 30 =&#62; plural(days / 7, &#34;week&#34;),
+        _ if days &#60; 365 =&#62; plural(days / 30, &#34;month&#34;),
+        _ =&#62; plural(days / 365, &#34;year&#34;),
+    }
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/validation.rs (Line 20:1 - Line 46:2),
+              frontend/src/lib/components/SignupForm.svelte:typescript (Line 15:3 - Line 28:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-8')">Show code</button>
+            </div>
+            <pre id="code-rust-8" class="code-block">pub fn validate_email(input: &#38;str) -&#62; Result&#60;(), FieldError&#62; {
+    let email = input.trim();
+    if email.is_empty() {
+        return Err(FieldError::new(&#34;email&#34;, &#34;Email is required&#34;));
+    }
+    if email.len() &#62; MAX_EMAIL_LEN {
+        return Err(FieldError::new(&#34;email&#34;, &#34;Email is too long&#34;));
+    }
+    let Some((local, domain)) = email.split_once(&#39;@&#39;) else {
+        return Err(FieldError::new(&#34;email&#34;, &#34;Email must contain @&#34;));
+    };
+    if local.is_empty() || local.len() &#62; MAX_LOCAL_PART_LEN || domain.contains(&#39;@&#39;) {
+        return Err(FieldError::new(&#34;email&#34;, &#34;Email address is invalid&#34;));
+    }
+    let labels: Vec&#60;&#38;str&#62; = domain.split(&#39;.&#39;).collect();
+    let domain_ok = labels.len() &#62;= 2
+        &#38;&#38; labels.iter().all(|label| {
+            !label.is_empty()
+                &#38;&#38; !label.starts_with(&#39;-&#39;)
+                &#38;&#38; !label.ends_with(&#39;-&#39;)
+                &#38;&#38; label.chars().all(|c| c.is_ascii_alphanumeric() || c == &#39;-&#39;)
+        });
+    if !domain_ok {
+        return Err(FieldError::new(&#34;email&#34;, &#34;Email domain is invalid&#34;));
+    }
+    Ok(())
+}</pre>
+          </div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              backend/src/validation.rs (Line 49:1 - Line 74:2),
+              frontend/src/lib/components/SignupForm.svelte:typescript (Line 30:3 - Line 42:4)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-rust-9')">Show code</button>
+            </div>
+            <pre id="code-rust-9" class="code-block">pub fn password_strength(password: &#38;str) -&#62; Strength {
+    if COMMON_PASSWORDS.contains(&#38;password.to_lowercase().as_str()) {
+        return Strength::Weak;
+    }
+    let mut score = 0;
+    if password.chars().count() &#62;= 8 {
+        score += 1;
+    }
+    if password.chars().count() &#62;= 12 {
+        score += 1;
+    }
+    if password.chars().any(|c| c.is_lowercase()) &#38;&#38; password.chars().any(|c| c.is_uppercase()) {
+        score += 1;
+    }
+    if password.chars().any(|c| c.is_ascii_digit()) {
+        score += 1;
+    }
+    if password.chars().any(|c| !c.is_alphanumeric()) {
+        score += 1;
+    }
+    match score {
+        0..=2 =&#62; Strength::Weak,
+        3 =&#62; Strength::Fair,
+        _ =&#62; Strength::Strong,
+    }
+}</pre>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    
+    <div class="card">
+      <section class="clone-section">
+        <a name="typescript-clones"></a>
+        <h2>typescript</h2>
+        <div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              frontend/src/lib/components/SignupForm.svelte:typescript (Line 15:3 - Line 28:4),
+              frontend/src/lib/validators.ts (Line 6:8 - Line 15:2)
+            </div>
+            <div>
+              <button class="toggle-btn" onclick="toggle('code-typescript-1')">Show code</button>
+            </div>
+            <pre id="code-typescript-1" class="code-block">  function checkEmail(value: string): string | null {
+    const address = value.trim();
+    if (address === &#39;&#39;) return &#39;Please enter your email&#39;;
+    if (address.length &#62; MAX_EMAIL_LENGTH) return &#39;That email is too long&#39;;
+    const at = address.indexOf(&#39;@&#39;);
+    if (at &#60;= 0 || at !== address.lastIndexOf(&#39;@&#39;) || at &#62; 64) {
+      return &#39;That does not look like an email address&#39;;
+    }
+    const domainParts = address.slice(at + 1).split(&#39;.&#39;);
+    const goodDomain =
+      domainParts.length &#62; 1 &#38;&#38;
+      domainParts.every((part) =&#62; /^[a-z0-9]+(-[a-z0-9]+)*$/i.test(part));
+    return goodDomain ? null : &#39;Check the part after @&#39;;
+  }</pre>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    
+    
+  </div>
+
+  <div class="footer">
+    <p>Generated by <a href="https://jscpd.dev" target="_blank">jscpd</a> v5.4.1 by <a href="https://github.com/kucherenko" target="_blank">Andrey Kucherenko</a></p>
+    <p><a href="https://www.npmjs.com/package/jscpd" target="_blank"><img src="https://img.shields.io/npm/dw/jscpd.svg?style=flat-square" alt="npm weekly downloads" style="vertical-align: middle;"></a></p>
+  </div>
+
+  <script>
+    function toggle(id) {
+      var el = document.getElementById(id);
+      if (el) { el.classList.toggle('visible'); }
+    }
+  </script>
+</body>
+</html>
