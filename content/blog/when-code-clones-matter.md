@@ -1,8 +1,8 @@
 ---
 title: "Two AI agents ported fs-extra to Rust. The tests can't tell which one is a copy"
 description: Two AI agents ported fs-extra to Rust and both pass its tests. One rewrote the code, the other copied 32 of 51 functions into its JavaScript layer. How jscpd --compare tells them apart, and why a clone is the best progress report a migration has.
-date: 2026-10-14
-publishedAt: 2026-10-14T08:00:00Z
+date: 2026-10-12
+publishedAt: 2026-10-12T13:30:00Z
 authors:
   - kucherenko
 tags:
