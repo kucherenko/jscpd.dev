@@ -6,11 +6,17 @@ definePageMeta({ layout: 'default' })
 const title = 'Blog'
 const description = 'Release notes with commands and real output, and notes on how jscpd finds what it finds.'
 
+const url = `${(useSiteConfig().url || 'https://jscpd.dev').replace(/\/+$/, '')}/blog`
+
 useSeoMeta({
   title: 'jscpd blog',
   description,
   ogTitle: 'jscpd blog',
   ogDescription: description,
+  ogUrl: url,
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'jscpd blog',
+  twitterDescription: description,
 })
 defineOgImage('Docs', { headline: 'jscpd', title, description })
 useHead({

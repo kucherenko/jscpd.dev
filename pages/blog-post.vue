@@ -11,20 +11,31 @@ if (!post.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
 }
 
-const title = post.value.seo?.title || post.value.title
+// The page title, the social titles and the card all carry the post's
+// heading; `seo.description` may replace the description. og:url and the
+// twitter fields are set here because the site-wide head has static ones.
+const title = post.value.title
 const description = post.value.seo?.description || post.value.description
+const url = `${(useSiteConfig().url || 'https://jscpd.dev').replace(/\/+$/, '')}${route.path}`
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
+  ogUrl: url,
   ogType: 'article',
-  articlePublishedTime: `${post.value.date}T00:00:00Z`,
+  articlePublishedTime: post.value.publishedAt,
+  twitterCard: 'summary_large_image',
+  twitterTitle: title,
+  twitterDescription: description,
 })
 defineOgImage('Docs', { headline: 'Blog', title: title?.slice(0, 60), description })
 useHead({
-  link: [{ rel: 'alternate', type: 'application/atom+xml', title: 'jscpd blog', href: '/blog/feed.xml' }],
+  link: [
+    { rel: 'canonical', href: url },
+    { rel: 'alternate', type: 'application/atom+xml', title: 'jscpd blog', href: '/blog/feed.xml' },
+  ],
 })
 
 const headline = computed(() => `Blog · ${formatPostDate(post.value!.date)}`)
