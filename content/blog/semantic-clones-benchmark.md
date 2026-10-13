@@ -2,7 +2,7 @@
 title: I ran jscpd --semantic against eight other tools
 description: Two days of runs on 50 repositories in 14 languages, 102 candidate tools looked at, eight of them run. Where embeddings win, where a syntax tree beats them, and what changes in jscpd after this.
 date: 2026-10-13
-publishedAt: 2026-10-13T08:00:00Z
+publishedAt: 2099-01-01T00:00:00Z  # hidden; set a real time to publish
 authors:
   - kucherenko
 tags:
