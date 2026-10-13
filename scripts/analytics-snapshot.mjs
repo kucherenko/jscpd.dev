@@ -12,6 +12,10 @@
  * - window.json: the last WINDOW_DAYS days by page, referrer, country,
  *   device, browser and OS. Replaced on every run.
  *
+ * Every request covers at most CHUNK_DAYS days: a 30-day request came back
+ * sampled one in ten, with the small groups rounded away, while a week is
+ * counted in full. The sample interval of each answer is checked.
+ *
  * composables/useSiteStats.ts reads the files for the views under the blog
  * posts and for the /stats page. .github/workflows/analytics.yml runs this
  * every morning before the site rebuild.
@@ -35,12 +39,11 @@ let siteTag = process.env.CLOUDFLARE_SITE_TAG || ''
 // Preview deploys report under the same site tag with their own host names;
 // only the production host counts.
 const HOSTS = ['jscpd.dev', 'www.jscpd.dev']
-// The CSP let the beacon through on this day (PR #71); nothing was counted before.
-const FIRST_DAY = '2026-10-10'
+// Where the first backfill starts; the API keeps six months, and the days
+// before the first one with a page view are dropped.
+const FIRST_DAY = '2026-03-01'
 // Days rewritten on every run: the API still adds to a recent day.
 const REFRESH_DAYS = 7
-// One request may cover 30 days and at most `limit` groups; a week of days
-// times the paths visited stays well under that.
 const CHUNK_DAYS = 7
 const GROUP_LIMIT = 5000
 const WINDOW_DAYS = 30
@@ -61,8 +64,11 @@ const groups = (alias, dims, since, until, { limit = TOP, withHosts = true } = {
   `${alias}: rumPageloadEventsAdaptiveGroups(limit: ${limit}, filter: ${filter(since, until, withHosts)}, orderBy: [count_DESC]) {
     count
     sum { visits }
+    avg { sampleInterval }
     ${dims.length ? `dimensions { ${dims.join(' ')} }` : ''}
   }`
+
+let sampled = 1
 
 async function query(body) {
   const res = await fetch(API, {
@@ -74,7 +80,11 @@ async function query(body) {
   if (!res.ok || !json || json.errors?.length || !json.data?.viewer?.accounts?.length) {
     throw new Error(`GraphQL ${res.status}: ${JSON.stringify(json?.errors ?? json)}`)
   }
-  return json.data.viewer.accounts[0]
+  const data = json.data.viewer.accounts[0]
+  for (const list of Object.values(data)) {
+    for (const g of list) sampled = Math.max(sampled, g.avg?.sampleInterval ?? 1)
+  }
+  return data
 }
 
 // "/blog/post/" and "/blog/post/index.html" are the same page as "/blog/post".
@@ -107,6 +117,20 @@ export function daysFrom(since, until, byDay, byDayPath) {
   }
   for (const d of Object.values(out)) d.paths = Object.fromEntries(Object.entries(d.paths).sort(([a], [b]) => a.localeCompare(b)))
   return out
+}
+
+/** Sums rows of several requests by their dimension value; `key` reads the value. */
+export function sumBy(lists, key) {
+  const out = new Map()
+  for (const list of lists) {
+    for (const g of list) {
+      const k = key(g)
+      const prev = out.get(k) ?? { views: 0, visits: 0 }
+      const r = row(g)
+      out.set(k, { views: prev.views + r.views, visits: prev.visits + r.visits })
+    }
+  }
+  return [...out.entries()].sort(([ka, a], [kb, b]) => b.views - a.views || String(ka).localeCompare(String(kb)))
 }
 
 const sortedDays = (days) => Object.fromEntries(Object.entries(days).sort(([a], [b]) => a.localeCompare(b)))
@@ -147,27 +171,43 @@ async function discoverSiteTag(now) {
   return hit.dimensions.siteTag
 }
 
+/** [from, to) in CHUNK_DAYS pieces, the last one ending at `now`. */
+function chunks(from, to, now) {
+  const out = []
+  for (let a = from; a < to; a = addDays(a, CHUNK_DAYS)) {
+    const b = addDays(a, CHUNK_DAYS) < to ? addDays(a, CHUNK_DAYS) : to
+    out.push([a, b > now ? now : b])
+  }
+  return out
+}
+
 async function main() {
   if (!token || !account) throw new Error('CLOUDFLARE_ANALYTICS_TOKEN and CLOUDFLARE_ACCOUNT_ID are required')
   const now = new Date()
   if (!siteTag) siteTag = await discoverSiteTag(now)
   const today = utcMidnight(now)
+  const tomorrow = addDays(today, 1)
   const last = await lastStoredDay()
   // Start a week before the last stored day, or at the beginning. Days
   // between the two are never skipped, so a missed run leaves no hole.
-  const start = last ? addDays(utcMidnight(new Date(last)), 1 - REFRESH_DAYS) : utcMidnight(new Date(FIRST_DAY))
-  const since = start < utcMidnight(new Date(FIRST_DAY)) ? utcMidnight(new Date(FIRST_DAY)) : start
+  const firstDay = utcMidnight(new Date(FIRST_DAY))
+  const start = last ? addDays(utcMidnight(new Date(last)), 1 - REFRESH_DAYS) : firstDay
+  const since = start < firstDay ? firstDay : start
 
-  const fresh = {}
-  for (let from = since; from <= today; from = addDays(from, CHUNK_DAYS)) {
-    const to = addDays(from, CHUNK_DAYS) <= today ? addDays(from, CHUNK_DAYS) : addDays(today, 1)
-    const until = to > now ? now : to
+  let fresh = {}
+  for (const [from, until] of chunks(since, tomorrow, now)) {
     const data = await query([
       groups('byDay', ['date'], from.toISOString(), until.toISOString(), { limit: CHUNK_DAYS + 1 }),
       groups('byDayPath', ['date', 'requestPath'], from.toISOString(), until.toISOString(), { limit: GROUP_LIMIT }),
     ].join('\n'))
-    if (data.byDayPath.length >= GROUP_LIMIT) throw new Error(`more than ${GROUP_LIMIT} day/path groups between ${day(from)} and ${day(to)}; lower CHUNK_DAYS`)
-    Object.assign(fresh, daysFrom(from.toISOString(), to.toISOString(), data.byDay, data.byDayPath))
+    if (data.byDayPath.length >= GROUP_LIMIT) throw new Error(`more than ${GROUP_LIMIT} day/path groups between ${day(from)} and ${day(until)}; lower CHUNK_DAYS`)
+    Object.assign(fresh, daysFrom(from.toISOString(), addDays(utcMidnight(until), until > utcMidnight(until) ? 1 : 0).toISOString(), data.byDay, data.byDayPath))
+  }
+  if (!last) {
+    // The first backfill: the history starts on the first day with a page view.
+    const dates = Object.keys(fresh).sort()
+    const first = dates.find((d) => fresh[d].views > 0)
+    fresh = Object.fromEntries(dates.filter((d) => first && d >= first).map((d) => [d, fresh[d]]))
   }
 
   await mkdir(MONTHS_DIR, { recursive: true })
@@ -182,48 +222,47 @@ async function main() {
   }
   for (const [date, d] of Object.entries(fresh)) console.log(`${date}: ${d.views} views, ${d.visits} visits, ${Object.keys(d.paths).length} pages`)
 
-  // The breakdowns of the last WINDOW_DAYS days, up to now.
+  // The breakdowns of the last WINDOW_DAYS days, up to now, a week per request.
   const windowSince = addDays(today, 1 - WINDOW_DAYS)
-  const s = windowSince.toISOString()
-  const u = now.toISOString()
-  const w = await query([
-    groups('total', [], s, u, { limit: 1 }),
-    groups('hosts', ['requestHost'], s, u, { withHosts: false }),
-    groups('pages', ['requestPath'], s, u, { limit: GROUP_LIMIT }),
-    groups('referrers', ['refererHost'], s, u),
-    groups('countries', ['countryName'], s, u),
-    groups('devices', ['deviceType'], s, u),
-    groups('browsers', ['userAgentBrowser'], s, u),
-    groups('os', ['userAgentOS'], s, u),
-  ].join('\n'))
-
-  // Paths merge after normalisation, so they are summed again and cut to TOP here.
-  const pages = {}
-  for (const g of w.pages) {
-    const path = normalizePath(g.dimensions.requestPath)
-    const prev = pages[path] ?? { path, views: 0, visits: 0 }
-    const r = row(g)
-    pages[path] = { path, views: prev.views + r.views, visits: prev.visits + r.visits }
+  const answers = []
+  for (const [from, until] of chunks(windowSince, tomorrow, now)) {
+    const s = from.toISOString()
+    const u = until.toISOString()
+    answers.push(await query([
+      groups('total', [], s, u, { limit: 1 }),
+      groups('hosts', ['requestHost'], s, u, { withHosts: false }),
+      groups('pages', ['requestPath'], s, u, { limit: GROUP_LIMIT }),
+      groups('referrers', ['refererHost'], s, u, { limit: 200 }),
+      groups('countries', ['countryName'], s, u, { limit: 300 }),
+      groups('devices', ['deviceType'], s, u),
+      groups('browsers', ['userAgentBrowser'], s, u, { limit: 100 }),
+      groups('os', ['userAgentOS'], s, u, { limit: 100 }),
+    ].join('\n')))
   }
-  const named = (list, key, name) => list.map((g) => ({ [name]: g.dimensions[key] ?? '', ...row(g) }))
+  const of = (alias) => answers.map((a) => a[alias])
+  const named = (alias, dim, name) => sumBy(of(alias), (g) => g.dimensions[dim] ?? '').slice(0, TOP).map(([value, r]) => ({ [name]: value, ...r }))
+  const [, total] = sumBy(of('total'), () => 'all')[0] ?? ['all', { views: 0, visits: 0 }]
   const window = {
     updatedAt: now.toISOString().replace(/\.\d{3}Z$/, 'Z'),
     since: day(windowSince),
     until: day(today),
-    ...row(w.total[0] ?? {}),
-    hosts: named(w.hosts, 'requestHost', 'host'),
-    pages: Object.values(pages).sort((a, b) => b.views - a.views || a.path.localeCompare(b.path)).slice(0, TOP),
-    referrers: named(w.referrers, 'refererHost', 'host'),
-    countries: named(w.countries, 'countryName', 'name'),
-    devices: named(w.devices, 'deviceType', 'name'),
-    browsers: named(w.browsers, 'userAgentBrowser', 'name'),
-    os: named(w.os, 'userAgentOS', 'name'),
+    ...total,
+    hosts: named('hosts', 'requestHost', 'host'),
+    pages: sumBy(of('pages'), (g) => normalizePath(g.dimensions.requestPath)).slice(0, TOP).map(([path, r]) => ({ path, ...r })),
+    // A referrer on the site itself is a click within it, not a source.
+    referrers: named('referrers', 'refererHost', 'host').filter((r) => !HOSTS.includes(r.host)),
+    countries: named('countries', 'countryName', 'name'),
+    devices: named('devices', 'deviceType', 'name'),
+    browsers: named('browsers', 'userAgentBrowser', 'name'),
+    os: named('os', 'userAgentOS', 'name'),
   }
   await writeFile(WINDOW_FILE, `${JSON.stringify(window, null, 2)}\n`)
 
   console.log(`\nLast ${WINDOW_DAYS} days (${window.since} to ${window.until}): ${window.views} views, ${window.visits} visits`)
   console.log(`hosts: ${window.hosts.map((h) => `${h.host || '?'} ${h.views}`).join(', ')}`)
   for (const p of window.pages.slice(0, 10)) console.log(`  ${p.views}\t${p.visits}\t${p.path}`)
+  if (sampled > 1) console.log(`\nWARNING: some answers were sampled (interval ${sampled}); the numbers of those are estimates`)
+  else console.log('\nno sampling in any answer')
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {

@@ -36,6 +36,19 @@ const postRows = computed(() => {
 const TOP_PAGES = 20
 const TOP_SMALL = 8
 const referrer = (host: string) => host || 'Direct or unknown'
+// The API names countries by ISO code and a few agents by their internal names.
+const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
+const country = (code: string) => {
+  if (!code) return 'Unknown'
+  try {
+    return regionNames.of(code) ?? code
+  }
+  catch {
+    return code
+  }
+}
+const LABELS: Record<string, string> = { MacOSX: 'macOS', ChromeMobile: 'Chrome Mobile', MobileSafari: 'Mobile Safari', desktop: 'Desktop', mobile: 'Mobile', tablet: 'Tablet' }
+const label = (name: string) => LABELS[name] ?? (name || 'Unknown')
 const share = (n: number, total: number) => total ? `${Math.round((100 * n) / total)}%` : ''
 </script>
 
@@ -120,7 +133,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
               <h2>Countries</h2>
               <ul class="stats-list">
                 <li v-for="c in window.countries.slice(0, TOP_SMALL)" :key="c.name">
-                  <span class="stats-list-name">{{ c.name || 'Unknown' }}</span>
+                  <span class="stats-list-name">{{ country(c.name) }}</span>
                   <span class="stats-list-value">{{ num(c.visits) }} <small>{{ share(c.visits, window.visits) }}</small></span>
                 </li>
               </ul>
@@ -129,7 +142,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
               <h2>Devices</h2>
               <ul class="stats-list">
                 <li v-for="d in window.devices.slice(0, TOP_SMALL)" :key="d.name">
-                  <span class="stats-list-name">{{ d.name || 'Unknown' }}</span>
+                  <span class="stats-list-name">{{ label(d.name) }}</span>
                   <span class="stats-list-value">{{ num(d.visits) }} <small>{{ share(d.visits, window.visits) }}</small></span>
                 </li>
               </ul>
@@ -138,7 +151,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
               <h2>Browsers</h2>
               <ul class="stats-list">
                 <li v-for="b in window.browsers.slice(0, TOP_SMALL)" :key="b.name">
-                  <span class="stats-list-name">{{ b.name || 'Unknown' }}</span>
+                  <span class="stats-list-name">{{ label(b.name) }}</span>
                   <span class="stats-list-value">{{ num(b.visits) }} <small>{{ share(b.visits, window.visits) }}</small></span>
                 </li>
               </ul>
@@ -147,7 +160,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
               <h2>Operating systems</h2>
               <ul class="stats-list">
                 <li v-for="o in window.os.slice(0, TOP_SMALL)" :key="o.name">
-                  <span class="stats-list-name">{{ o.name || 'Unknown' }}</span>
+                  <span class="stats-list-name">{{ label(o.name) }}</span>
                   <span class="stats-list-value">{{ num(o.visits) }} <small>{{ share(o.visits, window.visits) }}</small></span>
                 </li>
               </ul>
@@ -156,7 +169,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
 
           <p class="stats-note">
             Counted by the Cloudflare Web Analytics beacon on every page, without cookies, so a visit is a
-            page load with no referrer from the site itself. Crawlers and scripts never run the beacon and are
+            page load with no referrer from the site itself, counted on the page it started on. Crawlers and scripts never run the beacon and are
             not counted; browsers with an ad blocker mostly aren't either, so the real numbers are higher. The
             <a href="https://github.com/kucherenko/jscpd.dev/blob/master/scripts/analytics-snapshot.mjs" target="_blank" rel="noopener">snapshot script</a>
             reads the numbers through the GraphQL API once a day<template v-if="updated">, last at {{ updated }}</template>;
