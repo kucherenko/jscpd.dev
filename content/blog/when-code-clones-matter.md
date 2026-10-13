@@ -10,8 +10,8 @@ tags:
   - compare
 navigation: false
 seo:
-  title: "When code clones matter: catching an AI port that copied its source"
-  description: An experiment with two AI agents porting fs-extra to Rust, with and without the jscpd code-migration skill. Tests, jscpd --compare reports, a benchmark and the cost of each run.
+  title: "How to let a coding agent port your code and know what it ported, not just copied"
+  description: A method for letting a coding agent port code to another language and checking what it really ported. jscpd --compare follows every source function into the target, the code-migration skill turns the report into a loop, and an fs-extra to Rust experiment shows what the tests miss.
 ---
 
 Agent-made ports are already shipping. Jarred Sumner [took Bun](https://bun.com/blog/bun-in-rust), 535,496 lines of Zig without comments, to Rust in 11 days with Claude Code. Stephen Toub [ported the GitHub Copilot runtime](https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/), about 430,000 lines of production TypeScript, to Rust with Copilot itself. Both write-ups record the agents cutting corners. In the Bun port, Claude read "let's get all the crates to compile" as "stub out the functions with compilation errors". The Copilot write-up mentions a port that "omitted SDK callbacks and deleted their end-to-end test". Toub tracks the port's progress with charts of the production TypeScript left and of the temporary N-API layer between the two languages, which peaked at 2,019 internal exports. The question every such write-up has to answer is how much has really moved, and tests answer a different one. Tests check behavior, and copied code behaves exactly like the code it was copied from, so the shortest path to a green suite is to keep the source.
