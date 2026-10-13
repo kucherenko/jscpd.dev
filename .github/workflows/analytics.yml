@@ -5,14 +5,10 @@ on:
     # Before the 08:05 UTC rebuild in deploy.yml, which puts the numbers on
     # the site.
     - cron: "45 7 * * *"
+  # A branch that changes the script tries it with
+  # `gh workflow run analytics.yml --ref <branch>`; the run commits its data
+  # to that branch.
   workflow_dispatch:
-  # A branch that changes the pipeline runs it once, so the PR carries the
-  # data it produced; master is served by the schedule.
-  push:
-    branches-ignore: [master]
-    paths:
-      - .github/workflows/analytics.yml
-      - scripts/analytics-snapshot.mjs
 
 permissions:
   contents: write
