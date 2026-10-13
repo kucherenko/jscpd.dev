@@ -39,9 +39,9 @@ let siteTag = process.env.CLOUDFLARE_SITE_TAG || ''
 // Preview deploys report under the same site tag with their own host names;
 // only the production host counts.
 const HOSTS = ['jscpd.dev', 'www.jscpd.dev']
-// Where the first backfill starts; the API keeps six months, and the days
-// before the first one with a page view are dropped.
-const FIRST_DAY = '2026-03-01'
+// How far the first backfill reaches: the API refuses anything older than 26
+// weeks, and the days before the first one with a page view are dropped.
+const BACKFILL_DAYS = 180
 // Days rewritten on every run: the API still adds to a recent day.
 const REFRESH_DAYS = 7
 const CHUNK_DAYS = 7
@@ -190,7 +190,7 @@ async function main() {
   const last = await lastStoredDay()
   // Start a week before the last stored day, or at the beginning. Days
   // between the two are never skipped, so a missed run leaves no hole.
-  const firstDay = utcMidnight(new Date(FIRST_DAY))
+  const firstDay = addDays(today, -BACKFILL_DAYS)
   const start = last ? addDays(utcMidnight(new Date(last)), 1 - REFRESH_DAYS) : firstDay
   const since = start < firstDay ? firstDay : start
 
