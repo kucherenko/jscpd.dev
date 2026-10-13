@@ -174,7 +174,8 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
             <a href="https://github.com/kucherenko/jscpd.dev/blob/master/scripts/analytics-snapshot.mjs" target="_blank" rel="noopener">snapshot script</a>
             reads the numbers through the GraphQL API once a day<template v-if="updated">, last at {{ updated }}</template>;
             the last 30 days come straight from the API, the all-time numbers add up the days the site has stored since
-            {{ formatDay(first!) }}.
+            {{ formatDay(first!) }}.<template v-if="stats.sampledUntil"> Cloudflare keeps older data sampled, so the days up to
+            {{ formatDay(stats.sampledUntil) }} (the lighter bars) are estimates.</template>
           </p>
         </template>
       </UPageBody>

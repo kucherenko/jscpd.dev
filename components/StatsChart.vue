@@ -26,7 +26,7 @@
           <text v-for="t in ticks" :key="`l${t}`" :x="PAD.left - 8" :y="y(t)" dy="0.35em" text-anchor="end">{{ compact(t) }}</text>
         </g>
         <g v-for="(p, i) in points" :key="p.date">
-          <path :d="bar(i, p.value)" class="schart-bar" :class="{ hover: hover === i, partial: p.date === partial }" />
+          <path :d="bar(i, p.value)" class="schart-bar" :class="{ hover: hover === i, partial: p.date === partial, estimate: p.sample }" />
           <text v-if="i % labelEvery === 0" :x="cx(i)" :y="H - PAD.bottom + 16" text-anchor="middle" class="schart-xlabel">{{ shortDay(p.date) }}</text>
           <rect
             :x="PAD.left + i * slot"
@@ -49,7 +49,7 @@
         class="schart-tip"
         :style="{ left: `${(cx(hover) / W) * 100}%`, top: `${(y(points[hover]!.value) / H) * 100}%` }"
       >
-        <span class="schart-tip-date">{{ formatDay(points[hover]!.date) }}<template v-if="points[hover]!.date === partial"> (so far)</template></span>
+        <span class="schart-tip-date">{{ formatDay(points[hover]!.date) }}<template v-if="points[hover]!.date === partial"> (so far)</template><template v-else-if="points[hover]!.sample"> (estimate)</template></span>
         <span class="schart-tip-value">{{ activeMetric.full(points[hover]!.value) }}</span>
         <span class="schart-tip-meta">{{ otherMetric.full(points[hover]!.other) }}</span>
       </div>
@@ -79,7 +79,8 @@ const MAX_POINTS = 90
 const points = computed(() => props.days.slice(-MAX_POINTS).map(d => ({
   date: d.date,
   value: d[metric.value],
-  other: d[otherMetric.value.key]
+  other: d[otherMetric.value.key],
+  sample: d.sample
 })))
 
 const W = 720
@@ -209,7 +210,8 @@ const labelEvery = computed(() => Math.ceil(points.value.length / 8))
   transition: fill-opacity 0.15s ease;
 }
 
-.schart-bar.partial {
+.schart-bar.partial,
+.schart-bar.estimate {
   fill-opacity: 0.25;
 }
 

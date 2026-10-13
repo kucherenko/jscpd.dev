@@ -11,6 +11,8 @@ export interface DayRecord {
   views: number
   visits: number
   paths: Record<string, PathCount>
+  /** Cloudflare's sample interval when the day came back sampled: its counts are estimates. */
+  sample?: number
 }
 
 export interface MonthFile { days: Record<string, DayRecord> }
@@ -33,13 +35,15 @@ export interface WindowFile extends Counted {
   os: NamedCount[]
 }
 
-export interface DayPoint extends Counted { date: string }
+export interface DayPoint extends Counted { date: string, sample?: number }
 
 export interface SiteStats {
   /** When the snapshot was taken; null before the first one. */
   updatedAt: string | null
   /** Every day since the beacon started counting, in order. */
   days: DayPoint[]
+  /** The last day whose counts are a sampled estimate; null when every day was counted in full. */
+  sampledUntil: string | null
   totals: Counted
   /** Every path, all time, most viewed first. */
   paths: PathCounted[]
@@ -72,8 +76,10 @@ export async function loadSiteStats(): Promise<SiteStats> {
   const totals = { views: 0, visits: 0 }
   const byPath = new Map<string, PathCounted>()
   const points: DayPoint[] = []
+  let sampledUntil: string | null = null
   for (const [date, record] of days) {
-    points.push({ date, views: record.views, visits: record.visits })
+    points.push({ date, views: record.views, visits: record.visits, ...(record.sample ? { sample: record.sample } : {}) })
+    if (record.sample) sampledUntil = date
     totals.views += record.views
     totals.visits += record.visits
     for (const [path, [views, visits]] of Object.entries(record.paths)) {
@@ -84,7 +90,7 @@ export async function loadSiteStats(): Promise<SiteStats> {
     }
   }
   const paths = [...byPath.values()].sort((a, b) => b.views - a.views || a.path.localeCompare(b.path))
-  return { updatedAt: window?.updatedAt ?? null, days: points, totals, paths, window }
+  return { updatedAt: window?.updatedAt ?? null, days: points, sampledUntil, totals, paths, window }
 }
 
 /** All-time page views of the given paths; a path never visited counts 0. */

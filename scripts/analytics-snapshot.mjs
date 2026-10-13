@@ -105,7 +105,12 @@ export function daysFrom(since, until, byDay, byDayPath) {
   }
   for (const g of byDay) {
     const date = g.dimensions.date
-    if (out[date]) Object.assign(out[date], row(g))
+    if (!out[date]) continue
+    Object.assign(out[date], row(g))
+    // Older days come back sampled: the API keeps one event in N and scales the
+    // counts up. Such a day is an estimate, and the page says so.
+    const sample = Math.round(g.avg?.sampleInterval ?? 1)
+    if (sample > 1) out[date].sample = sample
   }
   for (const g of byDayPath) {
     const date = g.dimensions.date
