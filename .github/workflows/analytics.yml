@@ -1,0 +1,74 @@
+name: Web analytics snapshot
+
+on:
+  schedule:
+    # Before the 08:05 UTC rebuild in deploy.yml, which puts the numbers on
+    # the site.
+    - cron: "45 7 * * *"
+  # A branch that changes the script tries it with
+  # `gh workflow run analytics.yml --ref <branch>`; the run commits its data
+  # to that branch.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: analytics
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.x"
+
+      - name: Read Cloudflare Web Analytics
+        run: node scripts/analytics-snapshot.mjs
+        env:
+          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Optional: without it the script finds the tag from the traffic.
+          CLOUDFLARE_SITE_TAG: ${{ vars.CLOUDFLARE_SITE_TAG }}
+
+      - name: Commit the snapshot
+        id: commit
+        run: |
+          if [ -z "$(git status --porcelain -- data/analytics)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "analytics data unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/analytics
+          git commit -m "data: web analytics snapshot ($(date -u +%F))"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      # The scheduled run is followed by the 08:05 UTC rebuild. A run started
+      # by hand on master deploys itself: pushes made with GITHUB_TOKEN
+      # trigger no workflow. Same wait as trending.yml: a dispatch right after
+      # the push can still resolve `master` to the previous head.
+      - name: Trigger site deploy
+        if: github.event_name == 'workflow_dispatch' && github.ref_name == 'master' && steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          for i in $(seq 1 30); do
+            head=$(gh api "repos/${GITHUB_REPOSITORY}/commits/master" --jq .sha 2>/dev/null || true)
+            [ "$head" = "$SHA" ] && break
+            echo "master is at ${head:-?}, waiting for ${SHA} ($i/30)"
+            sleep 5
+          done
+          gh workflow run deploy.yml --ref master -f "sha=${SHA}"
+          echo "deploy dispatched for ${SHA}"

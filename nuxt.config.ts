@@ -32,12 +32,14 @@ const trendingRoutes = [
 // came out as 500. Shipping the files base64-encoded keeps every character
 // of the data out of reach of such replacements; the page decodes on load.
 const trendingDataDir = fileURLToPath(new URL("./data/trending/", import.meta.url));
+// data/analytics/ holds the paths of the blog posts; it goes the same way.
+const analyticsDataDir = fileURLToPath(new URL("./data/analytics/", import.meta.url));
 const trendingDataBase64 = {
   name: "jscpd:trending-data-base64",
   enforce: "post" as const,
   async transform(_code: string, id: string) {
     const file = id.split("?")[0] ?? "";
-    if (!file.startsWith(trendingDataDir) || !file.endsWith(".json")) return null;
+    if (!(file.startsWith(trendingDataDir) || file.startsWith(analyticsDataDir)) || !file.endsWith(".json")) return null;
     const base64 = (await readFile(file)).toString("base64");
     return {
       code: `export default JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(${JSON.stringify(base64)}), (c) => c.charCodeAt(0))));`,

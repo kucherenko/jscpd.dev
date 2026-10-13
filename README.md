@@ -65,6 +65,10 @@ A post is a Markdown file in `content/blog/`, with `title`, `description`, `date
 
 `.github/workflows/trending.yml` runs `scripts/analyze-trending.mjs` daily: it clones the day's GitHub trending repositories and measures each one with jscpd twice, over every file and over the code alone (`scripts/trending-scan.mjs` holds the rules: no tests, docs, data, vendored or generated files, programming-language formats only). Snapshots land in `data/trending/<day>.json`; `scripts/build-trending-index.mjs` derives the history, the per-repo and per-week files, the per-language baselines; `server/routes/trending/code-only.jscpd.json.ts` serves the code scan's config so a reader can measure their own repo the same way. `scripts/backfill-trending.mjs` re-measures past days at their recorded commits when the scan rules change.
 
+### Post views
+
+`.github/workflows/analytics.yml` runs `scripts/analytics-snapshot.mjs` every morning at 07:45 UTC, before the daily rebuild. The script reads Cloudflare Web Analytics through the GraphQL API (an API token with Account Analytics: Read in the `CLOUDFLARE_ANALYTICS_TOKEN` secret; the site tag is found from the traffic of jscpd.dev, or set in the `CLOUDFLARE_SITE_TAG` repository variable) and stores each day's page views and visits of the posts in `content/blog` in `data/analytics/months/<month>.json`; other `/blog/` addresses are 404 pages and stay out. A run rewrites the last two stored days and adds the new ones. Older days stay as stored: Cloudflare answers about days older than about six days with a sample rounded to tens, and a sampled answer never replaces a stored day. To try a change to the script on a branch, run `gh workflow run analytics.yml --ref <branch>`: the run commits its data to that branch. `composables/usePostViews.ts` adds the days up; the list and the post page show a post's views next to its date.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
