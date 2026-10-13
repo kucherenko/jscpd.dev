@@ -115,7 +115,7 @@ So "all tests green" was true for both, and it said nothing about how much porti
 Here is part of the report for fs-extra-rs-plain, the port made without the skill:
 
 ```text
- 80% 41 of 51 functions in node-fs-extra/lib have a counterpart in rust-fs-extra
+ 80% 41 of 51 functions in fs-extra/lib have a counterpart in fs-extra-rs-plain
 
   file                     paired  similarity   counterpart
   ensure/link.js           2 / 2   1.00         lib/ensure/link.js
@@ -125,25 +125,25 @@ Here is part of the report for fs-extra-rs-plain, the port made without the skil
   util/stat.js             7 / 7   0.90         lib/util/stat.js
 ```
 
-Look at the counterpart column. `move.js` pairs with `lib/move/move.js` in the port at a similarity of 1.00, the same function in the same language. That is not a port. It is the original. The [full HTML report](/examples/compare-fs-extra-rs-plain.html){target="_blank"} marks these pairs as ported too, and only the file in the counterpart column gives them away.
+Look at the counterpart column. `move.js` pairs with `lib/move/move.js` in the port at a similarity of 1.00, the same function in the same language. That is not a port. It is the original. The [HTML report for fs-extra-rs-plain](/examples/compare-fs-extra-rs-plain.html){target="_blank"} marks these pairs as ported too, and only the file in the counterpart column gives them away.
 
 ::report-screenshot
 ---
-light: /images/blog/when-code-clones-matter/report-fs-extra-rs-plain-light.webp
-dark: /images/blog/when-code-clones-matter/report-fs-extra-rs-plain-dark.webp
+light: /images/blog/when-code-clones-matter/map-fs-extra-rs-plain-light.webp
+dark: /images/blog/when-code-clones-matter/map-fs-extra-rs-plain-dark.webp
 width: 1560
-height: 1176
-href: /examples/compare-fs-extra-rs-plain.html#table
+height: 1302
+href: /examples/compare-fs-extra-rs-plain.html
 link-text: Open the report for fs-extra-rs-plain
-alt: "The Table tab of the jscpd --compare HTML report for fs-extra-rs-plain, one row per file: 80%, 41 of 51 functions with a counterpart; empty/index.js, ensure/file.js and ensure/link.js pair with lib/empty/index.js, lib/ensure/file.js and lib/ensure/link.js at a similarity of 1.00 and are marked Ported."
-caption: "fs-extra-rs-plain, one row per file. The status says Ported, and the counterpart column says lib/ensure/file.js at 1.00."
+alt: "The migration map of jscpd --compare for fs-extra-rs-plain, one mark per folder: fs-extra's folders on the left, code as circles and tests as squares, bridged to folders of the same names under lib/ in the port on the right; 80% of functions and 428 of 428 tests have a counterpart."
+caption: "fs-extra-rs-plain, one mark per folder. Circles are code and squares are tests. Most of the code bridges to folders of the same names under lib/, still in JavaScript."
 ---
 ::
 
 And part of the report for fs-extra-rs:
 
 ```text
- 98% 50 of 51 functions in node-fs-extra/lib have a counterpart in rust-fs-extra
+ 98% 50 of 51 functions in fs-extra/lib have a counterpart in fs-extra-rs
 
   file                     paired   similarity  counterpart
   copy/copy-sync.js        10 / 10  0.83        src/copy_sync.rs
@@ -152,22 +152,22 @@ And part of the report for fs-extra-rs:
   util/stat.js             7 / 7    0.81        src/util_stat.rs
 ```
 
-Same files, counterparts in `.rs`, similarities around 0.8, which is what a faithful port into another language looks like. Here is [its full HTML report](/examples/compare-fs-extra-rs.html){target="_blank"}.
+Same files, counterparts in `.rs`, similarities around 0.8, which is what a faithful port into another language looks like. Here is [the HTML report for fs-extra-rs](/examples/compare-fs-extra-rs.html){target="_blank"}, the port published as @jscpd/fs-extra.
 
 ::report-screenshot
 ---
-light: /images/blog/when-code-clones-matter/report-fs-extra-rs-light.webp
-dark: /images/blog/when-code-clones-matter/report-fs-extra-rs-dark.webp
+light: /images/blog/when-code-clones-matter/map-fs-extra-rs-light.webp
+dark: /images/blog/when-code-clones-matter/map-fs-extra-rs-dark.webp
 width: 1560
-height: 1176
-href: /examples/compare-fs-extra-rs.html#table
+height: 1290
+href: /examples/compare-fs-extra-rs.html
 link-text: Open the report for fs-extra-rs
-alt: "The Table tab of the jscpd --compare HTML report for fs-extra-rs, one row per file: 98%, 50 of 51 functions with a counterpart; copy/copy-sync.js pairs with src/copy_sync.rs and src/copy.rs at around 0.8, and no row reaches 1.00."
-caption: "fs-extra-rs, one row per file. The same source files pair with .rs files at around 0.8."
+alt: "The migration map of jscpd --compare for fs-extra-rs, one mark per folder: fs-extra's code folders bridge to src, the Rust core, and to thin wrappers under lib/, and its test folders bridge to test folders of the same names; 98% of functions and 417 of 428 tests have a counterpart."
+caption: "fs-extra-rs, one mark per folder. The code bridges to src, the Rust core, and to thin wrappers under lib/."
 ---
 ::
 
-Both reports come from jscpd 5.4.1, with the ports' tests, benchmarks and build output left out of the target through `--ignore`.
+Both reports come from jscpd 5.4.1 and measure the tests as well as the code. They leave out the ports' benchmarks and build output, and with them the unchanged copy of fs-extra that fs-extra-rs-plain keeps in its benchmark folder.
 
 Sorting all 51 functions by where their counterpart lives:
 
