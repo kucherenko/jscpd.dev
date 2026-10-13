@@ -1,5 +1,5 @@
 ---
-title: "How to let a coding agent port your code and know what it ported, not just copied"
+title: "How to let a coding agent port your code and know what it ported"
 description: A method for letting a coding agent port code to another language and checking what it really ported. jscpd --compare follows every source function into the target, the code-migration skill turns the report into a loop, and an fs-extra to Rust experiment shows what the tests miss.
 date: 2026-10-12
 publishedAt: 2026-10-12T13:30:00Z
@@ -10,7 +10,7 @@ tags:
   - compare
 navigation: false
 seo:
-  title: "How to let a coding agent port your code and know what it ported, not just copied"
+  title: "How to let a coding agent port your code and know what it ported"
   description: A method for letting a coding agent port code to another language and checking what it really ported. jscpd --compare follows every source function into the target, the code-migration skill turns the report into a loop, and an fs-extra to Rust experiment shows what the tests miss.
 ---
 
