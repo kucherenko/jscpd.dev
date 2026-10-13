@@ -38,6 +38,8 @@ jobs:
         env:
           CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Optional: without it the script finds the tag from the traffic.
+          CLOUDFLARE_SITE_TAG: ${{ vars.CLOUDFLARE_SITE_TAG }}
 
       - name: Commit the snapshot
         id: commit
