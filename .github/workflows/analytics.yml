@@ -6,6 +6,13 @@ on:
     # the site.
     - cron: "45 7 * * *"
   workflow_dispatch:
+  # A branch that changes the pipeline runs it once, so the PR carries the
+  # data it produced; master is served by the schedule.
+  push:
+    branches-ignore: [master]
+    paths:
+      - .github/workflows/analytics.yml
+      - scripts/analytics-snapshot.mjs
 
 permissions:
   contents: write
