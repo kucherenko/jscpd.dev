@@ -17,8 +17,8 @@
  * every morning before the site rebuild.
  *
  * Needs CLOUDFLARE_ANALYTICS_TOKEN (an API token with Account Analytics:
- * Read on the account) and CLOUDFLARE_ACCOUNT_ID. The site tag is the
- * beacon token in the page HTML; it is public.
+ * Read on the account) and CLOUDFLARE_ACCOUNT_ID. The site tag is found from
+ * the traffic of the production host, or given as CLOUDFLARE_SITE_TAG.
  */
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
@@ -28,8 +28,10 @@ const DIR = new URL('../data/analytics/', import.meta.url)
 const MONTHS_DIR = new URL('months/', DIR)
 const WINDOW_FILE = new URL('window.json', DIR)
 
-// The `token` of the data-cf-beacon attribute on every page.
-const SITE_TAG = process.env.CLOUDFLARE_SITE_TAG || '2b298b370c384af09e7745fc4ea6b6cc'
+// The Web Analytics site, found from the traffic of HOSTS unless given. (The
+// `token` in the data-cf-beacon attribute of the pages is the site token, a
+// different value that matches nothing here.)
+let siteTag = process.env.CLOUDFLARE_SITE_TAG || ''
 // Preview deploys report under the same site tag with their own host names;
 // only the production host counts.
 const HOSTS = ['jscpd.dev', 'www.jscpd.dev']
@@ -53,7 +55,7 @@ const utcMidnight = (date) => new Date(`${day(date)}T00:00:00Z`)
 const lit = (value) => JSON.stringify(value)
 
 const filter = (since, until, withHosts = true) =>
-  `{ siteTag: ${lit(SITE_TAG)}, datetime_geq: ${lit(since)}, datetime_lt: ${lit(until)}${withHosts ? `, requestHost_in: ${lit(HOSTS)}` : ''} }`
+  `{ siteTag: ${lit(siteTag)}, datetime_geq: ${lit(since)}, datetime_lt: ${lit(until)}${withHosts ? `, requestHost_in: ${lit(HOSTS)}` : ''} }`
 
 const groups = (alias, dims, since, until, { limit = TOP, withHosts = true } = {}) =>
   `${alias}: rumPageloadEventsAdaptiveGroups(limit: ${limit}, filter: ${filter(since, until, withHosts)}, orderBy: [count_DESC]) {
@@ -135,9 +137,20 @@ async function lastStoredDay() {
   return null
 }
 
+/** The site tag whose page loads come from the production host, from the last week of traffic. */
+async function discoverSiteTag(now) {
+  const since = addDays(now, -7).toISOString()
+  const data = await query(`sites: rumPageloadEventsAdaptiveGroups(limit: 100, filter: { datetime_geq: ${lit(since)}, datetime_lt: ${lit(now.toISOString())}, requestHost_in: ${lit(HOSTS)} }, orderBy: [count_DESC]) { count dimensions { siteTag requestHost } }`)
+  const hit = data.sites.find((g) => g.count > 0)
+  if (!hit) throw new Error(`no Web Analytics site reports ${HOSTS.join(', ')} in the last 7 days; set CLOUDFLARE_SITE_TAG`)
+  console.log(`site tag ${hit.dimensions.siteTag} (${hit.dimensions.requestHost}, ${hit.count} page loads in the last 7 days)`)
+  return hit.dimensions.siteTag
+}
+
 async function main() {
   if (!token || !account) throw new Error('CLOUDFLARE_ANALYTICS_TOKEN and CLOUDFLARE_ACCOUNT_ID are required')
   const now = new Date()
+  if (!siteTag) siteTag = await discoverSiteTag(now)
   const today = utcMidnight(now)
   const last = await lastStoredDay()
   // Start a week before the last stored day, or at the beginning. Days

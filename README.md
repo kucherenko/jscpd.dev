@@ -67,7 +67,7 @@ A post is a Markdown file in `content/blog/`, with `title`, `description`, `date
 
 ### Site statistics
 
-`.github/workflows/analytics.yml` runs `scripts/analytics-snapshot.mjs` every morning at 07:45 UTC, before the daily rebuild. The script reads Cloudflare Web Analytics through the GraphQL API (an API token with Account Analytics: Read in the `CLOUDFLARE_ANALYTICS_TOKEN` secret; the site tag is the beacon token in the page HTML) and stores each day's page views and visits per path in `data/analytics/months/<month>.json`, and the breakdowns of the last 30 days in `data/analytics/window.json`. The last seven days are rewritten on every run, older days stay as stored, so the site keeps its own history past the API's retention. `composables/useSiteStats.ts` reads the files: `/stats` (`pages/stats.vue`) shows the site, and a blog post shows its views once it has a hundred.
+`.github/workflows/analytics.yml` runs `scripts/analytics-snapshot.mjs` every morning at 07:45 UTC, before the daily rebuild. The script reads Cloudflare Web Analytics through the GraphQL API (an API token with Account Analytics: Read in the `CLOUDFLARE_ANALYTICS_TOKEN` secret; the site tag is found from the traffic of jscpd.dev, or set as `CLOUDFLARE_SITE_TAG`) and stores each day's page views and visits per path in `data/analytics/months/<month>.json`, and the breakdowns of the last 30 days in `data/analytics/window.json`. The last seven days are rewritten on every run, older days stay as stored, so the site keeps its own history past the API's retention. `composables/useSiteStats.ts` reads the files: `/stats` (`pages/stats.vue`) shows the site, and a blog post shows its views once it has a hundred.
 
 ## 🤝 Contributing
 
