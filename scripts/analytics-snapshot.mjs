@@ -12,8 +12,8 @@
  *
  * Every request covers at most CHUNK_DAYS days: a 30-day request came back
  * sampled one in ten, with the small groups rounded away, while a week is
- * counted in full. Days the API still returns sampled (older ones) carry
- * their sample interval.
+ * counted in full. The sample interval of every answer is checked and the
+ * log says when a day came back sampled.
  *
  * composables/usePostViews.ts adds the days up for the blog list and the
  * post page. .github/workflows/analytics.yml runs this every morning before
@@ -91,10 +91,6 @@ export function daysFrom(since, until, byDayPath) {
   for (const g of byDayPath) {
     const record = out[g.dimensions.date]
     if (!record) continue
-    // Older days come back sampled: the API keeps one event in N and scales the
-    // counts up. Such a day is an estimate, and the record says so.
-    const sample = Math.round(g.avg?.sampleInterval ?? 1)
-    if (sample > 1) record.sample = Math.max(record.sample ?? 1, sample)
     const path = normalizePath(g.dimensions.requestPath)
     if (!isPost(path)) continue
     const prev = record.posts[path] ?? [0, 0]
@@ -197,9 +193,11 @@ async function main() {
     await writeFile(new URL(`${month}.json`, MONTHS_DIR), `${JSON.stringify(file, null, 2)}\n`)
   }
   for (const [date, record] of Object.entries(fresh)) {
-    console.log(`${date}: ${views(record)} views of ${Object.keys(record.posts).length} posts${record.sample ? ` (sampled 1:${record.sample})` : ''}`)
+    console.log(`${date}: ${views(record)} views of ${Object.keys(record.posts).length} posts`)
   }
-  if (sampled > 1) console.log(`\nsome answers were sampled (interval up to ${sampled}); those days are estimates`)
+  // Older days come back sampled: the API keeps one event in N and scales the
+  // counts up, so those are estimates.
+  if (sampled > 1) console.log(`\nsome answers were sampled (interval up to ${sampled}); the counts of those days are estimates`)
   else console.log('\nno sampling in any answer')
 }
 

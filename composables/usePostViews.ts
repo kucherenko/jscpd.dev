@@ -6,11 +6,7 @@
 /** [views, visits] */
 export type PostCount = [number, number]
 
-export interface DayRecord {
-  /** Cloudflare's sample interval when the day came back sampled: its counts are estimates. */
-  sample?: number
-  posts: Record<string, PostCount>
-}
+export interface DayRecord { posts: Record<string, PostCount> }
 
 export interface MonthFile { days: Record<string, DayRecord> }
 
