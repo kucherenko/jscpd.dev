@@ -127,6 +127,19 @@ Here is part of the report for fs-extra-rs-plain, the port made without the skil
 
 Look at the counterpart column. `move.js` pairs with `lib/move/move.js` in the port at a similarity of 1.00, the same function in the same language. That is not a port. It is the original. The [full HTML report](/examples/compare-fs-extra-rs-plain.html){target="_blank"} marks these pairs as ported too, and only the file in the counterpart column gives them away.
 
+::report-screenshot
+---
+light: /images/blog/when-code-clones-matter/report-fs-extra-rs-plain-light.webp
+dark: /images/blog/when-code-clones-matter/report-fs-extra-rs-plain-dark.webp
+width: 1560
+height: 1176
+href: /examples/compare-fs-extra-rs-plain.html#table
+link-text: Open the report for fs-extra-rs-plain
+alt: "The Table tab of the jscpd --compare HTML report for fs-extra-rs-plain, one row per file: 80%, 41 of 51 functions with a counterpart; empty/index.js, ensure/file.js and ensure/link.js pair with lib/empty/index.js, lib/ensure/file.js and lib/ensure/link.js at a similarity of 1.00 and are marked Ported."
+caption: "fs-extra-rs-plain, one row per file. The status says Ported, and the counterpart column says lib/ensure/file.js at 1.00."
+---
+::
+
 And part of the report for fs-extra-rs:
 
 ```text
@@ -140,6 +153,19 @@ And part of the report for fs-extra-rs:
 ```
 
 Same files, counterparts in `.rs`, similarities around 0.8, which is what a faithful port into another language looks like. Here is [its full HTML report](/examples/compare-fs-extra-rs.html){target="_blank"}.
+
+::report-screenshot
+---
+light: /images/blog/when-code-clones-matter/report-fs-extra-rs-light.webp
+dark: /images/blog/when-code-clones-matter/report-fs-extra-rs-dark.webp
+width: 1560
+height: 1176
+href: /examples/compare-fs-extra-rs.html#table
+link-text: Open the report for fs-extra-rs
+alt: "The Table tab of the jscpd --compare HTML report for fs-extra-rs, one row per file: 98%, 50 of 51 functions with a counterpart; copy/copy-sync.js pairs with src/copy_sync.rs and src/copy.rs at around 0.8, and no row reaches 1.00."
+caption: "fs-extra-rs, one row per file. The same source files pair with .rs files at around 0.8."
+---
+::
 
 Both reports come from jscpd 5.4.1, with the ports' tests, benchmarks and build output left out of the target through `--ignore`.
 
