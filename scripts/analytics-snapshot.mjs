@@ -1,24 +1,23 @@
 /**
- * A daily snapshot of Cloudflare Web Analytics for jscpd.dev.
+ * A daily snapshot of the blog posts' page views from Cloudflare Web
+ * Analytics.
  *
  * The beacon Cloudflare injects into every page reports page loads to Web
  * Analytics; this script reads them back through the GraphQL API and keeps
- * them in data/analytics:
- *
- * - months/<YYYY-MM>.json: each day's page views and visits, and the same
- *   per path. A run rewrites the last REFRESH_DAYS days (the API keeps
- *   counting a day for a while) and leaves older days as they are, so the
- *   site keeps its own history whatever the API's retention is.
- * - window.json: the last WINDOW_DAYS days by page, referrer, country,
- *   device, browser and OS. Replaced on every run.
+ * the ones of the /blog/ pages in data/analytics/months/<YYYY-MM>.json: each
+ * day's page views and visits per post. A run rewrites the last
+ * REFRESH_DAYS days (the API keeps counting a day for a while) and leaves
+ * older days as they are, so the site keeps its own history whatever the
+ * API's retention is (26 weeks).
  *
  * Every request covers at most CHUNK_DAYS days: a 30-day request came back
  * sampled one in ten, with the small groups rounded away, while a week is
- * counted in full. The sample interval of each answer is checked.
+ * counted in full. Days the API still returns sampled (older ones) carry
+ * their sample interval.
  *
- * composables/useSiteStats.ts reads the files for the views under the blog
- * posts and for the /stats page. .github/workflows/analytics.yml runs this
- * every morning before the site rebuild.
+ * composables/usePostViews.ts adds the days up for the blog list and the
+ * post page. .github/workflows/analytics.yml runs this every morning before
+ * the site rebuild.
  *
  * Needs CLOUDFLARE_ANALYTICS_TOKEN (an API token with Account Analytics:
  * Read on the account) and CLOUDFLARE_ACCOUNT_ID. The site tag is found from
@@ -28,9 +27,7 @@ import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 
 const API = 'https://api.cloudflare.com/client/v4/graphql'
-const DIR = new URL('../data/analytics/', import.meta.url)
-const MONTHS_DIR = new URL('months/', DIR)
-const WINDOW_FILE = new URL('window.json', DIR)
+const MONTHS_DIR = new URL('../data/analytics/months/', import.meta.url)
 
 // The Web Analytics site, found from the traffic of HOSTS unless given. (The
 // `token` in the data-cf-beacon attribute of the pages is the site token, a
@@ -40,14 +37,12 @@ let siteTag = process.env.CLOUDFLARE_SITE_TAG || ''
 // only the production host counts.
 const HOSTS = ['jscpd.dev', 'www.jscpd.dev']
 // How far the first backfill reaches: the API refuses anything older than 26
-// weeks, and the days before the first one with a page view are dropped.
+// weeks, and the days before the first one with a post view are dropped.
 const BACKFILL_DAYS = 180
 // Days rewritten on every run: the API still adds to a recent day.
 const REFRESH_DAYS = 7
 const CHUNK_DAYS = 7
 const GROUP_LIMIT = 5000
-const WINDOW_DAYS = 30
-const TOP = 50
 
 const token = process.env.CLOUDFLARE_ANALYTICS_TOKEN
 const account = process.env.CLOUDFLARE_ACCOUNT_ID
@@ -56,17 +51,6 @@ const day = (date) => date.toISOString().slice(0, 10)
 const addDays = (date, n) => new Date(date.getTime() + n * 86_400_000)
 const utcMidnight = (date) => new Date(`${day(date)}T00:00:00Z`)
 const lit = (value) => JSON.stringify(value)
-
-const filter = (since, until, withHosts = true) =>
-  `{ siteTag: ${lit(siteTag)}, datetime_geq: ${lit(since)}, datetime_lt: ${lit(until)}${withHosts ? `, requestHost_in: ${lit(HOSTS)}` : ''} }`
-
-const groups = (alias, dims, since, until, { limit = TOP, withHosts = true } = {}) =>
-  `${alias}: rumPageloadEventsAdaptiveGroups(limit: ${limit}, filter: ${filter(since, until, withHosts)}, orderBy: [count_DESC]) {
-    count
-    sum { visits }
-    avg { sampleInterval }
-    ${dims.length ? `dimensions { ${dims.join(' ')} }` : ''}
-  }`
 
 let sampled = 1
 
@@ -87,7 +71,7 @@ async function query(body) {
   return data
 }
 
-// "/blog/post/" and "/blog/post/index.html" are the same page as "/blog/post".
+/** "/blog/post/" and "/blog/post/index.html" are the same page as "/blog/post". */
 export function normalizePath(path) {
   let out = String(path || '/').split(/[?#]/)[0]
   if (out.endsWith('/index.html')) out = out.slice(0, -'index.html'.length)
@@ -95,49 +79,34 @@ export function normalizePath(path) {
   return out || '/'
 }
 
-const row = (g) => ({ views: g.count ?? 0, visits: g.sum?.visits ?? 0 })
+/** A post page: under /blog/, not the list, not the feed. */
+export const isPost = (path) => path.startsWith('/blog/') && !path.endsWith('.xml')
 
-/** The per-day records for every day of [since, until), from the two groupings. */
-export function daysFrom(since, until, byDay, byDayPath) {
+/** The per-day records for every day of [since, until) from the day/path groups. */
+export function daysFrom(since, until, byDayPath) {
   const out = {}
   for (let d = utcMidnight(new Date(since)); d < new Date(until); d = addDays(d, 1)) {
-    out[day(d)] = { views: 0, visits: 0, paths: {} }
-  }
-  for (const g of byDay) {
-    const date = g.dimensions.date
-    if (!out[date]) continue
-    Object.assign(out[date], row(g))
-    // Older days come back sampled: the API keeps one event in N and scales the
-    // counts up. Such a day is an estimate, and the page says so.
-    const sample = Math.round(g.avg?.sampleInterval ?? 1)
-    if (sample > 1) out[date].sample = sample
+    out[day(d)] = { posts: {} }
   }
   for (const g of byDayPath) {
-    const date = g.dimensions.date
-    if (!out[date]) continue
+    const record = out[g.dimensions.date]
+    if (!record) continue
+    // Older days come back sampled: the API keeps one event in N and scales the
+    // counts up. Such a day is an estimate, and the record says so.
+    const sample = Math.round(g.avg?.sampleInterval ?? 1)
+    if (sample > 1) record.sample = Math.max(record.sample ?? 1, sample)
     const path = normalizePath(g.dimensions.requestPath)
-    const prev = out[date].paths[path] ?? [0, 0]
-    const r = row(g)
-    out[date].paths[path] = [prev[0] + r.views, prev[1] + r.visits]
+    if (!isPost(path)) continue
+    const prev = record.posts[path] ?? [0, 0]
+    record.posts[path] = [prev[0] + (g.count ?? 0), prev[1] + (g.sum?.visits ?? 0)]
   }
-  for (const d of Object.values(out)) d.paths = Object.fromEntries(Object.entries(d.paths).sort(([a], [b]) => a.localeCompare(b)))
+  for (const record of Object.values(out)) {
+    record.posts = Object.fromEntries(Object.entries(record.posts).sort(([a], [b]) => a.localeCompare(b)))
+  }
   return out
 }
 
-/** Sums rows of several requests by their dimension value; `key` reads the value. */
-export function sumBy(lists, key) {
-  const out = new Map()
-  for (const list of lists) {
-    for (const g of list) {
-      const k = key(g)
-      const prev = out.get(k) ?? { views: 0, visits: 0 }
-      const r = row(g)
-      out.set(k, { views: prev.views + r.views, visits: prev.visits + r.visits })
-    }
-  }
-  return [...out.entries()].sort(([ka, a], [kb, b]) => b.views - a.views || String(ka).localeCompare(String(kb)))
-}
-
+const views = (record) => Object.values(record.posts).reduce((sum, [v]) => sum + v, 0)
 const sortedDays = (days) => Object.fromEntries(Object.entries(days).sort(([a], [b]) => a.localeCompare(b)))
 
 async function readMonth(month) {
@@ -191,7 +160,6 @@ async function main() {
   const now = new Date()
   if (!siteTag) siteTag = await discoverSiteTag(now)
   const today = utcMidnight(now)
-  const tomorrow = addDays(today, 1)
   const last = await lastStoredDay()
   // Start a week before the last stored day, or at the beginning. Days
   // between the two are never skipped, so a missed run leaves no hole.
@@ -200,24 +168,27 @@ async function main() {
   const since = start < firstDay ? firstDay : start
 
   let fresh = {}
-  for (const [from, until] of chunks(since, tomorrow, now)) {
-    const data = await query([
-      groups('byDay', ['date'], from.toISOString(), until.toISOString(), { limit: CHUNK_DAYS + 1 }),
-      groups('byDayPath', ['date', 'requestPath'], from.toISOString(), until.toISOString(), { limit: GROUP_LIMIT }),
-    ].join('\n'))
+  for (const [from, until] of chunks(since, addDays(today, 1), now)) {
+    const data = await query(`byDayPath: rumPageloadEventsAdaptiveGroups(limit: ${GROUP_LIMIT}, filter: { siteTag: ${lit(siteTag)}, datetime_geq: ${lit(from.toISOString())}, datetime_lt: ${lit(until.toISOString())}, requestHost_in: ${lit(HOSTS)} }, orderBy: [count_DESC]) {
+      count
+      sum { visits }
+      avg { sampleInterval }
+      dimensions { date requestPath }
+    }`)
     if (data.byDayPath.length >= GROUP_LIMIT) throw new Error(`more than ${GROUP_LIMIT} day/path groups between ${day(from)} and ${day(until)}; lower CHUNK_DAYS`)
-    Object.assign(fresh, daysFrom(from.toISOString(), addDays(utcMidnight(until), until > utcMidnight(until) ? 1 : 0).toISOString(), data.byDay, data.byDayPath))
+    // A chunk ending mid-day (today) still covers that whole day.
+    const end = until > utcMidnight(until) ? addDays(utcMidnight(until), 1) : until
+    Object.assign(fresh, daysFrom(from.toISOString(), end.toISOString(), data.byDayPath))
   }
   if (!last) {
-    // The first backfill: the history starts on the first day with a page view.
+    // The first backfill: the history starts on the first day with a post view.
     const dates = Object.keys(fresh).sort()
-    const first = dates.find((d) => fresh[d].views > 0)
+    const first = dates.find((d) => views(fresh[d]) > 0)
     fresh = Object.fromEntries(dates.filter((d) => first && d >= first).map((d) => [d, fresh[d]]))
   }
 
   await mkdir(MONTHS_DIR, { recursive: true })
-  const months = new Set(Object.keys(fresh).map((d) => d.slice(0, 7)))
-  for (const month of months) {
+  for (const month of new Set(Object.keys(fresh).map((d) => d.slice(0, 7)))) {
     const file = await readMonth(month)
     for (const [date, record] of Object.entries(fresh)) {
       if (date.startsWith(month)) file.days[date] = record
@@ -225,48 +196,10 @@ async function main() {
     file.days = sortedDays(file.days)
     await writeFile(new URL(`${month}.json`, MONTHS_DIR), `${JSON.stringify(file, null, 2)}\n`)
   }
-  for (const [date, d] of Object.entries(fresh)) console.log(`${date}: ${d.views} views, ${d.visits} visits, ${Object.keys(d.paths).length} pages`)
-
-  // The breakdowns of the last WINDOW_DAYS days, up to now, a week per request.
-  const windowSince = addDays(today, 1 - WINDOW_DAYS)
-  const answers = []
-  for (const [from, until] of chunks(windowSince, tomorrow, now)) {
-    const s = from.toISOString()
-    const u = until.toISOString()
-    answers.push(await query([
-      groups('total', [], s, u, { limit: 1 }),
-      groups('hosts', ['requestHost'], s, u, { withHosts: false }),
-      groups('pages', ['requestPath'], s, u, { limit: GROUP_LIMIT }),
-      groups('referrers', ['refererHost'], s, u, { limit: 200 }),
-      groups('countries', ['countryName'], s, u, { limit: 300 }),
-      groups('devices', ['deviceType'], s, u),
-      groups('browsers', ['userAgentBrowser'], s, u, { limit: 100 }),
-      groups('os', ['userAgentOS'], s, u, { limit: 100 }),
-    ].join('\n')))
+  for (const [date, record] of Object.entries(fresh)) {
+    console.log(`${date}: ${views(record)} views of ${Object.keys(record.posts).length} posts${record.sample ? ` (sampled 1:${record.sample})` : ''}`)
   }
-  const of = (alias) => answers.map((a) => a[alias])
-  const named = (alias, dim, name) => sumBy(of(alias), (g) => g.dimensions[dim] ?? '').slice(0, TOP).map(([value, r]) => ({ [name]: value, ...r }))
-  const [, total] = sumBy(of('total'), () => 'all')[0] ?? ['all', { views: 0, visits: 0 }]
-  const window = {
-    updatedAt: now.toISOString().replace(/\.\d{3}Z$/, 'Z'),
-    since: day(windowSince),
-    until: day(today),
-    ...total,
-    hosts: named('hosts', 'requestHost', 'host'),
-    pages: sumBy(of('pages'), (g) => normalizePath(g.dimensions.requestPath)).slice(0, TOP).map(([path, r]) => ({ path, ...r })),
-    // A referrer on the site itself is a click within it, not a source.
-    referrers: named('referrers', 'refererHost', 'host').filter((r) => !HOSTS.includes(r.host)),
-    countries: named('countries', 'countryName', 'name'),
-    devices: named('devices', 'deviceType', 'name'),
-    browsers: named('browsers', 'userAgentBrowser', 'name'),
-    os: named('os', 'userAgentOS', 'name'),
-  }
-  await writeFile(WINDOW_FILE, `${JSON.stringify(window, null, 2)}\n`)
-
-  console.log(`\nLast ${WINDOW_DAYS} days (${window.since} to ${window.until}): ${window.views} views, ${window.visits} visits`)
-  console.log(`hosts: ${window.hosts.map((h) => `${h.host || '?'} ${h.views}`).join(', ')}`)
-  for (const p of window.pages.slice(0, 10)) console.log(`  ${p.views}\t${p.visits}\t${p.path}`)
-  if (sampled > 1) console.log(`\nWARNING: some answers were sampled (interval ${sampled}); the numbers of those are estimates`)
+  if (sampled > 1) console.log(`\nsome answers were sampled (interval up to ${sampled}); those days are estimates`)
   else console.log('\nno sampling in any answer')
 }
 

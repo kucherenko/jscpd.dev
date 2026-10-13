@@ -2,7 +2,7 @@
 // One post from the `blog` collection, at /blog/<slug> (registered in
 // nuxt.config.ts, pages:extend). The body renders with the same prose
 // components as the docs pages.
-import { loadPathViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/useSiteStats'
+import { loadPostViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/usePostViews'
 
 definePageMeta({ layout: 'default' })
 
@@ -40,10 +40,10 @@ useHead({
   ],
 })
 
-// The post's all-time page views (composables/useSiteStats.ts), shown from MIN_VIEWS_SHOWN up.
-const { data: views } = await useAsyncData(`blog-views-${route.params.slug}`, () => loadPathViews([route.path]))
+// The post's page views (composables/usePostViews.ts).
+const { data: views } = await useAsyncData(`blog-views-${route.params.slug}`, () => loadPostViews([route.path]))
 const headline = computed(() => {
-  const n = views.value?.[route.path] ?? 0
+  const n = views.value?.[route.path]?.views ?? 0
   return `Blog · ${formatPostDate(post.value!.date)}${n >= MIN_VIEWS_SHOWN ? ` · ${viewsLabel(n)}` : ''}`
 })
 

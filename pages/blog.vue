@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // The list of posts, newest first. Posts are content/blog/*.md in the `blog`
 // collection (content.config.ts); one post renders through pages/blog-post.vue.
-import { loadPathViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/useSiteStats'
+import { loadPostViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/usePostViews'
 
 definePageMeta({ layout: 'default' })
 
@@ -28,11 +28,10 @@ useHead({
 // Posts with a publishedAt in the future stay out until a build after it.
 const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('blog').where('publishedAt', '<=', new Date().toISOString()).order('date', 'DESC').all())
 
-// All-time page views from Cloudflare Web Analytics (composables/useSiteStats.ts),
-// shown once a post has MIN_VIEWS_SHOWN of them.
-const { data: views } = await useAsyncData('blog-views', () => loadPathViews((posts.value ?? []).map(p => p.path)))
+// Page views from Cloudflare Web Analytics (composables/usePostViews.ts).
+const { data: views } = await useAsyncData('blog-views', () => loadPostViews((posts.value ?? []).map(p => p.path)))
 const shownViews = (path: string) => {
-  const n = views.value?.[path] ?? 0
+  const n = views.value?.[path]?.views ?? 0
   return n >= MIN_VIEWS_SHOWN ? n : null
 }
 </script>
@@ -59,8 +58,7 @@ const shownViews = (path: string) => {
         </li>
       </ul>
       <p class="blog-feed">
-        New posts land in the <a href="/blog/feed.xml">Atom feed</a>. The views next to a post, and the
-        numbers for the whole site, are on the <NuxtLink to="/stats">statistics page</NuxtLink>.
+        New posts land in the <a href="/blog/feed.xml">Atom feed</a>.
       </p>
     </UPageBody>
     </UPage>

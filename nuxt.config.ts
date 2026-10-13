@@ -32,8 +32,7 @@ const trendingRoutes = [
 // came out as 500. Shipping the files base64-encoded keeps every character
 // of the data out of reach of such replacements; the page decodes on load.
 const trendingDataDir = fileURLToPath(new URL("./data/trending/", import.meta.url));
-// data/analytics/ holds visited paths, which a scanner can make look like
-// anything; it goes through the same encoding.
+// data/analytics/ holds the paths of the blog posts; it goes the same way.
 const analyticsDataDir = fileURLToPath(new URL("./data/analytics/", import.meta.url));
 const trendingDataBase64 = {
   name: "jscpd:trending-data-base64",
@@ -96,11 +95,6 @@ export default defineNuxtConfig({
           name: "blog",
           path: "/blog",
           file: "~/pages/blog.vue",
-        },
-        {
-          name: "stats",
-          path: "/stats",
-          file: "~/pages/stats.vue",
         },
         {
           name: "blog-post",
@@ -181,7 +175,7 @@ export default defineNuxtConfig({
       // are linked from nowhere the crawler visits, so they were missing
       // from the static output and the live URLs returned the 404 page
       // while the sitemap listed them.
-      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", "/concepts", "/reference", "/project", "/blog", "/blog/feed.xml", "/stats", ...trendingRoutes],
+      routes: ["/404", "/health-corpus.json", "/trending/code-only.jscpd.json", "/concepts", "/reference", "/project", "/blog", "/blog/feed.xml", ...trendingRoutes],
     },
   },
 
