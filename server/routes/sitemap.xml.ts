@@ -23,6 +23,7 @@ const COLLECTIONS = ['docs', 'landing', 'blog']
 const EXTRA_ROUTES: Array<{ loc: string, file: string }> = [
   { loc: '/support', file: 'pages/support.vue' },
   { loc: '/blog', file: 'pages/blog.vue' },
+  { loc: '/stats', file: 'pages/stats.vue' },
 ]
 
 const buildDate = new Date().toISOString().slice(0, 10)

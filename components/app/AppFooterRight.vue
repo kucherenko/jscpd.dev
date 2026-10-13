@@ -21,6 +21,11 @@ const links = [
     to: '/blog'
   },
   {
+    icon: 'i-lucide-bar-chart-3',
+    label: 'Stats',
+    to: '/stats'
+  },
+  {
     icon: 'i-lucide-heart',
     label: 'Support',
     to: '/support'

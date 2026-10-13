@@ -2,6 +2,8 @@
 // One post from the `blog` collection, at /blog/<slug> (registered in
 // nuxt.config.ts, pages:extend). The body renders with the same prose
 // components as the docs pages.
+import { loadPathViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/useSiteStats'
+
 definePageMeta({ layout: 'default' })
 
 const route = useRoute()
@@ -38,7 +40,12 @@ useHead({
   ],
 })
 
-const headline = computed(() => `Blog · ${formatPostDate(post.value!.date)}`)
+// The post's all-time page views (composables/useSiteStats.ts), shown from MIN_VIEWS_SHOWN up.
+const { data: views } = await useAsyncData(`blog-views-${route.params.slug}`, () => loadPathViews([route.path]))
+const headline = computed(() => {
+  const n = views.value?.[route.path] ?? 0
+  return `Blog · ${formatPostDate(post.value!.date)}${n >= MIN_VIEWS_SHOWN ? ` · ${viewsLabel(n)}` : ''}`
+})
 
 // llms.txt links the post's Markdown at /raw/<path>.md; prerender it like the docs pages do.
 addPrerenderPath(`/raw${route.path}.md`)

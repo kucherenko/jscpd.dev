@@ -65,6 +65,10 @@ A post is a Markdown file in `content/blog/`, with `title`, `description`, `date
 
 `.github/workflows/trending.yml` runs `scripts/analyze-trending.mjs` daily: it clones the day's GitHub trending repositories and measures each one with jscpd twice, over every file and over the code alone (`scripts/trending-scan.mjs` holds the rules: no tests, docs, data, vendored or generated files, programming-language formats only). Snapshots land in `data/trending/<day>.json`; `scripts/build-trending-index.mjs` derives the history, the per-repo and per-week files, the per-language baselines; `server/routes/trending/code-only.jscpd.json.ts` serves the code scan's config so a reader can measure their own repo the same way. `scripts/backfill-trending.mjs` re-measures past days at their recorded commits when the scan rules change.
 
+### Site statistics
+
+`.github/workflows/analytics.yml` runs `scripts/analytics-snapshot.mjs` every morning at 07:45 UTC, before the daily rebuild. The script reads Cloudflare Web Analytics through the GraphQL API (an API token with Account Analytics: Read in the `CLOUDFLARE_ANALYTICS_TOKEN` secret; the site tag is the beacon token in the page HTML) and stores each day's page views and visits per path in `data/analytics/months/<month>.json`, and the breakdowns of the last 30 days in `data/analytics/window.json`. The last seven days are rewritten on every run, older days stay as stored, so the site keeps its own history past the API's retention. `composables/useSiteStats.ts` reads the files: `/stats` (`pages/stats.vue`) shows the site, and a blog post shows its views once it has a hundred.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.

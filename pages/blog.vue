@@ -1,6 +1,8 @@
 <script setup lang="ts">
 // The list of posts, newest first. Posts are content/blog/*.md in the `blog`
 // collection (content.config.ts); one post renders through pages/blog-post.vue.
+import { loadPathViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/useSiteStats'
+
 definePageMeta({ layout: 'default' })
 
 const title = 'Blog'
@@ -25,6 +27,14 @@ useHead({
 
 // Posts with a publishedAt in the future stay out until a build after it.
 const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('blog').where('publishedAt', '<=', new Date().toISOString()).order('date', 'DESC').all())
+
+// All-time page views from Cloudflare Web Analytics (composables/useSiteStats.ts),
+// shown once a post has MIN_VIEWS_SHOWN of them.
+const { data: views } = await useAsyncData('blog-views', () => loadPathViews((posts.value ?? []).map(p => p.path)))
+const shownViews = (path: string) => {
+  const n = views.value?.[path] ?? 0
+  return n >= MIN_VIEWS_SHOWN ? n : null
+}
 </script>
 
 <template>
@@ -34,7 +44,13 @@ const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('
     <UPageBody>
       <ul class="blog-list">
         <li v-for="post in posts" :key="post.path" class="blog-item">
-          <time :datetime="post.date" class="blog-date">{{ formatPostDate(post.date) }}</time>
+          <p class="blog-meta">
+            <time :datetime="post.date">{{ formatPostDate(post.date) }}</time>
+            <template v-if="shownViews(post.path)">
+              <span aria-hidden="true">·</span>
+              <span>{{ viewsLabel(shownViews(post.path)!) }}</span>
+            </template>
+          </p>
           <h2 class="blog-item-title">
             <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
           </h2>
@@ -43,7 +59,8 @@ const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('
         </li>
       </ul>
       <p class="blog-feed">
-        New posts land in the <a href="/blog/feed.xml">Atom feed</a>.
+        New posts land in the <a href="/blog/feed.xml">Atom feed</a>. The views next to a post, and the
+        numbers for the whole site, are on the <NuxtLink to="/stats">statistics page</NuxtLink>.
       </p>
     </UPageBody>
     </UPage>
@@ -68,12 +85,14 @@ const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('
   padding-top: 0;
 }
 
-.blog-date {
-  display: block;
+.blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin: 0 0 0.375rem;
   font-size: 0.8125rem;
   color: var(--ui-text-muted, #64748b);
   font-variant-numeric: tabular-nums;
-  margin-bottom: 0.375rem;
 }
 
 .blog-item-title {
