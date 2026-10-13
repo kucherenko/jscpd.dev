@@ -35,6 +35,8 @@ const postRows = computed(() => {
 
 const TOP_PAGES = 20
 const TOP_SMALL = 8
+// The lists show visits, so they are ordered by visits; the file orders by views.
+const byVisits = <T extends { visits: number }>(list: T[]) => [...list].sort((a, b) => b.visits - a.visits).slice(0, TOP_SMALL)
 const referrer = (host: string) => host || 'Direct or unknown'
 // The API names countries by ISO code and a few agents by their internal names.
 const regionNames = new Intl.DisplayNames(['en'], { type: 'region' })
@@ -123,7 +125,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
             <section class="stats-section">
               <h2>Referrers</h2>
               <ul class="stats-list">
-                <li v-for="r in window.referrers.slice(0, TOP_SMALL)" :key="r.host">
+                <li v-for="r in byVisits(window.referrers)" :key="r.host">
                   <span class="stats-list-name">{{ referrer(r.host) }}</span>
                   <span class="stats-list-value">{{ num(r.visits) }} <small>{{ share(r.visits, window.visits) }}</small></span>
                 </li>
@@ -132,7 +134,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
             <section class="stats-section">
               <h2>Countries</h2>
               <ul class="stats-list">
-                <li v-for="c in window.countries.slice(0, TOP_SMALL)" :key="c.name">
+                <li v-for="c in byVisits(window.countries)" :key="c.name">
                   <span class="stats-list-name">{{ country(c.name) }}</span>
                   <span class="stats-list-value">{{ num(c.visits) }} <small>{{ share(c.visits, window.visits) }}</small></span>
                 </li>
@@ -141,7 +143,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
             <section class="stats-section">
               <h2>Devices</h2>
               <ul class="stats-list">
-                <li v-for="d in window.devices.slice(0, TOP_SMALL)" :key="d.name">
+                <li v-for="d in byVisits(window.devices)" :key="d.name">
                   <span class="stats-list-name">{{ label(d.name) }}</span>
                   <span class="stats-list-value">{{ num(d.visits) }} <small>{{ share(d.visits, window.visits) }}</small></span>
                 </li>
@@ -150,7 +152,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
             <section class="stats-section">
               <h2>Browsers</h2>
               <ul class="stats-list">
-                <li v-for="b in window.browsers.slice(0, TOP_SMALL)" :key="b.name">
+                <li v-for="b in byVisits(window.browsers)" :key="b.name">
                   <span class="stats-list-name">{{ label(b.name) }}</span>
                   <span class="stats-list-value">{{ num(b.visits) }} <small>{{ share(b.visits, window.visits) }}</small></span>
                 </li>
@@ -159,7 +161,7 @@ const share = (n: number, total: number) => total ? `${Math.round((100 * n) / to
             <section class="stats-section">
               <h2>Operating systems</h2>
               <ul class="stats-list">
-                <li v-for="o in window.os.slice(0, TOP_SMALL)" :key="o.name">
+                <li v-for="o in byVisits(window.os)" :key="o.name">
                   <span class="stats-list-name">{{ label(o.name) }}</span>
                   <span class="stats-list-value">{{ num(o.visits) }} <small>{{ share(o.visits, window.visits) }}</small></span>
                 </li>
