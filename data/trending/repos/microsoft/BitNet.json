@@ -1,0 +1,1072 @@
+{
+ "name": "microsoft/BitNet",
+ "url": "https://github.com/microsoft/BitNet",
+ "appearances": [
+  {
+   "date": "2026-10-13",
+   "rank": 3,
+   "stars": 40991,
+   "starsToday": 97,
+   "headSha": "0b341e582afbf9e1011f24744b554c96a3477eb5",
+   "sources": 73,
+   "lines": 22884,
+   "clones": 256,
+   "duplicatedLines": 8577,
+   "percentage": 37.48,
+   "codePercentage": 41.42,
+   "codeSources": 48,
+   "healthScore": 19.9,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-13T05:34:37.613Z",
+  "name": "microsoft/BitNet",
+  "url": "https://github.com/microsoft/BitNet",
+  "description": "Official inference framework for 1-bit LLMs",
+  "language": "C++",
+  "stars": 40991,
+  "starsToday": 97,
+  "defaultBranch": "main",
+  "headSha": "0b341e582afbf9e1011f24744b554c96a3477eb5",
+  "durationMs": 960,
+  "total": {
+   "sources": 73,
+   "lines": 22884,
+   "tokens": 202740,
+   "clones": 256,
+   "duplicatedLines": 8577,
+   "duplicatedTokens": 91787,
+   "percentage": 37.48,
+   "percentageTokens": 45.27
+  },
+  "formats": [
+   {
+    "format": "c-header",
+    "sources": 10,
+    "lines": 7153,
+    "clones": 142,
+    "duplicatedLines": 5374,
+    "percentage": 75.13
+   },
+   {
+    "format": "python",
+    "sources": 25,
+    "lines": 11090,
+    "clones": 69,
+    "duplicatedLines": 2645,
+    "percentage": 23.85
+   },
+   {
+    "format": "cpp",
+    "sources": 2,
+    "lines": 1248,
+    "clones": 39,
+    "duplicatedLines": 469,
+    "percentage": 37.58
+   },
+   {
+    "format": "markdown",
+    "sources": 7,
+    "lines": 1373,
+    "clones": 5,
+    "duplicatedLines": 69,
+    "percentage": 5.03
+   },
+   {
+    "format": "ini",
+    "sources": 7,
+    "lines": 154,
+    "clones": 1,
+    "duplicatedLines": 20,
+    "percentage": 12.99
+   },
+   {
+    "format": "bash",
+    "sources": 16,
+    "lines": 1561,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "txt",
+    "sources": 3,
+    "lines": 99,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 2,
+    "lines": 38,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "c-header",
+    "lines": 112,
+    "tokens": 1939,
+    "first": {
+     "name": "include/bitnet-lut-kernels.h",
+     "start": 284,
+     "end": 395
+    },
+    "others": [
+     {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 528,
+      "end": 639
+     },
+     {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 772,
+      "end": 883
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 282,
+      "end": 393
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 526,
+      "end": 637
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 770,
+      "end": 881
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 1014,
+      "end": 1125
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+      "start": 282,
+      "end": 393
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+      "start": 526,
+      "end": 637
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "for (int i = 0; i < BM3200_8640; i += 32) {",
+      "__m256i vec_as[KK / 2];",
+      "__m256i vec_signs[KK / 8];",
+      "#pragma unroll",
+      "for (int ai = 0; ai < KK / 2; ai++) {",
+      "    vec_as[ai] = _mm256_loadu_si256(reinterpret_cast<__m256i*>(a + i * KK / 2 + ai * 32));",
+      "}",
+      "#pragma unroll",
+      "for (int as = 0; as < KK / 8; as++) {",
+      "    vec_signs[as] = _mm256_loadu_si256(reinterpret_cast<__m256i*>(sign + i * KK / 8 + as * 32));"
+     ],
+     "total": 112
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 868,
+    "tokens": 12635,
+    "first": {
+     "name": "include/bitnet-lut-kernels.h",
+     "start": 260,
+     "end": 1127
+    },
+    "others": [
+     {
+      "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl2.h",
+      "start": 258,
+      "end": 1125
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "#endif",
+      "    return 0;",
+      "}",
+      "static bool is_type_supported(enum ggml_type type) {",
+      "    if (type == GGML_TYPE_Q4_0 ||",
+      "        type == GGML_TYPE_TL2) {",
+      "        return true;",
+      "    } else {",
+      "        return false;",
+      "    }"
+     ],
+     "total": 868
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 271,
+    "tokens": 3027,
+    "first": {
+     "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+     "start": 1,
+     "end": 271
+    },
+    "others": [
+     {
+      "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl2.h",
+      "start": 1,
+      "end": 271
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+      "start": 1,
+      "end": 271
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "#if defined(GGML_BITNET_X86_TL2)",
+      "#include \"ggml-bitnet.h\"",
+      "#define GGML_BITNET_MAX_NODES 8192",
+      "static bool initialized = false;",
+      "static bitnet_tensor_extra * bitnet_tensor_extras = nullptr;",
+      "static size_t bitnet_tensor_extras_index = 0;",
+      "static void * aligned_malloc(size_t size) {",
+      "#if defined(_WIN32)",
+      "    return _aligned_malloc(size, 64);",
+      "#else"
+     ],
+     "total": 271
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 896,
+    "tokens": 5575,
+    "first": {
+     "name": "utils/convert-ms-to-gguf-bitnet.py",
+     "start": 47,
+     "end": 942
+    },
+    "others": [
+     {
+      "name": "utils/convert.py",
+      "start": 47,
+      "end": 943
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 89,
+    "tokens": 1065,
+    "first": {
+     "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+     "start": 333,
+     "end": 421
+    },
+    "others": [
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+      "start": 585,
+      "end": 673
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+      "start": 199,
+      "end": 287
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+      "start": 451,
+      "end": 539
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+      "start": 199,
+      "end": 287
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+      "start": 451,
+      "end": 539
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 41,
+    "tokens": 467,
+    "first": {
+     "name": "include/bitnet-lut-kernels.h",
+     "start": 418,
+     "end": 458
+    },
+    "others": [
+     {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 662,
+      "end": 702
+     },
+     {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 906,
+      "end": 946
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 416,
+      "end": 456
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 660,
+      "end": 700
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 904,
+      "end": 944
+     },
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 1148,
+      "end": 1188
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+      "start": 416,
+      "end": 456
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+      "start": 660,
+      "end": 700
+     }
+    ],
+    "copies": 10,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 105,
+    "tokens": 1325,
+    "first": {
+     "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+     "start": 199,
+     "end": 303
+    },
+    "others": [
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+      "start": 451,
+      "end": 555
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+      "start": 317,
+      "end": 421
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+      "start": 317,
+      "end": 421
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 184,
+    "tokens": 1621,
+    "first": {
+     "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+     "start": 1,
+     "end": 184
+    },
+    "others": [
+     {
+      "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+      "start": 1,
+      "end": 184
+     },
+     {
+      "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+      "start": 1,
+      "end": 184
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 253,
+    "tokens": 1565,
+    "first": {
+     "name": "utils/convert-ms-to-gguf-bitnet.py",
+     "start": 1503,
+     "end": 1755
+    },
+    "others": [
+     {
+      "name": "utils/convert.py",
+      "start": 1358,
+      "end": 1610
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 86,
+    "tokens": 1148,
+    "first": {
+     "name": "include/bitnet-lut-kernels.h",
+     "start": 103,
+     "end": 188
+    },
+    "others": [
+     {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 101,
+      "end": 186
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 48,
+   "lines": 20469,
+   "tokens": 181874,
+   "clones": 249,
+   "duplicatedLines": 8478,
+   "duplicatedTokens": 91149,
+   "percentage": 41.42,
+   "percentageTokens": 50.12,
+   "formats": [
+    {
+     "format": "c-header",
+     "sources": 10,
+     "lines": 7153,
+     "clones": 142,
+     "duplicatedLines": 5374,
+     "percentage": 75.13
+    },
+    {
+     "format": "python",
+     "sources": 24,
+     "lines": 10482,
+     "clones": 68,
+     "duplicatedLines": 2635,
+     "percentage": 25.14
+    },
+    {
+     "format": "cpp",
+     "sources": 2,
+     "lines": 1248,
+     "clones": 39,
+     "duplicatedLines": 469,
+     "percentage": 37.58
+    },
+    {
+     "format": "bash",
+     "sources": 11,
+     "lines": 1418,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c-header",
+     "lines": 112,
+     "tokens": 1939,
+     "first": {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 284,
+      "end": 395
+     },
+     "others": [
+      {
+       "name": "include/bitnet-lut-kernels.h",
+       "start": 528,
+       "end": 639
+      },
+      {
+       "name": "include/bitnet-lut-kernels.h",
+       "start": 772,
+       "end": 883
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 282,
+       "end": 393
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 526,
+       "end": 637
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 770,
+       "end": 881
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 1014,
+       "end": 1125
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+       "start": 282,
+       "end": 393
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+       "start": 526,
+       "end": 637
+      }
+     ],
+     "copies": 10,
+     "excerpt": {
+      "lines": [
+       "for (int i = 0; i < BM3200_8640; i += 32) {",
+       "__m256i vec_as[KK / 2];",
+       "__m256i vec_signs[KK / 8];",
+       "#pragma unroll",
+       "for (int ai = 0; ai < KK / 2; ai++) {",
+       "    vec_as[ai] = _mm256_loadu_si256(reinterpret_cast<__m256i*>(a + i * KK / 2 + ai * 32));",
+       "}",
+       "#pragma unroll",
+       "for (int as = 0; as < KK / 8; as++) {",
+       "    vec_signs[as] = _mm256_loadu_si256(reinterpret_cast<__m256i*>(sign + i * KK / 8 + as * 32));"
+      ],
+      "total": 112
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 868,
+     "tokens": 12635,
+     "first": {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 260,
+      "end": 1127
+     },
+     "others": [
+      {
+       "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl2.h",
+       "start": 258,
+       "end": 1125
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#endif",
+       "    return 0;",
+       "}",
+       "static bool is_type_supported(enum ggml_type type) {",
+       "    if (type == GGML_TYPE_Q4_0 ||",
+       "        type == GGML_TYPE_TL2) {",
+       "        return true;",
+       "    } else {",
+       "        return false;",
+       "    }"
+      ],
+      "total": 868
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 271,
+     "tokens": 3027,
+     "first": {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+      "start": 1,
+      "end": 271
+     },
+     "others": [
+      {
+       "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl2.h",
+       "start": 1,
+       "end": 271
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+       "start": 1,
+       "end": 271
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "#if defined(GGML_BITNET_X86_TL2)",
+       "#include \"ggml-bitnet.h\"",
+       "#define GGML_BITNET_MAX_NODES 8192",
+       "static bool initialized = false;",
+       "static bitnet_tensor_extra * bitnet_tensor_extras = nullptr;",
+       "static size_t bitnet_tensor_extras_index = 0;",
+       "static void * aligned_malloc(size_t size) {",
+       "#if defined(_WIN32)",
+       "    return _aligned_malloc(size, 64);",
+       "#else"
+      ],
+      "total": 271
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 896,
+     "tokens": 5575,
+     "first": {
+      "name": "utils/convert-ms-to-gguf-bitnet.py",
+      "start": 47,
+      "end": 942
+     },
+     "others": [
+      {
+       "name": "utils/convert.py",
+       "start": 47,
+       "end": 943
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 89,
+     "tokens": 1065,
+     "first": {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+      "start": 333,
+      "end": 421
+     },
+     "others": [
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+       "start": 585,
+       "end": 673
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+       "start": 199,
+       "end": 287
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+       "start": 451,
+       "end": 539
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+       "start": 199,
+       "end": 287
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+       "start": 451,
+       "end": 539
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 41,
+     "tokens": 467,
+     "first": {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 418,
+      "end": 458
+     },
+     "others": [
+      {
+       "name": "include/bitnet-lut-kernels.h",
+       "start": 662,
+       "end": 702
+      },
+      {
+       "name": "include/bitnet-lut-kernels.h",
+       "start": 906,
+       "end": 946
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 416,
+       "end": 456
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 660,
+       "end": 700
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 904,
+       "end": 944
+      },
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 1148,
+       "end": 1188
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+       "start": 416,
+       "end": 456
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+       "start": 660,
+       "end": 700
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 105,
+     "tokens": 1325,
+     "first": {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+      "start": 199,
+      "end": 303
+     },
+     "others": [
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+       "start": 451,
+       "end": 555
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+       "start": 317,
+       "end": 421
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+       "start": 317,
+       "end": 421
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 184,
+     "tokens": 1621,
+     "first": {
+      "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+      "start": 1,
+      "end": 184
+     },
+     "others": [
+      {
+       "name": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl1.h",
+       "start": 1,
+       "end": 184
+      },
+      {
+       "name": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl1.h",
+       "start": 1,
+       "end": 184
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 253,
+     "tokens": 1565,
+     "first": {
+      "name": "utils/convert-ms-to-gguf-bitnet.py",
+      "start": 1503,
+      "end": 1755
+     },
+     "others": [
+      {
+       "name": "utils/convert.py",
+       "start": 1358,
+       "end": 1610
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 86,
+     "tokens": 1148,
+     "first": {
+      "name": "include/bitnet-lut-kernels.h",
+      "start": 103,
+      "end": 188
+     },
+     "others": [
+      {
+       "name": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+       "start": 101,
+       "end": 186
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 19.9,
+   "grade": "E",
+   "size": {
+    "lines": 21077,
+    "files": 49,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 40.3,
+     "adjusted": 37.1,
+     "lines": 8488,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "c-header",
+      "bash",
+      "cpp",
+      "perl"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 4.9
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.2,
+     "adjusted": 0.7,
+     "lines": 27,
+     "halfLife": 7.5,
+     "coverage": 52.7,
+     "weight": 0.527,
+     "score": 93.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 79.7,
+     "adjusted": 74.6,
+     "lines": 16805,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 35.5
+    }
+   ]
+  },
+  "complexity": {
+   "total": 2722,
+   "mean": 55.6,
+   "files": [
+    {
+     "path": "utils/convert-ms-to-gguf-bitnet.py",
+     "complexity": 338,
+     "lines": 1755,
+     "bytes": 72524
+    },
+    {
+     "path": "utils/convert.py",
+     "complexity": 333,
+     "lines": 1610,
+     "bytes": 65446
+    },
+    {
+     "path": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl2.h",
+     "complexity": 202,
+     "lines": 1454,
+     "bytes": 95735
+    },
+    {
+     "path": "include/bitnet-lut-kernels.h",
+     "complexity": 160,
+     "lines": 1171,
+     "bytes": 75116
+    },
+    {
+     "path": "preset_kernels/bitnet_b1_58-3B/bitnet-lut-kernels-tl2.h",
+     "complexity": 160,
+     "lines": 1167,
+     "bytes": 74991
+    },
+    {
+     "path": "preset_kernels/bitnet_b1_58-large/bitnet-lut-kernels-tl2.h",
+     "complexity": 160,
+     "lines": 1167,
+     "bytes": 74987
+    },
+    {
+     "path": "src/ggml-bitnet-mad.cpp",
+     "complexity": 155,
+     "lines": 1056,
+     "bytes": 42505
+    },
+    {
+     "path": "utils/convert-bitnet-embedding-to-gguf.py",
+     "complexity": 93,
+     "lines": 646,
+     "bytes": 27112
+    },
+    {
+     "path": "utils/codegen_tl2.py",
+     "complexity": 84,
+     "lines": 757,
+     "bytes": 42900
+    },
+    {
+     "path": "preset_kernels/Llama3-8B-1.58-100B-tokens/bitnet-lut-kernels-tl1.h",
+     "complexity": 80,
+     "lines": 771,
+     "bytes": 36959
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.24,
+   "findings": 27,
+   "files": 26,
+   "byCategory": [
+    {
+     "category": "unused-import",
+     "count": 27
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "json",
+     "line": 1,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "re",
+     "line": 3,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "sys",
+     "line": 4,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "Path",
+     "line": 5,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "Optional",
+     "line": 6,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "dataclass",
+     "line": 7,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "rearrange",
+     "line": 9,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_checkpoint.py",
+     "name": "save_file",
+     "line": 10,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_safetensors.py",
+     "name": "re",
+     "line": 1,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "gpu/convert_safetensors.py",
+     "name": "Path",
+     "line": 3,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

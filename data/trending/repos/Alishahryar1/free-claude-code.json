@@ -1,0 +1,1089 @@
+{
+ "name": "Alishahryar1/free-claude-code",
+ "url": "https://github.com/Alishahryar1/free-claude-code",
+ "appearances": [
+  {
+   "date": "2026-10-13",
+   "rank": 4,
+   "stars": 59417,
+   "starsToday": 626,
+   "headSha": "8e67526c62347b3e33bc2f57ebf0118f873d2533",
+   "sources": 914,
+   "lines": 255754,
+   "clones": 836,
+   "duplicatedLines": 11611,
+   "percentage": 4.54,
+   "codePercentage": 1.67,
+   "codeSources": 402,
+   "healthScore": 61.7,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-13T05:34:37.613Z",
+  "name": "Alishahryar1/free-claude-code",
+  "url": "https://github.com/Alishahryar1/free-claude-code",
+  "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+  "language": "Python",
+  "stars": 59417,
+  "starsToday": 626,
+  "defaultBranch": "main",
+  "headSha": "8e67526c62347b3e33bc2f57ebf0118f873d2533",
+  "durationMs": 1645,
+  "total": {
+   "sources": 914,
+   "lines": 255754,
+   "tokens": 1367104,
+   "clones": 836,
+   "duplicatedLines": 11611,
+   "duplicatedTokens": 58786,
+   "percentage": 4.54,
+   "percentageTokens": 4.3
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 849,
+    "lines": 239219,
+    "clones": 801,
+    "duplicatedLines": 11008,
+    "percentage": 4.6
+   },
+   {
+    "format": "powershell",
+    "sources": 7,
+    "lines": 3819,
+    "clones": 13,
+    "duplicatedLines": 283,
+    "percentage": 7.41
+   },
+   {
+    "format": "yaml",
+    "sources": 9,
+    "lines": 795,
+    "clones": 9,
+    "duplicatedLines": 84,
+    "percentage": 10.57
+   },
+   {
+    "format": "javascript",
+    "sources": 7,
+    "lines": 5040,
+    "clones": 5,
+    "duplicatedLines": 63,
+    "percentage": 1.25
+   },
+   {
+    "format": "bash",
+    "sources": 15,
+    "lines": 3034,
+    "clones": 4,
+    "duplicatedLines": 118,
+    "percentage": 3.89
+   },
+   {
+    "format": "markup",
+    "sources": 9,
+    "lines": 442,
+    "clones": 2,
+    "duplicatedLines": 31,
+    "percentage": 7.01
+   },
+   {
+    "format": "css",
+    "sources": 3,
+    "lines": 1660,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 0.42
+   },
+   {
+    "format": "txt",
+    "sources": 2,
+    "lines": 42,
+    "clones": 1,
+    "duplicatedLines": 17,
+    "percentage": 40.48
+   },
+   {
+    "format": "markdown",
+    "sources": 7,
+    "lines": 962,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "typescript",
+    "sources": 2,
+    "lines": 232,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 32,
+    "tokens": 110,
+    "first": {
+     "name": "tests/providers/test_atlascloud.py",
+     "start": 106,
+     "end": 137
+    },
+    "others": [
+     {
+      "name": "tests/providers/test_cheaperinference.py",
+      "start": 115,
+      "end": 146
+     },
+     {
+      "name": "tests/providers/test_experiential.py",
+      "start": 115,
+      "end": 146
+     },
+     {
+      "name": "tests/providers/test_featherless.py",
+      "start": 182,
+      "end": 213
+     },
+     {
+      "name": "tests/providers/test_llm7.py",
+      "start": 120,
+      "end": 151
+     },
+     {
+      "name": "tests/providers/test_opper.py",
+      "start": 111,
+      "end": 142
+     },
+     {
+      "name": "tests/providers/test_orcarouter.py",
+      "start": 105,
+      "end": 136
+     },
+     {
+      "name": "tests/providers/test_poolside.py",
+      "start": 98,
+      "end": 129
+     },
+     {
+      "name": "tests/providers/test_wandb.py",
+      "start": 82,
+      "end": 113
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "    atlascloud_provider: OpenAIChatProvider,",
+      ") -> None:",
+      "    request = _request(",
+      "        messages=[",
+      "            {\"role\": \"user\", \"content\": \"Inspect the file.\"},",
+      "            {",
+      "                \"role\": \"assistant\",",
+      "                \"content\": [",
+      "                    {\"type\": \"thinking\", \"thinking\": \"Read it first.\"},",
+      "                    {\"type\": \"text\", \"text\": \"I will inspect it.\"},"
+     ],
+     "total": 32
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 25,
+    "tokens": 102,
+    "first": {
+     "name": "tests/providers/test_atlascloud.py",
+     "start": 40,
+     "end": 64
+    },
+    "others": [
+     {
+      "name": "tests/providers/test_cheaperinference.py",
+      "start": 36,
+      "end": 60
+     },
+     {
+      "name": "tests/providers/test_experiential.py",
+      "start": 36,
+      "end": 60
+     },
+     {
+      "name": "tests/providers/test_lightning.py",
+      "start": 39,
+      "end": 63
+     },
+     {
+      "name": "tests/providers/test_llm7.py",
+      "start": 40,
+      "end": 64
+     },
+     {
+      "name": "tests/providers/test_opper.py",
+      "start": 36,
+      "end": 60
+     },
+     {
+      "name": "tests/providers/test_orcarouter.py",
+      "start": 39,
+      "end": 63
+     },
+     {
+      "name": "tests/providers/test_xkiro.py",
+      "start": 64,
+      "end": 88
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "        admission=immediate_admission(provider_name=\"atlascloud\", max_attempts=1),",
+      "    )",
+      "",
+      "",
+      "def _request(**overrides: JsonValue) -> MessagesRequest:",
+      "    payload: JsonObject = {",
+      "        \"model\": _MODEL,",
+      "        \"messages\": [{\"role\": \"user\", \"content\": \"Inspect the file.\"}],",
+      "        \"tools\": [",
+      "            {"
+     ],
+     "total": 25
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 91,
+    "tokens": 606,
+    "first": {
+     "name": "src/free_claude_code/messaging/rendering/discord_markdown.py",
+     "start": 194,
+     "end": 284
+    },
+    "others": [
+     {
+      "name": "src/free_claude_code/messaging/rendering/telegram_markdown.py",
+      "start": 207,
+      "end": 297
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "elif t == \"list_item_close\":",
+      "    out.append(\"\\n\")",
+      "elif t == \"blockquote_open\":",
+      "    blockquote_level += 1",
+      "elif t == \"blockquote_close\":",
+      "    blockquote_level = max(0, blockquote_level - 1)",
+      "    out.append(\"\\n\")",
+      "elif t == \"table_open\":",
+      "    if pending_prefix:",
+      "        out.append(apply_blockquote(pending_prefix.rstrip()))"
+     ],
+     "total": 91
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 64,
+    "first": {
+     "name": "src/free_claude_code/providers/anthropic/provider.py",
+     "start": 260,
+     "end": 268
+    },
+    "others": [
+     {
+      "name": "src/free_claude_code/providers/base.py",
+      "start": 66,
+      "end": 74
+     },
+     {
+      "name": "src/free_claude_code/providers/base.py",
+      "start": 81,
+      "end": 89
+     },
+     {
+      "name": "src/free_claude_code/providers/custom.py",
+      "start": 216,
+      "end": 224
+     },
+     {
+      "name": "src/free_claude_code/providers/custom.py",
+      "start": 268,
+      "end": 276
+     },
+     {
+      "name": "src/free_claude_code/providers/github_copilot/provider.py",
+      "start": 139,
+      "end": 147
+     },
+     {
+      "name": "tests/providers/test_model_discovery.py",
+      "start": 383,
+      "end": 391
+     },
+     {
+      "name": "tests/runtime/test_application_runtime.py",
+      "start": 80,
+      "end": 88
+     },
+     {
+      "name": "tests/runtime/test_application_runtime.py",
+      "start": 95,
+      "end": 103
+     }
+    ],
+    "copies": 9,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 25,
+    "tokens": 91,
+    "first": {
+     "name": "tests/providers/test_atlascloud.py",
+     "start": 137,
+     "end": 161
+    },
+    "others": [
+     {
+      "name": "tests/providers/test_cheaperinference.py",
+      "start": 146,
+      "end": 170
+     },
+     {
+      "name": "tests/providers/test_experiential.py",
+      "start": 146,
+      "end": 170
+     },
+     {
+      "name": "tests/providers/test_featherless.py",
+      "start": 213,
+      "end": 237
+     },
+     {
+      "name": "tests/providers/test_llm7.py",
+      "start": 151,
+      "end": 175
+     },
+     {
+      "name": "tests/providers/test_opper.py",
+      "start": 142,
+      "end": 166
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "powershell",
+    "lines": 83,
+    "tokens": 443,
+    "first": {
+     "name": "scripts/install-muse.ps1",
+     "start": 183,
+     "end": 265
+    },
+    "others": [
+     {
+      "name": "scripts/uninstall-muse.ps1",
+      "start": 62,
+      "end": 144
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 12,
+    "tokens": 75,
+    "first": {
+     "name": "tests/api/model_fallback_support.py",
+     "start": 208,
+     "end": 219
+    },
+    "others": [
+     {
+      "name": "tests/api/test_api_handlers.py",
+      "start": 58,
+      "end": 69
+     },
+     {
+      "name": "tests/application/test_execution.py",
+      "start": 178,
+      "end": 189
+     },
+     {
+      "name": "tests/application/test_execution.py",
+      "start": 246,
+      "end": 257
+     },
+     {
+      "name": "tests/application/test_execution.py",
+      "start": 296,
+      "end": 307
+     },
+     {
+      "name": "tests/application/test_execution.py",
+      "start": 923,
+      "end": 934
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 26,
+    "tokens": 186,
+    "first": {
+     "name": "tests/providers/test_cheaperinference.py",
+     "start": 77,
+     "end": 102
+    },
+    "others": [
+     {
+      "name": "tests/providers/test_experiential.py",
+      "start": 77,
+      "end": 102
+     },
+     {
+      "name": "tests/providers/test_opper.py",
+      "start": 77,
+      "end": 100
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 53,
+    "first": {
+     "name": "tests/providers/test_atlascloud.py",
+     "start": 242,
+     "end": 248
+    },
+    "others": [
+     {
+      "name": "tests/providers/test_chutes.py",
+      "start": 233,
+      "end": 239
+     },
+     {
+      "name": "tests/providers/test_llm7.py",
+      "start": 302,
+      "end": 308
+     },
+     {
+      "name": "tests/providers/test_nebius.py",
+      "start": 195,
+      "end": 206
+     },
+     {
+      "name": "tests/providers/test_poolside.py",
+      "start": 179,
+      "end": 187
+     },
+     {
+      "name": "tests/providers/test_qwencloud.py",
+      "start": 165,
+      "end": 173
+     },
+     {
+      "name": "tests/providers/test_qwencloud_coding.py",
+      "start": 195,
+      "end": 203
+     },
+     {
+      "name": "tests/providers/test_xai.py",
+      "start": 210,
+      "end": 218
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 63,
+    "tokens": 343,
+    "first": {
+     "name": "src/free_claude_code/messaging/rendering/discord_markdown.py",
+     "start": 128,
+     "end": 190
+    },
+    "others": [
+     {
+      "name": "src/free_claude_code/messaging/rendering/telegram_markdown.py",
+      "start": 140,
+      "end": 202
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 402,
+   "lines": 88722,
+   "tokens": 462392,
+   "clones": 94,
+   "duplicatedLines": 1486,
+   "duplicatedTokens": 8043,
+   "percentage": 1.67,
+   "percentageTokens": 1.74,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 375,
+     "lines": 76544,
+     "clones": 72,
+     "duplicatedLines": 1022,
+     "percentage": 1.34
+    },
+    {
+     "format": "powershell",
+     "sources": 5,
+     "lines": 3770,
+     "clones": 13,
+     "duplicatedLines": 283,
+     "percentage": 7.51
+    },
+    {
+     "format": "javascript",
+     "sources": 7,
+     "lines": 5040,
+     "clones": 5,
+     "duplicatedLines": 63,
+     "percentage": 1.25
+    },
+    {
+     "format": "bash",
+     "sources": 13,
+     "lines": 3007,
+     "clones": 4,
+     "duplicatedLines": 118,
+     "percentage": 3.92
+    },
+    {
+     "format": "typescript",
+     "sources": 1,
+     "lines": 193,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 91,
+     "tokens": 606,
+     "first": {
+      "name": "src/free_claude_code/messaging/rendering/discord_markdown.py",
+      "start": 194,
+      "end": 284
+     },
+     "others": [
+      {
+       "name": "src/free_claude_code/messaging/rendering/telegram_markdown.py",
+       "start": 207,
+       "end": 297
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "elif t == \"list_item_close\":",
+       "    out.append(\"\\n\")",
+       "elif t == \"blockquote_open\":",
+       "    blockquote_level += 1",
+       "elif t == \"blockquote_close\":",
+       "    blockquote_level = max(0, blockquote_level - 1)",
+       "    out.append(\"\\n\")",
+       "elif t == \"table_open\":",
+       "    if pending_prefix:",
+       "        out.append(apply_blockquote(pending_prefix.rstrip()))"
+      ],
+      "total": 91
+     },
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 83,
+     "tokens": 443,
+     "first": {
+      "name": "scripts/install-muse.ps1",
+      "start": 183,
+      "end": 265
+     },
+     "others": [
+      {
+       "name": "scripts/uninstall-muse.ps1",
+       "start": 62,
+       "end": 144
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "function Read-MuseOwnershipRecord {",
+       "    param([Parameter(Mandatory = $true)][string] $RecordPath)",
+       "",
+       "    if (-not (Test-Path -LiteralPath $RecordPath -PathType Leaf)) {",
+       "        return $null",
+       "    }",
+       "",
+       "    try {"
+      ],
+      "total": 83
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 63,
+     "tokens": 343,
+     "first": {
+      "name": "src/free_claude_code/messaging/rendering/discord_markdown.py",
+      "start": 128,
+      "end": 190
+     },
+     "others": [
+      {
+       "name": "src/free_claude_code/messaging/rendering/telegram_markdown.py",
+       "start": 140,
+       "end": 202
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "            out.append(escape_discord(tok.content or \"\"))",
+       "        i += 1",
+       "    return \"\".join(out)",
+       "",
+       "out: list[str] = []",
+       "list_stack: list[dict] = []",
+       "pending_prefix: str | None = None",
+       "blockquote_level = 0",
+       "in_heading = False",
+       ""
+      ],
+      "total": 63
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 12,
+     "tokens": 58,
+     "first": {
+      "name": "src/free_claude_code/api/admin_static/admin.js",
+      "start": 2004,
+      "end": 2015
+     },
+     "others": [
+      {
+       "name": "src/free_claude_code/api/admin_static/admin.js",
+       "start": 2103,
+       "end": 2114
+      },
+      {
+       "name": "src/free_claude_code/api/admin_static/admin.js",
+       "start": 2205,
+       "end": 2216
+      },
+      {
+       "name": "src/free_claude_code/api/admin_static/admin.js",
+       "start": 2302,
+       "end": 2313
+      },
+      {
+       "name": "src/free_claude_code/api/admin_static/admin.js",
+       "start": 2401,
+       "end": 2412
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 76,
+     "first": {
+      "name": "src/free_claude_code/providers/anthropic/provider.py",
+      "start": 257,
+      "end": 268
+     },
+     "others": [
+      {
+       "name": "src/free_claude_code/providers/base.py",
+       "start": 63,
+       "end": 74
+      },
+      {
+       "name": "src/free_claude_code/providers/custom.py",
+       "start": 213,
+       "end": 224
+      },
+      {
+       "name": "src/free_claude_code/providers/github_copilot/provider.py",
+       "start": 136,
+       "end": 147
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 77,
+     "first": {
+      "name": "src/free_claude_code/providers/github_copilot/provider.py",
+      "start": 134,
+      "end": 147
+     },
+     "others": [
+      {
+       "name": "src/free_claude_code/providers/openai_api/provider.py",
+       "start": 113,
+       "end": 126
+      },
+      {
+       "name": "src/free_claude_code/providers/openai_codex/provider.py",
+       "start": 162,
+       "end": 175
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 76,
+     "first": {
+      "name": "src/free_claude_code/providers/anthropic/provider.py",
+      "start": 285,
+      "end": 296
+     },
+     "others": [
+      {
+       "name": "src/free_claude_code/providers/base.py",
+       "start": 78,
+       "end": 89
+      },
+      {
+       "name": "src/free_claude_code/providers/custom.py",
+       "start": 265,
+       "end": 276
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 27,
+     "tokens": 142,
+     "first": {
+      "name": "scripts/install.sh",
+      "start": 462,
+      "end": 488
+     },
+     "others": [
+      {
+       "name": "scripts/uninstall.sh",
+       "start": 95,
+       "end": 121
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 21,
+     "tokens": 131,
+     "first": {
+      "name": "src/free_claude_code/messaging/rendering/discord_markdown.py",
+      "start": 91,
+      "end": 111
+     },
+     "others": [
+      {
+       "name": "src/free_claude_code/messaging/rendering/telegram_markdown.py",
+       "start": 97,
+       "end": 118
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 38,
+     "tokens": 130,
+     "first": {
+      "name": "scripts/ci.sh",
+      "start": 29,
+      "end": 66
+     },
+     "others": [
+      {
+       "name": "scripts/uninstall.sh",
+       "start": 22,
+       "end": 59
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 61.7,
+   "grade": "C",
+   "size": {
+    "lines": 251475,
+    "files": 878,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.6,
+     "adjusted": 4.6,
+     "lines": 11472,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "javascript",
+      "powershell",
+      "bash",
+      "typescript",
+      "perl",
+      "sql"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 69
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 3.7,
+     "adjusted": 3.7,
+     "lines": 9001,
+     "halfLife": 7.5,
+     "coverage": 97.4,
+     "weight": 0.974,
+     "score": 71.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 53.4,
+     "adjusted": 53.1,
+     "lines": 134250,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 47.9
+    }
+   ]
+  },
+  "complexity": {
+   "total": 32280,
+   "mean": 36.8,
+   "files": [
+    {
+     "path": "src/free_claude_code/api/admin_static/admin.js",
+     "complexity": 915,
+     "lines": 2618,
+     "bytes": 113192
+    },
+    {
+     "path": "smoke/installers/test_installers.py",
+     "complexity": 565,
+     "lines": 5680,
+     "bytes": 204409
+    },
+    {
+     "path": "src/free_claude_code/api/admin_static/code_sessions.js",
+     "complexity": 532,
+     "lines": 1697,
+     "bytes": 55923
+    },
+    {
+     "path": "scripts/install.sh",
+     "complexity": 442,
+     "lines": 1778,
+     "bytes": 60200
+    },
+    {
+     "path": "scripts/install.ps1",
+     "complexity": 367,
+     "lines": 1996,
+     "bytes": 71550
+    },
+    {
+     "path": "src/free_claude_code/application/code_sessions/service.py",
+     "complexity": 291,
+     "lines": 1194,
+     "bytes": 47148
+    },
+    {
+     "path": "tests/providers/test_streaming_errors.py",
+     "complexity": 287,
+     "lines": 3213,
+     "bytes": 117474
+    },
+    {
+     "path": "src/free_claude_code/core/openai_responses/tool_adaptation.py",
+     "complexity": 272,
+     "lines": 764,
+     "bytes": 31197
+    },
+    {
+     "path": "src/free_claude_code/providers/openai_chat/transport.py",
+     "complexity": 263,
+     "lines": 1711,
+     "bytes": 67032
+    },
+    {
+     "path": "tests/application/test_code_sessions.py",
+     "complexity": 248,
+     "lines": 2510,
+     "bytes": 92915
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 3.68,
+   "findings": 27,
+   "files": 920,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 20
+    },
+    {
+     "category": "unused-export",
+     "count": 6
+    },
+    {
+     "category": "unused-symbol",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/free_claude_code/api/admin_static/admin.js",
+     "name": "",
+     "line": 1,
+     "lines": 2618
+    },
+    {
+     "category": "unused-file",
+     "path": "src/free_claude_code/api/admin_static/code_sessions.js",
+     "name": "",
+     "line": 1,
+     "lines": 1697
+    },
+    {
+     "category": "unused-file",
+     "path": "smoke/lib/e2e.py",
+     "name": "",
+     "line": 1,
+     "lines": 781
+    },
+    {
+     "category": "unused-file",
+     "path": "smoke/lib/claude_cli_matrix.py",
+     "name": "",
+     "line": 1,
+     "lines": 763
+    },
+    {
+     "category": "unused-file",
+     "path": "smoke/capabilities.py",
+     "name": "",
+     "line": 1,
+     "lines": 744
+    },
+    {
+     "category": "unused-file",
+     "path": "smoke/features.py",
+     "name": "",
+     "line": 1,
+     "lines": 719
+    },
+    {
+     "category": "unused-file",
+     "path": "smoke/lib/dsh_provider.py",
+     "name": "",
+     "line": 1,
+     "lines": 293
+    },
+    {
+     "category": "unused-file",
+     "path": "src/free_claude_code/api/admin_static/api_key_editor.js",
+     "name": "",
+     "line": 1,
+     "lines": 216
+    },
+    {
+     "category": "unused-file",
+     "path": "src/free_claude_code/api/admin_static/session_ui.js",
+     "name": "",
+     "line": 1,
+     "lines": 202
+    },
+    {
+     "category": "unused-file",
+     "path": "src/free_claude_code/api/admin_static/model_combobox.js",
+     "name": "",
+     "line": 1,
+     "lines": 196
+    }
+   ]
+  }
+ }
+}
