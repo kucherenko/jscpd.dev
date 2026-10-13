@@ -125,7 +125,7 @@ Here is part of the report for fs-extra-rs-plain, the port made without the skil
   util/stat.js             7 / 7   0.90         lib/util/stat.js
 ```
 
-Look at the counterpart column. `move.js` pairs with `lib/move/move.js` in the port at a similarity of 1.00, the same function in the same language. That is not a port. It is the original.
+Look at the counterpart column. `move.js` pairs with `lib/move/move.js` in the port at a similarity of 1.00, the same function in the same language. That is not a port. It is the original. The [full HTML report](/examples/compare-fs-extra-rs-plain.html){target="_blank"} marks these pairs as ported too, and only the file in the counterpart column gives them away.
 
 And part of the report for fs-extra-rs:
 
@@ -139,7 +139,9 @@ And part of the report for fs-extra-rs:
   util/stat.js             7 / 7    0.81        src/util_stat.rs
 ```
 
-Same files, counterparts in `.rs`, similarities around 0.8, which is what a faithful port into another language looks like.
+Same files, counterparts in `.rs`, similarities around 0.8, which is what a faithful port into another language looks like. Here is [its full HTML report](/examples/compare-fs-extra-rs.html){target="_blank"}.
+
+Both reports come from jscpd 5.4.1, with the ports' tests, benchmarks and build output left out of the target through `--ignore`.
 
 Sorting all 51 functions by where their counterpart lives:
 
