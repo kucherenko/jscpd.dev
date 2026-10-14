@@ -17,38 +17,54 @@
    "codeSources": 48,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-10-14",
+   "rank": 4,
+   "stars": 34675,
+   "starsToday": 190,
+   "headSha": "13e4063a1cf913f5606d57d42ab83a86f5001e04",
+   "sources": 144,
+   "lines": 35281,
+   "clones": 170,
+   "duplicatedLines": 2307,
+   "percentage": 6.54,
+   "codePercentage": 4.16,
+   "codeSources": 50,
+   "healthScore": 61.7,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-09-11",
-  "generatedAt": "2026-09-11T05:27:19.651Z",
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T05:28:39.719Z",
   "name": "vercel-labs/skills",
   "url": "https://github.com/vercel-labs/skills",
   "description": "The open agent skills tool - npx skills",
   "language": "TypeScript",
-  "stars": 31253,
-  "starsToday": 122,
+  "stars": 34675,
+  "starsToday": 190,
   "defaultBranch": "main",
-  "headSha": "80feb48868972d518436f26711509bc78595b5cb",
-  "durationMs": 51,
+  "headSha": "13e4063a1cf913f5606d57d42ab83a86f5001e04",
+  "durationMs": 1145,
   "total": {
-   "sources": 127,
-   "lines": 30660,
-   "tokens": 176092,
-   "clones": 156,
-   "duplicatedLines": 2186,
-   "duplicatedTokens": 12391,
-   "percentage": 7.13,
-   "percentageTokens": 7.04
+   "sources": 144,
+   "lines": 35281,
+   "tokens": 207717,
+   "clones": 170,
+   "duplicatedLines": 2307,
+   "duplicatedTokens": 13357,
+   "percentage": 6.54,
+   "percentageTokens": 6.43
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 99,
-    "lines": 28044,
-    "clones": 151,
-    "duplicatedLines": 2123,
-    "percentage": 7.57
+    "sources": 111,
+    "lines": 32402,
+    "clones": 165,
+    "duplicatedLines": 2244,
+    "percentage": 6.93
    },
    {
     "format": "txt",
@@ -60,16 +76,16 @@
    },
    {
     "format": "yaml",
-    "sources": 8,
-    "lines": 431,
+    "sources": 9,
+    "lines": 446,
     "clones": 2,
     "duplicatedLines": 29,
-    "percentage": 6.73
+    "percentage": 6.5
    },
    {
     "format": "markdown",
-    "sources": 3,
-    "lines": 889,
+    "sources": 7,
+    "lines": 1087,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -77,7 +93,7 @@
    {
     "format": "bash",
     "sources": 11,
-    "lines": 764,
+    "lines": 820,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -93,7 +109,7 @@
    {
     "format": "perl",
     "sources": 1,
-    "lines": 174,
+    "lines": 168,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -139,6 +155,40 @@
       "    intro: noop,"
      ],
      "total": 90
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 60,
+    "tokens": 305,
+    "first": {
+     "name": "tests/direct-download-add.test.ts",
+     "start": 7,
+     "end": 66
+    },
+    "others": [
+     {
+      "name": "tests/remove-telemetry-source.test.ts",
+      "start": 4,
+      "end": 63
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import { gzipSync } from 'node:zlib';",
+      "",
+      "vi.mock('@clack/prompts', () => {",
+      "  const noop = () => {};",
+      "  return {",
+      "    intro: noop,",
+      "    outro: noop,",
+      "    note: noop,",
+      "    confirm: vi.fn().mockResolvedValue(true),",
+      "    cancel: noop,"
+     ],
+     "total": 60
     },
     "kind": "tests"
    },
@@ -193,83 +243,25 @@
      }
     ],
     "copies": 2,
-    "excerpt": {
-     "lines": [
-      "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in t…",
-      "",
-      "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-      "",
-      "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR…",
-      "",
-      "",
-      "================================================================================",
-      "Package: picocolors@1.1.1"
-     ],
-     "total": 9
-    },
-    "excerptSecond": {
-     "lines": [
-      "Permission is hereby granted, free of charge, to any person obtaining a copy",
-      "of this software and associated documentation files (the \"Software\"), to deal",
-      "in the Software without restriction, including without limitation the rights",
-      "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
-      "copies of the Software, and to permit persons to whom the Software is",
-      "furnished to do so, subject to the following conditions:",
-      "",
-      "The above copyright notice and this permission notice shall be included in all",
-      "copies or substantial portions of the Software.",
-      ""
-     ],
-     "total": 21
-    },
     "kind": "docs"
    },
    {
     "format": "typescript",
-    "lines": 50,
-    "tokens": 237,
+    "lines": 52,
+    "tokens": 257,
     "first": {
      "name": "src/installer.ts",
-     "start": 623,
-     "end": 672
+     "start": 668,
+     "end": 719
     },
     "others": [
      {
       "name": "src/installer.ts",
-      "start": 764,
-      "end": 813
+      "start": 809,
+      "end": 860
      }
     ],
     "copies": 2,
-    "kind": "code"
-   },
-   {
-    "format": "typescript",
-    "lines": 8,
-    "tokens": 69,
-    "first": {
-     "name": "src/installer.ts",
-     "start": 267,
-     "end": 274
-    },
-    "others": [
-     {
-      "name": "src/installer.ts",
-      "start": 621,
-      "end": 628
-     },
-     {
-      "name": "src/installer.ts",
-      "start": 762,
-      "end": 769
-     },
-     {
-      "name": "src/installer.ts",
-      "start": 908,
-      "end": 915
-     }
-    ],
-    "copies": 4,
     "kind": "code"
    },
    {
@@ -312,18 +304,18 @@
    },
    {
     "format": "typescript",
-    "lines": 25,
-    "tokens": 190,
+    "lines": 31,
+    "tokens": 188,
     "first": {
      "name": "src/add.ts",
-     "start": 688,
-     "end": 712
+     "start": 1090,
+     "end": 1120
     },
     "others": [
      {
-      "name": "src/sync.ts",
-      "start": 231,
-      "end": 252
+      "name": "src/add.ts",
+      "start": 2428,
+      "end": 2459
      }
     ],
     "copies": 2,
@@ -331,18 +323,18 @@
    },
    {
     "format": "typescript",
-    "lines": 31,
-    "tokens": 188,
+    "lines": 23,
+    "tokens": 179,
     "first": {
      "name": "src/add.ts",
-     "start": 1017,
-     "end": 1047
+     "start": 762,
+     "end": 784
     },
     "others": [
      {
-      "name": "src/add.ts",
-      "start": 2025,
-      "end": 2056
+      "name": "src/sync.ts",
+      "start": 641,
+      "end": 660
      }
     ],
     "copies": 2,
@@ -361,7 +353,7 @@
      {
       "name": "tests/installer-symlink.test.ts",
       "start": 238,
-      "end": 261
+      "end": 260
      }
     ],
     "copies": 2,
@@ -369,27 +361,27 @@
    }
   ],
   "code": {
-   "sources": 48,
-   "lines": 15553,
-   "tokens": 80410,
-   "clones": 60,
-   "duplicatedLines": 887,
-   "duplicatedTokens": 4820,
-   "percentage": 5.7,
-   "percentageTokens": 5.99,
+   "sources": 50,
+   "lines": 17342,
+   "tokens": 91424,
+   "clones": 49,
+   "duplicatedLines": 722,
+   "duplicatedTokens": 3963,
+   "percentage": 4.16,
+   "percentageTokens": 4.33,
    "formats": [
     {
      "format": "typescript",
-     "sources": 38,
-     "lines": 14735,
-     "clones": 60,
-     "duplicatedLines": 887,
-     "percentage": 6.02
+     "sources": 40,
+     "lines": 16480,
+     "clones": 49,
+     "duplicatedLines": 722,
+     "percentage": 4.38
     },
     {
      "format": "bash",
      "sources": 9,
-     "lines": 644,
+     "lines": 694,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -397,7 +389,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 174,
+     "lines": 168,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -406,79 +398,22 @@
    "topClones": [
     {
      "format": "typescript",
-     "lines": 50,
-     "tokens": 237,
+     "lines": 52,
+     "tokens": 257,
      "first": {
       "name": "src/installer.ts",
-      "start": 623,
-      "end": 672
+      "start": 668,
+      "end": 719
      },
      "others": [
       {
        "name": "src/installer.ts",
-       "start": 764,
-       "end": 813
+       "start": 809,
+       "end": 860
       }
      ],
      "copies": 2,
      "excerpt": {
-      "lines": [
-       "  options: { global?: boolean; cwd?: string; mode?: InstallMode; eveSubagent?: string } = {}",
-       "): Promise<InstallResult> {",
-       "  const agent = agents[agentType];",
-       "  const isGlobal = options.global ?? false;",
-       "  const cwd = options.cwd || process.cwd();",
-       "  const installMode = options.mode ?? 'symlink';",
-       "  const eveSubagent = options.eveSubagent;",
-       "",
-       "  // Check if agent supports global installation",
-       "  if (isGlobal && agent.globalSkillsDir === undefined) {"
-      ],
-      "total": 50
-     },
-     "kind": "code"
-    },
-    {
-     "format": "typescript",
-     "lines": 8,
-     "tokens": 69,
-     "first": {
-      "name": "src/installer.ts",
-      "start": 267,
-      "end": 274
-     },
-     "others": [
-      {
-       "name": "src/installer.ts",
-       "start": 621,
-       "end": 628
-      },
-      {
-       "name": "src/installer.ts",
-       "start": 762,
-       "end": 769
-      },
-      {
-       "name": "src/installer.ts",
-       "start": 908,
-       "end": 915
-      }
-     ],
-     "copies": 4,
-     "excerpt": {
-      "lines": [
-       "  skill: Skill,",
-       "  agentType: AgentType,",
-       "  options: { global?: boolean; cwd?: string; mode?: InstallMode; eveSubagent?: string } = {}",
-       "): Promise<InstallResult> {",
-       "  const agent = agents[agentType];",
-       "  const isGlobal = options.global ?? false;",
-       "  const cwd = options.cwd || process.cwd();",
-       "  const eveSubagent = options.eveSubagent;"
-      ],
-      "total": 8
-     },
-     "excerptSecond": {
       "lines": [
        "  skill: RemoteSkill,",
        "  agentType: AgentType,",
@@ -487,26 +422,62 @@
        "  const agent = agents[agentType];",
        "  const isGlobal = options.global ?? false;",
        "  const cwd = options.cwd || process.cwd();",
-       "  const installMode = options.mode ?? 'symlink';"
+       "  const installMode = options.mode ?? 'symlink';",
+       "  const eveSubagent = options.eveSubagent;",
+       ""
       ],
-      "total": 8
+      "total": 52
      },
      "kind": "code"
     },
     {
      "format": "typescript",
-     "lines": 25,
-     "tokens": 190,
+     "lines": 31,
+     "tokens": 188,
      "first": {
       "name": "src/add.ts",
-      "start": 688,
-      "end": 712
+      "start": 1090,
+      "end": 1120
+     },
+     "others": [
+      {
+       "name": "src/add.ts",
+       "start": 2428,
+       "end": 2459
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "const title = pc.green(`Installed ${skillCount} skill${skillCount !== 1 ? 's' : ''}`);",
+       "p.note(resultLines.join('\\n'), title);",
+       "",
+       "// Show symlink failure warning (only for symlink mode)",
+       "if (symlinkFailures.length > 0) {",
+       "  p.log.warn(pc.yellow(`Symlinks failed for: ${formatList(copiedAgents)}`));",
+       "  p.log.message(",
+       "    pc.dim("
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 23,
+     "tokens": 179,
+     "first": {
+      "name": "src/add.ts",
+      "start": 762,
+      "end": 784
      },
      "others": [
       {
        "name": "src/sync.ts",
-       "start": 231,
-       "end": 252
+       "start": 641,
+       "end": 660
       }
      ],
      "copies": 2,
@@ -523,11 +494,11 @@
        "",
        "  if (invalidAgents.length > 0) {"
       ],
-      "total": 25
+      "total": 23
      },
      "excerptSecond": {
       "lines": [
-       "const visibleUniversalAgents = getVisibleUniversalAgents();",
+       "const universalAgents = getUniversalAgents();",
        "",
        "if (options.agent?.includes('*')) {",
        "  targetAgents = validAgents as AgentType[];",
@@ -538,94 +509,8 @@
        "    p.log.error(`Invalid agents: ${invalidAgents.join(', ')}`);",
        "    p.log.info(`Valid agents: ${validAgents.join(', ')}`);"
       ],
-      "total": 22
+      "total": 20
      },
-     "kind": "code"
-    },
-    {
-     "format": "typescript",
-     "lines": 31,
-     "tokens": 188,
-     "first": {
-      "name": "src/add.ts",
-      "start": 1017,
-      "end": 1047
-     },
-     "others": [
-      {
-       "name": "src/add.ts",
-       "start": 2025,
-       "end": 2056
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "typescript",
-     "lines": 12,
-     "tokens": 83,
-     "first": {
-      "name": "src/add.ts",
-      "start": 2181,
-      "end": 2192
-     },
-     "others": [
-      {
-       "name": "src/remove.ts",
-       "start": 424,
-       "end": 435
-      },
-      {
-       "name": "src/sync.ts",
-       "start": 463,
-       "end": 474
-      }
-     ],
-     "copies": 3,
-     "kind": "code"
-    },
-    {
-     "format": "typescript",
-     "lines": 26,
-     "tokens": 83,
-     "first": {
-      "name": "src/installer.ts",
-      "start": 397,
-      "end": 422
-     },
-     "others": [
-      {
-       "name": "src/installer.ts",
-       "start": 727,
-       "end": 752
-      },
-      {
-       "name": "src/installer.ts",
-       "start": 875,
-       "end": 900
-      }
-     ],
-     "copies": 3,
-     "kind": "code"
-    },
-    {
-     "format": "typescript",
-     "lines": 20,
-     "tokens": 140,
-     "first": {
-      "name": "src/add.ts",
-      "start": 729,
-      "end": 748
-     },
-     "others": [
-      {
-       "name": "src/add.ts",
-       "start": 1476,
-       "end": 1495
-      }
-     ],
-     "copies": 2,
      "kind": "code"
     },
     {
@@ -634,33 +519,14 @@
      "tokens": 132,
      "first": {
       "name": "src/installer.ts",
-      "start": 290,
-      "end": 328
+      "start": 324,
+      "end": 362
      },
      "others": [
       {
        "name": "src/installer.ts",
-       "start": 642,
-       "end": 676
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "typescript",
-     "lines": 37,
-     "tokens": 132,
-     "first": {
-      "name": "src/installer.ts",
-      "start": 361,
-      "end": 397
-     },
-     "others": [
-      {
-       "name": "src/installer.ts",
-       "start": 1010,
-       "end": 1042
+       "start": 689,
+       "end": 723
       }
      ],
      "copies": 2,
@@ -672,14 +538,114 @@
      "tokens": 130,
      "first": {
       "name": "src/add.ts",
-      "start": 687,
-      "end": 699
+      "start": 761,
+      "end": 773
      },
      "others": [
       {
        "name": "src/add.ts",
-       "start": 1404,
-       "end": 1416
+       "start": 1807,
+       "end": 1819
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 130,
+     "first": {
+      "name": "src/add.ts",
+      "start": 1071,
+      "end": 1086
+     },
+     "others": [
+      {
+       "name": "src/add.ts",
+       "start": 2386,
+       "end": 2401
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 17,
+     "tokens": 128,
+     "first": {
+      "name": "src/add.ts",
+      "start": 806,
+      "end": 822
+     },
+     "others": [
+      {
+       "name": "src/add.ts",
+       "start": 1885,
+       "end": 1901
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 42,
+     "tokens": 115,
+     "first": {
+      "name": "src/installer.ts",
+      "start": 913,
+      "end": 954
+     },
+     "others": [
+      {
+       "name": "src/installer.ts",
+       "start": 1085,
+       "end": 1119
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 7,
+     "tokens": 54,
+     "first": {
+      "name": "src/list.ts",
+      "start": 212,
+      "end": 218
+     },
+     "others": [
+      {
+       "name": "src/list.ts",
+       "start": 231,
+       "end": 237
+      },
+      {
+       "name": "src/list.ts",
+       "start": 247,
+       "end": 253
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 23,
+     "tokens": 107,
+     "first": {
+      "name": "src/add.ts",
+      "start": 830,
+      "end": 852
+     },
+     "others": [
+      {
+       "name": "src/add.ts",
+       "start": 1957,
+       "end": 1979
       }
      ],
      "copies": 2,
@@ -692,7 +658,210 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T05:56:49.801Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 61.7,
+   "grade": "C",
+   "size": {
+    "lines": 33264,
+    "files": 121,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 6.7,
+     "adjusted": 6.6,
+     "lines": 2244,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 58.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.6,
+     "adjusted": 0.7,
+     "lines": 194,
+     "halfLife": 7.5,
+     "coverage": 97.5,
+     "weight": 0.975,
+     "score": 93.4
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 62.5,
+     "adjusted": 60.2,
+     "lines": 20795,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 43.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 5325,
+   "mean": 44,
+   "files": [
+    {
+     "path": "src/add.ts",
+     "complexity": 628,
+     "lines": 2647,
+     "bytes": 90771
+    },
+    {
+     "path": "src/prompts/search-multiselect.ts",
+     "complexity": 260,
+     "lines": 701,
+     "bytes": 25261
+    },
+    {
+     "path": "src/sync.ts",
+     "complexity": 250,
+     "lines": 927,
+     "bytes": 31843
+    },
+    {
+     "path": "src/update.ts",
+     "complexity": 249,
+     "lines": 1086,
+     "bytes": 35424
+    },
+    {
+     "path": "src/installer.ts",
+     "complexity": 237,
+     "lines": 1367,
+     "bytes": 43782
+    },
+    {
+     "path": "src/providers/wellknown.ts",
+     "complexity": 158,
+     "lines": 822,
+     "bytes": 27217
+    },
+    {
+     "path": "src/agents.ts",
+     "complexity": 144,
+     "lines": 916,
+     "bytes": 27219
+    },
+    {
+     "path": "src/use.ts",
+     "complexity": 140,
+     "lines": 659,
+     "bytes": 20016
+    },
+    {
+     "path": "src/source-parser.ts",
+     "complexity": 138,
+     "lines": 598,
+     "bytes": 18829
+    },
+    {
+     "path": "src/blob.ts",
+     "complexity": 134,
+     "lines": 702,
+     "bytes": 23846
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.6,
+   "findings": 9,
+   "files": 114,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 1
+    },
+    {
+     "category": "unused-export",
+     "count": 1
+    },
+    {
+     "category": "unused-symbol",
+     "count": 5
+    },
+    {
+     "category": "unused-import",
+     "count": 2
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/test-utils.ts",
+     "name": "",
+     "line": 1,
+     "lines": 156
+    },
+    {
+     "category": "unused-symbol",
+     "path": "scripts/validate-agents.ts",
+     "name": "checkDuplicateSkillsDirs",
+     "line": 55,
+     "lines": 31
+    },
+    {
+     "category": "unused-export",
+     "path": "src/constants.ts",
+     "name": "UNIVERSAL_SKILLS_DIR",
+     "line": 3,
+     "lines": 1
+    },
+    {
+     "category": "unused-symbol",
+     "path": "src/find.ts",
+     "name": "MAGENTA",
+     "line": 13,
+     "lines": 1
+    },
+    {
+     "category": "unused-symbol",
+     "path": "src/find.ts",
+     "name": "YELLOW",
+     "line": 14,
+     "lines": 1
+    },
+    {
+     "category": "unused-symbol",
+     "path": "src/list.ts",
+     "name": "TEXT",
+     "line": 12,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "src/local-lock.ts",
+     "name": "stat",
+     "line": 1,
+     "lines": 1
+    },
+    {
+     "category": "unused-symbol",
+     "path": "src/prompts/search-multiselect.ts",
+     "name": "S_CHECKBOX_LOCKED",
+     "line": 61,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "src/update.ts",
+     "name": "pc",
+     "line": 6,
+     "lines": 1
+    }
+   ]
+  }
  }
 }
