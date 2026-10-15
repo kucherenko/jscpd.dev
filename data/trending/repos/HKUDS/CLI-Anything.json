@@ -33,20 +33,36 @@
    "codeSources": 762,
    "healthScore": 11.6,
    "healthGrade": "E"
+  },
+  {
+   "date": "2026-10-15",
+   "rank": 4,
+   "stars": 52680,
+   "starsToday": 103,
+   "headSha": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
+   "sources": 1842,
+   "lines": 389265,
+   "clones": 2388,
+   "duplicatedLines": 76945,
+   "percentage": 19.77,
+   "codePercentage": 24.26,
+   "codeSources": 762,
+   "healthScore": 11.6,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-09-25",
-  "generatedAt": "2026-09-25T05:28:58.613Z",
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-15T05:29:00.485Z",
   "name": "HKUDS/CLI-Anything",
   "url": "https://github.com/HKUDS/CLI-Anything",
   "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
   "language": "Python",
-  "stars": 50393,
-  "starsToday": 413,
+  "stars": 52680,
+  "starsToday": 103,
   "defaultBranch": "main",
   "headSha": "34f519533bc175d2fe287ab8316b0dd99bb9cc43",
-  "durationMs": 5632,
+  "durationMs": 3828,
   "total": {
    "sources": 1842,
    "lines": 389265,
@@ -576,222 +592,6 @@
     "kind": "docs"
    }
   ],
-  "health": {
-   "score": 11.6,
-   "grade": "E",
-   "size": {
-    "lines": 301960,
-    "files": 926,
-    "class": "L"
-   },
-   "dimensions": [
-    {
-     "id": "duplication",
-     "source": "jscpd",
-     "value": 19.2,
-     "adjusted": 19.1,
-     "lines": 57851,
-     "halfLife": 8.5,
-     "formats": [
-      "python",
-      "csharp",
-      "javascript",
-      "bash",
-      "powershell",
-      "typescript",
-      "swift"
-     ],
-     "excluded": [
-      "text",
-      "data"
-     ],
-     "weight": 1,
-     "score": 21.1
-    },
-    {
-     "id": "dead-code",
-     "source": "jscpd",
-     "value": 43.1,
-     "adjusted": 42.8,
-     "lines": 127373,
-     "halfLife": 7.5,
-     "coverage": 97.9,
-     "weight": 0.979,
-     "score": 1.9
-    },
-    {
-     "id": "complexity",
-     "source": "jscpd",
-     "value": 70.7,
-     "adjusted": 70.4,
-     "lines": 213564,
-     "halfLife": 50,
-     "weight": 1,
-     "score": 37.7
-    }
-   ]
-  },
-  "complexity": {
-   "total": 44186,
-   "mean": 47.7,
-   "files": [
-    {
-     "path": "mubu/agent-harness/mubu_probe.py",
-     "complexity": 499,
-     "lines": 2265,
-     "bytes": 84429
-    },
-    {
-     "path": "cli-hub-matrix/video-creation/scripts/video_doctor.py",
-     "complexity": 496,
-     "lines": 2580,
-     "bytes": 99239
-    },
-    {
-     "path": "freecad/agent-harness/cli_anything/freecad/freecad_cli.py",
-     "complexity": 476,
-     "lines": 4911,
-     "bytes": 191634
-    },
-    {
-     "path": "sbox/agent-harness/cli_anything/sbox/sbox_cli.py",
-     "complexity": 471,
-     "lines": 2423,
-     "bytes": 95750
-    },
-    {
-     "path": "live2d/agent-harness/cli_anything/live2d/live2d_cli.py",
-     "complexity": 438,
-     "lines": 2047,
-     "bytes": 77399
-    },
-    {
-     "path": "n8n/agent-harness/cli_anything/n8n/n8n_cli.py",
-     "complexity": 432,
-     "lines": 2023,
-     "bytes": 83284
-    },
-    {
-     "path": "shotcut/agent-harness/cli_anything/shotcut/tests/test_core.py",
-     "complexity": 404,
-     "lines": 2005,
-     "bytes": 96835
-    },
-    {
-     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/lists.py",
-     "complexity": 356,
-     "lines": 1758,
-     "bytes": 96738
-    },
-    {
-     "path": "slay_the_spire_ii/agent-harness/bridge/plugin/BridgeMod.Formatting.cs",
-     "complexity": 353,
-     "lines": 868,
-     "bytes": 40931
-    },
-    {
-     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
-     "complexity": 317,
-     "lines": 1518,
-     "bytes": 78672
-    }
-   ]
-  },
-  "deadCode": {
-   "percentage": 43.07,
-   "findings": 665,
-   "files": 1209,
-   "byCategory": [
-    {
-     "category": "unused-file",
-     "count": 458
-    },
-    {
-     "category": "unused-export",
-     "count": 5
-    },
-    {
-     "category": "unused-symbol",
-     "count": 117
-    },
-    {
-     "category": "unused-import",
-     "count": 85
-    }
-   ],
-   "largest": [
-    {
-     "category": "unused-file",
-     "path": "freecad/agent-harness/cli_anything/freecad/core/body.py",
-     "name": "",
-     "line": 1,
-     "lines": 2151
-    },
-    {
-     "category": "unused-file",
-     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/lists.py",
-     "name": "",
-     "line": 1,
-     "lines": 1758
-    },
-    {
-     "category": "unused-file",
-     "path": "freecad/agent-harness/cli_anything/freecad/core/sketch.py",
-     "name": "",
-     "line": 1,
-     "lines": 1708
-    },
-    {
-     "category": "unused-file",
-     "path": "freecad/agent-harness/cli_anything/freecad/core/parts.py",
-     "name": "",
-     "line": 1,
-     "lines": 1614
-    },
-    {
-     "category": "unused-file",
-     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
-     "name": "",
-     "line": 1,
-     "lines": 1518
-    },
-    {
-     "category": "unused-file",
-     "path": "renderdoc/agent-harness/cli_anything/renderdoc/core/pipeline.py",
-     "name": "",
-     "line": 1,
-     "lines": 1428
-    },
-    {
-     "category": "unused-file",
-     "path": "sbox/agent-harness/cli_anything/sbox/core/scene.py",
-     "name": "",
-     "line": 1,
-     "lines": 1407
-    },
-    {
-     "category": "unused-file",
-     "path": "freecad/agent-harness/cli_anything/freecad/core/draft.py",
-     "name": "",
-     "line": 1,
-     "lines": 1260
-    },
-    {
-     "category": "unused-file",
-     "path": "shotcut/agent-harness/cli_anything/shotcut/core/filters.py",
-     "name": "",
-     "line": 1,
-     "lines": 1036
-    },
-    {
-     "category": "unused-file",
-     "path": "cloudcompare/agent-harness/cli_anything/cloudcompare/utils/cc_backend.py",
-     "name": "",
-     "line": 1,
-     "lines": 981
-    }
-   ]
-  },
   "code": {
    "sources": 762,
    "lines": 225256,
@@ -1409,7 +1209,221 @@
     ]
    }
   },
-  "measuredAt": "2026-10-07T06:23:56.195Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 11.6,
+   "grade": "E",
+   "size": {
+    "lines": 301960,
+    "files": 926,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 19.2,
+     "adjusted": 19.1,
+     "lines": 57851,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "csharp",
+      "javascript",
+      "bash",
+      "powershell",
+      "typescript",
+      "swift"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 21.1
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 43.1,
+     "adjusted": 42.8,
+     "lines": 127373,
+     "halfLife": 7.5,
+     "coverage": 97.9,
+     "weight": 0.979,
+     "score": 1.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 70.7,
+     "adjusted": 70.4,
+     "lines": 213564,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 37.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 44186,
+   "mean": 47.7,
+   "files": [
+    {
+     "path": "mubu/agent-harness/mubu_probe.py",
+     "complexity": 499,
+     "lines": 2265,
+     "bytes": 84429
+    },
+    {
+     "path": "cli-hub-matrix/video-creation/scripts/video_doctor.py",
+     "complexity": 496,
+     "lines": 2580,
+     "bytes": 99239
+    },
+    {
+     "path": "freecad/agent-harness/cli_anything/freecad/freecad_cli.py",
+     "complexity": 476,
+     "lines": 4911,
+     "bytes": 191634
+    },
+    {
+     "path": "sbox/agent-harness/cli_anything/sbox/sbox_cli.py",
+     "complexity": 471,
+     "lines": 2423,
+     "bytes": 95750
+    },
+    {
+     "path": "live2d/agent-harness/cli_anything/live2d/live2d_cli.py",
+     "complexity": 438,
+     "lines": 2047,
+     "bytes": 77399
+    },
+    {
+     "path": "n8n/agent-harness/cli_anything/n8n/n8n_cli.py",
+     "complexity": 432,
+     "lines": 2023,
+     "bytes": 83284
+    },
+    {
+     "path": "shotcut/agent-harness/cli_anything/shotcut/tests/test_core.py",
+     "complexity": 404,
+     "lines": 2005,
+     "bytes": 96835
+    },
+    {
+     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/lists.py",
+     "complexity": 356,
+     "lines": 1758,
+     "bytes": 96738
+    },
+    {
+     "path": "slay_the_spire_ii/agent-harness/bridge/plugin/BridgeMod.Formatting.cs",
+     "complexity": 353,
+     "lines": 868,
+     "bytes": 40931
+    },
+    {
+     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
+     "complexity": 317,
+     "lines": 1518,
+     "bytes": 78672
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 43.07,
+   "findings": 665,
+   "files": 1209,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 458
+    },
+    {
+     "category": "unused-export",
+     "count": 5
+    },
+    {
+     "category": "unused-symbol",
+     "count": 117
+    },
+    {
+     "category": "unused-import",
+     "count": 85
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "freecad/agent-harness/cli_anything/freecad/core/body.py",
+     "name": "",
+     "line": 1,
+     "lines": 2151
+    },
+    {
+     "category": "unused-file",
+     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/lists.py",
+     "name": "",
+     "line": 1,
+     "lines": 1758
+    },
+    {
+     "category": "unused-file",
+     "path": "freecad/agent-harness/cli_anything/freecad/core/sketch.py",
+     "name": "",
+     "line": 1,
+     "lines": 1708
+    },
+    {
+     "category": "unused-file",
+     "path": "freecad/agent-harness/cli_anything/freecad/core/parts.py",
+     "name": "",
+     "line": 1,
+     "lines": 1614
+    },
+    {
+     "category": "unused-file",
+     "path": "mailchimp/agent-harness/cli_anything/mailchimp/commands/ecommerce.py",
+     "name": "",
+     "line": 1,
+     "lines": 1518
+    },
+    {
+     "category": "unused-file",
+     "path": "renderdoc/agent-harness/cli_anything/renderdoc/core/pipeline.py",
+     "name": "",
+     "line": 1,
+     "lines": 1428
+    },
+    {
+     "category": "unused-file",
+     "path": "sbox/agent-harness/cli_anything/sbox/core/scene.py",
+     "name": "",
+     "line": 1,
+     "lines": 1407
+    },
+    {
+     "category": "unused-file",
+     "path": "freecad/agent-harness/cli_anything/freecad/core/draft.py",
+     "name": "",
+     "line": 1,
+     "lines": 1260
+    },
+    {
+     "category": "unused-file",
+     "path": "shotcut/agent-harness/cli_anything/shotcut/core/filters.py",
+     "name": "",
+     "line": 1,
+     "lines": 1036
+    },
+    {
+     "category": "unused-file",
+     "path": "cloudcompare/agent-harness/cli_anything/cloudcompare/utils/cc_backend.py",
+     "name": "",
+     "line": 1,
+     "lines": 981
+    }
+   ]
+  }
  }
 }
