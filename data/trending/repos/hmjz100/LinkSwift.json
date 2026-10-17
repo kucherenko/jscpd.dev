@@ -1,0 +1,844 @@
+{
+ "name": "hmjz100/LinkSwift",
+ "url": "https://github.com/hmjz100/LinkSwift",
+ "appearances": [
+  {
+   "date": "2026-10-17",
+   "rank": 5,
+   "stars": 23926,
+   "starsToday": 538,
+   "headSha": "88f775d84a57764def07a32da9457cf3043ad11b",
+   "sources": 25,
+   "lines": 11127,
+   "clones": 86,
+   "duplicatedLines": 1280,
+   "percentage": 11.5,
+   "codePercentage": null,
+   "codeSources": 12,
+   "healthScore": 12.2,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T05:27:08.447Z",
+  "name": "hmjz100/LinkSwift",
+  "url": "https://github.com/hmjz100/LinkSwift",
+  "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+  "language": "JavaScript",
+  "stars": 23926,
+  "starsToday": 538,
+  "defaultBranch": "dev",
+  "headSha": "88f775d84a57764def07a32da9457cf3043ad11b",
+  "durationMs": 1046,
+  "total": {
+   "sources": 25,
+   "lines": 11127,
+   "tokens": 61940,
+   "clones": 86,
+   "duplicatedLines": 1280,
+   "duplicatedTokens": 9043,
+   "percentage": 11.5,
+   "percentageTokens": 14.6
+  },
+  "formats": [
+   {
+    "format": "javascript",
+    "sources": 2,
+    "lines": 9193,
+    "clones": 80,
+    "duplicatedLines": 1127,
+    "percentage": 12.26
+   },
+   {
+    "format": "json",
+    "sources": 7,
+    "lines": 497,
+    "clones": 5,
+    "duplicatedLines": 137,
+    "percentage": 27.57
+   },
+   {
+    "format": "yaml",
+    "sources": 2,
+    "lines": 186,
+    "clones": 1,
+    "duplicatedLines": 16,
+    "percentage": 8.6
+   },
+   {
+    "format": "bash",
+    "sources": 9,
+    "lines": 694,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 4,
+    "lines": 389,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "javascript",
+    "lines": 84,
+    "tokens": 811,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 5818,
+     "end": 5901
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 5934,
+      "end": 6017
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "base.adaptiveThemeOverride([",
+      "    [\"#717fff\", temp.color],",
+      "    [\"#717FFF\", temp.color],",
+      "    [\"#06a8ff\", temp.color],",
+      "    [\"#06A8FF\", temp.color],",
+      "    [\"#06a7ff\", temp.color],",
+      "    [\"#06A7FF\", temp.color],",
+      "    [\"#dcdfe6\", temp.color],",
+      "    [\"#DCDFE6\", temp.color],",
+      "    [\"#0095ff\", temp.color],"
+     ],
+     "total": 84
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 14,
+    "tokens": 106,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 6372,
+     "end": 6385
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7092,
+      "end": 7105
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7660,
+      "end": 7673
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7920,
+      "end": 7933
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "        tooltip: config.$baidu.dom,",
+      "        download: {",
+      "            error: (error) => {",
+      "                if (!error?.status) return ` 服务器未返回状态，若是下载一段时间后中断，可能是服务器返回文件长度不匹配，请重试；若是直接中断，请检查您的网络、脚本管理器扩展或浏览器~`;",
+      "                if (error?.status == 403) return ` 服务器说：链接已过期，关闭窗口重新获取试试吧~`;",
+      "                if (error?.status == 204 || error?.statusText === \"IDM\") return ` 服务说：链接已被 IDM 捕获~`;",
+      "            }",
+      "        }",
+      "    }",
+      "}];"
+     ],
+     "total": 14
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 11,
+    "tokens": 103,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 7055,
+     "end": 7065
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7275,
+      "end": 7285
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7850,
+      "end": 7860
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7881,
+      "end": 7891
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "selects = selects.filter(item => item.contentID && item.contentName && item.contentSuffix);",
+      "const batchSize = 15;",
+      "let proc = 0;",
+      "$doc.find(\".loading-popup .loading-title\").html(`地址获取中`);",
+      "$doc.find(\".loading-popup .swal2-html-container\").html(`<div>正在获取文件对应的下载地址~</div>`);",
+      "for (let i = 0; i < selects.length; i += batchSize) {",
+      "    const batch = selects.slice(i, i + batchSize);",
+      "    const queue = [];",
+      "    batch.forEach((item, localIndex) => {",
+      "        const globalIndex = i + localIndex;"
+     ],
+     "total": 11
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 51,
+    "tokens": 294,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 8270,
+     "end": 8320
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8545,
+      "end": 8595
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 10,
+    "tokens": 73,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 7065,
+     "end": 7074
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7285,
+      "end": 7294
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7891,
+      "end": 7900
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8779,
+      "end": 8788
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8831,
+      "end": 8840
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 35,
+    "tokens": 254,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 8782,
+     "end": 8816
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8834,
+      "end": 8868
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 10,
+    "tokens": 113,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 2430,
+     "end": 2439
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 2506,
+      "end": 2515
+     },
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 2571,
+      "end": 2580
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 34,
+    "tokens": 110,
+    "first": {
+     "name": "config/quark.json",
+     "start": 11,
+     "end": 44
+    },
+    "others": [
+     {
+      "name": "config/tianyi.json",
+      "start": 13,
+      "end": 46
+     },
+     {
+      "name": "config/yidong.json",
+      "start": 12,
+      "end": 45
+     }
+    ],
+    "copies": 3,
+    "kind": "data"
+   },
+   {
+    "format": "javascript",
+    "lines": 31,
+    "tokens": 214,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 8228,
+     "end": 8258
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8439,
+      "end": 8468
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 23,
+    "tokens": 198,
+    "first": {
+     "name": "（改）网盘直链下载助手.user.js",
+     "start": 8461,
+     "end": 8483
+    },
+    "others": [
+     {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8528,
+      "end": 8550
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 12,
+   "lines": 10055,
+   "tokens": 55324,
+   "clones": 80,
+   "duplicatedLines": 1127,
+   "duplicatedTokens": 8515,
+   "percentage": 11.21,
+   "percentageTokens": 15.39,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 2,
+     "lines": 9193,
+     "clones": 80,
+     "duplicatedLines": 1127,
+     "percentage": 12.26
+    },
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 694,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 84,
+     "tokens": 811,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 5818,
+      "end": 5901
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 5934,
+       "end": 6017
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "base.adaptiveThemeOverride([",
+       "    [\"#717fff\", temp.color],",
+       "    [\"#717FFF\", temp.color],",
+       "    [\"#06a8ff\", temp.color],",
+       "    [\"#06A8FF\", temp.color],",
+       "    [\"#06a7ff\", temp.color],",
+       "    [\"#06A7FF\", temp.color],",
+       "    [\"#dcdfe6\", temp.color],",
+       "    [\"#DCDFE6\", temp.color],",
+       "    [\"#0095ff\", temp.color],"
+      ],
+      "total": 84
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 106,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 6372,
+      "end": 6385
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7092,
+       "end": 7105
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7660,
+       "end": 7673
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7920,
+       "end": 7933
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "        tooltip: config.$baidu.dom,",
+       "        download: {",
+       "            error: (error) => {",
+       "                if (!error?.status) return ` 服务器未返回状态，若是下载一段时间后中断，可能是服务器返回文件长度不匹配，请重试；若是直接中断，请检查您的网络、脚本管理器扩展或浏览器~`;",
+       "                if (error?.status == 403) return ` 服务器说：链接已过期，关闭窗口重新获取试试吧~`;",
+       "                if (error?.status == 204 || error?.statusText === \"IDM\") return ` 服务说：链接已被 IDM 捕获~`;",
+       "            }",
+       "        }",
+       "    }",
+       "}];"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 11,
+     "tokens": 103,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7055,
+      "end": 7065
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7275,
+       "end": 7285
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7850,
+       "end": 7860
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7881,
+       "end": 7891
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "selects = selects.filter(item => item.contentID && item.contentName && item.contentSuffix);",
+       "const batchSize = 15;",
+       "let proc = 0;",
+       "$doc.find(\".loading-popup .loading-title\").html(`地址获取中`);",
+       "$doc.find(\".loading-popup .swal2-html-container\").html(`<div>正在获取文件对应的下载地址~</div>`);",
+       "for (let i = 0; i < selects.length; i += batchSize) {",
+       "    const batch = selects.slice(i, i + batchSize);",
+       "    const queue = [];",
+       "    batch.forEach((item, localIndex) => {",
+       "        const globalIndex = i + localIndex;"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 51,
+     "tokens": 294,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8270,
+      "end": 8320
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8545,
+       "end": 8595
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 10,
+     "tokens": 73,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 7065,
+      "end": 7074
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7285,
+       "end": 7294
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 7891,
+       "end": 7900
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8779,
+       "end": 8788
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8831,
+       "end": 8840
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 35,
+     "tokens": 254,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8782,
+      "end": 8816
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8834,
+       "end": 8868
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 10,
+     "tokens": 113,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 2430,
+      "end": 2439
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 2506,
+       "end": 2515
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 2571,
+       "end": 2580
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 31,
+     "tokens": 214,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8228,
+      "end": 8258
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8439,
+       "end": 8468
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 23,
+     "tokens": 198,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8461,
+      "end": 8483
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8528,
+       "end": 8550
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 9,
+     "tokens": 98,
+     "first": {
+      "name": "（改）网盘直链下载助手.user.js",
+      "start": 8153,
+      "end": 8161
+     },
+     "others": [
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8224,
+       "end": 8231
+      },
+      {
+       "name": "（改）网盘直链下载助手.user.js",
+       "start": 8434,
+       "end": 8442
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 12.2,
+   "grade": "E",
+   "size": {
+    "lines": 10055,
+    "files": 12,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 11.2,
+     "adjusted": 9.9,
+     "lines": 1127,
+     "halfLife": 8.5,
+     "formats": [
+      "javascript",
+      "bash",
+      "perl"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 44.5
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 99.5,
+     "adjusted": 82.3,
+     "lines": 9179,
+     "halfLife": 7.5,
+     "coverage": 91.7,
+     "weight": 0.917,
+     "score": 0
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 91,
+     "adjusted": 79.4,
+     "lines": 9148,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 33.3
+    }
+   ]
+  },
+  "complexity": {
+   "total": 1882,
+   "mean": 156.8,
+   "files": [
+    {
+     "path": "（改）网盘直链下载助手.user.js",
+     "complexity": 1797,
+     "lines": 9148,
+     "bytes": 810153
+    },
+    {
+     "path": ".git/hooks/fsmonitor-watchman.sample",
+     "complexity": 19,
+     "lines": 168,
+     "bytes": 4611
+    },
+    {
+     "path": ".git/hooks/pre-rebase.sample",
+     "complexity": 14,
+     "lines": 169,
+     "bytes": 4898
+    },
+    {
+     "path": ".git/hooks/sendemail-validate.sample",
+     "complexity": 14,
+     "lines": 77,
+     "bytes": 2308
+    },
+    {
+     "path": ".git/hooks/update.sample",
+     "complexity": 13,
+     "lines": 128,
+     "bytes": 3650
+    },
+    {
+     "path": ".git/hooks/push-to-checkout.sample",
+     "complexity": 6,
+     "lines": 78,
+     "bytes": 2783
+    },
+    {
+     "path": ".git/hooks/pre-commit.sample",
+     "complexity": 5,
+     "lines": 49,
+     "bytes": 1649
+    },
+    {
+     "path": ".git/hooks/pre-push.sample",
+     "complexity": 5,
+     "lines": 53,
+     "bytes": 1374
+    },
+    {
+     "path": ".git/hooks/pre-receive.sample",
+     "complexity": 4,
+     "lines": 24,
+     "bytes": 544
+    },
+    {
+     "path": ".git/hooks/commit-msg.sample",
+     "complexity": 3,
+     "lines": 74,
+     "bytes": 1972
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 99.51,
+   "findings": 2,
+   "files": 3,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 2
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "（改）网盘直链下载助手.user.js",
+     "name": "",
+     "line": 1,
+     "lines": 9148
+    },
+    {
+     "category": "unused-file",
+     "path": "（改）百度网盘会员青春版.user.js",
+     "name": "",
+     "line": 1,
+     "lines": 31
+    }
+   ]
+  }
+ }
+}
