@@ -97,46 +97,62 @@
    "codeSources": 277,
    "healthScore": 73.4,
    "healthGrade": "B"
+  },
+  {
+   "date": "2026-10-18",
+   "rank": 5,
+   "stars": 151915,
+   "starsToday": 179,
+   "headSha": "dd6bee38458cc3e6dc5f2b16eca1f0f364619ad8",
+   "sources": 733,
+   "lines": 97077,
+   "clones": 127,
+   "duplicatedLines": 1585,
+   "percentage": 1.63,
+   "codePercentage": 1.18,
+   "codeSources": 292,
+   "healthScore": 72,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-10-04",
-  "generatedAt": "2026-10-04T07:13:25.094Z",
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T05:26:35.381Z",
   "name": "anthropics/claude-code",
   "url": "https://github.com/anthropics/claude-code",
   "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
   "language": "TypeScript",
-  "stars": 149297,
-  "starsToday": 128,
+  "stars": 151915,
+  "starsToday": 179,
   "defaultBranch": "main",
-  "headSha": "2bfb629dfaff0c8318047a4beb93cf1dc5b58b18",
-  "durationMs": 398,
+  "headSha": "dd6bee38458cc3e6dc5f2b16eca1f0f364619ad8",
+  "durationMs": 1990,
   "total": {
-   "sources": 689,
-   "lines": 91928,
-   "tokens": 609189,
-   "clones": 90,
-   "duplicatedLines": 1191,
-   "duplicatedTokens": 7552,
-   "percentage": 1.3,
-   "percentageTokens": 1.24
+   "sources": 733,
+   "lines": 97077,
+   "tokens": 665754,
+   "clones": 127,
+   "duplicatedLines": 1585,
+   "duplicatedTokens": 9843,
+   "percentage": 1.63,
+   "percentageTokens": 1.48
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 374,
-    "lines": 33165,
-    "clones": 58,
-    "duplicatedLines": 634,
-    "percentage": 1.91
+    "sources": 416,
+    "lines": 36470,
+    "clones": 95,
+    "duplicatedLines": 1028,
+    "percentage": 2.82
    },
    {
     "format": "markdown",
-    "sources": 108,
-    "lines": 35973,
+    "sources": 109,
+    "lines": 37336,
     "clones": 13,
     "duplicatedLines": 251,
-    "percentage": 0.7
+    "percentage": 0.67
    },
    {
     "format": "python",
@@ -165,7 +181,7 @@
    {
     "format": "bash",
     "sources": 47,
-    "lines": 5547,
+    "lines": 5597,
     "clones": 1,
     "duplicatedLines": 7,
     "percentage": 0.13
@@ -179,17 +195,17 @@
     "percentage": 0.87
    },
    {
-    "format": "json",
-    "sources": 26,
-    "lines": 1841,
+    "format": "markup",
+    "sources": 2,
+    "lines": 2003,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
-    "format": "markup",
-    "sources": 2,
-    "lines": 1714,
+    "format": "json",
+    "sources": 27,
+    "lines": 1993,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -197,7 +213,7 @@
    {
     "format": "tsx",
     "sources": 21,
-    "lines": 1210,
+    "lines": 1206,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -239,6 +255,203 @@
     "kind": "docs"
    },
    {
+    "format": "typescript",
+    "lines": 8,
+    "tokens": 56,
+    "first": {
+     "name": "mods/sec-default/tests/register.test.ts",
+     "start": 676,
+     "end": 683
+    },
+    "others": [
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 778,
+      "end": 785
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 796,
+      "end": 803
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 814,
+      "end": 821
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 832,
+      "end": 839
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 863,
+      "end": 870
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 997,
+      "end": 1004
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 1012,
+      "end": 1019
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "'a deny rule holds over an allow from a plugin the person installed',",
+      "{ plugins: [Fixtures.allowing('easy')] },",
+      "async ($, on) => {",
+      "  on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))",
+      "",
+      "  const lines = Fixtures.logged(on)",
+      "",
+      "  Fixtures.checksAnswered(on, Fixtures.RULE_DENY)"
+     ],
+     "total": 8
+    },
+    "excerptSecond": {
+     "lines": [
+      "'an ask rule holds over an allow from a plugin the person installed',",
+      "{ plugins: [Fixtures.allowing('easy')] },",
+      "async ($, on) => {",
+      "  on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))",
+      "",
+      "  const lines = Fixtures.logged(on)",
+      "",
+      "  Fixtures.checksAnswered(on, Fixtures.RULE_ASK)"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 72,
+    "first": {
+     "name": "mods/sec-default/tests/register.test.ts",
+     "start": 2288,
+     "end": 2299
+    },
+    "others": [
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 2314,
+      "end": 2325
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 2342,
+      "end": 2353
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 2368,
+      "end": 2379
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 2393,
+      "end": 2404
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "    Fixtures.settingLdPreload('bundled', 'builtin'),",
+      "  ],",
+      "},",
+      "async ($, on) => {",
+      "  on('settings.read', () => ({ value: Fixtures.MANAGED_POLICY }))",
+      "",
+      "  const lines = Fixtures.logged(on)",
+      "  const set = Fixtures.variablesSet(on)",
+      "",
+      "  await $.session.start(Fixtures.SESSION)"
+     ],
+     "total": 12
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 11,
+    "tokens": 69,
+    "first": {
+     "name": "mods/sec-default/tests/register.test.ts",
+     "start": 677,
+     "end": 687
+    },
+    "others": [
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 697,
+      "end": 706
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 947,
+      "end": 957
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 1031,
+      "end": 1041
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 1272,
+      "end": 1282
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 50,
+    "first": {
+     "name": "mods/sec-default/tests/fixtures/repointing-settings.ts",
+     "start": 11,
+     "end": 20
+    },
+    "others": [
+     {
+      "name": "mods/sec-default/tests/fixtures/setting-bash-env.ts",
+      "start": 13,
+      "end": 22
+     },
+     {
+      "name": "mods/sec-default/tests/fixtures/setting-dyld-insert.ts",
+      "start": 13,
+      "end": 22
+     },
+     {
+      "name": "mods/sec-default/tests/fixtures/setting-ld-preload.ts",
+      "start": 13,
+      "end": 22
+     },
+     {
+      "name": "mods/sec-default/tests/fixtures/setting-node-options.ts",
+      "start": 13,
+      "end": 22
+     },
+     {
+      "name": "mods/sec-default/tests/fixtures/unsetting-node-options.ts",
+      "start": 13,
+      "end": 22
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
     "format": "markdown",
     "lines": 15,
     "tokens": 189,
@@ -255,21 +468,6 @@
      }
     ],
     "copies": 2,
-    "excerpt": {
-     "lines": [
-      "You are an expert code reviewer specializing in modern software development across multiple languages and frameworks. Your primary responsibility is to review …",
-      "",
-      "## Review Scope",
-      "",
-      "By default, review unstaged changes from `git diff`. The user may specify different files or scope to review.",
-      "",
-      "## Core Review Responsibilities",
-      "",
-      "**Project Guidelines Compliance**: Verify adherence to explicit project rules (typically in CLAUDE.md or equivalent) including import patterns, framework conve…",
-      ""
-     ],
-     "total": 15
-    },
     "kind": "docs"
    },
    {
@@ -289,30 +487,6 @@
      }
     ],
     "copies": 2,
-    "excerpt": {
-     "lines": [
-      "When editing the (newly-created or existing) skill, remember that the skill is being created for another instance of Claude to use. Focus on including informat…",
-      "",
-      "#### Start with Reusable Skill Contents",
-      "",
-      "To begin implementation, start with the reusable resources identified above: `scripts/`, `references/`, and `assets/` files. Note that this step may require us…",
-      "",
-      "Also, delete any example files and directories not needed for the skill. Create only the directories you actually need (references/, examples/, scripts/)."
-     ],
-     "total": 7
-    },
-    "excerptSecond": {
-     "lines": [
-      "When editing the (newly-generated or existing) skill, remember that the skill is being created for another instance of Claude to use. Focus on including inform…",
-      "",
-      "#### Start with Reusable Skill Contents",
-      "",
-      "To begin implementation, start with the reusable resources identified above: `scripts/`, `references/`, and `assets/` files. Note that this step may require us…",
-      "",
-      "Also, delete any example files and directories not needed for the skill. The initialization script creates example files in `scripts/`, `references/`, and `ass…"
-     ],
-     "total": 7
-    },
     "kind": "docs"
    },
    {
@@ -345,6 +519,35 @@
     "kind": "docs"
    },
    {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 50,
+    "first": {
+     "name": "mods/sec-default/tests/register.test.ts",
+     "start": 1460,
+     "end": 1468
+    },
+    "others": [
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 1523,
+      "end": 1531
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 1572,
+      "end": 1580
+     },
+     {
+      "name": "mods/sec-default/tests/register.test.ts",
+      "start": 1606,
+      "end": 1614
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
     "format": "python",
     "lines": 28,
     "tokens": 144,
@@ -362,330 +565,17 @@
     ],
     "copies": 2,
     "kind": "code"
-   },
-   {
-    "format": "typescript",
-    "lines": 25,
-    "tokens": 142,
-    "first": {
-     "name": "mods/diff/tests/register.test.ts",
-     "start": 610,
-     "end": 634
-    },
-    "others": [
-     {
-      "name": "mods/diff/tests/register.test.ts",
-      "start": 671,
-      "end": 694
-     }
-    ],
-    "copies": 2,
-    "kind": "tests"
-   },
-   {
-    "format": "markdown",
-    "lines": 14,
-    "tokens": 138,
-    "first": {
-     "name": ".claude/commands/commit-push-pr.md:markdown",
-     "start": 6,
-     "end": 19
-    },
-    "others": [
-     {
-      "name": "plugins/commit-commands/commands/commit-push-pr.md:markdown",
-      "start": 6,
-      "end": 20
-     }
-    ],
-    "copies": 2,
-    "kind": "docs"
-   },
-   {
-    "format": "typescript",
-    "lines": 9,
-    "tokens": 67,
-    "first": {
-     "name": "mods/sec-default/tests/register.test.ts",
-     "start": 499,
-     "end": 507
-    },
-    "others": [
-     {
-      "name": "mods/sec-default/tests/register.test.ts",
-      "start": 571,
-      "end": 579
-     },
-     {
-      "name": "mods/sec-default/tests/register.test.ts",
-      "start": 586,
-      "end": 594
-     }
-    ],
-    "copies": 3,
-    "kind": "tests"
-   },
-   {
-    "format": "typescript",
-    "lines": 12,
-    "tokens": 66,
-    "first": {
-     "name": "mods/sec-default/tests/register.test.ts",
-     "start": 558,
-     "end": 569
-    },
-    "others": [
-     {
-      "name": "mods/sec-default/tests/register.test.ts",
-      "start": 573,
-      "end": 584
-     },
-     {
-      "name": "mods/sec-default/tests/register.test.ts",
-      "start": 588,
-      "end": 599
-     }
-    ],
-    "copies": 3,
-    "kind": "tests"
-   },
-   {
-    "format": "python",
-    "lines": 12,
-    "tokens": 129,
-    "first": {
-     "name": "plugins/security-guidance/hooks/llm.py",
-     "start": 1391,
-     "end": 1402
-    },
-    "others": [
-     {
-      "name": "plugins/security-guidance/hooks/review_api.py",
-      "start": 306,
-      "end": 323
-     }
-    ],
-    "copies": 2,
-    "kind": "code"
    }
   ],
-  "health": {
-   "score": 73.4,
-   "grade": "B",
-   "size": {
-    "lines": 48145,
-    "files": 448,
-    "class": "M"
-   },
-   "dimensions": [
-    {
-     "id": "duplication",
-     "source": "jscpd",
-     "value": 1.8,
-     "adjusted": 1.9,
-     "lines": 888,
-     "halfLife": 8.5,
-     "formats": [
-      "typescript",
-      "python",
-      "bash",
-      "hcl",
-      "tsx",
-      "powershell",
-      "perl"
-     ],
-     "excluded": [
-      "markup",
-      "text",
-      "data"
-     ],
-     "weight": 1,
-     "score": 85.6
-    },
-    {
-     "id": "dead-code",
-     "source": "jscpd",
-     "value": 0.8,
-     "adjusted": 0.9,
-     "lines": 367,
-     "halfLife": 7.5,
-     "weight": 1,
-     "score": 92.4
-    },
-    {
-     "id": "complexity",
-     "source": "jscpd",
-     "value": 51.2,
-     "adjusted": 49.9,
-     "lines": 24629,
-     "halfLife": 50,
-     "weight": 1,
-     "score": 50
-    }
-   ]
-  },
-  "complexity": {
-   "total": 5004,
-   "mean": 11.2,
-   "files": [
-    {
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "complexity": 342,
-     "lines": 2192,
-     "bytes": 103394
-    },
-    {
-     "path": "mods/types/claude-code.d.ts",
-     "complexity": 304,
-     "lines": 13186,
-     "bytes": 507444
-    },
-    {
-     "path": "mods/diff/hooks/register.ts",
-     "complexity": 260,
-     "lines": 1036,
-     "bytes": 25416
-    },
-    {
-     "path": "plugins/security-guidance/hooks/llm.py",
-     "complexity": 221,
-     "lines": 1696,
-     "bytes": 112010
-    },
-    {
-     "path": "mods/diff/tests/register.test.ts",
-     "complexity": 142,
-     "lines": 1163,
-     "bytes": 33528
-    },
-    {
-     "path": "plugins/security-guidance/hooks/gitutil.py",
-     "complexity": 139,
-     "lines": 722,
-     "bytes": 30039
-    },
-    {
-     "path": ".github/scripts/check_workflow_hardening.py",
-     "complexity": 118,
-     "lines": 339,
-     "bytes": 13516
-    },
-    {
-     "path": "mods/diff/tests/git/fetch-diff.test.ts",
-     "complexity": 99,
-     "lines": 606,
-     "bytes": 18379
-    },
-    {
-     "path": "mods/sec-default/tests/register.test.ts",
-     "complexity": 96,
-     "lines": 858,
-     "bytes": 24646
-    },
-    {
-     "path": "examples/gateway/aws/setup.sh",
-     "complexity": 89,
-     "lines": 964,
-     "bytes": 53781
-    }
-   ]
-  },
-  "deadCode": {
-   "percentage": 0.76,
-   "findings": 70,
-   "files": 1303,
-   "byCategory": [
-    {
-     "category": "unused-export",
-     "count": 1
-    },
-    {
-     "category": "unused-import",
-     "count": 69
-    }
-   ],
-   "largest": [
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "_diff_pathspec",
-     "line": 99,
-     "lines": 12
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "_find_git_index",
-     "line": 99,
-     "lines": 12
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "_temp_index",
-     "line": 99,
-     "lines": 12
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "ANTHROPIC_API_KEY",
-     "line": 122,
-     "lines": 12
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "ANTHROPIC_AUTH_TOKEN",
-     "line": 122,
-     "lines": 12
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "CLAUDE_CODE_SYSTEM_PROMPT",
-     "line": 123,
-     "lines": 11
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "SECURITY_REVIEW_MODEL",
-     "line": 123,
-     "lines": 11
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "_git_name_only",
-     "line": 101,
-     "lines": 10
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "_last_call_claude_http_error",
-     "line": 124,
-     "lines": 10
-    },
-    {
-     "category": "unused-import",
-     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
-     "name": "_git_status_porcelain",
-     "line": 102,
-     "lines": 9
-    }
-   ]
-  },
   "code": {
-   "sources": 277,
-   "lines": 21432,
-   "tokens": 106466,
+   "sources": 292,
+   "lines": 22023,
+   "tokens": 108819,
    "clones": 14,
    "duplicatedLines": 260,
    "duplicatedTokens": 1177,
-   "percentage": 1.21,
-   "percentageTokens": 1.11,
+   "percentage": 1.18,
+   "percentageTokens": 1.08,
    "formats": [
     {
      "format": "python",
@@ -697,16 +587,16 @@
     },
     {
      "format": "typescript",
-     "sources": 215,
-     "lines": 9649,
+     "sources": 230,
+     "lines": 10200,
      "clones": 3,
      "duplicatedLines": 37,
-     "percentage": 0.38
+     "percentage": 0.36
     },
     {
      "format": "bash",
      "sources": 22,
-     "lines": 2420,
+     "lines": 2470,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -714,7 +604,7 @@
     {
      "format": "tsx",
      "sources": 21,
-     "lines": 1210,
+     "lines": 1206,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -722,7 +612,7 @@
     {
      "format": "perl",
      "sources": 1,
-     "lines": 174,
+     "lines": 168,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -994,7 +884,213 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T05:26:52.744Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 72,
+   "grade": "B",
+   "size": {
+    "lines": 51446,
+    "files": 490,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 2.5,
+     "adjusted": 2.5,
+     "lines": 1282,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "python",
+      "bash",
+      "hcl",
+      "tsx",
+      "powershell",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 81.4
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.7,
+     "adjusted": 0.8,
+     "lines": 367,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 92.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 52.1,
+     "adjusted": 50.9,
+     "lines": 26809,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 49.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 5401,
+   "mean": 11,
+   "files": [
+    {
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "complexity": 342,
+     "lines": 2192,
+     "bytes": 103394
+    },
+    {
+     "path": "mods/types/claude-code.d.ts",
+     "complexity": 306,
+     "lines": 13440,
+     "bytes": 517451
+    },
+    {
+     "path": "mods/sec-default/tests/register.test.ts",
+     "complexity": 285,
+     "lines": 2435,
+     "bytes": 69893
+    },
+    {
+     "path": "mods/diff/hooks/register.ts",
+     "complexity": 266,
+     "lines": 1062,
+     "bytes": 26135
+    },
+    {
+     "path": "plugins/security-guidance/hooks/llm.py",
+     "complexity": 221,
+     "lines": 1696,
+     "bytes": 112010
+    },
+    {
+     "path": "mods/diff/tests/register.test.ts",
+     "complexity": 158,
+     "lines": 1277,
+     "bytes": 37109
+    },
+    {
+     "path": "plugins/security-guidance/hooks/gitutil.py",
+     "complexity": 139,
+     "lines": 722,
+     "bytes": 30039
+    },
+    {
+     "path": ".github/scripts/check_workflow_hardening.py",
+     "complexity": 118,
+     "lines": 339,
+     "bytes": 13516
+    },
+    {
+     "path": "mods/diff/tests/git/fetch-diff.test.ts",
+     "complexity": 99,
+     "lines": 606,
+     "bytes": 18379
+    },
+    {
+     "path": "examples/gateway/aws/setup.sh",
+     "complexity": 89,
+     "lines": 964,
+     "bytes": 53781
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.71,
+   "findings": 70,
+   "files": 1389,
+   "byCategory": [
+    {
+     "category": "unused-export",
+     "count": 1
+    },
+    {
+     "category": "unused-import",
+     "count": 69
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_diff_pathspec",
+     "line": 99,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_find_git_index",
+     "line": 99,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_temp_index",
+     "line": 99,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "ANTHROPIC_API_KEY",
+     "line": 122,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "ANTHROPIC_AUTH_TOKEN",
+     "line": 122,
+     "lines": 12
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "CLAUDE_CODE_SYSTEM_PROMPT",
+     "line": 123,
+     "lines": 11
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "SECURITY_REVIEW_MODEL",
+     "line": 123,
+     "lines": 11
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_git_name_only",
+     "line": 101,
+     "lines": 10
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_last_call_claude_http_error",
+     "line": 124,
+     "lines": 10
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/security-guidance/hooks/security_reminder_hook.py",
+     "name": "_git_status_porcelain",
+     "line": 102,
+     "lines": 9
+    }
+   ]
+  }
  }
 }
