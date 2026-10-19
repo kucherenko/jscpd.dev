@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // The list of posts, newest first. Posts are content/blog/*.md in the `blog`
 // collection (content.config.ts); one post renders through pages/blog-post.vue.
-import { loadPostViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/usePostViews'
+import { loadPageViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/usePageViews'
 
 definePageMeta({ layout: 'default' })
 
@@ -28,8 +28,8 @@ useHead({
 // Posts with a publishedAt in the future stay out until a build after it.
 const { data: posts } = await useAsyncData('blog-posts', () => queryCollection('blog').where('publishedAt', '<=', new Date().toISOString()).order('date', 'DESC').all())
 
-// Page views from Cloudflare Web Analytics (composables/usePostViews.ts).
-const { data: views } = await useAsyncData('blog-views', () => loadPostViews((posts.value ?? []).map(p => p.path)))
+// Page views from Cloudflare Web Analytics (composables/usePageViews.ts).
+const { data: views } = await useAsyncData('blog-views', () => loadPageViews((posts.value ?? []).map(p => p.path)))
 const shownViews = (path: string) => {
   const n = views.value?.[path]?.views ?? 0
   return n >= MIN_VIEWS_SHOWN ? n : null
