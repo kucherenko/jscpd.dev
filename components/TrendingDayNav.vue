@@ -10,8 +10,10 @@
 
     <label class="daynav-current">
       <span class="sr-only">Choose an analysis day</span>
+      <!-- The server render ignores :value on a select, so the option is marked
+           too; without it a freshly loaded archive day showed the latest one. -->
       <select class="daynav-select" :value="date" @change="onChange">
-        <option v-for="d in [...trendingDates].reverse()" :key="d" :value="d">
+        <option v-for="d in [...trendingDates].reverse()" :key="d" :value="d" :selected="d === date">
           {{ formatDay(d) }}{{ d === latestTrendingDate ? ' (latest)' : '' }}
         </option>
       </select>
