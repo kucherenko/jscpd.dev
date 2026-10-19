@@ -270,7 +270,7 @@ From GitHub's official linter to enterprise codebases. [54 papers](/project/rese
 Beyond duplicates
 
 #description
-The same binary reports a [project health score and dashboard](/guides/dashboard), [dead code](/guides/dead-code) in JavaScript, TypeScript and Python, the [duplication trend over git history](/guides/history), [how far a port to another language has come](/guides/compare), and a [compact report for LLMs](/project/benchmarks/ai-token-efficiency). Each is one flag: `--dashboard`, `--dead-code`, `--history`, `--compare`, `--reporters ai`.
+The same binary reports a [project health score and dashboard](/guides/dashboard), [dead code](/guides/dead-code) in JavaScript, TypeScript and Python, the [duplication trend over git history](/guides/history), [how far a port to another language has come](/guides/compare), and a [compact report for LLMs](/project/benchmarks/ai-token-efficiency). Each is one flag: `--dashboard`, `--dead-code`, `--history`, `--compare`, `--reporters ai`. [Boundary rules](/guides/boundaries) in the config file keep the code of a module out of the others and fail the build when a copy turns up.
 
 #links
   :::u-button

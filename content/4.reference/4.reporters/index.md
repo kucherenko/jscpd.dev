@@ -124,6 +124,10 @@ The [kind of a clone](/concepts/clone-types), a [baseline](/guides/baseline) and
 
 `--kind` narrows every reporter to the kinds you name, and the statistics follow the clones that are reported.
 
+## Boundaries
+
+With [boundary rules](/guides/boundaries) in the config file, `console` and `console-full` print a `Boundaries:` block after the table, with each copy above the protected code it copies. `ai` prints one `rule: copy ~ protected` line per copy and a count, and `json` adds a [`boundaries` key](/reference/reporters/json#boundaries). The other reporters leave the copies out. A copy fails the run with exit code 1 whichever reporters run.
+
 ## Other modes
 
 The modes beside clone detection reuse the reporter names and write files of their own:
