@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { hasTrendingWeek, latestTrendingDate, loadTrendingWeek, trendingWeeks } from '~/composables/useTrendingData'
+import { usePageViewsLabel } from '~/composables/usePageViews'
 
 definePageMeta({ layout: 'default', key: route => route.path })
 
@@ -16,6 +17,7 @@ if (error.value || !data.value) {
   throw createError({ statusCode: 500, statusMessage: `Trending data for ${week} failed to load: ${error.value?.message ?? 'empty'}`, fatal: true })
 }
 const w = computed(() => data.value!)
+const views = await usePageViewsLabel(route.path)
 const idx = trendingWeeks.findIndex(x => x.week === week)
 const prev = trendingWeeks[idx - 1] ?? null
 const next = trendingWeeks[idx + 1] ?? null
@@ -53,11 +55,14 @@ const tiles = computed(() => {
 
 <template>
   <div class="week-page">
-    <nav class="week-breadcrumb" aria-label="Breadcrumb">
-      <NuxtLink to="/trending">Trending</NuxtLink>
-      <span class="crumb-sep">/</span>
-      <span>{{ weekTitle(week) }}</span>
-    </nav>
+    <div class="week-top">
+      <nav class="week-breadcrumb" aria-label="Breadcrumb">
+        <NuxtLink to="/trending">Trending</NuxtLink>
+        <span class="crumb-sep">/</span>
+        <span>{{ weekTitle(week) }}</span>
+      </nav>
+      <span v-if="views" class="page-views">{{ views }}</span>
+    </div>
 
     <header class="week-hero">
       <h1 class="week-title">{{ weekTitle(week) }}</h1>
@@ -105,6 +110,21 @@ const tiles = computed(() => {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+}
+
+.week-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+}
+
+.page-views {
+  margin-left: auto;
+  font-size: 0.8125rem;
+  color: var(--ui-text-muted, #64748b);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .week-breadcrumb {

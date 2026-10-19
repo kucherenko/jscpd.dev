@@ -1,14 +1,15 @@
 /**
- * A daily snapshot of the page views of the blog posts and the docs pages
- * from Cloudflare Web Analytics.
+ * A daily snapshot of the page views of the blog posts, the docs pages and
+ * the trending pages from Cloudflare Web Analytics.
  *
  * The beacon Cloudflare injects into every page reports page loads to Web
  * Analytics; this script reads them back through the GraphQL API and keeps
- * the ones of the posts in content/blog and of the docs pages (the rest of
- * content/) in data/analytics/months/<YYYY-MM>.json: each day's page views
- * and visits per path, the posts under `posts` and the docs pages under
- * `docs`. The 404 page reports too, under whatever address was asked for, so
- * any other address stays out.
+ * the ones of the posts in content/blog, of the docs pages (the rest of
+ * content/) and of the trending pages (/trending, its days, weeks and
+ * repositories) in data/analytics/months/<YYYY-MM>.json: each day's page
+ * views and visits per path, under `posts`, `docs` and `trending`. The 404
+ * page reports too, under whatever address was asked for, so any other
+ * address stays out.
  *
  * A run rewrites the last REFRESH_DAYS stored days (the last one was cut off
  * at the time of its run) and adds the days after them. Older days stay as
@@ -17,10 +18,10 @@
  * stored day. The site keeps its own history whatever the API's retention is
  * (26 weeks).
  *
- * The docs pages were added to the snapshot in October 2026, after the posts,
- * and their counts come from exact answers only (EXACT_ONLY). The first run
- * that counts them reaches BACKFILL_DAYS back and keeps the days Cloudflare
- * answered in full, the last six or so.
+ * The docs pages and then the trending pages were added to the snapshot in
+ * October 2026, after the posts, and their counts come from exact answers
+ * only (EXACT_ONLY). The first run that counts a kind reaches BACKFILL_DAYS
+ * back and keeps the days Cloudflare answered in full, the last six or so.
  *
  * Every request covers one day. Cloudflare samples an answer that covers
  * many page loads: a 30-day request came back sampled one in ten, with the
@@ -29,8 +30,8 @@
  * came back in full.
  *
  * composables/usePageViews.ts adds the days up for the blog list, the post
- * page and the docs pages. .github/workflows/analytics.yml runs this every morning before
- * the site rebuild.
+ * page, the docs pages and the trending pages. .github/workflows/analytics.yml
+ * runs this every morning before the site rebuild.
  *
  * Needs CLOUDFLARE_ANALYTICS_TOKEN (an API token with Account Analytics:
  * Read on the account) and CLOUDFLARE_ACCOUNT_ID. The site tag is found from
@@ -44,16 +45,18 @@ const API = 'https://api.cloudflare.com/client/v4/graphql'
 const MONTHS_DIR = new URL('../data/analytics/months/', import.meta.url)
 const CONTENT_DIR = new URL('../content/', import.meta.url)
 const POSTS_DIR = new URL('../content/blog/', import.meta.url)
+const TRENDING_HISTORY = new URL('../data/trending-history.json', import.meta.url)
+const TRENDING_REPOS = new URL('../data/trending-repos.json', import.meta.url)
 // What a day record counts, each a map of path to [views, visits].
-const KINDS = ['posts', 'docs']
-// A docs page sees a few views a day, and a sampled answer puts its sample
-// interval (10 to 200 on 2026-10-19) on a page for each view in the sample.
-// One view in the sample gave /project/v4 200 views on 2026-10-12, while the
-// six days after brought it 26. A sampled or empty answer leaves these kinds
-// out of a new day and never replaces them on a stored one.
-const EXACT_ONLY = new Set(['docs'])
+const KINDS = ['posts', 'docs', 'trending']
+// A docs or trending page sees a few views a day, and a sampled answer puts
+// its sample interval (10 to 200 on 2026-10-19) on a page for each view in the
+// sample. One view in the sample gave /project/v4 200 views on 2026-10-12,
+// while the six days after brought it 26. A sampled or empty answer leaves
+// these kinds out of a new day and never replaces them on a stored one.
+const EXACT_ONLY = new Set(['docs', 'trending'])
 // content/trending.md only puts Trending into the header, pages/trending.vue
-// renders that page.
+// renders that page and it counts with the trending pages.
 const NOT_DOCS = new Set(['/trending'])
 
 // The Web Analytics site, found from the traffic of HOSTS unless given. (The
@@ -138,15 +141,31 @@ export async function docsPaths(dir = CONTENT_DIR) {
 }
 
 /**
+ * The paths of the trending pages, the ones nuxt.config.ts prerenders: the
+ * latest day at /trending, then every day, week and repository the trending
+ * run has measured. A repository keeps the case of its name, as in the links.
+ */
+export async function trendingPaths(history = TRENDING_HISTORY, repos = TRENDING_REPOS) {
+  const { days, weeks } = JSON.parse(await readFile(history, 'utf8'))
+  const names = JSON.parse(await readFile(repos, 'utf8')).map((repo) => repo.name)
+  return new Set([
+    '/trending',
+    ...days.map((d) => `/trending/${d.date}`),
+    ...weeks.map((w) => `/trending/week/${w.week}`),
+    ...names.map((name) => `/trending/${name}`),
+  ])
+}
+
+/**
  * The per-day records for every day of [since, until) from the day/path
- * groups: the views and visits of the paths in `pages.posts` and
- * `pages.docs`, plus how many groups the day had and the largest sample
- * interval among them.
+ * groups: the views and visits of the paths in `pages.posts`, `pages.docs`
+ * and `pages.trending`, plus how many groups the day had and the largest
+ * sample interval among them.
  */
 export function daysFrom(since, until, byDayPath, pages) {
   const out = {}
   for (let d = utcMidnight(new Date(since)); d < new Date(until); d = addDays(d, 1)) {
-    out[day(d)] = { posts: {}, docs: {}, groups: 0, sample: 1 }
+    out[day(d)] = { ...Object.fromEntries(KINDS.map((kind) => [kind, {}])), groups: 0, sample: 1 }
   }
   for (const g of byDayPath) {
     const record = out[g.dimensions.date]
@@ -177,10 +196,10 @@ const doubtful = (record) => record.sample >= SAMPLED_FROM || record.groups === 
 
 /**
  * The stored days of a month with the fresh ones put in, and for each date
- * the kinds kept as stored. A stored day keeps its posts or docs when the
- * fresh answer about it is doubtful. A new day takes the posts of any answer
- * and the EXACT_ONLY kinds of an exact one; a day without docs had no exact
- * answer for them.
+ * the kinds kept as stored. A stored day keeps what it counts when the fresh
+ * answer about it is doubtful. A new day takes the posts of any answer and
+ * the EXACT_ONLY kinds of an exact one; a day without docs or trending had no
+ * exact answer for them.
  */
 export function mergeDays(stored, fresh) {
   const days = { ...stored }
@@ -260,8 +279,8 @@ function chunks(from, to, now) {
 async function main() {
   if (!token || !account) throw new Error('CLOUDFLARE_ANALYTICS_TOKEN and CLOUDFLARE_ACCOUNT_ID are required')
   const now = new Date()
-  const pages = { posts: await postPaths(), docs: await docsPaths() }
-  console.log(`${pages.posts.size} posts in content/blog, ${pages.docs.size} docs pages`)
+  const pages = { posts: await postPaths(), docs: await docsPaths(), trending: await trendingPaths() }
+  console.log(`${pages.posts.size} posts in content/blog, ${pages.docs.size} docs pages, ${pages.trending.size} trending pages`)
   if (!siteTag) siteTag = await discoverSiteTag(now)
   const today = utcMidnight(now)
   const stored = await storedDays()
@@ -271,8 +290,8 @@ async function main() {
   // missed run leaves no hole.
   const firstDay = addDays(today, -BACKFILL_DAYS)
   let start = last ? addDays(utcMidnight(new Date(last)), 1 - REFRESH_DAYS) : firstDay
-  // The first run that counts the docs pages reaches back to the beginning.
-  if (stored.length && stored.every(([, record]) => !record.docs)) start = firstDay
+  // The first run that counts a kind reaches back to the beginning.
+  if (stored.length && KINDS.some((kind) => stored.every(([, record]) => !record[kind]))) start = firstDay
   const since = start < firstDay ? firstDay : start
 
   let fresh = {}
@@ -309,7 +328,7 @@ async function main() {
   }
   for (const [date, record] of Object.entries(fresh)) {
     const counts = KINDS.map((kind) => {
-      const name = kind === 'posts' ? 'post' : 'docs'
+      const name = kind === 'posts' ? 'post' : kind
       if (!result[date][kind]) return `${name} left out`
       return `${views(result[date][kind])} ${name} views${kept[date]?.includes(kind) ? ' kept as stored' : ''}`
     })

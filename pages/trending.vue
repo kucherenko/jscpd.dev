@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import {
   hasTrendingDay, latestTrendingDate, latestTrendingWeek, loadTrendingDay, loadTrendingWeek, trendingBaselines, trendingHistory, trendingWeeks
 } from '~/composables/useTrendingData'
+import { usePageViewsLabel } from '~/composables/usePageViews'
 
 definePageMeta({ layout: 'default', key: route => route.path })
 
@@ -19,6 +20,8 @@ if (error.value || !data.value) {
   throw createError({ statusCode: 500, statusMessage: `Trending data for ${date.value} failed to load: ${error.value?.message ?? 'empty'}`, fatal: true })
 }
 const day = computed(() => data.value!)
+// /trending and /trending/<date> count their views apart, the page shows its own.
+const views = await usePageViewsLabel(route.path)
 
 // The week block is for the latest page only; archive days keep to themselves.
 const weekId = isLatest.value ? latestTrendingWeek : null
@@ -81,6 +84,7 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingDayPath(d
         {{ formatDay(date) }} · {{ day.summary.repos }} repos
         <template v-if="coded"> · median {{ day.summary.codeMedianPercentage }}% duplicated code</template>
         <template v-else> · {{ num(day.summary.clones) }} clones, all files</template>
+        <template v-if="views"> · {{ views }}</template>
         <template v-if="!isLatest"> · <NuxtLink to="/trending">jump to latest</NuxtLink></template>
       </p>
     </section>
