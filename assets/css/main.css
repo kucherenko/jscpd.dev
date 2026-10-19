@@ -350,6 +350,13 @@ pre .line {
   overflow-wrap: anywhere;
 }
 
+/* `anywhere` also lets the browser size a table column as if every letter were
+   a break, so the first column of a reference table, the key or the flag, was
+   cut into pieces of a few letters. Those names are short; keep them whole. */
+td:first-child code {
+  overflow-wrap: normal;
+}
+
 /* The feature cards on the landing page are flex rows (icon, then the text).
    A flex item does not shrink below its content by default, and the code
    block inside a card is as wide as its longest line, so on a phone the card
