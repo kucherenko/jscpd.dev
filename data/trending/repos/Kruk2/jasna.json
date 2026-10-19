@@ -1,0 +1,942 @@
+{
+ "name": "Kruk2/jasna",
+ "url": "https://github.com/Kruk2/jasna",
+ "appearances": [
+  {
+   "date": "2026-10-19",
+   "rank": 7,
+   "stars": 2546,
+   "starsToday": 115,
+   "headSha": "099af50a3aac06f14db8d048efd8c6562e2c3d25",
+   "sources": 501,
+   "lines": 108096,
+   "clones": 344,
+   "duplicatedLines": 3599,
+   "percentage": 3.33,
+   "codePercentage": 0.99,
+   "codeSources": 203,
+   "healthScore": 71.1,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T05:30:13.170Z",
+  "name": "Kruk2/jasna",
+  "url": "https://github.com/Kruk2/jasna",
+  "description": "Video restoration tool",
+  "language": "Python",
+  "stars": 2546,
+  "starsToday": 115,
+  "defaultBranch": "main",
+  "headSha": "099af50a3aac06f14db8d048efd8c6562e2c3d25",
+  "durationMs": 1740,
+  "total": {
+   "sources": 501,
+   "lines": 108096,
+   "tokens": 781278,
+   "clones": 344,
+   "duplicatedLines": 3599,
+   "duplicatedTokens": 28518,
+   "percentage": 3.33,
+   "percentageTokens": 3.65
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 376,
+    "lines": 97682,
+    "clones": 322,
+    "duplicatedLines": 3469,
+    "percentage": 3.55
+   },
+   {
+    "format": "bash",
+    "sources": 30,
+    "lines": 944,
+    "clones": 13,
+    "duplicatedLines": 73,
+    "percentage": 7.73
+   },
+   {
+    "format": "markdown",
+    "sources": 54,
+    "lines": 5395,
+    "clones": 5,
+    "duplicatedLines": 32,
+    "percentage": 0.59
+   },
+   {
+    "format": "txt",
+    "sources": 7,
+    "lines": 2422,
+    "clones": 2,
+    "duplicatedLines": 12,
+    "percentage": 0.5
+   },
+   {
+    "format": "cpp",
+    "sources": 2,
+    "lines": 647,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 0.93
+   },
+   {
+    "format": "diff",
+    "sources": 1,
+    "lines": 54,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 12.96
+   },
+   {
+    "format": "csv",
+    "sources": 24,
+    "lines": 412,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "c-header",
+    "sources": 4,
+    "lines": 235,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 1,
+    "lines": 168,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 1,
+    "lines": 96,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 174,
+    "first": {
+     "name": "tests/test_pipeline_run.py",
+     "start": 558,
+     "end": 568
+    },
+    "others": [
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 616,
+      "end": 626
+     },
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 664,
+      "end": 674
+     },
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 772,
+      "end": 782
+     },
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 823,
+      "end": 833
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "    bboxes=[np.array([1, 1, 5, 5], dtype=np.float32)] * 2,",
+      "    masks=[torch.zeros((2, 2), dtype=torch.bool)] * 2,",
+      ")",
+      "pr = PrimaryRestoreResult(",
+      "    track_id=clip.track_id, start_frame=clip.start_frame,",
+      "    frame_count=2, frame_shape=(8, 8), frame_device=torch.device(\"cpu\"),",
+      "    masks=clip.masks, primary_raw=torch.zeros((2, 3, 256, 256)),",
+      "    keep_start=0, keep_end=2, crossfade_weights=None,",
+      "    enlarged_bboxes=[(1, 1, 5, 5)] * 2, crop_shapes=[(4, 4)] * 2,",
+      "    pad_offsets=[(126, 126)] * 2, resize_shapes=[(4, 4)] * 2,"
+     ],
+     "total": 11
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 30,
+    "tokens": 303,
+    "first": {
+     "name": "tests/test_pipeline_run.py",
+     "start": 438,
+     "end": 467
+    },
+    "others": [
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 488,
+      "end": 517
+     },
+     {
+      "name": "tests/test_pipeline_run_sync.py",
+      "start": 266,
+      "end": 297
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "batches = [(frames_t, [0, 1])]",
+      "reader_cls, _, _ = _make_two_readers(batches)",
+      "",
+      "mock_encoder = MagicMock()",
+      "mock_encoder.__enter__ = MagicMock(return_value=mock_encoder)",
+      "mock_encoder.__exit__ = MagicMock(return_value=False)",
+      "",
+      "clip = TrackedClip(",
+      "    track_id=1, start_frame=0, mask_resolution=(2, 2),",
+      "    bboxes=[np.array([1, 1, 5, 5], dtype=np.float32)] * 2,"
+     ],
+     "total": 30
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 60,
+    "tokens": 474,
+    "first": {
+     "name": "tests/test_pipeline_run.py",
+     "start": 255,
+     "end": 314
+    },
+    "others": [
+     {
+      "name": "tests/test_pipeline_run_sync.py",
+      "start": 112,
+      "end": 171
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "p = _make_pipeline()",
+      "",
+      "frames_t = torch.randint(0, 256, (2, 3, 8, 8), dtype=torch.uint8)",
+      "batches = [(frames_t, [0, 1])]",
+      "reader_cls, _, _ = _make_two_readers(batches)",
+      "",
+      "mock_encoder = MagicMock()",
+      "mock_encoder.__enter__ = MagicMock(return_value=mock_encoder)",
+      "mock_encoder.__exit__ = MagicMock(return_value=False)",
+      ""
+     ],
+     "total": 60
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 38,
+    "tokens": 381,
+    "first": {
+     "name": "tests/test_pipeline_run.py",
+     "start": 553,
+     "end": 590
+    },
+    "others": [
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 706,
+      "end": 743
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 41,
+    "tokens": 369,
+    "first": {
+     "name": "tests/test_pipeline_run.py",
+     "start": 438,
+     "end": 478
+    },
+    "others": [
+     {
+      "name": "tests/test_pipeline_run_sync.py",
+      "start": 214,
+      "end": 256
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 72,
+    "first": {
+     "name": "tests/test_pipeline_run.py",
+     "start": 443,
+     "end": 449
+    },
+    "others": [
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 554,
+      "end": 560
+     },
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 612,
+      "end": 618
+     },
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 660,
+      "end": 666
+     },
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 768,
+      "end": 774
+     },
+     {
+      "name": "tests/test_pipeline_run.py",
+      "start": 819,
+      "end": 825
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 13,
+    "tokens": 119,
+    "first": {
+     "name": "tests/test_restoration_pipeline.py",
+     "start": 355,
+     "end": 367
+    },
+    "others": [
+     {
+      "name": "tests/test_restoration_pipeline.py",
+      "start": 394,
+      "end": 406
+     },
+     {
+      "name": "tests/test_restoration_pipeline.py",
+      "start": 437,
+      "end": 449
+     },
+     {
+      "name": "tests/test_restoration_pipeline.py",
+      "start": 478,
+      "end": 490
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 6,
+    "tokens": 162,
+    "first": {
+     "name": "README.ja.md:markdown",
+     "start": 237,
+     "end": 242
+    },
+    "others": [
+     {
+      "name": "README.md:markdown",
+      "start": 243,
+      "end": 248
+     },
+     {
+      "name": "README.zh.md:markdown",
+      "start": 227,
+      "end": 232
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 26,
+    "tokens": 265,
+    "first": {
+     "name": "jasna/ltx/trial_shapes.py",
+     "start": 12,
+     "end": 37
+    },
+    "others": [
+     {
+      "name": "jasna/ltx/trial_shapes.py",
+      "start": 77,
+      "end": 102
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "bash",
+    "lines": 136,
+    "tokens": 127,
+    "first": {
+     "name": "docs/en/cli.md:bash",
+     "start": 169,
+     "end": 304
+    },
+    "others": [
+     {
+      "name": "docs/ja/cli.md:bash",
+      "start": 171,
+      "end": 307
+     },
+     {
+      "name": "docs/zh/cli.md:bash",
+      "start": 163,
+      "end": 291
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 203,
+   "lines": 53192,
+   "tokens": 365129,
+   "clones": 48,
+   "duplicatedLines": 524,
+   "duplicatedTokens": 3963,
+   "percentage": 0.99,
+   "percentageTokens": 1.09,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 185,
+     "lines": 51351,
+     "clones": 47,
+     "duplicatedLines": 518,
+     "percentage": 1.01
+    },
+    {
+     "format": "cpp",
+     "sources": 2,
+     "lines": 647,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 0.93
+    },
+    {
+     "format": "bash",
+     "sources": 11,
+     "lines": 791,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c-header",
+     "sources": 4,
+     "lines": 235,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 265,
+     "first": {
+      "name": "jasna/ltx/trial_shapes.py",
+      "start": 12,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "jasna/ltx/trial_shapes.py",
+       "start": 77,
+       "end": 102
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "'int8': {",
+       "    'top': {",
+       "        'adaln_single.emb.timestep_embedder.linear_1.bias': ('BF16', (4096,)),",
+       "        'adaln_single.emb.timestep_embedder.linear_1.weight': ('BF16', (4096, 256)),",
+       "        'adaln_single.emb.timestep_embedder.linear_2.bias': ('BF16', (4096,)),",
+       "        'adaln_single.emb.timestep_embedder.linear_2.weight': ('BF16', (4096, 4096)),",
+       "        'adaln_single.linear.bias': ('BF16', (36864,)),",
+       "        'adaln_single.linear.weight': ('BF16', (36864, 4096)),",
+       "        'keyframes_abs_pos_embedding': ('BF16', (1, 4096)),",
+       "        'patchify_proj.bias': ('BF16', (4096,)),"
+      ],
+      "total": 26
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 32,
+     "tokens": 209,
+     "first": {
+      "name": "jasna/models/basicvsrpp/mmagic/pixelwise_loss.py",
+      "start": 81,
+      "end": 112
+     },
+     "others": [
+      {
+       "name": "jasna/models/basicvsrpp/mmagic/pixelwise_loss.py",
+       "start": 130,
+       "end": 161
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        (argument of `forward()`) is not None. It will first reduce loss",
+       "        with 'mean' per-sample, and then it means over all the samples.",
+       "        Default: False.",
+       "\"\"\"",
+       "",
+       "def __init__(self,",
+       "             loss_weight: float = 1.0,",
+       "             reduction: str = 'mean',",
+       "             sample_wise: bool = False) -> None:",
+       "    super().__init__()"
+      ],
+      "total": 32
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 66,
+     "first": {
+      "name": "jasna/gui/settings_sections/advanced.py",
+      "start": 25,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "jasna/gui/settings_sections/basic.py",
+       "start": 40,
+       "end": 46
+      },
+      {
+       "name": "jasna/gui/settings_sections/encoding.py",
+       "start": 34,
+       "end": 40
+      },
+      {
+       "name": "jasna/gui/settings_sections/image_restoration.py",
+       "start": 21,
+       "end": 27
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "section = CollapsibleSection(parent, t(\"section_advanced\"), expanded=False)",
+       "section.pack(fill=\"x\", pady=(0, Sizing.PADDING_SMALL))",
+       "content = section.content",
+       "content.configure(corner_radius=Sizing.BORDER_RADIUS)",
+       "",
+       "inner = ctk.CTkFrame(content, fg_color=\"transparent\")",
+       "inner.pack(fill=\"x\", padx=Sizing.PADDING_MEDIUM, pady=Sizing.PADDING_MEDIUM)"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 21,
+     "tokens": 147,
+     "first": {
+      "name": "jasna/models/basicvsrpp/basicvsrpp_gan.py",
+      "start": 50,
+      "end": 70
+     },
+     "others": [
+      {
+       "name": "jasna/models/basicvsrpp/mmagic/real_basicvsr.py",
+       "start": 41,
+       "end": 61
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 71,
+     "first": {
+      "name": "jasna/gui/settings_sections/basic.py",
+      "start": 40,
+      "end": 46
+     },
+     "others": [
+      {
+       "name": "jasna/gui/settings_sections/post_export.py",
+       "start": 16,
+       "end": 22
+      },
+      {
+       "name": "jasna/gui/settings_sections/restoration_model.py",
+       "start": 79,
+       "end": 85
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 70,
+     "first": {
+      "name": "jasna/models/basicvsrpp/mmagic/loss_wrapper.py",
+      "start": 43,
+      "end": 48
+     },
+     "others": [
+      {
+       "name": "jasna/models/basicvsrpp/mmagic/pixelwise_loss.py",
+       "start": 127,
+       "end": 132
+      },
+      {
+       "name": "jasna/models/basicvsrpp/mmagic/pixelwise_loss.py",
+       "start": 180,
+       "end": 185
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 130,
+     "first": {
+      "name": "scripts/benchmark_decode_backends.py",
+      "start": 80,
+      "end": 94
+     },
+     "others": [
+      {
+       "name": "scripts/benchmark_scan_backends.py",
+       "start": 82,
+       "end": 96
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 118,
+     "first": {
+      "name": "jasna/models/basicvsrpp/mmagic/pixelwise_loss.py",
+      "start": 99,
+      "end": 112
+     },
+     "others": [
+      {
+       "name": "jasna/models/basicvsrpp/mmagic/pixelwise_loss.py",
+       "start": 205,
+       "end": 218
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 20,
+     "tokens": 117,
+     "first": {
+      "name": "scripts/bench_memory.py",
+      "start": 51,
+      "end": 70
+     },
+     "others": [
+      {
+       "name": "scripts/benchmark_lada_flatpak.py",
+       "start": 106,
+       "end": 125
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 19,
+     "tokens": 110,
+     "first": {
+      "name": "scripts/benchmark_lada_flatpak.py",
+      "start": 215,
+      "end": 233
+     },
+     "others": [
+      {
+       "name": "scripts/benchmark_releases.py",
+       "start": 226,
+       "end": 244
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 71.1,
+   "grade": "B",
+   "size": {
+    "lines": 99523,
+    "files": 394,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.5,
+     "adjusted": 3.5,
+     "lines": 3475,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash",
+      "cpp",
+      "c-header",
+      "perl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 75.2
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.2,
+     "adjusted": 0.3,
+     "lines": 236,
+     "halfLife": 7.5,
+     "coverage": 98.2,
+     "weight": 0.982,
+     "score": 97.3
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 51.3,
+     "adjusted": 50.7,
+     "lines": 51044,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 49.5
+    }
+   ]
+  },
+  "complexity": {
+   "total": 13313,
+   "mean": 33.8,
+   "files": [
+    {
+     "path": "jasna/gui/segment_editor.py",
+     "complexity": 454,
+     "lines": 2333,
+     "bytes": 96668
+    },
+    {
+     "path": "jasna/ltx/restore.py",
+     "complexity": 206,
+     "lines": 1005,
+     "bytes": 39781
+    },
+    {
+     "path": "jasna/media/video_encoder.py",
+     "complexity": 200,
+     "lines": 1060,
+     "bytes": 41525
+    },
+    {
+     "path": "jasna/gui/video_player.py",
+     "complexity": 191,
+     "lines": 1121,
+     "bytes": 40847
+    },
+    {
+     "path": "jasna/gui/queue_panel.py",
+     "complexity": 189,
+     "lines": 866,
+     "bytes": 34873
+    },
+    {
+     "path": "tests/test_streaming.py",
+     "complexity": 177,
+     "lines": 1581,
+     "bytes": 61079
+    },
+    {
+     "path": "jasna/media/splice.py",
+     "complexity": 160,
+     "lines": 697,
+     "bytes": 24754
+    },
+    {
+     "path": "jasna/ltx/plan.py",
+     "complexity": 158,
+     "lines": 597,
+     "bytes": 24273
+    },
+    {
+     "path": "jasna/main.py",
+     "complexity": 157,
+     "lines": 1127,
+     "bytes": 41038
+    },
+    {
+     "path": "tests/test_segment_editor.py",
+     "complexity": 148,
+     "lines": 1402,
+     "bytes": 51148
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.24,
+   "findings": 48,
+   "files": 385,
+   "byCategory": [
+    {
+     "category": "unused-export",
+     "count": 29
+    },
+    {
+     "category": "unused-import",
+     "count": 19
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/img_utils.py",
+     "name": "reorder_image",
+     "line": 80,
+     "lines": 30
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/img_utils.py",
+     "name": "to_numpy",
+     "line": 112,
+     "lines": 19
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/model_utils.py",
+     "name": "build_module",
+     "line": 88,
+     "lines": 19
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/model_utils.py",
+     "name": "get_module_device",
+     "line": 52,
+     "lines": 18
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/pixelwise_loss.py",
+     "name": "tv_loss",
+     "line": 63,
+     "lines": 6
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/registry.py",
+     "name": "RUNNERS",
+     "line": 44,
+     "lines": 6
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/registry.py",
+     "name": "RUNNER_CONSTRUCTORS",
+     "line": 51,
+     "lines": 6
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/registry.py",
+     "name": "LOOPS",
+     "line": 58,
+     "lines": 6
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/registry.py",
+     "name": "HOOKS",
+     "line": 65,
+     "lines": 6
+    },
+    {
+     "category": "unused-export",
+     "path": "jasna/models/basicvsrpp/mmagic/registry.py",
+     "name": "LOG_PROCESSORS",
+     "line": 72,
+     "lines": 6
+    }
+   ]
+  }
+ }
+}

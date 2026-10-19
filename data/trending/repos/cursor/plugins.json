@@ -49,62 +49,78 @@
    "codeSources": 73,
    "healthScore": 35.8,
    "healthGrade": "E"
+  },
+  {
+   "date": "2026-10-19",
+   "rank": 2,
+   "stars": 12829,
+   "starsToday": 350,
+   "headSha": "7b353f78f6ec193bdbe48ed8059444eb09b6878e",
+   "sources": 631,
+   "lines": 57230,
+   "clones": 219,
+   "duplicatedLines": 15130,
+   "percentage": 26.44,
+   "codePercentage": 26.17,
+   "codeSources": 74,
+   "healthScore": 35.9,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-10-17",
-  "generatedAt": "2026-10-17T05:27:08.447Z",
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T05:30:13.170Z",
   "name": "cursor/plugins",
   "url": "https://github.com/cursor/plugins",
   "description": "Cursor plugin specification and official plugins",
   "language": "TypeScript",
-  "stars": 12043,
-  "starsToday": 278,
+  "stars": 12829,
+  "starsToday": 350,
   "defaultBranch": "main",
-  "headSha": "101b274dd991f694e1f7024be2157e5f3adf07de",
-  "durationMs": 1208,
+  "headSha": "7b353f78f6ec193bdbe48ed8059444eb09b6878e",
+  "durationMs": 1218,
   "total": {
-   "sources": 602,
-   "lines": 55076,
-   "tokens": 461964,
-   "clones": 197,
-   "duplicatedLines": 13391,
-   "duplicatedTokens": 123954,
-   "percentage": 24.31,
-   "percentageTokens": 26.83
+   "sources": 631,
+   "lines": 57230,
+   "tokens": 496980,
+   "clones": 219,
+   "duplicatedLines": 15130,
+   "duplicatedTokens": 149016,
+   "percentage": 26.44,
+   "percentageTokens": 29.98
   },
   "formats": [
    {
     "format": "markdown",
-    "sources": 354,
-    "lines": 20214,
-    "clones": 122,
-    "duplicatedLines": 4915,
-    "percentage": 24.31
+    "sources": 370,
+    "lines": 22008,
+    "clones": 132,
+    "duplicatedLines": 6488,
+    "percentage": 29.48
    },
    {
     "format": "typescript",
     "sources": 99,
-    "lines": 28810,
+    "lines": 28816,
     "clones": 61,
-    "duplicatedLines": 7646,
+    "duplicatedLines": 7649,
     "percentage": 26.54
+   },
+   {
+    "format": "text",
+    "sources": 37,
+    "lines": 457,
+    "clones": 13,
+    "duplicatedLines": 178,
+    "percentage": 38.95
    },
    {
     "format": "json",
     "sources": 33,
-    "lines": 2547,
+    "lines": 2567,
     "clones": 5,
     "duplicatedLines": 383,
-    "percentage": 15.04
-   },
-   {
-    "format": "text",
-    "sources": 28,
-    "lines": 324,
-    "clones": 4,
-    "duplicatedLines": 51,
-    "percentage": 15.74
+    "percentage": 14.92
    },
    {
     "format": "bash",
@@ -115,12 +131,20 @@
     "percentage": 12.66
    },
    {
+    "format": "mermaid",
+    "sources": 8,
+    "lines": 97,
+    "clones": 3,
+    "duplicatedLines": 36,
+    "percentage": 37.11
+   },
+   {
     "format": "javascript",
-    "sources": 6,
-    "lines": 935,
+    "sources": 7,
+    "lines": 1100,
     "clones": 1,
     "duplicatedLines": 204,
-    "percentage": 21.82
+    "percentage": 18.55
    },
    {
     "format": "yaml",
@@ -142,14 +166,6 @@
     "format": "css",
     "sources": 1,
     "lines": 96,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "mermaid",
-    "sources": 5,
-    "lines": 61,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -189,6 +205,40 @@
      "total": 1677
     },
     "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 281,
+    "tokens": 5612,
+    "first": {
+     "name": "harness/pstack/claude-code/README.md:markdown",
+     "start": 1,
+     "end": 281
+    },
+    "others": [
+     {
+      "name": "pstack/README.md:markdown",
+      "start": 1,
+      "end": 281
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# pstack",
+      "",
+      "i'm [poteto](https://x.com/poteto). i'm not a president or ceo, but i've worked with millions of lines of code at Meta, Netflix, and Cursor. i'm also on the re…",
+      "",
+      "there's a growing sense that ai writes too much slop code. i agree. i don't want to ship like a team of twenty slop artists. throughput without quality is not …",
+      "",
+      "**pstack is my answer.** these are the same skills i use every day to ship high quality code at Cursor. this turns cursor into a real engineering team. the goa…",
+      "",
+      "**pstack gives you fearless parallelism.** when you can go deep on one agent and trust it to write good, verifiable code, you can truly parallelize with confid…",
+      ""
+     ],
+     "total": 281
+    },
+    "kind": "docs"
    },
    {
     "format": "typescript",
@@ -241,21 +291,6 @@
      }
     ],
     "copies": 2,
-    "excerpt": {
-     "lines": [
-      "import { spawn } from \"node:child_process\";",
-      "import type * as T from \"./types.ts\";",
-      "import { nonEmpty, parsePrNumber } from \"./types.ts\";",
-      "export const REVIEW_THREADS_QUERY =",
-      "  \"\\nquery ReviewThreads($owner: String!, $repo: String!, $pr: Int!, $after: String) {\\n  repository(owner: $owner, name: $repo) {\\n    pullRequest(number: $pr…",
-      "export const PR_COMMIT_STATUS_QUERY =",
-      "  \"\\nquery PrCommitStatuses($owner: String!, $repo: String!, $pr: Int!) {\\n  repository(owner: $owner, name: $repo) {\\n    pullRequest(number: $pr) {\\n      co…",
-      "export const PR_CHECK_ROLLUP_QUERY =",
-      "  \"\\nquery PrCheckRollup($owner: String!, $repo: String!, $pr: Int!, $after: String) {\\n  repository(owner: $owner, name: $repo) {\\n    pullRequest(number: $pr…",
-      ""
-     ],
-     "total": 718
-    },
     "kind": "code"
    },
    {
@@ -291,6 +326,25 @@
       "name": "pstack/skills/poteto-mode/SKILL.md:markdown",
       "start": 11,
       "end": 149
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 153,
+    "tokens": 3302,
+    "first": {
+     "name": "harness/pstack/claude-code/skills/poteto-help/SKILL.md:markdown",
+     "start": 11,
+     "end": 163
+    },
+    "others": [
+     {
+      "name": "pstack/skills/poteto-help/SKILL.md:markdown",
+      "start": 9,
+      "end": 161
      }
     ],
     "copies": 2,
@@ -352,55 +406,17 @@
     ],
     "copies": 2,
     "kind": "tests"
-   },
-   {
-    "format": "typescript",
-    "lines": 436,
-    "tokens": 2395,
-    "first": {
-     "name": "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/github.test.ts",
-     "start": 1,
-     "end": 436
-    },
-    "others": [
-     {
-      "name": "pstack/skills/poteto-mode/scripts/watch-pr/github.test.ts",
-      "start": 1,
-      "end": 436
-     }
-    ],
-    "copies": 2,
-    "kind": "tests"
-   },
-   {
-    "format": "javascript",
-    "lines": 204,
-    "tokens": 2231,
-    "first": {
-     "name": "harness/pstack/claude-code/skills/poteto-mode/scripts/check-plan.mjs",
-     "start": 2,
-     "end": 205
-    },
-    "others": [
-     {
-      "name": "pstack/skills/poteto-mode/scripts/check-plan.mjs",
-      "start": 2,
-      "end": 205
-     }
-    ],
-    "copies": 2,
-    "kind": "code"
    }
   ],
   "code": {
-   "sources": 73,
-   "lines": 20475,
-   "tokens": 117193,
+   "sources": 74,
+   "lines": 20640,
+   "tokens": 119134,
    "clones": 24,
    "duplicatedLines": 5401,
    "duplicatedTokens": 32820,
-   "percentage": 26.38,
-   "percentageTokens": 28.01,
+   "percentage": 26.17,
+   "percentageTokens": 27.55,
    "formats": [
     {
      "format": "typescript",
@@ -420,11 +436,11 @@
     },
     {
      "format": "javascript",
-     "sources": 5,
-     "lines": 909,
+     "sources": 6,
+     "lines": 1074,
      "clones": 1,
      "duplicatedLines": 204,
-     "percentage": 22.44
+     "percentage": 18.99
     },
     {
      "format": "perl",
@@ -679,19 +695,19 @@
    }
   },
   "health": {
-   "score": 35.8,
+   "score": 35.9,
    "grade": "E",
    "size": {
-    "lines": 30295,
-    "files": 112,
+    "lines": 30460,
+    "files": 113,
     "class": "M"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 26.1,
-     "adjusted": 24.7,
+     "value": 25.9,
+     "adjusted": 24.5,
      "lines": 7895,
      "halfLife": 8.5,
      "formats": [
@@ -706,7 +722,7 @@
       "data"
      ],
      "weight": 1,
-     "score": 13.4
+     "score": 13.5
     },
     {
      "id": "dead-code",
@@ -717,23 +733,23 @@
      "halfLife": 7.5,
      "coverage": 95,
      "weight": 0.95,
-     "score": 75.8
+     "score": 75.9
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 56.9,
-     "adjusted": 54.7,
-     "lines": 17241,
+     "value": 57.1,
+     "adjusted": 54.9,
+     "lines": 17406,
      "halfLife": 50,
      "weight": 1,
-     "score": 46.9
+     "score": 46.7
     }
    ]
   },
   "complexity": {
-   "total": 5085,
-   "mean": 45.4,
+   "total": 5162,
+   "mean": 45.7,
    "files": [
     {
      "path": "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
@@ -798,9 +814,9 @@
    ]
   },
   "deadCode": {
-   "percentage": 2.99,
+   "percentage": 2.98,
    "findings": 6,
-   "files": 93,
+   "files": 94,
    "byCategory": [
     {
      "category": "unused-file",
