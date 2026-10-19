@@ -10,9 +10,13 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 // what fits one screen, except the semantic and
 // compare screens, which copy the output documented in
 // fixtures/semantic-demo/README.md and fixtures/compare-demo/README.md
-// because both need the 548 MB embedding model; the lines starting with # or
-// // are comments added here. Keep this in step with the fixtures' READMEs when the
-// output changes. Backticks in a caption render as code.
+// because both need the 548 MB embedding model, and the boundaries screen,
+// which a master build after 5.4.1 printed in fixtures/boundaries-demo, as its
+// README documents. Its rule leaves out the demo's thresholds, the same three
+// copies turn up without them. The lines starting with # or // and the # note
+// after a command are comments added here. Keep this in step with the
+// fixtures' READMEs when the output changes. Backticks in a caption render as
+// code.
 type Seg = [cls: string, text: string]
 
 interface Slide {
@@ -114,6 +118,30 @@ const slides: Slide[] = [
       [['dim', '   frontend/src/lib/components/Pager.svelte:typescript [12:3 - 30:4]']],
       [['dim', '... six more pairs ...']],
       [['ok', 'Found 8 clones.']]
+    ]
+  },
+  {
+    id: 'boundaries',
+    label: 'Boundaries',
+    title: 'Code that stays in its module',
+    caption: 'A `boundaries` rule in `.jscpd.json` names the code of a module, a folder, a file or a method and the places its copies must stay out of. A copy there fails the run, whether pasted, edited or written again in another language.',
+    to: '/guides/boundaries',
+    linkLabel: 'Boundaries guide',
+    screenTitle: 'fixtures/boundaries-demo',
+    lines: [
+      [['cmt', '// the rule in .jscpd.json']],
+      [['', '{ "name": "money", "code": ["backend/pricing", "backend/loans/Interest.kt#monthlyPayment"],']],
+      [['', '  "notIn": ["web/**"], "allow": ["web/e2e/**"] }']],
+      [['p', '$ '], ['cmd', 'jscpd .'], ['cmt', '   # after the clone report:']],
+      [['b', 'Boundaries:']],
+      [['b', 'money'], ['', ': '], ['err', '3 copies outside the boundary']],
+      [['', '  web/src/checkout/discount.ts:8-17 applyDiscount']],
+      [['dim', '    copy of backend/pricing/discount.ts:6-15 applyDiscount (exact, 10 lines)']],
+      [['', '  web/src/checkout/tax.ts:6-15 estimateTax']],
+      [['dim', '    looks like backend/pricing/tax.ts:5-13 salesTax ('], ['warn', 'similar (ast) ~0.84'], ['dim', ')']],
+      [['', '  web/src/loan/payment.ts:4-14 monthlyPayment']],
+      [['dim', '    looks like backend/loans/Interest.kt:8-15 monthlyPayment ('], ['warn', 'semantic ~0.82'], ['dim', ')']],
+      [['err', 'ERROR: jscpd found 3 copies of protected code outside their boundaries (money: 3)']]
     ]
   },
   {

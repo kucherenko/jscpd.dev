@@ -56,7 +56,7 @@ class: landing-explorer
 What <span class="hero-gradient">jscpd</span> does
 
 #description
-One binary, ten jobs. Each tab shows the command and what it prints on a demo fixture from the jscpd repository.
+One binary, eleven jobs. Each tab shows the command and what it prints on a demo fixture from the jscpd repository.
 
 #default
   :feature-slides
