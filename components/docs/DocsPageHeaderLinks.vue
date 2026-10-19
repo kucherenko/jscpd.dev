@@ -3,14 +3,9 @@
 // Analytics (composables/usePageViews.ts), then docus's own "Copy page" menu.
 // The name is docus's, so its docs page renders this one.
 import DocusPageHeaderLinks from 'docus/app/components/docs/DocsPageHeaderLinks.vue'
-import { loadPageViews, MIN_VIEWS_SHOWN, viewsLabel } from '~/composables/usePageViews'
+import { usePageViewsLabel } from '~/composables/usePageViews'
 
-const route = useRoute()
-const { data: views } = await useAsyncData(`page-views-${route.path}`, () => loadPageViews([route.path]))
-const label = computed(() => {
-  const n = views.value?.[route.path]?.views ?? 0
-  return n >= MIN_VIEWS_SHOWN ? viewsLabel(n) : ''
-})
+const label = await usePageViewsLabel(useRoute().path)
 </script>
 
 <template>

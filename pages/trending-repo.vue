@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { codeMetric, hasTrendingRepo, latestTrendingDate, loadTrendingRepo } from '~/composables/useTrendingData'
+import { usePageViewsLabel } from '~/composables/usePageViews'
 
 definePageMeta({ layout: 'default', key: route => route.path })
 
@@ -16,6 +17,7 @@ if (error.value || !data.value) {
   throw createError({ statusCode: 500, statusMessage: `Trending data for ${name} failed to load: ${error.value?.message ?? 'empty'}`, fatal: true })
 }
 const record = computed(() => data.value!)
+const views = await usePageViewsLabel(route.path)
 const repo = computed(() => record.value.latest)
 const code = computed(() => codeMetric(repo.value))
 const latestAppearance = computed(() => record.value.appearances[record.value.appearances.length - 1]!)
@@ -60,13 +62,16 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
 
 <template>
   <div class="repo-page">
-    <nav class="repo-breadcrumb" aria-label="Breadcrumb">
-      <NuxtLink to="/trending">Trending</NuxtLink>
-      <span class="crumb-sep">/</span>
-      <NuxtLink :to="trendingDayPath(repo.date, latestTrendingDate)">{{ formatDay(repo.date, { month: 'short', day: 'numeric', year: 'numeric' }) }}</NuxtLink>
-      <span class="crumb-sep">/</span>
-      <span>{{ repo.name }}</span>
-    </nav>
+    <div class="repo-top">
+      <nav class="repo-breadcrumb" aria-label="Breadcrumb">
+        <NuxtLink to="/trending">Trending</NuxtLink>
+        <span class="crumb-sep">/</span>
+        <NuxtLink :to="trendingDayPath(repo.date, latestTrendingDate)">{{ formatDay(repo.date, { month: 'short', day: 'numeric', year: 'numeric' }) }}</NuxtLink>
+        <span class="crumb-sep">/</span>
+        <span>{{ repo.name }}</span>
+      </nav>
+      <span v-if="views" class="page-views">{{ views }}</span>
+    </div>
 
     <header class="repo-hero">
       <h1 class="repo-title">
@@ -143,6 +148,21 @@ useHead({ link: [{ rel: 'canonical', href: `https://jscpd.dev${trendingRepoPath(
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+}
+
+.repo-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+}
+
+.page-views {
+  margin-left: auto;
+  font-size: 0.8125rem;
+  color: var(--ui-text-muted, #64748b);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .repo-breadcrumb {
