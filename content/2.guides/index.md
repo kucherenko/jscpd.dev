@@ -24,3 +24,4 @@ The reference pages say what a flag does; these pages say when to reach for it a
 | [Comparing two codebases](/guides/compare) | `--compare`: how far a port has come, or two implementations of one app checked for parity (5.4.0+, experimental) |
 | [Semantic clones](/guides/semantic-clones) | `--semantic`: functions that do the same job with different code, in one language or across two (5.3.3+, experimental) |
 | [Similar functions](/guides/similarity) | `--similarity`: functions with the same structure in 15 languages, renamed and lightly edited copies included, and how the score works |
+| [Boundaries](/guides/boundaries) | Rules in the config file that keep the code of a module, a folder, a file or a method inside its boundary, and fail the run when a copy shows up outside it |
