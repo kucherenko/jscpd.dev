@@ -54,6 +54,13 @@ const REFRESH_DAYS = 2
 const SAMPLED_FROM = 5
 const CHUNK_DAYS = 7
 const GROUP_LIMIT = 5000
+// The API now and then answers the site lookup with no page loads for a
+// while. On 2026-10-19 it came back empty at 08:01 UTC and with 3980 page
+// loads of the last 7 days at 08:33. The lookup asks again before the run
+// fails. A run that fails anyway leaves no hole, because the next one starts
+// from the last stored day.
+const LOOKUP_ATTEMPTS = 5
+const LOOKUP_WAIT_MS = 3 * 60_000
 
 const token = process.env.CLOUDFLARE_ANALYTICS_TOKEN
 const account = process.env.CLOUDFLARE_ACCOUNT_ID
@@ -62,6 +69,7 @@ const day = (date) => date.toISOString().slice(0, 10)
 const addDays = (date, n) => new Date(date.getTime() + n * 86_400_000)
 const utcMidnight = (date) => new Date(`${day(date)}T00:00:00Z`)
 const lit = (value) => JSON.stringify(value)
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 async function query(body) {
   const res = await fetch(API, {
@@ -168,11 +176,19 @@ async function lastStoredDay() {
 /** The site tag whose page loads come from the production host, from the last week of traffic. */
 async function discoverSiteTag(now) {
   const since = addDays(now, -7).toISOString()
-  const data = await query(`sites: rumPageloadEventsAdaptiveGroups(limit: 100, filter: { datetime_geq: ${lit(since)}, datetime_lt: ${lit(now.toISOString())}, requestHost_in: ${lit(HOSTS)} }, orderBy: [count_DESC]) { count dimensions { siteTag requestHost } }`)
-  const hit = data.sites.find((g) => g.count > 0)
-  if (!hit) throw new Error(`no Web Analytics site reports ${HOSTS.join(', ')} in the last 7 days; set CLOUDFLARE_SITE_TAG`)
-  console.log(`site tag ${hit.dimensions.siteTag} (${hit.dimensions.requestHost}, ${hit.count} page loads in the last 7 days)`)
-  return hit.dimensions.siteTag
+  for (let attempt = 1; ; attempt++) {
+    const data = await query(`sites: rumPageloadEventsAdaptiveGroups(limit: 100, filter: { datetime_geq: ${lit(since)}, datetime_lt: ${lit(now.toISOString())}, requestHost_in: ${lit(HOSTS)} }, orderBy: [count_DESC]) { count dimensions { siteTag requestHost } }`)
+    const hit = data.sites.find((g) => g.count > 0)
+    if (hit) {
+      console.log(`site tag ${hit.dimensions.siteTag} (${hit.dimensions.requestHost}, ${hit.count} page loads in the last 7 days)`)
+      return hit.dimensions.siteTag
+    }
+    if (attempt === LOOKUP_ATTEMPTS) {
+      throw new Error(`no Web Analytics site reports ${HOSTS.join(', ')} in the last 7 days, asked ${LOOKUP_ATTEMPTS} times; set CLOUDFLARE_SITE_TAG`)
+    }
+    console.log(`no page loads of ${HOSTS.join(', ')} in the last 7 days, asking again in ${LOOKUP_WAIT_MS / 60_000} minutes (${attempt}/${LOOKUP_ATTEMPTS})`)
+    await sleep(LOOKUP_WAIT_MS)
+  }
 }
 
 /** [from, to) in CHUNK_DAYS pieces, the last one ending at `now`. */
