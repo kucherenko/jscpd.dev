@@ -1,0 +1,1394 @@
+{
+ "name": "headroomlabs-ai/headroom",
+ "url": "https://github.com/headroomlabs-ai/headroom",
+ "appearances": [
+  {
+   "date": "2026-10-20",
+   "rank": 3,
+   "stars": 76359,
+   "starsToday": 310,
+   "headSha": "fbf7bc3278c11975299b9bd0a2ecf200dfd25a05",
+   "sources": 2476,
+   "lines": 805989,
+   "clones": 2922,
+   "duplicatedLines": 39058,
+   "percentage": 4.85,
+   "codePercentage": 2.78,
+   "codeSources": 830,
+   "healthScore": 65.2,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T05:29:47.500Z",
+  "name": "headroomlabs-ai/headroom",
+  "url": "https://github.com/headroomlabs-ai/headroom",
+  "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+  "language": "Python",
+  "stars": 76359,
+  "starsToday": 310,
+  "defaultBranch": "main",
+  "headSha": "fbf7bc3278c11975299b9bd0a2ecf200dfd25a05",
+  "durationMs": 4608,
+  "total": {
+   "sources": 2476,
+   "lines": 805989,
+   "tokens": 4434912,
+   "clones": 2922,
+   "duplicatedLines": 39058,
+   "duplicatedTokens": 214981,
+   "percentage": 4.85,
+   "percentageTokens": 4.85
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 1680,
+    "lines": 620911,
+    "clones": 1906,
+    "duplicatedLines": 25446,
+    "percentage": 4.1
+   },
+   {
+    "format": "rust",
+    "sources": 216,
+    "lines": 89993,
+    "clones": 593,
+    "duplicatedLines": 6913,
+    "percentage": 7.68
+   },
+   {
+    "format": "json",
+    "sources": 212,
+    "lines": 11270,
+    "clones": 128,
+    "duplicatedLines": 2732,
+    "percentage": 24.24
+   },
+   {
+    "format": "javascript",
+    "sources": 7,
+    "lines": 14779,
+    "clones": 126,
+    "duplicatedLines": 1991,
+    "percentage": 13.47
+   },
+   {
+    "format": "typescript",
+    "sources": 95,
+    "lines": 18998,
+    "clones": 98,
+    "duplicatedLines": 1095,
+    "percentage": 5.76
+   },
+   {
+    "format": "yaml",
+    "sources": 39,
+    "lines": 5560,
+    "clones": 25,
+    "duplicatedLines": 281,
+    "percentage": 5.05
+   },
+   {
+    "format": "markdown",
+    "sources": 93,
+    "lines": 26699,
+    "clones": 18,
+    "duplicatedLines": 208,
+    "percentage": 0.78
+   },
+   {
+    "format": "powershell",
+    "sources": 6,
+    "lines": 2050,
+    "clones": 8,
+    "duplicatedLines": 88,
+    "percentage": 4.29
+   },
+   {
+    "format": "text",
+    "sources": 24,
+    "lines": 933,
+    "clones": 7,
+    "duplicatedLines": 26,
+    "percentage": 2.79
+   },
+   {
+    "format": "markup",
+    "sources": 7,
+    "lines": 4399,
+    "clones": 5,
+    "duplicatedLines": 62,
+    "percentage": 1.41
+   }
+  ],
+  "topClones": [
+   {
+    "format": "json",
+    "lines": 18,
+    "tokens": 63,
+    "first": {
+     "name": "tests/parity/fixtures/code_aware_compressor/07dd1a61089c1e53.json",
+     "start": 1,
+     "end": 18
+    },
+    "others": [
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/095be1adad76b588.json",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/1e319c5e33af4af1.json",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/2c239d4af41282c2.json",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/2d214f401618d639.json",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/36e5ff5093790e6f.json",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/3e706cfb03aa3c8e.json",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/411d5549bcd5f50d.json",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "tests/parity/fixtures/code_aware_compressor/420dd19a087526ca.json",
+      "start": 1,
+      "end": 18
+     }
+    ],
+    "copies": 24,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"config\": {",
+      "    \"ccr_ttl\": 300,",
+      "    \"compress_comments\": true,",
+      "    \"docstring_mode\": \"first_line\",",
+      "    \"enable_ccr\": false,",
+      "    \"fallback_to_kompress\": false,",
+      "    \"language_hint\": null,",
+      "    \"max_body_lines\": 5,",
+      "    \"min_tokens_for_compression\": 100,"
+     ],
+     "total": 18
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "headroom/providers/opencode/_dist/index.js",
+     "start": 4057,
+     "end": 4066
+    },
+    "others": [
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4333,
+      "end": 4342
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4575,
+      "end": 4584
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4843,
+      "end": 4852
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5345,
+      "end": 5354
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5591,
+      "end": 5600
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5944,
+      "end": 5953
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 6297,
+      "end": 6306
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 6415,
+      "end": 6424
+     }
+    ],
+    "copies": 23,
+    "excerpt": {
+     "lines": [
+      "  set: { unit: \"\\u0639\\u0646\\u0635\\u0631\", verb: \"\\u0623\\u0646 \\u064A\\u062D\\u0648\\u064A\" }",
+      "};",
+      "function getSizing(origin) {",
+      "  return Sizable[origin] ?? null;",
+      "}",
+      "const parsedType7 = (data) => {",
+      "  const t = typeof data;",
+      "  switch (t) {",
+      "    case \"number\": {",
+      "      return Number.isNaN(data) ? \"NaN\" : \"number\";"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "  }",
+      "};",
+      "function getSizing(origin) {",
+      "  return Sizable[origin] ?? null;",
+      "}",
+      "const parsedType7 = (data) => {",
+      "  const t = typeof data;",
+      "  switch (t) {",
+      "    case \"number\": {",
+      "      return Number.isNaN(data) ? \"NaN\" : \"\\u043B\\u0456\\u043A\";"
+     ],
+     "total": 10
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 14,
+    "tokens": 51,
+    "first": {
+     "name": "headroom/providers/opencode/_dist/index.js",
+     "start": 4201,
+     "end": 4214
+    },
+    "others": [
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4482,
+      "end": 4495
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4620,
+      "end": 4633
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4751,
+      "end": 4764
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5252,
+      "end": 5265
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5618,
+      "end": 5631
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5735,
+      "end": 5748
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5971,
+      "end": 5984
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 6089,
+      "end": 6102
+     }
+    ],
+    "copies": 23,
+    "excerpt": {
+     "lines": [
+      "email: \"email address\",",
+      "url: \"URL\",",
+      "emoji: \"emoji\",",
+      "uuid: \"UUID\",",
+      "uuidv4: \"UUIDv4\",",
+      "uuidv6: \"UUIDv6\",",
+      "nanoid: \"nanoid\",",
+      "guid: \"GUID\",",
+      "cuid: \"cuid\",",
+      "cuid2: \"cuid2\","
+     ],
+     "total": 14
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 166,
+    "tokens": 1111,
+    "first": {
+     "name": "headroom/providers/opencode/_dist/index.js",
+     "start": 12757,
+     "end": 12922
+    },
+    "others": [
+     {
+      "name": "headroom/providers/opencode/hook-shim/handler.js",
+      "start": 266,
+      "end": 431
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 22,
+    "tokens": 58,
+    "first": {
+     "name": "tests/parity/fixtures/cache_aligner/0225460359a992d9.json",
+     "start": 1,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "tests/parity/fixtures/cache_aligner/231ab237501e106b.json",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "tests/parity/fixtures/cache_aligner/25683f67cbb74ece.json",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "tests/parity/fixtures/cache_aligner/31eb80356eeeb30d.json",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "tests/parity/fixtures/cache_aligner/336311b995b063d5.json",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "tests/parity/fixtures/cache_aligner/475e76a9f99c29ab.json",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "tests/parity/fixtures/cache_aligner/4b171a7f9af6e2d5.json",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "tests/parity/fixtures/cache_aligner/541daf83f5a1fda9.json",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "tests/parity/fixtures/cache_aligner/6502f683439de052.json",
+      "start": 1,
+      "end": 22
+     }
+    ],
+    "copies": 20,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 16,
+    "tokens": 55,
+    "first": {
+     "name": "tests/parity/fixtures/log_compressor/012c7bbeb96d95e9.json",
+     "start": 1,
+     "end": 16
+    },
+    "others": [
+     {
+      "name": "tests/parity/fixtures/log_compressor/1fbaf88e12686704.json",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "tests/parity/fixtures/log_compressor/23112ae8ae41ba59.json",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "tests/parity/fixtures/log_compressor/305987ea77c385e6.json",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "tests/parity/fixtures/log_compressor/349121068ecbb26e.json",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "tests/parity/fixtures/log_compressor/3bc015edc0a36387.json",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "tests/parity/fixtures/log_compressor/3bf3f8bd70c80dad.json",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "tests/parity/fixtures/log_compressor/5533a8264a04dd61.json",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "tests/parity/fixtures/log_compressor/566491aacda8af92.json",
+      "start": 1,
+      "end": 16
+     }
+    ],
+    "copies": 20,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 21,
+    "tokens": 74,
+    "first": {
+     "name": "tests/parity/fixtures/smart_crusher/dict_array_100_sequential_b91d1fff5ba3.json",
+     "start": 1,
+     "end": 21
+    },
+    "others": [
+     {
+      "name": "tests/parity/fixtures/smart_crusher/dict_array_30_b0ba1d26fd03.json",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "tests/parity/fixtures/smart_crusher/duplicate_dicts_40_40a0670dec17.json",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "tests/parity/fixtures/smart_crusher/empty_array_41ecf20098c5.json",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "tests/parity/fixtures/smart_crusher/mixed_array_3f929019b62f.json",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "tests/parity/fixtures/smart_crusher/nested_3deep_with_array_bb5036c153aa.json",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "tests/parity/fixtures/smart_crusher/nested_object_with_array_b66d43299ea1.json",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "tests/parity/fixtures/smart_crusher/non_json_passthrough_4322abf677f3.json",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "tests/parity/fixtures/smart_crusher/nulls_and_bools_06d6fd6adcab.json",
+      "start": 1,
+      "end": 21
+     }
+    ],
+    "copies": 15,
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 14,
+    "tokens": 52,
+    "first": {
+     "name": "headroom/providers/opencode/_dist/index.js",
+     "start": 4070,
+     "end": 4083
+    },
+    "others": [
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4346,
+      "end": 4359
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4606,
+      "end": 4619
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4856,
+      "end": 4869
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5358,
+      "end": 5371
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5604,
+      "end": 5617
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5957,
+      "end": 5970
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 6310,
+      "end": 6323
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 6428,
+      "end": 6441
+     }
+    ],
+    "copies": 19,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 20,
+    "tokens": 124,
+    "first": {
+     "name": "crates/headroom-proxy/tests/integration_responses.rs",
+     "start": 102,
+     "end": 121
+    },
+    "others": [
+     {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 154,
+      "end": 173
+     },
+     {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 205,
+      "end": 224
+     },
+     {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 295,
+      "end": 314
+     },
+     {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 383,
+      "end": 402
+     },
+     {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 441,
+      "end": 460
+     },
+     {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 494,
+      "end": 513
+     },
+     {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 887,
+      "end": 906
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 27,
+    "tokens": 122,
+    "first": {
+     "name": "headroom/providers/opencode/_dist/index.js",
+     "start": 4057,
+     "end": 4083
+    },
+    "others": [
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4174,
+      "end": 4200
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4455,
+      "end": 4481
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5472,
+      "end": 5498
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 5826,
+      "end": 5852
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 6062,
+      "end": 6088
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 6780,
+      "end": 6806
+     },
+     {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 9309,
+      "end": 9335
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 830,
+   "lines": 366407,
+   "tokens": 1883658,
+   "clones": 764,
+   "duplicatedLines": 10188,
+   "duplicatedTokens": 58285,
+   "percentage": 2.78,
+   "percentageTokens": 3.09,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 604,
+     "lines": 266263,
+     "clones": 393,
+     "duplicatedLines": 5273,
+     "percentage": 1.98
+    },
+    {
+     "format": "rust",
+     "sources": 154,
+     "lines": 72268,
+     "clones": 226,
+     "duplicatedLines": 2538,
+     "percentage": 3.51
+    },
+    {
+     "format": "javascript",
+     "sources": 7,
+     "lines": 14779,
+     "clones": 126,
+     "duplicatedLines": 1991,
+     "percentage": 13.47
+    },
+    {
+     "format": "typescript",
+     "sources": 36,
+     "lines": 6783,
+     "clones": 10,
+     "duplicatedLines": 140,
+     "percentage": 2.06
+    },
+    {
+     "format": "powershell",
+     "sources": 2,
+     "lines": 2000,
+     "clones": 8,
+     "duplicatedLines": 88,
+     "percentage": 4.4
+    },
+    {
+     "format": "sql",
+     "sources": 4,
+     "lines": 461,
+     "clones": 1,
+     "duplicatedLines": 158,
+     "percentage": 34.27
+    },
+    {
+     "format": "bash",
+     "sources": 20,
+     "lines": 3179,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "tsx",
+     "sources": 1,
+     "lines": 336,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c",
+     "sources": 1,
+     "lines": 170,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "perl",
+     "sources": 1,
+     "lines": 168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 10,
+     "tokens": 51,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4057,
+      "end": 4066
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4333,
+       "end": 4342
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4575,
+       "end": 4584
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4843,
+       "end": 4852
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5345,
+       "end": 5354
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5591,
+       "end": 5600
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5944,
+       "end": 5953
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6297,
+       "end": 6306
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6415,
+       "end": 6424
+      }
+     ],
+     "copies": 23,
+     "excerpt": {
+      "lines": [
+       "  set: { unit: \"\\u0639\\u0646\\u0635\\u0631\", verb: \"\\u0623\\u0646 \\u064A\\u062D\\u0648\\u064A\" }",
+       "};",
+       "function getSizing(origin) {",
+       "  return Sizable[origin] ?? null;",
+       "}",
+       "const parsedType7 = (data) => {",
+       "  const t = typeof data;",
+       "  switch (t) {",
+       "    case \"number\": {",
+       "      return Number.isNaN(data) ? \"NaN\" : \"number\";"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "  }",
+       "};",
+       "function getSizing(origin) {",
+       "  return Sizable[origin] ?? null;",
+       "}",
+       "const parsedType7 = (data) => {",
+       "  const t = typeof data;",
+       "  switch (t) {",
+       "    case \"number\": {",
+       "      return Number.isNaN(data) ? \"NaN\" : \"\\u043B\\u0456\\u043A\";"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 51,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4201,
+      "end": 4214
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4482,
+       "end": 4495
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4620,
+       "end": 4633
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4751,
+       "end": 4764
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5252,
+       "end": 5265
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5618,
+       "end": 5631
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5735,
+       "end": 5748
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5971,
+       "end": 5984
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6089,
+       "end": 6102
+      }
+     ],
+     "copies": 23,
+     "excerpt": {
+      "lines": [
+       "email: \"email address\",",
+       "url: \"URL\",",
+       "emoji: \"emoji\",",
+       "uuid: \"UUID\",",
+       "uuidv4: \"UUIDv4\",",
+       "uuidv6: \"UUIDv6\",",
+       "nanoid: \"nanoid\",",
+       "guid: \"GUID\",",
+       "cuid: \"cuid\",",
+       "cuid2: \"cuid2\","
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 166,
+     "tokens": 1111,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 12757,
+      "end": 12922
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/hook-shim/handler.js",
+       "start": 266,
+       "end": 431
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    return new URL(`${protocol}//${hostname3}${port}${path}`);",
+       "  } catch {",
+       "    return void 0;",
+       "  }",
+       "}",
+       "function headersForNodeRequest(options, upstream, originalPath, project, sessionToken) {",
+       "  const headers = new Headers(options.headers);",
+       "  headers.set(BASE_URL_HEADER, upstream.origin);",
+       "  if (originalPath) {",
+       "    headers.set(ORIGINAL_PATH_HEADER, originalPath);"
+      ],
+      "total": 166
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 52,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4070,
+      "end": 4083
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4346,
+       "end": 4359
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4606,
+       "end": 4619
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4856,
+       "end": 4869
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5358,
+       "end": 5371
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5604,
+       "end": 5617
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5957,
+       "end": 5970
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6310,
+       "end": 6323
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6428,
+       "end": 6441
+      }
+     ],
+     "copies": 19,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 27,
+     "tokens": 122,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4057,
+      "end": 4083
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4174,
+       "end": 4200
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4455,
+       "end": 4481
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5472,
+       "end": 5498
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5826,
+       "end": 5852
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6062,
+       "end": 6088
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6780,
+       "end": 6806
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 9309,
+       "end": 9335
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "sql",
+     "lines": 158,
+     "tokens": 832,
+     "first": {
+      "name": "sql/create_dashboard_summary.sql",
+      "start": 27,
+      "end": 184
+     },
+     "others": [
+      {
+       "name": "sql/upgrade_dashboard_v2.sql",
+       "start": 9,
+       "end": 166
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 101,
+     "tokens": 686,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 12653,
+      "end": 12753
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/hook-shim/handler.js",
+       "start": 162,
+       "end": 262
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 68,
+     "tokens": 531,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 12538,
+      "end": 12605
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/hook-shim/handler.js",
+       "start": 54,
+       "end": 121
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 42,
+     "tokens": 301,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 12486,
+      "end": 12527
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/hook-shim/handler.js",
+       "start": 2,
+       "end": 43
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 48,
+     "tokens": 284,
+     "first": {
+      "name": "benchmarks/claude_session_mode_benchmark.py",
+      "start": 712,
+      "end": 759
+     },
+     "others": [
+      {
+       "name": "headroom/proxy/handlers/anthropic.py",
+       "start": 915,
+       "end": 962
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 4,
+    "minified": 2,
+    "sample": [
+     "headroom/dashboard/static/alpine.min.js",
+     "headroom/dashboard/static/tailwind.min.js",
+     "headroom/transforms/dense_line_elider.py",
+     "tests/test_content_router_compact_json.py"
+    ]
+   }
+  },
+  "health": {
+   "score": 65.2,
+   "grade": "C",
+   "size": {
+    "lines": 749472,
+    "files": 2015,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.8,
+     "adjusted": 4.8,
+     "lines": 35687,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "rust",
+      "typescript",
+      "javascript",
+      "bash",
+      "powershell",
+      "tsx",
+      "sql",
+      "c",
+      "perl",
+      "hcl"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 67.8
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.7,
+     "adjusted": 0.7,
+     "lines": 4636,
+     "halfLife": 7.5,
+     "coverage": 87.1,
+     "weight": 0.871,
+     "score": 93.6
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 56.5,
+     "adjusted": 56.4,
+     "lines": 423209,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 45.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 82301,
+   "mean": 40.8,
+   "files": [
+    {
+     "path": "headroom/providers/opencode/_dist/index.js",
+     "complexity": 3719,
+     "lines": 13057,
+     "bytes": 469306
+    },
+    {
+     "path": "headroom/proxy/handlers/openai.py",
+     "complexity": 1649,
+     "lines": 11757,
+     "bytes": 583548
+    },
+    {
+     "path": "headroom/cli/wrap.py",
+     "complexity": 1270,
+     "lines": 9416,
+     "bytes": 396030
+    },
+    {
+     "path": "headroom/transforms/content_router.py",
+     "complexity": 1019,
+     "lines": 7924,
+     "bytes": 393917
+    },
+    {
+     "path": "headroom/proxy/server.py",
+     "complexity": 919,
+     "lines": 7294,
+     "bytes": 339474
+    },
+    {
+     "path": "headroom/proxy/handlers/anthropic.py",
+     "complexity": 756,
+     "lines": 6392,
+     "bytes": 338400
+    },
+    {
+     "path": "headroom/proxy/helpers.py",
+     "complexity": 732,
+     "lines": 4868,
+     "bytes": 208292
+    },
+    {
+     "path": "headroom/memory/traffic_learner.py",
+     "complexity": 419,
+     "lines": 2033,
+     "bytes": 82609
+    },
+    {
+     "path": "headroom/proxy/handlers/streaming.py",
+     "complexity": 417,
+     "lines": 2543,
+     "bytes": 124516
+    },
+    {
+     "path": "crates/headroom-core/src/transforms/log_compressor.rs",
+     "complexity": 410,
+     "lines": 2692,
+     "bytes": 105216
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.71,
+   "findings": 88,
+   "files": 1832,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 17
+    },
+    {
+     "category": "unused-export",
+     "count": 15
+    },
+    {
+     "category": "unused-symbol",
+     "count": 19
+    },
+    {
+     "category": "unused-import",
+     "count": 37
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "headroom/evals/html_extraction.py",
+     "name": "",
+     "line": 1,
+     "lines": 655
+    },
+    {
+     "category": "unused-file",
+     "path": "deploy/beacon/worker.js",
+     "name": "",
+     "line": 1,
+     "lines": 506
+    },
+    {
+     "category": "unused-file",
+     "path": "headroom/evals/html_oss_benchmarks.py",
+     "name": "",
+     "line": 1,
+     "lines": 501
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/headroom-snip/hooks/register.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 336
+    },
+    {
+     "category": "unused-file",
+     "path": "headroom/transforms/adaptive_sizer.py",
+     "name": "",
+     "line": 1,
+     "lines": 334
+    },
+    {
+     "category": "unused-file",
+     "path": "headroom/learn/plugins/opencode.py",
+     "name": "",
+     "line": 1,
+     "lines": 306
+    },
+    {
+     "category": "unused-file",
+     "path": "deploy/beacon/test-rollup.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 292
+    },
+    {
+     "category": "unused-file",
+     "path": "headroom/shared_context.py",
+     "name": "",
+     "line": 1,
+     "lines": 228
+    },
+    {
+     "category": "unused-file",
+     "path": "headroom/learn/plugins/grok.py",
+     "name": "",
+     "line": 1,
+     "lines": 211
+    },
+    {
+     "category": "unused-file",
+     "path": "headroom/integrations/litellm_callback.py",
+     "name": "",
+     "line": 1,
+     "lines": 177
+    }
+   ]
+  }
+ }
+}
