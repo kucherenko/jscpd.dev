@@ -1,5 +1,5 @@
 /**
- * A daily snapshot of the page views of the blog posts, the docs pages and
+ * A snapshot of the page views of the blog posts, the docs pages and
  * the trending pages from Cloudflare Web Analytics.
  *
  * The beacon Cloudflare injects into every page reports page loads to Web
@@ -26,12 +26,12 @@
  * Every request covers one day. Cloudflare samples an answer that covers
  * many page loads: a 30-day request came back sampled one in ten, with the
  * small groups rounded away, and on 2026-10-19 a week of recent days came
- * back sampled one in ten to twenty, while the daily runs' two or three days
- * came back in full.
+ * back sampled one in ten to twenty, while the two or three days the runs
+ * asked for until then came back in full.
  *
  * composables/usePageViews.ts adds the days up for the blog list, the post
  * page, the docs pages and the trending pages. .github/workflows/analytics.yml
- * runs this every morning before the site rebuild.
+ * runs this every two hours and deploys the site when the numbers change.
  *
  * Needs CLOUDFLARE_ANALYTICS_TOKEN (an API token with Account Analytics:
  * Read on the account) and CLOUDFLARE_ACCOUNT_ID. The site tag is found from

@@ -2,9 +2,9 @@ name: Web analytics snapshot
 
 on:
   schedule:
-    # Before the 08:05 UTC rebuild in deploy.yml, which puts the numbers on
-    # the site.
-    - cron: "45 7 * * *"
+    # Every two hours, at 00:45, 02:45 and so on (UTC). A run on master that
+    # commits new numbers deploys the site, see the last step.
+    - cron: "45 */2 * * *"
   # A branch that changes the script tries it with
   # `gh workflow run analytics.yml --ref <branch>`; the run commits its data
   # to that branch.
@@ -48,18 +48,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/analytics
-          git commit -m "data: web analytics snapshot ($(date -u +%F))"
+          git commit -m "data: web analytics snapshot ($(date -u '+%F %H:%M') UTC)"
           git pull --rebase origin "$GITHUB_REF_NAME"
           git push origin "HEAD:$GITHUB_REF_NAME"
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      # The scheduled run is followed by the 08:05 UTC rebuild. A run started
-      # by hand on master deploys itself: pushes made with GITHUB_TOKEN
-      # trigger no workflow. Same wait as trending.yml: a dispatch right after
-      # the push can still resolve `master` to the previous head.
+      # Pushes made with GITHUB_TOKEN trigger no workflow, so a run on master
+      # that committed new numbers starts the deploy itself. Same wait as
+      # trending.yml: a dispatch right after the push can still resolve
+      # `master` to the previous head.
       - name: Trigger site deploy
-        if: github.event_name == 'workflow_dispatch' && github.ref_name == 'master' && steps.commit.outputs.changed == 'true'
+        if: github.ref_name == 'master' && steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHA: ${{ steps.commit.outputs.sha }}
