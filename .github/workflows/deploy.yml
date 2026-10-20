@@ -15,6 +15,14 @@ on:
         required: false
         type: string
 
+# Besides pushes and the cron above, the trending job deploys once a day and
+# the analytics job every two hours. One deploy at a time: two overlapping
+# builds can finish in either order and leave the older commit on the site.
+# A newer request takes the place of one that is still waiting.
+concurrency:
+  group: deploy-${{ github.ref_name }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
