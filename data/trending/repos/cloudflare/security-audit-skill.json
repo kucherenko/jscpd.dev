@@ -97,29 +97,45 @@
    "codeSources": 12,
    "healthScore": 60.9,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-10-21",
+   "rank": 1,
+   "stars": 34596,
+   "starsToday": 1712,
+   "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+   "sources": 38,
+   "lines": 5713,
+   "clones": 28,
+   "duplicatedLines": 468,
+   "percentage": 8.19,
+   "codePercentage": null,
+   "codeSources": 2,
+   "healthScore": 58.1,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-10-08",
-  "generatedAt": "2026-10-08T05:32:29.361Z",
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T05:29:30.840Z",
   "name": "cloudflare/security-audit-skill",
   "url": "https://github.com/cloudflare/security-audit-skill",
   "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
   "language": "JavaScript",
-  "stars": 26197,
-  "starsToday": 576,
+  "stars": 34596,
+  "starsToday": 1712,
   "defaultBranch": "main",
   "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
-  "durationMs": 1417,
+  "durationMs": 1002,
   "total": {
-   "sources": 48,
-   "lines": 6575,
-   "tokens": 68478,
+   "sources": 38,
+   "lines": 5713,
+   "tokens": 65273,
    "clones": 28,
    "duplicatedLines": 468,
    "duplicatedTokens": 2850,
-   "percentage": 7.12,
-   "percentageTokens": 4.16
+   "percentage": 8.19,
+   "percentageTokens": 4.37
   },
   "formats": [
    {
@@ -156,16 +172,8 @@
    },
    {
     "format": "bash",
-    "sources": 10,
-    "lines": 699,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "perl",
     "sources": 1,
-    "lines": 168,
+    "lines": 5,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -185,13 +193,13 @@
     "lines": 34,
     "tokens": 399,
     "first": {
-     "name": "skills/security-audit/HUNTING.md:text",
+     "name": "skills/security-audit/HUNTING.md",
      "start": 102,
      "end": 135
     },
     "others": [
      {
-      "name": "skills/security-audit/VALIDATION-AND-REPORTING.md:text",
+      "name": "skills/security-audit/VALIDATION-AND-REPORTING.md",
       "start": 51,
       "end": 84
      }
@@ -422,14 +430,14 @@
    }
   ],
   "code": {
-   "sources": 12,
-   "lines": 2507,
-   "tokens": 15471,
+   "sources": 2,
+   "lines": 1645,
+   "tokens": 12266,
    "clones": 9,
    "duplicatedLines": 138,
    "duplicatedTokens": 816,
-   "percentage": 5.5,
-   "percentageTokens": 5.27,
+   "percentage": 8.39,
+   "percentageTokens": 6.65,
    "formats": [
     {
      "format": "javascript",
@@ -438,22 +446,6 @@
      "clones": 9,
      "duplicatedLines": 138,
      "percentage": 8.39
-    },
-    {
-     "format": "bash",
-     "sources": 9,
-     "lines": 694,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
-    },
-    {
-     "format": "perl",
-     "sources": 1,
-     "lines": 168,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
     }
    ],
    "topClones": [
@@ -696,32 +688,30 @@
    }
   },
   "health": {
-   "score": 60.9,
+   "score": 58.1,
    "grade": "C",
    "size": {
-    "lines": 3899,
-    "files": 14,
+    "lines": 3037,
+    "files": 4,
     "class": "S"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 7.1,
-     "adjusted": 5.9,
+     "value": 9.1,
+     "adjusted": 6.9,
      "lines": 276,
      "halfLife": 8.5,
      "formats": [
-      "javascript",
-      "bash",
-      "perl"
+      "javascript"
      ],
      "excluded": [
       "text",
       "data"
      ],
      "weight": 1,
-     "score": 62
+     "score": 57.1
     },
     {
      "id": "dead-code",
@@ -730,25 +720,24 @@
      "adjusted": 1.2,
      "lines": 0,
      "halfLife": 7.5,
-     "coverage": 77.9,
-     "weight": 0.779,
+     "weight": 1,
      "score": 89.2
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 77.9,
-     "adjusted": 58.6,
+     "value": 100,
+     "adjusted": 68.6,
      "lines": 3037,
      "halfLife": 50,
      "weight": 1,
-     "score": 44.4
+     "score": 38.6
     }
    ]
   },
   "complexity": {
-   "total": 1028,
-   "mean": 73.4,
+   "total": 944,
+   "mean": 236,
    "files": [
     {
      "path": "skills/security-audit/validate-coverage-ledger.cjs",
@@ -773,42 +762,6 @@
      "complexity": 119,
      "lines": 652,
      "bytes": 26384
-    },
-    {
-     "path": ".git/hooks/fsmonitor-watchman.sample",
-     "complexity": 19,
-     "lines": 168,
-     "bytes": 4611
-    },
-    {
-     "path": ".git/hooks/pre-rebase.sample",
-     "complexity": 14,
-     "lines": 169,
-     "bytes": 4898
-    },
-    {
-     "path": ".git/hooks/sendemail-validate.sample",
-     "complexity": 14,
-     "lines": 77,
-     "bytes": 2308
-    },
-    {
-     "path": ".git/hooks/update.sample",
-     "complexity": 13,
-     "lines": 128,
-     "bytes": 3650
-    },
-    {
-     "path": ".git/hooks/push-to-checkout.sample",
-     "complexity": 6,
-     "lines": 78,
-     "bytes": 2783
-    },
-    {
-     "path": ".git/hooks/pre-commit.sample",
-     "complexity": 5,
-     "lines": 49,
-     "bytes": 1649
     }
    ]
   },

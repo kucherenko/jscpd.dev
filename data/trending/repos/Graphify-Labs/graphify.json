@@ -1,0 +1,1278 @@
+{
+ "name": "Graphify-Labs/graphify",
+ "url": "https://github.com/Graphify-Labs/graphify",
+ "appearances": [
+  {
+   "date": "2026-10-21",
+   "rank": 3,
+   "stars": 130530,
+   "starsToday": 802,
+   "headSha": "b90b9df7949bd04a15b40a1624af85d0a9cfdf04",
+   "sources": 1332,
+   "lines": 353496,
+   "clones": 1884,
+   "duplicatedLines": 96237,
+   "percentage": 27.22,
+   "codePercentage": 3.48,
+   "codeSources": 105,
+   "healthScore": 60.7,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T05:29:30.840Z",
+  "name": "Graphify-Labs/graphify",
+  "url": "https://github.com/Graphify-Labs/graphify",
+  "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+  "language": "Python",
+  "stars": 130530,
+  "starsToday": 802,
+  "defaultBranch": "v8",
+  "headSha": "b90b9df7949bd04a15b40a1624af85d0a9cfdf04",
+  "durationMs": 2622,
+  "total": {
+   "sources": 1332,
+   "lines": 353496,
+   "tokens": 2752409,
+   "clones": 1884,
+   "duplicatedLines": 96237,
+   "duplicatedTokens": 668373,
+   "percentage": 27.22,
+   "percentageTokens": 24.28
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 547,
+    "lines": 226911,
+    "clones": 812,
+    "duplicatedLines": 9056,
+    "percentage": 3.99
+   },
+   {
+    "format": "markdown",
+    "sources": 365,
+    "lines": 79802,
+    "clones": 544,
+    "duplicatedLines": 55620,
+    "percentage": 69.7
+   },
+   {
+    "format": "bash",
+    "sources": 245,
+    "lines": 27663,
+    "clones": 406,
+    "duplicatedLines": 27139,
+    "percentage": 98.11
+   },
+   {
+    "format": "text",
+    "sources": 103,
+    "lines": 4102,
+    "clones": 116,
+    "duplicatedLines": 3898,
+    "percentage": 95.03
+   },
+   {
+    "format": "powershell",
+    "sources": 6,
+    "lines": 987,
+    "clones": 4,
+    "duplicatedLines": 508,
+    "percentage": 51.47
+   },
+   {
+    "format": "yaml",
+    "sources": 10,
+    "lines": 679,
+    "clones": 1,
+    "duplicatedLines": 10,
+    "percentage": 1.47
+   },
+   {
+    "format": "typescript",
+    "sources": 5,
+    "lines": 665,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 0.9
+   },
+   {
+    "format": "json",
+    "sources": 7,
+    "lines": 10634,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 2,
+    "lines": 398,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "php",
+    "sources": 5,
+    "lines": 161,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "bash",
+    "lines": 698,
+    "tokens": 3352,
+    "first": {
+     "name": "graphify/skill-agents.md",
+     "start": 68,
+     "end": 765
+    },
+    "others": [
+     {
+      "name": "graphify/skill-amp.md",
+      "start": 68,
+      "end": 765
+     },
+     {
+      "name": "graphify/skill-claw.md",
+      "start": 68,
+      "end": 768
+     },
+     {
+      "name": "graphify/skill-copilot.md",
+      "start": 68,
+      "end": 768
+     },
+     {
+      "name": "graphify/skill-droid.md",
+      "start": 68,
+      "end": 765
+     },
+     {
+      "name": "graphify/skill-kilo.md",
+      "start": 68,
+      "end": 768
+     },
+     {
+      "name": "graphify/skill-kiro.md",
+      "start": 68,
+      "end": 768
+     },
+     {
+      "name": "graphify/skill-pi.md",
+      "start": 68,
+      "end": 762
+     },
+     {
+      "name": "graphify/skill-trae.md",
+      "start": 68,
+      "end": 766
+     }
+    ],
+    "copies": 20,
+    "excerpt": {
+     "lines": [
+      "# Detect the correct Python interpreter (handles uv tool, pipx, venv, system installs)",
+      "PYTHON=\"\"",
+      "GRAPHIFY_BIN=$(which graphify 2>/dev/null)",
+      "# 1. uv tool installs — most reliable on modern Mac/Linux",
+      "if [ -z \"$PYTHON\" ] && command -v uv >/dev/null 2>&1; then",
+      "    _UV_PY=$(uv tool run --from graphifyy python -c \"import sys; print(sys.executable)\" 2>/dev/null)",
+      "    if [ -n \"$_UV_PY\" ]; then PYTHON=\"$_UV_PY\"; fi",
+      "fi",
+      "# 2. Read shebang from graphify binary (pipx and direct pip installs)",
+      "if [ -z \"$PYTHON\" ] && [ -n \"$GRAPHIFY_BIN\" ]; then"
+     ],
+     "total": 698
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "bash",
+    "lines": 303,
+    "tokens": 1467,
+    "first": {
+     "name": "graphify/skills/agents/references/query.md",
+     "start": 14,
+     "end": 316
+    },
+    "others": [
+     {
+      "name": "graphify/skills/amp/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     {
+      "name": "graphify/skills/claude/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     {
+      "name": "graphify/skills/claw/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     {
+      "name": "graphify/skills/codex/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     {
+      "name": "graphify/skills/copilot/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     {
+      "name": "graphify/skills/droid/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     {
+      "name": "graphify/skills/kilo/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     {
+      "name": "graphify/skills/kiro/references/query.md",
+      "start": 14,
+      "end": 316
+     }
+    ],
+    "copies": 29,
+    "excerpt": {
+     "lines": [
+      "$(cat graphify-out/.graphify_python) -c \"",
+      "from pathlib import Path",
+      "if not Path('graphify-out/graph.json').exists():",
+      "    print('ERROR: No graph found. Run /graphify <path> first to build the graph.')",
+      "    raise SystemExit(1)",
+      "\"",
+      "```",
+      "If it fails, stop and tell the user to run `/graphify <path>` first.",
+      "",
+      "### Step 0 — Constrained query expansion (REQUIRED before traversal)"
+     ],
+     "total": 303
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 265,
+    "tokens": 2079,
+    "first": {
+     "name": "graphify/skill-agents.md",
+     "start": 6,
+     "end": 270
+    },
+    "others": [
+     {
+      "name": "graphify/skill-claw.md",
+      "start": 6,
+      "end": 270
+     },
+     {
+      "name": "graphify/skill-codex.md",
+      "start": 6,
+      "end": 270
+     },
+     {
+      "name": "graphify/skill-copilot.md",
+      "start": 6,
+      "end": 270
+     },
+     {
+      "name": "graphify/skill-kilo.md",
+      "start": 6,
+      "end": 270
+     },
+     {
+      "name": "graphify/skill-kiro.md",
+      "start": 6,
+      "end": 270
+     },
+     {
+      "name": "graphify/skill-opencode.md",
+      "start": 6,
+      "end": 270
+     },
+     {
+      "name": "graphify/skill-pi.md",
+      "start": 6,
+      "end": 270
+     },
+     {
+      "name": "graphify/skill-vscode.md",
+      "start": 6,
+      "end": 270
+     }
+    ],
+    "copies": 19,
+    "excerpt": {
+     "lines": [
+      "# /graphify",
+      "",
+      "Turn any folder of files into a navigable knowledge graph with community detection, an honest audit trail, and three outputs: interactive HTML, GraphRAG-ready …",
+      "",
+      "## Usage",
+      "",
+      "```",
+      "/graphify                                             # full pipeline on current directory (HTML viz; add --obsidian for a vault)",
+      "/graphify <path>                                      # full pipeline on specific path",
+      "/graphify https://github.com/<owner>/<repo>           # clone repo then run full pipeline on it"
+     ],
+     "total": 265
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "text",
+    "lines": 80,
+    "tokens": 1772,
+    "first": {
+     "name": "graphify/skills/agents/references/extraction-spec.md",
+     "start": 6,
+     "end": 85
+    },
+    "others": [
+     {
+      "name": "graphify/skills/amp/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     {
+      "name": "graphify/skills/claude/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     {
+      "name": "graphify/skills/copilot/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     {
+      "name": "graphify/skills/droid/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     {
+      "name": "graphify/skills/kilo/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     {
+      "name": "graphify/skills/opencode/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     {
+      "name": "graphify/skills/trae/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     {
+      "name": "graphify/skills/vscode/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     }
+    ],
+    "copies": 21,
+    "kind": "docs"
+   },
+   {
+    "format": "bash",
+    "lines": 204,
+    "tokens": 1214,
+    "first": {
+     "name": "graphify/skills/agents/references/update.md",
+     "start": 15,
+     "end": 218
+    },
+    "others": [
+     {
+      "name": "graphify/skills/amp/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     {
+      "name": "graphify/skills/claude/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     {
+      "name": "graphify/skills/claw/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     {
+      "name": "graphify/skills/codex/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     {
+      "name": "graphify/skills/copilot/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     {
+      "name": "graphify/skills/droid/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     {
+      "name": "graphify/skills/kilo/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     {
+      "name": "graphify/skills/kiro/references/update.md",
+      "start": 15,
+      "end": 218
+     }
+    ],
+    "copies": 29,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 313,
+    "tokens": 1149,
+    "first": {
+     "name": "graphify/skills/agents/references/query.md",
+     "start": 1,
+     "end": 313
+    },
+    "others": [
+     {
+      "name": "graphify/skills/amp/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     {
+      "name": "graphify/skills/claude/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     {
+      "name": "graphify/skills/claw/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     {
+      "name": "graphify/skills/codex/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     {
+      "name": "graphify/skills/copilot/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     {
+      "name": "graphify/skills/droid/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     {
+      "name": "graphify/skills/kilo/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     {
+      "name": "graphify/skills/kiro/references/query.md",
+      "start": 1,
+      "end": 313
+     }
+    ],
+    "copies": 29,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 91,
+    "tokens": 947,
+    "first": {
+     "name": "graphify/skills/agents/references/exports.md",
+     "start": 1,
+     "end": 91
+    },
+    "others": [
+     {
+      "name": "graphify/skills/amp/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     {
+      "name": "graphify/skills/claude/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     {
+      "name": "graphify/skills/claw/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     {
+      "name": "graphify/skills/codex/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     {
+      "name": "graphify/skills/copilot/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     {
+      "name": "graphify/skills/droid/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     {
+      "name": "graphify/skills/kilo/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     {
+      "name": "graphify/skills/kiro/references/exports.md",
+      "start": 1,
+      "end": 91
+     }
+    ],
+    "copies": 29,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 526,
+    "tokens": 2135,
+    "first": {
+     "name": "graphify/skill-claw.md",
+     "start": 268,
+     "end": 793
+    },
+    "others": [
+     {
+      "name": "graphify/skill-copilot.md",
+      "start": 268,
+      "end": 793
+     },
+     {
+      "name": "graphify/skill-kiro.md",
+      "start": 268,
+      "end": 793
+     },
+     {
+      "name": "graphify/skill.md",
+      "start": 268,
+      "end": 793
+     },
+     {
+      "name": "tools/skillgen/expected/graphify__skill-claw.md",
+      "start": 268,
+      "end": 793
+     },
+     {
+      "name": "tools/skillgen/expected/graphify__skill-copilot.md",
+      "start": 268,
+      "end": 793
+     },
+     {
+      "name": "tools/skillgen/expected/graphify__skill-kiro.md",
+      "start": 268,
+      "end": 793
+     },
+     {
+      "name": "tools/skillgen/expected/graphify__skill.md",
+      "start": 268,
+      "end": 793
+     }
+    ],
+    "copies": 8,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 221,
+    "tokens": 523,
+    "first": {
+     "name": "graphify/skills/agents/references/update.md",
+     "start": 1,
+     "end": 221
+    },
+    "others": [
+     {
+      "name": "graphify/skills/amp/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     {
+      "name": "graphify/skills/claude/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     {
+      "name": "graphify/skills/claw/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     {
+      "name": "graphify/skills/codex/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     {
+      "name": "graphify/skills/copilot/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     {
+      "name": "graphify/skills/droid/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     {
+      "name": "graphify/skills/kilo/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     {
+      "name": "graphify/skills/kiro/references/update.md",
+      "start": 1,
+      "end": 221
+     }
+    ],
+    "copies": 29,
+    "kind": "docs"
+   },
+   {
+    "format": "bash",
+    "lines": 1356,
+    "tokens": 6690,
+    "first": {
+     "name": "graphify/skill-devin.md",
+     "start": 97,
+     "end": 1452
+    },
+    "others": [
+     {
+      "name": "tools/skillgen/expected/graphify__skill-devin.md",
+      "start": 97,
+      "end": 1452
+     },
+     {
+      "name": "tools/skillgen/fragments/core/devin.md",
+      "start": 97,
+      "end": 1452
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 105,
+   "lines": 91005,
+   "tokens": 579608,
+   "clones": 264,
+   "duplicatedLines": 3163,
+   "duplicatedTokens": 21476,
+   "percentage": 3.48,
+   "percentageTokens": 3.71,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 104,
+     "lines": 90815,
+     "clones": 264,
+     "duplicatedLines": 3163,
+     "percentage": 3.48
+    },
+    {
+     "format": "typescript",
+     "sources": 1,
+     "lines": 190,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 84,
+     "first": {
+      "name": "graphify/extractors/bash.py",
+      "start": 114,
+      "end": 125
+     },
+     "others": [
+      {
+       "name": "graphify/extractors/dm.py",
+       "start": 25,
+       "end": 36
+      },
+      {
+       "name": "graphify/extractors/elixir.py",
+       "start": 25,
+       "end": 36
+      },
+      {
+       "name": "graphify/extractors/julia.py",
+       "start": 18,
+       "end": 29
+      },
+      {
+       "name": "graphify/extractors/ocaml.py",
+       "start": 28,
+       "end": 39
+      },
+      {
+       "name": "graphify/extractors/powershell.py",
+       "start": 20,
+       "end": 31
+      },
+      {
+       "name": "graphify/extractors/rust.py",
+       "start": 243,
+       "end": 254
+      },
+      {
+       "name": "graphify/extractors/verilog.py",
+       "start": 216,
+       "end": 227
+      },
+      {
+       "name": "graphify/extractors/zig.py",
+       "start": 29,
+       "end": 40
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "    language = Language(tsbash.language())",
+       "    parser = Parser(language)",
+       "    source = _read_source_bytes(path)",
+       "    tree = parser.parse(source)",
+       "    root = tree.root_node",
+       "except Exception as e:",
+       "    return {\"nodes\": [], \"edges\": [], \"error\": str(e)}",
+       "",
+       "stem = _file_stem(path)",
+       "str_path = str(path)"
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 40,
+     "tokens": 344,
+     "first": {
+      "name": "graphify/analyze.py",
+      "start": 515,
+      "end": 554
+     },
+     "others": [
+      {
+       "name": "worked/mixed-corpus/raw/analyze.py",
+       "start": 349,
+       "end": 388
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "betweenness = nx.betweenness_centrality(G, k=k, seed=42)",
+       "# Top bridge nodes that are NOT file-level hubs",
+       "bridges = sorted(",
+       "    [(n, s) for n, s in betweenness.items()",
+       "     if not _is_file_node(G, n) and not _is_concept_node(G, n) and s > 0],",
+       "    key=lambda x: x[1],",
+       "    reverse=True,",
+       ")[:3]",
+       "for node_id, score in bridges:",
+       "    label = G.nodes[node_id].get(\"label\", node_id)"
+      ],
+      "total": 40
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 68,
+     "first": {
+      "name": "graphify/extractors/dm.py",
+      "start": 31,
+      "end": 38
+     },
+     "others": [
+      {
+       "name": "graphify/extractors/elixir.py",
+       "start": 31,
+       "end": 38
+      },
+      {
+       "name": "graphify/extractors/julia.py",
+       "start": 24,
+       "end": 31
+      },
+      {
+       "name": "graphify/extractors/powershell.py",
+       "start": 26,
+       "end": 33
+      },
+      {
+       "name": "graphify/extractors/rust.py",
+       "start": 249,
+       "end": 256
+      },
+      {
+       "name": "graphify/extractors/zig.py",
+       "start": 35,
+       "end": 42
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "    return {\"nodes\": [], \"edges\": [], \"error\": str(e)}",
+       "",
+       "stem = _file_stem(path)",
+       "str_path = str(path)",
+       "nodes: list[dict] = []",
+       "edges: list[dict] = []",
+       "seen_ids: set[str] = set()",
+       "function_bodies: list[tuple[str, Any, \"str | None\"]] = []"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "    return {\"nodes\": [], \"edges\": [], \"error\": str(e)}",
+       "",
+       "stem = _file_stem(path)",
+       "str_path = str(path)",
+       "nodes: list[dict] = []",
+       "edges: list[dict] = []",
+       "seen_ids: set[str] = set()",
+       "function_bodies: list[tuple[str, Any]] = []"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 56,
+     "tokens": 330,
+     "first": {
+      "name": "graphify/analyze.py",
+      "start": 144,
+      "end": 199
+     },
+     "others": [
+      {
+       "name": "worked/mixed-corpus/raw/analyze.py",
+       "start": 50,
+       "end": 105
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 43,
+     "tokens": 309,
+     "first": {
+      "name": "graphify/extractors/pascal_forms.py",
+      "start": 33,
+      "end": 75
+     },
+     "others": [
+      {
+       "name": "graphify/extractors/pascal_forms.py",
+       "start": 132,
+       "end": 174
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 59,
+     "first": {
+      "name": "graphify/extractors/dm.py",
+      "start": 31,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "graphify/extractors/fortran.py",
+       "start": 91,
+       "end": 97
+      },
+      {
+       "name": "graphify/extractors/json_config.py",
+       "start": 116,
+       "end": 122
+      },
+      {
+       "name": "graphify/extractors/objc.py",
+       "start": 108,
+       "end": 114
+      },
+      {
+       "name": "graphify/extractors/ocaml.py",
+       "start": 34,
+       "end": 40
+      },
+      {
+       "name": "graphify/extractors/verilog.py",
+       "start": 222,
+       "end": 228
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 39,
+     "tokens": 273,
+     "first": {
+      "name": "graphify/analyze.py",
+      "start": 446,
+      "end": 484
+     },
+     "others": [
+      {
+       "name": "worked/mixed-corpus/raw/analyze.py",
+       "start": 292,
+       "end": 330
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 135,
+     "first": {
+      "name": "graphify/extractors/fortran.py",
+      "start": 103,
+      "end": 128
+     },
+     "others": [
+      {
+       "name": "graphify/extractors/go.py",
+       "start": 244,
+       "end": 269
+      },
+      {
+       "name": "graphify/extractors/rust.py",
+       "start": 291,
+       "end": 316
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 25,
+     "tokens": 254,
+     "first": {
+      "name": "graphify/analyze.py",
+      "start": 314,
+      "end": 338
+     },
+     "others": [
+      {
+       "name": "worked/mixed-corpus/raw/analyze.py",
+       "start": 171,
+       "end": 195
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 39,
+     "tokens": 251,
+     "first": {
+      "name": "graphify/analyze.py",
+      "start": 364,
+      "end": 402
+     },
+     "others": [
+      {
+       "name": "worked/mixed-corpus/raw/analyze.py",
+       "start": 216,
+       "end": 254
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 60.7,
+   "grade": "C",
+   "size": {
+    "lines": 229176,
+    "files": 593,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4,
+     "adjusted": 4,
+     "lines": 9062,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "typescript",
+      "php",
+      "pascal",
+      "sql",
+      "csharp",
+      "rust",
+      "swift",
+      "groovy",
+      "cpp",
+      "fortran",
+      "lisp",
+      "apex",
+      "powershell",
+      "go",
+      "objectivec",
+      "java",
+      "kotlin",
+      "c",
+      "zig",
+      "julia",
+      "robotframework",
+      "ruby",
+      "elixir",
+      "scala",
+      "docker",
+      "tsx",
+      "javascript"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 72.5
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 3.1,
+     "adjusted": 3.1,
+     "lines": 7168,
+     "halfLife": 7.5,
+     "coverage": 99.3,
+     "weight": 0.993,
+     "score": 74.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 64.3,
+     "adjusted": 64,
+     "lines": 147474,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 41.2
+    }
+   ]
+  },
+  "complexity": {
+   "total": 31661,
+   "mean": 53.4,
+   "files": [
+    {
+     "path": "graphify/extractors/engine.py",
+     "complexity": 2989,
+     "lines": 10367,
+     "bytes": 544863
+    },
+    {
+     "path": "graphify/extractors/resolution.py",
+     "complexity": 1176,
+     "lines": 4306,
+     "bytes": 189515
+    },
+    {
+     "path": "graphify/cli.py",
+     "complexity": 991,
+     "lines": 5393,
+     "bytes": 265442
+    },
+    {
+     "path": "graphify/llm.py",
+     "complexity": 739,
+     "lines": 3855,
+     "bytes": 178836
+    },
+    {
+     "path": "graphify/serve.py",
+     "complexity": 701,
+     "lines": 3089,
+     "bytes": 146860
+    },
+    {
+     "path": "tests/test_extract.py",
+     "complexity": 573,
+     "lines": 6275,
+     "bytes": 273255
+    },
+    {
+     "path": "tests/test_detect.py",
+     "complexity": 486,
+     "lines": 4595,
+     "bytes": 196904
+    },
+    {
+     "path": "graphify/callflow_html.py",
+     "complexity": 474,
+     "lines": 2051,
+     "bytes": 83274
+    },
+    {
+     "path": "tests/test_watch.py",
+     "complexity": 461,
+     "lines": 5594,
+     "bytes": 224153
+    },
+    {
+     "path": "graphify/watch.py",
+     "complexity": 437,
+     "lines": 2862,
+     "bytes": 133633
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 3.15,
+   "findings": 161,
+   "files": 566,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 12
+    },
+    {
+     "category": "unused-export",
+     "count": 2
+    },
+    {
+     "category": "unused-symbol",
+     "count": 16
+    },
+    {
+     "category": "unused-import",
+     "count": 131
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "worked/mixed-corpus/raw/analyze.py",
+     "name": "",
+     "line": 1,
+     "lines": 517
+    },
+    {
+     "category": "unused-file",
+     "path": "graphify/scip_ingest.py",
+     "name": "",
+     "line": 1,
+     "lines": 363
+    },
+    {
+     "category": "unused-file",
+     "path": "graphify/multigraph_compat.py",
+     "name": "",
+     "line": 1,
+     "lines": 212
+    },
+    {
+     "category": "unused-file",
+     "path": "worked/httpx/raw/client.py",
+     "name": "",
+     "line": 1,
+     "lines": 161
+    },
+    {
+     "category": "unused-file",
+     "path": "worked/httpx/raw/transport.py",
+     "name": "",
+     "line": 1,
+     "lines": 135
+    },
+    {
+     "category": "unused-file",
+     "path": "worked/httpx/raw/models.py",
+     "name": "",
+     "line": 1,
+     "lines": 120
+    },
+    {
+     "category": "unused-file",
+     "path": "worked/httpx/raw/auth.py",
+     "name": "",
+     "line": 1,
+     "lines": 114
+    },
+    {
+     "category": "unused-file",
+     "path": "worked/mixed-corpus/raw/cluster.py",
+     "name": "",
+     "line": 1,
+     "lines": 104
+    },
+    {
+     "category": "unused-import",
+     "path": "graphify/__main__.py",
+     "name": "_agents_platform_install",
+     "line": 35,
+     "lines": 94
+    },
+    {
+     "category": "unused-import",
+     "path": "graphify/__main__.py",
+     "name": "_agents_platform_uninstall",
+     "line": 36,
+     "lines": 93
+    }
+   ]
+  }
+ }
+}

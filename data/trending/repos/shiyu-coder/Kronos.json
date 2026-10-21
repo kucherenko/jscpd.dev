@@ -17,29 +17,45 @@
    "codeSources": 25,
    "healthScore": 55.2,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-10-21",
+   "rank": 6,
+   "stars": 42446,
+   "starsToday": 733,
+   "headSha": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+   "sources": 77,
+   "lines": 81076,
+   "clones": 108,
+   "duplicatedLines": 28813,
+   "percentage": 35.54,
+   "codePercentage": null,
+   "codeSources": 15,
+   "healthScore": 53.9,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-10-20",
-  "generatedAt": "2026-10-20T05:29:47.500Z",
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T05:29:30.840Z",
   "name": "shiyu-coder/Kronos",
   "url": "https://github.com/shiyu-coder/Kronos",
   "description": "Kronos: A Foundation Model for the Language of Financial Markets",
   "language": "Python",
-  "stars": 41825,
-  "starsToday": 363,
+  "stars": 42446,
+  "starsToday": 733,
   "defaultBranch": "master",
   "headSha": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
-  "durationMs": 1212,
+  "durationMs": 1007,
   "total": {
-   "sources": 87,
-   "lines": 81938,
-   "tokens": 355922,
+   "sources": 77,
+   "lines": 81076,
+   "tokens": 352717,
    "clones": 108,
    "duplicatedLines": 28813,
    "duplicatedTokens": 99382,
-   "percentage": 35.16,
-   "percentageTokens": 27.92
+   "percentage": 35.54,
+   "percentageTokens": 28.18
   },
   "formats": [
    {
@@ -84,16 +100,8 @@
    },
    {
     "format": "bash",
-    "sources": 13,
-    "lines": 772,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
+    "sources": 4,
+    "lines": 78,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -403,14 +411,14 @@
    }
   ],
   "code": {
-   "sources": 25,
-   "lines": 5414,
-   "tokens": 33387,
+   "sources": 15,
+   "lines": 4552,
+   "tokens": 30182,
    "clones": 27,
    "duplicatedLines": 372,
    "duplicatedTokens": 2609,
-   "percentage": 6.87,
-   "percentageTokens": 7.81,
+   "percentage": 8.17,
+   "percentageTokens": 8.64,
    "formats": [
     {
      "format": "python",
@@ -422,16 +430,8 @@
     },
     {
      "format": "bash",
-     "sources": 10,
-     "lines": 734,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
-    },
-    {
-     "format": "perl",
      "sources": 1,
-     "lines": 168,
+     "lines": 40,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -681,25 +681,24 @@
    }
   },
   "health": {
-   "score": 55.2,
-   "grade": "C",
+   "score": 53.9,
+   "grade": "D",
    "size": {
-    "lines": 12063,
-    "files": 39,
+    "lines": 11201,
+    "files": 29,
     "class": "M"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 12.6,
-     "adjusted": 11.3,
+     "value": 13.6,
+     "adjusted": 12.1,
      "lines": 1521,
      "halfLife": 8.5,
      "formats": [
       "python",
-      "bash",
-      "perl"
+      "bash"
      ],
      "excluded": [
       "markup",
@@ -707,7 +706,7 @@
       "data"
      ],
      "weight": 1,
-     "score": 39.7
+     "score": 37.4
     },
     {
      "id": "dead-code",
@@ -716,25 +715,25 @@
      "adjusted": 0.8,
      "lines": 43,
      "halfLife": 7.5,
-     "coverage": 92.8,
-     "weight": 0.928,
+     "coverage": 100,
+     "weight": 1,
      "score": 92.9
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 59.4,
-     "adjusted": 53.9,
+     "value": 63.9,
+     "adjusted": 57.4,
      "lines": 7160,
      "halfLife": 50,
      "weight": 1,
-     "score": 47.4
+     "score": 45.1
     }
    ]
   },
   "complexity": {
-   "total": 1275,
-   "mean": 32.7,
+   "total": 1191,
+   "mean": 41.1,
    "files": [
     {
      "path": "examples/prediction_new_GUI.py",

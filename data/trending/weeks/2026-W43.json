@@ -4,24 +4,25 @@
  "to": "2026-10-25",
  "days": [
   "2026-10-19",
-  "2026-10-20"
+  "2026-10-20",
+  "2026-10-21"
  ],
  "summary": {
-  "repos": 12,
-  "sources": 9877,
-  "lines": 3075175,
-  "tokens": 18668733,
-  "clones": 16130,
-  "duplicatedLines": 346589,
-  "duplicatedTokens": 1947374,
-  "percentage": 11.27,
-  "percentageTokens": 10.43,
-  "avgPercentage": 11.25,
-  "medianPercentage": 7.24,
+  "repos": 15,
+  "sources": 13390,
+  "lines": 3686027,
+  "tokens": 23452944,
+  "clones": 18670,
+  "duplicatedLines": 452843,
+  "duplicatedTokens": 2706648,
+  "percentage": 12.29,
+  "percentageTokens": 11.54,
+  "avgPercentage": 11.63,
+  "medianPercentage": 8.19,
   "mostDuplicated": {
    "name": "shiyu-coder/Kronos",
    "clones": 108,
-   "percentage": 35.16
+   "percentage": 35.54
   },
   "cleanest": {
    "name": "withmarbleapp/os-taxonomy",
@@ -33,13 +34,13 @@
    "clones": 4720,
    "percentage": 9.63
   },
-  "codeRepos": 10,
-  "codeSources": 3570,
-  "codeLines": 1461810,
-  "codeClones": 7447,
-  "codeDuplicatedLines": 133313,
-  "codePercentage": 9.12,
-  "codeMedianPercentage": 7.54,
+  "codeRepos": 11,
+  "codeSources": 3661,
+  "codeLines": 1557521,
+  "codeClones": 7711,
+  "codeDuplicatedLines": 136432,
+  "codePercentage": 8.76,
+  "codeMedianPercentage": 3.48,
   "codeMostDuplicated": {
    "name": "cursor/plugins",
    "clones": 24,
@@ -51,7 +52,7 @@
    "percentage": 0.99
   },
   "generatedFiles": 8,
-  "avgHealth": 52.96,
+  "avgHealth": 55.01,
   "healthiest": {
    "name": "withmarbleapp/os-taxonomy",
    "score": 82,
@@ -65,11 +66,11 @@
   "languages": [
    {
     "language": "Python",
-    "repos": 6,
-    "clones": 10008,
-    "lines": 2180612,
-    "duplicatedLines": 251368,
-    "percentage": 11.53
+    "repos": 8,
+    "clones": 12520,
+    "lines": 2785751,
+    "duplicatedLines": 357154,
+    "percentage": 12.82
    },
    {
     "language": "TypeScript",
@@ -78,6 +79,14 @@
     "lines": 144928,
     "duplicatedLines": 16715,
     "percentage": 11.53
+   },
+   {
+    "language": "JavaScript",
+    "repos": 2,
+    "clones": 28,
+    "lines": 28918,
+    "duplicatedLines": 468,
+    "percentage": 1.62
    },
    {
     "language": "Rust",
@@ -102,18 +111,79 @@
     "lines": 1321,
     "duplicatedLines": 0,
     "percentage": 0
-   },
-   {
-    "language": "JavaScript",
-    "repos": 1,
-    "clones": 0,
-    "lines": 23205,
-    "duplicatedLines": 0,
-    "percentage": 0
    }
   ]
  },
  "repos": [
+  {
+   "name": "cloudflare/security-audit-skill",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "language": "JavaScript",
+   "stars": 34596,
+   "starsToday": 1712,
+   "days": 1,
+   "rank": 1,
+   "date": "2026-10-21",
+   "total": {
+    "sources": 38,
+    "lines": 5713,
+    "clones": 28,
+    "duplicatedLines": 468,
+    "percentage": 8.19
+   },
+   "code": null,
+   "topFinding": {
+    "format": "text",
+    "lines": 34,
+    "copies": 2,
+    "kind": "docs",
+    "first": {
+     "name": "skills/security-audit/HUNTING.md",
+     "start": 102,
+     "end": 135
+    },
+    "scope": "all"
+   }
+  },
+  {
+   "name": "Comfy-Org/ComfyUI",
+   "url": "https://github.com/Comfy-Org/ComfyUI",
+   "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+   "language": "Python",
+   "stars": 140960,
+   "starsToday": 1206,
+   "days": 3,
+   "rank": 2,
+   "date": "2026-10-21",
+   "total": {
+    "sources": 1181,
+    "lines": 679548,
+    "clones": 4129,
+    "duplicatedLines": 100898,
+    "percentage": 14.85
+   },
+   "code": {
+    "sources": 709,
+    "lines": 286477,
+    "clones": 1795,
+    "duplicatedLines": 24451,
+    "percentage": 8.54,
+    "generated": 1
+   },
+   "topFinding": {
+    "format": "python",
+    "lines": 22,
+    "copies": 20,
+    "kind": "code",
+    "first": {
+     "name": "comfy_api_nodes/apis/__init__.py",
+     "start": 3163,
+     "end": 3184
+    },
+    "scope": "code"
+   }
+  },
   {
    "name": "anthropics/claude-plugins-official",
    "url": "https://github.com/anthropics/claude-plugins-official",
@@ -153,41 +223,72 @@
    }
   },
   {
-   "name": "Comfy-Org/ComfyUI",
-   "url": "https://github.com/Comfy-Org/ComfyUI",
-   "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+   "name": "Graphify-Labs/graphify",
+   "url": "https://github.com/Graphify-Labs/graphify",
+   "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
    "language": "Python",
-   "stars": 139973,
-   "starsToday": 1011,
-   "days": 2,
-   "rank": 2,
-   "date": "2026-10-20",
+   "stars": 130530,
+   "starsToday": 802,
+   "days": 1,
+   "rank": 3,
+   "date": "2026-10-21",
    "total": {
-    "sources": 1169,
-    "lines": 677395,
-    "clones": 4112,
-    "duplicatedLines": 100667,
-    "percentage": 14.86
+    "sources": 1332,
+    "lines": 353496,
+    "clones": 1884,
+    "duplicatedLines": 96237,
+    "percentage": 27.22
    },
    "code": {
-    "sources": 715,
-    "lines": 285955,
-    "clones": 1780,
-    "duplicatedLines": 24238,
-    "percentage": 8.48,
-    "generated": 1
+    "sources": 105,
+    "lines": 91005,
+    "clones": 264,
+    "duplicatedLines": 3163,
+    "percentage": 3.48,
+    "generated": 0
    },
    "topFinding": {
     "format": "python",
-    "lines": 22,
-    "copies": 20,
+    "lines": 12,
+    "copies": 9,
     "kind": "code",
     "first": {
-     "name": "comfy_api_nodes/apis/__init__.py",
-     "start": 3163,
-     "end": 3184
+     "name": "graphify/extractors/bash.py",
+     "start": 114,
+     "end": 125
     },
     "scope": "code"
+   }
+  },
+  {
+   "name": "shiyu-coder/Kronos",
+   "url": "https://github.com/shiyu-coder/Kronos",
+   "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+   "language": "Python",
+   "stars": 42446,
+   "starsToday": 733,
+   "days": 2,
+   "rank": 6,
+   "date": "2026-10-21",
+   "total": {
+    "sources": 77,
+    "lines": 81076,
+    "clones": 108,
+    "duplicatedLines": 28813,
+    "percentage": 35.54
+   },
+   "code": null,
+   "topFinding": {
+    "format": "json",
+    "lines": 1088,
+    "copies": 7,
+    "kind": "data",
+    "first": {
+     "name": "webui/prediction_results/prediction_20250826_175135.json",
+     "start": 1127,
+     "end": 2214
+    },
+    "scope": "all"
    }
   },
   {
@@ -262,6 +363,44 @@
      "name": "adguardhome/agent-harness/cli_anything/adguardhome/utils/repl_skin.py",
      "start": 3,
      "end": 567
+    },
+    "scope": "code"
+   }
+  },
+  {
+   "name": "headroomlabs-ai/headroom",
+   "url": "https://github.com/headroomlabs-ai/headroom",
+   "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+   "language": "Python",
+   "stars": 76857,
+   "starsToday": 549,
+   "days": 2,
+   "rank": 3,
+   "date": "2026-10-21",
+   "total": {
+    "sources": 2475,
+    "lines": 807580,
+    "clones": 2929,
+    "duplicatedLines": 39136,
+    "percentage": 4.85
+   },
+   "code": {
+    "sources": 820,
+    "lines": 366111,
+    "clones": 764,
+    "duplicatedLines": 10188,
+    "percentage": 2.78,
+    "generated": 4
+   },
+   "topFinding": {
+    "format": "javascript",
+    "lines": 10,
+    "copies": 23,
+    "kind": "code",
+    "first": {
+     "name": "headroom/providers/opencode/_dist/index.js",
+     "start": 4057,
+     "end": 4066
     },
     "scope": "code"
    }
@@ -343,44 +482,6 @@
    }
   },
   {
-   "name": "shiyu-coder/Kronos",
-   "url": "https://github.com/shiyu-coder/Kronos",
-   "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-   "language": "Python",
-   "stars": 41825,
-   "starsToday": 363,
-   "days": 1,
-   "rank": 8,
-   "date": "2026-10-20",
-   "total": {
-    "sources": 87,
-    "lines": 81938,
-    "clones": 108,
-    "duplicatedLines": 28813,
-    "percentage": 35.16
-   },
-   "code": {
-    "sources": 25,
-    "lines": 5414,
-    "clones": 27,
-    "duplicatedLines": 372,
-    "percentage": 6.87,
-    "generated": 0
-   },
-   "topFinding": {
-    "format": "python",
-    "lines": 41,
-    "copies": 2,
-    "kind": "code",
-    "first": {
-     "name": "finetune_csv/finetune_base_model.py",
-     "start": 199,
-     "end": 239
-    },
-    "scope": "code"
-   }
-  },
-  {
    "name": "cursor/plugins",
    "url": "https://github.com/cursor/plugins",
    "description": "Cursor plugin specification and official plugins",
@@ -419,44 +520,6 @@
    }
   },
   {
-   "name": "headroomlabs-ai/headroom",
-   "url": "https://github.com/headroomlabs-ai/headroom",
-   "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-   "language": "Python",
-   "stars": 76359,
-   "starsToday": 310,
-   "days": 1,
-   "rank": 3,
-   "date": "2026-10-20",
-   "total": {
-    "sources": 2476,
-    "lines": 805989,
-    "clones": 2922,
-    "duplicatedLines": 39058,
-    "percentage": 4.85
-   },
-   "code": {
-    "sources": 830,
-    "lines": 366407,
-    "clones": 764,
-    "duplicatedLines": 10188,
-    "percentage": 2.78,
-    "generated": 4
-   },
-   "topFinding": {
-    "format": "javascript",
-    "lines": 10,
-    "copies": 23,
-    "kind": "code",
-    "first": {
-     "name": "headroom/providers/opencode/_dist/index.js",
-     "start": 4057,
-     "end": 4066
-    },
-    "scope": "code"
-   }
-  },
-  {
    "name": "withmarbleapp/os-taxonomy",
    "url": "https://github.com/withmarbleapp/os-taxonomy",
    "description": "",
@@ -475,6 +538,44 @@
    },
    "code": null,
    "topFinding": null
+  },
+  {
+   "name": "anthropics/knowledge-work-plugins",
+   "url": "https://github.com/anthropics/knowledge-work-plugins",
+   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+   "language": "Python",
+   "stars": 30884,
+   "starsToday": 267,
+   "days": 1,
+   "rank": 5,
+   "date": "2026-10-21",
+   "total": {
+    "sources": 2142,
+    "lines": 248761,
+    "clones": 604,
+    "duplicatedLines": 9240,
+    "percentage": 3.71
+   },
+   "code": {
+    "sources": 27,
+    "lines": 9894,
+    "clones": 12,
+    "duplicatedLines": 115,
+    "percentage": 1.16,
+    "generated": 0
+   },
+   "topFinding": {
+    "format": "python",
+    "lines": 9,
+    "copies": 3,
+    "kind": "code",
+    "first": {
+     "name": "bio-research/skills/nextflow-development/scripts/utils/ncbi_utils.py",
+     "start": 118,
+     "end": 126
+    },
+    "scope": "code"
+   }
   },
   {
    "name": "anthropics/claude-code",
