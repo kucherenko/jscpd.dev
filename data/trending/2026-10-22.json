@@ -1,0 +1,6484 @@
+{
+ "date": "2026-10-22",
+ "generatedAt": "2026-10-22T05:29:30.811Z",
+ "source": "github-trending-daily",
+ "jscpdVersion": "5.4.2",
+ "summary": {
+  "repos": 6,
+  "sources": 6283,
+  "lines": 2568499,
+  "tokens": 15306526,
+  "clones": 14101,
+  "duplicatedLines": 328054,
+  "duplicatedTokens": 1778169,
+  "percentage": 12.77,
+  "percentageTokens": 11.62,
+  "avgPercentage": 16.73,
+  "medianPercentage": 12.3,
+  "mostDuplicated": {
+   "name": "shiyu-coder/Kronos",
+   "clones": 108,
+   "percentage": 35.54
+  },
+  "cleanest": {
+   "name": "headroomlabs-ai/headroom",
+   "clones": 2929,
+   "percentage": 4.84
+  },
+  "mostClones": {
+   "name": "akitaonrails/ai-memory",
+   "clones": 5012,
+   "percentage": 9.75
+  },
+  "codeRepos": 4,
+  "codeSources": 2132,
+  "codeLines": 1192574,
+  "codeClones": 5834,
+  "codeDuplicatedLines": 74750,
+  "codePercentage": 6.27,
+  "codeMedianPercentage": 5.85,
+  "codeMostDuplicated": {
+   "name": "Comfy-Org/ComfyUI",
+   "clones": 1806,
+   "percentage": 8.56
+  },
+  "codeCleanest": {
+   "name": "headroomlabs-ai/headroom",
+   "clones": 764,
+   "percentage": 2.78
+  },
+  "generatedFiles": 7,
+  "avgHealth": 49.12,
+  "healthiest": {
+   "name": "headroomlabs-ai/headroom",
+   "score": 65.2,
+   "grade": "C"
+  },
+  "leastHealthy": {
+   "name": "Comfy-Org/ComfyUI",
+   "score": 19.2,
+   "grade": "E"
+  },
+  "languages": [
+   {
+    "language": "Python",
+    "repos": 4,
+    "clones": 9061,
+    "lines": 1923313,
+    "duplicatedLines": 265230,
+    "percentage": 13.79
+   },
+   {
+    "language": "Rust",
+    "repos": 1,
+    "clones": 5012,
+    "lines": 639473,
+    "duplicatedLines": 62356,
+    "percentage": 9.75
+   },
+   {
+    "language": "JavaScript",
+    "repos": 1,
+    "clones": 28,
+    "lines": 5713,
+    "duplicatedLines": 468,
+    "percentage": 8.19
+   }
+  ]
+ },
+ "repos": [
+  {
+   "name": "cloudflare/security-audit-skill",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "language": "JavaScript",
+   "stars": 37138,
+   "starsToday": 2012,
+   "defaultBranch": "main",
+   "headSha": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+   "durationMs": 1085,
+   "total": {
+    "sources": 38,
+    "lines": 5713,
+    "tokens": 65273,
+    "clones": 28,
+    "duplicatedLines": 468,
+    "duplicatedTokens": 2850,
+    "percentage": 8.19,
+    "percentageTokens": 4.37
+   },
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 4,
+     "lines": 3037,
+     "clones": 24,
+     "duplicatedLines": 276,
+     "percentage": 9.09
+    },
+    {
+     "format": "json",
+     "sources": 3,
+     "lines": 537,
+     "clones": 3,
+     "duplicatedLines": 160,
+     "percentage": 29.8
+    },
+    {
+     "format": "text",
+     "sources": 13,
+     "lines": 248,
+     "clones": 1,
+     "duplicatedLines": 32,
+     "percentage": 12.9
+    },
+    {
+     "format": "markdown",
+     "sources": 16,
+     "lines": 1884,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 5,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "yaml",
+     "sources": 1,
+     "lines": 2,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "text",
+     "lines": 34,
+     "tokens": 399,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/HUNTING.md",
+      "start": 102,
+      "end": 135
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+       "start": 51,
+       "end": 84
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "Artifact promotion procedure (trusted parent-side code only):",
+       "Reference only for you: the parent performs these steps; you never perform them.",
+       "",
+       "Before execution, the parent opens and retains trusted, non-inheritable directory",
+       "descriptors for the agent's scratch/ and artifacts/ roots, and records an allowlist",
+       "of expected scratch-relative artifact files plus explicit per-file and cumulative",
+       "byte limits. Never pass those descriptors to the agent or sandbox. After the sandbox",
+       "and all its processes terminate, trusted parent-side code promotes each allowlisted",
+       "file separately:",
+       ""
+      ],
+      "total": 34
+     }
+    },
+    {
+     "format": "json",
+     "lines": 80,
+     "tokens": 268,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/report-schema.json",
+      "start": 253,
+      "end": 332
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/report-schema.json",
+       "start": 370,
+       "end": 449
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "},",
+       "\"fingerprint\": {",
+       "  \"type\": \"string\",",
+       "  \"minLength\": 1,",
+       "  \"pattern\": \"^[A-Za-z0-9][A-Za-z0-9._:/@+-]*$\"",
+       "},",
+       "\"title\": {",
+       "  \"type\": \"string\",",
+       "  \"minLength\": 1,",
+       "  \"visibleContent\": true"
+      ],
+      "total": 80
+     }
+    },
+    {
+     "format": "json",
+     "lines": 64,
+     "tokens": 217,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/report-schema.json",
+      "start": 35,
+      "end": 98
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/report-schema.json",
+       "start": 269,
+       "end": 332
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"intended_behavior\": {",
+       "  \"type\": \"string\",",
+       "  \"minLength\": 1,",
+       "  \"visibleContent\": true",
+       "},",
+       "\"trace\": {",
+       "  \"type\": \"array\",",
+       "  \"minItems\": 1,",
+       "  \"uniqueItems\": true,",
+       "  \"items\": {"
+      ],
+      "total": 64
+     }
+    },
+    {
+     "format": "javascript",
+     "lines": 32,
+     "tokens": 199,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 92,
+      "end": 123
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 55,
+       "end": 86
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 7,
+     "tokens": 80,
+     "copies": 3,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "start": 705,
+      "end": 711
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.test.cjs",
+       "start": 543,
+       "end": 549
+      },
+      {
+       "name": "skills/security-audit/validate-findings.test.cjs",
+       "start": 565,
+       "end": 571
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 124,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "start": 628,
+      "end": 641
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.test.cjs",
+       "start": 467,
+       "end": 480
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 23,
+     "tokens": 122,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 318,
+      "end": 340
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 138,
+       "end": 160
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 16,
+     "tokens": 109,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.cjs",
+      "start": 718,
+      "end": 733
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.cjs",
+       "start": 601,
+       "end": 615
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 106,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "start": 610,
+      "end": 623
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.test.cjs",
+       "start": 387,
+       "end": 400
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 11,
+     "tokens": 94,
+     "copies": 2,
+     "first": {
+      "name": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "start": 652,
+      "end": 662
+     },
+     "others": [
+      {
+       "name": "skills/security-audit/validate-findings.test.cjs",
+       "start": 491,
+       "end": 501
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 2,
+    "lines": 1645,
+    "tokens": 12266,
+    "clones": 9,
+    "duplicatedLines": 138,
+    "duplicatedTokens": 816,
+    "percentage": 8.39,
+    "percentageTokens": 6.65,
+    "formats": [
+     {
+      "format": "javascript",
+      "sources": 2,
+      "lines": 1645,
+      "clones": 9,
+      "duplicatedLines": 138,
+      "percentage": 8.39
+     }
+    ],
+    "topClones": [
+     {
+      "format": "javascript",
+      "lines": 32,
+      "tokens": 199,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 92,
+       "end": 123
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 55,
+        "end": 86
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "const hasOwn = (value, key) => Object.prototype.hasOwnProperty.call(value, key);",
+        "",
+        "class JsonStructureError extends Error {}",
+        "class SafeInputError extends Error {}",
+        "",
+        "function escapeUnsafeDiagnosticCharacters(value) {",
+        "  return String(value).replace(UNSAFE_DIAGNOSTIC_CHARACTER, (character) => {",
+        "    const codePoint = character.codePointAt(0);",
+        "    return codePoint <= 0xffff",
+        "      ? `\\\\u${codePoint.toString(16).padStart(4, \"0\")}`"
+       ],
+       "total": 32
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 23,
+      "tokens": 122,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 318,
+       "end": 340
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 138,
+        "end": 160
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  return errors;",
+        "}",
+        "",
+        "function hasValidUnicodeScalarValues(value) {",
+        "  let index = 0;",
+        "  while (index < value.length) {",
+        "    const first = value.charCodeAt(index++);",
+        "    if (first >= 0xd800 && first <= 0xdbff) {",
+        "      if (index >= value.length) return false;",
+        "      const second = value.charCodeAt(index++);"
+       ],
+       "total": 23
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 16,
+      "tokens": 109,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 718,
+       "end": 733
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 601,
+        "end": 615
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  return errors;",
+        "}",
+        "",
+        "function readFileWithinLimit(file) {",
+        "  const noFollow = fs.constants.O_NOFOLLOW;",
+        "  const nonBlock = fs.constants.O_NONBLOCK;",
+        "  if (!Number.isInteger(noFollow) || noFollow === 0 || !Number.isInteger(nonBlock) || nonBlock === 0) {",
+        "    // Node exposes no race-safe fallback on these platforms, so reject all inputs.",
+        "    throw new SafeInputError(\"OS no-follow and nonblocking input protection is unavailable\");",
+        "  }"
+       ],
+       "total": 16
+      },
+      "excerptSecond": {
+       "lines": [
+        "  return schema;",
+        "}",
+        "",
+        "function readFileWithinLimit(file) {",
+        "  const noFollow = fs.constants.O_NOFOLLOW;",
+        "  const nonBlock = fs.constants.O_NONBLOCK;",
+        "  if (!Number.isInteger(noFollow) || noFollow === 0 || !Number.isInteger(nonBlock) || nonBlock === 0) {",
+        "    throw new SafeInputError(\"OS no-follow and nonblocking input protection is unavailable\");",
+        "  }",
+        ""
+       ],
+       "total": 15
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 18,
+      "tokens": 87,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 120,
+       "end": 137
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 89,
+        "end": 106
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 15,
+      "tokens": 72,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 230,
+       "end": 244
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 664,
+        "end": 679
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 8,
+      "tokens": 64,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 741,
+       "end": 748
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 629,
+        "end": 636
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 13,
+      "tokens": 61,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 749,
+       "end": 761
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 639,
+        "end": 651
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 7,
+      "tokens": 52,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 845,
+       "end": 851
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-findings.cjs",
+        "start": 749,
+        "end": 755
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 6,
+      "tokens": 50,
+      "copies": 2,
+      "first": {
+       "name": "skills/security-audit/validate-coverage-ledger.cjs",
+       "start": 421,
+       "end": 426
+      },
+      "others": [
+       {
+        "name": "skills/security-audit/validate-coverage-ledger.cjs",
+        "start": 471,
+        "end": 476
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "health": {
+    "score": 58.1,
+    "grade": "C",
+    "size": {
+     "lines": 3037,
+     "files": 4,
+     "class": "S"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 9.1,
+      "adjusted": 6.9,
+      "lines": 276,
+      "halfLife": 8.5,
+      "formats": [
+       "javascript"
+      ],
+      "excluded": [
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 57.1
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 0,
+      "adjusted": 1.2,
+      "lines": 0,
+      "halfLife": 7.5,
+      "weight": 1,
+      "score": 89.2
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 100,
+      "adjusted": 68.6,
+      "lines": 3037,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 38.6
+     }
+    ]
+   },
+   "complexity": {
+    "total": 944,
+    "mean": 236,
+    "files": [
+     {
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "complexity": 358,
+      "lines": 872,
+      "bytes": 33522
+     },
+     {
+      "path": "skills/security-audit/validate-findings.cjs",
+      "complexity": 347,
+      "lines": 773,
+      "bytes": 28806
+     },
+     {
+      "path": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "complexity": 120,
+      "lines": 740,
+      "bytes": 28483
+     },
+     {
+      "path": "skills/security-audit/validate-findings.test.cjs",
+      "complexity": 119,
+      "lines": 652,
+      "bytes": 26384
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 0,
+    "findings": 0,
+    "files": 4,
+    "byCategory": [],
+    "largest": []
+   }
+  },
+  {
+   "name": "headroomlabs-ai/headroom",
+   "url": "https://github.com/headroomlabs-ai/headroom",
+   "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+   "language": "Python",
+   "stars": 77360,
+   "starsToday": 474,
+   "defaultBranch": "main",
+   "headSha": "e995eb9f1dacac7ed548758406de6c1508caef95",
+   "durationMs": 4894,
+   "total": {
+    "sources": 2483,
+    "lines": 808308,
+    "tokens": 4452971,
+    "clones": 2929,
+    "duplicatedLines": 39136,
+    "duplicatedTokens": 215505,
+    "percentage": 4.84,
+    "percentageTokens": 4.84
+   },
+   "formats": [
+    {
+     "format": "python",
+     "sources": 1683,
+     "lines": 622725,
+     "clones": 1909,
+     "duplicatedLines": 25486,
+     "percentage": 4.09
+    },
+    {
+     "format": "rust",
+     "sources": 216,
+     "lines": 89993,
+     "clones": 593,
+     "duplicatedLines": 6913,
+     "percentage": 7.68
+    },
+    {
+     "format": "json",
+     "sources": 212,
+     "lines": 11270,
+     "clones": 128,
+     "duplicatedLines": 2732,
+     "percentage": 24.24
+    },
+    {
+     "format": "javascript",
+     "sources": 7,
+     "lines": 14779,
+     "clones": 126,
+     "duplicatedLines": 1991,
+     "percentage": 13.47
+    },
+    {
+     "format": "typescript",
+     "sources": 95,
+     "lines": 18998,
+     "clones": 98,
+     "duplicatedLines": 1095,
+     "percentage": 5.76
+    },
+    {
+     "format": "yaml",
+     "sources": 39,
+     "lines": 5561,
+     "clones": 26,
+     "duplicatedLines": 290,
+     "percentage": 5.21
+    },
+    {
+     "format": "markdown",
+     "sources": 100,
+     "lines": 27415,
+     "clones": 18,
+     "duplicatedLines": 208,
+     "percentage": 0.76
+    },
+    {
+     "format": "powershell",
+     "sources": 7,
+     "lines": 2062,
+     "clones": 8,
+     "duplicatedLines": 88,
+     "percentage": 4.27
+    },
+    {
+     "format": "text",
+     "sources": 22,
+     "lines": 913,
+     "clones": 6,
+     "duplicatedLines": 20,
+     "percentage": 2.19
+    },
+    {
+     "format": "markup",
+     "sources": 7,
+     "lines": 4399,
+     "clones": 5,
+     "duplicatedLines": 62,
+     "percentage": 1.41
+    }
+   ],
+   "topClones": [
+    {
+     "format": "json",
+     "lines": 18,
+     "tokens": 63,
+     "copies": 24,
+     "first": {
+      "name": "tests/parity/fixtures/code_aware_compressor/07dd1a61089c1e53.json",
+      "start": 1,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/095be1adad76b588.json",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/1e319c5e33af4af1.json",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/2c239d4af41282c2.json",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/2d214f401618d639.json",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/36e5ff5093790e6f.json",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/3e706cfb03aa3c8e.json",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/411d5549bcd5f50d.json",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "tests/parity/fixtures/code_aware_compressor/420dd19a087526ca.json",
+       "start": 1,
+       "end": 18
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "{",
+       "  \"config\": {",
+       "    \"ccr_ttl\": 300,",
+       "    \"compress_comments\": true,",
+       "    \"docstring_mode\": \"first_line\",",
+       "    \"enable_ccr\": false,",
+       "    \"fallback_to_kompress\": false,",
+       "    \"language_hint\": null,",
+       "    \"max_body_lines\": 5,",
+       "    \"min_tokens_for_compression\": 100,"
+      ],
+      "total": 18
+     }
+    },
+    {
+     "format": "javascript",
+     "lines": 10,
+     "tokens": 51,
+     "copies": 23,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4057,
+      "end": 4066
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4333,
+       "end": 4342
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4575,
+       "end": 4584
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4843,
+       "end": 4852
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5345,
+       "end": 5354
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5591,
+       "end": 5600
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5944,
+       "end": 5953
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6297,
+       "end": 6306
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6415,
+       "end": 6424
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "  set: { unit: \"\\u0639\\u0646\\u0635\\u0631\", verb: \"\\u0623\\u0646 \\u064A\\u062D\\u0648\\u064A\" }",
+       "};",
+       "function getSizing(origin) {",
+       "  return Sizable[origin] ?? null;",
+       "}",
+       "const parsedType7 = (data) => {",
+       "  const t = typeof data;",
+       "  switch (t) {",
+       "    case \"number\": {",
+       "      return Number.isNaN(data) ? \"NaN\" : \"number\";"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "  }",
+       "};",
+       "function getSizing(origin) {",
+       "  return Sizable[origin] ?? null;",
+       "}",
+       "const parsedType7 = (data) => {",
+       "  const t = typeof data;",
+       "  switch (t) {",
+       "    case \"number\": {",
+       "      return Number.isNaN(data) ? \"NaN\" : \"\\u043B\\u0456\\u043A\";"
+      ],
+      "total": 10
+     }
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 51,
+     "copies": 23,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4201,
+      "end": 4214
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4482,
+       "end": 4495
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4620,
+       "end": 4633
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4751,
+       "end": 4764
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5252,
+       "end": 5265
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5618,
+       "end": 5631
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5735,
+       "end": 5748
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5971,
+       "end": 5984
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6089,
+       "end": 6102
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "email: \"email address\",",
+       "url: \"URL\",",
+       "emoji: \"emoji\",",
+       "uuid: \"UUID\",",
+       "uuidv4: \"UUIDv4\",",
+       "uuidv6: \"UUIDv6\",",
+       "nanoid: \"nanoid\",",
+       "guid: \"GUID\",",
+       "cuid: \"cuid\",",
+       "cuid2: \"cuid2\","
+      ],
+      "total": 14
+     }
+    },
+    {
+     "format": "javascript",
+     "lines": 166,
+     "tokens": 1111,
+     "copies": 2,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 12757,
+      "end": 12922
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/hook-shim/handler.js",
+       "start": 266,
+       "end": 431
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 22,
+     "tokens": 58,
+     "copies": 20,
+     "first": {
+      "name": "tests/parity/fixtures/cache_aligner/0225460359a992d9.json",
+      "start": 1,
+      "end": 22
+     },
+     "others": [
+      {
+       "name": "tests/parity/fixtures/cache_aligner/231ab237501e106b.json",
+       "start": 1,
+       "end": 22
+      },
+      {
+       "name": "tests/parity/fixtures/cache_aligner/25683f67cbb74ece.json",
+       "start": 1,
+       "end": 22
+      },
+      {
+       "name": "tests/parity/fixtures/cache_aligner/31eb80356eeeb30d.json",
+       "start": 1,
+       "end": 22
+      },
+      {
+       "name": "tests/parity/fixtures/cache_aligner/336311b995b063d5.json",
+       "start": 1,
+       "end": 22
+      },
+      {
+       "name": "tests/parity/fixtures/cache_aligner/475e76a9f99c29ab.json",
+       "start": 1,
+       "end": 22
+      },
+      {
+       "name": "tests/parity/fixtures/cache_aligner/4b171a7f9af6e2d5.json",
+       "start": 1,
+       "end": 22
+      },
+      {
+       "name": "tests/parity/fixtures/cache_aligner/541daf83f5a1fda9.json",
+       "start": 1,
+       "end": 22
+      },
+      {
+       "name": "tests/parity/fixtures/cache_aligner/6502f683439de052.json",
+       "start": 1,
+       "end": 22
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 16,
+     "tokens": 55,
+     "copies": 20,
+     "first": {
+      "name": "tests/parity/fixtures/log_compressor/012c7bbeb96d95e9.json",
+      "start": 1,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": "tests/parity/fixtures/log_compressor/1fbaf88e12686704.json",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "tests/parity/fixtures/log_compressor/23112ae8ae41ba59.json",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "tests/parity/fixtures/log_compressor/305987ea77c385e6.json",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "tests/parity/fixtures/log_compressor/349121068ecbb26e.json",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "tests/parity/fixtures/log_compressor/3bc015edc0a36387.json",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "tests/parity/fixtures/log_compressor/3bf3f8bd70c80dad.json",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "tests/parity/fixtures/log_compressor/5533a8264a04dd61.json",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "tests/parity/fixtures/log_compressor/566491aacda8af92.json",
+       "start": 1,
+       "end": 16
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 21,
+     "tokens": 74,
+     "copies": 15,
+     "first": {
+      "name": "tests/parity/fixtures/smart_crusher/dict_array_100_sequential_b91d1fff5ba3.json",
+      "start": 1,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "tests/parity/fixtures/smart_crusher/dict_array_30_b0ba1d26fd03.json",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "tests/parity/fixtures/smart_crusher/duplicate_dicts_40_40a0670dec17.json",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "tests/parity/fixtures/smart_crusher/empty_array_41ecf20098c5.json",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "tests/parity/fixtures/smart_crusher/mixed_array_3f929019b62f.json",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "tests/parity/fixtures/smart_crusher/nested_3deep_with_array_bb5036c153aa.json",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "tests/parity/fixtures/smart_crusher/nested_object_with_array_b66d43299ea1.json",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "tests/parity/fixtures/smart_crusher/non_json_passthrough_4322abf677f3.json",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "tests/parity/fixtures/smart_crusher/nulls_and_bools_06d6fd6adcab.json",
+       "start": 1,
+       "end": 21
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 52,
+     "copies": 19,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4070,
+      "end": 4083
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4346,
+       "end": 4359
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4606,
+       "end": 4619
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4856,
+       "end": 4869
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5358,
+       "end": 5371
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5604,
+       "end": 5617
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5957,
+       "end": 5970
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6310,
+       "end": 6323
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6428,
+       "end": 6441
+      }
+     ]
+    },
+    {
+     "format": "rust",
+     "lines": 20,
+     "tokens": 124,
+     "copies": 8,
+     "first": {
+      "name": "crates/headroom-proxy/tests/integration_responses.rs",
+      "start": 102,
+      "end": 121
+     },
+     "others": [
+      {
+       "name": "crates/headroom-proxy/tests/integration_responses.rs",
+       "start": 154,
+       "end": 173
+      },
+      {
+       "name": "crates/headroom-proxy/tests/integration_responses.rs",
+       "start": 205,
+       "end": 224
+      },
+      {
+       "name": "crates/headroom-proxy/tests/integration_responses.rs",
+       "start": 295,
+       "end": 314
+      },
+      {
+       "name": "crates/headroom-proxy/tests/integration_responses.rs",
+       "start": 383,
+       "end": 402
+      },
+      {
+       "name": "crates/headroom-proxy/tests/integration_responses.rs",
+       "start": 441,
+       "end": 460
+      },
+      {
+       "name": "crates/headroom-proxy/tests/integration_responses.rs",
+       "start": 494,
+       "end": 513
+      },
+      {
+       "name": "crates/headroom-proxy/tests/integration_responses.rs",
+       "start": 887,
+       "end": 906
+      }
+     ]
+    },
+    {
+     "format": "javascript",
+     "lines": 27,
+     "tokens": 122,
+     "copies": 8,
+     "first": {
+      "name": "headroom/providers/opencode/_dist/index.js",
+      "start": 4057,
+      "end": 4083
+     },
+     "others": [
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4174,
+       "end": 4200
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4455,
+       "end": 4481
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5472,
+       "end": 5498
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 5826,
+       "end": 5852
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6062,
+       "end": 6088
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 6780,
+       "end": 6806
+      },
+      {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 9309,
+       "end": 9335
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 820,
+    "lines": 366111,
+    "tokens": 1884068,
+    "clones": 764,
+    "duplicatedLines": 10188,
+    "duplicatedTokens": 58285,
+    "percentage": 2.78,
+    "percentageTokens": 3.09,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 604,
+      "lines": 266829,
+      "clones": 393,
+      "duplicatedLines": 5273,
+      "percentage": 1.98
+     },
+     {
+      "format": "rust",
+      "sources": 154,
+      "lines": 72268,
+      "clones": 226,
+      "duplicatedLines": 2538,
+      "percentage": 3.51
+     },
+     {
+      "format": "javascript",
+      "sources": 7,
+      "lines": 14779,
+      "clones": 126,
+      "duplicatedLines": 1991,
+      "percentage": 13.47
+     },
+     {
+      "format": "typescript",
+      "sources": 36,
+      "lines": 6783,
+      "clones": 10,
+      "duplicatedLines": 140,
+      "percentage": 2.06
+     },
+     {
+      "format": "powershell",
+      "sources": 2,
+      "lines": 2000,
+      "clones": 8,
+      "duplicatedLines": 88,
+      "percentage": 4.4
+     },
+     {
+      "format": "sql",
+      "sources": 4,
+      "lines": 461,
+      "clones": 1,
+      "duplicatedLines": 158,
+      "percentage": 34.27
+     },
+     {
+      "format": "bash",
+      "sources": 11,
+      "lines": 2485,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "tsx",
+      "sources": 1,
+      "lines": 336,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "c",
+      "sources": 1,
+      "lines": 170,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "javascript",
+      "lines": 10,
+      "tokens": 51,
+      "copies": 23,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4057,
+       "end": 4066
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4333,
+        "end": 4342
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4575,
+        "end": 4584
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4843,
+        "end": 4852
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5345,
+        "end": 5354
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5591,
+        "end": 5600
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5944,
+        "end": 5953
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 6297,
+        "end": 6306
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 6415,
+        "end": 6424
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  set: { unit: \"\\u0639\\u0646\\u0635\\u0631\", verb: \"\\u0623\\u0646 \\u064A\\u062D\\u0648\\u064A\" }",
+        "};",
+        "function getSizing(origin) {",
+        "  return Sizable[origin] ?? null;",
+        "}",
+        "const parsedType7 = (data) => {",
+        "  const t = typeof data;",
+        "  switch (t) {",
+        "    case \"number\": {",
+        "      return Number.isNaN(data) ? \"NaN\" : \"number\";"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "  }",
+        "};",
+        "function getSizing(origin) {",
+        "  return Sizable[origin] ?? null;",
+        "}",
+        "const parsedType7 = (data) => {",
+        "  const t = typeof data;",
+        "  switch (t) {",
+        "    case \"number\": {",
+        "      return Number.isNaN(data) ? \"NaN\" : \"\\u043B\\u0456\\u043A\";"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 14,
+      "tokens": 51,
+      "copies": 23,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4201,
+       "end": 4214
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4482,
+        "end": 4495
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4620,
+        "end": 4633
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4751,
+        "end": 4764
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5252,
+        "end": 5265
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5618,
+        "end": 5631
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5735,
+        "end": 5748
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5971,
+        "end": 5984
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 6089,
+        "end": 6102
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "email: \"email address\",",
+        "url: \"URL\",",
+        "emoji: \"emoji\",",
+        "uuid: \"UUID\",",
+        "uuidv4: \"UUIDv4\",",
+        "uuidv6: \"UUIDv6\",",
+        "nanoid: \"nanoid\",",
+        "guid: \"GUID\",",
+        "cuid: \"cuid\",",
+        "cuid2: \"cuid2\","
+       ],
+       "total": 14
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 166,
+      "tokens": 1111,
+      "copies": 2,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 12757,
+       "end": 12922
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/hook-shim/handler.js",
+        "start": 266,
+        "end": 431
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    return new URL(`${protocol}//${hostname3}${port}${path}`);",
+        "  } catch {",
+        "    return void 0;",
+        "  }",
+        "}",
+        "function headersForNodeRequest(options, upstream, originalPath, project, sessionToken) {",
+        "  const headers = new Headers(options.headers);",
+        "  headers.set(BASE_URL_HEADER, upstream.origin);",
+        "  if (originalPath) {",
+        "    headers.set(ORIGINAL_PATH_HEADER, originalPath);"
+       ],
+       "total": 166
+      }
+     },
+     {
+      "format": "javascript",
+      "lines": 14,
+      "tokens": 52,
+      "copies": 19,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4070,
+       "end": 4083
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4346,
+        "end": 4359
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4606,
+        "end": 4619
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4856,
+        "end": 4869
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5358,
+        "end": 5371
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5604,
+        "end": 5617
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5957,
+        "end": 5970
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 6310,
+        "end": 6323
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 6428,
+        "end": 6441
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 27,
+      "tokens": 122,
+      "copies": 8,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 4057,
+       "end": 4083
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4174,
+        "end": 4200
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 4455,
+        "end": 4481
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5472,
+        "end": 5498
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 5826,
+        "end": 5852
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 6062,
+        "end": 6088
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 6780,
+        "end": 6806
+       },
+       {
+        "name": "headroom/providers/opencode/_dist/index.js",
+        "start": 9309,
+        "end": 9335
+       }
+      ]
+     },
+     {
+      "format": "sql",
+      "lines": 158,
+      "tokens": 832,
+      "copies": 2,
+      "first": {
+       "name": "sql/create_dashboard_summary.sql",
+       "start": 27,
+       "end": 184
+      },
+      "others": [
+       {
+        "name": "sql/upgrade_dashboard_v2.sql",
+        "start": 9,
+        "end": 166
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 101,
+      "tokens": 686,
+      "copies": 2,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 12653,
+       "end": 12753
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/hook-shim/handler.js",
+        "start": 162,
+        "end": 262
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 68,
+      "tokens": 531,
+      "copies": 2,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 12538,
+       "end": 12605
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/hook-shim/handler.js",
+        "start": 54,
+        "end": 121
+       }
+      ]
+     },
+     {
+      "format": "javascript",
+      "lines": 42,
+      "tokens": 301,
+      "copies": 2,
+      "first": {
+       "name": "headroom/providers/opencode/_dist/index.js",
+       "start": 12486,
+       "end": 12527
+      },
+      "others": [
+       {
+        "name": "headroom/providers/opencode/hook-shim/handler.js",
+        "start": 2,
+        "end": 43
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 48,
+      "tokens": 284,
+      "copies": 2,
+      "first": {
+       "name": "benchmarks/claude_session_mode_benchmark.py",
+       "start": 712,
+       "end": 759
+      },
+      "others": [
+       {
+        "name": "headroom/proxy/handlers/anthropic.py",
+        "start": 915,
+        "end": 962
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 4,
+     "minified": 2,
+     "sample": [
+      "headroom/dashboard/static/alpine.min.js",
+      "headroom/dashboard/static/tailwind.min.js",
+      "headroom/transforms/dense_line_elider.py",
+      "tests/test_content_router_compact_json.py"
+     ]
+    }
+   },
+   "health": {
+    "score": 65.2,
+    "grade": "C",
+    "size": {
+     "lines": 751069,
+     "files": 2014,
+     "class": "L"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 4.8,
+      "adjusted": 4.8,
+      "lines": 35756,
+      "halfLife": 8.5,
+      "formats": [
+       "python",
+       "rust",
+       "typescript",
+       "javascript",
+       "bash",
+       "powershell",
+       "tsx",
+       "docker",
+       "sql",
+       "c",
+       "makefile",
+       "hcl"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 67.8
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 0.7,
+      "adjusted": 0.7,
+      "lines": 4636,
+      "halfLife": 7.5,
+      "coverage": 87.2,
+      "weight": 0.872,
+      "score": 93.6
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 56.6,
+      "adjusted": 56.5,
+      "lines": 424802,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 45.7
+     }
+    ]
+   },
+   "complexity": {
+    "total": 82518,
+    "mean": 41,
+    "files": [
+     {
+      "path": "headroom/providers/opencode/_dist/index.js",
+      "complexity": 3719,
+      "lines": 13057,
+      "bytes": 469306
+     },
+     {
+      "path": "headroom/proxy/handlers/openai.py",
+      "complexity": 1649,
+      "lines": 11766,
+      "bytes": 584077
+     },
+     {
+      "path": "headroom/cli/wrap.py",
+      "complexity": 1270,
+      "lines": 9414,
+      "bytes": 395991
+     },
+     {
+      "path": "headroom/transforms/content_router.py",
+      "complexity": 1019,
+      "lines": 7924,
+      "bytes": 393917
+     },
+     {
+      "path": "headroom/proxy/server.py",
+      "complexity": 923,
+      "lines": 7310,
+      "bytes": 340492
+     },
+     {
+      "path": "headroom/proxy/handlers/anthropic.py",
+      "complexity": 757,
+      "lines": 6405,
+      "bytes": 339193
+     },
+     {
+      "path": "headroom/proxy/helpers.py",
+      "complexity": 732,
+      "lines": 4868,
+      "bytes": 208292
+     },
+     {
+      "path": "headroom/proxy/handlers/streaming.py",
+      "complexity": 431,
+      "lines": 2599,
+      "bytes": 127765
+     },
+     {
+      "path": "headroom/memory/traffic_learner.py",
+      "complexity": 419,
+      "lines": 2033,
+      "bytes": 82609
+     },
+     {
+      "path": "crates/headroom-core/src/transforms/log_compressor.rs",
+      "complexity": 410,
+      "lines": 2692,
+      "bytes": 105216
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 0.71,
+    "findings": 88,
+    "files": 1835,
+    "byCategory": [
+     {
+      "category": "unused-file",
+      "count": 17
+     },
+     {
+      "category": "unused-export",
+      "count": 15
+     },
+     {
+      "category": "unused-symbol",
+      "count": 19
+     },
+     {
+      "category": "unused-import",
+      "count": 37
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-file",
+      "path": "headroom/evals/html_extraction.py",
+      "name": "",
+      "line": 1,
+      "lines": 655
+     },
+     {
+      "category": "unused-file",
+      "path": "deploy/beacon/worker.js",
+      "name": "",
+      "line": 1,
+      "lines": 506
+     },
+     {
+      "category": "unused-file",
+      "path": "headroom/evals/html_oss_benchmarks.py",
+      "name": "",
+      "line": 1,
+      "lines": 501
+     },
+     {
+      "category": "unused-file",
+      "path": "plugins/headroom-snip/hooks/register.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 336
+     },
+     {
+      "category": "unused-file",
+      "path": "headroom/transforms/adaptive_sizer.py",
+      "name": "",
+      "line": 1,
+      "lines": 334
+     },
+     {
+      "category": "unused-file",
+      "path": "headroom/learn/plugins/opencode.py",
+      "name": "",
+      "line": 1,
+      "lines": 306
+     },
+     {
+      "category": "unused-file",
+      "path": "deploy/beacon/test-rollup.mjs",
+      "name": "",
+      "line": 1,
+      "lines": 292
+     },
+     {
+      "category": "unused-file",
+      "path": "headroom/shared_context.py",
+      "name": "",
+      "line": 1,
+      "lines": 228
+     },
+     {
+      "category": "unused-file",
+      "path": "headroom/learn/plugins/grok.py",
+      "name": "",
+      "line": 1,
+      "lines": 211
+     },
+     {
+      "category": "unused-file",
+      "path": "headroom/integrations/litellm_callback.py",
+      "name": "",
+      "line": 1,
+      "lines": 177
+     }
+    ]
+   }
+  },
+  {
+   "name": "Comfy-Org/ComfyUI",
+   "url": "https://github.com/Comfy-Org/ComfyUI",
+   "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+   "language": "Python",
+   "stars": 141672,
+   "starsToday": 939,
+   "defaultBranch": "master",
+   "headSha": "1a82e6d01f395b43275c77acd289af1eb7090bb9",
+   "durationMs": 4051,
+   "total": {
+    "sources": 1185,
+    "lines": 680433,
+    "tokens": 3445007,
+    "clones": 4140,
+    "duplicatedLines": 101044,
+    "duplicatedTokens": 377855,
+    "percentage": 14.85,
+    "percentageTokens": 10.97
+   },
+   "formats": [
+    {
+     "format": "json",
+     "sources": 154,
+     "lines": 233919,
+     "clones": 2155,
+     "duplicatedLines": 74343,
+     "percentage": 31.78
+    },
+    {
+     "format": "python",
+     "sources": 959,
+     "lines": 339218,
+     "clones": 1946,
+     "duplicatedLines": 26119,
+     "percentage": 7.7
+    },
+    {
+     "format": "yaml",
+     "sources": 36,
+     "lines": 8188,
+     "clones": 37,
+     "duplicatedLines": 564,
+     "percentage": 6.89
+    },
+    {
+     "format": "glsl",
+     "sources": 14,
+     "lines": 1192,
+     "clones": 2,
+     "duplicatedLines": 18,
+     "percentage": 1.51
+    },
+    {
+     "format": "txt",
+     "sources": 5,
+     "lines": 96009,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "markdown",
+     "sources": 10,
+     "lines": 1552,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 103,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "ini",
+     "sources": 1,
+     "lines": 84,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "toml",
+     "sources": 1,
+     "lines": 75,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "text",
+     "sources": 1,
+     "lines": 62,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "json",
+     "lines": 27,
+     "tokens": 78,
+     "copies": 41,
+     "first": {
+      "name": "blueprints/Audio Generation (Stable Audio 3 Medium Base).json",
+      "start": 625,
+      "end": 651
+     },
+     "others": [
+      {
+       "name": "blueprints/Audio Generation (Stable Audio 3 Medium Base).json",
+       "start": 1623,
+       "end": 1649
+      },
+      {
+       "name": "blueprints/Canny to Image (Z-Image-Turbo).json",
+       "start": 325,
+       "end": 351
+      },
+      {
+       "name": "blueprints/Character Replacement (SCAIL-2 Base).json",
+       "start": 1026,
+       "end": 1052
+      },
+      {
+       "name": "blueprints/Control to Image (Anima LLLite).json",
+       "start": 462,
+       "end": 488
+      },
+      {
+       "name": "blueprints/ControlNet (Z-Image-Turbo).json",
+       "start": 300,
+       "end": 326
+      },
+      {
+       "name": "blueprints/Depth to Image (Z-Image-Turbo).json",
+       "start": 323,
+       "end": 349
+      },
+      {
+       "name": "blueprints/Edit Image (Boogu Image Edit).json",
+       "start": 537,
+       "end": 563
+      },
+      {
+       "name": "blueprints/First & Last Frame to Video (LTX-2.5).json",
+       "start": 2808,
+       "end": 2834
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "},",
+       "{",
+       "  \"localized_name\": \"type\",",
+       "  \"name\": \"type\",",
+       "  \"type\": \"COMBO\",",
+       "  \"widget\": {",
+       "    \"name\": \"type\"",
+       "  },",
+       "  \"link\": null",
+       "},"
+      ],
+      "total": 27
+     }
+    },
+    {
+     "format": "json",
+     "lines": 989,
+     "tokens": 2668,
+     "copies": 2,
+     "first": {
+      "name": "blueprints/Audio Generation (Stable Audio 3 Medium Base).json",
+      "start": 595,
+      "end": 1583
+     },
+     "others": [
+      {
+       "name": "blueprints/Audio Generation (Stable Audio 3 Medium).json",
+       "start": 595,
+       "end": 1583
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    7,",
+       "    \"lcm\",",
+       "    \"simple\",",
+       "    1",
+       "  ]",
+       "},",
+       "{",
+       "  \"id\": 29,",
+       "  \"type\": \"CLIPLoader\",",
+       "  \"pos\": ["
+      ],
+      "total": 989
+     }
+    },
+    {
+     "format": "json",
+     "lines": 638,
+     "tokens": 2012,
+     "copies": 2,
+     "first": {
+      "name": "blueprints/First-Last-Frame to Video (LTX-2.3).json",
+      "start": 2716,
+      "end": 3353
+     },
+     "others": [
+      {
+       "name": "blueprints/First-Last-Frame to Video.json",
+       "start": 2716,
+       "end": 3353
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "      \"ver\": \"0.18.1\",",
+       "      \"Node name for S&R\": \"ComfyMathExpression\"",
+       "    },",
+       "    \"widgets_values\": [",
+       "      \"a * b + 1\"",
+       "    ]",
+       "  }",
+       "],",
+       "\"groups\": [",
+       "  {"
+      ],
+      "total": 638
+     }
+    },
+    {
+     "format": "json",
+     "lines": 601,
+     "tokens": 1713,
+     "copies": 2,
+     "first": {
+      "name": "blueprints/Image Depth Estimation (Marigold V2).json",
+      "start": 572,
+      "end": 1172
+     },
+     "others": [
+      {
+       "name": "blueprints/Image Normal Estimation (Marigold V2).json",
+       "start": 572,
+       "end": 1172
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 85,
+     "copies": 20,
+     "first": {
+      "name": "comfy_api_nodes/apis/__init__.py",
+      "start": 3163,
+      "end": 3184
+     },
+     "others": [
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3184,
+       "end": 3205
+      },
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3205,
+       "end": 3226
+      },
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3226,
+       "end": 3247
+      },
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3247,
+       "end": 3268
+      },
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3325,
+       "end": 3346
+      },
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3346,
+       "end": 3367
+      },
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3367,
+       "end": 3388
+      },
+      {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3388,
+       "end": 3409
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 586,
+     "tokens": 1612,
+     "copies": 2,
+     "first": {
+      "name": "blueprints/Text to Image (Anima Base 1.0).json",
+      "start": 171,
+      "end": 756
+     },
+     "others": [
+      {
+       "name": "blueprints/Text to Image (Anima).json",
+       "start": 171,
+       "end": 756
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 489,
+     "tokens": 1463,
+     "copies": 2,
+     "first": {
+      "name": "blueprints/Audio Generation (Stable Audio 3 Medium Base).json",
+      "start": 1598,
+      "end": 2086
+     },
+     "others": [
+      {
+       "name": "blueprints/Audio Generation (Stable Audio 3 Medium).json",
+       "start": 1598,
+       "end": 2086
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 54,
+     "tokens": 156,
+     "copies": 10,
+     "first": {
+      "name": "blueprints/Audio Generation (Stable Audio 3 Medium Base).json",
+      "start": 521,
+      "end": 574
+     },
+     "others": [
+      {
+       "name": "blueprints/Canny to Image (Z-Image-Turbo).json",
+       "start": 671,
+       "end": 724
+      },
+      {
+       "name": "blueprints/ControlNet (Z-Image-Turbo).json",
+       "start": 728,
+       "end": 781
+      },
+      {
+       "name": "blueprints/Image Inpainting (Flux.1 Fill Dev).json",
+       "start": 904,
+       "end": 957
+      },
+      {
+       "name": "blueprints/Text to Audio (ACE-Step 1.5).json",
+       "start": 714,
+       "end": 767
+      },
+      {
+       "name": "blueprints/Text to Image (Ernie Image Turbo).json",
+       "start": 585,
+       "end": 638
+      },
+      {
+       "name": "blueprints/Text to Image (Flux.1 Dev).json",
+       "start": 677,
+       "end": 730
+      },
+      {
+       "name": "blueprints/Text to Image (Flux.1 Krea Dev).json",
+       "start": 671,
+       "end": 724
+      },
+      {
+       "name": "blueprints/Text to Image (Krea-2 Turbo).json",
+       "start": 588,
+       "end": 641
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 25,
+     "tokens": 642,
+     "copies": 3,
+     "first": {
+      "name": "tests-unit/comfy_extras_test/compositor_blend_golden.json",
+      "start": 1833,
+      "end": 1857
+     },
+     "others": [
+      {
+       "name": "tests-unit/comfy_extras_test/compositor_blend_golden.json",
+       "start": 1935,
+       "end": 1959
+      },
+      {
+       "name": "tests-unit/comfy_extras_test/compositor_blend_golden.json",
+       "start": 2139,
+       "end": 2163
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 435,
+     "tokens": 1200,
+     "copies": 2,
+     "first": {
+      "name": "blueprints/Audio Generation (Stable Audio 3 Medium Base).json",
+      "start": 159,
+      "end": 593
+     },
+     "others": [
+      {
+       "name": "blueprints/Audio Generation (Stable Audio 3 Medium).json",
+       "start": 159,
+       "end": 593
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 713,
+    "lines": 287352,
+    "tokens": 2050243,
+    "clones": 1806,
+    "duplicatedLines": 24597,
+    "duplicatedTokens": 148928,
+    "percentage": 8.56,
+    "percentageTokens": 7.26,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 712,
+      "lines": 287249,
+      "clones": 1806,
+      "duplicatedLines": 24597,
+      "percentage": 8.56
+     },
+     {
+      "format": "bash",
+      "sources": 1,
+      "lines": 103,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 22,
+      "tokens": 85,
+      "copies": 20,
+      "first": {
+       "name": "comfy_api_nodes/apis/__init__.py",
+       "start": 3163,
+       "end": 3184
+      },
+      "others": [
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3184,
+        "end": 3205
+       },
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3205,
+        "end": 3226
+       },
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3226,
+        "end": 3247
+       },
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3247,
+        "end": 3268
+       },
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3325,
+        "end": 3346
+       },
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3346,
+        "end": 3367
+       },
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3367,
+        "end": 3388
+       },
+       {
+        "name": "comfy_api_nodes/apis/__init__.py",
+        "start": 3388,
+        "end": 3409
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "class StabilityImageGenrationSD3Response400(BaseModel):",
+        "    errors: List[str] = Field(",
+        "        ...,",
+        "        description='One or more error messages indicating what went wrong.',",
+        "        examples=[['some-field: is required']],",
+        "        min_length=1,",
+        "    )",
+        "    id: str = Field(",
+        "        ...,",
+        "        description='A unique identifier associated with this error. Please include this in any [support tickets](https://kb.stability.ai/knowledge-base/kb-tic…"
+       ],
+       "total": 22
+      }
+     },
+     {
+      "format": "python",
+      "lines": 13,
+      "tokens": 60,
+      "copies": 19,
+      "first": {
+       "name": "comfy_api_nodes/nodes_grok.py",
+       "start": 672,
+       "end": 684
+      },
+      "others": [
+       {
+        "name": "comfy_api_nodes/nodes_grok.py",
+        "start": 939,
+        "end": 952
+       },
+       {
+        "name": "comfy_api_nodes/nodes_grok.py",
+        "start": 1065,
+        "end": 1077
+       },
+       {
+        "name": "comfy_api_nodes/nodes_hitpaw.py",
+        "start": 207,
+        "end": 219
+       },
+       {
+        "name": "comfy_api_nodes/nodes_kling.py",
+        "start": 660,
+        "end": 672
+       },
+       {
+        "name": "comfy_api_nodes/nodes_kling.py",
+        "start": 1897,
+        "end": 1909
+       },
+       {
+        "name": "comfy_api_nodes/nodes_kling.py",
+        "start": 2267,
+        "end": 2281
+       },
+       {
+        "name": "comfy_api_nodes/nodes_kling.py",
+        "start": 2479,
+        "end": 2492
+       },
+       {
+        "name": "comfy_api_nodes/nodes_minimax.py",
+        "start": 672,
+        "end": 684
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    ),",
+        "],",
+        "outputs=[",
+        "    IO.Video.Output(),",
+        "],",
+        "hidden=[",
+        "    IO.Hidden.auth_token_comfy_org,",
+        "    IO.Hidden.api_key_comfy_org,",
+        "    IO.Hidden.unique_id,",
+        "],"
+       ],
+       "total": 13
+      }
+     },
+     {
+      "format": "python",
+      "lines": 10,
+      "tokens": 61,
+      "copies": 13,
+      "first": {
+       "name": "comfy_extras/nodes_model_merging_model_specific.py",
+       "start": 3,
+       "end": 12
+      },
+      "others": [
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 55,
+        "end": 65
+       },
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 79,
+        "end": 89
+       },
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 106,
+        "end": 116
+       },
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 132,
+        "end": 142
+       },
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 155,
+        "end": 165
+       },
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 177,
+        "end": 187
+       },
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 199,
+        "end": 209
+       },
+       {
+        "name": "comfy_extras/nodes_model_merging_model_specific.py",
+        "start": 223,
+        "end": 233
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "class ModelMergeSD1(comfy_extras.nodes_model_merging.ModelMergeBlocks):",
+        "    CATEGORY = \"model/merging/model specific\"",
+        "    @classmethod",
+        "    def INPUT_TYPES(s):",
+        "        arg_dict = { \"model1\": (\"MODEL\",),",
+        "                              \"model2\": (\"MODEL\",)}",
+        "",
+        "        argument = (\"FLOAT\", {\"default\": 1.0, \"min\": 0.0, \"max\": 1.0, \"step\": 0.01})",
+        "",
+        "        arg_dict[\"time_embed.\"] = argument"
+       ],
+       "total": 10
+      },
+      "excerptSecond": {
+       "lines": [
+        "class ModelMergeSD3_2B(comfy_extras.nodes_model_merging.ModelMergeBlocks):",
+        "    CATEGORY = \"model/merging/model specific\"",
+        "",
+        "    @classmethod",
+        "    def INPUT_TYPES(s):",
+        "        arg_dict = { \"model1\": (\"MODEL\",),",
+        "                              \"model2\": (\"MODEL\",)}",
+        "",
+        "        argument = (\"FLOAT\", {\"default\": 1.0, \"min\": 0.0, \"max\": 1.0, \"step\": 0.01})",
+        ""
+       ],
+       "total": 11
+      }
+     },
+     {
+      "format": "python",
+      "lines": 19,
+      "tokens": 146,
+      "copies": 6,
+      "first": {
+       "name": "comfy/ldm/cascade/common.py",
+       "start": 1,
+       "end": 19
+      },
+      "others": [
+       {
+        "name": "comfy/ldm/cascade/controlnet.py",
+        "start": 1,
+        "end": 19
+       },
+       {
+        "name": "comfy/ldm/cascade/stage_a.py",
+        "start": 1,
+        "end": 19
+       },
+       {
+        "name": "comfy/ldm/cascade/stage_b.py",
+        "start": 1,
+        "end": 19
+       },
+       {
+        "name": "comfy/ldm/cascade/stage_c.py",
+        "start": 1,
+        "end": 19
+       },
+       {
+        "name": "comfy_extras/nodes_stable_cascade.py",
+        "start": 1,
+        "end": 19
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 13,
+      "tokens": 51,
+      "copies": 15,
+      "first": {
+       "name": "comfy_api_nodes/nodes_bytedance.py",
+       "start": 3138,
+       "end": 3150
+      },
+      "others": [
+       {
+        "name": "comfy_api_nodes/nodes_grok.py",
+        "start": 671,
+        "end": 683
+       },
+       {
+        "name": "comfy_api_nodes/nodes_kling.py",
+        "start": 659,
+        "end": 671
+       },
+       {
+        "name": "comfy_api_nodes/nodes_kling.py",
+        "start": 2266,
+        "end": 2278
+       },
+       {
+        "name": "comfy_api_nodes/nodes_kling.py",
+        "start": 2478,
+        "end": 2490
+       },
+       {
+        "name": "comfy_api_nodes/nodes_minimax.py",
+        "start": 671,
+        "end": 683
+       },
+       {
+        "name": "comfy_api_nodes/nodes_runway.py",
+        "start": 181,
+        "end": 193
+       },
+       {
+        "name": "comfy_api_nodes/nodes_veo2.py",
+        "start": 291,
+        "end": 303
+       },
+       {
+        "name": "comfy_api_nodes/nodes_vidu.py",
+        "start": 539,
+        "end": 551
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 92,
+      "tokens": 620,
+      "copies": 2,
+      "first": {
+       "name": "comfy/ldm/mmaudio/vae/distributions.py",
+       "start": 1,
+       "end": 92
+      },
+      "others": [
+       {
+        "name": "comfy/ldm/modules/distributions/distributions.py",
+        "start": 1,
+        "end": 92
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 9,
+      "tokens": 68,
+      "copies": 10,
+      "first": {
+       "name": "comfy/text_encoders/anima.py",
+       "start": 55,
+       "end": 63
+      },
+      "others": [
+       {
+        "name": "comfy/text_encoders/boogu.py",
+        "start": 49,
+        "end": 57
+       },
+       {
+        "name": "comfy/text_encoders/ernie.py",
+        "start": 30,
+        "end": 38
+       },
+       {
+        "name": "comfy/text_encoders/ideogram4.py",
+        "start": 72,
+        "end": 80
+       },
+       {
+        "name": "comfy/text_encoders/ideogram4.py",
+        "start": 108,
+        "end": 116
+       },
+       {
+        "name": "comfy/text_encoders/mage_flow.py",
+        "start": 85,
+        "end": 93
+       },
+       {
+        "name": "comfy/text_encoders/minimax.py",
+        "start": 209,
+        "end": 217
+       },
+       {
+        "name": "comfy/text_encoders/ovis.py",
+        "start": 59,
+        "end": 67
+       },
+       {
+        "name": "comfy/text_encoders/qwen_image21.py",
+        "start": 81,
+        "end": 89
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 11,
+      "tokens": 50,
+      "copies": 13,
+      "first": {
+       "name": "comfy_api_nodes/nodes_bytedance.py",
+       "start": 821,
+       "end": 831
+      },
+      "others": [
+       {
+        "name": "comfy_api_nodes/nodes_gemini.py",
+        "start": 2134,
+        "end": 2143
+       },
+       {
+        "name": "comfy_api_nodes/nodes_grok.py",
+        "start": 200,
+        "end": 209
+       },
+       {
+        "name": "comfy_api_nodes/nodes_grok.py",
+        "start": 390,
+        "end": 399
+       },
+       {
+        "name": "comfy_api_nodes/nodes_grok.py",
+        "start": 517,
+        "end": 527
+       },
+       {
+        "name": "comfy_api_nodes/nodes_grok.py",
+        "start": 675,
+        "end": 684
+       },
+       {
+        "name": "comfy_api_nodes/nodes_qwen.py",
+        "start": 237,
+        "end": 246
+       },
+       {
+        "name": "comfy_api_nodes/nodes_veo2.py",
+        "start": 124,
+        "end": 133
+       },
+       {
+        "name": "comfy_api_nodes/nodes_vidu.py",
+        "start": 901,
+        "end": 910
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 17,
+      "tokens": 144,
+      "copies": 5,
+      "first": {
+       "name": "comfy/controlnet.py",
+       "start": 1,
+       "end": 17
+      },
+      "others": [
+       {
+        "name": "comfy/lora.py",
+        "start": 1,
+        "end": 17
+       },
+       {
+        "name": "comfy/model_base.py",
+        "start": 1,
+        "end": 17
+       },
+       {
+        "name": "comfy/supported_models_base.py",
+        "start": 1,
+        "end": 17
+       },
+       {
+        "name": "comfy/utils.py",
+        "start": 1,
+        "end": 17
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 11,
+      "tokens": 58,
+      "copies": 10,
+      "first": {
+       "name": "comfy_api_nodes/nodes_bfl.py",
+       "start": 761,
+       "end": 771
+      },
+      "others": [
+       {
+        "name": "comfy_api_nodes/nodes_bfl.py",
+        "start": 913,
+        "end": 924
+       },
+       {
+        "name": "comfy_api_nodes/nodes_bfl.py",
+        "start": 1719,
+        "end": 1729
+       },
+       {
+        "name": "comfy_api_nodes/nodes_krea.py",
+        "start": 163,
+        "end": 174
+       },
+       {
+        "name": "comfy_api_nodes/nodes_krea.py",
+        "start": 378,
+        "end": 389
+       },
+       {
+        "name": "comfy_api_nodes/nodes_luma.py",
+        "start": 193,
+        "end": 203
+       },
+       {
+        "name": "comfy_api_nodes/nodes_luma.py",
+        "start": 320,
+        "end": 330
+       },
+       {
+        "name": "comfy_api_nodes/nodes_luma.py",
+        "start": 811,
+        "end": 821
+       },
+       {
+        "name": "comfy_api_nodes/nodes_openai.py",
+        "start": 560,
+        "end": 570
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 0,
+     "sample": [
+      "comfyui_version.py"
+     ]
+    }
+   },
+   "health": {
+    "score": 19.2,
+    "grade": "E",
+    "size": {
+     "lines": 340491,
+     "files": 975,
+     "class": "L"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 7.7,
+      "adjusted": 7.7,
+      "lines": 26137,
+      "halfLife": 8.5,
+      "formats": [
+       "python",
+       "glsl",
+       "bash",
+       "batch"
+      ],
+      "excluded": [
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 53.6
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 37.5,
+      "adjusted": 37.3,
+      "lines": 127366,
+      "halfLife": 7.5,
+      "coverage": 99.7,
+      "weight": 0.997,
+      "score": 3.2
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 64.9,
+      "adjusted": 64.7,
+      "lines": 221078,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 40.8
+     }
+    ]
+   },
+   "complexity": {
+    "total": 46724,
+    "mean": 47.9,
+    "files": [
+     {
+      "path": "comfy/model_base.py",
+      "complexity": 745,
+      "lines": 3110,
+      "bytes": 148939
+     },
+     {
+      "path": "comfy/model_management.py",
+      "complexity": 735,
+      "lines": 2220,
+      "bytes": 74815
+     },
+     {
+      "path": "comfy/model_patcher.py",
+      "complexity": 682,
+      "lines": 2205,
+      "bytes": 103885
+     },
+     {
+      "path": "comfy/sd.py",
+      "complexity": 586,
+      "lines": 2510,
+      "bytes": 148642
+     },
+     {
+      "path": "comfy/ops.py",
+      "complexity": 567,
+      "lines": 1887,
+      "bytes": 89664
+     },
+     {
+      "path": "comfy_api/latest/_input_impl/video_types.py",
+      "complexity": 513,
+      "lines": 1589,
+      "bytes": 77181
+     },
+     {
+      "path": "comfy_extras/nodes_mesh_postprocess.py",
+      "complexity": 474,
+      "lines": 3167,
+      "bytes": 152322
+     },
+     {
+      "path": "comfy_api/latest/_io.py",
+      "complexity": 453,
+      "lines": 2729,
+      "bytes": 106208
+     },
+     {
+      "path": "comfy/k_diffusion/sampling.py",
+      "complexity": 425,
+      "lines": 2025,
+      "bytes": 93057
+     },
+     {
+      "path": "comfy/ldm/seedvr/vae.py",
+      "complexity": 408,
+      "lines": 1433,
+      "bytes": 73024
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 37.53,
+    "findings": 383,
+    "files": 1013,
+    "byCategory": [
+     {
+      "category": "unused-file",
+      "count": 306
+     },
+     {
+      "category": "unused-export",
+      "count": 38
+     },
+     {
+      "category": "unused-symbol",
+      "count": 3
+     },
+     {
+      "category": "unused-import",
+      "count": 36
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-file",
+      "path": "comfy_api_nodes/nodes_bytedance.py",
+      "name": "",
+      "line": 1,
+      "lines": 3907
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_extras/nodes_mesh_postprocess.py",
+      "name": "",
+      "line": 1,
+      "lines": 3167
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_api_nodes/nodes_wan.py",
+      "name": "",
+      "line": 1,
+      "lines": 2880
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_api_nodes/nodes_kling.py",
+      "name": "",
+      "line": 1,
+      "lines": 2783
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_api_nodes/nodes_tripo.py",
+      "name": "",
+      "line": 1,
+      "lines": 2648
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_extras/nodes_images.py",
+      "name": "",
+      "line": 1,
+      "lines": 2286
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_api_nodes/nodes_gemini.py",
+      "name": "",
+      "line": 1,
+      "lines": 2254
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_extras/nodes_dataset.py",
+      "name": "",
+      "line": 1,
+      "lines": 2170
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_api_nodes/nodes_bfl.py",
+      "name": "",
+      "line": 1,
+      "lines": 2089
+     },
+     {
+      "category": "unused-file",
+      "path": "comfy_api_nodes/nodes_vidu.py",
+      "name": "",
+      "line": 1,
+      "lines": 1999
+     }
+    ]
+   }
+  },
+  {
+   "name": "shiyu-coder/Kronos",
+   "url": "https://github.com/shiyu-coder/Kronos",
+   "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+   "language": "Python",
+   "stars": 42939,
+   "starsToday": 575,
+   "defaultBranch": "master",
+   "headSha": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+   "durationMs": 1189,
+   "total": {
+    "sources": 77,
+    "lines": 81076,
+    "tokens": 352717,
+    "clones": 108,
+    "duplicatedLines": 28813,
+    "duplicatedTokens": 99382,
+    "percentage": 35.54,
+    "percentageTokens": 28.18
+   },
+   "formats": [
+    {
+     "format": "python",
+     "sources": 29,
+     "lines": 11209,
+     "clones": 64,
+     "duplicatedLines": 1521,
+     "percentage": 13.57
+    },
+    {
+     "format": "json",
+     "sources": 34,
+     "lines": 65258,
+     "clones": 43,
+     "duplicatedLines": 27285,
+     "percentage": 41.81
+    },
+    {
+     "format": "markdown",
+     "sources": 4,
+     "lines": 694,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 1.01
+    },
+    {
+     "format": "csv",
+     "sources": 3,
+     "lines": 2519,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "markup",
+     "sources": 1,
+     "lines": 1238,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 4,
+     "lines": 78,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "yaml",
+     "sources": 1,
+     "lines": 71,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "text",
+     "sources": 1,
+     "lines": 9,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "json",
+     "lines": 1088,
+     "tokens": 3618,
+     "copies": 7,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_175135.json",
+      "start": 1127,
+      "end": 2214
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_175909.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_180632.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_180745.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_180806.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_181012.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_181139.json",
+       "start": 1127,
+       "end": 2214
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "  }",
+       "],",
+       "\"actual_data\": [",
+       "  {",
+       "    \"timestamp\": \"2025-08-14T10:35:00\",",
+       "    \"open\": 123397.21,",
+       "    \"high\": 123588.0,",
+       "    \"low\": 123397.2,",
+       "    \"close\": 123479.47,",
+       "    \"volume\": 47.38644,"
+      ],
+      "total": 1088
+     }
+    },
+    {
+     "format": "json",
+     "lines": 1088,
+     "tokens": 3618,
+     "copies": 6,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_181240.json",
+      "start": 1127,
+      "end": 2214
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_181434.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_181513.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_181612.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_181648.json",
+       "start": 1127,
+       "end": 2214
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_181800.json",
+       "start": 1127,
+       "end": 2214
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "  }",
+       "],",
+       "\"actual_data\": [",
+       "  {",
+       "    \"timestamp\": \"2025-08-15T15:45:00\",",
+       "    \"open\": 118810.01,",
+       "    \"high\": 118842.0,",
+       "    \"low\": 118770.0,",
+       "    \"close\": 118807.72,",
+       "    \"volume\": 27.15622,"
+      ],
+      "total": 1088
+     }
+    },
+    {
+     "format": "json",
+     "lines": 2207,
+     "tokens": 7455,
+     "copies": 3,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_170831.json",
+      "start": 33,
+      "end": 2239
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_171720.json",
+       "start": 33,
+       "end": 2239
+      },
+      {
+       "name": "webui/prediction_results/prediction_20250826_171913.json",
+       "start": 33,
+       "end": 2239
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "    \"max\": 357.3",
+       "  },",
+       "  \"close\": {",
+       "    \"min\": 342.2,",
+       "    \"max\": 357.7",
+       "  }",
+       "},",
+       "\"last_values\": {",
+       "  \"open\": 347.2,",
+       "  \"high\": 347.4,"
+      ],
+      "total": 2207
+     }
+    },
+    {
+     "format": "json",
+     "lines": 2207,
+     "tokens": 7335,
+     "copies": 2,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_174410.json",
+      "start": 33,
+      "end": 2239
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_174809.json",
+       "start": 33,
+       "end": 2239
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 2207,
+     "tokens": 7335,
+     "copies": 2,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_175909.json",
+      "start": 33,
+      "end": 2239
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_180308.json",
+       "start": 33,
+       "end": 2239
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 1091,
+     "tokens": 3627,
+     "copies": 2,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_172740.json",
+      "start": 1124,
+      "end": 2214
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_173322.json",
+       "start": 1124,
+       "end": 2214
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 1088,
+     "tokens": 3618,
+     "copies": 2,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_163800.json",
+      "start": 1127,
+      "end": 2214
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_164030.json",
+       "start": 1127,
+       "end": 2214
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 1088,
+     "tokens": 3618,
+     "copies": 2,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_164422.json",
+      "start": 1127,
+      "end": 2214
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_170831.json",
+       "start": 1127,
+       "end": 2214
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 1088,
+     "tokens": 3618,
+     "copies": 2,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_172153.json",
+      "start": 1127,
+      "end": 2214
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_172740.json",
+       "start": 1127,
+       "end": 2214
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 1088,
+     "tokens": 3618,
+     "copies": 2,
+     "first": {
+      "name": "webui/prediction_results/prediction_20250826_173455.json",
+      "start": 1127,
+      "end": 2214
+     },
+     "others": [
+      {
+       "name": "webui/prediction_results/prediction_20250826_174410.json",
+       "start": 1127,
+       "end": 2214
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 15,
+    "lines": 4552,
+    "tokens": 30182,
+    "clones": 27,
+    "duplicatedLines": 372,
+    "duplicatedTokens": 2609,
+    "percentage": 8.17,
+    "percentageTokens": 8.64,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 14,
+      "lines": 4512,
+      "clones": 27,
+      "duplicatedLines": 372,
+      "percentage": 8.24
+     },
+     {
+      "format": "bash",
+      "sources": 1,
+      "lines": 40,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 41,
+      "tokens": 236,
+      "copies": 2,
+      "first": {
+       "name": "finetune_csv/finetune_base_model.py",
+       "start": 199,
+       "end": 239
+      },
+      "others": [
+       {
+        "name": "finetune_csv/finetune_tokenizer.py",
+        "start": 111,
+        "end": 151
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    data_type='val',",
+        "    lookback_window=config.lookback_window,",
+        "    predict_window=config.predict_window,",
+        "    clip=config.clip,",
+        "    seed=config.seed + 1,",
+        "    train_ratio=config.train_ratio,",
+        "    val_ratio=config.val_ratio,",
+        "    test_ratio=config.test_ratio",
+        ")",
+        ""
+       ],
+       "total": 41
+      }
+     },
+     {
+      "format": "python",
+      "lines": 24,
+      "tokens": 227,
+      "copies": 2,
+      "first": {
+       "name": "finetune_csv/train_sequential.py",
+       "start": 88,
+       "end": 111
+      },
+      "others": [
+       {
+        "name": "finetune_csv/train_sequential.py",
+        "start": 174,
+        "end": 197
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    print(\"pre_trained_tokenizer=False, randomly initializing Tokenizer architecture\")",
+        "import json",
+        "cfg_path = os.path.join(self.config.pretrained_tokenizer_path, 'config.json')",
+        "with open(cfg_path, 'r') as f:",
+        "    arch = json.load(f)",
+        "tokenizer = KronosTokenizer(",
+        "    d_in=arch.get('d_in', 6),",
+        "    d_model=arch.get('d_model', 256),",
+        "    n_heads=arch.get('n_heads', 4),",
+        "    ff_dim=arch.get('ff_dim', 512),"
+       ],
+       "total": 24
+      }
+     },
+     {
+      "format": "python",
+      "lines": 22,
+      "tokens": 210,
+      "copies": 2,
+      "first": {
+       "name": "finetune_csv/finetune_tokenizer.py",
+       "start": 311,
+       "end": 332
+      },
+      "others": [
+       {
+        "name": "finetune_csv/train_sequential.py",
+        "start": 90,
+        "end": 111
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "cfg_path = os.path.join(config.pretrained_tokenizer_path, 'config.json')",
+        "with open(cfg_path, 'r') as f:",
+        "    arch = json.load(f)",
+        "tokenizer = KronosTokenizer(",
+        "    d_in=arch.get('d_in', 6),",
+        "    d_model=arch.get('d_model', 256),",
+        "    n_heads=arch.get('n_heads', 4),",
+        "    ff_dim=arch.get('ff_dim', 512),",
+        "    n_enc_layers=arch.get('n_enc_layers', 4),",
+        "    n_dec_layers=arch.get('n_dec_layers', 4),"
+       ],
+       "total": 22
+      }
+     },
+     {
+      "format": "python",
+      "lines": 23,
+      "tokens": 135,
+      "copies": 2,
+      "first": {
+       "name": "finetune/train_predictor.py",
+       "start": 188,
+       "end": 210
+      },
+      "others": [
+       {
+        "name": "finetune/train_tokenizer.py",
+        "start": 226,
+        "end": 248
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 14,
+      "tokens": 126,
+      "copies": 2,
+      "first": {
+       "name": "finetune_csv/finetune_base_model.py",
+       "start": 425,
+       "end": 438
+      },
+      "others": [
+       {
+        "name": "finetune_csv/train_sequential.py",
+        "start": 211,
+        "end": 224
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 116,
+      "copies": 2,
+      "first": {
+       "name": "webui/app.py",
+       "start": 510,
+       "end": 521
+      },
+      "others": [
+       {
+        "name": "webui/app.py",
+        "start": 526,
+        "end": 536
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 27,
+      "tokens": 108,
+      "copies": 2,
+      "first": {
+       "name": "finetune_csv/finetune_base_model.py",
+       "start": 146,
+       "end": 172
+      },
+      "others": [
+       {
+        "name": "finetune_csv/finetune_tokenizer.py",
+        "start": 58,
+        "end": 84
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 13,
+      "tokens": 100,
+      "copies": 2,
+      "first": {
+       "name": "model/module.py",
+       "start": 316,
+       "end": 328
+      },
+      "others": [
+       {
+        "name": "model/module.py",
+        "start": 357,
+        "end": 369
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 22,
+      "tokens": 98,
+      "copies": 2,
+      "first": {
+       "name": "finetune_csv/finetune_base_model.py",
+       "start": 349,
+       "end": 370
+      },
+      "others": [
+       {
+        "name": "finetune_csv/finetune_tokenizer.py",
+        "start": 263,
+        "end": 284
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 11,
+      "tokens": 96,
+      "copies": 2,
+      "first": {
+       "name": "finetune/train_predictor.py",
+       "start": 137,
+       "end": 147
+      },
+      "others": [
+       {
+        "name": "finetune_csv/finetune_base_model.py",
+        "start": 315,
+        "end": 326
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "health": {
+    "score": 53.9,
+    "grade": "D",
+    "size": {
+     "lines": 11201,
+     "files": 29,
+     "class": "M"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 13.6,
+      "adjusted": 12.1,
+      "lines": 1521,
+      "halfLife": 8.5,
+      "formats": [
+       "python",
+       "bash"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 37.4
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 0.4,
+      "adjusted": 0.8,
+      "lines": 43,
+      "halfLife": 7.5,
+      "coverage": 100,
+      "weight": 1,
+      "score": 92.9
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 63.9,
+      "adjusted": 57.4,
+      "lines": 7160,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 45.1
+     }
+    ]
+   },
+   "complexity": {
+    "total": 1191,
+    "mean": 41.1,
+    "files": [
+     {
+      "path": "examples/prediction_new_GUI.py",
+      "complexity": 172,
+      "lines": 1625,
+      "bytes": 65400
+     },
+     {
+      "path": "examples/prediction_new.py",
+      "complexity": 138,
+      "lines": 1333,
+      "bytes": 52593
+     },
+     {
+      "path": "webui/app.py",
+      "complexity": 103,
+      "lines": 708,
+      "bytes": 30464
+     },
+     {
+      "path": "examples/get_date_new.py",
+      "complexity": 80,
+      "lines": 661,
+      "bytes": 24268
+     },
+     {
+      "path": "examples/get_akshare_date_2024-2025_x.py",
+      "complexity": 76,
+      "lines": 629,
+      "bytes": 22761
+     },
+     {
+      "path": "model/module.py",
+      "complexity": 69,
+      "lines": 562,
+      "bytes": 23426
+     },
+     {
+      "path": "finetune_csv/finetune_base_model.py",
+      "complexity": 59,
+      "lines": 468,
+      "bytes": 19127
+     },
+     {
+      "path": "finetune_csv/train_sequential.py",
+      "complexity": 59,
+      "lines": 361,
+      "bytes": 15358
+     },
+     {
+      "path": "examples/run_backtest_kronos.py",
+      "complexity": 51,
+      "lines": 455,
+      "bytes": 16811
+     },
+     {
+      "path": "finetune_csv/finetune_tokenizer.py",
+      "complexity": 50,
+      "lines": 358,
+      "bytes": 13741
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 0.38,
+    "findings": 24,
+    "files": 30,
+    "byCategory": [
+     {
+      "category": "unused-export",
+      "count": 1
+     },
+     {
+      "category": "unused-import",
+      "count": 23
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-export",
+      "path": "finetune/utils/training_utils.py",
+      "name": "reduce_tensor",
+      "line": 83,
+      "lines": 20
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune/config.py",
+      "name": "os",
+      "line": 1,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune/train_tokenizer.py",
+      "name": "argparse",
+      "line": 6,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune/train_tokenizer.py",
+      "name": "datetime",
+      "line": 7,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune_csv/finetune_base_model.py",
+      "name": "pickle",
+      "line": 5,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune_csv/finetune_base_model.py",
+      "name": "nn",
+      "line": 10,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune_csv/finetune_base_model.py",
+      "name": "gmtime",
+      "line": 13,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune_csv/finetune_base_model.py",
+      "name": "strftime",
+      "line": 13,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune_csv/finetune_base_model.py",
+      "name": "KronosPredictor",
+      "line": 21,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "finetune_csv/finetune_tokenizer.py",
+      "name": "gmtime",
+      "line": 11,
+      "lines": 1
+     }
+    ]
+   }
+  },
+  {
+   "name": "akitaonrails/ai-memory",
+   "url": "https://github.com/akitaonrails/ai-memory",
+   "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+   "language": "Rust",
+   "stars": 12477,
+   "starsToday": 286,
+   "defaultBranch": "main",
+   "headSha": "1c86aebc14addccc7ac875913d565c681bfa4a50",
+   "durationMs": 4568,
+   "total": {
+    "sources": 1168,
+    "lines": 639473,
+    "tokens": 4238149,
+    "clones": 5012,
+    "duplicatedLines": 62356,
+    "duplicatedTokens": 414204,
+    "percentage": 9.75,
+    "percentageTokens": 9.77
+   },
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 525,
+     "lines": 535081,
+     "clones": 4803,
+     "duplicatedLines": 57754,
+     "percentage": 10.79
+    },
+    {
+     "format": "markdown",
+     "sources": 172,
+     "lines": 59751,
+     "clones": 69,
+     "duplicatedLines": 1787,
+     "percentage": 2.99
+    },
+    {
+     "format": "sql",
+     "sources": 76,
+     "lines": 3707,
+     "clones": 61,
+     "duplicatedLines": 1373,
+     "percentage": 37.04
+    },
+    {
+     "format": "bash",
+     "sources": 167,
+     "lines": 13498,
+     "clones": 44,
+     "duplicatedLines": 851,
+     "percentage": 6.3
+    },
+    {
+     "format": "markup",
+     "sources": 24,
+     "lines": 2125,
+     "clones": 11,
+     "duplicatedLines": 115,
+     "percentage": 5.41
+    },
+    {
+     "format": "yaml",
+     "sources": 18,
+     "lines": 2453,
+     "clones": 10,
+     "duplicatedLines": 93,
+     "percentage": 3.79
+    },
+    {
+     "format": "typescript",
+     "sources": 41,
+     "lines": 8308,
+     "clones": 3,
+     "duplicatedLines": 20,
+     "percentage": 0.24
+    },
+    {
+     "format": "txt",
+     "sources": 1,
+     "lines": 284,
+     "clones": 3,
+     "duplicatedLines": 273,
+     "percentage": 96.13
+    },
+    {
+     "format": "python",
+     "sources": 11,
+     "lines": 2739,
+     "clones": 2,
+     "duplicatedLines": 19,
+     "percentage": 0.69
+    },
+    {
+     "format": "powershell",
+     "sources": 8,
+     "lines": 2099,
+     "clones": 2,
+     "duplicatedLines": 16,
+     "percentage": 0.76
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 65,
+     "copies": 67,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/serve.rs",
+      "start": 7321,
+      "end": 7331
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+       "start": 3030,
+       "end": 3040
+      },
+      {
+       "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+       "start": 3109,
+       "end": 3119
+      },
+      {
+       "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+       "start": 3210,
+       "end": 3220
+      },
+      {
+       "name": "crates/ai-memory-consolidate/tests/suite/bounded_session_load.rs",
+       "start": 1549,
+       "end": 1559
+      },
+      {
+       "name": "crates/ai-memory-consolidate/tests/suite/bounded_session_load.rs",
+       "start": 1703,
+       "end": 1713
+      },
+      {
+       "name": "crates/ai-memory-consolidate/tests/suite/bounded_session_load.rs",
+       "start": 1892,
+       "end": 1902
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 17043,
+       "end": 17053
+      },
+      {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 481,
+       "end": 491
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "async fn reranker_without_llm_provider_fails_server_setup() {",
+       "    let tmp = TempDir::new().unwrap();",
+       "    let store = Store::open(tmp.path()).unwrap();",
+       "    let ws = store",
+       "        .writer",
+       "        .get_or_create_workspace(\"default\")",
+       "        .await",
+       "        .unwrap();",
+       "    let proj = store",
+       "        .writer"
+      ],
+      "total": 11
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 130,
+     "tokens": 2144,
+     "copies": 3,
+     "first": {
+      "name": "crates/ai-memory-core/src/routing_skills/ai-memory-retrieval/SKILL.md",
+      "start": 5,
+      "end": 134
+     },
+     "others": [
+      {
+       "name": "plugins/claude-code/skills/ai-memory-retrieval/SKILL.md",
+       "start": 5,
+       "end": 134
+      },
+      {
+       "name": "plugins/codex/skills/ai-memory-retrieval/SKILL.md",
+       "start": 5,
+       "end": 134
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "<!-- ai-memory-managed: routing-skill -->",
+       "",
+       "# ai-memory retrieval",
+       "",
+       "Use this skill for read-only ai-memory lookups, catch-up, and evaluating remembered project knowledge before you design, debug, or edit.",
+       "",
+       "## Tools in this cluster",
+       "",
+       "- `memory_query` searches the current project's wiki for prior decisions, gotchas, procedures, rules, and session notes.",
+       "- `memory_recent` lists the most recently updated pages when the user wants a light activity check."
+      ],
+      "total": 130
+     }
+    },
+    {
+     "format": "rust",
+     "lines": 110,
+     "tokens": 3970,
+     "copies": 2,
+     "first": {
+      "name": "crates/ai-memory-consolidate/src/consolidator.rs",
+      "start": 1288,
+      "end": 1397
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-consolidate/src/consolidator_oracle.rs",
+       "start": 97,
+       "end": 206
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       ") -> BatchRequestPlan {",
+       "    // Stable prefix first so prefix-caching providers can reuse it across",
+       "    // sessions of the same project: the fixed batch scaffolding (header +",
+       "    // field schema) and the project instructions lead the message, then the",
+       "    // per-project slot/title state, then the per-session id and the",
+       "    // observation dump at the end. Budget math is unchanged — only the",
+       "    // block order moved.",
+       "    let mut fixed_header = String::new();",
+       "    fixed_header.push_str(",
+       "        \"You are compiling a Karpathy-style multi-page wiki update. Given the \\"
+      ],
+      "total": 110
+     }
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 52,
+     "copies": 55,
+     "first": {
+      "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+      "start": 95,
+      "end": 100
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+       "start": 123,
+       "end": 128
+      },
+      {
+       "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+       "start": 175,
+       "end": 180
+      },
+      {
+       "name": "crates/ai-memory-store/tests/suite/auto_improve_staging.rs",
+       "start": 472,
+       "end": 477
+      },
+      {
+       "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+       "start": 180,
+       "end": 184
+      },
+      {
+       "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+       "start": 267,
+       "end": 272
+      },
+      {
+       "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+       "start": 345,
+       "end": 350
+      },
+      {
+       "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+       "start": 451,
+       "end": 456
+      },
+      {
+       "name": "crates/ai-memory-store/tests/suite/handoff_ownership.rs",
+       "start": 485,
+       "end": 489
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 92,
+     "tokens": 1357,
+     "copies": 3,
+     "first": {
+      "name": "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md",
+      "start": 5,
+      "end": 96
+     },
+     "others": [
+      {
+       "name": "plugins/claude-code/skills/ai-memory-durable-pages/SKILL.md",
+       "start": 5,
+       "end": 96
+      },
+      {
+       "name": "plugins/codex/skills/ai-memory-durable-pages/SKILL.md",
+       "start": 5,
+       "end": 96
+      }
+     ]
+    },
+    {
+     "format": "rust",
+     "lines": 389,
+     "tokens": 2379,
+     "copies": 2,
+     "first": {
+      "name": "crates/ai-memory-consolidate/src/consolidator_frozen_oracle.rs",
+      "start": 977,
+      "end": 1365
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-consolidate/src/projection.rs",
+       "start": 1599,
+       "end": 1987
+      }
+     ]
+    },
+    {
+     "format": "sql",
+     "lines": 57,
+     "tokens": 329,
+     "copies": 8,
+     "first": {
+      "name": "crates/ai-memory-store/migrations/V44__sessions_hermes_agent_kind.sql",
+      "start": 17,
+      "end": 73
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-store/migrations/V78__sessions_droid_agent_kind.sql",
+       "start": 18,
+       "end": 74
+      },
+      {
+       "name": "crates/ai-memory-store/migrations/V80__sessions_muse_agent_kind.sql",
+       "start": 18,
+       "end": 74
+      },
+      {
+       "name": "crates/ai-memory-store/migrations/V81__sessions_codebuddy_agent_kind.sql",
+       "start": 18,
+       "end": 74
+      },
+      {
+       "name": "crates/ai-memory-store/migrations/V83__sessions_ibm_bob_agent_kind.sql",
+       "start": 18,
+       "end": 74
+      },
+      {
+       "name": "crates/ai-memory-store/migrations/V85__sessions_dsh_agent_kind.sql",
+       "start": 18,
+       "end": 74
+      },
+      {
+       "name": "crates/ai-memory-store/migrations/V86__sessions_cline_agent_kind.sql",
+       "start": 16,
+       "end": 72
+      },
+      {
+       "name": "crates/ai-memory-store/migrations/V88__sessions_qwen_code_agent_kind.sql",
+       "start": 17,
+       "end": 73
+      }
+     ]
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 131,
+     "copies": 17,
+     "first": {
+      "name": "crates/ai-memory-cli/src/commands/serve.rs",
+      "start": 7321,
+      "end": 7335
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 15827,
+       "end": 15841
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 16100,
+       "end": 16114
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 16488,
+       "end": 16502
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 16633,
+       "end": 16647
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 18787,
+       "end": 18801
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 18848,
+       "end": 18862
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 18974,
+       "end": 18988
+      },
+      {
+       "name": "crates/ai-memory-mcp/src/server.rs",
+       "start": 19087,
+       "end": 19101
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 49,
+     "tokens": 1047,
+     "copies": 3,
+     "first": {
+      "name": "crates/ai-memory-core/src/routing_skills/ai-memory-handoff/SKILL.md",
+      "start": 5,
+      "end": 53
+     },
+     "others": [
+      {
+       "name": "plugins/claude-code/skills/ai-memory-handoff/SKILL.md",
+       "start": 5,
+       "end": 53
+      },
+      {
+       "name": "plugins/codex/skills/ai-memory-handoff/SKILL.md",
+       "start": 5,
+       "end": 53
+      }
+     ]
+    },
+    {
+     "format": "rust",
+     "lines": 314,
+     "tokens": 2050,
+     "copies": 2,
+     "first": {
+      "name": "crates/ai-memory-mcp/tests/suite/management.rs",
+      "start": 489,
+      "end": 802
+     },
+     "others": [
+      {
+       "name": "crates/ai-memory-mcp/tests/suite/session_management.rs",
+       "start": 377,
+       "end": 690
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 494,
+    "lines": 448106,
+    "tokens": 2637695,
+    "clones": 3000,
+    "duplicatedLines": 36802,
+    "duplicatedTokens": 234486,
+    "percentage": 8.21,
+    "percentageTokens": 8.89,
+    "formats": [
+     {
+      "format": "rust",
+      "sources": 334,
+      "lines": 429923,
+      "clones": 2963,
+      "duplicatedLines": 35997,
+      "percentage": 8.37
+     },
+     {
+      "format": "bash",
+      "sources": 119,
+      "lines": 9190,
+      "clones": 32,
+      "duplicatedLines": 767,
+      "percentage": 8.35
+     },
+     {
+      "format": "typescript",
+      "sources": 15,
+      "lines": 4794,
+      "clones": 2,
+      "duplicatedLines": 13,
+      "percentage": 0.27
+     },
+     {
+      "format": "powershell",
+      "sources": 3,
+      "lines": 1663,
+      "clones": 2,
+      "duplicatedLines": 16,
+      "percentage": 0.96
+     },
+     {
+      "format": "swift",
+      "sources": 20,
+      "lines": 2076,
+      "clones": 1,
+      "duplicatedLines": 9,
+      "percentage": 0.43
+     },
+     {
+      "format": "python",
+      "sources": 2,
+      "lines": 427,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 1,
+      "lines": 33,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "rust",
+      "lines": 11,
+      "tokens": 65,
+      "copies": 63,
+      "first": {
+       "name": "crates/ai-memory-cli/src/commands/serve.rs",
+       "start": 7321,
+       "end": 7331
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+        "start": 3030,
+        "end": 3040
+       },
+       {
+        "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+        "start": 3109,
+        "end": 3119
+       },
+       {
+        "name": "crates/ai-memory-consolidate/src/auto_improve.rs",
+        "start": 3210,
+        "end": 3220
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 17043,
+        "end": 17053
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 481,
+        "end": 491
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 587,
+        "end": 597
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 662,
+        "end": 672
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 819,
+        "end": 829
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "async fn reranker_without_llm_provider_fails_server_setup() {",
+        "    let tmp = TempDir::new().unwrap();",
+        "    let store = Store::open(tmp.path()).unwrap();",
+        "    let ws = store",
+        "        .writer",
+        "        .get_or_create_workspace(\"default\")",
+        "        .await",
+        "        .unwrap();",
+        "    let proj = store",
+        "        .writer"
+       ],
+       "total": 11
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 110,
+      "tokens": 3970,
+      "copies": 2,
+      "first": {
+       "name": "crates/ai-memory-consolidate/src/consolidator.rs",
+       "start": 1288,
+       "end": 1397
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-consolidate/src/consolidator_oracle.rs",
+        "start": 97,
+        "end": 206
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        ") -> BatchRequestPlan {",
+        "    // Stable prefix first so prefix-caching providers can reuse it across",
+        "    // sessions of the same project: the fixed batch scaffolding (header +",
+        "    // field schema) and the project instructions lead the message, then the",
+        "    // per-project slot/title state, then the per-session id and the",
+        "    // observation dump at the end. Budget math is unchanged — only the",
+        "    // block order moved.",
+        "    let mut fixed_header = String::new();",
+        "    fixed_header.push_str(",
+        "        \"You are compiling a Karpathy-style multi-page wiki update. Given the \\"
+       ],
+       "total": 110
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 389,
+      "tokens": 2379,
+      "copies": 2,
+      "first": {
+       "name": "crates/ai-memory-consolidate/src/consolidator_frozen_oracle.rs",
+       "start": 977,
+       "end": 1365
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-consolidate/src/projection.rs",
+        "start": 1599,
+        "end": 1987
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    );",
+        "}",
+        "",
+        "#[test]",
+        "fn body_truncation_marker_includes_omitted_chars_and_id() {",
+        "    let observations = vec![obs(",
+        "        0,",
+        "        ObservationKind::UserPrompt,",
+        "        \"prompt\",",
+        "        &\"x\".repeat(30),"
+       ],
+       "total": 389
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 15,
+      "tokens": 131,
+      "copies": 17,
+      "first": {
+       "name": "crates/ai-memory-cli/src/commands/serve.rs",
+       "start": 7321,
+       "end": 7335
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 15827,
+        "end": 15841
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 16100,
+        "end": 16114
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 16488,
+        "end": 16502
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 16633,
+        "end": 16647
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 18787,
+        "end": 18801
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 18848,
+        "end": 18862
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 18974,
+        "end": 18988
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 19087,
+        "end": 19101
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 232,
+      "tokens": 1393,
+      "copies": 2,
+      "first": {
+       "name": "crates/ai-memory-consolidate/src/consolidator_frozen_oracle.rs",
+       "start": 745,
+       "end": 976
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-consolidate/src/projection.rs",
+        "start": 1280,
+        "end": 1511
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 6,
+      "tokens": 62,
+      "copies": 20,
+      "first": {
+       "name": "crates/ai-memory-cli/src/commands/serve.rs",
+       "start": 6056,
+       "end": 6061
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 9627,
+        "end": 9632
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 9683,
+        "end": 9688
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 9758,
+        "end": 9763
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 11105,
+        "end": 11110
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 11852,
+        "end": 11857
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 11972,
+        "end": 11977
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 12562,
+        "end": 12567
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/admin.rs",
+        "start": 12667,
+        "end": 12672
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 12,
+      "tokens": 70,
+      "copies": 17,
+      "first": {
+       "name": "crates/ai-memory-cli/src/commands/reindex.rs",
+       "start": 124,
+       "end": 135
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-consolidate/src/curator.rs",
+        "start": 855,
+        "end": 866
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 7878,
+        "end": 7889
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 8415,
+        "end": 8426
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 11091,
+        "end": 11102
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 11295,
+        "end": 11306
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 11426,
+        "end": 11437
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 11453,
+        "end": 11464
+       },
+       {
+        "name": "crates/ai-memory-mcp/src/server.rs",
+        "start": 12521,
+        "end": 12532
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 6,
+      "tokens": 80,
+      "copies": 14,
+      "first": {
+       "name": "crates/ai-memory-store/src/migrations.rs",
+       "start": 462,
+       "end": 467
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 543,
+        "end": 548
+       },
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 612,
+        "end": 617
+       },
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 697,
+        "end": 702
+       },
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 770,
+        "end": 775
+       },
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 843,
+        "end": 848
+       },
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 916,
+        "end": 921
+       },
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 984,
+        "end": 989
+       },
+       {
+        "name": "crates/ai-memory-store/src/migrations.rs",
+        "start": 1085,
+        "end": 1090
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 12,
+      "tokens": 60,
+      "copies": 17,
+      "first": {
+       "name": "crates/ai-memory-store/src/lib.rs",
+       "start": 482,
+       "end": 493
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 588,
+        "end": 599
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 663,
+        "end": 674
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 820,
+        "end": 831
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 935,
+        "end": 946
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 973,
+        "end": 984
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 1027,
+        "end": 1038
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 1105,
+        "end": 1116
+       },
+       {
+        "name": "crates/ai-memory-store/src/lib.rs",
+        "start": 1162,
+        "end": 1173
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 134,
+      "tokens": 934,
+      "copies": 2,
+      "first": {
+       "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
+       "start": 4998,
+       "end": 5131
+      },
+      "others": [
+       {
+        "name": "crates/ai-memory-cli/src/commands/install_hooks.rs",
+        "start": 5786,
+        "end": 5919
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 2,
+     "minified": 0,
+     "sample": [
+      "crates/ai-memory-cli/src/commands/init.rs",
+      "crates/ai-memory-store/migrations/V14__users.sql"
+     ]
+    }
+   },
+   "health": {
+    "score": 37.6,
+    "grade": "E",
+    "size": {
+     "lines": 566854,
+     "files": 801,
+     "class": "L"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 10.6,
+      "adjusted": 10.6,
+      "lines": 59987,
+      "halfLife": 8.5,
+      "formats": [
+       "rust",
+       "bash",
+       "typescript",
+       "sql",
+       "python",
+       "swift",
+       "powershell",
+       "nix",
+       "javascript",
+       "docker",
+       "nginx"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 42.3
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 79.4,
+      "adjusted": 79.2,
+      "lines": 449922,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 33.4
+     }
+    ],
+    "skipped": [
+     {
+      "id": "dead-code",
+      "reason": "the languages dead code reads are under 5% of the code"
+     }
+    ]
+   },
+   "complexity": {
+    "total": 56681,
+    "mean": 70.8,
+    "files": [
+     {
+      "path": "crates/ai-memory-store/src/reader.rs",
+      "complexity": 3003,
+      "lines": 16072,
+      "bytes": 660631
+     },
+     {
+      "path": "crates/ai-memory-store/src/ops.rs",
+      "complexity": 2733,
+      "lines": 18286,
+      "bytes": 726246
+     },
+     {
+      "path": "crates/ai-memory-cli/src/commands/install_hooks.rs",
+      "complexity": 1823,
+      "lines": 17112,
+      "bytes": 684172
+     },
+     {
+      "path": "crates/ai-memory-mcp/src/server.rs",
+      "complexity": 1437,
+      "lines": 22576,
+      "bytes": 909341
+     },
+     {
+      "path": "crates/ai-memory-cli/src/commands/render_shared.rs",
+      "complexity": 1393,
+      "lines": 5380,
+      "bytes": 320151
+     },
+     {
+      "path": "crates/ai-memory-hooks/src/router.rs",
+      "complexity": 1293,
+      "lines": 23299,
+      "bytes": 892898
+     },
+     {
+      "path": "crates/ai-memory-hooks/src/capture_policy.rs",
+      "complexity": 1203,
+      "lines": 8241,
+      "bytes": 324465
+     },
+     {
+      "path": "crates/ai-memory-workstream/src/transcript.rs",
+      "complexity": 1143,
+      "lines": 9477,
+      "bytes": 357716
+     },
+     {
+      "path": "crates/ai-memory-mcp/src/admin.rs",
+      "complexity": 1070,
+      "lines": 16311,
+      "bytes": 626810
+     },
+     {
+      "path": "crates/ai-memory-cli/src/commands/run.rs",
+      "complexity": 1040,
+      "lines": 10738,
+      "bytes": 407507
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 0.37,
+    "findings": 2,
+    "files": 52,
+    "byCategory": [
+     {
+      "category": "unused-file",
+      "count": 2
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-file",
+      "path": "crates/ai-memory-web/static/management/theme.js",
+      "name": "",
+      "line": 1,
+      "lines": 33
+     },
+     {
+      "category": "unused-file",
+      "path": "companions/ai-memory-desktop/ui/app.js",
+      "name": "",
+      "line": 1,
+      "lines": 8
+     }
+    ]
+   }
+  },
+  {
+   "name": "Graphify-Labs/graphify",
+   "url": "https://github.com/Graphify-Labs/graphify",
+   "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+   "language": "Python",
+   "stars": 131903,
+   "starsToday": 1433,
+   "defaultBranch": "v8",
+   "headSha": "847a93f3cab5e2c82ea9170014b21cd2c52a4417",
+   "durationMs": 2730,
+   "total": {
+    "sources": 1332,
+    "lines": 353496,
+    "tokens": 2752409,
+    "clones": 1884,
+    "duplicatedLines": 96237,
+    "duplicatedTokens": 668373,
+    "percentage": 27.22,
+    "percentageTokens": 24.28
+   },
+   "formats": [
+    {
+     "format": "python",
+     "sources": 547,
+     "lines": 226911,
+     "clones": 812,
+     "duplicatedLines": 9056,
+     "percentage": 3.99
+    },
+    {
+     "format": "markdown",
+     "sources": 365,
+     "lines": 79802,
+     "clones": 544,
+     "duplicatedLines": 55620,
+     "percentage": 69.7
+    },
+    {
+     "format": "bash",
+     "sources": 245,
+     "lines": 27663,
+     "clones": 406,
+     "duplicatedLines": 27139,
+     "percentage": 98.11
+    },
+    {
+     "format": "text",
+     "sources": 103,
+     "lines": 4102,
+     "clones": 116,
+     "duplicatedLines": 3898,
+     "percentage": 95.03
+    },
+    {
+     "format": "powershell",
+     "sources": 6,
+     "lines": 987,
+     "clones": 4,
+     "duplicatedLines": 508,
+     "percentage": 51.47
+    },
+    {
+     "format": "yaml",
+     "sources": 10,
+     "lines": 679,
+     "clones": 1,
+     "duplicatedLines": 10,
+     "percentage": 1.47
+    },
+    {
+     "format": "typescript",
+     "sources": 5,
+     "lines": 665,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 0.9
+    },
+    {
+     "format": "json",
+     "sources": 7,
+     "lines": 10634,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "toml",
+     "sources": 2,
+     "lines": 398,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "php",
+     "sources": 5,
+     "lines": 161,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "bash",
+     "lines": 698,
+     "tokens": 3352,
+     "copies": 20,
+     "first": {
+      "name": "graphify/skill-agents.md",
+      "start": 68,
+      "end": 765
+     },
+     "others": [
+      {
+       "name": "graphify/skill-amp.md",
+       "start": 68,
+       "end": 765
+      },
+      {
+       "name": "graphify/skill-claw.md",
+       "start": 68,
+       "end": 768
+      },
+      {
+       "name": "graphify/skill-copilot.md",
+       "start": 68,
+       "end": 768
+      },
+      {
+       "name": "graphify/skill-droid.md",
+       "start": 68,
+       "end": 765
+      },
+      {
+       "name": "graphify/skill-kilo.md",
+       "start": 68,
+       "end": 768
+      },
+      {
+       "name": "graphify/skill-kiro.md",
+       "start": 68,
+       "end": 768
+      },
+      {
+       "name": "graphify/skill-pi.md",
+       "start": 68,
+       "end": 762
+      },
+      {
+       "name": "graphify/skill-trae.md",
+       "start": 68,
+       "end": 766
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# Detect the correct Python interpreter (handles uv tool, pipx, venv, system installs)",
+       "PYTHON=\"\"",
+       "GRAPHIFY_BIN=$(which graphify 2>/dev/null)",
+       "# 1. uv tool installs — most reliable on modern Mac/Linux",
+       "if [ -z \"$PYTHON\" ] && command -v uv >/dev/null 2>&1; then",
+       "    _UV_PY=$(uv tool run --from graphifyy python -c \"import sys; print(sys.executable)\" 2>/dev/null)",
+       "    if [ -n \"$_UV_PY\" ]; then PYTHON=\"$_UV_PY\"; fi",
+       "fi",
+       "# 2. Read shebang from graphify binary (pipx and direct pip installs)",
+       "if [ -z \"$PYTHON\" ] && [ -n \"$GRAPHIFY_BIN\" ]; then"
+      ],
+      "total": 698
+     }
+    },
+    {
+     "format": "bash",
+     "lines": 303,
+     "tokens": 1467,
+     "copies": 29,
+     "first": {
+      "name": "graphify/skills/agents/references/query.md",
+      "start": 14,
+      "end": 316
+     },
+     "others": [
+      {
+       "name": "graphify/skills/amp/references/query.md",
+       "start": 14,
+       "end": 316
+      },
+      {
+       "name": "graphify/skills/claude/references/query.md",
+       "start": 14,
+       "end": 316
+      },
+      {
+       "name": "graphify/skills/claw/references/query.md",
+       "start": 14,
+       "end": 316
+      },
+      {
+       "name": "graphify/skills/codex/references/query.md",
+       "start": 14,
+       "end": 316
+      },
+      {
+       "name": "graphify/skills/copilot/references/query.md",
+       "start": 14,
+       "end": 316
+      },
+      {
+       "name": "graphify/skills/droid/references/query.md",
+       "start": 14,
+       "end": 316
+      },
+      {
+       "name": "graphify/skills/kilo/references/query.md",
+       "start": 14,
+       "end": 316
+      },
+      {
+       "name": "graphify/skills/kiro/references/query.md",
+       "start": 14,
+       "end": 316
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "$(cat graphify-out/.graphify_python) -c \"",
+       "from pathlib import Path",
+       "if not Path('graphify-out/graph.json').exists():",
+       "    print('ERROR: No graph found. Run /graphify <path> first to build the graph.')",
+       "    raise SystemExit(1)",
+       "\"",
+       "```",
+       "If it fails, stop and tell the user to run `/graphify <path>` first.",
+       "",
+       "### Step 0 — Constrained query expansion (REQUIRED before traversal)"
+      ],
+      "total": 303
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 265,
+     "tokens": 2079,
+     "copies": 19,
+     "first": {
+      "name": "graphify/skill-agents.md",
+      "start": 6,
+      "end": 270
+     },
+     "others": [
+      {
+       "name": "graphify/skill-claw.md",
+       "start": 6,
+       "end": 270
+      },
+      {
+       "name": "graphify/skill-codex.md",
+       "start": 6,
+       "end": 270
+      },
+      {
+       "name": "graphify/skill-copilot.md",
+       "start": 6,
+       "end": 270
+      },
+      {
+       "name": "graphify/skill-kilo.md",
+       "start": 6,
+       "end": 270
+      },
+      {
+       "name": "graphify/skill-kiro.md",
+       "start": 6,
+       "end": 270
+      },
+      {
+       "name": "graphify/skill-opencode.md",
+       "start": 6,
+       "end": 270
+      },
+      {
+       "name": "graphify/skill-pi.md",
+       "start": 6,
+       "end": 270
+      },
+      {
+       "name": "graphify/skill-vscode.md",
+       "start": 6,
+       "end": 270
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "# /graphify",
+       "",
+       "Turn any folder of files into a navigable knowledge graph with community detection, an honest audit trail, and three outputs: interactive HTML, GraphRAG-ready …",
+       "",
+       "## Usage",
+       "",
+       "```",
+       "/graphify                                             # full pipeline on current directory (HTML viz; add --obsidian for a vault)",
+       "/graphify <path>                                      # full pipeline on specific path",
+       "/graphify https://github.com/<owner>/<repo>           # clone repo then run full pipeline on it"
+      ],
+      "total": 265
+     }
+    },
+    {
+     "format": "text",
+     "lines": 80,
+     "tokens": 1772,
+     "copies": 21,
+     "first": {
+      "name": "graphify/skills/agents/references/extraction-spec.md",
+      "start": 6,
+      "end": 85
+     },
+     "others": [
+      {
+       "name": "graphify/skills/amp/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      },
+      {
+       "name": "graphify/skills/claude/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      },
+      {
+       "name": "graphify/skills/copilot/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      },
+      {
+       "name": "graphify/skills/droid/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      },
+      {
+       "name": "graphify/skills/kilo/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      },
+      {
+       "name": "graphify/skills/opencode/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      },
+      {
+       "name": "graphify/skills/trae/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      },
+      {
+       "name": "graphify/skills/vscode/references/extraction-spec.md",
+       "start": 6,
+       "end": 85
+      }
+     ]
+    },
+    {
+     "format": "bash",
+     "lines": 204,
+     "tokens": 1214,
+     "copies": 29,
+     "first": {
+      "name": "graphify/skills/agents/references/update.md",
+      "start": 15,
+      "end": 218
+     },
+     "others": [
+      {
+       "name": "graphify/skills/amp/references/update.md",
+       "start": 15,
+       "end": 218
+      },
+      {
+       "name": "graphify/skills/claude/references/update.md",
+       "start": 15,
+       "end": 218
+      },
+      {
+       "name": "graphify/skills/claw/references/update.md",
+       "start": 15,
+       "end": 218
+      },
+      {
+       "name": "graphify/skills/codex/references/update.md",
+       "start": 15,
+       "end": 218
+      },
+      {
+       "name": "graphify/skills/copilot/references/update.md",
+       "start": 15,
+       "end": 218
+      },
+      {
+       "name": "graphify/skills/droid/references/update.md",
+       "start": 15,
+       "end": 218
+      },
+      {
+       "name": "graphify/skills/kilo/references/update.md",
+       "start": 15,
+       "end": 218
+      },
+      {
+       "name": "graphify/skills/kiro/references/update.md",
+       "start": 15,
+       "end": 218
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 313,
+     "tokens": 1149,
+     "copies": 29,
+     "first": {
+      "name": "graphify/skills/agents/references/query.md",
+      "start": 1,
+      "end": 313
+     },
+     "others": [
+      {
+       "name": "graphify/skills/amp/references/query.md",
+       "start": 1,
+       "end": 313
+      },
+      {
+       "name": "graphify/skills/claude/references/query.md",
+       "start": 1,
+       "end": 313
+      },
+      {
+       "name": "graphify/skills/claw/references/query.md",
+       "start": 1,
+       "end": 313
+      },
+      {
+       "name": "graphify/skills/codex/references/query.md",
+       "start": 1,
+       "end": 313
+      },
+      {
+       "name": "graphify/skills/copilot/references/query.md",
+       "start": 1,
+       "end": 313
+      },
+      {
+       "name": "graphify/skills/droid/references/query.md",
+       "start": 1,
+       "end": 313
+      },
+      {
+       "name": "graphify/skills/kilo/references/query.md",
+       "start": 1,
+       "end": 313
+      },
+      {
+       "name": "graphify/skills/kiro/references/query.md",
+       "start": 1,
+       "end": 313
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 91,
+     "tokens": 947,
+     "copies": 29,
+     "first": {
+      "name": "graphify/skills/agents/references/exports.md",
+      "start": 1,
+      "end": 91
+     },
+     "others": [
+      {
+       "name": "graphify/skills/amp/references/exports.md",
+       "start": 1,
+       "end": 91
+      },
+      {
+       "name": "graphify/skills/claude/references/exports.md",
+       "start": 1,
+       "end": 91
+      },
+      {
+       "name": "graphify/skills/claw/references/exports.md",
+       "start": 1,
+       "end": 91
+      },
+      {
+       "name": "graphify/skills/codex/references/exports.md",
+       "start": 1,
+       "end": 91
+      },
+      {
+       "name": "graphify/skills/copilot/references/exports.md",
+       "start": 1,
+       "end": 91
+      },
+      {
+       "name": "graphify/skills/droid/references/exports.md",
+       "start": 1,
+       "end": 91
+      },
+      {
+       "name": "graphify/skills/kilo/references/exports.md",
+       "start": 1,
+       "end": 91
+      },
+      {
+       "name": "graphify/skills/kiro/references/exports.md",
+       "start": 1,
+       "end": 91
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 526,
+     "tokens": 2135,
+     "copies": 8,
+     "first": {
+      "name": "graphify/skill-claw.md",
+      "start": 268,
+      "end": 793
+     },
+     "others": [
+      {
+       "name": "graphify/skill-copilot.md",
+       "start": 268,
+       "end": 793
+      },
+      {
+       "name": "graphify/skill-kiro.md",
+       "start": 268,
+       "end": 793
+      },
+      {
+       "name": "graphify/skill.md",
+       "start": 268,
+       "end": 793
+      },
+      {
+       "name": "tools/skillgen/expected/graphify__skill-claw.md",
+       "start": 268,
+       "end": 793
+      },
+      {
+       "name": "tools/skillgen/expected/graphify__skill-copilot.md",
+       "start": 268,
+       "end": 793
+      },
+      {
+       "name": "tools/skillgen/expected/graphify__skill-kiro.md",
+       "start": 268,
+       "end": 793
+      },
+      {
+       "name": "tools/skillgen/expected/graphify__skill.md",
+       "start": 268,
+       "end": 793
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 221,
+     "tokens": 523,
+     "copies": 29,
+     "first": {
+      "name": "graphify/skills/agents/references/update.md",
+      "start": 1,
+      "end": 221
+     },
+     "others": [
+      {
+       "name": "graphify/skills/amp/references/update.md",
+       "start": 1,
+       "end": 221
+      },
+      {
+       "name": "graphify/skills/claude/references/update.md",
+       "start": 1,
+       "end": 221
+      },
+      {
+       "name": "graphify/skills/claw/references/update.md",
+       "start": 1,
+       "end": 221
+      },
+      {
+       "name": "graphify/skills/codex/references/update.md",
+       "start": 1,
+       "end": 221
+      },
+      {
+       "name": "graphify/skills/copilot/references/update.md",
+       "start": 1,
+       "end": 221
+      },
+      {
+       "name": "graphify/skills/droid/references/update.md",
+       "start": 1,
+       "end": 221
+      },
+      {
+       "name": "graphify/skills/kilo/references/update.md",
+       "start": 1,
+       "end": 221
+      },
+      {
+       "name": "graphify/skills/kiro/references/update.md",
+       "start": 1,
+       "end": 221
+      }
+     ]
+    },
+    {
+     "format": "bash",
+     "lines": 1356,
+     "tokens": 6690,
+     "copies": 3,
+     "first": {
+      "name": "graphify/skill-devin.md",
+      "start": 97,
+      "end": 1452
+     },
+     "others": [
+      {
+       "name": "tools/skillgen/expected/graphify__skill-devin.md",
+       "start": 97,
+       "end": 1452
+      },
+      {
+       "name": "tools/skillgen/fragments/core/devin.md",
+       "start": 97,
+       "end": 1452
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 105,
+    "lines": 91005,
+    "tokens": 579608,
+    "clones": 264,
+    "duplicatedLines": 3163,
+    "duplicatedTokens": 21476,
+    "percentage": 3.48,
+    "percentageTokens": 3.71,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 104,
+      "lines": 90815,
+      "clones": 264,
+      "duplicatedLines": 3163,
+      "percentage": 3.48
+     },
+     {
+      "format": "typescript",
+      "sources": 1,
+      "lines": 190,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 84,
+      "copies": 9,
+      "first": {
+       "name": "graphify/extractors/bash.py",
+       "start": 114,
+       "end": 125
+      },
+      "others": [
+       {
+        "name": "graphify/extractors/dm.py",
+        "start": 25,
+        "end": 36
+       },
+       {
+        "name": "graphify/extractors/elixir.py",
+        "start": 25,
+        "end": 36
+       },
+       {
+        "name": "graphify/extractors/julia.py",
+        "start": 18,
+        "end": 29
+       },
+       {
+        "name": "graphify/extractors/ocaml.py",
+        "start": 28,
+        "end": 39
+       },
+       {
+        "name": "graphify/extractors/powershell.py",
+        "start": 20,
+        "end": 31
+       },
+       {
+        "name": "graphify/extractors/rust.py",
+        "start": 243,
+        "end": 254
+       },
+       {
+        "name": "graphify/extractors/verilog.py",
+        "start": 216,
+        "end": 227
+       },
+       {
+        "name": "graphify/extractors/zig.py",
+        "start": 29,
+        "end": 40
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    language = Language(tsbash.language())",
+        "    parser = Parser(language)",
+        "    source = _read_source_bytes(path)",
+        "    tree = parser.parse(source)",
+        "    root = tree.root_node",
+        "except Exception as e:",
+        "    return {\"nodes\": [], \"edges\": [], \"error\": str(e)}",
+        "",
+        "stem = _file_stem(path)",
+        "str_path = str(path)"
+       ],
+       "total": 12
+      }
+     },
+     {
+      "format": "python",
+      "lines": 40,
+      "tokens": 344,
+      "copies": 2,
+      "first": {
+       "name": "graphify/analyze.py",
+       "start": 515,
+       "end": 554
+      },
+      "others": [
+       {
+        "name": "worked/mixed-corpus/raw/analyze.py",
+        "start": 349,
+        "end": 388
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "betweenness = nx.betweenness_centrality(G, k=k, seed=42)",
+        "# Top bridge nodes that are NOT file-level hubs",
+        "bridges = sorted(",
+        "    [(n, s) for n, s in betweenness.items()",
+        "     if not _is_file_node(G, n) and not _is_concept_node(G, n) and s > 0],",
+        "    key=lambda x: x[1],",
+        "    reverse=True,",
+        ")[:3]",
+        "for node_id, score in bridges:",
+        "    label = G.nodes[node_id].get(\"label\", node_id)"
+       ],
+       "total": 40
+      }
+     },
+     {
+      "format": "python",
+      "lines": 8,
+      "tokens": 68,
+      "copies": 6,
+      "first": {
+       "name": "graphify/extractors/dm.py",
+       "start": 31,
+       "end": 38
+      },
+      "others": [
+       {
+        "name": "graphify/extractors/elixir.py",
+        "start": 31,
+        "end": 38
+       },
+       {
+        "name": "graphify/extractors/julia.py",
+        "start": 24,
+        "end": 31
+       },
+       {
+        "name": "graphify/extractors/powershell.py",
+        "start": 26,
+        "end": 33
+       },
+       {
+        "name": "graphify/extractors/rust.py",
+        "start": 249,
+        "end": 256
+       },
+       {
+        "name": "graphify/extractors/zig.py",
+        "start": 35,
+        "end": 42
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "    return {\"nodes\": [], \"edges\": [], \"error\": str(e)}",
+        "",
+        "stem = _file_stem(path)",
+        "str_path = str(path)",
+        "nodes: list[dict] = []",
+        "edges: list[dict] = []",
+        "seen_ids: set[str] = set()",
+        "function_bodies: list[tuple[str, Any, \"str | None\"]] = []"
+       ],
+       "total": 8
+      },
+      "excerptSecond": {
+       "lines": [
+        "    return {\"nodes\": [], \"edges\": [], \"error\": str(e)}",
+        "",
+        "stem = _file_stem(path)",
+        "str_path = str(path)",
+        "nodes: list[dict] = []",
+        "edges: list[dict] = []",
+        "seen_ids: set[str] = set()",
+        "function_bodies: list[tuple[str, Any]] = []"
+       ],
+       "total": 8
+      }
+     },
+     {
+      "format": "python",
+      "lines": 56,
+      "tokens": 330,
+      "copies": 2,
+      "first": {
+       "name": "graphify/analyze.py",
+       "start": 144,
+       "end": 199
+      },
+      "others": [
+       {
+        "name": "worked/mixed-corpus/raw/analyze.py",
+        "start": 50,
+        "end": 105
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 43,
+      "tokens": 309,
+      "copies": 2,
+      "first": {
+       "name": "graphify/extractors/pascal_forms.py",
+       "start": 33,
+       "end": 75
+      },
+      "others": [
+       {
+        "name": "graphify/extractors/pascal_forms.py",
+        "start": 132,
+        "end": 174
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 7,
+      "tokens": 59,
+      "copies": 6,
+      "first": {
+       "name": "graphify/extractors/dm.py",
+       "start": 31,
+       "end": 37
+      },
+      "others": [
+       {
+        "name": "graphify/extractors/fortran.py",
+        "start": 91,
+        "end": 97
+       },
+       {
+        "name": "graphify/extractors/json_config.py",
+        "start": 116,
+        "end": 122
+       },
+       {
+        "name": "graphify/extractors/objc.py",
+        "start": 108,
+        "end": 114
+       },
+       {
+        "name": "graphify/extractors/ocaml.py",
+        "start": 34,
+        "end": 40
+       },
+       {
+        "name": "graphify/extractors/verilog.py",
+        "start": 222,
+        "end": 228
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 39,
+      "tokens": 273,
+      "copies": 2,
+      "first": {
+       "name": "graphify/analyze.py",
+       "start": 446,
+       "end": 484
+      },
+      "others": [
+       {
+        "name": "worked/mixed-corpus/raw/analyze.py",
+        "start": 292,
+        "end": 330
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 26,
+      "tokens": 135,
+      "copies": 3,
+      "first": {
+       "name": "graphify/extractors/fortran.py",
+       "start": 103,
+       "end": 128
+      },
+      "others": [
+       {
+        "name": "graphify/extractors/go.py",
+        "start": 244,
+        "end": 269
+       },
+       {
+        "name": "graphify/extractors/rust.py",
+        "start": 291,
+        "end": 316
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 25,
+      "tokens": 254,
+      "copies": 2,
+      "first": {
+       "name": "graphify/analyze.py",
+       "start": 314,
+       "end": 338
+      },
+      "others": [
+       {
+        "name": "worked/mixed-corpus/raw/analyze.py",
+        "start": 171,
+        "end": 195
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 39,
+      "tokens": 251,
+      "copies": 2,
+      "first": {
+       "name": "graphify/analyze.py",
+       "start": 364,
+       "end": 402
+      },
+      "others": [
+       {
+        "name": "worked/mixed-corpus/raw/analyze.py",
+        "start": 216,
+        "end": 254
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "health": {
+    "score": 60.7,
+    "grade": "C",
+    "size": {
+     "lines": 229176,
+     "files": 593,
+     "class": "L"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 4,
+      "adjusted": 4,
+      "lines": 9062,
+      "halfLife": 8.5,
+      "formats": [
+       "python",
+       "typescript",
+       "php",
+       "pascal",
+       "sql",
+       "csharp",
+       "rust",
+       "swift",
+       "groovy",
+       "cpp",
+       "fortran",
+       "lisp",
+       "apex",
+       "powershell",
+       "go",
+       "objectivec",
+       "java",
+       "kotlin",
+       "c",
+       "zig",
+       "julia",
+       "robotframework",
+       "ruby",
+       "elixir",
+       "scala",
+       "docker",
+       "tsx",
+       "javascript"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 72.5
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 3.1,
+      "adjusted": 3.1,
+      "lines": 7168,
+      "halfLife": 7.5,
+      "coverage": 99.3,
+      "weight": 0.993,
+      "score": 74.8
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 64.3,
+      "adjusted": 64,
+      "lines": 147474,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 41.2
+     }
+    ]
+   },
+   "complexity": {
+    "total": 31661,
+    "mean": 53.4,
+    "files": [
+     {
+      "path": "graphify/extractors/engine.py",
+      "complexity": 2989,
+      "lines": 10367,
+      "bytes": 544863
+     },
+     {
+      "path": "graphify/extractors/resolution.py",
+      "complexity": 1176,
+      "lines": 4306,
+      "bytes": 189515
+     },
+     {
+      "path": "graphify/cli.py",
+      "complexity": 991,
+      "lines": 5393,
+      "bytes": 265442
+     },
+     {
+      "path": "graphify/llm.py",
+      "complexity": 739,
+      "lines": 3855,
+      "bytes": 178836
+     },
+     {
+      "path": "graphify/serve.py",
+      "complexity": 701,
+      "lines": 3089,
+      "bytes": 146860
+     },
+     {
+      "path": "tests/test_extract.py",
+      "complexity": 573,
+      "lines": 6275,
+      "bytes": 273255
+     },
+     {
+      "path": "tests/test_detect.py",
+      "complexity": 486,
+      "lines": 4595,
+      "bytes": 196904
+     },
+     {
+      "path": "graphify/callflow_html.py",
+      "complexity": 474,
+      "lines": 2051,
+      "bytes": 83274
+     },
+     {
+      "path": "tests/test_watch.py",
+      "complexity": 461,
+      "lines": 5594,
+      "bytes": 224153
+     },
+     {
+      "path": "graphify/watch.py",
+      "complexity": 437,
+      "lines": 2862,
+      "bytes": 133633
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 3.15,
+    "findings": 161,
+    "files": 566,
+    "byCategory": [
+     {
+      "category": "unused-file",
+      "count": 12
+     },
+     {
+      "category": "unused-export",
+      "count": 2
+     },
+     {
+      "category": "unused-symbol",
+      "count": 16
+     },
+     {
+      "category": "unused-import",
+      "count": 131
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-file",
+      "path": "worked/mixed-corpus/raw/analyze.py",
+      "name": "",
+      "line": 1,
+      "lines": 517
+     },
+     {
+      "category": "unused-file",
+      "path": "graphify/scip_ingest.py",
+      "name": "",
+      "line": 1,
+      "lines": 363
+     },
+     {
+      "category": "unused-file",
+      "path": "graphify/multigraph_compat.py",
+      "name": "",
+      "line": 1,
+      "lines": 212
+     },
+     {
+      "category": "unused-file",
+      "path": "worked/httpx/raw/client.py",
+      "name": "",
+      "line": 1,
+      "lines": 161
+     },
+     {
+      "category": "unused-file",
+      "path": "worked/httpx/raw/transport.py",
+      "name": "",
+      "line": 1,
+      "lines": 135
+     },
+     {
+      "category": "unused-file",
+      "path": "worked/httpx/raw/models.py",
+      "name": "",
+      "line": 1,
+      "lines": 120
+     },
+     {
+      "category": "unused-file",
+      "path": "worked/httpx/raw/auth.py",
+      "name": "",
+      "line": 1,
+      "lines": 114
+     },
+     {
+      "category": "unused-file",
+      "path": "worked/mixed-corpus/raw/cluster.py",
+      "name": "",
+      "line": 1,
+      "lines": 104
+     },
+     {
+      "category": "unused-import",
+      "path": "graphify/__main__.py",
+      "name": "_agents_platform_install",
+      "line": 35,
+      "lines": 94
+     },
+     {
+      "category": "unused-import",
+      "path": "graphify/__main__.py",
+      "name": "_agents_platform_uninstall",
+      "line": 36,
+      "lines": 93
+     }
+    ]
+   }
+  }
+ ]
+}
