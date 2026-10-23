@@ -33,46 +33,62 @@
    "codeSources": 105,
    "healthScore": 60.7,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-10-23",
+   "rank": 3,
+   "stars": 133202,
+   "starsToday": 1408,
+   "headSha": "c588b72d936927790a87ad009955078ed40562a3",
+   "sources": 1339,
+   "lines": 355232,
+   "clones": 1887,
+   "duplicatedLines": 96259,
+   "percentage": 27.1,
+   "codePercentage": 3.43,
+   "codeSources": 105,
+   "healthScore": 60.6,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-10-22",
-  "generatedAt": "2026-10-22T05:29:30.811Z",
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T05:28:49.788Z",
   "name": "Graphify-Labs/graphify",
   "url": "https://github.com/Graphify-Labs/graphify",
   "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
   "language": "Python",
-  "stars": 131903,
-  "starsToday": 1433,
+  "stars": 133202,
+  "starsToday": 1408,
   "defaultBranch": "v8",
-  "headSha": "847a93f3cab5e2c82ea9170014b21cd2c52a4417",
-  "durationMs": 2730,
+  "headSha": "c588b72d936927790a87ad009955078ed40562a3",
+  "durationMs": 2679,
   "total": {
-   "sources": 1332,
-   "lines": 353496,
-   "tokens": 2752409,
-   "clones": 1884,
-   "duplicatedLines": 96237,
-   "duplicatedTokens": 668373,
-   "percentage": 27.22,
-   "percentageTokens": 24.28
+   "sources": 1339,
+   "lines": 355232,
+   "tokens": 2765387,
+   "clones": 1887,
+   "duplicatedLines": 96259,
+   "duplicatedTokens": 668583,
+   "percentage": 27.1,
+   "percentageTokens": 24.18
   },
   "formats": [
    {
     "format": "python",
-    "sources": 547,
-    "lines": 226911,
-    "clones": 812,
-    "duplicatedLines": 9056,
-    "percentage": 3.99
+    "sources": 554,
+    "lines": 228625,
+    "clones": 815,
+    "duplicatedLines": 9078,
+    "percentage": 3.97
    },
    {
     "format": "markdown",
     "sources": 365,
-    "lines": 79802,
+    "lines": 79824,
     "clones": 544,
     "duplicatedLines": 55620,
-    "percentage": 69.7
+    "percentage": 69.68
    },
    {
     "format": "bash",
@@ -693,21 +709,21 @@
   ],
   "code": {
    "sources": 105,
-   "lines": 91005,
-   "tokens": 579608,
-   "clones": 264,
-   "duplicatedLines": 3163,
-   "duplicatedTokens": 21476,
-   "percentage": 3.48,
-   "percentageTokens": 3.71,
+   "lines": 91516,
+   "tokens": 583585,
+   "clones": 262,
+   "duplicatedLines": 3141,
+   "duplicatedTokens": 21340,
+   "percentage": 3.43,
+   "percentageTokens": 3.66,
    "formats": [
     {
      "format": "python",
      "sources": 104,
-     "lines": 90815,
-     "clones": 264,
-     "duplicatedLines": 3163,
-     "percentage": 3.48
+     "lines": 91326,
+     "clones": 262,
+     "duplicatedLines": 3141,
+     "percentage": 3.44
     },
     {
      "format": "typescript",
@@ -1053,20 +1069,20 @@
    }
   },
   "health": {
-   "score": 60.7,
+   "score": 60.6,
    "grade": "C",
    "size": {
-    "lines": 229176,
-    "files": 593,
+    "lines": 230890,
+    "files": 600,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 4,
-     "adjusted": 4,
-     "lines": 9062,
+     "value": 3.9,
+     "adjusted": 3.9,
+     "lines": 9084,
      "halfLife": 8.5,
      "formats": [
       "python",
@@ -1104,7 +1120,7 @@
       "data"
      ],
      "weight": 1,
-     "score": 72.5
+     "score": 72.6
     },
     {
      "id": "dead-code",
@@ -1115,41 +1131,41 @@
      "halfLife": 7.5,
      "coverage": 99.3,
      "weight": 0.993,
-     "score": 74.8
+     "score": 74.9
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 64.3,
-     "adjusted": 64,
-     "lines": 147474,
+     "value": 64.6,
+     "adjusted": 64.3,
+     "lines": 149270,
      "halfLife": 50,
      "weight": 1,
-     "score": 41.2
+     "score": 41
     }
    ]
   },
   "complexity": {
-   "total": 31661,
-   "mean": 53.4,
+   "total": 30200,
+   "mean": 50.3,
    "files": [
     {
      "path": "graphify/extractors/engine.py",
-     "complexity": 2989,
-     "lines": 10367,
-     "bytes": 544863
+     "complexity": 1244,
+     "lines": 10444,
+     "bytes": 549311
     },
     {
      "path": "graphify/extractors/resolution.py",
-     "complexity": 1176,
-     "lines": 4306,
-     "bytes": 189515
+     "complexity": 1177,
+     "lines": 4308,
+     "bytes": 189743
     },
     {
      "path": "graphify/cli.py",
-     "complexity": 991,
-     "lines": 5393,
-     "bytes": 265442
+     "complexity": 998,
+     "lines": 5413,
+     "bytes": 266729
     },
     {
      "path": "graphify/llm.py",
@@ -1159,9 +1175,9 @@
     },
     {
      "path": "graphify/serve.py",
-     "complexity": 701,
-     "lines": 3089,
-     "bytes": 146860
+     "complexity": 716,
+     "lines": 3131,
+     "bytes": 149033
     },
     {
      "path": "tests/test_extract.py",
@@ -1196,9 +1212,9 @@
    ]
   },
   "deadCode": {
-   "percentage": 3.15,
+   "percentage": 3.13,
    "findings": 161,
-   "files": 566,
+   "files": 573,
    "byCategory": [
     {
      "category": "unused-file",

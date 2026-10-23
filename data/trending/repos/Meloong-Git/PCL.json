@@ -1,0 +1,782 @@
+{
+ "name": "Meloong-Git/PCL",
+ "url": "https://github.com/Meloong-Git/PCL",
+ "appearances": [
+  {
+   "date": "2026-10-23",
+   "rank": 5,
+   "stars": 8765,
+   "starsToday": 119,
+   "headSha": "6b9a50df911c9d68b69b24c979efba477fb14b67",
+   "sources": 127,
+   "lines": 76499,
+   "clones": 122,
+   "duplicatedLines": 1527,
+   "percentage": 2,
+   "codePercentage": 3.41,
+   "codeSources": 115,
+   "healthScore": 49.6,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T05:28:49.788Z",
+  "name": "Meloong-Git/PCL",
+  "url": "https://github.com/Meloong-Git/PCL",
+  "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+  "language": "Visual Basic .NET",
+  "stars": 8765,
+  "starsToday": 119,
+  "defaultBranch": "main",
+  "headSha": "6b9a50df911c9d68b69b24c979efba477fb14b67",
+  "durationMs": 1248,
+  "total": {
+   "sources": 127,
+   "lines": 76499,
+   "tokens": 485588,
+   "clones": 122,
+   "duplicatedLines": 1527,
+   "duplicatedTokens": 11074,
+   "percentage": 2,
+   "percentageTokens": 2.28
+  },
+  "formats": [
+   {
+    "format": "vbnet",
+    "sources": 106,
+    "lines": 43093,
+    "clones": 121,
+    "duplicatedLines": 1500,
+    "percentage": 3.48
+   },
+   {
+    "format": "yaml",
+    "sources": 7,
+    "lines": 265,
+    "clones": 1,
+    "duplicatedLines": 27,
+    "percentage": 10.19
+   },
+   {
+    "format": "txt",
+    "sources": 1,
+    "lines": 31511,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "csharp",
+    "sources": 9,
+    "lines": 921,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 1,
+    "lines": 423,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "editorconfig",
+    "sources": 2,
+    "lines": 269,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 1,
+    "lines": 17,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "vbnet",
+    "lines": 10,
+    "tokens": 145,
+    "first": {
+     "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgInput.xaml.vb",
+     "start": 40,
+     "end": 49
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgSelect.xaml.vb",
+      "start": 47,
+      "end": 56
+     },
+     {
+      "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgText.xaml.vb",
+      "start": 38,
+      "end": 47
+     },
+     {
+      "name": "Plain Craft Launcher 2/Pages/PageLaunch/MyMsgLogin.xaml.vb",
+      "start": 29,
+      "end": 38
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "'动画",
+      "Opacity = 0",
+      "AniStart(AaColor(FrmMain.PanMsg, Grid.BackgroundProperty, If(MyConverter.IsWarn, New MyColor(140, 80, 0, 0), New MyColor(90, 0, 0, 0)) - FrmMain.PanMsg.Backgro…",
+      "AniStart({",
+      "    AaOpacity(Me, 1, 120, 60),",
+      "    AaDouble(Sub(i) TransformPos.Y += i, -TransformPos.Y, 300, 60, New AniEaseOutBack(AniEasePower.Weak)),",
+      "    AaDouble(Sub(i) TransformRotate.Angle += i, -TransformRotate.Angle, 300, 60, New AniEaseOutFluent(AniEasePower.Weak))",
+      "}, \"MyMsgBox \" & Uuid)",
+      "'记录日志",
+      "Logger.Info($\"输入弹窗：{LabTitle.Text}\")"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "'动画",
+      "Opacity = 0",
+      "AniStart(AaColor(FrmMain.PanMsg, Grid.BackgroundProperty, If(MyConverter.IsWarn, New MyColor(140, 80, 0, 0), New MyColor(90, 0, 0, 0)) - FrmMain.PanMsg.Backgro…",
+      "AniStart({",
+      "    AaOpacity(Me, 1, 120, 60),",
+      "    AaDouble(Sub(i) TransformPos.Y += i, -TransformPos.Y, 300, 60, New AniEaseOutBack(AniEasePower.Weak)),",
+      "    AaDouble(Sub(i) TransformRotate.Angle += i, -TransformRotate.Angle, 300, 60, New AniEaseOutFluent(AniEasePower.Weak))",
+      "}, \"MyMsgBox \" & Uuid)",
+      "'记录日志",
+      "Logger.Info($\"选择弹窗：{LabTitle.Text}\")"
+     ],
+     "total": 10
+    },
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 28,
+    "tokens": 398,
+    "first": {
+     "name": "Plain Craft Launcher 2/Pages/PageInstance/PageInstanceSetup.xaml.vb",
+     "start": 116,
+     "end": 143
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Pages/PageSetup/PageSetupLaunch.xaml.vb",
+      "start": 147,
+      "end": 174
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "Dim RamGame As Double = Math.Round(GetRam(PageInstanceLeft.Instance), 5)",
+      "Dim RamTotal As Double = Math.Round(My.Computer.Info.TotalPhysicalMemory / 1024 / 1024 / 1024, 1)",
+      "Dim RamAvailable As Double = Math.Round(My.Computer.Info.AvailablePhysicalMemory / 1024 / 1024 / 1024, 1)",
+      "Dim RamGameActual As Double = Math.Round(Math.Min(RamGame, RamAvailable), 5)",
+      "Dim RamUsed As Double = Math.Round(RamTotal - RamAvailable, 5)",
+      "Dim RamEmpty As Double = Math.Round((RamTotal - RamUsed - RamGame).Clamp(0, 1000), 1)",
+      "'设置最大可用内存",
+      "If RamTotal <= 1.5 Then",
+      "    SliderRamCustom.MaxValue = Math.Max(Math.Floor((RamTotal - 0.3) / 0.1), 1)",
+      "ElseIf RamTotal <= 8 Then"
+     ],
+     "total": 28
+    },
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 49,
+    "tokens": 294,
+    "first": {
+     "name": "Plain Craft Launcher 2/Pages/PageInstance/PageInstanceSetup.xaml.vb",
+     "start": 260,
+     "end": 308
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Pages/PageSetup/PageSetupLaunch.xaml.vb",
+      "start": 288,
+      "end": 336
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "If Instance IsNot Nothing AndAlso Not Instance.IsLoaded Then Instance.Load()",
+      "If Instance IsNot Nothing AndAlso Instance.Modable Then",
+      "    '可安装 Mod 的版本",
+      "    Dim ModDir = DirectoryUtils.GetInfo(Instance.PathIndie & \"mods\\\")",
+      "    Dim ModCount As Integer = If(ModDir.Exists, ModDir.GetFiles.Count(Function(f) {\".jar\", \".zip\", \".litemod\"}.Contains(f.Extension.Lower)), 0)",
+      "    RamMininum = 0.5 + ModCount / 150",
+      "    RamTarget1 = 1.5 + ModCount / 90",
+      "    RamTarget2 = 2.7 + ModCount / 50",
+      "    RamTarget3 = 4.5 + ModCount / 25",
+      "ElseIf Instance IsNot Nothing AndAlso Instance.Version.HasOptiFine Then"
+     ],
+     "total": 49
+    },
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 6,
+    "tokens": 293,
+    "first": {
+     "name": "Plain Craft Launcher 2/Pages/PageLaunch/PageLaunchRight.xaml.vb",
+     "start": 49,
+     "end": 54
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Pages/PageLaunch/PageLaunchRight.xaml.vb",
+      "start": 58,
+      "end": 63
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 7,
+    "tokens": 120,
+    "first": {
+     "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+     "start": 315,
+     "end": 321
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+      "start": 652,
+      "end": 659
+     },
+     {
+      "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+      "start": 738,
+      "end": 745
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 19,
+    "tokens": 214,
+    "first": {
+     "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+     "start": 312,
+     "end": 330
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+      "start": 445,
+      "end": 464
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 18,
+    "tokens": 211,
+    "first": {
+     "name": "Plain Craft Launcher 2/Modules/Minecraft/ModDownload.vb",
+     "start": 1032,
+     "end": 1049
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Modules/Minecraft/ModDownload.vb",
+      "start": 1060,
+      "end": 1077
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 23,
+    "tokens": 208,
+    "first": {
+     "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgInput.xaml.vb",
+     "start": 52,
+     "end": 74
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgSelect.xaml.vb",
+      "start": 59,
+      "end": 81
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 18,
+    "tokens": 193,
+    "first": {
+     "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgInput.xaml.vb",
+     "start": 57,
+     "end": 74
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgText.xaml.vb",
+      "start": 55,
+      "end": 72
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "vbnet",
+    "lines": 29,
+    "tokens": 184,
+    "first": {
+     "name": "Plain Craft Launcher 2/Controls/MyPageRight.vb",
+     "start": 64,
+     "end": 92
+    },
+    "others": [
+     {
+      "name": "Plain Craft Launcher 2/Controls/MyPageRight.vb",
+      "start": 113,
+      "end": 141
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 115,
+   "lines": 44014,
+   "tokens": 284378,
+   "clones": 121,
+   "duplicatedLines": 1500,
+   "duplicatedTokens": 10993,
+   "percentage": 3.41,
+   "percentageTokens": 3.87,
+   "formats": [
+    {
+     "format": "vbnet",
+     "sources": 106,
+     "lines": 43093,
+     "clones": 121,
+     "duplicatedLines": 1500,
+     "percentage": 3.48
+    },
+    {
+     "format": "csharp",
+     "sources": 9,
+     "lines": 921,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "vbnet",
+     "lines": 10,
+     "tokens": 145,
+     "first": {
+      "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgInput.xaml.vb",
+      "start": 40,
+      "end": 49
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgSelect.xaml.vb",
+       "start": 47,
+       "end": 56
+      },
+      {
+       "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgText.xaml.vb",
+       "start": 38,
+       "end": 47
+      },
+      {
+       "name": "Plain Craft Launcher 2/Pages/PageLaunch/MyMsgLogin.xaml.vb",
+       "start": 29,
+       "end": 38
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "'动画",
+       "Opacity = 0",
+       "AniStart(AaColor(FrmMain.PanMsg, Grid.BackgroundProperty, If(MyConverter.IsWarn, New MyColor(140, 80, 0, 0), New MyColor(90, 0, 0, 0)) - FrmMain.PanMsg.Backgro…",
+       "AniStart({",
+       "    AaOpacity(Me, 1, 120, 60),",
+       "    AaDouble(Sub(i) TransformPos.Y += i, -TransformPos.Y, 300, 60, New AniEaseOutBack(AniEasePower.Weak)),",
+       "    AaDouble(Sub(i) TransformRotate.Angle += i, -TransformRotate.Angle, 300, 60, New AniEaseOutFluent(AniEasePower.Weak))",
+       "}, \"MyMsgBox \" & Uuid)",
+       "'记录日志",
+       "Logger.Info($\"输入弹窗：{LabTitle.Text}\")"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "'动画",
+       "Opacity = 0",
+       "AniStart(AaColor(FrmMain.PanMsg, Grid.BackgroundProperty, If(MyConverter.IsWarn, New MyColor(140, 80, 0, 0), New MyColor(90, 0, 0, 0)) - FrmMain.PanMsg.Backgro…",
+       "AniStart({",
+       "    AaOpacity(Me, 1, 120, 60),",
+       "    AaDouble(Sub(i) TransformPos.Y += i, -TransformPos.Y, 300, 60, New AniEaseOutBack(AniEasePower.Weak)),",
+       "    AaDouble(Sub(i) TransformRotate.Angle += i, -TransformRotate.Angle, 300, 60, New AniEaseOutFluent(AniEasePower.Weak))",
+       "}, \"MyMsgBox \" & Uuid)",
+       "'记录日志",
+       "Logger.Info($\"选择弹窗：{LabTitle.Text}\")"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 28,
+     "tokens": 398,
+     "first": {
+      "name": "Plain Craft Launcher 2/Pages/PageInstance/PageInstanceSetup.xaml.vb",
+      "start": 116,
+      "end": 143
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Pages/PageSetup/PageSetupLaunch.xaml.vb",
+       "start": 147,
+       "end": 174
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "Dim RamGame As Double = Math.Round(GetRam(PageInstanceLeft.Instance), 5)",
+       "Dim RamTotal As Double = Math.Round(My.Computer.Info.TotalPhysicalMemory / 1024 / 1024 / 1024, 1)",
+       "Dim RamAvailable As Double = Math.Round(My.Computer.Info.AvailablePhysicalMemory / 1024 / 1024 / 1024, 1)",
+       "Dim RamGameActual As Double = Math.Round(Math.Min(RamGame, RamAvailable), 5)",
+       "Dim RamUsed As Double = Math.Round(RamTotal - RamAvailable, 5)",
+       "Dim RamEmpty As Double = Math.Round((RamTotal - RamUsed - RamGame).Clamp(0, 1000), 1)",
+       "'设置最大可用内存",
+       "If RamTotal <= 1.5 Then",
+       "    SliderRamCustom.MaxValue = Math.Max(Math.Floor((RamTotal - 0.3) / 0.1), 1)",
+       "ElseIf RamTotal <= 8 Then"
+      ],
+      "total": 28
+     },
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 49,
+     "tokens": 294,
+     "first": {
+      "name": "Plain Craft Launcher 2/Pages/PageInstance/PageInstanceSetup.xaml.vb",
+      "start": 260,
+      "end": 308
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Pages/PageSetup/PageSetupLaunch.xaml.vb",
+       "start": 288,
+       "end": 336
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "If Instance IsNot Nothing AndAlso Not Instance.IsLoaded Then Instance.Load()",
+       "If Instance IsNot Nothing AndAlso Instance.Modable Then",
+       "    '可安装 Mod 的版本",
+       "    Dim ModDir = DirectoryUtils.GetInfo(Instance.PathIndie & \"mods\\\")",
+       "    Dim ModCount As Integer = If(ModDir.Exists, ModDir.GetFiles.Count(Function(f) {\".jar\", \".zip\", \".litemod\"}.Contains(f.Extension.Lower)), 0)",
+       "    RamMininum = 0.5 + ModCount / 150",
+       "    RamTarget1 = 1.5 + ModCount / 90",
+       "    RamTarget2 = 2.7 + ModCount / 50",
+       "    RamTarget3 = 4.5 + ModCount / 25",
+       "ElseIf Instance IsNot Nothing AndAlso Instance.Version.HasOptiFine Then"
+      ],
+      "total": 49
+     },
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 6,
+     "tokens": 293,
+     "first": {
+      "name": "Plain Craft Launcher 2/Pages/PageLaunch/PageLaunchRight.xaml.vb",
+      "start": 49,
+      "end": 54
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Pages/PageLaunch/PageLaunchRight.xaml.vb",
+       "start": 58,
+       "end": 63
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 7,
+     "tokens": 120,
+     "first": {
+      "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+      "start": 315,
+      "end": 321
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+       "start": 652,
+       "end": 659
+      },
+      {
+       "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+       "start": 738,
+       "end": 745
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 19,
+     "tokens": 214,
+     "first": {
+      "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+      "start": 312,
+      "end": 330
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+       "start": 445,
+       "end": 464
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 18,
+     "tokens": 211,
+     "first": {
+      "name": "Plain Craft Launcher 2/Modules/Minecraft/ModDownload.vb",
+      "start": 1032,
+      "end": 1049
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Modules/Minecraft/ModDownload.vb",
+       "start": 1060,
+       "end": 1077
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 23,
+     "tokens": 208,
+     "first": {
+      "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgInput.xaml.vb",
+      "start": 52,
+      "end": 74
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgSelect.xaml.vb",
+       "start": 59,
+       "end": 81
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 18,
+     "tokens": 193,
+     "first": {
+      "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgInput.xaml.vb",
+      "start": 57,
+      "end": 74
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Controls/MyMsg/MyMsgText.xaml.vb",
+       "start": 55,
+       "end": 72
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "vbnet",
+     "lines": 29,
+     "tokens": 184,
+     "first": {
+      "name": "Plain Craft Launcher 2/Controls/MyPageRight.vb",
+      "start": 64,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "Plain Craft Launcher 2/Controls/MyPageRight.vb",
+       "start": 113,
+       "end": 141
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 49.6,
+   "grade": "D",
+   "size": {
+    "lines": 44014,
+    "files": 115,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.4,
+     "adjusted": 3.4,
+     "lines": 1500,
+     "halfLife": 8.5,
+     "formats": [
+      "vbnet",
+      "csharp"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 75.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 83.8,
+     "adjusted": 81,
+     "lines": 36865,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 32.5
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 11084,
+   "mean": 96.4,
+   "files": [
+    {
+     "path": "Plain Craft Launcher 2/Modules/Minecraft/ModLaunch.vb",
+     "complexity": 628,
+     "lines": 2221,
+     "bytes": 122729
+    },
+    {
+     "path": "Plain Craft Launcher 2/Modules/Minecraft/ModMinecraft.vb",
+     "complexity": 625,
+     "lines": 2153,
+     "bytes": 115701
+    },
+    {
+     "path": "Plain Craft Launcher 2/Pages/PageDownload/ModDownloadLib.vb",
+     "complexity": 505,
+     "lines": 2176,
+     "bytes": 123323
+    },
+    {
+     "path": "Plain Craft Launcher 2/Modules/Base/ModNet.vb",
+     "complexity": 488,
+     "lines": 1933,
+     "bytes": 95212
+    },
+    {
+     "path": "Plain Craft Launcher 2/FormMain.xaml.vb",
+     "complexity": 486,
+     "lines": 1727,
+     "bytes": 88345
+    },
+    {
+     "path": "Plain Craft Launcher 2/Modules/Minecraft/ModCrash.vb",
+     "complexity": 482,
+     "lines": 1122,
+     "bytes": 77776
+    },
+    {
+     "path": "Plain Craft Launcher 2/Pages/PageDownload/PageDownloadModify.vb",
+     "complexity": 365,
+     "lines": 727,
+     "bytes": 49044
+    },
+    {
+     "path": "Plain Craft Launcher 2/Pages/PageDownload/PageDownloadInstall.xaml.vb",
+     "complexity": 325,
+     "lines": 1199,
+     "bytes": 56564
+    },
+    {
+     "path": "Plain Craft Launcher 2/Modules/Resource/ResourceProject.vb",
+     "complexity": 313,
+     "lines": 711,
+     "bytes": 36193
+    },
+    {
+     "path": "Plain Craft Launcher 2/Modules/Minecraft/ModModpack.vb",
+     "complexity": 264,
+     "lines": 866,
+     "bytes": 55414
+    }
+   ]
+  },
+  "deadCode": null
+ }
+}
