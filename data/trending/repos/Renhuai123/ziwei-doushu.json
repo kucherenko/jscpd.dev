@@ -1,0 +1,867 @@
+{
+ "name": "Renhuai123/ziwei-doushu",
+ "url": "https://github.com/Renhuai123/ziwei-doushu",
+ "appearances": [
+  {
+   "date": "2026-10-24",
+   "rank": 4,
+   "stars": 7004,
+   "starsToday": 546,
+   "headSha": "e478393ad6c865ad6270e978a3164d2f2cb5315b",
+   "sources": 108,
+   "lines": 18941,
+   "clones": 27,
+   "duplicatedLines": 283,
+   "percentage": 1.49,
+   "codePercentage": 1.12,
+   "codeSources": 62,
+   "healthScore": 47.8,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-24T05:27:30.727Z",
+  "name": "Renhuai123/ziwei-doushu",
+  "url": "https://github.com/Renhuai123/ziwei-doushu",
+  "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+  "language": "TypeScript",
+  "stars": 7004,
+  "starsToday": 546,
+  "defaultBranch": "main",
+  "headSha": "e478393ad6c865ad6270e978a3164d2f2cb5315b",
+  "durationMs": 1028,
+  "total": {
+   "sources": 108,
+   "lines": 18941,
+   "tokens": 249350,
+   "clones": 27,
+   "duplicatedLines": 283,
+   "duplicatedTokens": 4521,
+   "percentage": 1.49,
+   "percentageTokens": 1.81
+  },
+  "formats": [
+   {
+    "format": "tsx",
+    "sources": 30,
+    "lines": 6681,
+    "clones": 16,
+    "duplicatedLines": 150,
+    "percentage": 2.25
+   },
+   {
+    "format": "typescript",
+    "sources": 44,
+    "lines": 8430,
+    "clones": 11,
+    "duplicatedLines": 133,
+    "percentage": 1.58
+   },
+   {
+    "format": "markdown",
+    "sources": 24,
+    "lines": 3115,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "css",
+    "sources": 1,
+    "lines": 436,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "yaml",
+    "sources": 5,
+    "lines": 176,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 2,
+    "lines": 78,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 1,
+    "lines": 21,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 4,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 435,
+    "first": {
+     "name": "lib/ziwei/dst-cn.ts",
+     "start": 33,
+     "end": 42
+    },
+    "others": [
+     {
+      "name": "scripts/regression/dst-cn.test.ts",
+      "start": 14,
+      "end": 14
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "const XLS_CN: readonly (readonly [number, number, number, number, number])[] = [",
+      "  [1935, 5, 1, 9, 30], [1936, 5, 1, 9, 30], [1937, 5, 1, 9, 30], [1938, 5, 1, 9, 30],",
+      "  [1939, 5, 1, 9, 30], [1940, 5, 1, 9, 30], [1941, 5, 1, 9, 30], [1942, 5, 1, 9, 30],",
+      "  [1943, 5, 1, 9, 30], [1944, 5, 1, 9, 30], [1945, 5, 1, 9, 30], [1946, 5, 1, 9, 30],",
+      "  [1947, 5, 1, 9, 30], [1948, 5, 1, 9, 30], [1949, 5, 1, 9, 30], [1950, 5, 1, 9, 30],",
+      "  [1951, 5, 1, 9, 30], [1952, 3, 1, 10, 31], [1953, 4, 1, 10, 31], [1954, 4, 1, 10, 31],",
+      "  [1955, 5, 1, 9, 30], [1956, 5, 1, 9, 30], [1957, 4, 1, 9, 30], [1958, 4, 1, 9, 30],",
+      "  [1959, 4, 1, 9, 30], [1960, 6, 1, 9, 30], [1961, 6, 1, 9, 30], [1974, 4, 1, 10, 31],",
+      "  [1975, 4, 1, 10, 31], [1979, 7, 1, 9, 30], [1986, 5, 4, 9, 14], [1987, 4, 12, 9, 13],",
+      "  [1988, 4, 10, 9, 11], [1989, 4, 16, 9, 17], [1990, 4, 15, 9, 16], [1991, 4, 14, 9, 15],"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "const ORACLE_XLS_CN: number[][] = [[1935, 5, 1, 9, 30], [1936, 5, 1, 9, 30], [1937, 5, 1, 9, 30], [1938, 5, 1, 9, 30], [1939, 5, 1, 9, 30], [1940, 5, 1, 9, 30]…"
+     ],
+     "total": 1
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 16,
+    "tokens": 421,
+    "first": {
+     "name": "lib/ziwei/school-data.ts",
+     "start": 141,
+     "end": 156
+    },
+    "others": [
+     {
+      "name": "lib/ziwei/school-tables.generated.ts",
+      "start": 47,
+      "end": 47
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "export const SCHOOL_BRIGHTNESS_QS: number[][] = [",
+      "  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],     // [0] 占位",
+      "  [0, 5, 1, 2, 2, 3, 2, 1, 1, 2, 2, 3, 2],     // 紫微",
+      "  [0, 1, 7, 3, 2, 4, 5, 1, 7, 3, 2, 4, 5],     // 天机",
+      "  [0, 7, 6, 2, 1, 2, 2, 2, 3, 3, 5, 6, 7],     // 太阳",
+      "  [0, 2, 1, 3, 4, 1, 5, 2, 1, 3, 4, 1, 5],     // 武曲",
+      "  [0, 2, 6, 4, 5, 5, 1, 7, 6, 2, 5, 5, 1],     // 天同",
+      "  [0, 5, 4, 1, 5, 4, 7, 5, 4, 1, 5, 4, 7],     // 廉贞",
+      "  [0, 1, 1, 1, 3, 1, 3, 2, 1, 3, 2, 1, 3],     // 天府",
+      "  [0, 1, 1, 2, 7, 7, 7, 6, 6, 4, 2, 2, 1],     // 太阴"
+     ],
+     "total": 16
+    },
+    "excerptSecond": {
+     "lines": [
+      "SB_QS: [[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,5,1,2,2,3,2,1,1,2,2,3,2],[0,1,7,3,2,4,5,1,7,3,2,4,5],[0,7,6,2,1,2,2,2,3,3,5,6,7],[0,2,1,3,4,1,5,2,1,3,4,1,5],[0,2,6,4,5,…"
+     ],
+     "total": 1
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 16,
+    "tokens": 421,
+    "first": {
+     "name": "lib/ziwei/school-data.ts",
+     "start": 160,
+     "end": 175
+    },
+    "others": [
+     {
+      "name": "lib/ziwei/school-tables.generated.ts",
+      "start": 48,
+      "end": 48
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "export const SCHOOL_BRIGHTNESS_XD1: number[][] = [",
+      "  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],",
+      "  [0, 5, 1, 1, 2, 3, 2, 1, 1, 2, 2, 3, 2],     // 紫微",
+      "  [0, 1, 7, 3, 2, 4, 5, 1, 7, 3, 2, 4, 5],     // 天机",
+      "  [0, 7, 6, 2, 1, 2, 2, 1, 3, 4, 5, 7, 7],     // 太阳",
+      "  [0, 2, 1, 3, 4, 1, 5, 2, 1, 3, 4, 1, 5],     // 武曲",
+      "  [0, 2, 6, 4, 1, 5, 1, 7, 6, 2, 5, 5, 1],     // 天同",
+      "  [0, 5, 4, 1, 5, 4, 7, 5, 4, 1, 5, 4, 7],     // 廉贞",
+      "  [0, 1, 1, 1, 3, 2, 3, 2, 1, 3, 2, 2, 3],     // 天府",
+      "  [0, 1, 1, 6, 7, 7, 7, 7, 5, 4, 2, 2, 1],     // 太阴"
+     ],
+     "total": 16
+    },
+    "excerptSecond": {
+     "lines": [
+      "SB_XD1: [[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,5,1,1,2,3,2,1,1,2,2,3,2],[0,1,7,3,2,4,5,1,7,3,2,4,5],[0,7,6,2,1,2,2,1,3,4,5,7,7],[0,2,1,3,4,1,5,2,1,3,4,1,5],[0,2,6,4,1…"
+     ],
+     "total": 1
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 16,
+    "tokens": 421,
+    "first": {
+     "name": "lib/ziwei/school-data.ts",
+     "start": 179,
+     "end": 194
+    },
+    "others": [
+     {
+      "name": "lib/ziwei/school-tables.generated.ts",
+      "start": 49,
+      "end": 49
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 16,
+    "tokens": 421,
+    "first": {
+     "name": "lib/ziwei/school-data.ts",
+     "start": 198,
+     "end": 213
+    },
+    "others": [
+     {
+      "name": "lib/ziwei/school-tables.generated.ts",
+      "start": 50,
+      "end": 50
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 14,
+    "tokens": 364,
+    "first": {
+     "name": "lib/ziwei/school-data.ts",
+     "start": 369,
+     "end": 382
+    },
+    "others": [
+     {
+      "name": "lib/ziwei/school-tables.generated.ts",
+      "start": 52,
+      "end": 52
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 14,
+    "tokens": 364,
+    "first": {
+     "name": "lib/ziwei/school-data.ts",
+     "start": 386,
+     "end": 399
+    },
+    "others": [
+     {
+      "name": "lib/ziwei/school-tables.generated.ts",
+      "start": 53,
+      "end": 53
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "tsx",
+    "lines": 13,
+    "tokens": 223,
+    "first": {
+     "name": "app/privacy/page.tsx",
+     "start": 3,
+     "end": 15
+    },
+    "others": [
+     {
+      "name": "app/terms/page.tsx",
+      "start": 3,
+      "end": 15
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "tsx",
+    "lines": 17,
+    "tokens": 134,
+    "first": {
+     "name": "components/ChatPanel.tsx",
+     "start": 47,
+     "end": 63
+    },
+    "others": [
+     {
+      "name": "components/InsightPanel.tsx",
+      "start": 282,
+      "end": 297
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 132,
+    "first": {
+     "name": "lib/ziwei/school-data.ts",
+     "start": 102,
+     "end": 113
+    },
+    "others": [
+     {
+      "name": "lib/ziwei/school-tables.generated.ts",
+      "start": 9,
+      "end": 9
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 62,
+   "lines": 14468,
+   "tokens": 98293,
+   "clones": 18,
+   "duplicatedLines": 162,
+   "duplicatedTokens": 1446,
+   "percentage": 1.12,
+   "percentageTokens": 1.47,
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 30,
+     "lines": 6681,
+     "clones": 16,
+     "duplicatedLines": 150,
+     "percentage": 2.25
+    },
+    {
+     "format": "typescript",
+     "sources": 32,
+     "lines": 7787,
+     "clones": 2,
+     "duplicatedLines": 12,
+     "percentage": 0.15
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 13,
+     "tokens": 223,
+     "first": {
+      "name": "app/privacy/page.tsx",
+      "start": 3,
+      "end": 15
+     },
+     "others": [
+      {
+       "name": "app/terms/page.tsx",
+       "start": 3,
+       "end": 15
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "export default function PrivacyPage() {",
+       "  return (",
+       "    <>",
+       "      <header style={{ position: 'sticky', top: 0, zIndex: 50, background: 'var(--bg-0)', borderBottom: '1px solid var(--bdr)', padding: '14px 24px', display: …",
+       "        <a href=\"/\" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: 'var(--tx-3)', textDecoration: 'none' }}>",
+       "          <span style={{ fontSize: '16px' }}>‹</span>",
+       "          <span>返回首页</span>",
+       "        </a>",
+       "        <div style={{ width: '1px', height: '20px', background: 'var(--bdr-med)' }} />",
+       "        <span style={{ fontSize: '12px', color: 'var(--ac)', letterSpacing: '0.2em' }}>紫微命盘</span>"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 17,
+     "tokens": 134,
+     "first": {
+      "name": "components/ChatPanel.tsx",
+      "start": 47,
+      "end": 63
+     },
+     "others": [
+      {
+       "name": "components/InsightPanel.tsx",
+       "start": 282,
+       "end": 297
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  body: JSON.stringify({ chart, messages: [...messages, userMsg] }),",
+       "});",
+       "",
+       "if (res.status === 404) throw new Error('api-missing');",
+       "if (!res.ok) throw new Error('请求失败');",
+       "if (!res.body) throw new Error('无响应流');",
+       "",
+       "const reader = res.body.getReader();",
+       "const decoder = new TextDecoder();",
+       "let assistantText = '';"
+      ],
+      "total": 17
+     },
+     "excerptSecond": {
+      "lines": [
+       "  body: JSON.stringify({ chart, messages: apiMessages }),",
+       "});",
+       "if (res.status === 404) throw new Error('api-missing');",
+       "if (!res.ok) throw new Error('请求失败');",
+       "if (!res.body) throw new Error('无响应流');",
+       "",
+       "const reader = res.body.getReader();",
+       "const decoder = new TextDecoder();",
+       "let assistantText = '';",
+       ""
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 12,
+     "tokens": 103,
+     "first": {
+      "name": "app/heming/page.tsx",
+      "start": 125,
+      "end": 136
+     },
+     "others": [
+      {
+       "name": "components/InsightPanel.tsx",
+       "start": 292,
+       "end": 303
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "let text = '';",
+       "",
+       "while (true) {",
+       "  const { done, value } = await reader.read();",
+       "  if (done) break;",
+       "  const chunk = decoder.decode(value, { stream: true });",
+       "  for (const line of chunk.split('\\n')) {",
+       "    if (!line.startsWith('data: ')) continue;",
+       "    const data = line.slice(6);",
+       "    if (data === '[DONE]') break;"
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 6,
+     "tokens": 51,
+     "first": {
+      "name": "components/BirthForm.tsx",
+      "start": 239,
+      "end": 244
+     },
+     "others": [
+      {
+       "name": "components/BirthForm.tsx",
+       "start": 288,
+       "end": 293
+      },
+      {
+       "name": "components/BirthForm.tsx",
+       "start": 343,
+       "end": 348
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 10,
+     "tokens": 93,
+     "first": {
+      "name": "app/library/[book]/page.tsx",
+      "start": 26,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "app/library/search/page.tsx",
+       "start": 15,
+       "end": 24
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 8,
+     "tokens": 91,
+     "first": {
+      "name": "app/page.tsx",
+      "start": 874,
+      "end": 881
+     },
+     "others": [
+      {
+       "name": "app/page.tsx",
+       "start": 933,
+       "end": 940
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 16,
+     "tokens": 89,
+     "first": {
+      "name": "components/ScrollIntro.tsx",
+      "start": 240,
+      "end": 255
+     },
+     "others": [
+      {
+       "name": "components/ScrollIntro.tsx",
+       "start": 270,
+       "end": 285
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 10,
+     "tokens": 86,
+     "first": {
+      "name": "app/knowledge/[star]/[topic]/page.tsx",
+      "start": 105,
+      "end": 114
+     },
+     "others": [
+      {
+       "name": "app/knowledge/page.tsx",
+       "start": 21,
+       "end": 30
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 8,
+     "tokens": 71,
+     "first": {
+      "name": "components/ChartSummary.tsx",
+      "start": 11,
+      "end": 18
+     },
+     "others": [
+      {
+       "name": "components/PatternsCard.tsx",
+       "start": 6,
+       "end": 13
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 6,
+     "tokens": 69,
+     "first": {
+      "name": "app/knowledge/page.tsx",
+      "start": 19,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "app/library/page.tsx",
+       "start": 17,
+       "end": 22
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 47.8,
+   "grade": "D",
+   "size": {
+    "lines": 15111,
+    "files": 74,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.9,
+     "adjusted": 2.1,
+     "lines": 283,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "tsx"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 84.5
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 19.4,
+     "adjusted": 17.5,
+     "lines": 2930,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 19.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 32.2,
+     "adjusted": 30.9,
+     "lines": 4872,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 65.1
+    }
+   ]
+  },
+  "complexity": {
+   "total": 2028,
+   "mean": 27.4,
+   "files": [
+    {
+     "path": "lib/ziwei/patterns.ts",
+     "complexity": 426,
+     "lines": 1119,
+     "bytes": 54637
+    },
+    {
+     "path": "components/BirthForm.tsx",
+     "complexity": 167,
+     "lines": 495,
+     "bytes": 21223
+    },
+    {
+     "path": "lib/ziwei/algorithm.ts",
+     "complexity": 166,
+     "lines": 662,
+     "bytes": 36104
+    },
+    {
+     "path": "app/page.tsx",
+     "complexity": 150,
+     "lines": 1191,
+     "bytes": 67117
+    },
+    {
+     "path": "app/heming/page.tsx",
+     "complexity": 81,
+     "lines": 369,
+     "bytes": 15792
+    },
+    {
+     "path": "components/InsightPanel.tsx",
+     "complexity": 71,
+     "lines": 469,
+     "bytes": 16391
+    },
+    {
+     "path": "lib/ziwei/school-config.ts",
+     "complexity": 55,
+     "lines": 291,
+     "bytes": 15854
+    },
+    {
+     "path": "lib/ziwei/sihua.ts",
+     "complexity": 50,
+     "lines": 276,
+     "bytes": 10203
+    },
+    {
+     "path": "components/PalaceCell.tsx",
+     "complexity": 45,
+     "lines": 201,
+     "bytes": 6817
+    },
+    {
+     "path": "lib/ziwei/yunxian-context.ts",
+     "complexity": 43,
+     "lines": 124,
+     "bytes": 5430
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 19.36,
+   "findings": 55,
+   "files": 77,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 14
+    },
+    {
+     "category": "unused-export",
+     "count": 33
+    },
+    {
+     "category": "unused-symbol",
+     "count": 4
+    },
+    {
+     "category": "unused-import",
+     "count": 4
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "components/StarDetailPanel.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 332
+    },
+    {
+     "category": "unused-file",
+     "path": "lib/ziwei/heming-knowledge.ts",
+     "name": "",
+     "line": 1,
+     "lines": 329
+    },
+    {
+     "category": "unused-file",
+     "path": "components/ShareCardCanvas.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 300
+    },
+    {
+     "category": "unused-file",
+     "path": "lib/ziwei/sihua.ts",
+     "name": "",
+     "line": 1,
+     "lines": 276
+    },
+    {
+     "category": "unused-file",
+     "path": "components/ChartSummary.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 265
+    },
+    {
+     "category": "unused-file",
+     "path": "components/ChatPanel.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 212
+    },
+    {
+     "category": "unused-file",
+     "path": "lib/ziwei/shier-shen.ts",
+     "name": "",
+     "line": 1,
+     "lines": 164
+    },
+    {
+     "category": "unused-file",
+     "path": "lib/ziwei/true-solar-time.ts",
+     "name": "",
+     "line": 1,
+     "lines": 160
+    },
+    {
+     "category": "unused-file",
+     "path": "components/ShareModal.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 148
+    },
+    {
+     "category": "unused-file",
+     "path": "lib/ziwei/yunxian-context.ts",
+     "name": "",
+     "line": 1,
+     "lines": 124
+    }
+   ]
+  }
+ }
+}

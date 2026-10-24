@@ -7,19 +7,20 @@
   "2026-10-20",
   "2026-10-21",
   "2026-10-22",
-  "2026-10-23"
+  "2026-10-23",
+  "2026-10-24"
  ],
  "summary": {
-  "repos": 17,
-  "sources": 16855,
-  "lines": 4211797,
-  "tokens": 27353820,
-  "clones": 22934,
-  "duplicatedLines": 544257,
-  "duplicatedTokens": 3211096,
-  "percentage": 12.92,
-  "percentageTokens": 11.74,
-  "avgPercentage": 11.6,
+  "repos": 21,
+  "sources": 19384,
+  "lines": 5292313,
+  "tokens": 34464067,
+  "clones": 30439,
+  "duplicatedLines": 647901,
+  "duplicatedTokens": 3897443,
+  "percentage": 12.24,
+  "percentageTokens": 11.31,
+  "avgPercentage": 10.6,
   "medianPercentage": 8.19,
   "mostDuplicated": {
    "name": "shiyu-coder/Kronos",
@@ -32,17 +33,17 @@
    "percentage": 0
   },
   "mostClones": {
-   "name": "akitaonrails/ai-memory",
-   "clones": 5012,
-   "percentage": 9.75
+   "name": "NVIDIA/OpenShell",
+   "clones": 7278,
+   "percentage": 11.12
   },
-  "codeRepos": 13,
-  "codeSources": 4147,
-  "codeLines": 1657193,
-  "codeClones": 8389,
-  "codeDuplicatedLines": 152961,
-  "codePercentage": 9.23,
-  "codeMedianPercentage": 3.43,
+  "codeRepos": 16,
+  "codeSources": 5044,
+  "codeLines": 2307205,
+  "codeClones": 13852,
+  "codeDuplicatedLines": 216851,
+  "codePercentage": 9.4,
+  "codeMedianPercentage": 5.82,
   "codeMostDuplicated": {
    "name": "fastapi/fastapi",
    "clones": 406,
@@ -53,8 +54,8 @@
    "clones": 48,
    "percentage": 0.99
   },
-  "generatedFiles": 8,
-  "avgHealth": 52.61,
+  "generatedFiles": 13,
+  "avgHealth": 52.96,
   "healthiest": {
    "name": "withmarbleapp/os-taxonomy",
    "score": 82,
@@ -68,19 +69,27 @@
   "languages": [
    {
     "language": "Python",
-    "repos": 9,
-    "clones": 16370,
-    "lines": 3205407,
-    "duplicatedLines": 443390,
-    "percentage": 13.83
+    "repos": 11,
+    "clones": 16570,
+    "lines": 3364056,
+    "duplicatedLines": 446301,
+    "percentage": 13.27
    },
    {
     "language": "TypeScript",
+    "repos": 3,
+    "clones": 373,
+    "lines": 163869,
+    "duplicatedLines": 16998,
+    "percentage": 10.37
+   },
+   {
+    "language": "Rust",
     "repos": 2,
-    "clones": 346,
-    "lines": 144928,
-    "duplicatedLines": 16715,
-    "percentage": 11.53
+    "clones": 12290,
+    "lines": 1542399,
+    "duplicatedLines": 162806,
+    "percentage": 10.56
    },
    {
     "language": "JavaScript",
@@ -89,14 +98,6 @@
     "lines": 28918,
     "duplicatedLines": 468,
     "percentage": 1.62
-   },
-   {
-    "language": "Rust",
-    "repos": 1,
-    "clones": 5012,
-    "lines": 639473,
-    "duplicatedLines": 62356,
-    "percentage": 9.75
    },
    {
     "language": "Kotlin",
@@ -130,11 +131,11 @@
    "url": "https://github.com/cloudflare/security-audit-skill",
    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
    "language": "JavaScript",
-   "stars": 39976,
+   "stars": 42490,
    "starsToday": 2979,
-   "days": 3,
+   "days": 4,
    "rank": 1,
-   "date": "2026-10-23",
+   "date": "2026-10-24",
    "total": {
     "sources": 38,
     "lines": 5713,
@@ -271,6 +272,44 @@
    }
   },
   {
+   "name": "NVIDIA/OpenShell",
+   "url": "https://github.com/NVIDIA/OpenShell",
+   "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+   "language": "Rust",
+   "stars": 18924,
+   "starsToday": 1119,
+   "days": 1,
+   "rank": 3,
+   "date": "2026-10-24",
+   "total": {
+    "sources": 2008,
+    "lines": 902926,
+    "clones": 7278,
+    "duplicatedLines": 100450,
+    "percentage": 11.12
+   },
+   "code": {
+    "sources": 801,
+    "lines": 624711,
+    "clones": 5378,
+    "duplicatedLines": 62303,
+    "percentage": 9.97,
+    "generated": 5
+   },
+   "topFinding": {
+    "format": "rust",
+    "lines": 380,
+    "copies": 2,
+    "kind": "code",
+    "first": {
+     "name": "crates/openshell-sandbox/src/mechanistic_mapper.rs",
+     "start": 157,
+     "end": 536
+    },
+    "scope": "code"
+   }
+  },
+  {
    "name": "shiyu-coder/Kronos",
    "url": "https://github.com/shiyu-coder/Kronos",
    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
@@ -335,6 +374,44 @@
      "name": "crates/ai-memory-cli/src/commands/serve.rs",
      "start": 7321,
      "end": 7331
+    },
+    "scope": "code"
+   }
+  },
+  {
+   "name": "anthropics/knowledge-work-plugins",
+   "url": "https://github.com/anthropics/knowledge-work-plugins",
+   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+   "language": "Python",
+   "stars": 32334,
+   "starsToday": 635,
+   "days": 3,
+   "rank": 1,
+   "date": "2026-10-24",
+   "total": {
+    "sources": 2142,
+    "lines": 248818,
+    "clones": 604,
+    "duplicatedLines": 9275,
+    "percentage": 3.73
+   },
+   "code": {
+    "sources": 27,
+    "lines": 9894,
+    "clones": 12,
+    "duplicatedLines": 115,
+    "percentage": 1.16,
+    "generated": 0
+   },
+   "topFinding": {
+    "format": "python",
+    "lines": 9,
+    "copies": 3,
+    "kind": "code",
+    "first": {
+     "name": "bio-research/skills/nextflow-development/scripts/utils/ncbi_utils.py",
+     "start": 118,
+     "end": 126
     },
     "scope": "code"
    }
@@ -411,6 +488,44 @@
      "name": "headroom/providers/opencode/_dist/index.js",
      "start": 4057,
      "end": 4066
+    },
+    "scope": "code"
+   }
+  },
+  {
+   "name": "Renhuai123/ziwei-doushu",
+   "url": "https://github.com/Renhuai123/ziwei-doushu",
+   "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+   "language": "TypeScript",
+   "stars": 7004,
+   "starsToday": 546,
+   "days": 1,
+   "rank": 4,
+   "date": "2026-10-24",
+   "total": {
+    "sources": 108,
+    "lines": 18941,
+    "clones": 27,
+    "duplicatedLines": 283,
+    "percentage": 1.49
+   },
+   "code": {
+    "sources": 62,
+    "lines": 14468,
+    "clones": 18,
+    "duplicatedLines": 162,
+    "percentage": 1.12,
+    "generated": 0
+   },
+   "topFinding": {
+    "format": "tsx",
+    "lines": 13,
+    "copies": 2,
+    "kind": "code",
+    "first": {
+     "name": "app/privacy/page.tsx",
+     "start": 3,
+     "end": 15
     },
     "scope": "code"
    }
@@ -530,44 +645,6 @@
    }
   },
   {
-   "name": "anthropics/knowledge-work-plugins",
-   "url": "https://github.com/anthropics/knowledge-work-plugins",
-   "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-   "language": "Python",
-   "stars": 31734,
-   "starsToday": 303,
-   "days": 2,
-   "rank": 1,
-   "date": "2026-10-23",
-   "total": {
-    "sources": 2142,
-    "lines": 248818,
-    "clones": 604,
-    "duplicatedLines": 9275,
-    "percentage": 3.73
-   },
-   "code": {
-    "sources": 27,
-    "lines": 9894,
-    "clones": 12,
-    "duplicatedLines": 115,
-    "percentage": 1.16,
-    "generated": 0
-   },
-   "topFinding": {
-    "format": "python",
-    "lines": 9,
-    "copies": 3,
-    "kind": "code",
-    "first": {
-     "name": "bio-research/skills/nextflow-development/scripts/utils/ncbi_utils.py",
-     "start": 118,
-     "end": 126
-    },
-    "scope": "code"
-   }
-  },
-  {
    "name": "withmarbleapp/os-taxonomy",
    "url": "https://github.com/withmarbleapp/os-taxonomy",
    "description": "",
@@ -586,6 +663,37 @@
    },
    "code": null,
    "topFinding": null
+  },
+  {
+   "name": "SnailSploit/Claude-Red",
+   "url": "https://github.com/SnailSploit/Claude-Red",
+   "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+   "language": "Python",
+   "stars": 8612,
+   "starsToday": 226,
+   "days": 1,
+   "rank": 5,
+   "date": "2026-10-24",
+   "total": {
+    "sources": 347,
+    "lines": 143424,
+    "clones": 106,
+    "duplicatedLines": 1060,
+    "percentage": 0.74
+   },
+   "code": null,
+   "topFinding": {
+    "format": "markdown",
+    "lines": 16,
+    "copies": 25,
+    "kind": "docs",
+    "first": {
+     "name": "Skills/ai/offensive-ai-security/SKILL.md",
+     "start": 13,
+     "end": 28
+    },
+    "scope": "all"
+   }
   },
   {
    "name": "anthropics/claude-code",
@@ -621,6 +729,44 @@
      "name": "plugins/hookify/hooks/posttooluse.py",
      "start": 4,
      "end": 31
+    },
+    "scope": "code"
+   }
+  },
+  {
+   "name": "OpenBMB/VoxCPM",
+   "url": "https://github.com/OpenBMB/VoxCPM",
+   "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+   "language": "Python",
+   "stars": 40351,
+   "starsToday": 150,
+   "days": 1,
+   "rank": 6,
+   "date": "2026-10-24",
+   "total": {
+    "sources": 66,
+    "lines": 15225,
+    "clones": 94,
+    "duplicatedLines": 1851,
+    "percentage": 12.16
+   },
+   "code": {
+    "sources": 34,
+    "lines": 10833,
+    "clones": 67,
+    "duplicatedLines": 1425,
+    "percentage": 13.15,
+    "generated": 0
+   },
+   "topFinding": {
+    "format": "python",
+    "lines": 107,
+    "copies": 2,
+    "kind": "code",
+    "first": {
+     "name": "src/voxcpm/modules/locdit/local_dit.py",
+     "start": 1,
+     "end": 107
     },
     "scope": "code"
    }
