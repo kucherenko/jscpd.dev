@@ -1,0 +1,961 @@
+{
+ "name": "pollen-robotics/microduck",
+ "url": "https://github.com/pollen-robotics/microduck",
+ "appearances": [
+  {
+   "date": "2026-10-25",
+   "rank": 5,
+   "stars": 11108,
+   "starsToday": 319,
+   "headSha": "942e58e3aa6dbb28e7037203fff11866122c7567",
+   "sources": 438,
+   "lines": 196774,
+   "clones": 477,
+   "duplicatedLines": 5342,
+   "percentage": 2.71,
+   "codePercentage": 2.19,
+   "codeSources": 241,
+   "healthScore": 53.6,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-25",
+  "generatedAt": "2026-10-25T05:27:36.791Z",
+  "name": "pollen-robotics/microduck",
+  "url": "https://github.com/pollen-robotics/microduck",
+  "description": "A Tiny biped duck robot 🦆",
+  "language": "Rust",
+  "stars": 11108,
+  "starsToday": 319,
+  "defaultBranch": "main",
+  "headSha": "942e58e3aa6dbb28e7037203fff11866122c7567",
+  "durationMs": 1741,
+  "total": {
+   "sources": 438,
+   "lines": 196774,
+   "tokens": 1278575,
+   "clones": 477,
+   "duplicatedLines": 5342,
+   "duplicatedTokens": 40848,
+   "percentage": 2.71,
+   "percentageTokens": 3.19
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 218,
+    "lines": 142464,
+    "clones": 464,
+    "duplicatedLines": 5064,
+    "percentage": 3.55
+   },
+   {
+    "format": "yaml",
+    "sources": 10,
+    "lines": 1928,
+    "clones": 7,
+    "duplicatedLines": 183,
+    "percentage": 9.49
+   },
+   {
+    "format": "toml",
+    "sources": 30,
+    "lines": 2367,
+    "clones": 3,
+    "duplicatedLines": 29,
+    "percentage": 1.23
+   },
+   {
+    "format": "bash",
+    "sources": 46,
+    "lines": 12643,
+    "clones": 2,
+    "duplicatedLines": 60,
+    "percentage": 0.47
+   },
+   {
+    "format": "c",
+    "sources": 3,
+    "lines": 2039,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 0.29
+   },
+   {
+    "format": "markdown",
+    "sources": 51,
+    "lines": 19985,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 6,
+    "lines": 6373,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "python",
+    "sources": 17,
+    "lines": 3326,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 15,
+    "lines": 2610,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "typescript",
+    "sources": 4,
+    "lines": 1587,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "rust",
+    "lines": 68,
+    "tokens": 952,
+    "first": {
+     "name": "docs/superpowers/plans/2026-10-07-netpad-udp.md",
+     "start": 1256,
+     "end": 1323
+    },
+    "others": [
+     {
+      "name": "netpadd/src/receiver.rs",
+      "start": 422,
+      "end": 505
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    assert_eq!(r.on_datagram(t, addr(A), &pkt(u32::MAX, Buttons::NONE, 0.0)), Accept::Stale);",
+      "}",
+      "",
+      "/// A press and a release that both land between two sends still make a tap.",
+      "#[test]",
+      "fn a_press_and_release_inside_one_interval_are_both_seen() {",
+      "    let (mut r, t) = (rx(), Instant::now());",
+      "    r.on_datagram(t, addr(A), &pkt(1, Buttons::NONE, 0.0));",
+      "    tick(r.poll(t));",
+      "    r.on_datagram(ms(t, 5), addr(A), &pkt(2, Buttons::START, 0.0));"
+     ],
+     "total": 68
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 60,
+    "tokens": 794,
+    "first": {
+     "name": "docs/superpowers/plans/2026-10-07-netpad-udp.md",
+     "start": 1198,
+     "end": 1257
+    },
+    "others": [
+     {
+      "name": "netpadd/src/receiver.rs",
+      "start": 324,
+      "end": 401
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    Packet::from_axes(seq, 0, [lx, 0.0, 0.0, 0.0], [0.0, 0.0], buttons).encode()",
+      "}",
+      "fn ms(t0: Instant, n: u64) -> Instant {",
+      "    t0 + Duration::from_millis(n)",
+      "}",
+      "fn tick(step: Step) -> PadFrame {",
+      "    match step {",
+      "        Step::Tick(f) => f,",
+      "        other => panic!(\"expected a tick, got {other:?}\"),",
+      "    }"
+     ],
+     "total": 60
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 100,
+    "first": {
+     "name": "robotd/src/main.rs",
+     "start": 8295,
+     "end": 8309
+    },
+    "others": [
+     {
+      "name": "robotd/src/main.rs",
+      "start": 8365,
+      "end": 8379
+     },
+     {
+      "name": "robotd/src/main.rs",
+      "start": 8394,
+      "end": 8408
+     },
+     {
+      "name": "robotd/src/main.rs",
+      "start": 8467,
+      "end": 8481
+     },
+     {
+      "name": "robotd/src/main.rs",
+      "start": 8525,
+      "end": 8539
+     },
+     {
+      "name": "robotd/src/main.rs",
+      "start": 8586,
+      "end": 8600
+     },
+     {
+      "name": "robotd/src/main.rs",
+      "start": 8624,
+      "end": 8638
+     }
+    ],
+    "copies": 7,
+    "excerpt": {
+     "lines": [
+      "fn an_unknown_slot_is_refused_with_the_names() {",
+      "    let s = RobotState::new(",
+      "        &Params::default(),",
+      "        std::path::Path::new(\"/test/robotd.toml\"),",
+      "        false,",
+      "        false,",
+      "    );",
+      "    let intents = Arc::new(Intents::new());",
+      "",
+      "    let result: proto::IntentResult = dispatch("
+     ],
+     "total": 15
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 63,
+    "tokens": 524,
+    "first": {
+     "name": "docs/superpowers/plans/2026-10-07-netpad-udp.md",
+     "start": 1746,
+     "end": 1808
+    },
+    "others": [
+     {
+      "name": "netpadd/src/main.rs",
+      "start": 71,
+      "end": 136
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 55,
+    "first": {
+     "name": "updater/tests/apply.rs",
+     "start": 443,
+     "end": 450
+    },
+    "others": [
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1120,
+      "end": 1128
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1198,
+      "end": 1205
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1237,
+      "end": 1244
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1302,
+      "end": 1309
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1354,
+      "end": 1361
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1393,
+      "end": 1400
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1433,
+      "end": 1440
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 2996,
+      "end": 3003
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 8,
+    "tokens": 61,
+    "first": {
+     "name": "updater/tests/apply.rs",
+     "start": 1121,
+     "end": 1128
+    },
+    "others": [
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1199,
+      "end": 1206
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1238,
+      "end": 1245
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1303,
+      "end": 1309
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1355,
+      "end": 1361
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1394,
+      "end": 1400
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 1434,
+      "end": 1440
+     },
+     {
+      "name": "updater/tests/apply.rs",
+      "start": 2997,
+      "end": 3003
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 35,
+    "tokens": 344,
+    "first": {
+     "name": "docs/superpowers/plans/2026-10-07-netpad-udp.md",
+     "start": 931,
+     "end": 965
+    },
+    "others": [
+     {
+      "name": "pad-map/src/wire.rs",
+      "start": 467,
+      "end": 507
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 27,
+    "tokens": 332,
+    "first": {
+     "name": "docs/superpowers/plans/2026-10-07-netpad-udp.md",
+     "start": 1036,
+     "end": 1062
+    },
+    "others": [
+     {
+      "name": "pad-map/src/wire.rs",
+      "start": 69,
+      "end": 99
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 19,
+    "tokens": 324,
+    "first": {
+     "name": "docs/superpowers/plans/2026-10-07-netpad-udp.md",
+     "start": 757,
+     "end": 775
+    },
+    "others": [
+     {
+      "name": "pad-map/src/mapper.rs",
+      "start": 635,
+      "end": 681
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 31,
+    "tokens": 317,
+    "first": {
+     "name": "docs/superpowers/plans/2026-10-07-netpad-udp.md",
+     "start": 1655,
+     "end": 1685
+    },
+    "others": [
+     {
+      "name": "netpadd/src/robotd.rs",
+      "start": 55,
+      "end": 85
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 241,
+   "lines": 151166,
+   "tokens": 856064,
+   "clones": 320,
+   "duplicatedLines": 3318,
+   "duplicatedTokens": 24279,
+   "percentage": 2.19,
+   "percentageTokens": 2.84,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 189,
+     "lines": 131762,
+     "clones": 317,
+     "duplicatedLines": 3252,
+     "percentage": 2.47
+    },
+    {
+     "format": "bash",
+     "sources": 30,
+     "lines": 12309,
+     "clones": 2,
+     "duplicatedLines": 60,
+     "percentage": 0.49
+    },
+    {
+     "format": "c",
+     "sources": 3,
+     "lines": 2039,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 0.29
+    },
+    {
+     "format": "python",
+     "sources": 14,
+     "lines": 3168,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 4,
+     "lines": 1587,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c-header",
+     "sources": 1,
+     "lines": 301,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 100,
+     "first": {
+      "name": "robotd/src/main.rs",
+      "start": 8295,
+      "end": 8309
+     },
+     "others": [
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8365,
+       "end": 8379
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8394,
+       "end": 8408
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8467,
+       "end": 8481
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8525,
+       "end": 8539
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8586,
+       "end": 8600
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8624,
+       "end": 8638
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "fn an_unknown_slot_is_refused_with_the_names() {",
+       "    let s = RobotState::new(",
+       "        &Params::default(),",
+       "        std::path::Path::new(\"/test/robotd.toml\"),",
+       "        false,",
+       "        false,",
+       "    );",
+       "    let intents = Arc::new(Intents::new());",
+       "",
+       "    let result: proto::IntentResult = dispatch("
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 147,
+     "first": {
+      "name": "robotd/src/main.rs",
+      "start": 9343,
+      "end": 9359
+     },
+     "others": [
+      {
+       "name": "robotd/src/main.rs",
+       "start": 9391,
+       "end": 9407
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 9437,
+       "end": 9453
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "let s = Arc::new(RobotState::new(",
+       "    &params,",
+       "    std::path::Path::new(\"/test/robotd.toml\"),",
+       "    false,",
+       "    false,",
+       "));",
+       "let intents = Arc::new(Intents::new());",
+       "intents.request_init();",
+       "",
+       "let (tx, rx) = std::sync::mpsc::channel();"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 43,
+     "tokens": 231,
+     "first": {
+      "name": "mediad/webclient/space/entrypoint.sh",
+      "start": 25,
+      "end": 67
+     },
+     "others": [
+      {
+       "name": "spaces/policy-playground/entrypoint.sh",
+       "start": 24,
+       "end": 66
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    echo \"no OAUTH_CLIENT_ID in the environment; the page will not be able to sign anybody in\" >&2",
+       "fi",
+       "",
+       "mkdir -p /srv",
+       "",
+       "# Python rather than `sed`, because the value being substituted is now JSON: a provider URL is",
+       "# full of the characters a `sed` replacement treats as syntax, and one of them silently produces",
+       "# a page that parses and signs nobody in.",
+       "python3 - /app/index.html /srv/index.html <<'PY'",
+       "import json"
+      ],
+      "total": 43
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 76,
+     "first": {
+      "name": "robotd/src/main.rs",
+      "start": 8337,
+      "end": 8351
+     },
+     "others": [
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8562,
+       "end": 8576
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8593,
+       "end": 8608
+      },
+      {
+       "name": "robotd/src/main.rs",
+       "start": 8711,
+       "end": 8725
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 21,
+     "tokens": 217,
+     "first": {
+      "name": "robotd/src/main.rs",
+      "start": 6999,
+      "end": 7019
+     },
+     "others": [
+      {
+       "name": "robotd/src/main.rs",
+       "start": 9220,
+       "end": 9240
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 24,
+     "tokens": 202,
+     "first": {
+      "name": "configd/src/main.rs",
+      "start": 607,
+      "end": 630
+     },
+     "others": [
+      {
+       "name": "robotd/src/main.rs",
+       "start": 5567,
+       "end": 5589
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 190,
+     "first": {
+      "name": "pad-imu/src/lib.rs",
+      "start": 392,
+      "end": 399
+     },
+     "others": [
+      {
+       "name": "robotd/src/head_imu.rs",
+       "start": 130,
+       "end": 137
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 6,
+     "tokens": 187,
+     "first": {
+      "name": "deploy/audio/aic3x-dkms/tlv320aic3x.c",
+      "start": 325,
+      "end": 330
+     },
+     "others": [
+      {
+       "name": "deploy/audio/aic3x-dkms/tlv320aic3x.c",
+       "start": 425,
+       "end": 430
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 22,
+     "tokens": 186,
+     "first": {
+      "name": "robotctl/src/main.rs",
+      "start": 4032,
+      "end": 4053
+     },
+     "others": [
+      {
+       "name": "robotctl/src/main.rs",
+       "start": 4305,
+       "end": 4325
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 25,
+     "tokens": 185,
+     "first": {
+      "name": "robotd/src/main.rs",
+      "start": 9886,
+      "end": 9910
+     },
+     "others": [
+      {
+       "name": "robotd/src/main.rs",
+       "start": 9942,
+       "end": 9966
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "odometry/src/anchors.rs"
+    ]
+   }
+  },
+  "health": {
+   "score": 53.6,
+   "grade": "D",
+   "size": {
+    "lines": 160756,
+    "files": 275,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 2.6,
+     "adjusted": 2.6,
+     "lines": 4122,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "bash",
+      "python",
+      "c",
+      "typescript",
+      "c-header",
+      "docker",
+      "makefile"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 81.1
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 75.7,
+     "adjusted": 75,
+     "lines": 121649,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 35.4
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 17262,
+   "mean": 62.8,
+   "files": [
+    {
+     "path": "robotd/src/main.rs",
+     "complexity": 988,
+     "lines": 10007,
+     "bytes": 437765
+    },
+    {
+     "path": "robotctl/src/main.rs",
+     "complexity": 954,
+     "lines": 8109,
+     "bytes": 342130
+    },
+    {
+     "path": "duck-ipc-proto/src/lib.rs",
+     "complexity": 497,
+     "lines": 6940,
+     "bytes": 337229
+    },
+    {
+     "path": "robotctl/src/monitor.rs",
+     "complexity": 467,
+     "lines": 4965,
+     "bytes": 212445
+    },
+    {
+     "path": "updater/src/engine.rs",
+     "complexity": 441,
+     "lines": 4125,
+     "bytes": 185925
+    },
+    {
+     "path": "duckctl/src/main.rs",
+     "complexity": 388,
+     "lines": 3862,
+     "bytes": 178239
+    },
+    {
+     "path": "robotd-params/src/lib.rs",
+     "complexity": 375,
+     "lines": 4374,
+     "bytes": 196503
+    },
+    {
+     "path": "mediad/src/pipeline.rs",
+     "complexity": 267,
+     "lines": 2799,
+     "bytes": 131070
+    },
+    {
+     "path": "mediad/src/relay.rs",
+     "complexity": 262,
+     "lines": 2764,
+     "bytes": 117796
+    },
+    {
+     "path": "xtask/src/main.rs",
+     "complexity": 236,
+     "lines": 2387,
+     "bytes": 104866
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.35,
+   "findings": 4,
+   "files": 21,
+   "byCategory": [
+    {
+     "category": "unused-export",
+     "count": 2
+    },
+    {
+     "category": "unused-import",
+     "count": 2
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-export",
+     "path": "spaces/vision-demo/filters.py",
+     "name": "upright",
+     "line": 28,
+     "lines": 14
+    },
+    {
+     "category": "unused-import",
+     "path": "spaces/shared/control.py",
+     "name": "asyncio",
+     "line": 23,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "spaces/vision-demo/app.py",
+     "name": "np",
+     "line": 39,
+     "lines": 1
+    },
+    {
+     "category": "unused-export",
+     "path": "spaces/vision-demo/filters.py",
+     "name": "MOUNT_ROTATION_DEGREES",
+     "line": 19,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

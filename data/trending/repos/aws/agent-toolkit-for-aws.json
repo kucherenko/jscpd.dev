@@ -1,0 +1,1025 @@
+{
+ "name": "aws/agent-toolkit-for-aws",
+ "url": "https://github.com/aws/agent-toolkit-for-aws",
+ "appearances": [
+  {
+   "date": "2026-10-25",
+   "rank": 3,
+   "stars": 3190,
+   "starsToday": 13,
+   "headSha": "e8c630949189f03b3dd77388c86b06a7f2f911a9",
+   "sources": 5563,
+   "lines": 701969,
+   "clones": 2736,
+   "duplicatedLines": 180487,
+   "percentage": 25.71,
+   "codePercentage": 33.46,
+   "codeSources": 333,
+   "healthScore": 29,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-25",
+  "generatedAt": "2026-10-25T05:27:36.791Z",
+  "name": "aws/agent-toolkit-for-aws",
+  "url": "https://github.com/aws/agent-toolkit-for-aws",
+  "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+  "language": "Python",
+  "stars": 3190,
+  "starsToday": 13,
+  "defaultBranch": "main",
+  "headSha": "e8c630949189f03b3dd77388c86b06a7f2f911a9",
+  "durationMs": 5745,
+  "total": {
+   "sources": 5563,
+   "lines": 701969,
+   "tokens": 6911670,
+   "clones": 2736,
+   "duplicatedLines": 180487,
+   "duplicatedTokens": 1676574,
+   "percentage": 25.71,
+   "percentageTokens": 24.26
+  },
+  "formats": [
+   {
+    "format": "markdown",
+    "sources": 2682,
+    "lines": 449318,
+    "clones": 1571,
+    "duplicatedLines": 118094,
+    "percentage": 26.28
+   },
+   {
+    "format": "python",
+    "sources": 572,
+    "lines": 138578,
+    "clones": 432,
+    "duplicatedLines": 39508,
+    "percentage": 28.51
+   },
+   {
+    "format": "json",
+    "sources": 519,
+    "lines": 42519,
+    "clones": 211,
+    "duplicatedLines": 9364,
+    "percentage": 22.02
+   },
+   {
+    "format": "bash",
+    "sources": 537,
+    "lines": 19364,
+    "clones": 169,
+    "duplicatedLines": 3429,
+    "percentage": 17.71
+   },
+   {
+    "format": "text",
+    "sources": 477,
+    "lines": 10380,
+    "clones": 128,
+    "duplicatedLines": 2438,
+    "percentage": 23.49
+   },
+   {
+    "format": "yaml",
+    "sources": 293,
+    "lines": 11383,
+    "clones": 64,
+    "duplicatedLines": 2538,
+    "percentage": 22.3
+   },
+   {
+    "format": "typescript",
+    "sources": 112,
+    "lines": 11699,
+    "clones": 50,
+    "duplicatedLines": 1010,
+    "percentage": 8.63
+   },
+   {
+    "format": "sql",
+    "sources": 101,
+    "lines": 4265,
+    "clones": 43,
+    "duplicatedLines": 1620,
+    "percentage": 37.98
+   },
+   {
+    "format": "java",
+    "sources": 43,
+    "lines": 2730,
+    "clones": 19,
+    "duplicatedLines": 1060,
+    "percentage": 38.83
+   },
+   {
+    "format": "javascript",
+    "sources": 62,
+    "lines": 2445,
+    "clones": 16,
+    "duplicatedLines": 416,
+    "percentage": 17.01
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markdown",
+    "lines": 565,
+    "tokens": 13116,
+    "first": {
+     "name": "plugins/aws-startup-advisor/skills/agent-advisor/references/vendored/ai/bedrock-pricing-cache.md",
+     "start": 1,
+     "end": 565
+    },
+    "others": [
+     {
+      "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/ai/bedrock-pricing-cache.md",
+      "start": 1,
+      "end": 565
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/ai/bedrock-pricing-cache.md",
+      "start": 1,
+      "end": 565
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/shared/ai/bedrock-pricing-cache.md",
+      "start": 1,
+      "end": 565
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "# Amazon Bedrock Pricing Cache",
+      "",
+      "**Last updated:** 2026-10-05 (re-verified via the AWS Pricing MCP server, aws.amazon.com/bedrock/pricing, and the Bedrock model cards' Geo/Global inference ID …",
+      "**Region:** us-east-1",
+      "**Currency:** USD",
+      "**Accuracy:** ±15-25% for AI/Bedrock models and services (sourced from public pricing pages)",
+      "",
+      "> Prices may vary by region and change over time. Use for estimation only; there is no live pricing lookup — for the latest rates, check the public AWS pricing…",
+      "> **Staleness warning:** If today's date is more than 30 days after the **Last updated** date above, treat AI model prices as potentially stale (±15-25% accura…",
+      ">"
+     ],
+     "total": 565
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 638,
+    "tokens": 10612,
+    "first": {
+     "name": "plugins/aws-startup-advisor/skills/agent-advisor/references/vendored/dsl/INTERPRETER.md",
+     "start": 1,
+     "end": 638
+    },
+    "others": [
+     {
+      "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/dsl/INTERPRETER.md",
+      "start": 1,
+      "end": 638
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/references/vendored/dsl/INTERPRETER.md",
+      "start": 1,
+      "end": 638
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/shared/dsl/INTERPRETER.md",
+      "start": 1,
+      "end": 638
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "# Interpreter",
+      "",
+      "The plugin-shared contract for DSL-driven migration skills: how to read and act on",
+      "the structured frontmatter that phase files carry. It is skill-AGNOSTIC — any",
+      "migration skill under this plugin can author its phases to this grammar and drive",
+      "execution from this one interpreter. When a phase file begins with a `---` YAML",
+      "block, read it first and act on the keys below, then execute the phase's prose body.",
+      "",
+      "Frontmatter is being introduced phase-by-phase. A phase file with no frontmatter",
+      "runs entirely from its prose, as before."
+     ],
+     "total": 638
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 1786,
+    "tokens": 22768,
+    "first": {
+     "name": "plugins/aws-core/skills/aws-observability/references/cloudwatch-omni/alerts.md",
+     "start": 1,
+     "end": 1786
+    },
+    "others": [
+     {
+      "name": "skills/core-skills/aws-observability/references/cloudwatch-omni/alerts.md",
+      "start": 1,
+      "end": 1786
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# CloudWatch Omni Alerts",
+      "",
+      "Reference for **CloudWatch Omni alerts** — what they are, how they are evaluated, how",
+      "to create, update, delete, tag, and fetch them through the public API, and a section",
+      "per API operation.",
+      "",
+      "On an Omni-enabled account \"alert\" and \"alarm\" both mean the Omni alert resource",
+      "described here — a separate resource from a CloudWatch alarm, with its own API.",
+      "",
+      "Alert operations are part of the `cloudwatch-omni` service (`aws cloudwatchomni"
+     ],
+     "total": 1786
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 1272,
+    "tokens": 18978,
+    "first": {
+     "name": "plugins/aws-core/skills/aws-observability/references/cloudwatch-omni/dashboards.md",
+     "start": 1,
+     "end": 1272
+    },
+    "others": [
+     {
+      "name": "skills/core-skills/aws-observability/references/cloudwatch-omni/dashboards.md",
+      "start": 1,
+      "end": 1272
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 562,
+    "tokens": 3777,
+    "first": {
+     "name": "plugins/aws-startup-advisor/scripts/telemetry/metric_emission/migration.py",
+     "start": 1,
+     "end": 562
+    },
+    "others": [
+     {
+      "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/telemetry/metric_emission/migration.py",
+      "start": 1,
+      "end": 562
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/telemetry/metric_emission/migration.py",
+      "start": 1,
+      "end": 562
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/references/vendored/telemetry/metric_emission/migration.py",
+      "start": 1,
+      "end": 562
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/llm-to-bedrock/references/vendored/telemetry/metric_emission/migration.py",
+      "start": 1,
+      "end": 562
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/shared/telemetry/metric_emission/migration.py",
+      "start": 1,
+      "end": 562
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 773,
+    "tokens": 17761,
+    "first": {
+     "name": "plugins/aws-core/skills/aws-observability/references/cloudwatch-omni/agent-evaluation.md",
+     "start": 1,
+     "end": 773
+    },
+    "others": [
+     {
+      "name": "skills/core-skills/aws-observability/references/cloudwatch-omni/agent-evaluation.md",
+      "start": 1,
+      "end": 773
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 525,
+    "tokens": 3426,
+    "first": {
+     "name": "plugins/aws-startup-advisor/scripts/telemetry/metric_emission/migration_attributes.py",
+     "start": 1,
+     "end": 525
+    },
+    "others": [
+     {
+      "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/telemetry/metric_emission/migration_attributes.py",
+      "start": 1,
+      "end": 525
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/telemetry/metric_emission/migration_attributes.py",
+      "start": 1,
+      "end": 525
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/references/vendored/telemetry/metric_emission/migration_attributes.py",
+      "start": 1,
+      "end": 525
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/llm-to-bedrock/references/vendored/telemetry/metric_emission/migration_attributes.py",
+      "start": 1,
+      "end": 525
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/shared/telemetry/metric_emission/migration_attributes.py",
+      "start": 1,
+      "end": 525
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 961,
+    "tokens": 15841,
+    "first": {
+     "name": "plugins/aws-core/skills/amazon-bedrock/references/bedrock-kb-migration/managed-kb-api.md",
+     "start": 1,
+     "end": 961
+    },
+    "others": [
+     {
+      "name": "skills/core-skills/amazon-bedrock/references/bedrock-kb-migration/managed-kb-api.md",
+      "start": 1,
+      "end": 961
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 882,
+    "tokens": 15181,
+    "first": {
+     "name": "plugins/aws-core/skills/aws-observability/references/cloudwatch-omni/query/promql-metrics.md",
+     "start": 1,
+     "end": 882
+    },
+    "others": [
+     {
+      "name": "skills/core-skills/aws-observability/references/cloudwatch-omni/query/promql-metrics.md",
+      "start": 1,
+      "end": 882
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 376,
+    "tokens": 7003,
+    "first": {
+     "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/ai/ai-openai-to-bedrock.md",
+     "start": 1,
+     "end": 376
+    },
+    "others": [
+     {
+      "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/ai/ai-openai-to-bedrock.md",
+      "start": 1,
+      "end": 376
+     },
+     {
+      "name": "plugins/aws-startup-advisor/skills/shared/ai/ai-openai-to-bedrock.md",
+      "start": 1,
+      "end": 376
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 333,
+   "lines": 105755,
+   "tokens": 556165,
+   "clones": 309,
+   "duplicatedLines": 35389,
+   "duplicatedTokens": 182633,
+   "percentage": 33.46,
+   "percentageTokens": 32.84,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 290,
+     "lines": 94798,
+     "clones": 295,
+     "duplicatedLines": 35163,
+     "percentage": 37.09
+    },
+    {
+     "format": "bash",
+     "sources": 21,
+     "lines": 4731,
+     "clones": 9,
+     "duplicatedLines": 68,
+     "percentage": 1.44
+    },
+    {
+     "format": "typescript",
+     "sources": 15,
+     "lines": 5782,
+     "clones": 5,
+     "duplicatedLines": 158,
+     "percentage": 2.73
+    },
+    {
+     "format": "java",
+     "sources": 1,
+     "lines": 218,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 5,
+     "lines": 187,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "sql",
+     "sources": 1,
+     "lines": 39,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 562,
+     "tokens": 3777,
+     "first": {
+      "name": "plugins/aws-startup-advisor/scripts/telemetry/metric_emission/migration.py",
+      "start": 1,
+      "end": 562
+     },
+     "others": [
+      {
+       "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/telemetry/metric_emission/migration.py",
+       "start": 1,
+       "end": 562
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/telemetry/metric_emission/migration.py",
+       "start": 1,
+       "end": 562
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/references/vendored/telemetry/metric_emission/migration.py",
+       "start": 1,
+       "end": 562
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/llm-to-bedrock/references/vendored/telemetry/metric_emission/migration.py",
+       "start": 1,
+       "end": 562
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/shared/telemetry/metric_emission/migration.py",
+       "start": 1,
+       "end": 562
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "#!/usr/bin/env python3",
+       "\"\"\"Hook: report a migration run's progress as MigrationActivity telemetry.",
+       "",
+       "    python3 scripts/telemetry/metric_emission/migration.py                 # PostToolUse (Write|Edit|Bash)",
+       "    python3 scripts/telemetry/metric_emission/migration.py --reconcile     # Stop",
+       "    python3 scripts/telemetry/metric_emission/migration.py --session-end   # SessionEnd",
+       "    python3 scripts/telemetry/metric_emission/migration.py --reconcile --via cli  # other hosts",
+       "",
+       "Nothing is inferred from the conversation and no skill instruction has to be",
+       "followed. The migration skills maintain `.migration/<id>/.phase-status.json` (and"
+      ],
+      "total": 562
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 525,
+     "tokens": 3426,
+     "first": {
+      "name": "plugins/aws-startup-advisor/scripts/telemetry/metric_emission/migration_attributes.py",
+      "start": 1,
+      "end": 525
+     },
+     "others": [
+      {
+       "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/telemetry/metric_emission/migration_attributes.py",
+       "start": 1,
+       "end": 525
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/telemetry/metric_emission/migration_attributes.py",
+       "start": 1,
+       "end": 525
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/references/vendored/telemetry/metric_emission/migration_attributes.py",
+       "start": 1,
+       "end": 525
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/llm-to-bedrock/references/vendored/telemetry/metric_emission/migration_attributes.py",
+       "start": 1,
+       "end": 525
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/shared/telemetry/metric_emission/migration_attributes.py",
+       "start": 1,
+       "end": 525
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "#!/usr/bin/env python3",
+       "\"\"\"Attributes for a migration telemetry event, derived from the run's own artifacts.",
+       "",
+       "Every value is a lookup over files the migration skills already write into",
+       "`.migration/<id>/`: no inference, no free text. Unknown or unmodelled values drop",
+       "the attribute, never the event, because the service rejects a whole event on one",
+       "bad enum member. Phase facts attach only to the PHASE_COMPLETED event of the",
+       "phase that produced them, so no aggregation double counts; `complexityTier` is",
+       "the exception, riding every Design-onward and terminal event because it segments",
+       "the funnel."
+      ],
+      "total": 525
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 291,
+     "tokens": 1494,
+     "first": {
+      "name": "plugins/aws-startup-advisor/scripts/telemetry/metric_emission/client.py",
+      "start": 1,
+      "end": 291
+     },
+     "others": [
+      {
+       "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/telemetry/metric_emission/client.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/telemetry/metric_emission/client.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/references/vendored/telemetry/metric_emission/client.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/llm-to-bedrock/references/vendored/telemetry/metric_emission/client.py",
+       "start": 1,
+       "end": 291
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/shared/telemetry/metric_emission/client.py",
+       "start": 1,
+       "end": 291
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "#!/usr/bin/env python3",
+       "\"\"\"POST a PluginTelemetryEvent to the Startups Advisor IDE Extension API.",
+       "",
+       "    POST /v1/plugin-telemetry-event",
+       "    {",
+       "      \"installId\": \"<uuid>\",          # @required, UUID shape",
+       "      \"source\": \"CLAUDE_CODE\",        # @required, PluginSource enum",
+       "      \"pluginVersion\": \"2.0.2\",       # @required, ExtensionVersion shape",
+       "      \"occurredAt\": 1759276800000,    # @required, epoch milliseconds",
+       "      \"pluginTelemetryEvent\": {...}   # the PluginTelemetryEvent union"
+      ],
+      "total": 291
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 1619,
+     "tokens": 6562,
+     "first": {
+      "name": "plugins/aws-data-analytics/skills/managing-amazon-msk/scripts/msk_sizing.py",
+      "start": 1,
+      "end": 1619
+     },
+     "others": [
+      {
+       "name": "skills/specialized-skills/analytics-skills/managing-amazon-msk/scripts/msk_sizing.py",
+       "start": 1,
+       "end": 1619
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 982,
+     "tokens": 5555,
+     "first": {
+      "name": "plugins/aws-core/skills/aws-observability/scripts/cloudwatch-omni/evaluate_traces.py",
+      "start": 1,
+      "end": 982
+     },
+     "others": [
+      {
+       "name": "skills/core-skills/aws-observability/scripts/cloudwatch-omni/evaluate_traces.py",
+       "start": 1,
+       "end": 982
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 194,
+     "tokens": 978,
+     "first": {
+      "name": "plugins/aws-startup-advisor/scripts/telemetry/consent/record.py",
+      "start": 1,
+      "end": 194
+     },
+     "others": [
+      {
+       "name": "plugins/aws-startup-advisor/skills/azure-to-aws/references/vendored/telemetry/consent/record.py",
+       "start": 1,
+       "end": 194
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/gcp-to-aws/references/vendored/telemetry/consent/record.py",
+       "start": 1,
+       "end": 194
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/references/vendored/telemetry/consent/record.py",
+       "start": 1,
+       "end": 194
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/llm-to-bedrock/references/vendored/telemetry/consent/record.py",
+       "start": 1,
+       "end": 194
+      },
+      {
+       "name": "plugins/aws-startup-advisor/skills/shared/telemetry/consent/record.py",
+       "start": 1,
+       "end": 194
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 1185,
+     "tokens": 4583,
+     "first": {
+      "name": "plugins/aws-data-analytics/skills/migrate-to-msk/scripts/compatibility.py",
+      "start": 1,
+      "end": 1185
+     },
+     "others": [
+      {
+       "name": "skills/specialized-skills/analytics-skills/migrate-to-msk/scripts/compatibility.py",
+       "start": 1,
+       "end": 1185
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 929,
+     "tokens": 4204,
+     "first": {
+      "name": "plugins/aws-core/skills/aws-ai-ml/references/model-selection/scripts/search_deployable_models.py",
+      "start": 1,
+      "end": 929
+     },
+     "others": [
+      {
+       "name": "skills/core-skills/aws-ai-ml/references/model-selection/scripts/search_deployable_models.py",
+       "start": 1,
+       "end": 929
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 658,
+     "tokens": 3777,
+     "first": {
+      "name": "plugins/aws-startup-advisor/scripts/emit-plan-json.py",
+      "start": 1,
+      "end": 658
+     },
+     "others": [
+      {
+       "name": "plugins/aws-startup-advisor/skills/heroku-to-aws/scripts/emit-plan-json.py",
+       "start": 1,
+       "end": 658
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 709,
+     "tokens": 3730,
+     "first": {
+      "name": "plugins/aws-core/skills/aws-observability/scripts/cloudwatch/di_crud_tools.py",
+      "start": 1,
+      "end": 709
+     },
+     "others": [
+      {
+       "name": "skills/core-skills/aws-observability/scripts/cloudwatch/di_crud_tools.py",
+       "start": 1,
+       "end": 709
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 29,
+   "grade": "E",
+   "size": {
+    "lines": 142656,
+    "files": 477,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 25.7,
+     "adjusted": 25.4,
+     "lines": 36690,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "typescript",
+      "bash",
+      "hcl",
+      "javascript",
+      "java",
+      "sql",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 12.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 7.8,
+     "adjusted": 7.8,
+     "lines": 10660,
+     "halfLife": 7.5,
+     "coverage": 95.5,
+     "weight": 0.955,
+     "score": 48.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 65.4,
+     "adjusted": 64.8,
+     "lines": 93333,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 40.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 22655,
+   "mean": 47.5,
+   "files": [
+    {
+     "path": "plugins/aws-startup-advisor/scripts/validate-migration-report.py",
+     "complexity": 571,
+     "lines": 2434,
+     "bytes": 102931
+    },
+    {
+     "path": "plugins/aws-startup-advisor/scripts/validate-artifacts.py",
+     "complexity": 469,
+     "lines": 1255,
+     "bytes": 58360
+    },
+    {
+     "path": "plugins/aws-startup-advisor/skills/heroku-to-aws/scripts/validate-heroku-migration-report.py",
+     "complexity": 381,
+     "lines": 1428,
+     "bytes": 62886
+    },
+    {
+     "path": "skills/specialized-skills/database-skills/amazon-dynamodb/scripts/calculate_costs.py",
+     "complexity": 329,
+     "lines": 1933,
+     "bytes": 87094
+    },
+    {
+     "path": "plugins/aws-startup-advisor/fixtures/azure-iac-terraform/check_expected_design.py",
+     "complexity": 311,
+     "lines": 1092,
+     "bytes": 47173
+    },
+    {
+     "path": "skills/specialized-skills/database-skills/amazon-dynamodb/scripts/generate_perf_report.py",
+     "complexity": 306,
+     "lines": 1665,
+     "bytes": 78343
+    },
+    {
+     "path": "plugins/aws-startup-advisor/skills/agent-advisor/scripts/openai_model_recommendation.py",
+     "complexity": 266,
+     "lines": 1352,
+     "bytes": 59531
+    },
+    {
+     "path": "plugins/aws-startup-advisor/tools/application-source-review.ts",
+     "complexity": 249,
+     "lines": 996,
+     "bytes": 38707
+    },
+    {
+     "path": "skills/specialized-skills/database-skills/amazon-documentdb/scripts/wa_review.py",
+     "complexity": 222,
+     "lines": 1341,
+     "bytes": 47991
+    },
+    {
+     "path": "skills/specialized-skills/database-skills/amazon-dynamodb/scripts/benchmark_model.py",
+     "complexity": 221,
+     "lines": 1063,
+     "bytes": 47293
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 7.83,
+   "findings": 89,
+   "files": 416,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 66
+    },
+    {
+     "category": "unused-symbol",
+     "count": 17
+    },
+    {
+     "category": "unused-import",
+     "count": 6
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "skills/specialized-skills/aws-marketplace-skills/aws-marketplace-metering/scripts/metering_core.py",
+     "name": "",
+     "line": 1,
+     "lines": 865
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/aws-core/skills/aws-ai-ml/references/model-evaluation/scripts/nova_reward_function_source_template.py",
+     "name": "",
+     "line": 1,
+     "lines": 364
+    },
+    {
+     "category": "unused-file",
+     "path": "skills/core-skills/aws-ai-ml/references/model-evaluation/scripts/nova_reward_function_source_template.py",
+     "name": "",
+     "line": 1,
+     "lines": 364
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/aws-core/skills/aws-ai-ml/references/finetuning/templates/nova_rlvr_reward_function_source_template.py",
+     "name": "",
+     "line": 1,
+     "lines": 358
+    },
+    {
+     "category": "unused-file",
+     "path": "skills/core-skills/aws-ai-ml/references/finetuning/templates/nova_rlvr_reward_function_source_template.py",
+     "name": "",
+     "line": 1,
+     "lines": 358
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/aws-core/skills/aws-ai-ml/references/endpoint-diagnostics/scripts/collect_diagnostics.py",
+     "name": "",
+     "line": 1,
+     "lines": 351
+    },
+    {
+     "category": "unused-file",
+     "path": "skills/core-skills/aws-ai-ml/references/endpoint-diagnostics/scripts/collect_diagnostics.py",
+     "name": "",
+     "line": 1,
+     "lines": 351
+    },
+    {
+     "category": "unused-file",
+     "path": "skills/specialized-skills/aws-marketplace-skills/aws-marketplace-metering/scripts/subscription.py",
+     "name": "",
+     "line": 1,
+     "lines": 325
+    },
+    {
+     "category": "unused-file",
+     "path": "skills/specialized-skills/aws-marketplace-skills/aws-marketplace-metering/scripts/submitter.py",
+     "name": "",
+     "line": 1,
+     "lines": 313
+    },
+    {
+     "category": "unused-file",
+     "path": "skills/specialized-skills/aws-marketplace-skills/aws-marketplace-metering/scripts/register.py",
+     "name": "",
+     "line": 1,
+     "lines": 276
+    }
+   ]
+  }
+ }
+}
