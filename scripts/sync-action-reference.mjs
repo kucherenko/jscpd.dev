@@ -13,8 +13,10 @@ const [file, version = ''] = process.argv.slice(2)
 if (!file) { console.error('usage: sync-action-reference.mjs action.yml [version]'); process.exit(1) }
 const text = readFileSync(file, 'utf8')
 
+// A section runs to the next top-level key or the end of the file. JavaScript
+// has no \Z: there it is a plain Z, which cut the inputs at max-size's "SIZE".
 function section(name) {
-  const m = text.match(new RegExp(`^${name}:\\n([\\s\\S]*?)(?=^\\S|\\Z)`, 'm'))
+  const m = text.match(new RegExp(`^${name}:\\n([\\s\\S]*?)(?=^\\S|(?![\\s\\S]))`, 'm'))
   return m ? m[1] : ''
 }
 function entries(block) {
