@@ -1,0 +1,1173 @@
+{
+ "name": "JetBrains/thinkrail",
+ "url": "https://github.com/JetBrains/thinkrail",
+ "appearances": [
+  {
+   "date": "2026-10-26",
+   "rank": 5,
+   "stars": 2012,
+   "starsToday": 51,
+   "headSha": "d299f20d2ba014f382ddbcc9b49f2aa63fada132",
+   "sources": 1848,
+   "lines": 340904,
+   "clones": 988,
+   "duplicatedLines": 9673,
+   "percentage": 2.84,
+   "codePercentage": 0.74,
+   "codeSources": 879,
+   "healthScore": 69.9,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T05:32:18.055Z",
+  "name": "JetBrains/thinkrail",
+  "url": "https://github.com/JetBrains/thinkrail",
+  "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+  "language": "TypeScript",
+  "stars": 2012,
+  "starsToday": 51,
+  "defaultBranch": "main",
+  "headSha": "d299f20d2ba014f382ddbcc9b49f2aa63fada132",
+  "durationMs": 2208,
+  "total": {
+   "sources": 1848,
+   "lines": 340904,
+   "tokens": 2647904,
+   "clones": 988,
+   "duplicatedLines": 9673,
+   "duplicatedTokens": 68701,
+   "percentage": 2.84,
+   "percentageTokens": 2.59
+  },
+  "formats": [
+   {
+    "format": "typescript",
+    "sources": 1213,
+    "lines": 238187,
+    "clones": 833,
+    "duplicatedLines": 8021,
+    "percentage": 3.37
+   },
+   {
+    "format": "css",
+    "sources": 9,
+    "lines": 4436,
+    "clones": 68,
+    "duplicatedLines": 539,
+    "percentage": 12.15
+   },
+   {
+    "format": "tsx",
+    "sources": 315,
+    "lines": 59362,
+    "clones": 56,
+    "duplicatedLines": 629,
+    "percentage": 1.06
+   },
+   {
+    "format": "yaml",
+    "sources": 62,
+    "lines": 1333,
+    "clones": 10,
+    "duplicatedLines": 113,
+    "percentage": 8.48
+   },
+   {
+    "format": "json",
+    "sources": 46,
+    "lines": 7886,
+    "clones": 9,
+    "duplicatedLines": 239,
+    "percentage": 3.03
+   },
+   {
+    "format": "html",
+    "sources": 13,
+    "lines": 992,
+    "clones": 8,
+    "duplicatedLines": 89,
+    "percentage": 8.97
+   },
+   {
+    "format": "markdown",
+    "sources": 149,
+    "lines": 26582,
+    "clones": 3,
+    "duplicatedLines": 37,
+    "percentage": 0.14
+   },
+   {
+    "format": "diff",
+    "sources": 1,
+    "lines": 70,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 8.57
+   },
+   {
+    "format": "bash",
+    "sources": 6,
+    "lines": 858,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "astro",
+    "sources": 13,
+    "lines": 485,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "typescript",
+    "lines": 6,
+    "tokens": 62,
+    "first": {
+     "name": "packages/server/src/todos/artifacts.test.ts",
+     "start": 152,
+     "end": 157
+    },
+    "others": [
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 188,
+      "end": 193
+     },
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 258,
+      "end": 267
+     },
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 306,
+      "end": 311
+     },
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 336,
+      "end": 341
+     },
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 371,
+      "end": 376
+     },
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 385,
+      "end": 390
+     },
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 506,
+      "end": 511
+     },
+     {
+      "name": "packages/server/src/todos/artifacts.test.ts",
+      "start": 572,
+      "end": 577
+     }
+    ],
+    "copies": 19,
+    "excerpt": {
+     "lines": [
+      "test(\"done attaches the delta of changes since the in_progress baseline\", async () => {",
+      "    const { store, root } = tempStore();",
+      "    try {",
+      "        const todo = store.add({ title: \"step\" });",
+      "        store.update(todo.id, { status: \"in_progress\" });",
+      "        await reconcileChangeArtifacts(store, root, SESSION, async () => [\"a.ts\"]);"
+     ],
+     "total": 6
+    },
+    "excerptSecond": {
+     "lines": [
+      "test(\"a done reconcile cannot commit an item reopened during its git read\", async () => {",
+      "    const { store, root } = tempStore();",
+      "    try {",
+      "        const todo = store.add({ title: \"step\" });",
+      "        store.update(todo.id, { status: \"in_progress\" });",
+      "        await reconcileChangeArtifacts(store, root, SESSION, async () => []);"
+     ],
+     "total": 6
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "css",
+    "lines": 9,
+    "tokens": 85,
+    "first": {
+     "name": "apps/web/src/styles/generated/typography.css",
+     "start": 161,
+     "end": 169
+    },
+    "others": [
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 233,
+      "end": 241
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 280,
+      "end": 288
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 361,
+      "end": 369
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 370,
+      "end": 378
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 412,
+      "end": 420
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "    font-family: var(--tr-font-family-interface);",
+      "    font-size: var(--tr-font-size-s14);",
+      "    font-weight: var(--tr-font-weight-light);",
+      "    line-height: var(--tr-line-height-reading);",
+      "    letter-spacing: var(--tr-letter-spacing-normal);",
+      "    text-transform: none;",
+      "    font-style: normal;",
+      "}",
+      ".tr-text-ui {"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "    font-family: var(--tr-font-family-interface);",
+      "    font-size: var(--tr-font-size-s14);",
+      "    font-weight: var(--tr-font-weight-light);",
+      "    line-height: var(--tr-line-height-reading);",
+      "    letter-spacing: var(--tr-letter-spacing-normal);",
+      "    text-transform: none;",
+      "    font-style: normal;",
+      "}",
+      ".tr-code-text {"
+     ],
+     "total": 9
+    },
+    "kind": "generated"
+   },
+   {
+    "format": "css",
+    "lines": 10,
+    "tokens": 104,
+    "first": {
+     "name": "apps/web/src/styles/generated/typography.css",
+     "start": 124,
+     "end": 133
+    },
+    "others": [
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 133,
+      "end": 142
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 297,
+      "end": 306
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 456,
+      "end": 465
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 519,
+      "end": 528
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      ".tr-title-dialog {",
+      "    font-family: var(--tr-font-family-interface);",
+      "    font-size: var(--tr-font-size-s14);",
+      "    font-weight: var(--tr-font-weight-semibold);",
+      "    line-height: var(--tr-line-height-compact);",
+      "    letter-spacing: var(--tr-letter-spacing-normal);",
+      "    text-transform: none;",
+      "    font-style: normal;",
+      "}",
+      ".tr-title-card {"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      ".tr-title-card {",
+      "    font-family: var(--tr-font-family-interface);",
+      "    font-size: var(--tr-font-size-s14);",
+      "    font-weight: var(--tr-font-weight-semibold);",
+      "    line-height: var(--tr-line-height-compact);",
+      "    letter-spacing: var(--tr-letter-spacing-normal);",
+      "    text-transform: none;",
+      "    font-style: normal;",
+      "}",
+      ".tr-title-section {"
+     ],
+     "total": 10
+    },
+    "kind": "generated"
+   },
+   {
+    "format": "css",
+    "lines": 10,
+    "tokens": 102,
+    "first": {
+     "name": "apps/web/src/styles/generated/typography.css",
+     "start": 151,
+     "end": 160
+    },
+    "others": [
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 214,
+      "end": 223
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 223,
+      "end": 232
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 315,
+      "end": 324
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 324,
+      "end": 333
+     }
+    ],
+    "copies": 5,
+    "kind": "generated"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 67,
+    "first": {
+     "name": "packages/server/src/agent/extensions.test.ts",
+     "start": 169,
+     "end": 177
+    },
+    "others": [
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 217,
+      "end": 224
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 306,
+      "end": 313
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 343,
+      "end": 350
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 377,
+      "end": 384
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 426,
+      "end": 433
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 450,
+      "end": 457
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "html",
+    "lines": 36,
+    "tokens": 200,
+    "first": {
+     "name": "apps/website/src/pages/agentic-development/index.astro",
+     "start": 1,
+     "end": 36
+    },
+    "others": [
+     {
+      "name": "apps/website/src/pages/agentic-ide/index.astro",
+      "start": 1,
+      "end": 38
+     },
+     {
+      "name": "apps/website/src/pages/vibecoding/index.astro",
+      "start": 1,
+      "end": 36
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 57,
+    "first": {
+     "name": "packages/server/src/agent/chatResources.test.ts",
+     "start": 59,
+     "end": 67
+    },
+    "others": [
+     {
+      "name": "packages/server/src/agent/mcpConfirm.test.ts",
+      "start": 37,
+      "end": 45
+     },
+     {
+      "name": "packages/server/src/agent/mcpEngine.test.ts",
+      "start": 49,
+      "end": 57
+     },
+     {
+      "name": "packages/server/src/agent/projectTrust.test.ts",
+      "start": 33,
+      "end": 41
+     },
+     {
+      "name": "packages/server/src/agent/reloadGate.test.ts",
+      "start": 25,
+      "end": 34
+     },
+     {
+      "name": "packages/server/src/agent/sessionShutdown.test.ts",
+      "start": 20,
+      "end": 27
+     },
+     {
+      "name": "packages/server/src/host/directorySpelling.test.ts",
+      "start": 47,
+      "end": 55
+     },
+     {
+      "name": "packages/server/src/host/turnShutdown.test.ts",
+      "start": 124,
+      "end": 132
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 94,
+    "first": {
+     "name": "apps/web/src/navigation/restore.test.ts",
+     "start": 383,
+     "end": 391
+    },
+    "others": [
+     {
+      "name": "apps/web/src/navigation/restore.test.ts",
+      "start": 531,
+      "end": 539
+     },
+     {
+      "name": "apps/web/src/navigation/restore.test.ts",
+      "start": 601,
+      "end": 609
+     },
+     {
+      "name": "apps/web/src/navigation/restore.test.ts",
+      "start": 649,
+      "end": 657
+     },
+     {
+      "name": "apps/web/src/navigation/restore.test.ts",
+      "start": 683,
+      "end": 691
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "html",
+    "lines": 7,
+    "tokens": 73,
+    "first": {
+     "name": "apps/website/src/components/InstallPicker.astro",
+     "start": 67,
+     "end": 73
+    },
+    "others": [
+     {
+      "name": "apps/website/src/components/InstallPicker.astro",
+      "start": 77,
+      "end": 83
+     },
+     {
+      "name": "apps/website/src/components/InstallPicker.astro",
+      "start": 87,
+      "end": 93
+     },
+     {
+      "name": "apps/website/src/pages/index.astro",
+      "start": 284,
+      "end": 287
+     },
+     {
+      "name": "apps/website/src/pages/index.astro",
+      "start": 291,
+      "end": 294
+     },
+     {
+      "name": "apps/website/src/pages/index.astro",
+      "start": 298,
+      "end": 301
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "css",
+    "lines": 6,
+    "tokens": 52,
+    "first": {
+     "name": "apps/web/src/styles/generated/typography.css",
+     "start": 292,
+     "end": 297
+    },
+    "others": [
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 301,
+      "end": 306
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 424,
+      "end": 429
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 433,
+      "end": 438
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 442,
+      "end": 447
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 451,
+      "end": 456
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 460,
+      "end": 465
+     },
+     {
+      "name": "apps/web/src/styles/generated/typography.css",
+      "start": 523,
+      "end": 528
+     }
+    ],
+    "copies": 8,
+    "kind": "generated"
+   }
+  ],
+  "code": {
+   "sources": 879,
+   "lines": 152162,
+   "tokens": 966197,
+   "clones": 100,
+   "duplicatedLines": 1120,
+   "duplicatedTokens": 7476,
+   "percentage": 0.74,
+   "percentageTokens": 0.77,
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 273,
+     "lines": 54641,
+     "clones": 54,
+     "duplicatedLines": 602,
+     "percentage": 1.1
+    },
+    {
+     "format": "typescript",
+     "sources": 574,
+     "lines": 94899,
+     "clones": 38,
+     "duplicatedLines": 429,
+     "percentage": 0.45
+    },
+    {
+     "format": "html",
+     "sources": 13,
+     "lines": 992,
+     "clones": 8,
+     "duplicatedLines": 89,
+     "percentage": 8.97
+    },
+    {
+     "format": "bash",
+     "sources": 2,
+     "lines": 665,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "astro",
+     "sources": 13,
+     "lines": 485,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 361,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 3,
+     "lines": 119,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "html",
+     "lines": 36,
+     "tokens": 200,
+     "first": {
+      "name": "apps/website/src/pages/agentic-development/index.astro",
+      "start": 1,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "apps/website/src/pages/agentic-ide/index.astro",
+       "start": 1,
+       "end": 38
+      },
+      {
+       "name": "apps/website/src/pages/vibecoding/index.astro",
+       "start": 1,
+       "end": 36
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "---",
+       "import Analytics from \"../../components/Analytics.astro\";",
+       "import { Landing, siteMetadata } from \"../../vibecoding\";",
+       "",
+       "const canonicalUrl = new URL(siteMetadata.path, siteMetadata.origin);",
+       "const ogImageUrl = new URL(siteMetadata.openGraphImagePath, siteMetadata.origin);",
+       "---",
+       "",
+       "<!doctype html>",
+       "<html lang=\"en\">"
+      ],
+      "total": 36
+     },
+     "kind": "code"
+    },
+    {
+     "format": "html",
+     "lines": 7,
+     "tokens": 73,
+     "first": {
+      "name": "apps/website/src/components/InstallPicker.astro",
+      "start": 67,
+      "end": 73
+     },
+     "others": [
+      {
+       "name": "apps/website/src/components/InstallPicker.astro",
+       "start": 77,
+       "end": 83
+      },
+      {
+       "name": "apps/website/src/components/InstallPicker.astro",
+       "start": 87,
+       "end": 93
+      },
+      {
+       "name": "apps/website/src/pages/index.astro",
+       "start": 284,
+       "end": 287
+      },
+      {
+       "name": "apps/website/src/pages/index.astro",
+       "start": 291,
+       "end": 294
+      },
+      {
+       "name": "apps/website/src/pages/index.astro",
+       "start": 298,
+       "end": 301
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "        <button type=\"button\" class=\"copy-btn\" data-copy={installCommands.windows.powershell} aria-label=\"Copy PowerShell install command\">",
+       "            <svg class=\"i\" aria-hidden=\"true\"><use href=\"#i-copy\" /></svg>",
+       "            <svg class=\"i i-done\" aria-hidden=\"true\"><use href=\"#i-check\" /></svg>",
+       "        </button>",
+       "    </div>",
+       "</div>",
+       "<div class=\"windows-shell-panel\" id={`${idPrefix}-shell-cmd`} role=\"tabpanel\" aria-labelledby={`${idPrefix}-shell-cmd-tab`} data-windows-shell-panel=\"cmd\">"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "        <button type=\"button\" class=\"copy-btn\" data-copy={installCommands.windows.cmd} aria-label=\"Copy Command Prompt (cmd) install command\">",
+       "            <svg class=\"i\" aria-hidden=\"true\"><use href=\"#i-copy\" /></svg>",
+       "            <svg class=\"i i-done\" aria-hidden=\"true\"><use href=\"#i-check\" /></svg>",
+       "        </button>",
+       "    </div>",
+       "</div>",
+       "<div class=\"windows-shell-panel\" id={`${idPrefix}-shell-wsl`} role=\"tabpanel\" aria-labelledby={`${idPrefix}-shell-wsl-tab`} data-windows-shell-panel=\"wsl\">"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 34,
+     "tokens": 346,
+     "first": {
+      "name": "apps/website/src/attribution/protocol.ts",
+      "start": 60,
+      "end": 93
+     },
+     "others": [
+      {
+       "name": "packages/server/src/persistence/attributionProtocol.ts",
+       "start": 54,
+       "end": 87
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "export function normalizeCampaignValue(value: string, limit: number): string | undefined {",
+       "    const withoutControls = Array.from(value)",
+       "        .filter((character) => {",
+       "            const codePoint = character.codePointAt(0) ?? 0;",
+       "            return codePoint > 31 && (codePoint < 127 || codePoint > 159);",
+       "        })",
+       "        .join(\"\");",
+       "    const normalized = Array.from(withoutControls.trim()).slice(0, limit).join(\"\");",
+       "    return normalized.length > 0 ? normalized : undefined;",
+       "}"
+      ],
+      "total": 34
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 27,
+     "tokens": 167,
+     "first": {
+      "name": "packages/resource-renderers/src/renderers/csv/Diff.tsx",
+      "start": 109,
+      "end": 135
+     },
+     "others": [
+      {
+       "name": "packages/resource-renderers/src/renderers/json/Diff.tsx",
+       "start": 96,
+       "end": 122
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 10,
+     "tokens": 75,
+     "first": {
+      "name": "packages/resource-renderers/src/renderers/csv/Diff.tsx",
+      "start": 278,
+      "end": 287
+     },
+     "others": [
+      {
+       "name": "packages/resource-renderers/src/renderers/csv/View.tsx",
+       "start": 201,
+       "end": 210
+      },
+      {
+       "name": "packages/resource-renderers/src/renderers/json/View.tsx",
+       "start": 128,
+       "end": 137
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 20,
+     "tokens": 138,
+     "first": {
+      "name": "packages/resource-renderers/src/renderers/csv/View.tsx",
+      "start": 66,
+      "end": 85
+     },
+     "others": [
+      {
+       "name": "packages/resource-renderers/src/renderers/json/View.tsx",
+       "start": 58,
+       "end": 77
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 19,
+     "tokens": 137,
+     "first": {
+      "name": "packages/resource-renderers/src/renderers/csv/Diff.tsx",
+      "start": 277,
+      "end": 295
+     },
+     "others": [
+      {
+       "name": "packages/resource-renderers/src/renderers/json/Diff.tsx",
+       "start": 225,
+       "end": 243
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 113,
+     "first": {
+      "name": "apps/website/src/attribution/protocol.ts",
+      "start": 50,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "packages/server/src/persistence/attributionProtocol.ts",
+       "start": 44,
+       "end": 52
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 17,
+     "tokens": 113,
+     "first": {
+      "name": "packages/resource-renderers/src/renderers/csv/Diff.tsx",
+      "start": 117,
+      "end": 133
+     },
+     "others": [
+      {
+       "name": "packages/resource-renderers/src/renderers/csv/View.tsx",
+       "start": 67,
+       "end": 83
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 22,
+     "tokens": 112,
+     "first": {
+      "name": "packages/resource-renderers/src/renderers/pdf/PdfDiffPage.tsx",
+      "start": 64,
+      "end": 85
+     },
+     "others": [
+      {
+       "name": "packages/resource-renderers/src/renderers/pdf/PdfPageCanvas.tsx",
+       "start": 38,
+       "end": 59
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "apps/web/src/chat/generated/providerGlyphs.ts"
+    ]
+   }
+  },
+  "health": {
+   "score": 69.9,
+   "grade": "C",
+   "size": {
+    "lines": 299316,
+    "files": 1542,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 2.9,
+     "adjusted": 2.9,
+     "lines": 8650,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "tsx",
+      "bash",
+      "astro",
+      "powershell",
+      "javascript",
+      "sql"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 79
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.3,
+     "adjusted": 0.4,
+     "lines": 1019,
+     "halfLife": 7.5,
+     "coverage": 100,
+     "weight": 1,
+     "score": 96.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 58.3,
+     "adjusted": 58,
+     "lines": 174423,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 44.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 57457,
+   "mean": 37.3,
+   "files": [
+    {
+     "path": "apps/web/src/store/appStore.ts",
+     "complexity": 1544,
+     "lines": 4455,
+     "bytes": 147112
+    },
+    {
+     "path": "packages/server/src/agent/agentSessionManager.ts",
+     "complexity": 758,
+     "lines": 2860,
+     "bytes": 91568
+    },
+    {
+     "path": "packages/server/src/agent/agentSessionManager.test.ts",
+     "complexity": 610,
+     "lines": 3470,
+     "bytes": 123205
+    },
+    {
+     "path": "apps/web/src/shell/layout/model.ts",
+     "complexity": 528,
+     "lines": 1515,
+     "bytes": 52750
+    },
+    {
+     "path": "packages/pi-dag/runtime/service.ts",
+     "complexity": 508,
+     "lines": 1695,
+     "bytes": 60521
+    },
+    {
+     "path": "apps/web/src/store/appStore.test.ts",
+     "complexity": 488,
+     "lines": 4847,
+     "bytes": 169613
+    },
+    {
+     "path": "apps/web/src/chat/useChatScroll.ts",
+     "complexity": 432,
+     "lines": 1322,
+     "bytes": 47334
+    },
+    {
+     "path": "apps/web/src/chat/tools/AskUserQuestionCard.tsx",
+     "complexity": 403,
+     "lines": 1465,
+     "bytes": 46811
+    },
+    {
+     "path": "packages/pi-delegation/src/service.ts",
+     "complexity": 398,
+     "lines": 1346,
+     "bytes": 44497
+    },
+    {
+     "path": "packages/server/src/host/handlers.ts",
+     "complexity": 385,
+     "lines": 1380,
+     "bytes": 45044
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.34,
+   "findings": 45,
+   "files": 1617,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 12
+    },
+    {
+     "category": "unused-export",
+     "count": 20
+    },
+    {
+     "category": "unused-symbol",
+     "count": 13
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "apps/desktop/src/preload.ts",
+     "name": "",
+     "line": 1,
+     "lines": 188
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/desktop/preBuild.ts",
+     "name": "",
+     "line": 1,
+     "lines": 184
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/pi-package-parity.node.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 98
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/pi-dag/runtime/recovery.fixture.ts",
+     "name": "",
+     "line": 1,
+     "lines": 83
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/server/src/subprocess/windowsConsole.fixture.ts",
+     "name": "",
+     "line": 1,
+     "lines": 68
+    },
+    {
+     "category": "unused-export",
+     "path": "apps/desktop/src/pageZoom.ts",
+     "name": "installPageZoomGestures",
+     "line": 55,
+     "lines": 39
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/pi-dag/persistence/fixtures.ts",
+     "name": "",
+     "line": 1,
+     "lines": 39
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/pi-dag/runtime/provider.fixture.ts",
+     "name": "",
+     "line": 1,
+     "lines": 39
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/pi-dag/persistence/process.fixture.ts",
+     "name": "",
+     "line": 1,
+     "lines": 38
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/pi-background-commands/src/test-support.ts",
+     "name": "",
+     "line": 1,
+     "lines": 36
+    }
+   ]
+  }
+ }
+}

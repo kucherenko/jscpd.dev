@@ -33,67 +33,67 @@
    "codeSources": 86,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-10-26",
+   "rank": 3,
+   "stars": 114871,
+   "starsToday": 381,
+   "headSha": "e8f5503e9b86d5c2710b0c76b1f686703968c9df",
+   "sources": 185,
+   "lines": 29942,
+   "clones": 40,
+   "duplicatedLines": 378,
+   "percentage": 1.26,
+   "codePercentage": 1.75,
+   "codeSources": 64,
+   "healthScore": 83.6,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-09-15",
-  "generatedAt": "2026-09-15T05:28:35.758Z",
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T05:32:18.055Z",
   "name": "TauricResearch/TradingAgents",
   "url": "https://github.com/TauricResearch/TradingAgents",
   "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
   "language": "Python",
-  "stars": 106305,
-  "starsToday": 745,
+  "stars": 114871,
+  "starsToday": 381,
   "defaultBranch": "main",
-  "headSha": "be952b8eccb49720509af544c6675233bc1f10d0",
-  "durationMs": 64,
+  "headSha": "e8f5503e9b86d5c2710b0c76b1f686703968c9df",
+  "durationMs": 917,
   "total": {
-   "sources": 157,
-   "lines": 20349,
-   "tokens": 114191,
-   "clones": 20,
-   "duplicatedLines": 243,
-   "duplicatedTokens": 1567,
-   "percentage": 1.19,
-   "percentageTokens": 1.37
+   "sources": 185,
+   "lines": 29942,
+   "tokens": 195276,
+   "clones": 40,
+   "duplicatedLines": 378,
+   "duplicatedTokens": 2700,
+   "percentage": 1.26,
+   "percentageTokens": 1.38
   },
   "formats": [
    {
     "format": "python",
-    "sources": 139,
-    "lines": 18501,
-    "clones": 20,
-    "duplicatedLines": 243,
-    "percentage": 1.31
+    "sources": 170,
+    "lines": 28241,
+    "clones": 40,
+    "duplicatedLines": 378,
+    "percentage": 1.34
    },
    {
     "format": "markdown",
     "sources": 2,
-    "lines": 803,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "bash",
-    "sources": 10,
-    "lines": 670,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "perl",
-    "sources": 1,
-    "lines": 174,
+    "lines": 1155,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
     "format": "yaml",
-    "sources": 2,
-    "lines": 97,
+    "sources": 7,
+    "lines": 305,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -101,7 +101,31 @@
    {
     "format": "toml",
     "sources": 1,
-    "lines": 88,
+    "lines": 89,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 1,
+    "lines": 67,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 1,
+    "lines": 39,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "docker",
+    "sources": 1,
+    "lines": 30,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -126,18 +150,117 @@
   "topClones": [
    {
     "format": "python",
-    "lines": 38,
-    "tokens": 141,
+    "lines": 8,
+    "tokens": 69,
+    "first": {
+     "name": "tests/test_memory_log.py",
+     "start": 517,
+     "end": 524
+    },
+    "others": [
+     {
+      "name": "tests/test_memory_log.py",
+      "start": 553,
+      "end": 560
+     },
+     {
+      "name": "tests/test_memory_log.py",
+      "start": 569,
+      "end": 576
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "with patch(\"yfinance.Ticker\") as mock_ticker_cls:",
+      "    def _make_ticker(sym):",
+      "        m = MagicMock()",
+      "        m.history.return_value = _price_df(spy_prices if sym == \"SPY\" else stock_prices)",
+      "        return m",
+      "    mock_ticker_cls.side_effect = _make_ticker",
+      "    raw, alpha, days, resolved = settlement.fetch_returns(\"NVDA\", \"2026-01-05\")",
+      "assert raw is not None and alpha is not None and days is not None"
+     ],
+     "total": 8
+    },
+    "excerptSecond": {
+     "lines": [
+      "with patch(\"yfinance.Ticker\") as mock_ticker_cls:",
+      "    def _make_ticker(sym):",
+      "        m = MagicMock()",
+      "        m.history.return_value = _price_df(spy_prices if sym == \"SPY\" else stock_prices)",
+      "        return m",
+      "    mock_ticker_cls.side_effect = _make_ticker",
+      "    raw, alpha, days, resolved = settlement.fetch_returns(\"NVDA\", \"2026-01-05\")",
+      "assert raw is not None and alpha is not None"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 10,
+    "tokens": 128,
+    "first": {
+     "name": "tests/test_cli_env_skip.py",
+     "start": 53,
+     "end": 62
+    },
+    "others": [
+     {
+      "name": "tests/test_cli_env_skip.py",
+      "start": 122,
+      "end": 131
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "})",
+      "",
+      "with mock.patch.dict(os.environ, env, clear=False), \\",
+      "     mock.patch.object(cli_selections, \"DEFAULT_CONFIG\", fake_cfg), \\",
+      "     mock.patch.object(cli_selections.updates, \"enabled\", return_value=False), \\",
+      "     mock.patch.object(cli_selections, \"get_ticker\", return_value=\"AAPL\"), \\",
+      "     mock.patch.object(cli_selections, \"get_analysis_date\", return_value=\"2026-05-29\"), \\",
+      "     mock.patch.object(cli_selections, \"select_analysts\", return_value=[]), \\",
+      "     mock.patch.object(cli_selections, \"select_research_depth\", return_value=1), \\",
+      "     mock.patch.object(cli_selections, \"ensure_api_key\") as ensure_key, \\"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "fake_cfg.update({\"openai_reasoning_effort\": \"high\"})",
+      "",
+      "with mock.patch.dict(os.environ, env, clear=False), \\",
+      "     mock.patch.object(cli_selections, \"DEFAULT_CONFIG\", fake_cfg), \\",
+      "     mock.patch.object(cli_selections.updates, \"enabled\", return_value=False), \\",
+      "     mock.patch.object(cli_selections, \"get_ticker\", return_value=\"AAPL\"), \\",
+      "     mock.patch.object(cli_selections, \"get_analysis_date\", return_value=\"2026-05-29\"), \\",
+      "     mock.patch.object(cli_selections, \"select_analysts\", return_value=[]), \\",
+      "     mock.patch.object(cli_selections, \"select_research_depth\", return_value=1), \\",
+      "     mock.patch.object(cli_selections, \"ensure_api_key\"), \\"
+     ],
+     "total": 10
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 30,
+    "tokens": 117,
     "first": {
      "name": "tradingagents/agents/analysts/market_analyst.py",
-     "start": 54,
-     "end": 91
+     "start": 51,
+     "end": 80
     },
     "others": [
      {
       "name": "tradingagents/agents/analysts/news_analyst.py",
-      "start": 29,
-      "end": 65
+      "start": 30,
+      "end": 59
      }
     ],
     "copies": 2,
@@ -154,95 +277,118 @@
       "            \"You are a helpful AI assistant, collaborating with other assistants.\"",
       "            \" Use the provided tools to progress towards answering the question.\""
      ],
-     "total": 38
+     "total": 30
     },
     "kind": "code"
    },
    {
     "format": "python",
-    "lines": 11,
-    "tokens": 138,
+    "lines": 8,
+    "tokens": 57,
     "first": {
-     "name": "tests/test_cli_env_skip.py",
-     "start": 52,
-     "end": 62
+     "name": "tradingagents/agents/tools.py",
+     "start": 115,
+     "end": 122
     },
     "others": [
      {
-      "name": "tests/test_cli_env_skip.py",
-      "start": 125,
-      "end": 135
+      "name": "tradingagents/agents/tools.py",
+      "start": 134,
+      "end": 141
+     },
+     {
+      "name": "tradingagents/agents/tools.py",
+      "start": 153,
+      "end": 160
      }
     ],
-    "copies": 2,
-    "excerpt": {
-     "lines": [
-      "})",
-      "",
-      "with mock.patch.dict(os.environ, env, clear=False), \\",
-      "     mock.patch.object(m, \"DEFAULT_CONFIG\", fake_cfg), \\",
-      "     mock.patch.object(m, \"fetch_announcements\", return_value=None), \\",
-      "     mock.patch.object(m, \"display_announcements\"), \\",
-      "     mock.patch.object(m, \"get_ticker\", return_value=\"AAPL\"), \\",
-      "     mock.patch.object(m, \"get_analysis_date\", return_value=\"2026-05-29\"), \\",
-      "     mock.patch.object(m, \"select_analysts\", return_value=[]), \\",
-      "     mock.patch.object(m, \"select_research_depth\", return_value=1), \\"
-     ],
-     "total": 11
-    },
-    "kind": "tests"
+    "copies": 3,
+    "kind": "code"
    },
    {
     "format": "python",
-    "lines": 36,
-    "tokens": 133,
+    "lines": 29,
+    "tokens": 113,
     "first": {
      "name": "tradingagents/agents/analysts/fundamentals_analyst.py",
-     "start": 30,
-     "end": 65
+     "start": 32,
+     "end": 60
     },
     "others": [
      {
       "name": "tradingagents/agents/analysts/market_analyst.py",
-      "start": 56,
-      "end": 91
+      "start": 52,
+      "end": 80
      }
     ],
     "copies": 2,
-    "excerpt": {
-     "lines": [
-      ")",
-      "",
-      "prompt = ChatPromptTemplate.from_messages(",
-      "    [",
-      "        (",
-      "            \"system\",",
-      "            \"You are a helpful AI assistant, collaborating with other assistants.\"",
-      "            \" Use the provided tools to progress towards answering the question.\"",
-      "            \" If you are unable to fully answer, that's OK; another assistant with different tools\"",
-      "            \" will help where you left off. Execute what you can to make progress.\""
-     ],
-     "total": 36
-    },
     "kind": "code"
    },
    {
     "format": "python",
-    "lines": 10,
-    "tokens": 121,
+    "lines": 9,
+    "tokens": 111,
     "first": {
      "name": "tests/test_cli_env_skip.py",
-     "start": 52,
+     "start": 53,
      "end": 61
     },
     "others": [
      {
       "name": "tests/test_cli_env_skip.py",
-      "start": 95,
-      "end": 104
+      "start": 94,
+      "end": 102
      }
     ],
     "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 6,
+    "tokens": 51,
+    "first": {
+     "name": "tradingagents/agents/researchers/bear_researcher.py",
+     "start": 17,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "tradingagents/agents/risk_mgmt/aggressive_debator.py",
+      "start": 21,
+      "end": 27
+     },
+     {
+      "name": "tradingagents/agents/risk_mgmt/neutral_debator.py",
+      "start": 21,
+      "end": 27
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 50,
+    "first": {
+     "name": "tests/test_social_lookahead.py",
+     "start": 104,
+     "end": 110
+    },
+    "others": [
+     {
+      "name": "tests/test_social_lookahead.py",
+      "start": 116,
+      "end": 122
+     },
+     {
+      "name": "tests/test_social_lookahead.py",
+      "start": 144,
+      "end": 150
+     }
+    ],
+    "copies": 3,
     "kind": "tests"
    },
    {
@@ -251,14 +397,14 @@
     "tokens": 91,
     "first": {
      "name": "tests/test_cli_env_skip.py",
-     "start": 104,
-     "end": 110
+     "start": 102,
+     "end": 108
     },
     "others": [
      {
       "name": "tests/test_cli_env_skip.py",
-      "start": 134,
-      "end": 140
+      "start": 130,
+      "end": 136
      }
     ],
     "copies": 2,
@@ -266,150 +412,58 @@
    },
    {
     "format": "python",
-    "lines": 14,
-    "tokens": 80,
+    "lines": 6,
+    "tokens": 87,
     "first": {
-     "name": "tests/test_llm_max_retries.py",
-     "start": 79,
-     "end": 92
+     "name": "tests/test_cli_prefs.py",
+     "start": 98,
+     "end": 103
     },
     "others": [
      {
-      "name": "tests/test_llm_max_tokens.py",
-      "start": 102,
-      "end": 115
+      "name": "tests/test_cli_prefs.py",
+      "start": 150,
+      "end": 155
      }
     ],
     "copies": 2,
     "kind": "tests"
-   },
-   {
-    "format": "python",
-    "lines": 9,
-    "tokens": 79,
-    "first": {
-     "name": "tests/test_memory_log.py",
-     "start": 497,
-     "end": 505
-    },
-    "others": [
-     {
-      "name": "tests/test_memory_log.py",
-      "start": 536,
-      "end": 544
-     }
-    ],
-    "copies": 2,
-    "kind": "tests"
-   },
-   {
-    "format": "python",
-    "lines": 7,
-    "tokens": 72,
-    "first": {
-     "name": "tests/test_checkpoint_resume.py",
-     "start": 116,
-     "end": 122
-    },
-    "others": [
-     {
-      "name": "tests/test_checkpoint_resume.py",
-      "start": 175,
-      "end": 181
-     }
-    ],
-    "copies": 2,
-    "kind": "tests"
-   },
-   {
-    "format": "python",
-    "lines": 15,
-    "tokens": 67,
-    "first": {
-     "name": "tradingagents/agents/researchers/bear_researcher.py",
-     "start": 16,
-     "end": 30
-    },
-    "others": [
-     {
-      "name": "tradingagents/agents/researchers/bull_researcher.py",
-      "start": 16,
-      "end": 30
-     }
-    ],
-    "copies": 2,
-    "kind": "code"
-   },
-   {
-    "format": "python",
-    "lines": 8,
-    "tokens": 66,
-    "first": {
-     "name": "tradingagents/agents/risk_mgmt/conservative_debator.py",
-     "start": 33,
-     "end": 40
-    },
-    "others": [
-     {
-      "name": "tradingagents/agents/risk_mgmt/neutral_debator.py",
-      "start": 33,
-      "end": 40
-     }
-    ],
-    "copies": 2,
-    "kind": "code"
    }
   ],
   "code": {
-   "sources": 86,
-   "lines": 11674,
-   "tokens": 58844,
-   "clones": 10,
-   "duplicatedLines": 156,
-   "duplicatedTokens": 760,
-   "percentage": 1.34,
-   "percentageTokens": 1.29,
+   "sources": 64,
+   "lines": 10484,
+   "tokens": 62422,
+   "clones": 16,
+   "duplicatedLines": 183,
+   "duplicatedTokens": 1076,
+   "percentage": 1.75,
+   "percentageTokens": 1.72,
    "formats": [
     {
      "format": "python",
-     "sources": 76,
-     "lines": 10856,
-     "clones": 10,
-     "duplicatedLines": 156,
-     "percentage": 1.44
-    },
-    {
-     "format": "bash",
-     "sources": 9,
-     "lines": 644,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
-    },
-    {
-     "format": "perl",
-     "sources": 1,
-     "lines": 174,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "sources": 64,
+     "lines": 10484,
+     "clones": 16,
+     "duplicatedLines": 183,
+     "percentage": 1.75
     }
    ],
    "topClones": [
     {
      "format": "python",
-     "lines": 38,
-     "tokens": 141,
+     "lines": 30,
+     "tokens": 117,
      "first": {
       "name": "tradingagents/agents/analysts/market_analyst.py",
-      "start": 54,
-      "end": 91
+      "start": 51,
+      "end": 80
      },
      "others": [
       {
        "name": "tradingagents/agents/analysts/news_analyst.py",
-       "start": 29,
-       "end": 65
+       "start": 30,
+       "end": 59
       }
      ],
      "copies": 2,
@@ -426,29 +480,80 @@
        "            \"You are a helpful AI assistant, collaborating with other assistants.\"",
        "            \" Use the provided tools to progress towards answering the question.\""
       ],
-      "total": 38
+      "total": 30
      },
      "kind": "code"
     },
     {
      "format": "python",
-     "lines": 36,
-     "tokens": 133,
+     "lines": 8,
+     "tokens": 57,
+     "first": {
+      "name": "tradingagents/agents/tools.py",
+      "start": 115,
+      "end": 122
+     },
+     "others": [
+      {
+       "name": "tradingagents/agents/tools.py",
+       "start": 134,
+       "end": 141
+      },
+      {
+       "name": "tradingagents/agents/tools.py",
+       "start": 153,
+       "end": 160
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "def get_balance_sheet(",
+       "    ticker: Annotated[str, InjectedState(\"company_of_interest\")],",
+       "    freq: Annotated[str, \"reporting frequency: annual/quarterly\"] = \"quarterly\",",
+       "    curr_date: Annotated[str, \"current date you are trading at, yyyy-mm-dd\"] = None,",
+       "    trade_date: Annotated[str, InjectedState(\"trade_date\")] = \"\",",
+       ") -> str:",
+       "    \"\"\"",
+       "    Retrieve balance sheet data for the instrument under analysis."
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "def get_cashflow(",
+       "    ticker: Annotated[str, InjectedState(\"company_of_interest\")],",
+       "    freq: Annotated[str, \"reporting frequency: annual/quarterly\"] = \"quarterly\",",
+       "    curr_date: Annotated[str, \"current date you are trading at, yyyy-mm-dd\"] = None,",
+       "    trade_date: Annotated[str, InjectedState(\"trade_date\")] = \"\",",
+       ") -> str:",
+       "    \"\"\"",
+       "    Retrieve cash flow statement data for the instrument under analysis."
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 29,
+     "tokens": 113,
      "first": {
       "name": "tradingagents/agents/analysts/fundamentals_analyst.py",
-      "start": 30,
-      "end": 65
+      "start": 32,
+      "end": 60
      },
      "others": [
       {
        "name": "tradingagents/agents/analysts/market_analyst.py",
-       "start": 56,
-       "end": 91
+       "start": 52,
+       "end": 80
       }
      ],
      "copies": 2,
      "excerpt": {
       "lines": [
+       "    + get_language_instruction()",
        ")",
        "",
        "prompt = ChatPromptTemplate.from_messages(",
@@ -457,61 +562,88 @@
        "            \"system\",",
        "            \"You are a helpful AI assistant, collaborating with other assistants.\"",
        "            \" Use the provided tools to progress towards answering the question.\"",
-       "            \" If you are unable to fully answer, that's OK; another assistant with different tools\"",
-       "            \" will help where you left off. Execute what you can to make progress.\""
+       "            \" If you are unable to fully answer, that's OK; another assistant with different tools\""
       ],
-      "total": 36
+      "total": 29
      },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 6,
+     "tokens": 51,
+     "first": {
+      "name": "tradingagents/agents/researchers/bear_researcher.py",
+      "start": 17,
+      "end": 22
+     },
+     "others": [
+      {
+       "name": "tradingagents/agents/risk_mgmt/aggressive_debator.py",
+       "start": 21,
+       "end": 27
+      },
+      {
+       "name": "tradingagents/agents/risk_mgmt/neutral_debator.py",
+       "start": 21,
+       "end": 27
+      }
+     ],
+     "copies": 3,
      "kind": "code"
     },
     {
      "format": "python",
      "lines": 15,
-     "tokens": 67,
+     "tokens": 87,
      "first": {
       "name": "tradingagents/agents/researchers/bear_researcher.py",
-      "start": 16,
-      "end": 30
+      "start": 17,
+      "end": 31
      },
      "others": [
       {
        "name": "tradingagents/agents/researchers/bull_researcher.py",
-       "start": 16,
-       "end": 30
+       "start": 17,
+       "end": 31
       }
      ],
      "copies": 2,
-     "excerpt": {
-      "lines": [
-       ")",
-       "market_research_report = state[\"market_report\"]",
-       "sentiment_report = state[\"sentiment_report\"]",
-       "news_report = state[\"news_report\"]",
-       "fundamentals_report = state[\"fundamentals_report\"]",
-       "instrument_context = get_instrument_context_from_state(state)",
-       "asset_type = state.get(\"asset_type\", \"stock\")",
-       "target_label = \"stock\" if asset_type == \"stock\" else \"asset\"",
-       "fundamentals_label = (",
-       "    \"Company fundamentals report\""
-      ],
-      "total": 15
-     },
      "kind": "code"
     },
     {
      "format": "python",
-     "lines": 8,
-     "tokens": 66,
+     "lines": 15,
+     "tokens": 82,
+     "first": {
+      "name": "tradingagents/agents/risk_mgmt/aggressive_debator.py",
+      "start": 18,
+      "end": 32
+     },
+     "others": [
+      {
+       "name": "tradingagents/agents/risk_mgmt/conservative_debator.py",
+       "start": 18,
+       "end": 32
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 69,
      "first": {
       "name": "tradingagents/agents/risk_mgmt/conservative_debator.py",
-      "start": 33,
-      "end": 40
+      "start": 36,
+      "end": 44
      },
      "others": [
       {
        "name": "tradingagents/agents/risk_mgmt/neutral_debator.py",
-       "start": 33,
-       "end": 40
+       "start": 36,
+       "end": 44
       }
      ],
      "copies": 2,
@@ -519,37 +651,18 @@
     },
     {
      "format": "python",
-     "lines": 8,
-     "tokens": 66,
-     "first": {
-      "name": "tradingagents/agents/utils/fundamental_data_tools.py",
-      "start": 51,
-      "end": 58
-     },
-     "others": [
-      {
-       "name": "tradingagents/agents/utils/fundamental_data_tools.py",
-       "start": 70,
-       "end": 77
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "python",
-     "lines": 8,
+     "lines": 10,
      "tokens": 65,
      "first": {
-      "name": "tradingagents/agents/utils/fundamental_data_tools.py",
-      "start": 32,
-      "end": 39
+      "name": "tradingagents/agents/risk_mgmt/aggressive_debator.py",
+      "start": 23,
+      "end": 32
      },
      "others": [
       {
-       "name": "tradingagents/agents/utils/fundamental_data_tools.py",
-       "start": 51,
-       "end": 58
+       "name": "tradingagents/agents/risk_mgmt/neutral_debator.py",
+       "start": 23,
+       "end": 32
       }
      ],
      "copies": 2,
@@ -560,15 +673,15 @@
      "lines": 14,
      "tokens": 59,
      "first": {
-      "name": "cli/main.py",
-      "start": 339,
-      "end": 352
+      "name": "cli/display.py",
+      "start": 232,
+      "end": 245
      },
      "others": [
       {
-       "name": "cli/main.py",
-       "start": 356,
-       "end": 369
+       "name": "cli/display.py",
+       "start": 248,
+       "end": 261
       }
      ],
      "copies": 2,
@@ -576,56 +689,18 @@
     },
     {
      "format": "python",
-     "lines": 14,
+     "lines": 7,
      "tokens": 56,
      "first": {
-      "name": "tradingagents/agents/risk_mgmt/aggressive_debator.py",
-      "start": 16,
-      "end": 29
+      "name": "tradingagents/agents/tools.py",
+      "start": 141,
+      "end": 147
      },
      "others": [
       {
-       "name": "tradingagents/agents/risk_mgmt/conservative_debator.py",
-       "start": 16,
-       "end": 29
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "python",
-     "lines": 6,
-     "tokens": 56,
-     "first": {
-      "name": "tradingagents/llm_clients/openai_client.py",
-      "start": 99,
-      "end": 104
-     },
-     "others": [
-      {
-       "name": "tradingagents/llm_clients/openai_client.py",
-       "start": 149,
-       "end": 154
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "python",
-     "lines": 9,
-     "tokens": 51,
-     "first": {
-      "name": "tradingagents/llm_clients/anthropic_client.py",
-      "start": 45,
-      "end": 53
-     },
-     "others": [
-      {
-       "name": "tradingagents/llm_clients/google_client.py",
-       "start": 12,
-       "end": 20
+       "name": "tradingagents/agents/tools.py",
+       "start": 160,
+       "end": 166
       }
      ],
      "copies": 2,
@@ -638,7 +713,128 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T06:04:24.105Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 83.6,
+   "grade": "B",
+   "size": {
+    "lines": 28231,
+    "files": 170,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.3,
+     "adjusted": 1.5,
+     "lines": 378,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 88.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 0.2,
+     "lines": 0,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 98.1
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 29.3,
+     "adjusted": 28.7,
+     "lines": 8264,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 67.2
+    }
+   ]
+  },
+  "complexity": {
+   "total": 3776,
+   "mean": 22.2,
+   "files": [
+    {
+     "path": "tests/test_memory_log.py",
+     "complexity": 171,
+     "lines": 1316,
+     "bytes": 59920
+    },
+    {
+     "path": "cli/display.py",
+     "complexity": 125,
+     "lines": 622,
+     "bytes": 23542
+    },
+    {
+     "path": "tradingagents/llm_clients/chatgpt_auth.py",
+     "complexity": 118,
+     "lines": 416,
+     "bytes": 18792
+    },
+    {
+     "path": "tradingagents/memory/log.py",
+     "complexity": 101,
+     "lines": 359,
+     "bytes": 14841
+    },
+    {
+     "path": "cli/run.py",
+     "complexity": 93,
+     "lines": 464,
+     "bytes": 22177
+    },
+    {
+     "path": "tests/test_graph_end_to_end.py",
+     "complexity": 88,
+     "lines": 389,
+     "bytes": 17955
+    },
+    {
+     "path": "tests/test_chatgpt_auth.py",
+     "complexity": 80,
+     "lines": 424,
+     "bytes": 17513
+    },
+    {
+     "path": "cli/updates.py",
+     "complexity": 79,
+     "lines": 220,
+     "bytes": 8855
+    },
+    {
+     "path": "tradingagents/dataflows/vendors/reddit.py",
+     "complexity": 74,
+     "lines": 337,
+     "bytes": 14593
+    },
+    {
+     "path": "tradingagents/llm_clients/openai_client.py",
+     "complexity": 69,
+     "lines": 411,
+     "bytes": 19627
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 183,
+   "byCategory": [],
+   "largest": []
+  }
  }
 }
