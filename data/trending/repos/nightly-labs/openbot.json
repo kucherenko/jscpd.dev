@@ -1,0 +1,1184 @@
+{
+ "name": "nightly-labs/openbot",
+ "url": "https://github.com/nightly-labs/openbot",
+ "appearances": [
+  {
+   "date": "2026-10-27",
+   "rank": 6,
+   "stars": 1641,
+   "starsToday": 176,
+   "headSha": "f91535fb0c8d6fd0a63911ec6e4b67154fd85ebe",
+   "sources": 5466,
+   "lines": 1043738,
+   "clones": 2686,
+   "duplicatedLines": 36343,
+   "percentage": 3.48,
+   "codePercentage": 3.01,
+   "codeSources": 3489,
+   "healthScore": 61.5,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T05:30:54.898Z",
+  "name": "nightly-labs/openbot",
+  "url": "https://github.com/nightly-labs/openbot",
+  "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+  "language": "TypeScript",
+  "stars": 1641,
+  "starsToday": 176,
+  "defaultBranch": "main",
+  "headSha": "f91535fb0c8d6fd0a63911ec6e4b67154fd85ebe",
+  "durationMs": 6822,
+  "total": {
+   "sources": 5466,
+   "lines": 1043738,
+   "tokens": 7082523,
+   "clones": 2686,
+   "duplicatedLines": 36343,
+   "duplicatedTokens": 260460,
+   "percentage": 3.48,
+   "percentageTokens": 3.68
+  },
+  "formats": [
+   {
+    "format": "typescript",
+    "sources": 3617,
+    "lines": 671355,
+    "clones": 1864,
+    "duplicatedLines": 26126,
+    "percentage": 3.89
+   },
+   {
+    "format": "tsx",
+    "sources": 1123,
+    "lines": 238882,
+    "clones": 326,
+    "duplicatedLines": 3805,
+    "percentage": 1.59
+   },
+   {
+    "format": "css",
+    "sources": 142,
+    "lines": 65095,
+    "clones": 259,
+    "duplicatedLines": 2034,
+    "percentage": 3.12
+   },
+   {
+    "format": "diff",
+    "sources": 11,
+    "lines": 6258,
+    "clones": 132,
+    "duplicatedLines": 1256,
+    "percentage": 20.07
+   },
+   {
+    "format": "json",
+    "sources": 123,
+    "lines": 10450,
+    "clones": 45,
+    "duplicatedLines": 1965,
+    "percentage": 18.8
+   },
+   {
+    "format": "yaml",
+    "sources": 42,
+    "lines": 6288,
+    "clones": 21,
+    "duplicatedLines": 258,
+    "percentage": 4.1
+   },
+   {
+    "format": "markdown",
+    "sources": 261,
+    "lines": 36103,
+    "clones": 19,
+    "duplicatedLines": 144,
+    "percentage": 0.4
+   },
+   {
+    "format": "sql",
+    "sources": 34,
+    "lines": 1863,
+    "clones": 11,
+    "duplicatedLines": 652,
+    "percentage": 35
+   },
+   {
+    "format": "bash",
+    "sources": 43,
+    "lines": 3226,
+    "clones": 3,
+    "duplicatedLines": 23,
+    "percentage": 0.71
+   },
+   {
+    "format": "markup",
+    "sources": 12,
+    "lines": 184,
+    "clones": 3,
+    "duplicatedLines": 42,
+    "percentage": 22.83
+   }
+  ],
+  "topClones": [
+   {
+    "format": "typescript",
+    "lines": 55,
+    "tokens": 473,
+    "first": {
+     "name": "packages/i18n/src/messages/de/index.ts",
+     "start": 1,
+     "end": 55
+    },
+    "others": [
+     {
+      "name": "packages/i18n/src/messages/es/index.ts",
+      "start": 1,
+      "end": 55
+     },
+     {
+      "name": "packages/i18n/src/messages/fr/index.ts",
+      "start": 1,
+      "end": 67
+     },
+     {
+      "name": "packages/i18n/src/messages/it/index.ts",
+      "start": 1,
+      "end": 67
+     },
+     {
+      "name": "packages/i18n/src/messages/ja/index.ts",
+      "start": 1,
+      "end": 66
+     },
+     {
+      "name": "packages/i18n/src/messages/ko/index.ts",
+      "start": 1,
+      "end": 66
+     },
+     {
+      "name": "packages/i18n/src/messages/pl/index.ts",
+      "start": 1,
+      "end": 67
+     },
+     {
+      "name": "packages/i18n/src/messages/pt/index.ts",
+      "start": 1,
+      "end": 56
+     },
+     {
+      "name": "packages/i18n/src/messages/ru/index.ts",
+      "start": 1,
+      "end": 68
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "import type { PartialTranslation } from \"../../message\";",
+      "import type { AppMessages } from \"../en/index\";",
+      "import { messages as account } from \"./account\";",
+      "import { messages as agent } from \"./agent\";",
+      "import { messages as agentSettings } from \"./agentSettings\";",
+      "import { messages as agentTemplate } from \"./agentTemplate\";",
+      "import { messages as app } from \"./app\";",
+      "import { messages as attachment } from \"./attachment\";",
+      "import { messages as billing } from \"./billing\";",
+      "import { messages as browser } from \"./browser\";"
+     ],
+     "total": 55
+    },
+    "kind": "translations"
+   },
+   {
+    "format": "typescript",
+    "lines": 67,
+    "tokens": 393,
+    "first": {
+     "name": "packages/i18n/src/messages/de/source.ts",
+     "start": 1,
+     "end": 67
+    },
+    "others": [
+     {
+      "name": "packages/i18n/src/messages/es/source.ts",
+      "start": 1,
+      "end": 67
+     },
+     {
+      "name": "packages/i18n/src/messages/fr/source.ts",
+      "start": 1,
+      "end": 68
+     },
+     {
+      "name": "packages/i18n/src/messages/it/source.ts",
+      "start": 1,
+      "end": 68
+     },
+     {
+      "name": "packages/i18n/src/messages/ja/source.ts",
+      "start": 1,
+      "end": 68
+     },
+     {
+      "name": "packages/i18n/src/messages/pl/source.ts",
+      "start": 1,
+      "end": 68
+     },
+     {
+      "name": "packages/i18n/src/messages/pt/source.ts",
+      "start": 1,
+      "end": 68
+     },
+     {
+      "name": "packages/i18n/src/messages/ru/source.ts",
+      "start": 1,
+      "end": 68
+     },
+     {
+      "name": "packages/i18n/src/messages/tr/source.ts",
+      "start": 1,
+      "end": 68
+     }
+    ],
+    "copies": 9,
+    "excerpt": {
+     "lines": [
+      "import { messages as errorAgent } from \"./error/agent\";",
+      "import { messages as errorApp } from \"./error/app\";",
+      "import { messages as errorAttachment } from \"./error/attachment\";",
+      "import { messages as errorAuth } from \"./error/auth\";",
+      "import { messages as errorBackend } from \"./error/backend\";",
+      "import { messages as errorBilling } from \"./error/billing\";",
+      "import { messages as errorComputerUse } from \"./error/computerUse\";",
+      "import { messages as errorConnector } from \"./error/connector\";",
+      "import { messages as errorHost } from \"./error/host\";",
+      "import { messages as errorImport } from \"./error/import\";"
+     ],
+     "total": 67
+    },
+    "kind": "translations"
+   },
+   {
+    "format": "typescript",
+    "lines": 23,
+    "tokens": 185,
+    "first": {
+     "name": "packages/i18n/src/messages/de/mobile.ts",
+     "start": 1,
+     "end": 23
+    },
+    "others": [
+     {
+      "name": "packages/i18n/src/messages/es/mobile.ts",
+      "start": 1,
+      "end": 23
+     },
+     {
+      "name": "packages/i18n/src/messages/fr/mobile.ts",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "packages/i18n/src/messages/it/mobile.ts",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "packages/i18n/src/messages/ja/mobile.ts",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "packages/i18n/src/messages/ko/mobile.ts",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "packages/i18n/src/messages/pl/mobile.ts",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "packages/i18n/src/messages/pt/mobile.ts",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "packages/i18n/src/messages/ru/mobile.ts",
+      "start": 1,
+      "end": 24
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "import type { PartialTranslation } from \"../../message\";",
+      "import type { AppMobileMessages } from \"../en/mobile\";",
+      "import { messages as mobileAgent } from \"./mobile/agent\";",
+      "import { messages as mobileApp } from \"./mobile/app\";",
+      "import { messages as mobileAppLock } from \"./mobile/appLock\";",
+      "import { messages as mobileAuth } from \"./mobile/auth\";",
+      "import { messages as mobileBrowser } from \"./mobile/browser\";",
+      "import { messages as mobileChannel } from \"./mobile/channel\";",
+      "import { messages as mobileChat } from \"./mobile/chat\";",
+      "import { messages as mobileLink } from \"./mobile/link\";"
+     ],
+     "total": 23
+    },
+    "kind": "translations"
+   },
+   {
+    "format": "json",
+    "lines": 150,
+    "tokens": 594,
+    "first": {
+     "name": "native-runtime.lock.json",
+     "start": 662,
+     "end": 811
+    },
+    "others": [
+     {
+      "name": "native-runtime.lock.json",
+      "start": 885,
+      "end": 1034
+     },
+     {
+      "name": "native-runtime.lock.json",
+      "start": 1108,
+      "end": 1257
+     },
+     {
+      "name": "native-runtime.lock.json",
+      "start": 1331,
+      "end": 1480
+     }
+    ],
+    "copies": 4,
+    "kind": "data"
+   },
+   {
+    "format": "typescript",
+    "lines": 53,
+    "tokens": 159,
+    "first": {
+     "name": "packages/i18n/src/messages/de/index.ts",
+     "start": 55,
+     "end": 107
+    },
+    "others": [
+     {
+      "name": "packages/i18n/src/messages/en/index.ts",
+      "start": 65,
+      "end": 117
+     },
+     {
+      "name": "packages/i18n/src/messages/es/index.ts",
+      "start": 55,
+      "end": 107
+     },
+     {
+      "name": "packages/i18n/src/messages/fr/index.ts",
+      "start": 67,
+      "end": 119
+     },
+     {
+      "name": "packages/i18n/src/messages/it/index.ts",
+      "start": 67,
+      "end": 119
+     },
+     {
+      "name": "packages/i18n/src/messages/ja/index.ts",
+      "start": 66,
+      "end": 118
+     },
+     {
+      "name": "packages/i18n/src/messages/ko/index.ts",
+      "start": 66,
+      "end": 118
+     },
+     {
+      "name": "packages/i18n/src/messages/pl/index.ts",
+      "start": 67,
+      "end": 119
+     },
+     {
+      "name": "packages/i18n/src/messages/pt/index.ts",
+      "start": 56,
+      "end": 108
+     }
+    ],
+    "copies": 12,
+    "kind": "translations"
+   },
+   {
+    "format": "typescript",
+    "lines": 80,
+    "tokens": 484,
+    "first": {
+     "name": "scripts/browser-agent-session-e2e.ts",
+     "start": 47,
+     "end": 126
+    },
+    "others": [
+     {
+      "name": "scripts/browser-card-smoke.ts",
+      "start": 47,
+      "end": 126
+     },
+     {
+      "name": "scripts/browser-sign-in-e2e.ts",
+      "start": 47,
+      "end": 126
+     },
+     {
+      "name": "scripts/browser-user-control-e2e.ts",
+      "start": 47,
+      "end": 126
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 237,
+    "tokens": 1386,
+    "first": {
+     "name": "scripts/live-activity-autolink-e2e.ts",
+     "start": 37,
+     "end": 273
+    },
+    "others": [
+     {
+      "name": "scripts/live-activity-inline-fence-e2e.ts",
+      "start": 36,
+      "end": 273
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 196,
+    "tokens": 1126,
+    "first": {
+     "name": "scripts/live-activity-autolink-e2e.ts",
+     "start": 37,
+     "end": 232
+    },
+    "others": [
+     {
+      "name": "scripts/live-activity-code-span-e2e.ts",
+      "start": 48,
+      "end": 244
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 58,
+    "tokens": 363,
+    "first": {
+     "name": "packages/i18n/src/messages/de/source.ts",
+     "start": 1,
+     "end": 58
+    },
+    "others": [
+     {
+      "name": "packages/i18n/src/messages/en/source.ts",
+      "start": 1,
+      "end": 59
+     },
+     {
+      "name": "packages/i18n/src/messages/ko/source.ts",
+      "start": 1,
+      "end": 59
+     },
+     {
+      "name": "packages/i18n/src/messages/zh/source.ts",
+      "start": 1,
+      "end": 59
+     }
+    ],
+    "copies": 4,
+    "kind": "translations"
+   },
+   {
+    "format": "diff",
+    "lines": 7,
+    "tokens": 266,
+    "first": {
+     "name": "patches/solid-recharts@1.0.1.patch",
+     "start": 2953,
+     "end": 2959
+    },
+    "others": [
+     {
+      "name": "patches/solid-recharts@1.0.1.patch",
+      "start": 2965,
+      "end": 2971
+     },
+     {
+      "name": "patches/solid-recharts@1.0.1.patch",
+      "start": 3007,
+      "end": 3013
+     },
+     {
+      "name": "patches/solid-recharts@1.0.1.patch",
+      "start": 3019,
+      "end": 3025
+     },
+     {
+      "name": "patches/solid-recharts@1.0.1.patch",
+      "start": 3031,
+      "end": 3037
+     }
+    ],
+    "copies": 5,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 3489,
+   "lines": 749828,
+   "tokens": 4900088,
+   "clones": 1837,
+   "duplicatedLines": 22591,
+   "duplicatedTokens": 156088,
+   "percentage": 3.01,
+   "percentageTokens": 3.19,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 2332,
+     "lines": 505453,
+     "clones": 1506,
+     "duplicatedLines": 18730,
+     "percentage": 3.71
+    },
+    {
+     "format": "tsx",
+     "sources": 1104,
+     "lines": 238147,
+     "clones": 326,
+     "duplicatedLines": 3805,
+     "percentage": 1.6
+    },
+    {
+     "format": "bash",
+     "sources": 23,
+     "lines": 2995,
+     "clones": 2,
+     "duplicatedLines": 18,
+     "percentage": 0.6
+    },
+    {
+     "format": "ruby",
+     "sources": 4,
+     "lines": 112,
+     "clones": 2,
+     "duplicatedLines": 32,
+     "percentage": 28.57
+    },
+    {
+     "format": "swift",
+     "sources": 6,
+     "lines": 997,
+     "clones": 1,
+     "duplicatedLines": 6,
+     "percentage": 0.6
+    },
+    {
+     "format": "javascript",
+     "sources": 14,
+     "lines": 1477,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "kotlin",
+     "sources": 5,
+     "lines": 609,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "groovy",
+     "sources": 1,
+     "lines": 38,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 80,
+     "tokens": 484,
+     "first": {
+      "name": "scripts/browser-agent-session-e2e.ts",
+      "start": 47,
+      "end": 126
+     },
+     "others": [
+      {
+       "name": "scripts/browser-card-smoke.ts",
+       "start": 47,
+       "end": 126
+      },
+      {
+       "name": "scripts/browser-sign-in-e2e.ts",
+       "start": 47,
+       "end": 126
+      },
+      {
+       "name": "scripts/browser-user-control-e2e.ts",
+       "start": 47,
+       "end": 126
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "      cases: z.array(z.string()).length(16),",
+       "      runId: z.literal(runId),",
+       "      sourceSha: z.literal(sourceSha),",
+       "    })",
+       "    .parse(JSON.parse(await readFile(reportPath, \"utf8\")));",
+       "  // Machine-readable summary of the completed case count.",
+       "  process.stdout.write(",
+       "    `${JSON.stringify({ status: report.status, cases: report.cases.length, report: reportPath })}\\n`,",
+       "  );",
+       "} catch (error) {"
+      ],
+      "total": 80
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 237,
+     "tokens": 1386,
+     "first": {
+      "name": "scripts/live-activity-autolink-e2e.ts",
+      "start": 37,
+      "end": 273
+     },
+     "others": [
+      {
+       "name": "scripts/live-activity-inline-fence-e2e.ts",
+       "start": 36,
+       "end": 273
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  \"scripts/live-activity-autolink-e2e.ts\",",
+       "  \"src/main/live-activity-push.ts\",",
+       "  \"packages/team-client/src/dynamic-island-coordinator.ts\",",
+       "  \"packages/team-client/src/dynamic-island-presentation.ts\",",
+       "  \"packages/team-client/src/agent-message-text.ts\",",
+       "  \"packages/team-client/src/live-activity-props.ts\",",
+       "  \"packages/team-client/src/live-activity-text.ts\",",
+       "  \"packages/team-client/src/live-activity-seal.ts\",",
+       "  \"apps/mobile/src/features/live-activity/model/live-activity-open.ts\",",
+       "];"
+      ],
+      "total": 237
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 196,
+     "tokens": 1126,
+     "first": {
+      "name": "scripts/live-activity-autolink-e2e.ts",
+      "start": 37,
+      "end": 232
+     },
+     "others": [
+      {
+       "name": "scripts/live-activity-code-span-e2e.ts",
+       "start": 48,
+       "end": 244
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  \"scripts/live-activity-autolink-e2e.ts\",",
+       "  \"src/main/live-activity-push.ts\",",
+       "  \"packages/team-client/src/dynamic-island-coordinator.ts\",",
+       "  \"packages/team-client/src/dynamic-island-presentation.ts\",",
+       "  \"packages/team-client/src/agent-message-text.ts\",",
+       "  \"packages/team-client/src/live-activity-props.ts\",",
+       "  \"packages/team-client/src/live-activity-text.ts\",",
+       "  \"packages/team-client/src/live-activity-seal.ts\",",
+       "  \"apps/mobile/src/features/live-activity/model/live-activity-open.ts\",",
+       "];"
+      ],
+      "total": 196
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 24,
+     "tokens": 262,
+     "first": {
+      "name": "packages/contracts/src/team-protocol/v4-adapter.ts",
+      "start": 146,
+      "end": 169
+     },
+     "others": [
+      {
+       "name": "packages/contracts/src/team-protocol/v5-adapter.ts",
+       "start": 169,
+       "end": 192
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v6-adapter.ts",
+       "start": 169,
+       "end": 192
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v7-adapter.ts",
+       "start": 131,
+       "end": 154
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v8-adapter.ts",
+       "start": 132,
+       "end": 155
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 72,
+     "tokens": 488,
+     "first": {
+      "name": "scripts/claude-foreign-session-e2e.ts",
+      "start": 107,
+      "end": 178
+     },
+     "others": [
+      {
+       "name": "scripts/claude-usage-resume-e2e.ts",
+       "start": 127,
+       "end": 198
+      },
+      {
+       "name": "scripts/provider-session-reuse-e2e.ts",
+       "start": 236,
+       "end": 307
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 233,
+     "first": {
+      "name": "packages/contracts/src/team-protocol/v4-adapter.ts",
+      "start": 284,
+      "end": 299
+     },
+     "others": [
+      {
+       "name": "packages/contracts/src/team-protocol/v5-adapter.ts",
+       "start": 312,
+       "end": 327
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v6-adapter.ts",
+       "start": 312,
+       "end": 327
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v7-adapter.ts",
+       "start": 333,
+       "end": 348
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v8-adapter.ts",
+       "start": 334,
+       "end": 349
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 70,
+     "tokens": 826,
+     "first": {
+      "name": "packages/contracts/src/team-protocol/provider-aware-codec.ts",
+      "start": 1134,
+      "end": 1203
+     },
+     "others": [
+      {
+       "name": "packages/contracts/src/team-protocol/v1.ts",
+       "start": 1048,
+       "end": 1117
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 24,
+     "tokens": 182,
+     "first": {
+      "name": "apps/auth-api/src/routes/brand/index.tsx",
+      "start": 9,
+      "end": 32
+     },
+     "others": [
+      {
+       "name": "apps/auth-api/src/routes/commercial-license.tsx",
+       "start": 9,
+       "end": 32
+      },
+      {
+       "name": "apps/auth-api/src/routes/privacy-policy.tsx",
+       "start": 9,
+       "end": 32
+      },
+      {
+       "name": "apps/auth-api/src/routes/teams.tsx",
+       "start": 9,
+       "end": 32
+      },
+      {
+       "name": "apps/auth-api/src/routes/terms.tsx",
+       "start": 9,
+       "end": 32
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 15,
+     "tokens": 182,
+     "first": {
+      "name": "packages/contracts/src/team-protocol/v4-adapter.ts",
+      "start": 188,
+      "end": 202
+     },
+     "others": [
+      {
+       "name": "packages/contracts/src/team-protocol/v5-adapter.ts",
+       "start": 211,
+       "end": 225
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v6-adapter.ts",
+       "start": 211,
+       "end": 225
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v7-adapter.ts",
+       "start": 173,
+       "end": 187
+      },
+      {
+       "name": "packages/contracts/src/team-protocol/v8-adapter.ts",
+       "start": 174,
+       "end": 188
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 29,
+     "tokens": 242,
+     "first": {
+      "name": "scripts/agent-access-e2e.ts",
+      "start": 52,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "scripts/agent-hide-restore-e2e.ts",
+       "start": 54,
+       "end": 82
+      },
+      {
+       "name": "scripts/team-api-legacy-clients-e2e.ts",
+       "start": 67,
+       "end": 95
+      },
+      {
+       "name": "scripts/team-session-revoke-e2e.ts",
+       "start": 58,
+       "end": 85
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 10,
+    "minified": 0,
+    "sample": [
+     "apps/auth-api/src/lib/plugin-catalog.generated.ts",
+     "apps/auth-api/src/routeTree.gen.ts",
+     "apps/mobile/src/features/marketplace/model/plugin-catalog.generated.ts",
+     "apps/mobile/src/uniwind-types.d.ts",
+     "packages/brand/src/wordmark-shape.ts",
+     "src/backend/released-schemas/v0.1.12.sql",
+     "src/backend/released-schemas/v0.1.15.sql",
+     "src/backend/released-schemas/v0.1.18.sql",
+     "src/backend/released-schemas/v0.2.1.sql",
+     "src/renderer/src/features/settings/marketplace-plugin-catalog.ts"
+    ]
+   }
+  },
+  "health": {
+   "score": 61.5,
+   "grade": "C",
+   "size": {
+    "lines": 917947,
+    "files": 4817,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.3,
+     "adjusted": 3.3,
+     "lines": 30639,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "tsx",
+      "bash",
+      "sql",
+      "javascript",
+      "swift",
+      "kotlin",
+      "nix",
+      "ruby",
+      "docker",
+      "groovy"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 76.2
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 4.5,
+     "adjusted": 4.5,
+     "lines": 41571,
+     "halfLife": 7.5,
+     "coverage": 99.5,
+     "weight": 0.995,
+     "score": 65.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 55.4,
+     "adjusted": 55.3,
+     "lines": 508568,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 46.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 174043,
+   "mean": 36.1,
+   "files": [
+    {
+     "path": "packages/contracts/src/team-protocol/provider-aware-codec.ts",
+     "complexity": 1360,
+     "lines": 3023,
+     "bytes": 123767
+    },
+    {
+     "path": "packages/contracts/src/team-protocol/v1.ts",
+     "complexity": 1347,
+     "lines": 2831,
+     "bytes": 108903
+    },
+    {
+     "path": "src/backend/agent-service.ts",
+     "complexity": 1216,
+     "lines": 4795,
+     "bytes": 210384
+    },
+    {
+     "path": "packages/ui/src/features/workflows/WorkflowCanvas.tsx",
+     "complexity": 1045,
+     "lines": 3168,
+     "bytes": 128443
+    },
+    {
+     "path": "src/renderer/src/preview/mock-openbot.ts",
+     "complexity": 1035,
+     "lines": 2950,
+     "bytes": 131612
+    },
+    {
+     "path": "src/backend/agent/provider-runtime.ts",
+     "complexity": 1016,
+     "lines": 3714,
+     "bytes": 173226
+    },
+    {
+     "path": "src/backend/mailbox-store.ts",
+     "complexity": 995,
+     "lines": 2949,
+     "bytes": 126871
+    },
+    {
+     "path": "scripts/browser-smoke-electron.ts",
+     "complexity": 945,
+     "lines": 3865,
+     "bytes": 194462
+    },
+    {
+     "path": "src/backend/channel-service.ts",
+     "complexity": 945,
+     "lines": 2809,
+     "bytes": 130542
+    },
+    {
+     "path": "src/backend/browser-host.ts",
+     "complexity": 915,
+     "lines": 3128,
+     "bytes": 132642
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 4.55,
+   "findings": 209,
+   "files": 5084,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 173
+    },
+    {
+     "category": "unused-export",
+     "count": 22
+    },
+    {
+     "category": "unused-symbol",
+     "count": 13
+    },
+    {
+     "category": "unused-import",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "scripts/browser-smoke-electron.ts",
+     "name": "",
+     "line": 1,
+     "lines": 3865
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/workflow-team-api-e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1044
+    },
+    {
+     "category": "unused-file",
+     "path": "src/renderer/src/features/team/team-webrtc.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1035
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/browser-fill-fields-electron.ts",
+     "name": "",
+     "line": 1,
+     "lines": 849
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/stuck-running-deliveries-e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 722
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/channel-notifications-e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 663
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/routine-cron-syntax-e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 593
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/agent-access-e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 589
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/instance-backup-e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 523
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/codex-code-mode-mcp-e2e.ts",
+     "name": "",
+     "line": 1,
+     "lines": 520
+    }
+   ]
+  }
+ }
+}

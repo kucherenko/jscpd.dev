@@ -81,83 +81,91 @@
    "codeSources": 45,
    "healthScore": 71.3,
    "healthGrade": "B"
+  },
+  {
+   "date": "2026-10-27",
+   "rank": 7,
+   "stars": 103981,
+   "starsToday": 746,
+   "headSha": "14c213405669414492bda0f8d52cc6531d062c45",
+   "sources": 109,
+   "lines": 17730,
+   "clones": 16,
+   "duplicatedLines": 163,
+   "percentage": 0.92,
+   "codePercentage": 0.44,
+   "codeSources": 51,
+   "healthScore": 74,
+   "healthGrade": "B"
   }
  ],
  "latest": {
-  "date": "2026-10-06",
-  "generatedAt": "2026-10-06T05:31:17.340Z",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T05:30:54.898Z",
   "name": "Panniantong/Agent-Reach",
   "url": "https://github.com/Panniantong/Agent-Reach",
   "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
   "language": "Python",
-  "stars": 92069,
-  "starsToday": 1155,
+  "stars": 103981,
+  "starsToday": 746,
   "defaultBranch": "main",
-  "headSha": "a19a171fa980a0785849596492e0af4db800c82f",
-  "durationMs": 83,
+  "headSha": "14c213405669414492bda0f8d52cc6531d062c45",
+  "durationMs": 1077,
   "total": {
-   "sources": 140,
-   "lines": 24089,
-   "tokens": 136528,
-   "clones": 63,
-   "duplicatedLines": 704,
-   "duplicatedTokens": 4156,
-   "percentage": 2.92,
-   "percentageTokens": 3.04
+   "sources": 109,
+   "lines": 17730,
+   "tokens": 129854,
+   "clones": 16,
+   "duplicatedLines": 163,
+   "duplicatedTokens": 1111,
+   "percentage": 0.92,
+   "percentageTokens": 0.86
   },
   "formats": [
    {
     "format": "python",
-    "sources": 68,
-    "lines": 17781,
-    "clones": 56,
-    "duplicatedLines": 625,
-    "percentage": 3.51
+    "sources": 76,
+    "lines": 14801,
+    "clones": 13,
+    "duplicatedLines": 129,
+    "percentage": 0.87
    },
    {
     "format": "markdown",
-    "sources": 27,
-    "lines": 3901,
-    "clones": 5,
-    "duplicatedLines": 55,
-    "percentage": 1.41
+    "sources": 15,
+    "lines": 1358,
+    "clones": 2,
+    "duplicatedLines": 16,
+    "percentage": 1.18
    },
    {
     "format": "bash",
-    "sources": 27,
-    "lines": 1534,
+    "sources": 4,
+    "lines": 480,
     "clones": 1,
     "duplicatedLines": 18,
-    "percentage": 1.17
+    "percentage": 3.75
    },
    {
-    "format": "text",
-    "sources": 5,
-    "lines": 118,
-    "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 5.08
-   },
-   {
-    "format": "markup",
-    "sources": 6,
-    "lines": 323,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "perl",
+    "format": "json",
     "sources": 1,
-    "lines": 174,
+    "lines": 513,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
    },
    {
     "format": "yaml",
-    "sources": 3,
-    "lines": 126,
+    "sources": 4,
+    "lines": 275,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 4,
+    "lines": 163,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -165,7 +173,7 @@
    {
     "format": "toml",
     "sources": 1,
-    "lines": 82,
+    "lines": 76,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -173,7 +181,15 @@
    {
     "format": "txt",
     "sources": 2,
-    "lines": 50,
+    "lines": 48,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "mermaid",
+    "sources": 2,
+    "lines": 16,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -182,62 +198,23 @@
   "topClones": [
    {
     "format": "python",
-    "lines": 13,
-    "tokens": 66,
-    "first": {
-     "name": "tests/test_cookie_security.py",
-     "start": 33,
-     "end": 45
-    },
-    "others": [
-     {
-      "name": "tests/test_cookie_security.py",
-      "start": 59,
-      "end": 71
-     },
-     {
-      "name": "tests/test_cookie_security.py",
-      "start": 85,
-      "end": 97
-     }
-    ],
-    "copies": 3,
-    "excerpt": {
-     "lines": [
-      "        {\"name\": \"bili_jct\", \"value\": \"csrf\", \"domain\": \".bilibili.com\"},",
-      "    ]",
-      "",
-      "fake_rookiepy = SimpleNamespace(",
-      "    chrome=chrome,",
-      "    firefox=lambda domains: [],",
-      "    edge=lambda domains: [],",
-      "    brave=lambda domains: [],",
-      "    opera=lambda domains: [],",
-      ")"
-     ],
-     "total": 13
-    },
-    "kind": "tests"
-   },
-   {
-    "format": "python",
     "lines": 9,
     "tokens": 62,
     "first": {
      "name": "tests/test_transcribe.py",
-     "start": 635,
-     "end": 643
+     "start": 625,
+     "end": 633
     },
     "others": [
      {
       "name": "tests/test_transcribe.py",
-      "start": 655,
-      "end": 663
+      "start": 645,
+      "end": 653
      },
      {
       "name": "tests/test_transcribe.py",
-      "start": 761,
-      "end": 769
+      "start": 751,
+      "end": 759
      }
     ],
     "copies": 3,
@@ -263,14 +240,14 @@
     "tokens": 122,
     "first": {
      "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-     "start": 212,
-     "end": 229
+     "start": 222,
+     "end": 239
     },
     "others": [
      {
       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-      "start": 243,
-      "end": 259
+      "start": 253,
+      "end": 269
      }
     ],
     "copies": 2,
@@ -297,105 +274,105 @@
     "tokens": 122,
     "first": {
      "name": "tests/test_transcribe.py",
-     "start": 180,
-     "end": 201
+     "start": 181,
+     "end": 202
     },
     "others": [
      {
       "name": "tests/test_transcribe.py",
-      "start": 212,
-      "end": 233
+      "start": 213,
+      "end": 234
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "def test_auto_does_not_send_audio_to_second_provider_without_consent(",
+      "    self,",
+      "    monkeypatch,",
+      "    fake_config,",
+      "    tmp_path,",
+      "    chunk_file,",
+      "    bounded_audio_duration,",
+      "):",
+      "    fake_config.set(\"groq_api_key\", \"gsk_test\")",
+      "    fake_config.set(\"openai_api_key\", \"sk-test\")"
+     ],
+     "total": 22
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 92,
+    "first": {
+     "name": "agent_reach/channels/facebook.py",
+     "start": 35,
+     "end": 43
+    },
+    "others": [
+     {
+      "name": "agent_reach/channels/instagram.py",
+      "start": 44,
+      "end": 52
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 16,
+    "tokens": 90,
+    "first": {
+     "name": "tests/test_transcribe.py",
+     "start": 542,
+     "end": 557
+    },
+    "others": [
+     {
+      "name": "tests/test_transcribe.py",
+      "start": 576,
+      "end": 591
      }
     ],
     "copies": 2,
     "kind": "tests"
    },
    {
-    "format": "python",
-    "lines": 10,
-    "tokens": 60,
-    "first": {
-     "name": "agent_reach/cli.py",
-     "start": 976,
-     "end": 985
-    },
-    "others": [
-     {
-      "name": "agent_reach/cli.py",
-      "start": 1148,
-      "end": 1157
-     },
-     {
-      "name": "agent_reach/cli.py",
-      "start": 1177,
-      "end": 1186
-     }
-    ],
-    "copies": 3,
-    "kind": "code"
-   },
-   {
-    "format": "python",
-    "lines": 8,
-    "tokens": 57,
-    "first": {
-     "name": "tests/test_youtube_channel.py",
-     "start": 124,
-     "end": 131
-    },
-    "others": [
-     {
-      "name": "tests/test_youtube_channel.py",
-      "start": 138,
-      "end": 145
-     },
-     {
-      "name": "tests/test_youtube_channel.py",
-      "start": 154,
-      "end": 161
-     }
-    ],
-    "copies": 3,
-    "kind": "tests"
-   },
-   {
-    "format": "python",
+    "format": "markdown",
     "lines": 9,
-    "tokens": 54,
+    "tokens": 68,
     "first": {
-     "name": "agent_reach/channels/reddit.py",
-     "start": 53,
-     "end": 61
+     "name": "README.md",
+     "start": 10,
+     "end": 18
     },
     "others": [
      {
-      "name": "agent_reach/channels/twitter.py",
-      "start": 65,
-      "end": 73
-     },
-     {
-      "name": "agent_reach/channels/xiaohongshu.py",
-      "start": 190,
-      "end": 198
+      "name": "docs/README_en.md",
+      "start": 10,
+      "end": 18
      }
     ],
-    "copies": 3,
-    "kind": "code"
+    "copies": 2,
+    "kind": "docs"
    },
    {
     "format": "markdown",
-    "lines": 17,
-    "tokens": 107,
+    "lines": 7,
+    "tokens": 66,
     "first": {
-     "name": "agent_reach/skill/references/career.md:markdown",
-     "start": 122,
-     "end": 138
+     "name": "README.md",
+     "start": 18,
+     "end": 24
     },
     "others": [
      {
-      "name": "docs/install.md:markdown",
-      "start": 328,
-      "end": 343
+      "name": "docs/README_en.md",
+      "start": 18,
+      "end": 24
      }
     ],
     "copies": 2,
@@ -403,18 +380,18 @@
    },
    {
     "format": "python",
-    "lines": 18,
-    "tokens": 105,
+    "lines": 7,
+    "tokens": 63,
     "first": {
-     "name": "tests/test_private_file_writes.py",
-     "start": 282,
-     "end": 299
+     "name": "tests/test_transcribe.py",
+     "start": 109,
+     "end": 115
     },
     "others": [
      {
-      "name": "tests/test_private_file_writes.py",
-      "start": 316,
-      "end": 333
+      "name": "tests/test_transcribe.py",
+      "start": 123,
+      "end": 129
      }
     ],
     "copies": 2,
@@ -422,224 +399,68 @@
    },
    {
     "format": "python",
-    "lines": 12,
-    "tokens": 94,
+    "lines": 8,
+    "tokens": 59,
     "first": {
-     "name": "agent_reach/channels/v2ex.py",
-     "start": 183,
-     "end": 194
+     "name": "tests/test_transcribe.py",
+     "start": 190,
+     "end": 197
     },
     "others": [
      {
-      "name": "agent_reach/channels/v2ex.py",
-      "start": 217,
-      "end": 228
+      "name": "tests/test_transcribe.py",
+      "start": 257,
+      "end": 264
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 8,
+    "tokens": 54,
+    "first": {
+     "name": "agent_reach/channels/facebook.py",
+     "start": 21,
+     "end": 28
+    },
+    "others": [
+     {
+      "name": "agent_reach/channels/twitter.py",
+      "start": 41,
+      "end": 48
      }
     ],
     "copies": 2,
     "kind": "code"
    }
   ],
-  "health": {
-   "score": 71.3,
-   "grade": "B",
-   "size": {
-    "lines": 19166,
-    "files": 80,
-    "class": "M"
-   },
-   "dimensions": [
-    {
-     "id": "duplication",
-     "source": "jscpd",
-     "value": 3.4,
-     "adjusted": 3.4,
-     "lines": 643,
-     "halfLife": 8.5,
-     "formats": [
-      "python",
-      "bash",
-      "perl"
-     ],
-     "excluded": [
-      "markup",
-      "text",
-      "data"
-     ],
-     "weight": 1,
-     "score": 76
-    },
-    {
-     "id": "dead-code",
-     "source": "jscpd",
-     "value": 0.1,
-     "adjusted": 0.4,
-     "lines": 15,
-     "halfLife": 7.5,
-     "coverage": 92.9,
-     "weight": 0.929,
-     "score": 96.5
-    },
-    {
-     "id": "complexity",
-     "source": "jscpd",
-     "value": 52.5,
-     "adjusted": 49.5,
-     "lines": 10055,
-     "halfLife": 50,
-     "weight": 1,
-     "score": 50.4
-    }
-   ]
-  },
-  "complexity": {
-   "total": 2489,
-   "mean": 31.1,
-   "files": [
-    {
-     "path": "agent_reach/cli.py",
-     "complexity": 457,
-     "lines": 2399,
-     "bytes": 89749
-    },
-    {
-     "path": "tests/test_channels.py",
-     "complexity": 180,
-     "lines": 1822,
-     "bytes": 65038
-    },
-    {
-     "path": "tests/test_p0_cli.py",
-     "complexity": 125,
-     "lines": 1398,
-     "bytes": 40315
-    },
-    {
-     "path": "agent_reach/channels/xiaohongshu.py",
-     "complexity": 97,
-     "lines": 305,
-     "bytes": 11717
-    },
-    {
-     "path": "tests/test_transcribe.py",
-     "complexity": 92,
-     "lines": 908,
-     "bytes": 32193
-    },
-    {
-     "path": "agent_reach/transcribe.py",
-     "complexity": 78,
-     "lines": 499,
-     "bytes": 16108
-    },
-    {
-     "path": "agent_reach/channels/boss.py",
-     "complexity": 67,
-     "lines": 336,
-     "bytes": 14515
-    },
-    {
-     "path": "agent_reach/cookie_extract.py",
-     "complexity": 66,
-     "lines": 506,
-     "bytes": 16398
-    },
-    {
-     "path": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-     "complexity": 53,
-     "lines": 394,
-     "bytes": 13161
-    },
-    {
-     "path": "agent_reach/channels/v2ex.py",
-     "complexity": 52,
-     "lines": 348,
-     "bytes": 11831
-    }
-   ]
-  },
-  "deadCode": {
-   "percentage": 0.08,
-   "findings": 4,
-   "files": 71,
-   "byCategory": [
-    {
-     "category": "unused-export",
-     "count": 2
-    },
-    {
-     "category": "unused-symbol",
-     "count": 1
-    },
-    {
-     "category": "unused-import",
-     "count": 1
-    }
-   ],
-   "largest": [
-    {
-     "category": "unused-export",
-     "path": "agent_reach/utils/text.py",
-     "name": "read_utf8_text",
-     "line": 31,
-     "lines": 7
-    },
-    {
-     "category": "unused-export",
-     "path": "agent_reach/utils/process.py",
-     "name": "mcporter_utf8_env_args",
-     "line": 21,
-     "lines": 6
-    },
-    {
-     "category": "unused-import",
-     "path": "agent_reach/channels/rss.py",
-     "name": "feedparser",
-     "line": 18,
-     "lines": 1
-    },
-    {
-     "category": "unused-symbol",
-     "path": "agent_reach/cookie_extract.py",
-     "name": "_sync_bird_credentials",
-     "line": 411,
-     "lines": 1
-    }
-   ]
-  },
   "code": {
-   "sources": 45,
-   "lines": 8579,
-   "tokens": 38829,
-   "clones": 7,
-   "duplicatedLines": 76,
-   "duplicatedTokens": 494,
-   "percentage": 0.89,
-   "percentageTokens": 1.27,
+   "sources": 51,
+   "lines": 9753,
+   "tokens": 67102,
+   "clones": 4,
+   "duplicatedLines": 43,
+   "duplicatedTokens": 318,
+   "percentage": 0.44,
+   "percentageTokens": 0.47,
    "formats": [
     {
      "format": "python",
-     "sources": 32,
-     "lines": 7225,
-     "clones": 6,
-     "duplicatedLines": 58,
-     "percentage": 0.8
+     "sources": 49,
+     "lines": 9288,
+     "clones": 3,
+     "duplicatedLines": 25,
+     "percentage": 0.27
     },
     {
      "format": "bash",
-     "sources": 12,
-     "lines": 1180,
+     "sources": 2,
+     "lines": 465,
      "clones": 1,
      "duplicatedLines": 18,
-     "percentage": 1.53
-    },
-    {
-     "format": "perl",
-     "sources": 1,
-     "lines": 174,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "percentage": 3.87
     }
    ],
    "topClones": [
@@ -649,14 +470,14 @@
      "tokens": 122,
      "first": {
       "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-      "start": 212,
-      "end": 229
+      "start": 222,
+      "end": 239
      },
      "others": [
       {
        "name": "agent_reach/scripts/transcribe_xiaoyuzhou.sh",
-       "start": 243,
-       "end": 259
+       "start": 253,
+       "end": 269
       }
      ],
      "copies": 2,
@@ -679,127 +500,80 @@
     },
     {
      "format": "python",
-     "lines": 10,
-     "tokens": 60,
+     "lines": 9,
+     "tokens": 92,
      "first": {
-      "name": "agent_reach/cli.py",
-      "start": 976,
-      "end": 985
+      "name": "agent_reach/channels/facebook.py",
+      "start": 35,
+      "end": 43
      },
      "others": [
       {
-       "name": "agent_reach/cli.py",
-       "start": 1148,
-       "end": 1157
-      },
-      {
-       "name": "agent_reach/cli.py",
-       "start": 1177,
-       "end": 1186
+       "name": "agent_reach/channels/instagram.py",
+       "start": 44,
+       "end": 52
       }
      ],
-     "copies": 3,
+     "copies": 2,
      "excerpt": {
       "lines": [
-       "    (\"uv\", [\"tool\", \"install\", \"twitter-cli\"]),",
-       "]:",
-       "    tool_cmd = shutil.which(tool)",
-       "    if tool_cmd:",
-       "        try:",
-       "            result = subprocess.run(",
-       "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
-       "                errors=\"replace\", timeout=120,",
-       "            )",
-       "            if result.returncode == 0 and shutil.which(\"twitter\"):"
+       "        live_test={\"username\": \"zuck\"},",
+       "    ),",
+       ")",
+       "",
+       "def _opencli_search(self, *, query: str, limit: int, timeout: float) -> list:",
+       "    return self._opencli([\"search\", query, \"--limit\", str(limit)], timeout)[:limit]",
+       "",
+       "def _opencli_profile(self, *, username: str, timeout: float) -> list:",
+       "    return self._opencli([\"profile\", username], timeout, empty_is_error=False)[:1]"
       ],
-      "total": 10
-     },
-     "excerptSecond": {
-      "lines": [
-       "    (\"uv\", [\"tool\", \"install\", \"--from\", _RDT_GIT_SOURCE, \"rdt-cli\"]),",
-       "]:",
-       "    tool_cmd = shutil.which(tool)",
-       "    if tool_cmd:",
-       "        try:",
-       "            result = subprocess.run(",
-       "                [tool_cmd, *args], capture_output=True, encoding=\"utf-8\",",
-       "                errors=\"replace\", timeout=120,",
-       "            )",
-       "            if result.returncode == 0 and shutil.which(\"rdt\"):"
-      ],
-      "total": 10
+      "total": 9
      },
      "kind": "code"
     },
     {
      "format": "python",
-     "lines": 9,
+     "lines": 8,
      "tokens": 54,
      "first": {
-      "name": "agent_reach/channels/reddit.py",
-      "start": 53,
-      "end": 61
+      "name": "agent_reach/channels/facebook.py",
+      "start": 21,
+      "end": 28
      },
      "others": [
       {
        "name": "agent_reach/channels/twitter.py",
-       "start": 65,
-       "end": 73
-      },
-      {
-       "name": "agent_reach/channels/xiaohongshu.py",
-       "start": 190,
-       "end": 198
-      }
-     ],
-     "copies": 3,
-     "excerpt": {
-      "lines": [
-       "    findings.append((backend, *result))",
-       "",
-       "for wanted in (\"ok\", \"warn\"):",
-       "    for backend, status, message in findings:",
-       "        if status == wanted:",
-       "            self.active_backend = backend if status == \"ok\" else None",
-       "            return status, message",
-       "",
-       "if findings:"
-      ],
-      "total": 9
-     },
-     "excerptSecond": {
-      "lines": [
-       "    findings.append((backend, *result))",
-       "",
-       "for wanted in (\"ok\", \"warn\"):",
-       "    for backend, status, message in findings:",
-       "        if status == wanted:",
-       "            self.active_backend = backend if status == \"ok\" else None",
-       "            return status, message",
-       "",
-       "if findings:  # 只剩 broken/timeout 候选"
-      ],
-      "total": 9
-     },
-     "kind": "code"
-    },
-    {
-     "format": "python",
-     "lines": 12,
-     "tokens": 94,
-     "first": {
-      "name": "agent_reach/channels/v2ex.py",
-      "start": 183,
-      "end": 194
-     },
-     "others": [
-      {
-       "name": "agent_reach/channels/v2ex.py",
-       "start": 217,
-       "end": 228
+       "start": 41,
+       "end": 48
       }
      ],
      "copies": 2,
+     "excerpt": {
+      "lines": [
+       "\"Search Facebook\",",
+       "(",
+       "    Param(\"query\", \"what to search for\"),",
+       "    Param(\"limit\", \"max results\", required=False, type=int, default=5),",
+       "),",
+       "((\"opencli\", \"_opencli_search\"),),",
+       "live_test={\"query\": \"openai\", \"limit\": 2},",
+       "public_web=(\"facebook.com/\",),"
+      ],
+      "total": 8
+     },
+     "excerptSecond": {
+      "lines": [
+       "\"Search tweets\",",
+       "(",
+       "    Param(\"query\", \"what to search for\"),",
+       "    Param(\"limit\", \"max results\", required=False, type=int, default=5),",
+       "),",
+       "((\"opencli\", \"_opencli_search\"),),",
+       "live_test={\"query\": \"openai\", \"limit\": 2},",
+       "public_web=(\"x.com/\", \"twitter.com/\"),"
+      ],
+      "total": 8
+     },
      "kind": "code"
     },
     {
@@ -808,14 +582,14 @@
      "tokens": 50,
      "first": {
       "name": "agent_reach/config.py",
-      "start": 55,
-      "end": 62
+      "start": 56,
+      "end": 63
      },
      "others": [
       {
        "name": "agent_reach/utils/paths.py",
-       "start": 92,
-       "end": 99
+       "start": 123,
+       "end": 130
       }
      ],
      "copies": 2,
@@ -828,7 +602,153 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T05:28:20.864Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 74,
+   "grade": "B",
+   "size": {
+    "lines": 15266,
+    "files": 78,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1,
+     "adjusted": 1.3,
+     "lines": 147,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 90.3
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.2,
+     "adjusted": 0.6,
+     "lines": 37,
+     "halfLife": 7.5,
+     "coverage": 97.5,
+     "weight": 0.975,
+     "score": 94.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 57.8,
+     "adjusted": 53.5,
+     "lines": 8825,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 47.6
+    }
+   ]
+  },
+  "complexity": {
+   "total": 3376,
+   "mean": 43.3,
+   "files": [
+    {
+     "path": "agent_reach/runtime/manage.py",
+     "complexity": 387,
+     "lines": 966,
+     "bytes": 42731
+    },
+    {
+     "path": "agent_reach/runtime/browser.py",
+     "complexity": 288,
+     "lines": 915,
+     "bytes": 37047
+    },
+    {
+     "path": "agent_reach/runtime/tools.py",
+     "complexity": 229,
+     "lines": 636,
+     "bytes": 26624
+    },
+    {
+     "path": "agent_reach/runtime/cli.py",
+     "complexity": 183,
+     "lines": 562,
+     "bytes": 23869
+    },
+    {
+     "path": "tests/test_manage.py",
+     "complexity": 154,
+     "lines": 799,
+     "bytes": 34725
+    },
+    {
+     "path": "agent_reach/runtime/dispatch.py",
+     "complexity": 103,
+     "lines": 299,
+     "bytes": 12865
+    },
+    {
+     "path": "tests/test_unified_entry.py",
+     "complexity": 99,
+     "lines": 656,
+     "bytes": 25269
+    },
+    {
+     "path": "tests/test_transcribe.py",
+     "complexity": 85,
+     "lines": 849,
+     "bytes": 30288
+    },
+    {
+     "path": "agent_reach/transcribe.py",
+     "complexity": 79,
+     "lines": 501,
+     "bytes": 16433
+    },
+    {
+     "path": "agent_reach/runtime/cdp.py",
+     "complexity": 77,
+     "lines": 222,
+     "bytes": 8783
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.25,
+   "findings": 2,
+   "files": 79,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 1
+    },
+    {
+     "category": "unused-symbol",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "scripts/accept-search.py",
+     "name": "",
+     "line": 1,
+     "lines": 36
+    },
+    {
+     "category": "unused-symbol",
+     "path": "agent_reach/runtime/browser.py",
+     "name": "_CONTEXT_RE",
+     "line": 39,
+     "lines": 1
+    }
+   ]
+  }
  }
 }

@@ -1,0 +1,1109 @@
+{
+ "name": "NVIDIA/SkillSpector",
+ "url": "https://github.com/NVIDIA/SkillSpector",
+ "appearances": [
+  {
+   "date": "2026-10-27",
+   "rank": 4,
+   "stars": 22395,
+   "starsToday": 214,
+   "headSha": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+   "sources": 446,
+   "lines": 221258,
+   "clones": 779,
+   "duplicatedLines": 9877,
+   "percentage": 4.46,
+   "codePercentage": 2.91,
+   "codeSources": 115,
+   "healthScore": 32.2,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T05:30:54.898Z",
+  "name": "NVIDIA/SkillSpector",
+  "url": "https://github.com/NVIDIA/SkillSpector",
+  "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+  "language": "Python",
+  "stars": 22395,
+  "starsToday": 214,
+  "defaultBranch": "main",
+  "headSha": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+  "durationMs": 1858,
+  "total": {
+   "sources": 446,
+   "lines": 221258,
+   "tokens": 1243312,
+   "clones": 779,
+   "duplicatedLines": 9877,
+   "duplicatedTokens": 54252,
+   "percentage": 4.46,
+   "percentageTokens": 4.36
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 313,
+    "lines": 206722,
+    "clones": 766,
+    "duplicatedLines": 9665,
+    "percentage": 4.68
+   },
+   {
+    "format": "typescript",
+    "sources": 4,
+    "lines": 1794,
+    "clones": 6,
+    "duplicatedLines": 71,
+    "percentage": 3.96
+   },
+   {
+    "format": "markdown",
+    "sources": 74,
+    "lines": 9586,
+    "clones": 3,
+    "duplicatedLines": 37,
+    "percentage": 0.39
+   },
+   {
+    "format": "yaml",
+    "sources": 18,
+    "lines": 1139,
+    "clones": 3,
+    "duplicatedLines": 90,
+    "percentage": 7.9
+   },
+   {
+    "format": "json",
+    "sources": 5,
+    "lines": 159,
+    "clones": 1,
+    "duplicatedLines": 14,
+    "percentage": 8.81
+   },
+   {
+    "format": "text",
+    "sources": 16,
+    "lines": 567,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "javascript",
+    "sources": 1,
+    "lines": 432,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 9,
+    "lines": 380,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "mermaid",
+    "sources": 3,
+    "lines": 178,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "makefile",
+    "sources": 1,
+    "lines": 158,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 169,
+    "tokens": 790,
+    "first": {
+     "name": "src/skillspector/nodes/analyzers/behavioral_ast.py",
+     "start": 653,
+     "end": 821
+    },
+    "others": [
+     {
+      "name": "src/skillspector/nodes/analyzers/behavioral_taint_tracking.py",
+      "start": 2284,
+      "end": 2452
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"\"\"Parse Python files via AST and detect dangerous execution patterns.\"\"\"",
+      "components: list[str] = state.get(\"components\") or []",
+      "file_cache: dict[str, str] = state.get(\"local_file_cache\") or state.get(\"file_cache\") or {}",
+      "raw_file_cache = state.get(\"raw_file_cache\")",
+      "source_classifications = (",
+      "    state.get(\"python_source_classifications\")",
+      "    if \"python_source_classifications\" in state",
+      "    else None",
+      ")",
+      "source_classification_limitations = state.get(\"python_source_classification_limitations\") or {}"
+     ],
+     "total": 169
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 52,
+    "first": {
+     "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+     "start": 537,
+     "end": 543
+    },
+    "others": [
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2034,
+      "end": 2040
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2054,
+      "end": 2060
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2124,
+      "end": 2130
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2310,
+      "end": 2316
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2357,
+      "end": 2363
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2377,
+      "end": 2383
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2388,
+      "end": 2394
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2399,
+      "end": 2405
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "result = static_runner.run_static_patterns_with_ledger(",
+      "    {\"components\": [\"SKILL.md\"], \"file_cache\": {\"SKILL.md\": content}}, [tm_module]",
+      ")",
+      "",
+      "event = result[\"inspection_ledger\"][0]",
+      "assert event[\"outcome\"] is LedgerOutcome.PARTIAL",
+      "assert event[\"reason_code\"] is LedgerReason.OBFUSCATED_INSTRUCTION_TEXT"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "result = static_runner.run_static_patterns_with_ledger(",
+      "    {\"components\": [\"SKILL.md\"], \"file_cache\": {\"SKILL.md\": content}}, [tm_module]",
+      ")",
+      "",
+      "event = result[\"inspection_ledger\"][0]",
+      "assert event[\"outcome\"] is LedgerOutcome.PARTIAL",
+      "assert event[\"reason_code\"] is LedgerReason.STATIC_PARSE_LIMIT"
+     ],
+     "total": 7
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 12,
+    "tokens": 57,
+    "first": {
+     "name": "tests/nodes/test_semantic_quality_policy.py",
+     "start": 819,
+     "end": 830
+    },
+    "others": [
+     {
+      "name": "tests/nodes/test_semantic_quality_policy.py",
+      "start": 851,
+      "end": 862
+     },
+     {
+      "name": "tests/nodes/test_semantic_quality_policy.py",
+      "start": 879,
+      "end": 890
+     },
+     {
+      "name": "tests/nodes/test_semantic_quality_policy.py",
+      "start": 937,
+      "end": 948
+     },
+     {
+      "name": "tests/nodes/test_semantic_quality_policy.py",
+      "start": 965,
+      "end": 976
+     },
+     {
+      "name": "tests/nodes/test_semantic_quality_policy.py",
+      "start": 996,
+      "end": 1007
+     },
+     {
+      "name": "tests/nodes/test_semantic_quality_policy.py",
+      "start": 1029,
+      "end": 1040
+     },
+     {
+      "name": "tests/nodes/test_semantic_quality_policy.py",
+      "start": 1062,
+      "end": 1073
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "    pytest.skip(\"sqp1_vague_triggers fixture not present\")",
+      "",
+      "file_cache = _build_file_cache(skill_dir)",
+      "state: dict = {\"file_cache\": file_cache}",
+      "",
+      "from skillspector.llm_analyzer_base import LLMAnalyzerBase",
+      "",
+      "orig_init = LLMAnalyzerBase.__init__",
+      "",
+      "def _patched_init(self_inner, *args, **kwargs):"
+     ],
+     "total": 12
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 55,
+    "first": {
+     "name": "tests/test_mcp_tool_poisoning.py",
+     "start": 372,
+     "end": 380
+    },
+    "others": [
+     {
+      "name": "tests/test_mcp_tool_poisoning.py",
+      "start": 390,
+      "end": 398
+     },
+     {
+      "name": "tests/test_mcp_tool_poisoning.py",
+      "start": 405,
+      "end": 413
+     },
+     {
+      "name": "tests/test_mcp_tool_poisoning.py",
+      "start": 426,
+      "end": 434
+     },
+     {
+      "name": "tests/test_mcp_tool_poisoning.py",
+      "start": 445,
+      "end": 453
+     },
+     {
+      "name": "tests/test_mcp_tool_poisoning.py",
+      "start": 462,
+      "end": 470
+     },
+     {
+      "name": "tests/test_mcp_tool_poisoning.py",
+      "start": 483,
+      "end": 491
+     },
+     {
+      "name": "tests/test_mcp_tool_poisoning.py",
+      "start": 500,
+      "end": 508
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 65,
+    "tokens": 354,
+    "first": {
+     "name": "src/skillspector/nodes/analyzers/semantic_developer_intent.py",
+     "start": 251,
+     "end": 315
+    },
+    "others": [
+     {
+      "name": "src/skillspector/nodes/analyzers/semantic_quality_policy.py",
+      "start": 238,
+      "end": 302
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 55,
+    "first": {
+     "name": "tests/unit/test_cli.py",
+     "start": 5532,
+     "end": 5542
+    },
+    "others": [
+     {
+      "name": "tests/unit/test_cli.py",
+      "start": 5893,
+      "end": 5903
+     },
+     {
+      "name": "tests/unit/test_cli.py",
+      "start": 6080,
+      "end": 6090
+     },
+     {
+      "name": "tests/unit/test_cli.py",
+      "start": 6137,
+      "end": 6147
+     },
+     {
+      "name": "tests/unit/test_cli.py",
+      "start": 6218,
+      "end": 6228
+     },
+     {
+      "name": "tests/unit/test_cli.py",
+      "start": 6837,
+      "end": 6847
+     },
+     {
+      "name": "tests/unit/test_cli.py",
+      "start": 6904,
+      "end": 6914
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 49,
+    "tokens": 323,
+    "first": {
+     "name": "tests/nodes/analyzers/test_documentation_reconstruction.py",
+     "start": 26,
+     "end": 74
+    },
+    "others": [
+     {
+      "name": "tests/nodes/analyzers/test_runtime_reconstruction_workflow.py",
+      "start": 21,
+      "end": 69
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 62,
+    "first": {
+     "name": "src/skillspector/nodes/analyzers/static_patterns_data_exfiltration.py",
+     "start": 514,
+     "end": 524
+    },
+    "others": [
+     {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_excessive_agency.py",
+      "start": 434,
+      "end": 444
+     },
+     {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_memory_poisoning.py",
+      "start": 631,
+      "end": 641
+     },
+     {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_memory_poisoning.py",
+      "start": 658,
+      "end": 668
+     },
+     {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_output_handling.py",
+      "start": 679,
+      "end": 689
+     },
+     {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_system_prompt_leakage.py",
+      "start": 1004,
+      "end": 1014
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 12,
+    "tokens": 60,
+    "first": {
+     "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+     "start": 2034,
+     "end": 2045
+    },
+    "others": [
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2054,
+      "end": 2065
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2124,
+      "end": 2135
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2310,
+      "end": 2321
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2399,
+      "end": 2410
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2501,
+      "end": 2512
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 8,
+    "tokens": 73,
+    "first": {
+     "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+     "start": 250,
+     "end": 257
+    },
+    "others": [
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 1850,
+      "end": 1857
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 1884,
+      "end": 1891
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 1899,
+      "end": 1906
+     },
+     {
+      "name": "tests/nodes/analyzers/test_security_reconstruction.py",
+      "start": 2813,
+      "end": 2820
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 115,
+   "lines": 87188,
+   "tokens": 463740,
+   "clones": 172,
+   "duplicatedLines": 2539,
+   "duplicatedTokens": 13429,
+   "percentage": 2.91,
+   "percentageTokens": 2.9,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 112,
+     "lines": 86259,
+     "clones": 172,
+     "duplicatedLines": 2539,
+     "percentage": 2.94
+    },
+    {
+     "format": "typescript",
+     "sources": 3,
+     "lines": 929,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 169,
+     "tokens": 790,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/behavioral_ast.py",
+      "start": 653,
+      "end": 821
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/behavioral_taint_tracking.py",
+       "start": 2284,
+       "end": 2452
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "\"\"\"Parse Python files via AST and detect dangerous execution patterns.\"\"\"",
+       "components: list[str] = state.get(\"components\") or []",
+       "file_cache: dict[str, str] = state.get(\"local_file_cache\") or state.get(\"file_cache\") or {}",
+       "raw_file_cache = state.get(\"raw_file_cache\")",
+       "source_classifications = (",
+       "    state.get(\"python_source_classifications\")",
+       "    if \"python_source_classifications\" in state",
+       "    else None",
+       ")",
+       "source_classification_limitations = state.get(\"python_source_classification_limitations\") or {}"
+      ],
+      "total": 169
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 65,
+     "tokens": 354,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/semantic_developer_intent.py",
+      "start": 251,
+      "end": 315
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/semantic_quality_policy.py",
+       "start": 238,
+       "end": 302
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    base_prompt=prompt,",
+       "    model=model,",
+       "    node=ANALYZER_ID,",
+       "    timeout=timeout,",
+       ")",
+       "batches = analyzer.get_batches(files, file_cache)",
+       "results = run_async(analyzer.arun_batches(batches))",
+       "outcome = getattr(analyzer, \"_last_batch_outcome\", BatchExecutionResult(successful=results))",
+       "findings = analyzer.collect_findings(outcome.successful)",
+       "events, status = ledger_events_for_batches(ANALYZER_ID, outcome)"
+      ],
+      "total": 65
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 11,
+     "tokens": 62,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_data_exfiltration.py",
+      "start": 514,
+      "end": 524
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_excessive_agency.py",
+       "start": 434,
+       "end": 444
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_memory_poisoning.py",
+       "start": 631,
+       "end": 641
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_memory_poisoning.py",
+       "start": 658,
+       "end": 668
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_output_handling.py",
+       "start": 679,
+       "end": 689
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_system_prompt_leakage.py",
+       "start": 1004,
+       "end": 1014
+      }
+     ],
+     "copies": 6,
+     "excerpt": {
+      "lines": [
+       "        message=\"File System Enumeration\",",
+       "        severity=Severity.MEDIUM,",
+       "        location=loc(line_num),",
+       "        confidence=confidence,",
+       "        tags=tag,",
+       "        context=ctx(match.start()),",
+       "        matched_text=match.group(0)[:200],",
+       "        complete_match=match.group(0),",
+       "    )",
+       ")"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 57,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_agent_snooping.py",
+      "start": 164,
+      "end": 173
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_data_exfiltration.py",
+       "start": 532,
+       "end": 541
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_supply_chain.py",
+       "start": 2312,
+       "end": 2321
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_supply_chain.py",
+       "start": 2329,
+       "end": 2338
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_system_prompt_leakage.py",
+       "start": 984,
+       "end": 993
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_system_prompt_leakage.py",
+       "start": 1022,
+       "end": 1031
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 57,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_data_exfiltration.py",
+      "start": 514,
+      "end": 523
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_data_exfiltration.py",
+       "start": 549,
+       "end": 558
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_excessive_agency.py",
+       "start": 505,
+       "end": 514
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_output_handling.py",
+       "start": 700,
+       "end": 709
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_rogue_agent.py",
+       "start": 356,
+       "end": 365
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_tool_misuse.py",
+       "start": 5656,
+       "end": 5665
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 52,
+     "tokens": 253,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/behavioral_ast.py",
+      "start": 240,
+      "end": 291
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/behavioral_taint_tracking.py",
+       "start": 228,
+       "end": 279
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 37,
+     "tokens": 233,
+     "first": {
+      "name": "src/skillspector/nodes/report.py",
+      "start": 691,
+      "end": 727
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/report.py",
+       "start": 737,
+       "end": 773
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 55,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_agent_snooping.py",
+      "start": 142,
+      "end": 151
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_data_exfiltration.py",
+       "start": 432,
+       "end": 441
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_excessive_agency.py",
+       "start": 412,
+       "end": 421
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_memory_poisoning.py",
+       "start": 612,
+       "end": 621
+      },
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_output_handling.py",
+       "start": 622,
+       "end": 631
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 205,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/static_patterns_memory_poisoning.py",
+      "start": 362,
+      "end": 387
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/static_patterns_system_prompt_leakage.py",
+       "start": 874,
+       "end": 899
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 44,
+     "tokens": 189,
+     "first": {
+      "name": "src/skillspector/nodes/analyzers/behavioral_ast.py",
+      "start": 610,
+      "end": 653
+     },
+     "others": [
+      {
+       "name": "src/skillspector/nodes/analyzers/behavioral_taint_tracking.py",
+       "start": 2241,
+       "end": 2284
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "src/skillspector/suppression.py"
+    ]
+   }
+  },
+  "health": {
+   "score": 32.2,
+   "grade": "E",
+   "size": {
+    "lines": 209018,
+    "files": 318,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.7,
+     "adjusted": 4.6,
+     "lines": 9736,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "typescript",
+      "javascript",
+      "makefile",
+      "bash",
+      "docker"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 68.5
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 20.5,
+     "adjusted": 20.3,
+     "lines": 42835,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 15.3
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 82.8,
+     "adjusted": 82.2,
+     "lines": 173014,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 32
+    }
+   ]
+  },
+  "complexity": {
+   "total": 30923,
+   "mean": 97.2,
+   "files": [
+    {
+     "path": "src/skillspector/nodes/analyzers/static_patterns_tool_misuse.py",
+     "complexity": 2052,
+     "lines": 7311,
+     "bytes": 310832
+    },
+    {
+     "path": "src/skillspector/nodes/analyzers/static_python_shell_truthiness.py",
+     "complexity": 833,
+     "lines": 2282,
+     "bytes": 99038
+    },
+    {
+     "path": "src/skillspector/nodes/build_context.py",
+     "complexity": 756,
+     "lines": 3984,
+     "bytes": 160446
+    },
+    {
+     "path": "src/skillspector/nodes/analyzers/static_runner.py",
+     "complexity": 745,
+     "lines": 3642,
+     "bytes": 151092
+    },
+    {
+     "path": "src/skillspector/dependency_sources.py",
+     "complexity": 728,
+     "lines": 2274,
+     "bytes": 81930
+    },
+    {
+     "path": "src/skillspector/nodes/analyzers/bundled_execution_surface.py",
+     "complexity": 696,
+     "lines": 2109,
+     "bytes": 73922
+    },
+    {
+     "path": "src/skillspector/nodes/analyzers/static_patterns_supply_chain.py",
+     "complexity": 679,
+     "lines": 4111,
+     "bytes": 162320
+    },
+    {
+     "path": "src/skillspector/artifacts.py",
+     "complexity": 668,
+     "lines": 2430,
+     "bytes": 89701
+    },
+    {
+     "path": "tests/unit/test_patterns_new.py",
+     "complexity": 655,
+     "lines": 4405,
+     "bytes": 196658
+    },
+    {
+     "path": "src/skillspector/cli.py",
+     "complexity": 631,
+     "lines": 3537,
+     "bytes": 141545
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 20.48,
+   "findings": 49,
+   "files": 336,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 38
+    },
+    {
+     "category": "unused-export",
+     "count": 3
+    },
+    {
+     "category": "unused-symbol",
+     "count": 7
+    },
+    {
+     "category": "unused-import",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/static_patterns_tool_misuse.py",
+     "name": "",
+     "line": 1,
+     "lines": 7311
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/static_patterns_supply_chain.py",
+     "name": "",
+     "line": 1,
+     "lines": 4111
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/static_runner.py",
+     "name": "",
+     "line": 1,
+     "lines": 3642
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/behavioral_taint_tracking.py",
+     "name": "",
+     "line": 1,
+     "lines": 2452
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/static_python_shell_truthiness.py",
+     "name": "",
+     "line": 1,
+     "lines": 2282
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/bundled_execution_surface.py",
+     "name": "",
+     "line": 1,
+     "lines": 2109
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/security_reconstruction.py",
+     "name": "",
+     "line": 1,
+     "lines": 1972
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/mcp_tool_poisoning.py",
+     "name": "",
+     "line": 1,
+     "lines": 1921
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/static_yara.py",
+     "name": "",
+     "line": 1,
+     "lines": 1573
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillspector/nodes/analyzers/static_patterns_privilege_escalation.py",
+     "name": "",
+     "line": 1,
+     "lines": 1364
+    }
+   ]
+  }
+ }
+}

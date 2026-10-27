@@ -33,29 +33,45 @@
    "codeSources": 10,
    "healthScore": 81.8,
    "healthGrade": "B"
+  },
+  {
+   "date": "2026-10-27",
+   "rank": 10,
+   "stars": 224849,
+   "starsToday": 638,
+   "headSha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+   "sources": 14,
+   "lines": 1339,
+   "clones": 2,
+   "duplicatedLines": 60,
+   "percentage": 4.48,
+   "codePercentage": null,
+   "codeSources": 0,
+   "healthScore": null,
+   "healthGrade": null
   }
  ],
  "latest": {
-  "date": "2026-10-11",
-  "generatedAt": "2026-10-11T05:30:24.061Z",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T05:30:54.898Z",
   "name": "multica-ai/andrej-karpathy-skills",
   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
   "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
   "language": null,
-  "stars": 218422,
-  "starsToday": 278,
+  "stars": 224849,
+  "starsToday": 638,
   "defaultBranch": "main",
   "headSha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-  "durationMs": 1018,
+  "durationMs": 987,
   "total": {
-   "sources": 24,
-   "lines": 2201,
-   "tokens": 11286,
+   "sources": 14,
+   "lines": 1339,
+   "tokens": 8081,
    "clones": 2,
    "duplicatedLines": 60,
    "duplicatedTokens": 390,
-   "percentage": 2.73,
-   "percentageTokens": 3.46
+   "percentage": 4.48,
+   "percentageTokens": 4.83
   },
   "formats": [
    {
@@ -68,19 +84,11 @@
    },
    {
     "format": "bash",
-    "sources": 11,
-    "lines": 700,
+    "sources": 2,
+    "lines": 6,
     "clones": 1,
     "duplicatedLines": 3,
-    "percentage": 0.43
-   },
-   {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
+    "percentage": 50
    },
    {
     "format": "python",
@@ -121,13 +129,13 @@
     "lines": 57,
     "tokens": 325,
     "first": {
-     "name": "CLAUDE.md:markdown",
+     "name": "CLAUDE.md",
      "start": 5,
      "end": 61
     },
     "others": [
      {
-      "name": "skills/karpathy-guidelines/SKILL.md:markdown",
+      "name": "skills/karpathy-guidelines/SKILL.md",
       "start": 11,
       "end": 67
      }
@@ -155,13 +163,13 @@
     "lines": 7,
     "tokens": 65,
     "first": {
-     "name": "README.md:bash",
+     "name": "README.md",
      "start": 119,
      "end": 125
     },
     "others": [
      {
-      "name": "README.zh.md:bash",
+      "name": "README.zh.md",
       "start": 119,
       "end": 125
      }
@@ -195,32 +203,15 @@
    }
   ],
   "code": {
-   "sources": 10,
-   "lines": 862,
-   "tokens": 3205,
+   "sources": 0,
+   "lines": 0,
+   "tokens": 0,
    "clones": 0,
    "duplicatedLines": 0,
    "duplicatedTokens": 0,
    "percentage": 0,
    "percentageTokens": 0,
-   "formats": [
-    {
-     "format": "bash",
-     "sources": 9,
-     "lines": 694,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
-    },
-    {
-     "format": "perl",
-     "sources": 1,
-     "lines": 168,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
-    }
-   ],
+   "formats": [],
    "topClones": [],
    "generated": {
     "files": 0,
@@ -229,44 +220,23 @@
    }
   },
   "health": {
-   "score": 81.8,
-   "grade": "B",
+   "score": null,
+   "grade": null,
    "size": {
-    "lines": 862,
-    "files": 10,
+    "lines": 0,
+    "files": 0,
     "class": "XS"
    },
-   "dimensions": [
+   "dimensions": [],
+   "skipped": [
     {
      "id": "duplication",
-     "source": "jscpd",
-     "value": 0,
-     "adjusted": 2.4,
-     "lines": 0,
-     "halfLife": 8.5,
-     "formats": [
-      "bash",
-      "perl"
-     ],
-     "excluded": [
-      "text",
-      "data"
-     ],
-     "weight": 1,
-     "score": 81.9
+     "reason": "no code files"
     },
     {
      "id": "complexity",
-     "source": "jscpd",
-     "value": 0,
-     "adjusted": 14.6,
-     "lines": 0,
-     "halfLife": 50,
-     "weight": 1,
-     "score": 81.7
-    }
-   ],
-   "skipped": [
+     "reason": "no code files"
+    },
     {
      "id": "dead-code",
      "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
@@ -274,70 +244,9 @@
    ]
   },
   "complexity": {
-   "total": 84,
-   "mean": 8.4,
-   "files": [
-    {
-     "path": ".git/hooks/fsmonitor-watchman.sample",
-     "complexity": 19,
-     "lines": 168,
-     "bytes": 4611
-    },
-    {
-     "path": ".git/hooks/pre-rebase.sample",
-     "complexity": 14,
-     "lines": 169,
-     "bytes": 4898
-    },
-    {
-     "path": ".git/hooks/sendemail-validate.sample",
-     "complexity": 14,
-     "lines": 77,
-     "bytes": 2308
-    },
-    {
-     "path": ".git/hooks/update.sample",
-     "complexity": 13,
-     "lines": 128,
-     "bytes": 3650
-    },
-    {
-     "path": ".git/hooks/push-to-checkout.sample",
-     "complexity": 6,
-     "lines": 78,
-     "bytes": 2783
-    },
-    {
-     "path": ".git/hooks/pre-commit.sample",
-     "complexity": 5,
-     "lines": 49,
-     "bytes": 1649
-    },
-    {
-     "path": ".git/hooks/pre-push.sample",
-     "complexity": 5,
-     "lines": 53,
-     "bytes": 1374
-    },
-    {
-     "path": ".git/hooks/pre-receive.sample",
-     "complexity": 4,
-     "lines": 24,
-     "bytes": 544
-    },
-    {
-     "path": ".git/hooks/commit-msg.sample",
-     "complexity": 3,
-     "lines": 74,
-     "bytes": 1972
-    },
-    {
-     "path": ".git/hooks/prepare-commit-msg.sample",
-     "complexity": 1,
-     "lines": 42,
-     "bytes": 1492
-    }
-   ]
+   "total": 0,
+   "mean": 0,
+   "files": []
   },
   "deadCode": null
  }
