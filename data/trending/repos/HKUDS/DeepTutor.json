@@ -1,0 +1,1168 @@
+{
+ "name": "HKUDS/DeepTutor",
+ "url": "https://github.com/HKUDS/DeepTutor",
+ "appearances": [
+  {
+   "date": "2026-10-28",
+   "rank": 4,
+   "stars": 46410,
+   "starsToday": 1598,
+   "headSha": "a31d82624c27d75f4e771d4fcb78dce16470b383",
+   "sources": 3477,
+   "lines": 850057,
+   "clones": 1713,
+   "duplicatedLines": 22380,
+   "percentage": 2.63,
+   "codePercentage": 1.89,
+   "codeSources": 1855,
+   "healthScore": 64.3,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T05:23:00.965Z",
+  "name": "HKUDS/DeepTutor",
+  "url": "https://github.com/HKUDS/DeepTutor",
+  "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+  "language": "Python",
+  "stars": 46410,
+  "starsToday": 1598,
+  "defaultBranch": "main",
+  "headSha": "a31d82624c27d75f4e771d4fcb78dce16470b383",
+  "durationMs": 5535,
+  "total": {
+   "sources": 3477,
+   "lines": 850057,
+   "tokens": 4943863,
+   "clones": 1713,
+   "duplicatedLines": 22380,
+   "duplicatedTokens": 140511,
+   "percentage": 2.63,
+   "percentageTokens": 2.84
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 1880,
+    "lines": 522955,
+    "clones": 1179,
+    "duplicatedLines": 14030,
+    "percentage": 2.68
+   },
+   {
+    "format": "tsx",
+    "sources": 649,
+    "lines": 172571,
+    "clones": 327,
+    "duplicatedLines": 4651,
+    "percentage": 2.7
+   },
+   {
+    "format": "typescript",
+    "sources": 568,
+    "lines": 79085,
+    "clones": 92,
+    "duplicatedLines": 1225,
+    "percentage": 1.55
+   },
+   {
+    "format": "markdown",
+    "sources": 154,
+    "lines": 22641,
+    "clones": 70,
+    "duplicatedLines": 710,
+    "percentage": 3.14
+   },
+   {
+    "format": "text",
+    "sources": 16,
+    "lines": 284,
+    "clones": 13,
+    "duplicatedLines": 186,
+    "percentage": 65.49
+   },
+   {
+    "format": "bash",
+    "sources": 20,
+    "lines": 1464,
+    "clones": 12,
+    "duplicatedLines": 1044,
+    "percentage": 71.31
+   },
+   {
+    "format": "yaml",
+    "sources": 105,
+    "lines": 7911,
+    "clones": 8,
+    "duplicatedLines": 133,
+    "percentage": 1.68
+   },
+   {
+    "format": "json",
+    "sources": 30,
+    "lines": 37447,
+    "clones": 5,
+    "duplicatedLines": 339,
+    "percentage": 0.91
+   },
+   {
+    "format": "css",
+    "sources": 4,
+    "lines": 1993,
+    "clones": 3,
+    "duplicatedLines": 27,
+    "percentage": 1.35
+   },
+   {
+    "format": "markup",
+    "sources": 16,
+    "lines": 497,
+    "clones": 3,
+    "duplicatedLines": 23,
+    "percentage": 4.63
+   }
+  ],
+  "topClones": [
+   {
+    "format": "bash",
+    "lines": 830,
+    "tokens": 774,
+    "first": {
+     "name": "README.md",
+     "start": 278,
+     "end": 1107
+    },
+    "others": [
+     {
+      "name": "assets/README/README_AR.md",
+      "start": 99,
+      "end": 830
+     },
+     {
+      "name": "assets/README/README_CN.md",
+      "start": 99,
+      "end": 834
+     },
+     {
+      "name": "assets/README/README_ES.md",
+      "start": 99,
+      "end": 843
+     },
+     {
+      "name": "assets/README/README_FR.md",
+      "start": 99,
+      "end": 845
+     },
+     {
+      "name": "assets/README/README_HI.md",
+      "start": 99,
+      "end": 834
+     },
+     {
+      "name": "assets/README/README_JA.md",
+      "start": 99,
+      "end": 825
+     },
+     {
+      "name": "assets/README/README_PL.md",
+      "start": 99,
+      "end": 825
+     },
+     {
+      "name": "assets/README/README_PT.md",
+      "start": 99,
+      "end": 835
+     }
+    ],
+    "copies": 12,
+    "excerpt": {
+     "lines": [
+      "docker run --rm --name deeptutor \\",
+      "  -p 127.0.0.1:3782:3782 \\",
+      "  -v deeptutor-data:/app/data \\",
+      "  ghcr.io/hkuds/deeptutor:latest",
+      "```",
+      "",
+      "Open [http://127.0.0.1:3782](http://127.0.0.1:3782), configure model providers in **Settings → Providers**, and press `Ctrl+C` when you are done. The named `de…",
+      "",
+      "### Content Workspace",
+      ""
+     ],
+     "total": 830
+    },
+    "excerptSecond": {
+     "lines": [
+      "docker run --rm --name deeptutor \\",
+      "  -p 127.0.0.1:3782:3782 \\",
+      "  -v deeptutor-data:/app/data \\",
+      "  ghcr.io/hkuds/deeptutor:latest",
+      "```",
+      "",
+      "افتح [http://127.0.0.1:3782](http://127.0.0.1:3782)، وهيّئ مزودي النماذج في **الإعدادات ← المزودون**، واضغط `Ctrl+C` عند الانتهاء. تحتفظ وحدة التخزين المسماة `…",
+      "",
+      "### مساحة عمل المحتوى",
+      ""
+     ],
+     "total": 732
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "text",
+    "lines": 685,
+    "tokens": 210,
+    "first": {
+     "name": "README.md",
+     "start": 260,
+     "end": 944
+    },
+    "others": [
+     {
+      "name": "assets/README/README_AR.md",
+      "start": 81,
+      "end": 672
+     },
+     {
+      "name": "assets/README/README_CN.md",
+      "start": 81,
+      "end": 671
+     },
+     {
+      "name": "assets/README/README_ES.md",
+      "start": 81,
+      "end": 680
+     },
+     {
+      "name": "assets/README/README_FR.md",
+      "start": 81,
+      "end": 682
+     },
+     {
+      "name": "assets/README/README_HI.md",
+      "start": 81,
+      "end": 671
+     },
+     {
+      "name": "assets/README/README_JA.md",
+      "start": 81,
+      "end": 671
+     },
+     {
+      "name": "assets/README/README_PL.md",
+      "start": 81,
+      "end": 671
+     },
+     {
+      "name": "assets/README/README_PT.md",
+      "start": 81,
+      "end": 672
+     }
+    ],
+    "copies": 12,
+    "excerpt": {
+     "lines": [
+      "Help me install and configure DeepTutor locally from https://github.com/HKUDS/DeepTutor.",
+      "Clone the repository, or reuse my existing checkout, and read SKILL.md and",
+      "docs-for-user/AGENT_SETUP.md first. Follow that guide to prepare the environment,",
+      "configure my model provider, verify the setup, and start the Web app.",
+      "Ask me for any missing provider, model, or credential-source information;",
+      "do not print API keys. Preserve my existing files and settings, and finish",
+      "with the access URL and the results of your checks.",
+      "```",
+      "",
+      "The [Agent Setup guide](docs-for-user/AGENT_SETUP.md) covers the full flow, including non-interactive CLI configuration. To install it yourself, choose one of …"
+     ],
+     "total": 685
+    },
+    "excerptSecond": {
+     "lines": [
+      "Help me install and configure DeepTutor locally from https://github.com/HKUDS/DeepTutor.",
+      "Clone the repository, or reuse my existing checkout, and read SKILL.md and",
+      "docs-for-user/AGENT_SETUP.md first. Follow that guide to prepare the environment,",
+      "configure my model provider, verify the setup, and start the Web app.",
+      "Ask me for any missing provider, model, or credential-source information;",
+      "do not print API keys. Preserve my existing files and settings, and finish",
+      "with the access URL and the results of your checks.",
+      "```",
+      "",
+      "يغطي [دليل إعداد الوكيل](../../docs-for-user/AGENT_SETUP.md) التدفق كاملاً، بما فيه التهيئة غير التفاعلية عبر CLI. لتثبيته بنفسك، اختر أحد المسارات أدناه."
+     ],
+     "total": 592
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 9,
+    "tokens": 159,
+    "first": {
+     "name": "README.md",
+     "start": 1137,
+     "end": 1145
+    },
+    "others": [
+     {
+      "name": "assets/README/README_AR.md",
+      "start": 859,
+      "end": 867
+     },
+     {
+      "name": "assets/README/README_CN.md",
+      "start": 863,
+      "end": 871
+     },
+     {
+      "name": "assets/README/README_ES.md",
+      "start": 872,
+      "end": 880
+     },
+     {
+      "name": "assets/README/README_HI.md",
+      "start": 863,
+      "end": 871
+     },
+     {
+      "name": "assets/README/README_JA.md",
+      "start": 854,
+      "end": 862
+     },
+     {
+      "name": "assets/README/README_PL.md",
+      "start": 854,
+      "end": 862
+     },
+     {
+      "name": "assets/README/README_RU.md",
+      "start": 864,
+      "end": 872
+     },
+     {
+      "name": "assets/README/README_TH.md",
+      "start": 892,
+      "end": 900
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "<table>",
+      "  <tr>",
+      "    <td align=\"center\"><a href=\"https://github.com/pancacake\"><img src=\"https://avatars.githubusercontent.com/u/150592536?v=4&s=80\" width=\"80\" height=\"80\" alt=…",
+      "    <td align=\"center\"><a href=\"https://github.com/TyrionH-is-coding\"><img src=\"https://avatars.githubusercontent.com/u/275607548?v=4&s=80\" width=\"80\" height=\"…",
+      "    <td align=\"center\"><a href=\"https://github.com/zzhtx258\"><img src=\"https://avatars.githubusercontent.com/u/175302980?v=4&s=80\" width=\"80\" height=\"80\" alt=\"…",
+      "  </tr>",
+      "</table>",
+      "",
+      "### 📮 Contact"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "<table>",
+      "  <tr>",
+      "    <td align=\"center\"><a href=\"https://github.com/pancacake\"><img src=\"https://avatars.githubusercontent.com/u/150592536?v=4&s=80\" width=\"80\" height=\"80\" alt=…",
+      "    <td align=\"center\"><a href=\"https://github.com/TyrionH-is-coding\"><img src=\"https://avatars.githubusercontent.com/u/275607548?v=4&s=80\" width=\"80\" height=\"…",
+      "    <td align=\"center\"><a href=\"https://github.com/zzhtx258\"><img src=\"https://avatars.githubusercontent.com/u/175302980?v=4&s=80\" width=\"80\" height=\"80\" alt=\"…",
+      "  </tr>",
+      "</table>",
+      "",
+      "### 📮 التواصل"
+     ],
+     "total": 9
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 17,
+    "tokens": 466,
+    "first": {
+     "name": "assets/README/README_CN.md",
+     "start": 21,
+     "end": 37
+    },
+    "others": [
+     {
+      "name": "assets/README/README_ES.md",
+      "start": 21,
+      "end": 37
+     },
+     {
+      "name": "assets/README/README_JA.md",
+      "start": 21,
+      "end": 37
+     },
+     {
+      "name": "assets/README/README_TW.md",
+      "start": 21,
+      "end": 37
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 100,
+    "tokens": 799,
+    "first": {
+     "name": "tests/services/session/test_pocketbase_isolation.py",
+     "start": 25,
+     "end": 124
+    },
+    "others": [
+     {
+      "name": "tests/services/session/test_pocketbase_store_fallbacks.py",
+      "start": 39,
+      "end": 138
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 11,
+    "tokens": 194,
+    "first": {
+     "name": "assets/README/README_AR.md",
+     "start": 13,
+     "end": 23
+    },
+    "others": [
+     {
+      "name": "assets/README/README_HI.md",
+      "start": 13,
+      "end": 23
+     },
+     {
+      "name": "assets/README/README_PL.md",
+      "start": 13,
+      "end": 23
+     },
+     {
+      "name": "assets/README/README_RU.md",
+      "start": 13,
+      "end": 23
+     },
+     {
+      "name": "assets/README/README_TH.md",
+      "start": 13,
+      "end": 23
+     }
+    ],
+    "copies": 5,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 9,
+    "tokens": 114,
+    "first": {
+     "name": "README.md",
+     "start": 493,
+     "end": 501
+    },
+    "others": [
+     {
+      "name": "assets/README/README_ES.md",
+      "start": 280,
+      "end": 288
+     },
+     {
+      "name": "assets/README/README_HI.md",
+      "start": 280,
+      "end": 288
+     },
+     {
+      "name": "assets/README/README_PL.md",
+      "start": 280,
+      "end": 288
+     },
+     {
+      "name": "assets/README/README_RU.md",
+      "start": 280,
+      "end": 288
+     },
+     {
+      "name": "assets/README/README_TH.md",
+      "start": 288,
+      "end": 296
+     },
+     {
+      "name": "docs-for-user/CONTAINERIZATION.md",
+      "start": 286,
+      "end": 296
+     }
+    ],
+    "copies": 7,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 11,
+    "tokens": 213,
+    "first": {
+     "name": "README.md",
+     "start": 7,
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "assets/README/README_ES.md",
+      "start": 7,
+      "end": 17
+     },
+     {
+      "name": "assets/README/README_JA.md",
+      "start": 7,
+      "end": 17
+     },
+     {
+      "name": "assets/README/README_PT.md",
+      "start": 7,
+      "end": 17
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 11,
+    "tokens": 66,
+    "first": {
+     "name": "assets/README/README_AR.md",
+     "start": 841,
+     "end": 851
+    },
+    "others": [
+     {
+      "name": "assets/README/README_CN.md",
+      "start": 845,
+      "end": 855
+     },
+     {
+      "name": "assets/README/README_ES.md",
+      "start": 854,
+      "end": 864
+     },
+     {
+      "name": "assets/README/README_FR.md",
+      "start": 856,
+      "end": 866
+     },
+     {
+      "name": "assets/README/README_HI.md",
+      "start": 845,
+      "end": 855
+     },
+     {
+      "name": "assets/README/README_JA.md",
+      "start": 836,
+      "end": 846
+     },
+     {
+      "name": "assets/README/README_PT.md",
+      "start": 846,
+      "end": 856
+     },
+     {
+      "name": "assets/README/README_RU.md",
+      "start": 846,
+      "end": 856
+     },
+     {
+      "name": "assets/README/README_TH.md",
+      "start": 874,
+      "end": 884
+     }
+    ],
+    "copies": 10,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 18,
+    "tokens": 531,
+    "first": {
+     "name": "assets/README/README_AR.md",
+     "start": 24,
+     "end": 41
+    },
+    "others": [
+     {
+      "name": "assets/README/README_RU.md",
+      "start": 24,
+      "end": 41
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 1855,
+   "lines": 504739,
+   "tokens": 2730876,
+   "clones": 727,
+   "duplicatedLines": 9552,
+   "duplicatedTokens": 54492,
+   "percentage": 1.89,
+   "percentageTokens": 2,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 1020,
+     "lines": 304480,
+     "clones": 458,
+     "duplicatedLines": 5453,
+     "percentage": 1.79
+    },
+    {
+     "format": "tsx",
+     "sources": 494,
+     "lines": 149532,
+     "clones": 243,
+     "duplicatedLines": 3760,
+     "percentage": 2.51
+    },
+    {
+     "format": "typescript",
+     "sources": 322,
+     "lines": 49101,
+     "clones": 26,
+     "duplicatedLines": 339,
+     "percentage": 0.69
+    },
+    {
+     "format": "javascript",
+     "sources": 18,
+     "lines": 1582,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 44,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 7,
+     "tokens": 83,
+     "first": {
+      "name": "deeptutor/book/blocks/code.py",
+      "start": 64,
+      "end": 70
+     },
+     "others": [
+      {
+       "name": "deeptutor/book/blocks/figure.py",
+       "start": 31,
+       "end": 37
+      },
+      {
+       "name": "deeptutor/book/blocks/flash_cards.py",
+       "start": 22,
+       "end": 28
+      },
+      {
+       "name": "deeptutor/book/blocks/interactive.py",
+       "start": 31,
+       "end": 37
+      },
+      {
+       "name": "deeptutor/book/blocks/quiz.py",
+       "start": 17,
+       "end": 23
+      },
+      {
+       "name": "deeptutor/book/blocks/section.py",
+       "start": 73,
+       "end": 79
+      },
+      {
+       "name": "deeptutor/book/blocks/text.py",
+       "start": 33,
+       "end": 39
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "async def _generate(",
+       "    self, ctx: BlockContext",
+       ") -> tuple[dict[str, Any], list[SourceAnchor], dict[str, Any]]:",
+       "    params = ctx.block.params",
+       "    chapter_title = params.get(\"chapter_title\", ctx.chapter.title)",
+       "    chapter_summary = params.get(\"chapter_summary\", ctx.chapter.summary)",
+       "    objectives = params.get(\"objectives\") or ctx.chapter.learning_objectives"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 60,
+     "tokens": 446,
+     "first": {
+      "name": "web/components/common/RichMarkdownRenderer.tsx",
+      "start": 224,
+      "end": 283
+     },
+     "others": [
+      {
+       "name": "web/components/common/SimpleMarkdownRenderer.tsx",
+       "start": 86,
+       "end": 145
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  <code className=\"rounded bg-[var(--muted)] px-1 py-0.5 font-mono text-[0.95em] text-[var(--foreground)]/90\">",
+       "    {String(children).replace(/\\n$/, \"\")}",
+       "  </code>",
+       "),",
+       "img: () => null,",
+       "hr: () => <div className=\"my-1 h-px bg-current opacity-10\" />,",
+       "ul: ({ node, ...props }: any) => (",
+       "  <ul className=\"my-1 ml-4 list-disc\" {...props} />",
+       "),",
+       "ol: ({ node, ...props }: any) => ("
+      ],
+      "total": 60
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 78,
+     "tokens": 369,
+     "first": {
+      "name": "deeptutor/agents/math_animator/capability.py",
+      "start": 243,
+      "end": 320
+     },
+     "others": [
+      {
+       "name": "deeptutor/agents/visualize/capability.py",
+       "start": 501,
+       "end": 578
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "stage = str(update.get(\"phase\") or update.get(\"stage\") or \"concept_analysis\")",
+       "base_metadata = {",
+       "    key: value",
+       "    for key, value in update.items()",
+       "    if key",
+       "    not in {\"event\", \"state\", \"response\", \"chunk\", \"result\", \"tool_name\", \"tool_args\"}",
+       "}",
+       "",
+       "if event != \"llm_call\":",
+       "    return"
+      ],
+      "total": 78
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 41,
+     "tokens": 362,
+     "first": {
+      "name": "web/components/common/RichMarkdownRenderer.tsx",
+      "start": 184,
+      "end": 224
+     },
+     "others": [
+      {
+       "name": "web/components/common/SimpleMarkdownRenderer.tsx",
+       "start": 46,
+       "end": 86
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 65,
+     "tokens": 294,
+     "first": {
+      "name": "deeptutor/agents/question/pipeline.py",
+      "start": 1790,
+      "end": 1854
+     },
+     "others": [
+      {
+       "name": "deeptutor/agents/research/pipeline.py",
+       "start": 2284,
+       "end": 2348
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 58,
+     "first": {
+      "name": "deeptutor/services/subagent/antigravity.py",
+      "start": 134,
+      "end": 141
+     },
+     "others": [
+      {
+       "name": "deeptutor/services/subagent/claude_code.py",
+       "start": 71,
+       "end": 78
+      },
+      {
+       "name": "deeptutor/services/subagent/codex.py",
+       "start": 71,
+       "end": 78
+      },
+      {
+       "name": "deeptutor/services/subagent/hermes.py",
+       "start": 42,
+       "end": 49
+      },
+      {
+       "name": "deeptutor/services/subagent/kimi.py",
+       "start": 80,
+       "end": 87
+      },
+      {
+       "name": "deeptutor/services/subagent/openclaw.py",
+       "start": 40,
+       "end": 47
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 53,
+     "tokens": 272,
+     "first": {
+      "name": "web/components/common/RichMarkdownRenderer.tsx",
+      "start": 541,
+      "end": 593
+     },
+     "others": [
+      {
+       "name": "web/components/common/SimpleMarkdownRenderer.tsx",
+       "start": 318,
+       "end": 370
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 52,
+     "tokens": 270,
+     "first": {
+      "name": "web/components/chat/home/SessionViewerPanel.tsx",
+      "start": 1203,
+      "end": 1254
+     },
+     "others": [
+      {
+       "name": "web/components/chat/preview/FilePreviewDrawer.tsx",
+       "start": 374,
+       "end": 426
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 118,
+     "first": {
+      "name": "deeptutor/book/blocks/animation.py",
+      "start": 47,
+      "end": 68
+     },
+     "others": [
+      {
+       "name": "deeptutor/book/blocks/figure.py",
+       "start": 40,
+       "end": 61
+      },
+      {
+       "name": "deeptutor/book/blocks/interactive.py",
+       "start": 40,
+       "end": 61
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 235,
+     "first": {
+      "name": "web/contracts/parse/turn-command.ts",
+      "start": 42,
+      "end": 63
+     },
+     "others": [
+      {
+       "name": "web/lib/random-uuid.ts",
+       "start": 19,
+       "end": 40
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 3,
+    "minified": 0,
+    "sample": [
+     "web/contracts/generated/api.ts",
+     "web/contracts/generated/turn-protocol.ts",
+     "web/lib/brand-icons.generated.ts"
+    ]
+   }
+  },
+  "health": {
+   "score": 64.3,
+   "grade": "C",
+   "size": {
+    "lines": 776457,
+    "files": 3113,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 2.6,
+     "adjusted": 2.6,
+     "lines": 19918,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "tsx",
+      "typescript",
+      "javascript",
+      "docker",
+      "bash",
+      "batch"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 81.1
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 3.6,
+     "adjusted": 3.6,
+     "lines": 27737,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 71.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 56.8,
+     "adjusted": 56.7,
+     "lines": 441170,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 45.5
+    }
+   ]
+  },
+  "complexity": {
+   "total": 121944,
+   "mean": 39.2,
+   "files": [
+    {
+     "path": "web/features/chat/ChatStateAdapter.tsx",
+     "complexity": 996,
+     "lines": 3971,
+     "bytes": 157509
+    },
+    {
+     "path": "deeptutor/learning/service.py",
+     "complexity": 905,
+     "lines": 3355,
+     "bytes": 146477
+    },
+    {
+     "path": "deeptutor/api/routers/knowledge.py",
+     "complexity": 849,
+     "lines": 5225,
+     "bytes": 209130
+    },
+    {
+     "path": "deeptutor/services/session/sqlite_store.py",
+     "complexity": 830,
+     "lines": 4720,
+     "bytes": 204729
+    },
+    {
+     "path": "deeptutor/capabilities/mastery/tools.py",
+     "complexity": 631,
+     "lines": 3816,
+     "bytes": 170324
+    },
+    {
+     "path": "web/features/chat/components/ChatWorkspace.tsx",
+     "complexity": 613,
+     "lines": 3017,
+     "bytes": 122379
+    },
+    {
+     "path": "web/features/chat/messages/ChatMessageList.tsx",
+     "complexity": 580,
+     "lines": 2539,
+     "bytes": 99440
+    },
+    {
+     "path": "deeptutor/knowledge/manager.py",
+     "complexity": 536,
+     "lines": 2570,
+     "bytes": 105957
+    },
+    {
+     "path": "deeptutor/partners/channels/feishu.py",
+     "complexity": 515,
+     "lines": 2459,
+     "bytes": 100172
+    },
+    {
+     "path": "deeptutor/agents/research/pipeline.py",
+     "complexity": 507,
+     "lines": 3275,
+     "bytes": 127546
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 3.57,
+   "findings": 319,
+   "files": 3277,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 76
+    },
+    {
+     "category": "unused-export",
+     "count": 121
+    },
+    {
+     "category": "unused-symbol",
+     "count": 67
+    },
+    {
+     "category": "unused-import",
+     "count": 55
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "deeptutor/agents/research/pipeline.py",
+     "name": "",
+     "line": 1,
+     "lines": 3275
+    },
+    {
+     "category": "unused-file",
+     "path": "deeptutor/partners/channels/feishu.py",
+     "name": "",
+     "line": 1,
+     "lines": 2459
+    },
+    {
+     "category": "unused-file",
+     "path": "web/components/settings/ServiceConfigEditor.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 1877
+    },
+    {
+     "category": "unused-file",
+     "path": "deeptutor/partners/channels/telegram.py",
+     "name": "",
+     "line": 1,
+     "lines": 1157
+    },
+    {
+     "category": "unused-file",
+     "path": "deeptutor/partners/channels/mochat.py",
+     "name": "",
+     "line": 1,
+     "lines": 1076
+    },
+    {
+     "category": "unused-file",
+     "path": "deeptutor/partners/channels/zulip.py",
+     "name": "",
+     "line": 1,
+     "lines": 859
+    },
+    {
+     "category": "unused-file",
+     "path": "deeptutor/partners/channels/msteams.py",
+     "name": "",
+     "line": 1,
+     "lines": 847
+    },
+    {
+     "category": "unused-file",
+     "path": "deeptutor/partners/channels/matrix.py",
+     "name": "",
+     "line": 1,
+     "lines": 844
+    },
+    {
+     "category": "unused-file",
+     "path": "web/components/settings/ConnectionsEditor.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 762
+    },
+    {
+     "category": "unused-file",
+     "path": "deeptutor/partners/channels/napcat.py",
+     "name": "",
+     "line": 1,
+     "lines": 594
+    }
+   ]
+  }
+ }
+}

@@ -49,59 +49,75 @@
    "codeSources": 42,
    "healthScore": 31.1,
    "healthGrade": "E"
+  },
+  {
+   "date": "2026-10-28",
+   "rank": 1,
+   "stars": 39349,
+   "starsToday": 2830,
+   "headSha": "6033bab2a8051b5454552d2e8e6cb8f27c483a42",
+   "sources": 589,
+   "lines": 64746,
+   "clones": 495,
+   "duplicatedLines": 5347,
+   "percentage": 8.26,
+   "codePercentage": 0.83,
+   "codeSources": 44,
+   "healthScore": 28.2,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-10-27",
-  "generatedAt": "2026-10-27T05:30:54.898Z",
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T05:23:00.965Z",
   "name": "Nutlope/hallmark",
   "url": "https://github.com/Nutlope/hallmark",
   "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
   "language": "CSS",
-  "stars": 36946,
-  "starsToday": 2244,
+  "stars": 39349,
+  "starsToday": 2830,
   "defaultBranch": "main",
-  "headSha": "7ec868225c6caa040558c321ee0fefa0e73f83a8",
-  "durationMs": 1384,
+  "headSha": "6033bab2a8051b5454552d2e8e6cb8f27c483a42",
+  "durationMs": 1528,
   "total": {
-   "sources": 573,
-   "lines": 62602,
-   "tokens": 1459385,
-   "clones": 484,
-   "duplicatedLines": 5224,
-   "duplicatedTokens": 144838,
-   "percentage": 8.34,
-   "percentageTokens": 9.92
+   "sources": 589,
+   "lines": 64746,
+   "tokens": 1511458,
+   "clones": 495,
+   "duplicatedLines": 5347,
+   "duplicatedTokens": 147727,
+   "percentage": 8.26,
+   "percentageTokens": 9.77
   },
   "formats": [
    {
     "format": "css",
-    "sources": 270,
-    "lines": 19653,
-    "clones": 247,
-    "duplicatedLines": 3230,
-    "percentage": 16.44
+    "sources": 278,
+    "lines": 20322,
+    "clones": 253,
+    "duplicatedLines": 3303,
+    "percentage": 16.25
    },
    {
     "format": "markup",
-    "sources": 91,
-    "lines": 18459,
-    "clones": 228,
-    "duplicatedLines": 1911,
-    "percentage": 10.35
+    "sources": 93,
+    "lines": 18977,
+    "clones": 230,
+    "duplicatedLines": 1930,
+    "percentage": 10.17
    },
    {
     "format": "javascript",
-    "sources": 40,
-    "lines": 12099,
-    "clones": 9,
-    "duplicatedLines": 83,
-    "percentage": 0.69
+    "sources": 42,
+    "lines": 12739,
+    "clones": 12,
+    "duplicatedLines": 114,
+    "percentage": 0.89
    },
    {
     "format": "markdown",
-    "sources": 102,
-    "lines": 7976,
+    "sources": 104,
+    "lines": 8174,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -109,7 +125,7 @@
    {
     "format": "json",
     "sources": 7,
-    "lines": 2609,
+    "lines": 2706,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -124,8 +140,8 @@
    },
    {
     "format": "yaml",
-    "sources": 49,
-    "lines": 549,
+    "sources": 51,
+    "lines": 571,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -456,9 +472,19 @@
       "name": "site/themes/piste/base.css",
       "start": 4,
       "end": 26
+     },
+     {
+      "name": "site/themes/refract/base.css",
+      "start": 4,
+      "end": 26
+     },
+     {
+      "name": "site/themes/vantage/base.css",
+      "start": 4,
+      "end": 26
      }
     ],
-    "copies": 7,
+    "copies": 9,
     "kind": "styles"
    },
    {
@@ -658,22 +684,22 @@
    }
   ],
   "code": {
-   "sources": 42,
-   "lines": 13166,
-   "tokens": 190642,
-   "clones": 9,
-   "duplicatedLines": 83,
-   "duplicatedTokens": 898,
-   "percentage": 0.63,
-   "percentageTokens": 0.47,
+   "sources": 44,
+   "lines": 13806,
+   "tokens": 203467,
+   "clones": 12,
+   "duplicatedLines": 114,
+   "duplicatedTokens": 1236,
+   "percentage": 0.83,
+   "percentageTokens": 0.61,
    "formats": [
     {
      "format": "javascript",
-     "sources": 38,
-     "lines": 12062,
-     "clones": 9,
-     "duplicatedLines": 83,
-     "percentage": 0.69
+     "sources": 40,
+     "lines": 12702,
+     "clones": 12,
+     "duplicatedLines": 114,
+     "percentage": 0.9
     },
     {
      "format": "python",
@@ -685,6 +711,55 @@
     }
    ],
    "topClones": [
+    {
+     "format": "javascript",
+     "lines": 19,
+     "tokens": 206,
+     "first": {
+      "name": "site/themes/refract/scene.js",
+      "start": 5,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "site/themes/vantage/scene.js",
+       "start": 10,
+       "end": 26
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "const root = getComputedStyle(document.documentElement);",
+       "",
+       "// oklch() token to sRGB 0..1",
+       "function oklch(str) {",
+       "  const m = str.match(/oklch\\(\\s*([\\d.]+)%\\s+([\\d.]+)\\s+([\\d.]+)/);",
+       "  if (!m) return [1, 1, 1];",
+       "  const L = +m[1] / 100, C = +m[2], h = (+m[3] * Math.PI) / 180;",
+       "  const a = C * Math.cos(h), b = C * Math.sin(h);",
+       "  const l_ = L + 0.3963377774 * a + 0.2158037573 * b;",
+       "  const m_ = L - 0.1055613458 * a - 0.0638541728 * b;"
+      ],
+      "total": 19
+     },
+     "excerptSecond": {
+      "lines": [
+       "const css = getComputedStyle(root);",
+       "function oklch(str) {",
+       "  const m = str.match(/oklch\\(\\s*([\\d.]+)%\\s+([\\d.]+)\\s+([\\d.]+)/);",
+       "  if (!m) return [1, 1, 1];",
+       "  const L = +m[1] / 100, C = +m[2], h = (+m[3] * Math.PI) / 180;",
+       "  const a = C * Math.cos(h), b = C * Math.sin(h);",
+       "  const l_ = L + 0.3963377774 * a + 0.2158037573 * b;",
+       "  const m_ = L - 0.1055613458 * a - 0.0638541728 * b;",
+       "  const s_ = L - 0.0894841775 * a - 1.291485548 * b;",
+       "  const l = l_ ** 3, mm = m_ ** 3, s = s_ ** 3;"
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
     {
      "format": "javascript",
      "lines": 16,
@@ -770,32 +845,6 @@
       }
      ],
      "copies": 2,
-     "excerpt": {
-      "lines": [
-       "const img = new Image();",
-       "img.src = 'data:image/png;base64,' + b64;",
-       "await img.decode();",
-       "const c = document.createElement('canvas');",
-       "c.width = img.width; c.height = img.height;",
-       "const x = c.getContext('2d');",
-       "x.drawImage(img, 0, 0);",
-       "const d = x.getImageData(0, 0, c.width, c.height).data;",
-       "const ch = [[], [], []];",
-       "for (let i = 0; i < d.length; i += 4) { ch[0].push(d[i]); ch[1].push(d[i + 1]); ch[2].push(d[i + 2]); }"
-      ],
-      "total": 10
-     },
-     "excerptSecond": {
-      "lines": [
-       "const img = new Image(); img.src = 'data:image/png;base64,' + b64; await img.decode();",
-       "const c = document.createElement('canvas'); c.width = img.width; c.height = img.height;",
-       "const x = c.getContext('2d'); x.drawImage(img, 0, 0);",
-       "const d = x.getImageData(0, 0, c.width, c.height).data;",
-       "const ch = [[], [], []];",
-       "for (let py = 0; py < c.height; py++) for (let px = 0; px < c.width; px++) {"
-      ],
-      "total": 6
-     },
      "kind": "code"
     },
     {
@@ -857,6 +906,25 @@
     },
     {
      "format": "javascript",
+     "lines": 6,
+     "tokens": 72,
+     "first": {
+      "name": "site/themes/atelier/air.js",
+      "start": 105,
+      "end": 110
+     },
+     "others": [
+      {
+       "name": "site/themes/refract/scene.js",
+       "start": 134,
+       "end": 139
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
      "lines": 7,
      "tokens": 68,
      "first": {
@@ -892,25 +960,6 @@
      ],
      "copies": 2,
      "kind": "code"
-    },
-    {
-     "format": "javascript",
-     "lines": 6,
-     "tokens": 64,
-     "first": {
-      "name": "skills/hallmark/scripts/sloplint-render.mjs",
-      "start": 425,
-      "end": 430
-     },
-     "others": [
-      {
-       "name": "skills/hallmark/scripts/sloplint-render.mjs",
-       "start": 1018,
-       "end": 1018
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
     }
    ],
    "generated": {
@@ -922,20 +971,20 @@
    }
   },
   "health": {
-   "score": 31.1,
+   "score": 28.2,
    "grade": "E",
    "size": {
-    "lines": 13245,
-    "files": 45,
+    "lines": 13885,
+    "files": 47,
     "class": "M"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 0.6,
-     "adjusted": 1,
-     "lines": 83,
+     "value": 0.8,
+     "adjusted": 1.2,
+     "lines": 114,
      "halfLife": 8.5,
      "formats": [
       "javascript",
@@ -949,39 +998,39 @@
       "data"
      ],
      "weight": 1,
-     "score": 92.1
+     "score": 91
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 28.4,
-     "adjusted": 25,
-     "lines": 3757,
+     "value": 31.7,
+     "adjusted": 28.1,
+     "lines": 4397,
      "halfLife": 7.5,
      "weight": 1,
-     "score": 9.9
+     "score": 7.5
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 88.6,
-     "adjusted": 79.7,
-     "lines": 11734,
+     "value": 89.1,
+     "adjusted": 80.5,
+     "lines": 12374,
      "halfLife": 50,
      "weight": 1,
-     "score": 33.1
+     "score": 32.7
     }
    ]
   },
   "complexity": {
-   "total": 8486,
-   "mean": 188.6,
+   "total": 8828,
+   "mean": 187.8,
    "files": [
     {
      "path": "skills/hallmark/scripts/sloplint.mjs",
-     "complexity": 3445,
+     "complexity": 3446,
      "lines": 4422,
-     "bytes": 231622
+     "bytes": 231648
     },
     {
      "path": "skills/hallmark/scripts/sloplint-render.mjs",
@@ -993,7 +1042,7 @@
      "path": "skills/hallmark/scripts/theme.mjs",
      "complexity": 516,
      "lines": 650,
-     "bytes": 58980
+     "bytes": 58934
     },
     {
      "path": "site/themes/furrow/map.js",
@@ -1014,6 +1063,12 @@
      "bytes": 21313
     },
     {
+     "path": "site/themes/vantage/scene.js",
+     "complexity": 237,
+     "lines": 330,
+     "bytes": 27773
+    },
+    {
      "path": "site/themes/ribbon/night.js",
      "complexity": 217,
      "lines": 414,
@@ -1030,23 +1085,17 @@
      "complexity": 136,
      "lines": 547,
      "bytes": 20849
-    },
-    {
-     "path": "eval/gen-cli.mjs",
-     "complexity": 118,
-     "lines": 285,
-     "bytes": 15379
     }
    ]
   },
   "deadCode": {
-   "percentage": 28.36,
-   "findings": 25,
-   "files": 46,
+   "percentage": 31.66,
+   "findings": 27,
+   "files": 48,
    "byCategory": [
     {
      "category": "unused-file",
-     "count": 24
+     "count": 26
     },
     {
      "category": "unused-import",
@@ -1077,10 +1126,24 @@
     },
     {
      "category": "unused-file",
+     "path": "site/themes/vantage/scene.js",
+     "name": "",
+     "line": 1,
+     "lines": 330
+    },
+    {
+     "category": "unused-file",
      "path": "site/themes/bloom/page.js",
      "name": "",
      "line": 1,
      "lines": 314
+    },
+    {
+     "category": "unused-file",
+     "path": "site/themes/refract/scene.js",
+     "name": "",
+     "line": 1,
+     "lines": 310
     },
     {
      "category": "unused-file",
@@ -1109,20 +1172,6 @@
      "name": "",
      "line": 1,
      "lines": 142
-    },
-    {
-     "category": "unused-file",
-     "path": "site/js/headline.js",
-     "name": "",
-     "line": 1,
-     "lines": 130
-    },
-    {
-     "category": "unused-file",
-     "path": "site/js/compare.js",
-     "name": "",
-     "line": 1,
-     "lines": 122
     }
    ]
   }
