@@ -1,0 +1,775 @@
+{
+ "name": "expo/skills",
+ "url": "https://github.com/expo/skills",
+ "appearances": [
+  {
+   "date": "2026-10-29",
+   "rank": 7,
+   "stars": 3648,
+   "starsToday": 90,
+   "headSha": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+   "sources": 278,
+   "lines": 29200,
+   "clones": 59,
+   "duplicatedLines": 704,
+   "percentage": 2.41,
+   "codePercentage": null,
+   "codeSources": 17,
+   "healthScore": 72.7,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T05:23:29.711Z",
+  "name": "expo/skills",
+  "url": "https://github.com/expo/skills",
+  "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+  "language": "Shell",
+  "stars": 3648,
+  "starsToday": 90,
+  "defaultBranch": "main",
+  "headSha": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+  "durationMs": 1049,
+  "total": {
+   "sources": 278,
+   "lines": 29200,
+   "tokens": 247003,
+   "clones": 59,
+   "duplicatedLines": 704,
+   "duplicatedTokens": 6068,
+   "percentage": 2.41,
+   "percentageTokens": 2.46
+  },
+  "formats": [
+   {
+    "format": "markdown",
+    "sources": 103,
+    "lines": 18602,
+    "clones": 29,
+    "duplicatedLines": 240,
+    "percentage": 1.29
+   },
+   {
+    "format": "yaml",
+    "sources": 22,
+    "lines": 948,
+    "clones": 12,
+    "duplicatedLines": 193,
+    "percentage": 20.36
+   },
+   {
+    "format": "swift",
+    "sources": 13,
+    "lines": 925,
+    "clones": 8,
+    "duplicatedLines": 140,
+    "percentage": 15.14
+   },
+   {
+    "format": "tsx",
+    "sources": 32,
+    "lines": 2935,
+    "clones": 5,
+    "duplicatedLines": 81,
+    "percentage": 2.76
+   },
+   {
+    "format": "bash",
+    "sources": 40,
+    "lines": 1594,
+    "clones": 3,
+    "duplicatedLines": 29,
+    "percentage": 1.82
+   },
+   {
+    "format": "typescript",
+    "sources": 12,
+    "lines": 1183,
+    "clones": 1,
+    "duplicatedLines": 14,
+    "percentage": 1.18
+   },
+   {
+    "format": "javascript",
+    "sources": 8,
+    "lines": 503,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 1.39
+   },
+   {
+    "format": "json",
+    "sources": 21,
+    "lines": 968,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "python",
+    "sources": 2,
+    "lines": 823,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 11,
+    "lines": 245,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markdown",
+    "lines": 9,
+    "tokens": 98,
+    "first": {
+     "name": "plugins/expo/skills/eas-app-stores/SKILL.md",
+     "start": 167,
+     "end": 175
+    },
+    "others": [
+     {
+      "name": "plugins/expo/skills/eas-update-insights/SKILL.md",
+      "start": 229,
+      "end": 237
+     },
+     {
+      "name": "plugins/expo/skills/eas-workflows/SKILL.md",
+      "start": 90,
+      "end": 98
+     },
+     {
+      "name": "plugins/expo/skills/expo-animation/SKILL.md",
+      "start": 265,
+      "end": 273
+     },
+     {
+      "name": "plugins/expo/skills/expo-brownfield/SKILL.md",
+      "start": 61,
+      "end": 69
+     },
+     {
+      "name": "plugins/expo/skills/expo-data-fetching/SKILL.md",
+      "start": 469,
+      "end": 477
+     },
+     {
+      "name": "plugins/expo/skills/expo-design-system/SKILL.md",
+      "start": 367,
+      "end": 375
+     },
+     {
+      "name": "plugins/expo/skills/expo-examples/SKILL.md",
+      "start": 97,
+      "end": 105
+     },
+     {
+      "name": "plugins/expo/skills/expo-module/SKILL.md",
+      "start": 142,
+      "end": 150
+     }
+    ],
+    "copies": 14,
+    "excerpt": {
+     "lines": [
+      "Check the CLI version before interpreting a missing command: these submission commands are available in 23.2.0 but not in the tested 18.6.0 installation. A pin…",
+      "",
+      "## Submitting Feedback",
+      "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+      "```bash",
+      "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"eas-app-stores\" \"<actionable feedback>\"",
+      "```",
+      "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+      "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "- **Crashes are self-reported**: `failedInstalls` / \"Crashes\" counts updates that errored during install/launch and were reported on the next update check. Cra…",
+      "",
+      "## Submitting Feedback",
+      "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+      "```bash",
+      "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"eas-update-insights\" \"<actionable feedback>\"",
+      "```",
+      "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+      "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+     ],
+     "total": 9
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 7,
+    "tokens": 97,
+    "first": {
+     "name": "plugins/expo-experiments/skills/expo-migrate-module/SKILL.md",
+     "start": 117,
+     "end": 123
+    },
+    "others": [
+     {
+      "name": "plugins/expo/skills/eas-app-stores/SKILL.md",
+      "start": 169,
+      "end": 175
+     },
+     {
+      "name": "plugins/expo/skills/eas-hosting/SKILL.md",
+      "start": 424,
+      "end": 430
+     },
+     {
+      "name": "plugins/expo/skills/eas-observe/SKILL.md",
+      "start": 43,
+      "end": 49
+     },
+     {
+      "name": "plugins/expo/skills/eas-simulator/SKILL.md",
+      "start": 230,
+      "end": 236
+     },
+     {
+      "name": "plugins/expo/skills/eas-update/SKILL.md",
+      "start": 139,
+      "end": 145
+     },
+     {
+      "name": "plugins/expo/skills/expo-app-clip/SKILL.md",
+      "start": 284,
+      "end": 290
+     },
+     {
+      "name": "plugins/expo/skills/expo-dev-client/SKILL.md",
+      "start": 177,
+      "end": 183
+     },
+     {
+      "name": "plugins/expo/skills/expo-dom/SKILL.md",
+      "start": 418,
+      "end": 424
+     }
+    ],
+    "copies": 11,
+    "excerpt": {
+     "lines": [
+      "## Submitting Feedback",
+      "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+      "```bash",
+      "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"expo-migrate-module\" \"<actionable feedback>\"",
+      "```",
+      "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+      "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "## Submitting Feedback",
+      "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+      "```bash",
+      "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"eas-app-stores\" \"<actionable feedback>\"",
+      "```",
+      "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+      "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+     ],
+     "total": 7
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "yaml",
+    "lines": 20,
+    "tokens": 185,
+    "first": {
+     "name": ".eas/workflows/skill-eval-ci.yml",
+     "start": 88,
+     "end": 107
+    },
+    "others": [
+     {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 193,
+      "end": 212
+     },
+     {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 298,
+      "end": 317
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "  PRD: dataset/prds/notes/prd/mvp.txt",
+      "  SCENARIO: skills_available_unmentioned",
+      "outputs:",
+      "  report: ${{ steps.run.outputs.report }}",
+      "  expected: ${{ steps.run.outputs.expected }}",
+      "  detected: ${{ steps.run.outputs.detected }}",
+      "  recall: ${{ steps.run.outputs.recall }}",
+      "  precision: ${{ steps.run.outputs.precision }}",
+      "  lexical: ${{ steps.run.outputs.lexical }}",
+      "  structural: ${{ steps.run.outputs.structural }}"
+     ],
+     "total": 20
+    },
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 17,
+    "tokens": 152,
+    "first": {
+     "name": ".eas/workflows/skill-eval-ci.yml",
+     "start": 31,
+     "end": 47
+    },
+    "others": [
+     {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 136,
+      "end": 152
+     },
+     {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 241,
+      "end": 257
+     }
+    ],
+    "copies": 3,
+    "kind": "data"
+   },
+   {
+    "format": "markdown",
+    "lines": 12,
+    "tokens": 232,
+    "first": {
+     "name": "README.md",
+     "start": 103,
+     "end": 114
+    },
+    "others": [
+     {
+      "name": "plugins/expo/skills/README.md",
+      "start": 13,
+      "end": 24
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "yaml",
+    "lines": 17,
+    "tokens": 116,
+    "first": {
+     "name": ".eas/workflows/skill-eval-main-baseline.yml",
+     "start": 82,
+     "end": 98
+    },
+    "others": [
+     {
+      "name": ".eas/workflows/skill-eval-main-baseline.yml",
+      "start": 144,
+      "end": 160
+     },
+     {
+      "name": ".eas/workflows/skill-eval-main-baseline.yml",
+      "start": 206,
+      "end": 222
+     }
+    ],
+    "copies": 3,
+    "kind": "data"
+   },
+   {
+    "format": "markdown",
+    "lines": 8,
+    "tokens": 189,
+    "first": {
+     "name": "README.md",
+     "start": 114,
+     "end": 121
+    },
+    "others": [
+     {
+      "name": "plugins/expo/skills/README.md",
+      "start": 24,
+      "end": 31
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "swift",
+    "lines": 28,
+    "tokens": 176,
+    "first": {
+     "name": "plugins/expo/skills/expo-brownfield/references/feature-integration.md",
+     "start": 83,
+     "end": 110
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/expo-brownfield/ios/isolated/Sources/FeatureLauncher.swift",
+      "start": 21,
+      "end": 48
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "yaml",
+    "lines": 17,
+    "tokens": 82,
+    "first": {
+     "name": ".eas/workflows/skill-eval-ci.yml",
+     "start": 109,
+     "end": 125
+    },
+    "others": [
+     {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 214,
+      "end": 230
+     },
+     {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 319,
+      "end": 335
+     }
+    ],
+    "copies": 3,
+    "kind": "data"
+   },
+   {
+    "format": "tsx",
+    "lines": 21,
+    "tokens": 161,
+    "first": {
+     "name": "plugins/expo/skills/expo-brownfield/references/feature-integration.md",
+     "start": 28,
+     "end": 48
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/expo-brownfield/app/Feature.tsx",
+      "start": 2,
+      "end": 22
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 17,
+   "lines": 2795,
+   "tokens": 16673,
+   "clones": 4,
+   "duplicatedLines": 43,
+   "duplicatedTokens": 246,
+   "percentage": 1.54,
+   "percentageTokens": 1.48,
+   "formats": [
+    {
+     "format": "bash",
+     "sources": 9,
+     "lines": 988,
+     "clones": 3,
+     "duplicatedLines": 29,
+     "percentage": 2.94
+    },
+    {
+     "format": "typescript",
+     "sources": 4,
+     "lines": 682,
+     "clones": 1,
+     "duplicatedLines": 14,
+     "percentage": 2.05
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 823,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 2,
+     "lines": 302,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 72,
+     "first": {
+      "name": "scripts/check-overview-routing.ts",
+      "start": 20,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "scripts/check-plugin-version-bump.ts",
+       "start": 162,
+       "end": 175
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  const summaryPath = process.env.ROUTING_CHECK_SUMMARY_PATH;",
+       "  if (!summaryPath) {",
+       "    return;",
+       "  }",
+       "",
+       "  mkdirSync(dirname(summaryPath), { recursive: true });",
+       "  writeFileSync(summaryPath, `${markdown}\\n`);",
+       "}",
+       "",
+       "function complete(success: boolean, markdown: string): never {"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 13,
+     "tokens": 61,
+     "first": {
+      "name": ".claude/skills/expo-skill-eval/scripts/snapshot-android.sh",
+      "start": 47,
+      "end": 59
+     },
+     "others": [
+      {
+       "name": ".claude/skills/expo-skill-eval/scripts/snapshot-ios.sh",
+       "start": 22,
+       "end": 34
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "if [[ \"$RUNNER\" == \"dev-build\" ]]; then",
+       "  BUNDLE_TIMEOUT=\"${EXPO_SKILL_EVAL_BUNDLE_TIMEOUT:-900}\"   # native compile is slow",
+       "else",
+       "  BUNDLE_TIMEOUT=\"${EXPO_SKILL_EVAL_BUNDLE_TIMEOUT:-240}\"",
+       "fi",
+       "LOG=\"${OUT%.png}.metro.log\"",
+       "",
+       "mkdir -p \"$(dirname \"$OUT\")\"",
+       "",
+       "# Free the port up front in case a previous run (or a crash) left Metro on it,"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 10,
+     "tokens": 61,
+     "first": {
+      "name": "scripts/ci.sh",
+      "start": 163,
+      "end": 172
+     },
+     "others": [
+      {
+       "name": "scripts/ci.sh",
+       "start": 201,
+       "end": 210
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "install_harness_deps",
+       "",
+       "export SKILL_PLUGIN_DIR=\"$plugin_dir\"",
+       "bash ./eval-harness/eval_harness/app_builder/scripts/author-app.sh",
+       "",
+       "AUTHORED_ARTIFACT=\"$(pwd)/eval-harness\" \\",
+       "SCENARIO=\"$scenario\" \\",
+       "OUT_DIR=\"$out_dir\" \\",
+       "PRD_SKILLS=\"$(pwd)/eval-harness/dataset/prd_skills.json\" \\",
+       "bash ./eval-harness/eval_harness/evaluator/skill_invocation/scripts/eval-skill-use.sh"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 6,
+     "tokens": 52,
+     "first": {
+      "name": ".claude/skills/expo-skill-eval/scripts/snapshot-android.sh",
+      "start": 176,
+      "end": 181
+     },
+     "others": [
+      {
+       "name": ".claude/skills/expo-skill-eval/scripts/snapshot-ios.sh",
+       "start": 59,
+       "end": 64
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 72.7,
+   "grade": "B",
+   "size": {
+    "lines": 3462,
+    "files": 25,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 2.6,
+     "adjusted": 2.9,
+     "lines": 90,
+     "halfLife": 8.5,
+     "formats": [
+      "bash",
+      "typescript",
+      "python",
+      "javascript",
+      "swift",
+      "tsx"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 78.8
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 1.5,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 63.4,
+     "weight": 0.634,
+     "score": 87.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 46.4,
+     "adjusted": 37.1,
+     "lines": 1606,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 59.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 629,
+   "mean": 25.2,
+   "files": [
+    {
+     "path": ".claude/skills/expo-skill-eval/scripts/generate_viewer.py",
+     "complexity": 78,
+     "lines": 450,
+     "bytes": 21402
+    },
+    {
+     "path": "scripts/check-plugin-version-bump.ts",
+     "complexity": 67,
+     "lines": 306,
+     "bytes": 9685
+    },
+    {
+     "path": ".claude/skills/expo-skill-eval/scripts/snapshot-android.sh",
+     "complexity": 60,
+     "lines": 284,
+     "bytes": 12440
+    },
+    {
+     "path": "plugins/expo/skills/expo-ui/scripts/list-components.js",
+     "complexity": 52,
+     "lines": 193,
+     "bytes": 7343
+    },
+    {
+     "path": "scripts/ci.py",
+     "complexity": 51,
+     "lines": 373,
+     "bytes": 14560
+    },
+    {
+     "path": "scripts/check-skill-limits.ts",
+     "complexity": 44,
+     "lines": 139,
+     "bytes": 6336
+    },
+    {
+     "path": "scripts/check-plugin-version-bump.test.ts",
+     "complexity": 41,
+     "lines": 234,
+     "bytes": 7188
+    },
+    {
+     "path": ".claude/skills/expo-skill-eval/scripts/snapshot-ios.sh",
+     "complexity": 29,
+     "lines": 132,
+     "bytes": 5479
+    },
+    {
+     "path": "scripts/sync-animate-expo.ts",
+     "complexity": 29,
+     "lines": 178,
+     "bytes": 5801
+    },
+    {
+     "path": "plugins/expo/skills/eas-workflows/scripts/fetch.js",
+     "complexity": 23,
+     "lines": 109,
+     "bytes": 2979
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 13,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

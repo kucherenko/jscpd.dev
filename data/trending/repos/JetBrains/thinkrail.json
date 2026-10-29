@@ -49,38 +49,54 @@
    "codeSources": 937,
    "healthScore": 69.4,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-10-29",
+   "rank": 1,
+   "stars": 5293,
+   "starsToday": 1068,
+   "headSha": "940d15ca5fb0838b9396832befd9ad60d6e51e66",
+   "sources": 1987,
+   "lines": 376138,
+   "clones": 1047,
+   "duplicatedLines": 10273,
+   "percentage": 2.73,
+   "codePercentage": 0.75,
+   "codeSources": 946,
+   "healthScore": 69.5,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-10-28",
-  "generatedAt": "2026-10-28T05:23:00.965Z",
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T05:23:29.711Z",
   "name": "JetBrains/thinkrail",
   "url": "https://github.com/JetBrains/thinkrail",
   "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
   "language": "TypeScript",
-  "stars": 4244,
-  "starsToday": 1204,
+  "stars": 5293,
+  "starsToday": 1068,
   "defaultBranch": "main",
-  "headSha": "ef3d5b636ed511603f52dc6bfb3658bbb9178a49",
-  "durationMs": 2744,
+  "headSha": "940d15ca5fb0838b9396832befd9ad60d6e51e66",
+  "durationMs": 2940,
   "total": {
-   "sources": 1964,
-   "lines": 371842,
-   "tokens": 2884516,
-   "clones": 1042,
-   "duplicatedLines": 10236,
-   "duplicatedTokens": 72499,
-   "percentage": 2.75,
-   "percentageTokens": 2.51
+   "sources": 1987,
+   "lines": 376138,
+   "tokens": 2918960,
+   "clones": 1047,
+   "duplicatedLines": 10273,
+   "duplicatedTokens": 72863,
+   "percentage": 2.73,
+   "percentageTokens": 2.5
   },
   "formats": [
    {
     "format": "typescript",
-    "sources": 1292,
-    "lines": 256918,
-    "clones": 884,
-    "duplicatedLines": 8547,
-    "percentage": 3.33
+    "sources": 1310,
+    "lines": 260439,
+    "clones": 889,
+    "duplicatedLines": 8584,
+    "percentage": 3.3
    },
    {
     "format": "css",
@@ -92,27 +108,27 @@
    },
    {
     "format": "tsx",
-    "sources": 330,
-    "lines": 62870,
+    "sources": 331,
+    "lines": 63228,
     "clones": 57,
     "duplicatedLines": 642,
     "percentage": 1.02
    },
    {
     "format": "yaml",
-    "sources": 64,
-    "lines": 1368,
+    "sources": 65,
+    "lines": 1376,
     "clones": 11,
     "duplicatedLines": 123,
-    "percentage": 8.99
+    "percentage": 8.94
    },
    {
     "format": "json",
-    "sources": 51,
-    "lines": 13507,
+    "sources": 52,
+    "lines": 13619,
     "clones": 9,
     "duplicatedLines": 236,
-    "percentage": 1.75
+    "percentage": 1.73
    },
    {
     "format": "html",
@@ -124,8 +140,8 @@
    },
    {
     "format": "markdown",
-    "sources": 156,
-    "lines": 28947,
+    "sources": 157,
+    "lines": 29232,
     "clones": 3,
     "duplicatedLines": 37,
     "percentage": 0.13
@@ -233,6 +249,82 @@
     "kind": "tests"
    },
    {
+    "format": "typescript",
+    "lines": 9,
+    "tokens": 67,
+    "first": {
+     "name": "packages/server/src/agent/extensions.test.ts",
+     "start": 173,
+     "end": 181
+    },
+    "others": [
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 221,
+      "end": 228
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 310,
+      "end": 317
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 347,
+      "end": 354
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 381,
+      "end": 388
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 430,
+      "end": 437
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 454,
+      "end": 461
+     },
+     {
+      "name": "packages/server/src/agent/extensions.test.ts",
+      "start": 512,
+      "end": 519
+     }
+    ],
+    "copies": 8,
+    "excerpt": {
+     "lines": [
+      "const root = mkdtempSync(join(tmpdir(), \"thinkrail-skill-trust-\"));",
+      "const project = join(root, \"project\");",
+      "const home = join(root, \"home\");",
+      "const agentDir = join(root, \"pi-agent\");",
+      "mkdirSync(project, { recursive: true });",
+      "mkdirSync(home, { recursive: true });",
+      "mkdirSync(agentDir, { recursive: true });",
+      "",
+      "const original = Object.fromEntries("
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "const root = mkdtempSync(join(tmpdir(), \"thinkrail-skill-groups-\"));",
+      "const project = join(root, \"project\");",
+      "const home = join(root, \"home\");",
+      "const agentDir = join(root, \"pi-agent\");",
+      "mkdirSync(project, { recursive: true });",
+      "mkdirSync(home, { recursive: true });",
+      "mkdirSync(agentDir, { recursive: true });",
+      "const restore = stubSkillEnv(home, agentDir);"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
     "format": "css",
     "lines": 9,
     "tokens": 85,
@@ -331,36 +423,6 @@
      }
     ],
     "copies": 5,
-    "excerpt": {
-     "lines": [
-      ".tr-title-dialog {",
-      "    font-family: var(--tr-font-family-interface);",
-      "    font-size: var(--tr-font-size-s14);",
-      "    font-weight: var(--tr-font-weight-semibold);",
-      "    line-height: var(--tr-line-height-compact);",
-      "    letter-spacing: var(--tr-letter-spacing-normal);",
-      "    text-transform: none;",
-      "    font-style: normal;",
-      "}",
-      ".tr-title-card {"
-     ],
-     "total": 10
-    },
-    "excerptSecond": {
-     "lines": [
-      ".tr-title-card {",
-      "    font-family: var(--tr-font-family-interface);",
-      "    font-size: var(--tr-font-size-s14);",
-      "    font-weight: var(--tr-font-weight-semibold);",
-      "    line-height: var(--tr-line-height-compact);",
-      "    letter-spacing: var(--tr-letter-spacing-normal);",
-      "    text-transform: none;",
-      "    font-style: normal;",
-      "}",
-      ".tr-title-section {"
-     ],
-     "total": 10
-    },
     "kind": "generated"
    },
    {
@@ -396,50 +458,6 @@
     ],
     "copies": 5,
     "kind": "generated"
-   },
-   {
-    "format": "typescript",
-    "lines": 9,
-    "tokens": 67,
-    "first": {
-     "name": "packages/server/src/agent/extensions.test.ts",
-     "start": 169,
-     "end": 177
-    },
-    "others": [
-     {
-      "name": "packages/server/src/agent/extensions.test.ts",
-      "start": 217,
-      "end": 224
-     },
-     {
-      "name": "packages/server/src/agent/extensions.test.ts",
-      "start": 306,
-      "end": 313
-     },
-     {
-      "name": "packages/server/src/agent/extensions.test.ts",
-      "start": 343,
-      "end": 350
-     },
-     {
-      "name": "packages/server/src/agent/extensions.test.ts",
-      "start": 377,
-      "end": 384
-     },
-     {
-      "name": "packages/server/src/agent/extensions.test.ts",
-      "start": 426,
-      "end": 433
-     },
-     {
-      "name": "packages/server/src/agent/extensions.test.ts",
-      "start": 450,
-      "end": 457
-     }
-    ],
-    "copies": 7,
-    "kind": "tests"
    },
    {
     "format": "html",
@@ -648,30 +666,30 @@
    }
   ],
   "code": {
-   "sources": 937,
-   "lines": 162549,
-   "tokens": 1035340,
-   "clones": 109,
-   "duplicatedLines": 1233,
-   "duplicatedTokens": 8172,
-   "percentage": 0.76,
-   "percentageTokens": 0.79,
+   "sources": 946,
+   "lines": 163820,
+   "tokens": 1043502,
+   "clones": 108,
+   "duplicatedLines": 1221,
+   "duplicatedTokens": 8084,
+   "percentage": 0.75,
+   "percentageTokens": 0.77,
    "formats": [
     {
      "format": "tsx",
-     "sources": 285,
-     "lines": 57601,
+     "sources": 286,
+     "lines": 57959,
      "clones": 55,
      "duplicatedLines": 615,
-     "percentage": 1.07
+     "percentage": 1.06
     },
     {
      "format": "typescript",
-     "sources": 616,
-     "lines": 102176,
-     "clones": 46,
-     "duplicatedLines": 519,
-     "percentage": 0.51
+     "sources": 623,
+     "lines": 103077,
+     "clones": 45,
+     "duplicatedLines": 507,
+     "percentage": 0.49
     },
     {
      "format": "html",
@@ -707,8 +725,8 @@
     },
     {
      "format": "javascript",
-     "sources": 3,
-     "lines": 156,
+     "sources": 4,
+     "lines": 168,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -985,20 +1003,20 @@
    }
   },
   "health": {
-   "score": 69.4,
+   "score": 69.5,
    "grade": "C",
    "size": {
-    "lines": 321580,
-    "files": 1636,
+    "lines": 325471,
+    "files": 1656,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 2.9,
-     "adjusted": 2.9,
-     "lines": 9189,
+     "value": 2.8,
+     "adjusted": 2.8,
+     "lines": 9226,
      "halfLife": 8.5,
      "formats": [
       "typescript",
@@ -1015,7 +1033,7 @@
       "data"
      ],
      "weight": 1,
-     "score": 79.2
+     "score": 79.3
     },
     {
      "id": "dead-code",
@@ -1025,14 +1043,14 @@
      "lines": 1328,
      "halfLife": 7.5,
      "weight": 1,
-     "score": 96.1
+     "score": 96.2
     },
     {
      "id": "complexity",
      "source": "jscpd",
      "value": 59.5,
-     "adjusted": 59.2,
-     "lines": 191225,
+     "adjusted": 59.3,
+     "lines": 193699,
      "halfLife": 50,
      "weight": 1,
      "score": 44
@@ -1040,26 +1058,26 @@
    ]
   },
   "complexity": {
-   "total": 61751,
-   "mean": 37.7,
+   "total": 62557,
+   "mean": 37.8,
    "files": [
     {
      "path": "apps/web/src/store/appStore.ts",
-     "complexity": 1573,
-     "lines": 4532,
-     "bytes": 150134
+     "complexity": 1588,
+     "lines": 4548,
+     "bytes": 150940
     },
     {
      "path": "packages/server/src/agent/agentSessionManager.ts",
-     "complexity": 801,
-     "lines": 3022,
-     "bytes": 97509
+     "complexity": 805,
+     "lines": 3045,
+     "bytes": 98133
     },
     {
      "path": "packages/server/src/agent/agentSessionManager.test.ts",
-     "complexity": 718,
-     "lines": 4074,
-     "bytes": 146310
+     "complexity": 757,
+     "lines": 4222,
+     "bytes": 151630
     },
     {
      "path": "apps/web/src/shell/layout/model.ts",
@@ -1099,16 +1117,16 @@
     },
     {
      "path": "packages/server/src/host/handlers.ts",
-     "complexity": 392,
-     "lines": 1405,
-     "bytes": 45930
+     "complexity": 395,
+     "lines": 1416,
+     "bytes": 46326
     }
    ]
   },
   "deadCode": {
    "percentage": 0.41,
    "findings": 46,
-   "files": 1712,
+   "files": 1733,
    "byCategory": [
     {
      "category": "unused-file",
