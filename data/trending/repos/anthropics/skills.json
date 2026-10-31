@@ -65,31 +65,55 @@
    "codeSources": 73,
    "healthScore": 30.3,
    "healthGrade": "E"
+  },
+  {
+   "date": "2026-10-31",
+   "rank": 5,
+   "stars": 185453,
+   "starsToday": 295,
+   "headSha": "ca45fc496a3436251f191354091d557da31c15b5",
+   "sources": 410,
+   "lines": 69365,
+   "clones": 161,
+   "duplicatedLines": 14157,
+   "percentage": 20.41,
+   "codePercentage": 30.32,
+   "codeSources": 67,
+   "healthScore": 33.3,
+   "healthGrade": "E"
   }
  ],
  "latest": {
-  "date": "2026-09-26",
-  "generatedAt": "2026-09-26T05:27:46.278Z",
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T05:21:19.544Z",
   "name": "anthropics/skills",
   "url": "https://github.com/anthropics/skills",
   "description": "Public repository for Agent Skills",
   "language": "Python",
-  "stars": 178391,
-  "starsToday": 189,
+  "stars": 185453,
+  "starsToday": 295,
   "defaultBranch": "main",
-  "headSha": "33375500bcea98d610eb30ce10ac4e59b89c390d",
-  "durationMs": 148,
+  "headSha": "ca45fc496a3436251f191354091d557da31c15b5",
+  "durationMs": 1175,
   "total": {
-   "sources": 368,
-   "lines": 59132,
-   "tokens": 510007,
-   "clones": 138,
-   "duplicatedLines": 13513,
-   "duplicatedTokens": 84786,
-   "percentage": 22.85,
-   "percentageTokens": 16.62
+   "sources": 410,
+   "lines": 69365,
+   "tokens": 670757,
+   "clones": 161,
+   "duplicatedLines": 14157,
+   "duplicatedTokens": 88706,
+   "percentage": 20.41,
+   "percentageTokens": 13.22
   },
   "formats": [
+   {
+    "format": "markdown",
+    "sources": 135,
+    "lines": 31670,
+    "clones": 51,
+    "duplicatedLines": 2662,
+    "percentage": 8.41
+   },
    {
     "format": "txt",
     "sources": 45,
@@ -99,28 +123,20 @@
     "percentage": 93.65
    },
    {
-    "format": "markdown",
-    "sources": 112,
-    "lines": 25941,
-    "clones": 41,
-    "duplicatedLines": 2167,
-    "percentage": 8.35
-   },
-   {
     "format": "python",
-    "sources": 93,
-    "lines": 18015,
-    "clones": 34,
-    "duplicatedLines": 5938,
-    "percentage": 32.96
+    "sources": 95,
+    "lines": 20897,
+    "clones": 36,
+    "duplicatedLines": 5961,
+    "percentage": 28.53
    },
    {
     "format": "typescript",
-    "sources": 15,
-    "lines": 1671,
-    "clones": 8,
-    "duplicatedLines": 122,
-    "percentage": 7.3
+    "sources": 18,
+    "lines": 2311,
+    "clones": 13,
+    "duplicatedLines": 168,
+    "percentage": 7.27
    },
    {
     "format": "markup",
@@ -132,43 +148,43 @@
    },
    {
     "format": "json",
-    "sources": 17,
-    "lines": 1102,
-    "clones": 2,
-    "duplicatedLines": 86,
-    "percentage": 7.8
+    "sources": 19,
+    "lines": 1207,
+    "clones": 3,
+    "duplicatedLines": 101,
+    "percentage": 8.37
    },
    {
     "format": "go",
     "sources": 7,
-    "lines": 686,
-    "clones": 2,
-    "duplicatedLines": 17,
-    "percentage": 2.48
-   },
-   {
-    "format": "bash",
-    "sources": 25,
-    "lines": 1650,
-    "clones": 1,
-    "duplicatedLines": 21,
-    "percentage": 1.27
+    "lines": 732,
+    "clones": 3,
+    "duplicatedLines": 32,
+    "percentage": 4.37
    },
    {
     "format": "php",
     "sources": 5,
-    "lines": 533,
-    "clones": 1,
-    "duplicatedLines": 6,
-    "percentage": 1.13
+    "lines": 577,
+    "clones": 2,
+    "duplicatedLines": 18,
+    "percentage": 3.12
    },
    {
     "format": "java",
     "sources": 5,
-    "lines": 506,
+    "lines": 547,
+    "clones": 2,
+    "duplicatedLines": 18,
+    "percentage": 3.29
+   },
+   {
+    "format": "javascript",
+    "sources": 4,
+    "lines": 1426,
     "clones": 1,
-    "duplicatedLines": 8,
-    "percentage": 1.58
+    "duplicatedLines": 9,
+    "percentage": 0.63
    }
   ],
   "topClones": [
@@ -523,258 +539,36 @@
     "kind": "docs"
    }
   ],
-  "health": {
-   "score": 30.3,
-   "grade": "E",
-   "size": {
-    "lines": 16753,
-    "files": 76,
-    "class": "M"
-   },
-   "dimensions": [
-    {
-     "id": "duplication",
-     "source": "jscpd",
-     "value": 35.2,
-     "adjusted": 31.8,
-     "lines": 5894,
-     "halfLife": 8.5,
-     "formats": [
-      "python",
-      "bash",
-      "javascript",
-      "perl"
-     ],
-     "excluded": [
-      "markup",
-      "text",
-      "data"
-     ],
-     "weight": 1,
-     "score": 7.5
-    },
-    {
-     "id": "dead-code",
-     "source": "jscpd",
-     "value": 1.7,
-     "adjusted": 1.9,
-     "lines": 264,
-     "halfLife": 7.5,
-     "coverage": 93.1,
-     "weight": 0.931,
-     "score": 84.3
-    },
-    {
-     "id": "complexity",
-     "source": "jscpd",
-     "value": 58.4,
-     "adjusted": 54.4,
-     "lines": 9788,
-     "halfLife": 50,
-     "weight": 1,
-     "score": 47
-    }
-   ]
-  },
-  "complexity": {
-   "total": 3322,
-   "mean": 43.7,
-   "files": [
-    {
-     "path": "skills/docx/scripts/office/validators/base.py",
-     "complexity": 219,
-     "lines": 875,
-     "bytes": 33756
-    },
-    {
-     "path": "skills/pptx/scripts/office/validators/base.py",
-     "complexity": 219,
-     "lines": 875,
-     "bytes": 33756
-    },
-    {
-     "path": "skills/xlsx/scripts/office/validators/base.py",
-     "complexity": 219,
-     "lines": 875,
-     "bytes": 33756
-    },
-    {
-     "path": "skills/docx/scripts/office/validators/docx.py",
-     "complexity": 124,
-     "lines": 466,
-     "bytes": 17482
-    },
-    {
-     "path": "skills/pptx/scripts/office/validators/docx.py",
-     "complexity": 124,
-     "lines": 466,
-     "bytes": 17482
-    },
-    {
-     "path": "skills/xlsx/scripts/office/validators/docx.py",
-     "complexity": 124,
-     "lines": 466,
-     "bytes": 17482
-    },
-    {
-     "path": "skills/docx/scripts/office/validators/pptx.py",
-     "complexity": 117,
-     "lines": 441,
-     "bytes": 15966
-    },
-    {
-     "path": "skills/pptx/scripts/office/validators/pptx.py",
-     "complexity": 117,
-     "lines": 441,
-     "bytes": 15966
-    },
-    {
-     "path": "skills/xlsx/scripts/office/validators/pptx.py",
-     "complexity": 117,
-     "lines": 441,
-     "bytes": 15966
-    },
-    {
-     "path": "skills/docx/scripts/merge_runs.py",
-     "complexity": 95,
-     "lines": 310,
-     "bytes": 9398
-    }
-   ]
-  },
-  "deadCode": {
-   "percentage": 1.69,
-   "findings": 10,
-   "files": 71,
-   "byCategory": [
-    {
-     "category": "unused-file",
-     "count": 2
-    },
-    {
-     "category": "unused-export",
-     "count": 3
-    },
-    {
-     "category": "unused-symbol",
-     "count": 2
-    },
-    {
-     "category": "unused-import",
-     "count": 3
-    }
-   ],
-   "largest": [
-    {
-     "category": "unused-file",
-     "path": "skills/algorithmic-art/templates/generator_template.js",
-     "name": "",
-     "line": 1,
-     "lines": 223
-    },
-    {
-     "category": "unused-file",
-     "path": "skills/pdf/scripts/check_fillable_fields.py",
-     "name": "",
-     "line": 1,
-     "lines": 11
-    },
-    {
-     "category": "unused-symbol",
-     "path": "skills/docx/scripts/comment.py",
-     "name": "_has_relationship",
-     "line": 148,
-     "lines": 6
-    },
-    {
-     "category": "unused-symbol",
-     "path": "skills/docx/scripts/comment.py",
-     "name": "_has_content_type",
-     "line": 156,
-     "lines": 6
-    },
-    {
-     "category": "unused-export",
-     "path": "skills/docx/scripts/office/helpers/pptx_theme.py",
-     "name": "find_shared_master_themes",
-     "line": 101,
-     "lines": 5
-    },
-    {
-     "category": "unused-export",
-     "path": "skills/pptx/scripts/office/helpers/pptx_theme.py",
-     "name": "find_shared_master_themes",
-     "line": 101,
-     "lines": 5
-    },
-    {
-     "category": "unused-export",
-     "path": "skills/xlsx/scripts/office/helpers/pptx_theme.py",
-     "name": "find_shared_master_themes",
-     "line": 101,
-     "lines": 5
-    },
-    {
-     "category": "unused-import",
-     "path": "skills/skill-creator/scripts/quick_validate.py",
-     "name": "os",
-     "line": 7,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "skills/slack-gif-creator/core/frame_composer.py",
-     "name": "np",
-     "line": 11,
-     "lines": 1
-    },
-    {
-     "category": "unused-import",
-     "path": "skills/slack-gif-creator/core/gif_builder.py",
-     "name": "Optional",
-     "line": 10,
-     "lines": 1
-    }
-   ]
-  },
   "code": {
-   "sources": 73,
-   "lines": 16601,
-   "tokens": 86187,
-   "clones": 29,
-   "duplicatedLines": 5894,
-   "duplicatedTokens": 29650,
-   "percentage": 35.5,
-   "percentageTokens": 34.4,
+   "sources": 67,
+   "lines": 19471,
+   "tokens": 116265,
+   "clones": 30,
+   "duplicatedLines": 5903,
+   "duplicatedTokens": 29706,
+   "percentage": 30.32,
+   "percentageTokens": 25.55,
    "formats": [
     {
      "format": "python",
-     "sources": 60,
-     "lines": 15202,
+     "sources": 62,
+     "lines": 17800,
      "clones": 29,
      "duplicatedLines": 5894,
-     "percentage": 38.77
-    },
-    {
-     "format": "bash",
-     "sources": 11,
-     "lines": 1020,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "percentage": 33.11
     },
     {
      "format": "javascript",
-     "sources": 1,
-     "lines": 205,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "sources": 3,
+     "lines": 1295,
+     "clones": 1,
+     "duplicatedLines": 9,
+     "percentage": 0.69
     },
     {
-     "format": "perl",
-     "sources": 1,
-     "lines": 174,
+     "format": "bash",
+     "sources": 2,
+     "lines": 376,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1073,7 +867,218 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T06:26:13.149Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 33.3,
+   "grade": "E",
+   "size": {
+    "lines": 19579,
+    "files": 70,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 30.1,
+     "adjusted": 27.7,
+     "lines": 5903,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "javascript",
+      "bash"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 10.5
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 1.4,
+     "adjusted": 1.5,
+     "lines": 267,
+     "halfLife": 7.5,
+     "coverage": 98.5,
+     "weight": 0.985,
+     "score": 86.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 68.8,
+     "adjusted": 64.4,
+     "lines": 13476,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 41
+    }
+   ]
+  },
+  "complexity": {
+   "total": 4830,
+   "mean": 69,
+   "files": [
+    {
+     "path": "skills/claude-api/shared/preserved-thinking-migration/prefix_diff.py",
+     "complexity": 769,
+     "lines": 1532,
+     "bytes": 94008
+    },
+    {
+     "path": "skills/claude-api/shared/preserved-thinking-migration/drop_block_probe.py",
+     "complexity": 432,
+     "lines": 1066,
+     "bytes": 66582
+    },
+    {
+     "path": "skills/docx/scripts/office/validators/base.py",
+     "complexity": 219,
+     "lines": 875,
+     "bytes": 33756
+    },
+    {
+     "path": "skills/pptx/scripts/office/validators/base.py",
+     "complexity": 219,
+     "lines": 875,
+     "bytes": 33756
+    },
+    {
+     "path": "skills/xlsx/scripts/office/validators/base.py",
+     "complexity": 219,
+     "lines": 875,
+     "bytes": 33756
+    },
+    {
+     "path": "skills/claude-api/shared/evals/report/build-report-lite.mjs",
+     "complexity": 218,
+     "lines": 488,
+     "bytes": 27329
+    },
+    {
+     "path": "skills/claude-api/shared/evals/report/runner-scaffold.mjs",
+     "complexity": 173,
+     "lines": 602,
+     "bytes": 33142
+    },
+    {
+     "path": "skills/docx/scripts/office/validators/docx.py",
+     "complexity": 124,
+     "lines": 466,
+     "bytes": 17482
+    },
+    {
+     "path": "skills/pptx/scripts/office/validators/docx.py",
+     "complexity": 124,
+     "lines": 466,
+     "bytes": 17482
+    },
+    {
+     "path": "skills/xlsx/scripts/office/validators/docx.py",
+     "complexity": 124,
+     "lines": 466,
+     "bytes": 17482
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 1.38,
+   "findings": 11,
+   "files": 75,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 2
+    },
+    {
+     "category": "unused-export",
+     "count": 3
+    },
+    {
+     "category": "unused-symbol",
+     "count": 3
+    },
+    {
+     "category": "unused-import",
+     "count": 3
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "skills/algorithmic-art/templates/generator_template.js",
+     "name": "",
+     "line": 1,
+     "lines": 223
+    },
+    {
+     "category": "unused-file",
+     "path": "skills/pdf/scripts/check_fillable_fields.py",
+     "name": "",
+     "line": 1,
+     "lines": 11
+    },
+    {
+     "category": "unused-symbol",
+     "path": "skills/docx/scripts/comment.py",
+     "name": "_has_relationship",
+     "line": 148,
+     "lines": 6
+    },
+    {
+     "category": "unused-symbol",
+     "path": "skills/docx/scripts/comment.py",
+     "name": "_has_content_type",
+     "line": 156,
+     "lines": 6
+    },
+    {
+     "category": "unused-export",
+     "path": "skills/docx/scripts/office/helpers/pptx_theme.py",
+     "name": "find_shared_master_themes",
+     "line": 101,
+     "lines": 5
+    },
+    {
+     "category": "unused-export",
+     "path": "skills/pptx/scripts/office/helpers/pptx_theme.py",
+     "name": "find_shared_master_themes",
+     "line": 101,
+     "lines": 5
+    },
+    {
+     "category": "unused-export",
+     "path": "skills/xlsx/scripts/office/helpers/pptx_theme.py",
+     "name": "find_shared_master_themes",
+     "line": 101,
+     "lines": 5
+    },
+    {
+     "category": "unused-symbol",
+     "path": "skills/claude-api/shared/preserved-thinking-migration/prefix_diff.py",
+     "name": "_item_count",
+     "line": 427,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "skills/skill-creator/scripts/quick_validate.py",
+     "name": "os",
+     "line": 7,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "skills/slack-gif-creator/core/frame_composer.py",
+     "name": "np",
+     "line": 11,
+     "lines": 1
+    }
+   ]
+  }
  }
 }

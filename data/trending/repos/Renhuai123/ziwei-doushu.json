@@ -33,24 +33,40 @@
    "codeSources": 62,
    "healthScore": 47.8,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-10-31",
+   "rank": 2,
+   "stars": 11462,
+   "starsToday": 1126,
+   "headSha": "495b79ecb3524b20b2edc026067d7d0b0f407319",
+   "sources": 110,
+   "lines": 19040,
+   "clones": 27,
+   "duplicatedLines": 283,
+   "percentage": 1.49,
+   "codePercentage": 1.12,
+   "codeSources": 63,
+   "healthScore": 49.5,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-10-26",
-  "generatedAt": "2026-10-26T05:32:18.055Z",
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T05:21:19.544Z",
   "name": "Renhuai123/ziwei-doushu",
   "url": "https://github.com/Renhuai123/ziwei-doushu",
   "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
   "language": "TypeScript",
-  "stars": 7857,
-  "starsToday": 199,
+  "stars": 11462,
+  "starsToday": 1126,
   "defaultBranch": "main",
-  "headSha": "e478393ad6c865ad6270e978a3164d2f2cb5315b",
-  "durationMs": 1283,
+  "headSha": "495b79ecb3524b20b2edc026067d7d0b0f407319",
+  "durationMs": 1041,
   "total": {
-   "sources": 108,
-   "lines": 18941,
-   "tokens": 249350,
+   "sources": 110,
+   "lines": 19040,
+   "tokens": 250463,
    "clones": 27,
    "duplicatedLines": 283,
    "duplicatedTokens": 4521,
@@ -68,16 +84,16 @@
    },
    {
     "format": "typescript",
-    "sources": 44,
-    "lines": 8430,
+    "sources": 46,
+    "lines": 8519,
     "clones": 11,
     "duplicatedLines": 133,
-    "percentage": 1.58
+    "percentage": 1.56
    },
    {
     "format": "markdown",
     "sources": 24,
-    "lines": 3115,
+    "lines": 3125,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -379,9 +395,9 @@
    }
   ],
   "code": {
-   "sources": 62,
-   "lines": 14468,
-   "tokens": 98293,
+   "sources": 63,
+   "lines": 14512,
+   "tokens": 98555,
    "clones": 18,
    "duplicatedLines": 162,
    "duplicatedTokens": 1446,
@@ -398,8 +414,8 @@
     },
     {
      "format": "typescript",
-     "sources": 32,
-     "lines": 7787,
+     "sources": 33,
+     "lines": 7831,
      "clones": 2,
      "duplicatedLines": 12,
      "percentage": 0.15
@@ -669,11 +685,11 @@
    }
   },
   "health": {
-   "score": 47.8,
+   "score": 49.5,
    "grade": "D",
    "size": {
-    "lines": 15111,
-    "files": 74,
+    "lines": 15200,
+    "files": 76,
     "class": "M"
    },
    "dimensions": [
@@ -694,33 +710,33 @@
       "data"
      ],
      "weight": 1,
-     "score": 84.5
+     "score": 84.6
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 19.4,
-     "adjusted": 17.5,
-     "lines": 2930,
+     "value": 18.2,
+     "adjusted": 16.4,
+     "lines": 2770,
      "halfLife": 7.5,
      "weight": 1,
-     "score": 19.9
+     "score": 21.9
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 32.2,
-     "adjusted": 30.9,
+     "value": 32.1,
+     "adjusted": 30.8,
      "lines": 4872,
      "halfLife": 50,
      "weight": 1,
-     "score": 65.1
+     "score": 65.3
     }
    ]
   },
   "complexity": {
-   "total": 2028,
-   "mean": 27.4,
+   "total": 2053,
+   "mean": 27,
    "files": [
     {
      "path": "lib/ziwei/patterns.ts",
@@ -785,13 +801,13 @@
    ]
   },
   "deadCode": {
-   "percentage": 19.36,
-   "findings": 55,
-   "files": 77,
+   "percentage": 18.2,
+   "findings": 54,
+   "files": 79,
    "byCategory": [
     {
      "category": "unused-file",
-     "count": 14
+     "count": 13
     },
     {
      "category": "unused-export",
@@ -858,13 +874,6 @@
     },
     {
      "category": "unused-file",
-     "path": "lib/ziwei/true-solar-time.ts",
-     "name": "",
-     "line": 1,
-     "lines": 160
-    },
-    {
-     "category": "unused-file",
      "path": "components/ShareModal.tsx",
      "name": "",
      "line": 1,
@@ -876,6 +885,13 @@
      "name": "",
      "line": 1,
      "lines": 124
+    },
+    {
+     "category": "unused-file",
+     "path": "components/PatternsCard.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 93
     }
    ]
   }

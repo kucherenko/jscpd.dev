@@ -1,80 +1,88 @@
 {
- "date": "2026-10-30",
- "generatedAt": "2026-10-30T05:23:17.449Z",
+ "date": "2026-10-31",
+ "generatedAt": "2026-10-31T05:21:19.544Z",
  "source": "github-trending-daily",
  "jscpdVersion": "5.4.2",
  "summary": {
-  "repos": 5,
-  "sources": 14055,
-  "lines": 3496951,
-  "tokens": 21016047,
-  "clones": 9797,
-  "duplicatedLines": 474202,
-  "duplicatedTokens": 1901625,
-  "percentage": 13.56,
-  "percentageTokens": 9.05,
-  "avgPercentage": 15.91,
-  "medianPercentage": 3.5,
+  "repos": 8,
+  "sources": 10416,
+  "lines": 2912112,
+  "tokens": 17686487,
+  "clones": 9211,
+  "duplicatedLines": 474390,
+  "duplicatedTokens": 1868796,
+  "percentage": 16.29,
+  "percentageTokens": 10.57,
+  "avgPercentage": 13.29,
+  "medianPercentage": 4.31,
   "mostDuplicated": {
    "name": "CopilotKit/OpenBot",
    "clones": 3972,
    "percentage": 37.33
   },
   "cleanest": {
-   "name": "HKUDS/DeepTutor",
-   "clones": 1774,
-   "percentage": 2.63
+   "name": "Renhuai123/ziwei-doushu",
+   "clones": 27,
+   "percentage": 1.49
   },
   "mostClones": {
    "name": "CopilotKit/OpenBot",
    "clones": 3972,
    "percentage": 37.33
   },
-  "codeRepos": 4,
-  "codeSources": 7839,
-  "codeLines": 1831009,
-  "codeClones": 3356,
-  "codeDuplicatedLines": 41945,
-  "codePercentage": 2.29,
+  "codeRepos": 6,
+  "codeSources": 5010,
+  "codeLines": 1371772,
+  "codeClones": 3144,
+  "codeDuplicatedLines": 44175,
+  "codePercentage": 3.22,
   "codeMedianPercentage": 1.83,
   "codeMostDuplicated": {
-   "name": "nightly-labs/openbot",
-   "clones": 2068,
-   "percentage": 3.12
+   "name": "anthropics/skills",
+   "clones": 30,
+   "percentage": 30.32
   },
   "codeCleanest": {
    "name": "JetBrains/thinkrail",
-   "clones": 109,
-   "percentage": 0.74
+   "clones": 107,
+   "percentage": 0.69
   },
-  "generatedFiles": 15,
-  "avgHealth": 61.97,
+  "generatedFiles": 5,
+  "avgHealth": 55.83,
   "healthiest": {
-   "name": "JetBrains/thinkrail",
-   "score": 69.4,
-   "grade": "C"
+   "name": "expo/skills",
+   "score": 72.7,
+   "grade": "B"
   },
   "leastHealthy": {
-   "name": "HKUDS/DeepTutor",
-   "score": 54.6,
-   "grade": "D"
+   "name": "anthropics/skills",
+   "score": 33.3,
+   "grade": "E"
   },
   "languages": [
    {
     "language": "TypeScript",
     "repos": 3,
-    "clones": 7958,
-    "lines": 2575946,
-    "duplicatedLines": 448008,
-    "percentage": 17.39
+    "clones": 5081,
+    "lines": 1489438,
+    "duplicatedLines": 409157,
+    "percentage": 27.47
    },
    {
     "language": "Python",
+    "repos": 2,
+    "clones": 1935,
+    "lines": 983919,
+    "duplicatedLines": 38195,
+    "percentage": 3.88
+   },
+   {
+    "language": "Zig",
     "repos": 1,
-    "clones": 1774,
-    "lines": 914554,
-    "duplicatedLines": 24038,
-    "percentage": 2.63
+    "clones": 2071,
+    "lines": 403104,
+    "duplicatedLines": 24178,
+    "percentage": 6
    },
    {
     "language": "Other",
@@ -83,20 +91,2678 @@
     "lines": 6451,
     "duplicatedLines": 2156,
     "percentage": 33.42
+   },
+   {
+    "language": "Shell",
+    "repos": 1,
+    "clones": 59,
+    "lines": 29200,
+    "duplicatedLines": 704,
+    "percentage": 2.41
    }
   ]
  },
  "repos": [
   {
+   "name": "CopilotKit/OpenBot",
+   "url": "https://github.com/CopilotKit/OpenBot",
+   "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+   "language": "TypeScript",
+   "stars": 8897,
+   "starsToday": 706,
+   "defaultBranch": "main",
+   "headSha": "743649efc3f21d7bf0badbe6af2bcd5daedd97ce",
+   "durationMs": 4804,
+   "total": {
+    "sources": 2378,
+    "lines": 1066940,
+    "tokens": 4959478,
+    "clones": 3972,
+    "duplicatedLines": 398271,
+    "duplicatedTokens": 1366695,
+    "percentage": 37.33,
+    "percentageTokens": 27.56
+   },
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 1441,
+     "lines": 450260,
+     "clones": 1690,
+     "duplicatedLines": 22353,
+     "percentage": 4.96
+    },
+    {
+     "format": "json",
+     "sources": 135,
+     "lines": 404404,
+     "clones": 1310,
+     "duplicatedLines": 361085,
+     "percentage": 89.29
+    },
+    {
+     "format": "tsx",
+     "sources": 500,
+     "lines": 122292,
+     "clones": 632,
+     "duplicatedLines": 10036,
+     "percentage": 8.21
+    },
+    {
+     "format": "rust",
+     "sources": 44,
+     "lines": 52599,
+     "clones": 184,
+     "duplicatedLines": 1843,
+     "percentage": 3.5
+    },
+    {
+     "format": "python",
+     "sources": 59,
+     "lines": 8512,
+     "clones": 73,
+     "duplicatedLines": 1654,
+     "percentage": 19.43
+    },
+    {
+     "format": "yaml",
+     "sources": 58,
+     "lines": 6448,
+     "clones": 35,
+     "duplicatedLines": 474,
+     "percentage": 7.35
+    },
+    {
+     "format": "diff",
+     "sources": 1,
+     "lines": 1838,
+     "clones": 30,
+     "duplicatedLines": 654,
+     "percentage": 35.58
+    },
+    {
+     "format": "txt",
+     "sources": 10,
+     "lines": 524,
+     "clones": 7,
+     "duplicatedLines": 58,
+     "percentage": 11.07
+    },
+    {
+     "format": "docker",
+     "sources": 19,
+     "lines": 772,
+     "clones": 3,
+     "duplicatedLines": 24,
+     "percentage": 3.11
+    },
+    {
+     "format": "markup",
+     "sources": 10,
+     "lines": 322,
+     "clones": 3,
+     "duplicatedLines": 36,
+     "percentage": 11.18
+    }
+   ],
+   "topClones": [
+    {
+     "format": "json",
+     "lines": 1024,
+     "tokens": 3330,
+     "copies": 15,
+     "first": {
+      "name": "server/drizzle/meta/0045_snapshot.json",
+      "start": 794,
+      "end": 1817
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0047_snapshot.json",
+       "start": 794,
+       "end": 1817
+      },
+      {
+       "name": "server/drizzle/meta/0048_snapshot.json",
+       "start": 794,
+       "end": 1817
+      },
+      {
+       "name": "server/drizzle/meta/0049_snapshot.json",
+       "start": 794,
+       "end": 1817
+      },
+      {
+       "name": "server/drizzle/meta/0050_snapshot.json",
+       "start": 794,
+       "end": 1817
+      },
+      {
+       "name": "server/drizzle/meta/0051_snapshot.json",
+       "start": 794,
+       "end": 1817
+      },
+      {
+       "name": "server/drizzle/meta/0052_snapshot.json",
+       "start": 794,
+       "end": 1817
+      },
+      {
+       "name": "server/drizzle/meta/0053_snapshot.json",
+       "start": 794,
+       "end": 1817
+      },
+      {
+       "name": "server/drizzle/meta/0054_snapshot.json",
+       "start": 794,
+       "end": 1817
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "  \"primaryKey\": false,",
+       "  \"notNull\": false",
+       "},",
+       "\"summary_at\": {",
+       "  \"name\": \"summary_at\",",
+       "  \"type\": \"timestamp with time zone\",",
+       "  \"primaryKey\": false,",
+       "  \"notNull\": false",
+       "},",
+       "\"last_message\": {"
+      ],
+      "total": 1024
+     }
+    },
+    {
+     "format": "json",
+     "lines": 6251,
+     "tokens": 19675,
+     "copies": 3,
+     "first": {
+      "name": "server/drizzle/meta/0066_snapshot.json",
+      "start": 4109,
+      "end": 10359
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0068_snapshot.json",
+       "start": 4109,
+       "end": 10359
+      },
+      {
+       "name": "server/drizzle/meta/0069_snapshot.json",
+       "start": 4116,
+       "end": 10366
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "},",
+       "\"compositePrimaryKeys\": {},",
+       "\"uniqueConstraints\": {},",
+       "\"policies\": {},",
+       "\"checkConstraints\": {",
+       "  \"voice_sessions_duration_check\": {",
+       "    \"name\": \"voice_sessions_duration_check\",",
+       "    \"value\": \"\\\"voice_sessions\\\".\\\"duration_seconds\\\" >= 0\"",
+       "  },",
+       "  \"voice_sessions_summary_check\": {"
+      ],
+      "total": 6251
+     }
+    },
+    {
+     "format": "json",
+     "lines": 522,
+     "tokens": 1636,
+     "copies": 25,
+     "first": {
+      "name": "server/drizzle/meta/0033_snapshot.json",
+      "start": 287,
+      "end": 808
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0045_snapshot.json",
+       "start": 287,
+       "end": 808
+      },
+      {
+       "name": "server/drizzle/meta/0046_snapshot.json",
+       "start": 287,
+       "end": 808
+      },
+      {
+       "name": "server/drizzle/meta/0047_snapshot.json",
+       "start": 287,
+       "end": 808
+      },
+      {
+       "name": "server/drizzle/meta/0048_snapshot.json",
+       "start": 287,
+       "end": 808
+      },
+      {
+       "name": "server/drizzle/meta/0049_snapshot.json",
+       "start": 287,
+       "end": 808
+      },
+      {
+       "name": "server/drizzle/meta/0050_snapshot.json",
+       "start": 287,
+       "end": 808
+      },
+      {
+       "name": "server/drizzle/meta/0051_snapshot.json",
+       "start": 287,
+       "end": 808
+      },
+      {
+       "name": "server/drizzle/meta/0052_snapshot.json",
+       "start": 287,
+       "end": 808
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"indexes\": {",
+       "  \"attachments_channel_idx\": {",
+       "    \"name\": \"attachments_channel_idx\",",
+       "    \"columns\": [",
+       "      {",
+       "        \"expression\": \"channel_id\",",
+       "        \"isExpression\": false,",
+       "        \"asc\": true,",
+       "        \"nulls\": \"last\"",
+       "      }"
+      ],
+      "total": 522
+     }
+    },
+    {
+     "format": "json",
+     "lines": 2747,
+     "tokens": 8794,
+     "copies": 4,
+     "first": {
+      "name": "server/drizzle/meta/0052_snapshot.json",
+      "start": 2507,
+      "end": 5253
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0054_snapshot.json",
+       "start": 2507,
+       "end": 5253
+      },
+      {
+       "name": "server/drizzle/meta/0055_snapshot.json",
+       "start": 2507,
+       "end": 5253
+      },
+      {
+       "name": "server/drizzle/meta/0056_snapshot.json",
+       "start": 2507,
+       "end": 5253
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 3992,
+     "tokens": 12463,
+     "copies": 3,
+     "first": {
+      "name": "server/drizzle/meta/0061_snapshot.json",
+      "start": 6185,
+      "end": 10176
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0062_snapshot.json",
+       "start": 6192,
+       "end": 10183
+      },
+      {
+       "name": "server/drizzle/meta/0063_snapshot.json",
+       "start": 6214,
+       "end": 10205
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 3771,
+     "tokens": 11823,
+     "copies": 3,
+     "first": {
+      "name": "server/drizzle/meta/0050_snapshot.json",
+      "start": 5136,
+      "end": 8906
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0052_snapshot.json",
+       "start": 5317,
+       "end": 9087
+      },
+      {
+       "name": "server/drizzle/meta/0054_snapshot.json",
+       "start": 5350,
+       "end": 9120
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 3695,
+     "tokens": 11748,
+     "copies": 3,
+     "first": {
+      "name": "server/drizzle/meta/0060_snapshot.json",
+      "start": 2507,
+      "end": 6201
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0061_snapshot.json",
+       "start": 2507,
+       "end": 6201
+      },
+      {
+       "name": "server/drizzle/meta/0062_snapshot.json",
+       "start": 2514,
+       "end": 6208
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 7189,
+     "tokens": 22613,
+     "copies": 2,
+     "first": {
+      "name": "server/drizzle/meta/0059_snapshot.json",
+      "start": 2821,
+      "end": 10009
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0060_snapshot.json",
+       "start": 2988,
+       "end": 10176
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 7119,
+     "tokens": 22389,
+     "copies": 2,
+     "first": {
+      "name": "server/drizzle/meta/0057_snapshot.json",
+      "start": 2885,
+      "end": 10003
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0059_snapshot.json",
+       "start": 2891,
+       "end": 10009
+      }
+     ]
+    },
+    {
+     "format": "json",
+     "lines": 856,
+     "tokens": 2768,
+     "copies": 9,
+     "first": {
+      "name": "server/drizzle/meta/0045_snapshot.json",
+      "start": 794,
+      "end": 1649
+     },
+     "others": [
+      {
+       "name": "server/drizzle/meta/0062_snapshot.json",
+       "start": 794,
+       "end": 1649
+      },
+      {
+       "name": "server/drizzle/meta/0063_snapshot.json",
+       "start": 794,
+       "end": 1649
+      },
+      {
+       "name": "server/drizzle/meta/0064_snapshot.json",
+       "start": 794,
+       "end": 1649
+      },
+      {
+       "name": "server/drizzle/meta/0065_snapshot.json",
+       "start": 794,
+       "end": 1649
+      },
+      {
+       "name": "server/drizzle/meta/0066_snapshot.json",
+       "start": 794,
+       "end": 1649
+      },
+      {
+       "name": "server/drizzle/meta/0067_snapshot.json",
+       "start": 794,
+       "end": 1649
+      },
+      {
+       "name": "server/drizzle/meta/0068_snapshot.json",
+       "start": 794,
+       "end": 1649
+      },
+      {
+       "name": "server/drizzle/meta/0069_snapshot.json",
+       "start": 794,
+       "end": 1649
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 1125,
+    "lines": 322771,
+    "tokens": 1558209,
+    "clones": 445,
+    "duplicatedLines": 5961,
+    "duplicatedTokens": 31788,
+    "percentage": 1.85,
+    "percentageTokens": 2.04,
+    "formats": [
+     {
+      "format": "rust",
+      "sources": 41,
+      "lines": 51638,
+      "clones": 182,
+      "duplicatedLines": 1825,
+      "percentage": 3.53
+     },
+     {
+      "format": "typescript",
+      "sources": 696,
+      "lines": 194316,
+      "clones": 177,
+      "duplicatedLines": 2632,
+      "percentage": 1.35
+     },
+     {
+      "format": "tsx",
+      "sources": 327,
+      "lines": 71196,
+      "clones": 70,
+      "duplicatedLines": 1278,
+      "percentage": 1.8
+     },
+     {
+      "format": "python",
+      "sources": 19,
+      "lines": 2404,
+      "clones": 15,
+      "duplicatedLines": 203,
+      "percentage": 8.44
+     },
+     {
+      "format": "sql",
+      "sources": 29,
+      "lines": 1771,
+      "clones": 1,
+      "duplicatedLines": 23,
+      "percentage": 1.3
+     },
+     {
+      "format": "bash",
+      "sources": 8,
+      "lines": 916,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "powershell",
+      "sources": 4,
+      "lines": 500,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 1,
+      "lines": 30,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 157,
+      "tokens": 771,
+      "copies": 2,
+      "first": {
+       "name": "app/src/components/computer/placeholder.tsx",
+       "start": 6,
+       "end": 162
+      },
+      "others": [
+       {
+        "name": "app/src/components/settings/background.tsx",
+        "start": 6,
+        "end": 162
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export function ComputerPlaceholder(props: SVGProps<SVGSVGElement>) {",
+        "  return (",
+        "    <svg",
+        "      viewBox=\"0 0 1200 800\"",
+        "      preserveAspectRatio=\"xMidYMin slice\"",
+        "      fill=\"none\"",
+        "      aria-hidden=\"true\"",
+        "      focusable=\"false\"",
+        "      xmlns=\"http://www.w3.org/2000/svg\"",
+        "      {...props}"
+       ],
+       "total": 157
+      }
+     },
+     {
+      "format": "rust",
+      "lines": 65,
+      "tokens": 451,
+      "copies": 2,
+      "first": {
+       "name": "desktop/src-tauri/src/ask.rs",
+       "start": 620,
+       "end": 684
+      },
+      "others": [
+       {
+        "name": "desktop/src-tauri/src/main.rs",
+        "start": 9338,
+        "end": 9402
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "use std::io::{Read, Write};",
+        "let mut request = Vec::new();",
+        "let mut buffer = [0; 1024];",
+        "loop {",
+        "    let read = stream.read(&mut buffer).expect(\"read\");",
+        "    request.extend_from_slice(&buffer[..read]);",
+        "    if request.windows(4).any(|window| window == b\"\\r\\n\\r\\n\") {",
+        "        break;",
+        "    }",
+        "}"
+       ],
+       "total": 65
+      }
+     },
+     {
+      "format": "python",
+      "lines": 18,
+      "tokens": 134,
+      "copies": 4,
+      "first": {
+       "name": "agent-ag2/src/main.py",
+       "start": 46,
+       "end": 63
+      },
+      "others": [
+       {
+        "name": "agent-claude-sdk/src/main.py",
+        "start": 44,
+        "end": 61
+       },
+       {
+        "name": "agent-langgraph-agui/src/main.py",
+        "start": 235,
+        "end": 252
+       },
+       {
+        "name": "agent-microsoft/src/main.py",
+        "start": 43,
+        "end": 60
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "stream = AGUIStream(agent)",
+        "",
+        "app = FastAPI()",
+        "",
+        "",
+        "@app.middleware(\"http\")",
+        "async def refuse_without_the_server_token(request: Request, call_next):",
+        "    if request.url.path != \"/health\":",
+        "        expected = (os.environ.get(\"MANAGED_AGENT_TOKEN\") or \"\").strip()",
+        "        offered = (request.headers.get(TOKEN_HEADER) or \"\").strip()"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "python",
+      "lines": 16,
+      "tokens": 133,
+      "copies": 4,
+      "first": {
+       "name": "agent-adk/src/main.py",
+       "start": 70,
+       "end": 85
+      },
+      "others": [
+       {
+        "name": "agent-ag2/src/main.py",
+        "start": 48,
+        "end": 63
+       },
+       {
+        "name": "agent-antigravity/src/main.py",
+        "start": 91,
+        "end": 108
+       },
+       {
+        "name": "agent-langroid/src/main.py",
+        "start": 62,
+        "end": 77
+       }
+      ]
+     },
+     {
+      "format": "typescript",
+      "lines": 26,
+      "tokens": 183,
+      "copies": 3,
+      "first": {
+       "name": "server/src/index.ts",
+       "start": 1768,
+       "end": 1793
+      },
+      "others": [
+       {
+        "name": "server/src/index.ts",
+        "start": 2006,
+        "end": 2031
+       },
+       {
+        "name": "server/src/index.ts",
+        "start": 2241,
+        "end": 2266
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 10,
+      "tokens": 52,
+      "copies": 7,
+      "first": {
+       "name": "desktop/src-tauri/src/env.rs",
+       "start": 1503,
+       "end": 1512
+      },
+      "others": [
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1605,
+        "end": 1614
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1624,
+        "end": 1633
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1641,
+        "end": 1650
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1658,
+        "end": 1667
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1675,
+        "end": 1684
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1837,
+        "end": 1846
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 12,
+      "tokens": 148,
+      "copies": 3,
+      "first": {
+       "name": "agent-adk/src/main.py",
+       "start": 53,
+       "end": 64
+      },
+      "others": [
+       {
+        "name": "agent-llamaindex/src/main.py",
+        "start": 26,
+        "end": 37
+       },
+       {
+        "name": "agent-strands/src/main.py",
+        "start": 20,
+        "end": 31
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 11,
+      "tokens": 56,
+      "copies": 6,
+      "first": {
+       "name": "desktop/src-tauri/src/env.rs",
+       "start": 1606,
+       "end": 1616
+      },
+      "others": [
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1625,
+        "end": 1635
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1642,
+        "end": 1652
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1659,
+        "end": 1669
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1676,
+        "end": 1686
+       },
+       {
+        "name": "desktop/src-tauri/src/env.rs",
+        "start": 1838,
+        "end": 1847
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 9,
+      "tokens": 138,
+      "copies": 3,
+      "first": {
+       "name": "agent-adk/src/main.py",
+       "start": 56,
+       "end": 64
+      },
+      "others": [
+       {
+        "name": "agent-agno/src/main.py",
+        "start": 32,
+        "end": 40
+       },
+       {
+        "name": "agent-crewai/src/main.py",
+        "start": 49,
+        "end": 57
+       }
+      ]
+     },
+     {
+      "format": "rust",
+      "lines": 6,
+      "tokens": 60,
+      "copies": 5,
+      "first": {
+       "name": "desktop/src-tauri/src/desktop_telemetry.rs",
+       "start": 246,
+       "end": 251
+      },
+      "others": [
+       {
+        "name": "desktop/src-tauri/src/main.rs",
+        "start": 5098,
+        "end": 5103
+       },
+       {
+        "name": "desktop/src-tauri/src/main.rs",
+        "start": 8420,
+        "end": 8425
+       },
+       {
+        "name": "desktop/src-tauri/src/main.rs",
+        "start": 9590,
+        "end": 9595
+       },
+       {
+        "name": "desktop/src-tauri/src/main.rs",
+        "start": 9779,
+        "end": 9784
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 1,
+     "minified": 0,
+     "sample": [
+      "app/src/routeTree.gen.ts"
+     ]
+    }
+   },
+   "health": {
+    "score": 62.3,
+    "grade": "C",
+    "size": {
+     "lines": 637925,
+     "files": 2106,
+     "class": "L"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 5.6,
+      "adjusted": 5.6,
+      "lines": 35933,
+      "halfLife": 8.5,
+      "formats": [
+       "typescript",
+       "tsx",
+       "rust",
+       "python",
+       "sql",
+       "bash",
+       "docker",
+       "powershell",
+       "javascript",
+       "nsis"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 63.2
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 0.7,
+      "adjusted": 0.7,
+      "lines": 4262,
+      "halfLife": 7.5,
+      "coverage": 91.2,
+      "weight": 0.912,
+      "score": 93.4
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 61.9,
+      "adjusted": 61.8,
+      "lines": 395050,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 42.5
+     }
+    ]
+   },
+   "complexity": {
+    "total": 82762,
+    "mean": 39.3,
+    "files": [
+     {
+      "path": "desktop/src-tauri/src/main.rs",
+      "complexity": 1338,
+      "lines": 11625,
+      "bytes": 465631
+     },
+     {
+      "path": "desktop/src-tauri/src/stack.rs",
+      "complexity": 1294,
+      "lines": 9589,
+      "bytes": 390866
+     },
+     {
+      "path": "extension/tests/recording.test.ts",
+      "complexity": 858,
+      "lines": 4745,
+      "bytes": 167208
+     },
+     {
+      "path": "extension/src/background/recording.ts",
+      "complexity": 849,
+      "lines": 3232,
+      "bytes": 129713
+     },
+     {
+      "path": "server/tests/composio-adapter.test.ts",
+      "complexity": 644,
+      "lines": 8976,
+      "bytes": 367395
+     },
+     {
+      "path": "server/tests/plugin-store.integration.test.ts",
+      "complexity": 616,
+      "lines": 8238,
+      "bytes": 334122
+     },
+     {
+      "path": "desktop/src/App.test.tsx",
+      "complexity": 510,
+      "lines": 3331,
+      "bytes": 113007
+     },
+     {
+      "path": "shared/recorder-masking.ts",
+      "complexity": 493,
+      "lines": 1540,
+      "bytes": 65642
+     },
+     {
+      "path": "extension/tests/streamer.test.ts",
+      "complexity": 449,
+      "lines": 1696,
+      "bytes": 60542
+     },
+     {
+      "path": "server/tests/browser-routes.integration.test.ts",
+      "complexity": 378,
+      "lines": 2968,
+      "bytes": 110733
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 0.73,
+    "findings": 102,
+    "files": 2041,
+    "byCategory": [
+     {
+      "category": "unused-file",
+      "count": 12
+     },
+     {
+      "category": "unused-export",
+      "count": 79
+     },
+     {
+      "category": "unused-symbol",
+      "count": 10
+     },
+     {
+      "category": "unused-import",
+      "count": 1
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-file",
+      "path": "extension/src/main-world/network-hook.ts",
+      "name": "",
+      "line": 1,
+      "lines": 718
+     },
+     {
+      "category": "unused-file",
+      "path": "extension/scripts/agent-traffic/record.ts",
+      "name": "",
+      "line": 1,
+      "lines": 619
+     },
+     {
+      "category": "unused-file",
+      "path": "server/scripts/test-network-guard.ts",
+      "name": "",
+      "line": 1,
+      "lines": 517
+     },
+     {
+      "category": "unused-file",
+      "path": "desktop/scripts/validate-telemetry.ts",
+      "name": "",
+      "line": 1,
+      "lines": 416
+     },
+     {
+      "category": "unused-file",
+      "path": "app/src/components/ui/questionnaire.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 324
+     },
+     {
+      "category": "unused-file",
+      "path": "extension/scripts/store-package.ts",
+      "name": "",
+      "line": 1,
+      "lines": 267
+     },
+     {
+      "category": "unused-file",
+      "path": "extension/scripts/agent-traffic/runtime.ts",
+      "name": "",
+      "line": 1,
+      "lines": 120
+     },
+     {
+      "category": "unused-file",
+      "path": "app/src/components/channels/recipient-field.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 106
+     },
+     {
+      "category": "unused-export",
+      "path": "server/src/passwords/store.ts",
+      "name": "createMemoryPasswordStore",
+      "line": 141,
+      "lines": 86
+     },
+     {
+      "category": "unused-file",
+      "path": "app/src/components/computer/needs-you.ts",
+      "name": "",
+      "line": 1,
+      "lines": 43
+     }
+    ]
+   }
+  },
+  {
+   "name": "Renhuai123/ziwei-doushu",
+   "url": "https://github.com/Renhuai123/ziwei-doushu",
+   "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+   "language": "TypeScript",
+   "stars": 11462,
+   "starsToday": 1126,
+   "defaultBranch": "main",
+   "headSha": "495b79ecb3524b20b2edc026067d7d0b0f407319",
+   "durationMs": 1041,
+   "total": {
+    "sources": 110,
+    "lines": 19040,
+    "tokens": 250463,
+    "clones": 27,
+    "duplicatedLines": 283,
+    "duplicatedTokens": 4521,
+    "percentage": 1.49,
+    "percentageTokens": 1.81
+   },
+   "formats": [
+    {
+     "format": "tsx",
+     "sources": 30,
+     "lines": 6681,
+     "clones": 16,
+     "duplicatedLines": 150,
+     "percentage": 2.25
+    },
+    {
+     "format": "typescript",
+     "sources": 46,
+     "lines": 8519,
+     "clones": 11,
+     "duplicatedLines": 133,
+     "percentage": 1.56
+    },
+    {
+     "format": "markdown",
+     "sources": 24,
+     "lines": 3125,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "css",
+     "sources": 1,
+     "lines": 436,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "yaml",
+     "sources": 5,
+     "lines": 176,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "json",
+     "sources": 2,
+     "lines": 78,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 21,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "text",
+     "sources": 1,
+     "lines": 4,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 435,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/dst-cn.ts",
+      "start": 33,
+      "end": 42
+     },
+     "others": [
+      {
+       "name": "scripts/regression/dst-cn.test.ts",
+       "start": 14,
+       "end": 14
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "const XLS_CN: readonly (readonly [number, number, number, number, number])[] = [",
+       "  [1935, 5, 1, 9, 30], [1936, 5, 1, 9, 30], [1937, 5, 1, 9, 30], [1938, 5, 1, 9, 30],",
+       "  [1939, 5, 1, 9, 30], [1940, 5, 1, 9, 30], [1941, 5, 1, 9, 30], [1942, 5, 1, 9, 30],",
+       "  [1943, 5, 1, 9, 30], [1944, 5, 1, 9, 30], [1945, 5, 1, 9, 30], [1946, 5, 1, 9, 30],",
+       "  [1947, 5, 1, 9, 30], [1948, 5, 1, 9, 30], [1949, 5, 1, 9, 30], [1950, 5, 1, 9, 30],",
+       "  [1951, 5, 1, 9, 30], [1952, 3, 1, 10, 31], [1953, 4, 1, 10, 31], [1954, 4, 1, 10, 31],",
+       "  [1955, 5, 1, 9, 30], [1956, 5, 1, 9, 30], [1957, 4, 1, 9, 30], [1958, 4, 1, 9, 30],",
+       "  [1959, 4, 1, 9, 30], [1960, 6, 1, 9, 30], [1961, 6, 1, 9, 30], [1974, 4, 1, 10, 31],",
+       "  [1975, 4, 1, 10, 31], [1979, 7, 1, 9, 30], [1986, 5, 4, 9, 14], [1987, 4, 12, 9, 13],",
+       "  [1988, 4, 10, 9, 11], [1989, 4, 16, 9, 17], [1990, 4, 15, 9, 16], [1991, 4, 14, 9, 15],"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "const ORACLE_XLS_CN: number[][] = [[1935, 5, 1, 9, 30], [1936, 5, 1, 9, 30], [1937, 5, 1, 9, 30], [1938, 5, 1, 9, 30], [1939, 5, 1, 9, 30], [1940, 5, 1, 9, 30]…"
+      ],
+      "total": 1
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 421,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/school-data.ts",
+      "start": 141,
+      "end": 156
+     },
+     "others": [
+      {
+       "name": "lib/ziwei/school-tables.generated.ts",
+       "start": 47,
+       "end": 47
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "export const SCHOOL_BRIGHTNESS_QS: number[][] = [",
+       "  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],     // [0] 占位",
+       "  [0, 5, 1, 2, 2, 3, 2, 1, 1, 2, 2, 3, 2],     // 紫微",
+       "  [0, 1, 7, 3, 2, 4, 5, 1, 7, 3, 2, 4, 5],     // 天机",
+       "  [0, 7, 6, 2, 1, 2, 2, 2, 3, 3, 5, 6, 7],     // 太阳",
+       "  [0, 2, 1, 3, 4, 1, 5, 2, 1, 3, 4, 1, 5],     // 武曲",
+       "  [0, 2, 6, 4, 5, 5, 1, 7, 6, 2, 5, 5, 1],     // 天同",
+       "  [0, 5, 4, 1, 5, 4, 7, 5, 4, 1, 5, 4, 7],     // 廉贞",
+       "  [0, 1, 1, 1, 3, 1, 3, 2, 1, 3, 2, 1, 3],     // 天府",
+       "  [0, 1, 1, 2, 7, 7, 7, 6, 6, 4, 2, 2, 1],     // 太阴"
+      ],
+      "total": 16
+     },
+     "excerptSecond": {
+      "lines": [
+       "SB_QS: [[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,5,1,2,2,3,2,1,1,2,2,3,2],[0,1,7,3,2,4,5,1,7,3,2,4,5],[0,7,6,2,1,2,2,2,3,3,5,6,7],[0,2,1,3,4,1,5,2,1,3,4,1,5],[0,2,6,4,5,…"
+      ],
+      "total": 1
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 421,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/school-data.ts",
+      "start": 160,
+      "end": 175
+     },
+     "others": [
+      {
+       "name": "lib/ziwei/school-tables.generated.ts",
+       "start": 48,
+       "end": 48
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "export const SCHOOL_BRIGHTNESS_XD1: number[][] = [",
+       "  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],",
+       "  [0, 5, 1, 1, 2, 3, 2, 1, 1, 2, 2, 3, 2],     // 紫微",
+       "  [0, 1, 7, 3, 2, 4, 5, 1, 7, 3, 2, 4, 5],     // 天机",
+       "  [0, 7, 6, 2, 1, 2, 2, 1, 3, 4, 5, 7, 7],     // 太阳",
+       "  [0, 2, 1, 3, 4, 1, 5, 2, 1, 3, 4, 1, 5],     // 武曲",
+       "  [0, 2, 6, 4, 1, 5, 1, 7, 6, 2, 5, 5, 1],     // 天同",
+       "  [0, 5, 4, 1, 5, 4, 7, 5, 4, 1, 5, 4, 7],     // 廉贞",
+       "  [0, 1, 1, 1, 3, 2, 3, 2, 1, 3, 2, 2, 3],     // 天府",
+       "  [0, 1, 1, 6, 7, 7, 7, 7, 5, 4, 2, 2, 1],     // 太阴"
+      ],
+      "total": 16
+     },
+     "excerptSecond": {
+      "lines": [
+       "SB_XD1: [[0,0,0,0,0,0,0,0,0,0,0,0,0],[0,5,1,1,2,3,2,1,1,2,2,3,2],[0,1,7,3,2,4,5,1,7,3,2,4,5],[0,7,6,2,1,2,2,1,3,4,5,7,7],[0,2,1,3,4,1,5,2,1,3,4,1,5],[0,2,6,4,1…"
+      ],
+      "total": 1
+     }
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 421,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/school-data.ts",
+      "start": 179,
+      "end": 194
+     },
+     "others": [
+      {
+       "name": "lib/ziwei/school-tables.generated.ts",
+       "start": 49,
+       "end": 49
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 421,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/school-data.ts",
+      "start": 198,
+      "end": 213
+     },
+     "others": [
+      {
+       "name": "lib/ziwei/school-tables.generated.ts",
+       "start": 50,
+       "end": 50
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 364,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/school-data.ts",
+      "start": 369,
+      "end": 382
+     },
+     "others": [
+      {
+       "name": "lib/ziwei/school-tables.generated.ts",
+       "start": 52,
+       "end": 52
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 364,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/school-data.ts",
+      "start": 386,
+      "end": 399
+     },
+     "others": [
+      {
+       "name": "lib/ziwei/school-tables.generated.ts",
+       "start": 53,
+       "end": 53
+      }
+     ]
+    },
+    {
+     "format": "tsx",
+     "lines": 13,
+     "tokens": 223,
+     "copies": 2,
+     "first": {
+      "name": "app/privacy/page.tsx",
+      "start": 3,
+      "end": 15
+     },
+     "others": [
+      {
+       "name": "app/terms/page.tsx",
+       "start": 3,
+       "end": 15
+      }
+     ]
+    },
+    {
+     "format": "tsx",
+     "lines": 17,
+     "tokens": 134,
+     "copies": 2,
+     "first": {
+      "name": "components/ChatPanel.tsx",
+      "start": 47,
+      "end": 63
+     },
+     "others": [
+      {
+       "name": "components/InsightPanel.tsx",
+       "start": 282,
+       "end": 297
+      }
+     ]
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 132,
+     "copies": 2,
+     "first": {
+      "name": "lib/ziwei/school-data.ts",
+      "start": 102,
+      "end": 113
+     },
+     "others": [
+      {
+       "name": "lib/ziwei/school-tables.generated.ts",
+       "start": 9,
+       "end": 9
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 63,
+    "lines": 14512,
+    "tokens": 98555,
+    "clones": 18,
+    "duplicatedLines": 162,
+    "duplicatedTokens": 1446,
+    "percentage": 1.12,
+    "percentageTokens": 1.47,
+    "formats": [
+     {
+      "format": "tsx",
+      "sources": 30,
+      "lines": 6681,
+      "clones": 16,
+      "duplicatedLines": 150,
+      "percentage": 2.25
+     },
+     {
+      "format": "typescript",
+      "sources": 33,
+      "lines": 7831,
+      "clones": 2,
+      "duplicatedLines": 12,
+      "percentage": 0.15
+     }
+    ],
+    "topClones": [
+     {
+      "format": "tsx",
+      "lines": 13,
+      "tokens": 223,
+      "copies": 2,
+      "first": {
+       "name": "app/privacy/page.tsx",
+       "start": 3,
+       "end": 15
+      },
+      "others": [
+       {
+        "name": "app/terms/page.tsx",
+        "start": 3,
+        "end": 15
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "export default function PrivacyPage() {",
+        "  return (",
+        "    <>",
+        "      <header style={{ position: 'sticky', top: 0, zIndex: 50, background: 'var(--bg-0)', borderBottom: '1px solid var(--bdr)', padding: '14px 24px', display: …",
+        "        <a href=\"/\" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: 'var(--tx-3)', textDecoration: 'none' }}>",
+        "          <span style={{ fontSize: '16px' }}>‹</span>",
+        "          <span>返回首页</span>",
+        "        </a>",
+        "        <div style={{ width: '1px', height: '20px', background: 'var(--bdr-med)' }} />",
+        "        <span style={{ fontSize: '12px', color: 'var(--ac)', letterSpacing: '0.2em' }}>紫微命盘</span>"
+       ],
+       "total": 13
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 17,
+      "tokens": 134,
+      "copies": 2,
+      "first": {
+       "name": "components/ChatPanel.tsx",
+       "start": 47,
+       "end": 63
+      },
+      "others": [
+       {
+        "name": "components/InsightPanel.tsx",
+        "start": 282,
+        "end": 297
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  body: JSON.stringify({ chart, messages: [...messages, userMsg] }),",
+        "});",
+        "",
+        "if (res.status === 404) throw new Error('api-missing');",
+        "if (!res.ok) throw new Error('请求失败');",
+        "if (!res.body) throw new Error('无响应流');",
+        "",
+        "const reader = res.body.getReader();",
+        "const decoder = new TextDecoder();",
+        "let assistantText = '';"
+       ],
+       "total": 17
+      },
+      "excerptSecond": {
+       "lines": [
+        "  body: JSON.stringify({ chart, messages: apiMessages }),",
+        "});",
+        "if (res.status === 404) throw new Error('api-missing');",
+        "if (!res.ok) throw new Error('请求失败');",
+        "if (!res.body) throw new Error('无响应流');",
+        "",
+        "const reader = res.body.getReader();",
+        "const decoder = new TextDecoder();",
+        "let assistantText = '';",
+        ""
+       ],
+       "total": 16
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 12,
+      "tokens": 103,
+      "copies": 2,
+      "first": {
+       "name": "app/heming/page.tsx",
+       "start": 125,
+       "end": 136
+      },
+      "others": [
+       {
+        "name": "components/InsightPanel.tsx",
+        "start": 292,
+        "end": 303
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "let text = '';",
+        "",
+        "while (true) {",
+        "  const { done, value } = await reader.read();",
+        "  if (done) break;",
+        "  const chunk = decoder.decode(value, { stream: true });",
+        "  for (const line of chunk.split('\\n')) {",
+        "    if (!line.startsWith('data: ')) continue;",
+        "    const data = line.slice(6);",
+        "    if (data === '[DONE]') break;"
+       ],
+       "total": 12
+      }
+     },
+     {
+      "format": "tsx",
+      "lines": 6,
+      "tokens": 51,
+      "copies": 3,
+      "first": {
+       "name": "components/BirthForm.tsx",
+       "start": 239,
+       "end": 244
+      },
+      "others": [
+       {
+        "name": "components/BirthForm.tsx",
+        "start": 288,
+        "end": 293
+       },
+       {
+        "name": "components/BirthForm.tsx",
+        "start": 343,
+        "end": 348
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 10,
+      "tokens": 93,
+      "copies": 2,
+      "first": {
+       "name": "app/library/[book]/page.tsx",
+       "start": 26,
+       "end": 35
+      },
+      "others": [
+       {
+        "name": "app/library/search/page.tsx",
+        "start": 15,
+        "end": 24
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 8,
+      "tokens": 91,
+      "copies": 2,
+      "first": {
+       "name": "app/page.tsx",
+       "start": 874,
+       "end": 881
+      },
+      "others": [
+       {
+        "name": "app/page.tsx",
+        "start": 933,
+        "end": 940
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 16,
+      "tokens": 89,
+      "copies": 2,
+      "first": {
+       "name": "components/ScrollIntro.tsx",
+       "start": 240,
+       "end": 255
+      },
+      "others": [
+       {
+        "name": "components/ScrollIntro.tsx",
+        "start": 270,
+        "end": 285
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 10,
+      "tokens": 86,
+      "copies": 2,
+      "first": {
+       "name": "app/knowledge/[star]/[topic]/page.tsx",
+       "start": 105,
+       "end": 114
+      },
+      "others": [
+       {
+        "name": "app/knowledge/page.tsx",
+        "start": 21,
+        "end": 30
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 8,
+      "tokens": 71,
+      "copies": 2,
+      "first": {
+       "name": "components/ChartSummary.tsx",
+       "start": 11,
+       "end": 18
+      },
+      "others": [
+       {
+        "name": "components/PatternsCard.tsx",
+        "start": 6,
+        "end": 13
+       }
+      ]
+     },
+     {
+      "format": "tsx",
+      "lines": 6,
+      "tokens": 69,
+      "copies": 2,
+      "first": {
+       "name": "app/knowledge/page.tsx",
+       "start": 19,
+       "end": 24
+      },
+      "others": [
+       {
+        "name": "app/library/page.tsx",
+        "start": 17,
+        "end": 22
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "health": {
+    "score": 49.5,
+    "grade": "D",
+    "size": {
+     "lines": 15200,
+     "files": 76,
+     "class": "M"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 1.9,
+      "adjusted": 2.1,
+      "lines": 283,
+      "halfLife": 8.5,
+      "formats": [
+       "typescript",
+       "tsx"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 84.6
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 18.2,
+      "adjusted": 16.4,
+      "lines": 2770,
+      "halfLife": 7.5,
+      "weight": 1,
+      "score": 21.9
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 32.1,
+      "adjusted": 30.8,
+      "lines": 4872,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 65.3
+     }
+    ]
+   },
+   "complexity": {
+    "total": 2053,
+    "mean": 27,
+    "files": [
+     {
+      "path": "lib/ziwei/patterns.ts",
+      "complexity": 426,
+      "lines": 1119,
+      "bytes": 54637
+     },
+     {
+      "path": "components/BirthForm.tsx",
+      "complexity": 167,
+      "lines": 495,
+      "bytes": 21223
+     },
+     {
+      "path": "lib/ziwei/algorithm.ts",
+      "complexity": 166,
+      "lines": 662,
+      "bytes": 36104
+     },
+     {
+      "path": "app/page.tsx",
+      "complexity": 150,
+      "lines": 1191,
+      "bytes": 67117
+     },
+     {
+      "path": "app/heming/page.tsx",
+      "complexity": 81,
+      "lines": 369,
+      "bytes": 15792
+     },
+     {
+      "path": "components/InsightPanel.tsx",
+      "complexity": 71,
+      "lines": 469,
+      "bytes": 16391
+     },
+     {
+      "path": "lib/ziwei/school-config.ts",
+      "complexity": 55,
+      "lines": 291,
+      "bytes": 15854
+     },
+     {
+      "path": "lib/ziwei/sihua.ts",
+      "complexity": 50,
+      "lines": 276,
+      "bytes": 10203
+     },
+     {
+      "path": "components/PalaceCell.tsx",
+      "complexity": 45,
+      "lines": 201,
+      "bytes": 6817
+     },
+     {
+      "path": "lib/ziwei/yunxian-context.ts",
+      "complexity": 43,
+      "lines": 124,
+      "bytes": 5430
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 18.2,
+    "findings": 54,
+    "files": 79,
+    "byCategory": [
+     {
+      "category": "unused-file",
+      "count": 13
+     },
+     {
+      "category": "unused-export",
+      "count": 33
+     },
+     {
+      "category": "unused-symbol",
+      "count": 4
+     },
+     {
+      "category": "unused-import",
+      "count": 4
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-file",
+      "path": "components/StarDetailPanel.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 332
+     },
+     {
+      "category": "unused-file",
+      "path": "lib/ziwei/heming-knowledge.ts",
+      "name": "",
+      "line": 1,
+      "lines": 329
+     },
+     {
+      "category": "unused-file",
+      "path": "components/ShareCardCanvas.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 300
+     },
+     {
+      "category": "unused-file",
+      "path": "lib/ziwei/sihua.ts",
+      "name": "",
+      "line": 1,
+      "lines": 276
+     },
+     {
+      "category": "unused-file",
+      "path": "components/ChartSummary.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 265
+     },
+     {
+      "category": "unused-file",
+      "path": "components/ChatPanel.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 212
+     },
+     {
+      "category": "unused-file",
+      "path": "lib/ziwei/shier-shen.ts",
+      "name": "",
+      "line": 1,
+      "lines": 164
+     },
+     {
+      "category": "unused-file",
+      "path": "components/ShareModal.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 148
+     },
+     {
+      "category": "unused-file",
+      "path": "lib/ziwei/yunxian-context.ts",
+      "name": "",
+      "line": 1,
+      "lines": 124
+     },
+     {
+      "category": "unused-file",
+      "path": "components/PatternsCard.tsx",
+      "name": "",
+      "line": 1,
+      "lines": 93
+     }
+    ]
+   }
+  },
+  {
+   "name": "expo/skills",
+   "url": "https://github.com/expo/skills",
+   "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+   "language": "Shell",
+   "stars": 3922,
+   "starsToday": 38,
+   "defaultBranch": "main",
+   "headSha": "05754e71d02abe0d2d7a2fb5259ccac41f5ea59c",
+   "durationMs": 1025,
+   "total": {
+    "sources": 278,
+    "lines": 29200,
+    "tokens": 247003,
+    "clones": 59,
+    "duplicatedLines": 704,
+    "duplicatedTokens": 6068,
+    "percentage": 2.41,
+    "percentageTokens": 2.46
+   },
+   "formats": [
+    {
+     "format": "markdown",
+     "sources": 103,
+     "lines": 18602,
+     "clones": 29,
+     "duplicatedLines": 240,
+     "percentage": 1.29
+    },
+    {
+     "format": "yaml",
+     "sources": 22,
+     "lines": 948,
+     "clones": 12,
+     "duplicatedLines": 193,
+     "percentage": 20.36
+    },
+    {
+     "format": "swift",
+     "sources": 13,
+     "lines": 925,
+     "clones": 8,
+     "duplicatedLines": 140,
+     "percentage": 15.14
+    },
+    {
+     "format": "tsx",
+     "sources": 32,
+     "lines": 2935,
+     "clones": 5,
+     "duplicatedLines": 81,
+     "percentage": 2.76
+    },
+    {
+     "format": "bash",
+     "sources": 40,
+     "lines": 1594,
+     "clones": 3,
+     "duplicatedLines": 29,
+     "percentage": 1.82
+    },
+    {
+     "format": "typescript",
+     "sources": 12,
+     "lines": 1183,
+     "clones": 1,
+     "duplicatedLines": 14,
+     "percentage": 1.18
+    },
+    {
+     "format": "javascript",
+     "sources": 8,
+     "lines": 503,
+     "clones": 1,
+     "duplicatedLines": 7,
+     "percentage": 1.39
+    },
+    {
+     "format": "json",
+     "sources": 21,
+     "lines": 968,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 823,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "text",
+     "sources": 11,
+     "lines": 245,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "markdown",
+     "lines": 9,
+     "tokens": 98,
+     "copies": 14,
+     "first": {
+      "name": "plugins/expo/skills/eas-app-stores/SKILL.md",
+      "start": 167,
+      "end": 175
+     },
+     "others": [
+      {
+       "name": "plugins/expo/skills/eas-update-insights/SKILL.md",
+       "start": 229,
+       "end": 237
+      },
+      {
+       "name": "plugins/expo/skills/eas-workflows/SKILL.md",
+       "start": 90,
+       "end": 98
+      },
+      {
+       "name": "plugins/expo/skills/expo-animation/SKILL.md",
+       "start": 265,
+       "end": 273
+      },
+      {
+       "name": "plugins/expo/skills/expo-brownfield/SKILL.md",
+       "start": 61,
+       "end": 69
+      },
+      {
+       "name": "plugins/expo/skills/expo-data-fetching/SKILL.md",
+       "start": 469,
+       "end": 477
+      },
+      {
+       "name": "plugins/expo/skills/expo-design-system/SKILL.md",
+       "start": 367,
+       "end": 375
+      },
+      {
+       "name": "plugins/expo/skills/expo-examples/SKILL.md",
+       "start": 97,
+       "end": 105
+      },
+      {
+       "name": "plugins/expo/skills/expo-module/SKILL.md",
+       "start": 142,
+       "end": 150
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "Check the CLI version before interpreting a missing command: these submission commands are available in 23.2.0 but not in the tested 18.6.0 installation. A pin…",
+       "",
+       "## Submitting Feedback",
+       "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+       "```bash",
+       "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"eas-app-stores\" \"<actionable feedback>\"",
+       "```",
+       "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+       "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "- **Crashes are self-reported**: `failedInstalls` / \"Crashes\" counts updates that errored during install/launch and were reported on the next update check. Cra…",
+       "",
+       "## Submitting Feedback",
+       "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+       "```bash",
+       "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"eas-update-insights\" \"<actionable feedback>\"",
+       "```",
+       "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+       "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+      ],
+      "total": 9
+     }
+    },
+    {
+     "format": "markdown",
+     "lines": 7,
+     "tokens": 97,
+     "copies": 11,
+     "first": {
+      "name": "plugins/expo-experiments/skills/expo-migrate-module/SKILL.md",
+      "start": 117,
+      "end": 123
+     },
+     "others": [
+      {
+       "name": "plugins/expo/skills/eas-app-stores/SKILL.md",
+       "start": 169,
+       "end": 175
+      },
+      {
+       "name": "plugins/expo/skills/eas-hosting/SKILL.md",
+       "start": 424,
+       "end": 430
+      },
+      {
+       "name": "plugins/expo/skills/eas-observe/SKILL.md",
+       "start": 43,
+       "end": 49
+      },
+      {
+       "name": "plugins/expo/skills/eas-simulator/SKILL.md",
+       "start": 230,
+       "end": 236
+      },
+      {
+       "name": "plugins/expo/skills/eas-update/SKILL.md",
+       "start": 139,
+       "end": 145
+      },
+      {
+       "name": "plugins/expo/skills/expo-app-clip/SKILL.md",
+       "start": 284,
+       "end": 290
+      },
+      {
+       "name": "plugins/expo/skills/expo-dev-client/SKILL.md",
+       "start": 177,
+       "end": 183
+      },
+      {
+       "name": "plugins/expo/skills/expo-dom/SKILL.md",
+       "start": 418,
+       "end": 424
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "## Submitting Feedback",
+       "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+       "```bash",
+       "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"expo-migrate-module\" \"<actionable feedback>\"",
+       "```",
+       "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+       "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "## Submitting Feedback",
+       "If you encounter errors, misleading or outdated information in this skill, report it so Expo can improve:",
+       "```bash",
+       "npx --yes @expo/agent-cli@latest feedback --category skills --subject \"eas-app-stores\" \"<actionable feedback>\"",
+       "```",
+       "Only submit when you have something specific and actionable to report. Include as much relevant context as possible.",
+       "If an agent repeatedly fails at an Expo task or the user has to step in, submit a brief report of the task, expected result, and what went wrong using `--categ…"
+      ],
+      "total": 7
+     }
+    },
+    {
+     "format": "yaml",
+     "lines": 20,
+     "tokens": 185,
+     "copies": 3,
+     "first": {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 88,
+      "end": 107
+     },
+     "others": [
+      {
+       "name": ".eas/workflows/skill-eval-ci.yml",
+       "start": 193,
+       "end": 212
+      },
+      {
+       "name": ".eas/workflows/skill-eval-ci.yml",
+       "start": 298,
+       "end": 317
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "  PRD: dataset/prds/notes/prd/mvp.txt",
+       "  SCENARIO: skills_available_unmentioned",
+       "outputs:",
+       "  report: ${{ steps.run.outputs.report }}",
+       "  expected: ${{ steps.run.outputs.expected }}",
+       "  detected: ${{ steps.run.outputs.detected }}",
+       "  recall: ${{ steps.run.outputs.recall }}",
+       "  precision: ${{ steps.run.outputs.precision }}",
+       "  lexical: ${{ steps.run.outputs.lexical }}",
+       "  structural: ${{ steps.run.outputs.structural }}"
+      ],
+      "total": 20
+     }
+    },
+    {
+     "format": "yaml",
+     "lines": 17,
+     "tokens": 152,
+     "copies": 3,
+     "first": {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 31,
+      "end": 47
+     },
+     "others": [
+      {
+       "name": ".eas/workflows/skill-eval-ci.yml",
+       "start": 136,
+       "end": 152
+      },
+      {
+       "name": ".eas/workflows/skill-eval-ci.yml",
+       "start": 241,
+       "end": 257
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 12,
+     "tokens": 232,
+     "copies": 2,
+     "first": {
+      "name": "README.md",
+      "start": 103,
+      "end": 114
+     },
+     "others": [
+      {
+       "name": "plugins/expo/skills/README.md",
+       "start": 13,
+       "end": 24
+      }
+     ]
+    },
+    {
+     "format": "yaml",
+     "lines": 17,
+     "tokens": 116,
+     "copies": 3,
+     "first": {
+      "name": ".eas/workflows/skill-eval-main-baseline.yml",
+      "start": 82,
+      "end": 98
+     },
+     "others": [
+      {
+       "name": ".eas/workflows/skill-eval-main-baseline.yml",
+       "start": 144,
+       "end": 160
+      },
+      {
+       "name": ".eas/workflows/skill-eval-main-baseline.yml",
+       "start": 206,
+       "end": 222
+      }
+     ]
+    },
+    {
+     "format": "markdown",
+     "lines": 8,
+     "tokens": 189,
+     "copies": 2,
+     "first": {
+      "name": "README.md",
+      "start": 114,
+      "end": 121
+     },
+     "others": [
+      {
+       "name": "plugins/expo/skills/README.md",
+       "start": 24,
+       "end": 31
+      }
+     ]
+    },
+    {
+     "format": "swift",
+     "lines": 28,
+     "tokens": 176,
+     "copies": 2,
+     "first": {
+      "name": "plugins/expo/skills/expo-brownfield/references/feature-integration.md",
+      "start": 83,
+      "end": 110
+     },
+     "others": [
+      {
+       "name": "tests/fixtures/expo-brownfield/ios/isolated/Sources/FeatureLauncher.swift",
+       "start": 21,
+       "end": 48
+      }
+     ]
+    },
+    {
+     "format": "yaml",
+     "lines": 17,
+     "tokens": 82,
+     "copies": 3,
+     "first": {
+      "name": ".eas/workflows/skill-eval-ci.yml",
+      "start": 109,
+      "end": 125
+     },
+     "others": [
+      {
+       "name": ".eas/workflows/skill-eval-ci.yml",
+       "start": 214,
+       "end": 230
+      },
+      {
+       "name": ".eas/workflows/skill-eval-ci.yml",
+       "start": 319,
+       "end": 335
+      }
+     ]
+    },
+    {
+     "format": "tsx",
+     "lines": 21,
+     "tokens": 161,
+     "copies": 2,
+     "first": {
+      "name": "plugins/expo/skills/expo-brownfield/references/feature-integration.md",
+      "start": 28,
+      "end": 48
+     },
+     "others": [
+      {
+       "name": "tests/fixtures/expo-brownfield/app/Feature.tsx",
+       "start": 2,
+       "end": 22
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 17,
+    "lines": 2795,
+    "tokens": 16673,
+    "clones": 4,
+    "duplicatedLines": 43,
+    "duplicatedTokens": 246,
+    "percentage": 1.54,
+    "percentageTokens": 1.48,
+    "formats": [
+     {
+      "format": "bash",
+      "sources": 9,
+      "lines": 988,
+      "clones": 3,
+      "duplicatedLines": 29,
+      "percentage": 2.94
+     },
+     {
+      "format": "typescript",
+      "sources": 4,
+      "lines": 682,
+      "clones": 1,
+      "duplicatedLines": 14,
+      "percentage": 2.05
+     },
+     {
+      "format": "python",
+      "sources": 2,
+      "lines": 823,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "javascript",
+      "sources": 2,
+      "lines": 302,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "typescript",
+      "lines": 14,
+      "tokens": 72,
+      "copies": 2,
+      "first": {
+       "name": "scripts/check-overview-routing.ts",
+       "start": 20,
+       "end": 33
+      },
+      "others": [
+       {
+        "name": "scripts/check-plugin-version-bump.ts",
+        "start": 162,
+        "end": 175
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "  const summaryPath = process.env.ROUTING_CHECK_SUMMARY_PATH;",
+        "  if (!summaryPath) {",
+        "    return;",
+        "  }",
+        "",
+        "  mkdirSync(dirname(summaryPath), { recursive: true });",
+        "  writeFileSync(summaryPath, `${markdown}\\n`);",
+        "}",
+        "",
+        "function complete(success: boolean, markdown: string): never {"
+       ],
+       "total": 14
+      }
+     },
+     {
+      "format": "bash",
+      "lines": 13,
+      "tokens": 61,
+      "copies": 2,
+      "first": {
+       "name": ".claude/skills/expo-skill-eval/scripts/snapshot-android.sh",
+       "start": 47,
+       "end": 59
+      },
+      "others": [
+       {
+        "name": ".claude/skills/expo-skill-eval/scripts/snapshot-ios.sh",
+        "start": 22,
+        "end": 34
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "if [[ \"$RUNNER\" == \"dev-build\" ]]; then",
+        "  BUNDLE_TIMEOUT=\"${EXPO_SKILL_EVAL_BUNDLE_TIMEOUT:-900}\"   # native compile is slow",
+        "else",
+        "  BUNDLE_TIMEOUT=\"${EXPO_SKILL_EVAL_BUNDLE_TIMEOUT:-240}\"",
+        "fi",
+        "LOG=\"${OUT%.png}.metro.log\"",
+        "",
+        "mkdir -p \"$(dirname \"$OUT\")\"",
+        "",
+        "# Free the port up front in case a previous run (or a crash) left Metro on it,"
+       ],
+       "total": 13
+      }
+     },
+     {
+      "format": "bash",
+      "lines": 10,
+      "tokens": 61,
+      "copies": 2,
+      "first": {
+       "name": "scripts/ci.sh",
+       "start": 163,
+       "end": 172
+      },
+      "others": [
+       {
+        "name": "scripts/ci.sh",
+        "start": 201,
+        "end": 210
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "install_harness_deps",
+        "",
+        "export SKILL_PLUGIN_DIR=\"$plugin_dir\"",
+        "bash ./eval-harness/eval_harness/app_builder/scripts/author-app.sh",
+        "",
+        "AUTHORED_ARTIFACT=\"$(pwd)/eval-harness\" \\",
+        "SCENARIO=\"$scenario\" \\",
+        "OUT_DIR=\"$out_dir\" \\",
+        "PRD_SKILLS=\"$(pwd)/eval-harness/dataset/prd_skills.json\" \\",
+        "bash ./eval-harness/eval_harness/evaluator/skill_invocation/scripts/eval-skill-use.sh"
+       ],
+       "total": 10
+      }
+     },
+     {
+      "format": "bash",
+      "lines": 6,
+      "tokens": 52,
+      "copies": 2,
+      "first": {
+       "name": ".claude/skills/expo-skill-eval/scripts/snapshot-android.sh",
+       "start": 176,
+       "end": 181
+      },
+      "others": [
+       {
+        "name": ".claude/skills/expo-skill-eval/scripts/snapshot-ios.sh",
+        "start": 59,
+        "end": 64
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "health": {
+    "score": 72.7,
+    "grade": "B",
+    "size": {
+     "lines": 3462,
+     "files": 25,
+     "class": "S"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 2.6,
+      "adjusted": 2.9,
+      "lines": 90,
+      "halfLife": 8.5,
+      "formats": [
+       "bash",
+       "typescript",
+       "python",
+       "javascript",
+       "swift",
+       "tsx"
+      ],
+      "excluded": [
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 78.8
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 0,
+      "adjusted": 1.5,
+      "lines": 0,
+      "halfLife": 7.5,
+      "coverage": 63.4,
+      "weight": 0.634,
+      "score": 87.2
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 46.4,
+      "adjusted": 37.1,
+      "lines": 1606,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 59.8
+     }
+    ]
+   },
+   "complexity": {
+    "total": 629,
+    "mean": 25.2,
+    "files": [
+     {
+      "path": ".claude/skills/expo-skill-eval/scripts/generate_viewer.py",
+      "complexity": 78,
+      "lines": 450,
+      "bytes": 21402
+     },
+     {
+      "path": "scripts/check-plugin-version-bump.ts",
+      "complexity": 67,
+      "lines": 306,
+      "bytes": 9685
+     },
+     {
+      "path": ".claude/skills/expo-skill-eval/scripts/snapshot-android.sh",
+      "complexity": 60,
+      "lines": 284,
+      "bytes": 12440
+     },
+     {
+      "path": "plugins/expo/skills/expo-ui/scripts/list-components.js",
+      "complexity": 52,
+      "lines": 193,
+      "bytes": 7343
+     },
+     {
+      "path": "scripts/ci.py",
+      "complexity": 51,
+      "lines": 373,
+      "bytes": 14560
+     },
+     {
+      "path": "scripts/check-skill-limits.ts",
+      "complexity": 44,
+      "lines": 139,
+      "bytes": 6336
+     },
+     {
+      "path": "scripts/check-plugin-version-bump.test.ts",
+      "complexity": 41,
+      "lines": 234,
+      "bytes": 7188
+     },
+     {
+      "path": ".claude/skills/expo-skill-eval/scripts/snapshot-ios.sh",
+      "complexity": 29,
+      "lines": 132,
+      "bytes": 5479
+     },
+     {
+      "path": "scripts/sync-animate-expo.ts",
+      "complexity": 29,
+      "lines": 178,
+      "bytes": 5801
+     },
+     {
+      "path": "plugins/expo/skills/eas-workflows/scripts/fetch.js",
+      "complexity": 23,
+      "lines": 109,
+      "bytes": 2979
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 0,
+    "findings": 0,
+    "files": 13,
+    "byCategory": [],
+    "largest": []
+   }
+  },
+  {
    "name": "HKUDS/DeepTutor",
    "url": "https://github.com/HKUDS/DeepTutor",
    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
    "language": "Python",
-   "stars": 50595,
-   "starsToday": 1930,
+   "stars": 51941,
+   "starsToday": 2282,
    "defaultBranch": "main",
    "headSha": "1ea7df155447f4caf0e3abc86b3ff5395479cd4a",
-   "durationMs": 5684,
+   "durationMs": 5781,
    "total": {
     "sources": 3814,
     "lines": 914554,
@@ -1204,65 +3870,1041 @@
    }
   },
   {
+   "name": "anthropics/skills",
+   "url": "https://github.com/anthropics/skills",
+   "description": "Public repository for Agent Skills",
+   "language": "Python",
+   "stars": 185453,
+   "starsToday": 295,
+   "defaultBranch": "main",
+   "headSha": "ca45fc496a3436251f191354091d557da31c15b5",
+   "durationMs": 1175,
+   "total": {
+    "sources": 410,
+    "lines": 69365,
+    "tokens": 670757,
+    "clones": 161,
+    "duplicatedLines": 14157,
+    "duplicatedTokens": 88706,
+    "percentage": 20.41,
+    "percentageTokens": 13.22
+   },
+   "formats": [
+    {
+     "format": "markdown",
+     "sources": 135,
+     "lines": 31670,
+     "clones": 51,
+     "duplicatedLines": 2662,
+     "percentage": 8.41
+    },
+    {
+     "format": "txt",
+     "sources": 45,
+     "lines": 5435,
+     "clones": 42,
+     "duplicatedLines": 5090,
+     "percentage": 93.65
+    },
+    {
+     "format": "python",
+     "sources": 95,
+     "lines": 20897,
+     "clones": 36,
+     "duplicatedLines": 5961,
+     "percentage": 28.53
+    },
+    {
+     "format": "typescript",
+     "sources": 18,
+     "lines": 2311,
+     "clones": 13,
+     "duplicatedLines": 168,
+     "percentage": 7.27
+    },
+    {
+     "format": "markup",
+     "sources": 8,
+     "lines": 2213,
+     "clones": 5,
+     "duplicatedLines": 46,
+     "percentage": 2.08
+    },
+    {
+     "format": "json",
+     "sources": 19,
+     "lines": 1207,
+     "clones": 3,
+     "duplicatedLines": 101,
+     "percentage": 8.37
+    },
+    {
+     "format": "go",
+     "sources": 7,
+     "lines": 732,
+     "clones": 3,
+     "duplicatedLines": 32,
+     "percentage": 4.37
+    },
+    {
+     "format": "php",
+     "sources": 5,
+     "lines": 577,
+     "clones": 2,
+     "duplicatedLines": 18,
+     "percentage": 3.12
+    },
+    {
+     "format": "java",
+     "sources": 5,
+     "lines": 547,
+     "clones": 2,
+     "duplicatedLines": 18,
+     "percentage": 3.29
+    },
+    {
+     "format": "javascript",
+     "sources": 4,
+     "lines": 1426,
+     "clones": 1,
+     "duplicatedLines": 9,
+     "percentage": 0.63
+    }
+   ],
+   "topClones": [
+    {
+     "format": "txt",
+     "lines": 201,
+     "tokens": 1865,
+     "copies": 13,
+     "first": {
+      "name": "skills/academy-guide/LICENSE.txt",
+      "start": 2,
+      "end": 202
+     },
+     "others": [
+      {
+       "name": "skills/algorithmic-art/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      },
+      {
+       "name": "skills/brand-guidelines/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      },
+      {
+       "name": "skills/canvas-design/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      },
+      {
+       "name": "skills/claude-api/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      },
+      {
+       "name": "skills/discernment-nudge/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      },
+      {
+       "name": "skills/internal-comms/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      },
+      {
+       "name": "skills/mcp-builder/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      },
+      {
+       "name": "skills/skill-creator/LICENSE.txt",
+       "start": 2,
+       "end": 202
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "                              Apache License",
+       "                        Version 2.0, January 2004",
+       "                     http://www.apache.org/licenses/",
+       "",
+       "TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION",
+       "",
+       "1. Definitions.",
+       "",
+       "   \"License\" shall mean the terms and conditions for use, reproduction,",
+       "   and distribution as defined by Sections 1 through 9 of this document."
+      ],
+      "total": 201
+     }
+    },
+    {
+     "format": "txt",
+     "lines": 93,
+     "tokens": 912,
+     "copies": 20,
+     "first": {
+      "name": "skills/canvas-design/canvas-fonts/ArsenalSC-OFL.txt",
+      "start": 1,
+      "end": 93
+     },
+     "others": [
+      {
+       "name": "skills/canvas-design/canvas-fonts/BigShoulders-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/Boldonse-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/BricolageGrotesque-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/CrimsonPro-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/DMMono-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/GeistMono-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/Gloock-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/InstrumentSans-OFL.txt",
+       "start": 1,
+       "end": 93
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "Copyright 2012 The Arsenal Project Authors (andrij.design@gmail.com)",
+       "",
+       "This Font Software is licensed under the SIL Open Font License, Version 1.1.",
+       "This license is copied below, and is also available with a FAQ at:",
+       "https://openfontlicense.org",
+       "",
+       "",
+       "-----------------------------------------------------------",
+       "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
+       "-----------------------------------------------------------"
+      ],
+      "total": 93
+     }
+    },
+    {
+     "format": "python",
+     "lines": 875,
+     "tokens": 4068,
+     "copies": 3,
+     "first": {
+      "name": "skills/docx/scripts/office/validators/base.py",
+      "start": 1,
+      "end": 875
+     },
+     "others": [
+      {
+       "name": "skills/pptx/scripts/office/validators/base.py",
+       "start": 1,
+       "end": 875
+      },
+      {
+       "name": "skills/xlsx/scripts/office/validators/base.py",
+       "start": 1,
+       "end": 875
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "\"\"\"",
+       "Base validator with common validation logic for document files.",
+       "\"\"\"",
+       "",
+       "import re",
+       "from pathlib import Path",
+       "",
+       "import defusedxml.minidom",
+       "from functools import lru_cache",
+       ""
+      ],
+      "total": 875
+     }
+    },
+    {
+     "format": "python",
+     "lines": 466,
+     "tokens": 2005,
+     "copies": 3,
+     "first": {
+      "name": "skills/docx/scripts/office/validators/docx.py",
+      "start": 1,
+      "end": 466
+     },
+     "others": [
+      {
+       "name": "skills/pptx/scripts/office/validators/docx.py",
+       "start": 1,
+       "end": 466
+      },
+      {
+       "name": "skills/xlsx/scripts/office/validators/docx.py",
+       "start": 1,
+       "end": 466
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 441,
+     "tokens": 1986,
+     "copies": 3,
+     "first": {
+      "name": "skills/docx/scripts/office/validators/pptx.py",
+      "start": 1,
+      "end": 441
+     },
+     "others": [
+      {
+       "name": "skills/pptx/scripts/office/validators/pptx.py",
+       "start": 1,
+       "end": 441
+      },
+      {
+       "name": "skills/xlsx/scripts/office/validators/pptx.py",
+       "start": 1,
+       "end": 441
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 192,
+     "tokens": 1529,
+     "copies": 3,
+     "first": {
+      "name": "skills/docx/scripts/office/soffice.py",
+      "start": 1,
+      "end": 192
+     },
+     "others": [
+      {
+       "name": "skills/pptx/scripts/office/soffice.py",
+       "start": 1,
+       "end": 192
+      },
+      {
+       "name": "skills/xlsx/scripts/office/soffice.py",
+       "start": 1,
+       "end": 192
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 299,
+     "tokens": 1470,
+     "copies": 3,
+     "first": {
+      "name": "skills/docx/scripts/office/validators/redlining.py",
+      "start": 1,
+      "end": 299
+     },
+     "others": [
+      {
+       "name": "skills/pptx/scripts/office/validators/redlining.py",
+       "start": 1,
+       "end": 299
+      },
+      {
+       "name": "skills/xlsx/scripts/office/validators/redlining.py",
+       "start": 1,
+       "end": 299
+      }
+     ]
+    },
+    {
+     "format": "txt",
+     "lines": 91,
+     "tokens": 911,
+     "copies": 4,
+     "first": {
+      "name": "skills/canvas-design/canvas-fonts/ArsenalSC-OFL.txt",
+      "start": 3,
+      "end": 93
+     },
+     "others": [
+      {
+       "name": "skills/canvas-design/canvas-fonts/EricaOne-OFL.txt",
+       "start": 4,
+       "end": 94
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/IBMPlexMono-OFL.txt",
+       "start": 3,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/Italiana-OFL.txt",
+       "start": 3,
+       "end": 93
+      }
+     ]
+    },
+    {
+     "format": "python",
+     "lines": 170,
+     "tokens": 1128,
+     "copies": 3,
+     "first": {
+      "name": "skills/docx/scripts/office/helpers/pptx_chart.py",
+      "start": 1,
+      "end": 170
+     },
+     "others": [
+      {
+       "name": "skills/pptx/scripts/office/helpers/pptx_chart.py",
+       "start": 1,
+       "end": 170
+      },
+      {
+       "name": "skills/xlsx/scripts/office/helpers/pptx_chart.py",
+       "start": 1,
+       "end": 170
+      }
+     ]
+    },
+    {
+     "format": "txt",
+     "lines": 93,
+     "tokens": 912,
+     "copies": 3,
+     "first": {
+      "name": "skills/canvas-design/canvas-fonts/Italiana-OFL.txt",
+      "start": 1,
+      "end": 93
+     },
+     "others": [
+      {
+       "name": "skills/canvas-design/canvas-fonts/LibreBaskerville-OFL.txt",
+       "start": 1,
+       "end": 93
+      },
+      {
+       "name": "skills/canvas-design/canvas-fonts/Lora-OFL.txt",
+       "start": 1,
+       "end": 93
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 67,
+    "lines": 19471,
+    "tokens": 116265,
+    "clones": 30,
+    "duplicatedLines": 5903,
+    "duplicatedTokens": 29706,
+    "percentage": 30.32,
+    "percentageTokens": 25.55,
+    "formats": [
+     {
+      "format": "python",
+      "sources": 62,
+      "lines": 17800,
+      "clones": 29,
+      "duplicatedLines": 5894,
+      "percentage": 33.11
+     },
+     {
+      "format": "javascript",
+      "sources": 3,
+      "lines": 1295,
+      "clones": 1,
+      "duplicatedLines": 9,
+      "percentage": 0.69
+     },
+     {
+      "format": "bash",
+      "sources": 2,
+      "lines": 376,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "python",
+      "lines": 875,
+      "tokens": 4068,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/validators/base.py",
+       "start": 1,
+       "end": 875
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/validators/base.py",
+        "start": 1,
+        "end": 875
+       },
+       {
+        "name": "skills/xlsx/scripts/office/validators/base.py",
+        "start": 1,
+        "end": 875
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "\"\"\"",
+        "Base validator with common validation logic for document files.",
+        "\"\"\"",
+        "",
+        "import re",
+        "from pathlib import Path",
+        "",
+        "import defusedxml.minidom",
+        "from functools import lru_cache",
+        ""
+       ],
+       "total": 875
+      }
+     },
+     {
+      "format": "python",
+      "lines": 466,
+      "tokens": 2005,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/validators/docx.py",
+       "start": 1,
+       "end": 466
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/validators/docx.py",
+        "start": 1,
+        "end": 466
+       },
+       {
+        "name": "skills/xlsx/scripts/office/validators/docx.py",
+        "start": 1,
+        "end": 466
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "\"\"\"",
+        "Validator for Word document XML files against XSD schemas.",
+        "\"\"\"",
+        "",
+        "import random",
+        "import re",
+        "import tempfile",
+        "import zipfile",
+        "from pathlib import Path",
+        ""
+       ],
+       "total": 466
+      }
+     },
+     {
+      "format": "python",
+      "lines": 441,
+      "tokens": 1986,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/validators/pptx.py",
+       "start": 1,
+       "end": 441
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/validators/pptx.py",
+        "start": 1,
+        "end": 441
+       },
+       {
+        "name": "skills/xlsx/scripts/office/validators/pptx.py",
+        "start": 1,
+        "end": 441
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "\"\"\"",
+        "Validator for PowerPoint presentation XML files against XSD schemas.",
+        "\"\"\"",
+        "",
+        "import re",
+        "from pathlib import Path",
+        "",
+        "from helpers import opc_target, rels_source_part, safe_extract",
+        "",
+        "from .base import BaseSchemaValidator"
+       ],
+       "total": 441
+      }
+     },
+     {
+      "format": "python",
+      "lines": 192,
+      "tokens": 1529,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/soffice.py",
+       "start": 1,
+       "end": 192
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/soffice.py",
+        "start": 1,
+        "end": 192
+       },
+       {
+        "name": "skills/xlsx/scripts/office/soffice.py",
+        "start": 1,
+        "end": 192
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 299,
+      "tokens": 1470,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/validators/redlining.py",
+       "start": 1,
+       "end": 299
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/validators/redlining.py",
+        "start": 1,
+        "end": 299
+       },
+       {
+        "name": "skills/xlsx/scripts/office/validators/redlining.py",
+        "start": 1,
+        "end": 299
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 170,
+      "tokens": 1128,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/helpers/pptx_chart.py",
+       "start": 1,
+       "end": 170
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/helpers/pptx_chart.py",
+        "start": 1,
+        "end": 170
+       },
+       {
+        "name": "skills/xlsx/scripts/office/helpers/pptx_chart.py",
+        "start": 1,
+        "end": 170
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 173,
+      "tokens": 840,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/validate.py",
+       "start": 1,
+       "end": 173
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/validate.py",
+        "start": 1,
+        "end": 173
+       },
+       {
+        "name": "skills/xlsx/scripts/office/validate.py",
+        "start": 1,
+        "end": 173
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 111,
+      "tokens": 663,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/helpers/__init__.py",
+       "start": 1,
+       "end": 111
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/helpers/__init__.py",
+        "start": 1,
+        "end": 111
+       },
+       {
+        "name": "skills/xlsx/scripts/office/helpers/__init__.py",
+        "start": 1,
+        "end": 111
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 114,
+      "tokens": 656,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/helpers/pptx_theme.py",
+       "start": 1,
+       "end": 114
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/helpers/pptx_theme.py",
+        "start": 1,
+        "end": 114
+       },
+       {
+        "name": "skills/xlsx/scripts/office/helpers/pptx_theme.py",
+        "start": 1,
+        "end": 114
+       }
+      ]
+     },
+     {
+      "format": "python",
+      "lines": 60,
+      "tokens": 217,
+      "copies": 3,
+      "first": {
+       "name": "skills/docx/scripts/office/helpers/pptx_slide.py",
+       "start": 1,
+       "end": 60
+      },
+      "others": [
+       {
+        "name": "skills/pptx/scripts/office/helpers/pptx_slide.py",
+        "start": 1,
+        "end": 60
+       },
+       {
+        "name": "skills/xlsx/scripts/office/helpers/pptx_slide.py",
+        "start": 1,
+        "end": 60
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "health": {
+    "score": 33.3,
+    "grade": "E",
+    "size": {
+     "lines": 19579,
+     "files": 70,
+     "class": "M"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 30.1,
+      "adjusted": 27.7,
+      "lines": 5903,
+      "halfLife": 8.5,
+      "formats": [
+       "python",
+       "javascript",
+       "bash"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 10.5
+     },
+     {
+      "id": "dead-code",
+      "source": "jscpd",
+      "value": 1.4,
+      "adjusted": 1.5,
+      "lines": 267,
+      "halfLife": 7.5,
+      "coverage": 98.5,
+      "weight": 0.985,
+      "score": 86.7
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 68.8,
+      "adjusted": 64.4,
+      "lines": 13476,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 41
+     }
+    ]
+   },
+   "complexity": {
+    "total": 4830,
+    "mean": 69,
+    "files": [
+     {
+      "path": "skills/claude-api/shared/preserved-thinking-migration/prefix_diff.py",
+      "complexity": 769,
+      "lines": 1532,
+      "bytes": 94008
+     },
+     {
+      "path": "skills/claude-api/shared/preserved-thinking-migration/drop_block_probe.py",
+      "complexity": 432,
+      "lines": 1066,
+      "bytes": 66582
+     },
+     {
+      "path": "skills/docx/scripts/office/validators/base.py",
+      "complexity": 219,
+      "lines": 875,
+      "bytes": 33756
+     },
+     {
+      "path": "skills/pptx/scripts/office/validators/base.py",
+      "complexity": 219,
+      "lines": 875,
+      "bytes": 33756
+     },
+     {
+      "path": "skills/xlsx/scripts/office/validators/base.py",
+      "complexity": 219,
+      "lines": 875,
+      "bytes": 33756
+     },
+     {
+      "path": "skills/claude-api/shared/evals/report/build-report-lite.mjs",
+      "complexity": 218,
+      "lines": 488,
+      "bytes": 27329
+     },
+     {
+      "path": "skills/claude-api/shared/evals/report/runner-scaffold.mjs",
+      "complexity": 173,
+      "lines": 602,
+      "bytes": 33142
+     },
+     {
+      "path": "skills/docx/scripts/office/validators/docx.py",
+      "complexity": 124,
+      "lines": 466,
+      "bytes": 17482
+     },
+     {
+      "path": "skills/pptx/scripts/office/validators/docx.py",
+      "complexity": 124,
+      "lines": 466,
+      "bytes": 17482
+     },
+     {
+      "path": "skills/xlsx/scripts/office/validators/docx.py",
+      "complexity": 124,
+      "lines": 466,
+      "bytes": 17482
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 1.38,
+    "findings": 11,
+    "files": 75,
+    "byCategory": [
+     {
+      "category": "unused-file",
+      "count": 2
+     },
+     {
+      "category": "unused-export",
+      "count": 3
+     },
+     {
+      "category": "unused-symbol",
+      "count": 3
+     },
+     {
+      "category": "unused-import",
+      "count": 3
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-file",
+      "path": "skills/algorithmic-art/templates/generator_template.js",
+      "name": "",
+      "line": 1,
+      "lines": 223
+     },
+     {
+      "category": "unused-file",
+      "path": "skills/pdf/scripts/check_fillable_fields.py",
+      "name": "",
+      "line": 1,
+      "lines": 11
+     },
+     {
+      "category": "unused-symbol",
+      "path": "skills/docx/scripts/comment.py",
+      "name": "_has_relationship",
+      "line": 148,
+      "lines": 6
+     },
+     {
+      "category": "unused-symbol",
+      "path": "skills/docx/scripts/comment.py",
+      "name": "_has_content_type",
+      "line": 156,
+      "lines": 6
+     },
+     {
+      "category": "unused-export",
+      "path": "skills/docx/scripts/office/helpers/pptx_theme.py",
+      "name": "find_shared_master_themes",
+      "line": 101,
+      "lines": 5
+     },
+     {
+      "category": "unused-export",
+      "path": "skills/pptx/scripts/office/helpers/pptx_theme.py",
+      "name": "find_shared_master_themes",
+      "line": 101,
+      "lines": 5
+     },
+     {
+      "category": "unused-export",
+      "path": "skills/xlsx/scripts/office/helpers/pptx_theme.py",
+      "name": "find_shared_master_themes",
+      "line": 101,
+      "lines": 5
+     },
+     {
+      "category": "unused-symbol",
+      "path": "skills/claude-api/shared/preserved-thinking-migration/prefix_diff.py",
+      "name": "_item_count",
+      "line": 427,
+      "lines": 3
+     },
+     {
+      "category": "unused-import",
+      "path": "skills/skill-creator/scripts/quick_validate.py",
+      "name": "os",
+      "line": 7,
+      "lines": 1
+     },
+     {
+      "category": "unused-import",
+      "path": "skills/slack-gif-creator/core/frame_composer.py",
+      "name": "np",
+      "line": 11,
+      "lines": 1
+     }
+    ]
+   }
+  },
+  {
    "name": "JetBrains/thinkrail",
    "url": "https://github.com/JetBrains/thinkrail",
    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
    "language": "TypeScript",
-   "stars": 6138,
-   "starsToday": 1117,
+   "stars": 6657,
+   "starsToday": 722,
    "defaultBranch": "main",
-   "headSha": "df7cb6d2dd5fafbc6ed8eea721f16e54f09e38fc",
-   "durationMs": 2809,
+   "headSha": "ec2f2db511c4d5c2a7c3690bf418917d7ea3a29d",
+   "durationMs": 2897,
    "total": {
-    "sources": 1997,
-    "lines": 382268,
-    "tokens": 2965537,
-    "clones": 1050,
-    "duplicatedLines": 10300,
-    "duplicatedTokens": 73098,
-    "percentage": 2.69,
-    "percentageTokens": 2.46
+    "sources": 2085,
+    "lines": 403458,
+    "tokens": 3120401,
+    "clones": 1082,
+    "duplicatedLines": 10603,
+    "duplicatedTokens": 75638,
+    "percentage": 2.63,
+    "percentageTokens": 2.42
    },
    "formats": [
     {
      "format": "typescript",
-     "sources": 1316,
-     "lines": 265283,
-     "clones": 891,
-     "duplicatedLines": 8598,
-     "percentage": 3.24
+     "sources": 1379,
+     "lines": 277476,
+     "clones": 914,
+     "duplicatedLines": 8823,
+     "percentage": 3.18
     },
     {
      "format": "css",
      "sources": 10,
-     "lines": 4865,
-     "clones": 69,
-     "duplicatedLines": 546,
-     "percentage": 11.22
+     "lines": 4977,
+     "clones": 75,
+     "duplicatedLines": 595,
+     "percentage": 11.95
     },
     {
      "format": "tsx",
-     "sources": 333,
-     "lines": 64192,
-     "clones": 58,
-     "duplicatedLines": 655,
-     "percentage": 1.02
+     "sources": 347,
+     "lines": 68165,
+     "clones": 57,
+     "duplicatedLines": 641,
+     "percentage": 0.94
     },
     {
      "format": "yaml",
-     "sources": 66,
-     "lines": 1384,
-     "clones": 11,
-     "duplicatedLines": 123,
-     "percentage": 8.89
+     "sources": 69,
+     "lines": 1420,
+     "clones": 13,
+     "duplicatedLines": 138,
+     "percentage": 9.72
     },
     {
      "format": "json",
-     "sources": 52,
-     "lines": 13668,
+     "sources": 54,
+     "lines": 17083,
      "clones": 9,
      "duplicatedLines": 236,
-     "percentage": 1.73
+     "percentage": 1.38
     },
     {
      "format": "html",
@@ -1274,11 +4916,11 @@
     },
     {
      "format": "markdown",
-     "sources": 158,
-     "lines": 29497,
-     "clones": 3,
-     "duplicatedLines": 37,
-     "percentage": 0.13
+     "sources": 163,
+     "lines": 30912,
+     "clones": 5,
+     "duplicatedLines": 65,
+     "percentage": 0.21
     },
     {
      "format": "diff",
@@ -1290,8 +4932,8 @@
     },
     {
      "format": "bash",
-     "sources": 7,
-     "lines": 863,
+     "sources": 8,
+     "lines": 909,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -1385,47 +5027,52 @@
      "format": "typescript",
      "lines": 9,
      "tokens": 67,
-     "copies": 8,
+     "copies": 11,
      "first": {
       "name": "packages/server/src/agent/extensions.test.ts",
-      "start": 174,
-      "end": 182
+      "start": 180,
+      "end": 188
      },
      "others": [
       {
        "name": "packages/server/src/agent/extensions.test.ts",
-       "start": 222,
-       "end": 229
+       "start": 228,
+       "end": 235
       },
       {
        "name": "packages/server/src/agent/extensions.test.ts",
-       "start": 347,
-       "end": 354
+       "start": 353,
+       "end": 360
       },
       {
        "name": "packages/server/src/agent/extensions.test.ts",
-       "start": 384,
-       "end": 391
+       "start": 390,
+       "end": 397
       },
       {
        "name": "packages/server/src/agent/extensions.test.ts",
-       "start": 418,
-       "end": 425
+       "start": 424,
+       "end": 431
       },
       {
        "name": "packages/server/src/agent/extensions.test.ts",
-       "start": 467,
-       "end": 474
+       "start": 473,
+       "end": 480
       },
       {
        "name": "packages/server/src/agent/extensions.test.ts",
-       "start": 491,
-       "end": 498
+       "start": 497,
+       "end": 504
       },
       {
        "name": "packages/server/src/agent/extensions.test.ts",
-       "start": 549,
-       "end": 556
+       "start": 555,
+       "end": 562
+      },
+      {
+       "name": "packages/server/src/agent/extensions.test.ts",
+       "start": 700,
+       "end": 707
       }
      ],
      "excerpt": {
@@ -1463,34 +5110,34 @@
      "copies": 6,
      "first": {
       "name": "apps/web/src/styles/generated/typography.css",
-      "start": 162,
-      "end": 170
+      "start": 175,
+      "end": 183
      },
      "others": [
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 243,
-       "end": 251
+       "start": 256,
+       "end": 264
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 290,
-       "end": 298
+       "start": 327,
+       "end": 335
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 371,
-       "end": 379
+       "start": 410,
+       "end": 418
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 380,
-       "end": 388
+       "start": 419,
+       "end": 427
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 422,
-       "end": 430
+       "start": 462,
+       "end": 470
       }
      ],
      "excerpt": {
@@ -1529,29 +5176,29 @@
      "copies": 5,
      "first": {
       "name": "apps/web/src/styles/generated/typography.css",
-      "start": 125,
-      "end": 134
+      "start": 138,
+      "end": 147
      },
      "others": [
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 134,
-       "end": 143
+       "start": 147,
+       "end": 156
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 307,
-       "end": 316
+       "start": 344,
+       "end": 353
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 466,
-       "end": 475
+       "start": 506,
+       "end": 515
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 529,
-       "end": 538
+       "start": 571,
+       "end": 580
       }
      ]
     },
@@ -1562,29 +5209,29 @@
      "copies": 5,
      "first": {
       "name": "apps/web/src/styles/generated/typography.css",
-      "start": 152,
-      "end": 161
+      "start": 165,
+      "end": 174
      },
      "others": [
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 215,
-       "end": 224
+       "start": 228,
+       "end": 237
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 233,
-       "end": 242
+       "start": 246,
+       "end": 255
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 325,
-       "end": 334
+       "start": 362,
+       "end": 371
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 334,
-       "end": 343
+       "start": 371,
+       "end": 380
       }
      ]
     },
@@ -1660,6 +5307,29 @@
      ]
     },
     {
+     "format": "markdown",
+     "lines": 14,
+     "tokens": 193,
+     "copies": 3,
+     "first": {
+      "name": "apps/website/content/blog/2026-10-18-thinkrail-0-2-0-review-the-turn/index.md",
+      "start": 82,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "apps/website/content/blog/2026-10-28-gui-features/index.md",
+       "start": 199,
+       "end": 212
+      },
+      {
+       "name": "apps/website/content/blog/2026-10-29-thinkrail-0-3-0-whole-loop-one-window/index.md",
+       "start": 91,
+       "end": 104
+      }
+     ]
+    },
+    {
      "format": "typescript",
      "lines": 9,
      "tokens": 94,
@@ -1699,121 +5369,73 @@
      "copies": 8,
      "first": {
       "name": "apps/web/src/styles/generated/typography.css",
-      "start": 302,
-      "end": 307
+      "start": 339,
+      "end": 344
      },
      "others": [
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 311,
-       "end": 316
+       "start": 348,
+       "end": 353
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 434,
-       "end": 439
+       "start": 474,
+       "end": 479
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 443,
-       "end": 448
+       "start": 483,
+       "end": 488
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 452,
-       "end": 457
+       "start": 492,
+       "end": 497
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 461,
-       "end": 466
+       "start": 501,
+       "end": 506
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 470,
-       "end": 475
+       "start": 510,
+       "end": 515
       },
       {
        "name": "apps/web/src/styles/generated/typography.css",
-       "start": 533,
-       "end": 538
-      }
-     ]
-    },
-    {
-     "format": "typescript",
-     "lines": 7,
-     "tokens": 51,
-     "copies": 8,
-     "first": {
-      "name": "apps/web/src/store/appStore.test.ts",
-      "start": 555,
-      "end": 561
-     },
-     "others": [
-      {
-       "name": "apps/web/src/store/appStore.test.ts",
-       "start": 579,
-       "end": 585
-      },
-      {
-       "name": "apps/web/src/store/appStore.test.ts",
-       "start": 601,
-       "end": 607
-      },
-      {
-       "name": "apps/web/src/store/appStore.test.ts",
-       "start": 907,
-       "end": 913
-      },
-      {
-       "name": "apps/web/src/store/appStore.test.ts",
-       "start": 1086,
-       "end": 1092
-      },
-      {
-       "name": "apps/web/src/store/appStore.test.ts",
-       "start": 1112,
-       "end": 1118
-      },
-      {
-       "name": "apps/web/src/store/appStore.test.ts",
-       "start": 1185,
-       "end": 1191
-      },
-      {
-       "name": "apps/web/src/store/appStore.test.ts",
-       "start": 1308,
-       "end": 1313
+       "start": 575,
+       "end": 580
       }
      ]
     }
    ],
    "code": {
-    "sources": 951,
-    "lines": 166543,
-    "tokens": 1061766,
-    "clones": 109,
-    "duplicatedLines": 1234,
-    "duplicatedTokens": 8134,
-    "percentage": 0.74,
-    "percentageTokens": 0.77,
+    "sources": 998,
+    "lines": 175854,
+    "tokens": 1121422,
+    "clones": 107,
+    "duplicatedLines": 1213,
+    "duplicatedTokens": 8017,
+    "percentage": 0.69,
+    "percentageTokens": 0.71,
     "formats": [
      {
       "format": "tsx",
-      "sources": 288,
-      "lines": 58661,
-      "clones": 56,
-      "duplicatedLines": 628,
-      "percentage": 1.07
+      "sources": 298,
+      "lines": 61981,
+      "clones": 54,
+      "duplicatedLines": 607,
+      "percentage": 0.98
      },
      {
       "format": "typescript",
-      "sources": 626,
-      "lines": 105098,
+      "sources": 662,
+      "lines": 111043,
       "clones": 45,
       "duplicatedLines": 507,
-      "percentage": 0.48
+      "percentage": 0.46
      },
      {
       "format": "html",
@@ -1825,8 +5447,8 @@
      },
      {
       "format": "bash",
-      "sources": 2,
-      "lines": 664,
+      "sources": 3,
+      "lines": 710,
       "clones": 0,
       "duplicatedLines": 0,
       "percentage": 0
@@ -2117,20 +5739,20 @@
     }
    },
    "health": {
-    "score": 69.4,
+    "score": 69.6,
     "grade": "C",
     "size": {
-     "lines": 331279,
-     "files": 1664,
+     "lines": 347491,
+     "files": 1742,
      "class": "L"
     },
     "dimensions": [
      {
       "id": "duplication",
       "source": "jscpd",
-      "value": 2.8,
-      "adjusted": 2.8,
-      "lines": 9253,
+      "value": 2.7,
+      "adjusted": 2.7,
+      "lines": 9464,
       "halfLife": 8.5,
       "formats": [
        "typescript",
@@ -2147,7 +5769,7 @@
        "data"
       ],
       "weight": 1,
-      "score": 79.6
+      "score": 80.1
      },
      {
       "id": "dead-code",
@@ -2157,14 +5779,14 @@
       "lines": 1328,
       "halfLife": 7.5,
       "weight": 1,
-      "score": 96.2
+      "score": 96.4
      },
      {
       "id": "complexity",
       "source": "jscpd",
       "value": 60.1,
       "adjusted": 59.9,
-      "lines": 199131,
+      "lines": 208877,
       "halfLife": 50,
       "weight": 1,
       "score": 43.6
@@ -2172,26 +5794,26 @@
     ]
    },
    "complexity": {
-    "total": 63707,
-    "mean": 38.3,
+    "total": 66866,
+    "mean": 38.4,
     "files": [
      {
       "path": "apps/web/src/store/appStore.ts",
-      "complexity": 1604,
-      "lines": 4599,
-      "bytes": 152674
+      "complexity": 1630,
+      "lines": 4660,
+      "bytes": 154990
      },
      {
       "path": "packages/server/src/agent/agentSessionManager.ts",
-      "complexity": 809,
-      "lines": 3061,
-      "bytes": 98716
+      "complexity": 827,
+      "lines": 3118,
+      "bytes": 100643
      },
      {
       "path": "packages/server/src/agent/agentSessionManager.test.ts",
       "complexity": 757,
-      "lines": 4222,
-      "bytes": 151630
+      "lines": 4215,
+      "bytes": 151056
      },
      {
       "path": "apps/web/src/shell/layout/model.ts",
@@ -2201,9 +5823,9 @@
      },
      {
       "path": "apps/web/src/store/appStore.test.ts",
-      "complexity": 509,
-      "lines": 5027,
-      "bytes": 175334
+      "complexity": 517,
+      "lines": 5061,
+      "bytes": 176929
      },
      {
       "path": "packages/pi-dag/runtime/service.ts",
@@ -2213,9 +5835,9 @@
      },
      {
       "path": "packages/server/src/host/handlers.ts",
-      "complexity": 434,
-      "lines": 1506,
-      "bytes": 49646
+      "complexity": 452,
+      "lines": 1544,
+      "bytes": 50992
      },
      {
       "path": "apps/web/src/chat/useChatScroll.ts",
@@ -2238,9 +5860,9 @@
     ]
    },
    "deadCode": {
-    "percentage": 0.4,
+    "percentage": 0.38,
     "findings": 46,
-    "files": 1741,
+    "files": 1821,
     "byCategory": [
      {
       "category": "unused-file",
@@ -2330,2305 +5952,15 @@
    }
   },
   {
-   "name": "nightly-labs/openbot",
-   "url": "https://github.com/nightly-labs/openbot",
-   "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
-   "language": "TypeScript",
-   "stars": 3988,
-   "starsToday": 709,
-   "defaultBranch": "main",
-   "headSha": "f3e3f8ade9c146e96d9d68d65770d2a9126a7856",
-   "durationMs": 6852,
-   "total": {
-    "sources": 5813,
-    "lines": 1126761,
-    "tokens": 7605391,
-    "clones": 2936,
-    "duplicatedLines": 39437,
-    "duplicatedTokens": 281362,
-    "percentage": 3.5,
-    "percentageTokens": 3.7
-   },
-   "formats": [
-    {
-     "format": "typescript",
-     "sources": 3867,
-     "lines": 727762,
-     "clones": 2058,
-     "duplicatedLines": 28485,
-     "percentage": 3.91
-    },
-    {
-     "format": "tsx",
-     "sources": 1190,
-     "lines": 257999,
-     "clones": 371,
-     "duplicatedLines": 4337,
-     "percentage": 1.68
-    },
-    {
-     "format": "css",
-     "sources": 147,
-     "lines": 67830,
-     "clones": 262,
-     "duplicatedLines": 2050,
-     "percentage": 3.02
-    },
-    {
-     "format": "diff",
-     "sources": 11,
-     "lines": 6269,
-     "clones": 132,
-     "duplicatedLines": 1255,
-     "percentage": 20.02
-    },
-    {
-     "format": "json",
-     "sources": 130,
-     "lines": 11098,
-     "clones": 49,
-     "duplicatedLines": 2104,
-     "percentage": 18.96
-    },
-    {
-     "format": "yaml",
-     "sources": 43,
-     "lines": 6516,
-     "clones": 23,
-     "duplicatedLines": 284,
-     "percentage": 4.36
-    },
-    {
-     "format": "markdown",
-     "sources": 264,
-     "lines": 37271,
-     "clones": 19,
-     "duplicatedLines": 144,
-     "percentage": 0.39
-    },
-    {
-     "format": "sql",
-     "sources": 35,
-     "lines": 1878,
-     "clones": 11,
-     "duplicatedLines": 652,
-     "percentage": 34.72
-    },
-    {
-     "format": "ruby",
-     "sources": 6,
-     "lines": 187,
-     "clones": 4,
-     "duplicatedLines": 55,
-     "percentage": 29.41
-    },
-    {
-     "format": "bash",
-     "sources": 43,
-     "lines": 3226,
-     "clones": 3,
-     "duplicatedLines": 23,
-     "percentage": 0.71
-    }
-   ],
-   "topClones": [
-    {
-     "format": "typescript",
-     "lines": 55,
-     "tokens": 473,
-     "copies": 12,
-     "first": {
-      "name": "packages/i18n/src/messages/de/index.ts",
-      "start": 1,
-      "end": 55
-     },
-     "others": [
-      {
-       "name": "packages/i18n/src/messages/es/index.ts",
-       "start": 1,
-       "end": 55
-      },
-      {
-       "name": "packages/i18n/src/messages/fr/index.ts",
-       "start": 1,
-       "end": 67
-      },
-      {
-       "name": "packages/i18n/src/messages/it/index.ts",
-       "start": 1,
-       "end": 67
-      },
-      {
-       "name": "packages/i18n/src/messages/ja/index.ts",
-       "start": 1,
-       "end": 66
-      },
-      {
-       "name": "packages/i18n/src/messages/ko/index.ts",
-       "start": 1,
-       "end": 66
-      },
-      {
-       "name": "packages/i18n/src/messages/nl/index.ts",
-       "start": 1,
-       "end": 68
-      },
-      {
-       "name": "packages/i18n/src/messages/pl/index.ts",
-       "start": 1,
-       "end": 67
-      },
-      {
-       "name": "packages/i18n/src/messages/pt/index.ts",
-       "start": 1,
-       "end": 56
-      }
-     ],
-     "excerpt": {
-      "lines": [
-       "import type { PartialTranslation } from \"../../message\";",
-       "import type { AppMessages } from \"../en/index\";",
-       "import { messages as account } from \"./account\";",
-       "import { messages as agent } from \"./agent\";",
-       "import { messages as agentSettings } from \"./agentSettings\";",
-       "import { messages as agentTemplate } from \"./agentTemplate\";",
-       "import { messages as app } from \"./app\";",
-       "import { messages as attachment } from \"./attachment\";",
-       "import { messages as billing } from \"./billing\";",
-       "import { messages as browser } from \"./browser\";"
-      ],
-      "total": 55
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 67,
-     "tokens": 393,
-     "copies": 10,
-     "first": {
-      "name": "packages/i18n/src/messages/de/source.ts",
-      "start": 1,
-      "end": 67
-     },
-     "others": [
-      {
-       "name": "packages/i18n/src/messages/es/source.ts",
-       "start": 1,
-       "end": 67
-      },
-      {
-       "name": "packages/i18n/src/messages/fr/source.ts",
-       "start": 1,
-       "end": 68
-      },
-      {
-       "name": "packages/i18n/src/messages/it/source.ts",
-       "start": 1,
-       "end": 68
-      },
-      {
-       "name": "packages/i18n/src/messages/ja/source.ts",
-       "start": 1,
-       "end": 68
-      },
-      {
-       "name": "packages/i18n/src/messages/nl/source.ts",
-       "start": 1,
-       "end": 68
-      },
-      {
-       "name": "packages/i18n/src/messages/pl/source.ts",
-       "start": 1,
-       "end": 68
-      },
-      {
-       "name": "packages/i18n/src/messages/pt/source.ts",
-       "start": 1,
-       "end": 68
-      },
-      {
-       "name": "packages/i18n/src/messages/ru/source.ts",
-       "start": 1,
-       "end": 68
-      }
-     ],
-     "excerpt": {
-      "lines": [
-       "import { messages as errorAgent } from \"./error/agent\";",
-       "import { messages as errorApp } from \"./error/app\";",
-       "import { messages as errorAttachment } from \"./error/attachment\";",
-       "import { messages as errorAuth } from \"./error/auth\";",
-       "import { messages as errorBackend } from \"./error/backend\";",
-       "import { messages as errorBilling } from \"./error/billing\";",
-       "import { messages as errorComputerUse } from \"./error/computerUse\";",
-       "import { messages as errorConnector } from \"./error/connector\";",
-       "import { messages as errorHost } from \"./error/host\";",
-       "import { messages as errorImport } from \"./error/import\";"
-      ],
-      "total": 67
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 24,
-     "tokens": 194,
-     "copies": 12,
-     "first": {
-      "name": "packages/i18n/src/messages/de/mobile.ts",
-      "start": 1,
-      "end": 24
-     },
-     "others": [
-      {
-       "name": "packages/i18n/src/messages/es/mobile.ts",
-       "start": 1,
-       "end": 24
-      },
-      {
-       "name": "packages/i18n/src/messages/fr/mobile.ts",
-       "start": 1,
-       "end": 25
-      },
-      {
-       "name": "packages/i18n/src/messages/it/mobile.ts",
-       "start": 1,
-       "end": 25
-      },
-      {
-       "name": "packages/i18n/src/messages/ja/mobile.ts",
-       "start": 1,
-       "end": 25
-      },
-      {
-       "name": "packages/i18n/src/messages/ko/mobile.ts",
-       "start": 1,
-       "end": 25
-      },
-      {
-       "name": "packages/i18n/src/messages/nl/mobile.ts",
-       "start": 1,
-       "end": 25
-      },
-      {
-       "name": "packages/i18n/src/messages/pl/mobile.ts",
-       "start": 1,
-       "end": 25
-      },
-      {
-       "name": "packages/i18n/src/messages/pt/mobile.ts",
-       "start": 1,
-       "end": 25
-      }
-     ],
-     "excerpt": {
-      "lines": [
-       "import type { PartialTranslation } from \"../../message\";",
-       "import type { AppMobileMessages } from \"../en/mobile\";",
-       "import { messages as mobileAgent } from \"./mobile/agent\";",
-       "import { messages as mobileApp } from \"./mobile/app\";",
-       "import { messages as mobileAppLock } from \"./mobile/appLock\";",
-       "import { messages as mobileAuth } from \"./mobile/auth\";",
-       "import { messages as mobileBrowser } from \"./mobile/browser\";",
-       "import { messages as mobileChannel } from \"./mobile/channel\";",
-       "import { messages as mobileChat } from \"./mobile/chat\";",
-       "import { messages as mobileLink } from \"./mobile/link\";"
-      ],
-      "total": 24
-     }
-    },
-    {
-     "format": "typescript",
-     "lines": 53,
-     "tokens": 159,
-     "copies": 13,
-     "first": {
-      "name": "packages/i18n/src/messages/de/index.ts",
-      "start": 55,
-      "end": 107
-     },
-     "others": [
-      {
-       "name": "packages/i18n/src/messages/en/index.ts",
-       "start": 65,
-       "end": 117
-      },
-      {
-       "name": "packages/i18n/src/messages/es/index.ts",
-       "start": 55,
-       "end": 107
-      },
-      {
-       "name": "packages/i18n/src/messages/fr/index.ts",
-       "start": 67,
-       "end": 119
-      },
-      {
-       "name": "packages/i18n/src/messages/it/index.ts",
-       "start": 67,
-       "end": 119
-      },
-      {
-       "name": "packages/i18n/src/messages/ja/index.ts",
-       "start": 66,
-       "end": 118
-      },
-      {
-       "name": "packages/i18n/src/messages/ko/index.ts",
-       "start": 66,
-       "end": 118
-      },
-      {
-       "name": "packages/i18n/src/messages/nl/index.ts",
-       "start": 68,
-       "end": 120
-      },
-      {
-       "name": "packages/i18n/src/messages/pl/index.ts",
-       "start": 67,
-       "end": 119
-      }
-     ]
-    },
-    {
-     "format": "json",
-     "lines": 150,
-     "tokens": 594,
-     "copies": 4,
-     "first": {
-      "name": "native-runtime.lock.json",
-      "start": 662,
-      "end": 811
-     },
-     "others": [
-      {
-       "name": "native-runtime.lock.json",
-       "start": 885,
-       "end": 1034
-      },
-      {
-       "name": "native-runtime.lock.json",
-       "start": 1108,
-       "end": 1257
-      },
-      {
-       "name": "native-runtime.lock.json",
-       "start": 1331,
-       "end": 1480
-      }
-     ]
-    },
-    {
-     "format": "typescript",
-     "lines": 72,
-     "tokens": 488,
-     "copies": 4,
-     "first": {
-      "name": "scripts/claude-foreign-session-e2e.ts",
-      "start": 107,
-      "end": 178
-     },
-     "others": [
-      {
-       "name": "scripts/claude-late-steer-e2e.ts",
-       "start": 139,
-       "end": 210
-      },
-      {
-       "name": "scripts/claude-usage-resume-e2e.ts",
-       "start": 127,
-       "end": 198
-      },
-      {
-       "name": "scripts/provider-session-reuse-e2e.ts",
-       "start": 236,
-       "end": 307
-      }
-     ]
-    },
-    {
-     "format": "typescript",
-     "lines": 80,
-     "tokens": 484,
-     "copies": 4,
-     "first": {
-      "name": "scripts/browser-agent-session-e2e.ts",
-      "start": 47,
-      "end": 126
-     },
-     "others": [
-      {
-       "name": "scripts/browser-card-smoke.ts",
-       "start": 47,
-       "end": 126
-      },
-      {
-       "name": "scripts/browser-sign-in-e2e.ts",
-       "start": 47,
-       "end": 126
-      },
-      {
-       "name": "scripts/browser-user-control-e2e.ts",
-       "start": 47,
-       "end": 126
-      }
-     ]
-    },
-    {
-     "format": "typescript",
-     "lines": 237,
-     "tokens": 1386,
-     "copies": 2,
-     "first": {
-      "name": "scripts/live-activity-autolink-e2e.ts",
-      "start": 37,
-      "end": 273
-     },
-     "others": [
-      {
-       "name": "scripts/live-activity-inline-fence-e2e.ts",
-       "start": 36,
-       "end": 273
-      }
-     ]
-    },
-    {
-     "format": "typescript",
-     "lines": 196,
-     "tokens": 1126,
-     "copies": 2,
-     "first": {
-      "name": "scripts/live-activity-autolink-e2e.ts",
-      "start": 37,
-      "end": 232
-     },
-     "others": [
-      {
-       "name": "scripts/live-activity-code-span-e2e.ts",
-       "start": 48,
-       "end": 244
-      }
-     ]
-    },
-    {
-     "format": "typescript",
-     "lines": 58,
-     "tokens": 363,
-     "copies": 4,
-     "first": {
-      "name": "packages/i18n/src/messages/de/source.ts",
-      "start": 1,
-      "end": 58
-     },
-     "others": [
-      {
-       "name": "packages/i18n/src/messages/en/source.ts",
-       "start": 1,
-       "end": 59
-      },
-      {
-       "name": "packages/i18n/src/messages/ko/source.ts",
-       "start": 1,
-       "end": 59
-      },
-      {
-       "name": "packages/i18n/src/messages/zh/source.ts",
-       "start": 1,
-       "end": 59
-      }
-     ]
-    }
-   ],
-   "code": {
-    "sources": 3706,
-    "lines": 804616,
-    "tokens": 5271111,
-    "clones": 2068,
-    "duplicatedLines": 25085,
-    "duplicatedTokens": 174160,
-    "percentage": 3.12,
-    "percentageTokens": 3.3,
-    "formats": [
-     {
-      "format": "typescript",
-      "sources": 2469,
-      "lines": 538430,
-      "clones": 1690,
-      "duplicatedLines": 20669,
-      "percentage": 3.84
-     },
-     {
-      "format": "tsx",
-      "sources": 1171,
-      "lines": 257264,
-      "clones": 371,
-      "duplicatedLines": 4337,
-      "percentage": 1.69
-     },
-     {
-      "format": "ruby",
-      "sources": 6,
-      "lines": 187,
-      "clones": 4,
-      "duplicatedLines": 55,
-      "percentage": 29.41
-     },
-     {
-      "format": "bash",
-      "sources": 23,
-      "lines": 2995,
-      "clones": 2,
-      "duplicatedLines": 18,
-      "percentage": 0.6
-     },
-     {
-      "format": "swift",
-      "sources": 13,
-      "lines": 2774,
-      "clones": 1,
-      "duplicatedLines": 6,
-      "percentage": 0.22
-     },
-     {
-      "format": "javascript",
-      "sources": 15,
-      "lines": 1605,
-      "clones": 0,
-      "duplicatedLines": 0,
-      "percentage": 0
-     },
-     {
-      "format": "kotlin",
-      "sources": 7,
-      "lines": 1267,
-      "clones": 0,
-      "duplicatedLines": 0,
-      "percentage": 0
-     },
-     {
-      "format": "groovy",
-      "sources": 2,
-      "lines": 94,
-      "clones": 0,
-      "duplicatedLines": 0,
-      "percentage": 0
-     }
-    ],
-    "topClones": [
-     {
-      "format": "typescript",
-      "lines": 72,
-      "tokens": 488,
-      "copies": 4,
-      "first": {
-       "name": "scripts/claude-foreign-session-e2e.ts",
-       "start": 107,
-       "end": 178
-      },
-      "others": [
-       {
-        "name": "scripts/claude-late-steer-e2e.ts",
-        "start": 139,
-        "end": 210
-       },
-       {
-        "name": "scripts/claude-usage-resume-e2e.ts",
-        "start": 127,
-        "end": 198
-       },
-       {
-        "name": "scripts/provider-session-reuse-e2e.ts",
-        "start": 236,
-        "end": 307
-       }
-      ],
-      "excerpt": {
-       "lines": [
-        "  exit: [error: Error];",
-        "  diagnostic: [message: string, origin?: DiagnosticOrigin];",
-        "}",
-        "",
-        "/**",
-        " * The real Claude client. Only the account, usage and model reads are answered here: the real ones",
-        " * run `claude auth status` or a probe query. Sessions, turns and events go to the real client.",
-        " */",
-        "class ClaudeStandIn extends EventEmitter<ClientEvents> implements AgentClient {",
-        "  readonly provider = \"claude\";"
-       ],
-       "total": 72
-      },
-      "excerptSecond": {
-       "lines": [
-        "  exit: [error: Error];",
-        "  diagnostic: [message: string, origin?: DiagnosticOrigin];",
-        "}",
-        "",
-        "/**",
-        " * The real Claude client. Only the account, usage and model reads are answered here: the real ones",
-        " * run `claude auth status` or a probe query. Sessions, turns, history and events go to the real client.",
-        " */",
-        "class ClaudeStandIn extends EventEmitter<ClientEvents> implements AgentClient {",
-        "  readonly provider = \"claude\";"
-       ],
-       "total": 72
-      }
-     },
-     {
-      "format": "typescript",
-      "lines": 80,
-      "tokens": 484,
-      "copies": 4,
-      "first": {
-       "name": "scripts/browser-agent-session-e2e.ts",
-       "start": 47,
-       "end": 126
-      },
-      "others": [
-       {
-        "name": "scripts/browser-card-smoke.ts",
-        "start": 47,
-        "end": 126
-       },
-       {
-        "name": "scripts/browser-sign-in-e2e.ts",
-        "start": 47,
-        "end": 126
-       },
-       {
-        "name": "scripts/browser-user-control-e2e.ts",
-        "start": 47,
-        "end": 126
-       }
-      ],
-      "excerpt": {
-       "lines": [
-        "      cases: z.array(z.string()).length(16),",
-        "      runId: z.literal(runId),",
-        "      sourceSha: z.literal(sourceSha),",
-        "    })",
-        "    .parse(JSON.parse(await readFile(reportPath, \"utf8\")));",
-        "  // Machine-readable summary of the completed case count.",
-        "  process.stdout.write(",
-        "    `${JSON.stringify({ status: report.status, cases: report.cases.length, report: reportPath })}\\n`,",
-        "  );",
-        "} catch (error) {"
-       ],
-       "total": 80
-      }
-     },
-     {
-      "format": "typescript",
-      "lines": 237,
-      "tokens": 1386,
-      "copies": 2,
-      "first": {
-       "name": "scripts/live-activity-autolink-e2e.ts",
-       "start": 37,
-       "end": 273
-      },
-      "others": [
-       {
-        "name": "scripts/live-activity-inline-fence-e2e.ts",
-        "start": 36,
-        "end": 273
-       }
-      ],
-      "excerpt": {
-       "lines": [
-        "  \"scripts/live-activity-autolink-e2e.ts\",",
-        "  \"src/main/live-activity-push.ts\",",
-        "  \"packages/team-client/src/dynamic-island-coordinator.ts\",",
-        "  \"packages/team-client/src/dynamic-island-presentation.ts\",",
-        "  \"packages/team-client/src/agent-message-text.ts\",",
-        "  \"packages/team-client/src/live-activity-props.ts\",",
-        "  \"packages/team-client/src/live-activity-text.ts\",",
-        "  \"packages/team-client/src/live-activity-seal.ts\",",
-        "  \"apps/mobile/src/features/live-activity/model/live-activity-open.ts\",",
-        "];"
-       ],
-       "total": 237
-      }
-     },
-     {
-      "format": "typescript",
-      "lines": 196,
-      "tokens": 1126,
-      "copies": 2,
-      "first": {
-       "name": "scripts/live-activity-autolink-e2e.ts",
-       "start": 37,
-       "end": 232
-      },
-      "others": [
-       {
-        "name": "scripts/live-activity-code-span-e2e.ts",
-        "start": 48,
-        "end": 244
-       }
-      ]
-     },
-     {
-      "format": "typescript",
-      "lines": 24,
-      "tokens": 262,
-      "copies": 5,
-      "first": {
-       "name": "packages/contracts/src/team-protocol/v4-adapter.ts",
-       "start": 146,
-       "end": 169
-      },
-      "others": [
-       {
-        "name": "packages/contracts/src/team-protocol/v5-adapter.ts",
-        "start": 169,
-        "end": 192
-       },
-       {
-        "name": "packages/contracts/src/team-protocol/v6-adapter.ts",
-        "start": 169,
-        "end": 192
-       },
-       {
-        "name": "packages/contracts/src/team-protocol/v7-adapter.ts",
-        "start": 131,
-        "end": 154
-       },
-       {
-        "name": "packages/contracts/src/team-protocol/v8-adapter.ts",
-        "start": 132,
-        "end": 155
-       }
-      ]
-     },
-     {
-      "format": "typescript",
-      "lines": 16,
-      "tokens": 233,
-      "copies": 5,
-      "first": {
-       "name": "packages/contracts/src/team-protocol/v4-adapter.ts",
-       "start": 284,
-       "end": 299
-      },
-      "others": [
-       {
-        "name": "packages/contracts/src/team-protocol/v5-adapter.ts",
-        "start": 312,
-        "end": 327
-       },
-       {
-        "name": "packages/contracts/src/team-protocol/v6-adapter.ts",
-        "start": 312,
-        "end": 327
-       },
-       {
-        "name": "packages/contracts/src/team-protocol/v7-adapter.ts",
-        "start": 333,
-        "end": 348
-       },
-       {
-        "name": "packages/contracts/src/team-protocol/v8-adapter.ts",
-        "start": 334,
-        "end": 349
-       }
-      ]
-     },
-     {
-      "format": "typescript",
-      "lines": 70,
-      "tokens": 826,
-      "copies": 2,
-      "first": {
-       "name": "packages/contracts/src/team-protocol/provider-aware-codec.ts",
-       "start": 1134,
-       "end": 1203
-      },
-      "others": [
-       {
-        "name": "packages/contracts/src/team-protocol/v1.ts",
-        "start": 1048,
-        "end": 1117
-       }
-      ]
-     },
-     {
-      "format": "tsx",
-      "lines": 11,
-      "tokens": 53,
-      "copies": 16,
-      "first": {
-       "name": "apps/mobile/src/app/(app)/_layout.tsx",
-       "start": 257,
-       "end": 267
-      },
-      "others": [
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 278,
-        "end": 288
-       },
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 302,
-        "end": 312
-       },
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 314,
-        "end": 324
-       },
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 325,
-        "end": 335
-       },
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 370,
-        "end": 380
-       },
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 394,
-        "end": 404
-       },
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 405,
-        "end": 415
-       },
-       {
-        "name": "apps/mobile/src/app/(app)/_layout.tsx",
-        "start": 416,
-        "end": 426
-       }
-      ]
-     },
-     {
-      "format": "typescript",
-      "lines": 11,
-      "tokens": 73,
-      "copies": 11,
-      "first": {
-       "name": "src/main/agent-memory-limit-preference-store.ts",
-       "start": 21,
-       "end": 31
-      },
-      "others": [
-       {
-        "name": "src/main/busy-message-mode-preference-store.ts",
-        "start": 18,
-        "end": 28
-       },
-       {
-        "name": "src/main/machine-alerts.ts",
-        "start": 35,
-        "end": 45
-       },
-       {
-        "name": "src/main/memory-review-preference-store.ts",
-        "start": 21,
-        "end": 31
-       },
-       {
-        "name": "src/main/notification-preference-store.ts",
-        "start": 24,
-        "end": 34
-       },
-       {
-        "name": "src/main/prompt-cache-ttl-preference-store.ts",
-        "start": 21,
-        "end": 31
-       },
-       {
-        "name": "src/main/provider-detection-settings-store.ts",
-        "start": 32,
-        "end": 43
-       },
-       {
-        "name": "src/main/push-notification-store.ts",
-        "start": 51,
-        "end": 60
-       },
-       {
-        "name": "src/main/server-timezone-preference-store.ts",
-        "start": 21,
-        "end": 31
-       }
-      ]
-     },
-     {
-      "format": "tsx",
-      "lines": 24,
-      "tokens": 182,
-      "copies": 5,
-      "first": {
-       "name": "apps/auth-api/src/routes/brand/index.tsx",
-       "start": 9,
-       "end": 32
-      },
-      "others": [
-       {
-        "name": "apps/auth-api/src/routes/commercial-license.tsx",
-        "start": 9,
-        "end": 32
-       },
-       {
-        "name": "apps/auth-api/src/routes/dpa.tsx",
-        "start": 9,
-        "end": 32
-       },
-       {
-        "name": "apps/auth-api/src/routes/teams.tsx",
-        "start": 9,
-        "end": 32
-       },
-       {
-        "name": "apps/auth-api/src/routes/terms.tsx",
-        "start": 9,
-        "end": 32
-       }
-      ]
-     }
-    ],
-    "generated": {
-     "files": 10,
-     "minified": 0,
-     "sample": [
-      "apps/auth-api/src/lib/plugin-catalog.generated.ts",
-      "apps/auth-api/src/routeTree.gen.ts",
-      "apps/mobile/src/features/marketplace/model/plugin-catalog.generated.ts",
-      "apps/mobile/src/uniwind-types.d.ts",
-      "packages/brand/src/wordmark-shape.ts",
-      "src/backend/released-schemas/v0.1.12.sql",
-      "src/backend/released-schemas/v0.1.15.sql",
-      "src/backend/released-schemas/v0.1.18.sql",
-      "src/backend/released-schemas/v0.2.1.sql",
-      "src/renderer/src/features/settings/marketplace-plugin-catalog.ts"
-     ]
-    }
-   },
-   "health": {
-    "score": 61.6,
-    "grade": "C",
-    "size": {
-     "lines": 996180,
-     "files": 5148,
-     "class": "L"
-    },
-    "dimensions": [
-     {
-      "id": "duplication",
-      "source": "jscpd",
-      "value": 3.4,
-      "adjusted": 3.4,
-      "lines": 33553,
-      "halfLife": 8.5,
-      "formats": [
-       "typescript",
-       "tsx",
-       "bash",
-       "swift",
-       "sql",
-       "javascript",
-       "kotlin",
-       "ruby",
-       "nix",
-       "docker",
-       "groovy"
-      ],
-      "excluded": [
-       "markup",
-       "text",
-       "data"
-      ],
-      "weight": 1,
-      "score": 76
-     },
-     {
-      "id": "dead-code",
-      "source": "jscpd",
-      "value": 4.6,
-      "adjusted": 4.6,
-      "lines": 45134,
-      "halfLife": 7.5,
-      "coverage": 99.3,
-      "weight": 0.993,
-      "score": 65.6
-     },
-     {
-      "id": "complexity",
-      "source": "jscpd",
-      "value": 54.9,
-      "adjusted": 54.8,
-      "lines": 546435,
-      "halfLife": 50,
-      "weight": 1,
-      "score": 46.8
-     }
-    ]
-   },
-   "complexity": {
-    "total": 186915,
-    "mean": 36.3,
-    "files": [
-     {
-      "path": "packages/contracts/src/team-protocol/provider-aware-codec.ts",
-      "complexity": 1360,
-      "lines": 3023,
-      "bytes": 123767
-     },
-     {
-      "path": "packages/contracts/src/team-protocol/v1.ts",
-      "complexity": 1347,
-      "lines": 2831,
-      "bytes": 108903
-     },
-     {
-      "path": "src/backend/agent-service.ts",
-      "complexity": 1288,
-      "lines": 5063,
-      "bytes": 223733
-     },
-     {
-      "path": "src/renderer/src/preview/mock-openbot.ts",
-      "complexity": 1108,
-      "lines": 3114,
-      "bytes": 139938
-     },
-     {
-      "path": "src/backend/mailbox-store.ts",
-      "complexity": 1097,
-      "lines": 3228,
-      "bytes": 139518
-     },
-     {
-      "path": "src/backend/agent/provider-runtime.ts",
-      "complexity": 1058,
-      "lines": 3875,
-      "bytes": 181829
-     },
-     {
-      "path": "packages/ui/src/features/workflows/WorkflowCanvas.tsx",
-      "complexity": 1045,
-      "lines": 3168,
-      "bytes": 128443
-     },
-     {
-      "path": "src/backend/channel-service.ts",
-      "complexity": 997,
-      "lines": 2932,
-      "bytes": 137887
-     },
-     {
-      "path": "scripts/browser-smoke-electron.ts",
-      "complexity": 958,
-      "lines": 3944,
-      "bytes": 198620
-     },
-     {
-      "path": "src/backend/browser-host.ts",
-      "complexity": 921,
-      "lines": 3143,
-      "bytes": 133578
-     }
-    ]
-   },
-   "deadCode": {
-    "percentage": 4.56,
-    "findings": 224,
-    "files": 5427,
-    "byCategory": [
-     {
-      "category": "unused-file",
-      "count": 187
-     },
-     {
-      "category": "unused-export",
-      "count": 22
-     },
-     {
-      "category": "unused-symbol",
-      "count": 14
-     },
-     {
-      "category": "unused-import",
-      "count": 1
-     }
-    ],
-    "largest": [
-     {
-      "category": "unused-file",
-      "path": "scripts/browser-smoke-electron.ts",
-      "name": "",
-      "line": 1,
-      "lines": 3944
-     },
-     {
-      "category": "unused-file",
-      "path": "src/renderer/src/features/team/team-webrtc.ts",
-      "name": "",
-      "line": 1,
-      "lines": 1049
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/workflow-team-api-e2e.ts",
-      "name": "",
-      "line": 1,
-      "lines": 1044
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/browser-fill-fields-electron.ts",
-      "name": "",
-      "line": 1,
-      "lines": 849
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/agent-threads-messaging-e2e.ts",
-      "name": "",
-      "line": 1,
-      "lines": 728
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/stuck-running-deliveries-e2e.ts",
-      "name": "",
-      "line": 1,
-      "lines": 722
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/channel-notifications-e2e.ts",
-      "name": "",
-      "line": 1,
-      "lines": 663
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/conversation-mailbox-rewrite-e2e.ts",
-      "name": "",
-      "line": 1,
-      "lines": 595
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/routine-cron-syntax-e2e.ts",
-      "name": "",
-      "line": 1,
-      "lines": 593
-     },
-     {
-      "category": "unused-file",
-      "path": "scripts/agent-access-e2e.ts",
-      "name": "",
-      "line": 1,
-      "lines": 589
-     }
-    ]
-   }
-  },
-  {
-   "name": "CopilotKit/OpenBot",
-   "url": "https://github.com/CopilotKit/OpenBot",
-   "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-   "language": "TypeScript",
-   "stars": 8271,
-   "starsToday": 247,
-   "defaultBranch": "main",
-   "headSha": "ab9855c19848378c90a806426130d86699cc798c",
-   "durationMs": 4762,
-   "total": {
-    "sources": 2378,
-    "lines": 1066917,
-    "tokens": 4959282,
-    "clones": 3972,
-    "duplicatedLines": 398271,
-    "duplicatedTokens": 1366695,
-    "percentage": 37.33,
-    "percentageTokens": 27.56
-   },
-   "formats": [
-    {
-     "format": "typescript",
-     "sources": 1441,
-     "lines": 450270,
-     "clones": 1690,
-     "duplicatedLines": 22353,
-     "percentage": 4.96
-    },
-    {
-     "format": "json",
-     "sources": 135,
-     "lines": 404404,
-     "clones": 1310,
-     "duplicatedLines": 361085,
-     "percentage": 89.29
-    },
-    {
-     "format": "tsx",
-     "sources": 500,
-     "lines": 122266,
-     "clones": 632,
-     "duplicatedLines": 10036,
-     "percentage": 8.21
-    },
-    {
-     "format": "rust",
-     "sources": 44,
-     "lines": 52599,
-     "clones": 184,
-     "duplicatedLines": 1843,
-     "percentage": 3.5
-    },
-    {
-     "format": "python",
-     "sources": 59,
-     "lines": 8512,
-     "clones": 73,
-     "duplicatedLines": 1654,
-     "percentage": 19.43
-    },
-    {
-     "format": "yaml",
-     "sources": 58,
-     "lines": 6448,
-     "clones": 35,
-     "duplicatedLines": 474,
-     "percentage": 7.35
-    },
-    {
-     "format": "diff",
-     "sources": 1,
-     "lines": 1838,
-     "clones": 30,
-     "duplicatedLines": 654,
-     "percentage": 35.58
-    },
-    {
-     "format": "txt",
-     "sources": 10,
-     "lines": 524,
-     "clones": 7,
-     "duplicatedLines": 58,
-     "percentage": 11.07
-    },
-    {
-     "format": "docker",
-     "sources": 19,
-     "lines": 772,
-     "clones": 3,
-     "duplicatedLines": 24,
-     "percentage": 3.11
-    },
-    {
-     "format": "markup",
-     "sources": 10,
-     "lines": 322,
-     "clones": 3,
-     "duplicatedLines": 36,
-     "percentage": 11.18
-    }
-   ],
-   "topClones": [
-    {
-     "format": "json",
-     "lines": 1024,
-     "tokens": 3330,
-     "copies": 15,
-     "first": {
-      "name": "server/drizzle/meta/0045_snapshot.json",
-      "start": 794,
-      "end": 1817
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0047_snapshot.json",
-       "start": 794,
-       "end": 1817
-      },
-      {
-       "name": "server/drizzle/meta/0048_snapshot.json",
-       "start": 794,
-       "end": 1817
-      },
-      {
-       "name": "server/drizzle/meta/0049_snapshot.json",
-       "start": 794,
-       "end": 1817
-      },
-      {
-       "name": "server/drizzle/meta/0050_snapshot.json",
-       "start": 794,
-       "end": 1817
-      },
-      {
-       "name": "server/drizzle/meta/0051_snapshot.json",
-       "start": 794,
-       "end": 1817
-      },
-      {
-       "name": "server/drizzle/meta/0052_snapshot.json",
-       "start": 794,
-       "end": 1817
-      },
-      {
-       "name": "server/drizzle/meta/0053_snapshot.json",
-       "start": 794,
-       "end": 1817
-      },
-      {
-       "name": "server/drizzle/meta/0054_snapshot.json",
-       "start": 794,
-       "end": 1817
-      }
-     ],
-     "excerpt": {
-      "lines": [
-       "  \"primaryKey\": false,",
-       "  \"notNull\": false",
-       "},",
-       "\"summary_at\": {",
-       "  \"name\": \"summary_at\",",
-       "  \"type\": \"timestamp with time zone\",",
-       "  \"primaryKey\": false,",
-       "  \"notNull\": false",
-       "},",
-       "\"last_message\": {"
-      ],
-      "total": 1024
-     }
-    },
-    {
-     "format": "json",
-     "lines": 6251,
-     "tokens": 19675,
-     "copies": 3,
-     "first": {
-      "name": "server/drizzle/meta/0066_snapshot.json",
-      "start": 4109,
-      "end": 10359
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0068_snapshot.json",
-       "start": 4109,
-       "end": 10359
-      },
-      {
-       "name": "server/drizzle/meta/0069_snapshot.json",
-       "start": 4116,
-       "end": 10366
-      }
-     ],
-     "excerpt": {
-      "lines": [
-       "},",
-       "\"compositePrimaryKeys\": {},",
-       "\"uniqueConstraints\": {},",
-       "\"policies\": {},",
-       "\"checkConstraints\": {",
-       "  \"voice_sessions_duration_check\": {",
-       "    \"name\": \"voice_sessions_duration_check\",",
-       "    \"value\": \"\\\"voice_sessions\\\".\\\"duration_seconds\\\" >= 0\"",
-       "  },",
-       "  \"voice_sessions_summary_check\": {"
-      ],
-      "total": 6251
-     }
-    },
-    {
-     "format": "json",
-     "lines": 522,
-     "tokens": 1636,
-     "copies": 25,
-     "first": {
-      "name": "server/drizzle/meta/0033_snapshot.json",
-      "start": 287,
-      "end": 808
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0045_snapshot.json",
-       "start": 287,
-       "end": 808
-      },
-      {
-       "name": "server/drizzle/meta/0046_snapshot.json",
-       "start": 287,
-       "end": 808
-      },
-      {
-       "name": "server/drizzle/meta/0047_snapshot.json",
-       "start": 287,
-       "end": 808
-      },
-      {
-       "name": "server/drizzle/meta/0048_snapshot.json",
-       "start": 287,
-       "end": 808
-      },
-      {
-       "name": "server/drizzle/meta/0049_snapshot.json",
-       "start": 287,
-       "end": 808
-      },
-      {
-       "name": "server/drizzle/meta/0050_snapshot.json",
-       "start": 287,
-       "end": 808
-      },
-      {
-       "name": "server/drizzle/meta/0051_snapshot.json",
-       "start": 287,
-       "end": 808
-      },
-      {
-       "name": "server/drizzle/meta/0052_snapshot.json",
-       "start": 287,
-       "end": 808
-      }
-     ],
-     "excerpt": {
-      "lines": [
-       "\"indexes\": {",
-       "  \"attachments_channel_idx\": {",
-       "    \"name\": \"attachments_channel_idx\",",
-       "    \"columns\": [",
-       "      {",
-       "        \"expression\": \"channel_id\",",
-       "        \"isExpression\": false,",
-       "        \"asc\": true,",
-       "        \"nulls\": \"last\"",
-       "      }"
-      ],
-      "total": 522
-     }
-    },
-    {
-     "format": "json",
-     "lines": 2747,
-     "tokens": 8794,
-     "copies": 4,
-     "first": {
-      "name": "server/drizzle/meta/0052_snapshot.json",
-      "start": 2507,
-      "end": 5253
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0054_snapshot.json",
-       "start": 2507,
-       "end": 5253
-      },
-      {
-       "name": "server/drizzle/meta/0055_snapshot.json",
-       "start": 2507,
-       "end": 5253
-      },
-      {
-       "name": "server/drizzle/meta/0056_snapshot.json",
-       "start": 2507,
-       "end": 5253
-      }
-     ]
-    },
-    {
-     "format": "json",
-     "lines": 3992,
-     "tokens": 12463,
-     "copies": 3,
-     "first": {
-      "name": "server/drizzle/meta/0061_snapshot.json",
-      "start": 6185,
-      "end": 10176
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0062_snapshot.json",
-       "start": 6192,
-       "end": 10183
-      },
-      {
-       "name": "server/drizzle/meta/0063_snapshot.json",
-       "start": 6214,
-       "end": 10205
-      }
-     ]
-    },
-    {
-     "format": "json",
-     "lines": 3771,
-     "tokens": 11823,
-     "copies": 3,
-     "first": {
-      "name": "server/drizzle/meta/0050_snapshot.json",
-      "start": 5136,
-      "end": 8906
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0052_snapshot.json",
-       "start": 5317,
-       "end": 9087
-      },
-      {
-       "name": "server/drizzle/meta/0054_snapshot.json",
-       "start": 5350,
-       "end": 9120
-      }
-     ]
-    },
-    {
-     "format": "json",
-     "lines": 3695,
-     "tokens": 11748,
-     "copies": 3,
-     "first": {
-      "name": "server/drizzle/meta/0060_snapshot.json",
-      "start": 2507,
-      "end": 6201
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0061_snapshot.json",
-       "start": 2507,
-       "end": 6201
-      },
-      {
-       "name": "server/drizzle/meta/0062_snapshot.json",
-       "start": 2514,
-       "end": 6208
-      }
-     ]
-    },
-    {
-     "format": "json",
-     "lines": 7189,
-     "tokens": 22613,
-     "copies": 2,
-     "first": {
-      "name": "server/drizzle/meta/0059_snapshot.json",
-      "start": 2821,
-      "end": 10009
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0060_snapshot.json",
-       "start": 2988,
-       "end": 10176
-      }
-     ]
-    },
-    {
-     "format": "json",
-     "lines": 7119,
-     "tokens": 22389,
-     "copies": 2,
-     "first": {
-      "name": "server/drizzle/meta/0057_snapshot.json",
-      "start": 2885,
-      "end": 10003
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0059_snapshot.json",
-       "start": 2891,
-       "end": 10009
-      }
-     ]
-    },
-    {
-     "format": "json",
-     "lines": 856,
-     "tokens": 2768,
-     "copies": 9,
-     "first": {
-      "name": "server/drizzle/meta/0045_snapshot.json",
-      "start": 794,
-      "end": 1649
-     },
-     "others": [
-      {
-       "name": "server/drizzle/meta/0062_snapshot.json",
-       "start": 794,
-       "end": 1649
-      },
-      {
-       "name": "server/drizzle/meta/0063_snapshot.json",
-       "start": 794,
-       "end": 1649
-      },
-      {
-       "name": "server/drizzle/meta/0064_snapshot.json",
-       "start": 794,
-       "end": 1649
-      },
-      {
-       "name": "server/drizzle/meta/0065_snapshot.json",
-       "start": 794,
-       "end": 1649
-      },
-      {
-       "name": "server/drizzle/meta/0066_snapshot.json",
-       "start": 794,
-       "end": 1649
-      },
-      {
-       "name": "server/drizzle/meta/0067_snapshot.json",
-       "start": 794,
-       "end": 1649
-      },
-      {
-       "name": "server/drizzle/meta/0068_snapshot.json",
-       "start": 794,
-       "end": 1649
-      },
-      {
-       "name": "server/drizzle/meta/0069_snapshot.json",
-       "start": 794,
-       "end": 1649
-      }
-     ]
-    }
-   ],
-   "code": {
-    "sources": 1125,
-    "lines": 322781,
-    "tokens": 1558235,
-    "clones": 445,
-    "duplicatedLines": 5961,
-    "duplicatedTokens": 31788,
-    "percentage": 1.85,
-    "percentageTokens": 2.04,
-    "formats": [
-     {
-      "format": "rust",
-      "sources": 41,
-      "lines": 51638,
-      "clones": 182,
-      "duplicatedLines": 1825,
-      "percentage": 3.53
-     },
-     {
-      "format": "typescript",
-      "sources": 696,
-      "lines": 194326,
-      "clones": 177,
-      "duplicatedLines": 2632,
-      "percentage": 1.35
-     },
-     {
-      "format": "tsx",
-      "sources": 327,
-      "lines": 71196,
-      "clones": 70,
-      "duplicatedLines": 1278,
-      "percentage": 1.8
-     },
-     {
-      "format": "python",
-      "sources": 19,
-      "lines": 2404,
-      "clones": 15,
-      "duplicatedLines": 203,
-      "percentage": 8.44
-     },
-     {
-      "format": "sql",
-      "sources": 29,
-      "lines": 1771,
-      "clones": 1,
-      "duplicatedLines": 23,
-      "percentage": 1.3
-     },
-     {
-      "format": "bash",
-      "sources": 8,
-      "lines": 916,
-      "clones": 0,
-      "duplicatedLines": 0,
-      "percentage": 0
-     },
-     {
-      "format": "powershell",
-      "sources": 4,
-      "lines": 500,
-      "clones": 0,
-      "duplicatedLines": 0,
-      "percentage": 0
-     },
-     {
-      "format": "javascript",
-      "sources": 1,
-      "lines": 30,
-      "clones": 0,
-      "duplicatedLines": 0,
-      "percentage": 0
-     }
-    ],
-    "topClones": [
-     {
-      "format": "tsx",
-      "lines": 157,
-      "tokens": 771,
-      "copies": 2,
-      "first": {
-       "name": "app/src/components/computer/placeholder.tsx",
-       "start": 6,
-       "end": 162
-      },
-      "others": [
-       {
-        "name": "app/src/components/settings/background.tsx",
-        "start": 6,
-        "end": 162
-       }
-      ],
-      "excerpt": {
-       "lines": [
-        "export function ComputerPlaceholder(props: SVGProps<SVGSVGElement>) {",
-        "  return (",
-        "    <svg",
-        "      viewBox=\"0 0 1200 800\"",
-        "      preserveAspectRatio=\"xMidYMin slice\"",
-        "      fill=\"none\"",
-        "      aria-hidden=\"true\"",
-        "      focusable=\"false\"",
-        "      xmlns=\"http://www.w3.org/2000/svg\"",
-        "      {...props}"
-       ],
-       "total": 157
-      }
-     },
-     {
-      "format": "rust",
-      "lines": 65,
-      "tokens": 451,
-      "copies": 2,
-      "first": {
-       "name": "desktop/src-tauri/src/ask.rs",
-       "start": 620,
-       "end": 684
-      },
-      "others": [
-       {
-        "name": "desktop/src-tauri/src/main.rs",
-        "start": 9338,
-        "end": 9402
-       }
-      ],
-      "excerpt": {
-       "lines": [
-        "use std::io::{Read, Write};",
-        "let mut request = Vec::new();",
-        "let mut buffer = [0; 1024];",
-        "loop {",
-        "    let read = stream.read(&mut buffer).expect(\"read\");",
-        "    request.extend_from_slice(&buffer[..read]);",
-        "    if request.windows(4).any(|window| window == b\"\\r\\n\\r\\n\") {",
-        "        break;",
-        "    }",
-        "}"
-       ],
-       "total": 65
-      }
-     },
-     {
-      "format": "python",
-      "lines": 18,
-      "tokens": 134,
-      "copies": 4,
-      "first": {
-       "name": "agent-ag2/src/main.py",
-       "start": 46,
-       "end": 63
-      },
-      "others": [
-       {
-        "name": "agent-claude-sdk/src/main.py",
-        "start": 44,
-        "end": 61
-       },
-       {
-        "name": "agent-langgraph-agui/src/main.py",
-        "start": 235,
-        "end": 252
-       },
-       {
-        "name": "agent-microsoft/src/main.py",
-        "start": 43,
-        "end": 60
-       }
-      ],
-      "excerpt": {
-       "lines": [
-        "stream = AGUIStream(agent)",
-        "",
-        "app = FastAPI()",
-        "",
-        "",
-        "@app.middleware(\"http\")",
-        "async def refuse_without_the_server_token(request: Request, call_next):",
-        "    if request.url.path != \"/health\":",
-        "        expected = (os.environ.get(\"MANAGED_AGENT_TOKEN\") or \"\").strip()",
-        "        offered = (request.headers.get(TOKEN_HEADER) or \"\").strip()"
-       ],
-       "total": 18
-      }
-     },
-     {
-      "format": "python",
-      "lines": 16,
-      "tokens": 133,
-      "copies": 4,
-      "first": {
-       "name": "agent-adk/src/main.py",
-       "start": 70,
-       "end": 85
-      },
-      "others": [
-       {
-        "name": "agent-ag2/src/main.py",
-        "start": 48,
-        "end": 63
-       },
-       {
-        "name": "agent-antigravity/src/main.py",
-        "start": 91,
-        "end": 108
-       },
-       {
-        "name": "agent-langroid/src/main.py",
-        "start": 62,
-        "end": 77
-       }
-      ]
-     },
-     {
-      "format": "typescript",
-      "lines": 26,
-      "tokens": 183,
-      "copies": 3,
-      "first": {
-       "name": "server/src/index.ts",
-       "start": 1768,
-       "end": 1793
-      },
-      "others": [
-       {
-        "name": "server/src/index.ts",
-        "start": 2006,
-        "end": 2031
-       },
-       {
-        "name": "server/src/index.ts",
-        "start": 2241,
-        "end": 2266
-       }
-      ]
-     },
-     {
-      "format": "rust",
-      "lines": 10,
-      "tokens": 52,
-      "copies": 7,
-      "first": {
-       "name": "desktop/src-tauri/src/env.rs",
-       "start": 1503,
-       "end": 1512
-      },
-      "others": [
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1605,
-        "end": 1614
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1624,
-        "end": 1633
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1641,
-        "end": 1650
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1658,
-        "end": 1667
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1675,
-        "end": 1684
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1837,
-        "end": 1846
-       }
-      ]
-     },
-     {
-      "format": "python",
-      "lines": 12,
-      "tokens": 148,
-      "copies": 3,
-      "first": {
-       "name": "agent-adk/src/main.py",
-       "start": 53,
-       "end": 64
-      },
-      "others": [
-       {
-        "name": "agent-llamaindex/src/main.py",
-        "start": 26,
-        "end": 37
-       },
-       {
-        "name": "agent-strands/src/main.py",
-        "start": 20,
-        "end": 31
-       }
-      ]
-     },
-     {
-      "format": "rust",
-      "lines": 11,
-      "tokens": 56,
-      "copies": 6,
-      "first": {
-       "name": "desktop/src-tauri/src/env.rs",
-       "start": 1606,
-       "end": 1616
-      },
-      "others": [
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1625,
-        "end": 1635
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1642,
-        "end": 1652
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1659,
-        "end": 1669
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1676,
-        "end": 1686
-       },
-       {
-        "name": "desktop/src-tauri/src/env.rs",
-        "start": 1838,
-        "end": 1847
-       }
-      ]
-     },
-     {
-      "format": "python",
-      "lines": 9,
-      "tokens": 138,
-      "copies": 3,
-      "first": {
-       "name": "agent-adk/src/main.py",
-       "start": 56,
-       "end": 64
-      },
-      "others": [
-       {
-        "name": "agent-agno/src/main.py",
-        "start": 32,
-        "end": 40
-       },
-       {
-        "name": "agent-crewai/src/main.py",
-        "start": 49,
-        "end": 57
-       }
-      ]
-     },
-     {
-      "format": "rust",
-      "lines": 6,
-      "tokens": 60,
-      "copies": 5,
-      "first": {
-       "name": "desktop/src-tauri/src/desktop_telemetry.rs",
-       "start": 246,
-       "end": 251
-      },
-      "others": [
-       {
-        "name": "desktop/src-tauri/src/main.rs",
-        "start": 5098,
-        "end": 5103
-       },
-       {
-        "name": "desktop/src-tauri/src/main.rs",
-        "start": 8420,
-        "end": 8425
-       },
-       {
-        "name": "desktop/src-tauri/src/main.rs",
-        "start": 9590,
-        "end": 9595
-       },
-       {
-        "name": "desktop/src-tauri/src/main.rs",
-        "start": 9779,
-        "end": 9784
-       }
-      ]
-     }
-    ],
-    "generated": {
-     "files": 1,
-     "minified": 0,
-     "sample": [
-      "app/src/routeTree.gen.ts"
-     ]
-    }
-   },
-   "health": {
-    "score": 62.3,
-    "grade": "C",
-    "size": {
-     "lines": 637909,
-     "files": 2106,
-     "class": "L"
-    },
-    "dimensions": [
-     {
-      "id": "duplication",
-      "source": "jscpd",
-      "value": 5.6,
-      "adjusted": 5.6,
-      "lines": 35933,
-      "halfLife": 8.5,
-      "formats": [
-       "typescript",
-       "tsx",
-       "rust",
-       "python",
-       "sql",
-       "bash",
-       "docker",
-       "powershell",
-       "javascript",
-       "nsis"
-      ],
-      "excluded": [
-       "markup",
-       "text",
-       "data"
-      ],
-      "weight": 1,
-      "score": 63.2
-     },
-     {
-      "id": "dead-code",
-      "source": "jscpd",
-      "value": 0.7,
-      "adjusted": 0.7,
-      "lines": 4262,
-      "halfLife": 7.5,
-      "coverage": 91.2,
-      "weight": 0.912,
-      "score": 93.4
-     },
-     {
-      "id": "complexity",
-      "source": "jscpd",
-      "value": 61.9,
-      "adjusted": 61.8,
-      "lines": 395050,
-      "halfLife": 50,
-      "weight": 1,
-      "score": 42.5
-     }
-    ]
-   },
-   "complexity": {
-    "total": 82760,
-    "mean": 39.3,
-    "files": [
-     {
-      "path": "desktop/src-tauri/src/main.rs",
-      "complexity": 1338,
-      "lines": 11625,
-      "bytes": 465631
-     },
-     {
-      "path": "desktop/src-tauri/src/stack.rs",
-      "complexity": 1294,
-      "lines": 9589,
-      "bytes": 390866
-     },
-     {
-      "path": "extension/tests/recording.test.ts",
-      "complexity": 858,
-      "lines": 4745,
-      "bytes": 167208
-     },
-     {
-      "path": "extension/src/background/recording.ts",
-      "complexity": 849,
-      "lines": 3232,
-      "bytes": 129713
-     },
-     {
-      "path": "server/tests/composio-adapter.test.ts",
-      "complexity": 644,
-      "lines": 8976,
-      "bytes": 367395
-     },
-     {
-      "path": "server/tests/plugin-store.integration.test.ts",
-      "complexity": 616,
-      "lines": 8238,
-      "bytes": 334122
-     },
-     {
-      "path": "desktop/src/App.test.tsx",
-      "complexity": 510,
-      "lines": 3331,
-      "bytes": 113007
-     },
-     {
-      "path": "shared/recorder-masking.ts",
-      "complexity": 493,
-      "lines": 1540,
-      "bytes": 65642
-     },
-     {
-      "path": "extension/tests/streamer.test.ts",
-      "complexity": 449,
-      "lines": 1696,
-      "bytes": 60542
-     },
-     {
-      "path": "server/tests/browser-routes.integration.test.ts",
-      "complexity": 378,
-      "lines": 2968,
-      "bytes": 110733
-     }
-    ]
-   },
-   "deadCode": {
-    "percentage": 0.73,
-    "findings": 102,
-    "files": 2041,
-    "byCategory": [
-     {
-      "category": "unused-file",
-      "count": 12
-     },
-     {
-      "category": "unused-export",
-      "count": 79
-     },
-     {
-      "category": "unused-symbol",
-      "count": 10
-     },
-     {
-      "category": "unused-import",
-      "count": 1
-     }
-    ],
-    "largest": [
-     {
-      "category": "unused-file",
-      "path": "extension/src/main-world/network-hook.ts",
-      "name": "",
-      "line": 1,
-      "lines": 718
-     },
-     {
-      "category": "unused-file",
-      "path": "extension/scripts/agent-traffic/record.ts",
-      "name": "",
-      "line": 1,
-      "lines": 619
-     },
-     {
-      "category": "unused-file",
-      "path": "server/scripts/test-network-guard.ts",
-      "name": "",
-      "line": 1,
-      "lines": 517
-     },
-     {
-      "category": "unused-file",
-      "path": "desktop/scripts/validate-telemetry.ts",
-      "name": "",
-      "line": 1,
-      "lines": 416
-     },
-     {
-      "category": "unused-file",
-      "path": "app/src/components/ui/questionnaire.tsx",
-      "name": "",
-      "line": 1,
-      "lines": 324
-     },
-     {
-      "category": "unused-file",
-      "path": "extension/scripts/store-package.ts",
-      "name": "",
-      "line": 1,
-      "lines": 267
-     },
-     {
-      "category": "unused-file",
-      "path": "extension/scripts/agent-traffic/runtime.ts",
-      "name": "",
-      "line": 1,
-      "lines": 120
-     },
-     {
-      "category": "unused-file",
-      "path": "app/src/components/channels/recipient-field.tsx",
-      "name": "",
-      "line": 1,
-      "lines": 106
-     },
-     {
-      "category": "unused-export",
-      "path": "server/src/passwords/store.ts",
-      "name": "createMemoryPasswordStore",
-      "line": 141,
-      "lines": 86
-     },
-     {
-      "category": "unused-file",
-      "path": "app/src/components/computer/needs-you.ts",
-      "name": "",
-      "line": 1,
-      "lines": 43
-     }
-    ]
-   }
-  },
-  {
    "name": "togg53192-cmd/jailbreaks",
    "url": "https://github.com/togg53192-cmd/jailbreaks",
    "description": "LIST OF ALL MY JAILBREAKS",
    "language": null,
-   "stars": 9408,
-   "starsToday": 1594,
+   "stars": 11418,
+   "starsToday": 2055,
    "defaultBranch": "main",
    "headSha": "17c7117635cf0f270104b1bb8b1e79ff8319a668",
-   "durationMs": 1019,
+   "durationMs": 1003,
    "total": {
     "sources": 53,
     "lines": 6451,
@@ -4960,6 +6292,1454 @@
     "files": []
    },
    "deadCode": null
+  },
+  {
+   "name": "lightpanda-io/browser",
+   "url": "https://github.com/lightpanda-io/browser",
+   "description": "Lightpanda: the headless browser designed for AI and automation",
+   "language": "Zig",
+   "stars": 38557,
+   "starsToday": 626,
+   "defaultBranch": "main",
+   "headSha": "d3f56c140af4ff953e35cb05e0e294145016d84b",
+   "durationMs": 3070,
+   "total": {
+    "sources": 1288,
+    "lines": 403104,
+    "tokens": 2952548,
+    "clones": 2071,
+    "duplicatedLines": 24178,
+    "duplicatedTokens": 146698,
+    "percentage": 6,
+    "percentageTokens": 4.97
+   },
+   "formats": [
+    {
+     "format": "zig",
+     "sources": 687,
+     "lines": 297321,
+     "clones": 1786,
+     "duplicatedLines": 20925,
+     "percentage": 7.04
+    },
+    {
+     "format": "markup",
+     "sources": 528,
+     "lines": 88401,
+     "clones": 238,
+     "duplicatedLines": 2591,
+     "percentage": 2.93
+    },
+    {
+     "format": "rust",
+     "sources": 6,
+     "lines": 4289,
+     "clones": 24,
+     "duplicatedLines": 346,
+     "percentage": 8.07
+    },
+    {
+     "format": "yaml",
+     "sources": 16,
+     "lines": 2002,
+     "clones": 20,
+     "duplicatedLines": 286,
+     "percentage": 14.29
+    },
+    {
+     "format": "javascript",
+     "sources": 27,
+     "lines": 1473,
+     "clones": 3,
+     "duplicatedLines": 30,
+     "percentage": 2.04
+    },
+    {
+     "format": "linker-script",
+     "sources": 1,
+     "lines": 6836,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "markdown",
+     "sources": 6,
+     "lines": 816,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "json",
+     "sources": 1,
+     "lines": 800,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "nix",
+     "sources": 2,
+     "lines": 321,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 5,
+     "lines": 295,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "zig",
+     "lines": 18,
+     "tokens": 145,
+     "copies": 22,
+     "first": {
+      "name": "src/server/cdp/domains/input.zig",
+      "start": 443,
+      "end": 460
+     },
+     "others": [
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 484,
+       "end": 501
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 522,
+       "end": 539
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 581,
+       "end": 598
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 635,
+       "end": 652
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 673,
+       "end": 690
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 757,
+       "end": 774
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 816,
+       "end": 833
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 882,
+       "end": 899
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "var ctx = try testing.context();",
+       "defer ctx.deinit();",
+       "",
+       "const bc = try ctx.loadBrowserContext(.{});",
+       "const page = try bc.session.createPage();",
+       "const frame = page.frame().?;",
+       "",
+       "const url = \"http://localhost:9582/src/browser/tests/mcp_actions.html\";",
+       "try frame.navigate(url, .{ .reason = .address_bar, .kind = .{ .push = null } });",
+       "try testing.waitForPage(bc);"
+      ],
+      "total": 18
+     }
+    },
+    {
+     "format": "zig",
+     "lines": 12,
+     "tokens": 89,
+     "copies": 20,
+     "first": {
+      "name": "src/server/cdp/domains/input.zig",
+      "start": 1434,
+      "end": 1445
+     },
+     "others": [
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 1538,
+       "end": 1550
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 1734,
+       "end": 1744
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 1809,
+       "end": 1821
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 1860,
+       "end": 1872
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 1914,
+       "end": 1926
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 2284,
+       "end": 2296
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 2355,
+       "end": 2367
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 2554,
+       "end": 2566
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "test \"cdp.input: dispatchTouchEvent reports the client's radius, angle and force\" {",
+       "    var ctx = try testing.context();",
+       "    defer ctx.deinit();",
+       "",
+       "    const bc = try ctx.loadBrowserContext(.{ .url = \"mcp_actions.html\" });",
+       "    const frame = bc.mainFrame().?;",
+       "",
+       "    var ls: lp.js.Local.Scope = undefined;",
+       "    frame.js.localScope(&ls);",
+       "    defer ls.deinit();"
+      ],
+      "total": 12
+     }
+    },
+    {
+     "format": "zig",
+     "lines": 7,
+     "tokens": 54,
+     "copies": 26,
+     "first": {
+      "name": "src/server/cdp/domains/input.zig",
+      "start": 302,
+      "end": 308
+     },
+     "others": [
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 398,
+       "end": 404
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 442,
+       "end": 448
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 483,
+       "end": 489
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 521,
+       "end": 527
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 580,
+       "end": 586
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 634,
+       "end": 640
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 672,
+       "end": 678
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 756,
+       "end": 762
+      }
+     ],
+     "excerpt": {
+      "lines": [
+       "test \"cdp.input: insertText is a user edit for tooLong\" {",
+       "    var ctx = try testing.context();",
+       "    defer ctx.deinit();",
+       "",
+       "    const bc = try ctx.loadBrowserContext(.{});",
+       "    const page = try bc.session.createPage();",
+       "    const frame = page.frame().?;"
+      ],
+      "total": 7
+     }
+    },
+    {
+     "format": "zig",
+     "lines": 8,
+     "tokens": 52,
+     "copies": 25,
+     "first": {
+      "name": "src/server/cdp/domains/input.zig",
+      "start": 399,
+      "end": 406
+     },
+     "others": [
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 443,
+       "end": 450
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 484,
+       "end": 491
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 522,
+       "end": 529
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 581,
+       "end": 588
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 635,
+       "end": 642
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 673,
+       "end": 680
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 757,
+       "end": 764
+      },
+      {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 816,
+       "end": 823
+      }
+     ]
+    },
+    {
+     "format": "zig",
+     "lines": 26,
+     "tokens": 72,
+     "copies": 17,
+     "first": {
+      "name": "src/browser/webapi/element/html/Output.zig",
+      "start": 1,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "src/browser/webapi/element/svg/A.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/element/svg/Circle.zig",
+       "start": 1,
+       "end": 27
+      },
+      {
+       "name": "src/browser/webapi/element/svg/ClipPath.zig",
+       "start": 1,
+       "end": 27
+      },
+      {
+       "name": "src/browser/webapi/element/svg/Ellipse.zig",
+       "start": 1,
+       "end": 27
+      },
+      {
+       "name": "src/browser/webapi/element/svg/Image.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/element/svg/Line.zig",
+       "start": 1,
+       "end": 27
+      },
+      {
+       "name": "src/browser/webapi/element/svg/LinearGradient.zig",
+       "start": 1,
+       "end": 27
+      },
+      {
+       "name": "src/browser/webapi/element/svg/Marker.zig",
+       "start": 1,
+       "end": 27
+      }
+     ]
+    },
+    {
+     "format": "zig",
+     "lines": 23,
+     "tokens": 67,
+     "copies": 14,
+     "first": {
+      "name": "src/browser/webapi/element/html/Legend.zig",
+      "start": 5,
+      "end": 27
+     },
+     "others": [
+      {
+       "name": "src/browser/webapi/element/html/Map.zig",
+       "start": 5,
+       "end": 28
+      },
+      {
+       "name": "src/browser/webapi/element/html/Marquee.zig",
+       "start": 5,
+       "end": 28
+      },
+      {
+       "name": "src/browser/webapi/element/html/Mod.zig",
+       "start": 5,
+       "end": 27
+      },
+      {
+       "name": "src/browser/webapi/element/html/Object.zig",
+       "start": 5,
+       "end": 28
+      },
+      {
+       "name": "src/browser/webapi/element/html/OptGroup.zig",
+       "start": 5,
+       "end": 28
+      },
+      {
+       "name": "src/browser/webapi/element/html/Param.zig",
+       "start": 5,
+       "end": 28
+      },
+      {
+       "name": "src/browser/webapi/element/html/Pre.zig",
+       "start": 5,
+       "end": 28
+      },
+      {
+       "name": "src/browser/webapi/element/html/Span.zig",
+       "start": 5,
+       "end": 28
+      }
+     ]
+    },
+    {
+     "format": "zig",
+     "lines": 26,
+     "tokens": 60,
+     "copies": 15,
+     "first": {
+      "name": "src/browser/webapi/event/AnimationPlaybackEvent.zig",
+      "start": 1,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "src/browser/webapi/event/BeforeUnloadEvent.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/event/DeviceMotionEvent.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/event/DeviceOrientationEvent.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/event/FocusEvent.zig",
+       "start": 1,
+       "end": 25
+      },
+      {
+       "name": "src/browser/webapi/event/GamepadEvent.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/event/HashChangeEvent.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/event/MediaQueryListEvent.zig",
+       "start": 1,
+       "end": 26
+      },
+      {
+       "name": "src/browser/webapi/event/PageTransitionEvent.zig",
+       "start": 1,
+       "end": 26
+      }
+     ]
+    },
+    {
+     "format": "zig",
+     "lines": 24,
+     "tokens": 54,
+     "copies": 15,
+     "first": {
+      "name": "src/browser/webapi/element/Html.zig",
+      "start": 1,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "src/browser/webapi/event/MouseEvent.zig",
+       "start": 1,
+       "end": 25
+      },
+      {
+       "name": "src/browser/webapi/event/PointerEvent.zig",
+       "start": 1,
+       "end": 25
+      },
+      {
+       "name": "src/browser/webapi/svg/Angle.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/svg/AnimatedEnumeration.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/svg/AnimatedLength.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/svg/AnimatedNumber.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/svg/AnimatedString.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/svg/AnimatedTransformList.zig",
+       "start": 1,
+       "end": 24
+      }
+     ]
+    },
+    {
+     "format": "zig",
+     "lines": 24,
+     "tokens": 53,
+     "copies": 15,
+     "first": {
+      "name": "src/browser/webapi/element/html/FrameSet.zig",
+      "start": 1,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "src/browser/webapi/element/html/Legend.zig",
+       "start": 1,
+       "end": 23
+      },
+      {
+       "name": "src/browser/webapi/element/html/Map.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/element/html/Marquee.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/element/html/Mod.zig",
+       "start": 1,
+       "end": 23
+      },
+      {
+       "name": "src/browser/webapi/element/html/Object.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/element/html/OptGroup.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/element/html/Param.zig",
+       "start": 1,
+       "end": 24
+      },
+      {
+       "name": "src/browser/webapi/element/html/Pre.zig",
+       "start": 1,
+       "end": 24
+      }
+     ]
+    },
+    {
+     "format": "markup",
+     "lines": 12,
+     "tokens": 56,
+     "copies": 14,
+     "first": {
+      "name": "src/browser/tests/crypto.html",
+      "start": 136,
+      "end": 147
+     },
+     "others": [
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 185,
+       "end": 196
+      },
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 665,
+       "end": 676
+      },
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 762,
+       "end": 773
+      },
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 839,
+       "end": 850
+      },
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 977,
+       "end": 988
+      },
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 1103,
+       "end": 1114
+      },
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 1421,
+       "end": 1432
+      },
+      {
+       "name": "src/browser/tests/crypto.html",
+       "start": 1581,
+       "end": 1592
+      }
+     ]
+    }
+   ],
+   "code": {
+    "sources": 700,
+    "lines": 302095,
+    "tokens": 2193419,
+    "clones": 1810,
+    "duplicatedLines": 21271,
+    "duplicatedTokens": 127993,
+    "percentage": 7.04,
+    "percentageTokens": 5.84,
+    "formats": [
+     {
+      "format": "zig",
+      "sources": 687,
+      "lines": 297321,
+      "clones": 1786,
+      "duplicatedLines": 20925,
+      "percentage": 7.04
+     },
+     {
+      "format": "rust",
+      "sources": 6,
+      "lines": 4289,
+      "clones": 24,
+      "duplicatedLines": 346,
+      "percentage": 8.07
+     },
+     {
+      "format": "bash",
+      "sources": 3,
+      "lines": 274,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "python",
+      "sources": 3,
+      "lines": 163,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     },
+     {
+      "format": "go",
+      "sources": 1,
+      "lines": 48,
+      "clones": 0,
+      "duplicatedLines": 0,
+      "percentage": 0
+     }
+    ],
+    "topClones": [
+     {
+      "format": "zig",
+      "lines": 18,
+      "tokens": 145,
+      "copies": 22,
+      "first": {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 443,
+       "end": 460
+      },
+      "others": [
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 484,
+        "end": 501
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 522,
+        "end": 539
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 581,
+        "end": 598
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 635,
+        "end": 652
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 673,
+        "end": 690
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 757,
+        "end": 774
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 816,
+        "end": 833
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 882,
+        "end": 899
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "var ctx = try testing.context();",
+        "defer ctx.deinit();",
+        "",
+        "const bc = try ctx.loadBrowserContext(.{});",
+        "const page = try bc.session.createPage();",
+        "const frame = page.frame().?;",
+        "",
+        "const url = \"http://localhost:9582/src/browser/tests/mcp_actions.html\";",
+        "try frame.navigate(url, .{ .reason = .address_bar, .kind = .{ .push = null } });",
+        "try testing.waitForPage(bc);"
+       ],
+       "total": 18
+      }
+     },
+     {
+      "format": "zig",
+      "lines": 12,
+      "tokens": 89,
+      "copies": 20,
+      "first": {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 1434,
+       "end": 1445
+      },
+      "others": [
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 1538,
+        "end": 1550
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 1734,
+        "end": 1744
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 1809,
+        "end": 1821
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 1860,
+        "end": 1872
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 1914,
+        "end": 1926
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 2284,
+        "end": 2296
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 2355,
+        "end": 2367
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 2554,
+        "end": 2566
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "test \"cdp.input: dispatchTouchEvent reports the client's radius, angle and force\" {",
+        "    var ctx = try testing.context();",
+        "    defer ctx.deinit();",
+        "",
+        "    const bc = try ctx.loadBrowserContext(.{ .url = \"mcp_actions.html\" });",
+        "    const frame = bc.mainFrame().?;",
+        "",
+        "    var ls: lp.js.Local.Scope = undefined;",
+        "    frame.js.localScope(&ls);",
+        "    defer ls.deinit();"
+       ],
+       "total": 12
+      }
+     },
+     {
+      "format": "zig",
+      "lines": 7,
+      "tokens": 54,
+      "copies": 26,
+      "first": {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 302,
+       "end": 308
+      },
+      "others": [
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 398,
+        "end": 404
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 442,
+        "end": 448
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 483,
+        "end": 489
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 521,
+        "end": 527
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 580,
+        "end": 586
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 634,
+        "end": 640
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 672,
+        "end": 678
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 756,
+        "end": 762
+       }
+      ],
+      "excerpt": {
+       "lines": [
+        "test \"cdp.input: insertText is a user edit for tooLong\" {",
+        "    var ctx = try testing.context();",
+        "    defer ctx.deinit();",
+        "",
+        "    const bc = try ctx.loadBrowserContext(.{});",
+        "    const page = try bc.session.createPage();",
+        "    const frame = page.frame().?;"
+       ],
+       "total": 7
+      }
+     },
+     {
+      "format": "zig",
+      "lines": 8,
+      "tokens": 52,
+      "copies": 25,
+      "first": {
+       "name": "src/server/cdp/domains/input.zig",
+       "start": 399,
+       "end": 406
+      },
+      "others": [
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 443,
+        "end": 450
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 484,
+        "end": 491
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 522,
+        "end": 529
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 581,
+        "end": 588
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 635,
+        "end": 642
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 673,
+        "end": 680
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 757,
+        "end": 764
+       },
+       {
+        "name": "src/server/cdp/domains/input.zig",
+        "start": 816,
+        "end": 823
+       }
+      ]
+     },
+     {
+      "format": "zig",
+      "lines": 26,
+      "tokens": 72,
+      "copies": 17,
+      "first": {
+       "name": "src/browser/webapi/element/html/Output.zig",
+       "start": 1,
+       "end": 26
+      },
+      "others": [
+       {
+        "name": "src/browser/webapi/element/svg/A.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/element/svg/Circle.zig",
+        "start": 1,
+        "end": 27
+       },
+       {
+        "name": "src/browser/webapi/element/svg/ClipPath.zig",
+        "start": 1,
+        "end": 27
+       },
+       {
+        "name": "src/browser/webapi/element/svg/Ellipse.zig",
+        "start": 1,
+        "end": 27
+       },
+       {
+        "name": "src/browser/webapi/element/svg/Image.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/element/svg/Line.zig",
+        "start": 1,
+        "end": 27
+       },
+       {
+        "name": "src/browser/webapi/element/svg/LinearGradient.zig",
+        "start": 1,
+        "end": 27
+       },
+       {
+        "name": "src/browser/webapi/element/svg/Marker.zig",
+        "start": 1,
+        "end": 27
+       }
+      ]
+     },
+     {
+      "format": "zig",
+      "lines": 23,
+      "tokens": 67,
+      "copies": 14,
+      "first": {
+       "name": "src/browser/webapi/element/html/Legend.zig",
+       "start": 5,
+       "end": 27
+      },
+      "others": [
+       {
+        "name": "src/browser/webapi/element/html/Map.zig",
+        "start": 5,
+        "end": 28
+       },
+       {
+        "name": "src/browser/webapi/element/html/Marquee.zig",
+        "start": 5,
+        "end": 28
+       },
+       {
+        "name": "src/browser/webapi/element/html/Mod.zig",
+        "start": 5,
+        "end": 27
+       },
+       {
+        "name": "src/browser/webapi/element/html/Object.zig",
+        "start": 5,
+        "end": 28
+       },
+       {
+        "name": "src/browser/webapi/element/html/OptGroup.zig",
+        "start": 5,
+        "end": 28
+       },
+       {
+        "name": "src/browser/webapi/element/html/Param.zig",
+        "start": 5,
+        "end": 28
+       },
+       {
+        "name": "src/browser/webapi/element/html/Pre.zig",
+        "start": 5,
+        "end": 28
+       },
+       {
+        "name": "src/browser/webapi/element/html/Span.zig",
+        "start": 5,
+        "end": 28
+       }
+      ]
+     },
+     {
+      "format": "zig",
+      "lines": 26,
+      "tokens": 60,
+      "copies": 15,
+      "first": {
+       "name": "src/browser/webapi/event/AnimationPlaybackEvent.zig",
+       "start": 1,
+       "end": 26
+      },
+      "others": [
+       {
+        "name": "src/browser/webapi/event/BeforeUnloadEvent.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/event/DeviceMotionEvent.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/event/DeviceOrientationEvent.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/event/FocusEvent.zig",
+        "start": 1,
+        "end": 25
+       },
+       {
+        "name": "src/browser/webapi/event/GamepadEvent.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/event/HashChangeEvent.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/event/MediaQueryListEvent.zig",
+        "start": 1,
+        "end": 26
+       },
+       {
+        "name": "src/browser/webapi/event/PageTransitionEvent.zig",
+        "start": 1,
+        "end": 26
+       }
+      ]
+     },
+     {
+      "format": "zig",
+      "lines": 24,
+      "tokens": 54,
+      "copies": 15,
+      "first": {
+       "name": "src/browser/webapi/element/Html.zig",
+       "start": 1,
+       "end": 24
+      },
+      "others": [
+       {
+        "name": "src/browser/webapi/event/MouseEvent.zig",
+        "start": 1,
+        "end": 25
+       },
+       {
+        "name": "src/browser/webapi/event/PointerEvent.zig",
+        "start": 1,
+        "end": 25
+       },
+       {
+        "name": "src/browser/webapi/svg/Angle.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/svg/AnimatedEnumeration.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/svg/AnimatedLength.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/svg/AnimatedNumber.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/svg/AnimatedString.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/svg/AnimatedTransformList.zig",
+        "start": 1,
+        "end": 24
+       }
+      ]
+     },
+     {
+      "format": "zig",
+      "lines": 24,
+      "tokens": 53,
+      "copies": 15,
+      "first": {
+       "name": "src/browser/webapi/element/html/FrameSet.zig",
+       "start": 1,
+       "end": 24
+      },
+      "others": [
+       {
+        "name": "src/browser/webapi/element/html/Legend.zig",
+        "start": 1,
+        "end": 23
+       },
+       {
+        "name": "src/browser/webapi/element/html/Map.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/element/html/Marquee.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/element/html/Mod.zig",
+        "start": 1,
+        "end": 23
+       },
+       {
+        "name": "src/browser/webapi/element/html/Object.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/element/html/OptGroup.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/element/html/Param.zig",
+        "start": 1,
+        "end": 24
+       },
+       {
+        "name": "src/browser/webapi/element/html/Pre.zig",
+        "start": 1,
+        "end": 24
+       }
+      ]
+     },
+     {
+      "format": "zig",
+      "lines": 8,
+      "tokens": 83,
+      "copies": 9,
+      "first": {
+       "name": "src/mcp/tools.zig",
+       "start": 1353,
+       "end": 1360
+      },
+      "others": [
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 1370,
+        "end": 1377
+       },
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 1397,
+        "end": 1404
+       },
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 1416,
+        "end": 1423
+       },
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 1431,
+        "end": 1438
+       },
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 1443,
+        "end": 1450
+       },
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 1487,
+        "end": 1494
+       },
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 1516,
+        "end": 1523
+       },
+       {
+        "name": "src/mcp/tools.zig",
+        "start": 2366,
+        "end": 2373
+       }
+      ]
+     }
+    ],
+    "generated": {
+     "files": 0,
+     "minified": 0,
+     "sample": []
+    }
+   },
+   "health": {
+    "score": 48.8,
+    "grade": "D",
+    "size": {
+     "lines": 310955,
+     "files": 731,
+     "class": "L"
+    },
+    "dimensions": [
+     {
+      "id": "duplication",
+      "source": "jscpd",
+      "value": 6.9,
+      "adjusted": 6.8,
+      "lines": 21301,
+      "halfLife": 8.5,
+      "formats": [
+       "zig",
+       "linker-script",
+       "rust",
+       "javascript",
+       "nix",
+       "bash",
+       "python",
+       "makefile",
+       "docker",
+       "go"
+      ],
+      "excluded": [
+       "markup",
+       "text",
+       "data"
+      ],
+      "weight": 1,
+      "score": 57.3
+     },
+     {
+      "id": "complexity",
+      "source": "jscpd",
+      "value": 63.5,
+      "adjusted": 63.2,
+      "lines": 197376,
+      "halfLife": 50,
+      "weight": 1,
+      "score": 41.6
+     }
+    ],
+    "skipped": [
+     {
+      "id": "dead-code",
+      "reason": "the languages dead code reads are under 5% of the code"
+     }
+    ]
+   },
+   "complexity": {
+    "total": 31314,
+    "mean": 42.8,
+    "files": [
+     {
+      "path": "src/network/HttpClient.zig",
+      "complexity": 686,
+      "lines": 6794,
+      "bytes": 268512
+     },
+     {
+      "path": "src/browser/frame/user_input.zig",
+      "complexity": 571,
+      "lines": 3389,
+      "bytes": 146234
+     },
+     {
+      "path": "src/browser/Frame.zig",
+      "complexity": 569,
+      "lines": 4662,
+      "bytes": 189076
+     },
+     {
+      "path": "src/browser/StyleManager.zig",
+      "complexity": 552,
+      "lines": 3798,
+      "bytes": 156922
+     },
+     {
+      "path": "src/agent/Agent.zig",
+      "complexity": 445,
+      "lines": 2490,
+      "bytes": 113310
+     },
+     {
+      "path": "src/browser/tools.zig",
+      "complexity": 400,
+      "lines": 2886,
+      "bytes": 133697
+     },
+     {
+      "path": "src/browser/webapi/element/html/Input.zig",
+      "complexity": 399,
+      "lines": 1911,
+      "bytes": 76068
+     },
+     {
+      "path": "src/browser/webapi/Element.zig",
+      "complexity": 352,
+      "lines": 3056,
+      "bytes": 112015
+     },
+     {
+      "path": "src/browser/webapi/URLPattern.zig",
+      "complexity": 344,
+      "lines": 1947,
+      "bytes": 69263
+     },
+     {
+      "path": "src/browser/webapi/Document.zig",
+      "complexity": 320,
+      "lines": 2276,
+      "bytes": 94225
+     }
+    ]
+   },
+   "deadCode": {
+    "percentage": 0.05,
+    "findings": 1,
+    "files": 113,
+    "byCategory": [
+     {
+      "category": "unused-import",
+      "count": 1
+     }
+    ],
+    "largest": [
+     {
+      "category": "unused-import",
+      "path": "orderfile/tools/pagemap.py",
+      "name": "os",
+      "line": 3,
+      "lines": 1
+     }
+    ]
+   }
   }
  ]
 }
