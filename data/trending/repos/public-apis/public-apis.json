@@ -1,0 +1,262 @@
+{
+ "name": "public-apis/public-apis",
+ "url": "https://github.com/public-apis/public-apis",
+ "appearances": [
+  {
+   "date": "2026-11-02",
+   "rank": 3,
+   "stars": 494894,
+   "starsToday": 324,
+   "headSha": "2676ca49d557ef14a0f478311506dae947639028",
+   "sources": 13,
+   "lines": 4383,
+   "clones": 2,
+   "duplicatedLines": 28,
+   "percentage": 0.64,
+   "codePercentage": null,
+   "codeSources": 3,
+   "healthScore": 83.7,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T05:22:05.631Z",
+  "name": "public-apis/public-apis",
+  "url": "https://github.com/public-apis/public-apis",
+  "description": "A collective list of free APIs",
+  "language": "Python",
+  "stars": 494894,
+  "starsToday": 324,
+  "defaultBranch": "master",
+  "headSha": "2676ca49d557ef14a0f478311506dae947639028",
+  "durationMs": 1447,
+  "total": {
+   "sources": 13,
+   "lines": 4383,
+   "tokens": 102359,
+   "clones": 2,
+   "duplicatedLines": 28,
+   "duplicatedTokens": 131,
+   "percentage": 0.64,
+   "percentageTokens": 0.13
+  },
+  "formats": [
+   {
+    "format": "yaml",
+    "sources": 3,
+    "lines": 94,
+    "clones": 2,
+    "duplicatedLines": 28,
+    "percentage": 29.79
+   },
+   {
+    "format": "markdown",
+    "sources": 4,
+    "lines": 3024,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "python",
+    "sources": 4,
+    "lines": 1189,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 2,
+    "lines": 76,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "yaml",
+    "lines": 14,
+    "tokens": 65,
+    "first": {
+     "name": ".github/workflows/test_of_push_and_pull.yml",
+     "start": 15,
+     "end": 28
+    },
+    "others": [
+     {
+      "name": ".github/workflows/test_of_validate_package.yml",
+      "start": 12,
+      "end": 26
+     },
+     {
+      "name": ".github/workflows/validate_links.yml",
+      "start": 14,
+      "end": 27
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "runs-on: ubuntu-latest",
+      "steps:",
+      "  - name: Checkout repository",
+      "    uses: actions/checkout@v2",
+      "",
+      "  - name: Set up Python",
+      "    uses: actions/setup-python@v2",
+      "    with:",
+      "      python-version: '3.8'",
+      ""
+     ],
+     "total": 14
+    },
+    "excerptSecond": {
+     "lines": [
+      "runs-on: ubuntu-latest",
+      "",
+      "steps:",
+      "- name: Checkout repository",
+      "  uses: actions/checkout@v2",
+      "",
+      "- name: Set up Python",
+      "  uses: actions/setup-python@v2",
+      "  with:",
+      "    python-version: '3.8'"
+     ],
+     "total": 15
+    },
+    "kind": "data"
+   }
+  ],
+  "code": {
+   "sources": 3,
+   "lines": 608,
+   "tokens": 2638,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 551,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 57,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 83.7,
+   "grade": "B",
+   "size": {
+    "lines": 1246,
+    "files": 5,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2.2,
+     "lines": 0,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 83.9
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 1.9,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 95.8,
+     "weight": 0.958,
+     "score": 83.6
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 12.9,
+     "lines": 0,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 83.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 120,
+   "mean": 24,
+   "files": [
+    {
+     "path": "scripts/validate/format.py",
+     "complexity": 48,
+     "lines": 277,
+     "bytes": 8464
+    },
+    {
+     "path": "scripts/validate/links.py",
+     "complexity": 45,
+     "lines": 274,
+     "bytes": 8060
+    },
+    {
+     "path": "scripts/tests/test_validate_format.py",
+     "complexity": 11,
+     "lines": 466,
+     "bytes": 18154
+    },
+    {
+     "path": "scripts/tests/test_validate_links.py",
+     "complexity": 11,
+     "lines": 172,
+     "bytes": 5725
+    },
+    {
+     "path": "scripts/github_pull_request.sh",
+     "complexity": 5,
+     "lines": 57,
+     "bytes": 1352
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 6,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

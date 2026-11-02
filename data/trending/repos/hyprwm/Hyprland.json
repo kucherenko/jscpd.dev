@@ -1,0 +1,971 @@
+{
+ "name": "hyprwm/Hyprland",
+ "url": "https://github.com/hyprwm/Hyprland",
+ "appearances": [
+  {
+   "date": "2026-11-02",
+   "rank": 9,
+   "stars": 39482,
+   "starsToday": 38,
+   "headSha": "d55a55d72a2ecfbb31b875b0b45c27559ce86691",
+   "sources": 1253,
+   "lines": 208434,
+   "clones": 964,
+   "duplicatedLines": 13957,
+   "percentage": 6.7,
+   "codePercentage": 4.05,
+   "codeSources": 971,
+   "healthScore": 53.5,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T05:22:05.631Z",
+  "name": "hyprwm/Hyprland",
+  "url": "https://github.com/hyprwm/Hyprland",
+  "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+  "language": "C++",
+  "stars": 39482,
+  "starsToday": 38,
+  "defaultBranch": "main",
+  "headSha": "d55a55d72a2ecfbb31b875b0b45c27559ce86691",
+  "durationMs": 2125,
+  "total": {
+   "sources": 1253,
+   "lines": 208434,
+   "tokens": 1478488,
+   "clones": 964,
+   "duplicatedLines": 13957,
+   "duplicatedTokens": 95693,
+   "percentage": 6.7,
+   "percentageTokens": 6.47
+  },
+  "formats": [
+   {
+    "format": "cpp",
+    "sources": 611,
+    "lines": 162164,
+    "clones": 816,
+    "duplicatedLines": 11364,
+    "percentage": 7.01
+   },
+   {
+    "format": "cpp-header",
+    "sources": 495,
+    "lines": 30766,
+    "clones": 73,
+    "duplicatedLines": 769,
+    "percentage": 2.5
+   },
+   {
+    "format": "markup",
+    "sources": 16,
+    "lines": 3977,
+    "clones": 30,
+    "duplicatedLines": 443,
+    "percentage": 11.14
+   },
+   {
+    "format": "yaml",
+    "sources": 35,
+    "lines": 2019,
+    "clones": 20,
+    "duplicatedLines": 1088,
+    "percentage": 53.89
+   },
+   {
+    "format": "glsl",
+    "sources": 50,
+    "lines": 3899,
+    "clones": 15,
+    "duplicatedLines": 182,
+    "percentage": 4.67
+   },
+   {
+    "format": "lua",
+    "sources": 6,
+    "lines": 933,
+    "clones": 6,
+    "duplicatedLines": 59,
+    "percentage": 6.32
+   },
+   {
+    "format": "cmake",
+    "sources": 5,
+    "lines": 1016,
+    "clones": 1,
+    "duplicatedLines": 9,
+    "percentage": 0.89
+   },
+   {
+    "format": "bash",
+    "sources": 7,
+    "lines": 482,
+    "clones": 1,
+    "duplicatedLines": 22,
+    "percentage": 4.56
+   },
+   {
+    "format": "rest",
+    "sources": 2,
+    "lines": 202,
+    "clones": 1,
+    "duplicatedLines": 15,
+    "percentage": 7.43
+   },
+   {
+    "format": "makefile",
+    "sources": 2,
+    "lines": 155,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 3.87
+   }
+  ],
+  "topClones": [
+   {
+    "format": "yaml",
+    "lines": 65,
+    "tokens": 404,
+    "first": {
+     "name": ".github/DISCUSSION_TEMPLATE/bugs-cmake-meson-nix.yml",
+     "start": 1,
+     "end": 65
+    },
+    "others": [
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-config.yml",
+      "start": 1,
+      "end": 65
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-crashes.yml",
+      "start": 1,
+      "end": 65
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-drm.yml",
+      "start": 1,
+      "end": 65
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-input.yml",
+      "start": 1,
+      "end": 65
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-ipc-plugins.yml",
+      "start": 1,
+      "end": 65
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-layout.yml",
+      "start": 1,
+      "end": 65
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-other.yml",
+      "start": 1,
+      "end": 65
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/bugs-performance.yml",
+      "start": 1,
+      "end": 65
+     }
+    ],
+    "copies": 13,
+    "excerpt": {
+     "lines": [
+      "body:",
+      "  - type: markdown",
+      "    attributes:",
+      "      value: |",
+      "        > [!IMPORTANT]",
+      "        > Please do **not** use AI to report bugs. Fill this report with your own words. We don't care about your poor grammar.",
+      "        > It's much more clear to us if you don't use AI and instead write a clear, concise report yourself.",
+      "  - type: input",
+      "    attributes:",
+      "      label: Hyprland version"
+     ],
+     "total": 65
+    },
+    "kind": "data"
+   },
+   {
+    "format": "cpp",
+    "lines": 90,
+    "tokens": 665,
+    "first": {
+     "name": "hyprtester/clients/keyboard-modifiers.cpp",
+     "start": 106,
+     "end": 195
+    },
+    "others": [
+     {
+      "name": "hyprtester/clients/pointer-scroll.cpp",
+      "start": 118,
+      "end": 207
+     },
+     {
+      "name": "hyprtester/clients/pointer-warp.cpp",
+      "start": 110,
+      "end": 199
+     },
+     {
+      "name": "hyprtester/clients/shortcut-inhibitor.cpp",
+      "start": 113,
+      "end": 202
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "const char* name = \"/wl-shm-kb-mods\";",
+      "state.shmFd      = shm_open(name, O_RDWR | O_CREAT | O_EXCL, 0600);",
+      "if (state.shmFd < 0)",
+      "    return false;",
+      "",
+      "if (shm_unlink(name) < 0 || ftruncate(state.shmFd, size) < 0) {",
+      "    close(state.shmFd);",
+      "    return false;",
+      "}",
+      ""
+     ],
+     "total": 90
+    },
+    "kind": "code"
+   },
+   {
+    "format": "yaml",
+    "lines": 48,
+    "tokens": 296,
+    "first": {
+     "name": ".github/DISCUSSION_TEMPLATE/feature-requests-config.yml",
+     "start": 1,
+     "end": 48
+    },
+    "others": [
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/feature-requests-layouts.yml",
+      "start": 1,
+      "end": 48
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/feature-requests-other.yml",
+      "start": 1,
+      "end": 48
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/feature-requests-protocols-integrations.yml",
+      "start": 1,
+      "end": 48
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/feature-requests-renderer.yml",
+      "start": 1,
+      "end": 48
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/feature-requests-window-management.yml",
+      "start": 1,
+      "end": 48
+     },
+     {
+      "name": ".github/DISCUSSION_TEMPLATE/features.yml",
+      "start": 1,
+      "end": 48
+     }
+    ],
+    "copies": 7,
+    "excerpt": {
+     "lines": [
+      "body:",
+      "  - type: markdown",
+      "    attributes:",
+      "      value: |",
+      "        > [!IMPORTANT]",
+      "        > Please do **not** use AI to make feature requests. Fill this request with your own words. We don't care about your poor grammar.",
+      "        > It's much more clear to us if you don't use AI and instead write a clear, concise request yourself.",
+      "  - type: textarea",
+      "    attributes:",
+      "      label: What's the problem?"
+     ],
+     "total": 48
+    },
+    "kind": "data"
+   },
+   {
+    "format": "cpp",
+    "lines": 166,
+    "tokens": 791,
+    "first": {
+     "name": "hyprtester/src/tests/main/dwindle.cpp",
+     "start": 692,
+     "end": 857
+    },
+    "others": [
+     {
+      "name": "hyprtester/src/tests/main/master.cpp",
+      "start": 357,
+      "end": 522
+     },
+     {
+      "name": "hyprtester/src/tests/main/monocle.cpp",
+      "start": 338,
+      "end": 503
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
+    "lines": 146,
+    "tokens": 1131,
+    "first": {
+     "name": "hyprtester/src/tests/main/dwindle.cpp",
+     "start": 869,
+     "end": 1014
+    },
+    "others": [
+     {
+      "name": "hyprtester/src/tests/main/master.cpp",
+      "start": 534,
+      "end": 679
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
+    "lines": 144,
+    "tokens": 1129,
+    "first": {
+     "name": "hyprtester/src/tests/main/dwindle.cpp",
+     "start": 869,
+     "end": 1012
+    },
+    "others": [
+     {
+      "name": "hyprtester/src/tests/main/monocle.cpp",
+      "start": 515,
+      "end": 658
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
+    "lines": 14,
+    "tokens": 307,
+    "first": {
+     "name": "hyprtester/src/tests/main/dwindle.cpp",
+     "start": 679,
+     "end": 692
+    },
+    "others": [
+     {
+      "name": "hyprtester/src/tests/main/master.cpp",
+      "start": 344,
+      "end": 357
+     },
+     {
+      "name": "hyprtester/src/tests/main/monocle.cpp",
+      "start": 325,
+      "end": 338
+     },
+     {
+      "name": "hyprtester/src/tests/main/scroll.cpp",
+      "start": 2056,
+      "end": 2069
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "cpp",
+    "lines": 72,
+    "tokens": 280,
+    "first": {
+     "name": "hyprtester/src/tests/main/dwindle.cpp",
+     "start": 270,
+     "end": 341
+    },
+    "others": [
+     {
+      "name": "hyprtester/src/tests/main/master.cpp",
+      "start": 164,
+      "end": 235
+     },
+     {
+      "name": "hyprtester/src/tests/main/monocle.cpp",
+      "start": 90,
+      "end": 161
+     },
+     {
+      "name": "hyprtester/src/tests/main/scroll.cpp",
+      "start": 1644,
+      "end": 1715
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 23,
+    "tokens": 190,
+    "first": {
+     "name": "protocols/wlr-data-control-unstable-v1.xml",
+     "start": 7,
+     "end": 29
+    },
+    "others": [
+     {
+      "name": "protocols/wlr-foreign-toplevel-management-unstable-v1.xml",
+      "start": 6,
+      "end": 28
+     },
+     {
+      "name": "protocols/wlr-gamma-control-unstable-v1.xml",
+      "start": 7,
+      "end": 29
+     },
+     {
+      "name": "protocols/wlr-layer-shell-unstable-v1.xml",
+      "start": 6,
+      "end": 28
+     },
+     {
+      "name": "protocols/wlr-output-management-unstable-v1.xml",
+      "start": 6,
+      "end": 28
+     }
+    ],
+    "copies": 5,
+    "kind": "data"
+   },
+   {
+    "format": "cpp",
+    "lines": 13,
+    "tokens": 224,
+    "first": {
+     "name": "hyprtester/src/tests/main/dwindle.cpp",
+     "start": 857,
+     "end": 869
+    },
+    "others": [
+     {
+      "name": "hyprtester/src/tests/main/master.cpp",
+      "start": 522,
+      "end": 534
+     },
+     {
+      "name": "hyprtester/src/tests/main/monocle.cpp",
+      "start": 503,
+      "end": 515
+     },
+     {
+      "name": "hyprtester/src/tests/main/scroll.cpp",
+      "start": 2234,
+      "end": 2246
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 971,
+   "lines": 151365,
+   "tokens": 1077493,
+   "clones": 504,
+   "duplicatedLines": 6128,
+   "duplicatedTokens": 45442,
+   "percentage": 4.05,
+   "percentageTokens": 4.22,
+   "formats": [
+    {
+     "format": "cpp",
+     "sources": 472,
+     "lines": 119065,
+     "clones": 432,
+     "duplicatedLines": 5352,
+     "percentage": 4.5
+    },
+    {
+     "format": "cpp-header",
+     "sources": 489,
+     "lines": 30471,
+     "clones": 71,
+     "duplicatedLines": 754,
+     "percentage": 2.47
+    },
+    {
+     "format": "bash",
+     "sources": 7,
+     "lines": 482,
+     "clones": 1,
+     "duplicatedLines": 22,
+     "percentage": 4.56
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 942,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "lua",
+     "sources": 1,
+     "lines": 342,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "c-header",
+     "sources": 1,
+     "lines": 63,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "cpp",
+     "lines": 90,
+     "tokens": 665,
+     "first": {
+      "name": "hyprtester/clients/keyboard-modifiers.cpp",
+      "start": 106,
+      "end": 195
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/pointer-scroll.cpp",
+       "start": 118,
+       "end": 207
+      },
+      {
+       "name": "hyprtester/clients/pointer-warp.cpp",
+       "start": 110,
+       "end": 199
+      },
+      {
+       "name": "hyprtester/clients/shortcut-inhibitor.cpp",
+       "start": 113,
+       "end": 202
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "const char* name = \"/wl-shm-kb-mods\";",
+       "state.shmFd      = shm_open(name, O_RDWR | O_CREAT | O_EXCL, 0600);",
+       "if (state.shmFd < 0)",
+       "    return false;",
+       "",
+       "if (shm_unlink(name) < 0 || ftruncate(state.shmFd, size) < 0) {",
+       "    close(state.shmFd);",
+       "    return false;",
+       "}",
+       ""
+      ],
+      "total": 90
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 48,
+     "tokens": 513,
+     "first": {
+      "name": "hyprtester/clients/keyboard-modifiers.cpp",
+      "start": 59,
+      "end": 106
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/pointer-scroll.cpp",
+       "start": 71,
+       "end": 118
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "static void debugLog(std::format_string<Args...> fmt, Args&&... args) {",
+       "    std::string text = std::format(fmt, std::forward<Args>(args)...);",
+       "    logfile << text << std::endl;",
+       "    if (!debug)",
+       "        return;",
+       "    std::println(\"{}\", text);",
+       "    std::fflush(stdout);",
+       "}",
+       "",
+       "static bool bindRegistry(SWlState& state) {"
+      ],
+      "total": 48
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 63,
+     "tokens": 475,
+     "first": {
+      "name": "hyprtester/clients/child-window.cpp",
+      "start": 133,
+      "end": 195
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/keyboard-modifiers.cpp",
+       "start": 132,
+       "end": 195
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    state.shmPool->sendResize(size * 2);",
+       "    state.shmBufSize = size;",
+       "}",
+       "",
+       "auto buf = makeShared<CCWlBuffer>(state.shmPool->sendCreateBuffer(0, geom.x, geom.y, stride, WL_SHM_FORMAT_XRGB8888));",
+       "if (!buf->resource())",
+       "    return false;",
+       "",
+       "if (state.shmBuf) {",
+       "    state.shmBuf->sendDestroy();"
+      ],
+      "total": 63
+     },
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 46,
+     "tokens": 454,
+     "first": {
+      "name": "hyprtester/clients/child-window.cpp",
+      "start": 62,
+      "end": 107
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/keyboard-modifiers.cpp",
+       "start": 61,
+       "end": 106
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 34,
+     "tokens": 443,
+     "first": {
+      "name": "hyprtester/clients/child-window.cpp",
+      "start": 53,
+      "end": 86
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/shortcut-inhibitor.cpp",
+       "start": 55,
+       "end": 88
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 37,
+     "tokens": 398,
+     "first": {
+      "name": "hyprtester/clients/child-window.cpp",
+      "start": 66,
+      "end": 102
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/xdg-interactive.cpp",
+       "start": 108,
+       "end": 144
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 24,
+     "tokens": 197,
+     "first": {
+      "name": "hyprtester/clients/child-window.cpp",
+      "start": 196,
+      "end": 219
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/pointer-warp.cpp",
+       "start": 200,
+       "end": 223
+      },
+      {
+       "name": "hyprtester/clients/shortcut-inhibitor.cpp",
+       "start": 203,
+       "end": 226
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 8,
+     "tokens": 54,
+     "first": {
+      "name": "src/config/lua/objects/LuaNotification.cpp",
+      "start": 144,
+      "end": 151
+     },
+     "others": [
+      {
+       "name": "src/config/lua/objects/LuaNotification.cpp",
+       "start": 228,
+       "end": 235
+      },
+      {
+       "name": "src/config/lua/objects/LuaNotification.cpp",
+       "start": 241,
+       "end": 248
+      },
+      {
+       "name": "src/config/lua/objects/LuaNotification.cpp",
+       "start": 254,
+       "end": 261
+      },
+      {
+       "name": "src/config/lua/objects/LuaNotification.cpp",
+       "start": 267,
+       "end": 274
+      },
+      {
+       "name": "src/config/lua/objects/LuaNotification.cpp",
+       "start": 280,
+       "end": 287
+      },
+      {
+       "name": "src/config/lua/objects/LuaNotification.cpp",
+       "start": 293,
+       "end": 300
+      },
+      {
+       "name": "src/config/lua/objects/LuaNotification.cpp",
+       "start": 306,
+       "end": 313
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 10,
+     "tokens": 123,
+     "first": {
+      "name": "src/helpers/cm/ColorManagement.cpp",
+      "start": 293,
+      "end": 302
+     },
+     "others": [
+      {
+       "name": "src/helpers/cm/ColorManagement.cpp",
+       "start": 309,
+       "end": 318
+      },
+      {
+       "name": "src/helpers/cm/ColorManagement.cpp",
+       "start": 353,
+       "end": 362
+      },
+      {
+       "name": "src/helpers/cm/ColorManagement.cpp",
+       "start": 369,
+       "end": 378
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 58,
+     "tokens": 366,
+     "first": {
+      "name": "hyprtester/clients/pointer-warp.cpp",
+      "start": 261,
+      "end": 318
+     },
+     "others": [
+      {
+       "name": "hyprtester/clients/shortcut-inhibitor.cpp",
+       "start": 242,
+       "end": 299
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "src/config/lua/DefaultConfig.hpp",
+     "src/render/shaders/glsl/defines.h"
+    ]
+   }
+  },
+  "health": {
+   "score": 53.5,
+   "grade": "D",
+   "size": {
+    "lines": 201709,
+    "files": 1188,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 6.2,
+     "adjusted": 6.1,
+     "lines": 12411,
+     "halfLife": 8.5,
+     "formats": [
+      "cpp",
+      "cpp-header",
+      "glsl",
+      "nix",
+      "cmake",
+      "python",
+      "lua",
+      "bash",
+      "makefile",
+      "c-header"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 60.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 54.7,
+     "adjusted": 54.3,
+     "lines": 110291,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 47.1
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 33405,
+   "mean": 28.1,
+   "files": [
+    {
+     "path": "src/render/Renderer.cpp",
+     "complexity": 1017,
+     "lines": 3777,
+     "bytes": 162136
+    },
+    {
+     "path": "src/output/Monitor.cpp",
+     "complexity": 687,
+     "lines": 2758,
+     "bytes": 110450
+    },
+    {
+     "path": "src/managers/input/InputManager.cpp",
+     "complexity": 674,
+     "lines": 2379,
+     "bytes": 101245
+    },
+    {
+     "path": "src/layout/algorithm/tiled/scrolling/ScrollingAlgorithm.cpp",
+     "complexity": 564,
+     "lines": 2014,
+     "bytes": 80139
+    },
+    {
+     "path": "src/desktop/view/window/Window.cpp",
+     "complexity": 556,
+     "lines": 1997,
+     "bytes": 82526
+    },
+    {
+     "path": "src/config/shared/actions/ConfigActions.cpp",
+     "complexity": 539,
+     "lines": 1846,
+     "bytes": 74783
+    },
+    {
+     "path": "hyprtester/plugin/src/main.cpp",
+     "complexity": 505,
+     "lines": 1935,
+     "bytes": 85672
+    },
+    {
+     "path": "src/render/OpenGL.cpp",
+     "complexity": 502,
+     "lines": 2722,
+     "bytes": 116620
+    },
+    {
+     "path": "src/ipc/s1/Commands.cpp",
+     "complexity": 494,
+     "lines": 2163,
+     "bytes": 93960
+    },
+    {
+     "path": "src/layout/algorithm/tiled/master/MasterAlgorithm.cpp",
+     "complexity": 429,
+     "lines": 1399,
+     "bytes": 55481
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 2,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

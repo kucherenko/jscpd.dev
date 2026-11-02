@@ -1,0 +1,1099 @@
+{
+ "name": "FlashML-org/FreeToken",
+ "url": "https://github.com/FlashML-org/FreeToken",
+ "appearances": [
+  {
+   "date": "2026-11-02",
+   "rank": 8,
+   "stars": 15546,
+   "starsToday": 242,
+   "headSha": "ee43b2a11345d056ba349d22ee073c6828b1364b",
+   "sources": 749,
+   "lines": 190196,
+   "clones": 1075,
+   "duplicatedLines": 12606,
+   "percentage": 6.63,
+   "codePercentage": 7.82,
+   "codeSources": 524,
+   "healthScore": 63.7,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T05:22:05.631Z",
+  "name": "FlashML-org/FreeToken",
+  "url": "https://github.com/FlashML-org/FreeToken",
+  "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+  "language": "Python",
+  "stars": 15546,
+  "starsToday": 242,
+  "defaultBranch": "main",
+  "headSha": "ee43b2a11345d056ba349d22ee073c6828b1364b",
+  "durationMs": 2158,
+  "total": {
+   "sources": 749,
+   "lines": 190196,
+   "tokens": 1498136,
+   "clones": 1075,
+   "duplicatedLines": 12606,
+   "duplicatedTokens": 101348,
+   "percentage": 6.63,
+   "percentageTokens": 6.76
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 643,
+    "lines": 155092,
+    "clones": 697,
+    "duplicatedLines": 8320,
+    "percentage": 5.36
+   },
+   {
+    "format": "c",
+    "sources": 4,
+    "lines": 11322,
+    "clones": 298,
+    "duplicatedLines": 3311,
+    "percentage": 29.24
+   },
+   {
+    "format": "c-header",
+    "sources": 30,
+    "lines": 13580,
+    "clones": 46,
+    "duplicatedLines": 668,
+    "percentage": 4.92
+   },
+   {
+    "format": "cpp",
+    "sources": 18,
+    "lines": 4734,
+    "clones": 17,
+    "duplicatedLines": 133,
+    "percentage": 2.81
+   },
+   {
+    "format": "diff",
+    "sources": 1,
+    "lines": 1400,
+    "clones": 11,
+    "duplicatedLines": 93,
+    "percentage": 6.64
+   },
+   {
+    "format": "yaml",
+    "sources": 9,
+    "lines": 804,
+    "clones": 4,
+    "duplicatedLines": 60,
+    "percentage": 7.46
+   },
+   {
+    "format": "markup",
+    "sources": 4,
+    "lines": 47,
+    "clones": 2,
+    "duplicatedLines": 21,
+    "percentage": 44.68
+   },
+   {
+    "format": "markdown",
+    "sources": 18,
+    "lines": 1718,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 14,
+    "lines": 1138,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 2,
+    "lines": 167,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "c",
+    "lines": 9,
+    "tokens": 73,
+    "first": {
+     "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+     "start": 1830,
+     "end": 1838
+    },
+    "others": [
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 2102,
+      "end": 2110
+     },
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 2280,
+      "end": 2288
+     },
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 2490,
+      "end": 2498
+     },
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 2724,
+      "end": 2732
+     },
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 2842,
+      "end": 2850
+     },
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 3139,
+      "end": 3147
+     },
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 3324,
+      "end": 3332
+     },
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 3448,
+      "end": 3456
+     }
+    ],
+    "copies": 21,
+    "excerpt": {
+     "lines": [
+      "void ggml_vec_dot_q3_K_q8_K(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, size_t bx, const void * GGML_RESTRICT vy, size_t by, int …",
+      "    assert(n % QK_K == 0);",
+      "    assert(nrc == 1);",
+      "    UNUSED(nrc);",
+      "    UNUSED(bx);",
+      "    UNUSED(by);",
+      "    UNUSED(bs);",
+      "",
+      "    const uint32_t kmask1 = 0x03030303;"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "void ggml_vec_dot_q4_K_q8_K(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, size_t bx, const void * GGML_RESTRICT vy, size_t by, int …",
+      "    assert(n % QK_K == 0);",
+      "    assert(nrc == 1);",
+      "    UNUSED(nrc);",
+      "    UNUSED(bx);",
+      "    UNUSED(by);",
+      "    UNUSED(bs);",
+      "",
+      "    const block_q4_K * GGML_RESTRICT x = vx;"
+     ],
+     "total": 9
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 69,
+    "tokens": 497,
+    "first": {
+     "name": "python/freetoken/models/llama/attention.py",
+     "start": 17,
+     "end": 85
+    },
+    "others": [
+     {
+      "name": "python/freetoken/models/mistral/attention.py",
+      "start": 17,
+      "end": 85
+     },
+     {
+      "name": "python/freetoken/models/qwen2/attention.py",
+      "start": 17,
+      "end": 85
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "class LlamaAttention(BaseOP):",
+      "    def __init__(",
+      "        self,",
+      "        config: ModelConfig,",
+      "        layer_id: int,",
+      "        *,",
+      "        has_attn_bias: bool = False,",
+      "        has_qk_norm: bool = False,",
+      "        prefix: str = \"\",",
+      "    ):"
+     ],
+     "total": 69
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 59,
+    "tokens": 323,
+    "first": {
+     "name": "python/freetoken/models/llama/weight.py",
+     "start": 1,
+     "end": 59
+    },
+    "others": [
+     {
+      "name": "python/freetoken/models/mistral/weight.py",
+      "start": 1,
+      "end": 59
+     },
+     {
+      "name": "python/freetoken/models/qwen2/weight.py",
+      "start": 1,
+      "end": 59
+     },
+     {
+      "name": "python/freetoken/models/qwen3/weight.py",
+      "start": 1,
+      "end": 59
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "from __future__ import annotations",
+      "",
+      "from typing import Iterator",
+      "",
+      "import safetensors",
+      "import torch",
+      "from freetoken.distributed import get_tp_info",
+      "from freetoken.models.loader import MergeRule, iter_merged_tensors, iter_weight_files, shard_tensor",
+      "from freetoken.utils import cached_load_hf_config",
+      "from tqdm import tqdm"
+     ],
+     "total": 59
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 69,
+    "tokens": 758,
+    "first": {
+     "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+     "start": 3547,
+     "end": 3615
+    },
+    "others": [
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+      "start": 5177,
+      "end": 5245
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 43,
+    "tokens": 230,
+    "first": {
+     "name": "python/freetoken/models/llama/config.py",
+     "start": 1,
+     "end": 43
+    },
+    "others": [
+     {
+      "name": "python/freetoken/models/mistral/config.py",
+      "start": 1,
+      "end": 43
+     },
+     {
+      "name": "python/freetoken/models/qwen2/config.py",
+      "start": 1,
+      "end": 43
+     },
+     {
+      "name": "python/freetoken/models/qwen3/config.py",
+      "start": 1,
+      "end": 43
+     }
+    ],
+    "copies": 4,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 38,
+    "tokens": 578,
+    "first": {
+     "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/quants.c",
+     "start": 734,
+     "end": 771
+    },
+    "others": [
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/quants.c",
+      "start": 813,
+      "end": 851
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 71,
+    "tokens": 555,
+    "first": {
+     "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/simd-mappings.h",
+     "start": 269,
+     "end": 339
+    },
+    "others": [
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/simd-mappings.h",
+      "start": 384,
+      "end": 454
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 52,
+    "first": {
+     "name": "python/freetoken/models/gemma4/model.py",
+     "start": 84,
+     "end": 92
+    },
+    "others": [
+     {
+      "name": "python/freetoken/models/glm4_moe/model.py",
+      "start": 75,
+      "end": 83
+     },
+     {
+      "name": "python/freetoken/models/glm5_next/model.py",
+      "start": 164,
+      "end": 172
+     },
+     {
+      "name": "python/freetoken/models/glm_moe_dsa/model.py",
+      "start": 70,
+      "end": 78
+     },
+     {
+      "name": "python/freetoken/models/llama/model.py",
+      "start": 75,
+      "end": 83
+     },
+     {
+      "name": "python/freetoken/models/minimax_m2/model.py",
+      "start": 65,
+      "end": 73
+     },
+     {
+      "name": "python/freetoken/models/mistral/model.py",
+      "start": 73,
+      "end": 81
+     },
+     {
+      "name": "python/freetoken/models/qwen2/model.py",
+      "start": 73,
+      "end": 81
+     },
+     {
+      "name": "python/freetoken/models/qwen3/model.py",
+      "start": 75,
+      "end": 83
+     }
+    ],
+    "copies": 11,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 43,
+    "tokens": 255,
+    "first": {
+     "name": "python/freetoken/models/llama/attention.py",
+     "start": 17,
+     "end": 59
+    },
+    "others": [
+     {
+      "name": "python/freetoken/models/qwen3/attention.py",
+      "start": 17,
+      "end": 59
+     },
+     {
+      "name": "python/freetoken/models/qwen3_moe/attention.py",
+      "start": 17,
+      "end": 59
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 54,
+    "tokens": 503,
+    "first": {
+     "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+     "start": 1885,
+     "end": 1938
+    },
+    "others": [
+     {
+      "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+      "start": 1999,
+      "end": 2053
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 524,
+   "lines": 139719,
+   "tokens": 1070584,
+   "clones": 903,
+   "duplicatedLines": 10928,
+   "duplicatedTokens": 87539,
+   "percentage": 7.82,
+   "percentageTokens": 8.18,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 471,
+     "lines": 109627,
+     "clones": 542,
+     "duplicatedLines": 6816,
+     "percentage": 6.22
+    },
+    {
+     "format": "c",
+     "sources": 4,
+     "lines": 11322,
+     "clones": 298,
+     "duplicatedLines": 3311,
+     "percentage": 29.24
+    },
+    {
+     "format": "c-header",
+     "sources": 27,
+     "lines": 13078,
+     "clones": 46,
+     "duplicatedLines": 668,
+     "percentage": 5.11
+    },
+    {
+     "format": "cpp",
+     "sources": 17,
+     "lines": 4659,
+     "clones": 17,
+     "duplicatedLines": 133,
+     "percentage": 2.85
+    },
+    {
+     "format": "bash",
+     "sources": 5,
+     "lines": 1033,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c",
+     "lines": 9,
+     "tokens": 73,
+     "first": {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+      "start": 1830,
+      "end": 1838
+     },
+     "others": [
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 2102,
+       "end": 2110
+      },
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 2280,
+       "end": 2288
+      },
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 2490,
+       "end": 2498
+      },
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 2724,
+       "end": 2732
+      },
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 2842,
+       "end": 2850
+      },
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 3139,
+       "end": 3147
+      },
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 3324,
+       "end": 3332
+      },
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+       "start": 3448,
+       "end": 3456
+      }
+     ],
+     "copies": 21,
+     "excerpt": {
+      "lines": [
+       "void ggml_vec_dot_q3_K_q8_K(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, size_t bx, const void * GGML_RESTRICT vy, size_t by, int …",
+       "    assert(n % QK_K == 0);",
+       "    assert(nrc == 1);",
+       "    UNUSED(nrc);",
+       "    UNUSED(bx);",
+       "    UNUSED(by);",
+       "    UNUSED(bs);",
+       "",
+       "    const uint32_t kmask1 = 0x03030303;"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "void ggml_vec_dot_q4_K_q8_K(int n, float * GGML_RESTRICT s, size_t bs, const void * GGML_RESTRICT vx, size_t bx, const void * GGML_RESTRICT vy, size_t by, int …",
+       "    assert(n % QK_K == 0);",
+       "    assert(nrc == 1);",
+       "    UNUSED(nrc);",
+       "    UNUSED(bx);",
+       "    UNUSED(by);",
+       "    UNUSED(bs);",
+       "",
+       "    const block_q4_K * GGML_RESTRICT x = vx;"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 69,
+     "tokens": 497,
+     "first": {
+      "name": "python/freetoken/models/llama/attention.py",
+      "start": 17,
+      "end": 85
+     },
+     "others": [
+      {
+       "name": "python/freetoken/models/mistral/attention.py",
+       "start": 17,
+       "end": 85
+      },
+      {
+       "name": "python/freetoken/models/qwen2/attention.py",
+       "start": 17,
+       "end": 85
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "class LlamaAttention(BaseOP):",
+       "    def __init__(",
+       "        self,",
+       "        config: ModelConfig,",
+       "        layer_id: int,",
+       "        *,",
+       "        has_attn_bias: bool = False,",
+       "        has_qk_norm: bool = False,",
+       "        prefix: str = \"\",",
+       "    ):"
+      ],
+      "total": 69
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 59,
+     "tokens": 323,
+     "first": {
+      "name": "python/freetoken/models/llama/weight.py",
+      "start": 1,
+      "end": 59
+     },
+     "others": [
+      {
+       "name": "python/freetoken/models/mistral/weight.py",
+       "start": 1,
+       "end": 59
+      },
+      {
+       "name": "python/freetoken/models/qwen2/weight.py",
+       "start": 1,
+       "end": 59
+      },
+      {
+       "name": "python/freetoken/models/qwen3/weight.py",
+       "start": 1,
+       "end": 59
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "from __future__ import annotations",
+       "",
+       "from typing import Iterator",
+       "",
+       "import safetensors",
+       "import torch",
+       "from freetoken.distributed import get_tp_info",
+       "from freetoken.models.loader import MergeRule, iter_merged_tensors, iter_weight_files, shard_tensor",
+       "from freetoken.utils import cached_load_hf_config",
+       "from tqdm import tqdm"
+      ],
+      "total": 59
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 69,
+     "tokens": 758,
+     "first": {
+      "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+      "start": 3547,
+      "end": 3615
+     },
+     "others": [
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+       "start": 5177,
+       "end": 5245
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 43,
+     "tokens": 230,
+     "first": {
+      "name": "python/freetoken/models/llama/config.py",
+      "start": 1,
+      "end": 43
+     },
+     "others": [
+      {
+       "name": "python/freetoken/models/mistral/config.py",
+       "start": 1,
+       "end": 43
+      },
+      {
+       "name": "python/freetoken/models/qwen2/config.py",
+       "start": 1,
+       "end": 43
+      },
+      {
+       "name": "python/freetoken/models/qwen3/config.py",
+       "start": 1,
+       "end": 43
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 38,
+     "tokens": 578,
+     "first": {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/quants.c",
+      "start": 734,
+      "end": 771
+     },
+     "others": [
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/quants.c",
+       "start": 813,
+       "end": 851
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 71,
+     "tokens": 555,
+     "first": {
+      "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/simd-mappings.h",
+      "start": 269,
+      "end": 339
+     },
+     "others": [
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/simd-mappings.h",
+       "start": 384,
+       "end": 454
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 52,
+     "first": {
+      "name": "python/freetoken/models/gemma4/model.py",
+      "start": 84,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "python/freetoken/models/glm4_moe/model.py",
+       "start": 75,
+       "end": 83
+      },
+      {
+       "name": "python/freetoken/models/glm5_next/model.py",
+       "start": 164,
+       "end": 172
+      },
+      {
+       "name": "python/freetoken/models/glm_moe_dsa/model.py",
+       "start": 70,
+       "end": 78
+      },
+      {
+       "name": "python/freetoken/models/llama/model.py",
+       "start": 75,
+       "end": 83
+      },
+      {
+       "name": "python/freetoken/models/minimax_m2/model.py",
+       "start": 65,
+       "end": 73
+      },
+      {
+       "name": "python/freetoken/models/mistral/model.py",
+       "start": 73,
+       "end": 81
+      },
+      {
+       "name": "python/freetoken/models/qwen2/model.py",
+       "start": 73,
+       "end": 81
+      },
+      {
+       "name": "python/freetoken/models/qwen3/model.py",
+       "start": 75,
+       "end": 83
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 43,
+     "tokens": 255,
+     "first": {
+      "name": "python/freetoken/models/llama/attention.py",
+      "start": 17,
+      "end": 59
+     },
+     "others": [
+      {
+       "name": "python/freetoken/models/qwen3/attention.py",
+       "start": 17,
+       "end": 59
+      },
+      {
+       "name": "python/freetoken/models/qwen3_moe/attention.py",
+       "start": 17,
+       "end": 59
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 54,
+     "tokens": 503,
+     "first": {
+      "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+      "start": 1885,
+      "end": 1938
+     },
+     "others": [
+      {
+       "name": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+       "start": 1999,
+       "end": 2053
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 63.7,
+   "grade": "C",
+   "size": {
+    "lines": 185754,
+    "files": 699,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 6.7,
+     "adjusted": 6.7,
+     "lines": 12432,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "c-header",
+      "c",
+      "cpp",
+      "bash"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 58.1
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.6,
+     "adjusted": 0.7,
+     "lines": 975,
+     "halfLife": 7.5,
+     "coverage": 83.6,
+     "weight": 0.836,
+     "score": 94.1
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 49.7,
+     "adjusted": 49.4,
+     "lines": 92257,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 50.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 27341,
+   "mean": 39.1,
+   "files": [
+    {
+     "path": "python/freetoken/kernel/csrc/ggml/src/ggml-quants.c",
+     "complexity": 1194,
+     "lines": 5639,
+     "bytes": 226847
+    },
+    {
+     "path": "python/freetoken/server/function_call_parser.py",
+     "complexity": 881,
+     "lines": 3756,
+     "bytes": 166279
+    },
+    {
+     "path": "python/freetoken/engine/engine.py",
+     "complexity": 548,
+     "lines": 2210,
+     "bytes": 118168
+    },
+    {
+     "path": "scripts/ftw_hotfix.py",
+     "complexity": 464,
+     "lines": 1106,
+     "bytes": 54162
+    },
+    {
+     "path": "scripts/checkpoint_diagnose/diagnose.py",
+     "complexity": 438,
+     "lines": 1040,
+     "bytes": 49826
+    },
+    {
+     "path": "python/freetoken/kernel/csrc/ggml/ggml-cpu/vec.h",
+     "complexity": 349,
+     "lines": 1630,
+     "bytes": 68484
+    },
+    {
+     "path": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+     "complexity": 249,
+     "lines": 4172,
+     "bytes": 200035
+    },
+    {
+     "path": "python/freetoken/launch.py",
+     "complexity": 238,
+     "lines": 1109,
+     "bytes": 39074
+    },
+    {
+     "path": "python/freetoken/kernel/csrc/ggml/ggml-cpu/quants.c",
+     "complexity": 216,
+     "lines": 1339,
+     "bytes": 45124
+    },
+    {
+     "path": "python/freetoken/moe/benchbw.py",
+     "complexity": 213,
+     "lines": 1144,
+     "bytes": 51611
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.63,
+   "findings": 40,
+   "files": 684,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 9
+    },
+    {
+     "category": "unused-export",
+     "count": 5
+    },
+    {
+     "category": "unused-symbol",
+     "count": 8
+    },
+    {
+     "category": "unused-import",
+     "count": 18
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/layers/linear_attn/gdn_reference.py",
+     "name": "",
+     "line": 1,
+     "lines": 186
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/mm/processors/deepseek_v4.py",
+     "name": "",
+     "line": 1,
+     "lines": 134
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/mm/processors/gemma4.py",
+     "name": "",
+     "line": 1,
+     "lines": 104
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/mm/processors/qwen_vl.py",
+     "name": "",
+     "line": 1,
+     "lines": 95
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/mm/processors/minimax_m3.py",
+     "name": "",
+     "line": 1,
+     "lines": 89
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/mm/processors/deepseek_v41.py",
+     "name": "",
+     "line": 1,
+     "lines": 88
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/mm/processors/glm5_next.py",
+     "name": "",
+     "line": 1,
+     "lines": 76
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/mm/processors/muse_glimmer.py",
+     "name": "",
+     "line": 1,
+     "lines": 76
+    },
+    {
+     "category": "unused-file",
+     "path": "python/freetoken/models/deepseek_v4/image_processor.py",
+     "name": "",
+     "line": 1,
+     "lines": 50
+    },
+    {
+     "category": "unused-symbol",
+     "path": "python/freetoken/moe/fused.py",
+     "name": "_torch_fused_topk",
+     "line": 11,
+     "lines": 20
+    }
+   ]
+  }
+ }
+}

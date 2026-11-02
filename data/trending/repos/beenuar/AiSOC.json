@@ -1,0 +1,1307 @@
+{
+ "name": "beenuar/AiSOC",
+ "url": "https://github.com/beenuar/AiSOC",
+ "appearances": [
+  {
+   "date": "2026-11-02",
+   "rank": 4,
+   "stars": 6363,
+   "starsToday": 446,
+   "headSha": "517a08f602235c86fe9959d0ef92e3bcf1b9a11d",
+   "sources": 12051,
+   "lines": 1579126,
+   "clones": 7834,
+   "duplicatedLines": 160421,
+   "percentage": 10.16,
+   "codePercentage": 4.9,
+   "codeSources": 2108,
+   "healthScore": 69.3,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T05:22:05.631Z",
+  "name": "beenuar/AiSOC",
+  "url": "https://github.com/beenuar/AiSOC",
+  "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
+  "language": "Python",
+  "stars": 6363,
+  "starsToday": 446,
+  "defaultBranch": "main",
+  "headSha": "517a08f602235c86fe9959d0ef92e3bcf1b9a11d",
+  "durationMs": 10410,
+  "total": {
+   "sources": 12051,
+   "lines": 1579126,
+   "tokens": 9881771,
+   "clones": 7834,
+   "duplicatedLines": 160421,
+   "duplicatedTokens": 938612,
+   "percentage": 10.16,
+   "percentageTokens": 9.5
+  },
+  "formats": [
+   {
+    "format": "yaml",
+    "sources": 7579,
+    "lines": 404355,
+    "clones": 4892,
+    "duplicatedLines": 63531,
+    "percentage": 15.71
+   },
+   {
+    "format": "python",
+    "sources": 2560,
+    "lines": 763049,
+    "clones": 1725,
+    "duplicatedLines": 40943,
+    "percentage": 5.37
+   },
+   {
+    "format": "json",
+    "sources": 283,
+    "lines": 118094,
+    "clones": 594,
+    "duplicatedLines": 47799,
+    "percentage": 40.48
+   },
+   {
+    "format": "markdown",
+    "sources": 423,
+    "lines": 81329,
+    "clones": 230,
+    "duplicatedLines": 2405,
+    "percentage": 2.96
+   },
+   {
+    "format": "tsx",
+    "sources": 364,
+    "lines": 93404,
+    "clones": 216,
+    "duplicatedLines": 2684,
+    "percentage": 2.87
+   },
+   {
+    "format": "go",
+    "sources": 144,
+    "lines": 36892,
+    "clones": 70,
+    "duplicatedLines": 735,
+    "percentage": 1.99
+   },
+   {
+    "format": "typescript",
+    "sources": 189,
+    "lines": 39505,
+    "clones": 45,
+    "duplicatedLines": 893,
+    "percentage": 2.26
+   },
+   {
+    "format": "docker",
+    "sources": 22,
+    "lines": 1477,
+    "clones": 24,
+    "duplicatedLines": 835,
+    "percentage": 56.53
+   },
+   {
+    "format": "sql",
+    "sources": 148,
+    "lines": 15526,
+    "clones": 11,
+    "duplicatedLines": 157,
+    "percentage": 1.01
+   },
+   {
+    "format": "hcl",
+    "sources": 38,
+    "lines": 4507,
+    "clones": 10,
+    "duplicatedLines": 140,
+    "percentage": 3.11
+   }
+  ],
+  "topClones": [
+   {
+    "format": "json",
+    "lines": 13779,
+    "tokens": 39613,
+    "first": {
+     "name": "services/api/app/data/detections/detection_ruleset.json",
+     "start": 1,
+     "end": 13779
+    },
+    "others": [
+     {
+      "name": "services/fusion/app/data/detection_ruleset.json",
+      "start": 1,
+      "end": 13779
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"count\": 768,",
+      "  \"rules\": [",
+      "    {",
+      "      \"category\": \"application\",",
+      "      \"id\": \"det-application-001\",",
+      "      \"match_when\": {",
+      "        \"request_uri_pattern_match_any\": [",
+      "          \"UNION SELECT\",",
+      "          \"OR '1'='1\","
+     ],
+     "total": 13779
+    },
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 13415,
+    "tokens": 37478,
+    "first": {
+     "name": "apps/web/public/marketplace/curated.json",
+     "start": 1,
+     "end": 13415
+    },
+    "others": [
+     {
+      "name": "marketplace/curated.json",
+      "start": 1,
+      "end": 13415
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"$schema\": \"https://aisoc.example.com/schemas/curated/v1.json\",",
+      "  \"version\": \"1.0.0\",",
+      "  \"generated\": \"2026-11-02T01:47:38Z\",",
+      "  \"stats\": {",
+      "    \"considered\": 2514,",
+      "    \"eligible\": 2503,",
+      "    \"selected\": 489,",
+      "    \"min_per_family\": 25,",
+      "    \"min_total\": 300,"
+     ],
+     "total": 13415
+    },
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 19,
+    "tokens": 158,
+    "first": {
+     "name": "detections/chronicle-imports/_quarantine/adfs-db-suspicious-named-pipe-connection.yaml",
+     "start": 4,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "detections/chronicle-imports/_quarantine/adfs-dkm-key-access.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/aws-account-leaving-or-removed-from-organization.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/aws-api-call-outside-of-organization.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/aws-cloudtrail-logging-tampered.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/aws-config-service-modified.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/aws-console-login-without-mfa.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/aws-delete-cloudwatch-log-group.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/aws-delete-vpc-flow-logs.yaml",
+      "start": 4,
+      "end": 22
+     }
+    ],
+    "copies": 160,
+    "excerpt": {
+     "lines": [
+      "severity: medium",
+      "enabled: false",
+      "tags:",
+      "  mitre: []",
+      "  categories:",
+      "  - endpoint",
+      "references: []",
+      "logsource:",
+      "  product: chronicle",
+      "detection:"
+     ],
+     "total": 19
+    },
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 249,
+    "tokens": 1824,
+    "first": {
+     "name": "services/actions/app/_health.py",
+     "start": 1,
+     "end": 249
+    },
+    "others": [
+     {
+      "name": "services/agents/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     {
+      "name": "services/api/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     {
+      "name": "services/connectors/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     {
+      "name": "services/fusion/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     {
+      "name": "services/honeytokens/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     {
+      "name": "services/mesh/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     {
+      "name": "services/osquery-tls/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     {
+      "name": "services/purple-team/app/_health.py",
+      "start": 1,
+      "end": 249
+     }
+    ],
+    "copies": 13,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 368,
+    "tokens": 2419,
+    "first": {
+     "name": "services/actions/tests/test_tenant_scope.py",
+     "start": 1,
+     "end": 368
+    },
+    "others": [
+     {
+      "name": "services/agents/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     },
+     {
+      "name": "services/connectors/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     },
+     {
+      "name": "services/fusion/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     },
+     {
+      "name": "services/honeytokens/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     },
+     {
+      "name": "services/osquery-tls/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     },
+     {
+      "name": "services/purple-team/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     },
+     {
+      "name": "services/threatintel/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     },
+     {
+      "name": "services/ueba/tests/test_tenant_scope.py",
+      "start": 1,
+      "end": 368
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
+   },
+   {
+    "format": "yaml",
+    "lines": 19,
+    "tokens": 158,
+    "first": {
+     "name": "detections/chronicle-imports/_quarantine/base64-encoded-powershell-command-detected.yaml",
+     "start": 4,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "detections/chronicle-imports/_quarantine/blackbyte-ransomware-registry.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/convertto-securestring-cmdlet-usage-via-commandline.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/copy-from-or-to-admin-share-or-sysvol-folder.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/create-dump-process-dump.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/cred-dump-tools-dropped-files.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/credential-dumping-attempt-via-werfault.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/currentcontrolset-autorun-keys-modification.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/currentversion-autorun-keys-modification.yaml",
+      "start": 4,
+      "end": 22
+     }
+    ],
+    "copies": 110,
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 409,
+    "tokens": 1942,
+    "first": {
+     "name": "services/actions/app/security/tenant_scope.py",
+     "start": 78,
+     "end": 486
+    },
+    "others": [
+     {
+      "name": "services/agents/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     {
+      "name": "services/connectors/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     {
+      "name": "services/fusion/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     {
+      "name": "services/honeytokens/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     {
+      "name": "services/osquery-tls/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     {
+      "name": "services/purple-team/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     {
+      "name": "services/threatintel/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     {
+      "name": "services/ueba/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     }
+    ],
+    "copies": 9,
+    "kind": "code"
+   },
+   {
+    "format": "yaml",
+    "lines": 19,
+    "tokens": 158,
+    "first": {
+     "name": "detections/chronicle-imports/_quarantine/info-certutil-urlcache.yaml",
+     "start": 4,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-command-line-regedit.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-dns-lookup-exact.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-dns-lookup-partial.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-dns-lookup-suffix.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-file-batch-executed.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-file-batch-written.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-file-iso-mounted.yaml",
+      "start": 4,
+      "end": 22
+     },
+     {
+      "name": "detections/chronicle-imports/_quarantine/info-file-iso-written.yaml",
+      "start": 4,
+      "end": 22
+     }
+    ],
+    "copies": 66,
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 7,
+    "tokens": 103,
+    "first": {
+     "name": "detections/splunk-imports/_quarantine/anomalous-usage-of-7zip.yaml",
+     "start": 29,
+     "end": 35
+    },
+    "others": [
+     {
+      "name": "detections/splunk-imports/_quarantine/bcdedit-command-back-to-normal-mode-boot.yaml",
+      "start": 27,
+      "end": 33
+     },
+     {
+      "name": "detections/splunk-imports/_quarantine/bcdedit-failure-recovery-modification.yaml",
+      "start": 27,
+      "end": 33
+     },
+     {
+      "name": "detections/splunk-imports/_quarantine/certutil-with-decode-argument.yaml",
+      "start": 29,
+      "end": 35
+     },
+     {
+      "name": "detections/splunk-imports/_quarantine/check-elevated-cmd-using-whoami.yaml",
+      "start": 28,
+      "end": 34
+     },
+     {
+      "name": "detections/splunk-imports/_quarantine/clop-common-exec-parameter.yaml",
+      "start": 28,
+      "end": 34
+     },
+     {
+      "name": "detections/splunk-imports/_quarantine/csc-net-on-the-fly-compilation.yaml",
+      "start": 29,
+      "end": 35
+     },
+     {
+      "name": "detections/splunk-imports/_quarantine/detect-azurehound-command-line-arguments.yaml",
+      "start": 32,
+      "end": 38
+     },
+     {
+      "name": "detections/splunk-imports/_quarantine/detection-of-tools-built-by-nirsoft.yaml",
+      "start": 26,
+      "end": 32
+     }
+    ],
+    "copies": 70,
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 1125,
+    "tokens": 6669,
+    "first": {
+     "name": "packages/aisoc-benchmark/aisoc_benchmark/replay.py",
+     "start": 1,
+     "end": 1125
+    },
+    "others": [
+     {
+      "name": "services/api/app/_vendor/aisoc_benchmark/replay.py",
+      "start": 1,
+      "end": 1125
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 2108,
+   "lines": 641461,
+   "tokens": 3563879,
+   "clones": 1140,
+   "duplicatedLines": 31406,
+   "duplicatedTokens": 184482,
+   "percentage": 4.9,
+   "percentageTokens": 5.18,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 1579,
+     "lines": 501464,
+     "clones": 991,
+     "duplicatedLines": 29168,
+     "percentage": 5.82
+    },
+    {
+     "format": "tsx",
+     "sources": 277,
+     "lines": 75110,
+     "clones": 82,
+     "duplicatedLines": 1116,
+     "percentage": 1.49
+    },
+    {
+     "format": "go",
+     "sources": 96,
+     "lines": 25042,
+     "clones": 43,
+     "duplicatedLines": 463,
+     "percentage": 1.85
+    },
+    {
+     "format": "typescript",
+     "sources": 122,
+     "lines": 30097,
+     "clones": 22,
+     "duplicatedLines": 638,
+     "percentage": 2.12
+    },
+    {
+     "format": "bash",
+     "sources": 20,
+     "lines": 5273,
+     "clones": 2,
+     "duplicatedLines": 21,
+     "percentage": 0.4
+    },
+    {
+     "format": "powershell",
+     "sources": 3,
+     "lines": 2255,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 8,
+     "lines": 1931,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "sql",
+     "sources": 3,
+     "lines": 289,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 249,
+     "tokens": 1824,
+     "first": {
+      "name": "services/actions/app/_health.py",
+      "start": 1,
+      "end": 249
+     },
+     "others": [
+      {
+       "name": "services/agents/app/_health.py",
+       "start": 1,
+       "end": 249
+      },
+      {
+       "name": "services/api/app/_health.py",
+       "start": 1,
+       "end": 249
+      },
+      {
+       "name": "services/connectors/app/_health.py",
+       "start": 1,
+       "end": 249
+      },
+      {
+       "name": "services/fusion/app/_health.py",
+       "start": 1,
+       "end": 249
+      },
+      {
+       "name": "services/honeytokens/app/_health.py",
+       "start": 1,
+       "end": 249
+      },
+      {
+       "name": "services/mesh/app/_health.py",
+       "start": 1,
+       "end": 249
+      },
+      {
+       "name": "services/osquery-tls/app/_health.py",
+       "start": 1,
+       "end": 249
+      },
+      {
+       "name": "services/purple-team/app/_health.py",
+       "start": 1,
+       "end": 249
+      }
+     ],
+     "copies": 13,
+     "excerpt": {
+      "lines": [
+       "\"\"\"",
+       "Phase 2.6 — shared liveness + readiness probes for AiSOC FastAPI",
+       "services.",
+       "",
+       "The \"liveness vs readiness\" distinction is the single most-missed",
+       "detail in self-deployed Python services. The two checks answer",
+       "DIFFERENT questions and k8s (and any sensible load balancer)",
+       "treats the answers differently:",
+       "",
+       "  * ``/livez``  — \"is this process still running?\". Returns 200 if"
+      ],
+      "total": 249
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 409,
+     "tokens": 1942,
+     "first": {
+      "name": "services/actions/app/security/tenant_scope.py",
+      "start": 78,
+      "end": 486
+     },
+     "others": [
+      {
+       "name": "services/agents/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      },
+      {
+       "name": "services/connectors/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      },
+      {
+       "name": "services/fusion/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      },
+      {
+       "name": "services/honeytokens/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      },
+      {
+       "name": "services/osquery-tls/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      },
+      {
+       "name": "services/purple-team/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      },
+      {
+       "name": "services/threatintel/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      },
+      {
+       "name": "services/ueba/app/security/tenant_scope.py",
+       "start": 78,
+       "end": 486
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "logger = logging.getLogger(\"aisoc.tenant_scope\")",
+       "",
+       "_TRUTHY = {\"1\", \"true\", \"yes\", \"on\"}",
+       "",
+       "#: Mirrors ``INSECURE_SECRET_KEY_DEFAULTS`` in services/api/app/core/config.py",
+       "#: so a placeholder secret is treated as \"unset\" on this side too. Verifying a",
+       "#: token signed with a well-known literal would authenticate anybody who read",
+       "#: the repository.",
+       "INSECURE_SECRET_DEFAULTS = frozenset(",
+       "    {"
+      ],
+      "total": 409
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 1125,
+     "tokens": 6669,
+     "first": {
+      "name": "packages/aisoc-benchmark/aisoc_benchmark/replay.py",
+      "start": 1,
+      "end": 1125
+     },
+     "others": [
+      {
+       "name": "services/api/app/_vendor/aisoc_benchmark/replay.py",
+       "start": 1,
+       "end": 1125
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "\"\"\"Scoring for replay evaluation: the agent against a customer's own analysts.",
+       "",
+       "Gap-closure Phase 1.3.",
+       "",
+       "This extends the benchmark package rather than standing beside it. The",
+       "hallucination machinery is :func:`aisoc_benchmark.metrics.is_checkable_indicator`",
+       "and :func:`~aisoc_benchmark.metrics.extract_checkable_indicators`, unchanged, so",
+       "an indicator counted here is one the synthetic-corpus grader would also have",
+       "counted. A second grader would eventually disagree with the first about what",
+       "\"hallucinated\" means, and the published numbers would stop being comparable"
+      ],
+      "total": 1125
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 211,
+     "tokens": 1271,
+     "first": {
+      "name": "services/agents/app/core/cors.py",
+      "start": 1,
+      "end": 211
+     },
+     "others": [
+      {
+       "name": "services/api/app/core/cors.py",
+       "start": 1,
+       "end": 211
+      },
+      {
+       "name": "services/connectors/app/security/cors.py",
+       "start": 1,
+       "end": 211
+      },
+      {
+       "name": "services/honeytokens/app/core/cors.py",
+       "start": 1,
+       "end": 211
+      },
+      {
+       "name": "services/purple-team/app/core/cors.py",
+       "start": 1,
+       "end": 211
+      },
+      {
+       "name": "services/ueba/app/core/cors.py",
+       "start": 1,
+       "end": 211
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 76,
+     "tokens": 665,
+     "first": {
+      "name": "services/actions/app/security/tenant_scope.py",
+      "start": 1,
+      "end": 76
+     },
+     "others": [
+      {
+       "name": "services/agents/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      },
+      {
+       "name": "services/connectors/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      },
+      {
+       "name": "services/fusion/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      },
+      {
+       "name": "services/honeytokens/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      },
+      {
+       "name": "services/osquery-tls/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      },
+      {
+       "name": "services/purple-team/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      },
+      {
+       "name": "services/threatintel/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      },
+      {
+       "name": "services/ueba/app/security/tenant_scope.py",
+       "start": 1,
+       "end": 76
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 976,
+     "tokens": 4821,
+     "first": {
+      "name": "services/agents/app/nl_query/translator.py",
+      "start": 1,
+      "end": 976
+     },
+     "others": [
+      {
+       "name": "services/api/app/_vendor/nl_query/translator.py",
+       "start": 1,
+       "end": 976
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 181,
+     "tokens": 1167,
+     "first": {
+      "name": "services/agents/app/core/kafka_security.py",
+      "start": 1,
+      "end": 181
+     },
+     "others": [
+      {
+       "name": "services/api/app/core/kafka_security.py",
+       "start": 1,
+       "end": 181
+      },
+      {
+       "name": "services/fusion/app/core/kafka_security.py",
+       "start": 1,
+       "end": 181
+      },
+      {
+       "name": "services/threatintel/app/core/kafka_security.py",
+       "start": 1,
+       "end": 181
+      },
+      {
+       "name": "services/ueba/app/core/kafka_security.py",
+       "start": 1,
+       "end": 181
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 711,
+     "tokens": 4578,
+     "first": {
+      "name": "services/actions/app/services/autonomy_evidence_rules.py",
+      "start": 1,
+      "end": 711
+     },
+     "others": [
+      {
+       "name": "services/api/app/_vendor/autonomy_evidence_rules.py",
+       "start": 1,
+       "end": 711
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 228,
+     "tokens": 1473,
+     "first": {
+      "name": "services/honeytokens/app/_migrate.py",
+      "start": 1,
+      "end": 228
+     },
+     "others": [
+      {
+       "name": "services/osquery-tls/app/_migrate.py",
+       "start": 1,
+       "end": 228
+      },
+      {
+       "name": "services/purple-team/app/_migrate.py",
+       "start": 1,
+       "end": 228
+      },
+      {
+       "name": "services/ueba/app/_migrate.py",
+       "start": 1,
+       "end": 228
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 1343,
+     "tokens": 4387,
+     "first": {
+      "name": "services/actions/app/live_actions/capability_contracts.py",
+      "start": 1,
+      "end": 1343
+     },
+     "others": [
+      {
+       "name": "services/api/app/_vendor/action_contracts/capability_contracts.py",
+       "start": 1,
+       "end": 1343
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 8,
+    "minified": 0,
+    "sample": [
+     "apps/web/src/data/connectorCount.ts",
+     "apps/web/src/data/corpusStats.ts",
+     "packages/aisoc-action/src/_vendor/verdict/index.ts",
+     "packages/sdk-ts/src/index.ts",
+     "packages/types/src/generated/connector-types.ts",
+     "services/api/app/api/v1/endpoints/reports.py",
+     "services/api/app/models/report.py",
+     "services/api/migrations/019_board_reports.sql"
+    ]
+   }
+  },
+  "health": {
+   "score": 69.3,
+   "grade": "C",
+   "size": {
+    "lines": 963748,
+    "files": 3469,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.8,
+     "adjusted": 4.8,
+     "lines": 46267,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "tsx",
+      "typescript",
+      "go",
+      "sql",
+      "bash",
+      "hcl",
+      "powershell",
+      "javascript",
+      "docker",
+      "makefile"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 67.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.9,
+     "adjusted": 0.9,
+     "lines": 7711,
+     "halfLife": 7.5,
+     "coverage": 93.2,
+     "weight": 0.932,
+     "score": 92.3
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 43.8,
+     "adjusted": 43.8,
+     "lines": 422581,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 54.5
+    }
+   ]
+  },
+  "complexity": {
+   "total": 113379,
+   "mean": 32.7,
+   "files": [
+    {
+     "path": "apps/web/src/lib/api.ts",
+     "complexity": 645,
+     "lines": 7660,
+     "bytes": 263345
+    },
+    {
+     "path": "scripts/check_tenant_query_predicates.py",
+     "complexity": 405,
+     "lines": 3021,
+     "bytes": 146234
+    },
+    {
+     "path": "services/agents/app/playbook/engine.py",
+     "complexity": 378,
+     "lines": 2361,
+     "bytes": 102635
+    },
+    {
+     "path": "scripts/check_required_check_substance.py",
+     "complexity": 370,
+     "lines": 1631,
+     "bytes": 75380
+    },
+    {
+     "path": "scripts/check_toolchain_pins.py",
+     "complexity": 366,
+     "lines": 2610,
+     "bytes": 134300
+    },
+    {
+     "path": "scripts/check_ci_install_parity.py",
+     "complexity": 365,
+     "lines": 1616,
+     "bytes": 77734
+    },
+    {
+     "path": "apps/web/src/components/settings/SettingsView.tsx",
+     "complexity": 359,
+     "lines": 2614,
+     "bytes": 91693
+    },
+    {
+     "path": "apps/web/src/components/cases/CaseWorkspace.tsx",
+     "complexity": 323,
+     "lines": 2159,
+     "bytes": 88565
+    },
+    {
+     "path": "scripts/check_gate_coverage.py",
+     "complexity": 305,
+     "lines": 956,
+     "bytes": 42494
+    },
+    {
+     "path": "apps/web/src/components/connectors/AddConnectorModal.tsx",
+     "complexity": 290,
+     "lines": 1718,
+     "bytes": 67236
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.86,
+   "findings": 208,
+   "files": 3270,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 47
+    },
+    {
+     "category": "unused-export",
+     "count": 54
+    },
+    {
+     "category": "unused-symbol",
+     "count": 38
+    },
+    {
+     "category": "unused-import",
+     "count": 69
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "apps/web/src/components/copilot/InvestigationTimeline.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 752
+    },
+    {
+     "category": "unused-file",
+     "path": "plans/cyble-aisoc/platform/frontend/app.js",
+     "name": "",
+     "line": 1,
+     "lines": 717
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/web/src/components/graph/RealtimeGraph.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 400
+    },
+    {
+     "category": "unused-file",
+     "path": "plans/cyble-aisoc/platform/backend/app/connectors/sdk/ts_bridge.py",
+     "name": "",
+     "line": 1,
+     "lines": 320
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/web/public/sw.js",
+     "name": "",
+     "line": 1,
+     "lines": 310
+    },
+    {
+     "category": "unused-file",
+     "path": "services/connectors/app/connectors/_examples/hello_connector.py",
+     "name": "",
+     "line": 1,
+     "lines": 269
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/web/src/components/landing/Features.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 184
+    },
+    {
+     "category": "unused-file",
+     "path": "services/api/app/services/compliance.py",
+     "name": "",
+     "line": 1,
+     "lines": 182
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/mttr-widget/plugin.py",
+     "name": "",
+     "line": 1,
+     "lines": 154
+    },
+    {
+     "category": "unused-file",
+     "path": "services/osquery-tls/app/api/v1/endpoints/extensions.py",
+     "name": "",
+     "line": 1,
+     "lines": 152
+    }
+   ]
+  }
+ }
+}
