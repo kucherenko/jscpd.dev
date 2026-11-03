@@ -1,0 +1,666 @@
+{
+ "name": "p-e-w/heretic",
+ "url": "https://github.com/p-e-w/heretic",
+ "appearances": [
+  {
+   "date": "2026-11-03",
+   "rank": 8,
+   "stars": 38226,
+   "starsToday": 420,
+   "headSha": "0db5c31e10ecc426440b6fb0ce4bf85352faf1a7",
+   "sources": 46,
+   "lines": 9834,
+   "clones": 20,
+   "duplicatedLines": 544,
+   "percentage": 5.53,
+   "codePercentage": null,
+   "codeSources": 17,
+   "healthScore": 47.3,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T05:21:14.506Z",
+  "name": "p-e-w/heretic",
+  "url": "https://github.com/p-e-w/heretic",
+  "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
+  "language": "Python",
+  "stars": 38226,
+  "starsToday": 420,
+  "defaultBranch": "master",
+  "headSha": "0db5c31e10ecc426440b6fb0ce4bf85352faf1a7",
+  "durationMs": 1126,
+  "total": {
+   "sources": 46,
+   "lines": 9834,
+   "tokens": 40652,
+   "clones": 20,
+   "duplicatedLines": 544,
+   "duplicatedTokens": 1730,
+   "percentage": 5.53,
+   "percentageTokens": 4.26
+  },
+  "formats": [
+   {
+    "format": "toml",
+    "sources": 16,
+    "lines": 1590,
+    "clones": 15,
+    "duplicatedLines": 465,
+    "percentage": 29.25
+   },
+   {
+    "format": "python",
+    "sources": 23,
+    "lines": 7668,
+    "clones": 5,
+    "duplicatedLines": 79,
+    "percentage": 1.03
+   },
+   {
+    "format": "markdown",
+    "sources": 4,
+    "lines": 498,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "yaml",
+    "sources": 1,
+    "lines": 60,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 1,
+    "lines": 10,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 8,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "toml",
+    "lines": 54,
+    "tokens": 153,
+    "first": {
+     "name": "tests/gemma-4e/config.toml",
+     "start": 7,
+     "end": 60
+    },
+    "others": [
+     {
+      "name": "tests/mistral-3/config.toml",
+      "start": 7,
+      "end": 60
+     },
+     {
+      "name": "tests/qwen3.5-moe/config.toml",
+      "start": 7,
+      "end": 60
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "seed = 12345",
+      "print_debug_information = true",
+      "",
+      "batch_size = 2",
+      "max_response_length = 10",
+      "",
+      "modifiers = [",
+      "    { plugin = \"heretic.modifiers.abliteration.Abliteration\" },",
+      "]",
+      ""
+     ],
+     "total": 54
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 44,
+    "tokens": 119,
+    "first": {
+     "name": "tests/gemma-4e/config.toml",
+     "start": 7,
+     "end": 50
+    },
+    "others": [
+     {
+      "name": "tests/minicpm5/config.toml",
+      "start": 7,
+      "end": 50
+     },
+     {
+      "name": "tests/qwen2.5/config.toml",
+      "start": 7,
+      "end": 50
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "seed = 12345",
+      "print_debug_information = true",
+      "",
+      "batch_size = 2",
+      "max_response_length = 10",
+      "",
+      "modifiers = [",
+      "    { plugin = \"heretic.modifiers.abliteration.Abliteration\" },",
+      "]",
+      ""
+     ],
+     "total": 44
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 37,
+    "tokens": 99,
+    "first": {
+     "name": "tests/gemma-4e/config.toml",
+     "start": 14,
+     "end": 50
+    },
+    "others": [
+     {
+      "name": "tests/seed-oss/config.toml",
+      "start": 15,
+      "end": 51
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    { plugin = \"heretic.modifiers.abliteration.Abliteration\" },",
+      "]",
+      "",
+      "n_trials = 2",
+      "n_startup_trials = 1",
+      "",
+      "export_strategy = \"merge\"",
+      "checkpoint_action = \"restart\"",
+      "trial_index = 0",
+      "model_action = \"save\""
+     ],
+     "total": 37
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 36,
+    "tokens": 98,
+    "first": {
+     "name": "tests/deepseek-v4-ara/config.toml",
+     "start": 14,
+     "end": 49
+    },
+    "others": [
+     {
+      "name": "tests/deepseek-v4/config.toml",
+      "start": 17,
+      "end": 52
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 34,
+    "tokens": 96,
+    "first": {
+     "name": "tests/gemma-4e/config.toml",
+     "start": 17,
+     "end": 50
+    },
+    "others": [
+     {
+      "name": "tests/gpt-oss/config.toml",
+      "start": 13,
+      "end": 46
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 7,
+    "tokens": 92,
+    "first": {
+     "name": "config.nosyco.toml",
+     "start": 119,
+     "end": 125
+    },
+    "others": [
+     {
+      "name": "config.nosyco.toml",
+      "start": 140,
+      "end": 146
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "toml",
+    "lines": 30,
+    "tokens": 87,
+    "first": {
+     "name": "tests/deepseek-v4-ara/config.toml",
+     "start": 20,
+     "end": 49
+    },
+    "others": [
+     {
+      "name": "tests/gemma-4e/config.toml",
+      "start": 21,
+      "end": 50
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 27,
+    "tokens": 84,
+    "first": {
+     "name": "tests/deepseek-v4-ara/config.toml",
+     "start": 33,
+     "end": 59
+    },
+    "others": [
+     {
+      "name": "tests/gpt-oss/config.toml",
+      "start": 30,
+      "end": 56
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 27,
+    "tokens": 84,
+    "first": {
+     "name": "tests/deepseek-v4/config.toml",
+     "start": 36,
+     "end": 62
+    },
+    "others": [
+     {
+      "name": "tests/gemma-4e/config.toml",
+      "start": 34,
+      "end": 60
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 22,
+    "tokens": 79,
+    "first": {
+     "name": "src/heretic/config.py",
+     "start": 118,
+     "end": 139
+    },
+    "others": [
+     {
+      "name": "src/heretic/config.py",
+      "start": 160,
+      "end": 181
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 17,
+   "lines": 7075,
+   "tokens": 28573,
+   "clones": 4,
+   "duplicatedLines": 69,
+   "duplicatedTokens": 272,
+   "percentage": 0.98,
+   "percentageTokens": 0.95,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 17,
+     "lines": 7075,
+     "clones": 4,
+     "duplicatedLines": 69,
+     "percentage": 0.98
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 79,
+     "first": {
+      "name": "src/heretic/config.py",
+      "start": 118,
+      "end": 139
+     },
+     "others": [
+      {
+       "name": "src/heretic/config.py",
+       "start": 160,
+       "end": 181
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    ),",
+       ")",
+       "",
+       "@field_validator(\"instance_name\")",
+       "@classmethod",
+       "def validate_instance_name(cls, value: str | None) -> str | None:",
+       "    if value is None:",
+       "        return value",
+       "",
+       "    if not value.strip():"
+      ],
+      "total": 22
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 70,
+     "first": {
+      "name": "src/heretic/modifiers/abliteration.py",
+      "start": 156,
+      "end": 171
+     },
+     "others": [
+      {
+       "name": "src/heretic/modifiers/ara.py",
+       "start": 174,
+       "end": 189
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def init(self, ctx: Context) -> None:",
+       "    model = ctx.get_model()",
+       "",
+       "    print()",
+       "    print(",
+       "        f\"Loading good prompts from [bold]{format_dataset_specification(self.settings.good_prompts)}[/]...\"",
+       "    )",
+       "    good_prompts = ctx.load_prompts(self.settings.good_prompts)",
+       "    print(f\"* [bold]{len(good_prompts)}[/] prompts loaded\")",
+       ""
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 64,
+     "first": {
+      "name": "src/heretic/modifiers/abliteration.py",
+      "start": 78,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "src/heretic/modifiers/ara.py",
+       "start": 52,
+       "end": 69
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "class Settings(BaseModel):",
+       "    good_prompts: DatasetSpecification = Field(",
+       "        default=SingleDatasetSpecification(",
+       "            dataset=\"mlabonne/harmless_alpaca\",",
+       "            split=\"train[:400]\",",
+       "            column=\"text\",",
+       "        ),",
+       "        description=\"Dataset of prompts that tend to produce desirable responses.\",",
+       "    )",
+       ""
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 59,
+     "first": {
+      "name": "src/heretic/scorers/bert_classifier.py",
+      "start": 148,
+      "end": 160
+     },
+     "others": [
+      {
+       "name": "src/heretic/scorers/keyword_rate.py",
+       "start": 96,
+       "end": 108
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 47.3,
+   "grade": "D",
+   "size": {
+    "lines": 7668,
+    "files": 23,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1,
+     "adjusted": 1.5,
+     "lines": 79,
+     "halfLife": 8.5,
+     "formats": [
+      "python"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 88.2
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 19.3,
+     "adjusted": 16,
+     "lines": 1481,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 22.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 53.5,
+     "adjusted": 46.7,
+     "lines": 4100,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 52.3
+    }
+   ]
+  },
+  "complexity": {
+   "total": 886,
+   "mean": 38.5,
+   "files": [
+    {
+     "path": "src/heretic/main.py",
+     "complexity": 197,
+     "lines": 1485,
+     "bytes": 65364
+    },
+    {
+     "path": "src/heretic/model.py",
+     "complexity": 126,
+     "lines": 978,
+     "bytes": 39102
+    },
+    {
+     "path": "src/heretic/utils.py",
+     "complexity": 112,
+     "lines": 794,
+     "bytes": 26969
+    },
+    {
+     "path": "src/heretic/system.py",
+     "complexity": 87,
+     "lines": 478,
+     "bytes": 15825
+    },
+    {
+     "path": "src/heretic/plugin.py",
+     "complexity": 64,
+     "lines": 365,
+     "bytes": 13126
+    },
+    {
+     "path": "src/heretic/reproduce.py",
+     "complexity": 45,
+     "lines": 385,
+     "bytes": 11953
+    },
+    {
+     "path": "src/heretic/modifiers/abliteration.py",
+     "complexity": 34,
+     "lines": 466,
+     "bytes": 19765
+    },
+    {
+     "path": "src/heretic/evaluator.py",
+     "complexity": 32,
+     "lines": 230,
+     "bytes": 8042
+    },
+    {
+     "path": "src/heretic/modifiers/ara.py",
+     "complexity": 25,
+     "lines": 396,
+     "bytes": 16012
+    },
+    {
+     "path": "src/heretic/scorers/bert_classifier.py",
+     "complexity": 22,
+     "lines": 271,
+     "bytes": 10220
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 19.31,
+   "findings": 7,
+   "files": 26,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 7
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/heretic/modifiers/abliteration.py",
+     "name": "",
+     "line": 1,
+     "lines": 466
+    },
+    {
+     "category": "unused-file",
+     "path": "src/heretic/modifiers/ara.py",
+     "name": "",
+     "line": 1,
+     "lines": 396
+    },
+    {
+     "category": "unused-file",
+     "path": "src/heretic/scorers/bert_classifier.py",
+     "name": "",
+     "line": 1,
+     "lines": 271
+    },
+    {
+     "category": "unused-file",
+     "path": "src/heretic/scorers/keyword_rate.py",
+     "name": "",
+     "line": 1,
+     "lines": 157
+    },
+    {
+     "category": "unused-file",
+     "path": "src/heretic/scorers/kl_divergence.py",
+     "name": "",
+     "line": 1,
+     "lines": 77
+    },
+    {
+     "category": "unused-file",
+     "path": "src/heretic/scorers/benchmark_score.py",
+     "name": "",
+     "line": 1,
+     "lines": 74
+    },
+    {
+     "category": "unused-file",
+     "path": "src/heretic/progress.py",
+     "name": "",
+     "line": 1,
+     "lines": 40
+    }
+   ]
+  }
+ }
+}

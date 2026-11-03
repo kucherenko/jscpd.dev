@@ -1,0 +1,781 @@
+{
+ "name": "karpathy/nanochat",
+ "url": "https://github.com/karpathy/nanochat",
+ "appearances": [
+  {
+   "date": "2026-11-03",
+   "rank": 7,
+   "stars": 60004,
+   "starsToday": 321,
+   "headSha": "92d63d4e8bb4df75c3b71618f31ddde2378b2bcd",
+   "sources": 49,
+   "lines": 10016,
+   "clones": 22,
+   "duplicatedLines": 184,
+   "percentage": 1.84,
+   "codePercentage": 1.18,
+   "codeSources": 33,
+   "healthScore": 42.6,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T05:21:14.506Z",
+  "name": "karpathy/nanochat",
+  "url": "https://github.com/karpathy/nanochat",
+  "description": "The best ChatGPT that $100 can buy.",
+  "language": "Python",
+  "stars": 60004,
+  "starsToday": 321,
+  "defaultBranch": "master",
+  "headSha": "92d63d4e8bb4df75c3b71618f31ddde2378b2bcd",
+  "durationMs": 1115,
+  "total": {
+   "sources": 49,
+   "lines": 10016,
+   "tokens": 78802,
+   "clones": 22,
+   "duplicatedLines": 184,
+   "duplicatedTokens": 1796,
+   "percentage": 1.84,
+   "percentageTokens": 2.28
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 36,
+    "lines": 7810,
+    "clones": 14,
+    "duplicatedLines": 131,
+    "percentage": 1.68
+   },
+   {
+    "format": "text",
+    "sources": 3,
+    "lines": 184,
+    "clones": 7,
+    "duplicatedLines": 43,
+    "percentage": 23.37
+   },
+   {
+    "format": "bash",
+    "sources": 5,
+    "lines": 392,
+    "clones": 1,
+    "duplicatedLines": 10,
+    "percentage": 2.55
+   },
+   {
+    "format": "markdown",
+    "sources": 4,
+    "lines": 1561,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 1,
+    "lines": 69,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 16,
+    "tokens": 268,
+    "first": {
+     "name": "tests/test_attention_fallback.py",
+     "start": 160,
+     "end": 175
+    },
+    "others": [
+     {
+      "name": "tests/test_attention_fallback.py",
+      "start": 193,
+      "end": 208
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "k_init = torch.randn(B, T_prefill, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "v_init = torch.randn(B, T_prefill, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "q_single = torch.randn(B, 1, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "k_single = torch.randn(B, 1, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "v_single = torch.randn(B, 1, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "",
+      "def run():",
+      "    k_cache = torch.zeros(B, T_max, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "    v_cache = torch.zeros(B, T_max, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "    k_cache[:, :T_prefill, :, :] = k_init"
+     ],
+     "total": 16
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 105,
+    "first": {
+     "name": "tests/test_attention_fallback.py",
+     "start": 60,
+     "end": 66
+    },
+    "others": [
+     {
+      "name": "tests/test_attention_fallback.py",
+      "start": 74,
+      "end": 80
+     },
+     {
+      "name": "tests/test_attention_fallback.py",
+      "start": 89,
+      "end": 95
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "B, T, H, D = 2, 64, 4, 32",
+      "q = torch.randn(B, T, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "k = torch.randn(B, T, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "v = torch.randn(B, T, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "",
+      "def run():",
+      "    return flash_attn.flash_attn_func(q, k, v, causal=True, window_size=(T, 0))"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "B, T, H, D = 2, 128, 4, 32",
+      "q = torch.randn(B, T, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "k = torch.randn(B, T, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "v = torch.randn(B, T, H, D, device=self.DEVICE, dtype=self.DTYPE)",
+      "",
+      "def run():",
+      "    return flash_attn.flash_attn_func(q, k, v, causal=True, window_size=(-1, -1))"
+     ],
+     "total": 7
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "text",
+    "lines": 6,
+    "tokens": 85,
+    "first": {
+     "name": "dev/LOG.md",
+     "start": 505,
+     "end": 510
+    },
+    "others": [
+     {
+      "name": "dev/LOG.md",
+      "start": 517,
+      "end": 522
+     },
+     {
+      "name": "dev/LOG.md",
+      "start": 529,
+      "end": 534
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "Kaplan-style (all projections including lm_head and no embeddings)",
+      "",
+      "Optimal configurations (from quadratic fits):",
+      "FLOPs        Eff Params      Tokens          Ratio      Val BPB",
+      "-----------------------------------------------------------------",
+      "1e+18        110,678,115     1,241,505,403   11.2       0.8972"
+     ],
+     "total": 6
+    },
+    "excerptSecond": {
+     "lines": [
+      "Chinchilla-style (all parameters, period.)",
+      "",
+      "Optimal configurations (from quadratic fits):",
+      "FLOPs        Eff Params      Tokens          Ratio      Val BPB",
+      "-----------------------------------------------------------------",
+      "1e+18        416,320,605     1,232,157,011   3.0        0.8974"
+     ],
+     "total": 6
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 6,
+    "tokens": 101,
+    "first": {
+     "name": "tests/test_attention_fallback.py",
+     "start": 61,
+     "end": 66
+    },
+    "others": [
+     {
+      "name": "tests/test_attention_fallback.py",
+      "start": 121,
+      "end": 126
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 8,
+    "tokens": 86,
+    "first": {
+     "name": "scripts/chat_eval.py",
+     "start": 67,
+     "end": 74
+    },
+    "others": [
+     {
+      "name": "scripts/chat_eval.py",
+      "start": 141,
+      "end": 148
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 81,
+    "first": {
+     "name": "tests/test_attention_fallback.py",
+     "start": 135,
+     "end": 141
+    },
+    "others": [
+     {
+      "name": "tests/test_attention_fallback.py",
+      "start": 305,
+      "end": 310
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 8,
+    "tokens": 76,
+    "first": {
+     "name": "scripts/chat_rl.py",
+     "start": 32,
+     "end": 39
+    },
+    "others": [
+     {
+      "name": "scripts/chat_sft.py",
+      "start": 35,
+      "end": 42
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 7,
+    "tokens": 74,
+    "first": {
+     "name": "tests/test_attention_fallback.py",
+     "start": 77,
+     "end": 83
+    },
+    "others": [
+     {
+      "name": "tests/test_attention_fallback.py",
+      "start": 123,
+      "end": 129
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "bash",
+    "lines": 10,
+    "tokens": 73,
+    "first": {
+     "name": "runs/miniseries.sh",
+     "start": 72,
+     "end": 81
+    },
+    "others": [
+     {
+      "name": "runs/scaling_laws.sh",
+      "start": 84,
+      "end": 93
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 17,
+    "tokens": 73,
+    "first": {
+     "name": "scripts/base_train.py",
+     "start": 502,
+     "end": 518
+    },
+    "others": [
+     {
+      "name": "scripts/chat_sft.py",
+      "start": 417,
+      "end": 433
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 33,
+   "lines": 7099,
+   "tokens": 47616,
+   "clones": 8,
+   "duplicatedLines": 84,
+   "duplicatedTokens": 551,
+   "percentage": 1.18,
+   "percentageTokens": 1.16,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 29,
+     "lines": 6715,
+     "clones": 7,
+     "duplicatedLines": 74,
+     "percentage": 1.1
+    },
+    {
+     "format": "bash",
+     "sources": 4,
+     "lines": 384,
+     "clones": 1,
+     "duplicatedLines": 10,
+     "percentage": 2.6
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 86,
+     "first": {
+      "name": "scripts/chat_eval.py",
+      "start": 67,
+      "end": 74
+     },
+     "others": [
+      {
+       "name": "scripts/chat_eval.py",
+       "start": 141,
+       "end": 148
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "# Aggregate results across all ranks",
+       "if ddp:",
+       "    num_passed_tensor = torch.tensor([num_passed], dtype=torch.long, device=device)",
+       "    total_tensor = torch.tensor([total], dtype=torch.long, device=device)",
+       "    dist.all_reduce(num_passed_tensor, op=dist.ReduceOp.SUM)",
+       "    dist.all_reduce(total_tensor, op=dist.ReduceOp.SUM)",
+       "    num_passed = num_passed_tensor.item()",
+       "    total = total_tensor.item()"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 76,
+     "first": {
+      "name": "scripts/chat_rl.py",
+      "start": 32,
+      "end": 39
+     },
+     "others": [
+      {
+       "name": "scripts/chat_sft.py",
+       "start": 35,
+       "end": 42
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "parser = argparse.ArgumentParser(description=\"Reinforcement learning on GSM8K\")",
+       "# Logging",
+       "parser.add_argument(\"--run\", type=str, default=\"dummy\", help=\"wandb run name ('dummy' disables wandb logging)\")",
+       "# Runtime",
+       "parser.add_argument(\"--device-type\", type=str, default=\"\", help=\"cuda|cpu|mps (empty = autodetect)\")",
+       "# Model loading",
+       "parser.add_argument(\"--model-tag\", type=str, default=None, help=\"model tag to load from\")",
+       "parser.add_argument(\"--model-step\", type=int, default=None, help=\"model step to load from\")"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 10,
+     "tokens": 73,
+     "first": {
+      "name": "runs/miniseries.sh",
+      "start": 72,
+      "end": 81
+     },
+     "others": [
+      {
+       "name": "runs/scaling_laws.sh",
+       "start": 84,
+       "end": 93
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    --model-tag=\"${TAG}\" \\",
+       "    --core-metric-every=999999 \\",
+       "    --core-metric-max-per-task=-1 \\",
+       "    --sample-every=-1 \\",
+       "    --save-every=-1 \\",
+       "    $DEVICE_BATCH_SIZE_ARG \\",
+       "    2>&1 | tee \"$RESULTS_DIR/${TAG}_train.log\"",
+       "",
+       "END_TIME=$(date +%s)",
+       "TRAIN_TIME=$((END_TIME - START_TIME))"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 73,
+     "first": {
+      "name": "scripts/base_train.py",
+      "start": 502,
+      "end": 518
+     },
+     "others": [
+      {
+       "name": "scripts/chat_sft.py",
+       "start": 417,
+       "end": 433
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 68,
+     "first": {
+      "name": "scripts/base_train.py",
+      "start": 88,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "scripts/chat_sft.py",
+       "start": 76,
+       "end": 83
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 66,
+     "first": {
+      "name": "tasks/arc.py",
+      "start": 14,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "tasks/mmlu.py",
+       "start": 19,
+       "end": 31
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 59,
+     "first": {
+      "name": "scripts/base_train.py",
+      "start": 533,
+      "end": 540
+     },
+     "others": [
+      {
+       "name": "scripts/chat_sft.py",
+       "start": 444,
+       "end": 451
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 12,
+     "tokens": 50,
+     "first": {
+      "name": "tasks/gsm8k.py",
+      "start": 42,
+      "end": 53
+     },
+     "others": [
+      {
+       "name": "tasks/humaneval.py",
+       "start": 51,
+       "end": 62
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 42.6,
+   "grade": "D",
+   "size": {
+    "lines": 8159,
+    "files": 39,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.7,
+     "adjusted": 2.1,
+     "lines": 141,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 84.4
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 28,
+     "adjusted": 22.9,
+     "lines": 2177,
+     "halfLife": 7.5,
+     "coverage": 95.3,
+     "weight": 0.953,
+     "score": 12
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 24.6,
+     "adjusted": 23.9,
+     "lines": 2010,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 71.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 1009,
+   "mean": 25.9,
+   "files": [
+    {
+     "path": "scripts/base_train.py",
+     "complexity": 90,
+     "lines": 604,
+     "bytes": 32313
+    },
+    {
+     "path": "nanochat/gpt.py",
+     "complexity": 76,
+     "lines": 555,
+     "bytes": 28918
+    },
+    {
+     "path": "scripts/chat_sft.py",
+     "complexity": 76,
+     "lines": 499,
+     "bytes": 24733
+    },
+    {
+     "path": "nanochat/engine.py",
+     "complexity": 63,
+     "lines": 352,
+     "bytes": 15533
+    },
+    {
+     "path": "nanochat/common.py",
+     "complexity": 49,
+     "lines": 328,
+     "bytes": 13560
+    },
+    {
+     "path": "nanochat/tokenizer.py",
+     "complexity": 49,
+     "lines": 279,
+     "bytes": 12911
+    },
+    {
+     "path": "nanochat/optim.py",
+     "complexity": 46,
+     "lines": 459,
+     "bytes": 23314
+    },
+    {
+     "path": "nanochat/core_eval.py",
+     "complexity": 43,
+     "lines": 262,
+     "bytes": 11572
+    },
+    {
+     "path": "nanochat/checkpoint_manager.py",
+     "complexity": 38,
+     "lines": 193,
+     "bytes": 8722
+    },
+    {
+     "path": "tasks/common.py",
+     "complexity": 36,
+     "lines": 222,
+     "bytes": 8738
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 28,
+   "findings": 11,
+   "files": 36,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 8
+    },
+    {
+     "category": "unused-import",
+     "count": 3
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "scripts/base_train.py",
+     "name": "",
+     "line": 1,
+     "lines": 604
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/chat_sft.py",
+     "name": "",
+     "line": 1,
+     "lines": 499
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/chat_rl.py",
+     "name": "",
+     "line": 1,
+     "lines": 326
+    },
+    {
+     "category": "unused-file",
+     "path": "nanochat/fp8.py",
+     "name": "",
+     "line": 1,
+     "lines": 266
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/tok_eval.py",
+     "name": "",
+     "line": 1,
+     "lines": 243
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/chat_cli.py",
+     "name": "",
+     "line": 1,
+     "lines": 100
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/tok_train.py",
+     "name": "",
+     "line": 1,
+     "lines": 91
+    },
+    {
+     "category": "unused-file",
+     "path": "tasks/smoltalk.py",
+     "name": "",
+     "line": 1,
+     "lines": 45
+    },
+    {
+     "category": "unused-import",
+     "path": "nanochat/gpt.py",
+     "name": "partial",
+     "line": 15,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "nanochat/gpt.py",
+     "name": "get_dist_info",
+     "line": 22,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

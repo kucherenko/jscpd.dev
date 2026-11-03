@@ -1,0 +1,1250 @@
+{
+ "name": "vercel-labs/agent-desktop",
+ "url": "https://github.com/vercel-labs/agent-desktop",
+ "appearances": [
+  {
+   "date": "2026-11-03",
+   "rank": 1,
+   "stars": 10513,
+   "starsToday": 2275,
+   "headSha": "d3dc190afbf34cd2377252398ddd5c30efbd093a",
+   "sources": 3372,
+   "lines": 507501,
+   "clones": 2502,
+   "duplicatedLines": 36884,
+   "percentage": 7.27,
+   "codePercentage": 5.66,
+   "codeSources": 2668,
+   "healthScore": 68.8,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T05:21:14.506Z",
+  "name": "vercel-labs/agent-desktop",
+  "url": "https://github.com/vercel-labs/agent-desktop",
+  "description": "Computer use CLI for AI agents",
+  "language": "Rust",
+  "stars": 10513,
+  "starsToday": 2275,
+  "defaultBranch": "main",
+  "headSha": "d3dc190afbf34cd2377252398ddd5c30efbd093a",
+  "durationMs": 4254,
+  "total": {
+   "sources": 3372,
+   "lines": 507501,
+   "tokens": 3713254,
+   "clones": 2502,
+   "duplicatedLines": 36884,
+   "duplicatedTokens": 209698,
+   "percentage": 7.27,
+   "percentageTokens": 5.65
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 2593,
+    "lines": 366842,
+    "clones": 1701,
+    "duplicatedLines": 18862,
+    "percentage": 5.14
+   },
+   {
+    "format": "powershell",
+    "sources": 139,
+    "lines": 44842,
+    "clones": 415,
+    "duplicatedLines": 4901,
+    "percentage": 10.93
+   },
+   {
+    "format": "json",
+    "sources": 156,
+    "lines": 29054,
+    "clones": 284,
+    "duplicatedLines": 11646,
+    "percentage": 40.08
+   },
+   {
+    "format": "python",
+    "sources": 164,
+    "lines": 22419,
+    "clones": 27,
+    "duplicatedLines": 261,
+    "percentage": 1.16
+   },
+   {
+    "format": "yaml",
+    "sources": 29,
+    "lines": 2868,
+    "clones": 26,
+    "duplicatedLines": 509,
+    "percentage": 17.75
+   },
+   {
+    "format": "csharp",
+    "sources": 27,
+    "lines": 7621,
+    "clones": 20,
+    "duplicatedLines": 292,
+    "percentage": 3.83
+   },
+   {
+    "format": "markup",
+    "sources": 8,
+    "lines": 643,
+    "clones": 10,
+    "duplicatedLines": 240,
+    "percentage": 37.33
+   },
+   {
+    "format": "javascript",
+    "sources": 32,
+    "lines": 5717,
+    "clones": 9,
+    "duplicatedLines": 96,
+    "percentage": 1.68
+   },
+   {
+    "format": "c-header",
+    "sources": 2,
+    "lines": 2318,
+    "clones": 7,
+    "duplicatedLines": 51,
+    "percentage": 2.2
+   },
+   {
+    "format": "c",
+    "sources": 8,
+    "lines": 929,
+    "clones": 2,
+    "duplicatedLines": 15,
+    "percentage": 1.61
+   }
+  ],
+  "topClones": [
+   {
+    "format": "json",
+    "lines": 1360,
+    "tokens": 3724,
+    "first": {
+     "name": "probes/windows/15-vocabulary/captures/uia-vocabulary-wpf-ci.json",
+     "start": 56,
+     "end": 1415
+    },
+    "others": [
+     {
+      "name": "probes/windows/15-vocabulary/captures/uia-vocabulary-wpf-devbox.json",
+      "start": 56,
+      "end": 1415
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "                                    \"read_median_micros\":  3978,",
+      "                                    \"repeats\":  7,",
+      "                                    \"successful_reads\":  3482",
+      "                                },",
+      "                   \"note\":  \"min is the least noise-sensitive estimator; the spread is reported so a claim can be checked against it\",",
+      "                   \"warmed_up\":  true",
+      "               },",
+      "\"cached_labeled_by\":  {",
+      "                          \"cached_nodes\":  81,",
+      "                          \"labelled_nodes\":  2,"
+     ],
+     "total": 1360
+    },
+    "kind": "data"
+   },
+   {
+    "format": "markup",
+    "lines": 53,
+    "tokens": 981,
+    "first": {
+     "name": ".agents/skills/architecture-diagram/references/template.html",
+     "start": 6,
+     "end": 58
+    },
+    "others": [
+     {
+      "name": "apps/docs/public/desktop/diagrams/architecture/index.html",
+      "start": 6,
+      "end": 58
+     },
+     {
+      "name": "apps/docs/public/desktop/diagrams/ref-resolution/index.html",
+      "start": 6,
+      "end": 58
+     },
+     {
+      "name": "apps/docs/public/desktop/diagrams/snapshot-loop/index.html",
+      "start": 6,
+      "end": 58
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "<title>Diagram name</title>",
+      "<script>",
+      "  var t = new URLSearchParams(location.search).get(\"theme\");",
+      "  if (t === \"light\" || t === \"dark\") document.documentElement.setAttribute(\"data-theme\", t);",
+      "  if (window.self === window.top) document.documentElement.setAttribute(\"data-top\", \"\");",
+      "</script>",
+      "<style>",
+      "  :root {",
+      "    color-scheme: dark;",
+      "    --bg: #000; --panel: #0a0a0a; --node: #111; --border: #5c5c5c;"
+     ],
+     "total": 53
+    },
+    "kind": "markup"
+   },
+   {
+    "format": "json",
+    "lines": 748,
+    "tokens": 2421,
+    "first": {
+     "name": "probes/windows/19-semantic-actions/captures/semantic-set-ci.json",
+     "start": 1,
+     "end": 748
+    },
+    "others": [
+     {
+      "name": "probes/windows/19-semantic-actions/captures/semantic-set-devbox.json",
+      "start": 1,
+      "end": 748
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "    \"winforms\":  {",
+      "                     \"ExpandCollapse\":  {",
+      "                                            \"automation_id_digest\":  \"fe622ad1c908a3ce\",",
+      "                                            \"call\":  {",
+      "                                                         \"before\":  {",
+      "                                                                        \"ok\":  true,",
+      "                                                                        \"state\":  \"Collapsed\"",
+      "                                                                    },",
+      "                                                         \"collapse\":  {"
+     ],
+     "total": 748
+    },
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 642,
+    "tokens": 1746,
+    "first": {
+     "name": "probes/windows/15-vocabulary/captures/uia-vocabulary-ci.json",
+     "start": 56,
+     "end": 697
+    },
+    "others": [
+     {
+      "name": "probes/windows/15-vocabulary/captures/uia-vocabulary-devbox.json",
+      "start": 56,
+      "end": 697
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 293,
+    "tokens": 931,
+    "first": {
+     "name": "probes/windows/19-semantic-actions/captures/semantic-failure-ci.json",
+     "start": 1,
+     "end": 293
+    },
+    "others": [
+     {
+      "name": "probes/windows/19-semantic-actions/captures/semantic-failure-devbox.json",
+      "start": 1,
+      "end": 293
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 304,
+    "tokens": 857,
+    "first": {
+     "name": "probes/windows/19-semantic-actions/captures/semantic-combo-ci.json",
+     "start": 1,
+     "end": 304
+    },
+    "others": [
+     {
+      "name": "probes/windows/19-semantic-actions/captures/semantic-combo-devbox.json",
+      "start": 1,
+      "end": 304
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 87,
+    "first": {
+     "name": "crates/core/src/commands/check.rs",
+     "start": 1,
+     "end": 15
+    },
+    "others": [
+     {
+      "name": "crates/core/src/commands/clear.rs",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "crates/core/src/commands/click.rs",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "crates/core/src/commands/collapse.rs",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "crates/core/src/commands/expand.rs",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "crates/core/src/commands/focus.rs",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "crates/core/src/commands/scroll_to.rs",
+      "start": 1,
+      "end": 18
+     },
+     {
+      "name": "crates/core/src/commands/toggle.rs",
+      "start": 1,
+      "end": 15
+     },
+     {
+      "name": "crates/core/src/commands/triple_click.rs",
+      "start": 1,
+      "end": 18
+     }
+    ],
+    "copies": 10,
+    "kind": "code"
+   },
+   {
+    "format": "powershell",
+    "lines": 16,
+    "tokens": 114,
+    "first": {
+     "name": "probes/windows/14-ci-capability/probe.ps1",
+     "start": 50,
+     "end": 65
+    },
+    "others": [
+     {
+      "name": "probes/windows/15-vocabulary/probe.ps1",
+      "start": 55,
+      "end": 70
+     },
+     {
+      "name": "probes/windows/16-observation/probe.ps1",
+      "start": 62,
+      "end": 77
+     },
+     {
+      "name": "probes/windows/17-resolution/probe.ps1",
+      "start": 59,
+      "end": 74
+     },
+     {
+      "name": "probes/windows/18-actionability/probe.ps1",
+      "start": 47,
+      "end": 62
+     },
+     {
+      "name": "probes/windows/20-input-synthesis/probe.ps1",
+      "start": 53,
+      "end": 68
+     },
+     {
+      "name": "probes/windows/21-system-lifecycle/measure-cost.ps1",
+      "start": 30,
+      "end": 45
+     }
+    ],
+    "copies": 7,
+    "kind": "code"
+   },
+   {
+    "format": "powershell",
+    "lines": 11,
+    "tokens": 104,
+    "first": {
+     "name": "probes/windows/22-capture-clipboard/measure-cost.ps1",
+     "start": 27,
+     "end": 37
+    },
+    "others": [
+     {
+      "name": "probes/windows/22-capture-clipboard/probe.ps1",
+      "start": 53,
+      "end": 65
+     },
+     {
+      "name": "probes/windows/23-signals-menus/measure-cost.ps1",
+      "start": 44,
+      "end": 56
+     },
+     {
+      "name": "probes/windows/23-signals-menus/probe-root-classify.ps1",
+      "start": 68,
+      "end": 80
+     },
+     {
+      "name": "probes/windows/23-signals-menus/probe.ps1",
+      "start": 58,
+      "end": 70
+     },
+     {
+      "name": "probes/windows/24-fixture-e2e/01-fixture-toolchain.ps1",
+      "start": 85,
+      "end": 97
+     },
+     {
+      "name": "probes/windows/25-packaging/01-archive-and-download-tools.ps1",
+      "start": 62,
+      "end": 74
+     }
+    ],
+    "copies": 7,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 111,
+    "tokens": 307,
+    "first": {
+     "name": "probes/windows/16-observation/captures/observation-chromium-devbox.json",
+     "start": 82,
+     "end": 192
+    },
+    "others": [
+     {
+      "name": "probes/windows/16-observation/captures/observation-chromium-devbox.json",
+      "start": 92,
+      "end": 202
+     },
+     {
+      "name": "probes/windows/16-observation/captures/observation-chromium-devbox.json",
+      "start": 212,
+      "end": 322
+     }
+    ],
+    "copies": 3,
+    "kind": "data"
+   }
+  ],
+  "code": {
+   "sources": 2668,
+   "lines": 406813,
+   "tokens": 2832971,
+   "clones": 2026,
+   "duplicatedLines": 23021,
+   "duplicatedTokens": 154951,
+   "percentage": 5.66,
+   "percentageTokens": 5.47,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 2502,
+     "lines": 352942,
+     "clones": 1617,
+     "duplicatedLines": 18084,
+     "percentage": 5.12
+    },
+    {
+     "format": "powershell",
+     "sources": 86,
+     "lines": 35249,
+     "clones": 380,
+     "duplicatedLines": 4579,
+     "percentage": 12.99
+    },
+    {
+     "format": "csharp",
+     "sources": 8,
+     "lines": 5471,
+     "clones": 20,
+     "duplicatedLines": 292,
+     "percentage": 5.34
+    },
+    {
+     "format": "c-header",
+     "sources": 2,
+     "lines": 2318,
+     "clones": 7,
+     "duplicatedLines": 51,
+     "percentage": 2.2
+    },
+    {
+     "format": "c",
+     "sources": 5,
+     "lines": 95,
+     "clones": 2,
+     "duplicatedLines": 15,
+     "percentage": 15.79
+    },
+    {
+     "format": "javascript",
+     "sources": 17,
+     "lines": 3013,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 26,
+     "lines": 2771,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 13,
+     "lines": 2528,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "objectivec",
+     "sources": 9,
+     "lines": 2426,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 87,
+     "first": {
+      "name": "crates/core/src/commands/check.rs",
+      "start": 1,
+      "end": 15
+     },
+     "others": [
+      {
+       "name": "crates/core/src/commands/clear.rs",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "crates/core/src/commands/click.rs",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "crates/core/src/commands/collapse.rs",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "crates/core/src/commands/expand.rs",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "crates/core/src/commands/focus.rs",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "crates/core/src/commands/scroll_to.rs",
+       "start": 1,
+       "end": 18
+      },
+      {
+       "name": "crates/core/src/commands/toggle.rs",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "crates/core/src/commands/triple_click.rs",
+       "start": 1,
+       "end": 18
+      }
+     ],
+     "copies": 10,
+     "excerpt": {
+      "lines": [
+       "use crate::{",
+       "    AppError,",
+       "    actions::action::Action,",
+       "    adapter::PlatformAdapter,",
+       "    commands::helpers::{RefArgs, execute_ref_action_with_context},",
+       "    context::CommandContext,",
+       "};",
+       "use serde_json::Value;",
+       "",
+       "pub fn execute("
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 16,
+     "tokens": 114,
+     "first": {
+      "name": "probes/windows/14-ci-capability/probe.ps1",
+      "start": 50,
+      "end": 65
+     },
+     "others": [
+      {
+       "name": "probes/windows/15-vocabulary/probe.ps1",
+       "start": 55,
+       "end": 70
+      },
+      {
+       "name": "probes/windows/16-observation/probe.ps1",
+       "start": 62,
+       "end": 77
+      },
+      {
+       "name": "probes/windows/17-resolution/probe.ps1",
+       "start": 59,
+       "end": 74
+      },
+      {
+       "name": "probes/windows/18-actionability/probe.ps1",
+       "start": 47,
+       "end": 62
+      },
+      {
+       "name": "probes/windows/20-input-synthesis/probe.ps1",
+       "start": 53,
+       "end": 68
+      },
+      {
+       "name": "probes/windows/21-system-lifecycle/measure-cost.ps1",
+       "start": 30,
+       "end": 45
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "function Write-CapabilityCapture {",
+       "    param(",
+       "        [Parameter(Mandatory = $true)][string]$Name,",
+       "        [Parameter(Mandatory = $true)][AllowEmptyString()][string]$Content",
+       "    )",
+       "    $redacted = Protect-ProbeText -Text $Content",
+       "    $path = Join-Path $script:CaptureDir $Name",
+       "    $utf8NoBom = New-Object System.Text.UTF8Encoding $false",
+       "    [IO.File]::WriteAllText($path, $redacted, $utf8NoBom)",
+       "    if (-not (Test-CaptureRedaction -Path $path)) {"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 11,
+     "tokens": 104,
+     "first": {
+      "name": "probes/windows/22-capture-clipboard/measure-cost.ps1",
+      "start": 27,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "probes/windows/22-capture-clipboard/probe.ps1",
+       "start": 53,
+       "end": 65
+      },
+      {
+       "name": "probes/windows/23-signals-menus/measure-cost.ps1",
+       "start": 44,
+       "end": 56
+      },
+      {
+       "name": "probes/windows/23-signals-menus/probe-root-classify.ps1",
+       "start": 68,
+       "end": 80
+      },
+      {
+       "name": "probes/windows/23-signals-menus/probe.ps1",
+       "start": 58,
+       "end": 70
+      },
+      {
+       "name": "probes/windows/24-fixture-e2e/01-fixture-toolchain.ps1",
+       "start": 85,
+       "end": 97
+      },
+      {
+       "name": "probes/windows/25-packaging/01-archive-and-download-tools.ps1",
+       "start": 62,
+       "end": 74
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "    $redacted = Protect-ProbeText -Text $Content",
+       "    $path = Join-Path $script:CaptureDir $Name",
+       "    $utf8NoBom = New-Object System.Text.UTF8Encoding $false",
+       "    [IO.File]::WriteAllText($path, $redacted, $utf8NoBom)",
+       "    $normalized = Get-NormalizedCapture -Text $redacted",
+       "    [IO.File]::WriteAllText(($path + '.normalized'), $normalized, $utf8NoBom)",
+       "    if (-not (Test-CaptureRedaction -Path $path)) { throw \"redaction residue in $path\" }",
+       "    return $path",
+       "}",
+       ""
+      ],
+      "total": 11
+     },
+     "excerptSecond": {
+      "lines": [
+       "$redacted = Protect-ProbeText -Text $Content",
+       "$path = Join-Path $script:CaptureDir $Name",
+       "$utf8NoBom = New-Object System.Text.UTF8Encoding $false",
+       "[IO.File]::WriteAllText($path, $redacted, $utf8NoBom)",
+       "$normalized = Get-NormalizedCapture -Text $redacted",
+       "[IO.File]::WriteAllText(($path + '.normalized'), $normalized, $utf8NoBom)",
+       "if (-not (Test-CaptureRedaction -Path $path)) {",
+       "    throw \"redaction residue in $path\"",
+       "}",
+       "return $path"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 87,
+     "first": {
+      "name": "crates/core/src/commands/wait_resolution_tests.rs",
+      "start": 109,
+      "end": 123
+     },
+     "others": [
+      {
+       "name": "crates/core/src/ref_action/ref_action_exactly_once_tests.rs",
+       "start": 200,
+       "end": 214
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_tests.rs",
+       "start": 201,
+       "end": 215
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_app_not_found_tests.rs",
+       "start": 16,
+       "end": 30
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_process_state_tests.rs",
+       "start": 19,
+       "end": 33
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_success_tests.rs",
+       "start": 20,
+       "end": 34
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_tests.rs",
+       "start": 127,
+       "end": 141
+      },
+      {
+       "name": "crates/core/src/trace/trace_artifacts_tests.rs",
+       "start": 36,
+       "end": 50
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 67,
+     "first": {
+      "name": "crates/core/src/ref_action/ref_action_wait_app_not_found_tests.rs",
+      "start": 84,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_app_not_found_tests.rs",
+       "start": 123,
+       "end": 134
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_app_not_found_tests.rs",
+       "start": 199,
+       "end": 210
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_lease_tests.rs",
+       "start": 86,
+       "end": 97
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_process_state_tests.rs",
+       "start": 87,
+       "end": 98
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_success_tests.rs",
+       "start": 74,
+       "end": 85
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_tests.rs",
+       "start": 62,
+       "end": 73
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_tests.rs",
+       "start": 101,
+       "end": 112
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_tests.rs",
+       "start": 318,
+       "end": 329
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 18,
+     "tokens": 150,
+     "first": {
+      "name": "probes/windows/24-fixture-e2e/01-fixture-toolchain.ps1",
+      "start": 78,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "probes/windows/24-fixture-e2e/04-explorer-below-fold.ps1",
+       "start": 87,
+       "end": 104
+      },
+      {
+       "name": "probes/windows/24-fixture-e2e/06-cell-role-provider.ps1",
+       "start": 76,
+       "end": 93
+      },
+      {
+       "name": "probes/windows/24-fixture-e2e/09-cell-role-stock-dgv.ps1",
+       "start": 64,
+       "end": 81
+      },
+      {
+       "name": "probes/windows/24-fixture-e2e/10-hosted-modern-capture.ps1",
+       "start": 58,
+       "end": 75
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 9,
+     "tokens": 91,
+     "first": {
+      "name": "probes/windows/14-ci-capability/probe.ps1",
+      "start": 50,
+      "end": 58
+     },
+     "others": [
+      {
+       "name": "probes/windows/22-capture-clipboard/probe.ps1",
+       "start": 48,
+       "end": 56
+      },
+      {
+       "name": "probes/windows/23-signals-menus/measure-cost.ps1",
+       "start": 39,
+       "end": 47
+      },
+      {
+       "name": "probes/windows/23-signals-menus/probe-root-classify.ps1",
+       "start": 63,
+       "end": 71
+      },
+      {
+       "name": "probes/windows/23-signals-menus/probe.ps1",
+       "start": 53,
+       "end": 61
+      },
+      {
+       "name": "probes/windows/24-fixture-e2e/01-fixture-toolchain.ps1",
+       "start": 80,
+       "end": 88
+      },
+      {
+       "name": "probes/windows/25-packaging/01-archive-and-download-tools.ps1",
+       "start": 57,
+       "end": 65
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 81,
+     "first": {
+      "name": "crates/core/src/ref_action/presentation_lease_tests.rs",
+      "start": 22,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "crates/core/src/ref_action/presentation_shared_cursor_tests.rs",
+       "start": 40,
+       "end": 53
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_tests.rs",
+       "start": 108,
+       "end": 121
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_tests.rs",
+       "start": 154,
+       "end": 167
+      },
+      {
+       "name": "crates/core/src/ref_action/ref_action_wait_success_tests.rs",
+       "start": 61,
+       "end": 74
+      },
+      {
+       "name": "crates/core/src/trace/trace_artifacts_tests.rs",
+       "start": 87,
+       "end": 100
+      },
+      {
+       "name": "crates/core/src/trace/trace_artifacts_tests.rs",
+       "start": 151,
+       "end": 164
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 66,
+     "tokens": 482,
+     "first": {
+      "name": "probes/windows/scratch/run-input-dogfood.ps1",
+      "start": 241,
+      "end": 306
+     },
+     "others": [
+      {
+       "name": "probes/windows/scratch/run-lifecycle-dogfood.ps1",
+       "start": 91,
+       "end": 156
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "powershell",
+     "lines": 20,
+     "tokens": 151,
+     "first": {
+      "name": "probes/windows/24-fixture-e2e/01-fixture-toolchain.ps1",
+      "start": 78,
+      "end": 97
+     },
+     "others": [
+      {
+       "name": "probes/windows/24-fixture-e2e/05-hwnd-wrap-churn.ps1",
+       "start": 78,
+       "end": 97
+      },
+      {
+       "name": "probes/windows/24-fixture-e2e/07-split-integrity-effects.ps1",
+       "start": 74,
+       "end": 88
+      },
+      {
+       "name": "probes/windows/24-fixture-e2e/08-chromium-content.ps1",
+       "start": 87,
+       "end": 101
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "scripts/check-rust-file-size.sh"
+    ]
+   }
+  },
+  "health": {
+   "score": 68.8,
+   "grade": "C",
+   "size": {
+    "lines": 461348,
+    "files": 3054,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 5.3,
+     "adjusted": 5.3,
+     "lines": 24489,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "powershell",
+      "python",
+      "csharp",
+      "bash",
+      "javascript",
+      "objectivec",
+      "c-header",
+      "swift",
+      "c",
+      "tsx",
+      "typescript"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 64.9
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 2.1,
+     "adjusted": 2.2,
+     "lines": 608,
+     "halfLife": 7.5,
+     "coverage": 6.3,
+     "weight": 0.063,
+     "score": 81.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 23.6,
+     "adjusted": 23.6,
+     "lines": 109054,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 72.1
+    }
+   ]
+  },
+  "complexity": {
+   "total": 63370,
+   "mean": 20.7,
+   "files": [
+    {
+     "path": "probes/windows/26-shell-surfaces/shell-probe.cs",
+     "complexity": 454,
+     "lines": 2051,
+     "bytes": 105414
+    },
+    {
+     "path": "probes/windows/scratch/run-capture-clipboard-dogfood.ps1",
+     "complexity": 269,
+     "lines": 1029,
+     "bytes": 51809
+    },
+    {
+     "path": "probes/windows/common.ps1",
+     "complexity": 253,
+     "lines": 1115,
+     "bytes": 56786
+    },
+    {
+     "path": "probes/windows/scratch/run-semantic-dogfood.ps1",
+     "complexity": 250,
+     "lines": 945,
+     "bytes": 47306
+    },
+    {
+     "path": "probes/windows/08-uia3-com.cs",
+     "complexity": 242,
+     "lines": 1440,
+     "bytes": 70503
+    },
+    {
+     "path": "probes/windows/scratch/run-actionability-dogfood.ps1",
+     "complexity": 215,
+     "lines": 894,
+     "bytes": 46012
+    },
+    {
+     "path": "scripts/check_architecture.py",
+     "complexity": 204,
+     "lines": 663,
+     "bytes": 33362
+    },
+    {
+     "path": "tests/e2e-linux/scenarios/ref_contract.py",
+     "complexity": 198,
+     "lines": 369,
+     "bytes": 20263
+    },
+    {
+     "path": "probes/windows/scratch/run-input-dogfood.ps1",
+     "complexity": 195,
+     "lines": 1106,
+     "bytes": 50448
+    },
+    {
+     "path": "probes/windows/01-tree-dump.ps1",
+     "complexity": 181,
+     "lines": 773,
+     "bytes": 44621
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 2.11,
+   "findings": 11,
+   "files": 228,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 5
+    },
+    {
+     "category": "unused-export",
+     "count": 4
+    },
+    {
+     "category": "unused-import",
+     "count": 2
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "crates/core/src/trace/trace_read/viewer.js",
+     "name": "",
+     "line": 1,
+     "lines": 347
+    },
+    {
+     "category": "unused-file",
+     "path": "src/visual_debug/viewer.js",
+     "name": "",
+     "line": 1,
+     "lines": 161
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/linux/src/system/close/close_live/owners.py",
+     "name": "",
+     "line": 1,
+     "lines": 49
+    },
+    {
+     "category": "unused-file",
+     "path": "src/visual_debug/viewer_filter.js",
+     "name": "",
+     "line": 1,
+     "lines": 33
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/docs/lib/utils.ts",
+     "name": "",
+     "line": 1,
+     "lines": 6
+    },
+    {
+     "category": "unused-export",
+     "path": "apps/docs/lib/geistdocs/i18n.ts",
+     "name": "i18nProvider",
+     "line": 11,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "scripts/linux-live-gate.py",
+     "name": "CLI_WAYLAND",
+     "line": 21,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "scripts/linux-live-gate.py",
+     "name": "CURSOR_WAYLAND",
+     "line": 21,
+     "lines": 3
+    },
+    {
+     "category": "unused-export",
+     "path": "apps/docs/lib/geistdocs/site-url.ts",
+     "name": "isSiteUrlConfigured",
+     "line": 29,
+     "lines": 1
+    },
+    {
+     "category": "unused-export",
+     "path": "apps/docs/lib/geistdocs/source.ts",
+     "name": "getPageImage",
+     "line": 23,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

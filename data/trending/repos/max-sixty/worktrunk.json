@@ -1,0 +1,921 @@
+{
+ "name": "max-sixty/worktrunk",
+ "url": "https://github.com/max-sixty/worktrunk",
+ "appearances": [
+  {
+   "date": "2026-11-03",
+   "rank": 6,
+   "stars": 10128,
+   "starsToday": 77,
+   "headSha": "0162047ee32ac4acbb67e51d252a89e2d8b88a09",
+   "sources": 587,
+   "lines": 337311,
+   "clones": 2068,
+   "duplicatedLines": 37056,
+   "percentage": 10.99,
+   "codePercentage": 1.81,
+   "codeSources": 226,
+   "healthScore": 43.4,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T05:21:14.506Z",
+  "name": "max-sixty/worktrunk",
+  "url": "https://github.com/max-sixty/worktrunk",
+  "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+  "language": "Rust",
+  "stars": 10128,
+  "starsToday": 77,
+  "defaultBranch": "main",
+  "headSha": "0162047ee32ac4acbb67e51d252a89e2d8b88a09",
+  "durationMs": 2373,
+  "total": {
+   "sources": 587,
+   "lines": 337311,
+   "tokens": 2064382,
+   "clones": 2068,
+   "duplicatedLines": 37056,
+   "duplicatedTokens": 265551,
+   "percentage": 10.99,
+   "percentageTokens": 12.86
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 297,
+    "lines": 282248,
+    "clones": 1796,
+    "duplicatedLines": 18980,
+    "percentage": 6.72
+   },
+   {
+    "format": "markdown",
+    "sources": 75,
+    "lines": 27520,
+    "clones": 136,
+    "duplicatedLines": 12081,
+    "percentage": 43.9
+   },
+   {
+    "format": "text",
+    "sources": 43,
+    "lines": 3316,
+    "clones": 42,
+    "duplicatedLines": 2319,
+    "percentage": 69.93
+   },
+   {
+    "format": "json",
+    "sources": 27,
+    "lines": 6558,
+    "clones": 37,
+    "duplicatedLines": 2072,
+    "percentage": 31.59
+   },
+   {
+    "format": "yaml",
+    "sources": 30,
+    "lines": 3509,
+    "clones": 17,
+    "duplicatedLines": 240,
+    "percentage": 6.84
+   },
+   {
+    "format": "toml",
+    "sources": 28,
+    "lines": 2658,
+    "clones": 14,
+    "duplicatedLines": 1006,
+    "percentage": 37.85
+   },
+   {
+    "format": "bash",
+    "sources": 30,
+    "lines": 949,
+    "clones": 13,
+    "duplicatedLines": 240,
+    "percentage": 25.29
+   },
+   {
+    "format": "javascript",
+    "sources": 15,
+    "lines": 3477,
+    "clones": 6,
+    "duplicatedLines": 56,
+    "percentage": 1.61
+   },
+   {
+    "format": "tsx",
+    "sources": 2,
+    "lines": 1010,
+    "clones": 4,
+    "duplicatedLines": 32,
+    "percentage": 3.17
+   },
+   {
+    "format": "python",
+    "sources": 7,
+    "lines": 3501,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 0.2
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markdown",
+    "lines": 1536,
+    "tokens": 7402,
+    "first": {
+     "name": "plugins/worktrunk/skills/worktrunk/reference/config.md",
+     "start": 1,
+     "end": 1536
+    },
+    "others": [
+     {
+      "name": "skills/worktrunk/reference/config.md",
+      "start": 1,
+      "end": 1536
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# wt config",
+      "",
+      "Manage user & project configs. Includes shell integration, hooks, and saved state.",
+      "",
+      "## Examples",
+      "",
+      "Install shell integration (required for directory switching):",
+      "",
+      "```console",
+      "$ wt config shell install"
+     ],
+     "total": 1536
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 581,
+    "tokens": 6152,
+    "first": {
+     "name": "plugins/worktrunk/skills/worktrunk/reference/list.md",
+     "start": 1,
+     "end": 581
+    },
+    "others": [
+     {
+      "name": "skills/worktrunk/reference/list.md",
+      "start": 1,
+      "end": 581
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# wt list",
+      "",
+      "List worktrees and their status.",
+      "",
+      "Shows uncommitted changes, divergence from the default branch and remote, and optional CI status and LLM summaries.",
+      "",
+      "The table renders progressively: branch names, paths, and commit hashes appear immediately, then status, divergence, and other columns fill in as background gi…",
+      "",
+      "## Full mode",
+      ""
+     ],
+     "total": 581
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "text",
+    "lines": 1027,
+    "tokens": 2289,
+    "first": {
+     "name": "docs/src/content/docs/step.md",
+     "start": 16,
+     "end": 1042
+    },
+    "others": [
+     {
+      "name": "plugins/worktrunk/skills/worktrunk/reference/step.md",
+      "start": 10,
+      "end": 1030
+     },
+     {
+      "name": "skills/worktrunk/reference/step.md",
+      "start": 10,
+      "end": 1030
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "$ wt step commit",
+      "◎ Generating commit message and committing changes... (2 files, +26)",
+      "  feat(validation): add input validation utilities",
+      "✓ Committed changes @ a1b2c3d",
+      "```",
+      "",
+      "Manual merge workflow with review between steps:",
+      "",
+      "```console",
+      "$ wt step commit"
+     ],
+     "total": 1027
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 299,
+    "tokens": 4236,
+    "first": {
+     "name": "plugins/worktrunk/skills/worktrunk/reference/faq.md",
+     "start": 1,
+     "end": 299
+    },
+    "others": [
+     {
+      "name": "skills/worktrunk/reference/faq.md",
+      "start": 1,
+      "end": 299
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 365,
+    "tokens": 4008,
+    "first": {
+     "name": "plugins/worktrunk/skills/worktrunk/reference/hook.md",
+     "start": 1,
+     "end": 365
+    },
+    "others": [
+     {
+      "name": "skills/worktrunk/reference/hook.md",
+      "start": 1,
+      "end": 365
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 1015,
+    "tokens": 3901,
+    "first": {
+     "name": "plugins/worktrunk/skills/worktrunk/reference/step.md",
+     "start": 1,
+     "end": 1015
+    },
+    "others": [
+     {
+      "name": "skills/worktrunk/reference/step.md",
+      "start": 1,
+      "end": 1015
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 327,
+    "tokens": 3855,
+    "first": {
+     "name": "plugins/worktrunk/skills/wt-switch-create/rationale.md",
+     "start": 1,
+     "end": 327
+    },
+    "others": [
+     {
+      "name": "skills/wt-switch-create/rationale.md",
+      "start": 1,
+      "end": 327
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "text",
+    "lines": 1544,
+    "tokens": 1871,
+    "first": {
+     "name": "docs/src/content/docs/config.md",
+     "start": 16,
+     "end": 1559
+    },
+    "others": [
+     {
+      "name": "plugins/worktrunk/skills/worktrunk/reference/config.md",
+      "start": 10,
+      "end": 1551
+     },
+     {
+      "name": "skills/worktrunk/reference/config.md",
+      "start": 10,
+      "end": 1551
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 534,
+    "tokens": 2812,
+    "first": {
+     "name": "plugins/worktrunk/skills/worktrunk/reference/tips-patterns.md",
+     "start": 1,
+     "end": 534
+    },
+    "others": [
+     {
+      "name": "skills/worktrunk/reference/tips-patterns.md",
+      "start": 1,
+      "end": 534
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "text",
+    "lines": 297,
+    "tokens": 1298,
+    "first": {
+     "name": "docs/src/content/docs/switch.md",
+     "start": 24,
+     "end": 320
+    },
+    "others": [
+     {
+      "name": "plugins/worktrunk/skills/worktrunk/reference/switch.md",
+      "start": 10,
+      "end": 290
+     },
+     {
+      "name": "skills/worktrunk/reference/switch.md",
+      "start": 10,
+      "end": 290
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 226,
+   "lines": 168153,
+   "tokens": 881551,
+   "clones": 320,
+   "duplicatedLines": 3051,
+   "duplicatedTokens": 22835,
+   "percentage": 1.81,
+   "percentageTokens": 2.59,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 214,
+     "lines": 166537,
+     "clones": 320,
+     "duplicatedLines": 3051,
+     "percentage": 1.83
+    },
+    {
+     "format": "tsx",
+     "sources": 1,
+     "lines": 657,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 4,
+     "lines": 454,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 5,
+     "lines": 355,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 103,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 47,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 94,
+     "first": {
+      "name": "src/git/repository/sha_cache.rs",
+      "start": 401,
+      "end": 407
+     },
+     "others": [
+      {
+       "name": "src/git/repository/sha_cache.rs",
+       "start": 441,
+       "end": 447
+      },
+      {
+       "name": "src/git/repository/sha_cache.rs",
+       "start": 556,
+       "end": 562
+      },
+      {
+       "name": "src/git/repository/sha_cache.rs",
+       "start": 666,
+       "end": 672
+      },
+      {
+       "name": "src/git/repository/sha_cache.rs",
+       "start": 701,
+       "end": 707
+      },
+      {
+       "name": "src/git/repository/sha_cache.rs",
+       "start": 739,
+       "end": 745
+      },
+      {
+       "name": "src/git/repository/sha_cache.rs",
+       "start": 773,
+       "end": 779
+      },
+      {
+       "name": "src/git/repository/sha_cache.rs",
+       "start": 881,
+       "end": 887
+      }
+     ],
+     "copies": 8,
+     "excerpt": {
+      "lines": [
+       "let dir = cache::cache_dir(&repo, KIND_MERGE_TREE_CONFLICTS);",
+       "let entries: Vec<_> = fs::read_dir(&dir)",
+       "    .unwrap()",
+       "    .filter_map(|e| e.ok())",
+       "    .filter(|e| e.file_name().to_str().is_some_and(|s| s.ends_with(\".json\")))",
+       "    .collect();",
+       "assert_eq!(entries.len(), 1, \"exactly one cache entry expected\");"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 103,
+     "first": {
+      "name": "src/commands/picker/mod.rs",
+      "start": 2867,
+      "end": 2880
+     },
+     "others": [
+      {
+       "name": "src/commands/picker/mod.rs",
+       "start": 3166,
+       "end": 3178
+      },
+      {
+       "name": "src/commands/picker/mod.rs",
+       "start": 3946,
+       "end": 3958
+      },
+      {
+       "name": "src/commands/picker/mod.rs",
+       "start": 4133,
+       "end": 4145
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "fn test_do_removal_removes_worktree_and_branch() {",
+       "    let test = worktrunk::testing::TestRepo::with_initial_commit();",
+       "    let repo = worktrunk::git::Repository::at(test.path()).unwrap();",
+       "    let wt_dir = tempfile::tempdir().unwrap();",
+       "    let wt_path = wt_dir.path().join(\"feature\");",
+       "",
+       "    repo.run_command(&[",
+       "        \"worktree\",",
+       "        \"add\",",
+       "        \"-b\","
+      ],
+      "total": 14
+     },
+     "excerptSecond": {
+      "lines": [
+       "fn test_do_removal_skips_unapproved_pre_remove_hook() {",
+       "    let test = worktrunk::testing::TestRepo::with_initial_commit();",
+       "    let repo = worktrunk::git::Repository::at(test.path()).unwrap();",
+       "    let wt_dir = tempfile::tempdir().unwrap();",
+       "    let wt_path = wt_dir.path().join(\"feature\");",
+       "    repo.run_command(&[",
+       "        \"worktree\",",
+       "        \"add\",",
+       "        \"-b\",",
+       "        \"feature\","
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 13,
+     "tokens": 266,
+     "first": {
+      "name": "src/cli/mod.rs",
+      "start": 2432,
+      "end": 2444
+     },
+     "others": [
+      {
+       "name": "src/cli/mod.rs",
+       "start": 2486,
+       "end": 2498
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "- Match recent commit style (conventional commits if used)",
+       "- Describe the change, not the intent or benefit",
+       "</style>",
+       "{% if user_guidance %}",
+       "<user-guidance>",
+       "{{ user_guidance }}",
+       "</user-guidance>",
+       "{% endif %}{% if project_guidance %}",
+       "<project-guidance>",
+       "{{ project_guidance }}"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 263,
+     "first": {
+      "name": "src/cli/mod.rs",
+      "start": 2422,
+      "end": 2432
+     },
+     "others": [
+      {
+       "name": "src/cli/mod.rs",
+       "start": 2476,
+       "end": 2486
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 82,
+     "first": {
+      "name": "src/git/repository/ref_snapshot.rs",
+      "start": 1073,
+      "end": 1080
+     },
+     "others": [
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 1180,
+       "end": 1187
+      },
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 1209,
+       "end": 1216
+      },
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 1301,
+       "end": 1308
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 115,
+     "first": {
+      "name": "src/git/repository/ref_snapshot.rs",
+      "start": 579,
+      "end": 588
+     },
+     "others": [
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 636,
+       "end": 645
+      },
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 705,
+       "end": 714
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 205,
+     "first": {
+      "name": "src/styling/mod.rs",
+      "start": 653,
+      "end": 658
+     },
+     "others": [
+      {
+       "name": "src/styling/mod.rs",
+       "start": 692,
+       "end": 697
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 30,
+     "tokens": 198,
+     "first": {
+      "name": "src/styling/format.rs",
+      "start": 712,
+      "end": 741
+     },
+     "others": [
+      {
+       "name": "src/styling/format.rs",
+       "start": 768,
+       "end": 797
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 59,
+     "first": {
+      "name": "src/git/repository/ref_snapshot.rs",
+      "start": 1253,
+      "end": 1259
+     },
+     "others": [
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 1305,
+       "end": 1311
+      },
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 1351,
+       "end": 1357
+      },
+      {
+       "name": "src/git/repository/ref_snapshot.rs",
+       "start": 1383,
+       "end": 1389
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 29,
+     "tokens": 165,
+     "first": {
+      "name": "src/llm.rs",
+      "start": 1179,
+      "end": 1207
+     },
+     "others": [
+      {
+       "name": "src/llm.rs",
+       "start": 1215,
+       "end": 1244
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "src/docs.rs"
+    ]
+   }
+  },
+  "health": {
+   "score": 43.4,
+   "grade": "D",
+   "size": {
+    "lines": 291759,
+    "files": 341,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 6.5,
+     "adjusted": 6.5,
+     "lines": 19075,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "python",
+      "javascript",
+      "tsx",
+      "bash",
+      "typescript",
+      "nix",
+      "astro",
+      "powershell",
+      "batch"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 58.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 82.4,
+     "adjusted": 82,
+     "lines": 240390,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 32.1
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 23897,
+   "mean": 70.1,
+   "files": [
+    {
+     "path": "src/config/deprecation.rs",
+     "complexity": 486,
+     "lines": 5650,
+     "bytes": 217035
+    },
+    {
+     "path": "tests/integration_tests/switch.rs",
+     "complexity": 468,
+     "lines": 9779,
+     "bytes": 349102
+    },
+    {
+     "path": "src/shell_exec.rs",
+     "complexity": 445,
+     "lines": 4214,
+     "bytes": 173432
+    },
+    {
+     "path": "tests/integration_tests/config_show.rs",
+     "complexity": 415,
+     "lines": 8025,
+     "bytes": 305063
+    },
+    {
+     "path": "src/commands/config/state.rs",
+     "complexity": 399,
+     "lines": 1877,
+     "bytes": 70115
+    },
+    {
+     "path": "tests/integration_tests/readme_sync.rs",
+     "complexity": 349,
+     "lines": 3047,
+     "bytes": 118443
+    },
+    {
+     "path": "src/commands/config/show.rs",
+     "complexity": 338,
+     "lines": 1829,
+     "bytes": 66342
+    },
+    {
+     "path": "tests/integration_tests/remove.rs",
+     "complexity": 337,
+     "lines": 6761,
+     "bytes": 241541
+    },
+    {
+     "path": "src/git/error.rs",
+     "complexity": 326,
+     "lines": 3353,
+     "bytes": 132638
+    },
+    {
+     "path": "tests/integration_tests/shell_wrapper.rs",
+     "complexity": 322,
+     "lines": 4607,
+     "bytes": 178039
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 11.31,
+   "findings": 4,
+   "files": 37,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 4
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "plugins/worktrunk/hooks/register.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 657
+    },
+    {
+     "category": "unused-file",
+     "path": "dev/opencode-plugin.ts",
+     "name": "",
+     "line": 1,
+     "lines": 254
+    },
+    {
+     "category": "unused-file",
+     "path": "dev/pi-extension.ts",
+     "name": "",
+     "line": 1,
+     "lines": 43
+    },
+    {
+     "category": "unused-file",
+     "path": "dev/omp-hook.ts",
+     "name": "",
+     "line": 1,
+     "lines": 40
+    }
+   ]
+  }
+ }
+}

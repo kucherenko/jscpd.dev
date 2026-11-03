@@ -3,20 +3,21 @@
  "from": "2026-11-02",
  "to": "2026-11-08",
  "days": [
-  "2026-11-02"
+  "2026-11-02",
+  "2026-11-03"
  ],
  "summary": {
-  "repos": 9,
-  "sources": 17986,
-  "lines": 3561295,
-  "tokens": 21597932,
-  "clones": 16128,
-  "duplicatedLines": 640799,
-  "duplicatedTokens": 2784402,
-  "percentage": 17.99,
-  "percentageTokens": 12.89,
-  "avgPercentage": 15.2,
-  "medianPercentage": 6.7,
+  "repos": 14,
+  "sources": 23638,
+  "lines": 4984112,
+  "tokens": 36983296,
+  "clones": 25469,
+  "duplicatedLines": 772445,
+  "duplicatedTokens": 4146407,
+  "percentage": 15.5,
+  "percentageTokens": 11.21,
+  "avgPercentage": 12.33,
+  "medianPercentage": 6.99,
   "mostDuplicated": {
    "name": "CopilotKit/OpenBot",
    "clones": 3972,
@@ -32,43 +33,51 @@
    "clones": 7834,
    "percentage": 10.16
   },
-  "codeRepos": 6,
-  "codeSources": 5493,
-  "codeLines": 1572992,
-  "codeClones": 4821,
-  "codeDuplicatedLines": 75863,
-  "codePercentage": 4.82,
-  "codeMedianPercentage": 4.47,
+  "codeRepos": 10,
+  "codeSources": 8837,
+  "codeLines": 2398269,
+  "codeClones": 8154,
+  "codeDuplicatedLines": 110539,
+  "codePercentage": 4.61,
+  "codeMedianPercentage": 3.75,
   "codeMostDuplicated": {
    "name": "FlashML-org/FreeToken",
-   "clones": 903,
-   "percentage": 7.82
+   "clones": 913,
+   "percentage": 7.87
   },
   "codeCleanest": {
    "name": "Renhuai123/ziwei-doushu",
    "clones": 18,
    "percentage": 1.12
   },
-  "generatedFiles": 11,
-  "avgHealth": 60.6,
+  "generatedFiles": 19,
+  "avgHealth": 56.87,
   "healthiest": {
    "name": "public-apis/public-apis",
    "score": 83.7,
    "grade": "B"
   },
   "leastHealthy": {
-   "name": "lightpanda-io/browser",
-   "score": 48.9,
+   "name": "karpathy/nanochat",
+   "score": 42.6,
    "grade": "D"
   },
   "languages": [
    {
     "language": "Python",
-    "repos": 4,
-    "clones": 9019,
-    "lines": 1854781,
-    "duplicatedLines": 201868,
-    "percentage": 10.88
+    "repos": 6,
+    "clones": 9075,
+    "lines": 1876564,
+    "duplicatedLines": 202774,
+    "percentage": 10.81
+   },
+   {
+    "language": "Rust",
+    "repos": 2,
+    "clones": 4570,
+    "lines": 844812,
+    "duplicatedLines": 73940,
+    "percentage": 8.75
    },
    {
     "language": "TypeScript",
@@ -77,6 +86,14 @@
     "lines": 1086253,
     "duplicatedLines": 398554,
     "percentage": 36.69
+   },
+   {
+    "language": "C",
+    "repos": 1,
+    "clones": 4713,
+    "lines": 555901,
+    "duplicatedLines": 56779,
+    "percentage": 10.21
    },
    {
     "language": "Zig",
@@ -89,9 +106,9 @@
    {
     "language": "C++",
     "repos": 1,
-    "clones": 964,
-    "lines": 208434,
-    "duplicatedLines": 13957,
+    "clones": 966,
+    "lines": 208755,
+    "duplicatedLines": 13978,
     "percentage": 6.7
    },
    {
@@ -105,6 +122,44 @@
   ]
  },
  "repos": [
+  {
+   "name": "vercel-labs/agent-desktop",
+   "url": "https://github.com/vercel-labs/agent-desktop",
+   "description": "Computer use CLI for AI agents",
+   "language": "Rust",
+   "stars": 10513,
+   "starsToday": 2275,
+   "days": 1,
+   "rank": 1,
+   "date": "2026-11-03",
+   "total": {
+    "sources": 3372,
+    "lines": 507501,
+    "clones": 2502,
+    "duplicatedLines": 36884,
+    "percentage": 7.27
+   },
+   "code": {
+    "sources": 2668,
+    "lines": 406813,
+    "clones": 2026,
+    "duplicatedLines": 23021,
+    "percentage": 5.66,
+    "generated": 1
+   },
+   "topFinding": {
+    "format": "rust",
+    "lines": 15,
+    "copies": 10,
+    "kind": "code",
+    "first": {
+     "name": "crates/core/src/commands/check.rs",
+     "start": 1,
+     "end": 15
+    },
+    "scope": "code"
+   }
+  },
   {
    "name": "Renhuai123/ziwei-doushu",
    "url": "https://github.com/Renhuai123/ziwei-doushu",
@@ -141,6 +196,37 @@
      "end": 15
     },
     "scope": "code"
+   }
+  },
+  {
+   "name": "shiyu-coder/Kronos",
+   "url": "https://github.com/shiyu-coder/Kronos",
+   "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+   "language": "Python",
+   "stars": 46083,
+   "starsToday": 857,
+   "days": 2,
+   "rank": 2,
+   "date": "2026-11-03",
+   "total": {
+    "sources": 77,
+    "lines": 81076,
+    "clones": 108,
+    "duplicatedLines": 28813,
+    "percentage": 35.54
+   },
+   "code": null,
+   "topFinding": {
+    "format": "json",
+    "lines": 1088,
+    "copies": 7,
+    "kind": "data",
+    "first": {
+     "name": "webui/prediction_results/prediction_20250826_175135.json",
+     "start": 1127,
+     "end": 2214
+    },
+    "scope": "all"
    }
   },
   {
@@ -213,34 +299,117 @@
    }
   },
   {
-   "name": "shiyu-coder/Kronos",
-   "url": "https://github.com/shiyu-coder/Kronos",
-   "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-   "language": "Python",
-   "stars": 45539,
-   "starsToday": 630,
+   "name": "JustVugg/colibri",
+   "url": "https://github.com/JustVugg/colibri",
+   "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+   "language": "C",
+   "stars": 46716,
+   "starsToday": 675,
    "days": 1,
-   "rank": 2,
-   "date": "2026-11-02",
+   "rank": 5,
+   "date": "2026-11-03",
    "total": {
-    "sources": 77,
-    "lines": 81076,
-    "clones": 108,
-    "duplicatedLines": 28813,
-    "percentage": 35.54
+    "sources": 1591,
+    "lines": 555901,
+    "clones": 4713,
+    "duplicatedLines": 56779,
+    "percentage": 10.21
    },
-   "code": null,
+   "code": {
+    "sources": 413,
+    "lines": 242093,
+    "clones": 968,
+    "duplicatedLines": 8356,
+    "percentage": 3.45,
+    "generated": 6
+   },
    "topFinding": {
-    "format": "json",
-    "lines": 1088,
-    "copies": 7,
-    "kind": "data",
+    "format": "c",
+    "lines": 7,
+    "copies": 3,
+    "kind": "code",
     "first": {
-     "name": "webui/prediction_results/prediction_20250826_175135.json",
-     "start": 1127,
-     "end": 2214
+     "name": "c/colibri.c",
+     "start": 14714,
+     "end": 14720
     },
-    "scope": "all"
+    "scope": "code"
+   }
+  },
+  {
+   "name": "FlashML-org/FreeToken",
+   "url": "https://github.com/FlashML-org/FreeToken",
+   "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+   "language": "Python",
+   "stars": 16226,
+   "starsToday": 653,
+   "days": 2,
+   "rank": 3,
+   "date": "2026-11-03",
+   "total": {
+    "sources": 755,
+    "lines": 192129,
+    "clones": 1089,
+    "duplicatedLines": 12784,
+    "percentage": 6.65
+   },
+   "code": {
+    "sources": 527,
+    "lines": 140768,
+    "clones": 913,
+    "duplicatedLines": 11083,
+    "percentage": 7.87,
+    "generated": 0
+   },
+   "topFinding": {
+    "format": "c",
+    "lines": 9,
+    "copies": 21,
+    "kind": "code",
+    "first": {
+     "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
+     "start": 1830,
+     "end": 1838
+    },
+    "scope": "code"
+   }
+  },
+  {
+   "name": "hyprwm/Hyprland",
+   "url": "https://github.com/hyprwm/Hyprland",
+   "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+   "language": "C++",
+   "stars": 40042,
+   "starsToday": 509,
+   "days": 2,
+   "rank": 2,
+   "date": "2026-11-03",
+   "total": {
+    "sources": 1254,
+    "lines": 208755,
+    "clones": 966,
+    "duplicatedLines": 13978,
+    "percentage": 6.7
+   },
+   "code": {
+    "sources": 972,
+    "lines": 151435,
+    "clones": 505,
+    "duplicatedLines": 6137,
+    "percentage": 4.05,
+    "generated": 2
+   },
+   "topFinding": {
+    "format": "cpp",
+    "lines": 90,
+    "copies": 4,
+    "kind": "code",
+    "first": {
+     "name": "hyprtester/clients/keyboard-modifiers.cpp",
+     "start": 106,
+     "end": 195
+    },
+    "scope": "code"
    }
   },
   {
@@ -282,6 +451,37 @@
    }
   },
   {
+   "name": "p-e-w/heretic",
+   "url": "https://github.com/p-e-w/heretic",
+   "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
+   "language": "Python",
+   "stars": 38226,
+   "starsToday": 420,
+   "days": 1,
+   "rank": 8,
+   "date": "2026-11-03",
+   "total": {
+    "sources": 46,
+    "lines": 9834,
+    "clones": 20,
+    "duplicatedLines": 544,
+    "percentage": 5.53
+   },
+   "code": null,
+   "topFinding": {
+    "format": "toml",
+    "lines": 54,
+    "copies": 3,
+    "kind": "tests",
+    "first": {
+     "name": "tests/gemma-4e/config.toml",
+     "start": 7,
+     "end": 60
+    },
+    "scope": "all"
+   }
+  },
+  {
    "name": "public-apis/public-apis",
    "url": "https://github.com/public-apis/public-apis",
    "description": "A collective list of free APIs",
@@ -313,39 +513,39 @@
    }
   },
   {
-   "name": "FlashML-org/FreeToken",
-   "url": "https://github.com/FlashML-org/FreeToken",
-   "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+   "name": "karpathy/nanochat",
+   "url": "https://github.com/karpathy/nanochat",
+   "description": "The best ChatGPT that $100 can buy.",
    "language": "Python",
-   "stars": 15546,
-   "starsToday": 242,
+   "stars": 60004,
+   "starsToday": 321,
    "days": 1,
-   "rank": 8,
-   "date": "2026-11-02",
+   "rank": 7,
+   "date": "2026-11-03",
    "total": {
-    "sources": 749,
-    "lines": 190196,
-    "clones": 1075,
-    "duplicatedLines": 12606,
-    "percentage": 6.63
+    "sources": 49,
+    "lines": 10016,
+    "clones": 22,
+    "duplicatedLines": 184,
+    "percentage": 1.84
    },
    "code": {
-    "sources": 524,
-    "lines": 139719,
-    "clones": 903,
-    "duplicatedLines": 10928,
-    "percentage": 7.82,
+    "sources": 33,
+    "lines": 7099,
+    "clones": 8,
+    "duplicatedLines": 84,
+    "percentage": 1.18,
     "generated": 0
    },
    "topFinding": {
-    "format": "c",
-    "lines": 9,
-    "copies": 21,
+    "format": "python",
+    "lines": 8,
+    "copies": 2,
     "kind": "code",
     "first": {
-     "name": "python/freetoken/kernel/csrc/ggml/ggml-cpu/arch/x86/quants.c",
-     "start": 1830,
-     "end": 1838
+     "name": "scripts/chat_eval.py",
+     "start": 67,
+     "end": 74
     },
     "scope": "code"
    }
@@ -389,39 +589,39 @@
    }
   },
   {
-   "name": "hyprwm/Hyprland",
-   "url": "https://github.com/hyprwm/Hyprland",
-   "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
-   "language": "C++",
-   "stars": 39482,
-   "starsToday": 38,
+   "name": "max-sixty/worktrunk",
+   "url": "https://github.com/max-sixty/worktrunk",
+   "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+   "language": "Rust",
+   "stars": 10128,
+   "starsToday": 77,
    "days": 1,
-   "rank": 9,
-   "date": "2026-11-02",
+   "rank": 6,
+   "date": "2026-11-03",
    "total": {
-    "sources": 1253,
-    "lines": 208434,
-    "clones": 964,
-    "duplicatedLines": 13957,
-    "percentage": 6.7
+    "sources": 587,
+    "lines": 337311,
+    "clones": 2068,
+    "duplicatedLines": 37056,
+    "percentage": 10.99
    },
    "code": {
-    "sources": 971,
-    "lines": 151365,
-    "clones": 504,
-    "duplicatedLines": 6128,
-    "percentage": 4.05,
-    "generated": 2
+    "sources": 226,
+    "lines": 168153,
+    "clones": 320,
+    "duplicatedLines": 3051,
+    "percentage": 1.81,
+    "generated": 1
    },
    "topFinding": {
-    "format": "cpp",
-    "lines": 90,
-    "copies": 4,
+    "format": "rust",
+    "lines": 7,
+    "copies": 8,
     "kind": "code",
     "first": {
-     "name": "hyprtester/clients/keyboard-modifiers.cpp",
-     "start": 106,
-     "end": 195
+     "name": "src/git/repository/sha_cache.rs",
+     "start": 401,
+     "end": 407
     },
     "scope": "code"
    }
