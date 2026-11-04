@@ -1,0 +1,376 @@
+{
+ "name": "spotify/portal-ai-plugins",
+ "url": "https://github.com/spotify/portal-ai-plugins",
+ "appearances": [
+  {
+   "date": "2026-11-04",
+   "rank": 5,
+   "stars": 3086,
+   "starsToday": 91,
+   "headSha": "aa252eb21df5bbf32b0beb45f84a2c03341ccad8",
+   "sources": 52,
+   "lines": 3455,
+   "clones": 4,
+   "duplicatedLines": 60,
+   "percentage": 1.74,
+   "codePercentage": null,
+   "codeSources": 7,
+   "healthScore": 76.5,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T05:21:37.925Z",
+  "name": "spotify/portal-ai-plugins",
+  "url": "https://github.com/spotify/portal-ai-plugins",
+  "description": "",
+  "language": "TypeScript",
+  "stars": 3086,
+  "starsToday": 91,
+  "defaultBranch": "main",
+  "headSha": "aa252eb21df5bbf32b0beb45f84a2c03341ccad8",
+  "durationMs": 956,
+  "total": {
+   "sources": 52,
+   "lines": 3455,
+   "tokens": 31912,
+   "clones": 4,
+   "duplicatedLines": 60,
+   "duplicatedTokens": 654,
+   "percentage": 1.74,
+   "percentageTokens": 2.05
+  },
+  "formats": [
+   {
+    "format": "markdown",
+    "sources": 16,
+    "lines": 1248,
+    "clones": 4,
+    "duplicatedLines": 60,
+    "percentage": 4.81
+   },
+   {
+    "format": "bash",
+    "sources": 18,
+    "lines": 944,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "typescript",
+    "sources": 3,
+    "lines": 692,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 10,
+    "lines": 529,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 26,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 2,
+    "lines": 12,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "yaml",
+    "sources": 2,
+    "lines": 4,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markdown",
+    "lines": 19,
+    "tokens": 186,
+    "first": {
+     "name": "skills/fleetshift-check-shift/SKILL.md",
+     "start": 18,
+     "end": 36
+    },
+    "others": [
+     {
+      "name": "skills/fleetshift-troubleshoot-shift/SKILL.md",
+      "start": 18,
+      "end": 36
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  closed).",
+      "",
+      "## Prerequisites",
+      "",
+      "- The Portal CLI is authenticated: `npx @spotify/portal-cli auth show`.",
+      "  If it isn't, ask the user to run `npx @spotify/portal-cli auth login`.",
+      "  If `auth list` shows more than one Portal instance, confirm which one",
+      "  with the user and pass `--instance <name>` on every call.",
+      "- If a Portal MCP server is connected instead, the same actions are",
+      "  available as `fleetshift_<action>` tools (for example"
+     ],
+     "total": 19
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 15,
+    "tokens": 173,
+    "first": {
+     "name": "skills/fleetshift-check-shift/SKILL.md",
+     "start": 18,
+     "end": 32
+    },
+    "others": [
+     {
+      "name": "skills/fleetshift-create-prs/SKILL.md",
+      "start": 14,
+      "end": 28
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  closed).",
+      "",
+      "## Prerequisites",
+      "",
+      "- The Portal CLI is authenticated: `npx @spotify/portal-cli auth show`.",
+      "  If it isn't, ask the user to run `npx @spotify/portal-cli auth login`.",
+      "  If `auth list` shows more than one Portal instance, confirm which one",
+      "  with the user and pass `--instance <name>` on every call.",
+      "- If a Portal MCP server is connected instead, the same actions are",
+      "  available as `fleetshift_<action>` tools (for example"
+     ],
+     "total": 15
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 13,
+    "tokens": 172,
+    "first": {
+     "name": "skills/fleetshift-check-shift/SKILL.md",
+     "start": 20,
+     "end": 32
+    },
+    "others": [
+     {
+      "name": "skills/fleetshift-create-shift/SKILL.md",
+      "start": 21,
+      "end": 33
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "## Prerequisites",
+      "",
+      "- The Portal CLI is authenticated: `npx @spotify/portal-cli auth show`.",
+      "  If it isn't, ask the user to run `npx @spotify/portal-cli auth login`.",
+      "  If `auth list` shows more than one Portal instance, confirm which one",
+      "  with the user and pass `--instance <name>` on every call.",
+      "- If a Portal MCP server is connected instead, the same actions are",
+      "  available as `fleetshift_<action>` tools (for example",
+      "  `fleetshift_list-shifts`). They take the same input, but have no",
+      "  `--dry-run`, so the confirmation steps below matter even more."
+     ],
+     "total": 13
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 13,
+    "tokens": 123,
+    "first": {
+     "name": "skills/fleetshift-create-prs/SKILL.md",
+     "start": 14,
+     "end": 26
+    },
+    "others": [
+     {
+      "name": "skills/fleetshift-run-shift/SKILL.md",
+      "start": 68,
+      "end": 80
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 7,
+   "lines": 834,
+   "tokens": 3574,
+   "clones": 0,
+   "duplicatedLines": 0,
+   "duplicatedTokens": 0,
+   "percentage": 0,
+   "percentageTokens": 0,
+   "formats": [
+    {
+     "format": "bash",
+     "sources": 7,
+     "lines": 834,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 76.5,
+   "grade": "B",
+   "size": {
+    "lines": 1526,
+    "files": 10,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2,
+     "lines": 0,
+     "halfLife": 8.5,
+     "formats": [
+      "bash",
+      "typescript"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 85.1
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 2.3,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 45.3,
+     "weight": 0.453,
+     "score": 80.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 39.4,
+     "adjusted": 28.9,
+     "lines": 602,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 67
+    }
+   ]
+  },
+  "complexity": {
+   "total": 432,
+   "mean": 43.2,
+   "files": [
+    {
+     "path": "plugins/shunt/evals/fixtures/websocket-handler.ts",
+     "complexity": 292,
+     "lines": 602,
+     "bytes": 48024
+    },
+    {
+     "path": "plugins/shunt/evals/run.sh",
+     "complexity": 35,
+     "lines": 321,
+     "bytes": 11076
+    },
+    {
+     "path": "plugins/shunt/evals/transport-evals.sh",
+     "complexity": 27,
+     "lines": 156,
+     "bytes": 6154
+    },
+    {
+     "path": "plugins/shunt/scripts/lib/aika.sh",
+     "complexity": 20,
+     "lines": 166,
+     "bytes": 6322
+    },
+    {
+     "path": "plugins/shunt/scripts/bulk-read",
+     "complexity": 13,
+     "lines": 58,
+     "bytes": 1554
+    },
+    {
+     "path": "plugins/shunt/hooks/check-bash-read",
+     "complexity": 12,
+     "lines": 40,
+     "bytes": 1596
+    },
+    {
+     "path": "plugins/shunt/scripts/code-write",
+     "complexity": 11,
+     "lines": 60,
+     "bytes": 1647
+    },
+    {
+     "path": "plugins/shunt/evals/fixtures/order-service.test.ts",
+     "complexity": 9,
+     "lines": 55,
+     "bytes": 1669
+    },
+    {
+     "path": "plugins/shunt/hooks/check-file-size",
+     "complexity": 8,
+     "lines": 33,
+     "bytes": 1264
+    },
+    {
+     "path": "plugins/shunt/evals/fixtures/user-service.ts",
+     "complexity": 5,
+     "lines": 35,
+     "bytes": 1051
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 3,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

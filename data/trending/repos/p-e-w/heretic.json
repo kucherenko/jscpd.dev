@@ -17,29 +17,45 @@
    "codeSources": 17,
    "healthScore": 47.3,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-11-04",
+   "rank": 4,
+   "stars": 38940,
+   "starsToday": 701,
+   "headSha": "f4cf5354032419178584e7c52af6de6c138de856",
+   "sources": 46,
+   "lines": 9898,
+   "clones": 20,
+   "duplicatedLines": 544,
+   "percentage": 5.5,
+   "codePercentage": null,
+   "codeSources": 17,
+   "healthScore": 47.5,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-11-03",
-  "generatedAt": "2026-11-03T05:21:14.506Z",
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T05:21:37.925Z",
   "name": "p-e-w/heretic",
   "url": "https://github.com/p-e-w/heretic",
   "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
   "language": "Python",
-  "stars": 38226,
-  "starsToday": 420,
+  "stars": 38940,
+  "starsToday": 701,
   "defaultBranch": "master",
-  "headSha": "0db5c31e10ecc426440b6fb0ce4bf85352faf1a7",
-  "durationMs": 1126,
+  "headSha": "f4cf5354032419178584e7c52af6de6c138de856",
+  "durationMs": 974,
   "total": {
    "sources": 46,
-   "lines": 9834,
-   "tokens": 40652,
+   "lines": 9898,
+   "tokens": 41049,
    "clones": 20,
    "duplicatedLines": 544,
    "duplicatedTokens": 1730,
-   "percentage": 5.53,
-   "percentageTokens": 4.26
+   "percentage": 5.5,
+   "percentageTokens": 4.21
   },
   "formats": [
    {
@@ -53,15 +69,15 @@
    {
     "format": "python",
     "sources": 23,
-    "lines": 7668,
+    "lines": 7730,
     "clones": 5,
     "duplicatedLines": 79,
-    "percentage": 1.03
+    "percentage": 1.02
    },
    {
     "format": "markdown",
     "sources": 4,
-    "lines": 498,
+    "lines": 500,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -324,14 +340,14 @@
     "tokens": 79,
     "first": {
      "name": "src/heretic/config.py",
-     "start": 118,
-     "end": 139
+     "start": 119,
+     "end": 140
     },
     "others": [
      {
       "name": "src/heretic/config.py",
-      "start": 160,
-      "end": 181
+      "start": 161,
+      "end": 182
      }
     ],
     "copies": 2,
@@ -340,21 +356,21 @@
   ],
   "code": {
    "sources": 17,
-   "lines": 7075,
-   "tokens": 28573,
+   "lines": 7085,
+   "tokens": 28622,
    "clones": 4,
    "duplicatedLines": 69,
    "duplicatedTokens": 272,
-   "percentage": 0.98,
+   "percentage": 0.97,
    "percentageTokens": 0.95,
    "formats": [
     {
      "format": "python",
      "sources": 17,
-     "lines": 7075,
+     "lines": 7085,
      "clones": 4,
      "duplicatedLines": 69,
-     "percentage": 0.98
+     "percentage": 0.97
     }
    ],
    "topClones": [
@@ -364,14 +380,14 @@
      "tokens": 79,
      "first": {
       "name": "src/heretic/config.py",
-      "start": 118,
-      "end": 139
+      "start": 119,
+      "end": 140
      },
      "others": [
       {
        "name": "src/heretic/config.py",
-       "start": 160,
-       "end": 181
+       "start": 161,
+       "end": 182
       }
      ],
      "copies": 2,
@@ -487,10 +503,10 @@
    }
   },
   "health": {
-   "score": 47.3,
+   "score": 47.5,
    "grade": "D",
    "size": {
-    "lines": 7668,
+    "lines": 7730,
     "files": 23,
     "class": "S"
    },
@@ -510,33 +526,33 @@
       "data"
      ],
      "weight": 1,
-     "score": 88.2
+     "score": 88.3
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 19.3,
-     "adjusted": 16,
+     "value": 19.2,
+     "adjusted": 15.9,
      "lines": 1481,
      "halfLife": 7.5,
      "weight": 1,
-     "score": 22.9
+     "score": 23.1
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 53.5,
-     "adjusted": 46.7,
+     "value": 53,
+     "adjusted": 46.4,
      "lines": 4100,
      "halfLife": 50,
      "weight": 1,
-     "score": 52.3
+     "score": 52.5
     }
    ]
   },
   "complexity": {
-   "total": 886,
-   "mean": 38.5,
+   "total": 899,
+   "mean": 39.1,
    "files": [
     {
      "path": "src/heretic/main.py",
@@ -587,21 +603,21 @@
      "bytes": 8042
     },
     {
+     "path": "tests/test_config.py",
+     "complexity": 28,
+     "lines": 215,
+     "bytes": 7974
+    },
+    {
      "path": "src/heretic/modifiers/ara.py",
      "complexity": 25,
      "lines": 396,
      "bytes": 16012
-    },
-    {
-     "path": "src/heretic/scorers/bert_classifier.py",
-     "complexity": 22,
-     "lines": 271,
-     "bytes": 10220
     }
    ]
   },
   "deadCode": {
-   "percentage": 19.31,
+   "percentage": 19.16,
    "findings": 7,
    "files": 26,
    "byCategory": [
