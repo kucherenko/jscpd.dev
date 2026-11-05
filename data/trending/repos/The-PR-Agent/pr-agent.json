@@ -1,0 +1,996 @@
+{
+ "name": "The-PR-Agent/pr-agent",
+ "url": "https://github.com/The-PR-Agent/pr-agent",
+ "appearances": [
+  {
+   "date": "2026-11-05",
+   "rank": 5,
+   "stars": 14874,
+   "starsToday": 280,
+   "headSha": "a8c604794ddb5766dc3fa674cbb64aac6f9f509f",
+   "sources": 668,
+   "lines": 230513,
+   "clones": 875,
+   "duplicatedLines": 10522,
+   "percentage": 4.56,
+   "codePercentage": 1.47,
+   "codeSources": 116,
+   "healthScore": 56.7,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T05:21:19.579Z",
+  "name": "The-PR-Agent/pr-agent",
+  "url": "https://github.com/The-PR-Agent/pr-agent",
+  "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+  "language": "Python",
+  "stars": 14874,
+  "starsToday": 280,
+  "defaultBranch": "main",
+  "headSha": "a8c604794ddb5766dc3fa674cbb64aac6f9f509f",
+  "durationMs": 2014,
+  "total": {
+   "sources": 668,
+   "lines": 230513,
+   "tokens": 1391227,
+   "clones": 875,
+   "duplicatedLines": 10522,
+   "duplicatedTokens": 62051,
+   "percentage": 4.56,
+   "percentageTokens": 4.46
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 533,
+    "lines": 212529,
+    "clones": 812,
+    "duplicatedLines": 9366,
+    "percentage": 4.41
+   },
+   {
+    "format": "toml",
+    "sources": 27,
+    "lines": 4390,
+    "clones": 42,
+    "duplicatedLines": 918,
+    "percentage": 20.91
+   },
+   {
+    "format": "markdown",
+    "sources": 48,
+    "lines": 9104,
+    "clones": 12,
+    "duplicatedLines": 107,
+    "percentage": 1.18
+   },
+   {
+    "format": "yaml",
+    "sources": 24,
+    "lines": 1761,
+    "clones": 6,
+    "duplicatedLines": 89,
+    "percentage": 5.05
+   },
+   {
+    "format": "bash",
+    "sources": 11,
+    "lines": 236,
+    "clones": 2,
+    "duplicatedLines": 11,
+    "percentage": 4.66
+   },
+   {
+    "format": "json",
+    "sources": 4,
+    "lines": 150,
+    "clones": 1,
+    "duplicatedLines": 31,
+    "percentage": 20.67
+   },
+   {
+    "format": "css",
+    "sources": 5,
+    "lines": 1428,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "javascript",
+    "sources": 3,
+    "lines": 336,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "jsx",
+    "sources": 3,
+    "lines": 306,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 6,
+    "lines": 133,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 11,
+    "tokens": 62,
+    "first": {
+     "name": "tests/unittest/test_get_max_tokens.py",
+     "start": 88,
+     "end": 98
+    },
+    "others": [
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 101,
+      "end": 111
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 114,
+      "end": 124
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 127,
+      "end": 137
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 140,
+      "end": 150
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 783,
+      "end": 793
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 806,
+      "end": 816
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 840,
+      "end": 850
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 866,
+      "end": 876
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "def test_gpt54_model_max_tokens(self, monkeypatch, model):",
+      "    fake_settings = type('', (), {",
+      "        'config': type('', (), {",
+      "            'custom_model_max_tokens': 0,",
+      "            'max_model_tokens': 0",
+      "        })()",
+      "    })()",
+      "",
+      "    monkeypatch.setattr(token_budget, \"get_settings\", lambda: fake_settings)",
+      ""
+     ],
+     "total": 11
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 112,
+    "tokens": 536,
+    "first": {
+     "name": "pr_agent/settings/code_suggestions/pr_code_suggestions_prompts.toml",
+     "start": 81,
+     "end": 192
+    },
+    "others": [
+     {
+      "name": "pr_agent/settings/code_suggestions/pr_code_suggestions_prompts_not_decoupled.toml",
+      "start": 110,
+      "end": 221
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    one_sentence_summary: str = Field(description=\"A concise, single-sentence overview (up to 6 words) of the suggested improvement. Focus on the 'what'. Be ge…",
+      "{%- if not focus_only_on_problems %}",
+      "    label: str = Field(description=\"A single, descriptive label that best characterizes the suggestion type. Possible labels include 'security', 'possible bug'…",
+      "{%- else %}",
+      "    label: str = Field(description=\"A single, descriptive label that best characterizes the suggestion type. Possible labels include 'security', 'critical bug'…",
+      "{%- endif %}",
+      "",
+      "",
+      "class PRCodeSuggestions(BaseModel):",
+      "    code_suggestions: List[CodeSuggestion]"
+     ],
+     "total": 112
+    },
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 8,
+    "tokens": 55,
+    "first": {
+     "name": "tests/unittest/test_get_max_tokens.py",
+     "start": 314,
+     "end": 321
+    },
+    "others": [
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 366,
+      "end": 373
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 725,
+      "end": 733
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 760,
+      "end": 768
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 933,
+      "end": 941
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 952,
+      "end": 960
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 971,
+      "end": 979
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 991,
+      "end": 999
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 1009,
+      "end": 1017
+     }
+    ],
+    "copies": 9,
+    "excerpt": {
+     "lines": [
+      "def test_gpt5_thinking_model_max_tokens(self, monkeypatch, model):",
+      "    fake_settings = type(\"\", (), {",
+      "        \"config\": type(\"\", (), {",
+      "            \"custom_model_max_tokens\": 0,",
+      "            \"max_model_tokens\": 0",
+      "        })()",
+      "    })()",
+      "    monkeypatch.setattr(token_budget, \"get_settings\", lambda: fake_settings)"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 66,
+    "tokens": 396,
+    "first": {
+     "name": "pr_agent/settings/pr_description_only_description_prompts.toml",
+     "start": 87,
+     "end": 152
+    },
+    "others": [
+     {
+      "name": "pr_agent/settings/pr_description_prompts.toml",
+      "start": 116,
+      "end": 181
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "toml",
+    "lines": 65,
+    "tokens": 390,
+    "first": {
+     "name": "pr_agent/settings/pr_description_only_description_prompts.toml",
+     "start": 88,
+     "end": 152
+    },
+    "others": [
+     {
+      "name": "pr_agent/settings/pr_description_only_files_prompts.toml",
+      "start": 70,
+      "end": 134
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 12,
+    "tokens": 54,
+    "first": {
+     "name": "tests/unittest/test_litellm_reasoning_effort.py",
+     "start": 183,
+     "end": 194
+    },
+    "others": [
+     {
+      "name": "tests/unittest/test_litellm_reasoning_effort.py",
+      "start": 396,
+      "end": 407
+     },
+     {
+      "name": "tests/unittest/test_litellm_reasoning_effort.py",
+      "start": 451,
+      "end": 462
+     },
+     {
+      "name": "tests/unittest/test_litellm_reasoning_effort.py",
+      "start": 714,
+      "end": 725
+     },
+     {
+      "name": "tests/unittest/test_litellm_reasoning_effort.py",
+      "start": 787,
+      "end": 798
+     },
+     {
+      "name": "tests/unittest/test_litellm_reasoning_effort.py",
+      "start": 808,
+      "end": 819
+     },
+     {
+      "name": "tests/unittest/test_litellm_reasoning_effort.py",
+      "start": 829,
+      "end": 840
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 64,
+    "first": {
+     "name": "tests/unittest/test_get_max_tokens.py",
+     "start": 635,
+     "end": 643
+    },
+    "others": [
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 649,
+      "end": 657
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 659,
+      "end": 669
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 679,
+      "end": 689
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 699,
+      "end": 709
+     },
+     {
+      "name": "tests/unittest/test_get_max_tokens.py",
+      "start": 889,
+      "end": 899
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 9,
+    "tokens": 76,
+    "first": {
+     "name": "tests/unittest/test_gitlab_provider.py",
+     "start": 2861,
+     "end": 2869
+    },
+    "others": [
+     {
+      "name": "tests/unittest/test_gitlab_provider.py",
+      "start": 2886,
+      "end": 2894
+     },
+     {
+      "name": "tests/unittest/test_gitlab_provider.py",
+      "start": 2938,
+      "end": 2946
+     },
+     {
+      "name": "tests/unittest/test_gitlab_provider.py",
+      "start": 3001,
+      "end": 3009
+     },
+     {
+      "name": "tests/unittest/test_gitlab_provider.py",
+      "start": 3036,
+      "end": 3044
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 23,
+    "tokens": 135,
+    "first": {
+     "name": "tests/unittest/test_webhook_logic_core.py",
+     "start": 544,
+     "end": 566
+    },
+    "others": [
+     {
+      "name": "tests/unittest/test_webhook_logic_core.py",
+      "start": 592,
+      "end": 613
+     },
+     {
+      "name": "tests/unittest/test_webhook_logic_core.py",
+      "start": 636,
+      "end": 657
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 10,
+    "tokens": 67,
+    "first": {
+     "name": "tests/unittest/test_repo_context.py",
+     "start": 1058,
+     "end": 1067
+    },
+    "others": [
+     {
+      "name": "tests/unittest/test_repo_context.py",
+      "start": 1149,
+      "end": 1158
+     },
+     {
+      "name": "tests/unittest/test_repo_context.py",
+      "start": 1192,
+      "end": 1201
+     },
+     {
+      "name": "tests/unittest/test_repo_context.py",
+      "start": 1217,
+      "end": 1226
+     },
+     {
+      "name": "tests/unittest/test_repo_context.py",
+      "start": 1279,
+      "end": 1288
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 116,
+   "lines": 54889,
+   "tokens": 318965,
+   "clones": 65,
+   "duplicatedLines": 809,
+   "duplicatedTokens": 4986,
+   "percentage": 1.47,
+   "percentageTokens": 1.56,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 115,
+     "lines": 54739,
+     "clones": 65,
+     "duplicatedLines": 809,
+     "percentage": 1.48
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 150,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 48,
+     "tokens": 246,
+     "first": {
+      "name": "pr_agent/tools/pr_similar_issue.py",
+      "start": 616,
+      "end": 663
+     },
+     "others": [
+      {
+       "name": "pr_agent/tools/pr_similar_issue.py",
+       "start": 740,
+       "end": 787
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "counter = 0",
+       "issues_iterator = iter(issues_list)",
+       "while True:",
+       "    if counter >= self.max_issues_to_scan:",
+       "        get_logger().info(f\"Scanned {self.max_issues_to_scan} issues, stopping\")",
+       "        break",
+       "    try:",
+       "        issue = next(issues_iterator)",
+       "    except StopIteration:",
+       "        break"
+      ],
+      "total": 48
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 47,
+     "tokens": 241,
+     "first": {
+      "name": "pr_agent/tools/pr_similar_issue.py",
+      "start": 608,
+      "end": 654
+     },
+     "others": [
+      {
+       "name": "pr_agent/tools/pr_similar_issue.py",
+       "start": 842,
+       "end": 888
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "get_logger().info('Processing issues...')",
+       "corpus = Corpus()",
+       "example_issue_record = Record(",
+       "    id=f\"example_issue_{repo_name_for_index}\",",
+       "    text=\"example_issue\",",
+       "    metadata=Metadata(repo=repo_name_for_index)",
+       ")",
+       "",
+       "counter = 0",
+       "issues_iterator = iter(issues_list)"
+      ],
+      "total": 47
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 190,
+     "first": {
+      "name": "pr_agent/git_providers/bitbucket_provider.py",
+      "start": 335,
+      "end": 357
+     },
+     "others": [
+      {
+       "name": "pr_agent/git_providers/bitbucket_server_provider.py",
+       "start": 168,
+       "end": 190
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def _prepare_code_suggestion(self, suggestion: dict) -> dict | None:",
+       "    body = suggestion[\"body\"]",
+       "    original_suggestion = suggestion.get('original_suggestion', None)  # needed for diff code",
+       "    if original_suggestion:",
+       "        try:",
+       "            existing_code = original_suggestion['existing_code'].rstrip() + \"\\n\"",
+       "            improved_code = original_suggestion['improved_code'].rstrip() + \"\\n\"",
+       "            diff = difflib.unified_diff(existing_code.split('\\n'), improved_code.split('\\n'), n=999)",
+       "            patch_orig = \"\\n\".join(diff)",
+       "            patch = \"\\n\".join(patch_orig.splitlines()[5:]).strip('\\n')"
+      ],
+      "total": 23
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 23,
+     "tokens": 163,
+     "first": {
+      "name": "pr_agent/git_providers/bitbucket_provider.py",
+      "start": 669,
+      "end": 691
+     },
+     "others": [
+      {
+       "name": "pr_agent/git_providers/bitbucket_server_provider.py",
+       "start": 472,
+       "end": 496
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 149,
+     "first": {
+      "name": "pr_agent/tools/pr_code_suggestions.py",
+      "start": 306,
+      "end": 323
+     },
+     "others": [
+      {
+       "name": "pr_agent/tools/pr_reviewer.py",
+       "start": 234,
+       "end": 251
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 125,
+     "first": {
+      "name": "pr_agent/git_providers/bitbucket_provider.py",
+      "start": 342,
+      "end": 358
+     },
+     "others": [
+      {
+       "name": "pr_agent/git_providers/bitbucket_server_provider.py",
+       "start": 175,
+       "end": 191
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 20,
+     "tokens": 114,
+     "first": {
+      "name": "pr_agent/servers/bitbucket_server_webhook.py",
+      "start": 277,
+      "end": 296
+     },
+     "others": [
+      {
+       "name": "pr_agent/servers/gitlab_webhook.py",
+       "start": 588,
+       "end": 606
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 10,
+     "tokens": 57,
+     "first": {
+      "name": "pr_agent/git_providers/codecommit_provider.py",
+      "start": 267,
+      "end": 276
+     },
+     "others": [
+      {
+       "name": "pr_agent/git_providers/git_provider.py",
+       "start": 1107,
+       "end": 1116
+      },
+      {
+       "name": "pr_agent/git_providers/github_provider.py",
+       "start": 866,
+       "end": 875
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 18,
+     "tokens": 111,
+     "first": {
+      "name": "pr_agent/servers/azuredevops_server_webhook.py",
+      "start": 227,
+      "end": 244
+     },
+     "others": [
+      {
+       "name": "pr_agent/servers/bitbucket_app.py",
+       "start": 256,
+       "end": 273
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 103,
+     "first": {
+      "name": "pr_agent/git_providers/gerrit_provider.py",
+      "start": 428,
+      "end": 444
+     },
+     "others": [
+      {
+       "name": "pr_agent/git_providers/local_git_provider.py",
+       "start": 100,
+       "end": 115
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "pr_agent/tools/pr_help_docs.py"
+    ]
+   }
+  },
+  "health": {
+   "score": 56.7,
+   "grade": "C",
+   "size": {
+    "lines": 213397,
+    "files": 539,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.4,
+     "adjusted": 4.4,
+     "lines": 9358,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "javascript",
+      "jsx",
+      "bash",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 70
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 4.2,
+     "adjusted": 4.2,
+     "lines": 8965,
+     "halfLife": 7.5,
+     "coverage": 99.9,
+     "weight": 0.999,
+     "score": 67.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 69.5,
+     "adjusted": 69,
+     "lines": 148288,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 38.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 29266,
+   "mean": 54.3,
+   "files": [
+    {
+     "path": "pr_agent/algo/ai_handlers/litellm_ai_handler.py",
+     "complexity": 1190,
+     "lines": 3839,
+     "bytes": 200885
+    },
+    {
+     "path": "tests/unittest/test_litellm_api_key_guard.py",
+     "complexity": 1123,
+     "lines": 8327,
+     "bytes": 376120
+    },
+    {
+     "path": "pr_agent/git_providers/gitlab_provider.py",
+     "complexity": 834,
+     "lines": 2802,
+     "bytes": 142278
+    },
+    {
+     "path": "pr_agent/git_providers/github_provider.py",
+     "complexity": 686,
+     "lines": 2688,
+     "bytes": 132923
+    },
+    {
+     "path": "pr_agent/tools/pr_code_suggestions.py",
+     "complexity": 557,
+     "lines": 2414,
+     "bytes": 129432
+    },
+    {
+     "path": "pr_agent/git_providers/azuredevops_provider.py",
+     "complexity": 540,
+     "lines": 2059,
+     "bytes": 92466
+    },
+    {
+     "path": "pr_agent/algo/ai_handlers/cloud_auth.py",
+     "complexity": 495,
+     "lines": 1912,
+     "bytes": 88234
+    },
+    {
+     "path": "pr_agent/algo/utils.py",
+     "complexity": 484,
+     "lines": 1818,
+     "bytes": 86614
+    },
+    {
+     "path": "tests/unittest/test_litellm_callback_drain.py",
+     "complexity": 457,
+     "lines": 3088,
+     "bytes": 106869
+    },
+    {
+     "path": "pr_agent/tools/pr_reviewer.py",
+     "complexity": 452,
+     "lines": 1814,
+     "bytes": 92012
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 4.21,
+   "findings": 40,
+   "files": 548,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 12
+    },
+    {
+     "category": "unused-import",
+     "count": 28
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "pr_agent/git_providers/gitlab_provider.py",
+     "name": "",
+     "line": 1,
+     "lines": 2802
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/git_providers/gitea_provider.py",
+     "name": "",
+     "line": 1,
+     "lines": 1485
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/git_providers/bitbucket_provider.py",
+     "name": "",
+     "line": 1,
+     "lines": 1029
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/git_providers/codecommit_provider.py",
+     "name": "",
+     "line": 1,
+     "lines": 905
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/tools/pr_help_docs.py",
+     "name": "",
+     "line": 1,
+     "lines": 809
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/git_providers/codecommit_client.py",
+     "name": "",
+     "line": 1,
+     "lines": 355
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/git_providers/plain_diff_provider.py",
+     "name": "",
+     "line": 1,
+     "lines": 261
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/git_providers/diff_parsing.py",
+     "name": "",
+     "line": 1,
+     "lines": 149
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/algo/ai_handlers/langchain_ai_handler.py",
+     "name": "",
+     "line": 1,
+     "lines": 130
+    },
+    {
+     "category": "unused-file",
+     "path": "pr_agent/algo/ai_handlers/openai_ai_handler.py",
+     "name": "",
+     "line": 1,
+     "lines": 81
+    }
+   ]
+  }
+ }
+}

@@ -33,38 +33,54 @@
    "codeSources": 226,
    "healthScore": 43.4,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-11-05",
+   "rank": 2,
+   "stars": 11155,
+   "starsToday": 531,
+   "headSha": "4f810fc9659f66ad6f997074f0cd2bc169329534",
+   "sources": 587,
+   "lines": 337799,
+   "clones": 2086,
+   "duplicatedLines": 37245,
+   "percentage": 11.03,
+   "codePercentage": 1.9,
+   "codeSources": 226,
+   "healthScore": 43.3,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-11-04",
-  "generatedAt": "2026-11-04T05:21:37.925Z",
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T05:21:19.579Z",
   "name": "max-sixty/worktrunk",
   "url": "https://github.com/max-sixty/worktrunk",
   "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
   "language": "Rust",
-  "stars": 10613,
-  "starsToday": 438,
+  "stars": 11155,
+  "starsToday": 531,
   "defaultBranch": "main",
-  "headSha": "ea28955826ad6b9e58857caebb3fcb717b1222b5",
-  "durationMs": 2001,
+  "headSha": "4f810fc9659f66ad6f997074f0cd2bc169329534",
+  "durationMs": 2574,
   "total": {
    "sources": 587,
-   "lines": 337538,
-   "tokens": 2066243,
-   "clones": 2077,
-   "duplicatedLines": 37134,
-   "duplicatedTokens": 266178,
-   "percentage": 11,
-   "percentageTokens": 12.88
+   "lines": 337799,
+   "tokens": 2068720,
+   "clones": 2086,
+   "duplicatedLines": 37245,
+   "duplicatedTokens": 266938,
+   "percentage": 11.03,
+   "percentageTokens": 12.9
   },
   "formats": [
    {
     "format": "rust",
     "sources": 297,
-    "lines": 282468,
-    "clones": 1804,
-    "duplicatedLines": 19049,
-    "percentage": 6.74
+    "lines": 282590,
+    "clones": 1810,
+    "duplicatedLines": 19094,
+    "percentage": 6.76
    },
    {
     "format": "markdown",
@@ -101,10 +117,10 @@
    {
     "format": "toml",
     "sources": 28,
-    "lines": 2659,
+    "lines": 2662,
     "clones": 14,
     "duplicatedLines": 1006,
-    "percentage": 37.83
+    "percentage": 37.79
    },
    {
     "format": "bash",
@@ -125,18 +141,18 @@
    {
     "format": "tsx",
     "sources": 2,
-    "lines": 1010,
+    "lines": 1047,
     "clones": 4,
     "duplicatedLines": 32,
-    "percentage": 3.17
+    "percentage": 3.06
    },
    {
-    "format": "python",
-    "sources": 7,
-    "lines": 3501,
-    "clones": 1,
-    "duplicatedLines": 7,
-    "percentage": 0.2
+    "format": "typescript",
+    "sources": 8,
+    "lines": 663,
+    "clones": 3,
+    "duplicatedLines": 66,
+    "percentage": 9.95
    }
   ],
   "topClones": [
@@ -393,34 +409,34 @@
   ],
   "code": {
    "sources": 226,
-   "lines": 168373,
-   "tokens": 883252,
-   "clones": 328,
-   "duplicatedLines": 3120,
-   "duplicatedTokens": 23353,
-   "percentage": 1.85,
-   "percentageTokens": 2.64,
+   "lines": 168482,
+   "tokens": 884257,
+   "clones": 333,
+   "duplicatedLines": 3198,
+   "duplicatedTokens": 23840,
+   "percentage": 1.9,
+   "percentageTokens": 2.7,
    "formats": [
     {
      "format": "rust",
      "sources": 214,
-     "lines": 166757,
-     "clones": 328,
-     "duplicatedLines": 3120,
-     "percentage": 1.87
-    },
-    {
-     "format": "tsx",
-     "sources": 1,
-     "lines": 657,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "lines": 166764,
+     "clones": 330,
+     "duplicatedLines": 3132,
+     "percentage": 1.88
     },
     {
      "format": "typescript",
      "sources": 4,
-     "lines": 454,
+     "lines": 553,
+     "clones": 3,
+     "duplicatedLines": 66,
+     "percentage": 11.93
+    },
+    {
+     "format": "tsx",
+     "sources": 1,
+     "lines": 660,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -515,7 +531,7 @@
     {
      "format": "rust",
      "lines": 14,
-     "tokens": 103,
+     "tokens": 106,
      "first": {
       "name": "src/commands/picker/mod.rs",
       "start": 2896,
@@ -549,7 +565,7 @@
        "fn test_do_removal_removes_worktree_and_branch() {",
        "    let test = worktrunk::testing::TestRepo::with_initial_commit();",
        "    let repo = worktrunk::git::Repository::at(test.path()).unwrap();",
-       "    let wt_dir = tempfile::tempdir().unwrap();",
+       "    let wt_dir = worktrunk::testing::tempdir().unwrap();",
        "    let wt_path = wt_dir.path().join(\"feature\");",
        "",
        "    repo.run_command(&[",
@@ -564,7 +580,7 @@
        "fn test_do_removal_skips_unapproved_pre_remove_hook() {",
        "    let test = worktrunk::testing::TestRepo::with_initial_commit();",
        "    let repo = worktrunk::git::Repository::at(test.path()).unwrap();",
-       "    let wt_dir = tempfile::tempdir().unwrap();",
+       "    let wt_dir = worktrunk::testing::tempdir().unwrap();",
        "    let wt_path = wt_dir.path().join(\"feature\");",
        "    repo.run_command(&[",
        "        \"worktree\",",
@@ -783,10 +799,10 @@
    }
   },
   "health": {
-   "score": 43.4,
+   "score": 43.3,
    "grade": "D",
    "size": {
-    "lines": 291979,
+    "lines": 292237,
     "files": 341,
     "class": "L"
    },
@@ -795,16 +811,16 @@
      "id": "duplication",
      "source": "jscpd",
      "value": 6.6,
-     "adjusted": 6.5,
-     "lines": 19144,
+     "adjusted": 6.6,
+     "lines": 19255,
      "halfLife": 8.5,
      "formats": [
       "rust",
       "python",
       "javascript",
       "tsx",
-      "bash",
       "typescript",
+      "bash",
       "nix",
       "astro",
       "powershell",
@@ -816,14 +832,14 @@
       "data"
      ],
      "weight": 1,
-     "score": 58.7
+     "score": 58.5
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 82.4,
-     "adjusted": 82,
-     "lines": 240647,
+     "value": 82.5,
+     "adjusted": 82.1,
+     "lines": 241009,
      "halfLife": 50,
      "weight": 1,
      "score": 32.1
@@ -837,32 +853,32 @@
    ]
   },
   "complexity": {
-   "total": 23915,
-   "mean": 70.1,
+   "total": 23966,
+   "mean": 70.3,
    "files": [
     {
      "path": "src/config/deprecation.rs",
      "complexity": 486,
-     "lines": 5650,
-     "bytes": 217035
+     "lines": 5654,
+     "bytes": 217193
     },
     {
      "path": "tests/integration_tests/switch.rs",
      "complexity": 468,
      "lines": 9779,
-     "bytes": 349102
+     "bytes": 349182
     },
     {
      "path": "src/shell_exec.rs",
      "complexity": 445,
      "lines": 4214,
-     "bytes": 173432
+     "bytes": 173462
     },
     {
      "path": "tests/integration_tests/config_show.rs",
      "complexity": 415,
      "lines": 8025,
-     "bytes": 305063
+     "bytes": 305433
     },
     {
      "path": "src/commands/config/state.rs",
@@ -886,7 +902,7 @@
      "path": "tests/integration_tests/remove.rs",
      "complexity": 337,
      "lines": 6761,
-     "bytes": 241541
+     "bytes": 241571
     },
     {
      "path": "src/git/error.rs",
@@ -898,12 +914,12 @@
      "path": "tests/integration_tests/shell_wrapper.rs",
      "complexity": 322,
      "lines": 4607,
-     "bytes": 178039
+     "bytes": 178159
     }
    ]
   },
   "deadCode": {
-   "percentage": 11.31,
+   "percentage": 12.28,
    "findings": 4,
    "files": 37,
    "byCategory": [
@@ -918,28 +934,28 @@
      "path": "plugins/worktrunk/hooks/register.tsx",
      "name": "",
      "line": 1,
-     "lines": 657
+     "lines": 660
     },
     {
      "category": "unused-file",
      "path": "dev/opencode-plugin.ts",
      "name": "",
      "line": 1,
-     "lines": 254
+     "lines": 289
     },
     {
      "category": "unused-file",
      "path": "dev/pi-extension.ts",
      "name": "",
      "line": 1,
-     "lines": 43
+     "lines": 75
     },
     {
      "category": "unused-file",
      "path": "dev/omp-hook.ts",
      "name": "",
      "line": 1,
-     "lines": 40
+     "lines": 72
     }
    ]
   }

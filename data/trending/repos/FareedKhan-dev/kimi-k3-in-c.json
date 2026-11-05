@@ -1,0 +1,865 @@
+{
+ "name": "FareedKhan-dev/kimi-k3-in-c",
+ "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+ "appearances": [
+  {
+   "date": "2026-11-05",
+   "rank": 7,
+   "stars": 10453,
+   "starsToday": 351,
+   "headSha": "81bb6c23ccee2154bc35cad922588ab66494a9a9",
+   "sources": 187,
+   "lines": 195635,
+   "clones": 109,
+   "duplicatedLines": 47211,
+   "percentage": 24.13,
+   "codePercentage": 1.02,
+   "codeSources": 55,
+   "healthScore": 55.4,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T05:21:19.579Z",
+  "name": "FareedKhan-dev/kimi-k3-in-c",
+  "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+  "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+  "language": "C",
+  "stars": 10453,
+  "starsToday": 351,
+  "defaultBranch": "main",
+  "headSha": "81bb6c23ccee2154bc35cad922588ab66494a9a9",
+  "durationMs": 1831,
+  "total": {
+   "sources": 187,
+   "lines": 195635,
+   "tokens": 968950,
+   "clones": 109,
+   "duplicatedLines": 47211,
+   "duplicatedTokens": 126334,
+   "percentage": 24.13,
+   "percentageTokens": 13.04
+  },
+  "formats": [
+   {
+    "format": "c",
+    "sources": 32,
+    "lines": 14370,
+    "clones": 68,
+    "duplicatedLines": 620,
+    "percentage": 4.31
+   },
+   {
+    "format": "json",
+    "sources": 21,
+    "lines": 162442,
+    "clones": 20,
+    "duplicatedLines": 46401,
+    "percentage": 28.56
+   },
+   {
+    "format": "python",
+    "sources": 29,
+    "lines": 6330,
+    "clones": 6,
+    "duplicatedLines": 56,
+    "percentage": 0.88
+   },
+   {
+    "format": "bash",
+    "sources": 13,
+    "lines": 1211,
+    "clones": 6,
+    "duplicatedLines": 48,
+    "percentage": 3.96
+   },
+   {
+    "format": "txt",
+    "sources": 6,
+    "lines": 646,
+    "clones": 5,
+    "duplicatedLines": 43,
+    "percentage": 6.66
+   },
+   {
+    "format": "text",
+    "sources": 4,
+    "lines": 458,
+    "clones": 2,
+    "duplicatedLines": 12,
+    "percentage": 2.62
+   },
+   {
+    "format": "yaml",
+    "sources": 3,
+    "lines": 418,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 1.67
+   },
+   {
+    "format": "cmake",
+    "sources": 5,
+    "lines": 381,
+    "clones": 1,
+    "duplicatedLines": 24,
+    "percentage": 6.3
+   },
+   {
+    "format": "markdown",
+    "sources": 21,
+    "lines": 5647,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "c-header",
+    "sources": 15,
+    "lines": 2553,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "json",
+    "lines": 45511,
+    "tokens": 113771,
+    "first": {
+     "name": "tests/fixtures/ops/kda_layer1.json",
+     "start": 1314,
+     "end": 46824
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/ops/kda_layer8.json",
+      "start": 3106,
+      "end": 48616
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      " ]",
+      "},",
+      "\"q_proj\": {",
+      " \"shape\": [",
+      "  64,",
+      "  128",
+      " ],",
+      " \"data\": [",
+      "  0.1663753,",
+      "  -0.5625148,"
+     ],
+     "total": 45511
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "c",
+    "lines": 27,
+    "tokens": 570,
+    "first": {
+     "name": "README.md",
+     "start": 1739,
+     "end": 1765
+    },
+    "others": [
+     {
+      "name": "src/core/k3_ops.c",
+      "start": 871,
+      "end": 897
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    k3_mmw(z + (size_t)t * P, fa, w->f_b, w->wdt, D, P);",
+      "}",
+      "",
+      "/* 2. ShortConv with fused SiLU, carrying state across calls */",
+      "float *cs = state ? state + (size_t)H * D * D : NULL;",
+      "k3_shortconv(q, q, w->q_conv, cs ? cs : NULL, P, K, T);",
+      "k3_shortconv(k, k, w->k_conv, cs ? cs + (size_t)P * hist : NULL, P, K, T);",
+      "k3_shortconv(v, v, w->v_conv, cs ? cs + (size_t)2 * P * hist : NULL, P, K, T);",
+      "",
+      "/* 3. L2Norm on q and k ONLY, per head. v is deliberately left alone. */"
+     ],
+     "total": 27
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "c",
+    "lines": 32,
+    "tokens": 473,
+    "first": {
+     "name": "README.md",
+     "start": 2012,
+     "end": 2043
+    },
+    "others": [
+     {
+      "name": "src/core/k3_ops.c",
+      "start": 982,
+      "end": 1013
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "/* norm gain and scoring projection collapse into one vector */",
+      "for (int i = 0; i < E; i++) {",
+      "    foldA[i] = w->attn_res_norm[i] * w->attn_res_proj[i];",
+      "    foldM[i] = w->mlp_res_norm[i]  * w->mlp_res_proj[i];",
+      "}",
+      "",
+      "memcpy(pref, h, (size_t)T * E * sizeof(float));",
+      "int have_prefix = 1;                        /* mirrors \"prefix_sum is not None\" */",
+      "",
+      "/* aggregation before attention, only when snapshots already exist */"
+     ],
+     "total": 32
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "c",
+    "lines": 16,
+    "tokens": 404,
+    "first": {
+     "name": "README.md",
+     "start": 1995,
+     "end": 2010
+    },
+    "others": [
+     {
+      "name": "src/core/k3_ops.c",
+      "start": 964,
+      "end": 981
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "c",
+    "lines": 30,
+    "tokens": 352,
+    "first": {
+     "name": "README.md",
+     "start": 1708,
+     "end": 1737
+    },
+    "others": [
+     {
+      "name": "src/core/k3_ops.c",
+      "start": 848,
+      "end": 868
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 128,
+    "tokens": 332,
+    "first": {
+     "name": "tests/fixtures/ops/attnres.json",
+     "start": 1427,
+     "end": 1554
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/ops/attnres.json",
+      "start": 5041,
+      "end": 5168
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 129,
+    "tokens": 322,
+    "first": {
+     "name": "tests/fixtures/ops/attnres.json",
+     "start": 2834,
+     "end": 2962
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/ops/attnres.json",
+      "start": 5296,
+      "end": 5424
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "c",
+    "lines": 12,
+    "tokens": 286,
+    "first": {
+     "name": "README.md",
+     "start": 1880,
+     "end": 1891
+    },
+    "others": [
+     {
+      "name": "src/core/k3_ops.c",
+      "start": 371,
+      "end": 382
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "c",
+    "lines": 17,
+    "tokens": 268,
+    "first": {
+     "name": "README.md",
+     "start": 1970,
+     "end": 1986
+    },
+    "others": [
+     {
+      "name": "src/core/k3_ops.c",
+      "start": 496,
+      "end": 512
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 33,
+    "tokens": 128,
+    "first": {
+     "name": "tests/fixtures/cfg/bad_layer_index.json",
+     "start": 1,
+     "end": 33
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/cfg/flat.json",
+      "start": 1,
+      "end": 33
+     },
+     {
+      "name": "tests/fixtures/ops/MANIFEST.json",
+      "start": 2,
+      "end": 34
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 55,
+   "lines": 15440,
+   "tokens": 311355,
+   "clones": 19,
+   "duplicatedLines": 158,
+   "duplicatedTokens": 1723,
+   "percentage": 1.02,
+   "percentageTokens": 0.55,
+   "formats": [
+    {
+     "format": "c",
+     "sources": 10,
+     "lines": 7251,
+     "clones": 10,
+     "duplicatedLines": 72,
+     "percentage": 0.99
+    },
+    {
+     "format": "python",
+     "sources": 24,
+     "lines": 4597,
+     "clones": 5,
+     "duplicatedLines": 50,
+     "percentage": 1.09
+    },
+    {
+     "format": "bash",
+     "sources": 6,
+     "lines": 1039,
+     "clones": 4,
+     "duplicatedLines": 36,
+     "percentage": 3.46
+    },
+    {
+     "format": "c-header",
+     "sources": 15,
+     "lines": 2553,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c",
+     "lines": 7,
+     "tokens": 141,
+     "first": {
+      "name": "src/cache/k3_cache.c",
+      "start": 1,
+      "end": 7
+     },
+     "others": [
+      {
+       "name": "src/model/k3_bind.c",
+       "start": 1,
+       "end": 7
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "/* k3_cache.c - see k3_cache.h. */",
+       "#define _POSIX_C_SOURCE 200809L",
+       "",
+       "#include \"k3_portable_io.h\"   /* first: sets _DARWIN_C_SOURCE before any libc header;",
+       "                                * on Windows, supplies posix_memalign */",
+       "",
+       "#include <stdio.h>"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "/* k3_bind.c - see k3_bind.h. */",
+       "#define _POSIX_C_SOURCE 200809L",
+       "",
+       "#include \"k3_portable_io.h\"   /* first: sets _DARWIN_C_SOURCE before any libc header;",
+       "                                * on Windows, supplies posix_memalign */",
+       "",
+       "#include <stdarg.h>"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 6,
+     "tokens": 125,
+     "first": {
+      "name": "src/core/k3_ops.c",
+      "start": 282,
+      "end": 287
+     },
+     "others": [
+      {
+       "name": "src/core/k3_ops.c",
+       "start": 1202,
+       "end": 1207
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        a[l] = fma((double)row[i + l], (double)x[i + l], a[l]);",
+       "double b0 = (a[0] + a[4]) + (a[8]  + a[12]);",
+       "double b1 = (a[1] + a[5]) + (a[9]  + a[13]);",
+       "double b2 = (a[2] + a[6]) + (a[10] + a[14]);",
+       "double b3 = (a[3] + a[7]) + (a[11] + a[15]);",
+       "double acc = (b0 + b1) + (b2 + b3);"
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "        a[l] = fma((double)k3_bf16f(row[i + l]), (double)x[i + l], a[l]);",
+       "double b0 = (a[0] + a[4]) + (a[8]  + a[12]);",
+       "double b1 = (a[1] + a[5]) + (a[9]  + a[13]);",
+       "double b2 = (a[2] + a[6]) + (a[10] + a[14]);",
+       "double b3 = (a[3] + a[7]) + (a[11] + a[15]);",
+       "acc = (b0 + b1) + (b2 + b3);"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 123,
+     "first": {
+      "name": "tools/make_k3_oracle.py",
+      "start": 96,
+      "end": 103
+     },
+     "others": [
+      {
+       "name": "tools/make_tiny_checkpoint.py",
+       "start": 224,
+       "end": 231
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        if hasattr(layer.self_attn, \"A_log\"):",
+       "            h = layer.self_attn.A_log.numel()",
+       "            layer.self_attn.A_log.copy_(torch.linspace(-0.4, 1.2, h))",
+       "            torch.nn.init.normal_(layer.self_attn.dt_bias, std=0.5)",
+       "            torch.nn.init.normal_(layer.self_attn.q_conv1d.weight, std=0.4)",
+       "            torch.nn.init.normal_(layer.self_attn.k_conv1d.weight, std=0.4)",
+       "            torch.nn.init.normal_(layer.self_attn.v_conv1d.weight, std=0.4)",
+       "return cfg, model"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 8,
+     "tokens": 116,
+     "first": {
+      "name": "src/core/k3_ops.c",
+      "start": 993,
+      "end": 1000
+     },
+     "others": [
+      {
+       "name": "src/core/k3_ops.c",
+       "start": 1023,
+       "end": 1030
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 7,
+     "tokens": 113,
+     "first": {
+      "name": "src/core/k3_ops.c",
+      "start": 649,
+      "end": 655
+     },
+     "others": [
+      {
+       "name": "src/core/k3_ops.c",
+       "start": 816,
+       "end": 822
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 103,
+     "first": {
+      "name": "tools/verify_kda.py",
+      "start": 33,
+      "end": 48
+     },
+     "others": [
+      {
+       "name": "tools/verify_mla.py",
+       "start": 30,
+       "end": 45
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 7,
+     "tokens": 92,
+     "first": {
+      "name": "src/io/k3_trunk.c",
+      "start": 490,
+      "end": 496
+     },
+     "others": [
+      {
+       "name": "src/io/k3_trunk.c",
+       "start": 525,
+       "end": 531
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 10,
+     "tokens": 90,
+     "first": {
+      "name": "src/io/k3_trunk.c",
+      "start": 715,
+      "end": 724
+     },
+     "others": [
+      {
+       "name": "src/io/k3_trunk.c",
+       "start": 806,
+       "end": 814
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 85,
+     "first": {
+      "name": "tools/make_k3_oracle.py",
+      "start": 77,
+      "end": 84
+     },
+     "others": [
+      {
+       "name": "tools/make_tiny_checkpoint.py",
+       "start": 211,
+       "end": 218
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 85,
+     "first": {
+      "name": "tools/make_st_fixture.py",
+      "start": 47,
+      "end": 55
+     },
+     "others": [
+      {
+       "name": "tools/make_tiny_checkpoint.py",
+       "start": 67,
+       "end": 76
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "src/io/k3_st.c"
+    ]
+   }
+  },
+  "health": {
+   "score": 55.4,
+   "grade": "C",
+   "size": {
+    "lines": 24277,
+    "files": 88,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.4,
+     "adjusted": 1.6,
+     "lines": 344,
+     "halfLife": 8.5,
+     "formats": [
+      "c",
+      "python",
+      "c-header",
+      "bash",
+      "makefile",
+      "cmake"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 87.9
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 24.7,
+     "adjusted": 19.5,
+     "lines": 1548,
+     "halfLife": 7.5,
+     "coverage": 25.8,
+     "weight": 0.258,
+     "score": 16.6
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 56.1,
+     "adjusted": 53.4,
+     "lines": 13614,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 47.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 4491,
+   "mean": 51,
+   "files": [
+    {
+     "path": "src/cli/k3_run.c",
+     "complexity": 576,
+     "lines": 2143,
+     "bytes": 112516
+    },
+    {
+     "path": "src/io/k3_st.c",
+     "complexity": 329,
+     "lines": 910,
+     "bytes": 36779
+    },
+    {
+     "path": "src/chat/k3_chat.c",
+     "complexity": 307,
+     "lines": 480,
+     "bytes": 24660
+    },
+    {
+     "path": "src/core/k3_ops.c",
+     "complexity": 296,
+     "lines": 1817,
+     "bytes": 95451
+    },
+    {
+     "path": "tests/unit/test_ops.c",
+     "complexity": 220,
+     "lines": 897,
+     "bytes": 41081
+    },
+    {
+     "path": "src/io/k3_trunk.c",
+     "complexity": 207,
+     "lines": 975,
+     "bytes": 47566
+    },
+    {
+     "path": "tests/unit/test_st_faults.c",
+     "complexity": 163,
+     "lines": 479,
+     "bytes": 20307
+    },
+    {
+     "path": "tests/unit/k3_model.c",
+     "complexity": 129,
+     "lines": 519,
+     "bytes": 26612
+    },
+    {
+     "path": "src/cache/k3_cache.c",
+     "complexity": 128,
+     "lines": 568,
+     "bytes": 25529
+    },
+    {
+     "path": "src/model/k3_bind.c",
+     "complexity": 117,
+     "lines": 640,
+     "bytes": 27524
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 24.68,
+   "findings": 8,
+   "files": 28,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 3
+    },
+    {
+     "category": "unused-export",
+     "count": 5
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "docs/images/_plots.py",
+     "name": "",
+     "line": 1,
+     "lines": 925
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/images/_gen.py",
+     "name": "",
+     "line": 1,
+     "lines": 362
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/images/_eq.py",
+     "name": "",
+     "line": 1,
+     "lines": 227
+    },
+    {
+     "category": "unused-export",
+     "path": "tools/_paths.py",
+     "name": "hf_dir",
+     "line": 57,
+     "lines": 23
+    },
+    {
+     "category": "unused-export",
+     "path": "tools/_paths.py",
+     "name": "ensure",
+     "line": 47,
+     "lines": 8
+    },
+    {
+     "category": "unused-export",
+     "path": "tools/_paths.py",
+     "name": "FIX_GOLDEN",
+     "line": 41,
+     "lines": 1
+    },
+    {
+     "category": "unused-export",
+     "path": "tools/_paths.py",
+     "name": "REF_K3_JSON",
+     "line": 43,
+     "lines": 1
+    },
+    {
+     "category": "unused-export",
+     "path": "tools/_paths.py",
+     "name": "TINY_K3_BIN",
+     "line": 44,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}
