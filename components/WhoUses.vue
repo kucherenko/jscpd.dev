@@ -35,11 +35,16 @@
             <span class="who-uses-mark" aria-hidden="true" />
             <span class="who-uses-name">{{ user.name }}</span>
             <span class="who-uses-project">{{ user.project }}</span>
+            <span v-if="starsOf(user)" class="who-uses-stars">
+              <Icon name="lucide:star" class="who-uses-star" aria-hidden="true" />
+              <span class="sr-only">GitHub stars:</span>
+              {{ starsOf(user) }}
+            </span>
           </a>
         </li>
       </ul>
       <p class="who-uses-note">
-        Each logo opens the file that runs jscpd in the project's public repository. The logos belong to their owners.
+        Each logo opens the file that runs jscpd in the project's public repository. The number is that repository's GitHub stars, refreshed every day. The logos belong to their owners.
       </p>
     </div>
 
@@ -53,7 +58,20 @@
 </template>
 
 <script setup lang="ts">
-import { jscpdUsers } from '~/data/users'
+import { jscpdUsers, type JscpdUser } from '~/data/users'
+import userStars from '~/data/users-stars.json'
+
+// Stars of the repository the tile links to, from data/users-stars.json
+// (scripts/fetch-user-stars.mjs refreshes it every day), as 436k or 1.2k.
+const stars: Record<string, number> = userStars.stars
+function starsOf(user: JscpdUser): string {
+  const repo = user.url.split('/').slice(3, 5).join('/')
+  const n = stars[repo]
+  if (n === undefined) return ''
+  if (n >= 100_000) return `${Math.round(n / 1000)}k`
+  if (n >= 1000) return `${(n / 1000).toFixed(1).replace(/\.0$/, '')}k`
+  return String(n)
+}
 
 const platforms = [
   {
@@ -228,6 +246,25 @@ const platforms = [
   font-size: 0.75rem;
   line-height: 1.3;
   color: var(--ui-text-muted, #64748b);
+}
+
+/* Pinned to the bottom, so the counts of a row line up when a name wraps. */
+.who-uses-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: auto;
+  padding-top: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.who-uses-star {
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .who-uses-note {

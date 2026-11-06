@@ -29,6 +29,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # The GitHub stars next to the logos on the landing page. A failed
+      # refresh keeps yesterday's numbers and does not stop the trending run.
+      - name: Refresh the stars of the logo wall
+        run: node scripts/fetch-user-stars.mjs
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit refreshed data
         id: commit
         run: |
