@@ -1,53 +1,51 @@
 <template>
   <div class="who-uses">
-    <div class="who-uses-platforms">
-      <a
-        v-for="platform in platforms"
-        :key="platform.name"
-        :href="platform.url"
-        target="_blank"
-        rel="noopener"
-        class="platform-card"
-      >
-        <Icon :name="platform.icon" class="platform-icon" />
-        <div class="platform-info">
-          <span class="platform-name">{{ platform.name }}</span>
-          <span class="platform-desc">{{ platform.description }}</span>
-        </div>
-      </a>
-    </div>
-
-    <div v-if="variant !== 'compact'" class="who-uses-projects">
-      <span class="projects-label">Also found in</span>
-      <div class="project-pills">
+    <div class="who-uses-group">
+      <span class="projects-label">Bundled by</span>
+      <div class="who-uses-platforms">
         <a
-          v-for="project in projects"
-          :key="project.name"
-          :href="project.url"
+          v-for="platform in platforms"
+          :key="platform.name"
+          :href="platform.url"
           target="_blank"
           rel="noopener"
-          class="project-pill"
-        >{{ project.name }}</a>
+          class="platform-card"
+        >
+          <Icon :name="platform.icon" class="platform-icon" />
+          <div class="platform-info">
+            <span class="platform-name">{{ platform.name }}</span>
+            <span class="platform-desc">{{ platform.description }}</span>
+          </div>
+        </a>
       </div>
     </div>
 
-    <div v-if="variant !== 'compact'" class="who-uses-projects">
-      <span class="projects-label">Explicitly enabled in Super Linter by</span>
-      <div class="project-pills">
-        <a
-          v-for="project in superLinterProjects"
-          :key="project.name"
-          :href="project.url"
-          target="_blank"
-          rel="noopener"
-          class="project-pill"
-        >{{ project.name }}</a>
-      </div>
+    <div class="who-uses-teams">
+      <span class="projects-label">Runs in the repositories of</span>
+      <ul class="who-uses-logos">
+        <li v-for="user in jscpdUsers" :key="user.logo">
+          <a
+            :href="user.url"
+            target="_blank"
+            rel="noopener"
+            class="who-uses-logo"
+            :title="`${user.name}, ${user.project}: ${user.how}`"
+            :style="{ '--logo': user.color, '--logo-dark': user.dark || user.color, '--mark': `url(/logos/${user.logo}.svg)` }"
+          >
+            <span class="who-uses-mark" aria-hidden="true" />
+            <span class="who-uses-name">{{ user.name }}</span>
+            <span class="who-uses-project">{{ user.project }}</span>
+          </a>
+        </li>
+      </ul>
+      <p class="who-uses-note">
+        Each logo opens the file that runs jscpd in the project's public repository. The logos belong to their owners.
+      </p>
     </div>
 
     <p class="who-uses-stats">
       <strong>10M+</strong> npm downloads / month &middot;
-      <a href="https://github.com/kucherenko/jscpd/network/dependents" target="_blank" rel="noopener"><strong>~5,000</strong> repositories</a>
+      <a href="https://github.com/kucherenko/jscpd/network/dependents" target="_blank" rel="noopener"><strong>6,000+</strong> repositories</a>
       declare jscpd on GitHub's dependents graph &middot;
       <strong>15,500+</strong> workflow files reference Super Linter, which runs jscpd by default
     </p>
@@ -55,9 +53,8 @@
 </template>
 
 <script setup lang="ts">
-// `compact` keeps the three platform cards and the numbers; the landing
-// page uses it, the project pill rows stay available for other pages.
-const { variant = 'full' } = defineProps<{ variant?: 'full' | 'compact' }>()
+import { jscpdUsers } from '~/data/users'
+
 const platforms = [
   {
     name: 'GitHub Super Linter',
@@ -77,25 +74,6 @@ const platforms = [
     icon: 'lucide:badge-check',
     url: 'https://www.codacy.com/'
   }
-]
-
-const projects = [
-  { name: 'Microsoft TypeAgent', url: 'https://github.com/microsoft/TypeAgent' },
-  { name: 'Salesforce DX VS Code', url: 'https://github.com/forcedotcom/salesforcedx-vscode' },
-  { name: 'OVHcloud manager', url: 'https://github.com/ovh/manager' },
-  { name: 'MEGA webclient', url: 'https://github.com/meganz/webclient' },
-  { name: 'Alibaba AppWorks', url: 'https://github.com/apptools-lab/AppWorks' },
-  { name: 'degit', url: 'https://github.com/Rich-Harris/degit' },
-  { name: 'OpenClaw', url: 'https://github.com/openclaw/openclaw' },
-  { name: 'DeepSeek Harness', url: 'https://github.com/deepseek-ai/deepseek-harness' },
-  { name: 'KiroCrew', url: 'https://github.com/kirodotdev/KiroCrew' }
-]
-
-const superLinterProjects = [
-  { name: 'Google A2A protocol', url: 'https://github.com/a2aproject/A2A' },
-  { name: 'RimSort', url: 'https://github.com/RimSort/RimSort' },
-  { name: 'Google Cloud CCAI samples', url: 'https://github.com/GoogleCloudPlatform/contact-center-ai-samples' },
-  { name: 'Drifty', url: 'https://github.com/SaptarshiSarkar12/Drifty' }
 ]
 </script>
 
@@ -156,7 +134,8 @@ const superLinterProjects = [
   color: var(--ui-text-muted, #64748b);
 }
 
-.who-uses-projects {
+.who-uses-group,
+.who-uses-teams {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -170,29 +149,130 @@ const superLinterProjects = [
   color: var(--ui-text-muted, #64748b);
 }
 
-.project-pills {
+/* Rows of --cols tiles; a row that is not full sits in the middle. */
+.who-uses-logos {
+  --cols: 8;
+  --gap: 0.625rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: var(--gap);
 }
 
-.project-pill {
-  padding: 0.375rem 0.875rem;
-  font-size: 0.8125rem;
-  font-weight: 500;
+.who-uses-logos > li {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  min-width: 0;
+}
+
+@media (max-width: 1199px) {
+  .who-uses-logos {
+    --cols: 6;
+  }
+}
+
+@media (max-width: 899px) {
+  .who-uses-logos {
+    --cols: 5;
+  }
+}
+
+.who-uses-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  height: 100%;
+  padding: 1rem 0.5rem 0.875rem;
   border: 1px solid var(--ui-border, rgba(100, 116, 139, 0.25));
-  border-radius: 9999px;
-  color: var(--ui-text-muted, #64748b);
-  background: transparent;
+  border-radius: 0.75rem;
+  text-align: center;
   text-decoration: none;
-  transition: all 0.2s ease;
-  white-space: nowrap;
+  color: var(--ui-text-muted, #64748b);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.project-pill:hover {
-  color: var(--jscpd-blue, #007bff);
+.who-uses-logo:hover,
+.who-uses-logo:focus-visible {
+  color: var(--logo);
   border-color: rgba(0, 123, 255, 0.4);
-  background: rgba(0, 123, 255, 0.06);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.08);
+}
+
+.dark .who-uses-logo:hover,
+.dark .who-uses-logo:focus-visible {
+  color: var(--logo-dark);
+}
+
+/* The mark is a single-colour SVG used as a mask, so it takes the link's
+   colour: grey at rest, the brand colour on hover. */
+.who-uses-mark {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.375rem;
+  background-color: currentColor;
+  -webkit-mask: var(--mark) center / contain no-repeat;
+  mask: var(--mark) center / contain no-repeat;
+}
+
+.who-uses-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ui-text-highlighted, inherit);
+}
+
+.who-uses-project {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  color: var(--ui-text-muted, #64748b);
+}
+
+.who-uses-note {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ui-text-dimmed, #94a3b8);
+}
+
+@media (max-width: 640px) {
+  .who-uses-logos {
+    --cols: 4;
+    --gap: 0.5rem;
+  }
+
+  .who-uses-logo {
+    padding: 0.75rem 0.25rem 0.625rem;
+  }
+
+  .who-uses-mark {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+/* On a phone the wall keeps the logos and names; the project names stay in
+   the link titles and on wider screens. */
+@media (max-width: 480px) {
+  .who-uses-mark {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .who-uses-name {
+    font-size: 0.75rem;
+  }
+
+  .who-uses-project {
+    display: none;
+  }
+}
+
+@media (max-width: 359px) {
+  .who-uses-logos {
+    --cols: 3;
+  }
 }
 
 .who-uses-stats {

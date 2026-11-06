@@ -1,0 +1,237 @@
+// Teams and projects whose public repositories run jscpd, for the logo wall
+// on the landing page. Each entry links to the file that runs it. Found on
+// GitHub's dependents graph and in code search, and every file was read by
+// hand on 2026-11-06: a repository that only names jscpd to switch it off
+// (VALIDATE_JSCPD: false in Super Linter) is not on the list.
+//
+// `logo` is a file in public/logos/, a single-colour mark drawn from the
+// brand's own SVG; the wall paints it grey and turns it to `color` (or
+// `dark` in the dark theme) on hover.
+export interface JscpdUser {
+  name: string
+  project: string
+  how: string
+  url: string
+  logo: string
+  color: string
+  dark?: string
+}
+
+export const jscpdUsers: JscpdUser[] = [
+  {
+    name: 'JetBrains',
+    project: 'IntelliJ IDEA',
+    how: 'Bazel pins jscpd 5.4.2 and runs it as the copy-paste test of several areas.',
+    url: 'https://github.com/JetBrains/intellij-community/blob/master/tools/jscpd.MODULE.bazel',
+    logo: 'jetbrains',
+    color: '#000000',
+    dark: '#ffffff',
+  },
+  {
+    name: 'Microsoft',
+    project: 'MSTest',
+    how: 'A workflow scans the C# sources with jscpd and has a model review the top findings.',
+    url: 'https://github.com/microsoft/testfx/blob/main/.github/workflows/dedup-analysis.yml',
+    logo: 'microsoft',
+    color: '#00a4ef',
+  },
+  {
+    name: 'AWS',
+    project: 'Toolkit for VS Code',
+    how: 'Every pull request runs jscpd and keeps the clones that touch the diff.',
+    url: 'https://github.com/aws/aws-toolkit-vscode/blob/master/.github/workflows/node.js.yml',
+    logo: 'aws',
+    color: '#ff9900',
+  },
+  {
+    name: 'Google Cloud',
+    project: 'Document AI samples',
+    how: 'Super Linter runs jscpd with a config of its own.',
+    url: 'https://github.com/GoogleCloudPlatform/document-ai-samples/blob/main/.github/linters/.jscpd.json',
+    logo: 'google-cloud',
+    color: '#4285f4',
+  },
+  {
+    name: 'IBM',
+    project: 'ContextForge',
+    how: 'The web lint workflow runs jscpd over the gateway\'s static files and templates.',
+    url: 'https://github.com/IBM/mcp-context-forge/blob/main/.github/workflows/lint-web.yml',
+    logo: 'ibm',
+    color: '#0f62fe',
+    dark: '#4589ff',
+  },
+  {
+    name: 'Salesforce',
+    project: 'VS Code extensions',
+    how: 'A check:dupes script runs jscpd with the repository\'s .jscpd.json.',
+    url: 'https://github.com/forcedotcom/salesforcedx-vscode/blob/develop/.jscpd.json',
+    logo: 'salesforce',
+    color: '#00a1e0',
+  },
+  {
+    name: 'Elastic',
+    project: 'Elastic CLI',
+    how: 'MegaLinter runs jscpd, enabled by name, with a 5% threshold in .jscpd.json.',
+    url: 'https://github.com/elastic/cli/blob/main/.mega-linter.yml',
+    logo: 'elastic',
+    color: '#005571',
+    dark: '#3ebeb0',
+  },
+  {
+    name: 'REA',
+    project: 'reverse engineering',
+    how: 'The deep static checks job of CI runs jscpd with a 4% threshold on every pull request.',
+    url: 'https://github.com/morluto/rea/blob/main/scripts/ci/static-check-report.mjs',
+    logo: 'rea',
+    color: '#20252b',
+    dark: '#89b4fa',
+  },
+  {
+    name: 'OpenClaw',
+    project: 'AI assistant',
+    how: 'The dup:check scripts run jscpd 5.4.2 as part of the repository checks.',
+    url: 'https://github.com/openclaw/openclaw/blob/main/scripts/check-duplicates.mts',
+    logo: 'openclaw',
+    color: '#ff4d4d',
+  },
+  {
+    name: 'n8n',
+    project: 'workflow automation',
+    how: 'A workflow scans the monorepo with jscpd and uploads the report.',
+    url: 'https://github.com/n8n-io/n8n/blob/master/.github/workflows/jscpd.yml',
+    logo: 'n8n',
+    color: '#ea4b71',
+  },
+  {
+    name: 'DeepSeek',
+    project: 'DeepSeek Harness',
+    how: 'CI runs a duplication gate, jscpd with exitCode 1 over packages and scripts.',
+    url: 'https://github.com/deepseek-ai/deepseek-harness/blob/master/.jscpd.json',
+    logo: 'deepseek',
+    color: '#4d6bfe',
+    dark: '#7b97ff',
+  },
+  {
+    name: 'MiniMax',
+    project: 'MiniMax Code',
+    how: 'The local runtime package configures jscpd with a 5% threshold.',
+    url: 'https://github.com/MiniMax-AI/minimax-code/blob/main/packages/local-runtime-v2/package.json',
+    logo: 'minimax',
+    color: '#e73562',
+  },
+  {
+    name: 'Kiro',
+    project: 'KiroCrew',
+    how: 'CI runs copy/paste detection with jscpd on the website code.',
+    url: 'https://github.com/kirodotdev/KiroCrew/blob/main/.github/workflows/ci.yml',
+    logo: 'kiro',
+    color: '#9046ff',
+    dark: '#a97bff',
+  },
+  {
+    name: 'A2A',
+    project: 'Agent2Agent protocol',
+    how: 'Super Linter runs jscpd, switched on with VALIDATE_JSCPD=true.',
+    url: 'https://github.com/a2aproject/A2A/blob/main/.github/super-linter.env',
+    logo: 'a2a',
+    color: '#2874d7',
+    dark: '#5b9cf0',
+  },
+  {
+    name: 'ClickHouse',
+    project: 'HyperDX',
+    how: 'A workflow runs jscpd duplicate code analysis on the repository.',
+    url: 'https://github.com/hyperdxio/hyperdx/blob/main/.github/workflows/jscpd.yml',
+    logo: 'clickhouse',
+    color: '#e6b800',
+    dark: '#ffcc01',
+  },
+  {
+    name: 'Deutsche Bahn',
+    project: 'DB UX Design System',
+    how: 'The lint:jscpd script exits with 1 when jscpd finds clones.',
+    url: 'https://github.com/db-ux-design-system/core-web/blob/main/package.json',
+    logo: 'deutsche-bahn',
+    color: '#f01414',
+    dark: '#ff5050',
+  },
+  {
+    name: 'Callstack',
+    project: 'agent-device',
+    how: 'A baseline gate fails CI on new clones in the native code.',
+    url: 'https://github.com/callstack/agent-device/blob/main/package.json',
+    logo: 'callstack',
+    color: '#a50064',
+    dark: '#e2479b',
+  },
+  {
+    name: 'Evil Martians',
+    project: 'AgentPrism',
+    how: 'CI has a jscpd job next to lint and tests.',
+    url: 'https://github.com/evilmartians/agent-prism/blob/main/.github/workflows/ci.yml',
+    logo: 'evil-martians',
+    color: '#9fa628',
+    dark: '#c4cb3a',
+  },
+  {
+    name: 'Wire',
+    project: 'Wire for Web',
+    how: 'The lint-duplication recipe runs jscpd with the repository\'s config.',
+    url: 'https://github.com/wireapp/wire-webapp/blob/main/justfile',
+    logo: 'wire',
+    color: '#000000',
+    dark: '#ffffff',
+  },
+  {
+    name: 'MEGA',
+    project: 'web client',
+    how: 'An npm script runs jscpd over the client\'s JavaScript.',
+    url: 'https://github.com/meganz/webclient/blob/master/package.json',
+    logo: 'mega',
+    color: '#d9272e',
+    dark: '#f0484e',
+  },
+  {
+    name: 'OVHcloud',
+    project: 'Manager',
+    how: 'The static analysis kit of the control panel has a jscpd duplication check.',
+    url: 'https://github.com/ovh/manager/blob/master/packages/manager-tools/manager-static-analysis-kit/bin/code-duplication-cli.js',
+    logo: 'ovhcloud',
+    color: '#123f6d',
+    dark: '#6b9fd8',
+  },
+  {
+    name: 'Kitware',
+    project: 'VolView',
+    how: 'A check script runs jscpd and reads its JSON report.',
+    url: 'https://github.com/Kitware/VolView/blob/main/scripts/checks/duplication.mjs',
+    logo: 'kitware',
+    color: '#0068c7',
+    dark: '#4c9be8',
+  },
+  {
+    name: 'RudderStack',
+    project: 'JavaScript SDK',
+    how: 'check:duplicates runs jscpd in every package of the monorepo.',
+    url: 'https://github.com/rudderlabs/rudder-sdk-js/blob/develop/.jscpd.json',
+    logo: 'rudderstack',
+    color: '#020e20',
+    dark: '#ffffff',
+  },
+  {
+    name: 'Prebid.js',
+    project: 'header bidding',
+    how: 'Every pull request to master runs a duplicated code check with jscpd.',
+    url: 'https://github.com/prebid/Prebid.js/blob/master/.github/workflows/jscpd.yml',
+    logo: 'prebid',
+    color: '#ff6f00',
+  },
+  {
+    name: 'Eclipse Adoptium',
+    project: 'Temurin build',
+    how: 'Super Linter runs jscpd with a config of its own.',
+    url: 'https://github.com/adoptium/temurin-build/blob/master/.github/linters/.jscpd.json',
+    logo: 'eclipse-adoptium',
+    color: '#ff1464',
+  },
+]
