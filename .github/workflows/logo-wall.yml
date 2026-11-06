@@ -1,0 +1,45 @@
+name: Logo wall check
+
+# Every tile of the landing page logo wall links to the file in that project's
+# repository that runs jscpd. scripts/check-users.mjs reads those files again
+# and fails when one is gone, no longer names jscpd or switches it off: on a
+# pull request that changes the list, every Monday, and on demand.
+on:
+  pull_request:
+    paths:
+      - data/users.ts
+      - scripts/check-users.mjs
+      - scripts/fetch-user-stars.mjs
+      - .github/workflows/logo-wall.yml
+  schedule:
+    - cron: "23 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.x"
+
+      - name: Check that every project still runs jscpd
+        run: node scripts/check-users.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # The trending workflow refreshes the stars every morning and commits
+      # them. This runs the same script without a commit, so a broken refresh
+      # shows up here as well.
+      - name: Refresh the stars, without a commit
+        run: |
+          node scripts/fetch-user-stars.mjs
+          git diff --stat -- data/users-stars.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -156,13 +156,13 @@ export const jscpdUsers: JscpdUser[] = [
     dark: '#5b9cf0',
   },
   {
-    name: 'ClickHouse',
-    project: 'HyperDX',
+    name: 'HyperDX',
+    project: 'observability',
     how: 'A workflow runs jscpd duplicate code analysis on the repository.',
     url: 'https://github.com/hyperdxio/hyperdx/blob/main/.github/workflows/jscpd.yml',
-    logo: 'clickhouse',
-    color: '#e6b800',
-    dark: '#ffcc01',
+    logo: 'hyperdx',
+    color: '#1fb85a',
+    dark: '#4ffa7a',
   },
   {
     name: 'Sveltia CMS',
