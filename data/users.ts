@@ -78,6 +78,15 @@ export const jscpdUsers: JscpdUser[] = [
     dark: '#3ebeb0',
   },
   {
+    name: 'REA',
+    project: 'reverse engineering',
+    how: 'The deep static checks job of CI runs jscpd with a 4% threshold on every pull request.',
+    url: 'https://github.com/morluto/rea/blob/main/scripts/ci/static-check-report.mjs',
+    logo: 'rea',
+    color: '#20252b',
+    dark: '#89b4fa',
+  },
+  {
     name: 'OpenClaw',
     project: 'AI assistant',
     how: 'The dup:check scripts run jscpd 5.4.2 as part of the repository checks.',

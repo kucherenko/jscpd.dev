@@ -149,13 +149,34 @@ const platforms = [
   color: var(--ui-text-muted, #64748b);
 }
 
+/* Rows of --cols tiles; a row that is not full sits in the middle. */
 .who-uses-logos {
+  --cols: 8;
+  --gap: 0.625rem;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
-  gap: 0.625rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.who-uses-logos > li {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  min-width: 0;
+}
+
+@media (max-width: 1199px) {
+  .who-uses-logos {
+    --cols: 6;
+  }
+}
+
+@media (max-width: 899px) {
+  .who-uses-logos {
+    --cols: 5;
+  }
 }
 
 .who-uses-logo {
@@ -217,8 +238,8 @@ const platforms = [
 
 @media (max-width: 640px) {
   .who-uses-logos {
-    grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
-    gap: 0.5rem;
+    --cols: 4;
+    --gap: 0.5rem;
   }
 
   .who-uses-logo {
@@ -231,13 +252,9 @@ const platforms = [
   }
 }
 
-/* On a phone the wall keeps the logos and names, four to a row; the project
-   names stay in the link titles and on wider screens. */
+/* On a phone the wall keeps the logos and names; the project names stay in
+   the link titles and on wider screens. */
 @media (max-width: 480px) {
-  .who-uses-logos {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .who-uses-mark {
     width: 1.5rem;
     height: 1.5rem;
@@ -254,7 +271,7 @@ const platforms = [
 
 @media (max-width: 359px) {
   .who-uses-logos {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    --cols: 3;
   }
 }
 
