@@ -1,0 +1,806 @@
+{
+ "name": "microsoft/VibeVoice",
+ "url": "https://github.com/microsoft/VibeVoice",
+ "appearances": [
+  {
+   "date": "2026-11-06",
+   "rank": 11,
+   "stars": 56137,
+   "starsToday": 223,
+   "headSha": "16fb2cb1217c9934a886e1948ffb06120caa2df5",
+   "sources": 66,
+   "lines": 23939,
+   "clones": 119,
+   "duplicatedLines": 2013,
+   "percentage": 8.41,
+   "codePercentage": 8.36,
+   "codeSources": 29,
+   "healthScore": 57,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T05:21:38.798Z",
+  "name": "microsoft/VibeVoice",
+  "url": "https://github.com/microsoft/VibeVoice",
+  "description": "Open-Source Frontier Voice AI",
+  "language": "Python",
+  "stars": 56137,
+  "starsToday": 223,
+  "defaultBranch": "main",
+  "headSha": "16fb2cb1217c9934a886e1948ffb06120caa2df5",
+  "durationMs": 1101,
+  "total": {
+   "sources": 66,
+   "lines": 23939,
+   "tokens": 139572,
+   "clones": 119,
+   "duplicatedLines": 2013,
+   "duplicatedTokens": 12788,
+   "percentage": 8.41,
+   "percentageTokens": 9.16
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 40,
+    "lines": 20657,
+    "clones": 102,
+    "duplicatedLines": 1761,
+    "percentage": 8.52
+   },
+   {
+    "format": "bash",
+    "sources": 8,
+    "lines": 302,
+    "clones": 10,
+    "duplicatedLines": 91,
+    "percentage": 30.13
+   },
+   {
+    "format": "markdown",
+    "sources": 11,
+    "lines": 1511,
+    "clones": 5,
+    "duplicatedLines": 75,
+    "percentage": 4.96
+   },
+   {
+    "format": "json",
+    "sources": 5,
+    "lines": 396,
+    "clones": 2,
+    "duplicatedLines": 86,
+    "percentage": 21.72
+   },
+   {
+    "format": "markup",
+    "sources": 1,
+    "lines": 1017,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 1,
+    "lines": 56,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 111,
+    "tokens": 622,
+    "first": {
+     "name": "demo/vibevoice_asr_gradio_demo.py",
+     "start": 710,
+     "end": 820
+    },
+    "others": [
+     {
+      "name": "vllm_plugin/scripts/gradio_asr_demo_api_video.py",
+      "start": 1374,
+      "end": 1484
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "theme_css = \"\"\"",
+      "<style>",
+      ":root {",
+      "    --segment-bg: #f8f9fa;",
+      "    --segment-border: #e1e5e9;",
+      "    --segment-text: #495057;",
+      "    --segment-meta: #6c757d;",
+      "    --content-bg: white;",
+      "    --content-border: #007bff;",
+      "    --warning-bg: #fff3cd;"
+     ],
+     "total": 111
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 23,
+    "tokens": 435,
+    "first": {
+     "name": "demo/vibevoice_asr_streaming_fastapi_demo.py",
+     "start": 199,
+     "end": 221
+    },
+    "others": [
+     {
+      "name": "vllm_plugin/scripts/fastapi_asr_streaming_demo_api.py",
+      "start": 183,
+      "end": 205
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "}",
+      "* { box-sizing: border-box; }",
+      "body { margin:0; background:var(--bg); color:var(--fg); font-size:15px;",
+      "       font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,",
+      "                   \"Helvetica Neue\",\"PingFang SC\",\"Microsoft YaHei\",sans-serif; }",
+      "header { padding:18px 24px; border-bottom:1px solid var(--line);",
+      "         display:flex; align-items:center; gap:12px; flex-wrap:wrap; }",
+      "h1 { font-size:17px; margin:0; font-weight:600; }",
+      ".dot { width:8px; height:8px; border-radius:50%; background:var(--muted); }",
+      ".dot.ok { background:var(--ok); }"
+     ],
+     "total": 23
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 45,
+    "tokens": 396,
+    "first": {
+     "name": "vibevoice/processor/vibevoice_processor.py",
+     "start": 646,
+     "end": 690
+    },
+    "others": [
+     {
+      "name": "vibevoice/processor/vibevoice_streaming_processor.py",
+      "start": 363,
+      "end": 407
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "def batch_decode(self, *args, **kwargs):",
+      "    \"\"\"",
+      "    This method forwards all its arguments to VibeVoiceTextTokenizer's [`~PreTrainedTokenizer.batch_decode`].",
+      "    Please refer to the docstring of this method for more information.",
+      "    \"\"\"",
+      "    return self.tokenizer.batch_decode(*args, **kwargs)",
+      "",
+      "def decode(self, *args, **kwargs):",
+      "    \"\"\"",
+      "    This method forwards all its arguments to VibeVoiceTextTokenizer's [`~PreTrainedTokenizer.decode`]."
+     ],
+     "total": 45
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 51,
+    "tokens": 368,
+    "first": {
+     "name": "vibevoice/processor/vibevoice_processor.py",
+     "start": 461,
+     "end": 511
+    },
+    "others": [
+     {
+      "name": "vibevoice/processor/vibevoice_streaming_processor.py",
+      "start": 313,
+      "end": 363
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 78,
+    "tokens": 365,
+    "first": {
+     "name": "vibevoice/processor/vibevoice_processor.py",
+     "start": 55,
+     "end": 132
+    },
+    "others": [
+     {
+      "name": "vibevoice/processor/vibevoice_streaming_processor.py",
+      "start": 51,
+      "end": 128
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 71,
+    "tokens": 359,
+    "first": {
+     "name": "vibevoice/modular/modeling_vibevoice.py",
+     "start": 143,
+     "end": 213
+    },
+    "others": [
+     {
+      "name": "vibevoice/modular/modeling_vibevoice_asr.py",
+      "start": 85,
+      "end": 154
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 50,
+    "tokens": 285,
+    "first": {
+     "name": "vibevoice/modular/modular_vibevoice_text_tokenizer.py",
+     "start": 112,
+     "end": 161
+    },
+    "others": [
+     {
+      "name": "vibevoice/modular/modular_vibevoice_text_tokenizer.py",
+      "start": 210,
+      "end": 259
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 24,
+    "tokens": 223,
+    "first": {
+     "name": "vibevoice/modular/modular_vibevoice_tokenizer.py",
+     "start": 1074,
+     "end": 1097
+    },
+    "others": [
+     {
+      "name": "vibevoice/modular/modular_vibevoice_tokenizer.py",
+      "start": 1164,
+      "end": 1187
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 36,
+    "tokens": 214,
+    "first": {
+     "name": "README.md",
+     "start": 136,
+     "end": 171
+    },
+    "others": [
+     {
+      "name": "docs/vibevoice-tts.md",
+      "start": 51,
+      "end": 84
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 35,
+    "tokens": 198,
+    "first": {
+     "name": "vibevoice/modular/configuration_vibevoice.py",
+     "start": 208,
+     "end": 242
+    },
+    "others": [
+     {
+      "name": "vibevoice/modular/configuration_vibevoice.py",
+      "start": 313,
+      "end": 347
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 29,
+   "lines": 16116,
+   "tokens": 92322,
+   "clones": 77,
+   "duplicatedLines": 1347,
+   "duplicatedTokens": 8270,
+   "percentage": 8.36,
+   "percentageTokens": 8.96,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 29,
+     "lines": 16116,
+     "clones": 77,
+     "duplicatedLines": 1347,
+     "percentage": 8.36
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 45,
+     "tokens": 396,
+     "first": {
+      "name": "vibevoice/processor/vibevoice_processor.py",
+      "start": 646,
+      "end": 690
+     },
+     "others": [
+      {
+       "name": "vibevoice/processor/vibevoice_streaming_processor.py",
+       "start": 363,
+       "end": 407
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def batch_decode(self, *args, **kwargs):",
+       "    \"\"\"",
+       "    This method forwards all its arguments to VibeVoiceTextTokenizer's [`~PreTrainedTokenizer.batch_decode`].",
+       "    Please refer to the docstring of this method for more information.",
+       "    \"\"\"",
+       "    return self.tokenizer.batch_decode(*args, **kwargs)",
+       "",
+       "def decode(self, *args, **kwargs):",
+       "    \"\"\"",
+       "    This method forwards all its arguments to VibeVoiceTextTokenizer's [`~PreTrainedTokenizer.decode`]."
+      ],
+      "total": 45
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 51,
+     "tokens": 368,
+     "first": {
+      "name": "vibevoice/processor/vibevoice_processor.py",
+      "start": 461,
+      "end": 511
+     },
+     "others": [
+      {
+       "name": "vibevoice/processor/vibevoice_streaming_processor.py",
+       "start": 313,
+       "end": 363
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def prepare_speech_inputs(",
+       "    self,",
+       "    speech_inputs: List[np.ndarray],",
+       "    return_tensors: Optional[Union[str, TensorType]] = None,",
+       "    device: Optional[Union[str, torch.device]] = None,",
+       "    dtype: Optional[torch.dtype] = None,",
+       ") -> Dict[str, Any]:",
+       "    \"\"\"",
+       "    Prepare speech inputs for model consumption.",
+       ""
+      ],
+      "total": 51
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 78,
+     "tokens": 365,
+     "first": {
+      "name": "vibevoice/processor/vibevoice_processor.py",
+      "start": 55,
+      "end": 132
+     },
+     "others": [
+      {
+       "name": "vibevoice/processor/vibevoice_streaming_processor.py",
+       "start": 51,
+       "end": 128
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    [`VibeVoiceProcessor`]: The processor object instantiated from pretrained model.",
+       "\"\"\"",
+       "import os",
+       "import json",
+       "from transformers.utils import cached_file",
+       "from .vibevoice_tokenizer_processor import VibeVoiceTokenizerProcessor",
+       "from vibevoice.modular.modular_vibevoice_text_tokenizer import (",
+       "    VibeVoiceTextTokenizer,",
+       "    VibeVoiceTextTokenizerFast",
+       ")"
+      ],
+      "total": 78
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 71,
+     "tokens": 359,
+     "first": {
+      "name": "vibevoice/modular/modeling_vibevoice.py",
+      "start": 143,
+      "end": 213
+     },
+     "others": [
+      {
+       "name": "vibevoice/modular/modeling_vibevoice_asr.py",
+       "start": 85,
+       "end": 154
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 50,
+     "tokens": 285,
+     "first": {
+      "name": "vibevoice/modular/modular_vibevoice_text_tokenizer.py",
+      "start": 112,
+      "end": 161
+     },
+     "others": [
+      {
+       "name": "vibevoice/modular/modular_vibevoice_text_tokenizer.py",
+       "start": 210,
+       "end": 259
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 24,
+     "tokens": 223,
+     "first": {
+      "name": "vibevoice/modular/modular_vibevoice_tokenizer.py",
+      "start": 1074,
+      "end": 1097
+     },
+     "others": [
+      {
+       "name": "vibevoice/modular/modular_vibevoice_tokenizer.py",
+       "start": 1164,
+       "end": 1187
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 35,
+     "tokens": 198,
+     "first": {
+      "name": "vibevoice/modular/configuration_vibevoice.py",
+      "start": 208,
+      "end": 242
+     },
+     "others": [
+      {
+       "name": "vibevoice/modular/configuration_vibevoice.py",
+       "start": 313,
+       "end": 347
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 33,
+     "tokens": 190,
+     "first": {
+      "name": "vibevoice/modular/modeling_vibevoice.py",
+      "start": 76,
+      "end": 108
+     },
+     "others": [
+      {
+       "name": "vibevoice/modular/modeling_vibevoice_streaming.py",
+       "start": 61,
+       "end": 94
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 30,
+     "tokens": 175,
+     "first": {
+      "name": "vibevoice/modular/modeling_vibevoice.py",
+      "start": 129,
+      "end": 158
+     },
+     "others": [
+      {
+       "name": "vibevoice/modular/modeling_vibevoice_streaming.py",
+       "start": 126,
+       "end": 155
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 160,
+     "first": {
+      "name": "vibevoice/processor/vibevoice_processor.py",
+      "start": 188,
+      "end": 203
+     },
+     "others": [
+      {
+       "name": "vibevoice/processor/vibevoice_streaming_processor.py",
+       "start": 189,
+       "end": 204
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 57,
+   "grade": "C",
+   "size": {
+    "lines": 20705,
+    "files": 41,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 8.5,
+     "adjusted": 8.1,
+     "lines": 1761,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 51.8
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 1.1,
+     "adjusted": 1.3,
+     "lines": 227,
+     "halfLife": 7.5,
+     "coverage": 100,
+     "weight": 1,
+     "score": 88.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 69.9,
+     "adjusted": 65.6,
+     "lines": 14470,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 40.3
+    }
+   ]
+  },
+  "complexity": {
+   "total": 2503,
+   "mean": 61,
+   "files": [
+    {
+     "path": "vllm_plugin/scripts/gradio_asr_demo_api_video.py",
+     "complexity": 286,
+     "lines": 2209,
+     "bytes": 88246
+    },
+    {
+     "path": "vibevoice/modular/modular_vibevoice_tokenizer.py",
+     "complexity": 201,
+     "lines": 1207,
+     "bytes": 51899
+    },
+    {
+     "path": "vllm_plugin/model.py",
+     "complexity": 189,
+     "lines": 1359,
+     "bytes": 57892
+    },
+    {
+     "path": "vibevoice/schedule/dpm_solver.py",
+     "complexity": 152,
+     "lines": 1065,
+     "bytes": 49964
+    },
+    {
+     "path": "demo/vibevoice_asr_gradio_demo.py",
+     "complexity": 123,
+     "lines": 1268,
+     "bytes": 49351
+    },
+    {
+     "path": "vibevoice/modular/modeling_vibevoice_streaming_inference.py",
+     "complexity": 123,
+     "lines": 906,
+     "bytes": 42627
+    },
+    {
+     "path": "vibevoice/modular/modeling_vibevoice_asr.py",
+     "complexity": 115,
+     "lines": 798,
+     "bytes": 34678
+    },
+    {
+     "path": "vllm_plugin/asr_streaming_server.py",
+     "complexity": 99,
+     "lines": 852,
+     "bytes": 37714
+    },
+    {
+     "path": "vibevoice/processor/vibevoice_processor.py",
+     "complexity": 98,
+     "lines": 692,
+     "bytes": 30082
+    },
+    {
+     "path": "vibevoice/processor/vibevoice_asr_processor.py",
+     "complexity": 86,
+     "lines": 604,
+     "bytes": 24934
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 1.1,
+   "findings": 98,
+   "files": 45,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 2
+    },
+    {
+     "category": "unused-export",
+     "count": 1
+    },
+    {
+     "category": "unused-symbol",
+     "count": 9
+    },
+    {
+     "category": "unused-import",
+     "count": 86
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "vllm_plugin/inputs.py",
+     "name": "",
+     "line": 1,
+     "lines": 101
+    },
+    {
+     "category": "unused-file",
+     "path": "vibevoice/schedule/timestep_sampler.py",
+     "name": "",
+     "line": 1,
+     "lines": 19
+    },
+    {
+     "category": "unused-export",
+     "path": "vllm_plugin/asr_streaming.py",
+     "name": "segments_to_text",
+     "line": 310,
+     "lines": 6
+    },
+    {
+     "category": "unused-import",
+     "path": "finetuning-asr/lora_finetune.py",
+     "name": "prepare_model_for_kbit_training",
+     "line": 28,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "vibevoice/processor/vibevoice_processor.py",
+     "name": "VibeVoiceTextTokenizer",
+     "line": 62,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "vibevoice/processor/vibevoice_streaming_processor.py",
+     "name": "VibeVoiceTextTokenizer",
+     "line": 58,
+     "lines": 3
+    },
+    {
+     "category": "unused-import",
+     "path": "demo/realtime_model_inference_from_file.py",
+     "name": "re",
+     "line": 3,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "demo/realtime_model_inference_from_file.py",
+     "name": "Any",
+     "line": 5,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "demo/realtime_model_inference_from_file.py",
+     "name": "Dict",
+     "line": 5,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "demo/realtime_model_inference_from_file.py",
+     "name": "List",
+     "line": 5,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

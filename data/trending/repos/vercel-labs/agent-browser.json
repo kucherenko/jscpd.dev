@@ -1,0 +1,1501 @@
+{
+ "name": "vercel-labs/agent-browser",
+ "url": "https://github.com/vercel-labs/agent-browser",
+ "appearances": [
+  {
+   "date": "2026-11-06",
+   "rank": 8,
+   "stars": 46032,
+   "starsToday": 150,
+   "headSha": "71850a021c5cb694513d720d61c156dd317d63cf",
+   "sources": 430,
+   "lines": 181945,
+   "clones": 941,
+   "duplicatedLines": 11356,
+   "percentage": 6.24,
+   "codePercentage": 6.89,
+   "codeSources": 175,
+   "healthScore": 43,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T05:21:38.798Z",
+  "name": "vercel-labs/agent-browser",
+  "url": "https://github.com/vercel-labs/agent-browser",
+  "description": "Browser automation CLI for AI agents",
+  "language": "Rust",
+  "stars": 46032,
+  "starsToday": 150,
+  "defaultBranch": "main",
+  "headSha": "71850a021c5cb694513d720d61c156dd317d63cf",
+  "durationMs": 1954,
+  "total": {
+   "sources": 430,
+   "lines": 181945,
+   "tokens": 1214303,
+   "clones": 941,
+   "duplicatedLines": 11356,
+   "duplicatedTokens": 69959,
+   "percentage": 6.24,
+   "percentageTokens": 5.76
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 114,
+    "lines": 134233,
+    "clones": 857,
+    "duplicatedLines": 9712,
+    "percentage": 7.24
+   },
+   {
+    "format": "typescript",
+    "sources": 68,
+    "lines": 7112,
+    "clones": 19,
+    "duplicatedLines": 359,
+    "percentage": 5.05
+   },
+   {
+    "format": "tsx",
+    "sources": 84,
+    "lines": 13365,
+    "clones": 17,
+    "duplicatedLines": 293,
+    "percentage": 2.19
+   },
+   {
+    "format": "json",
+    "sources": 29,
+    "lines": 10510,
+    "clones": 17,
+    "duplicatedLines": 662,
+    "percentage": 6.3
+   },
+   {
+    "format": "yaml",
+    "sources": 15,
+    "lines": 1087,
+    "clones": 11,
+    "duplicatedLines": 131,
+    "percentage": 12.05
+   },
+   {
+    "format": "javascript",
+    "sources": 23,
+    "lines": 4181,
+    "clones": 9,
+    "duplicatedLines": 81,
+    "percentage": 1.94
+   },
+   {
+    "format": "css",
+    "sources": 4,
+    "lines": 608,
+    "clones": 9,
+    "duplicatedLines": 103,
+    "percentage": 16.94
+   },
+   {
+    "format": "markup",
+    "sources": 13,
+    "lines": 729,
+    "clones": 1,
+    "duplicatedLines": 7,
+    "percentage": 0.96
+   },
+   {
+    "format": "diff",
+    "sources": 1,
+    "lines": 26,
+    "clones": 1,
+    "duplicatedLines": 8,
+    "percentage": 30.77
+   },
+   {
+    "format": "markdown",
+    "sources": 41,
+    "lines": 7747,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "rust",
+    "lines": 12,
+    "tokens": 72,
+    "first": {
+     "name": "cli/src/native/e2e_tests.rs",
+     "start": 1997,
+     "end": 2008
+    },
+    "others": [
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2276,
+      "end": 2285
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2407,
+      "end": 2418
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2751,
+      "end": 2762
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2909,
+      "end": 2920
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2957,
+      "end": 2968
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3114,
+      "end": 3125
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3158,
+      "end": 3169
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3430,
+      "end": 3441
+     }
+    ],
+    "copies": 31,
+    "excerpt": {
+     "lines": [
+      "async fn e2e_screenshot() {",
+      "    let mut state = DaemonState::new();",
+      "",
+      "    let resp = execute_command(",
+      "        &json!({ \"id\": \"1\", \"action\": \"launch\", \"headless\": true }),",
+      "        &mut state,",
+      "    )",
+      "    .await;",
+      "    assert_success(&resp);",
+      ""
+     ],
+     "total": 12
+    },
+    "excerptSecond": {
+     "lines": [
+      "async fn e2e_select_option_label_override_names() {",
+      "    let mut state = DaemonState::new();",
+      "    let resp = execute_command(",
+      "        &json!({ \"id\": \"1\", \"action\": \"launch\", \"headless\": true }),",
+      "        &mut state,",
+      "    )",
+      "    .await;",
+      "    assert_success(&resp);",
+      "    let resp = execute_command(",
+      "        &json!({ \"id\": \"2\", \"action\": \"navigate\", \"url\": \"data:text/html,<html><body></body></html>\" }),"
+     ],
+     "total": 10
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 77,
+    "first": {
+     "name": "cli/src/native/actions.rs",
+     "start": 7091,
+     "end": 7099
+    },
+    "others": [
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7151,
+      "end": 7158
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7234,
+      "end": 7242
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7291,
+      "end": 7299
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7437,
+      "end": 7445
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7457,
+      "end": 7464
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7482,
+      "end": 7490
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7502,
+      "end": 7510
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7522,
+      "end": 7530
+     }
+    ],
+    "copies": 18,
+    "excerpt": {
+     "lines": [
+      "async fn handle_dblclick(cmd: &Value, state: &mut DaemonState) -> Result<Value, String> {",
+      "    let mgr = state.browser.as_ref().ok_or(\"Browser not launched\")?;",
+      "    let session_id = mgr.active_session_id()?.to_string();",
+      "    let selector = cmd",
+      "        .get(\"selector\")",
+      "        .and_then(|v| v.as_str())",
+      "        .ok_or(\"Missing 'selector' parameter\")?;",
+      "",
+      "    let result = interaction::dblclick("
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "async fn handle_type(cmd: &Value, state: &mut DaemonState) -> Result<Value, String> {",
+      "    let mgr = state.browser.as_ref().ok_or(\"Browser not launched\")?;",
+      "    let session_id = mgr.active_session_id()?.to_string();",
+      "    let selector = cmd",
+      "        .get(\"selector\")",
+      "        .and_then(|v| v.as_str())",
+      "        .ok_or(\"Missing 'selector' parameter\")?;",
+      "    let text = cmd"
+     ],
+     "total": 8
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 11,
+    "tokens": 53,
+    "first": {
+     "name": "cli/src/native/e2e_tests.rs",
+     "start": 1997,
+     "end": 2007
+    },
+    "others": [
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2150,
+      "end": 2160
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3196,
+      "end": 3206
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3289,
+      "end": 3299
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3368,
+      "end": 3378
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3774,
+      "end": 3784
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3842,
+      "end": 3852
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 5818,
+      "end": 5828
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 5942,
+      "end": 5952
+     }
+    ],
+    "copies": 21,
+    "excerpt": {
+     "lines": [
+      "async fn e2e_screenshot() {",
+      "    let mut state = DaemonState::new();",
+      "",
+      "    let resp = execute_command(",
+      "        &json!({ \"id\": \"1\", \"action\": \"launch\", \"headless\": true }),",
+      "        &mut state,",
+      "    )",
+      "    .await;",
+      "    assert_success(&resp);",
+      ""
+     ],
+     "total": 11
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 16,
+    "tokens": 207,
+    "first": {
+     "name": "cli/src/native/e2e_tests.rs",
+     "start": 4881,
+     "end": 4896
+    },
+    "others": [
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 5076,
+      "end": 5091
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 5159,
+      "end": 5174
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 5293,
+      "end": 5308
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 5440,
+      "end": 5455
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 5582,
+      "end": 5597
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 16,
+    "tokens": 90,
+    "first": {
+     "name": "cli/src/native/e2e_tests.rs",
+     "start": 1997,
+     "end": 2012
+    },
+    "others": [
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2617,
+      "end": 2632
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2677,
+      "end": 2692
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 4519,
+      "end": 4534
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 6511,
+      "end": 6526
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 11816,
+      "end": 11831
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 12170,
+      "end": 12185
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 12848,
+      "end": 12863
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 12976,
+      "end": 12991
+     }
+    ],
+    "copies": 10,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 52,
+    "first": {
+     "name": "cli/src/native/e2e_tests.rs",
+     "start": 1997,
+     "end": 2005
+    },
+    "others": [
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2545,
+      "end": 2553
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2835,
+      "end": 2843
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3547,
+      "end": 3555
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 6568,
+      "end": 6576
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 6928,
+      "end": 6936
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 7105,
+      "end": 7113
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 7356,
+      "end": 7364
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 7415,
+      "end": 7423
+     }
+    ],
+    "copies": 14,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 182,
+    "tokens": 563,
+    "first": {
+     "name": "agent-browser.schema.json",
+     "start": 1,
+     "end": 182
+    },
+    "others": [
+     {
+      "name": "docs/public/schema.json",
+      "start": 1,
+      "end": 182
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "rust",
+    "lines": 10,
+    "tokens": 54,
+    "first": {
+     "name": "cli/src/native/e2e_tests.rs",
+     "start": 2151,
+     "end": 2160
+    },
+    "others": [
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3290,
+      "end": 3299
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3775,
+      "end": 3784
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 3843,
+      "end": 3852
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 6143,
+      "end": 6152
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 6226,
+      "end": 6234
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 7482,
+      "end": 7491
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 7596,
+      "end": 7605
+     },
+     {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 10919,
+      "end": 10927
+     }
+    ],
+    "copies": 11,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 76,
+    "first": {
+     "name": "cli/src/native/actions.rs",
+     "start": 7091,
+     "end": 7097
+    },
+    "others": [
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7324,
+      "end": 7330
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 7349,
+      "end": 7355
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 9005,
+      "end": 9011
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 9024,
+      "end": 9030
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 9043,
+      "end": 9049
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 9062,
+      "end": 9068
+     },
+     {
+      "name": "cli/src/native/actions.rs",
+      "start": 9108,
+      "end": 9114
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
+   },
+   {
+    "format": "css",
+    "lines": 33,
+    "tokens": 488,
+    "first": {
+     "name": "examples/environments/app/globals.css",
+     "start": 99,
+     "end": 131
+    },
+    "others": [
+     {
+      "name": "packages/dashboard/src/app/globals.css",
+      "start": 101,
+      "end": 133
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 175,
+   "lines": 142861,
+   "tokens": 980826,
+   "clones": 861,
+   "duplicatedLines": 9847,
+   "duplicatedTokens": 62911,
+   "percentage": 6.89,
+   "percentageTokens": 6.41,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 101,
+     "lines": 131027,
+     "clones": 844,
+     "duplicatedLines": 9587,
+     "percentage": 7.32
+    },
+    {
+     "format": "typescript",
+     "sources": 36,
+     "lines": 5359,
+     "clones": 13,
+     "duplicatedLines": 224,
+     "percentage": 4.18
+    },
+    {
+     "format": "tsx",
+     "sources": 26,
+     "lines": 5190,
+     "clones": 3,
+     "duplicatedLines": 24,
+     "percentage": 0.46
+    },
+    {
+     "format": "javascript",
+     "sources": 7,
+     "lines": 783,
+     "clones": 1,
+     "duplicatedLines": 12,
+     "percentage": 1.53
+    },
+    {
+     "format": "bash",
+     "sources": 4,
+     "lines": 326,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 176,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 72,
+     "first": {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 1997,
+      "end": 2008
+     },
+     "others": [
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2276,
+       "end": 2285
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2407,
+       "end": 2418
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2751,
+       "end": 2762
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2909,
+       "end": 2920
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2957,
+       "end": 2968
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3114,
+       "end": 3125
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3158,
+       "end": 3169
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3430,
+       "end": 3441
+      }
+     ],
+     "copies": 31,
+     "excerpt": {
+      "lines": [
+       "async fn e2e_screenshot() {",
+       "    let mut state = DaemonState::new();",
+       "",
+       "    let resp = execute_command(",
+       "        &json!({ \"id\": \"1\", \"action\": \"launch\", \"headless\": true }),",
+       "        &mut state,",
+       "    )",
+       "    .await;",
+       "    assert_success(&resp);",
+       ""
+      ],
+      "total": 12
+     },
+     "excerptSecond": {
+      "lines": [
+       "async fn e2e_select_option_label_override_names() {",
+       "    let mut state = DaemonState::new();",
+       "    let resp = execute_command(",
+       "        &json!({ \"id\": \"1\", \"action\": \"launch\", \"headless\": true }),",
+       "        &mut state,",
+       "    )",
+       "    .await;",
+       "    assert_success(&resp);",
+       "    let resp = execute_command(",
+       "        &json!({ \"id\": \"2\", \"action\": \"navigate\", \"url\": \"data:text/html,<html><body></body></html>\" }),"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 77,
+     "first": {
+      "name": "cli/src/native/actions.rs",
+      "start": 7091,
+      "end": 7099
+     },
+     "others": [
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7151,
+       "end": 7158
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7234,
+       "end": 7242
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7291,
+       "end": 7299
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7437,
+       "end": 7445
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7457,
+       "end": 7464
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7482,
+       "end": 7490
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7502,
+       "end": 7510
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7522,
+       "end": 7530
+      }
+     ],
+     "copies": 18,
+     "excerpt": {
+      "lines": [
+       "async fn handle_dblclick(cmd: &Value, state: &mut DaemonState) -> Result<Value, String> {",
+       "    let mgr = state.browser.as_ref().ok_or(\"Browser not launched\")?;",
+       "    let session_id = mgr.active_session_id()?.to_string();",
+       "    let selector = cmd",
+       "        .get(\"selector\")",
+       "        .and_then(|v| v.as_str())",
+       "        .ok_or(\"Missing 'selector' parameter\")?;",
+       "",
+       "    let result = interaction::dblclick("
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "async fn handle_type(cmd: &Value, state: &mut DaemonState) -> Result<Value, String> {",
+       "    let mgr = state.browser.as_ref().ok_or(\"Browser not launched\")?;",
+       "    let session_id = mgr.active_session_id()?.to_string();",
+       "    let selector = cmd",
+       "        .get(\"selector\")",
+       "        .and_then(|v| v.as_str())",
+       "        .ok_or(\"Missing 'selector' parameter\")?;",
+       "    let text = cmd"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 11,
+     "tokens": 53,
+     "first": {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 1997,
+      "end": 2007
+     },
+     "others": [
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2150,
+       "end": 2160
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3196,
+       "end": 3206
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3289,
+       "end": 3299
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3368,
+       "end": 3378
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3774,
+       "end": 3784
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3842,
+       "end": 3852
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 5818,
+       "end": 5828
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 5942,
+       "end": 5952
+      }
+     ],
+     "copies": 21,
+     "excerpt": {
+      "lines": [
+       "async fn e2e_screenshot() {",
+       "    let mut state = DaemonState::new();",
+       "",
+       "    let resp = execute_command(",
+       "        &json!({ \"id\": \"1\", \"action\": \"launch\", \"headless\": true }),",
+       "        &mut state,",
+       "    )",
+       "    .await;",
+       "    assert_success(&resp);",
+       ""
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 16,
+     "tokens": 207,
+     "first": {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 4881,
+      "end": 4896
+     },
+     "others": [
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 5076,
+       "end": 5091
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 5159,
+       "end": 5174
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 5293,
+       "end": 5308
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 5440,
+       "end": 5455
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 5582,
+       "end": 5597
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 16,
+     "tokens": 90,
+     "first": {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 1997,
+      "end": 2012
+     },
+     "others": [
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2617,
+       "end": 2632
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2677,
+       "end": 2692
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 4519,
+       "end": 4534
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 6511,
+       "end": 6526
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 11816,
+       "end": 11831
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 12170,
+       "end": 12185
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 12848,
+       "end": 12863
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 12976,
+       "end": 12991
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 52,
+     "first": {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 1997,
+      "end": 2005
+     },
+     "others": [
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2545,
+       "end": 2553
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 2835,
+       "end": 2843
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3547,
+       "end": 3555
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 6568,
+       "end": 6576
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 6928,
+       "end": 6936
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 7105,
+       "end": 7113
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 7356,
+       "end": 7364
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 7415,
+       "end": 7423
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 54,
+     "first": {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 2151,
+      "end": 2160
+     },
+     "others": [
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3290,
+       "end": 3299
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3775,
+       "end": 3784
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 3843,
+       "end": 3852
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 6143,
+       "end": 6152
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 6226,
+       "end": 6234
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 7482,
+       "end": 7491
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 7596,
+       "end": 7605
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 10919,
+       "end": 10927
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 76,
+     "first": {
+      "name": "cli/src/native/actions.rs",
+      "start": 7091,
+      "end": 7097
+     },
+     "others": [
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7324,
+       "end": 7330
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 7349,
+       "end": 7355
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 9005,
+       "end": 9011
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 9024,
+       "end": 9030
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 9043,
+       "end": 9049
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 9062,
+       "end": 9068
+      },
+      {
+       "name": "cli/src/native/actions.rs",
+       "start": 9108,
+       "end": 9114
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 8,
+     "tokens": 69,
+     "first": {
+      "name": "cli/src/commands.rs",
+      "start": 4299,
+      "end": 4306
+     },
+     "others": [
+      {
+       "name": "cli/src/commands.rs",
+       "start": 4312,
+       "end": 4319
+      },
+      {
+       "name": "cli/src/commands.rs",
+       "start": 4325,
+       "end": 4332
+      },
+      {
+       "name": "cli/src/commands.rs",
+       "start": 4338,
+       "end": 4345
+      },
+      {
+       "name": "cli/src/commands.rs",
+       "start": 4351,
+       "end": 4358
+      },
+      {
+       "name": "cli/src/commands.rs",
+       "start": 4364,
+       "end": 4371
+      },
+      {
+       "name": "cli/src/commands.rs",
+       "start": 4377,
+       "end": 4384
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 82,
+     "first": {
+      "name": "cli/src/native/e2e_tests.rs",
+      "start": 1493,
+      "end": 1504
+     },
+     "others": [
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 9501,
+       "end": 9512
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 9704,
+       "end": 9715
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 9823,
+       "end": 9834
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 10093,
+       "end": 10104
+      },
+      {
+       "name": "cli/src/native/e2e_tests.rs",
+       "start": 10220,
+       "end": 10231
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 43,
+   "grade": "D",
+   "size": {
+    "lines": 159233,
+    "files": 289,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 6.5,
+     "adjusted": 6.5,
+     "lines": 10427,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "tsx",
+      "typescript",
+      "javascript",
+      "bash",
+      "python"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 58.8
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 9.2,
+     "adjusted": 8.7,
+     "lines": 2292,
+     "halfLife": 7.5,
+     "coverage": 15.7,
+     "weight": 0.157,
+     "score": 44.6
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 84.9,
+     "adjusted": 84.1,
+     "lines": 135160,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 31.2
+    }
+   ]
+  },
+  "complexity": {
+   "total": 24299,
+   "mean": 84.1,
+   "files": [
+    {
+     "path": "cli/src/native/actions.rs",
+     "complexity": 3328,
+     "lines": 22418,
+     "bytes": 858743
+    },
+    {
+     "path": "cli/src/native/react/installHook.js",
+     "complexity": 3040,
+     "lines": 27,
+     "bytes": 182992
+    },
+    {
+     "path": "cli/src/commands.rs",
+     "complexity": 1291,
+     "lines": 7401,
+     "bytes": 285794
+    },
+    {
+     "path": "cli/src/mcp.rs",
+     "complexity": 1118,
+     "lines": 6651,
+     "bytes": 250572
+    },
+    {
+     "path": "cli/src/output.rs",
+     "complexity": 1022,
+     "lines": 5499,
+     "bytes": 213992
+    },
+    {
+     "path": "cli/src/native/browser.rs",
+     "complexity": 685,
+     "lines": 5621,
+     "bytes": 213546
+    },
+    {
+     "path": "cli/src/native/e2e_tests.rs",
+     "complexity": 637,
+     "lines": 15713,
+     "bytes": 530810
+    },
+    {
+     "path": "cli/src/native/flow/mod.rs",
+     "complexity": 611,
+     "lines": 5827,
+     "bytes": 209850
+    },
+    {
+     "path": "cli/src/main.rs",
+     "complexity": 423,
+     "lines": 2903,
+     "bytes": 101530
+    },
+    {
+     "path": "cli/src/native/cdp/chrome.rs",
+     "complexity": 408,
+     "lines": 3156,
+     "bytes": 113680
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 9.18,
+   "findings": 93,
+   "files": 238,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 55
+    },
+    {
+     "category": "unused-export",
+     "count": 30
+    },
+    {
+     "category": "unused-symbol",
+     "count": 1
+    },
+    {
+     "category": "unused-import",
+     "count": 7
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "docs/scripts/capture-docs-baseline.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 345
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/src/components/diff-demo.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 282
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/src/components/search.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 265
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/@agent-browser/eve/extension/lib/sandbox.ts",
+     "name": "",
+     "line": 1,
+     "lines": 216
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/@agent-browser/eve/extension/lib/browser.ts",
+     "name": "",
+     "line": 1,
+     "lines": 190
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/src/components/header.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 86
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/src/components/docs-mobile-nav.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 81
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/src/components/copy-page-button.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 71
+    },
+    {
+     "category": "unused-file",
+     "path": "cli/src/native/recording-cursor.js",
+     "name": "",
+     "line": 1,
+     "lines": 63
+    },
+    {
+     "category": "unused-file",
+     "path": "docs/src/components/docs-sidebar.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 44
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,893 @@
+{
+ "name": "lz4/lz4",
+ "url": "https://github.com/lz4/lz4",
+ "appearances": [
+  {
+   "date": "2026-11-06",
+   "rank": 6,
+   "stars": 12437,
+   "starsToday": 23,
+   "headSha": "10c06e612fa6401370e747fe4eb05c4926eb836d",
+   "sources": 156,
+   "lines": 47589,
+   "clones": 231,
+   "duplicatedLines": 2625,
+   "percentage": 5.52,
+   "codePercentage": 4.76,
+   "codeSources": 50,
+   "healthScore": 49.5,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T05:21:38.798Z",
+  "name": "lz4/lz4",
+  "url": "https://github.com/lz4/lz4",
+  "description": "Extremely Fast Compression algorithm",
+  "language": "C",
+  "stars": 12437,
+  "starsToday": 23,
+  "defaultBranch": "dev",
+  "headSha": "10c06e612fa6401370e747fe4eb05c4926eb836d",
+  "durationMs": 1388,
+  "total": {
+   "sources": 156,
+   "lines": 47589,
+   "tokens": 720265,
+   "clones": 231,
+   "duplicatedLines": 2625,
+   "duplicatedTokens": 53034,
+   "percentage": 5.52,
+   "percentageTokens": 7.36
+  },
+  "formats": [
+   {
+    "format": "c",
+    "sources": 56,
+    "lines": 33659,
+    "clones": 194,
+    "duplicatedLines": 2050,
+    "percentage": 6.09
+   },
+   {
+    "format": "c-header",
+    "sources": 22,
+    "lines": 4500,
+    "clones": 23,
+    "duplicatedLines": 410,
+    "percentage": 9.11
+   },
+   {
+    "format": "yaml",
+    "sources": 14,
+    "lines": 1344,
+    "clones": 8,
+    "duplicatedLines": 97,
+    "percentage": 7.22
+   },
+   {
+    "format": "markup",
+    "sources": 2,
+    "lines": 1274,
+    "clones": 2,
+    "duplicatedLines": 19,
+    "percentage": 1.49
+   },
+   {
+    "format": "python",
+    "sources": 4,
+    "lines": 1023,
+    "clones": 2,
+    "duplicatedLines": 32,
+    "percentage": 3.13
+   },
+   {
+    "format": "markdown",
+    "sources": 20,
+    "lines": 2253,
+    "clones": 1,
+    "duplicatedLines": 11,
+    "percentage": 0.49
+   },
+   {
+    "format": "makefile",
+    "sources": 8,
+    "lines": 1736,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 0.35
+   },
+   {
+    "format": "bash",
+    "sources": 20,
+    "lines": 1307,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "cpp",
+    "sources": 1,
+    "lines": 248,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 7,
+    "lines": 202,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "c-header",
+    "lines": 29,
+    "tokens": 1413,
+    "first": {
+     "name": "lib/lz4.h",
+     "start": 4,
+     "end": 32
+    },
+    "others": [
+     {
+      "name": "lib/lz4file.h",
+      "start": 4,
+      "end": 32
+     },
+     {
+      "name": "lib/lz4frame.h",
+      "start": 4,
+      "end": 32
+     },
+     {
+      "name": "lib/xxhash.h",
+      "start": 4,
+      "end": 32
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "*  Copyright (c) Yann Collet. All rights reserved.",
+      "",
+      "  BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)",
+      "",
+      "  Redistribution and use in source and binary forms, with or without",
+      "  modification, are permitted provided that the following conditions are",
+      "  met:",
+      "",
+      "      * Redistributions of source code must retain the above copyright",
+      "  notice, this list of conditions and the following disclaimer."
+     ],
+     "total": 29
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 20,
+    "tokens": 779,
+    "first": {
+     "name": "tests/bench/fullbench.c",
+     "start": 3,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "tests/compat/checkTag.c",
+      "start": 3,
+      "end": 22
+     },
+     {
+      "name": "tests/fuzz/frametest.c",
+      "start": 3,
+      "end": 22
+     },
+     {
+      "name": "tests/fuzz/fuzzer.c",
+      "start": 3,
+      "end": 22
+     },
+     {
+      "name": "tests/tools/datagencli.c",
+      "start": 4,
+      "end": 23
+     }
+    ],
+    "copies": 5,
+    "excerpt": {
+     "lines": [
+      "Copyright (C) Yann Collet 2012-2020",
+      "",
+      "GPL v2 License",
+      "",
+      "This program is free software; you can redistribute it and/or modify",
+      "it under the terms of the GNU General Public License as published by",
+      "the Free Software Foundation; either version 2 of the License, or",
+      "(at your option) any later version.",
+      "",
+      "This program is distributed in the hope that it will be useful,"
+     ],
+     "total": 20
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "c",
+    "lines": 24,
+    "tokens": 909,
+    "first": {
+     "name": "programs/lz4cli.c",
+     "start": 3,
+     "end": 26
+    },
+    "others": [
+     {
+      "name": "programs/threadpool.c",
+      "start": 3,
+      "end": 26
+     },
+     {
+      "name": "programs/timefn.c",
+      "start": 3,
+      "end": 26
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "Copyright (c) Yann Collet. All rights reserved.",
+      "",
+      "GPL v2 License",
+      "",
+      "This program is free software; you can redistribute it and/or modify",
+      "it under the terms of the GNU General Public License as published by",
+      "the Free Software Foundation; either version 2 of the License, or",
+      "(at your option) any later version.",
+      "",
+      "This program is distributed in the hope that it will be useful,"
+     ],
+     "total": 24
+    },
+    "excerptSecond": {
+     "lines": [
+      "Copyright (c) Yann Collet. All rights reserved.",
+      "GPL v2 License",
+      "",
+      "This program is free software; you can redistribute it and/or modify",
+      "it under the terms of the GNU General Public License as published by",
+      "the Free Software Foundation; either version 2 of the License, or",
+      "(at your option) any later version.",
+      "",
+      "This program is distributed in the hope that it will be useful,",
+      "but WITHOUT ANY WARRANTY; without even the implied warranty of"
+     ],
+     "total": 24
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 25,
+    "tokens": 899,
+    "first": {
+     "name": "tests/unit/lz4frame_helpers.c",
+     "start": 3,
+     "end": 27
+    },
+    "others": [
+     {
+      "name": "tests/unit/unittest.c",
+      "start": 3,
+      "end": 27
+     },
+     {
+      "name": "tests/unit/unittest_lz4frame.c",
+      "start": 3,
+      "end": 27
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "c-header",
+    "lines": 32,
+    "tokens": 1576,
+    "first": {
+     "name": "lib/lz4frame.h",
+     "start": 3,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "lib/lz4hc.h",
+      "start": 3,
+      "end": 33
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 31,
+    "tokens": 1562,
+    "first": {
+     "name": "lib/lz4frame.h",
+     "start": 4,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "lib/lz4frame_static.h",
+      "start": 4,
+      "end": 34
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 18,
+    "tokens": 774,
+    "first": {
+     "name": "programs/bench.c",
+     "start": 5,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "tests/bench/fullbench.c",
+      "start": 5,
+      "end": 22
+     },
+     {
+      "name": "tests/tools/datagen.c",
+      "start": 5,
+      "end": 22
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 31,
+    "tokens": 1515,
+    "first": {
+     "name": "lib/lz4file.c",
+     "start": 3,
+     "end": 33
+    },
+    "others": [
+     {
+      "name": "lib/lz4frame.c",
+      "start": 3,
+      "end": 33
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 15,
+    "tokens": 745,
+    "first": {
+     "name": "programs/bench.h",
+     "start": 3,
+     "end": 17
+    },
+    "others": [
+     {
+      "name": "programs/platform.h",
+      "start": 3,
+      "end": 17
+     },
+     {
+      "name": "programs/util.h",
+      "start": 3,
+      "end": 17
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 26,
+    "tokens": 1015,
+    "first": {
+     "name": "programs/lz4cli.c",
+     "start": 2,
+     "end": 27
+    },
+    "others": [
+     {
+      "name": "programs/lz4io.c",
+      "start": 2,
+      "end": 27
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 50,
+   "lines": 23017,
+   "tokens": 414389,
+   "clones": 101,
+   "duplicatedLines": 1096,
+   "duplicatedTokens": 27046,
+   "percentage": 4.76,
+   "percentageTokens": 6.53,
+   "formats": [
+    {
+     "format": "c",
+     "sources": 28,
+     "lines": 18550,
+     "clones": 82,
+     "duplicatedLines": 776,
+     "percentage": 4.18
+    },
+    {
+     "format": "c-header",
+     "sources": 18,
+     "lines": 4144,
+     "clones": 19,
+     "duplicatedLines": 320,
+     "percentage": 7.72
+    },
+    {
+     "format": "cpp",
+     "sources": 1,
+     "lines": 248,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 39,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 2,
+     "lines": 36,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c-header",
+     "lines": 29,
+     "tokens": 1413,
+     "first": {
+      "name": "lib/lz4.h",
+      "start": 4,
+      "end": 32
+     },
+     "others": [
+      {
+       "name": "lib/lz4file.h",
+       "start": 4,
+       "end": 32
+      },
+      {
+       "name": "lib/lz4frame.h",
+       "start": 4,
+       "end": 32
+      },
+      {
+       "name": "lib/xxhash.h",
+       "start": 4,
+       "end": 32
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "*  Copyright (c) Yann Collet. All rights reserved.",
+       "",
+       "  BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)",
+       "",
+       "  Redistribution and use in source and binary forms, with or without",
+       "  modification, are permitted provided that the following conditions are",
+       "  met:",
+       "",
+       "      * Redistributions of source code must retain the above copyright",
+       "  notice, this list of conditions and the following disclaimer."
+      ],
+      "total": 29
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 24,
+     "tokens": 909,
+     "first": {
+      "name": "programs/lz4cli.c",
+      "start": 3,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "programs/threadpool.c",
+       "start": 3,
+       "end": 26
+      },
+      {
+       "name": "programs/timefn.c",
+       "start": 3,
+       "end": 26
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "Copyright (c) Yann Collet. All rights reserved.",
+       "",
+       "GPL v2 License",
+       "",
+       "This program is free software; you can redistribute it and/or modify",
+       "it under the terms of the GNU General Public License as published by",
+       "the Free Software Foundation; either version 2 of the License, or",
+       "(at your option) any later version.",
+       "",
+       "This program is distributed in the hope that it will be useful,"
+      ],
+      "total": 24
+     },
+     "excerptSecond": {
+      "lines": [
+       "Copyright (c) Yann Collet. All rights reserved.",
+       "GPL v2 License",
+       "",
+       "This program is free software; you can redistribute it and/or modify",
+       "it under the terms of the GNU General Public License as published by",
+       "the Free Software Foundation; either version 2 of the License, or",
+       "(at your option) any later version.",
+       "",
+       "This program is distributed in the hope that it will be useful,",
+       "but WITHOUT ANY WARRANTY; without even the implied warranty of"
+      ],
+      "total": 24
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 32,
+     "tokens": 1576,
+     "first": {
+      "name": "lib/lz4frame.h",
+      "start": 3,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "lib/lz4hc.h",
+       "start": 3,
+       "end": 33
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "Header File",
+       "Copyright (c) Yann Collet. All rights reserved.",
+       "",
+       "BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)",
+       "",
+       "Redistribution and use in source and binary forms, with or without",
+       "modification, are permitted provided that the following conditions are",
+       "met:",
+       "",
+       "    * Redistributions of source code must retain the above copyright"
+      ],
+      "total": 32
+     },
+     "excerptSecond": {
+      "lines": [
+       "Header File",
+       "Copyright (c) Yann Collet. All rights reserved.",
+       "BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)",
+       "",
+       "Redistribution and use in source and binary forms, with or without",
+       "modification, are permitted provided that the following conditions are",
+       "met:",
+       "",
+       "    * Redistributions of source code must retain the above copyright",
+       "notice, this list of conditions and the following disclaimer."
+      ],
+      "total": 31
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 31,
+     "tokens": 1562,
+     "first": {
+      "name": "lib/lz4frame.h",
+      "start": 4,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "lib/lz4frame_static.h",
+       "start": 4,
+       "end": 34
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 31,
+     "tokens": 1515,
+     "first": {
+      "name": "lib/lz4file.c",
+      "start": 3,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "lib/lz4frame.c",
+       "start": 3,
+       "end": 33
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 15,
+     "tokens": 745,
+     "first": {
+      "name": "programs/bench.h",
+      "start": 3,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "programs/platform.h",
+       "start": 3,
+       "end": 17
+      },
+      {
+       "name": "programs/util.h",
+       "start": 3,
+       "end": 17
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 26,
+     "tokens": 1015,
+     "first": {
+      "name": "programs/lz4cli.c",
+      "start": 2,
+      "end": 27
+     },
+     "others": [
+      {
+       "name": "programs/lz4io.c",
+       "start": 2,
+       "end": 27
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 24,
+     "tokens": 912,
+     "first": {
+      "name": "programs/lz4conf.h",
+      "start": 2,
+      "end": 25
+     },
+     "others": [
+      {
+       "name": "programs/timefn.h",
+       "start": 2,
+       "end": 26
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 23,
+     "tokens": 909,
+     "first": {
+      "name": "programs/lz4conf.h",
+      "start": 3,
+      "end": 25
+     },
+     "others": [
+      {
+       "name": "programs/threadpool.h",
+       "start": 3,
+       "end": 25
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 21,
+     "tokens": 907,
+     "first": {
+      "name": "programs/lz4conf.h",
+      "start": 3,
+      "end": 23
+     },
+     "others": [
+      {
+       "name": "programs/lz4io.h",
+       "start": 3,
+       "end": 23
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 49.5,
+   "grade": "D",
+   "size": {
+    "lines": 42516,
+    "files": 113,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 5.9,
+     "adjusted": 5.8,
+     "lines": 2498,
+     "halfLife": 8.5,
+     "formats": [
+      "c",
+      "c-header",
+      "makefile",
+      "bash",
+      "python",
+      "cpp",
+      "cmake",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 62.5
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 69.7,
+     "adjusted": 67.5,
+     "lines": 29642,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 39.2
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 6346,
+   "mean": 56.2,
+   "files": [
+    {
+     "path": "lib/lz4.c",
+     "complexity": 624,
+     "lines": 2955,
+     "bytes": 126490
+    },
+    {
+     "path": "lib/lz4frame.c",
+     "complexity": 591,
+     "lines": 3604,
+     "bytes": 158084
+    },
+    {
+     "path": "programs/lz4io.c",
+     "complexity": 588,
+     "lines": 3229,
+     "bytes": 125663
+    },
+    {
+     "path": "tests/unit/unittest_lz4frame.c",
+     "complexity": 567,
+     "lines": 3890,
+     "bytes": 191222
+    },
+    {
+     "path": "lib/lz4hc.c",
+     "complexity": 420,
+     "lines": 2310,
+     "bytes": 97227
+    },
+    {
+     "path": "programs/lz4cli.c",
+     "complexity": 253,
+     "lines": 1025,
+     "bytes": 45732
+    },
+    {
+     "path": "lib/xxhash.c",
+     "complexity": 207,
+     "lines": 1030,
+     "bytes": 34168
+    },
+    {
+     "path": "tests/fuzz/frameMT.c",
+     "complexity": 175,
+     "lines": 746,
+     "bytes": 35954
+    },
+    {
+     "path": "tests/bench/fullbench.c",
+     "complexity": 167,
+     "lines": 1009,
+     "bytes": 35470
+    },
+    {
+     "path": "tests/unit/unittest_lz4.c",
+     "complexity": 157,
+     "lines": 1207,
+     "bytes": 57993
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 4,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}
