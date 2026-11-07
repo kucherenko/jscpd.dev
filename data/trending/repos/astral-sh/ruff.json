@@ -1,0 +1,1379 @@
+{
+ "name": "astral-sh/ruff",
+ "url": "https://github.com/astral-sh/ruff",
+ "appearances": [
+  {
+   "date": "2026-11-07",
+   "rank": 11,
+   "stars": 50738,
+   "starsToday": 169,
+   "headSha": "6f86f83bf58cbf80af51536c4b4e9de8697af177",
+   "sources": 5098,
+   "lines": 1504268,
+   "clones": 7228,
+   "duplicatedLines": 104804,
+   "percentage": 6.97,
+   "codePercentage": 5.79,
+   "codeSources": 2110,
+   "healthScore": 47.7,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T05:21:43.893Z",
+  "name": "astral-sh/ruff",
+  "url": "https://github.com/astral-sh/ruff",
+  "description": "An extremely fast Python linter and code formatter, written in Rust.",
+  "language": "Rust",
+  "stars": 50738,
+  "starsToday": 169,
+  "defaultBranch": "main",
+  "headSha": "6f86f83bf58cbf80af51536c4b4e9de8697af177",
+  "durationMs": 6573,
+  "total": {
+   "sources": 5098,
+   "lines": 1504268,
+   "tokens": 9207226,
+   "clones": 7228,
+   "duplicatedLines": 104804,
+   "duplicatedTokens": 610658,
+   "percentage": 6.97,
+   "percentageTokens": 6.63
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 1999,
+    "lines": 856678,
+    "clones": 4802,
+    "duplicatedLines": 62227,
+    "percentage": 7.26
+   },
+   {
+    "format": "python",
+    "sources": 1865,
+    "lines": 259880,
+    "clones": 1074,
+    "duplicatedLines": 15505,
+    "percentage": 5.97
+   },
+   {
+    "format": "text",
+    "sources": 165,
+    "lines": 13358,
+    "clones": 395,
+    "duplicatedLines": 2391,
+    "percentage": 17.9
+   },
+   {
+    "format": "markdown",
+    "sources": 655,
+    "lines": 316671,
+    "clones": 352,
+    "duplicatedLines": 17025,
+    "percentage": 5.38
+   },
+   {
+    "format": "toml",
+    "sources": 147,
+    "lines": 8448,
+    "clones": 260,
+    "duplicatedLines": 3200,
+    "percentage": 37.88
+   },
+   {
+    "format": "markup",
+    "sources": 83,
+    "lines": 4258,
+    "clones": 170,
+    "duplicatedLines": 2461,
+    "percentage": 57.8
+   },
+   {
+    "format": "yaml",
+    "sources": 43,
+    "lines": 6997,
+    "clones": 93,
+    "duplicatedLines": 1055,
+    "percentage": 15.08
+   },
+   {
+    "format": "txt",
+    "sources": 22,
+    "lines": 19373,
+    "clones": 69,
+    "duplicatedLines": 546,
+    "percentage": 2.82
+   },
+   {
+    "format": "tsx",
+    "sources": 29,
+    "lines": 6533,
+    "clones": 9,
+    "duplicatedLines": 213,
+    "percentage": 3.26
+   },
+   {
+    "format": "css",
+    "sources": 4,
+    "lines": 583,
+    "clones": 2,
+    "duplicatedLines": 132,
+    "percentage": 22.64
+   }
+  ],
+  "topClones": [
+   {
+    "format": "rust",
+    "lines": 21,
+    "tokens": 3458,
+    "first": {
+     "name": "crates/ruff_annotate_snippets/tests/rustc_tests.rs",
+     "start": 2283,
+     "end": 2303
+    },
+    "others": [
+     {
+      "name": "crates/ruff_annotate_snippets/tests/rustc_tests.rs",
+      "start": 2325,
+      "end": 2345
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/rustc_tests.rs",
+      "start": 2369,
+      "end": 2389
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "fn long_span_shortest() {",
+      "    // tests/ui/diagnostic-width/long-span.rs",
+      "    let source = r#\"",
+      "const C: u8 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …",
+      "",
+      "fn main() {}",
+      "\"#;",
+      "    let input = &[Level::ERROR",
+      "        .primary_title(\"mismatched types\")",
+      "        .id(\"E0038\")"
+     ],
+     "total": 21
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 177,
+    "tokens": 57,
+    "first": {
+     "name": "crates/ty_python_semantic/resources/mdtest/annotations/intersection_types.md",
+     "start": 113,
+     "end": 289
+    },
+    "others": [
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/call/constructor.md",
+      "start": 289,
+      "end": 1260
+     },
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/call/constructor.md",
+      "start": 591,
+      "end": 1298
+     },
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/call/constructor.md",
+      "start": 994,
+      "end": 1613
+     },
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/call/constructor.md",
+      "start": 1083,
+      "end": 1634
+     },
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/call/constructor.md",
+      "start": 1109,
+      "end": 1756
+     },
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/call/type.md",
+      "start": 23,
+      "end": 158
+     },
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/call/type.md",
+      "start": 43,
+      "end": 175
+     },
+     {
+      "name": "crates/ty_python_semantic/resources/mdtest/generics/legacy/variance.md",
+      "start": 1420,
+      "end": 1896
+     }
+    ],
+    "copies": 86,
+    "excerpt": {
+     "lines": [
+      "python-version = \"3.12\"",
+      "```",
+      "",
+      "```py",
+      "class A: ...",
+      "class B: ...",
+      "class Box[T]: ...",
+      "",
+      "type AAndB = A & B",
+      "type NotA = ~A"
+     ],
+     "total": 177
+    },
+    "excerptSecond": {
+     "lines": [
+      "python-version = \"3.12\"",
+      "```",
+      "",
+      "### A decorator returning the enclosing class",
+      "",
+      "A decorator can replace `__new__` with the type of its implicit `cls` parameter, making the",
+      "constructor refer back to itself. Regression test for <https://github.com/astral-sh/ty/issues/4347>.",
+      "",
+      "```py",
+      "from collections.abc import Callable"
+     ],
+     "total": 972
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 24,
+    "tokens": 3483,
+    "first": {
+     "name": "crates/ruff_annotate_snippets/tests/rustc_tests.rs",
+     "start": 2283,
+     "end": 2306
+    },
+    "others": [
+     {
+      "name": "crates/ruff_annotate_snippets/tests/rustc_tests.rs",
+      "start": 2413,
+      "end": 2436
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "fn long_span_shortest() {",
+      "    // tests/ui/diagnostic-width/long-span.rs",
+      "    let source = r#\"",
+      "const C: u8 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …",
+      "",
+      "fn main() {}",
+      "\"#;",
+      "    let input = &[Level::ERROR",
+      "        .primary_title(\"mismatched types\")",
+      "        .id(\"E0038\")"
+     ],
+     "total": 24
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 22,
+    "tokens": 172,
+    "first": {
+     "name": "crates/ruff_annotate_snippets/tests/color/ann_eof.ascii.term.svg",
+     "start": 1,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/ensure_emoji_highlight_width.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/fold_bad_origin_line.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/fold_bad_origin_line.unicode.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/fold_leading.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/fold_leading.unicode.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/fold_trailing.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/fold_trailing.unicode.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/multiline_removal_indent.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     }
+    ],
+    "copies": 17,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 6,
+    "tokens": 51,
+    "first": {
+     "name": "crates/ty/docs/rules.md",
+     "start": 285,
+     "end": 290
+    },
+    "others": [
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 381,
+      "end": 386
+     },
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 414,
+      "end": 419
+     },
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 448,
+      "end": 453
+     },
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 812,
+      "end": 817
+     },
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 1034,
+      "end": 1039
+     },
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 1259,
+      "end": 1264
+     },
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 1303,
+      "end": 1308
+     },
+     {
+      "name": "crates/ty/docs/rules.md",
+      "start": 1339,
+      "end": 1344
+     }
+    ],
+    "copies": 37,
+    "kind": "docs"
+   },
+   {
+    "format": "toml",
+    "lines": 10,
+    "tokens": 57,
+    "first": {
+     "name": "crates/ruff_cache/Cargo.toml",
+     "start": 4,
+     "end": 13
+    },
+    "others": [
+     {
+      "name": "crates/ruff_command_line/Cargo.toml",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "crates/ruff_db/Cargo.toml",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "crates/ruff_diagnostics/Cargo.toml",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "crates/ruff_formatter/Cargo.toml",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "crates/ruff_index/Cargo.toml",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "crates/ruff_linter/Cargo.toml",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "crates/ruff_macros/Cargo.toml",
+      "start": 4,
+      "end": 13
+     },
+     {
+      "name": "crates/ruff_memory_usage/Cargo.toml",
+      "start": 4,
+      "end": 13
+     }
+    ],
+    "copies": 30,
+    "kind": "data"
+   },
+   {
+    "format": "toml",
+    "lines": 9,
+    "tokens": 52,
+    "first": {
+     "name": "crates/ruff_annotate_snippets/Cargo.toml",
+     "start": 3,
+     "end": 11
+    },
+    "others": [
+     {
+      "name": "crates/ruff_cache/Cargo.toml",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "crates/ruff_command_line/Cargo.toml",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "crates/ruff_db/Cargo.toml",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "crates/ruff_diagnostics/Cargo.toml",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "crates/ruff_formatter/Cargo.toml",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "crates/ruff_index/Cargo.toml",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "crates/ruff_macros/Cargo.toml",
+      "start": 3,
+      "end": 11
+     },
+     {
+      "name": "crates/ruff_memory_usage/Cargo.toml",
+      "start": 3,
+      "end": 11
+     }
+    ],
+    "copies": 31,
+    "kind": "data"
+   },
+   {
+    "format": "markup",
+    "lines": 22,
+    "tokens": 158,
+    "first": {
+     "name": "crates/ruff_annotate_snippets/examples/custom_error.svg",
+     "start": 1,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "crates/ruff_annotate_snippets/examples/expected_type.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/examples/format.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/examples/highlight_source.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/examples/multislice.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/ann_eof.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/first_snippet_is_primary.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/fold_ann_multiline.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "crates/ruff_annotate_snippets/tests/color/highlight_source.ascii.term.svg",
+      "start": 1,
+      "end": 22
+     }
+    ],
+    "copies": 10,
+    "kind": "docs"
+   },
+   {
+    "format": "rust",
+    "lines": 62,
+    "tokens": 1350,
+    "first": {
+     "name": "crates/ruff/tests/cli/lint.rs",
+     "start": 4845,
+     "end": 4906
+    },
+    "others": [
+     {
+      "name": "crates/ruff/tests/cli/lint.rs",
+      "start": 4925,
+      "end": 4986
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 6,
+    "tokens": 54,
+    "first": {
+     "name": "crates/ruff_workspace/src/options.rs",
+     "start": 1203,
+     "end": 1208
+    },
+    "others": [
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1313,
+      "end": 1318
+     },
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1342,
+      "end": 1347
+     },
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1374,
+      "end": 1379
+     },
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1479,
+      "end": 1484
+     },
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1507,
+      "end": 1512
+     },
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1563,
+      "end": 1568
+     },
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1583,
+      "end": 1588
+     },
+     {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1621,
+      "end": 1626
+     }
+    ],
+    "copies": 26,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 2110,
+   "lines": 818659,
+   "tokens": 4216685,
+   "clones": 3725,
+   "duplicatedLines": 47379,
+   "duplicatedTokens": 278100,
+   "percentage": 5.79,
+   "percentageTokens": 6.6,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 1857,
+     "lines": 788822,
+     "clones": 3678,
+     "duplicatedLines": 46792,
+     "percentage": 5.93
+    },
+    {
+     "format": "python",
+     "sources": 203,
+     "lines": 22169,
+     "clones": 37,
+     "duplicatedLines": 347,
+     "percentage": 1.57
+    },
+    {
+     "format": "tsx",
+     "sources": 29,
+     "lines": 6533,
+     "clones": 9,
+     "duplicatedLines": 213,
+     "percentage": 3.26
+    },
+    {
+     "format": "typescript",
+     "sources": 13,
+     "lines": 734,
+     "clones": 1,
+     "duplicatedLines": 27,
+     "percentage": 3.68
+    },
+    {
+     "format": "bash",
+     "sources": 8,
+     "lines": 401,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 6,
+     "tokens": 54,
+     "first": {
+      "name": "crates/ruff_workspace/src/options.rs",
+      "start": 1203,
+      "end": 1208
+     },
+     "others": [
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1313,
+       "end": 1318
+      },
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1342,
+       "end": 1347
+      },
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1374,
+       "end": 1379
+      },
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1479,
+       "end": 1484
+      },
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1507,
+       "end": 1512
+      },
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1563,
+       "end": 1568
+      },
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1583,
+       "end": 1588
+      },
+      {
+       "name": "crates/ruff_workspace/src/options.rs",
+       "start": 1621,
+       "end": 1626
+      }
+     ],
+     "copies": 26,
+     "excerpt": {
+      "lines": [
+       "#[derive(",
+       "    Clone, Debug, PartialEq, Eq, Default, Serialize, Deserialize, OptionsMetadata, CombineOptions,",
+       ")]",
+       "#[serde(deny_unknown_fields, rename_all = \"kebab-case\")]",
+       "#[cfg_attr(feature = \"schemars\", derive(schemars::JsonSchema))]",
+       "pub struct Flake8BanditOptions {"
+      ],
+      "total": 6
+     },
+     "excerptSecond": {
+      "lines": [
+       "#[derive(",
+       "    Clone, Debug, PartialEq, Eq, Default, Serialize, Deserialize, OptionsMetadata, CombineOptions,",
+       ")]",
+       "#[serde(deny_unknown_fields, rename_all = \"kebab-case\")]",
+       "#[cfg_attr(feature = \"schemars\", derive(schemars::JsonSchema))]",
+       "pub struct Flake8BooleanTrapOptions {"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 19,
+     "tokens": 190,
+     "first": {
+      "name": "crates/ty_ide/src/hover.rs",
+      "start": 2755,
+      "end": 2773
+     },
+     "others": [
+      {
+       "name": "crates/ty_ide/src/hover.rs",
+       "start": 3037,
+       "end": 3055
+      },
+      {
+       "name": "crates/ty_ide/src/hover.rs",
+       "start": 3071,
+       "end": 3089
+      },
+      {
+       "name": "crates/ty_ide/src/hover.rs",
+       "start": 3105,
+       "end": 3123
+      },
+      {
+       "name": "crates/ty_ide/src/hover.rs",
+       "start": 3139,
+       "end": 3157
+      },
+      {
+       "name": "crates/ty_ide/src/hover.rs",
+       "start": 3173,
+       "end": 3191
+      },
+      {
+       "name": "crates/ty_ide/src/hover.rs",
+       "start": 3236,
+       "end": 3254
+      }
+     ],
+     "copies": 7,
+     "excerpt": {
+      "lines": [
+       "class MyClass:",
+       "    \"\"\"some docs\"\"\"",
+       "\"#,",
+       ");",
+       "",
+       "assert_snapshot!(test.hover(), @r#\"",
+       "MyClass",
+       "---------------------------------------------",
+       "some docs",
+       ""
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 219,
+     "tokens": 1069,
+     "first": {
+      "name": "crates/ruff_python_ast/src/visitor.rs",
+      "start": 136,
+      "end": 354
+     },
+     "others": [
+      {
+       "name": "crates/ruff_python_ast/src/visitor/transformer.rs",
+       "start": 123,
+       "end": 341
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "match stmt {",
+       "    Stmt::FunctionDef(ast::StmtFunctionDef {",
+       "        parameters,",
+       "        body,",
+       "        decorator_list,",
+       "        returns,",
+       "        type_params,",
+       "        ..",
+       "    }) => {",
+       "        for decorator in decorator_list {"
+      ],
+      "total": 219
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 71,
+     "first": {
+      "name": "crates/ty_ide/src/inlay_hints.rs",
+      "start": 2532,
+      "end": 2538
+     },
+     "others": [
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4020,
+       "end": 4026
+      },
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4229,
+       "end": 4235
+      },
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4404,
+       "end": 4410
+      },
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4609,
+       "end": 4615
+      },
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4713,
+       "end": 4719
+      },
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4793,
+       "end": 4799
+      },
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4851,
+       "end": 4857
+      },
+      {
+       "name": "crates/ty_ide/src/inlay_hints.rs",
+       "start": 4998,
+       "end": 5004
+      }
+     ],
+     "copies": 15,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 22,
+     "tokens": 95,
+     "first": {
+      "name": "crates/ty_server/src/server/api/requests/doc_highlights.rs",
+      "start": 31,
+      "end": 52
+     },
+     "others": [
+      {
+       "name": "crates/ty_server/src/server/api/requests/goto_declaration.rs",
+       "start": 30,
+       "end": 51
+      },
+      {
+       "name": "crates/ty_server/src/server/api/requests/goto_definition.rs",
+       "start": 31,
+       "end": 52
+      },
+      {
+       "name": "crates/ty_server/src/server/api/requests/goto_implementation.rs",
+       "start": 30,
+       "end": 51
+      },
+      {
+       "name": "crates/ty_server/src/server/api/requests/goto_type_definition.rs",
+       "start": 31,
+       "end": 52
+      },
+      {
+       "name": "crates/ty_server/src/server/api/requests/hover.rs",
+       "start": 30,
+       "end": 51
+      },
+      {
+       "name": "crates/ty_server/src/server/api/requests/prepare_call_hierarchy.rs",
+       "start": 39,
+       "end": 60
+      },
+      {
+       "name": "crates/ty_server/src/server/api/requests/prepare_rename.rs",
+       "start": 30,
+       "end": 51
+      },
+      {
+       "name": "crates/ty_server/src/server/api/requests/prepare_type_hierarchy.rs",
+       "start": 40,
+       "end": 61
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 301,
+     "tokens": 922,
+     "first": {
+      "name": "crates/ruff_server/src/server/schedule/thread/priority.rs",
+      "start": 1,
+      "end": 301
+     },
+     "others": [
+      {
+       "name": "crates/ty_server/src/server/schedule/thread/priority.rs",
+       "start": 1,
+       "end": 301
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 50,
+     "first": {
+      "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_abspath.rs",
+      "start": 1,
+      "end": 7
+     },
+     "others": [
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_basename.rs",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_dirname.rs",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_exists.rs",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_expanduser.rs",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_getatime.rs",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_getctime.rs",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_getmtime.rs",
+       "start": 1,
+       "end": 7
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_getsize.rs",
+       "start": 1,
+       "end": 7
+      }
+     ],
+     "copies": 19,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 63,
+     "first": {
+      "name": "crates/ty_ide/src/find_references.rs",
+      "start": 1034,
+      "end": 1045
+     },
+     "others": [
+      {
+       "name": "crates/ty_ide/src/find_references.rs",
+       "start": 1062,
+       "end": 1073
+      },
+      {
+       "name": "crates/ty_ide/src/find_references.rs",
+       "start": 1090,
+       "end": 1101
+      },
+      {
+       "name": "crates/ty_ide/src/find_references.rs",
+       "start": 1124,
+       "end": 1135
+      },
+      {
+       "name": "crates/ty_ide/src/goto_declaration.rs",
+       "start": 1625,
+       "end": 1636
+      },
+      {
+       "name": "crates/ty_ide/src/goto_declaration.rs",
+       "start": 1656,
+       "end": 1667
+      },
+      {
+       "name": "crates/ty_ide/src/goto_declaration.rs",
+       "start": 1687,
+       "end": 1698
+      },
+      {
+       "name": "crates/ty_ide/src/goto_type_definition.rs",
+       "start": 1342,
+       "end": 1353
+      },
+      {
+       "name": "crates/ty_ide/src/goto_type_definition.rs",
+       "start": 1373,
+       "end": 1384
+      }
+     ],
+     "copies": 13,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 73,
+     "first": {
+      "name": "crates/ruff_linter/src/rules/airflow/mod.rs",
+      "start": 3,
+      "end": 16
+     },
+     "others": [
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_blind_except/mod.rs",
+       "start": 2,
+       "end": 15
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_commas/mod.rs",
+       "start": 2,
+       "end": 15
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_debugger/mod.rs",
+       "start": 3,
+       "end": 16
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_fixme/mod.rs",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_implicit_str_concat/mod.rs",
+       "start": 3,
+       "end": 16
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_logging_format/mod.rs",
+       "start": 3,
+       "end": 16
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_pie/mod.rs",
+       "start": 2,
+       "end": 15
+      },
+      {
+       "name": "crates/ruff_linter/src/rules/flake8_print/mod.rs",
+       "start": 2,
+       "end": 15
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 153,
+     "tokens": 717,
+     "first": {
+      "name": "crates/ruff_python_ast/src/visitor.rs",
+      "start": 363,
+      "end": 515
+     },
+     "others": [
+      {
+       "name": "crates/ruff_python_ast/src/visitor/transformer.rs",
+       "start": 350,
+       "end": 502
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 3,
+    "minified": 0,
+    "sample": [
+     "crates/ruff_linter/src/rules/ruff/rules/confusables.rs",
+     "crates/ruff_python_stdlib/src/sys/builtin_modules.rs",
+     "crates/ruff_python_stdlib/src/sys/known_stdlib.rs"
+    ]
+   }
+  },
+  "health": {
+   "score": 47.7,
+   "grade": "D",
+   "size": {
+    "lines": 990462,
+    "files": 3488,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 7,
+     "adjusted": 7,
+     "lines": 69295,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "python",
+      "tsx",
+      "typescript",
+      "bash",
+      "javascript",
+      "dot",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 56.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 6.2,
+     "adjusted": 6.1,
+     "lines": 8821,
+     "halfLife": 7.5,
+     "coverage": 14.4,
+     "weight": 0.144,
+     "score": 56.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 67.7,
+     "adjusted": 67.6,
+     "lines": 670154,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 39.2
+    }
+   ]
+  },
+  "complexity": {
+   "total": 120756,
+   "mean": 34.6,
+   "files": [
+    {
+     "path": "crates/ruff_python_ast/src/generated.rs",
+     "complexity": 3411,
+     "lines": 11216,
+     "bytes": 346704
+    },
+    {
+     "path": "crates/ty_python_semantic/src/types.rs",
+     "complexity": 1914,
+     "lines": 13027,
+     "bytes": 553448
+    },
+    {
+     "path": "crates/ty_python_semantic/src/types/infer/builder.rs",
+     "complexity": 1793,
+     "lines": 13721,
+     "bytes": 566496
+    },
+    {
+     "path": "crates/ruff_linter/src/rules/ruff/rules/confusables.rs",
+     "complexity": 1586,
+     "lines": 1595,
+     "bytes": 42103
+    },
+    {
+     "path": "crates/ty_python_semantic/src/types/call/bind.rs",
+     "complexity": 1469,
+     "lines": 11500,
+     "bytes": 508217
+    },
+    {
+     "path": "crates/ruff_linter/src/codes.rs",
+     "complexity": 1027,
+     "lines": 1436,
+     "bytes": 94406
+    },
+    {
+     "path": "crates/ty_python_semantic/src/types/display.rs",
+     "complexity": 900,
+     "lines": 4546,
+     "bytes": 167091
+    },
+    {
+     "path": "crates/ty_python_semantic/src/types/signatures.rs",
+     "complexity": 888,
+     "lines": 7112,
+     "bytes": 300743
+    },
+    {
+     "path": "crates/ty_ide/src/completion.rs",
+     "complexity": 878,
+     "lines": 11844,
+     "bytes": 353485
+    },
+    {
+     "path": "crates/ty_python_semantic/src/types/narrow.rs",
+     "complexity": 815,
+     "lines": 5739,
+     "bytes": 233322
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 6.18,
+   "findings": 601,
+   "files": 3185,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 591
+    },
+    {
+     "category": "unused-export",
+     "count": 10
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "crates/ruff_benchmark/resources/large/dataset.py",
+     "name": "",
+     "line": 1,
+     "lines": 1617
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ruff_benchmark/resources/pydantic/types.py",
+     "name": "",
+     "line": 1,
+     "lines": 834
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ruff_benchmark/resources/numpy/ctypeslib.py",
+     "name": "",
+     "line": 1,
+     "lines": 547
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ty_vendored/ty_extensions/_internal.pyi",
+     "name": "",
+     "line": 1,
+     "lines": 389
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ruff_python_parser/resources/valid/statement/match.py",
+     "name": "",
+     "line": 1,
+     "lines": 340
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ruff_benchmark/resources/typeis_narrowing.py",
+     "name": "",
+     "line": 1,
+     "lines": 297
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ty_vendored/ty_extensions/__init__.pyi",
+     "name": "",
+     "line": 1,
+     "lines": 188
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ruff_python_parser/resources/valid/statement/function.py",
+     "name": "",
+     "line": 1,
+     "lines": 162
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/generate_known_standard_library.py",
+     "name": "",
+     "line": 1,
+     "lines": 109
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/ruff_python_parser/resources/valid/statement/ambiguous_lpar_with_items.py",
+     "name": "",
+     "line": 1,
+     "lines": 105
+    }
+   ]
+  }
+ }
+}

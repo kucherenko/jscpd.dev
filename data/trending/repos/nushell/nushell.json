@@ -1,0 +1,1418 @@
+{
+ "name": "nushell/nushell",
+ "url": "https://github.com/nushell/nushell",
+ "appearances": [
+  {
+   "date": "2026-11-07",
+   "rank": 8,
+   "stars": 41012,
+   "starsToday": 131,
+   "headSha": "192e5533546f89eddbb65cc73359aca1598a3076",
+   "sources": 2070,
+   "lines": 506876,
+   "clones": 4503,
+   "duplicatedLines": 58807,
+   "percentage": 11.6,
+   "codePercentage": 12.05,
+   "codeSources": 1534,
+   "healthScore": 40.8,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T05:21:43.893Z",
+  "name": "nushell/nushell",
+  "url": "https://github.com/nushell/nushell",
+  "description": "A new type of shell",
+  "language": "Rust",
+  "stars": 41012,
+  "starsToday": 131,
+  "defaultBranch": "main",
+  "headSha": "192e5533546f89eddbb65cc73359aca1598a3076",
+  "durationMs": 2892,
+  "total": {
+   "sources": 2070,
+   "lines": 506876,
+   "tokens": 3097644,
+   "clones": 4503,
+   "duplicatedLines": 58807,
+   "duplicatedTokens": 353965,
+   "percentage": 11.6,
+   "percentageTokens": 11.43
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 1894,
+    "lines": 495580,
+    "clones": 4487,
+    "duplicatedLines": 58569,
+    "percentage": 11.82
+   },
+   {
+    "format": "yaml",
+    "sources": 38,
+    "lines": 1844,
+    "clones": 11,
+    "duplicatedLines": 161,
+    "percentage": 8.73
+   },
+   {
+    "format": "markdown",
+    "sources": 51,
+    "lines": 4523,
+    "clones": 2,
+    "duplicatedLines": 16,
+    "percentage": 0.35
+   },
+   {
+    "format": "docker",
+    "sources": 2,
+    "lines": 113,
+    "clones": 2,
+    "duplicatedLines": 31,
+    "percentage": 27.43
+   },
+   {
+    "format": "json",
+    "sources": 10,
+    "lines": 524,
+    "clones": 1,
+    "duplicatedLines": 30,
+    "percentage": 5.73
+   },
+   {
+    "format": "toml",
+    "sources": 52,
+    "lines": 2763,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "nix",
+    "sources": 3,
+    "lines": 390,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "python",
+    "sources": 1,
+    "lines": 268,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "javascript",
+    "sources": 1,
+    "lines": 248,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 4,
+    "lines": 174,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "rust",
+    "lines": 37,
+    "tokens": 237,
+    "first": {
+     "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_hour.rs",
+     "start": 93,
+     "end": 129
+    },
+    "others": [
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_minute.rs",
+      "start": 77,
+      "end": 113
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_month.rs",
+      "start": 77,
+      "end": 113
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_nanosecond.rs",
+      "start": 77,
+      "end": 113
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_ordinal.rs",
+      "start": 77,
+      "end": 113
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_second.rs",
+      "start": 77,
+      "end": 113
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_week.rs",
+      "start": 77,
+      "end": 113
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_weekday.rs",
+      "start": 77,
+      "end": 113
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_year.rs",
+      "start": 77,
+      "end": 113
+     }
+    ],
+    "copies": 9,
+    "excerpt": {
+     "lines": [
+      "                    Series::new(\"0\".into(), &[16i8, 16]),",
+      "                    Span::test_data(),",
+      "                )",
+      "                .expect(\"simple df for test should not fail\")",
+      "                .into_value(Span::test_data()),",
+      "            ),",
+      "        },",
+      "    ]",
+      "}",
+      ""
+     ],
+     "total": 37
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 113,
+    "tokens": 1863,
+    "first": {
+     "name": "crates/nu-command/tests/commands/table/large_outputs.rs",
+     "start": 818,
+     "end": 930
+    },
+    "others": [
+     {
+      "name": "crates/nu-command/tests/commands/table/large_outputs.rs",
+      "start": 1093,
+      "end": 1205
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "│                    │ │                                  │ ╰───────────────────────┴───────────────────────────────────────────────────╯ │ │",
+      "│                    │ │                                  │ ╭───────────────┬───────────╮                                                 │ │",
+      "│                    │ │ history                          │ │ max_size      │ 10000     │                                                 │ │",
+      "│                    │ │                                  │ │ sync_on_enter │ true      │                                                 │ │",
+      "│                    │ │                                  │ │ file_format   │ plaintext │                                                 │ │",
+      "│                    │ │                                  │ ╰───────────────┴───────────╯                                                 │ │",
+      "│                    │ │                                  │ ╭────────────────┬────────────────────────╮                                   │ │",
+      "│                    │ │ completions                      │ │ case_sensitive │ false                  │                                   │ │",
+      "│                    │ │                                  │ │ quick          │ true                   │                                   │ │",
+      "│                    │ │                                  │ │ partial        │ true                   │                                   │ │"
+     ],
+     "total": 113
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 12,
+    "tokens": 51,
+    "first": {
+     "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/agg_groups.rs",
+     "start": 58,
+     "end": 69
+    },
+    "others": [
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/aggregate.rs",
+      "start": 132,
+      "end": 143
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/data/arg_where.rs",
+      "start": 54,
+      "end": 65
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/data/col.rs",
+      "start": 132,
+      "end": 143
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_all.rs",
+      "start": 69,
+      "end": 81
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_alpha.rs",
+      "start": 169,
+      "end": 181
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_alphanumeric.rs",
+      "start": 140,
+      "end": 152
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_array.rs",
+      "start": 52,
+      "end": 63
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_binary.rs",
+      "start": 39,
+      "end": 51
+     }
+    ],
+    "copies": 36,
+    "excerpt": {
+     "lines": [
+      "    }]",
+      "}",
+      "",
+      "fn run(",
+      "    &self,",
+      "    plugin: &Self::Plugin,",
+      "    engine: &EngineInterface,",
+      "    call: &EvaluatedCall,",
+      "    mut input: PipelineData,",
+      ") -> Result<PipelineData, LabeledError> {"
+     ],
+     "total": 12
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 18,
+    "tokens": 98,
+    "first": {
+     "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_alpha.rs",
+     "start": 191,
+     "end": 208
+    },
+    "others": [
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_array.rs",
+      "start": 66,
+      "end": 83
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_binary.rs",
+      "start": 51,
+      "end": 68
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_categorical.rs",
+      "start": 51,
+      "end": 68
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_decimal.rs",
+      "start": 51,
+      "end": 68
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_ends_with.rs",
+      "start": 134,
+      "end": 150
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_exclude.rs",
+      "start": 102,
+      "end": 119
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_float.rs",
+      "start": 71,
+      "end": 88
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_integer.rs",
+      "start": 71,
+      "end": 88
+     }
+    ],
+    "copies": 19,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 26,
+    "tokens": 129,
+    "first": {
+     "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/max.rs",
+     "start": 26,
+     "end": 51
+    },
+    "others": [
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/mean.rs",
+      "start": 26,
+      "end": 51
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/min.rs",
+      "start": 26,
+      "end": 51
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/n_unique.rs",
+      "start": 28,
+      "end": 53
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/std.rs",
+      "start": 26,
+      "end": 51
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/sum.rs",
+      "start": 26,
+      "end": 51
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/var.rs",
+      "start": 27,
+      "end": 52
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/boolean/is_not_null.rs",
+      "start": 28,
+      "end": 53
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/boolean/is_null.rs",
+      "start": 30,
+      "end": 55
+     }
+    ],
+    "copies": 14,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 25,
+    "tokens": 125,
+    "first": {
+     "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/cumulative.rs",
+     "start": 68,
+     "end": 92
+    },
+    "others": [
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_day.rs",
+      "start": 33,
+      "end": 57
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_hour.rs",
+      "start": 35,
+      "end": 59
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_minute.rs",
+      "start": 33,
+      "end": 57
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_month.rs",
+      "start": 33,
+      "end": 57
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_nanosecond.rs",
+      "start": 33,
+      "end": 57
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_ordinal.rs",
+      "start": 33,
+      "end": 57
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_second.rs",
+      "start": 33,
+      "end": 57
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_week.rs",
+      "start": 33,
+      "end": 57
+     }
+    ],
+    "copies": 14,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 97,
+    "first": {
+     "name": "crates/nu-protocol/src/config/clip.rs",
+     "start": 20,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "crates/nu-protocol/src/config/completions.rs",
+      "start": 77,
+      "end": 91
+     },
+     {
+      "name": "crates/nu-protocol/src/config/completions.rs",
+      "start": 135,
+      "end": 149
+     },
+     {
+      "name": "crates/nu-protocol/src/config/datetime_format.rs",
+      "start": 10,
+      "end": 24
+     },
+     {
+      "name": "crates/nu-protocol/src/config/display_errors.rs",
+      "start": 31,
+      "end": 45
+     },
+     {
+      "name": "crates/nu-protocol/src/config/filesize.rs",
+      "start": 48,
+      "end": 62
+     },
+     {
+      "name": "crates/nu-protocol/src/config/hinter.rs",
+      "start": 10,
+      "end": 24
+     },
+     {
+      "name": "crates/nu-protocol/src/config/hooks.rs",
+      "start": 55,
+      "end": 69
+     },
+     {
+      "name": "crates/nu-protocol/src/config/ls.rs",
+      "start": 19,
+      "end": 33
+     }
+    ],
+    "copies": 16,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 20,
+    "tokens": 82,
+    "first": {
+     "name": "crates/nu-cmd-extra/src/extra/bits/bits_.rs",
+     "start": 19,
+     "end": 38
+    },
+    "others": [
+     {
+      "name": "crates/nu-cmd-extra/src/extra/filters/roll/roll_.rs",
+      "start": 23,
+      "end": 42
+     },
+     {
+      "name": "crates/nu-cmd-extra/src/extra/strings/str_/case/str_.rs",
+      "start": 19,
+      "end": 38
+     },
+     {
+      "name": "crates/nu-cmd-lang/src/core_commands/error.rs",
+      "start": 19,
+      "end": 38
+     },
+     {
+      "name": "crates/nu-command/src/bytes/bytes_.rs",
+      "start": 19,
+      "end": 38
+     },
+     {
+      "name": "crates/nu-command/src/conversions/into/command.rs",
+      "start": 19,
+      "end": 38
+     },
+     {
+      "name": "crates/nu-command/src/debug/view.rs",
+      "start": 19,
+      "end": 38
+     },
+     {
+      "name": "crates/nu-command/src/experimental/job.rs",
+      "start": 19,
+      "end": 38
+     },
+     {
+      "name": "crates/nu-command/src/formats/from/command.rs",
+      "start": 19,
+      "end": 38
+     }
+    ],
+    "copies": 18,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 40,
+    "tokens": 243,
+    "first": {
+     "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/abs.rs",
+     "start": 48,
+     "end": 87
+    },
+    "others": [
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_and.rs",
+      "start": 53,
+      "end": 93
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_count_ones.rs",
+      "start": 53,
+      "end": 93
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_or.rs",
+      "start": 53,
+      "end": 93
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_xor.rs",
+      "start": 53,
+      "end": 93
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/cos.rs",
+      "start": 48,
+      "end": 86
+     }
+    ],
+    "copies": 6,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 68,
+    "first": {
+     "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_all.rs",
+     "start": 22,
+     "end": 30
+    },
+    "others": [
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_binary.rs",
+      "start": 22,
+      "end": 30
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_boolean.rs",
+      "start": 24,
+      "end": 32
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_categorical.rs",
+      "start": 22,
+      "end": 30
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_date.rs",
+      "start": 22,
+      "end": 30
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_decimal.rs",
+      "start": 22,
+      "end": 30
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_empty.rs",
+      "start": 22,
+      "end": 30
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_float.rs",
+      "start": 24,
+      "end": 32
+     },
+     {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_integer.rs",
+      "start": 24,
+      "end": 32
+     }
+    ],
+    "copies": 18,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 1534,
+   "lines": 397648,
+   "tokens": 2381722,
+   "clones": 3586,
+   "duplicatedLines": 47909,
+   "duplicatedTokens": 278023,
+   "percentage": 12.05,
+   "percentageTokens": 11.67,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 1528,
+     "lines": 396987,
+     "clones": 3586,
+     "duplicatedLines": 47909,
+     "percentage": 12.07
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 268,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 248,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 3,
+     "lines": 114,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 31,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 37,
+     "tokens": 237,
+     "first": {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_hour.rs",
+      "start": 93,
+      "end": 129
+     },
+     "others": [
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_minute.rs",
+       "start": 77,
+       "end": 113
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_month.rs",
+       "start": 77,
+       "end": 113
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_nanosecond.rs",
+       "start": 77,
+       "end": 113
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_ordinal.rs",
+       "start": 77,
+       "end": 113
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_second.rs",
+       "start": 77,
+       "end": 113
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_week.rs",
+       "start": 77,
+       "end": 113
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_weekday.rs",
+       "start": 77,
+       "end": 113
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_year.rs",
+       "start": 77,
+       "end": 113
+      }
+     ],
+     "copies": 9,
+     "excerpt": {
+      "lines": [
+       "                    Series::new(\"0\".into(), &[16i8, 16]),",
+       "                    Span::test_data(),",
+       "                )",
+       "                .expect(\"simple df for test should not fail\")",
+       "                .into_value(Span::test_data()),",
+       "            ),",
+       "        },",
+       "    ]",
+       "}",
+       ""
+      ],
+      "total": 37
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 51,
+     "first": {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/agg_groups.rs",
+      "start": 58,
+      "end": 69
+     },
+     "others": [
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/aggregate.rs",
+       "start": 132,
+       "end": 143
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/data/arg_where.rs",
+       "start": 54,
+       "end": 65
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/data/col.rs",
+       "start": 132,
+       "end": 143
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_all.rs",
+       "start": 69,
+       "end": 81
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_alpha.rs",
+       "start": 169,
+       "end": 181
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_alphanumeric.rs",
+       "start": 140,
+       "end": 152
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_array.rs",
+       "start": 52,
+       "end": 63
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_binary.rs",
+       "start": 39,
+       "end": 51
+      }
+     ],
+     "copies": 36,
+     "excerpt": {
+      "lines": [
+       "    }]",
+       "}",
+       "",
+       "fn run(",
+       "    &self,",
+       "    plugin: &Self::Plugin,",
+       "    engine: &EngineInterface,",
+       "    call: &EvaluatedCall,",
+       "    mut input: PipelineData,",
+       ") -> Result<PipelineData, LabeledError> {"
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 18,
+     "tokens": 98,
+     "first": {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_alpha.rs",
+      "start": 191,
+      "end": 208
+     },
+     "others": [
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_array.rs",
+       "start": 66,
+       "end": 83
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_binary.rs",
+       "start": 51,
+       "end": 68
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_categorical.rs",
+       "start": 51,
+       "end": 68
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_decimal.rs",
+       "start": 51,
+       "end": 68
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_ends_with.rs",
+       "start": 134,
+       "end": 150
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_exclude.rs",
+       "start": 102,
+       "end": 119
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_float.rs",
+       "start": 71,
+       "end": 88
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_integer.rs",
+       "start": 71,
+       "end": 88
+      }
+     ],
+     "copies": 19,
+     "excerpt": {
+      "lines": [
+       "        let selector = Selector::Matches(pattern.into());",
+       "        let nu_selector = NuSelector::from(selector);",
+       "",
+       "        nu_selector",
+       "            .to_pipeline_data(plugin, engine, call.head)",
+       "            .map_err(LabeledError::from)",
+       "            .map(|pd| pd.set_metadata(metadata))",
+       "    }",
+       "}",
+       ""
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 26,
+     "tokens": 129,
+     "first": {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/max.rs",
+      "start": 26,
+      "end": 51
+     },
+     "others": [
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/mean.rs",
+       "start": 26,
+       "end": 51
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/min.rs",
+       "start": 26,
+       "end": 51
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/n_unique.rs",
+       "start": 28,
+       "end": 53
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/std.rs",
+       "start": 26,
+       "end": 51
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/sum.rs",
+       "start": 26,
+       "end": 51
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/var.rs",
+       "start": 27,
+       "end": 52
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/boolean/is_not_null.rs",
+       "start": 28,
+       "end": 53
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/boolean/is_null.rs",
+       "start": 30,
+       "end": 55
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 25,
+     "tokens": 125,
+     "first": {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/aggregation/cumulative.rs",
+      "start": 68,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_day.rs",
+       "start": 33,
+       "end": 57
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_hour.rs",
+       "start": 35,
+       "end": 59
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_minute.rs",
+       "start": 33,
+       "end": 57
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_month.rs",
+       "start": 33,
+       "end": 57
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_nanosecond.rs",
+       "start": 33,
+       "end": 57
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_ordinal.rs",
+       "start": 33,
+       "end": 57
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_second.rs",
+       "start": 33,
+       "end": 57
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/datetime/get_week.rs",
+       "start": 33,
+       "end": 57
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 97,
+     "first": {
+      "name": "crates/nu-protocol/src/config/clip.rs",
+      "start": 20,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "crates/nu-protocol/src/config/completions.rs",
+       "start": 77,
+       "end": 91
+      },
+      {
+       "name": "crates/nu-protocol/src/config/completions.rs",
+       "start": 135,
+       "end": 149
+      },
+      {
+       "name": "crates/nu-protocol/src/config/datetime_format.rs",
+       "start": 10,
+       "end": 24
+      },
+      {
+       "name": "crates/nu-protocol/src/config/display_errors.rs",
+       "start": 31,
+       "end": 45
+      },
+      {
+       "name": "crates/nu-protocol/src/config/filesize.rs",
+       "start": 48,
+       "end": 62
+      },
+      {
+       "name": "crates/nu-protocol/src/config/hinter.rs",
+       "start": 10,
+       "end": 24
+      },
+      {
+       "name": "crates/nu-protocol/src/config/hooks.rs",
+       "start": 55,
+       "end": 69
+      },
+      {
+       "name": "crates/nu-protocol/src/config/ls.rs",
+       "start": 19,
+       "end": 33
+      }
+     ],
+     "copies": 16,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 20,
+     "tokens": 82,
+     "first": {
+      "name": "crates/nu-cmd-extra/src/extra/bits/bits_.rs",
+      "start": 19,
+      "end": 38
+     },
+     "others": [
+      {
+       "name": "crates/nu-cmd-extra/src/extra/filters/roll/roll_.rs",
+       "start": 23,
+       "end": 42
+      },
+      {
+       "name": "crates/nu-cmd-extra/src/extra/strings/str_/case/str_.rs",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "crates/nu-cmd-lang/src/core_commands/error.rs",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "crates/nu-command/src/bytes/bytes_.rs",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "crates/nu-command/src/conversions/into/command.rs",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "crates/nu-command/src/debug/view.rs",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "crates/nu-command/src/experimental/job.rs",
+       "start": 19,
+       "end": 38
+      },
+      {
+       "name": "crates/nu-command/src/formats/from/command.rs",
+       "start": 19,
+       "end": 38
+      }
+     ],
+     "copies": 18,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 40,
+     "tokens": 243,
+     "first": {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/abs.rs",
+      "start": 48,
+      "end": 87
+     },
+     "others": [
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_and.rs",
+       "start": 53,
+       "end": 93
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_count_ones.rs",
+       "start": 53,
+       "end": 93
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_or.rs",
+       "start": 53,
+       "end": 93
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/bitwise_xor.rs",
+       "start": 53,
+       "end": 93
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/computation/math/cos.rs",
+       "start": 48,
+       "end": 86
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 68,
+     "first": {
+      "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_all.rs",
+      "start": 22,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_binary.rs",
+       "start": 22,
+       "end": 30
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_boolean.rs",
+       "start": 24,
+       "end": 32
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_categorical.rs",
+       "start": 22,
+       "end": 30
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_date.rs",
+       "start": 22,
+       "end": 30
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_decimal.rs",
+       "start": 22,
+       "end": 30
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_empty.rs",
+       "start": 22,
+       "end": 30
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_float.rs",
+       "start": 24,
+       "end": 32
+      },
+      {
+       "name": "crates/nu_plugin_polars/src/dataframe/command/selector/selector_integer.rs",
+       "start": 24,
+       "end": 32
+      }
+     ],
+     "copies": 18,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 88,
+     "first": {
+      "name": "crates/nu-cmd-extra/src/extra/platform/ansi/gradient.rs",
+      "start": 177,
+      "end": 185
+     },
+     "others": [
+      {
+       "name": "crates/nu-cmd-extra/src/extra/strings/str_/case/camel_case.rs",
+       "start": 14,
+       "end": 22
+      },
+      {
+       "name": "crates/nu-cmd-extra/src/extra/strings/str_/case/screaming_snake_case.rs",
+       "start": 14,
+       "end": 22
+      },
+      {
+       "name": "crates/nu-cmd-extra/src/extra/strings/str_/case/snake_case.rs",
+       "start": 14,
+       "end": 22
+      },
+      {
+       "name": "crates/nu-cmd-extra/src/extra/strings/str_/case/title_case.rs",
+       "start": 14,
+       "end": 22
+      },
+      {
+       "name": "crates/nu-command/src/strings/ansi/link.rs",
+       "start": 12,
+       "end": 20
+      },
+      {
+       "name": "crates/nu-command/src/strings/str_/case/capitalize.rs",
+       "start": 12,
+       "end": 20
+      },
+      {
+       "name": "crates/nu-command/src/strings/str_/case/downcase.rs",
+       "start": 13,
+       "end": 21
+      },
+      {
+       "name": "crates/nu-command/src/strings/str_/case/downcase.rs",
+       "start": 117,
+       "end": 125
+      }
+     ],
+     "copies": 14,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 40.8,
+   "grade": "D",
+   "size": {
+    "lines": 496652,
+    "files": 1902,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 11.8,
+     "adjusted": 11.8,
+     "lines": 58600,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "nix",
+      "python",
+      "javascript",
+      "bash",
+      "docker",
+      "powershell",
+      "batch"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 38.3
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 60.4,
+     "adjusted": 60.2,
+     "lines": 299935,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 43.4
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 73773,
+   "mean": 38.8,
+   "files": [
+    {
+     "path": "crates/nu-protocol/src/value/mod.rs",
+     "complexity": 1343,
+     "lines": 6901,
+     "bytes": 273598
+    },
+    {
+     "path": "crates/nu-command/src/platform/input/list.rs",
+     "complexity": 1014,
+     "lines": 4782,
+     "bytes": 176356
+    },
+    {
+     "path": "crates/nu-cli/src/reedline_config.rs",
+     "complexity": 775,
+     "lines": 2652,
+     "bytes": 103512
+    },
+    {
+     "path": "crates/nu-color-config/src/nu_style.rs",
+     "complexity": 744,
+     "lines": 1020,
+     "bytes": 54221
+    },
+    {
+     "path": "crates/nu-parser/tests/test_parser.rs",
+     "complexity": 714,
+     "lines": 4251,
+     "bytes": 139264
+    },
+    {
+     "path": "tests/repl/test_parser.rs",
+     "complexity": 637,
+     "lines": 2457,
+     "bytes": 71465
+    },
+    {
+     "path": "crates/nu-engine/src/eval_ir.rs",
+     "complexity": 504,
+     "lines": 2525,
+     "bytes": 100773
+    },
+    {
+     "path": "crates/nu-heavy-utils/src/yaml/parse.rs",
+     "complexity": 469,
+     "lines": 1828,
+     "bytes": 65179
+    },
+    {
+     "path": "crates/nu-tui/src/session.rs",
+     "complexity": 436,
+     "lines": 3038,
+     "bytes": 110749
+    },
+    {
+     "path": "crates/nu-plugin/src/plugin/interface/tests.rs",
+     "complexity": 398,
+     "lines": 2256,
+     "bytes": 75343
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 2,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

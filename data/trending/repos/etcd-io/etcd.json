@@ -1,0 +1,1065 @@
+{
+ "name": "etcd-io/etcd",
+ "url": "https://github.com/etcd-io/etcd",
+ "appearances": [
+  {
+   "date": "2026-11-07",
+   "rank": 9,
+   "stars": 52634,
+   "starsToday": 128,
+   "headSha": "d622ec57cf46c119f1a550343c34b26327cead0f",
+   "sources": 1229,
+   "lines": 250463,
+   "clones": 1910,
+   "duplicatedLines": 19472,
+   "percentage": 7.77,
+   "codePercentage": 1.26,
+   "codeSources": 539,
+   "healthScore": 52.7,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T05:21:43.893Z",
+  "name": "etcd-io/etcd",
+  "url": "https://github.com/etcd-io/etcd",
+  "description": "Distributed reliable key-value store for the most critical data of a distributed system",
+  "language": "Go",
+  "stars": 52634,
+  "starsToday": 128,
+  "defaultBranch": "main",
+  "headSha": "d622ec57cf46c119f1a550343c34b26327cead0f",
+  "durationMs": 1656,
+  "total": {
+   "sources": 1229,
+   "lines": 250463,
+   "tokens": 1529449,
+   "clones": 1910,
+   "duplicatedLines": 19472,
+   "duplicatedTokens": 156024,
+   "percentage": 7.77,
+   "percentageTokens": 10.2
+  },
+  "formats": [
+   {
+    "format": "go",
+    "sources": 1003,
+    "lines": 218833,
+    "clones": 1691,
+    "duplicatedLines": 16947,
+    "percentage": 7.74
+   },
+   {
+    "format": "markdown",
+    "sources": 60,
+    "lines": 13063,
+    "clones": 151,
+    "duplicatedLines": 1603,
+    "percentage": 12.27
+   },
+   {
+    "format": "go-module",
+    "sources": 14,
+    "lines": 927,
+    "clones": 22,
+    "duplicatedLines": 186,
+    "percentage": 20.06
+   },
+   {
+    "format": "json",
+    "sources": 20,
+    "lines": 5204,
+    "clones": 14,
+    "duplicatedLines": 374,
+    "percentage": 7.19
+   },
+   {
+    "format": "yaml",
+    "sources": 28,
+    "lines": 1733,
+    "clones": 8,
+    "duplicatedLines": 75,
+    "percentage": 4.33
+   },
+   {
+    "format": "makefile",
+    "sources": 5,
+    "lines": 664,
+    "clones": 8,
+    "duplicatedLines": 54,
+    "percentage": 8.13
+   },
+   {
+    "format": "markup",
+    "sources": 9,
+    "lines": 1401,
+    "clones": 6,
+    "duplicatedLines": 127,
+    "percentage": 9.06
+   },
+   {
+    "format": "bash",
+    "sources": 51,
+    "lines": 5279,
+    "clones": 4,
+    "duplicatedLines": 50,
+    "percentage": 0.95
+   },
+   {
+    "format": "text",
+    "sources": 12,
+    "lines": 345,
+    "clones": 4,
+    "duplicatedLines": 40,
+    "percentage": 11.59
+   },
+   {
+    "format": "txt",
+    "sources": 3,
+    "lines": 583,
+    "clones": 1,
+    "duplicatedLines": 9,
+    "percentage": 1.54
+   }
+  ],
+  "topClones": [
+   {
+    "format": "go",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "api/authpb/auth.pb.go",
+     "start": 95,
+     "end": 104
+    },
+    "others": [
+     {
+      "name": "api/authpb/auth.pb.go",
+      "start": 143,
+      "end": 152
+     },
+     {
+      "name": "api/authpb/auth.pb.go",
+      "start": 211,
+      "end": 220
+     },
+     {
+      "name": "api/authpb/auth.pb.go",
+      "start": 271,
+      "end": 280
+     },
+     {
+      "name": "api/etcdserverpb/etcdserver.pb.go",
+      "start": 47,
+      "end": 56
+     },
+     {
+      "name": "api/etcdserverpb/raft_internal.pb.go",
+      "start": 52,
+      "end": 61
+     },
+     {
+      "name": "api/etcdserverpb/rpc.pb.go",
+      "start": 472,
+      "end": 481
+     },
+     {
+      "name": "api/etcdserverpb/rpc.pb.go",
+      "start": 883,
+      "end": 892
+     },
+     {
+      "name": "api/etcdserverpb/rpc.pb.go",
+      "start": 944,
+      "end": 953
+     }
+    ],
+    "copies": 108,
+    "excerpt": {
+     "lines": [
+      "    mi := &file_auth_proto_msgTypes[0]",
+      "    if x != nil {",
+      "        ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))",
+      "        if ms.LoadMessageInfo() == nil {",
+      "            ms.StoreMessageInfo(mi)",
+      "        }",
+      "        return ms",
+      "    }",
+      "    return mi.MessageOf(x)",
+      "}"
+     ],
+     "total": 10
+    },
+    "kind": "generated"
+   },
+   {
+    "format": "go",
+    "lines": 9,
+    "tokens": 92,
+    "first": {
+     "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+     "start": 42,
+     "end": 50
+    },
+    "others": [
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 69,
+      "end": 77
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 96,
+      "end": 104
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 123,
+      "end": 131
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 150,
+      "end": 158
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 220,
+      "end": 228
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 247,
+      "end": 255
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 344,
+      "end": 352
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 398,
+      "end": 406
+     }
+    ],
+    "copies": 44,
+    "excerpt": {
+     "lines": [
+      "    metadata runtime.ServerMetadata",
+      ")",
+      "if err := marshaler.NewDecoder(req.Body).Decode(&protoReq); err != nil && !errors.Is(err, io.EOF) {",
+      "    return nil, metadata, status.Errorf(codes.InvalidArgument, \"%v\", err)",
+      "}",
+      "if req.Body != nil {",
+      "    _, _ = io.Copy(io.Discard, req.Body)",
+      "}",
+      "msg, err := client.Range(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "    metadata runtime.ServerMetadata",
+      ")",
+      "if err := marshaler.NewDecoder(req.Body).Decode(&protoReq); err != nil && !errors.Is(err, io.EOF) {",
+      "    return nil, metadata, status.Errorf(codes.InvalidArgument, \"%v\", err)",
+      "}",
+      "if req.Body != nil {",
+      "    _, _ = io.Copy(io.Discard, req.Body)",
+      "}",
+      "msg, err := client.Put(ctx, &protoReq, grpc.Header(&metadata.HeaderMD), grpc.Trailer(&metadata.TrailerMD))"
+     ],
+     "total": 9
+    },
+    "kind": "code"
+   },
+   {
+    "format": "go",
+    "lines": 7,
+    "tokens": 85,
+    "first": {
+     "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+     "start": 1261,
+     "end": 1267
+    },
+    "others": [
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1281,
+      "end": 1287
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1301,
+      "end": 1307
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1321,
+      "end": 1327
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1341,
+      "end": 1347
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1387,
+      "end": 1393
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1407,
+      "end": 1413
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1427,
+      "end": 1433
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1454,
+      "end": 1460
+     }
+    ],
+    "copies": 47,
+    "excerpt": {
+     "lines": [
+      "mux.Handle(http.MethodPost, pattern_KV_Range_0, func(w http.ResponseWriter, req *http.Request, pathParams map[string]string) {",
+      "    ctx, cancel := context.WithCancel(req.Context())",
+      "    defer cancel()",
+      "    var stream runtime.ServerTransportStream",
+      "    ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)",
+      "    inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)",
+      "    annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, \"/etcdserverpb.KV/Range\", runtime.WithHTTPPathPattern(\"/v3/kv/range\"))"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "mux.Handle(http.MethodPost, pattern_KV_Put_0, func(w http.ResponseWriter, req *http.Request, pathParams map[string]string) {",
+      "    ctx, cancel := context.WithCancel(req.Context())",
+      "    defer cancel()",
+      "    var stream runtime.ServerTransportStream",
+      "    ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)",
+      "    inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)",
+      "    annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, \"/etcdserverpb.KV/Put\", runtime.WithHTTPPathPattern(\"/v3/kv/put\"))"
+     ],
+     "total": 7
+    },
+    "kind": "code"
+   },
+   {
+    "format": "go",
+    "lines": 7,
+    "tokens": 82,
+    "first": {
+     "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+     "start": 1272,
+     "end": 1278
+    },
+    "others": [
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1292,
+      "end": 1298
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1312,
+      "end": 1318
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1332,
+      "end": 1338
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1352,
+      "end": 1358
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1398,
+      "end": 1404
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1418,
+      "end": 1424
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1438,
+      "end": 1444
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 1465,
+      "end": 1471
+     }
+    ],
+    "copies": 47,
+    "kind": "code"
+   },
+   {
+    "format": "go",
+    "lines": 8,
+    "tokens": 95,
+    "first": {
+     "name": "tests/common/auth_test.go",
+     "start": 64,
+     "end": 71
+    },
+    "others": [
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 98,
+      "end": 105
+     },
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 447,
+      "end": 454
+     },
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 484,
+      "end": 491
+     },
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 511,
+      "end": 518
+     },
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 542,
+      "end": 549
+     },
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 614,
+      "end": 621
+     },
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 632,
+      "end": 640
+     },
+     {
+      "name": "tests/common/auth_test.go",
+      "start": 659,
+      "end": 667
+     }
+    ],
+    "copies": 15,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 10,
+    "tokens": 110,
+    "first": {
+     "name": "tests/common/kv_test.go",
+     "start": 42,
+     "end": 51
+    },
+    "others": [
+     {
+      "name": "tests/common/kv_test.go",
+      "start": 67,
+      "end": 76
+     },
+     {
+      "name": "tests/common/kv_test.go",
+      "start": 96,
+      "end": 105
+     },
+     {
+      "name": "tests/common/lease_test.go",
+      "start": 30,
+      "end": 40
+     },
+     {
+      "name": "tests/common/lease_test.go",
+      "start": 219,
+      "end": 229
+     },
+     {
+      "name": "tests/common/member_test.go",
+      "start": 33,
+      "end": 43
+     },
+     {
+      "name": "tests/common/role_test.go",
+      "start": 31,
+      "end": 40
+     },
+     {
+      "name": "tests/common/status_test.go",
+      "start": 29,
+      "end": 39
+     },
+     {
+      "name": "tests/common/user_test.go",
+      "start": 90,
+      "end": 99
+     }
+    ],
+    "copies": 12,
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 36,
+    "tokens": 969,
+    "first": {
+     "name": "logos/etcd-stacked-bw.svg",
+     "start": 12,
+     "end": 47
+    },
+    "others": [
+     {
+      "name": "logos/etcd-stacked-color.svg",
+      "start": 12,
+      "end": 47
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 35,
+    "tokens": 965,
+    "first": {
+     "name": "logos/etcd-offset-bw.svg",
+     "start": 12,
+     "end": 46
+    },
+    "others": [
+     {
+      "name": "logos/etcd-offset-color.svg",
+      "start": 12,
+      "end": 46
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 35,
+    "tokens": 961,
+    "first": {
+     "name": "logos/etcd-horizontal-bw.svg",
+     "start": 12,
+     "end": 46
+    },
+    "others": [
+     {
+      "name": "logos/etcd-horizontal-color.svg",
+      "start": 12,
+      "end": 46
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "go",
+    "lines": 20,
+    "tokens": 136,
+    "first": {
+     "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+     "start": 2157,
+     "end": 2176
+    },
+    "others": [
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 2297,
+      "end": 2316
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 2361,
+      "end": 2380
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 2558,
+      "end": 2577
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 2698,
+      "end": 2717
+     },
+     {
+      "name": "api/etcdserverpb/gw/rpc.pb.gw.go",
+      "start": 2895,
+      "end": 2914
+     },
+     {
+      "name": "server/etcdserver/api/v3election/v3electionpb/gw/v3election.pb.gw.go",
+      "start": 269,
+      "end": 288
+     },
+     {
+      "name": "server/etcdserver/api/v3lock/v3lockpb/gw/v3lock.pb.gw.go",
+      "start": 145,
+      "end": 164
+     }
+    ],
+    "copies": 8,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 539,
+   "lines": 91350,
+   "tokens": 461097,
+   "clones": 112,
+   "duplicatedLines": 1151,
+   "duplicatedTokens": 7612,
+   "percentage": 1.26,
+   "percentageTokens": 1.65,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 503,
+     "lines": 87139,
+     "clones": 112,
+     "duplicatedLines": 1151,
+     "percentage": 1.32
+    },
+    {
+     "format": "bash",
+     "sources": 36,
+     "lines": 4211,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 11,
+     "tokens": 74,
+     "first": {
+      "name": "etcdctl/ctlv3/command/printer_table.go",
+      "start": 29,
+      "end": 39
+     },
+     "others": [
+      {
+       "name": "etcdctl/ctlv3/command/printer_table.go",
+       "start": 40,
+       "end": 50
+      },
+      {
+       "name": "etcdctl/ctlv3/command/printer_table.go",
+       "start": 51,
+       "end": 61
+      },
+      {
+       "name": "etcdutl/etcdutl/printer_table.go",
+       "start": 29,
+       "end": 39
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "    hdr, rows := makeMemberListTable(r)",
+       "    cfgBuilder := tablewriter.NewConfigBuilder().WithRowAlignment(tw.AlignRight)",
+       "    table := tablewriter.NewTable(os.Stdout, tablewriter.WithConfig(cfgBuilder.Build()))",
+       "    table.Header(hdr)",
+       "    for _, row := range rows {",
+       "        table.Append(row)",
+       "    }",
+       "    table.Render()",
+       "}",
+       ""
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 27,
+     "tokens": 204,
+     "first": {
+      "name": "tools/rw-heatmaps/pkg/chart/heatmaps.go",
+      "start": 134,
+      "end": 160
+     },
+     "others": [
+      {
+       "name": "tools/rw-heatmaps/pkg/chart/heatmaps.go",
+       "start": 216,
+       "end": 242
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "// Fill the canvas with the plots and legends.",
+       "canvases := plot.Align(plots, t, dc)",
+       "for i := 0; i < rows; i++ {",
+       "    for j := 0; j < cols; j++ {",
+       "        // Continue if there is no plot in the current cell (incomplete data).",
+       "        if plots[i][j] == nil {",
+       "            continue",
+       "        }"
+      ],
+      "total": 27
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 18,
+     "tokens": 138,
+     "first": {
+      "name": "etcdctl/ctlv3/command/completion_command.go",
+      "start": 63,
+      "end": 80
+     },
+     "others": [
+      {
+       "name": "etcdutl/etcdutl/completion_commmand.go",
+       "start": 63,
+       "end": 80
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  PS> etcdctl completion powershell > etcdctl.ps1",
+       "  # and source this file from your PowerShell profile.",
+       "`,",
+       "        DisableFlagsInUseLine: true,",
+       "        ValidArgs:             []string{\"bash\", \"zsh\", \"fish\", \"powershell\"},",
+       "        Args:                  cobra.MatchAll(cobra.ExactArgs(1), cobra.OnlyValidArgs),",
+       "        Run: func(cmd *cobra.Command, args []string) {",
+       "            switch args[0] {",
+       "            case \"bash\":",
+       "                cmd.Root().GenBashCompletion(os.Stdout)"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 68,
+     "first": {
+      "name": "etcdctl/ctlv3/command/printer_table.go",
+      "start": 29,
+      "end": 37
+     },
+     "others": [
+      {
+       "name": "etcdctl/ctlv3/command/printer_table.go",
+       "start": 62,
+       "end": 70
+      },
+      {
+       "name": "etcdutl/etcdutl/printer_table.go",
+       "start": 40,
+       "end": 48
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 66,
+     "first": {
+      "name": "server/etcdserver/api/membership/cluster.go",
+      "start": 544,
+      "end": 549
+     },
+     "others": [
+      {
+       "name": "server/etcdserver/api/membership/cluster.go",
+       "start": 561,
+       "end": 566
+      },
+      {
+       "name": "server/etcdserver/api/membership/cluster.go",
+       "start": 570,
+       "end": 575
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 23,
+     "tokens": 127,
+     "first": {
+      "name": "server/etcdserver/cluster_util.go",
+      "start": 258,
+      "end": 280
+     },
+     "others": [
+      {
+       "name": "server/etcdserver/cluster_util.go",
+       "start": 398,
+       "end": 420
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 13,
+     "tokens": 62,
+     "first": {
+      "name": "server/etcdserver/api/membership/cluster.go",
+      "start": 647,
+      "end": 659
+     },
+     "others": [
+      {
+       "name": "server/etcdserver/api/membership/cluster.go",
+       "start": 677,
+       "end": 689
+      },
+      {
+       "name": "server/etcdserver/api/membership/cluster.go",
+       "start": 703,
+       "end": 715
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 12,
+     "tokens": 62,
+     "first": {
+      "name": "tools/rw-heatmaps/pkg/chart/heatmaps.go",
+      "start": 96,
+      "end": 107
+     },
+     "others": [
+      {
+       "name": "tools/rw-heatmaps/pkg/chart/heatmaps.go",
+       "start": 174,
+       "end": 185
+      },
+      {
+       "name": "tools/rw-heatmaps/pkg/chart/line_chart.go",
+       "start": 59,
+       "end": 70
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 17,
+     "tokens": 122,
+     "first": {
+      "name": "etcdctl/ctlv3/command/downgrade_command.go",
+      "start": 76,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "etcdctl/ctlv3/command/downgrade_command.go",
+       "start": 102,
+       "end": 118
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 58,
+     "first": {
+      "name": "server/etcdserver/server.go",
+      "start": 1009,
+      "end": 1014
+     },
+     "others": [
+      {
+       "name": "server/etcdserver/server.go",
+       "start": 1017,
+       "end": 1022
+      },
+      {
+       "name": "server/etcdserver/server.go",
+       "start": 1028,
+       "end": 1033
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 18,
+    "minified": 0,
+    "sample": [
+     "api/authpb/auth.pb.go",
+     "api/etcdserverpb/etcdserver.pb.go",
+     "api/etcdserverpb/gw/rpc.pb.gw.go",
+     "api/etcdserverpb/raft_internal.pb.go",
+     "api/etcdserverpb/rpc_grpc.pb.go",
+     "api/etcdserverpb/rpc.pb.go",
+     "api/membershippb/membership.pb.go",
+     "api/mvccpb/kv.pb.go",
+     "api/versionpb/version.pb.go",
+     "server/etcdserver/api/snap/snappb/snap.pb.go",
+     "server/etcdserver/api/v3election/v3electionpb/gw/v3election.pb.gw.go",
+     "server/etcdserver/api/v3election/v3electionpb/v3election_grpc.pb.go",
+     "server/etcdserver/api/v3election/v3electionpb/v3election.pb.go",
+     "server/etcdserver/api/v3lock/v3lockpb/gw/v3lock.pb.gw.go",
+     "server/etcdserver/api/v3lock/v3lockpb/v3lock_grpc.pb.go",
+     "server/etcdserver/api/v3lock/v3lockpb/v3lock.pb.go",
+     "server/lease/leasepb/lease.pb.go",
+     "server/storage/wal/walpb/record.pb.go"
+    ]
+   }
+  },
+  "health": {
+   "score": 52.7,
+   "grade": "D",
+   "size": {
+    "lines": 224134,
+    "files": 1051,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 7.6,
+     "adjusted": 7.6,
+     "lines": 17041,
+     "halfLife": 8.5,
+     "formats": [
+      "go",
+      "bash",
+      "makefile",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 54
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 48.2,
+     "adjusted": 47.9,
+     "lines": 108002,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 51.4
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 30343,
+   "mean": 28.9,
+   "files": [
+    {
+     "path": "api/etcdserverpb/rpc.pb.go",
+     "complexity": 1219,
+     "lines": 6965,
+     "bytes": 228163
+    },
+    {
+     "path": "api/etcdserverpb/gw/rpc.pb.gw.go",
+     "complexity": 636,
+     "lines": 3259,
+     "bytes": 171389
+    },
+    {
+     "path": "server/etcdserver/server.go",
+     "complexity": 407,
+     "lines": 2471,
+     "bytes": 76401
+    },
+    {
+     "path": "api/etcdserverpb/rpc_grpc.pb.go",
+     "complexity": 356,
+     "lines": 2137,
+     "bytes": 88333
+    },
+    {
+     "path": "tests/framework/e2e/cluster.go",
+     "complexity": 302,
+     "lines": 1237,
+     "bytes": 36826
+    },
+    {
+     "path": "tests/framework/integration/cluster.go",
+     "complexity": 284,
+     "lines": 1706,
+     "bytes": 51151
+    },
+    {
+     "path": "tests/integration/v3_grpc_test.go",
+     "complexity": 277,
+     "lines": 2481,
+     "bytes": 70552
+    },
+    {
+     "path": "server/etcdserver/v3_server.go",
+     "complexity": 275,
+     "lines": 1292,
+     "bytes": 39463
+    },
+    {
+     "path": "tests/integration/cache_test.go",
+     "complexity": 255,
+     "lines": 1716,
+     "bytes": 50943
+    },
+    {
+     "path": "tests/integration/clientv3/watch/watch_test.go",
+     "complexity": 249,
+     "lines": 1317,
+     "bytes": 38893
+    }
+   ]
+  },
+  "deadCode": null
+ }
+}

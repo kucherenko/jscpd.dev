@@ -1,0 +1,1261 @@
+{
+ "name": "prometheus/prometheus",
+ "url": "https://github.com/prometheus/prometheus",
+ "appearances": [
+  {
+   "date": "2026-11-07",
+   "rank": 5,
+   "stars": 67227,
+   "starsToday": 148,
+   "headSha": "dd7aa6b0f19f4e952a55cbebd6e15458fe0ad9c6",
+   "sources": 1251,
+   "lines": 517709,
+   "clones": 5254,
+   "duplicatedLines": 86484,
+   "percentage": 16.71,
+   "codePercentage": 6.46,
+   "codeSources": 592,
+   "healthScore": 34.4,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T05:21:43.893Z",
+  "name": "prometheus/prometheus",
+  "url": "https://github.com/prometheus/prometheus",
+  "description": "The Prometheus monitoring system and time series database.",
+  "language": "Go",
+  "stars": 67227,
+  "starsToday": 148,
+  "defaultBranch": "main",
+  "headSha": "dd7aa6b0f19f4e952a55cbebd6e15458fe0ad9c6",
+  "durationMs": 2520,
+  "total": {
+   "sources": 1251,
+   "lines": 517709,
+   "tokens": 3158961,
+   "clones": 5254,
+   "duplicatedLines": 86484,
+   "duplicatedTokens": 523660,
+   "percentage": 16.71,
+   "percentageTokens": 16.58
+  },
+  "formats": [
+   {
+    "format": "go",
+    "sources": 719,
+    "lines": 401727,
+    "clones": 4553,
+    "duplicatedLines": 63541,
+    "percentage": 15.82
+   },
+   {
+    "format": "yaml",
+    "sources": 87,
+    "lines": 19687,
+    "clones": 150,
+    "duplicatedLines": 9370,
+    "percentage": 47.59
+   },
+   {
+    "format": "typescript",
+    "sources": 81,
+    "lines": 22121,
+    "clones": 135,
+    "duplicatedLines": 3499,
+    "percentage": 15.82
+   },
+   {
+    "format": "text",
+    "sources": 16,
+    "lines": 879,
+    "clones": 107,
+    "duplicatedLines": 345,
+    "percentage": 39.25
+   },
+   {
+    "format": "tsx",
+    "sources": 144,
+    "lines": 24041,
+    "clones": 82,
+    "duplicatedLines": 3406,
+    "percentage": 14.17
+   },
+   {
+    "format": "txt",
+    "sources": 14,
+    "lines": 10236,
+    "clones": 78,
+    "duplicatedLines": 2108,
+    "percentage": 20.59
+   },
+   {
+    "format": "json",
+    "sources": 37,
+    "lines": 8365,
+    "clones": 70,
+    "duplicatedLines": 3220,
+    "percentage": 38.49
+   },
+   {
+    "format": "markdown",
+    "sources": 65,
+    "lines": 20519,
+    "clones": 32,
+    "duplicatedLines": 316,
+    "percentage": 1.54
+   },
+   {
+    "format": "python",
+    "sources": 4,
+    "lines": 2961,
+    "clones": 16,
+    "duplicatedLines": 281,
+    "percentage": 9.49
+   },
+   {
+    "format": "bison",
+    "sources": 1,
+    "lines": 1419,
+    "clones": 11,
+    "duplicatedLines": 156,
+    "percentage": 10.99
+   }
+  ],
+  "topClones": [
+   {
+    "format": "yaml",
+    "lines": 3980,
+    "tokens": 16406,
+    "first": {
+     "name": "web/api/v1/testdata/openapi_3.1_golden.yaml",
+     "start": 2,
+     "end": 3981
+    },
+    "others": [
+     {
+      "name": "web/api/v1/testdata/openapi_3.2_golden.yaml",
+      "start": 2,
+      "end": 3981
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "info:",
+      "    title: Prometheus API",
+      "    description: Prometheus is an Open-Source monitoring system with a dimensional data model, flexible query language, efficient time series database and mode…",
+      "    contact:",
+      "        name: Prometheus Community",
+      "        url: https://prometheus.io/community/",
+      "    version: 0.0.1-undefined",
+      "servers:",
+      "    - url: /api/v1",
+      "paths:"
+     ],
+     "total": 3980
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "yaml",
+    "lines": 2436,
+    "tokens": 8606,
+    "first": {
+     "name": "web/api/v1/testdata/openapi_3.1_golden.yaml",
+     "start": 3981,
+     "end": 6416
+    },
+    "others": [
+     {
+      "name": "web/api/v1/testdata/openapi_3.2_golden.yaml",
+      "start": 4019,
+      "end": 6454
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "/features:",
+      "    get:",
+      "        tags:",
+      "            - features",
+      "        summary: Get features",
+      "        operationId: get-features",
+      "        responses:",
+      "            \"200\":",
+      "                description: Feature flags retrieved successfully.",
+      "                content:"
+     ],
+     "total": 2436
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "tsx",
+    "lines": 70,
+    "tokens": 601,
+    "first": {
+     "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+     "start": 67,
+     "end": 136
+    },
+    "others": [
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 137,
+      "end": 206
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 207,
+      "end": 276
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 277,
+      "end": 346
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 347,
+      "end": 416
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 417,
+      "end": 486
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 697,
+      "end": 766
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 767,
+      "end": 836
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 986,
+      "end": 1055
+     }
+    ],
+    "copies": 15,
+    "excerpt": {
+     "lines": [
+      "acos: (",
+      "  <>",
+      "    <p>The trigonometric functions work in radians. They ignore histogram samples in the input vector.</p>",
+      "",
+      "    <ul>",
+      "      <li>",
+      "        <code>acos(v instant-vector)</code>: calculates the arccosine of all float samples in <code>v</code> (",
+      "        <a href=\"https://pkg.go.dev/math#Acos\">special cases</a>).",
+      "      </li>",
+      "      <li>"
+     ],
+     "total": 70
+    },
+    "kind": "code"
+   },
+   {
+    "format": "tsx",
+    "lines": 109,
+    "tokens": 535,
+    "first": {
+     "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+     "start": 487,
+     "end": 595
+    },
+    "others": [
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 837,
+      "end": 945
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 1167,
+      "end": 1275
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 2041,
+      "end": 2149
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 2191,
+      "end": 2299
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 2321,
+      "end": 2429
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 2451,
+      "end": 2559
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 2666,
+      "end": 2774
+     },
+     {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 2775,
+      "end": 2883
+     }
+    ],
+    "copies": 16,
+    "kind": "code"
+   },
+   {
+    "format": "txt",
+    "lines": 552,
+    "tokens": 5737,
+    "first": {
+     "name": "model/textparse/testdata/alltypes.237mfs.nometa.prom.txt",
+     "start": 249,
+     "end": 800
+    },
+    "others": [
+     {
+      "name": "model/textparse/testdata/alltypes.237mfs.prom.txt",
+      "start": 419,
+      "end": 970
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "txt",
+    "lines": 506,
+    "tokens": 5282,
+    "first": {
+     "name": "model/textparse/testdata/alltypes.237mfs.nometa.prom.txt",
+     "start": 883,
+     "end": 1388
+    },
+    "others": [
+     {
+      "name": "model/textparse/testdata/alltypes.237mfs.prom.txt",
+      "start": 1057,
+      "end": 1562
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 536,
+    "tokens": 2934,
+    "first": {
+     "name": "prompb/io/prometheus/write/v2/types.pb.go",
+     "start": 2542,
+     "end": 3077
+    },
+    "others": [
+     {
+      "name": "prompb/types.pb.go",
+      "start": 2803,
+      "end": 3338
+     }
+    ],
+    "copies": 2,
+    "kind": "generated"
+   },
+   {
+    "format": "text",
+    "lines": 61,
+    "tokens": 241,
+    "first": {
+     "name": "tsdb/docs/format/chunks.md",
+     "start": 221,
+     "end": 281
+    },
+    "others": [
+     {
+      "name": "tsdb/docs/format/chunks.md",
+      "start": 365,
+      "end": 371
+     },
+     {
+      "name": "tsdb/docs/format/index.md",
+      "start": 61,
+      "end": 71
+     },
+     {
+      "name": "tsdb/docs/format/index.md",
+      "start": 79,
+      "end": 92
+     },
+     {
+      "name": "tsdb/docs/format/index.md",
+      "start": 230,
+      "end": 240
+     },
+     {
+      "name": "tsdb/docs/format/memory_snapshot.md",
+      "start": 52,
+      "end": 62
+     },
+     {
+      "name": "tsdb/docs/format/memory_snapshot.md",
+      "start": 66,
+      "end": 74
+     },
+     {
+      "name": "tsdb/docs/format/wal.md",
+      "start": 81,
+      "end": 92
+     },
+     {
+      "name": "tsdb/docs/format/wal.md",
+      "start": 102,
+      "end": 111
+     }
+    ],
+    "copies": 12,
+    "kind": "docs"
+   },
+   {
+    "format": "go",
+    "lines": 24,
+    "tokens": 118,
+    "first": {
+     "name": "config/config_test.go",
+     "start": 465,
+     "end": 488
+    },
+    "others": [
+     {
+      "name": "config/config_test.go",
+      "start": 569,
+      "end": 592
+     },
+     {
+      "name": "config/config_test.go",
+      "start": 661,
+      "end": 684
+     },
+     {
+      "name": "config/config_test.go",
+      "start": 697,
+      "end": 720
+     },
+     {
+      "name": "config/config_test.go",
+      "start": 741,
+      "end": 764
+     },
+     {
+      "name": "config/config_test.go",
+      "start": 782,
+      "end": 805
+     },
+     {
+      "name": "config/config_test.go",
+      "start": 830,
+      "end": 853
+     },
+     {
+      "name": "config/config_test.go",
+      "start": 868,
+      "end": 891
+     },
+     {
+      "name": "config/config_test.go",
+      "start": 909,
+      "end": 932
+     }
+    ],
+    "copies": 23,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 24,
+    "tokens": 125,
+    "first": {
+     "name": "prompb/io/prometheus/write/v2/types.pb.go",
+     "start": 1776,
+     "end": 1799
+    },
+    "others": [
+     {
+      "name": "prompb/io/prometheus/write/v2/types.pb.go",
+      "start": 1893,
+      "end": 1916
+     },
+     {
+      "name": "prompb/io/prometheus/write/v2/types.pb.go",
+      "start": 2155,
+      "end": 2178
+     },
+     {
+      "name": "prompb/io/prometheus/write/v2/types.pb.go",
+      "start": 2312,
+      "end": 2335
+     },
+     {
+      "name": "prompb/io/prometheus/write/v2/types.pb.go",
+      "start": 2412,
+      "end": 2435
+     },
+     {
+      "name": "prompb/io/prometheus/write/v2/types.pb.go",
+      "start": 2520,
+      "end": 2543
+     },
+     {
+      "name": "prompb/io/prometheus/write/v2/types.pb.go",
+      "start": 3119,
+      "end": 3142
+     },
+     {
+      "name": "prompb/types.pb.go",
+      "start": 2419,
+      "end": 2442
+     },
+     {
+      "name": "prompb/types.pb.go",
+      "start": 2666,
+      "end": 2689
+     }
+    ],
+    "copies": 17,
+    "kind": "generated"
+   }
+  ],
+  "code": {
+   "sources": 592,
+   "lines": 193947,
+   "tokens": 1008456,
+   "clones": 725,
+   "duplicatedLines": 12533,
+   "duplicatedTokens": 75682,
+   "percentage": 6.46,
+   "percentageTokens": 7.5,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 402,
+     "lines": 158251,
+     "clones": 612,
+     "duplicatedLines": 8527,
+     "percentage": 5.39
+    },
+    {
+     "format": "tsx",
+     "sources": 104,
+     "lines": 20030,
+     "clones": 77,
+     "duplicatedLines": 3337,
+     "percentage": 16.66
+    },
+    {
+     "format": "typescript",
+     "sources": 59,
+     "lines": 11440,
+     "clones": 19,
+     "duplicatedLines": 371,
+     "percentage": 3.24
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 2330,
+     "clones": 16,
+     "duplicatedLines": 281,
+     "percentage": 12.06
+    },
+    {
+     "format": "javascript",
+     "sources": 9,
+     "lines": 824,
+     "clones": 1,
+     "duplicatedLines": 17,
+     "percentage": 2.06
+    },
+    {
+     "format": "bash",
+     "sources": 16,
+     "lines": 1072,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "tsx",
+     "lines": 70,
+     "tokens": 601,
+     "first": {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 67,
+      "end": 136
+     },
+     "others": [
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 137,
+       "end": 206
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 207,
+       "end": 276
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 277,
+       "end": 346
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 347,
+       "end": 416
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 417,
+       "end": 486
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 697,
+       "end": 766
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 767,
+       "end": 836
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 986,
+       "end": 1055
+      }
+     ],
+     "copies": 15,
+     "excerpt": {
+      "lines": [
+       "acos: (",
+       "  <>",
+       "    <p>The trigonometric functions work in radians. They ignore histogram samples in the input vector.</p>",
+       "",
+       "    <ul>",
+       "      <li>",
+       "        <code>acos(v instant-vector)</code>: calculates the arccosine of all float samples in <code>v</code> (",
+       "        <a href=\"https://pkg.go.dev/math#Acos\">special cases</a>).",
+       "      </li>",
+       "      <li>"
+      ],
+      "total": 70
+     },
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 109,
+     "tokens": 535,
+     "first": {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 487,
+      "end": 595
+     },
+     "others": [
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 837,
+       "end": 945
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 1167,
+       "end": 1275
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2041,
+       "end": 2149
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2191,
+       "end": 2299
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2321,
+       "end": 2429
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2451,
+       "end": 2559
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2666,
+       "end": 2774
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2775,
+       "end": 2883
+      }
+     ],
+     "copies": 16,
+     "excerpt": {
+      "lines": [
+       "avg_over_time: (",
+       "  <>",
+       "    <p>",
+       "      The following functions allow aggregating each series of a given range vector over time and return an instant",
+       "      vector with per-series aggregation results:",
+       "    </p>",
+       "",
+       "    <ul>",
+       "      <li>",
+       "        <code>avg_over_time(range-vector)</code>: the average value of all float or histogram samples in the specified"
+      ],
+      "total": 109
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 38,
+     "tokens": 278,
+     "first": {
+      "name": "discovery/aws/ecs.go",
+      "start": 276,
+      "end": 313
+     },
+     "others": [
+      {
+       "name": "discovery/aws/elasticache.go",
+       "start": 331,
+       "end": 368
+      },
+      {
+       "name": "discovery/aws/msk.go",
+       "start": 242,
+       "end": 279
+      },
+      {
+       "name": "discovery/aws/rds.go",
+       "start": 356,
+       "end": 393
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "d.region, err = loadRegion(ctx, d.cfg.Region)",
+       "if err != nil {",
+       "    return err",
+       "}",
+       "",
+       "// Build the AWS config with the resolved region.",
+       "var configOptions []func(*awsConfig.LoadOptions) error",
+       "configOptions = append(configOptions, awsConfig.WithRegion(d.region))",
+       "configOptions = append(configOptions, awsConfig.WithHTTPClient(client))",
+       ""
+      ],
+      "total": 38
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 27,
+     "tokens": 106,
+     "first": {
+      "name": "prompb/io/prometheus/client/decoder.go",
+      "start": 345,
+      "end": 371
+     },
+     "others": [
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 376,
+       "end": 402
+      },
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 412,
+       "end": 438
+      },
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 448,
+       "end": 474
+      },
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 484,
+       "end": 510
+      },
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 539,
+       "end": 565
+      },
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 710,
+       "end": 736
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 22,
+     "tokens": 103,
+     "first": {
+      "name": "discovery/digitalocean/digitalocean.go",
+      "start": 115,
+      "end": 136
+     },
+     "others": [
+      {
+       "name": "discovery/eureka/eureka.go",
+       "start": 86,
+       "end": 106
+      },
+      {
+       "name": "discovery/http/http.go",
+       "start": 67,
+       "end": 87
+      },
+      {
+       "name": "discovery/nomad/nomad.go",
+       "start": 82,
+       "end": 102
+      },
+      {
+       "name": "discovery/puppetdb/puppetdb.go",
+       "start": 91,
+       "end": 111
+      },
+      {
+       "name": "discovery/uyuni/uyuni.go",
+       "start": 123,
+       "end": 143
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 12,
+     "tokens": 55,
+     "first": {
+      "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+      "start": 1102,
+      "end": 1113
+     },
+     "others": [
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 1134,
+       "end": 1145
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 1590,
+       "end": 1601
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 1898,
+       "end": 1909
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2300,
+       "end": 2311
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2430,
+       "end": 2441
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 2954,
+       "end": 2965
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 3214,
+       "end": 3225
+      },
+      {
+       "name": "web/ui/mantine-ui/src/promql/functionDocs.tsx",
+       "start": 3272,
+       "end": 3283
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 60,
+     "tokens": 381,
+     "first": {
+      "name": "tsdb/chunkenc/float_histogram.go",
+      "start": 235,
+      "end": 294
+     },
+     "others": [
+      {
+       "name": "tsdb/chunkenc/float_histogram_st.go",
+       "start": 204,
+       "end": 263
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 12,
+     "tokens": 62,
+     "first": {
+      "name": "discovery/dns/dns.go",
+      "start": 156,
+      "end": 167
+     },
+     "others": [
+      {
+       "name": "discovery/eureka/eureka.go",
+       "start": 145,
+       "end": 155
+      },
+      {
+       "name": "discovery/gce/gce.go",
+       "start": 171,
+       "end": 181
+      },
+      {
+       "name": "discovery/linode/linode.go",
+       "start": 173,
+       "end": 183
+      },
+      {
+       "name": "discovery/moby/dockerswarm.go",
+       "start": 184,
+       "end": 194
+      },
+      {
+       "name": "discovery/puppetdb/puppetdb.go",
+       "start": 175,
+       "end": 185
+      },
+      {
+       "name": "discovery/vultr/vultr.go",
+       "start": 142,
+       "end": 152
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 58,
+     "tokens": 352,
+     "first": {
+      "name": "web/ui/mantine-ui/src/pages/query/HistogramChart.tsx",
+      "start": 30,
+      "end": 87
+     },
+     "others": [
+      {
+       "name": "web/ui/react-app/src/pages/graph/HistogramChart.tsx",
+       "start": 26,
+       "end": 82
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 28,
+     "tokens": 113,
+     "first": {
+      "name": "prompb/io/prometheus/client/decoder.go",
+      "start": 216,
+      "end": 243
+     },
+     "others": [
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 251,
+       "end": 278
+      },
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 659,
+       "end": 686
+      },
+      {
+       "name": "prompb/io/prometheus/client/decoder.go",
+       "start": 741,
+       "end": 768
+      }
+     ],
+     "copies": 4,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 9,
+    "minified": 0,
+    "sample": [
+     "discovery/xds/kuma_mads.pb.go",
+     "model/textparse/openmetrics2lex.l.go",
+     "model/textparse/openmetricslex.l.go",
+     "model/textparse/promlex.l.go",
+     "prompb/io/prometheus/client/metrics.pb.go",
+     "prompb/io/prometheus/write/v2/types.pb.go",
+     "prompb/remote.pb.go",
+     "prompb/types.pb.go",
+     "promql/parser/generated_parser.y.go"
+    ]
+   }
+  },
+  "health": {
+   "score": 34.4,
+   "grade": "E",
+   "size": {
+    "lines": 454687,
+    "files": 978,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 15.6,
+     "adjusted": 15.5,
+     "lines": 70906,
+     "halfLife": 8.5,
+     "formats": [
+      "go",
+      "tsx",
+      "typescript",
+      "python",
+      "bison",
+      "javascript",
+      "bash",
+      "makefile",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 28.2
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 1,
+     "adjusted": 1.1,
+     "lines": 497,
+     "halfLife": 7.5,
+     "coverage": 11.1,
+     "weight": 0.111,
+     "score": 90.6
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 70.4,
+     "adjusted": 70.2,
+     "lines": 320022,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 37.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 52781,
+   "mean": 54,
+   "files": [
+    {
+     "path": "promql/engine.go",
+     "complexity": 1161,
+     "lines": 5686,
+     "bytes": 199033
+    },
+    {
+     "path": "prompb/types.pb.go",
+     "complexity": 1109,
+     "lines": 4528,
+     "bytes": 112626
+    },
+    {
+     "path": "prompb/io/prometheus/client/metrics.pb.go",
+     "complexity": 1074,
+     "lines": 4299,
+     "bytes": 105788
+    },
+    {
+     "path": "scrape/scrape_test.go",
+     "complexity": 1051,
+     "lines": 9591,
+     "bytes": 311285
+    },
+    {
+     "path": "prompb/io/prometheus/write/v2/types.pb.go",
+     "complexity": 773,
+     "lines": 3293,
+     "bytes": 88252
+    },
+    {
+     "path": "tsdb/db_append_v2_test.go",
+     "complexity": 726,
+     "lines": 7884,
+     "bytes": 271800
+    },
+    {
+     "path": "promql/functions.go",
+     "complexity": 720,
+     "lines": 3273,
+     "bytes": 119471
+    },
+    {
+     "path": "tsdb/head_test.go",
+     "complexity": 702,
+     "lines": 6925,
+     "bytes": 248524
+    },
+    {
+     "path": "tsdb/db_test.go",
+     "complexity": 542,
+     "lines": 5523,
+     "bytes": 214050
+    },
+    {
+     "path": "web/api/v1/api.go",
+     "complexity": 528,
+     "lines": 3015,
+     "bytes": 97816
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.99,
+   "findings": 40,
+   "files": 268,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 4
+    },
+    {
+     "category": "unused-export",
+     "count": 4
+    },
+    {
+     "category": "unused-import",
+     "count": 32
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "web/ui/module/lezer-promql/src/tokens.js",
+     "name": "",
+     "line": 1,
+     "lines": 166
+    },
+    {
+     "category": "unused-file",
+     "path": "web/ui/react-app/config-overrides.js",
+     "name": "",
+     "line": 1,
+     "lines": 121
+    },
+    {
+     "category": "unused-file",
+     "path": "web/ui/mantine-ui/src/api/responseTypes/selfMetrics.ts",
+     "name": "",
+     "line": 1,
+     "lines": 91
+    },
+    {
+     "category": "unused-export",
+     "path": "web/ui/mantine-ui/src/promql/functionMeta.ts",
+     "name": "functionDescriptions",
+     "line": 52,
+     "lines": 52
+    },
+    {
+     "category": "unused-file",
+     "path": "web/ui/react-app/jest-resolver.cjs",
+     "name": "",
+     "line": 1,
+     "lines": 27
+    },
+    {
+     "category": "unused-export",
+     "path": "web/ui/mantine-ui/src/styles.ts",
+     "name": "themeSwitcherIconStyle",
+     "line": 11,
+     "lines": 5
+    },
+    {
+     "category": "unused-export",
+     "path": "web/ui/mantine-ui/src/state/serviceDiscoveryPageSlice.ts",
+     "name": "localStorageKeyTargetHealthFilter",
+     "line": 5,
+     "lines": 2
+    },
+    {
+     "category": "unused-export",
+     "path": "web/ui/mantine-ui/src/state/targetsPageSlice.ts",
+     "name": "localStorageKeyTargetHealthFilter",
+     "line": 5,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "web/ui/react-app/src/Navbar.tsx",
+     "name": "React",
+     "line": 1,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "web/ui/react-app/src/Theme.tsx",
+     "name": "React",
+     "line": 1,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}
