@@ -1,0 +1,505 @@
+{
+ "name": "sherlock-project/sherlock",
+ "url": "https://github.com/sherlock-project/sherlock",
+ "appearances": [
+  {
+   "date": "2026-11-08",
+   "rank": 6,
+   "stars": 100967,
+   "starsToday": 1766,
+   "headSha": "c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+   "sources": 47,
+   "lines": 9968,
+   "clones": 8,
+   "duplicatedLines": 90,
+   "percentage": 0.9,
+   "codePercentage": null,
+   "codeSources": 9,
+   "healthScore": 76.9,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T05:21:26.124Z",
+  "name": "sherlock-project/sherlock",
+  "url": "https://github.com/sherlock-project/sherlock",
+  "description": "Hunt down social media accounts by username across social networks",
+  "language": "Python",
+  "stars": 100967,
+  "starsToday": 1766,
+  "defaultBranch": "master",
+  "headSha": "c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+  "durationMs": 1015,
+  "total": {
+   "sources": 47,
+   "lines": 9968,
+   "tokens": 40953,
+   "clones": 8,
+   "duplicatedLines": 90,
+   "duplicatedTokens": 607,
+   "percentage": 0.9,
+   "percentageTokens": 1.48
+  },
+  "formats": [
+   {
+    "format": "yaml",
+    "sources": 9,
+    "lines": 541,
+    "clones": 5,
+    "duplicatedLines": 53,
+    "percentage": 9.8
+   },
+   {
+    "format": "python",
+    "sources": 16,
+    "lines": 2168,
+    "clones": 3,
+    "duplicatedLines": 37,
+    "percentage": 1.71
+   },
+   {
+    "format": "json",
+    "sources": 5,
+    "lines": 4588,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 6,
+    "lines": 2397,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 1,
+    "lines": 68,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 3,
+    "lines": 64,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "docker",
+    "sources": 2,
+    "lines": 50,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "ini",
+    "sources": 2,
+    "lines": 49,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 2,
+    "lines": 25,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "editorconfig",
+    "sources": 1,
+    "lines": 18,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "yaml",
+    "lines": 11,
+    "tokens": 80,
+    "first": {
+     "name": ".github/ISSUE_TEMPLATE/false-negative.yml",
+     "start": 17,
+     "end": 27
+    },
+    "others": [
+     {
+      "name": ".github/ISSUE_TEMPLATE/false-positive.yml",
+      "start": 18,
+      "end": 28
+     },
+     {
+      "name": ".github/ISSUE_TEMPLATE/site-request.yml",
+      "start": 25,
+      "end": 35
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "      Reddit is returning false negatives because...",
+      "  validations:",
+      "    required: false",
+      "- type: checkboxes",
+      "  id: terms",
+      "  attributes:",
+      "    label: Code of Conduct",
+      "    description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/sherlock-project/sherlock/blob/master/docs/CODE_OF_COND…",
+      "    options:",
+      "      - label: I agree to follow this project's Code of Conduct"
+     ],
+     "total": 11
+    },
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 12,
+    "tokens": 107,
+    "first": {
+     "name": "tests/test_probes.py",
+     "start": 62,
+     "end": 73
+    },
+    "others": [
+     {
+      "name": "tests/test_probes.py",
+      "start": 84,
+      "end": 95
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "def test_likely_negatives_via_message(self, sites_info, site, random_len):",
+      "    num_attempts: int = 3",
+      "    attempted_usernames: list[str] = []",
+      "    status: QueryStatus = QueryStatus.CLAIMED",
+      "    for i in range(num_attempts):",
+      "        acceptable_types = string.ascii_letters + string.digits",
+      "        random_handle = ''.join(random.choice(acceptable_types) for _ in range (random_len))",
+      "        attempted_usernames.append(random_handle)",
+      "        status = simple_query(sites_info=sites_info, site=site, username=random_handle)",
+      "        if status is QueryStatus.AVAILABLE:"
+     ],
+     "total": 12
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "yaml",
+    "lines": 12,
+    "tokens": 80,
+    "first": {
+     "name": ".github/ISSUE_TEMPLATE/false-negative.yml",
+     "start": 4,
+     "end": 15
+    },
+    "others": [
+     {
+      "name": ".github/ISSUE_TEMPLATE/false-positive.yml",
+      "start": 4,
+      "end": 15
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "labels: [\"false negative\"]",
+      "body:",
+      "  - type: markdown",
+      "    attributes:",
+      "      value: |",
+      "        Please include the site name in the title of your issue.",
+      "        Submit **one site per report** for faster resolution. If you have multiple sites in the same report, it often takes longer to fix.",
+      "  - type: textarea",
+      "    id: additional-info",
+      "    attributes:"
+     ],
+     "total": 12
+    },
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 11,
+    "tokens": 78,
+    "first": {
+     "name": ".github/ISSUE_TEMPLATE/bug-report.yml",
+     "start": 61,
+     "end": 71
+    },
+    "others": [
+     {
+      "name": ".github/ISSUE_TEMPLATE/false-negative.yml",
+      "start": 17,
+      "end": 27
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "yaml",
+    "lines": 8,
+    "tokens": 72,
+    "first": {
+     "name": ".github/ISSUE_TEMPLATE/bug-report.yml",
+     "start": 64,
+     "end": 71
+    },
+    "others": [
+     {
+      "name": ".github/ISSUE_TEMPLATE/feature-request.yml",
+      "start": 17,
+      "end": 24
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 10,
+    "tokens": 56,
+    "first": {
+     "name": "tests/test_validate_targets.py",
+     "start": 38,
+     "end": 47
+    },
+    "others": [
+     {
+      "name": "tests/test_validate_targets.py",
+      "start": 61,
+      "end": 70
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 15,
+    "tokens": 54,
+    "first": {
+     "name": "sherlock_project/notify.py",
+     "start": 45,
+     "end": 59
+    },
+    "others": [
+     {
+      "name": "sherlock_project/notify.py",
+      "start": 81,
+      "end": 95
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 9,
+   "lines": 1745,
+   "tokens": 7342,
+   "clones": 1,
+   "duplicatedLines": 15,
+   "duplicatedTokens": 54,
+   "percentage": 0.86,
+   "percentageTokens": 0.74,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 8,
+     "lines": 1731,
+     "clones": 1,
+     "duplicatedLines": 15,
+     "percentage": 0.87
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 14,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 54,
+     "first": {
+      "name": "sherlock_project/notify.py",
+      "start": 45,
+      "end": 59
+     },
+     "others": [
+      {
+       "name": "sherlock_project/notify.py",
+       "start": 81,
+       "end": 95
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "any queries are performed.  This method will typically be",
+       "overridden by higher level classes that will inherit from it.",
+       "",
+       "Keyword Arguments:",
+       "self                   -- This object.",
+       "message                -- Object that is used to give context to start",
+       "                          of query.",
+       "                          Default is None.",
+       "",
+       "Return Value:"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 76.9,
+   "grade": "B",
+   "size": {
+    "lines": 2232,
+    "files": 19,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.7,
+     "adjusted": 2.5,
+     "lines": 37,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "docker",
+      "bash"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 81.4
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0,
+     "adjusted": 1.5,
+     "lines": 0,
+     "halfLife": 7.5,
+     "coverage": 97.5,
+     "weight": 0.975,
+     "score": 87.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 41.8,
+     "adjusted": 31.9,
+     "lines": 934,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 64.2
+    }
+   ]
+  },
+  "complexity": {
+   "total": 284,
+   "mean": 14.9,
+   "files": [
+    {
+     "path": "sherlock_project/sherlock.py",
+     "complexity": 125,
+     "lines": 934,
+     "bytes": 34664
+    },
+    {
+     "path": "sherlock_project/sites.py",
+     "complexity": 31,
+     "lines": 258,
+     "bytes": 10151
+    },
+    {
+     "path": "sherlock_project/notify.py",
+     "complexity": 23,
+     "lines": 282,
+     "bytes": 9141
+    },
+    {
+     "path": "tests/test_validate_targets.py",
+     "complexity": 18,
+     "lines": 99,
+     "bytes": 4558
+    },
+    {
+     "path": "devel/summarize_site_validation.py",
+     "complexity": 17,
+     "lines": 72,
+     "bytes": 2637
+    },
+    {
+     "path": "tests/conftest.py",
+     "complexity": 13,
+     "lines": 51,
+     "bytes": 2015
+    },
+    {
+     "path": "tests/test_probes.py",
+     "complexity": 13,
+     "lines": 104,
+     "bytes": 4654
+    },
+    {
+     "path": "tests/test_ux.py",
+     "complexity": 11,
+     "lines": 43,
+     "bytes": 1809
+    },
+    {
+     "path": "tests/sherlock_interactives.py",
+     "complexity": 8,
+     "lines": 38,
+     "bytes": 1423
+    },
+    {
+     "path": "sherlock_project/result.py",
+     "complexity": 4,
+     "lines": 88,
+     "bytes": 3169
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 17,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

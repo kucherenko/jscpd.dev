@@ -1,0 +1,1114 @@
+{
+ "name": "ranxianglei/billion-context",
+ "url": "https://github.com/ranxianglei/billion-context",
+ "appearances": [
+  {
+   "date": "2026-11-08",
+   "rank": 9,
+   "stars": 4694,
+   "starsToday": 191,
+   "headSha": "354e21e23af4f5dc10166c94c47f09f1e514899d",
+   "sources": 2052,
+   "lines": 618491,
+   "clones": 8152,
+   "duplicatedLines": 100092,
+   "percentage": 16.18,
+   "codePercentage": 2.74,
+   "codeSources": 449,
+   "healthScore": 46.3,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T05:21:26.124Z",
+  "name": "ranxianglei/billion-context",
+  "url": "https://github.com/ranxianglei/billion-context",
+  "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+  "language": "TypeScript",
+  "stars": 4694,
+  "starsToday": 191,
+  "defaultBranch": "master",
+  "headSha": "354e21e23af4f5dc10166c94c47f09f1e514899d",
+  "durationMs": 4282,
+  "total": {
+   "sources": 2052,
+   "lines": 618491,
+   "tokens": 5046836,
+   "clones": 8152,
+   "duplicatedLines": 100092,
+   "duplicatedTokens": 731203,
+   "percentage": 16.18,
+   "percentageTokens": 14.49
+  },
+  "formats": [
+   {
+    "format": "typescript",
+    "sources": 1737,
+    "lines": 569062,
+    "clones": 7969,
+    "duplicatedLines": 95354,
+    "percentage": 16.76
+   },
+   {
+    "format": "json",
+    "sources": 34,
+    "lines": 7234,
+    "clones": 90,
+    "duplicatedLines": 2968,
+    "percentage": 41.03
+   },
+   {
+    "format": "yaml",
+    "sources": 42,
+    "lines": 7741,
+    "clones": 38,
+    "duplicatedLines": 752,
+    "percentage": 9.71
+   },
+   {
+    "format": "javascript",
+    "sources": 39,
+    "lines": 8411,
+    "clones": 25,
+    "duplicatedLines": 304,
+    "percentage": 3.61
+   },
+   {
+    "format": "markdown",
+    "sources": 153,
+    "lines": 21689,
+    "clones": 13,
+    "duplicatedLines": 406,
+    "percentage": 1.87
+   },
+   {
+    "format": "markup",
+    "sources": 14,
+    "lines": 1068,
+    "clones": 11,
+    "duplicatedLines": 174,
+    "percentage": 16.29
+   },
+   {
+    "format": "txt",
+    "sources": 4,
+    "lines": 243,
+    "clones": 4,
+    "duplicatedLines": 113,
+    "percentage": 46.5
+   },
+   {
+    "format": "bash",
+    "sources": 12,
+    "lines": 282,
+    "clones": 2,
+    "duplicatedLines": 21,
+    "percentage": 7.45
+   },
+   {
+    "format": "python",
+    "sources": 2,
+    "lines": 2143,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "css",
+    "sources": 1,
+    "lines": 281,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "tests/compaction-trigger-finality.test.ts",
+     "start": 137,
+     "end": 146
+    },
+    "others": [
+     {
+      "name": "tests/e2e-issue3450-stated-counts.test.ts",
+      "start": 167,
+      "end": 176
+     },
+     {
+      "name": "tests/e2e-issue3450-stated-counts.test.ts",
+      "start": 246,
+      "end": 255
+     },
+     {
+      "name": "tests/e2e-issue3900-overflow-teaches.test.ts",
+      "start": 127,
+      "end": 136
+     },
+     {
+      "name": "tests/e2e-issue3900-overflow-teaches.test.ts",
+      "start": 172,
+      "end": 181
+     },
+     {
+      "name": "tests/e2e-overflow-selfheal.test.ts",
+      "start": 185,
+      "end": 194
+     },
+     {
+      "name": "tests/e2e-overflow-selfheal.test.ts",
+      "start": 261,
+      "end": 270
+     },
+     {
+      "name": "tests/e2e-overflow-selfheal.test.ts",
+      "start": 340,
+      "end": 349
+     },
+     {
+      "name": "tests/e2e/e2e-image-billing.test.ts",
+      "start": 408,
+      "end": 417
+     }
+    ],
+    "copies": 53,
+    "excerpt": {
+     "lines": [
+      "        assert.ok(bodies[bodies.length - 1].includes(\"Context limit reached\"), \"nudge still injected on a normal request\");",
+      "    } finally {",
+      "        proxy.close();",
+      "        proxy.closeIdleConnections?.();",
+      "        await once(proxy, \"close\");",
+      "        upstream.close();",
+      "        upstream.closeIdleConnections?.();",
+      "        await once(upstream, \"close\");",
+      "    }",
+      "});"
+     ],
+     "total": 10
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 118,
+    "first": {
+     "name": "tests/acp-status-estimator.test.ts",
+     "start": 9,
+     "end": 20
+    },
+    "others": [
+     {
+      "name": "tests/compress-credit.test.ts",
+      "start": 21,
+      "end": 32
+     },
+     {
+      "name": "tests/compress-fingerprint-refold.test.ts",
+      "start": 25,
+      "end": 36
+     },
+     {
+      "name": "tests/compress-observability.test.ts",
+      "start": 22,
+      "end": 33
+     },
+     {
+      "name": "tests/compress-reject-reasons.test.ts",
+      "start": 19,
+      "end": 30
+     },
+     {
+      "name": "tests/compress-span-hint.test.ts",
+      "start": 28,
+      "end": 39
+     },
+     {
+      "name": "tests/compress-success-tail.test.ts",
+      "start": 22,
+      "end": 33
+     },
+     {
+      "name": "tests/fix-1124-compress-receipt.test.ts",
+      "start": 25,
+      "end": 36
+     },
+     {
+      "name": "tests/fix-stream.test.ts",
+      "start": 23,
+      "end": 34
+     }
+    ],
+    "copies": 23,
+    "excerpt": {
+     "lines": [
+      "id: `test-${Math.random().toString(36).slice(2)}`,",
+      "meta: {},",
+      "stats: { requests: 0, tokensSaved: 0, inputTokens: 0, cachedTokens: 0, outputTokens: 0, cacheSamples: 0, lastInputTokens: 0, compressCreditTokens: 0, contextTo…",
+      "metadata: {},",
+      "state: createInitialState(),",
+      "createdAt: Date.now(),",
+      "lastSeen: Date.now(),",
+      "blockContents: new Map(),",
+      "inFlight: 0,",
+      "persisted: false,"
+     ],
+     "total": 12
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 164,
+    "tokens": 2413,
+    "first": {
+     "name": "CONFIGURATION.md",
+     "start": 1845,
+     "end": 2008
+    },
+    "others": [
+     {
+      "name": "CONFIGURATION.zh-CN.md",
+      "start": 1822,
+      "end": 1985
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "| Env var | Config key | Default |",
+      "|---------|------------|--------|",
+      "| `ACP_AUTO_RESTART_ON_UPDATE` | `autoRestartOnUpdate` | false |",
+      "| `ACP_AUTO_UPDATE` | `autoUpdate` | true |",
+      "| `ACP_COMPRESS_NUDGE` | `compress.injectNudge` | true |",
+      "| `ACP_COMPRESS_PROTOCOL` | `diagnostics.compressProtocol` | \"tools\" |",
+      "| `ACP_COMPRESS_TOOL` | `compress.injectTool` | true |",
+      "| `ACP_COUNT_TOKENS_PASSTHROUGH` | `diagnostics.countTokensPassthrough` | false |",
+      "| `ACP_DEBUG` | `debug` | false |",
+      "| `ACP_DUMP_BODY` | `diagnostics.dumpBody` | false |"
+     ],
+     "total": 164
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "yaml",
+    "lines": 34,
+    "tokens": 265,
+    "first": {
+     "name": ".github/workflows/ci-e2e-codex-persona.yml",
+     "start": 20,
+     "end": 53
+    },
+    "others": [
+     {
+      "name": ".github/workflows/ci-e2e-dsh-native.yml",
+      "start": 20,
+      "end": 53
+     },
+     {
+      "name": ".github/workflows/ci-e2e-dsh.yml",
+      "start": 32,
+      "end": 65
+     },
+     {
+      "name": ".github/workflows/ci-e2e-fake.yml",
+      "start": 20,
+      "end": 53
+     },
+     {
+      "name": ".github/workflows/ci-e2e-native-opencode.yml",
+      "start": 20,
+      "end": 53
+     },
+     {
+      "name": ".github/workflows/ci-e2e-native.yml",
+      "start": 20,
+      "end": 53
+     },
+     {
+      "name": ".github/workflows/ci-e2e-pi-ws.yml",
+      "start": 20,
+      "end": 53
+     },
+     {
+      "name": ".github/workflows/ci-e2e.yml",
+      "start": 45,
+      "end": 78
+     },
+     {
+      "name": ".github/workflows/ci-image.yml",
+      "start": 30,
+      "end": 63
+     }
+    ],
+    "copies": 10,
+    "kind": "data"
+   },
+   {
+    "format": "txt",
+    "lines": 48,
+    "tokens": 1114,
+    "first": {
+     "name": "kernel/tests/fixtures/prompt-function-default.txt",
+     "start": 1,
+     "end": 48
+    },
+    "others": [
+     {
+      "name": "kernel/tests/fixtures/prompt-hybrid-default.txt",
+      "start": 1,
+      "end": 48
+     },
+     {
+      "name": "kernel/tests/fixtures/prompt-text-default.txt",
+      "start": 1,
+      "end": 48
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 95,
+    "tokens": 740,
+    "first": {
+     "name": "tests/issue2419-dsh-skill-catalog.test.ts",
+     "start": 34,
+     "end": 128
+    },
+    "others": [
+     {
+      "name": "tests/issue2446-dsh-mcp-catalog.test.ts",
+      "start": 50,
+      "end": 144
+     },
+     {
+      "name": "tests/issue2447-dsh-workspace-instructions.test.ts",
+      "start": 40,
+      "end": 134
+     },
+     {
+      "name": "tests/issue2481-dsh-runtime-context.test.ts",
+      "start": 47,
+      "end": 141
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 13,
+    "tokens": 73,
+    "first": {
+     "name": "tests/claude-bridge-e2e.test.ts",
+     "start": 1,
+     "end": 13
+    },
+    "others": [
+     {
+      "name": "tests/codex-compact-e2e.test.ts",
+      "start": 1,
+      "end": 13
+     },
+     {
+      "name": "tests/compaction-trigger-finality.test.ts",
+      "start": 1,
+      "end": 13
+     },
+     {
+      "name": "tests/fix-488-multimodal.test.ts",
+      "start": 1,
+      "end": 13
+     },
+     {
+      "name": "tests/fork-nudge-trigger.test.ts",
+      "start": 1,
+      "end": 13
+     },
+     {
+      "name": "tests/issue1492-stale-estimate-view.test.ts",
+      "start": 1,
+      "end": 13
+     },
+     {
+      "name": "tests/issue1839-ghost-denominator.test.ts",
+      "start": 1,
+      "end": 35
+     },
+     {
+      "name": "tests/issue1841-preflight-futility.test.ts",
+      "start": 1,
+      "end": 13
+     },
+     {
+      "name": "tests/issue1843-learned-image-cost.test.ts",
+      "start": 1,
+      "end": 13
+     }
+    ],
+    "copies": 29,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 110,
+    "tokens": 1780,
+    "first": {
+     "name": "tests/golden-storage-drive.ts",
+     "start": 217,
+     "end": 326
+    },
+    "others": [
+     {
+      "name": "tests/identity-proof.test.ts",
+      "start": 211,
+      "end": 316
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 11,
+    "tokens": 51,
+    "first": {
+     "name": "tests/e2e-issue3450-stated-counts.test.ts",
+     "start": 168,
+     "end": 178
+    },
+    "others": [
+     {
+      "name": "tests/e2e-issue3900-overflow-teaches.test.ts",
+      "start": 128,
+      "end": 138
+     },
+     {
+      "name": "tests/e2e-overflow-selfheal.test.ts",
+      "start": 186,
+      "end": 196
+     },
+     {
+      "name": "tests/e2e-overflow-selfheal.test.ts",
+      "start": 262,
+      "end": 272
+     },
+     {
+      "name": "tests/e2e/e2e-image-billing.test.ts",
+      "start": 409,
+      "end": 419
+     },
+     {
+      "name": "tests/fake-completion.test.ts",
+      "start": 438,
+      "end": 448
+     },
+     {
+      "name": "tests/fallback-window-floor.test.ts",
+      "start": 125,
+      "end": 135
+     },
+     {
+      "name": "tests/fix-1001-history-rewrite.test.ts",
+      "start": 236,
+      "end": 250
+     },
+     {
+      "name": "tests/issue1933-preflight-calibration.test.ts",
+      "start": 330,
+      "end": 340
+     }
+    ],
+    "copies": 34,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 52,
+    "tokens": 1502,
+    "first": {
+     "name": "paper/model-driven-incremental-hierarchical-compression-training-free-multi-generational-context-management-for-long-lived-coding-agents.md",
+     "start": 332,
+     "end": 383
+    },
+    "others": [
+     {
+      "name": "paper/模型驱动的分层增量压缩-免训练多代上下文管理.md",
+      "start": 333,
+      "end": 386
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 449,
+   "lines": 203630,
+   "tokens": 1201511,
+   "clones": 445,
+   "duplicatedLines": 5586,
+   "duplicatedTokens": 38946,
+   "percentage": 2.74,
+   "percentageTokens": 3.24,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 411,
+     "lines": 193682,
+     "clones": 434,
+     "duplicatedLines": 5435,
+     "percentage": 2.81
+    },
+    {
+     "format": "javascript",
+     "sources": 33,
+     "lines": 7555,
+     "clones": 11,
+     "duplicatedLines": 151,
+     "percentage": 2
+    },
+    {
+     "format": "python",
+     "sources": 2,
+     "lines": 2143,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 2,
+     "lines": 217,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 33,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 64,
+     "tokens": 534,
+     "first": {
+      "name": "src/server/prepare-google.ts",
+      "start": 205,
+      "end": 268
+     },
+     "others": [
+      {
+       "name": "src/server/prepare-openai.ts",
+       "start": 322,
+       "end": 392
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "const turn = core.processTurn({ messages: renderMsgs, state: session.state, config: loopConfig, tokenCount, tokenCountSource, renderTags: renderStrategy, conte…",
+       "session.state = turn.state;",
+       "adoptContentStore(session, turn.contentStore);",
+       "// #4528: split the kernel pass from its post-processing scan passes so",
+       "// each is a bounded synchronous stretch rather than one long block.",
+       "await yieldToEventLoop();",
+       "// The fold from last turn's compress has now materialized in state —",
+       "// future usage reports are post-fold reality, drop the credit.",
+       "session.stats.compressCreditTokens = 0;",
+       "if (foldCoveredBefore !== null && !isTitleGen && msgs.length >= REWRITE_MIN_INCOMING_TOTAL) {"
+      ],
+      "total": 64
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 58,
+     "tokens": 483,
+     "first": {
+      "name": "src/server/prepare-anthropic.ts",
+      "start": 375,
+      "end": 432
+     },
+     "others": [
+      {
+       "name": "src/server/prepare-google.ts",
+       "start": 214,
+       "end": 268
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "if (foldCoveredBefore !== null && msgs.length >= REWRITE_MIN_INCOMING_TOTAL) {",
+       "    const gap = foldCoverage(foldCoveredBefore, msgs.map((m) => m.id));",
+       "    if (gap) log(\"warn\", `[${sessionId}] [acp-drift] fold coverage mismatch: ${gap.matched}/${gap.expected} covered message id(s) present in resent history — $…",
+       "}",
+       "storeEffectiveAbsorb(session, loopConfig);",
+       "storeEffectiveRules(session, config);",
+       "turn.messages = applyAbsorbView(turn.messages, session.state, loopConfig, tokenCount);",
+       "turn.messages = attachSubagentSessions(turn.messages, session);",
+       "// Drop sub-viability fragments before any consumer sees them: a tiny",
+       "// range in the list makes batched compress attempts fail atomically"
+      ],
+      "total": 58
+     },
+     "excerptSecond": {
+      "lines": [
+       "if (foldCoveredBefore !== null && !isTitleGen && msgs.length >= REWRITE_MIN_INCOMING_TOTAL) {",
+       "    const gap = foldCoverage(foldCoveredBefore, msgs.map((m) => m.id));",
+       "    if (gap) log(\"warn\", `[${sessionId}] [acp-drift] fold coverage mismatch: ${gap.matched}/${gap.expected} covered message id(s) present in resent history — $…",
+       "}",
+       "storeEffectiveAbsorb(session, loopConfig);",
+       "storeEffectiveRules(session, config);",
+       "turn.messages = applyAbsorbView(turn.messages, session.state, loopConfig, tokenCount);",
+       "turn.messages = attachSubagentSessions(turn.messages, session);",
+       "// #3204: also drop DEAD-ref-bracketing spans at this single point so",
+       "// every downstream consumer (decision prompt + directive, prose nudge,"
+      ],
+      "total": 55
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 9,
+     "tokens": 77,
+     "first": {
+      "name": "src/server/admin.ts",
+      "start": 811,
+      "end": 819
+     },
+     "others": [
+      {
+       "name": "src/server/admin.ts",
+       "start": 846,
+       "end": 854
+      },
+      {
+       "name": "src/server/admin.ts",
+       "start": 859,
+       "end": 867
+      },
+      {
+       "name": "src/server/admin.ts",
+       "start": 870,
+       "end": 878
+      },
+      {
+       "name": "src/server/admin.ts",
+       "start": 883,
+       "end": 897
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "        handlePluginRegister(body.toString(\"utf8\"), res);",
+       "        return;",
+       "    } catch (err) {",
+       "        res.writeHead(err instanceof BodyTooLargeError ? 413 : 400, { \"content-type\": \"application/json\" });",
+       "        res.end(JSON.stringify({ ok: false, error: String(err) }));",
+       "        return;",
+       "    }",
+       "}",
+       "if (req.method === \"POST\" && req.url === \"/__bili/agent-providers\") {"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "        handlePluginRuntimeInfo(body.toString(\"utf8\"), res);",
+       "        return;",
+       "    } catch (err) {",
+       "        res.writeHead(err instanceof BodyTooLargeError ? 413 : 400, { \"content-type\": \"application/json\" });",
+       "        res.end(JSON.stringify({ ok: false, error: String(err) }));",
+       "        return;",
+       "    }",
+       "}",
+       "if (req.method === \"POST\" && req.url === \"/__bili/plugin/attribution\") {"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 30,
+     "tokens": 300,
+     "first": {
+      "name": "src/server/prepare-anthropic.ts",
+      "start": 441,
+      "end": 470
+     },
+     "others": [
+      {
+       "name": "src/server/prepare-openai.ts",
+       "start": 402,
+       "end": 431
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 28,
+     "tokens": 150,
+     "first": {
+      "name": "src/agent/omp-native.ts",
+      "start": 353,
+      "end": 380
+     },
+     "others": [
+      {
+       "name": "src/agent/opencode-native.ts",
+       "start": 376,
+       "end": 404
+      },
+      {
+       "name": "src/agent/pi-native.ts",
+       "start": 251,
+       "end": 278
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 38,
+     "tokens": 299,
+     "first": {
+      "name": "src/storage/mysql.ts",
+      "start": 1835,
+      "end": 1872
+     },
+     "others": [
+      {
+       "name": "src/storage/store.ts",
+       "start": 2087,
+       "end": 2124
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 22,
+     "tokens": 293,
+     "first": {
+      "name": "src/client-config.ts",
+      "start": 2119,
+      "end": 2140
+     },
+     "others": [
+      {
+       "name": "src/client-config.ts",
+       "start": 2150,
+       "end": 2171
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 40,
+     "tokens": 267,
+     "first": {
+      "name": "src/loop/adapter-anthropic.ts",
+      "start": 21,
+      "end": 60
+     },
+     "others": [
+      {
+       "name": "src/loop/adapter-responses.ts",
+       "start": 175,
+       "end": 214
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 38,
+     "tokens": 266,
+     "first": {
+      "name": "src/kimi/native.ts",
+      "start": 41,
+      "end": 78
+     },
+     "others": [
+      {
+       "name": "src/zcode/native.ts",
+       "start": 55,
+       "end": 92
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 31,
+     "tokens": 266,
+     "first": {
+      "name": "src/plugin.ts",
+      "start": 3540,
+      "end": 3570
+     },
+     "others": [
+      {
+       "name": "src/plugin.ts",
+       "start": 4291,
+       "end": 4321
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "src/web/favicon.ts",
+     "src/zcode/json-edit.ts"
+    ]
+   }
+  },
+  "health": {
+   "score": 46.3,
+   "grade": "D",
+   "size": {
+    "lines": 579631,
+    "files": 1777,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 16.5,
+     "adjusted": 16.5,
+     "lines": 95646,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "javascript",
+      "python",
+      "powershell",
+      "bash",
+      "docker"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 26.1
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 1.2,
+     "adjusted": 1.3,
+     "lines": 7239,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 89.1
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 61.4,
+     "adjusted": 61.2,
+     "lines": 355616,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 42.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 108808,
+   "mean": 61.2,
+   "files": [
+    {
+     "path": "src/launcher.ts",
+     "complexity": 1865,
+     "lines": 7350,
+     "bytes": 395291
+    },
+    {
+     "path": "src/plugin.ts",
+     "complexity": 1850,
+     "lines": 4866,
+     "bytes": 299456
+    },
+    {
+     "path": "verif/symbolic.ts",
+     "complexity": 1779,
+     "lines": 3581,
+     "bytes": 193597
+    },
+    {
+     "path": "tests/launcher.test.ts",
+     "complexity": 1533,
+     "lines": 8532,
+     "bytes": 419509
+    },
+    {
+     "path": "src/server.ts",
+     "complexity": 1025,
+     "lines": 4687,
+     "bytes": 297963
+    },
+    {
+     "path": "src/persist.ts",
+     "complexity": 998,
+     "lines": 4384,
+     "bytes": 250789
+    },
+    {
+     "path": "src/preflight.ts",
+     "complexity": 950,
+     "lines": 3180,
+     "bytes": 205752
+    },
+    {
+     "path": "src/plugin-install.ts",
+     "complexity": 940,
+     "lines": 2670,
+     "bytes": 139568
+    },
+    {
+     "path": "src/config.ts",
+     "complexity": 879,
+     "lines": 3484,
+     "bytes": 206179
+    },
+    {
+     "path": "src/server/handle.ts",
+     "complexity": 869,
+     "lines": 3143,
+     "bytes": 233529
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 1.25,
+   "findings": 376,
+   "files": 1791,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 17
+    },
+    {
+     "category": "unused-export",
+     "count": 24
+    },
+    {
+     "category": "unused-symbol",
+     "count": 61
+    },
+    {
+     "category": "unused-import",
+     "count": 274
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "verif/symbolic.ts",
+     "name": "",
+     "line": 1,
+     "lines": 3581
+    },
+    {
+     "category": "unused-file",
+     "path": "verif/subset-guard.ts",
+     "name": "",
+     "line": 1,
+     "lines": 584
+    },
+    {
+     "category": "unused-file",
+     "path": "verif/terms.ts",
+     "name": "",
+     "line": 1,
+     "lines": 541
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/update-storage-corpus.ts",
+     "name": "",
+     "line": 1,
+     "lines": 472
+    },
+    {
+     "category": "unused-file",
+     "path": "src/persona-anchor.ts",
+     "name": "",
+     "line": 1,
+     "lines": 179
+    },
+    {
+     "category": "unused-file",
+     "path": "verif/solve.ts",
+     "name": "",
+     "line": 1,
+     "lines": 174
+    },
+    {
+     "category": "unused-file",
+     "path": "kernel/src/search/algorithms/semantic.ts",
+     "name": "",
+     "line": 1,
+     "lines": 112
+    },
+    {
+     "category": "unused-file",
+     "path": "verif/exceptions.ts",
+     "name": "",
+     "line": 1,
+     "lines": 95
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/check-dist-external-zod.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 86
+    },
+    {
+     "category": "unused-file",
+     "path": "verif/drivers/responses-ingress-driver.ts",
+     "name": "",
+     "line": 1,
+     "lines": 86
+    }
+   ]
+  }
+ }
+}
