@@ -24,8 +24,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      # The cloudflare-pages build bundles the Nitro server after prerendering
+      # 1,200 pages, and the default Node heap (about 4 GB) ran out there on
+      # 2026-11-08. The runner has 16 GB.
       - name: Build
         run: pnpm build
+        env:
+          NODE_OPTIONS: --max-old-space-size=8192
 
       # `plugins` is not passed: the directory is empty, so git never tracked it
       # and it does not exist in a checkout. jscpd 5.2.0 skipped the missing
