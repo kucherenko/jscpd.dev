@@ -25,11 +25,32 @@ const ghHeaders = {
   ...(process.env.GITHUB_TOKEN ? { authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {})
 }
 
+// github.com answers the trending page with a 5xx or a 429 now and then (a
+// 504 stopped the 2026-11-09 run), so a failed request waits and tries
+// again: 30 s, 60 s, 120 s and 240 s, then the run fails as before.
+async function fetchWithRetry(url, options, label) {
+  const waits = [30, 60, 120, 240]
+  for (let attempt = 0; ; attempt++) {
+    let res, problem
+    try {
+      res = await fetch(url, options)
+      if (res.ok) return res
+      problem = `HTTP ${res.status}`
+      if (res.status < 500 && res.status !== 429) throw new Error(`${label} ${problem}`)
+    } catch (err) {
+      if (res && res.status < 500 && res.status !== 429) throw err
+      problem = problem || err.message
+    }
+    if (attempt === waits.length) throw new Error(`${label} ${problem} after ${attempt + 1} tries`)
+    console.warn(`${label} ${problem}, trying again in ${waits[attempt]} s`)
+    await new Promise(resolve => setTimeout(resolve, waits[attempt] * 1000))
+  }
+}
+
 async function fetchTrending() {
-  const res = await fetch('https://github.com/trending?since=daily', {
+  const res = await fetchWithRetry('https://github.com/trending?since=daily', {
     headers: { 'user-agent': ghHeaders['user-agent'] }
-  })
-  if (!res.ok) throw new Error(`trending page HTTP ${res.status}`)
+  }, 'trending page')
   const html = await res.text()
   const repos = []
   // each trending entry is an <article class="Box-row">…</article>
