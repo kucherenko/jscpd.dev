@@ -1,0 +1,880 @@
+{
+ "name": "anthropics/claude-quickstarts",
+ "url": "https://github.com/anthropics/claude-quickstarts",
+ "appearances": [
+  {
+   "date": "2026-11-10",
+   "rank": 4,
+   "stars": 20124,
+   "starsToday": 551,
+   "headSha": "4a4224bdf0e9cfb3332167b69c90457403813625",
+   "sources": 642,
+   "lines": 79147,
+   "clones": 142,
+   "duplicatedLines": 3143,
+   "percentage": 3.97,
+   "codePercentage": 3.46,
+   "codeSources": 330,
+   "healthScore": 54.4,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T05:21:45.471Z",
+  "name": "anthropics/claude-quickstarts",
+  "url": "https://github.com/anthropics/claude-quickstarts",
+  "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+  "language": "Python",
+  "stars": 20124,
+  "starsToday": 551,
+  "defaultBranch": "main",
+  "headSha": "4a4224bdf0e9cfb3332167b69c90457403813625",
+  "durationMs": 1338,
+  "total": {
+   "sources": 642,
+   "lines": 79147,
+   "tokens": 533306,
+   "clones": 142,
+   "duplicatedLines": 3143,
+   "duplicatedTokens": 16351,
+   "percentage": 3.97,
+   "percentageTokens": 3.07
+  },
+  "formats": [
+   {
+    "format": "typescript",
+    "sources": 96,
+    "lines": 12563,
+    "clones": 29,
+    "duplicatedLines": 604,
+    "percentage": 4.81
+   },
+   {
+    "format": "tsx",
+    "sources": 83,
+    "lines": 13338,
+    "clones": 22,
+    "duplicatedLines": 491,
+    "percentage": 3.68
+   },
+   {
+    "format": "python",
+    "sources": 152,
+    "lines": 29256,
+    "clones": 21,
+    "duplicatedLines": 444,
+    "percentage": 1.52
+   },
+   {
+    "format": "markdown",
+    "sources": 93,
+    "lines": 10643,
+    "clones": 17,
+    "duplicatedLines": 295,
+    "percentage": 2.77
+   },
+   {
+    "format": "bash",
+    "sources": 70,
+    "lines": 2682,
+    "clones": 16,
+    "duplicatedLines": 254,
+    "percentage": 9.47
+   },
+   {
+    "format": "json",
+    "sources": 38,
+    "lines": 2108,
+    "clones": 14,
+    "duplicatedLines": 654,
+    "percentage": 31.02
+   },
+   {
+    "format": "javascript",
+    "sources": 11,
+    "lines": 1373,
+    "clones": 7,
+    "duplicatedLines": 81,
+    "percentage": 5.9
+   },
+   {
+    "format": "markup",
+    "sources": 15,
+    "lines": 852,
+    "clones": 7,
+    "duplicatedLines": 196,
+    "percentage": 23
+   },
+   {
+    "format": "docker",
+    "sources": 8,
+    "lines": 404,
+    "clones": 5,
+    "duplicatedLines": 64,
+    "percentage": 15.84
+   },
+   {
+    "format": "css",
+    "sources": 7,
+    "lines": 2072,
+    "clones": 2,
+    "duplicatedLines": 28,
+    "percentage": 1.35
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 95,
+    "tokens": 619,
+    "first": {
+     "name": "managed-agents/self-hosted-sandboxes/daytona/sandbox_runner.py",
+     "start": 1,
+     "end": 95
+    },
+    "others": [
+     {
+      "name": "managed-agents/self-hosted-sandboxes/modal/sandbox_runner.py",
+      "start": 1,
+      "end": 95
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"\"\"Runs inside the sandbox (Modal and Daytona use the same file).",
+      "",
+      "``client.beta.environments.work.worker(...).handle_item()`` is the whole runner:",
+      "it builds the per-session ``AgentToolContext`` at ``workdir`` and downloads the",
+      "agent's skills into ``{workdir}/skills/<name>/``, then runs a",
+      "``SessionToolRunner`` (heartbeat + reconcile + event stream + tool dispatch +",
+      "result posting) for the session, and force-stops the work item on exit. It",
+      "reads the same ``ANTHROPIC_*`` env vars ``ant beta:worker poll --on-work`` sets,",
+      "which the webhook injects when it creates the sandbox.",
+      ""
+     ],
+     "total": 95
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 120,
+    "tokens": 558,
+    "first": {
+     "name": "managed-agents/self-hosted-sandboxes/cloudflare-containers/src/index.ts",
+     "start": 21,
+     "end": 140
+    },
+    "others": [
+     {
+      "name": "managed-agents/self-hosted-sandboxes/cloudflare-worker/src/index.ts",
+      "start": 19,
+      "end": 138
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  ALLOW_ENVIRONMENT_KEY_IN_SANDBOX?: string;",
+      "}",
+      "",
+      "const MAX_DRAIN = 25;",
+      "// Anthropic's deliveries are a few hundred bytes. Anything near this is not",
+      "// one, and the cap bounds the work an unsigned caller can make us do.",
+      "const MAX_BODY_BYTES = 1024 * 1024;",
+      "",
+      "// These become Durable Object names and env values, so check their shape",
+      "// before use even though they come from Anthropic's API."
+     ],
+     "total": 120
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 63,
+    "tokens": 487,
+    "first": {
+     "name": "managed-agents/self-hosted-sandboxes/cloudflare-containers/src/index.ts",
+     "start": 181,
+     "end": 243
+    },
+    "others": [
+     {
+      "name": "managed-agents/self-hosted-sandboxes/cloudflare-worker/src/index.ts",
+      "start": 153,
+      "end": 215
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "      baseURL: env.ANTHROPIC_BASE_URL,",
+      "    });",
+      "  }",
+      "  spawned.push({ session_id: sessionId, work_id: work.id, created: !wasLive });",
+      "} catch (e) {",
+      "  // Skip and keep draining. The lease lapses and the next webhook reclaims.",
+      "  const detail = errDetail(e);",
+      "  console.warn(`[webhook] FAILED work=${work.id} session=${sessionId}: ${detail}`);",
+      "  spawned.push({ session_id: sessionId, work_id: work.id, error: detail });",
+      "}"
+     ],
+     "total": 63
+    },
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 130,
+    "tokens": 427,
+    "first": {
+     "name": "managed-agents/knowledge-wiki/manifest_full.json",
+     "start": 3,
+     "end": 132
+    },
+    "others": [
+     {
+      "name": "managed-agents/knowledge-wiki/manifest_standard.json",
+      "start": 3,
+      "end": 132
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "typescript",
+    "lines": 82,
+    "tokens": 382,
+    "first": {
+     "name": "managed-agents/linear/src/managed-agents-webhook.ts",
+     "start": 14,
+     "end": 95
+    },
+    "others": [
+     {
+      "name": "managed-agents/slack/src/managed-agents-webhook.ts",
+      "start": 7,
+      "end": 88
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 112,
+    "tokens": 367,
+    "first": {
+     "name": "managed-agents/knowledge-wiki/manifest_full.json",
+     "start": 3,
+     "end": 114
+    },
+    "others": [
+     {
+      "name": "managed-agents/knowledge-wiki/manifest_mini.json",
+      "start": 3,
+      "end": 114
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "json",
+    "lines": 102,
+    "tokens": 335,
+    "first": {
+     "name": "managed-agents/knowledge-wiki/manifest_full.json",
+     "start": 175,
+     "end": 276
+    },
+    "others": [
+     {
+      "name": "managed-agents/knowledge-wiki/manifest_standard.json",
+      "start": 157,
+      "end": 258
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "python",
+    "lines": 69,
+    "tokens": 315,
+    "first": {
+     "name": "browser-use-demo/browser_use_demo/tools/base.py",
+     "start": 1,
+     "end": 69
+    },
+    "others": [
+     {
+      "name": "computer-use-demo/computer_use_demo/tools/base.py",
+      "start": 1,
+      "end": 69
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 56,
+    "tokens": 314,
+    "first": {
+     "name": "managed-agents/self-hosted-sandboxes/cloudflare-containers/README.md",
+     "start": 34,
+     "end": 89
+    },
+    "others": [
+     {
+      "name": "managed-agents/self-hosted-sandboxes/cloudflare-worker/README.md",
+      "start": 25,
+      "end": 80
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "tsx",
+    "lines": 68,
+    "tokens": 281,
+    "first": {
+     "name": "customer-support-agent/components/ui/dropdown-menu.tsx",
+     "start": 133,
+     "end": 200
+    },
+    "others": [
+     {
+      "name": "financial-data-analyst/components/ui/dropdown-menu.tsx",
+      "start": 138,
+      "end": 205
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 330,
+   "lines": 49620,
+   "tokens": 274699,
+   "clones": 80,
+   "duplicatedLines": 1718,
+   "duplicatedTokens": 9392,
+   "percentage": 3.46,
+   "percentageTokens": 3.42,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 91,
+     "lines": 11728,
+     "clones": 29,
+     "duplicatedLines": 604,
+     "percentage": 5.15
+    },
+    {
+     "format": "tsx",
+     "sources": 83,
+     "lines": 13338,
+     "clones": 22,
+     "duplicatedLines": 491,
+     "percentage": 3.68
+    },
+    {
+     "format": "python",
+     "sources": 105,
+     "lines": 21106,
+     "clones": 13,
+     "duplicatedLines": 345,
+     "percentage": 1.63
+    },
+    {
+     "format": "bash",
+     "sources": 41,
+     "lines": 2091,
+     "clones": 9,
+     "duplicatedLines": 197,
+     "percentage": 9.42
+    },
+    {
+     "format": "javascript",
+     "sources": 10,
+     "lines": 1357,
+     "clones": 7,
+     "duplicatedLines": 81,
+     "percentage": 5.97
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 95,
+     "tokens": 619,
+     "first": {
+      "name": "managed-agents/self-hosted-sandboxes/daytona/sandbox_runner.py",
+      "start": 1,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "managed-agents/self-hosted-sandboxes/modal/sandbox_runner.py",
+       "start": 1,
+       "end": 95
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "\"\"\"Runs inside the sandbox (Modal and Daytona use the same file).",
+       "",
+       "``client.beta.environments.work.worker(...).handle_item()`` is the whole runner:",
+       "it builds the per-session ``AgentToolContext`` at ``workdir`` and downloads the",
+       "agent's skills into ``{workdir}/skills/<name>/``, then runs a",
+       "``SessionToolRunner`` (heartbeat + reconcile + event stream + tool dispatch +",
+       "result posting) for the session, and force-stops the work item on exit. It",
+       "reads the same ``ANTHROPIC_*`` env vars ``ant beta:worker poll --on-work`` sets,",
+       "which the webhook injects when it creates the sandbox.",
+       ""
+      ],
+      "total": 95
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 120,
+     "tokens": 558,
+     "first": {
+      "name": "managed-agents/self-hosted-sandboxes/cloudflare-containers/src/index.ts",
+      "start": 21,
+      "end": 140
+     },
+     "others": [
+      {
+       "name": "managed-agents/self-hosted-sandboxes/cloudflare-worker/src/index.ts",
+       "start": 19,
+       "end": 138
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  ALLOW_ENVIRONMENT_KEY_IN_SANDBOX?: string;",
+       "}",
+       "",
+       "const MAX_DRAIN = 25;",
+       "// Anthropic's deliveries are a few hundred bytes. Anything near this is not",
+       "// one, and the cap bounds the work an unsigned caller can make us do.",
+       "const MAX_BODY_BYTES = 1024 * 1024;",
+       "",
+       "// These become Durable Object names and env values, so check their shape",
+       "// before use even though they come from Anthropic's API."
+      ],
+      "total": 120
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 63,
+     "tokens": 487,
+     "first": {
+      "name": "managed-agents/self-hosted-sandboxes/cloudflare-containers/src/index.ts",
+      "start": 181,
+      "end": 243
+     },
+     "others": [
+      {
+       "name": "managed-agents/self-hosted-sandboxes/cloudflare-worker/src/index.ts",
+       "start": 153,
+       "end": 215
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "      baseURL: env.ANTHROPIC_BASE_URL,",
+       "    });",
+       "  }",
+       "  spawned.push({ session_id: sessionId, work_id: work.id, created: !wasLive });",
+       "} catch (e) {",
+       "  // Skip and keep draining. The lease lapses and the next webhook reclaims.",
+       "  const detail = errDetail(e);",
+       "  console.warn(`[webhook] FAILED work=${work.id} session=${sessionId}: ${detail}`);",
+       "  spawned.push({ session_id: sessionId, work_id: work.id, error: detail });",
+       "}"
+      ],
+      "total": 63
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 82,
+     "tokens": 382,
+     "first": {
+      "name": "managed-agents/linear/src/managed-agents-webhook.ts",
+      "start": 14,
+      "end": 95
+     },
+     "others": [
+      {
+       "name": "managed-agents/slack/src/managed-agents-webhook.ts",
+       "start": 7,
+       "end": 88
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 69,
+     "tokens": 315,
+     "first": {
+      "name": "browser-use-demo/browser_use_demo/tools/base.py",
+      "start": 1,
+      "end": 69
+     },
+     "others": [
+      {
+       "name": "computer-use-demo/computer_use_demo/tools/base.py",
+       "start": 1,
+       "end": 69
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 68,
+     "tokens": 281,
+     "first": {
+      "name": "customer-support-agent/components/ui/dropdown-menu.tsx",
+      "start": 133,
+      "end": 200
+     },
+     "others": [
+      {
+       "name": "financial-data-analyst/components/ui/dropdown-menu.tsx",
+       "start": 138,
+       "end": 205
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 43,
+     "tokens": 236,
+     "first": {
+      "name": "customer-support-agent/components/ui/avatar.tsx",
+      "start": 8,
+      "end": 50
+     },
+     "others": [
+      {
+       "name": "financial-data-analyst/components/ui/avatar.tsx",
+       "start": 8,
+       "end": 50
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 25,
+     "tokens": 207,
+     "first": {
+      "name": "managed-agents/linear/src/route-signature.ts",
+      "start": 22,
+      "end": 46
+     },
+     "others": [
+      {
+       "name": "managed-agents/slack/src/route-signature.ts",
+       "start": 22,
+       "end": 46
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "tsx",
+     "lines": 43,
+     "tokens": 205,
+     "first": {
+      "name": "customer-support-agent/components/ui/dropdown-menu.tsx",
+      "start": 68,
+      "end": 110
+     },
+     "others": [
+      {
+       "name": "financial-data-analyst/components/ui/dropdown-menu.tsx",
+       "start": 73,
+       "end": 115
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 11,
+     "tokens": 95,
+     "first": {
+      "name": "managed-agents/assistant-ui/app/api/sessions/[id]/confirm/route.ts",
+      "start": 26,
+      "end": 36
+     },
+     "others": [
+      {
+       "name": "managed-agents/assistant-ui/app/api/sessions/[id]/messages/route.ts",
+       "start": 18,
+       "end": 28
+      },
+      {
+       "name": "managed-agents/assistant-ui/app/api/sessions/[id]/tool-results/route.ts",
+       "start": 19,
+       "end": 29
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 54.4,
+   "grade": "D",
+   "size": {
+    "lines": 59068,
+    "files": 388,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.2,
+     "adjusted": 3.2,
+     "lines": 1881,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "tsx",
+      "typescript",
+      "bash",
+      "javascript",
+      "docker",
+      "makefile"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 77.1
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 11.4,
+     "adjusted": 11.1,
+     "lines": 6442,
+     "halfLife": 7.5,
+     "coverage": 95.9,
+     "weight": 0.959,
+     "score": 35.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 41,
+     "adjusted": 40.3,
+     "lines": 24210,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 57.2
+    }
+   ]
+  },
+  "complexity": {
+   "total": 9499,
+   "mean": 24.5,
+   "files": [
+    {
+     "path": "managed-agents/knowledge-wiki/utilities.py",
+     "complexity": 708,
+     "lines": 2979,
+     "bytes": 146196
+    },
+    {
+     "path": "browser-use-demo/browser_use_demo/tools/browser.py",
+     "complexity": 191,
+     "lines": 1275,
+     "bytes": 51609
+    },
+    {
+     "path": "managed-agents/assistant-ui/lib/managed-agents/reducer.ts",
+     "complexity": 165,
+     "lines": 772,
+     "bytes": 33712
+    },
+    {
+     "path": "managed-agents/self-hosted-sandboxes/openshell-policy/src/agentpolicy/cli.py",
+     "complexity": 132,
+     "lines": 679,
+     "bytes": 29393
+    },
+    {
+     "path": "browser-use-demo/browser_use_demo/browser_tool_utils/browser_dom_script.js",
+     "complexity": 131,
+     "lines": 447,
+     "bytes": 14265
+    },
+    {
+     "path": "computer-use-best-practices/computer_use/loop.py",
+     "complexity": 115,
+     "lines": 566,
+     "bytes": 22377
+    },
+    {
+     "path": "managed-agents/self-hosted-sandboxes/openshell-policy/tests/test_stop.py",
+     "complexity": 112,
+     "lines": 456,
+     "bytes": 20786
+    },
+    {
+     "path": "computer-use-demo/computer_use_demo/tools/computer.py",
+     "complexity": 111,
+     "lines": 635,
+     "bytes": 24660
+    },
+    {
+     "path": "managed-agents/sentry-autofix/src/fixer.ts",
+     "complexity": 107,
+     "lines": 461,
+     "bytes": 21793
+    },
+    {
+     "path": "managed-agents/assistant-ui/lib/managed-agents/session-controller.ts",
+     "complexity": 101,
+     "lines": 518,
+     "bytes": 22529
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 11.38,
+   "findings": 63,
+   "files": 370,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 16
+    },
+    {
+     "category": "unused-export",
+     "count": 31
+    },
+    {
+     "category": "unused-symbol",
+     "count": 3
+    },
+    {
+     "category": "unused-import",
+     "count": 13
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "managed-agents/knowledge-wiki/utilities.py",
+     "name": "",
+     "line": 1,
+     "lines": 2979
+    },
+    {
+     "category": "unused-file",
+     "path": "managed-agents/assistant-ui/components/assistant-ui/image.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 481
+    },
+    {
+     "category": "unused-file",
+     "path": "browser-use-demo/browser_use_demo/browser_tool_utils/browser_dom_script.js",
+     "name": "",
+     "line": 1,
+     "lines": 447
+    },
+    {
+     "category": "unused-file",
+     "path": "managed-agents/chat-sdk/web/app.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 377
+    },
+    {
+     "category": "unused-file",
+     "path": "managed-agents/self-hosted-sandboxes/modal/modal_sandbox_webhook.py",
+     "name": "",
+     "line": 1,
+     "lines": 352
+    },
+    {
+     "category": "unused-file",
+     "path": "managed-agents/self-hosted-sandboxes/daytona/daytona_webhook.py",
+     "name": "",
+     "line": 1,
+     "lines": 284
+    },
+    {
+     "category": "unused-file",
+     "path": "managed-agents/assistant-ui/components/assistant-ui/file.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 235
+    },
+    {
+     "category": "unused-file",
+     "path": "browser-use-demo/browser_use_demo/browser_tool_utils/browser_form_input_script.js",
+     "name": "",
+     "line": 1,
+     "lines": 220
+    },
+    {
+     "category": "unused-file",
+     "path": "managed-agents/assistant-ui/components/assistant-ui/sources.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 160
+    },
+    {
+     "category": "unused-file",
+     "path": "managed-agents/assistant-ui/components/assistant-ui/shiki-highlighter.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 101
+    }
+   ]
+  }
+ }
+}

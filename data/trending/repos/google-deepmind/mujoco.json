@@ -1,0 +1,1408 @@
+{
+ "name": "google-deepmind/mujoco",
+ "url": "https://github.com/google-deepmind/mujoco",
+ "appearances": [
+  {
+   "date": "2026-11-10",
+   "rank": 3,
+   "stars": 17017,
+   "starsToday": 574,
+   "headSha": "a937a4f916dc586660145973b015e56e04043377",
+   "sources": 1682,
+   "lines": 715651,
+   "clones": 6000,
+   "duplicatedLines": 101583,
+   "percentage": 14.19,
+   "codePercentage": 4.71,
+   "codeSources": 654,
+   "healthScore": 34.5,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T05:21:45.471Z",
+  "name": "google-deepmind/mujoco",
+  "url": "https://github.com/google-deepmind/mujoco",
+  "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+  "language": "C++",
+  "stars": 17017,
+  "starsToday": 574,
+  "defaultBranch": "main",
+  "headSha": "a937a4f916dc586660145973b015e56e04043377",
+  "durationMs": 4881,
+  "total": {
+   "sources": 1682,
+   "lines": 715651,
+   "tokens": 5077390,
+   "clones": 6000,
+   "duplicatedLines": 101583,
+   "duplicatedTokens": 654029,
+   "percentage": 14.19,
+   "percentageTokens": 12.88
+  },
+  "formats": [
+   {
+    "format": "cpp",
+    "sources": 311,
+    "lines": 255913,
+    "clones": 3174,
+    "duplicatedLines": 31835,
+    "percentage": 12.44
+   },
+   {
+    "format": "markup",
+    "sources": 469,
+    "lines": 89776,
+    "clones": 1201,
+    "duplicatedLines": 41397,
+    "percentage": 46.11
+   },
+   {
+    "format": "python",
+    "sources": 252,
+    "lines": 119070,
+    "clones": 754,
+    "duplicatedLines": 13619,
+    "percentage": 11.44
+   },
+   {
+    "format": "c",
+    "sources": 49,
+    "lines": 81648,
+    "clones": 281,
+    "duplicatedLines": 2713,
+    "percentage": 3.32
+   },
+   {
+    "format": "c-header",
+    "sources": 226,
+    "lines": 61604,
+    "clones": 210,
+    "duplicatedLines": 6504,
+    "percentage": 10.56
+   },
+   {
+    "format": "rest",
+    "sources": 45,
+    "lines": 54203,
+    "clones": 196,
+    "duplicatedLines": 2229,
+    "percentage": 4.11
+   },
+   {
+    "format": "csharp",
+    "sources": 132,
+    "lines": 24427,
+    "clones": 115,
+    "duplicatedLines": 1317,
+    "percentage": 5.39
+   },
+   {
+    "format": "cmake",
+    "sources": 67,
+    "lines": 7678,
+    "clones": 15,
+    "duplicatedLines": 1277,
+    "percentage": 16.63
+   },
+   {
+    "format": "markdown",
+    "sources": 42,
+    "lines": 6049,
+    "clones": 14,
+    "duplicatedLines": 119,
+    "percentage": 1.97
+   },
+   {
+    "format": "typescript",
+    "sources": 8,
+    "lines": 3857,
+    "clones": 11,
+    "duplicatedLines": 98,
+    "percentage": 2.54
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markup",
+    "lines": 171,
+    "tokens": 1837,
+    "first": {
+     "name": "mjx/mujoco/mjx/test_data/humanoid/02_humanoids.xml",
+     "start": 35,
+     "end": 205
+    },
+    "others": [
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/03_humanoids.xml",
+      "start": 38,
+      "end": 208
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/04_humanoids.xml",
+      "start": 41,
+      "end": 211
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/05_humanoids.xml",
+      "start": 44,
+      "end": 214
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/06_humanoids.xml",
+      "start": 47,
+      "end": 217
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/07_humanoids.xml",
+      "start": 50,
+      "end": 220
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/08_humanoids.xml",
+      "start": 53,
+      "end": 223
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/09_humanoids.xml",
+      "start": 56,
+      "end": 226
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/10_humanoids.xml",
+      "start": 59,
+      "end": 229
+     }
+    ],
+    "copies": 9,
+    "excerpt": {
+     "lines": [
+      "    <geom type=\"capsule\" condim=\"3\" friction=\".7\" solimp=\".9 .99 .003\" solref=\".015 1\" material=\"body\" contype=\"4\" conaffinity=\"3\"/>",
+      "  </default>",
+      "</default>",
+      "",
+      "<visual>",
+      "  <map force=\"0.1\" zfar=\"30\"/>",
+      "  <rgba haze=\"0.15 0.25 0.35 1\"/>",
+      "  <quality shadowsize=\"4096\"/>",
+      "  <global offwidth=\"800\" offheight=\"800\"/>",
+      "</visual>"
+     ],
+     "total": 171
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 802,
+    "tokens": 7524,
+    "first": {
+     "name": "model/flex/bag.xml",
+     "start": 47,
+     "end": 848
+    },
+    "others": [
+     {
+      "name": "model/flex/bag_hoop.xml",
+      "start": 47,
+      "end": 848
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "<geom type=\"plane\" size=\"0 0 .05\" material=\"plane\"/>",
+      "<flexcomp name=\"bag\" type=\"direct\" dim=\"2\" radius=\"0.002\" mass=\"0.06\" rgba=\".93 .95 .97 .45\"",
+      "          point=\"0.0899 0.0000 0.0300 0.0868 0.0233 0.0300 0.0778 0.0449 0.0300 0.0635 0.0635 0.0300 0.0449 0.0778 0.0300 0.0233 0.0868 0.0300 0.0000 0.0899 0.…",
+      "          element=\"0 1 25 0 25 24 1 2 26 1 26 25 2 3 27 2 27 26 3 4 28 3 28 27 4 5 29 4 29 28 5 6 30 5 30 29 6 7 31 6 31 30 7 8 32 7 32 31 8 9 33 8 33 32 9 10 …",
+      "  <elasticity young=\"21739.5498\" poisson=\"0.4\" thickness=\"6.70820393e-4\" elastic2d=\"both\" damping=\"0.015\"/>",
+      "  <contact selfcollide=\"none\"/>",
+      "</flexcomp>",
+      "<body name=\"s0\" pos=\"0.14202 -0.05094 0.22450\">",
+      "  <inertial pos=\"0 0 0\" mass=\"0.0002\" diaginertia=\"1e-10 1e-10 1e-10\"/>",
+      "  <joint type=\"slide\" axis=\"1 0 0\"/>"
+     ],
+     "total": 802
+    },
+    "kind": "data"
+   },
+   {
+    "format": "markup",
+    "lines": 7,
+    "tokens": 52,
+    "first": {
+     "name": "model/flex/bag.xml",
+     "start": 54,
+     "end": 60
+    },
+    "others": [
+     {
+      "name": "model/flex/bag.xml",
+      "start": 60,
+      "end": 66
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 66,
+      "end": 72
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 72,
+      "end": 78
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 78,
+      "end": 84
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 84,
+      "end": 90
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 90,
+      "end": 96
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 96,
+      "end": 102
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 102,
+      "end": 108
+     }
+    ],
+    "copies": 126,
+    "excerpt": {
+     "lines": [
+      "<body name=\"s0\" pos=\"0.14202 -0.05094 0.22450\">",
+      "  <inertial pos=\"0 0 0\" mass=\"0.0002\" diaginertia=\"1e-10 1e-10 1e-10\"/>",
+      "  <joint type=\"slide\" axis=\"1 0 0\"/>",
+      "  <joint type=\"slide\" axis=\"0 1 0\"/>",
+      "  <joint type=\"slide\" axis=\"0 0 1\"/>",
+      "</body>",
+      "<body name=\"s1\" pos=\"0.14202 -0.05094 0.23550\">"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "<body name=\"s1\" pos=\"0.14202 -0.05094 0.23550\">",
+      "  <inertial pos=\"0 0 0\" mass=\"0.0002\" diaginertia=\"1e-10 1e-10 1e-10\"/>",
+      "  <joint type=\"slide\" axis=\"1 0 0\"/>",
+      "  <joint type=\"slide\" axis=\"0 1 0\"/>",
+      "  <joint type=\"slide\" axis=\"0 0 1\"/>",
+      "</body>",
+      "<body name=\"s2\" pos=\"0.14721 -0.03637 0.22450\">"
+     ],
+     "total": 7
+    },
+    "kind": "data"
+   },
+   {
+    "format": "markup",
+    "lines": 86,
+    "tokens": 913,
+    "first": {
+     "name": "mjx/mujoco/mjx/test_data/humanoid/03_humanoids.xml",
+     "start": 200,
+     "end": 285
+    },
+    "others": [
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/04_humanoids.xml",
+      "start": 203,
+      "end": 288
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/05_humanoids.xml",
+      "start": 206,
+      "end": 291
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/06_humanoids.xml",
+      "start": 209,
+      "end": 294
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/07_humanoids.xml",
+      "start": 212,
+      "end": 297
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/08_humanoids.xml",
+      "start": 215,
+      "end": 300
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/09_humanoids.xml",
+      "start": 218,
+      "end": 303
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/10_humanoids.xml",
+      "start": 221,
+      "end": 306
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 16,
+    "tokens": 105,
+    "first": {
+     "name": "mjx/mujoco/mjx/test_data/actuator/arm21.xml",
+     "start": 1,
+     "end": 16
+    },
+    "others": [
+     {
+      "name": "mjx/mujoco/mjx/test_data/actuator/arm26.xml",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/humanoid.xml",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "model/flex/bag.xml",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "model/flex/basket.xml",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "model/flex/belt.xml",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "model/flex/bunny.xml",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "model/flex/cable.xml",
+      "start": 1,
+      "end": 16
+     },
+     {
+      "name": "model/flex/coil.xml",
+      "start": 1,
+      "end": 16
+     }
+    ],
+    "copies": 54,
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 86,
+    "tokens": 913,
+    "first": {
+     "name": "mjx/mujoco/mjx/test_data/humanoid/04_humanoids.xml",
+     "start": 280,
+     "end": 365
+    },
+    "others": [
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/05_humanoids.xml",
+      "start": 283,
+      "end": 368
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/06_humanoids.xml",
+      "start": 286,
+      "end": 371
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/07_humanoids.xml",
+      "start": 289,
+      "end": 374
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/08_humanoids.xml",
+      "start": 292,
+      "end": 377
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/09_humanoids.xml",
+      "start": 295,
+      "end": 380
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/10_humanoids.xml",
+      "start": 298,
+      "end": 383
+     }
+    ],
+    "copies": 7,
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 426,
+    "tokens": 5043,
+    "first": {
+     "name": "src/xml/generated/dmcontrol_schema.xml",
+     "start": 260,
+     "end": 685
+    },
+    "others": [
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 684,
+      "end": 1109
+     }
+    ],
+    "copies": 2,
+    "kind": "generated"
+   },
+   {
+    "format": "markup",
+    "lines": 1399,
+    "tokens": 4822,
+    "first": {
+     "name": "model/flex/poncho.xml",
+     "start": 18,
+     "end": 1416
+    },
+    "others": [
+     {
+      "name": "model/flex/poncho_edgeequality.xml",
+      "start": 18,
+      "end": 1416
+     }
+    ],
+    "copies": 2,
+    "kind": "data"
+   },
+   {
+    "format": "markup",
+    "lines": 86,
+    "tokens": 913,
+    "first": {
+     "name": "mjx/mujoco/mjx/test_data/humanoid/05_humanoids.xml",
+     "start": 360,
+     "end": 445
+    },
+    "others": [
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/06_humanoids.xml",
+      "start": 363,
+      "end": 448
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/07_humanoids.xml",
+      "start": 366,
+      "end": 451
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/08_humanoids.xml",
+      "start": 369,
+      "end": 454
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/09_humanoids.xml",
+      "start": 372,
+      "end": 457
+     },
+     {
+      "name": "mjx/mujoco/mjx/test_data/humanoid/10_humanoids.xml",
+      "start": 375,
+      "end": 460
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "markup",
+    "lines": 11,
+    "tokens": 113,
+    "first": {
+     "name": "src/xml/generated/dmcontrol_schema.xml",
+     "start": 2403,
+     "end": 2413
+    },
+    "others": [
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2508,
+      "end": 2518
+     },
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2523,
+      "end": 2533
+     },
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2536,
+      "end": 2546
+     },
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2549,
+      "end": 2559
+     },
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2562,
+      "end": 2572
+     },
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2575,
+      "end": 2585
+     },
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2588,
+      "end": 2598
+     },
+     {
+      "name": "src/xml/generated/dmcontrol_schema.xml",
+      "start": 2601,
+      "end": 2611
+     }
+    ],
+    "copies": 38,
+    "kind": "generated"
+   }
+  ],
+  "code": {
+   "sources": 654,
+   "lines": 318700,
+   "tokens": 2090013,
+   "clones": 1177,
+   "duplicatedLines": 14998,
+   "duplicatedTokens": 93320,
+   "percentage": 4.71,
+   "percentageTokens": 4.47,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 144,
+     "lines": 75620,
+     "clones": 490,
+     "duplicatedLines": 7959,
+     "percentage": 10.52
+    },
+    {
+     "format": "cpp",
+     "sources": 169,
+     "lines": 110080,
+     "clones": 329,
+     "duplicatedLines": 3206,
+     "percentage": 2.91
+    },
+    {
+     "format": "c",
+     "sources": 48,
+     "lines": 80767,
+     "clones": 277,
+     "duplicatedLines": 2676,
+     "percentage": 3.31
+    },
+    {
+     "format": "c-header",
+     "sources": 202,
+     "lines": 40424,
+     "clones": 64,
+     "duplicatedLines": 888,
+     "percentage": 2.2
+    },
+    {
+     "format": "csharp",
+     "sources": 75,
+     "lines": 8565,
+     "clones": 10,
+     "duplicatedLines": 94,
+     "percentage": 1.1
+    },
+    {
+     "format": "bash",
+     "sources": 8,
+     "lines": 1734,
+     "clones": 5,
+     "duplicatedLines": 146,
+     "percentage": 8.42
+    },
+    {
+     "format": "objectivec",
+     "sources": 5,
+     "lines": 602,
+     "clones": 1,
+     "duplicatedLines": 16,
+     "percentage": 2.66
+    },
+    {
+     "format": "typescript",
+     "sources": 2,
+     "lines": 532,
+     "clones": 1,
+     "duplicatedLines": 13,
+     "percentage": 2.44
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 376,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 67,
+     "first": {
+      "name": "python/mujoco/introspect/functions.py",
+      "start": 774,
+      "end": 790
+     },
+     "others": [
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 794,
+       "end": 810
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 814,
+       "end": 830
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 834,
+       "end": 850
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 854,
+       "end": 870
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1192,
+       "end": 1208
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1212,
+       "end": 1228
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1771,
+       "end": 1787
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1791,
+       "end": 1807
+      }
+     ],
+     "copies": 45,
+     "excerpt": {
+      "lines": [
+       "name='mj_step',",
+       "return_type=ValueType(name='void'),",
+       "parameters=(",
+       "    FunctionParameterDecl(",
+       "        name='m',",
+       "        type=PointerType(",
+       "            inner_type=ValueType(name='mjModel', is_const=True),",
+       "        ),",
+       "    ),",
+       "    FunctionParameterDecl("
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 16,
+     "tokens": 63,
+     "first": {
+      "name": "python/mujoco/introspect/functions.py",
+      "start": 1578,
+      "end": 1593
+     },
+     "others": [
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2746,
+       "end": 2761
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2872,
+       "end": 2887
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3120,
+       "end": 3135
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3152,
+       "end": 3167
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3184,
+       "end": 3199
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3229,
+       "end": 3244
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3267,
+       "end": 3282
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3335,
+       "end": 3350
+      }
+     ],
+     "copies": 29,
+     "excerpt": {
+      "lines": [
+       "return_type=ValueType(name='void'),",
+       "parameters=(",
+       "    FunctionParameterDecl(",
+       "        name='m',",
+       "        type=PointerType(",
+       "            inner_type=ValueType(name='mjModel', is_const=True),",
+       "        ),",
+       "    ),",
+       "    FunctionParameterDecl(",
+       "        name='d',"
+      ],
+      "total": 16
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 15,
+     "tokens": 63,
+     "first": {
+      "name": "python/mujoco/introspect/functions.py",
+      "start": 774,
+      "end": 788
+     },
+     "others": [
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 874,
+       "end": 888
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 902,
+       "end": 916
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1232,
+       "end": 1246
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1256,
+       "end": 1270
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1911,
+       "end": 1925
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2375,
+       "end": 2389
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2411,
+       "end": 2425
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2513,
+       "end": 2527
+      }
+     ],
+     "copies": 26,
+     "excerpt": {
+      "lines": [
+       "name='mj_step',",
+       "return_type=ValueType(name='void'),",
+       "parameters=(",
+       "    FunctionParameterDecl(",
+       "        name='m',",
+       "        type=PointerType(",
+       "            inner_type=ValueType(name='mjModel', is_const=True),",
+       "        ),",
+       "    ),",
+       "    FunctionParameterDecl("
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 14,
+     "tokens": 53,
+     "first": {
+      "name": "python/mujoco/introspect/functions.py",
+      "start": 877,
+      "end": 890
+     },
+     "others": [
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1235,
+       "end": 1248
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1259,
+       "end": 1272
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1914,
+       "end": 1927
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2378,
+       "end": 2391
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2414,
+       "end": 2427
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2516,
+       "end": 2529
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2692,
+       "end": 2705
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2812,
+       "end": 2825
+      }
+     ],
+     "copies": 26,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 13,
+     "tokens": 57,
+     "first": {
+      "name": "python/mujoco/introspect/functions.py",
+      "start": 774,
+      "end": 786
+     },
+     "others": [
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1577,
+       "end": 1589
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 1609,
+       "end": 1621
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 2745,
+       "end": 2757
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3119,
+       "end": 3131
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3151,
+       "end": 3163
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3183,
+       "end": 3195
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3228,
+       "end": 3240
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 3266,
+       "end": 3278
+      }
+     ],
+     "copies": 23,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 9,
+     "tokens": 75,
+     "first": {
+      "name": "src/xml/xml_native_writer.cc",
+      "start": 3066,
+      "end": 3074
+     },
+     "others": [
+      {
+       "name": "src/xml/xml_native_writer.cc",
+       "start": 3075,
+       "end": 3083
+      },
+      {
+       "name": "src/xml/xml_native_writer.cc",
+       "start": 3084,
+       "end": 3092
+      },
+      {
+       "name": "src/xml/xml_native_writer.cc",
+       "start": 3093,
+       "end": 3101
+      },
+      {
+       "name": "src/xml/xml_native_writer.cc",
+       "start": 3102,
+       "end": 3110
+      },
+      {
+       "name": "src/xml/xml_native_writer.cc",
+       "start": 3111,
+       "end": 3119
+      },
+      {
+       "name": "src/xml/xml_native_writer.cc",
+       "start": 3120,
+       "end": 3128
+      },
+      {
+       "name": "src/xml/xml_native_writer.cc",
+       "start": 3129,
+       "end": 3137
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 22,
+     "tokens": 261,
+     "first": {
+      "name": "src/user/user_flexcomp.cc",
+      "start": 5149,
+      "end": 5170
+     },
+     "others": [
+      {
+       "name": "src/user/user_flexcomp.cc",
+       "start": 5449,
+       "end": 5470
+      },
+      {
+       "name": "src/user/user_flexcomp.cc",
+       "start": 5740,
+       "end": 5759
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 17,
+     "tokens": 67,
+     "first": {
+      "name": "python/mujoco/introspect/functions.py",
+      "start": 7553,
+      "end": 7569
+     },
+     "others": [
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 7651,
+       "end": 7667
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 7679,
+       "end": 7695
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 7835,
+       "end": 7851
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 7967,
+       "end": 7983
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 8013,
+       "end": 8029
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 8690,
+       "end": 8706
+      },
+      {
+       "name": "python/mujoco/introspect/functions.py",
+       "start": 8726,
+       "end": 8742
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 69,
+     "tokens": 441,
+     "first": {
+      "name": "simulate/array_safety.h",
+      "start": 34,
+      "end": 102
+     },
+     "others": [
+      {
+       "name": "src/cc/array_safety.h",
+       "start": 34,
+       "end": 102
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 8,
+     "tokens": 109,
+     "first": {
+      "name": "src/engine/engine_collision_box.c",
+      "start": 594,
+      "end": 601
+     },
+     "others": [
+      {
+       "name": "src/engine/engine_collision_box.c",
+       "start": 1069,
+       "end": 1076
+      },
+      {
+       "name": "src/engine/engine_collision_primitive.c",
+       "start": 53,
+       "end": 61
+      },
+      {
+       "name": "src/engine/engine_collision_primitive.c",
+       "start": 332,
+       "end": 340
+      },
+      {
+       "name": "src/engine/engine_collision_primitive.c",
+       "start": 454,
+       "end": 462
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 58,
+    "minified": 0,
+    "sample": [
+     "doc/_static/onthispage_mjwarp.js",
+     "doc/includes/references.h",
+     "doc/js/linenumbers.js",
+     "include/mujoco/experimental/usd/mjcPhysics/actuator.h",
+     "include/mujoco/experimental/usd/mjcPhysics/api.h",
+     "include/mujoco/experimental/usd/mjcPhysics/collisionAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/equalityAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/equalityConnectAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/equalityJointAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/equalityWeldAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/imageableAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/jointAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/keyframe.h",
+     "include/mujoco/experimental/usd/mjcPhysics/materialAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/meshCollisionAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/sceneAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/siteAPI.h",
+     "include/mujoco/experimental/usd/mjcPhysics/tendon.h",
+     "include/mujoco/experimental/usd/mjcPhysics/tokens.h",
+     "mjx/mujoco/mjx/warp/bvh.py"
+    ]
+   }
+  },
+  "health": {
+   "score": 34.5,
+   "grade": "E",
+   "size": {
+    "lines": 558486,
+    "files": 1059,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 10.3,
+     "adjusted": 10.3,
+     "lines": 57603,
+     "halfLife": 8.5,
+     "formats": [
+      "cpp",
+      "python",
+      "c",
+      "c-header",
+      "csharp",
+      "cmake",
+      "typescript",
+      "bash",
+      "latex",
+      "javascript",
+      "objectivec",
+      "makefile"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 43.2
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 31.3,
+     "adjusted": 30.8,
+     "lines": 38545,
+     "halfLife": 7.5,
+     "coverage": 22.1,
+     "weight": 0.221,
+     "score": 5.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 64.8,
+     "adjusted": 64.6,
+     "lines": 361890,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 40.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 60558,
+   "mean": 57.2,
+   "files": [
+    {
+     "path": "src/user/user_objects.cc",
+     "complexity": 2454,
+     "lines": 10379,
+     "bytes": 326986
+    },
+    {
+     "path": "src/user/user_model.cc",
+     "complexity": 2097,
+     "lines": 8518,
+     "bytes": 312839
+    },
+    {
+     "path": "src/user/user_flexcomp.cc",
+     "complexity": 1415,
+     "lines": 6112,
+     "bytes": 226894
+    },
+    {
+     "path": "src/engine/engine_derivative.c",
+     "complexity": 975,
+     "lines": 4584,
+     "bytes": 154390
+    },
+    {
+     "path": "wasm/codegen/generated/bindings.h",
+     "complexity": 970,
+     "lines": 7942,
+     "bytes": 259203
+    },
+    {
+     "path": "src/engine/engine_core_util.c",
+     "complexity": 961,
+     "lines": 4089,
+     "bytes": 132374
+    },
+    {
+     "path": "src/engine/engine_metric.c",
+     "complexity": 833,
+     "lines": 3041,
+     "bytes": 108249
+    },
+    {
+     "path": "wasm/codegen/generated/bindings.cc",
+     "complexity": 830,
+     "lines": 6936,
+     "bytes": 285784
+    },
+    {
+     "path": "src/engine/engine_vis_visualize.c",
+     "complexity": 822,
+     "lines": 4231,
+     "bytes": 134653
+    },
+    {
+     "path": "src/user/user_api.cc",
+     "complexity": 797,
+     "lines": 3271,
+     "bytes": 105047
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 31.29,
+   "findings": 60,
+   "files": 269,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 50
+    },
+    {
+     "category": "unused-symbol",
+     "count": 3
+    },
+    {
+     "category": "unused-import",
+     "count": 7
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "python/mujoco/introspect/structs.py",
+     "name": "",
+     "line": 1,
+     "lines": 12841
+    },
+    {
+     "category": "unused-file",
+     "path": "mjx/mujoco/mjx/warp/forward.py",
+     "name": "",
+     "line": 1,
+     "lines": 6499
+    },
+    {
+     "category": "unused-file",
+     "path": "mjx/mujoco/mjx/_src/io.py",
+     "name": "",
+     "line": 1,
+     "lines": 1879
+    },
+    {
+     "category": "unused-file",
+     "path": "mjx/mujoco/mjx/_src/smooth.py",
+     "name": "",
+     "line": 1,
+     "lines": 1496
+    },
+    {
+     "category": "unused-file",
+     "path": "python/mujoco/introspect/enums.py",
+     "name": "",
+     "line": 1,
+     "lines": 1206
+    },
+    {
+     "category": "unused-file",
+     "path": "mjx/mujoco/mjx/_src/support.py",
+     "name": "",
+     "line": 1,
+     "lines": 1164
+    },
+    {
+     "category": "unused-file",
+     "path": "mjx/mujoco/mjx/_src/collision_convex.py",
+     "name": "",
+     "line": 1,
+     "lines": 1117
+    },
+    {
+     "category": "unused-file",
+     "path": "python/mujoco/batch.py",
+     "name": "",
+     "line": 1,
+     "lines": 963
+    },
+    {
+     "category": "unused-file",
+     "path": "mjx/mujoco/mjx/_src/sensor.py",
+     "name": "",
+     "line": 1,
+     "lines": 850
+    },
+    {
+     "category": "unused-file",
+     "path": "mjx/mujoco/mjx/_src/constraint.py",
+     "name": "",
+     "line": 1,
+     "lines": 748
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,908 @@
+{
+ "name": "homeassistant-ai/ha-mcp",
+ "url": "https://github.com/homeassistant-ai/ha-mcp",
+ "appearances": [
+  {
+   "date": "2026-11-10",
+   "rank": 7,
+   "stars": 6124,
+   "starsToday": 31,
+   "headSha": "ceb8bed203b1af9f7f70280d60b32f040802e215",
+   "sources": 2269,
+   "lines": 888327,
+   "clones": 3199,
+   "duplicatedLines": 59700,
+   "percentage": 6.72,
+   "codePercentage": 5.52,
+   "codeSources": 907,
+   "healthScore": 48.6,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T05:21:45.471Z",
+  "name": "homeassistant-ai/ha-mcp",
+  "url": "https://github.com/homeassistant-ai/ha-mcp",
+  "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+  "language": "Python",
+  "stars": 6124,
+  "starsToday": 31,
+  "defaultBranch": "master",
+  "headSha": "ceb8bed203b1af9f7f70280d60b32f040802e215",
+  "durationMs": 5591,
+  "total": {
+   "sources": 2269,
+   "lines": 888327,
+   "tokens": 4979279,
+   "clones": 3199,
+   "duplicatedLines": 59700,
+   "duplicatedTokens": 405065,
+   "percentage": 6.72,
+   "percentageTokens": 8.14
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 1840,
+    "lines": 779432,
+    "clones": 2874,
+    "duplicatedLines": 44820,
+    "percentage": 5.75
+   },
+   {
+    "format": "yaml",
+    "sources": 148,
+    "lines": 23689,
+    "clones": 204,
+    "duplicatedLines": 6019,
+    "percentage": 25.41
+   },
+   {
+    "format": "html",
+    "sources": 12,
+    "lines": 2933,
+    "clones": 37,
+    "duplicatedLines": 439,
+    "percentage": 14.97
+   },
+   {
+    "format": "markdown",
+    "sources": 76,
+    "lines": 27747,
+    "clones": 32,
+    "duplicatedLines": 7312,
+    "percentage": 26.35
+   },
+   {
+    "format": "javascript",
+    "sources": 45,
+    "lines": 16347,
+    "clones": 30,
+    "duplicatedLines": 423,
+    "percentage": 2.59
+   },
+   {
+    "format": "json",
+    "sources": 58,
+    "lines": 28398,
+    "clones": 5,
+    "duplicatedLines": 439,
+    "percentage": 1.55
+   },
+   {
+    "format": "css",
+    "sources": 7,
+    "lines": 1719,
+    "clones": 4,
+    "duplicatedLines": 42,
+    "percentage": 2.44
+   },
+   {
+    "format": "typescript",
+    "sources": 11,
+    "lines": 414,
+    "clones": 4,
+    "duplicatedLines": 32,
+    "percentage": 7.73
+   },
+   {
+    "format": "docker",
+    "sources": 6,
+    "lines": 286,
+    "clones": 3,
+    "duplicatedLines": 60,
+    "percentage": 20.98
+   },
+   {
+    "format": "bash",
+    "sources": 31,
+    "lines": 1466,
+    "clones": 2,
+    "duplicatedLines": 12,
+    "percentage": 0.82
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markdown",
+    "lines": 6608,
+    "tokens": 88409,
+    "first": {
+     "name": "CHANGELOG.md",
+     "start": 1,
+     "end": 6608
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon/CHANGELOG.md",
+      "start": 1,
+      "end": 6608
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# CHANGELOG",
+      "",
+      "<!-- version list -->",
+      "",
+      "",
+      "## v9.1.2 (2026-11-08)",
+      "",
+      "### Fixed",
+      "",
+      "- **hacs**: Keep HA-MCP on one store listing and repair installs that got two"
+     ],
+     "total": 6608
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 714,
+    "tokens": 4040,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth_indirect.py",
+     "start": 1,
+     "end": 714
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth_indirect.py",
+      "start": 1,
+      "end": 714
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"\"\"ha_auth-mode OAuth indirection in front of Home Assistant core.",
+      "",
+      "The proxy-owned authorize and token routes keep client endpoint caches stable",
+      "while Home Assistant core remains the authorization server. This module also",
+      "validates cross-origin Client ID Metadata Documents before translating their",
+      "client identities into the same-origin form accepted by core.",
+      "",
+      "MIRROR: this module is the near-verbatim twin of",
+      "``custom_components/ha_mcp_tools/oauth_ha_auth.py``. Keep behavioural changes",
+      "on the two sides in step. This pair has exactly TWO intended deltas. The"
+     ],
+     "total": 714
+    },
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 171,
+    "tokens": 3118,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/DOCS.md",
+     "start": 21,
+     "end": 191
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/DOCS.md",
+      "start": 20,
+      "end": 190
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "Assistant notification). Stop the stable app first; the notification clears",
+      "automatically on the next clean start.",
+      "",
+      "## Prerequisites",
+      "",
+      "- **Home Assistant MCP Server** app must be installed and running (stable or dev channel)",
+      "- For Nabu Casa auto-detection: active Nabu Casa subscription with remote UI enabled",
+      "- For other setups: a working reverse proxy pointing at your HA instance",
+      "",
+      "## Setup"
+     ],
+     "total": 171
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "python",
+    "lines": 361,
+    "tokens": 2058,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
+     "start": 396,
+     "end": 756
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
+      "start": 396,
+      "end": 756
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 333,
+    "tokens": 2050,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth_autoapprove.py",
+     "start": 269,
+     "end": 601
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth_autoapprove.py",
+      "start": 269,
+      "end": 601
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 396,
+    "tokens": 2010,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/start.py",
+     "start": 330,
+     "end": 725
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/start.py",
+      "start": 330,
+      "end": 725
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markup",
+    "lines": 75,
+    "tokens": 1789,
+    "first": {
+     "name": "site/public/favicon.svg",
+     "start": 1,
+     "end": 75
+    },
+    "others": [
+     {
+      "name": "site/public/icon.svg",
+      "start": 1,
+      "end": 75
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "python",
+    "lines": 267,
+    "tokens": 1724,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth_autoapprove.py",
+     "start": 1,
+     "end": 267
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth_autoapprove.py",
+      "start": 1,
+      "end": 267
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 241,
+    "tokens": 1671,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
+     "start": 901,
+     "end": 1141
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
+      "start": 901,
+      "end": 1141
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 326,
+    "tokens": 1590,
+    "first": {
+     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
+     "start": 71,
+     "end": 396
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
+      "start": 71,
+      "end": 396
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 907,
+   "lines": 353877,
+   "tokens": 1906674,
+   "clones": 948,
+   "duplicatedLines": 19525,
+   "duplicatedTokens": 118680,
+   "percentage": 5.52,
+   "percentageTokens": 6.22,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 834,
+     "lines": 335132,
+     "clones": 892,
+     "duplicatedLines": 18762,
+     "percentage": 5.6
+    },
+    {
+     "format": "html",
+     "sources": 12,
+     "lines": 2933,
+     "clones": 37,
+     "duplicatedLines": 439,
+     "percentage": 14.97
+    },
+    {
+     "format": "javascript",
+     "sources": 27,
+     "lines": 10431,
+     "clones": 12,
+     "duplicatedLines": 258,
+     "percentage": 2.47
+    },
+    {
+     "format": "typescript",
+     "sources": 11,
+     "lines": 414,
+     "clones": 4,
+     "duplicatedLines": 32,
+     "percentage": 7.73
+    },
+    {
+     "format": "css",
+     "sources": 5,
+     "lines": 277,
+     "clones": 3,
+     "duplicatedLines": 34,
+     "percentage": 12.27
+    },
+    {
+     "format": "astro",
+     "sources": 12,
+     "lines": 3917,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 5,
+     "lines": 603,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 170,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 714,
+     "tokens": 4040,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth_indirect.py",
+      "start": 1,
+      "end": 714
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth_indirect.py",
+       "start": 1,
+       "end": 714
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "\"\"\"ha_auth-mode OAuth indirection in front of Home Assistant core.",
+       "",
+       "The proxy-owned authorize and token routes keep client endpoint caches stable",
+       "while Home Assistant core remains the authorization server. This module also",
+       "validates cross-origin Client ID Metadata Documents before translating their",
+       "client identities into the same-origin form accepted by core.",
+       "",
+       "MIRROR: this module is the near-verbatim twin of",
+       "``custom_components/ha_mcp_tools/oauth_ha_auth.py``. Keep behavioural changes",
+       "on the two sides in step. This pair has exactly TWO intended deltas. The"
+      ],
+      "total": 714
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 361,
+     "tokens": 2058,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
+      "start": 396,
+      "end": 756
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
+       "start": 396,
+       "end": 756
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "HEARTBEAT_FILE = Path(\"/config/.mcp_proxy_dev_heartbeat\")",
+       "_HEARTBEAT_MAX_AGE = 90.0  # three missed 30-second touches",
+       "# Only the NEGATIVE verdict is cached (#2218 review): a clean shutdown deletes",
+       "# the heartbeat file but cannot clear a cache in the integration process, so a",
+       "# cached True would keep the surface serving after the stop. A fresh stat per",
+       "# request while alive is microseconds in the executor; the cache exists so an",
+       "# anonymous flood against a STOPPED install does not stat per request.",
+       "#",
+       "# The lease MUST stay shorter than start.py's `_probe_oauth_active` delay",
+       "# (2 s between 3 attempts): that probe drives a DESTRUCTIVE path — it tears"
+      ],
+      "total": 361
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 333,
+     "tokens": 2050,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth_autoapprove.py",
+      "start": 269,
+      "end": 601
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth_autoapprove.py",
+       "start": 269,
+       "end": 601
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def __init__(self, hass: HomeAssistant) -> None:",
+       "    \"\"\"Bind the view to the HA instance; liveness is resolved per request.\"\"\"",
+       "    self._hass = hass",
+       "",
+       "async def get(self, request: web.Request) -> web.Response:",
+       "    \"\"\"Dispatch an authorization request to the currently active mode.\"\"\"",
+       "    if not await _addon_alive(self._hass):",
+       "        return _json_not_found()",
+       "    data = _domain_data(self._hass)",
+       "    if data is None:"
+      ],
+      "total": 333
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 396,
+     "tokens": 2010,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/start.py",
+      "start": 330,
+      "end": 725
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/start.py",
+       "start": 330,
+       "end": 725
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 267,
+     "tokens": 1724,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth_autoapprove.py",
+      "start": 1,
+      "end": 267
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth_autoapprove.py",
+       "start": 1,
+       "end": 267
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 241,
+     "tokens": 1671,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
+      "start": 901,
+      "end": 1141
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
+       "start": 901,
+       "end": 1141
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 326,
+     "tokens": 1590,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
+      "start": 71,
+      "end": 396
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
+       "start": 71,
+       "end": 396
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 127,
+     "tokens": 770,
+     "first": {
+      "name": "custom_components/ha_mcp_tools/readonly_webhook.py",
+      "start": 1,
+      "end": 127
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/readonly_webhook.py",
+       "start": 1,
+       "end": 127
+      },
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/readonly_webhook.py",
+       "start": 1,
+       "end": 127
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 291,
+     "tokens": 1365,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/__init__.py",
+      "start": 856,
+      "end": 1146
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/__init__.py",
+       "start": 856,
+       "end": 1146
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 202,
+     "tokens": 1288,
+     "first": {
+      "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth_autoapprove.py",
+      "start": 603,
+      "end": 804
+     },
+     "others": [
+      {
+       "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth_autoapprove.py",
+       "start": 603,
+       "end": 804
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 3,
+    "minified": 0,
+    "sample": [
+     "src/ha_mcp/_vendor/mcp_types/_v2025_11_25/__init__.py",
+     "src/ha_mcp/_vendor/mcp_types/_v2026_07_28/__init__.py",
+     "src/ha_mcp/settings_ui/settings_js/05_feature_flags.js"
+    ]
+   }
+  },
+  "health": {
+   "score": 48.6,
+   "grade": "D",
+   "size": {
+    "lines": 800353,
+    "files": 1900,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 5.7,
+     "adjusted": 5.7,
+     "lines": 45335,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "javascript",
+      "astro",
+      "bash",
+      "docker",
+      "typescript",
+      "powershell"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 63
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 9.2,
+     "adjusted": 9.2,
+     "lines": 73731,
+     "halfLife": 7.5,
+     "coverage": 100,
+     "weight": 1,
+     "score": 42.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 61.6,
+     "adjusted": 61.5,
+     "lines": 493179,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 42.6
+    }
+   ]
+  },
+  "complexity": {
+   "total": 81339,
+   "mean": 42.8,
+   "files": [
+    {
+     "path": "src/ha_mcp/backup_manager.py",
+     "complexity": 625,
+     "lines": 3567,
+     "bytes": 150437
+    },
+    {
+     "path": "tests/addon/test_webhook_proxy.py",
+     "complexity": 570,
+     "lines": 7197,
+     "bytes": 316784
+    },
+    {
+     "path": "src/ha_mcp/tools/tools_addons.py",
+     "complexity": 504,
+     "lines": 4038,
+     "bytes": 158555
+    },
+    {
+     "path": "custom_components/ha_mcp_tools/__init__.py",
+     "complexity": 488,
+     "lines": 3564,
+     "bytes": 144724
+    },
+    {
+     "path": "src/ha_mcp/tools/tools_config_dashboards.py",
+     "complexity": 415,
+     "lines": 3755,
+     "bytes": 157087
+    },
+    {
+     "path": "tests/src/unit/test_tools_addons.py",
+     "complexity": 382,
+     "lines": 6904,
+     "bytes": 266973
+    },
+    {
+     "path": "tests/initial_test_state/custom_components/hacs/repositories/base.py",
+     "complexity": 337,
+     "lines": 1453,
+     "bytes": 54662
+    },
+    {
+     "path": "src/ha_mcp/_vendor/fastmcp/server/server.py",
+     "complexity": 317,
+     "lines": 2595,
+     "bytes": 108208
+    },
+    {
+     "path": "src/ha_mcp/client/rest_client.py",
+     "complexity": 306,
+     "lines": 2556,
+     "bytes": 113374
+    },
+    {
+     "path": "tests/src/unit/test_backup_manager.py",
+     "complexity": 292,
+     "lines": 3547,
+     "bytes": 145860
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 9.22,
+   "findings": 309,
+   "files": 2007,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 168
+    },
+    {
+     "category": "unused-export",
+     "count": 32
+    },
+    {
+     "category": "unused-symbol",
+     "count": 96
+    },
+    {
+     "category": "unused-import",
+     "count": 13
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_entities.py",
+     "name": "",
+     "line": 1,
+     "lines": 2158
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_system.py",
+     "name": "",
+     "line": 1,
+     "lines": 1933
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_config_automations.py",
+     "name": "",
+     "line": 1,
+     "lines": 1668
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_config_scenes.py",
+     "name": "",
+     "line": 1,
+     "lines": 1456
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_config_scripts.py",
+     "name": "",
+     "line": 1,
+     "lines": 1154
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_registry.py",
+     "name": "",
+     "line": 1,
+     "lines": 1117
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/_vendor/websockets/sync/client.py",
+     "name": "",
+     "line": 1,
+     "lines": 1116
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_history.py",
+     "name": "",
+     "line": 1,
+     "lines": 1100
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_updates.py",
+     "name": "",
+     "line": 1,
+     "lines": 1083
+    },
+    {
+     "category": "unused-file",
+     "path": "src/ha_mcp/tools/tools_hacs.py",
+     "name": "",
+     "line": 1,
+     "lines": 999
+    }
+   ]
+  }
+ }
+}
