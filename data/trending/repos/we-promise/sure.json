@@ -1,0 +1,1295 @@
+{
+ "name": "we-promise/sure",
+ "url": "https://github.com/we-promise/sure",
+ "appearances": [
+  {
+   "date": "2026-11-11",
+   "rank": 5,
+   "stars": 12170,
+   "starsToday": 159,
+   "headSha": "264bbf7cb71da65448ab74e4a650a1540dd0d3c4",
+   "sources": 6549,
+   "lines": 887618,
+   "clones": 3254,
+   "duplicatedLines": 49209,
+   "percentage": 5.54,
+   "codePercentage": 3.02,
+   "codeSources": 1957,
+   "healthScore": 66.5,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T05:21:30.833Z",
+  "name": "we-promise/sure",
+  "url": "https://github.com/we-promise/sure",
+  "description": "The personal finance app for everyone (by everyone)",
+  "language": "Ruby",
+  "stars": 12170,
+  "starsToday": 159,
+  "defaultBranch": "main",
+  "headSha": "264bbf7cb71da65448ab74e4a650a1540dd0d3c4",
+  "durationMs": 5053,
+  "total": {
+   "sources": 6549,
+   "lines": 887618,
+   "tokens": 4760558,
+   "clones": 3254,
+   "duplicatedLines": 49209,
+   "duplicatedTokens": 259671,
+   "percentage": 5.54,
+   "percentageTokens": 5.45
+  },
+  "formats": [
+   {
+    "format": "ruby",
+    "sources": 2927,
+    "lines": 513214,
+    "clones": 1823,
+    "duplicatedLines": 22894,
+    "percentage": 4.46
+   },
+   {
+    "format": "erb",
+    "sources": 815,
+    "lines": 49190,
+    "clones": 662,
+    "duplicatedLines": 6967,
+    "percentage": 14.16
+   },
+   {
+    "format": "yaml",
+    "sources": 2268,
+    "lines": 239639,
+    "clones": 620,
+    "duplicatedLines": 16941,
+    "percentage": 7.07
+   },
+   {
+    "format": "dart",
+    "sources": 154,
+    "lines": 36710,
+    "clones": 70,
+    "duplicatedLines": 872,
+    "percentage": 2.38
+   },
+   {
+    "format": "javascript",
+    "sources": 168,
+    "lines": 21843,
+    "clones": 36,
+    "duplicatedLines": 980,
+    "percentage": 4.49
+   },
+   {
+    "format": "markup",
+    "sources": 41,
+    "lines": 1294,
+    "clones": 30,
+    "duplicatedLines": 415,
+    "percentage": 32.07
+   },
+   {
+    "format": "markdown",
+    "sources": 70,
+    "lines": 16178,
+    "clones": 9,
+    "duplicatedLines": 87,
+    "percentage": 0.54
+   },
+   {
+    "format": "json",
+    "sources": 19,
+    "lines": 2125,
+    "clones": 2,
+    "duplicatedLines": 42,
+    "percentage": 1.98
+   },
+   {
+    "format": "bash",
+    "sources": 17,
+    "lines": 1832,
+    "clones": 1,
+    "duplicatedLines": 2,
+    "percentage": 0.11
+   },
+   {
+    "format": "css",
+    "sources": 12,
+    "lines": 1827,
+    "clones": 1,
+    "duplicatedLines": 9,
+    "percentage": 0.49
+   }
+  ],
+  "topClones": [
+   {
+    "format": "javascript",
+    "lines": 255,
+    "tokens": 1493,
+    "first": {
+     "name": "app/javascript/controllers/preview_sankey_chart_controller.js",
+     "start": 364,
+     "end": 618
+    },
+    "others": [
+     {
+      "name": "app/javascript/controllers/sankey_chart_controller.js",
+      "start": 303,
+      "end": 557
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "  return `${this.gradientPrefix}-link-gradient-${link.source.index}-${link.target.index}-${index}`;",
+      "}",
+      "",
+      "#colorWithOpacity(nodeColor, opacity = 0.1) {",
+      "  const defaultColor = this.constructor.DEFAULT_COLOR;",
+      "  let colorStr = nodeColor || defaultColor;",
+      "",
+      "  // Map CSS variables to hex values for d3 color manipulation",
+      "  colorStr = this.constructor.CSS_VAR_MAP[colorStr] || colorStr;",
+      ""
+     ],
+     "total": 255
+    },
+    "kind": "code"
+   },
+   {
+    "format": "ruby",
+    "lines": 9,
+    "tokens": 58,
+    "first": {
+     "name": "spec/requests/api/v1/account_statements_spec.rb",
+     "start": 5,
+     "end": 13
+    },
+    "others": [
+     {
+      "name": "spec/requests/api/v1/accounts_spec.rb",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "spec/requests/api/v1/balance_sheet_spec.rb",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "spec/requests/api/v1/balances_spec.rb",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "spec/requests/api/v1/budget_categories_spec.rb",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "spec/requests/api/v1/budgets_spec.rb",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "spec/requests/api/v1/cash_flow_spec.rb",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "spec/requests/api/v1/categories_spec.rb",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "spec/requests/api/v1/chats_spec.rb",
+      "start": 5,
+      "end": 19
+     }
+    ],
+    "copies": 25,
+    "excerpt": {
+     "lines": [
+      "RSpec.describe 'API V1 Account Statements', type: :request do",
+      "  let(:family) do",
+      "    Family.create!(name: 'API Family', currency: 'USD', locale: 'en', date_format: '%m-%d-%Y')",
+      "  end",
+      "  let(:user) do",
+      "    family.users.create!(",
+      "      email: 'api-user@example.com',",
+      "      password: 'password123',",
+      "      password_confirmation: 'password123',"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "RSpec.describe 'API V1 Accounts', type: :request do",
+      "  let(:family) do",
+      "    Family.create!(",
+      "      name: 'API Family',",
+      "      currency: 'USD',",
+      "      locale: 'en',",
+      "      date_format: '%m-%d-%Y'",
+      "    )",
+      "  end",
+      ""
+     ],
+     "total": 15
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "ruby",
+    "lines": 11,
+    "tokens": 132,
+    "first": {
+     "name": "test/models/kraken_item/importer_test.rb",
+     "start": 128,
+     "end": 138
+    },
+    "others": [
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 153,
+      "end": 163
+     },
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 180,
+      "end": 190
+     },
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 211,
+      "end": 221
+     },
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 239,
+      "end": 249
+     },
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 313,
+      "end": 323
+     },
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 376,
+      "end": 386
+     },
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 404,
+      "end": 414
+     },
+     {
+      "name": "test/models/kraken_item/importer_test.rb",
+      "start": 432,
+      "end": 442
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "@provider.stubs(:get_asset_info).returns(asset_metadata)",
+      "@provider.stubs(:get_extended_balance).returns(",
+      "  \"ZUSD\" => { \"balance\" => \"50.0\", \"credit\" => \"0\", \"credit_used\" => \"0\", \"hold_trade\" => \"0\" }",
+      ")",
+      "@provider.stubs(:get_earn_allocations).returns(",
+      "  \"items\" => [",
+      "    { \"native_asset\" => \"XXBT\", \"amount_allocated\" => { \"total\" => { \"native\" => \"2.0\" } } }",
+      "  ]",
+      ")",
+      "@provider.stubs(:get_ticker).with(\"XBTUSD\").returns(\"XXBTZUSD\" => { \"c\" => [ \"50000.00\" ] })"
+     ],
+     "total": 11
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "yaml",
+    "lines": 133,
+    "tokens": 524,
+    "first": {
+     "name": "config/locales/defaults/es-AR.yml",
+     "start": 2,
+     "end": 134
+    },
+    "others": [
+     {
+      "name": "config/locales/defaults/es-CR.yml",
+      "start": 2,
+      "end": 134
+     },
+     {
+      "name": "config/locales/defaults/es-NI.yml",
+      "start": 2,
+      "end": 134
+     }
+    ],
+    "copies": 3,
+    "kind": "translations"
+   },
+   {
+    "format": "ruby",
+    "lines": 29,
+    "tokens": 95,
+    "first": {
+     "name": "spec/requests/api/v1/accounts_spec.rb",
+     "start": 6,
+     "end": 34
+    },
+    "others": [
+     {
+      "name": "spec/requests/api/v1/balance_sheet_spec.rb",
+      "start": 6,
+      "end": 34
+     },
+     {
+      "name": "spec/requests/api/v1/cash_flow_spec.rb",
+      "start": 6,
+      "end": 34
+     },
+     {
+      "name": "spec/requests/api/v1/categories_spec.rb",
+      "start": 6,
+      "end": 34
+     },
+     {
+      "name": "spec/requests/api/v1/holdings_spec.rb",
+      "start": 6,
+      "end": 34
+     },
+     {
+      "name": "spec/requests/api/v1/merchants_spec.rb",
+      "start": 6,
+      "end": 34
+     },
+     {
+      "name": "spec/requests/api/v1/recurring_transactions_spec.rb",
+      "start": 6,
+      "end": 34
+     },
+     {
+      "name": "spec/requests/api/v1/tags_spec.rb",
+      "start": 6,
+      "end": 34
+     },
+     {
+      "name": "spec/requests/api/v1/trades_spec.rb",
+      "start": 6,
+      "end": 34
+     }
+    ],
+    "copies": 12,
+    "kind": "tests"
+   },
+   {
+    "format": "ruby",
+    "lines": 7,
+    "tokens": 61,
+    "first": {
+     "name": "spec/requests/api/v1/accounts_spec.rb",
+     "start": 82,
+     "end": 88
+    },
+    "others": [
+     {
+      "name": "spec/requests/api/v1/balances_spec.rb",
+      "start": 73,
+      "end": 79
+     },
+     {
+      "name": "spec/requests/api/v1/budget_categories_spec.rb",
+      "start": 69,
+      "end": 75
+     },
+     {
+      "name": "spec/requests/api/v1/budgets_spec.rb",
+      "start": 61,
+      "end": 67
+     },
+     {
+      "name": "spec/requests/api/v1/categories_spec.rb",
+      "start": 64,
+      "end": 70
+     },
+     {
+      "name": "spec/requests/api/v1/holdings_spec.rb",
+      "start": 69,
+      "end": 75
+     },
+     {
+      "name": "spec/requests/api/v1/imports_spec.rb",
+      "start": 89,
+      "end": 95
+     },
+     {
+      "name": "spec/requests/api/v1/recurring_transactions_spec.rb",
+      "start": 78,
+      "end": 84
+     },
+     {
+      "name": "spec/requests/api/v1/rejected_transfers_spec.rb",
+      "start": 76,
+      "end": 82
+     }
+    ],
+    "copies": 16,
+    "kind": "tests"
+   },
+   {
+    "format": "erb",
+    "lines": 6,
+    "tokens": 56,
+    "first": {
+     "name": "app/views/akahu_items/_akahu_item.html.erb",
+     "start": 33,
+     "end": 38
+    },
+    "others": [
+     {
+      "name": "app/views/brex_items/_brex_item.html.erb",
+      "start": 44,
+      "end": 49
+     },
+     {
+      "name": "app/views/fio_items/_fio_item.html.erb",
+      "start": 34,
+      "end": 39
+     },
+     {
+      "name": "app/views/ibkr_items/_ibkr_item.html.erb",
+      "start": 34,
+      "end": 39
+     },
+     {
+      "name": "app/views/indexa_capital_items/_indexa_capital_item.html.erb",
+      "start": 34,
+      "end": 39
+     },
+     {
+      "name": "app/views/lunchflow_items/_lunchflow_item.html.erb",
+      "start": 33,
+      "end": 38
+     },
+     {
+      "name": "app/views/mercury_items/_mercury_item.html.erb",
+      "start": 33,
+      "end": 38
+     },
+     {
+      "name": "app/views/monobank_items/_monobank_item.html.erb",
+      "start": 33,
+      "end": 38
+     },
+     {
+      "name": "app/views/questrade_items/_questrade_item.html.erb",
+      "start": 27,
+      "end": 32
+     }
+    ],
+    "copies": 17,
+    "kind": "code"
+   },
+   {
+    "format": "erb",
+    "lines": 7,
+    "tokens": 54,
+    "first": {
+     "name": "app/views/akahu_items/select_accounts.html.erb",
+     "start": 1,
+     "end": 7
+    },
+    "others": [
+     {
+      "name": "app/views/brex_items/_api_error.html.erb",
+      "start": 2,
+      "end": 7
+     },
+     {
+      "name": "app/views/brex_items/_setup_required.html.erb",
+      "start": 1,
+      "end": 6
+     },
+     {
+      "name": "app/views/brex_items/select_accounts.html.erb",
+      "start": 1,
+      "end": 7
+     },
+     {
+      "name": "app/views/lunchflow_items/_api_error.html.erb",
+      "start": 2,
+      "end": 7
+     },
+     {
+      "name": "app/views/lunchflow_items/_setup_required.html.erb",
+      "start": 1,
+      "end": 6
+     },
+     {
+      "name": "app/views/lunchflow_items/select_accounts.html.erb",
+      "start": 1,
+      "end": 7
+     },
+     {
+      "name": "app/views/mercury_items/_setup_required.html.erb",
+      "start": 1,
+      "end": 6
+     },
+     {
+      "name": "app/views/mercury_items/select_accounts.html.erb",
+      "start": 1,
+      "end": 7
+     }
+    ],
+    "copies": 17,
+    "kind": "code"
+   },
+   {
+    "format": "yaml",
+    "lines": 215,
+    "tokens": 814,
+    "first": {
+     "name": "config/locales/defaults/el-CY.yml",
+     "start": 2,
+     "end": 216
+    },
+    "others": [
+     {
+      "name": "config/locales/defaults/el.yml",
+      "start": 2,
+      "end": 216
+     }
+    ],
+    "copies": 2,
+    "kind": "translations"
+   },
+   {
+    "format": "yaml",
+    "lines": 215,
+    "tokens": 795,
+    "first": {
+     "name": "config/locales/defaults/en-AU.yml",
+     "start": 2,
+     "end": 216
+    },
+    "others": [
+     {
+      "name": "config/locales/defaults/en-NZ.yml",
+      "start": 2,
+      "end": 216
+     }
+    ],
+    "copies": 2,
+    "kind": "translations"
+   }
+  ],
+  "code": {
+   "sources": 1957,
+   "lines": 276511,
+   "tokens": 1288420,
+   "clones": 567,
+   "duplicatedLines": 8355,
+   "duplicatedTokens": 43595,
+   "percentage": 3.02,
+   "percentageTokens": 3.38,
+   "formats": [
+    {
+     "format": "ruby",
+     "sources": 1669,
+     "lines": 224053,
+     "clones": 478,
+     "duplicatedLines": 6763,
+     "percentage": 3.02
+    },
+    {
+     "format": "dart",
+     "sources": 108,
+     "lines": 29574,
+     "clones": 54,
+     "duplicatedLines": 646,
+     "percentage": 2.18
+    },
+    {
+     "format": "javascript",
+     "sources": 155,
+     "lines": 19768,
+     "clones": 35,
+     "duplicatedLines": 946,
+     "percentage": 4.79
+    },
+    {
+     "format": "rust",
+     "sources": 12,
+     "lines": 1364,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 5,
+     "lines": 1243,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "typescript",
+     "sources": 5,
+     "lines": 369,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "groovy",
+     "sources": 2,
+     "lines": 127,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "swift",
+     "sources": 1,
+     "lines": 13,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 255,
+     "tokens": 1493,
+     "first": {
+      "name": "app/javascript/controllers/preview_sankey_chart_controller.js",
+      "start": 364,
+      "end": 618
+     },
+     "others": [
+      {
+       "name": "app/javascript/controllers/sankey_chart_controller.js",
+       "start": 303,
+       "end": 557
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  return `${this.gradientPrefix}-link-gradient-${link.source.index}-${link.target.index}-${index}`;",
+       "}",
+       "",
+       "#colorWithOpacity(nodeColor, opacity = 0.1) {",
+       "  const defaultColor = this.constructor.DEFAULT_COLOR;",
+       "  let colorStr = nodeColor || defaultColor;",
+       "",
+       "  // Map CSS variables to hex values for d3 color manipulation",
+       "  colorStr = this.constructor.CSS_VAR_MAP[colorStr] || colorStr;",
+       ""
+      ],
+      "total": 255
+     },
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 58,
+     "tokens": 355,
+     "first": {
+      "name": "app/models/fio_item/syncer.rb",
+      "start": 89,
+      "end": 146
+     },
+     "others": [
+      {
+       "name": "app/models/monobank_item/syncer.rb",
+       "start": 84,
+       "end": 141
+      },
+      {
+       "name": "app/models/up_item/syncer.rb",
+       "start": 84,
+       "end": 141
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "def perform_post_sync",
+       "  # no-op",
+       "end",
+       "",
+       "private",
+       "",
+       "  # Raise a SyncError if a single result hash indicates failure.",
+       "  def raise_if_failed_result!(result, stage:)",
+       "    return unless failed_result?(result)",
+       ""
+      ],
+      "total": 58
+     },
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 13,
+     "tokens": 55,
+     "first": {
+      "name": "app/models/binance_item/unlinking.rb",
+      "start": 10,
+      "end": 22
+     },
+     "others": [
+      {
+       "name": "app/models/coinbase_item/unlinking.rb",
+       "start": 15,
+       "end": 27
+      },
+      {
+       "name": "app/models/coinstats_item/unlinking.rb",
+       "start": 16,
+       "end": 28
+      },
+      {
+       "name": "app/models/fio_item/unlinking.rb",
+       "start": 15,
+       "end": 27
+      },
+      {
+       "name": "app/models/ibkr_item/unlinking.rb",
+       "start": 10,
+       "end": 22
+      },
+      {
+       "name": "app/models/indexa_capital_item/unlinking.rb",
+       "start": 15,
+       "end": 27
+      },
+      {
+       "name": "app/models/mercury_item/unlinking.rb",
+       "start": 15,
+       "end": 27
+      },
+      {
+       "name": "app/models/questrade_item/unlinking.rb",
+       "start": 15,
+       "end": 27
+      },
+      {
+       "name": "app/models/redbark_item/unlinking.rb",
+       "start": 15,
+       "end": 27
+      }
+     ],
+     "copies": 13,
+     "excerpt": {
+      "lines": [
+       "links = AccountProvider.where(provider_type: BinanceAccount.name, provider_id: provider_account.id).to_a",
+       "link_ids = links.map(&:id)",
+       "result = {",
+       "  provider_account_id: provider_account.id,",
+       "  name: provider_account.name,",
+       "  provider_link_ids: link_ids",
+       "}",
+       "results << result",
+       "",
+       "next if dry_run"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 25,
+     "tokens": 96,
+     "first": {
+      "name": "app/models/coinbase_item/unlinking.rb",
+      "start": 15,
+      "end": 39
+     },
+     "others": [
+      {
+       "name": "app/models/coinstats_item/unlinking.rb",
+       "start": 16,
+       "end": 40
+      },
+      {
+       "name": "app/models/fio_item/unlinking.rb",
+       "start": 15,
+       "end": 39
+      },
+      {
+       "name": "app/models/indexa_capital_item/unlinking.rb",
+       "start": 15,
+       "end": 39
+      },
+      {
+       "name": "app/models/mercury_item/unlinking.rb",
+       "start": 15,
+       "end": 39
+      },
+      {
+       "name": "app/models/snaptrade_item/unlinking.rb",
+       "start": 15,
+       "end": 39
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 77,
+     "tokens": 477,
+     "first": {
+      "name": "app/javascript/controllers/merchant_select_controller.js",
+      "start": 274,
+      "end": 350
+     },
+     "others": [
+      {
+       "name": "app/javascript/controllers/tag_select_controller.js",
+       "start": 370,
+       "end": 446
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 6,
+     "tokens": 59,
+     "first": {
+      "name": "app/models/akahu_account.rb",
+      "start": 25,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "app/models/coinbase_account.rb",
+       "start": 13,
+       "end": 18
+      },
+      {
+       "name": "app/models/fio_account.rb",
+       "start": 26,
+       "end": 31
+      },
+      {
+       "name": "app/models/ibkr_account.rb",
+       "start": 14,
+       "end": 19
+      },
+      {
+       "name": "app/models/indexa_capital_account.rb",
+       "start": 10,
+       "end": 15
+      },
+      {
+       "name": "app/models/monobank_account.rb",
+       "start": 34,
+       "end": 39
+      },
+      {
+       "name": "app/models/sharesight_account.rb",
+       "start": 15,
+       "end": 20
+      },
+      {
+       "name": "app/models/truelayer_account.rb",
+       "start": 13,
+       "end": 18
+      },
+      {
+       "name": "app/models/up_account.rb",
+       "start": 21,
+       "end": 26
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 25,
+     "tokens": 108,
+     "first": {
+      "name": "db/migrate/20251126094446_create_enable_banking_items_and_accounts.rb",
+      "start": 4,
+      "end": 28
+     },
+     "others": [
+      {
+       "name": "db/migrate/20251221060111_create_coinstats_items_and_accounts.rb",
+       "start": 4,
+       "end": 28
+      },
+      {
+       "name": "db/migrate/20260109220800_create_sophtron_items_and_accounts.rb",
+       "start": 4,
+       "end": 28
+      },
+      {
+       "name": "db/migrate/20260121101345_create_mercury_items_and_accounts.rb",
+       "start": 4,
+       "end": 28
+      },
+      {
+       "name": "db/migrate/20260205110328_create_indexa_capital_items_and_accounts.rb",
+       "start": 6,
+       "end": 30
+      }
+     ],
+     "copies": 5,
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 40,
+     "tokens": 211,
+     "first": {
+      "name": "app/controllers/fio_items_controller.rb",
+      "start": 355,
+      "end": 394
+     },
+     "others": [
+      {
+       "name": "app/controllers/monobank_items_controller.rb",
+       "start": 360,
+       "end": 399
+      },
+      {
+       "name": "app/controllers/up_items_controller.rb",
+       "start": 372,
+       "end": 411
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 25,
+     "tokens": 63,
+     "first": {
+      "name": "app/models/provider/coinbase_adapter.rb",
+      "start": 80,
+      "end": 104
+     },
+     "others": [
+      {
+       "name": "app/models/provider/indexa_capital_adapter.rb",
+       "start": 76,
+       "end": 100
+      },
+      {
+       "name": "app/models/provider/lunchflow_adapter.rb",
+       "start": 82,
+       "end": 106
+      },
+      {
+       "name": "app/models/provider/mercury_adapter.rb",
+       "start": 104,
+       "end": 128
+      },
+      {
+       "name": "app/models/provider/questrade_adapter.rb",
+       "start": 79,
+       "end": 103
+      },
+      {
+       "name": "app/models/provider/redbark_adapter.rb",
+       "start": 74,
+       "end": 98
+      },
+      {
+       "name": "app/models/provider/snaptrade_adapter.rb",
+       "start": 78,
+       "end": 102
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    },
+    {
+     "format": "ruby",
+     "lines": 13,
+     "tokens": 57,
+     "first": {
+      "name": "app/models/brex_item.rb",
+      "start": 74,
+      "end": 86
+     },
+     "others": [
+      {
+       "name": "app/models/coinbase_item.rb",
+       "start": 77,
+       "end": 89
+      },
+      {
+       "name": "app/models/coinstats_item.rb",
+       "start": 75,
+       "end": 87
+      },
+      {
+       "name": "app/models/enable_banking_item.rb",
+       "start": 244,
+       "end": 256
+      },
+      {
+       "name": "app/models/indexa_capital_item.rb",
+       "start": 80,
+       "end": 92
+      },
+      {
+       "name": "app/models/mercury_item.rb",
+       "start": 75,
+       "end": 87
+      },
+      {
+       "name": "app/models/wise_item.rb",
+       "start": 95,
+       "end": 107
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 9,
+    "minified": 0,
+    "sample": [
+     "app/models/transaction/grouper/by_merchant_or_name.rb",
+     "bin/tokens.mjs",
+     "db/migrate/20251102143510_remove_duplicate_account_providers_index.rb",
+     "db/schema.rb",
+     "mobile/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+     "mobile/ios/Runner/GeneratedPluginRegistrant.h",
+     "mobile/ios/Runner/GeneratedPluginRegistrant.m",
+     "mobile/lib/theme/sure_tokens.dart",
+     "spec/spec_helper.rb"
+    ]
+   }
+  },
+  "health": {
+   "score": 66.5,
+   "grade": "C",
+   "size": {
+    "lines": 574862,
+    "files": 3276,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 4.3,
+     "adjusted": 4.3,
+     "lines": 24738,
+     "halfLife": 8.5,
+     "formats": [
+      "ruby",
+      "dart",
+      "javascript",
+      "rust",
+      "bash",
+      "typescript",
+      "groovy",
+      "docker",
+      "objectivec",
+      "java",
+      "c-header",
+      "swift"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 70.4
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 33.6,
+     "adjusted": 33.5,
+     "lines": 192951,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 62.8
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 77142,
+   "mean": 23.5,
+   "files": [
+    {
+     "path": "app/models/wise_item/importer.rb",
+     "complexity": 866,
+     "lines": 2037,
+     "bytes": 97127
+    },
+    {
+     "path": "app/models/family/data_importer.rb",
+     "complexity": 578,
+     "lines": 1781,
+     "bytes": 68470
+    },
+    {
+     "path": "app/models/provider/trade_republic_client.rb",
+     "complexity": 544,
+     "lines": 1866,
+     "bytes": 76943
+    },
+    {
+     "path": "app/models/simplefin_item/importer.rb",
+     "complexity": 473,
+     "lines": 1556,
+     "bytes": 68808
+    },
+    {
+     "path": "app/models/goal.rb",
+     "complexity": 434,
+     "lines": 1492,
+     "bytes": 66402
+    },
+    {
+     "path": "app/models/trade_republic_account/activities_processor.rb",
+     "complexity": 424,
+     "lines": 1064,
+     "bytes": 44611
+    },
+    {
+     "path": "app/controllers/sophtron_items_controller.rb",
+     "complexity": 420,
+     "lines": 1222,
+     "bytes": 44448
+    },
+    {
+     "path": "app/models/user.rb",
+     "complexity": 398,
+     "lines": 1058,
+     "bytes": 37586
+    },
+    {
+     "path": "app/models/enable_banking_item/importer.rb",
+     "complexity": 348,
+     "lines": 1175,
+     "bytes": 55255
+    },
+    {
+     "path": "app/models/account/provider_import_adapter.rb",
+     "complexity": 342,
+     "lines": 1233,
+     "bytes": 59378
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 74.58,
+   "findings": 140,
+   "files": 181,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 139
+    },
+    {
+     "category": "unused-export",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/preview_sankey_chart_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 750
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/sankey_chart_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 698
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/goal_projection_chart_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 662
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/loan_payoff_chart_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 655
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/tag_select_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 485
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/select_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 413
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/merchant_select_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 380
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/category_select_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 372
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/donut_chart_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 351
+    },
+    {
+     "category": "unused-file",
+     "path": "app/javascript/controllers/spending_chart_controller.js",
+     "name": "",
+     "line": 1,
+     "lines": 330
+    }
+   ]
+  }
+ }
+}

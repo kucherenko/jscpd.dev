@@ -161,38 +161,54 @@
    "codeSources": 31,
    "healthScore": 73.9,
    "healthGrade": "B"
+  },
+  {
+   "date": "2026-11-11",
+   "rank": 2,
+   "stars": 115306,
+   "starsToday": 465,
+   "headSha": "301b02b12bff98e4688e6984af6556802322bbde",
+   "sources": 327,
+   "lines": 27189,
+   "clones": 64,
+   "duplicatedLines": 736,
+   "percentage": 2.71,
+   "codePercentage": 4.78,
+   "codeSources": 25,
+   "healthScore": 68.9,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-10-10",
-  "generatedAt": "2026-10-10T05:30:09.856Z",
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T05:21:30.833Z",
   "name": "addyosmani/agent-skills",
   "url": "https://github.com/addyosmani/agent-skills",
   "description": "Production-grade engineering skills for AI coding agents.",
   "language": "JavaScript",
-  "stars": 104136,
-  "starsToday": 436,
+  "stars": 115306,
+  "starsToday": 465,
   "defaultBranch": "main",
-  "headSha": "1401c8b8030e023baeebb31781a6653fe8e93026",
-  "durationMs": 1043,
+  "headSha": "301b02b12bff98e4688e6984af6556802322bbde",
+  "durationMs": 1133,
   "total": {
-   "sources": 302,
-   "lines": 25858,
-   "tokens": 214484,
-   "clones": 51,
-   "duplicatedLines": 608,
-   "duplicatedTokens": 5494,
-   "percentage": 2.35,
-   "percentageTokens": 2.56
+   "sources": 327,
+   "lines": 27189,
+   "tokens": 230742,
+   "clones": 64,
+   "duplicatedLines": 736,
+   "duplicatedTokens": 6438,
+   "percentage": 2.71,
+   "percentageTokens": 2.79
   },
   "formats": [
    {
     "format": "javascript",
-    "sources": 30,
-    "lines": 4685,
-    "clones": 22,
-    "duplicatedLines": 220,
-    "percentage": 4.7
+    "sources": 38,
+    "lines": 5857,
+    "clones": 28,
+    "duplicatedLines": 265,
+    "percentage": 4.52
    },
    {
     "format": "toml",
@@ -204,48 +220,56 @@
    },
    {
     "format": "bash",
-    "sources": 32,
-    "lines": 2326,
+    "sources": 21,
+    "lines": 1895,
     "clones": 7,
     "duplicatedLines": 76,
-    "percentage": 3.27
+    "percentage": 4.01
+   },
+   {
+    "format": "diff",
+    "sources": 7,
+    "lines": 137,
+    "clones": 6,
+    "duplicatedLines": 53,
+    "percentage": 38.69
    },
    {
     "format": "markdown",
-    "sources": 99,
-    "lines": 14149,
+    "sources": 113,
+    "lines": 14523,
     "clones": 4,
     "duplicatedLines": 32,
-    "percentage": 0.23
+    "percentage": 0.22
+   },
+   {
+    "format": "python",
+    "sources": 8,
+    "lines": 188,
+    "clones": 2,
+    "duplicatedLines": 38,
+    "percentage": 20.21
    },
    {
     "format": "typescript",
     "sources": 13,
-    "lines": 658,
+    "lines": 672,
     "clones": 1,
     "duplicatedLines": 7,
-    "percentage": 1.06
+    "percentage": 1.04
    },
    {
     "format": "yaml",
-    "sources": 27,
-    "lines": 458,
+    "sources": 33,
+    "lines": 492,
     "clones": 1,
     "duplicatedLines": 8,
-    "percentage": 1.75
-   },
-   {
-    "format": "diff",
-    "sources": 4,
-    "lines": 71,
-    "clones": 1,
-    "duplicatedLines": 8,
-    "percentage": 11.27
+    "percentage": 1.63
    },
    {
     "format": "json",
-    "sources": 32,
-    "lines": 1441,
+    "sources": 33,
+    "lines": 1585,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -253,15 +277,7 @@
    {
     "format": "text",
     "sources": 34,
-    "lines": 1000,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
-    "format": "tsx",
-    "sources": 5,
-    "lines": 172,
+    "lines": 1001,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -325,7 +341,7 @@
       "",
       "Once all three reports are back, the main agent (not a sub-persona) synthesizes them:",
       "",
-      "1. **Code Quality** — Aggregate Critical/Important findings from `code-reviewer` and any failing tests, lint, or build output. Resolve duplicates between revie…",
+      "1. **Code Quality** — Aggregate Critical/Required findings from `code-reviewer` and any failing tests, lint, or build output. Resolve duplicates between review…",
       "2. **Security** — Promote any Critical/High `security-auditor` findings to launch blockers. Cross-reference with `code-reviewer`'s security axis.",
       "3. **Performance** — Pull from `code-reviewer`'s performance axis; cross-check Core Web Vitals if applicable.",
       "4. **Accessibility** — Verify keyboard nav, screen reader support, contrast (not covered by the three personas — handle directly here, or invoke the accessibil…",
@@ -371,6 +387,30 @@
     "kind": "data"
    },
    {
+    "format": "diff",
+    "lines": 11,
+    "tokens": 119,
+    "first": {
+     "name": "evals/plugin/code-review-stays-quiet-on-commit-message/prompt.md",
+     "start": 11,
+     "end": 21
+    },
+    "others": [
+     {
+      "name": "evals/plugin/gitflow-stays-quiet-on-what-broke/prompt.md",
+      "start": 11,
+      "end": 21
+     },
+     {
+      "name": "evals/plugin/tdd-stays-quiet-on-debug/prompt.md",
+      "start": 11,
+      "end": 21
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   },
+   {
     "format": "toml",
     "lines": 9,
     "tokens": 223,
@@ -392,7 +432,7 @@
    {
     "format": "toml",
     "lines": 16,
-    "tokens": 163,
+    "tokens": 165,
     "first": {
      "name": ".gemini/commands/review.toml",
      "start": 1,
@@ -488,65 +528,33 @@
     ],
     "copies": 2,
     "kind": "data"
-   },
-   {
-    "format": "javascript",
-    "lines": 10,
-    "tokens": 65,
-    "first": {
-     "name": "scripts/validate-artifact-paths-test.js",
-     "start": 3,
-     "end": 12
-    },
-    "others": [
-     {
-      "name": "scripts/validate-commands-test.js",
-      "start": 3,
-      "end": 12
-     },
-     {
-      "name": "scripts/validate-reference-links-test.js",
-      "start": 3,
-      "end": 12
-     }
-    ],
-    "copies": 3,
-    "kind": "code"
    }
   ],
   "code": {
-   "sources": 31,
-   "lines": 6604,
-   "tokens": 35141,
-   "clones": 29,
-   "duplicatedLines": 296,
-   "duplicatedTokens": 1949,
-   "percentage": 4.48,
-   "percentageTokens": 5.55,
+   "sources": 25,
+   "lines": 7131,
+   "tokens": 42662,
+   "clones": 35,
+   "duplicatedLines": 341,
+   "duplicatedTokens": 2317,
+   "percentage": 4.78,
+   "percentageTokens": 5.43,
    "formats": [
     {
      "format": "javascript",
-     "sources": 14,
-     "lines": 4347,
-     "clones": 22,
-     "duplicatedLines": 220,
-     "percentage": 5.06
+     "sources": 18,
+     "lines": 5448,
+     "clones": 28,
+     "duplicatedLines": 265,
+     "percentage": 4.86
     },
     {
      "format": "bash",
-     "sources": 16,
-     "lines": 2089,
+     "sources": 7,
+     "lines": 1683,
      "clones": 7,
      "duplicatedLines": 76,
-     "percentage": 3.64
-    },
-    {
-     "format": "perl",
-     "sources": 1,
-     "lines": 168,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "percentage": 4.52
     }
    ],
    "topClones": [
@@ -703,18 +711,42 @@
     },
     {
      "format": "javascript",
-     "lines": 14,
-     "tokens": 101,
+     "lines": 7,
+     "tokens": 54,
      "first": {
       "name": "scripts/run-evals-test.js",
-      "start": 319,
-      "end": 332
+      "start": 503,
+      "end": 509
      },
      "others": [
       {
        "name": "scripts/run-evals-test.js",
-       "start": 342,
-       "end": 355
+       "start": 528,
+       "end": 534
+      },
+      {
+       "name": "scripts/run-evals-test.js",
+       "start": 1009,
+       "end": 1013
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 14,
+     "tokens": 101,
+     "first": {
+      "name": "scripts/run-evals-test.js",
+      "start": 673,
+      "end": 686
+     },
+     "others": [
+      {
+       "name": "scripts/run-evals-test.js",
+       "start": 696,
+       "end": 709
       }
      ],
      "copies": 2,
@@ -726,14 +758,14 @@
      "tokens": 86,
      "first": {
       "name": "scripts/run-evals-test.js",
-      "start": 319,
-      "end": 328
+      "start": 673,
+      "end": 682
      },
      "others": [
       {
        "name": "scripts/run-evals-test.js",
-       "start": 389,
-       "end": 398
+       "start": 743,
+       "end": 752
       }
      ],
      "copies": 2,
@@ -751,8 +783,8 @@
      "others": [
       {
        "name": "hooks/simplify-ignore.sh",
-       "start": 49,
-       "end": 55
+       "start": 50,
+       "end": 56
       }
      ],
      "copies": 2,
@@ -783,33 +815,14 @@
      "tokens": 74,
      "first": {
       "name": "scripts/run-evals-test.js",
-      "start": 205,
-      "end": 212
+      "start": 487,
+      "end": 494
      },
      "others": [
       {
        "name": "scripts/run-evals-test.js",
-       "start": 255,
-       "end": 262
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "bash",
-     "lines": 12,
-     "tokens": 72,
-     "first": {
-      "name": "hooks/sdd-cache-test.sh",
-      "start": 52,
-      "end": 63
-     },
-     "others": [
-      {
-       "name": "hooks/simplify-ignore-test.sh",
-       "start": 36,
-       "end": 47
+       "start": 537,
+       "end": 544
       }
      ],
      "copies": 2,
@@ -823,10 +836,10 @@
    }
   },
   "health": {
-   "score": 73.9,
-   "grade": "B",
+   "score": 68.9,
+   "grade": "C",
    "size": {
-    "lines": 6857,
+    "lines": 7541,
     "files": 48,
     "class": "S"
    },
@@ -834,14 +847,13 @@
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 4.3,
-     "adjusted": 4.1,
-     "lines": 296,
+     "value": 5,
+     "adjusted": 4.7,
+     "lines": 379,
      "halfLife": 8.5,
      "formats": [
       "javascript",
       "bash",
-      "perl",
       "python",
       "tsx"
      ],
@@ -851,101 +863,101 @@
       "data"
      ],
      "weight": 1,
-     "score": 71.4
+     "score": 68.1
     },
     {
      "id": "dead-code",
      "source": "jscpd",
      "value": 0,
-     "adjusted": 0.9,
+     "adjusted": 0.8,
      "lines": 0,
      "halfLife": 7.5,
-     "coverage": 67.6,
-     "weight": 0.676,
-     "score": 91.7
+     "coverage": 78.1,
+     "weight": 0.781,
+     "score": 93
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 32.4,
-     "adjusted": 29.8,
-     "lines": 2224,
+     "value": 48.8,
+     "adjusted": 42.9,
+     "lines": 3678,
      "halfLife": 50,
      "weight": 1,
-     "score": 66.1
+     "score": 55.1
     }
    ]
   },
   "complexity": {
-   "total": 958,
-   "mean": 20,
+   "total": 1170,
+   "mean": 24.4,
    "files": [
     {
      "path": "scripts/run-evals.js",
-     "complexity": 212,
-     "lines": 638,
-     "bytes": 26079
+     "complexity": 241,
+     "lines": 750,
+     "bytes": 30888
     },
     {
      "path": "hooks/simplify-ignore.sh",
-     "complexity": 84,
-     "lines": 352,
-     "bytes": 14480
+     "complexity": 114,
+     "lines": 464,
+     "bytes": 19828
     },
     {
      "path": "scripts/lib/skill-lint.js",
-     "complexity": 84,
-     "lines": 584,
-     "bytes": 25294
+     "complexity": 96,
+     "lines": 639,
+     "bytes": 27198
     },
     {
      "path": "scripts/lib/skill-lint-test.js",
-     "complexity": 78,
-     "lines": 650,
-     "bytes": 25444
+     "complexity": 95,
+     "lines": 762,
+     "bytes": 30180
     },
     {
      "path": "scripts/run-evals-test.js",
-     "complexity": 44,
-     "lines": 623,
-     "bytes": 23277
+     "complexity": 91,
+     "lines": 1063,
+     "bytes": 45559
     },
     {
-     "path": "scripts/validate-commands.js",
-     "complexity": 44,
-     "lines": 222,
-     "bytes": 8691
+     "path": "hooks/simplify-ignore-test.sh",
+     "complexity": 43,
+     "lines": 652,
+     "bytes": 26190
     },
     {
      "path": "scripts/floor-guard-reference-test.js",
-     "complexity": 39,
-     "lines": 291,
-     "bytes": 11424
+     "complexity": 42,
+     "lines": 323,
+     "bytes": 12781
+    },
+    {
+     "path": "scripts/validate-commands.js",
+     "complexity": 41,
+     "lines": 212,
+     "bytes": 8307
+    },
+    {
+     "path": "scripts/lib/execution-status.js",
+     "complexity": 36,
+     "lines": 44,
+     "bytes": 2061
     },
     {
      "path": "scripts/validate-reference-links.js",
-     "complexity": 34,
-     "lines": 187,
-     "bytes": 7718
-    },
-    {
-     "path": "scripts/validate-reference-links-test.js",
-     "complexity": 32,
-     "lines": 495,
-     "bytes": 19013
-    },
-    {
-     "path": "hooks/sdd-cache-pre.sh",
-     "complexity": 27,
-     "lines": 106,
-     "bytes": 4261
+     "complexity": 35,
+     "lines": 189,
+     "bytes": 7804
     }
    ]
   },
   "deadCode": {
    "percentage": 0,
    "findings": 0,
-   "files": 36,
+   "files": 46,
    "byCategory": [],
    "largest": []
   }
