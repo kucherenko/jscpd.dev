@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy/Paste Detector Report</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f7fafc; color: #2d3748; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .header { background: #fff; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); padding: 1rem 0; }
+    .header-inner { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
+    .header h1 { font-size: 1.875rem; font-weight: 600; color: #2d3748; margin: 0; }
+    .main { max-width: 80rem; margin: 2rem auto; padding: 0 1rem; }
+    .card { background: #fff; box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06); border-radius: 0.25rem; padding: 1.5rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.5rem; font-weight: 600; color: #4a5568; margin: 0 0 1rem 0; }
+    .dashboard { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .stat-card { padding: 1rem; border-radius: 0.25rem; text-align: center; }
+    .stat-card h3 { font-size: 1.125rem; font-weight: 600; margin: 0 0 0.5rem 0; }
+    .stat-card .val { font-size: 2.25rem; font-weight: 700; }
+    .stat-blue { background: #bee3f8; color: #2a4365; }
+    .stat-green { background: #c6f6d5; color: #276749; }
+    .stat-yellow { background: #fefcbf; color: #975a16; }
+    .stat-red { background: #fed7d7; color: #9b2c2c; }
+    table { width: 100%; border-collapse: collapse; }
+    thead th { background: #edf2f7; color: #718096; text-transform: uppercase; font-size: 0.75rem; font-weight: 600; padding: 0.75rem 1.5rem; text-align: left; }
+    tbody td { padding: 0.75rem 1.5rem; border-bottom: 1px solid #edf2f7; font-size: 0.875rem; }
+    tbody tr:hover { background: #f7fafc; }
+    .clone-section { margin-bottom: 2rem; }
+    .clone-section h2 { border-bottom: 2px solid #edf2f7; padding-bottom: 0.5rem; }
+    .clone-item { padding: 1rem 0; border-bottom: 1px solid #edf2f7; }
+    .clone-item:last-child { border-bottom: none; }
+    .clone-info { color: #718096; font-size: 0.875rem; margin-bottom: 0.25rem; }
+    .toggle-btn { background: #a0aec0; color: #fff; border: none; padding: 0.125rem 0.5rem; font-size: 0.75rem; border-radius: 0.25rem; cursor: pointer; margin-left: 0.5rem; }
+    .toggle-btn:focus { outline: none; }
+    .code-pair { display: none; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 0.5rem; }
+    .code-pair.visible { display: grid; }
+    .code-side { min-width: 0; background: #f7fafc; border: 1px solid #edf2f7; border-radius: 0.25rem; }
+    .code-file { padding: 0.5rem 1rem; border-bottom: 1px solid #edf2f7; color: #718096; font-size: 0.75rem; overflow-wrap: anywhere; }
+    .code-lines { display: flex; overflow-x: auto; }
+    .code-gutter, .code-text { margin: 0; padding: 0.75rem 1rem; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 0.875rem; line-height: 1.5; white-space: pre; }
+    .code-gutter { position: sticky; left: 0; padding-right: 0.75rem; background: #f7fafc; border-right: 1px solid #edf2f7; color: #a0aec0; text-align: right; user-select: none; }
+    .code-text { flex: 1; color: #2d3748; }
+    .code-text code { font: inherit; }
+    .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #5f6b7a; font-style: italic; }
+    .token.keyword, .token.atrule, .token.important, .token.rule { color: #6b46c1; }
+    .token.string, .token.char, .token.attr-value, .token.template-string, .token.regex, .token.url, .token.inserted { color: #276749; }
+    .token.number, .token.boolean, .token.constant, .token.symbol { color: #9c4221; }
+    .token.function, .token.class-name { color: #2b6cb0; }
+    .token.tag, .token.selector, .token.property, .token.deleted { color: #9b2c2c; }
+    .token.attr-name, .token.builtin, .token.variable { color: #975a16; }
+    .token.punctuation, .token.operator { color: #4a5568; }
+    .token.bold { font-weight: 700; }
+    .token.italic { font-style: italic; }
+    .no-dupes { color: #27ae60; font-weight: 700; font-size: 1.125rem; }
+    .footer { margin-top: 3rem; padding: 2rem 0; border-top: 1px solid #e0e0e0; text-align: center; font-family: -apple-system, sans-serif; color: #666; }
+    .footer p { margin: 0.5rem 0; font-size: 0.875rem; }
+    .footer a { color: #0066cc; }
+    .footer .small { font-size: 0.75rem; color: #999; }
+    @media (max-width: 768px) { .dashboard { grid-template-columns: repeat(2, 1fr); } .code-pair { grid-template-columns: minmax(0, 1fr); } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1>jscpd - copy/paste report</h1>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="card">
+      <section>
+        <h2>Dashboard</h2>
+        <div class="dashboard">
+          <div class="stat-card stat-blue">
+            <h3>Total Files</h3>
+            <div class="val">7</div>
+          </div>
+          <div class="stat-card stat-green">
+            <h3>Total Lines of Code</h3>
+            <div class="val">151</div>
+          </div>
+          <div class="stat-card stat-yellow">
+            <h3>Number of Clones</h3>
+            <div class="val">3</div>
+          </div>
+          <div class="stat-card stat-red">
+            <h3>Duplicated Lines</h3>
+            <div class="val">49 (32.45%)</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="card">
+      <section>
+        <h2>Formats with Duplications</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Format</th>
+              <th>Files</th>
+              <th>Lines</th>
+              <th>Clones</th>
+              <th>Duplicated Lines</th>
+              <th>Duplicated Tokens</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td><a href="#docker-clones">docker</a></td>
+              <td>2</td>
+              <td>30</td>
+              <td>1</td>
+              <td>13 (43.33%)</td>
+              <td>94 (39.66%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#elixir-clones">elixir</a></td>
+              <td>2</td>
+              <td>40</td>
+              <td>1</td>
+              <td>17 (42.50%)</td>
+              <td>116 (46.77%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#makefile-clones">makefile</a></td>
+              <td>2</td>
+              <td>42</td>
+              <td>1</td>
+              <td>19 (45.24%)</td>
+              <td>104 (45.22%)</td>
+            </tr>
+            
+            <tr>
+              <td><a href="#markdown-clones">markdown</a></td>
+              <td>1</td>
+              <td>39</td>
+              <td>0</td>
+              <td>0 (0.00%)</td>
+              <td>0 (0.00%)</td>
+            </tr>
+            
+            <tr style="font-weight: 700;">
+              <td>Total</td>
+              <td>7</td>
+              <td>151</td>
+              <td>3</td>
+              <td>49 (32.45%)</td>
+              <td>314 (26.79%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    
+    
+    <div class="card">
+      <section class="clone-section">
+        <a name="docker-clones"></a>
+        <h2>docker</h2>
+        <div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              services/api/Dockerfile (Line 1:1 - Line 13:9),
+              services/worker/Dockerfile (Line 1:1 - Line 13:9)
+            </div>
+            <div>
+              <button class="toggle-btn" data-code="code-docker-1" onclick="toggle(this.dataset.code)">Show code</button>
+            </div>
+            <div id="code-docker-1" class="code-pair">
+              
+              <div class="code-side">
+                <div class="code-file">services/api/Dockerfile</div>
+                <div class="code-lines"><pre class="code-gutter" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre><pre class="code-text"><code class="language-docker"># syntax=docker/dockerfile:1.7
+FROM node:22-alpine AS deps
+WORKDIR /srv/app
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev --ignore-scripts
+
+FROM node:22-alpine AS runtime
+ENV NODE_ENV=production
+WORKDIR /srv/app
+RUN addgroup -S app &#38;&#38; adduser -S app -G app
+COPY --from=deps /srv/app/node_modules ./node_modules
+COPY dist/* ./dist/
+USER app</code></pre></div>
+              </div>
+              
+              <div class="code-side">
+                <div class="code-file">services/worker/Dockerfile</div>
+                <div class="code-lines"><pre class="code-gutter" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre><pre class="code-text"><code class="language-docker"># syntax=docker/dockerfile:1.7
+FROM node:22-alpine AS deps
+WORKDIR /srv/app
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev --ignore-scripts
+
+FROM node:22-alpine AS runtime
+ENV NODE_ENV=production
+WORKDIR /srv/app
+RUN addgroup -S app &#38;&#38; adduser -S app -G app
+COPY --from=deps /srv/app/node_modules ./node_modules
+COPY dist/* ./dist/
+USER app</code></pre></div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    
+    <div class="card">
+      <section class="clone-section">
+        <a name="elixir-clones"></a>
+        <h2>elixir</h2>
+        <div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              lib/shop/invoice_totals.ex (Line 4:3 - Line 20:4),
+              lib/shop/refund_totals.ex (Line 4:3 - Line 20:4)
+            </div>
+            <div>
+              <button class="toggle-btn" data-code="code-elixir-1" onclick="toggle(this.dataset.code)">Show code</button>
+            </div>
+            <div id="code-elixir-1" class="code-pair">
+              
+              <div class="code-side">
+                <div class="code-file">lib/shop/invoice_totals.ex</div>
+                <div class="code-lines"><pre class="code-gutter" aria-hidden="true">4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre><pre class="code-text"><code class="language-elixir">  def total(lines, opts \\ []) do
+    currency = Keyword.get(opts, :currency, &#34;EUR&#34;)
+
+    lines
+    |&#62; Enum.reject(&#38;(&#38;1.quantity == 0))
+    |&#62; Enum.map(fn line -&#62; line.unit_price * line.quantity end)
+    |&#62; Enum.sum()
+    |&#62; round_to_cents()
+    |&#62; then(&#38;{currency, &#38;1})
+  end
+
+  defp round_to_cents(amount) when is_float(amount) do
+    Float.round(amount, 2)
+  end
+
+  defp round_to_cents(amount), do: amount
+end</code></pre></div>
+              </div>
+              
+              <div class="code-side">
+                <div class="code-file">lib/shop/refund_totals.ex</div>
+                <div class="code-lines"><pre class="code-gutter" aria-hidden="true">4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre><pre class="code-text"><code class="language-elixir">  def total(lines, opts \\ []) do
+    currency = Keyword.get(opts, :currency, &#34;EUR&#34;)
+
+    lines
+    |&#62; Enum.reject(&#38;(&#38;1.quantity == 0))
+    |&#62; Enum.map(fn line -&#62; line.unit_price * line.quantity end)
+    |&#62; Enum.sum()
+    |&#62; round_to_cents()
+    |&#62; then(&#38;{currency, &#38;1})
+  end
+
+  defp round_to_cents(amount) when is_float(amount) do
+    Float.round(amount, 2)
+  end
+
+  defp round_to_cents(amount), do: amount
+end</code></pre></div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    
+    <div class="card">
+      <section class="clone-section">
+        <a name="makefile-clones"></a>
+        <h2>makefile</h2>
+        <div>
+          
+          <div class="clone-item">
+            <div class="clone-info">
+              services/api/Makefile (Line 3:1 - Line 21:22),
+              services/worker/Makefile (Line 3:1 - Line 21:22)
+            </div>
+            <div>
+              <button class="toggle-btn" data-code="code-makefile-1" onclick="toggle(this.dataset.code)">Show code</button>
+            </div>
+            <div id="code-makefile-1" class="code-pair">
+              
+              <div class="code-side">
+                <div class="code-file">services/api/Makefile</div>
+                <div class="code-lines"><pre class="code-gutter" aria-hidden="true">3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre><pre class="code-text"><code class="language-makefile">IMAGE := registry.example.com/shop/$(SERVICE)
+VERSION ?= $(shell git describe --tags --always --dirty)
+
+.PHONY: build push test lint clean
+
+build:
+	docker build --pull -t $(IMAGE):$(VERSION) .
+
+push: build
+	docker push $(IMAGE):$(VERSION)
+
+test:
+	npm test -- --reporter=dot
+
+lint:
+	npx eslint src --max-warnings=0
+
+clean:
+	rm -rf dist coverage</code></pre></div>
+              </div>
+              
+              <div class="code-side">
+                <div class="code-file">services/worker/Makefile</div>
+                <div class="code-lines"><pre class="code-gutter" aria-hidden="true">3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre><pre class="code-text"><code class="language-makefile">IMAGE := registry.example.com/shop/$(SERVICE)
+VERSION ?= $(shell git describe --tags --always --dirty)
+
+.PHONY: build push test lint clean
+
+build:
+	docker build --pull -t $(IMAGE):$(VERSION) .
+
+push: build
+	docker push $(IMAGE):$(VERSION)
+
+test:
+	npm test -- --reporter=dot
+
+lint:
+	npx eslint src --max-warnings=0
+
+clean:
+	rm -rf dist coverage</code></pre></div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    
+    
+  </div>
+
+  <div class="footer">
+    <p>Generated by <a href="https://jscpd.dev" target="_blank">jscpd</a> v5.4.3 by <a href="https://github.com/kucherenko" target="_blank">Andrey Kucherenko</a></p>
+    <p><a href="https://www.npmjs.com/package/jscpd" target="_blank"><img src="https://img.shields.io/npm/dw/jscpd.svg?style=flat-square" alt="npm weekly downloads" style="vertical-align: middle;"></a></p>
+  </div>
+
+  
+  <script>window.Prism = { manual: true };</script>
+  <script>/*!
+MIT LICENSE
+
+Copyright (c) 2012 Lea Verou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+/*! Prism 1.30.0 (https://prismjs.com), MIT License, see LICENSE next to this file. Bundled by rust/scripts/vendor-prism.py. */
+
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(e){var n=/(?:^|\s)lang(?:uage)?-([\w-]+)(?=\s|$)/i,t=0,r={},a={manual:e.Prism&&e.Prism.manual,disableWorkerMessageHandler:e.Prism&&e.Prism.disableWorkerMessageHandler,util:{encode:function e(n){return n instanceof i?new i(n.type,e(n.content),n.alias):Array.isArray(n)?n.map(e):n.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).slice(8,-1)},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function e(n,t){var r,i;switch(t=t||{},a.util.type(n)){case"Object":if(i=a.util.objId(n),t[i])return t[i];for(var l in r={},t[i]=r,n)n.hasOwnProperty(l)&&(r[l]=e(n[l],t));return r;case"Array":return i=a.util.objId(n),t[i]?t[i]:(r=[],t[i]=r,n.forEach((function(n,a){r[a]=e(n,t)})),r);default:return n}},getLanguage:function(e){for(;e;){var t=n.exec(e.className);if(t)return t[1].toLowerCase();e=e.parentElement}return"none"},setLanguage:function(e,t){e.className=e.className.replace(RegExp(n,"gi"),""),e.classList.add("language-"+t)},currentScript:function(){if("undefined"==typeof document)return null;if(document.currentScript&&"SCRIPT"===document.currentScript.tagName)return document.currentScript;try{throw new Error}catch(r){var e=(/at [^(\r\n]*\((.*):[^:]+:[^:]+\)$/i.exec(r.stack)||[])[1];if(e){var n=document.getElementsByTagName("script");for(var t in n)if(n[t].src==e)return n[t]}return null}},isActive:function(e,n,t){for(var r="no-"+n;e;){var a=e.classList;if(a.contains(n))return!0;if(a.contains(r))return!1;e=e.parentElement}return!!t}},languages:{plain:r,plaintext:r,text:r,txt:r,extend:function(e,n){var t=a.util.clone(a.languages[e]);for(var r in n)t[r]=n[r];return t},insertBefore:function(e,n,t,r){var i=(r=r||a.languages)[e],l={};for(var o in i)if(i.hasOwnProperty(o)){if(o==n)for(var s in t)t.hasOwnProperty(s)&&(l[s]=t[s]);t.hasOwnProperty(o)||(l[o]=i[o])}var u=r[e];return r[e]=l,a.languages.DFS(a.languages,(function(n,t){t===u&&n!=e&&(this[n]=l)})),l},DFS:function e(n,t,r,i){i=i||{};var l=a.util.objId;for(var o in n)if(n.hasOwnProperty(o)){t.call(n,o,n[o],r||o);var s=n[o],u=a.util.type(s);"Object"!==u||i[l(s)]?"Array"!==u||i[l(s)]||(i[l(s)]=!0,e(s,t,o,i)):(i[l(s)]=!0,e(s,t,null,i))}}},plugins:{},highlightAll:function(e,n){a.highlightAllUnder(document,e,n)},highlightAllUnder:function(e,n,t){var r={callback:t,container:e,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};a.hooks.run("before-highlightall",r),r.elements=Array.prototype.slice.apply(r.container.querySelectorAll(r.selector)),a.hooks.run("before-all-elements-highlight",r);for(var i,l=0;i=r.elements[l++];)a.highlightElement(i,!0===n,r.callback)},highlightElement:function(n,t,r){var i=a.util.getLanguage(n),l=a.languages[i];a.util.setLanguage(n,i);var o=n.parentElement;o&&"pre"===o.nodeName.toLowerCase()&&a.util.setLanguage(o,i);var s={element:n,language:i,grammar:l,code:n.textContent};function u(e){s.highlightedCode=e,a.hooks.run("before-insert",s),s.element.innerHTML=s.highlightedCode,a.hooks.run("after-highlight",s),a.hooks.run("complete",s),r&&r.call(s.element)}if(a.hooks.run("before-sanity-check",s),(o=s.element.parentElement)&&"pre"===o.nodeName.toLowerCase()&&!o.hasAttribute("tabindex")&&o.setAttribute("tabindex","0"),!s.code)return a.hooks.run("complete",s),void(r&&r.call(s.element));if(a.hooks.run("before-highlight",s),s.grammar)if(t&&e.Worker){var c=new Worker(a.filename);c.onmessage=function(e){u(e.data)},c.postMessage(JSON.stringify({language:s.language,code:s.code,immediateClose:!0}))}else u(a.highlight(s.code,s.grammar,s.language));else u(a.util.encode(s.code))},highlight:function(e,n,t){var r={code:e,grammar:n,language:t};if(a.hooks.run("before-tokenize",r),!r.grammar)throw new Error('The language "'+r.language+'" has no grammar.');return r.tokens=a.tokenize(r.code,r.grammar),a.hooks.run("after-tokenize",r),i.stringify(a.util.encode(r.tokens),r.language)},tokenize:function(e,n){var t=n.rest;if(t){for(var r in t)n[r]=t[r];delete n.rest}var a=new s;return u(a,a.head,e),o(e,a,n,a.head,0),function(e){for(var n=[],t=e.head.next;t!==e.tail;)n.push(t.value),t=t.next;return n}(a)},hooks:{all:{},add:function(e,n){var t=a.hooks.all;t[e]=t[e]||[],t[e].push(n)},run:function(e,n){var t=a.hooks.all[e];if(t&&t.length)for(var r,i=0;r=t[i++];)r(n)}},Token:i};function i(e,n,t,r){this.type=e,this.content=n,this.alias=t,this.length=0|(r||"").length}function l(e,n,t,r){e.lastIndex=n;var a=e.exec(t);if(a&&r&&a[1]){var i=a[1].length;a.index+=i,a[0]=a[0].slice(i)}return a}function o(e,n,t,r,s,g){for(var f in t)if(t.hasOwnProperty(f)&&t[f]){var h=t[f];h=Array.isArray(h)?h:[h];for(var d=0;d<h.length;++d){if(g&&g.cause==f+","+d)return;var v=h[d],p=v.inside,m=!!v.lookbehind,y=!!v.greedy,k=v.alias;if(y&&!v.pattern.global){var x=v.pattern.toString().match(/[imsuy]*$/)[0];v.pattern=RegExp(v.pattern.source,x+"g")}for(var b=v.pattern||v,w=r.next,A=s;w!==n.tail&&!(g&&A>=g.reach);A+=w.value.length,w=w.next){var P=w.value;if(n.length>e.length)return;if(!(P instanceof i)){var E,S=1;if(y){if(!(E=l(b,A,e,m))||E.index>=e.length)break;var L=E.index,O=E.index+E[0].length,C=A;for(C+=w.value.length;L>=C;)C+=(w=w.next).value.length;if(A=C-=w.value.length,w.value instanceof i)continue;for(var j=w;j!==n.tail&&(C<O||"string"==typeof j.value);j=j.next)S++,C+=j.value.length;S--,P=e.slice(A,C),E.index-=A}else if(!(E=l(b,0,P,m)))continue;L=E.index;var N=E[0],_=P.slice(0,L),M=P.slice(L+N.length),W=A+P.length;g&&W>g.reach&&(g.reach=W);var I=w.prev;if(_&&(I=u(n,I,_),A+=_.length),c(n,I,S),w=u(n,I,new i(f,p?a.tokenize(N,p):N,k,N)),M&&u(n,w,M),S>1){var T={cause:f+","+d,reach:W};o(e,n,t,w.prev,A,T),g&&T.reach>g.reach&&(g.reach=T.reach)}}}}}}function s(){var e={value:null,prev:null,next:null},n={value:null,prev:e,next:null};e.next=n,this.head=e,this.tail=n,this.length=0}function u(e,n,t){var r=n.next,a={value:t,prev:n,next:r};return n.next=a,r.prev=a,e.length++,a}function c(e,n,t){for(var r=n.next,a=0;a<t&&r!==e.tail;a++)r=r.next;n.next=r,r.prev=n,e.length-=a}if(e.Prism=a,i.stringify=function e(n,t){if("string"==typeof n)return n;if(Array.isArray(n)){var r="";return n.forEach((function(n){r+=e(n,t)})),r}var i={type:n.type,content:e(n.content,t),tag:"span",classes:["token",n.type],attributes:{},language:t},l=n.alias;l&&(Array.isArray(l)?Array.prototype.push.apply(i.classes,l):i.classes.push(l)),a.hooks.run("wrap",i);var o="";for(var s in i.attributes)o+=" "+s+'="'+(i.attributes[s]||"").replace(/"/g,"&quot;")+'"';return"<"+i.tag+' class="'+i.classes.join(" ")+'"'+o+">"+i.content+"</"+i.tag+">"},!e.document)return e.addEventListener?(a.disableWorkerMessageHandler||e.addEventListener("message",(function(n){var t=JSON.parse(n.data),r=t.language,i=t.code,l=t.immediateClose;e.postMessage(a.highlight(i,a.languages[r],r)),l&&e.close()}),!1),a):a;var g=a.util.currentScript();function f(){a.manual||a.highlightAll()}if(g&&(a.filename=g.src,g.hasAttribute("data-manual")&&(a.manual=!0)),!a.manual){var h=document.readyState;"loading"===h||"interactive"===h&&g&&g.defer?document.addEventListener("DOMContentLoaded",f):window.requestAnimationFrame?window.requestAnimationFrame(f):window.setTimeout(f,16)}return a}(_self);"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+!function(e){var n="(?:[ \t]+(?![ \t])(?:<SP_BS>)?|<SP_BS>)".replace(/<SP_BS>/g,(function(){return"\\\\[\r\n](?:\\s|\\\\[\r\n]|#.*(?!.))*(?![\\s#]|\\\\[\r\n])"})),r="\"(?:[^\"\\\\\r\n]|\\\\(?:\r\n|[^]))*\"|'(?:[^'\\\\\r\n]|\\\\(?:\r\n|[^]))*'",t="--[\\w-]+=(?:<STR>|(?![\"'])(?:[^\\s\\\\]|\\\\.)+)".replace(/<STR>/g,(function(){return r})),o={pattern:RegExp(r),greedy:!0},i={pattern:/(^[ \t]*)#.*/m,lookbehind:!0,greedy:!0};function a(e,r){return e=e.replace(/<OPT>/g,(function(){return t})).replace(/<SP>/g,(function(){return n})),RegExp(e,r)}e.languages.docker={instruction:{pattern:/(^[ \t]*)(?:ADD|ARG|CMD|COPY|ENTRYPOINT|ENV|EXPOSE|FROM|HEALTHCHECK|LABEL|MAINTAINER|ONBUILD|RUN|SHELL|STOPSIGNAL|USER|VOLUME|WORKDIR)(?=\s)(?:\\.|[^\r\n\\])*(?:\\$(?:\s|#.*$)*(?![\s#])(?:\\.|[^\r\n\\])*)*/im,lookbehind:!0,greedy:!0,inside:{options:{pattern:a("(^(?:ONBUILD<SP>)?\\w+<SP>)<OPT>(?:<SP><OPT>)*","i"),lookbehind:!0,greedy:!0,inside:{property:{pattern:/(^|\s)--[\w-]+/,lookbehind:!0},string:[o,{pattern:/(=)(?!["'])(?:[^\s\\]|\\.)+/,lookbehind:!0}],operator:/\\$/m,punctuation:/=/}},keyword:[{pattern:a("(^(?:ONBUILD<SP>)?HEALTHCHECK<SP>(?:<OPT><SP>)*)(?:CMD|NONE)\\b","i"),lookbehind:!0,greedy:!0},{pattern:a("(^(?:ONBUILD<SP>)?FROM<SP>(?:<OPT><SP>)*(?!--)[^ \t\\\\]+<SP>)AS","i"),lookbehind:!0,greedy:!0},{pattern:a("(^ONBUILD<SP>)\\w+","i"),lookbehind:!0,greedy:!0},{pattern:/^\w+/,greedy:!0}],comment:i,string:o,variable:/\$(?:\w+|\{[^{}"'\\]*\})/,operator:/\\$/m}},comment:i},e.languages.dockerfile=e.languages.docker}(Prism);
+Prism.languages.elixir={doc:{pattern:/@(?:doc|moduledoc)\s+(?:("""|''')[\s\S]*?\1|("|')(?:\\(?:\r\n|[\s\S])|(?!\2)[^\\\r\n])*\2)/,inside:{attribute:/^@\w+/,string:/['"][\s\S]+/}},comment:{pattern:/#.*/,greedy:!0},regex:{pattern:/~[rR](?:("""|''')(?:\\[\s\S]|(?!\1)[^\\])+\1|([\/|"'])(?:\\.|(?!\2)[^\\\r\n])+\2|\((?:\\.|[^\\)\r\n])+\)|\[(?:\\.|[^\\\]\r\n])+\]|\{(?:\\.|[^\\}\r\n])+\}|<(?:\\.|[^\\>\r\n])+>)[uismxfr]*/,greedy:!0},string:[{pattern:/~[cCsSwW](?:("""|''')(?:\\[\s\S]|(?!\1)[^\\])+\1|([\/|"'])(?:\\.|(?!\2)[^\\\r\n])+\2|\((?:\\.|[^\\)\r\n])+\)|\[(?:\\.|[^\\\]\r\n])+\]|\{(?:\\.|#\{[^}]+\}|#(?!\{)|[^#\\}\r\n])+\}|<(?:\\.|[^\\>\r\n])+>)[csa]?/,greedy:!0,inside:{}},{pattern:/("""|''')[\s\S]*?\1/,greedy:!0,inside:{}},{pattern:/("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0,inside:{}}],atom:{pattern:/(^|[^:]):\w+/,lookbehind:!0,alias:"symbol"},module:{pattern:/\b[A-Z]\w*\b/,alias:"class-name"},"attr-name":/\b\w+\??:(?!:)/,argument:{pattern:/(^|[^&])&\d+/,lookbehind:!0,alias:"variable"},attribute:{pattern:/@\w+/,alias:"variable"},function:/\b[_a-zA-Z]\w*[?!]?(?:(?=\s*(?:\.\s*)?\()|(?=\/\d))/,number:/\b(?:0[box][a-f\d_]+|\d[\d_]*)(?:\.[\d_]+)?(?:e[+-]?[\d_]+)?\b/i,keyword:/\b(?:after|alias|and|case|catch|cond|def(?:callback|delegate|exception|impl|macro|module|n|np|p|protocol|struct)?|do|else|end|fn|for|if|import|not|or|quote|raise|require|rescue|try|unless|unquote|use|when)\b/,boolean:/\b(?:false|nil|true)\b/,operator:[/\bin\b|&&?|\|[|>]?|\\\\|::|\.\.\.?|\+\+?|-[->]?|<[-=>]|>=|!==?|\B!|=(?:==?|[>~])?|[*\/^]/,{pattern:/([^<])<(?!<)/,lookbehind:!0},{pattern:/([^>])>(?!>)/,lookbehind:!0}],punctuation:/<<|>>|[.,%\[\]{}()]/},Prism.languages.elixir.string.forEach((function(e){e.inside={interpolation:{pattern:/#\{[^}]+\}/,inside:{delimiter:{pattern:/^#\{|\}$/,alias:"punctuation"},rest:Prism.languages.elixir}}}}));
+Prism.languages.makefile={comment:{pattern:/(^|[^\\])#(?:\\(?:\r\n|[\s\S])|[^\\\r\n])*/,lookbehind:!0},string:{pattern:/(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},"builtin-target":{pattern:/\.[A-Z][^:#=\s]+(?=\s*:(?!=))/,alias:"builtin"},target:{pattern:/^(?:[^:=\s]|[ \t]+(?![\s:]))+(?=\s*:(?!=))/m,alias:"symbol",inside:{variable:/\$+(?:(?!\$)[^(){}:#=\s]+|(?=[({]))/}},variable:/\$+(?:(?!\$)[^(){}:#=\s]+|\([@*%<^+?][DF]\)|(?=[({]))/,keyword:/-include\b|\b(?:define|else|endef|endif|export|ifn?def|ifn?eq|include|override|private|sinclude|undefine|unexport|vpath)\b/,function:{pattern:/(\()(?:abspath|addsuffix|and|basename|call|dir|error|eval|file|filter(?:-out)?|findstring|firstword|flavor|foreach|guile|if|info|join|lastword|load|notdir|or|origin|patsubst|realpath|shell|sort|strip|subst|suffix|value|warning|wildcard|word(?:list|s)?)(?=[ \t])/,lookbehind:!0},operator:/(?:::|[?:+!])?=|[|@]/,punctuation:/[:;(){}]/};</script>
+  
+  <script>
+    function toggle(id) {
+      var el = document.getElementById(id);
+      if (!el) { return; }
+      el.classList.toggle('visible');
+      // Highlight a clone's code when it is first shown, not the whole page on load.
+      if (window.Prism && !el.hasAttribute('data-highlighted')) {
+        el.setAttribute('data-highlighted', '');
+        Prism.highlightAllUnder(el);
+      }
+    }
+  </script>
+</body>
+</html>
