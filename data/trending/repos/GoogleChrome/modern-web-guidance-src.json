@@ -1,0 +1,1037 @@
+{
+ "name": "GoogleChrome/modern-web-guidance-src",
+ "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+ "appearances": [
+  {
+   "date": "2026-11-12",
+   "rank": 2,
+   "stars": 1943,
+   "starsToday": 159,
+   "headSha": "179dbc6fe830be1309f4d0b079a2442d71d983b9",
+   "sources": 2474,
+   "lines": 453612,
+   "clones": 3612,
+   "duplicatedLines": 63980,
+   "percentage": 14.1,
+   "codePercentage": 9.43,
+   "codeSources": 486,
+   "healthScore": 12.7,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T05:21:45.783Z",
+  "name": "GoogleChrome/modern-web-guidance-src",
+  "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+  "description": "",
+  "language": "TypeScript",
+  "stars": 1943,
+  "starsToday": 159,
+  "defaultBranch": "main",
+  "headSha": "179dbc6fe830be1309f4d0b079a2442d71d983b9",
+  "durationMs": 3119,
+  "total": {
+   "sources": 2474,
+   "lines": 453612,
+   "tokens": 3899700,
+   "clones": 3612,
+   "duplicatedLines": 63980,
+   "duplicatedTokens": 516761,
+   "percentage": 14.1,
+   "percentageTokens": 13.25
+  },
+  "formats": [
+   {
+    "format": "diff",
+    "sources": 322,
+    "lines": 142652,
+    "clones": 1851,
+    "duplicatedLines": 36194,
+    "percentage": 25.37
+   },
+   {
+    "format": "typescript",
+    "sources": 545,
+    "lines": 154328,
+    "clones": 1115,
+    "duplicatedLines": 13674,
+    "percentage": 8.86
+   },
+   {
+    "format": "markup",
+    "sources": 430,
+    "lines": 59716,
+    "clones": 466,
+    "duplicatedLines": 8805,
+    "percentage": 14.74
+   },
+   {
+    "format": "markdown",
+    "sources": 585,
+    "lines": 50075,
+    "clones": 61,
+    "duplicatedLines": 1546,
+    "percentage": 3.09
+   },
+   {
+    "format": "json",
+    "sources": 30,
+    "lines": 9897,
+    "clones": 51,
+    "duplicatedLines": 2770,
+    "percentage": 27.99
+   },
+   {
+    "format": "javascript",
+    "sources": 173,
+    "lines": 21970,
+    "clones": 29,
+    "duplicatedLines": 552,
+    "percentage": 2.51
+   },
+   {
+    "format": "css",
+    "sources": 142,
+    "lines": 10353,
+    "clones": 24,
+    "duplicatedLines": 214,
+    "percentage": 2.07
+   },
+   {
+    "format": "yaml",
+    "sources": 162,
+    "lines": 1961,
+    "clones": 6,
+    "duplicatedLines": 72,
+    "percentage": 3.67
+   },
+   {
+    "format": "bash",
+    "sources": 24,
+    "lines": 915,
+    "clones": 4,
+    "duplicatedLines": 64,
+    "percentage": 6.99
+   },
+   {
+    "format": "tsx",
+    "sources": 13,
+    "lines": 840,
+    "clones": 3,
+    "duplicatedLines": 70,
+    "percentage": 8.33
+   }
+  ],
+  "topClones": [
+   {
+    "format": "diff",
+    "lines": 1753,
+    "tokens": 12018,
+    "first": {
+     "name": "guides/forms/sms-otp-form/targets/devtools-times/patches/claude-solution.patch",
+     "start": 1,
+     "end": 1753
+    },
+    "others": [
+     {
+      "name": "guides/forms/sms-otp-form/targets/devtools-times/patches/codex-solution.patch",
+      "start": 1,
+      "end": 1753
+     },
+     {
+      "name": "guides/forms/sms-otp-form/targets/devtools-times/patches/jetski-solution.patch",
+      "start": 1,
+      "end": 1753
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "diff --git a/astro.config.mjs b/astro.config.mjs",
+      "index cc5869a..d43edf3 100644",
+      "--- a/astro.config.mjs",
+      "+++ b/astro.config.mjs",
+      "@@ -12,6 +12,9 @@ export default defineConfig({",
+      "   integrations: [react()],",
+      "   vite: {",
+      "     plugins: [tailwindcss()],",
+      "+    define: {",
+      "+      'process.env.ASTRO_NODE_LOGGING': JSON.stringify('disabled'),"
+     ],
+     "total": 1753
+    },
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 1051,
+    "tokens": 14927,
+    "first": {
+     "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 3663,
+     "end": 4713
+    },
+    "others": [
+     {
+      "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 8944,
+      "end": 9994
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "+++ b/node_modules/.pnpm/ua-parser-js@1.0.41/node_modules/ua-parser-js/src/ua-parser.js",
+      "@@ -0,0 +1,1048 @@",
+      "+/////////////////////////////////////////////////////////////////////////////////",
+      "+/* UAParser.js v1.0.41",
+      "+   Copyright © 2012-2025 Faisal Salman <f@faisalman.com>",
+      "+   MIT License *//*",
+      "+   Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent data.",
+      "+   Supports browser & node.js environment.",
+      "+   Demo   : https://faisalman.github.io/ua-parser-js",
+      "+   Source : https://github.com/faisalman/ua-parser-js */"
+     ],
+     "total": 1051
+    },
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 741,
+    "tokens": 5212,
+    "first": {
+     "name": "guides/forms/sms-otp-form/targets/daily-grind/patches/claude-solution.patch",
+     "start": 1,
+     "end": 741
+    },
+    "others": [
+     {
+      "name": "guides/forms/sms-otp-form/targets/daily-grind/patches/codex-solution.patch",
+      "start": 1,
+      "end": 741
+     },
+     {
+      "name": "guides/forms/sms-otp-form/targets/daily-grind/patches/jetski-solution.patch",
+      "start": 1,
+      "end": 741
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "diff --git a/index.html b/index.html",
+      "index 66c9173..1168016 100644",
+      "--- a/index.html",
+      "+++ b/index.html",
+      "@@ -4,14 +4,33 @@",
+      " <head>",
+      "   <meta charset=\"UTF-8\">",
+      "   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "-  <title>The Daily Grind | Artisanal Coffee</title>",
+      "+  <meta name=\"description\" content=\"The Daily Grind Artisanal Coffee — Verify your phone number with a one-time passcode (OTP) for express ordering and reward…"
+     ],
+     "total": 741
+    },
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 311,
+    "tokens": 6596,
+    "first": {
+     "name": "guides/ui-components/tabs/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 826,
+     "end": 1136
+    },
+    "others": [
+     {
+      "name": "guides/ui-components/tabs/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 1145,
+      "end": 1455
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 316,
+    "tokens": 6224,
+    "first": {
+     "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 878,
+     "end": 1193
+    },
+    "others": [
+     {
+      "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 6300,
+      "end": 6615
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 299,
+    "tokens": 6098,
+    "first": {
+     "name": "guides/ui-components/tabs/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 2285,
+     "end": 2583
+    },
+    "others": [
+     {
+      "name": "guides/ui-components/tabs/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 2594,
+      "end": 2892
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 221,
+    "tokens": 4825,
+    "first": {
+     "name": "guides/ui-components/tabs/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 3691,
+     "end": 3911
+    },
+    "others": [
+     {
+      "name": "guides/ui-components/tabs/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 3919,
+      "end": 4139
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 219,
+    "tokens": 4367,
+    "first": {
+     "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 2272,
+     "end": 2490
+    },
+    "others": [
+     {
+      "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 7694,
+      "end": 7912
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 399,
+    "tokens": 4073,
+    "first": {
+     "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 3250,
+     "end": 3648
+    },
+    "others": [
+     {
+      "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 8531,
+      "end": 8929
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "diff",
+    "lines": 180,
+    "tokens": 3966,
+    "first": {
+     "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+     "start": 1197,
+     "end": 1376
+    },
+    "others": [
+     {
+      "name": "guides/security/quick-sign-ins/targets/daily-grind/patches/antigravity-solution.patch",
+      "start": 6619,
+      "end": 6798
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 486,
+   "lines": 135044,
+   "tokens": 911098,
+   "clones": 1007,
+   "duplicatedLines": 12740,
+   "duplicatedTokens": 90967,
+   "percentage": 9.43,
+   "percentageTokens": 9.98,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 416,
+     "lines": 120948,
+     "clones": 991,
+     "duplicatedLines": 12513,
+     "percentage": 10.35
+    },
+    {
+     "format": "javascript",
+     "sources": 22,
+     "lines": 12033,
+     "clones": 9,
+     "duplicatedLines": 106,
+     "percentage": 0.88
+    },
+    {
+     "format": "tsx",
+     "sources": 13,
+     "lines": 840,
+     "clones": 3,
+     "duplicatedLines": 70,
+     "percentage": 8.33
+    },
+    {
+     "format": "bash",
+     "sources": 3,
+     "lines": 581,
+     "clones": 3,
+     "duplicatedLines": 43,
+     "percentage": 7.4
+    },
+    {
+     "format": "html",
+     "sources": 16,
+     "lines": 642,
+     "clones": 1,
+     "duplicatedLines": 8,
+     "percentage": 1.25
+    },
+    {
+     "format": "astro",
+     "sources": 16,
+     "lines": 0,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 17,
+     "tokens": 87,
+     "first": {
+      "name": "guides/accessibility/accessible-error-announcement/grader.ts",
+      "start": 1,
+      "end": 17
+     },
+     "others": [
+      {
+       "name": "guides/built-in-ai/language-detection/grader.ts",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "guides/built-in-ai/summarizer/grader.ts",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "guides/css/animate-to-intrinsic-sizes/grader.ts",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "guides/css/child-state-based-styling/grader.ts",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "guides/css/dynamic-sibling-styling/grader.ts",
+       "start": 1,
+       "end": 15
+      },
+      {
+       "name": "guides/forms/autofill-address-form/grader.ts",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "guides/forms/autofill-payment-form/grader.ts",
+       "start": 1,
+       "end": 16
+      },
+      {
+       "name": "guides/forms/autofill-sign-up-form/grader.ts",
+       "start": 1,
+       "end": 16
+      }
+     ],
+     "copies": 35,
+     "excerpt": {
+      "lines": [
+       "import { test, expect } from '@playwright/test';",
+       "import * as fs from 'fs';",
+       "import * as path from 'path';",
+       "",
+       "// Setup",
+       "const targetFile = process.env.TARGET_FILE;",
+       "if (!targetFile) {",
+       "  throw new Error('TARGET_FILE environment variable not set.');",
+       "}",
+       ""
+      ],
+      "total": 17
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 19,
+     "tokens": 118,
+     "first": {
+      "name": "guides/accessibility/accessible-error-announcement/grader.ts",
+      "start": 17,
+      "end": 35
+     },
+     "others": [
+      {
+       "name": "guides/css/content-based-styling/grader.ts",
+       "start": 16,
+       "end": 33
+      },
+      {
+       "name": "guides/forms/autofill-address-form/grader.ts",
+       "start": 16,
+       "end": 33
+      },
+      {
+       "name": "guides/forms/autofill-payment-form/grader.ts",
+       "start": 16,
+       "end": 34
+      },
+      {
+       "name": "guides/forms/autofill-sign-up-form/grader.ts",
+       "start": 16,
+       "end": 33
+      },
+      {
+       "name": "guides/forms/forms/grader.ts",
+       "start": 16,
+       "end": 33
+      },
+      {
+       "name": "guides/performance/defer-rendering-heavy-content/grader.ts",
+       "start": 16,
+       "end": 34
+      },
+      {
+       "name": "guides/performance/optimize-preload-priority/grader.ts",
+       "start": 17,
+       "end": 35
+      },
+      {
+       "name": "guides/performance/optimize-script-priority/grader.ts",
+       "start": 17,
+       "end": 35
+      }
+     ],
+     "copies": 19,
+     "excerpt": {
+      "lines": [
+       "test.describe(`Accessible Error Announcement Expectations: ${demoName}`, () => {",
+       "",
+       "  // Setup browser testing",
+       "  test.beforeEach(async ({ page }) => {",
+       "    await page.route('http://localhost/*', async (route) => {",
+       "      const requestPath = new URL(route.request().url()).pathname;",
+       "      const localFilePath = path.join(targetDir, requestPath === '/' ? demoName : requestPath);",
+       "",
+       "      if (fs.existsSync(localFilePath)) {",
+       "        await route.fulfill({ path: localFilePath });"
+      ],
+      "total": 19
+     },
+     "excerptSecond": {
+      "lines": [
+       "test.describe(`content-based-styling Expectations: ${demoName}`, () => {",
+       "  // Setup browser testing",
+       "  test.beforeEach(async ({ page }) => {",
+       "    await page.route('http://localhost/*', async (route) => {",
+       "      const requestPath = new URL(route.request().url()).pathname;",
+       "      const localFilePath = path.join(targetDir, requestPath === '/' ? demoName : requestPath);",
+       "",
+       "      if (fs.existsSync(localFilePath)) {",
+       "        await route.fulfill({ path: localFilePath });",
+       "      } else {"
+      ],
+      "total": 18
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 192,
+     "tokens": 1357,
+     "first": {
+      "name": "guides/forms/sms-otp-form/targets/daily-grind/grader.ts",
+      "start": 1,
+      "end": 192
+     },
+     "others": [
+      {
+       "name": "guides/forms/sms-otp-form/targets/devtools-times/grader.ts",
+       "start": 1,
+       "end": 192
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import {",
+       "  test,",
+       "  expect,",
+       "  getTargetFiles,",
+       "  getJsProject,",
+       "  getHtmlDocuments,",
+       "} from '../../../../test-fixture.ts';",
+       "import {",
+       "  SyntaxKind,",
+       "  Node,"
+      ],
+      "total": 192
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 134,
+     "tokens": 1185,
+     "first": {
+      "name": "guides/css/size-aware-styling/targets/daily-grind/grader.ts",
+      "start": 31,
+      "end": 164
+     },
+     "others": [
+      {
+       "name": "guides/css/size-aware-styling/targets/devtools-times/grader.ts",
+       "start": 32,
+       "end": 166
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 141,
+     "tokens": 1078,
+     "first": {
+      "name": "guides/forms/sms-otp-form/targets/daily-grind/grader.ts",
+      "start": 189,
+      "end": 329
+     },
+     "others": [
+      {
+       "name": "guides/forms/sms-otp-form/targets/devtools-times/grader.ts",
+       "start": 325,
+       "end": 465
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 135,
+     "tokens": 1029,
+     "first": {
+      "name": "guides/user-experience/natural-interactions/targets/daily-grind/grader.ts",
+      "start": 218,
+      "end": 352
+     },
+     "others": [
+      {
+       "name": "guides/user-experience/natural-interactions/targets/daily-grind/grader.ts",
+       "start": 564,
+       "end": 698
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 139,
+     "tokens": 917,
+     "first": {
+      "name": "guides/wasm/cpp-on-the-web/targets/daily-grind/grader.ts",
+      "start": 58,
+      "end": 196
+     },
+     "others": [
+      {
+       "name": "guides/wasm/cpp-on-the-web/targets/devtools-times/grader.ts",
+       "start": 58,
+       "end": 196
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 123,
+     "tokens": 877,
+     "first": {
+      "name": "guides/forms/sms-otp-form/targets/daily-grind/grader.ts",
+      "start": 332,
+      "end": 454
+     },
+     "others": [
+      {
+       "name": "guides/forms/sms-otp-form/targets/devtools-times/grader.ts",
+       "start": 469,
+       "end": 591
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 14,
+     "tokens": 83,
+     "first": {
+      "name": "guides/accessibility/accessible-error-announcement/grader.ts",
+      "start": 1,
+      "end": 14
+     },
+     "others": [
+      {
+       "name": "guides/forms/animated-select-picker/grader.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "guides/forms/autofill-highlight-inputs/grader.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "guides/forms/required-field-feedback/grader.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "guides/js/capture-location-agnostic-data/grader.ts",
+       "start": 1,
+       "end": 13
+      },
+      {
+       "name": "guides/performance/flicker-free-client-side-ab-testing/grader.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "guides/performance/identify-heavy-scripts/grader.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "guides/performance/identify-inp-causes/grader.ts",
+       "start": 1,
+       "end": 14
+      },
+      {
+       "name": "guides/ui-behaviors/animate-element-entry-exit/grader.ts",
+       "start": 1,
+       "end": 13
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 16,
+     "tokens": 108,
+     "first": {
+      "name": "guides/accessibility/accessible-error-announcement/grader.ts",
+      "start": 17,
+      "end": 32
+     },
+     "others": [
+      {
+       "name": "guides/built-in-ai/language-detection/grader.ts",
+       "start": 16,
+       "end": 29
+      },
+      {
+       "name": "guides/built-in-ai/summarizer/grader.ts",
+       "start": 15,
+       "end": 29
+      },
+      {
+       "name": "guides/forms/required-field-feedback/grader.ts",
+       "start": 26,
+       "end": 39
+      },
+      {
+       "name": "guides/performance/deprioritize-background-fetches/grader.ts",
+       "start": 23,
+       "end": 38
+      },
+      {
+       "name": "guides/ui-components/persistent-app-tours/grader.ts",
+       "start": 16,
+       "end": 30
+      },
+      {
+       "name": "guides/ui-components/persistent-toast-notifications/grader.ts",
+       "start": 11,
+       "end": 24
+      }
+     ],
+     "copies": 7,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 1,
+    "sample": [
+     "src/dashboard/diff.min.js"
+    ]
+   }
+  },
+  "health": {
+   "score": 12.7,
+   "grade": "E",
+   "size": {
+    "lines": 170704,
+    "files": 598,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 8.2,
+     "adjusted": 8.1,
+     "lines": 13934,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "javascript",
+      "tsx",
+      "bash",
+      "astro"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 51.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 49.3,
+     "adjusted": 48.8,
+     "lines": 84409,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 1.1
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 74.3,
+     "adjusted": 73.7,
+     "lines": 126842,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 36
+    }
+   ]
+  },
+  "complexity": {
+   "total": 42207,
+   "mean": 70.6,
+   "files": [
+    {
+     "path": "src/dashboard/dashboard.js",
+     "complexity": 841,
+     "lines": 2453,
+     "bytes": 128070
+    },
+    {
+     "path": "src/dashboard/landing.js",
+     "complexity": 774,
+     "lines": 1884,
+     "bytes": 97172
+    },
+    {
+     "path": "guides/ui-components/tabs/targets/daily-grind/grader.ts",
+     "complexity": 582,
+     "lines": 1437,
+     "bytes": 63926
+    },
+    {
+     "path": "src/ci/sync-pipeline-issue.ts",
+     "complexity": 348,
+     "lines": 1343,
+     "bytes": 48887
+    },
+    {
+     "path": "src/ci/atl-triage.ts",
+     "complexity": 335,
+     "lines": 1273,
+     "bytes": 43340
+    },
+    {
+     "path": "guides/ui-components/stack-drill-down/grader.ts",
+     "complexity": 332,
+     "lines": 1022,
+     "bytes": 40027
+    },
+    {
+     "path": "src/dashboard/utils.js",
+     "complexity": 323,
+     "lines": 849,
+     "bytes": 37110
+    },
+    {
+     "path": "src/core/guide-validation.ts",
+     "complexity": 322,
+     "lines": 1265,
+     "bytes": 45192
+    },
+    {
+     "path": "guides/visual-design/visual-effects/targets/daily-grind/grader.ts",
+     "complexity": 289,
+     "lines": 691,
+     "bytes": 27838
+    },
+    {
+     "path": "guides/ui-components/menu/targets/daily-grind/grader.ts",
+     "complexity": 284,
+     "lines": 1227,
+     "bytes": 56148
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 49.33,
+   "findings": 285,
+   "files": 603,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 258
+    },
+    {
+     "category": "unused-export",
+     "count": 9
+    },
+    {
+     "category": "unused-symbol",
+     "count": 9
+    },
+    {
+     "category": "unused-import",
+     "count": 9
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/dashboard/dashboard.js",
+     "name": "",
+     "line": 1,
+     "lines": 2453
+    },
+    {
+     "category": "unused-file",
+     "path": "src/dashboard/landing.js",
+     "name": "",
+     "line": 1,
+     "lines": 1884
+    },
+    {
+     "category": "unused-file",
+     "path": "guides/ui-components/tabs/targets/daily-grind/grader.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1437
+    },
+    {
+     "category": "unused-file",
+     "path": "guides/ui-components/menu/targets/daily-grind/grader.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1227
+    },
+    {
+     "category": "unused-file",
+     "path": "guides/ui-components/stack-drill-down/grader.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1022
+    },
+    {
+     "category": "unused-file",
+     "path": "src/analyzing/eval/detection-eval.ts",
+     "name": "",
+     "line": 1,
+     "lines": 974
+    },
+    {
+     "category": "unused-file",
+     "path": "src/dashboard/search/search.js",
+     "name": "",
+     "line": 1,
+     "lines": 934
+    },
+    {
+     "category": "unused-file",
+     "path": "guides/security/passkeys/targets/devtools-times/grader.ts",
+     "name": "",
+     "line": 1,
+     "lines": 873
+    },
+    {
+     "category": "unused-file",
+     "path": "guides/ui-behaviors/drag/targets/daily-grind/grader.ts",
+     "name": "",
+     "line": 1,
+     "lines": 800
+    },
+    {
+     "category": "unused-file",
+     "path": "src/dashboard/guide.js",
+     "name": "",
+     "line": 1,
+     "lines": 776
+    }
+   ]
+  }
+ }
+}

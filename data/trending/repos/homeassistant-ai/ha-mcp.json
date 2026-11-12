@@ -33,46 +33,62 @@
    "codeSources": 909,
    "healthScore": 48.7,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-11-12",
+   "rank": 6,
+   "stars": 7482,
+   "starsToday": 645,
+   "headSha": "59cec3e9faa54019fbf4ac6815826f6cdfc84208",
+   "sources": 2324,
+   "lines": 891800,
+   "clones": 3145,
+   "duplicatedLines": 59925,
+   "percentage": 6.72,
+   "codePercentage": 5.53,
+   "codeSources": 916,
+   "healthScore": 48.9,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-11-11",
-  "generatedAt": "2026-11-11T05:21:30.833Z",
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T05:21:45.783Z",
   "name": "homeassistant-ai/ha-mcp",
   "url": "https://github.com/homeassistant-ai/ha-mcp",
   "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
   "language": "Python",
-  "stars": 6793,
-  "starsToday": 790,
+  "stars": 7482,
+  "starsToday": 645,
   "defaultBranch": "master",
-  "headSha": "26194d22013a2082ea8044ea506432ab5ea07d61",
-  "durationMs": 6012,
+  "headSha": "59cec3e9faa54019fbf4ac6815826f6cdfc84208",
+  "durationMs": 5732,
   "total": {
-   "sources": 2296,
-   "lines": 892802,
-   "tokens": 5001137,
-   "clones": 3188,
-   "duplicatedLines": 59559,
-   "duplicatedTokens": 404338,
-   "percentage": 6.67,
-   "percentageTokens": 8.08
+   "sources": 2324,
+   "lines": 891800,
+   "tokens": 5008397,
+   "clones": 3145,
+   "duplicatedLines": 59925,
+   "duplicatedTokens": 413091,
+   "percentage": 6.72,
+   "percentageTokens": 8.25
   },
   "formats": [
    {
     "format": "python",
-    "sources": 1860,
-    "lines": 782546,
-    "clones": 2861,
-    "duplicatedLines": 44643,
-    "percentage": 5.7
+    "sources": 1880,
+    "lines": 779780,
+    "clones": 2809,
+    "duplicatedLines": 43853,
+    "percentage": 5.62
    },
    {
     "format": "yaml",
-    "sources": 153,
-    "lines": 24396,
-    "clones": 206,
-    "duplicatedLines": 6055,
-    "percentage": 24.82
+    "sources": 157,
+    "lines": 25302,
+    "clones": 213,
+    "duplicatedLines": 6994,
+    "percentage": 27.64
    },
    {
     "format": "html",
@@ -85,26 +101,26 @@
    {
     "format": "markdown",
     "sources": 76,
-    "lines": 27822,
+    "lines": 28105,
     "clones": 32,
-    "duplicatedLines": 7312,
-    "percentage": 26.28
+    "duplicatedLines": 7434,
+    "percentage": 26.45
    },
    {
     "format": "javascript",
     "sources": 45,
-    "lines": 16347,
+    "lines": 16351,
     "clones": 30,
     "duplicatedLines": 423,
     "percentage": 2.59
    },
    {
     "format": "json",
-    "sources": 58,
-    "lines": 28352,
-    "clones": 5,
-    "duplicatedLines": 439,
-    "percentage": 1.55
+    "sources": 62,
+    "lines": 28970,
+    "clones": 6,
+    "duplicatedLines": 530,
+    "percentage": 1.83
    },
    {
     "format": "css",
@@ -123,37 +139,37 @@
     "percentage": 7.73
    },
    {
+    "format": "bash",
+    "sources": 31,
+    "lines": 1468,
+    "clones": 3,
+    "duplicatedLines": 16,
+    "percentage": 1.09
+   },
+   {
     "format": "docker",
     "sources": 6,
     "lines": 286,
     "clones": 3,
     "duplicatedLines": 60,
     "percentage": 20.98
-   },
-   {
-    "format": "bash",
-    "sources": 31,
-    "lines": 1468,
-    "clones": 2,
-    "duplicatedLines": 12,
-    "percentage": 0.82
    }
   ],
   "topClones": [
    {
     "format": "markdown",
-    "lines": 6608,
-    "tokens": 88409,
+    "lines": 6730,
+    "tokens": 90309,
     "first": {
      "name": "CHANGELOG.md",
      "start": 1,
-     "end": 6608
+     "end": 6730
     },
     "others": [
      {
       "name": "homeassistant-addon/CHANGELOG.md",
       "start": 1,
-      "end": 6608
+      "end": 6730
      }
     ],
     "copies": 2,
@@ -164,15 +180,54 @@
       "<!-- version list -->",
       "",
       "",
-      "## v9.1.2 (2026-11-08)",
+      "## v9.2.0 (2026-11-11)",
       "",
-      "### Fixed",
+      "### Added",
       "",
-      "- **hacs**: Keep HA-MCP on one store listing and repair installs that got two"
+      "- **helpers**: Answer helper flows on Core's own flow and send storage fields to Core as written"
      ],
-     "total": 6608
+     "total": 6730
     },
     "kind": "docs"
+   },
+   {
+    "format": "yaml",
+    "lines": 278,
+    "tokens": 3102,
+    "first": {
+     "name": "homeassistant-addon-dev/translations/en.yaml",
+     "start": 4,
+     "end": 281
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon-dev/translations/sr-Latn.yaml",
+      "start": 4,
+      "end": 281
+     },
+     {
+      "name": "homeassistant-addon-dev/translations/sr.yaml",
+      "start": 4,
+      "end": 281
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "# backup.fields.*, addon_dev.*); regenerate with: python scripts/generate_locales.py",
+      "configuration:",
+      "  verify_ssl:",
+      "    name: Verify TLS certificates",
+      "    description: 'Verify the Home Assistant server''s TLS certificate. Turn this off",
+      "      only on a trusted network, for a self-signed certificate or a hostname mismatch:",
+      "      it weakens transport security.'",
+      "  ha_tool_concurrency:",
+      "    name: Home Assistant tool concurrency",
+      "    description: Optional limit on outer Home Assistant tool calls across all sessions."
+     ],
+     "total": 278
+    },
+    "kind": "translations"
    },
    {
     "format": "python",
@@ -209,6 +264,30 @@
     "kind": "code"
    },
    {
+    "format": "yaml",
+    "lines": 177,
+    "tokens": 1914,
+    "first": {
+     "name": "homeassistant-addon/translations/en.yaml",
+     "start": 4,
+     "end": 180
+    },
+    "others": [
+     {
+      "name": "homeassistant-addon/translations/sr-Latn.yaml",
+      "start": 4,
+      "end": 180
+     },
+     {
+      "name": "homeassistant-addon/translations/sr.yaml",
+      "start": 4,
+      "end": 180
+     }
+    ],
+    "copies": 3,
+    "kind": "translations"
+   },
+   {
     "format": "markdown",
     "lines": 171,
     "tokens": 3118,
@@ -225,21 +304,6 @@
      }
     ],
     "copies": 2,
-    "excerpt": {
-     "lines": [
-      "Assistant notification). Stop the stable app first; the notification clears",
-      "automatically on the next clean start.",
-      "",
-      "## Prerequisites",
-      "",
-      "- **Home Assistant MCP Server** app must be installed and running (stable or dev channel)",
-      "- For Nabu Casa auto-detection: active Nabu Casa subscription with remote UI enabled",
-      "- For other setups: a working reverse proxy pointing at your HA instance",
-      "",
-      "## Setup"
-     ],
-     "total": 171
-    },
     "kind": "docs"
    },
    {
@@ -336,63 +400,25 @@
     ],
     "copies": 2,
     "kind": "code"
-   },
-   {
-    "format": "python",
-    "lines": 241,
-    "tokens": 1671,
-    "first": {
-     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
-     "start": 901,
-     "end": 1141
-    },
-    "others": [
-     {
-      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
-      "start": 901,
-      "end": 1141
-     }
-    ],
-    "copies": 2,
-    "kind": "code"
-   },
-   {
-    "format": "python",
-    "lines": 326,
-    "tokens": 1590,
-    "first": {
-     "name": "homeassistant-addon-webhook-proxy-dev/mcp_proxy_dev/oauth.py",
-     "start": 71,
-     "end": 396
-    },
-    "others": [
-     {
-      "name": "homeassistant-addon-webhook-proxy/mcp_proxy/oauth.py",
-      "start": 71,
-      "end": 396
-     }
-    ],
-    "copies": 2,
-    "kind": "code"
    }
   ],
   "code": {
-   "sources": 909,
-   "lines": 354755,
-   "tokens": 1912114,
-   "clones": 952,
-   "duplicatedLines": 19589,
-   "duplicatedTokens": 119045,
-   "percentage": 5.52,
-   "percentageTokens": 6.23,
+   "sources": 916,
+   "lines": 353218,
+   "tokens": 1905597,
+   "clones": 948,
+   "duplicatedLines": 19524,
+   "duplicatedTokens": 118567,
+   "percentage": 5.53,
+   "percentageTokens": 6.22,
    "formats": [
     {
      "format": "python",
-     "sources": 836,
-     "lines": 336010,
-     "clones": 896,
-     "duplicatedLines": 18826,
-     "percentage": 5.6
+     "sources": 843,
+     "lines": 334469,
+     "clones": 892,
+     "duplicatedLines": 18761,
+     "percentage": 5.61
     },
     {
      "format": "html",
@@ -405,7 +431,7 @@
     {
      "format": "javascript",
      "sources": 27,
-     "lines": 10431,
+     "lines": 10435,
      "clones": 12,
      "duplicatedLines": 258,
      "percentage": 2.47
@@ -704,20 +730,20 @@
    }
   },
   "health": {
-   "score": 48.7,
+   "score": 48.9,
    "grade": "D",
    "size": {
-    "lines": 803467,
-    "files": 1920,
+    "lines": 800705,
+    "files": 1940,
     "class": "L"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 5.6,
-     "adjusted": 5.6,
-     "lines": 45158,
+     "value": 5.5,
+     "adjusted": 5.5,
+     "lines": 44368,
      "halfLife": 8.5,
      "formats": [
       "python",
@@ -734,70 +760,70 @@
       "data"
      ],
      "weight": 1,
-     "score": 63.3
+     "score": 63.7
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 9.2,
-     "adjusted": 9.2,
-     "lines": 73846,
+     "value": 9.3,
+     "adjusted": 9.3,
+     "lines": 74202,
      "halfLife": 7.5,
      "coverage": 100,
      "weight": 1,
-     "score": 42.8
+     "score": 42.5
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 61.5,
-     "adjusted": 61.4,
-     "lines": 494245,
+     "value": 60.8,
+     "adjusted": 60.7,
+     "lines": 486836,
      "halfLife": 50,
      "weight": 1,
-     "score": 42.7
+     "score": 43.1
     }
    ]
   },
   "complexity": {
-   "total": 81665,
-   "mean": 42.5,
+   "total": 81701,
+   "mean": 42.1,
    "files": [
     {
      "path": "src/ha_mcp/backup_manager.py",
      "complexity": 625,
-     "lines": 3567,
-     "bytes": 150437
+     "lines": 3565,
+     "bytes": 150351
     },
     {
      "path": "tests/addon/test_webhook_proxy.py",
      "complexity": 570,
      "lines": 7197,
-     "bytes": 316784
+     "bytes": 316782
     },
     {
      "path": "src/ha_mcp/tools/tools_addons.py",
      "complexity": 504,
      "lines": 4038,
-     "bytes": 158555
+     "bytes": 158545
     },
     {
      "path": "custom_components/ha_mcp_tools/__init__.py",
      "complexity": 488,
      "lines": 3564,
-     "bytes": 144724
+     "bytes": 144712
     },
     {
      "path": "src/ha_mcp/tools/tools_config_dashboards.py",
      "complexity": 415,
      "lines": 3755,
-     "bytes": 157087
+     "bytes": 157061
     },
     {
      "path": "tests/src/unit/test_tools_addons.py",
-     "complexity": 382,
-     "lines": 6904,
-     "bytes": 266973
+     "complexity": 381,
+     "lines": 6888,
+     "bytes": 266530
     },
     {
      "path": "tests/initial_test_state/custom_components/hacs/repositories/base.py",
@@ -813,9 +839,9 @@
     },
     {
      "path": "src/ha_mcp/client/rest_client.py",
-     "complexity": 306,
-     "lines": 2556,
-     "bytes": 113374
+     "complexity": 304,
+     "lines": 2538,
+     "bytes": 112924
     },
     {
      "path": "tests/src/unit/test_backup_manager.py",
@@ -826,13 +852,13 @@
    ]
   },
   "deadCode": {
-   "percentage": 9.19,
-   "findings": 309,
-   "files": 2028,
+   "percentage": 9.27,
+   "findings": 312,
+   "files": 2048,
    "byCategory": [
     {
      "category": "unused-file",
-     "count": 168
+     "count": 171
     },
     {
      "category": "unused-export",

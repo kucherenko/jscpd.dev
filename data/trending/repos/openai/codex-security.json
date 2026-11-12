@@ -1,0 +1,994 @@
+{
+ "name": "openai/codex-security",
+ "url": "https://github.com/openai/codex-security",
+ "appearances": [
+  {
+   "date": "2026-11-12",
+   "rank": 7,
+   "stars": 11883,
+   "starsToday": 52,
+   "headSha": "2911786f243f08fd61ad854f5c527e7b0c404ccc",
+   "sources": 1529,
+   "lines": 608712,
+   "clones": 1024,
+   "duplicatedLines": 11218,
+   "percentage": 1.84,
+   "codePercentage": 0.55,
+   "codeSources": 566,
+   "healthScore": 60,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T05:21:45.783Z",
+  "name": "openai/codex-security",
+  "url": "https://github.com/openai/codex-security",
+  "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+  "language": "TypeScript",
+  "stars": 11883,
+  "starsToday": 52,
+  "defaultBranch": "main",
+  "headSha": "2911786f243f08fd61ad854f5c527e7b0c404ccc",
+  "durationMs": 3675,
+  "total": {
+   "sources": 1529,
+   "lines": 608712,
+   "tokens": 3837487,
+   "clones": 1024,
+   "duplicatedLines": 11218,
+   "duplicatedTokens": 73063,
+   "percentage": 1.84,
+   "percentageTokens": 1.9
+  },
+  "formats": [
+   {
+    "format": "typescript",
+    "sources": 893,
+    "lines": 446320,
+    "clones": 795,
+    "duplicatedLines": 8544,
+    "percentage": 1.91
+   },
+   {
+    "format": "python",
+    "sources": 158,
+    "lines": 102601,
+    "clones": 180,
+    "duplicatedLines": 1704,
+    "percentage": 1.66
+   },
+   {
+    "format": "yaml",
+    "sources": 74,
+    "lines": 7628,
+    "clones": 15,
+    "duplicatedLines": 230,
+    "percentage": 3.02
+   },
+   {
+    "format": "json",
+    "sources": 60,
+    "lines": 9567,
+    "clones": 11,
+    "duplicatedLines": 442,
+    "percentage": 4.62
+   },
+   {
+    "format": "markup",
+    "sources": 3,
+    "lines": 962,
+    "clones": 9,
+    "duplicatedLines": 170,
+    "percentage": 17.67
+   },
+   {
+    "format": "javascript",
+    "sources": 105,
+    "lines": 16982,
+    "clones": 7,
+    "duplicatedLines": 57,
+    "percentage": 0.34
+   },
+   {
+    "format": "markdown",
+    "sources": 140,
+    "lines": 17640,
+    "clones": 6,
+    "duplicatedLines": 54,
+    "percentage": 0.31
+   },
+   {
+    "format": "txt",
+    "sources": 4,
+    "lines": 86,
+    "clones": 1,
+    "duplicatedLines": 17,
+    "percentage": 19.77
+   },
+   {
+    "format": "rust",
+    "sources": 8,
+    "lines": 2745,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 59,
+    "lines": 1850,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "typescript",
+    "lines": 434,
+    "tokens": 1971,
+    "first": {
+     "name": "plugins/codex-security/mcp-app/src/models.ts",
+     "start": 3,
+     "end": 436
+    },
+    "others": [
+     {
+      "name": "sdk/typescript/src/models.ts",
+      "start": 3,
+      "end": 436
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "export interface ScanManifest {",
+      "  documentType: \"codex-security.scan-manifest\";",
+      "  schemaVersion: \"1.0\";",
+      "  scan: {",
+      "    id: string;",
+      "    producer: {",
+      "      name: string;",
+      "      version: string;",
+      "      [k: string]: unknown;",
+      "    };"
+     ],
+     "total": 434
+    },
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 226,
+    "tokens": 799,
+    "first": {
+     "name": "plugins/codex-security/mcp-app/src/deep-scan/project-config.schema.json",
+     "start": 1,
+     "end": 226
+    },
+    "others": [
+     {
+      "name": "sdk/typescript/schemas/project-config.schema.json",
+      "start": 1,
+      "end": 226
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{",
+      "  \"$schema\": \"http://json-schema.org/draft-07/schema#\",",
+      "  \"type\": \"object\",",
+      "  \"properties\": {",
+      "    \"$schema\": {",
+      "      \"description\": \"Editor schema URI or relative path. The CLI does not fetch or select a validator from this value.\",",
+      "      \"type\": \"string\",",
+      "      \"minLength\": 1",
+      "    },",
+      "    \"auth\": {"
+     ],
+     "total": 226
+    },
+    "kind": "data"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 60,
+    "first": {
+     "name": "sdk/typescript/tests-ts/api.test.ts",
+     "start": 5945,
+     "end": 5954
+    },
+    "others": [
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 6253,
+      "end": 6262
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 6351,
+      "end": 6360
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 6693,
+      "end": 6702
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 6797,
+      "end": 6806
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7222,
+      "end": 7231
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7330,
+      "end": 7339
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7444,
+      "end": 7453
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 8695,
+      "end": 8704
+     }
+    ],
+    "copies": 12,
+    "excerpt": {
+     "lines": [
+      "      pollAllowed.resolve();",
+      "    }",
+      "    return { events: completedEvents(\"thread-1\", events()) };",
+      "  }),",
+      "});",
+      "// The fake stream has no process handle to keep the unref'ed poll alive.",
+      "const keepAlive = setInterval(() => {}, 1_000);",
+      "try {",
+      "  await client.run(repository, {",
+      "    onProgress: (update) => updates.push(update),"
+     ],
+     "total": 10
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "yaml",
+    "lines": 86,
+    "tokens": 643,
+    "first": {
+     "name": "github-action/README.md",
+     "start": 301,
+     "end": 386
+    },
+    "others": [
+     {
+      "name": "github-action/examples/pull-request.yml",
+      "start": 1,
+      "end": 86
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markup",
+    "lines": 34,
+    "tokens": 580,
+    "first": {
+     "name": "plugins/codex-security/skills/threat-model-visualize/assets/context-reference-overview.svg",
+     "start": 163,
+     "end": 196
+    },
+    "others": [
+     {
+      "name": "plugins/codex-security/skills/threat-model-visualize/assets/context-reference-path.svg",
+      "start": 247,
+      "end": 280
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 61,
+    "first": {
+     "name": "sdk/typescript/tests-ts/api.test.ts",
+     "start": 7332,
+     "end": 7341
+    },
+    "others": [
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7446,
+      "end": 7455
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7583,
+      "end": 7592
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7875,
+      "end": 7884
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 8027,
+      "end": 8035
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 8697,
+      "end": 8706
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 8896,
+      "end": 8905
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 9029,
+      "end": 9038
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 13211,
+      "end": 13220
+     }
+    ],
+    "copies": 10,
+    "kind": "tests"
+   },
+   {
+    "format": "typescript",
+    "lines": 110,
+    "tokens": 522,
+    "first": {
+     "name": "plugins/codex-security/mcp-app/src/contract-values.ts",
+     "start": 1,
+     "end": 110
+    },
+    "others": [
+     {
+      "name": "sdk/typescript/src/contract-values.ts",
+      "start": 2,
+      "end": 111
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markup",
+    "lines": 18,
+    "tokens": 522,
+    "first": {
+     "name": "plugins/codex-security/skills/threat-model-visualize/assets/context-reference-overview.svg",
+     "start": 197,
+     "end": 214
+    },
+    "others": [
+     {
+      "name": "plugins/codex-security/skills/threat-model-visualize/assets/context-reference-path.svg",
+      "start": 281,
+      "end": 298
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "markup",
+    "lines": 22,
+    "tokens": 417,
+    "first": {
+     "name": "plugins/codex-security/skills/threat-model-visualize/assets/context-reference-overview.svg",
+     "start": 215,
+     "end": 236
+    },
+    "others": [
+     {
+      "name": "plugins/codex-security/skills/threat-model-visualize/assets/context-reference-path.svg",
+      "start": 299,
+      "end": 320
+     }
+    ],
+    "copies": 2,
+    "kind": "markup"
+   },
+   {
+    "format": "typescript",
+    "lines": 11,
+    "tokens": 53,
+    "first": {
+     "name": "sdk/typescript/tests-ts/api.test.ts",
+     "start": 5091,
+     "end": 5101
+    },
+    "others": [
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7332,
+      "end": 7341
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7446,
+      "end": 7455
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7583,
+      "end": 7592
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 7875,
+      "end": 7884
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 8027,
+      "end": 8035
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 8697,
+      "end": 8706
+     },
+     {
+      "name": "sdk/typescript/tests-ts/api.test.ts",
+      "start": 13526,
+      "end": 13534
+     }
+    ],
+    "copies": 8,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 566,
+   "lines": 186180,
+   "tokens": 1089064,
+   "clones": 44,
+   "duplicatedLines": 1023,
+   "duplicatedTokens": 5501,
+   "percentage": 0.55,
+   "percentageTokens": 0.51,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 429,
+     "lines": 138123,
+     "clones": 27,
+     "duplicatedLines": 874,
+     "percentage": 0.63
+    },
+    {
+     "format": "python",
+     "sources": 53,
+     "lines": 34188,
+     "clones": 13,
+     "duplicatedLines": 115,
+     "percentage": 0.34
+    },
+    {
+     "format": "javascript",
+     "sources": 57,
+     "lines": 9846,
+     "clones": 4,
+     "duplicatedLines": 34,
+     "percentage": 0.35
+    },
+    {
+     "format": "rust",
+     "sources": 7,
+     "lines": 2194,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 18,
+     "lines": 1054,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "tsx",
+     "sources": 1,
+     "lines": 768,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 1,
+     "lines": 7,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 434,
+     "tokens": 1971,
+     "first": {
+      "name": "plugins/codex-security/mcp-app/src/models.ts",
+      "start": 3,
+      "end": 436
+     },
+     "others": [
+      {
+       "name": "sdk/typescript/src/models.ts",
+       "start": 3,
+       "end": 436
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "export interface ScanManifest {",
+       "  documentType: \"codex-security.scan-manifest\";",
+       "  schemaVersion: \"1.0\";",
+       "  scan: {",
+       "    id: string;",
+       "    producer: {",
+       "      name: string;",
+       "      version: string;",
+       "      [k: string]: unknown;",
+       "    };"
+      ],
+      "total": 434
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 110,
+     "tokens": 522,
+     "first": {
+      "name": "plugins/codex-security/mcp-app/src/contract-values.ts",
+      "start": 1,
+      "end": 110
+     },
+     "others": [
+      {
+       "name": "sdk/typescript/src/contract-values.ts",
+       "start": 2,
+       "end": 111
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import { hash } from \"node:crypto\";",
+       "import { isAbsolute, posix } from \"node:path\";",
+       "import type { Finding } from \"./models.js\";",
+       "import { isWindowsUnsafePathComponent } from \"./windows-path.js\";",
+       "",
+       "export class SealedContractError extends Error {",
+       "  constructor(message: string, options?: ErrorOptions) {",
+       "    super(message, options);",
+       "    this.name = new.target.name;",
+       "  }"
+      ],
+      "total": 110
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 54,
+     "tokens": 268,
+     "first": {
+      "name": "plugins/codex-security/mcp-app/src/windows-path.ts",
+      "start": 1,
+      "end": 54
+     },
+     "others": [
+      {
+       "name": "sdk/typescript/src/windows-path.ts",
+       "start": 2,
+       "end": 55
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "import { parse, toNamespacedPath } from \"node:path\";",
+       "",
+       "// SQLite's default win32 VFS allows MAX_PATH * 4 UTF-8 bytes, including room for \"-journal\".",
+       "const SQLITE_WINDOWS_MAX_FILENAME_BYTES = 260 * 4 - 8;",
+       "",
+       "export function sqliteFilename(path: string): string {",
+       "  // Ordinary paths also preserve Win32 handling of device names and trailing spaces or dots.",
+       "  if (",
+       "    process.platform !== \"win32\" ||",
+       "    path.length + 8 < 260 ||"
+      ],
+      "total": 54
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 47,
+     "tokens": 232,
+     "first": {
+      "name": "plugins/codex-security/mcp-app/src/executable-path.ts",
+      "start": 1,
+      "end": 47
+     },
+     "others": [
+      {
+       "name": "sdk/typescript/src/executable-path.ts",
+       "start": 2,
+       "end": 48
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 24,
+     "tokens": 184,
+     "first": {
+      "name": "plugins/codex-security/mcp-app/src/workbench-arguments.ts",
+      "start": 1,
+      "end": 24
+     },
+     "others": [
+      {
+       "name": "sdk/typescript/src/workbench-arguments.ts",
+       "start": 2,
+       "end": 25
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 57,
+     "first": {
+      "name": "plugins/codex-security/mcp-app/src/models.ts",
+      "start": 214,
+      "end": 225
+     },
+     "others": [
+      {
+       "name": "plugins/codex-security/mcp-app/src/models.ts",
+       "start": 226,
+       "end": 237
+      },
+      {
+       "name": "plugins/codex-security/mcp-app/src/models.ts",
+       "start": 238,
+       "end": 249
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 27,
+     "tokens": 109,
+     "first": {
+      "name": "plugins/codex-security/mcp-app/src/deep-scan-settings.ts",
+      "start": 2,
+      "end": 28
+     },
+     "others": [
+      {
+       "name": "sdk/typescript/src/deep-scan-defaults.ts",
+       "start": 12,
+       "end": 38
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 9,
+     "tokens": 75,
+     "first": {
+      "name": "plugins/codex-security/scripts/workbench_db.py",
+      "start": 1991,
+      "end": 1999
+     },
+     "others": [
+      {
+       "name": "plugins/codex-security/scripts/workbench_db.py",
+       "start": 2079,
+       "end": 2087
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 8,
+     "tokens": 75,
+     "first": {
+      "name": "plugins/codex-security/scripts/workbench_scan_history.py",
+      "start": 789,
+      "end": 796
+     },
+     "others": [
+      {
+       "name": "plugins/codex-security/scripts/workbench_scan_history.py",
+       "start": 969,
+       "end": 976
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 8,
+     "tokens": 71,
+     "first": {
+      "name": "evals/triage-finding/scripts/test-triage-provider.mts",
+      "start": 1197,
+      "end": 1204
+     },
+     "others": [
+      {
+       "name": "evals/triage-finding/scripts/test-triage-provider.mts",
+       "start": 1419,
+       "end": 1426
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 60,
+   "grade": "C",
+   "size": {
+    "lines": 570210,
+    "files": 1174,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 1.8,
+     "adjusted": 1.8,
+     "lines": 10305,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "python",
+      "javascript",
+      "rust",
+      "bash",
+      "tsx",
+      "powershell",
+      "docker",
+      "batch"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 86.3
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 3.3,
+     "adjusted": 3.3,
+     "lines": 18941,
+     "halfLife": 7.5,
+     "coverage": 99.3,
+     "weight": 0.993,
+     "score": 73.4
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 77.7,
+     "adjusted": 77.5,
+     "lines": 443133,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 34.1
+    }
+   ]
+  },
+  "complexity": {
+   "total": 80324,
+   "mean": 68.4,
+   "files": [
+    {
+     "path": "sdk/typescript/src/cli.ts",
+     "complexity": 2811,
+     "lines": 13714,
+     "bytes": 493206
+    },
+    {
+     "path": "sdk/typescript/tests-ts/api.test.ts",
+     "complexity": 2627,
+     "lines": 19751,
+     "bytes": 716110
+    },
+    {
+     "path": "sdk/typescript/src/api.ts",
+     "complexity": 1470,
+     "lines": 7847,
+     "bytes": 279132
+    },
+    {
+     "path": "plugins/codex-security/scripts/workbench/retained_coverage.py",
+     "complexity": 1287,
+     "lines": 3193,
+     "bytes": 148411
+    },
+    {
+     "path": "sdk/typescript/src/cost.ts",
+     "complexity": 1235,
+     "lines": 4159,
+     "bytes": 148628
+    },
+    {
+     "path": "sdk/typescript/src/runtime.ts",
+     "complexity": 1064,
+     "lines": 4826,
+     "bytes": 158509
+    },
+    {
+     "path": "plugins/codex-security/mcp-app/src/artifact-scan-draft.ts",
+     "complexity": 1048,
+     "lines": 3524,
+     "bytes": 118549
+    },
+    {
+     "path": "plugins/codex-security/scripts/finalize_scan_contract.py",
+     "complexity": 949,
+     "lines": 3471,
+     "bytes": 147094
+    },
+    {
+     "path": "sdk/typescript/tests-ts/external-findings-publish.test.ts",
+     "complexity": 805,
+     "lines": 9281,
+     "bytes": 327460
+    },
+    {
+     "path": "sdk/typescript/tests-ts/cost.test.ts",
+     "complexity": 696,
+     "lines": 7504,
+     "bytes": 244915
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 3.34,
+   "findings": 215,
+   "files": 1176,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 111
+    },
+    {
+     "category": "unused-export",
+     "count": 65
+    },
+    {
+     "category": "unused-symbol",
+     "count": 39
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "plugins/codex-security/mcp-app/src/sealed-contract.ts",
+     "name": "",
+     "line": 1,
+     "lines": 1151
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/codex-security/native/proof-process-windows.mts",
+     "name": "",
+     "line": 1,
+     "lines": 1056
+    },
+    {
+     "category": "unused-file",
+     "path": "evals/secret-discovery/test_discovery.mts",
+     "name": "",
+     "line": 1,
+     "lines": 1013
+    },
+    {
+     "category": "unused-file",
+     "path": "sdk/typescript/src/patch-tui.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 768
+    },
+    {
+     "category": "unused-file",
+     "path": "evals/secret-discovery/test_runtime.mts",
+     "name": "",
+     "line": 1,
+     "lines": 758
+    },
+    {
+     "category": "unused-file",
+     "path": "evals/standard-time-budget/test_grading.mts",
+     "name": "",
+     "line": 1,
+     "lines": 553
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/codex-security/native/proof-windows.mts",
+     "name": "",
+     "line": 1,
+     "lines": 440
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/codex-security/mcp-app/src/workbench/local-dedupe.ts",
+     "name": "",
+     "line": 1,
+     "lines": 391
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/codex-security/native/proof-windows-wide.mts",
+     "name": "",
+     "line": 1,
+     "lines": 379
+    },
+    {
+     "category": "unused-file",
+     "path": "evals/secret-discovery/harness.mts",
+     "name": "",
+     "line": 1,
+     "lines": 373
+    }
+   ]
+  }
+ }
+}

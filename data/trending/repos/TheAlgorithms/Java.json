@@ -1,0 +1,801 @@
+{
+ "name": "TheAlgorithms/Java",
+ "url": "https://github.com/TheAlgorithms/Java",
+ "appearances": [
+  {
+   "date": "2026-11-12",
+   "rank": 8,
+   "stars": 67107,
+   "starsToday": 51,
+   "headSha": "c46808958406c3b74726542fc9ad7e8038fe924e",
+   "sources": 1652,
+   "lines": 154791,
+   "clones": 1191,
+   "duplicatedLines": 11595,
+   "percentage": 7.49,
+   "codePercentage": 5.48,
+   "codeSources": 841,
+   "healthScore": 70.2,
+   "healthGrade": "B"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T05:21:45.783Z",
+  "name": "TheAlgorithms/Java",
+  "url": "https://github.com/TheAlgorithms/Java",
+  "description": "All Algorithms implemented in Java",
+  "language": "Java",
+  "stars": 67107,
+  "starsToday": 51,
+  "defaultBranch": "master",
+  "headSha": "c46808958406c3b74726542fc9ad7e8038fe924e",
+  "durationMs": 2185,
+  "total": {
+   "sources": 1652,
+   "lines": 154791,
+   "tokens": 1962801,
+   "clones": 1191,
+   "duplicatedLines": 11595,
+   "duplicatedTokens": 129067,
+   "percentage": 7.49,
+   "percentageTokens": 6.58
+  },
+  "formats": [
+   {
+    "format": "java",
+    "sources": 1617,
+    "lines": 151197,
+    "clones": 1191,
+    "duplicatedLines": 11595,
+    "percentage": 7.67
+   },
+   {
+    "format": "markdown",
+    "sources": 12,
+    "lines": 2222,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 4,
+    "lines": 565,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "yaml",
+    "sources": 12,
+    "lines": 533,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "properties",
+    "sources": 1,
+    "lines": 111,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "docker",
+    "sources": 2,
+    "lines": 47,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 1,
+    "lines": 47,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 2,
+    "lines": 42,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "python",
+    "sources": 1,
+    "lines": 27,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "java",
+    "lines": 87,
+    "tokens": 1552,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 242,
+     "end": 328
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+      "start": 255,
+      "end": 341
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "}",
+      "",
+      "/**",
+      " * Notifies the eviction listener, if one is registered, that a key-value pair has been evicted.",
+      " *",
+      " * <p>If the {@code evictionListener} is not {@code null}, it is invoked with the provided key",
+      " * and value. Any exceptions thrown by the listener are caught and logged to standard error,",
+      " * preventing them from disrupting cache operations.",
+      " *",
+      " * @param key   the key that was evicted"
+     ],
+     "total": 87
+    },
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 19,
+    "tokens": 615,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 155,
+     "end": 173
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+      "start": 161,
+      "end": 179
+     },
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+      "start": 154,
+      "end": 172
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      " * If the key does not exist and the cache is full, the oldest entry is evicted to make space.",
+      " * Expired entries are also cleaned up prior to any eviction. The eviction listener",
+      " * is notified when an entry gets evicted.",
+      " *",
+      " * @param key        the key to associate with the cached value; must not be {@code null}",
+      " * @param value      the value to be cached; must not be {@code null}",
+      " * @param ttlMillis  the time-to-live for this entry in milliseconds; must be >= 0",
+      " * @throws IllegalArgumentException if {@code key} or {@code value} is {@code null}, or if {@code ttlMillis} is negative",
+      " */",
+      "public void put(K key, V value, long ttlMillis) {"
+     ],
+     "total": 19
+    },
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 46,
+    "tokens": 1101,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 481,
+     "end": 526
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+      "start": 495,
+      "end": 540
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "private EvictionStrategy<K, V> evictionStrategy = new FIFOCache.ImmediateEvictionStrategy<>();",
+      "/**",
+      " * Creates a new {@code Builder} with the specified cache capacity.",
+      " *",
+      " * @param capacity the maximum number of entries the cache can hold; must be > 0",
+      " * @throws IllegalArgumentException if {@code capacity} is less than or equal to 0",
+      " */",
+      "public Builder(int capacity) {",
+      "    if (capacity <= 0) {",
+      "        throw new IllegalArgumentException(\"Capacity must be > 0\");"
+     ],
+     "total": 46
+    },
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 59,
+    "tokens": 999,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 241,
+     "end": 299
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+      "start": 227,
+      "end": 285
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 7,
+    "tokens": 474,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/dynamicprogramming/Fibonacci.java",
+     "start": 13,
+     "end": 19
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/maths/FibonacciLoop.java",
+      "start": 12,
+      "end": 18
+     },
+     {
+      "name": "src/main/java/com/thealgorithms/recursion/FibonacciSeries.java",
+      "start": 15,
+      "end": 21
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 10,
+    "tokens": 473,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 24,
+     "end": 33
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+      "start": 27,
+      "end": 36
+     },
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+      "start": 24,
+      "end": 33
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 41,
+    "tokens": 227,
+    "first": {
+     "name": "src/test/java/com/thealgorithms/sorts/AdaptiveMergeSortTest.java",
+     "start": 87,
+     "end": 127
+    },
+    "others": [
+     {
+      "name": "src/test/java/com/thealgorithms/sorts/BogoSortTest.java",
+      "start": 96,
+      "end": 136
+     },
+     {
+      "name": "src/test/java/com/thealgorithms/sorts/BubbleSortTest.java",
+      "start": 124,
+      "end": 164
+     },
+     {
+      "name": "src/test/java/com/thealgorithms/sorts/InsertionSortTest.java",
+      "start": 144,
+      "end": 184
+     },
+     {
+      "name": "src/test/java/com/thealgorithms/sorts/SlowSortTest.java",
+      "start": 109,
+      "end": 149
+     }
+    ],
+    "copies": 5,
+    "kind": "tests"
+   },
+   {
+    "format": "java",
+    "lines": 19,
+    "tokens": 378,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 531,
+     "end": 549
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+      "start": 545,
+      "end": 563
+     },
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+      "start": 487,
+      "end": 505
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 30,
+    "tokens": 749,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 95,
+     "end": 124
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+      "start": 94,
+      "end": 123
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "java",
+    "lines": 26,
+    "tokens": 712,
+    "first": {
+     "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+     "start": 95,
+     "end": 120
+    },
+    "others": [
+     {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+      "start": 100,
+      "end": 125
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 841,
+   "lines": 88511,
+   "tokens": 1409938,
+   "clones": 457,
+   "duplicatedLines": 4854,
+   "duplicatedTokens": 78298,
+   "percentage": 5.48,
+   "percentageTokens": 5.55,
+   "formats": [
+    {
+     "format": "java",
+     "sources": 840,
+     "lines": 88484,
+     "clones": 457,
+     "duplicatedLines": 4854,
+     "percentage": 5.49
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 27,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "java",
+     "lines": 87,
+     "tokens": 1552,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 242,
+      "end": 328
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+       "start": 255,
+       "end": 341
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "/**",
+       " * Notifies the eviction listener, if one is registered, that a key-value pair has been evicted.",
+       " *",
+       " * <p>If the {@code evictionListener} is not {@code null}, it is invoked with the provided key",
+       " * and value. Any exceptions thrown by the listener are caught and logged to standard error,",
+       " * preventing them from disrupting cache operations.",
+       " *",
+       " * @param key   the key that was evicted"
+      ],
+      "total": 87
+     },
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 19,
+     "tokens": 615,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 155,
+      "end": 173
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+       "start": 161,
+       "end": 179
+      },
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+       "start": 154,
+       "end": 172
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       " * If the key does not exist and the cache is full, the oldest entry is evicted to make space.",
+       " * Expired entries are also cleaned up prior to any eviction. The eviction listener",
+       " * is notified when an entry gets evicted.",
+       " *",
+       " * @param key        the key to associate with the cached value; must not be {@code null}",
+       " * @param value      the value to be cached; must not be {@code null}",
+       " * @param ttlMillis  the time-to-live for this entry in milliseconds; must be >= 0",
+       " * @throws IllegalArgumentException if {@code key} or {@code value} is {@code null}, or if {@code ttlMillis} is negative",
+       " */",
+       "public void put(K key, V value, long ttlMillis) {"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 46,
+     "tokens": 1101,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 481,
+      "end": 526
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+       "start": 495,
+       "end": 540
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "private EvictionStrategy<K, V> evictionStrategy = new FIFOCache.ImmediateEvictionStrategy<>();",
+       "/**",
+       " * Creates a new {@code Builder} with the specified cache capacity.",
+       " *",
+       " * @param capacity the maximum number of entries the cache can hold; must be > 0",
+       " * @throws IllegalArgumentException if {@code capacity} is less than or equal to 0",
+       " */",
+       "public Builder(int capacity) {",
+       "    if (capacity <= 0) {",
+       "        throw new IllegalArgumentException(\"Capacity must be > 0\");"
+      ],
+      "total": 46
+     },
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 59,
+     "tokens": 999,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 241,
+      "end": 299
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+       "start": 227,
+       "end": 285
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 7,
+     "tokens": 474,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/dynamicprogramming/Fibonacci.java",
+      "start": 13,
+      "end": 19
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/maths/FibonacciLoop.java",
+       "start": 12,
+       "end": 18
+      },
+      {
+       "name": "src/main/java/com/thealgorithms/recursion/FibonacciSeries.java",
+       "start": 15,
+       "end": 21
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 10,
+     "tokens": 473,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 24,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+       "start": 27,
+       "end": 36
+      },
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+       "start": 24,
+       "end": 33
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 19,
+     "tokens": 378,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 531,
+      "end": 549
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+       "start": 545,
+       "end": 563
+      },
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+       "start": 487,
+       "end": 505
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 30,
+     "tokens": 749,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 95,
+      "end": 124
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/RRCache.java",
+       "start": 94,
+       "end": 123
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 26,
+     "tokens": 712,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/datastructures/caches/FIFOCache.java",
+      "start": 95,
+      "end": 120
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/datastructures/caches/LIFOCache.java",
+       "start": 100,
+       "end": 125
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "java",
+     "lines": 50,
+     "tokens": 682,
+     "first": {
+      "name": "src/main/java/com/thealgorithms/streaming/CusumDetector.java",
+      "start": 167,
+      "end": 216
+     },
+     "others": [
+      {
+       "name": "src/main/java/com/thealgorithms/streaming/EwmaChangeDetector.java",
+       "start": 170,
+       "end": 219
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 70.2,
+   "grade": "B",
+   "size": {
+    "lines": 151271,
+    "files": 1620,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 7.7,
+     "adjusted": 7.6,
+     "lines": 11595,
+     "halfLife": 8.5,
+     "formats": [
+      "java",
+      "docker",
+      "python"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 53.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 6.1,
+     "adjusted": 6.3,
+     "lines": 9250,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 91.6
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 17609,
+   "mean": 10.9,
+   "files": [
+    {
+     "path": "src/main/java/com/thealgorithms/maths/MathBuilder.java",
+     "complexity": 106,
+     "lines": 503,
+     "bytes": 14039
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/geometry/BentleyOttmann.java",
+     "complexity": 98,
+     "lines": 423,
+     "bytes": 15238
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/streaming/UnscentedKalmanFilter.java",
+     "complexity": 85,
+     "lines": 561,
+     "bytes": 22615
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/datastructures/lists/SinglyLinkedList.java",
+     "complexity": 80,
+     "lines": 476,
+     "bytes": 12791
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/datastructures/trees/BTree.java",
+     "complexity": 79,
+     "lines": 323,
+     "bytes": 8930
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/streaming/TDigest.java",
+     "complexity": 75,
+     "lines": 540,
+     "bytes": 20064
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/datastructures/trees/KDTree.java",
+     "complexity": 68,
+     "lines": 458,
+     "bytes": 13604
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/datastructures/trees/RedBlackBST.java",
+     "complexity": 67,
+     "lines": 339,
+     "bytes": 9590
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/conversions/WordsToNumber.java",
+     "complexity": 66,
+     "lines": 343,
+     "bytes": 12902
+    },
+    {
+     "path": "src/main/java/com/thealgorithms/graph/HierholzerEulerianPath.java",
+     "complexity": 60,
+     "lines": 303,
+     "bytes": 9261
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 1,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}
