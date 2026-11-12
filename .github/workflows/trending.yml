@@ -1,8 +1,13 @@
 name: Trending repos analysis
 
 on:
+  # The morning run makes the day. The two later runs are spares for a day
+  # when github.com/trending is down in the morning (504 on 2026-11-09):
+  # they stop at the first step when the day's snapshot is already there.
   schedule:
     - cron: "17 5 * * *"
+    - cron: "17 11 * * *"
+    - cron: "17 17 * * *"
   workflow_dispatch:
 
 permissions:
@@ -24,7 +29,16 @@ jobs:
         with:
           node-version: "24.x"
 
+      - name: Skip when today's snapshot exists
+        id: today
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ] && [ -f "data/trending/$(date -u +%F).json" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "data/trending/$(date -u +%F).json exists, nothing to do"
+          fi
+
       - name: Analyze trending repos with jscpd
+        if: steps.today.outputs.skip != 'true'
         run: node scripts/analyze-trending.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -32,12 +46,14 @@ jobs:
       # The GitHub stars next to the logos on the landing page. A failed
       # refresh keeps yesterday's numbers and does not stop the trending run.
       - name: Refresh the stars of the logo wall
+        if: steps.today.outputs.skip != 'true'
         run: node scripts/fetch-user-stars.mjs
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit refreshed data
+        if: steps.today.outputs.skip != 'true'
         id: commit
         run: |
           if [ -z "$(git status --porcelain -- data)" ]; then
