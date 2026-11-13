@@ -33,67 +33,91 @@
    "codeSources": 19,
    "healthScore": 70.4,
    "healthGrade": "B"
+  },
+  {
+   "date": "2026-11-13",
+   "rank": 3,
+   "stars": 96047,
+   "starsToday": 63,
+   "headSha": "09e620c401382f4b3d3147333dd64c1e09188fdb",
+   "sources": 457,
+   "lines": 35176,
+   "clones": 143,
+   "duplicatedLines": 3553,
+   "percentage": 10.1,
+   "codePercentage": null,
+   "codeSources": 9,
+   "healthScore": 66.5,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-10-15",
-  "generatedAt": "2026-10-15T05:29:00.485Z",
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-13T05:21:16.043Z",
   "name": "nvm-sh/nvm",
   "url": "https://github.com/nvm-sh/nvm",
   "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
   "language": "Shell",
-  "stars": 95494,
-  "starsToday": 52,
+  "stars": 96047,
+  "starsToday": 63,
   "defaultBranch": "master",
-  "headSha": "b1b3a0038c0666c7436cb5d383608b4b72c8300b",
-  "durationMs": 1525,
+  "headSha": "09e620c401382f4b3d3147333dd64c1e09188fdb",
+  "durationMs": 918,
   "total": {
-   "sources": 391,
-   "lines": 28674,
-   "tokens": 142596,
-   "clones": 103,
-   "duplicatedLines": 2943,
-   "duplicatedTokens": 18835,
-   "percentage": 10.26,
-   "percentageTokens": 13.21
+   "sources": 457,
+   "lines": 35176,
+   "tokens": 172748,
+   "clones": 143,
+   "duplicatedLines": 3553,
+   "duplicatedTokens": 21375,
+   "percentage": 10.1,
+   "percentageTokens": 12.37
   },
   "formats": [
    {
     "format": "bash",
-    "sources": 347,
-    "lines": 21043,
-    "clones": 47,
-    "duplicatedLines": 744,
-    "percentage": 3.54
+    "sources": 408,
+    "lines": 26634,
+    "clones": 87,
+    "duplicatedLines": 1354,
+    "percentage": 5.08
    },
    {
     "format": "txt",
-    "sources": 10,
-    "lines": 2967,
+    "sources": 11,
+    "lines": 3726,
     "clones": 33,
     "duplicatedLines": 1876,
-    "percentage": 63.23
+    "percentage": 50.35
    },
    {
     "format": "yaml",
     "sources": 17,
-    "lines": 1967,
+    "lines": 1975,
     "clones": 22,
     "duplicatedLines": 313,
-    "percentage": 15.91
+    "percentage": 15.85
    },
    {
     "format": "markdown",
     "sources": 12,
-    "lines": 2388,
+    "lines": 2430,
     "clones": 1,
     "duplicatedLines": 10,
-    "percentage": 0.42
+    "percentage": 0.41
    },
    {
-    "format": "perl",
-    "sources": 1,
-    "lines": 168,
+    "format": "docker",
+    "sources": 2,
+    "lines": 136,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "makefile",
+    "sources": 2,
+    "lines": 123,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -101,7 +125,7 @@
    {
     "format": "text",
     "sources": 3,
-    "lines": 88,
+    "lines": 64,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -110,6 +134,14 @@
     "format": "json",
     "sources": 1,
     "lines": 53,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "editorconfig",
+    "sources": 1,
+    "lines": 35,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -314,6 +346,45 @@
     "kind": "tests"
    },
    {
+    "format": "bash",
+    "lines": 24,
+    "tokens": 88,
+    "first": {
+     "name": "test/fast/Aliases/an alias can store --lts",
+     "start": 1,
+     "end": 24
+    },
+    "others": [
+     {
+      "name": "test/fast/Aliases/an alias can store --only",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "test/fast/Unit tests/nvm uninstall only removes aliases to the uninstalled version",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "test/fast/Unit tests/nvm use and nvm which explain an excluded alpha",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "test/fast/Unit tests/nvm_auto use with a prerelease default",
+      "start": 1,
+      "end": 24
+     },
+     {
+      "name": "test/fast/Unit tests/nvm_ls alpha",
+      "start": 1,
+      "end": 24
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
     "format": "txt",
     "lines": 41,
     "tokens": 205,
@@ -336,52 +407,25 @@
     ],
     "copies": 3,
     "kind": "tests"
-   },
-   {
-    "format": "yaml",
-    "lines": 49,
-    "tokens": 381,
-    "first": {
-     "name": ".github/workflows/tests-installation-node.yml",
-     "start": 33,
-     "end": 81
-    },
-    "others": [
-     {
-      "name": ".github/workflows/tests-xenial.yml",
-      "start": 30,
-      "end": 78
-     }
-    ],
-    "copies": 2,
-    "kind": "data"
    }
   ],
   "code": {
-   "sources": 19,
-   "lines": 7601,
-   "tokens": 29255,
-   "clones": 7,
-   "duplicatedLines": 100,
-   "duplicatedTokens": 463,
-   "percentage": 1.32,
-   "percentageTokens": 1.58,
+   "sources": 9,
+   "lines": 8161,
+   "tokens": 32733,
+   "clones": 9,
+   "duplicatedLines": 133,
+   "duplicatedTokens": 603,
+   "percentage": 1.63,
+   "percentageTokens": 1.84,
    "formats": [
     {
      "format": "bash",
-     "sources": 18,
-     "lines": 7433,
-     "clones": 7,
-     "duplicatedLines": 100,
-     "percentage": 1.35
-    },
-    {
-     "format": "perl",
-     "sources": 1,
-     "lines": 168,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "sources": 9,
+     "lines": 8161,
+     "clones": 9,
+     "duplicatedLines": 133,
+     "percentage": 1.63
     }
    ],
    "topClones": [
@@ -391,14 +435,14 @@
      "tokens": 122,
      "first": {
       "name": "install.sh",
-      "start": 123,
-      "end": 147
+      "start": 129,
+      "end": 153
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 175,
-       "end": 199
+       "start": 191,
+       "end": 215
       }
      ],
      "copies": 2,
@@ -421,18 +465,52 @@
     },
     {
      "format": "bash",
-     "lines": 11,
-     "tokens": 73,
+     "lines": 20,
+     "tokens": 75,
      "first": {
       "name": "nvm.sh",
-      "start": 4459,
-      "end": 4469
+      "start": 6014,
+      "end": 6033
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 4575,
-       "end": 4585
+       "start": 6130,
+       "end": 6149
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    ;;",
+       "    *)",
+       "      if [ -n \"$1\" ]; then",
+       "        break",
+       "      else",
+       "        shift",
+       "      fi",
+       "    ;; # stop processing arguments",
+       "  esac",
+       "done"
+      ],
+      "total": 20
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 11,
+     "tokens": 74,
+     "first": {
+      "name": "nvm.sh",
+      "start": 5453,
+      "end": 5463
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 5581,
+       "end": 5591
       }
      ],
      "copies": 2,
@@ -446,11 +524,30 @@
        "  nvm_install_default_packages",
        "fi",
        "if [ $EXIT_CODE -eq 0 ] && [ -n \"${REINSTALL_PACKAGES_FROM-}\" ] && [ \"_${REINSTALL_PACKAGES_FROM}\" != \"_N/A\" ]; then",
-       "  nvm reinstall-packages \"${REINSTALL_PACKAGES_FROM}\"",
+       "  nvm reinstall-packages \"--only=${NVM_ONLY_INSTALLED}\" \"${REINSTALL_PACKAGES_FROM}\"",
        "  EXIT_CODE=$?"
       ],
       "total": 11
      },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 17,
+     "tokens": 64,
+     "first": {
+      "name": "nvm.sh",
+      "start": 6261,
+      "end": 6277
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 6665,
+       "end": 6680
+      }
+     ],
+     "copies": 2,
      "kind": "code"
     },
     {
@@ -465,42 +562,8 @@
      "others": [
       {
        "name": "nvm.sh",
-       "start": 69,
-       "end": 82
-      }
-     ],
-     "copies": 2,
-     "excerpt": {
-      "lines": [
-       "  type \"$1\" > /dev/null 2>&1",
-       "}",
-       "",
-       "# resolves like `command \"${1}\"` does: only executables on the PATH,",
-       "# ignoring shell functions and aliases",
-       "nvm_has_executable() {",
-       "  (",
-       "    # `|| true` so that shells with errexit-style options (eg, zsh's ERR_RETURN)",
-       "    # do not abort the subshell when the name is not an alias or a function",
-       "    unalias \"${1-}\" 2>/dev/null || true"
-      ],
-      "total": 14
-     },
-     "kind": "code"
-    },
-    {
-     "format": "bash",
-     "lines": 12,
-     "tokens": 55,
-     "first": {
-      "name": "nvm.sh",
-      "start": 4254,
-      "end": 4265
-     },
-     "others": [
-      {
-       "name": "nvm.sh",
-       "start": 4410,
-       "end": 4421
+       "start": 66,
+       "end": 79
       }
      ],
      "copies": 2,
@@ -508,18 +571,18 @@
     },
     {
      "format": "bash",
-     "lines": 11,
-     "tokens": 53,
+     "lines": 10,
+     "tokens": 56,
      "first": {
       "name": "nvm.sh",
-      "start": 4242,
-      "end": 4252
+      "start": 6005,
+      "end": 6014
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 4399,
-       "end": 4409
+       "start": 6117,
+       "end": 6125
       }
      ],
      "copies": 2,
@@ -531,14 +594,33 @@
      "tokens": 52,
      "first": {
       "name": "nvm.sh",
-      "start": 823,
-      "end": 828
+      "start": 1105,
+      "end": 1110
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 828,
-       "end": 834
+       "start": 1110,
+       "end": 1116
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 9,
+     "tokens": 52,
+     "first": {
+      "name": "nvm.sh",
+      "start": 5831,
+      "end": 5839
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 6265,
+       "end": 6277
       }
      ],
      "copies": 2,
@@ -550,14 +632,14 @@
      "tokens": 50,
      "first": {
       "name": "nvm.sh",
-      "start": 2916,
-      "end": 2936
+      "start": 3702,
+      "end": 3722
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 3280,
-       "end": 3300
+       "start": 4090,
+       "end": 4110
       }
      ],
      "copies": 2,
@@ -571,41 +653,42 @@
    }
   },
   "health": {
-   "score": 70.4,
-   "grade": "B",
+   "score": 66.5,
+   "grade": "C",
    "size": {
-    "lines": 20966,
-    "files": 346,
+    "lines": 26617,
+    "files": 409,
     "class": "M"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 3.5,
-     "adjusted": 3.5,
-     "lines": 744,
+     "value": 5.1,
+     "adjusted": 5,
+     "lines": 1354,
      "halfLife": 8.5,
      "formats": [
       "bash",
-      "perl"
+      "makefile",
+      "docker"
      ],
      "excluded": [
       "text",
       "data"
      ],
      "weight": 1,
-     "score": 74.9
+     "score": 66.6
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 30.7,
-     "adjusted": 29.8,
-     "lines": 6433,
+     "value": 30.2,
+     "adjusted": 29.6,
+     "lines": 8047,
      "halfLife": 50,
      "weight": 1,
-     "score": 66.1
+     "score": 66.4
     }
    ],
    "skipped": [
@@ -616,26 +699,38 @@
    ]
   },
   "complexity": {
-   "total": 3849,
-   "mean": 11.1,
+   "total": 5072,
+   "mean": 12.4,
    "files": [
     {
      "path": "nvm.sh",
-     "complexity": 1053,
-     "lines": 5642,
-     "bytes": 187913
+     "complexity": 1338,
+     "lines": 6980,
+     "bytes": 243120
     },
     {
      "path": "install.sh",
-     "complexity": 101,
-     "lines": 536,
-     "bytes": 17987
+     "complexity": 116,
+     "lines": 587,
+     "bytes": 20055
     },
     {
      "path": "test/fast/Unit tests/nvm_die_on_prefix",
-     "complexity": 80,
-     "lines": 255,
-     "bytes": 13328
+     "complexity": 91,
+     "lines": 309,
+     "bytes": 16798
+    },
+    {
+     "path": "test/fast/Unit tests/nvm_remote_version",
+     "complexity": 51,
+     "lines": 171,
+     "bytes": 7641
+    },
+    {
+     "path": "test/fast/Unit tests/nvm_wget_with_auth_header",
+     "complexity": 45,
+     "lines": 187,
+     "bytes": 8133
     },
     {
      "path": "test/common.sh",
@@ -658,26 +753,14 @@
     {
      "path": "release-notes.sh",
      "complexity": 34,
-     "lines": 153,
-     "bytes": 5919
+     "lines": 159,
+     "bytes": 6454
     },
     {
      "path": "test/fast/Unit tests/nvm_get_download_slug",
      "complexity": 34,
      "lines": 135,
      "bytes": 5568
-    },
-    {
-     "path": "test/fast/Unit tests/nvm_ensure_version_installed",
-     "complexity": 25,
-     "lines": 73,
-     "bytes": 3283
-    },
-    {
-     "path": "test/fast/Unit tests/nvm_print_color_legend",
-     "complexity": 25,
-     "lines": 197,
-     "bytes": 6938
     }
    ]
   },
