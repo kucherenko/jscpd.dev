@@ -1,0 +1,782 @@
+{
+ "name": "tailscale/tailcat",
+ "url": "https://github.com/tailscale/tailcat",
+ "appearances": [
+  {
+   "date": "2026-11-14",
+   "rank": 7,
+   "stars": 9548,
+   "starsToday": 256,
+   "headSha": "e00cdde6ff787f801361ff85ed085775c775d4c5",
+   "sources": 100,
+   "lines": 24489,
+   "clones": 65,
+   "duplicatedLines": 689,
+   "percentage": 2.81,
+   "codePercentage": 0.7,
+   "codeSources": 43,
+   "healthScore": 55,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-14T05:21:34.109Z",
+  "name": "tailscale/tailcat",
+  "url": "https://github.com/tailscale/tailcat",
+  "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+  "language": "Go",
+  "stars": 9548,
+  "starsToday": 256,
+  "defaultBranch": "main",
+  "headSha": "e00cdde6ff787f801361ff85ed085775c775d4c5",
+  "durationMs": 835,
+  "total": {
+   "sources": 100,
+   "lines": 24489,
+   "tokens": 162252,
+   "clones": 65,
+   "duplicatedLines": 689,
+   "duplicatedTokens": 5026,
+   "percentage": 2.81,
+   "percentageTokens": 3.1
+  },
+  "formats": [
+   {
+    "format": "go",
+    "sources": 77,
+    "lines": 21302,
+    "clones": 64,
+    "duplicatedLines": 678,
+    "percentage": 3.18
+   },
+   {
+    "format": "yaml",
+    "sources": 6,
+    "lines": 423,
+    "clones": 1,
+    "duplicatedLines": 11,
+    "percentage": 2.6
+   },
+   {
+    "format": "markdown",
+    "sources": 7,
+    "lines": 1545,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "c-header",
+    "sources": 1,
+    "lines": 407,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "javascript",
+    "sources": 1,
+    "lines": 344,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 3,
+    "lines": 188,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "go-module",
+    "sources": 1,
+    "lines": 113,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "c",
+    "sources": 2,
+    "lines": 66,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 1,
+    "lines": 63,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "nix",
+    "sources": 1,
+    "lines": 38,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "go",
+    "lines": 8,
+    "tokens": 53,
+    "first": {
+     "name": "listen_test.go",
+     "start": 19,
+     "end": 26
+    },
+    "others": [
+     {
+      "name": "tailcat_test.go",
+      "start": 360,
+      "end": 367
+     },
+     {
+      "name": "tailcat_test.go",
+      "start": 418,
+      "end": 425
+     },
+     {
+      "name": "tailcat_test.go",
+      "start": 512,
+      "end": 519
+     },
+     {
+      "name": "tailcat_test.go",
+      "start": 1022,
+      "end": 1029
+     },
+     {
+      "name": "tailcat_test.go",
+      "start": 1121,
+      "end": 1128
+     }
+    ],
+    "copies": 6,
+    "excerpt": {
+     "lines": [
+      "func TestListen(t *testing.T) {",
+      "    t.Parallel()",
+      "",
+      "    dm := integration.RunDERPAndSTUN(t, mkLogger(t, \"derpstun\"), \"127.0.0.1\")",
+      "    reg := dm.Regions[1]",
+      "    if reg == nil {",
+      "        t.Fatal(\"no region 1 in derpmap\")",
+      "    }"
+     ],
+     "total": 8
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 25,
+    "tokens": 196,
+    "first": {
+     "name": "tailcat_test.go",
+     "start": 711,
+     "end": 735
+    },
+    "others": [
+     {
+      "name": "tailcat_test.go",
+      "start": 857,
+      "end": 881
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "func TestUDPForward(t *testing.T) {",
+      "    dm := integration.RunDERPAndSTUN(t, mkLogger(t, \"derpstun\"), \"127.0.0.1\")",
+      "    reg := dm.Regions[1]",
+      "    if reg == nil {",
+      "        t.Fatal(\"no region 1 in derpmap\")",
+      "    }",
+      "",
+      "    backend, err := net.ListenUDP(\"udp4\", &net.UDPAddr{IP: net.IPv4(127, 0, 0, 1)})",
+      "    if err != nil {",
+      "        t.Fatal(err)"
+     ],
+     "total": 25
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 26,
+    "tokens": 182,
+    "first": {
+     "name": "cmd/tailcat/socks_test.go",
+     "start": 226,
+     "end": 251
+    },
+    "others": [
+     {
+      "name": "tailcat_test.go",
+      "start": 712,
+      "end": 737
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "dm := integration.RunDERPAndSTUN(t, testLogger(t, \"derpstun\"), \"127.0.0.1\")",
+      "reg := dm.Regions[1]",
+      "if reg == nil {",
+      "    t.Fatal(\"no region 1 in derpmap\")",
+      "}",
+      "",
+      "backend, err := net.ListenUDP(\"udp4\", &net.UDPAddr{IP: net.IPv4(127, 0, 0, 1)})",
+      "if err != nil {",
+      "    t.Fatal(err)",
+      "}"
+     ],
+     "total": 26
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 25,
+    "tokens": 169,
+    "first": {
+     "name": "cmd/tailcat/forward_test.go",
+     "start": 62,
+     "end": 86
+    },
+    "others": [
+     {
+      "name": "cmd/tailcat/forward_test.go",
+      "start": 124,
+      "end": 148
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 25,
+    "tokens": 156,
+    "first": {
+     "name": "web/wasm_test.go",
+     "start": 253,
+     "end": 277
+    },
+    "others": [
+     {
+      "name": "web/wasm_test.go",
+      "start": 485,
+      "end": 509
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 20,
+    "tokens": 151,
+    "first": {
+     "name": "tailcat_test.go",
+     "start": 744,
+     "end": 763
+    },
+    "others": [
+     {
+      "name": "tailcat_test.go",
+      "start": 896,
+      "end": 915
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 9,
+    "tokens": 68,
+    "first": {
+     "name": "cmd/tailcat/socks_test.go",
+     "start": 313,
+     "end": 321
+    },
+    "others": [
+     {
+      "name": "cmd/tailcat/socks_test.go",
+      "start": 333,
+      "end": 341
+     },
+     {
+      "name": "cmd/tailcat/socks_test.go",
+      "start": 353,
+      "end": 361
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 19,
+    "tokens": 131,
+    "first": {
+     "name": "tailcat.go",
+     "start": 652,
+     "end": 670
+    },
+    "others": [
+     {
+      "name": "tailcat.go",
+      "start": 2011,
+      "end": 2029
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "go",
+    "lines": 17,
+    "tokens": 128,
+    "first": {
+     "name": "tailcat_test.go",
+     "start": 806,
+     "end": 822
+    },
+    "others": [
+     {
+      "name": "tailcat_test.go",
+      "start": 970,
+      "end": 986
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 8,
+    "tokens": 62,
+    "first": {
+     "name": "tailcat_test.go",
+     "start": 649,
+     "end": 656
+    },
+    "others": [
+     {
+      "name": "tailcat_test.go",
+      "start": 815,
+      "end": 822
+     },
+     {
+      "name": "tailcat_test.go",
+      "start": 979,
+      "end": 986
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 43,
+   "lines": 13308,
+   "tokens": 83736,
+   "clones": 9,
+   "duplicatedLines": 93,
+   "duplicatedTokens": 726,
+   "percentage": 0.7,
+   "percentageTokens": 0.87,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 40,
+     "lines": 12516,
+     "clones": 9,
+     "duplicatedLines": 93,
+     "percentage": 0.74
+    },
+    {
+     "format": "c-header",
+     "sources": 1,
+     "lines": 407,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 344,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 41,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 19,
+     "tokens": 131,
+     "first": {
+      "name": "tailcat.go",
+      "start": 652,
+      "end": 670
+     },
+     "others": [
+      {
+       "name": "tailcat.go",
+       "start": 2011,
+       "end": 2029
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "sys := &lb.sys",
+       "bus := eventbus.New()",
+       "sys.Set(bus)",
+       "sys.Set(health.NewTracker(bus))",
+       "",
+       "netMon, err := netmon.New(bus, func(format string, args ...any) {",
+       "    logf(format, args...)",
+       "})",
+       "if err != nil {",
+       "    lb.Close() // closes the subsystems started so far"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 11,
+     "tokens": 90,
+     "first": {
+      "name": "cmd/libtailcat/main.go",
+      "start": 148,
+      "end": 158
+     },
+     "others": [
+      {
+       "name": "cmd/libtailcat/main.go",
+       "start": 165,
+       "end": 175
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "func tc_conn_read(id C.tc_handle, token C.tc_token, ptr unsafe.Pointer, size C.size_t, count *C.size_t, err **C.char) C.int32_t {",
+       "    return guard(err, func() error {",
+       "        if count == nil {",
+       "            return capi.ErrArgument",
+       "        }",
+       "        *count = 0",
+       "        b, err := buffer(ptr, size)",
+       "        if err != nil {",
+       "            return err",
+       "        }"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 11,
+     "tokens": 88,
+     "first": {
+      "name": "tailcat.go",
+      "start": 2338,
+      "end": 2348
+     },
+     "others": [
+      {
+       "name": "tailcat.go",
+       "start": 2366,
+       "end": 2376
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "func (c *Client) DialTCP(ctx context.Context, ap netip.AddrPort) (net.Conn, error) {",
+       "    if err := c.up(ctx); err != nil {",
+       "        return nil, err",
+       "    }",
+       "    if ap.Addr().Is4() {",
+       "        a := nat64PrefixBytes",
+       "        a4 := ap.Addr().As4()",
+       "        copy(a[12:], a4[:])",
+       "        ap = netip.AddrPortFrom(netip.AddrFrom16(a), ap.Port())",
+       "    }"
+      ],
+      "total": 11
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 86,
+     "first": {
+      "name": "tailcat.go",
+      "start": 750,
+      "end": 759
+     },
+     "others": [
+      {
+       "name": "tailcat.go",
+       "start": 2073,
+       "end": 2081
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 75,
+     "first": {
+      "name": "cmd/tailcat/tailcat.go",
+      "start": 1979,
+      "end": 1987
+     },
+     "others": [
+      {
+       "name": "cmd/tailcat/tailcat.go",
+       "start": 2061,
+       "end": 2070
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 12,
+     "tokens": 69,
+     "first": {
+      "name": "tailcat.go",
+      "start": 693,
+      "end": 704
+     },
+     "others": [
+      {
+       "name": "tailcat.go",
+       "start": 2047,
+       "end": 2058
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 67,
+     "first": {
+      "name": "cmd/tailcat/tailcat.go",
+      "start": 807,
+      "end": 815
+     },
+     "others": [
+      {
+       "name": "cmd/tailcat/tailcat.go",
+       "start": 1341,
+       "end": 1349
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 64,
+     "first": {
+      "name": "tailcat.go",
+      "start": 719,
+      "end": 724
+     },
+     "others": [
+      {
+       "name": "tailcat.go",
+       "start": 736,
+       "end": 741
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 6,
+     "tokens": 56,
+     "first": {
+      "name": "internal/capi/api.go",
+      "start": 308,
+      "end": 313
+     },
+     "others": [
+      {
+       "name": "internal/capi/api.go",
+       "start": 321,
+       "end": 326
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 55,
+   "grade": "C",
+   "size": {
+    "lines": 22136,
+    "files": 81,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.1,
+     "adjusted": 3.1,
+     "lines": 678,
+     "halfLife": 8.5,
+     "formats": [
+      "go",
+      "c-header",
+      "javascript",
+      "c",
+      "bash",
+      "nix"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 77.7
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 72.4,
+     "adjusted": 68.2,
+     "lines": 16034,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 38.9
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 4296,
+   "mean": 53,
+   "files": [
+    {
+     "path": "cmd/tailcat/tailcat.go",
+     "complexity": 481,
+     "lines": 2105,
+     "bytes": 71630
+    },
+    {
+     "path": "tailcat.go",
+     "complexity": 402,
+     "lines": 2640,
+     "bytes": 86171
+    },
+    {
+     "path": "tailcat_test.go",
+     "complexity": 374,
+     "lines": 1684,
+     "bytes": 47011
+    },
+    {
+     "path": "internal/perf/perf.go",
+     "complexity": 278,
+     "lines": 1363,
+     "bytes": 35957
+    },
+    {
+     "path": "internal/capi/api.go",
+     "complexity": 148,
+     "lines": 594,
+     "bytes": 15915
+    },
+    {
+     "path": "cmd/tailcat/cli_test.go",
+     "complexity": 141,
+     "lines": 658,
+     "bytes": 21110
+    },
+    {
+     "path": "cmd/tailcat/socks_test.go",
+     "complexity": 127,
+     "lines": 598,
+     "bytes": 15966
+    },
+    {
+     "path": "cmd/tailcat/perf.go",
+     "complexity": 110,
+     "lines": 450,
+     "bytes": 15098
+    },
+    {
+     "path": "internal/perf/perf_test.go",
+     "complexity": 109,
+     "lines": 377,
+     "bytes": 11985
+    },
+    {
+     "path": "tailcat_ssh_test.go",
+     "complexity": 108,
+     "lines": 497,
+     "bytes": 12884
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 1,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}
