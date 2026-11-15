@@ -1,0 +1,786 @@
+{
+ "name": "martin-olivier/airgorah",
+ "url": "https://github.com/martin-olivier/airgorah",
+ "appearances": [
+  {
+   "date": "2026-11-15",
+   "rank": 11,
+   "stars": 5986,
+   "starsToday": 270,
+   "headSha": "f5833ff068e7703fac33cc20442e2ceda190c3eb",
+   "sources": 53,
+   "lines": 8516,
+   "clones": 40,
+   "duplicatedLines": 445,
+   "percentage": 5.23,
+   "codePercentage": 5.43,
+   "codeSources": 46,
+   "healthScore": 64.2,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-15T05:21:58.194Z",
+  "name": "martin-olivier/airgorah",
+  "url": "https://github.com/martin-olivier/airgorah",
+  "description": "A WiFi security auditing software",
+  "language": "Rust",
+  "stars": 5986,
+  "starsToday": 270,
+  "defaultBranch": "main",
+  "headSha": "f5833ff068e7703fac33cc20442e2ceda190c3eb",
+  "durationMs": 843,
+  "total": {
+   "sources": 53,
+   "lines": 8516,
+   "tokens": 50234,
+   "clones": 40,
+   "duplicatedLines": 445,
+   "duplicatedTokens": 2864,
+   "percentage": 5.23,
+   "percentageTokens": 5.7
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 46,
+    "lines": 8197,
+    "clones": 40,
+    "duplicatedLines": 445,
+    "percentage": 5.43
+   },
+   {
+    "format": "yaml",
+    "sources": 1,
+    "lines": 127,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "toml",
+    "sources": 4,
+    "lines": 103,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 1,
+    "lines": 58,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "docker",
+    "sources": 1,
+    "lines": 31,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "rust",
+    "lines": 15,
+    "tokens": 104,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/app.rs",
+     "start": 1121,
+     "end": 1135
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/scan.rs",
+      "start": 109,
+      "end": 123
+     },
+     {
+      "name": "crates/gui/src/frontend/connections/scan.rs",
+      "start": 168,
+      "end": 183
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "file_chooser_dialog.set_current_name(&format!(\"{essid}.cap\"));",
+      "file_chooser_dialog.run_async(clone!(",
+      "    #[strong]",
+      "    app_data,",
+      "    move |this, response| {",
+      "        this.close();",
+      "",
+      "        if response == ResponseType::Accept {",
+      "            let gio_file = match this.file() {",
+      "                Some(file) => file,"
+     ],
+     "total": 15
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 51,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/app.rs",
+     "start": 577,
+     "end": 583
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 1014,
+      "end": 1020
+     },
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 1042,
+      "end": 1048
+     },
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 1080,
+      "end": 1086
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "app_data.app_gui.previous_but.connect_clicked(clone!(",
+      "    #[strong]",
+      "    app_data,",
+      "    move |_| {",
+      "        let iter = match app_data.app_gui.aps_view.selection().selected() {",
+      "            Some((_, iter)) => iter,",
+      "            None => return update_buttons_sensitivity(&app_data),"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "app_data.app_gui.deauth_but.connect_clicked(clone!(",
+      "    #[strong]",
+      "    app_data,",
+      "    move |_| {",
+      "        let iter = match app_data.app_gui.aps_view.selection().selected() {",
+      "            Some((_, iter)) => iter,",
+      "            None => return,"
+     ],
+     "total": 7
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 12,
+    "tokens": 72,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/decrypt.rs",
+     "start": 9,
+     "end": 20
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/interface.rs",
+      "start": 7,
+      "end": 18
+     },
+     {
+      "name": "crates/gui/src/frontend/connections/settings.rs",
+      "start": 8,
+      "end": 19
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "use std::collections::HashSet;",
+      "use std::rc::Rc;",
+      "",
+      "fn connect_controller(app_data: Rc<AppData>) {",
+      "    let controller = gtk4::EventControllerKey::new();",
+      "",
+      "    controller.connect_key_pressed(clone!(",
+      "        #[strong]",
+      "        app_data,",
+      "        move |_, key, _, _| {"
+     ],
+     "total": 12
+    },
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 23,
+    "tokens": 132,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/scan.rs",
+     "start": 202,
+     "end": 224
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/scan.rs",
+      "start": 245,
+      "end": 267
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 60,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/app.rs",
+     "start": 149,
+     "end": 157
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/deauth.rs",
+      "start": 33,
+      "end": 41
+     },
+     {
+      "name": "crates/gui/src/frontend/connections/decrypt.rs",
+      "start": 30,
+      "end": 38
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 14,
+    "tokens": 114,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/app.rs",
+     "start": 900,
+     "end": 913
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 941,
+      "end": 954
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 10,
+    "tokens": 57,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/app.rs",
+     "start": 201,
+     "end": 210
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 220,
+      "end": 229
+     },
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 239,
+      "end": 248
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 10,
+    "tokens": 57,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/app.rs",
+     "start": 279,
+     "end": 288
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 298,
+      "end": 307
+     },
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 317,
+      "end": 326
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 21,
+    "tokens": 110,
+    "first": {
+     "name": "crates/agent/src/backend/deauth.rs",
+     "start": 173,
+     "end": 193
+    },
+    "others": [
+     {
+      "name": "crates/agent/src/backend/pmkid.rs",
+      "start": 310,
+      "end": 330
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "rust",
+    "lines": 17,
+    "tokens": 110,
+    "first": {
+     "name": "crates/gui/src/frontend/connections/app.rs",
+     "start": 1014,
+     "end": 1030
+    },
+    "others": [
+     {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 1042,
+      "end": 1058
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 46,
+   "lines": 8197,
+   "tokens": 48223,
+   "clones": 40,
+   "duplicatedLines": 445,
+   "duplicatedTokens": 2864,
+   "percentage": 5.43,
+   "percentageTokens": 5.94,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 46,
+     "lines": 8197,
+     "clones": 40,
+     "duplicatedLines": 445,
+     "percentage": 5.43
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 15,
+     "tokens": 104,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 1121,
+      "end": 1135
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/scan.rs",
+       "start": 109,
+       "end": 123
+      },
+      {
+       "name": "crates/gui/src/frontend/connections/scan.rs",
+       "start": 168,
+       "end": 183
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "file_chooser_dialog.set_current_name(&format!(\"{essid}.cap\"));",
+       "file_chooser_dialog.run_async(clone!(",
+       "    #[strong]",
+       "    app_data,",
+       "    move |this, response| {",
+       "        this.close();",
+       "",
+       "        if response == ResponseType::Accept {",
+       "            let gio_file = match this.file() {",
+       "                Some(file) => file,"
+      ],
+      "total": 15
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 51,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 577,
+      "end": 583
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 1014,
+       "end": 1020
+      },
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 1042,
+       "end": 1048
+      },
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 1080,
+       "end": 1086
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "app_data.app_gui.previous_but.connect_clicked(clone!(",
+       "    #[strong]",
+       "    app_data,",
+       "    move |_| {",
+       "        let iter = match app_data.app_gui.aps_view.selection().selected() {",
+       "            Some((_, iter)) => iter,",
+       "            None => return update_buttons_sensitivity(&app_data),"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "app_data.app_gui.deauth_but.connect_clicked(clone!(",
+       "    #[strong]",
+       "    app_data,",
+       "    move |_| {",
+       "        let iter = match app_data.app_gui.aps_view.selection().selected() {",
+       "            Some((_, iter)) => iter,",
+       "            None => return,"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 12,
+     "tokens": 72,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/decrypt.rs",
+      "start": 9,
+      "end": 20
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/interface.rs",
+       "start": 7,
+       "end": 18
+      },
+      {
+       "name": "crates/gui/src/frontend/connections/settings.rs",
+       "start": 8,
+       "end": 19
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "use std::collections::HashSet;",
+       "use std::rc::Rc;",
+       "",
+       "fn connect_controller(app_data: Rc<AppData>) {",
+       "    let controller = gtk4::EventControllerKey::new();",
+       "",
+       "    controller.connect_key_pressed(clone!(",
+       "        #[strong]",
+       "        app_data,",
+       "        move |_, key, _, _| {"
+      ],
+      "total": 12
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 23,
+     "tokens": 132,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/scan.rs",
+      "start": 202,
+      "end": 224
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/scan.rs",
+       "start": 245,
+       "end": 267
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 9,
+     "tokens": 60,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 149,
+      "end": 157
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/deauth.rs",
+       "start": 33,
+       "end": 41
+      },
+      {
+       "name": "crates/gui/src/frontend/connections/decrypt.rs",
+       "start": 30,
+       "end": 38
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 14,
+     "tokens": 114,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 900,
+      "end": 913
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 941,
+       "end": 954
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 57,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 201,
+      "end": 210
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 220,
+       "end": 229
+      },
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 239,
+       "end": 248
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 10,
+     "tokens": 57,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 279,
+      "end": 288
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 298,
+       "end": 307
+      },
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 317,
+       "end": 326
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 21,
+     "tokens": 110,
+     "first": {
+      "name": "crates/agent/src/backend/deauth.rs",
+      "start": 173,
+      "end": 193
+     },
+     "others": [
+      {
+       "name": "crates/agent/src/backend/pmkid.rs",
+       "start": 310,
+       "end": 330
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 110,
+     "first": {
+      "name": "crates/gui/src/frontend/connections/app.rs",
+      "start": 1014,
+      "end": 1030
+     },
+     "others": [
+      {
+       "name": "crates/gui/src/frontend/connections/app.rs",
+       "start": 1042,
+       "end": 1058
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 64.2,
+   "grade": "C",
+   "size": {
+    "lines": 8228,
+    "files": 47,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 5.4,
+     "adjusted": 5,
+     "lines": 445,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "docker"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 66.3
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 37.7,
+     "adjusted": 34.4,
+     "lines": 3101,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 62.1
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 945,
+   "mean": 20.1,
+   "files": [
+    {
+     "path": "crates/gui/src/frontend/connections/app.rs",
+     "complexity": 135,
+     "lines": 1184,
+     "bytes": 42574
+    },
+    {
+     "path": "crates/agent/src/backend/sniffer.rs",
+     "complexity": 93,
+     "lines": 615,
+     "bytes": 20508
+    },
+    {
+     "path": "crates/gui/src/backend/client.rs",
+     "complexity": 86,
+     "lines": 504,
+     "bytes": 16386
+    },
+    {
+     "path": "crates/common/src/handshake.rs",
+     "complexity": 70,
+     "lines": 539,
+     "bytes": 21046
+    },
+    {
+     "path": "crates/agent/src/server.rs",
+     "complexity": 50,
+     "lines": 259,
+     "bytes": 8695
+    },
+    {
+     "path": "crates/gui/src/frontend/connections/scan.rs",
+     "complexity": 48,
+     "lines": 371,
+     "bytes": 12103
+    },
+    {
+     "path": "crates/agent/src/backend/pmkid.rs",
+     "complexity": 46,
+     "lines": 382,
+     "bytes": 13824
+    },
+    {
+     "path": "crates/agent/src/backend/interface.rs",
+     "complexity": 44,
+     "lines": 240,
+     "bytes": 6360
+    },
+    {
+     "path": "crates/gui/src/frontend/connections/decrypt.rs",
+     "complexity": 41,
+     "lines": 409,
+     "bytes": 13516
+    },
+    {
+     "path": "crates/gui/src/frontend/interfaces/app.rs",
+     "complexity": 37,
+     "lines": 574,
+     "bytes": 17002
+    }
+   ]
+  },
+  "deadCode": null
+ }
+}
