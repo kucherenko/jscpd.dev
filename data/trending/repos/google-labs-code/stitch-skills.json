@@ -1,0 +1,823 @@
+{
+ "name": "google-labs-code/stitch-skills",
+ "url": "https://github.com/google-labs-code/stitch-skills",
+ "appearances": [
+  {
+   "date": "2026-11-16",
+   "rank": 3,
+   "stars": 9428,
+   "starsToday": 247,
+   "headSha": "0337446dadde6f8c94210444e2aa9d546126480f",
+   "sources": 144,
+   "lines": 14770,
+   "clones": 22,
+   "duplicatedLines": 439,
+   "percentage": 2.97,
+   "codePercentage": null,
+   "codeSources": 13,
+   "healthScore": 63.7,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T05:23:43.132Z",
+  "name": "google-labs-code/stitch-skills",
+  "url": "https://github.com/google-labs-code/stitch-skills",
+  "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+  "language": "TypeScript",
+  "stars": 9428,
+  "starsToday": 247,
+  "defaultBranch": "main",
+  "headSha": "0337446dadde6f8c94210444e2aa9d546126480f",
+  "durationMs": 1129,
+  "total": {
+   "sources": 144,
+   "lines": 14770,
+   "tokens": 100417,
+   "clones": 22,
+   "duplicatedLines": 439,
+   "duplicatedTokens": 2870,
+   "percentage": 2.97,
+   "percentageTokens": 2.86
+  },
+  "formats": [
+   {
+    "format": "markdown",
+    "sources": 52,
+    "lines": 8023,
+    "clones": 11,
+    "duplicatedLines": 230,
+    "percentage": 2.87
+   },
+   {
+    "format": "typescript",
+    "sources": 10,
+    "lines": 3199,
+    "clones": 8,
+    "duplicatedLines": 175,
+    "percentage": 5.47
+   },
+   {
+    "format": "javascript",
+    "sources": 5,
+    "lines": 375,
+    "clones": 2,
+    "duplicatedLines": 25,
+    "percentage": 6.67
+   },
+   {
+    "format": "yaml",
+    "sources": 12,
+    "lines": 259,
+    "clones": 1,
+    "duplicatedLines": 9,
+    "percentage": 3.47
+   },
+   {
+    "format": "tsx",
+    "sources": 13,
+    "lines": 1351,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 15,
+    "lines": 487,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 10,
+    "lines": 378,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "python",
+    "sources": 1,
+    "lines": 268,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 14,
+    "lines": 171,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "css",
+    "sources": 7,
+    "lines": 165,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "markdown",
+    "lines": 31,
+    "tokens": 644,
+    "first": {
+     "name": "plugins/stitch-build/skills/react-components/SKILL.md",
+     "start": 17,
+     "end": 47
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-build/skills/react-native/SKILL.md",
+      "start": 16,
+      "end": 46
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "You are a frontend engineer focused on transforming designs into clean React code or syncing/updating existing React components to align with the latest Stitch…",
+      "",
+      "> **CRITICAL: Every step in this skill is MANDATORY. Do NOT skip any step or take shortcuts. Each section contains a GATE that must be satisfied before proceed…",
+      "",
+      "## Phase 1: Retrieval and networking",
+      "",
+      "> **GATE: Phase 1 is complete ONLY when all screens have been downloaded via `scripts/fetch-stitch.sh` AND visually audited. Reading local files directly witho…",
+      "",
+      "1. **Namespace discovery**: Run `list_tools` to find the Stitch MCP prefix. Use this prefix (e.g., `stitch:`) for all subsequent calls.",
+      "2. **Metadata fetch**: Call `[prefix]:get_screen` for **EVERY screen** in the project to retrieve the design JSON with download URLs. Do NOT skip any screen."
+     ],
+     "total": 31
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 75,
+    "tokens": 432,
+    "first": {
+     "name": "plugins/stitch-design/skills/extract-static-html/scripts/extract_inline_html.ts",
+     "start": 403,
+     "end": 477
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/post_process.ts",
+      "start": 155,
+      "end": 224
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "}",
+      "",
+      "// ---------------------------------------------------------------------------",
+      "// Robust CSS url() parser — character-by-character (no regex)",
+      "// ---------------------------------------------------------------------------",
+      "function extractCssUrls(text: string): CssUrlRef[] {",
+      "  const results: CssUrlRef[] = [];",
+      "  let i = 0;",
+      "  const len = text.length;",
+      ""
+     ],
+     "total": 75
+    },
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 99,
+    "tokens": 406,
+    "first": {
+     "name": "plugins/stitch-design/skills/generate-design/references/prompt-keywords.md",
+     "start": 1,
+     "end": 99
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-utilities/skills/enhance-prompt/references/KEYWORDS.md",
+      "start": 1,
+      "end": 86
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "# UI/UX Keywords Reference",
+      "",
+      "Progressive disclosure reference for common UI terminology and adjective",
+      "palettes.",
+      "",
+      "## Component Keywords",
+      "",
+      "### Navigation",
+      "",
+      "- navigation bar, nav menu, header"
+     ],
+     "total": 99
+    },
+    "excerptSecond": {
+     "lines": [
+      "# UI/UX Keywords Reference",
+      "",
+      "Progressive disclosure reference for common UI terminology and adjective palettes.",
+      "",
+      "## Component Keywords",
+      "",
+      "### Navigation",
+      "- navigation bar, nav menu, header",
+      "- breadcrumbs, tabs, sidebar",
+      "- hamburger menu, dropdown menu"
+     ],
+     "total": 86
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 6,
+    "tokens": 74,
+    "first": {
+     "name": "plugins/stitch-design/skills/generate-design/SKILL.md",
+     "start": 141,
+     "end": 146
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-design/skills/generate-design/SKILL.md",
+      "start": 196,
+      "end": 201
+     },
+     {
+      "name": "plugins/stitch-design/skills/generate-design/SKILL.md",
+      "start": 304,
+      "end": 309
+     }
+    ],
+    "copies": 3,
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 19,
+    "tokens": 135,
+    "first": {
+     "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+     "start": 1109,
+     "end": 1127
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+      "start": 1140,
+      "end": 1157
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "markdown",
+    "lines": 10,
+    "tokens": 116,
+    "first": {
+     "name": "plugins/stitch-design/skills/generate-design/references/prompt-keywords.md",
+     "start": 122,
+     "end": 131
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-utilities/skills/enhance-prompt/references/KEYWORDS.md",
+      "start": 105,
+      "end": 114
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 23,
+    "tokens": 105,
+    "first": {
+     "name": "plugins/stitch-design/skills/manage-design-system/SKILL.md",
+     "start": 95,
+     "end": 117
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-design/skills/manage-design-system/reference/tool-schema.md",
+      "start": 136,
+      "end": 162
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "typescript",
+    "lines": 20,
+    "tokens": 84,
+    "first": {
+     "name": "plugins/stitch-design/skills/extract-static-html/scripts/post_process.ts",
+     "start": 312,
+     "end": 331
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/post_process.ts",
+      "start": 381,
+      "end": 400
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 13,
+    "tokens": 80,
+    "first": {
+     "name": "plugins/stitch-build/skills/react-components/scripts/validate.js",
+     "start": 21,
+     "end": 33
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-build/skills/react-native/scripts/validate.js",
+      "start": 23,
+      "end": 35
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 12,
+    "tokens": 74,
+    "first": {
+     "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+     "start": 666,
+     "end": 677
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+      "start": 827,
+      "end": 837
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 13,
+   "lines": 3884,
+   "tokens": 20344,
+   "clones": 9,
+   "duplicatedLines": 188,
+   "duplicatedTokens": 1053,
+   "percentage": 4.84,
+   "percentageTokens": 5.18,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 3,
+     "lines": 2993,
+     "clones": 8,
+     "duplicatedLines": 175,
+     "percentage": 5.85
+    },
+    {
+     "format": "javascript",
+     "sources": 2,
+     "lines": 206,
+     "clones": 1,
+     "duplicatedLines": 13,
+     "percentage": 6.31
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 268,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 4,
+     "lines": 233,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "tsx",
+     "sources": 3,
+     "lines": 184,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 75,
+     "tokens": 432,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/extract_inline_html.ts",
+      "start": 403,
+      "end": 477
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/post_process.ts",
+       "start": 155,
+       "end": 224
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "}",
+       "",
+       "// ---------------------------------------------------------------------------",
+       "// Robust CSS url() parser — character-by-character (no regex)",
+       "// ---------------------------------------------------------------------------",
+       "function extractCssUrls(text: string): CssUrlRef[] {",
+       "  const results: CssUrlRef[] = [];",
+       "  let i = 0;",
+       "  const len = text.length;",
+       ""
+      ],
+      "total": 75
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 19,
+     "tokens": 135,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+      "start": 1109,
+      "end": 1127
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+       "start": 1140,
+       "end": 1157
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "if (!srcset) continue;",
+       "const parts = srcset.split(',').map((s: string) => s.trim());",
+       "const newParts: string[] = [];",
+       "",
+       "await processInBatches(parts, CONCURRENCY, async (part: string) => {",
+       "  const [url, ...descriptors] = part.split(/\\s+/);",
+       "  if (url.startsWith('data:')) {",
+       "    newParts.push(part);",
+       "    return;",
+       "  }"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 20,
+     "tokens": 84,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/post_process.ts",
+      "start": 312,
+      "end": 331
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/post_process.ts",
+       "start": 381,
+       "end": 400
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "  return match;",
+       "}",
+       "",
+       "const result = readFileAtomic(resolved, maxSize);",
+       "if (!result) {",
+       "  stats.skippedNotFound.push(localPath);",
+       "  return match;",
+       "}",
+       "if ('tooLarge' in result) {",
+       "  stats.skippedTooLarge.push({ path: localPath, size: result.size });"
+      ],
+      "total": 20
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 13,
+     "tokens": 80,
+     "first": {
+      "name": "plugins/stitch-build/skills/react-components/scripts/validate.js",
+      "start": 21,
+      "end": 33
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-build/skills/react-native/scripts/validate.js",
+       "start": 23,
+       "end": 35
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 74,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+      "start": 666,
+      "end": 677
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+       "start": 827,
+       "end": 837
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 13,
+     "tokens": 70,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+      "start": 704,
+      "end": 716
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+       "start": 848,
+       "end": 859
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 12,
+     "tokens": 66,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/extract_inline_html.ts",
+      "start": 605,
+      "end": 616
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/extract_inline_html.ts",
+       "start": 623,
+       "end": 634
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 18,
+     "tokens": 58,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/extract_inline_html.ts",
+      "start": 140,
+      "end": 157
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+       "start": 163,
+       "end": 180
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 6,
+     "tokens": 54,
+     "first": {
+      "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+      "start": 472,
+      "end": 477
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+       "start": 1335,
+       "end": 1340
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 63.7,
+   "grade": "C",
+   "size": {
+    "lines": 4787,
+    "files": 19,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.9,
+     "adjusted": 3.8,
+     "lines": 188,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "tsx",
+      "python",
+      "bash",
+      "javascript"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 73.3
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 4,
+     "adjusted": 3.7,
+     "lines": 185,
+     "halfLife": 7.5,
+     "coverage": 96.7,
+     "weight": 0.967,
+     "score": 70.9
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 62.5,
+     "adjusted": 50.3,
+     "lines": 2993,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 49.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 873,
+   "mean": 45.9,
+   "files": [
+    {
+     "path": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
+     "complexity": 346,
+     "lines": 1470,
+     "bytes": 54743
+    },
+    {
+     "path": "plugins/stitch-design/skills/extract-static-html/scripts/extract_inline_html.ts",
+     "complexity": 263,
+     "lines": 1025,
+     "bytes": 34450
+    },
+    {
+     "path": "plugins/stitch-design/skills/extract-static-html/scripts/post_process.ts",
+     "complexity": 97,
+     "lines": 498,
+     "bytes": 14295
+    },
+    {
+     "path": "plugins/stitch-build/skills/react-native/scripts/validate.js",
+     "complexity": 29,
+     "lines": 124,
+     "bytes": 4087
+    },
+    {
+     "path": "plugins/stitch-build/skills/react-components/scripts/validate.js",
+     "complexity": 25,
+     "lines": 82,
+     "bytes": 2758
+    },
+    {
+     "path": "plugins/stitch-build/skills/shadcn-ui/examples/data-table.tsx",
+     "complexity": 25,
+     "lines": 290,
+     "bytes": 8903
+    },
+    {
+     "path": "plugins/stitch-build/skills/shadcn-ui/scripts/verify-setup.sh",
+     "complexity": 22,
+     "lines": 134,
+     "bytes": 4511
+    },
+    {
+     "path": "plugins/stitch-design/skills/upload-to-stitch/scripts/upload_to_stitch.py",
+     "complexity": 20,
+     "lines": 268,
+     "bytes": 7417
+    },
+    {
+     "path": "plugins/stitch-build/skills/remotion/examples/WalkthroughComposition.tsx",
+     "complexity": 8,
+     "lines": 78,
+     "bytes": 2295
+    },
+    {
+     "path": "plugins/stitch-build/skills/react-native/examples/gold-standard-card.tsx",
+     "complexity": 6,
+     "lines": 167,
+     "bytes": 3826
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 4,
+   "findings": 4,
+   "files": 15,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 3
+    },
+    {
+     "category": "unused-import",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "plugins/stitch-build/skills/remotion/resources/screen-slide-template.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 123
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/stitch-build/skills/react-components/resources/component-template.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 37
+    },
+    {
+     "category": "unused-file",
+     "path": "plugins/stitch-build/skills/react-native/resources/component-template.tsx",
+     "name": "",
+     "line": 1,
+     "lines": 24
+    },
+    {
+     "category": "unused-import",
+     "path": "plugins/stitch-design/skills/extract-static-html/scripts/extract_inline_html.ts",
+     "name": "generate",
+     "line": 32,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

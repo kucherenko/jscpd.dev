@@ -1,0 +1,1089 @@
+{
+ "name": "ggml-org/ggml",
+ "url": "https://github.com/ggml-org/ggml",
+ "appearances": [
+  {
+   "date": "2026-11-16",
+   "rank": 8,
+   "stars": 15979,
+   "starsToday": 43,
+   "headSha": "417a024b4fb6bc3116d41af7c067166a039bdf12",
+   "sources": 1243,
+   "lines": 520693,
+   "clones": 8062,
+   "duplicatedLines": 112990,
+   "percentage": 21.7,
+   "codePercentage": 23.01,
+   "codeSources": 906,
+   "healthScore": 24.9,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T05:23:43.132Z",
+  "name": "ggml-org/ggml",
+  "url": "https://github.com/ggml-org/ggml",
+  "description": "Tensor library for machine learning",
+  "language": "C++",
+  "stars": 15979,
+  "starsToday": 43,
+  "defaultBranch": "master",
+  "headSha": "417a024b4fb6bc3116d41af7c067166a039bdf12",
+  "durationMs": 4518,
+  "total": {
+   "sources": 1243,
+   "lines": 520693,
+   "tokens": 4596614,
+   "clones": 8062,
+   "duplicatedLines": 112990,
+   "duplicatedTokens": 950799,
+   "percentage": 21.7,
+   "percentageTokens": 20.68
+  },
+  "formats": [
+   {
+    "format": "cpp",
+    "sources": 258,
+    "lines": 233852,
+    "clones": 3212,
+    "duplicatedLines": 40299,
+    "percentage": 17.23
+   },
+   {
+    "format": "lisp",
+    "sources": 275,
+    "lines": 59842,
+    "clones": 1853,
+    "duplicatedLines": 35574,
+    "percentage": 59.45
+   },
+   {
+    "format": "c",
+    "sources": 105,
+    "lines": 92397,
+    "clones": 1767,
+    "duplicatedLines": 22064,
+    "percentage": 23.88
+   },
+   {
+    "format": "c-header",
+    "sources": 210,
+    "lines": 59409,
+    "clones": 461,
+    "duplicatedLines": 5734,
+    "percentage": 9.65
+   },
+   {
+    "format": "glsl",
+    "sources": 181,
+    "lines": 26073,
+    "clones": 417,
+    "duplicatedLines": 5147,
+    "percentage": 19.74
+   },
+   {
+    "format": "cpp-header",
+    "sources": 43,
+    "lines": 20546,
+    "clones": 221,
+    "duplicatedLines": 2469,
+    "percentage": 12.02
+   },
+   {
+    "format": "wgsl",
+    "sources": 47,
+    "lines": 7403,
+    "clones": 71,
+    "duplicatedLines": 749,
+    "percentage": 10.12
+   },
+   {
+    "format": "python",
+    "sources": 26,
+    "lines": 5539,
+    "clones": 24,
+    "duplicatedLines": 350,
+    "percentage": 6.32
+   },
+   {
+    "format": "cmake",
+    "sources": 39,
+    "lines": 5851,
+    "clones": 13,
+    "duplicatedLines": 119,
+    "percentage": 2.03
+   },
+   {
+    "format": "yaml",
+    "sources": 6,
+    "lines": 876,
+    "clones": 13,
+    "duplicatedLines": 160,
+    "percentage": 18.26
+   }
+  ],
+  "topClones": [
+   {
+    "format": "c",
+    "lines": 51,
+    "tokens": 2676,
+    "first": {
+     "name": "src/ggml-cpu/arch/arm/quants.c",
+     "start": 3597,
+     "end": 3647
+    },
+    "others": [
+     {
+      "name": "src/ggml-cpu/arch/loongarch/quants.c",
+      "start": 1576,
+      "end": 1626
+     },
+     {
+      "name": "src/ggml-cpu/arch/powerpc/quants.c",
+      "start": 1387,
+      "end": 1437
+     },
+     {
+      "name": "src/ggml-cpu/arch/x86/quants.c",
+      "start": 2687,
+      "end": 2737
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "#if defined (__ARM_NEON)",
+      "static const int8_t keven_signs_q2xs[1024] = {",
+      "     1,  1,  1,  1,  1,  1,  1,  1, -1,  1,  1,  1,  1,  1,  1, -1,  1, -1,  1,  1,  1,  1,  1, -1, -1, -1,  1,  1,  1,  1,  1,  1,",
+      "     1,  1, -1,  1,  1,  1,  1, -1, -1,  1, -1,  1,  1,  1,  1,  1,  1, -1, -1,  1,  1,  1,  1,  1, -1, -1, -1,  1,  1,  1,  1, -1,",
+      "     1,  1,  1, -1,  1,  1,  1, -1, -1,  1,  1, -1,  1,  1,  1,  1,  1, -1,  1, -1,  1,  1,  1,  1, -1, -1,  1, -1,  1,  1,  1, -1,",
+      "     1,  1, -1, -1,  1,  1,  1,  1, -1,  1, -1, -1,  1,  1,  1, -1,  1, -1, -1, -1,  1,  1,  1, -1, -1, -1, -1, -1,  1,  1,  1,  1,",
+      "     1,  1,  1,  1, -1,  1,  1, -1, -1,  1,  1,  1, -1,  1,  1,  1,  1, -1,  1,  1, -1,  1,  1,  1, -1, -1,  1,  1, -1,  1,  1, -1,",
+      "     1,  1, -1,  1, -1,  1,  1,  1, -1,  1, -1,  1, -1,  1,  1, -1,  1, -1, -1,  1, -1,  1,  1, -1, -1, -1, -1,  1, -1,  1,  1,  1,",
+      "     1,  1,  1, -1, -1,  1,  1,  1, -1,  1,  1, -1, -1,  1,  1, -1,  1, -1,  1, -1, -1,  1,  1, -1, -1, -1,  1, -1, -1,  1,  1,  1,",
+      "     1,  1, -1, -1, -1,  1,  1, -1, -1,  1, -1, -1, -1,  1,  1,  1,  1, -1, -1, -1, -1,  1,  1,  1, -1, -1, -1, -1, -1,  1,  1, -1,"
+     ],
+     "total": 51
+    },
+    "kind": "code"
+   },
+   {
+    "format": "lisp",
+    "lines": 186,
+    "tokens": 4446,
+    "first": {
+     "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_k_f32.cl",
+     "start": 37,
+     "end": 222
+    },
+    "others": [
+     {
+      "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_k_f32_o4.cl",
+      "start": 29,
+      "end": 214
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "        *d = (q[(j+4)*stride] & mask_d4) | ((q[(j-4)*stride] & mask_hi2) >> 2);",
+      "        *m = ((q[(j+4)*stride] >> 4) & mask_d4) | ((q[j*stride] & mask_hi2) >> 2);",
+      "    }",
+      "}",
+      "",
+      "#define dequantizeBlockAccum_ns_sgbroadcast_1_hi(total_sums, bits4, scale, minv, y) \\",
+      "    float shared_y; \\",
+      "    shared_y = sub_group_broadcast(y.s0, 0); \\",
+      "    total_sums.s0 += ((bits4.s0 & 0x000F) * scale.s0 - minv.s0) * shared_y; \\",
+      "    total_sums.s1 += ((bits4.s1 & 0x000F) * scale.s1 - minv.s1) * shared_y; \\"
+     ],
+     "total": 186
+    },
+    "kind": "code"
+   },
+   {
+    "format": "lisp",
+    "lines": 194,
+    "tokens": 4204,
+    "first": {
+     "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_0_f32.cl",
+     "start": 15,
+     "end": 208
+    },
+    "others": [
+     {
+      "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_0_f32_spec.cl",
+      "start": 7,
+      "end": 200
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "#define MATERIALIZE_WG(x)",
+      "#endif",
+      "",
+      "// assume",
+      "#define QK4_0 32",
+      "#define N_SIMDGROUP 4",
+      "",
+      "#define dequantizeBlockAccum_ns_sgbroadcast_1_hi(total_sums, bits4, scale, y) \\",
+      "    float shared_y; \\",
+      "    shared_y = sub_group_broadcast(y.s0, 0); \\"
+     ],
+     "total": 194
+    },
+    "kind": "code"
+   },
+   {
+    "format": "lisp",
+    "lines": 116,
+    "tokens": 1952,
+    "first": {
+     "name": "src/ggml-opencl/kernels/gemm_moe_q4_0_f32_ns.cl",
+     "start": 28,
+     "end": 143
+    },
+    "others": [
+     {
+      "name": "src/ggml-opencl/kernels/gemm_moe_q4_1_f32_ns.cl",
+      "start": 28,
+      "end": 143
+     },
+     {
+      "name": "src/ggml-opencl/kernels/gemm_moe_q5_0_f32_ns.cl",
+      "start": 28,
+      "end": 143
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "lisp",
+    "lines": 116,
+    "tokens": 1943,
+    "first": {
+     "name": "src/ggml-opencl/kernels/gemm_moe_q4_k_f32_ns.cl",
+     "start": 44,
+     "end": 159
+    },
+    "others": [
+     {
+      "name": "src/ggml-opencl/kernels/gemm_moe_q5_k_f32_ns.cl",
+      "start": 44,
+      "end": 159
+     },
+     {
+      "name": "src/ggml-opencl/kernels/gemm_moe_q6_k_f32_ns.cl",
+      "start": 28,
+      "end": 143
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "lisp",
+    "lines": 21,
+    "tokens": 111,
+    "first": {
+     "name": "src/ggml-opencl/kernels/argsort.cl",
+     "start": 1,
+     "end": 21
+    },
+    "others": [
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_f16_f16.cl",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_f16_f32.cl",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_f16_f32_1row.cl",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_f16_f32_l4.cl",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_f32_f32.cl",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_id_mxfp4_f32.cl",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_id_mxfp4_f32_flat.cl",
+      "start": 1,
+      "end": 21
+     },
+     {
+      "name": "src/ggml-opencl/kernels/mul_mv_id_q4_0_f32_8x_flat.cl",
+      "start": 1,
+      "end": 21
+     }
+    ],
+    "copies": 36,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 9,
+    "tokens": 73,
+    "first": {
+     "name": "src/ggml-cpu/arch/arm/quants.c",
+     "start": 2021,
+     "end": 2029
+    },
+    "others": [
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 2869,
+      "end": 2877
+     },
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 3634,
+      "end": 3642
+     },
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 3696,
+      "end": 3704
+     },
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 3770,
+      "end": 3778
+     },
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 3867,
+      "end": 3875
+     },
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 3929,
+      "end": 3937
+     },
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 4039,
+      "end": 4047
+     },
+     {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 4105,
+      "end": 4113
+     }
+    ],
+    "copies": 48,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 300,
+    "tokens": 3238,
+    "first": {
+     "name": "src/ggml-cpu/arch/x86/repack.cpp",
+     "start": 3968,
+     "end": 4267
+    },
+    "others": [
+     {
+      "name": "src/ggml-cpu/arch/x86/repack.cpp",
+      "start": 4696,
+      "end": 4996
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 266,
+    "tokens": 3143,
+    "first": {
+     "name": "src/ggml-cpu/arch/x86/repack.cpp",
+     "start": 3601,
+     "end": 3866
+    },
+    "others": [
+     {
+      "name": "src/ggml-cpu/arch/x86/repack.cpp",
+      "start": 4334,
+      "end": 4598
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "cpp",
+    "lines": 38,
+    "tokens": 290,
+    "first": {
+     "name": "src/ggml-cpu/ops.cpp",
+     "start": 2878,
+     "end": 2915
+    },
+    "others": [
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 2929,
+      "end": 2966
+     },
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 2988,
+      "end": 3025
+     },
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 3082,
+      "end": 3119
+     },
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 3141,
+      "end": 3178
+     },
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 3235,
+      "end": 3272
+     },
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 3294,
+      "end": 3331
+     },
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 3679,
+      "end": 3716
+     },
+     {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 3738,
+      "end": 3775
+     }
+    ],
+    "copies": 11,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 906,
+   "lines": 436653,
+   "tokens": 3764283,
+   "clones": 7226,
+   "duplicatedLines": 100483,
+   "duplicatedTokens": 851770,
+   "percentage": 23.01,
+   "percentageTokens": 22.63,
+   "formats": [
+    {
+     "format": "cpp",
+     "sources": 223,
+     "lines": 202874,
+     "clones": 2897,
+     "duplicatedLines": 34428,
+     "percentage": 16.97
+    },
+    {
+     "format": "lisp",
+     "sources": 275,
+     "lines": 59842,
+     "clones": 1853,
+     "duplicatedLines": 35574,
+     "percentage": 59.45
+    },
+    {
+     "format": "c",
+     "sources": 98,
+     "lines": 91014,
+     "clones": 1745,
+     "duplicatedLines": 21742,
+     "percentage": 23.89
+    },
+    {
+     "format": "c-header",
+     "sources": 200,
+     "lines": 48603,
+     "clones": 433,
+     "duplicatedLines": 5416,
+     "percentage": 11.14
+    },
+    {
+     "format": "cpp-header",
+     "sources": 43,
+     "lines": 20546,
+     "clones": 221,
+     "duplicatedLines": 2469,
+     "percentage": 12.02
+    },
+    {
+     "format": "wgsl",
+     "sources": 47,
+     "lines": 7403,
+     "clones": 71,
+     "duplicatedLines": 749,
+     "percentage": 10.12
+    },
+    {
+     "format": "objectivec",
+     "sources": 2,
+     "lines": 3588,
+     "clones": 3,
+     "duplicatedLines": 32,
+     "percentage": 0.89
+    },
+    {
+     "format": "python",
+     "sources": 5,
+     "lines": 1075,
+     "clones": 3,
+     "duplicatedLines": 73,
+     "percentage": 6.79
+    },
+    {
+     "format": "bash",
+     "sources": 13,
+     "lines": 1708,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c",
+     "lines": 51,
+     "tokens": 2676,
+     "first": {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 3597,
+      "end": 3647
+     },
+     "others": [
+      {
+       "name": "src/ggml-cpu/arch/loongarch/quants.c",
+       "start": 1576,
+       "end": 1626
+      },
+      {
+       "name": "src/ggml-cpu/arch/powerpc/quants.c",
+       "start": 1387,
+       "end": 1437
+      },
+      {
+       "name": "src/ggml-cpu/arch/x86/quants.c",
+       "start": 2687,
+       "end": 2737
+      }
+     ],
+     "copies": 4,
+     "excerpt": {
+      "lines": [
+       "#if defined (__ARM_NEON)",
+       "static const int8_t keven_signs_q2xs[1024] = {",
+       "     1,  1,  1,  1,  1,  1,  1,  1, -1,  1,  1,  1,  1,  1,  1, -1,  1, -1,  1,  1,  1,  1,  1, -1, -1, -1,  1,  1,  1,  1,  1,  1,",
+       "     1,  1, -1,  1,  1,  1,  1, -1, -1,  1, -1,  1,  1,  1,  1,  1,  1, -1, -1,  1,  1,  1,  1,  1, -1, -1, -1,  1,  1,  1,  1, -1,",
+       "     1,  1,  1, -1,  1,  1,  1, -1, -1,  1,  1, -1,  1,  1,  1,  1,  1, -1,  1, -1,  1,  1,  1,  1, -1, -1,  1, -1,  1,  1,  1, -1,",
+       "     1,  1, -1, -1,  1,  1,  1,  1, -1,  1, -1, -1,  1,  1,  1, -1,  1, -1, -1, -1,  1,  1,  1, -1, -1, -1, -1, -1,  1,  1,  1,  1,",
+       "     1,  1,  1,  1, -1,  1,  1, -1, -1,  1,  1,  1, -1,  1,  1,  1,  1, -1,  1,  1, -1,  1,  1,  1, -1, -1,  1,  1, -1,  1,  1, -1,",
+       "     1,  1, -1,  1, -1,  1,  1,  1, -1,  1, -1,  1, -1,  1,  1, -1,  1, -1, -1,  1, -1,  1,  1, -1, -1, -1, -1,  1, -1,  1,  1,  1,",
+       "     1,  1,  1, -1, -1,  1,  1,  1, -1,  1,  1, -1, -1,  1,  1, -1,  1, -1,  1, -1, -1,  1,  1, -1, -1, -1,  1, -1, -1,  1,  1,  1,",
+       "     1,  1, -1, -1, -1,  1,  1, -1, -1,  1, -1, -1, -1,  1,  1,  1,  1, -1, -1, -1, -1,  1,  1,  1, -1, -1, -1, -1, -1,  1,  1, -1,"
+      ],
+      "total": 51
+     },
+     "kind": "code"
+    },
+    {
+     "format": "lisp",
+     "lines": 186,
+     "tokens": 4446,
+     "first": {
+      "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_k_f32.cl",
+      "start": 37,
+      "end": 222
+     },
+     "others": [
+      {
+       "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_k_f32_o4.cl",
+       "start": 29,
+       "end": 214
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "        *d = (q[(j+4)*stride] & mask_d4) | ((q[(j-4)*stride] & mask_hi2) >> 2);",
+       "        *m = ((q[(j+4)*stride] >> 4) & mask_d4) | ((q[j*stride] & mask_hi2) >> 2);",
+       "    }",
+       "}",
+       "",
+       "#define dequantizeBlockAccum_ns_sgbroadcast_1_hi(total_sums, bits4, scale, minv, y) \\",
+       "    float shared_y; \\",
+       "    shared_y = sub_group_broadcast(y.s0, 0); \\",
+       "    total_sums.s0 += ((bits4.s0 & 0x000F) * scale.s0 - minv.s0) * shared_y; \\",
+       "    total_sums.s1 += ((bits4.s1 & 0x000F) * scale.s1 - minv.s1) * shared_y; \\"
+      ],
+      "total": 186
+     },
+     "kind": "code"
+    },
+    {
+     "format": "lisp",
+     "lines": 194,
+     "tokens": 4204,
+     "first": {
+      "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_0_f32.cl",
+      "start": 15,
+      "end": 208
+     },
+     "others": [
+      {
+       "name": "src/ggml-opencl/kernels/gemv_noshuffle_q4_0_f32_spec.cl",
+       "start": 7,
+       "end": 200
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "#define MATERIALIZE_WG(x)",
+       "#endif",
+       "",
+       "// assume",
+       "#define QK4_0 32",
+       "#define N_SIMDGROUP 4",
+       "",
+       "#define dequantizeBlockAccum_ns_sgbroadcast_1_hi(total_sums, bits4, scale, y) \\",
+       "    float shared_y; \\",
+       "    shared_y = sub_group_broadcast(y.s0, 0); \\"
+      ],
+      "total": 194
+     },
+     "kind": "code"
+    },
+    {
+     "format": "lisp",
+     "lines": 116,
+     "tokens": 1952,
+     "first": {
+      "name": "src/ggml-opencl/kernels/gemm_moe_q4_0_f32_ns.cl",
+      "start": 28,
+      "end": 143
+     },
+     "others": [
+      {
+       "name": "src/ggml-opencl/kernels/gemm_moe_q4_1_f32_ns.cl",
+       "start": 28,
+       "end": 143
+      },
+      {
+       "name": "src/ggml-opencl/kernels/gemm_moe_q5_0_f32_ns.cl",
+       "start": 28,
+       "end": 143
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "lisp",
+     "lines": 116,
+     "tokens": 1943,
+     "first": {
+      "name": "src/ggml-opencl/kernels/gemm_moe_q4_k_f32_ns.cl",
+      "start": 44,
+      "end": 159
+     },
+     "others": [
+      {
+       "name": "src/ggml-opencl/kernels/gemm_moe_q5_k_f32_ns.cl",
+       "start": 44,
+       "end": 159
+      },
+      {
+       "name": "src/ggml-opencl/kernels/gemm_moe_q6_k_f32_ns.cl",
+       "start": 28,
+       "end": 143
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "lisp",
+     "lines": 21,
+     "tokens": 111,
+     "first": {
+      "name": "src/ggml-opencl/kernels/argsort.cl",
+      "start": 1,
+      "end": 21
+     },
+     "others": [
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_f16_f16.cl",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_f16_f32.cl",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_f16_f32_1row.cl",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_f16_f32_l4.cl",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_f32_f32.cl",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_id_mxfp4_f32.cl",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_id_mxfp4_f32_flat.cl",
+       "start": 1,
+       "end": 21
+      },
+      {
+       "name": "src/ggml-opencl/kernels/mul_mv_id_q4_0_f32_8x_flat.cl",
+       "start": 1,
+       "end": 21
+      }
+     ],
+     "copies": 36,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 9,
+     "tokens": 73,
+     "first": {
+      "name": "src/ggml-cpu/arch/arm/quants.c",
+      "start": 2021,
+      "end": 2029
+     },
+     "others": [
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 2869,
+       "end": 2877
+      },
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 3634,
+       "end": 3642
+      },
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 3696,
+       "end": 3704
+      },
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 3770,
+       "end": 3778
+      },
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 3867,
+       "end": 3875
+      },
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 3929,
+       "end": 3937
+      },
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 4039,
+       "end": 4047
+      },
+      {
+       "name": "src/ggml-cpu/arch/arm/quants.c",
+       "start": 4105,
+       "end": 4113
+      }
+     ],
+     "copies": 48,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 300,
+     "tokens": 3238,
+     "first": {
+      "name": "src/ggml-cpu/arch/x86/repack.cpp",
+      "start": 3968,
+      "end": 4267
+     },
+     "others": [
+      {
+       "name": "src/ggml-cpu/arch/x86/repack.cpp",
+       "start": 4696,
+       "end": 4996
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 266,
+     "tokens": 3143,
+     "first": {
+      "name": "src/ggml-cpu/arch/x86/repack.cpp",
+      "start": 3601,
+      "end": 3866
+     },
+     "others": [
+      {
+       "name": "src/ggml-cpu/arch/x86/repack.cpp",
+       "start": 4334,
+       "end": 4598
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "cpp",
+     "lines": 38,
+     "tokens": 290,
+     "first": {
+      "name": "src/ggml-cpu/ops.cpp",
+      "start": 2878,
+      "end": 2915
+     },
+     "others": [
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 2929,
+       "end": 2966
+      },
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 2988,
+       "end": 3025
+      },
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 3082,
+       "end": 3119
+      },
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 3141,
+       "end": 3178
+      },
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 3235,
+       "end": 3272
+      },
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 3294,
+       "end": 3331
+      },
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 3679,
+       "end": 3716
+      },
+      {
+       "name": "src/ggml-cpu/ops.cpp",
+       "start": 3738,
+       "end": 3775
+      }
+     ],
+     "copies": 11,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 47,
+    "minified": 0,
+    "sample": [
+     "examples/python/ggml/cffi.py",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq112-dv112.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq128-dv128.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq256-dv256.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq40-dv40.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq512-dv512.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq576-dv512.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq64-dv64.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq72-dv72.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq80-dv80.cpp",
+     "src/ggml-sycl/template-instances/fattn-tile-instance-dkq96-dv96.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-f16-f16.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-f16-q4_0.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-f16-q4_1.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-f16-q5_0.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-f16-q5_1.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-f16-q8_0.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-f16.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-q4_0.cpp",
+     "src/ggml-sycl/template-instances/fattn-vec-instance-q4_0-q4_1.cpp"
+    ]
+   }
+  },
+  "health": {
+   "score": 24.9,
+   "grade": "E",
+   "size": {
+    "lines": 516299,
+    "files": 1202,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 21.8,
+     "adjusted": 21.7,
+     "lines": 112588,
+     "halfLife": 8.5,
+     "formats": [
+      "cpp",
+      "c",
+      "lisp",
+      "c-header",
+      "glsl",
+      "cpp-header",
+      "wgsl",
+      "cmake",
+      "python",
+      "objectivec",
+      "bash",
+      "linker-script"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 17
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 72.7,
+     "adjusted": 72.5,
+     "lines": 375576,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 36.6
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 71938,
+   "mean": 59.8,
+   "files": [
+    {
+     "path": "src/ggml-vulkan/ggml-vulkan.cpp",
+     "complexity": 4774,
+     "lines": 17189,
+     "bytes": 918140
+    },
+    {
+     "path": "src/ggml-hexagon/htp-kparams.cpp",
+     "complexity": 2016,
+     "lines": 5533,
+     "bytes": 225208
+    },
+    {
+     "path": "tests/test-backend-ops.cpp",
+     "complexity": 2016,
+     "lines": 14646,
+     "bytes": 667958
+    },
+    {
+     "path": "src/ggml-cpu/ops.cpp",
+     "complexity": 1863,
+     "lines": 12400,
+     "bytes": 426859
+    },
+    {
+     "path": "examples/stb_image.h",
+     "complexity": 1746,
+     "lines": 7987,
+     "bytes": 284733
+    },
+    {
+     "path": "src/ggml-sycl/ggml-sycl.cpp",
+     "complexity": 1736,
+     "lines": 8279,
+     "bytes": 351879
+    },
+    {
+     "path": "src/ggml-quants.c",
+     "complexity": 1204,
+     "lines": 5665,
+     "bytes": 228271
+    },
+    {
+     "path": "src/ggml.c",
+     "complexity": 1161,
+     "lines": 8115,
+     "bytes": 260600
+    },
+    {
+     "path": "src/ggml-cpu/llamafile/sgemm.cpp",
+     "complexity": 964,
+     "lines": 4376,
+     "bytes": 170866
+    },
+    {
+     "path": "src/ggml-cpu/repack.cpp",
+     "complexity": 911,
+     "lines": 5260,
+     "bytes": 213807
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0,
+   "findings": 0,
+   "files": 26,
+   "byCategory": [],
+   "largest": []
+  }
+ }
+}

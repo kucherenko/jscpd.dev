@@ -1,0 +1,893 @@
+{
+ "name": "NVIDIA/SkillEvaluator",
+ "url": "https://github.com/NVIDIA/SkillEvaluator",
+ "appearances": [
+  {
+   "date": "2026-11-16",
+   "rank": 11,
+   "stars": 1887,
+   "starsToday": 122,
+   "headSha": "ae7e8586138851cb886efd8218b0fcabcd6cf633",
+   "sources": 1059,
+   "lines": 581438,
+   "clones": 1817,
+   "duplicatedLines": 41225,
+   "percentage": 7.09,
+   "codePercentage": 1.24,
+   "codeSources": 316,
+   "healthScore": 58.1,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T05:23:43.132Z",
+  "name": "NVIDIA/SkillEvaluator",
+  "url": "https://github.com/NVIDIA/SkillEvaluator",
+  "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+  "language": "Python",
+  "stars": 1887,
+  "starsToday": 122,
+  "defaultBranch": "main",
+  "headSha": "ae7e8586138851cb886efd8218b0fcabcd6cf633",
+  "durationMs": 3962,
+  "total": {
+   "sources": 1059,
+   "lines": 581438,
+   "tokens": 3650003,
+   "clones": 1817,
+   "duplicatedLines": 41225,
+   "duplicatedTokens": 184159,
+   "percentage": 7.09,
+   "percentageTokens": 5.05
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 806,
+    "lines": 524335,
+    "clones": 1451,
+    "duplicatedLines": 17166,
+    "percentage": 3.27
+   },
+   {
+    "format": "json",
+    "sources": 93,
+    "lines": 32677,
+    "clones": 295,
+    "duplicatedLines": 22757,
+    "percentage": 69.64
+   },
+   {
+    "format": "yaml",
+    "sources": 64,
+    "lines": 5146,
+    "clones": 36,
+    "duplicatedLines": 608,
+    "percentage": 11.82
+   },
+   {
+    "format": "django",
+    "sources": 6,
+    "lines": 5753,
+    "clones": 20,
+    "duplicatedLines": 164,
+    "percentage": 2.85
+   },
+   {
+    "format": "markdown",
+    "sources": 56,
+    "lines": 9878,
+    "clones": 10,
+    "duplicatedLines": 191,
+    "percentage": 1.93
+   },
+   {
+    "format": "txt",
+    "sources": 8,
+    "lines": 2724,
+    "clones": 4,
+    "duplicatedLines": 333,
+    "percentage": 12.22
+   },
+   {
+    "format": "bash",
+    "sources": 15,
+    "lines": 272,
+    "clones": 1,
+    "duplicatedLines": 6,
+    "percentage": 2.21
+   },
+   {
+    "format": "toml",
+    "sources": 2,
+    "lines": 329,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markup",
+    "sources": 4,
+    "lines": 250,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "docker",
+    "sources": 1,
+    "lines": 27,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "json",
+    "lines": 486,
+    "tokens": 1590,
+    "first": {
+     "name": "tests/fixtures/skillspector-2.13.3-settings-hook-env-partial-no-llm.json",
+     "start": 49,
+     "end": 534
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-settings-hook-handler-partial-no-llm.json",
+      "start": 49,
+      "end": 534
+     },
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-settings-hook-no-llm.json",
+      "start": 49,
+      "end": 534
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "\"finding_id\": \"finding-7db83e2f2cd2422986a831a7335e0ca7\",",
+      "\"category\": \"Bundled Execution Surface\",",
+      "\"pattern\": \"Bundled hooks can execute when matching lifecycle events occur.\",",
+      "\"severity\": \"LOW\",",
+      "\"confidence\": 0.95,",
+      "\"location\": {",
+      "  \"file\": \".claude/settings.json\",",
+      "  \"start_line\": 1,",
+      "  \"end_line\": null",
+      "},"
+     ],
+     "total": 486
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 453,
+    "tokens": 1490,
+    "first": {
+     "name": "tests/fixtures/skillspector-2.13.4-settings-hook-env-partial-no-llm.json",
+     "start": 84,
+     "end": 536
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/skillspector-2.13.4-settings-hook-handler-partial-no-llm.json",
+      "start": 84,
+      "end": 536
+     },
+     {
+      "name": "tests/fixtures/skillspector-2.13.4-settings-hook-permissions-no-llm.json",
+      "start": 84,
+      "end": 536
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "  \"unknown_event_count\": 0,",
+      "  \"unknown_handler_count\": 0",
+      "},",
+      "\"match_fingerprint\": \"1869d5f9b40b3830990438a7a9ef1f2487ca6219fc898fd8343f7a03a4575e19\",",
+      "\"occurrences\": [",
+      "  {",
+      "    \"file\": \".claude/settings.json\",",
+      "    \"start_line\": 1,",
+      "    \"end_line\": null",
+      "  }"
+     ],
+     "total": 453
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 475,
+    "tokens": 1571,
+    "first": {
+     "name": "tests/fixtures/skillspector-2.13.3-bundled-script-hooks-no-llm.json",
+     "start": 120,
+     "end": 594
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-upload-hooks-no-llm.json",
+      "start": 120,
+      "end": 594
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "\"finding_id\": \"finding-636438e202a348db8b018bf18008ac8b\",",
+      "\"category\": \"Data Flow\",",
+      "\"pattern\": \"Tainted flow: 'target' from os.environ.get (line 29, credential/environment) → pathlib.Path.write_text (file write)\",",
+      "\"severity\": \"MEDIUM\",",
+      "\"confidence\": 0.65,",
+      "\"location\": {",
+      "  \"file\": \"scripts/plugin_paths.py\",",
+      "  \"start_line\": 31,",
+      "  \"end_line\": 31,",
+      "  \"start_column\": 4,"
+     ],
+     "total": 475
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 464,
+    "tokens": 1515,
+    "first": {
+     "name": "tests/fixtures/skillspector-2.13.3-settings-hook-env-partial-no-llm.json",
+     "start": 71,
+     "end": 534
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-settings-hook-truncated-no-llm.json",
+      "start": 71,
+      "end": 534
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "txt",
+    "lines": 174,
+    "tokens": 1498,
+    "first": {
+     "name": "ci/requirements/semgrep.txt",
+     "start": 120,
+     "end": 293
+    },
+    "others": [
+     {
+      "name": "ci/requirements/skillspector.txt",
+      "start": 22,
+      "end": 195
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 437,
+    "tokens": 1459,
+    "first": {
+     "name": "tests/fixtures/skillspector-2.13.3-passwd-mount/read-only.json",
+     "start": 124,
+     "end": 560
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-passwd-mount/separate-read.json",
+      "start": 156,
+      "end": 592
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 134,
+    "tokens": 419,
+    "first": {
+     "name": "tests/fixtures/skillspector-2.13.3-ambiguous-reference-no-llm.json",
+     "start": 39,
+     "end": 172
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-image-and-missing-reference-no-llm.json",
+      "start": 29,
+      "end": 162
+     },
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-lone-skill-file-reference-no-llm.json",
+      "start": 19,
+      "end": 152
+     },
+     {
+      "name": "tests/fixtures/skillspector-2.13.3-staged-script-reference-no-llm.json",
+      "start": 19,
+      "end": 152
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 508,
+    "tokens": 1246,
+    "first": {
+     "name": "tests/golden/cli_surface.json",
+     "start": 763,
+     "end": 1270
+    },
+    "others": [
+     {
+      "name": "tests/golden/cli_surface.json",
+      "start": 3114,
+      "end": 3621
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 22,
+    "tokens": 411,
+    "first": {
+     "name": "ci/bundles/0.7.1/README.md",
+     "start": 1,
+     "end": 22
+    },
+    "others": [
+     {
+      "name": "ci/bundles/0.7.2/README.md",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "ci/bundles/0.8.0/README.md",
+      "start": 1,
+      "end": 22
+     },
+     {
+      "name": "ci/bundles/0.9.0/README.md",
+      "start": 1,
+      "end": 22
+     }
+    ],
+    "copies": 4,
+    "kind": "docs"
+   },
+   {
+    "format": "json",
+    "lines": 375,
+    "tokens": 1220,
+    "first": {
+     "name": "tests/fixtures/skillspector-2.12.0-image-reference-no-llm.json",
+     "start": 147,
+     "end": 521
+    },
+    "others": [
+     {
+      "name": "tests/fixtures/skillspector-2.13.2-image-reference-no-llm.json",
+      "start": 147,
+      "end": 521
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 316,
+   "lines": 224755,
+   "tokens": 1418609,
+   "clones": 195,
+   "duplicatedLines": 2789,
+   "duplicatedTokens": 16663,
+   "percentage": 1.24,
+   "percentageTokens": 1.17,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 315,
+     "lines": 224664,
+     "clones": 195,
+     "duplicatedLines": 2789,
+     "percentage": 1.24
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 91,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 60,
+     "tokens": 462,
+     "first": {
+      "name": "src/skillevaluator/tier3/eval_core/llm_judge.py",
+      "start": 957,
+      "end": 1016
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 847,
+       "end": 904
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def _compact_behavior_conversation(conversation_text: str, limit: int | None = None) -> str:",
+       "    \"\"\"Keep both setup context and late outcome evidence in behavior prompts.\"\"\"",
+       "    if limit is None:",
+       "        limit = _behavior_check_budget()",
+       "    if len(conversation_text) <= limit:",
+       "        return conversation_text",
+       "",
+       "    marker = \"\\n...[middle truncated for behavior check]...\\n\"",
+       "    if limit <= len(marker) + 1:",
+       "        return conversation_text[:limit]"
+      ],
+      "total": 60
+     },
+     "excerptSecond": {
+      "lines": [
+       "def _compact_behavior_conversation(conversation_text, limit=None):",
+       "    \"\"\"Keep both setup context and late outcome evidence in behavior prompts.\"\"\"",
+       "    if limit is None:",
+       "        limit = _behavior_check_budget()",
+       "    if len(conversation_text) <= limit:",
+       "        return conversation_text",
+       "    marker = \"\\n...[middle truncated for behavior check]...\\n\"",
+       "    if limit <= len(marker) + 1:",
+       "        return conversation_text[:limit]",
+       "    final_limit = _behavior_final_response_limit()"
+      ],
+      "total": 58
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 32,
+     "tokens": 432,
+     "first": {
+      "name": "src/skillevaluator/tier3/eval_core/llm_judge.py",
+      "start": 902,
+      "end": 933
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 3765,
+       "end": 3796
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "{behaviors}",
+       "",
+       "For each numbered behavior, check only what that behavior requires.",
+       "A format-only behavior does not require the answer's value to be factually correct: a wrong value \\",
+       "can still satisfy its format. If a behavior also requires factual correctness, evaluate that requirement too.",
+       "For a behavior about final-response format, judge the entire final response literally against only \\",
+       "the stated format requirement, independently of factual correctness.",
+       "When a FINAL RESPONSE section is supplied, its contents are the final answer; other section \\",
+       "headings, tool results, history, and artifacts are context, not part of that answer.",
+       "Inspect every line of the final response, including text after an initially valid answer. \\"
+      ],
+      "total": 32
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 49,
+     "tokens": 408,
+     "first": {
+      "name": "src/skillevaluator/tier3/eval_core/llm_judge.py",
+      "start": 1152,
+      "end": 1200
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 3856,
+       "end": 3904
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "def _behavior_payload_error(parsed: Any, expected_count: int, *, allow_partial: bool = False) -> str | None:",
+       "    \"\"\"Describe what is wrong with a behavior reply, or return ``None`` when it is usable.",
+       "",
+       "    Each expected behavior is judged exactly once, identified by its 1-based",
+       "    ``step`` number, with a boolean ``passed`` or an explicit null abstention. *allow_partial* accepts a",
+       "    salvaged prefix that judges each of its steps once. The score is computed",
+       "    from the verdicts, so a ``score`` field in the reply is ignored.",
+       "    \"\"\"",
+       "    if not isinstance(parsed, dict):",
+       "        return \"the reply did not contain one JSON object\""
+      ],
+      "total": 49
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 34,
+     "tokens": 388,
+     "first": {
+      "name": "src/skillevaluator/tier3/eval_core/llm_judge.py",
+      "start": 701,
+      "end": 734
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 3340,
+       "end": 3373
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 62,
+     "tokens": 378,
+     "first": {
+      "name": "src/skillevaluator/provider_config.py",
+      "start": 743,
+      "end": 804
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 1493,
+       "end": 1554
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 284,
+     "first": {
+      "name": "src/skillevaluator/provider_config.py",
+      "start": 805,
+      "end": 846
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 1555,
+       "end": 1596
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 45,
+     "tokens": 271,
+     "first": {
+      "name": "src/skillevaluator/tier3/eval_core/llm_judge.py",
+      "start": 411,
+      "end": 455
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 2707,
+       "end": 2751
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 41,
+     "tokens": 250,
+     "first": {
+      "name": "src/skillevaluator/tier3/harbor/local_environment.py",
+      "start": 334,
+      "end": 374
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/local_environment.py",
+       "start": 401,
+       "end": 440
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 36,
+     "tokens": 219,
+     "first": {
+      "name": "src/skillevaluator/tier3/eval_core/llm_judge.py",
+      "start": 485,
+      "end": 520
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 2786,
+       "end": 2821
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 21,
+     "tokens": 182,
+     "first": {
+      "name": "src/skillevaluator/tier3/eval_core/llm_judge.py",
+      "start": 715,
+      "end": 735
+     },
+     "others": [
+      {
+       "name": "src/skillevaluator/tier3/harbor/templates/eval.py",
+       "start": 3354,
+       "end": 3375
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 58.1,
+   "grade": "C",
+   "size": {
+    "lines": 524342,
+    "files": 807,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 3.3,
+     "adjusted": 3.3,
+     "lines": 17150,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "bash",
+      "docker",
+      "makefile"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 76.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 2.1,
+     "adjusted": 2.1,
+     "lines": 11104,
+     "halfLife": 7.5,
+     "coverage": 100,
+     "weight": 1,
+     "score": 82.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 84.5,
+     "adjusted": 84.2,
+     "lines": 443014,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 31.1
+    }
+   ]
+  },
+  "complexity": {
+   "total": 88562,
+   "mean": 109.7,
+   "files": [
+    {
+     "path": "src/skillevaluator/tier3/harbor/collector.py",
+     "complexity": 2681,
+     "lines": 8527,
+     "bytes": 379330
+    },
+    {
+     "path": "src/skillevaluator/tier3/eval_core/checks.py",
+     "complexity": 1870,
+     "lines": 7499,
+     "bytes": 332419
+    },
+    {
+     "path": "src/skillevaluator/tier3/harbor/runner.py",
+     "complexity": 1722,
+     "lines": 7073,
+     "bytes": 312301
+    },
+    {
+     "path": "src/skillevaluator/evaluation/tier3_report.py",
+     "complexity": 1680,
+     "lines": 5174,
+     "bytes": 221186
+    },
+    {
+     "path": "src/skillevaluator/validators/security.py",
+     "complexity": 1574,
+     "lines": 6681,
+     "bytes": 319407
+    },
+    {
+     "path": "src/skillevaluator/tier3/eval_core/plugin_signals.py",
+     "complexity": 1536,
+     "lines": 5071,
+     "bytes": 225352
+    },
+    {
+     "path": "src/skillevaluator/tier3/eval_core/plugin_security.py",
+     "complexity": 1335,
+     "lines": 4013,
+     "bytes": 180344
+    },
+    {
+     "path": "src/skillevaluator/tier3/harbor/adapter.py",
+     "complexity": 1293,
+     "lines": 6869,
+     "bytes": 280192
+    },
+    {
+     "path": "tests/validators/test_security.py",
+     "complexity": 1229,
+     "lines": 11500,
+     "bytes": 525267
+    },
+    {
+     "path": "src/skillevaluator/tier3/harbor/templates/eval.py",
+     "complexity": 1062,
+     "lines": 4548,
+     "bytes": 196496
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 2.12,
+   "findings": 59,
+   "files": 819,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 19
+    },
+    {
+     "category": "unused-export",
+     "count": 9
+    },
+    {
+     "category": "unused-symbol",
+     "count": 25
+    },
+    {
+     "category": "unused-import",
+     "count": 6
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/tier3/eval_core/plugin_security.py",
+     "name": "",
+     "line": 1,
+     "lines": 4013
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/tier3/harbor/local_environment.py",
+     "name": "",
+     "line": 1,
+     "lines": 2058
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/plugin_dependency_audit.py",
+     "name": "",
+     "line": 1,
+     "lines": 863
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/validators/claude_plugin_validate.py",
+     "name": "",
+     "line": 1,
+     "lines": 707
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/tier3/eval_core/runtime_evidence.py",
+     "name": "",
+     "line": 1,
+     "lines": 460
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/tier1/plugin_checks.py",
+     "name": "",
+     "line": 1,
+     "lines": 416
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/deduplication/plugin/catalog.py",
+     "name": "",
+     "line": 1,
+     "lines": 385
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/tier3/harbor/native_agents.py",
+     "name": "",
+     "line": 1,
+     "lines": 373
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/validators/endpoint_resolution.py",
+     "name": "",
+     "line": 1,
+     "lines": 340
+    },
+    {
+     "category": "unused-file",
+     "path": "src/skillevaluator/deduplication/plugin/catalog_checks.py",
+     "name": "",
+     "line": 1,
+     "lines": 268
+    }
+   ]
+  }
+ }
+}
