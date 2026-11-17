@@ -161,54 +161,70 @@
    "codeSources": 329,
    "healthScore": 51.1,
    "healthGrade": "D"
+  },
+  {
+   "date": "2026-11-17",
+   "rank": 10,
+   "stars": 53104,
+   "starsToday": 951,
+   "headSha": "0f5a28495aeb9d27388db74c240c56c5c5f5868f",
+   "sources": 1276,
+   "lines": 271491,
+   "clones": 1563,
+   "duplicatedLines": 36070,
+   "percentage": 13.29,
+   "codePercentage": 1.4,
+   "codeSources": 329,
+   "healthScore": 51,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-11-16",
-  "generatedAt": "2026-11-16T05:23:43.132Z",
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T05:21:51.249Z",
   "name": "alibaba/open-code-review",
   "url": "https://github.com/alibaba/open-code-review",
   "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
   "language": "Go",
-  "stars": 52323,
-  "starsToday": 691,
+  "stars": 53104,
+  "starsToday": 951,
   "defaultBranch": "main",
-  "headSha": "7e5ce06c88de5ce81df5dc4f24e2e485b517fae8",
-  "durationMs": 2010,
+  "headSha": "0f5a28495aeb9d27388db74c240c56c5c5f5868f",
+  "durationMs": 1629,
   "total": {
-   "sources": 1273,
-   "lines": 270556,
-   "tokens": 1851640,
-   "clones": 1549,
-   "duplicatedLines": 35968,
-   "duplicatedTokens": 183407,
+   "sources": 1276,
+   "lines": 271491,
+   "tokens": 1860819,
+   "clones": 1563,
+   "duplicatedLines": 36070,
+   "duplicatedTokens": 184268,
    "percentage": 13.29,
-   "percentageTokens": 9.91
+   "percentageTokens": 9.9
   },
   "formats": [
    {
     "format": "go",
     "sources": 532,
-    "lines": 143095,
-    "clones": 1039,
-    "duplicatedLines": 10569,
-    "percentage": 7.39
+    "lines": 143645,
+    "clones": 1051,
+    "duplicatedLines": 10657,
+    "percentage": 7.42
    },
    {
     "format": "json",
     "sources": 75,
-    "lines": 20719,
+    "lines": 20727,
     "clones": 126,
     "duplicatedLines": 19300,
-    "percentage": 93.15
+    "percentage": 93.12
    },
    {
     "format": "bash",
     "sources": 110,
-    "lines": 3151,
+    "lines": 3158,
     "clones": 89,
-    "duplicatedLines": 1206,
-    "percentage": 38.27
+    "duplicatedLines": 1202,
+    "percentage": 38.06
    },
    {
     "format": "javascript",
@@ -220,11 +236,11 @@
    },
    {
     "format": "markdown",
-    "sources": 217,
-    "lines": 41304,
+    "sources": 219,
+    "lines": 41540,
     "clones": 82,
-    "duplicatedLines": 1773,
-    "percentage": 4.29
+    "duplicatedLines": 1775,
+    "percentage": 4.27
    },
    {
     "format": "text",
@@ -237,18 +253,18 @@
    {
     "format": "tsx",
     "sources": 53,
-    "lines": 6467,
-    "clones": 27,
-    "duplicatedLines": 321,
-    "percentage": 4.96
+    "lines": 6481,
+    "clones": 28,
+    "duplicatedLines": 329,
+    "percentage": 5.08
    },
    {
     "format": "yaml",
     "sources": 47,
-    "lines": 4417,
+    "lines": 4419,
     "clones": 23,
-    "duplicatedLines": 617,
-    "percentage": 13.97
+    "duplicatedLines": 618,
+    "percentage": 13.99
    },
    {
     "format": "python",
@@ -260,11 +276,11 @@
    },
    {
     "format": "typescript",
-    "sources": 57,
-    "lines": 8830,
-    "clones": 10,
-    "duplicatedLines": 106,
-    "percentage": 1.2
+    "sources": 58,
+    "lines": 8948,
+    "clones": 11,
+    "duplicatedLines": 113,
+    "percentage": 1.26
    }
   ],
   "topClones": [
@@ -343,25 +359,23 @@
    },
    {
     "format": "markdown",
-    "lines": 234,
-    "tokens": 2540,
+    "lines": 232,
+    "tokens": 2575,
     "first": {
      "name": "plugins/open-code-review/skills/open-code-review/SKILL.md",
-     "start": 30,
-     "end": 263
+     "start": 29,
+     "end": 260
     },
     "others": [
      {
       "name": "skills/open-code-review/SKILL.md",
-      "start": 25,
-      "end": 258
+      "start": 24,
+      "end": 255
      }
     ],
     "copies": 2,
     "excerpt": {
      "lines": [
-      "A skill for invoking [open-code-review](https://github.com/alibaba/open-code-review) (`ocr`) — an open-source AI code review CLI that reads Git diffs and gener…",
-      "",
       "## Workflow",
       "",
       "### Step 1: Gather Business Context",
@@ -369,9 +383,11 @@
       "Analyze the review target (commits, branch, or changes) to extract concise business context. Pass this context via `--background` to improve review quality.",
       "",
       "### Step 2: Run Code Review",
+      "",
+      "**Do not pre-check whether `ocr` is installed** — skip probes like `command -v ocr` or `ocr --version`. Assume the CLI is available and run the review directly…",
       ""
      ],
-     "total": 234
+     "total": 232
     },
     "kind": "docs"
    },
@@ -505,39 +521,39 @@
     "kind": "docs"
    },
    {
-    "format": "json",
-    "lines": 740,
-    "tokens": 1895,
+    "format": "markdown",
+    "lines": 190,
+    "tokens": 1906,
     "first": {
-     "name": "internal/reviewtask/testdata/equivalence/review_async.json",
-     "start": 228,
-     "end": 967
+     "name": "plugins/open-code-review/skills/open-code-review-delegate/SKILL.md",
+     "start": 30,
+     "end": 219
     },
     "others": [
      {
-      "name": "internal/reviewtask/testdata/equivalence/review_failed.json",
-      "start": 228,
-      "end": 967
+      "name": "skills/open-code-review-delegate/SKILL.md",
+      "start": 25,
+      "end": 214
      }
     ],
     "copies": 2,
-    "kind": "tests"
+    "kind": "docs"
    }
   ],
   "code": {
    "sources": 329,
-   "lines": 69553,
-   "tokens": 414285,
-   "clones": 92,
-   "duplicatedLines": 964,
-   "duplicatedTokens": 6697,
-   "percentage": 1.39,
-   "percentageTokens": 1.62,
+   "lines": 69655,
+   "tokens": 414827,
+   "clones": 93,
+   "duplicatedLines": 972,
+   "duplicatedTokens": 6760,
+   "percentage": 1.4,
+   "percentageTokens": 1.63,
    "formats": [
     {
      "format": "go",
      "sources": 190,
-     "lines": 45168,
+     "lines": 45234,
      "clones": 57,
      "duplicatedLines": 575,
      "percentage": 1.27
@@ -545,18 +561,18 @@
     {
      "format": "tsx",
      "sources": 45,
-     "lines": 5813,
-     "clones": 25,
-     "duplicatedLines": 285,
-     "percentage": 4.9
+     "lines": 5827,
+     "clones": 26,
+     "duplicatedLines": 293,
+     "percentage": 5.03
     },
     {
      "format": "typescript",
      "sources": 35,
-     "lines": 5033,
+     "lines": 5055,
      "clones": 4,
      "duplicatedLines": 37,
-     "percentage": 0.74
+     "percentage": 0.73
     },
     {
      "format": "javascript",
@@ -830,38 +846,43 @@
      "kind": "code"
     },
     {
+     "format": "tsx",
+     "lines": 8,
+     "tokens": 63,
+     "first": {
+      "name": "extensions/frontend/src/webview/views/DoneView.tsx",
+      "start": 27,
+      "end": 34
+     },
+     "others": [
+      {
+       "name": "extensions/frontend/src/webview/views/EmptyView.tsx",
+       "start": 18,
+       "end": 25
+      },
+      {
+       "name": "extensions/frontend/src/webview/views/FailedView.tsx",
+       "start": 18,
+       "end": 25
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
      "format": "go",
      "lines": 21,
      "tokens": 125,
      "first": {
       "name": "cmd/opencodereview/session_cmd.go",
-      "start": 552,
-      "end": 572
+      "start": 571,
+      "end": 591
      },
      "others": [
       {
        "name": "cmd/opencodereview/session_cmd.go",
-       "start": 612,
-       "end": 633
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "tsx",
-     "lines": 12,
-     "tokens": 122,
-     "first": {
-      "name": "pages/src/components/FeaturesSection.tsx",
-      "start": 32,
-      "end": 43
-     },
-     "others": [
-      {
-       "name": "pages/src/components/UseCasesSection.tsx",
-       "start": 45,
-       "end": 62
+       "start": 631,
+       "end": 652
       }
      ],
      "copies": 2,
@@ -879,11 +900,11 @@
    }
   },
   "health": {
-   "score": 51.1,
+   "score": 51,
    "grade": "D",
    "size": {
-    "lines": 193886,
-    "files": 740,
+    "lines": 194568,
+    "files": 741,
     "class": "L"
    },
    "dimensions": [
@@ -892,7 +913,7 @@
      "source": "jscpd",
      "value": 6.2,
      "adjusted": 6.2,
-     "lines": 12021,
+     "lines": 12124,
      "halfLife": 8.5,
      "formats": [
       "go",
@@ -913,7 +934,7 @@
       "data"
      ],
      "weight": 1,
-     "score": 60.5
+     "score": 60.3
     },
     {
      "id": "dead-code",
@@ -924,14 +945,14 @@
      "halfLife": 7.5,
      "coverage": 21,
      "weight": 0.21,
-     "score": 71.8
+     "score": 71.9
     },
     {
      "id": "complexity",
      "source": "jscpd",
      "value": 66.3,
      "adjusted": 65.8,
-     "lines": 128482,
+     "lines": 128954,
      "halfLife": 50,
      "weight": 1,
      "score": 40.2
@@ -939,8 +960,8 @@
    ]
   },
   "complexity": {
-   "total": 35422,
-   "mean": 47.9,
+   "total": 35553,
+   "mean": 48,
    "files": [
     {
      "path": "scripts/github-actions/post-review-comments.js",
@@ -974,15 +995,15 @@
     },
     {
      "path": "cmd/opencodereview/config_cmd_test.go",
-     "complexity": 481,
-     "lines": 1867,
-     "bytes": 59203
+     "complexity": 495,
+     "lines": 1920,
+     "bytes": 61054
     },
     {
      "path": "internal/config/rules/system_rules_test.go",
-     "complexity": 429,
-     "lines": 2114,
-     "bytes": 69512
+     "complexity": 445,
+     "lines": 2195,
+     "bytes": 71962
     },
     {
      "path": "cmd/opencodereview/provider_tui_funcs_test.go",
@@ -1005,9 +1026,9 @@
    ]
   },
   "deadCode": {
-   "percentage": 3.61,
+   "percentage": 3.6,
    "findings": 16,
-   "files": 162,
+   "files": 163,
    "byCategory": [
     {
      "category": "unused-file",

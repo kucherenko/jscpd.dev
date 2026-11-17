@@ -49,70 +49,86 @@
    "codeSources": 417,
    "healthScore": 55.5,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-11-17",
+   "rank": 4,
+   "stars": 6486,
+   "starsToday": 837,
+   "headSha": "60399452891edf47c1da5ce93c7664b31e3b001e",
+   "sources": 2659,
+   "lines": 566059,
+   "clones": 2650,
+   "duplicatedLines": 77526,
+   "percentage": 13.7,
+   "codePercentage": 4.31,
+   "codeSources": 420,
+   "healthScore": 55.6,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-11-16",
-  "generatedAt": "2026-11-16T05:23:43.132Z",
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T05:21:51.249Z",
   "name": "tradermonty/claude-trading-skills",
   "url": "https://github.com/tradermonty/claude-trading-skills",
   "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
   "language": "Python",
-  "stars": 5735,
-  "starsToday": 706,
+  "stars": 6486,
+  "starsToday": 837,
   "defaultBranch": "main",
-  "headSha": "427b1f7d060840fa1c336445e7b6d5f5f8eb5b7c",
-  "durationMs": 3602,
+  "headSha": "60399452891edf47c1da5ce93c7664b31e3b001e",
+  "durationMs": 2670,
   "total": {
-   "sources": 2637,
-   "lines": 561616,
-   "tokens": 3567875,
-   "clones": 2642,
-   "duplicatedLines": 77196,
-   "duplicatedTokens": 437738,
-   "percentage": 13.75,
-   "percentageTokens": 12.27
+   "sources": 2659,
+   "lines": 566059,
+   "tokens": 3598426,
+   "clones": 2650,
+   "duplicatedLines": 77526,
+   "duplicatedTokens": 440089,
+   "percentage": 13.7,
+   "percentageTokens": 12.23
   },
   "formats": [
    {
     "format": "python",
-    "sources": 1041,
-    "lines": 358041,
-    "clones": 1218,
-    "duplicatedLines": 34117,
-    "percentage": 9.53
+    "sources": 1061,
+    "lines": 362309,
+    "clones": 1226,
+    "duplicatedLines": 34445,
+    "percentage": 9.51
    },
    {
     "format": "markdown",
-    "sources": 676,
-    "lines": 132695,
+    "sources": 677,
+    "lines": 132953,
     "clones": 811,
-    "duplicatedLines": 23035,
-    "percentage": 17.36
+    "duplicatedLines": 23037,
+    "percentage": 17.33
    },
    {
     "format": "json",
     "sources": 290,
-    "lines": 46409,
+    "lines": 46305,
     "clones": 328,
     "duplicatedLines": 15243,
-    "percentage": 32.84
+    "percentage": 32.92
    },
    {
     "format": "bash",
-    "sources": 228,
-    "lines": 4712,
+    "sources": 229,
+    "lines": 4725,
     "clones": 137,
     "duplicatedLines": 1713,
-    "percentage": 36.35
+    "percentage": 36.25
    },
    {
     "format": "yaml",
     "sources": 219,
-    "lines": 13730,
+    "lines": 13738,
     "clones": 95,
     "duplicatedLines": 1972,
-    "percentage": 14.36
+    "percentage": 14.35
    },
    {
     "format": "text",
@@ -498,22 +514,22 @@
    }
   ],
   "code": {
-   "sources": 417,
-   "lines": 163803,
-   "tokens": 907367,
-   "clones": 401,
-   "duplicatedLines": 7132,
-   "duplicatedTokens": 42386,
-   "percentage": 4.35,
-   "percentageTokens": 4.67,
+   "sources": 420,
+   "lines": 165199,
+   "tokens": 915809,
+   "clones": 400,
+   "duplicatedLines": 7122,
+   "duplicatedTokens": 42285,
+   "percentage": 4.31,
+   "percentageTokens": 4.62,
    "formats": [
     {
      "format": "python",
-     "sources": 412,
-     "lines": 163496,
-     "clones": 400,
-     "duplicatedLines": 7115,
-     "percentage": 4.35
+     "sources": 415,
+     "lines": 164892,
+     "clones": 399,
+     "duplicatedLines": 7105,
+     "percentage": 4.31
     },
     {
      "format": "bash",
@@ -917,14 +933,16 @@
     }
    ],
    "generated": {
-    "files": 47,
+    "files": 51,
     "minified": 0,
     "sample": [
      "examples/weekly-trade-strategy/.claude/skills/market-environment-analysis/scripts/_market_calendar.py",
      "examples/weekly-trade-strategy/skills/market-environment-analysis/scripts/_market_calendar.py",
      "skills/breakout-trade-planner/scripts/_market_calendar.py",
      "skills/breakout-trade-planner/scripts/tests/test_market_calendar_contract.py",
+     "skills/canslim-screener/scripts/_price_bars.py",
      "skills/canslim-screener/scripts/fmp_client.py",
+     "skills/canslim-screener/scripts/tests/test_price_bars_contract.py",
      "skills/cot-contrarian-detector/scripts/fmp_client.py",
      "skills/dividend-growth-pullback-screener/scripts/fmp_client.py",
      "skills/drawdown-circuit-breaker/scripts/_market_calendar.py",
@@ -937,18 +955,16 @@
      "skills/ftd-detector/scripts/_price_bars.py",
      "skills/ftd-detector/scripts/fmp_client.py",
      "skills/ftd-detector/scripts/tests/test_price_bars_contract.py",
-     "skills/ibd-distribution-day-monitor/scripts/fmp_client.py",
-     "skills/institutional-flow-tracker/scripts/fmp_client.py",
-     "skills/kanchi-dividend-sop/scripts/fmp_client.py"
+     "skills/ibd-distribution-day-monitor/scripts/fmp_client.py"
     ]
    }
   },
   "health": {
-   "score": 55.5,
+   "score": 55.6,
    "grade": "C",
    "size": {
-    "lines": 356621,
-    "files": 1018,
+    "lines": 360889,
+    "files": 1038,
     "class": "L"
    },
    "dimensions": [
@@ -957,7 +973,7 @@
      "source": "jscpd",
      "value": 9.4,
      "adjusted": 9.4,
-     "lines": 33609,
+     "lines": 33937,
      "halfLife": 8.5,
      "formats": [
       "python",
@@ -969,34 +985,34 @@
       "data"
      ],
      "weight": 1,
-     "score": 46.5
+     "score": 46.6
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 0.7,
+     "value": 0.8,
      "adjusted": 0.8,
-     "lines": 2646,
+     "lines": 2709,
      "halfLife": 7.5,
      "coverage": 100,
      "weight": 1,
-     "score": 93.3
+     "score": 93.2
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 67.5,
-     "adjusted": 67.2,
-     "lines": 240742,
+     "value": 67.3,
+     "adjusted": 67,
+     "lines": 242850,
      "halfLife": 50,
      "weight": 1,
-     "score": 39.4
+     "score": 39.5
     }
    ]
   },
   "complexity": {
-   "total": 51677,
-   "mean": 50.8,
+   "total": 52491,
+   "mean": 50.6,
    "files": [
     {
      "path": "skills/us-undervalued-growth-screener/scripts/screen_universe.py",
@@ -1035,16 +1051,16 @@
      "bytes": 138916
     },
     {
+     "path": "skills/stockbee-setup-fluency-trainer/scripts/decision_replay.py",
+     "complexity": 350,
+     "lines": 1511,
+     "bytes": 59486
+    },
+    {
      "path": "skills/edge-signal-aggregator/scripts/aggregate_signals.py",
      "complexity": 338,
      "lines": 1649,
      "bytes": 64204
-    },
-    {
-     "path": "skills/stockbee-setup-fluency-trainer/scripts/decision_replay.py",
-     "complexity": 338,
-     "lines": 1458,
-     "bytes": 57208
     },
     {
      "path": "skills/stockbee-momentum-burst-screener/scripts/screen_momentum_burst.py",
@@ -1061,21 +1077,21 @@
    ]
   },
   "deadCode": {
-   "percentage": 0.74,
-   "findings": 58,
-   "files": 1052,
+   "percentage": 0.75,
+   "findings": 57,
+   "files": 1072,
    "byCategory": [
     {
      "category": "unused-file",
-     "count": 19
+     "count": 20
     },
     {
      "category": "unused-export",
-     "count": 16
+     "count": 15
     },
     {
      "category": "unused-symbol",
-     "count": 18
+     "count": 17
     },
     {
      "category": "unused-import",
@@ -1141,17 +1157,17 @@
     },
     {
      "category": "unused-file",
+     "path": "skills/canslim-screener/scripts/_price_bars.py",
+     "name": "",
+     "line": 1,
+     "lines": 99
+    },
+    {
+     "category": "unused-file",
      "path": "scripts/price_bars/price_bars.py",
      "name": "",
      "line": 1,
      "lines": 97
-    },
-    {
-     "category": "unused-file",
-     "path": "skills/parabolic-short-trade-planner/scripts/calculators/acceleration_calculator.py",
-     "name": "",
-     "line": 1,
-     "lines": 96
     }
    ]
   }

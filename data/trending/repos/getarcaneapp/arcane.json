@@ -1,0 +1,1609 @@
+{
+ "name": "getarcaneapp/arcane",
+ "url": "https://github.com/getarcaneapp/arcane",
+ "appearances": [
+  {
+   "date": "2026-11-17",
+   "rank": 5,
+   "stars": 8873,
+   "starsToday": 46,
+   "headSha": "79c61a2b6da9dce7caca988334766db2706df519",
+   "sources": 3447,
+   "lines": 610000,
+   "clones": 2995,
+   "duplicatedLines": 37945,
+   "percentage": 6.22,
+   "codePercentage": 2.74,
+   "codeSources": 2982,
+   "healthScore": 31.4,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T05:21:51.249Z",
+  "name": "getarcaneapp/arcane",
+  "url": "https://github.com/getarcaneapp/arcane",
+  "description": "Modern Docker Management, Designed for Everyone",
+  "language": "Go",
+  "stars": 8873,
+  "starsToday": 46,
+  "defaultBranch": "main",
+  "headSha": "79c61a2b6da9dce7caca988334766db2706df519",
+  "durationMs": 2764,
+  "total": {
+   "sources": 3447,
+   "lines": 610000,
+   "tokens": 3975249,
+   "clones": 2995,
+   "duplicatedLines": 37945,
+   "duplicatedTokens": 242474,
+   "percentage": 6.22,
+   "percentageTokens": 6.1
+  },
+  "formats": [
+   {
+    "format": "go",
+    "sources": 992,
+    "lines": 289130,
+    "clones": 2438,
+    "duplicatedLines": 26085,
+    "percentage": 9.02
+   },
+   {
+    "format": "json",
+    "sources": 49,
+    "lines": 109253,
+    "clones": 240,
+    "duplicatedLines": 8476,
+    "percentage": 7.76
+   },
+   {
+    "format": "typescript",
+    "sources": 1028,
+    "lines": 99577,
+    "clones": 198,
+    "duplicatedLines": 1918,
+    "percentage": 1.93
+   },
+   {
+    "format": "html",
+    "sources": 640,
+    "lines": 41376,
+    "clones": 63,
+    "duplicatedLines": 638,
+    "percentage": 1.54
+   },
+   {
+    "format": "yaml",
+    "sources": 31,
+    "lines": 3526,
+    "clones": 50,
+    "duplicatedLines": 775,
+    "percentage": 21.98
+   },
+   {
+    "format": "css",
+    "sources": 13,
+    "lines": 1753,
+    "clones": 5,
+    "duplicatedLines": 45,
+    "percentage": 2.57
+   },
+   {
+    "format": "go-module",
+    "sources": 3,
+    "lines": 502,
+    "clones": 1,
+    "duplicatedLines": 8,
+    "percentage": 1.59
+   },
+   {
+    "format": "svelte",
+    "sources": 666,
+    "lines": 55205,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 9,
+    "lines": 5730,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "sql",
+    "sources": 2,
+    "lines": 2427,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "json",
+    "lines": 141,
+    "tokens": 557,
+    "first": {
+     "name": "frontend/messages/cs.json",
+     "start": 4533,
+     "end": 4673
+    },
+    "others": [
+     {
+      "name": "frontend/messages/da.json",
+      "start": 4533,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/el.json",
+      "start": 4533,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/en.json",
+      "start": 4533,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/fr.json",
+      "start": 4533,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/hu.json",
+      "start": 4533,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/it.json",
+      "start": 4533,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/ja.json",
+      "start": 4533,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/ko.json",
+      "start": 4533,
+      "end": 4673
+     }
+    ],
+    "copies": 10,
+    "excerpt": {
+     "lines": [
+      "\"environment\": \"Životní prostředí\",",
+      "\"podman_features_unavailable\": \"Podman features are unavailable\",",
+      "\"podman_libpod_unreachable_description\": \"Arcane reached the engine's Docker-compatible API but not Podman's libpod API, so a socket proxy in front of Podman m…",
+      "\"additional_project_directories\": \"Additional Project Directories\",",
+      "\"additional_project_directories_description\": \"Disabled directories are kept but not scanned for projects.\",",
+      "\"add_directory\": \"Add Directory\",",
+      "\"directory_not_found_in_container\": \"Not found in this container. Check the volume mount.\",",
+      "\"duplicate_directory\": \"This directory is already listed\",",
+      "\"project_directory\": \"Project Directory\",",
+      "\"hsts_label\": \"HTTP Strict Transport Security\","
+     ],
+     "total": 141
+    },
+    "kind": "data"
+   },
+   {
+    "format": "go",
+    "lines": 8,
+    "tokens": 51,
+    "first": {
+     "name": "cli/pkg/activities/cmd.go",
+     "start": 127,
+     "end": 134
+    },
+    "others": [
+     {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 89,
+      "end": 96
+     },
+     {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 152,
+      "end": 159
+     },
+     {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 176,
+      "end": 183
+     },
+     {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 234,
+      "end": 241
+     },
+     {
+      "name": "cli/pkg/admin/events/cmd.go",
+      "start": 91,
+      "end": 98
+     },
+     {
+      "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+      "start": 72,
+      "end": 79
+     },
+     {
+      "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+      "start": 195,
+      "end": 202
+     },
+     {
+      "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+      "start": 273,
+      "end": 280
+     }
+    ],
+    "copies": 87,
+    "excerpt": {
+     "lines": [
+      "Short:        \"Get background activity details\",",
+      "Args:         cobra.ExactArgs(1),",
+      "SilenceUsage: true,",
+      "RunE: func(cmd *cobra.Command, args []string) error {",
+      "    c, err := cmdutil.ClientFromCommand(cmd)",
+      "    if err != nil {",
+      "        return err",
+      "    }"
+     ],
+     "total": 8
+    },
+    "kind": "code"
+   },
+   {
+    "format": "go",
+    "lines": 24,
+    "tokens": 152,
+    "first": {
+     "name": "backend/internal/project/service_test.go",
+     "start": 1648,
+     "end": 1671
+    },
+    "others": [
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2225,
+      "end": 2248
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2579,
+      "end": 2602
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2635,
+      "end": 2658
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2692,
+      "end": 2715
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2757,
+      "end": 2780
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2821,
+      "end": 2844
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2881,
+      "end": 2904
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2944,
+      "end": 2967
+     }
+    ],
+    "copies": 28,
+    "excerpt": {
+     "lines": [
+      "db := setupProjectTestDB(t)",
+      "ctx := t.Context()",
+      "",
+      "projectsDir := t.TempDir()",
+      "t.Setenv(\"ARCANE_PROJECTS_DIRECTORY\", projectsDir)",
+      "",
+      "settingsService, err := newSettingsServiceForTest(t, ctx, db)",
+      "require.NoError(t, err)",
+      "",
+      "eventService := event.NewEventService(db, &config.Config{}, nil)"
+     ],
+     "total": 24
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "json",
+    "lines": 145,
+    "tokens": 573,
+    "first": {
+     "name": "frontend/messages/en.json",
+     "start": 4529,
+     "end": 4673
+    },
+    "others": [
+     {
+      "name": "frontend/messages/pt-BR.json",
+      "start": 4529,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/tr.json",
+      "start": 4529,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/uk.json",
+      "start": 4529,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/vi.json",
+      "start": 4529,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/zh-CN.json",
+      "start": 4529,
+      "end": 4673
+     },
+     {
+      "name": "frontend/messages/zh-TW.json",
+      "start": 4529,
+      "end": 4673
+     }
+    ],
+    "copies": 7,
+    "kind": "data"
+   },
+   {
+    "format": "go",
+    "lines": 21,
+    "tokens": 213,
+    "first": {
+     "name": "backend/internal/activity/service_test.go",
+     "start": 1012,
+     "end": 1032
+    },
+    "others": [
+     {
+      "name": "backend/internal/environment/service_test.go",
+      "start": 1839,
+      "end": 1859
+     },
+     {
+      "name": "backend/internal/gitops/service_test.go",
+      "start": 2054,
+      "end": 2074
+     },
+     {
+      "name": "backend/internal/podman/service_test.go",
+      "start": 547,
+      "end": 567
+     },
+     {
+      "name": "backend/internal/swarm/children/configs/service_test.go",
+      "start": 83,
+      "end": 103
+     },
+     {
+      "name": "backend/internal/swarm/children/nodes/service_test.go",
+      "start": 271,
+      "end": 291
+     },
+     {
+      "name": "backend/internal/swarm/children/secrets/service_test.go",
+      "start": 84,
+      "end": 104
+     },
+     {
+      "name": "backend/internal/swarm/children/services/service_test.go",
+      "start": 148,
+      "end": 168
+     },
+     {
+      "name": "backend/internal/swarm/children/stacks/service_test.go",
+      "start": 262,
+      "end": 282
+     }
+    ],
+    "copies": 13,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 9,
+    "tokens": 68,
+    "first": {
+     "name": "cli/pkg/backups/cmd.go",
+     "start": 283,
+     "end": 291
+    },
+    "others": [
+     {
+      "name": "cli/pkg/backups/s3.go",
+      "start": 84,
+      "end": 92
+     },
+     {
+      "name": "cli/pkg/backups/s3.go",
+      "start": 191,
+      "end": 199
+     },
+     {
+      "name": "cli/pkg/backups/s3.go",
+      "start": 254,
+      "end": 262
+     },
+     {
+      "name": "cli/pkg/containers/actions.go",
+      "start": 31,
+      "end": 38
+     },
+     {
+      "name": "cli/pkg/containers/actions.go",
+      "start": 66,
+      "end": 73
+     },
+     {
+      "name": "cli/pkg/containers/actions.go",
+      "start": 94,
+      "end": 101
+     },
+     {
+      "name": "cli/pkg/containers/actions.go",
+      "start": 130,
+      "end": 138
+     },
+     {
+      "name": "cli/pkg/containers/actions.go",
+      "start": 184,
+      "end": 192
+     }
+    ],
+    "copies": 32,
+    "kind": "code"
+   },
+   {
+    "format": "go",
+    "lines": 9,
+    "tokens": 60,
+    "first": {
+     "name": "backend/internal/project/service_test.go",
+     "start": 1546,
+     "end": 1554
+    },
+    "others": [
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 1647,
+      "end": 1655
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 1836,
+      "end": 1844
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 1891,
+      "end": 1899
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2104,
+      "end": 2112
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2165,
+      "end": 2173
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2224,
+      "end": 2232
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2578,
+      "end": 2586
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2634,
+      "end": 2642
+     }
+    ],
+    "copies": 33,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 20,
+    "tokens": 199,
+    "first": {
+     "name": "backend/internal/container/service_test.go",
+     "start": 2106,
+     "end": 2125
+    },
+    "others": [
+     {
+      "name": "backend/internal/port/service_test.go",
+      "start": 333,
+      "end": 352
+     },
+     {
+      "name": "backend/internal/swarm/children/configs/service_test.go",
+      "start": 122,
+      "end": 141
+     },
+     {
+      "name": "backend/internal/system/children/backup/service_test.go",
+      "start": 182,
+      "end": 201
+     },
+     {
+      "name": "backend/internal/system/children/prune/service_test.go",
+      "start": 162,
+      "end": 181
+     },
+     {
+      "name": "backend/internal/system/service_test.go",
+      "start": 373,
+      "end": 392
+     },
+     {
+      "name": "backend/internal/updater/children/recovery/service_test.go",
+      "start": 625,
+      "end": 644
+     },
+     {
+      "name": "backend/internal/vulnerability/children/scan/children/trivy/service_test.go",
+      "start": 543,
+      "end": 562
+     },
+     {
+      "name": "backend/internal/vulnerability/service_test.go",
+      "start": 1170,
+      "end": 1189
+     }
+    ],
+    "copies": 9,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 10,
+    "tokens": 51,
+    "first": {
+     "name": "cli/pkg/admin/apikeys/cmd.go",
+     "start": 44,
+     "end": 53
+    },
+    "others": [
+     {
+      "name": "cli/pkg/admin/events/cmd.go",
+      "start": 115,
+      "end": 124
+     },
+     {
+      "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+      "start": 43,
+      "end": 52
+     },
+     {
+      "name": "cli/pkg/admin/oidcmappings/cmd.go",
+      "start": 37,
+      "end": 45
+     },
+     {
+      "name": "cli/pkg/admin/oidcmappings/cmd.go",
+      "start": 80,
+      "end": 88
+     },
+     {
+      "name": "cli/pkg/admin/roles/cmd.go",
+      "start": 46,
+      "end": 55
+     },
+     {
+      "name": "cli/pkg/admin/roles/cmd.go",
+      "start": 248,
+      "end": 256
+     },
+     {
+      "name": "cli/pkg/admin/users/cmd.go",
+      "start": 43,
+      "end": 52
+     },
+     {
+      "name": "cli/pkg/auth/apikeys.go",
+      "start": 34,
+      "end": 43
+     }
+    ],
+    "copies": 29,
+    "kind": "code"
+   },
+   {
+    "format": "go",
+    "lines": 9,
+    "tokens": 52,
+    "first": {
+     "name": "backend/internal/project/service_test.go",
+     "start": 2596,
+     "end": 2604
+    },
+    "others": [
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2652,
+      "end": 2660
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2709,
+      "end": 2717
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2774,
+      "end": 2782
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2838,
+      "end": 2846
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 2898,
+      "end": 2906
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 3009,
+      "end": 3017
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 3174,
+      "end": 3182
+     },
+     {
+      "name": "backend/internal/project/service_test.go",
+      "start": 3356,
+      "end": 3364
+     }
+    ],
+    "copies": 26,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 2982,
+   "lines": 366032,
+   "tokens": 2470361,
+   "clones": 1042,
+   "duplicatedLines": 10046,
+   "duplicatedTokens": 68451,
+   "percentage": 2.74,
+   "percentageTokens": 2.77,
+   "formats": [
+    {
+     "format": "go",
+     "sources": 672,
+     "lines": 185377,
+     "clones": 869,
+     "duplicatedLines": 8418,
+     "percentage": 4.54
+    },
+    {
+     "format": "typescript",
+     "sources": 988,
+     "lines": 82328,
+     "clones": 110,
+     "duplicatedLines": 990,
+     "percentage": 1.2
+    },
+    {
+     "format": "html",
+     "sources": 640,
+     "lines": 41376,
+     "clones": 63,
+     "duplicatedLines": 638,
+     "percentage": 1.54
+    },
+    {
+     "format": "svelte",
+     "sources": 666,
+     "lines": 55205,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 3,
+     "lines": 948,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "css",
+     "sources": 12,
+     "lines": 755,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "javascript",
+     "sources": 1,
+     "lines": 43,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "go",
+     "lines": 8,
+     "tokens": 51,
+     "first": {
+      "name": "cli/pkg/activities/cmd.go",
+      "start": 127,
+      "end": 134
+     },
+     "others": [
+      {
+       "name": "cli/pkg/admin/apikeys/cmd.go",
+       "start": 89,
+       "end": 96
+      },
+      {
+       "name": "cli/pkg/admin/apikeys/cmd.go",
+       "start": 152,
+       "end": 159
+      },
+      {
+       "name": "cli/pkg/admin/apikeys/cmd.go",
+       "start": 176,
+       "end": 183
+      },
+      {
+       "name": "cli/pkg/admin/apikeys/cmd.go",
+       "start": 234,
+       "end": 241
+      },
+      {
+       "name": "cli/pkg/admin/events/cmd.go",
+       "start": 91,
+       "end": 98
+      },
+      {
+       "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+       "start": 72,
+       "end": 79
+      },
+      {
+       "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+       "start": 195,
+       "end": 202
+      },
+      {
+       "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+       "start": 273,
+       "end": 280
+      }
+     ],
+     "copies": 87,
+     "excerpt": {
+      "lines": [
+       "Short:        \"Get background activity details\",",
+       "Args:         cobra.ExactArgs(1),",
+       "SilenceUsage: true,",
+       "RunE: func(cmd *cobra.Command, args []string) error {",
+       "    c, err := cmdutil.ClientFromCommand(cmd)",
+       "    if err != nil {",
+       "        return err",
+       "    }"
+      ],
+      "total": 8
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 68,
+     "first": {
+      "name": "cli/pkg/backups/cmd.go",
+      "start": 283,
+      "end": 291
+     },
+     "others": [
+      {
+       "name": "cli/pkg/backups/s3.go",
+       "start": 84,
+       "end": 92
+      },
+      {
+       "name": "cli/pkg/backups/s3.go",
+       "start": 191,
+       "end": 199
+      },
+      {
+       "name": "cli/pkg/backups/s3.go",
+       "start": 254,
+       "end": 262
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 31,
+       "end": 38
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 66,
+       "end": 73
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 94,
+       "end": 101
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 130,
+       "end": 138
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 184,
+       "end": 192
+      }
+     ],
+     "copies": 32,
+     "excerpt": {
+      "lines": [
+       "Args:         cobra.ExactArgs(1),",
+       "SilenceUsage: true,",
+       "RunE: func(cmd *cobra.Command, args []string) error {",
+       "    c, err := cmdutil.ClientFromCommand(cmd)",
+       "    if err != nil {",
+       "        return err",
+       "    }",
+       "",
+       "    resolved, _, err := s3DestinationRef.Resolve(cmd.Context(), c, opts.s3Destination, cmdutil.AllowPrompt(cmd))"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "Args:         cobra.ExactArgs(1),",
+       "SilenceUsage: true,",
+       "RunE: func(cmd *cobra.Command, args []string) error {",
+       "    c, err := cmdutil.ClientFromCommand(cmd)",
+       "    if err != nil {",
+       "        return err",
+       "    }",
+       "",
+       "    resolved, _, err := s3DestinationRef.Resolve(cmd.Context(), c, args[0], cmdutil.AllowPrompt(cmd))"
+      ],
+      "total": 9
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 51,
+     "first": {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 44,
+      "end": 53
+     },
+     "others": [
+      {
+       "name": "cli/pkg/admin/events/cmd.go",
+       "start": 115,
+       "end": 124
+      },
+      {
+       "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+       "start": 43,
+       "end": 52
+      },
+      {
+       "name": "cli/pkg/admin/oidcmappings/cmd.go",
+       "start": 37,
+       "end": 45
+      },
+      {
+       "name": "cli/pkg/admin/oidcmappings/cmd.go",
+       "start": 80,
+       "end": 88
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 46,
+       "end": 55
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 248,
+       "end": 256
+      },
+      {
+       "name": "cli/pkg/admin/users/cmd.go",
+       "start": 43,
+       "end": 52
+      },
+      {
+       "name": "cli/pkg/auth/apikeys.go",
+       "start": 34,
+       "end": 43
+      }
+     ],
+     "copies": 29,
+     "excerpt": {
+      "lines": [
+       "Short:        \"List API keys\",",
+       "SilenceUsage: true,",
+       "Args:         cobra.NoArgs,",
+       "RunE: func(cmd *cobra.Command, args []string) error {",
+       "    c, err := cmdutil.ClientFromCommand(cmd)",
+       "    if err != nil {",
+       "        return err",
+       "    }",
+       "",
+       "    return cmdutil.RunList(cmd, c, cmdutil.ListSpec[types.ApiKey]{"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "Short:        \"Show global event counts by severity\",",
+       "SilenceUsage: true,",
+       "Args:         cobra.NoArgs,",
+       "RunE: func(cmd *cobra.Command, args []string) error {",
+       "    c, err := cmdutil.ClientFromCommand(cmd)",
+       "    if err != nil {",
+       "        return err",
+       "    }",
+       "",
+       "    return cmdutil.Run(cmd, c, cmdutil.Spec[types.EventSeverityCounts]{"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 59,
+     "first": {
+      "name": "cli/pkg/admin/events/cmd.go",
+      "start": 116,
+      "end": 124
+     },
+     "others": [
+      {
+       "name": "cli/pkg/admin/oidcmappings/cmd.go",
+       "start": 38,
+       "end": 45
+      },
+      {
+       "name": "cli/pkg/admin/oidcmappings/cmd.go",
+       "start": 81,
+       "end": 88
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 249,
+       "end": 256
+      },
+      {
+       "name": "cli/pkg/auth/apikeys.go",
+       "start": 35,
+       "end": 43
+      },
+      {
+       "name": "cli/pkg/auth/cmd.go",
+       "start": 157,
+       "end": 165
+      },
+      {
+       "name": "cli/pkg/containers/cmd.go",
+       "start": 449,
+       "end": 457
+      },
+      {
+       "name": "cli/pkg/images/updates/cmd.go",
+       "start": 148,
+       "end": 156
+      },
+      {
+       "name": "cli/pkg/networks/cmd.go",
+       "start": 211,
+       "end": 219
+      }
+     ],
+     "copies": 22,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 9,
+     "tokens": 61,
+     "first": {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 177,
+      "end": 185
+     },
+     "others": [
+      {
+       "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+       "start": 73,
+       "end": 81
+      },
+      {
+       "name": "cli/pkg/admin/notifications/cmd.go",
+       "start": 222,
+       "end": 230
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 82,
+       "end": 89
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 282,
+       "end": 289
+      },
+      {
+       "name": "cli/pkg/admin/users/cmd.go",
+       "start": 133,
+       "end": 141
+      },
+      {
+       "name": "cli/pkg/agents/cmd.go",
+       "start": 107,
+       "end": 115
+      },
+      {
+       "name": "cli/pkg/agents/cmd.go",
+       "start": 138,
+       "end": 146
+      },
+      {
+       "name": "cli/pkg/agents/cmd.go",
+       "start": 172,
+       "end": 180
+      }
+     ],
+     "copies": 19,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 10,
+     "tokens": 74,
+     "first": {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 153,
+      "end": 162
+     },
+     "others": [
+      {
+       "name": "cli/pkg/admin/events/cmd.go",
+       "start": 92,
+       "end": 101
+      },
+      {
+       "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+       "start": 274,
+       "end": 283
+      },
+      {
+       "name": "cli/pkg/admin/notifications/cmd.go",
+       "start": 112,
+       "end": 121
+      },
+      {
+       "name": "cli/pkg/admin/oidcmappings/cmd.go",
+       "start": 178,
+       "end": 187
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 224,
+       "end": 233
+      },
+      {
+       "name": "cli/pkg/admin/users/cmd.go",
+       "start": 236,
+       "end": 245
+      },
+      {
+       "name": "cli/pkg/agents/cmd.go",
+       "start": 83,
+       "end": 92
+      },
+      {
+       "name": "cli/pkg/backups/cmd.go",
+       "start": 198,
+       "end": 208
+      }
+     ],
+     "copies": 15,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 8,
+     "tokens": 52,
+     "first": {
+      "name": "cli/pkg/admin/apikeys/cmd.go",
+      "start": 153,
+      "end": 160
+     },
+     "others": [
+      {
+       "name": "cli/pkg/admin/apikeys/cmd.go",
+       "start": 177,
+       "end": 185
+      },
+      {
+       "name": "cli/pkg/admin/federatedcredentials/cmd.go",
+       "start": 73,
+       "end": 81
+      },
+      {
+       "name": "cli/pkg/admin/notifications/cmd.go",
+       "start": 222,
+       "end": 230
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 82,
+       "end": 89
+      },
+      {
+       "name": "cli/pkg/admin/roles/cmd.go",
+       "start": 282,
+       "end": 289
+      },
+      {
+       "name": "cli/pkg/admin/users/cmd.go",
+       "start": 133,
+       "end": 141
+      },
+      {
+       "name": "cli/pkg/agents/cmd.go",
+       "start": 107,
+       "end": 115
+      },
+      {
+       "name": "cli/pkg/agents/cmd.go",
+       "start": 138,
+       "end": 146
+      }
+     ],
+     "copies": 18,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 11,
+     "tokens": 77,
+     "first": {
+      "name": "cli/pkg/containers/actions.go",
+      "start": 31,
+      "end": 41
+     },
+     "others": [
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 66,
+       "end": 76
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 94,
+       "end": 104
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 130,
+       "end": 141
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 184,
+       "end": 195
+      },
+      {
+       "name": "cli/pkg/containers/actions.go",
+       "start": 245,
+       "end": 256
+      },
+      {
+       "name": "cli/pkg/containers/cmd.go",
+       "start": 251,
+       "end": 262
+      },
+      {
+       "name": "cli/pkg/containers/cmd.go",
+       "start": 281,
+       "end": 292
+      },
+      {
+       "name": "cli/pkg/containers/cmd.go",
+       "start": 311,
+       "end": 322
+      }
+     ],
+     "copies": 12,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 8,
+     "tokens": 55,
+     "first": {
+      "name": "cli/pkg/registries/cmd.go",
+      "start": 87,
+      "end": 94
+     },
+     "others": [
+      {
+       "name": "cli/pkg/registries/cmd.go",
+       "start": 220,
+       "end": 227
+      },
+      {
+       "name": "cli/pkg/repos/cmd.go",
+       "start": 213,
+       "end": 220
+      },
+      {
+       "name": "cli/pkg/repos/cmd.go",
+       "start": 279,
+       "end": 286
+      },
+      {
+       "name": "cli/pkg/repos/cmd.go",
+       "start": 385,
+       "end": 392
+      },
+      {
+       "name": "cli/pkg/repos/cmd.go",
+       "start": 416,
+       "end": 423
+      },
+      {
+       "name": "cli/pkg/repos/cmd.go",
+       "start": 446,
+       "end": 453
+      },
+      {
+       "name": "cli/pkg/repos/cmd.go",
+       "start": 496,
+       "end": 503
+      },
+      {
+       "name": "cli/pkg/templates/cmd.go",
+       "start": 314,
+       "end": 321
+      }
+     ],
+     "copies": 12,
+     "kind": "code"
+    },
+    {
+     "format": "go",
+     "lines": 8,
+     "tokens": 72,
+     "first": {
+      "name": "backend/internal/podman/children/pods/handler.go",
+      "start": 24,
+      "end": 31
+     },
+     "others": [
+      {
+       "name": "backend/internal/podman/children/secrets/handler.go",
+       "start": 22,
+       "end": 29
+      },
+      {
+       "name": "backend/internal/port/handler.go",
+       "start": 18,
+       "end": 25
+      },
+      {
+       "name": "backend/internal/swarm/children/configs/handler.go",
+       "start": 23,
+       "end": 30
+      },
+      {
+       "name": "backend/internal/swarm/children/nodes/handler.go",
+       "start": 37,
+       "end": 44
+      },
+      {
+       "name": "backend/internal/swarm/children/secrets/handler.go",
+       "start": 23,
+       "end": 30
+      },
+      {
+       "name": "backend/internal/swarm/children/services/handler.go",
+       "start": 21,
+       "end": 28
+      },
+      {
+       "name": "backend/internal/swarm/children/stacks/handler.go",
+       "start": 21,
+       "end": 28
+      },
+      {
+       "name": "backend/internal/swarm/handler.go",
+       "start": 30,
+       "end": 37
+      }
+     ],
+     "copies": 9,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 3,
+    "minified": 1,
+    "sample": [
+     "backend/proto/tunnel/v1/tunnel_grpc.pb.go",
+     "backend/proto/tunnel/v1/tunnel.pb.go",
+     "backend/resources/scalar/standalone.js"
+    ]
+   }
+  },
+  "health": {
+   "score": 31.4,
+   "grade": "E",
+   "size": {
+    "lines": 400868,
+    "files": 2099,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 7,
+     "adjusted": 7,
+     "lines": 28003,
+     "halfLife": 8.5,
+     "formats": [
+      "go",
+      "svelte",
+      "typescript",
+      "sql",
+      "bash",
+      "docker",
+      "javascript"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 56.7
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 40.6,
+     "adjusted": 40.1,
+     "lines": 61669,
+     "halfLife": 7.5,
+     "coverage": 37.9,
+     "weight": 0.379,
+     "score": 2.5
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 57.1,
+     "adjusted": 56.9,
+     "lines": 228824,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 45.4
+    }
+   ]
+  },
+  "complexity": {
+   "total": 60473,
+   "mean": 28.8,
+   "files": [
+    {
+     "path": "backend/internal/project/service.go",
+     "complexity": 874,
+     "lines": 3883,
+     "bytes": 162945
+    },
+    {
+     "path": "backend/internal/project/service_test.go",
+     "complexity": 575,
+     "lines": 11011,
+     "bytes": 413857
+    },
+    {
+     "path": "backend/internal/updater/service.go",
+     "complexity": 538,
+     "lines": 2407,
+     "bytes": 92270
+    },
+    {
+     "path": "backend/internal/system/children/backup/service.go",
+     "complexity": 497,
+     "lines": 2205,
+     "bytes": 83623
+    },
+    {
+     "path": "backend/internal/container/service.go",
+     "complexity": 425,
+     "lines": 2635,
+     "bytes": 98173
+    },
+    {
+     "path": "backend/internal/imageupdate/service.go",
+     "complexity": 399,
+     "lines": 1939,
+     "bytes": 78942
+    },
+    {
+     "path": "backend/internal/system/children/upgrade/service.go",
+     "complexity": 371,
+     "lines": 1736,
+     "bytes": 67748
+    },
+    {
+     "path": "backend/internal/volume/children/backup/service.go",
+     "complexity": 359,
+     "lines": 1359,
+     "bytes": 55845
+    },
+    {
+     "path": "backend/internal/passkey/service.go",
+     "complexity": 333,
+     "lines": 1512,
+     "bytes": 56887
+    },
+    {
+     "path": "frontend/src/routes/(app)/projects/[projectId]/+page.svelte",
+     "complexity": 329,
+     "lines": 1706,
+     "bytes": 93525
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 40.6,
+   "findings": 668,
+   "files": 1282,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 501
+    },
+    {
+     "category": "unused-export",
+     "count": 1
+    },
+    {
+     "category": "unused-symbol",
+     "count": 163
+    },
+    {
+     "category": "unused-import",
+     "count": 3
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/code-editor/editor.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 1145
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/workspace-file-tree-panel.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 1037
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/arcane-table/arcane-table.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 977
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/sheets/create-pod-sheet.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 907
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/stores/activity.store.svelte.ts",
+     "name": "",
+     "line": 1,
+     "lines": 852
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/dialogs/gitops-sync-form.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 733
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/action-buttons.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 696
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/network-diagram/network-diagram.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 645
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/types/ui/notification.ts",
+     "name": "",
+     "line": 1,
+     "lines": 637
+    },
+    {
+     "category": "unused-file",
+     "path": "frontend/src/lib/components/dialogs/update-all-dialog.svelte",
+     "name": "",
+     "line": 1,
+     "lines": 585
+    }
+   ]
+  }
+ }
+}

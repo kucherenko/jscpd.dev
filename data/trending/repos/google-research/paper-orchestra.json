@@ -1,0 +1,820 @@
+{
+ "name": "google-research/paper-orchestra",
+ "url": "https://github.com/google-research/paper-orchestra",
+ "appearances": [
+  {
+   "date": "2026-11-17",
+   "rank": 11,
+   "stars": 1740,
+   "starsToday": 313,
+   "headSha": "d9bae997e793a015ed38bb1605be9eb58c00284f",
+   "sources": 45,
+   "lines": 10386,
+   "clones": 24,
+   "duplicatedLines": 766,
+   "percentage": 7.38,
+   "codePercentage": 7.93,
+   "codeSources": 32,
+   "healthScore": 30.2,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T05:21:51.249Z",
+  "name": "google-research/paper-orchestra",
+  "url": "https://github.com/google-research/paper-orchestra",
+  "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+  "language": "Python",
+  "stars": 1740,
+  "starsToday": 313,
+  "defaultBranch": "main",
+  "headSha": "d9bae997e793a015ed38bb1605be9eb58c00284f",
+  "durationMs": 871,
+  "total": {
+   "sources": 45,
+   "lines": 10386,
+   "tokens": 60460,
+   "clones": 24,
+   "duplicatedLines": 766,
+   "duplicatedTokens": 3750,
+   "percentage": 7.38,
+   "percentageTokens": 6.2
+  },
+  "formats": [
+   {
+    "format": "python",
+    "sources": 31,
+    "lines": 9032,
+    "clones": 22,
+    "duplicatedLines": 718,
+    "percentage": 7.95
+   },
+   {
+    "format": "latex",
+    "sources": 6,
+    "lines": 756,
+    "clones": 2,
+    "duplicatedLines": 48,
+    "percentage": 6.35
+   },
+   {
+    "format": "markdown",
+    "sources": 6,
+    "lines": 569,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 1,
+    "lines": 23,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "text",
+    "sources": 1,
+    "lines": 6,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "python",
+    "lines": 117,
+    "tokens": 566,
+    "first": {
+     "name": "methods/paper_writer.py",
+     "start": 253,
+     "end": 369
+    },
+    "others": [
+     {
+      "name": "methods/paper_writer_with_plotting.py",
+      "start": 324,
+      "end": 440
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    writer_model_name=writer_model_name,",
+      "    research_cutoff=research_cutoff,",
+      ")",
+      "",
+      "if success:",
+      "    result[\"status\"] = \"success\"",
+      "    result[\"paper_path\"] = final_paper_path",
+      "    print(f\"Paper {paper_id} successfully written!\")",
+      "else:",
+      "    print(f\"Paper {paper_id} writing failed.\")"
+     ],
+     "total": 117
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 92,
+    "tokens": 385,
+    "first": {
+     "name": "autoraters/sxs_lit_review_quality.py",
+     "start": 237,
+     "end": 328
+    },
+    "others": [
+     {
+      "name": "autoraters/sxs_paper_quality.py",
+      "start": 297,
+      "end": 388
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "with ThreadPoolExecutor(max_workers=max_workers) as executor:",
+      "    futures = []",
+      "    for pid, p1, p2 in common_ids:",
+      "        f = executor.submit(",
+      "            _process_and_save_single_sxs,",
+      "            pid,",
+      "            p1,",
+      "            p2,",
+      "            output_json_path,",
+      "            current_results,"
+     ],
+     "total": 92
+    },
+    "kind": "code"
+   },
+   {
+    "format": "latex",
+    "lines": 41,
+    "tokens": 335,
+    "first": {
+     "name": "templates/cvpr2025/template.tex",
+     "start": 23,
+     "end": 63
+    },
+    "others": [
+     {
+      "name": "templates/iclr2025/template.tex",
+      "start": 20,
+      "end": 60
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "{\\tt\\small researcher@institute.ai}",
+      "}",
+      "",
+      "\\begin{document}",
+      "\\maketitle",
+      "",
+      "\\begin{abstract}",
+      "%%%%%%%%% ABSTRACT %%%%%%%%%",
+      "Abstract here.",
+      "%%%%%%%%% ABSTRACT %%%%%%%%%"
+     ],
+     "total": 41
+    },
+    "excerptSecond": {
+     "lines": [
+      "\\newcommand{\\new}{\\marginpar{NEW}}",
+      "",
+      "\\begin{document}",
+      "",
+      "\\maketitle",
+      "",
+      "\\begin{abstract}",
+      "%%%%%%%%% ABSTRACT %%%%%%%%%",
+      "Abstract here.",
+      "%%%%%%%%% ABSTRACT %%%%%%%%%"
+     ],
+     "total": 41
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 68,
+    "tokens": 323,
+    "first": {
+     "name": "autoraters/sxs_lit_review_quality.py",
+     "start": 105,
+     "end": 172
+    },
+    "others": [
+     {
+      "name": "autoraters/sxs_paper_quality.py",
+      "start": 165,
+      "end": 232
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 42,
+    "tokens": 245,
+    "first": {
+     "name": "utils/gemini_utils.py",
+     "start": 71,
+     "end": 112
+    },
+    "others": [
+     {
+      "name": "utils/openai_utils.py",
+      "start": 52,
+      "end": 93
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 45,
+    "tokens": 208,
+    "first": {
+     "name": "methods/paper_writer.py",
+     "start": 209,
+     "end": 253
+    },
+    "others": [
+     {
+      "name": "methods/paper_writer_with_plotting.py",
+      "start": 277,
+      "end": 321
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 35,
+    "tokens": 203,
+    "first": {
+     "name": "autoraters/sxs_lit_review_quality.py",
+     "start": 202,
+     "end": 236
+    },
+    "others": [
+     {
+      "name": "autoraters/sxs_paper_quality.py",
+      "start": 262,
+      "end": 296
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 40,
+    "tokens": 203,
+    "first": {
+     "name": "methods/paper_writer.py",
+     "start": 404,
+     "end": 443
+    },
+    "others": [
+     {
+      "name": "methods/paper_writer_with_plotting.py",
+      "start": 481,
+      "end": 520
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 26,
+    "tokens": 138,
+    "first": {
+     "name": "autoraters/sxs_lit_review_quality.py",
+     "start": 328,
+     "end": 353
+    },
+    "others": [
+     {
+      "name": "autoraters/sxs_paper_quality.py",
+      "start": 388,
+      "end": 413
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 36,
+    "tokens": 134,
+    "first": {
+     "name": "methods/paper_writer.py",
+     "start": 369,
+     "end": 404
+    },
+    "others": [
+     {
+      "name": "methods/paper_writer_with_plotting.py",
+      "start": 443,
+      "end": 478
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 32,
+   "lines": 9055,
+   "tokens": 46616,
+   "clones": 22,
+   "duplicatedLines": 718,
+   "duplicatedTokens": 3350,
+   "percentage": 7.93,
+   "percentageTokens": 7.19,
+   "formats": [
+    {
+     "format": "python",
+     "sources": 31,
+     "lines": 9032,
+     "clones": 22,
+     "duplicatedLines": 718,
+     "percentage": 7.95
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 23,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "python",
+     "lines": 117,
+     "tokens": 566,
+     "first": {
+      "name": "methods/paper_writer.py",
+      "start": 253,
+      "end": 369
+     },
+     "others": [
+      {
+       "name": "methods/paper_writer_with_plotting.py",
+       "start": 324,
+       "end": 440
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    writer_model_name=writer_model_name,",
+       "    research_cutoff=research_cutoff,",
+       ")",
+       "",
+       "if success:",
+       "    result[\"status\"] = \"success\"",
+       "    result[\"paper_path\"] = final_paper_path",
+       "    print(f\"Paper {paper_id} successfully written!\")",
+       "else:",
+       "    print(f\"Paper {paper_id} writing failed.\")"
+      ],
+      "total": 117
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 92,
+     "tokens": 385,
+     "first": {
+      "name": "autoraters/sxs_lit_review_quality.py",
+      "start": 237,
+      "end": 328
+     },
+     "others": [
+      {
+       "name": "autoraters/sxs_paper_quality.py",
+       "start": 297,
+       "end": 388
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "with ThreadPoolExecutor(max_workers=max_workers) as executor:",
+       "    futures = []",
+       "    for pid, p1, p2 in common_ids:",
+       "        f = executor.submit(",
+       "            _process_and_save_single_sxs,",
+       "            pid,",
+       "            p1,",
+       "            p2,",
+       "            output_json_path,",
+       "            current_results,"
+      ],
+      "total": 92
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 68,
+     "tokens": 323,
+     "first": {
+      "name": "autoraters/sxs_lit_review_quality.py",
+      "start": 105,
+      "end": 172
+     },
+     "others": [
+      {
+       "name": "autoraters/sxs_paper_quality.py",
+       "start": 165,
+       "end": 232
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "rating2 = rate_sxs_lit_review(paper2_text, paper1_text, model_name=model_name)",
+       "",
+       "if not rating1 or not rating2:",
+       "    print(",
+       "        f\"❌ [{paper_id}] Failed to get ratings for one or both rounds.\", flush=True",
+       "    )",
+       "    return paper_id, False",
+       "",
+       "winner1 = rating1.get(\"winner\", \"\").lower() if isinstance(rating1, dict) else \"\"",
+       "winner2 = rating2.get(\"winner\", \"\").lower() if isinstance(rating2, dict) else \"\""
+      ],
+      "total": 68
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 42,
+     "tokens": 245,
+     "first": {
+      "name": "utils/gemini_utils.py",
+      "start": 71,
+      "end": 112
+     },
+     "others": [
+      {
+       "name": "utils/openai_utils.py",
+       "start": 52,
+       "end": 93
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 45,
+     "tokens": 208,
+     "first": {
+      "name": "methods/paper_writer.py",
+      "start": 209,
+      "end": 253
+     },
+     "others": [
+      {
+       "name": "methods/paper_writer_with_plotting.py",
+       "start": 277,
+       "end": 321
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 35,
+     "tokens": 203,
+     "first": {
+      "name": "autoraters/sxs_lit_review_quality.py",
+      "start": 202,
+      "end": 236
+     },
+     "others": [
+      {
+       "name": "autoraters/sxs_paper_quality.py",
+       "start": 262,
+       "end": 296
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 40,
+     "tokens": 203,
+     "first": {
+      "name": "methods/paper_writer.py",
+      "start": 404,
+      "end": 443
+     },
+     "others": [
+      {
+       "name": "methods/paper_writer_with_plotting.py",
+       "start": 481,
+       "end": 520
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 26,
+     "tokens": 138,
+     "first": {
+      "name": "autoraters/sxs_lit_review_quality.py",
+      "start": 328,
+      "end": 353
+     },
+     "others": [
+      {
+       "name": "autoraters/sxs_paper_quality.py",
+       "start": 388,
+       "end": 413
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 36,
+     "tokens": 134,
+     "first": {
+      "name": "methods/paper_writer.py",
+      "start": 369,
+      "end": 404
+     },
+     "others": [
+      {
+       "name": "methods/paper_writer_with_plotting.py",
+       "start": 443,
+       "end": 478
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 35,
+     "tokens": 127,
+     "first": {
+      "name": "methods/paper_writer.py",
+      "start": 58,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "methods/paper_writer_with_plotting.py",
+       "start": 64,
+       "end": 98
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 30.2,
+   "grade": "E",
+   "size": {
+    "lines": 9722,
+    "files": 36,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 7.9,
+     "adjusted": 7.1,
+     "lines": 766,
+     "halfLife": 8.5,
+     "formats": [
+      "python",
+      "latex",
+      "bash"
+     ],
+     "excluded": [
+      "text"
+     ],
+     "weight": 1,
+     "score": 55.9
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 34,
+     "adjusted": 28.4,
+     "lines": 3071,
+     "halfLife": 7.5,
+     "coverage": 92.9,
+     "weight": 0.929,
+     "score": 7.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 37.8,
+     "adjusted": 34.9,
+     "lines": 3671,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 61.7
+    }
+   ]
+  },
+  "complexity": {
+   "total": 1041,
+   "mean": 28.9,
+   "files": [
+    {
+     "path": "autoraters/citation_f1.py",
+     "complexity": 132,
+     "lines": 862,
+     "bytes": 31494
+    },
+    {
+     "path": "frontend/app.py",
+     "complexity": 127,
+     "lines": 1082,
+     "bytes": 46724
+    },
+    {
+     "path": "methods/agents/literature_review_agent.py",
+     "complexity": 101,
+     "lines": 607,
+     "bytes": 22575
+    },
+    {
+     "path": "autoraters/sxs_paper_quality.py",
+     "complexity": 70,
+     "lines": 413,
+     "bytes": 14002
+    },
+    {
+     "path": "autoraters/sxs_lit_review_quality.py",
+     "complexity": 65,
+     "lines": 353,
+     "bytes": 11512
+    },
+    {
+     "path": "utils/gemini_utils.py",
+     "complexity": 56,
+     "lines": 354,
+     "bytes": 12393
+    },
+    {
+     "path": "methods/agents/content_refinement_agent.py",
+     "complexity": 47,
+     "lines": 593,
+     "bytes": 23036
+    },
+    {
+     "path": "methods/paper_writer_with_plotting.py",
+     "complexity": 47,
+     "lines": 520,
+     "bytes": 20016
+    },
+    {
+     "path": "utils/pdf_utils.py",
+     "complexity": 46,
+     "lines": 293,
+     "bytes": 9854
+    },
+    {
+     "path": "methods/paper_writer.py",
+     "complexity": 43,
+     "lines": 443,
+     "bytes": 16572
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 34,
+   "findings": 43,
+   "files": 31,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 8
+    },
+    {
+     "category": "unused-export",
+     "count": 10
+    },
+    {
+     "category": "unused-symbol",
+     "count": 6
+    },
+    {
+     "category": "unused-import",
+     "count": 19
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "autoraters/citation_f1.py",
+     "name": "",
+     "line": 1,
+     "lines": 862
+    },
+    {
+     "category": "unused-file",
+     "path": "autoraters/sxs_paper_quality.py",
+     "name": "",
+     "line": 1,
+     "lines": 413
+    },
+    {
+     "category": "unused-file",
+     "path": "autoraters/lit_review_quality.py",
+     "name": "",
+     "line": 1,
+     "lines": 357
+    },
+    {
+     "category": "unused-file",
+     "path": "autoraters/sxs_lit_review_quality.py",
+     "name": "",
+     "line": 1,
+     "lines": 353
+    },
+    {
+     "category": "unused-file",
+     "path": "autoraters/prompts/lit_review_quality_prompts.py",
+     "name": "",
+     "line": 1,
+     "lines": 207
+    },
+    {
+     "category": "unused-export",
+     "path": "methods/paper_writer_with_plotting.py",
+     "name": "run_batch_writeup",
+     "line": 430,
+     "lines": 91
+    },
+    {
+     "category": "unused-file",
+     "path": "methods/prompts/format_agent.py",
+     "name": "",
+     "line": 1,
+     "lines": 90
+    },
+    {
+     "category": "unused-file",
+     "path": "autoraters/prompts/sxs_quality_prompts.py",
+     "name": "",
+     "line": 1,
+     "lines": 85
+    },
+    {
+     "category": "unused-export",
+     "path": "methods/paper_writer.py",
+     "name": "run_batch_writeup",
+     "line": 359,
+     "lines": 85
+    },
+    {
+     "category": "unused-export",
+     "path": "methods/paper_writer_with_plotting.py",
+     "name": "process_paper_task",
+     "line": 268,
+     "lines": 74
+    }
+   ]
+  }
+ }
+}
