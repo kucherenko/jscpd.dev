@@ -33,46 +33,62 @@
    "codeSources": 30,
    "healthScore": null,
    "healthGrade": null
+  },
+  {
+   "date": "2026-11-18",
+   "rank": 10,
+   "stars": 66165,
+   "starsToday": 192,
+   "headSha": "233d00fa068ec2b8c0d4f07b703934d6391a5a73",
+   "sources": 34,
+   "lines": 41242,
+   "clones": 96,
+   "duplicatedLines": 1313,
+   "percentage": 3.18,
+   "codePercentage": 17.08,
+   "codeSources": 20,
+   "healthScore": 52.4,
+   "healthGrade": "D"
   }
  ],
  "latest": {
-  "date": "2026-09-02",
-  "generatedAt": "2026-09-02T05:31:33.771Z",
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T05:22:13.056Z",
   "name": "jingyaogong/minimind",
   "url": "https://github.com/jingyaogong/minimind",
   "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
   "language": "Python",
-  "stars": 57299,
-  "starsToday": 1005,
+  "stars": 66165,
+  "starsToday": 192,
   "defaultBranch": "master",
-  "headSha": "7a6fddd63a30c06b2fdd5fac4089922b29bc841b",
-  "durationMs": 722,
+  "headSha": "233d00fa068ec2b8c0d4f07b703934d6391a5a73",
+  "durationMs": 1016,
   "total": {
-   "sources": 44,
-   "lines": 41998,
-   "tokens": 174635,
-   "clones": 97,
-   "duplicatedLines": 1352,
-   "duplicatedTokens": 15208,
-   "percentage": 3.22,
-   "percentageTokens": 8.71
+   "sources": 34,
+   "lines": 41242,
+   "tokens": 172728,
+   "clones": 96,
+   "duplicatedLines": 1313,
+   "duplicatedTokens": 15002,
+   "percentage": 3.18,
+   "percentageTokens": 8.69
   },
   "formats": [
    {
     "format": "python",
     "sources": 22,
-    "lines": 4680,
-    "clones": 69,
-    "duplicatedLines": 847,
-    "percentage": 18.1
+    "lines": 4718,
+    "clones": 68,
+    "duplicatedLines": 809,
+    "percentage": 17.15
    },
    {
     "format": "markdown",
     "sources": 3,
-    "lines": 4100,
+    "lines": 4122,
     "clones": 14,
-    "duplicatedLines": 213,
-    "percentage": 5.2
+    "duplicatedLines": 212,
+    "percentage": 5.14
    },
    {
     "format": "text",
@@ -84,11 +100,11 @@
    },
    {
     "format": "bash",
-    "sources": 11,
-    "lines": 932,
+    "sources": 2,
+    "lines": 288,
     "clones": 5,
     "duplicatedLines": 58,
-    "percentage": 6.22
+    "percentage": 20.14
    },
    {
     "format": "json",
@@ -99,17 +115,9 @@
     "percentage": 0.08
    },
    {
-    "format": "perl",
-    "sources": 1,
-    "lines": 174,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "txt",
     "sources": 1,
-    "lines": 34,
+    "lines": 36,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -121,15 +129,15 @@
     "lines": 95,
     "tokens": 1570,
     "first": {
-     "name": "README.md:text",
-     "start": 1340,
-     "end": 1434
+     "name": "README.md",
+     "start": 1342,
+     "end": 1436
     },
     "others": [
      {
-      "name": "README_en.md:text",
-      "start": 1338,
-      "end": 1432
+      "name": "README_en.md",
+      "start": 1340,
+      "end": 1434
      }
     ],
     "copies": 2,
@@ -166,58 +174,19 @@
     "kind": "docs"
    },
    {
-    "format": "python",
-    "lines": 31,
-    "tokens": 276,
-    "first": {
-     "name": "trainer/train_distillation.py",
-     "start": 211,
-     "end": 241
-    },
-    "others": [
-     {
-      "name": "trainer/train_dpo.py",
-      "start": 191,
-      "end": 221
-     },
-     {
-      "name": "trainer/train_pretrain.py",
-      "start": 135,
-      "end": 165
-     }
-    ],
-    "copies": 3,
-    "excerpt": {
-     "lines": [
-      "train_ds = SFTDataset(args.data_path, tokenizer, max_length=args.max_seq_len)",
-      "train_sampler = DistributedSampler(train_ds) if dist.is_initialized() else None",
-      "scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype == 'float16'))",
-      "optimizer = optim.AdamW(model.parameters(), lr=args.learning_rate)",
-      "",
-      "# ========== 6. 从ckp恢复状态 ==========",
-      "start_epoch, start_step = 0, 0",
-      "if ckp_data:",
-      "    model.load_state_dict(ckp_data['model'])",
-      "    optimizer.load_state_dict(ckp_data['optimizer'])"
-     ],
-     "total": 31
-    },
-    "kind": "code"
-   },
-   {
     "format": "text",
     "lines": 277,
     "tokens": 544,
     "first": {
-     "name": "README.md:text",
-     "start": 1704,
-     "end": 1980
+     "name": "README.md",
+     "start": 1715,
+     "end": 1991
     },
     "others": [
      {
-      "name": "README_en.md:text",
-      "start": 1704,
-      "end": 1980
+      "name": "README_en.md",
+      "start": 1715,
+      "end": 1991
      }
     ],
     "copies": 2,
@@ -258,18 +227,33 @@
     "lines": 14,
     "tokens": 495,
     "first": {
-     "name": "README.md:text",
-     "start": 1448,
-     "end": 1461
+     "name": "README.md",
+     "start": 1450,
+     "end": 1463
     },
     "others": [
      {
-      "name": "README_en.md:text",
-      "start": 1446,
-      "end": 1459
+      "name": "README_en.md",
+      "start": 1448,
+      "end": 1461
      }
     ],
     "copies": 2,
+    "excerpt": {
+     "lines": [
+      "[D]: 大熊猫是一种以竹子为主要食物的植食动物，它们的肠道结构适合消化纤维素含量高的竹子，但也会吃一些其他植物，如草本植物和小型哺乳动物。大熊猫的肠道结构也适应了高纤维的竹子，这使得它们能够消化大量的纤维素，从而帮助它们在野外生存。大熊猫的肠道中还含有一种叫做“纤维素酶”的酶类物质，这种酶能够帮助大熊猫分解纤维素，…",
+      "",
+      "",
+      "[Q]: 海水为什么是咸的？",
+      "[A]: 海水的咸度是由海水的重量以及海水的盐度共同作用的结果。这种变化主要是由于海水在阳光照射下会吸收水中的盐分，从而形成咸味。1. **阳光的反射**：当阳光照射到海水表面时，水中的盐分会渗透到海水的表面，而不是海水表面。这种反射的过程称为光的反射。2. **盐水的温度**：海水的盐度与普通海水中的水的温度有关。…",
+      "[B]: 海水的咸度是由其所含物质的盐分占据的，这一现象可以从几个方面来解释：1. **盐分占据的作用**：咸度是指在一定温度下，部分水分含量的相对量。在正常条件下，咸度较高的水分含量会增加，使得渗透压较小，这部分的水分会减少，使得渗透压相对较低。这是因为咸度的增加使得盐分在水中的浓度增加，盐分的增加意味着渗透压较小…",
+      "[C]: 因为水是许多生物的生存所必需的，它能够吸收和释放二氧化碳，释放氧气，维持大气中的水蒸气，以及维持水循环。水中的盐类和化学物质会释放出氧气，使地球上的生物呼吸。此外，水还具有许多其他功能，如保持水循环、维持水循环、调节气候和环境等。水是许多生物生存所必需的，它也是许多自然现象的重要基础。",
+      "[D]: 海水是咸的主要原因是因为其中含有大量的溶解盐类，其中最主要的是氯化钠（NaCl）。氯化钠是一种非常常见的盐类，它存在于地球上的大部分地区，包括海洋、湖泊、河流和地下水。当水从海洋中蒸发时，它会带走一部分盐分，使海水变得咸。此外，海中还含有其他溶解盐类的物质，如硫酸盐、硫酸镁、硫酸钙、硫酸镁盐、硫酸镁钾、硫酸…",
+      "",
+      ""
+     ],
+     "total": 14
+    },
     "kind": "docs"
    },
    {
@@ -277,15 +261,15 @@
     "lines": 15,
     "tokens": 494,
     "first": {
-     "name": "README.md:text",
-     "start": 1434,
-     "end": 1448
+     "name": "README.md",
+     "start": 1436,
+     "end": 1450
     },
     "others": [
      {
-      "name": "README_en.md:text",
-      "start": 1432,
-      "end": 1446
+      "name": "README_en.md",
+      "start": 1434,
+      "end": 1448
      }
     ],
     "copies": 2,
@@ -293,18 +277,18 @@
    },
    {
     "format": "text",
-    "lines": 323,
+    "lines": 325,
     "tokens": 474,
     "first": {
-     "name": "README.md:text",
+     "name": "README.md",
      "start": 1018,
-     "end": 1340
+     "end": 1342
     },
     "others": [
      {
-      "name": "README_en.md:text",
+      "name": "README_en.md",
       "start": 1018,
-      "end": 1338
+      "end": 1340
      }
     ],
     "copies": 2,
@@ -312,18 +296,18 @@
    },
    {
     "format": "python",
-    "lines": 51,
-    "tokens": 465,
+    "lines": 49,
+    "tokens": 464,
     "first": {
      "name": "trainer/train_full_sft.py",
      "start": 19,
-     "end": 69
+     "end": 67
     },
     "others": [
      {
       "name": "trainer/train_pretrain.py",
       "start": 19,
-      "end": 69
+      "end": 67
      }
     ],
     "copies": 2,
@@ -334,15 +318,53 @@
     "lines": 15,
     "tokens": 379,
     "first": {
-     "name": "README.md:markdown",
-     "start": 1917,
-     "end": 1931
+     "name": "README.md",
+     "start": 1928,
+     "end": 1942
     },
     "others": [
      {
-      "name": "README_en.md:markdown",
-      "start": 1917,
-      "end": 1931
+      "name": "README_en.md",
+      "start": 1928,
+      "end": 1942
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "text",
+    "lines": 18,
+    "tokens": 356,
+    "first": {
+     "name": "README.md",
+     "start": 1463,
+     "end": 1480
+    },
+    "others": [
+     {
+      "name": "README_en.md",
+      "start": 1461,
+      "end": 1478
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 12,
+    "tokens": 351,
+    "first": {
+     "name": "README.md",
+     "start": 1593,
+     "end": 1604
+    },
+    "others": [
+     {
+      "name": "README_en.md",
+      "start": 1591,
+      "end": 1602
      }
     ],
     "copies": 2,
@@ -350,152 +372,68 @@
    },
    {
     "format": "python",
-    "lines": 21,
-    "tokens": 189,
-    "first": {
-     "name": "trainer/train_dpo.py",
-     "start": 159,
-     "end": 179
-    },
-    "others": [
-     {
-      "name": "trainer/train_full_sft.py",
-      "start": 111,
-      "end": 131
-     },
-     {
-      "name": "trainer/train_pretrain.py",
-      "start": 110,
-      "end": 130
-     }
-    ],
-    "copies": 3,
-    "kind": "code"
-   },
-   {
-    "format": "python",
-    "lines": 11,
-    "tokens": 90,
+    "lines": 7,
+    "tokens": 117,
     "first": {
      "name": "trainer/train_distillation.py",
-     "start": 175,
-     "end": 185
+     "start": 144,
+     "end": 150
     },
     "others": [
      {
-      "name": "trainer/train_dpo.py",
-      "start": 154,
-      "end": 164
-     },
-     {
-      "name": "trainer/train_full_sft.py",
-      "start": 106,
-      "end": 116
+      "name": "trainer/train_grpo.py",
+      "start": 205,
+      "end": 211
      },
      {
       "name": "trainer/train_lora.py",
-      "start": 100,
-      "end": 110
+      "start": 76,
+      "end": 82
      },
      {
-      "name": "trainer/train_pretrain.py",
-      "start": 105,
-      "end": 115
+      "name": "trainer/train_ppo.py",
+      "start": 313,
+      "end": 319
      }
     ],
-    "copies": 5,
+    "copies": 4,
     "kind": "code"
    }
   ],
   "code": {
-   "sources": 30,
-   "lines": 5476,
-   "tokens": 47343,
-   "clones": 68,
-   "duplicatedLines": 840,
-   "duplicatedTokens": 7608,
-   "percentage": 15.34,
-   "percentageTokens": 16.07,
+   "sources": 20,
+   "lines": 4696,
+   "tokens": 44923,
+   "clones": 67,
+   "duplicatedLines": 802,
+   "duplicatedTokens": 7408,
+   "percentage": 17.08,
+   "percentageTokens": 16.49,
    "formats": [
     {
      "format": "python",
      "sources": 20,
-     "lines": 4658,
-     "clones": 68,
-     "duplicatedLines": 840,
-     "percentage": 18.03
-    },
-    {
-     "format": "bash",
-     "sources": 9,
-     "lines": 644,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
-    },
-    {
-     "format": "perl",
-     "sources": 1,
-     "lines": 174,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "lines": 4696,
+     "clones": 67,
+     "duplicatedLines": 802,
+     "percentage": 17.08
     }
    ],
    "topClones": [
     {
      "format": "python",
-     "lines": 31,
-     "tokens": 276,
-     "first": {
-      "name": "trainer/train_distillation.py",
-      "start": 211,
-      "end": 241
-     },
-     "others": [
-      {
-       "name": "trainer/train_dpo.py",
-       "start": 191,
-       "end": 221
-      },
-      {
-       "name": "trainer/train_pretrain.py",
-       "start": 135,
-       "end": 165
-      }
-     ],
-     "copies": 3,
-     "excerpt": {
-      "lines": [
-       "train_ds = SFTDataset(args.data_path, tokenizer, max_length=args.max_seq_len)",
-       "train_sampler = DistributedSampler(train_ds) if dist.is_initialized() else None",
-       "scaler = torch.cuda.amp.GradScaler(enabled=(args.dtype == 'float16'))",
-       "optimizer = optim.AdamW(model.parameters(), lr=args.learning_rate)",
-       "",
-       "# ========== 6. 从ckp恢复状态 ==========",
-       "start_epoch, start_step = 0, 0",
-       "if ckp_data:",
-       "    model.load_state_dict(ckp_data['model'])",
-       "    optimizer.load_state_dict(ckp_data['optimizer'])"
-      ],
-      "total": 31
-     },
-     "kind": "code"
-    },
-    {
-     "format": "python",
-     "lines": 51,
-     "tokens": 465,
+     "lines": 49,
+     "tokens": 464,
      "first": {
       "name": "trainer/train_full_sft.py",
       "start": 19,
-      "end": 69
+      "end": 67
      },
      "others": [
       {
        "name": "trainer/train_pretrain.py",
        "start": 19,
-       "end": 69
+       "end": 67
       }
      ],
      "copies": 2,
@@ -508,85 +446,12 @@
        "",
        "def train_epoch(epoch, loader, iters, start_step=0, wandb=None):",
        "    start_time = time.time()",
-       "    last_step = start_step",
        "    for step, (input_ids, labels) in enumerate(loader, start=start_step + 1):",
-       "        input_ids = input_ids.to(args.device)"
+       "        input_ids = input_ids.to(args.device)",
+       "        labels = labels.to(args.device)"
       ],
-      "total": 51
+      "total": 49
      },
-     "kind": "code"
-    },
-    {
-     "format": "python",
-     "lines": 21,
-     "tokens": 189,
-     "first": {
-      "name": "trainer/train_dpo.py",
-      "start": 159,
-      "end": 179
-     },
-     "others": [
-      {
-       "name": "trainer/train_full_sft.py",
-       "start": 111,
-       "end": 131
-      },
-      {
-       "name": "trainer/train_pretrain.py",
-       "start": 110,
-       "end": 130
-      }
-     ],
-     "copies": 3,
-     "excerpt": {
-      "lines": [
-       "local_rank = init_distributed_mode()",
-       "if dist.is_initialized(): args.device = f\"cuda:{local_rank}\"",
-       "setup_seed(42 + (dist.get_rank() if dist.is_initialized() else 0))",
-       "",
-       "# ========== 2. 配置目录、模型参数、检查ckp ==========",
-       "os.makedirs(args.save_dir, exist_ok=True)",
-       "lm_config = MiniMindConfig(hidden_size=args.hidden_size, num_hidden_layers=args.num_hidden_layers, use_moe=bool(args.use_moe))",
-       "ckp_data = lm_checkpoint(lm_config, weight=args.save_weight, save_dir='../checkpoints') if args.from_resume==1 else None",
-       "",
-       "# ========== 3. 设置混合精度 =========="
-      ],
-      "total": 21
-     },
-     "kind": "code"
-    },
-    {
-     "format": "python",
-     "lines": 11,
-     "tokens": 90,
-     "first": {
-      "name": "trainer/train_distillation.py",
-      "start": 175,
-      "end": 185
-     },
-     "others": [
-      {
-       "name": "trainer/train_dpo.py",
-       "start": 154,
-       "end": 164
-      },
-      {
-       "name": "trainer/train_full_sft.py",
-       "start": 106,
-       "end": 116
-      },
-      {
-       "name": "trainer/train_lora.py",
-       "start": 100,
-       "end": 110
-      },
-      {
-       "name": "trainer/train_pretrain.py",
-       "start": 105,
-       "end": 115
-      }
-     ],
-     "copies": 5,
      "kind": "code"
     },
     {
@@ -595,43 +460,125 @@
      "tokens": 117,
      "first": {
       "name": "trainer/train_distillation.py",
-      "start": 153,
-      "end": 159
+      "start": 144,
+      "end": 150
      },
      "others": [
       {
        "name": "trainer/train_grpo.py",
-       "start": 212,
-       "end": 218
+       "start": 205,
+       "end": 211
       },
       {
        "name": "trainer/train_lora.py",
-       "start": 84,
-       "end": 90
+       "start": 76,
+       "end": 82
       },
       {
        "name": "trainer/train_ppo.py",
-       "start": 316,
-       "end": 322
+       "start": 313,
+       "end": 319
       }
      ],
      "copies": 4,
+     "excerpt": {
+      "lines": [
+       "parser.add_argument(\"--learning_rate\", type=float, default=5e-6, help=\"初始学习率\")",
+       "parser.add_argument(\"--device\", type=str, default=\"cuda:0\" if torch.cuda.is_available() else \"cpu\", help=\"训练设备\")",
+       "parser.add_argument(\"--dtype\", type=str, default=\"bfloat16\", help=\"混合精度类型\")",
+       "parser.add_argument(\"--num_workers\", type=int, default=8, help=\"数据加载线程数\")",
+       "parser.add_argument(\"--accumulation_steps\", type=int, default=1, help=\"梯度累积步数\")",
+       "parser.add_argument(\"--grad_clip\", type=float, default=1.0, help=\"梯度裁剪阈值\")",
+       "parser.add_argument(\"--log_interval\", type=int, default=100, help=\"日志打印间隔\")"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "parser.add_argument(\"--learning_rate\", type=float, default=3e-7, help=\"初始学习率\")",
+       "parser.add_argument(\"--device\", type=str, default=\"cuda:0\" if torch.cuda.is_available() else \"cpu\", help=\"训练设备\")",
+       "parser.add_argument(\"--dtype\", type=str, default=\"bfloat16\", help=\"混合精度类型\")",
+       "parser.add_argument(\"--num_workers\", type=int, default=8, help=\"数据加载线程数\")",
+       "parser.add_argument(\"--accumulation_steps\", type=int, default=1, help=\"梯度累积步数\")",
+       "parser.add_argument(\"--grad_clip\", type=float, default=1.0, help=\"梯度裁剪阈值\")",
+       "parser.add_argument(\"--log_interval\", type=int, default=1, help=\"日志打印间隔\")"
+      ],
+      "total": 7
+     },
      "kind": "code"
     },
     {
      "format": "python",
-     "lines": 32,
-     "tokens": 280,
+     "lines": 19,
+     "tokens": 170,
      "first": {
-      "name": "trainer/train_distillation.py",
-      "start": 210,
-      "end": 241
+      "name": "trainer/train_dpo.py",
+      "start": 152,
+      "end": 170
      },
      "others": [
       {
        "name": "trainer/train_full_sft.py",
-       "start": 135,
-       "end": 166
+       "start": 105,
+       "end": 123
+      },
+      {
+       "name": "trainer/train_ppo.py",
+       "start": 355,
+       "end": 373
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "setup_seed(42 + (dist.get_rank() if dist.is_initialized() else 0))",
+       "",
+       "# ========== 2. 配置目录、模型参数、检查ckp ==========",
+       "os.makedirs(args.save_dir, exist_ok=True)",
+       "lm_config = MiniMindConfig(hidden_size=args.hidden_size, num_hidden_layers=args.num_hidden_layers, use_moe=bool(args.use_moe))",
+       "ckp_data = lm_checkpoint(lm_config, weight=args.save_weight, save_dir='../checkpoints') if args.from_resume==1 else None",
+       "",
+       "# ========== 3. 设置混合精度 ==========",
+       "device_type = \"cuda\" if \"cuda\" in args.device else \"cpu\"",
+       "dtype = torch.bfloat16 if args.dtype == \"bfloat16\" else torch.float16"
+      ],
+      "total": 19
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 31,
+     "tokens": 276,
+     "first": {
+      "name": "trainer/train_distillation.py",
+      "start": 202,
+      "end": 232
+     },
+     "others": [
+      {
+       "name": "trainer/train_dpo.py",
+       "start": 182,
+       "end": 212
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 25,
+     "tokens": 222,
+     "first": {
+      "name": "trainer/train_full_sft.py",
+      "start": 99,
+      "end": 123
+     },
+     "others": [
+      {
+       "name": "trainer/train_pretrain.py",
+       "start": 98,
+       "end": 122
       }
      ],
      "copies": 2,
@@ -643,19 +590,19 @@
      "tokens": 110,
      "first": {
       "name": "trainer/train_distillation.py",
-      "start": 188,
-      "end": 201
+      "start": 179,
+      "end": 192
      },
      "others": [
       {
        "name": "trainer/train_dpo.py",
-       "start": 166,
-       "end": 179
+       "start": 157,
+       "end": 170
       },
       {
        "name": "trainer/train_lora.py",
-       "start": 112,
-       "end": 125
+       "start": 104,
+       "end": 117
       }
      ],
      "copies": 3,
@@ -667,19 +614,19 @@
      "tokens": 104,
      "first": {
       "name": "trainer/train_distillation.py",
-      "start": 230,
-      "end": 240
+      "start": 221,
+      "end": 231
      },
      "others": [
       {
        "name": "trainer/train_grpo.py",
-       "start": 316,
-       "end": 326
+       "start": 309,
+       "end": 319
       },
       {
        "name": "trainer/train_ppo.py",
-       "start": 433,
-       "end": 443
+       "start": 430,
+       "end": 440
       }
      ],
      "copies": 3,
@@ -687,42 +634,56 @@
     },
     {
      "format": "python",
-     "lines": 6,
-     "tokens": 91,
+     "lines": 26,
+     "tokens": 187,
      "first": {
-      "name": "trainer/train_agent.py",
-      "start": 478,
-      "end": 483
+      "name": "trainer/train_distillation.py",
+      "start": 201,
+      "end": 226
      },
      "others": [
       {
-       "name": "trainer/train_distillation.py",
-       "start": 233,
-       "end": 238
-      },
-      {
-       "name": "trainer/train_lora.py",
-       "start": 171,
-       "end": 176
+       "name": "trainer/train_full_sft.py",
+       "start": 127,
+       "end": 152
       }
      ],
-     "copies": 3,
+     "copies": 2,
      "kind": "code"
     },
     {
      "format": "python",
-     "lines": 11,
-     "tokens": 178,
+     "lines": 25,
+     "tokens": 183,
      "first": {
-      "name": "scripts/convert_model.py",
-      "start": 26,
-      "end": 36
+      "name": "trainer/train_distillation.py",
+      "start": 202,
+      "end": 226
      },
      "others": [
       {
-       "name": "scripts/convert_model.py",
-       "start": 85,
-       "end": 96
+       "name": "trainer/train_pretrain.py",
+       "start": 127,
+       "end": 151
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 22,
+     "tokens": 183,
+     "first": {
+      "name": "trainer/train_full_sft.py",
+      "start": 144,
+      "end": 165
+     },
+     "others": [
+      {
+       "name": "trainer/train_pretrain.py",
+       "start": 143,
+       "end": 164
       }
      ],
      "copies": 2,
@@ -735,7 +696,206 @@
     "sample": []
    }
   },
-  "measuredAt": "2026-10-07T05:43:16.622Z",
-  "jscpdVersion": "5.4.0"
+  "health": {
+   "score": 52.4,
+   "grade": "D",
+   "size": {
+    "lines": 4696,
+    "files": 20,
+    "class": "S"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 17.1,
+     "adjusted": 13,
+     "lines": 802,
+     "halfLife": 8.5,
+     "formats": [
+      "python"
+     ],
+     "excluded": [
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 34.6
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 1.4,
+     "adjusted": 1.9,
+     "lines": 68,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 83.6
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 63.1,
+     "adjusted": 50.5,
+     "lines": 2964,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 49.6
+    }
+   ]
+  },
+  "complexity": {
+   "total": 1026,
+   "mean": 51.3,
+   "files": [
+    {
+     "path": "trainer/train_agent.py",
+     "complexity": 136,
+     "lines": 488,
+     "bytes": 32138
+    },
+    {
+     "path": "scripts/web_demo.py",
+     "complexity": 80,
+     "lines": 424,
+     "bytes": 22256
+    },
+    {
+     "path": "model/model_minimind.py",
+     "complexity": 78,
+     "lines": 293,
+     "bytes": 18986
+    },
+    {
+     "path": "scripts/eval_toolcall.py",
+     "complexity": 71,
+     "lines": 240,
+     "bytes": 15240
+    },
+    {
+     "path": "trainer/train_ppo.py",
+     "complexity": 69,
+     "lines": 448,
+     "bytes": 26664
+    },
+    {
+     "path": "trainer/trainer_utils.py",
+     "complexity": 69,
+     "lines": 208,
+     "bytes": 9433
+    },
+    {
+     "path": "trainer/train_grpo.py",
+     "complexity": 59,
+     "lines": 327,
+     "bytes": 19394
+    },
+    {
+     "path": "dataset/lm_dataset.py",
+     "complexity": 54,
+     "lines": 260,
+     "bytes": 11438
+    },
+    {
+     "path": "scripts/serve_openai_api.py",
+     "complexity": 54,
+     "lines": 276,
+     "bytes": 11957
+    },
+    {
+     "path": "trainer/rollout_engine.py",
+     "complexity": 49,
+     "lines": 224,
+     "bytes": 10419
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 1.45,
+   "findings": 23,
+   "files": 22,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 1
+    },
+    {
+     "category": "unused-import",
+     "count": 22
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "scripts/chat_api.py",
+     "name": "",
+     "line": 1,
+     "lines": 46
+    },
+    {
+     "category": "unused-import",
+     "path": "dataset/lm_dataset.py",
+     "name": "Sequence",
+     "line": 6,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "model/model_lora.py",
+     "name": "optim",
+     "line": 2,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "trainer/rollout_engine.py",
+     "name": "Tuple",
+     "line": 17,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "trainer/train_agent.py",
+     "name": "datasets",
+     "line": 7,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "trainer/train_agent.py",
+     "name": "gc",
+     "line": 9,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "trainer/train_agent.py",
+     "name": "AutoTokenizer",
+     "line": 23,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "trainer/train_agent.py",
+     "name": "MiniMindForCausalLM",
+     "line": 24,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "trainer/train_distillation.py",
+     "name": "datasets",
+     "line": 7,
+     "lines": 1
+    },
+    {
+     "category": "unused-import",
+     "path": "trainer/train_dpo.py",
+     "name": "datasets",
+     "line": 7,
+     "lines": 1
+    }
+   ]
+  }
  }
 }
