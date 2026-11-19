@@ -49,38 +49,54 @@
    "codeSources": 9,
    "healthScore": 66.5,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-11-19",
+   "rank": 6,
+   "stars": 96175,
+   "starsToday": 237,
+   "headSha": "ad42d9086090ec3e0c0fed12c74dd7f7f06b7758",
+   "sources": 469,
+   "lines": 36643,
+   "clones": 147,
+   "duplicatedLines": 3623,
+   "percentage": 9.89,
+   "codePercentage": null,
+   "codeSources": 9,
+   "healthScore": 66.4,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-11-13",
-  "generatedAt": "2026-11-13T05:21:16.043Z",
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T05:21:49.273Z",
   "name": "nvm-sh/nvm",
   "url": "https://github.com/nvm-sh/nvm",
   "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
   "language": "Shell",
-  "stars": 96047,
-  "starsToday": 63,
+  "stars": 96175,
+  "starsToday": 237,
   "defaultBranch": "master",
-  "headSha": "09e620c401382f4b3d3147333dd64c1e09188fdb",
-  "durationMs": 918,
+  "headSha": "ad42d9086090ec3e0c0fed12c74dd7f7f06b7758",
+  "durationMs": 980,
   "total": {
-   "sources": 457,
-   "lines": 35176,
-   "tokens": 172748,
-   "clones": 143,
-   "duplicatedLines": 3553,
-   "duplicatedTokens": 21375,
-   "percentage": 10.1,
-   "percentageTokens": 12.37
+   "sources": 469,
+   "lines": 36643,
+   "tokens": 179970,
+   "clones": 147,
+   "duplicatedLines": 3623,
+   "duplicatedTokens": 21641,
+   "percentage": 9.89,
+   "percentageTokens": 12.02
   },
   "formats": [
    {
     "format": "bash",
-    "sources": 408,
-    "lines": 26634,
-    "clones": 87,
-    "duplicatedLines": 1354,
-    "percentage": 5.08
+    "sources": 420,
+    "lines": 28075,
+    "clones": 91,
+    "duplicatedLines": 1424,
+    "percentage": 5.07
    },
    {
     "format": "txt",
@@ -101,7 +117,7 @@
    {
     "format": "markdown",
     "sources": 12,
-    "lines": 2430,
+    "lines": 2450,
     "clones": 1,
     "duplicatedLines": 10,
     "percentage": 0.41
@@ -125,7 +141,7 @@
    {
     "format": "text",
     "sources": 3,
-    "lines": 64,
+    "lines": 70,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -411,21 +427,21 @@
   ],
   "code": {
    "sources": 9,
-   "lines": 8161,
-   "tokens": 32733,
+   "lines": 8499,
+   "tokens": 34236,
    "clones": 9,
-   "duplicatedLines": 133,
-   "duplicatedTokens": 603,
-   "percentage": 1.63,
-   "percentageTokens": 1.84,
+   "duplicatedLines": 145,
+   "duplicatedTokens": 640,
+   "percentage": 1.71,
+   "percentageTokens": 1.87,
    "formats": [
     {
      "format": "bash",
      "sources": 9,
-     "lines": 8161,
+     "lines": 8499,
      "clones": 9,
-     "duplicatedLines": 133,
-     "percentage": 1.63
+     "duplicatedLines": 145,
+     "percentage": 1.71
     }
    ],
    "topClones": [
@@ -441,8 +457,8 @@
      "others": [
       {
        "name": "nvm.sh",
-       "start": 191,
-       "end": 215
+       "start": 197,
+       "end": 221
       }
      ],
      "copies": 2,
@@ -465,18 +481,67 @@
     },
     {
      "format": "bash",
-     "lines": 20,
-     "tokens": 75,
+     "lines": 29,
+     "tokens": 98,
      "first": {
       "name": "nvm.sh",
-      "start": 6014,
-      "end": 6033
+      "start": 6537,
+      "end": 6565
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 6130,
-       "end": 6149
+       "start": 6974,
+       "end": 7001
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "NVM_NO_COLORS=''",
+       "local NVM_MIN_VERSION",
+       "NVM_MIN_VERSION=\"${NVM_MIN-}\"",
+       "local NVM_MIN_SOURCE",
+       "NVM_MIN_SOURCE='$NVM_MIN'",
+       "",
+       "while [ $# -gt 0 ]; do",
+       "  case \"${1-}\" in",
+       "    --) ;;",
+       "    --lts)"
+      ],
+      "total": 29
+     },
+     "excerptSecond": {
+      "lines": [
+       "PATTERN=''",
+       "local NVM_MIN_VERSION",
+       "NVM_MIN_VERSION=\"${NVM_MIN-}\"",
+       "local NVM_MIN_SOURCE",
+       "NVM_MIN_SOURCE='$NVM_MIN'",
+       "while [ $# -gt 0 ]; do",
+       "  case \"${1-}\" in",
+       "    --) ;;",
+       "    --lts)",
+       "      NVM_LTS='*'"
+      ],
+      "total": 28
+     },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 20,
+     "tokens": 75,
+     "first": {
+      "name": "nvm.sh",
+      "start": 6290,
+      "end": 6309
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 6406,
+       "end": 6425
       }
      ],
      "copies": 2,
@@ -503,48 +568,14 @@
      "tokens": 74,
      "first": {
       "name": "nvm.sh",
-      "start": 5453,
-      "end": 5463
+      "start": 5729,
+      "end": 5739
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 5581,
-       "end": 5591
-      }
-     ],
-     "copies": 2,
-     "excerpt": {
-      "lines": [
-       "if [ \"${NVM_UPGRADE_NPM}\" = 1 ]; then",
-       "  nvm install-latest-npm",
-       "  EXIT_CODE=$?",
-       "fi",
-       "if [ $EXIT_CODE -eq 0 ] && [ -z \"${SKIP_DEFAULT_PACKAGES-}\" ]; then",
-       "  nvm_install_default_packages",
-       "fi",
-       "if [ $EXIT_CODE -eq 0 ] && [ -n \"${REINSTALL_PACKAGES_FROM-}\" ] && [ \"_${REINSTALL_PACKAGES_FROM}\" != \"_N/A\" ]; then",
-       "  nvm reinstall-packages \"--only=${NVM_ONLY_INSTALLED}\" \"${REINSTALL_PACKAGES_FROM}\"",
-       "  EXIT_CODE=$?"
-      ],
-      "total": 11
-     },
-     "kind": "code"
-    },
-    {
-     "format": "bash",
-     "lines": 17,
-     "tokens": 64,
-     "first": {
-      "name": "nvm.sh",
-      "start": 6261,
-      "end": 6277
-     },
-     "others": [
-      {
-       "name": "nvm.sh",
-       "start": 6665,
-       "end": 6680
+       "start": 5857,
+       "end": 5867
       }
      ],
      "copies": 2,
@@ -562,8 +593,8 @@
      "others": [
       {
        "name": "nvm.sh",
-       "start": 66,
-       "end": 79
+       "start": 72,
+       "end": 85
       }
      ],
      "copies": 2,
@@ -575,14 +606,33 @@
      "tokens": 56,
      "first": {
       "name": "nvm.sh",
-      "start": 6005,
-      "end": 6014
+      "start": 6281,
+      "end": 6290
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 6117,
-       "end": 6125
+       "start": 6393,
+       "end": 6401
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 9,
+     "tokens": 55,
+     "first": {
+      "name": "nvm.sh",
+      "start": 6591,
+      "end": 6599
+     },
+     "others": [
+      {
+       "name": "nvm.sh",
+       "start": 7021,
+       "end": 7027
       }
      ],
      "copies": 2,
@@ -594,33 +644,14 @@
      "tokens": 52,
      "first": {
       "name": "nvm.sh",
-      "start": 1105,
-      "end": 1110
+      "start": 1223,
+      "end": 1228
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 1110,
-       "end": 1116
-      }
-     ],
-     "copies": 2,
-     "kind": "code"
-    },
-    {
-     "format": "bash",
-     "lines": 9,
-     "tokens": 52,
-     "first": {
-      "name": "nvm.sh",
-      "start": 5831,
-      "end": 5839
-     },
-     "others": [
-      {
-       "name": "nvm.sh",
-       "start": 6265,
-       "end": 6277
+       "start": 1228,
+       "end": 1234
       }
      ],
      "copies": 2,
@@ -632,14 +663,14 @@
      "tokens": 50,
      "first": {
       "name": "nvm.sh",
-      "start": 3702,
-      "end": 3722
+      "start": 3870,
+      "end": 3890
      },
      "others": [
       {
        "name": "nvm.sh",
-       "start": 4090,
-       "end": 4110
+       "start": 4304,
+       "end": 4324
       }
      ],
      "copies": 2,
@@ -653,11 +684,11 @@
    }
   },
   "health": {
-   "score": 66.5,
+   "score": 66.4,
    "grade": "C",
    "size": {
-    "lines": 26617,
-    "files": 409,
+    "lines": 28052,
+    "files": 421,
     "class": "M"
    },
    "dimensions": [
@@ -666,7 +697,7 @@
      "source": "jscpd",
      "value": 5.1,
      "adjusted": 5,
-     "lines": 1354,
+     "lines": 1424,
      "halfLife": 8.5,
      "formats": [
       "bash",
@@ -678,17 +709,17 @@
       "data"
      ],
      "weight": 1,
-     "score": 66.6
+     "score": 66.7
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 30.2,
-     "adjusted": 29.6,
-     "lines": 8047,
+     "value": 30.5,
+     "adjusted": 29.9,
+     "lines": 8568,
      "halfLife": 50,
      "weight": 1,
-     "score": 66.4
+     "score": 66.1
     }
    ],
    "skipped": [
@@ -699,26 +730,32 @@
    ]
   },
   "complexity": {
-   "total": 5072,
-   "mean": 12.4,
+   "total": 5381,
+   "mean": 12.8,
    "files": [
     {
      "path": "nvm.sh",
-     "complexity": 1338,
-     "lines": 6980,
-     "bytes": 243120
+     "complexity": 1407,
+     "lines": 7317,
+     "bytes": 256569
     },
     {
      "path": "install.sh",
-     "complexity": 116,
-     "lines": 587,
-     "bytes": 20055
+     "complexity": 117,
+     "lines": 588,
+     "bytes": 20187
     },
     {
      "path": "test/fast/Unit tests/nvm_die_on_prefix",
      "complexity": 91,
      "lines": 309,
      "bytes": 16798
+    },
+    {
+     "path": "test/fast/Unit tests/nvm ls-remote --min",
+     "complexity": 59,
+     "lines": 183,
+     "bytes": 8337
     },
     {
      "path": "test/fast/Unit tests/nvm_remote_version",
@@ -739,28 +776,22 @@
      "bytes": 7060
     },
     {
+     "path": "test/fast/Unit tests/nvm_is_valid_version",
+     "complexity": 39,
+     "lines": 70,
+     "bytes": 4089
+    },
+    {
      "path": "test/installation_node/install while reinstalling packages",
      "complexity": 36,
      "lines": 118,
      "bytes": 4858
     },
     {
-     "path": "test/fast/Unit tests/nvm_is_valid_version",
-     "complexity": 35,
-     "lines": 62,
-     "bytes": 3708
-    },
-    {
      "path": "release-notes.sh",
      "complexity": 34,
      "lines": 159,
      "bytes": 6454
-    },
-    {
-     "path": "test/fast/Unit tests/nvm_get_download_slug",
-     "complexity": 34,
-     "lines": 135,
-     "bytes": 5568
     }
    ]
   },

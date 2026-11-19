@@ -1,0 +1,744 @@
+{
+ "name": "jquery/jquery",
+ "url": "https://github.com/jquery/jquery",
+ "appearances": [
+  {
+   "date": "2026-11-19",
+   "rank": 10,
+   "stars": 60036,
+   "starsToday": 266,
+   "headSha": "effd615f0009e927dfd1f41d04fb6073478076d4",
+   "sources": 219,
+   "lines": 58214,
+   "clones": 325,
+   "duplicatedLines": 9591,
+   "percentage": 16.48,
+   "codePercentage": 0.98,
+   "codeSources": 96,
+   "healthScore": 42.4,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T05:21:49.273Z",
+  "name": "jquery/jquery",
+  "url": "https://github.com/jquery/jquery",
+  "description": "jQuery JavaScript Library",
+  "language": "JavaScript",
+  "stars": 60036,
+  "starsToday": 266,
+  "defaultBranch": "main",
+  "headSha": "effd615f0009e927dfd1f41d04fb6073478076d4",
+  "durationMs": 1094,
+  "total": {
+   "sources": 219,
+   "lines": 58214,
+   "tokens": 333749,
+   "clones": 325,
+   "duplicatedLines": 9591,
+   "duplicatedTokens": 44187,
+   "percentage": 16.48,
+   "percentageTokens": 13.24
+  },
+  "formats": [
+   {
+    "format": "javascript",
+    "sources": 136,
+    "lines": 53165,
+    "clones": 289,
+    "duplicatedLines": 9232,
+    "percentage": 17.36
+   },
+   {
+    "format": "markup",
+    "sources": 58,
+    "lines": 2405,
+    "clones": 24,
+    "duplicatedLines": 220,
+    "percentage": 9.15
+   },
+   {
+    "format": "yaml",
+    "sources": 11,
+    "lines": 797,
+    "clones": 12,
+    "duplicatedLines": 139,
+    "percentage": 17.44
+   },
+   {
+    "format": "markdown",
+    "sources": 6,
+    "lines": 731,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "txt",
+    "sources": 2,
+    "lines": 402,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "php",
+    "sources": 1,
+    "lines": 335,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "json",
+    "sources": 1,
+    "lines": 177,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "css",
+    "sources": 2,
+    "lines": 166,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 2,
+    "lines": 36,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "javascript",
+    "lines": 403,
+    "tokens": 1325,
+    "first": {
+     "name": "src/ajax.js",
+     "start": 142,
+     "end": 544
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 8968,
+      "end": 9364
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "while ( dataTypes.length && dataTypes[ 0 ] === \"*\" ) {",
+      "    dataTypes.shift();",
+      "    if ( ct === undefined ) {",
+      "        ct = s.mimeType || jqXHR.getResponseHeader( \"Content-Type\" );",
+      "    }",
+      "}",
+      "",
+      "// Check if we're dealing with a known content-type",
+      "if ( ct ) {",
+      "    for ( type in contents ) {"
+     ],
+     "total": 403
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 188,
+    "tokens": 1046,
+    "first": {
+     "name": "src/effects.js",
+     "start": 479,
+     "end": 666
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 7619,
+      "end": 7806
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "    if ( typeof opt.old === \"function\" ) {",
+      "        opt.old.call( this );",
+      "    }",
+      "",
+      "    if ( opt.queue ) {",
+      "        jQuery.dequeue( this, opt.queue );",
+      "    }",
+      "};",
+      "",
+      "return opt;"
+     ],
+     "total": 188
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 181,
+    "tokens": 887,
+    "first": {
+     "name": "src/traversing.js",
+     "start": 11,
+     "end": 191
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 2963,
+      "end": 3144
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "import \"./selector.js\";",
+      "",
+      "var rparentsprev = /^(?:parents|prev(?:Until|All))/,",
+      "",
+      "    // Methods guaranteed to produce a unique set when starting from a unique set",
+      "    guaranteedUnique = {",
+      "        children: true,",
+      "        contents: true,",
+      "        next: true,",
+      "        prev: true"
+     ],
+     "total": 181
+    },
+    "excerptSecond": {
+     "lines": [
+      "rootjQuery = jQuery( document );",
+      "",
+      "",
+      "var rparentsprev = /^(?:parents|prev(?:Until|All))/,",
+      "",
+      "    // Methods guaranteed to produce a unique set when starting from a unique set",
+      "    guaranteedUnique = {",
+      "        children: true,",
+      "        contents: true,",
+      "        next: true,"
+     ],
+     "total": 182
+    },
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 180,
+    "tokens": 857,
+    "first": {
+     "name": "src/effects.js",
+     "start": 30,
+     "end": 209
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 7163,
+      "end": 7343
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 143,
+    "tokens": 655,
+    "first": {
+     "name": "src/ajax.js",
+     "start": 574,
+     "end": 716
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 9394,
+      "end": 9537
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 107,
+    "tokens": 533,
+    "first": {
+     "name": "src/event.js",
+     "start": 91,
+     "end": 197
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 4909,
+      "end": 5015
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 127,
+    "tokens": 513,
+    "first": {
+     "name": "src/data.js",
+     "start": 5,
+     "end": 131
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 4122,
+      "end": 4250
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 130,
+    "tokens": 509,
+    "first": {
+     "name": "src/core.js",
+     "start": 132,
+     "end": 261
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 272,
+      "end": 401
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 98,
+    "tokens": 490,
+    "first": {
+     "name": "src/manipulation.js",
+     "start": 231,
+     "end": 328
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 6126,
+      "end": 6226
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   },
+   {
+    "format": "javascript",
+    "lines": 83,
+    "tokens": 471,
+    "first": {
+     "name": "src/traversing/findFilter.js",
+     "start": 9,
+     "end": 91
+    },
+    "others": [
+     {
+      "name": "test/data/jquery-3.7.1.js",
+      "start": 2763,
+      "end": 2845
+     }
+    ],
+    "copies": 2,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 96,
+   "lines": 12743,
+   "tokens": 54029,
+   "clones": 5,
+   "duplicatedLines": 125,
+   "duplicatedTokens": 453,
+   "percentage": 0.98,
+   "percentageTokens": 0.84,
+   "formats": [
+    {
+     "format": "javascript",
+     "sources": 94,
+     "lines": 12639,
+     "clones": 5,
+     "duplicatedLines": 125,
+     "percentage": 0.99
+    },
+    {
+     "format": "bash",
+     "sources": 2,
+     "lines": 104,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "javascript",
+     "lines": 47,
+     "tokens": 159,
+     "first": {
+      "name": "src/selector-native.js",
+      "start": 74,
+      "end": 120
+     },
+     "others": [
+      {
+       "name": "src/selector.js",
+       "start": 145,
+       "end": 191
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "} else {",
+       "",
+       "    newSelector = selector;",
+       "    newContext = context;",
+       "",
+       "    // qSA considers elements outside a scoping root when evaluating child or",
+       "    // descendant combinators, which is not what we want.",
+       "    // In such cases, we work around the behavior by prefixing every selector in the",
+       "    // list with an ID selector referencing the scope context.",
+       "    // The technique has to be used as well when a leading combinator is used"
+      ],
+      "total": 47
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 13,
+     "tokens": 81,
+     "first": {
+      "name": "src/event.js",
+      "start": 132,
+      "end": 144
+     },
+     "others": [
+      {
+       "name": "src/event.js",
+       "start": 211,
+       "end": 223
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    };",
+       "}",
+       "",
+       "// Handle multiple events separated by a space",
+       "types = ( types || \"\" ).match( rnothtmlwhite ) || [ \"\" ];",
+       "t = types.length;",
+       "while ( t-- ) {",
+       "    tmp = rtypenamespace.exec( types[ t ] ) || [];",
+       "    type = origType = tmp[ 1 ];",
+       "    namespaces = ( tmp[ 2 ] || \"\" ).split( \".\" ).sort();"
+      ],
+      "total": 13
+     },
+     "excerptSecond": {
+      "lines": [
+       "    return;",
+       "}",
+       "",
+       "// Once for each type.namespace in types; type may be omitted",
+       "types = ( types || \"\" ).match( rnothtmlwhite ) || [ \"\" ];",
+       "t = types.length;",
+       "while ( t-- ) {",
+       "    tmp = rtypenamespace.exec( types[ t ] ) || [];",
+       "    type = origType = tmp[ 1 ];",
+       "    namespaces = ( tmp[ 2 ] || \"\" ).split( \".\" ).sort();"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 12,
+     "tokens": 73,
+     "first": {
+      "name": "src/attributes/classes.js",
+      "start": 28,
+      "end": 39
+     },
+     "others": [
+      {
+       "name": "src/attributes/classes.js",
+       "start": 67,
+       "end": 80
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    } );",
+       "}",
+       "",
+       "classNames = classesToArray( value );",
+       "",
+       "if ( classNames.length ) {",
+       "    return this.each( function() {",
+       "        curValue = getClass( this );",
+       "        cur = this.nodeType === 1 && ( \" \" + stripAndCollapse( curValue ) + \" \" );",
+       ""
+      ],
+      "total": 12
+     },
+     "excerptSecond": {
+      "lines": [
+       "    return this.attr( \"class\", \"\" );",
+       "}",
+       "",
+       "classNames = classesToArray( value );",
+       "",
+       "if ( classNames.length ) {",
+       "    return this.each( function() {",
+       "        curValue = getClass( this );",
+       "",
+       "        // This expression is here for better compressibility (see addClass)"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 26,
+     "tokens": 71,
+     "first": {
+      "name": "src/core/ready-no-deferred.js",
+      "start": 62,
+      "end": 87
+     },
+     "others": [
+      {
+       "name": "src/core/ready.js",
+       "start": 55,
+       "end": 78
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "javascript",
+     "lines": 27,
+     "tokens": 69,
+     "first": {
+      "name": "src/core/ready-no-deferred.js",
+      "start": 18,
+      "end": 44
+     },
+     "others": [
+      {
+       "name": "src/core/ready.js",
+       "start": 20,
+       "end": 48
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 0,
+    "minified": 0,
+    "sample": []
+   }
+  },
+  "health": {
+   "score": 42.4,
+   "grade": "D",
+   "size": {
+    "lines": 53471,
+    "files": 136,
+    "class": "M"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 17.3,
+     "adjusted": 16.8,
+     "lines": 9232,
+     "halfLife": 8.5,
+     "formats": [
+      "javascript",
+      "php"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 25.5
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.6,
+     "adjusted": 0.7,
+     "lines": 313,
+     "halfLife": 7.5,
+     "weight": 1,
+     "score": 94
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 85,
+     "adjusted": 82.7,
+     "lines": 45475,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 31.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 8581,
+   "mean": 63.1,
+   "files": [
+    {
+     "path": "test/data/jquery-3.7.1.js",
+     "complexity": 2521,
+     "lines": 10716,
+     "bytes": 285314
+    },
+    {
+     "path": "test/unit/ajax.js",
+     "complexity": 677,
+     "lines": 4255,
+     "bytes": 122603
+    },
+    {
+     "path": "test/unit/event.js",
+     "complexity": 474,
+     "lines": 3635,
+     "bytes": 106360
+    },
+    {
+     "path": "src/selector.js",
+     "complexity": 399,
+     "lines": 1396,
+     "bytes": 40412
+    },
+    {
+     "path": "test/unit/effects.js",
+     "complexity": 389,
+     "lines": 2712,
+     "bytes": 83970
+    },
+    {
+     "path": "test/unit/manipulation.js",
+     "complexity": 324,
+     "lines": 3255,
+     "bytes": 116568
+    },
+    {
+     "path": "test/unit/deferred.js",
+     "complexity": 207,
+     "lines": 1145,
+     "bytes": 32874
+    },
+    {
+     "path": "test/unit/selector.js",
+     "complexity": 201,
+     "lines": 2743,
+     "bytes": 119996
+    },
+    {
+     "path": "src/event.js",
+     "complexity": 198,
+     "lines": 884,
+     "bytes": 25834
+    },
+    {
+     "path": "src/ajax.js",
+     "complexity": 190,
+     "lines": 891,
+     "bytes": 23698
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.58,
+   "findings": 5,
+   "files": 222,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 3
+    },
+    {
+     "category": "unused-symbol",
+     "count": 2
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "src/selector-native.js",
+     "name": "",
+     "line": 1,
+     "lines": 151
+    },
+    {
+     "category": "unused-file",
+     "path": "src/core/ready-no-deferred.js",
+     "name": "",
+     "line": 1,
+     "lines": 87
+    },
+    {
+     "category": "unused-file",
+     "path": ".release-it.cjs",
+     "name": "",
+     "line": 1,
+     "lines": 49
+    },
+    {
+     "category": "unused-symbol",
+     "path": "src/wrapper-factory.js",
+     "name": "jQueryFactoryWrapper",
+     "line": 17,
+     "lines": 14
+    },
+    {
+     "category": "unused-symbol",
+     "path": "src/wrapper-factory-esm.js",
+     "name": "jQueryFactoryWrapper",
+     "line": 18,
+     "lines": 12
+    }
+   ]
+  }
+ }
+}

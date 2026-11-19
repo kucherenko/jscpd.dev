@@ -1,0 +1,1278 @@
+{
+ "name": "astral-sh/uv",
+ "url": "https://github.com/astral-sh/uv",
+ "appearances": [
+  {
+   "date": "2026-11-19",
+   "rank": 7,
+   "stars": 92284,
+   "starsToday": 258,
+   "headSha": "469fe6513a86ebb59f64390669a64fd165b65b8a",
+   "sources": 1492,
+   "lines": 622311,
+   "clones": 10436,
+   "duplicatedLines": 138767,
+   "percentage": 22.3,
+   "codePercentage": 7.13,
+   "codeSources": 715,
+   "healthScore": 21,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T05:21:49.273Z",
+  "name": "astral-sh/uv",
+  "url": "https://github.com/astral-sh/uv",
+  "description": "An extremely fast Python package and project manager, written in Rust.",
+  "language": "Rust",
+  "stars": 92284,
+  "starsToday": 258,
+  "defaultBranch": "main",
+  "headSha": "469fe6513a86ebb59f64390669a64fd165b65b8a",
+  "durationMs": 4188,
+  "total": {
+   "sources": 1492,
+   "lines": 622311,
+   "tokens": 3677459,
+   "clones": 10436,
+   "duplicatedLines": 138767,
+   "duplicatedTokens": 805263,
+   "percentage": 22.3,
+   "percentageTokens": 21.9
+  },
+  "formats": [
+   {
+    "format": "rust",
+    "sources": 738,
+    "lines": 535175,
+    "clones": 9822,
+    "duplicatedLines": 130848,
+    "percentage": 24.45
+   },
+   {
+    "format": "toml",
+    "sources": 325,
+    "lines": 18534,
+    "clones": 284,
+    "duplicatedLines": 3777,
+    "percentage": 20.38
+   },
+   {
+    "format": "yaml",
+    "sources": 61,
+    "lines": 14012,
+    "clones": 222,
+    "duplicatedLines": 2574,
+    "percentage": 18.37
+   },
+   {
+    "format": "python",
+    "sources": 53,
+    "lines": 10871,
+    "clones": 46,
+    "duplicatedLines": 623,
+    "percentage": 5.73
+   },
+   {
+    "format": "markdown",
+    "sources": 194,
+    "lines": 33720,
+    "clones": 32,
+    "duplicatedLines": 424,
+    "percentage": 1.26
+   },
+   {
+    "format": "json",
+    "sources": 11,
+    "lines": 4017,
+    "clones": 8,
+    "duplicatedLines": 192,
+    "percentage": 4.78
+   },
+   {
+    "format": "text",
+    "sources": 38,
+    "lines": 1236,
+    "clones": 7,
+    "duplicatedLines": 90,
+    "percentage": 7.28
+   },
+   {
+    "format": "markup",
+    "sources": 4,
+    "lines": 365,
+    "clones": 6,
+    "duplicatedLines": 128,
+    "percentage": 35.07
+   },
+   {
+    "format": "docker",
+    "sources": 7,
+    "lines": 375,
+    "clones": 3,
+    "duplicatedLines": 34,
+    "percentage": 9.07
+   },
+   {
+    "format": "css",
+    "sources": 1,
+    "lines": 257,
+    "clones": 2,
+    "duplicatedLines": 15,
+    "percentage": 5.84
+   }
+  ],
+  "topClones": [
+   {
+    "format": "rust",
+    "lines": 10,
+    "tokens": 55,
+    "first": {
+     "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+     "start": 542,
+     "end": 551
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 2848,
+      "end": 2857
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 3708,
+      "end": 3717
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 3752,
+      "end": 3761
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 3797,
+      "end": 3806
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 3850,
+      "end": 3859
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 3987,
+      "end": 3996
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 4123,
+      "end": 4132
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 4693,
+      "end": 4702
+     }
+    ],
+    "copies": 167,
+    "excerpt": {
+     "lines": [
+      "fn extra_multiple_not_conflicting1() -> Result<()> {",
+      "    let context = uv_test::test_context!(\"3.12\");",
+      "",
+      "    let pyproject_toml = context.temp_dir.child(\"pyproject.toml\");",
+      "    pyproject_toml.write_str(",
+      "        r#\"",
+      "        [project]",
+      "        name = \"project\"",
+      "        version = \"0.1.0\"",
+      "        requires-python = \">=3.12\""
+     ],
+     "total": 10
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 11,
+    "tokens": 52,
+    "first": {
+     "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+     "start": 2848,
+     "end": 2858
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 4693,
+      "end": 4703
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 4856,
+      "end": 4866
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 5018,
+      "end": 5028
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_exclude_newer_relative.rs",
+      "start": 14,
+      "end": 23
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_exclude_newer_relative.rs",
+      "start": 207,
+      "end": 216
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_exclude_newer_relative.rs",
+      "start": 310,
+      "end": 319
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_exclude_newer_relative.rs",
+      "start": 488,
+      "end": 497
+     },
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_exclude_newer_relative.rs",
+      "start": 556,
+      "end": 565
+     }
+    ],
+    "copies": 142,
+    "excerpt": {
+     "lines": [
+      "fn group_activates_self_extra() -> Result<()> {",
+      "    let context = uv_test::test_context!(\"3.12\");",
+      "",
+      "    let pyproject_toml = context.temp_dir.child(\"pyproject.toml\");",
+      "    pyproject_toml.write_str(",
+      "        r#\"",
+      "        [project]",
+      "        name = \"project\"",
+      "        version = \"0.1.0\"",
+      "        requires-python = \">=3.12\""
+     ],
+     "total": 11
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 9,
+    "tokens": 62,
+    "first": {
+     "name": "crates/uv/tests/lock/minimum_libc.rs",
+     "start": 1017,
+     "end": 1025
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/project/check.rs",
+      "start": 41,
+      "end": 50
+     },
+     {
+      "name": "crates/uv/tests/project/check.rs",
+      "start": 3415,
+      "end": 3424
+     },
+     {
+      "name": "crates/uv/tests/project/edit.rs",
+      "start": 39,
+      "end": 48
+     },
+     {
+      "name": "crates/uv/tests/project/edit.rs",
+      "start": 152,
+      "end": 161
+     },
+     {
+      "name": "crates/uv/tests/project/edit.rs",
+      "start": 554,
+      "end": 563
+     },
+     {
+      "name": "crates/uv/tests/project/edit.rs",
+      "start": 597,
+      "end": 606
+     },
+     {
+      "name": "crates/uv/tests/project/edit.rs",
+      "start": 858,
+      "end": 867
+     },
+     {
+      "name": "crates/uv/tests/project/edit.rs",
+      "start": 996,
+      "end": 1005
+     }
+    ],
+    "copies": 73,
+    "excerpt": {
+     "lines": [
+      "fn minimum_libc_invalid_configuration() -> Result<()> {",
+      "    let context = uv_test::test_context!(\"3.12\");",
+      "    let pyproject_toml = context.temp_dir.child(\"pyproject.toml\");",
+      "    pyproject_toml.write_str(indoc! {r#\"",
+      "        [project]",
+      "        name = \"project\"",
+      "        version = \"0.1.0\"",
+      "        requires-python = \">=3.12\"",
+      "        dependencies = []"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "fn check_project() -> Result<()> {",
+      "    let context = uv_test::test_context!(\"3.12\");",
+      "",
+      "    let pyproject_toml = context.temp_dir.child(\"pyproject.toml\");",
+      "    pyproject_toml.write_str(indoc! {r#\"",
+      "        [project]",
+      "        name = \"project\"",
+      "        version = \"0.1.0\"",
+      "        requires-python = \">=3.12\"",
+      "        dependencies = []"
+     ],
+     "total": 10
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 39,
+    "tokens": 1897,
+    "first": {
+     "name": "crates/uv/tests/it/help.rs",
+     "start": 854,
+     "end": 892
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/it/help.rs",
+      "start": 939,
+      "end": 976
+     },
+     {
+      "name": "crates/uv/tests/it/help.rs",
+      "start": 1098,
+      "end": 1135
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 75,
+    "tokens": 3752,
+    "first": {
+     "name": "crates/uv/tests/it/help.rs",
+     "start": 1066,
+     "end": 1140
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/it/help.rs",
+      "start": 1182,
+      "end": 1256
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 7,
+    "tokens": 50,
+    "first": {
+     "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+     "start": 167,
+     "end": 173
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 196,
+      "end": 200
+     },
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 372,
+      "end": 376
+     },
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 621,
+      "end": 625
+     },
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 1360,
+      "end": 1364
+     },
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 1699,
+      "end": 1703
+     },
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 1727,
+      "end": 1731
+     },
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 1767,
+      "end": 1771
+     },
+     {
+      "name": "crates/uv/tests/pip_compile/pip_compile.rs",
+      "start": 1940,
+      "end": 1944
+     }
+    ],
+    "copies": 61,
+    "kind": "tests"
+   },
+   {
+    "format": "rust",
+    "lines": 21,
+    "tokens": 556,
+    "first": {
+     "name": "crates/uv/tests/workspace/workspace.rs",
+     "start": 1247,
+     "end": 1267
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/workspace/workspace.rs",
+      "start": 1469,
+      "end": 1489
+     },
+     {
+      "name": "crates/uv/tests/workspace/workspace.rs",
+      "start": 1522,
+      "end": 1542
+     },
+     {
+      "name": "crates/uv/tests/workspace/workspace.rs",
+      "start": 1587,
+      "end": 1607
+     },
+     {
+      "name": "crates/uv/tests/workspace/workspace.rs",
+      "start": 1667,
+      "end": 1687
+     },
+     {
+      "name": "crates/uv/tests/workspace/workspace.rs",
+      "start": 1734,
+      "end": 1754
+     }
+    ],
+    "copies": 6,
+    "kind": "tests"
+   },
+   {
+    "format": "toml",
+    "lines": 11,
+    "tokens": 56,
+    "first": {
+     "name": "crates/uv-audit-operations/Cargo.toml",
+     "start": 3,
+     "end": 13
+    },
+    "others": [
+     {
+      "name": "crates/uv-auth/Cargo.toml",
+      "start": 3,
+      "end": 13
+     },
+     {
+      "name": "crates/uv-bin-install/Cargo.toml",
+      "start": 3,
+      "end": 13
+     },
+     {
+      "name": "crates/uv-build-backend/Cargo.toml",
+      "start": 3,
+      "end": 13
+     },
+     {
+      "name": "crates/uv-build-commands/Cargo.toml",
+      "start": 3,
+      "end": 13
+     },
+     {
+      "name": "crates/uv-build-frontend/Cargo.toml",
+      "start": 3,
+      "end": 13
+     },
+     {
+      "name": "crates/uv-cache-info/Cargo.toml",
+      "start": 3,
+      "end": 13
+     },
+     {
+      "name": "crates/uv-cache-key/Cargo.toml",
+      "start": 3,
+      "end": 13
+     },
+     {
+      "name": "crates/uv-cache/Cargo.toml",
+      "start": 3,
+      "end": 13
+     }
+    ],
+    "copies": 50,
+    "kind": "data"
+   },
+   {
+    "format": "toml",
+    "lines": 15,
+    "tokens": 60,
+    "first": {
+     "name": "crates/uv-auth/Cargo.toml",
+     "start": 5,
+     "end": 19
+    },
+    "others": [
+     {
+      "name": "crates/uv-bin-install/Cargo.toml",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "crates/uv-build-commands/Cargo.toml",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "crates/uv-build-frontend/Cargo.toml",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "crates/uv-cache-key/Cargo.toml",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "crates/uv-cache/Cargo.toml",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "crates/uv-cli/Cargo.toml",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "crates/uv-configuration/Cargo.toml",
+      "start": 5,
+      "end": 19
+     },
+     {
+      "name": "crates/uv-dirs/Cargo.toml",
+      "start": 5,
+      "end": 19
+     }
+    ],
+    "copies": 40,
+    "kind": "data"
+   },
+   {
+    "format": "rust",
+    "lines": 254,
+    "tokens": 2128,
+    "first": {
+     "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+     "start": 9800,
+     "end": 10053
+    },
+    "others": [
+     {
+      "name": "crates/uv/tests/lock_scenarios/lock_conflict.rs",
+      "start": 10212,
+      "end": 10465
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   }
+  ],
+  "code": {
+   "sources": 715,
+   "lines": 330797,
+   "tokens": 1805025,
+   "clones": 1641,
+   "duplicatedLines": 23570,
+   "duplicatedTokens": 128755,
+   "percentage": 7.13,
+   "percentageTokens": 7.13,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 647,
+     "lines": 319802,
+     "clones": 1595,
+     "duplicatedLines": 22947,
+     "percentage": 7.18
+    },
+    {
+     "format": "python",
+     "sources": 45,
+     "lines": 9841,
+     "clones": 46,
+     "duplicatedLines": 623,
+     "percentage": 6.33
+    },
+    {
+     "format": "bash",
+     "sources": 20,
+     "lines": 953,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "powershell",
+     "sources": 3,
+     "lines": 201,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "rust",
+     "lines": 13,
+     "tokens": 116,
+     "first": {
+      "name": "crates/uv-requirements-txt/src/lib.rs",
+      "start": 1761,
+      "end": 1773
+     },
+     "others": [
+      {
+       "name": "crates/uv-requirements-txt/src/lib.rs",
+       "start": 1848,
+       "end": 1860
+      },
+      {
+       "name": "crates/uv-requirements-txt/src/lib.rs",
+       "start": 1904,
+       "end": 1916
+      },
+      {
+       "name": "crates/uv-requirements-txt/src/lib.rs",
+       "start": 1931,
+       "end": 1943
+      },
+      {
+       "name": "crates/uv-requirements-txt/src/lib.rs",
+       "start": 1959,
+       "end": 1971
+      },
+      {
+       "name": "crates/uv-requirements-txt/src/lib.rs",
+       "start": 1988,
+       "end": 2000
+      },
+      {
+       "name": "crates/uv-requirements-txt/src/lib.rs",
+       "start": 2261,
+       "end": 2273
+      },
+      {
+       "name": "crates/uv-requirements-txt/src/lib.rs",
+       "start": 2870,
+       "end": 2882
+      }
+     ],
+     "copies": 8,
+     "excerpt": {
+      "lines": [
+       "\"})?;",
+       "",
+       "let error = RequirementsTxt::parse(requirements_txt.path(), temp_dir.path())",
+       "    .await",
+       "    .unwrap_err();",
+       "let errors = anyhow::Error::new(error).chain().join(\"\\n\");",
+       "",
+       "let requirement_txt = regex::escape(&requirements_txt.path().user_display().to_string());",
+       "let filters = vec![(requirement_txt.as_str(), \"<REQUIREMENTS_TXT>\")];",
+       "insta::with_settings!({"
+      ],
+      "total": 13
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 37,
+     "tokens": 178,
+     "first": {
+      "name": "crates/uv-client/src/html.rs",
+      "start": 383,
+      "end": 419
+     },
+     "others": [
+      {
+       "name": "crates/uv-client/src/html.rs",
+       "start": 646,
+       "end": 682
+      },
+      {
+       "name": "crates/uv-client/src/html.rs",
+       "start": 766,
+       "end": 802
+      },
+      {
+       "name": "crates/uv-client/src/html.rs",
+       "start": 909,
+       "end": 945
+      },
+      {
+       "name": "crates/uv-client/src/html.rs",
+       "start": 968,
+       "end": 1004
+      }
+     ],
+     "copies": 5,
+     "excerpt": {
+      "lines": [
+       "<a href=\"/whl/Jinja2-3.1.2-py3-none-any.whl#sha256=6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61\">Jinja2-3.1.2-py3-none-any.whl</a><br/>",
+       "</body>",
+       "</html>",
+       "<!--TIMESTAMP 1703347410-->",
+       "    \"#;",
+       "        let base = SafeUrl::parse(\"https://download.pytorch.org/whl/jinja2/\").unwrap();",
+       "        let result = SimpleDetailHTML::parse(text, &base).unwrap();",
+       "        insta::assert_debug_snapshot!(result, @r#\"",
+       "        SimpleDetailHTML {",
+       "            project_status: ProjectStatus {"
+      ],
+      "total": 37
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 74,
+     "tokens": 601,
+     "first": {
+      "name": "crates/uv-configuration/src/target_triple.rs",
+      "start": 1447,
+      "end": 1520
+     },
+     "others": [
+      {
+       "name": "crates/uv-configuration/src/target_triple.rs",
+       "start": 1533,
+       "end": 1606
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "fn platform_version(self) -> &'static str {",
+       "    match self {",
+       "        Self::Windows | Self::X8664PcWindowsMsvc => \"\",",
+       "        Self::Aarch64PcWindowsMsvc => \"\",",
+       "        Self::Linux | Self::X8664UnknownLinuxGnu => \"\",",
+       "        Self::Macos | Self::Aarch64AppleDarwin => \"\",",
+       "        Self::I686PcWindowsMsvc => \"\",",
+       "        Self::X8664AppleDarwin => \"\",",
+       "        Self::Aarch64UnknownLinuxGnu => \"\",",
+       "        Self::Aarch64UnknownLinuxMusl => \"\","
+      ],
+      "total": 74
+     },
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 50,
+     "first": {
+      "name": "crates/uv-distribution-types/src/traits.rs",
+      "start": 128,
+      "end": 134
+     },
+     "others": [
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 152,
+       "end": 158
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 158,
+       "end": 164
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 164,
+       "end": 170
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 170,
+       "end": 176
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 176,
+       "end": 182
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 182,
+       "end": 188
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 224,
+       "end": 230
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 230,
+       "end": 236
+      }
+     ],
+     "copies": 12,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 50,
+     "first": {
+      "name": "crates/uv-distribution-types/src/traits.rs",
+      "start": 122,
+      "end": 128
+     },
+     "others": [
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 134,
+       "end": 140
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 140,
+       "end": 146
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 146,
+       "end": 152
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 188,
+       "end": 194
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 194,
+       "end": 200
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 200,
+       "end": 206
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 206,
+       "end": 212
+      },
+      {
+       "name": "crates/uv-distribution-types/src/traits.rs",
+       "start": 212,
+       "end": 218
+      }
+     ],
+     "copies": 10,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 82,
+     "tokens": 449,
+     "first": {
+      "name": "crates/uv-distribution/src/distribution_database.rs",
+      "start": 944,
+      "end": 1025
+     },
+     "others": [
+      {
+       "name": "crates/uv-distribution/src/distribution_database.rs",
+       "start": 1073,
+       "end": 1154
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 75,
+     "tokens": 444,
+     "first": {
+      "name": "crates/uv-pip-commands/src/install.rs",
+      "start": 410,
+      "end": 484
+     },
+     "others": [
+      {
+       "name": "crates/uv-pip-commands/src/sync.rs",
+       "start": 288,
+       "end": 362
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 118,
+     "tokens": 377,
+     "first": {
+      "name": "crates/uv-cli/src/lib.rs",
+      "start": 1806,
+      "end": 1923
+     },
+     "others": [
+      {
+       "name": "crates/uv-cli/src/lib.rs",
+       "start": 2110,
+       "end": 2227
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 7,
+     "tokens": 52,
+     "first": {
+      "name": "crates/uv-auth/src/middleware.rs",
+      "start": 1234,
+      "end": 1240
+     },
+     "others": [
+      {
+       "name": "crates/uv-auth/src/middleware.rs",
+       "start": 1395,
+       "end": 1401
+      },
+      {
+       "name": "crates/uv-auth/src/middleware.rs",
+       "start": 1483,
+       "end": 1489
+      },
+      {
+       "name": "crates/uv-auth/src/middleware.rs",
+       "start": 1526,
+       "end": 1532
+      },
+      {
+       "name": "crates/uv-auth/src/middleware.rs",
+       "start": 1595,
+       "end": 1601
+      },
+      {
+       "name": "crates/uv-auth/src/middleware.rs",
+       "start": 1658,
+       "end": 1664
+      },
+      {
+       "name": "crates/uv-auth/src/middleware.rs",
+       "start": 1689,
+       "end": 1695
+      },
+      {
+       "name": "crates/uv-auth/src/middleware.rs",
+       "start": 2586,
+       "end": 2594
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 13,
+     "tokens": 72,
+     "first": {
+      "name": "crates/uv/src/lib.rs",
+      "start": 717,
+      "end": 729
+     },
+     "others": [
+      {
+       "name": "crates/uv/src/lib.rs",
+       "start": 1554,
+       "end": 1566
+      },
+      {
+       "name": "crates/uv/src/lib.rs",
+       "start": 2331,
+       "end": 2343
+      },
+      {
+       "name": "crates/uv/src/lib.rs",
+       "start": 2406,
+       "end": 2418
+      },
+      {
+       "name": "crates/uv/src/lib.rs",
+       "start": 2683,
+       "end": 2695
+      },
+      {
+       "name": "crates/uv/src/lib.rs",
+       "start": 2914,
+       "end": 2926
+      }
+     ],
+     "copies": 6,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 4,
+    "minified": 0,
+    "sample": [
+     "crates/uv-python-managed/src/sysconfig/generated_mappings.rs",
+     "crates/uv/tests/lock_scenarios/lock_scenarios.rs",
+     "crates/uv/tests/pip/pip_compile_scenarios.rs",
+     "crates/uv/tests/pip/pip_install_scenarios.rs"
+    ]
+   }
+  },
+  "health": {
+   "score": 21,
+   "grade": "E",
+   "size": {
+    "lines": 547607,
+    "files": 821,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 24,
+     "adjusted": 23.9,
+     "lines": 131513,
+     "halfLife": 8.5,
+     "formats": [
+      "rust",
+      "python",
+      "bash",
+      "powershell",
+      "docker",
+      "batch",
+      "javascript",
+      "c"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 14.2
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 84.4,
+     "adjusted": 84.1,
+     "lines": 461925,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 31.2
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "the languages dead code reads are under 5% of the code"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 53463,
+   "mean": 65.1,
+   "files": [
+    {
+     "path": "crates/uv-lock/src/lock/mod.rs",
+     "complexity": 1618,
+     "lines": 11658,
+     "bytes": 467584
+    },
+    {
+     "path": "crates/uv/tests/pip_compile/pip_compile.rs",
+     "complexity": 1249,
+     "lines": 20562,
+     "bytes": 706444
+    },
+    {
+     "path": "crates/uv/tests/pip_install/pip_install.rs",
+     "complexity": 1224,
+     "lines": 19468,
+     "bytes": 643549
+    },
+    {
+     "path": "crates/uv/tests/sync/sync.rs",
+     "complexity": 1005,
+     "lines": 19872,
+     "bytes": 629816
+    },
+    {
+     "path": "crates/uv-configuration/src/target_triple.rs",
+     "complexity": 628,
+     "lines": 1918,
+     "bytes": 75088
+    },
+    {
+     "path": "crates/uv/tests/project/export.rs",
+     "complexity": 604,
+     "lines": 14641,
+     "bytes": 504001
+    },
+    {
+     "path": "crates/uv/tests/project/edit.rs",
+     "complexity": 601,
+     "lines": 15649,
+     "bytes": 539959
+    },
+    {
+     "path": "crates/uv-python-discovery/src/lib.rs",
+     "complexity": 523,
+     "lines": 3578,
+     "bytes": 122768
+    },
+    {
+     "path": "crates/uv-distribution/src/source/mod.rs",
+     "complexity": 522,
+     "lines": 3707,
+     "bytes": 137388
+    },
+    {
+     "path": "crates/uv/tests/project/run.rs",
+     "complexity": 499,
+     "lines": 8082,
+     "bytes": 236069
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 2.84,
+   "findings": 11,
+   "files": 102,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 4
+    },
+    {
+     "category": "unused-symbol",
+     "count": 6
+    },
+    {
+     "category": "unused-import",
+     "count": 1
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "crates/uv-virtualenv/src/_virtualenv.py",
+     "name": "",
+     "line": 1,
+     "lines": 121
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/uv-installer/src/pip_compileall.py",
+     "name": "",
+     "line": 1,
+     "lines": 67
+    },
+    {
+     "category": "unused-file",
+     "path": "crates/uv-virtualenv/src/activator/activate_this.py",
+     "name": "",
+     "line": 1,
+     "lines": 59
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/uv-run-remote-script-test.py",
+     "name": "",
+     "line": 1,
+     "lines": 16
+    },
+    {
+     "category": "unused-symbol",
+     "path": "crates/uv-python-interpreter/python/packaging/_manylinux.py",
+     "name": "_have_compatible_abi",
+     "line": 53,
+     "lines": 15
+    },
+    {
+     "category": "unused-symbol",
+     "path": "crates/uv-python-interpreter/python/packaging/_manylinux.py",
+     "name": "_is_linux_armhf",
+     "line": 28,
+     "lines": 13
+    },
+    {
+     "category": "unused-symbol",
+     "path": "crates/uv-python-interpreter/python/packaging/_manylinux.py",
+     "name": "_is_linux_i686",
+     "line": 43,
+     "lines": 8
+    },
+    {
+     "category": "unused-symbol",
+     "path": "crates/uv-python-interpreter/python/packaging/_manylinux.py",
+     "name": "_LEGACY_MANYLINUX_MAP",
+     "line": 215,
+     "lines": 8
+    },
+    {
+     "category": "unused-symbol",
+     "path": "crates/uv-python-interpreter/python/packaging/_manylinux.py",
+     "name": "_parse_elf",
+     "line": 20,
+     "lines": 6
+    },
+    {
+     "category": "unused-import",
+     "path": "crates/uv-python-interpreter/python/get_interpreter_info.py",
+     "name": "distutils",
+     "line": 970,
+     "lines": 1
+    }
+   ]
+  }
+ }
+}

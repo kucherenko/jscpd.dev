@@ -1,0 +1,943 @@
+{
+ "name": "solidjs/solid",
+ "url": "https://github.com/solidjs/solid",
+ "appearances": [
+  {
+   "date": "2026-11-19",
+   "rank": 12,
+   "stars": 36651,
+   "starsToday": 40,
+   "headSha": "0c031aabceea526351554845cffcce5bf5df8afe",
+   "sources": 2908,
+   "lines": 676582,
+   "clones": 5775,
+   "duplicatedLines": 97515,
+   "percentage": 14.41,
+   "codePercentage": 3.01,
+   "codeSources": 298,
+   "healthScore": 50,
+   "healthGrade": "D"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T05:21:49.273Z",
+  "name": "solidjs/solid",
+  "url": "https://github.com/solidjs/solid",
+  "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+  "language": "TypeScript",
+  "stars": 36651,
+  "starsToday": 40,
+  "defaultBranch": "main",
+  "headSha": "0c031aabceea526351554845cffcce5bf5df8afe",
+  "durationMs": 4128,
+  "total": {
+   "sources": 2908,
+   "lines": 676582,
+   "tokens": 4980989,
+   "clones": 5775,
+   "duplicatedLines": 97515,
+   "duplicatedTokens": 677623,
+   "percentage": 14.41,
+   "percentageTokens": 13.6
+  },
+  "formats": [
+   {
+    "format": "typescript",
+    "sources": 990,
+    "lines": 308490,
+    "clones": 2225,
+    "duplicatedLines": 36612,
+    "percentage": 11.87
+   },
+   {
+    "format": "tsx",
+    "sources": 811,
+    "lines": 136982,
+    "clones": 1588,
+    "duplicatedLines": 19288,
+    "percentage": 14.08
+   },
+   {
+    "format": "javascript",
+    "sources": 713,
+    "lines": 85105,
+    "clones": 964,
+    "duplicatedLines": 24847,
+    "percentage": 29.2
+   },
+   {
+    "format": "markdown",
+    "sources": 137,
+    "lines": 90433,
+    "clones": 800,
+    "duplicatedLines": 13763,
+    "percentage": 15.22
+   },
+   {
+    "format": "rust",
+    "sources": 85,
+    "lines": 43806,
+    "clones": 159,
+    "duplicatedLines": 1813,
+    "percentage": 4.14
+   },
+   {
+    "format": "json",
+    "sources": 62,
+    "lines": 3344,
+    "clones": 19,
+    "duplicatedLines": 365,
+    "percentage": 10.92
+   },
+   {
+    "format": "css",
+    "sources": 16,
+    "lines": 4308,
+    "clones": 10,
+    "duplicatedLines": 719,
+    "percentage": 16.69
+   },
+   {
+    "format": "diff",
+    "sources": 9,
+    "lines": 1368,
+    "clones": 3,
+    "duplicatedLines": 51,
+    "percentage": 3.73
+   },
+   {
+    "format": "jsx",
+    "sources": 44,
+    "lines": 1283,
+    "clones": 3,
+    "duplicatedLines": 19,
+    "percentage": 1.48
+   },
+   {
+    "format": "yaml",
+    "sources": 12,
+    "lines": 779,
+    "clones": 2,
+    "duplicatedLines": 24,
+    "percentage": 3.08
+   }
+  ],
+  "topClones": [
+   {
+    "format": "typescript",
+    "lines": 4037,
+    "tokens": 18252,
+    "first": {
+     "name": "packages/h/jsx-runtime/src/jsx.d.ts",
+     "start": 139,
+     "end": 4175
+    },
+    "others": [
+     {
+      "name": "packages/web/jsx/jsx-h.d.ts",
+      "start": 140,
+      "end": 4176
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "type Element = SolidElement | Node | FunctionElement | ArrayElement;",
+      "// END - difference between `jsx.d.ts` and `jsx-h.d.ts`",
+      "",
+      "interface ArrayElement extends Array<Element> {}",
+      "",
+      "interface ElementClass {",
+      "  // empty, libs can define requirements downstream",
+      "}",
+      "interface ElementAttributesProperty {",
+      "  // empty, libs can define requirements downstream"
+     ],
+     "total": 4037
+    },
+    "kind": "generated"
+   },
+   {
+    "format": "javascript",
+    "lines": 353,
+    "tokens": 2341,
+    "first": {
+     "name": "packages/babel-plugin/test/__dom_compatible_fixtures__/attributeExpressions/code.js",
+     "start": 1,
+     "end": 353
+    },
+    "others": [
+     {
+      "name": "packages/babel-plugin/test/__dynamic_fixtures__/attributeExpressions/code.js",
+      "start": 1,
+      "end": 358
+     },
+     {
+      "name": "packages/babel-plugin/test/__ssr_fixtures__/attributeExpressions/code.js",
+      "start": 1,
+      "end": 358
+     },
+     {
+      "name": "packages/babel-plugin/test/__ssr_hydratable_fixtures__/attributeExpressions/code.js",
+      "start": 1,
+      "end": 358
+     }
+    ],
+    "copies": 4,
+    "excerpt": {
+     "lines": [
+      "import * as styles from \"./styles.module.css\";",
+      "import { binding } from \"somewhere\";",
+      "",
+      "function refFn() {}",
+      "const refConst = null;",
+      "",
+      "const selected = true;",
+      "let id = \"my-h1\";",
+      "let link;",
+      "const template = ("
+     ],
+     "total": 353
+    },
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 554,
+    "tokens": 3671,
+    "first": {
+     "name": "packages/h/CHANGELOG.md",
+     "start": 87,
+     "end": 640
+    },
+    "others": [
+     {
+      "name": "packages/html/CHANGELOG.md",
+      "start": 79,
+      "end": 632
+     }
+    ],
+    "copies": 2,
+    "excerpt": {
+     "lines": [
+      "- 7182195: Move frames, server-functions, and serialization implementations into their subpath folders. Bind `@solidjs/h` and `@solidjs/html` directly to `@sol…",
+      "- Updated dependencies [366c0eb]",
+      "- Updated dependencies [2c9fdd9]",
+      "- Updated dependencies [89a0531]",
+      "- Updated dependencies [ee73e05]",
+      "- Updated dependencies [475744c]",
+      "- Updated dependencies [5ab6c61]",
+      "- Updated dependencies [9b4dd76]",
+      "- Updated dependencies [bacfb34]",
+      "- Updated dependencies [32996e8]"
+     ],
+     "total": 554
+    },
+    "kind": "docs"
+   },
+   {
+    "format": "javascript",
+    "lines": 677,
+    "tokens": 3540,
+    "first": {
+     "name": "packages/babel-plugin/test/__dom_compatible_fixtures__/attributeExpressions/output.js",
+     "start": 83,
+     "end": 759
+    },
+    "others": [
+     {
+      "name": "packages/babel-plugin/test/__dom_fixtures__/attributeExpressions/output.js",
+      "start": 84,
+      "end": 768
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "javascript",
+    "lines": 416,
+    "tokens": 3268,
+    "first": {
+     "name": "packages/compiler/__tests__/fixtures/dynamic-universal/conditionalExpressions/output.js",
+     "start": 1,
+     "end": 416
+    },
+    "others": [
+     {
+      "name": "packages/compiler/__tests__/fixtures/universal/conditionalExpressions/output.js",
+      "start": 1,
+      "end": 416
+     }
+    ],
+    "copies": 2,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 22,
+    "tokens": 770,
+    "first": {
+     "name": "packages/html/CHANGELOG.md",
+     "start": 32,
+     "end": 53
+    },
+    "others": [
+     {
+      "name": "packages/html/CHANGELOG.md",
+      "start": 982,
+      "end": 1003
+     },
+     {
+      "name": "packages/solid/CHANGELOG.md",
+      "start": 877,
+      "end": 898
+     },
+     {
+      "name": "packages/universal/CHANGELOG.md",
+      "start": 60,
+      "end": 81
+     },
+     {
+      "name": "packages/web/CHANGELOG.md",
+      "start": 939,
+      "end": 960
+     }
+    ],
+    "copies": 5,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 456,
+    "tokens": 2986,
+    "first": {
+     "name": "packages/universal/CHANGELOG.md",
+     "start": 169,
+     "end": 624
+    },
+    "others": [
+     {
+      "name": "packages/web/CHANGELOG.md",
+      "start": 1627,
+      "end": 2082
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "javascript",
+    "lines": 93,
+    "tokens": 963,
+    "first": {
+     "name": "packages/babel-plugin/test/__dom_dev_fixtures__/lowerShow/code.js",
+     "start": 1,
+     "end": 93
+    },
+    "others": [
+     {
+      "name": "packages/babel-plugin/test/__dom_fixtures__/lowerShow/code.js",
+      "start": 1,
+      "end": 93
+     },
+     {
+      "name": "packages/babel-plugin/test/__dom_hydratable_fixtures__/lowerShow/code.js",
+      "start": 1,
+      "end": 93
+     },
+     {
+      "name": "packages/babel-plugin/test/__ssr_fixtures__/lowerShow/code.js",
+      "start": 1,
+      "end": 93
+     }
+    ],
+    "copies": 4,
+    "kind": "tests"
+   },
+   {
+    "format": "markdown",
+    "lines": 47,
+    "tokens": 696,
+    "first": {
+     "name": "packages/diagnostics/CHANGELOG.md",
+     "start": 88,
+     "end": 134
+    },
+    "others": [
+     {
+      "name": "packages/universal/CHANGELOG.md",
+      "start": 82,
+      "end": 128
+     },
+     {
+      "name": "packages/universal/CHANGELOG.md",
+      "start": 957,
+      "end": 1003
+     },
+     {
+      "name": "packages/web/CHANGELOG.md",
+      "start": 1034,
+      "end": 1080
+     },
+     {
+      "name": "packages/web/CHANGELOG.md",
+      "start": 3102,
+      "end": 3148
+     }
+    ],
+    "copies": 5,
+    "kind": "docs"
+   },
+   {
+    "format": "markdown",
+    "lines": 70,
+    "tokens": 2562,
+    "first": {
+     "name": "packages/solid/CHANGELOG.md",
+     "start": 3199,
+     "end": 3268
+    },
+    "others": [
+     {
+      "name": "packages/web/CHANGELOG.md",
+      "start": 2907,
+      "end": 2976
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   }
+  ],
+  "code": {
+   "sources": 298,
+   "lines": 156018,
+   "tokens": 738536,
+   "clones": 303,
+   "duplicatedLines": 4690,
+   "duplicatedTokens": 25074,
+   "percentage": 3.01,
+   "percentageTokens": 3.4,
+   "formats": [
+    {
+     "format": "rust",
+     "sources": 78,
+     "lines": 42283,
+     "clones": 158,
+     "duplicatedLines": 1799,
+     "percentage": 4.25
+    },
+    {
+     "format": "typescript",
+     "sources": 164,
+     "lines": 101434,
+     "clones": 130,
+     "duplicatedLines": 2641,
+     "percentage": 2.6
+    },
+    {
+     "format": "javascript",
+     "sources": 54,
+     "lines": 12257,
+     "clones": 15,
+     "duplicatedLines": 250,
+     "percentage": 2.04
+    },
+    {
+     "format": "jsx",
+     "sources": 1,
+     "lines": 33,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 11,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 137,
+     "tokens": 321,
+     "first": {
+      "name": "packages/web/src/server-mock.ts",
+      "start": 38,
+      "end": 174
+     },
+     "others": [
+      {
+       "name": "packages/web/src/server.ts",
+       "start": 112,
+       "end": 257
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "type PreloadLinkAttributes = {",
+       "  type?: string;",
+       "  crossorigin?: JSX.HTMLCrossorigin;",
+       "  integrity?: string;",
+       "  referrerpolicy?: JSX.HTMLReferrerPolicy;",
+       "  fetchpriority?: JSX.HTMLFetchPriority;",
+       "  media?: string;",
+       "};",
+       "",
+       "/**"
+      ],
+      "total": 137
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 89,
+     "tokens": 317,
+     "first": {
+      "name": "packages/solid/src/client/flow.ts",
+      "start": 355,
+      "end": 443
+     },
+     "others": [
+      {
+       "name": "packages/solid/src/server/flow.ts",
+       "start": 221,
+       "end": 277
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    IS_OBSERVE ? { name: \"eval conditions\", sync: true } : { sync: true }",
+       "  ) as unknown as SolidElement;",
+       "}",
+       "",
+       "export type MatchProps<T, F extends ConditionalRenderCallback<T> = ConditionalRenderCallback<T>> = {",
+       "  when: T | undefined | null | false;",
+       "  keyed?: false;",
+       "  children: ConditionalRenderChildren<T, F>;",
+       "};",
+       "export type KeyedMatchProps<"
+      ],
+      "total": 89
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 53,
+     "tokens": 316,
+     "first": {
+      "name": "packages/solid/src/client/flow.ts",
+      "start": 40,
+      "end": 92
+     },
+     "others": [
+      {
+       "name": "packages/solid/src/server/flow.ts",
+       "start": 38,
+       "end": 72
+      }
+     ],
+     "copies": 2,
+     "excerpt": {
+      "lines": [
+       "    : `Stale read from <${name}>.`;",
+       "};",
+       "",
+       "/**",
+       " * Creates a list of elements from a list.",
+       " *",
+       " * Receives a map function as its child and returns a JSX element for each",
+       " * list item; if the list is empty, an optional `fallback` is rendered instead.",
+       " *",
+       " * The child callback shape follows the keying mode:"
+      ],
+      "total": 53
+     },
+     "excerptSecond": {
+      "lines": [
+       "  fallback?: Accessor<SolidElement>;",
+       "};",
+       "",
+       "/**",
+       " * Creates a list of elements from a list",
+       " * @description https://docs.solidjs.com/reference/solid-js/components-jsx/for",
+       " */",
+       "export function For<T extends readonly any[], U extends SolidElement>(props: {",
+       "  each: T | undefined | null | false;",
+       "  fallback?: SolidElement;"
+      ],
+      "total": 35
+     },
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 59,
+     "tokens": 267,
+     "first": {
+      "name": "packages/solid/src/client/flow.ts",
+      "start": 140,
+      "end": 198
+     },
+     "others": [
+      {
+       "name": "packages/solid/src/server/flow.ts",
+       "start": 93,
+       "end": 145
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 142,
+     "tokens": 256,
+     "first": {
+      "name": "packages/solid/src/client/core.ts",
+      "start": 49,
+      "end": 190
+     },
+     "others": [
+      {
+       "name": "packages/solid/src/server/core.ts",
+       "start": 17,
+       "end": 77
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 17,
+     "tokens": 128,
+     "first": {
+      "name": "packages/compiler/src/directives/validate.rs",
+      "start": 442,
+      "end": 458
+     },
+     "others": [
+      {
+       "name": "packages/compiler/src/dom/template.rs",
+       "start": 707,
+       "end": 723
+      },
+      {
+       "name": "packages/compiler/src/tsrx/style_projection.rs",
+       "start": 760,
+       "end": 776
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 57,
+     "tokens": 235,
+     "first": {
+      "name": "packages/solid/src/client/component.ts",
+      "start": 16,
+      "end": 72
+     },
+     "others": [
+      {
+       "name": "packages/solid/src/server/component.ts",
+       "start": 30,
+       "end": 71
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 41,
+     "tokens": 225,
+     "first": {
+      "name": "packages/signals/src/core/core.ts",
+      "start": 1199,
+      "end": 1239
+     },
+     "others": [
+      {
+       "name": "packages/signals/src/core/core.ts",
+       "start": 1244,
+       "end": 1284
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 20,
+     "tokens": 220,
+     "first": {
+      "name": "packages/solid/src/client/hydration.ts",
+      "start": 2050,
+      "end": 2069
+     },
+     "others": [
+      {
+       "name": "packages/solid/src/client/hydration.ts",
+       "start": 2119,
+       "end": 2138
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "rust",
+     "lines": 40,
+     "tokens": 216,
+     "first": {
+      "name": "packages/compiler/src/dom/dynamics.rs",
+      "start": 375,
+      "end": 414
+     },
+     "others": [
+      {
+       "name": "packages/compiler/src/universal/transform.rs",
+       "start": 1315,
+       "end": 1354
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "packages/h/jsx-runtime/src/jsx.d.ts",
+     "packages/web/jsx/jsx.d.ts"
+    ]
+   }
+  },
+  "health": {
+   "score": 50,
+   "grade": "D",
+   "size": {
+    "lines": 571521,
+    "files": 2569,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 14.4,
+     "adjusted": 14.4,
+     "lines": 82391,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "tsx",
+      "javascript",
+      "rust",
+      "jsx",
+      "bash"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 31
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.1,
+     "adjusted": 0.1,
+     "lines": 652,
+     "halfLife": 7.5,
+     "coverage": 92.6,
+     "weight": 0.926,
+     "score": 98.8
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 61.3,
+     "adjusted": 61.2,
+     "lines": 350304,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 42.8
+    }
+   ]
+  },
+  "complexity": {
+   "total": 112024,
+   "mean": 43.6,
+   "files": [
+    {
+     "path": "packages/web/src/server.ts",
+     "complexity": 1741,
+     "lines": 7555,
+     "bytes": 339698
+    },
+    {
+     "path": "packages/solid/src/server/signals.ts",
+     "complexity": 1103,
+     "lines": 4844,
+     "bytes": 203415
+    },
+    {
+     "path": "packages/signals/src/store/store.ts",
+     "complexity": 1088,
+     "lines": 3040,
+     "bytes": 128996
+    },
+    {
+     "path": "packages/web/src/client.ts",
+     "complexity": 1023,
+     "lines": 3566,
+     "bytes": 155403
+    },
+    {
+     "path": "packages/signals/src/core/attribution.ts",
+     "complexity": 987,
+     "lines": 4908,
+     "bytes": 213291
+    },
+    {
+     "path": "packages/solid/test/server/ssr-async.spec.ts",
+     "complexity": 978,
+     "lines": 6369,
+     "bytes": 199144
+    },
+    {
+     "path": "packages/web/server-functions/src/server.ts",
+     "complexity": 951,
+     "lines": 5381,
+     "bytes": 247410
+    },
+    {
+     "path": "packages/signals/tests/store/createOptimisticStore.test.ts",
+     "complexity": 885,
+     "lines": 4189,
+     "bytes": 130483
+    },
+    {
+     "path": "packages/signals/src/core/core.ts",
+     "complexity": 827,
+     "lines": 2500,
+     "bytes": 96252
+    },
+    {
+     "path": "packages/solid/test/client-hydration.spec.ts",
+     "complexity": 806,
+     "lines": 5177,
+     "bytes": 139669
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.12,
+   "findings": 29,
+   "files": 2660,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 17
+    },
+    {
+     "category": "unused-export",
+     "count": 6
+    },
+    {
+     "category": "unused-import",
+     "count": 6
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "packages/signals/src/attribution.prod.ts",
+     "name": "",
+     "line": 1,
+     "lines": 83
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/signals/scripts/store-size.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 71
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/diagnostics/scripts/fake-page.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 63
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/compiler/scripts/parity-diff.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 59
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/size/sc-router-app.js",
+     "name": "",
+     "line": 1,
+     "lines": 53
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/size/sc-live-router-app.js",
+     "name": "",
+     "line": 1,
+     "lines": 49
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/signals/scripts/scan-hangs.mjs",
+     "name": "",
+     "line": 1,
+     "lines": 40
+    },
+    {
+     "category": "unused-file",
+     "path": "packages/element/sample.jsx",
+     "name": "",
+     "line": 1,
+     "lines": 33
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/size/hydrating-store-app.js",
+     "name": "",
+     "line": 1,
+     "lines": 33
+    },
+    {
+     "category": "unused-file",
+     "path": "scripts/size/sc-live-app.js",
+     "name": "",
+     "line": 1,
+     "lines": 31
+    }
+   ]
+  }
+ }
+}
