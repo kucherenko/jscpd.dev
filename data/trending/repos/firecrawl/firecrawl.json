@@ -1,0 +1,1258 @@
+{
+ "name": "firecrawl/firecrawl",
+ "url": "https://github.com/firecrawl/firecrawl",
+ "appearances": [
+  {
+   "date": "2026-11-20",
+   "rank": 4,
+   "stars": 204453,
+   "starsToday": 825,
+   "headSha": "484be117975ac7b8be085c25f1fbd54d005f17ff",
+   "sources": 2041,
+   "lines": 470700,
+   "clones": 2979,
+   "duplicatedLines": 50016,
+   "percentage": 10.63,
+   "codePercentage": 9.26,
+   "codeSources": 1067,
+   "healthScore": 57.7,
+   "healthGrade": "C"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T05:22:13.386Z",
+  "name": "firecrawl/firecrawl",
+  "url": "https://github.com/firecrawl/firecrawl",
+  "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+  "language": "TypeScript",
+  "stars": 204453,
+  "starsToday": 825,
+  "defaultBranch": "main",
+  "headSha": "484be117975ac7b8be085c25f1fbd54d005f17ff",
+  "durationMs": 2699,
+  "total": {
+   "sources": 2041,
+   "lines": 470700,
+   "tokens": 2533019,
+   "clones": 2979,
+   "duplicatedLines": 50016,
+   "duplicatedTokens": 264895,
+   "percentage": 10.63,
+   "percentageTokens": 10.46
+  },
+  "formats": [
+   {
+    "format": "typescript",
+    "sources": 1176,
+    "lines": 318383,
+    "clones": 1776,
+    "duplicatedLines": 28759,
+    "percentage": 9.03
+   },
+   {
+    "format": "python",
+    "sources": 203,
+    "lines": 48291,
+    "clones": 590,
+    "duplicatedLines": 11663,
+    "percentage": 24.15
+   },
+   {
+    "format": "php",
+    "sources": 99,
+    "lines": 9776,
+    "clones": 112,
+    "duplicatedLines": 1040,
+    "percentage": 10.64
+   },
+   {
+    "format": "rust",
+    "sources": 43,
+    "lines": 22963,
+    "clones": 90,
+    "duplicatedLines": 1005,
+    "percentage": 4.38
+   },
+   {
+    "format": "go",
+    "sources": 27,
+    "lines": 7368,
+    "clones": 78,
+    "duplicatedLines": 800,
+    "percentage": 10.86
+   },
+   {
+    "format": "json",
+    "sources": 27,
+    "lines": 15400,
+    "clones": 77,
+    "duplicatedLines": 2922,
+    "percentage": 18.97
+   },
+   {
+    "format": "java",
+    "sources": 113,
+    "lines": 10128,
+    "clones": 75,
+    "duplicatedLines": 834,
+    "percentage": 8.23
+   },
+   {
+    "format": "yaml",
+    "sources": 76,
+    "lines": 6426,
+    "clones": 72,
+    "duplicatedLines": 1229,
+    "percentage": 19.13
+   },
+   {
+    "format": "elixir",
+    "sources": 11,
+    "lines": 5820,
+    "clones": 48,
+    "duplicatedLines": 637,
+    "percentage": 10.95
+   },
+   {
+    "format": "csharp",
+    "sources": 48,
+    "lines": 6195,
+    "clones": 20,
+    "duplicatedLines": 324,
+    "percentage": 5.23
+   }
+  ],
+  "topClones": [
+   {
+    "format": "typescript",
+    "lines": 10,
+    "tokens": 99,
+    "first": {
+     "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+     "start": 846,
+     "end": 855
+    },
+    "others": [
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 884,
+      "end": 893
+     },
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 1146,
+      "end": 1155
+     },
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 1780,
+      "end": 1789
+     },
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 1811,
+      "end": 1820
+     },
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 2032,
+      "end": 2041
+     },
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 2063,
+      "end": 2072
+     },
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 2090,
+      "end": 2099
+     },
+     {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 2115,
+      "end": 2124
+     }
+    ],
+    "copies": 12,
+    "excerpt": {
+     "lines": [
+      "    this.handleError(response, \"search\");",
+      "  }",
+      "} catch (error: any) {",
+      "  if (error.response?.data?.error) {",
+      "    throw new FirecrawlError(`Request failed with status code ${error.response.status}. Error: ${error.response.data.error} ${error.response.data.details ? ` -…",
+      "  } else {",
+      "    throw new FirecrawlError(error.message, 500);",
+      "  }",
+      "}",
+      "return { success: false, error: \"Internal server error.\", data: [] };"
+     ],
+     "total": 10
+    },
+    "excerptSecond": {
+     "lines": [
+      "    this.handleError(response, \"start crawl job\");",
+      "  }",
+      "} catch (error: any) {",
+      "  if (error.response?.data?.error) {",
+      "    throw new FirecrawlError(`Request failed with status code ${error.response.status}. Error: ${error.response.data.error} ${error.response.data.details ? ` -…",
+      "  } else {",
+      "    throw new FirecrawlError(error.message, 500);",
+      "  }",
+      "}",
+      "return { success: false, error: \"Internal server error.\" };"
+     ],
+     "total": 10
+    },
+    "kind": "code"
+   },
+   {
+    "format": "python",
+    "lines": 70,
+    "tokens": 537,
+    "first": {
+     "name": "apps/python-sdk/firecrawl/v1/client.py",
+     "start": 1513,
+     "end": 1582
+    },
+    "others": [
+     {
+      "name": "apps/python-sdk/firecrawl/v1/client.py",
+      "start": 1654,
+      "end": 1723
+     },
+     {
+      "name": "apps/python-sdk/firecrawl/v1/client.py",
+      "start": 1790,
+      "end": 1859
+     }
+    ],
+    "copies": 3,
+    "excerpt": {
+     "lines": [
+      "self._validate_kwargs(kwargs, \"batch_scrape_urls\")",
+      "",
+      "scrape_params = {}",
+      "",
+      "# Add individual parameters",
+      "if formats is not None:",
+      "    scrape_params['formats'] = formats",
+      "if headers is not None:",
+      "    scrape_params['headers'] = headers",
+      "if include_tags is not None:"
+     ],
+     "total": 70
+    },
+    "kind": "code"
+   },
+   {
+    "format": "php",
+    "lines": 6,
+    "tokens": 56,
+    "first": {
+     "name": "apps/php-sdk/src/Models/AgentExchangeSummary.php",
+     "start": 25,
+     "end": 30
+    },
+    "others": [
+     {
+      "name": "apps/php-sdk/src/Models/AgentPendingApprovalCall.php",
+      "start": 20,
+      "end": 25
+     },
+     {
+      "name": "apps/php-sdk/src/Models/AgentPendingApprovalResolution.php",
+      "start": 15,
+      "end": 20
+     },
+     {
+      "name": "apps/php-sdk/src/Models/AgentResponse.php",
+      "start": 14,
+      "end": 19
+     },
+     {
+      "name": "apps/php-sdk/src/Models/AgentSkippedProvider.php",
+      "start": 17,
+      "end": 22
+     },
+     {
+      "name": "apps/php-sdk/src/Models/AgentTermsActionProvider.php",
+      "start": 23,
+      "end": 28
+     },
+     {
+      "name": "apps/php-sdk/src/Models/AgentTermsGate.php",
+      "start": 18,
+      "end": 23
+     },
+     {
+      "name": "apps/php-sdk/src/Models/AgentTraceActiveBrowserSession.php",
+      "start": 12,
+      "end": 17
+     },
+     {
+      "name": "apps/php-sdk/src/Models/AgentTraceAgentIdentity.php",
+      "start": 13,
+      "end": 18
+     }
+    ],
+    "copies": 19,
+    "excerpt": {
+     "lines": [
+      "    private readonly ?AgentTermsRequiredAction $requiresAction = null,",
+      ") {}",
+      "",
+      "/** @param array<string, mixed> $data */",
+      "public static function fromArray(array $data): self",
+      "{"
+     ],
+     "total": 6
+    },
+    "kind": "code"
+   },
+   {
+    "format": "typescript",
+    "lines": 55,
+    "tokens": 484,
+    "first": {
+     "name": "apps/api/src/__tests__/routes/exchange-agent-managed-key.routes.test.ts",
+     "start": 13,
+     "end": 67
+    },
+    "others": [
+     {
+      "name": "apps/api/src/__tests__/routes/exchange-alexandria-verified.routes.test.ts",
+      "start": 19,
+      "end": 72
+     },
+     {
+      "name": "apps/api/src/__tests__/routes/exchange-connectors.routes.test.ts",
+      "start": 12,
+      "end": 66
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
+    "format": "python",
+    "lines": 237,
+    "tokens": 958,
+    "first": {
+     "name": "examples/gemini-2.0-crawler/gemini-2.0-crawler.py",
+     "start": 138,
+     "end": 374
+    },
+    "others": [
+     {
+      "name": "examples/gemini-2.5-crawler/gemini-2.5-crawler.py",
+      "start": 138,
+      "end": 374
+     }
+    ],
+    "copies": 2,
+    "kind": "docs"
+   },
+   {
+    "format": "css",
+    "lines": 78,
+    "tokens": 443,
+    "first": {
+     "name": "apps/test-site/src/pages/blog/category/[...slug].astro",
+     "start": 57,
+     "end": 134
+    },
+    "others": [
+     {
+      "name": "apps/test-site/src/pages/blog/category/deep/nested/path/index.astro",
+      "start": 39,
+      "end": 116
+     },
+     {
+      "name": "apps/test-site/src/pages/blog/index.astro",
+      "start": 38,
+      "end": 115
+     }
+    ],
+    "copies": 3,
+    "kind": "code"
+   },
+   {
+    "format": "json",
+    "lines": 32,
+    "tokens": 93,
+    "first": {
+     "name": "apps/elixir-sdk/openapi.json",
+     "start": 7316,
+     "end": 7347
+    },
+    "others": [
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7366,
+      "end": 7397
+     },
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7423,
+      "end": 7454
+     },
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7614,
+      "end": 7645
+     },
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7668,
+      "end": 7699
+     },
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7725,
+      "end": 7756
+     },
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7786,
+      "end": 7817
+     },
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7841,
+      "end": 7872
+     },
+     {
+      "name": "apps/elixir-sdk/openapi.json",
+      "start": 7902,
+      "end": 7933
+     }
+    ],
+    "copies": 10,
+    "kind": "data"
+   },
+   {
+    "format": "elixir",
+    "lines": 10,
+    "tokens": 64,
+    "first": {
+     "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+     "start": 150,
+     "end": 159
+    },
+    "others": [
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 296,
+      "end": 308
+     },
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 335,
+      "end": 347
+     },
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 390,
+      "end": 401
+     },
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 429,
+      "end": 440
+     },
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 472,
+      "end": 484
+     },
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 607,
+      "end": 616
+     },
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 642,
+      "end": 651
+     },
+     {
+      "name": "apps/elixir-sdk/test/firecrawl_test.exs",
+      "start": 677,
+      "end": 686
+     }
+    ],
+    "copies": 14,
+    "kind": "tests"
+   },
+   {
+    "format": "go",
+    "lines": 9,
+    "tokens": 91,
+    "first": {
+     "name": "apps/go-sdk/agent_test.go",
+     "start": 37,
+     "end": 45
+    },
+    "others": [
+     {
+      "name": "apps/go-sdk/agent_test.go",
+      "start": 111,
+      "end": 121
+     },
+     {
+      "name": "apps/go-sdk/agent_test.go",
+      "start": 217,
+      "end": 227
+     },
+     {
+      "name": "apps/go-sdk/agent_test.go",
+      "start": 286,
+      "end": 296
+     },
+     {
+      "name": "apps/go-sdk/agent_test.go",
+      "start": 345,
+      "end": 354
+     },
+     {
+      "name": "apps/go-sdk/agent_test.go",
+      "start": 406,
+      "end": 414
+     },
+     {
+      "name": "apps/go-sdk/agent_test.go",
+      "start": 444,
+      "end": 452
+     },
+     {
+      "name": "apps/go-sdk/agent_test.go",
+      "start": 594,
+      "end": 603
+     },
+     {
+      "name": "apps/go-sdk/developer_search_test.go",
+      "start": 13,
+      "end": 20
+     }
+    ],
+    "copies": 10,
+    "kind": "tests"
+   },
+   {
+    "format": "yaml",
+    "lines": 49,
+    "tokens": 264,
+    "first": {
+     "name": ".github/workflows/publish-dotnet-sdk.yml",
+     "start": 11,
+     "end": 59
+    },
+    "others": [
+     {
+      "name": ".github/workflows/publish-java-sdk.yml",
+      "start": 11,
+      "end": 59
+     },
+     {
+      "name": ".github/workflows/publish-php-sdk.yml",
+      "start": 12,
+      "end": 60
+     },
+     {
+      "name": ".github/workflows/publish-ruby-sdk.yml",
+      "start": 11,
+      "end": 59
+     }
+    ],
+    "copies": 4,
+    "kind": "data"
+   }
+  ],
+  "code": {
+   "sources": 1067,
+   "lines": 255757,
+   "tokens": 1344345,
+   "clones": 1455,
+   "duplicatedLines": 23686,
+   "duplicatedTokens": 132404,
+   "percentage": 9.26,
+   "percentageTokens": 9.85,
+   "formats": [
+    {
+     "format": "typescript",
+     "sources": 651,
+     "lines": 183183,
+     "clones": 826,
+     "duplicatedLines": 14926,
+     "percentage": 8.15
+    },
+    {
+     "format": "python",
+     "sources": 64,
+     "lines": 22592,
+     "clones": 350,
+     "duplicatedLines": 5587,
+     "percentage": 24.73
+    },
+    {
+     "format": "php",
+     "sources": 81,
+     "lines": 7267,
+     "clones": 92,
+     "duplicatedLines": 895,
+     "percentage": 12.32
+    },
+    {
+     "format": "rust",
+     "sources": 38,
+     "lines": 22004,
+     "clones": 87,
+     "duplicatedLines": 979,
+     "percentage": 4.45
+    },
+    {
+     "format": "java",
+     "sources": 92,
+     "lines": 6134,
+     "clones": 38,
+     "duplicatedLines": 347,
+     "percentage": 5.66
+    },
+    {
+     "format": "go",
+     "sources": 12,
+     "lines": 4141,
+     "clones": 28,
+     "duplicatedLines": 278,
+     "percentage": 6.71
+    },
+    {
+     "format": "csharp",
+     "sources": 37,
+     "lines": 4164,
+     "clones": 15,
+     "duplicatedLines": 259,
+     "percentage": 6.22
+    },
+    {
+     "format": "html",
+     "sources": 16,
+     "lines": 684,
+     "clones": 9,
+     "duplicatedLines": 162,
+     "percentage": 23.68
+    },
+    {
+     "format": "ruby",
+     "sources": 36,
+     "lines": 2580,
+     "clones": 7,
+     "duplicatedLines": 81,
+     "percentage": 3.14
+    },
+    {
+     "format": "css",
+     "sources": 6,
+     "lines": 350,
+     "clones": 2,
+     "duplicatedLines": 156,
+     "percentage": 44.57
+    }
+   ],
+   "topClones": [
+    {
+     "format": "typescript",
+     "lines": 10,
+     "tokens": 99,
+     "first": {
+      "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+      "start": 846,
+      "end": 855
+     },
+     "others": [
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 884,
+       "end": 893
+      },
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 1146,
+       "end": 1155
+      },
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 1780,
+       "end": 1789
+      },
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 1811,
+       "end": 1820
+      },
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 2032,
+       "end": 2041
+      },
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 2063,
+       "end": 2072
+      },
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 2090,
+       "end": 2099
+      },
+      {
+       "name": "apps/js-sdk/firecrawl/src/v1/index.ts",
+       "start": 2115,
+       "end": 2124
+      }
+     ],
+     "copies": 12,
+     "excerpt": {
+      "lines": [
+       "    this.handleError(response, \"search\");",
+       "  }",
+       "} catch (error: any) {",
+       "  if (error.response?.data?.error) {",
+       "    throw new FirecrawlError(`Request failed with status code ${error.response.status}. Error: ${error.response.data.error} ${error.response.data.details ? ` -…",
+       "  } else {",
+       "    throw new FirecrawlError(error.message, 500);",
+       "  }",
+       "}",
+       "return { success: false, error: \"Internal server error.\", data: [] };"
+      ],
+      "total": 10
+     },
+     "excerptSecond": {
+      "lines": [
+       "    this.handleError(response, \"start crawl job\");",
+       "  }",
+       "} catch (error: any) {",
+       "  if (error.response?.data?.error) {",
+       "    throw new FirecrawlError(`Request failed with status code ${error.response.status}. Error: ${error.response.data.error} ${error.response.data.details ? ` -…",
+       "  } else {",
+       "    throw new FirecrawlError(error.message, 500);",
+       "  }",
+       "}",
+       "return { success: false, error: \"Internal server error.\" };"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 70,
+     "tokens": 537,
+     "first": {
+      "name": "apps/python-sdk/firecrawl/v1/client.py",
+      "start": 1513,
+      "end": 1582
+     },
+     "others": [
+      {
+       "name": "apps/python-sdk/firecrawl/v1/client.py",
+       "start": 1654,
+       "end": 1723
+      },
+      {
+       "name": "apps/python-sdk/firecrawl/v1/client.py",
+       "start": 1790,
+       "end": 1859
+      }
+     ],
+     "copies": 3,
+     "excerpt": {
+      "lines": [
+       "self._validate_kwargs(kwargs, \"batch_scrape_urls\")",
+       "",
+       "scrape_params = {}",
+       "",
+       "# Add individual parameters",
+       "if formats is not None:",
+       "    scrape_params['formats'] = formats",
+       "if headers is not None:",
+       "    scrape_params['headers'] = headers",
+       "if include_tags is not None:"
+      ],
+      "total": 70
+     },
+     "kind": "code"
+    },
+    {
+     "format": "php",
+     "lines": 6,
+     "tokens": 56,
+     "first": {
+      "name": "apps/php-sdk/src/Models/AgentExchangeSummary.php",
+      "start": 25,
+      "end": 30
+     },
+     "others": [
+      {
+       "name": "apps/php-sdk/src/Models/AgentPendingApprovalCall.php",
+       "start": 20,
+       "end": 25
+      },
+      {
+       "name": "apps/php-sdk/src/Models/AgentPendingApprovalResolution.php",
+       "start": 15,
+       "end": 20
+      },
+      {
+       "name": "apps/php-sdk/src/Models/AgentResponse.php",
+       "start": 14,
+       "end": 19
+      },
+      {
+       "name": "apps/php-sdk/src/Models/AgentSkippedProvider.php",
+       "start": 17,
+       "end": 22
+      },
+      {
+       "name": "apps/php-sdk/src/Models/AgentTermsActionProvider.php",
+       "start": 23,
+       "end": 28
+      },
+      {
+       "name": "apps/php-sdk/src/Models/AgentTermsGate.php",
+       "start": 18,
+       "end": 23
+      },
+      {
+       "name": "apps/php-sdk/src/Models/AgentTraceActiveBrowserSession.php",
+       "start": 12,
+       "end": 17
+      },
+      {
+       "name": "apps/php-sdk/src/Models/AgentTraceAgentIdentity.php",
+       "start": 13,
+       "end": 18
+      }
+     ],
+     "copies": 19,
+     "excerpt": {
+      "lines": [
+       "    private readonly ?AgentTermsRequiredAction $requiresAction = null,",
+       ") {}",
+       "",
+       "/** @param array<string, mixed> $data */",
+       "public static function fromArray(array $data): self",
+       "{"
+      ],
+      "total": 6
+     },
+     "kind": "code"
+    },
+    {
+     "format": "css",
+     "lines": 78,
+     "tokens": 443,
+     "first": {
+      "name": "apps/test-site/src/pages/blog/category/[...slug].astro",
+      "start": 57,
+      "end": 134
+     },
+     "others": [
+      {
+       "name": "apps/test-site/src/pages/blog/category/deep/nested/path/index.astro",
+       "start": 39,
+       "end": 116
+      },
+      {
+       "name": "apps/test-site/src/pages/blog/index.astro",
+       "start": 38,
+       "end": 115
+      }
+     ],
+     "copies": 3,
+     "kind": "code"
+    },
+    {
+     "format": "php",
+     "lines": 69,
+     "tokens": 708,
+     "first": {
+      "name": "apps/php-sdk/src/Models/Menu.php",
+      "start": 61,
+      "end": 129
+     },
+     "others": [
+      {
+       "name": "apps/php-sdk/src/Models/Product.php",
+       "start": 37,
+       "end": 105
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 105,
+     "tokens": 608,
+     "first": {
+      "name": "apps/api/src/controllers/v1/crawl-errors.ts",
+      "start": 1,
+      "end": 105
+     },
+     "others": [
+      {
+       "name": "apps/api/src/controllers/v2/crawl-errors.ts",
+       "start": 1,
+       "end": 105
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "php",
+     "lines": 9,
+     "tokens": 577,
+     "first": {
+      "name": "apps/php-sdk/src/Client/FirecrawlClient.php",
+      "start": 483,
+      "end": 491
+     },
+     "others": [
+      {
+       "name": "apps/php-sdk/src/Models/Monitor.php",
+       "start": 10,
+       "end": 18
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 80,
+     "tokens": 577,
+     "first": {
+      "name": "apps/python-sdk/firecrawl/v2/methods/agent.py",
+      "start": 17,
+      "end": 96
+     },
+     "others": [
+      {
+       "name": "apps/python-sdk/firecrawl/v2/methods/aio/agent.py",
+       "start": 17,
+       "end": 96
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    },
+    {
+     "format": "typescript",
+     "lines": 20,
+     "tokens": 76,
+     "first": {
+      "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+      "start": 19,
+      "end": 38
+     },
+     "others": [
+      {
+       "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+       "start": 207,
+       "end": 226
+      },
+      {
+       "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+       "start": 7793,
+       "end": 7812
+      },
+      {
+       "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+       "start": 10842,
+       "end": 10861
+      },
+      {
+       "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+       "start": 14082,
+       "end": 14101
+      },
+      {
+       "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+       "start": 14270,
+       "end": 14289
+      },
+      {
+       "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+       "start": 14786,
+       "end": 14805
+      },
+      {
+       "name": "apps/api/src/lib/extract/usage/model-prices.ts",
+       "start": 15139,
+       "end": 15158
+      }
+     ],
+     "copies": 8,
+     "kind": "code"
+    },
+    {
+     "format": "python",
+     "lines": 65,
+     "tokens": 506,
+     "first": {
+      "name": "apps/python-sdk/firecrawl/v1/client.py",
+      "start": 2634,
+      "end": 2698
+     },
+     "others": [
+      {
+       "name": "apps/python-sdk/firecrawl/v1/client.py",
+       "start": 4997,
+       "end": 5061
+      }
+     ],
+     "copies": 2,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 1,
+    "minified": 0,
+    "sample": [
+     "apps/api/src/lib/threat-protection/types.ts"
+    ]
+   }
+  },
+  "health": {
+   "score": 57.7,
+   "grade": "C",
+   "size": {
+    "lines": 434762,
+    "files": 1779,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 10.4,
+     "adjusted": 10.4,
+     "lines": 45165,
+     "halfLife": 8.5,
+     "formats": [
+      "typescript",
+      "python",
+      "rust",
+      "java",
+      "php",
+      "go",
+      "csharp",
+      "elixir",
+      "ruby",
+      "javascript",
+      "astro",
+      "bash",
+      "sql",
+      "docker",
+      "makefile",
+      "kotlin"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 43
+    },
+    {
+     "id": "dead-code",
+     "source": "jscpd",
+     "value": 0.8,
+     "adjusted": 0.8,
+     "lines": 2836,
+     "halfLife": 7.5,
+     "coverage": 84.9,
+     "weight": 0.849,
+     "score": 93
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 47.8,
+     "adjusted": 47.7,
+     "lines": 207929,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 51.6
+    }
+   ]
+  },
+  "complexity": {
+   "total": 55033,
+   "mean": 30.9,
+   "files": [
+    {
+     "path": "apps/python-sdk/firecrawl/v1/client.py",
+     "complexity": 865,
+     "lines": 5373,
+     "bytes": 231405
+    },
+    {
+     "path": "apps/api/src/scraper/scrapeURL/engines/fire-engine/branding-script/images.ts",
+     "complexity": 530,
+     "lines": 1430,
+     "bytes": 48016
+    },
+    {
+     "path": "apps/api/src/controllers/v2/types.ts",
+     "complexity": 421,
+     "lines": 3117,
+     "bytes": 98549
+    },
+    {
+     "path": "apps/api/src/lib/branding/jev.ts",
+     "complexity": 364,
+     "lines": 1344,
+     "bytes": 48941
+    },
+    {
+     "path": "apps/api/src/scraper/scrapeURL/index.ts",
+     "complexity": 315,
+     "lines": 2065,
+     "bytes": 75252
+    },
+    {
+     "path": "apps/go-sdk/firecrawl.go",
+     "complexity": 314,
+     "lines": 1397,
+     "bytes": 41316
+    },
+    {
+     "path": "apps/api/src/services/worker/scrape-worker.ts",
+     "complexity": 307,
+     "lines": 1939,
+     "bytes": 66708
+    },
+    {
+     "path": "apps/api/src/services/worker/nuq-fdb/queue.ts",
+     "complexity": 278,
+     "lines": 1470,
+     "bytes": 45482
+    },
+    {
+     "path": "apps/api/src/services/monitoring/runner.ts",
+     "complexity": 277,
+     "lines": 2019,
+     "bytes": 63925
+    },
+    {
+     "path": "apps/js-sdk/firecrawl/src/v1/index.ts",
+     "complexity": 275,
+     "lines": 2328,
+     "bytes": 75637
+    }
+   ]
+  },
+  "deadCode": {
+   "percentage": 0.77,
+   "findings": 217,
+   "files": 1412,
+   "byCategory": [
+    {
+     "category": "unused-file",
+     "count": 12
+    },
+    {
+     "category": "unused-export",
+     "count": 8
+    },
+    {
+     "category": "unused-symbol",
+     "count": 101
+    },
+    {
+     "category": "unused-import",
+     "count": 96
+    }
+   ],
+   "largest": [
+    {
+     "category": "unused-file",
+     "path": "apps/python-sdk/firecrawl/types.py",
+     "name": "",
+     "line": 1,
+     "lines": 217
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/python-sdk/example_v2.py",
+     "name": "",
+     "line": 1,
+     "lines": 136
+    },
+    {
+     "category": "unused-symbol",
+     "path": "apps/api/src/harness.ts",
+     "name": "startServices",
+     "line": 821,
+     "lines": 130
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/js-sdk/example.ts",
+     "name": "",
+     "line": 1,
+     "lines": 112
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/python-sdk/example_pagination.py",
+     "name": "",
+     "line": 1,
+     "lines": 111
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/js-sdk/example.js",
+     "name": "",
+     "line": 1,
+     "lines": 110
+    },
+    {
+     "category": "unused-symbol",
+     "path": "apps/api/src/harness.ts",
+     "name": "runDevMode",
+     "line": 995,
+     "lines": 106
+    },
+    {
+     "category": "unused-symbol",
+     "path": "apps/api/src/services/worker/nuq-fdb-worker.ts",
+     "name": "startCrawlFinishedLoop",
+     "line": 47,
+     "lines": 87
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/api/src/lib/threat-protection/providers/web-risk/fake-redis.ts",
+     "name": "",
+     "line": 1,
+     "lines": 73
+    },
+    {
+     "category": "unused-file",
+     "path": "apps/js-sdk/example_pagination.ts",
+     "name": "",
+     "line": 1,
+     "lines": 72
+    }
+   ]
+  }
+ }
+}

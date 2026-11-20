@@ -49,38 +49,54 @@
    "codeSources": 162,
    "healthScore": 64.8,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-11-20",
+   "rank": 6,
+   "stars": 70942,
+   "starsToday": 954,
+   "headSha": "262391603f3c2807606bffa0170547273fc273e5",
+   "sources": 782,
+   "lines": 295134,
+   "clones": 706,
+   "duplicatedLines": 9027,
+   "percentage": 3.06,
+   "codePercentage": 1.01,
+   "codeSources": 163,
+   "healthScore": 64.8,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-11-19",
-  "generatedAt": "2026-11-19T05:21:49.273Z",
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T05:22:13.386Z",
   "name": "mvanhorn/last30days-skill",
   "url": "https://github.com/mvanhorn/last30days-skill",
   "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
   "language": "Python",
-  "stars": 70203,
-  "starsToday": 1059,
+  "stars": 70942,
+  "starsToday": 954,
   "defaultBranch": "main",
-  "headSha": "a854f3bcb2c4344d7498426d653378510f8b253a",
-  "durationMs": 2132,
+  "headSha": "262391603f3c2807606bffa0170547273fc273e5",
+  "durationMs": 2197,
   "total": {
-   "sources": 777,
-   "lines": 293604,
-   "tokens": 1905511,
-   "clones": 703,
-   "duplicatedLines": 9001,
-   "duplicatedTokens": 51825,
-   "percentage": 3.07,
+   "sources": 782,
+   "lines": 295134,
+   "tokens": 1916403,
+   "clones": 706,
+   "duplicatedLines": 9027,
+   "duplicatedTokens": 52061,
+   "percentage": 3.06,
    "percentageTokens": 2.72
   },
   "formats": [
    {
     "format": "python",
-    "sources": 520,
-    "lines": 230153,
-    "clones": 487,
-    "duplicatedLines": 5354,
-    "percentage": 2.33
+    "sources": 523,
+    "lines": 231554,
+    "clones": 490,
+    "duplicatedLines": 5380,
+    "percentage": 2.32
    },
    {
     "format": "json",
@@ -100,19 +116,19 @@
    },
    {
     "format": "markdown",
-    "sources": 72,
-    "lines": 14076,
+    "sources": 73,
+    "lines": 14191,
     "clones": 20,
     "duplicatedLines": 278,
-    "percentage": 1.97
+    "percentage": 1.96
    },
    {
     "format": "bash",
-    "sources": 32,
-    "lines": 1380,
+    "sources": 33,
+    "lines": 1394,
     "clones": 18,
     "duplicatedLines": 237,
-    "percentage": 17.17
+    "percentage": 17
    },
    {
     "format": "text",
@@ -678,19 +694,19 @@
    }
   ],
   "code": {
-   "sources": 162,
-   "lines": 96414,
-   "tokens": 585556,
+   "sources": 163,
+   "lines": 97097,
+   "tokens": 589348,
    "clones": 95,
    "duplicatedLines": 981,
    "duplicatedTokens": 6405,
-   "percentage": 1.02,
+   "percentage": 1.01,
    "percentageTokens": 1.09,
    "formats": [
     {
      "format": "python",
-     "sources": 144,
-     "lines": 94483,
+     "sources": 145,
+     "lines": 95166,
      "clones": 91,
      "duplicatedLines": 921,
      "percentage": 0.97
@@ -1018,8 +1034,8 @@
    "score": 64.8,
    "grade": "C",
    "size": {
-    "lines": 234445,
-    "files": 539,
+    "lines": 235846,
+    "files": 542,
     "class": "L"
    },
    "dimensions": [
@@ -1028,7 +1044,7 @@
      "source": "jscpd",
      "value": 2.3,
      "adjusted": 2.3,
-     "lines": 5384,
+     "lines": 5410,
      "halfLife": 8.5,
      "formats": [
       "python",
@@ -1047,7 +1063,7 @@
      "id": "dead-code",
      "source": "jscpd",
      "value": 0.7,
-     "adjusted": 0.8,
+     "adjusted": 0.7,
      "lines": 1685,
      "halfLife": 7.5,
      "coverage": 98,
@@ -1057,18 +1073,18 @@
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 75.2,
-     "adjusted": 74.7,
-     "lines": 176318,
+     "value": 75.3,
+     "adjusted": 74.9,
+     "lines": 177662,
      "halfLife": 50,
      "weight": 1,
-     "score": 35.5
+     "score": 35.4
     }
    ]
   },
   "complexity": {
-   "total": 36721,
-   "mean": 68.1,
+   "total": 36981,
+   "mean": 68.2,
    "files": [
     {
      "path": "skills/last30days/scripts/lib/pipeline.py",
@@ -1078,9 +1094,15 @@
     },
     {
      "path": "skills/last30days/scripts/last30days.py",
-     "complexity": 1362,
-     "lines": 5474,
-     "bytes": 240497
+     "complexity": 1372,
+     "lines": 5517,
+     "bytes": 242313
+    },
+    {
+     "path": "skills/last30days/scripts/lib/doctor.py",
+     "complexity": 576,
+     "lines": 2555,
+     "bytes": 105235
     },
     {
      "path": "skills/last30days/scripts/lib/youtube_yt.py",
@@ -1089,22 +1111,16 @@
      "bytes": 102861
     },
     {
-     "path": "skills/last30days/scripts/lib/doctor.py",
-     "complexity": 565,
-     "lines": 2527,
-     "bytes": 103922
+     "path": "skills/last30days/scripts/lib/env.py",
+     "complexity": 487,
+     "lines": 2442,
+     "bytes": 104782
     },
     {
      "path": "skills/last30days/scripts/lib/jobs.py",
      "complexity": 481,
      "lines": 3846,
      "bytes": 163096
-    },
-    {
-     "path": "skills/last30days/scripts/lib/env.py",
-     "complexity": 480,
-     "lines": 2415,
-     "bytes": 103678
     },
     {
      "path": "tests/test_pipeline_v3.py",
@@ -1122,7 +1138,7 @@
      "path": "skills/last30days/scripts/lib/planner.py",
      "complexity": 415,
      "lines": 1397,
-     "bytes": 61222
+     "bytes": 61213
     },
     {
      "path": "skills/last30days/scripts/lib/normalize.py",
@@ -1135,7 +1151,7 @@
   "deadCode": {
    "percentage": 0.73,
    "findings": 54,
-   "files": 515,
+   "files": 518,
    "byCategory": [
     {
      "category": "unused-file",

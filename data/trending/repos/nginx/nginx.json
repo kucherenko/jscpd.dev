@@ -1,0 +1,1526 @@
+{
+ "name": "nginx/nginx",
+ "url": "https://github.com/nginx/nginx",
+ "appearances": [
+  {
+   "date": "2026-11-20",
+   "rank": 5,
+   "stars": 32388,
+   "starsToday": 73,
+   "headSha": "2e8440bcdc438f0f1cd03da778a3843ddb3c86d9",
+   "sources": 448,
+   "lines": 295447,
+   "clones": 3350,
+   "duplicatedLines": 50836,
+   "percentage": 17.21,
+   "codePercentage": 19.18,
+   "codeSources": 415,
+   "healthScore": 26.1,
+   "healthGrade": "E"
+  }
+ ],
+ "latest": {
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T05:22:13.386Z",
+  "name": "nginx/nginx",
+  "url": "https://github.com/nginx/nginx",
+  "description": "The official NGINX Open Source repository.",
+  "language": "C",
+  "stars": 32388,
+  "starsToday": 73,
+  "defaultBranch": "master",
+  "headSha": "2e8440bcdc438f0f1cd03da778a3843ddb3c86d9",
+  "durationMs": 2173,
+  "total": {
+   "sources": 448,
+   "lines": 295447,
+   "tokens": 1727015,
+   "clones": 3350,
+   "duplicatedLines": 50836,
+   "duplicatedTokens": 329074,
+   "percentage": 17.21,
+   "percentageTokens": 19.05
+  },
+  "formats": [
+   {
+    "format": "c",
+    "sources": 268,
+    "lines": 241396,
+    "clones": 3099,
+    "duplicatedLines": 48097,
+    "percentage": 19.92
+   },
+   {
+    "format": "c-header",
+    "sources": 142,
+    "lines": 16821,
+    "clones": 169,
+    "duplicatedLines": 1534,
+    "percentage": 9.12
+   },
+   {
+    "format": "markup",
+    "sources": 5,
+    "lines": 33139,
+    "clones": 77,
+    "duplicatedLines": 1164,
+    "percentage": 3.51
+   },
+   {
+    "format": "yaml",
+    "sources": 14,
+    "lines": 492,
+    "clones": 4,
+    "duplicatedLines": 32,
+    "percentage": 6.5
+   },
+   {
+    "format": "makefile",
+    "sources": 3,
+    "lines": 224,
+    "clones": 1,
+    "duplicatedLines": 9,
+    "percentage": 4.02
+   },
+   {
+    "format": "vim",
+    "sources": 1,
+    "lines": 1976,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "markdown",
+    "sources": 6,
+    "lines": 662,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "perl",
+    "sources": 4,
+    "lines": 349,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "bash",
+    "sources": 3,
+    "lines": 242,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   },
+   {
+    "format": "nginx",
+    "sources": 1,
+    "lines": 115,
+    "clones": 0,
+    "duplicatedLines": 0,
+    "percentage": 0
+   }
+  ],
+  "topClones": [
+   {
+    "format": "c",
+    "lines": 9,
+    "tokens": 74,
+    "first": {
+     "name": "src/core/nginx.c",
+     "start": 2,
+     "end": 10
+    },
+    "others": [
+     {
+      "name": "src/core/ngx_conf_file.c",
+      "start": 2,
+      "end": 11
+     },
+     {
+      "name": "src/core/ngx_connection.c",
+      "start": 2,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_cpuinfo.c",
+      "start": 2,
+      "end": 12
+     },
+     {
+      "name": "src/core/ngx_cycle.c",
+      "start": 2,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_open_file_cache.c",
+      "start": 2,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_output_chain.c",
+      "start": 2,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_resolver.c",
+      "start": 2,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_shmtx.c",
+      "start": 2,
+      "end": 12
+     }
+    ],
+    "copies": 143,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Copyright (C) Igor Sysoev",
+      " * Copyright (C) Nginx, Inc.",
+      " */",
+      "",
+      "",
+      "#include <ngx_config.h>",
+      "#include <ngx_core.h>",
+      "#include <nginx.h>"
+     ],
+     "total": 9
+    },
+    "excerptSecond": {
+     "lines": [
+      "/*",
+      " * Copyright (C) Igor Sysoev",
+      " * Copyright (C) Nginx, Inc.",
+      " */",
+      "",
+      "",
+      "#include <ngx_config.h>",
+      "#include <ngx_core.h>",
+      "",
+      "#define NGX_CONF_BUFFER  4096"
+     ],
+     "total": 10
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 14,
+    "tokens": 164,
+    "first": {
+     "name": "src/http/modules/ngx_http_access_module.c",
+     "start": 109,
+     "end": 122
+    },
+    "others": [
+     {
+      "name": "src/http/modules/ngx_http_addition_filter_module.c",
+      "start": 78,
+      "end": 91
+     },
+     {
+      "name": "src/http/modules/ngx_http_auth_basic_module.c",
+      "start": 76,
+      "end": 89
+     },
+     {
+      "name": "src/http/modules/ngx_http_auth_request_module.c",
+      "start": 88,
+      "end": 101
+     },
+     {
+      "name": "src/http/modules/ngx_http_autoindex_module.c",
+      "start": 137,
+      "end": 150
+     },
+     {
+      "name": "src/http/modules/ngx_http_browser_module.c",
+      "start": 127,
+      "end": 140
+     },
+     {
+      "name": "src/http/modules/ngx_http_charset_filter_module.c",
+      "start": 199,
+      "end": 212
+     },
+     {
+      "name": "src/http/modules/ngx_http_chunked_filter_module.c",
+      "start": 42,
+      "end": 55
+     },
+     {
+      "name": "src/http/modules/ngx_http_dav_module.c",
+      "start": 132,
+      "end": 145
+     }
+    ],
+    "copies": 53,
+    "excerpt": {
+     "lines": [
+      "ngx_http_access_commands,              /* module directives */",
+      "NGX_HTTP_MODULE,                       /* module type */",
+      "NULL,                                  /* init master */",
+      "NULL,                                  /* init module */",
+      "NULL,                                  /* init process */",
+      "NULL,                                  /* init thread */",
+      "NULL,                                  /* exit thread */",
+      "NULL,                                  /* exit process */",
+      "NULL,                                  /* exit master */",
+      "NGX_MODULE_V1_PADDING"
+     ],
+     "total": 14
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c-header",
+    "lines": 7,
+    "tokens": 61,
+    "first": {
+     "name": "src/core/nginx.h",
+     "start": 2,
+     "end": 8
+    },
+    "others": [
+     {
+      "name": "src/core/ngx_array.h",
+      "start": 2,
+      "end": 8
+     },
+     {
+      "name": "src/core/ngx_buf.h",
+      "start": 2,
+      "end": 8
+     },
+     {
+      "name": "src/core/ngx_conf_file.h",
+      "start": 2,
+      "end": 8
+     },
+     {
+      "name": "src/core/ngx_config.h",
+      "start": 2,
+      "end": 8
+     },
+     {
+      "name": "src/core/ngx_connection.h",
+      "start": 2,
+      "end": 8
+     },
+     {
+      "name": "src/core/ngx_core.h",
+      "start": 2,
+      "end": 8
+     },
+     {
+      "name": "src/core/ngx_crc.h",
+      "start": 2,
+      "end": 8
+     },
+     {
+      "name": "src/core/ngx_crc32.h",
+      "start": 2,
+      "end": 8
+     }
+    ],
+    "copies": 100,
+    "excerpt": {
+     "lines": [
+      "/*",
+      " * Copyright (C) Igor Sysoev",
+      " * Copyright (C) Nginx, Inc.",
+      " */",
+      "",
+      "",
+      "#ifndef _NGINX_H_INCLUDED_"
+     ],
+     "total": 7
+    },
+    "excerptSecond": {
+     "lines": [
+      "/*",
+      " * Copyright (C) Igor Sysoev",
+      " * Copyright (C) Nginx, Inc.",
+      " */",
+      "",
+      "",
+      "#ifndef _NGX_ARRAY_H_INCLUDED_"
+     ],
+     "total": 7
+    },
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 7,
+    "tokens": 147,
+    "first": {
+     "name": "src/http/modules/ngx_http_access_module.c",
+     "start": 93,
+     "end": 99
+    },
+    "others": [
+     {
+      "name": "src/http/modules/ngx_http_addition_filter_module.c",
+      "start": 62,
+      "end": 68
+     },
+     {
+      "name": "src/http/modules/ngx_http_auth_basic_module.c",
+      "start": 60,
+      "end": 66
+     },
+     {
+      "name": "src/http/modules/ngx_http_auth_request_module.c",
+      "start": 72,
+      "end": 78
+     },
+     {
+      "name": "src/http/modules/ngx_http_autoindex_module.c",
+      "start": 121,
+      "end": 127
+     },
+     {
+      "name": "src/http/modules/ngx_http_browser_module.c",
+      "start": 111,
+      "end": 117
+     },
+     {
+      "name": "src/http/modules/ngx_http_chunked_filter_module.c",
+      "start": 26,
+      "end": 32
+     },
+     {
+      "name": "src/http/modules/ngx_http_dav_module.c",
+      "start": 116,
+      "end": 122
+     },
+     {
+      "name": "src/http/modules/ngx_http_gunzip_filter_module.c",
+      "start": 87,
+      "end": 93
+     }
+    ],
+    "copies": 35,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 14,
+    "tokens": 164,
+    "first": {
+     "name": "src/stream/ngx_stream_access_module.c",
+     "start": 105,
+     "end": 118
+    },
+    "others": [
+     {
+      "name": "src/stream/ngx_stream_geoip_module.c",
+      "start": 193,
+      "end": 206
+     },
+     {
+      "name": "src/stream/ngx_stream_limit_conn_module.c",
+      "start": 136,
+      "end": 149
+     },
+     {
+      "name": "src/stream/ngx_stream_log_module.c",
+      "start": 190,
+      "end": 203
+     },
+     {
+      "name": "src/stream/ngx_stream_map_module.c",
+      "start": 92,
+      "end": 105
+     },
+     {
+      "name": "src/stream/ngx_stream_pass_module.c",
+      "start": 58,
+      "end": 71
+     },
+     {
+      "name": "src/stream/ngx_stream_proxy_module.c",
+      "start": 426,
+      "end": 439
+     },
+     {
+      "name": "src/stream/ngx_stream_realip_module.c",
+      "start": 71,
+      "end": 84
+     },
+     {
+      "name": "src/stream/ngx_stream_return_module.c",
+      "start": 58,
+      "end": 71
+     }
+    ],
+    "copies": 19,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 8,
+    "tokens": 73,
+    "first": {
+     "name": "src/core/nginx.c",
+     "start": 2,
+     "end": 9
+    },
+    "others": [
+     {
+      "name": "src/core/ngx_array.c",
+      "start": 2,
+      "end": 9
+     },
+     {
+      "name": "src/core/ngx_buf.c",
+      "start": 2,
+      "end": 9
+     },
+     {
+      "name": "src/core/ngx_crc32.c",
+      "start": 2,
+      "end": 9
+     },
+     {
+      "name": "src/core/ngx_file.c",
+      "start": 2,
+      "end": 9
+     },
+     {
+      "name": "src/core/ngx_hash.c",
+      "start": 2,
+      "end": 9
+     },
+     {
+      "name": "src/core/ngx_inet.c",
+      "start": 2,
+      "end": 9
+     },
+     {
+      "name": "src/core/ngx_list.c",
+      "start": 2,
+      "end": 9
+     },
+     {
+      "name": "src/core/ngx_log.c",
+      "start": 2,
+      "end": 9
+     }
+    ],
+    "copies": 39,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 8,
+    "tokens": 53,
+    "first": {
+     "name": "src/core/ngx_connection.c",
+     "start": 3,
+     "end": 10
+    },
+    "others": [
+     {
+      "name": "src/core/ngx_cycle.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_open_file_cache.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_output_chain.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/core/ngx_resolver.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/event/modules/ngx_devpoll_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/event/modules/ngx_epoll_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/event/modules/ngx_eventport_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/event/modules/ngx_kqueue_module.c",
+      "start": 3,
+      "end": 10
+     }
+    ],
+    "copies": 52,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 8,
+    "tokens": 53,
+    "first": {
+     "name": "src/http/modules/ngx_http_access_module.c",
+     "start": 3,
+     "end": 10
+    },
+    "others": [
+     {
+      "name": "src/http/modules/ngx_http_auth_basic_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/http/modules/ngx_http_autoindex_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/http/modules/ngx_http_browser_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/http/modules/ngx_http_charset_filter_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/http/modules/ngx_http_dav_module.c",
+      "start": 3,
+      "end": 10
+     },
+     {
+      "name": "src/http/modules/ngx_http_empty_gif_module.c",
+      "start": 3,
+      "end": 9
+     },
+     {
+      "name": "src/http/modules/ngx_http_flv_module.c",
+      "start": 3,
+      "end": 9
+     },
+     {
+      "name": "src/http/modules/ngx_http_geoip_module.c",
+      "start": 3,
+      "end": 10
+     }
+    ],
+    "copies": 44,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 9,
+    "tokens": 67,
+    "first": {
+     "name": "src/http/modules/ngx_http_addition_filter_module.c",
+     "start": 218,
+     "end": 226
+    },
+    "others": [
+     {
+      "name": "src/http/modules/ngx_http_auth_request_module.c",
+      "start": 313,
+      "end": 321
+     },
+     {
+      "name": "src/http/modules/ngx_http_browser_module.c",
+      "start": 422,
+      "end": 430
+     },
+     {
+      "name": "src/http/modules/ngx_http_dav_module.c",
+      "start": 1206,
+      "end": 1214
+     },
+     {
+      "name": "src/http/modules/ngx_http_fastcgi_module.c",
+      "start": 2915,
+      "end": 2923
+     },
+     {
+      "name": "src/http/modules/ngx_http_grpc_module.c",
+      "start": 4521,
+      "end": 4529
+     },
+     {
+      "name": "src/http/modules/ngx_http_gunzip_filter_module.c",
+      "start": 655,
+      "end": 663
+     },
+     {
+      "name": "src/http/modules/ngx_http_gzip_filter_module.c",
+      "start": 1069,
+      "end": 1077
+     },
+     {
+      "name": "src/http/modules/ngx_http_headers_filter_module.c",
+      "start": 676,
+      "end": 684
+     }
+    ],
+    "copies": 33,
+    "kind": "code"
+   },
+   {
+    "format": "c",
+    "lines": 9,
+    "tokens": 120,
+    "first": {
+     "name": "src/http/modules/ngx_http_chunked_filter_module.c",
+     "start": 31,
+     "end": 39
+    },
+    "others": [
+     {
+      "name": "src/http/modules/ngx_http_empty_gif_module.c",
+      "start": 85,
+      "end": 93
+     },
+     {
+      "name": "src/http/modules/ngx_http_geoip_module.c",
+      "start": 204,
+      "end": 212
+     },
+     {
+      "name": "src/http/modules/ngx_http_json_module.c",
+      "start": 126,
+      "end": 134
+     },
+     {
+      "name": "src/http/modules/ngx_http_map_module.c",
+      "start": 83,
+      "end": 91
+     },
+     {
+      "name": "src/http/modules/ngx_http_not_modified_filter_module.c",
+      "start": 27,
+      "end": 35
+     },
+     {
+      "name": "src/http/modules/ngx_http_static_module.c",
+      "start": 24,
+      "end": 32
+     },
+     {
+      "name": "src/http/modules/ngx_http_stub_status_module.c",
+      "start": 41,
+      "end": 49
+     },
+     {
+      "name": "src/http/modules/ngx_http_upstream_hash_module.c",
+      "start": 91,
+      "end": 99
+     }
+    ],
+    "copies": 17,
+    "kind": "code"
+   }
+  ],
+  "code": {
+   "sources": 415,
+   "lines": 258507,
+   "tokens": 1525890,
+   "clones": 3262,
+   "duplicatedLines": 49577,
+   "duplicatedTokens": 323074,
+   "percentage": 19.18,
+   "percentageTokens": 21.17,
+   "formats": [
+    {
+     "format": "c",
+     "sources": 267,
+     "lines": 241185,
+     "clones": 3093,
+     "duplicatedLines": 48043,
+     "percentage": 19.92
+    },
+    {
+     "format": "c-header",
+     "sources": 142,
+     "lines": 16821,
+     "clones": 169,
+     "duplicatedLines": 1534,
+     "percentage": 9.12
+    },
+    {
+     "format": "perl",
+     "sources": 4,
+     "lines": 349,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "bash",
+     "sources": 1,
+     "lines": 121,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    },
+    {
+     "format": "cpp",
+     "sources": 1,
+     "lines": 31,
+     "clones": 0,
+     "duplicatedLines": 0,
+     "percentage": 0
+    }
+   ],
+   "topClones": [
+    {
+     "format": "c",
+     "lines": 9,
+     "tokens": 74,
+     "first": {
+      "name": "src/core/nginx.c",
+      "start": 2,
+      "end": 10
+     },
+     "others": [
+      {
+       "name": "src/core/ngx_conf_file.c",
+       "start": 2,
+       "end": 11
+      },
+      {
+       "name": "src/core/ngx_connection.c",
+       "start": 2,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_cpuinfo.c",
+       "start": 2,
+       "end": 12
+      },
+      {
+       "name": "src/core/ngx_cycle.c",
+       "start": 2,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_open_file_cache.c",
+       "start": 2,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_output_chain.c",
+       "start": 2,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_resolver.c",
+       "start": 2,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_shmtx.c",
+       "start": 2,
+       "end": 12
+      }
+     ],
+     "copies": 143,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Copyright (C) Igor Sysoev",
+       " * Copyright (C) Nginx, Inc.",
+       " */",
+       "",
+       "",
+       "#include <ngx_config.h>",
+       "#include <ngx_core.h>",
+       "#include <nginx.h>"
+      ],
+      "total": 9
+     },
+     "excerptSecond": {
+      "lines": [
+       "/*",
+       " * Copyright (C) Igor Sysoev",
+       " * Copyright (C) Nginx, Inc.",
+       " */",
+       "",
+       "",
+       "#include <ngx_config.h>",
+       "#include <ngx_core.h>",
+       "",
+       "#define NGX_CONF_BUFFER  4096"
+      ],
+      "total": 10
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 14,
+     "tokens": 164,
+     "first": {
+      "name": "src/http/modules/ngx_http_access_module.c",
+      "start": 109,
+      "end": 122
+     },
+     "others": [
+      {
+       "name": "src/http/modules/ngx_http_addition_filter_module.c",
+       "start": 78,
+       "end": 91
+      },
+      {
+       "name": "src/http/modules/ngx_http_auth_basic_module.c",
+       "start": 76,
+       "end": 89
+      },
+      {
+       "name": "src/http/modules/ngx_http_auth_request_module.c",
+       "start": 88,
+       "end": 101
+      },
+      {
+       "name": "src/http/modules/ngx_http_autoindex_module.c",
+       "start": 137,
+       "end": 150
+      },
+      {
+       "name": "src/http/modules/ngx_http_browser_module.c",
+       "start": 127,
+       "end": 140
+      },
+      {
+       "name": "src/http/modules/ngx_http_charset_filter_module.c",
+       "start": 199,
+       "end": 212
+      },
+      {
+       "name": "src/http/modules/ngx_http_chunked_filter_module.c",
+       "start": 42,
+       "end": 55
+      },
+      {
+       "name": "src/http/modules/ngx_http_dav_module.c",
+       "start": 132,
+       "end": 145
+      }
+     ],
+     "copies": 53,
+     "excerpt": {
+      "lines": [
+       "ngx_http_access_commands,              /* module directives */",
+       "NGX_HTTP_MODULE,                       /* module type */",
+       "NULL,                                  /* init master */",
+       "NULL,                                  /* init module */",
+       "NULL,                                  /* init process */",
+       "NULL,                                  /* init thread */",
+       "NULL,                                  /* exit thread */",
+       "NULL,                                  /* exit process */",
+       "NULL,                                  /* exit master */",
+       "NGX_MODULE_V1_PADDING"
+      ],
+      "total": 14
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c-header",
+     "lines": 7,
+     "tokens": 61,
+     "first": {
+      "name": "src/core/nginx.h",
+      "start": 2,
+      "end": 8
+     },
+     "others": [
+      {
+       "name": "src/core/ngx_array.h",
+       "start": 2,
+       "end": 8
+      },
+      {
+       "name": "src/core/ngx_buf.h",
+       "start": 2,
+       "end": 8
+      },
+      {
+       "name": "src/core/ngx_conf_file.h",
+       "start": 2,
+       "end": 8
+      },
+      {
+       "name": "src/core/ngx_config.h",
+       "start": 2,
+       "end": 8
+      },
+      {
+       "name": "src/core/ngx_connection.h",
+       "start": 2,
+       "end": 8
+      },
+      {
+       "name": "src/core/ngx_core.h",
+       "start": 2,
+       "end": 8
+      },
+      {
+       "name": "src/core/ngx_crc.h",
+       "start": 2,
+       "end": 8
+      },
+      {
+       "name": "src/core/ngx_crc32.h",
+       "start": 2,
+       "end": 8
+      }
+     ],
+     "copies": 100,
+     "excerpt": {
+      "lines": [
+       "/*",
+       " * Copyright (C) Igor Sysoev",
+       " * Copyright (C) Nginx, Inc.",
+       " */",
+       "",
+       "",
+       "#ifndef _NGINX_H_INCLUDED_"
+      ],
+      "total": 7
+     },
+     "excerptSecond": {
+      "lines": [
+       "/*",
+       " * Copyright (C) Igor Sysoev",
+       " * Copyright (C) Nginx, Inc.",
+       " */",
+       "",
+       "",
+       "#ifndef _NGX_ARRAY_H_INCLUDED_"
+      ],
+      "total": 7
+     },
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 7,
+     "tokens": 147,
+     "first": {
+      "name": "src/http/modules/ngx_http_access_module.c",
+      "start": 93,
+      "end": 99
+     },
+     "others": [
+      {
+       "name": "src/http/modules/ngx_http_addition_filter_module.c",
+       "start": 62,
+       "end": 68
+      },
+      {
+       "name": "src/http/modules/ngx_http_auth_basic_module.c",
+       "start": 60,
+       "end": 66
+      },
+      {
+       "name": "src/http/modules/ngx_http_auth_request_module.c",
+       "start": 72,
+       "end": 78
+      },
+      {
+       "name": "src/http/modules/ngx_http_autoindex_module.c",
+       "start": 121,
+       "end": 127
+      },
+      {
+       "name": "src/http/modules/ngx_http_browser_module.c",
+       "start": 111,
+       "end": 117
+      },
+      {
+       "name": "src/http/modules/ngx_http_chunked_filter_module.c",
+       "start": 26,
+       "end": 32
+      },
+      {
+       "name": "src/http/modules/ngx_http_dav_module.c",
+       "start": 116,
+       "end": 122
+      },
+      {
+       "name": "src/http/modules/ngx_http_gunzip_filter_module.c",
+       "start": 87,
+       "end": 93
+      }
+     ],
+     "copies": 35,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 14,
+     "tokens": 164,
+     "first": {
+      "name": "src/stream/ngx_stream_access_module.c",
+      "start": 105,
+      "end": 118
+     },
+     "others": [
+      {
+       "name": "src/stream/ngx_stream_geoip_module.c",
+       "start": 193,
+       "end": 206
+      },
+      {
+       "name": "src/stream/ngx_stream_limit_conn_module.c",
+       "start": 136,
+       "end": 149
+      },
+      {
+       "name": "src/stream/ngx_stream_log_module.c",
+       "start": 190,
+       "end": 203
+      },
+      {
+       "name": "src/stream/ngx_stream_map_module.c",
+       "start": 92,
+       "end": 105
+      },
+      {
+       "name": "src/stream/ngx_stream_pass_module.c",
+       "start": 58,
+       "end": 71
+      },
+      {
+       "name": "src/stream/ngx_stream_proxy_module.c",
+       "start": 426,
+       "end": 439
+      },
+      {
+       "name": "src/stream/ngx_stream_realip_module.c",
+       "start": 71,
+       "end": 84
+      },
+      {
+       "name": "src/stream/ngx_stream_return_module.c",
+       "start": 58,
+       "end": 71
+      }
+     ],
+     "copies": 19,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 8,
+     "tokens": 73,
+     "first": {
+      "name": "src/core/nginx.c",
+      "start": 2,
+      "end": 9
+     },
+     "others": [
+      {
+       "name": "src/core/ngx_array.c",
+       "start": 2,
+       "end": 9
+      },
+      {
+       "name": "src/core/ngx_buf.c",
+       "start": 2,
+       "end": 9
+      },
+      {
+       "name": "src/core/ngx_crc32.c",
+       "start": 2,
+       "end": 9
+      },
+      {
+       "name": "src/core/ngx_file.c",
+       "start": 2,
+       "end": 9
+      },
+      {
+       "name": "src/core/ngx_hash.c",
+       "start": 2,
+       "end": 9
+      },
+      {
+       "name": "src/core/ngx_inet.c",
+       "start": 2,
+       "end": 9
+      },
+      {
+       "name": "src/core/ngx_list.c",
+       "start": 2,
+       "end": 9
+      },
+      {
+       "name": "src/core/ngx_log.c",
+       "start": 2,
+       "end": 9
+      }
+     ],
+     "copies": 39,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 8,
+     "tokens": 53,
+     "first": {
+      "name": "src/core/ngx_connection.c",
+      "start": 3,
+      "end": 10
+     },
+     "others": [
+      {
+       "name": "src/core/ngx_cycle.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_open_file_cache.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_output_chain.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/core/ngx_resolver.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/event/modules/ngx_devpoll_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/event/modules/ngx_epoll_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/event/modules/ngx_eventport_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/event/modules/ngx_kqueue_module.c",
+       "start": 3,
+       "end": 10
+      }
+     ],
+     "copies": 52,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 8,
+     "tokens": 53,
+     "first": {
+      "name": "src/http/modules/ngx_http_access_module.c",
+      "start": 3,
+      "end": 10
+     },
+     "others": [
+      {
+       "name": "src/http/modules/ngx_http_auth_basic_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/http/modules/ngx_http_autoindex_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/http/modules/ngx_http_browser_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/http/modules/ngx_http_charset_filter_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/http/modules/ngx_http_dav_module.c",
+       "start": 3,
+       "end": 10
+      },
+      {
+       "name": "src/http/modules/ngx_http_empty_gif_module.c",
+       "start": 3,
+       "end": 9
+      },
+      {
+       "name": "src/http/modules/ngx_http_flv_module.c",
+       "start": 3,
+       "end": 9
+      },
+      {
+       "name": "src/http/modules/ngx_http_geoip_module.c",
+       "start": 3,
+       "end": 10
+      }
+     ],
+     "copies": 44,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 9,
+     "tokens": 67,
+     "first": {
+      "name": "src/http/modules/ngx_http_addition_filter_module.c",
+      "start": 218,
+      "end": 226
+     },
+     "others": [
+      {
+       "name": "src/http/modules/ngx_http_auth_request_module.c",
+       "start": 313,
+       "end": 321
+      },
+      {
+       "name": "src/http/modules/ngx_http_browser_module.c",
+       "start": 422,
+       "end": 430
+      },
+      {
+       "name": "src/http/modules/ngx_http_dav_module.c",
+       "start": 1206,
+       "end": 1214
+      },
+      {
+       "name": "src/http/modules/ngx_http_fastcgi_module.c",
+       "start": 2915,
+       "end": 2923
+      },
+      {
+       "name": "src/http/modules/ngx_http_grpc_module.c",
+       "start": 4521,
+       "end": 4529
+      },
+      {
+       "name": "src/http/modules/ngx_http_gunzip_filter_module.c",
+       "start": 655,
+       "end": 663
+      },
+      {
+       "name": "src/http/modules/ngx_http_gzip_filter_module.c",
+       "start": 1069,
+       "end": 1077
+      },
+      {
+       "name": "src/http/modules/ngx_http_headers_filter_module.c",
+       "start": 676,
+       "end": 684
+      }
+     ],
+     "copies": 33,
+     "kind": "code"
+    },
+    {
+     "format": "c",
+     "lines": 9,
+     "tokens": 120,
+     "first": {
+      "name": "src/http/modules/ngx_http_chunked_filter_module.c",
+      "start": 31,
+      "end": 39
+     },
+     "others": [
+      {
+       "name": "src/http/modules/ngx_http_empty_gif_module.c",
+       "start": 85,
+       "end": 93
+      },
+      {
+       "name": "src/http/modules/ngx_http_geoip_module.c",
+       "start": 204,
+       "end": 212
+      },
+      {
+       "name": "src/http/modules/ngx_http_json_module.c",
+       "start": 126,
+       "end": 134
+      },
+      {
+       "name": "src/http/modules/ngx_http_map_module.c",
+       "start": 83,
+       "end": 91
+      },
+      {
+       "name": "src/http/modules/ngx_http_not_modified_filter_module.c",
+       "start": 27,
+       "end": 35
+      },
+      {
+       "name": "src/http/modules/ngx_http_static_module.c",
+       "start": 24,
+       "end": 32
+      },
+      {
+       "name": "src/http/modules/ngx_http_stub_status_module.c",
+       "start": 41,
+       "end": 49
+      },
+      {
+       "name": "src/http/modules/ngx_http_upstream_hash_module.c",
+       "start": 91,
+       "end": 99
+      }
+     ],
+     "copies": 17,
+     "kind": "code"
+    }
+   ],
+   "generated": {
+    "files": 2,
+    "minified": 0,
+    "sample": [
+     "src/event/quic/bpf/bpfgen.sh",
+     "src/event/quic/ngx_event_quic_bpf_code.c"
+    ]
+   }
+  },
+  "health": {
+   "score": 26.1,
+   "grade": "E",
+   "size": {
+    "lines": 261145,
+    "files": 422,
+    "class": "L"
+   },
+   "dimensions": [
+    {
+     "id": "duplication",
+     "source": "jscpd",
+     "value": 19,
+     "adjusted": 18.9,
+     "lines": 49640,
+     "halfLife": 8.5,
+     "formats": [
+      "c",
+      "c-header",
+      "vim",
+      "perl",
+      "bash",
+      "makefile",
+      "nginx",
+      "cpp"
+     ],
+     "excluded": [
+      "markup",
+      "text",
+      "data"
+     ],
+     "weight": 1,
+     "score": 21.4
+    },
+    {
+     "id": "complexity",
+     "source": "jscpd",
+     "value": 82.9,
+     "adjusted": 82.4,
+     "lines": 216531,
+     "halfLife": 50,
+     "weight": 1,
+     "score": 31.9
+    }
+   ],
+   "skipped": [
+    {
+     "id": "dead-code",
+     "reason": "no JavaScript, TypeScript, Python or compiler-checked Rust files"
+    }
+   ]
+  },
+  "complexity": {
+   "total": 32787,
+   "mean": 77.7,
+   "files": [
+    {
+     "path": "src/http/ngx_http_upstream.c",
+     "complexity": 1179,
+     "lines": 7405,
+     "bytes": 189929
+    },
+    {
+     "path": "src/event/ngx_event_openssl.c",
+     "complexity": 960,
+     "lines": 6878,
+     "bytes": 169851
+    },
+    {
+     "path": "src/http/ngx_http_core_module.c",
+     "complexity": 739,
+     "lines": 5523,
+     "bytes": 152171
+    },
+    {
+     "path": "src/http/v2/ngx_http_v2.c",
+     "complexity": 680,
+     "lines": 5119,
+     "bytes": 142436
+    },
+    {
+     "path": "src/core/ngx_resolver.c",
+     "complexity": 676,
+     "lines": 4770,
+     "bytes": 107693
+    },
+    {
+     "path": "src/http/ngx_http_request.c",
+     "complexity": 676,
+     "lines": 4235,
+     "bytes": 107072
+    },
+    {
+     "path": "src/http/modules/ngx_http_proxy_module.c",
+     "complexity": 675,
+     "lines": 5472,
+     "bytes": 153912
+    },
+    {
+     "path": "src/http/modules/ngx_http_grpc_module.c",
+     "complexity": 659,
+     "lines": 5344,
+     "bytes": 153658
+    },
+    {
+     "path": "src/http/ngx_http_parse.c",
+     "complexity": 588,
+     "lines": 2472,
+     "bytes": 61720
+    },
+    {
+     "path": "src/http/modules/ngx_http_proxy_v2_module.c",
+     "complexity": 580,
+     "lines": 4317,
+     "bytes": 122329
+    }
+   ]
+  },
+  "deadCode": null
+ }
+}
