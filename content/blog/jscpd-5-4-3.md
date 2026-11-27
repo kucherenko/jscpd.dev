@@ -2,7 +2,7 @@
 title: What's new in jscpd 5.4.3
 description: runJscpd() for Node.js scripts, both fragments of a clone in the HTML report, an Action that installs the jscpd of its own tag, and fixes for jscpd:ignore regions and dead-code findings. With commands and real output.
 date: 2026-11-12
-publishedAt: 2026-11-12T10:00:00Z
+publishedAt: 2026-11-12T06:00:00Z
 authors:
   - kucherenko
 tags:
