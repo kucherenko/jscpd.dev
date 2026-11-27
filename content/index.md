@@ -259,7 +259,7 @@ Agents repeat helpers. Each diff reads fine on its own, so review misses it. A f
 Who uses <span class="hero-gradient">jscpd</span>
 
 #description
-From GitHub's official linter to the build of IntelliJ IDEA. [54 papers](/project/research) and [54 articles](/project/articles) describe how teams and researchers use it.
+From GitHub's official linter to the build of IntelliJ IDEA. [54 papers](/project/research) and [55 articles](/project/articles) describe how teams and researchers use it.
 
 #default
   :who-uses
