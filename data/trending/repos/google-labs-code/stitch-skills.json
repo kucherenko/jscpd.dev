@@ -193,35 +193,51 @@
    "codeSources": 15,
    "healthScore": 65.2,
    "healthGrade": "C"
+  },
+  {
+   "date": "2026-11-28",
+   "rank": 7,
+   "stars": 13643,
+   "starsToday": 311,
+   "headSha": "c78718b7f0515a201daf495753bc31e096b4c463",
+   "sources": 156,
+   "lines": 16118,
+   "clones": 28,
+   "duplicatedLines": 520,
+   "percentage": 3.23,
+   "codePercentage": null,
+   "codeSources": 15,
+   "healthScore": 64.7,
+   "healthGrade": "C"
   }
  ],
  "latest": {
-  "date": "2026-11-27",
-  "generatedAt": "2026-11-27T05:22:46.867Z",
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T05:21:37.379Z",
   "name": "google-labs-code/stitch-skills",
   "url": "https://github.com/google-labs-code/stitch-skills",
   "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
   "language": "TypeScript",
-  "stars": 13352,
-  "starsToday": 309,
+  "stars": 13643,
+  "starsToday": 311,
   "defaultBranch": "main",
-  "headSha": "75f4696f162000fb69fca6a31489b5b21d47a506",
-  "durationMs": 1453,
+  "headSha": "c78718b7f0515a201daf495753bc31e096b4c463",
+  "durationMs": 1431,
   "total": {
-   "sources": 152,
-   "lines": 15819,
-   "tokens": 109362,
-   "clones": 23,
-   "duplicatedLines": 451,
-   "duplicatedTokens": 2958,
-   "percentage": 2.85,
-   "percentageTokens": 2.7
+   "sources": 156,
+   "lines": 16118,
+   "tokens": 110905,
+   "clones": 28,
+   "duplicatedLines": 520,
+   "duplicatedTokens": 3291,
+   "percentage": 3.23,
+   "percentageTokens": 2.97
   },
   "formats": [
    {
     "format": "markdown",
     "sources": 52,
-    "lines": 8129,
+    "lines": 8131,
     "clones": 11,
     "duplicatedLines": 230,
     "percentage": 2.83
@@ -236,11 +252,19 @@
    },
    {
     "format": "javascript",
+    "sources": 15,
+    "lines": 1434,
+    "clones": 7,
+    "duplicatedLines": 80,
+    "percentage": 5.58
+   },
+   {
+    "format": "bash",
     "sources": 11,
-    "lines": 1157,
-    "clones": 3,
-    "duplicatedLines": 37,
-    "percentage": 3.2
+    "lines": 415,
+    "clones": 1,
+    "duplicatedLines": 26,
+    "percentage": 6.27
    },
    {
     "format": "yaml",
@@ -267,17 +291,9 @@
     "percentage": 0
    },
    {
-    "format": "bash",
-    "sources": 11,
-    "lines": 413,
-    "clones": 0,
-    "duplicatedLines": 0,
-    "percentage": 0
-   },
-   {
     "format": "python",
     "sources": 1,
-    "lines": 268,
+    "lines": 286,
     "clones": 0,
     "duplicatedLines": 0,
     "percentage": 0
@@ -461,6 +477,30 @@
     "kind": "code"
    },
    {
+    "format": "javascript",
+    "lines": 11,
+    "tokens": 66,
+    "first": {
+     "name": "plugins/stitch-build/skills/react-components/test/call-arguments.test.js",
+     "start": 1,
+     "end": 11
+    },
+    "others": [
+     {
+      "name": "plugins/stitch-build/skills/react-components/test/classname-expressions.test.js",
+      "start": 1,
+      "end": 11
+     },
+     {
+      "name": "plugins/stitch-build/skills/react-native/test/intrinsic-elements.test.js",
+      "start": 1,
+      "end": 10
+     }
+    ],
+    "copies": 3,
+    "kind": "tests"
+   },
+   {
     "format": "markdown",
     "lines": 10,
     "tokens": 116,
@@ -503,13 +543,13 @@
     "lines": 12,
     "tokens": 84,
     "first": {
-     "name": "plugins/stitch-build/skills/react-components/test/classname-expressions.test.js",
+     "name": "plugins/stitch-build/skills/react-components/test/call-arguments.test.js",
      "start": 1,
      "end": 12
     },
     "others": [
      {
-      "name": "plugins/stitch-build/skills/react-native/test/intrinsic-elements.test.js",
+      "name": "plugins/stitch-build/skills/react-native/test/call-arguments.test.js",
       "start": 1,
       "end": 11
      }
@@ -535,36 +575,17 @@
     ],
     "copies": 2,
     "kind": "code"
-   },
-   {
-    "format": "javascript",
-    "lines": 13,
-    "tokens": 80,
-    "first": {
-     "name": "plugins/stitch-build/skills/react-components/scripts/validate.js",
-     "start": 21,
-     "end": 33
-    },
-    "others": [
-     {
-      "name": "plugins/stitch-build/skills/react-native/scripts/validate.js",
-      "start": 41,
-      "end": 54
-     }
-    ],
-    "copies": 2,
-    "kind": "code"
    }
   ],
   "code": {
    "sources": 15,
-   "lines": 4417,
-   "tokens": 24765,
-   "clones": 9,
-   "duplicatedLines": 188,
-   "duplicatedTokens": 1053,
-   "percentage": 4.26,
-   "percentageTokens": 4.25,
+   "lines": 4440,
+   "tokens": 24816,
+   "clones": 10,
+   "duplicatedLines": 214,
+   "duplicatedTokens": 1135,
+   "percentage": 4.82,
+   "percentageTokens": 4.57,
    "formats": [
     {
      "format": "typescript",
@@ -577,23 +598,23 @@
     {
      "format": "javascript",
      "sources": 3,
-     "lines": 611,
+     "lines": 615,
      "clones": 1,
      "duplicatedLines": 13,
-     "percentage": 2.13
-    },
-    {
-     "format": "python",
-     "sources": 1,
-     "lines": 268,
-     "clones": 0,
-     "duplicatedLines": 0,
-     "percentage": 0
+     "percentage": 2.11
     },
     {
      "format": "bash",
      "sources": 4,
-     "lines": 260,
+     "lines": 261,
+     "clones": 1,
+     "duplicatedLines": 26,
+     "percentage": 9.96
+    },
+    {
+     "format": "python",
+     "sources": 1,
+     "lines": 286,
      "clones": 0,
      "duplicatedLines": 0,
      "percentage": 0
@@ -708,6 +729,25 @@
       ],
       "total": 20
      },
+     "kind": "code"
+    },
+    {
+     "format": "bash",
+     "lines": 26,
+     "tokens": 82,
+     "first": {
+      "name": "plugins/stitch-build/skills/react-components/scripts/fetch-stitch.sh",
+      "start": 1,
+      "end": 26
+     },
+     "others": [
+      {
+       "name": "plugins/stitch-build/skills/react-native/scripts/fetch-stitch.sh",
+       "start": 1,
+       "end": 26
+      }
+     ],
+     "copies": 2,
      "kind": "code"
     },
     {
@@ -832,25 +872,25 @@
    }
   },
   "health": {
-   "score": 65.2,
+   "score": 64.7,
    "grade": "C",
    "size": {
-    "lines": 5697,
-    "files": 26,
+    "lines": 5993,
+    "files": 30,
     "class": "S"
    },
    "dimensions": [
     {
      "id": "duplication",
      "source": "jscpd",
-     "value": 3.5,
-     "adjusted": 3.5,
-     "lines": 200,
+     "value": 4.5,
+     "adjusted": 4.2,
+     "lines": 269,
      "halfLife": 8.5,
      "formats": [
       "typescript",
-      "tsx",
       "javascript",
+      "tsx",
       "python",
       "bash"
      ],
@@ -859,34 +899,34 @@
       "data"
      ],
      "weight": 1,
-     "score": 75.1
+     "score": 70.8
     },
     {
      "id": "dead-code",
      "source": "jscpd",
-     "value": 3.4,
-     "adjusted": 3.3,
+     "value": 3.2,
+     "adjusted": 3.2,
      "lines": 185,
      "halfLife": 7.5,
-     "coverage": 96.7,
-     "weight": 0.967,
-     "score": 73.8
+     "coverage": 96.9,
+     "weight": 0.969,
+     "score": 74.6
     },
     {
      "id": "complexity",
      "source": "jscpd",
-     "value": 59.8,
-     "adjusted": 49.7,
+     "value": 56.8,
+     "adjusted": 47.9,
      "lines": 3407,
      "halfLife": 50,
      "weight": 1,
-     "score": 50.2
+     "score": 51.5
     }
    ]
   },
   "complexity": {
-   "total": 1133,
-   "mean": 43.6,
+   "total": 1148,
+   "mean": 38.3,
    "files": [
     {
      "path": "plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts",
@@ -914,9 +954,9 @@
     },
     {
      "path": "plugins/stitch-build/skills/react-components/scripts/validate.js",
-     "complexity": 35,
-     "lines": 96,
-     "bytes": 3193
+     "complexity": 34,
+     "lines": 98,
+     "bytes": 3384
     },
     {
      "path": "plugins/stitch-build/skills/shadcn-ui/scripts/verify-setup.sh",
@@ -926,9 +966,9 @@
     },
     {
      "path": "plugins/stitch-build/skills/react-native/scripts/validate.js",
-     "complexity": 29,
-     "lines": 143,
-     "bytes": 5304
+     "complexity": 28,
+     "lines": 145,
+     "bytes": 5495
     },
     {
      "path": "plugins/stitch-design/skills/extract-design-md/tests/extract-live-url.test.mjs",
@@ -944,16 +984,16 @@
     },
     {
      "path": "plugins/stitch-design/skills/upload-to-stitch/scripts/upload_to_stitch.py",
-     "complexity": 20,
-     "lines": 268,
-     "bytes": 7417
+     "complexity": 21,
+     "lines": 286,
+     "bytes": 7957
     }
    ]
   },
   "deadCode": {
-   "percentage": 3.36,
+   "percentage": 3.19,
    "findings": 4,
-   "files": 22,
+   "files": 26,
    "byCategory": [
     {
      "category": "unused-file",
